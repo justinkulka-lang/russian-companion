@@ -1,5 +1,6 @@
 package dev.russiancompanion.catalog
 
+import dev.russiancompanion.catalog.CATALOG_SOURCE_DECISIONS
 import dev.russiancompanion.release.RELEASE_EVIDENCE_MANIFEST
 import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
@@ -64,6 +65,27 @@ class CatalogIntakeTest {
     }
 
     @Test
+    fun recordedSourceExclusionsStayOutOfThePackagedSeed() {
+        val root = repositoryRoot()
+        val decisions = File(root, CATALOG_SOURCE_DECISIONS).readText()
+        assertTrue(decisions.contains("\"sourceId\": \"openrussian-audio\""))
+        assertTrue(decisions.contains("\"sourceId\": \"tatoeba-audio\""))
+        assertTrue(decisions.contains("\"sourceId\": \"penguin-course-text\""))
+        assertFalse(decisions.contains("CONFIRMED"))
+        val openRussianAudio = proposal(provenance = "https://en.openrussian.org/dictionary-data")
+        val assessment = assessCatalogIntake(
+            intake("INSTALLED_DROP", openRussianAudio),
+            decisions,
+        )
+        assertEquals(false, assessment.replacePackagedSeed)
+        assertEquals(listOf("audio-1"), assessment.excludedIds)
+        val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
+        assertTrue(seed.contains("\"audioModels\": []"))
+        val retained = File(root, RELEASE_EVIDENCE_MANIFEST).readText()
+        assertFalse(retained.contains("RETAINED"))
+    }
+
+    @Test
     fun anInstalledDropOfOneEligibleProposalMayReplaceTheSeed() {
         val assessment = assessCatalogIntake(intake("INSTALLED_DROP", proposal()))
         assertEquals(true, assessment.replacePackagedSeed)
@@ -87,6 +109,7 @@ class CatalogIntakeTest {
         licenseStatus: String = "COMPATIBLE",
         compatibilityDecision: String = "COMPATIBLE",
         matchVerified: Boolean = true,
+        provenance: String = "test-source",
     ) = AudioProposal(
         id = id,
         localAudioReference = "audio/audio-1",
@@ -94,7 +117,7 @@ class CatalogIntakeTest {
         compatibilityDecision = compatibilityDecision,
         stressMarkedText = "SOURCE-TEXT-TOKEN",
         matchVerified = matchVerified,
-        provenance = "test-source",
+        provenance = provenance,
         redistributionBasis = "test-rights",
         licenseName = "TEST-LICENSE",
         attribution = "Test attribution",

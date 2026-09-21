@@ -6,6 +6,8 @@ import kotlinx.serialization.json.Json
 
 internal const val CATALOG_INTAKE = "catalog/intake.json"
 
+internal const val CATALOG_SOURCE_DECISIONS = "catalog/source-decisions.json"
+
 internal const val INTAKE_NOT_INSTALLED = "NOT_INSTALLED"
 
 private val intakeJson = Json {
@@ -45,7 +47,33 @@ internal data class IntakeAssessment(
     val excludedIds: List<String>,
 )
 
-internal fun assessCatalogIntake(raw: String?): IntakeAssessment {
+@Serializable
+internal data class SourceDecisionsFile(
+    val decisionsVersion: Int,
+    val decisions: List<SourceDecision>,
+)
+
+@Serializable
+internal data class SourceDecision(
+    val sourceId: String,
+    val provenance: String,
+    val decision: String,
+    val licenseName: String,
+    val reason: String,
+)
+
+internal fun assessCatalogIntake(
+    raw: String?,
+    sourceDecisions: String? = null,
+): IntakeAssessment {
+    val blockedProvenance = blockedProvenance(sourceDecisions)
+        ?: return IntakeAssessment(
+            readable = false,
+            state = "UNREADABLE",
+            replacePackagedSeed = false,
+            eligibleIds = emptyList(),
+            excludedIds = emptyList(),
+        )
     val parsed = parseIntake(raw) ?: return IntakeAssessment(
         readable = false,
         state = "UNREADABLE",
@@ -56,7 +84,8 @@ internal fun assessCatalogIntake(raw: String?): IntakeAssessment {
     val eligible = mutableListOf<String>()
     val excluded = mutableListOf<String>()
     for (proposal in parsed.proposals) {
-        if (proposalIsEligible(proposal)) eligible += proposal.id else excluded += proposal.id
+        val blocked = proposal.provenance in blockedProvenance
+        if (!blocked && proposalIsEligible(proposal)) eligible += proposal.id else excluded += proposal.id
     }
     val replace = parsed.state == "INSTALLED_DROP" && eligible.isNotEmpty() && excluded.isEmpty()
     return IntakeAssessment(
@@ -66,6 +95,22 @@ internal fun assessCatalogIntake(raw: String?): IntakeAssessment {
         eligibleIds = eligible,
         excludedIds = excluded,
     )
+}
+
+private fun blockedProvenance(raw: String?): Set<String>? {
+    if (raw == null) return emptySet()
+    val parsed = try {
+        intakeJson.decodeFromString(SourceDecisionsFile.serializer(), raw)
+    } catch (_: SerializationException) {
+        return null
+    } catch (_: IllegalArgumentException) {
+        return null
+    }
+    if (parsed.decisionsVersion != 1) return null
+    return parsed.decisions
+        .filter { it.decision == "EXCLUDED" && it.provenance.isNotBlank() }
+        .map { it.provenance }
+        .toSet()
 }
 
 private fun parseIntake(raw: String?): CatalogIntakeFile? {

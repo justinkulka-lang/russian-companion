@@ -1,0 +1,33 @@
+{
+  "decisionsVersion": 1,
+  "decisions": [
+    {
+      "sourceId": "openrussian-audio",
+      "provenance": "https://en.openrussian.org/dictionary-data",
+      "decision": "EXCLUDED",
+      "licenseName": "",
+      "reason": "The publisher states that audio samples are not open because of possible copyright issues."
+    },
+    {
+      "sourceId": "openrussian-dictionary",
+      "provenance": "https://github.com/Badestrand/russian-dictionary",
+      "decision": "NOT_INSTALLED",
+      "licenseName": "CC BY-SA 4.0",
+      "reason": "Dictionary text is CC BY-SA 4.0. Share-alike confirmation is not recorded. The text is not a redistributable native-audio recording, and no lesson mapping was supplied."
+    },
+    {
+      "sourceId": "tatoeba-audio",
+      "provenance": "https://en.wiki.tatoeba.org/articles/show/using-the-tatoeba-corpus",
+      "decision": "EXCLUDED",
+      "licenseName": "",
+      "reason": "Sentence text is CC BY 2.0 FR. Audio licenses are per recording. No per-file audio license was verified, so no Tatoeba audio is included."
+    },
+    {
+      "sourceId": "penguin-course-text",
+      "provenance": "The New Penguin Russian Course",
+      "decision": "EXCLUDED",
+      "licenseName": "",
+      "reason": "Book text, exercises, and answer-key content are not reproduced. Lesson identification stays outside the bundled catalog until a non-reproducing reference list is supplied."
+    }
+  ]
+}
