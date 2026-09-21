@@ -257,16 +257,64 @@ internal class LocalStore private constructor(
     fun evidenceFor(gateId: String): List<GateEvidenceEntity> = call { database.users().evidenceFor(gateId) }
 
     fun addTutorSignOffRequirement(gateDefinitionId: String, recordedAtLocal: String) = call {
-        val gate = database.bundled().gate(gateDefinitionId)
-        if (gate == null || gate.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
-            throw IllegalArgumentException("An eligible gate is required")
-        }
-        database.users().upsertTutorRequirement(
-            GateTutorRequirementEntity(
-                gateDefinitionId = gate.id,
-                recordedAtLocal = UserRecordRules.requireTimestamp(recordedAtLocal),
-            ),
+        val gate = requireEligibleGate(gateDefinitionId)
+        val recordedAt = UserRecordRules.requireTimestamp(recordedAtLocal)
+        val conditions = database.bundled().conditions(gate.id)
+        val evidence = database.users().evidenceFor(gate.id)
+        val decision = storedGateDecision(
+            gate = gate,
+            conditions = conditions,
+            tutorRequired = true,
+            evidence = evidence,
+            evaluatedAtLocal = recordedAt,
         )
+        if (decision.conditionOutcomes.isBlank()) {
+            throw IllegalArgumentException("Condition outcomes are required")
+        }
+        database.users().saveTutorRequirement(
+            GateTutorRequirementEntity(gateDefinitionId = gate.id, recordedAtLocal = recordedAt),
+            decision,
+        )
+    }
+
+    fun recordGateEvidenceAndDecide(
+        gateDefinitionId: String,
+        entries: List<Pair<EvidenceType, String>>,
+        recordedAtLocal: String,
+    ): GateDecisionEntity = call {
+        val gate = requireEligibleGate(gateDefinitionId)
+        val recordedAt = UserRecordRules.requireTimestamp(recordedAtLocal)
+        val conditions = database.bundled().conditions(gate.id)
+        val tutorRequired = database.users().tutorRequirement(gate.id) != null
+        val prepared = linkedMapOf<EvidenceType, String>()
+        entries.forEach { (type, value) ->
+            val trimmed = value.trim()
+            if (trimmed.isEmpty()) return@forEach
+            if (!evidenceAcceptedForGate(type, trimmed, conditions, tutorRequired)) {
+                throw IllegalArgumentException("Evidence entry is not valid")
+            }
+            prepared[type] = trimmed
+        }
+        val created = prepared.map { (type, value) ->
+            UserRecordRules.evidence(
+                gateDefinitionId = gate.id,
+                evidenceType = type,
+                enteredValue = value,
+                recordedAtLocal = recordedAt,
+            )
+        }
+        val decision = storedGateDecision(
+            gate = gate,
+            conditions = conditions,
+            tutorRequired = tutorRequired,
+            evidence = database.users().evidenceFor(gate.id) + created,
+            evaluatedAtLocal = recordedAt,
+        )
+        if (decision.conditionOutcomes.isBlank()) {
+            throw IllegalArgumentException("Condition outcomes are required")
+        }
+        database.users().recordGateDecision(created, decision)
+        decision
     }
 
     fun tutorRequirement(gateId: String): GateTutorRequirementEntity? = call {
@@ -394,6 +442,14 @@ internal class LocalStore private constructor(
     override fun close() {
         io.shutdown()
         database.close()
+    }
+
+    private fun requireEligibleGate(gateDefinitionId: String): GateDefinitionEntity {
+        val gate = database.bundled().gate(gateDefinitionId)
+        if (gate == null || gate.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
+            throw IllegalArgumentException("An eligible gate is required")
+        }
+        return gate
     }
 
     private fun requireEligiblePlan(planDefinitionId: String): PlanDefinitionEntity {

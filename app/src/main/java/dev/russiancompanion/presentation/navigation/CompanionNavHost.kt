@@ -22,6 +22,7 @@ import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.navigation.practiceLibraryAvailable
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
+import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.practice.PracticeAudio
 
@@ -42,6 +43,8 @@ internal fun CompanionNavHost(
     onSaveRecording: (String, String) -> PlanUpdate,
     onTutorReview: (String, Boolean) -> PlanUpdate,
     onCompletePractice: (String) -> PlanUpdate,
+    onSaveGateEvidence: (String, List<GateEvidenceEntry>) -> PlanUpdate,
+    onAddTutorSignOff: (String) -> PlanUpdate,
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -145,6 +148,8 @@ internal fun CompanionNavHost(
             GateDetailScreen(
                 snapshot = snapshot,
                 gateId = route.gateId,
+                onSaveGateEvidence = { entries -> onSaveGateEvidence(route.gateId, entries) },
+                onAddTutorSignOff = { onAddTutorSignOff(route.gateId) },
                 onGates = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onProgress = { navController.navigate(ProgressRoute) },
@@ -417,12 +422,7 @@ private fun GatesScreen(
 ) {
     ShellPage(title = stringResource(R.string.gates_title), onBack = onBack, onHome = onHome) {
         Text(stringResource(R.string.gates_not_proficiency))
-        if (snapshot.gates.isEmpty()) {
-            Text(stringResource(R.string.gates_none))
-        }
-        snapshot.gates.forEach { gate ->
-            TextButton(onClick = { onOpen(gate.id) }) { Text(gate.displayedRuleText) }
-        }
+        GateListBody(details = snapshot.gateDetails, onOpen = onOpen)
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
     }
 }
@@ -431,18 +431,24 @@ private fun GatesScreen(
 private fun GateDetailScreen(
     snapshot: NavigationSnapshot,
     gateId: String,
+    onSaveGateEvidence: (List<GateEvidenceEntry>) -> PlanUpdate,
+    onAddTutorSignOff: () -> PlanUpdate,
     onGates: () -> Unit,
     onTodaysPlan: () -> Unit,
     onProgress: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
-    val gate = snapshot.gates.firstOrNull { it.id == gateId }
+    val detail = snapshot.gateDetails.firstOrNull { it.id == gateId }
     ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome) {
         Text(stringResource(R.string.gates_not_proficiency))
-        if (gate == null) {
+        if (detail == null) {
             Text(stringResource(R.string.gate_unreadable))
         } else {
-            Text(gate.displayedRuleText)
+            GateDetailBody(
+                detail = detail,
+                onSave = onSaveGateEvidence,
+                onAddTutor = onAddTutorSignOff,
+            )
         }
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }

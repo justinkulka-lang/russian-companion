@@ -4,8 +4,11 @@ import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.CompletionState
 import dev.russiancompanion.data.local.GateDecisionStatus
 import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.data.local.evidenceType
+import dev.russiancompanion.data.local.gateDetailView
 import dev.russiancompanion.data.local.PlanActivityType
 import dev.russiancompanion.data.local.seed.SeedApplyStatus
+import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.navigation.AttributionOption
 import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.GateOption
@@ -75,7 +78,20 @@ internal class RoomNavigationGateway(
                 )
             }
         }
+        val decisions = store.decisions()
         val gates = store.eligibleGates().filter { segmentId == null || it.segmentId == segmentId }
+        val gateDetails = gates.map { gate ->
+            val latest = decisions
+                .filter { it.gateDefinitionId == gate.id }
+                .maxWithOrNull(compareBy({ it.evaluatedAtLocal }, { it.id }))
+            gateDetailView(
+                gate = gate,
+                conditions = store.conditions(gate.id),
+                tutorRequired = store.tutorRequirement(gate.id) != null,
+                evidence = store.evidenceFor(gate.id),
+                recordedStatus = latest?.status,
+            )
+        }
         return NavigationSnapshot(
             localDataOpen = true,
             seedCorrupt = outcome?.status == SeedApplyStatus.CORRUPT,
@@ -123,7 +139,7 @@ internal class RoomNavigationGateway(
             ),
             gateSummaries = summarizeGates(
                 gates = gates.map { GateStatusInput(it.id, it.displayedRuleText) },
-                decisions = store.decisions().mapNotNull { decision ->
+                decisions = decisions.mapNotNull { decision ->
                     val status = recordedStatus(decision.status) ?: return@mapNotNull null
                     DecisionView(
                         id = decision.id,
@@ -133,6 +149,7 @@ internal class RoomNavigationGateway(
                     )
                 },
             ),
+            gateDetails = gateDetails,
             activitySummary = summarizeActivity(
                 store.activityLogs().mapNotNull { log ->
                     val category = recordedCategory(log.category) ?: return@mapNotNull null
@@ -229,6 +246,28 @@ internal class RoomNavigationGateway(
             } else {
                 PlanUpdate.Unchanged
             }
+        }
+    }
+
+    override fun saveGateEvidence(
+        gateId: String,
+        entries: List<GateEvidenceEntry>,
+        recordedAtLocal: String,
+    ): PlanUpdate {
+        return update(gateId) {
+            store.recordGateEvidenceAndDecide(
+                gateDefinitionId = gateId,
+                entries = entries.map { evidenceType(it.kind) to it.enteredValue },
+                recordedAtLocal = recordedAtLocal,
+            )
+            PlanUpdate.Applied
+        }
+    }
+
+    override fun addTutorSignOff(gateId: String, recordedAtLocal: String): PlanUpdate {
+        return update(gateId) {
+            store.addTutorSignOffRequirement(gateId, recordedAtLocal)
+            PlanUpdate.Applied
         }
     }
 
