@@ -12,7 +12,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.popUpTo
 import androidx.navigation.toRoute
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.LaunchDestination

@@ -16,7 +16,7 @@ import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import java.time.LocalDate
 
 @Composable
-fun CompanionApp(
+internal fun CompanionApp(
     gateway: NavigationGateway?,
     onRetryOpen: () -> Unit,
     today: () -> String = { LocalDate.now().toString() },
