@@ -8,7 +8,7 @@ import dev.russiancompanion.domain.navigation.NavigationGateway
 import dev.russiancompanion.domain.practice.PracticeAudio
 
 class RussianCompanionApplication : Application() {
-    internal val practiceAudio: PracticeAudio = AndroidPracticeAudio(this)
+    internal val practiceAudio: PracticeAudio by lazy { AndroidPracticeAudio(this) }
 
     internal var localStore: LocalStore? = null
         private set

@@ -102,8 +102,8 @@ class NavigationShellTest {
         clickText("Attributions and licenses")
         showText("TEST-LICENSE: Test attribution")
         clickText("Back to practice")
-        compose.onNodeWithText("Practice session").assertIsDisplayed()
-        compose.onNodeWithText("Back").performClick()
+        showText("Practice session")
+        compose.onNodeWithText("Back").performScrollTo().performClick()
         compose.onNodeWithText("No licensed practice audio is available.").assertDoesNotExist()
         clickText("Home", substring = false)
 

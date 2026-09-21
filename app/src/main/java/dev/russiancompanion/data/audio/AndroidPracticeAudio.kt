@@ -10,9 +10,10 @@ import java.io.IOException
 import java.util.UUID
 
 internal class AndroidPracticeAudio(
-    context: Context,
+    private val context: Context,
 ) : PracticeAudio {
-    private val appContext = context.applicationContext
+    private val appContext: Context
+        get() = context.applicationContext
     private var player: MediaPlayer? = null
     private var recorder: MediaRecorder? = null
     private var captureFile: File? = null
@@ -156,6 +157,7 @@ internal class AndroidPracticeAudio(
         return File(appContext.filesDir, localFileReference)
     }
 
+    @Suppress("DEPRECATION")
     private fun newRecorder(): MediaRecorder {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             MediaRecorder(appContext)
