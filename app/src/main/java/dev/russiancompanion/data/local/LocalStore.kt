@@ -43,6 +43,89 @@ internal class LocalStore private constructor(
         )
     }
 
+    fun planInstances(localDate: String, segmentId: String): List<PlanInstanceEntity> = call {
+        database.users().planInstancesFor(localDate, segmentId)
+    }
+
+    fun completeExternalActivity(
+        planDefinitionId: String,
+        localDate: String,
+        recordedAtLocal: String,
+    ): Boolean = call {
+        val plan = requireEligiblePlan(planDefinitionId)
+        val category = UserRecordRules.checklistCategory(plan.activityType)
+            ?: throw IllegalArgumentException("Listen-record-compare is started in the app")
+        if (plan.activityType == PlanActivityType.TUTOR && plan.required) {
+            throw IllegalArgumentException("A tutor task must be optional")
+        }
+        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: LearnerStateEntity.newUser()
+        if (learner.activeSegmentId != plan.segmentId) {
+            throw IllegalArgumentException("The activity is not in the current lesson")
+        }
+        val date = UserRecordRules.requireLocalDate(localDate)
+        val instanceId = UserRecordRules.planInstanceId(date, plan.id)
+        val existing = database.users().planInstance(instanceId)
+        if (plan.activityType == PlanActivityType.TUTOR && existing == null) {
+            throw IllegalArgumentException("Tutor task is not included")
+        }
+        if (existing?.completionState == CompletionState.COMPLETED) return@call false
+        val instance = PlanInstanceEntity(
+            id = instanceId,
+            localDate = date,
+            segmentId = plan.segmentId,
+            planDefinitionId = plan.id,
+            completionState = CompletionState.COMPLETED,
+            completedAtLocal = UserRecordRules.requireTimestamp(recordedAtLocal),
+        )
+        val log = UserRecordRules.activityLog(
+            category = category,
+            durationMinutes = UserRecordRules.CHECKLIST_DURATION_MINUTES,
+            completed = true,
+            recordedAtLocal = recordedAtLocal,
+            segmentId = plan.segmentId,
+            planInstanceId = instance.id,
+            selfAttested = plan.activityType == PlanActivityType.BOOK ||
+                plan.activityType == PlanActivityType.ANKI_DROID,
+            planActivityType = plan.activityType,
+        )
+        database.users().recordPlanCompletion(instance, log)
+        database.users().updateLearner(learner.copy(planContext = date))
+        true
+    }
+
+    fun includeTutorTask(planDefinitionId: String, localDate: String) = call {
+        val plan = requireEligiblePlan(planDefinitionId)
+        if (plan.activityType != PlanActivityType.TUTOR || plan.required) {
+            throw IllegalArgumentException("Only an optional tutor task can be added")
+        }
+        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID)
+        if (learner?.activeSegmentId != plan.segmentId) {
+            throw IllegalArgumentException("The activity is not in the current lesson")
+        }
+        val date = UserRecordRules.requireLocalDate(localDate)
+        val instanceId = UserRecordRules.planInstanceId(date, plan.id)
+        if (database.users().planInstance(instanceId) != null) return@call
+        database.users().upsertPlanInstance(
+            PlanInstanceEntity(
+                id = instanceId,
+                localDate = date,
+                segmentId = plan.segmentId,
+                planDefinitionId = plan.id,
+                completionState = CompletionState.NOT_COMPLETED,
+                completedAtLocal = null,
+            ),
+        )
+    }
+
+    fun removeTutorTask(planDefinitionId: String, localDate: String) = call {
+        val plan = requireEligiblePlan(planDefinitionId)
+        if (plan.activityType != PlanActivityType.TUTOR || plan.required) {
+            throw IllegalArgumentException("Only an optional tutor task can be removed")
+        }
+        val date = UserRecordRules.requireLocalDate(localDate)
+        database.users().removePlanInstance(UserRecordRules.planInstanceId(date, plan.id))
+    }
+
     fun eligibleSegments(): List<CourseSegmentEntity> = call { database.bundled().eligibleSegments() }
 
     fun eligiblePlans(): List<PlanDefinitionEntity> = call { database.bundled().eligiblePlans() }
@@ -257,6 +340,14 @@ internal class LocalStore private constructor(
     override fun close() {
         io.shutdown()
         database.close()
+    }
+
+    private fun requireEligiblePlan(planDefinitionId: String): PlanDefinitionEntity {
+        val plan = database.bundled().plan(planDefinitionId)
+        if (plan == null || plan.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
+            throw IllegalArgumentException("An eligible plan definition is required")
+        }
+        return plan
     }
 
     private fun <T> call(block: () -> T): T {

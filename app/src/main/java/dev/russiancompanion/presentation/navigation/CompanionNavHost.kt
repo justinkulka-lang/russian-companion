@@ -17,18 +17,24 @@ import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.OnboardingConfirmation
-import dev.russiancompanion.domain.navigation.activeLessonHasPlan
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
+import dev.russiancompanion.domain.plan.ChecklistActivity
+import dev.russiancompanion.domain.plan.ChecklistItem
 
 @Composable
 internal fun CompanionNavHost(
     navController: NavHostController,
     launch: LaunchDestination,
     snapshot: NavigationSnapshot,
+    saveFailed: Boolean,
     onConfirmLesson: (String) -> Unit,
     onReloadSeed: () -> Unit,
     onRetryOpen: () -> Unit,
+    onCompleteItem: (String) -> Unit,
+    onIncludeTutor: (String) -> Unit,
+    onRemoveTutor: (String) -> Unit,
+    onRetryPlanAction: () -> Unit,
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -53,6 +59,7 @@ internal fun CompanionNavHost(
         composable<HomeRoute> {
             HomeScreen(
                 snapshot = snapshot,
+                onBegin = { item -> beginPlanItem(navController, snapshot, item) },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onPractice = { navController.navigate(PracticeLibraryRoute) },
                 onGates = { navController.navigate(GatesRoute) },
@@ -65,10 +72,16 @@ internal fun CompanionNavHost(
         composable<TodaysPlanRoute> {
             TodaysPlanScreen(
                 snapshot = snapshot,
+                saveFailed = saveFailed,
                 onHome = onHome,
                 onPractice = { navController.navigate(PracticeLibraryRoute) },
+                onStartPractice = { openPractice(navController, snapshot) },
                 onProgress = { navController.navigate(ProgressRoute) },
                 onSelectLesson = { navController.navigate(OnboardingRoute) },
+                onComplete = onCompleteItem,
+                onIncludeTutor = onIncludeTutor,
+                onRemoveTutor = onRemoveTutor,
+                onRetrySave = onRetryPlanAction,
                 onBack = { navController.popBackStack() },
             )
         }
@@ -168,6 +181,27 @@ internal fun CompanionNavHost(
     }
 }
 
+private fun beginPlanItem(
+    navController: NavHostController,
+    snapshot: NavigationSnapshot,
+    item: ChecklistItem,
+) {
+    if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
+        openPractice(navController, snapshot)
+    } else {
+        navController.navigate(TodaysPlanRoute)
+    }
+}
+
+private fun openPractice(navController: NavHostController, snapshot: NavigationSnapshot) {
+    val audio = snapshot.audio
+    if (audio.size == 1) {
+        navController.navigate(PracticeSessionRoute(audio.single().id))
+    } else if (audio.isNotEmpty()) {
+        navController.navigate(PracticeLibraryRoute)
+    }
+}
+
 private fun goHome(navController: NavHostController) {
     navController.navigate(HomeRoute) {
         popUpTo<HomeRoute> { inclusive = true }
@@ -236,6 +270,7 @@ private fun LocalDataScreen(onRetry: () -> Unit, onAttributions: () -> Unit) {
 @Composable
 private fun HomeScreen(
     snapshot: NavigationSnapshot,
+    onBegin: (ChecklistItem) -> Unit,
     onTodaysPlan: () -> Unit,
     onPractice: () -> Unit,
     onGates: () -> Unit,
@@ -244,18 +279,20 @@ private fun HomeScreen(
     onOptionalDrills: () -> Unit,
     onSelectLesson: () -> Unit,
 ) {
+    val practiceAvailable = snapshot.audio.isNotEmpty()
     ShellPage(title = stringResource(R.string.home_title)) {
-        val lesson = snapshot.activeLessonReference
-        if (lesson != null) {
-            Text(stringResource(R.string.home_current_lesson, lesson))
+        HomePlanSection(
+            snapshot = snapshot,
+            onBegin = onBegin,
+            onTodaysPlan = onTodaysPlan,
+            onSelectLesson = onSelectLesson,
+        )
+        TextButton(onClick = onPractice, enabled = practiceAvailable) {
+            Text(stringResource(R.string.open_practice))
         }
-        if (!activeLessonHasPlan(snapshot)) {
-            Text(stringResource(R.string.home_no_plan))
-            TextButton(onClick = onSelectLesson) { Text(stringResource(R.string.home_select_lesson)) }
-        } else {
-            TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
+        if (!practiceAvailable) {
+            Text(stringResource(R.string.practice_none))
         }
-        TextButton(onClick = onPractice) { Text(stringResource(R.string.open_practice)) }
         TextButton(onClick = onGates) { Text(stringResource(R.string.open_gates)) }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
         TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
@@ -268,22 +305,33 @@ private fun HomeScreen(
 @Composable
 private fun TodaysPlanScreen(
     snapshot: NavigationSnapshot,
+    saveFailed: Boolean,
     onHome: (() -> Unit)?,
     onPractice: () -> Unit,
+    onStartPractice: () -> Unit,
     onProgress: () -> Unit,
     onSelectLesson: () -> Unit,
+    onComplete: (String) -> Unit,
+    onIncludeTutor: (String) -> Unit,
+    onRemoveTutor: (String) -> Unit,
+    onRetrySave: () -> Unit,
     onBack: () -> Unit,
 ) {
+    val practiceAvailable = snapshot.audio.isNotEmpty()
     ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome) {
-        val lesson = snapshot.activeLessonReference
-        if (lesson != null) {
-            Text(stringResource(R.string.home_current_lesson, lesson))
+        TodaysPlanBody(
+            snapshot = snapshot,
+            saveFailed = saveFailed,
+            onSelectLesson = onSelectLesson,
+            onStartPractice = onStartPractice,
+            onComplete = onComplete,
+            onIncludeTutor = onIncludeTutor,
+            onRemoveTutor = onRemoveTutor,
+            onRetrySave = onRetrySave,
+        )
+        TextButton(onClick = onPractice, enabled = practiceAvailable) {
+            Text(stringResource(R.string.open_practice))
         }
-        if (!activeLessonHasPlan(snapshot)) {
-            Text(stringResource(R.string.home_no_plan))
-            TextButton(onClick = onSelectLesson) { Text(stringResource(R.string.home_select_lesson)) }
-        }
-        TextButton(onClick = onPractice) { Text(stringResource(R.string.open_practice)) }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
     }
 }

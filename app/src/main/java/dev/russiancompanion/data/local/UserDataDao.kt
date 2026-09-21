@@ -22,6 +22,26 @@ internal abstract class UserDataDao {
     @Upsert
     abstract fun upsertPlanInstance(instance: PlanInstanceEntity)
 
+    @Query("SELECT * FROM plan_instances WHERE id = :id")
+    abstract fun planInstance(id: String): PlanInstanceEntity?
+
+    @Query(
+        "SELECT * FROM plan_instances WHERE localDate = :localDate AND segmentId = :segmentId ORDER BY id",
+    )
+    abstract fun planInstancesFor(localDate: String, segmentId: String): List<PlanInstanceEntity>
+
+    @Query("UPDATE activity_logs SET planInstanceId = NULL WHERE planInstanceId = :planInstanceId")
+    abstract fun detachActivityLogs(planInstanceId: String)
+
+    @Query("DELETE FROM plan_instances WHERE id = :id")
+    abstract fun deletePlanInstance(id: String)
+
+    @Transaction
+    open fun removePlanInstance(id: String) {
+        detachActivityLogs(id)
+        deletePlanInstance(id)
+    }
+
     @Insert
     abstract fun insertActivityLog(log: ActivityLogEntity)
 

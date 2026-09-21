@@ -91,4 +91,21 @@ internal object UserRecordRules {
     fun planInstanceId(localDate: String, planDefinitionId: String): String {
         return "${requireLocalDate(localDate)}:$planDefinitionId"
     }
+
+    /**
+     * The checklist records completion without asking for a duration, so the
+     * stored duration is zero. Book maps to grammar, AnkiDroid to vocabulary
+     * and forms, and a chosen tutor task to tutor work. Listen-record-compare
+     * is started in the app and is not completed from the checklist.
+     */
+    const val CHECKLIST_DURATION_MINUTES = 0
+
+    fun checklistCategory(type: PlanActivityType): ActivityCategory? {
+        return when (type) {
+            PlanActivityType.BOOK -> ActivityCategory.GRAMMAR
+            PlanActivityType.ANKI_DROID -> ActivityCategory.VOCABULARY_AND_FORMS
+            PlanActivityType.TUTOR -> ActivityCategory.TUTOR_WORK
+            PlanActivityType.LISTEN_RECORD_COMPARE -> null
+        }
+    }
 }

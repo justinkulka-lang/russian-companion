@@ -1,5 +1,7 @@
 package dev.russiancompanion.domain.navigation
 
+import dev.russiancompanion.domain.plan.PlanUpdate
+
 internal fun launchDestination(snapshot: NavigationSnapshot): LaunchDestination {
     if (!snapshot.localDataOpen) return LaunchDestination.LOCAL_DATA_PROBLEM
     if (!snapshot.onboardingCompleted) return LaunchDestination.ONBOARDING
@@ -28,9 +30,19 @@ internal fun activeLessonHasPlan(snapshot: NavigationSnapshot): Boolean {
 }
 
 internal interface NavigationGateway {
-    fun current(): NavigationSnapshot
+    fun current(localDate: String): NavigationSnapshot
 
     fun confirmLesson(segmentId: String, localDate: String)
 
     fun reloadPackagedSeed()
+
+    fun completeExternalActivity(
+        planDefinitionId: String,
+        localDate: String,
+        recordedAtLocal: String,
+    ): PlanUpdate
+
+    fun includeTutorTask(planDefinitionId: String, localDate: String): PlanUpdate
+
+    fun removeTutorTask(planDefinitionId: String, localDate: String): PlanUpdate
 }

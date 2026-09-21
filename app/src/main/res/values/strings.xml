@@ -55,4 +55,40 @@
 
     <string name="optional_drills_title">Optional drills</string>
     <string name="optional_drills_not_evidence">Optional drills are not gate evidence.</string>
+
+    <string name="home_required_progress">Required activities completed: %1$d of %2$d</string>
+    <string name="home_plan_complete">Today\'s required activities are complete.</string>
+    <string name="home_completion_not_proficiency">Completion is recorded work, not proficiency certification.</string>
+    <string name="home_next_activity">Next required activity</string>
+    <string name="home_begin">Begin</string>
+    <string name="home_no_activity">No activity is recorded.</string>
+    <string name="home_latest_activity">Latest recorded activity: %1$s, %2$d minutes, %3$s</string>
+    <string name="home_activity_total">%1$s: %2$d minutes recorded, %3$d completed</string>
+    <string name="home_gate_no_decision">No advancement decision is recorded.</string>
+    <string name="home_gate_status">Recorded gate status: %1$s</string>
+    <string name="gate_status_satisfied">Satisfied</string>
+    <string name="gate_status_not_yet">Not yet satisfied</string>
+    <string name="gate_status_not_evaluable">Not evaluable</string>
+
+    <string name="plan_no_work">No work is prescribed.</string>
+    <string name="plan_book_reference">Book work uses your copy.</string>
+    <string name="plan_anki_separate">Assigned AnkiDroid work is performed separately.</string>
+    <string name="plan_listen">Listen-record-compare practice.</string>
+    <string name="plan_tutor_optional">Tutor task included by your choice.</string>
+    <string name="plan_self_attested">Self-attested</string>
+    <string name="plan_completed">Completed</string>
+    <string name="plan_not_completed">Not completed</string>
+    <string name="plan_mark_complete">Mark complete</string>
+    <string name="plan_start_practice">Start listen-record-compare</string>
+    <string name="plan_add_tutor">Add tutor task</string>
+    <string name="plan_remove_tutor">Remove tutor task</string>
+    <string name="plan_not_saved">The change was not saved.</string>
+
+    <string name="category_reading">Reading</string>
+    <string name="category_listening">Listening</string>
+    <string name="category_vocabulary">Vocabulary and forms</string>
+    <string name="category_grammar">Grammar</string>
+    <string name="category_speaking">Speaking and pronunciation</string>
+    <string name="category_writing">Writing</string>
+    <string name="category_tutor">Tutor work</string>
 </resources>
