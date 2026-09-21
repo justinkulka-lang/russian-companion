@@ -43,7 +43,7 @@ class NavigationShellTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
-        show(RoomNavigationGateway(store) { LocalStore.readPackagedSeed(context) })
+        show(RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()))
 
         compose.onNodeWithText("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.")
             .assertIsDisplayed()
@@ -83,7 +83,7 @@ class NavigationShellTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(admittedCatalog()))
-        show(RoomNavigationGateway(store) { null })
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
 
         repeat(3) { compose.onNodeWithText("Next").performClick() }
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
@@ -102,8 +102,8 @@ class NavigationShellTest {
         clickText("Attributions and licenses")
         showText("TEST-LICENSE: Test attribution")
         clickText("Back to practice")
-        compose.onNodeWithText("Practice session").assertIsDisplayed()
-        compose.onNodeWithText("Back").performClick()
+        showText("Practice session")
+        compose.onNodeWithText("Back").performScrollTo().performClick()
         compose.onNodeWithText("No licensed practice audio is available.").assertDoesNotExist()
         clickText("Home", substring = false)
 
@@ -139,6 +139,7 @@ class NavigationShellTest {
                 gateway = gateway,
                 onRetryOpen = {},
                 today = { "2026-09-21" },
+                practiceAudio = PermissivePracticeAudio(),
             )
         }
     }

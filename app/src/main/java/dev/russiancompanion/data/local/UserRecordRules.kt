@@ -108,4 +108,7 @@ internal object UserRecordRules {
             PlanActivityType.LISTEN_RECORD_COMPARE -> null
         }
     }
+
+    /** Provisional: a completed listen-record-compare practice is stored as speaking work, with no duration collected on this screen. */
+    fun practiceCategory(): ActivityCategory = ActivityCategory.SPEAKING_AND_PRONUNCIATION
 }

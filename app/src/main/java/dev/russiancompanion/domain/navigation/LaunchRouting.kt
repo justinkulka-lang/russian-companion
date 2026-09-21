@@ -2,6 +2,14 @@ package dev.russiancompanion.domain.navigation
 
 import dev.russiancompanion.domain.plan.PlanUpdate
 
+internal fun practiceLibraryAvailable(snapshot: NavigationSnapshot): Boolean {
+    return snapshot.audio.isNotEmpty()
+}
+
+internal fun practicePlayable(snapshot: NavigationSnapshot): Boolean {
+    return snapshot.audio.any { it.playable }
+}
+
 internal fun launchDestination(snapshot: NavigationSnapshot): LaunchDestination {
     if (!snapshot.localDataOpen) return LaunchDestination.LOCAL_DATA_PROBLEM
     if (!snapshot.onboardingCompleted) return LaunchDestination.ONBOARDING
@@ -45,4 +53,10 @@ internal interface NavigationGateway {
     fun includeTutorTask(planDefinitionId: String, localDate: String): PlanUpdate
 
     fun removeTutorTask(planDefinitionId: String, localDate: String): PlanUpdate
+
+    fun saveRecording(audioModelId: String, localFileReference: String, recordedAtLocal: String): PlanUpdate
+
+    fun setRecordingTutorReview(recordingId: String, marked: Boolean): PlanUpdate
+
+    fun completeListenPractice(audioModelId: String, localDate: String, recordedAtLocal: String): PlanUpdate
 }

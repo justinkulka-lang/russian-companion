@@ -19,8 +19,11 @@ import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.OnboardingConfirmation
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
+import dev.russiancompanion.domain.navigation.practiceLibraryAvailable
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
+import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.practice.PracticeAudio
 
 @Composable
 internal fun CompanionNavHost(
@@ -35,6 +38,10 @@ internal fun CompanionNavHost(
     onIncludeTutor: (String) -> Unit,
     onRemoveTutor: (String) -> Unit,
     onRetryPlanAction: () -> Unit,
+    practiceAudio: PracticeAudio,
+    onSaveRecording: (String, String) -> PlanUpdate,
+    onTutorReview: (String, Boolean) -> PlanUpdate,
+    onCompletePractice: (String) -> PlanUpdate,
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -88,7 +95,11 @@ internal fun CompanionNavHost(
         composable<PracticeLibraryRoute> {
             PracticeLibraryScreen(
                 snapshot = snapshot,
-                onOpen = { audioId -> navController.navigate(PracticeSessionRoute(audioId)) },
+                onOpen = { audioId ->
+                    if (snapshot.audio.firstOrNull { it.id == audioId }?.playable == true) {
+                        navController.navigate(PracticeSessionRoute(audioId))
+                    }
+                },
                 onHome = onHome,
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onAttributions = { navController.navigate(AttributionsRoute()) },
@@ -100,6 +111,10 @@ internal fun CompanionNavHost(
             PracticeSessionScreen(
                 snapshot = snapshot,
                 audioModelId = route.audioModelId,
+                practiceAudio = practiceAudio,
+                onSaveRecording = onSaveRecording,
+                onTutorReview = onTutorReview,
+                onCompletePractice = onCompletePractice,
                 onPrevious = { audioId ->
                     navController.navigate(PracticeSessionRoute(audioId)) {
                         popUpTo<PracticeLibraryRoute>()
@@ -194,7 +209,7 @@ private fun beginPlanItem(
 }
 
 private fun openPractice(navController: NavHostController, snapshot: NavigationSnapshot) {
-    val audio = snapshot.audio
+    val audio = snapshot.audio.filter { it.playable }
     if (audio.size == 1) {
         navController.navigate(PracticeSessionRoute(audio.single().id))
     } else if (audio.isNotEmpty()) {
@@ -279,7 +294,7 @@ private fun HomeScreen(
     onOptionalDrills: () -> Unit,
     onSelectLesson: () -> Unit,
 ) {
-    val practiceAvailable = snapshot.audio.isNotEmpty()
+    val libraryAvailable = practiceLibraryAvailable(snapshot)
     ShellPage(title = stringResource(R.string.home_title)) {
         HomePlanSection(
             snapshot = snapshot,
@@ -287,10 +302,10 @@ private fun HomeScreen(
             onTodaysPlan = onTodaysPlan,
             onSelectLesson = onSelectLesson,
         )
-        TextButton(onClick = onPractice, enabled = practiceAvailable) {
+        TextButton(onClick = onPractice, enabled = libraryAvailable) {
             Text(stringResource(R.string.open_practice))
         }
-        if (!practiceAvailable) {
+        if (!libraryAvailable) {
             Text(stringResource(R.string.practice_none))
         }
         TextButton(onClick = onGates) { Text(stringResource(R.string.open_gates)) }
@@ -317,7 +332,7 @@ private fun TodaysPlanScreen(
     onRetrySave: () -> Unit,
     onBack: () -> Unit,
 ) {
-    val practiceAvailable = snapshot.audio.isNotEmpty()
+    val libraryAvailable = practiceLibraryAvailable(snapshot)
     ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome) {
         TodaysPlanBody(
             snapshot = snapshot,
@@ -329,7 +344,7 @@ private fun TodaysPlanScreen(
             onRemoveTutor = onRemoveTutor,
             onRetrySave = onRetrySave,
         )
-        TextButton(onClick = onPractice, enabled = practiceAvailable) {
+        TextButton(onClick = onPractice, enabled = libraryAvailable) {
             Text(stringResource(R.string.open_practice))
         }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
@@ -346,12 +361,7 @@ private fun PracticeLibraryScreen(
     onBack: () -> Unit,
 ) {
     ShellPage(title = stringResource(R.string.practice_title), onBack = onBack, onHome = onHome) {
-        if (snapshot.audio.isEmpty()) {
-            Text(stringResource(R.string.practice_none))
-        }
-        snapshot.audio.forEach { audio ->
-            TextButton(onClick = { onOpen(audio.id) }) { Text(audio.stressMarkedText) }
-        }
+        PracticeLibraryBody(snapshot = snapshot, onOpen = onOpen)
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan_from_practice)) }
         TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
     }
@@ -361,6 +371,10 @@ private fun PracticeLibraryScreen(
 private fun PracticeSessionScreen(
     snapshot: NavigationSnapshot,
     audioModelId: String,
+    practiceAudio: PracticeAudio,
+    onSaveRecording: (String, String) -> PlanUpdate,
+    onTutorReview: (String, Boolean) -> PlanUpdate,
+    onCompletePractice: (String) -> PlanUpdate,
     onPrevious: (String) -> Unit,
     onNext: (String) -> Unit,
     onLibrary: () -> Unit,
@@ -369,13 +383,15 @@ private fun PracticeSessionScreen(
     onHome: (() -> Unit)?,
 ) {
     val index = snapshot.audio.indexOfFirst { it.id == audioModelId }
-    val model = snapshot.audio.getOrNull(index)
     ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome) {
-        if (model == null) {
-            Text(stringResource(R.string.practice_session_unavailable))
-        } else {
-            Text(model.stressMarkedText)
-        }
+        PracticeSessionBody(
+            snapshot = snapshot,
+            audioModelId = audioModelId,
+            practiceAudio = practiceAudio,
+            onSaveRecording = onSaveRecording,
+            onTutorReview = onTutorReview,
+            onComplete = onCompletePractice,
+        )
         if (index > 0) {
             TextButton(onClick = { onPrevious(snapshot.audio[index - 1].id) }) {
                 Text(stringResource(R.string.practice_previous))

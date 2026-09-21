@@ -11,6 +11,7 @@ import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.GateOption
 import dev.russiancompanion.domain.navigation.LessonOption
 import dev.russiancompanion.domain.navigation.NavigationGateway
+import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.OnboardingConfirmation
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
@@ -24,12 +25,14 @@ import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.plan.RecordedGateStatus
 import dev.russiancompanion.domain.plan.assembleDailyPlan
+import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.plan.summarizeActivity
 import dev.russiancompanion.domain.plan.summarizeGates
 
 internal class RoomNavigationGateway(
     private val store: LocalStore,
     private val readPackagedSeed: () -> String?,
+    private val practiceAudio: PracticeAudio,
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
         val outcome = store.seedOutcome()
@@ -42,10 +45,23 @@ internal class RoomNavigationGateway(
             )
         }
         val learner = store.learner()
+        val recordings = store.recordings()
+        val sources = store.sources().associateBy { it.id }
         val audio = store.eligibleAudio().mapNotNull { model ->
             val textId = model.sourceTextId ?: return@mapNotNull null
             val text = store.sourceText(textId) ?: return@mapNotNull null
-            AudioOption(id = model.id, stressMarkedText = text.stressMarkedText)
+            val source = model.sourceRecordId?.let { sources[it] }
+            val modelRecordings = recordings.filter { it.audioModelId == model.id }
+            AudioOption(
+                id = model.id,
+                stressMarkedText = text.stressMarkedText,
+                localAudioReference = model.localAudioReference,
+                playable = practiceAudio.modelPlayable(model.localAudioReference),
+                licenseName = source?.licenseName.orEmpty(),
+                attribution = source?.attribution.orEmpty(),
+                hasRecording = modelRecordings.isNotEmpty(),
+                completed = modelRecordings.any { it.completionState == CompletionState.COMPLETED },
+            )
         }
         val segmentId = learner.activeSegmentId
         val segmentPlans = if (segmentId == null) emptyList() else plans.filter { it.segmentId == segmentId }
@@ -69,6 +85,16 @@ internal class RoomNavigationGateway(
             activeLessonReference = lessons.firstOrNull { it.id == segmentId }?.lessonReference,
             lessons = lessons,
             audio = audio,
+            recordings = recordings.map { recording ->
+                RecordingOption(
+                    id = recording.id,
+                    audioModelId = recording.audioModelId,
+                    localFileReference = recording.localFileReference,
+                    markedForTutorReview = recording.markedForTutorReview,
+                    completed = recording.completionState == CompletionState.COMPLETED,
+                    readable = practiceAudio.recordingReadable(recording.localFileReference),
+                )
+            },
             gates = store.eligibleGates().map { gate ->
                 GateOption(id = gate.id, displayedRuleText = gate.displayedRuleText)
             },
@@ -158,6 +184,51 @@ internal class RoomNavigationGateway(
         return update(planDefinitionId) {
             store.removeTutorTask(planDefinitionId, localDate)
             PlanUpdate.Applied
+        }
+    }
+
+    override fun saveRecording(
+        audioModelId: String,
+        localFileReference: String,
+        recordedAtLocal: String,
+    ): PlanUpdate {
+        return update(audioModelId) {
+            if (!practiceAudio.recordingReadable(localFileReference)) {
+                throw IllegalArgumentException("A readable recording is required")
+            }
+            store.commitRecording(
+                audioModelId = audioModelId,
+                localFileReference = localFileReference,
+                createdAtLocal = recordedAtLocal,
+                markedForTutorReview = false,
+                completionState = CompletionState.NOT_COMPLETED,
+            )
+            PlanUpdate.Applied
+        }
+    }
+
+    override fun setRecordingTutorReview(recordingId: String, marked: Boolean): PlanUpdate {
+        return update(recordingId) {
+            store.setRecordingTutorReview(recordingId, marked)
+            PlanUpdate.Applied
+        }
+    }
+
+    override fun completeListenPractice(
+        audioModelId: String,
+        localDate: String,
+        recordedAtLocal: String,
+    ): PlanUpdate {
+        return update(audioModelId) {
+            val recording = store.recordings().lastOrNull { it.audioModelId == audioModelId }
+            if (recording == null || !practiceAudio.recordingReadable(recording.localFileReference)) {
+                throw IllegalArgumentException("A readable recording is required")
+            }
+            if (store.completeListenPractice(audioModelId, localDate, recordedAtLocal)) {
+                PlanUpdate.Applied
+            } else {
+                PlanUpdate.Unchanged
+            }
         }
     }
 

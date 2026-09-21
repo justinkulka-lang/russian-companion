@@ -7,6 +7,7 @@ import androidx.compose.ui.res.stringResource
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.activeLessonHasPlan
+import dev.russiancompanion.domain.navigation.practicePlayable
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.plan.RecordedCategory
@@ -46,13 +47,21 @@ internal fun HomePlanSection(
             } else {
                 Text(stringResource(R.string.home_next_activity))
                 Text(next.instruction)
-                val practiceReady = snapshot.audio.isNotEmpty()
+                val practiceReady = practicePlayable(snapshot)
                 val canBegin = next.activity != ChecklistActivity.LISTEN_RECORD_COMPARE || practiceReady
                 TextButton(onClick = { onBegin(next) }, enabled = canBegin) {
                     Text(stringResource(R.string.home_begin))
                 }
                 if (!canBegin) {
-                    Text(stringResource(R.string.practice_none))
+                    Text(
+                        stringResource(
+                            if (snapshot.audio.isEmpty()) {
+                                R.string.practice_none
+                            } else {
+                                R.string.practice_session_unavailable
+                            },
+                        ),
+                    )
                 }
             }
         }
@@ -89,7 +98,8 @@ internal fun TodaysPlanBody(
     plan.items.forEach { item ->
         ChecklistRow(
             item = item,
-            practiceAvailable = snapshot.audio.isNotEmpty(),
+            practiceAvailable = practicePlayable(snapshot),
+            admittedAudio = snapshot.audio.isNotEmpty(),
             onStartPractice = onStartPractice,
             onComplete = onComplete,
             onRemoveTutor = onRemoveTutor,
@@ -111,6 +121,7 @@ internal fun TodaysPlanBody(
 private fun ChecklistRow(
     item: ChecklistItem,
     practiceAvailable: Boolean,
+    admittedAudio: Boolean,
     onStartPractice: () -> Unit,
     onComplete: (String) -> Unit,
     onRemoveTutor: (String) -> Unit,
@@ -144,7 +155,11 @@ private fun ChecklistRow(
             Text(stringResource(R.string.plan_start_practice))
         }
         if (!practiceAvailable) {
-            Text(stringResource(R.string.practice_none))
+            Text(
+                stringResource(
+                    if (admittedAudio) R.string.practice_session_unavailable else R.string.practice_none,
+                ),
+            )
         }
     }
     if (item.activity == ChecklistActivity.TUTOR) {

@@ -323,6 +323,60 @@ internal class LocalStore private constructor(
         record
     }
 
+    fun setRecordingTutorReview(recordingId: String, marked: Boolean) = call {
+        val recording = database.users().recordings().firstOrNull { it.id == recordingId }
+            ?: throw IllegalArgumentException("Unknown recording")
+        database.users().updateRecording(recording.copy(markedForTutorReview = marked))
+    }
+
+    fun completeListenPractice(
+        audioModelId: String,
+        localDate: String,
+        recordedAtLocal: String,
+    ): Boolean = call {
+        val model = database.bundled().audio(audioModelId)
+        if (model == null || model.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
+            throw IllegalArgumentException("An eligible audio model is required")
+        }
+        val recording = database.users().recordings().lastOrNull { it.audioModelId == model.id }
+            ?: throw IllegalArgumentException("A recording is required")
+        if (recording.localFileReference.isBlank()) {
+            throw IllegalArgumentException("An identifiable local recording file is required")
+        }
+        if (recording.completionState == CompletionState.COMPLETED) return@call false
+        database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
+        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: return@call true
+        val plan = database.bundled().eligiblePlans().firstOrNull { candidate ->
+            candidate.segmentId == learner.activeSegmentId &&
+                candidate.activityType == PlanActivityType.LISTEN_RECORD_COMPARE
+        } ?: return@call true
+        val date = UserRecordRules.requireLocalDate(localDate)
+        val instanceId = UserRecordRules.planInstanceId(date, plan.id)
+        val existing = database.users().planInstance(instanceId)
+        if (existing?.completionState == CompletionState.COMPLETED) return@call true
+        val instance = PlanInstanceEntity(
+            id = instanceId,
+            localDate = date,
+            segmentId = plan.segmentId,
+            planDefinitionId = plan.id,
+            completionState = CompletionState.COMPLETED,
+            completedAtLocal = UserRecordRules.requireTimestamp(recordedAtLocal),
+        )
+        val log = UserRecordRules.activityLog(
+            category = UserRecordRules.practiceCategory(),
+            durationMinutes = UserRecordRules.CHECKLIST_DURATION_MINUTES,
+            completed = true,
+            recordedAtLocal = recordedAtLocal,
+            segmentId = plan.segmentId,
+            planInstanceId = instance.id,
+            selfAttested = false,
+            planActivityType = plan.activityType,
+        )
+        database.users().recordPlanCompletion(instance, log)
+        database.users().updateLearner(learner.copy(planContext = date))
+        true
+    }
+
     fun recordings(): List<RecordingRecordEntity> = call { database.users().recordings() }
 
     fun saveExport(record: ExportRecordEntity) = call {

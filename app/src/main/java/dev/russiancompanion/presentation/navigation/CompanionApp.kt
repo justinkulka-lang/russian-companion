@@ -14,6 +14,7 @@ import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.launchDestination
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.practice.PracticeAudio
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -34,6 +35,7 @@ internal fun CompanionApp(
     onRetryOpen: () -> Unit,
     today: () -> String = { LocalDate.now().toString() },
     recordedAt: () -> String = { LocalDateTime.now().toString() },
+    practiceAudio: PracticeAudio,
 ) {
     var snapshot by remember(gateway) {
         mutableStateOf(gateway?.current(today()) ?: NavigationSnapshot.closed())
@@ -89,6 +91,22 @@ internal fun CompanionApp(
                     runAction(FailedPlanAction(PlanActionKind.REMOVE_TUTOR, planId))
                 },
                 onRetryPlanAction = { failedAction?.let(::runAction) },
+                practiceAudio = practiceAudio,
+                onSaveRecording = { audioId, file ->
+                    val update = gateway?.saveRecording(audioId, file, recordedAt())
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update ?: PlanUpdate.NotSaved(audioId)
+                },
+                onTutorReview = { recordingId, marked ->
+                    val update = gateway?.setRecordingTutorReview(recordingId, marked)
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update ?: PlanUpdate.NotSaved(recordingId)
+                },
+                onCompletePractice = { audioId ->
+                    val update = gateway?.completeListenPractice(audioId, today(), recordedAt())
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update ?: PlanUpdate.NotSaved(audioId)
+                },
             )
         }
     }
