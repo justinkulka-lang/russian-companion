@@ -39,17 +39,23 @@ android {
     }
 }
 
-tasks.register("checkReleaseGate") {
+tasks.register<JavaExec>("checkReleaseGate") {
     group = "verification"
-    description = "Refuses a public release until packaged content and retained evidence clear the release gate."
-    dependsOn("testDebugUnitTest")
+    description = "Refuses a public release until the packaged catalog and retained-evidence manifest clear the release gate."
+    val compileKotlin = tasks.named("compileDebugKotlin")
+    dependsOn(compileKotlin)
+    workingDir = rootProject.layout.projectDirectory.asFile
+    mainClass.set("dev.russiancompanion.release.ReleaseGateKt")
+    classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"))
+    isIgnoreExitValue = true
     doLast {
-        val report = layout.buildDirectory.file("reports/release-gate.txt").get().asFile
+        val exitValue = executionResult.get().exitValue
+        val report = rootProject.file("app/build/reports/release-gate.txt")
         if (!report.isFile) {
             throw GradleException("The release gate did not write a report.")
         }
         val text = report.readText().trim()
-        if (!text.startsWith("APPROVED")) {
+        if (exitValue != 0 || !text.startsWith("APPROVED")) {
             throw GradleException("Public release is not approved.\n$text")
         }
     }

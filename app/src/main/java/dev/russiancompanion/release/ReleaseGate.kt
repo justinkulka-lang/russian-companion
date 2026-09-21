@@ -9,6 +9,11 @@ import dev.russiancompanion.data.local.seed.PreparedBundle
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.seed.prepareBundledContent
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerializationException
+import kotlinx.serialization.json.Json
+import java.io.File
+import kotlin.system.exitProcess
 
 internal enum class ReleaseDecision {
     APPROVED,
@@ -23,16 +28,12 @@ internal enum class ReleaseBlocker(val message: String) {
     LICENSED_AUDIO_NOT_PREPARED("Required licensed native audio is not prepared."),
     RIGHTS_RECORDS_ABSENT("Required rights records are not installed."),
     SHARE_ALIKE_UNCONFIRMED("Public release is blocked until share-alike confirmation is recorded."),
-    OFFLINE_VERIFICATION_NOT_RETAINED("Verified offline operation is not retained."),
-    REBOOT_EVIDENCE_NOT_RETAINED("Device reboot evidence is not retained."),
-    LESSON_CYCLE_NOT_RETAINED("The full lesson-cycle test is not retained."),
+    EVIDENCE_MANIFEST_UNREADABLE("The retained-evidence manifest is absent or unreadable."),
+    OFFLINE_VERIFICATION_NOT_RETAINED("AT-004 offline verification evidence is not retained."),
+    REBOOT_EVIDENCE_NOT_RETAINED("AT-020 device reboot evidence is not retained."),
+    LESSON_CYCLE_NOT_RETAINED("AT-030 lesson-cycle evidence is not retained."),
+    OWNER_RELEASE_DECISION_NOT_RETAINED("AT-031 owner release decision is not retained."),
 }
-
-internal data class RetainedReleaseEvidence(
-    val offlineVerification: Boolean = false,
-    val deviceReboot: Boolean = false,
-    val lessonCycle: Boolean = false,
-)
 
 internal data class ReleaseAssessment(
     val decision: ReleaseDecision,
@@ -43,9 +44,43 @@ internal data class ReleaseAssessment(
     }
 }
 
+@Serializable
+internal data class RetainedEvidenceManifest(
+    val schemaVersion: Int,
+    val records: List<RetainedEvidenceRecord>,
+)
+
+@Serializable
+internal data class RetainedEvidenceRecord(
+    val procedure: String,
+    val state: String,
+    val evidencePath: String? = null,
+)
+
+private val evidenceJson = Json {
+    ignoreUnknownKeys = false
+    explicitNulls = true
+}
+
+private val requiredProcedures = listOf(
+    "AT-004" to ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED,
+    "AT-020" to ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED,
+    "AT-030" to ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED,
+    "AT-031" to ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
+)
+
+internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
+    val seedFile = File(repositoryRoot, "app/src/main/assets/content/bundled-content.json")
+    val manifestFile = File(repositoryRoot, RELEASE_EVIDENCE_MANIFEST)
+    val seed = if (seedFile.isFile) seedFile.readText() else null
+    val manifest = if (manifestFile.isFile) manifestFile.readText() else null
+    return assessPackagedRelease(seed, manifest, repositoryRoot)
+}
+
 internal fun assessPackagedRelease(
     packagedSeed: String?,
-    evidence: RetainedReleaseEvidence = RetainedReleaseEvidence(),
+    evidenceManifest: String?,
+    repositoryRoot: File,
 ): ReleaseAssessment {
     val prepared = when {
         packagedSeed == null -> null
@@ -54,13 +89,33 @@ internal fun assessPackagedRelease(
             is SeedParse.Ok -> prepareBundledContent(parsed.document)
         }
     }
-    val blockers = if (prepared == null) {
-        listOf(ReleaseBlocker.CONTENT_UNREADABLE)
-    } else {
-        contentBlockers(prepared) + evidenceBlockers(evidence)
+    val blockers = buildList {
+        if (prepared == null) {
+            add(ReleaseBlocker.CONTENT_UNREADABLE)
+        } else {
+            addAll(contentBlockers(prepared))
+        }
+        addAll(evidenceBlockers(evidenceManifest, repositoryRoot))
     }
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
     return ReleaseAssessment(decision, blockers)
+}
+
+internal const val RELEASE_EVIDENCE_MANIFEST = "release/retained-evidence.json"
+
+private const val EVIDENCE_PATH_PREFIX = "release/evidence/"
+
+fun main() {
+    val repositoryRoot = File(System.getProperty("user.dir"))
+    val assessment = assessRepositoryRelease(repositoryRoot)
+    val report = File(repositoryRoot, "app/build/reports/release-gate.txt")
+    report.parentFile?.mkdirs()
+    report.writeText(assessment.report() + "\n")
+    if (assessment.decision != ReleaseDecision.APPROVED) {
+        System.err.println("Public release is not approved.")
+        System.err.println(assessment.report())
+        exitProcess(1)
+    }
 }
 
 private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
@@ -107,10 +162,59 @@ private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
     return blockers
 }
 
-private fun evidenceBlockers(evidence: RetainedReleaseEvidence): List<ReleaseBlocker> {
+private fun evidenceBlockers(manifest: String?, repositoryRoot: File): List<ReleaseBlocker> {
+    val reading = readEvidence(manifest, repositoryRoot)
     val blockers = mutableListOf<ReleaseBlocker>()
-    if (!evidence.offlineVerification) blockers += ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED
-    if (!evidence.deviceReboot) blockers += ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED
-    if (!evidence.lessonCycle) blockers += ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED
+    if (!reading.readable) blockers += ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE
+    for ((procedure, blocker) in requiredProcedures) {
+        if (procedure !in reading.retained) blockers += blocker
+    }
     return blockers
+}
+
+private data class EvidenceReading(
+    val readable: Boolean,
+    val retained: Set<String>,
+)
+
+private fun readEvidence(manifest: String?, repositoryRoot: File): EvidenceReading {
+    if (manifest == null) return EvidenceReading(readable = false, retained = emptySet())
+    val parsed = try {
+        evidenceJson.decodeFromString(RetainedEvidenceManifest.serializer(), manifest)
+    } catch (_: SerializationException) {
+        return EvidenceReading(readable = false, retained = emptySet())
+    } catch (_: IllegalArgumentException) {
+        return EvidenceReading(readable = false, retained = emptySet())
+    }
+    if (parsed.schemaVersion != 1) return EvidenceReading(readable = false, retained = emptySet())
+    val procedures = parsed.records.map { it.procedure }
+    if (procedures.size != procedures.toSet().size) {
+        return EvidenceReading(readable = false, retained = emptySet())
+    }
+    val retained = requiredProcedures.map { it.first }.filter { procedure ->
+        val record = parsed.records.firstOrNull { it.procedure == procedure } ?: return@filter false
+        isRetained(record, repositoryRoot)
+    }.toSet()
+    return EvidenceReading(readable = true, retained = retained)
+}
+
+private fun isRetained(record: RetainedEvidenceRecord, repositoryRoot: File): Boolean {
+    if (record.state != "RETAINED") return false
+    val relative = record.evidencePath ?: return false
+    if (!relative.startsWith(EVIDENCE_PATH_PREFIX)) return false
+    val file = resolveEvidenceFile(repositoryRoot, relative) ?: return false
+    return file.isFile && file.length() > 0L
+}
+
+private fun resolveEvidenceFile(repositoryRoot: File, relative: String): File? {
+    if (relative.isBlank()) return null
+    if (relative.startsWith("/") || relative.startsWith("\\") || relative.contains('\\')) return null
+    if (relative.contains(':')) return null
+    val parts = relative.split('/')
+    if (parts.any { it.isBlank() || it == "." || it == ".." }) return null
+    val root = repositoryRoot.canonicalFile
+    val candidate = File(root, relative).canonicalFile
+    val rootPath = root.path.trimEnd('/') + "/"
+    if (!candidate.path.startsWith(rootPath)) return null
+    return candidate
 }
