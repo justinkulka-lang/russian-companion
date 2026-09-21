@@ -10,7 +10,8 @@ package dev.russiancompanion.acceptance
  * The New Penguin Russian Course; grammar practice in the user's book and answer key;
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
  * AT-001 stays outstanding until a complete bundled catalog is installed.
- * AT-031 stays outstanding. This is not a release approval.
+ * AT-031 stays outstanding. assembleRelease runs the release gate and refuses
+ * a public release while any blocker remains. This is not a release approval.
  */
 internal enum class AcceptanceDisposition {
     SATISFIED_BY_AUTOMATED_TEST,

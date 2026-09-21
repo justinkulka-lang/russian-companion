@@ -39,6 +39,26 @@ android {
     }
 }
 
+tasks.register("checkReleaseGate") {
+    group = "verification"
+    description = "Refuses a public release until packaged content and retained evidence clear the release gate."
+    dependsOn("testDebugUnitTest")
+    doLast {
+        val report = layout.buildDirectory.file("reports/release-gate.txt").get().asFile
+        if (!report.isFile) {
+            throw GradleException("The release gate did not write a report.")
+        }
+        val text = report.readText().trim()
+        if (!text.startsWith("APPROVED")) {
+            throw GradleException("Public release is not approved.\n$text")
+        }
+    }
+}
+
+tasks.named("assembleRelease").configure {
+    dependsOn("checkReleaseGate")
+}
+
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
 }
