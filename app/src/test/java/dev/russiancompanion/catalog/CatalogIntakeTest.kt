@@ -1,6 +1,5 @@
 package dev.russiancompanion.catalog
 
-import dev.russiancompanion.catalog.CATALOG_SOURCE_DECISIONS
 import dev.russiancompanion.release.RELEASE_EVIDENCE_MANIFEST
 import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
