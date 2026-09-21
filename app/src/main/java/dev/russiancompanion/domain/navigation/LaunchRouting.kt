@@ -2,6 +2,9 @@ package dev.russiancompanion.domain.navigation
 
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.plan.RecordedCategory
+import dev.russiancompanion.domain.progress.ExportUpdate
+import java.io.OutputStream
 
 internal fun practiceLibraryAvailable(snapshot: NavigationSnapshot): Boolean {
     return snapshot.audio.isNotEmpty()
@@ -68,4 +71,19 @@ internal interface NavigationGateway {
     ): PlanUpdate
 
     fun addTutorSignOff(gateId: String, recordedAtLocal: String): PlanUpdate
+
+    fun saveActivityLog(
+        category: RecordedCategory,
+        durationMinutes: Int,
+        completed: Boolean,
+        recordedAtLocal: String,
+        associateWithLesson: Boolean,
+    ): PlanUpdate
+
+    fun exportLocal(
+        destination: OutputStream,
+        recordedAtLocal: String,
+        destinationFileName: String?,
+        documentReference: String?,
+    ): ExportUpdate
 }

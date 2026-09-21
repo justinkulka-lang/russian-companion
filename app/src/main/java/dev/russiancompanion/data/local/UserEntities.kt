@@ -106,8 +106,14 @@ internal data class ActivityLogEntity(
             childColumns = ["audioModelId"],
             onDelete = ForeignKey.RESTRICT,
         ),
+        ForeignKey(
+            entity = ActivityLogEntity::class,
+            parentColumns = ["id"],
+            childColumns = ["activityLogId"],
+            onDelete = ForeignKey.RESTRICT,
+        ),
     ],
-    indices = [Index("audioModelId")],
+    indices = [Index("audioModelId"), Index("activityLogId")],
 )
 internal data class RecordingRecordEntity(
     @PrimaryKey val id: String,
@@ -116,6 +122,7 @@ internal data class RecordingRecordEntity(
     val createdAtLocal: String,
     val markedForTutorReview: Boolean,
     val completionState: CompletionState,
+    val activityLogId: String? = null,
 )
 
 @Entity(
@@ -191,4 +198,5 @@ internal data class ExportRecordEntity(
     val progressCount: Int,
     val recordingCount: Int,
     val status: ExportStatus,
+    val documentReference: String? = null,
 )

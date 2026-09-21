@@ -285,6 +285,23 @@ class DailyPlanUiTest {
         override fun addTutorSignOff(gateId: String, recordedAtLocal: String): PlanUpdate {
             return PlanUpdate.NotSaved(gateId)
         }
+
+        override fun saveActivityLog(
+            category: dev.russiancompanion.domain.plan.RecordedCategory,
+            durationMinutes: Int,
+            completed: Boolean,
+            recordedAtLocal: String,
+            associateWithLesson: Boolean,
+        ): PlanUpdate = PlanUpdate.NotSaved("activity")
+
+        override fun exportLocal(
+            destination: java.io.OutputStream,
+            recordedAtLocal: String,
+            destinationFileName: String?,
+            documentReference: String?,
+        ): dev.russiancompanion.domain.progress.ExportUpdate {
+            return dev.russiancompanion.domain.progress.ExportUpdate.DestinationUnavailable
+        }
     }
 }
 

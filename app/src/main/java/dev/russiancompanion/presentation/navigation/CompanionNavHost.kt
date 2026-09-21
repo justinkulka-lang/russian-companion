@@ -24,7 +24,10 @@ import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.practice.PracticeAudio
+import dev.russiancompanion.domain.progress.ExportUpdate
+import java.io.OutputStream
 
 @Composable
 internal fun CompanionNavHost(
@@ -45,6 +48,10 @@ internal fun CompanionNavHost(
     onCompletePractice: (String) -> PlanUpdate,
     onSaveGateEvidence: (String, List<GateEvidenceEntry>) -> PlanUpdate,
     onAddTutorSignOff: (String) -> PlanUpdate,
+    recordedAt: () -> String,
+    onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
+    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    chooseExportDestination: (() -> ExportSelection?)? = null,
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -158,6 +165,7 @@ internal fun CompanionNavHost(
         }
         composable<ProgressRoute> {
             ProgressScreen(
+                snapshot = snapshot,
                 onLogActivity = { navController.navigate(LogActivityRoute(fromPlan = false)) },
                 onExport = { navController.navigate(LocalExportRoute) },
                 onHome = onHome,
@@ -168,7 +176,10 @@ internal fun CompanionNavHost(
         composable<LogActivityRoute> { entry ->
             val route = entry.toRoute<LogActivityRoute>()
             LogActivityScreen(
+                snapshot = snapshot,
                 fromPlan = route.fromPlan,
+                recordedAt = recordedAt,
+                onSave = onSaveActivity,
                 onProgress = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onHome = onHome,
@@ -176,6 +187,8 @@ internal fun CompanionNavHost(
         }
         composable<LocalExportRoute> {
             LocalExportScreen(
+                onExport = onExport,
+                chooseExportDestination = chooseExportDestination,
                 onProgress = { navController.popBackStack() },
                 onHome = onHome,
             )
@@ -452,43 +465,6 @@ private fun GateDetailScreen(
         }
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
-    }
-}
-
-@Composable
-private fun ProgressScreen(
-    onLogActivity: () -> Unit,
-    onExport: () -> Unit,
-    onHome: (() -> Unit)?,
-    onGates: () -> Unit,
-    onBack: () -> Unit,
-) {
-    ShellPage(title = stringResource(R.string.progress_title), onBack = onBack, onHome = onHome) {
-        Text(stringResource(R.string.progress_activity_only))
-        TextButton(onClick = onLogActivity) { Text(stringResource(R.string.log_activity_title)) }
-        TextButton(onClick = onExport) { Text(stringResource(R.string.local_export_title)) }
-        TextButton(onClick = onGates) { Text(stringResource(R.string.open_gates)) }
-    }
-}
-
-@Composable
-private fun LogActivityScreen(
-    fromPlan: Boolean,
-    onProgress: () -> Unit,
-    onTodaysPlan: () -> Unit,
-    onHome: (() -> Unit)?,
-) {
-    ShellPage(title = stringResource(R.string.log_activity_title), onBack = onProgress, onHome = onHome) {
-        if (fromPlan) {
-            TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
-        }
-    }
-}
-
-@Composable
-private fun LocalExportScreen(onProgress: () -> Unit, onHome: (() -> Unit)?) {
-    ShellPage(title = stringResource(R.string.local_export_title), onBack = onProgress, onHome = onHome) {
-        Text(stringResource(R.string.local_export_scope))
     }
 }
 

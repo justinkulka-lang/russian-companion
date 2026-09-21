@@ -2,6 +2,7 @@ package dev.russiancompanion
 
 import android.app.Application
 import dev.russiancompanion.data.audio.AndroidPracticeAudio
+import dev.russiancompanion.data.export.readAppRecording
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
 import dev.russiancompanion.domain.navigation.NavigationGateway
@@ -23,7 +24,12 @@ class RussianCompanionApplication : Application() {
 
     internal fun gateway(): NavigationGateway? {
         val store = localStore ?: return null
-        return RoomNavigationGateway(store, { LocalStore.readPackagedSeed(this) }, practiceAudio)
+        return RoomNavigationGateway(
+            store,
+            { LocalStore.readPackagedSeed(this) },
+            practiceAudio,
+            readRecordingBytes = { reference -> readAppRecording(this, reference) },
+        )
     }
 
     internal fun retryOpen(): NavigationGateway? {

@@ -4,6 +4,7 @@ import dev.russiancompanion.domain.gate.GateDetailView
 import dev.russiancompanion.domain.plan.ActivitySummary
 import dev.russiancompanion.domain.plan.DailyPlan
 import dev.russiancompanion.domain.plan.GateSummary
+import dev.russiancompanion.domain.progress.ProgressReview
 
 internal data class LessonOption(
     val id: String,
@@ -61,6 +62,7 @@ internal data class NavigationSnapshot(
     val gateSummaries: List<GateSummary> = emptyList(),
     val activitySummary: ActivitySummary = ActivitySummary.none(),
     val gateDetails: List<GateDetailView> = emptyList(),
+    val progress: ProgressReview = ProgressReview.empty(),
 ) {
     companion object {
         fun closed(): NavigationSnapshot {

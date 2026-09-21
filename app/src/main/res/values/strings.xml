@@ -125,4 +125,33 @@
     <string name="category_speaking">Speaking and pronunciation</string>
     <string name="category_writing">Writing</string>
     <string name="category_tutor">Tutor work</string>
+
+    <string name="progress_imbalance">Activity imbalance</string>
+    <string name="progress_cumulative">Recorded time: %1$d minutes. Recorded completions: %2$d.</string>
+    <string name="progress_lesson">Lesson: %1$s</string>
+    <string name="progress_close_log">Close log</string>
+    <string name="progress_log_entry">%1$s, %2$s</string>
+    <string name="progress_log_minutes">%1$d minutes</string>
+    <string name="log_duration_label">Duration in minutes</string>
+    <string name="log_duration_required">A duration is required.</string>
+    <string name="log_duration_invalid">Enter a nonnegative duration in minutes.</string>
+    <string name="log_category_required">An activity category is required.</string>
+    <string name="log_save">Save activity</string>
+    <string name="log_mark_completed">Mark completed</string>
+    <string name="log_associate_lesson">Associate with the current lesson</string>
+    <string name="log_recorded_at">Recorded at %1$s</string>
+    <string name="log_book_practice">Book practice.</string>
+    <string name="log_anki_practice">AnkiDroid practice.</string>
+    <string name="progress_completed_zero">completed — 0 minutes</string>
+    <string name="progress_category_completed_zero">%1$s: completed — 0 minutes</string>
+    <string name="progress_category_completed_zero_count">%1$s: %2$d completed — 0 minutes</string>
+    <string name="home_latest_completed_zero">Latest recorded activity: %1$s, completed — 0 minutes</string>
+    <string name="local_export_choose">Choose a local destination</string>
+    <string name="export_completed">Export completed.</string>
+    <string name="export_empty">This export contains no logs, gate evidence, or recordings.</string>
+    <string name="export_failed">Export did not complete.</string>
+    <string name="export_unusable">The incomplete export is unusable.</string>
+    <string name="export_not_confirmed">Export completion was not confirmed.</string>
+    <string name="export_destination_unavailable">The destination is unavailable.</string>
+    <string name="export_recording_unreadable">This recording is unreadable: %1$s</string>
 </resources>

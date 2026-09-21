@@ -94,6 +94,17 @@ internal abstract class UserDataDao {
     }
 
     @Transaction
+    open fun recordListenCompletion(
+        recording: RecordingRecordEntity,
+        instance: PlanInstanceEntity,
+        log: ActivityLogEntity,
+    ) {
+        upsertPlanInstance(instance)
+        insertActivityLog(log)
+        updateRecording(recording)
+    }
+
+    @Transaction
     open fun recordGateDecision(evidence: List<GateEvidenceEntity>, decision: GateDecisionEntity) {
         evidence.forEach(::insertEvidence)
         insertDecision(decision)
