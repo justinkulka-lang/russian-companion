@@ -43,6 +43,23 @@ internal data class AttributionOption(
     val attribution: String,
     val modificationStatus: String,
     val shareAlikeConfirmation: String,
+    val provenance: String = "",
+    val redistributionBasis: String = "",
+    val shareAlikeTreatment: String = "",
+)
+
+internal data class AssetInventoryOption(
+    val rightsId: String?,
+    val sourceId: String?,
+    val assetIdentifier: String,
+    val licenseStatus: String,
+    val compatibilityDecision: String,
+    val attributionRequired: Boolean,
+    val inclusionResult: String,
+    val audioModelId: String?,
+    val localAudioReference: String,
+    val audioEligible: Boolean,
+    val rightsMissing: Boolean,
 )
 
 internal data class NavigationSnapshot(
@@ -58,6 +75,8 @@ internal data class NavigationSnapshot(
     val gates: List<GateOption>,
     val eligibleDrillCount: Int,
     val attributions: List<AttributionOption>,
+    val assetRecords: List<AssetInventoryOption> = emptyList(),
+    val shareAlikeBlocksRelease: Boolean = false,
     val dailyPlan: DailyPlan = DailyPlan.empty(),
     val gateSummaries: List<GateSummary> = emptyList(),
     val activitySummary: ActivitySummary = ActivitySummary.none(),

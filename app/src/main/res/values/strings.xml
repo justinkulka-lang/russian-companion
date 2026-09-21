@@ -85,6 +85,37 @@
 
     <string name="attributions_title">Attributions and licenses</string>
     <string name="attributions_not_ready">No attribution inventory is installed. This installation is not release-ready.</string>
+    <string name="attributions_source">Source: %1$s</string>
+    <string name="attributions_provenance">Provenance: %1$s</string>
+    <string name="attributions_redistribution">Redistribution basis: %1$s</string>
+    <string name="attributions_license">License: %1$s</string>
+    <string name="attributions_attribution">Attribution: %1$s</string>
+    <string name="attributions_modification">Modification status: %1$s</string>
+    <string name="attributions_share_treatment">Share-alike treatment: %1$s</string>
+    <string name="attributions_share_confirmation">Share-alike confirmation: %1$s</string>
+    <string name="attributions_release_block">Public release is blocked until share-alike confirmation is recorded.</string>
+    <string name="attributions_asset">Asset: %1$s</string>
+    <string name="attributions_license_status">License status: %1$s</string>
+    <string name="attributions_compatibility">Compatibility: %1$s</string>
+    <string name="attributions_attribution_required">Attribution required</string>
+    <string name="attributions_attribution_not_required">Attribution not required</string>
+    <string name="attributions_inclusion">Inclusion: %1$s</string>
+    <string name="attributions_audio_file">Audio file: %1$s</string>
+    <string name="attributions_audio_excluded">This audio is excluded from practice.</string>
+    <string name="attributions_audio_eligible">This audio is eligible for practice.</string>
+    <string name="attributions_rights_missing">This audio has no rights record and is excluded.</string>
+    <string name="attributions_close">Close record</string>
+    <string name="status_unmodified">Unmodified</string>
+    <string name="status_modified">Modified</string>
+    <string name="status_not_applicable">Not applicable</string>
+    <string name="status_unconfirmed">Unconfirmed</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_compatible">Compatible</string>
+    <string name="status_absent">Absent</string>
+    <string name="status_unclear">Unclear</string>
+    <string name="status_incompatible">Incompatible</string>
+    <string name="status_included">Included</string>
+    <string name="status_excluded">Excluded</string>
     <string name="back_to_practice">Back to practice</string>
 
     <string name="optional_drills_title">Optional drills</string>

@@ -113,6 +113,7 @@ internal fun CompanionNavHost(
                 onHome = onHome,
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onAttributions = { navController.navigate(AttributionsRoute()) },
+                onInspectAttribution = { audioId -> navController.navigate(AttributionsRoute(audioId)) },
                 onBack = { navController.popBackStack() },
             )
         }
@@ -195,7 +196,7 @@ internal fun CompanionNavHost(
         }
         composable<AttributionsRoute> { entry ->
             val route = entry.toRoute<AttributionsRoute>()
-            AttributionsScreen(
+            AttributionInventoryScreen(
                 snapshot = snapshot,
                 practiceAudioId = route.practiceAudioId,
                 onHome = onHome,
@@ -376,10 +377,11 @@ private fun PracticeLibraryScreen(
     onHome: (() -> Unit)?,
     onTodaysPlan: () -> Unit,
     onAttributions: () -> Unit,
+    onInspectAttribution: (String) -> Unit,
     onBack: () -> Unit,
 ) {
     ShellPage(title = stringResource(R.string.practice_title), onBack = onBack, onHome = onHome) {
-        PracticeLibraryBody(snapshot = snapshot, onOpen = onOpen)
+        PracticeLibraryBody(snapshot = snapshot, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan_from_practice)) }
         TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
     }
@@ -465,28 +467,6 @@ private fun GateDetailScreen(
         }
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
         TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
-    }
-}
-
-@Composable
-private fun AttributionsScreen(
-    snapshot: NavigationSnapshot,
-    practiceAudioId: String?,
-    onHome: (() -> Unit)?,
-    onBack: () -> Unit,
-) {
-    ShellPage(title = stringResource(R.string.attributions_title), onBack = onBack, onHome = onHome) {
-        if (snapshot.attributions.isEmpty()) {
-            Text(stringResource(R.string.attributions_not_ready))
-        }
-        snapshot.attributions.forEach { record ->
-            Text("${record.licenseName}: ${record.attribution}")
-        }
-        if (practiceAudioId != null) {
-            TextButton(onClick = onBack) {
-                Text(stringResource(R.string.back_to_practice))
-            }
-        }
     }
 }
 
