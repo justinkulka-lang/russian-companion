@@ -188,8 +188,9 @@ class AcceptanceCycleTest {
             val decisionText = zip.read("gate-decisions.csv")
             assertTrue(decisionText.contains("SATISFIED"))
             val recordingText = zip.read("recordings.csv")
+            val activityLogId = checkNotNull(recording.activityLogId)
             assertTrue(recordingText.contains(recording.id))
-            assertTrue(recordingText.contains(recording.activityLogId))
+            assertTrue(recordingText.contains(activityLogId))
             val audioName = packaged.single { it.startsWith("recordings/") }
             val audioBytes = zip.getInputStream(zip.getEntry(audioName)).use { it.readBytes() }
             assertTrue(audioBytes.contentEquals(capture.bytes))
