@@ -13,6 +13,21 @@ internal data class LessonOption(
 internal data class AudioOption(
     val id: String,
     val stressMarkedText: String,
+    val localAudioReference: String = "",
+    val playable: Boolean = true,
+    val licenseName: String = "",
+    val attribution: String = "",
+    val hasRecording: Boolean = false,
+    val completed: Boolean = false,
+)
+
+internal data class RecordingOption(
+    val id: String,
+    val audioModelId: String,
+    val localFileReference: String,
+    val markedForTutorReview: Boolean,
+    val completed: Boolean,
+    val readable: Boolean,
 )
 
 internal data class GateOption(
@@ -37,6 +52,7 @@ internal data class NavigationSnapshot(
     val activeLessonReference: String?,
     val lessons: List<LessonOption>,
     val audio: List<AudioOption>,
+    val recordings: List<RecordingOption> = emptyList(),
     val gates: List<GateOption>,
     val eligibleDrillCount: Int,
     val attributions: List<AttributionOption>,

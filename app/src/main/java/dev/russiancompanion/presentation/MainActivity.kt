@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
             CompanionApp(
                 gateway = gateway,
                 onRetryOpen = { gateway = app.retryOpen() },
+                practiceAudio = app.practiceAudio,
             )
         }
     }

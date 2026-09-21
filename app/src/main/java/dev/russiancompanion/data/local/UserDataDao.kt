@@ -54,6 +54,9 @@ internal abstract class UserDataDao {
     @Query("SELECT * FROM recording_records ORDER BY createdAtLocal, id")
     abstract fun recordings(): List<RecordingRecordEntity>
 
+    @Update
+    abstract fun updateRecording(record: RecordingRecordEntity)
+
     @Insert
     abstract fun insertEvidence(evidence: GateEvidenceEntity)
 

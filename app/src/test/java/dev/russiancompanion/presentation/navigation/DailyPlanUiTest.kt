@@ -21,6 +21,7 @@ import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.navigation.LessonOption
 import dev.russiancompanion.domain.navigation.NavigationGateway
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
@@ -56,7 +57,7 @@ class DailyPlanUiTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
-        show(RoomNavigationGateway(store) { null })
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
 
         repeat(3) { compose.onNodeWithText("Next").performClick() }
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
@@ -108,7 +109,7 @@ class DailyPlanUiTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = false)))
-        show(RoomNavigationGateway(store) { null })
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
         repeat(3) { compose.onNodeWithText("Next").performClick() }
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
@@ -152,6 +153,7 @@ class DailyPlanUiTest {
                 onRetryOpen = {},
                 today = { "2026-09-21" },
                 recordedAt = { "2026-09-21T09:0${stamp++}" },
+                practiceAudio = PermissivePracticeAudio(),
             )
         }
     }
@@ -257,5 +259,41 @@ class DailyPlanUiTest {
         override fun removeTutorTask(planDefinitionId: String, localDate: String): PlanUpdate {
             return PlanUpdate.NotSaved(planDefinitionId)
         }
+
+        override fun saveRecording(
+            audioModelId: String,
+            localFileReference: String,
+            recordedAtLocal: String,
+        ): PlanUpdate = PlanUpdate.NotSaved(audioModelId)
+
+        override fun setRecordingTutorReview(recordingId: String, marked: Boolean): PlanUpdate {
+            return PlanUpdate.NotSaved(recordingId)
+        }
+
+        override fun completeListenPractice(
+            audioModelId: String,
+            localDate: String,
+            recordedAtLocal: String,
+        ): PlanUpdate = PlanUpdate.NotSaved(audioModelId)
     }
+}
+
+internal class PermissivePracticeAudio : PracticeAudio {
+    override fun modelPlayable(localAudioReference: String): Boolean = true
+
+    override fun recordingReadable(localFileReference: String): Boolean = localFileReference.isNotBlank()
+
+    override fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit) {
+        onFinished(true)
+    }
+
+    override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
+        onFinished(true)
+    }
+
+    override fun stopPlayback() = Unit
+
+    override fun startCapture(): String = "recordings/test-capture"
+
+    override fun stopCapture(keep: Boolean): String? = if (keep) "recordings/test-capture" else null
 }
