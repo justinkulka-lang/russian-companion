@@ -45,6 +45,8 @@ class NavigationShellTest {
         store.applySeed(LocalStore.readPackagedSeed(context))
         show(RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()))
 
+        compose.onNodeWithText("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.")
+            .assertIsDisplayed()
         compose.onNodeWithText("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.")
             .assertIsDisplayed()
         compose.onNodeWithText("Home", substring = false).assertDoesNotExist()

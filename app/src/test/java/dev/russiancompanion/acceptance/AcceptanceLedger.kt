@@ -4,6 +4,13 @@ package dev.russiancompanion.acceptance
  * Classification of acceptance procedures for this build.
  * OUTSTANDING procedures have not been executed to the criterion's preconditions.
  * A green automated test does not move an outstanding procedure to SATISFIED.
+ *
+ * Release-hardening copy now present in the app:
+ * the onboarding identity for an independent adult beginner working through
+ * The New Penguin Russian Course; grammar practice in the user's book and answer key;
+ * vocabulary and forms practice remaining in AnkiDroid as a user report.
+ * AT-001 stays outstanding until a complete bundled catalog is installed.
+ * AT-031 stays outstanding. This is not a release approval.
  */
 internal enum class AcceptanceDisposition {
     SATISFIED_BY_AUTOMATED_TEST,

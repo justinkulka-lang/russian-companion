@@ -72,8 +72,8 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
         clickText("Today's Plan", substring = false)
 
-        showText("Book work uses your copy.")
-        showText("Assigned AnkiDroid work is performed separately.")
+        showText("Grammar practice stays in your copy of the book and its answer key.")
+        showText("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.")
         showText("Listen-record-compare practice.")
         compose.onAllNodesWithText("Self-attested").assertCountEquals(2)
         compose.onNodeWithText("Remove tutor task").assertDoesNotExist()
