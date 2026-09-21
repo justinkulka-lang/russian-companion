@@ -1,5 +1,9 @@
 package dev.russiancompanion.domain.navigation
 
+import dev.russiancompanion.domain.plan.ActivitySummary
+import dev.russiancompanion.domain.plan.DailyPlan
+import dev.russiancompanion.domain.plan.GateSummary
+
 internal data class LessonOption(
     val id: String,
     val lessonReference: String,
@@ -36,6 +40,9 @@ internal data class NavigationSnapshot(
     val gates: List<GateOption>,
     val eligibleDrillCount: Int,
     val attributions: List<AttributionOption>,
+    val dailyPlan: DailyPlan = DailyPlan.empty(),
+    val gateSummaries: List<GateSummary> = emptyList(),
+    val activitySummary: ActivitySummary = ActivitySummary.none(),
 ) {
     companion object {
         fun closed(): NavigationSnapshot {

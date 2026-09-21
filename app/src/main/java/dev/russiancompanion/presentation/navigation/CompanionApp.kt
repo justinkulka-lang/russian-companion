@@ -13,19 +13,52 @@ import dev.russiancompanion.domain.navigation.NavigationGateway
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.launchDestination
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
+import dev.russiancompanion.domain.plan.PlanUpdate
 import java.time.LocalDate
+import java.time.LocalDateTime
+
+internal enum class PlanActionKind {
+    COMPLETE,
+    INCLUDE_TUTOR,
+    REMOVE_TUTOR,
+}
+
+internal data class FailedPlanAction(
+    val kind: PlanActionKind,
+    val planDefinitionId: String,
+)
 
 @Composable
 internal fun CompanionApp(
     gateway: NavigationGateway?,
     onRetryOpen: () -> Unit,
     today: () -> String = { LocalDate.now().toString() },
+    recordedAt: () -> String = { LocalDateTime.now().toString() },
 ) {
     var snapshot by remember(gateway) {
-        mutableStateOf(gateway?.current() ?: NavigationSnapshot.closed())
+        mutableStateOf(gateway?.current(today()) ?: NavigationSnapshot.closed())
     }
+    var failedAction by remember(gateway) { mutableStateOf<FailedPlanAction?>(null) }
     fun refresh() {
-        snapshot = gateway?.current() ?: NavigationSnapshot.closed()
+        snapshot = gateway?.current(today()) ?: NavigationSnapshot.closed()
+    }
+    fun apply(update: PlanUpdate?, action: FailedPlanAction) {
+        when (update) {
+            PlanUpdate.Applied, PlanUpdate.Unchanged -> {
+                failedAction = null
+                refresh()
+            }
+            is PlanUpdate.NotSaved -> failedAction = action
+            null -> failedAction = action
+        }
+    }
+    fun runAction(action: FailedPlanAction) {
+        val update = when (action.kind) {
+            PlanActionKind.COMPLETE -> gateway?.completeExternalActivity(action.planDefinitionId, today(), recordedAt())
+            PlanActionKind.INCLUDE_TUTOR -> gateway?.includeTutorTask(action.planDefinitionId, today())
+            PlanActionKind.REMOVE_TUTOR -> gateway?.removeTutorTask(action.planDefinitionId, today())
+        }
+        apply(update, action)
     }
 
     val launch = launchDestination(snapshot)
@@ -36,6 +69,7 @@ internal fun CompanionApp(
                 navController = navController,
                 launch = launch,
                 snapshot = snapshot,
+                saveFailed = failedAction != null,
                 onConfirmLesson = { segmentId ->
                     gateway?.confirmLesson(segmentId, today())
                     refresh()
@@ -45,6 +79,16 @@ internal fun CompanionApp(
                     refresh()
                 },
                 onRetryOpen = onRetryOpen,
+                onCompleteItem = { planId ->
+                    runAction(FailedPlanAction(PlanActionKind.COMPLETE, planId))
+                },
+                onIncludeTutor = { planId ->
+                    runAction(FailedPlanAction(PlanActionKind.INCLUDE_TUTOR, planId))
+                },
+                onRemoveTutor = { planId ->
+                    runAction(FailedPlanAction(PlanActionKind.REMOVE_TUTOR, planId))
+                },
+                onRetryPlanAction = { failedAction?.let(::runAction) },
             )
         }
     }
