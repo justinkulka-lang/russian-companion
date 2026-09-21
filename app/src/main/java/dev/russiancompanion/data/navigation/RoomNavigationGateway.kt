@@ -10,7 +10,10 @@ import dev.russiancompanion.data.export.buildExportZip
 import dev.russiancompanion.data.export.exportAudioName
 import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.ActivityLogEntity
+import dev.russiancompanion.data.local.AssetRightsRecordEntity
+import dev.russiancompanion.data.local.AudioModelEntity
 import dev.russiancompanion.data.local.CompletionState
+import dev.russiancompanion.data.local.EligibilityStatus
 import dev.russiancompanion.data.local.ExportRecordEntity
 import dev.russiancompanion.data.local.ExportStatus
 import dev.russiancompanion.data.local.GateDecisionStatus
@@ -20,6 +23,7 @@ import dev.russiancompanion.data.local.gateDetailView
 import dev.russiancompanion.data.local.PlanActivityType
 import dev.russiancompanion.data.local.seed.SeedApplyStatus
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
+import dev.russiancompanion.domain.navigation.AssetInventoryOption
 import dev.russiancompanion.domain.navigation.AttributionOption
 import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.GateOption
@@ -69,7 +73,11 @@ internal class RoomNavigationGateway(
         }
         val learner = store.learner()
         val recordings = store.recordings()
-        val sources = store.sources().associateBy { it.id }
+        val sourceEntities = store.sources()
+        val sources = sourceEntities.associateBy { it.id }
+        val rightsRecords = store.rights()
+        val rightsById = rightsRecords.associateBy { it.id }
+        val storedAudio = store.allAudio()
         val audio = store.eligibleAudio().mapNotNull { model ->
             val textId = model.sourceTextId ?: return@mapNotNull null
             val text = store.sourceText(textId) ?: return@mapNotNull null
@@ -143,15 +151,20 @@ internal class RoomNavigationGateway(
                 GateOption(id = gate.id, displayedRuleText = gate.displayedRuleText)
             },
             eligibleDrillCount = store.eligibleDrills().size,
-            attributions = store.sources().map { source ->
+            attributions = sourceEntities.map { source ->
                 AttributionOption(
                     sourceId = source.id,
                     licenseName = source.licenseName,
                     attribution = source.attribution,
                     modificationStatus = source.modificationStatus.name,
                     shareAlikeConfirmation = source.shareAlikeConfirmation.name,
+                    provenance = source.provenance,
+                    redistributionBasis = source.redistributionBasis,
+                    shareAlikeTreatment = source.shareAlikeTreatment,
                 )
             },
+            assetRecords = assetInventory(storedAudio, rightsById, rightsRecords),
+            shareAlikeBlocksRelease = outcome?.shareAlikeBlocksRelease == true,
             dailyPlan = assembleDailyPlan(
                 definitions = segmentPlans.mapNotNull { plan ->
                     val activity = checklistActivity(plan.activityType) ?: return@mapNotNull null
@@ -453,6 +466,56 @@ internal class RoomNavigationGateway(
                 recordingCount = recordingCount,
                 status = status,
             ),
+        )
+    }
+
+    private fun assetInventory(
+        audio: List<AudioModelEntity>,
+        rightsById: Map<String, AssetRightsRecordEntity>,
+        rights: List<AssetRightsRecordEntity>,
+    ): List<AssetInventoryOption> {
+        val referenced = audio.mapNotNull { it.rightsRecordId }.toSet()
+        val rows = mutableListOf<AssetInventoryOption>()
+        for (model in audio) {
+            val record = model.rightsRecordId?.let { rightsById[it] }
+            if (record == null) {
+                rows += AssetInventoryOption(
+                    rightsId = null,
+                    sourceId = model.sourceRecordId,
+                    assetIdentifier = "",
+                    licenseStatus = "",
+                    compatibilityDecision = "",
+                    attributionRequired = false,
+                    inclusionResult = "",
+                    audioModelId = model.id,
+                    localAudioReference = model.localAudioReference,
+                    audioEligible = false,
+                    rightsMissing = true,
+                )
+            } else {
+                rows += assetRow(record, model)
+            }
+        }
+        for (record in rights) {
+            if (record.id in referenced) continue
+            rows += assetRow(record, model = null)
+        }
+        return rows
+    }
+
+    private fun assetRow(record: AssetRightsRecordEntity, model: AudioModelEntity?): AssetInventoryOption {
+        return AssetInventoryOption(
+            rightsId = record.id,
+            sourceId = record.sourceRecordId,
+            assetIdentifier = record.assetIdentifier,
+            licenseStatus = record.licenseStatus.name,
+            compatibilityDecision = record.compatibilityDecision.name,
+            attributionRequired = record.attributionRequired,
+            inclusionResult = record.inclusionResult.name,
+            audioModelId = model?.id,
+            localAudioReference = model?.localAudioReference.orEmpty(),
+            audioEligible = model?.eligibilityStatus == EligibilityStatus.ELIGIBLE,
+            rightsMissing = false,
         )
     }
 

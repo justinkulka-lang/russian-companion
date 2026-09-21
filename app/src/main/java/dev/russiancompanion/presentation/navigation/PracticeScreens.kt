@@ -28,19 +28,29 @@ import dev.russiancompanion.domain.practice.canCompletePractice
 import dev.russiancompanion.domain.practice.canStartRecording
 
 @Composable
-internal fun PracticeLibraryBody(snapshot: NavigationSnapshot, onOpen: (String) -> Unit) {
+internal fun PracticeLibraryBody(
+    snapshot: NavigationSnapshot,
+    onOpen: (String) -> Unit,
+    onInspectAttribution: (String) -> Unit,
+) {
     if (snapshot.audio.isEmpty()) {
         Text(stringResource(R.string.practice_none))
     }
     snapshot.audio.forEach { model ->
-        PracticeLibraryRow(model = model, onOpen = onOpen)
+        PracticeLibraryRow(model = model, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
     }
 }
 
 @Composable
-private fun PracticeLibraryRow(model: AudioOption, onOpen: (String) -> Unit) {
+private fun PracticeLibraryRow(
+    model: AudioOption,
+    onOpen: (String) -> Unit,
+    onInspectAttribution: (String) -> Unit,
+) {
     if (model.licenseName.isNotBlank() || model.attribution.isNotBlank()) {
-        Text("${model.licenseName}: ${model.attribution}")
+        TextButton(onClick = { onInspectAttribution(model.id) }) {
+            Text("${model.licenseName}: ${model.attribution}")
+        }
     }
     Text(stringResource(if (model.completed) R.string.plan_completed else R.string.plan_not_completed))
     if (model.hasRecording) {
