@@ -256,6 +256,8 @@ internal class LocalStore private constructor(
 
     fun evidenceFor(gateId: String): List<GateEvidenceEntity> = call { database.users().evidenceFor(gateId) }
 
+    fun allEvidence(): List<GateEvidenceEntity> = call { database.users().allEvidence() }
+
     fun addTutorSignOffRequirement(gateDefinitionId: String, recordedAtLocal: String) = call {
         val gate = requireEligibleGate(gateDefinitionId)
         val recordedAt = UserRecordRules.requireTimestamp(recordedAtLocal)

@@ -144,6 +144,8 @@ internal data class ActivityLogView(
     val minutes: Int,
     val completed: Boolean,
     val recordedAtLocal: String,
+    val selfAttested: Boolean = false,
+    val segmentId: String? = null,
 )
 
 internal data class CategorySummary(

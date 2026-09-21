@@ -15,6 +15,8 @@ import dev.russiancompanion.domain.navigation.launchDestination
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.practice.PracticeAudio
+import dev.russiancompanion.domain.progress.ExportUpdate
+import java.io.OutputStream
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -36,6 +38,7 @@ internal fun CompanionApp(
     today: () -> String = { LocalDate.now().toString() },
     recordedAt: () -> String = { LocalDateTime.now().toString() },
     practiceAudio: PracticeAudio,
+    chooseExportDestination: (((OutputStream) -> Unit) -> Unit)? = null,
 ) {
     var snapshot by remember(gateway) {
         mutableStateOf(gateway?.current(today()) ?: NavigationSnapshot.closed())
@@ -117,6 +120,18 @@ internal fun CompanionApp(
                     if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                     update ?: PlanUpdate.NotSaved(gateId)
                 },
+                recordedAt = recordedAt,
+                onSaveActivity = { category, minutes, completed, at, associate ->
+                    val update = gateway?.saveActivityLog(category, minutes, completed, at, associate)
+                        ?: PlanUpdate.NotSaved("activity")
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update
+                },
+                onExport = { stream ->
+                    gateway?.exportLocal(stream, recordedAt(), "local-file")
+                        ?: ExportUpdate.DestinationUnavailable
+                },
+                chooseExportDestination = chooseExportDestination,
             )
         }
     }

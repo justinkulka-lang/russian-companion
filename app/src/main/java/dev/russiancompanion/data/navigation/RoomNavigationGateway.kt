@@ -1,7 +1,18 @@
 package dev.russiancompanion.data.navigation
 
+import dev.russiancompanion.data.export.BuiltPackage
+import dev.russiancompanion.data.export.ExportAudio
+import dev.russiancompanion.data.export.ExportDecisionRow
+import dev.russiancompanion.data.export.ExportEvidenceRow
+import dev.russiancompanion.data.export.ExportLogRow
+import dev.russiancompanion.data.export.ExportProgressRow
+import dev.russiancompanion.data.export.buildExportZip
+import dev.russiancompanion.data.export.exportAudioName
 import dev.russiancompanion.data.local.ActivityCategory
+import dev.russiancompanion.data.local.ActivityLogEntity
 import dev.russiancompanion.data.local.CompletionState
+import dev.russiancompanion.data.local.ExportRecordEntity
+import dev.russiancompanion.data.local.ExportStatus
 import dev.russiancompanion.data.local.GateDecisionStatus
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.evidenceType
@@ -31,11 +42,20 @@ import dev.russiancompanion.domain.plan.assembleDailyPlan
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.plan.summarizeActivity
 import dev.russiancompanion.domain.plan.summarizeGates
+import dev.russiancompanion.domain.progress.ExportUpdate
+import dev.russiancompanion.domain.progress.ProgressReview
+import dev.russiancompanion.domain.progress.activityAttestationLabel
+import dev.russiancompanion.domain.progress.evidenceAttestationLabel
+import dev.russiancompanion.domain.progress.reviewProgress
+import java.io.IOException
+import java.io.OutputStream
+import java.util.UUID
 
 internal class RoomNavigationGateway(
     private val store: LocalStore,
     private val readPackagedSeed: () -> String?,
     private val practiceAudio: PracticeAudio,
+    private val readRecordingBytes: (String) -> ByteArray? = { null },
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
         val outcome = store.seedOutcome()
@@ -78,6 +98,14 @@ internal class RoomNavigationGateway(
                 )
             }
         }
+        val rawLogs = store.activityLogs()
+        val activityViews = rawLogs.map { log -> activityView(log) }
+        val progress = if (activityViews.any { it == null }) {
+            ProgressReview.unreadable()
+        } else {
+            reviewProgress(activityViews.filterNotNull())
+        }
+        val summaryLogs = if (progress.readable) activityViews.filterNotNull() else emptyList()
         val decisions = store.decisions()
         val gates = store.eligibleGates().filter { segmentId == null || it.segmentId == segmentId }
         val gateDetails = gates.map { gate ->
@@ -150,18 +178,8 @@ internal class RoomNavigationGateway(
                 },
             ),
             gateDetails = gateDetails,
-            activitySummary = summarizeActivity(
-                store.activityLogs().mapNotNull { log ->
-                    val category = recordedCategory(log.category) ?: return@mapNotNull null
-                    ActivityLogView(
-                        id = log.id,
-                        category = category,
-                        minutes = log.durationMinutes,
-                        completed = log.completed,
-                        recordedAtLocal = log.recordedAtLocal,
-                    )
-                },
-            ),
+            activitySummary = summarizeActivity(summaryLogs),
+            progress = progress,
         )
     }
 
@@ -271,6 +289,179 @@ internal class RoomNavigationGateway(
         }
     }
 
+    override fun saveActivityLog(
+        category: RecordedCategory,
+        durationMinutes: Int,
+        completed: Boolean,
+        recordedAtLocal: String,
+        associateWithLesson: Boolean,
+    ): PlanUpdate {
+        return update("activity") {
+            // Provisional: manual grammar logs use the book self-attestation, and
+            // manual vocabulary-and-forms logs use the AnkiDroid self-attestation.
+            val selfAttested = category == RecordedCategory.GRAMMAR ||
+                category == RecordedCategory.VOCABULARY_AND_FORMS
+            val segmentId = if (associateWithLesson) {
+                store.learner().activeSegmentId ?: throw IllegalArgumentException("No active lesson")
+            } else {
+                null
+            }
+            store.recordActivity(
+                category = storedCategory(category),
+                durationMinutes = durationMinutes,
+                completed = completed,
+                recordedAtLocal = recordedAtLocal,
+                segmentId = segmentId,
+                selfAttested = selfAttested,
+            )
+            PlanUpdate.Applied
+        }
+    }
+
+    override fun exportLocal(
+        destination: OutputStream,
+        recordedAtLocal: String,
+        destinationReference: String?,
+    ): ExportUpdate {
+        return try {
+            val rawLogs = store.activityLogs()
+            val views = mutableListOf<ActivityLogView>()
+            val logRows = mutableListOf<ExportLogRow>()
+            for (log in rawLogs) {
+                val view = activityView(log)
+                if (view == null || log.durationMinutes < 0) {
+                    recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                    return ExportUpdate.NotConfirmed
+                }
+                views += view
+                logRows += ExportLogRow(
+                    id = log.id,
+                    category = view.category.name,
+                    durationMinutes = log.durationMinutes,
+                    completed = log.completed,
+                    recordedAtLocal = log.recordedAtLocal,
+                    segmentId = log.segmentId.orEmpty(),
+                    planInstanceId = log.planInstanceId.orEmpty(),
+                    selfAttested = log.selfAttested,
+                    attestationLabel = activityAttestationLabel(view.category, log.selfAttested),
+                )
+            }
+            val review = reviewProgress(views)
+            if (!review.readable) {
+                recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                return ExportUpdate.NotConfirmed
+            }
+            val evidenceRows = store.allEvidence().map { evidence ->
+                ExportEvidenceRow(
+                    id = evidence.id,
+                    gateDefinitionId = evidence.gateDefinitionId,
+                    evidenceType = evidence.evidenceType.name,
+                    enteredValue = evidence.enteredValue,
+                    selfAttestationStatus = evidence.selfAttestationStatus.name,
+                    attestationLabel = evidenceAttestationLabel(evidence.evidenceType.name),
+                    recordedAtLocal = evidence.recordedAtLocal,
+                )
+            }
+            val decisionRows = store.decisions().map { decision ->
+                ExportDecisionRow(
+                    id = decision.id,
+                    gateDefinitionId = decision.gateDefinitionId,
+                    ruleVersion = decision.ruleVersion,
+                    evidenceIds = decision.evidenceIds,
+                    conditionOutcomes = decision.conditionOutcomes,
+                    status = decision.status.name,
+                    evaluatedAtLocal = decision.evaluatedAtLocal,
+                )
+            }
+            val progressRows = review.categories.map { category ->
+                ExportProgressRow(
+                    category = category.category.name,
+                    recordedMinutes = category.recordedMinutes,
+                    completionCount = category.completionCount,
+                )
+            }
+            val recordings = store.recordings().map { recording ->
+                ExportAudio(
+                    id = recording.id,
+                    audioModelId = recording.audioModelId,
+                    createdAtLocal = recording.createdAtLocal,
+                    markedForTutorReview = recording.markedForTutorReview,
+                    completionState = recording.completionState.name,
+                    fileName = exportAudioName(recording.id, recording.localFileReference),
+                    bytes = readRecordingBytes(recording.localFileReference),
+                )
+            }
+            when (val built = buildExportZip(logRows, evidenceRows, decisionRows, progressRows, recordings)) {
+                is BuiltPackage.RecordingUnreadable -> {
+                    recordExport(recordedAtLocal, destinationReference, ExportStatus.FAILED)
+                    ExportUpdate.RecordingUnreadable(built.recordingId)
+                }
+                is BuiltPackage.Ready -> {
+                    try {
+                        destination.write(built.bytes)
+                        destination.flush()
+                    } catch (_: IOException) {
+                        recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                        return ExportUpdate.NotConfirmed
+                    }
+                    recordExport(
+                        recordedAtLocal = recordedAtLocal,
+                        destinationReference = destinationReference,
+                        status = ExportStatus.COMPLETED,
+                        logCount = built.logCount,
+                        evidenceCount = built.evidenceCount,
+                        progressCount = built.progressCount,
+                        recordingCount = built.recordingCount,
+                    )
+                    ExportUpdate.Completed(built.empty)
+                }
+            }
+        } catch (_: Exception) {
+            try {
+                recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+            } catch (_: Exception) {
+                // The destination was not confirmed, and the export record could not be stored.
+            }
+            ExportUpdate.NotConfirmed
+        }
+    }
+
+    private fun recordExport(
+        recordedAtLocal: String,
+        destinationReference: String?,
+        status: ExportStatus,
+        logCount: Int = 0,
+        evidenceCount: Int = 0,
+        progressCount: Int = 0,
+        recordingCount: Int = 0,
+    ) {
+        store.saveExport(
+            ExportRecordEntity(
+                id = UUID.randomUUID().toString(),
+                exportedAtLocal = recordedAtLocal,
+                destinationReference = destinationReference,
+                logCount = logCount,
+                evidenceCount = evidenceCount,
+                progressCount = progressCount,
+                recordingCount = recordingCount,
+                status = status,
+            ),
+        )
+    }
+
+    private fun activityView(log: ActivityLogEntity): ActivityLogView? {
+        val category = recordedCategory(log.category) ?: return null
+        return ActivityLogView(
+            id = log.id,
+            category = category,
+            minutes = log.durationMinutes,
+            completed = log.completed,
+            recordedAtLocal = log.recordedAtLocal,
+            selfAttested = log.selfAttested,
+            segmentId = log.segmentId,
+        )
+    }
+
     private fun update(planDefinitionId: String, block: () -> PlanUpdate): PlanUpdate {
         return try {
             block()
@@ -285,6 +476,18 @@ internal class RoomNavigationGateway(
             PlanActivityType.ANKI_DROID -> ChecklistActivity.ANKI_DROID
             PlanActivityType.LISTEN_RECORD_COMPARE -> ChecklistActivity.LISTEN_RECORD_COMPARE
             PlanActivityType.TUTOR -> ChecklistActivity.TUTOR
+        }
+    }
+
+    private fun storedCategory(category: RecordedCategory): ActivityCategory {
+        return when (category) {
+            RecordedCategory.READING -> ActivityCategory.READING
+            RecordedCategory.LISTENING -> ActivityCategory.LISTENING
+            RecordedCategory.VOCABULARY_AND_FORMS -> ActivityCategory.VOCABULARY_AND_FORMS
+            RecordedCategory.GRAMMAR -> ActivityCategory.GRAMMAR
+            RecordedCategory.SPEAKING_AND_PRONUNCIATION -> ActivityCategory.SPEAKING_AND_PRONUNCIATION
+            RecordedCategory.WRITING -> ActivityCategory.WRITING
+            RecordedCategory.TUTOR_WORK -> ActivityCategory.TUTOR_WORK
         }
     }
 

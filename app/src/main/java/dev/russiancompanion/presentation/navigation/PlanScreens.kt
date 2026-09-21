@@ -216,7 +216,7 @@ private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
 }
 
 @Composable
-private fun categoryLabel(category: RecordedCategory): String {
+internal fun categoryLabel(category: RecordedCategory): String {
     return stringResource(
         when (category) {
             RecordedCategory.READING -> R.string.category_reading
