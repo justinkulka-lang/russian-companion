@@ -151,7 +151,8 @@ class ExportPackageTest {
         assertEquals("recordings/rec-1.m4a", exportAudioName("rec-1", "recordings/rec-1.M4A"))
         assertEquals("recordings/rec-1.mp3", exportAudioName("rec-1", "clip.mp3"))
         assertEquals("recordings/rec-1.m4a", exportAudioName("rec-1", "no-extension"))
-        assertEquals("recordings/rec-1.m4a", exportAudioName("rec-1", "../escape.exe"))
+        assertEquals("recordings/rec-1.exe", exportAudioName("rec-1", "../escape.exe"))
+        assertEquals("recordings/rec-1.m4a", exportAudioName("rec-1", "clip.not-an-ext"))
     }
 
     private fun audio(id: String, bytes: ByteArray?): ExportAudio {
