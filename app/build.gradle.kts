@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
 }
 
@@ -32,6 +33,14 @@ android {
             isMinifyEnabled = false
         }
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
+}
+
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 dependencies {
@@ -43,6 +52,9 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.room.runtime)
     implementation(libs.datastore.preferences)
+    implementation(libs.kotlinx.serialization.json)
     ksp(libs.room.compiler)
     testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.core)
 }
