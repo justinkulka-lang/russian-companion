@@ -1,0 +1,70 @@
+package dev.russiancompanion.domain.navigation
+
+internal data class LessonOption(
+    val id: String,
+    val lessonReference: String,
+    val planCount: Int,
+)
+
+internal data class AudioOption(
+    val id: String,
+    val stressMarkedText: String,
+)
+
+internal data class GateOption(
+    val id: String,
+    val displayedRuleText: String,
+)
+
+internal data class AttributionOption(
+    val sourceId: String,
+    val licenseName: String,
+    val attribution: String,
+    val modificationStatus: String,
+    val shareAlikeConfirmation: String,
+)
+
+internal data class NavigationSnapshot(
+    val localDataOpen: Boolean,
+    val seedCorrupt: Boolean,
+    val seedAbsent: Boolean,
+    val onboardingCompleted: Boolean,
+    val activeSegmentId: String?,
+    val activeLessonReference: String?,
+    val lessons: List<LessonOption>,
+    val audio: List<AudioOption>,
+    val gates: List<GateOption>,
+    val eligibleDrillCount: Int,
+    val attributions: List<AttributionOption>,
+) {
+    companion object {
+        fun closed(): NavigationSnapshot {
+            return NavigationSnapshot(
+                localDataOpen = false,
+                seedCorrupt = false,
+                seedAbsent = false,
+                onboardingCompleted = false,
+                activeSegmentId = null,
+                activeLessonReference = null,
+                lessons = emptyList(),
+                audio = emptyList(),
+                gates = emptyList(),
+                eligibleDrillCount = 0,
+                attributions = emptyList(),
+            )
+        }
+    }
+}
+
+internal enum class LaunchDestination {
+    ONBOARDING,
+    HOME,
+    LOCAL_DATA_PROBLEM,
+}
+
+internal enum class OnboardingConfirmation {
+    READY,
+    LESSON_REQUIRED,
+    PLAN_DEFINITIONS_UNAVAILABLE,
+    CATALOG_UNAVAILABLE,
+}

@@ -3,14 +3,23 @@ package dev.russiancompanion.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import dev.russiancompanion.RussianCompanionApplication
+import dev.russiancompanion.presentation.navigation.CompanionApp
 
-/**
- * Process entry point for the offline companion.
- * Product screens are not part of the Phase 0 scaffold.
- */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { }
+        val app = application as RussianCompanionApplication
+        setContent {
+            var gateway by remember { mutableStateOf(app.gateway()) }
+            CompanionApp(
+                gateway = gateway,
+                onRetryOpen = { gateway = app.retryOpen() },
+            )
+        }
     }
 }

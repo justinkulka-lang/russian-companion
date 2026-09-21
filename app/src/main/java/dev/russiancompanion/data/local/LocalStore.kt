@@ -15,8 +15,33 @@ internal class LocalStore private constructor(
 ) : AutoCloseable {
     private val io = Executors.newSingleThreadExecutor()
     private val seeder = BundledContentSeeder(database)
+    private var lastSeedOutcome: SeedOutcome? = null
 
-    fun applySeed(json: String?): SeedOutcome = call { seeder.apply(json) }
+    fun applySeed(json: String?): SeedOutcome {
+        val outcome = call { seeder.apply(json) }
+        lastSeedOutcome = outcome
+        return outcome
+    }
+
+    fun seedOutcome(): SeedOutcome? = lastSeedOutcome
+
+    fun confirmLesson(segmentId: String, localDate: String) = call {
+        val segment = database.bundled().segment(segmentId)
+        if (segment == null || segment.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
+            throw IllegalArgumentException("An eligible course segment is required")
+        }
+        val hasPlan = database.bundled().eligiblePlans().any { it.segmentId == segment.id }
+        if (!hasPlan) throw IllegalArgumentException("Plan definitions are unavailable")
+        val date = UserRecordRules.requireLocalDate(localDate)
+        val current = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: LearnerStateEntity.newUser()
+        database.users().updateLearner(
+            current.copy(
+                activeSegmentId = segment.id,
+                onboardingCompleted = true,
+                planContext = date,
+            ),
+        )
+    }
 
     fun eligibleSegments(): List<CourseSegmentEntity> = call { database.bundled().eligibleSegments() }
 
@@ -262,12 +287,14 @@ internal class LocalStore private constructor(
             return store
         }
 
-        private fun readSeed(context: Context): String? {
+        internal fun readPackagedSeed(context: Context): String? {
             return try {
-                context.assets.open(SEED_ASSET).bufferedReader(Charsets.UTF_8).use { it.readText() }
+                context.applicationContext.assets.open(SEED_ASSET).bufferedReader(Charsets.UTF_8).use { it.readText() }
             } catch (_: IOException) {
                 null
             }
         }
+
+        private fun readSeed(context: Context): String? = readPackagedSeed(context)
     }
 }

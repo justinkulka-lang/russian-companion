@@ -1,4 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Russian Companion</string>
+    <string name="navigate_back">Back</string>
+    <string name="navigate_home">Home</string>
+    <string name="navigate_next">Next</string>
+    <string name="navigate_retry">Retry</string>
+
+    <string name="onboarding_title">Onboarding</string>
+    <string name="onboarding_role">This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.</string>
+    <string name="onboarding_limits">This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.</string>
+    <string name="onboarding_local_data">Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.</string>
+    <string name="onboarding_lesson_required">A lesson selection is required to create the plan.</string>
+    <string name="onboarding_plans_unavailable">Onboarding cannot finish because plan definitions are unavailable.</string>
+    <string name="onboarding_confirm">Confirm lesson</string>
+
+    <string name="local_data_title">Local data problem</string>
+    <string name="local_data_message">Local data could not be opened. Bundled content and user data are affected.</string>
+
+    <string name="home_title">Home</string>
+    <string name="home_current_lesson">Current lesson: %1$s</string>
+    <string name="home_no_plan">No plan is loaded.</string>
+    <string name="home_select_lesson">Select the current lesson</string>
+    <string name="open_todays_plan">Today\'s Plan</string>
+    <string name="open_practice">Practice</string>
+    <string name="open_gates">Gates</string>
+    <string name="open_progress">Progress</string>
+    <string name="open_attributions">Attributions and licenses</string>
+    <string name="open_optional_drills">Optional drills</string>
+
+    <string name="todays_plan_title">Today\'s Plan</string>
+    <string name="practice_title">Practice</string>
+    <string name="practice_none">No licensed practice audio is available.</string>
+    <string name="practice_session_title">Practice session</string>
+    <string name="practice_session_unavailable">This practice model is unavailable.</string>
+    <string name="practice_previous">Previous model</string>
+    <string name="practice_next">Next model</string>
+    <string name="open_todays_plan_from_practice">Today\'s Plan</string>
+
+    <string name="gates_title">Gates</string>
+    <string name="gates_not_proficiency">Activity gate, not proficiency certification.</string>
+    <string name="gates_none">No advancement gate is defined for the selected segment.</string>
+    <string name="gate_detail_title">Gate detail</string>
+    <string name="gate_unreadable">This gate definition is unreadable. No advancement decision is shown.</string>
+
+    <string name="progress_title">Progress</string>
+    <string name="progress_activity_only">Recorded activity is work completed, not certified ability.</string>
+    <string name="log_activity_title">Log activity</string>
+    <string name="local_export_title">Local export</string>
+    <string name="local_export_scope">Export will include logs, gate evidence, progress data, and recordings. This is local export, not cloud backup.</string>
+
+    <string name="attributions_title">Attributions and licenses</string>
+    <string name="attributions_not_ready">No attribution inventory is installed. This installation is not release-ready.</string>
+    <string name="back_to_practice">Back to practice</string>
+
+    <string name="optional_drills_title">Optional drills</string>
+    <string name="optional_drills_not_evidence">Optional drills are not gate evidence.</string>
 </resources>
