@@ -188,6 +188,10 @@ private fun GateSummarySection(snapshot: NavigationSnapshot) {
 
 @Composable
 private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
+    if (!snapshot.progress.readable) {
+        Text(stringResource(R.string.local_data_message))
+        return
+    }
     Text(stringResource(R.string.progress_activity_only))
     val summary = snapshot.activitySummary
     val latest = summary.latest
@@ -195,23 +199,34 @@ private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
         Text(stringResource(R.string.home_no_activity))
         return
     }
-    Text(
-        stringResource(
-            R.string.home_latest_activity,
-            categoryLabel(latest.category),
-            latest.minutes,
-            stringResource(if (latest.completed) R.string.plan_completed else R.string.plan_not_completed),
-        ),
-    )
-    summary.totals.forEach { total ->
+    if (latest.completed && latest.minutes == 0) {
+        Text(stringResource(R.string.home_latest_completed_zero, categoryLabel(latest.category)))
+    } else {
         Text(
             stringResource(
-                R.string.home_activity_total,
-                categoryLabel(total.category),
-                total.recordedMinutes,
-                total.completionCount,
+                R.string.home_latest_activity,
+                categoryLabel(latest.category),
+                latest.minutes,
+                stringResource(if (latest.completed) R.string.plan_completed else R.string.plan_not_completed),
             ),
         )
+    }
+    for (total in summary.totals) {
+        Text(recordedWorkLabel(total.category, total.recordedMinutes, total.completionCount))
+    }
+}
+
+@Composable
+internal fun recordedWorkLabel(category: RecordedCategory, minutes: Long, completions: Int): String {
+    val name = categoryLabel(category)
+    return if (minutes == 0L && completions > 0) {
+        if (completions == 1) {
+            stringResource(R.string.progress_category_completed_zero, name)
+        } else {
+            stringResource(R.string.progress_category_completed_zero_count, name, completions)
+        }
+    } else {
+        stringResource(R.string.home_activity_total, name, minutes.toInt(), completions)
     }
 }
 

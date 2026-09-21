@@ -68,15 +68,39 @@ class ProgressRulesTest {
 
     @Test
     fun attestationLabelsFollowTheRecordedCategory() {
-        assertEquals(BOOK_ATTESTATION, activityAttestationLabel(RecordedCategory.GRAMMAR, selfAttested = true))
+        assertEquals(BOOK_PRACTICE, activityAttestationLabel(RecordedCategory.GRAMMAR, selfAttested = true))
         assertEquals(
-            ANKI_ATTESTATION,
+            ANKI_PRACTICE,
             activityAttestationLabel(RecordedCategory.VOCABULARY_AND_FORMS, selfAttested = true),
         )
+        assertEquals("", activityAttestationLabel(RecordedCategory.GRAMMAR, selfAttested = false))
         assertEquals("", activityAttestationLabel(RecordedCategory.READING, selfAttested = false))
         assertEquals("Self-attested", activityAttestationLabel(RecordedCategory.WRITING, selfAttested = true))
         assertEquals(BOOK_ATTESTATION, evidenceAttestationLabel("BOOK_REVISION_SCORE"))
         assertEquals(ANKI_ATTESTATION, evidenceAttestationLabel("ANKI_DROID_STATUS"))
         assertEquals("User recorded", evidenceAttestationLabel("TUTOR_SIGN_OFF"))
+    }
+
+    @Test
+    fun zeroMinuteCompletionIsRecordedActivity() {
+        val review = reviewProgress(
+            listOf(
+                ActivityLogView(
+                    id = "done",
+                    category = RecordedCategory.GRAMMAR,
+                    minutes = 0,
+                    completed = true,
+                    recordedAtLocal = "2026-09-21T09:00",
+                    selfAttested = true,
+                ),
+            ),
+        )
+        val grammar = review.categories.single { it.category == RecordedCategory.GRAMMAR }
+        assertEquals(0L, grammar.recordedMinutes)
+        assertEquals(1, grammar.completionCount)
+        assertFalse(categoryShowsImbalance(grammar))
+        assertTrue(review.categories.filter { it.category != RecordedCategory.GRAMMAR }.all(::categoryShowsImbalance))
+        assertEquals(0L, review.totalMinutes)
+        assertEquals(1, review.totalCompletions)
     }
 }

@@ -61,6 +61,7 @@ class ExportPackageTest {
                     completionState = "COMPLETED",
                     fileName = "recordings/rec-1.m4a",
                     bytes = audioA,
+                    activityLogId = "log-9",
                 ),
                 ExportAudio(
                     id = "rec-2",
@@ -70,6 +71,7 @@ class ExportPackageTest {
                     completionState = "NOT_COMPLETED",
                     fileName = "recordings/rec-2.m4a",
                     bytes = audioB,
+                    activityLogId = null,
                 ),
             ),
         )
@@ -95,11 +97,12 @@ class ExportPackageTest {
             val recordings = zip.readText("recordings.csv")
             assertTrue(
                 recordings.startsWith(
-                    "fileName,recordingId,audioModelId,createdAtLocal,markedForTutorReview,completionState\n",
+                    "fileName,recordingId,audioModelId,createdAtLocal,markedForTutorReview,completionState,activityLogId\n",
                 ),
             )
-            assertFalse(recordings.contains("activityLog"))
-            assertTrue(recordings.contains("recordings/rec-1.m4a,rec-1,audio-1,2026-09-21T09:03,true,COMPLETED"))
+            assertTrue(recordings.contains("recordings/rec-1.m4a,rec-1,audio-1,2026-09-21T09:03,true,COMPLETED,log-9"))
+            assertTrue(recordings.contains("recordings/rec-2.m4a,rec-2,audio-2,2026-09-21T09:04,false,NOT_COMPLETED,null"))
+            assertFalse(recordings.contains("invented-log"))
             assertArrayEquals(audioA, zip.readBytes("recordings/rec-1.m4a"))
             assertArrayEquals(audioB, zip.readBytes("recordings/rec-2.m4a"))
         }

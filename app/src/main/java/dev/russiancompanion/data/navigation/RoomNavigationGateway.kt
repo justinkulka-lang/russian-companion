@@ -297,8 +297,8 @@ internal class RoomNavigationGateway(
         associateWithLesson: Boolean,
     ): PlanUpdate {
         return update("activity") {
-            // Provisional: manual grammar logs use the book self-attestation, and
-            // manual vocabulary-and-forms logs use the AnkiDroid self-attestation.
+            // Grammar and vocabulary logs are user-entered activity. Their labels
+            // are Book practice and AnkiDroid practice, without integration or verification.
             val selfAttested = category == RecordedCategory.GRAMMAR ||
                 category == RecordedCategory.VOCABULARY_AND_FORMS
             val segmentId = if (associateWithLesson) {
@@ -321,8 +321,11 @@ internal class RoomNavigationGateway(
     override fun exportLocal(
         destination: OutputStream,
         recordedAtLocal: String,
-        destinationReference: String?,
+        destinationFileName: String?,
+        documentReference: String?,
     ): ExportUpdate {
+        val fileName = destinationFileName?.trim()?.takeIf { it.isNotEmpty() }
+        val document = documentReference?.trim()?.takeIf { it.isNotEmpty() }
         return try {
             val rawLogs = store.activityLogs()
             val views = mutableListOf<ActivityLogView>()
@@ -330,7 +333,7 @@ internal class RoomNavigationGateway(
             for (log in rawLogs) {
                 val view = activityView(log)
                 if (view == null || log.durationMinutes < 0) {
-                    recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                    recordExport(recordedAtLocal, fileName, document, ExportStatus.NOT_CONFIRMED)
                     return ExportUpdate.NotConfirmed
                 }
                 views += view
@@ -348,7 +351,7 @@ internal class RoomNavigationGateway(
             }
             val review = reviewProgress(views)
             if (!review.readable) {
-                recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                recordExport(recordedAtLocal, fileName, document, ExportStatus.NOT_CONFIRMED)
                 return ExportUpdate.NotConfirmed
             }
             val evidenceRows = store.allEvidence().map { evidence ->
@@ -389,11 +392,12 @@ internal class RoomNavigationGateway(
                     completionState = recording.completionState.name,
                     fileName = exportAudioName(recording.id, recording.localFileReference),
                     bytes = readRecordingBytes(recording.localFileReference),
+                    activityLogId = recording.activityLogId,
                 )
             }
             when (val built = buildExportZip(logRows, evidenceRows, decisionRows, progressRows, recordings)) {
                 is BuiltPackage.RecordingUnreadable -> {
-                    recordExport(recordedAtLocal, destinationReference, ExportStatus.FAILED)
+                    recordExport(recordedAtLocal, fileName, document, ExportStatus.FAILED)
                     ExportUpdate.RecordingUnreadable(built.recordingId)
                 }
                 is BuiltPackage.Ready -> {
@@ -401,12 +405,13 @@ internal class RoomNavigationGateway(
                         destination.write(built.bytes)
                         destination.flush()
                     } catch (_: IOException) {
-                        recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                        recordExport(recordedAtLocal, fileName, document, ExportStatus.NOT_CONFIRMED)
                         return ExportUpdate.NotConfirmed
                     }
                     recordExport(
                         recordedAtLocal = recordedAtLocal,
-                        destinationReference = destinationReference,
+                        destinationFileName = fileName,
+                        documentReference = document,
                         status = ExportStatus.COMPLETED,
                         logCount = built.logCount,
                         evidenceCount = built.evidenceCount,
@@ -418,7 +423,7 @@ internal class RoomNavigationGateway(
             }
         } catch (_: Exception) {
             try {
-                recordExport(recordedAtLocal, destinationReference, ExportStatus.NOT_CONFIRMED)
+                recordExport(recordedAtLocal, fileName, document, ExportStatus.NOT_CONFIRMED)
             } catch (_: Exception) {
                 // The destination was not confirmed, and the export record could not be stored.
             }
@@ -428,7 +433,8 @@ internal class RoomNavigationGateway(
 
     private fun recordExport(
         recordedAtLocal: String,
-        destinationReference: String?,
+        destinationFileName: String?,
+        documentReference: String?,
         status: ExportStatus,
         logCount: Int = 0,
         evidenceCount: Int = 0,
@@ -439,7 +445,8 @@ internal class RoomNavigationGateway(
             ExportRecordEntity(
                 id = UUID.randomUUID().toString(),
                 exportedAtLocal = recordedAtLocal,
-                destinationReference = destinationReference,
+                destinationReference = destinationFileName,
+                documentReference = documentReference,
                 logCount = logCount,
                 evidenceCount = evidenceCount,
                 progressCount = progressCount,

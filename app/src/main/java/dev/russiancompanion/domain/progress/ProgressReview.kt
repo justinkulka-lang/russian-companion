@@ -66,11 +66,20 @@ internal fun reviewProgress(logs: List<ActivityLogView>): ProgressReview {
     )
 }
 
+internal fun categoryShowsImbalance(balance: CategoryBalance): Boolean {
+    return balance.recordedMinutes == 0L && balance.completionCount == 0
+}
+
+/**
+ * Manual grammar and vocabulary logs are user-entered activity records.
+ * The labels name that activity. They do not record book integration,
+ * AnkiDroid integration, or independent verification.
+ */
 internal fun activityAttestationLabel(category: RecordedCategory, selfAttested: Boolean): String {
     if (!selfAttested) return ""
     return when (category) {
-        RecordedCategory.GRAMMAR -> BOOK_ATTESTATION
-        RecordedCategory.VOCABULARY_AND_FORMS -> ANKI_ATTESTATION
+        RecordedCategory.GRAMMAR -> BOOK_PRACTICE
+        RecordedCategory.VOCABULARY_AND_FORMS -> ANKI_PRACTICE
         else -> "Self-attested"
     }
 }
@@ -86,5 +95,7 @@ internal fun evidenceAttestationLabel(evidenceType: String): String {
     }
 }
 
+internal const val BOOK_PRACTICE = "Book practice."
+internal const val ANKI_PRACTICE = "AnkiDroid practice."
 internal const val BOOK_ATTESTATION = "Self-attested — not independently verified"
 internal const val ANKI_ATTESTATION = "Self-attested — no AnkiDroid integration; not independently verified"

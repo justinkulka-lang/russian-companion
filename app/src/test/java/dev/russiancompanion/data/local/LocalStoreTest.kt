@@ -141,6 +141,26 @@ class LocalStoreTest {
         }
     }
 
+    @Test
+    fun negativeDurationIsRejectedAtEntry() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        LocalStore.openInMemory(context).use { store ->
+            try {
+                store.recordActivity(
+                    category = ActivityCategory.READING,
+                    durationMinutes = -1,
+                    completed = false,
+                    recordedAtLocal = "2026-09-21T09:00",
+                    segmentId = null,
+                    selfAttested = false,
+                )
+                error("A negative duration was stored")
+            } catch (_: IllegalArgumentException) {
+                assertTrue(store.activityLogs().isEmpty())
+            }
+        }
+    }
+
     private fun shippedSeed(): String {
         return ApplicationProvider.getApplicationContext<Context>()
             .assets

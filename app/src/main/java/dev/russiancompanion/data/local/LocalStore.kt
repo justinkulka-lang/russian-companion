@@ -394,16 +394,24 @@ internal class LocalStore private constructor(
             throw IllegalArgumentException("An identifiable local recording file is required")
         }
         if (recording.completionState == CompletionState.COMPLETED) return@call false
-        database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
-        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: return@call true
-        val plan = database.bundled().eligiblePlans().firstOrNull { candidate ->
-            candidate.segmentId == learner.activeSegmentId &&
-                candidate.activityType == PlanActivityType.LISTEN_RECORD_COMPARE
-        } ?: return@call true
+        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID)
+        val plan = learner?.let { state ->
+            database.bundled().eligiblePlans().firstOrNull { candidate ->
+                candidate.segmentId == state.activeSegmentId &&
+                    candidate.activityType == PlanActivityType.LISTEN_RECORD_COMPARE
+            }
+        }
+        if (learner == null || plan == null) {
+            database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
+            return@call true
+        }
         val date = UserRecordRules.requireLocalDate(localDate)
         val instanceId = UserRecordRules.planInstanceId(date, plan.id)
         val existing = database.users().planInstance(instanceId)
-        if (existing?.completionState == CompletionState.COMPLETED) return@call true
+        if (existing?.completionState == CompletionState.COMPLETED) {
+            database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
+            return@call true
+        }
         val instance = PlanInstanceEntity(
             id = instanceId,
             localDate = date,
@@ -422,7 +430,14 @@ internal class LocalStore private constructor(
             selfAttested = false,
             planActivityType = plan.activityType,
         )
-        database.users().recordPlanCompletion(instance, log)
+        database.users().recordListenCompletion(
+            recording = recording.copy(
+                completionState = CompletionState.COMPLETED,
+                activityLogId = log.id,
+            ),
+            instance = instance,
+            log = log,
+        )
         database.users().updateLearner(learner.copy(planContext = date))
         true
     }
@@ -477,6 +492,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
+                .addMigrations(MIGRATION_1_2)
                 .build()
             val store = LocalStore(database)
             store.applySeed(readSeed(appContext))

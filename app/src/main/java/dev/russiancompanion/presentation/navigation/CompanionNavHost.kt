@@ -50,8 +50,8 @@ internal fun CompanionNavHost(
     onAddTutorSignOff: (String) -> PlanUpdate,
     recordedAt: () -> String,
     onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
-    onExport: (OutputStream) -> ExportUpdate,
-    chooseExportDestination: (((OutputStream) -> Unit) -> Unit)? = null,
+    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    chooseExportDestination: (() -> ExportSelection?)? = null,
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }

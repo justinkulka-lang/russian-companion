@@ -140,6 +140,12 @@
     <string name="log_mark_completed">Mark completed</string>
     <string name="log_associate_lesson">Associate with the current lesson</string>
     <string name="log_recorded_at">Recorded at %1$s</string>
+    <string name="log_book_practice">Book practice.</string>
+    <string name="log_anki_practice">AnkiDroid practice.</string>
+    <string name="progress_completed_zero">completed — 0 minutes</string>
+    <string name="progress_category_completed_zero">%1$s: completed — 0 minutes</string>
+    <string name="progress_category_completed_zero_count">%1$s: %2$d completed — 0 minutes</string>
+    <string name="home_latest_completed_zero">Latest recorded activity: %1$s, completed — 0 minutes</string>
     <string name="local_export_choose">Choose a local destination</string>
     <string name="export_completed">Export completed.</string>
     <string name="export_empty">This export contains no logs, gate evidence, or recordings.</string>

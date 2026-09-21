@@ -297,7 +297,8 @@ class DailyPlanUiTest {
         override fun exportLocal(
             destination: java.io.OutputStream,
             recordedAtLocal: String,
-            destinationReference: String?,
+            destinationFileName: String?,
+            documentReference: String?,
         ): dev.russiancompanion.domain.progress.ExportUpdate {
             return dev.russiancompanion.domain.progress.ExportUpdate.DestinationUnavailable
         }

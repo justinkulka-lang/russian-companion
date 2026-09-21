@@ -48,27 +48,34 @@ class ProgressExportTest {
             bytes[reference]
         }
         val out = ByteArrayOutputStream()
-        val update = gateway.exportLocal(out, "2026-09-21T10:00", "local-file")
+        val update = gateway.exportLocal(
+            out,
+            "2026-09-21T10:00",
+            "export.zip",
+            "content://documents/export.zip",
+        )
         assertTrue(update is ExportUpdate.Completed)
         assertEquals(false, (update as ExportUpdate.Completed).empty)
         val saved = store.exports().single()
         assertEquals(ExportStatus.COMPLETED, saved.status)
         assertEquals(2, saved.recordingCount)
-        assertEquals("local-file", saved.destinationReference)
+        assertEquals("export.zip", saved.destinationReference)
+        assertEquals("content://documents/export.zip", saved.documentReference)
         ZipFile(tempZip(out.toByteArray())).use { zip ->
             recordings.forEach { recording ->
                 val name = "recordings/${recording.id}.m4a"
                 assertArrayEquals(bytes.getValue(recording.localFileReference), zip.getInputStream(zip.getEntry(name)).use { it.readBytes() })
             }
             val index = zip.getInputStream(zip.getEntry("recordings.csv")).bufferedReader().use { it.readText() }
-            assertTrue(index.contains("true,COMPLETED"))
-            assertTrue(!index.contains("activityLog"))
+            assertTrue(index.contains("true,COMPLETED,null"))
+            assertTrue(index.contains("false,NOT_COMPLETED,null"))
+            assertTrue(!index.contains("invented-log"))
         }
 
         val broken = ByteArrayOutputStream()
         val failed = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()) { reference ->
             if (reference == recordings.first().localFileReference) null else bytes[reference]
-        }.exportLocal(broken, "2026-09-21T10:01", "local-file")
+        }.exportLocal(broken, "2026-09-21T10:01", "export.zip", "content://documents/export.zip")
         assertEquals(ExportUpdate.RecordingUnreadable(recordings.first().id), failed)
         assertEquals(0, broken.size())
         val failure = store.exports().last()
@@ -85,9 +92,12 @@ class ProgressExportTest {
         val update = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()).exportLocal(
             out,
             "2026-09-21T10:00",
-            "local-file",
+            "empty-export.zip",
+            null,
         )
         assertEquals(ExportUpdate.Completed(empty = true), update)
+        assertEquals("empty-export.zip", store.exports().single().destinationReference)
+        assertNull(store.exports().single().documentReference)
         ZipFile(tempZip(out.toByteArray())).use { zip ->
             val manifest = zip.getInputStream(zip.getEntry("manifest.json")).bufferedReader().use { it.readText() }
             assertTrue(manifest.contains("\"empty\": true"))

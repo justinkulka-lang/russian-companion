@@ -59,6 +59,7 @@ internal data class ExportAudio(
     val completionState: String,
     val fileName: String,
     val bytes: ByteArray?,
+    val activityLogId: String? = null,
 )
 
 internal sealed interface BuiltPackage {
@@ -252,7 +253,8 @@ private fun progressCsv(progress: List<ExportProgressRow>): String {
 }
 
 /**
- * Recording records do not store an activity-log id, so this index does not invent one.
+ * activityLogId is written only when a listen-record-compare completion stored that link.
+ * Recordings without a stored link export the field as null.
  */
 private fun recordingsCsv(recordings: List<ExportAudio>): String {
     val rows = mutableListOf(
@@ -263,6 +265,7 @@ private fun recordingsCsv(recordings: List<ExportAudio>): String {
             "createdAtLocal",
             "markedForTutorReview",
             "completionState",
+            "activityLogId",
         ),
     )
     recordings.forEach { recording ->
@@ -273,6 +276,7 @@ private fun recordingsCsv(recordings: List<ExportAudio>): String {
             recording.createdAtLocal,
             recording.markedForTutorReview.toString(),
             recording.completionState,
+            recording.activityLogId ?: "null",
         )
     }
     return csv(rows)

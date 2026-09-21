@@ -1,6 +1,8 @@
 package dev.russiancompanion.presentation.navigation
 
+import android.content.Context
 import android.net.Uri
+import android.provider.OpenableColumns
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.material3.OutlinedTextField
@@ -19,6 +21,7 @@ import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.activityAttestationLabel
+import dev.russiancompanion.domain.progress.categoryShowsImbalance
 import java.io.OutputStream
 
 @Composable
@@ -45,15 +48,8 @@ internal fun ProgressScreen(
                 ),
             )
             for (balance in progress.categories) {
-                Text(
-                    stringResource(
-                        R.string.home_activity_total,
-                        categoryLabel(balance.category),
-                        balance.recordedMinutes.toInt(),
-                        balance.completionCount,
-                    ),
-                )
-                if (balance.recordedMinutes == 0L && balance.completionCount == 0) {
+                Text(recordedWorkLabel(balance.category, balance.recordedMinutes, balance.completionCount))
+                if (categoryShowsImbalance(balance)) {
                     Text(stringResource(R.string.progress_imbalance))
                 }
             }
@@ -68,12 +64,16 @@ internal fun ProgressScreen(
             val selected = progress.recentLogs.firstOrNull { it.id == selectedLogId }
             if (selected != null) {
                 Text(categoryLabel(selected.category))
-                Text(stringResource(R.string.progress_log_minutes, selected.minutes))
-                Text(
-                    stringResource(
-                        if (selected.completed) R.string.plan_completed else R.string.plan_not_completed,
-                    ),
-                )
+                if (selected.completed && selected.minutes == 0) {
+                    Text(stringResource(R.string.progress_completed_zero))
+                } else {
+                    Text(stringResource(R.string.progress_log_minutes, selected.minutes))
+                    Text(
+                        stringResource(
+                            if (selected.completed) R.string.plan_completed else R.string.plan_not_completed,
+                        ),
+                    )
+                }
                 Text(stringResource(R.string.log_recorded_at, selected.recordedAtLocal))
                 val lesson = snapshot.lessons.firstOrNull { it.id == selected.segmentId }
                 if (lesson != null) {
@@ -123,8 +123,8 @@ internal fun LogActivityScreen(
             }
         }
         when (selected) {
-            RecordedCategory.GRAMMAR -> Text(stringResource(R.string.gate_book_attestation))
-            RecordedCategory.VOCABULARY_AND_FORMS -> Text(stringResource(R.string.gate_anki_attestation))
+            RecordedCategory.GRAMMAR -> Text(stringResource(R.string.log_book_practice))
+            RecordedCategory.VOCABULARY_AND_FORMS -> Text(stringResource(R.string.log_anki_practice))
             else -> Unit
         }
         OutlinedTextField(
@@ -210,10 +210,16 @@ private fun saveLog(
     }
 }
 
+internal class ExportSelection(
+    val fileName: String?,
+    val documentReference: String?,
+    val open: () -> OutputStream,
+)
+
 @Composable
 internal fun LocalExportScreen(
-    onExport: (OutputStream) -> ExportUpdate,
-    chooseExportDestination: (((OutputStream) -> Unit) -> Unit)?,
+    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    chooseExportDestination: (() -> ExportSelection?)?,
     onProgress: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
@@ -229,16 +235,23 @@ internal fun LocalExportScreen(
         if (stream == null) {
             status = ExportUpdate.DestinationUnavailable
         } else {
-            stream.use { status = onExport(it) }
+            stream.use { status = onExport(it, visibleExportFileName(context, uri), uri.toString()) }
         }
     }
     ShellPage(title = stringResource(R.string.local_export_title), onBack = onProgress, onHome = onHome) {
         Text(stringResource(R.string.local_export_scope))
         TextButton(
             onClick = {
-                val opener = chooseExportDestination
-                if (opener != null) {
-                    opener { stream -> stream.use { status = onExport(it) } }
+                val choose = chooseExportDestination
+                if (choose != null) {
+                    val selection = choose()
+                    if (selection == null) {
+                        status = ExportUpdate.DestinationUnavailable
+                    } else {
+                        selection.open().use {
+                            status = onExport(it, selection.fileName, selection.documentReference)
+                        }
+                    }
                 } else {
                     launcher.launch("russian-companion-export.zip")
                 }
@@ -268,5 +281,17 @@ internal fun LocalExportScreen(
             }
             null -> Unit
         }
+    }
+}
+
+private fun visibleExportFileName(context: Context, uri: Uri): String? {
+    return try {
+        context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { cursor ->
+            if (!cursor.moveToFirst()) return@use null
+            val index = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME)
+            if (index < 0) null else cursor.getString(index)?.trim()?.takeIf { it.isNotEmpty() }
+        }
+    } catch (_: Exception) {
+        null
     }
 }

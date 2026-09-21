@@ -38,7 +38,7 @@ internal fun CompanionApp(
     today: () -> String = { LocalDate.now().toString() },
     recordedAt: () -> String = { LocalDateTime.now().toString() },
     practiceAudio: PracticeAudio,
-    chooseExportDestination: (((OutputStream) -> Unit) -> Unit)? = null,
+    chooseExportDestination: (() -> ExportSelection?)? = null,
 ) {
     var snapshot by remember(gateway) {
         mutableStateOf(gateway?.current(today()) ?: NavigationSnapshot.closed())
@@ -127,8 +127,8 @@ internal fun CompanionApp(
                     if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                     update
                 },
-                onExport = { stream ->
-                    gateway?.exportLocal(stream, recordedAt(), "local-file")
+                onExport = { stream, fileName, documentReference ->
+                    gateway?.exportLocal(stream, recordedAt(), fileName, documentReference)
                         ?: ExportUpdate.DestinationUnavailable
                 },
                 chooseExportDestination = chooseExportDestination,

@@ -83,6 +83,7 @@ internal interface NavigationGateway {
     fun exportLocal(
         destination: OutputStream,
         recordedAtLocal: String,
-        destinationReference: String?,
+        destinationFileName: String?,
+        documentReference: String?,
     ): ExportUpdate
 }
