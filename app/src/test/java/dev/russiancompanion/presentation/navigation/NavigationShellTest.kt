@@ -6,6 +6,7 @@ import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.audio
@@ -90,38 +91,46 @@ class NavigationShellTest {
 
         compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
-        compose.onNodeWithText("Today's Plan", substring = false).performClick()
+        clickText("Today's Plan", substring = false)
         compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
         compose.onNodeWithText("Back").performClick()
 
-        compose.onNodeWithText("Practice", substring = false).performClick()
-        compose.onNodeWithText("SOURCE_TEXT_TOKEN").performClick()
+        clickText("Practice", substring = false)
+        clickText("SOURCE_TEXT_TOKEN")
         compose.onNodeWithText("Practice session").assertIsDisplayed()
         compose.onNodeWithText("Next model").assertDoesNotExist()
-        compose.onNodeWithText("Attributions and licenses").performClick()
-        compose.onNodeWithText("TEST-LICENSE: Test attribution").assertIsDisplayed()
-        compose.onNodeWithText("Back to practice").performClick()
+        clickText("Attributions and licenses")
+        showText("TEST-LICENSE: Test attribution")
+        clickText("Back to practice")
         compose.onNodeWithText("Practice session").assertIsDisplayed()
         compose.onNodeWithText("Back").performClick()
         compose.onNodeWithText("No licensed practice audio is available.").assertDoesNotExist()
-        compose.onNodeWithText("Home", substring = false).performClick()
+        clickText("Home", substring = false)
 
-        compose.onNodeWithText("Gates", substring = false).performClick()
-        compose.onNodeWithText("Activity gate, not proficiency certification.").assertIsDisplayed()
-        compose.onNodeWithText("Displayed test rule").performClick()
+        clickText("Gates", substring = false)
+        showText("Activity gate, not proficiency certification.")
+        clickText("Displayed test rule")
         compose.onNodeWithText("This gate definition is unreadable. No advancement decision is shown.")
             .assertDoesNotExist()
-        compose.onNodeWithText("Progress", substring = false).performClick()
-        compose.onNodeWithText("Recorded activity is work completed, not certified ability.").assertIsDisplayed()
-        compose.onNodeWithText("Log activity").performClick()
+        clickText("Progress", substring = false)
+        showText("Recorded activity is work completed, not certified ability.")
+        clickText("Log activity")
         compose.onNodeWithText("Log activity").assertIsDisplayed()
         compose.onNodeWithText("Back").performClick()
-        compose.onNodeWithText("Local export").performClick()
-        compose.onNodeWithText(
+        clickText("Local export")
+        showText(
             "Export will include logs, gate evidence, progress data, and recordings. This is local export, not cloud backup.",
-        ).assertIsDisplayed()
-        compose.onNodeWithText("Home", substring = false).performClick()
+        )
+        clickText("Home", substring = false)
         compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
+    }
+
+    private fun clickText(text: String, substring: Boolean = true) {
+        compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+    }
+
+    private fun showText(text: String) {
+        compose.onNodeWithText(text).performScrollTo().assertIsDisplayed()
     }
 
     private fun show(gateway: dev.russiancompanion.domain.navigation.NavigationGateway?) {

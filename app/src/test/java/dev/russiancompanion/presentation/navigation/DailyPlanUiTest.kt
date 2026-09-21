@@ -8,6 +8,7 @@ import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.LocalStore
@@ -61,44 +62,44 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
-        compose.onNodeWithText("Required activities completed: 0 of 3").assertIsDisplayed()
-        compose.onNodeWithText("Next required activity").assertIsDisplayed()
-        compose.onNodeWithText("Use your copy of the book for this lesson").assertIsDisplayed()
-        compose.onNodeWithText("Activity gate, not proficiency certification.").assertIsDisplayed()
-        compose.onNodeWithText("No advancement decision is recorded.").assertIsDisplayed()
-        compose.onNodeWithText("No activity is recorded.").assertIsDisplayed()
+        showText("Required activities completed: 0 of 3")
+        showText("Next required activity")
+        showText("Use your copy of the book for this lesson")
+        showText("Activity gate, not proficiency certification.")
+        showText("No advancement decision is recorded.")
+        showText("No activity is recorded.")
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
-        compose.onNodeWithText("Today's Plan", substring = false).performClick()
+        clickText("Today's Plan", substring = false)
 
-        compose.onNodeWithText("Book work uses your copy.").assertIsDisplayed()
-        compose.onNodeWithText("Assigned AnkiDroid work is performed separately.").assertIsDisplayed()
-        compose.onNodeWithText("Listen-record-compare practice.").assertIsDisplayed()
+        showText("Book work uses your copy.")
+        showText("Assigned AnkiDroid work is performed separately.")
+        showText("Listen-record-compare practice.")
         compose.onAllNodesWithText("Self-attested").assertCountEquals(2)
         compose.onNodeWithText("Remove tutor task").assertDoesNotExist()
-        compose.onNodeWithText("Add tutor task").performClick()
-        compose.onNodeWithText("Remove tutor task").assertIsDisplayed()
-        compose.onNodeWithText("Remove tutor task").performClick()
-        compose.onNodeWithText("Add tutor task").assertIsDisplayed()
+        clickText("Add tutor task")
+        showText("Remove tutor task")
+        clickText("Remove tutor task")
+        showText("Add tutor task")
         compose.onNodeWithText("Remove tutor task").assertDoesNotExist()
 
-        compose.onAllNodesWithText("Mark complete")[0].performClick()
-        compose.onAllNodesWithText("Mark complete")[0].performClick()
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
         compose.onAllNodesWithText("Completed").assertCountEquals(2)
-        compose.onNodeWithText("Start listen-record-compare").performClick()
+        clickText("Start listen-record-compare")
         compose.onNodeWithText("Practice session").assertIsDisplayed()
-        compose.onNodeWithText("SOURCE_TEXT_TOKEN").assertIsDisplayed()
+        showText("SOURCE_TEXT_TOKEN")
         compose.onNodeWithText("Back").performClick()
-        compose.onNodeWithText("Not completed").assertIsDisplayed()
+        showText("Not completed")
 
         val logs = store.activityLogs()
         assertEquals(listOf(ActivityCategory.GRAMMAR, ActivityCategory.VOCABULARY_AND_FORMS), logs.map { it.category })
         assertTrue(logs.all { it.selfAttested && it.completed && it.durationMinutes == 0 })
 
-        compose.onNodeWithText("Home", substring = false).performClick()
-        compose.onNodeWithText("Required activities completed: 2 of 3").assertIsDisplayed()
+        clickText("Home", substring = false)
+        showText("Required activities completed: 2 of 3")
         compose.onNodeWithText("Do the assigned AnkiDroid work").assertDoesNotExist()
-        compose.onNodeWithText("Listen to the licensed model").assertIsDisplayed()
-        compose.onNodeWithText("Begin").performClick()
+        showText("Listen to the licensed model")
+        clickText("Begin")
         compose.onNodeWithText("Practice session").assertIsDisplayed()
     }
 
@@ -112,28 +113,36 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
-        compose.onNodeWithText("Practice").assertIsNotEnabled()
-        compose.onNodeWithText("No licensed practice audio is available.").assertIsDisplayed()
-        compose.onNodeWithText("Today's Plan", substring = false).performClick()
-        compose.onNodeWithText("Start listen-record-compare").assertIsNotEnabled()
-        compose.onAllNodesWithText("Mark complete")[0].performClick()
-        compose.onNodeWithText("Completed").assertIsDisplayed()
-        compose.onNodeWithText("Progress", substring = false).performClick()
-        compose.onNodeWithText("Recorded activity is work completed, not certified ability.").assertIsDisplayed()
+        compose.onNodeWithText("Practice").performScrollTo().assertIsNotEnabled()
+        showText("No licensed practice audio is available.")
+        clickText("Today's Plan", substring = false)
+        compose.onNodeWithText("Start listen-record-compare").performScrollTo().assertIsNotEnabled()
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
+        showText("Completed")
+        clickText("Progress", substring = false)
+        showText("Recorded activity is work completed, not certified ability.")
     }
 
     @Test
     fun failedChecklistSaveKeepsThePriorStateAndRetries() {
         val gateway = FakePlanGateway()
         show(gateway)
-        compose.onNodeWithText("Today's Plan", substring = false).performClick()
-        compose.onNodeWithText("Mark complete").performClick()
-        compose.onNodeWithText("The change was not saved.").assertIsDisplayed()
-        compose.onNodeWithText("Not completed").assertIsDisplayed()
+        clickText("Today's Plan", substring = false)
+        clickText("Mark complete")
+        showText("The change was not saved.")
+        showText("Not completed")
         gateway.failNext = false
-        compose.onNodeWithText("Retry").performClick()
-        compose.onNodeWithText("Completed").assertIsDisplayed()
+        clickText("Retry")
+        showText("Completed")
         compose.onNodeWithText("The change was not saved.").assertDoesNotExist()
+    }
+
+    private fun clickText(text: String, substring: Boolean = true) {
+        compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+    }
+
+    private fun showText(text: String) {
+        compose.onNodeWithText(text).performScrollTo().assertIsDisplayed()
     }
 
     private fun show(gateway: NavigationGateway) {
