@@ -23,9 +23,11 @@ class AcceptanceBoundaryTest {
     @Test
     fun at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion() {
         val labels = userFacingText()
+        assertTrue(labels.contains("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course."))
         assertTrue(labels.contains("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs."))
         assertTrue(labels.contains("This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency."))
-        assertTrue(labels.contains("Book work uses your copy."))
+        assertTrue(labels.contains("Grammar practice stays in your copy of the book and its answer key."))
+        assertTrue(labels.contains("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing."))
         assertTrue(labels.contains("Today's Plan"))
         assertTrue(labels.contains("Practice"))
         assertTrue(labels.contains("Gates"))
@@ -50,10 +52,13 @@ class AcceptanceBoundaryTest {
         ).forEach { prohibited ->
             assertFalse(prohibited, labels.contains(prohibited, ignoreCase = true))
         }
-        val penguinLines = labels.lineSequence().filter { it.contains("Penguin") }.toList()
+        val penguinLines = labels.lineSequence().filter { it.contains("Penguin") }.map { it.trim() }.toList()
         assertEquals(
-            listOf("This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency."),
-            penguinLines.map { it.trim() },
+            listOf(
+                "This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.",
+                "This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.",
+            ),
+            penguinLines,
         )
     }
 
@@ -196,7 +201,7 @@ class AcceptanceBoundaryTest {
     fun at023_ankiDroidStaysOutsideTheApp() {
         val labels = userFacingText()
         assertTrue(labels.contains("connect to AnkiDroid"))
-        assertTrue(labels.contains("Assigned AnkiDroid work is performed separately."))
+        assertTrue(labels.contains("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing."))
         assertTrue(labels.contains("Self-attested — no AnkiDroid integration; not independently verified"))
         assertFalse(mainSources().joinToString("\n").contains("com.ichi2"))
     }

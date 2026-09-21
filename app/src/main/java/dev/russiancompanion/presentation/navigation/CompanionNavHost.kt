@@ -261,7 +261,10 @@ private fun OnboardingScreen(
         onBack = if (page == 0) null else ({ page -= 1 }),
     ) {
         when (page) {
-            0 -> Text(stringResource(R.string.onboarding_role))
+            0 -> {
+                Text(stringResource(R.string.onboarding_identity))
+                Text(stringResource(R.string.onboarding_role))
+            }
             1 -> Text(stringResource(R.string.onboarding_limits))
             2 -> Text(stringResource(R.string.onboarding_local_data))
             else -> {

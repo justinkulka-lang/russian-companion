@@ -93,6 +93,7 @@ class AcceptanceCycleTest {
             )
         }
 
+        show("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.")
         show("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.")
         click("Next")
         show("This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.")
@@ -108,8 +109,8 @@ class AcceptanceCycleTest {
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
         compose.onNodeWithText("fluency").assertDoesNotExist()
         click("Today's Plan")
-        show("Book work uses your copy.")
-        show("Assigned AnkiDroid work is performed separately.")
+        show("Grammar practice stays in your copy of the book and its answer key.")
+        show("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.")
         show("Listen-record-compare practice.")
         click("Add tutor task")
         show("Remove tutor task")

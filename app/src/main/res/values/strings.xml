@@ -7,6 +7,7 @@
     <string name="navigate_retry">Retry</string>
 
     <string name="onboarding_title">Onboarding</string>
+    <string name="onboarding_identity">This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.</string>
     <string name="onboarding_role">This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.</string>
     <string name="onboarding_limits">This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.</string>
     <string name="onboarding_local_data">Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.</string>
@@ -136,8 +137,8 @@
     <string name="gate_status_not_evaluable">Not evaluable</string>
 
     <string name="plan_no_work">No work is prescribed.</string>
-    <string name="plan_book_reference">Book work uses your copy.</string>
-    <string name="plan_anki_separate">Assigned AnkiDroid work is performed separately.</string>
+    <string name="plan_book_reference">Grammar practice stays in your copy of the book and its answer key.</string>
+    <string name="plan_anki_separate">Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.</string>
     <string name="plan_listen">Listen-record-compare practice.</string>
     <string name="plan_tutor_optional">Tutor task included by your choice.</string>
     <string name="plan_self_attested">Self-attested</string>
