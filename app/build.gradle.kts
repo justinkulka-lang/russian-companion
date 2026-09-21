@@ -55,8 +55,10 @@ tasks.register("checkReleaseGate") {
     }
 }
 
-tasks.named("assembleRelease").configure {
-    dependsOn("checkReleaseGate")
+tasks.configureEach {
+    if (name == "assembleRelease" || name == "packageRelease") {
+        dependsOn("checkReleaseGate")
+    }
 }
 
 ksp {
