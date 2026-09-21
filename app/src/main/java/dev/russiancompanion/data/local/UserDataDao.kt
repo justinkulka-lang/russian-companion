@@ -98,4 +98,10 @@ internal abstract class UserDataDao {
         evidence.forEach(::insertEvidence)
         insertDecision(decision)
     }
+
+    @Transaction
+    open fun saveTutorRequirement(requirement: GateTutorRequirementEntity, decision: GateDecisionEntity) {
+        upsertTutorRequirement(requirement)
+        insertDecision(decision)
+    }
 }

@@ -107,6 +107,16 @@ internal fun CompanionApp(
                     if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                     update ?: PlanUpdate.NotSaved(audioId)
                 },
+                onSaveGateEvidence = { gateId, entries ->
+                    val update = gateway?.saveGateEvidence(gateId, entries, recordedAt())
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update ?: PlanUpdate.NotSaved(gateId)
+                },
+                onAddTutorSignOff = { gateId ->
+                    val update = gateway?.addTutorSignOff(gateId, recordedAt())
+                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                    update ?: PlanUpdate.NotSaved(gateId)
+                },
             )
         }
     }

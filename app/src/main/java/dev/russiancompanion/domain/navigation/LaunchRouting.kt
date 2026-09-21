@@ -1,5 +1,6 @@
 package dev.russiancompanion.domain.navigation
 
+import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.plan.PlanUpdate
 
 internal fun practiceLibraryAvailable(snapshot: NavigationSnapshot): Boolean {
@@ -59,4 +60,12 @@ internal interface NavigationGateway {
     fun setRecordingTutorReview(recordingId: String, marked: Boolean): PlanUpdate
 
     fun completeListenPractice(audioModelId: String, localDate: String, recordedAtLocal: String): PlanUpdate
+
+    fun saveGateEvidence(
+        gateId: String,
+        entries: List<GateEvidenceEntry>,
+        recordedAtLocal: String,
+    ): PlanUpdate
+
+    fun addTutorSignOff(gateId: String, recordedAtLocal: String): PlanUpdate
 }

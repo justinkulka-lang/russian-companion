@@ -1,5 +1,6 @@
 package dev.russiancompanion.domain.navigation
 
+import dev.russiancompanion.domain.gate.GateDetailView
 import dev.russiancompanion.domain.plan.ActivitySummary
 import dev.russiancompanion.domain.plan.DailyPlan
 import dev.russiancompanion.domain.plan.GateSummary
@@ -59,6 +60,7 @@ internal data class NavigationSnapshot(
     val dailyPlan: DailyPlan = DailyPlan.empty(),
     val gateSummaries: List<GateSummary> = emptyList(),
     val activitySummary: ActivitySummary = ActivitySummary.none(),
+    val gateDetails: List<GateDetailView> = emptyList(),
 ) {
     companion object {
         fun closed(): NavigationSnapshot {

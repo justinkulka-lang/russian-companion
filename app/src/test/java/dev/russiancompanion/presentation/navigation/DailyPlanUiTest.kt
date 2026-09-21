@@ -275,6 +275,16 @@ class DailyPlanUiTest {
             localDate: String,
             recordedAtLocal: String,
         ): PlanUpdate = PlanUpdate.NotSaved(audioModelId)
+
+        override fun saveGateEvidence(
+            gateId: String,
+            entries: List<dev.russiancompanion.domain.gate.GateEvidenceEntry>,
+            recordedAtLocal: String,
+        ): PlanUpdate = PlanUpdate.NotSaved(gateId)
+
+        override fun addTutorSignOff(gateId: String, recordedAtLocal: String): PlanUpdate {
+            return PlanUpdate.NotSaved(gateId)
+        }
     }
 }
 
