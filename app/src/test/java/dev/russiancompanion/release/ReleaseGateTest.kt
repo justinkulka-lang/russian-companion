@@ -94,10 +94,9 @@ class ReleaseGateTest {
             """{"procedure":"AT-030","state":"RETAINED","evidencePath":"release/evidence/AT-030.txt"}""",
             """{"procedure":"AT-031","state":"MISSING"}""",
         )
-        File(root, "release/evidence/AT-030.txt").apply {
-            parentFile.mkdirs()
-            writeText("")
-        }
+        val emptyEvidence = File(root, "release/evidence/AT-030.txt")
+        emptyEvidence.parentFile?.mkdirs()
+        emptyEvidence.writeText("")
         val blockers = assessPackagedRelease(
             SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
             manifest,
@@ -109,10 +108,9 @@ class ReleaseGateTest {
     @Test
     fun evidenceOutsideTheManifestDirectoryIsRejected() {
         val root = Files.createTempDirectory("release-evidence").toFile()
-        File(root, "notes/outside.txt").apply {
-            parentFile.mkdirs()
-            writeText("outside the evidence directory")
-        }
+        val outside = File(root, "notes/outside.txt")
+        outside.parentFile?.mkdirs()
+        outside.writeText("outside the evidence directory")
         val manifest = manifest(
             """{"procedure":"AT-004","state":"RETAINED","evidencePath":"notes/outside.txt"}""",
             """{"procedure":"AT-020","state":"RETAINED","evidencePath":"../outside.txt"}""",
@@ -204,10 +202,9 @@ class ReleaseGateTest {
         val records = mutableListOf<String>()
         for (procedure in listOf("AT-004", "AT-020", "AT-030", "AT-031")) {
             val relative = "release/evidence/$procedure.txt"
-            File(root, relative).apply {
-                parentFile.mkdirs()
-                writeText("Fixture record for $procedure.")
-            }
+            val evidence = File(root, relative)
+            evidence.parentFile?.mkdirs()
+            evidence.writeText("Fixture record for $procedure.")
             records += """{"procedure":"$procedure","state":"RETAINED","evidencePath":"$relative"}"""
         }
         return root to manifest(*records.toTypedArray())

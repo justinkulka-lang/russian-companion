@@ -106,7 +106,12 @@ internal const val RELEASE_EVIDENCE_MANIFEST = "release/retained-evidence.json"
 private const val EVIDENCE_PATH_PREFIX = "release/evidence/"
 
 fun main() {
-    val repositoryRoot = File(System.getProperty("user.dir"))
+    val workingDirectory = System.getProperty("user.dir")
+    if (workingDirectory.isNullOrBlank()) {
+        System.err.println("Public release is not approved.")
+        exitProcess(1)
+    }
+    val repositoryRoot = File(workingDirectory)
     val assessment = assessRepositoryRelease(repositoryRoot)
     val report = File(repositoryRoot, "app/build/reports/release-gate.txt")
     report.parentFile?.mkdirs()
