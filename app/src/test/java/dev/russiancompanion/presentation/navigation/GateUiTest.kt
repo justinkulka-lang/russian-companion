@@ -100,7 +100,7 @@ class GateUiTest {
         compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
 
         click("Add tutor sign-off")
-        show("Tutor sign-off")
+        compose.onNodeWithText("Tutor sign-off", substring = false).performScrollTo().assertIsDisplayed()
         show("Recorded gate status: Not evaluable")
         show("Awaiting user evidence")
         show("Locked — remaining: Tutor sign-off")
