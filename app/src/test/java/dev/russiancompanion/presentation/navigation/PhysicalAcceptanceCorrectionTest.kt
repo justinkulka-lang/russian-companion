@@ -224,8 +224,8 @@ class PhysicalAcceptanceCorrectionTest {
         }
         assertTrue(gradle.contains("dependsOn(\"checkReleaseGate\")"))
         assertTrue(gradle.contains("verifyReleaseGateAttachment"))
-        assertTrue(gradle.contains("versionName = \"1.1.1\""))
-        assertTrue(gradle.contains("versionCode = 4"))
+        assertTrue(gradle.contains("versionName = \"2.0.0-dev\""))
+        assertTrue(gradle.contains("versionCode = 5"))
     }
 
     private fun showPackaged() {

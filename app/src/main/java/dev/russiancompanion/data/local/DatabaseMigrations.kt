@@ -149,6 +149,71 @@ internal val MIGRATION_5_6 = object : Migration(5, 6) {
     }
 }
 
+internal val MIGRATION_6_7 = object : Migration(6, 7) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `v2_profiles` (
+                `id` TEXT NOT NULL,
+                `onboardingCompleted` INTEGER NOT NULL,
+                `currentUnitNumber` INTEGER NOT NULL,
+                `startingPoint` TEXT NOT NULL,
+                `hasPenguin` INTEGER NOT NULL,
+                `hasAnki` INTEGER NOT NULL,
+                `hasBinder` INTEGER NOT NULL,
+                `hasTutor` INTEGER NOT NULL,
+                `dailyMinutes` INTEGER NOT NULL,
+                `transliterationEnabled` INTEGER NOT NULL,
+                `currentSessionId` TEXT,
+                `currentStepIndex` INTEGER NOT NULL,
+                PRIMARY KEY(`id`)
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `v2_step_progress` (`stepId` TEXT NOT NULL, `completedAtLocal` TEXT NOT NULL, PRIMARY KEY(`stepId`))",
+        )
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_v2_step_progress_stepId` ON `v2_step_progress` (`stepId`)")
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `v2_attempts` (
+                `id` TEXT NOT NULL,
+                `itemId` TEXT NOT NULL,
+                `selected` TEXT NOT NULL,
+                `correct` INTEGER NOT NULL,
+                `recordedAtLocal` TEXT NOT NULL,
+                PRIMARY KEY(`id`)
+            )
+            """.trimIndent(),
+        )
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_v2_attempts_itemId` ON `v2_attempts` (`itemId`)")
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `v2_bookmarks` (`targetId` TEXT NOT NULL, `kind` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, PRIMARY KEY(`targetId`))",
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `v2_notes` (
+                `id` TEXT NOT NULL,
+                `targetId` TEXT NOT NULL,
+                `text` TEXT NOT NULL,
+                `createdAtLocal` TEXT NOT NULL,
+                `userAuthoredRussian` INTEGER NOT NULL,
+                PRIMARY KEY(`id`)
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `v2_tutor_queue` (`id` TEXT NOT NULL, `targetId` TEXT NOT NULL, `note` TEXT NOT NULL, `createdAtLocal` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `v2_book_attestations` (`unitNumber` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`unitNumber`))",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `v2_unit_completions` (`unitNumber` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, PRIMARY KEY(`unitNumber`))",
+        )
+    }
+}
+
 private data class LegacyEvidenceRow(
     val id: String,
     val gateId: String,

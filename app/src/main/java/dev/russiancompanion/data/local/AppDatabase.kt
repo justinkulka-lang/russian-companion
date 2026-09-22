@@ -24,8 +24,16 @@ import androidx.room.TypeConverters
         GateTutorRequirementEntity::class,
         GateDecisionEntity::class,
         ExportRecordEntity::class,
+        dev.russiancompanion.v2.data.V2ProfileEntity::class,
+        dev.russiancompanion.v2.data.V2StepProgressEntity::class,
+        dev.russiancompanion.v2.data.V2AttemptEntity::class,
+        dev.russiancompanion.v2.data.V2BookmarkEntity::class,
+        dev.russiancompanion.v2.data.V2NoteEntity::class,
+        dev.russiancompanion.v2.data.V2TutorItemEntity::class,
+        dev.russiancompanion.v2.data.V2BookAttestationEntity::class,
+        dev.russiancompanion.v2.data.V2UnitCompletionEntity::class,
     ],
-    version = 6,
+    version = 7,
     exportSchema = true,
 )
 @TypeConverters(StoredValueConverters::class)
@@ -33,4 +41,6 @@ internal abstract class AppDatabase : RoomDatabase() {
     abstract fun bundled(): BundledContentDao
 
     abstract fun users(): UserDataDao
+
+    abstract fun v2(): dev.russiancompanion.v2.data.V2Dao
 }

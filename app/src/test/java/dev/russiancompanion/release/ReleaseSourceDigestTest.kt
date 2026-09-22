@@ -18,8 +18,8 @@ class ReleaseSourceDigestTest {
         val candidate = readAcceptanceCandidate(root)
         assertEquals(binding!!.sourceDigest, candidate?.sourceDigest)
         assertTrue(candidateMatchesBinding(candidate, binding))
-        assertEquals("1.1.1", binding.versionName)
-        assertEquals(4, binding.versionCode)
+        assertEquals("2.0.0-dev", binding.versionName)
+        assertEquals(5, binding.versionCode)
         assertEquals("dev.russiancompanion", binding.applicationId)
         assertFalse(candidate!!.frozen)
         assertEquals(null, candidate.sourceCommit)
@@ -55,7 +55,7 @@ class ReleaseSourceDigestTest {
             "app/src/main/assets/audio/.digest-probe" to "audio-changed",
             "gradle.properties" to "org.gradle.jvmargs=-Xmx99m\n",
             "app/build.gradle.kts" to File(root, "app/build.gradle.kts").readText()
-                .replace("versionName = \"1.1.1\"", "versionName = \"1.1.2\""),
+                .replace("versionName = \"2.0.0-dev\"", "versionName = \"2.0.0\""),
             "release/acceptance/DEVICE_ACCEPTANCE.md" to "changed acceptance procedure\n",
             "release/acceptance/templates/AT-001.md" to "changed acceptance template\n",
         )
@@ -131,14 +131,15 @@ class ReleaseSourceDigestTest {
     @Test
     fun retainedEvidenceIsRejectedAfterAVersionIdentityChange() {
         assertInvalidatedBy("app/build.gradle.kts") { file ->
-            file.writeText(file.readText().replace("versionName = \"1.1.1\"", "versionName = \"1.1.2\""))
+            file.writeText(file.readText().replace("versionName = \"2.0.0-dev\"", "versionName = \"2.0.0\""))
         }
     }
 
     @Test
     fun mismatchedCandidateCommitRejectsRetainedEvidence() {
         val root = boundProductRoot()
-        assertEquals(ReleaseDecision.APPROVED, assessRepositoryRelease(root).decision)
+        assertTrue(assessRepositoryRelease(root).blockers.containsAll(V2_RELEASE_BLOCKERS))
+        assertFalse(assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
         File(root, "release/evidence/AT-001.json").writeText(
             boundEvidence(
                 "AT-001",
@@ -155,7 +156,8 @@ class ReleaseSourceDigestTest {
     @Test
     fun mismatchedApkHashRejectsRetainedEvidence() {
         val root = boundProductRoot()
-        assertEquals(ReleaseDecision.APPROVED, assessRepositoryRelease(root).decision)
+        assertTrue(assessRepositoryRelease(root).blockers.containsAll(V2_RELEASE_BLOCKERS))
+        assertFalse(assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
         File(root, "release/evidence/AT-001.json").writeText(
             boundEvidence(
                 "AT-001",
@@ -205,7 +207,8 @@ class ReleaseSourceDigestTest {
     private fun assertInvalidatedBy(relative: String, mutate: (File) -> Unit) {
         val root = boundProductRoot()
         val ready = assessRepositoryRelease(root)
-        assertEquals(ReleaseDecision.APPROVED, ready.decision)
+        assertTrue(ready.blockers.containsAll(V2_RELEASE_BLOCKERS))
+        assertFalse(ready.blockers.contains(ReleaseBlocker.SOURCE_DIGEST_MISMATCH))
         mutate(File(root, relative))
         val after = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, after.decision)

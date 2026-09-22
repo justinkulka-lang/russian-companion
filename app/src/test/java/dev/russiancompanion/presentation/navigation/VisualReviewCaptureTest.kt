@@ -9,10 +9,10 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
-import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.ui.V2App
 import org.junit.After
 import org.junit.Assert.assertTrue
 import org.junit.Rule
@@ -41,59 +41,44 @@ class VisualReviewCaptureTest {
     fun captureGalaxyS26UltraEquivalentScreens() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
-        store.applySeed(LocalStore.readPackagedSeed(context))
-        compose.setContent {
-            CompanionApp(
-                gateway = RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()),
-                onRetryOpen = {},
-                today = { "2026-09-21" },
-                practiceAudio = PermissivePracticeAudio(),
-            )
-        }
-        capture("01-onboarding-introduction")
-        compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("Lesson 1", substring = false).performClick()
-        capture("02-lesson-selection-lesson-1")
-        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(29)
-        compose.onNodeWithText("Lesson 30", substring = false).performClick()
-        capture("03-lesson-selection-lesson-30")
-        compose.onNodeWithText("Confirm lesson").performClick()
-        capture("04-home")
-        compose.onNodeWithText("Today's Plan").performClick()
-        capture("05-todays-plan")
-        compose.onNodeWithText("Home").performClick()
+        val pack = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        capture("01-onboarding-welcome")
+        compose.onNodeWithTag("v2-onboarding-next").performClick()
+        capture("02-onboarding-study-system")
+        repeat(3) { compose.onNodeWithTag("v2-onboarding-next").performClick() }
+        capture("03-onboarding-ready")
+        compose.onNodeWithText("Start Unit 1").performClick()
+        capture("04-today")
+        compose.onNodeWithText("Course").performClick()
+        capture("05-course")
+        compose.onNodeWithText("Unit 1 · Learning to read Russian", substring = true).performClick()
+        capture("06-unit-1")
+        compose.onNodeWithText("Back").performClick()
+        compose.onNodeWithText("Unit 2 · Handwriting and additional pronunciation", substring = true).performClick()
+        capture("07-unit-2")
         compose.onNodeWithText("Practice").performClick()
-        capture("06-listen-record-compare")
-        compose.onNodeWithText("Home").performClick()
-        compose.onNodeWithText("Gates").performClick()
-        capture("07-gates")
-        compose.onNodeWithText("Home").performClick()
+        capture("08-practice")
+        compose.onNodeWithText("Reference").performClick()
+        capture("09-reference")
         compose.onNodeWithText("Progress").performClick()
-        capture("08-progress")
-        compose.onNodeWithText("Home").performClick()
-        compose.onNodeWithText("Attributions and licenses").performClick()
-        capture("09-attributions")
+        capture("10-progress")
+        compose.onNodeWithText("Settings, appearance, and attributions").performClick()
+        capture("11-settings")
         assertTrue(outputDir().listFiles()?.any { it.extension == "png" } == true)
     }
 
     @Test
-    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 1.6f)
-    fun captureLargeFontOnboardingAndLessonSelection() {
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun captureLargeFontTodayAndCourse() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
-        store.applySeed(LocalStore.readPackagedSeed(context))
-        compose.setContent {
-            CompanionApp(
-                gateway = RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()),
-                onRetryOpen = {},
-                today = { "2026-09-21" },
-                practiceAudio = PermissivePracticeAudio(),
-            )
-        }
-        capture("10-onboarding-introduction-large-font")
-        compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("Lesson 1", substring = false).performClick()
-        capture("11-lesson-selection-large-font")
+        val pack = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
+        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        capture("12-today-large-font")
+        compose.onNodeWithText("Course").performClick()
+        capture("13-course-large-font")
     }
 
     private fun capture(name: String) {
@@ -115,7 +100,9 @@ class VisualReviewCaptureTest {
     }
 
     private fun outputDir(): File {
-        val repo = listOf(File("."), File("..")).first { File(it, "release/acceptance").isDirectory }
+        val repo = repo()
         return File(repo, "release/acceptance/visual-review").apply { mkdirs() }
     }
+
+    private fun repo(): File = listOf(File("."), File("..")).first { File(it, "release/acceptance").isDirectory }
 }
