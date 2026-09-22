@@ -3,6 +3,7 @@
   "kind": "physical-device-acceptance-candidate",
   "publicRelease": "NOT_APPROVED",
   "sourceCommit": "0602edaeb05a353de5e994c127eb87b5b97078a3",
+  "packageCommit": "332404813df2cd8a12cbb2eb5fd450cc18ea2f8d",
   "packageBranch": "cursor/physical-device-acceptance-package-964f",
   "gradleTask": "assembleDebug",
   "applicationId": "dev.russiancompanion",
@@ -10,13 +11,15 @@
   "versionCode": 1,
   "doNotRebuildForHashMatch": true,
   "artifact": {
-    "status": "PENDING_SUCCESSFUL_WORKFLOW",
+    "status": "RECORDED",
     "workflowFile": ".github/workflows/build.yml",
     "artifactName": "acceptance-candidate-debug-apk",
     "identityFile": "artifact-identity.json",
-    "runUrl": null,
-    "sha256": null,
-    "apkBytes": null
+    "apkFileName": "app-debug.apk",
+    "runId": "35740338300",
+    "runUrl": "https://github.com/justinkulka-lang/russian-companion/actions/runs/35740338300",
+    "sha256": "1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e",
+    "apkBytes": 29081799
   },
   "circularityResolution": "assembleRelease depends on checkReleaseGate, which requires retained AT-004/AT-020/AT-030/AT-031 evidence. Physical procedures require an installed candidate first. The existing ungated assembleDebug task is the acceptance-candidate mechanism. GitHub Actions publishes that exact APK as artifact acceptance-candidate-debug-apk. It does not bypass or weaken the release gate.",
   "retainedEvidence": "MISSING",

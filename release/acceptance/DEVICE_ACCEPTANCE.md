@@ -41,7 +41,9 @@ hash. Reproducible-build equivalence has not been demonstrated.
 | Gradle task | `assembleDebug` |
 | Artifact name | `acceptance-candidate-debug-apk` |
 | Identity file in artifact | `artifact-identity.json` |
-| SHA-256 / byte count / run URL | see `release/acceptance/candidate.json` `artifact` after a successful workflow; until then `PENDING_SUCCESSFUL_WORKFLOW` |
+| SHA-256 | `1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e` |
+| Byte count | `29081799` |
+| Artifact run URL | https://github.com/justinkulka-lang/russian-companion/actions/runs/35740338300 |
 | Public release | `NOT_APPROVED` |
 
 Download the exact APK:
