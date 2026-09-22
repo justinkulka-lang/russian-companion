@@ -49,6 +49,14 @@ internal fun installLabel(unit: V2Unit): String = when (unit.installState) {
     else -> "Not yet installed"
 }
 
+internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
+    "CONTENT_COMPLETE_REVIEW_PENDING" -> "Content complete, review pending"
+    "REVIEW_APPROVED" -> "Review approved"
+    "MAPPING_APPROVED" -> "Mapping approved"
+    "INSTALLABLE" -> "Ready to install"
+    else -> ""
+}
+
 internal fun todaysSession(unit: V2Unit, learner: V2LearnerView): V2Session? {
     return unit.sessions.firstOrNull { session ->
         session.steps.any { it.id !in learner.completedStepIds }

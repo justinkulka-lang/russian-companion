@@ -4,9 +4,11 @@
 Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
-Units 1–2 are DEVELOPMENT content: openable letter work without claiming
-production-depth installation. Advancement checks are letter identities,
-print pairs, confusable forms, and signs — never product-policy quizzes.
+Unit 1 is a content-complete DEVELOPMENT unit awaiting qualified review
+and an owned-edition mapping. It is not INSTALLED. Unit 2 stays
+DEVELOPMENT until handwriting assets and mapped audio exist. Advancement
+checks are letter identities, print pairs, confusable forms, and signs —
+never product-policy quizzes.
 """
 
 from __future__ import annotations
@@ -331,6 +333,86 @@ def build() -> dict:
             "CONFUSABLE",
         ),
         item(
+            "u1-i-в-not-b",
+            "This letter looks like Latin B. What is it?",
+            ["Latin B", "Cyrillic В", "Cyrillic Б"],
+            "Cyrillic В",
+            "В is not Latin B and it is not Cyrillic Б.",
+            "obj-u1-confusable",
+            "В",
+            "CONFUSABLE",
+        ),
+        item(
+            "u1-i-у-not-y",
+            "This letter looks like Latin Y. What is it?",
+            ["Latin Y", "Cyrillic У", "Cyrillic И"],
+            "Cyrillic У",
+            "У is a Cyrillic vowel letter, not Latin Y.",
+            "obj-u1-confusable",
+            "У",
+            "CONFUSABLE",
+        ),
+        item(
+            "u1-i-х-not-x",
+            "This letter looks like Latin X. What is it?",
+            ["Latin X", "Cyrillic Х", "Cyrillic К"],
+            "Cyrillic Х",
+            "Х is a Cyrillic letter, not Latin X.",
+            "obj-u1-confusable",
+            "Х",
+            "CONFUSABLE",
+        ),
+        item(
+            "u1-i-ё-identity",
+            "Which printed letter is shown?",
+            ["Cyrillic Ё", "Cyrillic Е", "Cyrillic Э"],
+            "Cyrillic Ё",
+            "Ё is its own letter. Е and Э are different letters.",
+            "obj-u1-iotated",
+            "Ё",
+            "LETTER_IDENTITY",
+        ),
+        item(
+            "u1-i-ю-identity",
+            "Which printed letter is shown?",
+            ["Cyrillic Ю", "Cyrillic У", "Cyrillic Я"],
+            "Cyrillic Ю",
+            "Ю is an iotated vowel letter. У and Я are different letters.",
+            "obj-u1-iotated",
+            "Ю",
+            "LETTER_IDENTITY",
+        ),
+        item(
+            "u1-i-я-identity",
+            "Which printed letter is shown?",
+            ["Cyrillic Я", "Cyrillic Р", "Cyrillic А"],
+            "Cyrillic Я",
+            "Я is an iotated vowel letter. It is not Р or А.",
+            "obj-u1-iotated",
+            "Я",
+            "LETTER_IDENTITY",
+        ),
+        item(
+            "u1-i-й-not-vowel",
+            "What is the printed letter Й?",
+            ["A standalone vowel", "A consonant letter, not a vowel", "The same mark as Ь"],
+            "A consonant letter, not a vowel",
+            "Й is not a vowel you read alone and it is not the soft sign.",
+            "obj-u1-signs",
+            "Й",
+            "SIGN",
+        ),
+        item(
+            "u1-i-decode-pair",
+            "Which line is one letter written in both print cases?",
+            ["А / а", "А / О", "М / Т"],
+            "А / а",
+            "А / а is one letter. The other lines are two different letters.",
+            "obj-u1-decoding",
+            "А",
+            "PRINT_PAIR",
+        ),
+        item(
             "u1-i-е-identity",
             "Which printed letter is shown?",
             ["Cyrillic Е", "Cyrillic Э", "Cyrillic Ё"],
@@ -451,7 +533,7 @@ def build() -> dict:
             display = f"{upper} / {lower}"
             note = f"Printed pair {upper} {lower}."
         examples.append(example(f"ex-{lid}", kind, upper, display, note, objective_id))
-        if upper in {"А", "Б"}:
+        if upper in {"А", "Б", "М"}:
             examples.append(
                 example(
                     f"ex-print-{lid}",
@@ -459,7 +541,7 @@ def build() -> dict:
                     upper,
                     f"{upper} / {lower}",
                     f"{upper} and {lower} are the same letter in two print cases.",
-                    "obj-u1-print-forms" if upper == "А" else "obj-u2-review",
+                    "obj-u1-print-forms" if upper in {"А", "М"} else "obj-u2-review",
                 )
             )
 
@@ -477,7 +559,7 @@ def build() -> dict:
                     "u1-st-orient",
                     "ORIENT",
                     "Unit 1 — Printed letters",
-                    "You are at Penguin-aligned Unit 1. This development slice teaches printed letter identities with public-domain letter forms. It is not a finished production unit: reviewed example words, mapped audio, and word reading are not installed.",
+                    "This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Qualified review is still pending.",
                     bookDirection="Open your copy to Lesson 1. Use the book for the author's explanations, exercises, and any example words.",
                 ),
                 step(
@@ -540,8 +622,7 @@ def build() -> dict:
                     "u1-st-cons",
                     "TEACH",
                     "Low-confusion consonants",
-                    "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Letter-name audio is not installed.",
-                    unavailableReason="Licensed letter-name audio has not been intake-reviewed for this unit.",
+                    "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Confirm each spoken sound in your book. This unit does not play model audio.",
                     referenceIds=["ref-cyrillic-print"],
                     exampleIds=["ex-letter-041c", "ex-letter-0422", "ex-letter-0411"],
                 ),
@@ -597,6 +678,15 @@ def build() -> dict:
                     exampleIds=["ex-letter-0421"],
                     remediationStepId="u1-st-confusable",
                 ),
+                step(
+                    "u1-st-confusable-rest",
+                    "CHECK",
+                    "В, У, and Х",
+                    "Identity check for the remaining look-alikes.",
+                    itemIds=["u1-i-в-not-b", "u1-i-у-not-y", "u1-i-х-not-x"],
+                    exampleIds=["ex-letter-0412", "ex-letter-0423", "ex-letter-0425"],
+                    remediationStepId="u1-st-confusable",
+                ),
             ],
             15,
         ),
@@ -616,10 +706,10 @@ def build() -> dict:
                 step(
                     "u1-st-iotated-check",
                     "CHECK",
-                    "Identify Е",
+                    "Identify Е, Ё, Ю, and Я",
                     "Identity check.",
-                    itemIds=["u1-i-е-identity"],
-                    exampleIds=["ex-letter-0415"],
+                    itemIds=["u1-i-е-identity", "u1-i-ё-identity", "u1-i-ю-identity", "u1-i-я-identity"],
+                    exampleIds=["ex-letter-0415", "ex-letter-0401", "ex-letter-042e", "ex-letter-042f"],
                     remediationStepId="u1-st-iotated",
                 ),
             ],
@@ -656,6 +746,15 @@ def build() -> dict:
                     exampleIds=["ex-letter-042a"],
                     remediationStepId="u1-st-signs",
                 ),
+                step(
+                    "u1-st-short-i-check",
+                    "CHECK",
+                    "Й is not a vowel",
+                    "Identity check.",
+                    itemIds=["u1-i-й-not-vowel"],
+                    exampleIds=["ex-letter-0419"],
+                    remediationStepId="u1-st-signs",
+                ),
             ],
             10,
         ),
@@ -687,32 +786,41 @@ def build() -> dict:
         session(
             "u1-s-decoding",
             "Staged decoding",
-            ["obj-u1-letter-identity"],
+            ["obj-u1-decoding"],
             [
                 step(
                     "u1-st-decoding",
-                    "UNAVAILABLE",
-                    "Word reading is not installed",
-                    "Decoding in this development slice stays at letter and print-pair level. Reviewed example words are not installed.",
-                    unavailableReason="No reviewed Russian example words or sign texts are installed.",
-                    bookDirection="Use the elementary reading work in your Lesson 1 pages.",
+                    "TEACH",
+                    "Decode print pairs",
+                    "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words.",
                     referenceIds=["ref-decoding"],
+                    exampleIds=["ex-print-letter-0410", "ex-print-letter-041c"],
+                    bookDirection="Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.",
+                ),
+                step(
+                    "u1-st-decoding-check",
+                    "CHECK",
+                    "One letter, two cases",
+                    "Choose the line that is a single letter.",
+                    itemIds=["u1-i-decode-pair"],
+                    exampleIds=["ex-print-letter-0410"],
+                    remediationStepId="u1-st-decoding",
                 ),
             ],
             8,
         ),
         session(
-            "u1-s-listening",
-            "Listening support",
-            ["obj-u1-letter-identity"],
+            "u1-s-pronunciation",
+            "Pronunciation support",
+            ["obj-u1-pronunciation"],
             [
                 step(
-                    "u1-st-listening",
-                    "UNAVAILABLE",
-                    "Letter audio is not installed",
-                    "Listen-record-compare exists as a tool, but this unit has no licensed, reviewer-mapped letter audio.",
-                    unavailableReason="No unit-mapped licensed audio exists for Unit 1.",
-                    bookDirection="Use any pronunciation guidance in your book. If you record yourself, the app will not score the take.",
+                    "u1-st-pronunciation",
+                    "TEACH",
+                    "Confirm sounds in your book",
+                    "This unit does not play model audio. Use the pronunciation notes in your book for each new letter. A recording you make is stored and is not scored.",
+                    referenceIds=["ref-pronunciation"],
+                    bookDirection="Read the Lesson 1 pronunciation notes in the edition you own.",
                 ),
             ],
             8,
@@ -720,7 +828,7 @@ def build() -> dict:
         session(
             "u1-s-stress",
             "Stress awareness",
-            ["obj-u1-letter-identity"],
+            ["obj-u1-stress"],
             [
                 step(
                     "u1-st-stress",
@@ -787,7 +895,7 @@ def build() -> dict:
                     "CHECK",
                     "Letter identities",
                     "Revisit any missed letter, then open the explanation it names.",
-                    itemIds=["u1-i-а-identity", "u1-i-р-not-p", "u1-i-н-not-h", "u1-i-print-pair"],
+                    itemIds=["u1-i-а-identity", "u1-i-р-not-p", "u1-i-е-identity", "u1-i-ь-not-vowel", "u1-i-print-pair", "u1-i-decode-pair"],
                     remediationStepId="u1-st-confusable",
                 ),
             ],
@@ -805,7 +913,7 @@ def build() -> dict:
                     "u2-st-orient",
                     "ORIENT",
                     "Unit 2 — Book handwriting and letter review",
-                    "Penguin-aligned Unit 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
+                    "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
                     bookDirection="Open Lesson 2 in your copy for handwritten forms and the author's pronunciation notes.",
                 ),
             ],
@@ -968,8 +1076,8 @@ def build() -> dict:
             "RECOGNITION",
             ["u1-st-confusable"],
             example_ids_by_objective.get("obj-u1-confusable", []),
-            ["u1-st-confusable-r", "u1-st-confusable-n", "u1-st-confusable-s"],
-            ["u1-i-р-not-p", "u1-i-н-not-h", "u1-i-с-not-c"],
+            ["u1-st-confusable-r", "u1-st-confusable-n", "u1-st-confusable-s", "u1-st-confusable-rest"],
+            ["u1-i-р-not-p", "u1-i-н-not-h", "u1-i-с-not-c", "u1-i-в-not-b", "u1-i-у-not-y", "u1-i-х-not-x"],
             ["u1-st-confusable"],
         ),
         objective(
@@ -980,7 +1088,7 @@ def build() -> dict:
             ["u1-st-iotated"],
             example_ids_by_objective.get("obj-u1-iotated", []),
             ["u1-st-iotated-check"],
-            ["u1-i-е-identity"],
+            ["u1-i-е-identity", "u1-i-ё-identity", "u1-i-ю-identity", "u1-i-я-identity"],
             ["u1-st-iotated"],
         ),
         objective(
@@ -990,8 +1098,8 @@ def build() -> dict:
             "RECOGNITION",
             ["u1-st-signs"],
             example_ids_by_objective.get("obj-u1-signs", []),
-            ["u1-st-signs-check", "u1-st-hard-check"],
-            ["u1-i-ь-not-vowel", "u1-i-ъ-not-vowel"],
+            ["u1-st-signs-check", "u1-st-hard-check", "u1-st-short-i-check"],
+            ["u1-i-ь-not-vowel", "u1-i-ъ-not-vowel", "u1-i-й-not-vowel"],
             ["u1-st-signs"],
         ),
         objective(
@@ -1004,6 +1112,39 @@ def build() -> dict:
             ["u1-st-print-check"],
             ["u1-i-print-pair"],
             ["u1-st-print"],
+        ),
+        objective(
+            "obj-u1-decoding",
+            1,
+            "Decode a printed letter pair",
+            "RECOGNITION",
+            ["u1-st-decoding"],
+            ["ex-print-letter-0410", "ex-print-letter-041c"],
+            ["u1-st-decoding-check"],
+            ["u1-i-decode-pair"],
+            ["u1-st-decoding"],
+        ),
+        objective(
+            "obj-u1-pronunciation",
+            1,
+            "Confirm letter sounds in the book",
+            "GUIDANCE",
+            ["u1-st-pronunciation"],
+            [],
+            [],
+            [],
+            [],
+        ),
+        objective(
+            "obj-u1-stress",
+            1,
+            "Treat stress as book-marked, not guessed",
+            "GUIDANCE",
+            ["u1-st-stress"],
+            [],
+            [],
+            [],
+            [],
         ),
         objective(
             "obj-u1-book",
@@ -1125,17 +1266,28 @@ def build() -> dict:
         ),
     ]
 
-    def development_unit(number: int, title: str, short: str, summary: str, sessions: list, prereq: list[int]) -> dict:
+    def development_unit(
+        number: int,
+        title: str,
+        short: str,
+        summary: str,
+        sessions: list,
+        prereq: list[int],
+        install_state: str = "DEVELOPMENT",
+        readiness: str = "NOT_PREPARED",
+        mapping_note: str = "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+    ) -> dict:
         return {
             "number": number,
             "id": f"unit-{number}",
             "title": title,
             "shortLabel": short,
             "topicSummary": summary,
-            "installState": "DEVELOPMENT",
+            "installState": install_state,
+            "readiness": readiness,
             "penguinLesson": number,
             "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-            "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+            "mappingNote": mapping_note,
             "prerequisiteUnitNumbers": prereq,
             "estimatedMinutes": sum(s["estimatedMinutes"] for s in sessions),
             "objectives": [o for o in objectives if o["unitNumber"] == number],
@@ -1155,9 +1307,11 @@ def build() -> dict:
             1,
             "Learning to read Russian",
             "Printed letters",
-            "Printed letter identities, print pairs, and Latin look-alikes. Development content: no reviewed words, mapped audio, or word reading.",
+            "Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending.",
             unit1_sessions,
             [],
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
         ),
         development_unit(
             2,
@@ -1177,6 +1331,7 @@ def build() -> dict:
                 "shortLabel": short,
                 "topicSummary": title,
                 "installState": "NOT_YET_INSTALLED",
+                "readiness": "NOT_PREPARED",
                 "penguinLesson": number,
                 "mappingStatus": "NOT_STARTED",
                 "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",

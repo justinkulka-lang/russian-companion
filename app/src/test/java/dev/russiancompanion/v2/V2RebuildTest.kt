@@ -57,7 +57,22 @@ class V2RebuildTest {
         assertTrue(validation.errors.joinToString(), validation.ok)
         assertEquals(30, pack.units.size)
         assertEquals("DEVELOPMENT", pack.unit(1)?.installState)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)?.readiness)
         assertEquals("DEVELOPMENT", pack.unit(2)?.installState)
+        assertEquals("NOT_PREPARED", pack.unit(2)?.readiness)
+        assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(1)?.mappingStatus)
+        val unit1Text = pack.unit(1)!!.topicSummary + pack.unit(1)!!.sessions.flatMap { it.steps }.joinToString(" ") { it.body }
+        assertFalse(unit1Text.contains("Penguin-aligned"))
+        assertFalse(unit1Text.contains("This installed unit"))
+        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
+        assertTrue(pack.unit(1)!!.sessions.none { session -> session.steps.any { it.kind == "LISTEN" } })
+        assertEquals(0, pack.admissions.mappedPronunciationAudio)
+        pack.unit(1)!!.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            assertTrue(objective.id, objective.exampleIds.size >= 2)
+            assertTrue(objective.instructionStepIds.isNotEmpty())
+            assertTrue(objective.checkItemIds.isNotEmpty())
+            assertTrue(objective.remediationStepIds.isNotEmpty())
+        }
         assertTrue(pack.units.drop(2).all { it.installState == "NOT_YET_INSTALLED" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -101,6 +116,13 @@ class V2RebuildTest {
 
         val digest = V2Validator.instructionalContentDigest(pack)
         val complete = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
+                    unit.copy(readiness = "REVIEW_APPROVED")
+                } else {
+                    unit
+                }
+            },
             linguisticReview = pack.linguisticReview.copy(
                 status = "APPROVED",
                 reviewer = "Qualified Reviewer",
@@ -250,6 +272,41 @@ class V2RebuildTest {
     }
 
     @Test
+    fun noUnitCanBeInstalledWithPendingReviewOrMapping() {
+        val source = pack()
+        listOf(1, 2).forEach { number ->
+            val installed = source.copy(
+                units = source.units.map { unit ->
+                    if (unit.number == number) {
+                        unit.copy(installState = "INSTALLED", readiness = "INSTALLABLE")
+                    } else {
+                        unit
+                    }
+                },
+            )
+            val result = V2Validator.validate(installed)
+            assertFalse(result.ok)
+            assertTrue(
+                result.errors.joinToString(),
+                result.errors.any { it.contains("Installed unit $number") && it.contains("APPROVED qualified-review record") },
+            )
+            assertTrue(
+                result.errors.joinToString(),
+                result.errors.any { it.contains("Installed unit $number") && it.contains("mapping must be APPROVED") },
+            )
+        }
+        val pendingReview = source.copy(
+            units = source.units.map { unit ->
+                if (unit.number == 1) unit.copy(installState = "INSTALLED") else unit
+            },
+        )
+        val pendingResult = V2Validator.validate(pendingReview)
+        assertTrue(
+            pendingResult.errors.any { it.contains("Unit 1") && it.contains("cannot be INSTALLED while review is pending") },
+        )
+    }
+
+    @Test
     fun installedUnitsAreRejectedWhileRequiredExperiencesAreMissing() {
         val pack = pack()
         val installed = pack.copy(
@@ -312,7 +369,7 @@ class V2RebuildTest {
         store.v2CompleteUnit(1, "2026-09-22T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 2, onboardingCompleted = true))
         assertEquals(V2UnitState.CURRENT, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
-        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.any { it.unavailableReason != null })
+        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.unavailableReason != null })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.any { it.unavailableReason != null })
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
     }
@@ -469,7 +526,11 @@ class V2RebuildTest {
     private fun installedUnitOne(source: dev.russiancompanion.v2.curriculum.V2CurriculumPack): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
         val next = source.copy(
             units = source.units.map { unit ->
-                if (unit.number == 1) unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED") else unit
+                if (unit.number == 1) {
+                    unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED", readiness = "INSTALLABLE")
+                } else {
+                    unit
+                }
             },
         )
         val digest = V2Validator.instructionalContentDigest(next)

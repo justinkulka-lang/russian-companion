@@ -33,6 +33,14 @@ internal val CLOSED_REFERENCE_CLASSIFICATIONS = setOf(
 
 internal val NON_LINGUISTIC_REFERENCE_CLASSIFICATIONS = CLOSED_REFERENCE_CLASSIFICATIONS - LINGUISTIC_REFERENCE_CLASSIFICATION
 
+internal val CLOSED_READINESS = setOf(
+    "NOT_PREPARED",
+    "CONTENT_COMPLETE_REVIEW_PENDING",
+    "REVIEW_APPROVED",
+    "MAPPING_APPROVED",
+    "INSTALLABLE",
+)
+
 internal val GOVERNANCE_PROMPT_MARKERS = listOf(
     "catalog audio",
     "unrelated catalog",
@@ -156,6 +164,7 @@ internal data class V2Unit(
     val shortLabel: String = "",
     val topicSummary: String,
     val installState: String,
+    val readiness: String = "",
     val penguinLesson: Int,
     val mappingStatus: String,
     val mappingNote: String,

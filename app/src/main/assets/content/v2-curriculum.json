@@ -602,6 +602,16 @@
       "objectiveId": "obj-u1-letter-identity"
     },
     {
+      "id": "ex-print-letter-041c",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-041c",
+      "display": "М / м",
+      "note": "М and м are the same letter in two print cases.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-print-forms"
+    },
+    {
       "id": "ex-letter-041d",
       "kind": "CONFUSABLE_PAIR",
       "letterId": "letter-041d",
@@ -879,6 +889,150 @@
       "answer": "Cyrillic С",
       "feedback": "С is a Cyrillic letter. Do not treat the Latin look-alike as the identity.",
       "objectiveId": "obj-u1-confusable",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-в-not-b",
+      "kind": "CONFUSABLE",
+      "language": "en",
+      "prompt": "This letter looks like Latin B. What is it?",
+      "promptLetter": "В",
+      "options": [
+        "Latin B",
+        "Cyrillic В",
+        "Cyrillic Б"
+      ],
+      "answer": "Cyrillic В",
+      "feedback": "В is not Latin B and it is not Cyrillic Б.",
+      "objectiveId": "obj-u1-confusable",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-у-not-y",
+      "kind": "CONFUSABLE",
+      "language": "en",
+      "prompt": "This letter looks like Latin Y. What is it?",
+      "promptLetter": "У",
+      "options": [
+        "Latin Y",
+        "Cyrillic У",
+        "Cyrillic И"
+      ],
+      "answer": "Cyrillic У",
+      "feedback": "У is a Cyrillic vowel letter, not Latin Y.",
+      "objectiveId": "obj-u1-confusable",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-х-not-x",
+      "kind": "CONFUSABLE",
+      "language": "en",
+      "prompt": "This letter looks like Latin X. What is it?",
+      "promptLetter": "Х",
+      "options": [
+        "Latin X",
+        "Cyrillic Х",
+        "Cyrillic К"
+      ],
+      "answer": "Cyrillic Х",
+      "feedback": "Х is a Cyrillic letter, not Latin X.",
+      "objectiveId": "obj-u1-confusable",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-ё-identity",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Ё",
+      "options": [
+        "Cyrillic Ё",
+        "Cyrillic Е",
+        "Cyrillic Э"
+      ],
+      "answer": "Cyrillic Ё",
+      "feedback": "Ё is its own letter. Е and Э are different letters.",
+      "objectiveId": "obj-u1-iotated",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-ю-identity",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Ю",
+      "options": [
+        "Cyrillic Ю",
+        "Cyrillic У",
+        "Cyrillic Я"
+      ],
+      "answer": "Cyrillic Ю",
+      "feedback": "Ю is an iotated vowel letter. У and Я are different letters.",
+      "objectiveId": "obj-u1-iotated",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-я-identity",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Я",
+      "options": [
+        "Cyrillic Я",
+        "Cyrillic Р",
+        "Cyrillic А"
+      ],
+      "answer": "Cyrillic Я",
+      "feedback": "Я is an iotated vowel letter. It is not Р or А.",
+      "objectiveId": "obj-u1-iotated",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-й-not-vowel",
+      "kind": "SIGN",
+      "language": "en",
+      "prompt": "What is the printed letter Й?",
+      "promptLetter": "Й",
+      "options": [
+        "A standalone vowel",
+        "A consonant letter, not a vowel",
+        "The same mark as Ь"
+      ],
+      "answer": "A consonant letter, not a vowel",
+      "feedback": "Й is not a vowel you read alone and it is not the soft sign.",
+      "objectiveId": "obj-u1-signs",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-decode-pair",
+      "kind": "PRINT_PAIR",
+      "language": "en",
+      "prompt": "Which line is one letter written in both print cases?",
+      "promptLetter": "А",
+      "options": [
+        "А / а",
+        "А / О",
+        "М / Т"
+      ],
+      "answer": "А / а",
+      "feedback": "А / а is one letter. The other lines are two different letters.",
+      "objectiveId": "obj-u1-decoding",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false
@@ -1184,11 +1338,12 @@
       "id": "unit-1",
       "title": "Learning to read Russian",
       "shortLabel": "Printed letters",
-      "topicSummary": "Printed letter identities, print pairs, and Latin look-alikes. Development content: no reviewed words, mapped audio, or word reading.",
+      "topicSummary": "Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending.",
       "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 1,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+      "mappingNote": "Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
       "prerequisiteUnitNumbers": [],
       "estimatedMinutes": 152,
       "objectives": [
@@ -1256,12 +1411,16 @@
           "practiceStepIds": [
             "u1-st-confusable-r",
             "u1-st-confusable-n",
-            "u1-st-confusable-s"
+            "u1-st-confusable-s",
+            "u1-st-confusable-rest"
           ],
           "checkItemIds": [
             "u1-i-р-not-p",
             "u1-i-н-not-h",
-            "u1-i-с-not-c"
+            "u1-i-с-not-c",
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
           ],
           "remediationStepIds": [
             "u1-st-confusable"
@@ -1285,7 +1444,10 @@
             "u1-st-iotated-check"
           ],
           "checkItemIds": [
-            "u1-i-е-identity"
+            "u1-i-е-identity",
+            "u1-i-ё-identity",
+            "u1-i-ю-identity",
+            "u1-i-я-identity"
           ],
           "remediationStepIds": [
             "u1-st-iotated"
@@ -1306,11 +1468,13 @@
           ],
           "practiceStepIds": [
             "u1-st-signs-check",
-            "u1-st-hard-check"
+            "u1-st-hard-check",
+            "u1-st-short-i-check"
           ],
           "checkItemIds": [
             "u1-i-ь-not-vowel",
-            "u1-i-ъ-not-vowel"
+            "u1-i-ъ-not-vowel",
+            "u1-i-й-not-vowel"
           ],
           "remediationStepIds": [
             "u1-st-signs"
@@ -1325,7 +1489,8 @@
             "u1-st-print"
           ],
           "exampleIds": [
-            "ex-print-letter-0410"
+            "ex-print-letter-0410",
+            "ex-print-letter-041c"
           ],
           "practiceStepIds": [
             "u1-st-print-check"
@@ -1336,6 +1501,54 @@
           "remediationStepIds": [
             "u1-st-print"
           ]
+        },
+        {
+          "id": "obj-u1-decoding",
+          "unitNumber": 1,
+          "title": "Decode a printed letter pair",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0410",
+            "ex-print-letter-041c"
+          ],
+          "practiceStepIds": [
+            "u1-st-decoding-check"
+          ],
+          "checkItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepIds": [
+            "u1-st-decoding"
+          ]
+        },
+        {
+          "id": "obj-u1-pronunciation",
+          "unitNumber": 1,
+          "title": "Confirm letter sounds in the book",
+          "kind": "GUIDANCE",
+          "instructionStepIds": [
+            "u1-st-pronunciation"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
+        },
+        {
+          "id": "obj-u1-stress",
+          "unitNumber": 1,
+          "title": "Treat stress as book-marked, not guessed",
+          "kind": "GUIDANCE",
+          "instructionStepIds": [
+            "u1-st-stress"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
         },
         {
           "id": "obj-u1-book",
@@ -1364,7 +1577,7 @@
               "id": "u1-st-orient",
               "kind": "ORIENT",
               "title": "Unit 1 — Printed letters",
-              "body": "You are at Penguin-aligned Unit 1. This development slice teaches printed letter identities with public-domain letter forms. It is not a finished production unit: reviewed example words, mapped audio, and word reading are not installed.",
+              "body": "This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Qualified review is still pending.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -1481,7 +1694,7 @@
               "id": "u1-st-cons",
               "kind": "TEACH",
               "title": "Low-confusion consonants",
-              "body": "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Letter-name audio is not installed.",
+              "body": "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Confirm each spoken sound in your book. This unit does not play model audio.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print"
@@ -1492,7 +1705,7 @@
                 "ex-letter-0422",
                 "ex-letter-0411"
               ],
-              "unavailableReason": "Licensed letter-name audio has not been intake-reviewed for this unit.",
+              "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
@@ -1598,6 +1811,28 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": "u1-st-confusable"
+            },
+            {
+              "id": "u1-st-confusable-rest",
+              "kind": "CHECK",
+              "title": "В, У, and Х",
+              "body": "Identity check for the remaining look-alikes.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-в-not-b",
+                "u1-i-у-not-y",
+                "u1-i-х-not-x"
+              ],
+              "exampleIds": [
+                "ex-letter-0412",
+                "ex-letter-0423",
+                "ex-letter-0425"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-confusable"
             }
           ]
         },
@@ -1631,15 +1866,21 @@
             {
               "id": "u1-st-iotated-check",
               "kind": "CHECK",
-              "title": "Identify Е",
+              "title": "Identify Е, Ё, Ю, and Я",
               "body": "Identity check.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [
-                "u1-i-е-identity"
+                "u1-i-е-identity",
+                "u1-i-ё-identity",
+                "u1-i-ю-identity",
+                "u1-i-я-identity"
               ],
               "exampleIds": [
-                "ex-letter-0415"
+                "ex-letter-0415",
+                "ex-letter-0401",
+                "ex-letter-042e",
+                "ex-letter-042f"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -1711,6 +1952,24 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": "u1-st-signs"
+            },
+            {
+              "id": "u1-st-short-i-check",
+              "kind": "CHECK",
+              "title": "Й is not a vowel",
+              "body": "Identity check.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-й-not-vowel"
+              ],
+              "exampleIds": [
+                "ex-letter-0419"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-signs"
             }
           ]
         },
@@ -1765,46 +2024,69 @@
           "title": "Staged decoding",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-letter-identity"
+            "obj-u1-decoding"
           ],
           "steps": [
             {
               "id": "u1-st-decoding",
-              "kind": "UNAVAILABLE",
-              "title": "Word reading is not installed",
-              "body": "Decoding in this development slice stays at letter and print-pair level. Reviewed example words are not installed.",
+              "kind": "TEACH",
+              "title": "Decode print pairs",
+              "body": "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-decoding"
               ],
               "itemIds": [],
-              "exampleIds": [],
-              "unavailableReason": "No reviewed Russian example words or sign texts are installed.",
-              "bookDirection": "Use the elementary reading work in your Lesson 1 pages.",
+              "exampleIds": [
+                "ex-print-letter-0410",
+                "ex-print-letter-041c"
+              ],
+              "unavailableReason": null,
+              "bookDirection": "Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.",
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u1-st-decoding-check",
+              "kind": "CHECK",
+              "title": "One letter, two cases",
+              "body": "Choose the line that is a single letter.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-decode-pair"
+              ],
+              "exampleIds": [
+                "ex-print-letter-0410"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-decoding"
             }
           ]
         },
         {
-          "id": "u1-s-listening",
-          "title": "Listening support",
+          "id": "u1-s-pronunciation",
+          "title": "Pronunciation support",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-letter-identity"
+            "obj-u1-pronunciation"
           ],
           "steps": [
             {
-              "id": "u1-st-listening",
-              "kind": "UNAVAILABLE",
-              "title": "Letter audio is not installed",
-              "body": "Listen-record-compare exists as a tool, but this unit has no licensed, reviewer-mapped letter audio.",
+              "id": "u1-st-pronunciation",
+              "kind": "TEACH",
+              "title": "Confirm sounds in your book",
+              "body": "This unit does not play model audio. Use the pronunciation notes in your book for each new letter. A recording you make is stored and is not scored.",
               "dominantAction": "Continue",
-              "referenceIds": [],
+              "referenceIds": [
+                "ref-pronunciation"
+              ],
               "itemIds": [],
               "exampleIds": [],
-              "unavailableReason": "No unit-mapped licensed audio exists for Unit 1.",
-              "bookDirection": "Use any pronunciation guidance in your book. If you record yourself, the app will not score the take.",
+              "unavailableReason": null,
+              "bookDirection": "Read the Lesson 1 pronunciation notes in the edition you own.",
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -1815,7 +2097,7 @@
           "title": "Stress awareness",
           "estimatedMinutes": 6,
           "objectiveIds": [
-            "obj-u1-letter-identity"
+            "obj-u1-stress"
           ],
           "steps": [
             {
@@ -1932,8 +2214,10 @@
               "itemIds": [
                 "u1-i-а-identity",
                 "u1-i-р-not-p",
-                "u1-i-н-not-h",
-                "u1-i-print-pair"
+                "u1-i-е-identity",
+                "u1-i-ь-not-vowel",
+                "u1-i-print-pair",
+                "u1-i-decode-pair"
               ],
               "exampleIds": [],
               "unavailableReason": null,
@@ -1960,6 +2244,7 @@
       "shortLabel": "Letter review",
       "topicSummary": "Unit 1 letter review plus book-directed handwriting and pronunciation. Development content: handwriting images and mapped audio are not installed.",
       "installState": "DEVELOPMENT",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 2,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
       "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
@@ -2025,7 +2310,7 @@
               "id": "u2-st-orient",
               "kind": "ORIENT",
               "title": "Unit 2 — Book handwriting and letter review",
-              "body": "Penguin-aligned Unit 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
+              "body": "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -2292,6 +2577,7 @@
       "shortLabel": "Everyday phrases",
       "topicSummary": "Everyday phrases, naming things, basic grammar, and gender",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 3,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2310,6 +2596,7 @@
       "shortLabel": "Verbs and cases",
       "topicSummary": "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 4,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2328,6 +2615,7 @@
       "shortLabel": "Questions",
       "topicSummary": "Questions, prepositional case, and indeclinable nouns",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 5,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2346,6 +2634,7 @@
       "shortLabel": "Possession",
       "topicSummary": "Possession, going places, accusative case, and personal names",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 6,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2364,6 +2653,7 @@
       "shortLabel": "Adjectives",
       "topicSummary": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 7,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2382,6 +2672,7 @@
       "shortLabel": "Plurals",
       "topicSummary": "Plurals, first spelling rules, existence questions, and buying things",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 8,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2400,6 +2691,7 @@
       "shortLabel": "Numbers",
       "topicSummary": "Numbers, genitive singular and plural, quantities, and money",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 9,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2418,6 +2710,7 @@
       "shortLabel": "Having and absence",
       "topicSummary": "Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 10,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2436,6 +2729,7 @@
       "shortLabel": "Past tense",
       "topicSummary": "Past tense and reflexive verbs",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 11,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2454,6 +2748,7 @@
       "shortLabel": "Future and dative",
       "topicSummary": "Future, aspect introduction, dative case, additional spelling rules, and prepositional plural",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 12,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2472,6 +2767,7 @@
       "shortLabel": "Aspect in the past",
       "topicSummary": "Aspect in the past, tense use, infinitive aspect, and reported speech",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 13,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2490,6 +2786,7 @@
       "shortLabel": "Aspect in the future",
       "topicSummary": "Aspect in the future and impersonal constructions",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 14,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2508,6 +2805,7 @@
       "shortLabel": "Requests",
       "topicSummary": "Requests, the imperative, and consolidation of aspect use",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 15,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2526,6 +2824,7 @@
       "shortLabel": "Instrumental",
       "topicSummary": "Instrumental case, selected demonstratives, and surname declension",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 16,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2544,6 +2843,7 @@
       "shortLabel": "Time and dates",
       "topicSummary": "Time, date, age, ordinal numbers, months, and years",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 17,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2562,6 +2862,7 @@
       "shortLabel": "Comparison",
       "topicSummary": "Comparative, superlative, and relative clauses",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 18,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2580,6 +2881,7 @@
       "shortLabel": "Conditionals",
       "topicSummary": "Conditional, obligation, and prefixes",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 19,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2598,6 +2900,7 @@
       "shortLabel": "Motion verbs",
       "topicSummary": "Verbs of motion: going, running, and bringing",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 20,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2616,6 +2919,7 @@
       "shortLabel": "Purpose",
       "topicSummary": "Further possession and purpose",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 21,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2634,6 +2938,7 @@
       "shortLabel": "Number forms",
       "topicSummary": "Number declension, both, collective numerals, and fractions",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 22,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2652,6 +2957,7 @@
       "shortLabel": "Duration",
       "topicSummary": "Time expressions covering when and duration",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 23,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2670,6 +2976,7 @@
       "shortLabel": "Negation",
       "topicSummary": "Negation and placement of the particle не",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 24,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2688,6 +2995,7 @@
       "shortLabel": "Names and politeness",
       "topicSummary": "Diminutives, proper names, and politeness",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 25,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2706,6 +3014,7 @@
       "shortLabel": "Word order",
       "topicSummary": "Indefinite pronouns, word order, and letter writing",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 26,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2724,6 +3033,7 @@
       "shortLabel": "Participles",
       "topicSummary": "Participles: types and stress",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 27,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2742,6 +3052,7 @@
       "shortLabel": "Verbal adverbs",
       "topicSummary": "Verbal adverbs",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 28,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2760,6 +3071,7 @@
       "shortLabel": "Bookish style",
       "topicSummary": "Bookish style, active participles, punctuation, and short-form adjectives",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 29,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
@@ -2778,6 +3090,7 @@
       "shortLabel": "Particles",
       "topicSummary": "Abbreviations, names of Russian letters, and particles",
       "installState": "NOT_YET_INSTALLED",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 30,
       "mappingStatus": "NOT_STARTED",
       "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",

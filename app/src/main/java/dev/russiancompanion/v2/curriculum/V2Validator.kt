@@ -36,6 +36,7 @@ internal object V2Validator {
                 "DEVELOPMENT" -> validateDevelopment(pack, unit, errors)
                 "NOT_YET_INSTALLED" -> validateUninstalled(unit, errors)
             }
+            validateReadiness(pack, unit, errors)
         }
         validateReachableSessions(pack, errors)
         pack.items.forEach { item -> validateItem(pack, item, errors) }
@@ -148,9 +149,12 @@ internal object V2Validator {
         if (unit.mappingStatus != "APPROVED") {
             errors += "Installed unit ${unit.number} mapping must be APPROVED"
         }
+        if (unit.readiness != "INSTALLABLE") {
+            errors += "Installed unit ${unit.number} readiness must be INSTALLABLE"
+        }
         if (unit.sessions.isEmpty()) errors += "Installed unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Installed unit ${unit.number} has no objectives"
-        if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" } }) {
+        if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() } }) {
             errors += "Installed unit ${unit.number} still has unavailable required experiences"
         }
         if (pack.admissions.handwritingAssets == 0 && unit.number == 2) {
@@ -161,6 +165,62 @@ internal object V2Validator {
         }
         validateInstalledReviewRecords(pack, unit, errors)
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+        if (unit.objectives.filter { it.kind == "RECOGNITION" }.any { it.exampleIds.size < 2 }) {
+            errors += "Installed unit ${unit.number} has a recognition objective with fewer than two examples"
+        }
+    }
+
+    private fun validateReadiness(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
+        if (unit.readiness.isBlank()) {
+            errors += "Unit ${unit.number} is missing a readiness"
+            return
+        }
+        if (unit.readiness !in CLOSED_READINESS) {
+            errors += "Unit ${unit.number} has unknown readiness ${unit.readiness}"
+            return
+        }
+        when (unit.readiness) {
+            "NOT_PREPARED" -> {
+                if (unit.installState == "INSTALLED") {
+                    errors += "Unit ${unit.number} cannot be INSTALLED while readiness is NOT_PREPARED"
+                }
+            }
+            "CONTENT_COMPLETE_REVIEW_PENDING" -> {
+                if (unit.installState == "INSTALLED") {
+                    errors += "Unit ${unit.number} cannot be INSTALLED while review is pending"
+                }
+                if (pack.linguisticReview.status == "APPROVED") {
+                    errors += "Unit ${unit.number} readiness is stale because review is APPROVED"
+                }
+                if (unit.mappingStatus == "APPROVED") {
+                    errors += "Unit ${unit.number} readiness cannot stay review-pending after mapping approval"
+                }
+                if (unit.sessions.any { session ->
+                        session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() }
+                    }
+                ) {
+                    errors += "Unit ${unit.number} is not content-complete while a required experience is unavailable"
+                }
+                if (unit.objectives.filter { it.kind == "RECOGNITION" }.any { it.exampleIds.size < 2 }) {
+                    errors += "Unit ${unit.number} content-complete claim has a recognition objective with fewer than two examples"
+                }
+            }
+            "REVIEW_APPROVED" -> {
+                if (pack.linguisticReview.status != "APPROVED") {
+                    errors += "Unit ${unit.number} readiness claims review approval that is not recorded"
+                }
+            }
+            "MAPPING_APPROVED" -> {
+                if (unit.mappingStatus != "APPROVED") {
+                    errors += "Unit ${unit.number} readiness claims mapping approval that is not recorded"
+                }
+            }
+            "INSTALLABLE" -> {
+                if (pack.linguisticReview.status != "APPROVED" || unit.mappingStatus != "APPROVED") {
+                    errors += "Unit ${unit.number} INSTALLABLE readiness requires approved review and mapping"
+                }
+            }
+        }
     }
 
     private fun validateInstalledReviewRecords(
