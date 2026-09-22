@@ -793,6 +793,16 @@ internal class LocalStore private constructor(
             return store
         }
 
+        fun openNamed(context: Context, name: String): LocalStore {
+            val appContext = context.applicationContext
+            val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
+                .build()
+            val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
+            store.applySeed(null)
+            return store
+        }
+
         internal fun readPackagedSeed(context: Context): String? {
             return readAssetText(context, SEED_ASSET)
         }

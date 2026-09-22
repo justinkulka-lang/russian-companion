@@ -1,6 +1,5 @@
 package dev.russiancompanion.v2.ui
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -8,7 +7,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -36,12 +34,16 @@ import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.advancementDecision
-import dev.russiancompanion.v2.curriculum.canOpenUnit
+import dev.russiancompanion.v2.curriculum.currentObjective
+import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
+import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
 import dev.russiancompanion.v2.curriculum.session
+import dev.russiancompanion.v2.curriculum.todaysSession
+import dev.russiancompanion.v2.curriculum.topicLabel
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.unitState
 import dev.russiancompanion.v2.curriculum.visibleReferences
@@ -180,9 +182,12 @@ internal fun V2TodayScreen(
     target: V2ContinueTarget,
     onTab: (V2Tab) -> Unit,
     onContinue: (V2ContinueTarget) -> Unit,
-    onSettings: () -> Unit,
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
+    val objective = unit?.let { currentObjective(pack, it, learner) }
+    val today = unit?.let { todaysSession(it, learner) }
+    val recorded = unit?.let { recordedSessionCount(it, learner) } ?: 0
+    var showPlan by remember { mutableStateOf(false) }
     V2Scaffold(
         title = "Today",
         tab = V2Tab.TODAY,
@@ -198,19 +203,36 @@ internal fun V2TodayScreen(
             }
         },
     ) {
-        Text(unit?.title ?: "Current unit unavailable", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-today-unit" })
-        V2Status("Penguin-aligned Unit ${learner.currentUnitNumber}")
+        Text(
+            "Unit ${learner.currentUnitNumber} · ${unit?.topicLabel() ?: "Unavailable"}",
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier.semantics { heading(); testTag = "v2-today-unit" },
+        )
+        V2Status(unit?.let { installLabel(it) } ?: "Unavailable")
+        Text(objective?.title ?: "No current objective", modifier = Modifier.semantics { testTag = "v2-today-objective" })
+        Spacer(Modifier.height(12.dp))
+        Text(target.title, style = MaterialTheme.typography.titleLarge)
         Text(target.reason)
         Spacer(Modifier.height(12.dp))
-        Text("Today’s next action", style = MaterialTheme.typography.titleMedium)
-        Text(target.title, style = MaterialTheme.typography.titleLarge)
-        Spacer(Modifier.height(16.dp))
-        unit?.sessions.orEmpty().forEach { session ->
-            val done = session.steps.all { it.id in learner.completedStepIds }
-            V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
+        if (today != null) {
+            Text("Today’s session", style = MaterialTheme.typography.titleMedium)
+            Text("${today.title} · ${today.estimatedMinutes} min of a ${learner.dailyMinutes}-minute commitment")
+        } else {
+            Text("Today’s session is complete for this unit.")
         }
-        Spacer(Modifier.height(16.dp))
-        V2SecondaryButton("Settings and data", onSettings)
+        V2Status("$recorded of ${unit?.sessions?.size ?: 0} sessions recorded")
+        if (unit != null) {
+            V2SecondaryButton(
+                if (showPlan) "Hide full unit plan" else "Show full unit plan",
+                { showPlan = !showPlan },
+            )
+            if (showPlan) {
+                unit.sessions.forEach { session ->
+                    val done = session.steps.all { it.id in learner.completedStepIds }
+                    V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
+                }
+            }
+        }
     }
 }
 
@@ -224,7 +246,7 @@ internal fun V2CourseScreen(
     V2LazyScaffold(title = "Course", tab = V2Tab.COURSE, onTab = onTab) {
         item {
             Text(
-                "Thirty Penguin-aligned units. Unfinished units stay labeled Not yet installed and have no invented lesson body.",
+                "Thirty Penguin-aligned units. Development units are incomplete. Later units stay Not yet installed.",
                 modifier = Modifier.padding(bottom = 12.dp),
             )
         }
@@ -234,18 +256,20 @@ internal fun V2CourseScreen(
                 V2UnitState.CURRENT -> "Current"
                 V2UnitState.AVAILABLE -> "Available"
                 V2UnitState.COMPLETED -> "Completed"
-                V2UnitState.LOCKED -> "Locked by prerequisite"
+                V2UnitState.LOCKED -> "Locked"
                 V2UnitState.NOT_YET_INSTALLED -> "Not yet installed"
             }
-            V2Card(
-                title = "Unit ${unit.number} · ${unit.title}",
-                body = unit.topicSummary,
-                status = status,
-                onClick = if (canOpenUnit(state) || state == V2UnitState.NOT_YET_INSTALLED || state == V2UnitState.LOCKED) {
-                    { onOpenUnit(unit.number) }
-                } else {
-                    null
-                },
+            val progress = if (unit.sessions.isEmpty()) {
+                installLabel(unit)
+            } else {
+                "${recordedSessionCount(unit, learner)}/${unit.sessions.size}"
+            }
+            V2UnitRow(
+                number = unit.number,
+                topic = unit.topicLabel(),
+                state = status,
+                progress = progress,
+                onClick = { onOpenUnit(unit.number) },
             )
         }
     }
@@ -265,7 +289,11 @@ internal fun V2UnitScreen(
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
     V2Scaffold(title = "Unit ${unit.number}", tab = V2Tab.COURSE, onTab = onTab, onBack = onBack) {
-        Text(unit.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading() })
+        Text(
+            unit.topicLabel(),
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier.semantics { heading(); testTag = "v2-unit-heading" },
+        )
         V2Status(
             when (state) {
                 V2UnitState.NOT_YET_INSTALLED -> "Not yet installed"
@@ -275,26 +303,19 @@ internal fun V2UnitScreen(
                 V2UnitState.COMPLETED -> "Completed"
             },
         )
-        Text(unit.topicSummary)
-        V2Status(unit.mappingNote)
+        V2Status(installLabel(unit))
         if (state == V2UnitState.NOT_YET_INSTALLED) {
             Text("This unit is on the map so you can see the Penguin sequence. It has no lesson content, audio, or completion path.")
             return@V2Scaffold
         }
         if (state == V2UnitState.LOCKED) {
-            Text("Finish the previous installed unit before this one opens as current work.")
+            Text("Finish the previous openable unit before this one opens as current work.")
             return@V2Scaffold
         }
-        Text("Learning objectives", style = MaterialTheme.typography.titleMedium)
-        unit.objectives.forEach { objective ->
-            val label = when (objectiveState(objective, learner, pack)) {
-                dev.russiancompanion.v2.curriculum.V2ObjectiveState.NOT_STARTED -> "Not started"
-                dev.russiancompanion.v2.curriculum.V2ObjectiveState.LEARNING -> "Learning"
-                dev.russiancompanion.v2.curriculum.V2ObjectiveState.REVIEW_REQUIRED -> "Review required"
-                dev.russiancompanion.v2.curriculum.V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS -> "Demonstrated in app checks"
-                dev.russiancompanion.v2.curriculum.V2ObjectiveState.COMPLETED_BY_SELF_ATTESTATION_ONLY -> "Completed by self-attestation only"
-            }
-            V2Status("${objective.title} — $label")
+        if (unit.number == 1) {
+            Text("Letter board", style = MaterialTheme.typography.titleMedium)
+            V2LetterBoard(pack.letters)
+            Spacer(Modifier.height(12.dp))
         }
         Text("Sessions", style = MaterialTheme.typography.titleMedium)
         unit.sessions.forEach { session ->
@@ -366,6 +387,13 @@ internal fun V2SessionScreen(
         }
         step.itemIds.forEach { itemId ->
             val item = pack.item(itemId) ?: return@forEach
+            item.promptLetter?.let { glyph ->
+                Text(
+                    glyph,
+                    style = MaterialTheme.typography.displayLarge,
+                    modifier = Modifier.semantics { testTag = "v2-prompt-letter" },
+                )
+            }
             Text(item.prompt, style = MaterialTheme.typography.titleMedium)
             item.options.forEach { option ->
                 androidx.compose.foundation.layout.Row(
@@ -414,50 +442,40 @@ internal fun V2PracticeScreen(
     onAlphabet: () -> Unit,
 ) {
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {
-        Text("Tools for the current and previous units only. Unmapped catalog audio is not a practice library.")
-        V2Card("Letter recognition", "Browse the Unit 1 letter sequence.", "Available", onAlphabet)
-        V2Card("Sound-symbol review", "English notes pending review. No invented words.", "Available", onAlphabet)
-        V2Card("Staged decoding", "Letter and print-pair level only.", "Limited", onAlphabet)
-        V2Card(
-            "Licensed model playback",
-            "No reviewer-mapped audio is installed for Units 1–2.",
-            "Unavailable",
-        )
-        V2Card(
-            "Listen-record-compare",
-            "The recorder exists, but this unit has no mapped model. The app will not score pronunciation.",
-            "Unavailable for current unit",
-        )
-        V2Card("Current-unit review", "Reopen Unit ${learner.currentUnitNumber} checks from Course.", "Available") { onTab(V2Tab.COURSE) }
-        V2Card("Manual self-assessment", "Book and Anki work stay self-attested.", "Available") { onTab(V2Tab.PROGRESS) }
-        V2Status("Bookmarks and tutor marks are saved from inside a session.")
+        Text("Alphabet Lab is the visual practice surface for printed letters.")
+        V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
+        V2Status("Mapped audio and handwriting recognition are not installed in this development slice.")
+        V2SecondaryButton("Reopen current-unit checks", { onTab(V2Tab.COURSE) })
     }
 }
 
 @Composable
 internal fun V2AlphabetLabScreen(pack: V2CurriculumPack, learner: V2LearnerView, onBack: () -> Unit) {
-    val groups = pack.letters.groupBy { it.group }
-    V2LazyScaffold(title = "Alphabet Lab", tab = null, onTab = {}, onBack = onBack) {
-        item {
-            Text(
-                if (learner.transliterationEnabled) {
-                    "Transliteration support is on. Turn it off in Settings when print recognition is stable."
-                } else {
-                    "Transliteration is off."
-                },
-                modifier = Modifier.padding(bottom = 8.dp),
-            )
+    var selectedId by remember { mutableStateOf<String?>(null) }
+    val selected = pack.letters.firstOrNull { it.id == selectedId }
+    val confusable = pack.letters.filter { !it.latinLookalike.isNullOrBlank() }
+    V2Scaffold(title = "Alphabet Lab", tab = null, onTab = {}, onBack = onBack) {
+        Text(
+            if (learner.transliterationEnabled) {
+                "Transliteration support is on. Turn it off in Settings when print recognition is stable."
+            } else {
+                "Transliteration is off."
+            },
+            modifier = Modifier.padding(bottom = 8.dp),
+        )
+        Text("Confusable forms", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { heading() })
+        confusable.forEach { letter ->
+            V2ConfusableRow(letter.uppercase, letter.latinLookalike.orEmpty())
         }
-        groups.forEach { (group, letters) ->
-            item { Text(group, style = MaterialTheme.typography.titleMedium) }
-            items(letters, key = { it.id }) { letter ->
-                V2Card(
-                    title = "${letter.uppercase} ${letter.lowercase}",
-                    body = letter.englishNote,
-                    status = "Pending linguistic review · no example word · no audio",
-                )
-            }
+        Spacer(Modifier.height(12.dp))
+        Text("Letter board", style = MaterialTheme.typography.titleMedium)
+        V2LetterBoard(pack.letters, selectedId) { selectedId = it.id }
+        selected?.let { letter ->
+            V2Status("${letter.uppercase} ${letter.lowercase} · ${letter.group} · pending review")
         }
+        Spacer(Modifier.height(12.dp))
+        Text("Print pairs", style = MaterialTheme.typography.titleMedium)
+        V2PrintPairGrid(pack.letters)
     }
 }
 
@@ -556,6 +574,11 @@ internal fun V2SettingsScreen(
         if (appearanceSaveFailed) V2Status("Appearance was not saved.")
         Text("Transliteration", style = MaterialTheme.typography.titleMedium)
         CompanionToggle("Show transliteration support notes", transliterationEnabled, onTransliteration)
+        Text("Limits", style = MaterialTheme.typography.titleMedium)
+        V2Status("Unrelated catalog audio is not assigned to Units 1–2.")
+        V2Status("The app does not score handwriting or pronunciation.")
+        V2Status("Handwriting study uses your book until verified images exist.")
+        V2Status("Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar.")
         Text("Secondary tools", style = MaterialTheme.typography.titleMedium)
         V2SecondaryButton("Attributions and licenses", onAttributions)
         V2Status("Build identity and storage diagnostics stay here, not on Today.")

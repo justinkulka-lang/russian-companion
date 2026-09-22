@@ -4,16 +4,20 @@ import android.content.Context
 import android.graphics.Bitmap
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.test.captureToImage
+import androidx.compose.ui.test.getBoundsInRoot
+import androidx.compose.ui.test.getUnclippedBoundsInRoot
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.unit.dp
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.ui.V2App
 import org.junit.After
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
@@ -52,13 +56,18 @@ class VisualReviewCaptureTest {
         capture("04-today")
         compose.onNodeWithText("Course").performClick()
         capture("05-course")
-        compose.onNodeWithText("Unit 1 · Learning to read Russian", substring = true).performClick()
+        compose.onNodeWithText("Unit 1 · Printed letters", substring = true).performClick()
+        assertUnclipped("v2-back")
+        assertUnclipped("v2-unit-heading")
         capture("06-unit-1")
         compose.onNodeWithText("Back").performClick()
-        compose.onNodeWithText("Unit 2 · Handwriting and additional pronunciation", substring = true).performClick()
+        compose.onNodeWithText("Unit 2 · Letter review", substring = true).performClick()
         capture("07-unit-2")
         compose.onNodeWithText("Practice").performClick()
         capture("08-practice")
+        compose.onNodeWithText("Alphabet Lab").performClick()
+        capture("08b-alphabet-lab")
+        compose.onNodeWithText("Back").performClick()
         compose.onNodeWithText("Reference").performClick()
         capture("09-reference")
         compose.onNodeWithText("Progress").performClick()
@@ -76,9 +85,22 @@ class VisualReviewCaptureTest {
         val pack = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
+        assertUnclipped("v2-today-unit")
         capture("12-today-large-font")
         compose.onNodeWithText("Course").performClick()
         capture("13-course-large-font")
+        compose.onNodeWithText("Unit 1 · Printed letters", substring = true).performClick()
+        assertUnclipped("v2-back")
+        assertUnclipped("v2-unit-heading")
+    }
+
+    private fun assertUnclipped(tag: String) {
+        val unclipped = compose.onNodeWithTag(tag).getUnclippedBoundsInRoot()
+        val visible = compose.onNodeWithTag(tag).getBoundsInRoot()
+        assertTrue(tag, unclipped.left >= 0.dp)
+        assertTrue(tag, visible.left >= 0.dp)
+        assertEquals(tag, unclipped.left, visible.left)
+        assertEquals(tag, unclipped.top, visible.top)
     }
 
     private fun capture(name: String) {

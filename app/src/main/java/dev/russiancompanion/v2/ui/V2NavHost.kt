@@ -69,7 +69,6 @@ internal fun V2NavHost(
                             navController.navigate(V2SessionRoute(target.sessionId, target.stepIndex))
                         }
                     },
-                    onSettings = { navController.navigate(V2SettingsRoute) },
                 )
             }
         }

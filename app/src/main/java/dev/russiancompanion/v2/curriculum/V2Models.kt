@@ -2,6 +2,41 @@ package dev.russiancompanion.v2.curriculum
 
 import kotlinx.serialization.Serializable
 
+internal val CLOSED_REVIEW_STATES = setOf(
+    "PENDING_QUALIFIED_REVIEW",
+    "APPROVED",
+    "REJECTED",
+    "NOT_REQUIRED",
+)
+
+internal val CLOSED_INSTALL_STATES = setOf(
+    "DEVELOPMENT",
+    "INSTALLED",
+    "NOT_YET_INSTALLED",
+)
+
+internal val CLOSED_ITEM_KINDS = setOf(
+    "LETTER_IDENTITY",
+    "PRINT_PAIR",
+    "CONFUSABLE",
+    "SIGN",
+)
+
+internal val GOVERNANCE_PROMPT_MARKERS = listOf(
+    "catalog audio",
+    "unrelated catalog",
+    "score your handwriting",
+    "score pronunciation",
+    "scores pronunciation",
+    "where do you study handwritten",
+    "where handwriting study",
+    "lesson 3",
+    "sources and scoring",
+    "scoring limits",
+    "may unit 2 introduce",
+    "why unused catalog",
+)
+
 @Serializable
 internal data class V2CurriculumPack(
     val schemaVersion: Int,
@@ -10,7 +45,9 @@ internal data class V2CurriculumPack(
     val publicReleaseEligible: Boolean,
     val linguisticReview: V2ReviewRecord,
     val sources: List<V2SourceRecord>,
+    val rights: List<V2RightsRecord> = emptyList(),
     val letters: List<V2Letter>,
+    val examples: List<V2Example> = emptyList(),
     val items: List<V2CheckItem>,
     val references: List<V2ReferenceEntry>,
     val units: List<V2Unit>,
@@ -22,6 +59,9 @@ internal data class V2ReviewRecord(
     val id: String,
     val status: String,
     val reviewer: String? = null,
+    val packVersion: Int? = null,
+    val reviewedContentDigest: String? = null,
+    val curriculumMappingId: String? = null,
     val notes: String? = null,
 )
 
@@ -35,6 +75,14 @@ internal data class V2SourceRecord(
 )
 
 @Serializable
+internal data class V2RightsRecord(
+    val id: String,
+    val sourceId: String,
+    val license: String,
+    val permitsAppUse: Boolean,
+)
+
+@Serializable
 internal data class V2Letter(
     val id: String,
     val uppercase: String,
@@ -45,6 +93,19 @@ internal data class V2Letter(
     val reviewStatus: String,
     val audioAssetId: String? = null,
     val exampleWordId: String? = null,
+    val latinLookalike: String? = null,
+)
+
+@Serializable
+internal data class V2Example(
+    val id: String,
+    val kind: String,
+    val letterId: String,
+    val display: String,
+    val note: String,
+    val sourceId: String,
+    val reviewStatus: String,
+    val objectiveId: String,
 )
 
 @Serializable
@@ -53,6 +114,7 @@ internal data class V2CheckItem(
     val kind: String,
     val language: String,
     val prompt: String,
+    val promptLetter: String? = null,
     val options: List<String>,
     val answer: String,
     val feedback: String,
@@ -79,6 +141,7 @@ internal data class V2Unit(
     val number: Int,
     val id: String,
     val title: String,
+    val shortLabel: String = "",
     val topicSummary: String,
     val installState: String,
     val penguinLesson: Int,
@@ -97,6 +160,11 @@ internal data class V2Objective(
     val unitNumber: Int,
     val title: String,
     val kind: String,
+    val instructionStepIds: List<String> = emptyList(),
+    val exampleIds: List<String> = emptyList(),
+    val practiceStepIds: List<String> = emptyList(),
+    val checkItemIds: List<String> = emptyList(),
+    val remediationStepIds: List<String> = emptyList(),
 )
 
 @Serializable
@@ -117,6 +185,7 @@ internal data class V2Step(
     val dominantAction: String = "Continue",
     val referenceIds: List<String> = emptyList(),
     val itemIds: List<String> = emptyList(),
+    val exampleIds: List<String> = emptyList(),
     val unavailableReason: String? = null,
     val bookDirection: String? = null,
     val companionDirection: String? = null,
@@ -139,6 +208,9 @@ internal data class V2Admissions(
     val penguinProseAssets: Int,
     val catalogAudioBoundToUnits: Int,
     val unverifiedExampleWords: Int,
+    val futureRussianItems: Int = 0,
+    val handwritingAssets: Int = 0,
+    val mappedPronunciationAudio: Int = 0,
 )
 
 internal enum class V2UnitState {
@@ -170,11 +242,19 @@ internal data class V2Validation(
 
 internal fun V2Unit.installed(): Boolean = installState == "INSTALLED"
 
+internal fun V2Unit.openable(): Boolean = installState == "INSTALLED" || installState == "DEVELOPMENT"
+
+internal fun V2Unit.topicLabel(): String = shortLabel.ifBlank { title }
+
 internal fun V2CurriculumPack.unit(number: Int): V2Unit? = units.firstOrNull { it.number == number }
 
 internal fun V2CurriculumPack.item(id: String): V2CheckItem? = items.firstOrNull { it.id == id }
 
+internal fun V2CurriculumPack.example(id: String): V2Example? = examples.firstOrNull { it.id == id }
+
 internal fun V2CurriculumPack.reference(id: String): V2ReferenceEntry? = references.firstOrNull { it.id == id }
+
+internal fun V2CurriculumPack.letter(id: String): V2Letter? = letters.firstOrNull { it.id == id }
 
 internal fun V2CurriculumPack.session(id: String): V2Session? {
     units.forEach { unit ->
@@ -190,4 +270,9 @@ internal fun V2CurriculumPack.step(id: String): Pair<V2Session, V2Step>? {
         }
     }
     return null
+}
+
+internal fun V2CheckItem.isGovernancePrompt(): Boolean {
+    val haystack = "$id $kind $prompt $feedback".lowercase()
+    return GOVERNANCE_PROMPT_MARKERS.any { it in haystack }
 }

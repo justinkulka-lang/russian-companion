@@ -32,7 +32,7 @@ internal fun unitState(
     unit: V2Unit,
     learner: V2LearnerView,
 ): V2UnitState {
-    if (!unit.installed()) return V2UnitState.NOT_YET_INSTALLED
+    if (!unit.openable()) return V2UnitState.NOT_YET_INSTALLED
     if (unit.number in learner.completedUnitNumbers) return V2UnitState.COMPLETED
     if (unit.number == learner.currentUnitNumber) return V2UnitState.CURRENT
     val prereqs = unit.prerequisiteUnitNumbers
@@ -41,6 +41,36 @@ internal fun unitState(
     } else {
         V2UnitState.LOCKED
     }
+}
+
+internal fun installLabel(unit: V2Unit): String = when (unit.installState) {
+    "INSTALLED" -> "Installed"
+    "DEVELOPMENT" -> "In development"
+    else -> "Not yet installed"
+}
+
+internal fun todaysSession(unit: V2Unit, learner: V2LearnerView): V2Session? {
+    return unit.sessions.firstOrNull { session ->
+        session.steps.any { it.id !in learner.completedStepIds }
+    }
+}
+
+internal fun currentObjective(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    learner: V2LearnerView,
+): V2Objective? {
+    return unit.objectives.firstOrNull { objective ->
+        objectiveState(objective, learner, pack) in setOf(
+            V2ObjectiveState.NOT_STARTED,
+            V2ObjectiveState.LEARNING,
+            V2ObjectiveState.REVIEW_REQUIRED,
+        )
+    } ?: unit.objectives.lastOrNull()
+}
+
+internal fun recordedSessionCount(unit: V2Unit, learner: V2LearnerView): Int {
+    return unit.sessions.count { session -> session.steps.all { it.id in learner.completedStepIds } }
 }
 
 internal fun canOpenUnit(state: V2UnitState): Boolean {
@@ -56,7 +86,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         unitNumber = learner.currentUnitNumber,
         unavailable = true,
     )
-    if (!unit.installed()) {
+    if (!unit.openable()) {
         return V2ContinueTarget(
             title = "Not yet installed",
             reason = "Unit ${unit.number} is on the map but has no lesson body.",

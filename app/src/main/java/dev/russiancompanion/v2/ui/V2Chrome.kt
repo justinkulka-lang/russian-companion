@@ -1,7 +1,11 @@
 package dev.russiancompanion.v2.ui
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,10 +13,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -24,10 +30,12 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
@@ -36,6 +44,8 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.safeDrawing
+import dev.russiancompanion.v2.curriculum.V2Letter
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -48,33 +58,13 @@ internal fun V2Scaffold(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Scaffold(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .windowInsetsPadding(WindowInsets.safeDrawing),
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
-        contentWindowInsets = WindowInsets.safeDrawing,
-        topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(
-                        text = title,
-                        style = MaterialTheme.typography.titleLarge,
-                        modifier = Modifier.semantics { heading() },
-                    )
-                },
-                navigationIcon = {
-                    if (onBack != null) {
-                        TextButton(
-                            onClick = onBack,
-                            modifier = Modifier.heightIn(min = 48.dp),
-                        ) { Text("Back") }
-                    }
-                },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.surface,
-                    titleContentColor = MaterialTheme.colorScheme.onSurface,
-                ),
-            )
-        },
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
+        topBar = { V2TopBar(title = title, onBack = onBack) },
         bottomBar = {
             Column {
                 footer?.invoke()
@@ -88,7 +78,7 @@ internal fun V2Scaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(horizontal = 20.dp, vertical = 12.dp)
+                .padding(horizontal = 16.dp, vertical = 12.dp)
                 .verticalScroll(rememberScrollState()),
             content = content,
         )
@@ -106,26 +96,13 @@ internal fun V2LazyScaffold(
     content: LazyListScope.() -> Unit,
 ) {
     Scaffold(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .windowInsetsPadding(WindowInsets.safeDrawing),
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
-        contentWindowInsets = WindowInsets.safeDrawing,
-        topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(title, style = MaterialTheme.typography.titleLarge, modifier = Modifier.semantics { heading() })
-                },
-                navigationIcon = {
-                    if (onBack != null) {
-                        TextButton(onClick = onBack, modifier = Modifier.heightIn(min = 48.dp)) { Text("Back") }
-                    }
-                },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.surface,
-                    titleContentColor = MaterialTheme.colorScheme.onSurface,
-                ),
-            )
-        },
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
+        topBar = { V2TopBar(title = title, onBack = onBack) },
         bottomBar = {
             Column {
                 footer?.invoke()
@@ -137,10 +114,40 @@ internal fun V2LazyScaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(horizontal = 20.dp, vertical = 8.dp),
+                .padding(horizontal = 16.dp, vertical = 8.dp),
             content = content,
         )
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun V2TopBar(title: String, onBack: (() -> Unit)?) {
+    CenterAlignedTopAppBar(
+        windowInsets = WindowInsets(0, 0, 0, 0),
+        title = {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.semantics { heading() },
+            )
+        },
+        navigationIcon = {
+            if (onBack != null) {
+                TextButton(
+                    onClick = onBack,
+                    modifier = Modifier
+                        .heightIn(min = 48.dp)
+                        .padding(start = 12.dp)
+                        .semantics { testTag = "v2-back" },
+                ) { Text("Back") }
+            }
+        },
+        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+            containerColor = MaterialTheme.colorScheme.surface,
+            titleContentColor = MaterialTheme.colorScheme.onSurface,
+        ),
+    )
 }
 
 @Composable
@@ -148,6 +155,7 @@ internal fun V2BottomBar(tab: V2Tab, onTab: (V2Tab) -> Unit) {
     NavigationBar(
         modifier = Modifier.semantics { testTag = "v2-bottom-nav" },
         containerColor = MaterialTheme.colorScheme.surface,
+        windowInsets = WindowInsets(0, 0, 0, 0),
     ) {
         V2Tab.entries.forEach { destination ->
             NavigationBarItem(
@@ -217,6 +225,145 @@ internal fun V2Card(title: String, body: String, status: String? = null, onClick
             Spacer(Modifier.height(6.dp))
             Text(body, style = MaterialTheme.typography.bodyMedium)
         }
+    }
+}
+
+@Composable
+internal fun V2UnitRow(
+    number: Int,
+    topic: String,
+    state: String,
+    progress: String,
+    onClick: () -> Unit,
+) {
+    Surface(
+        onClick = onClick,
+        shape = RoundedCornerShape(12.dp),
+        color = MaterialTheme.colorScheme.surfaceVariant,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 4.dp)
+            .semantics { testTag = "v2-unit-row-$number" },
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 56.dp)
+                .padding(horizontal = 12.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(
+                text = number.toString(),
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.semantics { heading() },
+            )
+            Column(Modifier.weight(1f)) {
+                Text("Unit $number · $topic", style = MaterialTheme.typography.titleSmall)
+                Text(
+                    "$state · $progress",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.semantics { stateDescription = state },
+                )
+            }
+        }
+    }
+}
+
+@Composable
+internal fun V2LetterTile(
+    letter: V2Letter,
+    selected: Boolean = false,
+    onClick: (() -> Unit)? = null,
+) {
+    Surface(
+        onClick = onClick ?: {},
+        enabled = onClick != null,
+        shape = RoundedCornerShape(12.dp),
+        color = if (selected) {
+            MaterialTheme.colorScheme.primaryContainer
+        } else {
+            MaterialTheme.colorScheme.surfaceVariant
+        },
+        modifier = Modifier
+            .size(width = 64.dp, height = 72.dp)
+            .semantics { testTag = "v2-letter-${letter.uppercase}" },
+    ) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center,
+        ) {
+            Text(letter.uppercase, style = MaterialTheme.typography.headlineMedium)
+            Text(letter.lowercase, style = MaterialTheme.typography.titleMedium)
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+internal fun V2LetterBoard(
+    letters: List<V2Letter>,
+    selectedId: String? = null,
+    onSelect: ((V2Letter) -> Unit)? = null,
+) {
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .semantics { testTag = "v2-letter-board" },
+    ) {
+        letters.forEach { letter ->
+            V2LetterTile(
+                letter = letter,
+                selected = letter.id == selectedId,
+                onClick = onSelect?.let { handler -> { handler(letter) } },
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+internal fun V2PrintPairGrid(letters: List<V2Letter>) {
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .semantics { testTag = "v2-print-pair-grid" },
+    ) {
+        letters.forEach { letter ->
+            Surface(
+                shape = RoundedCornerShape(10.dp),
+                color = MaterialTheme.colorScheme.surfaceVariant,
+                modifier = Modifier.heightIn(min = 48.dp),
+            ) {
+                Text(
+                    "${letter.uppercase}  ${letter.lowercase}",
+                    style = MaterialTheme.typography.titleLarge,
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+                )
+            }
+        }
+    }
+}
+
+@Composable
+internal fun V2ConfusableRow(cyrillic: String, latin: String) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 4.dp)
+            .semantics { testTag = "v2-confusable-$cyrillic" },
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Text(cyrillic, style = MaterialTheme.typography.displaySmall)
+        Text("is not", style = MaterialTheme.typography.bodyLarge)
+        Text(latin, style = MaterialTheme.typography.displaySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 

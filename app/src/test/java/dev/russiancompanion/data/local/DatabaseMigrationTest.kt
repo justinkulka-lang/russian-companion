@@ -853,6 +853,104 @@ class DatabaseMigrationTest {
         helper.close()
     }
 
+    @Test
+    fun version6LearnerAndExportRowsSurviveMigrationToVersion7() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("v2-v6-user-data.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(6) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `learner_state` (
+                                `id` TEXT NOT NULL,
+                                `activeSegmentId` TEXT,
+                                `onboardingCompleted` INTEGER NOT NULL,
+                                `planContext` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `export_records` (
+                                `id` TEXT NOT NULL,
+                                `exportedAtLocal` TEXT NOT NULL,
+                                `destinationReference` TEXT,
+                                `logCount` INTEGER NOT NULL,
+                                `evidenceCount` INTEGER NOT NULL,
+                                `progressCount` INTEGER NOT NULL,
+                                `recordingCount` INTEGER NOT NULL,
+                                `status` TEXT NOT NULL,
+                                `documentReference` TEXT,
+                                `recordingSetDigest` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL("CREATE TABLE IF NOT EXISTS `audio_models` (`id` TEXT NOT NULL, PRIMARY KEY(`id`))")
+                        db.execSQL("CREATE TABLE IF NOT EXISTS `activity_logs` (`id` TEXT NOT NULL, PRIMARY KEY(`id`))")
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `recording_records` (
+                                `id` TEXT NOT NULL,
+                                `audioModelId` TEXT NOT NULL,
+                                `localFileReference` TEXT NOT NULL,
+                                `createdAtLocal` TEXT NOT NULL,
+                                `markedForTutorReview` INTEGER NOT NULL,
+                                `completionState` TEXT NOT NULL,
+                                `activityLogId` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL("INSERT INTO learner_state (id, activeSegmentId, onboardingCompleted, planContext) VALUES ('local', NULL, 1, '2026-09-21')")
+        db.execSQL(
+            """
+            INSERT INTO export_records (
+                id, exportedAtLocal, destinationReference, logCount, evidenceCount, progressCount,
+                recordingCount, status, documentReference, recordingSetDigest
+            ) VALUES ('exp-v6', '2026-09-21T18:00', 'notes.zip', 2, 1, 4, 1, 'COMPLETED', 'notes.zip', 'digest-v6')
+            """.trimIndent(),
+        )
+        db.execSQL("INSERT INTO audio_models (id) VALUES ('model-v6')")
+        db.execSQL(
+            """
+            INSERT INTO recording_records (
+                id, audioModelId, localFileReference, createdAtLocal, markedForTutorReview, completionState, activityLogId
+            ) VALUES ('rec-v6', 'model-v6', 'take.m4a', '2026-09-21T17:00', 0, 'COMPLETED', NULL)
+            """.trimIndent(),
+        )
+        MIGRATION_6_7.migrate(db)
+        val learner = db.query("SELECT onboardingCompleted, planContext FROM learner_state WHERE id = 'local'")
+        learner.moveToFirst()
+        assertEquals(1, learner.getInt(0))
+        assertEquals("2026-09-21", learner.getString(1))
+        learner.close()
+        val export = db.query("SELECT recordingCount, recordingSetDigest FROM export_records WHERE id = 'exp-v6'")
+        export.moveToFirst()
+        assertEquals(1, export.getInt(0))
+        assertEquals("digest-v6", export.getString(1))
+        export.close()
+        val recording = db.query("SELECT localFileReference FROM recording_records WHERE id = 'rec-v6'")
+        recording.moveToFirst()
+        assertEquals("take.m4a", recording.getString(0))
+        recording.close()
+        val profiles = db.query("SELECT COUNT(*) FROM v2_profiles")
+        profiles.moveToFirst()
+        assertEquals(0, profiles.getInt(0))
+        profiles.close()
+        helper.close()
+    }
+
     private data class MigratedDecision(
         val snapshot: String,
         val evidenceIds: List<String>,

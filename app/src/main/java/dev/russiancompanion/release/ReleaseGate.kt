@@ -629,7 +629,7 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
         val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
         if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
         if (pack.linguisticReview.status != "APPROVED") blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
-        if (pack.units.any { it.installState == "INSTALLED" && it.mappingStatus != "APPROVED" }) {
+        if (pack.units.any { it.mappingStatus != "APPROVED" }) {
             blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
         }
         val hasMappedAudio = pack.letters.any { !it.audioAssetId.isNullOrBlank() } ||

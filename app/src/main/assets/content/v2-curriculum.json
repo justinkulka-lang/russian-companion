@@ -1,13 +1,16 @@
 {
   "schemaVersion": 1,
   "packId": "v2-units-1-2-foundation",
-  "packVersion": 1,
+  "packVersion": 2,
   "publicReleaseEligible": false,
   "linguisticReview": {
     "id": "rev-pending-units-1-2",
     "status": "PENDING_QUALIFIED_REVIEW",
     "reviewer": null,
-    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified."
+    "packVersion": null,
+    "reviewedContentDigest": null,
+    "curriculumMappingId": null,
+    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible."
   },
   "sources": [
     {
@@ -25,6 +28,20 @@
       "modification": "Original"
     }
   ],
+  "rights": [
+    {
+      "id": "rights-unicode-cyrillic",
+      "sourceId": "src-unicode-cyrillic",
+      "license": "Public domain writing-system facts",
+      "permitsAppUse": true
+    },
+    {
+      "id": "rights-app-english-v2",
+      "sourceId": "src-app-english-v2",
+      "license": "Original app text",
+      "permitsAppUse": true
+    }
+  ],
   "letters": [
     {
       "id": "letter-0410",
@@ -35,7 +52,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0411",
@@ -46,7 +64,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0412",
@@ -57,7 +76,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "B"
     },
     {
       "id": "letter-0413",
@@ -68,7 +88,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0414",
@@ -79,7 +100,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0415",
@@ -90,7 +112,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0401",
@@ -101,7 +124,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0416",
@@ -112,7 +136,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0417",
@@ -123,7 +148,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0418",
@@ -134,7 +160,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0419",
@@ -145,7 +172,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-041a",
@@ -156,7 +184,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-041b",
@@ -167,7 +196,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-041c",
@@ -178,7 +208,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-041d",
@@ -189,7 +220,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "H"
     },
     {
       "id": "letter-041e",
@@ -200,7 +232,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-041f",
@@ -211,7 +244,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0420",
@@ -222,7 +256,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "P"
     },
     {
       "id": "letter-0421",
@@ -233,7 +268,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "C"
     },
     {
       "id": "letter-0422",
@@ -244,7 +280,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0423",
@@ -255,7 +292,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "Y"
     },
     {
       "id": "letter-0424",
@@ -266,7 +304,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0425",
@@ -277,7 +316,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": "X"
     },
     {
       "id": "letter-0426",
@@ -288,7 +328,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0427",
@@ -299,7 +340,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0428",
@@ -310,7 +352,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-0429",
@@ -321,7 +364,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042a",
@@ -332,7 +376,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042b",
@@ -343,7 +388,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042c",
@@ -354,7 +400,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042d",
@@ -365,7 +412,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042e",
@@ -376,7 +424,8 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
     },
     {
       "id": "letter-042f",
@@ -387,22 +436,394 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "audioAssetId": null,
-      "exampleWordId": null
+      "exampleWordId": null,
+      "latinLookalike": null
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-letter-0410",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0410",
+      "display": "А / а",
+      "note": "Printed pair А а.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-print-letter-0410",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0410",
+      "display": "А / а",
+      "note": "А and а are the same letter in two print cases.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-print-forms"
+    },
+    {
+      "id": "ex-letter-0411",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0411",
+      "display": "Б / б",
+      "note": "Printed pair Б б.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-print-letter-0411",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0411",
+      "display": "Б / б",
+      "note": "Б and б are the same letter in two print cases.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u2-review"
+    },
+    {
+      "id": "ex-letter-0412",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-0412",
+      "display": "В / в",
+      "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-0413",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0413",
+      "display": "Г / г",
+      "note": "Printed pair Г г.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0414",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0414",
+      "display": "Д / д",
+      "note": "Printed pair Д д.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0415",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0415",
+      "display": "Е / е",
+      "note": "Printed pair Е е.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-iotated"
+    },
+    {
+      "id": "ex-letter-0401",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0401",
+      "display": "Ё / ё",
+      "note": "Printed pair Ё ё.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-iotated"
+    },
+    {
+      "id": "ex-letter-0416",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0416",
+      "display": "Ж / ж",
+      "note": "Printed pair Ж ж.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0417",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0417",
+      "display": "З / з",
+      "note": "Printed pair З з.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0418",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0418",
+      "display": "И / и",
+      "note": "Printed pair И и.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0419",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0419",
+      "display": "Й / й",
+      "note": "Printed pair Й й.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-signs"
+    },
+    {
+      "id": "ex-letter-041a",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-041a",
+      "display": "К / к",
+      "note": "Printed pair К к.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-041b",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-041b",
+      "display": "Л / л",
+      "note": "Printed pair Л л.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-041c",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-041c",
+      "display": "М / м",
+      "note": "Printed pair М м.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-041d",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-041d",
+      "display": "Н / н",
+      "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-041e",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-041e",
+      "display": "О / о",
+      "note": "Printed pair О о.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-041f",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-041f",
+      "display": "П / п",
+      "note": "Printed pair П п.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0420",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-0420",
+      "display": "Р / р",
+      "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-0421",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-0421",
+      "display": "С / с",
+      "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-0422",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0422",
+      "display": "Т / т",
+      "note": "Printed pair Т т.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0423",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-0423",
+      "display": "У / у",
+      "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-0424",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0424",
+      "display": "Ф / ф",
+      "note": "Printed pair Ф ф.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0425",
+      "kind": "CONFUSABLE_PAIR",
+      "letterId": "letter-0425",
+      "display": "Х / х",
+      "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-confusable"
+    },
+    {
+      "id": "ex-letter-0426",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0426",
+      "display": "Ц / ц",
+      "note": "Printed pair Ц ц.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0427",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0427",
+      "display": "Ч / ч",
+      "note": "Printed pair Ч ч.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0428",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0428",
+      "display": "Ш / ш",
+      "note": "Printed pair Ш ш.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-0429",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0429",
+      "display": "Щ / щ",
+      "note": "Printed pair Щ щ.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-042a",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042a",
+      "display": "Ъ / ъ",
+      "note": "Printed pair Ъ ъ.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-signs"
+    },
+    {
+      "id": "ex-letter-042b",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042b",
+      "display": "Ы / ы",
+      "note": "Printed pair Ы ы.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-042c",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042c",
+      "display": "Ь / ь",
+      "note": "Printed pair Ь ь.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-signs"
+    },
+    {
+      "id": "ex-letter-042d",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042d",
+      "display": "Э / э",
+      "note": "Printed pair Э э.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-letter-identity"
+    },
+    {
+      "id": "ex-letter-042e",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042e",
+      "display": "Ю / ю",
+      "note": "Printed pair Ю ю.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-iotated"
+    },
+    {
+      "id": "ex-letter-042f",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-042f",
+      "display": "Я / я",
+      "note": "Printed pair Я я.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u1-iotated"
     }
   ],
   "items": [
     {
       "id": "u1-i-а-identity",
-      "kind": "CLOSED_RESPONSE",
+      "kind": "LETTER_IDENTITY",
       "language": "en",
-      "prompt": "Which letter is the Cyrillic form shown as А / а?",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "А",
       "options": [
-        "Latin A (same shape, different alphabet identity)",
+        "Latin A",
         "Cyrillic А",
         "Cyrillic Р"
       ],
       "answer": "Cyrillic А",
-      "feedback": "The printed shape can match Latin A. In this course it is the Cyrillic vowel letter А. Confirm shapes in your book.",
+      "feedback": "The printed shape can match Latin A. In this course it is the Cyrillic vowel letter А.",
+      "objectiveId": "obj-u1-letter-identity",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-м-identity",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "М",
+      "options": [
+        "Cyrillic М",
+        "Cyrillic Н",
+        "Cyrillic Т"
+      ],
+      "answer": "Cyrillic М",
+      "feedback": "М is an early consonant letter. It is not Н.",
       "objectiveId": "obj-u1-letter-identity",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -410,16 +831,17 @@
     },
     {
       "id": "u1-i-р-not-p",
-      "kind": "CLOSED_RESPONSE",
+      "kind": "CONFUSABLE",
       "language": "en",
-      "prompt": "The letter Р looks like Latin P. What is the correct identity in this course?",
+      "prompt": "This letter looks like Latin P. What is it?",
+      "promptLetter": "Р",
       "options": [
         "The Latin letter P",
         "The Cyrillic letter Р",
         "The Cyrillic letter П"
       ],
       "answer": "The Cyrillic letter Р",
-      "feedback": "Shape overlap with Latin P is a recognition trap. The course treats Р as a Cyrillic letter, not as English P. Confirm the sound in your book; this app does not invent example words.",
+      "feedback": "Shape overlap with Latin P is a recognition trap. This is Cyrillic Р, not English P.",
       "objectiveId": "obj-u1-confusable",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -427,16 +849,17 @@
     },
     {
       "id": "u1-i-н-not-h",
-      "kind": "CLOSED_RESPONSE",
+      "kind": "CONFUSABLE",
       "language": "en",
-      "prompt": "The letter Н looks like Latin H. What is the correct identity?",
+      "prompt": "This letter looks like Latin H. What is it?",
+      "promptLetter": "Н",
       "options": [
         "Latin H",
         "Cyrillic Н",
         "Cyrillic И"
       ],
       "answer": "Cyrillic Н",
-      "feedback": "Do not read Н as English H. Confirm the book's pronunciation for this letter.",
+      "feedback": "Do not read Н as English H. It is a Cyrillic letter.",
       "objectiveId": "obj-u1-confusable",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -444,9 +867,10 @@
     },
     {
       "id": "u1-i-с-not-c",
-      "kind": "CLOSED_RESPONSE",
+      "kind": "CONFUSABLE",
       "language": "en",
-      "prompt": "The letter С looks like Latin C. What is the correct identity?",
+      "prompt": "This letter looks like Latin C. What is it?",
+      "promptLetter": "С",
       "options": [
         "Latin C",
         "Cyrillic С",
@@ -460,17 +884,54 @@
       "containsGeneratedRussian": false
     },
     {
-      "id": "u1-i-ь-not-vowel",
-      "kind": "CLOSED_RESPONSE",
+      "id": "u1-i-е-identity",
+      "kind": "LETTER_IDENTITY",
       "language": "en",
-      "prompt": "What is the soft sign Ь in this foundation?",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Е",
+      "options": [
+        "Cyrillic Е",
+        "Cyrillic Э",
+        "Cyrillic Ё"
+      ],
+      "answer": "Cyrillic Е",
+      "feedback": "Е is an iotated vowel letter. Э and Ё are different letters.",
+      "objectiveId": "obj-u1-iotated",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-ь-not-vowel",
+      "kind": "SIGN",
+      "language": "en",
+      "prompt": "What is the printed mark Ь?",
+      "promptLetter": "Ь",
       "options": [
         "A vowel you pronounce by itself",
         "A mark, not a standalone vowel",
         "The same letter as Ъ"
       ],
       "answer": "A mark, not a standalone vowel",
-      "feedback": "Ь is introduced as a sign, not as a vowel letter you read alone. Use your book for the exact description.",
+      "feedback": "Ь is a sign, not a vowel letter you read alone.",
+      "objectiveId": "obj-u1-signs",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u1-i-ъ-not-vowel",
+      "kind": "SIGN",
+      "language": "en",
+      "prompt": "What is the printed mark Ъ?",
+      "promptLetter": "Ъ",
+      "options": [
+        "A standalone vowel",
+        "The hard sign, not a vowel",
+        "The same letter as Ь"
+      ],
+      "answer": "The hard sign, not a vowel",
+      "feedback": "Ъ is the hard sign. It is not a spoken vowel and it is not Ь.",
       "objectiveId": "obj-u1-signs",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -478,85 +939,108 @@
     },
     {
       "id": "u1-i-print-pair",
-      "kind": "CLOSED_RESPONSE",
+      "kind": "PRINT_PAIR",
       "language": "en",
       "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+      "promptLetter": "А",
       "options": [
         "А / а",
         "Р / п",
         "Н / и"
       ],
       "answer": "А / а",
-      "feedback": "Print pairs must be learned as one letter in two cases. Р / п and Н / и are different letters.",
+      "feedback": "Print pairs are one letter in two cases. Р / п and Н / и are different letters.",
       "objectiveId": "obj-u1-print-forms",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false
     },
     {
-      "id": "u1-i-no-catalog-word",
-      "kind": "CLOSED_RESPONSE",
+      "id": "u2-i-в-not-b",
+      "kind": "CONFUSABLE",
       "language": "en",
-      "prompt": "If a licensed catalog word is not mapped to this unit, what should the app do?",
+      "prompt": "This letter looks like Latin B. What is it?",
+      "promptLetter": "В",
       "options": [
-        "Assign it anyway because it is licensed",
-        "Show it as Unit 1 practice",
-        "Keep it out of this unit and say so"
+        "Latin B",
+        "Cyrillic В",
+        "Cyrillic Б"
       ],
-      "answer": "Keep it out of this unit and say so",
-      "feedback": "A license does not make a word appropriate for Lesson 1. This unit does not use frequency-catalog audio.",
-      "objectiveId": "obj-u1-sequence",
-      "sourceId": "src-app-english-v2",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "containsGeneratedRussian": false
-    },
-    {
-      "id": "u2-i-no-score",
-      "kind": "CLOSED_RESPONSE",
-      "language": "en",
-      "prompt": "Can this app score your handwriting or pronunciation?",
-      "options": [
-        "Yes, it assigns an accent score",
-        "Yes, it grades handwriting automatically",
-        "No. Comparison and book work stay human-judged"
-      ],
-      "answer": "No. Comparison and book work stay human-judged",
-      "feedback": "The app can play, record, and let you compare. It does not judge handwriting or pronunciation.",
-      "objectiveId": "obj-u2-limits",
-      "sourceId": "src-app-english-v2",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "containsGeneratedRussian": false
-    },
-    {
-      "id": "u2-i-review-unit1",
-      "kind": "CLOSED_RESPONSE",
-      "language": "en",
-      "prompt": "What may Unit 2 review?",
-      "options": [
-        "Only brand-new Lesson 3 grammar",
-        "Earlier Unit 1 letter recognition",
-        "Any later Penguin topic"
-      ],
-      "answer": "Earlier Unit 1 letter recognition",
-      "feedback": "Review may revisit earlier topics. It may not teach later-book grammar early.",
+      "answer": "Cyrillic В",
+      "feedback": "В is not Latin B and it is not Cyrillic Б.",
       "objectiveId": "obj-u2-review",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false
     },
     {
-      "id": "u2-i-handwriting-source",
-      "kind": "CLOSED_RESPONSE",
+      "id": "u2-i-у-not-y",
+      "kind": "CONFUSABLE",
       "language": "en",
-      "prompt": "Where do you study handwritten forms while this app has no verified handwriting images?",
+      "prompt": "This letter looks like Latin Y. What is it?",
+      "promptLetter": "У",
       "options": [
-        "From invented app drawings",
-        "From your legally owned book",
-        "From an unrelated catalog word"
+        "Latin Y",
+        "Cyrillic У",
+        "Cyrillic И"
       ],
-      "answer": "From your legally owned book",
-      "feedback": "Missing assets stay unavailable. The companion sends you to your book instead of fabricating forms.",
-      "objectiveId": "obj-u2-handwriting",
+      "answer": "Cyrillic У",
+      "feedback": "У is a Cyrillic vowel letter, not Latin Y.",
+      "objectiveId": "obj-u2-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u2-i-х-not-x",
+      "kind": "CONFUSABLE",
+      "language": "en",
+      "prompt": "This letter looks like Latin X. What is it?",
+      "promptLetter": "Х",
+      "options": [
+        "Latin X",
+        "Cyrillic Х",
+        "Cyrillic К"
+      ],
+      "answer": "Cyrillic Х",
+      "feedback": "Х is a Cyrillic letter, not Latin X.",
+      "objectiveId": "obj-u2-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u2-i-print-б",
+      "kind": "PRINT_PAIR",
+      "language": "en",
+      "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+      "promptLetter": "Б",
+      "options": [
+        "Б / б",
+        "В / б",
+        "Б / в"
+      ],
+      "answer": "Б / б",
+      "feedback": "Б / б is one letter. В is a different letter.",
+      "objectiveId": "obj-u2-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u2-i-я-identity",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Я",
+      "options": [
+        "Cyrillic Я",
+        "Cyrillic Р",
+        "Cyrillic А"
+      ],
+      "answer": "Cyrillic Я",
+      "feedback": "Я is an iotated vowel letter. It is not Р or А.",
+      "objectiveId": "obj-u2-review",
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false
@@ -566,8 +1050,8 @@
     {
       "id": "ref-cyrillic-print",
       "title": "Cyrillic print forms",
-      "summary": "33 printed uppercase/lowercase pairs. Browse letters; do not treat this as a dump to memorize in one sitting.",
-      "detail": "Use the letter browser grouped by the Unit 1 sequence. English sound notes are pending review. No example words are attached.",
+      "summary": "33 printed uppercase/lowercase pairs.",
+      "detail": "Use the letter board grouped by the Unit 1 sequence. English sound notes are pending review. No example words are attached.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -579,7 +1063,7 @@
       "id": "ref-confusable",
       "title": "Confusable Latin look-alikes",
       "summary": "В Н Р С У Х can be misread by Latin-alphabet readers.",
-      "detail": "Name the Cyrillic identity. Confirm sounds in your book. The app does not attach catalog words to these letters.",
+      "detail": "Name the Cyrillic identity. Confirm sounds in your book.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -615,7 +1099,7 @@
       "id": "ref-transliteration",
       "title": "Transliteration is temporary",
       "summary": "Latin respelling may help the first hours. It is not how you should keep reading.",
-      "detail": "Turn transliteration off in settings as soon as print recognition is stable. The default after foundations is off.",
+      "detail": "Turn transliteration off in settings as soon as print recognition is stable.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -627,7 +1111,7 @@
       "id": "ref-decoding",
       "title": "Staged decoding limits",
       "summary": "This pack decodes letters and print pairs only.",
-      "detail": "Word, phrase, and sign reading wait for reviewed examples. Unavailable is the honest state.",
+      "detail": "Word, phrase, and sign reading wait for reviewed examples.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -639,7 +1123,7 @@
       "id": "ref-stress",
       "title": "Stress notation",
       "summary": "Stress is part of Russian reading and is not guessed by the app.",
-      "detail": "Copy stress marks from your book into your binder. The app will not generate stressed example words.",
+      "detail": "Copy stress marks from your book into your binder.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -651,7 +1135,7 @@
       "id": "ref-pronunciation",
       "title": "Pronunciation guidance",
       "summary": "Model audio is used only when a file is licensed and mapped to the current objective.",
-      "detail": "Slowing a model must not rewrite the file. User recordings play at original speed. No ASR or score.",
+      "detail": "User recordings play at original speed. No ASR or score.",
       "introducedInUnit": 2,
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -663,10 +1147,10 @@
       "id": "ref-study",
       "title": "How to use this companion",
       "summary": "The app coordinates the book, optional AnkiDroid, a binder, and optional tutor work.",
-      "detail": "It does not reproduce Penguin, judge spontaneous speech, or certify proficiency. Public release stays blocked until review and device evidence exist.",
+      "detail": "It does not reproduce Penguin, judge spontaneous speech, or certify proficiency.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "how to use this companion"
       ]
@@ -675,10 +1159,10 @@
       "id": "ref-limits",
       "title": "App limitations",
       "summary": "Offline only. No internet, no account, no AI, no cloud.",
-      "detail": "Missing content stays unavailable. Catalog size is not a curriculum.",
+      "detail": "Unrelated catalog audio is not assigned to Units 1–2. The app does not score handwriting or pronunciation. Handwriting study uses your book until verified images exist. Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar. Public release stays blocked until review and device evidence exist.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "app limitations"
       ]
@@ -689,85 +1173,172 @@
       "number": 1,
       "id": "unit-1",
       "title": "Learning to read Russian",
-      "topicSummary": "Alphabet, pronunciation, transliteration, and controlled elementary reading. Independently written companion support only.",
-      "installState": "INSTALLED",
+      "shortLabel": "Printed letters",
+      "topicSummary": "Printed letter identities, print pairs, and Latin look-alikes. Development content: no reviewed words, mapped audio, or word reading.",
+      "installState": "DEVELOPMENT",
       "penguinLesson": 1,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed.",
+      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
       "prerequisiteUnitNumbers": [],
       "estimatedMinutes": 152,
       "objectives": [
         {
-          "id": "obj-u1-sequence",
-          "unitNumber": 1,
-          "title": "Know why Unit 1 is the literacy start",
-          "kind": "GUIDANCE"
-        },
-        {
-          "id": "obj-u1-writing-system",
-          "unitNumber": 1,
-          "title": "Describe Cyrillic as a 33-letter print system",
-          "kind": "GUIDANCE"
-        },
-        {
           "id": "obj-u1-letter-identity",
           "unitNumber": 1,
           "title": "Identify staged printed letters",
-          "kind": "RECOGNITION"
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-vowels",
+            "u1-st-cons",
+            "u1-st-system"
+          ],
+          "exampleIds": [
+            "ex-letter-0410",
+            "ex-letter-0411",
+            "ex-letter-0413",
+            "ex-letter-0414",
+            "ex-letter-0416",
+            "ex-letter-0417",
+            "ex-letter-0418",
+            "ex-letter-041a",
+            "ex-letter-041b",
+            "ex-letter-041c",
+            "ex-letter-041e",
+            "ex-letter-041f",
+            "ex-letter-0422",
+            "ex-letter-0424",
+            "ex-letter-0426",
+            "ex-letter-0427",
+            "ex-letter-0428",
+            "ex-letter-0429",
+            "ex-letter-042b",
+            "ex-letter-042d"
+          ],
+          "practiceStepIds": [
+            "u1-st-vowels-check",
+            "u1-st-cons-check"
+          ],
+          "checkItemIds": [
+            "u1-i-а-identity",
+            "u1-i-м-identity"
+          ],
+          "remediationStepIds": [
+            "u1-st-vowels",
+            "u1-st-cons"
+          ]
         },
         {
           "id": "obj-u1-confusable",
           "unitNumber": 1,
           "title": "Separate Cyrillic letters from Latin look-alikes",
-          "kind": "RECOGNITION"
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-041d",
+            "ex-letter-0420",
+            "ex-letter-0421",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "practiceStepIds": [
+            "u1-st-confusable-r",
+            "u1-st-confusable-n",
+            "u1-st-confusable-s"
+          ],
+          "checkItemIds": [
+            "u1-i-р-not-p",
+            "u1-i-н-not-h",
+            "u1-i-с-not-c"
+          ],
+          "remediationStepIds": [
+            "u1-st-confusable"
+          ]
         },
         {
           "id": "obj-u1-iotated",
           "unitNumber": 1,
           "title": "Recognize Е Ё Ю Я as a group",
-          "kind": "RECOGNITION"
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-iotated"
+          ],
+          "exampleIds": [
+            "ex-letter-0415",
+            "ex-letter-0401",
+            "ex-letter-042e",
+            "ex-letter-042f"
+          ],
+          "practiceStepIds": [
+            "u1-st-iotated-check"
+          ],
+          "checkItemIds": [
+            "u1-i-е-identity"
+          ],
+          "remediationStepIds": [
+            "u1-st-iotated"
+          ]
         },
         {
           "id": "obj-u1-signs",
           "unitNumber": 1,
           "title": "Treat Ь Ъ Й as non-ordinary-vowel letters",
-          "kind": "RECOGNITION"
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-signs"
+          ],
+          "exampleIds": [
+            "ex-letter-0419",
+            "ex-letter-042a",
+            "ex-letter-042c"
+          ],
+          "practiceStepIds": [
+            "u1-st-signs-check",
+            "u1-st-hard-check"
+          ],
+          "checkItemIds": [
+            "u1-i-ь-not-vowel",
+            "u1-i-ъ-not-vowel"
+          ],
+          "remediationStepIds": [
+            "u1-st-signs"
+          ]
         },
         {
           "id": "obj-u1-print-forms",
           "unitNumber": 1,
           "title": "Match uppercase and lowercase print pairs",
-          "kind": "RECOGNITION"
-        },
-        {
-          "id": "obj-u1-decoding",
-          "unitNumber": 1,
-          "title": "Know that word reading waits for reviewed examples",
-          "kind": "GUIDANCE"
-        },
-        {
-          "id": "obj-u1-listening",
-          "unitNumber": 1,
-          "title": "Know that unmapped audio is not Unit 1 practice",
-          "kind": "GUIDANCE"
-        },
-        {
-          "id": "obj-u1-stress",
-          "unitNumber": 1,
-          "title": "Know that stress must be learned with real book words",
-          "kind": "GUIDANCE"
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u1-st-print"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0410"
+          ],
+          "practiceStepIds": [
+            "u1-st-print-check"
+          ],
+          "checkItemIds": [
+            "u1-i-print-pair"
+          ],
+          "remediationStepIds": [
+            "u1-st-print"
+          ]
         },
         {
           "id": "obj-u1-book",
           "unitNumber": 1,
           "title": "Complete Lesson 1 work in the owned book",
-          "kind": "SELF_ATTESTATION"
-        },
-        {
-          "id": "obj-u1-companions",
-          "unitNumber": 1,
-          "title": "Use Anki, binder, and optional tutor without pretending they are scored",
-          "kind": "GUIDANCE"
+          "kind": "SELF_ATTESTATION",
+          "instructionStepIds": [
+            "u1-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
         }
       ],
       "sessions": [
@@ -776,17 +1347,18 @@
           "title": "What this unit is for",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-sequence"
+            "obj-u1-letter-identity"
           ],
           "steps": [
             {
               "id": "u1-st-orient",
               "kind": "ORIENT",
-              "title": "Unit 1 — Learning to read Russian",
-              "body": "You are at Penguin-aligned Unit 1. The book begins with the writing system, pronunciation, and elementary reading. This companion teaches letter recognition with public-domain letter forms and independently written English. It does not copy the book and does not invent Russian example words.",
+              "title": "Unit 1 — Printed letters",
+              "body": "You are at Penguin-aligned Unit 1. This development slice teaches printed letter identities with public-domain letter forms. It is not a finished production unit: reviewed example words, mapped audio, and word reading are not installed.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Open your copy to Lesson 1. Use the book for the author's explanations, exercises, and any example words.",
               "companionDirection": null,
@@ -795,13 +1367,14 @@
             {
               "id": "u1-st-why",
               "kind": "TEACH",
-              "title": "Why this comes first",
-              "body": "You cannot use later lessons until you can identify printed Russian letters. The app therefore starts with recognition, print pairs, and confusable Latin look-alikes. Transliteration, if you use it, is a temporary support and must not become the way you read.",
+              "title": "Identify letters first",
+              "body": "Work letter shapes, print pairs, and Latin look-alikes before later reading. Transliteration, if you use it, is a temporary support.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-transliteration"
               ],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -814,19 +1387,23 @@
           "title": "The writing system",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-writing-system"
+            "obj-u1-letter-identity"
           ],
           "steps": [
             {
               "id": "u1-st-system",
               "kind": "TEACH",
               "title": "Cyrillic is a different alphabet",
-              "body": "Russian is written with 33 Cyrillic letters. Some printed shapes look like Latin letters and are not the same letters. Learn identity first, then sound, then decoding. This screen is orientation, not an alphabet dump.",
+              "body": "Russian is written with 33 Cyrillic letters. Some printed shapes look like Latin letters and are not the same letters. Learn identity first.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-0410",
+                "ex-letter-041c"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -846,12 +1423,17 @@
               "id": "u1-st-vowels",
               "kind": "TEACH",
               "title": "First vowel set",
-              "body": "Work these printed pairs in your book and in the letter browser: А а, О о, У у, Э э, Ы ы, И и. English sound notes in Reference are pending qualified review. Do not treat them as a substitute for the book.",
+              "body": "Work these printed pairs: А а, О о, У у, Э э, Ы ы, И и. English sound notes are pending qualified review.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-0410",
+                "ex-letter-041e",
+                "ex-letter-0418"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -861,11 +1443,14 @@
               "id": "u1-st-vowels-check",
               "kind": "GUIDED",
               "title": "Identify А",
-              "body": "Closed-response check using letter identity only.",
+              "body": "Choose the Cyrillic identity for the printed letter.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [
                 "u1-i-а-identity"
+              ],
+              "exampleIds": [
+                "ex-letter-0410"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -886,16 +1471,39 @@
               "id": "u1-st-cons",
               "kind": "TEACH",
               "title": "Low-confusion consonants",
-              "body": "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Use the letter browser. Licensed letter-name audio is not installed, so listening for these letters is marked unavailable.",
+              "body": "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Letter-name audio is not installed.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-041c",
+                "ex-letter-0422",
+                "ex-letter-0411"
+              ],
               "unavailableReason": "Licensed letter-name audio has not been intake-reviewed for this unit.",
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u1-st-cons-check",
+              "kind": "GUIDED",
+              "title": "Identify М",
+              "body": "Choose the Cyrillic identity for the printed letter.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-м-identity"
+              ],
+              "exampleIds": [
+                "ex-letter-041c"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-cons"
             }
           ]
         },
@@ -911,12 +1519,17 @@
               "id": "u1-st-confusable",
               "kind": "TEACH",
               "title": "Shape traps",
-              "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. The app asks you to name the Cyrillic identity. It does not assign an unrelated catalog word just because that word is licensed.",
+              "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-confusable"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-0420",
+                "ex-letter-041d",
+                "ex-letter-0421"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -931,6 +1544,9 @@
               "referenceIds": [],
               "itemIds": [
                 "u1-i-р-not-p"
+              ],
+              "exampleIds": [
+                "ex-letter-0420"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -947,6 +1563,9 @@
               "itemIds": [
                 "u1-i-н-not-h"
               ],
+              "exampleIds": [
+                "ex-letter-041d"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -961,6 +1580,9 @@
               "referenceIds": [],
               "itemIds": [
                 "u1-i-с-not-c"
+              ],
+              "exampleIds": [
+                "ex-letter-0421"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -981,16 +1603,38 @@
               "id": "u1-st-iotated",
               "kind": "TEACH",
               "title": "Е Ё Ю Я",
-              "body": "These letters can start with a /j/-like element or mark a soft preceding consonant. Exact phonetics belong in your book and in a later reviewed note. The app only asks you to recognize the printed forms.",
+              "body": "Recognize these printed forms as a group. Exact phonetics belong in your book.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-iotated"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-0415",
+                "ex-letter-042f"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u1-st-iotated-check",
+              "kind": "CHECK",
+              "title": "Identify Е",
+              "body": "Identity check.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-е-identity"
+              ],
+              "exampleIds": [
+                "ex-letter-0415"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-iotated"
             }
           ]
         },
@@ -1006,12 +1650,17 @@
               "id": "u1-st-signs",
               "kind": "TEACH",
               "title": "Marks that are not ordinary vowels",
-              "body": "Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs. Confirm the book's rule, then use the check.",
+              "body": "Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-signs"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-042c",
+                "ex-letter-042a",
+                "ex-letter-0419"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1026,6 +1675,27 @@
               "referenceIds": [],
               "itemIds": [
                 "u1-i-ь-not-vowel"
+              ],
+              "exampleIds": [
+                "ex-letter-042c"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u1-st-signs"
+            },
+            {
+              "id": "u1-st-hard-check",
+              "kind": "CHECK",
+              "title": "Hard sign",
+              "body": "Identity check.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u1-i-ъ-not-vowel"
+              ],
+              "exampleIds": [
+                "ex-letter-042a"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -1046,12 +1716,15 @@
               "id": "u1-st-print",
               "kind": "TEACH",
               "title": "Uppercase and lowercase together",
-              "body": "Every letter has a print pair. Practice matching them in the letter browser. Italic or handwritten forms wait for Unit 2 and for verified assets.",
+              "body": "Every letter has a print pair. Match them on the letter board. Handwritten forms wait for verified assets.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-print-letter-0410"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1067,6 +1740,9 @@
               "itemIds": [
                 "u1-i-print-pair"
               ],
+              "exampleIds": [
+                "ex-print-letter-0410"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1079,21 +1755,22 @@
           "title": "Staged decoding",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-decoding"
+            "obj-u1-letter-identity"
           ],
           "steps": [
             {
               "id": "u1-st-decoding",
-              "kind": "TEACH",
-              "title": "From letters toward reading",
-              "body": "Decoding in this unit stays at letter and print-pair level. Word and sign reading require reviewed examples. Those examples are not installed, so the app will not invent them.",
+              "kind": "UNAVAILABLE",
+              "title": "Word reading is not installed",
+              "body": "Decoding in this development slice stays at letter and print-pair level. Reviewed example words are not installed.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-decoding"
               ],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": "No reviewed Russian example words or sign texts are installed.",
-              "bookDirection": "Use the elementary reading work in your Lesson 1 pages. Do not type Penguin examples into the app as if they were course content.",
+              "bookDirection": "Use the elementary reading work in your Lesson 1 pages.",
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -1101,39 +1778,25 @@
         },
         {
           "id": "u1-s-listening",
-          "title": "Listening and pronunciation support",
+          "title": "Listening support",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u1-listening"
+            "obj-u1-letter-identity"
           ],
           "steps": [
             {
               "id": "u1-st-listening",
               "kind": "UNAVAILABLE",
               "title": "Letter audio is not installed",
-              "body": "Listen-record-compare is available as a tool, but this unit has no licensed, reviewer-mapped letter or example audio. Frequency-catalog words such as common function words are not Lesson 1 material.",
+              "body": "Listen-record-compare exists as a tool, but this unit has no licensed, reviewer-mapped letter audio.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": "No unit-mapped licensed audio exists for Unit 1.",
               "bookDirection": "Use any pronunciation guidance in your book. If you record yourself, the app will not score the take.",
               "companionDirection": null,
               "remediationStepId": null
-            },
-            {
-              "id": "u1-st-no-catalog",
-              "kind": "CHECK",
-              "title": "Why unused catalog audio stays out",
-              "body": "Sequence check.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u1-i-no-catalog-word"
-              ],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u1-st-listening"
             }
           ]
         },
@@ -1142,21 +1805,22 @@
           "title": "Stress awareness",
           "estimatedMinutes": 6,
           "objectiveIds": [
-            "obj-u1-stress"
+            "obj-u1-letter-identity"
           ],
           "steps": [
             {
               "id": "u1-st-stress",
               "kind": "TEACH",
               "title": "Stress is part of reading",
-              "body": "Russian word stress is not predictable from spelling alone. This unit only introduces the idea. Marked example words are not installed. Your book remains the place to see stress on real Lesson 1 material.",
+              "body": "Russian word stress is not predictable from spelling alone. Marked example words are not installed.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-stress"
               ],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
-              "bookDirection": "When your Lesson 1 pages mark stress, copy that mark into your binder. Do not paste book words into the app as verified content.",
+              "bookDirection": "When your Lesson 1 pages mark stress, copy that mark into your binder.",
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -1174,10 +1838,11 @@
               "id": "u1-st-book",
               "kind": "BOOK",
               "title": "Lesson 1 in your copy",
-              "body": "Complete the Lesson 1 reading, pronunciation, and elementary reading work in the edition you own. Enter a page range only as your own note. The app does not store publisher page numbers as official metadata.",
+              "body": "Complete the Lesson 1 reading and pronunciation work in the edition you own.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Read and do Lesson 1 in your book. Use the book's answer key, not this app, for book exercises.",
               "companionDirection": "Afterward, mark book work complete as a self-attestation. That is not demonstrated in-app ability.",
@@ -1190,17 +1855,18 @@
           "title": "AnkiDroid, binder, and tutor",
           "estimatedMinutes": 10,
           "objectiveIds": [
-            "obj-u1-companions"
+            "obj-u1-book"
           ],
           "steps": [
             {
               "id": "u1-st-anki",
               "kind": "ANKI",
               "title": "AnkiDroid if you use it",
-              "body": "If you selected AnkiDroid, make cards only from material you are allowed to use. The app does not read AnkiDroid and does not verify your deck.",
+              "body": "If you selected AnkiDroid, make cards only from material you are allowed to use.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": "Self-attest AnkiDroid work. It remains user-reported.",
@@ -1210,10 +1876,11 @@
               "id": "u1-st-binder",
               "kind": "BINDER",
               "title": "One useful binder note",
-              "body": "Write: (1) one confusable letter pair that tricked you, (2) the identity you will trust next time, (3) one question for a tutor if you have one.",
+              "body": "Write one confusable letter pair that tricked you and the identity you will trust next time.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": "A binder prompt is a specific note, not 'take notes.'",
@@ -1223,10 +1890,11 @@
               "id": "u1-st-tutor",
               "kind": "TUTOR",
               "title": "Optional tutor",
-              "body": "Tutor work is optional for default advancement. You may mark a question or a recording for later review. The app does not replace live correction.",
+              "body": "Tutor work is optional for default advancement.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1247,8 +1915,8 @@
             {
               "id": "u1-st-cumul",
               "kind": "CHECK",
-              "title": "More than one check",
-              "body": "Foundation advancement needs more than a single tap. Revisit any missed item, then open the explanation it names.",
+              "title": "Letter identities",
+              "body": "Revisit any missed letter, then open the explanation it names.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [
@@ -1257,6 +1925,7 @@
                 "u1-i-н-not-h",
                 "u1-i-print-pair"
               ],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1278,51 +1947,59 @@
       "number": 2,
       "id": "unit-2",
       "title": "Handwriting and additional pronunciation",
-      "topicSummary": "Handwritten-form recognition and further pronunciation, with Unit 1 review. Book-directed while handwriting assets are absent.",
-      "installState": "INSTALLED",
+      "shortLabel": "Letter review",
+      "topicSummary": "Unit 1 letter review plus book-directed handwriting and pronunciation. Development content: handwriting images and mapped audio are not installed.",
+      "installState": "DEVELOPMENT",
       "penguinLesson": 2,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed.",
+      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
       "prerequisiteUnitNumbers": [
         1
       ],
       "estimatedMinutes": 94,
       "objectives": [
         {
-          "id": "obj-u2-handwriting",
-          "unitNumber": 2,
-          "title": "Practice handwritten forms from the book while assets are absent",
-          "kind": "SELF_ATTESTATION"
-        },
-        {
           "id": "obj-u2-review",
           "unitNumber": 2,
-          "title": "Review Unit 1 letters without jumping ahead",
-          "kind": "RECOGNITION"
-        },
-        {
-          "id": "obj-u2-pronunciation",
-          "unitNumber": 2,
-          "title": "Continue pronunciation with book work and optional unscored recording",
-          "kind": "GUIDANCE"
-        },
-        {
-          "id": "obj-u2-reading",
-          "unitNumber": 2,
-          "title": "Reinforce reading using the book, not invented phrases",
-          "kind": "SELF_ATTESTATION"
-        },
-        {
-          "id": "obj-u2-limits",
-          "unitNumber": 2,
-          "title": "State that the app does not score handwriting or pronunciation",
-          "kind": "GUIDANCE"
+          "title": "Review Unit 1 printed letters",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u2-st-review"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0411",
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "practiceStepIds": [
+            "u2-st-review-v",
+            "u2-st-review-u",
+            "u2-st-review-h"
+          ],
+          "checkItemIds": [
+            "u2-i-в-not-b",
+            "u2-i-у-not-y",
+            "u2-i-х-not-x",
+            "u2-i-print-б",
+            "u2-i-я-identity"
+          ],
+          "remediationStepIds": [
+            "u2-st-review"
+          ]
         },
         {
           "id": "obj-u2-book",
           "unitNumber": 2,
           "title": "Complete Lesson 2 work in the owned book",
-          "kind": "SELF_ATTESTATION"
+          "kind": "SELF_ATTESTATION",
+          "instructionStepIds": [
+            "u2-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
         }
       ],
       "sessions": [
@@ -1331,17 +2008,18 @@
           "title": "What this unit is for",
           "estimatedMinutes": 6,
           "objectiveIds": [
-            "obj-u2-handwriting"
+            "obj-u2-review"
           ],
           "steps": [
             {
               "id": "u2-st-orient",
               "kind": "ORIENT",
-              "title": "Unit 2 — Handwriting and more pronunciation",
-              "body": "Penguin-aligned Unit 2 continues handwritten forms and pronunciation. This companion can coordinate that work. It cannot score handwriting or accent, and it will not invent cursive charts.",
+              "title": "Unit 2 — Book handwriting and letter review",
+              "body": "Penguin-aligned Unit 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Open Lesson 2 in your copy for handwritten forms and the author's pronunciation notes.",
               "companionDirection": null,
@@ -1354,42 +2032,28 @@
           "title": "Handwritten forms",
           "estimatedMinutes": 15,
           "objectiveIds": [
-            "obj-u2-handwriting"
+            "obj-u2-book"
           ],
           "steps": [
             {
               "id": "u2-st-hw",
               "kind": "UNAVAILABLE",
               "title": "Verified handwriting images are not installed",
-              "body": "Print-to-handwriting correspondence needs reviewed images. None are packaged. Use your book. You may self-attest that you copied forms on paper. The app will not pretend to grade the page.",
+              "body": "Print-to-handwriting correspondence needs reviewed images. None are packaged. Copy forms from your book onto paper. The app will not grade the page.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": "No verified handwriting assets are installed.",
               "bookDirection": "Copy the handwritten forms from Lesson 2 in your book onto paper.",
               "companionDirection": null,
               "remediationStepId": null
-            },
-            {
-              "id": "u2-st-hw-check",
-              "kind": "CHECK",
-              "title": "Where handwriting study happens now",
-              "body": "Source check.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u2-i-handwriting-source"
-              ],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u2-st-hw"
             }
           ]
         },
         {
           "id": "u2-s-review",
-          "title": "Unit 1 review",
+          "title": "Unit 1 letter review",
           "estimatedMinutes": 10,
           "objectiveIds": [
             "obj-u2-review"
@@ -1399,27 +2063,72 @@
               "id": "u2-st-review",
               "kind": "TEACH",
               "title": "Keep letter identities available",
-              "body": "Unit 2 may review any Unit 1 letter. It may not jump to Lesson 3 grammar.",
+              "body": "Review the printed letters from Unit 1, especially Latin look-alikes and print pairs.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-cyrillic-print",
                 "ref-confusable"
               ],
               "itemIds": [],
+              "exampleIds": [
+                "ex-letter-0412",
+                "ex-letter-0423",
+                "ex-letter-0425",
+                "ex-print-letter-0411"
+              ],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
             },
             {
-              "id": "u2-st-review-check",
+              "id": "u2-st-review-v",
               "kind": "CHECK",
-              "title": "What review is allowed",
-              "body": "Sequence check.",
+              "title": "В is not B",
+              "body": "Identity check.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [
-                "u2-i-review-unit1"
+                "u2-i-в-not-b"
+              ],
+              "exampleIds": [
+                "ex-letter-0412"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u2-st-review"
+            },
+            {
+              "id": "u2-st-review-u",
+              "kind": "CHECK",
+              "title": "У is not Y",
+              "body": "Identity check.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u2-i-у-not-y"
+              ],
+              "exampleIds": [
+                "ex-letter-0423"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u2-st-review"
+            },
+            {
+              "id": "u2-st-review-h",
+              "kind": "CHECK",
+              "title": "Х is not X",
+              "body": "Identity check.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u2-i-х-not-x"
+              ],
+              "exampleIds": [
+                "ex-letter-0425"
               ],
               "unavailableReason": null,
               "bookDirection": null,
@@ -1433,59 +2142,46 @@
           "title": "Additional pronunciation",
           "estimatedMinutes": 10,
           "objectiveIds": [
-            "obj-u2-pronunciation"
+            "obj-u2-book"
           ],
           "steps": [
             {
               "id": "u2-st-pron",
-              "kind": "TEACH",
-              "title": "Listen in the book; compare in the app only with mapped audio",
-              "body": "Use Lesson 2 pronunciation work in your book. App listen-record-compare stays unavailable for this unit until reviewer-mapped audio exists. You may still record a take for your own ears or a tutor. The recording is not a score.",
+              "kind": "UNAVAILABLE",
+              "title": "Mapped pronunciation audio is not installed",
+              "body": "Use Lesson 2 pronunciation work in your book. App listen-record-compare stays unavailable until reviewer-mapped audio exists.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-pronunciation"
               ],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": "No unit-mapped licensed audio exists for Unit 2.",
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
-            },
-            {
-              "id": "u2-st-no-score",
-              "kind": "CHECK",
-              "title": "No automatic judgment",
-              "body": "Limits check.",
-              "dominantAction": "Continue",
-              "referenceIds": [],
-              "itemIds": [
-                "u2-i-no-score"
-              ],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": "u2-st-pron"
             }
           ]
         },
         {
           "id": "u2-s-reading",
-          "title": "Reading fluency reinforcement",
+          "title": "Reading in the book",
           "estimatedMinutes": 12,
           "objectiveIds": [
-            "obj-u2-reading"
+            "obj-u2-book"
           ],
           "steps": [
             {
               "id": "u2-st-reading",
               "kind": "TEACH",
               "title": "Read what the book provides",
-              "body": "Fluency practice in this unit is book-directed. The app will not generate short phrases. Re-run letter recognition if a form is still slow.",
+              "body": "Fluency practice in this unit is book-directed. Re-run letter recognition if a form is still slow.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-decoding"
               ],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Read the Lesson 2 material in your copy aloud. Mark difficult letters for review.",
               "companionDirection": null,
@@ -1495,20 +2191,21 @@
         },
         {
           "id": "u2-s-record",
-          "title": "Self-record and tutor queue",
+          "title": "Self-record",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u2-limits"
+            "obj-u2-book"
           ],
           "steps": [
             {
               "id": "u2-st-record",
               "kind": "SPEAK",
               "title": "Optional recording without a score",
-              "body": "You may record yourself reading from your book or repeating a form. Play the take back. Mark it for a tutor if you want human review. The app never transcribes or scores it.",
+              "body": "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
@@ -1532,6 +2229,7 @@
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Do Lesson 2 in your book, including handwritten-form practice.",
               "companionDirection": null,
@@ -1541,30 +2239,29 @@
         },
         {
           "id": "u2-s-check",
-          "title": "Unit 2 check",
+          "title": "Unit 2 letter check",
           "estimatedMinutes": 8,
           "objectiveIds": [
-            "obj-u2-handwriting",
-            "obj-u2-review",
-            "obj-u2-limits"
+            "obj-u2-review"
           ],
           "steps": [
             {
               "id": "u2-st-check",
               "kind": "CHECK",
-              "title": "Confirm the unit limits",
-              "body": "Closed-response items about sources and scoring limits.",
+              "title": "Reviewed letter identities",
+              "body": "Closed-response items about printed letters from Unit 1.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [
-                "u2-i-handwriting-source",
-                "u2-i-review-unit1",
-                "u2-i-no-score"
+                "u2-i-в-not-b",
+                "u2-i-print-б",
+                "u2-i-я-identity"
               ],
+              "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": null,
               "companionDirection": null,
-              "remediationStepId": "u2-st-hw"
+              "remediationStepId": "u2-st-review"
             }
           ]
         }
@@ -1582,6 +2279,7 @@
       "number": 3,
       "id": "unit-3",
       "title": "Everyday phrases, naming things, basic grammar, and gender",
+      "shortLabel": "Everyday phrases",
       "topicSummary": "Everyday phrases, naming things, basic grammar, and gender",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 3,
@@ -1599,6 +2297,7 @@
       "number": 4,
       "id": "unit-4",
       "title": "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
+      "shortLabel": "Verbs and cases",
       "topicSummary": "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 4,
@@ -1616,6 +2315,7 @@
       "number": 5,
       "id": "unit-5",
       "title": "Questions, prepositional case, and indeclinable nouns",
+      "shortLabel": "Questions",
       "topicSummary": "Questions, prepositional case, and indeclinable nouns",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 5,
@@ -1633,6 +2333,7 @@
       "number": 6,
       "id": "unit-6",
       "title": "Possession, going places, accusative case, and personal names",
+      "shortLabel": "Possession",
       "topicSummary": "Possession, going places, accusative case, and personal names",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 6,
@@ -1650,6 +2351,7 @@
       "number": 7,
       "id": "unit-7",
       "title": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
+      "shortLabel": "Adjectives",
       "topicSummary": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 7,
@@ -1667,6 +2369,7 @@
       "number": 8,
       "id": "unit-8",
       "title": "Plurals, first spelling rules, existence questions, and buying things",
+      "shortLabel": "Plurals",
       "topicSummary": "Plurals, first spelling rules, existence questions, and buying things",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 8,
@@ -1684,6 +2387,7 @@
       "number": 9,
       "id": "unit-9",
       "title": "Numbers, genitive singular and plural, quantities, and money",
+      "shortLabel": "Numbers",
       "topicSummary": "Numbers, genitive singular and plural, quantities, and money",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 9,
@@ -1701,6 +2405,7 @@
       "number": 10,
       "id": "unit-10",
       "title": "Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives",
+      "shortLabel": "Having and absence",
       "topicSummary": "Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 10,
@@ -1718,6 +2423,7 @@
       "number": 11,
       "id": "unit-11",
       "title": "Past tense and reflexive verbs",
+      "shortLabel": "Past tense",
       "topicSummary": "Past tense and reflexive verbs",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 11,
@@ -1735,6 +2441,7 @@
       "number": 12,
       "id": "unit-12",
       "title": "Future, aspect introduction, dative case, additional spelling rules, and prepositional plural",
+      "shortLabel": "Future and dative",
       "topicSummary": "Future, aspect introduction, dative case, additional spelling rules, and prepositional plural",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 12,
@@ -1752,6 +2459,7 @@
       "number": 13,
       "id": "unit-13",
       "title": "Aspect in the past, tense use, infinitive aspect, and reported speech",
+      "shortLabel": "Aspect in the past",
       "topicSummary": "Aspect in the past, tense use, infinitive aspect, and reported speech",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 13,
@@ -1769,6 +2477,7 @@
       "number": 14,
       "id": "unit-14",
       "title": "Aspect in the future and impersonal constructions",
+      "shortLabel": "Aspect in the future",
       "topicSummary": "Aspect in the future and impersonal constructions",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 14,
@@ -1786,6 +2495,7 @@
       "number": 15,
       "id": "unit-15",
       "title": "Requests, the imperative, and consolidation of aspect use",
+      "shortLabel": "Requests",
       "topicSummary": "Requests, the imperative, and consolidation of aspect use",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 15,
@@ -1803,6 +2513,7 @@
       "number": 16,
       "id": "unit-16",
       "title": "Instrumental case, selected demonstratives, and surname declension",
+      "shortLabel": "Instrumental",
       "topicSummary": "Instrumental case, selected demonstratives, and surname declension",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 16,
@@ -1820,6 +2531,7 @@
       "number": 17,
       "id": "unit-17",
       "title": "Time, date, age, ordinal numbers, months, and years",
+      "shortLabel": "Time and dates",
       "topicSummary": "Time, date, age, ordinal numbers, months, and years",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 17,
@@ -1837,6 +2549,7 @@
       "number": 18,
       "id": "unit-18",
       "title": "Comparative, superlative, and relative clauses",
+      "shortLabel": "Comparison",
       "topicSummary": "Comparative, superlative, and relative clauses",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 18,
@@ -1854,6 +2567,7 @@
       "number": 19,
       "id": "unit-19",
       "title": "Conditional, obligation, and prefixes",
+      "shortLabel": "Conditionals",
       "topicSummary": "Conditional, obligation, and prefixes",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 19,
@@ -1871,6 +2585,7 @@
       "number": 20,
       "id": "unit-20",
       "title": "Verbs of motion: going, running, and bringing",
+      "shortLabel": "Motion verbs",
       "topicSummary": "Verbs of motion: going, running, and bringing",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 20,
@@ -1888,6 +2603,7 @@
       "number": 21,
       "id": "unit-21",
       "title": "Further possession and purpose",
+      "shortLabel": "Purpose",
       "topicSummary": "Further possession and purpose",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 21,
@@ -1905,6 +2621,7 @@
       "number": 22,
       "id": "unit-22",
       "title": "Number declension, both, collective numerals, and fractions",
+      "shortLabel": "Number forms",
       "topicSummary": "Number declension, both, collective numerals, and fractions",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 22,
@@ -1922,6 +2639,7 @@
       "number": 23,
       "id": "unit-23",
       "title": "Time expressions covering when and duration",
+      "shortLabel": "Duration",
       "topicSummary": "Time expressions covering when and duration",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 23,
@@ -1939,6 +2657,7 @@
       "number": 24,
       "id": "unit-24",
       "title": "Negation and placement of the particle не",
+      "shortLabel": "Negation",
       "topicSummary": "Negation and placement of the particle не",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 24,
@@ -1956,6 +2675,7 @@
       "number": 25,
       "id": "unit-25",
       "title": "Diminutives, proper names, and politeness",
+      "shortLabel": "Names and politeness",
       "topicSummary": "Diminutives, proper names, and politeness",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 25,
@@ -1973,6 +2693,7 @@
       "number": 26,
       "id": "unit-26",
       "title": "Indefinite pronouns, word order, and letter writing",
+      "shortLabel": "Word order",
       "topicSummary": "Indefinite pronouns, word order, and letter writing",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 26,
@@ -1990,6 +2711,7 @@
       "number": 27,
       "id": "unit-27",
       "title": "Participles: types and stress",
+      "shortLabel": "Participles",
       "topicSummary": "Participles: types and stress",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 27,
@@ -2007,6 +2729,7 @@
       "number": 28,
       "id": "unit-28",
       "title": "Verbal adverbs",
+      "shortLabel": "Verbal adverbs",
       "topicSummary": "Verbal adverbs",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 28,
@@ -2024,6 +2747,7 @@
       "number": 29,
       "id": "unit-29",
       "title": "Bookish style, active participles, punctuation, and short-form adjectives",
+      "shortLabel": "Bookish style",
       "topicSummary": "Bookish style, active participles, punctuation, and short-form adjectives",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 29,
@@ -2041,6 +2765,7 @@
       "number": 30,
       "id": "unit-30",
       "title": "Abbreviations, names of Russian letters, and particles",
+      "shortLabel": "Particles",
       "topicSummary": "Abbreviations, names of Russian letters, and particles",
       "installState": "NOT_YET_INSTALLED",
       "penguinLesson": 30,
@@ -2059,6 +2784,9 @@
     "generatedRussianWords": 0,
     "penguinProseAssets": 0,
     "catalogAudioBoundToUnits": 0,
-    "unverifiedExampleWords": 0
+    "unverifiedExampleWords": 0,
+    "futureRussianItems": 0,
+    "handwritingAssets": 0,
+    "mappedPronunciationAudio": 0
   }
 }
