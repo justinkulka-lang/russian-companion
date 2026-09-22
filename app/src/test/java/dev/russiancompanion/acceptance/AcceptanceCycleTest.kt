@@ -13,6 +13,7 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextReplacement
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.export.openAppRecording
 import dev.russiancompanion.data.export.readAppRecording
 import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.CompletionState
@@ -77,9 +78,12 @@ class AcceptanceCycleTest {
         val exportFile = File(context.cacheDir, "acceptance-cycle.zip")
         compose.setContent {
             CompanionApp(
-                gateway = RoomNavigationGateway(store, { null }, capture) { reference ->
-                    readAppRecording(context, reference)
-                },
+                gateway = RoomNavigationGateway(
+                    store,
+                    { null },
+                    capture,
+                    openRecording = { reference -> openAppRecording(context, reference) },
+                ),
                 onRetryOpen = {},
                 today = { "2026-09-21" },
                 recordedAt = { "2026-09-21T09:%02d".format(stamp++) },

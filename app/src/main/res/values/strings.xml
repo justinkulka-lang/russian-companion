@@ -5,6 +5,7 @@
     <string name="navigate_home">Home</string>
     <string name="navigate_next">Next</string>
     <string name="navigate_retry">Retry</string>
+    <string name="work_in_progress">This action is in progress.</string>
 
     <string name="onboarding_title">Onboarding</string>
     <string name="onboarding_identity">This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.</string>
@@ -19,6 +20,7 @@
     <string name="local_data_message">Local data could not be opened. Bundled content and user data are affected.</string>
 
     <string name="home_title">Home</string>
+    <string name="home_build_identity">Version %1$s · %2$s</string>
     <string name="home_current_lesson">Current lesson: %1$s</string>
     <string name="home_no_plan">No plan is loaded.</string>
     <string name="home_select_lesson">Select the current lesson</string>

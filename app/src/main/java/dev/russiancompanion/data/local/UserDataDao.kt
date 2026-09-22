@@ -54,6 +54,12 @@ internal abstract class UserDataDao {
     @Query("SELECT * FROM recording_records ORDER BY createdAtLocal, id")
     abstract fun recordings(): List<RecordingRecordEntity>
 
+    @Query("SELECT * FROM recording_records WHERE audioModelId = :audioModelId ORDER BY createdAtLocal, id")
+    abstract fun recordingsFor(audioModelId: String): List<RecordingRecordEntity>
+
+    @Query("DELETE FROM recording_records WHERE id IN (:ids)")
+    abstract fun deleteRecordings(ids: List<String>)
+
     @Update
     abstract fun updateRecording(record: RecordingRecordEntity)
 
@@ -68,6 +74,9 @@ internal abstract class UserDataDao {
 
     @Upsert
     abstract fun upsertTutorRequirement(requirement: GateTutorRequirementEntity)
+
+    @Query("SELECT * FROM gate_tutor_requirements")
+    abstract fun allTutorRequirements(): List<GateTutorRequirementEntity>
 
     @Query("SELECT * FROM gate_tutor_requirements WHERE gateDefinitionId = :gateId")
     abstract fun tutorRequirement(gateId: String): GateTutorRequirementEntity?

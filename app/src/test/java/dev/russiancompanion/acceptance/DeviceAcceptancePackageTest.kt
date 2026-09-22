@@ -38,7 +38,9 @@ class DeviceAcceptancePackageTest {
             "release/acceptance/forms/AT-030.md",
             "release/acceptance/forms/AT-031-OWNER-DECISION.md",
         )
+        val templatePaths = formPaths.map { it.replace("/forms/", "/templates/") }
         val forms = formPaths.associateWith { File(root, it).readText() }
+        val templates = templatePaths.associateWith { File(root, it).readText() }
 
         assertTrue(instructions.contains("Galaxy S26 Ultra"))
         listOf("AT-001", "AT-002", "AT-004", "AT-008", "AT-009", "AT-010", "AT-020", "AT-030", "AT-031")
@@ -47,10 +49,10 @@ class DeviceAcceptancePackageTest {
         assertTrue(instructions.contains("sha256sum"))
         assertTrue(instructions.contains("acceptance-candidate-debug-apk"))
         assertTrue(instructions.contains("Do not rebuild locally"))
-        assertTrue(instructions.contains("release/evidence/AT-002.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-008.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-009.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-010.txt"))
+        assertTrue(instructions.contains("release/evidence/AT-002.json"))
+        assertTrue(instructions.contains("release/evidence/AT-008.json"))
+        assertTrue(instructions.contains("release/evidence/AT-009.json"))
+        assertTrue(instructions.contains("release/evidence/AT-010.json"))
         assertTrue(instructions.contains("AT-008-rights-inventory.tsv"))
         assertTrue(instructions.contains("SHARE_ALIKE_UNCONFIRMED"))
         assertTrue(instructions.contains("Use your copy of the book for this lesson"))
@@ -63,34 +65,45 @@ class DeviceAcceptancePackageTest {
         assertTrue(instructions.contains("NOT_APPROVED"))
         assertFalse(instructions.contains("\"state\": \"RETAINED\""))
 
-        assertTrue(workflow.contains("actions/upload-artifact@v4"))
+        assertTrue(workflow.contains("actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02"))
         assertTrue(workflow.contains("acceptance-candidate-debug-apk"))
         assertTrue(workflow.contains("artifact-identity.json"))
         assertTrue(workflow.contains("if-no-files-found: error"))
+        assertTrue(workflow.contains("lintDebug"))
+        assertTrue(workflow.contains("verifyReleaseGateAttachment"))
 
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
-        assertEquals("0.0.0", candidate.getValue("versionName").jsonPrimitive.content)
-        assertEquals(true, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
+        assertEquals("1.0.0", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
+        assertEquals(JsonNull, candidate.getValue("sourceCommit"))
+        val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
+        assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
+        assertEquals(
+            dev.russiancompanion.release.computeReleaseSourceDigest(root),
+            sourceDigest,
+        )
+        assertEquals(false, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
+        assertEquals(false, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
+        val preserved = candidate.getValue("preservedPriorCandidate").jsonObject
         assertEquals(
             "0602edaeb05a353de5e994c127eb87b5b97078a3",
-            candidate.getValue("sourceCommit").jsonPrimitive.content,
+            preserved.getValue("sourceCommit").jsonPrimitive.content,
+        )
+        assertEquals("0.0.0", preserved.getValue("versionName").jsonPrimitive.content)
+        val preservedArtifact = preserved.getValue("artifact").jsonObject
+        assertEquals("35740338300", preservedArtifact.getValue("runId").jsonPrimitive.content)
+        assertEquals(
+            "1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e",
+            preservedArtifact.getValue("sha256").jsonPrimitive.content,
         )
         val artifact = candidate.getValue("artifact").jsonObject
         assertEquals("acceptance-candidate-debug-apk", artifact.getValue("artifactName").jsonPrimitive.content)
         val artifactStatus = artifact.getValue("status").jsonPrimitive.content
-        assertTrue(artifactStatus == "PENDING_SUCCESSFUL_WORKFLOW" || artifactStatus == "RECORDED")
-        if (artifactStatus == "RECORDED") {
-            val sha256 = artifact.getValue("sha256").jsonPrimitive.content
-            assertEquals(64, sha256.length)
-            assertTrue(sha256.matches(Regex("[0-9a-f]{64}")))
-            assertTrue(artifact.getValue("runUrl").jsonPrimitive.content.contains("/actions/runs/"))
-            assertTrue(artifact.getValue("apkBytes").jsonPrimitive.content.toLong() > 0L)
-        } else {
-            assertEquals(JsonNull, artifact.getValue("sha256"))
-            assertEquals(JsonNull, artifact.getValue("runUrl"))
-        }
+        assertEquals("NOT_FROZEN", artifactStatus)
+        assertEquals(JsonNull, artifact.getValue("sha256"))
+        assertEquals(JsonNull, artifact.getValue("runUrl"))
         assertEquals("MISSING", candidate.getValue("retainedEvidence").jsonPrimitive.content)
         val unexecuted = candidate.getValue("unexecutedProcedures").jsonArray.map {
             it.jsonPrimitive.content
@@ -120,6 +133,12 @@ class DeviceAcceptancePackageTest {
             assertFalse(body.contains("Result: **PASS**"))
             assertFalse(body.contains("Result: **FAIL**"))
         }
+        templates.values.forEach { body ->
+            assertTrue(body.contains("NOT_EXECUTED"))
+            assertFalse(body.contains("Result: **PASS**"))
+            assertFalse(body.contains("Result: **FAIL**"))
+        }
+        assertTrue(instructions.contains("release/acceptance/templates/"))
         val owner = forms.getValue("release/acceptance/forms/AT-031-OWNER-DECISION.md")
         assertTrue(owner.contains("Reserved for the Product Owner"))
         assertTrue(owner.contains("AT-002 retained: no"))
@@ -145,6 +164,7 @@ class DeviceAcceptancePackageTest {
         val assessment = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
         assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED))

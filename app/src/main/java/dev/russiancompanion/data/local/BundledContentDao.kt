@@ -101,6 +101,9 @@ internal abstract class BundledContentDao {
     @Query("SELECT * FROM gate_definitions WHERE id = :id")
     abstract fun gate(id: String): GateDefinitionEntity?
 
+    @Query("SELECT * FROM gate_conditions ORDER BY gateDefinitionId, sortOrder, id")
+    abstract fun allConditions(): List<GateConditionEntity>
+
     @Query("SELECT * FROM gate_conditions WHERE gateDefinitionId = :gateId ORDER BY sortOrder, id")
     abstract fun conditions(gateId: String): List<GateConditionEntity>
 
@@ -115,6 +118,9 @@ internal abstract class BundledContentDao {
 
     @Query("SELECT * FROM source_records ORDER BY id")
     abstract fun sources(): List<SourceRecordEntity>
+
+    @Query("SELECT * FROM source_texts ORDER BY id")
+    abstract fun allSourceTexts(): List<SourceTextEntity>
 
     @Query("SELECT * FROM source_texts WHERE id = :id")
     abstract fun sourceText(id: String): SourceTextEntity?
@@ -167,7 +173,12 @@ internal abstract class BundledContentDao {
         excludeGatesForExcludedSegments()
         excludeMissing(bundle.audio.map { it.id }, ::excludeAllAudio, ::excludeAudioNotIn)
         excludeMissing(bundle.drills.map { it.id }, ::excludeAllDrills, ::excludeDrillsNotIn)
-        upsertSeedState(BundledSeedStateEntity(contentVersion = bundle.contentVersion))
+        upsertSeedState(
+            BundledSeedStateEntity(
+                contentVersion = bundle.contentVersion,
+                contentHash = bundle.contentHash,
+            ),
+        )
     }
 
     private fun excludeMissing(

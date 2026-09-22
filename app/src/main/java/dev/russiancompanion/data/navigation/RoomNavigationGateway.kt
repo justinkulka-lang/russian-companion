@@ -6,7 +6,7 @@ import dev.russiancompanion.data.export.ExportDecisionRow
 import dev.russiancompanion.data.export.ExportEvidenceRow
 import dev.russiancompanion.data.export.ExportLogRow
 import dev.russiancompanion.data.export.ExportProgressRow
-import dev.russiancompanion.data.export.buildExportZip
+import dev.russiancompanion.data.export.writeExportZip
 import dev.russiancompanion.data.export.exportAudioName
 import dev.russiancompanion.data.local.ActivityCategory
 import dev.russiancompanion.data.local.ActivityLogEntity
@@ -30,6 +30,7 @@ import dev.russiancompanion.domain.navigation.GateOption
 import dev.russiancompanion.domain.navigation.LessonOption
 import dev.russiancompanion.domain.navigation.LicenseNoticeOption
 import dev.russiancompanion.domain.navigation.NavigationGateway
+import dev.russiancompanion.domain.navigation.NavigationSurface
 import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.OnboardingConfirmation
@@ -54,6 +55,7 @@ import dev.russiancompanion.domain.progress.activityAttestationLabel
 import dev.russiancompanion.domain.progress.evidenceAttestationLabel
 import dev.russiancompanion.domain.progress.reviewProgress
 import java.io.IOException
+import java.io.InputStream
 import java.io.OutputStream
 import java.util.UUID
 
@@ -63,99 +65,85 @@ internal class RoomNavigationGateway(
     private val practiceAudio: PracticeAudio,
     private val readCatalogNotice: () -> String? = { null },
     private val readLicenseNotices: () -> List<LicenseNoticeOption> = { emptyList() },
-    private val readRecordingBytes: (String) -> ByteArray? = { null },
+    private val openRecording: (String) -> InputStream? = { null },
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
-        val outcome = store.seedOutcome()
-        val plans = store.eligiblePlans()
-        val lessons = store.eligibleSegments().map { segment ->
+        return snapshot(localDate, NavigationSurface.FULL)
+    }
+
+    override fun snapshot(localDate: String, surface: NavigationSurface): NavigationSnapshot {
+        val bundle = store.navigationBundle(localDate)
+        val includePractice = surface != NavigationSurface.ATTRIBUTIONS
+        val includeAttributions = surface == NavigationSurface.ATTRIBUTIONS || surface == NavigationSurface.FULL
+        val sources = bundle.sources.associateBy { it.id }
+        val texts = bundle.texts.associateBy { it.id }
+        val rightsById = bundle.rights.associateBy { it.id }
+        val recordingsByModel = bundle.recordings.groupBy { it.audioModelId }
+        val playable = if (includePractice) {
+            practiceAudio.playableReferences(bundle.eligibleAudio.map { it.localAudioReference })
+        } else {
+            emptySet()
+        }
+        val audio = if (includePractice) {
+            bundle.eligibleAudio.mapNotNull { model ->
+                val textId = model.sourceTextId ?: return@mapNotNull null
+                val text = texts[textId] ?: return@mapNotNull null
+                val source = model.sourceRecordId?.let { sources[it] }
+                val modelRecordings = recordingsByModel[model.id].orEmpty()
+                AudioOption(
+                    id = model.id,
+                    stressMarkedText = text.stressMarkedText,
+                    localAudioReference = model.localAudioReference,
+                    playable = model.localAudioReference in playable,
+                    licenseName = source?.licenseName.orEmpty(),
+                    attribution = source?.attribution.orEmpty(),
+                    hasRecording = modelRecordings.isNotEmpty(),
+                    completed = modelRecordings.any { it.completionState == CompletionState.COMPLETED },
+                )
+            }
+        } else {
+            emptyList()
+        }
+        val learner = bundle.learner
+        val segmentId = learner.activeSegmentId
+        val lessons = bundle.segments.map { segment ->
             LessonOption(
                 id = segment.id,
                 lessonReference = segment.lessonReference,
-                planCount = plans.count { it.segmentId == segment.id },
+                planCount = bundle.plans.count { it.segmentId == segment.id },
             )
         }
-        val learner = store.learner()
-        val recordings = store.recordings()
-        val sourceEntities = store.sources()
-        val sources = sourceEntities.associateBy { it.id }
-        val rightsRecords = store.rights()
-        val rightsById = rightsRecords.associateBy { it.id }
-        val storedAudio = store.allAudio()
-        val audio = store.eligibleAudio().mapNotNull { model ->
-            val textId = model.sourceTextId ?: return@mapNotNull null
-            val text = store.sourceText(textId) ?: return@mapNotNull null
-            val source = model.sourceRecordId?.let { sources[it] }
-            val modelRecordings = recordings.filter { it.audioModelId == model.id }
-            AudioOption(
-                id = model.id,
-                stressMarkedText = text.stressMarkedText,
-                localAudioReference = model.localAudioReference,
-                playable = practiceAudio.modelPlayable(model.localAudioReference),
-                licenseName = source?.licenseName.orEmpty(),
-                attribution = source?.attribution.orEmpty(),
-                hasRecording = modelRecordings.isNotEmpty(),
-                completed = modelRecordings.any { it.completionState == CompletionState.COMPLETED },
+        val segmentPlans = if (segmentId == null) emptyList() else bundle.plans.filter { it.segmentId == segmentId }
+        val instances = bundle.instances.map { instance ->
+            PlanInstanceView(
+                planDefinitionId = instance.planDefinitionId,
+                completed = instance.completionState == CompletionState.COMPLETED,
             )
         }
-        val segmentId = learner.activeSegmentId
-        val segmentPlans = if (segmentId == null) emptyList() else plans.filter { it.segmentId == segmentId }
-        val instances = if (segmentId == null) {
-            emptyList()
-        } else {
-            store.planInstances(localDate, segmentId).map { instance ->
-                PlanInstanceView(
-                    planDefinitionId = instance.planDefinitionId,
-                    completed = instance.completionState == CompletionState.COMPLETED,
-                )
-            }
-        }
-        val rawLogs = store.activityLogs()
-        val activityViews = rawLogs.map { log -> activityView(log) }
+        val activityViews = bundle.logs.map { log -> activityView(log) }
         val progress = if (activityViews.any { it == null }) {
             ProgressReview.unreadable()
         } else {
             reviewProgress(activityViews.filterNotNull())
         }
         val summaryLogs = if (progress.readable) activityViews.filterNotNull() else emptyList()
-        val decisions = store.decisions()
-        val gates = store.eligibleGates().filter { segmentId == null || it.segmentId == segmentId }
+        val decisions = bundle.decisions
+        val gates = bundle.gates.filter { segmentId == null || it.segmentId == segmentId }
+        val evidenceByGate = bundle.evidence.groupBy { it.gateDefinitionId }
         val gateDetails = gates.map { gate ->
             val latest = decisions
                 .filter { it.gateDefinitionId == gate.id }
                 .maxWithOrNull(compareBy({ it.evaluatedAtLocal }, { it.id }))
             gateDetailView(
                 gate = gate,
-                conditions = store.conditions(gate.id),
-                tutorRequired = store.tutorRequirement(gate.id) != null,
-                evidence = store.evidenceFor(gate.id),
+                conditions = bundle.conditionsByGate[gate.id].orEmpty(),
+                tutorRequired = gate.id in bundle.tutorGateIds,
+                evidence = evidenceByGate[gate.id].orEmpty(),
                 recordedStatus = latest?.status,
             )
         }
-        return NavigationSnapshot(
-            localDataOpen = true,
-            seedCorrupt = outcome?.status == SeedApplyStatus.CORRUPT,
-            seedAbsent = outcome?.status == SeedApplyStatus.ABSENT,
-            onboardingCompleted = learner.onboardingCompleted,
-            activeSegmentId = segmentId,
-            activeLessonReference = lessons.firstOrNull { it.id == segmentId }?.lessonReference,
-            lessons = lessons,
-            audio = audio,
-            recordings = recordings.map { recording ->
-                RecordingOption(
-                    id = recording.id,
-                    audioModelId = recording.audioModelId,
-                    localFileReference = recording.localFileReference,
-                    markedForTutorReview = recording.markedForTutorReview,
-                    completed = recording.completionState == CompletionState.COMPLETED,
-                    readable = practiceAudio.recordingReadable(recording.localFileReference),
-                )
-            },
-            gates = store.eligibleGates().map { gate ->
-                GateOption(id = gate.id, displayedRuleText = gate.displayedRuleText)
-            },
-            eligibleDrillCount = store.eligibleDrills().size,
-            attributions = sourceEntities.map { source ->
+        val attributions = if (includeAttributions) {
+            bundle.sources.map { source ->
                 AttributionOption(
                     sourceId = source.id,
                     licenseName = source.licenseName,
@@ -166,11 +154,49 @@ internal class RoomNavigationGateway(
                     redistributionBasis = source.redistributionBasis,
                     shareAlikeTreatment = source.shareAlikeTreatment,
                 )
+            }
+        } else {
+            emptyList()
+        }
+        val assetRecords = if (includeAttributions) {
+            assetInventory(bundle.allAudio, rightsById, bundle.rights)
+        } else {
+            emptyList()
+        }
+        val outcome = store.seedOutcome()
+        return NavigationSnapshot(
+            localDataOpen = true,
+            seedCorrupt = outcome?.status == SeedApplyStatus.CORRUPT,
+            seedAbsent = outcome?.status == SeedApplyStatus.ABSENT,
+            onboardingCompleted = learner.onboardingCompleted,
+            activeSegmentId = segmentId,
+            activeLessonReference = lessons.firstOrNull { it.id == segmentId }?.lessonReference,
+            lessons = lessons,
+            audio = audio,
+            recordings = if (includePractice) {
+                bundle.recordings.map { recording ->
+                    RecordingOption(
+                        id = recording.id,
+                        audioModelId = recording.audioModelId,
+                        localFileReference = recording.localFileReference,
+                        markedForTutorReview = recording.markedForTutorReview,
+                        completed = recording.completionState == CompletionState.COMPLETED,
+                        readable = practiceAudio.recordingReadable(recording.localFileReference),
+                    )
+                }
+            } else {
+                emptyList()
             },
-            assetRecords = assetInventory(storedAudio, rightsById, rightsRecords),
+            gates = bundle.gates.map { gate ->
+                GateOption(id = gate.id, displayedRuleText = gate.displayedRuleText)
+            },
+            eligibleDrillCount = bundle.eligibleDrillCount,
+            eligibleAudioCount = bundle.eligibleAudio.size,
+            attributions = attributions,
+            assetRecords = assetRecords,
             shareAlikeBlocksRelease = outcome?.shareAlikeBlocksRelease == true,
-            catalogNotice = readCatalogNotice().orEmpty(),
-            licenseNotices = readLicenseNotices(),
+            catalogNotice = if (includeAttributions) readCatalogNotice().orEmpty() else "",
+            licenseNotices = if (includeAttributions) readLicenseNotices() else emptyList(),
             dailyPlan = assembleDailyPlan(
                 definitions = segmentPlans.mapNotNull { plan ->
                     val activity = checklistActivity(plan.activityType) ?: return@mapNotNull null
@@ -413,23 +439,16 @@ internal class RoomNavigationGateway(
                     markedForTutorReview = recording.markedForTutorReview,
                     completionState = recording.completionState.name,
                     fileName = exportAudioName(recording.id, recording.localFileReference),
-                    bytes = readRecordingBytes(recording.localFileReference),
+                    openStream = { openRecording(recording.localFileReference) },
                     activityLogId = recording.activityLogId,
                 )
             }
-            when (val built = buildExportZip(logRows, evidenceRows, decisionRows, progressRows, recordings)) {
+            when (val built = writeExportZip(logRows, evidenceRows, decisionRows, progressRows, recordings, destination)) {
                 is BuiltPackage.RecordingUnreadable -> {
                     recordExport(recordedAtLocal, fileName, document, ExportStatus.FAILED)
                     ExportUpdate.RecordingUnreadable(built.recordingId)
                 }
                 is BuiltPackage.Ready -> {
-                    try {
-                        destination.write(built.bytes)
-                        destination.flush()
-                    } catch (_: IOException) {
-                        recordExport(recordedAtLocal, fileName, document, ExportStatus.NOT_CONFIRMED)
-                        return ExportUpdate.NotConfirmed
-                    }
                     recordExport(
                         recordedAtLocal = recordedAtLocal,
                         destinationFileName = fileName,

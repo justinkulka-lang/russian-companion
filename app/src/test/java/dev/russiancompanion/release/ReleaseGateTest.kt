@@ -356,9 +356,89 @@ class ReleaseGateTest {
     }
 
     @Test
+    fun aNonemptyTextFileDoesNotSatisfyRetainedEvidence() {
+        val root = Files.createTempDirectory("release-evidence").toFile()
+        val relative = "release/evidence/AT-004.json"
+        File(root, relative).apply {
+            parentFile?.mkdirs()
+            writeText("any nonempty text that is not the evidence schema")
+        }
+        val manifest = manifest(
+            """{"procedure":"AT-004","state":"RETAINED","evidencePath":"$relative"}""",
+        )
+        val blockers = assessPackagedRelease(
+            SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
+            manifest,
+            root,
+        ).blockers
+        assertTrue(blockers.contains(ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED))
+    }
+
+    @Test
+    fun ownerDecisionCannotClearReleaseWithoutEveryMandatoryProcedure() {
+        val root = Files.createTempDirectory("release-evidence").toFile()
+        val records = mutableListOf<String>()
+        for (procedure in listOf("AT-004", "AT-020", "AT-030", "AT-031")) {
+            val relative = "release/evidence/$procedure.json"
+            File(root, relative).apply {
+                parentFile?.mkdirs()
+                writeText(procedureEvidence(procedure))
+            }
+            records += """{"procedure":"$procedure","state":"RETAINED","evidencePath":"$relative"}"""
+        }
+        val blockers = assessPackagedRelease(
+            SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
+            manifest(*records.toTypedArray()),
+            root,
+        ).blockers
+        assertTrue(blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.NAVIGATION_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.ATTRIBUTIONS_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.DEVICE_GATE_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.CATALOG_LICENSE_NOT_RETAINED))
+        assertTrue(blockers.contains(ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED))
+        assertFalse(blockers.contains(ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED))
+    }
+
+    @Test
+    fun deviceProceduresRequireANamedDeviceAndMatchingCandidateIdentity() {
+        val (root, _) = retainedFixture()
+        File(root, "release/evidence/AT-001.json").writeText(
+            procedureEvidence("AT-001", device = null),
+        )
+        val missingDevice = assessPackagedRelease(
+            SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
+            File(root, "unused").let {
+                val records = REQUIRED_RELEASE_PROCEDURES.map { (procedure, _) ->
+                    """{"procedure":"$procedure","state":"RETAINED","evidencePath":"release/evidence/$procedure.json"}"""
+                }
+                manifest(*records.toTypedArray())
+            },
+            root,
+        )
+        assertTrue(missingDevice.blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
+        File(root, "release/evidence/AT-001.json").writeText(procedureEvidence("AT-001"))
+        File(root, "release/evidence/AT-002.json").writeText(
+            procedureEvidence("AT-002", digest = "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"),
+        )
+        val mismatched = assessPackagedRelease(
+            SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
+            File(root, "unused").let {
+                val records = REQUIRED_RELEASE_PROCEDURES.map { (procedure, _) ->
+                    """{"procedure":"$procedure","state":"RETAINED","evidencePath":"release/evidence/$procedure.json"}"""
+                }
+                manifest(*records.toTypedArray())
+            },
+            root,
+        )
+        assertEquals(missingEvidenceBlockers, mismatched.blockers)
+    }
+
+    @Test
     fun anUndocumentedBooleanDoesNotMarkEvidenceRetained() {
         val (root, _) = retainedFixture()
-        val manifest = """{"schemaVersion":1,"offlineVerification":true,"records":[]}"""
+        val manifest = """{"schemaVersion":2,"offlineVerification":true,"records":[]}"""
         val blockers = assessPackagedRelease(
             SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
             manifest,
@@ -457,18 +537,41 @@ class ReleaseGateTest {
     private fun retainedFixture(): Pair<File, String> {
         val root = Files.createTempDirectory("release-evidence").toFile()
         val records = mutableListOf<String>()
-        for (procedure in listOf("AT-004", "AT-020", "AT-030", "AT-031")) {
-            val relative = "release/evidence/$procedure.txt"
+        for (procedure in REQUIRED_RELEASE_PROCEDURES.map { it.first }) {
+            val relative = "release/evidence/$procedure.json"
             val evidence = File(root, relative)
             evidence.parentFile?.mkdirs()
-            evidence.writeText("Fixture record for $procedure.")
+            evidence.writeText(procedureEvidence(procedure))
             records += """{"procedure":"$procedure","state":"RETAINED","evidencePath":"$relative"}"""
         }
         return root to manifest(*records.toTypedArray())
     }
 
+    private fun procedureEvidence(
+        procedure: String,
+        result: String = "PASS",
+        commit: String = VALID_COMMIT,
+        hash: String = VALID_HASH,
+        digest: String = VALID_HASH,
+        versionName: String = "1.0.0",
+        versionCode: Int = 2,
+        applicationId: String = "dev.russiancompanion",
+        device: String? = if (procedure == "AT-031") null else "Galaxy S26 Ultra",
+        ownerDecision: String? = if (procedure == "AT-031") "APPROVED" else null,
+    ): String {
+        val deviceField = if (device == null) "" else ""","deviceModel":"$device""""
+        val ownerField = if (ownerDecision == null) {
+            ""
+        } else {
+            ""","ownerDecision":"$ownerDecision","mandatoryProcedures":${
+                proceduresBeforeOwner.joinToString(prefix = "[", postfix = "]") { "\"$it\"" }
+            }"""
+        }
+        return """{"schemaVersion":2,"procedure":"$procedure","result":"$result","candidateCommit":"$commit","apkSha256":"$hash","sourceDigest":"$digest","versionName":"$versionName","versionCode":$versionCode,"applicationId":"$applicationId","executedAt":"2026-09-22T12:00"$deviceField,"artifactHashes":{"form":"$hash"}$ownerField}"""
+    }
+
     private fun manifest(vararg records: String): String {
-        return """{"schemaVersion":1,"records":[${records.joinToString(",")}]}"""
+        return """{"schemaVersion":2,"records":[${records.joinToString(",")}]}"""
     }
 
     private fun preparedCatalog(
@@ -525,12 +628,29 @@ class ReleaseGateTest {
     )
 
     private companion object {
+        const val VALID_COMMIT = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        const val VALID_HASH = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        val proceduresBeforeOwner = listOf(
+            "AT-001",
+            "AT-002",
+            "AT-004",
+            "AT-008",
+            "AT-009",
+            "AT-010",
+            "AT-020",
+            "AT-030",
+        )
         val missingEvidenceBlockers = listOf(
+            ReleaseBlocker.INSTALLATION_NOT_RETAINED,
+            ReleaseBlocker.NAVIGATION_NOT_RETAINED,
             ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED,
+            ReleaseBlocker.ATTRIBUTIONS_NOT_RETAINED,
+            ReleaseBlocker.DEVICE_GATE_NOT_RETAINED,
+            ReleaseBlocker.CATALOG_LICENSE_NOT_RETAINED,
             ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED,
             ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED,
             ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
         )
-        val packagedBlockers = missingEvidenceBlockers
+        val packagedBlockers = missingEvidenceBlockers + ReleaseBlocker.CANDIDATE_NOT_FROZEN
     }
 }

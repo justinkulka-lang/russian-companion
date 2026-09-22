@@ -769,6 +769,42 @@ class DatabaseMigrationTest {
         )
     }
 
+    @Test
+    fun version4SeedStateGainsAContentHashColumn() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("audit-v4.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(4) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `bundled_seed_state` (
+                                `id` INTEGER NOT NULL,
+                                `contentVersion` INTEGER NOT NULL,
+                                `appliedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL(
+            "INSERT INTO bundled_seed_state (id, contentVersion, appliedAtLocal) VALUES (1, 1, '2026-09-21T09:00')",
+        )
+        MIGRATION_4_5.migrate(db)
+        val cursor = db.query("SELECT contentHash FROM bundled_seed_state WHERE id = 1")
+        cursor.moveToFirst()
+        assertEquals("", cursor.getString(0))
+        cursor.close()
+        helper.close()
+    }
+
     private data class MigratedDecision(
         val snapshot: String,
         val evidenceIds: List<String>,

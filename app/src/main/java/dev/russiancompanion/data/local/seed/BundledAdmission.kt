@@ -36,6 +36,7 @@ import dev.russiancompanion.domain.practice.admitAudioModels
 
 internal data class PreparedBundle(
     val contentVersion: Int,
+    val contentHash: String = "",
     val segments: List<CourseSegmentEntity>,
     val plans: List<PlanDefinitionEntity>,
     val gates: List<GateDefinitionEntity>,

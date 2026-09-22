@@ -80,9 +80,12 @@ class PracticeStoreTest {
             assertFalse(log.selfAttested)
             assertEquals(log.id, saved.activityLogId)
             val exported = ByteArrayOutputStream()
-            val update = RoomNavigationGateway(store, { null }, AndroidPracticeAudio(context)) {
-                byteArrayOf(1, 2)
-            }.exportLocal(exported, "2026-09-21T10:00", "practice-export.zip", null)
+            val update = RoomNavigationGateway(
+                store,
+                { null },
+                AndroidPracticeAudio(context),
+                openRecording = { byteArrayOf(1, 2).inputStream() },
+            ).exportLocal(exported, "2026-09-21T10:00", "practice-export.zip", null)
             assertTrue(update is ExportUpdate.Completed)
             val zipFile = File.createTempFile("practice-export", ".zip")
             zipFile.writeBytes(exported.toByteArray())

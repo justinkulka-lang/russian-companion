@@ -69,7 +69,10 @@ class NavigationShellTest {
             .assertDoesNotExist()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
-        compose.onNodeWithText("Back").performScrollTo().performClick()
+        val back = compose.onNodeWithText("Back")
+        back.assertExists()
+        runCatching { back.performScrollTo() }
+        back.performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().performClick()
         compose.onNodeWithText("Confirm lesson").performScrollTo().performClick()
         compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
@@ -135,11 +138,15 @@ class NavigationShellTest {
     }
 
     private fun clickText(text: String, substring: Boolean = true) {
-        compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+        compose.onNodeWithText(text, substring = substring).assertExists()
+        runCatching { compose.onNodeWithText(text, substring = substring).performScrollTo() }
+        compose.onNodeWithText(text, substring = substring).performClick()
     }
 
     private fun showText(text: String) {
-        compose.onNodeWithText(text).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText(text).assertExists()
+        runCatching { compose.onNodeWithText(text).performScrollTo() }
+        compose.onNodeWithText(text).assertIsDisplayed()
     }
 
     private fun show(gateway: dev.russiancompanion.domain.navigation.NavigationGateway?) {

@@ -21,6 +21,7 @@ import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
 import dev.russiancompanion.domain.practice.listenPlanSatisfiedByCompletions
 import dev.russiancompanion.domain.practice.recordingCommitAccepted
+import java.io.File
 import java.io.IOException
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutionException
@@ -28,6 +29,7 @@ import java.util.concurrent.Executors
 
 internal class LocalStore private constructor(
     private val database: AppDatabase,
+    private val recordingRoot: File? = null,
 ) : AutoCloseable {
     private val io = Executors.newSingleThreadExecutor()
     private val seeder = BundledContentSeeder(database)
@@ -403,7 +405,14 @@ internal class LocalStore private constructor(
             markedForTutorReview = markedForTutorReview,
             completionState = completionState,
         )
+        val superseded = database.users().recordingsFor(model.id)
+            .filter { it.completionState != CompletionState.COMPLETED }
         database.users().insertRecording(record)
+        if (superseded.isNotEmpty()) {
+            database.users().deleteRecordings(superseded.map { it.id })
+            superseded.forEach { stored -> deleteRecordingFile(stored.localFileReference) }
+        }
+        sweepOrphanRecordingFilesLocked()
         record
     }
 
@@ -440,6 +449,37 @@ internal class LocalStore private constructor(
     }
 
     fun recordings(): List<RecordingRecordEntity> = call { database.users().recordings() }
+
+    fun navigationBundle(localDate: String): NavigationBundle = call {
+        val learner = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: LearnerStateEntity.newUser()
+        val segmentId = learner.activeSegmentId
+        val date = localDate.takeIf { it.isNotBlank() }?.let(UserRecordRules::requireLocalDate)
+        NavigationBundle(
+            learner = learner,
+            segments = database.bundled().eligibleSegments(),
+            plans = database.bundled().eligiblePlans(),
+            instances = if (segmentId == null || date == null) {
+                emptyList()
+            } else {
+                database.users().planInstancesFor(date, segmentId)
+            },
+            recordings = database.users().recordings(),
+            sources = database.bundled().sources(),
+            texts = database.bundled().allSourceTexts(),
+            rights = database.bundled().rights(),
+            allAudio = database.bundled().allAudio(),
+            eligibleAudio = database.bundled().eligibleAudio(),
+            gates = database.bundled().eligibleGates(),
+            conditionsByGate = database.bundled().allConditions().groupBy { it.gateDefinitionId },
+            tutorGateIds = database.users().allTutorRequirements().map { it.gateDefinitionId }.toSet(),
+            evidence = database.users().allEvidence(),
+            decisions = database.users().decisions(),
+            logs = database.users().activityLogs(),
+            eligibleDrillCount = database.bundled().eligibleDrills().size,
+        )
+    }
+
+    fun sweepOrphanRecordingFiles() = call { sweepOrphanRecordingFilesLocked() }
 
     fun saveExport(record: ExportRecordEntity, packageCounts: ExportCounts? = null): ExportRecordEntity = call {
         val admission = exportCompletionAccepted(
@@ -587,6 +627,24 @@ internal class LocalStore private constructor(
         )
     }
 
+    private fun deleteRecordingFile(reference: String) {
+        val root = recordingRoot ?: return
+        if (reference.isBlank() || reference.contains("..") || reference.startsWith("/")) return
+        val target = File(root, File(reference).name)
+        if (target.isFile) target.delete()
+    }
+
+    private fun sweepOrphanRecordingFilesLocked() {
+        val root = recordingRoot ?: return
+        if (!root.isDirectory) return
+        val referenced = database.users().recordings().map { File(it.localFileReference).name }.toSet()
+        root.listFiles()?.forEach { file ->
+            if (file.isFile && file.name !in referenced) {
+                file.delete()
+            }
+        }
+    }
+
     private fun <T> call(block: () -> T): T {
         try {
             return io.submit(Callable(block)).get()
@@ -604,16 +662,17 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
                 .build()
-            val store = LocalStore(database)
+            val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
+            store.sweepOrphanRecordingFiles()
             return store
         }
 
         fun openInMemory(context: Context): LocalStore {
             val database = Room.inMemoryDatabaseBuilder(context, AppDatabase::class.java).build()
-            val store = LocalStore(database)
+            val store = LocalStore(database, File(context.filesDir, "recordings"))
             store.applySeed(null)
             return store
         }
@@ -671,3 +730,23 @@ internal class LocalStore private constructor(
         private fun readSeed(context: Context): String? = readPackagedSeed(context)
     }
 }
+
+internal data class NavigationBundle(
+    val learner: LearnerStateEntity,
+    val segments: List<CourseSegmentEntity>,
+    val plans: List<PlanDefinitionEntity>,
+    val instances: List<PlanInstanceEntity>,
+    val recordings: List<RecordingRecordEntity>,
+    val sources: List<SourceRecordEntity>,
+    val texts: List<SourceTextEntity>,
+    val rights: List<AssetRightsRecordEntity>,
+    val allAudio: List<AudioModelEntity>,
+    val eligibleAudio: List<AudioModelEntity>,
+    val gates: List<GateDefinitionEntity>,
+    val conditionsByGate: Map<String, List<GateConditionEntity>>,
+    val tutorGateIds: Set<String>,
+    val evidence: List<GateEvidenceEntity>,
+    val decisions: List<GateDecisionEntity>,
+    val logs: List<ActivityLogEntity>,
+    val eligibleDrillCount: Int,
+)

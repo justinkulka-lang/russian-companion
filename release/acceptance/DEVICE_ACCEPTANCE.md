@@ -16,6 +16,13 @@ Do not mark `release/retained-evidence.json` `RETAINED`. Do not fill
 AT-031. Do not run `assembleRelease` as a substitute for device
 evidence. Do not invent Russian, Penguin text, or procedure results.
 
+Immutable acceptance procedures live in
+`release/acceptance/DEVICE_ACCEPTANCE.md` and
+`release/acceptance/templates/`. Those files are part of the release
+source digest. `release/acceptance/forms/` is the working copy for
+execution notes and is excluded from the digest. Machine-readable
+results go only to `release/evidence/`.
+
 Governing documents, in this order:
 
 1. `docs/governance/MASTER_AUTHORITY_v1.0.md`
@@ -35,43 +42,42 @@ hash. Reproducible-build equivalence has not been demonstrated.
 | Field | Value |
 |---|---|
 | Application | Russian Companion (`dev.russiancompanion`) |
-| versionName | `0.0.0` |
-| versionCode | `1` |
-| App content commit | `0602edaeb05a353de5e994c127eb87b5b97078a3` |
+| versionName | `1.0.0` |
+| versionCode | `2` |
 | Gradle task | `assembleDebug` |
 | Artifact name | `acceptance-candidate-debug-apk` |
 | Identity file in artifact | `artifact-identity.json` |
-| SHA-256 | `1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e` |
-| Byte count | `29081799` |
-| Artifact run URL | https://github.com/justinkulka-lang/russian-companion/actions/runs/35740338300 |
+| 1.0.0 candidate | **not frozen** — wait for independent audit of the correction PR |
+| Preserved 0.0.0 APK | run `35740338300`, SHA-256 `1a95949ba7e2edd0ca72dea18e728ec105e427a2e5f5c093ff33fe82dfcba33e` |
 | Public release | `NOT_APPROVED` |
 
-Download the exact APK:
+Do not download the preserved 0.0.0 APK as the final Galaxy S26 Ultra
+candidate. Keep it as a historical artifact. After the correction PR is
+audited, freeze a new hashed 1.0.0 debug APK from GitHub Actions and
+record it in `release/acceptance/candidate.json` before physical
+execution.
 
-1. Open the successful Build run for this package branch / PR #20.
-2. Download artifact `acceptance-candidate-debug-apk`.
-3. Extract `app-debug.apk` and `artifact-identity.json`.
-4. `sha256sum app-debug.apk` and compare to `artifact-identity.json`
-   `sha256` and to `release/acceptance/candidate.json` once that file
-   records the same run.
-5. Install only that file. Record the run URL, SHA-256, and byte count
-   on every result form.
-
-`assembleRelease` remains fail-closed until AT-004, AT-020, AT-030, and
-AT-031 evidence is actually retained under `release/evidence/`.
+`assembleRelease`, `bundleRelease`, `packageRelease`,
+`packageReleaseBundle`, and other release output tasks remain
+fail-closed until AT-001, AT-002, AT-004, AT-008, AT-009, AT-010,
+AT-020, AT-030, and AT-031 evidence is actually retained under
+`release/evidence/` as machine-readable PASS documents.
 
 ## 2. Release-candidate / release-gate circularity
 
-`assembleRelease` and `packageRelease` depend on `checkReleaseGate`.
-That gate requires retained AT-004, AT-020, AT-030, and AT-031 files
-before a public-release APK can be produced. The physical procedures
-require an installed candidate first.
+Release APK, AAB, and publish tasks depend on `checkReleaseGate`.
+That gate requires retained machine-readable evidence for every
+mandatory procedure, and AT-031 cannot clear until the others are
+retained under the same candidate commit and APK hash. The physical
+procedures require an installed debug candidate first.
 
 The existing governed mechanism is `assembleDebug`:
 
 - GitHub Actions already assembles debug and runs unit tests.
-- `checkReleaseGate` is attached only to `assembleRelease` /
-  `packageRelease`.
+- `checkReleaseGate` is attached to every release output path
+  (`assembleRelease`, `bundleRelease`, `packageRelease`,
+  `packageReleaseBundle`, publish, install, and variant-specific
+  release packaging).
 - Architecture §14 distinguishes a native Android build from the
   public-release confirmation gate.
 
@@ -90,8 +96,10 @@ install.
 1. Download the CI artifact `acceptance-candidate-debug-apk` from the
    successful Build run. Do not use a locally rebuilt APK.
 2. Verify SHA-256 of the extracted `app-debug.apk` against
-   `artifact-identity.json` before copying it to the device. Record the
-   run URL, SHA-256, and byte count on every result form.
+   `artifact-identity.json` before copying it to the device. Use
+   `sha256sum` (or equivalent) on the APK and compare it to the
+   identity file. Record the run URL, SHA-256, and byte count on every
+   result form.
 3. Copy that exact `app-debug.apk` to the device (USB). Record the
    on-device path.
 4. Settings → Apps → search **Russian Companion**. If present,
@@ -100,7 +108,7 @@ install.
    Files app (or the installer you will use) for this one install.
 6. Install the APK. Open App info and confirm:
    - App name: Russian Companion
-   - Version: `0.0.0`
+   - Version: `1.0.0`
 7. Do **not** open the app yet.
 8. Enable Airplane mode from Quick settings. Then open Settings →
    Connections and confirm:
@@ -454,15 +462,15 @@ do this until the device work exists.
 
 | Procedure | Working form (this package) | Governed destination after a real result |
 |---|---|---|
-| AT-001 | `release/acceptance/forms/AT-001.md` | `release/evidence/AT-001.txt` plus screenshots below |
-| AT-002 | `release/acceptance/forms/AT-002.md` | `release/evidence/AT-002.txt` |
-| AT-004 | `release/acceptance/forms/AT-004.md` | `release/evidence/AT-004.txt` |
-| AT-008 | `release/acceptance/forms/AT-008.md` plus `audits/AT-008-rights-inventory.tsv` | `release/evidence/AT-008.txt` and `release/evidence/AT-008-rights-inventory.tsv` |
-| AT-009 | `release/acceptance/forms/AT-009.md` plus `audits/AT-009-before-after.md` | `release/evidence/AT-009.txt` |
-| AT-010 | `release/acceptance/forms/AT-010.md` plus the AT-010 TSVs | `release/evidence/AT-010.txt` and the per-file TSVs |
-| AT-020 | `release/acceptance/forms/AT-020.md` | `release/evidence/AT-020.txt` |
-| AT-030 | `release/acceptance/forms/AT-030.md` | `release/evidence/AT-030.txt` |
-| AT-031 | `release/acceptance/forms/AT-031-OWNER-DECISION.md` | `release/evidence/AT-031.txt` — Product Owner only, after AT-001 through AT-030 have real retained results |
+| AT-001 | `release/acceptance/forms/AT-001.md` | `release/evidence/AT-001.json` plus screenshots below |
+| AT-002 | `release/acceptance/forms/AT-002.md` | `release/evidence/AT-002.json` |
+| AT-004 | `release/acceptance/forms/AT-004.md` | `release/evidence/AT-004.json` |
+| AT-008 | `release/acceptance/forms/AT-008.md` plus `audits/AT-008-rights-inventory.tsv` | `release/evidence/AT-008.json` and `release/evidence/AT-008-rights-inventory.tsv` |
+| AT-009 | `release/acceptance/forms/AT-009.md` plus `audits/AT-009-before-after.md` | `release/evidence/AT-009.json` |
+| AT-010 | `release/acceptance/forms/AT-010.md` plus the AT-010 TSVs | `release/evidence/AT-010.json` and the per-file TSVs |
+| AT-020 | `release/acceptance/forms/AT-020.md` | `release/evidence/AT-020.json` |
+| AT-030 | `release/acceptance/forms/AT-030.md` | `release/evidence/AT-030.json` |
+| AT-031 | `release/acceptance/forms/AT-031-OWNER-DECISION.md` | `release/evidence/AT-031.json` — Product Owner only, after AT-001 through AT-030 have real retained results |
 
 Screenshot / file destinations (all under `release/evidence/`):
 
@@ -489,18 +497,23 @@ release/evidence/exports/AT-030-russian-companion-export.zip
 release/evidence/exports/AT-020-post-reboot-export.zip
 ```
 
-Each `release/evidence/AT-00N.txt` must be non-empty and must start
-with `release/evidence/` as its manifest path. The release gate
-rejects empty files, paths outside that prefix, and boolean flags.
+Each `release/evidence/AT-00N.json` must be a procedure-evidence
+document (`schemaVersion` 2) that records `PASS`, the candidate
+commit, the APK SHA-256, the current source digest from
+`release/acceptance/candidate.json`, `versionName`, `versionCode`,
+`applicationId`, the execution timestamp, the device for physical
+procedures, and referenced artifact hashes. The release gate rejects
+empty files, non-JSON text, paths outside `release/evidence/`,
+boolean flags, and evidence bound to a previous source digest or
+version identity.
 
 Only after those files exist from a real run may
 `release/retained-evidence.json` change a record from `MISSING` to
 `RETAINED` with the matching `evidencePath`. That step is out of
 scope for this package.
 
-AT-001 is outstanding in the acceptance ledger. It is not one of the
-four gate-manifest procedures. Still retain its device result at
-`release/evidence/AT-001.txt` so AT-031 can inspect it.
+AT-001 is outstanding in the acceptance ledger. Retain its device
+result at `release/evidence/AT-001.json` so AT-031 can inspect it.
 
 ## 7. AT-031
 

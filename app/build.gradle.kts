@@ -15,8 +15,12 @@ android {
         applicationId = "dev.russiancompanion"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.0.0"
+        versionCode = 2
+        versionName = "1.0.0"
+        val gitCommit = providers.environmentVariable("GITHUB_SHA").orElse("local")
+        buildConfigField("String", "GIT_COMMIT", "\"${gitCommit.get()}\"")
+        buildConfigField("String", "VERSION_NAME", "\"1.0.0\"")
+        buildConfigField("int", "VERSION_CODE", "2")
     }
 
     compileOptions {
@@ -26,6 +30,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     buildTypes {
@@ -36,6 +41,12 @@ android {
 
     testOptions {
         unitTests.isIncludeAndroidResources = true
+    }
+
+    lint {
+        abortOnError = true
+        checkReleaseBuilds = false
+        disable += setOf("GradleDependency", "OldTargetApi", "AndroidGradlePluginVersion")
     }
 }
 
@@ -61,9 +72,60 @@ tasks.register<JavaExec>("checkReleaseGate") {
     }
 }
 
+fun isReleaseOutputTask(name: String): Boolean {
+    if (name.isEmpty()) return false
+    if (name.contains("Test") || name.contains("Lint") || name.startsWith("lint")) return false
+    if (name.contains("checkReleaseGate")) return false
+    if (!name.contains("Release")) return false
+    return when {
+        name.startsWith("assemble") -> true
+        name.startsWith("bundle") -> !name.contains("Classes") && !name.contains("Lib")
+        name.startsWith("publish") -> true
+        name.startsWith("install") -> true
+        name.startsWith("sign") -> true
+        name.startsWith("package") -> {
+            name == "packageRelease" ||
+                name.endsWith("Release") ||
+                name.endsWith("ReleaseBundle") ||
+                name.endsWith("ReleaseApk") ||
+                name.endsWith("ReleaseAab") ||
+                name.endsWith("ReleaseUniversalApk")
+        }
+        else -> false
+    }
+}
+
 tasks.configureEach {
-    if (name == "assembleRelease" || name == "packageRelease") {
+    if (isReleaseOutputTask(name)) {
         dependsOn("checkReleaseGate")
+    }
+}
+
+tasks.register("verifyReleaseGateAttachment") {
+    group = "verification"
+    description = "Proves every realized release APK/AAB/publish task depends on checkReleaseGate."
+    doLast {
+        val required = listOf(
+            "assembleRelease",
+            "packageRelease",
+            "bundleRelease",
+            "packageReleaseBundle",
+        )
+        for (taskName in required) {
+            val task = tasks.findByName(taskName) ?: tasks.named(taskName).get()
+            val deps = task.taskDependencies.getDependencies(task).map { it.name }
+            if ("checkReleaseGate" !in deps) {
+                throw GradleException("$taskName is not fail-closed through checkReleaseGate. deps=$deps")
+            }
+        }
+        val ungated = tasks.filter { isReleaseOutputTask(it.name) }.filter { task ->
+            "checkReleaseGate" !in task.taskDependencies.getDependencies(task).map { it.name }
+        }
+        if (ungated.isNotEmpty()) {
+            throw GradleException(
+                "Release output tasks are not gated: ${ungated.joinToString { it.name }}",
+            )
+        }
     }
 }
 

@@ -3,6 +3,10 @@ package dev.russiancompanion.domain.practice
 internal interface PracticeAudio {
     fun modelPlayable(localAudioReference: String): Boolean
 
+    fun playableReferences(references: Collection<String>): Set<String> {
+        return references.filterTo(linkedSetOf(), ::modelPlayable)
+    }
+
     fun recordingReadable(localFileReference: String): Boolean
 
     fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit)
@@ -10,6 +14,11 @@ internal interface PracticeAudio {
     fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit)
 
     fun stopPlayback()
+
+    fun releaseForBackground() {
+        stopPlayback()
+        stopCapture(keep = false)
+    }
 
     /** Starts a capture and returns its private file reference, or null when capture does not start. */
     fun startCapture(): String?
@@ -19,6 +28,8 @@ internal interface PracticeAudio {
      * When [keep] is true and the file is readable, returns that file reference.
      */
     fun stopCapture(keep: Boolean): String?
+
+    fun isCapturing(): Boolean = false
 }
 
 internal data class PracticeProgress(

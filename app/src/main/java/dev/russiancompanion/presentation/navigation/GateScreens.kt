@@ -10,7 +10,11 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.KeyboardType
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.gate.AnkiStatusValue
@@ -64,8 +68,9 @@ internal fun GateStatusLine(status: GateStatus?) {
 @Composable
 internal fun GateDetailBody(
     detail: GateDetailView,
-    onSave: (List<GateEvidenceEntry>) -> PlanUpdate,
-    onAddTutor: () -> PlanUpdate,
+    actionsEnabled: Boolean = true,
+    onSave: (List<GateEvidenceEntry>, (PlanUpdate) -> Unit) -> Unit,
+    onAddTutor: ((PlanUpdate) -> Unit) -> Unit,
 ) {
     val drafts = remember(detail.id) { mutableStateMapOf<String, String>() }
     var invalidIds by remember(detail.id) { mutableStateOf(setOf<String>()) }
@@ -90,9 +95,12 @@ internal fun GateDetailBody(
     if (!detail.tutorRequired) {
         TextButton(
             onClick = {
-                failedAdd = onAddTutor() is PlanUpdate.NotSaved
-                saveFailed = failedAdd
+                onAddTutor { update ->
+                    failedAdd = update is PlanUpdate.NotSaved
+                    saveFailed = failedAdd
+                }
             },
+            enabled = actionsEnabled,
         ) { Text(stringResource(R.string.gate_add_tutor)) }
     }
     if (saveFailed) {
@@ -120,34 +128,40 @@ internal fun GateDetailBody(
                 val value = drafts[condition.id].orEmpty().trim()
                 if (value.isEmpty()) null else GateEvidenceEntry(condition.kind, value)
             }
-            val update = onSave(entries)
-            failedAdd = false
-            saveFailed = update is PlanUpdate.NotSaved
-            if (!saveFailed) {
-                drafts.clear()
-                invalidIds = emptySet()
+            onSave(entries) { update ->
+                failedAdd = false
+                saveFailed = update is PlanUpdate.NotSaved
+                if (!saveFailed) {
+                    drafts.clear()
+                    invalidIds = emptySet()
+                }
             }
         },
+        enabled = actionsEnabled,
     ) { Text(stringResource(R.string.gate_save)) }
     if (saveFailed) {
         TextButton(
             onClick = {
                 if (failedAdd) {
-                    failedAdd = onAddTutor() is PlanUpdate.NotSaved
-                    saveFailed = failedAdd
+                    onAddTutor { update ->
+                        failedAdd = update is PlanUpdate.NotSaved
+                        saveFailed = failedAdd
+                    }
                 } else {
                     val entries = detail.conditions.mapNotNull { condition ->
                         val value = drafts[condition.id].orEmpty().trim()
                         if (value.isEmpty()) null else GateEvidenceEntry(condition.kind, value)
                     }
-                    val update = onSave(entries)
-                    saveFailed = update is PlanUpdate.NotSaved
-                    if (!saveFailed) {
-                        drafts.clear()
-                        invalidIds = emptySet()
+                    onSave(entries) { update ->
+                        saveFailed = update is PlanUpdate.NotSaved
+                        if (!saveFailed) {
+                            drafts.clear()
+                            invalidIds = emptySet()
+                        }
                     }
                 }
             },
+            enabled = actionsEnabled,
         ) { Text(stringResource(R.string.navigate_retry)) }
     }
 }
@@ -182,6 +196,7 @@ private fun ConditionBlock(
             OutlinedTextField(
                 value = draft,
                 onValueChange = onDraft,
+                label = { Text(stringResource(R.string.gate_book_label)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
@@ -206,7 +221,10 @@ private fun ConditionBlock(
         }
     }
     if (invalid) {
-        Text(stringResource(R.string.gate_field_invalid))
+        Text(
+            stringResource(R.string.gate_field_invalid),
+            modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+        )
     }
 }
 

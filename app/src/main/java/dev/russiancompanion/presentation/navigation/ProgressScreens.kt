@@ -13,8 +13,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.plan.PlanUpdate
@@ -100,7 +104,8 @@ internal fun LogActivityScreen(
     snapshot: NavigationSnapshot,
     fromPlan: Boolean,
     recordedAt: () -> String,
-    onSave: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSave: (RecordedCategory, Int, Boolean, String, Boolean, (PlanUpdate) -> Unit) -> Unit,
     onProgress: () -> Unit,
     onTodaysPlan: () -> Unit,
     onHome: (() -> Unit)?,
@@ -113,7 +118,7 @@ internal fun LogActivityScreen(
     val recorded = remember { recordedAt() }
     val minutes = durationText.toIntOrNull()
     val durationAccepted = durationText.matches(Regex("[0-9]+")) && minutes != null
-    ShellPage(title = stringResource(R.string.log_activity_title), onBack = onProgress, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.log_activity_title), onBack = onProgress, onHome = onHome, busy = operationInProgress) {
         Text(stringResource(R.string.log_recorded_at, recorded))
         if (selected == null) {
             Text(stringResource(R.string.log_category_required))
@@ -134,9 +139,15 @@ internal fun LogActivityScreen(
             label = { Text(stringResource(R.string.log_duration_label)) },
         )
         if (durationText.isBlank()) {
-            Text(stringResource(R.string.log_duration_required))
+            Text(
+                stringResource(R.string.log_duration_required),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
         } else if (!durationAccepted) {
-            Text(stringResource(R.string.log_duration_invalid))
+            Text(
+                stringResource(R.string.log_duration_invalid),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
         }
         TextButton(onClick = { completed = !completed }) {
             Text(stringResource(R.string.log_mark_completed))
@@ -153,7 +164,10 @@ internal fun LogActivityScreen(
             TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
         }
         if (failed) {
-            Text(stringResource(R.string.plan_not_saved))
+            Text(
+                stringResource(R.string.plan_not_saved),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
             TextButton(
                 onClick = {
                     saveLog(
@@ -168,6 +182,7 @@ internal fun LogActivityScreen(
                         onProgress = onProgress,
                     )
                 },
+                enabled = !operationInProgress,
             ) { Text(stringResource(R.string.navigate_retry)) }
         }
         TextButton(
@@ -184,7 +199,7 @@ internal fun LogActivityScreen(
                     onProgress = onProgress,
                 )
             },
-            enabled = selected != null && durationAccepted,
+            enabled = !operationInProgress && selected != null && durationAccepted,
         ) { Text(stringResource(R.string.log_save)) }
     }
 }
@@ -196,18 +211,19 @@ private fun saveLog(
     completed: Boolean,
     recorded: String,
     associate: Boolean,
-    onSave: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
+    onSave: (RecordedCategory, Int, Boolean, String, Boolean, (PlanUpdate) -> Unit) -> Unit,
     onFailed: () -> Unit,
     onProgress: () -> Unit,
 ) {
     val category = selected ?: return
     val duration = minutes ?: return
     if (!durationAccepted) return
-    val update = onSave(category, duration, completed, recorded, associate)
-    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) {
-        onProgress()
-    } else {
-        onFailed()
+    onSave(category, duration, completed, recorded, associate) { update ->
+        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) {
+            onProgress()
+        } else {
+            onFailed()
+        }
     }
 }
 
@@ -219,13 +235,24 @@ internal class ExportSelection(
 
 @Composable
 internal fun LocalExportScreen(
-    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    operationInProgress: Boolean = false,
+    onExport: (OutputStream, String?, String?, (ExportUpdate) -> Unit) -> Unit,
     chooseExportDestination: (() -> ExportSelection?)?,
     onProgress: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
     var status by remember { mutableStateOf<ExportUpdate?>(null) }
+    var exporting by remember { mutableStateOf(false) }
     val context = LocalContext.current
+    fun finishExport(stream: OutputStream, result: ExportUpdate) {
+        try {
+            stream.close()
+        } catch (_: Exception) {
+            // Destination close is best-effort after the export result is known.
+        }
+        exporting = false
+        status = result
+    }
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/zip")) { uri: Uri? ->
         if (uri == null) return@rememberLauncherForActivityResult
         val stream = try {
@@ -236,27 +263,41 @@ internal fun LocalExportScreen(
         if (stream == null) {
             status = ExportUpdate.DestinationUnavailable
         } else {
-            stream.use { status = onExport(it, visibleExportFileName(context, uri), uri.toString()) }
+            exporting = true
+            onExport(stream, visibleExportFileName(context, uri), uri.toString()) { result ->
+                finishExport(stream, result)
+            }
         }
     }
+    val busy = operationInProgress || exporting
     ShellPage(title = stringResource(R.string.local_export_title), onBack = onProgress, onHome = onHome) {
         Text(stringResource(R.string.local_export_scope))
+        if (busy) {
+            Text(
+                stringResource(R.string.work_in_progress),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Polite },
+            )
+        }
         TextButton(
             onClick = {
+                if (busy) return@TextButton
                 val choose = chooseExportDestination
                 if (choose != null) {
                     val selection = choose()
                     if (selection == null) {
                         status = ExportUpdate.DestinationUnavailable
                     } else {
-                        selection.open().use {
-                            status = onExport(it, selection.fileName, selection.documentReference)
+                        exporting = true
+                        val stream = selection.open()
+                        onExport(stream, selection.fileName, selection.documentReference) { result ->
+                            finishExport(stream, result)
                         }
                     }
                 } else {
                     launcher.launch("russian-companion-export.zip")
                 }
             },
+            enabled = !busy,
         ) { Text(stringResource(R.string.local_export_choose)) }
         when (val current = status) {
             is ExportUpdate.Completed -> {

@@ -45,9 +45,9 @@ class ProgressExportTest {
         store.commitRecording("audio-1", "recordings/two.m4a", "2026-09-21T09:01", false, CompletionState.NOT_COMPLETED)
         val recordings = store.recordings()
         val bytes = recordings.associate { it.localFileReference to "bytes-${it.id}".encodeToByteArray() }
-        val gateway = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()) { reference ->
-            bytes[reference]
-        }
+        val gateway = RoomNavigationGateway(store, { null }, UnusedPracticeAudio(), openRecording = { reference ->
+            bytes[reference]?.inputStream()
+        })
         val out = ByteArrayOutputStream()
         val update = gateway.exportLocal(
             out,
@@ -74,9 +74,9 @@ class ProgressExportTest {
         }
 
         val broken = ByteArrayOutputStream()
-        val failed = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()) { reference ->
-            if (reference == recordings.first().localFileReference) null else bytes[reference]
-        }.exportLocal(broken, "2026-09-21T10:01", "export.zip", "content://documents/export.zip")
+        val failed = RoomNavigationGateway(store, { null }, UnusedPracticeAudio(), openRecording = { reference ->
+            if (reference == recordings.first().localFileReference) null else bytes[reference]?.inputStream()
+        }).exportLocal(broken, "2026-09-21T10:01", "export.zip", "content://documents/export.zip")
         assertEquals(ExportUpdate.RecordingUnreadable(recordings.first().id), failed)
         assertEquals(0, broken.size())
         val failure = store.exports().last()

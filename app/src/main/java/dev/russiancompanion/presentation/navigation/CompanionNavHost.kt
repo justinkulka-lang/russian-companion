@@ -16,6 +16,7 @@ import androidx.navigation.toRoute
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
+import dev.russiancompanion.domain.navigation.NavigationSurface
 import dev.russiancompanion.domain.navigation.OnboardingConfirmation
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
@@ -38,6 +39,7 @@ internal fun CompanionNavHost(
     launch: LaunchDestination,
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    operationInProgress: Boolean = false,
     onConfirmLesson: (String) -> Unit,
     onReloadSeed: () -> Unit,
     onRetryOpen: () -> Unit,
@@ -46,15 +48,16 @@ internal fun CompanionNavHost(
     onRemoveTutor: (String) -> Unit,
     onRetryPlanAction: () -> Unit,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onCompletePractice: (String) -> PlanUpdate,
-    onSaveGateEvidence: (String, List<GateEvidenceEntry>) -> PlanUpdate,
-    onAddTutorSignOff: (String) -> PlanUpdate,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onCompletePractice: (String, (PlanUpdate) -> Unit) -> Unit,
+    onSaveGateEvidence: (String, List<GateEvidenceEntry>, (PlanUpdate) -> Unit) -> Unit,
+    onAddTutorSignOff: (String, (PlanUpdate) -> Unit) -> Unit,
     recordedAt: () -> String,
-    onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
-    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onExport: (OutputStream, String?, String?, (ExportUpdate) -> Unit) -> Unit,
     chooseExportDestination: (() -> ExportSelection?)? = null,
+    onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit = { _, then -> then(snapshot) },
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -65,7 +68,11 @@ internal fun CompanionNavHost(
         composable<OnboardingRoute> {
             OnboardingScreen(
                 snapshot = snapshot,
-                onAttributions = { navController.navigate(AttributionsRoute()) },
+                onAttributions = {
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute())
+                    }
+                },
                 onConfirmLesson = onConfirmLesson,
                 onReloadSeed = onReloadSeed,
             )
@@ -73,18 +80,38 @@ internal fun CompanionNavHost(
         composable<LocalDataRoute> {
             LocalDataScreen(
                 onRetry = onRetryOpen,
-                onAttributions = { navController.navigate(AttributionsRoute()) },
+                onAttributions = {
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute())
+                    }
+                },
             )
         }
         composable<HomeRoute> {
             HomeScreen(
                 snapshot = snapshot,
-                onBegin = { item -> beginPlanItem(navController, snapshot, item) },
+                onBegin = { item ->
+                    if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
+                        onNeedSurface(NavigationSurface.PRACTICE) { loaded ->
+                            beginPlanItem(navController, loaded, item)
+                        }
+                    } else {
+                        beginPlanItem(navController, snapshot, item)
+                    }
+                },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
-                onPractice = { navController.navigate(PracticeLibraryRoute) },
+                onPractice = {
+                    onNeedSurface(NavigationSurface.PRACTICE) {
+                        navController.navigate(PracticeLibraryRoute)
+                    }
+                },
                 onGates = { navController.navigate(GatesRoute) },
                 onProgress = { navController.navigate(ProgressRoute) },
-                onAttributions = { navController.navigate(AttributionsRoute()) },
+                onAttributions = {
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute())
+                    }
+                },
                 onOptionalDrills = { navController.navigate(OptionalDrillsRoute) },
                 onSelectLesson = { navController.navigate(OnboardingRoute) },
             )
@@ -93,9 +120,18 @@ internal fun CompanionNavHost(
             TodaysPlanScreen(
                 snapshot = snapshot,
                 saveFailed = saveFailed,
+                operationInProgress = operationInProgress,
                 onHome = onHome,
-                onPractice = { navController.navigate(PracticeLibraryRoute) },
-                onStartPractice = { item -> openPrescribedPractice(navController, snapshot, item.audioModelIds) },
+                onPractice = {
+                    onNeedSurface(NavigationSurface.PRACTICE) {
+                        navController.navigate(PracticeLibraryRoute)
+                    }
+                },
+                onStartPractice = { item ->
+                    onNeedSurface(NavigationSurface.PRACTICE) { loaded ->
+                        openPrescribedPractice(navController, loaded, item.audioModelIds)
+                    }
+                },
                 onProgress = { navController.navigate(ProgressRoute) },
                 onSelectLesson = { navController.navigate(OnboardingRoute) },
                 onComplete = onCompleteItem,
@@ -106,17 +142,25 @@ internal fun CompanionNavHost(
             )
         }
         composable<PracticeLibraryRoute> {
-            PracticeLibraryScreen(
+            PracticeLibraryBody(
                 snapshot = snapshot,
                 onOpen = { audioId ->
                     if (snapshot.audio.firstOrNull { it.id == audioId }?.playable == true) {
                         navController.navigate(PracticeSessionRoute(audioId))
                     }
                 },
+                onInspectAttribution = { audioId ->
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute(audioId))
+                    }
+                },
                 onHome = onHome,
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
-                onAttributions = { navController.navigate(AttributionsRoute()) },
-                onInspectAttribution = { audioId -> navController.navigate(AttributionsRoute(audioId)) },
+                onAttributions = {
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute())
+                    }
+                },
                 onBack = { navController.popBackStack() },
             )
         }
@@ -126,6 +170,7 @@ internal fun CompanionNavHost(
                 snapshot = snapshot,
                 audioModelId = route.audioModelId,
                 practiceAudio = practiceAudio,
+                operationInProgress = operationInProgress,
                 onSaveRecording = onSaveRecording,
                 onTutorReview = onTutorReview,
                 onCompletePractice = onCompletePractice,
@@ -141,7 +186,11 @@ internal fun CompanionNavHost(
                 },
                 onLibrary = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
-                onAttributions = { navController.navigate(AttributionsRoute(route.audioModelId)) },
+                onAttributions = {
+                    onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                        navController.navigate(AttributionsRoute(route.audioModelId))
+                    }
+                },
                 onHome = onHome,
             )
         }
@@ -159,8 +208,9 @@ internal fun CompanionNavHost(
             GateDetailScreen(
                 snapshot = snapshot,
                 gateId = route.gateId,
-                onSaveGateEvidence = { entries -> onSaveGateEvidence(route.gateId, entries) },
-                onAddTutorSignOff = { onAddTutorSignOff(route.gateId) },
+                operationInProgress = operationInProgress,
+                onSaveGateEvidence = { entries, done -> onSaveGateEvidence(route.gateId, entries, done) },
+                onAddTutorSignOff = { done -> onAddTutorSignOff(route.gateId, done) },
                 onGates = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onProgress = { navController.navigate(ProgressRoute) },
@@ -183,6 +233,7 @@ internal fun CompanionNavHost(
                 snapshot = snapshot,
                 fromPlan = route.fromPlan,
                 recordedAt = recordedAt,
+                operationInProgress = operationInProgress,
                 onSave = onSaveActivity,
                 onProgress = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
@@ -191,6 +242,7 @@ internal fun CompanionNavHost(
         }
         composable<LocalExportRoute> {
             LocalExportScreen(
+                operationInProgress = operationInProgress,
                 onExport = onExport,
                 chooseExportDestination = chooseExportDestination,
                 onProgress = { navController.popBackStack() },
@@ -210,7 +262,11 @@ internal fun CompanionNavHost(
             composable<OptionalDrillsRoute> {
                 OptionalDrillsScreen(
                     onHome = onHome,
-                    onAttributions = { navController.navigate(AttributionsRoute()) },
+                    onAttributions = {
+                        onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
+                            navController.navigate(AttributionsRoute())
+                        }
+                    },
                     onBack = { navController.popBackStack() },
                 )
             }
@@ -331,6 +387,13 @@ private fun HomeScreen(
 ) {
     val libraryAvailable = practiceLibraryAvailable(snapshot)
     ShellPage(title = stringResource(R.string.home_title)) {
+        Text(
+            stringResource(
+                R.string.home_build_identity,
+                dev.russiancompanion.BuildConfig.VERSION_NAME,
+                shortCommit(dev.russiancompanion.BuildConfig.GIT_COMMIT),
+            ),
+        )
         HomePlanSection(
             snapshot = snapshot,
             onBegin = onBegin,
@@ -356,6 +419,7 @@ private fun HomeScreen(
 private fun TodaysPlanScreen(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    operationInProgress: Boolean = false,
     onHome: (() -> Unit)?,
     onPractice: () -> Unit,
     onStartPractice: (ChecklistItem) -> Unit,
@@ -368,7 +432,7 @@ private fun TodaysPlanScreen(
     onBack: () -> Unit,
 ) {
     val libraryAvailable = practiceLibraryAvailable(snapshot)
-    ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome, busy = operationInProgress) {
         TodaysPlanBody(
             snapshot = snapshot,
             saveFailed = saveFailed,
@@ -378,6 +442,7 @@ private fun TodaysPlanScreen(
             onIncludeTutor = onIncludeTutor,
             onRemoveTutor = onRemoveTutor,
             onRetrySave = onRetrySave,
+            actionsEnabled = !operationInProgress,
         )
         TextButton(onClick = onPractice, enabled = libraryAvailable) {
             Text(stringResource(R.string.open_practice))
@@ -387,30 +452,14 @@ private fun TodaysPlanScreen(
 }
 
 @Composable
-private fun PracticeLibraryScreen(
-    snapshot: NavigationSnapshot,
-    onOpen: (String) -> Unit,
-    onHome: (() -> Unit)?,
-    onTodaysPlan: () -> Unit,
-    onAttributions: () -> Unit,
-    onInspectAttribution: (String) -> Unit,
-    onBack: () -> Unit,
-) {
-    ShellPage(title = stringResource(R.string.practice_title), onBack = onBack, onHome = onHome) {
-        PracticeLibraryBody(snapshot = snapshot, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
-        TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan_from_practice)) }
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
-    }
-}
-
-@Composable
 private fun PracticeSessionScreen(
     snapshot: NavigationSnapshot,
     audioModelId: String,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onCompletePractice: (String) -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onCompletePractice: (String, (PlanUpdate) -> Unit) -> Unit,
     onPrevious: (String) -> Unit,
     onNext: (String) -> Unit,
     onLibrary: () -> Unit,
@@ -421,11 +470,12 @@ private fun PracticeSessionScreen(
     val admittedIds = snapshot.audio.map { it.id }
     val previousId = previousAdmittedModelId(admittedIds, audioModelId)
     val nextId = nextAdmittedModelId(admittedIds, audioModelId)
-    ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome, busy = operationInProgress) {
         PracticeSessionBody(
             snapshot = snapshot,
             audioModelId = audioModelId,
             practiceAudio = practiceAudio,
+            operationInProgress = operationInProgress,
             onSaveRecording = onSaveRecording,
             onTutorReview = onTutorReview,
             onComplete = onCompletePractice,
@@ -464,21 +514,23 @@ private fun GatesScreen(
 private fun GateDetailScreen(
     snapshot: NavigationSnapshot,
     gateId: String,
-    onSaveGateEvidence: (List<GateEvidenceEntry>) -> PlanUpdate,
-    onAddTutorSignOff: () -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveGateEvidence: (List<GateEvidenceEntry>, (PlanUpdate) -> Unit) -> Unit,
+    onAddTutorSignOff: ((PlanUpdate) -> Unit) -> Unit,
     onGates: () -> Unit,
     onTodaysPlan: () -> Unit,
     onProgress: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
     val detail = snapshot.gateDetails.firstOrNull { it.id == gateId }
-    ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome, busy = operationInProgress) {
         Text(stringResource(R.string.gates_not_proficiency))
         if (detail == null) {
             Text(stringResource(R.string.gate_unreadable))
         } else {
             GateDetailBody(
                 detail = detail,
+                actionsEnabled = !operationInProgress,
                 onSave = onSaveGateEvidence,
                 onAddTutor = onAddTutorSignOff,
             )
@@ -498,4 +550,8 @@ private fun OptionalDrillsScreen(
         Text(stringResource(R.string.optional_drills_not_evidence))
         TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
     }
+}
+
+private fun shortCommit(commit: String): String {
+    return if (commit.length >= 7) commit.take(7) else commit
 }

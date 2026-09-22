@@ -4,6 +4,12 @@ import android.Manifest
 import android.content.pm.PackageManager
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -14,9 +20,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
@@ -33,12 +48,44 @@ internal fun PracticeLibraryBody(
     snapshot: NavigationSnapshot,
     onOpen: (String) -> Unit,
     onInspectAttribution: (String) -> Unit,
+    onBack: (() -> Unit)?,
+    onHome: (() -> Unit)?,
+    onTodaysPlan: () -> Unit,
+    onAttributions: () -> Unit,
 ) {
-    if (snapshot.audio.isEmpty()) {
-        Text(stringResource(R.string.practice_none))
-    }
-    snapshot.audio.forEach { model ->
-        PracticeLibraryRow(model = model, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        item(key = "practice-header") {
+            Text(
+                text = stringResource(R.string.practice_title),
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.semantics { heading() },
+            )
+            if (onBack != null) {
+                TextButton(onClick = onBack) { Text(stringResource(R.string.navigate_back)) }
+            }
+            if (onHome != null) {
+                TextButton(onClick = onHome) { Text(stringResource(R.string.navigate_home)) }
+            }
+            if (snapshot.audio.isEmpty()) {
+                Text(stringResource(R.string.practice_none))
+            }
+        }
+        items(snapshot.audio, key = { it.id }) { model ->
+            PracticeLibraryRow(model = model, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
+        }
+        item(key = "practice-footer") {
+            TextButton(onClick = onTodaysPlan) {
+                Text(stringResource(R.string.open_todays_plan_from_practice))
+            }
+            TextButton(onClick = onAttributions) {
+                Text(stringResource(R.string.open_attributions))
+            }
+        }
     }
 }
 
@@ -70,9 +117,10 @@ internal fun PracticeSessionBody(
     snapshot: NavigationSnapshot,
     audioModelId: String,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onComplete: (String) -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onComplete: (String, (PlanUpdate) -> Unit) -> Unit,
 ) {
     val model = snapshot.audio.firstOrNull { it.id == audioModelId }
     val latest = snapshot.recordings.lastOrNull { it.audioModelId == audioModelId }
@@ -107,8 +155,17 @@ internal fun PracticeSessionBody(
         alreadyCompleted = completed,
     )
     val recordingNowState = rememberUpdatedState(recordingNow)
-    DisposableEffect(audioModelId) {
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(audioModelId, lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_STOP) {
+                practiceAudio.releaseForBackground()
+                recordingNow = false
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
         onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
             practiceAudio.stopPlayback()
             if (recordingNowState.value) practiceAudio.stopCapture(keep = false)
         }
@@ -145,24 +202,31 @@ internal fun PracticeSessionBody(
         Text(stringResource(if (readable) R.string.practice_replay_model else R.string.practice_play_model))
     }
     if (microphoneDenied) {
-        Text(stringResource(R.string.practice_mic_denied))
+        Text(
+            stringResource(R.string.practice_mic_denied),
+            modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+        )
     }
     if (recordingNow) {
         TextButton(
             onClick = {
                 val saved = practiceAudio.stopCapture(keep = true)
                 recordingNow = false
-                if (saved == null || onSaveRecording(model.id, saved) is PlanUpdate.NotSaved) {
+                if (saved == null) {
                     captureFailed = true
                 } else {
-                    captureFailed = false
+                    onSaveRecording(model.id, saved) { update ->
+                        captureFailed = update is PlanUpdate.NotSaved
+                    }
                 }
             },
+            enabled = !operationInProgress,
         ) { Text(stringResource(R.string.practice_stop)) }
     } else if (!completed || !readable) {
         TextButton(
             onClick = {
                 if (!microphoneGranted) {
+                    microphoneDenied = true
                     requestMicrophone.launch(Manifest.permission.RECORD_AUDIO)
                 } else if (canStartRecording(progress)) {
                     val started = practiceAudio.startCapture()
@@ -174,11 +238,14 @@ internal fun PracticeSessionBody(
                     }
                 }
             },
-            enabled = !microphoneGranted || canStartRecording(progress),
+            enabled = !operationInProgress && (!microphoneGranted || canStartRecording(progress)),
         ) { Text(stringResource(R.string.practice_record)) }
     }
     if (captureFailed) {
-        Text(stringResource(R.string.practice_not_saved))
+        Text(
+            stringResource(R.string.practice_not_saved),
+            modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+        )
     }
     if (latest != null && !readable) {
         Text(stringResource(R.string.practice_recording_unavailable))
@@ -192,7 +259,10 @@ internal fun PracticeSessionBody(
                 }
             },
         ) { Text(stringResource(R.string.practice_play_recording)) }
-        TextButton(onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) }) {
+        TextButton(
+            onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) { } },
+            enabled = !operationInProgress,
+        ) {
             Text(
                 stringResource(
                     if (latest.markedForTutorReview) R.string.practice_unmark_tutor else R.string.practice_mark_tutor,
@@ -201,7 +271,10 @@ internal fun PracticeSessionBody(
         }
     }
     if (canCompletePractice(progress)) {
-        TextButton(onClick = { onComplete(model.id) }) {
+        TextButton(
+            onClick = { onComplete(model.id) { } },
+            enabled = !operationInProgress,
+        ) {
             Text(stringResource(R.string.practice_complete))
         }
     }

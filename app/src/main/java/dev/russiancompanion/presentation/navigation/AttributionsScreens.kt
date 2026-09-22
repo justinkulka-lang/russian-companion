@@ -1,5 +1,12 @@
 package dev.russiancompanion.presentation.navigation
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -7,7 +14,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.AssetInventoryOption
 import dev.russiancompanion.domain.navigation.AttributionOption
@@ -24,7 +35,46 @@ internal fun AttributionInventoryScreen(
     var selectedAssetKey by rememberSaveable { mutableStateOf<String?>(null) }
     var selectedLicenseId by rememberSaveable { mutableStateOf<String?>(null) }
     val linked = practiceAudioId?.let { id -> snapshot.assetRecords.firstOrNull { it.audioModelId == id } }
-    ShellPage(title = stringResource(R.string.attributions_title), onBack = onBack, onHome = onHome) {
+    val featuredSource = snapshot.attributions.firstOrNull()
+    val remainingSources = if (snapshot.attributions.size > 10) {
+        snapshot.attributions.drop(1)
+    } else {
+        snapshot.attributions
+    }
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Text(
+            text = stringResource(R.string.attributions_title),
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier.semantics { heading() },
+        )
+        TextButton(onClick = onBack) { Text(stringResource(R.string.navigate_back)) }
+        if (onHome != null) {
+            TextButton(onClick = onHome) { Text(stringResource(R.string.navigate_home)) }
+        }
+        if (practiceAudioId != null) {
+            TextButton(onClick = onBack) { Text(stringResource(R.string.back_to_practice)) }
+        }
+        if (snapshot.attributions.size > 10 && featuredSource != null) {
+            TextButton(
+                onClick = {
+                    selectedSourceId = featuredSource.sourceId
+                    selectedAssetKey = null
+                },
+            ) {
+                Text(sourceButtonLabel(featuredSource))
+            }
+            if (selectedSourceId == featuredSource.sourceId) {
+                SourceRecordDetail(featuredSource)
+                TextButton(onClick = { selectedSourceId = null }) {
+                    Text(stringResource(R.string.attributions_close))
+                }
+            }
+        }
         if (snapshot.shareAlikeBlocksRelease) {
             Text(stringResource(R.string.attributions_release_block))
         }
@@ -33,11 +83,11 @@ internal fun AttributionInventoryScreen(
         }
         if (snapshot.catalogNotice.isNotBlank()) {
             Text(stringResource(R.string.attributions_catalog_notice))
-            Text(snapshot.catalogNotice)
+            Text(snapshot.catalogNotice, maxLines = 4)
         }
         if (snapshot.licenseNotices.isNotEmpty()) {
             Text(stringResource(R.string.attributions_license_texts))
-            for (notice in snapshot.licenseNotices) {
+            snapshot.licenseNotices.forEach { notice ->
                 TextButton(
                     onClick = {
                         selectedLicenseId = notice.id
@@ -48,53 +98,55 @@ internal fun AttributionInventoryScreen(
                     Text(notice.title)
                 }
                 if (selectedLicenseId == notice.id) {
-                    Text(notice.body)
+                    Text(notice.body, maxLines = 8)
                     TextButton(onClick = { selectedLicenseId = null }) {
                         Text(stringResource(R.string.attributions_close))
                     }
                 }
             }
         }
-        if (linked != null) {
-            AssetRecordDetail(linked)
-        }
-        for (record in snapshot.attributions) {
-            TextButton(
-                onClick = {
-                    selectedSourceId = record.sourceId
-                    selectedAssetKey = null
-                },
-            ) {
-                Text(sourceButtonLabel(record))
-            }
-            if (selectedSourceId == record.sourceId) {
-                SourceRecordDetail(record)
-                TextButton(onClick = { selectedSourceId = null }) {
-                    Text(stringResource(R.string.attributions_close))
+        LazyColumn(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            items(remainingSources, key = { "source:${it.sourceId}" }) { record ->
+                TextButton(
+                    onClick = {
+                        selectedSourceId = record.sourceId
+                        selectedAssetKey = null
+                    },
+                ) {
+                    Text(sourceButtonLabel(record))
+                }
+                if (selectedSourceId == record.sourceId) {
+                    SourceRecordDetail(record)
+                    TextButton(onClick = { selectedSourceId = null }) {
+                        Text(stringResource(R.string.attributions_close))
+                    }
                 }
             }
-        }
-        for (asset in snapshot.assetRecords) {
-            val key = assetKey(asset)
-            val sameAsLinked = linked != null && assetKey(linked) == key
-            TextButton(
-                onClick = {
-                    selectedAssetKey = key
-                    selectedSourceId = null
-                },
-            ) {
-                Text(assetButtonLabel(asset))
-            }
-            if (selectedAssetKey == key && !sameAsLinked) {
-                AssetRecordDetail(asset)
-                TextButton(onClick = { selectedAssetKey = null }) {
-                    Text(stringResource(R.string.attributions_close))
+            if (linked != null) {
+                item(key = "linked-asset") {
+                    AssetRecordDetail(linked)
                 }
             }
-        }
-        if (practiceAudioId != null) {
-            TextButton(onClick = onBack) {
-                Text(stringResource(R.string.back_to_practice))
+            items(snapshot.assetRecords, key = { assetKey(it) }) { asset ->
+                val key = assetKey(asset)
+                val sameAsLinked = linked != null && assetKey(linked) == key
+                TextButton(
+                    onClick = {
+                        selectedAssetKey = key
+                        selectedSourceId = null
+                    },
+                ) {
+                    Text(assetButtonLabel(asset))
+                }
+                if (selectedAssetKey == key && !sameAsLinked) {
+                    AssetRecordDetail(asset)
+                    TextButton(onClick = { selectedAssetKey = null }) {
+                        Text(stringResource(R.string.attributions_close))
+                    }
+                }
             }
         }
     }

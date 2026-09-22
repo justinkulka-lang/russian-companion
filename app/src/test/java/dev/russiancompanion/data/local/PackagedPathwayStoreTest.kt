@@ -96,9 +96,12 @@ class PackagedPathwayStoreTest {
             assertEquals(3, reproduced.totalCompletions)
 
             val out = ByteArrayOutputStream()
-            val update = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()) {
-                recordingBytes
-            }.exportLocal(
+            val update = RoomNavigationGateway(
+                store,
+                { null },
+                UnusedPracticeAudio(),
+                openRecording = { recordingBytes.inputStream() },
+            ).exportLocal(
                 out,
                 "2026-09-21T12:00",
                 "lesson-cycle.zip",
