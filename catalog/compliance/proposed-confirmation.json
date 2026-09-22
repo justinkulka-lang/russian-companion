@@ -1,0 +1,21 @@
+{
+  "status": "ACTIVATED",
+  "publicRelease": "NOT_APPROVED",
+  "seedPath": "app/src/main/assets/content/bundled-content.json",
+  "requiredCatalogTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
+  "exclusions": [
+    "Shtooka audio bytes retain original CC BY or public-domain licenses and are not converted to CC BY-SA",
+    "application code",
+    "user recordings and user-entered data"
+  ],
+  "change": "applied: every sourceRecords.shareAlikeConfirmation is the confirmed token, proposedConfirmation is ACTIVATED, and classification is SHARE_ALIKE_CONFIRMED",
+  "sourceIds": [
+    "shtooka-sakhno-cc-by-3.0-us",
+    "shtooka-streit-cc-by-2.0-fr",
+    "shtooka-fsi-languages-yojik-eu-streit-cc-by-2.0-fr",
+    "shtooka-sakhno-public-domain",
+    "shtooka-fsi-languages-yojik-eu-sakhno-cc-by-3.0-us"
+  ],
+  "blockedUntilIndependentReview": false,
+  "note": "Activation records independent review of the conservative catalog-wide treatment. It does not approve public release."
+}

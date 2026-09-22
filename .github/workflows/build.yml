@@ -1,0 +1,72 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+      - name: Install SDK packages
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
+      - name: Assemble debug and run unit tests
+        run: ./gradlew assembleDebug testDebugUnitTest --stacktrace
+      - name: Record acceptance-candidate APK identity
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+
+          apk = Path("app/build/outputs/apk/debug/app-debug.apk")
+          if not apk.is_file() or apk.stat().st_size == 0:
+              raise SystemExit(f"missing debug APK {apk}")
+          data = apk.read_bytes()
+          identity = {
+              "schemaVersion": 1,
+              "kind": "physical-device-acceptance-candidate",
+              "publicRelease": "NOT_APPROVED",
+              "gradleTask": "assembleDebug",
+              "apkFileName": "app-debug.apk",
+              "applicationId": "dev.russiancompanion",
+              "versionName": "0.0.0",
+              "versionCode": 1,
+              "sourceCommit": os.environ["GITHUB_SHA"],
+              "sha256": hashlib.sha256(data).hexdigest(),
+              "apkBytes": len(data),
+              "runId": os.environ["GITHUB_RUN_ID"],
+              "runUrl": (
+                  f"{os.environ['GITHUB_SERVER_URL']}/"
+                  f"{os.environ['GITHUB_REPOSITORY']}/actions/runs/"
+                  f"{os.environ['GITHUB_RUN_ID']}"
+              ),
+              "artifactName": "acceptance-candidate-debug-apk",
+          }
+          Path("artifact-identity.json").write_text(
+              json.dumps(identity, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(identity, indent=2))
+          PY
+      - name: Upload acceptance-candidate debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: acceptance-candidate-debug-apk
+          if-no-files-found: error
+          retention-days: 90
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            artifact-identity.json

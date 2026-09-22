@@ -1,0 +1,37 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+
+> Task :app:checkReleaseGate FAILED
+Public release is not approved.
+NOT_APPROVED
+AT-004 offline verification evidence is not retained.
+AT-020 device reboot evidence is not retained.
+AT-030 lesson-cycle evidence is not retained.
+AT-031 owner release decision is not retained.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:checkReleaseGate' (registered in build file 'app/build.gradle.kts').
+> Public release is not approved.
+  NOT_APPROVED
+  AT-004 offline verification evidence is not retained.
+  AT-020 device reboot evidence is not retained.
+  AT-030 lesson-cycle evidence is not retained.
+  AT-031 owner release decision is not retained.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+8 actionable tasks: 1 executed, 7 up-to-date
