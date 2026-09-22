@@ -34,6 +34,56 @@ class PathwaySchemaTest {
     }
 
     @Test
+    fun beginnerArcReleaseReadyRequiresThirtyLessonsWithRequiredPlansAndGates() {
+        val segments = (1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).map { lesson ->
+            PathwaySegment("segment-$lesson", "Lesson $lesson", lesson, lesson)
+        }
+        assertTrue(
+            beginnerArcReleaseReady(
+                segments,
+                arcPlans(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+                arcGates(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+            ),
+        )
+        assertFalse(
+            beginnerArcReleaseReady(
+                segments.take(3),
+                arcPlans(1..3),
+                arcGates(1..3),
+            ),
+        )
+        assertFalse(
+            beginnerArcReleaseReady(
+                segments.dropLast(1),
+                arcPlans(1 until PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+                arcGates(1 until PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+            ),
+        )
+        assertFalse(
+            beginnerArcReleaseReady(
+                segments.filter { it.lessonNumber != 12 },
+                arcPlans(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).filter { it.segmentId != "segment-12" },
+                arcGates(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).filter { it.segmentId != "segment-12" },
+            ),
+        )
+        assertFalse(
+            beginnerArcReleaseReady(
+                segments,
+                arcPlans(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT)
+                    .filterNot { it.segmentId == "segment-30" && it.activity == PlanActivityKind.LISTEN_RECORD_COMPARE },
+                arcGates(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+            ),
+        )
+        assertFalse(
+            beginnerArcReleaseReady(
+                segments,
+                arcPlans(1..PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+                arcGates(1 until PENGUIN_BEGINNER_ARC_LESSON_COUNT),
+            ),
+        )
+    }
+
+    @Test
     fun planAdmissionBindsBookAndAnkiToLessonNumbersAndListenToCatalogIds() {
         assertTrue(
             admitPlanDefinition(
@@ -124,5 +174,20 @@ class PathwaySchemaTest {
             lessonNumber = lessonNumber,
             audioModelIds = audioModelIds,
         )
+    }
+
+    private fun arcPlans(lessons: IntRange): List<ArcPlanCoverage> {
+        return lessons.flatMap { lesson ->
+            listOf(
+                ArcPlanCoverage("segment-$lesson", PlanActivityKind.BOOK, required = true),
+                ArcPlanCoverage("segment-$lesson", PlanActivityKind.ANKI_DROID, required = true),
+                ArcPlanCoverage("segment-$lesson", PlanActivityKind.LISTEN_RECORD_COMPARE, required = true),
+                ArcPlanCoverage("segment-$lesson", PlanActivityKind.TUTOR, required = false),
+            )
+        }
+    }
+
+    private fun arcGates(lessons: IntRange): List<ArcGateCoverage> {
+        return lessons.map { lesson -> ArcGateCoverage("segment-$lesson") }
     }
 }

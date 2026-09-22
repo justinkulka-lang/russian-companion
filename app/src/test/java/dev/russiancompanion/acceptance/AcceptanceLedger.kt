@@ -11,6 +11,8 @@ package dev.russiancompanion.acceptance
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
  * AT-001 stays outstanding until the full Penguin-concurrent beginner arc is installed.
  * The packaged seed now contains a 3-lesson placeholder pathway. That is not the complete arc.
+ * The release gate reports PATHWAY_INCOMPLETE for that placeholder; a one-lesson
+ * cycle test does not satisfy AT-001 or make public release approvable.
  * AT-004, AT-020, AT-030, and AT-031 stay outstanding. assembleRelease reads
  * release/retained-evidence.json and refuses a public release while share-alike
  * confirmation or any retained-evidence record is missing. This is not a release approval.

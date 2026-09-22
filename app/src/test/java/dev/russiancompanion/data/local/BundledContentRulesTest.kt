@@ -563,10 +563,12 @@ internal fun audio(
 internal fun gate(
     conditions: List<GateConditionSeed> = defaultGateConditionSeeds(),
     ruleVersion: String = "1",
+    id: String = "gate-1",
+    segmentId: String = "segment-1",
 ): GateDefinitionSeed {
     return GateDefinitionSeed(
-        id = "gate-1",
-        segmentId = "segment-1",
+        id = id,
+        segmentId = segmentId,
         ruleVersion = ruleVersion,
         displayedRuleText = displayedRuleTextFor(conditions),
         conditions = conditions,
