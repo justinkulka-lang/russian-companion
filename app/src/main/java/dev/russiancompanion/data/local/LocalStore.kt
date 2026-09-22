@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
+import dev.russiancompanion.domain.gate.GateEvaluation
 import java.io.IOException
-import java.util.UUID
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.Executors
@@ -335,12 +335,12 @@ internal class LocalStore private constructor(
         if (ruleVersion.isBlank() || ruleVersion != gate.ruleVersion) {
             throw IllegalArgumentException("The decision must name the stored rule version")
         }
-        if (conditionOutcomes.isBlank()) throw IllegalArgumentException("Condition outcomes are required")
-        val decision = GateDecisionEntity(
-            id = UUID.randomUUID().toString(),
-            gateDefinitionId = gate.id,
-            ruleVersion = ruleVersion,
-            evidenceIds = evidenceIds.joinToString(separator = ","),
+        val decision = verifiedCallerDecision(
+            gate = gate,
+            conditions = database.bundled().conditions(gate.id),
+            tutorRequired = database.users().tutorRequirement(gate.id) != null,
+            evidenceIds = evidenceIds,
+            availableEvidence = database.users().allEvidence(),
             conditionOutcomes = conditionOutcomes,
             status = status,
             evaluatedAtLocal = UserRecordRules.requireTimestamp(evaluatedAtLocal),
@@ -350,6 +350,10 @@ internal class LocalStore private constructor(
     }
 
     fun decisions(): List<GateDecisionEntity> = call { database.users().decisions() }
+
+    fun reproduceStoredDecision(decision: GateDecisionEntity): GateEvaluation = call {
+        reproduceStoredDecision(decision, database.users().allEvidence())
+    }
 
     fun commitRecording(
         audioModelId: String,
@@ -492,7 +496,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
                 .build()
             val store = LocalStore(database)
             store.applySeed(readSeed(appContext))

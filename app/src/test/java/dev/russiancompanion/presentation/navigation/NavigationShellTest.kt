@@ -13,11 +13,11 @@ import dev.russiancompanion.data.local.audio
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.rights
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.gate.defaultDisplayedRuleText
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
@@ -113,7 +113,7 @@ class NavigationShellTest {
 
         clickText("Gates", substring = false)
         showText("Activity gate, not proficiency certification.")
-        clickText("Displayed test rule")
+        clickText(defaultDisplayedRuleText())
         compose.onNodeWithText("This gate definition is unreadable. No advancement decision is shown.")
             .assertDoesNotExist()
         clickText("Progress", substring = false)
@@ -160,19 +160,7 @@ class NavigationShellTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed(
-                        id = "c-book",
-                        evidenceType = "BOOK_REVISION_SCORE",
-                        operator = "AT_LEAST",
-                        operand = "1",
-                        sortOrder = 0,
-                    ),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
         sourceTexts = listOf(text(matchVerified = true)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),

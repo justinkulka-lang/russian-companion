@@ -100,19 +100,7 @@ class LocalStoreTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         LocalStore.openInMemory(context).use { store ->
             val document = minimalDocument().copy(
-                gateDefinitions = listOf(
-                    gate(
-                        conditions = listOf(
-                            dev.russiancompanion.data.local.seed.GateConditionSeed(
-                                id = "c-book",
-                                evidenceType = "BOOK_REVISION_SCORE",
-                                operator = "AT_LEAST",
-                                operand = "1",
-                                sortOrder = 0,
-                            ),
-                        ),
-                    ),
-                ),
+                gateDefinitions = listOf(gate()),
                 sourceTexts = listOf(text(matchVerified = true)),
                 assetRightsRecords = listOf(rights()),
                 audioModels = listOf(audio()),

@@ -45,8 +45,9 @@ class ExportPackageTest {
                     id = "decision-1",
                     gateDefinitionId = "gate-1",
                     ruleVersion = "1",
-                    evidenceIds = "evidence-1",
-                    conditionOutcomes = "left,right",
+                    ruleSnapshot = "{\"version\":\"1\"}",
+                    evidenceIds = "[\"evidence-1\"]",
+                    conditionOutcomes = "[{\"conditionId\":\"c-book\",\"result\":\"SATISFIED\"}]",
                     status = "SATISFIED",
                     evaluatedAtLocal = "2026-09-21T09:02",
                 ),
@@ -93,7 +94,10 @@ class ExportPackageTest {
             val evidence = zip.readText("gate-evidence.csv")
             assertTrue(evidence.contains(BOOK_ATTESTATION))
             val decisions = zip.readText("gate-decisions.csv")
-            assertTrue(decisions.contains("\"left,right\""))
+            assertTrue(decisions.startsWith("id,gateDefinitionId,ruleVersion,ruleSnapshot,evidenceIds,conditionOutcomes,status,evaluatedAtLocal\n"))
+            assertTrue(decisions.contains("c-book"))
+            assertTrue(decisions.contains("SATISFIED"))
+            assertTrue(decisions.contains("ruleSnapshot"))
             val recordings = zip.readText("recordings.csv")
             assertTrue(
                 recordings.startsWith(

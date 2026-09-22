@@ -13,6 +13,10 @@ import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.seed.SourceRecordSeed
 import dev.russiancompanion.data.local.seed.SourceTextSeed
 import dev.russiancompanion.data.local.seed.prepareBundledContent
+import dev.russiancompanion.domain.gate.GateComparison
+import dev.russiancompanion.domain.gate.GateEvidenceKind
+import dev.russiancompanion.domain.gate.GateRuleCondition
+import dev.russiancompanion.domain.gate.displayedRuleText
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -125,6 +129,54 @@ class BundledContentRulesTest {
         assertTrue(prepared.conditions.isEmpty())
         assertEquals(EligibilityStatus.ELIGIBLE, prepared.drills.single().eligibilityStatus)
         assertFalse(EvidenceType.entries.any { it.name.contains("DRILL") })
+    }
+
+    @Test
+    fun defaultGateRequiresBookAnkiAndPrescribedWork() {
+        val incomplete = prepareBundledContent(
+            minimalDocument().copy(
+                gateDefinitions = listOf(
+                    gate(
+                        conditions = listOf(
+                            GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+                            GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "MATURE", 1),
+                        ),
+                    ),
+                ),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, incomplete.gates.single().eligibilityStatus)
+        assertTrue(incomplete.conditions.isEmpty())
+
+        val openAnkiText = prepareBundledContent(
+            minimalDocument().copy(
+                gateDefinitions = listOf(
+                    gate(
+                        conditions = listOf(
+                            GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+                            GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
+                            GateConditionSeed("c-work", "PRESCRIBED_WORK_COMPLETION", "PRESENT", null, 2),
+                        ),
+                    ),
+                ),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, openAnkiText.gates.single().eligibilityStatus)
+
+        val admitted = prepareBundledContent(
+            minimalDocument().copy(gateDefinitions = listOf(gate())),
+        )
+        assertEquals(EligibilityStatus.ELIGIBLE, admitted.gates.single().eligibilityStatus)
+        assertEquals(
+            listOf(
+                EvidenceType.BOOK_REVISION_SCORE,
+                EvidenceType.ANKI_DROID_STATUS,
+                EvidenceType.PRESCRIBED_WORK_COMPLETION,
+            ),
+            admitted.conditions.map { it.evidenceType },
+        )
+        assertEquals("MATURE", admitted.conditions.single { it.evidenceType == EvidenceType.ANKI_DROID_STATUS }.operand)
+        assertEquals(null, admitted.conditions.single { it.evidenceType == EvidenceType.PRESCRIBED_WORK_COMPLETION }.operand)
     }
 
     @Test
@@ -449,12 +501,36 @@ internal fun audio(id: String = "audio-1", rightsRecordId: String = "rights-1"):
     )
 }
 
-internal fun gate(conditions: List<GateConditionSeed>): GateDefinitionSeed {
+internal fun gate(
+    conditions: List<GateConditionSeed> = defaultGateConditionSeeds(),
+    ruleVersion: String = "1",
+): GateDefinitionSeed {
     return GateDefinitionSeed(
         id = "gate-1",
         segmentId = "segment-1",
-        ruleVersion = "1",
-        displayedRuleText = "Displayed test rule",
+        ruleVersion = ruleVersion,
+        displayedRuleText = displayedRuleTextFor(conditions),
         conditions = conditions,
+    )
+}
+
+internal fun defaultGateConditionSeeds(bookMinimum: String = "1"): List<GateConditionSeed> {
+    return listOf(
+        GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", bookMinimum, 0),
+        GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "MATURE", 1),
+        GateConditionSeed("c-work", "PRESCRIBED_WORK_COMPLETION", "PRESENT", null, 2),
+    )
+}
+
+internal fun displayedRuleTextFor(conditions: List<GateConditionSeed>): String {
+    return displayedRuleText(
+        conditions.map { condition ->
+            GateRuleCondition(
+                id = condition.id,
+                kind = GateEvidenceKind.valueOf(condition.evidenceType),
+                comparison = GateComparison.valueOf(condition.operator),
+                operand = condition.operand,
+            )
+        },
     )
 }

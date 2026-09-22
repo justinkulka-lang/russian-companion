@@ -1,5 +1,6 @@
 package dev.russiancompanion.data.local
 
+import dev.russiancompanion.domain.gate.ConditionOutcome
 import dev.russiancompanion.domain.gate.GateComparison
 import dev.russiancompanion.domain.gate.GateConditionView
 import dev.russiancompanion.domain.gate.GateDetailView
@@ -9,9 +10,21 @@ import dev.russiancompanion.domain.gate.GateEvidenceView
 import dev.russiancompanion.domain.gate.GateRuleCondition
 import dev.russiancompanion.domain.gate.GateStatus
 import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.decodeConditionOutcomes
+import dev.russiancompanion.domain.gate.displayedRuleText
 import dev.russiancompanion.domain.gate.encodeConditionOutcomes
+import dev.russiancompanion.domain.gate.encodeEvidenceIds
+import dev.russiancompanion.domain.gate.encodeGateRuleSnapshot
 import dev.russiancompanion.domain.gate.evaluateGate
 import dev.russiancompanion.domain.gate.evidenceEntryAccepted
+import dev.russiancompanion.domain.gate.gateIsLocked
+import dev.russiancompanion.domain.gate.gateRuleSnapshot
+import dev.russiancompanion.domain.gate.parseConditionOutcomes
+import dev.russiancompanion.domain.gate.parseEvidenceIds
+import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
+import dev.russiancompanion.domain.gate.remainingKinds
+import dev.russiancompanion.domain.gate.reproduceDecision
+import dev.russiancompanion.domain.gate.reproducedDecisionMatches
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import java.util.UUID
 
@@ -38,7 +51,8 @@ internal fun evidenceAcceptedForGate(
 ): Boolean {
     val comparisons = comparisonsFor(evidenceType, conditions, tutorRequired)
     if (comparisons.isEmpty()) return false
-    return comparisons.all { evidenceEntryAccepted(it, enteredValue) }
+    val kind = evidenceType.toKind()
+    return comparisons.all { evidenceEntryAccepted(it, enteredValue, kind) }
 }
 
 internal fun gateDetailView(
@@ -53,9 +67,11 @@ internal fun gateDetailView(
     val evidenceById = evidence.associateBy { it.id }
     return GateDetailView(
         id = gate.id,
-        displayedRuleText = gate.displayedRuleText,
+        displayedRuleText = displayedRuleText(rule),
         tutorRequired = tutorRequired,
         recordedStatus = recordedStatus?.toGateStatus(),
+        locked = gateIsLocked(evaluation),
+        remainingKinds = remainingKinds(evaluation, rule),
         conditions = rule.zip(evaluation.outcomes).map { (condition, outcome) ->
             val latest = outcome.evidenceId?.let(evidenceById::get)
             GateConditionView(
@@ -89,12 +105,27 @@ internal fun evidenceType(kind: GateEvidenceKind): EvidenceType {
     }
 }
 
-private fun GateDecisionStatus.toGateStatus(): GateStatus {
+internal fun GateDecisionStatus.toGateStatus(): GateStatus {
     return when (this) {
         GateDecisionStatus.SATISFIED -> GateStatus.SATISFIED
         GateDecisionStatus.NOT_YET_SATISFIED -> GateStatus.NOT_YET_SATISFIED
         GateDecisionStatus.NOT_EVALUABLE -> GateStatus.NOT_EVALUABLE
     }
+}
+
+internal fun reproduceStoredDecision(
+    decision: GateDecisionEntity,
+    evidence: List<GateEvidenceEntity>,
+): GateEvaluation {
+    return reproduceDecision(
+        ruleSnapshot = decision.ruleSnapshot,
+        recordedEvidenceIds = parseEvidenceIds(decision.evidenceIds),
+        evidence = evidence.map { it.toRecorded() },
+    )
+}
+
+internal fun storedOutcomes(decision: GateDecisionEntity): List<ConditionOutcome> {
+    return decodeConditionOutcomes(decision.conditionOutcomes)
 }
 
 internal fun storedGateDecision(
@@ -104,11 +135,60 @@ internal fun storedGateDecision(
     evidence: List<GateEvidenceEntity>,
     evaluatedAtLocal: String,
 ): GateDecisionEntity {
+    val rule = ruleConditions(conditions, tutorRequired)
     val evaluation = evaluateGate(
-        conditions = ruleConditions(conditions, tutorRequired),
+        conditions = rule,
         evidence = evidence.map { it.toRecorded() },
     )
-    return evaluation.toDecision(gate, evaluatedAtLocal)
+    return evaluation.toDecision(gate, rule, evaluatedAtLocal)
+}
+
+internal fun verifiedCallerDecision(
+    gate: GateDefinitionEntity,
+    conditions: List<GateConditionEntity>,
+    tutorRequired: Boolean,
+    evidenceIds: List<String>,
+    availableEvidence: List<GateEvidenceEntity>,
+    conditionOutcomes: String,
+    status: GateDecisionStatus,
+    evaluatedAtLocal: String,
+): GateDecisionEntity {
+    if (evidenceIds.size != evidenceIds.toSet().size) {
+        throw IllegalArgumentException("Evidence IDs must be unique")
+    }
+    val byId = availableEvidence.associateBy { it.id }
+    val resolved = evidenceIds.map { id ->
+        val row = byId[id] ?: throw IllegalArgumentException("Named evidence is missing")
+        if (row.gateDefinitionId != gate.id) {
+            throw IllegalArgumentException("Evidence belongs to a different gate")
+        }
+        row
+    }
+    val snapshot = gateRuleSnapshot(gate.ruleVersion, ruleConditions(conditions, tutorRequired))
+    val encodedSnapshot = encodeGateRuleSnapshot(snapshot)
+    if (parseGateRuleSnapshot(encodedSnapshot) == null) {
+        throw IllegalArgumentException("A canonical rule snapshot is required")
+    }
+    val parsedOutcomes = parseConditionOutcomes(conditionOutcomes)
+        ?: throw IllegalArgumentException("Condition outcomes are required")
+    val reproduced = reproduceDecision(
+        ruleSnapshot = encodedSnapshot,
+        recordedEvidenceIds = evidenceIds,
+        evidence = resolved.map { it.toRecorded() },
+    )
+    if (!reproducedDecisionMatches(status.toGateStatus(), parsedOutcomes, reproduced)) {
+        throw IllegalArgumentException("The decision is not reproducible from the stored rule and evidence")
+    }
+    return GateDecisionEntity(
+        id = UUID.randomUUID().toString(),
+        gateDefinitionId = gate.id,
+        ruleVersion = snapshot.version,
+        ruleSnapshot = encodedSnapshot,
+        evidenceIds = encodeEvidenceIds(evidenceIds),
+        conditionOutcomes = encodeConditionOutcomes(parsedOutcomes),
+        status = status,
+        evaluatedAtLocal = evaluatedAtLocal,
+    )
 }
 
 private fun comparisonsFor(
@@ -122,7 +202,7 @@ private fun comparisonsFor(
     return conditions.filter { it.evidenceType == evidenceType }.map { it.operator.toComparison() }
 }
 
-private fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
+internal fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
     return RecordedEvidence(
         id = id,
         kind = evidenceType.toKind(),
@@ -133,13 +213,16 @@ private fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
 
 private fun GateEvaluation.toDecision(
     gate: GateDefinitionEntity,
+    rule: List<GateRuleCondition>,
     evaluatedAtLocal: String,
 ): GateDecisionEntity {
+    val snapshot = gateRuleSnapshot(gate.ruleVersion, rule)
     return GateDecisionEntity(
         id = UUID.randomUUID().toString(),
         gateDefinitionId = gate.id,
-        ruleVersion = gate.ruleVersion,
-        evidenceIds = outcomes.mapNotNull { it.evidenceId }.joinToString(separator = ","),
+        ruleVersion = snapshot.version,
+        ruleSnapshot = encodeGateRuleSnapshot(snapshot),
+        evidenceIds = encodeEvidenceIds(outcomes.mapNotNull { it.evidenceId }),
         conditionOutcomes = encodeConditionOutcomes(outcomes),
         status = when (status) {
             GateStatus.SATISFIED -> GateDecisionStatus.SATISFIED

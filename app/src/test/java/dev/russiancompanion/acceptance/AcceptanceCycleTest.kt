@@ -21,11 +21,11 @@ import dev.russiancompanion.data.local.audio
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.rights
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.gate.defaultDisplayedRuleText
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ANKI_ATTESTATION
 import dev.russiancompanion.domain.progress.ANKI_PRACTICE
@@ -139,11 +139,12 @@ class AcceptanceCycleTest {
         show("Today's required activities are complete.")
         show("Completion is recorded work, not proficiency certification.")
         click("Gates")
-        click("Displayed test rule")
+        click(defaultDisplayedRuleText())
         show(BOOK_ATTESTATION)
         show(ANKI_ATTESTATION)
         replaceField(0, "1")
-        replaceField(1, "mature")
+        click("Mature")
+        click("Confirm prescribed work")
         click("Save evidence")
         show("Recorded gate status: Satisfied")
 
@@ -185,7 +186,8 @@ class AcceptanceCycleTest {
             assertTrue(evidenceText.contains(BOOK_ATTESTATION))
             assertTrue(evidenceText.contains(ANKI_ATTESTATION))
             assertTrue(evidenceText.contains(",1,"))
-            assertTrue(evidenceText.contains("mature"))
+            assertTrue(evidenceText.contains("MATURE"))
+            assertTrue(evidenceText.contains("recorded"))
             val decisionText = zip.read("gate-decisions.csv")
             assertTrue(decisionText.contains("SATISFIED"))
             val recordingText = zip.read("recordings.csv")
@@ -252,14 +254,7 @@ class AcceptanceCycleTest {
                 required = false,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                    GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
         sourceTexts = listOf(text(matchVerified = true)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),

@@ -182,6 +182,7 @@ internal data class GateDecisionEntity(
     @PrimaryKey val id: String,
     val gateDefinitionId: String,
     val ruleVersion: String,
+    val ruleSnapshot: String,
     val evidenceIds: String,
     val conditionOutcomes: String,
     val status: GateDecisionStatus,

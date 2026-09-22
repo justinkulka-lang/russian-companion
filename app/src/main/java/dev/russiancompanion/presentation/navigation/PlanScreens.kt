@@ -11,7 +11,6 @@ import dev.russiancompanion.domain.navigation.practicePlayable
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.plan.RecordedCategory
-import dev.russiancompanion.domain.plan.RecordedGateStatus
 import dev.russiancompanion.domain.plan.canMarkComplete
 
 @Composable
@@ -179,17 +178,13 @@ private fun ChecklistRow(
 @Composable
 private fun GateSummarySection(snapshot: NavigationSnapshot) {
     Text(stringResource(R.string.gates_not_proficiency))
-    if (snapshot.gateSummaries.isEmpty()) {
+    if (snapshot.gateDetails.isEmpty()) {
         Text(stringResource(R.string.gates_none))
         return
     }
-    snapshot.gateSummaries.forEach { gate ->
-        val status = gate.status
-        if (status == null) {
-            Text(stringResource(R.string.home_gate_no_decision))
-        } else {
-            Text(stringResource(R.string.home_gate_status, gateStatusLabel(status)))
-        }
+    snapshot.gateDetails.forEach { detail ->
+        GateStatusLine(detail.recordedStatus)
+        GateLockedRemainder(detail)
     }
 }
 
@@ -248,17 +243,6 @@ internal fun categoryLabel(category: RecordedCategory): String {
             RecordedCategory.SPEAKING_AND_PRONUNCIATION -> R.string.category_speaking
             RecordedCategory.WRITING -> R.string.category_writing
             RecordedCategory.TUTOR_WORK -> R.string.category_tutor
-        },
-    )
-}
-
-@Composable
-private fun gateStatusLabel(status: RecordedGateStatus): String {
-    return stringResource(
-        when (status) {
-            RecordedGateStatus.SATISFIED -> R.string.gate_status_satisfied
-            RecordedGateStatus.NOT_YET_SATISFIED -> R.string.gate_status_not_yet
-            RecordedGateStatus.NOT_EVALUABLE -> R.string.gate_status_not_evaluable
         },
     )
 }

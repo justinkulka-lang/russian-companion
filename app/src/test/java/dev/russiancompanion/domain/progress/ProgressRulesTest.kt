@@ -78,6 +78,7 @@ class ProgressRulesTest {
         assertEquals("Self-attested", activityAttestationLabel(RecordedCategory.WRITING, selfAttested = true))
         assertEquals(BOOK_ATTESTATION, evidenceAttestationLabel("BOOK_REVISION_SCORE"))
         assertEquals(ANKI_ATTESTATION, evidenceAttestationLabel("ANKI_DROID_STATUS"))
+        assertEquals("User recorded", evidenceAttestationLabel("PRESCRIBED_WORK_COMPLETION"))
         assertEquals("User recorded", evidenceAttestationLabel("TUTOR_SIGN_OFF"))
     }
 

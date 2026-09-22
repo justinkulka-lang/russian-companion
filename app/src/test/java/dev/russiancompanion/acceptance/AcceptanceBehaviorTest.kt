@@ -20,18 +20,19 @@ import dev.russiancompanion.data.local.audio
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.rights
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.source
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
-import dev.russiancompanion.domain.gate.GateComparison
+import dev.russiancompanion.domain.gate.AnkiStatusValue
 import dev.russiancompanion.domain.gate.GateEvidenceKind
-import dev.russiancompanion.domain.gate.GateRuleCondition
 import dev.russiancompanion.domain.gate.GateStatus
+import dev.russiancompanion.domain.gate.PRESENCE_RECORDED
 import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.defaultAdvancementRule
 import dev.russiancompanion.domain.gate.evaluateGate
+import dev.russiancompanion.domain.gate.remainingKinds
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import dev.russiancompanion.domain.plan.ActivityLogView
 import dev.russiancompanion.domain.plan.RecordedCategory
@@ -85,17 +86,29 @@ class AcceptanceBehaviorTest {
 
     @Test
     fun at015_at016_decisionsFollowTheDisplayedRuleAndTutorSignOffIsStricter() {
-        val book = GateRuleCondition("book", GateEvidenceKind.BOOK_REVISION_SCORE, GateComparison.AT_LEAST, "1")
-        val low = RecordedEvidence("e-low", GateEvidenceKind.BOOK_REVISION_SCORE, "0", "2026-09-21T09:00")
-        val high = RecordedEvidence("e-high", GateEvidenceKind.BOOK_REVISION_SCORE, "1", "2026-09-21T09:01")
-        assertEquals(GateStatus.NOT_YET_SATISFIED, evaluateGate(listOf(book), listOf(low)).status)
-        assertEquals(GateStatus.SATISFIED, evaluateGate(listOf(book), listOf(high)).status)
-        assertEquals(GateStatus.SATISFIED, evaluateGate(listOf(book), listOf(high)).status)
+        val rule = defaultAdvancementRule()
+        val low = listOf(
+            RecordedEvidence("e-low", GateEvidenceKind.BOOK_REVISION_SCORE, "0", "2026-09-21T09:00"),
+            RecordedEvidence("e-anki", GateEvidenceKind.ANKI_DROID_STATUS, AnkiStatusValue.MATURE.name, "2026-09-21T09:00"),
+            RecordedEvidence("e-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00"),
+        )
+        val high = listOf(
+            RecordedEvidence("e-high", GateEvidenceKind.BOOK_REVISION_SCORE, "1", "2026-09-21T09:01"),
+            RecordedEvidence("e-anki", GateEvidenceKind.ANKI_DROID_STATUS, AnkiStatusValue.MATURE.name, "2026-09-21T09:00"),
+            RecordedEvidence("e-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00"),
+        )
+        val failing = evaluateGate(rule, low)
+        val passing = evaluateGate(rule, high)
+        assertEquals(GateStatus.NOT_YET_SATISFIED, failing.status)
+        assertEquals(listOf(GateEvidenceKind.BOOK_REVISION_SCORE), remainingKinds(failing, rule))
+        assertEquals(GateStatus.SATISFIED, passing.status)
+        assertEquals(passing, evaluateGate(rule, high))
 
-        val stricter = listOf(book, tutorSignOffCondition())
-        assertEquals(GateStatus.NOT_EVALUABLE, evaluateGate(stricter, listOf(high)).status)
-        val signed = RecordedEvidence("e-tutor", GateEvidenceKind.TUTOR_SIGN_OFF, "recorded", "2026-09-21T09:02")
-        assertEquals(GateStatus.SATISFIED, evaluateGate(stricter, listOf(high, signed)).status)
+        val stricter = rule + tutorSignOffCondition()
+        assertEquals(GateStatus.NOT_EVALUABLE, evaluateGate(stricter, high).status)
+        assertEquals(listOf(GateEvidenceKind.TUTOR_SIGN_OFF), remainingKinds(evaluateGate(stricter, high), stricter))
+        val signed = RecordedEvidence("e-tutor", GateEvidenceKind.TUTOR_SIGN_OFF, PRESENCE_RECORDED, "2026-09-21T09:02")
+        assertEquals(GateStatus.SATISFIED, evaluateGate(stricter, high + signed).status)
     }
 
     @Test
@@ -270,13 +283,7 @@ class AcceptanceBehaviorTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
         sourceTexts = listOf(text(matchVerified = true)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),

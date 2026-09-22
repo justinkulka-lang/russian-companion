@@ -81,6 +81,8 @@ internal data class GateDetailView(
     val displayedRuleText: String,
     val tutorRequired: Boolean,
     val recordedStatus: GateStatus?,
+    val locked: Boolean,
+    val remainingKinds: List<GateEvidenceKind>,
     val conditions: List<GateConditionView>,
     val evidence: List<GateEvidenceView>,
 )
@@ -96,15 +98,44 @@ internal fun tutorSignOffCondition(): GateRuleCondition {
     )
 }
 
-internal fun evidenceEntryAccepted(comparison: GateComparison, enteredValue: String): Boolean {
+internal fun evidenceEntryAccepted(
+    comparison: GateComparison,
+    enteredValue: String,
+    kind: GateEvidenceKind? = null,
+): Boolean {
     val value = enteredValue.trim()
     if (value.isEmpty()) return false
+    if (kind == GateEvidenceKind.ANKI_DROID_STATUS && parseAnkiStatus(value) == null) {
+        return false
+    }
     return when (comparison) {
         GateComparison.PRESENT,
         GateComparison.EQUALS,
         -> true
         GateComparison.AT_LEAST -> parseRuleNumber(value) != null
     }
+}
+
+internal fun remainingConditions(
+    evaluation: GateEvaluation,
+    conditions: List<GateRuleCondition>,
+): List<GateRuleCondition> {
+    val unsatisfied = evaluation.outcomes
+        .filter { it.result != ConditionResult.SATISFIED }
+        .map { it.conditionId }
+        .toSet()
+    return conditions.filter { it.id in unsatisfied }
+}
+
+internal fun remainingKinds(
+    evaluation: GateEvaluation,
+    conditions: List<GateRuleCondition>,
+): List<GateEvidenceKind> {
+    return remainingConditions(evaluation, conditions).map { it.kind }
+}
+
+internal fun gateIsLocked(evaluation: GateEvaluation): Boolean {
+    return evaluation.status != GateStatus.SATISFIED
 }
 
 /**
@@ -136,12 +167,6 @@ internal fun evaluateGate(
     return GateEvaluation(status = status, outcomes = outcomes)
 }
 
-internal fun encodeConditionOutcomes(outcomes: List<ConditionOutcome>): String {
-    return outcomes.joinToString(separator = "\n") { outcome ->
-        listOf(outcome.conditionId, outcome.evidenceId.orEmpty(), outcome.result.name).joinToString(separator = "\t")
-    }
-}
-
 private fun compare(condition: GateRuleCondition, enteredValue: String): ConditionResult {
     return when (condition.comparison) {
         GateComparison.PRESENT -> {
@@ -171,7 +196,7 @@ private fun compare(condition: GateRuleCondition, enteredValue: String): Conditi
     }
 }
 
-private fun parseRuleNumber(value: String): BigDecimal? {
+internal fun parseRuleNumber(value: String): BigDecimal? {
     val trimmed = value.trim()
     if (!RULE_NUMBER.matches(trimmed)) return null
     return BigDecimal(trimmed)
