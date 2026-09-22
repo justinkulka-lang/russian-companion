@@ -236,7 +236,7 @@ private fun packagedNoticeBlockers(repositoryRoot: File, seed: String?): List<Re
         !file.isFile || file.length() == 0L
     }
     val noticeFile = File(repositoryRoot, "app/src/main/assets/content/catalog-notice.txt")
-    val noticeText = if (noticeFile.isFile) noticeFile.readText() else ""
+    val noticeText = if (noticeFile.isFile) noticeFile.readText().replace(Regex("\\s+"), " ") else ""
     val noticeIncomplete = !noticeText.contains("does not own the packaged Russian") ||
         !noticeText.contains("Shtooka") ||
         !noticeText.contains("OpenRussian") ||

@@ -1,8 +1,7 @@
 # Packaged catalog notice
 
 This installation redistributes third-party Russian audio and
-stress-marked dictionary text. This app does not own the packaged
-Russian audio or stress-marked text. User recordings and user-entered
+stress-marked dictionary text. This app does not own the packaged Russian audio or stress-marked text. User recordings and user-entered
 data are not third-party catalog material.
 
 Share-alike confirmation in the packaged seed remains UNCONFIRMED.

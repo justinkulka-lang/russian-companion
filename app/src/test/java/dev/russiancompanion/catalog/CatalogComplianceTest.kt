@@ -133,6 +133,7 @@ class CatalogComplianceTest {
     fun requiredAttributionAndLicenseNoticesAreAvailableOffline() {
         val root = repositoryRoot()
         val notice = File(root, "app/src/main/assets/content/catalog-notice.txt").readText()
+            .replace(Regex("\\s+"), " ")
         requiredAssetNotices.forEach { relative ->
             val file = File(root, relative)
             assertTrue(file.isFile && file.length() > 0L)
