@@ -1,25 +1,21 @@
 # russian-companion
 
-Offline Android companion for self-directed Russian study alongside
-*The New Penguin Russian Course*.
+Offline Android course companion for an adult beginning Russian from zero
+while using a legally owned copy of *The New Penguin Russian Course*.
 
-The app is a local daily conductor, listen-record-compare practice
-companion, advancement gatekeeper, and progress scorekeeper. It has no
-runtime network, AI, AnkiDroid integration, or packaged Penguin lesson
-text. Public release remains **NOT APPROVED** until physical Galaxy
-S26 Ultra acceptance is retained.
+v2 rebuild is in progress. The failed v1.1.0 / v1.1.1 tracking-spine product
+is **not** an accepted baseline. Public release remains **NOT APPROVED**.
+This development identity is **not frozen**.
 
-Development status: **FEATURE_COMPLETE_ACCEPTANCE_PENDING**.
+Governing documents (v2.0 is binding):
 
-Governing documents, unchanged except for a clerical erratum in the
-Master Authority:
+- `docs/governance/MASTER_AUTHORITY_v2.0.md` (normative)
+- `docs/design/PREMIUM_OFFLINE_APP_BLUEPRINT_v2.0.md`
+- `docs/research/RESEARCH_FOUNDATION_v2.0.md` (evidence)
+- `V2_REBUILD_RECONCILIATION.md`
+- `V2_IMPLEMENTATION_PLAN.md`
 
-- `docs/governance/MASTER_AUTHORITY_v1.0.md` (normative)
-- `docs/design/PRODUCT_BRIEF_v1.1.md`
-- `docs/design/FUNCTIONAL_DESIGN_v1.0.md`
-- `docs/design/TECHNICAL_ARCHITECTURE_v1.0.md`
-- `docs/design/ACCEPTANCE_CRITERIA_v1.0.md`
-- `docs/research/RESEARCH_DOSSIER_v1.0.md` (evidence only)
+v1 documents under `docs/` are retained as superseded historical records.
 
 Build:
 
@@ -27,5 +23,5 @@ Build:
 ANDROID_HOME=$HOME/android-sdk ./gradlew testDebugUnitTest assembleDebug --offline
 ```
 
-`assembleRelease` and other release output tasks stay fail-closed
-until retained machine-readable evidence exists.
+`assembleRelease` stays fail-closed until v2 content, rights, review, and
+acceptance requirements are actually satisfied.

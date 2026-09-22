@@ -1,6 +1,8 @@
 # RESEARCH DOSSIER v1.0
 ## Offline Android application for self-directed Russian acquisition (Penguin-concurrent → advanced)
 
+**Status:** SUPERSEDED historical evidence. Current evidence dossier is `docs/research/RESEARCH_FOUNDATION_v2.0.md`.
+
 Role of this document: EVIDENCE, not authority. Per the project pipeline, this
 dossier informs the Product Brief and Master Authority; it does not define
 requirements and contains no source code. Recommendations here are proposals for

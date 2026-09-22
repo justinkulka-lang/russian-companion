@@ -1,6 +1,8 @@
 # CATALOG SOURCING ADDENDUM v1.0
 ## Verified audio + stress-text sources for the offline Russian catalog
 
+**Status:** SUPERSEDED as a curriculum authority. Packaged Shtooka/OpenRussian items remain a rights archive only. They are not a lesson sequence.
+
 **Companion to:** `RESEARCH_DOSSIER_v1.0.md` (this is EVIDENCE, not authority).
 **Occasion:** PR #12 correctly excluded all candidate audio (no verified licenses).
 This addendum identifies sources that DO verify, so the existing catalog-intake
