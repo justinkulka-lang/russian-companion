@@ -44,27 +44,30 @@ class NavigationShellTest {
         store.applySeed(LocalStore.readPackagedSeed(context))
         show(RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()))
 
-        compose.onNodeWithText("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.")
+        compose.onNodeWithText("This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.")
             .assertIsDisplayed()
-        compose.onNodeWithText("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.")
-            .assertIsDisplayed()
-        compose.onNodeWithText("Home", substring = false).assertDoesNotExist()
-        compose.onNodeWithText("Optional drills").assertDoesNotExist()
-        compose.onNodeWithText("Next").performClick()
+        compose.onNodeWithText("Book work uses your copy.").assertIsDisplayed()
         compose.onNodeWithText(
-            "This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.",
+            "This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency.",
         ).assertIsDisplayed()
-        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText(
             "Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.",
         ).assertIsDisplayed()
+        compose.onNodeWithText("independent adult beginner").assertDoesNotExist()
+        compose.onNodeWithText("The New Penguin Russian Course").assertDoesNotExist()
+        compose.onNodeWithText("Home", substring = false).assertDoesNotExist()
+        compose.onNodeWithText("Optional drills").assertDoesNotExist()
         compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Onboarding cannot finish because plan definitions are unavailable.").assertDoesNotExist()
+        compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
         compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Lesson 2", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Lesson 3", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Lesson 30", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Attributions and licenses").performScrollTo().performClick()
+        compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
+        compose.onNodeWithText("Attributions and licenses").assertDoesNotExist()
+        compose.onNodeWithText("Back").performClick()
+        compose.onNodeWithText("Attributions and licenses").performClick()
         compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
             .assertDoesNotExist()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
@@ -73,8 +76,11 @@ class NavigationShellTest {
         back.assertExists()
         runCatching { back.performScrollTo() }
         back.performClick()
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().performClick()
-        compose.onNodeWithText("Confirm lesson").performScrollTo().performClick()
+        compose.onNodeWithText("Selected: Lesson 1").assertIsDisplayed()
+        compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
+        compose.onNodeWithText("Confirm lesson").performClick()
         compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
         compose.onNodeWithText("Home", substring = false).assertIsDisplayed()
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
@@ -97,7 +103,7 @@ class NavigationShellTest {
         store.applySeed(SeedJson.encode(admittedCatalog()))
         show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
 
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 

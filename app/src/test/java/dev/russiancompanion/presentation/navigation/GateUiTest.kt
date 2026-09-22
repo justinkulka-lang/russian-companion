@@ -54,7 +54,7 @@ class GateUiTest {
             )
         }
 
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
         show("Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion")

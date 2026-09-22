@@ -18,21 +18,28 @@ class ReleaseSourceDigestTest {
         val candidate = readAcceptanceCandidate(root)
         assertEquals(binding!!.sourceDigest, candidate?.sourceDigest)
         assertTrue(candidateMatchesBinding(candidate, binding))
-        assertEquals("1.1.0", binding.versionName)
-        assertEquals(3, binding.versionCode)
+        assertEquals("1.1.1", binding.versionName)
+        assertEquals(4, binding.versionCode)
         assertEquals("dev.russiancompanion", binding.applicationId)
-        assertTrue(candidate!!.frozen)
-        assertEquals("3dcbea82be4d9a1d997d4a9c892d0231f55b871d", candidate.sourceCommit)
-        assertEquals("RECORDED", candidate.artifact?.status)
+        assertFalse(candidate!!.frozen)
+        assertEquals(null, candidate.sourceCommit)
+        assertEquals("NOT_RECORDED", candidate.artifact?.status)
         val recorded = recordedCandidateIdentity(candidate)
-        assertNotNull(recorded)
-        assertEquals("3dcbea82be4d9a1d997d4a9c892d0231f55b871d", recorded!!.sourceCommit)
-        assertEquals("33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016", recorded.apkSha256)
-        assertEquals(29277335L, recorded.apkBytes)
-        assertEquals("35765579094", recorded.runId)
+        assertEquals(null, recorded)
+        val failed = candidate.preservedFailedCandidate
+        assertNotNull(failed)
+        assertEquals("1.1.0", failed!!.versionName)
+        assertEquals(3, failed.versionCode)
+        assertEquals("3dcbea82be4d9a1d997d4a9c892d0231f55b871d", failed.sourceCommit)
+        assertEquals("33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016", failed.artifact?.sha256)
+        assertEquals(29277335L, failed.artifact?.apkBytes)
+        assertEquals("35765579094", failed.artifact?.runId)
         assertEquals("NOT_APPROVED", candidate.publicRelease)
-        assertFalse(
+        assertTrue(
             assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.CANDIDATE_NOT_FROZEN),
+        )
+        assertFalse(
+            assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.FAILED_CANDIDATE_REUSED),
         )
     }
 
@@ -48,7 +55,7 @@ class ReleaseSourceDigestTest {
             "app/src/main/assets/audio/.digest-probe" to "audio-changed",
             "gradle.properties" to "org.gradle.jvmargs=-Xmx99m\n",
             "app/build.gradle.kts" to File(root, "app/build.gradle.kts").readText()
-                .replace("versionName = \"1.1.0\"", "versionName = \"1.1.1\""),
+                .replace("versionName = \"1.1.1\"", "versionName = \"1.1.2\""),
             "release/acceptance/DEVICE_ACCEPTANCE.md" to "changed acceptance procedure\n",
             "release/acceptance/templates/AT-001.md" to "changed acceptance template\n",
         )
@@ -124,7 +131,7 @@ class ReleaseSourceDigestTest {
     @Test
     fun retainedEvidenceIsRejectedAfterAVersionIdentityChange() {
         assertInvalidatedBy("app/build.gradle.kts") { file ->
-            file.writeText(file.readText().replace("versionName = \"1.1.0\"", "versionName = \"1.1.1\""))
+            file.writeText(file.readText().replace("versionName = \"1.1.1\"", "versionName = \"1.1.2\""))
         }
     }
 
@@ -169,6 +176,19 @@ class ReleaseSourceDigestTest {
         val after = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, after.decision)
         assertTrue(after.blockers.contains(ReleaseBlocker.CANDIDATE_ARTIFACT_UNRECORDED))
+        assertFalse(after.blockers.contains(ReleaseBlocker.CANDIDATE_NOT_FROZEN))
+    }
+
+    @Test
+    fun failedFrozenV110CandidateCannotAuthorizeV111() {
+        val root = boundProductRoot()
+        val binding = checkNotNull(currentReleaseBinding(root))
+        File(root, ACCEPTANCE_CANDIDATE_PATH).writeText(
+            """{"schemaVersion":4,"kind":"physical-device-acceptance-candidate","publicRelease":"NOT_APPROVED","frozen":true,"sourceCommit":"3dcbea82be4d9a1d997d4a9c892d0231f55b871d","applicationId":"${binding.applicationId}","versionName":"${binding.versionName}","versionCode":${binding.versionCode},"sourceDigest":"${binding.sourceDigest}","artifact":{"status":"RECORDED","sha256":"33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016","apkBytes":29277335,"runId":"35765579094","runUrl":"https://github.com/justinkulka-lang/russian-companion/actions/runs/35765579094"},"preservedFailedCandidate":{"versionName":"1.1.0","versionCode":3,"sourceCommit":"3dcbea82be4d9a1d997d4a9c892d0231f55b871d","artifact":{"status":"RECORDED","sha256":"33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016","apkBytes":29277335,"runId":"35765579094"}}}""",
+        )
+        val after = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, after.decision)
+        assertTrue(after.blockers.contains(ReleaseBlocker.FAILED_CANDIDATE_REUSED))
         assertFalse(after.blockers.contains(ReleaseBlocker.CANDIDATE_NOT_FROZEN))
     }
 

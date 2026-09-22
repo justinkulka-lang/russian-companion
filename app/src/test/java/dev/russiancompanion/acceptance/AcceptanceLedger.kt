@@ -6,8 +6,7 @@ package dev.russiancompanion.acceptance
  * A green automated test does not move an outstanding procedure to SATISFIED.
  *
  * Release-hardening copy now present in the app:
- * the onboarding identity for an independent adult beginner working through
- * The New Penguin Russian Course; grammar practice in the user's book and answer key;
+ * generic offline-companion onboarding; grammar practice in the user's book and answer key;
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
  * AT-001 stays outstanding: a release candidate with complete bundled content
  * has not been accepted. The packaged seed now contains a structural Lessons

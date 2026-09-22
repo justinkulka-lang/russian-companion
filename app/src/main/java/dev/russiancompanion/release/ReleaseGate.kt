@@ -51,6 +51,7 @@ internal enum class ReleaseBlocker(val message: String) {
     SOURCE_DIGEST_MISMATCH("The candidate source digest does not match the current release inputs."),
     CANDIDATE_NOT_FROZEN("The acceptance candidate is not frozen."),
     CANDIDATE_ARTIFACT_UNRECORDED("The frozen candidate APK identity is not recorded."),
+    FAILED_CANDIDATE_REUSED("A failed frozen acceptance candidate cannot authorize this version."),
 }
 
 internal data class ReleaseAssessment(
@@ -454,6 +455,9 @@ private fun sourceBindingBlockers(
         blockers += ReleaseBlocker.CANDIDATE_NOT_FROZEN
     } else if (recorded == null) {
         blockers += ReleaseBlocker.CANDIDATE_ARTIFACT_UNRECORDED
+    }
+    if (failedFrozenCandidateReused(candidate, recorded)) {
+        blockers += ReleaseBlocker.FAILED_CANDIDATE_REUSED
     }
     return blockers
 }

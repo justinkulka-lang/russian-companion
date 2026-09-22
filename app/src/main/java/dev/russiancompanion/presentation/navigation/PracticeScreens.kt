@@ -5,15 +5,11 @@ import android.content.pm.PackageManager
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
@@ -27,7 +23,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.LiveRegionMode
-import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -37,7 +32,6 @@ import androidx.lifecycle.LifecycleEventObserver
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
-import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.practice.AbPlaybackDriver
 import dev.russiancompanion.domain.practice.AbSession
@@ -61,39 +55,36 @@ internal fun PracticeLibraryBody(
     onTodaysPlan: () -> Unit,
     onAttributions: () -> Unit,
 ) {
-    LazyColumn(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ShellPage(
+        title = stringResource(R.string.practice_title),
+        onBack = onBack,
+        onHome = onHome,
+        scrollable = false,
     ) {
-        item(key = "practice-header") {
+        if (snapshot.audio.isEmpty()) {
             Text(
-                text = stringResource(R.string.practice_title),
-                style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.semantics { heading() },
+                stringResource(R.string.practice_none),
+                color = MaterialTheme.colorScheme.onBackground,
             )
-            if (onBack != null) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.navigate_back)) }
-            }
-            if (onHome != null) {
-                TextButton(onClick = onHome) { Text(stringResource(R.string.navigate_home)) }
-            }
-            if (snapshot.audio.isEmpty()) {
-                Text(stringResource(R.string.practice_none))
+        }
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f, fill = true),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            items(snapshot.audio, key = { it.id }) { model ->
+                PracticeLibraryRow(model = model, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
             }
         }
-        items(snapshot.audio, key = { it.id }) { model ->
-            PracticeLibraryRow(model = model, onOpen = onOpen, onInspectAttribution = onInspectAttribution)
-        }
-        item(key = "practice-footer") {
-            TextButton(onClick = onTodaysPlan) {
-                Text(stringResource(R.string.open_todays_plan_from_practice))
-            }
-            TextButton(onClick = onAttributions) {
-                Text(stringResource(R.string.open_attributions))
-            }
-        }
+        SecondaryAction(
+            text = stringResource(R.string.open_todays_plan_from_practice),
+            onClick = onTodaysPlan,
+        )
+        SecondaryAction(
+            text = stringResource(R.string.open_attributions),
+            onClick = onAttributions,
+        )
     }
 }
 
@@ -104,19 +95,29 @@ private fun PracticeLibraryRow(
     onInspectAttribution: (String) -> Unit,
 ) {
     if (model.licenseName.isNotBlank() || model.attribution.isNotBlank()) {
-        TextButton(onClick = { onInspectAttribution(model.id) }) {
-            Text("${model.licenseName}: ${model.attribution}")
-        }
+        SecondaryAction(
+            text = "${model.licenseName}: ${model.attribution}",
+            onClick = { onInspectAttribution(model.id) },
+        )
     }
-    Text(stringResource(if (model.completed) R.string.plan_completed else R.string.plan_not_completed))
+    Text(
+        stringResource(if (model.completed) R.string.plan_completed else R.string.plan_not_completed),
+        color = MaterialTheme.colorScheme.onBackground,
+    )
     if (model.hasRecording) {
-        Text(stringResource(R.string.practice_recorded))
+        Text(
+            stringResource(R.string.practice_recorded),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
     }
     if (model.playable) {
-        TextButton(onClick = { onOpen(model.id) }) { Text(model.stressMarkedText) }
+        PrimaryAction(text = model.stressMarkedText, onClick = { onOpen(model.id) })
     } else {
-        Text(model.stressMarkedText)
-        Text(stringResource(R.string.practice_session_unavailable))
+        Text(model.stressMarkedText, color = MaterialTheme.colorScheme.onBackground)
+        Text(
+            stringResource(R.string.practice_session_unavailable),
+            color = MaterialTheme.colorScheme.error,
+        )
     }
 }
 
@@ -208,51 +209,55 @@ internal fun PracticeSessionBody(
         }
     }
     val playbackLocked = conflictingPlaybackBlocked(abSession)
-    Text(PRACTICE_NO_SCORE_STATEMENT)
+    Text(PRACTICE_NO_SCORE_STATEMENT, color = MaterialTheme.colorScheme.onBackground)
     if (model == null) {
-        Text(stringResource(R.string.practice_session_unavailable))
+        Text(
+            stringResource(R.string.practice_session_unavailable),
+            color = MaterialTheme.colorScheme.error,
+        )
         return
     }
-    Text(model.stressMarkedText)
+    Text(model.stressMarkedText, color = MaterialTheme.colorScheme.onBackground)
     if (model.licenseName.isNotBlank() || model.attribution.isNotBlank()) {
-        Text("${model.licenseName}: ${model.attribution}")
+        Text(
+            "${model.licenseName}: ${model.attribution}",
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
-    Text(stringResource(if (completed) R.string.plan_completed else R.string.plan_not_completed))
+    Text(
+        stringResource(if (completed) R.string.plan_completed else R.string.plan_not_completed),
+        color = MaterialTheme.colorScheme.onBackground,
+    )
     if (!playable) {
-        Text(stringResource(R.string.practice_cannot_play))
+        Text(
+            stringResource(R.string.practice_cannot_play),
+            color = MaterialTheme.colorScheme.error,
+        )
         return
     }
     if (modelPlayed) {
-        Text(stringResource(R.string.practice_played))
+        Text(stringResource(R.string.practice_played), color = MaterialTheme.colorScheme.onBackground)
     }
-    TextButton(
+    SecondaryAction(
+        text = stringResource(
+            if (modelSpeed == 0.75f) R.string.practice_speed_075_selected else R.string.practice_speed_075,
+        ),
         onClick = { modelSpeed = 0.75f },
         enabled = !playbackLocked,
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(
-            stringResource(
-                if (modelSpeed == 0.75f) R.string.practice_speed_075_selected else R.string.practice_speed_075,
-            ),
-        )
-    }
-    TextButton(
+    )
+    SecondaryAction(
+        text = stringResource(
+            if (modelSpeed == 1.0f) R.string.practice_speed_100_selected else R.string.practice_speed_100,
+        ),
         onClick = { modelSpeed = 1.0f },
         enabled = !playbackLocked,
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(
-            stringResource(
-                if (modelSpeed == 1.0f) R.string.practice_speed_100_selected else R.string.practice_speed_100,
-            ),
-        )
-    }
-    Text(stringResource(R.string.practice_recording_speed, RECORDING_PLAYBACK_SPEED.toString()))
-    TextButton(
+    )
+    Text(
+        stringResource(R.string.practice_recording_speed, RECORDING_PLAYBACK_SPEED.toString()),
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+    )
+    PrimaryAction(
+        text = stringResource(if (readable) R.string.practice_replay_model else R.string.practice_play_model),
         onClick = {
             abDriver?.stop(AbStopReason.USER_STOP)
             practiceAudio.playModel(model.localAudioReference, modelSpeed) { succeeded ->
@@ -265,20 +270,17 @@ internal fun PracticeSessionBody(
             }
         },
         enabled = !playbackLocked,
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(stringResource(if (readable) R.string.practice_replay_model else R.string.practice_play_model))
-    }
+    )
     if (microphoneDenied) {
         Text(
             stringResource(R.string.practice_mic_denied),
+            color = MaterialTheme.colorScheme.error,
             modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
         )
     }
     if (recordingNow) {
-        TextButton(
+        PrimaryAction(
+            text = stringResource(R.string.practice_stop),
             onClick = {
                 val saved = practiceAudio.stopCapture(keep = true)
                 recordingNow = false
@@ -291,9 +293,10 @@ internal fun PracticeSessionBody(
                 }
             },
             enabled = !operationInProgress,
-        ) { Text(stringResource(R.string.practice_stop)) }
+        )
     } else if (!completed || !readable) {
-        TextButton(
+        PrimaryAction(
+            text = stringResource(R.string.practice_record),
             onClick = {
                 if (!microphoneGranted) {
                     microphoneDenied = true
@@ -309,20 +312,25 @@ internal fun PracticeSessionBody(
                 }
             },
             enabled = !operationInProgress && (!microphoneGranted || canStartRecording(progress)),
-        ) { Text(stringResource(R.string.practice_record)) }
+        )
     }
     if (captureFailed) {
         Text(
             stringResource(R.string.practice_not_saved),
+            color = MaterialTheme.colorScheme.error,
             modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
         )
     }
     if (latest != null && !readable) {
-        Text(stringResource(R.string.practice_recording_unavailable))
+        Text(
+            stringResource(R.string.practice_recording_unavailable),
+            color = MaterialTheme.colorScheme.error,
+        )
     }
     if (readable && latest != null) {
-        Text(stringResource(R.string.practice_recorded))
-        TextButton(
+        Text(stringResource(R.string.practice_recorded), color = MaterialTheme.colorScheme.onBackground)
+        SecondaryAction(
+            text = stringResource(R.string.practice_play_recording),
             onClick = {
                 abDriver?.stop(AbStopReason.USER_STOP)
                 practiceAudio.playRecording(latest.localFileReference) { succeeded ->
@@ -330,62 +338,47 @@ internal fun PracticeSessionBody(
                 }
             },
             enabled = !playbackLocked,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) { Text(stringResource(R.string.practice_play_recording)) }
-        TextButton(
+        )
+        SecondaryAction(
+            text = stringResource(R.string.practice_play_ab),
             onClick = { abDriver?.startOnce() },
             enabled = !playbackLocked,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) { Text(stringResource(R.string.practice_play_ab)) }
-        TextButton(
+        )
+        SecondaryAction(
+            text = stringResource(R.string.practice_repeat_ab),
             onClick = { abDriver?.startLoop() },
             enabled = !playbackLocked,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) { Text(stringResource(R.string.practice_repeat_ab)) }
+        )
         if (abSession.active) {
             Text(
                 stringResource(
                     if (abSession.looping) R.string.practice_ab_looping else R.string.practice_ab_playing,
                 ),
+                color = MaterialTheme.colorScheme.onBackground,
             )
-            TextButton(
+            SecondaryAction(
+                text = stringResource(R.string.practice_stop_loop),
                 onClick = { abDriver?.stop(AbStopReason.USER_STOP) },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .heightIn(min = 48.dp),
-            ) { Text(stringResource(R.string.practice_stop_loop)) }
+            )
         }
-        TextButton(
+        SecondaryAction(
+            text = stringResource(
+                if (latest.markedForTutorReview) R.string.practice_unmark_tutor else R.string.practice_mark_tutor,
+            ),
             onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) { } },
             enabled = !operationInProgress,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) {
-            Text(
-                stringResource(
-                    if (latest.markedForTutorReview) R.string.practice_unmark_tutor else R.string.practice_mark_tutor,
-                ),
-            )
-        }
+        )
         if (latest.markedForTutorReview) {
-            TextButton(
+            SecondaryAction(
+                text = stringResource(R.string.practice_clear_tutor),
                 onClick = { onTutorReview(latest.id, false) { } },
                 enabled = !operationInProgress,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .heightIn(min = 48.dp),
-            ) { Text(stringResource(R.string.practice_clear_tutor)) }
+            )
         }
     }
     if (canReplaceTake(progress) && !recordingNow) {
-        TextButton(
+        SecondaryAction(
+            text = stringResource(R.string.practice_replace_take),
             onClick = {
                 if (canStartRecording(progress.copy(alreadyCompleted = false, hasReadableRecording = false)) ||
                     canReplaceTake(progress)
@@ -400,20 +393,13 @@ internal fun PracticeSessionBody(
                 }
             },
             enabled = !operationInProgress,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) { Text(stringResource(R.string.practice_replace_take)) }
+        )
     }
     if (canCompletePractice(progress)) {
-        TextButton(
+        PrimaryAction(
+            text = stringResource(R.string.practice_complete),
             onClick = { onComplete(model.id) { } },
             enabled = !operationInProgress,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) {
-            Text(stringResource(R.string.practice_complete))
-        }
+        )
     }
 }

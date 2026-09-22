@@ -1,9 +1,9 @@
 package dev.russiancompanion.presentation.navigation
 
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateMapOf
@@ -36,11 +36,14 @@ internal fun GateListBody(details: List<GateDetailView>, onOpen: (String) -> Uni
         return
     }
     details.forEach { detail ->
-        TextButton(onClick = { onOpen(detail.id) }) { Text(detail.displayedRuleText) }
+        SecondaryAction(text = detail.displayedRuleText, onClick = { onOpen(detail.id) })
         GateStatusLine(detail.recordedStatus)
         GateLockedRemainder(detail)
         if (detail.conditions.any { it.result == ConditionResult.UNREADABLE }) {
-            Text(stringResource(R.string.gate_evidence_unreadable))
+            Text(
+                stringResource(R.string.gate_evidence_unreadable),
+                color = MaterialTheme.colorScheme.error,
+            )
         }
     }
 }
@@ -93,7 +96,8 @@ internal fun GateDetailBody(
         Text(attestationLabel(record.kind))
     }
     if (!detail.tutorRequired) {
-        TextButton(
+        SecondaryAction(
+            text = stringResource(R.string.gate_add_tutor),
             onClick = {
                 onAddTutor { update ->
                     failedAdd = update is PlanUpdate.NotSaved
@@ -101,12 +105,16 @@ internal fun GateDetailBody(
                 }
             },
             enabled = actionsEnabled,
-        ) { Text(stringResource(R.string.gate_add_tutor)) }
+        )
     }
     if (saveFailed) {
-        Text(stringResource(R.string.plan_not_saved))
+        Text(
+            stringResource(R.string.plan_not_saved),
+            color = MaterialTheme.colorScheme.error,
+        )
     }
-    TextButton(
+    PrimaryAction(
+        text = stringResource(R.string.gate_save),
         onClick = {
             val invalid = detail.conditions.mapNotNull { condition ->
                 val value = drafts[condition.id].orEmpty()
@@ -122,7 +130,7 @@ internal fun GateDetailBody(
             if (invalid.isNotEmpty()) {
                 saveFailed = false
                 failedAdd = false
-                return@TextButton
+                return@PrimaryAction
             }
             val entries = detail.conditions.mapNotNull { condition ->
                 val value = drafts[condition.id].orEmpty().trim()
@@ -138,9 +146,10 @@ internal fun GateDetailBody(
             }
         },
         enabled = actionsEnabled,
-    ) { Text(stringResource(R.string.gate_save)) }
+    )
     if (saveFailed) {
-        TextButton(
+        SecondaryAction(
+            text = stringResource(R.string.navigate_retry),
             onClick = {
                 if (failedAdd) {
                     onAddTutor { update ->
@@ -162,7 +171,7 @@ internal fun GateDetailBody(
                 }
             },
             enabled = actionsEnabled,
-        ) { Text(stringResource(R.string.navigate_retry)) }
+        )
     }
 }
 
@@ -187,9 +196,10 @@ private fun ConditionBlock(
     when (condition.kind) {
         GateEvidenceKind.ANKI_DROID_STATUS -> {
             AnkiStatusValue.entries.forEach { status ->
-                TextButton(onClick = { onDraft(status.name) }) {
-                    Text(ankiStatusText(status))
-                }
+                SecondaryAction(
+                    text = ankiStatusText(status),
+                    onClick = { onDraft(status.name) },
+                )
             }
         }
         GateEvidenceKind.BOOK_REVISION_SCORE -> {
@@ -204,17 +214,16 @@ private fun ConditionBlock(
         GateEvidenceKind.PRESCRIBED_WORK_COMPLETION,
         GateEvidenceKind.TUTOR_SIGN_OFF,
         -> {
-            TextButton(onClick = onRecordPresence) {
-                Text(
-                    stringResource(
-                        if (condition.kind == GateEvidenceKind.PRESCRIBED_WORK_COMPLETION) {
-                            R.string.gate_confirm_work
-                        } else {
-                            R.string.gate_record_tutor
-                        },
-                    ),
-                )
-            }
+            SecondaryAction(
+                text = stringResource(
+                    if (condition.kind == GateEvidenceKind.PRESCRIBED_WORK_COMPLETION) {
+                        R.string.gate_confirm_work
+                    } else {
+                        R.string.gate_record_tutor
+                    },
+                ),
+                onClick = onRecordPresence,
+            )
             if (draft.isNotBlank()) {
                 Text(draft)
             }

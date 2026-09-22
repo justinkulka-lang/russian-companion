@@ -59,17 +59,13 @@ class DailyPlanUiTest {
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
         show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
 
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
         showText("Required activities completed: 0 of 3")
         showText("Next required activity")
         showText("Use your copy of the book for this lesson")
-        showText("Activity gate, not proficiency certification.")
-        showText("No advancement decision is recorded.")
-        showText("Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion")
-        showText("No activity is recorded.")
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
         clickText("Today's Plan", substring = false)
 
@@ -113,7 +109,7 @@ class DailyPlanUiTest {
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = false)))
         show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
@@ -148,7 +144,7 @@ class DailyPlanUiTest {
         store.applySeed(SeedJson.encode(prescribedCatalogDocument()))
         val audio = SelectivePracticeAudio(setOf("audio/audio-b", "audio/audio-c", "audio/audio-unrelated"))
         show(RoomNavigationGateway(store, { null }, audio), audio)
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
@@ -175,7 +171,7 @@ class DailyPlanUiTest {
         store.applySeed(SeedJson.encode(prescribedCatalogDocument()))
         val audio = SelectivePracticeAudio(setOf("audio/audio-unrelated"))
         show(RoomNavigationGateway(store, { null }, audio), audio)
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
@@ -194,7 +190,7 @@ class DailyPlanUiTest {
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
         show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
@@ -211,7 +207,7 @@ class DailyPlanUiTest {
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
         show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 

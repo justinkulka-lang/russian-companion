@@ -150,35 +150,37 @@ Exact on-screen labels are quoted.
 
 1. Open **Russian Companion**.
 2. Onboarding page 1 must show:
-   - `This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.`
-   - `This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.`
-   Screenshot: `AT-001-01-identity.png`.
-3. Tap `Next`.
-4. Page 2 must show:
-   - `This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.`
-   Screenshot: `AT-001-02-limits.png`.
-5. Tap `Next`.
-6. Page 3 must show:
+   - `This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.`
+   - `Book work uses your copy.`
+   - `This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency.`
    - `Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.`
-7. Scroll the lesson list. Confirm **Lesson 1** through **Lesson 30**
+   Screenshot: `AT-001-01-identity.png`.
+   The phrases `independent adult beginner` and `The New Penguin Russian Course`
+   must not appear on screen.
+3. Tap `Next`.
+4. Page 2 is lesson selection. `Confirm lesson` must remain visible
+   without scrolling the 30-lesson list.
+   Screenshot: `AT-001-02-limits.png`.
+5. Scroll the lesson list. Confirm **Lesson 1** through **Lesson 30**
    are present and selectable. Confirm there is no B1, B2, C1,
    handwriting, dictionary, media library, social, gamification, or
    tutor-scheduling entry.
    Screenshots: `AT-001-03-lesson-1.png`, `AT-001-04-lesson-30.png`.
-8. Confirm the listed roles are available after onboarding: Today's
+6. Confirm the listed roles are available after onboarding: Today's
    Plan, Practice, Gates, Progress, and Local export (Local export is
    reached from Progress). Optional drills must **not** appear.
-9. Select `Lesson 1`. Tap `Confirm lesson`.
-10. Home must show `Current lesson: Lesson 1` and
-    `Required activities completed: 0 of 3`.
-    Screenshot: `AT-001-05-home.png`.
+7. Select `Lesson 1`. The selected row must show immediately.
+   Then tap `Confirm lesson`.
+8. Home must show `Current lesson: Lesson 1` and
+   `Required activities completed: 0 of 3`.
+   Screenshot: `AT-001-05-home.png`.
 
-AT-001 expected result: the app identifies itself as a companion for
-an independent adult beginner using The New Penguin Russian Course;
-offers only the Penguin-concurrent beginner arc (Lessons 1–30); and
-exposes daily conductor, listen-record-compare, gates, and
-progress/local-export roles without a post-book B1, B2, or C1
-curriculum.
+AT-001 expected result: the app offers only the beginner arc
+(Lessons 1–30) and exposes daily conductor, listen-record-compare,
+gates, and progress/local-export roles without a post-book B1, B2,
+or C1 curriculum. On-screen onboarding copy stays generic and does
+not display the banned identity phrases. This procedure remains
+outstanding until a later physical run records a result.
 
 ### B. AT-030 lesson cycle (also satisfies most of AT-004)
 

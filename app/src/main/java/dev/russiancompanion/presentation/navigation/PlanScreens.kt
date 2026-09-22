@@ -1,15 +1,12 @@
 package dev.russiancompanion.presentation.navigation
 
-import androidx.compose.foundation.layout.heightIn
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.unit.dp
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.appearance.AppearancePreference
 import dev.russiancompanion.domain.navigation.ContinueDestination
@@ -22,7 +19,6 @@ import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.plan.canMarkComplete
 import dev.russiancompanion.domain.progress.BackupOutcome
-import dev.russiancompanion.domain.progress.PROGRESS_ACTIVITY_ONLY_STATEMENT
 import dev.russiancompanion.domain.progress.categoryHasRecordedActivity
 
 @Composable
@@ -38,26 +34,24 @@ internal fun HomePlanSection(
 ) {
     val lesson = snapshot.activeLessonReference
     if (lesson != null) {
-        Text(stringResource(R.string.home_current_lesson, lesson))
+        Text(
+            stringResource(R.string.home_current_lesson, lesson),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.onBackground,
+        )
     }
     ContinueCard(
         snapshot = snapshot,
         onContinue = onContinue,
         onSelectLesson = onSelectLesson,
     )
+    HomeBackupSummary(snapshot)
+    HomeHealthSummary(snapshot)
     AppearanceControls(
         appearance = appearance,
         saveFailed = appearanceSaveFailed,
         onAppearanceChange = onAppearanceChange,
     )
-    HomeBackupSummary(snapshot)
-    HomeHealthSummary(snapshot)
-    HomeBalanceSummary(snapshot)
-    if (activeLessonHasPlan(snapshot)) {
-        TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
-    }
-    GateSummarySection(snapshot)
-    ActivitySummarySection(snapshot)
 }
 
 @Composable
@@ -66,41 +60,37 @@ private fun AppearanceControls(
     saveFailed: Boolean = false,
     onAppearanceChange: (AppearancePreference) -> Unit,
 ) {
-    Text(stringResource(R.string.appearance_title), modifier = Modifier.semantics { heading() })
-    TextButton(
+    Text(
+        stringResource(R.string.appearance_title),
+        style = MaterialTheme.typography.titleMedium,
+        color = MaterialTheme.colorScheme.onBackground,
+        modifier = Modifier.semantics { heading() },
+    )
+    SecondaryAction(
+        text = stringResource(
+            if (appearance == AppearancePreference.DARK) {
+                R.string.appearance_dark_selected
+            } else {
+                R.string.appearance_dark
+            },
+        ),
         onClick = { onAppearanceChange(AppearancePreference.DARK) },
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(
-            stringResource(
-                if (appearance == AppearancePreference.DARK) {
-                    R.string.appearance_dark_selected
-                } else {
-                    R.string.appearance_dark
-                },
-            ),
-        )
-    }
-    TextButton(
+    )
+    SecondaryAction(
+        text = stringResource(
+            if (appearance == AppearancePreference.FOLLOW_SYSTEM) {
+                R.string.appearance_follow_system_selected
+            } else {
+                R.string.appearance_follow_system
+            },
+        ),
         onClick = { onAppearanceChange(AppearancePreference.FOLLOW_SYSTEM) },
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(
-            stringResource(
-                if (appearance == AppearancePreference.FOLLOW_SYSTEM) {
-                    R.string.appearance_follow_system_selected
-                } else {
-                    R.string.appearance_follow_system
-                },
-            ),
-        )
-    }
+    )
     if (saveFailed) {
-        Text(stringResource(R.string.appearance_save_failed))
+        Text(
+            stringResource(R.string.appearance_save_failed),
+            color = MaterialTheme.colorScheme.error,
+        )
     }
 }
 
@@ -111,28 +101,43 @@ private fun ContinueCard(
     onSelectLesson: () -> Unit,
 ) {
     val destination = resolveContinueDestination(snapshot)
-    Text(stringResource(R.string.continue_card_title), modifier = Modifier.semantics { heading() })
+    Text(
+        stringResource(R.string.continue_card_title),
+        style = MaterialTheme.typography.titleMedium,
+        color = MaterialTheme.colorScheme.onBackground,
+        modifier = Modifier.semantics { heading() },
+    )
     if (!snapshot.localDataOpen || snapshot.seedCorrupt) {
-        Text(stringResource(R.string.continue_unavailable))
+        Text(
+            stringResource(R.string.continue_unavailable),
+            color = MaterialTheme.colorScheme.error,
+        )
         return
     }
     if (!activeLessonHasPlan(snapshot)) {
-        Text(stringResource(R.string.home_no_plan))
-        TextButton(
+        Text(
+            stringResource(R.string.home_no_plan),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
+        PrimaryAction(
+            text = stringResource(R.string.home_select_lesson),
             onClick = onSelectLesson,
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-        ) { Text(stringResource(R.string.home_select_lesson)) }
+        )
         return
     }
     val plan = snapshot.dailyPlan
     if (!plan.requiredWorkPrescribed) {
-        Text(stringResource(R.string.plan_no_work))
+        Text(
+            stringResource(R.string.plan_no_work),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
         return
     }
     snapshot.activeLessonReference?.let { lesson ->
-        Text(stringResource(R.string.continue_lesson, lesson))
+        Text(
+            stringResource(R.string.continue_lesson, lesson),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
     }
     Text(
         stringResource(
@@ -164,15 +169,11 @@ private fun ContinueCard(
             )
         }
     }
-    TextButton(
+    PrimaryAction(
+        text = stringResource(R.string.continue_action),
         onClick = onContinue,
         enabled = !unavailable,
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 48.dp),
-    ) {
-        Text(stringResource(R.string.continue_action))
-    }
+    )
 }
 
 @Composable
@@ -193,8 +194,11 @@ internal fun TodaysPlanBody(
         Text(stringResource(R.string.home_current_lesson, lesson))
     }
     if (!activeLessonHasPlan(snapshot)) {
-        Text(stringResource(R.string.home_no_plan))
-        TextButton(onClick = onSelectLesson) { Text(stringResource(R.string.home_select_lesson)) }
+        Text(
+            stringResource(R.string.home_no_plan),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
+        PrimaryAction(text = stringResource(R.string.home_select_lesson), onClick = onSelectLesson)
         return
     }
     val plan = snapshot.dailyPlan
@@ -236,17 +240,23 @@ internal fun TodaysPlanBody(
         )
     }
     plan.addableTutorTasks.forEach { item ->
-        Text(item.instruction)
-        TextButton(
+        Text(item.instruction, color = MaterialTheme.colorScheme.onBackground)
+        SecondaryAction(
+            text = stringResource(R.string.plan_add_tutor),
             onClick = { onIncludeTutor(item.planDefinitionId) },
             enabled = actionsEnabled,
-        ) {
-            Text(stringResource(R.string.plan_add_tutor))
-        }
+        )
     }
     if (saveFailed) {
-        Text(stringResource(R.string.plan_not_saved))
-        TextButton(onClick = onRetrySave, enabled = actionsEnabled) { Text(stringResource(R.string.navigate_retry)) }
+        Text(
+            stringResource(R.string.plan_not_saved),
+            color = MaterialTheme.colorScheme.error,
+        )
+        PrimaryAction(
+            text = stringResource(R.string.navigate_retry),
+            onClick = onRetrySave,
+            enabled = actionsEnabled,
+        )
     }
 }
 
@@ -287,65 +297,32 @@ private fun ChecklistRow(
         ),
     )
     if (canMarkComplete(item)) {
-        TextButton(onClick = { onComplete(item.planDefinitionId) }, enabled = actionsEnabled) {
-            Text(stringResource(R.string.plan_mark_complete))
-        }
+        PrimaryAction(
+            text = stringResource(R.string.plan_mark_complete),
+            onClick = { onComplete(item.planDefinitionId) },
+            enabled = actionsEnabled,
+        )
     }
     if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
-        TextButton(onClick = onStartPractice, enabled = practiceAvailable) {
-            Text(stringResource(R.string.plan_start_practice))
-        }
+        PrimaryAction(
+            text = stringResource(R.string.plan_start_practice),
+            onClick = onStartPractice,
+            enabled = practiceAvailable && actionsEnabled,
+        )
         if (!practiceAvailable) {
             Text(
                 stringResource(
                     if (admittedAudio) R.string.plan_prescribed_audio_unavailable else R.string.practice_none,
                 ),
+                color = MaterialTheme.colorScheme.error,
             )
         }
     }
     if (item.activity == ChecklistActivity.TUTOR) {
-        TextButton(onClick = { onRemoveTutor(item.planDefinitionId) }, enabled = actionsEnabled) {
-            Text(stringResource(R.string.plan_remove_tutor))
-        }
-    }
-}
-
-@Composable
-private fun GateSummarySection(snapshot: NavigationSnapshot) {
-    Text(stringResource(R.string.gates_not_proficiency))
-    if (snapshot.gateDetails.isEmpty()) {
-        Text(stringResource(R.string.gates_none))
-        return
-    }
-    snapshot.gateDetails.forEach { detail ->
-        GateStatusLine(detail.recordedStatus)
-        GateLockedRemainder(detail)
-    }
-}
-
-@Composable
-private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
-    if (!snapshot.progress.readable) {
-        Text(stringResource(R.string.local_data_message))
-        return
-    }
-    Text(PROGRESS_ACTIVITY_ONLY_STATEMENT)
-    val summary = snapshot.activitySummary
-    val latest = summary.latest
-    if (latest == null) {
-        Text(stringResource(R.string.home_no_activity))
-        return
-    }
-    if (latest.completed && latest.minutes == 0) {
-        Text(stringResource(R.string.home_latest_completed_zero, categoryLabel(latest.category)))
-    } else {
-        Text(
-            stringResource(
-                R.string.home_latest_activity,
-                categoryLabel(latest.category),
-                latest.minutes,
-                stringResource(if (latest.completed) R.string.plan_completed else R.string.plan_not_completed),
-            ),
+        SecondaryAction(
+            text = stringResource(R.string.plan_remove_tutor),
+            onClick = { onRemoveTutor(item.planDefinitionId) },
+            enabled = actionsEnabled,
         )
     }
 }
@@ -378,23 +355,6 @@ private fun HomeHealthSummary(snapshot: NavigationSnapshot) {
             false -> stringResource(R.string.health_summary_unreadable)
             null -> stringResource(R.string.health_summary_unavailable)
         },
-    )
-}
-
-@Composable
-private fun HomeBalanceSummary(snapshot: NavigationSnapshot) {
-    val seven = snapshot.sevenDayBalance
-    val thirty = snapshot.thirtyDayBalance
-    if (!seven.readable || !thirty.readable) {
-        Text(stringResource(R.string.balance_unreadable))
-        return
-    }
-    Text(
-        stringResource(
-            R.string.balance_summary,
-            seven.recordedCategories.size,
-            thirty.recordedCategories.size,
-        ),
     )
 }
 

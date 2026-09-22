@@ -69,7 +69,7 @@ class ProgressUiTest {
             )
         }
 
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
         click("Progress")
@@ -130,7 +130,7 @@ class ProgressUiTest {
                 practiceAudio = PermissivePracticeAudio(),
             )
         }
-        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
         click("Progress")
