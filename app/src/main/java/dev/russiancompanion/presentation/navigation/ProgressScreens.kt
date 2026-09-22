@@ -20,6 +20,7 @@ import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.progress.ExportUpdate
+import dev.russiancompanion.domain.progress.PROGRESS_ACTIVITY_ONLY_STATEMENT
 import dev.russiancompanion.domain.progress.activityAttestationLabel
 import dev.russiancompanion.domain.progress.categoryShowsImbalance
 import java.io.OutputStream
@@ -39,7 +40,7 @@ internal fun ProgressScreen(
         if (!progress.readable) {
             Text(stringResource(R.string.local_data_message))
         } else {
-            Text(stringResource(R.string.progress_activity_only))
+            Text(PROGRESS_ACTIVITY_ONLY_STATEMENT)
             Text(
                 stringResource(
                     R.string.progress_cumulative,

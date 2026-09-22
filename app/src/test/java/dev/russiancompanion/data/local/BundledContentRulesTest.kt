@@ -372,6 +372,36 @@ class BundledContentRulesTest {
         } catch (_: IllegalArgumentException) {
             // expected
         }
+        try {
+            UserRecordRules.activityLog(
+                category = ActivityCategory.GRAMMAR,
+                durationMinutes = 10,
+                completed = true,
+                recordedAtLocal = "local-time",
+                segmentId = null,
+                planInstanceId = null,
+                selfAttested = false,
+                planActivityType = null,
+            )
+            error("grammar without attestation was accepted")
+        } catch (_: IllegalArgumentException) {
+            // expected
+        }
+        try {
+            UserRecordRules.activityLog(
+                category = ActivityCategory.VOCABULARY_AND_FORMS,
+                durationMinutes = 10,
+                completed = true,
+                recordedAtLocal = "local-time",
+                segmentId = null,
+                planInstanceId = null,
+                selfAttested = false,
+                planActivityType = PlanActivityType.ANKI_DROID,
+            )
+            error("AnkiDroid activity without attestation was accepted")
+        } catch (_: IllegalArgumentException) {
+            // expected
+        }
     }
 
     @Test

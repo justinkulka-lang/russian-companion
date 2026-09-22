@@ -103,5 +103,9 @@ class ProgressRulesTest {
         assertTrue(review.categories.filter { it.category != RecordedCategory.GRAMMAR }.all(::categoryShowsImbalance))
         assertEquals(0L, review.totalMinutes)
         assertEquals(1, review.totalCompletions)
+        assertEquals(
+            PROGRESS_ACTIVITY_ONLY_STATEMENT,
+            "Recorded activity is work completed, not certified ability.",
+        )
     }
 }

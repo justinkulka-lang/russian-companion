@@ -12,6 +12,7 @@ import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.plan.canMarkComplete
+import dev.russiancompanion.domain.progress.PROGRESS_ACTIVITY_ONLY_STATEMENT
 
 @Composable
 internal fun HomePlanSection(
@@ -194,7 +195,7 @@ private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
         Text(stringResource(R.string.local_data_message))
         return
     }
-    Text(stringResource(R.string.progress_activity_only))
+    Text(PROGRESS_ACTIVITY_ONLY_STATEMENT)
     val summary = snapshot.activitySummary
     val latest = summary.latest
     if (latest == null) {
