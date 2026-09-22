@@ -100,6 +100,15 @@ class BundledContentRulesTest {
             ),
         )
         assertTrue(shared.audio.all { it.eligibilityStatus == EligibilityStatus.EXCLUDED })
+
+        val delimited = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights(assetIdentifier = "audio-1\tmodel")),
+                audioModels = listOf(audio(id = "audio-1\tmodel")),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, delimited.audio.single().eligibilityStatus)
     }
 
     @Test

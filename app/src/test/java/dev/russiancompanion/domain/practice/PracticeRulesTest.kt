@@ -1,6 +1,8 @@
 package dev.russiancompanion.domain.practice
 
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -21,6 +23,8 @@ class PracticeRulesTest {
         assertFalse(canStartRecording(idle.copy(modelPlayed = true, microphoneGranted = false)))
         assertFalse(canStartRecording(idle.copy(modelPlayed = true, modelPlayable = false)))
         assertTrue(canStartRecording(idle.copy(modelPlayed = true)))
+        assertFalse(canStartRecording(idle.copy(modelPlayed = true, hasReadableRecording = true, alreadyCompleted = true)))
+        assertTrue(canStartRecording(idle.copy(modelPlayed = true, alreadyCompleted = true)))
     }
 
     @Test
@@ -40,5 +44,40 @@ class PracticeRulesTest {
         assertFalse(canCompletePractice(ready.copy(hasReadableRecording = false)))
         assertFalse(canCompletePractice(ready.copy(alreadyCompleted = true)))
         assertTrue(canStartRecording(ready.copy(hasReadableRecording = false, alreadyCompleted = true)))
+        assertEquals(PRACTICE_NO_SCORE_STATEMENT, "No pronunciation score is provided.")
+    }
+
+    @Test
+    fun writesRejectFabricatedCompletionAndWrongEvidence() {
+        assertEquals("ineligible-model", recordingCommitAccepted(false, "recordings/one.m4a", false).reason)
+        assertEquals("file-required", recordingCommitAccepted(true, "", false).reason)
+        assertEquals("completion-not-committed", recordingCommitAccepted(true, "recordings/one.m4a", true).reason)
+        assertTrue(recordingCommitAccepted(true, "recordings/one.m4a", false).accepted)
+        assertEquals(
+            "recording-required",
+            listenCompletionAccepted(true, "audio-1", recording = null).reason,
+        )
+        assertEquals(
+            "wrong-model",
+            listenCompletionAccepted(true, "audio-1", StoredRecordingRef("audio-2", "recordings/one.m4a", false)).reason,
+        )
+        assertEquals(
+            "already-completed",
+            listenCompletionAccepted(true, "audio-1", StoredRecordingRef("audio-1", "recordings/one.m4a", true)).reason,
+        )
+        assertTrue(
+            listenCompletionAccepted(true, "audio-1", StoredRecordingRef("audio-1", "recordings/one.m4a", false)).accepted,
+        )
+    }
+
+    @Test
+    fun neighborsStayInsideTheAdmittedSequence() {
+        val admitted = listOf("audio-a", "audio-b", "audio-c")
+        assertNull(previousAdmittedModelId(admitted, "audio-a"))
+        assertEquals("audio-a", previousAdmittedModelId(admitted, "audio-b"))
+        assertEquals("audio-c", nextAdmittedModelId(admitted, "audio-b"))
+        assertNull(nextAdmittedModelId(admitted, "audio-c"))
+        assertNull(previousAdmittedModelId(admitted, "missing"))
+        assertNull(nextAdmittedModelId(admitted, "missing"))
     }
 }

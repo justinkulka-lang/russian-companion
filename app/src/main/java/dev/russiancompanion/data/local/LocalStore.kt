@@ -5,6 +5,9 @@ import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
 import dev.russiancompanion.domain.gate.GateEvaluation
+import dev.russiancompanion.domain.practice.StoredRecordingRef
+import dev.russiancompanion.domain.practice.listenCompletionAccepted
+import dev.russiancompanion.domain.practice.recordingCommitAccepted
 import java.io.IOException
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutionException
@@ -363,11 +366,16 @@ internal class LocalStore private constructor(
         completionState: CompletionState,
     ): RecordingRecordEntity = call {
         val model = database.bundled().audio(audioModelId)
-        if (model == null || model.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
-            throw IllegalArgumentException("An eligible audio model is required")
+        val admission = recordingCommitAccepted(
+            modelEligible = model != null && model.eligibilityStatus == EligibilityStatus.ELIGIBLE,
+            localFileReference = localFileReference,
+            requestedCompleted = completionState == CompletionState.COMPLETED,
+        )
+        if (!admission.accepted) {
+            throw IllegalArgumentException(admission.reason ?: "Recording was not accepted")
         }
         val record = UserRecordRules.recording(
-            audioModelId = model.id,
+            audioModelId = checkNotNull(model).id,
             localFileReference = localFileReference,
             createdAtLocal = createdAtLocal,
             markedForTutorReview = markedForTutorReview,
@@ -389,15 +397,26 @@ internal class LocalStore private constructor(
         recordedAtLocal: String,
     ): Boolean = call {
         val model = database.bundled().audio(audioModelId)
-        if (model == null || model.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
-            throw IllegalArgumentException("An eligible audio model is required")
+        val recording = model?.let { stored ->
+            database.users().recordings().lastOrNull { it.audioModelId == stored.id }
         }
-        val recording = database.users().recordings().lastOrNull { it.audioModelId == model.id }
-            ?: throw IllegalArgumentException("A recording is required")
-        if (recording.localFileReference.isBlank()) {
-            throw IllegalArgumentException("An identifiable local recording file is required")
+        val admission = listenCompletionAccepted(
+            modelEligible = model != null && model.eligibilityStatus == EligibilityStatus.ELIGIBLE,
+            expectedAudioModelId = audioModelId,
+            recording = recording?.let { stored ->
+                StoredRecordingRef(
+                    audioModelId = stored.audioModelId,
+                    localFileReference = stored.localFileReference,
+                    completed = stored.completionState == CompletionState.COMPLETED,
+                )
+            },
+        )
+        if (!admission.accepted) {
+            if (admission.reason == "already-completed") return@call false
+            throw IllegalArgumentException(admission.reason ?: "Practice completion was not accepted")
         }
-        if (recording.completionState == CompletionState.COMPLETED) return@call false
+        checkNotNull(model)
+        checkNotNull(recording)
         val learner = database.users().learner(LearnerStateEntity.LOCAL_ID)
         val plan = learner?.let { state ->
             database.bundled().eligiblePlans().firstOrNull { candidate ->

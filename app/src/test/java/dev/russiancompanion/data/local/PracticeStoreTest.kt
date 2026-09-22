@@ -126,4 +126,80 @@ class PracticeStoreTest {
             assertNull(store.recordings().single().activityLogId)
         }
     }
+
+    @Test
+    fun saveListenCompletionRejectsFabricatedResultsAndWrongEvidence() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        LocalStore.openInMemory(context).use { store ->
+            store.applySeed(
+                SeedJson.encode(
+                    minimalDocument().copy(
+                        sourceTexts = listOf(text(matchVerified = true)),
+                        assetRightsRecords = listOf(rights()),
+                        audioModels = listOf(audio()),
+                    ),
+                ),
+            )
+            val before = store.recordings().size
+            try {
+                store.commitRecording(
+                    audioModelId = "audio-1",
+                    localFileReference = "recordings/local-file",
+                    createdAtLocal = "2026-09-21T09:01",
+                    markedForTutorReview = false,
+                    completionState = CompletionState.COMPLETED,
+                )
+                error("fabricated completion was committed")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.recordings().size)
+            }
+            try {
+                store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:02")
+                error("completion without a recording was stored")
+            } catch (_: IllegalArgumentException) {
+                assertTrue(store.recordings().isEmpty())
+            }
+            try {
+                store.commitRecording(
+                    audioModelId = "missing-audio",
+                    localFileReference = "recordings/local-file",
+                    createdAtLocal = "2026-09-21T09:03",
+                    markedForTutorReview = false,
+                    completionState = CompletionState.NOT_COMPLETED,
+                )
+                error("ineligible model recording was committed")
+            } catch (_: IllegalArgumentException) {
+                assertTrue(store.recordings().isEmpty())
+            }
+            val recording = store.commitRecording(
+                audioModelId = "audio-1",
+                localFileReference = "recordings/local-file",
+                createdAtLocal = "2026-09-21T09:04",
+                markedForTutorReview = false,
+                completionState = CompletionState.NOT_COMPLETED,
+            )
+            assertEquals(CompletionState.NOT_COMPLETED, recording.completionState)
+            assertTrue(store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:05"))
+            val completed = store.recordings().single()
+            assertEquals(CompletionState.COMPLETED, completed.completionState)
+            store.applySeed(
+                SeedJson.encode(
+                    minimalDocument().copy(
+                        sourceTexts = listOf(text(matchVerified = false)),
+                        assetRightsRecords = listOf(rights()),
+                        audioModels = listOf(audio()),
+                    ),
+                ),
+            )
+            assertEquals(EligibilityStatus.EXCLUDED, store.audio("audio-1")?.eligibilityStatus)
+            assertEquals(completed.id, store.recordings().single().id)
+            assertEquals(CompletionState.COMPLETED, store.recordings().single().completionState)
+            try {
+                store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:06")
+                error("excluded model was completed again")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(CompletionState.COMPLETED, store.recordings().single().completionState)
+            }
+        }
+    }
 }
