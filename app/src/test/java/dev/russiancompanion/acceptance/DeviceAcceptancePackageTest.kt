@@ -6,7 +6,6 @@ import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
-import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import org.junit.Assert.assertEquals
@@ -78,15 +77,18 @@ class DeviceAcceptancePackageTest {
         assertEquals("1.1.0", candidate.getValue("versionName").jsonPrimitive.content)
         assertEquals(3, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
         assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
-        assertEquals(JsonNull, candidate.getValue("sourceCommit"))
+        assertEquals(
+            "3dcbea82be4d9a1d997d4a9c892d0231f55b871d",
+            candidate.getValue("sourceCommit").jsonPrimitive.content,
+        )
         val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
         assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
         assertEquals(
             dev.russiancompanion.release.computeReleaseSourceDigest(root),
             sourceDigest,
         )
-        assertEquals(false, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
-        assertEquals(false, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
+        assertEquals(true, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
+        assertEquals(true, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
         val preserved = candidate.getValue("preservedPriorCandidate").jsonObject
         assertEquals(
             "0602edaeb05a353de5e994c127eb87b5b97078a3",
@@ -102,9 +104,17 @@ class DeviceAcceptancePackageTest {
         val artifact = candidate.getValue("artifact").jsonObject
         assertEquals("acceptance-candidate-debug-apk", artifact.getValue("artifactName").jsonPrimitive.content)
         val artifactStatus = artifact.getValue("status").jsonPrimitive.content
-        assertEquals("NOT_FROZEN", artifactStatus)
-        assertEquals(JsonNull, artifact.getValue("sha256"))
-        assertEquals(JsonNull, artifact.getValue("runUrl"))
+        assertEquals("RECORDED", artifactStatus)
+        assertEquals(
+            "33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016",
+            artifact.getValue("sha256").jsonPrimitive.content,
+        )
+        assertEquals(29277335L, artifact.getValue("apkBytes").jsonPrimitive.content.toLong())
+        assertEquals("35765579094", artifact.getValue("runId").jsonPrimitive.content)
+        assertEquals(
+            "https://github.com/justinkulka-lang/russian-companion/actions/runs/35765579094",
+            artifact.getValue("runUrl").jsonPrimitive.content,
+        )
         val frozen = candidate.getValue("preservedFrozenCandidate").jsonObject
         assertEquals("1.0.0", frozen.getValue("versionName").jsonPrimitive.content)
         assertEquals(
