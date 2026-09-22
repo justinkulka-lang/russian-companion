@@ -95,6 +95,8 @@ class PracticeRulesTest {
         assertFalse(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-a"), "audio-a"))
         assertTrue(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-a"), "audio-b"))
         assertTrue(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-b"), "audio-a"))
+        assertTrue(listenPlanSatisfiedByCompletions(plan.audioModelIds, setOf("audio-a", "audio-b")))
+        assertFalse(listenPlanSatisfiedByCompletions(plan.audioModelIds, setOf("audio-a")))
         assertFalse(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "recordings/one.m4a", false)))
         assertFalse(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "", true)))
         assertTrue(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "recordings/one.m4a", true)))

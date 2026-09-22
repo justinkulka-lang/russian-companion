@@ -265,6 +265,36 @@ class PracticeStoreTest {
         }
     }
 
+    @Test
+    fun libraryFirstCompletionsCompleteThePlanOnceAfterLessonActivation() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        LocalStore.openInMemory(context).use { store ->
+            store.applySeed(SeedJson.encode(multiModelListenDocument()))
+            completeModel(store, "audio-a", "09:01")
+            completeModel(store, "audio-b", "09:02")
+            completeModel(store, "audio-c", "09:03")
+            assertTrue(store.planInstances("2026-09-21", "segment-1").isEmpty())
+            assertTrue(store.activityLogs().isEmpty())
+
+            store.confirmLesson("segment-1", "2026-09-21")
+            assertEquals(
+                CompletionState.COMPLETED,
+                store.planInstances("2026-09-21", "segment-1").single().completionState,
+            )
+            assertEquals("plan-listen", store.planInstances("2026-09-21", "segment-1").single().planDefinitionId)
+            assertEquals(1, store.activityLogs().size)
+            assertEquals(
+                store.activityLogs().single().id,
+                recordingFor(store, "audio-c").activityLogId,
+            )
+
+            assertFalse(store.completeListenPractice("audio-a", "2026-09-21", "2026-09-21T09:04"))
+            store.confirmLesson("segment-1", "2026-09-21")
+            assertEquals(1, store.planInstances("2026-09-21", "segment-1").size)
+            assertEquals(1, store.activityLogs().size)
+        }
+    }
+
     private fun completeModel(store: LocalStore, audioModelId: String, clock: String) {
         store.commitRecording(
             audioModelId = audioModelId,

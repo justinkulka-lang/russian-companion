@@ -9,8 +9,7 @@ import dev.russiancompanion.domain.practice.ListenPlanRef
 import dev.russiancompanion.domain.practice.StoredRecordingRef
 import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
-import dev.russiancompanion.domain.practice.listenPlanPrescribing
-import dev.russiancompanion.domain.practice.prescribedListenPlanComplete
+import dev.russiancompanion.domain.practice.listenPlanSatisfiedByCompletions
 import dev.russiancompanion.domain.practice.recordingCommitAccepted
 import java.io.IOException
 import java.util.concurrent.Callable
@@ -41,13 +40,13 @@ internal class LocalStore private constructor(
         if (!hasPlan) throw IllegalArgumentException("Plan definitions are unavailable")
         val date = UserRecordRules.requireLocalDate(localDate)
         val current = database.users().learner(LearnerStateEntity.LOCAL_ID) ?: LearnerStateEntity.newUser()
-        database.users().updateLearner(
-            current.copy(
-                activeSegmentId = segment.id,
-                onboardingCompleted = true,
-                planContext = date,
-            ),
+        val updated = current.copy(
+            activeSegmentId = segment.id,
+            onboardingCompleted = true,
+            planContext = date,
         )
+        database.users().updateLearner(updated)
+        applySatisfiedListenPlanCompletions(updated, date, recordedAtLocal = null)
     }
 
     fun planInstances(localDate: String, segmentId: String): List<PlanInstanceEntity> = call {
@@ -407,86 +406,18 @@ internal class LocalStore private constructor(
         val admission = listenCompletionAccepted(
             modelEligible = model != null && model.eligibilityStatus == EligibilityStatus.ELIGIBLE,
             expectedAudioModelId = audioModelId,
-            recording = recording?.let { stored ->
-                StoredRecordingRef(
-                    audioModelId = stored.audioModelId,
-                    localFileReference = stored.localFileReference,
-                    completed = stored.completionState == CompletionState.COMPLETED,
-                )
-            },
+            recording = recording?.toStoredRef(),
         )
-        if (!admission.accepted) {
-            if (admission.reason == "already-completed") return@call false
+        if (!admission.accepted && admission.reason != "already-completed") {
             throw IllegalArgumentException(admission.reason ?: "Practice completion was not accepted")
         }
-        checkNotNull(model)
-        checkNotNull(recording)
+        if (admission.accepted) {
+            database.users().updateRecording(checkNotNull(recording).copy(completionState = CompletionState.COMPLETED))
+        }
         val learner = database.users().learner(LearnerStateEntity.LOCAL_ID)
-        val completedModelIds = database.users().recordings()
-            .filter { stored ->
-                completedRecordingCountsTowardPlan(
-                    StoredRecordingRef(
-                        audioModelId = stored.audioModelId,
-                        localFileReference = stored.localFileReference,
-                        completed = stored.completionState == CompletionState.COMPLETED,
-                    ),
-                )
-            }
-            .map { it.audioModelId }
-            .toSet()
-        val plan = learner?.let { state ->
-            val refs = database.bundled().eligiblePlans()
-                .filter { it.activityType == PlanActivityType.LISTEN_RECORD_COMPARE }
-                .map { candidate ->
-                    ListenPlanRef(
-                        id = candidate.id,
-                        segmentId = candidate.segmentId,
-                        audioModelIds = candidate.audioModelIds,
-                    )
-                }
-            listenPlanPrescribing(refs, state.activeSegmentId, model.id)
-        }
-        val completesPlan = plan != null &&
-            prescribedListenPlanComplete(plan.audioModelIds, completedModelIds, model.id)
-        if (learner == null || plan == null || !completesPlan) {
-            database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
-            return@call true
-        }
-        val date = UserRecordRules.requireLocalDate(localDate)
-        val instanceId = UserRecordRules.planInstanceId(date, plan.id)
-        val existing = database.users().planInstance(instanceId)
-        if (existing?.completionState == CompletionState.COMPLETED) {
-            database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
-            return@call true
-        }
-        val instance = PlanInstanceEntity(
-            id = instanceId,
-            localDate = date,
-            segmentId = plan.segmentId,
-            planDefinitionId = plan.id,
-            completionState = CompletionState.COMPLETED,
-            completedAtLocal = UserRecordRules.requireTimestamp(recordedAtLocal),
-        )
-        val log = UserRecordRules.activityLog(
-            category = UserRecordRules.practiceCategory(),
-            durationMinutes = UserRecordRules.CHECKLIST_DURATION_MINUTES,
-            completed = true,
-            recordedAtLocal = recordedAtLocal,
-            segmentId = plan.segmentId,
-            planInstanceId = instance.id,
-            selfAttested = false,
-            planActivityType = PlanActivityType.LISTEN_RECORD_COMPARE,
-        )
-        database.users().recordListenCompletion(
-            recording = recording.copy(
-                completionState = CompletionState.COMPLETED,
-                activityLogId = log.id,
-            ),
-            instance = instance,
-            log = log,
-        )
-        database.users().updateLearner(learner.copy(planContext = date))
-        true
+        val completedPlan = learner?.activeSegmentId != null &&
+            applySatisfiedListenPlanCompletions(learner, localDate, recordedAtLocal)
+        admission.accepted || completedPlan
     }
 
     fun recordings(): List<RecordingRecordEntity> = call { database.users().recordings() }
@@ -522,6 +453,85 @@ internal class LocalStore private constructor(
             throw IllegalArgumentException("An eligible plan definition is required")
         }
         return plan
+    }
+
+    private fun applySatisfiedListenPlanCompletions(
+        learner: LearnerStateEntity,
+        localDate: String,
+        recordedAtLocal: String?,
+    ): Boolean {
+        val segmentId = learner.activeSegmentId ?: return false
+        val date = UserRecordRules.requireLocalDate(localDate)
+        val completedIds = database.users().recordings()
+            .filter { stored -> completedRecordingCountsTowardPlan(stored.toStoredRef()) }
+            .map { it.audioModelId }
+            .toSet()
+        val ready = database.bundled().eligiblePlans()
+            .filter { it.activityType == PlanActivityType.LISTEN_RECORD_COMPARE }
+            .map { candidate ->
+                ListenPlanRef(
+                    id = candidate.id,
+                    segmentId = candidate.segmentId,
+                    audioModelIds = candidate.audioModelIds,
+                )
+            }
+            .filter { plan ->
+                plan.segmentId == segmentId &&
+                    listenPlanSatisfiedByCompletions(plan.audioModelIds, completedIds)
+            }
+        var completedAny = false
+        for (plan in ready) {
+            val instanceId = UserRecordRules.planInstanceId(date, plan.id)
+            val existing = database.users().planInstance(instanceId)
+            if (existing?.completionState == CompletionState.COMPLETED) continue
+            val latest = database.users().recordings()
+                .filter { stored ->
+                    stored.audioModelId in plan.audioModelIds &&
+                        completedRecordingCountsTowardPlan(stored.toStoredRef())
+                }
+                .maxWithOrNull(compareBy({ it.createdAtLocal }, { it.id }))
+                ?: continue
+            val completedAt = recordedAtLocal ?: latest.createdAtLocal
+            val instance = PlanInstanceEntity(
+                id = instanceId,
+                localDate = date,
+                segmentId = plan.segmentId,
+                planDefinitionId = plan.id,
+                completionState = CompletionState.COMPLETED,
+                completedAtLocal = UserRecordRules.requireTimestamp(completedAt),
+            )
+            val log = UserRecordRules.activityLog(
+                category = UserRecordRules.practiceCategory(),
+                durationMinutes = UserRecordRules.CHECKLIST_DURATION_MINUTES,
+                completed = true,
+                recordedAtLocal = completedAt,
+                segmentId = plan.segmentId,
+                planInstanceId = instance.id,
+                selfAttested = false,
+                planActivityType = PlanActivityType.LISTEN_RECORD_COMPARE,
+            )
+            database.users().recordListenCompletion(
+                recording = latest.copy(
+                    completionState = CompletionState.COMPLETED,
+                    activityLogId = log.id,
+                ),
+                instance = instance,
+                log = log,
+            )
+            completedAny = true
+        }
+        if (completedAny) {
+            database.users().updateLearner(learner.copy(planContext = date))
+        }
+        return completedAny
+    }
+
+    private fun RecordingRecordEntity.toStoredRef(): StoredRecordingRef {
+        return StoredRecordingRef(
+            audioModelId = audioModelId,
+            localFileReference = localFileReference,
+            completed = completionState == CompletionState.COMPLETED,
+        )
     }
 
     private fun <T> call(block: () -> T): T {

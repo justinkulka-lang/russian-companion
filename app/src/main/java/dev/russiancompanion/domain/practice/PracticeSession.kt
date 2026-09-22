@@ -120,16 +120,24 @@ internal fun completedRecordingCountsTowardPlan(recording: StoredRecordingRef): 
  * completed recording, including the model being completed now. Library
  * audio outside the prescription never satisfies the plan.
  */
+internal fun listenPlanSatisfiedByCompletions(
+    prescribedAudioModelIds: List<String>,
+    completedAudioModelIds: Set<String>,
+): Boolean {
+    return prescribedAudioModelIds.isNotEmpty() &&
+        prescribedAudioModelIds.all { it in completedAudioModelIds }
+}
+
 internal fun prescribedListenPlanComplete(
     prescribedAudioModelIds: List<String>,
     completedAudioModelIds: Set<String>,
     completingAudioModelId: String,
 ): Boolean {
-    if (prescribedAudioModelIds.isEmpty() || completingAudioModelId !in prescribedAudioModelIds) {
-        return false
-    }
-    val done = completedAudioModelIds + completingAudioModelId
-    return prescribedAudioModelIds.all { it in done }
+    if (completingAudioModelId !in prescribedAudioModelIds) return false
+    return listenPlanSatisfiedByCompletions(
+        prescribedAudioModelIds,
+        completedAudioModelIds + completingAudioModelId,
+    )
 }
 
 internal fun previousAdmittedModelId(admittedIds: List<String>, currentId: String): String? {
