@@ -8,6 +8,7 @@ Does not invent spellings, stress marks, frequency ranks, or lesson mappings.
 import os
 import csv
 import gzip
+import hashlib
 import json
 import re
 import subprocess
@@ -28,8 +29,12 @@ CACHE_DIR = ROOT / "catalog" / "audio-cache"
 SEED = ASSETS / "content/bundled-content.json"
 INTAKE = ROOT / "catalog/intake.json"
 DECISIONS = ROOT / "catalog/source-decisions.json"
+CHAINS = ROOT / "catalog/license-chains.json"
 REPORT = ROOT / "catalog/preparation-record.json"
-FREQ_DIR = WORK / "freq"
+SOURCES = ROOT / "catalog" / "sources"
+FREQ_DIR = SOURCES / "openrussian-frequency"
+OPENRUSSIAN_COMMIT = "1fd608d858f88dd2c2f5fe7ba3a1c4057294caac"
+OPENRUSSIAN_EXPORT = "Update 2020-09-09"
 LOOKUP_PATH = WORK / "commons-lookup.json"
 
 USER_AGENT = "russian-companion-catalog-prep/1.0 (offline study app; license verification)"
@@ -866,9 +871,126 @@ def prior_byte_misses():
 
 def inclusion_note(item):
     cached = "cached " if item.get("fromCache") else ""
+    chain = item.get("yojikChain")
+    if item.get("byteMirror") == "fsi-languages.yojik.eu" and chain:
+        return (
+            f"{cached}acquisition fsi-languages.yojik.eu; "
+            f"license authority {chain['package']} README {chain['license']}"
+        ).strip()
     if item.get("byteMirror") == "upload.wikimedia.org":
-        return f"{cached}Commons file page license {item.get('filePageLicense') or ''}".strip()
+        return f"{cached}acquisition upload.wikimedia.org; Commons file page license {item.get('filePageLicense') or ''}".strip()
     return f"{cached}{item.get('byteMirror')} README license {item.get('audioLicense')}"
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def package_evidence():
+    evidence = {}
+    for collection, package in PACKAGES.items():
+        directory = SOURCES / package
+        readme_path = directory / "readme.txt"
+        index_path = directory / "index.tags.txt"
+        listing_path = directory / "yojik-ogg-listing.html"
+        readme = readme_path.read_text(encoding="utf-8")
+        index = index_path.read_text(encoding="utf-8", errors="replace")
+        listing = listing_path.read_text(encoding="utf-8", errors="replace")
+        found = []
+        for marker, name in README_LICENSE_URLS.items():
+            if marker in readme:
+                found.append((marker, name))
+        licenses = {name for _, name in found}
+        urls = {marker for marker, name in found if name in licenses}
+        index_licenses = [
+            line.split("=", 1)[1]
+            for line in index.splitlines()
+            if line.startswith("LICENSE=")
+        ]
+        fields = {}
+        for line in index.splitlines():
+            if line.startswith("[") and line != "[GLOBAL]":
+                break
+            if "=" in line and not line.startswith("["):
+                key, value = line.split("=", 1)
+                fields[key] = value
+        filenames = set(re.findall(r"href=\"(rus-[0-9a-f]+\.ogg)\"", listing))
+        indexed = set(re.findall(r"^\[(rus-[0-9a-f]+\.ogg)\]$", index, re.M))
+        evidence[collection] = {
+            "collection": collection,
+            "package": package,
+            "readmePath": f"catalog/sources/{package}/readme.txt",
+            "readmeSha256": sha256_file(readme_path),
+            "indexPath": f"catalog/sources/{package}/index.tags.txt",
+            "indexSha256": sha256_file(index_path),
+            "listingPath": f"catalog/sources/{package}/yojik-ogg-listing.html",
+            "listingSha256": sha256_file(listing_path),
+            "readme": readme,
+            "licenseNames": licenses,
+            "licenseUrls": urls,
+            "indexLicenses": index_licenses,
+            "authors": fields.get("SWAC_COLL_AUTHORS") or "",
+            "speaker": fields.get("SWAC_SPEAK_NAME") or "",
+            "filenames": filenames,
+            "indexed": indexed,
+            "compatible": (
+                license_class(readme) == "compatible"
+                and len(licenses) == 1
+                and index_licenses == ["Creative Commons BY"]
+                and bool(fields.get("SWAC_COLL_AUTHORS"))
+                and bool(fields.get("SWAC_SPEAK_NAME"))
+            ),
+        }
+    return evidence
+
+
+def yojik_chain(filename, evidence):
+    hits = [row for row in evidence.values() if filename in row["indexed"] and filename in row["filenames"]]
+    if len(hits) != 1:
+        return None
+    row = hits[0]
+    others = [other for other in evidence.values() if other is not row and filename in other["indexed"]]
+    if others or not row["compatible"]:
+        return None
+    license_name = next(iter(row["licenseNames"]))
+    license_url = next(iter(row["licenseUrls"]))
+    if license_name == "CC BY 2.0 FR":
+        creators = "Streit Goula, Streit Eric, Vion Nicolas"
+        attribution = (
+            "Streit Goula, Streit Eric, and Nicolas Vion, Shtooka Project. "
+            "Stress-marked text from OpenRussian, CC BY-SA 4.0."
+        )
+    elif license_name == "CC BY 3.0 US":
+        creators = "Sergueï Sakhno, Nicolas Vion"
+        attribution = (
+            "Sergueï Sakhno and Nicolas Vion, Shtooka Project. "
+            "Stress-marked text from OpenRussian, CC BY-SA 4.0."
+        )
+    else:
+        return None
+    readme_flat = " ".join(row["readme"].split())
+    if creators not in readme_flat or not row["speaker"] or not row["authors"]:
+        return None
+    return {
+        "package": row["package"],
+        "collection": row["collection"],
+        "readmeSource": row["readmePath"],
+        "readmeSha256": row["readmeSha256"],
+        "indexSource": row["indexPath"],
+        "indexSha256": row["indexSha256"],
+        "listingSource": row["listingPath"],
+        "listingSha256": row["listingSha256"],
+        "creators": creators,
+        "indexAuthors": row["authors"],
+        "speaker": row["speaker"],
+        "license": license_name,
+        "licenseUrl": license_url,
+        "attribution": attribution,
+    }
 
 
 def decision(filename, decision_name, license_name, reason):
@@ -881,21 +1003,82 @@ def decision(filename, decision_name, license_name, reason):
     }
 
 
+def assign_license(item, pages, commons_meta, reasons):
+    title = "File:Ru-" + item["text"] + ".ogg"
+    meta_items = [
+        meta
+        for meta in commons_meta.get(item["key"], [])
+        if speaker_matches(item["collection"], meta.get("artist") or "")
+        and meta.get("title") == title
+    ]
+    page_info = pages.get(title)
+    audio = file_page_audio(page_info) if isinstance(page_info, dict) else None
+    artist = (audio or {}).get("artist") or ""
+    speaker_ok = not artist.strip() or speaker_matches(item["collection"], artist)
+    if audio and audio["shtooka"] and speaker_ok:
+        stated = canonical_license(audio["license"])
+        kind = license_class(stated)
+        if kind != "compatible":
+            reasons[item["filename"]] = (
+                stated,
+                f"excluded: per-file Commons license is {kind}",
+            )
+            return False
+        if not audio["url"]:
+            reasons[item["filename"]] = (
+                stated,
+                "excluded: Commons file page has no original audio URL",
+            )
+            return False
+        item["audioLicense"] = stated
+        item["audioUrl"] = audio["url"]
+        item["filePageLicense"] = audio["license"]
+    elif audio and audio["shtooka"] and not speaker_ok:
+        reasons[item["filename"]] = (
+            canonical_license(audio["license"]),
+            "excluded: Commons file page names a different speaker from the SWAC collection",
+        )
+        return False
+    elif len(meta_items) == 1:
+        stated = canonical_license(meta_items[0].get("license") or "")
+        kind = license_class(stated)
+        if kind != "compatible":
+            reasons[item["filename"]] = (
+                stated,
+                f"excluded: per-file Commons license is {kind}",
+            )
+            return False
+        item["audioLicense"] = stated or item["readme"]["licenseName"]
+        item["audioUrl"] = (meta_items[0].get("url") or "").split("?", 1)[0]
+        item["filePageLicense"] = meta_items[0].get("license") or ""
+    else:
+        if len(item["collections"]) > 1:
+            reasons[item["filename"]] = (
+                "CC BY 3.0 US; CC BY 2.0 FR",
+                "excluded: listed in two collections whose README licenses differ and no per-file license was found",
+            )
+            return False
+        item["audioLicense"] = item["readme"]["licenseName"]
+        item["audioUrl"] = ""
+        item["filePageLicense"] = ""
+    return True
+
+
 def main():
     sakhno_readme = require_readme(
-        WORK / "sakhno-readme.txt",
+        SOURCES / "rus-balm-voc-sakhno" / "readme.txt",
         "http://creativecommons.org/licenses/by/3.0/us/",
         "CC BY 3.0 US",
     )
     streit_readme = require_readme(
-        WORK / "voc-readme.txt",
+        SOURCES / "rus-balm-voc" / "readme.txt",
         "http://creativecommons.org/licenses/by/2.0/fr/",
         "CC BY 2.0 FR",
     )
     dictionary, ambiguous_dictionary = load_dictionary()
     collections = {
-        "sakhno": (parse_swac(WORK / "sakhno-index.tags.txt"), sakhno_readme),
-        "streit": (parse_swac(WORK / "voc-index.tags.txt"), streit_readme),
+        "sakhno": (parse_swac(SOURCES / "rus-balm-voc-sakhno" / "index.tags.txt"), sakhno_readme),
+        "streit": (parse_swac(SOURCES / "rus-balm-voc" / "index.tags.txt"), streit_readme),
     }
     commons = load_commons_meta()
     files = []
@@ -964,13 +1147,16 @@ def main():
         item["accented"] = accented
 
     ranked = []
+    overflow = []
     seen = set()
     mismatched = set()
+    consulted_starts = []
     start = 0
     while len(ranked) < TOP_N and start < 90096:
         page = frequency_entries(start)
         if not page:
             break
+        consulted_starts.append(start)
         pending = []
         for entry in page:
             rank = entry.get("rank")
@@ -990,90 +1176,28 @@ def main():
         pages = commons_batch(titles) if titles else {}
         for rank, item in pending:
             if len(ranked) >= TOP_N:
-                break
-            title = "File:Ru-" + item["text"] + ".ogg"
-            meta_items = [
-                meta
-                for meta in commons.get(item["key"], [])
-                if speaker_matches(item["collection"], meta.get("artist") or "")
-                and meta.get("title") == title
-            ]
-            page_info = pages.get(title)
-            audio = file_page_audio(page_info) if isinstance(page_info, dict) else None
-            artist = (audio or {}).get("artist") or ""
-            speaker_ok = not artist.strip() or speaker_matches(item["collection"], artist)
-            if audio and audio["shtooka"] and speaker_ok:
-                stated = canonical_license(audio["license"])
-                kind = license_class(stated)
-                if kind != "compatible":
-                    reasons[item["filename"]] = (
-                        stated,
-                        f"excluded: per-file Commons license is {kind}",
-                    )
-                    continue
-                if not audio["url"]:
-                    reasons[item["filename"]] = (
-                        stated,
-                        "excluded: Commons file page has no original audio URL",
-                    )
-                    continue
-                item["audioLicense"] = stated
-                item["audioUrl"] = audio["url"]
-                item["filePageLicense"] = audio["license"]
-            elif audio and audio["shtooka"] and not speaker_ok:
-                reasons[item["filename"]] = (
-                    canonical_license(audio["license"]),
-                    "excluded: Commons file page names a different speaker from the SWAC collection",
-                )
+                overflow.append((rank, item, pages))
                 continue
-            elif len(meta_items) == 1:
-                stated = canonical_license(meta_items[0].get("license") or "")
-                kind = license_class(stated)
-                if kind != "compatible":
-                    reasons[item["filename"]] = (
-                        stated,
-                        f"excluded: per-file Commons license is {kind}",
-                    )
-                    continue
-                item["audioLicense"] = stated or item["readme"]["licenseName"]
-                item["audioUrl"] = (meta_items[0].get("url") or "").split("?", 1)[0]
-                item["filePageLicense"] = meta_items[0].get("license") or ""
-            else:
-                if len(item["collections"]) > 1:
-                    reasons[item["filename"]] = (
-                        "CC BY 3.0 US; CC BY 2.0 FR",
-                        "excluded: listed in two collections whose README licenses differ and no per-file license was found",
-                    )
-                    continue
-                item["audioLicense"] = item["readme"]["licenseName"]
-                item["audioUrl"] = ""
-                item["filePageLicense"] = ""
+            if not assign_license(item, pages, commons, reasons):
+                continue
             item["rank"] = rank
             ranked.append(item)
         print(f"frequency start={start} retained_candidates={len(ranked)}", flush=True)
         start += 50
 
-    selected_names = {item["filename"] for item in ranked}
-    for item in candidates.values():
-        filename = item["filename"]
-        if filename in selected_names or filename in reasons:
-            continue
-        if filename in mismatched:
-            reasons[filename] = (
-                item["readme"]["licenseName"],
-                "excluded: OpenRussian frequency-list accented field did not equal the dictionary accented field",
-            )
-        else:
-            reasons[filename] = (
-                item["readme"]["licenseName"],
-                "excluded: not in the frequency-ranked top 1000 matched items",
-            )
-
     prior_misses = prior_byte_misses()
+    previous_assets = {path.name for path in AUDIO_DIR.glob("*.ogg")}
+    reviewed_yojik = set()
+    for filename in previous_assets:
+        sidecar = read_sidecar(filename)
+        if sidecar and sidecar.get("mirror") == "fsi-languages.yojik.eu":
+            reviewed_yojik.add(filename)
     load_fetch_stamp()
     seed_audio_cache()
-    if os.environ.get("CATALOG_DOWNLOAD", "1") == "1":
-        FETCH.yojik_files = load_yojik_names()
+    evidence = package_evidence()
+    FETCH.yojik_files = {
+        collection: row["filenames"] for collection, row in evidence.items()
+    }
     retained = []
 
     def accept_item(item):
@@ -1106,6 +1230,17 @@ def main():
                     "excluded: audio bytes were not retrieved and were not fabricated",
                 )
             return
+        if item.get("byteMirror") == "fsi-languages.yojik.eu":
+            chain = yojik_chain(filename, evidence)
+            if chain is None or chain["license"] != item.get("audioLicense"):
+                reasons[filename] = (
+                    item.get("audioLicense") or "",
+                    "excluded: Yojik package license chain is incomplete or ambiguous",
+                )
+                return
+            item["yojikChain"] = chain
+            item["collection"] = chain["collection"]
+            item["filePageLicense"] = ""
         if license_class(item.get("audioLicense") or "") != "compatible":
             reasons[filename] = (
                 item.get("audioLicense") or "",
@@ -1165,6 +1300,67 @@ def main():
                         "excluded: Commons retry-after was honored and the Yojik mirror "
                         "lists the file under two README licenses",
                     )
+
+    def consider(rank, item, pages):
+        filename = item["filename"]
+        if filename in reasons or any(row["filename"] == filename for row in retained):
+            return
+        if not assign_license(item, pages, commons, reasons):
+            return
+        item["rank"] = rank
+        ranked.append(item)
+        if accept_item(item) == "defer":
+            deferred.append(item)
+
+    if len(retained) < TOP_N:
+        for rank, item, pages in overflow:
+            if len(retained) >= TOP_N:
+                break
+            consider(rank, item, pages)
+    while len(retained) < TOP_N and start < 90096:
+        page = frequency_entries(start)
+        if not page:
+            break
+        consulted_starts.append(start)
+        pending = []
+        for entry in page:
+            rank = entry.get("rank")
+            accented = (entry.get("accented") or "").strip()
+            key = norm(entry.get("bare") or "")
+            if not isinstance(rank, int) or not key or not accented or key in seen:
+                continue
+            item = candidates.get(key)
+            if item is None:
+                continue
+            if item.get("accented") != accented:
+                mismatched.add(item["filename"])
+                continue
+            seen.add(key)
+            pending.append((rank, item))
+        titles = ["File:Ru-" + item["text"] + ".ogg" for _, item in pending]
+        pages = commons_batch(titles) if titles else {}
+        for rank, item in pending:
+            if len(retained) >= TOP_N:
+                break
+            consider(rank, item, pages)
+        print(f"frequency start={start} installed={len(retained)}", flush=True)
+        start += 50
+
+    selected_names = {item["filename"] for item in ranked}
+    for item in candidates.values():
+        filename = item["filename"]
+        if filename in selected_names or filename in reasons:
+            continue
+        if filename in mismatched:
+            reasons[filename] = (
+                item["readme"]["licenseName"],
+                "excluded: OpenRussian frequency-list accented field did not equal the dictionary accented field",
+            )
+        else:
+            reasons[filename] = (
+                item["readme"]["licenseName"],
+                "excluded: not in the frequency-ranked top 1000 matched items",
+            )
 
     retained_names = {item["filename"] for item in retained}
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
@@ -1343,6 +1539,133 @@ def main():
         raise SystemExit("source decisions must not contain CONFIRMED")
     DECISIONS.write_text(encoded + "\n", encoding="utf-8")
 
+    chain_rows = []
+    for item in retained:
+        audio_path = AUDIO_DIR / item["filename"]
+        record = grouped_source(
+            item["audioLicense"],
+            item["collection"],
+            item.get("filePageLicense") or "",
+            item.get("byteMirror") or "",
+        )
+        if item.get("yojikChain"):
+            chain = item["yojikChain"]
+            authority = {
+                "kind": "package-readme",
+                "package": chain["package"],
+                "readmeSource": chain["readmeSource"],
+                "readmeSha256": chain["readmeSha256"],
+                "indexSource": chain["indexSource"],
+                "indexSha256": chain["indexSha256"],
+                "listingSource": chain["listingSource"],
+                "listingSha256": chain["listingSha256"],
+                "creators": chain["creators"],
+                "indexAuthors": chain["indexAuthors"],
+                "speaker": chain["speaker"],
+                "license": chain["license"],
+                "licenseUrl": chain["licenseUrl"],
+            }
+            acquisition_url = (
+                "https://fsi-languages.yojik.eu/audiocollections/detailled/"
+                f"{chain['package']}/ogg/{item['filename']}"
+            )
+            attribution = chain["attribution"]
+        else:
+            authority = {
+                "kind": "commons-file-page",
+                "license": item.get("audioLicense") or "",
+                "filePageLicense": item.get("filePageLicense") or "",
+            }
+            acquisition_url = (item.get("audioUrl") or "").split("?", 1)[0]
+            attribution = record["attribution"] if record else ""
+        chain_rows.append(
+            {
+                "filename": item["filename"],
+                "sha256": sha256_file(audio_path),
+                "acquisition": {
+                    "host": item.get("byteMirror") or "",
+                    "url": acquisition_url,
+                },
+                "licenseAuthority": authority,
+                "attribution": attribution,
+            }
+        )
+    frequency_pages = []
+    for start_value in consulted_starts:
+        path = FREQ_DIR / f"start-{start_value}.json"
+        frequency_pages.append(
+            {
+                "start": start_value,
+                "path": f"catalog/sources/openrussian-frequency/{path.name}",
+                "sha256": sha256_file(path),
+            }
+        )
+    snapshot_rows = []
+    for row in evidence.values():
+        for role, path_key, hash_key in (
+            ("package-readme", "readmePath", "readmeSha256"),
+            ("package-index", "indexPath", "indexSha256"),
+            ("acquisition-listing", "listingPath", "listingSha256"),
+        ):
+            snapshot_rows.append(
+                {
+                    "role": role,
+                    "package": row["package"],
+                    "path": row[path_key],
+                    "sha256": row[hash_key],
+                }
+            )
+    verified_yojik = sorted(name for name in reviewed_yojik if name in retained_names)
+    excluded_yojik = []
+    for name in sorted(reviewed_yojik - retained_names):
+        excluded_yojik.append(
+            {
+                "filename": name,
+                "reason": reasons.get(name, ("", "excluded: no decision was recorded"))[1],
+            }
+        )
+    backfilled = [item["filename"] for item in retained if item["filename"] not in previous_assets]
+    chains_document = {
+        "chainsVersion": 1,
+        "openRussianDictionary": {
+            "repository": "https://github.com/Badestrand/russian-dictionary",
+            "commit": OPENRUSSIAN_COMMIT,
+            "export": OPENRUSSIAN_EXPORT,
+            "license": "CC BY-SA 4.0",
+            "files": [
+                {
+                    "path": "nouns.csv",
+                    "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9",
+                    "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+                },
+                {
+                    "path": "verbs.csv",
+                    "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a",
+                    "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+                },
+                {
+                    "path": "adjectives.csv",
+                    "gitBlob": "09986b701d1b232abb50db96c30b81ceab1c6526",
+                    "sha256": "89ab5d10dcd2f21f6b485de704aef372f32251468e3aa96f18b21e259f26b80a",
+                },
+                {
+                    "path": "others.csv",
+                    "gitBlob": "2f819ba39652fceab3afe39ff9ef2a69b0dbd49d",
+                    "sha256": "9f22a16b17fc9a564298112168b667fced11aafb254ccebf5b7544fc37cdaa92",
+                },
+            ],
+        },
+        "frequencySnapshot": {
+            "source": "https://en.openrussian.org/list/all",
+            "license": "CC BY-SA 4.0",
+            "consultedStarts": consulted_starts,
+            "pages": frequency_pages,
+        },
+        "snapshots": snapshot_rows,
+        "files": chain_rows,
+    }
+    CHAINS.write_text(json.dumps(chains_document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     def reason_bucket(reason):
         head = reason.split(";", 1)[0]
         if head.startswith("included:"):
@@ -1350,25 +1673,52 @@ def main():
         return head
 
     reason_counts = Counter(reason_bucket(reason) for _, reason in reasons.values())
-    recovered = 0
-    still_reasons = Counter()
-    for name in prior_misses:
-        reason = reasons.get(name, ("", "excluded: no decision was recorded"))[1]
-        if reason.startswith("included:"):
-            recovered += 1
-        else:
-            still_reasons[reason_bucket(reason)] += 1
-    host_notes = []
-    for host in (
-        "packs.shtooka.net",
-        "swac-collections.org",
-        "upload.wikimedia.org",
-        "fsi-languages.yojik.eu",
-    ):
-        if host in FETCH.down:
-            host_notes.append(f"{host} unavailable ({FETCH.down[host]})")
-        else:
-            host_notes.append(f"{host} attempted")
+    previous_report = {}
+    if REPORT.is_file():
+        try:
+            previous_report = json.loads(REPORT.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            previous_report = {}
+    offline = os.environ.get("CATALOG_DOWNLOAD", "1") != "1"
+    if prior_misses:
+        recovered = 0
+        still_reasons = Counter()
+        for name in prior_misses:
+            reason = reasons.get(name, ("", "excluded: no decision was recorded"))[1]
+            if reason.startswith("included:"):
+                recovered += 1
+            else:
+                still_reasons[reason_bucket(reason)] += 1
+        prior_count = len(prior_misses)
+        still_count = prior_count - recovered
+        still_payload = dict(sorted(still_reasons.items()))
+    elif previous_report.get("priorDownloadMisses"):
+        prior_count = previous_report["priorDownloadMisses"]
+        recovered = previous_report.get("recoveredDownloadMisses", 0)
+        still_count = previous_report.get("stillFailingDownloadMisses", 0)
+        still_payload = previous_report.get("stillFailingDownloadReasons") or {}
+    else:
+        prior_count = 0
+        recovered = 0
+        still_count = 0
+        still_payload = {}
+    if offline and previous_report.get("bulkHost"):
+        bulk_host = previous_report["bulkHost"]
+    elif offline:
+        bulk_host = "offline replay; no host was contacted"
+    else:
+        host_notes = []
+        for host in (
+            "packs.shtooka.net",
+            "swac-collections.org",
+            "upload.wikimedia.org",
+            "fsi-languages.yojik.eu",
+        ):
+            if host in FETCH.down:
+                host_notes.append(f"{host} unavailable ({FETCH.down[host]})")
+            else:
+                host_notes.append(f"{host} attempted")
+        bulk_host = "; ".join(host_notes)
     report = {
         "frequencySource": "OpenRussian list rank field at https://en.openrussian.org/list/all",
         "frequencyLicense": "CC BY-SA 4.0",
@@ -1380,14 +1730,22 @@ def main():
         "indexFiles": len(files),
         "ambiguousDictionaryRows": len(ambiguous_dictionary),
         "reasonCounts": dict(sorted(reason_counts.items())),
-        "priorDownloadMisses": len(prior_misses),
+        "priorDownloadMisses": prior_count,
         "recoveredDownloadMisses": recovered,
-        "stillFailingDownloadMisses": len(prior_misses) - recovered,
-        "stillFailingDownloadReasons": dict(sorted(still_reasons.items())),
+        "stillFailingDownloadMisses": still_count,
+        "stillFailingDownloadReasons": still_payload,
+        "frequencySnapshotStarts": consulted_starts,
         "byteMirrors": dict(sorted(Counter(item.get("byteMirror") or "" for item in retained).items())),
+        "yojikReviewed": len(reviewed_yojik),
+        "yojikChainVerified": len(verified_yojik),
+        "yojikChainExcluded": len(excluded_yojik),
+        "yojikChainExcludedRows": excluded_yojik,
+        "backfilledSlots": len(backfilled),
+        "openRussianCommit": OPENRUSSIAN_COMMIT,
+        "openRussianExport": OPENRUSSIAN_EXPORT,
         "retainedRanks": ranks,
         "lessonMappings": "not supplied",
-        "bulkHost": "; ".join(host_notes),
+        "bulkHost": bulk_host,
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({key: report[key] for key in report if key != "retainedRanks"}, indent=2))
