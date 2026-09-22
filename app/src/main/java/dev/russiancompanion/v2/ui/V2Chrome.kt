@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.rememberScrollState
@@ -44,8 +43,11 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
-import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.PaddingValues
 import dev.russiancompanion.v2.curriculum.V2Letter
+
+/** Horizontal inset inside every scroll clip so the first glyph is not shaved off. */
+internal val V2ContentInset = 24.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -60,13 +62,13 @@ internal fun V2Scaffold(
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .windowInsetsPadding(WindowInsets.safeDrawing),
+            .semantics { testTag = "v2-scaffold" },
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
         contentWindowInsets = WindowInsets(0, 0, 0, 0),
         topBar = { V2TopBar(title = title, onBack = onBack) },
         bottomBar = {
-            Column {
+            Column(Modifier.padding(horizontal = V2ContentInset)) {
                 footer?.invoke()
                 if (tab != null) {
                     V2BottomBar(tab = tab, onTab = onTab)
@@ -78,8 +80,9 @@ internal fun V2Scaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(horizontal = 16.dp, vertical = 12.dp)
-                .verticalScroll(rememberScrollState()),
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = V2ContentInset, vertical = 12.dp)
+                .semantics { testTag = "v2-content" },
             content = content,
         )
     }
@@ -98,13 +101,13 @@ internal fun V2LazyScaffold(
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .windowInsetsPadding(WindowInsets.safeDrawing),
+            .semantics { testTag = "v2-scaffold" },
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
         contentWindowInsets = WindowInsets(0, 0, 0, 0),
         topBar = { V2TopBar(title = title, onBack = onBack) },
         bottomBar = {
-            Column {
+            Column(Modifier.padding(horizontal = V2ContentInset)) {
                 footer?.invoke()
                 if (tab != null) V2BottomBar(tab = tab, onTab = onTab)
             }
@@ -114,7 +117,8 @@ internal fun V2LazyScaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(horizontal = 16.dp, vertical = 8.dp),
+                .semantics { testTag = "v2-content" },
+            contentPadding = PaddingValues(horizontal = V2ContentInset, vertical = 8.dp),
             content = content,
         )
     }
@@ -124,6 +128,7 @@ internal fun V2LazyScaffold(
 @Composable
 private fun V2TopBar(title: String, onBack: (() -> Unit)?) {
     CenterAlignedTopAppBar(
+        modifier = Modifier.padding(horizontal = V2ContentInset),
         windowInsets = WindowInsets(0, 0, 0, 0),
         title = {
             Text(
@@ -138,7 +143,7 @@ private fun V2TopBar(title: String, onBack: (() -> Unit)?) {
                     onClick = onBack,
                     modifier = Modifier
                         .heightIn(min = 48.dp)
-                        .padding(start = 12.dp)
+                        .padding(start = 4.dp)
                         .semantics { testTag = "v2-back" },
                 ) { Text("Back") }
             }
@@ -361,7 +366,11 @@ internal fun V2ConfusableRow(cyrillic: String, latin: String) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text(cyrillic, style = MaterialTheme.typography.displaySmall)
+            Text(
+                cyrillic,
+                style = MaterialTheme.typography.displaySmall,
+                modifier = Modifier.padding(start = 4.dp),
+            )
         Text("is not", style = MaterialTheme.typography.bodyLarge)
         Text(latin, style = MaterialTheme.typography.displaySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }

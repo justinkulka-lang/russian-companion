@@ -25,6 +25,7 @@ import dev.russiancompanion.v2.curriculum.todaysSession
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.unitState
 import dev.russiancompanion.v2.ui.V2App
+import dev.russiancompanion.v2.ui.V2ContentInset
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -104,6 +105,53 @@ class V2RebuildTest {
         )
         val completeResult = V2Validator.validate(complete)
         assertTrue(completeResult.errors.joinToString(), completeResult.ok)
+    }
+
+    @Test
+    fun installedUnitRejectsPendingAndRejectedInstructionalRecords() {
+        val installed = installedUnitOne(pack())
+        val pending = V2Validator.validate(installed)
+        assertTrue(pending.errors.any { it.contains("Check u1-i-а-identity review status PENDING_QUALIFIED_REVIEW") })
+        assertTrue(pending.errors.any { it.contains("Letter ") && it.contains("PENDING_QUALIFIED_REVIEW") })
+        assertTrue(pending.errors.any { it.contains("Example ") && it.contains("PENDING_QUALIFIED_REVIEW") })
+
+        val approved = approveInstruction(installed)
+        val approvedResult = V2Validator.validate(approved)
+        assertTrue(
+            approvedResult.errors.joinToString(),
+            approvedResult.errors.none {
+                it.contains("review status") || it.contains("NOT_REQUIRED") || it.contains("approval must bind")
+            },
+        )
+
+        val rejected = approved.copy(
+            items = approved.items.map { item ->
+                if (item.id == "u1-i-а-identity") item.copy(reviewStatus = "REJECTED") else item
+            },
+        )
+        val rejectedResult = V2Validator.validate(rejected)
+        assertTrue(rejectedResult.errors.any { it.contains("Check u1-i-а-identity review status REJECTED") })
+
+        val letterId = approved.examples.first { it.objectiveId == "obj-u1-letter-identity" }.letterId
+        val notRequiredLetter = approved.copy(
+            letters = approved.letters.map { letter ->
+                if (letter.id == letterId) letter.copy(reviewStatus = "NOT_REQUIRED") else letter
+            },
+        )
+        val notRequiredResult = V2Validator.validate(notRequiredLetter)
+        assertTrue(notRequiredResult.errors.any { it.contains("Letter $letterId") && it.contains("cannot be NOT_REQUIRED") })
+
+        val notRequiredReference = approved.copy(
+            references = approved.references.map { reference ->
+                if (reference.id == "ref-confusable") reference.copy(reviewStatus = "NOT_REQUIRED") else reference
+            },
+        )
+        val referenceResult = V2Validator.validate(notRequiredReference)
+        assertTrue(
+            referenceResult.errors.any {
+                it.contains("Reference ref-confusable") && it.contains("cannot be NOT_REQUIRED")
+            },
+        )
     }
 
     @Test
@@ -207,7 +255,46 @@ class V2RebuildTest {
         compose.onNodeWithText("Show full unit plan").assertIsDisplayed()
         compose.onNodeWithText("Settings and data").assertDoesNotExist()
         compose.onNodeWithText("Work in your book").assertDoesNotExist()
-        assertInsideRoot("v2-today-unit")
+        assertAtContentInset("v2-today-unit")
+        assertAtContentInset("v2-today-objective")
+    }
+
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun primaryContentStartsAtTheInsetWhenFontIsLarge() {
+        val store = LocalStore.openInMemory(context()).also { stores += it }
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true))
+        compose.setContent { V2App(store = store, pack = pack(), onRetryOpen = {}) }
+        assertAtContentInset("v2-today-unit")
+        assertAtContentInset("v2-today-objective")
+        compose.onNodeWithText("Course").performClick()
+        compose.onNodeWithTag("v2-course-intro").performScrollTo()
+        assertAtContentInset("v2-course-intro")
+        compose.onNodeWithText("Unit 1 · Printed letters", substring = true).performClick()
+        assertAtContentInset("v2-back")
+        assertAtContentInset("v2-unit-heading")
+        assertAtContentInset("v2-unit-state")
+        assertAtContentInset("v2-unit-install")
+        compose.onNodeWithTag("v2-section-letter-board").performScrollTo()
+        assertAtContentInset("v2-section-letter-board")
+        compose.onNodeWithTag("v2-section-sessions").performScrollTo()
+        assertAtContentInset("v2-section-sessions")
+        compose.onNodeWithTag("v2-back").performClick()
+        compose.onNodeWithText("Practice").performClick()
+        assertAtContentInset("v2-practice-heading")
+        compose.onNodeWithText("Alphabet Lab").performClick()
+        assertAtContentInset("v2-back")
+        assertAtContentInset("v2-section-confusable")
+        compose.onNodeWithTag("v2-confusable-Р").performScrollTo()
+        assertAtContentInset("v2-confusable-Р")
+        compose.onNodeWithTag("v2-back").performClick()
+        compose.onNodeWithText("Reference").performClick()
+        assertAtContentInset("v2-reference-heading")
+        compose.onNodeWithText("Progress").performClick()
+        assertAtContentInset("v2-progress-heading")
+        compose.onNodeWithText("Settings, appearance, and attributions").performScrollTo().performClick()
+        assertAtContentInset("v2-settings-heading")
+        assertAtContentInset("v2-back")
     }
 
     @Test
@@ -241,8 +328,10 @@ class V2RebuildTest {
         compose.onNodeWithText("Unit 1 · Printed letters", substring = true).performClick()
         compose.onNodeWithTag("v2-back").assertIsDisplayed()
         compose.onNodeWithTag("v2-unit-heading").assertIsDisplayed()
-        assertInsideRoot("v2-back")
-        assertInsideRoot("v2-unit-heading")
+        assertAtContentInset("v2-back")
+        assertAtContentInset("v2-unit-heading")
+        assertAtContentInset("v2-unit-state")
+        assertAtContentInset("v2-section-letter-board")
         compose.onNodeWithTag("v2-letter-board").assertIsDisplayed()
         compose.onNodeWithTag("v2-back").performClick()
         compose.onNodeWithText("Practice").performClick()
@@ -250,7 +339,8 @@ class V2RebuildTest {
         compose.onNodeWithTag("v2-letter-board").assertIsDisplayed()
         compose.onNodeWithTag("v2-confusable-Р").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-print-pair-grid").performScrollTo().assertIsDisplayed()
-        assertInsideRoot("v2-back")
+        assertAtContentInset("v2-back")
+        assertAtContentInset("v2-section-confusable")
     }
 
     @Test
@@ -270,15 +360,54 @@ class V2RebuildTest {
         assertTrue(File(repo(), "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt").readText().contains("MIGRATION_6_7"))
     }
 
-    private fun assertInsideRoot(tag: String) {
-        val root = compose.onRoot().getBoundsInRoot()
-        val node = compose.onNodeWithTag(tag).getUnclippedBoundsInRoot()
-        val visible = compose.onNodeWithTag(tag).getBoundsInRoot()
-        assertEquals(node.left, visible.left)
-        assertEquals(node.top, visible.top)
-        assertTrue(tag, node.left.value >= root.left.value)
-        assertTrue(tag, visible.left.value >= root.left.value)
-        assertTrue(tag, node.left.value >= 0f)
+    private fun assertAtContentInset(tag: String) {
+        val node = compose.onNodeWithTag(tag)
+        val unclipped = node.getUnclippedBoundsInRoot()
+        assertTrue("$tag starts at ${unclipped.left}", unclipped.left >= V2ContentInset)
+        val visible = node.getBoundsInRoot()
+        if (visible.right - visible.left > 1.dp && visible.bottom - visible.top > 1.dp) {
+            assertEquals("$tag visible left", unclipped.left, visible.left)
+            assertTrue("$tag visible at ${visible.left}", visible.left >= V2ContentInset)
+        }
+    }
+
+    private fun installedUnitOne(source: dev.russiancompanion.v2.curriculum.V2CurriculumPack): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+        val next = source.copy(
+            units = source.units.map { unit ->
+                if (unit.number == 1) unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED") else unit
+            },
+        )
+        val digest = V2Validator.instructionalContentDigest(next)
+        return next.copy(
+            linguisticReview = next.linguisticReview.copy(
+                status = "APPROVED",
+                reviewer = "Qualified Reviewer",
+                packVersion = next.packVersion,
+                reviewedContentDigest = digest,
+                curriculumMappingId = "map-owned-edition",
+            ),
+        )
+    }
+
+    private fun approveInstruction(
+        source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+        return source.copy(
+            items = source.items.map { it.copy(reviewStatus = "APPROVED") },
+            examples = source.examples.map { it.copy(reviewStatus = "APPROVED") },
+            letters = source.letters.map { it.copy(reviewStatus = "APPROVED") },
+            references = source.references.map { reference ->
+                val linguistic = containsCyrillic(reference.title) ||
+                    containsCyrillic(reference.summary) ||
+                    containsCyrillic(reference.detail) ||
+                    reference.searchTerms.any(::containsCyrillic)
+                when {
+                    linguistic -> reference.copy(reviewStatus = "APPROVED")
+                    reference.reviewStatus == "NOT_REQUIRED" -> reference
+                    else -> reference.copy(reviewStatus = "APPROVED")
+                }
+            },
+        )
     }
 
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
@@ -287,6 +416,8 @@ class V2RebuildTest {
 
     private fun repo(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 }
+
+private fun containsCyrillic(text: String): Boolean = text.any { it.code in 0x0400..0x04FF }
 
 private fun dev.russiancompanion.v2.curriculum.V2CheckItem.isGovernance(): Boolean {
     return dev.russiancompanion.v2.curriculum.GOVERNANCE_PROMPT_MARKERS.any { marker ->

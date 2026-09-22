@@ -154,7 +154,78 @@ internal object V2Validator {
         if (pack.admissions.mappedPronunciationAudio == 0) {
             errors += "Installed unit ${unit.number} requires mapped pronunciation audio"
         }
+        validateInstalledReviewRecords(pack, unit, errors)
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+    }
+
+    private fun validateInstalledReviewRecords(
+        pack: V2CurriculumPack,
+        unit: V2Unit,
+        errors: MutableList<String>,
+    ) {
+        val review = pack.linguisticReview
+        if (review.status != "APPROVED" ||
+            review.reviewer.isNullOrBlank() ||
+            review.packVersion != pack.packVersion ||
+            review.reviewedContentDigest != instructionalContentDigest(pack) ||
+            review.curriculumMappingId.isNullOrBlank()
+        ) {
+            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and instructional-content digest"
+        }
+        val steps = unit.sessions.flatMap { it.steps }
+        val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
+        val exampleIds = (steps.flatMap { it.exampleIds } + unit.objectives.flatMap { it.exampleIds }).toSet()
+        val referenceIds = steps.flatMap { it.referenceIds }.toSet()
+        val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId }.toSet()
+        itemIds.forEach { id ->
+            val item = pack.item(id) ?: return@forEach
+            requireInstalledReview(item.reviewStatus, allowNotRequired = false, "Check $id", errors)
+        }
+        exampleIds.forEach { id ->
+            val example = pack.example(id) ?: return@forEach
+            requireInstalledReview(example.reviewStatus, allowNotRequired = false, "Example $id", errors)
+        }
+        letterIds.forEach { id ->
+            val letter = pack.letter(id) ?: return@forEach
+            requireInstalledReview(letter.reviewStatus, allowNotRequired = false, "Letter $id", errors)
+        }
+        referenceIds.forEach { id ->
+            val reference = pack.reference(id) ?: return@forEach
+            val linguistic = containsCyrillic(reference.title) ||
+                containsCyrillic(reference.summary) ||
+                containsCyrillic(reference.detail) ||
+                reference.searchTerms.any(::containsCyrillic)
+            requireInstalledReview(
+                reference.reviewStatus,
+                allowNotRequired = !linguistic,
+                "Reference $id",
+                errors,
+            )
+        }
+    }
+
+    private fun requireInstalledReview(
+        status: String,
+        allowNotRequired: Boolean,
+        label: String,
+        errors: MutableList<String>,
+    ) {
+        when (status) {
+            "APPROVED" -> Unit
+            "NOT_REQUIRED" -> {
+                if (!allowNotRequired) {
+                    errors += "$label is linguistically relevant and cannot be NOT_REQUIRED"
+                }
+            }
+            "PENDING_QUALIFIED_REVIEW", "REJECTED" -> {
+                errors += "$label review status $status is not approved for an installed unit"
+            }
+            else -> errors += "$label has unrecognized review status $status"
+        }
+    }
+
+    private fun containsCyrillic(text: String): Boolean {
+        return text.any { it.code in 0x0400..0x04FF }
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {

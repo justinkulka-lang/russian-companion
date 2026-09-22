@@ -247,7 +247,7 @@ internal fun V2CourseScreen(
         item {
             Text(
                 "Thirty Penguin-aligned units. Development units are incomplete. Later units stay Not yet installed.",
-                modifier = Modifier.padding(bottom = 12.dp),
+                modifier = Modifier.padding(bottom = 12.dp).semantics { testTag = "v2-course-intro" },
             )
         }
         items(pack.units, key = { it.id }) { unit ->
@@ -294,7 +294,7 @@ internal fun V2UnitScreen(
             style = MaterialTheme.typography.headlineSmall,
             modifier = Modifier.semantics { heading(); testTag = "v2-unit-heading" },
         )
-        V2Status(
+        Text(
             when (state) {
                 V2UnitState.NOT_YET_INSTALLED -> "Not yet installed"
                 V2UnitState.LOCKED -> "Locked by prerequisite"
@@ -302,8 +302,9 @@ internal fun V2UnitScreen(
                 V2UnitState.AVAILABLE -> "Available"
                 V2UnitState.COMPLETED -> "Completed"
             },
+            modifier = Modifier.semantics { testTag = "v2-unit-state" },
         )
-        V2Status(installLabel(unit))
+        Text(installLabel(unit), modifier = Modifier.semantics { testTag = "v2-unit-install" })
         if (state == V2UnitState.NOT_YET_INSTALLED) {
             Text("This unit is on the map so you can see the Penguin sequence. It has no lesson content, audio, or completion path.")
             return@V2Scaffold
@@ -313,11 +314,11 @@ internal fun V2UnitScreen(
             return@V2Scaffold
         }
         if (unit.number == 1) {
-            Text("Letter board", style = MaterialTheme.typography.titleMedium)
+            Text("Letter board", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-letter-board" })
             V2LetterBoard(pack.letters)
             Spacer(Modifier.height(12.dp))
         }
-        Text("Sessions", style = MaterialTheme.typography.titleMedium)
+        Text("Sessions", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-sessions" })
         unit.sessions.forEach { session ->
             V2Card(
                 title = session.title,
@@ -442,7 +443,10 @@ internal fun V2PracticeScreen(
     onAlphabet: () -> Unit,
 ) {
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {
-        Text("Alphabet Lab is the visual practice surface for printed letters.")
+        Text(
+            "Alphabet Lab is the visual practice surface for printed letters.",
+            modifier = Modifier.semantics { testTag = "v2-practice-heading" },
+        )
         V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
         V2Status("Mapped audio and handwriting recognition are not installed in this development slice.")
         V2SecondaryButton("Reopen current-unit checks", { onTab(V2Tab.COURSE) })
@@ -463,18 +467,18 @@ internal fun V2AlphabetLabScreen(pack: V2CurriculumPack, learner: V2LearnerView,
             },
             modifier = Modifier.padding(bottom = 8.dp),
         )
-        Text("Confusable forms", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { heading() })
+        Text("Confusable forms", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { heading(); testTag = "v2-section-confusable" })
         confusable.forEach { letter ->
             V2ConfusableRow(letter.uppercase, letter.latinLookalike.orEmpty())
         }
         Spacer(Modifier.height(12.dp))
-        Text("Letter board", style = MaterialTheme.typography.titleMedium)
+        Text("Letter board", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-letter-board" })
         V2LetterBoard(pack.letters, selectedId) { selectedId = it.id }
         selected?.let { letter ->
             V2Status("${letter.uppercase} ${letter.lowercase} · ${letter.group} · pending review")
         }
         Spacer(Modifier.height(12.dp))
-        Text("Print pairs", style = MaterialTheme.typography.titleMedium)
+        Text("Print pairs", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-print-pairs" })
         V2PrintPairGrid(pack.letters)
     }
 }
@@ -497,7 +501,10 @@ internal fun V2ReferenceScreen(
                 modifier = Modifier.fillMaxWidth().semantics { testTag = "v2-reference-search" },
             )
             Spacer(Modifier.height(8.dp))
-            Text("Only material introduced through the current unit is listed.")
+            Text(
+                "Only material introduced through the current unit is listed.",
+                modifier = Modifier.semantics { testTag = "v2-reference-heading" },
+            )
         }
         items(entries, key = { it.id }) { entry ->
             V2Card(entry.title, entry.summary, "Unit ${entry.introducedInUnit}") { onOpen(entry.id) }
@@ -534,7 +541,10 @@ internal fun V2ProgressScreen(
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
     V2Scaffold(title = "Progress", tab = V2Tab.PROGRESS, onTab = onTab) {
-        Text("Recorded activity and curriculum state. This is not fluency, mastery, or proficiency.")
+        Text(
+            "Recorded activity and curriculum state. This is not fluency, mastery, or proficiency.",
+            modifier = Modifier.semantics { testTag = "v2-progress-heading" },
+        )
         V2Status("Current unit: ${unit?.title ?: "Unavailable"}")
         V2Status("Completed units: ${learner.completedUnitNumbers.sorted().joinToString().ifBlank { "none" }}")
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
@@ -558,7 +568,7 @@ internal fun V2SettingsScreen(
     onAttributions: () -> Unit,
 ) {
     V2Scaffold(title = "Settings", tab = null, onTab = {}, onBack = onBack) {
-        Text("Appearance", style = MaterialTheme.typography.titleMedium)
+        Text("Appearance", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-settings-heading" })
         FilterChip(
             selected = appearance == AppearancePreference.DARK,
             onClick = { onAppearance(AppearancePreference.DARK) },
