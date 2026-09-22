@@ -73,7 +73,7 @@ class DailyPlanUiTest {
         clickText("Today's Plan", substring = false)
 
         showText("Grammar practice stays in your copy of the book and its answer key.")
-        showText("Lesson number: 1")
+        compose.onAllNodesWithText("Lesson number: 1").assertCountEquals(2)
         showText("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.")
         showText("Listen-record-compare practice.")
         showText("Prescribed catalog words: 1")
