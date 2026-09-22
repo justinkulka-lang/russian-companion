@@ -80,4 +80,23 @@ class PracticeRulesTest {
         assertNull(previousAdmittedModelId(admitted, "missing"))
         assertNull(nextAdmittedModelId(admitted, "missing"))
     }
+
+    @Test
+    fun aListenPlanCompletesOnlyWhenEveryPrescribedModelIsRecorded() {
+        val plan = ListenPlanRef("plan-listen", "segment-1", listOf("audio-a", "audio-b"))
+        val library = ListenPlanRef("plan-listen", "segment-1", listOf("audio-a"))
+        assertNull(listenPlanPrescribing(listOf(plan), activeSegmentId = null, audioModelId = "audio-a"))
+        assertNull(listenPlanPrescribing(listOf(plan), "segment-1", "audio-library"))
+        assertNull(listenPlanPrescribing(emptyList(), "segment-1", "audio-a"))
+        assertEquals(plan, listenPlanPrescribing(listOf(plan), "segment-1", "audio-b"))
+        assertEquals(library.id, listenPlanPrescribing(listOf(library), "segment-1", "audio-a")?.id)
+        assertFalse(prescribedListenPlanComplete(plan.audioModelIds, emptySet(), "audio-library"))
+        assertFalse(prescribedListenPlanComplete(plan.audioModelIds, emptySet(), "audio-a"))
+        assertFalse(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-a"), "audio-a"))
+        assertTrue(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-a"), "audio-b"))
+        assertTrue(prescribedListenPlanComplete(plan.audioModelIds, setOf("audio-b"), "audio-a"))
+        assertFalse(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "recordings/one.m4a", false)))
+        assertFalse(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "", true)))
+        assertTrue(completedRecordingCountsTowardPlan(StoredRecordingRef("audio-a", "recordings/one.m4a", true)))
+    }
 }

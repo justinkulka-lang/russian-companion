@@ -5,8 +5,12 @@ import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
 import dev.russiancompanion.domain.gate.GateEvaluation
+import dev.russiancompanion.domain.practice.ListenPlanRef
 import dev.russiancompanion.domain.practice.StoredRecordingRef
+import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
+import dev.russiancompanion.domain.practice.listenPlanPrescribing
+import dev.russiancompanion.domain.practice.prescribedListenPlanComplete
 import dev.russiancompanion.domain.practice.recordingCommitAccepted
 import java.io.IOException
 import java.util.concurrent.Callable
@@ -418,13 +422,33 @@ internal class LocalStore private constructor(
         checkNotNull(model)
         checkNotNull(recording)
         val learner = database.users().learner(LearnerStateEntity.LOCAL_ID)
-        val plan = learner?.let { state ->
-            database.bundled().eligiblePlans().firstOrNull { candidate ->
-                candidate.segmentId == state.activeSegmentId &&
-                    candidate.activityType == PlanActivityType.LISTEN_RECORD_COMPARE
+        val completedModelIds = database.users().recordings()
+            .filter { stored ->
+                completedRecordingCountsTowardPlan(
+                    StoredRecordingRef(
+                        audioModelId = stored.audioModelId,
+                        localFileReference = stored.localFileReference,
+                        completed = stored.completionState == CompletionState.COMPLETED,
+                    ),
+                )
             }
+            .map { it.audioModelId }
+            .toSet()
+        val plan = learner?.let { state ->
+            val refs = database.bundled().eligiblePlans()
+                .filter { it.activityType == PlanActivityType.LISTEN_RECORD_COMPARE }
+                .map { candidate ->
+                    ListenPlanRef(
+                        id = candidate.id,
+                        segmentId = candidate.segmentId,
+                        audioModelIds = candidate.audioModelIds,
+                    )
+                }
+            listenPlanPrescribing(refs, state.activeSegmentId, model.id)
         }
-        if (learner == null || plan == null) {
+        val completesPlan = plan != null &&
+            prescribedListenPlanComplete(plan.audioModelIds, completedModelIds, model.id)
+        if (learner == null || plan == null || !completesPlan) {
             database.users().updateRecording(recording.copy(completionState = CompletionState.COMPLETED))
             return@call true
         }
@@ -451,7 +475,7 @@ internal class LocalStore private constructor(
             segmentId = plan.segmentId,
             planInstanceId = instance.id,
             selfAttested = false,
-            planActivityType = plan.activityType,
+            planActivityType = PlanActivityType.LISTEN_RECORD_COMPARE,
         )
         database.users().recordListenCompletion(
             recording = recording.copy(

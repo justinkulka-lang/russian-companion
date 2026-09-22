@@ -500,11 +500,15 @@ internal fun rights(
     )
 }
 
-internal fun audio(id: String = "audio-1", rightsRecordId: String = "rights-1"): AudioModelSeed {
+internal fun audio(
+    id: String = "audio-1",
+    rightsRecordId: String = "rights-1",
+    sourceTextId: String = "text-1",
+): AudioModelSeed {
     return AudioModelSeed(
         id = id,
         localAudioReference = "audio/$id",
-        sourceTextId = "text-1",
+        sourceTextId = sourceTextId,
         sourceRecordId = "source-1",
         rightsRecordId = rightsRecordId,
     )

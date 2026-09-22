@@ -94,6 +94,44 @@ internal fun listenCompletionAccepted(
     return PracticeWriteAdmission(true)
 }
 
+internal data class ListenPlanRef(
+    val id: String,
+    val segmentId: String,
+    val audioModelIds: List<String>,
+)
+
+internal fun listenPlanPrescribing(
+    plans: List<ListenPlanRef>,
+    activeSegmentId: String?,
+    audioModelId: String,
+): ListenPlanRef? {
+    if (activeSegmentId == null || audioModelId.isBlank()) return null
+    return plans.firstOrNull { plan ->
+        plan.segmentId == activeSegmentId && audioModelId in plan.audioModelIds
+    }
+}
+
+internal fun completedRecordingCountsTowardPlan(recording: StoredRecordingRef): Boolean {
+    return recording.completed && recording.localFileReference.isNotBlank()
+}
+
+/**
+ * A listen plan completes only when every prescribed model has a valid
+ * completed recording, including the model being completed now. Library
+ * audio outside the prescription never satisfies the plan.
+ */
+internal fun prescribedListenPlanComplete(
+    prescribedAudioModelIds: List<String>,
+    completedAudioModelIds: Set<String>,
+    completingAudioModelId: String,
+): Boolean {
+    if (prescribedAudioModelIds.isEmpty() || completingAudioModelId !in prescribedAudioModelIds) {
+        return false
+    }
+    val done = completedAudioModelIds + completingAudioModelId
+    return prescribedAudioModelIds.all { it in done }
+}
+
 internal fun previousAdmittedModelId(admittedIds: List<String>, currentId: String): String? {
     val index = admittedIds.indexOf(currentId)
     if (index <= 0) return null
