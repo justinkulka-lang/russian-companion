@@ -106,6 +106,46 @@ class PracticeSessionUiTest {
         compose.onNodeWithText("Practice session").assertDoesNotExist()
     }
 
+    @Test
+    fun unmatchedTextNeverEntersTheLibraryAndNoRecordingOnlySubstituteAppears() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        Shadows.shadowOf(context as Application).grantPermissions(Manifest.permission.RECORD_AUDIO)
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(
+            SeedJson.encode(
+                minimalDocument().copy(
+                    planDefinitions = listOf(
+                        PlanDefinitionSeed(
+                            id = "plan-book",
+                            segmentId = "segment-1",
+                            activityType = "BOOK",
+                            instruction = "Use your copy of the book for this lesson",
+                            sortOrder = 1,
+                            required = true,
+                            lessonNumber = 1,
+                        ),
+                    ),
+                    sourceTexts = listOf(text(matchVerified = false)),
+                    assetRightsRecords = listOf(rights()),
+                    audioModels = listOf(audio()),
+                ),
+            ),
+        )
+        store.confirmLesson("segment-1", "2026-09-21")
+        compose.setContent {
+            CompanionApp(
+                gateway = RoomNavigationGateway(store, { null }, PermissivePracticeAudio()),
+                onRetryOpen = {},
+                today = { "2026-09-21" },
+                practiceAudio = PermissivePracticeAudio(),
+            )
+        }
+        compose.onNodeWithText("No licensed practice audio is available.").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("SOURCE_TEXT_TOKEN").assertDoesNotExist()
+        compose.onNodeWithText("Record").assertDoesNotExist()
+        compose.onNodeWithText("Practice").performScrollTo().assertIsDisplayed()
+    }
+
     private fun click(text: String) {
         compose.onNodeWithText(text).performScrollTo().performClick()
     }

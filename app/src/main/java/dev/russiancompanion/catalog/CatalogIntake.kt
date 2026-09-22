@@ -1,5 +1,7 @@
 package dev.russiancompanion.catalog
 
+import dev.russiancompanion.domain.practice.CatalogAudioProposal
+import dev.russiancompanion.domain.practice.admitCatalogProposal
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
@@ -126,14 +128,21 @@ private fun parseIntake(raw: String?): CatalogIntakeFile? {
 }
 
 private fun proposalIsEligible(proposal: AudioProposal): Boolean {
-    if (proposal.id.isBlank() || proposal.localAudioReference.isBlank()) return false
-    if (proposal.licenseStatus != "COMPATIBLE" || proposal.compatibilityDecision != "COMPATIBLE") return false
-    if (!proposal.matchVerified || proposal.stressMarkedText.isBlank()) return false
-    if (proposal.provenance.isBlank() || proposal.redistributionBasis.isBlank()) return false
-    if (proposal.licenseName.isBlank() || proposal.attribution.isBlank()) return false
-    if (proposal.modificationStatus != "UNMODIFIED" && proposal.modificationStatus != "MODIFIED") return false
-    if (proposal.shareAlikeTreatment.isBlank()) return false
-    return proposal.shareAlikeConfirmation == "NOT_APPLICABLE" ||
-        proposal.shareAlikeConfirmation == "UNCONFIRMED" ||
-        proposal.shareAlikeConfirmation == "CONFIRMED"
+    return admitCatalogProposal(
+        CatalogAudioProposal(
+            id = proposal.id,
+            localAudioReference = proposal.localAudioReference,
+            licenseStatus = proposal.licenseStatus,
+            compatibilityDecision = proposal.compatibilityDecision,
+            stressMarkedText = proposal.stressMarkedText,
+            matchVerified = proposal.matchVerified,
+            provenance = proposal.provenance,
+            redistributionBasis = proposal.redistributionBasis,
+            licenseName = proposal.licenseName,
+            attribution = proposal.attribution,
+            modificationStatus = proposal.modificationStatus,
+            shareAlikeTreatment = proposal.shareAlikeTreatment,
+            shareAlikeConfirmation = proposal.shareAlikeConfirmation,
+        ),
+    ).accepted
 }

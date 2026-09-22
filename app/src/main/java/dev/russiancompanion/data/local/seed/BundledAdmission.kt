@@ -27,6 +27,12 @@ import dev.russiancompanion.domain.pathway.PlanActivityKind
 import dev.russiancompanion.domain.pathway.PlanDefinitionDraft
 import dev.russiancompanion.domain.pathway.admitPlanDefinition
 import dev.russiancompanion.domain.pathway.validatePathwaySegments
+import dev.russiancompanion.domain.practice.AssetRightsDraft
+import dev.russiancompanion.domain.practice.AudioModelCandidate
+import dev.russiancompanion.domain.practice.AudioModelDraft
+import dev.russiancompanion.domain.practice.SourceRecordDraft
+import dev.russiancompanion.domain.practice.SourceTextDraft
+import dev.russiancompanion.domain.practice.admitAudioModels
 
 internal data class PreparedBundle(
     val contentVersion: Int,
@@ -295,50 +301,71 @@ private fun admitAudio(
     rightsById: Map<String, AssetRightsRecordEntity>,
     sourcesById: Map<String, SourceRecordEntity>,
 ): List<AudioModelEntity> {
-    val preliminary = seeds.mapNotNull { seed ->
+    val retained = seeds.mapNotNull { seed ->
         if (seed.id.isBlank()) return@mapNotNull null
         val rights = seed.rightsRecordId?.let(rightsById::get)
         val text = seed.sourceTextId?.let(textsById::get)
         val source = seed.sourceRecordId?.let(sourcesById::get)
-        val eligible = audioIsEligible(seed, rights, text, source)
+        seed to AudioModelCandidate(
+            model = AudioModelDraft(
+                id = seed.id,
+                localAudioReference = seed.localAudioReference,
+                sourceTextId = seed.sourceTextId,
+                sourceRecordId = seed.sourceRecordId,
+                rightsRecordId = seed.rightsRecordId,
+            ),
+            text = text?.toDraft(),
+            rights = rights?.toDraft(),
+            source = source?.toDraft(),
+        )
+    }
+    val admissions = admitAudioModels(retained.map { it.second })
+    return retained.mapIndexed { index, (seed, candidate) ->
+        val admitted = admissions[index].accepted
         AudioModelEntity(
             id = seed.id,
             localAudioReference = seed.localAudioReference,
-            sourceTextId = text?.id,
-            sourceRecordId = source?.id,
-            rightsRecordId = rights?.id,
-            eligibilityStatus = if (eligible) EligibilityStatus.ELIGIBLE else EligibilityStatus.EXCLUDED,
+            sourceTextId = candidate.text?.id,
+            sourceRecordId = candidate.source?.id,
+            rightsRecordId = candidate.rights?.id,
+            eligibilityStatus = if (admitted) EligibilityStatus.ELIGIBLE else EligibilityStatus.EXCLUDED,
         )
-    }
-    val sharedTextIds = preliminary
-        .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE && it.sourceTextId != null }
-        .groupBy { it.sourceTextId }
-        .filterValues { it.size > 1 }
-        .keys
-    if (sharedTextIds.isEmpty()) return preliminary
-    return preliminary.map { model ->
-        if (model.sourceTextId in sharedTextIds) {
-            model.copy(eligibilityStatus = EligibilityStatus.EXCLUDED)
-        } else {
-            model
-        }
     }
 }
 
-private fun audioIsEligible(
-    seed: AudioModelSeed,
-    rights: AssetRightsRecordEntity?,
-    text: SourceTextEntity?,
-    source: SourceRecordEntity?,
-): Boolean {
-    if (seed.localAudioReference.isBlank() || rights == null || text == null || source == null) return false
-    if (rights.licenseStatus != LicenseStatus.COMPATIBLE) return false
-    if (rights.compatibilityDecision != LicenseStatus.COMPATIBLE) return false
-    if (rights.inclusionResult != InclusionResult.INCLUDED) return false
-    if (rights.assetIdentifier != seed.id && rights.assetIdentifier != seed.localAudioReference) return false
-    if (text.sourceRecordId != source.id || rights.sourceRecordId != source.id) return false
-    if (!text.matchVerified || text.stressMarkedText.isBlank()) return false
-    return sourceCanSupportInclusion(source, rights.attributionRequired)
+private fun SourceTextEntity.toDraft(): SourceTextDraft {
+    return SourceTextDraft(
+        id = id,
+        stressMarkedText = stressMarkedText,
+        sourceRecordId = sourceRecordId,
+        modificationStatus = modificationStatus.name,
+        matchVerified = matchVerified,
+    )
+}
+
+private fun AssetRightsRecordEntity.toDraft(): AssetRightsDraft {
+    return AssetRightsDraft(
+        id = id,
+        sourceRecordId = sourceRecordId,
+        assetIdentifier = assetIdentifier,
+        licenseStatus = licenseStatus.name,
+        compatibilityDecision = compatibilityDecision.name,
+        attributionRequired = attributionRequired,
+        inclusionResult = inclusionResult.name,
+    )
+}
+
+private fun SourceRecordEntity.toDraft(): SourceRecordDraft {
+    return SourceRecordDraft(
+        id = id,
+        provenance = provenance,
+        redistributionBasis = redistributionBasis,
+        licenseName = licenseName,
+        attribution = attribution,
+        modificationStatus = modificationStatus.name,
+        shareAlikeTreatment = shareAlikeTreatment,
+        shareAlikeConfirmation = shareAlikeConfirmation.name,
+    )
 }
 
 private fun admitDrill(

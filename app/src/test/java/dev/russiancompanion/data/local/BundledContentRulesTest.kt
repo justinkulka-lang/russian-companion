@@ -100,6 +100,15 @@ class BundledContentRulesTest {
             ),
         )
         assertTrue(shared.audio.all { it.eligibilityStatus == EligibilityStatus.EXCLUDED })
+
+        val delimited = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights(assetIdentifier = "audio-1\tmodel")),
+                audioModels = listOf(audio(id = "audio-1\tmodel")),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, delimited.audio.single().eligibilityStatus)
     }
 
     @Test
@@ -491,11 +500,15 @@ internal fun rights(
     )
 }
 
-internal fun audio(id: String = "audio-1", rightsRecordId: String = "rights-1"): AudioModelSeed {
+internal fun audio(
+    id: String = "audio-1",
+    rightsRecordId: String = "rights-1",
+    sourceTextId: String = "text-1",
+): AudioModelSeed {
     return AudioModelSeed(
         id = id,
         localAudioReference = "audio/$id",
-        sourceTextId = "text-1",
+        sourceTextId = sourceTextId,
         sourceRecordId = "source-1",
         rightsRecordId = rightsRecordId,
     )

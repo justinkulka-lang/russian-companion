@@ -27,6 +27,8 @@ import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.pathway.firstPrescribedPlayable
 import dev.russiancompanion.domain.practice.PracticeAudio
+import dev.russiancompanion.domain.practice.nextAdmittedModelId
+import dev.russiancompanion.domain.practice.previousAdmittedModelId
 import dev.russiancompanion.domain.progress.ExportUpdate
 import java.io.OutputStream
 
@@ -416,7 +418,9 @@ private fun PracticeSessionScreen(
     onAttributions: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
-    val index = snapshot.audio.indexOfFirst { it.id == audioModelId }
+    val admittedIds = snapshot.audio.map { it.id }
+    val previousId = previousAdmittedModelId(admittedIds, audioModelId)
+    val nextId = nextAdmittedModelId(admittedIds, audioModelId)
     ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome) {
         PracticeSessionBody(
             snapshot = snapshot,
@@ -426,13 +430,13 @@ private fun PracticeSessionScreen(
             onTutorReview = onTutorReview,
             onComplete = onCompletePractice,
         )
-        if (index > 0) {
-            TextButton(onClick = { onPrevious(snapshot.audio[index - 1].id) }) {
+        if (previousId != null) {
+            TextButton(onClick = { onPrevious(previousId) }) {
                 Text(stringResource(R.string.practice_previous))
             }
         }
-        if (index >= 0 && index < snapshot.audio.lastIndex) {
-            TextButton(onClick = { onNext(snapshot.audio[index + 1].id) }) {
+        if (nextId != null) {
+            TextButton(onClick = { onNext(nextId) }) {
                 Text(stringResource(R.string.practice_next))
             }
         }

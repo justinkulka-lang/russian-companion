@@ -165,8 +165,9 @@ class AcceptanceBehaviorTest {
                 localFileReference = reference,
                 createdAtLocal = "2026-09-21T09:02",
                 markedForTutorReview = true,
-                completionState = CompletionState.COMPLETED,
+                completionState = CompletionState.NOT_COMPLETED,
             )
+            assertTrue(store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:02"))
             SavedState(
                 logIds = store.activityLogs().map { it.id },
                 evidence = store.allEvidence().map { it.evidenceType to it.enteredValue },

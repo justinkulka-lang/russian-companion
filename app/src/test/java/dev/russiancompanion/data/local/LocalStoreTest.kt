@@ -55,8 +55,9 @@ class LocalStoreTest {
                 localFileReference = "recordings/local-file",
                 createdAtLocal = "2026-09-21T09:05",
                 markedForTutorReview = true,
-                completionState = CompletionState.COMPLETED,
+                completionState = CompletionState.NOT_COMPLETED,
             )
+            assertTrue(store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:06"))
 
             val removedAudio = withAudio.copy(audioModels = emptyList(), assetRightsRecords = emptyList())
             val second = store.applySeed(SeedJson.encode(removedAudio))

@@ -22,6 +22,7 @@ import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.practice.PRACTICE_NO_SCORE_STATEMENT
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.practice.PracticeProgress
 import dev.russiancompanion.domain.practice.canCompletePractice
@@ -112,7 +113,7 @@ internal fun PracticeSessionBody(
             if (recordingNowState.value) practiceAudio.stopCapture(keep = false)
         }
     }
-    Text(stringResource(R.string.practice_no_score))
+    Text(PRACTICE_NO_SCORE_STATEMENT)
     if (model == null) {
         Text(stringResource(R.string.practice_session_unavailable))
         return
