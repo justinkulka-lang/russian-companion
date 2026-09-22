@@ -1,0 +1,14 @@
+{
+  "record": "phase-9-debug-ci",
+  "phase9DebugCi": "confirmed",
+  "commit": "07479eb39f2515a1c00713481e43dfd5ee9b3eef",
+  "runUrl": "https://github.com/justinkulka-lang/russian-companion/actions/runs/35666716411",
+  "workflow": "completed",
+  "conclusion": "success",
+  "tests": 93,
+  "skipped": 1,
+  "failures": 0,
+  "skippedTest": "AT-020",
+  "publicRelease": "NOT_APPROVED",
+  "retainedEvidence": "MISSING"
+}

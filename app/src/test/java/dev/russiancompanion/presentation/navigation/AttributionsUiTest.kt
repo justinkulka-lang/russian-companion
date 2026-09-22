@@ -15,6 +15,7 @@ import dev.russiancompanion.data.local.source
 import dev.russiancompanion.data.local.seed.AudioModelSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
+import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
 import org.junit.After
@@ -38,16 +39,45 @@ class AttributionsUiTest {
     }
 
     @Test
-    fun emptyPackagedSeedShowsNotReadyWithoutAReleaseBlock() {
+    fun emptyInventoryShowsNotReadyWithoutAReleaseBlock() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(
+            SeedJson.encode(
+                minimalDocument().copy(
+                    courseSegments = emptyList(),
+                    sourceRecords = emptyList(),
+                ),
+            ),
+        )
+        show(store)
+
+        click("Attributions and licenses")
+        show("No attribution inventory is installed. This installation is not release-ready.")
+        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+            .assertDoesNotExist()
+    }
+
+    @Test
+    fun packagedSeedShowsInstalledInventoryAndShareAlikeBlock() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
         show(store, readSeed = { LocalStore.readPackagedSeed(context) })
 
         click("Attributions and licenses")
-        show("No attribution inventory is installed. This installation is not release-ready.")
-        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+        show("Public release is blocked until share-alike confirmation is recorded.")
+        compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
+        val raw = checkNotNull(LocalStore.readPackagedSeed(context))
+        val parsed = SeedJson.parse(raw)
+        val source = (parsed as SeedParse.Ok).document.sourceRecords.first()
+        click("${source.licenseName}: ${source.attribution}")
+        show("Source: ${source.id}")
+        show("License: ${source.licenseName}")
+        show("Modification status: Unmodified")
+        show("Share-alike confirmation: Unconfirmed")
+        click("Close record")
     }
 
     @Test

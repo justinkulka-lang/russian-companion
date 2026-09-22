@@ -1,0 +1,4069 @@
+{
+  "frequencySource": "OpenRussian list rank field at https://en.openrussian.org/list/all",
+  "frequencyLicense": "CC BY-SA 4.0",
+  "topMatchedItems": 1000,
+  "frequencyCap": "applied to the source rank of items that passed the license filter and a unique accented-headword match",
+  "shareAlikeConfirmation": "UNCONFIRMED",
+  "installedCount": 1000,
+  "rankedMatches": 1000,
+  "indexFiles": 5413,
+  "ambiguousDictionaryRows": 292,
+  "reasonCounts": {
+    "excluded: Commons file page names a different speaker from the SWAC collection": 27,
+    "excluded: OpenRussian frequency-list accented field did not equal the dictionary accented field": 3,
+    "excluded: listed in two collections whose README licenses differ and no per-file license was found": 54,
+    "excluded: more than one SWAC recording shares this headword": 9,
+    "excluded: no single OpenRussian accented headword for this text": 452,
+    "excluded: not in the frequency-ranked top 1000 matched items": 3868,
+    "included": 1000
+  },
+  "priorDownloadMisses": 865,
+  "recoveredDownloadMisses": 597,
+  "stillFailingDownloadMisses": 268,
+  "stillFailingDownloadReasons": {
+    "excluded: not in the frequency-ranked top 1000 matched items": 268
+  },
+  "frequencySnapshotStarts": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400,
+    450,
+    500,
+    550,
+    600,
+    650,
+    700,
+    750,
+    800,
+    850,
+    900,
+    950,
+    1000,
+    1050,
+    1100,
+    1150,
+    1200,
+    1250
+  ],
+  "byteMirrors": {
+    "fsi-languages.yojik.eu": 450,
+    "upload.wikimedia.org": 550
+  },
+  "yojikReviewed": 450,
+  "yojikChainVerified": 450,
+  "yojikChainExcluded": 0,
+  "yojikChainExcludedRows": [],
+  "backfilledSlots": 0,
+  "openRussianCommit": "1fd608d858f88dd2c2f5fe7ba3a1c4057294caac",
+  "openRussianExport": "Update 2020-09-09",
+  "retainedRanks": [
+    {
+      "id": "rus-a4fd7810",
+      "frequencyRank": 1
+    },
+    {
+      "id": "rus-f0a589da",
+      "frequencyRank": 2
+    },
+    {
+      "id": "rus-bf5460f8",
+      "frequencyRank": 3
+    },
+    {
+      "id": "rus-bade482d",
+      "frequencyRank": 4
+    },
+    {
+      "id": "rus-e58e0540",
+      "frequencyRank": 5
+    },
+    {
+      "id": "rus-fc38bfb1",
+      "frequencyRank": 6
+    },
+    {
+      "id": "rus-fa1d892f",
+      "frequencyRank": 7
+    },
+    {
+      "id": "rus-f06e508c",
+      "frequencyRank": 8
+    },
+    {
+      "id": "rus-2383e20d",
+      "frequencyRank": 9
+    },
+    {
+      "id": "rus-291dcf07",
+      "frequencyRank": 10
+    },
+    {
+      "id": "rus-055bec5e",
+      "frequencyRank": 11
+    },
+    {
+      "id": "rus-80cf7d55",
+      "frequencyRank": 12
+    },
+    {
+      "id": "rus-43455517",
+      "frequencyRank": 13
+    },
+    {
+      "id": "rus-ad80a9b0",
+      "frequencyRank": 14
+    },
+    {
+      "id": "rus-26117270",
+      "frequencyRank": 15
+    },
+    {
+      "id": "rus-3f9cce57",
+      "frequencyRank": 17
+    },
+    {
+      "id": "rus-b00d753d",
+      "frequencyRank": 18
+    },
+    {
+      "id": "rus-a35b2182",
+      "frequencyRank": 19
+    },
+    {
+      "id": "rus-7a9e8e22",
+      "frequencyRank": 20
+    },
+    {
+      "id": "rus-1cfef8a9",
+      "frequencyRank": 21
+    },
+    {
+      "id": "rus-d5ac2c6b",
+      "frequencyRank": 22
+    },
+    {
+      "id": "rus-acdafc2d",
+      "frequencyRank": 23
+    },
+    {
+      "id": "rus-d187f10a",
+      "frequencyRank": 24
+    },
+    {
+      "id": "rus-ec38496b",
+      "frequencyRank": 26
+    },
+    {
+      "id": "rus-ea0055df",
+      "frequencyRank": 27
+    },
+    {
+      "id": "rus-21c55c54",
+      "frequencyRank": 28
+    },
+    {
+      "id": "rus-8d58f883",
+      "frequencyRank": 31
+    },
+    {
+      "id": "rus-c4754bcb",
+      "frequencyRank": 32
+    },
+    {
+      "id": "rus-e67f3a04",
+      "frequencyRank": 33
+    },
+    {
+      "id": "rus-67775052",
+      "frequencyRank": 34
+    },
+    {
+      "id": "rus-391b45cc",
+      "frequencyRank": 35
+    },
+    {
+      "id": "rus-0b80646c",
+      "frequencyRank": 36
+    },
+    {
+      "id": "rus-eb558d72",
+      "frequencyRank": 37
+    },
+    {
+      "id": "rus-ef4bc913",
+      "frequencyRank": 38
+    },
+    {
+      "id": "rus-14fc9397",
+      "frequencyRank": 40
+    },
+    {
+      "id": "rus-2833e7bf",
+      "frequencyRank": 43
+    },
+    {
+      "id": "rus-1234b1df",
+      "frequencyRank": 44
+    },
+    {
+      "id": "rus-fc8518f0",
+      "frequencyRank": 45
+    },
+    {
+      "id": "rus-e6dd2a0a",
+      "frequencyRank": 46
+    },
+    {
+      "id": "rus-64f3843c",
+      "frequencyRank": 47
+    },
+    {
+      "id": "rus-8a925891",
+      "frequencyRank": 48
+    },
+    {
+      "id": "rus-afca355a",
+      "frequencyRank": 49
+    },
+    {
+      "id": "rus-4cc0d1df",
+      "frequencyRank": 51
+    },
+    {
+      "id": "rus-8f1e46da",
+      "frequencyRank": 52
+    },
+    {
+      "id": "rus-b33ba723",
+      "frequencyRank": 53
+    },
+    {
+      "id": "rus-93b6b6f0",
+      "frequencyRank": 54
+    },
+    {
+      "id": "rus-7f304c1c",
+      "frequencyRank": 55
+    },
+    {
+      "id": "rus-5345a3cd",
+      "frequencyRank": 56
+    },
+    {
+      "id": "rus-946975ae",
+      "frequencyRank": 57
+    },
+    {
+      "id": "rus-fcf0663b",
+      "frequencyRank": 59
+    },
+    {
+      "id": "rus-8691c160",
+      "frequencyRank": 60
+    },
+    {
+      "id": "rus-cf97c331",
+      "frequencyRank": 62
+    },
+    {
+      "id": "rus-1f608622",
+      "frequencyRank": 63
+    },
+    {
+      "id": "rus-6a23336b",
+      "frequencyRank": 64
+    },
+    {
+      "id": "rus-43521d4c",
+      "frequencyRank": 65
+    },
+    {
+      "id": "rus-2aaba201",
+      "frequencyRank": 68
+    },
+    {
+      "id": "rus-468a4b0d",
+      "frequencyRank": 69
+    },
+    {
+      "id": "rus-bd7328cd",
+      "frequencyRank": 70
+    },
+    {
+      "id": "rus-bf07f5fa",
+      "frequencyRank": 71
+    },
+    {
+      "id": "rus-a43d2f01",
+      "frequencyRank": 72
+    },
+    {
+      "id": "rus-503b1741",
+      "frequencyRank": 73
+    },
+    {
+      "id": "rus-714ae1d2",
+      "frequencyRank": 74
+    },
+    {
+      "id": "rus-eae3b602",
+      "frequencyRank": 75
+    },
+    {
+      "id": "rus-d5e13cae",
+      "frequencyRank": 76
+    },
+    {
+      "id": "rus-698627ef",
+      "frequencyRank": 81
+    },
+    {
+      "id": "rus-1b2b5ea0",
+      "frequencyRank": 82
+    },
+    {
+      "id": "rus-68a66bdd",
+      "frequencyRank": 84
+    },
+    {
+      "id": "rus-14ea60b0",
+      "frequencyRank": 85
+    },
+    {
+      "id": "rus-ee717a02",
+      "frequencyRank": 86
+    },
+    {
+      "id": "rus-0363f0ea",
+      "frequencyRank": 87
+    },
+    {
+      "id": "rus-33072f52",
+      "frequencyRank": 88
+    },
+    {
+      "id": "rus-a8cf1e3f",
+      "frequencyRank": 89
+    },
+    {
+      "id": "rus-b588fcba",
+      "frequencyRank": 90
+    },
+    {
+      "id": "rus-2896a890",
+      "frequencyRank": 91
+    },
+    {
+      "id": "rus-1f2973dc",
+      "frequencyRank": 92
+    },
+    {
+      "id": "rus-8d5194cd",
+      "frequencyRank": 93
+    },
+    {
+      "id": "rus-d78e3a74",
+      "frequencyRank": 96
+    },
+    {
+      "id": "rus-bbfa9a29",
+      "frequencyRank": 97
+    },
+    {
+      "id": "rus-8a9989d5",
+      "frequencyRank": 98
+    },
+    {
+      "id": "rus-3fa2aa71",
+      "frequencyRank": 99
+    },
+    {
+      "id": "rus-b5440e57",
+      "frequencyRank": 101
+    },
+    {
+      "id": "rus-af39abb2",
+      "frequencyRank": 102
+    },
+    {
+      "id": "rus-51265064",
+      "frequencyRank": 103
+    },
+    {
+      "id": "rus-89c6f132",
+      "frequencyRank": 104
+    },
+    {
+      "id": "rus-1267a652",
+      "frequencyRank": 105
+    },
+    {
+      "id": "rus-a41084d4",
+      "frequencyRank": 107
+    },
+    {
+      "id": "rus-227100a5",
+      "frequencyRank": 108
+    },
+    {
+      "id": "rus-ecc04363",
+      "frequencyRank": 109
+    },
+    {
+      "id": "rus-a3a1205c",
+      "frequencyRank": 112
+    },
+    {
+      "id": "rus-7e20258c",
+      "frequencyRank": 113
+    },
+    {
+      "id": "rus-8e14f567",
+      "frequencyRank": 114
+    },
+    {
+      "id": "rus-d0079341",
+      "frequencyRank": 115
+    },
+    {
+      "id": "rus-f5c42b28",
+      "frequencyRank": 116
+    },
+    {
+      "id": "rus-94ba8a42",
+      "frequencyRank": 117
+    },
+    {
+      "id": "rus-78c98933",
+      "frequencyRank": 119
+    },
+    {
+      "id": "rus-8bfc0e35",
+      "frequencyRank": 120
+    },
+    {
+      "id": "rus-d0719ad5",
+      "frequencyRank": 121
+    },
+    {
+      "id": "rus-af16f882",
+      "frequencyRank": 122
+    },
+    {
+      "id": "rus-d76a151e",
+      "frequencyRank": 123
+    },
+    {
+      "id": "rus-87c17fb7",
+      "frequencyRank": 124
+    },
+    {
+      "id": "rus-af89f043",
+      "frequencyRank": 125
+    },
+    {
+      "id": "rus-68486fda",
+      "frequencyRank": 128
+    },
+    {
+      "id": "rus-f2bc5608",
+      "frequencyRank": 129
+    },
+    {
+      "id": "rus-d366ca98",
+      "frequencyRank": 130
+    },
+    {
+      "id": "rus-99270010",
+      "frequencyRank": 131
+    },
+    {
+      "id": "rus-4bd321e5",
+      "frequencyRank": 132
+    },
+    {
+      "id": "rus-26042d02",
+      "frequencyRank": 135
+    },
+    {
+      "id": "rus-e2c7de83",
+      "frequencyRank": 137
+    },
+    {
+      "id": "rus-92361af9",
+      "frequencyRank": 138
+    },
+    {
+      "id": "rus-ac0f88aa",
+      "frequencyRank": 139
+    },
+    {
+      "id": "rus-d061414d",
+      "frequencyRank": 140
+    },
+    {
+      "id": "rus-6482677e",
+      "frequencyRank": 142
+    },
+    {
+      "id": "rus-574f7dfb",
+      "frequencyRank": 143
+    },
+    {
+      "id": "rus-7ff4c087",
+      "frequencyRank": 144
+    },
+    {
+      "id": "rus-99b27772",
+      "frequencyRank": 145
+    },
+    {
+      "id": "rus-ccc39b0c",
+      "frequencyRank": 146
+    },
+    {
+      "id": "rus-ac63f21d",
+      "frequencyRank": 149
+    },
+    {
+      "id": "rus-4f577eac",
+      "frequencyRank": 150
+    },
+    {
+      "id": "rus-6c34a7bf",
+      "frequencyRank": 151
+    },
+    {
+      "id": "rus-d37aa8c8",
+      "frequencyRank": 153
+    },
+    {
+      "id": "rus-1ad046d6",
+      "frequencyRank": 154
+    },
+    {
+      "id": "rus-28da19a1",
+      "frequencyRank": 155
+    },
+    {
+      "id": "rus-d0d1ca57",
+      "frequencyRank": 157
+    },
+    {
+      "id": "rus-5ad852aa",
+      "frequencyRank": 158
+    },
+    {
+      "id": "rus-ac95bba1",
+      "frequencyRank": 159
+    },
+    {
+      "id": "rus-ccf3c362",
+      "frequencyRank": 160
+    },
+    {
+      "id": "rus-cc6d4cdc",
+      "frequencyRank": 161
+    },
+    {
+      "id": "rus-e665f1ee",
+      "frequencyRank": 162
+    },
+    {
+      "id": "rus-2159c07d",
+      "frequencyRank": 163
+    },
+    {
+      "id": "rus-979b3191",
+      "frequencyRank": 164
+    },
+    {
+      "id": "rus-4588e0ac",
+      "frequencyRank": 165
+    },
+    {
+      "id": "rus-f6be9762",
+      "frequencyRank": 166
+    },
+    {
+      "id": "rus-be63f73e",
+      "frequencyRank": 167
+    },
+    {
+      "id": "rus-d9938111",
+      "frequencyRank": 168
+    },
+    {
+      "id": "rus-b59e839d",
+      "frequencyRank": 169
+    },
+    {
+      "id": "rus-40536522",
+      "frequencyRank": 170
+    },
+    {
+      "id": "rus-dd99d64e",
+      "frequencyRank": 171
+    },
+    {
+      "id": "rus-a006fe71",
+      "frequencyRank": 172
+    },
+    {
+      "id": "rus-f81a1012",
+      "frequencyRank": 173
+    },
+    {
+      "id": "rus-b86ba1ef",
+      "frequencyRank": 174
+    },
+    {
+      "id": "rus-c25c69c1",
+      "frequencyRank": 175
+    },
+    {
+      "id": "rus-acf5bd58",
+      "frequencyRank": 176
+    },
+    {
+      "id": "rus-8af002ca",
+      "frequencyRank": 178
+    },
+    {
+      "id": "rus-265a50e4",
+      "frequencyRank": 179
+    },
+    {
+      "id": "rus-296f0b58",
+      "frequencyRank": 180
+    },
+    {
+      "id": "rus-2cf8d089",
+      "frequencyRank": 181
+    },
+    {
+      "id": "rus-2f2cf960",
+      "frequencyRank": 183
+    },
+    {
+      "id": "rus-64e9a86f",
+      "frequencyRank": 184
+    },
+    {
+      "id": "rus-ee4939d6",
+      "frequencyRank": 185
+    },
+    {
+      "id": "rus-21881351",
+      "frequencyRank": 186
+    },
+    {
+      "id": "rus-d09b6055",
+      "frequencyRank": 187
+    },
+    {
+      "id": "rus-29eeb8e1",
+      "frequencyRank": 188
+    },
+    {
+      "id": "rus-81e622c2",
+      "frequencyRank": 189
+    },
+    {
+      "id": "rus-bff225f9",
+      "frequencyRank": 190
+    },
+    {
+      "id": "rus-6ce39bb7",
+      "frequencyRank": 193
+    },
+    {
+      "id": "rus-8c844509",
+      "frequencyRank": 194
+    },
+    {
+      "id": "rus-eb17a7ec",
+      "frequencyRank": 195
+    },
+    {
+      "id": "rus-14033c05",
+      "frequencyRank": 197
+    },
+    {
+      "id": "rus-f526c3a2",
+      "frequencyRank": 198
+    },
+    {
+      "id": "rus-4cc47a96",
+      "frequencyRank": 201
+    },
+    {
+      "id": "rus-7c45eed6",
+      "frequencyRank": 202
+    },
+    {
+      "id": "rus-b449dd61",
+      "frequencyRank": 203
+    },
+    {
+      "id": "rus-3bc904c9",
+      "frequencyRank": 204
+    },
+    {
+      "id": "rus-d57c2742",
+      "frequencyRank": 205
+    },
+    {
+      "id": "rus-66442595",
+      "frequencyRank": 206
+    },
+    {
+      "id": "rus-b679ae51",
+      "frequencyRank": 207
+    },
+    {
+      "id": "rus-2ddcdf50",
+      "frequencyRank": 208
+    },
+    {
+      "id": "rus-20e2b1dd",
+      "frequencyRank": 210
+    },
+    {
+      "id": "rus-2f61dcb0",
+      "frequencyRank": 211
+    },
+    {
+      "id": "rus-77782bb8",
+      "frequencyRank": 212
+    },
+    {
+      "id": "rus-ad9d5e57",
+      "frequencyRank": 213
+    },
+    {
+      "id": "rus-bc74d756",
+      "frequencyRank": 214
+    },
+    {
+      "id": "rus-8848b489",
+      "frequencyRank": 215
+    },
+    {
+      "id": "rus-8667b2dd",
+      "frequencyRank": 217
+    },
+    {
+      "id": "rus-7701fe97",
+      "frequencyRank": 218
+    },
+    {
+      "id": "rus-e328dea6",
+      "frequencyRank": 220
+    },
+    {
+      "id": "rus-86e2b8b7",
+      "frequencyRank": 221
+    },
+    {
+      "id": "rus-0d30d797",
+      "frequencyRank": 222
+    },
+    {
+      "id": "rus-aefd57a5",
+      "frequencyRank": 223
+    },
+    {
+      "id": "rus-648dd1b4",
+      "frequencyRank": 224
+    },
+    {
+      "id": "rus-a346d7b8",
+      "frequencyRank": 225
+    },
+    {
+      "id": "rus-c503c9b4",
+      "frequencyRank": 227
+    },
+    {
+      "id": "rus-8349c4b0",
+      "frequencyRank": 228
+    },
+    {
+      "id": "rus-30bc7ddb",
+      "frequencyRank": 229
+    },
+    {
+      "id": "rus-a292857e",
+      "frequencyRank": 231
+    },
+    {
+      "id": "rus-86ae1104",
+      "frequencyRank": 232
+    },
+    {
+      "id": "rus-448e4865",
+      "frequencyRank": 233
+    },
+    {
+      "id": "rus-8517da65",
+      "frequencyRank": 234
+    },
+    {
+      "id": "rus-3d3fc461",
+      "frequencyRank": 236
+    },
+    {
+      "id": "rus-b6115bbc",
+      "frequencyRank": 237
+    },
+    {
+      "id": "rus-3162ce3e",
+      "frequencyRank": 238
+    },
+    {
+      "id": "rus-409579b4",
+      "frequencyRank": 239
+    },
+    {
+      "id": "rus-d6f37991",
+      "frequencyRank": 240
+    },
+    {
+      "id": "rus-fc323b03",
+      "frequencyRank": 241
+    },
+    {
+      "id": "rus-7218bef2",
+      "frequencyRank": 242
+    },
+    {
+      "id": "rus-80cec83e",
+      "frequencyRank": 243
+    },
+    {
+      "id": "rus-6e241962",
+      "frequencyRank": 244
+    },
+    {
+      "id": "rus-595ed41a",
+      "frequencyRank": 248
+    },
+    {
+      "id": "rus-c746c460",
+      "frequencyRank": 249
+    },
+    {
+      "id": "rus-23c007b3",
+      "frequencyRank": 252
+    },
+    {
+      "id": "rus-72ef6f88",
+      "frequencyRank": 254
+    },
+    {
+      "id": "rus-ac61fcfc",
+      "frequencyRank": 255
+    },
+    {
+      "id": "rus-72d68f5f",
+      "frequencyRank": 256
+    },
+    {
+      "id": "rus-c58e0d27",
+      "frequencyRank": 257
+    },
+    {
+      "id": "rus-77ed472a",
+      "frequencyRank": 258
+    },
+    {
+      "id": "rus-9f67b698",
+      "frequencyRank": 259
+    },
+    {
+      "id": "rus-7e2a39d0",
+      "frequencyRank": 260
+    },
+    {
+      "id": "rus-b7330111",
+      "frequencyRank": 261
+    },
+    {
+      "id": "rus-94d6687e",
+      "frequencyRank": 262
+    },
+    {
+      "id": "rus-69d64243",
+      "frequencyRank": 263
+    },
+    {
+      "id": "rus-0f33ae8d",
+      "frequencyRank": 264
+    },
+    {
+      "id": "rus-aa85a0e2",
+      "frequencyRank": 265
+    },
+    {
+      "id": "rus-6206a9c3",
+      "frequencyRank": 266
+    },
+    {
+      "id": "rus-d48fc5f8",
+      "frequencyRank": 268
+    },
+    {
+      "id": "rus-12eda911",
+      "frequencyRank": 269
+    },
+    {
+      "id": "rus-40d574da",
+      "frequencyRank": 270
+    },
+    {
+      "id": "rus-a49a50d4",
+      "frequencyRank": 271
+    },
+    {
+      "id": "rus-e89a9161",
+      "frequencyRank": 272
+    },
+    {
+      "id": "rus-1ee1a16c",
+      "frequencyRank": 274
+    },
+    {
+      "id": "rus-97290012",
+      "frequencyRank": 277
+    },
+    {
+      "id": "rus-21df0d3d",
+      "frequencyRank": 278
+    },
+    {
+      "id": "rus-b5a69c98",
+      "frequencyRank": 279
+    },
+    {
+      "id": "rus-7e274244",
+      "frequencyRank": 280
+    },
+    {
+      "id": "rus-bf6ee629",
+      "frequencyRank": 282
+    },
+    {
+      "id": "rus-e52ed6d1",
+      "frequencyRank": 283
+    },
+    {
+      "id": "rus-de858b78",
+      "frequencyRank": 284
+    },
+    {
+      "id": "rus-f13aca6f",
+      "frequencyRank": 285
+    },
+    {
+      "id": "rus-9908c119",
+      "frequencyRank": 286
+    },
+    {
+      "id": "rus-eb54cd99",
+      "frequencyRank": 287
+    },
+    {
+      "id": "rus-863184ec",
+      "frequencyRank": 288
+    },
+    {
+      "id": "rus-64ee0e20",
+      "frequencyRank": 290
+    },
+    {
+      "id": "rus-173b58a8",
+      "frequencyRank": 291
+    },
+    {
+      "id": "rus-fb92b5d8",
+      "frequencyRank": 294
+    },
+    {
+      "id": "rus-70e60f63",
+      "frequencyRank": 295
+    },
+    {
+      "id": "rus-4a4dbd7d",
+      "frequencyRank": 296
+    },
+    {
+      "id": "rus-17c9feb1",
+      "frequencyRank": 299
+    },
+    {
+      "id": "rus-ac7cef46",
+      "frequencyRank": 301
+    },
+    {
+      "id": "rus-87ffe381",
+      "frequencyRank": 304
+    },
+    {
+      "id": "rus-c9110d71",
+      "frequencyRank": 305
+    },
+    {
+      "id": "rus-e742aa37",
+      "frequencyRank": 306
+    },
+    {
+      "id": "rus-5e0dd8f1",
+      "frequencyRank": 307
+    },
+    {
+      "id": "rus-3e9047a2",
+      "frequencyRank": 308
+    },
+    {
+      "id": "rus-7cf946e6",
+      "frequencyRank": 309
+    },
+    {
+      "id": "rus-f1bacef9",
+      "frequencyRank": 311
+    },
+    {
+      "id": "rus-1a630b0c",
+      "frequencyRank": 313
+    },
+    {
+      "id": "rus-887e5b6a",
+      "frequencyRank": 314
+    },
+    {
+      "id": "rus-44ea7b97",
+      "frequencyRank": 315
+    },
+    {
+      "id": "rus-ed5d9c99",
+      "frequencyRank": 316
+    },
+    {
+      "id": "rus-5fa254b2",
+      "frequencyRank": 317
+    },
+    {
+      "id": "rus-df635a39",
+      "frequencyRank": 318
+    },
+    {
+      "id": "rus-0baee91d",
+      "frequencyRank": 320
+    },
+    {
+      "id": "rus-710bb185",
+      "frequencyRank": 321
+    },
+    {
+      "id": "rus-f951fc3e",
+      "frequencyRank": 323
+    },
+    {
+      "id": "rus-1f785199",
+      "frequencyRank": 324
+    },
+    {
+      "id": "rus-a3031145",
+      "frequencyRank": 325
+    },
+    {
+      "id": "rus-c366a024",
+      "frequencyRank": 327
+    },
+    {
+      "id": "rus-e595842a",
+      "frequencyRank": 328
+    },
+    {
+      "id": "rus-2724524f",
+      "frequencyRank": 331
+    },
+    {
+      "id": "rus-8739f5c4",
+      "frequencyRank": 332
+    },
+    {
+      "id": "rus-622eca89",
+      "frequencyRank": 333
+    },
+    {
+      "id": "rus-36a08577",
+      "frequencyRank": 334
+    },
+    {
+      "id": "rus-79006c22",
+      "frequencyRank": 335
+    },
+    {
+      "id": "rus-43f1d3ad",
+      "frequencyRank": 336
+    },
+    {
+      "id": "rus-fb6a995a",
+      "frequencyRank": 337
+    },
+    {
+      "id": "rus-fcf0b5a4",
+      "frequencyRank": 338
+    },
+    {
+      "id": "rus-1300b30f",
+      "frequencyRank": 339
+    },
+    {
+      "id": "rus-a5750f8f",
+      "frequencyRank": 340
+    },
+    {
+      "id": "rus-cb433194",
+      "frequencyRank": 341
+    },
+    {
+      "id": "rus-f0fc959a",
+      "frequencyRank": 342
+    },
+    {
+      "id": "rus-e4f2050e",
+      "frequencyRank": 343
+    },
+    {
+      "id": "rus-c4c279b3",
+      "frequencyRank": 344
+    },
+    {
+      "id": "rus-fc15dbf5",
+      "frequencyRank": 345
+    },
+    {
+      "id": "rus-b6227626",
+      "frequencyRank": 346
+    },
+    {
+      "id": "rus-c9101eba",
+      "frequencyRank": 347
+    },
+    {
+      "id": "rus-10c1f2e9",
+      "frequencyRank": 348
+    },
+    {
+      "id": "rus-1274510b",
+      "frequencyRank": 349
+    },
+    {
+      "id": "rus-e6e128e1",
+      "frequencyRank": 352
+    },
+    {
+      "id": "rus-29bc67cd",
+      "frequencyRank": 354
+    },
+    {
+      "id": "rus-007875b6",
+      "frequencyRank": 355
+    },
+    {
+      "id": "rus-94ad4c76",
+      "frequencyRank": 356
+    },
+    {
+      "id": "rus-3441a20c",
+      "frequencyRank": 357
+    },
+    {
+      "id": "rus-ff995fd9",
+      "frequencyRank": 358
+    },
+    {
+      "id": "rus-d1829044",
+      "frequencyRank": 359
+    },
+    {
+      "id": "rus-fe646f54",
+      "frequencyRank": 360
+    },
+    {
+      "id": "rus-0c738030",
+      "frequencyRank": 361
+    },
+    {
+      "id": "rus-e3b3eaa7",
+      "frequencyRank": 362
+    },
+    {
+      "id": "rus-0a341994",
+      "frequencyRank": 363
+    },
+    {
+      "id": "rus-3f085354",
+      "frequencyRank": 364
+    },
+    {
+      "id": "rus-fcc8a302",
+      "frequencyRank": 365
+    },
+    {
+      "id": "rus-15f4f420",
+      "frequencyRank": 366
+    },
+    {
+      "id": "rus-b49fd182",
+      "frequencyRank": 368
+    },
+    {
+      "id": "rus-81bcc76d",
+      "frequencyRank": 369
+    },
+    {
+      "id": "rus-7cb1f3f9",
+      "frequencyRank": 370
+    },
+    {
+      "id": "rus-d382f8a2",
+      "frequencyRank": 371
+    },
+    {
+      "id": "rus-d613eb14",
+      "frequencyRank": 372
+    },
+    {
+      "id": "rus-d734c9b5",
+      "frequencyRank": 373
+    },
+    {
+      "id": "rus-6bb01028",
+      "frequencyRank": 374
+    },
+    {
+      "id": "rus-8681f95b",
+      "frequencyRank": 375
+    },
+    {
+      "id": "rus-827f31e8",
+      "frequencyRank": 376
+    },
+    {
+      "id": "rus-87999cc6",
+      "frequencyRank": 377
+    },
+    {
+      "id": "rus-27761cf0",
+      "frequencyRank": 380
+    },
+    {
+      "id": "rus-f359c415",
+      "frequencyRank": 381
+    },
+    {
+      "id": "rus-89385511",
+      "frequencyRank": 383
+    },
+    {
+      "id": "rus-a653c3c5",
+      "frequencyRank": 384
+    },
+    {
+      "id": "rus-d2ae6a76",
+      "frequencyRank": 386
+    },
+    {
+      "id": "rus-ac0e547f",
+      "frequencyRank": 387
+    },
+    {
+      "id": "rus-0f77725e",
+      "frequencyRank": 388
+    },
+    {
+      "id": "rus-24b48932",
+      "frequencyRank": 389
+    },
+    {
+      "id": "rus-0eee5ed9",
+      "frequencyRank": 390
+    },
+    {
+      "id": "rus-4fdca5c3",
+      "frequencyRank": 391
+    },
+    {
+      "id": "rus-3ebc14f5",
+      "frequencyRank": 392
+    },
+    {
+      "id": "rus-2295a4d4",
+      "frequencyRank": 393
+    },
+    {
+      "id": "rus-2acc394f",
+      "frequencyRank": 394
+    },
+    {
+      "id": "rus-3d668913",
+      "frequencyRank": 395
+    },
+    {
+      "id": "rus-bf1ac37e",
+      "frequencyRank": 396
+    },
+    {
+      "id": "rus-2b6e4d6a",
+      "frequencyRank": 397
+    },
+    {
+      "id": "rus-4607b417",
+      "frequencyRank": 398
+    },
+    {
+      "id": "rus-451a7ce5",
+      "frequencyRank": 399
+    },
+    {
+      "id": "rus-ef6ea502",
+      "frequencyRank": 400
+    },
+    {
+      "id": "rus-167bc9ac",
+      "frequencyRank": 401
+    },
+    {
+      "id": "rus-1d396b42",
+      "frequencyRank": 402
+    },
+    {
+      "id": "rus-5ec53ecc",
+      "frequencyRank": 403
+    },
+    {
+      "id": "rus-c82743b3",
+      "frequencyRank": 404
+    },
+    {
+      "id": "rus-968072cc",
+      "frequencyRank": 405
+    },
+    {
+      "id": "rus-002a8d95",
+      "frequencyRank": 406
+    },
+    {
+      "id": "rus-a7afa14d",
+      "frequencyRank": 407
+    },
+    {
+      "id": "rus-688cfdb4",
+      "frequencyRank": 408
+    },
+    {
+      "id": "rus-b11154e9",
+      "frequencyRank": 411
+    },
+    {
+      "id": "rus-1814fc7d",
+      "frequencyRank": 414
+    },
+    {
+      "id": "rus-b4a42db0",
+      "frequencyRank": 415
+    },
+    {
+      "id": "rus-e89ab50e",
+      "frequencyRank": 416
+    },
+    {
+      "id": "rus-304aca1c",
+      "frequencyRank": 417
+    },
+    {
+      "id": "rus-e6c0b321",
+      "frequencyRank": 418
+    },
+    {
+      "id": "rus-aaa6b4e6",
+      "frequencyRank": 419
+    },
+    {
+      "id": "rus-03b7f2f9",
+      "frequencyRank": 420
+    },
+    {
+      "id": "rus-c4a4772f",
+      "frequencyRank": 421
+    },
+    {
+      "id": "rus-a86af01a",
+      "frequencyRank": 422
+    },
+    {
+      "id": "rus-fdf1be28",
+      "frequencyRank": 423
+    },
+    {
+      "id": "rus-2746f35d",
+      "frequencyRank": 424
+    },
+    {
+      "id": "rus-9a52b9b3",
+      "frequencyRank": 425
+    },
+    {
+      "id": "rus-2d6e7de7",
+      "frequencyRank": 426
+    },
+    {
+      "id": "rus-d581a32e",
+      "frequencyRank": 427
+    },
+    {
+      "id": "rus-a3fa4a71",
+      "frequencyRank": 428
+    },
+    {
+      "id": "rus-1b4012f1",
+      "frequencyRank": 429
+    },
+    {
+      "id": "rus-83f9ddf8",
+      "frequencyRank": 430
+    },
+    {
+      "id": "rus-b94f710a",
+      "frequencyRank": 431
+    },
+    {
+      "id": "rus-33686f93",
+      "frequencyRank": 432
+    },
+    {
+      "id": "rus-023c99c6",
+      "frequencyRank": 434
+    },
+    {
+      "id": "rus-1d82fad7",
+      "frequencyRank": 439
+    },
+    {
+      "id": "rus-62d9e0db",
+      "frequencyRank": 440
+    },
+    {
+      "id": "rus-1b00fba7",
+      "frequencyRank": 441
+    },
+    {
+      "id": "rus-1c3c6132",
+      "frequencyRank": 444
+    },
+    {
+      "id": "rus-64904498",
+      "frequencyRank": 445
+    },
+    {
+      "id": "rus-2935f993",
+      "frequencyRank": 446
+    },
+    {
+      "id": "rus-3ad45fff",
+      "frequencyRank": 447
+    },
+    {
+      "id": "rus-f6ab195d",
+      "frequencyRank": 448
+    },
+    {
+      "id": "rus-2671a84b",
+      "frequencyRank": 449
+    },
+    {
+      "id": "rus-0caf961a",
+      "frequencyRank": 450
+    },
+    {
+      "id": "rus-b1718707",
+      "frequencyRank": 451
+    },
+    {
+      "id": "rus-def9cccb",
+      "frequencyRank": 452
+    },
+    {
+      "id": "rus-6617736c",
+      "frequencyRank": 453
+    },
+    {
+      "id": "rus-ca0006a8",
+      "frequencyRank": 455
+    },
+    {
+      "id": "rus-0486d107",
+      "frequencyRank": 456
+    },
+    {
+      "id": "rus-f95b9330",
+      "frequencyRank": 457
+    },
+    {
+      "id": "rus-1fd5e58a",
+      "frequencyRank": 458
+    },
+    {
+      "id": "rus-a3a891ed",
+      "frequencyRank": 459
+    },
+    {
+      "id": "rus-628290aa",
+      "frequencyRank": 461
+    },
+    {
+      "id": "rus-556069f6",
+      "frequencyRank": 462
+    },
+    {
+      "id": "rus-ffe5779f",
+      "frequencyRank": 464
+    },
+    {
+      "id": "rus-4481af2c",
+      "frequencyRank": 465
+    },
+    {
+      "id": "rus-9eb1a101",
+      "frequencyRank": 466
+    },
+    {
+      "id": "rus-f6d9818a",
+      "frequencyRank": 467
+    },
+    {
+      "id": "rus-ffdb8a77",
+      "frequencyRank": 468
+    },
+    {
+      "id": "rus-040416f5",
+      "frequencyRank": 469
+    },
+    {
+      "id": "rus-84fbd41e",
+      "frequencyRank": 470
+    },
+    {
+      "id": "rus-5eebede4",
+      "frequencyRank": 471
+    },
+    {
+      "id": "rus-7f7f859c",
+      "frequencyRank": 473
+    },
+    {
+      "id": "rus-d056b3d0",
+      "frequencyRank": 475
+    },
+    {
+      "id": "rus-1f309e81",
+      "frequencyRank": 478
+    },
+    {
+      "id": "rus-dfde3d93",
+      "frequencyRank": 479
+    },
+    {
+      "id": "rus-2ae5f98d",
+      "frequencyRank": 480
+    },
+    {
+      "id": "rus-dce78217",
+      "frequencyRank": 481
+    },
+    {
+      "id": "rus-1c8d2f03",
+      "frequencyRank": 482
+    },
+    {
+      "id": "rus-23739ba0",
+      "frequencyRank": 484
+    },
+    {
+      "id": "rus-021a33a4",
+      "frequencyRank": 485
+    },
+    {
+      "id": "rus-510fbd19",
+      "frequencyRank": 486
+    },
+    {
+      "id": "rus-89b80d26",
+      "frequencyRank": 487
+    },
+    {
+      "id": "rus-34348178",
+      "frequencyRank": 488
+    },
+    {
+      "id": "rus-4c57c46b",
+      "frequencyRank": 490
+    },
+    {
+      "id": "rus-7f6f2730",
+      "frequencyRank": 492
+    },
+    {
+      "id": "rus-4e9aa7e7",
+      "frequencyRank": 493
+    },
+    {
+      "id": "rus-1d0f1e5c",
+      "frequencyRank": 494
+    },
+    {
+      "id": "rus-68f8678e",
+      "frequencyRank": 495
+    },
+    {
+      "id": "rus-b2caab8e",
+      "frequencyRank": 497
+    },
+    {
+      "id": "rus-87c46cd2",
+      "frequencyRank": 498
+    },
+    {
+      "id": "rus-eed2176c",
+      "frequencyRank": 499
+    },
+    {
+      "id": "rus-1e69b63a",
+      "frequencyRank": 500
+    },
+    {
+      "id": "rus-ac66b1fc",
+      "frequencyRank": 503
+    },
+    {
+      "id": "rus-024e496b",
+      "frequencyRank": 505
+    },
+    {
+      "id": "rus-3c79d25f",
+      "frequencyRank": 506
+    },
+    {
+      "id": "rus-fb4daab4",
+      "frequencyRank": 507
+    },
+    {
+      "id": "rus-d7c184de",
+      "frequencyRank": 508
+    },
+    {
+      "id": "rus-b60c4d71",
+      "frequencyRank": 509
+    },
+    {
+      "id": "rus-d159f725",
+      "frequencyRank": 510
+    },
+    {
+      "id": "rus-99752250",
+      "frequencyRank": 511
+    },
+    {
+      "id": "rus-cae79c0c",
+      "frequencyRank": 513
+    },
+    {
+      "id": "rus-395a97a6",
+      "frequencyRank": 515
+    },
+    {
+      "id": "rus-06bd77eb",
+      "frequencyRank": 516
+    },
+    {
+      "id": "rus-68744753",
+      "frequencyRank": 519
+    },
+    {
+      "id": "rus-750673b7",
+      "frequencyRank": 520
+    },
+    {
+      "id": "rus-43550ff4",
+      "frequencyRank": 521
+    },
+    {
+      "id": "rus-6eb0dfde",
+      "frequencyRank": 524
+    },
+    {
+      "id": "rus-71606e0b",
+      "frequencyRank": 526
+    },
+    {
+      "id": "rus-1e2817c8",
+      "frequencyRank": 527
+    },
+    {
+      "id": "rus-524d0e87",
+      "frequencyRank": 528
+    },
+    {
+      "id": "rus-61771208",
+      "frequencyRank": 529
+    },
+    {
+      "id": "rus-42569bc4",
+      "frequencyRank": 530
+    },
+    {
+      "id": "rus-3dee7fee",
+      "frequencyRank": 531
+    },
+    {
+      "id": "rus-500e3b51",
+      "frequencyRank": 532
+    },
+    {
+      "id": "rus-e38c8dae",
+      "frequencyRank": 533
+    },
+    {
+      "id": "rus-c20aacc2",
+      "frequencyRank": 534
+    },
+    {
+      "id": "rus-dc92e679",
+      "frequencyRank": 535
+    },
+    {
+      "id": "rus-631e94bf",
+      "frequencyRank": 536
+    },
+    {
+      "id": "rus-38bb3a87",
+      "frequencyRank": 537
+    },
+    {
+      "id": "rus-fc72b4e7",
+      "frequencyRank": 538
+    },
+    {
+      "id": "rus-3939e7d8",
+      "frequencyRank": 540
+    },
+    {
+      "id": "rus-6349d86c",
+      "frequencyRank": 541
+    },
+    {
+      "id": "rus-aeb27e54",
+      "frequencyRank": 542
+    },
+    {
+      "id": "rus-ce142495",
+      "frequencyRank": 543
+    },
+    {
+      "id": "rus-3f44639f",
+      "frequencyRank": 545
+    },
+    {
+      "id": "rus-4a571428",
+      "frequencyRank": 546
+    },
+    {
+      "id": "rus-bbaac597",
+      "frequencyRank": 547
+    },
+    {
+      "id": "rus-a2fcf1cc",
+      "frequencyRank": 548
+    },
+    {
+      "id": "rus-baeab638",
+      "frequencyRank": 549
+    },
+    {
+      "id": "rus-6a1f61de",
+      "frequencyRank": 550
+    },
+    {
+      "id": "rus-9b6cd43c",
+      "frequencyRank": 551
+    },
+    {
+      "id": "rus-cad301d4",
+      "frequencyRank": 552
+    },
+    {
+      "id": "rus-6628d707",
+      "frequencyRank": 553
+    },
+    {
+      "id": "rus-d62649aa",
+      "frequencyRank": 554
+    },
+    {
+      "id": "rus-0d9f1271",
+      "frequencyRank": 555
+    },
+    {
+      "id": "rus-8f6802ff",
+      "frequencyRank": 556
+    },
+    {
+      "id": "rus-a3bb6aa1",
+      "frequencyRank": 557
+    },
+    {
+      "id": "rus-d47b3800",
+      "frequencyRank": 559
+    },
+    {
+      "id": "rus-734ee5c3",
+      "frequencyRank": 560
+    },
+    {
+      "id": "rus-8d43c632",
+      "frequencyRank": 562
+    },
+    {
+      "id": "rus-821ceec6",
+      "frequencyRank": 563
+    },
+    {
+      "id": "rus-326862ed",
+      "frequencyRank": 564
+    },
+    {
+      "id": "rus-3bc43ce2",
+      "frequencyRank": 566
+    },
+    {
+      "id": "rus-327f4584",
+      "frequencyRank": 567
+    },
+    {
+      "id": "rus-572dd763",
+      "frequencyRank": 568
+    },
+    {
+      "id": "rus-e381e3bb",
+      "frequencyRank": 569
+    },
+    {
+      "id": "rus-33ecb33a",
+      "frequencyRank": 570
+    },
+    {
+      "id": "rus-c8ff9304",
+      "frequencyRank": 571
+    },
+    {
+      "id": "rus-85592c56",
+      "frequencyRank": 573
+    },
+    {
+      "id": "rus-c806eca3",
+      "frequencyRank": 574
+    },
+    {
+      "id": "rus-81c4ea2e",
+      "frequencyRank": 575
+    },
+    {
+      "id": "rus-c299ca0f",
+      "frequencyRank": 576
+    },
+    {
+      "id": "rus-16690611",
+      "frequencyRank": 578
+    },
+    {
+      "id": "rus-0762225f",
+      "frequencyRank": 579
+    },
+    {
+      "id": "rus-b66d09d7",
+      "frequencyRank": 581
+    },
+    {
+      "id": "rus-b58ac4bd",
+      "frequencyRank": 582
+    },
+    {
+      "id": "rus-a4494036",
+      "frequencyRank": 583
+    },
+    {
+      "id": "rus-04df5844",
+      "frequencyRank": 585
+    },
+    {
+      "id": "rus-36c0779f",
+      "frequencyRank": 586
+    },
+    {
+      "id": "rus-b42d3d90",
+      "frequencyRank": 587
+    },
+    {
+      "id": "rus-b18a4797",
+      "frequencyRank": 588
+    },
+    {
+      "id": "rus-bfb3d603",
+      "frequencyRank": 589
+    },
+    {
+      "id": "rus-68cb51e1",
+      "frequencyRank": 590
+    },
+    {
+      "id": "rus-cb86d406",
+      "frequencyRank": 591
+    },
+    {
+      "id": "rus-6cd3abf6",
+      "frequencyRank": 592
+    },
+    {
+      "id": "rus-c1a87f0f",
+      "frequencyRank": 593
+    },
+    {
+      "id": "rus-b66c87e7",
+      "frequencyRank": 594
+    },
+    {
+      "id": "rus-6d3f1638",
+      "frequencyRank": 595
+    },
+    {
+      "id": "rus-6a23e7c5",
+      "frequencyRank": 596
+    },
+    {
+      "id": "rus-b97a67c8",
+      "frequencyRank": 597
+    },
+    {
+      "id": "rus-6517a858",
+      "frequencyRank": 598
+    },
+    {
+      "id": "rus-bde4bf04",
+      "frequencyRank": 599
+    },
+    {
+      "id": "rus-a06f2748",
+      "frequencyRank": 600
+    },
+    {
+      "id": "rus-c21cea16",
+      "frequencyRank": 601
+    },
+    {
+      "id": "rus-250451c7",
+      "frequencyRank": 602
+    },
+    {
+      "id": "rus-1a450737",
+      "frequencyRank": 603
+    },
+    {
+      "id": "rus-3070115b",
+      "frequencyRank": 604
+    },
+    {
+      "id": "rus-41fe8549",
+      "frequencyRank": 605
+    },
+    {
+      "id": "rus-55466dd8",
+      "frequencyRank": 606
+    },
+    {
+      "id": "rus-e5cbe0fd",
+      "frequencyRank": 607
+    },
+    {
+      "id": "rus-56a58a65",
+      "frequencyRank": 608
+    },
+    {
+      "id": "rus-f152fcb9",
+      "frequencyRank": 609
+    },
+    {
+      "id": "rus-5fd4c5b6",
+      "frequencyRank": 610
+    },
+    {
+      "id": "rus-c4ad6b66",
+      "frequencyRank": 612
+    },
+    {
+      "id": "rus-8e439d20",
+      "frequencyRank": 613
+    },
+    {
+      "id": "rus-9d94ca51",
+      "frequencyRank": 614
+    },
+    {
+      "id": "rus-94fbd9a9",
+      "frequencyRank": 616
+    },
+    {
+      "id": "rus-6e5e7f5f",
+      "frequencyRank": 617
+    },
+    {
+      "id": "rus-ecb6212c",
+      "frequencyRank": 619
+    },
+    {
+      "id": "rus-afd0e181",
+      "frequencyRank": 620
+    },
+    {
+      "id": "rus-e13bdf67",
+      "frequencyRank": 621
+    },
+    {
+      "id": "rus-9a25ad28",
+      "frequencyRank": 622
+    },
+    {
+      "id": "rus-f985d5ae",
+      "frequencyRank": 623
+    },
+    {
+      "id": "rus-ba7a44e2",
+      "frequencyRank": 624
+    },
+    {
+      "id": "rus-1d387e55",
+      "frequencyRank": 626
+    },
+    {
+      "id": "rus-3f17e80f",
+      "frequencyRank": 627
+    },
+    {
+      "id": "rus-f3aa4afd",
+      "frequencyRank": 628
+    },
+    {
+      "id": "rus-f9b107d3",
+      "frequencyRank": 629
+    },
+    {
+      "id": "rus-5729980b",
+      "frequencyRank": 631
+    },
+    {
+      "id": "rus-a6e68992",
+      "frequencyRank": 632
+    },
+    {
+      "id": "rus-eeaf703e",
+      "frequencyRank": 633
+    },
+    {
+      "id": "rus-28bbeae3",
+      "frequencyRank": 634
+    },
+    {
+      "id": "rus-af1444a2",
+      "frequencyRank": 635
+    },
+    {
+      "id": "rus-0574e7d1",
+      "frequencyRank": 636
+    },
+    {
+      "id": "rus-bbe98b15",
+      "frequencyRank": 637
+    },
+    {
+      "id": "rus-85050925",
+      "frequencyRank": 638
+    },
+    {
+      "id": "rus-fd4f35ef",
+      "frequencyRank": 639
+    },
+    {
+      "id": "rus-28e828ff",
+      "frequencyRank": 640
+    },
+    {
+      "id": "rus-9d4fe0dd",
+      "frequencyRank": 641
+    },
+    {
+      "id": "rus-3d82b432",
+      "frequencyRank": 642
+    },
+    {
+      "id": "rus-193d8c19",
+      "frequencyRank": 643
+    },
+    {
+      "id": "rus-68f67396",
+      "frequencyRank": 644
+    },
+    {
+      "id": "rus-147c73be",
+      "frequencyRank": 645
+    },
+    {
+      "id": "rus-3516ed79",
+      "frequencyRank": 646
+    },
+    {
+      "id": "rus-20f4979b",
+      "frequencyRank": 647
+    },
+    {
+      "id": "rus-04deae13",
+      "frequencyRank": 648
+    },
+    {
+      "id": "rus-9dff5a0a",
+      "frequencyRank": 649
+    },
+    {
+      "id": "rus-8a6e918e",
+      "frequencyRank": 652
+    },
+    {
+      "id": "rus-25003bae",
+      "frequencyRank": 653
+    },
+    {
+      "id": "rus-e9fb2924",
+      "frequencyRank": 654
+    },
+    {
+      "id": "rus-eb2530fe",
+      "frequencyRank": 655
+    },
+    {
+      "id": "rus-6ad96a91",
+      "frequencyRank": 656
+    },
+    {
+      "id": "rus-cdc81ec1",
+      "frequencyRank": 657
+    },
+    {
+      "id": "rus-faefe5fd",
+      "frequencyRank": 658
+    },
+    {
+      "id": "rus-cdd1e5f8",
+      "frequencyRank": 659
+    },
+    {
+      "id": "rus-1da858d1",
+      "frequencyRank": 660
+    },
+    {
+      "id": "rus-841997eb",
+      "frequencyRank": 661
+    },
+    {
+      "id": "rus-37bed698",
+      "frequencyRank": 662
+    },
+    {
+      "id": "rus-ccdec275",
+      "frequencyRank": 663
+    },
+    {
+      "id": "rus-cd745218",
+      "frequencyRank": 664
+    },
+    {
+      "id": "rus-9ed32f4f",
+      "frequencyRank": 665
+    },
+    {
+      "id": "rus-c11401cb",
+      "frequencyRank": 667
+    },
+    {
+      "id": "rus-4a7147eb",
+      "frequencyRank": 668
+    },
+    {
+      "id": "rus-859047e4",
+      "frequencyRank": 669
+    },
+    {
+      "id": "rus-5b46afc1",
+      "frequencyRank": 670
+    },
+    {
+      "id": "rus-9cdb2c56",
+      "frequencyRank": 672
+    },
+    {
+      "id": "rus-6faf539d",
+      "frequencyRank": 673
+    },
+    {
+      "id": "rus-88d91acc",
+      "frequencyRank": 674
+    },
+    {
+      "id": "rus-5aa91b45",
+      "frequencyRank": 675
+    },
+    {
+      "id": "rus-6bf25c56",
+      "frequencyRank": 676
+    },
+    {
+      "id": "rus-9a7b6b4d",
+      "frequencyRank": 677
+    },
+    {
+      "id": "rus-018b9ac4",
+      "frequencyRank": 678
+    },
+    {
+      "id": "rus-9c75baac",
+      "frequencyRank": 679
+    },
+    {
+      "id": "rus-7f04ac35",
+      "frequencyRank": 682
+    },
+    {
+      "id": "rus-4152c364",
+      "frequencyRank": 683
+    },
+    {
+      "id": "rus-3df7d392",
+      "frequencyRank": 685
+    },
+    {
+      "id": "rus-28d25054",
+      "frequencyRank": 686
+    },
+    {
+      "id": "rus-423ea248",
+      "frequencyRank": 687
+    },
+    {
+      "id": "rus-2fc14f21",
+      "frequencyRank": 690
+    },
+    {
+      "id": "rus-5cf6afb5",
+      "frequencyRank": 691
+    },
+    {
+      "id": "rus-61f41589",
+      "frequencyRank": 693
+    },
+    {
+      "id": "rus-a7ad6a74",
+      "frequencyRank": 694
+    },
+    {
+      "id": "rus-7244de90",
+      "frequencyRank": 695
+    },
+    {
+      "id": "rus-05d49d50",
+      "frequencyRank": 696
+    },
+    {
+      "id": "rus-66697c19",
+      "frequencyRank": 698
+    },
+    {
+      "id": "rus-d5c8b165",
+      "frequencyRank": 699
+    },
+    {
+      "id": "rus-1e3cd59f",
+      "frequencyRank": 700
+    },
+    {
+      "id": "rus-7b77a405",
+      "frequencyRank": 701
+    },
+    {
+      "id": "rus-5566dc21",
+      "frequencyRank": 703
+    },
+    {
+      "id": "rus-af1de51c",
+      "frequencyRank": 704
+    },
+    {
+      "id": "rus-4e16732d",
+      "frequencyRank": 705
+    },
+    {
+      "id": "rus-1362bd0b",
+      "frequencyRank": 707
+    },
+    {
+      "id": "rus-32e1972c",
+      "frequencyRank": 708
+    },
+    {
+      "id": "rus-013ea3cc",
+      "frequencyRank": 709
+    },
+    {
+      "id": "rus-cbfc8504",
+      "frequencyRank": 710
+    },
+    {
+      "id": "rus-23c31fe0",
+      "frequencyRank": 711
+    },
+    {
+      "id": "rus-ebb66fc8",
+      "frequencyRank": 712
+    },
+    {
+      "id": "rus-0d0ed612",
+      "frequencyRank": 713
+    },
+    {
+      "id": "rus-7cba3870",
+      "frequencyRank": 714
+    },
+    {
+      "id": "rus-bb6ee561",
+      "frequencyRank": 716
+    },
+    {
+      "id": "rus-072a0b57",
+      "frequencyRank": 717
+    },
+    {
+      "id": "rus-c54719ba",
+      "frequencyRank": 718
+    },
+    {
+      "id": "rus-41143225",
+      "frequencyRank": 719
+    },
+    {
+      "id": "rus-8ce13c46",
+      "frequencyRank": 720
+    },
+    {
+      "id": "rus-10c0637f",
+      "frequencyRank": 721
+    },
+    {
+      "id": "rus-8c0be844",
+      "frequencyRank": 722
+    },
+    {
+      "id": "rus-a86f28c9",
+      "frequencyRank": 723
+    },
+    {
+      "id": "rus-984ed1dc",
+      "frequencyRank": 724
+    },
+    {
+      "id": "rus-5cfc0914",
+      "frequencyRank": 725
+    },
+    {
+      "id": "rus-ca043da8",
+      "frequencyRank": 726
+    },
+    {
+      "id": "rus-38aa8a94",
+      "frequencyRank": 727
+    },
+    {
+      "id": "rus-007b2860",
+      "frequencyRank": 728
+    },
+    {
+      "id": "rus-49bfca2c",
+      "frequencyRank": 729
+    },
+    {
+      "id": "rus-53ea6604",
+      "frequencyRank": 730
+    },
+    {
+      "id": "rus-335cdc93",
+      "frequencyRank": 731
+    },
+    {
+      "id": "rus-75548267",
+      "frequencyRank": 732
+    },
+    {
+      "id": "rus-a3b62559",
+      "frequencyRank": 734
+    },
+    {
+      "id": "rus-79264b2f",
+      "frequencyRank": 736
+    },
+    {
+      "id": "rus-bed7127d",
+      "frequencyRank": 737
+    },
+    {
+      "id": "rus-b28658ca",
+      "frequencyRank": 738
+    },
+    {
+      "id": "rus-c34ffcbf",
+      "frequencyRank": 739
+    },
+    {
+      "id": "rus-effc5e58",
+      "frequencyRank": 740
+    },
+    {
+      "id": "rus-307cdb9e",
+      "frequencyRank": 743
+    },
+    {
+      "id": "rus-eeb52569",
+      "frequencyRank": 745
+    },
+    {
+      "id": "rus-311037c1",
+      "frequencyRank": 746
+    },
+    {
+      "id": "rus-6c0da310",
+      "frequencyRank": 747
+    },
+    {
+      "id": "rus-cae401b5",
+      "frequencyRank": 748
+    },
+    {
+      "id": "rus-4b1d300f",
+      "frequencyRank": 749
+    },
+    {
+      "id": "rus-106bfb40",
+      "frequencyRank": 750
+    },
+    {
+      "id": "rus-23e45c82",
+      "frequencyRank": 751
+    },
+    {
+      "id": "rus-af240549",
+      "frequencyRank": 752
+    },
+    {
+      "id": "rus-e5289f94",
+      "frequencyRank": 753
+    },
+    {
+      "id": "rus-051ae4b4",
+      "frequencyRank": 755
+    },
+    {
+      "id": "rus-06e2030f",
+      "frequencyRank": 756
+    },
+    {
+      "id": "rus-83065a05",
+      "frequencyRank": 757
+    },
+    {
+      "id": "rus-031f3a76",
+      "frequencyRank": 758
+    },
+    {
+      "id": "rus-156d8774",
+      "frequencyRank": 759
+    },
+    {
+      "id": "rus-eb571ee2",
+      "frequencyRank": 760
+    },
+    {
+      "id": "rus-b32d02dd",
+      "frequencyRank": 761
+    },
+    {
+      "id": "rus-29e0e4d5",
+      "frequencyRank": 762
+    },
+    {
+      "id": "rus-88cea236",
+      "frequencyRank": 763
+    },
+    {
+      "id": "rus-9d0e18e1",
+      "frequencyRank": 765
+    },
+    {
+      "id": "rus-ebb34da5",
+      "frequencyRank": 766
+    },
+    {
+      "id": "rus-a163008a",
+      "frequencyRank": 767
+    },
+    {
+      "id": "rus-7c8b6811",
+      "frequencyRank": 768
+    },
+    {
+      "id": "rus-350b53ed",
+      "frequencyRank": 769
+    },
+    {
+      "id": "rus-e197be99",
+      "frequencyRank": 770
+    },
+    {
+      "id": "rus-36f5a254",
+      "frequencyRank": 771
+    },
+    {
+      "id": "rus-9046563d",
+      "frequencyRank": 772
+    },
+    {
+      "id": "rus-d07990da",
+      "frequencyRank": 773
+    },
+    {
+      "id": "rus-fb515447",
+      "frequencyRank": 775
+    },
+    {
+      "id": "rus-b55f3ec7",
+      "frequencyRank": 776
+    },
+    {
+      "id": "rus-c7cddba5",
+      "frequencyRank": 777
+    },
+    {
+      "id": "rus-28029a9d",
+      "frequencyRank": 778
+    },
+    {
+      "id": "rus-852dc4c3",
+      "frequencyRank": 779
+    },
+    {
+      "id": "rus-4271ad9a",
+      "frequencyRank": 780
+    },
+    {
+      "id": "rus-fd7ef220",
+      "frequencyRank": 782
+    },
+    {
+      "id": "rus-12ed15e9",
+      "frequencyRank": 783
+    },
+    {
+      "id": "rus-4a45bb3c",
+      "frequencyRank": 784
+    },
+    {
+      "id": "rus-0edc29bd",
+      "frequencyRank": 786
+    },
+    {
+      "id": "rus-5257c461",
+      "frequencyRank": 787
+    },
+    {
+      "id": "rus-d69eb5a8",
+      "frequencyRank": 788
+    },
+    {
+      "id": "rus-429c12d2",
+      "frequencyRank": 789
+    },
+    {
+      "id": "rus-0105c80c",
+      "frequencyRank": 790
+    },
+    {
+      "id": "rus-14878655",
+      "frequencyRank": 791
+    },
+    {
+      "id": "rus-bc492370",
+      "frequencyRank": 792
+    },
+    {
+      "id": "rus-d0f5c824",
+      "frequencyRank": 793
+    },
+    {
+      "id": "rus-8ccd71d4",
+      "frequencyRank": 794
+    },
+    {
+      "id": "rus-43fe839d",
+      "frequencyRank": 798
+    },
+    {
+      "id": "rus-db9b6376",
+      "frequencyRank": 799
+    },
+    {
+      "id": "rus-62aad8f6",
+      "frequencyRank": 800
+    },
+    {
+      "id": "rus-de45a05a",
+      "frequencyRank": 801
+    },
+    {
+      "id": "rus-23b64603",
+      "frequencyRank": 804
+    },
+    {
+      "id": "rus-f4e5ee73",
+      "frequencyRank": 805
+    },
+    {
+      "id": "rus-42f331c5",
+      "frequencyRank": 807
+    },
+    {
+      "id": "rus-71fdc12a",
+      "frequencyRank": 808
+    },
+    {
+      "id": "rus-c91a2b94",
+      "frequencyRank": 810
+    },
+    {
+      "id": "rus-700c5a69",
+      "frequencyRank": 811
+    },
+    {
+      "id": "rus-4ac09818",
+      "frequencyRank": 812
+    },
+    {
+      "id": "rus-6342caea",
+      "frequencyRank": 814
+    },
+    {
+      "id": "rus-ae188afa",
+      "frequencyRank": 815
+    },
+    {
+      "id": "rus-7ccd619b",
+      "frequencyRank": 816
+    },
+    {
+      "id": "rus-f98fcae9",
+      "frequencyRank": 817
+    },
+    {
+      "id": "rus-9606f484",
+      "frequencyRank": 818
+    },
+    {
+      "id": "rus-8b04a0fa",
+      "frequencyRank": 819
+    },
+    {
+      "id": "rus-05733a3c",
+      "frequencyRank": 821
+    },
+    {
+      "id": "rus-02952696",
+      "frequencyRank": 822
+    },
+    {
+      "id": "rus-bb2ae037",
+      "frequencyRank": 823
+    },
+    {
+      "id": "rus-8e2cc9e1",
+      "frequencyRank": 824
+    },
+    {
+      "id": "rus-0289b827",
+      "frequencyRank": 826
+    },
+    {
+      "id": "rus-723833d6",
+      "frequencyRank": 827
+    },
+    {
+      "id": "rus-0a45a686",
+      "frequencyRank": 828
+    },
+    {
+      "id": "rus-6fed8c2e",
+      "frequencyRank": 829
+    },
+    {
+      "id": "rus-a1e053af",
+      "frequencyRank": 830
+    },
+    {
+      "id": "rus-bbd2b4e3",
+      "frequencyRank": 832
+    },
+    {
+      "id": "rus-903e654e",
+      "frequencyRank": 835
+    },
+    {
+      "id": "rus-e3911599",
+      "frequencyRank": 836
+    },
+    {
+      "id": "rus-c782b188",
+      "frequencyRank": 837
+    },
+    {
+      "id": "rus-b7ab4ff3",
+      "frequencyRank": 838
+    },
+    {
+      "id": "rus-d9b9689c",
+      "frequencyRank": 839
+    },
+    {
+      "id": "rus-a34a626b",
+      "frequencyRank": 840
+    },
+    {
+      "id": "rus-954d2097",
+      "frequencyRank": 842
+    },
+    {
+      "id": "rus-a77c98b4",
+      "frequencyRank": 843
+    },
+    {
+      "id": "rus-6130760d",
+      "frequencyRank": 844
+    },
+    {
+      "id": "rus-8ca8325d",
+      "frequencyRank": 845
+    },
+    {
+      "id": "rus-a901879f",
+      "frequencyRank": 846
+    },
+    {
+      "id": "rus-bc0a658c",
+      "frequencyRank": 847
+    },
+    {
+      "id": "rus-4e8fd0b9",
+      "frequencyRank": 849
+    },
+    {
+      "id": "rus-e28ebb43",
+      "frequencyRank": 851
+    },
+    {
+      "id": "rus-8a3f0624",
+      "frequencyRank": 852
+    },
+    {
+      "id": "rus-496c3587",
+      "frequencyRank": 854
+    },
+    {
+      "id": "rus-36c3e7dd",
+      "frequencyRank": 856
+    },
+    {
+      "id": "rus-648f1428",
+      "frequencyRank": 857
+    },
+    {
+      "id": "rus-c1ed5539",
+      "frequencyRank": 859
+    },
+    {
+      "id": "rus-67b1898b",
+      "frequencyRank": 860
+    },
+    {
+      "id": "rus-41de54a8",
+      "frequencyRank": 861
+    },
+    {
+      "id": "rus-4b132bc5",
+      "frequencyRank": 862
+    },
+    {
+      "id": "rus-63d58ca7",
+      "frequencyRank": 863
+    },
+    {
+      "id": "rus-6dacefaf",
+      "frequencyRank": 864
+    },
+    {
+      "id": "rus-096baeca",
+      "frequencyRank": 866
+    },
+    {
+      "id": "rus-c85f5c7e",
+      "frequencyRank": 867
+    },
+    {
+      "id": "rus-de523785",
+      "frequencyRank": 868
+    },
+    {
+      "id": "rus-8aed0331",
+      "frequencyRank": 869
+    },
+    {
+      "id": "rus-d67a28c5",
+      "frequencyRank": 870
+    },
+    {
+      "id": "rus-32f35316",
+      "frequencyRank": 871
+    },
+    {
+      "id": "rus-9e782509",
+      "frequencyRank": 872
+    },
+    {
+      "id": "rus-897fe450",
+      "frequencyRank": 873
+    },
+    {
+      "id": "rus-ef26516d",
+      "frequencyRank": 876
+    },
+    {
+      "id": "rus-8be1ce0f",
+      "frequencyRank": 877
+    },
+    {
+      "id": "rus-7795d556",
+      "frequencyRank": 878
+    },
+    {
+      "id": "rus-9ca8c4e5",
+      "frequencyRank": 879
+    },
+    {
+      "id": "rus-ccd33cb6",
+      "frequencyRank": 880
+    },
+    {
+      "id": "rus-031c2b8c",
+      "frequencyRank": 881
+    },
+    {
+      "id": "rus-481923d1",
+      "frequencyRank": 882
+    },
+    {
+      "id": "rus-fc81190f",
+      "frequencyRank": 884
+    },
+    {
+      "id": "rus-ccebd768",
+      "frequencyRank": 885
+    },
+    {
+      "id": "rus-a69ab20d",
+      "frequencyRank": 886
+    },
+    {
+      "id": "rus-fdf8f58d",
+      "frequencyRank": 887
+    },
+    {
+      "id": "rus-1dac9491",
+      "frequencyRank": 888
+    },
+    {
+      "id": "rus-a931bbac",
+      "frequencyRank": 889
+    },
+    {
+      "id": "rus-1e43428d",
+      "frequencyRank": 890
+    },
+    {
+      "id": "rus-bd2249fe",
+      "frequencyRank": 893
+    },
+    {
+      "id": "rus-cf4902bc",
+      "frequencyRank": 894
+    },
+    {
+      "id": "rus-fb58575f",
+      "frequencyRank": 895
+    },
+    {
+      "id": "rus-bc848f0c",
+      "frequencyRank": 896
+    },
+    {
+      "id": "rus-9c97c0f8",
+      "frequencyRank": 897
+    },
+    {
+      "id": "rus-2892be33",
+      "frequencyRank": 898
+    },
+    {
+      "id": "rus-378e3849",
+      "frequencyRank": 899
+    },
+    {
+      "id": "rus-d525b653",
+      "frequencyRank": 900
+    },
+    {
+      "id": "rus-b4ac532e",
+      "frequencyRank": 901
+    },
+    {
+      "id": "rus-93e5ed9a",
+      "frequencyRank": 902
+    },
+    {
+      "id": "rus-f13ecaa9",
+      "frequencyRank": 903
+    },
+    {
+      "id": "rus-4a180208",
+      "frequencyRank": 904
+    },
+    {
+      "id": "rus-66a267d7",
+      "frequencyRank": 905
+    },
+    {
+      "id": "rus-8242bc51",
+      "frequencyRank": 906
+    },
+    {
+      "id": "rus-227efd52",
+      "frequencyRank": 907
+    },
+    {
+      "id": "rus-6cba24cf",
+      "frequencyRank": 908
+    },
+    {
+      "id": "rus-f6e7be4c",
+      "frequencyRank": 909
+    },
+    {
+      "id": "rus-40b82b97",
+      "frequencyRank": 910
+    },
+    {
+      "id": "rus-7b022c1b",
+      "frequencyRank": 911
+    },
+    {
+      "id": "rus-76cab723",
+      "frequencyRank": 912
+    },
+    {
+      "id": "rus-21ab6be3",
+      "frequencyRank": 913
+    },
+    {
+      "id": "rus-4624d7f1",
+      "frequencyRank": 914
+    },
+    {
+      "id": "rus-6309b2ad",
+      "frequencyRank": 915
+    },
+    {
+      "id": "rus-79fa7da4",
+      "frequencyRank": 916
+    },
+    {
+      "id": "rus-77b9f535",
+      "frequencyRank": 917
+    },
+    {
+      "id": "rus-a43da73c",
+      "frequencyRank": 919
+    },
+    {
+      "id": "rus-45dd7c9a",
+      "frequencyRank": 920
+    },
+    {
+      "id": "rus-34ba3d15",
+      "frequencyRank": 921
+    },
+    {
+      "id": "rus-67128b04",
+      "frequencyRank": 923
+    },
+    {
+      "id": "rus-f0b322c2",
+      "frequencyRank": 924
+    },
+    {
+      "id": "rus-c22df6dc",
+      "frequencyRank": 925
+    },
+    {
+      "id": "rus-2d422df3",
+      "frequencyRank": 927
+    },
+    {
+      "id": "rus-ca0c7156",
+      "frequencyRank": 928
+    },
+    {
+      "id": "rus-6ba6ee49",
+      "frequencyRank": 929
+    },
+    {
+      "id": "rus-6a7f69a0",
+      "frequencyRank": 930
+    },
+    {
+      "id": "rus-4a11f868",
+      "frequencyRank": 931
+    },
+    {
+      "id": "rus-f8242d2a",
+      "frequencyRank": 933
+    },
+    {
+      "id": "rus-a0a35c42",
+      "frequencyRank": 934
+    },
+    {
+      "id": "rus-924ef49d",
+      "frequencyRank": 935
+    },
+    {
+      "id": "rus-eed04585",
+      "frequencyRank": 937
+    },
+    {
+      "id": "rus-ab47a26a",
+      "frequencyRank": 938
+    },
+    {
+      "id": "rus-05086611",
+      "frequencyRank": 939
+    },
+    {
+      "id": "rus-9380692f",
+      "frequencyRank": 940
+    },
+    {
+      "id": "rus-e91231ae",
+      "frequencyRank": 941
+    },
+    {
+      "id": "rus-1c9b6d02",
+      "frequencyRank": 943
+    },
+    {
+      "id": "rus-63ce027e",
+      "frequencyRank": 945
+    },
+    {
+      "id": "rus-47452451",
+      "frequencyRank": 946
+    },
+    {
+      "id": "rus-7151cef4",
+      "frequencyRank": 948
+    },
+    {
+      "id": "rus-8dd7cbaf",
+      "frequencyRank": 950
+    },
+    {
+      "id": "rus-9e5e0162",
+      "frequencyRank": 951
+    },
+    {
+      "id": "rus-71b9d5a3",
+      "frequencyRank": 952
+    },
+    {
+      "id": "rus-989b4f16",
+      "frequencyRank": 954
+    },
+    {
+      "id": "rus-61552ceb",
+      "frequencyRank": 955
+    },
+    {
+      "id": "rus-79a67929",
+      "frequencyRank": 956
+    },
+    {
+      "id": "rus-e39bc7ab",
+      "frequencyRank": 958
+    },
+    {
+      "id": "rus-83fd8231",
+      "frequencyRank": 960
+    },
+    {
+      "id": "rus-f19efc72",
+      "frequencyRank": 961
+    },
+    {
+      "id": "rus-3116bd5c",
+      "frequencyRank": 963
+    },
+    {
+      "id": "rus-e9495588",
+      "frequencyRank": 964
+    },
+    {
+      "id": "rus-f5cc9f40",
+      "frequencyRank": 965
+    },
+    {
+      "id": "rus-b716312b",
+      "frequencyRank": 966
+    },
+    {
+      "id": "rus-757a35f4",
+      "frequencyRank": 967
+    },
+    {
+      "id": "rus-29307dff",
+      "frequencyRank": 968
+    },
+    {
+      "id": "rus-7eb770dd",
+      "frequencyRank": 969
+    },
+    {
+      "id": "rus-694fef42",
+      "frequencyRank": 973
+    },
+    {
+      "id": "rus-c32c469f",
+      "frequencyRank": 974
+    },
+    {
+      "id": "rus-b4101376",
+      "frequencyRank": 975
+    },
+    {
+      "id": "rus-efd7210b",
+      "frequencyRank": 976
+    },
+    {
+      "id": "rus-a01de5dc",
+      "frequencyRank": 977
+    },
+    {
+      "id": "rus-fad62910",
+      "frequencyRank": 980
+    },
+    {
+      "id": "rus-7e5b0ce9",
+      "frequencyRank": 981
+    },
+    {
+      "id": "rus-30befd3d",
+      "frequencyRank": 982
+    },
+    {
+      "id": "rus-bdc090b7",
+      "frequencyRank": 983
+    },
+    {
+      "id": "rus-ce61319f",
+      "frequencyRank": 984
+    },
+    {
+      "id": "rus-5e20d267",
+      "frequencyRank": 985
+    },
+    {
+      "id": "rus-9e6befcf",
+      "frequencyRank": 986
+    },
+    {
+      "id": "rus-566251c9",
+      "frequencyRank": 987
+    },
+    {
+      "id": "rus-5f8ed4bf",
+      "frequencyRank": 991
+    },
+    {
+      "id": "rus-6ae8c33c",
+      "frequencyRank": 992
+    },
+    {
+      "id": "rus-c5182071",
+      "frequencyRank": 993
+    },
+    {
+      "id": "rus-2dacc217",
+      "frequencyRank": 994
+    },
+    {
+      "id": "rus-9ce60d0a",
+      "frequencyRank": 995
+    },
+    {
+      "id": "rus-21c38234",
+      "frequencyRank": 996
+    },
+    {
+      "id": "rus-d4893ea4",
+      "frequencyRank": 997
+    },
+    {
+      "id": "rus-8c63f023",
+      "frequencyRank": 999
+    },
+    {
+      "id": "rus-ed26bb74",
+      "frequencyRank": 1000
+    },
+    {
+      "id": "rus-82859393",
+      "frequencyRank": 1001
+    },
+    {
+      "id": "rus-8b8ad1e8",
+      "frequencyRank": 1003
+    },
+    {
+      "id": "rus-fbaa5615",
+      "frequencyRank": 1004
+    },
+    {
+      "id": "rus-4da7477d",
+      "frequencyRank": 1006
+    },
+    {
+      "id": "rus-da4c0105",
+      "frequencyRank": 1007
+    },
+    {
+      "id": "rus-d96cf5da",
+      "frequencyRank": 1008
+    },
+    {
+      "id": "rus-185b2431",
+      "frequencyRank": 1009
+    },
+    {
+      "id": "rus-0c3650de",
+      "frequencyRank": 1010
+    },
+    {
+      "id": "rus-2493000b",
+      "frequencyRank": 1011
+    },
+    {
+      "id": "rus-4c4e3cc1",
+      "frequencyRank": 1012
+    },
+    {
+      "id": "rus-1cdf6ff5",
+      "frequencyRank": 1014
+    },
+    {
+      "id": "rus-f4da9059",
+      "frequencyRank": 1015
+    },
+    {
+      "id": "rus-818835c0",
+      "frequencyRank": 1016
+    },
+    {
+      "id": "rus-7bc122ad",
+      "frequencyRank": 1017
+    },
+    {
+      "id": "rus-72e09511",
+      "frequencyRank": 1018
+    },
+    {
+      "id": "rus-0886201c",
+      "frequencyRank": 1019
+    },
+    {
+      "id": "rus-49712b42",
+      "frequencyRank": 1020
+    },
+    {
+      "id": "rus-52b8e995",
+      "frequencyRank": 1021
+    },
+    {
+      "id": "rus-1b10d900",
+      "frequencyRank": 1022
+    },
+    {
+      "id": "rus-7e9d4f93",
+      "frequencyRank": 1024
+    },
+    {
+      "id": "rus-b7be7ab4",
+      "frequencyRank": 1025
+    },
+    {
+      "id": "rus-9479f0e8",
+      "frequencyRank": 1027
+    },
+    {
+      "id": "rus-4f67f3ca",
+      "frequencyRank": 1028
+    },
+    {
+      "id": "rus-b16e10f2",
+      "frequencyRank": 1029
+    },
+    {
+      "id": "rus-1a5898a7",
+      "frequencyRank": 1030
+    },
+    {
+      "id": "rus-909e6121",
+      "frequencyRank": 1031
+    },
+    {
+      "id": "rus-948776b4",
+      "frequencyRank": 1032
+    },
+    {
+      "id": "rus-e03de880",
+      "frequencyRank": 1033
+    },
+    {
+      "id": "rus-833ee1a4",
+      "frequencyRank": 1034
+    },
+    {
+      "id": "rus-a978e9e3",
+      "frequencyRank": 1036
+    },
+    {
+      "id": "rus-378718a4",
+      "frequencyRank": 1037
+    },
+    {
+      "id": "rus-d80d8af3",
+      "frequencyRank": 1038
+    },
+    {
+      "id": "rus-992a1c7c",
+      "frequencyRank": 1039
+    },
+    {
+      "id": "rus-d2d6a191",
+      "frequencyRank": 1041
+    },
+    {
+      "id": "rus-66da3f42",
+      "frequencyRank": 1042
+    },
+    {
+      "id": "rus-e2d23359",
+      "frequencyRank": 1043
+    },
+    {
+      "id": "rus-dccb7b26",
+      "frequencyRank": 1045
+    },
+    {
+      "id": "rus-2c47c75b",
+      "frequencyRank": 1047
+    },
+    {
+      "id": "rus-f2ddbbde",
+      "frequencyRank": 1048
+    },
+    {
+      "id": "rus-31e6e4b7",
+      "frequencyRank": 1049
+    },
+    {
+      "id": "rus-82502720",
+      "frequencyRank": 1050
+    },
+    {
+      "id": "rus-f707a754",
+      "frequencyRank": 1051
+    },
+    {
+      "id": "rus-ca826c60",
+      "frequencyRank": 1054
+    },
+    {
+      "id": "rus-1a085659",
+      "frequencyRank": 1055
+    },
+    {
+      "id": "rus-d807848d",
+      "frequencyRank": 1056
+    },
+    {
+      "id": "rus-ad4e879b",
+      "frequencyRank": 1057
+    },
+    {
+      "id": "rus-5dc2f4c9",
+      "frequencyRank": 1058
+    },
+    {
+      "id": "rus-c297544f",
+      "frequencyRank": 1059
+    },
+    {
+      "id": "rus-9851ccda",
+      "frequencyRank": 1060
+    },
+    {
+      "id": "rus-0c82e653",
+      "frequencyRank": 1061
+    },
+    {
+      "id": "rus-faa1b7c1",
+      "frequencyRank": 1062
+    },
+    {
+      "id": "rus-cdba2cae",
+      "frequencyRank": 1064
+    },
+    {
+      "id": "rus-48a1e827",
+      "frequencyRank": 1065
+    },
+    {
+      "id": "rus-612b95a0",
+      "frequencyRank": 1066
+    },
+    {
+      "id": "rus-b878f21b",
+      "frequencyRank": 1067
+    },
+    {
+      "id": "rus-29d559c5",
+      "frequencyRank": 1068
+    },
+    {
+      "id": "rus-25f8ec8b",
+      "frequencyRank": 1069
+    },
+    {
+      "id": "rus-7875e192",
+      "frequencyRank": 1070
+    },
+    {
+      "id": "rus-580cea88",
+      "frequencyRank": 1071
+    },
+    {
+      "id": "rus-a0b42a95",
+      "frequencyRank": 1072
+    },
+    {
+      "id": "rus-e1878e35",
+      "frequencyRank": 1074
+    },
+    {
+      "id": "rus-2384a74a",
+      "frequencyRank": 1077
+    },
+    {
+      "id": "rus-5f5ef182",
+      "frequencyRank": 1082
+    },
+    {
+      "id": "rus-fcbc7dcb",
+      "frequencyRank": 1083
+    },
+    {
+      "id": "rus-b75c0629",
+      "frequencyRank": 1085
+    },
+    {
+      "id": "rus-68b4d7be",
+      "frequencyRank": 1086
+    },
+    {
+      "id": "rus-7ab80006",
+      "frequencyRank": 1087
+    },
+    {
+      "id": "rus-1fe3c895",
+      "frequencyRank": 1088
+    },
+    {
+      "id": "rus-e260ddfe",
+      "frequencyRank": 1089
+    },
+    {
+      "id": "rus-d0f1dd05",
+      "frequencyRank": 1090
+    },
+    {
+      "id": "rus-8f76ada9",
+      "frequencyRank": 1091
+    },
+    {
+      "id": "rus-029ce075",
+      "frequencyRank": 1092
+    },
+    {
+      "id": "rus-330918fb",
+      "frequencyRank": 1093
+    },
+    {
+      "id": "rus-6b48d325",
+      "frequencyRank": 1094
+    },
+    {
+      "id": "rus-bbea51fa",
+      "frequencyRank": 1096
+    },
+    {
+      "id": "rus-13cdf1ed",
+      "frequencyRank": 1097
+    },
+    {
+      "id": "rus-56f5e4fe",
+      "frequencyRank": 1098
+    },
+    {
+      "id": "rus-36560857",
+      "frequencyRank": 1099
+    },
+    {
+      "id": "rus-720dab23",
+      "frequencyRank": 1100
+    },
+    {
+      "id": "rus-9e61df4a",
+      "frequencyRank": 1101
+    },
+    {
+      "id": "rus-3ed1eb8c",
+      "frequencyRank": 1103
+    },
+    {
+      "id": "rus-7632711c",
+      "frequencyRank": 1104
+    },
+    {
+      "id": "rus-40609731",
+      "frequencyRank": 1105
+    },
+    {
+      "id": "rus-dda71612",
+      "frequencyRank": 1108
+    },
+    {
+      "id": "rus-4cdc9efd",
+      "frequencyRank": 1109
+    },
+    {
+      "id": "rus-8a21a03a",
+      "frequencyRank": 1110
+    },
+    {
+      "id": "rus-7936ae34",
+      "frequencyRank": 1111
+    },
+    {
+      "id": "rus-e50c6c83",
+      "frequencyRank": 1112
+    },
+    {
+      "id": "rus-e201139d",
+      "frequencyRank": 1113
+    },
+    {
+      "id": "rus-85c428b0",
+      "frequencyRank": 1115
+    },
+    {
+      "id": "rus-e6c577a4",
+      "frequencyRank": 1116
+    },
+    {
+      "id": "rus-07b39d12",
+      "frequencyRank": 1117
+    },
+    {
+      "id": "rus-dd5f3fcb",
+      "frequencyRank": 1118
+    },
+    {
+      "id": "rus-1a505cc7",
+      "frequencyRank": 1119
+    },
+    {
+      "id": "rus-4f46c004",
+      "frequencyRank": 1120
+    },
+    {
+      "id": "rus-0318371f",
+      "frequencyRank": 1121
+    },
+    {
+      "id": "rus-ceb50775",
+      "frequencyRank": 1122
+    },
+    {
+      "id": "rus-2b465ef4",
+      "frequencyRank": 1124
+    },
+    {
+      "id": "rus-53b03308",
+      "frequencyRank": 1125
+    },
+    {
+      "id": "rus-22cff260",
+      "frequencyRank": 1126
+    },
+    {
+      "id": "rus-ea1f57a3",
+      "frequencyRank": 1127
+    },
+    {
+      "id": "rus-8a67b71e",
+      "frequencyRank": 1128
+    },
+    {
+      "id": "rus-df083c68",
+      "frequencyRank": 1129
+    },
+    {
+      "id": "rus-29c37ba8",
+      "frequencyRank": 1130
+    },
+    {
+      "id": "rus-df72b2bd",
+      "frequencyRank": 1131
+    },
+    {
+      "id": "rus-3b2924f8",
+      "frequencyRank": 1133
+    },
+    {
+      "id": "rus-1c0c0b8d",
+      "frequencyRank": 1134
+    },
+    {
+      "id": "rus-127bc64c",
+      "frequencyRank": 1135
+    },
+    {
+      "id": "rus-3add85c9",
+      "frequencyRank": 1136
+    },
+    {
+      "id": "rus-1f4a91fc",
+      "frequencyRank": 1137
+    },
+    {
+      "id": "rus-b9c846e7",
+      "frequencyRank": 1139
+    },
+    {
+      "id": "rus-718f9ad6",
+      "frequencyRank": 1140
+    },
+    {
+      "id": "rus-601d499f",
+      "frequencyRank": 1141
+    },
+    {
+      "id": "rus-326a59d5",
+      "frequencyRank": 1142
+    },
+    {
+      "id": "rus-f630531e",
+      "frequencyRank": 1143
+    },
+    {
+      "id": "rus-c9d2000d",
+      "frequencyRank": 1144
+    },
+    {
+      "id": "rus-da20ec6f",
+      "frequencyRank": 1145
+    },
+    {
+      "id": "rus-17168557",
+      "frequencyRank": 1147
+    },
+    {
+      "id": "rus-936ee210",
+      "frequencyRank": 1149
+    },
+    {
+      "id": "rus-af6da149",
+      "frequencyRank": 1151
+    },
+    {
+      "id": "rus-25a4585a",
+      "frequencyRank": 1152
+    },
+    {
+      "id": "rus-eed0339f",
+      "frequencyRank": 1153
+    },
+    {
+      "id": "rus-75fab983",
+      "frequencyRank": 1154
+    },
+    {
+      "id": "rus-aa14827e",
+      "frequencyRank": 1155
+    },
+    {
+      "id": "rus-11f863b0",
+      "frequencyRank": 1156
+    },
+    {
+      "id": "rus-42448974",
+      "frequencyRank": 1157
+    },
+    {
+      "id": "rus-d0f9a478",
+      "frequencyRank": 1158
+    },
+    {
+      "id": "rus-f51cd285",
+      "frequencyRank": 1159
+    },
+    {
+      "id": "rus-cfe215ae",
+      "frequencyRank": 1160
+    },
+    {
+      "id": "rus-7a16e412",
+      "frequencyRank": 1161
+    },
+    {
+      "id": "rus-2b675cce",
+      "frequencyRank": 1164
+    },
+    {
+      "id": "rus-938dd392",
+      "frequencyRank": 1168
+    },
+    {
+      "id": "rus-0bb7d6d0",
+      "frequencyRank": 1169
+    },
+    {
+      "id": "rus-1c72e911",
+      "frequencyRank": 1170
+    },
+    {
+      "id": "rus-7d32fbd6",
+      "frequencyRank": 1172
+    },
+    {
+      "id": "rus-e987f3b3",
+      "frequencyRank": 1173
+    },
+    {
+      "id": "rus-6bca6dee",
+      "frequencyRank": 1175
+    },
+    {
+      "id": "rus-0572e55c",
+      "frequencyRank": 1177
+    },
+    {
+      "id": "rus-69411547",
+      "frequencyRank": 1179
+    },
+    {
+      "id": "rus-4dcc764d",
+      "frequencyRank": 1180
+    },
+    {
+      "id": "rus-672e181b",
+      "frequencyRank": 1181
+    },
+    {
+      "id": "rus-f97316e3",
+      "frequencyRank": 1182
+    },
+    {
+      "id": "rus-57617c6a",
+      "frequencyRank": 1183
+    },
+    {
+      "id": "rus-8cb79553",
+      "frequencyRank": 1184
+    },
+    {
+      "id": "rus-683d5a19",
+      "frequencyRank": 1185
+    },
+    {
+      "id": "rus-b567fda2",
+      "frequencyRank": 1186
+    },
+    {
+      "id": "rus-54cbf013",
+      "frequencyRank": 1187
+    },
+    {
+      "id": "rus-fabe478d",
+      "frequencyRank": 1188
+    },
+    {
+      "id": "rus-9651d7de",
+      "frequencyRank": 1192
+    },
+    {
+      "id": "rus-c656a09b",
+      "frequencyRank": 1193
+    },
+    {
+      "id": "rus-501205fc",
+      "frequencyRank": 1194
+    },
+    {
+      "id": "rus-f1834506",
+      "frequencyRank": 1195
+    },
+    {
+      "id": "rus-fcd2b870",
+      "frequencyRank": 1196
+    },
+    {
+      "id": "rus-8e9df4ef",
+      "frequencyRank": 1201
+    },
+    {
+      "id": "rus-4f6e7e76",
+      "frequencyRank": 1202
+    },
+    {
+      "id": "rus-50d4da63",
+      "frequencyRank": 1203
+    },
+    {
+      "id": "rus-89d47585",
+      "frequencyRank": 1204
+    },
+    {
+      "id": "rus-1cba3688",
+      "frequencyRank": 1206
+    },
+    {
+      "id": "rus-9fae96df",
+      "frequencyRank": 1208
+    },
+    {
+      "id": "rus-75b4bd22",
+      "frequencyRank": 1209
+    },
+    {
+      "id": "rus-adadde26",
+      "frequencyRank": 1210
+    },
+    {
+      "id": "rus-3ced9bff",
+      "frequencyRank": 1212
+    },
+    {
+      "id": "rus-796a3e36",
+      "frequencyRank": 1213
+    },
+    {
+      "id": "rus-ef2b680c",
+      "frequencyRank": 1215
+    },
+    {
+      "id": "rus-026a4b35",
+      "frequencyRank": 1216
+    },
+    {
+      "id": "rus-82017bf5",
+      "frequencyRank": 1217
+    },
+    {
+      "id": "rus-3bcae714",
+      "frequencyRank": 1218
+    },
+    {
+      "id": "rus-e024209d",
+      "frequencyRank": 1219
+    },
+    {
+      "id": "rus-18c7e594",
+      "frequencyRank": 1223
+    },
+    {
+      "id": "rus-a9a5f41e",
+      "frequencyRank": 1224
+    },
+    {
+      "id": "rus-a654e47d",
+      "frequencyRank": 1226
+    },
+    {
+      "id": "rus-0b3fc5b7",
+      "frequencyRank": 1227
+    },
+    {
+      "id": "rus-3502d0d5",
+      "frequencyRank": 1228
+    },
+    {
+      "id": "rus-7cfe8680",
+      "frequencyRank": 1229
+    },
+    {
+      "id": "rus-7f48e103",
+      "frequencyRank": 1230
+    },
+    {
+      "id": "rus-c2e057b4",
+      "frequencyRank": 1231
+    },
+    {
+      "id": "rus-fe777a97",
+      "frequencyRank": 1232
+    },
+    {
+      "id": "rus-e9b53805",
+      "frequencyRank": 1233
+    },
+    {
+      "id": "rus-86523de7",
+      "frequencyRank": 1234
+    },
+    {
+      "id": "rus-91efff2f",
+      "frequencyRank": 1235
+    },
+    {
+      "id": "rus-1c65e8e7",
+      "frequencyRank": 1237
+    },
+    {
+      "id": "rus-93f04977",
+      "frequencyRank": 1238
+    },
+    {
+      "id": "rus-d76e19be",
+      "frequencyRank": 1240
+    },
+    {
+      "id": "rus-94ad8254",
+      "frequencyRank": 1243
+    },
+    {
+      "id": "rus-570d5ce9",
+      "frequencyRank": 1244
+    },
+    {
+      "id": "rus-1305e75a",
+      "frequencyRank": 1245
+    },
+    {
+      "id": "rus-b7eedd18",
+      "frequencyRank": 1247
+    },
+    {
+      "id": "rus-09a5af65",
+      "frequencyRank": 1249
+    },
+    {
+      "id": "rus-c84ee7be",
+      "frequencyRank": 1250
+    },
+    {
+      "id": "rus-92703f94",
+      "frequencyRank": 1251
+    },
+    {
+      "id": "rus-fb98bdee",
+      "frequencyRank": 1252
+    },
+    {
+      "id": "rus-551cda3e",
+      "frequencyRank": 1253
+    },
+    {
+      "id": "rus-a5d0e650",
+      "frequencyRank": 1254
+    },
+    {
+      "id": "rus-1b29a812",
+      "frequencyRank": 1255
+    },
+    {
+      "id": "rus-c43f4a7d",
+      "frequencyRank": 1256
+    },
+    {
+      "id": "rus-d7de0e4e",
+      "frequencyRank": 1257
+    },
+    {
+      "id": "rus-eb3aaa3e",
+      "frequencyRank": 1258
+    },
+    {
+      "id": "rus-b4ed64ad",
+      "frequencyRank": 1259
+    }
+  ],
+  "lessonMappings": "not supplied",
+  "bulkHost": "packs.shtooka.net unavailable (dns); swac-collections.org unavailable (tls); upload.wikimedia.org attempted; fsi-languages.yojik.eu attempted"
+}
