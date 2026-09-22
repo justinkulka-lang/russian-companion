@@ -104,11 +104,11 @@ The diagram is navigational only and does not prescribe implementation.
 
 ### 4.3 Home
 
-**Purpose:** Give immediate access to today's required work and the four primary areas without a separate setup guide. *(Trace: MA-003, MA-043–MA-049; Product Brief §§2, 3, 10)*
+**Purpose:** Give immediate access to today's required work and the four primary areas without a separate setup guide. *(Trace: MA-003, MA-043–MA-049, MA-124–MA-137, MA-146–MA-161; Product Brief §§2, 3, 10, 12)*
 
-**Contents:** Current lesson; today's completion summary; next incomplete required activity; gate status summary; recent progress summary labeled as activity; entry points for Today's Plan, Practice, Gates, Progress, and Attributions & Licenses; Optional Drills entry only when admitted content is installed.
+**Contents:** Current lesson; a prominent Continue card showing lesson number, next unfinished required activity, completed versus total required activities, and a single Continue action; gate status summary; recent progress summary labeled as activity; compact backup status; compact data and storage health; compact seven-day and thirty-day factual study-balance views; appearance control limited to Dark and Follow system; entry points for Today's Plan, Practice, Gates, Progress, and Attributions & Licenses; Optional Drills entry only when admitted content is installed.
 
-**Primary action:** Begin or resume the next incomplete item in Today's Plan.
+**Primary action:** Continue to the exact destination of the next unfinished required activity, or to the applicable gate, progress, or lesson-start state.
 
 **Secondary navigation:** Open any top-level area.
 
@@ -161,9 +161,9 @@ The diagram is navigational only and does not prescribe implementation.
 
 ### 4.6 Practice Session
 
-**Purpose:** Let the user hear a licensed native model, record an imitation locally, replay both, mark the recording for tutor review, and record completion without evaluation. *(Trace: MA-050–MA-055; Product Brief §§3.2, 8.3)*
+**Purpose:** Let the user hear a licensed native model, record an imitation locally, replay both, mark the recording for tutor review, and record completion without evaluation. *(Trace: MA-050–MA-055, MA-138–MA-145, MA-158–MA-161; Product Brief §§3.2, 8.3, 12.3)*
 
-**Contents:** Verified source-supplied stress-marked text; native-model playback controls; local recording control; separate replay controls for model and user recording; “Mark for tutor review” control; completion state; source and license link; explicit “No pronunciation score is provided” statement.
+**Contents:** Verified source-supplied stress-marked text; native-model playback at 0.75× or 1.0×; local recording control; separate replay of the user recording at 1.0×; automatic model-then-user A/B playback; repeat A/B loop and stop-loop; replace-current-take; clear tutor-review mark; completion state; source and license link; explicit “No pronunciation score is provided” statement. Controls remain distinguishable without color.
 
 **Primary action:** Complete the sequence of model playback, user recording, and A/B replay.
 
@@ -223,9 +223,9 @@ Optional-drill results never appear as eligible evidence.
 
 ### 4.9 Progress
 
-**Purpose:** Review accumulated work and skill balance without inferring proficiency. *(Trace: MA-068–MA-071, MA-101–MA-109; Product Brief §§3.4, 10)*
+**Purpose:** Review accumulated work and skill balance without inferring proficiency. *(Trace: MA-068–MA-071, MA-101–MA-109, MA-146–MA-157; Product Brief §§3.4, 10, 12.4–12.6)*
 
-**Contents:** Cumulative time and completion; category totals for reading, listening, vocabulary/forms, grammar, speaking/pronunciation, writing, and tutor work; visible comparison of activity categories; recent logs; explicit label that the view measures recorded activity, not certified ability.
+**Contents:** Cumulative time and completion; category totals for reading, listening, vocabulary/forms, grammar, speaking/pronunciation, writing, and tutor work; compact seven-day and thirty-day factual category views; backup status from local export records; data and storage health; recent logs; explicit label that the view measures recorded activity, not certified ability.
 
 **Primary action:** Open Log Activity.
 
@@ -334,4 +334,4 @@ The app exposes no sign-in, networking, streaming, cloud synchronization, AnkiDr
 
 ## 7. Conformance Confirmation
 
-This Functional Design introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`.
+This Functional Design introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`. v1.1 Home, Practice Session, and Progress additions remain subordinate to the four primary capabilities.

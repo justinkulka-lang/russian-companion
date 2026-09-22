@@ -6,7 +6,7 @@
 
 ## 1. Architecture Scope and Principles
 
-The app is a native Android application implemented with Kotlin and Jetpack Compose. It uses a layered presentation/domain/data structure, Navigation Compose, Room for structured local data, DataStore for lightweight local state, packaged assets and a seeded local database for bundled content, Gradle for builds, Git/GitHub for version control, and GitHub Actions for continuous integration. These choices are subordinate to the required outcomes and introduce no additional user capability. *(Trace: MA-001–MA-008, MA-117; Product Brief §§1–4, 11)*
+The app is a native Android application implemented with Kotlin and Jetpack Compose. It uses a layered presentation/domain/data structure, Navigation Compose, Room for structured local data, DataStore for lightweight local state including the Dark/Follow-system appearance preference, packaged assets and a seeded local database for bundled content, Gradle for builds, Git/GitHub for version control, and GitHub Actions for continuous integration. These choices are subordinate to the required outcomes and introduce no additional user capability. v1.1 does not add a fifth primary capability. *(Trace: MA-001–MA-008, MA-117, MA-124–MA-128, MA-162; Product Brief §§1–4, 11, 12)*
 
 The governing architectural principles are:
 
@@ -121,11 +121,11 @@ At first use and compatible upgrades, the app establishes the bundled content lo
 
 ### 6.1 Native-model playback
 
-Native-model audio is packaged inside the installed application and played only from its local asset. Playback resolves the matching `SourceText` and `AssetRightsRecord` before the model is eligible to appear. No streaming fallback exists. *(Trace: MA-014, MA-018, MA-036–MA-038, MA-050–MA-051; Product Brief §§3.2, 5–7)*
+Native-model audio is packaged inside the installed application and played only from its local asset. Playback resolves the matching `SourceText` and `AssetRightsRecord` before the model is eligible to appear. No streaming fallback exists. Model speed is limited to 0.75× and 1.0× and is applied only at playback time; the packaged file is not rewritten. Automatic A/B playback plays the model and then the user recording; looping and A/B stop on backgrounding, navigation away, audio-focus loss, or error. *(Trace: MA-014, MA-018, MA-036–MA-038, MA-050–MA-051, MA-138–MA-142; Product Brief §§3.2, 5–7, 12.3)*
 
 ### 6.2 User recording
 
-Microphone input is captured as a local audio file in app-private storage. `RecordingRecord` holds the model association and tutor-review mark separately from the bytes. Recording processing is limited to capture, storage, and playback; it performs no transcription, ASR, pronunciation scoring, or linguistic analysis. *(Trace: MA-024–MA-027, MA-052–MA-055; Product Brief §§3.2, 4, 8.3)*
+Microphone input is captured as a local audio file in app-private storage. `RecordingRecord` holds the model association and tutor-review mark separately from the bytes. Recording processing is limited to capture, storage, playback, replace-current-take, and clear tutor-review mark; it performs no transcription, ASR, pronunciation scoring, or linguistic analysis. User recordings always replay at 1.0×. *(Trace: MA-024–MA-027, MA-052–MA-055, MA-140, MA-143–MA-145; Product Brief §§3.2, 4, 8.3, 12.3)*
 
 User recordings remain available across app restart and device reboot as long as the app's local data remains intact. A recording becomes externally portable only through the governed local export. *(Trace: MA-072–MA-079; Product Brief §§3.4, 10)*
 
@@ -145,7 +145,7 @@ Book and AnkiDroid evidence types carry a mandatory self-attested classification
 
 ## 9. Progress Architecture
 
-Progress is calculated solely from the user's local activity records across the eight governed categories. Aggregation produces totals and category comparisons, not proficiency labels, predictions, ranks, or ability scores. *(Trace: MA-068–MA-071, MA-101–MA-109; Product Brief §§3.4, 4, 10)*
+Progress is calculated solely from the user's local activity records across the governed categories. Aggregation produces totals, category comparisons, and factual seven-day and thirty-day windows, not proficiency labels, predictions, ranks, or ability scores. Negative stored durations hide totals and balance conclusions. Backup status and data/storage health are derived from existing local export records, Room readability, packaged metadata, and local file-size checks on a background dispatcher. *(Trace: MA-068–MA-071, MA-101–MA-109, MA-146–MA-157; Product Brief §§3.4, 4, 10, 12.4–12.6)*
 
 If a materialized progress snapshot is used, it remains traceable to its source logs and can be rebuilt locally. The authorities do not require a snapshot, so recomputation from logs is the minimal acceptable alternative. This is an explicit minimal choice where the governing documents are silent.
 
@@ -218,4 +218,4 @@ These checks enforce already-governed outcomes and do not add capabilities. *(Tr
 
 ## 16. Conformance Confirmation
 
-This Technical Architecture introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`.
+This Technical Architecture introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`. v1.1 appearance, Continue, A/B, backup, health, and balance additions remain subordinate to the four primary capabilities and do not alter the frozen 1.0.0 candidate identity.
