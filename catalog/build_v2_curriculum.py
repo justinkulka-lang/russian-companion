@@ -221,7 +221,25 @@ def session(session_id: str, title: str, objective_ids: list[str], steps: list[d
     }
 
 
-def reference(entry_id: str, title: str, summary: str, detail: str, unit: int, review: str = "PENDING_QUALIFIED_REVIEW") -> dict:
+REFERENCE_CLASSIFICATIONS = {
+    "LINGUISTIC_INSTRUCTION",
+    "PRODUCT_HELP",
+    "LICENSE_OR_ATTRIBUTION",
+    "OPERATIONAL_GUIDANCE",
+}
+
+
+def reference(
+    entry_id: str,
+    title: str,
+    summary: str,
+    detail: str,
+    unit: int,
+    classification: str,
+    review: str = "PENDING_QUALIFIED_REVIEW",
+) -> dict:
+    if classification not in REFERENCE_CLASSIFICATIONS:
+        raise ValueError(f"{entry_id} has unknown classification {classification}")
     return {
         "id": entry_id,
         "title": title,
@@ -229,6 +247,7 @@ def reference(entry_id: str, title: str, summary: str, detail: str, unit: int, r
         "detail": detail,
         "introducedInUnit": unit,
         "sourceId": SOURCE_ENGLISH["id"],
+        "classification": classification,
         "reviewStatus": review,
         "searchTerms": [title.lower()],
     }
@@ -1028,6 +1047,7 @@ def build() -> dict:
             "33 printed uppercase/lowercase pairs.",
             "Use the letter board grouped by the Unit 1 sequence. English sound notes are pending review. No example words are attached.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-confusable",
@@ -1035,6 +1055,7 @@ def build() -> dict:
             "В Н Р С У Х can be misread by Latin-alphabet readers.",
             "Name the Cyrillic identity. Confirm sounds in your book.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-iotated",
@@ -1042,6 +1063,7 @@ def build() -> dict:
             "Е Ё Ю Я are a recognition group in Unit 1.",
             "Detailed phonetics remain in the book until a reviewer signs an app note.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-signs",
@@ -1049,6 +1071,7 @@ def build() -> dict:
             "Ь and Ъ are signs. Й is not a standalone vowel in this foundation.",
             "Do not invent a spoken vowel for the signs. Use the book for the exact rule.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-transliteration",
@@ -1056,6 +1079,7 @@ def build() -> dict:
             "Latin respelling may help the first hours. It is not how you should keep reading.",
             "Turn transliteration off in settings as soon as print recognition is stable.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-decoding",
@@ -1063,6 +1087,7 @@ def build() -> dict:
             "This pack decodes letters and print pairs only.",
             "Word, phrase, and sign reading wait for reviewed examples.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-stress",
@@ -1070,6 +1095,7 @@ def build() -> dict:
             "Stress is part of Russian reading and is not guessed by the app.",
             "Copy stress marks from your book into your binder.",
             1,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-pronunciation",
@@ -1077,6 +1103,7 @@ def build() -> dict:
             "Model audio is used only when a file is licensed and mapped to the current objective.",
             "User recordings play at original speed. No ASR or score.",
             2,
+            "LINGUISTIC_INSTRUCTION",
         ),
         reference(
             "ref-study",
@@ -1084,6 +1111,7 @@ def build() -> dict:
             "The app coordinates the book, optional AnkiDroid, a binder, and optional tutor work.",
             "It does not reproduce Penguin, judge spontaneous speech, or certify proficiency.",
             1,
+            "PRODUCT_HELP",
             "NOT_REQUIRED",
         ),
         reference(
@@ -1092,6 +1120,7 @@ def build() -> dict:
             "Offline only. No internet, no account, no AI, no cloud.",
             "Unrelated catalog audio is not assigned to Units 1–2. The app does not score handwriting or pronunciation. Handwriting study uses your book until verified images exist. Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar. Public release stays blocked until review and device evidence exist.",
             1,
+            "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
         ),
     ]

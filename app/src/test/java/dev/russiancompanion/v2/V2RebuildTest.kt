@@ -65,6 +65,12 @@ class V2RebuildTest {
         assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
+        assertTrue(pack.references.all { it.classification.isNotBlank() })
+        assertEquals("LINGUISTIC_INSTRUCTION", pack.references.first { it.id == "ref-stress" }.classification)
+        assertEquals("PRODUCT_HELP", pack.references.first { it.id == "ref-study" }.classification)
+        assertEquals("OPERATIONAL_GUIDANCE", pack.references.first { it.id == "ref-limits" }.classification)
+        assertEquals("NOT_REQUIRED", pack.references.first { it.id == "ref-study" }.reviewStatus)
+        assertEquals("NOT_REQUIRED", pack.references.first { it.id == "ref-limits" }.reviewStatus)
         assertTrue(pack.units.none { unit ->
             unit.sessions.any { session -> session.steps.any { it.itemIds.isNotEmpty() && it.body.contains("The New Penguin Russian Course") && it.body.contains("exercise") } }
         })
@@ -150,6 +156,95 @@ class V2RebuildTest {
         assertTrue(
             referenceResult.errors.any {
                 it.contains("Reference ref-confusable") && it.contains("cannot be NOT_REQUIRED")
+            },
+        )
+    }
+
+    @Test
+    fun linguisticReferencesCannotUseNotRequired() {
+        val approved = approveInstruction(installedUnitOne(pack()))
+        listOf(
+            "ref-stress",
+            "ref-pronunciation",
+            "ref-transliteration",
+            "ref-decoding",
+            "ref-cyrillic-print",
+        ).forEach { id ->
+            val reference = approved.references.first { it.id == id }
+            assertEquals("LINGUISTIC_INSTRUCTION", reference.classification)
+            val mutated = withReachableReferences(
+                approved.copy(
+                    references = approved.references.map { entry ->
+                        if (entry.id == id) entry.copy(reviewStatus = "NOT_REQUIRED") else entry
+                    },
+                ),
+                1,
+                listOf(id),
+            )
+            val result = V2Validator.validate(mutated)
+            assertTrue(
+                result.errors.joinToString(),
+                result.errors.any { it.contains("Reference $id") && it.contains("cannot be NOT_REQUIRED") },
+            )
+        }
+    }
+
+    @Test
+    fun productHelpAndOperationalGuidanceMayUseNotRequired() {
+        val approved = approveInstruction(installedUnitOne(pack()))
+        val license = approved.references.first { it.id == "ref-limits" }.copy(
+            id = "ref-attributions",
+            title = "Bundled component notices",
+            summary = "License names for components shipped with the app.",
+            detail = "This note identifies licenses. It does not teach Russian.",
+            classification = "LICENSE_OR_ATTRIBUTION",
+            reviewStatus = "NOT_REQUIRED",
+            searchTerms = listOf("licenses"),
+        )
+        val reachable = rebindReview(
+            withReachableReferences(
+                approved.copy(references = approved.references + license),
+                1,
+                listOf("ref-study", "ref-limits", "ref-attributions"),
+            ),
+        )
+        val result = V2Validator.validate(reachable)
+        listOf("ref-study" to "PRODUCT_HELP", "ref-limits" to "OPERATIONAL_GUIDANCE", "ref-attributions" to "LICENSE_OR_ATTRIBUTION")
+            .forEach { (id, classification) ->
+                val entry = reachable.references.first { it.id == id }
+                assertEquals(classification, entry.classification)
+                assertEquals("NOT_REQUIRED", entry.reviewStatus)
+                assertTrue(
+                    result.errors.joinToString(),
+                    result.errors.none { it.contains(id) },
+                )
+            }
+    }
+
+    @Test
+    fun referencesRejectMissingAndUnknownClassifications() {
+        val source = pack()
+        val missing = source.copy(
+            references = source.references.map { entry ->
+                if (entry.id == "ref-stress") entry.copy(classification = "") else entry
+            },
+        )
+        val missingResult = V2Validator.validate(missing)
+        assertTrue(
+            missingResult.errors.any {
+                it.contains("Reference ref-stress") && it.contains("missing a classification")
+            },
+        )
+
+        val unknown = source.copy(
+            references = source.references.map { entry ->
+                if (entry.id == "ref-decoding") entry.copy(classification = "SIGNED_OFF") else entry
+            },
+        )
+        val unknownResult = V2Validator.validate(unknown)
+        assertTrue(
+            unknownResult.errors.any {
+                it.contains("Reference ref-decoding") && it.contains("unknown classification")
             },
         )
     }
@@ -397,14 +492,49 @@ class V2RebuildTest {
             examples = source.examples.map { it.copy(reviewStatus = "APPROVED") },
             letters = source.letters.map { it.copy(reviewStatus = "APPROVED") },
             references = source.references.map { reference ->
-                val linguistic = containsCyrillic(reference.title) ||
-                    containsCyrillic(reference.summary) ||
-                    containsCyrillic(reference.detail) ||
-                    reference.searchTerms.any(::containsCyrillic)
-                when {
-                    linguistic -> reference.copy(reviewStatus = "APPROVED")
-                    reference.reviewStatus == "NOT_REQUIRED" -> reference
-                    else -> reference.copy(reviewStatus = "APPROVED")
+                if (reference.classification == "LINGUISTIC_INSTRUCTION") {
+                    reference.copy(reviewStatus = "APPROVED")
+                } else if (reference.reviewStatus == "NOT_REQUIRED") {
+                    reference
+                } else {
+                    reference.copy(reviewStatus = "APPROVED")
+                }
+            },
+        )
+    }
+
+    private fun rebindReview(
+        source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+        val digest = V2Validator.instructionalContentDigest(source)
+        return source.copy(
+            linguisticReview = source.linguisticReview.copy(
+                status = "APPROVED",
+                reviewer = "Qualified Reviewer",
+                packVersion = source.packVersion,
+                reviewedContentDigest = digest,
+                curriculumMappingId = "map-owned-edition",
+            ),
+        )
+    }
+
+    private fun withReachableReferences(
+        source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+        unitNumber: Int,
+        referenceIds: List<String>,
+    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+        return source.copy(
+            units = source.units.map { unit ->
+                if (unit.number != unitNumber || unit.sessions.isEmpty()) {
+                    unit
+                } else {
+                    val session = unit.sessions.first()
+                    val step = session.steps.first()
+                    val updated = step.copy(referenceIds = (step.referenceIds + referenceIds).distinct())
+                    unit.copy(
+                        sessions = listOf(session.copy(steps = listOf(updated) + session.steps.drop(1))) +
+                            unit.sessions.drop(1),
+                    )
                 }
             },
         )
@@ -416,8 +546,6 @@ class V2RebuildTest {
 
     private fun repo(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 }
-
-private fun containsCyrillic(text: String): Boolean = text.any { it.code in 0x0400..0x04FF }
 
 private fun dev.russiancompanion.v2.curriculum.V2CheckItem.isGovernance(): Boolean {
     return dev.russiancompanion.v2.curriculum.GOVERNANCE_PROMPT_MARKERS.any { marker ->

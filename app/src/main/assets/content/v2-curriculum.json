@@ -1054,6 +1054,7 @@
       "detail": "Use the letter board grouped by the Unit 1 sequence. English sound notes are pending review. No example words are attached.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "cyrillic print forms"
@@ -1066,6 +1067,7 @@
       "detail": "Name the Cyrillic identity. Confirm sounds in your book.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "confusable latin look-alikes"
@@ -1078,6 +1080,7 @@
       "detail": "Detailed phonetics remain in the book until a reviewer signs an app note.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "iotated vowel letters"
@@ -1090,6 +1093,7 @@
       "detail": "Do not invent a spoken vowel for the signs. Use the book for the exact rule.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "soft sign, hard sign, and й"
@@ -1102,6 +1106,7 @@
       "detail": "Turn transliteration off in settings as soon as print recognition is stable.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "transliteration is temporary"
@@ -1114,6 +1119,7 @@
       "detail": "Word, phrase, and sign reading wait for reviewed examples.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "staged decoding limits"
@@ -1126,6 +1132,7 @@
       "detail": "Copy stress marks from your book into your binder.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "stress notation"
@@ -1138,6 +1145,7 @@
       "detail": "User recordings play at original speed. No ASR or score.",
       "introducedInUnit": 2,
       "sourceId": "src-app-english-v2",
+      "classification": "LINGUISTIC_INSTRUCTION",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "searchTerms": [
         "pronunciation guidance"
@@ -1150,6 +1158,7 @@
       "detail": "It does not reproduce Penguin, judge spontaneous speech, or certify proficiency.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "PRODUCT_HELP",
       "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "how to use this companion"
@@ -1162,6 +1171,7 @@
       "detail": "Unrelated catalog audio is not assigned to Units 1–2. The app does not score handwriting or pronunciation. Handwriting study uses your book until verified images exist. Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar. Public release stays blocked until review and device evidence exist.",
       "introducedInUnit": 1,
       "sourceId": "src-app-english-v2",
+      "classification": "OPERATIONAL_GUIDANCE",
       "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "app limitations"

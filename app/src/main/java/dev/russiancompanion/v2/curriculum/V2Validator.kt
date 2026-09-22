@@ -45,6 +45,7 @@ internal object V2Validator {
             if (entry.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Reference ${entry.id} has unrecognized review status ${entry.reviewStatus}"
             }
+            validateReferenceClassification(entry, errors)
             if (pack.sources.none { it.id == entry.sourceId }) {
                 errors += "Reference ${entry.id} source ${entry.sourceId} is missing"
             }
@@ -72,6 +73,10 @@ internal object V2Validator {
                 append(item.prompt)
                 append(item.answer)
                 append(item.objectiveId)
+            }
+            pack.references.forEach { reference ->
+                append(reference.id)
+                append(reference.classification)
             }
             pack.units.forEach { unit ->
                 append(unit.number)
@@ -191,17 +196,32 @@ internal object V2Validator {
         }
         referenceIds.forEach { id ->
             val reference = pack.reference(id) ?: return@forEach
-            val linguistic = containsCyrillic(reference.title) ||
-                containsCyrillic(reference.summary) ||
-                containsCyrillic(reference.detail) ||
-                reference.searchTerms.any(::containsCyrillic)
+            if (!validateReferenceClassification(reference, errors)) return@forEach
             requireInstalledReview(
                 reference.reviewStatus,
-                allowNotRequired = !linguistic,
+                allowNotRequired = reference.classification in NON_LINGUISTIC_REFERENCE_CLASSIFICATIONS,
                 "Reference $id",
                 errors,
             )
         }
+    }
+
+    private fun validateReferenceClassification(entry: V2ReferenceEntry, errors: MutableList<String>): Boolean {
+        if (entry.classification.isBlank()) {
+            errors += "Reference ${entry.id} is missing a classification"
+            return false
+        }
+        if (entry.classification !in CLOSED_REFERENCE_CLASSIFICATIONS) {
+            errors += "Reference ${entry.id} has unknown classification ${entry.classification}"
+            return false
+        }
+        if (entry.reviewStatus == "NOT_REQUIRED" &&
+            entry.classification !in NON_LINGUISTIC_REFERENCE_CLASSIFICATIONS
+        ) {
+            errors += "Reference ${entry.id} is linguistically relevant and cannot be NOT_REQUIRED"
+            return false
+        }
+        return true
     }
 
     private fun requireInstalledReview(
@@ -222,10 +242,6 @@ internal object V2Validator {
             }
             else -> errors += "$label has unrecognized review status $status"
         }
-    }
-
-    private fun containsCyrillic(text: String): Boolean {
-        return text.any { it.code in 0x0400..0x04FF }
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {

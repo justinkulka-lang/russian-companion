@@ -22,6 +22,17 @@ internal val CLOSED_ITEM_KINDS = setOf(
     "SIGN",
 )
 
+internal val LINGUISTIC_REFERENCE_CLASSIFICATION = "LINGUISTIC_INSTRUCTION"
+
+internal val CLOSED_REFERENCE_CLASSIFICATIONS = setOf(
+    LINGUISTIC_REFERENCE_CLASSIFICATION,
+    "PRODUCT_HELP",
+    "LICENSE_OR_ATTRIBUTION",
+    "OPERATIONAL_GUIDANCE",
+)
+
+internal val NON_LINGUISTIC_REFERENCE_CLASSIFICATIONS = CLOSED_REFERENCE_CLASSIFICATIONS - LINGUISTIC_REFERENCE_CLASSIFICATION
+
 internal val GOVERNANCE_PROMPT_MARKERS = listOf(
     "catalog audio",
     "unrelated catalog",
@@ -133,6 +144,7 @@ internal data class V2ReferenceEntry(
     val introducedInUnit: Int,
     val sourceId: String,
     val reviewStatus: String,
+    val classification: String = "",
     val searchTerms: List<String> = emptyList(),
 )
 
