@@ -4,10 +4,11 @@
 Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
-Unit 1 is the installed printed-letter unit. It does not claim qualified
-review, example words, or model audio. Unit 2 stays DEVELOPMENT until
-handwriting assets and mapped audio exist. Advancement checks are letter
-identities, print pairs, confusable forms, and signs — never product-policy quizzes.
+Unit 1 is a content-complete DEVELOPMENT unit awaiting qualified review
+and an owned-edition mapping. It is not INSTALLED. Unit 2 stays
+DEVELOPMENT until handwriting assets and mapped audio exist. Advancement
+checks are letter identities, print pairs, confusable forms, and signs —
+never product-policy quizzes.
 """
 
 from __future__ import annotations
@@ -558,7 +559,7 @@ def build() -> dict:
                     "u1-st-orient",
                     "ORIENT",
                     "Unit 1 — Printed letters",
-                    "You are at Penguin-aligned Unit 1. This installed unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit.",
+                    "This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Qualified review is still pending.",
                     bookDirection="Open your copy to Lesson 1. Use the book for the author's explanations, exercises, and any example words.",
                 ),
                 step(
@@ -912,7 +913,7 @@ def build() -> dict:
                     "u2-st-orient",
                     "ORIENT",
                     "Unit 2 — Book handwriting and letter review",
-                    "Penguin-aligned Unit 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
+                    "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
                     bookDirection="Open Lesson 2 in your copy for handwritten forms and the author's pronunciation notes.",
                 ),
             ],
@@ -1273,6 +1274,7 @@ def build() -> dict:
         sessions: list,
         prereq: list[int],
         install_state: str = "DEVELOPMENT",
+        readiness: str = "NOT_PREPARED",
         mapping_note: str = "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
     ) -> dict:
         return {
@@ -1282,6 +1284,7 @@ def build() -> dict:
             "shortLabel": short,
             "topicSummary": summary,
             "installState": install_state,
+            "readiness": readiness,
             "penguinLesson": number,
             "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
             "mappingNote": mapping_note,
@@ -1304,11 +1307,11 @@ def build() -> dict:
             1,
             "Learning to read Russian",
             "Printed letters",
-            "Installed printed-letter unit: identities, print pairs, look-alikes, signs, and letter-level decoding. Example words and model audio are not part of this unit.",
+            "Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending.",
             unit1_sessions,
             [],
-            install_state="INSTALLED",
-            mapping_note="Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. The installed body is printed-letter literacy only.",
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
         ),
         development_unit(
             2,
@@ -1328,6 +1331,7 @@ def build() -> dict:
                 "shortLabel": short,
                 "topicSummary": title,
                 "installState": "NOT_YET_INSTALLED",
+                "readiness": "NOT_PREPARED",
                 "penguinLesson": number,
                 "mappingStatus": "NOT_STARTED",
                 "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",

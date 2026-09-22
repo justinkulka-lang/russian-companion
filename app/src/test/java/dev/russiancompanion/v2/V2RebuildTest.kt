@@ -56,9 +56,14 @@ class V2RebuildTest {
         val validation = V2Validator.validate(pack)
         assertTrue(validation.errors.joinToString(), validation.ok)
         assertEquals(30, pack.units.size)
-        assertEquals("INSTALLED", pack.unit(1)?.installState)
+        assertEquals("DEVELOPMENT", pack.unit(1)?.installState)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)?.readiness)
         assertEquals("DEVELOPMENT", pack.unit(2)?.installState)
+        assertEquals("NOT_PREPARED", pack.unit(2)?.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(1)?.mappingStatus)
+        val unit1Text = pack.unit(1)!!.topicSummary + pack.unit(1)!!.sessions.flatMap { it.steps }.joinToString(" ") { it.body }
+        assertFalse(unit1Text.contains("Penguin-aligned"))
+        assertFalse(unit1Text.contains("This installed unit"))
         assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
         assertTrue(pack.unit(1)!!.sessions.none { session -> session.steps.any { it.kind == "LISTEN" } })
         assertEquals(0, pack.admissions.mappedPronunciationAudio)
@@ -109,19 +114,19 @@ class V2RebuildTest {
         assertFalse(unknownResult.ok)
         assertTrue(unknownResult.errors.any { it.contains("Unrecognized linguistic review status") })
 
-        val prepared = approveInstruction(
-            pack.copy(
-                units = pack.units.map { unit ->
-                    if (unit.number == 1) unit.copy(mappingStatus = "APPROVED") else unit
-                },
-            ),
-        )
-        val digest = V2Validator.instructionalContentDigest(prepared)
-        val complete = prepared.copy(
-            linguisticReview = prepared.linguisticReview.copy(
+        val digest = V2Validator.instructionalContentDigest(pack)
+        val complete = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
+                    unit.copy(readiness = "REVIEW_APPROVED")
+                } else {
+                    unit
+                }
+            },
+            linguisticReview = pack.linguisticReview.copy(
                 status = "APPROVED",
                 reviewer = "Qualified Reviewer",
-                packVersion = prepared.packVersion,
+                packVersion = pack.packVersion,
                 reviewedContentDigest = digest,
                 curriculumMappingId = "map-owned-edition",
             ),
@@ -267,17 +272,38 @@ class V2RebuildTest {
     }
 
     @Test
-    fun unitOneStaysInstallableWhileReviewAndMappingRemainUnsigned() {
+    fun noUnitCanBeInstalledWithPendingReviewOrMapping() {
         val source = pack()
-        val result = V2Validator.validate(source)
-        assertTrue(result.errors.joinToString(), result.ok)
-        val signedMapping = source.copy(
+        listOf(1, 2).forEach { number ->
+            val installed = source.copy(
+                units = source.units.map { unit ->
+                    if (unit.number == number) {
+                        unit.copy(installState = "INSTALLED", readiness = "INSTALLABLE")
+                    } else {
+                        unit
+                    }
+                },
+            )
+            val result = V2Validator.validate(installed)
+            assertFalse(result.ok)
+            assertTrue(
+                result.errors.joinToString(),
+                result.errors.any { it.contains("Installed unit $number") && it.contains("APPROVED qualified-review record") },
+            )
+            assertTrue(
+                result.errors.joinToString(),
+                result.errors.any { it.contains("Installed unit $number") && it.contains("mapping must be APPROVED") },
+            )
+        }
+        val pendingReview = source.copy(
             units = source.units.map { unit ->
-                if (unit.number == 1) unit.copy(mappingStatus = "APPROVED") else unit
+                if (unit.number == 1) unit.copy(installState = "INSTALLED") else unit
             },
         )
-        val signed = V2Validator.validate(signedMapping)
-        assertTrue(signed.errors.any { it.contains("cannot be APPROVED before qualified review") })
+        val pendingResult = V2Validator.validate(pendingReview)
+        assertTrue(
+            pendingResult.errors.any { it.contains("Unit 1") && it.contains("cannot be INSTALLED while review is pending") },
+        )
     }
 
     @Test
@@ -500,7 +526,11 @@ class V2RebuildTest {
     private fun installedUnitOne(source: dev.russiancompanion.v2.curriculum.V2CurriculumPack): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
         val next = source.copy(
             units = source.units.map { unit ->
-                if (unit.number == 1) unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED") else unit
+                if (unit.number == 1) {
+                    unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED", readiness = "INSTALLABLE")
+                } else {
+                    unit
+                }
             },
         )
         val digest = V2Validator.instructionalContentDigest(next)

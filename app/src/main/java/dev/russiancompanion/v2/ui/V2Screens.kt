@@ -38,7 +38,7 @@ import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
-import dev.russiancompanion.v2.curriculum.openable
+import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -97,7 +97,7 @@ internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDr
         when (page) {
             0 -> {
                 Text(
-                    "Russian Companion is a fully offline course companion. It tells you the current Penguin-aligned unit, what to study in your own book, and what the app can practice with verified material.",
+                    "Russian Companion is a fully offline course companion. It tells you the current unit, what to study in your own book, and what the app can practice with verified material.",
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier.semantics { testTag = "v2-onboarding-welcome" },
                 )
@@ -247,7 +247,7 @@ internal fun V2CourseScreen(
     V2LazyScaffold(title = "Course", tab = V2Tab.COURSE, onTab = onTab) {
         item {
             Text(
-                "Thirty Penguin-aligned units. Development units are incomplete. Later units stay Not yet installed.",
+                "Thirty units in the proposed lesson order. Development units are incomplete. Later units stay Not yet installed.",
                 modifier = Modifier.padding(bottom = 12.dp).semantics { testTag = "v2-course-intro" },
             )
         }
@@ -306,8 +306,9 @@ internal fun V2UnitScreen(
             modifier = Modifier.semantics { testTag = "v2-unit-state" },
         )
         Text(installLabel(unit), modifier = Modifier.semantics { testTag = "v2-unit-install" })
-        if (unit.openable() && pack.linguisticReview.status != "APPROVED") {
-            Text("Qualified review pending", modifier = Modifier.semantics { testTag = "v2-review-pending" })
+        val readiness = readinessLabel(unit)
+        if (readiness.isNotEmpty()) {
+            Text(readiness, modifier = Modifier.semantics { testTag = "v2-readiness" })
         }
         if (state == V2UnitState.NOT_YET_INSTALLED) {
             Text("This unit is on the map so you can see the Penguin sequence. It has no lesson content, audio, or completion path.")
