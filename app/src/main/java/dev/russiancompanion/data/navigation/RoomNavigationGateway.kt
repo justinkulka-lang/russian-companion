@@ -28,6 +28,7 @@ import dev.russiancompanion.domain.navigation.AttributionOption
 import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.GateOption
 import dev.russiancompanion.domain.navigation.LessonOption
+import dev.russiancompanion.domain.navigation.LicenseNoticeOption
 import dev.russiancompanion.domain.navigation.NavigationGateway
 import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
@@ -60,6 +61,8 @@ internal class RoomNavigationGateway(
     private val store: LocalStore,
     private val readPackagedSeed: () -> String?,
     private val practiceAudio: PracticeAudio,
+    private val readCatalogNotice: () -> String? = { null },
+    private val readLicenseNotices: () -> List<LicenseNoticeOption> = { emptyList() },
     private val readRecordingBytes: (String) -> ByteArray? = { null },
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
@@ -166,6 +169,8 @@ internal class RoomNavigationGateway(
             },
             assetRecords = assetInventory(storedAudio, rightsById, rightsRecords),
             shareAlikeBlocksRelease = outcome?.shareAlikeBlocksRelease == true,
+            catalogNotice = readCatalogNotice().orEmpty(),
+            licenseNotices = readLicenseNotices(),
             dailyPlan = assembleDailyPlan(
                 definitions = segmentPlans.mapNotNull { plan ->
                     val activity = checklistActivity(plan.activityType) ?: return@mapNotNull null

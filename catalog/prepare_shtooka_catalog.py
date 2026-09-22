@@ -6,12 +6,15 @@ Does not invent spellings, stress marks, frequency ranks, or Penguin lesson
 mappings. The Lessons 1-30 conductor is merged from
 catalog/beginner_pathway.json and bound to already-packaged audio IDs in
 catalog order. Those bindings are catalog words, not book items.
+Share-alike confirmation stays UNCONFIRMED. Regeneration rewrites the
+compliance package and copies packaged license notices.
 """
 
 import os
 import csv
 import gzip
 import hashlib
+import importlib.util
 import json
 import re
 import subprocess
@@ -1482,6 +1485,11 @@ def main():
         "optionalDrills": [],
     }
     SEED.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    compliance_path = ROOT / "catalog" / "write_compliance_package.py"
+    spec = importlib.util.spec_from_file_location("write_compliance_package", compliance_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.write_compliance_artifacts(ROOT, document)
     intake_state = "INSTALLED_DROP" if proposals else "NOT_INSTALLED"
     INTAKE.write_text(
         json.dumps(

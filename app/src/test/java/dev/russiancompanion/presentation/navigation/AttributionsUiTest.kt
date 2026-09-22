@@ -18,6 +18,7 @@ import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.navigation.LicenseNoticeOption
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
@@ -63,12 +64,25 @@ class AttributionsUiTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
-        show(store, readSeed = { LocalStore.readPackagedSeed(context) })
+        show(
+            store,
+            readSeed = { LocalStore.readPackagedSeed(context) },
+            readCatalogNotice = { LocalStore.readPackagedCatalogNotice(context) },
+            readLicenseNotices = { LocalStore.readPackagedLicenseNotices(context) },
+        )
 
         click("Attributions and licenses")
         show("Public release is blocked until share-alike confirmation is recorded.")
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
+        compose.onNodeWithText("Catalog notice", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("This app does not own the packaged Russian audio or stress-marked text.", substring = true)
+            .performScrollTo()
+            .assertIsDisplayed()
+        compose.onNodeWithText("Packaged license texts", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("CC BY-SA 4.0", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("CC BY 3.0 US", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("CC BY 2.0 FR", substring = false).performScrollTo().assertIsDisplayed()
         val raw = checkNotNull(LocalStore.readPackagedSeed(context))
         val parsed = SeedJson.parse(raw)
         val source = (parsed as SeedParse.Ok).document.sourceRecords.first()
@@ -171,10 +185,21 @@ class AttributionsUiTest {
         click("Attributions and licenses")
     }
 
-    private fun show(store: LocalStore, readSeed: () -> String? = { null }) {
+    private fun show(
+        store: LocalStore,
+        readSeed: () -> String? = { null },
+        readCatalogNotice: () -> String? = { null },
+        readLicenseNotices: () -> List<LicenseNoticeOption> = { emptyList() },
+    ) {
         compose.setContent {
             CompanionApp(
-                gateway = RoomNavigationGateway(store, readSeed, PermissivePracticeAudio()),
+                gateway = RoomNavigationGateway(
+                    store,
+                    readSeed,
+                    PermissivePracticeAudio(),
+                    readCatalogNotice = readCatalogNotice,
+                    readLicenseNotices = readLicenseNotices,
+                ),
                 onRetryOpen = {},
                 today = { "2026-09-21" },
                 practiceAudio = PermissivePracticeAudio(),

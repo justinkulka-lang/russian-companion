@@ -34,6 +34,9 @@ internal enum class ReleaseBlocker(val message: String) {
     LICENSED_AUDIO_NOT_PREPARED("Required licensed native audio is not prepared."),
     RIGHTS_RECORDS_ABSENT("Required rights records are not installed."),
     SHARE_ALIKE_UNCONFIRMED("Public release is blocked until share-alike confirmation is recorded."),
+    SHARE_ALIKE_TREATMENT_INCONSISTENT("Share-alike treatment is missing or contradictory."),
+    LICENSE_NOTICES_NOT_PACKAGED("Required attribution or license notices are not packaged."),
+    COMPLIANCE_PACKAGE_UNREADABLE("The share-alike compliance package is absent or contradicts the packaged catalog."),
     EVIDENCE_MANIFEST_UNREADABLE("The retained-evidence manifest is absent or unreadable."),
     OFFLINE_VERIFICATION_NOT_RETAINED("AT-004 offline verification evidence is not retained."),
     REBOOT_EVIDENCE_NOT_RETAINED("AT-020 device reboot evidence is not retained."),
@@ -80,7 +83,10 @@ internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
     val manifestFile = File(repositoryRoot, RELEASE_EVIDENCE_MANIFEST)
     val seed = if (seedFile.isFile) seedFile.readText() else null
     val manifest = if (manifestFile.isFile) manifestFile.readText() else null
-    return assessPackagedRelease(seed, manifest, repositoryRoot)
+    val assessment = assessPackagedRelease(seed, manifest, repositoryRoot)
+    val blockers = assessment.blockers + packagedNoticeBlockers(repositoryRoot, seed)
+    val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
+    return ReleaseAssessment(decision, blockers)
 }
 
 internal fun assessPackagedRelease(
@@ -173,7 +179,108 @@ private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
     if (prepared.sources.any { it.shareAlikeConfirmation == ShareAlikeConfirmation.UNCONFIRMED }) {
         blockers += ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED
     }
+    if (prepared.sources.any { source ->
+            source.licenseName.contains("CC BY-SA") &&
+                source.shareAlikeTreatment != APPROVED_SHARE_ALIKE_TREATMENT
+        }
+    ) {
+        blockers += ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT
+    }
     return blockers
+}
+
+private const val APPROVED_SHARE_ALIKE_TREATMENT =
+    "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term."
+
+private const val COMPLIANCE_PACKAGE_PATH = "catalog/compliance/share-alike-package.json"
+
+private val requiredPackagedNoticePaths = listOf(
+    "app/src/main/assets/content/catalog-notice.txt",
+    "app/src/main/assets/licenses/cc-by-sa-4.0.txt",
+    "app/src/main/assets/licenses/cc-by-3.0-us.html",
+    "app/src/main/assets/licenses/cc-by-2.0-fr.html",
+    "app/src/main/assets/licenses/public-domain-notice.txt",
+    "app/src/main/assets/licenses/shtooka-readme-sakhno.txt",
+    "app/src/main/assets/licenses/shtooka-readme-streit.txt",
+    "catalog/compliance/CATALOG_NOTICE.md",
+    "catalog/compliance/PROPOSED_CONFIRMATION.md",
+)
+
+private val complianceJson = Json {
+    ignoreUnknownKeys = true
+    explicitNulls = true
+}
+
+@Serializable
+private data class CompliancePackageDocument(
+    val schemaVersion: Int,
+    val classification: String,
+    val shareAlikeConfirmationInSeed: String,
+    val proposedConfirmation: String,
+    val coverage: CompliancePackageCoverage,
+)
+
+@Serializable
+private data class CompliancePackageCoverage(
+    val sourceRecords: Int,
+    val sourceTexts: Int,
+    val assetRightsRecords: Int,
+    val audioModels: Int,
+    val itemsWithIssues: Int,
+)
+
+private fun packagedNoticeBlockers(repositoryRoot: File, seed: String?): List<ReleaseBlocker> {
+    val blockers = mutableListOf<ReleaseBlocker>()
+    val noticesMissing = requiredPackagedNoticePaths.any { relative ->
+        val file = File(repositoryRoot, relative)
+        !file.isFile || file.length() == 0L
+    }
+    val noticeFile = File(repositoryRoot, "app/src/main/assets/content/catalog-notice.txt")
+    val noticeText = if (noticeFile.isFile) noticeFile.readText() else ""
+    val noticeIncomplete = !noticeText.contains("does not own the packaged Russian") ||
+        !noticeText.contains("Shtooka") ||
+        !noticeText.contains("OpenRussian") ||
+        !noticeText.contains("CC BY-SA 4.0")
+    if (noticesMissing || noticeIncomplete) {
+        blockers += ReleaseBlocker.LICENSE_NOTICES_NOT_PACKAGED
+    }
+    blockers += compliancePackageBlockers(repositoryRoot, seed)
+    return blockers
+}
+
+private fun compliancePackageBlockers(repositoryRoot: File, seed: String?): List<ReleaseBlocker> {
+    val file = File(repositoryRoot, COMPLIANCE_PACKAGE_PATH)
+    if (!file.isFile || file.length() == 0L) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    val parsed = try {
+        complianceJson.decodeFromString(CompliancePackageDocument.serializer(), file.readText())
+    } catch (_: SerializationException) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    } catch (_: IllegalArgumentException) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    if (parsed.schemaVersion != 1 || parsed.coverage.itemsWithIssues != 0) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    val seedDocument = when (val reading = seed?.let { SeedJson.parse(it) }) {
+        is SeedParse.Ok -> reading.document
+        else -> return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    val seedConfirmations = seedDocument.sourceRecords.map { it.shareAlikeConfirmation }.toSet()
+    if (seedConfirmations.size != 1 ||
+        seedConfirmations.single() != parsed.shareAlikeConfirmationInSeed
+    ) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    if (parsed.coverage.audioModels != seedDocument.audioModels.size ||
+        parsed.coverage.sourceRecords != seedDocument.sourceRecords.size ||
+        parsed.coverage.sourceTexts != seedDocument.sourceTexts.size ||
+        parsed.coverage.assetRightsRecords != seedDocument.assetRightsRecords.size
+    ) {
+        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+    }
+    return emptyList()
 }
 
 private fun packagedArcIsReleaseReady(prepared: PreparedBundle): Boolean {

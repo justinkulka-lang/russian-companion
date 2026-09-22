@@ -90,6 +90,8 @@
 
     <string name="attributions_title">Attributions and licenses</string>
     <string name="attributions_not_ready">No attribution inventory is installed. This installation is not release-ready.</string>
+    <string name="attributions_catalog_notice">Catalog notice</string>
+    <string name="attributions_license_texts">Packaged license texts</string>
     <string name="attributions_source">Source: %1$s</string>
     <string name="attributions_provenance">Provenance: %1$s</string>
     <string name="attributions_redistribution">Redistribution basis: %1$s</string>

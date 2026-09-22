@@ -62,6 +62,12 @@ internal data class AssetInventoryOption(
     val rightsMissing: Boolean,
 )
 
+internal data class LicenseNoticeOption(
+    val id: String,
+    val title: String,
+    val body: String,
+)
+
 internal data class NavigationSnapshot(
     val localDataOpen: Boolean,
     val seedCorrupt: Boolean,
@@ -77,6 +83,8 @@ internal data class NavigationSnapshot(
     val attributions: List<AttributionOption>,
     val assetRecords: List<AssetInventoryOption> = emptyList(),
     val shareAlikeBlocksRelease: Boolean = false,
+    val catalogNotice: String = "",
+    val licenseNotices: List<LicenseNoticeOption> = emptyList(),
     val dailyPlan: DailyPlan = DailyPlan.empty(),
     val gateSummaries: List<GateSummary> = emptyList(),
     val activitySummary: ActivitySummary = ActivitySummary.none(),

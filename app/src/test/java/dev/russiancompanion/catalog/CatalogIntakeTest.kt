@@ -316,6 +316,11 @@ class CatalogIntakeTest {
         assertEquals(120, pathway.getValue("planDefinitions").jsonArray.size)
         assertEquals(30, pathway.getValue("gateDefinitions").jsonArray.size)
         assertFalse(prepare.contains("\"courseSegments\": []"))
+        assertTrue(prepare.contains("write_compliance_artifacts"))
+        assertTrue(prepare.contains("Share-alike confirmation stays UNCONFIRMED"))
+        assertTrue(File(root, "catalog/compliance/share-alike-package.json").isFile)
+        assertTrue(File(root, "app/src/main/assets/content/catalog-notice.txt").isFile)
+        assertTrue(File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").isFile)
     }
 
     private fun sha256(file: File): String {

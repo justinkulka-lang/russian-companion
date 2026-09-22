@@ -15,6 +15,7 @@ import dev.russiancompanion.domain.progress.activityLogAccepted
 import dev.russiancompanion.domain.progress.captureProgressSnapshot
 import dev.russiancompanion.domain.progress.exportCompletionAccepted
 import dev.russiancompanion.domain.progress.reproduceProgress
+import dev.russiancompanion.domain.navigation.LicenseNoticeOption
 import dev.russiancompanion.domain.practice.StoredRecordingRef
 import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
@@ -597,6 +598,8 @@ internal class LocalStore private constructor(
     companion object {
         const val DATABASE_NAME = "russian-companion.db"
         const val SEED_ASSET = "content/bundled-content.json"
+        const val CATALOG_NOTICE_ASSET = "content/catalog-notice.txt"
+        const val LICENSE_ASSET_DIR = "licenses"
 
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
@@ -616,8 +619,50 @@ internal class LocalStore private constructor(
         }
 
         internal fun readPackagedSeed(context: Context): String? {
+            return readAssetText(context, SEED_ASSET)
+        }
+
+        internal fun readPackagedCatalogNotice(context: Context): String? {
+            return readAssetText(context, CATALOG_NOTICE_ASSET)
+        }
+
+        internal fun readPackagedLicenseNotices(context: Context): List<LicenseNoticeOption> {
+            val assets = context.applicationContext.assets
+            val names = try {
+                assets.list(LICENSE_ASSET_DIR)?.sorted().orEmpty()
+            } catch (_: IOException) {
+                emptyList()
+            }
+            return names.mapNotNull { name ->
+                val body = if (name.endsWith(".html")) {
+                    "Official legal code is packaged locally as $LICENSE_ASSET_DIR/$name."
+                } else {
+                    readAssetText(context, "$LICENSE_ASSET_DIR/$name") ?: return@mapNotNull null
+                }
+                if (body.isBlank()) return@mapNotNull null
+                LicenseNoticeOption(
+                    id = name,
+                    title = licenseNoticeTitle(name),
+                    body = body,
+                )
+            }
+        }
+
+        private fun licenseNoticeTitle(filename: String): String {
+            return when (filename) {
+                "cc-by-sa-4.0.txt" -> "CC BY-SA 4.0"
+                "cc-by-3.0-us.html" -> "CC BY 3.0 US"
+                "cc-by-2.0-fr.html" -> "CC BY 2.0 FR"
+                "public-domain-notice.txt" -> "Public-domain mark"
+                "shtooka-readme-sakhno.txt" -> "Shtooka README (Sakhno)"
+                "shtooka-readme-streit.txt" -> "Shtooka README (Streit)"
+                else -> filename
+            }
+        }
+
+        private fun readAssetText(context: Context, path: String): String? {
             return try {
-                context.applicationContext.assets.open(SEED_ASSET).bufferedReader(Charsets.UTF_8).use { it.readText() }
+                context.applicationContext.assets.open(path).bufferedReader(Charsets.UTF_8).use { it.readText() }
             } catch (_: IOException) {
                 null
             }

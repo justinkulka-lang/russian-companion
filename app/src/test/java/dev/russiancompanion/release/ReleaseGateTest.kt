@@ -34,6 +34,9 @@ class ReleaseGateTest {
         assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.LICENSE_NOTICES_NOT_PACKAGED))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT))
         assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-001"))
     }
 
@@ -112,6 +115,47 @@ class ReleaseGateTest {
         assertEquals(ReleaseDecision.APPROVED, complete.decision)
         assertFalse(complete.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertEquals(emptyList<ReleaseBlocker>(), complete.blockers)
+    }
+
+    @Test
+    fun missingOrContradictoryComplianceMetadataFailsClosed() {
+        val root = Files.createTempDirectory("release-notices").toFile()
+        File(root, "app/src/main/assets/content").mkdirs()
+        File(repositoryRoot(), "app/src/main/assets/content/bundled-content.json")
+            .copyTo(File(root, "app/src/main/assets/content/bundled-content.json"))
+        File(root, "release").mkdirs()
+        File(root, RELEASE_EVIDENCE_MANIFEST).writeText(committedManifest())
+        val missing = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, missing.decision)
+        assertTrue(missing.blockers.contains(ReleaseBlocker.LICENSE_NOTICES_NOT_PACKAGED))
+        assertTrue(missing.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertTrue(missing.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+
+        val contradiction = Files.createTempDirectory("release-compliance").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), contradiction)
+        File(contradiction, "catalog/compliance/share-alike-package.json").writeText(
+            """{"schemaVersion":1,"classification":"READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW","shareAlikeConfirmationInSeed":"UNCONFIRMED","proposedConfirmation":"NOT_ACTIVATED","coverage":{"sourceRecords":5,"sourceTexts":1000,"assetRightsRecords":1000,"audioModels":1,"itemsWithIssues":0}}""",
+        )
+        val wrongCounts = assessRepositoryRelease(contradiction)
+        assertTrue(wrongCounts.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertEquals(ReleaseDecision.NOT_APPROVED, wrongCounts.decision)
+    }
+
+    @Test
+    fun contradictoryShareAlikeTreatmentFailsClosed() {
+        val (root, manifest) = retainedFixture()
+        val catalog = preparedCatalog(shareAlike = "CONFIRMED").copy(
+            sourceRecords = listOf(
+                source().copy(
+                    licenseName = "CC BY 2.0 FR; CC BY-SA 4.0",
+                    shareAlikeTreatment = "unspecified",
+                    shareAlikeConfirmation = "CONFIRMED",
+                ),
+            ),
+        )
+        val assessment = assessPackagedRelease(SeedJson.encode(catalog), manifest, root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertEquals(listOf(ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT), assessment.blockers)
     }
 
     @Test
@@ -275,6 +319,28 @@ class ReleaseGateTest {
 
     private fun committedManifest(): String {
         return File(repositoryRoot(), RELEASE_EVIDENCE_MANIFEST).readText()
+    }
+
+    private fun copyPackagedComplianceSurface(from: File, to: File) {
+        val relativePaths = listOf(
+            "app/src/main/assets/content/bundled-content.json",
+            "app/src/main/assets/content/catalog-notice.txt",
+            "app/src/main/assets/licenses/cc-by-sa-4.0.txt",
+            "app/src/main/assets/licenses/cc-by-3.0-us.html",
+            "app/src/main/assets/licenses/cc-by-2.0-fr.html",
+            "app/src/main/assets/licenses/public-domain-notice.txt",
+            "app/src/main/assets/licenses/shtooka-readme-sakhno.txt",
+            "app/src/main/assets/licenses/shtooka-readme-streit.txt",
+            "catalog/compliance/CATALOG_NOTICE.md",
+            "catalog/compliance/PROPOSED_CONFIRMATION.md",
+            "catalog/compliance/share-alike-package.json",
+            RELEASE_EVIDENCE_MANIFEST,
+        )
+        for (relative in relativePaths) {
+            val dest = File(to, relative)
+            dest.parentFile?.mkdirs()
+            File(from, relative).copyTo(dest, overwrite = true)
+        }
     }
 
     private fun repositoryRoot(): File {

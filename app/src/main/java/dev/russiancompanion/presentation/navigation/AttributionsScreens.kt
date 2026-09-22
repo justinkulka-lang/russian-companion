@@ -22,6 +22,7 @@ internal fun AttributionInventoryScreen(
 ) {
     var selectedSourceId by rememberSaveable { mutableStateOf<String?>(null) }
     var selectedAssetKey by rememberSaveable { mutableStateOf<String?>(null) }
+    var selectedLicenseId by rememberSaveable { mutableStateOf<String?>(null) }
     val linked = practiceAudioId?.let { id -> snapshot.assetRecords.firstOrNull { it.audioModelId == id } }
     ShellPage(title = stringResource(R.string.attributions_title), onBack = onBack, onHome = onHome) {
         if (snapshot.shareAlikeBlocksRelease) {
@@ -29,6 +30,30 @@ internal fun AttributionInventoryScreen(
         }
         if (snapshot.attributions.isEmpty() && snapshot.assetRecords.isEmpty()) {
             Text(stringResource(R.string.attributions_not_ready))
+        }
+        if (snapshot.catalogNotice.isNotBlank()) {
+            Text(stringResource(R.string.attributions_catalog_notice))
+            Text(snapshot.catalogNotice)
+        }
+        if (snapshot.licenseNotices.isNotEmpty()) {
+            Text(stringResource(R.string.attributions_license_texts))
+            for (notice in snapshot.licenseNotices) {
+                TextButton(
+                    onClick = {
+                        selectedLicenseId = notice.id
+                        selectedSourceId = null
+                        selectedAssetKey = null
+                    },
+                ) {
+                    Text(notice.title)
+                }
+                if (selectedLicenseId == notice.id) {
+                    Text(notice.body)
+                    TextButton(onClick = { selectedLicenseId = null }) {
+                        Text(stringResource(R.string.attributions_close))
+                    }
+                }
+            }
         }
         if (linked != null) {
             AssetRecordDetail(linked)

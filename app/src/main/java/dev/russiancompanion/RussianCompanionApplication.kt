@@ -29,6 +29,8 @@ class RussianCompanionApplication : Application() {
             { LocalStore.readPackagedSeed(this) },
             practiceAudio,
             readRecordingBytes = { reference -> readAppRecording(this, reference) },
+            readCatalogNotice = { LocalStore.readPackagedCatalogNotice(this) },
+            readLicenseNotices = { LocalStore.readPackagedLicenseNotices(this) },
         )
     }
 

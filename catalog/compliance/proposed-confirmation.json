@@ -1,0 +1,15 @@
+{
+  "status": "NOT_ACTIVATED",
+  "publicRelease": "NOT_APPROVED",
+  "seedPath": "app/src/main/assets/content/bundled-content.json",
+  "change": "set every sourceRecords.shareAlikeConfirmation from UNCONFIRMED to the confirmed token",
+  "sourceIds": [
+    "shtooka-sakhno-cc-by-3.0-us",
+    "shtooka-streit-cc-by-2.0-fr",
+    "shtooka-fsi-languages-yojik-eu-streit-cc-by-2.0-fr",
+    "shtooka-sakhno-public-domain",
+    "shtooka-fsi-languages-yojik-eu-sakhno-cc-by-3.0-us"
+  ],
+  "blockedUntilIndependentReview": true,
+  "note": "This artifact is not applied. Independent review must accept the recorded treatment before any confirmation change."
+}

@@ -1,0 +1,18 @@
+Public-domain mark (not a Creative Commons license)
+
+One packaged audio file is recorded from a Wikimedia Commons file page
+whose license authority is "Public domain". That mark is not a CC0
+dedication and is not a Creative Commons public license.
+
+This file does not identify a named creator beyond the recorded
+attribution in the packaged source record. No speaker name is invented
+here.
+
+The matched stress-marked headword remains OpenRussian text under
+CC BY-SA 4.0. Public-domain audio does not remove share-alike duties
+that apply to that text.
+
+Supporting records:
+- catalog/license-chains.json (licenseAuthority.license = "Public domain")
+- app/src/main/assets/content/bundled-content.json source id
+  shtooka-sakhno-public-domain
