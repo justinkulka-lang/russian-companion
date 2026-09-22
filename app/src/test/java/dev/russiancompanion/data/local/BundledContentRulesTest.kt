@@ -147,6 +147,37 @@ class BundledContentRulesTest {
     }
 
     @Test
+    fun listenPlanWithoutKnownCatalogIdsIsDroppedAndBookPlanKeepsLessonNumber() {
+        val prepared = prepareBundledContent(
+            minimalDocument().copy(
+                planDefinitions = listOf(
+                    PlanDefinitionSeed(
+                        id = "plan-book",
+                        segmentId = "segment-1",
+                        activityType = "BOOK",
+                        instruction = "Use your copy of the book for this lesson",
+                        sortOrder = 1,
+                        required = true,
+                        lessonNumber = 1,
+                    ),
+                    PlanDefinitionSeed(
+                        id = "plan-listen",
+                        segmentId = "segment-1",
+                        activityType = "LISTEN_RECORD_COMPARE",
+                        instruction = "Listen to the licensed model",
+                        sortOrder = 2,
+                        required = true,
+                        audioModelIds = listOf("audio-missing"),
+                    ),
+                ),
+            ),
+        )
+        assertEquals(listOf("plan-book"), prepared.plans.map { it.id })
+        assertEquals(1, prepared.plans.single().lessonNumber)
+        assertEquals(1, prepared.segments.single().lessonNumber)
+    }
+
+    @Test
     fun unconfirmedShareAlikeStaysOnTheSourceRecord() {
         val prepared = prepareBundledContent(
             minimalDocument().copy(
@@ -278,7 +309,12 @@ internal fun minimalDocument(): BundledSeedDocument {
 }
 
 internal fun segment(): CourseSegmentSeed {
-    return CourseSegmentSeed(id = "segment-1", lessonReference = "Lesson 1", sortOrder = 1)
+    return CourseSegmentSeed(
+        id = "segment-1",
+        lessonReference = "Lesson 1",
+        lessonNumber = 1,
+        sortOrder = 1,
+    )
 }
 
 internal fun source(): SourceRecordSeed {

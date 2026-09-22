@@ -73,8 +73,10 @@ class DailyPlanUiTest {
         clickText("Today's Plan", substring = false)
 
         showText("Grammar practice stays in your copy of the book and its answer key.")
+        showText("Lesson number: 1")
         showText("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.")
         showText("Listen-record-compare practice.")
+        showText("Prescribed catalog words: 1")
         compose.onAllNodesWithText("Self-attested").assertCountEquals(2)
         compose.onNodeWithText("Remove tutor task").assertDoesNotExist()
         clickText("Add tutor task")
@@ -167,6 +169,7 @@ class DailyPlanUiTest {
                 instruction = "Use your copy of the book for this lesson",
                 sortOrder = 1,
                 required = true,
+                lessonNumber = 1,
             ),
             PlanDefinitionSeed(
                 id = "plan-anki",
@@ -175,6 +178,7 @@ class DailyPlanUiTest {
                 instruction = "Do the assigned AnkiDroid work",
                 sortOrder = 2,
                 required = true,
+                lessonNumber = 1,
             ),
             PlanDefinitionSeed(
                 id = "plan-listen",
@@ -183,6 +187,7 @@ class DailyPlanUiTest {
                 instruction = "Listen to the licensed model",
                 sortOrder = 3,
                 required = true,
+                audioModelIds = listOf("audio-1"),
             ),
             PlanDefinitionSeed(
                 id = "plan-tutor",
@@ -200,9 +205,9 @@ class DailyPlanUiTest {
                 ),
             ),
         ),
-        sourceTexts = if (includeAudio) listOf(text(matchVerified = true)) else emptyList(),
-        assetRightsRecords = if (includeAudio) listOf(rights()) else emptyList(),
-        audioModels = if (includeAudio) listOf(audio()) else emptyList(),
+        sourceTexts = listOf(text(matchVerified = includeAudio)),
+        assetRightsRecords = listOf(rights()),
+        audioModels = listOf(audio()),
     )
 
     private class FakePlanGateway : NavigationGateway {

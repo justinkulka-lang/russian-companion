@@ -17,6 +17,11 @@ import dev.russiancompanion.data.local.RuleOperator
 import dev.russiancompanion.data.local.ShareAlikeConfirmation
 import dev.russiancompanion.data.local.SourceRecordEntity
 import dev.russiancompanion.data.local.SourceTextEntity
+import dev.russiancompanion.domain.pathway.PathwaySegment
+import dev.russiancompanion.domain.pathway.PlanActivityKind
+import dev.russiancompanion.domain.pathway.PlanDefinitionDraft
+import dev.russiancompanion.domain.pathway.admitPlanDefinition
+import dev.russiancompanion.domain.pathway.validatePathwaySegments
 
 internal data class PreparedBundle(
     val contentVersion: Int,
@@ -38,9 +43,28 @@ internal fun prepareBundledContent(document: BundledSeedDocument): PreparedBundl
     val textsById = texts.associateBy { it.id }
     val rights = document.assetRightsRecords.mapNotNull { admitRights(it, sourcesById) }
     val rightsById = rights.associateBy { it.id }
-    val segments = document.courseSegments.mapNotNull(::admitSegment)
+    val pathway = validatePathwaySegments(
+        document.courseSegments.map { seed ->
+            PathwaySegment(
+                id = seed.id,
+                lessonReference = seed.lessonReference,
+                lessonNumber = seed.lessonNumber,
+                sortOrder = seed.sortOrder,
+            )
+        },
+    )
+    val segments = pathway.segments.map { segment ->
+        CourseSegmentEntity(
+            id = segment.id,
+            lessonReference = segment.lessonReference,
+            lessonNumber = segment.lessonNumber,
+            sortOrder = segment.sortOrder,
+            eligibilityStatus = EligibilityStatus.ELIGIBLE,
+        )
+    }
     val segmentsById = segments.associateBy { it.id }
-    val plans = document.planDefinitions.mapNotNull { admitPlan(it, segmentsById) }
+    val knownAudioIds = document.audioModels.map { it.id }.filter { it.isNotBlank() }.toSet()
+    val plans = document.planDefinitions.mapNotNull { admitPlan(it, segmentsById, knownAudioIds) }
     val admittedGates = document.gateDefinitions.mapNotNull { admitGate(it, segmentsById) }
     val audio = admitAudio(
         seeds = document.audioModels,
@@ -127,25 +151,49 @@ private fun admitRights(
     )
 }
 
-private fun admitSegment(seed: CourseSegmentSeed): CourseSegmentEntity? {
-    if (seed.id.isBlank() || seed.lessonReference.isBlank() || seed.sortOrder < 0) return null
-    return CourseSegmentEntity(
-        id = seed.id,
-        lessonReference = seed.lessonReference,
-        sortOrder = seed.sortOrder,
-        eligibilityStatus = EligibilityStatus.ELIGIBLE,
-    )
-}
-
 private fun admitPlan(
     seed: PlanDefinitionSeed,
     segments: Map<String, CourseSegmentEntity>,
+    knownAudioModelIds: Set<String>,
 ): PlanDefinitionEntity? {
-    if (seed.id.isBlank() || segments[seed.segmentId] == null || seed.instruction.isBlank() || seed.sortOrder < 0) {
+    val activity = enumOrNull<PlanActivityType>(seed.activityType) ?: return null
+    val kind = when (activity) {
+        PlanActivityType.BOOK -> PlanActivityKind.BOOK
+        PlanActivityType.ANKI_DROID -> PlanActivityKind.ANKI_DROID
+        PlanActivityType.LISTEN_RECORD_COMPARE -> PlanActivityKind.LISTEN_RECORD_COMPARE
+        PlanActivityType.TUTOR -> PlanActivityKind.TUTOR
+    }
+    val segment = segments[seed.segmentId]
+    val admission = admitPlanDefinition(
+        PlanDefinitionDraft(
+            id = seed.id,
+            segmentId = seed.segmentId,
+            activity = kind,
+            instruction = seed.instruction,
+            sortOrder = seed.sortOrder,
+            required = seed.required,
+            lessonNumber = seed.lessonNumber,
+            audioModelIds = seed.audioModelIds,
+        ),
+        segmentLessonNumber = segment?.lessonNumber,
+        knownAudioModelIds = knownAudioModelIds,
+    )
+    if (!admission.accepted) {
+        if (admission.reason == "tutor-must-be-optional" && segment != null) {
+            return PlanDefinitionEntity(
+                id = seed.id,
+                segmentId = seed.segmentId,
+                activityType = activity,
+                instruction = seed.instruction,
+                sortOrder = seed.sortOrder,
+                required = seed.required,
+                lessonNumber = seed.lessonNumber,
+                audioModelIds = seed.audioModelIds,
+                eligibilityStatus = EligibilityStatus.EXCLUDED,
+            )
+        }
         return null
     }
-    val activity = enumOrNull<PlanActivityType>(seed.activityType) ?: return null
-    val tutorRequired = activity == PlanActivityType.TUTOR && seed.required
     return PlanDefinitionEntity(
         id = seed.id,
         segmentId = seed.segmentId,
@@ -153,7 +201,9 @@ private fun admitPlan(
         instruction = seed.instruction,
         sortOrder = seed.sortOrder,
         required = seed.required,
-        eligibilityStatus = if (tutorRequired) EligibilityStatus.EXCLUDED else EligibilityStatus.ELIGIBLE,
+        lessonNumber = seed.lessonNumber,
+        audioModelIds = seed.audioModelIds,
+        eligibilityStatus = EligibilityStatus.ELIGIBLE,
     )
 }
 

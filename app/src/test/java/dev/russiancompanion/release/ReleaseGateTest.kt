@@ -241,6 +241,8 @@ class ReleaseGateTest {
         instruction = "Use the assigned local activity",
         sortOrder = sortOrder,
         required = true,
+        lessonNumber = if (activityType == "BOOK" || activityType == "ANKI_DROID") 1 else null,
+        audioModelIds = if (activityType == "LISTEN_RECORD_COMPARE") listOf("audio-1") else emptyList(),
     )
 
     private companion object {

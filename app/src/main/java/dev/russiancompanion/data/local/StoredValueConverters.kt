@@ -4,6 +4,14 @@ import androidx.room.TypeConverter
 
 internal class StoredValueConverters {
     @TypeConverter
+    fun toStringList(value: String): List<String> {
+        return if (value.isEmpty()) emptyList() else value.split('\n')
+    }
+
+    @TypeConverter
+    fun fromStringList(value: List<String>): String = value.joinToString("\n")
+
+    @TypeConverter
     fun toPlanActivityType(value: String): PlanActivityType = PlanActivityType.valueOf(value)
 
     @TypeConverter

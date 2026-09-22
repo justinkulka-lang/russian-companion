@@ -47,7 +47,7 @@ internal fun HomePlanSection(
             } else {
                 Text(stringResource(R.string.home_next_activity))
                 Text(next.instruction)
-                val practiceReady = practicePlayable(snapshot)
+                val practiceReady = practicePlayable(snapshot, next.audioModelIds)
                 val canBegin = next.activity != ChecklistActivity.LISTEN_RECORD_COMPARE || practiceReady
                 TextButton(onClick = { onBegin(next) }, enabled = canBegin) {
                     Text(stringResource(R.string.home_begin))
@@ -58,7 +58,7 @@ internal fun HomePlanSection(
                             if (snapshot.audio.isEmpty()) {
                                 R.string.practice_none
                             } else {
-                                R.string.practice_session_unavailable
+                                R.string.plan_prescribed_audio_unavailable
                             },
                         ),
                     )
@@ -76,7 +76,7 @@ internal fun TodaysPlanBody(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
     onSelectLesson: () -> Unit,
-    onStartPractice: () -> Unit,
+    onStartPractice: (ChecklistItem) -> Unit,
     onComplete: (String) -> Unit,
     onIncludeTutor: (String) -> Unit,
     onRemoveTutor: (String) -> Unit,
@@ -98,9 +98,9 @@ internal fun TodaysPlanBody(
     plan.items.forEach { item ->
         ChecklistRow(
             item = item,
-            practiceAvailable = practicePlayable(snapshot),
+            practiceAvailable = practicePlayable(snapshot, item.audioModelIds),
             admittedAudio = snapshot.audio.isNotEmpty(),
-            onStartPractice = onStartPractice,
+            onStartPractice = { onStartPractice(item) },
             onComplete = onComplete,
             onRemoveTutor = onRemoveTutor,
         )
@@ -136,6 +136,13 @@ private fun ChecklistRow(
             },
         ),
     )
+    val lessonNumber = item.lessonNumber
+    if (lessonNumber != null && (item.activity == ChecklistActivity.BOOK || item.activity == ChecklistActivity.ANKI_DROID)) {
+        Text(stringResource(R.string.plan_lesson_number, lessonNumber))
+    }
+    if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
+        Text(stringResource(R.string.plan_prescribed_audio_count, item.audioModelIds.size))
+    }
     Text(item.instruction)
     if (item.activity == ChecklistActivity.BOOK || item.activity == ChecklistActivity.ANKI_DROID) {
         Text(stringResource(R.string.plan_self_attested))
@@ -157,7 +164,7 @@ private fun ChecklistRow(
         if (!practiceAvailable) {
             Text(
                 stringResource(
-                    if (admittedAudio) R.string.practice_session_unavailable else R.string.practice_none,
+                    if (admittedAudio) R.string.plan_prescribed_audio_unavailable else R.string.practice_none,
                 ),
             )
         }

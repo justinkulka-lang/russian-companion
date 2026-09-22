@@ -76,6 +76,9 @@ class DailyPlanStoreTest {
             plan("plan-listen", "LISTEN_RECORD_COMPARE", 3),
             plan("plan-tutor", "TUTOR", 4, required = false),
         ),
+        sourceTexts = listOf(text(matchVerified = true)),
+        assetRightsRecords = listOf(rights()),
+        audioModels = listOf(audio()),
     )
 
     private fun plan(
@@ -91,6 +94,8 @@ class DailyPlanStoreTest {
             instruction = "Instruction $id",
             sortOrder = sortOrder,
             required = required,
+            lessonNumber = if (activityType == "BOOK" || activityType == "ANKI_DROID") 1 else null,
+            audioModelIds = if (activityType == "LISTEN_RECORD_COMPARE") listOf("audio-1") else emptyList(),
         )
     }
 }

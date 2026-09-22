@@ -45,6 +45,7 @@ class PracticeStoreTest {
                                 instruction = "Listen to the licensed model",
                                 sortOrder = 1,
                                 required = true,
+                                audioModelIds = listOf("audio-1"),
                             ),
                         ),
                         sourceTexts = listOf(text(matchVerified = true)),

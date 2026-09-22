@@ -84,6 +84,36 @@ class DailyPlanRulesTest {
         assertEquals(ActivitySummary.none(), summarizeActivity(emptyList()))
     }
 
+    @Test
+    fun checklistCarriesLessonNumbersAndPrescribedAudioIds() {
+        val plan = assembleDailyPlan(
+            definitions = listOf(
+                PlanDefinitionView(
+                    id = "plan-book",
+                    activity = ChecklistActivity.BOOK,
+                    instruction = "book",
+                    sortOrder = 1,
+                    required = true,
+                    lessonNumber = 9,
+                ),
+                PlanDefinitionView(
+                    id = "plan-listen",
+                    activity = ChecklistActivity.LISTEN_RECORD_COMPARE,
+                    instruction = "listen",
+                    sortOrder = 2,
+                    required = true,
+                    audioModelIds = listOf("audio-a", "audio-b"),
+                ),
+            ),
+            instances = emptyList(),
+        )
+        assertEquals(9, plan.items.single { it.planDefinitionId == "plan-book" }.lessonNumber)
+        assertEquals(
+            listOf("audio-a", "audio-b"),
+            plan.items.single { it.planDefinitionId == "plan-listen" }.audioModelIds,
+        )
+    }
+
     private fun definition(
         id: String,
         activity: ChecklistActivity,

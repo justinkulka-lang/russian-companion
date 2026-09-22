@@ -14,6 +14,15 @@ internal fun practicePlayable(snapshot: NavigationSnapshot): Boolean {
     return snapshot.audio.any { it.playable }
 }
 
+internal fun practicePlayable(
+    snapshot: NavigationSnapshot,
+    prescribedAudioModelIds: List<String>,
+): Boolean {
+    if (prescribedAudioModelIds.isEmpty()) return practicePlayable(snapshot)
+    val playable = snapshot.audio.filter { it.playable }.map { it.id }.toSet()
+    return prescribedAudioModelIds.any { it in playable }
+}
+
 internal fun launchDestination(snapshot: NavigationSnapshot): LaunchDestination {
     if (!snapshot.localDataOpen) return LaunchDestination.LOCAL_DATA_PROBLEM
     if (!snapshot.onboardingCompleted) return LaunchDestination.ONBOARDING

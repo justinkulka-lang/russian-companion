@@ -141,6 +141,9 @@
     <string name="plan_anki_separate">Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing.</string>
     <string name="plan_listen">Listen-record-compare practice.</string>
     <string name="plan_tutor_optional">Tutor task included by your choice.</string>
+    <string name="plan_lesson_number">Lesson number: %1$d</string>
+    <string name="plan_prescribed_audio_count">Prescribed catalog words: %1$d</string>
+    <string name="plan_prescribed_audio_unavailable">The prescribed listen-record-compare words are unavailable.</string>
     <string name="plan_self_attested">Self-attested</string>
     <string name="plan_completed">Completed</string>
     <string name="plan_not_completed">Not completed</string>

@@ -96,4 +96,72 @@ class DatabaseMigrationTest {
         exported.close()
         helper.close()
     }
+
+    @Test
+    fun version2PlanRowsGainLessonNumberAndAudioModelIdColumns() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("capability1-v2.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(2) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `course_segments` (
+                                `id` TEXT NOT NULL,
+                                `lessonReference` TEXT NOT NULL,
+                                `sortOrder` INTEGER NOT NULL,
+                                `eligibilityStatus` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `plan_definitions` (
+                                `id` TEXT NOT NULL,
+                                `segmentId` TEXT NOT NULL,
+                                `activityType` TEXT NOT NULL,
+                                `instruction` TEXT NOT NULL,
+                                `sortOrder` INTEGER NOT NULL,
+                                `required` INTEGER NOT NULL,
+                                `eligibilityStatus` TEXT NOT NULL,
+                                PRIMARY KEY(`id`),
+                                FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL(
+            """
+            INSERT INTO course_segments (id, lessonReference, sortOrder, eligibilityStatus)
+            VALUES ('segment-1', 'Lesson 1', 1, 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO plan_definitions (
+                id, segmentId, activityType, instruction, sortOrder, required, eligibilityStatus
+            ) VALUES ('plan-book', 'segment-1', 'BOOK', 'Use your copy', 1, 1, 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        MIGRATION_2_3.migrate(db)
+        val segment = db.query("SELECT lessonNumber FROM course_segments WHERE id = 'segment-1'")
+        segment.moveToFirst()
+        assertEquals(0, segment.getInt(0))
+        segment.close()
+        val plan = db.query("SELECT lessonNumber, audioModelIds FROM plan_definitions WHERE id = 'plan-book'")
+        plan.moveToFirst()
+        assertNull(plan.getString(0))
+        assertEquals("", plan.getString(1))
+        plan.close()
+        helper.close()
+    }
 }
