@@ -1,5 +1,8 @@
 package dev.russiancompanion.domain.progress
 
+import java.io.File
+import java.io.IOException
+import java.io.InputStream
 import java.security.MessageDigest
 
 internal enum class BackupOutcome {
@@ -60,6 +63,28 @@ internal fun recordingSetDigest(members: List<RecordingSetMember>): String {
 internal fun sha256Hex(bytes: ByteArray): String {
     return MessageDigest.getInstance("SHA-256").digest(bytes)
         .joinToString("") { byte -> "%02x".format(byte) }
+}
+
+internal fun sha256Stream(input: InputStream, bufferSize: Int = 8192): String {
+    val digest = MessageDigest.getInstance("SHA-256")
+    val buffer = ByteArray(bufferSize.coerceAtLeast(1))
+    while (true) {
+        val read = input.read(buffer)
+        if (read < 0) break
+        if (read > 0) digest.update(buffer, 0, read)
+    }
+    return digest.digest().joinToString("") { byte -> "%02x".format(byte) }
+}
+
+internal fun sha256File(file: File, bufferSize: Int = 8192): String? {
+    if (!file.isFile || file.length() == 0L) return null
+    return try {
+        file.inputStream().buffered(bufferSize.coerceAtLeast(1)).use { input ->
+            sha256Stream(input, bufferSize)
+        }
+    } catch (_: IOException) {
+        null
+    }
 }
 
 internal fun recordingsCoveredByExport(

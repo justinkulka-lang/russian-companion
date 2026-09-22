@@ -4,11 +4,10 @@ import android.content.Context
 import android.media.AudioAttributes
 import android.media.AudioFocusRequest
 import android.media.AudioManager
-import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Build
 import dev.russiancompanion.domain.practice.PracticeAudio
-import dev.russiancompanion.domain.progress.sha256Hex
+import dev.russiancompanion.domain.progress.sha256File
 import java.io.File
 import java.io.IOException
 import java.util.UUID
@@ -17,13 +16,13 @@ internal class AndroidPracticeAudio(
     private val context: Context,
     private val audioManager: AudioManager = context.applicationContext
         .getSystemService(Context.AUDIO_SERVICE) as AudioManager,
+    playerFactory: PlaybackPlayerFactory = PlaybackPlayerFactory { MediaPlaybackPlayer() },
 ) : PracticeAudio {
     private val appContext: Context
         get() = context.applicationContext
-    private var player: MediaPlayer? = null
+    private val playback = SequentialPlayback(playerFactory)
     private var recorder: MediaRecorder? = null
     private var captureFile: File? = null
-    private var pendingFinished: ((Boolean) -> Unit)? = null
     private var hasFocus: Boolean = false
     private val packagedAssets: Set<String> by lazy { listPackagedAssets() }
     private val focusListener = AudioManager.OnAudioFocusChangeListener { change ->
@@ -77,7 +76,7 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(cached, speed.coerceIn(0.75f, 1.0f), onFinished)
+        playback.play(cached.absolutePath, speed.coerceIn(0.75f, 1.0f), onFinished)
     }
 
     override fun recordingBytes(localFileReference: String): Long? {
@@ -86,13 +85,7 @@ internal class AndroidPracticeAudio(
     }
 
     override fun recordingDigest(localFileReference: String): String? {
-        val file = recordingFile(localFileReference)
-        if (!file.isFile || file.length() == 0L) return null
-        return try {
-            sha256Hex(file.readBytes())
-        } catch (_: IOException) {
-            null
-        }
+        return sha256File(recordingFile(localFileReference))
     }
 
     override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
@@ -105,12 +98,11 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(file, RECORDING_SPEED, onFinished)
+        playback.play(file.absolutePath, RECORDING_SPEED, onFinished)
     }
 
     override fun stopPlayback() {
-        finishPending(false)
-        releasePlayer()
+        playback.stop()
     }
 
     override fun releaseForBackground() {
@@ -212,46 +204,6 @@ internal class AndroidPracticeAudio(
             cached.delete()
             null
         }
-    }
-
-    private fun playFile(file: File, speed: Float, onFinished: (Boolean) -> Unit) {
-        finishPending(false)
-        releasePlayer()
-        val mediaPlayer = MediaPlayer()
-        player = mediaPlayer
-        pendingFinished = onFinished
-        try {
-            mediaPlayer.setDataSource(file.absolutePath)
-            mediaPlayer.setOnCompletionListener {
-                finishPending(true)
-                releasePlayer()
-            }
-            mediaPlayer.setOnErrorListener { _, _, _ ->
-                finishPending(false)
-                releasePlayer()
-                true
-            }
-            mediaPlayer.prepare()
-            if (speed != 1.0f) {
-                mediaPlayer.playbackParams = mediaPlayer.playbackParams.setSpeed(speed)
-            }
-            mediaPlayer.start()
-        } catch (_: Exception) {
-            finishPending(false)
-            releasePlayer()
-        }
-    }
-
-    private fun finishPending(succeeded: Boolean) {
-        val callback = pendingFinished ?: return
-        pendingFinished = null
-        callback(succeeded)
-    }
-
-    private fun releasePlayer() {
-        val active = player
-        player = null
-        active?.release()
     }
 
     private fun releaseRecorder(active: MediaRecorder?) {
