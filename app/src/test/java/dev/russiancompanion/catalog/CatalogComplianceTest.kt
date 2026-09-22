@@ -97,7 +97,7 @@ class CatalogComplianceTest {
         assertEquals(document.sourceRecords.size, sources.size)
         document.sourceRecords.forEach { source ->
             assertEquals(approvedTreatment, source.shareAlikeTreatment)
-            assertEquals("UNCONFIRMED", source.shareAlikeConfirmation)
+            assertEquals("CONFIRMED", source.shareAlikeConfirmation)
             val tokens = source.licenseName.split(";").map { it.trim() }.filter { it.isNotEmpty() }
             assertTrue(tokens.contains("CC BY-SA 4.0"))
             tokens.forEach { token ->
@@ -124,7 +124,7 @@ class CatalogComplianceTest {
                 }
             }
             assertEquals(approvedTreatment, source.getValue("shareAlikeTreatment").jsonPrimitive.content)
-            assertEquals("UNCONFIRMED", source.getValue("shareAlikeConfirmation").jsonPrimitive.content)
+            assertEquals("CONFIRMED", source.getValue("shareAlikeConfirmation").jsonPrimitive.content)
             assertFalse(source.getValue("modified").jsonPrimitive.content.toBoolean())
         }
     }
@@ -145,7 +145,8 @@ class CatalogComplianceTest {
         assertTrue(notice.contains("User recordings and user-entered data"))
         assertTrue(notice.contains("Unmodified versus modified assets"))
         assertTrue(notice.contains("deterministic"))
-        assertTrue(notice.contains("UNCONFIRMED"))
+        assertTrue(notice.contains("CONFIRMED"))
+        assertFalse(notice.contains("UNCONFIRMED"))
         assertTrue(notice.contains("CC BY-SA 4.0"))
         assertTrue(notice.contains("database rights"))
         assertTrue(notice.contains("not converted to CC BY-SA"))
@@ -153,9 +154,9 @@ class CatalogComplianceTest {
         assertFalse(notice.contains("This app owns"))
         val packageJson = compliancePackage(root)
         assertEquals(approvedTreatment, packageJson.getValue("catalogShareAlikeTreatment").jsonPrimitive.content)
-        assertEquals("NOT_ACTIVATED", packageJson.getValue("proposedConfirmation").jsonPrimitive.content)
+        assertEquals("ACTIVATED", packageJson.getValue("proposedConfirmation").jsonPrimitive.content)
         assertEquals(
-            "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW",
+            "SHARE_ALIKE_CONFIRMED",
             packageJson.getValue("classification").jsonPrimitive.content,
         )
         val ambiguities = packageJson.getValue("recordedAmbiguities").jsonArray.map {
@@ -172,20 +173,22 @@ class CatalogComplianceTest {
         assertTrue(material.getValue("userRecordingsAndEnteredData").jsonPrimitive.content.contains("excluded"))
         val sa = File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").readText()
         assertTrue(sa.contains("Attribution-ShareAlike 4.0 International"))
-        assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("NOT APPLIED"))
+        assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("ACTIVATED"))
         val proposed = File(root, "catalog/compliance/proposed-confirmation.json").readText()
-        assertTrue(proposed.contains("NOT_ACTIVATED"))
+        assertTrue(proposed.contains("ACTIVATED"))
         assertTrue(proposed.contains("SHARE_ALIKE_CONFIRMED"))
         assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("SHARE_ALIKE_CONFIRMED"))
-        assertFalse(File(root, "app/src/main/assets/content/bundled-content.json").readText()
+        assertTrue(File(root, "app/src/main/assets/content/bundled-content.json").readText()
             .contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
         assertFalse(File(root, "app/src/main/assets/content/bundled-content.json").readText()
+            .contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
+        assertFalse(File(root, "app/src/main/assets/content/bundled-content.json").readText()
             .contains("\"shareAlikeConfirmation\": \"NOT_APPLICABLE\""))
-        assertEquals("READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW", packageJson.getValue("classification").jsonPrimitive.content)
+        assertEquals("SHARE_ALIKE_CONFIRMED", packageJson.getValue("classification").jsonPrimitive.content)
     }
 
     @Test
-    fun regenerationPreservesTheCompliancePackageAndLeavesConfirmationUnresolved() {
+    fun regenerationPreservesTheActivatedCompliancePackage() {
         val sourceRoot = repositoryRoot()
         val root = File(System.getProperty("java.io.tmpdir"), "compliance-regen-${System.nanoTime()}")
         copyRegenSurface(sourceRoot, root)
@@ -199,30 +202,30 @@ class CatalogComplianceTest {
         val regenerated = Json.parseToJsonElement(
             File(root, "catalog/compliance/share-alike-package.json").readText(),
         ).jsonObject
-        assertEquals("READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW", regenerated.getValue("classification").jsonPrimitive.content)
-        assertEquals("UNCONFIRMED", regenerated.getValue("shareAlikeConfirmationInSeed").jsonPrimitive.content)
-        assertEquals("NOT_ACTIVATED", regenerated.getValue("proposedConfirmation").jsonPrimitive.content)
+        assertEquals("SHARE_ALIKE_CONFIRMED", regenerated.getValue("classification").jsonPrimitive.content)
+        assertEquals("CONFIRMED", regenerated.getValue("shareAlikeConfirmationInSeed").jsonPrimitive.content)
+        assertEquals("ACTIVATED", regenerated.getValue("proposedConfirmation").jsonPrimitive.content)
         assertEquals(approvedTreatment, regenerated.getValue("catalogShareAlikeTreatment").jsonPrimitive.content)
         val coverage = regenerated.getValue("coverage").jsonObject
         assertEquals(1000, coverage.getValue("audioModels").jsonPrimitive.content.toInt())
         assertEquals(5, coverage.getValue("sourceRecords").jsonPrimitive.content.toInt())
         assertEquals(0, coverage.getValue("itemsWithIssues").jsonPrimitive.content.toInt())
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
-        assertTrue(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
-        assertFalse(seed.contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
+        assertTrue(seed.contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
+        assertFalse(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
         requiredAssetNotices.forEach { relative ->
             assertTrue(File(root, relative).isFile && File(root, relative).length() > 0L)
         }
         val prepare = File(sourceRoot, "catalog/prepare_shtooka_catalog.py").readText()
         assertTrue(prepare.contains("write_compliance_artifacts"))
-        assertTrue(prepare.contains("Share-alike confirmation stays UNCONFIRMED"))
+        assertTrue(prepare.contains("SHARE_ALIKE_CONFIRMATION"))
     }
 
     @Test
-    fun assembleReleaseStaysBlockedWhileShareAlikeIsUnconfirmed() {
+    fun assembleReleaseStaysBlockedAfterShareAlikeActivation() {
         val assessment = assessRepositoryRelease(repositoryRoot())
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
-        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED))

@@ -38,7 +38,7 @@ class NavigationShellTest {
     }
 
     @Test
-    fun packagedCompletePathwayLetsOnboardingFinishAndStillReportsShareAlikeBlock() {
+    fun packagedCompletePathwayLetsOnboardingFinishAfterShareAlikeConfirmation() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -66,8 +66,7 @@ class NavigationShellTest {
         compose.onNodeWithText("Lesson 30", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Attributions and licenses").performScrollTo().performClick()
         compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
-            .performScrollTo()
-            .assertIsDisplayed()
+            .assertDoesNotExist()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
         compose.onNodeWithText("Back").performScrollTo().performClick()

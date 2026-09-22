@@ -129,7 +129,7 @@ class AcceptanceBoundaryTest {
         val document = (parsed as SeedParse.Ok).document
         assertTrue(document.audioModels.isNotEmpty())
         assertEquals((1..30).toList(), document.courseSegments.map { it.lessonNumber })
-        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
+        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "CONFIRMED" })
     }
 
     @Test

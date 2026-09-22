@@ -6,8 +6,9 @@ Does not invent spellings, stress marks, frequency ranks, or Penguin lesson
 mappings. The Lessons 1-30 conductor is merged from
 catalog/beginner_pathway.json and bound to already-packaged audio IDs in
 catalog order. Those bindings are catalog words, not book items.
-Share-alike confirmation stays UNCONFIRMED. Regeneration rewrites the
-compliance package and copies packaged license notices.
+Share-alike confirmation is recorded as CONFIRMED after independent
+review. Regeneration preserves that confirmation, rewrites the
+compliance package, and copies packaged license notices.
 """
 
 import os
@@ -72,6 +73,7 @@ SHARE_TREATMENT_BY = (
     "Application code and user recordings or user-entered data are excluded."
 )
 SHARE_TREATMENT_SA = SHARE_TREATMENT_BY
+SHARE_ALIKE_CONFIRMATION = "CONFIRMED"
 
 
 class RateLimited(RuntimeError):
@@ -331,7 +333,7 @@ def source_record(record_id, provenance, basis, license_name, attribution, share
         "attribution": attribution,
         "modificationStatus": "UNMODIFIED",
         "shareAlikeTreatment": SHARE_TREATMENT_SA if share_alike_audio else SHARE_TREATMENT_BY,
-        "shareAlikeConfirmation": "UNCONFIRMED",
+        "shareAlikeConfirmation": SHARE_ALIKE_CONFIRMATION,
     }
 
 
@@ -1467,7 +1469,7 @@ def main():
                 "attribution": record["attribution"],
                 "modificationStatus": "UNMODIFIED",
                 "shareAlikeTreatment": record["shareAlikeTreatment"],
-                "shareAlikeConfirmation": "UNCONFIRMED",
+                "shareAlikeConfirmation": SHARE_ALIKE_CONFIRMATION,
             }
         )
         ranks.append({"id": audio_id, "frequencyRank": item["rank"]})
@@ -1757,7 +1759,7 @@ def main():
         "frequencyLicense": "CC BY-SA 4.0",
         "topMatchedItems": TOP_N,
         "frequencyCap": "applied to the source rank of items that passed the license filter and a unique accented-headword match",
-        "shareAlikeConfirmation": "UNCONFIRMED",
+        "shareAlikeConfirmation": SHARE_ALIKE_CONFIRMATION,
         "installedCount": len(retained),
         "rankedMatches": len(ranked),
         "indexFiles": len(files),

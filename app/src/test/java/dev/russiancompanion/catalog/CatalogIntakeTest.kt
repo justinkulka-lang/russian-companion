@@ -30,7 +30,7 @@ class CatalogIntakeTest {
         assertEquals(emptyList<String>(), assessment.excludedIds)
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
         assertFalse(seed.contains("\"courseSegments\": []"))
-        assertTrue(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
+        assertTrue(seed.contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
         assertFalse(seed.contains("en.openrussian.org/dictionary-data"))
         val document = (SeedJson.parse(seed) as SeedParse.Ok).document
         assertEquals(document.audioModels.map { it.id }, assessment.eligibleIds)
@@ -177,7 +177,7 @@ class CatalogIntakeTest {
         assertTrue(seed.optionalDrills.isEmpty())
         assertTrue(seed.audioModels.isNotEmpty())
         seed.sourceRecords.forEach { record ->
-            assertEquals("UNCONFIRMED", record.shareAlikeConfirmation)
+            assertEquals("CONFIRMED", record.shareAlikeConfirmation)
         }
         val audioFiles = File(root, "app/src/main/assets/audio").listFiles { file -> file.extension == "ogg" }!!.toList()
         val chainRows = chains.getValue("files").jsonArray.map { it.jsonObject }
@@ -277,7 +277,7 @@ class CatalogIntakeTest {
         retainedStates.forEach { record -> assertEquals("MISSING", record.getValue("state").jsonPrimitive.content) }
         val release = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, release.decision)
-        assertTrue(release.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertFalse(release.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
         assertFalse(release.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertFalse(release.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
         assertFalse(release.decision.name.startsWith("APPROVED"))
@@ -317,7 +317,7 @@ class CatalogIntakeTest {
         assertEquals(30, pathway.getValue("gateDefinitions").jsonArray.size)
         assertFalse(prepare.contains("\"courseSegments\": []"))
         assertTrue(prepare.contains("write_compliance_artifacts"))
-        assertTrue(prepare.contains("Share-alike confirmation stays UNCONFIRMED"))
+        assertTrue(prepare.contains("SHARE_ALIKE_CONFIRMATION"))
         assertTrue(File(root, "catalog/compliance/share-alike-package.json").isFile)
         assertTrue(File(root, "app/src/main/assets/content/catalog-notice.txt").isFile)
         assertTrue(File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").isFile)

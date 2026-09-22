@@ -41,7 +41,7 @@ class BundledContentRulesTest {
         assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT, document.gateDefinitions.size)
         assertTrue(document.optionalDrills.isEmpty())
         assertEquals(1000, document.audioModels.size)
-        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
+        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "CONFIRMED" })
         document.courseSegments.forEach { segment ->
             assertFalse(segment.lessonReference.contains("Penguin"))
             assertTrue(segment.lessonReference.none { it.code in CYRILLIC })

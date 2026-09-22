@@ -18,13 +18,13 @@ import org.robolectric.annotation.Config
 @Config(sdk = [33])
 class LocalStoreTest {
     @Test
-    fun shippedSeedOpensANewLearnerAndKeepsShareAlikeUnconfirmed() {
+    fun shippedSeedOpensANewLearnerAfterShareAlikeConfirmation() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         LocalStore.open(context).use { store ->
             val outcome = store.applySeed(shippedSeed())
             assertEquals(SeedApplyStatus.APPLIED, outcome.status)
             assertTrue(outcome.eligibleAudioCount > 0)
-            assertEquals(true, outcome.shareAlikeBlocksRelease)
+            assertEquals(false, outcome.shareAlikeBlocksRelease)
             assertEquals(1, store.learnerCount())
             assertFalse(store.learner().onboardingCompleted)
             assertEquals((1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).toList(), store.eligibleSegments().map { it.lessonNumber })

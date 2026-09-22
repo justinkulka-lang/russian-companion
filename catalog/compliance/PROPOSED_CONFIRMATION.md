@@ -1,26 +1,13 @@
-# Proposed share-alike confirmation (NOT APPLIED)
+# Proposed share-alike confirmation (ACTIVATED)
 
-Status: not activated.
+Status: activated.
 
-This file is a review artifact. It does not change
-`shareAlikeConfirmation` in the packaged seed.
+Independent review accepted the recorded conservative catalog-wide
+CC BY-SA 4.0 treatment. This commit records that acceptance by setting:
 
-The recorded catalog treatment, now stored on every packaged source
-record, applies CC BY-SA 4.0 conservatively to copyright and database
-rights in the catalog data, selection, and arrangement. It excludes
-Shtooka audio bytes, application code, and user recordings or
-user-entered data. It does not convert audio into CC BY-SA.
+- every packaged `sourceRecords.shareAlikeConfirmation` to CONFIRMED
+- `proposedConfirmation` to ACTIVATED
+- compliance-package `classification` to SHARE_ALIKE_CONFIRMED
 
-If an independent reviewer accepts that recorded treatment in
-catalog/compliance/share-alike-package.json and in every packaged
-source record, a separate explicitly reviewed change may later set
-every `sourceRecords.shareAlikeConfirmation` value from UNCONFIRMED to
-the confirmed token, set `proposedConfirmation` to ACTIVATED, and set
-the compliance-package classification to SHARE_ALIKE_CONFIRMED. See
-proposed-confirmation.json for the unapplied change list.
-
-`NOT_APPLICABLE` is not a permitted confirmation for this catalog.
-
-This pathway task does not perform that change. Public release remains
-NOT APPROVED while confirmation is unresolved and while AT-004, AT-020,
-AT-030, and AT-031 evidence remains missing.
+This activation does not satisfy AT-001, AT-004, AT-020, AT-030, or
+AT-031. Public release remains NOT APPROVED.

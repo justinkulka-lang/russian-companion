@@ -60,7 +60,7 @@ class AttributionsUiTest {
     }
 
     @Test
-    fun packagedSeedShowsInstalledInventoryAndShareAlikeBlock() {
+    fun packagedSeedShowsInstalledInventoryAfterShareAlikeConfirmation() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -72,7 +72,8 @@ class AttributionsUiTest {
         )
 
         click("Attributions and licenses")
-        show("Public release is blocked until share-alike confirmation is recorded.")
+        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+            .assertDoesNotExist()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
         compose.onNodeWithText("Catalog notice", substring = false).performScrollTo().assertIsDisplayed()
@@ -90,7 +91,7 @@ class AttributionsUiTest {
         show("Source: ${source.id}")
         show("License: ${source.licenseName}")
         show("Modification status: Unmodified")
-        show("Share-alike confirmation: Unconfirmed")
+        show("Share-alike confirmation: Confirmed")
         click("Close record")
     }
 

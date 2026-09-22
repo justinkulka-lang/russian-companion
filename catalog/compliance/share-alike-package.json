@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "classification": "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW",
-  "shareAlikeConfirmationInSeed": "UNCONFIRMED",
-  "proposedConfirmation": "NOT_ACTIVATED",
+  "classification": "SHARE_ALIKE_CONFIRMED",
+  "shareAlikeConfirmationInSeed": "CONFIRMED",
+  "proposedConfirmation": "ACTIVATED",
   "catalogShareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
   "materialTreatment": {
     "catalogDataSelectionAndArrangement": "CC BY-SA 4.0, applied conservatively to any copyright or database rights",
@@ -109,7 +109,7 @@
       "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
       "proposedDownstreamLicense": "catalog data, selection, and arrangement remain CC BY-SA 4.0; audio bytes keep their original licenses",
       "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
-      "shareAlikeConfirmation": "UNCONFIRMED",
+      "shareAlikeConfirmation": "CONFIRMED",
       "requiredNotices": [
         "licenses/cc-by-sa-4.0.txt",
         "licenses/cc-by-3.0-us.html",
@@ -174,7 +174,7 @@
       "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
       "proposedDownstreamLicense": "catalog data, selection, and arrangement remain CC BY-SA 4.0; audio bytes keep their original licenses",
       "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
-      "shareAlikeConfirmation": "UNCONFIRMED",
+      "shareAlikeConfirmation": "CONFIRMED",
       "requiredNotices": [
         "licenses/cc-by-sa-4.0.txt",
         "licenses/cc-by-3.0-us.html",
@@ -239,7 +239,7 @@
       "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
       "proposedDownstreamLicense": "catalog data, selection, and arrangement remain CC BY-SA 4.0; audio bytes keep their original licenses",
       "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
-      "shareAlikeConfirmation": "UNCONFIRMED",
+      "shareAlikeConfirmation": "CONFIRMED",
       "requiredNotices": [
         "licenses/cc-by-sa-4.0.txt",
         "licenses/cc-by-3.0-us.html",
@@ -304,7 +304,7 @@
       "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
       "proposedDownstreamLicense": "catalog data, selection, and arrangement remain CC BY-SA 4.0; audio bytes keep their original licenses",
       "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
-      "shareAlikeConfirmation": "UNCONFIRMED",
+      "shareAlikeConfirmation": "CONFIRMED",
       "requiredNotices": [
         "licenses/cc-by-sa-4.0.txt",
         "licenses/cc-by-3.0-us.html",
@@ -369,7 +369,7 @@
       "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
       "proposedDownstreamLicense": "catalog data, selection, and arrangement remain CC BY-SA 4.0; audio bytes keep their original licenses",
       "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
-      "shareAlikeConfirmation": "UNCONFIRMED",
+      "shareAlikeConfirmation": "CONFIRMED",
       "requiredNotices": [
         "licenses/cc-by-sa-4.0.txt",
         "licenses/cc-by-3.0-us.html",

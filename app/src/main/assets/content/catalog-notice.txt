@@ -4,9 +4,9 @@ This installation redistributes third-party Russian audio and
 stress-marked dictionary text. This app does not own the packaged Russian audio or stress-marked text. User recordings and user-entered
 data are not third-party catalog material.
 
-Share-alike confirmation in the packaged seed remains UNCONFIRMED.
-This notice is evidence for independent review. It is not a public
-release approval.
+Share-alike confirmation in the packaged seed is CONFIRMED for the
+conservative catalog-wide CC BY-SA 4.0 treatment. This notice is not a
+public release approval.
 
 ## Shtooka native audio
 
@@ -73,7 +73,7 @@ Transformations that were performed:
 - Packaging into the offline seed with provenance, attribution, license,
   modification, and share-alike-treatment records
 
-## Catalog share-alike treatment (recorded, not confirmed)
+## Catalog share-alike treatment (confirmed)
 
 Because Creative Commons gives no bright-line threshold for a
 "substantial" database extraction, this package applies CC BY-SA 4.0
@@ -93,7 +93,7 @@ arrangement must keep CC BY-SA 4.0 notices. Audio files must keep their
 original license notices.
 
 This recorded treatment is stored on every packaged source record as
-shareAlikeTreatment. shareAlikeConfirmation remains UNCONFIRMED.
+shareAlikeTreatment. shareAlikeConfirmation is CONFIRMED.
 
 ## Required notices packaged with this app
 

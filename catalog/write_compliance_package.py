@@ -254,11 +254,20 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
         for audio in document["audioModels"]
     )
     confirmation_in_seed = confirmations.pop() if len(confirmations) == 1 else "UNCONFIRMED"
+    if missing:
+        classification = "BLOCKED_BY_MISSING_LICENSE_EVIDENCE"
+        proposed_confirmation = "NOT_ACTIVATED"
+    elif confirmation_in_seed == "CONFIRMED":
+        classification = "SHARE_ALIKE_CONFIRMED"
+        proposed_confirmation = "ACTIVATED"
+    else:
+        classification = "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW"
+        proposed_confirmation = "NOT_ACTIVATED"
     package = {
         "schemaVersion": 1,
-        "classification": "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW",
+        "classification": classification,
         "shareAlikeConfirmationInSeed": confirmation_in_seed,
-        "proposedConfirmation": "NOT_ACTIVATED",
+        "proposedConfirmation": proposed_confirmation,
         "catalogShareAlikeTreatment": APPROVED_TREATMENT,
         "materialTreatment": material_treatment,
         "transformations": transformations,
@@ -280,8 +289,6 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
         "items": items,
         "missingOrContradictory": missing,
     }
-    if missing:
-        package["classification"] = "BLOCKED_BY_MISSING_LICENSE_EVIDENCE"
     package_path.write_text(json.dumps(package, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return package
 
