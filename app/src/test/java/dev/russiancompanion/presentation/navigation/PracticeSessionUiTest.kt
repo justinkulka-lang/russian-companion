@@ -114,6 +114,17 @@ class PracticeSessionUiTest {
         store.applySeed(
             SeedJson.encode(
                 minimalDocument().copy(
+                    planDefinitions = listOf(
+                        PlanDefinitionSeed(
+                            id = "plan-book",
+                            segmentId = "segment-1",
+                            activityType = "BOOK",
+                            instruction = "Use your copy of the book for this lesson",
+                            sortOrder = 1,
+                            required = true,
+                            lessonNumber = 1,
+                        ),
+                    ),
                     sourceTexts = listOf(text(matchVerified = false)),
                     assetRightsRecords = listOf(rights()),
                     audioModels = listOf(audio()),

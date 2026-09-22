@@ -41,6 +41,7 @@ class ProgressExportTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = openStore(context)
         store.commitRecording("audio-1", "recordings/one.m4a", "2026-09-21T09:00", true, CompletionState.NOT_COMPLETED)
+        assertTrue(store.completeListenPractice("audio-1", "2026-09-21", "2026-09-21T09:00"))
         store.commitRecording("audio-1", "recordings/two.m4a", "2026-09-21T09:01", false, CompletionState.NOT_COMPLETED)
         val recordings = store.recordings()
         val bytes = recordings.associate { it.localFileReference to "bytes-${it.id}".encodeToByteArray() }
