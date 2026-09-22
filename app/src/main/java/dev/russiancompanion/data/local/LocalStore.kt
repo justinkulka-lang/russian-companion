@@ -5,7 +5,16 @@ import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
 import dev.russiancompanion.domain.gate.GateEvaluation
+import dev.russiancompanion.domain.plan.ActivityLogView
+import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.practice.ListenPlanRef
+import dev.russiancompanion.domain.progress.ExportCounts
+import dev.russiancompanion.domain.progress.ProgressReview
+import dev.russiancompanion.domain.progress.ProgressSnapshot
+import dev.russiancompanion.domain.progress.activityLogAccepted
+import dev.russiancompanion.domain.progress.captureProgressSnapshot
+import dev.russiancompanion.domain.progress.exportCompletionAccepted
+import dev.russiancompanion.domain.progress.reproduceProgress
 import dev.russiancompanion.domain.practice.StoredRecordingRef
 import dev.russiancompanion.domain.practice.completedRecordingCountsTowardPlan
 import dev.russiancompanion.domain.practice.listenCompletionAccepted
@@ -222,6 +231,15 @@ internal class LocalStore private constructor(
         if (segmentId != null && database.bundled().segment(segmentId) == null) {
             throw IllegalArgumentException("Unknown course segment")
         }
+        val admission = activityLogAccepted(
+            category = RecordedCategory.valueOf(category.name),
+            durationMinutes = durationMinutes,
+            recordedAtLocal = recordedAtLocal,
+            selfAttested = selfAttested,
+        )
+        if (!admission.accepted) {
+            throw IllegalArgumentException(admission.reason ?: "Activity log was not accepted")
+        }
         val log = UserRecordRules.activityLog(
             category = category,
             durationMinutes = durationMinutes,
@@ -422,12 +440,32 @@ internal class LocalStore private constructor(
 
     fun recordings(): List<RecordingRecordEntity> = call { database.users().recordings() }
 
-    fun saveExport(record: ExportRecordEntity) = call {
-        if (record.logCount < 0 || record.evidenceCount < 0 || record.progressCount < 0 || record.recordingCount < 0) {
-            throw IllegalArgumentException("Export counts must be nonnegative")
+    fun saveExport(record: ExportRecordEntity, packageCounts: ExportCounts? = null): ExportRecordEntity = call {
+        val admission = exportCompletionAccepted(
+            statusName = record.status.name,
+            recorded = ExportCounts(
+                logCount = record.logCount,
+                evidenceCount = record.evidenceCount,
+                progressCount = record.progressCount,
+                recordingCount = record.recordingCount,
+            ),
+            packageCounts = packageCounts,
+            exportedAtLocal = record.exportedAtLocal,
+        )
+        if (!admission.accepted) {
+            throw IllegalArgumentException(admission.reason ?: "Export record was not accepted")
         }
-        UserRecordRules.requireTimestamp(record.exportedAtLocal)
         database.users().insertExport(record)
+        record
+    }
+
+    fun storedProgressSnapshot(): ProgressSnapshot = call {
+        captureProgressSnapshot(activityViews())
+            ?: throw IllegalArgumentException("Progress is unreadable")
+    }
+
+    fun reproduceStoredProgress(snapshot: ProgressSnapshot): ProgressReview = call {
+        reproduceProgress(snapshot, activityViews())
     }
 
     fun exports(): List<ExportRecordEntity> = call { database.users().exports() }
@@ -524,6 +562,20 @@ internal class LocalStore private constructor(
             database.users().updateLearner(learner.copy(planContext = date))
         }
         return completedAny
+    }
+
+    private fun activityViews(): List<ActivityLogView> {
+        return database.users().activityLogs().map { log ->
+            ActivityLogView(
+                id = log.id,
+                category = RecordedCategory.valueOf(log.category.name),
+                minutes = log.durationMinutes,
+                completed = log.completed,
+                recordedAtLocal = log.recordedAtLocal,
+                selfAttested = log.selfAttested,
+                segmentId = log.segmentId,
+            )
+        }
     }
 
     private fun RecordingRecordEntity.toStoredRef(): StoredRecordingRef {

@@ -7,7 +7,8 @@ internal data class CategoryTotal(
 )
 
 /**
- * Progress is recomputed from activity logs. No snapshot and no ability score is stored.
+ * Progress totals are recomputed from activity logs. A ProgressSnapshot names
+ * those log identities; it is not an ability score.
  */
 internal fun totalsFrom(logs: List<ActivityLogEntity>): List<CategoryTotal> {
     return ActivityCategory.entries.map { category ->

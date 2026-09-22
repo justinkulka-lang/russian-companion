@@ -46,6 +46,7 @@ import dev.russiancompanion.domain.plan.assembleDailyPlan
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.plan.summarizeActivity
 import dev.russiancompanion.domain.plan.summarizeGates
+import dev.russiancompanion.domain.progress.ExportCounts
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.ProgressReview
 import dev.russiancompanion.domain.progress.activityAttestationLabel
@@ -433,6 +434,12 @@ internal class RoomNavigationGateway(
                         evidenceCount = built.evidenceCount,
                         progressCount = built.progressCount,
                         recordingCount = built.recordingCount,
+                        packageCounts = ExportCounts(
+                            logCount = built.logCount,
+                            evidenceCount = built.evidenceCount,
+                            progressCount = built.progressCount,
+                            recordingCount = built.recordingCount,
+                        ),
                     )
                     ExportUpdate.Completed(built.empty)
                 }
@@ -456,6 +463,7 @@ internal class RoomNavigationGateway(
         evidenceCount: Int = 0,
         progressCount: Int = 0,
         recordingCount: Int = 0,
+        packageCounts: ExportCounts? = null,
     ) {
         store.saveExport(
             ExportRecordEntity(
@@ -469,6 +477,7 @@ internal class RoomNavigationGateway(
                 recordingCount = recordingCount,
                 status = status,
             ),
+            packageCounts = packageCounts,
         )
     }
 

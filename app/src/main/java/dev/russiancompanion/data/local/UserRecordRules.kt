@@ -1,5 +1,7 @@
 package dev.russiancompanion.data.local
 
+import dev.russiancompanion.domain.plan.RecordedCategory
+import dev.russiancompanion.domain.progress.activityLogAccepted
 import java.time.LocalDate
 import java.time.format.DateTimeParseException
 import java.util.UUID
@@ -34,10 +36,16 @@ internal object UserRecordRules {
         selfAttested: Boolean,
         planActivityType: PlanActivityType?,
     ): ActivityLogEntity {
-        if (planActivityType == PlanActivityType.BOOK || planActivityType == PlanActivityType.ANKI_DROID) {
-            if (!selfAttested) {
-                throw IllegalArgumentException("Book and AnkiDroid activity must be self-attested")
-            }
+        val admission = activityLogAccepted(
+            category = RecordedCategory.valueOf(category.name),
+            durationMinutes = durationMinutes,
+            recordedAtLocal = recordedAtLocal,
+            selfAttested = selfAttested,
+            bookOrAnkiActivity = planActivityType == PlanActivityType.BOOK ||
+                planActivityType == PlanActivityType.ANKI_DROID,
+        )
+        if (!admission.accepted) {
+            throw IllegalArgumentException(admission.reason ?: "Activity log was not accepted")
         }
         return ActivityLogEntity(
             id = UUID.randomUUID().toString(),
