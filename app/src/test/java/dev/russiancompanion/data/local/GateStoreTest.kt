@@ -205,6 +205,123 @@ class GateStoreTest {
         }
     }
 
+    @Test
+    fun saveGateDecisionRejectsFabricatedResultsAndWrongEvidence() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        LocalStore.openInMemory(context).use { store ->
+            val second = defaultGateConditionSeeds().map { it.copy(id = "${it.id}-b") }
+            store.applySeed(
+                SeedJson.encode(
+                    gateDocument().copy(
+                        gateDefinitions = listOf(
+                            gate(),
+                            gate(second).copy(id = "gate-2", displayedRuleText = displayedRuleTextFor(second)),
+                        ),
+                    ),
+                ),
+            )
+            store.confirmLesson("segment-1", "2026-09-21")
+            val satisfied = store.recordGateEvidenceAndDecide(
+                gateDefinitionId = "gate-1",
+                entries = listOf(
+                    EvidenceType.BOOK_REVISION_SCORE to "1",
+                    EvidenceType.ANKI_DROID_STATUS to AnkiStatusValue.MATURE.name,
+                    EvidenceType.PRESCRIBED_WORK_COMPLETION to PRESENCE_RECORDED,
+                ),
+                recordedAtLocal = "2026-09-21T09:00",
+            )
+            val ids = parseEvidenceIds(satisfied.evidenceIds)
+            val other = store.recordEvidence(
+                gateDefinitionId = "gate-2",
+                evidenceType = EvidenceType.BOOK_REVISION_SCORE,
+                enteredValue = "1",
+                recordedAtLocal = "2026-09-21T09:01",
+            )
+            val before = store.decisions().size
+            try {
+                store.saveGateDecision(
+                    gateDefinitionId = "gate-1",
+                    ruleVersion = "1",
+                    evidenceIds = ids + "missing-evidence",
+                    conditionOutcomes = satisfied.conditionOutcomes,
+                    status = GateDecisionStatus.SATISFIED,
+                    evaluatedAtLocal = "2026-09-21T09:02",
+                )
+                error("missing evidence was saved")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.decisions().size)
+            }
+            try {
+                store.saveGateDecision(
+                    gateDefinitionId = "gate-1",
+                    ruleVersion = "1",
+                    evidenceIds = ids + ids.first(),
+                    conditionOutcomes = satisfied.conditionOutcomes,
+                    status = GateDecisionStatus.SATISFIED,
+                    evaluatedAtLocal = "2026-09-21T09:02",
+                )
+                error("duplicated evidence was saved")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.decisions().size)
+            }
+            try {
+                store.saveGateDecision(
+                    gateDefinitionId = "gate-1",
+                    ruleVersion = "1",
+                    evidenceIds = ids + other.id,
+                    conditionOutcomes = satisfied.conditionOutcomes,
+                    status = GateDecisionStatus.SATISFIED,
+                    evaluatedAtLocal = "2026-09-21T09:02",
+                )
+                error("wrong-gate evidence was saved")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.decisions().size)
+            }
+            try {
+                store.saveGateDecision(
+                    gateDefinitionId = "gate-1",
+                    ruleVersion = "1",
+                    evidenceIds = ids,
+                    conditionOutcomes = satisfied.conditionOutcomes,
+                    status = GateDecisionStatus.NOT_YET_SATISFIED,
+                    evaluatedAtLocal = "2026-09-21T09:02",
+                )
+                error("a fabricated status was saved")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.decisions().size)
+            }
+            try {
+                store.saveGateDecision(
+                    gateDefinitionId = "gate-1",
+                    ruleVersion = "1",
+                    evidenceIds = ids,
+                    conditionOutcomes = "not-json",
+                    status = GateDecisionStatus.SATISFIED,
+                    evaluatedAtLocal = "2026-09-21T09:02",
+                )
+                error("unreadable outcomes were saved")
+            } catch (_: IllegalArgumentException) {
+                assertEquals(before, store.decisions().size)
+            }
+            val stored = store.saveGateDecision(
+                gateDefinitionId = "gate-1",
+                ruleVersion = "1",
+                evidenceIds = ids,
+                conditionOutcomes = satisfied.conditionOutcomes,
+                status = GateDecisionStatus.SATISFIED,
+                evaluatedAtLocal = "2026-09-21T09:02",
+            )
+            assertEquals(GateDecisionStatus.SATISFIED, stored.status)
+            assertTrue(
+                reproducedDecisionMatches(
+                    stored.status.toGateStatus(),
+                    storedOutcomes(stored),
+                    store.reproduceStoredDecision(stored),
+                ),
+            )
+        }
+    }
+
     private fun gateDocument(ruleVersion: String = "1", bookMinimum: String = "1") = minimalDocument().copy(
         planDefinitions = listOf(
             PlanDefinitionSeed(

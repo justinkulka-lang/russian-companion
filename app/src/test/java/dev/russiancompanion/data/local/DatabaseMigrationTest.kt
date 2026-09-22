@@ -5,9 +5,12 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.sqlite.db.SupportSQLiteOpenHelper
 import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.domain.gate.ConditionOutcome
 import dev.russiancompanion.domain.gate.GateEvidenceKind
 import dev.russiancompanion.domain.gate.GateStatus
 import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.UNRECOVERABLE_RULE_SNAPSHOT
+import dev.russiancompanion.domain.gate.USER_ADDED_TUTOR_CONDITION_ID
 import dev.russiancompanion.domain.gate.decodeConditionOutcomes
 import dev.russiancompanion.domain.gate.defaultAdvancementRule
 import dev.russiancompanion.domain.gate.displayedRuleText
@@ -15,6 +18,7 @@ import dev.russiancompanion.domain.gate.parseEvidenceIds
 import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
 import dev.russiancompanion.domain.gate.reproduceDecision
 import dev.russiancompanion.domain.gate.reproducedDecisionMatches
+import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
@@ -532,5 +536,259 @@ class DatabaseMigrationTest {
         val reproduced = reproduceDecision(snapshot, evidenceIds, recorded)
         assertTrue(reproducedDecisionMatches(GateStatus.SATISFIED, outcomes, reproduced))
         helper.close()
+    }
+
+    @Test
+    fun version3DecisionsBeforeAndAfterTutorDoNotInventAHistoricalRule() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("capability2-v3-tutor.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(3) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        createVersion3GateTables(db)
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL("PRAGMA foreign_keys = ON")
+        db.execSQL(
+            """
+            INSERT INTO course_segments (id, lessonReference, lessonNumber, sortOrder, eligibilityStatus)
+            VALUES ('segment-1', 'Lesson 1', 1, 1, 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_definitions (id, segmentId, ruleVersion, displayedRuleText, eligibilityStatus)
+            VALUES ('gate-1', 'segment-1', '1', 'Displayed test rule', 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_conditions (id, gateDefinitionId, evidenceType, operator, operand, sortOrder)
+            VALUES
+                ('c-book', 'gate-1', 'BOOK_REVISION_SCORE', 'AT_LEAST', '1', 0),
+                ('c-anki', 'gate-1', 'ANKI_DROID_STATUS', 'EQUALS', 'MATURE', 1),
+                ('c-work', 'gate-1', 'PRESCRIBED_WORK_COMPLETION', 'PRESENT', NULL, 2)
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_tutor_requirements (gateDefinitionId, recordedAtLocal)
+            VALUES ('gate-1', '2026-09-21T11:00')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_evidence (
+                id, gateDefinitionId, evidenceType, enteredValue, selfAttestationStatus, recordedAtLocal
+            ) VALUES
+                ('ev-book', 'gate-1', 'BOOK_REVISION_SCORE', '1', 'SELF_ATTESTED', '2026-09-21T09:00'),
+                ('ev-anki', 'gate-1', 'ANKI_DROID_STATUS', 'MATURE', 'SELF_ATTESTED', '2026-09-21T09:00'),
+                ('ev-work', 'gate-1', 'PRESCRIBED_WORK_COMPLETION', 'recorded', 'USER_RECORDED', '2026-09-21T09:00'),
+                ('ev-tutor', 'gate-1', 'TUTOR_SIGN_OFF', 'recorded', 'USER_RECORDED', '2026-09-21T12:00'),
+                ('ev-book-low', 'gate-1', 'BOOK_REVISION_SCORE', '0', 'SELF_ATTESTED', '2026-09-21T08:00')
+            """.trimIndent(),
+        )
+        val beforeTutor = listOf(
+            "c-book\tev-book\tSATISFIED",
+            "c-anki\tev-anki\tSATISFIED",
+            "c-work\tev-work\tSATISFIED",
+        ).joinToString(separator = "\n")
+        val afterTutor = listOf(
+            "c-book\tev-book\tSATISFIED",
+            "c-anki\tev-anki\tSATISFIED",
+            "c-work\tev-work\tSATISFIED",
+            "${USER_ADDED_TUTOR_CONDITION_ID}\tev-tutor\tSATISFIED",
+        ).joinToString(separator = "\n")
+        db.execSQL(
+            """
+            INSERT INTO gate_decisions (
+                id, gateDefinitionId, ruleVersion, evidenceIds, conditionOutcomes, status, evaluatedAtLocal
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """.trimIndent(),
+            arrayOf("dec-a", "gate-1", "1", "ev-book,ev-anki,ev-work", beforeTutor, "SATISFIED", "2026-09-21T09:03"),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_decisions (
+                id, gateDefinitionId, ruleVersion, evidenceIds, conditionOutcomes, status, evaluatedAtLocal
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """.trimIndent(),
+            arrayOf(
+                "dec-b",
+                "gate-1",
+                "1",
+                "ev-book,ev-anki,ev-work,ev-tutor",
+                afterTutor,
+                "SATISFIED",
+                "2026-09-21T12:01",
+            ),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_decisions (
+                id, gateDefinitionId, ruleVersion, evidenceIds, conditionOutcomes, status, evaluatedAtLocal
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """.trimIndent(),
+            arrayOf(
+                "dec-c",
+                "gate-1",
+                "1",
+                "ev-book-low,ev-anki,ev-work",
+                beforeTutor,
+                "SATISFIED",
+                "2026-09-21T08:30",
+            ),
+        )
+        MIGRATION_3_4.migrate(db)
+
+        val decisionA = queryDecision(db, "dec-a")
+        val decisionB = queryDecision(db, "dec-b")
+        val decisionC = queryDecision(db, "dec-c")
+        val snapshotA = parseGateRuleSnapshot(decisionA.snapshot)
+        val snapshotB = parseGateRuleSnapshot(decisionB.snapshot)
+        assertEquals("SATISFIED", decisionA.status)
+        assertEquals("SATISFIED", decisionB.status)
+        assertEquals("SATISFIED", decisionC.status)
+        assertEquals(UNRECOVERABLE_RULE_SNAPSHOT, decisionC.snapshot)
+        assertEquals(null, parseGateRuleSnapshot(decisionC.snapshot))
+        assertEquals(
+            displayedRuleText(defaultAdvancementRule()),
+            snapshotA?.displayedRuleText,
+        )
+        assertEquals(
+            displayedRuleText(defaultAdvancementRule() + tutorSignOffCondition()),
+            snapshotB?.displayedRuleText,
+        )
+        assertTrue(snapshotA!!.conditions.none { it.kind == GateEvidenceKind.TUTOR_SIGN_OFF.name })
+        assertTrue(snapshotB!!.conditions.any { it.kind == GateEvidenceKind.TUTOR_SIGN_OFF.name })
+
+        val recorded = listOf(
+            RecordedEvidence("ev-book", GateEvidenceKind.BOOK_REVISION_SCORE, "1", "2026-09-21T09:00"),
+            RecordedEvidence("ev-anki", GateEvidenceKind.ANKI_DROID_STATUS, "MATURE", "2026-09-21T09:00"),
+            RecordedEvidence("ev-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, "recorded", "2026-09-21T09:00"),
+            RecordedEvidence("ev-tutor", GateEvidenceKind.TUTOR_SIGN_OFF, "recorded", "2026-09-21T12:00"),
+        )
+        val reproducedA = reproduceDecision(decisionA.snapshot, decisionA.evidenceIds, recorded)
+        val reproducedB = reproduceDecision(decisionB.snapshot, decisionB.evidenceIds, recorded)
+        assertTrue(reproducedDecisionMatches(GateStatus.SATISFIED, decisionA.outcomes, reproducedA))
+        assertTrue(reproducedDecisionMatches(GateStatus.SATISFIED, decisionB.outcomes, reproducedB))
+        assertEquals(3, reproducedA.outcomes.size)
+        assertEquals(4, reproducedB.outcomes.size)
+        helper.close()
+    }
+
+    private fun createVersion3GateTables(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `course_segments` (
+                `id` TEXT NOT NULL,
+                `lessonReference` TEXT NOT NULL,
+                `lessonNumber` INTEGER NOT NULL,
+                `sortOrder` INTEGER NOT NULL,
+                `eligibilityStatus` TEXT NOT NULL,
+                PRIMARY KEY(`id`)
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `gate_definitions` (
+                `id` TEXT NOT NULL,
+                `segmentId` TEXT NOT NULL,
+                `ruleVersion` TEXT NOT NULL,
+                `displayedRuleText` TEXT NOT NULL,
+                `eligibilityStatus` TEXT NOT NULL,
+                PRIMARY KEY(`id`),
+                FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`)
+                ON UPDATE NO ACTION ON DELETE RESTRICT
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `gate_conditions` (
+                `id` TEXT NOT NULL,
+                `gateDefinitionId` TEXT NOT NULL,
+                `evidenceType` TEXT NOT NULL,
+                `operator` TEXT NOT NULL,
+                `operand` TEXT,
+                `sortOrder` INTEGER NOT NULL,
+                PRIMARY KEY(`id`),
+                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                ON UPDATE NO ACTION ON DELETE RESTRICT
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `gate_tutor_requirements` (
+                `gateDefinitionId` TEXT NOT NULL,
+                `recordedAtLocal` TEXT NOT NULL,
+                PRIMARY KEY(`gateDefinitionId`),
+                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                ON UPDATE NO ACTION ON DELETE RESTRICT
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `gate_evidence` (
+                `id` TEXT NOT NULL,
+                `gateDefinitionId` TEXT NOT NULL,
+                `evidenceType` TEXT NOT NULL,
+                `enteredValue` TEXT NOT NULL,
+                `selfAttestationStatus` TEXT NOT NULL,
+                `recordedAtLocal` TEXT NOT NULL,
+                PRIMARY KEY(`id`),
+                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                ON UPDATE NO ACTION ON DELETE RESTRICT
+            )
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            CREATE TABLE IF NOT EXISTS `gate_decisions` (
+                `id` TEXT NOT NULL,
+                `gateDefinitionId` TEXT NOT NULL,
+                `ruleVersion` TEXT NOT NULL,
+                `evidenceIds` TEXT NOT NULL,
+                `conditionOutcomes` TEXT NOT NULL,
+                `status` TEXT NOT NULL,
+                `evaluatedAtLocal` TEXT NOT NULL,
+                PRIMARY KEY(`id`),
+                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                ON UPDATE NO ACTION ON DELETE RESTRICT
+            )
+            """.trimIndent(),
+        )
+    }
+
+    private data class MigratedDecision(
+        val snapshot: String,
+        val evidenceIds: List<String>,
+        val outcomes: List<ConditionOutcome>,
+        val status: String,
+    )
+
+    private fun queryDecision(db: SupportSQLiteDatabase, id: String): MigratedDecision {
+        val cursor = db.query(
+            "SELECT ruleSnapshot, evidenceIds, conditionOutcomes, status FROM gate_decisions WHERE id = ?",
+            arrayOf(id),
+        )
+        cursor.moveToFirst()
+        val row = MigratedDecision(
+            snapshot = cursor.getString(0),
+            evidenceIds = parseEvidenceIds(cursor.getString(1)),
+            outcomes = decodeConditionOutcomes(cursor.getString(2)),
+            status = cursor.getString(3),
+        )
+        cursor.close()
+        return row
     }
 }

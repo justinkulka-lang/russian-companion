@@ -19,9 +19,12 @@ import dev.russiancompanion.domain.gate.evaluateGate
 import dev.russiancompanion.domain.gate.evidenceEntryAccepted
 import dev.russiancompanion.domain.gate.gateIsLocked
 import dev.russiancompanion.domain.gate.gateRuleSnapshot
+import dev.russiancompanion.domain.gate.parseConditionOutcomes
 import dev.russiancompanion.domain.gate.parseEvidenceIds
+import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
 import dev.russiancompanion.domain.gate.remainingKinds
 import dev.russiancompanion.domain.gate.reproduceDecision
+import dev.russiancompanion.domain.gate.reproducedDecisionMatches
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import java.util.UUID
 
@@ -140,6 +143,54 @@ internal fun storedGateDecision(
     return evaluation.toDecision(gate, rule, evaluatedAtLocal)
 }
 
+internal fun verifiedCallerDecision(
+    gate: GateDefinitionEntity,
+    conditions: List<GateConditionEntity>,
+    tutorRequired: Boolean,
+    evidenceIds: List<String>,
+    availableEvidence: List<GateEvidenceEntity>,
+    conditionOutcomes: String,
+    status: GateDecisionStatus,
+    evaluatedAtLocal: String,
+): GateDecisionEntity {
+    if (evidenceIds.size != evidenceIds.toSet().size) {
+        throw IllegalArgumentException("Evidence IDs must be unique")
+    }
+    val byId = availableEvidence.associateBy { it.id }
+    val resolved = evidenceIds.map { id ->
+        val row = byId[id] ?: throw IllegalArgumentException("Named evidence is missing")
+        if (row.gateDefinitionId != gate.id) {
+            throw IllegalArgumentException("Evidence belongs to a different gate")
+        }
+        row
+    }
+    val snapshot = gateRuleSnapshot(gate.ruleVersion, ruleConditions(conditions, tutorRequired))
+    val encodedSnapshot = encodeGateRuleSnapshot(snapshot)
+    if (parseGateRuleSnapshot(encodedSnapshot) == null) {
+        throw IllegalArgumentException("A canonical rule snapshot is required")
+    }
+    val parsedOutcomes = parseConditionOutcomes(conditionOutcomes)
+        ?: throw IllegalArgumentException("Condition outcomes are required")
+    val reproduced = reproduceDecision(
+        ruleSnapshot = encodedSnapshot,
+        recordedEvidenceIds = evidenceIds,
+        evidence = resolved.map { it.toRecorded() },
+    )
+    if (!reproducedDecisionMatches(status.toGateStatus(), parsedOutcomes, reproduced)) {
+        throw IllegalArgumentException("The decision is not reproducible from the stored rule and evidence")
+    }
+    return GateDecisionEntity(
+        id = UUID.randomUUID().toString(),
+        gateDefinitionId = gate.id,
+        ruleVersion = snapshot.version,
+        ruleSnapshot = encodedSnapshot,
+        evidenceIds = encodeEvidenceIds(evidenceIds),
+        conditionOutcomes = encodeConditionOutcomes(parsedOutcomes),
+        status = status,
+        evaluatedAtLocal = evaluatedAtLocal,
+    )
+}
+
 private fun comparisonsFor(
     evidenceType: EvidenceType,
     conditions: List<GateConditionEntity>,
@@ -151,7 +202,7 @@ private fun comparisonsFor(
     return conditions.filter { it.evidenceType == evidenceType }.map { it.operator.toComparison() }
 }
 
-private fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
+internal fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
     return RecordedEvidence(
         id = id,
         kind = evidenceType.toKind(),

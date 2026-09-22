@@ -5,12 +5,7 @@ import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
 import dev.russiancompanion.domain.gate.GateEvaluation
-import dev.russiancompanion.domain.gate.encodeEvidenceIds
-import dev.russiancompanion.domain.gate.encodeGateRuleSnapshot
-import dev.russiancompanion.domain.gate.gateRuleSnapshot
-import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
 import java.io.IOException
-import java.util.UUID
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.Executors
@@ -337,22 +332,15 @@ internal class LocalStore private constructor(
         evaluatedAtLocal: String,
     ): GateDecisionEntity = call {
         val gate = database.bundled().gate(gateDefinitionId) ?: throw IllegalArgumentException("Unknown gate")
-        val conditions = database.bundled().conditions(gate.id)
-        val tutorRequired = database.users().tutorRequirement(gate.id) != null
-        val snapshot = gateRuleSnapshot(gate.ruleVersion, ruleConditions(conditions, tutorRequired))
-        if (ruleVersion.isBlank() || ruleVersion != snapshot.version) {
+        if (ruleVersion.isBlank() || ruleVersion != gate.ruleVersion) {
             throw IllegalArgumentException("The decision must name the stored rule version")
         }
-        if (parseGateRuleSnapshot(encodeGateRuleSnapshot(snapshot)) == null) {
-            throw IllegalArgumentException("A canonical rule snapshot is required")
-        }
-        if (conditionOutcomes.isBlank()) throw IllegalArgumentException("Condition outcomes are required")
-        val decision = GateDecisionEntity(
-            id = UUID.randomUUID().toString(),
-            gateDefinitionId = gate.id,
-            ruleVersion = snapshot.version,
-            ruleSnapshot = encodeGateRuleSnapshot(snapshot),
-            evidenceIds = encodeEvidenceIds(evidenceIds),
+        val decision = verifiedCallerDecision(
+            gate = gate,
+            conditions = database.bundled().conditions(gate.id),
+            tutorRequired = database.users().tutorRequirement(gate.id) != null,
+            evidenceIds = evidenceIds,
+            availableEvidence = database.users().allEvidence(),
             conditionOutcomes = conditionOutcomes,
             status = status,
             evaluatedAtLocal = UserRecordRules.requireTimestamp(evaluatedAtLocal),

@@ -53,7 +53,7 @@ internal fun encodeGateRuleSnapshot(snapshot: GateRuleSnapshot): String {
 }
 
 internal fun parseGateRuleSnapshot(raw: String): GateRuleSnapshot? {
-    if (raw.isBlank()) return null
+    if (raw.isBlank() || raw == UNRECOVERABLE_RULE_SNAPSHOT) return null
     return try {
         val snapshot = GateJson.decodeFromString(GateRuleSnapshot.serializer(), raw)
         val conditions = conditionsFromSnapshot(snapshot) ?: return null
@@ -110,11 +110,14 @@ internal fun encodeConditionOutcomes(outcomes: List<ConditionOutcome>): String {
     return GateJson.encodeToString(snapshots)
 }
 
-internal fun decodeConditionOutcomes(encoded: String): List<ConditionOutcome> {
-    if (encoded.isBlank()) return emptyList()
+internal const val UNRECOVERABLE_RULE_SNAPSHOT = "UNRECOVERABLE"
+
+internal fun parseConditionOutcomes(encoded: String): List<ConditionOutcome>? {
+    if (encoded.isBlank()) return null
     return try {
-        GateJson.decodeFromString<List<GateOutcomeSnapshot>>(encoded).mapNotNull { snapshot ->
-            val result = ConditionResult.entries.firstOrNull { it.name == snapshot.result } ?: return@mapNotNull null
+        val snapshots = GateJson.decodeFromString<List<GateOutcomeSnapshot>>(encoded)
+        snapshots.map { snapshot ->
+            val result = ConditionResult.entries.firstOrNull { it.name == snapshot.result } ?: return null
             ConditionOutcome(
                 conditionId = snapshot.conditionId,
                 evidenceId = snapshot.evidenceId,
@@ -122,10 +125,34 @@ internal fun decodeConditionOutcomes(encoded: String): List<ConditionOutcome> {
             )
         }
     } catch (_: SerializationException) {
-        emptyList()
+        null
     } catch (_: IllegalArgumentException) {
-        emptyList()
+        null
     }
+}
+
+internal fun parseLegacyConditionOutcomes(encoded: String): List<ConditionOutcome>? {
+    if (encoded.isBlank()) return null
+    val lines = encoded.split('\n')
+    if (lines.isEmpty()) return null
+    return lines.map { line ->
+        val parts = line.split('\t')
+        if (parts.size != 3) return null
+        val result = ConditionResult.entries.firstOrNull { it.name == parts[2] } ?: return null
+        ConditionOutcome(
+            conditionId = parts[0],
+            evidenceId = parts[1].ifEmpty { null },
+            result = result,
+        )
+    }
+}
+
+internal fun decodeConditionOutcomes(encoded: String): List<ConditionOutcome> {
+    return parseConditionOutcomes(encoded) ?: parseLegacyConditionOutcomes(encoded).orEmpty()
+}
+
+internal fun parseStoredGateStatus(raw: String): GateStatus? {
+    return GateStatus.entries.firstOrNull { it.name == raw }
 }
 
 internal fun decodeLegacyConditionOutcomes(encoded: String): List<ConditionOutcome> {
