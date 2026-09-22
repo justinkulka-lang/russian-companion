@@ -1,6 +1,8 @@
 # FUNCTIONAL DESIGN v1.0
 ## Offline Russian Learning Companion
 
+**Status:** SUPERSEDED historical record. Binding design is `docs/design/PREMIUM_OFFLINE_APP_BLUEPRINT_v2.0.md`.
+
 **Authority:** `MASTER_AUTHORITY_v1.0.md`  
 **Scope source:** `PRODUCT_BRIEF_v1.1.md`
 

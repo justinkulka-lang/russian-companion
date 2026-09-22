@@ -15,12 +15,12 @@ android {
         applicationId = "dev.russiancompanion"
         minSdk = 26
         targetSdk = 36
-        versionCode = 4
-        versionName = "1.1.1"
+        versionCode = 5
+        versionName = "2.0.0-dev"
         val gitCommit = providers.environmentVariable("GITHUB_SHA").orElse("local")
         buildConfigField("String", "GIT_COMMIT", "\"${gitCommit.get()}\"")
-        buildConfigField("String", "VERSION_NAME", "\"1.1.1\"")
-        buildConfigField("int", "VERSION_CODE", "4")
+        buildConfigField("String", "VERSION_NAME", "\"2.0.0-dev\"")
+        buildConfigField("int", "VERSION_CODE", "5")
     }
 
     compileOptions {

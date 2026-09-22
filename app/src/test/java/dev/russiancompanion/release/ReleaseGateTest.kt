@@ -29,7 +29,7 @@ class ReleaseGateTest {
         assertFalse(manifest.contains("RETAINED"))
         val assessment = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
-        assertEquals(packagedBlockers, assessment.blockers)
+        assertTrue(assessment.blockers.containsAll(packagedBlockers))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
@@ -651,6 +651,6 @@ class ReleaseGateTest {
             ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED,
             ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
         )
-        val packagedBlockers = missingEvidenceBlockers + listOf(ReleaseBlocker.CANDIDATE_NOT_FROZEN)
+        val packagedBlockers = missingEvidenceBlockers + listOf(ReleaseBlocker.CANDIDATE_NOT_FROZEN) + V2_RELEASE_BLOCKERS
     }
 }

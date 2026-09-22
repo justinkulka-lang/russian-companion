@@ -6,9 +6,9 @@
   "sourceCommit": null,
   "gradleTask": "assembleDebug",
   "applicationId": "dev.russiancompanion",
-  "versionName": "1.1.1",
-  "versionCode": 4,
-  "sourceDigest": "6c715dae04ed83c94dafec6d6c575b6b15bc7f15e01dbaa2c4127cec9861d1b0",
+  "versionName": "2.0.0-dev",
+  "versionCode": 5,
+  "sourceDigest": "6a5fac7749dd31563d5877d90d3d75658134659c7d04eb4202586ab6c7b374ab",
   "doNotRebuildForHashMatch": false,
   "artifact": {
     "status": "NOT_RECORDED"
@@ -71,7 +71,7 @@
       "apkBytes": 29081799
     }
   },
-  "circularityResolution": "assembleRelease, bundleRelease, packageRelease, packageReleaseBundle, and other release output tasks depend on checkReleaseGate. The gate recomputes the release source digest and fails closed if it does not match this manifest and retained evidence. Physical procedures require an installed debug candidate first. GitHub Actions publishes assembleDebug as artifact acceptance-candidate-debug-apk. It does not bypass or weaken the release gate. Version 1.1.1 / versionCode 4 is NOT_FROZEN and NOT_APPROVED. The failed frozen 1.1.0 APK from run 35765579094 is preserved as preservedFailedCandidate and cannot authorize 1.1.1. The frozen 1.0.0 APK from run 35754785768 is preserved historically. The 0.0.0 APK from run 35740338300 is also preserved.",
+  "circularityResolution": "assembleRelease stays fail-closed through checkReleaseGate. Version 2.0.0-dev / versionCode 5 is NOT_FROZEN and NOT_APPROVED. The failed frozen 1.1.0 APK from run 35765579094 is preserved as preservedFailedCandidate and cannot authorize this version. The v1.1.1 physical-review line is pedagogically rejected and was never frozen. The frozen 1.0.0 APK from run 35754785768 and the 0.0.0 APK from run 35740338300 remain historical. v2 content completeness, linguistic review, and Penguin mapping approval now block public release in addition to missing AT evidence.",
   "retainedEvidence": "MISSING",
   "unexecutedProcedures": [
     "AT-001",

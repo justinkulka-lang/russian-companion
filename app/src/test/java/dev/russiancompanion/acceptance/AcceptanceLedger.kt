@@ -8,12 +8,9 @@ package dev.russiancompanion.acceptance
  * Release-hardening copy now present in the app:
  * generic offline-companion onboarding; grammar practice in the user's book and answer key;
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
- * AT-001 stays outstanding: a release candidate with complete bundled content
- * has not been accepted. The packaged seed now contains a structural Lessons
- * 1-30 conductor with generic book, AnkiDroid, listen-record-compare, and
- * optional tutor plans plus tutor-free default gates. Listen plans bind
- * already-packaged catalog audio in catalog order; that is not a Penguin
- * lesson mapping. Structural tests do not satisfy AT-001.
+ * AT-001 stays outstanding. The v2 pack installs Units 1-2 as a foundation
+ * slice and labels Units 3-30 not yet installed. Linguistic review and
+ * Penguin edition mapping are pending. Structural tests do not satisfy AT-001.
  * AT-002, AT-004, AT-008, AT-009, AT-010, AT-020, AT-030, and AT-031
  * stay outstanding. A physical-device acceptance package lives under
  * release/acceptance/; those forms and working audits are not retained

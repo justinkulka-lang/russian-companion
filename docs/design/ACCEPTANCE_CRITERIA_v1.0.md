@@ -1,6 +1,8 @@
 # ACCEPTANCE CRITERIA v1.0
 ## Offline Russian Learning Companion — Test Map
 
+**Status:** SUPERSEDED historical record. Binding acceptance is `MASTER_AUTHORITY_v2.0.md` §§16 and 19. Outstanding AT procedures remain unexecuted.
+
 **Authority:** `MASTER_AUTHORITY_v1.0.md`  
 **Scope source:** `PRODUCT_BRIEF_v1.1.md`
 

@@ -1,7 +1,7 @@
 # PRODUCT BRIEF v1.1
 ## Offline Russian Learning Companion
 
-**Status:** Product definition for v1, with subordinate v1.1 usability additions  
+**Status:** SUPERSEDED historical record. Binding product definition is `docs/design/PREMIUM_OFFLINE_APP_BLUEPRINT_v2.0.md`.  
 
 **Companion course:** *The New Penguin Russian Course*  
 **Evidence base:** `RESEARCH_DOSSIER_v1.0.md`, treated as evidence rather than authority

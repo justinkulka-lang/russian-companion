@@ -624,6 +624,117 @@ internal class LocalStore private constructor(
         }
     }
 
+    fun v2Profile(): dev.russiancompanion.v2.data.V2ProfileEntity = call {
+        val dao = database.v2()
+        dao.insertProfileIfAbsent(dev.russiancompanion.v2.data.V2ProfileEntity.fresh())
+        dao.profile(dev.russiancompanion.v2.data.V2ProfileEntity.LOCAL_ID)
+            ?: dev.russiancompanion.v2.data.V2ProfileEntity.fresh()
+    }
+
+    fun v2SaveProfile(profile: dev.russiancompanion.v2.data.V2ProfileEntity) = call {
+        database.v2().updateProfile(profile)
+    }
+
+    fun v2LearnerView(): dev.russiancompanion.v2.curriculum.V2LearnerView = call {
+        val profile = run {
+            val dao = database.v2()
+            dao.insertProfileIfAbsent(dev.russiancompanion.v2.data.V2ProfileEntity.fresh())
+            dao.profile(dev.russiancompanion.v2.data.V2ProfileEntity.LOCAL_ID)
+                ?: dev.russiancompanion.v2.data.V2ProfileEntity.fresh()
+        }
+        val dao = database.v2()
+        val correct = dao.attempts().filter { it.correct }.map { it.itemId }.toSet()
+        dev.russiancompanion.v2.curriculum.V2LearnerView(
+            onboardingCompleted = profile.onboardingCompleted,
+            currentUnitNumber = profile.currentUnitNumber,
+            startingPoint = dev.russiancompanion.v2.curriculum.V2StartingPoint.valueOf(profile.startingPoint),
+            hasPenguin = profile.hasPenguin,
+            hasAnki = profile.hasAnki,
+            hasBinder = profile.hasBinder,
+            hasTutor = profile.hasTutor,
+            dailyMinutes = profile.dailyMinutes,
+            transliterationEnabled = profile.transliterationEnabled,
+            currentSessionId = profile.currentSessionId,
+            currentStepIndex = profile.currentStepIndex,
+            completedStepIds = dao.steps().map { it.stepId }.toSet(),
+            correctItemIds = correct,
+            bookAttestedUnits = dao.bookAttestations().map { it.unitNumber }.toSet(),
+            completedUnitNumbers = dao.unitCompletions().map { it.unitNumber }.toSet(),
+        )
+    }
+
+    fun v2CompleteStep(stepId: String, recordedAtLocal: String) = call {
+        database.v2().upsertStep(
+            dev.russiancompanion.v2.data.V2StepProgressEntity(stepId, recordedAtLocal),
+        )
+    }
+
+    fun v2RecordAttempt(itemId: String, selected: String, correct: Boolean, recordedAtLocal: String) = call {
+        database.v2().insertAttempt(
+            dev.russiancompanion.v2.data.V2AttemptEntity(
+                id = "$itemId:$recordedAtLocal:${selected.hashCode()}",
+                itemId = itemId,
+                selected = selected,
+                correct = correct,
+                recordedAtLocal = recordedAtLocal,
+            ),
+        )
+    }
+
+    fun v2ToggleBookmark(targetId: String, kind: String, recordedAtLocal: String): Boolean = call {
+        val existing = database.v2().bookmarks().any { it.targetId == targetId }
+        if (existing) {
+            database.v2().deleteBookmark(targetId)
+            false
+        } else {
+            database.v2().upsertBookmark(
+                dev.russiancompanion.v2.data.V2BookmarkEntity(targetId, kind, recordedAtLocal),
+            )
+            true
+        }
+    }
+
+    fun v2AddNote(targetId: String, text: String, recordedAtLocal: String) = call {
+        database.v2().insertNote(
+            dev.russiancompanion.v2.data.V2NoteEntity(
+                id = "$targetId:$recordedAtLocal",
+                targetId = targetId,
+                text = text,
+                createdAtLocal = recordedAtLocal,
+                userAuthoredRussian = false,
+            ),
+        )
+    }
+
+    fun v2AddTutorItem(targetId: String, note: String, recordedAtLocal: String) = call {
+        database.v2().insertTutorItem(
+            dev.russiancompanion.v2.data.V2TutorItemEntity(
+                id = "$targetId:$recordedAtLocal",
+                targetId = targetId,
+                note = note,
+                createdAtLocal = recordedAtLocal,
+            ),
+        )
+    }
+
+    fun v2AttestBook(unitNumber: Int, recordedAtLocal: String) = call {
+        database.v2().upsertBookAttestation(
+            dev.russiancompanion.v2.data.V2BookAttestationEntity(unitNumber, recordedAtLocal),
+        )
+    }
+
+    fun v2CompleteUnit(unitNumber: Int, recordedAtLocal: String) = call {
+        database.v2().upsertUnitCompletion(
+            dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
+        )
+    }
+
+    fun v2Bookmarks(): List<dev.russiancompanion.v2.data.V2BookmarkEntity> = call { database.v2().bookmarks() }
+
+    fun v2Notes(): List<dev.russiancompanion.v2.data.V2NoteEntity> = call { database.v2().notes() }
+
+    fun v2TutorQueue(): List<dev.russiancompanion.v2.data.V2TutorItemEntity> = call { database.v2().tutorQueue() }
+
     private fun RecordingRecordEntity.toStoredRef(): StoredRecordingRef {
         return StoredRecordingRef(
             audioModelId = audioModelId,
@@ -667,7 +778,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -678,6 +789,16 @@ internal class LocalStore private constructor(
         fun openInMemory(context: Context): LocalStore {
             val database = Room.inMemoryDatabaseBuilder(context, AppDatabase::class.java).build()
             val store = LocalStore(database, File(context.filesDir, "recordings"))
+            store.applySeed(null)
+            return store
+        }
+
+        fun openNamed(context: Context, name: String): LocalStore {
+            val appContext = context.applicationContext
+            val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
+                .build()
+            val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)
             return store
         }

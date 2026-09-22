@@ -1,7 +1,7 @@
 # MASTER AUTHORITY v1.0
 ## Offline Russian Learning Companion
 
-**Status:** Governing requirements for v1  
+**Status:** SUPERSEDED historical record. Binding authority is `docs/governance/MASTER_AUTHORITY_v2.0.md`. Do not implement from this file.  
 **Normative source:** `PRODUCT_BRIEF_v1.1.md`  
 **Evidence-only source:** `RESEARCH_DOSSIER_v1.0.md`
 

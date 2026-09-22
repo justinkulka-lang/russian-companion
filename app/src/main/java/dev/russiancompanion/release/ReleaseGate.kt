@@ -52,6 +52,10 @@ internal enum class ReleaseBlocker(val message: String) {
     CANDIDATE_NOT_FROZEN("The acceptance candidate is not frozen."),
     CANDIDATE_ARTIFACT_UNRECORDED("The frozen candidate APK identity is not recorded."),
     FAILED_CANDIDATE_REUSED("A failed frozen acceptance candidate cannot authorize this version."),
+    V2_UNITS_NOT_INSTALLED("Required Penguin-aligned units are not installed."),
+    LINGUISTIC_REVIEW_ABSENT("Qualified linguistic review is not recorded."),
+    PENGUIN_MAPPING_UNAPPROVED("Penguin edition mappings are not reviewer-approved."),
+    V2_MAPPED_AUDIO_ABSENT("Units 1-2 have no reviewer-mapped licensed audio."),
 }
 
 internal data class ReleaseAssessment(
@@ -141,6 +145,7 @@ internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
         addAll(assessment.blockers)
         addAll(packagedNoticeBlockers(repositoryRoot, seed))
         addAll(sourceBindingBlockers(binding, candidate, recorded))
+        addAll(v2CurriculumBlockers(repositoryRoot))
     }.distinct()
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
     return ReleaseAssessment(decision, blockers, binding?.sourceDigest)
@@ -607,3 +612,69 @@ private fun resolveEvidenceFile(repositoryRoot: File, relative: String): File? {
     if (!candidate.path.startsWith(rootPath)) return null
     return candidate
 }
+
+internal val V2_RELEASE_BLOCKERS = listOf(
+    ReleaseBlocker.V2_UNITS_NOT_INSTALLED,
+    ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT,
+    ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED,
+    ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT,
+)
+
+private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
+    val packFile = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
+    if (!packFile.isFile || packFile.length() == 0L) return V2_RELEASE_BLOCKERS
+    return try {
+        val pack = json.decodeFromString(V2PackDocument.serializer(), packFile.readText())
+        val blockers = mutableListOf<ReleaseBlocker>()
+        val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
+        if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
+        if (pack.linguisticReview.status != "APPROVED") blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
+        if (pack.units.any { it.mappingStatus != "APPROVED" }) {
+            blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
+        }
+        val hasMappedAudio = pack.letters.any { !it.audioAssetId.isNullOrBlank() } ||
+            pack.units.any { unit ->
+                unit.sessions.any { session ->
+                    session.steps.any { it.kind == "LISTEN" && it.unavailableReason == null }
+                }
+            }
+        if (!hasMappedAudio) blockers += ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT
+        blockers
+    } catch (_: SerializationException) {
+        V2_RELEASE_BLOCKERS
+    } catch (_: IllegalArgumentException) {
+        V2_RELEASE_BLOCKERS
+    }
+}
+
+private val json = Json {
+    ignoreUnknownKeys = true
+    explicitNulls = true
+}
+
+@Serializable
+private data class V2PackDocument(
+    val linguisticReview: V2PackReview,
+    val letters: List<V2PackLetter> = emptyList(),
+    val units: List<V2PackUnit> = emptyList(),
+)
+
+@Serializable
+private data class V2PackReview(val status: String)
+
+@Serializable
+private data class V2PackLetter(val audioAssetId: String? = null)
+
+@Serializable
+private data class V2PackUnit(
+    val number: Int,
+    val installState: String,
+    val mappingStatus: String,
+    val sessions: List<V2PackSession> = emptyList(),
+)
+
+@Serializable
+private data class V2PackSession(val steps: List<V2PackStep> = emptyList())
+
+@Serializable
+private data class V2PackStep(val kind: String = "", val unavailableReason: String? = null)

@@ -74,8 +74,8 @@ class DeviceAcceptancePackageTest {
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
-        assertEquals("1.1.1", candidate.getValue("versionName").jsonPrimitive.content)
-        assertEquals(4, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
+        assertEquals("2.0.0-dev", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(5, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
         assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
         assertEquals("null", candidate.getValue("sourceCommit").toString())
         val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
