@@ -33,3 +33,6 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# One-time audio fetch cache. Retained copies live under app/src/main/assets/audio.
+catalog/audio-cache/
