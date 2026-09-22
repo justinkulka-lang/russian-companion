@@ -65,13 +65,13 @@ README_LICENSE_URLS = {
     "https://creativecommons.org/licenses/by/3.0/fr/": "CC BY 3.0 FR",
 }
 SHARE_TREATMENT_BY = (
-    "OpenRussian stress-marked headwords are CC BY-SA 4.0. "
-    "The matched audio license has no share-alike term."
+    "CC BY-SA 4.0 applies conservatively to copyright and database rights "
+    "in the packaged catalog data, selection, and arrangement. "
+    "Shtooka audio bytes keep their original CC BY or public-domain licenses "
+    "and are not converted to CC BY-SA. "
+    "Application code and user recordings or user-entered data are excluded."
 )
-SHARE_TREATMENT_SA = (
-    "OpenRussian stress-marked headwords are CC BY-SA 4.0. "
-    "The matched audio license is also share-alike."
-)
+SHARE_TREATMENT_SA = SHARE_TREATMENT_BY
 
 
 class RateLimited(RuntimeError):

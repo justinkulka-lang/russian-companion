@@ -9,8 +9,9 @@ attribution in the packaged source record. No speaker name is invented
 here.
 
 The matched stress-marked headword remains OpenRussian text under
-CC BY-SA 4.0. Public-domain audio does not remove share-alike duties
-that apply to that text.
+CC BY-SA 4.0. Catalog data, selection, and arrangement are treated
+conservatively under CC BY-SA 4.0. Public-domain audio bytes are not
+converted to CC BY-SA.
 
 Supporting records:
 - catalog/license-chains.json (licenseAuthority.license = "Public domain")

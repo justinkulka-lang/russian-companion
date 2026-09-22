@@ -27,7 +27,7 @@ class CatalogComplianceTest {
         "Public domain" to null,
     )
     private val approvedTreatment =
-        "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term."
+        "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
     private val requiredAssetNotices = listOf(
         "app/src/main/assets/content/catalog-notice.txt",
         "app/src/main/assets/licenses/cc-by-sa-4.0.txt",
@@ -147,7 +147,29 @@ class CatalogComplianceTest {
         assertTrue(notice.contains("deterministic"))
         assertTrue(notice.contains("UNCONFIRMED"))
         assertTrue(notice.contains("CC BY-SA 4.0"))
+        assertTrue(notice.contains("database rights"))
+        assertTrue(notice.contains("not converted to CC BY-SA"))
+        assertTrue(notice.contains("catalog data, selection, and arrangement"))
         assertFalse(notice.contains("This app owns"))
+        val packageJson = compliancePackage(root)
+        assertEquals(approvedTreatment, packageJson.getValue("catalogShareAlikeTreatment").jsonPrimitive.content)
+        assertEquals("NOT_ACTIVATED", packageJson.getValue("proposedConfirmation").jsonPrimitive.content)
+        assertEquals(
+            "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW",
+            packageJson.getValue("classification").jsonPrimitive.content,
+        )
+        val ambiguities = packageJson.getValue("recordedAmbiguities").jsonArray.map {
+            it.jsonObject.getValue("id").jsonPrimitive.content
+        }
+        assertFalse(ambiguities.contains("collection-versus-adaptation"))
+        val resolved = packageJson.getValue("resolvedInterpretations").jsonArray.map {
+            it.jsonObject.getValue("id").jsonPrimitive.content
+        }
+        assertTrue(resolved.contains("database-rights-substantial-extraction"))
+        val material = packageJson.getValue("materialTreatment").jsonObject
+        assertTrue(material.getValue("audioBytes").jsonPrimitive.content.contains("not converted to CC BY-SA"))
+        assertTrue(material.getValue("applicationCode").jsonPrimitive.content.contains("excluded"))
+        assertTrue(material.getValue("userRecordingsAndEnteredData").jsonPrimitive.content.contains("excluded"))
         val sa = File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").readText()
         assertTrue(sa.contains("Attribution-ShareAlike 4.0 International"))
         assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("NOT APPLIED"))
@@ -175,6 +197,7 @@ class CatalogComplianceTest {
         assertEquals("READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW", regenerated.getValue("classification").jsonPrimitive.content)
         assertEquals("UNCONFIRMED", regenerated.getValue("shareAlikeConfirmationInSeed").jsonPrimitive.content)
         assertEquals("NOT_ACTIVATED", regenerated.getValue("proposedConfirmation").jsonPrimitive.content)
+        assertEquals(approvedTreatment, regenerated.getValue("catalogShareAlikeTreatment").jsonPrimitive.content)
         val coverage = regenerated.getValue("coverage").jsonObject
         assertEquals(1000, coverage.getValue("audioModels").jsonPrimitive.content.toInt())
         assertEquals(5, coverage.getValue("sourceRecords").jsonPrimitive.content.toInt())

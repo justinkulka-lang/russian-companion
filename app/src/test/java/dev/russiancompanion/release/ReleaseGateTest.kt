@@ -142,6 +142,70 @@ class ReleaseGateTest {
     }
 
     @Test
+    fun blockedClassificationFailsClosedWhileConfirmationIsUnresolved() {
+        val root = Files.createTempDirectory("release-blocked-class").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), root)
+        replaceIn(
+            File(root, "catalog/compliance/share-alike-package.json"),
+            "\"classification\": \"READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW\"",
+            "\"classification\": \"BLOCKED_BY_UNRESOLVED_LICENSE_INTERPRETATION\"",
+        )
+        val assessment = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+    }
+
+    @Test
+    fun mismatchedActivationStateFailsClosed() {
+        val root = Files.createTempDirectory("release-activation").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), root)
+        replaceIn(
+            File(root, "catalog/compliance/share-alike-package.json"),
+            "\"proposedConfirmation\": \"NOT_ACTIVATED\"",
+            "\"proposedConfirmation\": \"ACTIVATED\"",
+        )
+        val assessment = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+    }
+
+    @Test
+    fun alteredCatalogTreatmentFailsClosed() {
+        val root = Files.createTempDirectory("release-treatment").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), root)
+        val packageFile = File(root, "catalog/compliance/share-alike-package.json")
+        packageFile.writeText(
+            """{"schemaVersion":1,"classification":"READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW","shareAlikeConfirmationInSeed":"UNCONFIRMED","proposedConfirmation":"NOT_ACTIVATED","catalogShareAlikeTreatment":"text-layer only","coverage":{"sourceRecords":5,"sourceTexts":1000,"assetRightsRecords":1000,"audioModels":1000,"itemsWithIssues":0}}""",
+        )
+        val assessment = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+    }
+
+    @Test
+    fun confirmedSeedWithUnappliedProposalFailsClosed() {
+        val root = Files.createTempDirectory("release-unapplied").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), root)
+        replaceIn(
+            File(root, "app/src/main/assets/content/bundled-content.json"),
+            "\"shareAlikeConfirmation\": \"UNCONFIRMED\"",
+            "\"shareAlikeConfirmation\": \"CONFIRMED\"",
+        )
+        replaceIn(
+            File(root, "catalog/compliance/share-alike-package.json"),
+            "\"shareAlikeConfirmationInSeed\": \"UNCONFIRMED\"",
+            "\"shareAlikeConfirmationInSeed\": \"CONFIRMED\"",
+        )
+        val assessment = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+    }
+
+    @Test
     fun contradictoryShareAlikeTreatmentFailsClosed() {
         val (root, manifest) = retainedFixture()
         val catalog = preparedCatalog(shareAlike = "CONFIRMED").copy(
@@ -341,6 +405,12 @@ class ReleaseGateTest {
             dest.parentFile?.mkdirs()
             File(from, relative).copyTo(dest, overwrite = true)
         }
+    }
+
+    private fun replaceIn(file: File, old: String, new: String) {
+        val text = file.readText()
+        assertTrue(text.contains(old))
+        file.writeText(text.replace(old, new))
     }
 
     private fun repositoryRoot(): File {

@@ -50,8 +50,11 @@ REQUIRED_LICENSE_FILES = [
 ]
 
 APPROVED_TREATMENT = (
-    "OpenRussian stress-marked headwords are CC BY-SA 4.0. "
-    "The matched audio license has no share-alike term."
+    "CC BY-SA 4.0 applies conservatively to copyright and database rights "
+    "in the packaged catalog data, selection, and arrangement. "
+    "Shtooka audio bytes keep their original CC BY or public-domain licenses "
+    "and are not converted to CC BY-SA. "
+    "Application code and user recordings or user-entered data are excluded."
 )
 
 
@@ -128,7 +131,10 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
                 "modificationStatus": (text or {}).get("modificationStatus"),
                 "attribution": (source or {}).get("attribution"),
                 "sourceUrl": (source or {}).get("provenance"),
-                "proposedDownstreamLicense": "text remains CC BY-SA 4.0; audio keeps its original license",
+                "proposedDownstreamLicense": (
+                    "catalog data, selection, and arrangement remain CC BY-SA 4.0; "
+                    "audio bytes keep their original licenses"
+                ),
                 "supportingFiles": [
                     "app/src/main/assets/content/bundled-content.json",
                     "catalog/license-chains.json",
@@ -147,12 +153,12 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
         "local rus-<id>.ogg packaging with provenance records",
     ]
     material_treatment = {
-        "audio": "independently licensed Shtooka recordings (CC BY or public-domain mark)",
-        "text": "OpenRussian stress-marked headwords, CC BY-SA 4.0 Licensed Material",
-        "pairing": "collection of independently licensed audio and text",
-        "adaptedMaterial": "OpenRussian text remains SA; matching is not a linguistic rewrite",
-        "downstreamTextLicense": "CC BY-SA 4.0",
-        "downstreamAudioLicense": "original audio license",
+        "catalogDataSelectionAndArrangement": "CC BY-SA 4.0, applied conservatively to any copyright or database rights",
+        "text": "OpenRussian stress-marked headwords remain CC BY-SA 4.0 Licensed Material",
+        "audioBytes": "original Shtooka CC BY or public-domain licenses; not converted to CC BY-SA",
+        "applicationCode": "excluded; no app-code license is declared by this package",
+        "userRecordingsAndEnteredData": "excluded",
+        "pairing": "audio bytes remain independently licensed; catalog data, selection, and arrangement are treated as share-alike Adapted Material for database-right purposes",
     }
     required_notices = [
         "licenses/cc-by-sa-4.0.txt",
@@ -165,16 +171,23 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
     ]
     recorded_ambiguities = [
         {
-            "id": "collection-versus-adaptation",
-            "summary": "Independent review must confirm the collection/text-layer SA treatment.",
-        },
-        {
             "id": "app-code-license-undeclared",
             "summary": "This package does not declare an application-source license.",
         },
         {
             "id": "public-domain-unnamed-creator",
             "summary": "One Commons public-domain mark has no named creator beyond the recorded fallback attribution.",
+        },
+    ]
+    resolved_interpretations = [
+        {
+            "id": "database-rights-substantial-extraction",
+            "summary": (
+                "OpenRussian is a CC BY-SA 4.0 database. A substantial extraction into "
+                "this structured catalog is treated conservatively as Adapted Material "
+                "for copyright and database rights in the catalog data, selection, and "
+                "arrangement. Audio bytes, application code, and user data are excluded."
+            ),
         },
     ]
     confirmations = {row.get("shareAlikeConfirmation") for row in document["sourceRecords"]}
@@ -201,13 +214,17 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
                 "modified": source.get("modificationStatus") != "UNMODIFIED",
                 "modificationStatus": source.get("modificationStatus"),
                 "transformations": transformations,
-                "materialTreatment": "collection pairing independently licensed audio with CC BY-SA 4.0 text",
-                "adaptedOrCollection": "collection; OpenRussian text remains share-alike Licensed Material",
-                "proposedDownstreamLicense": "text remains CC BY-SA 4.0; audio keeps its original license",
+                "materialTreatment": "CC BY-SA 4.0 on catalog data, selection, and arrangement; audio bytes keep original licenses",
+                "adaptedOrCollection": "catalog data/selection/arrangement treated conservatively as share-alike Adapted Material; audio bytes are not adapted into CC BY-SA",
+                "proposedDownstreamLicense": (
+                    "catalog data, selection, and arrangement remain CC BY-SA 4.0; "
+                    "audio bytes keep their original licenses"
+                ),
                 "shareAlikeTreatment": source.get("shareAlikeTreatment"),
                 "shareAlikeConfirmation": source.get("shareAlikeConfirmation"),
                 "requiredNotices": required_notices,
                 "unresolvedAmbiguity": recorded_ambiguities,
+                "resolvedInterpretation": resolved_interpretations,
                 "redistributionBasis": source.get("redistributionBasis"),
                 "itemCount": sum(1 for audio in document["audioModels"] if audio.get("sourceRecordId") == source["id"]),
                 "supportingFiles": [
@@ -240,10 +257,12 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
         "classification": "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW",
         "shareAlikeConfirmationInSeed": confirmation_in_seed,
         "proposedConfirmation": "NOT_ACTIVATED",
+        "catalogShareAlikeTreatment": APPROVED_TREATMENT,
         "materialTreatment": material_treatment,
         "transformations": transformations,
         "requiredNotices": required_notices,
         "recordedAmbiguities": recorded_ambiguities,
+        "resolvedInterpretations": resolved_interpretations,
         "coverage": {
             "sourceRecords": len(document["sourceRecords"]),
             "sourceTexts": len(document["sourceTexts"]),

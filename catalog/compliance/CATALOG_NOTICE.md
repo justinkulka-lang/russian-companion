@@ -26,7 +26,8 @@ Sakhno, Nicolas Vion, Streit Goula, Streit Eric, and Gulnara Streit as
 supplied by those source records. No additional speaker is invented.
 
 Audio files are packaged unmodified (source ogg bytes). The local
-filename is a deterministic rus-<id>.ogg reference.
+filename is a deterministic rus-<id>.ogg reference. Shtooka audio bytes
+keep those original licenses and are not converted to CC BY-SA.
 
 Full legal codes are stored locally under licenses/.
 
@@ -38,18 +39,23 @@ headword copied unmodified. License: CC BY-SA 4.0
 https://github.com/Badestrand/russian-dictionary (commit recorded in
 catalog/license-chains.json).
 
+OpenRussian is a CC BY-SA 4.0 database. This app extracts and
+redistributes 1,000 ranked records in another structured catalog.
+
 OpenRussian audio samples remain excluded.
 
 ## App code
 
 This catalog notice does not license the application source code. No
-app-code license is declared in this compliance package.
+app-code license is declared in this compliance package. Application
+code is excluded from the catalog share-alike treatment.
 
 ## User recordings and user-entered data
 
 Recordings captured on the device and values the user types (book
 scores, AnkiDroid status, logs) are user data. They are not packaged
-third-party catalog works and are not redistributed by this notice.
+third-party catalog works, are not redistributed by this notice, and
+are excluded from the catalog share-alike treatment.
 
 ## Unmodified versus modified assets
 
@@ -67,22 +73,27 @@ Transformations that were performed:
 - Packaging into the offline seed with provenance, attribution, license,
   modification, and share-alike-treatment records
 
-## Collection and share-alike treatment (proposed, not confirmed)
+## Catalog share-alike treatment (recorded, not confirmed)
 
-Each catalog item pairs independently licensed audio with independently
-licensed OpenRussian text. Proposed treatment for independent review:
+Because Creative Commons gives no bright-line threshold for a
+"substantial" database extraction, this package applies CC BY-SA 4.0
+conservatively to any copyright or database rights held in the packaged
+catalog data, selection, and arrangement.
 
-- The packaged catalog is a collection of those paired items
-- The OpenRussian text remains CC BY-SA 4.0 Licensed Material
-- Matching and packaging are not a linguistic adaptation of the Russian
-  text
-- CC BY / public-domain audio is not converted into share-alike audio
-- Downstream redistribution of the text layer must keep CC BY-SA 4.0
-  notices
+This treatment is adopted without claiming that audio becomes CC BY-SA.
+Explicitly excluded:
 
-This proposed treatment is already stored on every packaged source
-record as shareAlikeTreatment. shareAlikeConfirmation remains
-UNCONFIRMED until independent review.
+- Shtooka audio bytes, which retain their original CC BY 3.0 US,
+  CC BY 2.0 FR, or public-domain status
+- Application code
+- User recordings and user-entered data
+
+Downstream redistribution of the catalog data, selection, and
+arrangement must keep CC BY-SA 4.0 notices. Audio files must keep their
+original license notices.
+
+This recorded treatment is stored on every packaged source record as
+shareAlikeTreatment. shareAlikeConfirmation remains UNCONFIRMED.
 
 ## Required notices packaged with this app
 

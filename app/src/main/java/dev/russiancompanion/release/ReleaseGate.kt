@@ -190,9 +190,12 @@ private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
 }
 
 private const val APPROVED_SHARE_ALIKE_TREATMENT =
-    "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term."
+    "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
 
 private const val COMPLIANCE_PACKAGE_PATH = "catalog/compliance/share-alike-package.json"
+private const val READY_FOR_INDEPENDENT_REVIEW = "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW"
+private const val PROPOSED_CONFIRMATION_NOT_ACTIVATED = "NOT_ACTIVATED"
+private const val PROPOSED_CONFIRMATION_ACTIVATED = "ACTIVATED"
 
 private val requiredPackagedNoticePaths = listOf(
     "app/src/main/assets/content/catalog-notice.txt",
@@ -217,6 +220,7 @@ private data class CompliancePackageDocument(
     val classification: String,
     val shareAlikeConfirmationInSeed: String,
     val proposedConfirmation: String,
+    val catalogShareAlikeTreatment: String = "",
     val coverage: CompliancePackageCoverage,
 )
 
@@ -240,7 +244,9 @@ private fun packagedNoticeBlockers(repositoryRoot: File, seed: String?): List<Re
     val noticeIncomplete = !noticeText.contains("does not own the packaged Russian") ||
         !noticeText.contains("Shtooka") ||
         !noticeText.contains("OpenRussian") ||
-        !noticeText.contains("CC BY-SA 4.0")
+        !noticeText.contains("CC BY-SA 4.0") ||
+        !noticeText.contains("database rights") ||
+        !noticeText.contains("not converted to CC BY-SA")
     if (noticesMissing || noticeIncomplete) {
         blockers += ReleaseBlocker.LICENSE_NOTICES_NOT_PACKAGED
     }
@@ -260,27 +266,52 @@ private fun compliancePackageBlockers(repositoryRoot: File, seed: String?): List
     } catch (_: IllegalArgumentException) {
         return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
     }
+    val blockers = mutableListOf<ReleaseBlocker>()
     if (parsed.schemaVersion != 1 || parsed.coverage.itemsWithIssues != 0) {
-        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+        blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
     }
     val seedDocument = when (val reading = seed?.let { SeedJson.parse(it) }) {
         is SeedParse.Ok -> reading.document
-        else -> return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+        else -> {
+            blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
+            return blockers.distinct()
+        }
     }
     val seedConfirmations = seedDocument.sourceRecords.map { it.shareAlikeConfirmation }.toSet()
     if (seedConfirmations.size != 1 ||
         seedConfirmations.single() != parsed.shareAlikeConfirmationInSeed
     ) {
-        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+        blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
     }
     if (parsed.coverage.audioModels != seedDocument.audioModels.size ||
         parsed.coverage.sourceRecords != seedDocument.sourceRecords.size ||
         parsed.coverage.sourceTexts != seedDocument.sourceTexts.size ||
         parsed.coverage.assetRightsRecords != seedDocument.assetRightsRecords.size
     ) {
-        return listOf(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE)
+        blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
     }
-    return emptyList()
+    if (parsed.catalogShareAlikeTreatment != APPROVED_SHARE_ALIKE_TREATMENT) {
+        blockers += ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT
+    }
+    val confirmation = seedConfirmations.singleOrNull()
+    val blockedClassification = parsed.classification.startsWith("BLOCKED_")
+    when (confirmation) {
+        "UNCONFIRMED" -> {
+            if (parsed.classification != READY_FOR_INDEPENDENT_REVIEW ||
+                parsed.proposedConfirmation != PROPOSED_CONFIRMATION_NOT_ACTIVATED
+            ) {
+                blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
+            }
+        }
+        "CONFIRMED" -> {
+            if (parsed.proposedConfirmation != PROPOSED_CONFIRMATION_ACTIVATED || blockedClassification) {
+                blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
+            }
+        }
+        "NOT_APPLICABLE" -> Unit
+        else -> blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
+    }
+    return blockers.distinct()
 }
 
 private fun packagedArcIsReleaseReady(prepared: PreparedBundle): Boolean {

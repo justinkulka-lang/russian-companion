@@ -2,7 +2,13 @@
   "status": "NOT_ACTIVATED",
   "publicRelease": "NOT_APPROVED",
   "seedPath": "app/src/main/assets/content/bundled-content.json",
-  "change": "set every sourceRecords.shareAlikeConfirmation from UNCONFIRMED to the confirmed token",
+  "requiredCatalogTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded.",
+  "exclusions": [
+    "Shtooka audio bytes retain original CC BY or public-domain licenses and are not converted to CC BY-SA",
+    "application code",
+    "user recordings and user-entered data"
+  ],
+  "change": "after independent acceptance of the conservative catalog-wide CC BY-SA 4.0 database, selection, and arrangement treatment, set every sourceRecords.shareAlikeConfirmation from UNCONFIRMED to the confirmed token and set proposedConfirmation to ACTIVATED",
   "sourceIds": [
     "shtooka-sakhno-cc-by-3.0-us",
     "shtooka-streit-cc-by-2.0-fr",
@@ -11,5 +17,5 @@
     "shtooka-fsi-languages-yojik-eu-sakhno-cc-by-3.0-us"
   ],
   "blockedUntilIndependentReview": true,
-  "note": "This artifact is not applied. Independent review must accept the recorded treatment before any confirmation change."
+  "note": "This artifact is not applied. Independent review must accept the conservative catalog-wide treatment before any confirmation change."
 }
