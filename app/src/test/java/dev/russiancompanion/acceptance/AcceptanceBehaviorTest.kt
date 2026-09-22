@@ -247,7 +247,7 @@ class AcceptanceBehaviorTest {
         compose.setContent {
             MaterialTheme {
                 LocalExportScreen(
-                    onExport = { _, _, _ -> ExportUpdate.DestinationUnavailable },
+                    onExport = { _, _, _, done -> done(ExportUpdate.DestinationUnavailable) },
                     chooseExportDestination = { null },
                     onProgress = {},
                     onHome = null,

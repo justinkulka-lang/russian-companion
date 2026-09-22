@@ -74,6 +74,13 @@ class DeviceAcceptancePackageTest {
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
         assertEquals("1.0.0", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(3, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
+        val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
+        assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
+        assertEquals(
+            dev.russiancompanion.release.computeReleaseSourceDigest(root),
+            sourceDigest,
+        )
         assertEquals(false, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
         assertEquals(false, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
         val preserved = candidate.getValue("preservedPriorCandidate").jsonObject

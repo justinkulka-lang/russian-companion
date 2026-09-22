@@ -81,6 +81,7 @@ internal fun TodaysPlanBody(
     onIncludeTutor: (String) -> Unit,
     onRemoveTutor: (String) -> Unit,
     onRetrySave: () -> Unit,
+    actionsEnabled: Boolean = true,
 ) {
     val lesson = snapshot.activeLessonReference
     if (lesson != null) {
@@ -103,17 +104,21 @@ internal fun TodaysPlanBody(
             onStartPractice = { onStartPractice(item) },
             onComplete = onComplete,
             onRemoveTutor = onRemoveTutor,
+            actionsEnabled = actionsEnabled,
         )
     }
     plan.addableTutorTasks.forEach { item ->
         Text(item.instruction)
-        TextButton(onClick = { onIncludeTutor(item.planDefinitionId) }) {
+        TextButton(
+            onClick = { onIncludeTutor(item.planDefinitionId) },
+            enabled = actionsEnabled,
+        ) {
             Text(stringResource(R.string.plan_add_tutor))
         }
     }
     if (saveFailed) {
         Text(stringResource(R.string.plan_not_saved))
-        TextButton(onClick = onRetrySave) { Text(stringResource(R.string.navigate_retry)) }
+        TextButton(onClick = onRetrySave, enabled = actionsEnabled) { Text(stringResource(R.string.navigate_retry)) }
     }
 }
 
@@ -125,6 +130,7 @@ private fun ChecklistRow(
     onStartPractice: () -> Unit,
     onComplete: (String) -> Unit,
     onRemoveTutor: (String) -> Unit,
+    actionsEnabled: Boolean = true,
 ) {
     Text(
         stringResource(
@@ -153,7 +159,7 @@ private fun ChecklistRow(
         ),
     )
     if (canMarkComplete(item)) {
-        TextButton(onClick = { onComplete(item.planDefinitionId) }) {
+        TextButton(onClick = { onComplete(item.planDefinitionId) }, enabled = actionsEnabled) {
             Text(stringResource(R.string.plan_mark_complete))
         }
     }
@@ -170,7 +176,7 @@ private fun ChecklistRow(
         }
     }
     if (item.activity == ChecklistActivity.TUTOR) {
-        TextButton(onClick = { onRemoveTutor(item.planDefinitionId) }) {
+        TextButton(onClick = { onRemoveTutor(item.planDefinitionId) }, enabled = actionsEnabled) {
             Text(stringResource(R.string.plan_remove_tutor))
         }
     }

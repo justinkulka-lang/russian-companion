@@ -5,6 +5,7 @@
     <string name="navigate_home">Home</string>
     <string name="navigate_next">Next</string>
     <string name="navigate_retry">Retry</string>
+    <string name="work_in_progress">This action is in progress.</string>
 
     <string name="onboarding_title">Onboarding</string>
     <string name="onboarding_identity">This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.</string>

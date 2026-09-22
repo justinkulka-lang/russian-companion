@@ -117,9 +117,10 @@ internal fun PracticeSessionBody(
     snapshot: NavigationSnapshot,
     audioModelId: String,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onComplete: (String) -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onComplete: (String, (PlanUpdate) -> Unit) -> Unit,
 ) {
     val model = snapshot.audio.firstOrNull { it.id == audioModelId }
     val latest = snapshot.recordings.lastOrNull { it.audioModelId == audioModelId }
@@ -211,12 +212,15 @@ internal fun PracticeSessionBody(
             onClick = {
                 val saved = practiceAudio.stopCapture(keep = true)
                 recordingNow = false
-                if (saved == null || onSaveRecording(model.id, saved) is PlanUpdate.NotSaved) {
+                if (saved == null) {
                     captureFailed = true
                 } else {
-                    captureFailed = false
+                    onSaveRecording(model.id, saved) { update ->
+                        captureFailed = update is PlanUpdate.NotSaved
+                    }
                 }
             },
+            enabled = !operationInProgress,
         ) { Text(stringResource(R.string.practice_stop)) }
     } else if (!completed || !readable) {
         TextButton(
@@ -234,7 +238,7 @@ internal fun PracticeSessionBody(
                     }
                 }
             },
-            enabled = !microphoneGranted || canStartRecording(progress),
+            enabled = !operationInProgress && (!microphoneGranted || canStartRecording(progress)),
         ) { Text(stringResource(R.string.practice_record)) }
     }
     if (captureFailed) {
@@ -255,7 +259,10 @@ internal fun PracticeSessionBody(
                 }
             },
         ) { Text(stringResource(R.string.practice_play_recording)) }
-        TextButton(onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) }) {
+        TextButton(
+            onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) { } },
+            enabled = !operationInProgress,
+        ) {
             Text(
                 stringResource(
                     if (latest.markedForTutorReview) R.string.practice_unmark_tutor else R.string.practice_mark_tutor,
@@ -264,7 +271,10 @@ internal fun PracticeSessionBody(
         }
     }
     if (canCompletePractice(progress)) {
-        TextButton(onClick = { onComplete(model.id) }) {
+        TextButton(
+            onClick = { onComplete(model.id) { } },
+            enabled = !operationInProgress,
+        ) {
             Text(stringResource(R.string.practice_complete))
         }
     }

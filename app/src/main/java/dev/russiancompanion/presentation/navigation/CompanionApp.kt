@@ -65,6 +65,7 @@ internal fun CompanionApp(
     val dispatcher = snapshotDispatcher()
     val scope = rememberCoroutineScope()
     val testRuntime = isRobolectricRuntime()
+    val requestGuard = remember(gateway) { SnapshotRequestGuard() }
     var snapshot by remember(gateway) {
         mutableStateOf(
             when {
@@ -76,20 +77,45 @@ internal fun CompanionApp(
     }
     var failedAction by remember(gateway) { mutableStateOf<FailedPlanAction?>(null) }
     var requestedSurface by remember(gateway) { mutableStateOf(NavigationSurface.SHELL) }
+    var operationInProgress by remember(gateway) { mutableStateOf(false) }
+    val work = remember(gateway, dispatcher, scope, testRuntime) {
+        UiWorkCoordinator(
+            dispatcher = dispatcher,
+            scope = scope,
+            runSynchronously = testRuntime,
+            onBusyChange = { operationInProgress = it },
+        )
+    }
     fun loadSurface(surface: NavigationSurface): NavigationSnapshot {
         val requested = if (testRuntime) NavigationSurface.FULL else surface
         return gateway?.snapshot(today(), requested) ?: NavigationSnapshot.closed()
     }
+    fun applySnapshot(loaded: NavigationSnapshot, then: ((NavigationSnapshot) -> Unit)? = null) {
+        snapshot = loaded
+        then?.invoke(loaded)
+    }
     fun refresh(surface: NavigationSurface = requestedSurface) {
         requestedSurface = surface
         if (testRuntime) {
-            snapshot = loadSurface(surface)
+            applySnapshot(loadSurface(surface))
             return
         }
+        val token = requestGuard.begin()
         scope.launch {
-            snapshot = withContext(dispatcher) {
-                loadSurface(surface)
-            }
+            val loaded = withContext(dispatcher) { loadSurface(surface) }
+            if (requestGuard.isCurrent(token)) applySnapshot(loaded)
+        }
+    }
+    fun requestSurface(surface: NavigationSurface, then: (NavigationSnapshot) -> Unit) {
+        requestedSurface = surface
+        if (testRuntime) {
+            applySnapshot(loadSurface(surface), then)
+            return
+        }
+        val token = requestGuard.begin()
+        scope.launch {
+            val loaded = withContext(dispatcher) { loadSurface(surface) }
+            if (requestGuard.isCurrent(token)) applySnapshot(loaded, then)
         }
     }
     fun apply(update: PlanUpdate?, action: FailedPlanAction) {
@@ -103,21 +129,24 @@ internal fun CompanionApp(
         }
     }
     fun runAction(action: FailedPlanAction) {
-        val update = when (action.kind) {
-            PlanActionKind.COMPLETE -> gateway?.completeExternalActivity(action.planDefinitionId, today(), recordedAt())
-            PlanActionKind.INCLUDE_TUTOR -> gateway?.includeTutorTask(action.planDefinitionId, today())
-            PlanActionKind.REMOVE_TUTOR -> gateway?.removeTutorTask(action.planDefinitionId, today())
-        }
-        apply(update, action)
+        work.submit({
+            when (action.kind) {
+                PlanActionKind.COMPLETE -> {
+                    gateway?.completeExternalActivity(action.planDefinitionId, today(), recordedAt())
+                }
+                PlanActionKind.INCLUDE_TUTOR -> gateway?.includeTutorTask(action.planDefinitionId, today())
+                PlanActionKind.REMOVE_TUTOR -> gateway?.removeTutorTask(action.planDefinitionId, today())
+            }
+        }) { update -> apply(update, action) }
     }
 
     LaunchedEffect(gateway) {
         if (gateway == null) {
             snapshot = NavigationSnapshot.closed()
         } else if (!testRuntime) {
-            snapshot = withContext(dispatcher) {
-                loadSurface(NavigationSurface.SHELL)
-            }
+            val token = requestGuard.begin()
+            val loaded = withContext(dispatcher) { loadSurface(NavigationSurface.SHELL) }
+            if (requestGuard.isCurrent(token)) applySnapshot(loaded)
         }
     }
 
@@ -131,13 +160,16 @@ internal fun CompanionApp(
                 launch = launch,
                 snapshot = snapshot,
                 saveFailed = failedAction != null,
+                operationInProgress = operationInProgress,
                 onConfirmLesson = { segmentId ->
-                    gateway?.confirmLesson(segmentId, today())
-                    refresh()
+                    work.submit({
+                        gateway?.confirmLesson(segmentId, today())
+                    }) { refresh() }
                 },
                 onReloadSeed = {
-                    gateway?.reloadPackagedSeed()
-                    refresh()
+                    work.submit({
+                        gateway?.reloadPackagedSeed()
+                    }) { refresh() }
                 },
                 onRetryOpen = onRetryOpen,
                 onCompleteItem = { planId ->
@@ -151,57 +183,65 @@ internal fun CompanionApp(
                 },
                 onRetryPlanAction = { failedAction?.let(::runAction) },
                 practiceAudio = practiceAudio,
-                onSaveRecording = { audioId, file ->
-                    val update = gateway?.saveRecording(audioId, file, recordedAt())
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update ?: PlanUpdate.NotSaved(audioId)
-                },
-                onTutorReview = { recordingId, marked ->
-                    val update = gateway?.setRecordingTutorReview(recordingId, marked)
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update ?: PlanUpdate.NotSaved(recordingId)
-                },
-                onCompletePractice = { audioId ->
-                    val update = gateway?.completeListenPractice(audioId, today(), recordedAt())
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update ?: PlanUpdate.NotSaved(audioId)
-                },
-                onSaveGateEvidence = { gateId, entries ->
-                    val update = gateway?.saveGateEvidence(gateId, entries, recordedAt())
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update ?: PlanUpdate.NotSaved(gateId)
-                },
-                onAddTutorSignOff = { gateId ->
-                    val update = gateway?.addTutorSignOff(gateId, recordedAt())
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update ?: PlanUpdate.NotSaved(gateId)
-                },
-                recordedAt = recordedAt,
-                onSaveActivity = { category, minutes, completed, at, associate ->
-                    val update = gateway?.saveActivityLog(category, minutes, completed, at, associate)
-                        ?: PlanUpdate.NotSaved("activity")
-                    if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
-                    update
-                },
-                onExport = { stream, fileName, documentReference ->
-                    gateway?.exportLocal(stream, recordedAt(), fileName, documentReference)
-                        ?: ExportUpdate.DestinationUnavailable
-                },
-                chooseExportDestination = chooseExportDestination,
-                onNeedSurface = { surface, then ->
-                    requestedSurface = surface
-                    if (testRuntime) {
-                        val loaded = loadSurface(surface)
-                        snapshot = loaded
-                        then(loaded)
-                    } else {
-                        scope.launch {
-                            val loaded = withContext(dispatcher) { loadSurface(surface) }
-                            snapshot = loaded
-                            then(loaded)
-                        }
+                onSaveRecording = { audioId, file, done ->
+                    work.submit({
+                        gateway?.saveRecording(audioId, file, recordedAt()) ?: PlanUpdate.NotSaved(audioId)
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
                     }
                 },
+                onTutorReview = { recordingId, marked, done ->
+                    work.submit({
+                        gateway?.setRecordingTutorReview(recordingId, marked) ?: PlanUpdate.NotSaved(recordingId)
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
+                    }
+                },
+                onCompletePractice = { audioId, done ->
+                    work.submit({
+                        gateway?.completeListenPractice(audioId, today(), recordedAt())
+                            ?: PlanUpdate.NotSaved(audioId)
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
+                    }
+                },
+                onSaveGateEvidence = { gateId, entries, done ->
+                    work.submit({
+                        gateway?.saveGateEvidence(gateId, entries, recordedAt()) ?: PlanUpdate.NotSaved(gateId)
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
+                    }
+                },
+                onAddTutorSignOff = { gateId, done ->
+                    work.submit({
+                        gateway?.addTutorSignOff(gateId, recordedAt()) ?: PlanUpdate.NotSaved(gateId)
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
+                    }
+                },
+                recordedAt = recordedAt,
+                onSaveActivity = { category, minutes, completed, at, associate, done ->
+                    work.submit({
+                        gateway?.saveActivityLog(category, minutes, completed, at, associate)
+                            ?: PlanUpdate.NotSaved("activity")
+                    }) { update ->
+                        if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
+                        done(update)
+                    }
+                },
+                onExport = { stream, fileName, documentReference, done ->
+                    work.submit({
+                        gateway?.exportLocal(stream, recordedAt(), fileName, documentReference)
+                            ?: ExportUpdate.DestinationUnavailable
+                    }, done)
+                },
+                chooseExportDestination = chooseExportDestination,
+                onNeedSurface = { surface, then -> requestSurface(surface, then) },
             )
         }
     }

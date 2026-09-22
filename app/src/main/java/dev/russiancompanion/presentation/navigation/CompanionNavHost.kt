@@ -39,6 +39,7 @@ internal fun CompanionNavHost(
     launch: LaunchDestination,
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    operationInProgress: Boolean = false,
     onConfirmLesson: (String) -> Unit,
     onReloadSeed: () -> Unit,
     onRetryOpen: () -> Unit,
@@ -47,14 +48,14 @@ internal fun CompanionNavHost(
     onRemoveTutor: (String) -> Unit,
     onRetryPlanAction: () -> Unit,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onCompletePractice: (String) -> PlanUpdate,
-    onSaveGateEvidence: (String, List<GateEvidenceEntry>) -> PlanUpdate,
-    onAddTutorSignOff: (String) -> PlanUpdate,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onCompletePractice: (String, (PlanUpdate) -> Unit) -> Unit,
+    onSaveGateEvidence: (String, List<GateEvidenceEntry>, (PlanUpdate) -> Unit) -> Unit,
+    onAddTutorSignOff: (String, (PlanUpdate) -> Unit) -> Unit,
     recordedAt: () -> String,
-    onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean) -> PlanUpdate,
-    onExport: (OutputStream, String?, String?) -> ExportUpdate,
+    onSaveActivity: (RecordedCategory, Int, Boolean, String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onExport: (OutputStream, String?, String?, (ExportUpdate) -> Unit) -> Unit,
     chooseExportDestination: (() -> ExportSelection?)? = null,
     onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit = { _, then -> then(snapshot) },
 ) {
@@ -119,6 +120,7 @@ internal fun CompanionNavHost(
             TodaysPlanScreen(
                 snapshot = snapshot,
                 saveFailed = saveFailed,
+                operationInProgress = operationInProgress,
                 onHome = onHome,
                 onPractice = {
                     onNeedSurface(NavigationSurface.PRACTICE) {
@@ -168,6 +170,7 @@ internal fun CompanionNavHost(
                 snapshot = snapshot,
                 audioModelId = route.audioModelId,
                 practiceAudio = practiceAudio,
+                operationInProgress = operationInProgress,
                 onSaveRecording = onSaveRecording,
                 onTutorReview = onTutorReview,
                 onCompletePractice = onCompletePractice,
@@ -205,8 +208,9 @@ internal fun CompanionNavHost(
             GateDetailScreen(
                 snapshot = snapshot,
                 gateId = route.gateId,
-                onSaveGateEvidence = { entries -> onSaveGateEvidence(route.gateId, entries) },
-                onAddTutorSignOff = { onAddTutorSignOff(route.gateId) },
+                operationInProgress = operationInProgress,
+                onSaveGateEvidence = { entries, done -> onSaveGateEvidence(route.gateId, entries, done) },
+                onAddTutorSignOff = { done -> onAddTutorSignOff(route.gateId, done) },
                 onGates = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
                 onProgress = { navController.navigate(ProgressRoute) },
@@ -229,6 +233,7 @@ internal fun CompanionNavHost(
                 snapshot = snapshot,
                 fromPlan = route.fromPlan,
                 recordedAt = recordedAt,
+                operationInProgress = operationInProgress,
                 onSave = onSaveActivity,
                 onProgress = { navController.popBackStack() },
                 onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
@@ -237,6 +242,7 @@ internal fun CompanionNavHost(
         }
         composable<LocalExportRoute> {
             LocalExportScreen(
+                operationInProgress = operationInProgress,
                 onExport = onExport,
                 chooseExportDestination = chooseExportDestination,
                 onProgress = { navController.popBackStack() },
@@ -413,6 +419,7 @@ private fun HomeScreen(
 private fun TodaysPlanScreen(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    operationInProgress: Boolean = false,
     onHome: (() -> Unit)?,
     onPractice: () -> Unit,
     onStartPractice: (ChecklistItem) -> Unit,
@@ -425,7 +432,7 @@ private fun TodaysPlanScreen(
     onBack: () -> Unit,
 ) {
     val libraryAvailable = practiceLibraryAvailable(snapshot)
-    ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.todays_plan_title), onBack = onBack, onHome = onHome, busy = operationInProgress) {
         TodaysPlanBody(
             snapshot = snapshot,
             saveFailed = saveFailed,
@@ -435,6 +442,7 @@ private fun TodaysPlanScreen(
             onIncludeTutor = onIncludeTutor,
             onRemoveTutor = onRemoveTutor,
             onRetrySave = onRetrySave,
+            actionsEnabled = !operationInProgress,
         )
         TextButton(onClick = onPractice, enabled = libraryAvailable) {
             Text(stringResource(R.string.open_practice))
@@ -448,9 +456,10 @@ private fun PracticeSessionScreen(
     snapshot: NavigationSnapshot,
     audioModelId: String,
     practiceAudio: PracticeAudio,
-    onSaveRecording: (String, String) -> PlanUpdate,
-    onTutorReview: (String, Boolean) -> PlanUpdate,
-    onCompletePractice: (String) -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveRecording: (String, String, (PlanUpdate) -> Unit) -> Unit,
+    onTutorReview: (String, Boolean, (PlanUpdate) -> Unit) -> Unit,
+    onCompletePractice: (String, (PlanUpdate) -> Unit) -> Unit,
     onPrevious: (String) -> Unit,
     onNext: (String) -> Unit,
     onLibrary: () -> Unit,
@@ -461,11 +470,12 @@ private fun PracticeSessionScreen(
     val admittedIds = snapshot.audio.map { it.id }
     val previousId = previousAdmittedModelId(admittedIds, audioModelId)
     val nextId = nextAdmittedModelId(admittedIds, audioModelId)
-    ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.practice_session_title), onBack = onLibrary, onHome = onHome, busy = operationInProgress) {
         PracticeSessionBody(
             snapshot = snapshot,
             audioModelId = audioModelId,
             practiceAudio = practiceAudio,
+            operationInProgress = operationInProgress,
             onSaveRecording = onSaveRecording,
             onTutorReview = onTutorReview,
             onComplete = onCompletePractice,
@@ -504,21 +514,23 @@ private fun GatesScreen(
 private fun GateDetailScreen(
     snapshot: NavigationSnapshot,
     gateId: String,
-    onSaveGateEvidence: (List<GateEvidenceEntry>) -> PlanUpdate,
-    onAddTutorSignOff: () -> PlanUpdate,
+    operationInProgress: Boolean = false,
+    onSaveGateEvidence: (List<GateEvidenceEntry>, (PlanUpdate) -> Unit) -> Unit,
+    onAddTutorSignOff: ((PlanUpdate) -> Unit) -> Unit,
     onGates: () -> Unit,
     onTodaysPlan: () -> Unit,
     onProgress: () -> Unit,
     onHome: (() -> Unit)?,
 ) {
     val detail = snapshot.gateDetails.firstOrNull { it.id == gateId }
-    ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome) {
+    ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome, busy = operationInProgress) {
         Text(stringResource(R.string.gates_not_proficiency))
         if (detail == null) {
             Text(stringResource(R.string.gate_unreadable))
         } else {
             GateDetailBody(
                 detail = detail,
+                actionsEnabled = !operationInProgress,
                 onSave = onSaveGateEvidence,
                 onAddTutor = onAddTutorSignOff,
             )

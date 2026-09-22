@@ -420,7 +420,7 @@ class ReleaseGateTest {
         assertTrue(missingDevice.blockers.contains(ReleaseBlocker.INSTALLATION_NOT_RETAINED))
         File(root, "release/evidence/AT-001.json").writeText(procedureEvidence("AT-001"))
         File(root, "release/evidence/AT-002.json").writeText(
-            procedureEvidence("AT-002", commit = "cccccccccccccccccccccccccccccccccccccccc"),
+            procedureEvidence("AT-002", digest = "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"),
         )
         val mismatched = assessPackagedRelease(
             SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
@@ -552,6 +552,10 @@ class ReleaseGateTest {
         result: String = "PASS",
         commit: String = VALID_COMMIT,
         hash: String = VALID_HASH,
+        digest: String = VALID_HASH,
+        versionName: String = "1.0.0",
+        versionCode: Int = 2,
+        applicationId: String = "dev.russiancompanion",
         device: String? = if (procedure == "AT-031") null else "Galaxy S26 Ultra",
         ownerDecision: String? = if (procedure == "AT-031") "APPROVED" else null,
     ): String {
@@ -563,7 +567,7 @@ class ReleaseGateTest {
                 proceduresBeforeOwner.joinToString(prefix = "[", postfix = "]") { "\"$it\"" }
             }"""
         }
-        return """{"schemaVersion":1,"procedure":"$procedure","result":"$result","candidateCommit":"$commit","apkSha256":"$hash","executedAt":"2026-09-22T12:00"$deviceField,"artifactHashes":{"form":"$hash"}$ownerField}"""
+        return """{"schemaVersion":2,"procedure":"$procedure","result":"$result","candidateCommit":"$commit","apkSha256":"$hash","sourceDigest":"$digest","versionName":"$versionName","versionCode":$versionCode,"applicationId":"$applicationId","executedAt":"2026-09-22T12:00"$deviceField,"artifactHashes":{"form":"$hash"}$ownerField}"""
     }
 
     private fun manifest(vararg records: String): String {

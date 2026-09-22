@@ -491,11 +491,14 @@ release/evidence/exports/AT-020-post-reboot-export.zip
 ```
 
 Each `release/evidence/AT-00N.json` must be a procedure-evidence
-document (`schemaVersion` 1) that records `PASS`, the candidate
-commit, the APK SHA-256, the execution timestamp, the device for
-physical procedures, and referenced artifact hashes. The release gate
-rejects empty files, non-JSON text, paths outside `release/evidence/`,
-and boolean flags.
+document (`schemaVersion` 2) that records `PASS`, the candidate
+commit, the APK SHA-256, the current source digest from
+`release/acceptance/candidate.json`, `versionName`, `versionCode`,
+`applicationId`, the execution timestamp, the device for physical
+procedures, and referenced artifact hashes. The release gate rejects
+empty files, non-JSON text, paths outside `release/evidence/`,
+boolean flags, and evidence bound to a previous source digest or
+version identity.
 
 Only after those files exist from a real run may
 `release/retained-evidence.json` change a record from `MISSING` to

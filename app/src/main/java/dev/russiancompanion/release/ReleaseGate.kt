@@ -47,14 +47,18 @@ internal enum class ReleaseBlocker(val message: String) {
     REBOOT_EVIDENCE_NOT_RETAINED("AT-020 device reboot evidence is not retained."),
     LESSON_CYCLE_NOT_RETAINED("AT-030 lesson-cycle evidence is not retained."),
     OWNER_RELEASE_DECISION_NOT_RETAINED("AT-031 owner release decision is not retained."),
+    SOURCE_INPUTS_UNREADABLE("Release-relevant source inputs are absent or unreadable."),
+    SOURCE_DIGEST_MISMATCH("The candidate source digest does not match the current release inputs."),
 }
 
 internal data class ReleaseAssessment(
     val decision: ReleaseDecision,
     val blockers: List<ReleaseBlocker>,
+    val sourceDigest: String? = null,
 ) {
     fun report(): String {
-        return (listOf(decision.name) + blockers.map { it.message }).joinToString("\n")
+        val identity = sourceDigest?.let { listOf("sourceDigest=$it") }.orEmpty()
+        return (listOf(decision.name) + blockers.map { it.message } + identity).joinToString("\n")
     }
 }
 
@@ -78,6 +82,10 @@ internal data class ProcedureEvidenceDocument(
     val result: String,
     val candidateCommit: String,
     val apkSha256: String,
+    val sourceDigest: String,
+    val versionName: String,
+    val versionCode: Int,
+    val applicationId: String,
     val executedAt: String,
     val deviceModel: String? = null,
     val artifactHashes: Map<String, String> = emptyMap(),
@@ -122,16 +130,22 @@ internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
     val manifestFile = File(repositoryRoot, RELEASE_EVIDENCE_MANIFEST)
     val seed = if (seedFile.isFile) seedFile.readText() else null
     val manifest = if (manifestFile.isFile) manifestFile.readText() else null
-    val assessment = assessPackagedRelease(seed, manifest, repositoryRoot)
-    val blockers = assessment.blockers + packagedNoticeBlockers(repositoryRoot, seed)
+    val binding = currentReleaseBinding(repositoryRoot)
+    val assessment = assessPackagedRelease(seed, manifest, repositoryRoot, binding)
+    val blockers = buildList {
+        addAll(assessment.blockers)
+        addAll(packagedNoticeBlockers(repositoryRoot, seed))
+        addAll(sourceBindingBlockers(repositoryRoot, binding))
+    }.distinct()
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
-    return ReleaseAssessment(decision, blockers)
+    return ReleaseAssessment(decision, blockers, binding?.sourceDigest)
 }
 
 internal fun assessPackagedRelease(
     packagedSeed: String?,
     evidenceManifest: String?,
     repositoryRoot: File,
+    binding: ReleaseBinding? = null,
 ): ReleaseAssessment {
     val prepared = when {
         packagedSeed == null -> null
@@ -146,21 +160,19 @@ internal fun assessPackagedRelease(
         } else {
             addAll(contentBlockers(prepared))
         }
-        addAll(evidenceBlockers(evidenceManifest, repositoryRoot))
+        addAll(evidenceBlockers(evidenceManifest, repositoryRoot, binding))
     }
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
-    return ReleaseAssessment(decision, blockers)
+    return ReleaseAssessment(decision, blockers, binding?.sourceDigest)
 }
 
 internal const val RELEASE_EVIDENCE_MANIFEST = "release/retained-evidence.json"
 
 internal const val RETAINED_EVIDENCE_SCHEMA_VERSION = 2
 
-internal const val PROCEDURE_EVIDENCE_SCHEMA_VERSION = 1
+internal const val PROCEDURE_EVIDENCE_SCHEMA_VERSION = 2
 
 private const val EVIDENCE_PATH_PREFIX = "release/evidence/"
-
-private val SHA256 = Regex("^[a-f0-9]{64}$")
 
 private val GIT_COMMIT = Regex("^[a-f0-9]{40}$")
 
@@ -407,8 +419,12 @@ private fun PlanActivityType.toPlanActivityKind(): PlanActivityKind {
     }
 }
 
-private fun evidenceBlockers(manifest: String?, repositoryRoot: File): List<ReleaseBlocker> {
-    val reading = readEvidence(manifest, repositoryRoot)
+private fun evidenceBlockers(
+    manifest: String?,
+    repositoryRoot: File,
+    binding: ReleaseBinding?,
+): List<ReleaseBlocker> {
+    val reading = readEvidence(manifest, repositoryRoot, binding)
     val blockers = mutableListOf<ReleaseBlocker>()
     if (!reading.readable) blockers += ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE
     for ((procedure, blocker) in requiredProcedures) {
@@ -417,12 +433,25 @@ private fun evidenceBlockers(manifest: String?, repositoryRoot: File): List<Rele
     return blockers
 }
 
+private fun sourceBindingBlockers(repositoryRoot: File, binding: ReleaseBinding?): List<ReleaseBlocker> {
+    if (binding == null) return listOf(ReleaseBlocker.SOURCE_INPUTS_UNREADABLE)
+    val candidate = readAcceptanceCandidate(repositoryRoot)
+    if (!candidateMatchesBinding(candidate, binding)) {
+        return listOf(ReleaseBlocker.SOURCE_DIGEST_MISMATCH)
+    }
+    return emptyList()
+}
+
 private data class EvidenceReading(
     val readable: Boolean,
     val retained: Set<String>,
 )
 
-private fun readEvidence(manifest: String?, repositoryRoot: File): EvidenceReading {
+private fun readEvidence(
+    manifest: String?,
+    repositoryRoot: File,
+    binding: ReleaseBinding?,
+): EvidenceReading {
     if (manifest == null) return EvidenceReading(readable = false, retained = emptySet())
     val parsed = try {
         evidenceJson.decodeFromString(RetainedEvidenceManifest.serializer(), manifest)
@@ -441,11 +470,11 @@ private fun readEvidence(manifest: String?, repositoryRoot: File): EvidenceReadi
     val independentlyRetained = requiredProcedures.map { it.first }.filter { procedure ->
         if (procedure == "AT-031") return@filter false
         val record = parsed.records.firstOrNull { it.procedure == procedure } ?: return@filter false
-        isRetained(record, repositoryRoot, independentlyRetained = emptySet())
+        isRetained(record, repositoryRoot, independentlyRetained = emptySet(), binding = binding)
     }.toSet()
     val retained = independentlyRetained.toMutableSet()
     val owner = parsed.records.firstOrNull { it.procedure == "AT-031" }
-    if (owner != null && isRetained(owner, repositoryRoot, independentlyRetained)) {
+    if (owner != null && isRetained(owner, repositoryRoot, independentlyRetained, binding)) {
         retained += "AT-031"
     }
     val identities = retained.mapNotNull { procedure ->
@@ -455,7 +484,23 @@ private fun readEvidence(manifest: String?, repositoryRoot: File): EvidenceReadi
     if (identities.isNotEmpty()) {
         val commits = identities.map { it.second.candidateCommit }.toSet()
         val hashes = identities.map { it.second.apkSha256 }.toSet()
-        if (commits.size != 1 || hashes.size != 1) {
+        val digests = identities.map { it.second.sourceDigest }.toSet()
+        val versions = identities.map { it.second.versionName }.toSet()
+        val codes = identities.map { it.second.versionCode }.toSet()
+        val applications = identities.map { it.second.applicationId }.toSet()
+        if (commits.size != 1 || hashes.size != 1 || digests.size != 1 ||
+            versions.size != 1 || codes.size != 1 || applications.size != 1
+        ) {
+            return EvidenceReading(readable = true, retained = emptySet())
+        }
+        if (binding != null &&
+            (
+                digests.single() != binding.sourceDigest ||
+                    versions.single() != binding.versionName ||
+                    codes.single() != binding.versionCode ||
+                    applications.single() != binding.applicationId
+                )
+        ) {
             return EvidenceReading(readable = true, retained = emptySet())
         }
     }
@@ -466,6 +511,7 @@ private fun isRetained(
     record: RetainedEvidenceRecord,
     repositoryRoot: File,
     independentlyRetained: Set<String>,
+    binding: ReleaseBinding?,
 ): Boolean {
     if (record.state != "RETAINED") return false
     val document = readProcedureEvidence(record, repositoryRoot) ?: return false
@@ -473,10 +519,20 @@ private fun isRetained(
     if (document.result != "PASS") return false
     if (!GIT_COMMIT.matches(document.candidateCommit)) return false
     if (!SHA256.matches(document.apkSha256)) return false
+    if (!SHA256.matches(document.sourceDigest)) return false
+    if (document.versionName.isBlank() || document.applicationId.isBlank() || document.versionCode < 1) {
+        return false
+    }
     if (!EXECUTED_AT.matches(document.executedAt)) return false
     if (document.artifactHashes.isEmpty()) return false
     if (document.artifactHashes.any { (name, hash) -> name.isBlank() || !SHA256.matches(hash) }) {
         return false
+    }
+    if (binding != null) {
+        if (document.sourceDigest != binding.sourceDigest) return false
+        if (document.versionName != binding.versionName) return false
+        if (document.versionCode != binding.versionCode) return false
+        if (document.applicationId != binding.applicationId) return false
     }
     if (record.procedure in proceduresRequiringDevice) {
         if (document.deviceModel.isNullOrBlank()) return false
