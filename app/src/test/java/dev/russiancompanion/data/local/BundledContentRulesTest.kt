@@ -22,9 +22,8 @@ import java.io.File
 
 class BundledContentRulesTest {
     @Test
-    fun shippedSeedIsEmptyAndContainsNoRussianText() {
+    fun shippedSeedMatchesLicensedAudioAndKeepsThePathwayEmpty() {
         val raw = shippedSeedFile().readText()
-        assertTrue(raw.none { it.code in CYRILLIC })
         val parsed = SeedJson.parse(raw)
         assertTrue(parsed is SeedParse.Ok)
         val document = (parsed as SeedParse.Ok).document
@@ -32,13 +31,11 @@ class BundledContentRulesTest {
         assertTrue(document.courseSegments.isEmpty())
         assertTrue(document.planDefinitions.isEmpty())
         assertTrue(document.gateDefinitions.isEmpty())
-        assertTrue(document.sourceRecords.isEmpty())
-        assertTrue(document.sourceTexts.isEmpty())
-        assertTrue(document.assetRightsRecords.isEmpty())
-        assertTrue(document.audioModels.isEmpty())
         assertTrue(document.optionalDrills.isEmpty())
+        assertTrue(document.audioModels.isNotEmpty())
+        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
         val prepared = prepareBundledContent(document)
-        assertTrue(prepared.audio.isEmpty())
+        assertEquals(document.audioModels.size, prepared.audio.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE })
         assertTrue(prepared.drills.isEmpty())
     }
 

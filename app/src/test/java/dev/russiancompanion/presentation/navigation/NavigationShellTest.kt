@@ -39,7 +39,7 @@ class NavigationShellTest {
     }
 
     @Test
-    fun emptyCatalogStaysInOnboardingAndReportsMissingAttributions() {
+    fun packagedCatalogWithoutPathwayStaysInOnboardingAndReportsShareAlikeBlock() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -64,8 +64,10 @@ class NavigationShellTest {
         compose.onNodeWithText("Onboarding cannot finish because plan definitions are unavailable.").assertIsDisplayed()
         compose.onNodeWithText("Confirm lesson").assertIsNotEnabled()
         compose.onNodeWithText("Attributions and licenses").performClick()
-        compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
+        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
             .assertIsDisplayed()
+        compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
+            .assertDoesNotExist()
         compose.onNodeWithText("Back").performClick()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
     }

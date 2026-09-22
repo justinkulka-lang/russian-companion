@@ -3,9 +3,1170 @@
   "courseSegments": [],
   "planDefinitions": [],
   "gateDefinitions": [],
-  "sourceRecords": [],
-  "sourceTexts": [],
-  "assetRightsRecords": [],
-  "audioModels": [],
+  "sourceRecords": [
+    {
+      "id": "shtooka-sakhno-cc-by-3.0-us",
+      "provenance": "Shtooka collection rus-balm-voc-sakhno; OpenRussian accented headword",
+      "redistributionBasis": "Audio README: Creative Commons Attribution 3.0 United States, http://creativecommons.org/licenses/by/3.0/us/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/.",
+      "licenseName": "CC BY 3.0 US; CC BY-SA 4.0",
+      "attribution": "Sergei Sakhno and Nicolas Vion, Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeTreatment": "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term.",
+      "shareAlikeConfirmation": "UNCONFIRMED"
+    },
+    {
+      "id": "shtooka-streit-cc-by-2.0-fr",
+      "provenance": "Shtooka collection rus-balm-voc; OpenRussian accented headword",
+      "redistributionBasis": "Audio README: Creative Commons Attribution 2.0 France, http://creativecommons.org/licenses/by/2.0/fr/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/.",
+      "licenseName": "CC BY 2.0 FR; CC BY-SA 4.0",
+      "attribution": "Streit Goula, Streit Eric, and Nicolas Vion, Shtooka Project. Speaker on the file page: Gulnara Streit. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeTreatment": "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term.",
+      "shareAlikeConfirmation": "UNCONFIRMED"
+    },
+    {
+      "id": "shtooka-streit-cc-by-3.0-fr",
+      "provenance": "Shtooka file page states CC BY 3.0 France; OpenRussian accented headword",
+      "redistributionBasis": "Per-file Commons license: Creative Commons Attribution 3.0 France, https://creativecommons.org/licenses/by/3.0/fr/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/.",
+      "licenseName": "CC BY 3.0 FR; CC BY-SA 4.0",
+      "attribution": "Gulnara Streit, Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeTreatment": "OpenRussian stress-marked headwords are CC BY-SA 4.0. The matched audio license has no share-alike term.",
+      "shareAlikeConfirmation": "UNCONFIRMED"
+    }
+  ],
+  "sourceTexts": [
+    {
+      "id": "text-rus-00042ef4",
+      "stressMarkedText": "вариа'нт",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-00c922e1",
+      "stressMarkedText": "нелегко'",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-013ea3cc",
+      "stressMarkedText": "па'лец",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-021a33a4",
+      "stressMarkedText": "кровь",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-021b5f9d",
+      "stressMarkedText": "интерне'т",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-031f3a76",
+      "stressMarkedText": "ужа'сно",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-040e8e43",
+      "stressMarkedText": "ли'дер",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-0572e55c",
+      "stressMarkedText": "суди'ть",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-0685e112",
+      "stressMarkedText": "ку'шать",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-06ec01ad",
+      "stressMarkedText": "Ви'ктор",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-099dafa8",
+      "stressMarkedText": "футболи'ст",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-0a341994",
+      "stressMarkedText": "при",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-0a34cff7",
+      "stressMarkedText": "спусти'ть",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-0caf961a",
+      "stressMarkedText": "ключ",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-142d4fdf",
+      "stressMarkedText": "зима'",
+      "sourceRecordId": "shtooka-streit-cc-by-3.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-18146ee7",
+      "stressMarkedText": "пе'пельница",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-1a450737",
+      "stressMarkedText": "пре'жде",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-1e43428d",
+      "stressMarkedText": "бума'га",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-1ef9b054",
+      "stressMarkedText": "распространи'ть",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-205ef521",
+      "stressMarkedText": "колосса'льный",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2204c783",
+      "stressMarkedText": "перча'тка",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2383e20d",
+      "stressMarkedText": "вы",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-23b64603",
+      "stressMarkedText": "лес",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-252a9f95",
+      "stressMarkedText": "нехорошо'",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-26a76b8e",
+      "stressMarkedText": "журнали'стка",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2746f35d",
+      "stressMarkedText": "не'который",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-27b444bc",
+      "stressMarkedText": "запере'ть",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-291dcf07",
+      "stressMarkedText": "мы",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-29907959",
+      "stressMarkedText": "крем",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2c7b956d",
+      "stressMarkedText": "био'лог",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2d9b7a7c",
+      "stressMarkedText": "Москва'",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-2dacc217",
+      "stressMarkedText": "открыва'ть",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-30bc7ddb",
+      "stressMarkedText": "глаз",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-311037c1",
+      "stressMarkedText": "стра'нно",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-316f9a58",
+      "stressMarkedText": "бистро'",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-31f54fe8",
+      "stressMarkedText": "наи'вный",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-320eeb9b",
+      "stressMarkedText": "перспекти'ва",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-326bf667",
+      "stressMarkedText": "интересова'ться",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-327f4584",
+      "stressMarkedText": "во'лос",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-32b9bbf0",
+      "stressMarkedText": "катю'ша",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-34196cc9",
+      "stressMarkedText": "постоя'нный",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-3441a20c",
+      "stressMarkedText": "нога'",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-3570c185",
+      "stressMarkedText": "круи'з",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-562b8b29",
+      "stressMarkedText": "Испа'ния",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-5f5e2bb8",
+      "stressMarkedText": "десе'рт",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-5faac196",
+      "stressMarkedText": "романти'чно",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-6f6e8c17",
+      "stressMarkedText": "семина'р",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-7204082e",
+      "stressMarkedText": "здра'вствовать",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    },
+    {
+      "id": "text-rus-7218bef2",
+      "stressMarkedText": "плохо'й",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "modificationStatus": "UNMODIFIED",
+      "matchVerified": true
+    }
+  ],
+  "assetRightsRecords": [
+    {
+      "id": "rights-rus-00042ef4",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-00042ef4",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-00c922e1",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-00c922e1",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-013ea3cc",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-013ea3cc",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-021a33a4",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-021a33a4",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-021b5f9d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-021b5f9d",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-031f3a76",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-031f3a76",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-040e8e43",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-040e8e43",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-0572e55c",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-0572e55c",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-0685e112",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-0685e112",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-06ec01ad",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-06ec01ad",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-099dafa8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-099dafa8",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-0a341994",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-0a341994",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-0a34cff7",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-0a34cff7",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-0caf961a",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-0caf961a",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-142d4fdf",
+      "sourceRecordId": "shtooka-streit-cc-by-3.0-fr",
+      "assetIdentifier": "rus-142d4fdf",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-18146ee7",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-18146ee7",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-1a450737",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-1a450737",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-1e43428d",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-1e43428d",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-1ef9b054",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-1ef9b054",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-205ef521",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-205ef521",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2204c783",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-2204c783",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2383e20d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-2383e20d",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-23b64603",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-23b64603",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-252a9f95",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-252a9f95",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-26a76b8e",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-26a76b8e",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2746f35d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-2746f35d",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-27b444bc",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-27b444bc",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-291dcf07",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-291dcf07",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-29907959",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-29907959",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2c7b956d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-2c7b956d",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2d9b7a7c",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-2d9b7a7c",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-2dacc217",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-2dacc217",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-30bc7ddb",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-30bc7ddb",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-311037c1",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-311037c1",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-316f9a58",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-316f9a58",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-31f54fe8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-31f54fe8",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-320eeb9b",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-320eeb9b",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-326bf667",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-326bf667",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-327f4584",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-327f4584",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-32b9bbf0",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-32b9bbf0",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-34196cc9",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-34196cc9",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-3441a20c",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "assetIdentifier": "rus-3441a20c",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-3570c185",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-3570c185",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-562b8b29",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-562b8b29",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-5f5e2bb8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-5f5e2bb8",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-5faac196",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-5faac196",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-6f6e8c17",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-6f6e8c17",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-7204082e",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-7204082e",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    },
+    {
+      "id": "rights-rus-7218bef2",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "assetIdentifier": "rus-7218bef2",
+      "licenseStatus": "COMPATIBLE",
+      "compatibilityDecision": "COMPATIBLE",
+      "attributionRequired": true,
+      "inclusionResult": "INCLUDED"
+    }
+  ],
+  "audioModels": [
+    {
+      "id": "rus-00042ef4",
+      "localAudioReference": "audio/rus-00042ef4.ogg",
+      "sourceTextId": "text-rus-00042ef4",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-00042ef4"
+    },
+    {
+      "id": "rus-00c922e1",
+      "localAudioReference": "audio/rus-00c922e1.ogg",
+      "sourceTextId": "text-rus-00c922e1",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-00c922e1"
+    },
+    {
+      "id": "rus-013ea3cc",
+      "localAudioReference": "audio/rus-013ea3cc.ogg",
+      "sourceTextId": "text-rus-013ea3cc",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-013ea3cc"
+    },
+    {
+      "id": "rus-021a33a4",
+      "localAudioReference": "audio/rus-021a33a4.ogg",
+      "sourceTextId": "text-rus-021a33a4",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-021a33a4"
+    },
+    {
+      "id": "rus-021b5f9d",
+      "localAudioReference": "audio/rus-021b5f9d.ogg",
+      "sourceTextId": "text-rus-021b5f9d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-021b5f9d"
+    },
+    {
+      "id": "rus-031f3a76",
+      "localAudioReference": "audio/rus-031f3a76.ogg",
+      "sourceTextId": "text-rus-031f3a76",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-031f3a76"
+    },
+    {
+      "id": "rus-040e8e43",
+      "localAudioReference": "audio/rus-040e8e43.ogg",
+      "sourceTextId": "text-rus-040e8e43",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-040e8e43"
+    },
+    {
+      "id": "rus-0572e55c",
+      "localAudioReference": "audio/rus-0572e55c.ogg",
+      "sourceTextId": "text-rus-0572e55c",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-0572e55c"
+    },
+    {
+      "id": "rus-0685e112",
+      "localAudioReference": "audio/rus-0685e112.ogg",
+      "sourceTextId": "text-rus-0685e112",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-0685e112"
+    },
+    {
+      "id": "rus-06ec01ad",
+      "localAudioReference": "audio/rus-06ec01ad.ogg",
+      "sourceTextId": "text-rus-06ec01ad",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-06ec01ad"
+    },
+    {
+      "id": "rus-099dafa8",
+      "localAudioReference": "audio/rus-099dafa8.ogg",
+      "sourceTextId": "text-rus-099dafa8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-099dafa8"
+    },
+    {
+      "id": "rus-0a341994",
+      "localAudioReference": "audio/rus-0a341994.ogg",
+      "sourceTextId": "text-rus-0a341994",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-0a341994"
+    },
+    {
+      "id": "rus-0a34cff7",
+      "localAudioReference": "audio/rus-0a34cff7.ogg",
+      "sourceTextId": "text-rus-0a34cff7",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-0a34cff7"
+    },
+    {
+      "id": "rus-0caf961a",
+      "localAudioReference": "audio/rus-0caf961a.ogg",
+      "sourceTextId": "text-rus-0caf961a",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-0caf961a"
+    },
+    {
+      "id": "rus-142d4fdf",
+      "localAudioReference": "audio/rus-142d4fdf.ogg",
+      "sourceTextId": "text-rus-142d4fdf",
+      "sourceRecordId": "shtooka-streit-cc-by-3.0-fr",
+      "rightsRecordId": "rights-rus-142d4fdf"
+    },
+    {
+      "id": "rus-18146ee7",
+      "localAudioReference": "audio/rus-18146ee7.ogg",
+      "sourceTextId": "text-rus-18146ee7",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-18146ee7"
+    },
+    {
+      "id": "rus-1a450737",
+      "localAudioReference": "audio/rus-1a450737.ogg",
+      "sourceTextId": "text-rus-1a450737",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-1a450737"
+    },
+    {
+      "id": "rus-1e43428d",
+      "localAudioReference": "audio/rus-1e43428d.ogg",
+      "sourceTextId": "text-rus-1e43428d",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-1e43428d"
+    },
+    {
+      "id": "rus-1ef9b054",
+      "localAudioReference": "audio/rus-1ef9b054.ogg",
+      "sourceTextId": "text-rus-1ef9b054",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-1ef9b054"
+    },
+    {
+      "id": "rus-205ef521",
+      "localAudioReference": "audio/rus-205ef521.ogg",
+      "sourceTextId": "text-rus-205ef521",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-205ef521"
+    },
+    {
+      "id": "rus-2204c783",
+      "localAudioReference": "audio/rus-2204c783.ogg",
+      "sourceTextId": "text-rus-2204c783",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-2204c783"
+    },
+    {
+      "id": "rus-2383e20d",
+      "localAudioReference": "audio/rus-2383e20d.ogg",
+      "sourceTextId": "text-rus-2383e20d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-2383e20d"
+    },
+    {
+      "id": "rus-23b64603",
+      "localAudioReference": "audio/rus-23b64603.ogg",
+      "sourceTextId": "text-rus-23b64603",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-23b64603"
+    },
+    {
+      "id": "rus-252a9f95",
+      "localAudioReference": "audio/rus-252a9f95.ogg",
+      "sourceTextId": "text-rus-252a9f95",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-252a9f95"
+    },
+    {
+      "id": "rus-26a76b8e",
+      "localAudioReference": "audio/rus-26a76b8e.ogg",
+      "sourceTextId": "text-rus-26a76b8e",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-26a76b8e"
+    },
+    {
+      "id": "rus-2746f35d",
+      "localAudioReference": "audio/rus-2746f35d.ogg",
+      "sourceTextId": "text-rus-2746f35d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-2746f35d"
+    },
+    {
+      "id": "rus-27b444bc",
+      "localAudioReference": "audio/rus-27b444bc.ogg",
+      "sourceTextId": "text-rus-27b444bc",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-27b444bc"
+    },
+    {
+      "id": "rus-291dcf07",
+      "localAudioReference": "audio/rus-291dcf07.ogg",
+      "sourceTextId": "text-rus-291dcf07",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-291dcf07"
+    },
+    {
+      "id": "rus-29907959",
+      "localAudioReference": "audio/rus-29907959.ogg",
+      "sourceTextId": "text-rus-29907959",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-29907959"
+    },
+    {
+      "id": "rus-2c7b956d",
+      "localAudioReference": "audio/rus-2c7b956d.ogg",
+      "sourceTextId": "text-rus-2c7b956d",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-2c7b956d"
+    },
+    {
+      "id": "rus-2d9b7a7c",
+      "localAudioReference": "audio/rus-2d9b7a7c.ogg",
+      "sourceTextId": "text-rus-2d9b7a7c",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-2d9b7a7c"
+    },
+    {
+      "id": "rus-2dacc217",
+      "localAudioReference": "audio/rus-2dacc217.ogg",
+      "sourceTextId": "text-rus-2dacc217",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-2dacc217"
+    },
+    {
+      "id": "rus-30bc7ddb",
+      "localAudioReference": "audio/rus-30bc7ddb.ogg",
+      "sourceTextId": "text-rus-30bc7ddb",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-30bc7ddb"
+    },
+    {
+      "id": "rus-311037c1",
+      "localAudioReference": "audio/rus-311037c1.ogg",
+      "sourceTextId": "text-rus-311037c1",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-311037c1"
+    },
+    {
+      "id": "rus-316f9a58",
+      "localAudioReference": "audio/rus-316f9a58.ogg",
+      "sourceTextId": "text-rus-316f9a58",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-316f9a58"
+    },
+    {
+      "id": "rus-31f54fe8",
+      "localAudioReference": "audio/rus-31f54fe8.ogg",
+      "sourceTextId": "text-rus-31f54fe8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-31f54fe8"
+    },
+    {
+      "id": "rus-320eeb9b",
+      "localAudioReference": "audio/rus-320eeb9b.ogg",
+      "sourceTextId": "text-rus-320eeb9b",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-320eeb9b"
+    },
+    {
+      "id": "rus-326bf667",
+      "localAudioReference": "audio/rus-326bf667.ogg",
+      "sourceTextId": "text-rus-326bf667",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-326bf667"
+    },
+    {
+      "id": "rus-327f4584",
+      "localAudioReference": "audio/rus-327f4584.ogg",
+      "sourceTextId": "text-rus-327f4584",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-327f4584"
+    },
+    {
+      "id": "rus-32b9bbf0",
+      "localAudioReference": "audio/rus-32b9bbf0.ogg",
+      "sourceTextId": "text-rus-32b9bbf0",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-32b9bbf0"
+    },
+    {
+      "id": "rus-34196cc9",
+      "localAudioReference": "audio/rus-34196cc9.ogg",
+      "sourceTextId": "text-rus-34196cc9",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-34196cc9"
+    },
+    {
+      "id": "rus-3441a20c",
+      "localAudioReference": "audio/rus-3441a20c.ogg",
+      "sourceTextId": "text-rus-3441a20c",
+      "sourceRecordId": "shtooka-streit-cc-by-2.0-fr",
+      "rightsRecordId": "rights-rus-3441a20c"
+    },
+    {
+      "id": "rus-3570c185",
+      "localAudioReference": "audio/rus-3570c185.ogg",
+      "sourceTextId": "text-rus-3570c185",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-3570c185"
+    },
+    {
+      "id": "rus-562b8b29",
+      "localAudioReference": "audio/rus-562b8b29.ogg",
+      "sourceTextId": "text-rus-562b8b29",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-562b8b29"
+    },
+    {
+      "id": "rus-5f5e2bb8",
+      "localAudioReference": "audio/rus-5f5e2bb8.ogg",
+      "sourceTextId": "text-rus-5f5e2bb8",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-5f5e2bb8"
+    },
+    {
+      "id": "rus-5faac196",
+      "localAudioReference": "audio/rus-5faac196.ogg",
+      "sourceTextId": "text-rus-5faac196",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-5faac196"
+    },
+    {
+      "id": "rus-6f6e8c17",
+      "localAudioReference": "audio/rus-6f6e8c17.ogg",
+      "sourceTextId": "text-rus-6f6e8c17",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-6f6e8c17"
+    },
+    {
+      "id": "rus-7204082e",
+      "localAudioReference": "audio/rus-7204082e.ogg",
+      "sourceTextId": "text-rus-7204082e",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-7204082e"
+    },
+    {
+      "id": "rus-7218bef2",
+      "localAudioReference": "audio/rus-7218bef2.ogg",
+      "sourceTextId": "text-rus-7218bef2",
+      "sourceRecordId": "shtooka-sakhno-cc-by-3.0-us",
+      "rightsRecordId": "rights-rus-7218bef2"
+    }
+  ],
   "optionalDrills": []
 }

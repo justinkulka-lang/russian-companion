@@ -11,9 +11,16 @@
     {
       "sourceId": "openrussian-dictionary",
       "provenance": "https://github.com/Badestrand/russian-dictionary",
-      "decision": "NOT_INSTALLED",
+      "decision": "STRESS_TEXT_ONLY",
       "licenseName": "CC BY-SA 4.0",
-      "reason": "Dictionary text is CC BY-SA 4.0. Share-alike confirmation is not recorded. The text is not a redistributable native-audio recording, and no lesson mapping was supplied."
+      "reason": "The accented column supplies stress-marked headwords under CC BY-SA 4.0. Share-alike confirmation is not recorded. OpenRussian audio stays excluded. No lesson mapping was supplied."
+    },
+    {
+      "sourceId": "shtooka-russian-commons",
+      "provenance": "https://commons.wikimedia.org/wiki/Commons:Shtooka",
+      "decision": "PARTIAL",
+      "licenseName": "CC BY 2.0 FR; CC BY 3.0 US; CC BY 3.0 FR",
+      "reason": "The bulk host did not resolve. Commons originals were rate-limited, so only retrieved files with a compatible file-page license and one OpenRussian headword match are packaged."
     },
     {
       "sourceId": "tatoeba-audio",

@@ -1,0 +1,15 @@
+{
+  "bulkHost": "packs.shtooka.net did not resolve; individual Ogg bytes were not in the Internet Archive",
+  "installedFrom": "Wikimedia Commons files whose pages cite the Shtooka Russian collections",
+  "frequencyCap": "not applied; neither SWAC tags nor OpenRussian rows include a frequency rank",
+  "shareAlikeConfirmation": "UNCONFIRMED",
+  "installedCount": 49,
+  "excluded": {
+    "not_russian_shtooka": 1,
+    "index_not_unique": 79,
+    "dictionary_not_unique": 36,
+    "download_failed": 151
+  },
+  "ambiguousDictionaryRows": 292,
+  "lessonMappings": "not supplied"
+}

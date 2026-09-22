@@ -38,16 +38,45 @@ class AttributionsUiTest {
     }
 
     @Test
-    fun emptyPackagedSeedShowsNotReadyWithoutAReleaseBlock() {
+    fun emptyInventoryShowsNotReadyWithoutAReleaseBlock() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(
+            SeedJson.encode(
+                minimalDocument().copy(
+                    courseSegments = emptyList(),
+                    sourceRecords = emptyList(),
+                ),
+            ),
+        )
+        show(store)
+
+        click("Attributions and licenses")
+        show("No attribution inventory is installed. This installation is not release-ready.")
+        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+            .assertDoesNotExist()
+    }
+
+    @Test
+    fun packagedSeedShowsInstalledInventoryAndShareAlikeBlock() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
         show(store, readSeed = { LocalStore.readPackagedSeed(context) })
 
         click("Attributions and licenses")
-        show("No attribution inventory is installed. This installation is not release-ready.")
-        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+        show("Public release is blocked until share-alike confirmation is recorded.")
+        compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
+        click(
+            "CC BY 3.0 US; CC BY-SA 4.0: Sergei Sakhno and Nicolas Vion, Shtooka Project. " +
+                "Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+        )
+        show("Source: shtooka-sakhno-cc-by-3.0-us")
+        show("License: CC BY 3.0 US; CC BY-SA 4.0")
+        show("Modification status: Unmodified")
+        show("Share-alike confirmation: Unconfirmed")
+        click("Close record")
     }
 
     @Test

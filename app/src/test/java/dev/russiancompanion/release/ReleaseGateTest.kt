@@ -25,7 +25,7 @@ class ReleaseGateTest {
         val assessment = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
         assertEquals(packagedBlockers, assessment.blockers)
-        assertFalse(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE))
     }
 
@@ -254,8 +254,7 @@ class ReleaseGateTest {
             ReleaseBlocker.PATHWAY_NOT_INSTALLED,
             ReleaseBlocker.PLAN_DEFINITIONS_NOT_INSTALLED,
             ReleaseBlocker.DEFAULT_GATE_NOT_INSTALLED,
-            ReleaseBlocker.LICENSED_AUDIO_NOT_PREPARED,
-            ReleaseBlocker.RIGHTS_RECORDS_ABSENT,
+            ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED,
         ) + missingEvidenceBlockers
     }
 }

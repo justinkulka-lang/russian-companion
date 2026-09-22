@@ -113,10 +113,10 @@ class AcceptanceBoundaryTest {
     }
 
     @Test
-    fun at006_shippedSourcesAndAssetsContainNoCyrillic() {
-        val roots = listOf(file("src/main/java"), file("src/main/res"), file("src/main/assets"))
+    fun at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable() {
+        val roots = listOf(file("src/main/java"), file("src/main/res"))
         val offenders = roots.flatMap { root ->
-            root.walkTopDown().filter { it.isFile }.mapNotNull { candidate ->
+            root.walkTopDown().filter { it.isFile && it.extension != "ogg" }.mapNotNull { candidate ->
                 val text = candidate.readText()
                 if (text.any { it.code in CYRILLIC }) candidate.path else null
             }
@@ -126,7 +126,10 @@ class AcceptanceBoundaryTest {
         assertTrue(userFacingText().contains("This model cannot be played."))
         val parsed = SeedJson.parse(file("src/main/assets/content/bundled-content.json").readText())
         assertTrue(parsed is SeedParse.Ok)
-        assertTrue((parsed as SeedParse.Ok).document.audioModels.isEmpty())
+        val document = (parsed as SeedParse.Ok).document
+        assertTrue(document.audioModels.isNotEmpty())
+        assertTrue(document.courseSegments.isEmpty())
+        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
     }
 
     @Test

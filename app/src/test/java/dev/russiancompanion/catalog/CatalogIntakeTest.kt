@@ -21,7 +21,7 @@ class CatalogIntakeTest {
         assertEquals(emptyList<String>(), assessment.eligibleIds)
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
         assertTrue(seed.contains("\"courseSegments\": []"))
-        assertTrue(seed.contains("\"audioModels\": []"))
+        assertTrue(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
     }
 
     @Test
@@ -79,7 +79,7 @@ class CatalogIntakeTest {
         assertEquals(false, assessment.replacePackagedSeed)
         assertEquals(listOf("audio-1"), assessment.excludedIds)
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
-        assertTrue(seed.contains("\"audioModels\": []"))
+        assertFalse(seed.contains("en.openrussian.org/dictionary-data"))
         val retained = File(root, RELEASE_EVIDENCE_MANIFEST).readText()
         assertFalse(retained.contains("RETAINED"))
     }
