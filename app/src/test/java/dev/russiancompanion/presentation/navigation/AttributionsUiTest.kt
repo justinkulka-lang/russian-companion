@@ -15,6 +15,7 @@ import dev.russiancompanion.data.local.source
 import dev.russiancompanion.data.local.seed.AudioModelSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
+import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
 import org.junit.After
@@ -68,12 +69,12 @@ class AttributionsUiTest {
         show("Public release is blocked until share-alike confirmation is recorded.")
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
-        click(
-            "CC BY 3.0 US; CC BY-SA 4.0: Sergei Sakhno and Nicolas Vion, Shtooka Project. " +
-                "Stress-marked text from OpenRussian, CC BY-SA 4.0.",
-        )
-        show("Source: shtooka-sakhno-cc-by-3.0-us")
-        show("License: CC BY 3.0 US; CC BY-SA 4.0")
+        val raw = checkNotNull(LocalStore.readPackagedSeed(context))
+        val parsed = SeedJson.parse(raw)
+        val source = (parsed as SeedParse.Ok).document.sourceRecords.first()
+        click("${source.licenseName}: ${source.attribution}")
+        show("Source: ${source.id}")
+        show("License: ${source.licenseName}")
         show("Modification status: Unmodified")
         show("Share-alike confirmation: Unconfirmed")
         click("Close record")

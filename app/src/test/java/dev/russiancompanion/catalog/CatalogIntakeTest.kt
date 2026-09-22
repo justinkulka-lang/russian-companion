@@ -1,5 +1,7 @@
 package dev.russiancompanion.catalog
 
+import dev.russiancompanion.data.local.seed.SeedJson
+import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.release.RELEASE_EVIDENCE_MANIFEST
 import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
@@ -11,17 +13,29 @@ import java.io.File
 
 class CatalogIntakeTest {
     @Test
-    fun committedIntakeDoesNotInstallACatalog() {
+    fun installedDropMatchesPackagedAudioAndRecordsEveryIndexedFile() {
         val root = repositoryRoot()
         val intake = File(root, CATALOG_INTAKE).readText()
-        val assessment = assessCatalogIntake(intake)
+        val decisions = File(root, CATALOG_SOURCE_DECISIONS).readText()
+        val assessment = assessCatalogIntake(intake, decisions)
         assertEquals(true, assessment.readable)
-        assertEquals(INTAKE_NOT_INSTALLED, assessment.state)
-        assertEquals(false, assessment.replacePackagedSeed)
-        assertEquals(emptyList<String>(), assessment.eligibleIds)
+        assertEquals("INSTALLED_DROP", assessment.state)
+        assertEquals(true, assessment.replacePackagedSeed)
+        assertEquals(emptyList<String>(), assessment.excludedIds)
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
         assertTrue(seed.contains("\"courseSegments\": []"))
         assertTrue(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
+        assertFalse(seed.contains("en.openrussian.org/dictionary-data"))
+        val document = (SeedJson.parse(seed) as SeedParse.Ok).document
+        assertEquals(document.audioModels.map { it.id }, assessment.eligibleIds)
+        document.audioModels.forEach { audio ->
+            val file = File(root, "app/src/main/assets/${audio.localAudioReference}")
+            assertTrue(file.isFile && file.length() > 32)
+        }
+        assertTrue(decisions.contains("\"sourceId\": \"file:"))
+        assertFalse(decisions.contains("CONFIRMED"))
+        val retained = File(root, RELEASE_EVIDENCE_MANIFEST).readText()
+        assertFalse(retained.contains("RETAINED"))
     }
 
     @Test
