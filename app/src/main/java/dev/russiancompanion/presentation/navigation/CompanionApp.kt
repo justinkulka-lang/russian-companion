@@ -16,6 +16,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.compose.rememberNavController
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationGateway
@@ -28,6 +31,7 @@ import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ExportUpdate
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.time.LocalDate
@@ -159,7 +163,16 @@ internal fun CompanionApp(
     }
 
     val launch = launchDestination(snapshot)
-    var appearance by remember(appearanceStore) { mutableStateOf(appearanceStore.current()) }
+    val lifecycleOwner = LocalLifecycleOwner.current
+    var appearance by remember(appearanceStore) { mutableStateOf(defaultAppearancePreference()) }
+    var appearanceSaveFailed by remember(appearanceStore) { mutableStateOf(false) }
+    LaunchedEffect(appearanceStore, lifecycleOwner) {
+        lifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+            appearanceStore.preference.collect { stored ->
+                appearance = stored
+            }
+        }
+    }
     val followSystemDark = isSystemInDarkTheme()
     val useDark = appearance == AppearancePreference.DARK ||
         (appearance == AppearancePreference.FOLLOW_SYSTEM && followSystemDark)
@@ -287,10 +300,15 @@ internal fun CompanionApp(
                 chooseExportDestination = chooseExportDestination,
                 onNeedSurface = { surface, then -> requestSurface(surface, then) },
                 appearance = appearance,
+                appearanceSaveFailed = appearanceSaveFailed,
                 onAppearanceChange = { next ->
-                    appearanceStore.set(next)
-                    appearance = next
-                    onAppearanceChange(next)
+                    scope.launch {
+                        val result = withContext(dispatcher) { appearanceStore.set(next) }
+                        appearanceSaveFailed = result.isFailure
+                        if (result.isSuccess) {
+                            onAppearanceChange(next)
+                        }
+                    }
                 },
             )
         }

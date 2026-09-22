@@ -39,6 +39,9 @@ import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.practice.AbPlaybackDriver
+import dev.russiancompanion.domain.practice.AbSession
+import dev.russiancompanion.domain.practice.AbStopReason
 import dev.russiancompanion.domain.practice.PRACTICE_NO_SCORE_STATEMENT
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.practice.PracticeProgress
@@ -46,6 +49,7 @@ import dev.russiancompanion.domain.practice.RECORDING_PLAYBACK_SPEED
 import dev.russiancompanion.domain.practice.canCompletePractice
 import dev.russiancompanion.domain.practice.canReplaceTake
 import dev.russiancompanion.domain.practice.canStartRecording
+import dev.russiancompanion.domain.practice.conflictingPlaybackBlocked
 
 @Composable
 internal fun PracticeLibraryBody(
@@ -147,7 +151,7 @@ internal fun PracticeSessionBody(
     var captureFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var playbackFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var modelSpeed by rememberSaveable(audioModelId) { mutableStateOf(1.0f) }
-    var looping by rememberSaveable(audioModelId) { mutableStateOf(false) }
+    var abSession by remember(audioModelId) { mutableStateOf(AbSession()) }
     val playable = model?.playable == true && !playbackFailed
     val readable = latest?.readable == true
     val completed = latest?.completed == true || model?.completed == true
@@ -162,21 +166,48 @@ internal fun PracticeSessionBody(
     )
     val recordingNowState = rememberUpdatedState(recordingNow)
     val lifecycleOwner = LocalLifecycleOwner.current
-    DisposableEffect(audioModelId, lifecycleOwner) {
+    val modelRef = model?.localAudioReference.orEmpty()
+    val recordingRef = latest?.takeIf { it.readable }?.localFileReference.orEmpty()
+    val abDriver = remember(audioModelId, modelRef, recordingRef) {
+        if (modelRef.isBlank() || recordingRef.isBlank()) {
+            null
+        } else {
+            AbPlaybackDriver(
+                audio = practiceAudio,
+                modelReference = modelRef,
+                recordingReference = recordingRef,
+                modelSpeed = { modelSpeed },
+                onSession = { next ->
+                    abSession = next
+                    if (next.lastStopReason == AbStopReason.ERROR) playbackFailed = true
+                },
+                onModelHeard = {
+                    modelPlayed = true
+                    modelReplayed = true
+                },
+                onRecordingHeard = { userPlayed = true },
+            )
+        }
+    }
+    DisposableEffect(audioModelId, lifecycleOwner, abDriver) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_STOP) {
+                abDriver?.stop(AbStopReason.BACKGROUND)
                 practiceAudio.releaseForBackground()
                 recordingNow = false
-                looping = false
+                abSession = AbSession()
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
         onDispose {
             lifecycleOwner.lifecycle.removeObserver(observer)
+            abDriver?.stop(AbStopReason.NAVIGATION)
             practiceAudio.stopPlayback()
             if (recordingNowState.value) practiceAudio.stopCapture(keep = false)
+            abSession = AbSession()
         }
     }
+    val playbackLocked = conflictingPlaybackBlocked(abSession)
     Text(PRACTICE_NO_SCORE_STATEMENT)
     if (model == null) {
         Text(stringResource(R.string.practice_session_unavailable))
@@ -196,6 +227,7 @@ internal fun PracticeSessionBody(
     }
     TextButton(
         onClick = { modelSpeed = 0.75f },
+        enabled = !playbackLocked,
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp),
@@ -208,6 +240,7 @@ internal fun PracticeSessionBody(
     }
     TextButton(
         onClick = { modelSpeed = 1.0f },
+        enabled = !playbackLocked,
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp),
@@ -221,17 +254,17 @@ internal fun PracticeSessionBody(
     Text(stringResource(R.string.practice_recording_speed, RECORDING_PLAYBACK_SPEED.toString()))
     TextButton(
         onClick = {
-            looping = false
+            abDriver?.stop(AbStopReason.USER_STOP)
             practiceAudio.playModel(model.localAudioReference, modelSpeed) { succeeded ->
                 if (succeeded) {
                     modelPlayed = true
                     if (readable) modelReplayed = true
                 } else {
                     playbackFailed = true
-                    looping = false
                 }
             }
         },
+        enabled = !playbackLocked,
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp),
@@ -291,89 +324,38 @@ internal fun PracticeSessionBody(
         Text(stringResource(R.string.practice_recorded))
         TextButton(
             onClick = {
-                looping = false
+                abDriver?.stop(AbStopReason.USER_STOP)
                 practiceAudio.playRecording(latest.localFileReference) { succeeded ->
-                    if (succeeded) userPlayed = true else {
-                        captureFailed = true
-                        looping = false
-                    }
+                    if (succeeded) userPlayed = true else captureFailed = true
                 }
             },
+            enabled = !playbackLocked,
             modifier = Modifier
                 .fillMaxWidth()
                 .heightIn(min = 48.dp),
         ) { Text(stringResource(R.string.practice_play_recording)) }
         TextButton(
-            onClick = {
-                looping = false
-                playAbSequence(
-                    practiceAudio = practiceAudio,
-                    modelReference = model.localAudioReference,
-                    recordingReference = latest.localFileReference,
-                    speed = modelSpeed,
-                    onModel = {
-                        modelPlayed = true
-                        modelReplayed = true
-                    },
-                    onRecording = { userPlayed = true },
-                    onFailure = {
-                        playbackFailed = true
-                        looping = false
-                    },
-                    onFinished = { if (looping) {
-                        playAbSequence(
-                            practiceAudio = practiceAudio,
-                            modelReference = model.localAudioReference,
-                            recordingReference = latest.localFileReference,
-                            speed = modelSpeed,
-                            onModel = {
-                                modelPlayed = true
-                                modelReplayed = true
-                            },
-                            onRecording = { userPlayed = true },
-                            onFailure = {
-                                playbackFailed = true
-                                looping = false
-                            },
-                            onFinished = {},
-                        )
-                    } },
-                )
-            },
+            onClick = { abDriver?.startOnce() },
+            enabled = !playbackLocked,
             modifier = Modifier
                 .fillMaxWidth()
                 .heightIn(min = 48.dp),
         ) { Text(stringResource(R.string.practice_play_ab)) }
         TextButton(
-            onClick = {
-                looping = true
-                playAbSequence(
-                    practiceAudio = practiceAudio,
-                    modelReference = model.localAudioReference,
-                    recordingReference = latest.localFileReference,
-                    speed = modelSpeed,
-                    onModel = {
-                        modelPlayed = true
-                        modelReplayed = true
-                    },
-                    onRecording = { userPlayed = true },
-                    onFailure = {
-                        playbackFailed = true
-                        looping = false
-                    },
-                    onFinished = {},
-                )
-            },
+            onClick = { abDriver?.startLoop() },
+            enabled = !playbackLocked,
             modifier = Modifier
                 .fillMaxWidth()
                 .heightIn(min = 48.dp),
         ) { Text(stringResource(R.string.practice_repeat_ab)) }
-        if (looping) {
+        if (abSession.active) {
+            Text(
+                stringResource(
+                    if (abSession.looping) R.string.practice_ab_looping else R.string.practice_ab_playing,
+                ),
+            )
             TextButton(
-                onClick = {
-                    looping = false
-                    practiceAudio.stopPlayback()
-                },
+                onClick = { abDriver?.stop(AbStopReason.USER_STOP) },
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(min = 48.dp),
@@ -432,33 +414,6 @@ internal fun PracticeSessionBody(
                 .heightIn(min = 48.dp),
         ) {
             Text(stringResource(R.string.practice_complete))
-        }
-    }
-}
-
-private fun playAbSequence(
-    practiceAudio: PracticeAudio,
-    modelReference: String,
-    recordingReference: String,
-    speed: Float,
-    onModel: () -> Unit,
-    onRecording: () -> Unit,
-    onFailure: () -> Unit,
-    onFinished: () -> Unit,
-) {
-    practiceAudio.playModel(modelReference, speed) { modelOk ->
-        if (!modelOk) {
-            onFailure()
-            return@playModel
-        }
-        onModel()
-        practiceAudio.playRecording(recordingReference) { recordingOk ->
-            if (!recordingOk) {
-                onFailure()
-                return@playRecording
-            }
-            onRecording()
-            onFinished()
         }
     }
 }

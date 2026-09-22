@@ -805,6 +805,54 @@ class DatabaseMigrationTest {
         helper.close()
     }
 
+    @Test
+    fun version5ExportRowsGainANullableRecordingSetDigest() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("v1-1-v5.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(5) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `export_records` (
+                                `id` TEXT NOT NULL,
+                                `exportedAtLocal` TEXT NOT NULL,
+                                `destinationReference` TEXT,
+                                `logCount` INTEGER NOT NULL,
+                                `evidenceCount` INTEGER NOT NULL,
+                                `progressCount` INTEGER NOT NULL,
+                                `recordingCount` INTEGER NOT NULL,
+                                `status` TEXT NOT NULL,
+                                `documentReference` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL(
+            """
+            INSERT INTO export_records (
+                id, exportedAtLocal, destinationReference, logCount, evidenceCount, progressCount,
+                recordingCount, status, documentReference
+            ) VALUES ('exp-1', '2026-09-21T10:00', 'notes.zip', 1, 0, 7, 1, 'COMPLETED', NULL)
+            """.trimIndent(),
+        )
+        MIGRATION_5_6.migrate(db)
+        val cursor = db.query("SELECT recordingCount, recordingSetDigest FROM export_records WHERE id = 'exp-1'")
+        cursor.moveToFirst()
+        assertEquals(1, cursor.getInt(0))
+        assertNull(cursor.getString(1))
+        cursor.close()
+        helper.close()
+    }
+
     private data class MigratedDecision(
         val snapshot: String,
         val evidenceIds: List<String>,

@@ -54,7 +54,7 @@ The data layer separates:
 - **mutable user files:** voice recordings and completed export packages;
 - **lightweight state:** onboarding completion and minimal presentation preferences required to restore the user's place.
 
-Room stores structured bundled and user records with a logical separation between immutable source records and mutable user records. DataStore stores only lightweight local state that does not replace the authoritative structured records. *(Trace: MA-018–MA-019, MA-029–MA-040, MA-043–MA-079; Product Brief §§3, 5–7)*
+Room stores structured bundled and user records with a logical separation between immutable source records and mutable user records. DataStore stores only lightweight local state that does not replace the authoritative structured records. The appearance preference is exposed as a Flow, collected lifecycle-aware with Dark as the initial value, and persisted off the main thread. A failed write keeps the prior preference. *(Trace: MA-018–MA-019, MA-029–MA-040, MA-043–MA-079, MA-124–MA-128; Product Brief §§3, 5–7, 12.1)*
 
 ## 4. Data Model
 
@@ -121,7 +121,7 @@ At first use and compatible upgrades, the app establishes the bundled content lo
 
 ### 6.1 Native-model playback
 
-Native-model audio is packaged inside the installed application and played only from its local asset. Playback resolves the matching `SourceText` and `AssetRightsRecord` before the model is eligible to appear. No streaming fallback exists. Model speed is limited to 0.75× and 1.0× and is applied only at playback time; the packaged file is not rewritten. Automatic A/B playback plays the model and then the user recording; looping and A/B stop on backgrounding, navigation away, audio-focus loss, or error. *(Trace: MA-014, MA-018, MA-036–MA-038, MA-050–MA-051, MA-138–MA-142; Product Brief §§3.2, 5–7, 12.3)*
+Native-model audio is packaged inside the installed application and played only from its local asset. Playback resolves the matching `SourceText` and `AssetRightsRecord` before the model is eligible to appear. No streaming fallback exists. Model speed is limited to 0.75× and 1.0× and is applied only at playback time; the packaged file is not rewritten. Automatic A/B playback is a single cancellable state machine that plays the model and then the user recording; a repeat command continues complete cycles until Stop, backgrounding, navigation away, audio-focus loss, or error. Conflicting playback actions are disabled while A/B is active. Interrupting playback notifies the controller so UI and audio state reset together. *(Trace: MA-014, MA-018, MA-036–MA-038, MA-050–MA-051, MA-138–MA-142; Product Brief §§3.2, 5–7, 12.3)*
 
 ### 6.2 User recording
 
@@ -145,7 +145,7 @@ Book and AnkiDroid evidence types carry a mandatory self-attested classification
 
 ## 9. Progress Architecture
 
-Progress is calculated solely from the user's local activity records across the governed categories. Aggregation produces totals, category comparisons, and factual seven-day and thirty-day windows, not proficiency labels, predictions, ranks, or ability scores. Negative stored durations hide totals and balance conclusions. Backup status and data/storage health are derived from existing local export records, Room readability, packaged metadata, and local file-size checks on a background dispatcher. *(Trace: MA-068–MA-071, MA-101–MA-109, MA-146–MA-157; Product Brief §§3.4, 4, 10, 12.4–12.6)*
+Progress is calculated solely from the user's local activity records across the governed categories. Aggregation produces totals, category comparisons, and factual seven-day and thirty-day windows, not proficiency labels, predictions, ranks, or ability scores. Negative stored durations hide totals and balance conclusions. Backup status and data/storage health are derived from existing local export records, Room readability, packaged metadata, and local file-size checks on a background dispatcher. Completed exports store a deterministic recording-set digest; coverage is never inferred from counts alone. *(Trace: MA-068–MA-071, MA-101–MA-109, MA-146–MA-157; Product Brief §§3.4, 4, 10, 12.4–12.6)*
 
 If a materialized progress snapshot is used, it remains traceable to its source logs and can be rebuilt locally. The authorities do not require a snapshot, so recomputation from logs is the minimal acceptable alternative. This is an explicit minimal choice where the governing documents are silent.
 

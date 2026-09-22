@@ -11,9 +11,12 @@ import java.time.LocalDate
 
 class BackupAndBalanceTest {
     @Test
-    fun backupStatusCoversNeverCompletedFailedAndIncompleteRecordings() {
-        assertEquals(BackupOutcome.NEVER_EXPORTED, backupStatus(emptyList(), 1).outcome)
-        assertFalse(backupStatus(emptyList(), 1).claimsProtection)
+    fun backupStatusUsesRecordingSetDigestNotCounts() {
+        val first = member("rec-1", "recordings/a.m4a", 10, "aaa")
+        val replaced = member("rec-1", "recordings/b.m4a", 10, "bbb")
+        val added = member("rec-2", "recordings/c.m4a", 8, "ccc")
+        val missing = member("rec-1", "recordings/a.m4a", null, null)
+        val originalDigest = recordingSetDigest(listOf(first))
         val completed = ExportRecordView(
             exportedAtLocal = "2026-09-22T10:00",
             fileName = "export.zip",
@@ -22,29 +25,40 @@ class BackupAndBalanceTest {
             progressCount = 3,
             recordingCount = 1,
             outcome = BackupOutcome.COMPLETED,
+            recordingSetDigest = originalDigest,
         )
-        val done = backupStatus(listOf(completed), expectedRecordingCount = 1)
+        assertEquals(BackupOutcome.NEVER_EXPORTED, backupStatus(emptyList(), originalDigest).outcome)
+        assertFalse(backupStatus(emptyList(), originalDigest).claimsProtection)
+        val done = backupStatus(listOf(completed), originalDigest)
         assertEquals(BackupOutcome.COMPLETED, done.outcome)
         assertTrue(done.claimsProtection)
         assertEquals("export.zip", done.lastSuccessfulFileName)
         assertEquals(true, done.expectedRecordingsIncluded)
-        val incomplete = backupStatus(
-            listOf(completed.copy(recordingCount = 0, exportedAtLocal = "2026-09-22T11:00")),
-            expectedRecordingCount = 1,
-        )
-        assertEquals(false, incomplete.expectedRecordingsIncluded)
+
+        val sameCountReplacement = backupStatus(listOf(completed), recordingSetDigest(listOf(replaced)))
+        assertEquals(false, sameCountReplacement.expectedRecordingsIncluded)
+        assertTrue(sameCountReplacement.claimsProtection)
+
+        val addedRecording = backupStatus(listOf(completed), recordingSetDigest(listOf(first, added)))
+        assertEquals(false, addedRecording.expectedRecordingsIncluded)
+
+        val missingFile = backupStatus(listOf(completed), recordingSetDigest(listOf(missing)))
+        assertEquals(false, missingFile.expectedRecordingsIncluded)
+
         val failed = backupStatus(
             listOf(completed, completed.copy(exportedAtLocal = "2026-09-22T12:00", outcome = BackupOutcome.FAILED)),
-            expectedRecordingCount = 1,
+            originalDigest,
         )
         assertEquals(BackupOutcome.FAILED, failed.outcome)
         assertTrue(failed.successfulExportExists)
         assertFalse(failed.claimsProtection)
-        val unconfirmed = backupStatus(
-            listOf(completed.copy(outcome = BackupOutcome.NOT_CONFIRMED)),
-            expectedRecordingCount = 0,
+        assertNull(failed.expectedRecordingsIncluded)
+
+        val countOnlyLegacy = backupStatus(
+            listOf(completed.copy(recordingSetDigest = null)),
+            originalDigest,
         )
-        assertEquals(BackupOutcome.NOT_CONFIRMED, unconfirmed.outcome)
+        assertEquals(false, countOnlyLegacy.expectedRecordingsIncluded)
     }
 
     @Test
@@ -82,5 +96,14 @@ class BackupAndBalanceTest {
         )
         assertFalse(corrupt.readable)
         assertTrue(corrupt.categories.isEmpty())
+    }
+
+    private fun member(
+        id: String,
+        reference: String,
+        bytes: Long?,
+        digest: String?,
+    ): RecordingSetMember {
+        return RecordingSetMember(id, reference, bytes, digest)
     }
 }

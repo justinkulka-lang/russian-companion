@@ -188,6 +188,42 @@ class DailyPlanUiTest {
         compose.onNodeWithText("WORD_UNRELATED_TOKEN").assertDoesNotExist()
     }
 
+    @Test
+    fun continueOpensTheNamedBookPlanNotTheGenericChecklist() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        clickContinue()
+        showText("Continue destination: Book practice")
+        showText("Use your copy of the book for this lesson")
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Practice session").assertDoesNotExist()
+    }
+
+    @Test
+    fun continueOpensTheNamedAnkiPlanAfterBookCompletion() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        clickText("Today's Plan", substring = false)
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
+        clickText("Home", substring = false)
+        clickContinue()
+        showText("Continue destination: AnkiDroid practice")
+        showText("Do the assigned AnkiDroid work")
+        showText("Mark complete")
+    }
+
     private fun clickText(text: String, substring: Boolean = true) {
         compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
     }

@@ -19,6 +19,8 @@ internal interface PracticeAudio {
 
     fun recordingBytes(localFileReference: String): Long? = null
 
+    fun recordingDigest(localFileReference: String): String? = null
+
     fun stopPlayback()
 
     fun releaseForBackground() {

@@ -12,7 +12,7 @@ data object LocalDataRoute
 data object HomeRoute
 
 @Serializable
-data object TodaysPlanRoute
+data class TodaysPlanRoute(val focusPlanDefinitionId: String? = null)
 
 @Serializable
 data object PracticeLibraryRoute

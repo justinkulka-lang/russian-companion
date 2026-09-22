@@ -29,6 +29,7 @@ import dev.russiancompanion.domain.progress.categoryHasRecordedActivity
 internal fun HomePlanSection(
     snapshot: NavigationSnapshot,
     appearance: AppearancePreference = AppearancePreference.DARK,
+    appearanceSaveFailed: Boolean = false,
     onAppearanceChange: (AppearancePreference) -> Unit = {},
     onContinue: () -> Unit = {},
     onBegin: (ChecklistItem) -> Unit,
@@ -39,25 +40,30 @@ internal fun HomePlanSection(
     if (lesson != null) {
         Text(stringResource(R.string.home_current_lesson, lesson))
     }
-    AppearanceControls(appearance = appearance, onAppearanceChange = onAppearanceChange)
     ContinueCard(
         snapshot = snapshot,
         onContinue = onContinue,
         onSelectLesson = onSelectLesson,
     )
+    AppearanceControls(
+        appearance = appearance,
+        saveFailed = appearanceSaveFailed,
+        onAppearanceChange = onAppearanceChange,
+    )
+    HomeBackupSummary(snapshot)
+    HomeHealthSummary(snapshot)
+    HomeBalanceSummary(snapshot)
     if (activeLessonHasPlan(snapshot)) {
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
     }
     GateSummarySection(snapshot)
     ActivitySummarySection(snapshot)
-    BackupStatusSection(snapshot)
-    StorageHealthSection(snapshot)
-    StudyBalanceSection(snapshot)
 }
 
 @Composable
 private fun AppearanceControls(
     appearance: AppearancePreference,
+    saveFailed: Boolean = false,
     onAppearanceChange: (AppearancePreference) -> Unit,
 ) {
     Text(stringResource(R.string.appearance_title), modifier = Modifier.semantics { heading() })
@@ -92,6 +98,9 @@ private fun AppearanceControls(
                 },
             ),
         )
+    }
+    if (saveFailed) {
+        Text(stringResource(R.string.appearance_save_failed))
     }
 }
 
@@ -170,6 +179,7 @@ private fun ContinueCard(
 internal fun TodaysPlanBody(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    focusPlanDefinitionId: String? = null,
     onSelectLesson: () -> Unit,
     onStartPractice: (ChecklistItem) -> Unit,
     onComplete: (String) -> Unit,
@@ -191,7 +201,30 @@ internal fun TodaysPlanBody(
     if (!plan.requiredWorkPrescribed) {
         Text(stringResource(R.string.plan_no_work))
     }
-    plan.items.forEach { item ->
+    val focused = plan.items.firstOrNull { it.planDefinitionId == focusPlanDefinitionId }
+    val remaining = if (focused == null) plan.items else plan.items.filter { it.planDefinitionId != focused.planDefinitionId }
+    if (focused != null) {
+        Text(
+            stringResource(
+                when (focused.activity) {
+                    ChecklistActivity.BOOK -> R.string.plan_continue_focus_book
+                    ChecklistActivity.ANKI_DROID -> R.string.plan_continue_focus_anki
+                    ChecklistActivity.LISTEN_RECORD_COMPARE -> R.string.plan_continue_focus_listen
+                    ChecklistActivity.TUTOR -> R.string.plan_continue_focus_book
+                },
+            ),
+        )
+        ChecklistRow(
+            item = focused,
+            practiceAvailable = practicePlayable(snapshot, focused.audioModelIds),
+            admittedAudio = snapshot.audio.isNotEmpty(),
+            onStartPractice = { onStartPractice(focused) },
+            onComplete = onComplete,
+            onRemoveTutor = onRemoveTutor,
+            actionsEnabled = actionsEnabled,
+        )
+    }
+    remaining.forEach { item ->
         ChecklistRow(
             item = item,
             practiceAvailable = practicePlayable(snapshot, item.audioModelIds),
@@ -315,9 +348,54 @@ private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
             ),
         )
     }
-    for (total in summary.totals) {
-        Text(recordedWorkLabel(total.category, total.recordedMinutes, total.completionCount))
+}
+
+@Composable
+private fun HomeBackupSummary(snapshot: NavigationSnapshot) {
+    val backup = snapshot.backup
+    Text(
+        when (backup.outcome) {
+            BackupOutcome.NEVER_EXPORTED -> stringResource(R.string.backup_summary_never)
+            BackupOutcome.COMPLETED -> stringResource(
+                R.string.backup_summary_completed,
+                backup.lastSuccessfulAt ?: stringResource(R.string.backup_summary_time_unavailable),
+            )
+            BackupOutcome.FAILED -> stringResource(R.string.backup_summary_failed)
+            BackupOutcome.NOT_CONFIRMED -> stringResource(R.string.backup_summary_not_confirmed)
+        },
+    )
+}
+
+@Composable
+private fun HomeHealthSummary(snapshot: NavigationSnapshot) {
+    val health = snapshot.storageHealth
+    Text(
+        when (health.databaseReadable) {
+            true -> stringResource(
+                R.string.health_summary_ok,
+                health.userRecordingCount ?: 0,
+            )
+            false -> stringResource(R.string.health_summary_unreadable)
+            null -> stringResource(R.string.health_summary_unavailable)
+        },
+    )
+}
+
+@Composable
+private fun HomeBalanceSummary(snapshot: NavigationSnapshot) {
+    val seven = snapshot.sevenDayBalance
+    val thirty = snapshot.thirtyDayBalance
+    if (!seven.readable || !thirty.readable) {
+        Text(stringResource(R.string.balance_unreadable))
+        return
     }
+    Text(
+        stringResource(
+            R.string.balance_summary,
+            seven.recordedCategories.size,
+            thirty.recordedCategories.size,
+        ),
+    )
 }
 
 @Composable

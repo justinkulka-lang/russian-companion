@@ -78,3 +78,35 @@ internal fun continueOpensUnrelatedAudio(
     return destination is ContinueDestination.ListenRecordCompare &&
         destination.audioModelId !in prescribedAudioModelIds
 }
+
+internal sealed interface ContinueNavigation {
+    data object SelectLesson : ContinueNavigation
+    data class PlanItem(
+        val planDefinitionId: String,
+        val activity: ChecklistActivity,
+    ) : ContinueNavigation
+    data class ListenRecordCompare(val audioModelId: String) : ContinueNavigation
+    data class GateEvidence(val gateId: String) : ContinueNavigation
+    data object Progress : ContinueNavigation
+    data object Unavailable : ContinueNavigation
+}
+
+internal fun continueNavigation(destination: ContinueDestination): ContinueNavigation {
+    return when (destination) {
+        ContinueDestination.SelectLesson -> ContinueNavigation.SelectLesson
+        is ContinueDestination.BookPractice -> ContinueNavigation.PlanItem(
+            planDefinitionId = destination.planDefinitionId,
+            activity = ChecklistActivity.BOOK,
+        )
+        is ContinueDestination.AnkiPractice -> ContinueNavigation.PlanItem(
+            planDefinitionId = destination.planDefinitionId,
+            activity = ChecklistActivity.ANKI_DROID,
+        )
+        is ContinueDestination.ListenRecordCompare -> ContinueNavigation.ListenRecordCompare(
+            destination.audioModelId,
+        )
+        is ContinueDestination.GateEvidence -> ContinueNavigation.GateEvidence(destination.gateId)
+        ContinueDestination.Progress -> ContinueNavigation.Progress
+        ContinueDestination.Unavailable -> ContinueNavigation.Unavailable
+    }
+}

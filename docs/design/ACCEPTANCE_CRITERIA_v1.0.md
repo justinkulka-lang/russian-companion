@@ -481,7 +481,7 @@ This document verifies governed outcomes without adding functionality. A release
 
 **Preconditions:** Packaged plan definitions and local user data for book, AnkiDroid, listen-record-compare, and gate states.
 
-**Procedure:** Exercise Continue for each governed destination, for no active lesson, for completed required work, for unavailable content, and for corrupt data. Confirm it never opens an unrelated lesson or audio model.
+**Procedure:** Exercise Continue for each governed destination, for no active lesson, for completed required work, for unavailable content, and for corrupt data. Confirm Book and AnkiDroid destinations carry the plan-definition identity and present that item and its completion action. Confirm it never opens an unrelated lesson or audio model.
 
 **Expected result:** Continue resolves only from packaged plans and local data and fails safely when the destination is unavailable or corrupt.
 
@@ -493,7 +493,7 @@ This document verifies governed outcomes without adding functionality. A release
 
 **Preconditions:** A playable licensed model and a readable local recording.
 
-**Procedure:** Play the model at 0.75× and 1.0×; play the user recording; run automatic A/B and a repeat loop; stop the loop; background the app or lose audio focus; replace the current take; clear the tutor-review mark.
+**Procedure:** Play the model at 0.75× and 1.0×; play the user recording; run automatic A/B and a repeat loop for at least two complete cycles; stop during model playback and during recording playback; background the app, navigate away, or lose audio focus; cause a playback error; replace the current take; clear the tutor-review mark. Confirm conflicting playback actions are disabled while A/B is active.
 
 **Expected result:** Model speed does not rewrite the packaged file; recordings play at 1.0×; looping stops on background, navigation away, focus loss, or error; replace-take persists; completion remains performance, not pronunciation judgment.
 
@@ -505,7 +505,7 @@ This document verifies governed outcomes without adding functionality. A release
 
 **Preconditions:** Local export records covering never exported, completed, failed, and incomplete recording-export cases.
 
-**Procedure:** Display each state and confirm counts, filename, time, missing-recording warning, and the absence of a protection claim for unsuccessful exports.
+**Procedure:** Display each state and confirm counts, filename, time, missing-recording warning, and the absence of a protection claim for unsuccessful exports. Confirm recording coverage uses the exported recording-set digest, including same-count replacement, added recordings, missing files, failed export, and an unchanged complete export.
 
 **Expected result:** Status is factual, local, and does not add import, cloud backup, or network access.
 

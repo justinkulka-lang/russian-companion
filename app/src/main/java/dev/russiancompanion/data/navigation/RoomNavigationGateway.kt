@@ -16,6 +16,7 @@ import dev.russiancompanion.data.local.CompletionState
 import dev.russiancompanion.data.local.EligibilityStatus
 import dev.russiancompanion.data.local.ExportRecordEntity
 import dev.russiancompanion.data.local.ExportStatus
+import dev.russiancompanion.data.local.RecordingRecordEntity
 import dev.russiancompanion.data.local.GateDecisionStatus
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.evidenceType
@@ -54,9 +55,11 @@ import dev.russiancompanion.domain.progress.ExportRecordView
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.ProgressReview
 import dev.russiancompanion.domain.progress.activityAttestationLabel
+import dev.russiancompanion.domain.progress.RecordingSetMember
 import dev.russiancompanion.domain.progress.backupStatus
 import dev.russiancompanion.domain.progress.bundledContentIdentity
 import dev.russiancompanion.domain.progress.evidenceAttestationLabel
+import dev.russiancompanion.domain.progress.recordingSetDigest
 import dev.russiancompanion.domain.progress.recordingStorage
 import dev.russiancompanion.domain.progress.StorageHealth
 import dev.russiancompanion.domain.progress.reviewProgress
@@ -237,7 +240,7 @@ internal class RoomNavigationGateway(
             gateDetails = gateDetails,
             activitySummary = summarizeActivity(summaryLogs),
             progress = progress,
-            backup = backupFrom(store.exports(), bundle.recordings.size),
+            backup = backupFrom(store.exports(), recordingMembers(bundle.recordings)),
             storageHealth = StorageHealth(
                 databaseReadable = true,
                 catalogAvailable = outcome?.status == SeedApplyStatus.APPLIED,
@@ -262,7 +265,7 @@ internal class RoomNavigationGateway(
 
     private fun backupFrom(
         records: List<ExportRecordEntity>,
-        expectedRecordingCount: Int,
+        currentMembers: List<RecordingSetMember>,
     ) = backupStatus(
         records.map { record ->
             ExportRecordView(
@@ -277,10 +280,24 @@ internal class RoomNavigationGateway(
                     ExportStatus.FAILED -> BackupOutcome.FAILED
                     ExportStatus.NOT_CONFIRMED -> BackupOutcome.NOT_CONFIRMED
                 },
+                recordingSetDigest = record.recordingSetDigest,
             )
         },
-        expectedRecordingCount,
+        recordingSetDigest(currentMembers),
     )
+
+    private fun recordingMembers(
+        recordings: List<RecordingRecordEntity>,
+    ): List<RecordingSetMember> {
+        return recordings.map { recording ->
+            RecordingSetMember(
+                recordingId = recording.id,
+                localFileReference = recording.localFileReference,
+                byteSize = practiceAudio.recordingBytes(recording.localFileReference),
+                contentDigest = practiceAudio.recordingDigest(recording.localFileReference),
+            )
+        }
+    }
 
     private fun parseLocalDate(localDate: String): LocalDate {
         return try {
@@ -518,6 +535,7 @@ internal class RoomNavigationGateway(
                         evidenceCount = built.evidenceCount,
                         progressCount = built.progressCount,
                         recordingCount = built.recordingCount,
+                        recordingSetDigest = recordingSetDigest(recordingMembers(store.recordings())),
                         packageCounts = ExportCounts(
                             logCount = built.logCount,
                             evidenceCount = built.evidenceCount,
@@ -547,6 +565,7 @@ internal class RoomNavigationGateway(
         evidenceCount: Int = 0,
         progressCount: Int = 0,
         recordingCount: Int = 0,
+        recordingSetDigest: String? = null,
         packageCounts: ExportCounts? = null,
     ) {
         store.saveExport(
@@ -560,6 +579,7 @@ internal class RoomNavigationGateway(
                 progressCount = progressCount,
                 recordingCount = recordingCount,
                 status = status,
+                recordingSetDigest = recordingSetDigest,
             ),
             packageCounts = packageCounts,
         )

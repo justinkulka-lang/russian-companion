@@ -106,7 +106,7 @@ The diagram is navigational only and does not prescribe implementation.
 
 **Purpose:** Give immediate access to today's required work and the four primary areas without a separate setup guide. *(Trace: MA-003, MA-043–MA-049, MA-124–MA-137, MA-146–MA-161; Product Brief §§2, 3, 10, 12)*
 
-**Contents:** Current lesson; a prominent Continue card showing lesson number, next unfinished required activity, completed versus total required activities, and a single Continue action; gate status summary; recent progress summary labeled as activity; compact backup status; compact data and storage health; compact seven-day and thirty-day factual study-balance views; appearance control limited to Dark and Follow system; entry points for Today's Plan, Practice, Gates, Progress, and Attributions & Licenses; Optional Drills entry only when admitted content is installed.
+**Contents:** Current lesson; a prominent Continue card first, showing lesson number, next unfinished required activity, completed versus total required activities, and a single Continue action; appearance control limited to Dark and Follow system; one-line backup, storage-health, and seven/thirty-day study-balance summaries; gate status summary; latest recorded activity labeled as activity; entry points for Today's Plan, Practice, Gates, Progress, and Attributions & Licenses; Optional Drills entry only when admitted content is installed. Detailed backup, health, and category-balance information lives on Progress.
 
 **Primary action:** Continue to the exact destination of the next unfinished required activity, or to the applicable gate, progress, or lesson-start state.
 
@@ -132,7 +132,7 @@ The diagram is navigational only and does not prescribe implementation.
 - tutor task only when the user has chosen to include one;
 - completion state for each item.
 
-**Primary action:** Open the selected item or mark an external book, AnkiDroid, or tutor activity complete.
+**Primary action:** Open the selected item or mark an external book, AnkiDroid, or tutor activity complete. When opened from Continue, the named Book or AnkiDroid plan item and its completion action are presented first. The plan-definition identity is carried in the route. There is no AnkiDroid integration or in-app practice bank.
 
 **Secondary navigation:** Home; Practice for audio work; Progress for the resulting activity record.
 

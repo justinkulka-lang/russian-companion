@@ -8,6 +8,7 @@ import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Build
 import dev.russiancompanion.domain.practice.PracticeAudio
+import dev.russiancompanion.domain.progress.sha256Hex
 import java.io.File
 import java.io.IOException
 import java.util.UUID
@@ -22,6 +23,7 @@ internal class AndroidPracticeAudio(
     private var player: MediaPlayer? = null
     private var recorder: MediaRecorder? = null
     private var captureFile: File? = null
+    private var pendingFinished: ((Boolean) -> Unit)? = null
     private var hasFocus: Boolean = false
     private val packagedAssets: Set<String> by lazy { listPackagedAssets() }
     private val focusListener = AudioManager.OnAudioFocusChangeListener { change ->
@@ -83,6 +85,16 @@ internal class AndroidPracticeAudio(
         return file.takeIf { it.isFile && it.length() > 0L }?.length()
     }
 
+    override fun recordingDigest(localFileReference: String): String? {
+        val file = recordingFile(localFileReference)
+        if (!file.isFile || file.length() == 0L) return null
+        return try {
+            sha256Hex(file.readBytes())
+        } catch (_: IOException) {
+            null
+        }
+    }
+
     override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
         if (!requestFocus()) {
             onFinished(false)
@@ -97,6 +109,7 @@ internal class AndroidPracticeAudio(
     }
 
     override fun stopPlayback() {
+        finishPending(false)
         releasePlayer()
     }
 
@@ -202,18 +215,20 @@ internal class AndroidPracticeAudio(
     }
 
     private fun playFile(file: File, speed: Float, onFinished: (Boolean) -> Unit) {
+        finishPending(false)
         releasePlayer()
         val mediaPlayer = MediaPlayer()
         player = mediaPlayer
+        pendingFinished = onFinished
         try {
             mediaPlayer.setDataSource(file.absolutePath)
             mediaPlayer.setOnCompletionListener {
+                finishPending(true)
                 releasePlayer()
-                onFinished(true)
             }
             mediaPlayer.setOnErrorListener { _, _, _ ->
+                finishPending(false)
                 releasePlayer()
-                onFinished(false)
                 true
             }
             mediaPlayer.prepare()
@@ -222,9 +237,15 @@ internal class AndroidPracticeAudio(
             }
             mediaPlayer.start()
         } catch (_: Exception) {
+            finishPending(false)
             releasePlayer()
-            onFinished(false)
         }
+    }
+
+    private fun finishPending(succeeded: Boolean) {
+        val callback = pendingFinished ?: return
+        pendingFinished = null
+        callback(succeeded)
     }
 
     private fun releasePlayer() {

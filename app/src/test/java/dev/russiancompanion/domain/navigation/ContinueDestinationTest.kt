@@ -65,6 +65,14 @@ class ContinueDestinationTest {
             ContinueDestination.Unavailable,
             resolveContinueDestination(baseSnapshot().copy(localDataOpen = false)),
         )
+        assertEquals(
+            ContinueNavigation.PlanItem("book", ChecklistActivity.BOOK),
+            continueNavigation(ContinueDestination.BookPractice("book")),
+        )
+        assertEquals(
+            ContinueNavigation.PlanItem("anki", ChecklistActivity.ANKI_DROID),
+            continueNavigation(ContinueDestination.AnkiPractice("anki")),
+        )
     }
 
     private fun planned(item: ChecklistItem): NavigationSnapshot {
