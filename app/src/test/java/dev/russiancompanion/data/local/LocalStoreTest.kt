@@ -5,6 +5,7 @@ import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedApplyStatus
 import dev.russiancompanion.data.local.seed.SeedJson
+import dev.russiancompanion.domain.pathway.PENGUIN_BEGINNER_ARC_LESSON_COUNT
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -26,8 +27,8 @@ class LocalStoreTest {
             assertEquals(true, outcome.shareAlikeBlocksRelease)
             assertEquals(1, store.learnerCount())
             assertFalse(store.learner().onboardingCompleted)
-            assertEquals(listOf(1, 2, 3), store.eligibleSegments().map { it.lessonNumber })
-            assertEquals(3, store.eligibleGates().size)
+            assertEquals((1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).toList(), store.eligibleSegments().map { it.lessonNumber })
+            assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT, store.eligibleGates().size)
         }
     }
 

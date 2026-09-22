@@ -18,6 +18,168 @@
       "lessonReference": "Lesson 3",
       "lessonNumber": 3,
       "sortOrder": 3
+    },
+    {
+      "id": "segment-4",
+      "lessonReference": "Lesson 4",
+      "lessonNumber": 4,
+      "sortOrder": 4
+    },
+    {
+      "id": "segment-5",
+      "lessonReference": "Lesson 5",
+      "lessonNumber": 5,
+      "sortOrder": 5
+    },
+    {
+      "id": "segment-6",
+      "lessonReference": "Lesson 6",
+      "lessonNumber": 6,
+      "sortOrder": 6
+    },
+    {
+      "id": "segment-7",
+      "lessonReference": "Lesson 7",
+      "lessonNumber": 7,
+      "sortOrder": 7
+    },
+    {
+      "id": "segment-8",
+      "lessonReference": "Lesson 8",
+      "lessonNumber": 8,
+      "sortOrder": 8
+    },
+    {
+      "id": "segment-9",
+      "lessonReference": "Lesson 9",
+      "lessonNumber": 9,
+      "sortOrder": 9
+    },
+    {
+      "id": "segment-10",
+      "lessonReference": "Lesson 10",
+      "lessonNumber": 10,
+      "sortOrder": 10
+    },
+    {
+      "id": "segment-11",
+      "lessonReference": "Lesson 11",
+      "lessonNumber": 11,
+      "sortOrder": 11
+    },
+    {
+      "id": "segment-12",
+      "lessonReference": "Lesson 12",
+      "lessonNumber": 12,
+      "sortOrder": 12
+    },
+    {
+      "id": "segment-13",
+      "lessonReference": "Lesson 13",
+      "lessonNumber": 13,
+      "sortOrder": 13
+    },
+    {
+      "id": "segment-14",
+      "lessonReference": "Lesson 14",
+      "lessonNumber": 14,
+      "sortOrder": 14
+    },
+    {
+      "id": "segment-15",
+      "lessonReference": "Lesson 15",
+      "lessonNumber": 15,
+      "sortOrder": 15
+    },
+    {
+      "id": "segment-16",
+      "lessonReference": "Lesson 16",
+      "lessonNumber": 16,
+      "sortOrder": 16
+    },
+    {
+      "id": "segment-17",
+      "lessonReference": "Lesson 17",
+      "lessonNumber": 17,
+      "sortOrder": 17
+    },
+    {
+      "id": "segment-18",
+      "lessonReference": "Lesson 18",
+      "lessonNumber": 18,
+      "sortOrder": 18
+    },
+    {
+      "id": "segment-19",
+      "lessonReference": "Lesson 19",
+      "lessonNumber": 19,
+      "sortOrder": 19
+    },
+    {
+      "id": "segment-20",
+      "lessonReference": "Lesson 20",
+      "lessonNumber": 20,
+      "sortOrder": 20
+    },
+    {
+      "id": "segment-21",
+      "lessonReference": "Lesson 21",
+      "lessonNumber": 21,
+      "sortOrder": 21
+    },
+    {
+      "id": "segment-22",
+      "lessonReference": "Lesson 22",
+      "lessonNumber": 22,
+      "sortOrder": 22
+    },
+    {
+      "id": "segment-23",
+      "lessonReference": "Lesson 23",
+      "lessonNumber": 23,
+      "sortOrder": 23
+    },
+    {
+      "id": "segment-24",
+      "lessonReference": "Lesson 24",
+      "lessonNumber": 24,
+      "sortOrder": 24
+    },
+    {
+      "id": "segment-25",
+      "lessonReference": "Lesson 25",
+      "lessonNumber": 25,
+      "sortOrder": 25
+    },
+    {
+      "id": "segment-26",
+      "lessonReference": "Lesson 26",
+      "lessonNumber": 26,
+      "sortOrder": 26
+    },
+    {
+      "id": "segment-27",
+      "lessonReference": "Lesson 27",
+      "lessonNumber": 27,
+      "sortOrder": 27
+    },
+    {
+      "id": "segment-28",
+      "lessonReference": "Lesson 28",
+      "lessonNumber": 28,
+      "sortOrder": 28
+    },
+    {
+      "id": "segment-29",
+      "lessonReference": "Lesson 29",
+      "lessonNumber": 29,
+      "sortOrder": 29
+    },
+    {
+      "id": "segment-30",
+      "lessonReference": "Lesson 30",
+      "lessonNumber": 30,
+      "sortOrder": 30
     }
   ],
   "planDefinitions": [
@@ -146,6 +308,1140 @@
       "required": false,
       "lessonNumber": null,
       "audioModelIds": []
+    },
+    {
+      "id": "plan-book-4",
+      "segmentId": "segment-4",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 4,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-4",
+      "segmentId": "segment-4",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 4,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-4",
+      "segmentId": "segment-4",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-bade482d"
+      ]
+    },
+    {
+      "id": "plan-tutor-4",
+      "segmentId": "segment-4",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-5",
+      "segmentId": "segment-5",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 5,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-5",
+      "segmentId": "segment-5",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 5,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-5",
+      "segmentId": "segment-5",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-e58e0540"
+      ]
+    },
+    {
+      "id": "plan-tutor-5",
+      "segmentId": "segment-5",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-6",
+      "segmentId": "segment-6",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 6,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-6",
+      "segmentId": "segment-6",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 6,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-6",
+      "segmentId": "segment-6",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-fc38bfb1"
+      ]
+    },
+    {
+      "id": "plan-tutor-6",
+      "segmentId": "segment-6",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-7",
+      "segmentId": "segment-7",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 7,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-7",
+      "segmentId": "segment-7",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 7,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-7",
+      "segmentId": "segment-7",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-fa1d892f"
+      ]
+    },
+    {
+      "id": "plan-tutor-7",
+      "segmentId": "segment-7",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-8",
+      "segmentId": "segment-8",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 8,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-8",
+      "segmentId": "segment-8",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 8,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-8",
+      "segmentId": "segment-8",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-f06e508c"
+      ]
+    },
+    {
+      "id": "plan-tutor-8",
+      "segmentId": "segment-8",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-9",
+      "segmentId": "segment-9",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 9,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-9",
+      "segmentId": "segment-9",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 9,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-9",
+      "segmentId": "segment-9",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-2383e20d"
+      ]
+    },
+    {
+      "id": "plan-tutor-9",
+      "segmentId": "segment-9",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-10",
+      "segmentId": "segment-10",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 10,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-10",
+      "segmentId": "segment-10",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 10,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-10",
+      "segmentId": "segment-10",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-291dcf07"
+      ]
+    },
+    {
+      "id": "plan-tutor-10",
+      "segmentId": "segment-10",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-11",
+      "segmentId": "segment-11",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 11,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-11",
+      "segmentId": "segment-11",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 11,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-11",
+      "segmentId": "segment-11",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-055bec5e"
+      ]
+    },
+    {
+      "id": "plan-tutor-11",
+      "segmentId": "segment-11",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-12",
+      "segmentId": "segment-12",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 12,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-12",
+      "segmentId": "segment-12",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 12,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-12",
+      "segmentId": "segment-12",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-80cf7d55"
+      ]
+    },
+    {
+      "id": "plan-tutor-12",
+      "segmentId": "segment-12",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-13",
+      "segmentId": "segment-13",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 13,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-13",
+      "segmentId": "segment-13",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 13,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-13",
+      "segmentId": "segment-13",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-43455517"
+      ]
+    },
+    {
+      "id": "plan-tutor-13",
+      "segmentId": "segment-13",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-14",
+      "segmentId": "segment-14",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 14,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-14",
+      "segmentId": "segment-14",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 14,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-14",
+      "segmentId": "segment-14",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-ad80a9b0"
+      ]
+    },
+    {
+      "id": "plan-tutor-14",
+      "segmentId": "segment-14",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-15",
+      "segmentId": "segment-15",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 15,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-15",
+      "segmentId": "segment-15",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 15,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-15",
+      "segmentId": "segment-15",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-26117270"
+      ]
+    },
+    {
+      "id": "plan-tutor-15",
+      "segmentId": "segment-15",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-16",
+      "segmentId": "segment-16",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 16,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-16",
+      "segmentId": "segment-16",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 16,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-16",
+      "segmentId": "segment-16",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-3f9cce57"
+      ]
+    },
+    {
+      "id": "plan-tutor-16",
+      "segmentId": "segment-16",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-17",
+      "segmentId": "segment-17",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 17,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-17",
+      "segmentId": "segment-17",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 17,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-17",
+      "segmentId": "segment-17",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-b00d753d"
+      ]
+    },
+    {
+      "id": "plan-tutor-17",
+      "segmentId": "segment-17",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-18",
+      "segmentId": "segment-18",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 18,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-18",
+      "segmentId": "segment-18",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 18,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-18",
+      "segmentId": "segment-18",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-a35b2182"
+      ]
+    },
+    {
+      "id": "plan-tutor-18",
+      "segmentId": "segment-18",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-19",
+      "segmentId": "segment-19",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 19,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-19",
+      "segmentId": "segment-19",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 19,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-19",
+      "segmentId": "segment-19",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-7a9e8e22"
+      ]
+    },
+    {
+      "id": "plan-tutor-19",
+      "segmentId": "segment-19",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-20",
+      "segmentId": "segment-20",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 20,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-20",
+      "segmentId": "segment-20",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 20,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-20",
+      "segmentId": "segment-20",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-1cfef8a9"
+      ]
+    },
+    {
+      "id": "plan-tutor-20",
+      "segmentId": "segment-20",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-21",
+      "segmentId": "segment-21",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 21,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-21",
+      "segmentId": "segment-21",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 21,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-21",
+      "segmentId": "segment-21",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-d5ac2c6b"
+      ]
+    },
+    {
+      "id": "plan-tutor-21",
+      "segmentId": "segment-21",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-22",
+      "segmentId": "segment-22",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 22,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-22",
+      "segmentId": "segment-22",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 22,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-22",
+      "segmentId": "segment-22",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-acdafc2d"
+      ]
+    },
+    {
+      "id": "plan-tutor-22",
+      "segmentId": "segment-22",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-23",
+      "segmentId": "segment-23",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 23,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-23",
+      "segmentId": "segment-23",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 23,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-23",
+      "segmentId": "segment-23",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-d187f10a"
+      ]
+    },
+    {
+      "id": "plan-tutor-23",
+      "segmentId": "segment-23",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-24",
+      "segmentId": "segment-24",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 24,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-24",
+      "segmentId": "segment-24",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 24,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-24",
+      "segmentId": "segment-24",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-ec38496b"
+      ]
+    },
+    {
+      "id": "plan-tutor-24",
+      "segmentId": "segment-24",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-25",
+      "segmentId": "segment-25",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 25,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-25",
+      "segmentId": "segment-25",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 25,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-25",
+      "segmentId": "segment-25",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-ea0055df"
+      ]
+    },
+    {
+      "id": "plan-tutor-25",
+      "segmentId": "segment-25",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-26",
+      "segmentId": "segment-26",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 26,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-26",
+      "segmentId": "segment-26",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 26,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-26",
+      "segmentId": "segment-26",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-21c55c54"
+      ]
+    },
+    {
+      "id": "plan-tutor-26",
+      "segmentId": "segment-26",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-27",
+      "segmentId": "segment-27",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 27,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-27",
+      "segmentId": "segment-27",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 27,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-27",
+      "segmentId": "segment-27",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-8d58f883"
+      ]
+    },
+    {
+      "id": "plan-tutor-27",
+      "segmentId": "segment-27",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-28",
+      "segmentId": "segment-28",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 28,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-28",
+      "segmentId": "segment-28",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 28,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-28",
+      "segmentId": "segment-28",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-c4754bcb"
+      ]
+    },
+    {
+      "id": "plan-tutor-28",
+      "segmentId": "segment-28",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-29",
+      "segmentId": "segment-29",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 29,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-29",
+      "segmentId": "segment-29",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 29,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-29",
+      "segmentId": "segment-29",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-e67f3a04"
+      ]
+    },
+    {
+      "id": "plan-tutor-29",
+      "segmentId": "segment-29",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-book-30",
+      "segmentId": "segment-30",
+      "activityType": "BOOK",
+      "instruction": "Use your copy of the book for this lesson",
+      "sortOrder": 1,
+      "required": true,
+      "lessonNumber": 30,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-anki-30",
+      "segmentId": "segment-30",
+      "activityType": "ANKI_DROID",
+      "instruction": "Do the assigned AnkiDroid work",
+      "sortOrder": 2,
+      "required": true,
+      "lessonNumber": 30,
+      "audioModelIds": []
+    },
+    {
+      "id": "plan-listen-30",
+      "segmentId": "segment-30",
+      "activityType": "LISTEN_RECORD_COMPARE",
+      "instruction": "Listen to the licensed model",
+      "sortOrder": 3,
+      "required": true,
+      "lessonNumber": null,
+      "audioModelIds": [
+        "rus-67775052"
+      ]
+    },
+    {
+      "id": "plan-tutor-30",
+      "segmentId": "segment-30",
+      "activityType": "TUTOR",
+      "instruction": "Optional tutor work, only when you choose it",
+      "sortOrder": 4,
+      "required": false,
+      "lessonNumber": null,
+      "audioModelIds": []
     }
   ],
   "gateDefinitions": [
@@ -229,6 +1525,789 @@
         },
         {
           "id": "c-work-3",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-4",
+      "segmentId": "segment-4",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-4",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-4",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-4",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-5",
+      "segmentId": "segment-5",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-5",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-5",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-5",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-6",
+      "segmentId": "segment-6",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-6",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-6",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-6",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-7",
+      "segmentId": "segment-7",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-7",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-7",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-7",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-8",
+      "segmentId": "segment-8",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-8",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-8",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-8",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-9",
+      "segmentId": "segment-9",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-9",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-9",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-9",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-10",
+      "segmentId": "segment-10",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-10",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-10",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-10",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-11",
+      "segmentId": "segment-11",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-11",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-11",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-11",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-12",
+      "segmentId": "segment-12",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-12",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-12",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-12",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-13",
+      "segmentId": "segment-13",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-13",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-13",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-13",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-14",
+      "segmentId": "segment-14",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-14",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-14",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-14",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-15",
+      "segmentId": "segment-15",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-15",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-15",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-15",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-16",
+      "segmentId": "segment-16",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-16",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-16",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-16",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-17",
+      "segmentId": "segment-17",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-17",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-17",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-17",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-18",
+      "segmentId": "segment-18",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-18",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-18",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-18",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-19",
+      "segmentId": "segment-19",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-19",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-19",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-19",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-20",
+      "segmentId": "segment-20",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-20",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-20",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-20",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-21",
+      "segmentId": "segment-21",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-21",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-21",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-21",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-22",
+      "segmentId": "segment-22",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-22",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-22",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-22",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-23",
+      "segmentId": "segment-23",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-23",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-23",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-23",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-24",
+      "segmentId": "segment-24",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-24",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-24",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-24",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-25",
+      "segmentId": "segment-25",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-25",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-25",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-25",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-26",
+      "segmentId": "segment-26",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-26",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-26",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-26",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-27",
+      "segmentId": "segment-27",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-27",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-27",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-27",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-28",
+      "segmentId": "segment-28",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-28",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-28",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-28",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-29",
+      "segmentId": "segment-29",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-29",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-29",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-29",
+          "evidenceType": "PRESCRIBED_WORK_COMPLETION",
+          "operator": "PRESENT",
+          "operand": null,
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "gate-30",
+      "segmentId": "segment-30",
+      "ruleVersion": "1",
+      "displayedRuleText": "Book revision score at least 1 AND AnkiDroid completion or maturity equals MATURE AND Prescribed work completion is recorded",
+      "conditions": [
+        {
+          "id": "c-book-30",
+          "evidenceType": "BOOK_REVISION_SCORE",
+          "operator": "AT_LEAST",
+          "operand": "1",
+          "sortOrder": 0
+        },
+        {
+          "id": "c-anki-30",
+          "evidenceType": "ANKI_DROID_STATUS",
+          "operator": "EQUALS",
+          "operand": "MATURE",
+          "sortOrder": 1
+        },
+        {
+          "id": "c-work-30",
           "evidenceType": "PRESCRIBED_WORK_COMPLETION",
           "operator": "PRESENT",
           "operand": null,

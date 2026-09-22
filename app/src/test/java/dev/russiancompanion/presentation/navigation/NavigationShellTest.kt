@@ -38,7 +38,7 @@ class NavigationShellTest {
     }
 
     @Test
-    fun packagedPlaceholderPathwayLetsOnboardingFinishAndStillReportsShareAlikeBlock() {
+    fun packagedCompletePathwayLetsOnboardingFinishAndStillReportsShareAlikeBlock() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -63,6 +63,7 @@ class NavigationShellTest {
         compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Lesson 2", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Lesson 3", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Lesson 30", substring = false).performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("Attributions and licenses").performScrollTo().performClick()
         compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
             .performScrollTo()

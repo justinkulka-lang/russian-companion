@@ -30,14 +30,15 @@ class ReleaseGateTest {
         val assessment = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
         assertEquals(packagedBlockers, assessment.blockers)
-        assertTrue(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
         assertFalse(assessment.blockers.contains(ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE))
         assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-001"))
     }
 
     @Test
-    fun packagedPlaceholderStaysNotApprovedWithShareAlikeAndRetainedEvidence() {
+    fun packagedCompletePathwayClearsPathwayIncompleteWhenShareAlikeAndEvidenceAreSupplied() {
         val (root, manifest) = retainedFixture()
         val parsed = SeedJson.parse(
             File(repositoryRoot(), "app/src/main/assets/content/bundled-content.json").readText(),
@@ -49,8 +50,9 @@ class ReleaseGateTest {
             },
         )
         val assessment = assessPackagedRelease(SeedJson.encode(confirmed), manifest, root)
-        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
-        assertEquals(listOf(ReleaseBlocker.PATHWAY_INCOMPLETE), assessment.blockers)
+        assertEquals(ReleaseDecision.APPROVED, assessment.decision)
+        assertEquals(emptyList<ReleaseBlocker>(), assessment.blockers)
+        assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-001"))
     }
 
@@ -71,12 +73,17 @@ class ReleaseGateTest {
         val missingGate = complete.copy(
             gateDefinitions = complete.gateDefinitions.filterNot { it.id == "gate-7" },
         )
+        val missingAudioBinding = complete.copy(
+            planDefinitions = complete.planDefinitions.map { plan ->
+                if (plan.id == "plan-listen-12") plan.copy(audioModelIds = listOf("audio-missing")) else plan
+            },
+        )
         val emptyPathway = complete.copy(
             courseSegments = emptyList(),
             planDefinitions = emptyList(),
             gateDefinitions = emptyList(),
         )
-        for (catalog in listOf(missingLesson, missingListen, missingGate)) {
+        for (catalog in listOf(missingLesson, missingListen, missingGate, missingAudioBinding)) {
             val assessment = assessPackagedRelease(SeedJson.encode(catalog), manifest, root)
             assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
             assertTrue(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
@@ -353,7 +360,6 @@ class ReleaseGateTest {
             ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
         )
         val packagedBlockers = listOf(
-            ReleaseBlocker.PATHWAY_INCOMPLETE,
             ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED,
         ) + missingEvidenceBlockers
     }
