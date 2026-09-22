@@ -48,12 +48,20 @@ import dev.russiancompanion.domain.plan.assembleDailyPlan
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.plan.summarizeActivity
 import dev.russiancompanion.domain.plan.summarizeGates
+import dev.russiancompanion.domain.progress.BackupOutcome
 import dev.russiancompanion.domain.progress.ExportCounts
+import dev.russiancompanion.domain.progress.ExportRecordView
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.ProgressReview
 import dev.russiancompanion.domain.progress.activityAttestationLabel
+import dev.russiancompanion.domain.progress.backupStatus
+import dev.russiancompanion.domain.progress.bundledContentIdentity
 import dev.russiancompanion.domain.progress.evidenceAttestationLabel
+import dev.russiancompanion.domain.progress.recordingStorage
+import dev.russiancompanion.domain.progress.StorageHealth
 import dev.russiancompanion.domain.progress.reviewProgress
+import dev.russiancompanion.domain.progress.studyBalance
+import java.time.LocalDate
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
@@ -66,6 +74,8 @@ internal class RoomNavigationGateway(
     private val readCatalogNotice: () -> String? = { null },
     private val readLicenseNotices: () -> List<LicenseNoticeOption> = { emptyList() },
     private val openRecording: (String) -> InputStream? = { null },
+    private val availableBytes: () -> Long? = { null },
+    private val applicationVersion: String? = null,
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
         return snapshot(localDate, NavigationSurface.FULL)
@@ -227,7 +237,57 @@ internal class RoomNavigationGateway(
             gateDetails = gateDetails,
             activitySummary = summarizeActivity(summaryLogs),
             progress = progress,
+            backup = backupFrom(store.exports(), bundle.recordings.size),
+            storageHealth = StorageHealth(
+                databaseReadable = true,
+                catalogAvailable = outcome?.status == SeedApplyStatus.APPLIED,
+                packagedAudioCount = bundle.eligibleAudio.size,
+                userRecordingCount = bundle.recordings.size,
+                recordingBytes = recordingStorage(
+                    bundle.recordings.map { practiceAudio.recordingBytes(it.localFileReference) },
+                ).first,
+                missingRecordingCount = recordingStorage(
+                    bundle.recordings.map { practiceAudio.recordingBytes(it.localFileReference) },
+                ).second,
+                availableBytes = availableBytes(),
+                applicationVersion = applicationVersion,
+                bundledContentIdentity = store.bundledSeedIdentity().let { (version, hash) ->
+                    bundledContentIdentity(version, hash)
+                },
+            ),
+            sevenDayBalance = studyBalance(summaryLogs, parseLocalDate(localDate), 7),
+            thirtyDayBalance = studyBalance(summaryLogs, parseLocalDate(localDate), 30),
         )
+    }
+
+    private fun backupFrom(
+        records: List<ExportRecordEntity>,
+        expectedRecordingCount: Int,
+    ) = backupStatus(
+        records.map { record ->
+            ExportRecordView(
+                exportedAtLocal = record.exportedAtLocal,
+                fileName = record.destinationReference,
+                logCount = record.logCount,
+                evidenceCount = record.evidenceCount,
+                progressCount = record.progressCount,
+                recordingCount = record.recordingCount,
+                outcome = when (record.status) {
+                    ExportStatus.COMPLETED -> BackupOutcome.COMPLETED
+                    ExportStatus.FAILED -> BackupOutcome.FAILED
+                    ExportStatus.NOT_CONFIRMED -> BackupOutcome.NOT_CONFIRMED
+                },
+            )
+        },
+        expectedRecordingCount,
+    )
+
+    private fun parseLocalDate(localDate: String): LocalDate {
+        return try {
+            LocalDate.parse(localDate)
+        } catch (_: Exception) {
+            LocalDate.now()
+        }
     }
 
     override fun confirmLesson(segmentId: String, localDate: String) {

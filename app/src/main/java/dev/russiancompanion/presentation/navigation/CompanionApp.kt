@@ -5,6 +5,9 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
+import dev.russiancompanion.data.appearance.AppearanceStore
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.appearance.defaultAppearancePreference
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -61,6 +64,8 @@ internal fun CompanionApp(
     recordedAt: () -> String = { LocalDateTime.now().toString() },
     practiceAudio: PracticeAudio,
     chooseExportDestination: (() -> ExportSelection?)? = null,
+    appearanceStore: AppearanceStore = AppearanceStore.memory(defaultAppearancePreference()),
+    onAppearanceChange: (AppearancePreference) -> Unit = {},
 ) {
     val dispatcher = snapshotDispatcher()
     val scope = rememberCoroutineScope()
@@ -154,7 +159,11 @@ internal fun CompanionApp(
     }
 
     val launch = launchDestination(snapshot)
-    val colors = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()
+    var appearance by remember(appearanceStore) { mutableStateOf(appearanceStore.current()) }
+    val followSystemDark = isSystemInDarkTheme()
+    val useDark = appearance == AppearancePreference.DARK ||
+        (appearance == AppearancePreference.FOLLOW_SYSTEM && followSystemDark)
+    val colors = if (useDark) darkColorScheme() else lightColorScheme()
     MaterialTheme(colorScheme = colors) {
         key(launch, optionalDrillsAvailable(snapshot)) {
             val navController = rememberNavController()
@@ -277,6 +286,12 @@ internal fun CompanionApp(
                 },
                 chooseExportDestination = chooseExportDestination,
                 onNeedSurface = { surface, then -> requestSurface(surface, then) },
+                appearance = appearance,
+                onAppearanceChange = { next ->
+                    appearanceStore.set(next)
+                    appearance = next
+                    onAppearanceChange(next)
+                },
             )
         }
     }

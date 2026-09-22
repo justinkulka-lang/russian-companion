@@ -6,6 +6,8 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -40,7 +42,9 @@ import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.practice.PRACTICE_NO_SCORE_STATEMENT
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.practice.PracticeProgress
+import dev.russiancompanion.domain.practice.RECORDING_PLAYBACK_SPEED
 import dev.russiancompanion.domain.practice.canCompletePractice
+import dev.russiancompanion.domain.practice.canReplaceTake
 import dev.russiancompanion.domain.practice.canStartRecording
 
 @Composable
@@ -142,6 +146,8 @@ internal fun PracticeSessionBody(
     var recordingNow by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var captureFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var playbackFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
+    var modelSpeed by rememberSaveable(audioModelId) { mutableStateOf(1.0f) }
+    var looping by rememberSaveable(audioModelId) { mutableStateOf(false) }
     val playable = model?.playable == true && !playbackFailed
     val readable = latest?.readable == true
     val completed = latest?.completed == true || model?.completed == true
@@ -161,6 +167,7 @@ internal fun PracticeSessionBody(
             if (event == Lifecycle.Event.ON_STOP) {
                 practiceAudio.releaseForBackground()
                 recordingNow = false
+                looping = false
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
@@ -188,16 +195,46 @@ internal fun PracticeSessionBody(
         Text(stringResource(R.string.practice_played))
     }
     TextButton(
+        onClick = { modelSpeed = 0.75f },
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (modelSpeed == 0.75f) R.string.practice_speed_075_selected else R.string.practice_speed_075,
+            ),
+        )
+    }
+    TextButton(
+        onClick = { modelSpeed = 1.0f },
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (modelSpeed == 1.0f) R.string.practice_speed_100_selected else R.string.practice_speed_100,
+            ),
+        )
+    }
+    Text(stringResource(R.string.practice_recording_speed, RECORDING_PLAYBACK_SPEED.toString()))
+    TextButton(
         onClick = {
-            practiceAudio.playModel(model.localAudioReference) { succeeded ->
+            looping = false
+            practiceAudio.playModel(model.localAudioReference, modelSpeed) { succeeded ->
                 if (succeeded) {
                     modelPlayed = true
                     if (readable) modelReplayed = true
                 } else {
                     playbackFailed = true
+                    looping = false
                 }
             }
         },
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
     ) {
         Text(stringResource(if (readable) R.string.practice_replay_model else R.string.practice_play_model))
     }
@@ -254,14 +291,100 @@ internal fun PracticeSessionBody(
         Text(stringResource(R.string.practice_recorded))
         TextButton(
             onClick = {
+                looping = false
                 practiceAudio.playRecording(latest.localFileReference) { succeeded ->
-                    if (succeeded) userPlayed = true else captureFailed = true
+                    if (succeeded) userPlayed = true else {
+                        captureFailed = true
+                        looping = false
+                    }
                 }
             },
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) { Text(stringResource(R.string.practice_play_recording)) }
+        TextButton(
+            onClick = {
+                looping = false
+                playAbSequence(
+                    practiceAudio = practiceAudio,
+                    modelReference = model.localAudioReference,
+                    recordingReference = latest.localFileReference,
+                    speed = modelSpeed,
+                    onModel = {
+                        modelPlayed = true
+                        modelReplayed = true
+                    },
+                    onRecording = { userPlayed = true },
+                    onFailure = {
+                        playbackFailed = true
+                        looping = false
+                    },
+                    onFinished = { if (looping) {
+                        playAbSequence(
+                            practiceAudio = practiceAudio,
+                            modelReference = model.localAudioReference,
+                            recordingReference = latest.localFileReference,
+                            speed = modelSpeed,
+                            onModel = {
+                                modelPlayed = true
+                                modelReplayed = true
+                            },
+                            onRecording = { userPlayed = true },
+                            onFailure = {
+                                playbackFailed = true
+                                looping = false
+                            },
+                            onFinished = {},
+                        )
+                    } },
+                )
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_play_ab)) }
+        TextButton(
+            onClick = {
+                looping = true
+                playAbSequence(
+                    practiceAudio = practiceAudio,
+                    modelReference = model.localAudioReference,
+                    recordingReference = latest.localFileReference,
+                    speed = modelSpeed,
+                    onModel = {
+                        modelPlayed = true
+                        modelReplayed = true
+                    },
+                    onRecording = { userPlayed = true },
+                    onFailure = {
+                        playbackFailed = true
+                        looping = false
+                    },
+                    onFinished = {},
+                )
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_repeat_ab)) }
+        if (looping) {
+            TextButton(
+                onClick = {
+                    looping = false
+                    practiceAudio.stopPlayback()
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 48.dp),
+            ) { Text(stringResource(R.string.practice_stop_loop)) }
+        }
         TextButton(
             onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) { } },
             enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) {
             Text(
                 stringResource(
@@ -269,13 +392,73 @@ internal fun PracticeSessionBody(
                 ),
             )
         }
+        if (latest.markedForTutorReview) {
+            TextButton(
+                onClick = { onTutorReview(latest.id, false) { } },
+                enabled = !operationInProgress,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 48.dp),
+            ) { Text(stringResource(R.string.practice_clear_tutor)) }
+        }
+    }
+    if (canReplaceTake(progress) && !recordingNow) {
+        TextButton(
+            onClick = {
+                if (canStartRecording(progress.copy(alreadyCompleted = false, hasReadableRecording = false)) ||
+                    canReplaceTake(progress)
+                ) {
+                    val started = practiceAudio.startCapture()
+                    if (started == null) {
+                        captureFailed = true
+                    } else {
+                        captureFailed = false
+                        recordingNow = true
+                    }
+                }
+            },
+            enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_replace_take)) }
     }
     if (canCompletePractice(progress)) {
         TextButton(
             onClick = { onComplete(model.id) { } },
             enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) {
             Text(stringResource(R.string.practice_complete))
+        }
+    }
+}
+
+private fun playAbSequence(
+    practiceAudio: PracticeAudio,
+    modelReference: String,
+    recordingReference: String,
+    speed: Float,
+    onModel: () -> Unit,
+    onRecording: () -> Unit,
+    onFailure: () -> Unit,
+    onFinished: () -> Unit,
+) {
+    practiceAudio.playModel(modelReference, speed) { modelOk ->
+        if (!modelOk) {
+            onFailure()
+            return@playModel
+        }
+        onModel()
+        practiceAudio.playRecording(recordingReference) { recordingOk ->
+            if (!recordingOk) {
+                onFailure()
+                return@playRecording
+            }
+            onRecording()
+            onFinished()
         }
     }
 }

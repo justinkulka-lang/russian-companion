@@ -61,6 +61,9 @@ internal fun ProgressScreen(
             if (progress.totalMinutes == 0L && progress.totalCompletions == 0) {
                 Text(stringResource(R.string.home_no_activity))
             }
+            BackupStatusSection(snapshot)
+            StorageHealthSection(snapshot)
+            StudyBalanceSection(snapshot)
             for (log in progress.recentLogs) {
                 TextButton(onClick = { selectedLogId = log.id }) {
                     Text(stringResource(R.string.progress_log_entry, categoryLabel(log.category), log.recordedAtLocal))

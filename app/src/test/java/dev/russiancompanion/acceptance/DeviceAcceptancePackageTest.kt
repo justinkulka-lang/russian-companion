@@ -6,6 +6,7 @@ import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import org.junit.Assert.assertEquals
@@ -74,20 +75,18 @@ class DeviceAcceptancePackageTest {
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
-        assertEquals("1.0.0", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals("1.1.0", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(3, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
         assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
-        assertEquals(
-            "e86e72d1377a3b33f2a77b44c7354e56b3c0b5ce",
-            candidate.getValue("sourceCommit").jsonPrimitive.content,
-        )
+        assertEquals(JsonNull, candidate.getValue("sourceCommit"))
         val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
         assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
         assertEquals(
             dev.russiancompanion.release.computeReleaseSourceDigest(root),
             sourceDigest,
         )
-        assertEquals(true, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
-        assertEquals(true, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
+        assertEquals(false, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
+        assertEquals(false, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
         val preserved = candidate.getValue("preservedPriorCandidate").jsonObject
         assertEquals(
             "0602edaeb05a353de5e994c127eb87b5b97078a3",
@@ -103,17 +102,22 @@ class DeviceAcceptancePackageTest {
         val artifact = candidate.getValue("artifact").jsonObject
         assertEquals("acceptance-candidate-debug-apk", artifact.getValue("artifactName").jsonPrimitive.content)
         val artifactStatus = artifact.getValue("status").jsonPrimitive.content
-        assertEquals("RECORDED", artifactStatus)
+        assertEquals("NOT_FROZEN", artifactStatus)
+        assertEquals(JsonNull, artifact.getValue("sha256"))
+        assertEquals(JsonNull, artifact.getValue("runUrl"))
+        val frozen = candidate.getValue("preservedFrozenCandidate").jsonObject
+        assertEquals("1.0.0", frozen.getValue("versionName").jsonPrimitive.content)
+        assertEquals(
+            "e86e72d1377a3b33f2a77b44c7354e56b3c0b5ce",
+            frozen.getValue("sourceCommit").jsonPrimitive.content,
+        )
+        val frozenArtifact = frozen.getValue("artifact").jsonObject
+        assertEquals("35754785768", frozenArtifact.getValue("runId").jsonPrimitive.content)
         assertEquals(
             "dd873f420b1ecf98790943dd69a8a352db0c2a81464e915f87dbd21b48bf73ca",
-            artifact.getValue("sha256").jsonPrimitive.content,
+            frozenArtifact.getValue("sha256").jsonPrimitive.content,
         )
-        assertEquals(29164707L, artifact.getValue("apkBytes").jsonPrimitive.content.toLong())
-        assertEquals("35754785768", artifact.getValue("runId").jsonPrimitive.content)
-        assertEquals(
-            "https://github.com/justinkulka-lang/russian-companion/actions/runs/35754785768",
-            artifact.getValue("runUrl").jsonPrimitive.content,
-        )
+        assertEquals(29164707L, frozenArtifact.getValue("apkBytes").jsonPrimitive.content.toLong())
         assertEquals("MISSING", candidate.getValue("retainedEvidence").jsonPrimitive.content)
         val unexecuted = candidate.getValue("unexecutedProcedures").jsonArray.map {
             it.jsonPrimitive.content

@@ -62,6 +62,10 @@ internal class AndroidPracticeAudio(
     }
 
     override fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit) {
+        playModel(localAudioReference, 1.0f, onFinished)
+    }
+
+    override fun playModel(localAudioReference: String, speed: Float, onFinished: (Boolean) -> Unit) {
         if (!requestFocus()) {
             onFinished(false)
             return
@@ -71,7 +75,12 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(cached, onFinished)
+        playFile(cached, speed.coerceIn(0.75f, 1.0f), onFinished)
+    }
+
+    override fun recordingBytes(localFileReference: String): Long? {
+        val file = recordingFile(localFileReference)
+        return file.takeIf { it.isFile && it.length() > 0L }?.length()
     }
 
     override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
@@ -84,7 +93,7 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(file, onFinished)
+        playFile(file, RECORDING_SPEED, onFinished)
     }
 
     override fun stopPlayback() {
@@ -192,7 +201,7 @@ internal class AndroidPracticeAudio(
         }
     }
 
-    private fun playFile(file: File, onFinished: (Boolean) -> Unit) {
+    private fun playFile(file: File, speed: Float, onFinished: (Boolean) -> Unit) {
         releasePlayer()
         val mediaPlayer = MediaPlayer()
         player = mediaPlayer
@@ -208,6 +217,9 @@ internal class AndroidPracticeAudio(
                 true
             }
             mediaPlayer.prepare()
+            if (speed != 1.0f) {
+                mediaPlayer.playbackParams = mediaPlayer.playbackParams.setSpeed(speed)
+            }
             mediaPlayer.start()
         } catch (_: Exception) {
             releasePlayer()
@@ -244,5 +256,6 @@ internal class AndroidPracticeAudio(
 
     private companion object {
         const val RECORDINGS_DIR = "recordings"
+        const val RECORDING_SPEED = 1.0f
     }
 }

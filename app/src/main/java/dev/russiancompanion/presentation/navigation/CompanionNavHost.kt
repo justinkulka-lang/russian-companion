@@ -21,6 +21,9 @@ import dev.russiancompanion.domain.navigation.OnboardingConfirmation
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.navigation.practiceLibraryAvailable
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.navigation.ContinueDestination
+import dev.russiancompanion.domain.navigation.resolveContinueDestination
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
@@ -58,6 +61,8 @@ internal fun CompanionNavHost(
     onExport: (OutputStream, String?, String?, (ExportUpdate) -> Unit) -> Unit,
     chooseExportDestination: (() -> ExportSelection?)? = null,
     onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit = { _, then -> then(snapshot) },
+    appearance: AppearancePreference = AppearancePreference.DARK,
+    onAppearanceChange: (AppearancePreference) -> Unit = {},
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -90,6 +95,11 @@ internal fun CompanionNavHost(
         composable<HomeRoute> {
             HomeScreen(
                 snapshot = snapshot,
+                appearance = appearance,
+                onAppearanceChange = onAppearanceChange,
+                onContinue = {
+                    openContinueDestination(navController, snapshot, onNeedSurface)
+                },
                 onBegin = { item ->
                     if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
                         onNeedSurface(NavigationSurface.PRACTICE) { loaded ->
@@ -274,6 +284,27 @@ internal fun CompanionNavHost(
     }
 }
 
+private fun openContinueDestination(
+    navController: NavHostController,
+    snapshot: NavigationSnapshot,
+    onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit,
+) {
+    when (val destination = resolveContinueDestination(snapshot)) {
+        ContinueDestination.SelectLesson -> navController.navigate(OnboardingRoute)
+        is ContinueDestination.BookPractice,
+        is ContinueDestination.AnkiPractice,
+        -> navController.navigate(TodaysPlanRoute)
+        is ContinueDestination.ListenRecordCompare -> {
+            onNeedSurface(NavigationSurface.PRACTICE) {
+                navController.navigate(PracticeSessionRoute(destination.audioModelId))
+            }
+        }
+        is ContinueDestination.GateEvidence -> navController.navigate(GateDetailRoute(destination.gateId))
+        ContinueDestination.Progress -> navController.navigate(ProgressRoute)
+        ContinueDestination.Unavailable -> Unit
+    }
+}
+
 private fun beginPlanItem(
     navController: NavHostController,
     snapshot: NavigationSnapshot,
@@ -376,6 +407,9 @@ private fun LocalDataScreen(onRetry: () -> Unit, onAttributions: () -> Unit) {
 @Composable
 private fun HomeScreen(
     snapshot: NavigationSnapshot,
+    appearance: AppearancePreference,
+    onAppearanceChange: (AppearancePreference) -> Unit,
+    onContinue: () -> Unit,
     onBegin: (ChecklistItem) -> Unit,
     onTodaysPlan: () -> Unit,
     onPractice: () -> Unit,
@@ -396,6 +430,9 @@ private fun HomeScreen(
         )
         HomePlanSection(
             snapshot = snapshot,
+            appearance = appearance,
+            onAppearanceChange = onAppearanceChange,
+            onContinue = onContinue,
             onBegin = onBegin,
             onTodaysPlan = onTodaysPlan,
             onSelectLesson = onSelectLesson,

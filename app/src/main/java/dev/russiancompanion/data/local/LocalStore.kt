@@ -43,6 +43,11 @@ internal class LocalStore private constructor(
 
     fun seedOutcome(): SeedOutcome? = lastSeedOutcome
 
+    fun bundledSeedIdentity(): Pair<Int?, String?> = call {
+        val state = database.bundled().seedState(BundledSeedStateEntity.SINGLETON_ID)
+        state?.contentVersion to state?.contentHash?.takeIf { it.isNotBlank() }
+    }
+
     fun confirmLesson(segmentId: String, localDate: String) = call {
         val segment = database.bundled().segment(segmentId)
         if (segment == null || segment.eligibilityStatus != EligibilityStatus.ELIGIBLE) {
