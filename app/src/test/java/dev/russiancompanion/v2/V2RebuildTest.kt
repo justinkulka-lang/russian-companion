@@ -56,8 +56,18 @@ class V2RebuildTest {
         val validation = V2Validator.validate(pack)
         assertTrue(validation.errors.joinToString(), validation.ok)
         assertEquals(30, pack.units.size)
-        assertEquals("DEVELOPMENT", pack.unit(1)?.installState)
+        assertEquals("INSTALLED", pack.unit(1)?.installState)
         assertEquals("DEVELOPMENT", pack.unit(2)?.installState)
+        assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(1)?.mappingStatus)
+        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
+        assertTrue(pack.unit(1)!!.sessions.none { session -> session.steps.any { it.kind == "LISTEN" } })
+        assertEquals(0, pack.admissions.mappedPronunciationAudio)
+        pack.unit(1)!!.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            assertTrue(objective.id, objective.exampleIds.size >= 2)
+            assertTrue(objective.instructionStepIds.isNotEmpty())
+            assertTrue(objective.checkItemIds.isNotEmpty())
+            assertTrue(objective.remediationStepIds.isNotEmpty())
+        }
         assertTrue(pack.units.drop(2).all { it.installState == "NOT_YET_INSTALLED" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -99,12 +109,19 @@ class V2RebuildTest {
         assertFalse(unknownResult.ok)
         assertTrue(unknownResult.errors.any { it.contains("Unrecognized linguistic review status") })
 
-        val digest = V2Validator.instructionalContentDigest(pack)
-        val complete = pack.copy(
-            linguisticReview = pack.linguisticReview.copy(
+        val prepared = approveInstruction(
+            pack.copy(
+                units = pack.units.map { unit ->
+                    if (unit.number == 1) unit.copy(mappingStatus = "APPROVED") else unit
+                },
+            ),
+        )
+        val digest = V2Validator.instructionalContentDigest(prepared)
+        val complete = prepared.copy(
+            linguisticReview = prepared.linguisticReview.copy(
                 status = "APPROVED",
                 reviewer = "Qualified Reviewer",
-                packVersion = pack.packVersion,
+                packVersion = prepared.packVersion,
                 reviewedContentDigest = digest,
                 curriculumMappingId = "map-owned-edition",
             ),
@@ -250,6 +267,20 @@ class V2RebuildTest {
     }
 
     @Test
+    fun unitOneStaysInstallableWhileReviewAndMappingRemainUnsigned() {
+        val source = pack()
+        val result = V2Validator.validate(source)
+        assertTrue(result.errors.joinToString(), result.ok)
+        val signedMapping = source.copy(
+            units = source.units.map { unit ->
+                if (unit.number == 1) unit.copy(mappingStatus = "APPROVED") else unit
+            },
+        )
+        val signed = V2Validator.validate(signedMapping)
+        assertTrue(signed.errors.any { it.contains("cannot be APPROVED before qualified review") })
+    }
+
+    @Test
     fun installedUnitsAreRejectedWhileRequiredExperiencesAreMissing() {
         val pack = pack()
         val installed = pack.copy(
@@ -312,7 +343,7 @@ class V2RebuildTest {
         store.v2CompleteUnit(1, "2026-09-22T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 2, onboardingCompleted = true))
         assertEquals(V2UnitState.CURRENT, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
-        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.any { it.unavailableReason != null })
+        assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.unavailableReason != null })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.any { it.unavailableReason != null })
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
     }

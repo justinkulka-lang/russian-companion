@@ -38,6 +38,7 @@ import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.objectiveState
+import dev.russiancompanion.v2.curriculum.openable
 import dev.russiancompanion.v2.curriculum.recordedSessionCount
 import dev.russiancompanion.v2.curriculum.reference
 import dev.russiancompanion.v2.curriculum.searchReferences
@@ -305,6 +306,9 @@ internal fun V2UnitScreen(
             modifier = Modifier.semantics { testTag = "v2-unit-state" },
         )
         Text(installLabel(unit), modifier = Modifier.semantics { testTag = "v2-unit-install" })
+        if (unit.openable() && pack.linguisticReview.status != "APPROVED") {
+            Text("Qualified review pending", modifier = Modifier.semantics { testTag = "v2-review-pending" })
+        }
         if (state == V2UnitState.NOT_YET_INSTALLED) {
             Text("This unit is on the map so you can see the Penguin sequence. It has no lesson content, audio, or completion path.")
             return@V2Scaffold

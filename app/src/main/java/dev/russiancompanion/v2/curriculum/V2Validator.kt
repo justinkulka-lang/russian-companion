@@ -142,25 +142,64 @@ internal object V2Validator {
         if (unit.number !in 1..2) {
             errors += "Only Units 1-2 may be installed in this pack"
         }
-        if (pack.linguisticReview.status != "APPROVED") {
-            errors += "Installed unit ${unit.number} requires an APPROVED qualified-review record"
-        }
-        if (unit.mappingStatus != "APPROVED") {
-            errors += "Installed unit ${unit.number} mapping must be APPROVED"
-        }
         if (unit.sessions.isEmpty()) errors += "Installed unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Installed unit ${unit.number} has no objectives"
-        if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" } }) {
+        if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() } }) {
             errors += "Installed unit ${unit.number} still has unavailable required experiences"
         }
         if (pack.admissions.handwritingAssets == 0 && unit.number == 2) {
             errors += "Installed Unit 2 requires verified handwriting assets"
         }
-        if (pack.admissions.mappedPronunciationAudio == 0) {
+        val claimsListening = unit.sessions.any { session ->
+            session.steps.any { it.kind == "LISTEN" && it.unavailableReason.isNullOrBlank() }
+        }
+        if ((claimsListening || unit.number == 2) && pack.admissions.mappedPronunciationAudio == 0) {
             errors += "Installed unit ${unit.number} requires mapped pronunciation audio"
         }
-        validateInstalledReviewRecords(pack, unit, errors)
+        when (pack.linguisticReview.status) {
+            "APPROVED" -> {
+                if (unit.mappingStatus != "APPROVED") {
+                    errors += "Installed unit ${unit.number} mapping must be APPROVED"
+                }
+                validateInstalledReviewRecords(pack, unit, errors)
+            }
+            "PENDING_QUALIFIED_REVIEW" -> {
+                if (unit.number != 1) {
+                    errors += "Only Unit 1 may be installed before qualified review"
+                }
+                if (unit.mappingStatus == "APPROVED") {
+                    errors += "Installed unit ${unit.number} mapping cannot be APPROVED before qualified review"
+                }
+                validatePendingInstalledRecords(pack, unit, errors)
+            }
+            else -> errors += "Installed unit ${unit.number} requires a pending or approved qualified-review record"
+        }
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+        if (unit.objectives.filter { it.kind == "RECOGNITION" }.any { it.exampleIds.size < 2 }) {
+            errors += "Installed unit ${unit.number} has a recognition objective with fewer than two examples"
+        }
+    }
+
+    private fun validatePendingInstalledRecords(
+        pack: V2CurriculumPack,
+        unit: V2Unit,
+        errors: MutableList<String>,
+    ) {
+        val steps = unit.sessions.flatMap { it.steps }
+        val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
+        val exampleIds = (steps.flatMap { it.exampleIds } + unit.objectives.flatMap { it.exampleIds }).toSet()
+        val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId }.toSet()
+        (itemIds.map { "Check $it" to pack.item(it)?.reviewStatus } +
+            exampleIds.map { "Example $it" to pack.example(it)?.reviewStatus } +
+            letterIds.map { "Letter $it" to pack.letter(it)?.reviewStatus })
+            .forEach { (label, status) ->
+                when (status) {
+                    null, "PENDING_QUALIFIED_REVIEW", "APPROVED" -> Unit
+                    "NOT_REQUIRED" -> errors += "$label is linguistically relevant and cannot be NOT_REQUIRED"
+                    "REJECTED" -> errors += "$label review status REJECTED is not approved for an installed unit"
+                    else -> errors += "$label has unrecognized review status $status"
+                }
+            }
     }
 
     private fun validateInstalledReviewRecords(
