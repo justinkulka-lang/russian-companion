@@ -19,6 +19,7 @@ import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.ByteArrayOutputStream
+import java.io.File
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
@@ -50,9 +51,15 @@ class PackagedPathwayStoreTest {
             assertTrue(store.completeExternalActivity("plan-anki-1", "2026-09-21", "2026-09-21T09:01"))
             val listen = store.eligiblePlans().single { it.id == "plan-listen-1" }
             val audioId = listen.audioModelIds.single()
+            val recordingRef = "recordings/placeholder.m4a"
+            val recordingBytes = byteArrayOf(1, 2, 3, 4)
+            File(context.filesDir, recordingRef).apply {
+                parentFile?.mkdirs()
+                writeBytes(recordingBytes)
+            }
             store.commitRecording(
                 audioModelId = audioId,
-                localFileReference = "recordings/placeholder.m4a",
+                localFileReference = recordingRef,
                 createdAtLocal = "2026-09-21T09:02",
                 markedForTutorReview = true,
                 completionState = CompletionState.NOT_COMPLETED,
@@ -87,7 +94,9 @@ class PackagedPathwayStoreTest {
             assertEquals(3, reproduced.totalCompletions)
 
             val out = ByteArrayOutputStream()
-            val update = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()).exportLocal(
+            val update = RoomNavigationGateway(store, { null }, UnusedPracticeAudio()) {
+                recordingBytes
+            }.exportLocal(
                 out,
                 "2026-09-21T12:00",
                 "placeholder-cycle.zip",
