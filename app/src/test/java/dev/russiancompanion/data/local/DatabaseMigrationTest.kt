@@ -98,7 +98,7 @@ class DatabaseMigrationTest {
     }
 
     @Test
-    fun version2PlanRowsGainLessonNumberAndAudioModelIdColumns() {
+    fun version2PlanRowsBecomeIneligibleWhenLessonNumberCannotBeRecovered() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val helper = FrameworkSQLiteOpenHelperFactory().create(
             SupportSQLiteOpenHelper.Configuration.builder(context)
@@ -132,6 +132,93 @@ class DatabaseMigrationTest {
                             )
                             """.trimIndent(),
                         )
+                        db.execSQL(
+                            "CREATE TABLE IF NOT EXISTS `audio_models` (`id` TEXT NOT NULL, PRIMARY KEY(`id`))",
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_definitions` (
+                                `id` TEXT NOT NULL,
+                                `segmentId` TEXT NOT NULL,
+                                `ruleVersion` TEXT NOT NULL,
+                                `displayedRuleText` TEXT NOT NULL,
+                                `eligibilityStatus` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `activity_logs` (
+                                `id` TEXT NOT NULL,
+                                `category` TEXT NOT NULL,
+                                `durationMinutes` INTEGER NOT NULL,
+                                `completed` INTEGER NOT NULL,
+                                `recordedAtLocal` TEXT NOT NULL,
+                                `segmentId` TEXT,
+                                `planInstanceId` TEXT,
+                                `selfAttested` INTEGER NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `recording_records` (
+                                `id` TEXT NOT NULL,
+                                `audioModelId` TEXT NOT NULL,
+                                `localFileReference` TEXT NOT NULL,
+                                `createdAtLocal` TEXT NOT NULL,
+                                `markedForTutorReview` INTEGER NOT NULL,
+                                `completionState` TEXT NOT NULL,
+                                `activityLogId` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_evidence` (
+                                `id` TEXT NOT NULL,
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `evidenceType` TEXT NOT NULL,
+                                `enteredValue` TEXT NOT NULL,
+                                `selfAttestationStatus` TEXT NOT NULL,
+                                `recordedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_decisions` (
+                                `id` TEXT NOT NULL,
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `ruleVersion` TEXT NOT NULL,
+                                `evidenceIds` TEXT NOT NULL,
+                                `conditionOutcomes` TEXT NOT NULL,
+                                `status` TEXT NOT NULL,
+                                `evaluatedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `export_records` (
+                                `id` TEXT NOT NULL,
+                                `exportedAtLocal` TEXT NOT NULL,
+                                `destinationReference` TEXT,
+                                `logCount` INTEGER NOT NULL,
+                                `evidenceCount` INTEGER NOT NULL,
+                                `progressCount` INTEGER NOT NULL,
+                                `recordingCount` INTEGER NOT NULL,
+                                `status` TEXT NOT NULL,
+                                `documentReference` TEXT,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
                     }
 
                     override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
@@ -152,16 +239,99 @@ class DatabaseMigrationTest {
             ) VALUES ('plan-book', 'segment-1', 'BOOK', 'Use your copy', 1, 1, 'ELIGIBLE')
             """.trimIndent(),
         )
+        db.execSQL("INSERT INTO audio_models (id) VALUES ('audio-1')")
+        db.execSQL(
+            """
+            INSERT INTO gate_definitions (id, segmentId, ruleVersion, displayedRuleText, eligibilityStatus)
+            VALUES ('gate-1', 'segment-1', '1', 'Displayed test rule', 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO activity_logs (
+                id, category, durationMinutes, completed, recordedAtLocal, segmentId, planInstanceId, selfAttested
+            ) VALUES ('log-1', 'GRAMMAR', 0, 1, '2026-09-21T09:00', 'segment-1', NULL, 1)
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO recording_records (
+                id, audioModelId, localFileReference, createdAtLocal, markedForTutorReview, completionState, activityLogId
+            ) VALUES ('rec-1', 'audio-1', 'recordings/rec-1.m4a', '2026-09-21T09:01', 0, 'NOT_COMPLETED', NULL)
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_evidence (
+                id, gateDefinitionId, evidenceType, enteredValue, selfAttestationStatus, recordedAtLocal
+            ) VALUES ('ev-1', 'gate-1', 'BOOK_REVISION_SCORE', '1', 'SELF_ATTESTED', '2026-09-21T09:02')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_decisions (
+                id, gateDefinitionId, ruleVersion, evidenceIds, conditionOutcomes, status, evaluatedAtLocal
+            ) VALUES ('dec-1', 'gate-1', '1', 'ev-1', 'met', 'NOT_YET_SATISFIED', '2026-09-21T09:03')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO export_records (
+                id, exportedAtLocal, destinationReference, logCount, evidenceCount, progressCount,
+                recordingCount, status, documentReference
+            ) VALUES ('exp-1', '2026-09-21T10:00', 'notes.zip', 1, 1, 7, 1, 'COMPLETED', 'notes.zip')
+            """.trimIndent(),
+        )
         MIGRATION_2_3.migrate(db)
-        val segment = db.query("SELECT lessonNumber FROM course_segments WHERE id = 'segment-1'")
+
+        val eligibleZero = db.query(
+            "SELECT COUNT(*) FROM course_segments WHERE eligibilityStatus = 'ELIGIBLE' AND lessonNumber = 0",
+        )
+        eligibleZero.moveToFirst()
+        assertEquals(0, eligibleZero.getInt(0))
+        eligibleZero.close()
+
+        val segment = db.query("SELECT lessonNumber, eligibilityStatus FROM course_segments WHERE id = 'segment-1'")
         segment.moveToFirst()
         assertEquals(0, segment.getInt(0))
+        assertEquals("EXCLUDED", segment.getString(1))
         segment.close()
-        val plan = db.query("SELECT lessonNumber, audioModelIds FROM plan_definitions WHERE id = 'plan-book'")
+
+        val plan = db.query(
+            "SELECT lessonNumber, audioModelIds, eligibilityStatus FROM plan_definitions WHERE id = 'plan-book'",
+        )
         plan.moveToFirst()
         assertNull(plan.getString(0))
         assertEquals("", plan.getString(1))
+        assertEquals("EXCLUDED", plan.getString(2))
         plan.close()
+
+        val presented = db.query("SELECT COUNT(*) FROM plan_definitions WHERE eligibilityStatus = 'ELIGIBLE'")
+        presented.moveToFirst()
+        assertEquals(0, presented.getInt(0))
+        presented.close()
+
+        val log = db.query("SELECT id, category FROM activity_logs WHERE id = 'log-1'")
+        log.moveToFirst()
+        assertEquals("log-1", log.getString(0))
+        assertEquals("GRAMMAR", log.getString(1))
+        log.close()
+        val recording = db.query("SELECT localFileReference FROM recording_records WHERE id = 'rec-1'")
+        recording.moveToFirst()
+        assertEquals("recordings/rec-1.m4a", recording.getString(0))
+        recording.close()
+        val evidence = db.query("SELECT enteredValue FROM gate_evidence WHERE id = 'ev-1'")
+        evidence.moveToFirst()
+        assertEquals("1", evidence.getString(0))
+        evidence.close()
+        val decision = db.query("SELECT status FROM gate_decisions WHERE id = 'dec-1'")
+        decision.moveToFirst()
+        assertEquals("NOT_YET_SATISFIED", decision.getString(0))
+        decision.close()
+        val exported = db.query("SELECT documentReference FROM export_records WHERE id = 'exp-1'")
+        exported.moveToFirst()
+        assertEquals("notes.zip", exported.getString(0))
+        exported.close()
         helper.close()
     }
 }

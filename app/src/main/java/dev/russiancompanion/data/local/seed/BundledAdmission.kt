@@ -63,15 +63,18 @@ internal fun prepareBundledContent(document: BundledSeedDocument): PreparedBundl
         )
     }
     val segmentsById = segments.associateBy { it.id }
-    val knownAudioIds = document.audioModels.map { it.id }.filter { it.isNotBlank() }.toSet()
-    val plans = document.planDefinitions.mapNotNull { admitPlan(it, segmentsById, knownAudioIds) }
-    val admittedGates = document.gateDefinitions.mapNotNull { admitGate(it, segmentsById) }
     val audio = admitAudio(
         seeds = document.audioModels,
         textsById = textsById,
         rightsById = rightsById,
         sourcesById = sourcesById,
     )
+    val eligibleAudioIds = audio
+        .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+        .map { it.id }
+        .toSet()
+    val plans = document.planDefinitions.mapNotNull { admitPlan(it, segmentsById, eligibleAudioIds) }
+    val admittedGates = document.gateDefinitions.mapNotNull { admitGate(it, segmentsById) }
     val drills = document.optionalDrills.mapNotNull { admitDrill(it, sourcesById) }
     val storedRights = rights.map { record ->
         val included = audio.any { model ->
@@ -154,7 +157,7 @@ private fun admitRights(
 private fun admitPlan(
     seed: PlanDefinitionSeed,
     segments: Map<String, CourseSegmentEntity>,
-    knownAudioModelIds: Set<String>,
+    eligibleAudioModelIds: Set<String>,
 ): PlanDefinitionEntity? {
     val activity = enumOrNull<PlanActivityType>(seed.activityType) ?: return null
     val kind = when (activity) {
@@ -176,7 +179,7 @@ private fun admitPlan(
             audioModelIds = seed.audioModelIds,
         ),
         segmentLessonNumber = segment?.lessonNumber,
-        knownAudioModelIds = knownAudioModelIds,
+        eligibleAudioModelIds = eligibleAudioModelIds,
     )
     if (!admission.accepted) {
         if (admission.reason == "tutor-must-be-optional" && segment != null) {

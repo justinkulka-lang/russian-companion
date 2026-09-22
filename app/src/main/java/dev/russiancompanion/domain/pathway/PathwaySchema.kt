@@ -82,14 +82,14 @@ internal data class PlanAdmission(
 
 /**
  * Admits a plan definition against an installed pathway segment and the set of
- * known audio model identities from the packaged catalog. Book and AnkiDroid
- * work bind to a lesson number. Listen-record-compare binds to catalog word IDs.
+ * eligible packaged audio model identities. Book and AnkiDroid work bind to a
+ * lesson number. Listen-record-compare binds to eligible catalog word IDs.
  * Tutor tasks stay optional and unbound to lesson content.
  */
 internal fun admitPlanDefinition(
     draft: PlanDefinitionDraft,
     segmentLessonNumber: Int?,
-    knownAudioModelIds: Set<String>,
+    eligibleAudioModelIds: Set<String>,
 ): PlanAdmission {
     if (draft.id.isBlank() || draft.segmentId.isBlank() || draft.instruction.isBlank() || draft.sortOrder < 0) {
         return PlanAdmission(false, "identity")
@@ -125,7 +125,7 @@ internal fun admitPlanDefinition(
             if (draft.audioModelIds.size != draft.audioModelIds.toSet().size) {
                 return PlanAdmission(false, "audio-duplicate")
             }
-            if (!knownAudioModelIds.containsAll(draft.audioModelIds)) {
+            if (!eligibleAudioModelIds.containsAll(draft.audioModelIds)) {
                 return PlanAdmission(false, "audio-unknown")
             }
             PlanAdmission(true)

@@ -39,7 +39,7 @@ class PathwaySchemaTest {
             admitPlanDefinition(
                 draft("plan-book", PlanActivityKind.BOOK, lessonNumber = 7),
                 segmentLessonNumber = 7,
-                knownAudioModelIds = emptySet(),
+                eligibleAudioModelIds = emptySet(),
             ).accepted,
         )
         assertEquals(
@@ -47,7 +47,7 @@ class PathwaySchemaTest {
             admitPlanDefinition(
                 draft("plan-book", PlanActivityKind.BOOK, lessonNumber = 7),
                 segmentLessonNumber = 8,
-                knownAudioModelIds = emptySet(),
+                eligibleAudioModelIds = emptySet(),
             ).reason,
         )
         assertEquals(
@@ -55,7 +55,7 @@ class PathwaySchemaTest {
             admitPlanDefinition(
                 draft("plan-listen", PlanActivityKind.LISTEN_RECORD_COMPARE),
                 segmentLessonNumber = 1,
-                knownAudioModelIds = setOf("audio-1"),
+                eligibleAudioModelIds = setOf("audio-1"),
             ).reason,
         )
         assertTrue(
@@ -66,7 +66,7 @@ class PathwaySchemaTest {
                     audioModelIds = listOf("audio-1", "audio-2"),
                 ),
                 segmentLessonNumber = 1,
-                knownAudioModelIds = setOf("audio-1", "audio-2", "audio-3"),
+                eligibleAudioModelIds = setOf("audio-1", "audio-2", "audio-3"),
             ).accepted,
         )
         assertEquals(
@@ -75,10 +75,10 @@ class PathwaySchemaTest {
                 draft(
                     "plan-listen",
                     PlanActivityKind.LISTEN_RECORD_COMPARE,
-                    audioModelIds = listOf("audio-missing"),
+                    audioModelIds = listOf("audio-1", "audio-excluded"),
                 ),
                 segmentLessonNumber = 1,
-                knownAudioModelIds = setOf("audio-1"),
+                eligibleAudioModelIds = setOf("audio-1"),
             ).reason,
         )
         assertEquals(
@@ -86,14 +86,14 @@ class PathwaySchemaTest {
             admitPlanDefinition(
                 draft("plan-tutor", PlanActivityKind.TUTOR, required = true),
                 segmentLessonNumber = 1,
-                knownAudioModelIds = emptySet(),
+                eligibleAudioModelIds = emptySet(),
             ).reason,
         )
         assertTrue(
             admitPlanDefinition(
                 draft("plan-tutor", PlanActivityKind.TUTOR, required = false),
                 segmentLessonNumber = 1,
-                knownAudioModelIds = emptySet(),
+                eligibleAudioModelIds = emptySet(),
             ).accepted,
         )
     }

@@ -234,12 +234,8 @@ private fun openPrescribedPractice(
     prescribedAudioModelIds: List<String>,
 ) {
     val playableIds = snapshot.audio.filter { it.playable }.map { it.id }.toSet()
-    val first = firstPrescribedPlayable(prescribedAudioModelIds, playableIds)
-    if (first != null) {
-        navController.navigate(PracticeSessionRoute(first))
-        return
-    }
-    openPractice(navController, snapshot)
+    val first = firstPrescribedPlayable(prescribedAudioModelIds, playableIds) ?: return
+    navController.navigate(PracticeSessionRoute(first))
 }
 
 private fun openPractice(navController: NavHostController, snapshot: NavigationSnapshot) {

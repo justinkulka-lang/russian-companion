@@ -147,34 +147,111 @@ class BundledContentRulesTest {
     }
 
     @Test
-    fun listenPlanWithoutKnownCatalogIdsIsDroppedAndBookPlanKeepsLessonNumber() {
-        val prepared = prepareBundledContent(
+    fun listenPlanIsDroppedWhenAnyPrescribedAudioIsIneligible() {
+        val book = PlanDefinitionSeed(
+            id = "plan-book",
+            segmentId = "segment-1",
+            activityType = "BOOK",
+            instruction = "Use your copy of the book for this lesson",
+            sortOrder = 1,
+            required = true,
+            lessonNumber = 1,
+        )
+        fun listen(id: String, audioIds: List<String>) = PlanDefinitionSeed(
+            id = id,
+            segmentId = "segment-1",
+            activityType = "LISTEN_RECORD_COMPARE",
+            instruction = "Listen to the licensed model",
+            sortOrder = 2,
+            required = true,
+            audioModelIds = audioIds,
+        )
+        val incompatible = prepareBundledContent(
             minimalDocument().copy(
-                planDefinitions = listOf(
-                    PlanDefinitionSeed(
-                        id = "plan-book",
-                        segmentId = "segment-1",
-                        activityType = "BOOK",
-                        instruction = "Use your copy of the book for this lesson",
-                        sortOrder = 1,
-                        required = true,
-                        lessonNumber = 1,
-                    ),
-                    PlanDefinitionSeed(
-                        id = "plan-listen",
-                        segmentId = "segment-1",
-                        activityType = "LISTEN_RECORD_COMPARE",
-                        instruction = "Listen to the licensed model",
-                        sortOrder = 2,
-                        required = true,
-                        audioModelIds = listOf("audio-missing"),
-                    ),
-                ),
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights(licenseStatus = "INCOMPATIBLE", inclusionResult = "INCLUDED")),
+                audioModels = listOf(audio()),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1"))),
             ),
         )
-        assertEquals(listOf("plan-book"), prepared.plans.map { it.id })
-        assertEquals(1, prepared.plans.single().lessonNumber)
-        assertEquals(1, prepared.segments.single().lessonNumber)
+        assertEquals(EligibilityStatus.EXCLUDED, incompatible.audio.single().eligibilityStatus)
+        assertEquals(listOf("plan-book"), incompatible.plans.map { it.id })
+
+        val unverified = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = false)),
+                assetRightsRecords = listOf(rights()),
+                audioModels = listOf(audio()),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1"))),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, unverified.audio.single().eligibilityStatus)
+        assertEquals(listOf("plan-book"), unverified.plans.map { it.id })
+
+        val missingSource = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights()),
+                audioModels = listOf(audio().copy(sourceRecordId = "missing-source")),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1"))),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, missingSource.audio.single().eligibilityStatus)
+        assertEquals(listOf("plan-book"), missingSource.plans.map { it.id })
+
+        val sharedText = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights(), rights(id = "rights-2", assetIdentifier = "audio-2")),
+                audioModels = listOf(audio(), audio(id = "audio-2", rightsRecordId = "rights-2")),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1", "audio-2"))),
+            ),
+        )
+        assertTrue(sharedText.audio.all { it.eligibilityStatus == EligibilityStatus.EXCLUDED })
+        assertEquals(listOf("plan-book"), sharedText.plans.map { it.id })
+
+        val missingPackaged = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights()),
+                audioModels = listOf(audio().copy(localAudioReference = "")),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1"))),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, missingPackaged.audio.single().eligibilityStatus)
+        assertEquals(listOf("plan-book"), missingPackaged.plans.map { it.id })
+
+        val missingId = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(text(matchVerified = true)),
+                assetRightsRecords = listOf(rights()),
+                audioModels = listOf(audio()),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-missing"))),
+            ),
+        )
+        assertEquals(EligibilityStatus.ELIGIBLE, missingId.audio.single().eligibilityStatus)
+        assertEquals(listOf("plan-book"), missingId.plans.map { it.id })
+
+        val mixed = prepareBundledContent(
+            minimalDocument().copy(
+                sourceTexts = listOf(
+                    text(matchVerified = true),
+                    text(matchVerified = true, id = "text-2", stressMarkedText = "SOURCE_TEXT_TOKEN_TWO"),
+                ),
+                assetRightsRecords = listOf(
+                    rights(),
+                    rights(id = "rights-2", assetIdentifier = "audio-2", licenseStatus = "INCOMPATIBLE"),
+                ),
+                audioModels = listOf(
+                    audio(),
+                    audio(id = "audio-2", rightsRecordId = "rights-2").copy(sourceTextId = "text-2"),
+                ),
+                planDefinitions = listOf(book, listen("plan-listen", listOf("audio-1", "audio-2"))),
+            ),
+        )
+        assertEquals(EligibilityStatus.ELIGIBLE, mixed.audio.single { it.id == "audio-1" }.eligibilityStatus)
+        assertEquals(EligibilityStatus.EXCLUDED, mixed.audio.single { it.id == "audio-2" }.eligibilityStatus)
+        assertEquals(listOf("plan-book"), mixed.plans.map { it.id })
     }
 
     @Test
@@ -330,11 +407,16 @@ internal fun source(): SourceRecordSeed {
     )
 }
 
-internal fun text(matchVerified: Boolean): SourceTextSeed {
+internal fun text(
+    matchVerified: Boolean,
+    id: String = "text-1",
+    stressMarkedText: String = "SOURCE_TEXT_TOKEN",
+    sourceRecordId: String = "source-1",
+): SourceTextSeed {
     return SourceTextSeed(
-        id = "text-1",
-        stressMarkedText = "SOURCE_TEXT_TOKEN",
-        sourceRecordId = "source-1",
+        id = id,
+        stressMarkedText = stressMarkedText,
+        sourceRecordId = sourceRecordId,
         modificationStatus = "UNMODIFIED",
         matchVerified = matchVerified,
     )

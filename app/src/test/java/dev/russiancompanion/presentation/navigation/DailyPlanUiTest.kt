@@ -119,7 +119,7 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Practice").performScrollTo().assertIsNotEnabled()
         showText("No licensed practice audio is available.")
         clickText("Today's Plan", substring = false)
-        compose.onNodeWithText("Start listen-record-compare").performScrollTo().assertIsNotEnabled()
+        compose.onNodeWithText("Start listen-record-compare").assertDoesNotExist()
         compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
         showText("Completed")
         clickText("Progress", substring = false)
@@ -140,6 +140,53 @@ class DailyPlanUiTest {
         compose.onNodeWithText("The change was not saved.").assertDoesNotExist()
     }
 
+    @Test
+    fun beginAndStartOpenTheFirstPlayablePrescribedWord() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(prescribedCatalogDocument()))
+        val audio = SelectivePracticeAudio(setOf("audio/audio-b", "audio/audio-c", "audio/audio-unrelated"))
+        show(RoomNavigationGateway(store, { null }, audio), audio)
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        showText("Listen to the licensed model")
+        clickText("Begin")
+        compose.onNodeWithText("Practice session").assertIsDisplayed()
+        showText("WORD_B_TOKEN")
+        compose.onNodeWithText("WORD_A_TOKEN").assertDoesNotExist()
+        compose.onNodeWithText("WORD_UNRELATED_TOKEN").assertDoesNotExist()
+        compose.onNodeWithText("Back").performClick()
+
+        clickText("Today's Plan", substring = false)
+        clickText("Start listen-record-compare")
+        compose.onNodeWithText("Practice session").assertIsDisplayed()
+        showText("WORD_B_TOKEN")
+        compose.onNodeWithText("WORD_A_TOKEN").assertDoesNotExist()
+        compose.onNodeWithText("WORD_UNRELATED_TOKEN").assertDoesNotExist()
+    }
+
+    @Test
+    fun prescribedPracticeStaysDisabledWhenNoPrescribedWordIsPlayable() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(prescribedCatalogDocument()))
+        val audio = SelectivePracticeAudio(setOf("audio/audio-unrelated"))
+        show(RoomNavigationGateway(store, { null }, audio), audio)
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        compose.onNodeWithText("Begin").assertIsNotEnabled()
+        showText("The prescribed listen-record-compare words are unavailable.")
+        clickText("Today's Plan", substring = false)
+        compose.onNodeWithText("Start listen-record-compare").performScrollTo().assertIsNotEnabled()
+        showText("The prescribed listen-record-compare words are unavailable.")
+        compose.onNodeWithText("Practice session").assertDoesNotExist()
+        compose.onNodeWithText("WORD_UNRELATED_TOKEN").assertDoesNotExist()
+    }
+
     private fun clickText(text: String, substring: Boolean = true) {
         compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
     }
@@ -148,14 +195,14 @@ class DailyPlanUiTest {
         compose.onNodeWithText(text).performScrollTo().assertIsDisplayed()
     }
 
-    private fun show(gateway: NavigationGateway) {
+    private fun show(gateway: NavigationGateway, practiceAudio: PracticeAudio = PermissivePracticeAudio()) {
         compose.setContent {
             CompanionApp(
                 gateway = gateway,
                 onRetryOpen = {},
                 today = { "2026-09-21" },
                 recordedAt = { "2026-09-21T09:0${stamp++}" },
-                practiceAudio = PermissivePracticeAudio(),
+                practiceAudio = practiceAudio,
             )
         }
     }
@@ -208,6 +255,38 @@ class DailyPlanUiTest {
         sourceTexts = listOf(text(matchVerified = includeAudio)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),
+    )
+
+    private fun prescribedCatalogDocument() = minimalDocument().copy(
+        planDefinitions = listOf(
+            PlanDefinitionSeed(
+                id = "plan-listen",
+                segmentId = "segment-1",
+                activityType = "LISTEN_RECORD_COMPARE",
+                instruction = "Listen to the licensed model",
+                sortOrder = 1,
+                required = true,
+                audioModelIds = listOf("audio-a", "audio-b", "audio-c"),
+            ),
+        ),
+        sourceTexts = listOf(
+            text(matchVerified = true, id = "text-a", stressMarkedText = "WORD_A_TOKEN"),
+            text(matchVerified = true, id = "text-b", stressMarkedText = "WORD_B_TOKEN"),
+            text(matchVerified = true, id = "text-c", stressMarkedText = "WORD_C_TOKEN"),
+            text(matchVerified = true, id = "text-unrelated", stressMarkedText = "WORD_UNRELATED_TOKEN"),
+        ),
+        assetRightsRecords = listOf(
+            rights(id = "rights-a", assetIdentifier = "audio-a"),
+            rights(id = "rights-b", assetIdentifier = "audio-b"),
+            rights(id = "rights-c", assetIdentifier = "audio-c"),
+            rights(id = "rights-unrelated", assetIdentifier = "audio-unrelated"),
+        ),
+        audioModels = listOf(
+            audio(id = "audio-a", rightsRecordId = "rights-a").copy(sourceTextId = "text-a"),
+            audio(id = "audio-b", rightsRecordId = "rights-b").copy(sourceTextId = "text-b"),
+            audio(id = "audio-c", rightsRecordId = "rights-c").copy(sourceTextId = "text-c"),
+            audio(id = "audio-unrelated", rightsRecordId = "rights-unrelated").copy(sourceTextId = "text-unrelated"),
+        ),
     )
 
     private class FakePlanGateway : NavigationGateway {
@@ -312,6 +391,26 @@ class DailyPlanUiTest {
 
 internal class PermissivePracticeAudio : PracticeAudio {
     override fun modelPlayable(localAudioReference: String): Boolean = true
+
+    override fun recordingReadable(localFileReference: String): Boolean = localFileReference.isNotBlank()
+
+    override fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit) {
+        onFinished(true)
+    }
+
+    override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
+        onFinished(true)
+    }
+
+    override fun stopPlayback() = Unit
+
+    override fun startCapture(): String = "recordings/test-capture"
+
+    override fun stopCapture(keep: Boolean): String? = if (keep) "recordings/test-capture" else null
+}
+
+internal class SelectivePracticeAudio(private val playableReferences: Set<String>) : PracticeAudio {
+    override fun modelPlayable(localAudioReference: String): Boolean = localAudioReference in playableReferences
 
     override fun recordingReadable(localFileReference: String): Boolean = localFileReference.isNotBlank()
 
