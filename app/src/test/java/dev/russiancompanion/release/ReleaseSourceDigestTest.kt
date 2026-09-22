@@ -18,20 +18,15 @@ class ReleaseSourceDigestTest {
         val candidate = readAcceptanceCandidate(root)
         assertEquals(binding!!.sourceDigest, candidate?.sourceDigest)
         assertTrue(candidateMatchesBinding(candidate, binding))
-        assertEquals("1.0.0", binding.versionName)
-        assertEquals(2, binding.versionCode)
+        assertEquals("1.1.0", binding.versionName)
+        assertEquals(3, binding.versionCode)
         assertEquals("dev.russiancompanion", binding.applicationId)
-        assertTrue(candidate!!.frozen)
-        assertEquals("e86e72d1377a3b33f2a77b44c7354e56b3c0b5ce", candidate.sourceCommit)
-        assertEquals("RECORDED", candidate.artifact?.status)
-        val recorded = recordedCandidateIdentity(candidate)
-        assertNotNull(recorded)
-        assertEquals("e86e72d1377a3b33f2a77b44c7354e56b3c0b5ce", recorded!!.sourceCommit)
-        assertEquals("dd873f420b1ecf98790943dd69a8a352db0c2a81464e915f87dbd21b48bf73ca", recorded.apkSha256)
-        assertEquals(29164707L, recorded.apkBytes)
-        assertEquals("35754785768", recorded.runId)
+        assertFalse(candidate!!.frozen)
+        assertEquals(null, candidate.sourceCommit)
+        assertEquals("NOT_FROZEN", candidate.artifact?.status)
+        assertEquals(null, recordedCandidateIdentity(candidate))
         assertEquals("NOT_APPROVED", candidate.publicRelease)
-        assertFalse(
+        assertTrue(
             assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.CANDIDATE_NOT_FROZEN),
         )
     }
@@ -48,7 +43,7 @@ class ReleaseSourceDigestTest {
             "app/src/main/assets/audio/.digest-probe" to "audio-changed",
             "gradle.properties" to "org.gradle.jvmargs=-Xmx99m\n",
             "app/build.gradle.kts" to File(root, "app/build.gradle.kts").readText()
-                .replace("versionName = \"1.0.0\"", "versionName = \"1.0.1\""),
+                .replace("versionName = \"1.1.0\"", "versionName = \"1.1.1\""),
             "release/acceptance/DEVICE_ACCEPTANCE.md" to "changed acceptance procedure\n",
             "release/acceptance/templates/AT-001.md" to "changed acceptance template\n",
         )
@@ -124,7 +119,7 @@ class ReleaseSourceDigestTest {
     @Test
     fun retainedEvidenceIsRejectedAfterAVersionIdentityChange() {
         assertInvalidatedBy("app/build.gradle.kts") { file ->
-            file.writeText(file.readText().replace("versionName = \"1.0.0\"", "versionName = \"1.0.1\""))
+            file.writeText(file.readText().replace("versionName = \"1.1.0\"", "versionName = \"1.1.1\""))
         }
     }
 

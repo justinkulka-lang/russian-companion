@@ -1,7 +1,8 @@
 # PRODUCT BRIEF v1.1
 ## Offline Russian Learning Companion
 
-**Status:** Product definition for v1  
+**Status:** Product definition for v1, with subordinate v1.1 usability additions  
+
 **Companion course:** *The New Penguin Russian Course*  
 **Evidence base:** `RESEARCH_DOSSIER_v1.0.md`, treated as evidence rather than authority
 
@@ -139,3 +140,37 @@ Usage streaks, total hours, optional drill volume, and course completion may be 
 The release is ready only when the four primary capabilities are complete, required licensed audio and metadata are prepared, offline behavior and local export are verified, rights records and user-facing attributions are present, and the full lesson-cycle success test passes. Optional curation-only drills do not block release and may ship only after clearing Sections 7 and 9. Missing content cannot be substituted with generation, network access, unverified material, original item authoring, or unfunded validation work. Features outside this brief remain excluded until a later product-definition pass explicitly admits them.
 
 **Confirmation:** No remaining v1 feature depends on an unfunded content-authoring role.
+
+## 12. Subordinate v1.1 Usability Additions
+
+v1.1 does not add a fifth primary capability. It only hardens usability, continuity, data safety, and listen-record-compare ergonomics inside the existing four capabilities. The frozen 1.0.0 acceptance candidate remains a historical application build. v1.1 supersedes the current application build only. It does not retroactively change, unfreeze, or claim acceptance for that 1.0.0 candidate. Public release remains subject to the existing evidence and owner-decision rules.
+
+These additions remain subject to Sections 4–9. They introduce no network, account, analytics, AI, AnkiDroid integration, import, cloud backup, original Russian content, Penguin text, pronunciation judgment, or proficiency inference.
+
+### 12.1 Dark-by-default appearance
+
+The app stores a local appearance preference with exactly two choices: Dark, and Follow system. Dark is the default for every new or upgraded installation. There is no Light-only option. The preference is stored locally and applied at application theme level. Strong contrast is required. Critical meaning is not conveyed by color alone.
+
+### 12.2 Persistent Continue card
+
+Home displays a prominent Continue card showing the current lesson number, the next unfinished required activity, completed required activities versus total required activities, and a single Continue action. Continue opens the exact actionable destination for that next unfinished required activity: book practice, AnkiDroid practice, listen-record-compare, or gate evidence or gate review when applicable. The destination is determined only from packaged plan definitions and locally stored user data. If no lesson is active, existing lesson-start behavior is retained. If all required work is complete, the card shows the appropriate gate or progress state. If the destination is unavailable or corrupt, the card fails safely to a local-data or unavailable state.
+
+### 12.3 Listen-record-compare ergonomics
+
+Listen-record-compare adds play-model, play-user-recording, automatic model-then-user A/B playback, repeat A/B loop, stop loop, model playback speeds of 0.75× and 1.0×, replace-current-take, and clear tutor-review mark. User recordings always replay at 1.0×. Slower model playback does not alter the packaged audio file. A/B playback and looping stop when the app backgrounds, the user navigates away, audio focus is lost, or an error occurs. Completion continues to mean the governed activity was performed; it does not mean pronunciation was correct. Waveforms, transcription, ASR, pronunciation scores, automated judgment, generated feedback, and linguistic claims remain excluded.
+
+### 12.4 Backup status
+
+Using existing local export records, the app displays whether a successful export has ever occurred, the date and time and user-visible filename of the last successful export, counts of exported logs, gate evidence, progress records, and recordings, whether all expected recordings were included, a warning when no successful export exists, and a failure or not-confirmed state when the most recent attempt did not complete. The app does not add import, cloud backup, synchronization, accounts, or network access. It does not claim that an export protects the user unless that export completed successfully.
+
+### 12.5 Local data and storage health
+
+A compact Data & Storage area shows only factual local status: database readable or unreadable; packaged catalog available or unavailable; packaged audio count; user recording count; total user-recording storage size; number of missing or inaccessible recording files; available local storage before a new recording or export; application version; and bundled content identity already available from governed local metadata. Unreadable values are shown as unavailable, not guessed. Health checks run off the main thread. The area does not expose sensitive filesystem paths, add telemetry, or provide destructive cleanup controls.
+
+### 12.6 Factual seven-day and thirty-day study balance
+
+Compact seven-day and thirty-day views use existing governed activity categories and Room logs. They show completed activity count by category, total recorded minutes by category, categories with recorded activity, and categories with no recorded activity. A completed zero-minute activity remains “completed — 0 minutes” and counts as recorded activity. Negative stored durations keep totals and balance conclusions hidden. The views do not show proficiency, fluency, mastery, readiness, ability scores, predicted outcomes, rankings, streaks, badges, levels, or motivational pressure, and they do not characterize a category as deficient merely because another category has more minutes.
+
+### 12.7 Accessibility and large-phone usability
+
+Affected screens meet minimum accessible touch targets, remain readable under font scaling, expose TalkBack labels and state descriptions, distinguish recording and playback controls without color, keep dark-mode contrast, place frequent primary actions for one-handed use where consistent with the existing design, keep long lists lazy, avoid nested-scroll traps, and operate in portrait on a large Galaxy S26 Ultra display. Every affected screen has loading, empty, unavailable, corrupt-data, and operation-in-progress states. This is a targeted pass, not a new visual design system.

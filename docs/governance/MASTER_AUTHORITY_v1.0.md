@@ -277,9 +277,91 @@ This document governs required product outcomes for v1. It does not prescribe fu
 
 **MA-123.** Missing required content shall not be substituted with generation, network access, unverified material, original item authoring, or unfunded validation work. *(Trace: Product Brief §11)*
 
+## 13. Subordinate v1.1 Usability Additions
+
+**MA-124.** The appearance preference shall offer exactly Dark and Follow system. *(Trace: Product Brief §12.1)*
+
+**MA-125.** Dark shall be the default appearance for every new or upgraded installation. *(Trace: Product Brief §12.1)*
+
+**MA-126.** The app shall not offer a Light-only appearance option. *(Trace: Product Brief §12.1)*
+
+**MA-127.** The appearance preference shall be stored only in local DataStore. *(Trace: Product Brief §12.1)*
+
+**MA-128.** The stored appearance preference shall be applied at application theme level. *(Trace: Product Brief §12.1)*
+
+**MA-129.** Appearance shall use strong contrast and shall not convey critical meaning by color alone. *(Trace: Product Brief §§12.1, 12.7)*
+
+**MA-130.** Home shall display a Continue card showing the current lesson number, the next unfinished required activity, completed required activities versus total required activities, and a single Continue action. *(Trace: Product Brief §12.2)*
+
+**MA-131.** Continue shall open the exact actionable destination for the next unfinished required activity. *(Trace: Product Brief §12.2)*
+
+**MA-132.** Continue destinations shall be limited to book practice, AnkiDroid practice, listen-record-compare, and gate evidence or gate review. *(Trace: Product Brief §12.2)*
+
+**MA-133.** Continue shall determine its destination only from packaged plan definitions and locally stored user data. *(Trace: Product Brief §12.2)*
+
+**MA-134.** Continue shall not infer proficiency or mastery. *(Trace: Product Brief §§4, 12.2)*
+
+**MA-135.** If no lesson is active, Continue shall retain the existing lesson-start behavior. *(Trace: Product Brief §12.2)*
+
+**MA-136.** If all required work is complete, Continue shall show the applicable gate or progress state. *(Trace: Product Brief §12.2)*
+
+**MA-137.** If the Continue destination is unavailable or corrupt, the app shall fail safely to a local-data or unavailable state. *(Trace: Product Brief §12.2)*
+
+**MA-138.** Listen-record-compare shall provide play-model, play-user-recording, automatic model-then-user A/B playback, repeat A/B loop, and stop-loop controls. *(Trace: Product Brief §12.3)*
+
+**MA-139.** Model playback speed choices shall be limited to 0.75× and 1.0×. *(Trace: Product Brief §12.3)*
+
+**MA-140.** User-recording playback shall always occur at 1.0×. *(Trace: Product Brief §12.3)*
+
+**MA-141.** Slower model playback shall not alter the packaged audio file. *(Trace: Product Brief §12.3)*
+
+**MA-142.** A/B playback and looping shall stop when the app backgrounds, the user navigates away, audio focus is lost, or an error occurs. *(Trace: Product Brief §12.3)*
+
+**MA-143.** Listen-record-compare shall allow the user to replace the current take. *(Trace: Product Brief §12.3)*
+
+**MA-144.** Listen-record-compare shall allow the user to clear the tutor-review mark. *(Trace: Product Brief §12.3)*
+
+**MA-145.** Listen-record-compare completion shall continue to mean the governed activity was performed and shall not mean pronunciation was correct. *(Trace: Product Brief §§3.2, 12.3)*
+
+**MA-146.** The app shall display backup status from existing local export records, including whether a successful export has ever occurred, the last successful export time and filename, exported counts, whether all expected recordings were included, a warning when no successful export exists, and a failure or not-confirmed state when the most recent attempt did not complete. *(Trace: Product Brief §12.4)*
+
+**MA-147.** Backup status shall not claim that an export protects the user unless that export completed successfully. *(Trace: Product Brief §12.4)*
+
+**MA-148.** The app shall not add import, cloud backup, synchronization, accounts, or network access for backup. *(Trace: Product Brief §§4, 5, 12.4)*
+
+**MA-149.** The app shall display factual local data and storage health, including database readability, packaged catalog availability, packaged audio count, user recording count, total user-recording storage size, missing or inaccessible recording-file count, available local storage, application version, and existing bundled content identity. *(Trace: Product Brief §12.5)*
+
+**MA-150.** An unreadable health value shall be shown as unavailable and shall not be guessed. *(Trace: Product Brief §12.5)*
+
+**MA-151.** Data and storage health checks shall run off the main thread. *(Trace: Product Brief §12.5)*
+
+**MA-152.** Data and storage health shall not expose sensitive filesystem paths, add telemetry, or provide destructive cleanup controls. *(Trace: Product Brief §12.5)*
+
+**MA-153.** The app shall present compact seven-day and thirty-day study-balance views from existing governed activity categories and local logs. *(Trace: Product Brief §12.6)*
+
+**MA-154.** Study-balance views shall show completed activity count by category, total recorded minutes by category, categories with recorded activity, and categories with no recorded activity. *(Trace: Product Brief §12.6)*
+
+**MA-155.** A completed zero-minute activity shall remain labeled “completed — 0 minutes” and shall count as recorded activity. *(Trace: Product Brief §12.6)*
+
+**MA-156.** When stored activity duration is negative, study-balance totals and conclusions shall remain hidden. *(Trace: Product Brief §12.6)*
+
+**MA-157.** Study-balance views shall not present proficiency, fluency, mastery, readiness, ability scores, predicted outcomes, rankings, streaks, badges, levels, motivational pressure, or deficiency claims based solely on unequal minutes. *(Trace: Product Brief §§4, 12.6)*
+
+**MA-158.** Affected screens shall provide minimum accessible touch targets, remain readable under font scaling, and expose TalkBack labels and state descriptions. *(Trace: Product Brief §12.7)*
+
+**MA-159.** Recording and playback controls shall remain distinguishable without color. *(Trace: Product Brief §12.7)*
+
+**MA-160.** Long lists on affected screens shall remain lazy and shall not introduce nested-scroll traps. *(Trace: Product Brief §12.7)*
+
+**MA-161.** Affected screens shall provide loading, empty, unavailable, corrupt-data, and operation-in-progress states. *(Trace: Product Brief §12.7)*
+
+**MA-162.** v1.1 shall supersede the current application build and shall not retroactively change, unfreeze, or claim acceptance for the frozen 1.0.0 candidate. *(Trace: Product Brief §12)*
+
+**MA-163.** The v1.1 application build shall remain publicly unapproved until the existing evidence and owner-decision rules are satisfied. *(Trace: Product Brief §§6, 11, 12)*
+
 ## Authority Confirmation
 
-Every requirement in this Master Authority traces to `PRODUCT_BRIEF_v1.1.md`. No requirement depends on an unfunded content-authoring role.
+Every requirement in this Master Authority traces to `PRODUCT_BRIEF_v1.1.md`. No requirement depends on an unfunded content-authoring role. v1.1 additions remain subordinate to the four primary capabilities.
 
 ## Clerical Erratum
 

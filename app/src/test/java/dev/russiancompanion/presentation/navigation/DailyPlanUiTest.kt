@@ -6,6 +6,7 @@ import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
@@ -102,7 +103,7 @@ class DailyPlanUiTest {
         showText("Required activities completed: 2 of 3")
         compose.onNodeWithText("Do the assigned AnkiDroid work").assertDoesNotExist()
         showText("Listen to the licensed model")
-        clickText("Begin")
+        clickContinue()
         compose.onNodeWithText("Practice session").assertIsDisplayed()
     }
 
@@ -152,7 +153,7 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Confirm lesson").performClick()
 
         showText("Listen to the licensed model")
-        clickText("Begin")
+        clickContinue()
         compose.onNodeWithText("Practice session").assertIsDisplayed()
         showText("WORD_B_TOKEN")
         compose.onNodeWithText("WORD_A_TOKEN").assertDoesNotExist()
@@ -178,7 +179,7 @@ class DailyPlanUiTest {
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
 
-        compose.onNodeWithText("Begin").assertIsNotEnabled()
+        compose.onAllNodesWithText("Continue").onLast().assertIsNotEnabled()
         showText("The prescribed listen-record-compare words are unavailable.")
         clickText("Today's Plan", substring = false)
         compose.onNodeWithText("Start listen-record-compare").performScrollTo().assertIsNotEnabled()
@@ -187,8 +188,48 @@ class DailyPlanUiTest {
         compose.onNodeWithText("WORD_UNRELATED_TOKEN").assertDoesNotExist()
     }
 
+    @Test
+    fun continueOpensTheNamedBookPlanNotTheGenericChecklist() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        clickContinue()
+        showText("Continue destination: Book practice")
+        showText("Use your copy of the book for this lesson")
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Practice session").assertDoesNotExist()
+    }
+
+    @Test
+    fun continueOpensTheNamedAnkiPlanAfterBookCompletion() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(checklistDocument(includeAudio = true)))
+        show(RoomNavigationGateway(store, { null }, PermissivePracticeAudio()))
+        repeat(3) { compose.onNodeWithText("Next").performClick() }
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
+        compose.onNodeWithText("Confirm lesson").performClick()
+
+        clickText("Today's Plan", substring = false)
+        compose.onAllNodesWithText("Mark complete")[0].performScrollTo().performClick()
+        clickText("Home", substring = false)
+        clickContinue()
+        showText("Continue destination: AnkiDroid practice")
+        showText("Do the assigned AnkiDroid work")
+        showText("Mark complete")
+    }
+
     private fun clickText(text: String, substring: Boolean = true) {
         compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+    }
+
+    private fun clickContinue() {
+        compose.onAllNodesWithText("Continue").onLast().performScrollTo().performClick()
     }
 
     private fun showText(text: String) {

@@ -20,6 +20,7 @@ class MainActivity : ComponentActivity() {
                 gateway = gateway,
                 onRetryOpen = { gateway = app.retryOpen() },
                 practiceAudio = app.practiceAudio,
+                appearanceStore = app.appearanceStore,
             )
         }
     }

@@ -6,6 +6,8 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -37,11 +39,17 @@ import dev.russiancompanion.domain.navigation.AudioOption
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.RecordingOption
 import dev.russiancompanion.domain.plan.PlanUpdate
+import dev.russiancompanion.domain.practice.AbPlaybackDriver
+import dev.russiancompanion.domain.practice.AbSession
+import dev.russiancompanion.domain.practice.AbStopReason
 import dev.russiancompanion.domain.practice.PRACTICE_NO_SCORE_STATEMENT
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.practice.PracticeProgress
+import dev.russiancompanion.domain.practice.RECORDING_PLAYBACK_SPEED
 import dev.russiancompanion.domain.practice.canCompletePractice
+import dev.russiancompanion.domain.practice.canReplaceTake
 import dev.russiancompanion.domain.practice.canStartRecording
+import dev.russiancompanion.domain.practice.conflictingPlaybackBlocked
 
 @Composable
 internal fun PracticeLibraryBody(
@@ -142,6 +150,8 @@ internal fun PracticeSessionBody(
     var recordingNow by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var captureFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
     var playbackFailed by rememberSaveable(audioModelId) { mutableStateOf(false) }
+    var modelSpeed by rememberSaveable(audioModelId) { mutableStateOf(1.0f) }
+    var abSession by remember(audioModelId) { mutableStateOf(AbSession()) }
     val playable = model?.playable == true && !playbackFailed
     val readable = latest?.readable == true
     val completed = latest?.completed == true || model?.completed == true
@@ -156,20 +166,48 @@ internal fun PracticeSessionBody(
     )
     val recordingNowState = rememberUpdatedState(recordingNow)
     val lifecycleOwner = LocalLifecycleOwner.current
-    DisposableEffect(audioModelId, lifecycleOwner) {
+    val modelRef = model?.localAudioReference.orEmpty()
+    val recordingRef = latest?.takeIf { it.readable }?.localFileReference.orEmpty()
+    val abDriver = remember(audioModelId, modelRef, recordingRef) {
+        if (modelRef.isBlank() || recordingRef.isBlank()) {
+            null
+        } else {
+            AbPlaybackDriver(
+                audio = practiceAudio,
+                modelReference = modelRef,
+                recordingReference = recordingRef,
+                modelSpeed = { modelSpeed },
+                onSession = { next ->
+                    abSession = next
+                    if (next.lastStopReason == AbStopReason.ERROR) playbackFailed = true
+                },
+                onModelHeard = {
+                    modelPlayed = true
+                    modelReplayed = true
+                },
+                onRecordingHeard = { userPlayed = true },
+            )
+        }
+    }
+    DisposableEffect(audioModelId, lifecycleOwner, abDriver) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_STOP) {
+                abDriver?.stop(AbStopReason.BACKGROUND)
                 practiceAudio.releaseForBackground()
                 recordingNow = false
+                abSession = AbSession()
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
         onDispose {
             lifecycleOwner.lifecycle.removeObserver(observer)
+            abDriver?.stop(AbStopReason.NAVIGATION)
             practiceAudio.stopPlayback()
             if (recordingNowState.value) practiceAudio.stopCapture(keep = false)
+            abSession = AbSession()
         }
     }
+    val playbackLocked = conflictingPlaybackBlocked(abSession)
     Text(PRACTICE_NO_SCORE_STATEMENT)
     if (model == null) {
         Text(stringResource(R.string.practice_session_unavailable))
@@ -188,8 +226,36 @@ internal fun PracticeSessionBody(
         Text(stringResource(R.string.practice_played))
     }
     TextButton(
+        onClick = { modelSpeed = 0.75f },
+        enabled = !playbackLocked,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (modelSpeed == 0.75f) R.string.practice_speed_075_selected else R.string.practice_speed_075,
+            ),
+        )
+    }
+    TextButton(
+        onClick = { modelSpeed = 1.0f },
+        enabled = !playbackLocked,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (modelSpeed == 1.0f) R.string.practice_speed_100_selected else R.string.practice_speed_100,
+            ),
+        )
+    }
+    Text(stringResource(R.string.practice_recording_speed, RECORDING_PLAYBACK_SPEED.toString()))
+    TextButton(
         onClick = {
-            practiceAudio.playModel(model.localAudioReference) { succeeded ->
+            abDriver?.stop(AbStopReason.USER_STOP)
+            practiceAudio.playModel(model.localAudioReference, modelSpeed) { succeeded ->
                 if (succeeded) {
                     modelPlayed = true
                     if (readable) modelReplayed = true
@@ -198,6 +264,10 @@ internal fun PracticeSessionBody(
                 }
             }
         },
+        enabled = !playbackLocked,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
     ) {
         Text(stringResource(if (readable) R.string.practice_replay_model else R.string.practice_play_model))
     }
@@ -254,14 +324,49 @@ internal fun PracticeSessionBody(
         Text(stringResource(R.string.practice_recorded))
         TextButton(
             onClick = {
+                abDriver?.stop(AbStopReason.USER_STOP)
                 practiceAudio.playRecording(latest.localFileReference) { succeeded ->
                     if (succeeded) userPlayed = true else captureFailed = true
                 }
             },
+            enabled = !playbackLocked,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) { Text(stringResource(R.string.practice_play_recording)) }
+        TextButton(
+            onClick = { abDriver?.startOnce() },
+            enabled = !playbackLocked,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_play_ab)) }
+        TextButton(
+            onClick = { abDriver?.startLoop() },
+            enabled = !playbackLocked,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_repeat_ab)) }
+        if (abSession.active) {
+            Text(
+                stringResource(
+                    if (abSession.looping) R.string.practice_ab_looping else R.string.practice_ab_playing,
+                ),
+            )
+            TextButton(
+                onClick = { abDriver?.stop(AbStopReason.USER_STOP) },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 48.dp),
+            ) { Text(stringResource(R.string.practice_stop_loop)) }
+        }
         TextButton(
             onClick = { onTutorReview(latest.id, !latest.markedForTutorReview) { } },
             enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) {
             Text(
                 stringResource(
@@ -269,11 +374,44 @@ internal fun PracticeSessionBody(
                 ),
             )
         }
+        if (latest.markedForTutorReview) {
+            TextButton(
+                onClick = { onTutorReview(latest.id, false) { } },
+                enabled = !operationInProgress,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 48.dp),
+            ) { Text(stringResource(R.string.practice_clear_tutor)) }
+        }
+    }
+    if (canReplaceTake(progress) && !recordingNow) {
+        TextButton(
+            onClick = {
+                if (canStartRecording(progress.copy(alreadyCompleted = false, hasReadableRecording = false)) ||
+                    canReplaceTake(progress)
+                ) {
+                    val started = practiceAudio.startCapture()
+                    if (started == null) {
+                        captureFailed = true
+                    } else {
+                        captureFailed = false
+                        recordingNow = true
+                    }
+                }
+            },
+            enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.practice_replace_take)) }
     }
     if (canCompletePractice(progress)) {
         TextButton(
             onClick = { onComplete(model.id) { } },
             enabled = !operationInProgress,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
         ) {
             Text(stringResource(R.string.practice_complete))
         }

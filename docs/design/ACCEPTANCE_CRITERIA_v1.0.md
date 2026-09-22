@@ -461,6 +461,104 @@ This document verifies governed outcomes without adding functionality. A release
 
 **MA IDs covered:** MA-117, MA-118, MA-119, MA-120, MA-121, MA-122, MA-123.
 
+## 11A. Subordinate v1.1 Usability
+
+### AT-032 — Dark-by-default appearance
+
+**Objective:** Verify the local appearance control.
+
+**Preconditions:** A new or upgraded installation with no prior user appearance choice.
+
+**Procedure:** Confirm Dark is applied; change to Follow system; restart the app and confirm Follow system persists; confirm no Light-only option exists; confirm the preference is stored locally and applied at theme level.
+
+**Expected result:** Dark is the default; Follow system persists; no Light-only option; no network, account, analytics, or permission change.
+
+**MA IDs covered:** MA-124, MA-125, MA-126, MA-127, MA-128, MA-129.
+
+### AT-033 — Continue destinations
+
+**Objective:** Verify Continue opens only the next unfinished required destination.
+
+**Preconditions:** Packaged plan definitions and local user data for book, AnkiDroid, listen-record-compare, and gate states.
+
+**Procedure:** Exercise Continue for each governed destination, for no active lesson, for completed required work, for unavailable content, and for corrupt data. Confirm Book and AnkiDroid destinations carry the plan-definition identity and present that item and its completion action. Confirm it never opens an unrelated lesson or audio model.
+
+**Expected result:** Continue resolves only from packaged plans and local data and fails safely when the destination is unavailable or corrupt.
+
+**MA IDs covered:** MA-130, MA-131, MA-132, MA-133, MA-134, MA-135, MA-136, MA-137.
+
+### AT-034 — Listen-record-compare ergonomics
+
+**Objective:** Verify A/B playback, speeds, replace-take, and cleanup.
+
+**Preconditions:** A playable licensed model and a readable local recording.
+
+**Procedure:** Play the model at 0.75× and 1.0×; play the user recording; run automatic A/B and a repeat loop for at least two complete cycles; stop during model playback and during recording playback; background the app, navigate away, or lose audio focus; cause a playback error; replace the current take; clear the tutor-review mark. Confirm conflicting playback actions are disabled while A/B is active.
+
+**Expected result:** Model speed does not rewrite the packaged file; recordings play at 1.0×; looping stops on background, navigation away, focus loss, or error; replace-take persists; completion remains performance, not pronunciation judgment.
+
+**MA IDs covered:** MA-138, MA-139, MA-140, MA-141, MA-142, MA-143, MA-144, MA-145.
+
+### AT-035 — Backup status
+
+**Objective:** Verify backup status from local export records.
+
+**Preconditions:** Local export records covering never exported, completed, failed, and incomplete recording-export cases.
+
+**Procedure:** Display each state and confirm counts, filename, time, missing-recording warning, and the absence of a protection claim for unsuccessful exports. Confirm recording coverage uses the exported recording-set digest, including same-count replacement, added recordings, missing files, failed export, and an unchanged complete export.
+
+**Expected result:** Status is factual, local, and does not add import, cloud backup, or network access.
+
+**MA IDs covered:** MA-146, MA-147, MA-148.
+
+### AT-036 — Data and storage health
+
+**Objective:** Verify factual health calculations and unavailable states.
+
+**Preconditions:** Readable and unreadable database, catalog, recording, and storage conditions.
+
+**Procedure:** Confirm each displayed field is calculated off the main thread and that unreadable values appear as unavailable rather than guessed.
+
+**Expected result:** No sensitive paths, telemetry, or destructive cleanup controls appear.
+
+**MA IDs covered:** MA-149, MA-150, MA-151, MA-152.
+
+### AT-037 — Factual study balance
+
+**Objective:** Verify seven-day and thirty-day category calculations.
+
+**Preconditions:** Local logs including a completed zero-minute activity and a negative stored duration.
+
+**Procedure:** Confirm category counts and minutes, recorded versus unrecorded categories, zero-minute completed labeling, and hidden totals when a negative duration is stored.
+
+**Expected result:** No proficiency, streak, badge, ranking, or deficiency characterization is shown.
+
+**MA IDs covered:** MA-153, MA-154, MA-155, MA-156, MA-157.
+
+### AT-038 — Accessibility of affected controls
+
+**Objective:** Verify TalkBack semantics, touch targets, and large-font behavior on affected screens.
+
+**Preconditions:** Home Continue, listen-record-compare controls, backup status, and health/balance views.
+
+**Procedure:** Confirm labels and state descriptions, color-independent control identity, and that long lists remain lazy.
+
+**Expected result:** Loading, empty, unavailable, corrupt-data, and in-progress states exist for every affected screen.
+
+**MA IDs covered:** MA-158, MA-159, MA-160, MA-161.
+
+### AT-039 — v1.1 does not rewrite the frozen 1.0.0 candidate
+
+**Objective:** Verify the historical 1.0.0 candidate record remains unchanged while the v1.1 build stays unfrozen and not approved.
+
+**Preconditions:** The preserved 1.0.0 identity from run 35754785768.
+
+**Procedure:** Confirm that identity, SHA-256, byte count, and source commit remain recorded; confirm the v1.1 digest differs; confirm public release remains NOT_APPROVED.
+
+**Expected result:** v1.1 supersedes the application build only. AT-001 through AT-031 remain outstanding.
+
+**MA IDs covered:** MA-162, MA-163.
+
 ## 12. MA Coverage Table
 
 | MA ID | Acceptance test(s) |
@@ -588,9 +686,49 @@ This document verifies governed outcomes without adding functionality. A release
 | MA-121 | AT-008, AT-009, AT-031 |
 | MA-122 | AT-030, AT-031 |
 | MA-123 | AT-006, AT-031 |
+| MA-124 | AT-032 |
+| MA-125 | AT-032 |
+| MA-126 | AT-032 |
+| MA-127 | AT-032 |
+| MA-128 | AT-032 |
+| MA-129 | AT-032, AT-038 |
+| MA-130 | AT-033 |
+| MA-131 | AT-033 |
+| MA-132 | AT-033 |
+| MA-133 | AT-033 |
+| MA-134 | AT-033, AT-028 |
+| MA-135 | AT-033 |
+| MA-136 | AT-033 |
+| MA-137 | AT-033 |
+| MA-138 | AT-034 |
+| MA-139 | AT-034 |
+| MA-140 | AT-034 |
+| MA-141 | AT-034 |
+| MA-142 | AT-034 |
+| MA-143 | AT-034 |
+| MA-144 | AT-034 |
+| MA-145 | AT-007, AT-034 |
+| MA-146 | AT-035 |
+| MA-147 | AT-035 |
+| MA-148 | AT-005, AT-035 |
+| MA-149 | AT-036 |
+| MA-150 | AT-036 |
+| MA-151 | AT-036 |
+| MA-152 | AT-036 |
+| MA-153 | AT-037 |
+| MA-154 | AT-037 |
+| MA-155 | AT-018, AT-037 |
+| MA-156 | AT-018, AT-037 |
+| MA-157 | AT-028, AT-037 |
+| MA-158 | AT-038 |
+| MA-159 | AT-038 |
+| MA-160 | AT-038 |
+| MA-161 | AT-038 |
+| MA-162 | AT-039 |
+| MA-163 | AT-031, AT-039 |
 
 **Coverage audit:** No MA requirement is uncovered.
 
 ## 13. Conformance Confirmation
 
-This Acceptance Criteria test map introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`.
+This Acceptance Criteria test map introduces no scope beyond, and contradicts nothing in, `MASTER_AUTHORITY_v1.0.md` and `PRODUCT_BRIEF_v1.1.md`. AT-032 through AT-039 are subordinate v1.1 automated coverage. They do not mark AT-001 through AT-031 passed and do not approve public release.

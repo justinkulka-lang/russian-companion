@@ -11,7 +11,15 @@ internal interface PracticeAudio {
 
     fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit)
 
+    fun playModel(localAudioReference: String, speed: Float, onFinished: (Boolean) -> Unit) {
+        playModel(localAudioReference, onFinished)
+    }
+
     fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit)
+
+    fun recordingBytes(localFileReference: String): Long? = null
+
+    fun recordingDigest(localFileReference: String): String? = null
 
     fun stopPlayback()
 

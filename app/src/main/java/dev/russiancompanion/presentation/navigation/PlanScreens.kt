@@ -1,22 +1,37 @@
 package dev.russiancompanion.presentation.navigation
 
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
 import dev.russiancompanion.R
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.navigation.ContinueDestination
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.activeLessonHasPlan
 import dev.russiancompanion.domain.navigation.practicePlayable
+import dev.russiancompanion.domain.navigation.resolveContinueDestination
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.plan.canMarkComplete
+import dev.russiancompanion.domain.progress.BackupOutcome
 import dev.russiancompanion.domain.progress.PROGRESS_ACTIVITY_ONLY_STATEMENT
+import dev.russiancompanion.domain.progress.categoryHasRecordedActivity
 
 @Composable
 internal fun HomePlanSection(
     snapshot: NavigationSnapshot,
+    appearance: AppearancePreference = AppearancePreference.DARK,
+    appearanceSaveFailed: Boolean = false,
+    onAppearanceChange: (AppearancePreference) -> Unit = {},
+    onContinue: () -> Unit = {},
     onBegin: (ChecklistItem) -> Unit,
     onTodaysPlan: () -> Unit,
     onSelectLesson: () -> Unit,
@@ -25,46 +40,20 @@ internal fun HomePlanSection(
     if (lesson != null) {
         Text(stringResource(R.string.home_current_lesson, lesson))
     }
-    if (!activeLessonHasPlan(snapshot)) {
-        Text(stringResource(R.string.home_no_plan))
-        TextButton(onClick = onSelectLesson) { Text(stringResource(R.string.home_select_lesson)) }
-    } else {
-        val plan = snapshot.dailyPlan
-        if (!plan.requiredWorkPrescribed) {
-            Text(stringResource(R.string.plan_no_work))
-        } else {
-            Text(
-                stringResource(
-                    R.string.home_required_progress,
-                    plan.requiredCompletedCount,
-                    plan.requiredItems.size,
-                ),
-            )
-            val next = plan.nextIncompleteRequired
-            if (next == null) {
-                Text(stringResource(R.string.home_plan_complete))
-                Text(stringResource(R.string.home_completion_not_proficiency))
-            } else {
-                Text(stringResource(R.string.home_next_activity))
-                Text(next.instruction)
-                val practiceReady = practicePlayable(snapshot, next.audioModelIds)
-                val canBegin = next.activity != ChecklistActivity.LISTEN_RECORD_COMPARE || practiceReady
-                TextButton(onClick = { onBegin(next) }, enabled = canBegin) {
-                    Text(stringResource(R.string.home_begin))
-                }
-                if (!canBegin) {
-                    Text(
-                        stringResource(
-                            if (snapshot.audio.isEmpty()) {
-                                R.string.practice_none
-                            } else {
-                                R.string.plan_prescribed_audio_unavailable
-                            },
-                        ),
-                    )
-                }
-            }
-        }
+    ContinueCard(
+        snapshot = snapshot,
+        onContinue = onContinue,
+        onSelectLesson = onSelectLesson,
+    )
+    AppearanceControls(
+        appearance = appearance,
+        saveFailed = appearanceSaveFailed,
+        onAppearanceChange = onAppearanceChange,
+    )
+    HomeBackupSummary(snapshot)
+    HomeHealthSummary(snapshot)
+    HomeBalanceSummary(snapshot)
+    if (activeLessonHasPlan(snapshot)) {
         TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
     }
     GateSummarySection(snapshot)
@@ -72,9 +61,125 @@ internal fun HomePlanSection(
 }
 
 @Composable
+private fun AppearanceControls(
+    appearance: AppearancePreference,
+    saveFailed: Boolean = false,
+    onAppearanceChange: (AppearancePreference) -> Unit,
+) {
+    Text(stringResource(R.string.appearance_title), modifier = Modifier.semantics { heading() })
+    TextButton(
+        onClick = { onAppearanceChange(AppearancePreference.DARK) },
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (appearance == AppearancePreference.DARK) {
+                    R.string.appearance_dark_selected
+                } else {
+                    R.string.appearance_dark
+                },
+            ),
+        )
+    }
+    TextButton(
+        onClick = { onAppearanceChange(AppearancePreference.FOLLOW_SYSTEM) },
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(
+            stringResource(
+                if (appearance == AppearancePreference.FOLLOW_SYSTEM) {
+                    R.string.appearance_follow_system_selected
+                } else {
+                    R.string.appearance_follow_system
+                },
+            ),
+        )
+    }
+    if (saveFailed) {
+        Text(stringResource(R.string.appearance_save_failed))
+    }
+}
+
+@Composable
+private fun ContinueCard(
+    snapshot: NavigationSnapshot,
+    onContinue: () -> Unit,
+    onSelectLesson: () -> Unit,
+) {
+    val destination = resolveContinueDestination(snapshot)
+    Text(stringResource(R.string.continue_card_title), modifier = Modifier.semantics { heading() })
+    if (!snapshot.localDataOpen || snapshot.seedCorrupt) {
+        Text(stringResource(R.string.continue_unavailable))
+        return
+    }
+    if (!activeLessonHasPlan(snapshot)) {
+        Text(stringResource(R.string.home_no_plan))
+        TextButton(
+            onClick = onSelectLesson,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 48.dp),
+        ) { Text(stringResource(R.string.home_select_lesson)) }
+        return
+    }
+    val plan = snapshot.dailyPlan
+    if (!plan.requiredWorkPrescribed) {
+        Text(stringResource(R.string.plan_no_work))
+        return
+    }
+    snapshot.activeLessonReference?.let { lesson ->
+        Text(stringResource(R.string.continue_lesson, lesson))
+    }
+    Text(
+        stringResource(
+            R.string.home_required_progress,
+            plan.requiredCompletedCount,
+            plan.requiredItems.size,
+        ),
+    )
+    val next = plan.nextIncompleteRequired
+    if (next == null) {
+        Text(stringResource(R.string.home_plan_complete))
+        Text(stringResource(R.string.home_completion_not_proficiency))
+    } else {
+        Text(stringResource(R.string.home_next_activity))
+        Text(next.instruction)
+    }
+    val unavailable = destination == ContinueDestination.Unavailable
+    if (unavailable) {
+        Text(stringResource(R.string.continue_unavailable))
+        if (next?.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
+            Text(
+                stringResource(
+                    if (snapshot.audio.isEmpty()) {
+                        R.string.practice_none
+                    } else {
+                        R.string.plan_prescribed_audio_unavailable
+                    },
+                ),
+            )
+        }
+    }
+    TextButton(
+        onClick = onContinue,
+        enabled = !unavailable,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp),
+    ) {
+        Text(stringResource(R.string.continue_action))
+    }
+}
+
+@Composable
 internal fun TodaysPlanBody(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
+    focusPlanDefinitionId: String? = null,
     onSelectLesson: () -> Unit,
     onStartPractice: (ChecklistItem) -> Unit,
     onComplete: (String) -> Unit,
@@ -96,7 +201,30 @@ internal fun TodaysPlanBody(
     if (!plan.requiredWorkPrescribed) {
         Text(stringResource(R.string.plan_no_work))
     }
-    plan.items.forEach { item ->
+    val focused = plan.items.firstOrNull { it.planDefinitionId == focusPlanDefinitionId }
+    val remaining = if (focused == null) plan.items else plan.items.filter { it.planDefinitionId != focused.planDefinitionId }
+    if (focused != null) {
+        Text(
+            stringResource(
+                when (focused.activity) {
+                    ChecklistActivity.BOOK -> R.string.plan_continue_focus_book
+                    ChecklistActivity.ANKI_DROID -> R.string.plan_continue_focus_anki
+                    ChecklistActivity.LISTEN_RECORD_COMPARE -> R.string.plan_continue_focus_listen
+                    ChecklistActivity.TUTOR -> R.string.plan_continue_focus_book
+                },
+            ),
+        )
+        ChecklistRow(
+            item = focused,
+            practiceAvailable = practicePlayable(snapshot, focused.audioModelIds),
+            admittedAudio = snapshot.audio.isNotEmpty(),
+            onStartPractice = { onStartPractice(focused) },
+            onComplete = onComplete,
+            onRemoveTutor = onRemoveTutor,
+            actionsEnabled = actionsEnabled,
+        )
+    }
+    remaining.forEach { item ->
         ChecklistRow(
             item = item,
             practiceAvailable = practicePlayable(snapshot, item.audioModelIds),
@@ -220,8 +348,175 @@ private fun ActivitySummarySection(snapshot: NavigationSnapshot) {
             ),
         )
     }
-    for (total in summary.totals) {
-        Text(recordedWorkLabel(total.category, total.recordedMinutes, total.completionCount))
+}
+
+@Composable
+private fun HomeBackupSummary(snapshot: NavigationSnapshot) {
+    val backup = snapshot.backup
+    Text(
+        when (backup.outcome) {
+            BackupOutcome.NEVER_EXPORTED -> stringResource(R.string.backup_summary_never)
+            BackupOutcome.COMPLETED -> stringResource(
+                R.string.backup_summary_completed,
+                backup.lastSuccessfulAt ?: stringResource(R.string.backup_summary_time_unavailable),
+            )
+            BackupOutcome.FAILED -> stringResource(R.string.backup_summary_failed)
+            BackupOutcome.NOT_CONFIRMED -> stringResource(R.string.backup_summary_not_confirmed)
+        },
+    )
+}
+
+@Composable
+private fun HomeHealthSummary(snapshot: NavigationSnapshot) {
+    val health = snapshot.storageHealth
+    Text(
+        when (health.databaseReadable) {
+            true -> stringResource(
+                R.string.health_summary_ok,
+                health.userRecordingCount ?: 0,
+            )
+            false -> stringResource(R.string.health_summary_unreadable)
+            null -> stringResource(R.string.health_summary_unavailable)
+        },
+    )
+}
+
+@Composable
+private fun HomeBalanceSummary(snapshot: NavigationSnapshot) {
+    val seven = snapshot.sevenDayBalance
+    val thirty = snapshot.thirtyDayBalance
+    if (!seven.readable || !thirty.readable) {
+        Text(stringResource(R.string.balance_unreadable))
+        return
+    }
+    Text(
+        stringResource(
+            R.string.balance_summary,
+            seven.recordedCategories.size,
+            thirty.recordedCategories.size,
+        ),
+    )
+}
+
+@Composable
+internal fun BackupStatusSection(snapshot: NavigationSnapshot) {
+    val backup = snapshot.backup
+    Text(stringResource(R.string.backup_title), modifier = Modifier.semantics { heading() })
+    when (backup.outcome) {
+        BackupOutcome.NEVER_EXPORTED -> Text(stringResource(R.string.backup_never))
+        BackupOutcome.COMPLETED -> {
+            Text(stringResource(R.string.backup_completed))
+            backup.lastSuccessfulAt?.let { Text(stringResource(R.string.backup_last_success, it)) }
+            backup.lastSuccessfulFileName?.let { Text(stringResource(R.string.backup_filename, it)) }
+        }
+        BackupOutcome.FAILED -> Text(stringResource(R.string.backup_failed))
+        BackupOutcome.NOT_CONFIRMED -> Text(stringResource(R.string.backup_not_confirmed))
+    }
+    if (backup.successfulExportExists && backup.outcome != BackupOutcome.COMPLETED) {
+        backup.lastSuccessfulAt?.let { Text(stringResource(R.string.backup_last_success, it)) }
+        backup.lastSuccessfulFileName?.let { Text(stringResource(R.string.backup_filename, it)) }
+    }
+    if (backup.logCount != null) {
+        Text(
+            stringResource(
+                R.string.backup_counts,
+                backup.logCount,
+                backup.evidenceCount ?: 0,
+                backup.progressCount ?: 0,
+                backup.recordingCount ?: 0,
+            ),
+        )
+    }
+    when (backup.expectedRecordingsIncluded) {
+        true -> Text(stringResource(R.string.backup_recordings_included))
+        false -> Text(stringResource(R.string.backup_recordings_missing))
+        null -> Unit
+    }
+}
+
+@Composable
+internal fun StorageHealthSection(snapshot: NavigationSnapshot) {
+    val health = snapshot.storageHealth
+    Text(stringResource(R.string.health_title), modifier = Modifier.semantics { heading() })
+    Text(
+        stringResource(
+            when (health.databaseReadable) {
+                true -> R.string.health_database_readable
+                false -> R.string.health_database_unreadable
+                null -> R.string.health_database_unavailable
+            },
+        ),
+    )
+    Text(
+        stringResource(
+            when (health.catalogAvailable) {
+                true -> R.string.health_catalog_available
+                false -> R.string.health_catalog_unavailable
+                null -> R.string.health_catalog_unknown
+            },
+        ),
+    )
+    Text(
+        health.packagedAudioCount?.let { stringResource(R.string.health_packaged_audio, it) }
+            ?: stringResource(R.string.health_packaged_audio_unavailable),
+    )
+    Text(
+        health.userRecordingCount?.let { stringResource(R.string.health_user_recordings, it) }
+            ?: stringResource(R.string.health_user_recordings_unavailable),
+    )
+    Text(
+        health.recordingBytes?.let { stringResource(R.string.health_recording_bytes, it) }
+            ?: stringResource(R.string.health_recording_bytes_unavailable),
+    )
+    Text(
+        health.missingRecordingCount?.let { stringResource(R.string.health_missing_recordings, it) }
+            ?: stringResource(R.string.health_missing_recordings_unavailable),
+    )
+    Text(
+        health.availableBytes?.let { stringResource(R.string.health_available_bytes, it) }
+            ?: stringResource(R.string.health_available_bytes_unavailable),
+    )
+    Text(
+        health.applicationVersion?.let { stringResource(R.string.health_app_version, it) }
+            ?: stringResource(R.string.health_app_version_unavailable),
+    )
+    Text(
+        health.bundledContentIdentity?.let { stringResource(R.string.health_content_identity, it) }
+            ?: stringResource(R.string.health_content_identity_unavailable),
+    )
+}
+
+@Composable
+internal fun StudyBalanceSection(snapshot: NavigationSnapshot) {
+    Text(stringResource(R.string.balance_title), modifier = Modifier.semantics { heading() })
+    WindowBalanceBlock(title = stringResource(R.string.balance_seven_day), snapshot.sevenDayBalance)
+    WindowBalanceBlock(title = stringResource(R.string.balance_thirty_day), snapshot.thirtyDayBalance)
+}
+
+@Composable
+private fun WindowBalanceBlock(title: String, window: dev.russiancompanion.domain.progress.WindowBalance) {
+    Text(title)
+    if (!window.readable) {
+        Text(stringResource(R.string.balance_unreadable))
+        return
+    }
+    if (window.categories.isEmpty()) {
+        return
+    }
+    for (category in window.categories) {
+        Text(
+            stringResource(
+                R.string.balance_category_line,
+                categoryLabel(category.category),
+                category.completionCount,
+                category.recordedMinutes.toInt(),
+            ),
+        )
+        if (categoryHasRecordedActivity(category)) {
+            Text(stringResource(R.string.balance_recorded_category, categoryLabel(category.category)))
+        } else {
+            Text(stringResource(R.string.balance_unrecorded_category, categoryLabel(category.category)))
+        }
     }
 }
 

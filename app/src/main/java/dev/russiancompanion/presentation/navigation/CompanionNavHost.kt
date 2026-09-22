@@ -21,6 +21,11 @@ import dev.russiancompanion.domain.navigation.OnboardingConfirmation
 import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.navigation.practiceLibraryAvailable
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.navigation.ContinueDestination
+import dev.russiancompanion.domain.navigation.ContinueNavigation
+import dev.russiancompanion.domain.navigation.continueNavigation
+import dev.russiancompanion.domain.navigation.resolveContinueDestination
 import dev.russiancompanion.domain.plan.ChecklistActivity
 import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
@@ -58,6 +63,9 @@ internal fun CompanionNavHost(
     onExport: (OutputStream, String?, String?, (ExportUpdate) -> Unit) -> Unit,
     chooseExportDestination: (() -> ExportSelection?)? = null,
     onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit = { _, then -> then(snapshot) },
+    appearance: AppearancePreference = AppearancePreference.DARK,
+    appearanceSaveFailed: Boolean = false,
+    onAppearanceChange: (AppearancePreference) -> Unit = {},
 ) {
     val onHome: (() -> Unit)? = if (launch == LaunchDestination.HOME) {
         { goHome(navController) }
@@ -90,6 +98,12 @@ internal fun CompanionNavHost(
         composable<HomeRoute> {
             HomeScreen(
                 snapshot = snapshot,
+                appearance = appearance,
+                appearanceSaveFailed = appearanceSaveFailed,
+                onAppearanceChange = onAppearanceChange,
+                onContinue = {
+                    openContinueDestination(navController, snapshot, onNeedSurface)
+                },
                 onBegin = { item ->
                     if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
                         onNeedSurface(NavigationSurface.PRACTICE) { loaded ->
@@ -99,7 +113,7 @@ internal fun CompanionNavHost(
                         beginPlanItem(navController, snapshot, item)
                     }
                 },
-                onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
+                onTodaysPlan = { navController.navigate(TodaysPlanRoute()) },
                 onPractice = {
                     onNeedSurface(NavigationSurface.PRACTICE) {
                         navController.navigate(PracticeLibraryRoute)
@@ -116,11 +130,13 @@ internal fun CompanionNavHost(
                 onSelectLesson = { navController.navigate(OnboardingRoute) },
             )
         }
-        composable<TodaysPlanRoute> {
+        composable<TodaysPlanRoute> { entry ->
+            val route = entry.toRoute<TodaysPlanRoute>()
             TodaysPlanScreen(
                 snapshot = snapshot,
                 saveFailed = saveFailed,
                 operationInProgress = operationInProgress,
+                focusPlanDefinitionId = route.focusPlanDefinitionId,
                 onHome = onHome,
                 onPractice = {
                     onNeedSurface(NavigationSurface.PRACTICE) {
@@ -155,7 +171,7 @@ internal fun CompanionNavHost(
                     }
                 },
                 onHome = onHome,
-                onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
+                onTodaysPlan = { navController.navigate(TodaysPlanRoute()) },
                 onAttributions = {
                     onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
                         navController.navigate(AttributionsRoute())
@@ -185,7 +201,7 @@ internal fun CompanionNavHost(
                     }
                 },
                 onLibrary = { navController.popBackStack() },
-                onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
+                onTodaysPlan = { navController.navigate(TodaysPlanRoute()) },
                 onAttributions = {
                     onNeedSurface(NavigationSurface.ATTRIBUTIONS) {
                         navController.navigate(AttributionsRoute(route.audioModelId))
@@ -212,7 +228,7 @@ internal fun CompanionNavHost(
                 onSaveGateEvidence = { entries, done -> onSaveGateEvidence(route.gateId, entries, done) },
                 onAddTutorSignOff = { done -> onAddTutorSignOff(route.gateId, done) },
                 onGates = { navController.popBackStack() },
-                onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
+                onTodaysPlan = { navController.navigate(TodaysPlanRoute()) },
                 onProgress = { navController.navigate(ProgressRoute) },
                 onHome = onHome,
             )
@@ -236,7 +252,7 @@ internal fun CompanionNavHost(
                 operationInProgress = operationInProgress,
                 onSave = onSaveActivity,
                 onProgress = { navController.popBackStack() },
-                onTodaysPlan = { navController.navigate(TodaysPlanRoute) },
+                onTodaysPlan = { navController.navigate(TodaysPlanRoute()) },
                 onHome = onHome,
             )
         }
@@ -274,6 +290,33 @@ internal fun CompanionNavHost(
     }
 }
 
+internal fun continueRoute(destination: ContinueDestination): Any? {
+    return when (val navigation = continueNavigation(destination)) {
+        ContinueNavigation.SelectLesson -> OnboardingRoute
+        is ContinueNavigation.PlanItem -> TodaysPlanRoute(navigation.planDefinitionId)
+        is ContinueNavigation.ListenRecordCompare -> PracticeSessionRoute(navigation.audioModelId)
+        is ContinueNavigation.GateEvidence -> GateDetailRoute(navigation.gateId)
+        ContinueNavigation.Progress -> ProgressRoute
+        ContinueNavigation.Unavailable -> null
+    }
+}
+
+private fun openContinueDestination(
+    navController: NavHostController,
+    snapshot: NavigationSnapshot,
+    onNeedSurface: (NavigationSurface, (NavigationSnapshot) -> Unit) -> Unit,
+) {
+    val destination = resolveContinueDestination(snapshot)
+    val route = continueRoute(destination) ?: return
+    if (destination is ContinueDestination.ListenRecordCompare) {
+        onNeedSurface(NavigationSurface.PRACTICE) {
+            navController.navigate(route)
+        }
+    } else {
+        navController.navigate(route)
+    }
+}
+
 private fun beginPlanItem(
     navController: NavHostController,
     snapshot: NavigationSnapshot,
@@ -282,7 +325,7 @@ private fun beginPlanItem(
     if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
         openPrescribedPractice(navController, snapshot, item.audioModelIds)
     } else {
-        navController.navigate(TodaysPlanRoute)
+        navController.navigate(TodaysPlanRoute(item.planDefinitionId))
     }
 }
 
@@ -376,6 +419,10 @@ private fun LocalDataScreen(onRetry: () -> Unit, onAttributions: () -> Unit) {
 @Composable
 private fun HomeScreen(
     snapshot: NavigationSnapshot,
+    appearance: AppearancePreference,
+    appearanceSaveFailed: Boolean,
+    onAppearanceChange: (AppearancePreference) -> Unit,
+    onContinue: () -> Unit,
     onBegin: (ChecklistItem) -> Unit,
     onTodaysPlan: () -> Unit,
     onPractice: () -> Unit,
@@ -396,6 +443,10 @@ private fun HomeScreen(
         )
         HomePlanSection(
             snapshot = snapshot,
+            appearance = appearance,
+            appearanceSaveFailed = appearanceSaveFailed,
+            onAppearanceChange = onAppearanceChange,
+            onContinue = onContinue,
             onBegin = onBegin,
             onTodaysPlan = onTodaysPlan,
             onSelectLesson = onSelectLesson,
@@ -420,6 +471,7 @@ private fun TodaysPlanScreen(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
     operationInProgress: Boolean = false,
+    focusPlanDefinitionId: String? = null,
     onHome: (() -> Unit)?,
     onPractice: () -> Unit,
     onStartPractice: (ChecklistItem) -> Unit,
@@ -436,6 +488,7 @@ private fun TodaysPlanScreen(
         TodaysPlanBody(
             snapshot = snapshot,
             saveFailed = saveFailed,
+            focusPlanDefinitionId = focusPlanDefinitionId,
             onSelectLesson = onSelectLesson,
             onStartPractice = onStartPractice,
             onComplete = onComplete,

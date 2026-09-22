@@ -4,10 +4,10 @@ import android.content.Context
 import android.media.AudioAttributes
 import android.media.AudioFocusRequest
 import android.media.AudioManager
-import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Build
 import dev.russiancompanion.domain.practice.PracticeAudio
+import dev.russiancompanion.domain.progress.sha256File
 import java.io.File
 import java.io.IOException
 import java.util.UUID
@@ -16,10 +16,11 @@ internal class AndroidPracticeAudio(
     private val context: Context,
     private val audioManager: AudioManager = context.applicationContext
         .getSystemService(Context.AUDIO_SERVICE) as AudioManager,
+    playerFactory: PlaybackPlayerFactory = PlaybackPlayerFactory { MediaPlaybackPlayer() },
 ) : PracticeAudio {
     private val appContext: Context
         get() = context.applicationContext
-    private var player: MediaPlayer? = null
+    private val playback = SequentialPlayback(playerFactory)
     private var recorder: MediaRecorder? = null
     private var captureFile: File? = null
     private var hasFocus: Boolean = false
@@ -62,6 +63,10 @@ internal class AndroidPracticeAudio(
     }
 
     override fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit) {
+        playModel(localAudioReference, 1.0f, onFinished)
+    }
+
+    override fun playModel(localAudioReference: String, speed: Float, onFinished: (Boolean) -> Unit) {
         if (!requestFocus()) {
             onFinished(false)
             return
@@ -71,7 +76,16 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(cached, onFinished)
+        playback.play(cached.absolutePath, speed.coerceIn(0.75f, 1.0f), onFinished)
+    }
+
+    override fun recordingBytes(localFileReference: String): Long? {
+        val file = recordingFile(localFileReference)
+        return file.takeIf { it.isFile && it.length() > 0L }?.length()
+    }
+
+    override fun recordingDigest(localFileReference: String): String? {
+        return sha256File(recordingFile(localFileReference))
     }
 
     override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
@@ -84,11 +98,11 @@ internal class AndroidPracticeAudio(
             onFinished(false)
             return
         }
-        playFile(file, onFinished)
+        playback.play(file.absolutePath, RECORDING_SPEED, onFinished)
     }
 
     override fun stopPlayback() {
-        releasePlayer()
+        playback.stop()
     }
 
     override fun releaseForBackground() {
@@ -192,35 +206,6 @@ internal class AndroidPracticeAudio(
         }
     }
 
-    private fun playFile(file: File, onFinished: (Boolean) -> Unit) {
-        releasePlayer()
-        val mediaPlayer = MediaPlayer()
-        player = mediaPlayer
-        try {
-            mediaPlayer.setDataSource(file.absolutePath)
-            mediaPlayer.setOnCompletionListener {
-                releasePlayer()
-                onFinished(true)
-            }
-            mediaPlayer.setOnErrorListener { _, _, _ ->
-                releasePlayer()
-                onFinished(false)
-                true
-            }
-            mediaPlayer.prepare()
-            mediaPlayer.start()
-        } catch (_: Exception) {
-            releasePlayer()
-            onFinished(false)
-        }
-    }
-
-    private fun releasePlayer() {
-        val active = player
-        player = null
-        active?.release()
-    }
-
     private fun releaseRecorder(active: MediaRecorder?) {
         try {
             active?.release()
@@ -244,5 +229,6 @@ internal class AndroidPracticeAudio(
 
     private companion object {
         const val RECORDINGS_DIR = "recordings"
+        const val RECORDING_SPEED = 1.0f
     }
 }

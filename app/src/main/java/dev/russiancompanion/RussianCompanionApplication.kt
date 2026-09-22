@@ -1,6 +1,8 @@
 package dev.russiancompanion
 
 import android.app.Application
+import android.os.StatFs
+import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.audio.AndroidPracticeAudio
 import dev.russiancompanion.data.export.openAppRecording
 import dev.russiancompanion.data.local.LocalStore
@@ -10,6 +12,8 @@ import dev.russiancompanion.domain.practice.PracticeAudio
 
 class RussianCompanionApplication : Application() {
     internal val practiceAudio: PracticeAudio by lazy { AndroidPracticeAudio(this) }
+
+    internal val appearanceStore: AppearanceStore by lazy { AppearanceStore.onDisk(this) }
 
     internal var localStore: LocalStore? = null
         private set
@@ -31,6 +35,14 @@ class RussianCompanionApplication : Application() {
             openRecording = { reference -> openAppRecording(this, reference) },
             readCatalogNotice = { LocalStore.readPackagedCatalogNotice(this) },
             readLicenseNotices = { LocalStore.readPackagedLicenseNotices(this) },
+            availableBytes = {
+                try {
+                    StatFs(filesDir.absolutePath).availableBytes
+                } catch (_: Exception) {
+                    null
+                }
+            },
+            applicationVersion = BuildConfig.VERSION_NAME,
         )
     }
 

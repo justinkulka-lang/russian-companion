@@ -200,4 +200,5 @@ internal data class ExportRecordEntity(
     val recordingCount: Int,
     val status: ExportStatus,
     val documentReference: String? = null,
+    val recordingSetDigest: String? = null,
 )

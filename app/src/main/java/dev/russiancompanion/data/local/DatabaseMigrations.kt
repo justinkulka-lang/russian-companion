@@ -138,6 +138,17 @@ internal val MIGRATION_4_5 = object : Migration(4, 5) {
     }
 }
 
+/**
+ * Stores a deterministic digest of the recordings included in a completed
+ * export. Existing rows keep a null digest so backup status cannot claim
+ * current recording coverage from counts alone.
+ */
+internal val MIGRATION_5_6 = object : Migration(5, 6) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `export_records` ADD COLUMN `recordingSetDigest` TEXT")
+    }
+}
+
 private data class LegacyEvidenceRow(
     val id: String,
     val gateId: String,

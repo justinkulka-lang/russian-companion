@@ -16,6 +16,7 @@ import dev.russiancompanion.data.local.CompletionState
 import dev.russiancompanion.data.local.EligibilityStatus
 import dev.russiancompanion.data.local.ExportRecordEntity
 import dev.russiancompanion.data.local.ExportStatus
+import dev.russiancompanion.data.local.RecordingRecordEntity
 import dev.russiancompanion.data.local.GateDecisionStatus
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.evidenceType
@@ -48,12 +49,22 @@ import dev.russiancompanion.domain.plan.assembleDailyPlan
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.plan.summarizeActivity
 import dev.russiancompanion.domain.plan.summarizeGates
+import dev.russiancompanion.domain.progress.BackupOutcome
 import dev.russiancompanion.domain.progress.ExportCounts
+import dev.russiancompanion.domain.progress.ExportRecordView
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.ProgressReview
 import dev.russiancompanion.domain.progress.activityAttestationLabel
+import dev.russiancompanion.domain.progress.RecordingSetMember
+import dev.russiancompanion.domain.progress.backupStatus
+import dev.russiancompanion.domain.progress.bundledContentIdentity
 import dev.russiancompanion.domain.progress.evidenceAttestationLabel
+import dev.russiancompanion.domain.progress.recordingSetDigest
+import dev.russiancompanion.domain.progress.recordingStorage
+import dev.russiancompanion.domain.progress.StorageHealth
 import dev.russiancompanion.domain.progress.reviewProgress
+import dev.russiancompanion.domain.progress.studyBalance
+import java.time.LocalDate
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
@@ -66,6 +77,8 @@ internal class RoomNavigationGateway(
     private val readCatalogNotice: () -> String? = { null },
     private val readLicenseNotices: () -> List<LicenseNoticeOption> = { emptyList() },
     private val openRecording: (String) -> InputStream? = { null },
+    private val availableBytes: () -> Long? = { null },
+    private val applicationVersion: String? = null,
 ) : NavigationGateway {
     override fun current(localDate: String): NavigationSnapshot {
         return snapshot(localDate, NavigationSurface.FULL)
@@ -227,7 +240,71 @@ internal class RoomNavigationGateway(
             gateDetails = gateDetails,
             activitySummary = summarizeActivity(summaryLogs),
             progress = progress,
+            backup = backupFrom(store.exports(), recordingMembers(bundle.recordings)),
+            storageHealth = StorageHealth(
+                databaseReadable = true,
+                catalogAvailable = outcome?.status == SeedApplyStatus.APPLIED,
+                packagedAudioCount = bundle.eligibleAudio.size,
+                userRecordingCount = bundle.recordings.size,
+                recordingBytes = recordingStorage(
+                    bundle.recordings.map { practiceAudio.recordingBytes(it.localFileReference) },
+                ).first,
+                missingRecordingCount = recordingStorage(
+                    bundle.recordings.map { practiceAudio.recordingBytes(it.localFileReference) },
+                ).second,
+                availableBytes = availableBytes(),
+                applicationVersion = applicationVersion,
+                bundledContentIdentity = store.bundledSeedIdentity().let { (version, hash) ->
+                    bundledContentIdentity(version, hash)
+                },
+            ),
+            sevenDayBalance = studyBalance(summaryLogs, parseLocalDate(localDate), 7),
+            thirtyDayBalance = studyBalance(summaryLogs, parseLocalDate(localDate), 30),
         )
+    }
+
+    private fun backupFrom(
+        records: List<ExportRecordEntity>,
+        currentMembers: List<RecordingSetMember>,
+    ) = backupStatus(
+        records.map { record ->
+            ExportRecordView(
+                exportedAtLocal = record.exportedAtLocal,
+                fileName = record.destinationReference,
+                logCount = record.logCount,
+                evidenceCount = record.evidenceCount,
+                progressCount = record.progressCount,
+                recordingCount = record.recordingCount,
+                outcome = when (record.status) {
+                    ExportStatus.COMPLETED -> BackupOutcome.COMPLETED
+                    ExportStatus.FAILED -> BackupOutcome.FAILED
+                    ExportStatus.NOT_CONFIRMED -> BackupOutcome.NOT_CONFIRMED
+                },
+                recordingSetDigest = record.recordingSetDigest,
+            )
+        },
+        recordingSetDigest(currentMembers),
+    )
+
+    private fun recordingMembers(
+        recordings: List<RecordingRecordEntity>,
+    ): List<RecordingSetMember> {
+        return recordings.map { recording ->
+            RecordingSetMember(
+                recordingId = recording.id,
+                localFileReference = recording.localFileReference,
+                byteSize = practiceAudio.recordingBytes(recording.localFileReference),
+                contentDigest = practiceAudio.recordingDigest(recording.localFileReference),
+            )
+        }
+    }
+
+    private fun parseLocalDate(localDate: String): LocalDate {
+        return try {
+            LocalDate.parse(localDate)
+        } catch (_: Exception) {
+            LocalDate.now()
+        }
     }
 
     override fun confirmLesson(segmentId: String, localDate: String) {
@@ -458,6 +535,7 @@ internal class RoomNavigationGateway(
                         evidenceCount = built.evidenceCount,
                         progressCount = built.progressCount,
                         recordingCount = built.recordingCount,
+                        recordingSetDigest = recordingSetDigest(recordingMembers(store.recordings())),
                         packageCounts = ExportCounts(
                             logCount = built.logCount,
                             evidenceCount = built.evidenceCount,
@@ -487,6 +565,7 @@ internal class RoomNavigationGateway(
         evidenceCount: Int = 0,
         progressCount: Int = 0,
         recordingCount: Int = 0,
+        recordingSetDigest: String? = null,
         packageCounts: ExportCounts? = null,
     ) {
         store.saveExport(
@@ -500,6 +579,7 @@ internal class RoomNavigationGateway(
                 progressCount = progressCount,
                 recordingCount = recordingCount,
                 status = status,
+                recordingSetDigest = recordingSetDigest,
             ),
             packageCounts = packageCounts,
         )

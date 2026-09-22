@@ -4,7 +4,11 @@ import dev.russiancompanion.domain.gate.GateDetailView
 import dev.russiancompanion.domain.plan.ActivitySummary
 import dev.russiancompanion.domain.plan.DailyPlan
 import dev.russiancompanion.domain.plan.GateSummary
+import dev.russiancompanion.domain.progress.BackupOutcome
+import dev.russiancompanion.domain.progress.BackupStatus
 import dev.russiancompanion.domain.progress.ProgressReview
+import dev.russiancompanion.domain.progress.StorageHealth
+import dev.russiancompanion.domain.progress.WindowBalance
 
 internal data class LessonOption(
     val id: String,
@@ -91,6 +95,25 @@ internal data class NavigationSnapshot(
     val activitySummary: ActivitySummary = ActivitySummary.none(),
     val gateDetails: List<GateDetailView> = emptyList(),
     val progress: ProgressReview = ProgressReview.empty(),
+    val backup: BackupStatus = BackupStatus(
+        outcome = BackupOutcome.NEVER_EXPORTED,
+        successfulExportExists = false,
+    ),
+    val storageHealth: StorageHealth = StorageHealth.unavailable(),
+    val sevenDayBalance: WindowBalance = WindowBalance(
+        days = 7,
+        readable = true,
+        categories = emptyList(),
+        recordedCategories = emptyList(),
+        unrecordedCategories = emptyList(),
+    ),
+    val thirtyDayBalance: WindowBalance = WindowBalance(
+        days = 30,
+        readable = true,
+        categories = emptyList(),
+        recordedCategories = emptyList(),
+        unrecordedCategories = emptyList(),
+    ),
 ) {
     companion object {
         fun closed(): NavigationSnapshot {

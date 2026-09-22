@@ -5,6 +5,9 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
+import dev.russiancompanion.data.appearance.AppearanceStore
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.domain.appearance.defaultAppearancePreference
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -13,6 +16,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.compose.rememberNavController
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationGateway
@@ -25,6 +31,7 @@ import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ExportUpdate
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.time.LocalDate
@@ -61,6 +68,8 @@ internal fun CompanionApp(
     recordedAt: () -> String = { LocalDateTime.now().toString() },
     practiceAudio: PracticeAudio,
     chooseExportDestination: (() -> ExportSelection?)? = null,
+    appearanceStore: AppearanceStore = AppearanceStore.memory(defaultAppearancePreference()),
+    onAppearanceChange: (AppearancePreference) -> Unit = {},
 ) {
     val dispatcher = snapshotDispatcher()
     val scope = rememberCoroutineScope()
@@ -154,7 +163,20 @@ internal fun CompanionApp(
     }
 
     val launch = launchDestination(snapshot)
-    val colors = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()
+    val lifecycleOwner = LocalLifecycleOwner.current
+    var appearance by remember(appearanceStore) { mutableStateOf(defaultAppearancePreference()) }
+    var appearanceSaveFailed by remember(appearanceStore) { mutableStateOf(false) }
+    LaunchedEffect(appearanceStore, lifecycleOwner) {
+        lifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+            appearanceStore.preference.collect { stored ->
+                appearance = stored
+            }
+        }
+    }
+    val followSystemDark = isSystemInDarkTheme()
+    val useDark = appearance == AppearancePreference.DARK ||
+        (appearance == AppearancePreference.FOLLOW_SYSTEM && followSystemDark)
+    val colors = if (useDark) darkColorScheme() else lightColorScheme()
     MaterialTheme(colorScheme = colors) {
         key(launch, optionalDrillsAvailable(snapshot)) {
             val navController = rememberNavController()
@@ -277,6 +299,17 @@ internal fun CompanionApp(
                 },
                 chooseExportDestination = chooseExportDestination,
                 onNeedSurface = { surface, then -> requestSurface(surface, then) },
+                appearance = appearance,
+                appearanceSaveFailed = appearanceSaveFailed,
+                onAppearanceChange = { next ->
+                    scope.launch {
+                        val result = withContext(dispatcher) { appearanceStore.set(next) }
+                        appearanceSaveFailed = result.isFailure
+                        if (result.isSuccess) {
+                            onAppearanceChange(next)
+                        }
+                    }
+                },
             )
         }
     }
