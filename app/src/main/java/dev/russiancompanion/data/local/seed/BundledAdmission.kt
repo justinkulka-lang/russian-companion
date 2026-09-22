@@ -248,7 +248,7 @@ private fun admitGate(
             id = seed.id,
             segmentId = seed.segmentId,
             ruleVersion = seed.ruleVersion,
-            displayedRuleText = seed.displayedRuleText,
+            displayedRuleText = if (admission.accepted) admission.displayedRuleText else seed.displayedRuleText,
             eligibilityStatus = if (admission.accepted) {
                 EligibilityStatus.ELIGIBLE
             } else {

@@ -2,6 +2,18 @@ package dev.russiancompanion.data.local
 
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+import dev.russiancompanion.domain.gate.GateComparison
+import dev.russiancompanion.domain.gate.GateEvidenceKind
+import dev.russiancompanion.domain.gate.GateRuleCondition
+import dev.russiancompanion.domain.gate.decodeConditionOutcomes
+import dev.russiancompanion.domain.gate.decodeLegacyConditionOutcomes
+import dev.russiancompanion.domain.gate.decodeLegacyEvidenceIds
+import dev.russiancompanion.domain.gate.displayedRuleText
+import dev.russiancompanion.domain.gate.encodeConditionOutcomes
+import dev.russiancompanion.domain.gate.encodeEvidenceIds
+import dev.russiancompanion.domain.gate.encodeGateRuleSnapshot
+import dev.russiancompanion.domain.gate.gateRuleSnapshot
+import dev.russiancompanion.domain.gate.tutorSignOffCondition
 
 /**
  * Adds the recording-to-log link and the export document reference.
@@ -94,4 +106,116 @@ internal val MIGRATION_2_3 = object : Migration(2, 3) {
             """.trimIndent(),
         )
     }
+}
+
+/**
+ * Stores a canonical JSON rule snapshot on every decision and converts
+ * legacy comma/TSV evidence and outcome encodings to JSON. Existing
+ * evidence and decisions are kept. Displayed rule text is rewritten from
+ * the conditions that were present at migration time.
+ */
+internal val MIGRATION_3_4 = object : Migration(3, 4) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `gate_decisions` ADD COLUMN `ruleSnapshot` TEXT NOT NULL DEFAULT ''")
+        rewriteDisplayedRules(db)
+        rewriteDecisions(db)
+    }
+}
+
+private fun rewriteDisplayedRules(db: SupportSQLiteDatabase) {
+    val ids = mutableListOf<String>()
+    db.query("SELECT `id` FROM `gate_definitions`").use { cursor ->
+        while (cursor.moveToNext()) ids += cursor.getString(0)
+    }
+    for (id in ids) {
+        val conditions = loadRuleConditions(db, id, includeTutor = false)
+        if (conditions.isEmpty()) continue
+        db.execSQL(
+            "UPDATE `gate_definitions` SET `displayedRuleText` = ? WHERE `id` = ?",
+            arrayOf(displayedRuleText(conditions), id),
+        )
+    }
+}
+
+private fun rewriteDecisions(db: SupportSQLiteDatabase) {
+    data class LegacyDecision(
+        val id: String,
+        val gateId: String,
+        val version: String,
+        val evidenceIds: String,
+        val outcomes: String,
+    )
+    val decisions = mutableListOf<LegacyDecision>()
+    db.query(
+        "SELECT `id`, `gateDefinitionId`, `ruleVersion`, `evidenceIds`, `conditionOutcomes` FROM `gate_decisions`",
+    ).use { cursor ->
+        while (cursor.moveToNext()) {
+            decisions += LegacyDecision(
+                id = cursor.getString(0),
+                gateId = cursor.getString(1),
+                version = cursor.getString(2),
+                evidenceIds = cursor.getString(3),
+                outcomes = cursor.getString(4),
+            )
+        }
+    }
+    for (decision in decisions) {
+        val conditions = loadRuleConditions(db, decision.gateId, includeTutor = true)
+        val snapshot = encodeGateRuleSnapshot(gateRuleSnapshot(decision.version, conditions))
+        val outcomes = if (decision.outcomes.trimStart().startsWith("[")) {
+            decodeConditionOutcomes(decision.outcomes)
+        } else {
+            decodeLegacyConditionOutcomes(decision.outcomes)
+        }
+        db.execSQL(
+            """
+            UPDATE `gate_decisions`
+            SET `ruleSnapshot` = ?, `evidenceIds` = ?, `conditionOutcomes` = ?
+            WHERE `id` = ?
+            """.trimIndent(),
+            arrayOf(
+                snapshot,
+                encodeEvidenceIds(decodeLegacyEvidenceIds(decision.evidenceIds)),
+                encodeConditionOutcomes(outcomes),
+                decision.id,
+            ),
+        )
+    }
+}
+
+private fun loadRuleConditions(
+    db: SupportSQLiteDatabase,
+    gateId: String,
+    includeTutor: Boolean,
+): List<GateRuleCondition> {
+    val conditions = mutableListOf<GateRuleCondition>()
+    db.query(
+        """
+        SELECT `id`, `evidenceType`, `operator`, `operand`
+        FROM `gate_conditions`
+        WHERE `gateDefinitionId` = ?
+        ORDER BY `sortOrder`, `id`
+        """.trimIndent(),
+        arrayOf(gateId),
+    ).use { cursor ->
+        while (cursor.moveToNext()) {
+            val kind = GateEvidenceKind.entries.firstOrNull { it.name == cursor.getString(1) } ?: continue
+            val comparison = GateComparison.entries.firstOrNull { it.name == cursor.getString(2) } ?: continue
+            conditions += GateRuleCondition(
+                id = cursor.getString(0),
+                kind = kind,
+                comparison = comparison,
+                operand = if (cursor.isNull(3)) null else cursor.getString(3),
+            )
+        }
+    }
+    if (includeTutor) {
+        db.query(
+            "SELECT 1 FROM `gate_tutor_requirements` WHERE `gateDefinitionId` = ?",
+            arrayOf(gateId),
+        ).use { cursor ->
+            if (cursor.moveToFirst()) conditions += tutorSignOffCondition()
+        }
+    }
+    return conditions
 }

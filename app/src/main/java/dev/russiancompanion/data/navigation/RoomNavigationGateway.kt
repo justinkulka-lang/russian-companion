@@ -385,6 +385,7 @@ internal class RoomNavigationGateway(
                     id = decision.id,
                     gateDefinitionId = decision.gateDefinitionId,
                     ruleVersion = decision.ruleVersion,
+                    ruleSnapshot = decision.ruleSnapshot,
                     evidenceIds = decision.evidenceIds,
                     conditionOutcomes = decision.conditionOutcomes,
                     status = decision.status.name,

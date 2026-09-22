@@ -116,11 +116,6 @@ internal fun evidenceEntryAccepted(
     }
 }
 
-internal fun reproduceDecision(
-    conditions: List<GateRuleCondition>,
-    evidence: List<RecordedEvidence>,
-): GateEvaluation = evaluateGate(conditions, evidence)
-
 internal fun remainingConditions(
     evaluation: GateEvaluation,
     conditions: List<GateRuleCondition>,
@@ -141,20 +136,6 @@ internal fun remainingKinds(
 
 internal fun gateIsLocked(evaluation: GateEvaluation): Boolean {
     return evaluation.status != GateStatus.SATISFIED
-}
-
-internal fun decodeConditionOutcomes(encoded: String): List<ConditionOutcome> {
-    if (encoded.isBlank()) return emptyList()
-    return encoded.split('\n').mapNotNull { line ->
-        val parts = line.split('\t')
-        if (parts.size != 3) return@mapNotNull null
-        val result = ConditionResult.entries.firstOrNull { it.name == parts[2] } ?: return@mapNotNull null
-        ConditionOutcome(
-            conditionId = parts[0],
-            evidenceId = parts[1].ifEmpty { null },
-            result = result,
-        )
-    }
 }
 
 /**
@@ -184,12 +165,6 @@ internal fun evaluateGate(
         else -> GateStatus.SATISFIED
     }
     return GateEvaluation(status = status, outcomes = outcomes)
-}
-
-internal fun encodeConditionOutcomes(outcomes: List<ConditionOutcome>): String {
-    return outcomes.joinToString(separator = "\n") { outcome ->
-        listOf(outcome.conditionId, outcome.evidenceId.orEmpty(), outcome.result.name).joinToString(separator = "\t")
-    }
 }
 
 private fun compare(condition: GateRuleCondition, enteredValue: String): ConditionResult {

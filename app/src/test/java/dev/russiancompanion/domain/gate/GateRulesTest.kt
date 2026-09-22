@@ -2,6 +2,7 @@ package dev.russiancompanion.domain.gate
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -30,7 +31,7 @@ class GateRulesTest {
             RecordedEvidence("e-anki-2", GateEvidenceKind.ANKI_DROID_STATUS, AnkiStatusValue.MATURE.name, "2026-09-21T10:00"),
             RecordedEvidence("e-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00"),
         )
-        val passing = reproduceDecision(rule, raised)
+        val passing = evaluateGate(rule, raised)
         assertEquals(GateStatus.SATISFIED, passing.status)
         assertFalse(gateIsLocked(passing))
         assertTrue(remainingKinds(passing, rule).isEmpty())
@@ -97,7 +98,7 @@ class GateRulesTest {
             PRESENCE_RECORDED,
             "2026-09-21T10:00",
         )
-        val passed = reproduceDecision(rule, signed)
+        val passed = evaluateGate(rule, signed)
         assertEquals(GateStatus.SATISFIED, passed.status)
         assertFalse(gateIsLocked(passed))
         assertEquals(ConditionResult.SATISFIED, passed.outcomes.single { it.conditionId == USER_ADDED_TUTOR_CONDITION_ID }.result)
@@ -127,5 +128,62 @@ class GateRulesTest {
             listOf(RecordedEvidence("e-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00")),
         )
         assertEquals(GateStatus.SATISFIED, closed.status)
+    }
+
+    @Test
+    fun historicalDecisionsReproduceFromTheirSnapshotAndRecordedEvidenceOnly() {
+        val ruleA = defaultAdvancementRule()
+        val snapshotA = encodeGateRuleSnapshot(gateRuleSnapshot("1", ruleA))
+        val evidenceA = listOf(
+            RecordedEvidence("e-book-a", GateEvidenceKind.BOOK_REVISION_SCORE, "1", "2026-09-21T09:00"),
+            RecordedEvidence("e-anki-a", GateEvidenceKind.ANKI_DROID_STATUS, AnkiStatusValue.MATURE.name, "2026-09-21T09:00"),
+            RecordedEvidence("e-work-a", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00"),
+        )
+        val decisionA = evaluateGate(ruleA, evidenceA)
+        assertEquals(GateStatus.SATISFIED, decisionA.status)
+        assertEquals(displayedRuleText(ruleA), parseGateRuleSnapshot(snapshotA)?.displayedRuleText)
+
+        val laterEvidence = RecordedEvidence(
+            "e-book-b",
+            GateEvidenceKind.BOOK_REVISION_SCORE,
+            "0",
+            "2026-09-21T10:00",
+        )
+        val evidenceB = evidenceA + laterEvidence
+        val decisionB = evaluateGate(ruleA, evidenceB)
+        val snapshotB = encodeGateRuleSnapshot(gateRuleSnapshot("1", ruleA))
+        assertEquals(GateStatus.NOT_YET_SATISFIED, decisionB.status)
+
+        val laterRule = defaultAdvancementRule(bookMinimum = "9")
+        val laterSnapshot = encodeGateRuleSnapshot(gateRuleSnapshot("2", laterRule))
+        assertEquals(
+            GateStatus.NOT_YET_SATISFIED,
+            evaluateGate(laterRule, evidenceB).status,
+        )
+        assertEquals("2", parseGateRuleSnapshot(laterSnapshot)?.version)
+        assertTrue(parseGateRuleSnapshot(laterSnapshot)?.displayedRuleText != parseGateRuleSnapshot(snapshotA)?.displayedRuleText)
+
+        val reproducedA = reproduceDecision(
+            snapshotA,
+            decisionA.outcomes.mapNotNull { it.evidenceId },
+            evidenceB,
+        )
+        val reproducedB = reproduceDecision(
+            snapshotB,
+            decisionB.outcomes.mapNotNull { it.evidenceId },
+            evidenceB,
+        )
+        assertTrue(reproducedDecisionMatches(decisionA.status, decisionA.outcomes, reproducedA))
+        assertTrue(reproducedDecisionMatches(decisionB.status, decisionB.outcomes, reproducedB))
+        assertEquals(listOf("e-book-a"), reproducedA.outcomes.mapNotNull { it.evidenceId }.filter { it.startsWith("e-book") })
+        assertEquals("e-book-b", reproducedB.outcomes.single { it.conditionId == DEFAULT_BOOK_CONDITION_ID }.evidenceId)
+        assertNull(
+            parseGateRuleSnapshot(
+                encodeGateRuleSnapshot(
+                    gateRuleSnapshot("1", ruleA).copy(displayedRuleText = "Displayed test rule"),
+                ),
+            ),
+        )
+        assertEquals(listOf("e-book-a", "e-anki-a", "e-work-a"), parseEvidenceIds(encodeEvidenceIds(evidenceA.map { it.id })))
     }
 }

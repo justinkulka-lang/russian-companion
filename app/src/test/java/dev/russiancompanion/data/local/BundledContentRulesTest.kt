@@ -13,6 +13,10 @@ import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.seed.SourceRecordSeed
 import dev.russiancompanion.data.local.seed.SourceTextSeed
 import dev.russiancompanion.data.local.seed.prepareBundledContent
+import dev.russiancompanion.domain.gate.GateComparison
+import dev.russiancompanion.domain.gate.GateEvidenceKind
+import dev.russiancompanion.domain.gate.GateRuleCondition
+import dev.russiancompanion.domain.gate.displayedRuleText
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -497,20 +501,36 @@ internal fun audio(id: String = "audio-1", rightsRecordId: String = "rights-1"):
     )
 }
 
-internal fun gate(conditions: List<GateConditionSeed> = defaultGateConditionSeeds()): GateDefinitionSeed {
+internal fun gate(
+    conditions: List<GateConditionSeed> = defaultGateConditionSeeds(),
+    ruleVersion: String = "1",
+): GateDefinitionSeed {
     return GateDefinitionSeed(
         id = "gate-1",
         segmentId = "segment-1",
-        ruleVersion = "1",
-        displayedRuleText = "Displayed test rule",
+        ruleVersion = ruleVersion,
+        displayedRuleText = displayedRuleTextFor(conditions),
         conditions = conditions,
     )
 }
 
-internal fun defaultGateConditionSeeds(): List<GateConditionSeed> {
+internal fun defaultGateConditionSeeds(bookMinimum: String = "1"): List<GateConditionSeed> {
     return listOf(
-        GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+        GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", bookMinimum, 0),
         GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "MATURE", 1),
         GateConditionSeed("c-work", "PRESCRIBED_WORK_COMPLETION", "PRESENT", null, 2),
+    )
+}
+
+internal fun displayedRuleTextFor(conditions: List<GateConditionSeed>): String {
+    return displayedRuleText(
+        conditions.map { condition ->
+            GateRuleCondition(
+                id = condition.id,
+                kind = GateEvidenceKind.valueOf(condition.evidenceType),
+                comparison = GateComparison.valueOf(condition.operator),
+                operand = condition.operand,
+            )
+        },
     )
 }

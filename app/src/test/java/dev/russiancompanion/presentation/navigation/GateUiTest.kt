@@ -17,6 +17,7 @@ import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.gate.defaultDisplayedRuleText
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
@@ -64,7 +65,7 @@ class GateUiTest {
         )
             .performScrollTo()
             .assertIsDisplayed()
-        click("Displayed test rule")
+        click(defaultDisplayedRuleText())
         show("Self-attested — not independently verified")
         show("Self-attested — no AnkiDroid integration; not independently verified")
         show("At least 1")

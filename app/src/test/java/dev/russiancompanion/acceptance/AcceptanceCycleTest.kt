@@ -25,6 +25,7 @@ import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.gate.defaultDisplayedRuleText
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ANKI_ATTESTATION
 import dev.russiancompanion.domain.progress.ANKI_PRACTICE
@@ -138,7 +139,7 @@ class AcceptanceCycleTest {
         show("Today's required activities are complete.")
         show("Completion is recorded work, not proficiency certification.")
         click("Gates")
-        click("Displayed test rule")
+        click(defaultDisplayedRuleText())
         show(BOOK_ATTESTATION)
         show(ANKI_ATTESTATION)
         replaceField(0, "1")

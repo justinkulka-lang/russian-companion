@@ -4,6 +4,11 @@ import android.content.Context
 import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
 import dev.russiancompanion.data.local.seed.SeedOutcome
+import dev.russiancompanion.domain.gate.GateEvaluation
+import dev.russiancompanion.domain.gate.encodeEvidenceIds
+import dev.russiancompanion.domain.gate.encodeGateRuleSnapshot
+import dev.russiancompanion.domain.gate.gateRuleSnapshot
+import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
 import java.io.IOException
 import java.util.UUID
 import java.util.concurrent.Callable
@@ -332,15 +337,22 @@ internal class LocalStore private constructor(
         evaluatedAtLocal: String,
     ): GateDecisionEntity = call {
         val gate = database.bundled().gate(gateDefinitionId) ?: throw IllegalArgumentException("Unknown gate")
-        if (ruleVersion.isBlank() || ruleVersion != gate.ruleVersion) {
+        val conditions = database.bundled().conditions(gate.id)
+        val tutorRequired = database.users().tutorRequirement(gate.id) != null
+        val snapshot = gateRuleSnapshot(gate.ruleVersion, ruleConditions(conditions, tutorRequired))
+        if (ruleVersion.isBlank() || ruleVersion != snapshot.version) {
             throw IllegalArgumentException("The decision must name the stored rule version")
+        }
+        if (parseGateRuleSnapshot(encodeGateRuleSnapshot(snapshot)) == null) {
+            throw IllegalArgumentException("A canonical rule snapshot is required")
         }
         if (conditionOutcomes.isBlank()) throw IllegalArgumentException("Condition outcomes are required")
         val decision = GateDecisionEntity(
             id = UUID.randomUUID().toString(),
             gateDefinitionId = gate.id,
-            ruleVersion = ruleVersion,
-            evidenceIds = evidenceIds.joinToString(separator = ","),
+            ruleVersion = snapshot.version,
+            ruleSnapshot = encodeGateRuleSnapshot(snapshot),
+            evidenceIds = encodeEvidenceIds(evidenceIds),
             conditionOutcomes = conditionOutcomes,
             status = status,
             evaluatedAtLocal = UserRecordRules.requireTimestamp(evaluatedAtLocal),
@@ -350,6 +362,10 @@ internal class LocalStore private constructor(
     }
 
     fun decisions(): List<GateDecisionEntity> = call { database.users().decisions() }
+
+    fun reproduceStoredDecision(decision: GateDecisionEntity): GateEvaluation = call {
+        reproduceStoredDecision(decision, database.users().allEvidence())
+    }
 
     fun commitRecording(
         audioModelId: String,
@@ -492,7 +508,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
                 .build()
             val store = LocalStore(database)
             store.applySeed(readSeed(appContext))

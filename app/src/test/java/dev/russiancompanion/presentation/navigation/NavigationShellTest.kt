@@ -17,6 +17,7 @@ import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
+import dev.russiancompanion.domain.gate.defaultDisplayedRuleText
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
@@ -112,7 +113,7 @@ class NavigationShellTest {
 
         clickText("Gates", substring = false)
         showText("Activity gate, not proficiency certification.")
-        clickText("Displayed test rule")
+        clickText(defaultDisplayedRuleText())
         compose.onNodeWithText("This gate definition is unreadable. No advancement decision is shown.")
             .assertDoesNotExist()
         clickText("Progress", substring = false)

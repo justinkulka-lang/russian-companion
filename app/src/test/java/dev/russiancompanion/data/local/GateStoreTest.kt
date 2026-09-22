@@ -12,8 +12,11 @@ import dev.russiancompanion.domain.gate.RecordedEvidence
 import dev.russiancompanion.domain.gate.decodeConditionOutcomes
 import dev.russiancompanion.domain.gate.encodeConditionOutcomes
 import dev.russiancompanion.domain.gate.evaluateGate
-import dev.russiancompanion.domain.gate.reproduceDecision
+import dev.russiancompanion.domain.gate.parseEvidenceIds
+import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
+import dev.russiancompanion.domain.gate.reproducedDecisionMatches
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -62,14 +65,12 @@ class GateStoreTest {
             )
             assertEquals(GateDecisionStatus.SATISFIED, met.status)
             val rule = ruleConditions(store.conditions("gate-1"), tutorRequired = false)
-            val reproduced = reproduceDecision(
-                rule,
-                store.evidenceFor("gate-1").map { it.toTestEvidence() },
-            )
+            val reproduced = store.reproduceStoredDecision(met)
             assertEquals(GateStatus.SATISFIED, reproduced.status)
             assertEquals(decodeConditionOutcomes(met.conditionOutcomes), reproduced.outcomes)
             assertEquals(encodeConditionOutcomes(reproduced.outcomes), met.conditionOutcomes)
             assertEquals(evaluateGate(rule, store.evidenceFor("gate-1").map { it.toTestEvidence() }), reproduced)
+            assertTrue(reproducedDecisionMatches(met.status.toGateStatus(), storedOutcomes(met), reproduced))
             assertEquals("1", store.evidenceFor("gate-1").last { it.evidenceType == EvidenceType.BOOK_REVISION_SCORE }.enteredValue)
 
             store.addTutorSignOffRequirement("gate-1", "2026-09-21T11:00")
@@ -141,7 +142,70 @@ class GateStoreTest {
         }
     }
 
-    private fun gateDocument() = minimalDocument().copy(
+    @Test
+    fun storedDecisionsStayReproducibleAfterLaterEvidenceAndANewRuleVersion() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        LocalStore.openInMemory(context).use { store ->
+            store.applySeed(SeedJson.encode(gateDocument(ruleVersion = "1")))
+            store.confirmLesson("segment-1", "2026-09-21")
+            val decisionA = store.recordGateEvidenceAndDecide(
+                gateDefinitionId = "gate-1",
+                entries = listOf(
+                    EvidenceType.BOOK_REVISION_SCORE to "1",
+                    EvidenceType.ANKI_DROID_STATUS to AnkiStatusValue.MATURE.name,
+                    EvidenceType.PRESCRIBED_WORK_COMPLETION to PRESENCE_RECORDED,
+                ),
+                recordedAtLocal = "2026-09-21T09:00",
+            )
+            assertEquals(GateDecisionStatus.SATISFIED, decisionA.status)
+            assertEquals("1", parseGateRuleSnapshot(decisionA.ruleSnapshot)?.version)
+            assertEquals(
+                listOf("1"),
+                parseEvidenceIds(decisionA.evidenceIds).mapNotNull { id ->
+                    store.evidenceFor("gate-1")
+                        .firstOrNull { it.id == id && it.evidenceType == EvidenceType.BOOK_REVISION_SCORE }
+                        ?.enteredValue
+                },
+            )
+
+            val decisionB = store.recordGateEvidenceAndDecide(
+                gateDefinitionId = "gate-1",
+                entries = listOf(EvidenceType.BOOK_REVISION_SCORE to "0"),
+                recordedAtLocal = "2026-09-21T10:00",
+            )
+            assertEquals(GateDecisionStatus.NOT_YET_SATISFIED, decisionB.status)
+            assertNotEquals(parseEvidenceIds(decisionA.evidenceIds), parseEvidenceIds(decisionB.evidenceIds))
+
+            store.applySeed(SeedJson.encode(gateDocument(ruleVersion = "2", bookMinimum = "9")))
+            assertEquals("2", store.gate("gate-1")?.ruleVersion)
+            assertNotEquals(
+                parseGateRuleSnapshot(decisionA.ruleSnapshot)?.displayedRuleText,
+                store.gate("gate-1")?.displayedRuleText,
+            )
+            val live = evaluateGate(
+                ruleConditions(store.conditions("gate-1"), tutorRequired = false),
+                store.evidenceFor("gate-1").map { it.toTestEvidence() },
+            )
+            assertEquals(GateStatus.NOT_YET_SATISFIED, live.status)
+            assertNotEquals(storedOutcomes(decisionA), live.outcomes)
+
+            val storedA = store.decisions().single { it.id == decisionA.id }
+            val storedB = store.decisions().single { it.id == decisionB.id }
+            val reproducedA = store.reproduceStoredDecision(storedA)
+            val reproducedB = store.reproduceStoredDecision(storedB)
+            assertTrue(reproducedDecisionMatches(storedA.status.toGateStatus(), storedOutcomes(storedA), reproducedA))
+            assertTrue(reproducedDecisionMatches(storedB.status.toGateStatus(), storedOutcomes(storedB), reproducedB))
+            assertEquals(GateStatus.SATISFIED, reproducedA.status)
+            assertEquals(GateStatus.NOT_YET_SATISFIED, reproducedB.status)
+            assertEquals("1", parseGateRuleSnapshot(storedA.ruleSnapshot)?.version)
+            assertEquals("1", parseGateRuleSnapshot(storedB.ruleSnapshot)?.version)
+            val laterBookId = store.evidenceFor("gate-1").single { it.enteredValue == "0" }.id
+            assertTrue(laterBookId !in parseEvidenceIds(storedA.evidenceIds))
+            assertTrue(laterBookId in parseEvidenceIds(storedB.evidenceIds))
+        }
+    }
+
+    private fun gateDocument(ruleVersion: String = "1", bookMinimum: String = "1") = minimalDocument().copy(
         planDefinitions = listOf(
             PlanDefinitionSeed(
                 id = "plan-book",
@@ -153,7 +217,7 @@ class GateStoreTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(gate()),
+        gateDefinitions = listOf(gate(defaultGateConditionSeeds(bookMinimum), ruleVersion)),
     )
 
     private fun GateEvidenceEntity.toTestEvidence(): RecordedEvidence {

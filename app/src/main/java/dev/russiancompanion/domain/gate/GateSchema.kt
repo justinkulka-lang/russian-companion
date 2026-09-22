@@ -41,7 +41,30 @@ internal data class GateAdmission(
     val accepted: Boolean,
     val reason: String? = null,
     val conditions: List<GateRuleCondition> = emptyList(),
+    val displayedRuleText: String = "",
 )
+
+internal fun defaultDisplayedRuleText(): String = displayedRuleText(defaultAdvancementRule())
+
+internal fun displayedRuleText(conditions: List<GateRuleCondition>): String {
+    return conditions.joinToString(separator = " AND ") { condition ->
+        val name = when (condition.kind) {
+            GateEvidenceKind.BOOK_REVISION_SCORE -> "Book revision score"
+            GateEvidenceKind.ANKI_DROID_STATUS -> "AnkiDroid completion or maturity"
+            GateEvidenceKind.PRESCRIBED_WORK_COMPLETION -> "Prescribed work completion"
+            GateEvidenceKind.TUTOR_SIGN_OFF -> "Tutor sign-off"
+        }
+        when (condition.comparison) {
+            GateComparison.PRESENT -> "$name is recorded"
+            GateComparison.AT_LEAST -> "$name at least ${condition.operand.orEmpty()}"
+            GateComparison.EQUALS -> "$name equals ${condition.operand.orEmpty()}"
+        }
+    }
+}
+
+internal fun identityTokenAccepted(value: String): Boolean {
+    return value.isNotBlank() && value.none { it == '\t' || it == '\n' || it == '\r' || it == ',' }
+}
 
 internal fun parseAnkiStatus(value: String): AnkiStatusValue? {
     val trimmed = value.trim()
@@ -81,13 +104,13 @@ internal fun admitGateDefinition(
     draft: GateDefinitionDraft,
     segmentExists: Boolean,
 ): GateAdmission {
-    if (draft.id.isBlank() || draft.segmentId.isBlank()) {
+    if (!identityTokenAccepted(draft.id) || !identityTokenAccepted(draft.segmentId)) {
         return GateAdmission(false, "identity")
     }
     if (!segmentExists) {
         return GateAdmission(false, "missing-segment")
     }
-    if (draft.ruleVersion.isBlank() || draft.displayedRuleText.isBlank()) {
+    if (draft.ruleVersion.isBlank() || !identityTokenAccepted(draft.ruleVersion) || draft.displayedRuleText.isBlank()) {
         return GateAdmission(false, "rule-blank")
     }
     if (draft.conditions.isEmpty()) {
@@ -97,7 +120,10 @@ internal fun admitGateDefinition(
     val kinds = mutableSetOf<GateEvidenceKind>()
     val parsed = mutableListOf<GateRuleCondition>()
     for (condition in draft.conditions.sortedWith(compareBy({ it.sortOrder }, { it.id }))) {
-        if (condition.id.isBlank() || !seenIds.add(condition.id)) {
+        if (!identityTokenAccepted(condition.id)) {
+            return GateAdmission(false, "identity-token")
+        }
+        if (!seenIds.add(condition.id)) {
             return GateAdmission(false, "duplicate-condition")
         }
         val kind = parseEvidenceKind(condition.evidenceType)
@@ -154,7 +180,11 @@ internal fun admitGateDefinition(
     if (kinds != required) {
         return GateAdmission(false, "default-kinds-required")
     }
-    return GateAdmission(accepted = true, conditions = parsed)
+    val generated = displayedRuleText(parsed)
+    if (draft.displayedRuleText != generated) {
+        return GateAdmission(false, "rule-text-mismatch")
+    }
+    return GateAdmission(accepted = true, conditions = parsed, displayedRuleText = generated)
 }
 
 private fun parseEvidenceKind(raw: String): GateEvidenceKind? {

@@ -52,6 +52,10 @@ class GateSchemaTest {
         )
         assertEquals("missing-segment", admitGateDefinition(defaultDraft(), segmentExists = false).reason)
         assertEquals("identity", admitGateDefinition(defaultDraft().copy(id = ""), segmentExists = true).reason)
+        assertEquals("identity", admitGateDefinition(defaultDraft().copy(id = "gate\t1"), segmentExists = true).reason)
+        assertEquals("identity-token", admit(defaultDraft().copy(conditions = defaultDraft().conditions.map { it.copy(id = if (it.id == "c-book") "c-book,1" else it.id) })).reason)
+        assertEquals("rule-text-mismatch", admit(defaultDraft().copy(displayedRuleText = "Displayed test rule")).reason)
+        assertEquals("rule-blank", admit(defaultDraft().copy(ruleVersion = "1\n2")).reason)
     }
 
     private fun admit(draft: GateDefinitionDraft): GateAdmission {
@@ -82,7 +86,7 @@ class GateSchemaTest {
             id = "gate-1",
             segmentId = "segment-1",
             ruleVersion = "1",
-            displayedRuleText = "Displayed test rule",
+            displayedRuleText = displayedRuleText(defaultAdvancementRule()),
             conditions = conditions.toList(),
         )
     }

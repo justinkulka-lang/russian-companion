@@ -1,5 +1,6 @@
 package dev.russiancompanion.data.local
 
+import dev.russiancompanion.domain.gate.ConditionOutcome
 import dev.russiancompanion.domain.gate.GateComparison
 import dev.russiancompanion.domain.gate.GateConditionView
 import dev.russiancompanion.domain.gate.GateDetailView
@@ -9,11 +10,18 @@ import dev.russiancompanion.domain.gate.GateEvidenceView
 import dev.russiancompanion.domain.gate.GateRuleCondition
 import dev.russiancompanion.domain.gate.GateStatus
 import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.decodeConditionOutcomes
+import dev.russiancompanion.domain.gate.displayedRuleText
 import dev.russiancompanion.domain.gate.encodeConditionOutcomes
+import dev.russiancompanion.domain.gate.encodeEvidenceIds
+import dev.russiancompanion.domain.gate.encodeGateRuleSnapshot
 import dev.russiancompanion.domain.gate.evaluateGate
 import dev.russiancompanion.domain.gate.evidenceEntryAccepted
 import dev.russiancompanion.domain.gate.gateIsLocked
+import dev.russiancompanion.domain.gate.gateRuleSnapshot
+import dev.russiancompanion.domain.gate.parseEvidenceIds
 import dev.russiancompanion.domain.gate.remainingKinds
+import dev.russiancompanion.domain.gate.reproduceDecision
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import java.util.UUID
 
@@ -56,7 +64,7 @@ internal fun gateDetailView(
     val evidenceById = evidence.associateBy { it.id }
     return GateDetailView(
         id = gate.id,
-        displayedRuleText = gate.displayedRuleText,
+        displayedRuleText = displayedRuleText(rule),
         tutorRequired = tutorRequired,
         recordedStatus = recordedStatus?.toGateStatus(),
         locked = gateIsLocked(evaluation),
@@ -94,12 +102,27 @@ internal fun evidenceType(kind: GateEvidenceKind): EvidenceType {
     }
 }
 
-private fun GateDecisionStatus.toGateStatus(): GateStatus {
+internal fun GateDecisionStatus.toGateStatus(): GateStatus {
     return when (this) {
         GateDecisionStatus.SATISFIED -> GateStatus.SATISFIED
         GateDecisionStatus.NOT_YET_SATISFIED -> GateStatus.NOT_YET_SATISFIED
         GateDecisionStatus.NOT_EVALUABLE -> GateStatus.NOT_EVALUABLE
     }
+}
+
+internal fun reproduceStoredDecision(
+    decision: GateDecisionEntity,
+    evidence: List<GateEvidenceEntity>,
+): GateEvaluation {
+    return reproduceDecision(
+        ruleSnapshot = decision.ruleSnapshot,
+        recordedEvidenceIds = parseEvidenceIds(decision.evidenceIds),
+        evidence = evidence.map { it.toRecorded() },
+    )
+}
+
+internal fun storedOutcomes(decision: GateDecisionEntity): List<ConditionOutcome> {
+    return decodeConditionOutcomes(decision.conditionOutcomes)
 }
 
 internal fun storedGateDecision(
@@ -109,11 +132,12 @@ internal fun storedGateDecision(
     evidence: List<GateEvidenceEntity>,
     evaluatedAtLocal: String,
 ): GateDecisionEntity {
+    val rule = ruleConditions(conditions, tutorRequired)
     val evaluation = evaluateGate(
-        conditions = ruleConditions(conditions, tutorRequired),
+        conditions = rule,
         evidence = evidence.map { it.toRecorded() },
     )
-    return evaluation.toDecision(gate, evaluatedAtLocal)
+    return evaluation.toDecision(gate, rule, evaluatedAtLocal)
 }
 
 private fun comparisonsFor(
@@ -138,13 +162,16 @@ private fun GateEvidenceEntity.toRecorded(): RecordedEvidence {
 
 private fun GateEvaluation.toDecision(
     gate: GateDefinitionEntity,
+    rule: List<GateRuleCondition>,
     evaluatedAtLocal: String,
 ): GateDecisionEntity {
+    val snapshot = gateRuleSnapshot(gate.ruleVersion, rule)
     return GateDecisionEntity(
         id = UUID.randomUUID().toString(),
         gateDefinitionId = gate.id,
-        ruleVersion = gate.ruleVersion,
-        evidenceIds = outcomes.mapNotNull { it.evidenceId }.joinToString(separator = ","),
+        ruleVersion = snapshot.version,
+        ruleSnapshot = encodeGateRuleSnapshot(snapshot),
+        evidenceIds = encodeEvidenceIds(outcomes.mapNotNull { it.evidenceId }),
         conditionOutcomes = encodeConditionOutcomes(outcomes),
         status = when (status) {
             GateStatus.SATISFIED -> GateDecisionStatus.SATISFIED

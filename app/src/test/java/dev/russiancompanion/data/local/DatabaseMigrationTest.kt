@@ -5,8 +5,19 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.sqlite.db.SupportSQLiteOpenHelper
 import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.domain.gate.GateEvidenceKind
+import dev.russiancompanion.domain.gate.GateStatus
+import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.decodeConditionOutcomes
+import dev.russiancompanion.domain.gate.defaultAdvancementRule
+import dev.russiancompanion.domain.gate.displayedRuleText
+import dev.russiancompanion.domain.gate.parseEvidenceIds
+import dev.russiancompanion.domain.gate.parseGateRuleSnapshot
+import dev.russiancompanion.domain.gate.reproduceDecision
+import dev.russiancompanion.domain.gate.reproducedDecisionMatches
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
@@ -332,6 +343,194 @@ class DatabaseMigrationTest {
         exported.moveToFirst()
         assertEquals("notes.zip", exported.getString(0))
         exported.close()
+        helper.close()
+    }
+
+    @Test
+    fun version3DecisionsKeepTheirEvidenceAndGainACanonicalRuleSnapshot() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("capability2-v3.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(3) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `course_segments` (
+                                `id` TEXT NOT NULL,
+                                `lessonReference` TEXT NOT NULL,
+                                `lessonNumber` INTEGER NOT NULL,
+                                `sortOrder` INTEGER NOT NULL,
+                                `eligibilityStatus` TEXT NOT NULL,
+                                PRIMARY KEY(`id`)
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_definitions` (
+                                `id` TEXT NOT NULL,
+                                `segmentId` TEXT NOT NULL,
+                                `ruleVersion` TEXT NOT NULL,
+                                `displayedRuleText` TEXT NOT NULL,
+                                `eligibilityStatus` TEXT NOT NULL,
+                                PRIMARY KEY(`id`),
+                                FOREIGN KEY(`segmentId`) REFERENCES `course_segments`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_conditions` (
+                                `id` TEXT NOT NULL,
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `evidenceType` TEXT NOT NULL,
+                                `operator` TEXT NOT NULL,
+                                `operand` TEXT,
+                                `sortOrder` INTEGER NOT NULL,
+                                PRIMARY KEY(`id`),
+                                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_tutor_requirements` (
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `recordedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`gateDefinitionId`),
+                                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_evidence` (
+                                `id` TEXT NOT NULL,
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `evidenceType` TEXT NOT NULL,
+                                `enteredValue` TEXT NOT NULL,
+                                `selfAttestationStatus` TEXT NOT NULL,
+                                `recordedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`id`),
+                                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                        db.execSQL(
+                            """
+                            CREATE TABLE IF NOT EXISTS `gate_decisions` (
+                                `id` TEXT NOT NULL,
+                                `gateDefinitionId` TEXT NOT NULL,
+                                `ruleVersion` TEXT NOT NULL,
+                                `evidenceIds` TEXT NOT NULL,
+                                `conditionOutcomes` TEXT NOT NULL,
+                                `status` TEXT NOT NULL,
+                                `evaluatedAtLocal` TEXT NOT NULL,
+                                PRIMARY KEY(`id`),
+                                FOREIGN KEY(`gateDefinitionId`) REFERENCES `gate_definitions`(`id`)
+                                ON UPDATE NO ACTION ON DELETE RESTRICT
+                            )
+                            """.trimIndent(),
+                        )
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL("PRAGMA foreign_keys = ON")
+        db.execSQL(
+            """
+            INSERT INTO course_segments (id, lessonReference, lessonNumber, sortOrder, eligibilityStatus)
+            VALUES ('segment-1', 'Lesson 1', 1, 1, 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_definitions (id, segmentId, ruleVersion, displayedRuleText, eligibilityStatus)
+            VALUES ('gate-1', 'segment-1', '1', 'Displayed test rule', 'ELIGIBLE')
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_conditions (id, gateDefinitionId, evidenceType, operator, operand, sortOrder)
+            VALUES
+                ('c-book', 'gate-1', 'BOOK_REVISION_SCORE', 'AT_LEAST', '1', 0),
+                ('c-anki', 'gate-1', 'ANKI_DROID_STATUS', 'EQUALS', 'MATURE', 1),
+                ('c-work', 'gate-1', 'PRESCRIBED_WORK_COMPLETION', 'PRESENT', NULL, 2)
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            INSERT INTO gate_evidence (
+                id, gateDefinitionId, evidenceType, enteredValue, selfAttestationStatus, recordedAtLocal
+            ) VALUES
+                ('ev-book', 'gate-1', 'BOOK_REVISION_SCORE', '1', 'SELF_ATTESTED', '2026-09-21T09:00'),
+                ('ev-anki', 'gate-1', 'ANKI_DROID_STATUS', 'MATURE', 'SELF_ATTESTED', '2026-09-21T09:00'),
+                ('ev-work', 'gate-1', 'PRESCRIBED_WORK_COMPLETION', 'recorded', 'USER_RECORDED', '2026-09-21T09:00')
+            """.trimIndent(),
+        )
+        val legacyOutcomes = listOf(
+            "c-book\tev-book\tSATISFIED",
+            "c-anki\tev-anki\tSATISFIED",
+            "c-work\tev-work\tSATISFIED",
+        ).joinToString(separator = "\n")
+        db.execSQL(
+            """
+            INSERT INTO gate_decisions (
+                id, gateDefinitionId, ruleVersion, evidenceIds, conditionOutcomes, status, evaluatedAtLocal
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """.trimIndent(),
+            arrayOf(
+                "dec-1",
+                "gate-1",
+                "1",
+                "ev-book,ev-anki,ev-work",
+                legacyOutcomes,
+                "SATISFIED",
+                "2026-09-21T09:03",
+            ),
+        )
+        MIGRATION_3_4.migrate(db)
+
+        val evidence = db.query("SELECT enteredValue FROM gate_evidence WHERE id = 'ev-book'")
+        evidence.moveToFirst()
+        assertEquals("1", evidence.getString(0))
+        evidence.close()
+
+        val gate = db.query("SELECT displayedRuleText, ruleVersion FROM gate_definitions WHERE id = 'gate-1'")
+        gate.moveToFirst()
+        assertEquals(displayedRuleText(defaultAdvancementRule()), gate.getString(0))
+        assertEquals("1", gate.getString(1))
+        gate.close()
+
+        val decision = db.query(
+            "SELECT ruleSnapshot, evidenceIds, conditionOutcomes, status FROM gate_decisions WHERE id = 'dec-1'",
+        )
+        decision.moveToFirst()
+        val snapshot = decision.getString(0)
+        val evidenceIds = parseEvidenceIds(decision.getString(1))
+        val outcomes = decodeConditionOutcomes(decision.getString(2))
+        assertEquals("SATISFIED", decision.getString(3))
+        decision.close()
+        assertEquals(listOf("ev-book", "ev-anki", "ev-work"), evidenceIds)
+        assertEquals(3, outcomes.size)
+        assertEquals(displayedRuleText(defaultAdvancementRule()), parseGateRuleSnapshot(snapshot)?.displayedRuleText)
+
+        val recorded = listOf(
+            RecordedEvidence("ev-book", GateEvidenceKind.BOOK_REVISION_SCORE, "1", "2026-09-21T09:00"),
+            RecordedEvidence("ev-anki", GateEvidenceKind.ANKI_DROID_STATUS, "MATURE", "2026-09-21T09:00"),
+            RecordedEvidence("ev-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, "recorded", "2026-09-21T09:00"),
+            RecordedEvidence("ev-later", GateEvidenceKind.BOOK_REVISION_SCORE, "0", "2026-09-21T10:00"),
+        )
+        val reproduced = reproduceDecision(snapshot, evidenceIds, recorded)
+        assertTrue(reproducedDecisionMatches(GateStatus.SATISFIED, outcomes, reproduced))
         helper.close()
     }
 }

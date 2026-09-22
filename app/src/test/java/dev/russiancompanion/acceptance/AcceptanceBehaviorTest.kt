@@ -33,7 +33,6 @@ import dev.russiancompanion.domain.gate.RecordedEvidence
 import dev.russiancompanion.domain.gate.defaultAdvancementRule
 import dev.russiancompanion.domain.gate.evaluateGate
 import dev.russiancompanion.domain.gate.remainingKinds
-import dev.russiancompanion.domain.gate.reproduceDecision
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import dev.russiancompanion.domain.plan.ActivityLogView
 import dev.russiancompanion.domain.plan.RecordedCategory
@@ -99,7 +98,7 @@ class AcceptanceBehaviorTest {
             RecordedEvidence("e-work", GateEvidenceKind.PRESCRIBED_WORK_COMPLETION, PRESENCE_RECORDED, "2026-09-21T09:00"),
         )
         val failing = evaluateGate(rule, low)
-        val passing = reproduceDecision(rule, high)
+        val passing = evaluateGate(rule, high)
         assertEquals(GateStatus.NOT_YET_SATISFIED, failing.status)
         assertEquals(listOf(GateEvidenceKind.BOOK_REVISION_SCORE), remainingKinds(failing, rule))
         assertEquals(GateStatus.SATISFIED, passing.status)
