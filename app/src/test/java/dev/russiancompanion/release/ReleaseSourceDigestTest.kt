@@ -21,12 +21,17 @@ class ReleaseSourceDigestTest {
         assertEquals("1.1.0", binding.versionName)
         assertEquals(3, binding.versionCode)
         assertEquals("dev.russiancompanion", binding.applicationId)
-        assertFalse(candidate!!.frozen)
-        assertEquals(null, candidate.sourceCommit)
-        assertEquals("NOT_FROZEN", candidate.artifact?.status)
-        assertEquals(null, recordedCandidateIdentity(candidate))
+        assertTrue(candidate!!.frozen)
+        assertEquals("3dcbea82be4d9a1d997d4a9c892d0231f55b871d", candidate.sourceCommit)
+        assertEquals("RECORDED", candidate.artifact?.status)
+        val recorded = recordedCandidateIdentity(candidate)
+        assertNotNull(recorded)
+        assertEquals("3dcbea82be4d9a1d997d4a9c892d0231f55b871d", recorded!!.sourceCommit)
+        assertEquals("33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016", recorded.apkSha256)
+        assertEquals(29277335L, recorded.apkBytes)
+        assertEquals("35765579094", recorded.runId)
         assertEquals("NOT_APPROVED", candidate.publicRelease)
-        assertTrue(
+        assertFalse(
             assessRepositoryRelease(root).blockers.contains(ReleaseBlocker.CANDIDATE_NOT_FROZEN),
         )
     }
