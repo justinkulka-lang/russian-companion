@@ -13,8 +13,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.plan.PlanUpdate
@@ -134,9 +138,15 @@ internal fun LogActivityScreen(
             label = { Text(stringResource(R.string.log_duration_label)) },
         )
         if (durationText.isBlank()) {
-            Text(stringResource(R.string.log_duration_required))
+            Text(
+                stringResource(R.string.log_duration_required),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
         } else if (!durationAccepted) {
-            Text(stringResource(R.string.log_duration_invalid))
+            Text(
+                stringResource(R.string.log_duration_invalid),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
         }
         TextButton(onClick = { completed = !completed }) {
             Text(stringResource(R.string.log_mark_completed))
@@ -153,7 +163,10 @@ internal fun LogActivityScreen(
             TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
         }
         if (failed) {
-            Text(stringResource(R.string.plan_not_saved))
+            Text(
+                stringResource(R.string.plan_not_saved),
+                modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+            )
             TextButton(
                 onClick = {
                     saveLog(

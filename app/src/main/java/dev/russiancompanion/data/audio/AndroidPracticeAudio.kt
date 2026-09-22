@@ -1,6 +1,9 @@
 package dev.russiancompanion.data.audio
 
 import android.content.Context
+import android.media.AudioAttributes
+import android.media.AudioFocusRequest
+import android.media.AudioManager
 import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Build
@@ -11,19 +14,46 @@ import java.util.UUID
 
 internal class AndroidPracticeAudio(
     private val context: Context,
+    private val audioManager: AudioManager = context.applicationContext
+        .getSystemService(Context.AUDIO_SERVICE) as AudioManager,
 ) : PracticeAudio {
     private val appContext: Context
         get() = context.applicationContext
     private var player: MediaPlayer? = null
     private var recorder: MediaRecorder? = null
     private var captureFile: File? = null
+    private var hasFocus: Boolean = false
+    private val packagedAssets: Set<String> by lazy { listPackagedAssets() }
+    private val focusListener = AudioManager.OnAudioFocusChangeListener { change ->
+        if (change == AudioManager.AUDIOFOCUS_LOSS ||
+            change == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
+            change == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK
+        ) {
+            releaseForBackground()
+        }
+    }
+    private val focusRequest: AudioFocusRequest = AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN)
+        .setAudioAttributes(
+            AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_MEDIA)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+                .build(),
+        )
+        .setOnAudioFocusChangeListener(focusListener)
+        .build()
 
     override fun modelPlayable(localAudioReference: String): Boolean {
+        if (localAudioReference.isBlank()) return false
+        if (localAudioReference in packagedAssets) return true
         return try {
             appContext.assets.open(localAudioReference).use { input -> input.read() >= 0 }
         } catch (_: IOException) {
             false
         }
+    }
+
+    override fun playableReferences(references: Collection<String>): Set<String> {
+        return references.filterTo(linkedSetOf(), ::modelPlayable)
     }
 
     override fun recordingReadable(localFileReference: String): Boolean {
@@ -32,6 +62,10 @@ internal class AndroidPracticeAudio(
     }
 
     override fun playModel(localAudioReference: String, onFinished: (Boolean) -> Unit) {
+        if (!requestFocus()) {
+            onFinished(false)
+            return
+        }
         val cached = cacheModel(localAudioReference)
         if (cached == null) {
             onFinished(false)
@@ -41,6 +75,10 @@ internal class AndroidPracticeAudio(
     }
 
     override fun playRecording(localFileReference: String, onFinished: (Boolean) -> Unit) {
+        if (!requestFocus()) {
+            onFinished(false)
+            return
+        }
         val file = recordingFile(localFileReference)
         if (!file.isFile || file.length() == 0L) {
             onFinished(false)
@@ -53,8 +91,15 @@ internal class AndroidPracticeAudio(
         releasePlayer()
     }
 
+    override fun releaseForBackground() {
+        stopCapture(keep = false)
+        stopPlayback()
+        abandonFocus()
+    }
+
     override fun startCapture(): String? {
         stopCapture(keep = false)
+        if (!requestFocus()) return null
         val directory = File(appContext.filesDir, RECORDINGS_DIR)
         if (!directory.exists() && !directory.mkdirs()) return null
         val file = File(directory, "${UUID.randomUUID()}.m4a")
@@ -99,6 +144,37 @@ internal class AndroidPracticeAudio(
             return null
         }
         return "$RECORDINGS_DIR/${file.name}"
+    }
+
+    override fun isCapturing(): Boolean = recorder != null
+
+    private fun requestFocus(): Boolean {
+        val granted = audioManager.requestAudioFocus(focusRequest) == AudioManager.AUDIOFOCUS_REQUEST_GRANTED
+        hasFocus = granted
+        return granted
+    }
+
+    private fun abandonFocus() {
+        if (!hasFocus) return
+        audioManager.abandonAudioFocusRequest(focusRequest)
+        hasFocus = false
+    }
+
+    private fun listPackagedAssets(): Set<String> {
+        return try {
+            listAssets("audio").toSet()
+        } catch (_: IOException) {
+            emptySet()
+        }
+    }
+
+    private fun listAssets(directory: String): List<String> {
+        val names = appContext.assets.list(directory) ?: return emptyList()
+        return names.flatMap { name ->
+            val path = "$directory/$name"
+            val children = appContext.assets.list(path)
+            if (children.isNullOrEmpty()) listOf(path) else listAssets(path)
+        }
     }
 
     private fun cacheModel(localAudioReference: String): File? {

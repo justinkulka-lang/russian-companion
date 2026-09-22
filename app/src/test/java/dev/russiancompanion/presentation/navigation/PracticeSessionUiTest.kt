@@ -146,6 +146,32 @@ class PracticeSessionUiTest {
         compose.onNodeWithText("Practice").performScrollTo().assertIsDisplayed()
     }
 
+    @Test
+    fun deniedMicrophoneAnnouncesAndDoesNotCapture() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(SeedJson.encode(practiceDocument()))
+        store.confirmLesson("segment-1", "2026-09-21")
+        val practiceAudio = PermissivePracticeAudio()
+        compose.setContent {
+            CompanionApp(
+                gateway = RoomNavigationGateway(store, { null }, practiceAudio),
+                onRetryOpen = {},
+                today = { "2026-09-21" },
+                recordedAt = { "2026-09-21T09:00" },
+                practiceAudio = practiceAudio,
+            )
+        }
+        click("Practice")
+        click("SOURCE_TEXT_TOKEN")
+        click("Play model")
+        click("Record")
+        compose.onNodeWithText(
+            "Recording cannot begin without microphone permission. Model playback remains available.",
+        ).performScrollTo().assertIsDisplayed()
+        assertEquals(0, store.recordings().size)
+    }
+
     private fun click(text: String) {
         compose.onNodeWithText(text).performScrollTo().performClick()
     }

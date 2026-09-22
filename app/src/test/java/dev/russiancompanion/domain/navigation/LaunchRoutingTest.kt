@@ -62,6 +62,30 @@ class LaunchRoutingTest {
         )
     }
 
+    @Test
+    fun routeNamesSelectScreenSpecificSurfaces() {
+        assertEquals(NavigationSurface.SHELL, navigationSurfaceFor(null))
+        assertEquals(NavigationSurface.SHELL, navigationSurfaceFor("HomeRoute"))
+        assertEquals(
+            NavigationSurface.PRACTICE,
+            navigationSurfaceFor("dev.russiancompanion.presentation.navigation.PracticeLibraryRoute"),
+        )
+        assertEquals(
+            NavigationSurface.PRACTICE,
+            navigationSurfaceFor("PracticeSessionRoute/{audioModelId}"),
+        )
+        assertEquals(
+            NavigationSurface.ATTRIBUTIONS,
+            navigationSurfaceFor("AttributionsRoute/{practiceAudioId}"),
+        )
+    }
+
+    @Test
+    fun pendingSnapshotDoesNotRouteToTheLocalDataProblem() {
+        assertEquals(LaunchDestination.ONBOARDING, launchDestination(NavigationSnapshot.pending()))
+        assertTrue(practiceLibraryAvailable(openSnapshot().copy(eligibleAudioCount = 1)))
+    }
+
     private fun openSnapshot(
         onboardingCompleted: Boolean = false,
         activeSegmentId: String? = null,

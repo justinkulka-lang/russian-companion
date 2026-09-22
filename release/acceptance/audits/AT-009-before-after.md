@@ -44,6 +44,6 @@ It does not list a share-alike confirmation blocker.
 
 After reviewing the before commit, the activation commit, and the
 after-activation assembleRelease log, copy a completed
-`release/acceptance/forms/AT-009.md` to `release/evidence/AT-009.txt`
+`release/acceptance/forms/AT-009.md` to `release/evidence/AT-009.json`
 together with the after-activation log. Do not mark AT-009 satisfied
 until that copy exists.

@@ -13,6 +13,8 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import dev.russiancompanion.R
 
@@ -30,7 +32,11 @@ internal fun ShellPage(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        Text(text = title, style = MaterialTheme.typography.headlineSmall)
+        Text(
+            text = title,
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier.semantics { heading() },
+        )
         if (onBack != null) {
             TextButton(onClick = onBack) { Text(stringResource(R.string.navigate_back)) }
         }

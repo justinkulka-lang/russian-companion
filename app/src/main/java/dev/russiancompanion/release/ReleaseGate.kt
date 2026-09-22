@@ -38,7 +38,12 @@ internal enum class ReleaseBlocker(val message: String) {
     LICENSE_NOTICES_NOT_PACKAGED("Required attribution or license notices are not packaged."),
     COMPLIANCE_PACKAGE_UNREADABLE("The share-alike compliance package is absent or contradicts the packaged catalog."),
     EVIDENCE_MANIFEST_UNREADABLE("The retained-evidence manifest is absent or unreadable."),
+    INSTALLATION_NOT_RETAINED("AT-001 installation and pathway evidence is not retained."),
+    NAVIGATION_NOT_RETAINED("AT-002 navigation evidence is not retained."),
     OFFLINE_VERIFICATION_NOT_RETAINED("AT-004 offline verification evidence is not retained."),
+    ATTRIBUTIONS_NOT_RETAINED("AT-008 attribution inventory evidence is not retained."),
+    DEVICE_GATE_NOT_RETAINED("AT-009 device release-gate evidence is not retained."),
+    CATALOG_LICENSE_NOT_RETAINED("AT-010 catalog license-match evidence is not retained."),
     REBOOT_EVIDENCE_NOT_RETAINED("AT-020 device reboot evidence is not retained."),
     LESSON_CYCLE_NOT_RETAINED("AT-030 lesson-cycle evidence is not retained."),
     OWNER_RELEASE_DECISION_NOT_RETAINED("AT-031 owner release decision is not retained."),
@@ -66,17 +71,51 @@ internal data class RetainedEvidenceRecord(
     val evidencePath: String? = null,
 )
 
+@Serializable
+internal data class ProcedureEvidenceDocument(
+    val schemaVersion: Int,
+    val procedure: String,
+    val result: String,
+    val candidateCommit: String,
+    val apkSha256: String,
+    val executedAt: String,
+    val deviceModel: String? = null,
+    val artifactHashes: Map<String, String> = emptyMap(),
+    val ownerDecision: String? = null,
+    val mandatoryProcedures: List<String> = emptyList(),
+)
+
 private val evidenceJson = Json {
     ignoreUnknownKeys = false
     explicitNulls = true
 }
 
-private val requiredProcedures = listOf(
+internal val REQUIRED_RELEASE_PROCEDURES = listOf(
+    "AT-001" to ReleaseBlocker.INSTALLATION_NOT_RETAINED,
+    "AT-002" to ReleaseBlocker.NAVIGATION_NOT_RETAINED,
     "AT-004" to ReleaseBlocker.OFFLINE_VERIFICATION_NOT_RETAINED,
+    "AT-008" to ReleaseBlocker.ATTRIBUTIONS_NOT_RETAINED,
+    "AT-009" to ReleaseBlocker.DEVICE_GATE_NOT_RETAINED,
+    "AT-010" to ReleaseBlocker.CATALOG_LICENSE_NOT_RETAINED,
     "AT-020" to ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED,
     "AT-030" to ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED,
     "AT-031" to ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
 )
+
+private val requiredProcedures = REQUIRED_RELEASE_PROCEDURES
+
+private val proceduresRequiringDevice = setOf(
+    "AT-001",
+    "AT-002",
+    "AT-004",
+    "AT-008",
+    "AT-009",
+    "AT-010",
+    "AT-020",
+    "AT-030",
+)
+
+private val proceduresBeforeOwnerDecision = REQUIRED_RELEASE_PROCEDURES.map { it.first }.filter { it != "AT-031" }
 
 internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
     val seedFile = File(repositoryRoot, "app/src/main/assets/content/bundled-content.json")
@@ -115,7 +154,17 @@ internal fun assessPackagedRelease(
 
 internal const val RELEASE_EVIDENCE_MANIFEST = "release/retained-evidence.json"
 
+internal const val RETAINED_EVIDENCE_SCHEMA_VERSION = 2
+
+internal const val PROCEDURE_EVIDENCE_SCHEMA_VERSION = 1
+
 private const val EVIDENCE_PATH_PREFIX = "release/evidence/"
+
+private val SHA256 = Regex("^[a-f0-9]{64}$")
+
+private val GIT_COMMIT = Regex("^[a-f0-9]{40}$")
+
+private val EXECUTED_AT = Regex("^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?$")
 
 fun main() {
     val workingDirectory = System.getProperty("user.dir")
@@ -382,24 +431,81 @@ private fun readEvidence(manifest: String?, repositoryRoot: File): EvidenceReadi
     } catch (_: IllegalArgumentException) {
         return EvidenceReading(readable = false, retained = emptySet())
     }
-    if (parsed.schemaVersion != 1) return EvidenceReading(readable = false, retained = emptySet())
+    if (parsed.schemaVersion != RETAINED_EVIDENCE_SCHEMA_VERSION) {
+        return EvidenceReading(readable = false, retained = emptySet())
+    }
     val procedures = parsed.records.map { it.procedure }
     if (procedures.size != procedures.toSet().size) {
         return EvidenceReading(readable = false, retained = emptySet())
     }
-    val retained = requiredProcedures.map { it.first }.filter { procedure ->
+    val independentlyRetained = requiredProcedures.map { it.first }.filter { procedure ->
+        if (procedure == "AT-031") return@filter false
         val record = parsed.records.firstOrNull { it.procedure == procedure } ?: return@filter false
-        isRetained(record, repositoryRoot)
+        isRetained(record, repositoryRoot, independentlyRetained = emptySet())
     }.toSet()
+    val retained = independentlyRetained.toMutableSet()
+    val owner = parsed.records.firstOrNull { it.procedure == "AT-031" }
+    if (owner != null && isRetained(owner, repositoryRoot, independentlyRetained)) {
+        retained += "AT-031"
+    }
+    val identities = retained.mapNotNull { procedure ->
+        val record = parsed.records.first { it.procedure == procedure }
+        readProcedureEvidence(record, repositoryRoot)?.let { procedure to it }
+    }
+    if (identities.isNotEmpty()) {
+        val commits = identities.map { it.second.candidateCommit }.toSet()
+        val hashes = identities.map { it.second.apkSha256 }.toSet()
+        if (commits.size != 1 || hashes.size != 1) {
+            return EvidenceReading(readable = true, retained = emptySet())
+        }
+    }
     return EvidenceReading(readable = true, retained = retained)
 }
 
-private fun isRetained(record: RetainedEvidenceRecord, repositoryRoot: File): Boolean {
+private fun isRetained(
+    record: RetainedEvidenceRecord,
+    repositoryRoot: File,
+    independentlyRetained: Set<String>,
+): Boolean {
     if (record.state != "RETAINED") return false
-    val relative = record.evidencePath ?: return false
-    if (!relative.startsWith(EVIDENCE_PATH_PREFIX)) return false
-    val file = resolveEvidenceFile(repositoryRoot, relative) ?: return false
-    return file.isFile && file.length() > 0L
+    val document = readProcedureEvidence(record, repositoryRoot) ?: return false
+    if (document.procedure != record.procedure) return false
+    if (document.result != "PASS") return false
+    if (!GIT_COMMIT.matches(document.candidateCommit)) return false
+    if (!SHA256.matches(document.apkSha256)) return false
+    if (!EXECUTED_AT.matches(document.executedAt)) return false
+    if (document.artifactHashes.isEmpty()) return false
+    if (document.artifactHashes.any { (name, hash) -> name.isBlank() || !SHA256.matches(hash) }) {
+        return false
+    }
+    if (record.procedure in proceduresRequiringDevice) {
+        if (document.deviceModel.isNullOrBlank()) return false
+    }
+    if (record.procedure == "AT-031") {
+        if (document.ownerDecision != "APPROVED") return false
+        if (document.mandatoryProcedures.toSet() != proceduresBeforeOwnerDecision.toSet()) return false
+        if (!independentlyRetained.containsAll(proceduresBeforeOwnerDecision)) return false
+    }
+    return true
+}
+
+private fun readProcedureEvidence(
+    record: RetainedEvidenceRecord,
+    repositoryRoot: File,
+): ProcedureEvidenceDocument? {
+    val relative = record.evidencePath ?: return null
+    if (!relative.startsWith(EVIDENCE_PATH_PREFIX)) return null
+    if (!relative.endsWith(".json")) return null
+    val file = resolveEvidenceFile(repositoryRoot, relative) ?: return null
+    if (!file.isFile || file.length() == 0L) return null
+    return try {
+        val parsed = evidenceJson.decodeFromString(ProcedureEvidenceDocument.serializer(), file.readText())
+        if (parsed.schemaVersion != PROCEDURE_EVIDENCE_SCHEMA_VERSION) null else parsed
+    } catch (_: SerializationException) {
+        null
+    } catch (_: IllegalArgumentException) {
+        null
+    }
 }
 
 private fun resolveEvidenceFile(repositoryRoot: File, relative: String): File? {

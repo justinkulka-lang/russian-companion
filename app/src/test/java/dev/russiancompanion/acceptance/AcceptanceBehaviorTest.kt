@@ -209,7 +209,7 @@ class AcceptanceBehaviorTest {
             completionState = CompletionState.NOT_COMPLETED,
         )
         var written = 0
-        val unread = RoomNavigationGateway(store, { null }, UnusedAudio()) { null }.exportLocal(
+        val unread = RoomNavigationGateway(store, { null }, UnusedAudio(), openRecording = { null }).exportLocal(
             object : OutputStream() {
                 override fun write(b: Int) {
                     written += 1
@@ -224,7 +224,12 @@ class AcceptanceBehaviorTest {
         assertEquals(ExportStatus.FAILED, store.exports().last().status)
         assertEquals(0, store.exports().last().recordingCount)
 
-        val interrupted = RoomNavigationGateway(store, { null }, UnusedAudio()) { byteArrayOf(1) }.exportLocal(
+        val interrupted = RoomNavigationGateway(
+            store,
+            { null },
+            UnusedAudio(),
+            openRecording = { byteArrayOf(1).inputStream() },
+        ).exportLocal(
             object : OutputStream() {
                 override fun write(b: Int) = throw IOException("no space")
                 override fun write(b: ByteArray) = throw IOException("no space")

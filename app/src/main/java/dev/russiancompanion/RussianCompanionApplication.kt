@@ -2,7 +2,7 @@ package dev.russiancompanion
 
 import android.app.Application
 import dev.russiancompanion.data.audio.AndroidPracticeAudio
-import dev.russiancompanion.data.export.readAppRecording
+import dev.russiancompanion.data.export.openAppRecording
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
 import dev.russiancompanion.domain.navigation.NavigationGateway
@@ -28,7 +28,7 @@ class RussianCompanionApplication : Application() {
             store,
             { LocalStore.readPackagedSeed(this) },
             practiceAudio,
-            readRecordingBytes = { reference -> readAppRecording(this, reference) },
+            openRecording = { reference -> openAppRecording(this, reference) },
             readCatalogNotice = { LocalStore.readPackagedCatalogNotice(this) },
             readLicenseNotices = { LocalStore.readPackagedLicenseNotices(this) },
         )

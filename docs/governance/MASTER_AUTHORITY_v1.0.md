@@ -280,3 +280,18 @@ This document governs required product outcomes for v1. It does not prescribe fu
 ## Authority Confirmation
 
 Every requirement in this Master Authority traces to `PRODUCT_BRIEF_v1.1.md`. No requirement depends on an unfunded content-authoring role.
+
+## Clerical Erratum
+
+**Status:** non-normative correction of identical duplicated lines.
+
+`MA-032` and `MA-078` each appear once in the numbered requirements
+above. If any copy of this file contained a second, identical line for
+either identifier, that duplicate is a clerical transcription error. It
+does not create a second requirement, a conflict, or a change of
+scope. The governing text remains the first occurrence of each
+identifier:
+
+- **MA-032.** Every bundled content asset shall have its modification status recorded.
+- **MA-078.** A local-file export shall include the user's recordings.
+

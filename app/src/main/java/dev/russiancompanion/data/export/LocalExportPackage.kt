@@ -59,13 +59,13 @@ internal data class ExportAudio(
     val markedForTutorReview: Boolean,
     val completionState: String,
     val fileName: String,
-    val bytes: ByteArray?,
+    val openStream: () -> java.io.InputStream?,
     val activityLogId: String? = null,
 )
 
 internal sealed interface BuiltPackage {
     class Ready(
-        val bytes: ByteArray,
+        val bytes: ByteArray? = null,
         val logCount: Int,
         val evidenceCount: Int,
         val decisionCount: Int,
@@ -84,8 +84,33 @@ internal fun buildExportZip(
     progress: List<ExportProgressRow>,
     recordings: List<ExportAudio>,
 ): BuiltPackage {
-    val missing = recordings.firstOrNull { it.bytes == null || it.bytes.isEmpty() }
-    if (missing != null) return BuiltPackage.RecordingUnreadable(missing.id)
+    val output = ByteArrayOutputStream()
+    return when (val written = writeExportZip(logs, evidence, decisions, progress, recordings, output)) {
+        is BuiltPackage.Ready -> BuiltPackage.Ready(
+            bytes = output.toByteArray(),
+            logCount = written.logCount,
+            evidenceCount = written.evidenceCount,
+            decisionCount = written.decisionCount,
+            progressCount = written.progressCount,
+            recordingCount = written.recordingCount,
+            empty = written.empty,
+        )
+        is BuiltPackage.RecordingUnreadable -> written
+    }
+}
+
+internal fun writeExportZip(
+    logs: List<ExportLogRow>,
+    evidence: List<ExportEvidenceRow>,
+    decisions: List<ExportDecisionRow>,
+    progress: List<ExportProgressRow>,
+    recordings: List<ExportAudio>,
+    destination: java.io.OutputStream,
+): BuiltPackage {
+    for (recording in recordings) {
+        val readable = recording.openStream()?.use { stream -> stream.read() >= 0 } ?: false
+        if (!readable) return BuiltPackage.RecordingUnreadable(recording.id)
+    }
     val files = mutableListOf(
         "manifest.json",
         "activity-logs.csv",
@@ -105,8 +130,7 @@ internal fun buildExportZip(
         recordingCount = recordings.size,
         files = files,
     )
-    val output = ByteArrayOutputStream()
-    ZipOutputStream(output).use { zip ->
+    ZipOutputStream(destination).use { zip ->
         putText(zip, "manifest.json", manifestJson.encodeToString(manifest))
         putText(zip, "activity-logs.csv", logsCsv(logs))
         putText(zip, "gate-evidence.csv", evidenceCsv(evidence))
@@ -114,14 +138,14 @@ internal fun buildExportZip(
         putText(zip, "progress.csv", progressCsv(progress))
         putText(zip, "recordings.csv", recordingsCsv(recordings))
         recordings.forEach { recording ->
-            val bytes = recording.bytes ?: return BuiltPackage.RecordingUnreadable(recording.id)
+            val input = recording.openStream() ?: return BuiltPackage.RecordingUnreadable(recording.id)
             zip.putNextEntry(ZipEntry(recording.fileName))
-            zip.write(bytes)
+            input.use { stream -> stream.copyTo(zip) }
             zip.closeEntry()
         }
+        zip.finish()
     }
     return BuiltPackage.Ready(
-        bytes = output.toByteArray(),
         logCount = logs.size,
         evidenceCount = evidence.size,
         decisionCount = decisions.size,
@@ -138,6 +162,10 @@ internal fun exportAudioName(recordingId: String, localFileReference: String): S
 }
 
 internal fun readAppRecording(context: Context, reference: String): ByteArray? {
+    return openAppRecording(context, reference)?.use { it.readBytes() }
+}
+
+internal fun openAppRecording(context: Context, reference: String): java.io.InputStream? {
     if (reference.isBlank() || reference.contains("..") || reference.startsWith("/")) return null
     return try {
         val root = context.filesDir.canonicalFile
@@ -145,7 +173,7 @@ internal fun readAppRecording(context: Context, reference: String): ByteArray? {
         val rootPath = root.path + File.separator
         if (!target.path.startsWith(rootPath)) return null
         if (!target.isFile || target.length() == 0L) return null
-        target.readBytes()
+        target.inputStream()
     } catch (_: IOException) {
         null
     }

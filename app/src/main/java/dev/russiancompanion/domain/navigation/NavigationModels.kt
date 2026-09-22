@@ -80,6 +80,7 @@ internal data class NavigationSnapshot(
     val recordings: List<RecordingOption> = emptyList(),
     val gates: List<GateOption>,
     val eligibleDrillCount: Int,
+    val eligibleAudioCount: Int = 0,
     val attributions: List<AttributionOption>,
     val assetRecords: List<AssetInventoryOption> = emptyList(),
     val shareAlikeBlocksRelease: Boolean = false,
@@ -106,6 +107,10 @@ internal data class NavigationSnapshot(
                 eligibleDrillCount = 0,
                 attributions = emptyList(),
             )
+        }
+
+        fun pending(): NavigationSnapshot {
+            return closed().copy(localDataOpen = true)
         }
     }
 }

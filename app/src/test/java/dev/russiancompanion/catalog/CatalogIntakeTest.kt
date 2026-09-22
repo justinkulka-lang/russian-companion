@@ -271,7 +271,17 @@ class CatalogIntakeTest {
         val retained = Json.parseToJsonElement(File(root, RELEASE_EVIDENCE_MANIFEST).readText()).jsonObject
         val retainedStates = retained.getValue("records").jsonArray.map { it.jsonObject }
         assertEquals(
-            listOf("AT-004", "AT-020", "AT-030", "AT-031"),
+            listOf(
+                "AT-001",
+                "AT-002",
+                "AT-004",
+                "AT-008",
+                "AT-009",
+                "AT-010",
+                "AT-020",
+                "AT-030",
+                "AT-031",
+            ),
             retainedStates.map { it.getValue("procedure").jsonPrimitive.content },
         )
         retainedStates.forEach { record -> assertEquals("MISSING", record.getValue("state").jsonPrimitive.content) }

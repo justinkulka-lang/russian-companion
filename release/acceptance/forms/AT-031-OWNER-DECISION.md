@@ -41,7 +41,7 @@ Date:
 Decision (leave unset):  
 
 Only the Product Owner may later copy a completed decision to
-`release/evidence/AT-031.txt` and, if every mandatory condition
+`release/evidence/AT-031.json` and, if every mandatory condition
 passed, change that manifest record from MISSING to RETAINED.
 
 This form is not retained evidence and is not a release approval.

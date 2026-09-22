@@ -7,7 +7,7 @@ import dev.russiancompanion.domain.progress.ExportUpdate
 import java.io.OutputStream
 
 internal fun practiceLibraryAvailable(snapshot: NavigationSnapshot): Boolean {
-    return snapshot.audio.isNotEmpty()
+    return snapshot.audio.isNotEmpty() || snapshot.eligibleAudioCount > 0
 }
 
 internal fun practicePlayable(snapshot: NavigationSnapshot): Boolean {
@@ -50,8 +50,28 @@ internal fun activeLessonHasPlan(snapshot: NavigationSnapshot): Boolean {
     return snapshot.lessons.any { it.id == segmentId && it.planCount > 0 }
 }
 
+internal enum class NavigationSurface {
+    SHELL,
+    PRACTICE,
+    ATTRIBUTIONS,
+    FULL,
+}
+
+internal fun navigationSurfaceFor(route: String?): NavigationSurface {
+    val value = route.orEmpty()
+    return when {
+        value.contains("AttributionsRoute") -> NavigationSurface.ATTRIBUTIONS
+        value.contains("PracticeLibraryRoute") || value.contains("PracticeSessionRoute") -> {
+            NavigationSurface.PRACTICE
+        }
+        else -> NavigationSurface.SHELL
+    }
+}
+
 internal interface NavigationGateway {
     fun current(localDate: String): NavigationSnapshot
+
+    fun snapshot(localDate: String, surface: NavigationSurface): NavigationSnapshot = current(localDate)
 
     fun confirmLesson(segmentId: String, localDate: String)
 

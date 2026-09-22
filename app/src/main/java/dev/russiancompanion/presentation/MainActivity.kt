@@ -23,4 +23,10 @@ class MainActivity : ComponentActivity() {
             )
         }
     }
+
+    override fun onStop() {
+        super.onStop()
+        val app = application as RussianCompanionApplication
+        app.practiceAudio.releaseForBackground()
+    }
 }

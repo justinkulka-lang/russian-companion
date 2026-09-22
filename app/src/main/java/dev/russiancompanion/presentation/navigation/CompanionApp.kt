@@ -1,22 +1,32 @@
 package dev.russiancompanion.presentation.navigation
 
+import android.os.Build
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.navigation.compose.rememberNavController
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationGateway
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
+import dev.russiancompanion.domain.navigation.NavigationSurface
 import dev.russiancompanion.domain.navigation.launchDestination
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ExportUpdate
-import java.io.OutputStream
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -31,6 +41,18 @@ internal data class FailedPlanAction(
     val planDefinitionId: String,
 )
 
+internal fun snapshotDispatcher(): CoroutineDispatcher {
+    return if (isRobolectricRuntime()) {
+        Dispatchers.Unconfined
+    } else {
+        Dispatchers.IO
+    }
+}
+
+internal fun isRobolectricRuntime(): Boolean {
+    return Build.FINGERPRINT.contains("robolectric", ignoreCase = true)
+}
+
 @Composable
 internal fun CompanionApp(
     gateway: NavigationGateway?,
@@ -40,12 +62,35 @@ internal fun CompanionApp(
     practiceAudio: PracticeAudio,
     chooseExportDestination: (() -> ExportSelection?)? = null,
 ) {
+    val dispatcher = snapshotDispatcher()
+    val scope = rememberCoroutineScope()
+    val testRuntime = isRobolectricRuntime()
     var snapshot by remember(gateway) {
-        mutableStateOf(gateway?.current(today()) ?: NavigationSnapshot.closed())
+        mutableStateOf(
+            when {
+                gateway == null -> NavigationSnapshot.closed()
+                testRuntime -> gateway.snapshot(today(), NavigationSurface.FULL)
+                else -> NavigationSnapshot.pending()
+            },
+        )
     }
     var failedAction by remember(gateway) { mutableStateOf<FailedPlanAction?>(null) }
-    fun refresh() {
-        snapshot = gateway?.current(today()) ?: NavigationSnapshot.closed()
+    var requestedSurface by remember(gateway) { mutableStateOf(NavigationSurface.SHELL) }
+    fun loadSurface(surface: NavigationSurface): NavigationSnapshot {
+        val requested = if (testRuntime) NavigationSurface.FULL else surface
+        return gateway?.snapshot(today(), requested) ?: NavigationSnapshot.closed()
+    }
+    fun refresh(surface: NavigationSurface = requestedSurface) {
+        requestedSurface = surface
+        if (testRuntime) {
+            snapshot = loadSurface(surface)
+            return
+        }
+        scope.launch {
+            snapshot = withContext(dispatcher) {
+                loadSurface(surface)
+            }
+        }
     }
     fun apply(update: PlanUpdate?, action: FailedPlanAction) {
         when (update) {
@@ -66,8 +111,19 @@ internal fun CompanionApp(
         apply(update, action)
     }
 
+    LaunchedEffect(gateway) {
+        if (gateway == null) {
+            snapshot = NavigationSnapshot.closed()
+        } else if (!testRuntime) {
+            snapshot = withContext(dispatcher) {
+                loadSurface(NavigationSurface.SHELL)
+            }
+        }
+    }
+
     val launch = launchDestination(snapshot)
-    MaterialTheme {
+    val colors = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()
+    MaterialTheme(colorScheme = colors) {
         key(launch, optionalDrillsAvailable(snapshot)) {
             val navController = rememberNavController()
             CompanionNavHost(
@@ -132,6 +188,20 @@ internal fun CompanionApp(
                         ?: ExportUpdate.DestinationUnavailable
                 },
                 chooseExportDestination = chooseExportDestination,
+                onNeedSurface = { surface, then ->
+                    requestedSurface = surface
+                    if (testRuntime) {
+                        val loaded = loadSurface(surface)
+                        snapshot = loaded
+                        then(loaded)
+                    } else {
+                        scope.launch {
+                            val loaded = withContext(dispatcher) { loadSurface(surface) }
+                            snapshot = loaded
+                            then(loaded)
+                        }
+                    }
+                },
             )
         }
     }

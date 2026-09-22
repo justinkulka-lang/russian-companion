@@ -10,7 +10,11 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.KeyboardType
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.gate.AnkiStatusValue
@@ -182,6 +186,7 @@ private fun ConditionBlock(
             OutlinedTextField(
                 value = draft,
                 onValueChange = onDraft,
+                label = { Text(stringResource(R.string.gate_book_label)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
@@ -206,7 +211,10 @@ private fun ConditionBlock(
         }
     }
     if (invalid) {
-        Text(stringResource(R.string.gate_field_invalid))
+        Text(
+            stringResource(R.string.gate_field_invalid),
+            modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
+        )
     }
 }
 

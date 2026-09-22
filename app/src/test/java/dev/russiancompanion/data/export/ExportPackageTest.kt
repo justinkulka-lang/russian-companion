@@ -61,7 +61,7 @@ class ExportPackageTest {
                     markedForTutorReview = true,
                     completionState = "COMPLETED",
                     fileName = "recordings/rec-1.m4a",
-                    bytes = audioA,
+                    openStream = { audioA.inputStream() },
                     activityLogId = "log-9",
                 ),
                 ExportAudio(
@@ -71,7 +71,7 @@ class ExportPackageTest {
                     markedForTutorReview = false,
                     completionState = "NOT_COMPLETED",
                     fileName = "recordings/rec-2.m4a",
-                    bytes = audioB,
+                    openStream = { audioB.inputStream() },
                     activityLogId = null,
                 ),
             ),
@@ -80,7 +80,7 @@ class ExportPackageTest {
         assertFalse(ready.empty)
         assertEquals(1, ready.exportVersionOrNull())
         val copy = File.createTempFile("export-copy", ".zip")
-        copy.writeBytes(ready.bytes)
+        copy.writeBytes(checkNotNull(ready.bytes))
         ZipFile(copy).use { zip ->
             val manifest = zip.readText("manifest.json")
             val decoded = Json.decodeFromString<ExportManifest>(manifest)
@@ -143,7 +143,7 @@ class ExportPackageTest {
             recordings = emptyList(),
         ) as BuiltPackage.Ready
         assertTrue(ready.empty)
-        ZipFile(bytesFile(ready.bytes)).use { zip ->
+        ZipFile(bytesFile(checkNotNull(ready.bytes))).use { zip ->
             val manifest = Json.decodeFromString<ExportManifest>(zip.readText("manifest.json"))
             assertTrue(manifest.empty)
             assertEquals(1, manifest.progressCount)
@@ -162,6 +162,51 @@ class ExportPackageTest {
         assertEquals("recordings/rec-1.m4a", exportAudioName("rec-1", "clip.not-an-ext"))
     }
 
+    @Test
+    fun largeRecordingsStreamToTheDestinationWithoutACompleteInMemoryCopy() {
+        val recording = File.createTempFile("large-recording", ".bin")
+        recording.writeBytes(ByteArray(2 * 1024 * 1024) { 7 })
+        val destination = File.createTempFile("large-export", ".zip")
+        destination.outputStream().use { output ->
+            val built = writeExportZip(
+                logs = emptyList(),
+                evidence = emptyList(),
+                decisions = emptyList(),
+                progress = emptyList(),
+                recordings = listOf(
+                    ExportAudio(
+                        id = "rec-large",
+                        audioModelId = "audio-1",
+                        createdAtLocal = "2026-09-21T09:00",
+                        markedForTutorReview = false,
+                        completionState = "NOT_COMPLETED",
+                        fileName = "recordings/rec-large.bin",
+                        openStream = { recording.inputStream() },
+                    ),
+                ),
+                destination = output,
+            ) as BuiltPackage.Ready
+            assertEquals(null, built.bytes)
+            assertEquals(1, built.recordingCount)
+        }
+        ZipFile(destination).use { zip ->
+            val entry = zip.getEntry("recordings/rec-large.bin")
+            assertEquals(recording.length(), entry.size)
+            zip.getInputStream(entry).use { input ->
+                var remaining = recording.length()
+                val buffer = ByteArray(8192)
+                while (remaining > 0) {
+                    val read = input.read(buffer)
+                    assertTrue(read > 0)
+                    remaining -= read
+                    assertTrue(buffer.take(read).all { it == 7.toByte() })
+                }
+            }
+        }
+        recording.delete()
+        destination.delete()
+    }
+
     private fun audio(id: String, bytes: ByteArray?): ExportAudio {
         return ExportAudio(
             id = id,
@@ -170,7 +215,13 @@ class ExportPackageTest {
             markedForTutorReview = false,
             completionState = "NOT_COMPLETED",
             fileName = "recordings/$id.m4a",
-            bytes = bytes,
+            openStream = {
+                when {
+                    bytes == null -> null
+                    bytes.isEmpty() -> byteArrayOf().inputStream()
+                    else -> bytes.inputStream()
+                }
+            },
         )
     }
 
@@ -182,7 +233,7 @@ class ExportPackageTest {
     }
 
     private fun BuiltPackage.Ready.exportVersionOrNull(): Int {
-        return ZipFile(bytesFile(bytes)).use { zip ->
+        return ZipFile(bytesFile(checkNotNull(bytes))).use { zip ->
             Json.decodeFromString<ExportManifest>(zip.readText("manifest.json")).exportVersion
         }
     }

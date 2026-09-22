@@ -196,6 +196,7 @@ internal data class OptionalDrillDefinitionEntity(
 internal data class BundledSeedStateEntity(
     @PrimaryKey val id: Int = SINGLETON_ID,
     val contentVersion: Int,
+    val contentHash: String = "",
 ) {
     companion object {
         const val SINGLETON_ID = 1

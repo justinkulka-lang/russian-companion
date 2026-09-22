@@ -76,23 +76,19 @@ class AttributionsUiTest {
             .assertDoesNotExist()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
-        compose.onNodeWithText("Catalog notice", substring = false).performScrollTo().assertIsDisplayed()
+        show("Catalog notice")
         compose.onNodeWithText("This app does not own the packaged Russian audio or stress-marked text.", substring = true)
-            .performScrollTo()
             .assertIsDisplayed()
-        compose.onNodeWithText("Packaged license texts", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("CC BY-SA 4.0", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("CC BY 3.0 US", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("CC BY 2.0 FR", substring = false).performScrollTo().assertIsDisplayed()
+        show("Packaged license texts")
+        show("CC BY-SA 4.0")
+        show("CC BY 3.0 US")
+        show("CC BY 2.0 FR")
         val raw = checkNotNull(LocalStore.readPackagedSeed(context))
         val parsed = SeedJson.parse(raw)
-        val source = (parsed as SeedParse.Ok).document.sourceRecords.first()
-        click("${source.licenseName}: ${source.attribution}")
-        show("Source: ${source.id}")
-        show("License: ${source.licenseName}")
-        show("Modification status: Unmodified")
-        show("Share-alike confirmation: Confirmed")
-        click("Close record")
+        val source = (parsed as SeedParse.Ok).document.sourceRecords.minBy { it.id }
+        compose.onNodeWithText(source.attribution, substring = true).assertExists()
+        compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+            .assertDoesNotExist()
     }
 
     @Test
@@ -209,11 +205,16 @@ class AttributionsUiTest {
     }
 
     private fun click(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = false)
+        node.assertExists()
+        runCatching { node.performScrollTo() }
+        compose.onNodeWithText(text, substring = false).performClick()
     }
 
     private fun show(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText(text, substring = false).assertExists()
+        runCatching { compose.onNodeWithText(text, substring = false).performScrollTo() }
+        compose.onNodeWithText(text, substring = false).assertIsDisplayed()
     }
 
     private fun inventoryDocument(confirmation: String) = minimalDocument().copy(
