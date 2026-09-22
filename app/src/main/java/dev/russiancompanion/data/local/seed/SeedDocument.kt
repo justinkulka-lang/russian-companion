@@ -21,6 +21,7 @@ internal data class BundledSeedDocument(
 internal data class CourseSegmentSeed(
     val id: String,
     val lessonReference: String,
+    val lessonNumber: Int,
     val sortOrder: Int,
 )
 
@@ -32,6 +33,8 @@ internal data class PlanDefinitionSeed(
     val instruction: String,
     val sortOrder: Int,
     val required: Boolean,
+    val lessonNumber: Int? = null,
+    val audioModelIds: List<String> = emptyList(),
 )
 
 @Serializable

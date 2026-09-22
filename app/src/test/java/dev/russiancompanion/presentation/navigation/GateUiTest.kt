@@ -127,6 +127,7 @@ class GateUiTest {
                 instruction = "Use your copy of the book for this lesson",
                 sortOrder = 1,
                 required = true,
+                lessonNumber = 1,
             ),
         ),
         gateDefinitions = listOf(

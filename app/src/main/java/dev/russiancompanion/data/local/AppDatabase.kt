@@ -25,7 +25,7 @@ import androidx.room.TypeConverters
         GateDecisionEntity::class,
         ExportRecordEntity::class,
     ],
-    version = 2,
+    version = 3,
     exportSchema = true,
 )
 @TypeConverters(StoredValueConverters::class)

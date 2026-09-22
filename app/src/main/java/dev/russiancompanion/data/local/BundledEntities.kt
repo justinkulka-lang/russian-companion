@@ -9,6 +9,7 @@ import androidx.room.PrimaryKey
 internal data class CourseSegmentEntity(
     @PrimaryKey val id: String,
     val lessonReference: String,
+    val lessonNumber: Int,
     val sortOrder: Int,
     val eligibilityStatus: EligibilityStatus,
 )
@@ -32,6 +33,8 @@ internal data class PlanDefinitionEntity(
     val instruction: String,
     val sortOrder: Int,
     val required: Boolean,
+    val lessonNumber: Int?,
+    val audioModelIds: List<String>,
     val eligibilityStatus: EligibilityStatus,
 )
 

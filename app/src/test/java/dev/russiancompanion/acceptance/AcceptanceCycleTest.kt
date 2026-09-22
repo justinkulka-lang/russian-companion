@@ -223,6 +223,7 @@ class AcceptanceCycleTest {
                 instruction = "Use your copy of the book for this lesson",
                 sortOrder = 1,
                 required = true,
+                lessonNumber = 1,
             ),
             PlanDefinitionSeed(
                 id = "plan-anki",
@@ -231,6 +232,7 @@ class AcceptanceCycleTest {
                 instruction = "Do the assigned AnkiDroid work",
                 sortOrder = 2,
                 required = true,
+                lessonNumber = 1,
             ),
             PlanDefinitionSeed(
                 id = "plan-listen",
@@ -239,6 +241,7 @@ class AcceptanceCycleTest {
                 instruction = "Listen to the licensed model",
                 sortOrder = 3,
                 required = true,
+                audioModelIds = listOf("audio-1"),
             ),
             PlanDefinitionSeed(
                 id = "plan-tutor",

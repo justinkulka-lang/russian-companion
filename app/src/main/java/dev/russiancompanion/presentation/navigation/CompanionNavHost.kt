@@ -25,6 +25,7 @@ import dev.russiancompanion.domain.plan.ChecklistItem
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.plan.PlanUpdate
 import dev.russiancompanion.domain.plan.RecordedCategory
+import dev.russiancompanion.domain.pathway.firstPrescribedPlayable
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ExportUpdate
 import java.io.OutputStream
@@ -92,7 +93,7 @@ internal fun CompanionNavHost(
                 saveFailed = saveFailed,
                 onHome = onHome,
                 onPractice = { navController.navigate(PracticeLibraryRoute) },
-                onStartPractice = { openPractice(navController, snapshot) },
+                onStartPractice = { item -> openPrescribedPractice(navController, snapshot, item.audioModelIds) },
                 onProgress = { navController.navigate(ProgressRoute) },
                 onSelectLesson = { navController.navigate(OnboardingRoute) },
                 onComplete = onCompleteItem,
@@ -221,10 +222,20 @@ private fun beginPlanItem(
     item: ChecklistItem,
 ) {
     if (item.activity == ChecklistActivity.LISTEN_RECORD_COMPARE) {
-        openPractice(navController, snapshot)
+        openPrescribedPractice(navController, snapshot, item.audioModelIds)
     } else {
         navController.navigate(TodaysPlanRoute)
     }
+}
+
+private fun openPrescribedPractice(
+    navController: NavHostController,
+    snapshot: NavigationSnapshot,
+    prescribedAudioModelIds: List<String>,
+) {
+    val playableIds = snapshot.audio.filter { it.playable }.map { it.id }.toSet()
+    val first = firstPrescribedPlayable(prescribedAudioModelIds, playableIds) ?: return
+    navController.navigate(PracticeSessionRoute(first))
 }
 
 private fun openPractice(navController: NavHostController, snapshot: NavigationSnapshot) {
@@ -345,7 +356,7 @@ private fun TodaysPlanScreen(
     saveFailed: Boolean,
     onHome: (() -> Unit)?,
     onPractice: () -> Unit,
-    onStartPractice: () -> Unit,
+    onStartPractice: (ChecklistItem) -> Unit,
     onProgress: () -> Unit,
     onSelectLesson: () -> Unit,
     onComplete: (String) -> Unit,

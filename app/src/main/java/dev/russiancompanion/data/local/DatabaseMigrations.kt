@@ -59,3 +59,39 @@ internal val MIGRATION_1_2 = object : Migration(1, 2) {
         )
     }
 }
+
+/**
+ * Adds pathway lesson numbers and prescribed audio-model IDs on plan definitions.
+ * User logs, recordings, evidence, decisions, and exports are kept. Legacy
+ * segments receive lessonNumber 0, which is outside the 1–30 arc, so those
+ * segments and their plan definitions become ineligible until a valid packaged
+ * definition replaces them.
+ */
+internal val MIGRATION_2_3 = object : Migration(2, 3) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "ALTER TABLE `course_segments` ADD COLUMN `lessonNumber` INTEGER NOT NULL DEFAULT 0",
+        )
+        db.execSQL("ALTER TABLE `plan_definitions` ADD COLUMN `lessonNumber` INTEGER")
+        db.execSQL(
+            "ALTER TABLE `plan_definitions` ADD COLUMN `audioModelIds` TEXT NOT NULL DEFAULT ''",
+        )
+        db.execSQL(
+            """
+            UPDATE `course_segments`
+            SET `eligibilityStatus` = 'EXCLUDED'
+            WHERE `lessonNumber` < 1 OR `lessonNumber` > 30
+            """.trimIndent(),
+        )
+        db.execSQL(
+            """
+            UPDATE `plan_definitions`
+            SET `eligibilityStatus` = 'EXCLUDED'
+            WHERE `segmentId` IN (
+                SELECT `id` FROM `course_segments`
+                WHERE `lessonNumber` < 1 OR `lessonNumber` > 30
+            )
+            """.trimIndent(),
+        )
+    }
+}

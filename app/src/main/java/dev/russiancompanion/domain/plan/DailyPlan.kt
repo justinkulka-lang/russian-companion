@@ -30,6 +30,8 @@ internal data class ChecklistItem(
     val sortOrder: Int,
     val required: Boolean,
     val completed: Boolean,
+    val lessonNumber: Int? = null,
+    val audioModelIds: List<String> = emptyList(),
 )
 
 internal data class DailyPlan(
@@ -62,6 +64,8 @@ internal data class PlanDefinitionView(
     val instruction: String,
     val sortOrder: Int,
     val required: Boolean,
+    val lessonNumber: Int? = null,
+    val audioModelIds: List<String> = emptyList(),
 )
 
 internal data class PlanInstanceView(
@@ -89,6 +93,8 @@ internal fun assembleDailyPlan(
             sortOrder = definition.sortOrder,
             required = definition.required,
             completed = instance?.completed == true,
+            lessonNumber = definition.lessonNumber,
+            audioModelIds = definition.audioModelIds,
         )
     }
     val addable = ordered.filter { definition ->
@@ -103,6 +109,8 @@ internal fun assembleDailyPlan(
             sortOrder = definition.sortOrder,
             required = definition.required,
             completed = false,
+            lessonNumber = definition.lessonNumber,
+            audioModelIds = definition.audioModelIds,
         )
     }
     return DailyPlan(items, addable)

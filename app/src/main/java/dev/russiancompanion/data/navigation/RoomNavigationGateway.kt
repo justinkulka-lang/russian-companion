@@ -174,6 +174,8 @@ internal class RoomNavigationGateway(
                         instruction = plan.instruction,
                         sortOrder = plan.sortOrder,
                         required = plan.required,
+                        lessonNumber = plan.lessonNumber,
+                        audioModelIds = plan.audioModelIds,
                     )
                 },
                 instances = instances,
