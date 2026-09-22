@@ -8,7 +8,7 @@ import java.security.MessageDigest
 
 internal const val ACCEPTANCE_CANDIDATE_PATH = "release/acceptance/candidate.json"
 
-internal const val CANDIDATE_SCHEMA_VERSION = 3
+internal const val CANDIDATE_SCHEMA_VERSION = 4
 
 private val includedRoots = listOf(
     "app/src/main",
@@ -23,6 +23,8 @@ private val includedRoots = listOf(
     "docs/governance",
     "docs/design",
     ".github/workflows",
+    "release/acceptance/DEVICE_ACCEPTANCE.md",
+    "release/acceptance/templates",
 )
 
 internal data class ReleaseBinding(
@@ -30,6 +32,13 @@ internal data class ReleaseBinding(
     val applicationId: String,
     val versionName: String,
     val versionCode: Int,
+)
+
+internal data class FrozenCandidateIdentity(
+    val sourceCommit: String,
+    val apkSha256: String,
+    val apkBytes: Long,
+    val runId: String,
 )
 
 @Serializable
@@ -41,6 +50,17 @@ internal data class AcceptanceCandidateDocument(
     val sourceDigest: String,
     val publicRelease: String,
     val frozen: Boolean = false,
+    val sourceCommit: String? = null,
+    val artifact: CandidateArtifactIdentity? = null,
+)
+
+@Serializable
+internal data class CandidateArtifactIdentity(
+    val status: String,
+    val sha256: String? = null,
+    val apkBytes: Long? = null,
+    val runId: String? = null,
+    val runUrl: String? = null,
 )
 
 private val candidateJson = Json {
@@ -100,6 +120,25 @@ internal fun candidateMatchesBinding(
         candidate.versionName == binding.versionName &&
         candidate.versionCode == binding.versionCode &&
         SHA256.matches(candidate.sourceDigest)
+}
+
+internal fun recordedCandidateIdentity(candidate: AcceptanceCandidateDocument?): FrozenCandidateIdentity? {
+    if (candidate == null || !candidate.frozen) return null
+    val commit = candidate.sourceCommit ?: return null
+    val artifact = candidate.artifact ?: return null
+    val sha256 = artifact.sha256 ?: return null
+    val apkBytes = artifact.apkBytes ?: return null
+    val runId = artifact.runId?.trim().orEmpty()
+    if (artifact.status != "RECORDED") return null
+    if (!GIT_COMMIT.matches(commit)) return null
+    if (!SHA256.matches(sha256)) return null
+    if (apkBytes <= 0L || runId.isBlank()) return null
+    return FrozenCandidateIdentity(
+        sourceCommit = commit,
+        apkSha256 = sha256,
+        apkBytes = apkBytes,
+        runId = runId,
+    )
 }
 
 internal fun computeReleaseSourceDigest(
@@ -186,3 +225,5 @@ private fun hex(bytes: ByteArray): String {
 }
 
 internal val SHA256 = Regex("^[a-f0-9]{64}$")
+
+internal val GIT_COMMIT = Regex("^[a-f0-9]{40}$")

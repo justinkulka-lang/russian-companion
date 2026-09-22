@@ -129,15 +129,18 @@ internal fun CompanionApp(
         }
     }
     fun runAction(action: FailedPlanAction) {
-        work.submit({
-            when (action.kind) {
-                PlanActionKind.COMPLETE -> {
-                    gateway?.completeExternalActivity(action.planDefinitionId, today(), recordedAt())
+        work.submit(
+            work = {
+                when (action.kind) {
+                    PlanActionKind.COMPLETE -> {
+                        gateway?.completeExternalActivity(action.planDefinitionId, today(), recordedAt())
+                    }
+                    PlanActionKind.INCLUDE_TUTOR -> gateway?.includeTutorTask(action.planDefinitionId, today())
+                    PlanActionKind.REMOVE_TUTOR -> gateway?.removeTutorTask(action.planDefinitionId, today())
                 }
-                PlanActionKind.INCLUDE_TUTOR -> gateway?.includeTutorTask(action.planDefinitionId, today())
-                PlanActionKind.REMOVE_TUTOR -> gateway?.removeTutorTask(action.planDefinitionId, today())
-            }
-        }) { update -> apply(update, action) }
+            },
+            onFailure = { PlanUpdate.NotSaved(action.planDefinitionId) },
+        ) { update -> apply(update, action) }
     }
 
     LaunchedEffect(gateway) {
@@ -162,14 +165,22 @@ internal fun CompanionApp(
                 saveFailed = failedAction != null,
                 operationInProgress = operationInProgress,
                 onConfirmLesson = { segmentId ->
-                    work.submit({
-                        gateway?.confirmLesson(segmentId, today())
-                    }) { refresh() }
+                    work.submit(
+                        work = {
+                            gateway?.confirmLesson(segmentId, today())
+                            true
+                        },
+                        onFailure = { false },
+                    ) { succeeded -> if (succeeded) refresh() }
                 },
                 onReloadSeed = {
-                    work.submit({
-                        gateway?.reloadPackagedSeed()
-                    }) { refresh() }
+                    work.submit(
+                        work = {
+                            gateway?.reloadPackagedSeed()
+                            true
+                        },
+                        onFailure = { false },
+                    ) { succeeded -> if (succeeded) refresh() }
                 },
                 onRetryOpen = onRetryOpen,
                 onCompleteItem = { planId ->
@@ -184,61 +195,85 @@ internal fun CompanionApp(
                 onRetryPlanAction = { failedAction?.let(::runAction) },
                 practiceAudio = practiceAudio,
                 onSaveRecording = { audioId, file, done ->
-                    work.submit({
-                        gateway?.saveRecording(audioId, file, recordedAt()) ?: PlanUpdate.NotSaved(audioId)
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.saveRecording(audioId, file, recordedAt()) ?: PlanUpdate.NotSaved(audioId)
+                        },
+                        onFailure = { PlanUpdate.NotSaved(audioId) },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 onTutorReview = { recordingId, marked, done ->
-                    work.submit({
-                        gateway?.setRecordingTutorReview(recordingId, marked) ?: PlanUpdate.NotSaved(recordingId)
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.setRecordingTutorReview(recordingId, marked)
+                                ?: PlanUpdate.NotSaved(recordingId)
+                        },
+                        onFailure = { PlanUpdate.NotSaved(recordingId) },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 onCompletePractice = { audioId, done ->
-                    work.submit({
-                        gateway?.completeListenPractice(audioId, today(), recordedAt())
-                            ?: PlanUpdate.NotSaved(audioId)
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.completeListenPractice(audioId, today(), recordedAt())
+                                ?: PlanUpdate.NotSaved(audioId)
+                        },
+                        onFailure = { PlanUpdate.NotSaved(audioId) },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 onSaveGateEvidence = { gateId, entries, done ->
-                    work.submit({
-                        gateway?.saveGateEvidence(gateId, entries, recordedAt()) ?: PlanUpdate.NotSaved(gateId)
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.saveGateEvidence(gateId, entries, recordedAt())
+                                ?: PlanUpdate.NotSaved(gateId)
+                        },
+                        onFailure = { PlanUpdate.NotSaved(gateId) },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 onAddTutorSignOff = { gateId, done ->
-                    work.submit({
-                        gateway?.addTutorSignOff(gateId, recordedAt()) ?: PlanUpdate.NotSaved(gateId)
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.addTutorSignOff(gateId, recordedAt()) ?: PlanUpdate.NotSaved(gateId)
+                        },
+                        onFailure = { PlanUpdate.NotSaved(gateId) },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 recordedAt = recordedAt,
                 onSaveActivity = { category, minutes, completed, at, associate, done ->
-                    work.submit({
-                        gateway?.saveActivityLog(category, minutes, completed, at, associate)
-                            ?: PlanUpdate.NotSaved("activity")
-                    }) { update ->
+                    work.submit(
+                        work = {
+                            gateway?.saveActivityLog(category, minutes, completed, at, associate)
+                                ?: PlanUpdate.NotSaved("activity")
+                        },
+                        onFailure = { PlanUpdate.NotSaved("activity") },
+                    ) { update ->
                         if (update is PlanUpdate.Applied || update is PlanUpdate.Unchanged) refresh()
                         done(update)
                     }
                 },
                 onExport = { stream, fileName, documentReference, done ->
-                    work.submit({
-                        gateway?.exportLocal(stream, recordedAt(), fileName, documentReference)
-                            ?: ExportUpdate.DestinationUnavailable
-                    }, done)
+                    work.submit(
+                        work = {
+                            gateway?.exportLocal(stream, recordedAt(), fileName, documentReference)
+                                ?: ExportUpdate.DestinationUnavailable
+                        },
+                        onFailure = { ExportUpdate.NotConfirmed },
+                        onResult = done,
+                    )
                 },
                 chooseExportDestination = chooseExportDestination,
                 onNeedSurface = { surface, then -> requestSurface(surface, then) },

@@ -16,6 +16,13 @@ Do not mark `release/retained-evidence.json` `RETAINED`. Do not fill
 AT-031. Do not run `assembleRelease` as a substitute for device
 evidence. Do not invent Russian, Penguin text, or procedure results.
 
+Immutable acceptance procedures live in
+`release/acceptance/DEVICE_ACCEPTANCE.md` and
+`release/acceptance/templates/`. Those files are part of the release
+source digest. `release/acceptance/forms/` is the working copy for
+execution notes and is excluded from the digest. Machine-readable
+results go only to `release/evidence/`.
+
 Governing documents, in this order:
 
 1. `docs/governance/MASTER_AUTHORITY_v1.0.md`

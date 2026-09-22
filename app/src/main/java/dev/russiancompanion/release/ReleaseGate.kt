@@ -49,6 +49,8 @@ internal enum class ReleaseBlocker(val message: String) {
     OWNER_RELEASE_DECISION_NOT_RETAINED("AT-031 owner release decision is not retained."),
     SOURCE_INPUTS_UNREADABLE("Release-relevant source inputs are absent or unreadable."),
     SOURCE_DIGEST_MISMATCH("The candidate source digest does not match the current release inputs."),
+    CANDIDATE_NOT_FROZEN("The acceptance candidate is not frozen."),
+    CANDIDATE_ARTIFACT_UNRECORDED("The frozen candidate APK identity is not recorded."),
 }
 
 internal data class ReleaseAssessment(
@@ -131,11 +133,13 @@ internal fun assessRepositoryRelease(repositoryRoot: File): ReleaseAssessment {
     val seed = if (seedFile.isFile) seedFile.readText() else null
     val manifest = if (manifestFile.isFile) manifestFile.readText() else null
     val binding = currentReleaseBinding(repositoryRoot)
-    val assessment = assessPackagedRelease(seed, manifest, repositoryRoot, binding)
+    val candidate = readAcceptanceCandidate(repositoryRoot)
+    val recorded = recordedCandidateIdentity(candidate)
+    val assessment = assessPackagedRelease(seed, manifest, repositoryRoot, binding, recorded)
     val blockers = buildList {
         addAll(assessment.blockers)
         addAll(packagedNoticeBlockers(repositoryRoot, seed))
-        addAll(sourceBindingBlockers(repositoryRoot, binding))
+        addAll(sourceBindingBlockers(binding, candidate, recorded))
     }.distinct()
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
     return ReleaseAssessment(decision, blockers, binding?.sourceDigest)
@@ -146,6 +150,7 @@ internal fun assessPackagedRelease(
     evidenceManifest: String?,
     repositoryRoot: File,
     binding: ReleaseBinding? = null,
+    recorded: FrozenCandidateIdentity? = null,
 ): ReleaseAssessment {
     val prepared = when {
         packagedSeed == null -> null
@@ -160,7 +165,7 @@ internal fun assessPackagedRelease(
         } else {
             addAll(contentBlockers(prepared))
         }
-        addAll(evidenceBlockers(evidenceManifest, repositoryRoot, binding))
+        addAll(evidenceBlockers(evidenceManifest, repositoryRoot, binding, recorded))
     }
     val decision = if (blockers.isEmpty()) ReleaseDecision.APPROVED else ReleaseDecision.NOT_APPROVED
     return ReleaseAssessment(decision, blockers, binding?.sourceDigest)
@@ -173,8 +178,6 @@ internal const val RETAINED_EVIDENCE_SCHEMA_VERSION = 2
 internal const val PROCEDURE_EVIDENCE_SCHEMA_VERSION = 2
 
 private const val EVIDENCE_PATH_PREFIX = "release/evidence/"
-
-private val GIT_COMMIT = Regex("^[a-f0-9]{40}$")
 
 private val EXECUTED_AT = Regex("^\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?$")
 
@@ -423,8 +426,9 @@ private fun evidenceBlockers(
     manifest: String?,
     repositoryRoot: File,
     binding: ReleaseBinding?,
+    recorded: FrozenCandidateIdentity?,
 ): List<ReleaseBlocker> {
-    val reading = readEvidence(manifest, repositoryRoot, binding)
+    val reading = readEvidence(manifest, repositoryRoot, binding, recorded)
     val blockers = mutableListOf<ReleaseBlocker>()
     if (!reading.readable) blockers += ReleaseBlocker.EVIDENCE_MANIFEST_UNREADABLE
     for ((procedure, blocker) in requiredProcedures) {
@@ -433,13 +437,25 @@ private fun evidenceBlockers(
     return blockers
 }
 
-private fun sourceBindingBlockers(repositoryRoot: File, binding: ReleaseBinding?): List<ReleaseBlocker> {
-    if (binding == null) return listOf(ReleaseBlocker.SOURCE_INPUTS_UNREADABLE)
-    val candidate = readAcceptanceCandidate(repositoryRoot)
-    if (!candidateMatchesBinding(candidate, binding)) {
-        return listOf(ReleaseBlocker.SOURCE_DIGEST_MISMATCH)
+private fun sourceBindingBlockers(
+    binding: ReleaseBinding?,
+    candidate: AcceptanceCandidateDocument?,
+    recorded: FrozenCandidateIdentity?,
+): List<ReleaseBlocker> {
+    val blockers = mutableListOf<ReleaseBlocker>()
+    if (binding == null) {
+        blockers += ReleaseBlocker.SOURCE_INPUTS_UNREADABLE
+        return blockers
     }
-    return emptyList()
+    if (!candidateMatchesBinding(candidate, binding)) {
+        blockers += ReleaseBlocker.SOURCE_DIGEST_MISMATCH
+    }
+    if (candidate == null || !candidate.frozen) {
+        blockers += ReleaseBlocker.CANDIDATE_NOT_FROZEN
+    } else if (recorded == null) {
+        blockers += ReleaseBlocker.CANDIDATE_ARTIFACT_UNRECORDED
+    }
+    return blockers
 }
 
 private data class EvidenceReading(
@@ -451,6 +467,7 @@ private fun readEvidence(
     manifest: String?,
     repositoryRoot: File,
     binding: ReleaseBinding?,
+    recorded: FrozenCandidateIdentity?,
 ): EvidenceReading {
     if (manifest == null) return EvidenceReading(readable = false, retained = emptySet())
     val parsed = try {
@@ -470,11 +487,11 @@ private fun readEvidence(
     val independentlyRetained = requiredProcedures.map { it.first }.filter { procedure ->
         if (procedure == "AT-031") return@filter false
         val record = parsed.records.firstOrNull { it.procedure == procedure } ?: return@filter false
-        isRetained(record, repositoryRoot, independentlyRetained = emptySet(), binding = binding)
+        isRetained(record, repositoryRoot, independentlyRetained = emptySet(), binding = binding, recorded = recorded)
     }.toSet()
     val retained = independentlyRetained.toMutableSet()
     val owner = parsed.records.firstOrNull { it.procedure == "AT-031" }
-    if (owner != null && isRetained(owner, repositoryRoot, independentlyRetained, binding)) {
+    if (owner != null && isRetained(owner, repositoryRoot, independentlyRetained, binding, recorded)) {
         retained += "AT-031"
     }
     val identities = retained.mapNotNull { procedure ->
@@ -503,6 +520,11 @@ private fun readEvidence(
         ) {
             return EvidenceReading(readable = true, retained = emptySet())
         }
+        if (recorded != null &&
+            (commits.single() != recorded.sourceCommit || hashes.single() != recorded.apkSha256)
+        ) {
+            return EvidenceReading(readable = true, retained = emptySet())
+        }
     }
     return EvidenceReading(readable = true, retained = retained)
 }
@@ -512,6 +534,7 @@ private fun isRetained(
     repositoryRoot: File,
     independentlyRetained: Set<String>,
     binding: ReleaseBinding?,
+    recorded: FrozenCandidateIdentity?,
 ): Boolean {
     if (record.state != "RETAINED") return false
     val document = readProcedureEvidence(record, repositoryRoot) ?: return false
@@ -533,6 +556,10 @@ private fun isRetained(
         if (document.versionName != binding.versionName) return false
         if (document.versionCode != binding.versionCode) return false
         if (document.applicationId != binding.applicationId) return false
+    }
+    if (recorded != null) {
+        if (document.candidateCommit != recorded.sourceCommit) return false
+        if (document.apkSha256 != recorded.apkSha256) return false
     }
     if (record.procedure in proceduresRequiringDevice) {
         if (document.deviceModel.isNullOrBlank()) return false

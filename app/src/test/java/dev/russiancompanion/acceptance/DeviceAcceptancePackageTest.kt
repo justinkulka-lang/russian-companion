@@ -38,7 +38,9 @@ class DeviceAcceptancePackageTest {
             "release/acceptance/forms/AT-030.md",
             "release/acceptance/forms/AT-031-OWNER-DECISION.md",
         )
+        val templatePaths = formPaths.map { it.replace("/forms/", "/templates/") }
         val forms = formPaths.associateWith { File(root, it).readText() }
+        val templates = templatePaths.associateWith { File(root, it).readText() }
 
         assertTrue(instructions.contains("Galaxy S26 Ultra"))
         listOf("AT-001", "AT-002", "AT-004", "AT-008", "AT-009", "AT-010", "AT-020", "AT-030", "AT-031")
@@ -74,7 +76,8 @@ class DeviceAcceptancePackageTest {
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
         assertEquals("1.0.0", candidate.getValue("versionName").jsonPrimitive.content)
-        assertEquals(3, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
+        assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
+        assertEquals(JsonNull, candidate.getValue("sourceCommit"))
         val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
         assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
         assertEquals(
@@ -130,6 +133,12 @@ class DeviceAcceptancePackageTest {
             assertFalse(body.contains("Result: **PASS**"))
             assertFalse(body.contains("Result: **FAIL**"))
         }
+        templates.values.forEach { body ->
+            assertTrue(body.contains("NOT_EXECUTED"))
+            assertFalse(body.contains("Result: **PASS**"))
+            assertFalse(body.contains("Result: **FAIL**"))
+        }
+        assertTrue(instructions.contains("release/acceptance/templates/"))
         val owner = forms.getValue("release/acceptance/forms/AT-031-OWNER-DECISION.md")
         assertTrue(owner.contains("Reserved for the Product Owner"))
         assertTrue(owner.contains("AT-002 retained: no"))

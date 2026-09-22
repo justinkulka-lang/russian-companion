@@ -7,6 +7,7 @@ import kotlinx.coroutines.withContext
 
 /**
  * Runs persistence and export off the caller thread and rejects overlapping submissions.
+ * Every accepted submission invokes [onResult] exactly once with a success or mapped failure.
  */
 internal class UiWorkCoordinator(
     private val dispatcher: CoroutineDispatcher,
@@ -19,23 +20,28 @@ internal class UiWorkCoordinator(
     @Synchronized
     fun isBusy(): Boolean = busy
 
-    fun <T> submit(work: () -> T, onResult: (T) -> Unit): Boolean {
+    fun <T> submit(
+        work: () -> T,
+        onFailure: (Exception) -> T,
+        onResult: (T) -> Unit,
+    ): Boolean {
         if (!markBusy()) return false
         if (runSynchronously) {
-            try {
-                finish(work(), onResult)
-            } catch (_: Exception) {
-                clearBusy()
+            val result = try {
+                work()
+            } catch (error: Exception) {
+                onFailure(error)
             }
+            finish(result, onResult)
             return true
         }
         scope.launch {
-            try {
-                val result = withContext(dispatcher) { work() }
-                finish(result, onResult)
-            } catch (_: Exception) {
-                clearBusy()
+            val result = try {
+                withContext(dispatcher) { work() }
+            } catch (error: Exception) {
+                onFailure(error)
             }
+            finish(result, onResult)
         }
         return true
     }
