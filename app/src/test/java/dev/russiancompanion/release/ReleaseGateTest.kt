@@ -651,6 +651,6 @@ class ReleaseGateTest {
             ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED,
             ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
         )
-        val packagedBlockers = missingEvidenceBlockers + ReleaseBlocker.CANDIDATE_NOT_FROZEN
+        val packagedBlockers = missingEvidenceBlockers
     }
 }
