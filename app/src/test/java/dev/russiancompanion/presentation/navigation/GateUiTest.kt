@@ -14,7 +14,6 @@ import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
@@ -57,16 +56,20 @@ class GateUiTest {
         repeat(3) { compose.onNodeWithText("Next").performClick() }
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
+        show("Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion")
         click("Gates")
         compose.onNodeWithText("Activity gate, not proficiency certification.").performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Missing recorded evidence: Book revision score, AnkiDroid completion or maturity")
+        compose.onNodeWithText(
+            "Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion",
+        )
             .performScrollTo()
             .assertIsDisplayed()
         click("Displayed test rule")
         show("Self-attested — not independently verified")
         show("Self-attested — no AnkiDroid integration; not independently verified")
         show("At least 1")
-        show("Equals mature")
+        show("Equals Mature")
+        show("Evidence is required")
         show("No advancement decision is recorded.")
         compose.onNodeWithText("fluency").assertDoesNotExist()
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
@@ -77,33 +80,42 @@ class GateUiTest {
         show("No advancement decision is recorded.")
 
         replaceField(0, "0")
-        replaceField(1, "started")
+        click("Completed")
+        click("Confirm prescribed work")
         click("Save evidence")
         show("Recorded gate status: Not yet satisfied")
         compose.onAllNodesWithText("Condition not met").assertCountEquals(2)
+        show("Locked — remaining: Book revision score, AnkiDroid completion or maturity")
         show("Recorded value: 0 at")
-        show("Recorded value: started at")
+        show("Recorded value: COMPLETED at")
+        show("Recorded value: recorded at")
+        compose.onAllNodesWithText("Self-attested — not independently verified").assertCountEquals(2)
+        compose.onAllNodesWithText("Self-attested — no AnkiDroid integration; not independently verified").assertCountEquals(2)
 
         replaceField(0, "1")
-        replaceField(1, "mature")
+        click("Mature")
         click("Save evidence")
         show("Recorded gate status: Satisfied")
-        compose.onAllNodesWithText("Condition met").assertCountEquals(2)
+        compose.onAllNodesWithText("Condition met").assertCountEquals(3)
+        compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
 
         click("Add tutor sign-off")
         show("Tutor sign-off")
         show("Recorded gate status: Not evaluable")
         show("Awaiting user evidence")
+        show("Locked — remaining: Tutor sign-off")
         compose.onNodeWithText("Recorded gate status: Satisfied").assertDoesNotExist()
 
-        click("Record evidence")
+        click("Record tutor sign-off")
         click("Save evidence")
         show("Recorded gate status: Satisfied")
-        compose.onAllNodesWithText("Condition met").assertCountEquals(3)
+        compose.onAllNodesWithText("Condition met").assertCountEquals(4)
         compose.onNodeWithText("Awaiting user evidence").assertDoesNotExist()
+        compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
 
         click("Home")
         show("Recorded gate status: Satisfied")
+        compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
     }
 
     private fun click(text: String) {
@@ -130,13 +142,6 @@ class GateUiTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                    GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
     )
 }

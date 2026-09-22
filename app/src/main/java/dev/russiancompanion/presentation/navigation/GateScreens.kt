@@ -1,5 +1,6 @@
 package dev.russiancompanion.presentation.navigation
 
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -11,8 +12,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.foundation.text.KeyboardOptions
 import dev.russiancompanion.R
+import dev.russiancompanion.domain.gate.AnkiStatusValue
 import dev.russiancompanion.domain.gate.ConditionResult
 import dev.russiancompanion.domain.gate.GateComparison
 import dev.russiancompanion.domain.gate.GateConditionView
@@ -20,6 +21,7 @@ import dev.russiancompanion.domain.gate.GateDetailView
 import dev.russiancompanion.domain.gate.GateEvidenceEntry
 import dev.russiancompanion.domain.gate.GateEvidenceKind
 import dev.russiancompanion.domain.gate.GateStatus
+import dev.russiancompanion.domain.gate.PRESENCE_RECORDED
 import dev.russiancompanion.domain.gate.evidenceEntryAccepted
 import dev.russiancompanion.domain.plan.PlanUpdate
 
@@ -31,23 +33,31 @@ internal fun GateListBody(details: List<GateDetailView>, onOpen: (String) -> Uni
     }
     details.forEach { detail ->
         TextButton(onClick = { onOpen(detail.id) }) { Text(detail.displayedRuleText) }
-        val status = detail.recordedStatus
-        if (status == null) {
-            Text(stringResource(R.string.home_gate_no_decision))
-        } else {
-            Text(stringResource(R.string.home_gate_status, gateStatusText(status)))
-        }
-        val missing = detail.conditions.filter { it.result == ConditionResult.AWAITING }
-        if (missing.isNotEmpty()) {
-            val names = mutableListOf<String>()
-            for (condition in missing) {
-                names += evidenceLabel(condition.kind)
-            }
-            Text(stringResource(R.string.gate_missing, names.joinToString(separator = ", ")))
-        }
+        GateStatusLine(detail.recordedStatus)
+        GateLockedRemainder(detail)
         if (detail.conditions.any { it.result == ConditionResult.UNREADABLE }) {
             Text(stringResource(R.string.gate_evidence_unreadable))
         }
+    }
+}
+
+@Composable
+internal fun GateLockedRemainder(detail: GateDetailView) {
+    if (!detail.locked || detail.remainingKinds.isEmpty()) return
+    val names = buildList {
+        for (kind in detail.remainingKinds) {
+            add(evidenceLabel(kind))
+        }
+    }.joinToString(separator = ", ")
+    Text(stringResource(R.string.gate_locked_remaining, names))
+}
+
+@Composable
+internal fun GateStatusLine(status: GateStatus?) {
+    if (status == null) {
+        Text(stringResource(R.string.home_gate_no_decision))
+    } else {
+        Text(stringResource(R.string.home_gate_status, gateStatusText(status)))
     }
 }
 
@@ -62,23 +72,20 @@ internal fun GateDetailBody(
     var saveFailed by remember(detail.id) { mutableStateOf(false) }
     var failedAdd by remember(detail.id) { mutableStateOf(false) }
     Text(detail.displayedRuleText)
-    val status = detail.recordedStatus
-    if (status == null) {
-        Text(stringResource(R.string.home_gate_no_decision))
-    } else {
-        Text(stringResource(R.string.home_gate_status, gateStatusText(status)))
-    }
+    GateStatusLine(detail.recordedStatus)
+    GateLockedRemainder(detail)
     detail.conditions.forEach { condition ->
         ConditionBlock(
             condition = condition,
             draft = drafts[condition.id].orEmpty(),
             invalid = condition.id in invalidIds,
             onDraft = { drafts[condition.id] = it },
-            onRecordPresence = { drafts[condition.id] = "recorded" },
+            onRecordPresence = { drafts[condition.id] = PRESENCE_RECORDED },
         )
     }
     detail.evidence.forEach { record ->
         Text(stringResource(R.string.gate_recorded_value, record.enteredValue, record.recordedAtLocal))
+        Text(attestationLabel(record.kind))
     }
     if (!detail.tutorRequired) {
         TextButton(
@@ -97,7 +104,7 @@ internal fun GateDetailBody(
                 val value = drafts[condition.id].orEmpty()
                 if (value.isBlank()) {
                     null
-                } else if (evidenceEntryAccepted(condition.comparison, value)) {
+                } else if (evidenceEntryAccepted(condition.comparison, value, condition.kind)) {
                     null
                 } else {
                     condition.id
@@ -163,24 +170,40 @@ private fun ConditionBlock(
     }
     Text(comparisonLabel(condition))
     Text(resultLabel(condition.result))
-    if (condition.comparison == GateComparison.PRESENT) {
-        TextButton(onClick = onRecordPresence) { Text(stringResource(R.string.gate_record_evidence)) }
-        if (draft.isNotBlank()) {
-            Text(draft)
+    when (condition.kind) {
+        GateEvidenceKind.ANKI_DROID_STATUS -> {
+            AnkiStatusValue.entries.forEach { status ->
+                TextButton(onClick = { onDraft(status.name) }) {
+                    Text(ankiStatusText(status))
+                }
+            }
         }
-    } else {
-        OutlinedTextField(
-            value = draft,
-            onValueChange = onDraft,
-            keyboardOptions = KeyboardOptions(
-                keyboardType = if (condition.comparison == GateComparison.AT_LEAST) {
-                    KeyboardType.Decimal
-                } else {
-                    KeyboardType.Text
-                },
-            ),
-            singleLine = true,
-        )
+        GateEvidenceKind.BOOK_REVISION_SCORE -> {
+            OutlinedTextField(
+                value = draft,
+                onValueChange = onDraft,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                singleLine = true,
+            )
+        }
+        GateEvidenceKind.PRESCRIBED_WORK_COMPLETION,
+        GateEvidenceKind.TUTOR_SIGN_OFF,
+        -> {
+            TextButton(onClick = onRecordPresence) {
+                Text(
+                    stringResource(
+                        if (condition.kind == GateEvidenceKind.PRESCRIBED_WORK_COMPLETION) {
+                            R.string.gate_confirm_work
+                        } else {
+                            R.string.gate_record_tutor
+                        },
+                    ),
+                )
+            }
+            if (draft.isNotBlank()) {
+                Text(draft)
+            }
+        }
     }
     if (invalid) {
         Text(stringResource(R.string.gate_field_invalid))
@@ -188,7 +211,7 @@ private fun ConditionBlock(
 }
 
 @Composable
-private fun evidenceLabel(kind: GateEvidenceKind): String {
+internal fun evidenceLabel(kind: GateEvidenceKind): String {
     return stringResource(
         when (kind) {
             GateEvidenceKind.BOOK_REVISION_SCORE -> R.string.gate_book_label
@@ -200,11 +223,33 @@ private fun evidenceLabel(kind: GateEvidenceKind): String {
 }
 
 @Composable
+private fun attestationLabel(kind: GateEvidenceKind): String {
+    return stringResource(
+        when (kind) {
+            GateEvidenceKind.BOOK_REVISION_SCORE -> R.string.gate_book_attestation
+            GateEvidenceKind.ANKI_DROID_STATUS -> R.string.gate_anki_attestation
+            GateEvidenceKind.PRESCRIBED_WORK_COMPLETION,
+            GateEvidenceKind.TUTOR_SIGN_OFF,
+            -> R.string.gate_user_recorded
+        },
+    )
+}
+
+@Composable
 private fun comparisonLabel(condition: GateConditionView): String {
     return when (condition.comparison) {
         GateComparison.PRESENT -> stringResource(R.string.gate_compare_present)
         GateComparison.AT_LEAST -> stringResource(R.string.gate_compare_at_least, condition.operand.orEmpty())
-        GateComparison.EQUALS -> stringResource(R.string.gate_compare_equals, condition.operand.orEmpty())
+        GateComparison.EQUALS -> {
+            val operand = if (condition.kind == GateEvidenceKind.ANKI_DROID_STATUS) {
+                ankiStatusText(
+                    AnkiStatusValue.entries.firstOrNull { it.name == condition.operand } ?: AnkiStatusValue.MATURE,
+                )
+            } else {
+                condition.operand.orEmpty()
+            }
+            stringResource(R.string.gate_compare_equals, operand)
+        }
     }
 }
 
@@ -227,6 +272,16 @@ private fun gateStatusText(status: GateStatus): String {
             GateStatus.SATISFIED -> R.string.gate_status_satisfied
             GateStatus.NOT_YET_SATISFIED -> R.string.gate_status_not_yet
             GateStatus.NOT_EVALUABLE -> R.string.gate_status_not_evaluable
+        },
+    )
+}
+
+@Composable
+private fun ankiStatusText(status: AnkiStatusValue): String {
+    return stringResource(
+        when (status) {
+            AnkiStatusValue.COMPLETED -> R.string.gate_anki_completed
+            AnkiStatusValue.MATURE -> R.string.gate_anki_mature
         },
     )
 }

@@ -2,14 +2,17 @@ package dev.russiancompanion.data.local
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
+import dev.russiancompanion.domain.gate.AnkiStatusValue
 import dev.russiancompanion.domain.gate.GateEvidenceKind
 import dev.russiancompanion.domain.gate.GateStatus
+import dev.russiancompanion.domain.gate.PRESENCE_RECORDED
 import dev.russiancompanion.domain.gate.RecordedEvidence
+import dev.russiancompanion.domain.gate.decodeConditionOutcomes
 import dev.russiancompanion.domain.gate.encodeConditionOutcomes
 import dev.russiancompanion.domain.gate.evaluateGate
+import dev.russiancompanion.domain.gate.reproduceDecision
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -30,35 +33,50 @@ class GateStoreTest {
                 gateDefinitionId = "gate-1",
                 entries = listOf(
                     EvidenceType.BOOK_REVISION_SCORE to "0",
-                    EvidenceType.ANKI_DROID_STATUS to "started",
+                    EvidenceType.ANKI_DROID_STATUS to AnkiStatusValue.COMPLETED.name,
+                    EvidenceType.PRESCRIBED_WORK_COMPLETION to PRESENCE_RECORDED,
                 ),
                 recordedAtLocal = "2026-09-21T09:00",
             )
             assertEquals(GateDecisionStatus.NOT_YET_SATISFIED, low.status)
-            assertTrue(store.evidenceFor("gate-1").all { it.selfAttestationStatus == SelfAttestationStatus.SELF_ATTESTED })
+            assertTrue(
+                store.evidenceFor("gate-1")
+                    .filter {
+                        it.evidenceType == EvidenceType.BOOK_REVISION_SCORE ||
+                            it.evidenceType == EvidenceType.ANKI_DROID_STATUS
+                    }
+                    .all { it.selfAttestationStatus == SelfAttestationStatus.SELF_ATTESTED },
+            )
+            assertEquals(
+                SelfAttestationStatus.USER_RECORDED,
+                store.evidenceFor("gate-1").single { it.evidenceType == EvidenceType.PRESCRIBED_WORK_COMPLETION }.selfAttestationStatus,
+            )
 
             val met = store.recordGateEvidenceAndDecide(
                 gateDefinitionId = "gate-1",
                 entries = listOf(
                     EvidenceType.BOOK_REVISION_SCORE to "1",
-                    EvidenceType.ANKI_DROID_STATUS to "mature",
+                    EvidenceType.ANKI_DROID_STATUS to AnkiStatusValue.MATURE.name,
                 ),
                 recordedAtLocal = "2026-09-21T10:00",
             )
             assertEquals(GateDecisionStatus.SATISFIED, met.status)
-            val reproduced = evaluateGate(
-                ruleConditions(store.conditions("gate-1"), tutorRequired = false),
+            val rule = ruleConditions(store.conditions("gate-1"), tutorRequired = false)
+            val reproduced = reproduceDecision(
+                rule,
                 store.evidenceFor("gate-1").map { it.toTestEvidence() },
             )
             assertEquals(GateStatus.SATISFIED, reproduced.status)
+            assertEquals(decodeConditionOutcomes(met.conditionOutcomes), reproduced.outcomes)
             assertEquals(encodeConditionOutcomes(reproduced.outcomes), met.conditionOutcomes)
+            assertEquals(evaluateGate(rule, store.evidenceFor("gate-1").map { it.toTestEvidence() }), reproduced)
             assertEquals("1", store.evidenceFor("gate-1").last { it.evidenceType == EvidenceType.BOOK_REVISION_SCORE }.enteredValue)
 
             store.addTutorSignOffRequirement("gate-1", "2026-09-21T11:00")
             assertEquals(GateDecisionStatus.NOT_EVALUABLE, store.decisions().last().status)
             val signed = store.recordGateEvidenceAndDecide(
                 gateDefinitionId = "gate-1",
-                entries = listOf(EvidenceType.TUTOR_SIGN_OFF to "recorded"),
+                entries = listOf(EvidenceType.TUTOR_SIGN_OFF to PRESENCE_RECORDED),
                 recordedAtLocal = "2026-09-21T12:00",
             )
             assertEquals(GateDecisionStatus.SATISFIED, signed.status)
@@ -89,7 +107,17 @@ class GateStoreTest {
             try {
                 store.recordGateEvidenceAndDecide(
                     gateDefinitionId = "gate-1",
-                    entries = listOf(EvidenceType.PRESCRIBED_WORK_COMPLETION to "done"),
+                    entries = listOf(EvidenceType.ANKI_DROID_STATUS to "mature"),
+                    recordedAtLocal = "2026-09-21T09:01",
+                )
+                error("open Anki text was saved")
+            } catch (_: IllegalArgumentException) {
+                assertTrue(store.decisions().isEmpty())
+            }
+            try {
+                store.recordGateEvidenceAndDecide(
+                    gateDefinitionId = "gate-1",
+                    entries = listOf(EvidenceType.TUTOR_SIGN_OFF to PRESENCE_RECORDED),
                     recordedAtLocal = "2026-09-21T09:01",
                 )
                 error("evidence outside the displayed rule was saved")
@@ -125,14 +153,7 @@ class GateStoreTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                    GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
     )
 
     private fun GateEvidenceEntity.toTestEvidence(): RecordedEvidence {

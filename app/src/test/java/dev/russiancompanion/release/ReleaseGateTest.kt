@@ -221,12 +221,7 @@ class ReleaseGateTest {
             plan("plan-listen", "LISTEN_RECORD_COMPARE", 3),
         ),
         gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                    GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
-                ),
-            ),
+            gate(),
         ),
         sourceRecords = listOf(source().copy(shareAlikeConfirmation = shareAlike)),
         sourceTexts = listOf(text(matchVerified = true)),

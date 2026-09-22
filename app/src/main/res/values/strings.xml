@@ -65,18 +65,22 @@
     <string name="gate_work_label">Prescribed work completion</string>
     <string name="gate_tutor_label">Tutor sign-off</string>
     <string name="gate_add_tutor">Add tutor sign-off</string>
-    <string name="gate_record_evidence">Record evidence</string>
     <string name="gate_save">Save evidence</string>
     <string name="gate_awaiting">Awaiting user evidence</string>
     <string name="gate_condition_met">Condition met</string>
     <string name="gate_condition_not_met">Condition not met</string>
     <string name="gate_evidence_unreadable">This evidence is unreadable.</string>
     <string name="gate_field_invalid">This entry is not valid.</string>
-    <string name="gate_missing">Missing recorded evidence: %1$s</string>
     <string name="gate_compare_at_least">At least %1$s</string>
     <string name="gate_compare_equals">Equals %1$s</string>
     <string name="gate_compare_present">Evidence is required</string>
     <string name="gate_recorded_value">Recorded value: %1$s at %2$s</string>
+    <string name="gate_locked_remaining">Locked — remaining: %1$s</string>
+    <string name="gate_anki_completed">Completed</string>
+    <string name="gate_anki_mature">Mature</string>
+    <string name="gate_confirm_work">Confirm prescribed work</string>
+    <string name="gate_record_tutor">Record tutor sign-off</string>
+    <string name="gate_user_recorded">User recorded</string>
 
     <string name="progress_title">Progress</string>
     <string name="progress_activity_only">Recorded activity is work completed, not certified ability.</string>

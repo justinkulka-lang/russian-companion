@@ -16,7 +16,6 @@ import dev.russiancompanion.data.local.audio
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.rights
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
@@ -68,6 +67,7 @@ class DailyPlanUiTest {
         showText("Use your copy of the book for this lesson")
         showText("Activity gate, not proficiency certification.")
         showText("No advancement decision is recorded.")
+        showText("Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion")
         showText("No activity is recorded.")
         compose.onNodeWithText("Optional drills").assertDoesNotExist()
         clickText("Today's Plan", substring = false)
@@ -245,13 +245,7 @@ class DailyPlanUiTest {
                 required = false,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
         sourceTexts = listOf(text(matchVerified = includeAudio)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),

@@ -128,6 +128,54 @@ class BundledContentRulesTest {
     }
 
     @Test
+    fun defaultGateRequiresBookAnkiAndPrescribedWork() {
+        val incomplete = prepareBundledContent(
+            minimalDocument().copy(
+                gateDefinitions = listOf(
+                    gate(
+                        conditions = listOf(
+                            GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+                            GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "MATURE", 1),
+                        ),
+                    ),
+                ),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, incomplete.gates.single().eligibilityStatus)
+        assertTrue(incomplete.conditions.isEmpty())
+
+        val openAnkiText = prepareBundledContent(
+            minimalDocument().copy(
+                gateDefinitions = listOf(
+                    gate(
+                        conditions = listOf(
+                            GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+                            GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "mature", 1),
+                            GateConditionSeed("c-work", "PRESCRIBED_WORK_COMPLETION", "PRESENT", null, 2),
+                        ),
+                    ),
+                ),
+            ),
+        )
+        assertEquals(EligibilityStatus.EXCLUDED, openAnkiText.gates.single().eligibilityStatus)
+
+        val admitted = prepareBundledContent(
+            minimalDocument().copy(gateDefinitions = listOf(gate())),
+        )
+        assertEquals(EligibilityStatus.ELIGIBLE, admitted.gates.single().eligibilityStatus)
+        assertEquals(
+            listOf(
+                EvidenceType.BOOK_REVISION_SCORE,
+                EvidenceType.ANKI_DROID_STATUS,
+                EvidenceType.PRESCRIBED_WORK_COMPLETION,
+            ),
+            admitted.conditions.map { it.evidenceType },
+        )
+        assertEquals("MATURE", admitted.conditions.single { it.evidenceType == EvidenceType.ANKI_DROID_STATUS }.operand)
+        assertEquals(null, admitted.conditions.single { it.evidenceType == EvidenceType.PRESCRIBED_WORK_COMPLETION }.operand)
+    }
+
+    @Test
     fun requiredTutorPlanIsExcluded() {
         val prepared = prepareBundledContent(
             minimalDocument().copy(
@@ -449,12 +497,20 @@ internal fun audio(id: String = "audio-1", rightsRecordId: String = "rights-1"):
     )
 }
 
-internal fun gate(conditions: List<GateConditionSeed>): GateDefinitionSeed {
+internal fun gate(conditions: List<GateConditionSeed> = defaultGateConditionSeeds()): GateDefinitionSeed {
     return GateDefinitionSeed(
         id = "gate-1",
         segmentId = "segment-1",
         ruleVersion = "1",
         displayedRuleText = "Displayed test rule",
         conditions = conditions,
+    )
+}
+
+internal fun defaultGateConditionSeeds(): List<GateConditionSeed> {
+    return listOf(
+        GateConditionSeed("c-book", "BOOK_REVISION_SCORE", "AT_LEAST", "1", 0),
+        GateConditionSeed("c-anki", "ANKI_DROID_STATUS", "EQUALS", "MATURE", 1),
+        GateConditionSeed("c-work", "PRESCRIBED_WORK_COMPLETION", "PRESENT", null, 2),
     )
 }

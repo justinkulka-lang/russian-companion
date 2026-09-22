@@ -12,6 +12,8 @@ import dev.russiancompanion.domain.gate.RecordedEvidence
 import dev.russiancompanion.domain.gate.encodeConditionOutcomes
 import dev.russiancompanion.domain.gate.evaluateGate
 import dev.russiancompanion.domain.gate.evidenceEntryAccepted
+import dev.russiancompanion.domain.gate.gateIsLocked
+import dev.russiancompanion.domain.gate.remainingKinds
 import dev.russiancompanion.domain.gate.tutorSignOffCondition
 import java.util.UUID
 
@@ -38,7 +40,8 @@ internal fun evidenceAcceptedForGate(
 ): Boolean {
     val comparisons = comparisonsFor(evidenceType, conditions, tutorRequired)
     if (comparisons.isEmpty()) return false
-    return comparisons.all { evidenceEntryAccepted(it, enteredValue) }
+    val kind = evidenceType.toKind()
+    return comparisons.all { evidenceEntryAccepted(it, enteredValue, kind) }
 }
 
 internal fun gateDetailView(
@@ -56,6 +59,8 @@ internal fun gateDetailView(
         displayedRuleText = gate.displayedRuleText,
         tutorRequired = tutorRequired,
         recordedStatus = recordedStatus?.toGateStatus(),
+        locked = gateIsLocked(evaluation),
+        remainingKinds = remainingKinds(evaluation, rule),
         conditions = rule.zip(evaluation.outcomes).map { (condition, outcome) ->
             val latest = outcome.evidenceId?.let(evidenceById::get)
             GateConditionView(

@@ -17,6 +17,11 @@ import dev.russiancompanion.data.local.RuleOperator
 import dev.russiancompanion.data.local.ShareAlikeConfirmation
 import dev.russiancompanion.data.local.SourceRecordEntity
 import dev.russiancompanion.data.local.SourceTextEntity
+import dev.russiancompanion.domain.gate.GateComparison
+import dev.russiancompanion.domain.gate.GateConditionDraft
+import dev.russiancompanion.domain.gate.GateDefinitionDraft
+import dev.russiancompanion.domain.gate.GateEvidenceKind
+import dev.russiancompanion.domain.gate.admitGateDefinition
 import dev.russiancompanion.domain.pathway.PathwaySegment
 import dev.russiancompanion.domain.pathway.PlanActivityKind
 import dev.russiancompanion.domain.pathway.PlanDefinitionDraft
@@ -220,50 +225,67 @@ private fun admitGate(
     segments: Map<String, CourseSegmentEntity>,
 ): AdmittedGate? {
     if (seed.id.isBlank() || segments[seed.segmentId] == null) return null
-    val conditions = mutableListOf<GateConditionEntity>()
-    var eligible = seed.ruleVersion.isNotBlank() && seed.displayedRuleText.isNotBlank() && seed.conditions.isNotEmpty()
-    val seenConditionIds = mutableSetOf<String>()
-    for (condition in seed.conditions) {
-        val evidence = enumOrNull<EvidenceType>(condition.evidenceType)
-        val operator = enumOrNull<RuleOperator>(condition.operator)
-        if (
-            condition.id.isBlank() ||
-            !seenConditionIds.add(condition.id) ||
-            evidence == null ||
-            operator == null ||
-            evidence == EvidenceType.TUTOR_SIGN_OFF ||
-            !operandMatches(operator, condition.operand)
-        ) {
-            eligible = false
-            continue
-        }
-        conditions += GateConditionEntity(
-            id = condition.id,
-            gateDefinitionId = seed.id,
-            evidenceType = evidence,
-            operator = operator,
-            operand = condition.operand,
-            sortOrder = condition.sortOrder,
-        )
-    }
-    if (conditions.isEmpty()) eligible = false
+    val admission = admitGateDefinition(
+        GateDefinitionDraft(
+            id = seed.id,
+            segmentId = seed.segmentId,
+            ruleVersion = seed.ruleVersion,
+            displayedRuleText = seed.displayedRuleText,
+            conditions = seed.conditions.map { condition ->
+                GateConditionDraft(
+                    id = condition.id,
+                    evidenceType = condition.evidenceType,
+                    operator = condition.operator,
+                    operand = condition.operand,
+                    sortOrder = condition.sortOrder,
+                )
+            },
+        ),
+        segmentExists = true,
+    )
     return AdmittedGate(
         gate = GateDefinitionEntity(
             id = seed.id,
             segmentId = seed.segmentId,
             ruleVersion = seed.ruleVersion,
             displayedRuleText = seed.displayedRuleText,
-            eligibilityStatus = if (eligible) EligibilityStatus.ELIGIBLE else EligibilityStatus.EXCLUDED,
+            eligibilityStatus = if (admission.accepted) {
+                EligibilityStatus.ELIGIBLE
+            } else {
+                EligibilityStatus.EXCLUDED
+            },
         ),
-        conditions = if (eligible) conditions else emptyList(),
+        conditions = if (admission.accepted) {
+            admission.conditions.mapIndexed { index, condition ->
+                GateConditionEntity(
+                    id = condition.id,
+                    gateDefinitionId = seed.id,
+                    evidenceType = storedEvidenceType(condition.kind),
+                    operator = storedOperator(condition.comparison),
+                    operand = condition.operand,
+                    sortOrder = index,
+                )
+            }
+        } else {
+            emptyList()
+        },
     )
 }
 
-private fun operandMatches(operator: RuleOperator, operand: String?): Boolean {
-    return when (operator) {
-        RuleOperator.PRESENT -> operand == null
-        RuleOperator.AT_LEAST -> operand != null && operand.matches(NUMERIC_OPERAND)
-        RuleOperator.EQUALS -> !operand.isNullOrBlank()
+private fun storedEvidenceType(kind: GateEvidenceKind): EvidenceType {
+    return when (kind) {
+        GateEvidenceKind.BOOK_REVISION_SCORE -> EvidenceType.BOOK_REVISION_SCORE
+        GateEvidenceKind.ANKI_DROID_STATUS -> EvidenceType.ANKI_DROID_STATUS
+        GateEvidenceKind.PRESCRIBED_WORK_COMPLETION -> EvidenceType.PRESCRIBED_WORK_COMPLETION
+        GateEvidenceKind.TUTOR_SIGN_OFF -> EvidenceType.TUTOR_SIGN_OFF
+    }
+}
+
+private fun storedOperator(comparison: GateComparison): RuleOperator {
+    return when (comparison) {
+        GateComparison.PRESENT -> RuleOperator.PRESENT
+        GateComparison.AT_LEAST -> RuleOperator.AT_LEAST
+        GateComparison.EQUALS -> RuleOperator.EQUALS
     }
 }
 
@@ -347,4 +369,3 @@ private inline fun <reified T : Enum<T>> enumOrNull(raw: String): T? {
     return enumValues<T>().firstOrNull { it.name == raw }
 }
 
-private val NUMERIC_OPERAND = Regex("[0-9]+(\\.[0-9]+)?")

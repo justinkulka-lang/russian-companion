@@ -13,7 +13,6 @@ import dev.russiancompanion.data.local.audio
 import dev.russiancompanion.data.local.gate
 import dev.russiancompanion.data.local.minimalDocument
 import dev.russiancompanion.data.local.rights
-import dev.russiancompanion.data.local.seed.GateConditionSeed
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.text
@@ -160,19 +159,7 @@ class NavigationShellTest {
                 lessonNumber = 1,
             ),
         ),
-        gateDefinitions = listOf(
-            gate(
-                conditions = listOf(
-                    GateConditionSeed(
-                        id = "c-book",
-                        evidenceType = "BOOK_REVISION_SCORE",
-                        operator = "AT_LEAST",
-                        operand = "1",
-                        sortOrder = 0,
-                    ),
-                ),
-            ),
-        ),
+        gateDefinitions = listOf(gate()),
         sourceTexts = listOf(text(matchVerified = true)),
         assetRightsRecords = listOf(rights()),
         audioModels = listOf(audio()),
