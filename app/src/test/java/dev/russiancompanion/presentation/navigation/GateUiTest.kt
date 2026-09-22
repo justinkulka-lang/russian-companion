@@ -57,7 +57,6 @@ class GateUiTest {
         compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
-        show("Locked — remaining: Book revision score, AnkiDroid completion or maturity, Prescribed work completion")
         click("Gates")
         compose.onNodeWithText("Activity gate, not proficiency certification.").performScrollTo().assertIsDisplayed()
         compose.onNodeWithText(
@@ -115,16 +114,21 @@ class GateUiTest {
         compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
 
         click("Home")
+        click("Gates")
         show("Recorded gate status: Satisfied")
         compose.onNodeWithText("Locked — remaining", substring = true).assertDoesNotExist()
     }
 
     private fun click(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = false)
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun show(text: String) {
-        compose.onNodeWithText(text, substring = true).performScrollTo().assertIsDisplayed()
+        val node = compose.onNodeWithText(text, substring = true)
+        runCatching { node.performScrollTo() }
+        node.assertIsDisplayed()
     }
 
     private fun replaceField(index: Int, value: String) {

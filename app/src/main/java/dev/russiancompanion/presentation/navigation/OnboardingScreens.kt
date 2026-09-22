@@ -22,6 +22,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.selected
@@ -191,7 +192,9 @@ internal fun LessonSelectionList(
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(
-        modifier = modifier.selectableGroup(),
+        modifier = modifier
+            .selectableGroup()
+            .testTag("lesson-selection-list"),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         if (lessons.isEmpty()) {

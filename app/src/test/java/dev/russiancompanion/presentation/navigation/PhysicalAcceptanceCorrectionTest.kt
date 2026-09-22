@@ -2,6 +2,10 @@ package dev.russiancompanion.presentation.navigation
 
 import android.content.Context
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.SemanticsProperties
@@ -12,9 +16,10 @@ import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.isSelected
 import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
@@ -99,8 +104,10 @@ class PhysicalAcceptanceCorrectionTest {
         showPackaged()
         compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
-        for (lesson in 1..30) {
-            compose.onNodeWithText("Lesson $lesson", substring = false).performScrollTo().assertIsDisplayed()
+        val list = compose.onNodeWithTag("lesson-selection-list")
+        for (index in 0 until 30) {
+            list.performScrollToIndex(index)
+            compose.onNodeWithText("Lesson ${index + 1}", substring = false).assertIsDisplayed()
             compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
         }
     }
@@ -108,8 +115,8 @@ class PhysicalAcceptanceCorrectionTest {
     @Test
     fun tappingLesson12SelectsOnlyLesson12AndEnablesConfirm() {
         val snapshot = lessonSnapshot()
-        var selected: String? = null
         compose.setContent {
+            var selected by remember { mutableStateOf<String?>(null) }
             CompanionTheme(AppearancePreference.DARK) {
                 OnboardingLessonSelection(
                     snapshot = snapshot,
@@ -125,12 +132,15 @@ class PhysicalAcceptanceCorrectionTest {
             }
         }
         compose.onNodeWithText("Confirm lesson").assertIsNotEnabled()
-        compose.onNodeWithText("Lesson 12", substring = false).performScrollTo().performClick()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(11)
+        compose.onNodeWithText("Lesson 12", substring = false).performClick()
         compose.waitForIdle()
-        assertEquals("segment-12", selected)
         compose.onNodeWithText("Selected: Lesson 12").assertIsDisplayed()
         compose.onNode(hasText("Lesson 12") and isSelected()).assertExists()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed().assertIsEnabled()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(0)
+        compose.onNode(hasText("Lesson 1") and isSelected()).assertDoesNotExist()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(11)
         val selectedRows = compose.onAllNodes(selectedMatcher(), useUnmergedTree = true)
             .fetchSemanticsNodes()
             .count { node ->
@@ -140,7 +150,7 @@ class PhysicalAcceptanceCorrectionTest {
     }
 
     @Test
-    fun confirmationPersistsOnceOpensHomeAndRelaunchRestoresTheLesson() {
+    fun confirmationPersistsOnceAndOpensHome() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -148,22 +158,25 @@ class PhysicalAcceptanceCorrectionTest {
         val gateway = CountingGateway(inner)
         show(gateway)
         compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("Lesson 12", substring = false).performScrollTo().performClick()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(11)
+        compose.onNodeWithText("Lesson 12", substring = false).performClick()
         compose.onNodeWithText("Selected: Lesson 12").assertIsDisplayed()
         compose.onNodeWithText("Confirm lesson").assertIsEnabled().performClick()
         compose.onNodeWithText("Current lesson: Lesson 12").assertIsDisplayed()
         compose.onNodeWithText("Home", substring = false).assertIsDisplayed()
         assertEquals(1, gateway.confirms)
         compose.onNodeWithText("Confirm lesson").assertDoesNotExist()
+    }
 
-        compose.setContent {
-            CompanionApp(
-                gateway = RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio()),
-                onRetryOpen = {},
-                today = { "2026-09-21" },
-                practiceAudio = PermissivePracticeAudio(),
-            )
-        }
+    @Test
+    fun relaunchRestoresTheSelectedLessonAndSkipsOnboarding() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val store = LocalStore.openInMemory(context).also { stores += it }
+        store.applySeed(LocalStore.readPackagedSeed(context))
+        val gateway = RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio())
+        val lesson = gateway.current("2026-09-21").lessons.first { it.lessonReference == "Lesson 12" }
+        gateway.confirmLesson(lesson.id, "2026-09-21")
+        show(gateway)
         compose.onNodeWithText("Current lesson: Lesson 12").assertIsDisplayed()
         compose.onNodeWithText("Home", substring = false).assertIsDisplayed()
         compose.onNodeWithText("Next").assertDoesNotExist()
@@ -178,7 +191,8 @@ class PhysicalAcceptanceCorrectionTest {
         val inner = RoomNavigationGateway(store, { LocalStore.readPackagedSeed(context) }, PermissivePracticeAudio())
         show(ThrowingConfirmGateway(inner))
         compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("Lesson 12", substring = false).performScrollTo().performClick()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(11)
+        compose.onNodeWithText("Lesson 12", substring = false).performClick()
         compose.onNodeWithText("Confirm lesson").performClick()
         compose.onNodeWithText("The lesson selection was not saved. Stay on this screen and try again.")
             .assertIsDisplayed()

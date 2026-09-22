@@ -168,11 +168,15 @@ class ProgressUiTest {
     }
 
     private fun click(text: String, substring: Boolean = false) {
-        compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = substring)
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun show(text: String) {
-        compose.onNodeWithText(text, substring = true).performScrollTo().assertIsDisplayed()
+        val node = compose.onNodeWithText(text, substring = true)
+        runCatching { node.performScrollTo() }
+        node.assertIsDisplayed()
     }
 
     private class UnreadableProgressGateway : NavigationGateway {

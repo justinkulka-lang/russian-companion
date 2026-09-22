@@ -221,15 +221,21 @@ class DailyPlanUiTest {
     }
 
     private fun clickText(text: String, substring: Boolean = true) {
-        compose.onNodeWithText(text, substring = substring).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = substring)
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun clickContinue() {
-        compose.onAllNodesWithText("Continue").onLast().performScrollTo().performClick()
+        val node = compose.onAllNodesWithText("Continue").onLast()
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun showText(text: String) {
-        compose.onNodeWithText(text).performScrollTo().assertIsDisplayed()
+        val node = compose.onNodeWithText(text)
+        runCatching { node.performScrollTo() }
+        node.assertIsDisplayed()
     }
 
     private fun show(gateway: NavigationGateway, practiceAudio: PracticeAudio = PermissivePracticeAudio()) {

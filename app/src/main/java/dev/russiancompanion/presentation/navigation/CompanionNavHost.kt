@@ -382,6 +382,12 @@ private fun HomeScreen(
 ) {
     val libraryAvailable = practiceLibraryAvailable(snapshot)
     ShellPage(title = stringResource(R.string.home_title)) {
+        if (!snapshot.progress.readable) {
+            Text(
+                stringResource(R.string.local_data_message),
+                color = MaterialTheme.colorScheme.error,
+            )
+        }
         HomePlanSection(
             snapshot = snapshot,
             appearance = appearance,

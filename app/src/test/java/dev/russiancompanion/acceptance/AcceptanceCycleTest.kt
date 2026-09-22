@@ -203,11 +203,15 @@ class AcceptanceCycleTest {
     }
 
     private fun click(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = false)
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun show(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().assertIsDisplayed()
+        val node = compose.onNodeWithText(text, substring = false)
+        runCatching { node.performScrollTo() }
+        node.assertIsDisplayed()
     }
 
     private fun replaceField(index: Int, value: String) {

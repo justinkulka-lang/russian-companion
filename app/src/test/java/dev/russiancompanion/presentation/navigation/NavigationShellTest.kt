@@ -3,9 +3,11 @@ package dev.russiancompanion.presentation.navigation
 import android.content.Context
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.local.audio
@@ -60,10 +62,14 @@ class NavigationShellTest {
         compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Onboarding cannot finish because plan definitions are unavailable.").assertDoesNotExist()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
-        compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Lesson 2", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Lesson 3", substring = false).performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Lesson 30", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(0)
+        compose.onNodeWithText("Lesson 1", substring = false).assertIsDisplayed()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(1)
+        compose.onNodeWithText("Lesson 2", substring = false).assertIsDisplayed()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(2)
+        compose.onNodeWithText("Lesson 3", substring = false).assertIsDisplayed()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(29)
+        compose.onNodeWithText("Lesson 30", substring = false).assertIsDisplayed()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
         compose.onNodeWithText("Attributions and licenses").assertDoesNotExist()
         compose.onNodeWithText("Back").performClick()
@@ -77,7 +83,8 @@ class NavigationShellTest {
         runCatching { back.performScrollTo() }
         back.performClick()
         compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().performClick()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(0)
+        compose.onNodeWithText("Lesson 1", substring = false).performClick()
         compose.onNodeWithText("Selected: Lesson 1").assertIsDisplayed()
         compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
         compose.onNodeWithText("Confirm lesson").performClick()
@@ -121,7 +128,9 @@ class NavigationShellTest {
         showText("TEST-LICENSE: Test attribution")
         clickText("Back to practice")
         showText("Practice session")
-        compose.onNodeWithText("Back").performScrollTo().performClick()
+        val sessionBack = compose.onNodeWithText("Back")
+        runCatching { sessionBack.performScrollTo() }
+        sessionBack.performClick()
         compose.onNodeWithText("No licensed practice audio is available.").assertDoesNotExist()
         clickText("Home", substring = false)
 

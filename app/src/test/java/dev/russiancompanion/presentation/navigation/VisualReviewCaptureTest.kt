@@ -5,10 +5,11 @@ import android.graphics.Bitmap
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.test.captureToImage
 import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.data.navigation.RoomNavigationGateway
@@ -53,7 +54,8 @@ class VisualReviewCaptureTest {
         compose.onNodeWithText("Next").performClick()
         compose.onNodeWithText("Lesson 1", substring = false).performClick()
         capture("02-lesson-selection-lesson-1")
-        compose.onNodeWithText("Lesson 30", substring = false).performScrollTo().performClick()
+        compose.onNodeWithTag("lesson-selection-list").performScrollToIndex(29)
+        compose.onNodeWithText("Lesson 30", substring = false).performClick()
         capture("03-lesson-selection-lesson-30")
         compose.onNodeWithText("Confirm lesson").performClick()
         capture("04-home")
