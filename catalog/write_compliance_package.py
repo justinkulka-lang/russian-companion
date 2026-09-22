@@ -193,6 +193,8 @@ def write_compliance_artifacts(root: Path, document: dict | None = None) -> dict
     confirmations = {row.get("shareAlikeConfirmation") for row in document["sourceRecords"]}
     if len(confirmations) != 1:
         missing.append({"audioModelId": None, "issues": ["mixed-share-alike-confirmation"]})
+    if "NOT_APPLICABLE" in confirmations:
+        missing.append({"audioModelId": None, "issues": ["not-applicable-rejected-for-share-alike-catalog"]})
 
     source_entries = []
     for source in document["sourceRecords"]:

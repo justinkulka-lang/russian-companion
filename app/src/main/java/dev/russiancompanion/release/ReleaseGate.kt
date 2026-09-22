@@ -176,7 +176,14 @@ private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
     if (prepared.sources.isEmpty() || prepared.rights.isEmpty() || rightsIncomplete) {
         blockers += ReleaseBlocker.RIGHTS_RECORDS_ABSENT
     }
-    if (prepared.sources.any { it.shareAlikeConfirmation == ShareAlikeConfirmation.UNCONFIRMED }) {
+    if (prepared.sources.any { source ->
+            source.shareAlikeConfirmation != ShareAlikeConfirmation.CONFIRMED &&
+                (
+                    source.licenseName.contains("CC BY-SA") ||
+                        source.shareAlikeConfirmation == ShareAlikeConfirmation.UNCONFIRMED
+                    )
+        }
+    ) {
         blockers += ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED
     }
     if (prepared.sources.any { source ->
@@ -194,6 +201,7 @@ private const val APPROVED_SHARE_ALIKE_TREATMENT =
 
 private const val COMPLIANCE_PACKAGE_PATH = "catalog/compliance/share-alike-package.json"
 private const val READY_FOR_INDEPENDENT_REVIEW = "READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW"
+private const val SHARE_ALIKE_CONFIRMED_CLASSIFICATION = "SHARE_ALIKE_CONFIRMED"
 private const val PROPOSED_CONFIRMATION_NOT_ACTIVATED = "NOT_ACTIVATED"
 private const val PROPOSED_CONFIRMATION_ACTIVATED = "ACTIVATED"
 
@@ -294,7 +302,6 @@ private fun compliancePackageBlockers(repositoryRoot: File, seed: String?): List
         blockers += ReleaseBlocker.SHARE_ALIKE_TREATMENT_INCONSISTENT
     }
     val confirmation = seedConfirmations.singleOrNull()
-    val blockedClassification = parsed.classification.startsWith("BLOCKED_")
     when (confirmation) {
         "UNCONFIRMED" -> {
             if (parsed.classification != READY_FOR_INDEPENDENT_REVIEW ||
@@ -304,11 +311,12 @@ private fun compliancePackageBlockers(repositoryRoot: File, seed: String?): List
             }
         }
         "CONFIRMED" -> {
-            if (parsed.proposedConfirmation != PROPOSED_CONFIRMATION_ACTIVATED || blockedClassification) {
+            if (parsed.proposedConfirmation != PROPOSED_CONFIRMATION_ACTIVATED ||
+                parsed.classification != SHARE_ALIKE_CONFIRMED_CLASSIFICATION
+            ) {
                 blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
             }
         }
-        "NOT_APPLICABLE" -> Unit
         else -> blockers += ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE
     }
     return blockers.distinct()

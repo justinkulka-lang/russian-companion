@@ -175,8 +175,13 @@ class CatalogComplianceTest {
         assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("NOT APPLIED"))
         val proposed = File(root, "catalog/compliance/proposed-confirmation.json").readText()
         assertTrue(proposed.contains("NOT_ACTIVATED"))
+        assertTrue(proposed.contains("SHARE_ALIKE_CONFIRMED"))
+        assertTrue(File(root, "catalog/compliance/PROPOSED_CONFIRMATION.md").readText().contains("SHARE_ALIKE_CONFIRMED"))
         assertFalse(File(root, "app/src/main/assets/content/bundled-content.json").readText()
             .contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
+        assertFalse(File(root, "app/src/main/assets/content/bundled-content.json").readText()
+            .contains("\"shareAlikeConfirmation\": \"NOT_APPLICABLE\""))
+        assertEquals("READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW", packageJson.getValue("classification").jsonPrimitive.content)
     }
 
     @Test

@@ -279,6 +279,47 @@ class ReleaseGateTest {
     }
 
     @Test
+    fun notApplicableShareAlikeOnCcBySaCatalogFailsClosed() {
+        val (root, manifest) = retainedFixture()
+        val parsed = SeedJson.parse(
+            File(repositoryRoot(), "app/src/main/assets/content/bundled-content.json").readText(),
+        )
+        assertTrue(parsed is SeedParse.Ok)
+        val skipped = (parsed as SeedParse.Ok).document.copy(
+            sourceRecords = parsed.document.sourceRecords.map { record ->
+                record.copy(shareAlikeConfirmation = "NOT_APPLICABLE")
+            },
+        )
+        val assessment = assessPackagedRelease(SeedJson.encode(skipped), manifest, root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+    }
+
+    @Test
+    fun notApplicableConfirmationFailsClosedOnTheCompliancePackage() {
+        val root = Files.createTempDirectory("release-not-applicable").toFile()
+        copyPackagedComplianceSurface(repositoryRoot(), root)
+        replaceIn(
+            File(root, "app/src/main/assets/content/bundled-content.json"),
+            "\"shareAlikeConfirmation\": \"UNCONFIRMED\"",
+            "\"shareAlikeConfirmation\": \"NOT_APPLICABLE\"",
+        )
+        replaceIn(
+            File(root, "catalog/compliance/share-alike-package.json"),
+            "\"shareAlikeConfirmationInSeed\": \"UNCONFIRMED\"",
+            "\"shareAlikeConfirmationInSeed\": \"NOT_APPLICABLE\"",
+        )
+        val assessment = assessRepositoryRelease(root)
+        assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertTrue(assessment.blockers.contains(ReleaseBlocker.COMPLIANCE_PACKAGE_UNREADABLE))
+        assertFalse(File(repositoryRoot(), "app/src/main/assets/content/bundled-content.json").readText()
+            .contains("\"shareAlikeConfirmation\": \"CONFIRMED\""))
+        assertFalse(File(repositoryRoot(), "app/src/main/assets/content/bundled-content.json").readText()
+            .contains("\"shareAlikeConfirmation\": \"NOT_APPLICABLE\""))
+    }
+
+    @Test
     fun retainedStateWithoutAFileStaysMissing() {
         val root = Files.createTempDirectory("release-evidence").toFile()
         val manifest = manifest(

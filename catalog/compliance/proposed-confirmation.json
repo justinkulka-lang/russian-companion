@@ -8,7 +8,7 @@
     "application code",
     "user recordings and user-entered data"
   ],
-  "change": "after independent acceptance of the conservative catalog-wide CC BY-SA 4.0 database, selection, and arrangement treatment, set every sourceRecords.shareAlikeConfirmation from UNCONFIRMED to the confirmed token and set proposedConfirmation to ACTIVATED",
+  "change": "after independent acceptance of the conservative catalog-wide CC BY-SA 4.0 database, selection, and arrangement treatment, set every sourceRecords.shareAlikeConfirmation from UNCONFIRMED to the confirmed token, set proposedConfirmation to ACTIVATED, and set classification to SHARE_ALIKE_CONFIRMED. NOT_APPLICABLE is not permitted.",
   "sourceIds": [
     "shtooka-sakhno-cc-by-3.0-us",
     "shtooka-streit-cc-by-2.0-fr",
