@@ -23,9 +23,9 @@ class AcceptanceBoundaryTest {
     @Test
     fun at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion() {
         val labels = userFacingText()
-        assertTrue(labels.contains("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course."))
-        assertTrue(labels.contains("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs."))
-        assertTrue(labels.contains("This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency."))
+        assertTrue(labels.contains("This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress."))
+        assertTrue(labels.contains("Book work uses your copy."))
+        assertTrue(labels.contains("This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency."))
         assertTrue(labels.contains("Grammar practice stays in your copy of the book and its answer key."))
         assertTrue(labels.contains("Vocabulary and forms practice stays in AnkiDroid. The app records only what you report completing."))
         assertTrue(labels.contains("Today's Plan"))
@@ -34,6 +34,8 @@ class AcceptanceBoundaryTest {
         assertTrue(labels.contains("Progress"))
         assertTrue(labels.contains("Local export"))
         listOf(
+            "independent adult beginner",
+            "The New Penguin Russian Course",
             "handwriting",
             "dictionary",
             "media library",
@@ -53,13 +55,7 @@ class AcceptanceBoundaryTest {
             assertFalse(prohibited, labels.contains(prohibited, ignoreCase = true))
         }
         val penguinLines = labels.lineSequence().filter { it.contains("Penguin") }.map { it.trim() }.toList()
-        assertEquals(
-            listOf(
-                "This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.",
-                "This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.",
-            ),
-            penguinLines,
-        )
+        assertEquals(emptyList<String>(), penguinLines)
     }
 
     @Test

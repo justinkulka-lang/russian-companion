@@ -74,21 +74,18 @@ class DeviceAcceptancePackageTest {
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
-        assertEquals("1.1.0", candidate.getValue("versionName").jsonPrimitive.content)
-        assertEquals(3, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
+        assertEquals("1.1.1", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(4, candidate.getValue("versionCode").jsonPrimitive.content.toInt())
         assertEquals(4, candidate.getValue("schemaVersion").jsonPrimitive.content.toInt())
-        assertEquals(
-            "3dcbea82be4d9a1d997d4a9c892d0231f55b871d",
-            candidate.getValue("sourceCommit").jsonPrimitive.content,
-        )
+        assertEquals("null", candidate.getValue("sourceCommit").toString())
         val sourceDigest = candidate.getValue("sourceDigest").jsonPrimitive.content
         assertTrue(sourceDigest.matches(Regex("^[a-f0-9]{64}$")))
         assertEquals(
             dev.russiancompanion.release.computeReleaseSourceDigest(root),
             sourceDigest,
         )
-        assertEquals(true, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
-        assertEquals(true, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
+        assertEquals(false, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
+        assertEquals(false, candidate.getValue("frozen").jsonPrimitive.content.toBoolean())
         val preserved = candidate.getValue("preservedPriorCandidate").jsonObject
         assertEquals(
             "0602edaeb05a353de5e994c127eb87b5b97078a3",
@@ -102,18 +99,25 @@ class DeviceAcceptancePackageTest {
             preservedArtifact.getValue("sha256").jsonPrimitive.content,
         )
         val artifact = candidate.getValue("artifact").jsonObject
-        assertEquals("acceptance-candidate-debug-apk", artifact.getValue("artifactName").jsonPrimitive.content)
-        val artifactStatus = artifact.getValue("status").jsonPrimitive.content
-        assertEquals("RECORDED", artifactStatus)
+        assertEquals("NOT_RECORDED", artifact.getValue("status").jsonPrimitive.content)
+        val failed = candidate.getValue("preservedFailedCandidate").jsonObject
+        assertEquals("1.1.0", failed.getValue("versionName").jsonPrimitive.content)
+        assertEquals(3, failed.getValue("versionCode").jsonPrimitive.content.toInt())
+        assertEquals(
+            "3dcbea82be4d9a1d997d4a9c892d0231f55b871d",
+            failed.getValue("sourceCommit").jsonPrimitive.content,
+        )
+        val failedArtifact = failed.getValue("artifact").jsonObject
+        assertEquals("RECORDED", failedArtifact.getValue("status").jsonPrimitive.content)
         assertEquals(
             "33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016",
-            artifact.getValue("sha256").jsonPrimitive.content,
+            failedArtifact.getValue("sha256").jsonPrimitive.content,
         )
-        assertEquals(29277335L, artifact.getValue("apkBytes").jsonPrimitive.content.toLong())
-        assertEquals("35765579094", artifact.getValue("runId").jsonPrimitive.content)
+        assertEquals(29277335L, failedArtifact.getValue("apkBytes").jsonPrimitive.content.toLong())
+        assertEquals("35765579094", failedArtifact.getValue("runId").jsonPrimitive.content)
         assertEquals(
             "https://github.com/justinkulka-lang/russian-companion/actions/runs/35765579094",
-            artifact.getValue("runUrl").jsonPrimitive.content,
+            failedArtifact.getValue("runUrl").jsonPrimitive.content,
         )
         val frozen = candidate.getValue("preservedFrozenCandidate").jsonObject
         assertEquals("1.0.0", frozen.getValue("versionName").jsonPrimitive.content)

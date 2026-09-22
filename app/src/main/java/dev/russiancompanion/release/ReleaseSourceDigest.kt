@@ -52,6 +52,16 @@ internal data class AcceptanceCandidateDocument(
     val frozen: Boolean = false,
     val sourceCommit: String? = null,
     val artifact: CandidateArtifactIdentity? = null,
+    val preservedFailedCandidate: PreservedCandidateRecord? = null,
+)
+
+@Serializable
+internal data class PreservedCandidateRecord(
+    val versionName: String? = null,
+    val versionCode: Int? = null,
+    val sourceCommit: String? = null,
+    val sourceDigest: String? = null,
+    val artifact: CandidateArtifactIdentity? = null,
 )
 
 @Serializable
@@ -120,6 +130,24 @@ internal fun candidateMatchesBinding(
         candidate.versionName == binding.versionName &&
         candidate.versionCode == binding.versionCode &&
         SHA256.matches(candidate.sourceDigest)
+}
+
+internal fun failedFrozenCandidateReused(
+    candidate: AcceptanceCandidateDocument?,
+    recorded: FrozenCandidateIdentity?,
+): Boolean {
+    val failed = candidate?.preservedFailedCandidate ?: return false
+    val failedSha = failed.artifact?.sha256
+    val failedCommit = failed.sourceCommit
+    if (recorded != null) {
+        if (!failedSha.isNullOrBlank() && recorded.apkSha256 == failedSha) return true
+        if (!failedCommit.isNullOrBlank() && recorded.sourceCommit == failedCommit) return true
+    }
+    return candidate.frozen &&
+        failed.versionName != null &&
+        candidate.versionName == failed.versionName &&
+        failed.versionCode != null &&
+        candidate.versionCode == failed.versionCode
 }
 
 internal fun recordedCandidateIdentity(candidate: AcceptanceCandidateDocument?): FrozenCandidateIdentity? {

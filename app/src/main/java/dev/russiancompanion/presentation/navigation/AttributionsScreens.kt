@@ -1,14 +1,11 @@
 package dev.russiancompanion.presentation.navigation
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -16,8 +13,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.semantics.heading
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.AssetInventoryOption
@@ -41,38 +36,29 @@ internal fun AttributionInventoryScreen(
     } else {
         snapshot.attributions
     }
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ShellPage(
+        title = stringResource(R.string.attributions_title),
+        onBack = onBack,
+        onHome = onHome,
+        scrollable = false,
     ) {
-        Text(
-            text = stringResource(R.string.attributions_title),
-            style = MaterialTheme.typography.headlineSmall,
-            modifier = Modifier.semantics { heading() },
-        )
-        TextButton(onClick = onBack) { Text(stringResource(R.string.navigate_back)) }
-        if (onHome != null) {
-            TextButton(onClick = onHome) { Text(stringResource(R.string.navigate_home)) }
-        }
         if (practiceAudioId != null) {
-            TextButton(onClick = onBack) { Text(stringResource(R.string.back_to_practice)) }
+            SecondaryAction(text = stringResource(R.string.back_to_practice), onClick = onBack)
         }
         if (snapshot.attributions.size > 10 && featuredSource != null) {
-            TextButton(
+            SecondaryAction(
+                text = sourceButtonLabel(featuredSource),
                 onClick = {
                     selectedSourceId = featuredSource.sourceId
                     selectedAssetKey = null
                 },
-            ) {
-                Text(sourceButtonLabel(featuredSource))
-            }
+            )
             if (selectedSourceId == featuredSource.sourceId) {
                 SourceRecordDetail(featuredSource)
-                TextButton(onClick = { selectedSourceId = null }) {
-                    Text(stringResource(R.string.attributions_close))
-                }
+                SecondaryAction(
+                    text = stringResource(R.string.attributions_close),
+                    onClick = { selectedSourceId = null },
+                )
             }
         }
         if (snapshot.shareAlikeBlocksRelease) {
@@ -88,41 +74,43 @@ internal fun AttributionInventoryScreen(
         if (snapshot.licenseNotices.isNotEmpty()) {
             Text(stringResource(R.string.attributions_license_texts))
             snapshot.licenseNotices.forEach { notice ->
-                TextButton(
+                SecondaryAction(
+                    text = notice.title,
                     onClick = {
                         selectedLicenseId = notice.id
                         selectedSourceId = null
                         selectedAssetKey = null
                     },
-                ) {
-                    Text(notice.title)
-                }
+                )
                 if (selectedLicenseId == notice.id) {
-                    Text(notice.body, maxLines = 8)
-                    TextButton(onClick = { selectedLicenseId = null }) {
-                        Text(stringResource(R.string.attributions_close))
-                    }
+                    Text(notice.body, maxLines = 8, color = MaterialTheme.colorScheme.onBackground)
+                    SecondaryAction(
+                        text = stringResource(R.string.attributions_close),
+                        onClick = { selectedLicenseId = null },
+                    )
                 }
             }
         }
         LazyColumn(
-            modifier = Modifier.weight(1f),
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f, fill = true),
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             items(remainingSources, key = { "source:${it.sourceId}" }) { record ->
-                TextButton(
+                SecondaryAction(
+                    text = sourceButtonLabel(record),
                     onClick = {
                         selectedSourceId = record.sourceId
                         selectedAssetKey = null
                     },
-                ) {
-                    Text(sourceButtonLabel(record))
-                }
+                )
                 if (selectedSourceId == record.sourceId) {
                     SourceRecordDetail(record)
-                    TextButton(onClick = { selectedSourceId = null }) {
-                        Text(stringResource(R.string.attributions_close))
-                    }
+                    SecondaryAction(
+                        text = stringResource(R.string.attributions_close),
+                        onClick = { selectedSourceId = null },
+                    )
                 }
             }
             if (linked != null) {
@@ -133,19 +121,19 @@ internal fun AttributionInventoryScreen(
             items(snapshot.assetRecords, key = { assetKey(it) }) { asset ->
                 val key = assetKey(asset)
                 val sameAsLinked = linked != null && assetKey(linked) == key
-                TextButton(
+                SecondaryAction(
+                    text = assetButtonLabel(asset),
                     onClick = {
                         selectedAssetKey = key
                         selectedSourceId = null
                     },
-                ) {
-                    Text(assetButtonLabel(asset))
-                }
+                )
                 if (selectedAssetKey == key && !sameAsLinked) {
                     AssetRecordDetail(asset)
-                    TextButton(onClick = { selectedAssetKey = null }) {
-                        Text(stringResource(R.string.attributions_close))
-                    }
+                    SecondaryAction(
+                        text = stringResource(R.string.attributions_close),
+                        onClick = { selectedAssetKey = null },
+                    )
                 }
             }
         }

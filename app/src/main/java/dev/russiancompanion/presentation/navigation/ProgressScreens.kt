@@ -5,9 +5,9 @@ import android.net.Uri
 import android.provider.OpenableColumns
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -65,9 +65,10 @@ internal fun ProgressScreen(
             StorageHealthSection(snapshot)
             StudyBalanceSection(snapshot)
             for (log in progress.recentLogs) {
-                TextButton(onClick = { selectedLogId = log.id }) {
-                    Text(stringResource(R.string.progress_log_entry, categoryLabel(log.category), log.recordedAtLocal))
-                }
+                SecondaryAction(
+                    text = stringResource(R.string.progress_log_entry, categoryLabel(log.category), log.recordedAtLocal),
+                    onClick = { selectedLogId = log.id },
+                )
             }
             val selected = progress.recentLogs.firstOrNull { it.id == selectedLogId }
             if (selected != null) {
@@ -91,14 +92,15 @@ internal fun ProgressScreen(
                 if (attestation.isNotBlank()) {
                     Text(attestation)
                 }
-                TextButton(onClick = { selectedLogId = null }) {
-                    Text(stringResource(R.string.progress_close_log))
-                }
+                SecondaryAction(
+                    text = stringResource(R.string.progress_close_log),
+                    onClick = { selectedLogId = null },
+                )
             }
         }
-        TextButton(onClick = onLogActivity) { Text(stringResource(R.string.log_activity_title)) }
-        TextButton(onClick = onExport) { Text(stringResource(R.string.local_export_title)) }
-        TextButton(onClick = onGates) { Text(stringResource(R.string.open_gates)) }
+        PrimaryAction(text = stringResource(R.string.log_activity_title), onClick = onLogActivity)
+        SecondaryAction(text = stringResource(R.string.local_export_title), onClick = onExport)
+        SecondaryAction(text = stringResource(R.string.open_gates), onClick = onGates)
     }
 }
 
@@ -127,9 +129,11 @@ internal fun LogActivityScreen(
             Text(stringResource(R.string.log_category_required))
         }
         for (category in RecordedCategory.entries) {
-            TextButton(onClick = { selected = category }) {
-                Text(categoryLabel(category))
-            }
+            SecondaryAction(
+                text = categoryLabel(category),
+                onClick = { selected = category },
+                enabled = !operationInProgress,
+            )
         }
         when (selected) {
             RecordedCategory.GRAMMAR -> Text(stringResource(R.string.log_book_practice))
@@ -152,26 +156,32 @@ internal fun LogActivityScreen(
                 modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
             )
         }
-        TextButton(onClick = { completed = !completed }) {
-            Text(stringResource(R.string.log_mark_completed))
-        }
+        SecondaryAction(
+            text = stringResource(R.string.log_mark_completed),
+            onClick = { completed = !completed },
+            enabled = !operationInProgress,
+        )
         if (completed) {
             Text(stringResource(R.string.plan_completed))
         }
         if (snapshot.activeSegmentId != null) {
-            TextButton(onClick = { associate = !associate }) {
-                Text(stringResource(R.string.log_associate_lesson))
-            }
+            SecondaryAction(
+                text = stringResource(R.string.log_associate_lesson),
+                onClick = { associate = !associate },
+                enabled = !operationInProgress,
+            )
         }
         if (fromPlan) {
-            TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
+            SecondaryAction(text = stringResource(R.string.open_todays_plan), onClick = onTodaysPlan)
         }
         if (failed) {
             Text(
                 stringResource(R.string.plan_not_saved),
+                color = MaterialTheme.colorScheme.error,
                 modifier = Modifier.semantics { liveRegion = LiveRegionMode.Assertive },
             )
-            TextButton(
+            SecondaryAction(
+                text = stringResource(R.string.navigate_retry),
                 onClick = {
                     saveLog(
                         selected = selected,
@@ -186,9 +196,10 @@ internal fun LogActivityScreen(
                     )
                 },
                 enabled = !operationInProgress,
-            ) { Text(stringResource(R.string.navigate_retry)) }
+            )
         }
-        TextButton(
+        PrimaryAction(
+            text = stringResource(R.string.log_save),
             onClick = {
                 saveLog(
                     selected = selected,
@@ -203,7 +214,7 @@ internal fun LogActivityScreen(
                 )
             },
             enabled = !operationInProgress && selected != null && durationAccepted,
-        ) { Text(stringResource(R.string.log_save)) }
+        )
     }
 }
 
@@ -281,9 +292,10 @@ internal fun LocalExportScreen(
                 modifier = Modifier.semantics { liveRegion = LiveRegionMode.Polite },
             )
         }
-        TextButton(
+        PrimaryAction(
+            text = stringResource(R.string.local_export_choose),
             onClick = {
-                if (busy) return@TextButton
+                if (busy) return@PrimaryAction
                 val choose = chooseExportDestination
                 if (choose != null) {
                     val selection = choose()
@@ -301,7 +313,7 @@ internal fun LocalExportScreen(
                 }
             },
             enabled = !busy,
-        ) { Text(stringResource(R.string.local_export_choose)) }
+        )
         when (val current = status) {
             is ExportUpdate.Completed -> {
                 Text(stringResource(R.string.export_completed))

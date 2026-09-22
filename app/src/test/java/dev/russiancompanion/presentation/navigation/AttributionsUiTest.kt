@@ -134,7 +134,7 @@ class AttributionsUiTest {
         show("This audio is excluded from practice.")
         click("Back")
 
-        repeat(3) { click("Next") }
+        click("Next")
         click("Lesson 1")
         click("Confirm lesson")
         click("Practice")

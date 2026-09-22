@@ -1,13 +1,10 @@
 package dev.russiancompanion.presentation.navigation
 
 import android.os.Build
-import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.domain.appearance.AppearancePreference
 import dev.russiancompanion.domain.appearance.defaultAppearancePreference
+import dev.russiancompanion.presentation.theme.CompanionTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -166,6 +163,7 @@ internal fun CompanionApp(
     val lifecycleOwner = LocalLifecycleOwner.current
     var appearance by remember(appearanceStore) { mutableStateOf(defaultAppearancePreference()) }
     var appearanceSaveFailed by remember(appearanceStore) { mutableStateOf(false) }
+    var lessonConfirmFailed by remember(gateway) { mutableStateOf(false) }
     LaunchedEffect(appearanceStore, lifecycleOwner) {
         lifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
             appearanceStore.preference.collect { stored ->
@@ -173,11 +171,7 @@ internal fun CompanionApp(
             }
         }
     }
-    val followSystemDark = isSystemInDarkTheme()
-    val useDark = appearance == AppearancePreference.DARK ||
-        (appearance == AppearancePreference.FOLLOW_SYSTEM && followSystemDark)
-    val colors = if (useDark) darkColorScheme() else lightColorScheme()
-    MaterialTheme(colorScheme = colors) {
+    CompanionTheme(appearance = appearance) {
         key(launch, optionalDrillsAvailable(snapshot)) {
             val navController = rememberNavController()
             CompanionNavHost(
@@ -186,14 +180,19 @@ internal fun CompanionApp(
                 snapshot = snapshot,
                 saveFailed = failedAction != null,
                 operationInProgress = operationInProgress,
+                lessonConfirmFailed = lessonConfirmFailed,
                 onConfirmLesson = { segmentId ->
                     work.submit(
                         work = {
-                            gateway?.confirmLesson(segmentId, today())
+                            val current = gateway ?: error("Local data is not open")
+                            current.confirmLesson(segmentId, today())
                             true
                         },
                         onFailure = { false },
-                    ) { succeeded -> if (succeeded) refresh() }
+                    ) { succeeded ->
+                        lessonConfirmFailed = !succeeded
+                        if (succeeded) refresh()
+                    }
                 },
                 onReloadSeed = {
                     work.submit(

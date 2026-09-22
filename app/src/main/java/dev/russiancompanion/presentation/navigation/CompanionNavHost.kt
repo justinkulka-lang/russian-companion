@@ -1,10 +1,9 @@
 package dev.russiancompanion.presentation.navigation
 
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -17,8 +16,6 @@ import dev.russiancompanion.R
 import dev.russiancompanion.domain.navigation.LaunchDestination
 import dev.russiancompanion.domain.navigation.NavigationSnapshot
 import dev.russiancompanion.domain.navigation.NavigationSurface
-import dev.russiancompanion.domain.navigation.OnboardingConfirmation
-import dev.russiancompanion.domain.navigation.onboardingConfirmation
 import dev.russiancompanion.domain.navigation.optionalDrillsAvailable
 import dev.russiancompanion.domain.navigation.practiceLibraryAvailable
 import dev.russiancompanion.domain.appearance.AppearancePreference
@@ -45,6 +42,7 @@ internal fun CompanionNavHost(
     snapshot: NavigationSnapshot,
     saveFailed: Boolean,
     operationInProgress: Boolean = false,
+    lessonConfirmFailed: Boolean = false,
     onConfirmLesson: (String) -> Unit,
     onReloadSeed: () -> Unit,
     onRetryOpen: () -> Unit,
@@ -83,6 +81,8 @@ internal fun CompanionNavHost(
                 },
                 onConfirmLesson = onConfirmLesson,
                 onReloadSeed = onReloadSeed,
+                operationInProgress = operationInProgress,
+                confirmFailed = lessonConfirmFailed,
             )
         }
         composable<LocalDataRoute> {
@@ -356,63 +356,11 @@ private fun goHome(navController: NavHostController) {
 }
 
 @Composable
-private fun OnboardingScreen(
-    snapshot: NavigationSnapshot,
-    onAttributions: () -> Unit,
-    onConfirmLesson: (String) -> Unit,
-    onReloadSeed: () -> Unit,
-) {
-    var page by rememberSaveable { mutableIntStateOf(0) }
-    var selectedLessonId by rememberSaveable { mutableStateOf<String?>(null) }
-    val confirmation = onboardingConfirmation(snapshot, selectedLessonId)
-    val plansUnavailable = confirmation == OnboardingConfirmation.PLAN_DEFINITIONS_UNAVAILABLE ||
-        confirmation == OnboardingConfirmation.CATALOG_UNAVAILABLE ||
-        snapshot.lessons.none { it.planCount > 0 }
-    ShellPage(
-        title = stringResource(R.string.onboarding_title),
-        onBack = if (page == 0) null else ({ page -= 1 }),
-    ) {
-        when (page) {
-            0 -> {
-                Text(stringResource(R.string.onboarding_identity))
-                Text(stringResource(R.string.onboarding_role))
-            }
-            1 -> Text(stringResource(R.string.onboarding_limits))
-            2 -> Text(stringResource(R.string.onboarding_local_data))
-            else -> {
-                if (selectedLessonId == null || snapshot.lessons.isEmpty()) {
-                    Text(stringResource(R.string.onboarding_lesson_required))
-                }
-                if (plansUnavailable) {
-                    Text(stringResource(R.string.onboarding_plans_unavailable))
-                    TextButton(onClick = onReloadSeed) { Text(stringResource(R.string.navigate_retry)) }
-                }
-                snapshot.lessons.forEach { lesson ->
-                    TextButton(onClick = { selectedLessonId = lesson.id }) {
-                        Text(lesson.lessonReference)
-                    }
-                }
-                TextButton(
-                    onClick = { selectedLessonId?.let(onConfirmLesson) },
-                    enabled = confirmation == OnboardingConfirmation.READY,
-                ) {
-                    Text(stringResource(R.string.onboarding_confirm))
-                }
-            }
-        }
-        if (page < 3) {
-            TextButton(onClick = { page += 1 }) { Text(stringResource(R.string.navigate_next)) }
-        }
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
-    }
-}
-
-@Composable
 private fun LocalDataScreen(onRetry: () -> Unit, onAttributions: () -> Unit) {
     ShellPage(title = stringResource(R.string.local_data_title)) {
-        Text(stringResource(R.string.local_data_message))
-        TextButton(onClick = onRetry) { Text(stringResource(R.string.navigate_retry)) }
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
+        Text(stringResource(R.string.local_data_message), color = MaterialTheme.colorScheme.onBackground)
+        PrimaryAction(text = stringResource(R.string.navigate_retry), onClick = onRetry)
+        SecondaryAction(text = stringResource(R.string.open_attributions), onClick = onAttributions)
     }
 }
 
@@ -434,13 +382,12 @@ private fun HomeScreen(
 ) {
     val libraryAvailable = practiceLibraryAvailable(snapshot)
     ShellPage(title = stringResource(R.string.home_title)) {
-        Text(
-            stringResource(
-                R.string.home_build_identity,
-                dev.russiancompanion.BuildConfig.VERSION_NAME,
-                shortCommit(dev.russiancompanion.BuildConfig.GIT_COMMIT),
-            ),
-        )
+        if (!snapshot.progress.readable) {
+            Text(
+                stringResource(R.string.local_data_message),
+                color = MaterialTheme.colorScheme.error,
+            )
+        }
         HomePlanSection(
             snapshot = snapshot,
             appearance = appearance,
@@ -451,18 +398,26 @@ private fun HomeScreen(
             onTodaysPlan = onTodaysPlan,
             onSelectLesson = onSelectLesson,
         )
-        TextButton(onClick = onPractice, enabled = libraryAvailable) {
-            Text(stringResource(R.string.open_practice))
-        }
+        PrimaryAction(text = stringResource(R.string.open_todays_plan), onClick = onTodaysPlan)
+        SecondaryAction(text = stringResource(R.string.open_practice), onClick = onPractice, enabled = libraryAvailable)
         if (!libraryAvailable) {
-            Text(stringResource(R.string.practice_none))
+            Text(stringResource(R.string.practice_none), color = MaterialTheme.colorScheme.onBackground)
         }
-        TextButton(onClick = onGates) { Text(stringResource(R.string.open_gates)) }
-        TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
+        SecondaryAction(text = stringResource(R.string.open_gates), onClick = onGates)
+        SecondaryAction(text = stringResource(R.string.open_progress), onClick = onProgress)
+        SecondaryAction(text = stringResource(R.string.open_attributions), onClick = onAttributions)
         if (optionalDrillsAvailable(snapshot)) {
-            TextButton(onClick = onOptionalDrills) { Text(stringResource(R.string.open_optional_drills)) }
+            SecondaryAction(text = stringResource(R.string.open_optional_drills), onClick = onOptionalDrills)
         }
+        Text(
+            stringResource(
+                R.string.home_build_identity,
+                dev.russiancompanion.BuildConfig.VERSION_NAME,
+                shortCommit(dev.russiancompanion.BuildConfig.GIT_COMMIT),
+            ),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
 }
 
@@ -497,10 +452,16 @@ private fun TodaysPlanScreen(
             onRetrySave = onRetrySave,
             actionsEnabled = !operationInProgress,
         )
-        TextButton(onClick = onPractice, enabled = libraryAvailable) {
-            Text(stringResource(R.string.open_practice))
-        }
-        TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
+        SecondaryAction(
+            text = stringResource(R.string.open_practice),
+            onClick = onPractice,
+            enabled = libraryAvailable && !operationInProgress,
+        )
+        SecondaryAction(
+            text = stringResource(R.string.open_progress),
+            onClick = onProgress,
+            enabled = !operationInProgress,
+        )
     }
 }
 
@@ -534,17 +495,27 @@ private fun PracticeSessionScreen(
             onComplete = onCompletePractice,
         )
         if (previousId != null) {
-            TextButton(onClick = { onPrevious(previousId) }) {
-                Text(stringResource(R.string.practice_previous))
-            }
+            SecondaryAction(
+                text = stringResource(R.string.practice_previous),
+                onClick = { onPrevious(previousId) },
+                enabled = !operationInProgress,
+            )
         }
         if (nextId != null) {
-            TextButton(onClick = { onNext(nextId) }) {
-                Text(stringResource(R.string.practice_next))
-            }
+            SecondaryAction(
+                text = stringResource(R.string.practice_next),
+                onClick = { onNext(nextId) },
+                enabled = !operationInProgress,
+            )
         }
-        TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan_from_practice)) }
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
+        SecondaryAction(
+            text = stringResource(R.string.open_todays_plan_from_practice),
+            onClick = onTodaysPlan,
+        )
+        SecondaryAction(
+            text = stringResource(R.string.open_attributions),
+            onClick = onAttributions,
+        )
     }
 }
 
@@ -557,9 +528,12 @@ private fun GatesScreen(
     onBack: () -> Unit,
 ) {
     ShellPage(title = stringResource(R.string.gates_title), onBack = onBack, onHome = onHome) {
-        Text(stringResource(R.string.gates_not_proficiency))
+        Text(
+            stringResource(R.string.gates_not_proficiency),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
         GateListBody(details = snapshot.gateDetails, onOpen = onOpen)
-        TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
+        SecondaryAction(text = stringResource(R.string.open_progress), onClick = onProgress)
     }
 }
 
@@ -577,9 +551,15 @@ private fun GateDetailScreen(
 ) {
     val detail = snapshot.gateDetails.firstOrNull { it.id == gateId }
     ShellPage(title = stringResource(R.string.gate_detail_title), onBack = onGates, onHome = onHome, busy = operationInProgress) {
-        Text(stringResource(R.string.gates_not_proficiency))
+        Text(
+            stringResource(R.string.gates_not_proficiency),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
         if (detail == null) {
-            Text(stringResource(R.string.gate_unreadable))
+            Text(
+                stringResource(R.string.gate_unreadable),
+                color = MaterialTheme.colorScheme.error,
+            )
         } else {
             GateDetailBody(
                 detail = detail,
@@ -588,8 +568,8 @@ private fun GateDetailScreen(
                 onAddTutor = onAddTutorSignOff,
             )
         }
-        TextButton(onClick = onTodaysPlan) { Text(stringResource(R.string.open_todays_plan)) }
-        TextButton(onClick = onProgress) { Text(stringResource(R.string.open_progress)) }
+        SecondaryAction(text = stringResource(R.string.open_todays_plan), onClick = onTodaysPlan)
+        SecondaryAction(text = stringResource(R.string.open_progress), onClick = onProgress)
     }
 }
 
@@ -600,8 +580,11 @@ private fun OptionalDrillsScreen(
     onBack: () -> Unit,
 ) {
     ShellPage(title = stringResource(R.string.optional_drills_title), onBack = onBack, onHome = onHome) {
-        Text(stringResource(R.string.optional_drills_not_evidence))
-        TextButton(onClick = onAttributions) { Text(stringResource(R.string.open_attributions)) }
+        Text(
+            stringResource(R.string.optional_drills_not_evidence),
+            color = MaterialTheme.colorScheme.onBackground,
+        )
+        SecondaryAction(text = stringResource(R.string.open_attributions), onClick = onAttributions)
     }
 }
 

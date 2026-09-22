@@ -2,24 +2,37 @@
   "schemaVersion": 4,
   "kind": "physical-device-acceptance-candidate",
   "publicRelease": "NOT_APPROVED",
-  "frozen": true,
-  "sourceCommit": "3dcbea82be4d9a1d997d4a9c892d0231f55b871d",
+  "frozen": false,
+  "sourceCommit": null,
   "gradleTask": "assembleDebug",
   "applicationId": "dev.russiancompanion",
-  "versionName": "1.1.0",
-  "versionCode": 3,
-  "sourceDigest": "0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4",
-  "doNotRebuildForHashMatch": true,
+  "versionName": "1.1.1",
+  "versionCode": 4,
+  "sourceDigest": "6c715dae04ed83c94dafec6d6c575b6b15bc7f15e01dbaa2c4127cec9861d1b0",
+  "doNotRebuildForHashMatch": false,
   "artifact": {
-    "status": "RECORDED",
-    "workflowFile": ".github/workflows/build.yml",
-    "artifactName": "acceptance-candidate-debug-apk",
-    "identityFile": "artifact-identity.json",
-    "apkFileName": "app-debug.apk",
-    "runId": "35765579094",
-    "runUrl": "https://github.com/justinkulka-lang/russian-companion/actions/runs/35765579094",
-    "sha256": "33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016",
-    "apkBytes": 29277335
+    "status": "NOT_RECORDED"
+  },
+  "preservedFailedCandidate": {
+    "kind": "physical-device-acceptance-candidate",
+    "publicRelease": "NOT_APPROVED",
+    "frozen": true,
+    "sourceCommit": "3dcbea82be4d9a1d997d4a9c892d0231f55b871d",
+    "versionName": "1.1.0",
+    "versionCode": 3,
+    "doNotRebuildForHashMatch": true,
+    "sourceDigest": "0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4",
+    "artifact": {
+      "status": "RECORDED",
+      "workflowFile": ".github/workflows/build.yml",
+      "artifactName": "acceptance-candidate-debug-apk",
+      "identityFile": "artifact-identity.json",
+      "apkFileName": "app-debug.apk",
+      "runId": "35765579094",
+      "runUrl": "https://github.com/justinkulka-lang/russian-companion/actions/runs/35765579094",
+      "sha256": "33a57f945ee8a178c6f228c2513e37bae6ad072cd9c4968daf930351efef6016",
+      "apkBytes": 29277335
+    }
   },
   "preservedFrozenCandidate": {
     "kind": "physical-device-acceptance-candidate",
@@ -58,7 +71,7 @@
       "apkBytes": 29081799
     }
   },
-  "circularityResolution": "assembleRelease, bundleRelease, packageRelease, packageReleaseBundle, and other release output tasks depend on checkReleaseGate. The gate recomputes the release source digest and fails closed if it does not match this manifest and retained evidence. Physical procedures require an installed debug candidate first. GitHub Actions publishes assembleDebug as artifact acceptance-candidate-debug-apk. It does not bypass or weaken the release gate. The frozen 1.1.0 APK from run 35765579094 is the current v1.1 acceptance candidate. The frozen 1.0.0 APK from run 35754785768 is preserved historically and is not the v1.1 candidate. The 0.0.0 APK from run 35740338300 is also preserved.",
+  "circularityResolution": "assembleRelease, bundleRelease, packageRelease, packageReleaseBundle, and other release output tasks depend on checkReleaseGate. The gate recomputes the release source digest and fails closed if it does not match this manifest and retained evidence. Physical procedures require an installed debug candidate first. GitHub Actions publishes assembleDebug as artifact acceptance-candidate-debug-apk. It does not bypass or weaken the release gate. Version 1.1.1 / versionCode 4 is NOT_FROZEN and NOT_APPROVED. The failed frozen 1.1.0 APK from run 35765579094 is preserved as preservedFailedCandidate and cannot authorize 1.1.1. The frozen 1.0.0 APK from run 35754785768 is preserved historically. The 0.0.0 APK from run 35740338300 is also preserved.",
   "retainedEvidence": "MISSING",
   "unexecutedProcedures": [
     "AT-001",

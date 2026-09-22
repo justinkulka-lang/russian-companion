@@ -8,13 +8,17 @@
     <string name="work_in_progress">This action is in progress.</string>
 
     <string name="onboarding_title">Onboarding</string>
-    <string name="onboarding_identity">This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.</string>
-    <string name="onboarding_role">This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.</string>
-    <string name="onboarding_limits">This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.</string>
+    <string name="onboarding_identity">This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.</string>
+    <string name="onboarding_role">This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.</string>
+    <string name="onboarding_book">Book work uses your copy.</string>
+    <string name="onboarding_limits">This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency.</string>
     <string name="onboarding_local_data">Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.</string>
     <string name="onboarding_lesson_required">A lesson selection is required to create the plan.</string>
+    <string name="onboarding_select_lesson">Select your current lesson</string>
+    <string name="onboarding_lesson_selected">Selected: %1$s</string>
     <string name="onboarding_plans_unavailable">Onboarding cannot finish because plan definitions are unavailable.</string>
     <string name="onboarding_confirm">Confirm lesson</string>
+    <string name="onboarding_confirm_failed">The lesson selection was not saved. Stay on this screen and try again.</string>
 
     <string name="local_data_title">Local data problem</string>
     <string name="local_data_message">Local data could not be opened. Bundled content and user data are affected.</string>

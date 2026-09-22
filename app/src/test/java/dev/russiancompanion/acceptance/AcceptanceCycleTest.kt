@@ -97,11 +97,9 @@ class AcceptanceCycleTest {
             )
         }
 
-        show("This offline app is a study companion for an independent adult beginner working through The New Penguin Russian Course.")
-        show("This app coordinates your book, AnkiDroid work, listening and recording, gates, and logs.")
-        click("Next")
-        show("This app does not teach from reproduced Penguin content, connect to AnkiDroid, judge Russian, or certify proficiency.")
-        click("Next")
+        show("This offline companion coordinates your book work, AnkiDroid practice, listening and recording, advancement gates, and local progress.")
+        show("Book work uses your copy.")
+        show("This app does not teach from reproduced book text, connect to AnkiDroid, judge Russian, or certify proficiency.")
         show("Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.")
         click("Next")
         click("Lesson 1")
@@ -205,11 +203,15 @@ class AcceptanceCycleTest {
     }
 
     private fun click(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().performClick()
+        val node = compose.onNodeWithText(text, substring = false)
+        runCatching { node.performScrollTo() }
+        node.performClick()
     }
 
     private fun show(text: String) {
-        compose.onNodeWithText(text, substring = false).performScrollTo().assertIsDisplayed()
+        val node = compose.onNodeWithText(text, substring = false)
+        runCatching { node.performScrollTo() }
+        node.assertIsDisplayed()
     }
 
     private fun replaceField(index: Int, value: String) {
