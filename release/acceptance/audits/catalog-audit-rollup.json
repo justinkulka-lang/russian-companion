@@ -1,0 +1,91 @@
+{
+  "status": "WORKING_AUDIT_NOT_RETAINED",
+  "publicRelease": "NOT_APPROVED",
+  "result": "NOT_EXECUTED",
+  "note": "These inventories support AT-008 and AT-010. They are not retained evidence and do not mark any criterion satisfied.",
+  "sourceHashes": {
+    "app/src/main/assets/content/bundled-content.json": "01863054f8c1d46ccb3d4ff02da096034443aec17134e7ee4dda9484c29923df",
+    "catalog/compliance/share-alike-package.json": "5a29af6a595f6979b1a734ea00463d213a56e9788a89ff106963e15bb612c4fc",
+    "catalog/license-chains.json": "db57b6b9014bff9546d4037c4e41128c17dfec0720dab1ce9a0f226c17929fc4",
+    "catalog/source-decisions.json": "da2ed490b41b3e212cc1c035b78c9544b3a44c41ed12dde8ae089801f014aa13"
+  },
+  "coverage": {
+    "sourceRecords": 5,
+    "sourceTexts": 1000,
+    "assetRightsRecords": 1000,
+    "audioModels": 1000,
+    "audioLicenses": {
+      "CC BY 3.0 US": 74,
+      "CC BY 2.0 FR": 925,
+      "Public domain": 1
+    },
+    "itemsWithIssues": 0
+  },
+  "sourceRecords": [
+    {
+      "id": "shtooka-sakhno-cc-by-3.0-us",
+      "attribution": "Sergei Sakhno and Nicolas Vion, Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "provenance": "Shtooka collection rus-balm-voc-sakhno; OpenRussian accented headword",
+      "redistributionBasis": "Audio README: Creative Commons Attribution 3.0 United States, http://creativecommons.org/licenses/by/3.0/us/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Source export: https://github.com/Badestrand/russian-dictionary.",
+      "licenseName": "CC BY 3.0 US; CC BY-SA 4.0",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeConfirmation": "CONFIRMED",
+      "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
+    },
+    {
+      "id": "shtooka-streit-cc-by-2.0-fr",
+      "attribution": "Streit Goula, Streit Eric, and Nicolas Vion, Shtooka Project. Speaker on the file page: Gulnara Streit. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "provenance": "Shtooka collection rus-balm-voc; OpenRussian accented headword",
+      "redistributionBasis": "Audio README: Creative Commons Attribution 2.0 France, http://creativecommons.org/licenses/by/2.0/fr/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Source export: https://github.com/Badestrand/russian-dictionary.",
+      "licenseName": "CC BY 2.0 FR; CC BY-SA 4.0",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeConfirmation": "CONFIRMED",
+      "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
+    },
+    {
+      "id": "shtooka-fsi-languages-yojik-eu-streit-cc-by-2.0-fr",
+      "attribution": "Streit Goula, Streit Eric, and Nicolas Vion, Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "provenance": "fsi-languages.yojik.eu rus-balm-voc; OpenRussian accented headword",
+      "redistributionBasis": "Mirror README: Creative Commons Attribution 2.0 France, http://creativecommons.org/licenses/by/2.0/fr/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Source export: https://github.com/Badestrand/russian-dictionary.",
+      "licenseName": "CC BY 2.0 FR; CC BY-SA 4.0",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeConfirmation": "CONFIRMED",
+      "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
+    },
+    {
+      "id": "shtooka-sakhno-public-domain",
+      "attribution": "Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "provenance": "Shtooka collection file page; OpenRussian accented headword",
+      "redistributionBasis": "Per-file license: Public domain. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Source export: https://github.com/Badestrand/russian-dictionary.",
+      "licenseName": "Public domain; CC BY-SA 4.0",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeConfirmation": "CONFIRMED",
+      "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
+    },
+    {
+      "id": "shtooka-fsi-languages-yojik-eu-sakhno-cc-by-3.0-us",
+      "attribution": "Sergue\u00ef Sakhno and Nicolas Vion, Shtooka Project. Stress-marked text from OpenRussian, CC BY-SA 4.0.",
+      "provenance": "fsi-languages.yojik.eu rus-balm-voc-sakhno; OpenRussian accented headword",
+      "redistributionBasis": "Mirror README: Creative Commons Attribution 3.0 United States, http://creativecommons.org/licenses/by/3.0/us/. Dictionary text: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Source export: https://github.com/Badestrand/russian-dictionary.",
+      "licenseName": "CC BY 3.0 US; CC BY-SA 4.0",
+      "modificationStatus": "UNMODIFIED",
+      "shareAlikeConfirmation": "CONFIRMED",
+      "shareAlikeTreatment": "CC BY-SA 4.0 applies conservatively to copyright and database rights in the packaged catalog data, selection, and arrangement. Shtooka audio bytes keep their original CC BY or public-domain licenses and are not converted to CC BY-SA. Application code and user recordings or user-entered data are excluded."
+    }
+  ],
+  "rightsInventoryRows": 1000,
+  "rightsInventoryIssues": 0,
+  "audioLicenseMatchIssues": 0,
+  "sourceDecisionCounts": {
+    "EXCLUDED": 4417,
+    "STRESS_TEXT_ONLY": 1,
+    "PARTIAL": 1,
+    "NOT_ACQUIRED": 1,
+    "INCLUDED": 1000
+  },
+  "includedAudioLicenses": {
+    "CC BY 3.0 US": 74,
+    "CC BY 2.0 FR": 925,
+    "Public domain": 1
+  }
+}

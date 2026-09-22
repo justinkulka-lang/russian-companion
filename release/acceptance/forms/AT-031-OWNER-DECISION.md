@@ -12,11 +12,16 @@ results.
 ## Preconditions (must all be real retained results first)
 
 - AT-001 retained: no
+- AT-002 retained: no
 - AT-004 retained: no
+- AT-008 retained: no
+- AT-009 retained: no
+- AT-010 retained: no
 - AT-020 retained: no
 - AT-030 retained: no
 - Candidate commit:
 - Candidate APK SHA-256:
+- CI artifact run URL:
 
 ## Owner checklist (leave blank)
 

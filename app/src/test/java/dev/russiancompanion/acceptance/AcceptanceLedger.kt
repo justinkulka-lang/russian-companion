@@ -15,9 +15,10 @@ package dev.russiancompanion.acceptance
  * optional tutor plans plus tutor-free default gates. Listen plans bind
  * already-packaged catalog audio in catalog order; that is not a Penguin
  * lesson mapping. Structural tests do not satisfy AT-001.
- * AT-004, AT-020, AT-030, and AT-031 stay outstanding. A physical-device
- * acceptance package lives under release/acceptance/; those forms are not
- * retained evidence. assembleRelease reads release/retained-evidence.json
+ * AT-002, AT-004, AT-008, AT-009, AT-010, AT-020, AT-030, and AT-031
+ * stay outstanding. A physical-device acceptance package lives under
+ * release/acceptance/; those forms and working audits are not retained
+ * evidence. assembleRelease reads release/retained-evidence.json
  * and refuses a public release while any retained-evidence record is
  * missing. This is not a release approval.
  */

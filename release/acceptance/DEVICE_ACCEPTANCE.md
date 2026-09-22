@@ -2,10 +2,15 @@
 
 Status: **prepared, not executed**.
 
-This package is the handoff for physical-device procedures on a
-Galaxy S26 Ultra. It is not retained evidence. It does not satisfy
-AT-001, AT-004, AT-020, AT-030, or AT-031. Public release remains
-**NOT APPROVED**.
+This package is the handoff for physical-device and catalog-audit
+procedures on a Galaxy S26 Ultra. It is not retained evidence. It does
+not satisfy AT-001, AT-002, AT-004, AT-008, AT-009, AT-010, AT-020,
+AT-030, or AT-031. Public release remains **NOT APPROVED**.
+
+AT-031 requires results from AT-001 through AT-030. This package
+therefore includes AT-002, AT-008, AT-009, and AT-010 as well as the
+device procedures. Do not proceed to AT-031 until those results are
+actually retained.
 
 Do not mark `release/retained-evidence.json` `RETAINED`. Do not fill
 AT-031. Do not run `assembleRelease` as a substitute for device
@@ -22,8 +27,10 @@ Governing documents, in this order:
 ## 1. Candidate identification
 
 The installable acceptance candidate is the **debug APK** produced by
-the existing ungated Gradle task `assembleDebug`. It is not a public
-release.
+the existing ungated Gradle task `assembleDebug` and **published as the
+GitHub Actions artifact** `acceptance-candidate-debug-apk`. It is not a
+public release. Do not rebuild locally and expect the same debug APK
+hash. Reproducible-build equivalence has not been demonstrated.
 
 | Field | Value |
 |---|---|
@@ -32,20 +39,21 @@ release.
 | versionCode | `1` |
 | App content commit | `0602edaeb05a353de5e994c127eb87b5b97078a3` |
 | Gradle task | `assembleDebug` |
-| APK path | `app/build/outputs/apk/debug/app-debug.apk` |
-| SHA-256 | see `release/acceptance/candidate.json` |
+| Artifact name | `acceptance-candidate-debug-apk` |
+| Identity file in artifact | `artifact-identity.json` |
+| SHA-256 / byte count / run URL | see `release/acceptance/candidate.json` `artifact` after a successful workflow; until then `PENDING_SUCCESSFUL_WORKFLOW` |
 | Public release | `NOT_APPROVED` |
 
-Rebuild from this package branch:
+Download the exact APK:
 
-```
-./gradlew assembleDebug --offline
-sha256sum app/build/outputs/apk/debug/app-debug.apk
-```
-
-Compare the hash with `release/acceptance/candidate.json`. If they
-differ, record both hashes on every result form and identify which APK
-was installed. Debug APKs are not public-release artifacts.
+1. Open the successful Build run for this package branch / PR #20.
+2. Download artifact `acceptance-candidate-debug-apk`.
+3. Extract `app-debug.apk` and `artifact-identity.json`.
+4. `sha256sum app-debug.apk` and compare to `artifact-identity.json`
+   `sha256` and to `release/acceptance/candidate.json` once that file
+   records the same run.
+5. Install only that file. Record the run URL, SHA-256, and byte count
+   on every result form.
 
 `assembleRelease` remains fail-closed until AT-004, AT-020, AT-030, and
 AT-031 evidence is actually retained under `release/evidence/`.
@@ -77,29 +85,33 @@ Device: **Samsung Galaxy S26 Ultra**.
 Clean-install only. Do not upgrade over a previous Russian Companion
 install.
 
-1. Copy `app-debug.apk` to the device (USB). Record the on-device path.
-2. On a computer, compute SHA-256 of the same file that will be
-   installed. Record it on every result form.
-3. Settings → Apps → search **Russian Companion**. If present,
+1. Download the CI artifact `acceptance-candidate-debug-apk` from the
+   successful Build run. Do not use a locally rebuilt APK.
+2. Verify SHA-256 of the extracted `app-debug.apk` against
+   `artifact-identity.json` before copying it to the device. Record the
+   run URL, SHA-256, and byte count on every result form.
+3. Copy that exact `app-debug.apk` to the device (USB). Record the
+   on-device path.
+4. Settings → Apps → search **Russian Companion**. If present,
    Uninstall. Confirm it is gone.
-4. Settings → Security and privacy → Install unknown apps → allow the
+5. Settings → Security and privacy → Install unknown apps → allow the
    Files app (or the installer you will use) for this one install.
-5. Install the APK. Open App info and confirm:
+6. Install the APK. Open App info and confirm:
    - App name: Russian Companion
    - Version: `0.0.0`
-6. Do **not** open the app yet.
-7. Enable Airplane mode from Quick settings. Then open Settings →
+7. Do **not** open the app yet.
+8. Enable Airplane mode from Quick settings. Then open Settings →
    Connections and confirm:
    - Airplane mode is on
    - Mobile data is off
    - Wi-Fi is off (Samsung can re-enable Wi-Fi in airplane mode; leave
      it off)
    - Bluetooth is off
-8. Confirm the status bar shows airplane mode and no cellular or Wi-Fi
+9. Confirm the status bar shows airplane mode and no cellular or Wi-Fi
    connected indicator. Take screenshot
    `AT-004-00-airplane-mode.png`.
-9. There is no account or sign-in. Do not add a Google restore of this
-   app's data. `android:allowBackup` is false.
+10. There is no account or sign-in. Do not add a Google restore of this
+    app's data. `android:allowBackup` is false.
 
 Keep airplane mode on for the entire session, including process
 restart and reboot.
@@ -115,9 +127,12 @@ self-attestation.
 ## 4. Combined physical run
 
 Execute the following sequence once on the clean install. It covers
-AT-001, AT-004, AT-020 / MA-073, and AT-030. Fill the matching form
+AT-001, AT-002, AT-004, AT-020 / MA-073, and AT-030. AT-008, AT-009,
+and AT-010 use the same installed candidate plus the complete catalog
+audits under `release/acceptance/audits/`. Fill the matching form
 under `release/acceptance/forms/` as you go. Default result on every
-form is **NOT_EXECUTED**. Change it only after the device work.
+form is **NOT_EXECUTED**. Change it only after the work. An AT-030
+result does not stand in for AT-002, AT-008, AT-009, or AT-010.
 
 Exact on-screen labels are quoted.
 
@@ -279,6 +294,20 @@ evidence; self-attestations remain labeled; pronunciation is not
 scored; progress remains activity-only; the export contains logs, gate
 evidence, progress, and the recording.
 
+### B8. AT-002 explicit result (same run)
+
+AT-002 shares this lesson-cycle run. On the same forms, record a
+separate AT-002 result:
+
+- onboarding had no tutor information
+- the tutor task was added and removed and was not left enabled
+- the default gate was satisfied without tutor sign-off
+- no dedicated content author, original item bank, or ongoing
+  tutor-validation role was required
+
+Fill `release/acceptance/forms/AT-002.md`. Do not copy AT-030 into
+AT-002 without those checks.
+
 ### C. AT-004 remaining matrix items
 
 Still in airplane mode, still on the same install.
@@ -352,9 +381,61 @@ AT-020 expected result: plans, logs, gate evidence, gate decisions,
 progress, recording metadata, recording audio, and prior export files
 remain available and unchanged after reboot without network access.
 
+### F. AT-008 complete rights inventory
+
+Do not stop at one attribution screenshot.
+
+1. Open `release/acceptance/audits/AT-008-rights-inventory.tsv` and
+   `catalog-audit-rollup.json`. Confirm 1,000 rows and 0 issues.
+2. Confirm every source record in the rollup has attribution,
+   provenance, redistribution basis, license, modification status, and
+   the approved share-alike treatment.
+3. On the device, still in airplane mode, open
+   `Attributions and licenses`. Compare source rows, catalog notice,
+   and packaged license texts with the inventory. Screenshot
+   `AT-008-01-attributions-inventory.png` is supporting, not the
+   complete result.
+4. Fill `release/acceptance/forms/AT-008.md`. Retain the TSV and rollup
+   with the form.
+
+### G. AT-009 before-and-after release gate
+
+1. Read `release/acceptance/audits/AT-009-before-after.md`.
+2. Confirm commit `2c7bf44` recorded `UNCONFIRMED` /
+   `READY_FOR_INDEPENDENT_SHARE_ALIKE_REVIEW` / `NOT_ACTIVATED` and
+   tests required `SHARE_ALIKE_UNCONFIRMED`.
+3. Confirm independent review approved the conservative catalog-wide
+   treatment and `0602eda` activated `CONFIRMED` /
+   `SHARE_ALIKE_CONFIRMED` / `ACTIVATED`.
+4. Read `AT-009-after-activation-assembleRelease.txt`. Confirm
+   share-alike is no longer a blocker and AT-004, AT-020, AT-030, and
+   AT-031 still prevent release.
+5. Fill `release/acceptance/forms/AT-009.md`. Public release remains
+   NOT APPROVED.
+
+### H. AT-010 per-file license and text match
+
+Do not stop at one Practice Library screenshot.
+
+1. Open `release/acceptance/audits/AT-010-audio-license-match.tsv`
+   (1,000 included files) and `AT-010-source-decisions.tsv` (included
+   and excluded sources).
+2. Confirm included licenses are only CC BY 2.0 FR, CC BY 3.0 US, or
+   Public domain, every included file has matchVerified text, and
+   issue count is 0.
+3. Confirm excluded / not-acquired / incompatible sources remain
+   excluded in source-decisions.
+4. On the device, open Practice and confirm a packaged model plays
+   with its matched stress-marked text. Screenshot
+   `AT-010-01-practice-library.png` is supporting, not the complete
+   result.
+5. Fill `release/acceptance/forms/AT-010.md`. Retain both TSVs with
+   the form.
+
 ## 5. Pass / fail recording
 
-For each of AT-001, AT-004, AT-020, and AT-030:
+For each of AT-001, AT-002, AT-004, AT-008, AT-009, AT-010, AT-020,
+and AT-030:
 
 - `NOT_EXECUTED` — default in this package
 - `PASS` — every expected result above was observed and screenshots /
@@ -372,7 +453,11 @@ do this until the device work exists.
 | Procedure | Working form (this package) | Governed destination after a real result |
 |---|---|---|
 | AT-001 | `release/acceptance/forms/AT-001.md` | `release/evidence/AT-001.txt` plus screenshots below |
+| AT-002 | `release/acceptance/forms/AT-002.md` | `release/evidence/AT-002.txt` |
 | AT-004 | `release/acceptance/forms/AT-004.md` | `release/evidence/AT-004.txt` |
+| AT-008 | `release/acceptance/forms/AT-008.md` plus `audits/AT-008-rights-inventory.tsv` | `release/evidence/AT-008.txt` and `release/evidence/AT-008-rights-inventory.tsv` |
+| AT-009 | `release/acceptance/forms/AT-009.md` plus `audits/AT-009-before-after.md` | `release/evidence/AT-009.txt` |
+| AT-010 | `release/acceptance/forms/AT-010.md` plus the AT-010 TSVs | `release/evidence/AT-010.txt` and the per-file TSVs |
 | AT-020 | `release/acceptance/forms/AT-020.md` | `release/evidence/AT-020.txt` |
 | AT-030 | `release/acceptance/forms/AT-030.md` | `release/evidence/AT-030.txt` |
 | AT-031 | `release/acceptance/forms/AT-031-OWNER-DECISION.md` | `release/evidence/AT-031.txt` — Product Owner only, after AT-001 through AT-030 have real retained results |
@@ -396,6 +481,8 @@ release/evidence/screenshots/AT-030-05-export-completed.png
 release/evidence/screenshots/AT-020-01-airplane-after-reboot.png
 release/evidence/screenshots/AT-020-02-home-after-reboot.png
 release/evidence/screenshots/AT-020-03-recording-after-reboot.png
+release/evidence/screenshots/AT-008-01-attributions-inventory.png
+release/evidence/screenshots/AT-010-01-practice-library.png
 release/evidence/exports/AT-030-russian-companion-export.zip
 release/evidence/exports/AT-020-post-reboot-export.zip
 ```
@@ -416,7 +503,8 @@ four gate-manifest procedures. Still retain its device result at
 ## 7. AT-031
 
 Do not complete AT-031 in this package. After AT-001 through AT-030
-have real retained results, the Product Owner uses
+have real retained results, including AT-002, AT-008, AT-009, and
+AT-010, the Product Owner uses
 `release/acceptance/forms/AT-031-OWNER-DECISION.md`.
 
 ## 8. Procedures still blocked
@@ -424,7 +512,11 @@ have real retained results, the Product Owner uses
 These remain unexecuted and must stay `MISSING` or `OUTSTANDING`:
 
 - AT-001 — physical inspection of the installed candidate
+- AT-002 — full tutor-free use (explicit result from the shared run)
 - AT-004 — airplane-mode capability matrix on device
+- AT-008 — complete rights-record catalog audit
+- AT-009 — share-alike before-and-after release-gate evidence
+- AT-010 — per-file audio licensing and text matching
 - AT-020 — physical reboot
 - AT-030 — physical lesson cycle
 - AT-031 — owner release decision

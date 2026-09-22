@@ -6,6 +6,7 @@ import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import org.junit.Assert.assertEquals
@@ -25,26 +26,33 @@ class DeviceAcceptancePackageTest {
         val manifest = Json.parseToJsonElement(
             File(root, RELEASE_EVIDENCE_MANIFEST).readText(),
         ).jsonObject
-        val forms = listOf(
+        val workflow = File(root, ".github/workflows/build.yml").readText()
+        val formPaths = listOf(
             "release/acceptance/forms/AT-001.md",
+            "release/acceptance/forms/AT-002.md",
             "release/acceptance/forms/AT-004.md",
+            "release/acceptance/forms/AT-008.md",
+            "release/acceptance/forms/AT-009.md",
+            "release/acceptance/forms/AT-010.md",
             "release/acceptance/forms/AT-020.md",
             "release/acceptance/forms/AT-030.md",
             "release/acceptance/forms/AT-031-OWNER-DECISION.md",
-        ).associateWith { File(root, it).readText() }
+        )
+        val forms = formPaths.associateWith { File(root, it).readText() }
 
         assertTrue(instructions.contains("Galaxy S26 Ultra"))
-        assertTrue(instructions.contains("AT-001"))
-        assertTrue(instructions.contains("AT-004"))
-        assertTrue(instructions.contains("AT-020"))
-        assertTrue(instructions.contains("AT-030"))
-        assertTrue(instructions.contains("AT-031"))
+        listOf("AT-001", "AT-002", "AT-004", "AT-008", "AT-009", "AT-010", "AT-020", "AT-030", "AT-031")
+            .forEach { id -> assertTrue(id, instructions.contains(id)) }
         assertTrue(instructions.contains("Airplane mode"))
         assertTrue(instructions.contains("sha256sum"))
-        assertTrue(instructions.contains("release/evidence/AT-004.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-020.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-030.txt"))
-        assertTrue(instructions.contains("release/evidence/AT-031.txt"))
+        assertTrue(instructions.contains("acceptance-candidate-debug-apk"))
+        assertTrue(instructions.contains("Do not rebuild locally"))
+        assertTrue(instructions.contains("release/evidence/AT-002.txt"))
+        assertTrue(instructions.contains("release/evidence/AT-008.txt"))
+        assertTrue(instructions.contains("release/evidence/AT-009.txt"))
+        assertTrue(instructions.contains("release/evidence/AT-010.txt"))
+        assertTrue(instructions.contains("AT-008-rights-inventory.tsv"))
+        assertTrue(instructions.contains("SHARE_ALIKE_UNCONFIRMED"))
         assertTrue(instructions.contains("Use your copy of the book for this lesson"))
         assertTrue(instructions.contains("Do the assigned AnkiDroid work"))
         assertTrue(instructions.contains("Start listen-record-compare"))
@@ -55,22 +63,52 @@ class DeviceAcceptancePackageTest {
         assertTrue(instructions.contains("NOT_APPROVED"))
         assertFalse(instructions.contains("\"state\": \"RETAINED\""))
 
+        assertTrue(workflow.contains("actions/upload-artifact@v4"))
+        assertTrue(workflow.contains("acceptance-candidate-debug-apk"))
+        assertTrue(workflow.contains("artifact-identity.json"))
+        assertTrue(workflow.contains("if-no-files-found: error"))
+
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)
         assertEquals("assembleDebug", candidate.getValue("gradleTask").jsonPrimitive.content)
         assertEquals("0.0.0", candidate.getValue("versionName").jsonPrimitive.content)
+        assertEquals(true, candidate.getValue("doNotRebuildForHashMatch").jsonPrimitive.content.toBoolean())
         assertEquals(
             "0602edaeb05a353de5e994c127eb87b5b97078a3",
             candidate.getValue("sourceCommit").jsonPrimitive.content,
         )
-        val sha256 = candidate.getValue("sha256").jsonPrimitive.content
-        assertEquals(64, sha256.length)
-        assertTrue(sha256.matches(Regex("[0-9a-f]{64}")))
+        val artifact = candidate.getValue("artifact").jsonObject
+        assertEquals("acceptance-candidate-debug-apk", artifact.getValue("artifactName").jsonPrimitive.content)
+        val artifactStatus = artifact.getValue("status").jsonPrimitive.content
+        assertTrue(artifactStatus == "PENDING_SUCCESSFUL_WORKFLOW" || artifactStatus == "RECORDED")
+        if (artifactStatus == "RECORDED") {
+            val sha256 = artifact.getValue("sha256").jsonPrimitive.content
+            assertEquals(64, sha256.length)
+            assertTrue(sha256.matches(Regex("[0-9a-f]{64}")))
+            assertTrue(artifact.getValue("runUrl").jsonPrimitive.content.contains("/actions/runs/"))
+            assertTrue(artifact.getValue("apkBytes").jsonPrimitive.content.toLong() > 0L)
+        } else {
+            assertEquals(JsonNull, artifact.getValue("sha256"))
+            assertEquals(JsonNull, artifact.getValue("runUrl"))
+        }
         assertEquals("MISSING", candidate.getValue("retainedEvidence").jsonPrimitive.content)
         val unexecuted = candidate.getValue("unexecutedProcedures").jsonArray.map {
             it.jsonPrimitive.content
         }
-        assertEquals(listOf("AT-001", "AT-004", "AT-020", "AT-030", "AT-031"), unexecuted)
+        assertEquals(
+            listOf(
+                "AT-001",
+                "AT-002",
+                "AT-004",
+                "AT-008",
+                "AT-009",
+                "AT-010",
+                "AT-020",
+                "AT-030",
+                "AT-031",
+            ),
+            unexecuted,
+        )
 
         manifest.getValue("records").jsonArray.forEach { record ->
             assertEquals("MISSING", record.jsonObject.getValue("state").jsonPrimitive.content)
@@ -84,8 +122,25 @@ class DeviceAcceptancePackageTest {
         }
         val owner = forms.getValue("release/acceptance/forms/AT-031-OWNER-DECISION.md")
         assertTrue(owner.contains("Reserved for the Product Owner"))
+        assertTrue(owner.contains("AT-002 retained: no"))
+        assertTrue(owner.contains("AT-008 retained: no"))
+        assertTrue(owner.contains("AT-009 retained: no"))
+        assertTrue(owner.contains("AT-010 retained: no"))
         assertTrue(owner.contains("Decision (leave unset)"))
         assertFalse(owner.contains("Decision: APPROVED"))
+
+        val rollup = Json.parseToJsonElement(
+            File(root, "release/acceptance/audits/catalog-audit-rollup.json").readText(),
+        ).jsonObject
+        assertEquals("WORKING_AUDIT_NOT_RETAINED", rollup.getValue("status").jsonPrimitive.content)
+        assertEquals("NOT_EXECUTED", rollup.getValue("result").jsonPrimitive.content)
+        assertEquals(1000, File(root, "release/acceptance/audits/AT-008-rights-inventory.tsv").readLines().size - 1)
+        assertEquals(1000, File(root, "release/acceptance/audits/AT-010-audio-license-match.tsv").readLines().size - 1)
+        assertTrue(File(root, "release/acceptance/audits/AT-010-source-decisions.tsv").readLines().size > 1000)
+        val afterGate = File(root, "release/acceptance/audits/AT-009-after-activation-assembleRelease.txt").readText()
+        assertTrue(afterGate.contains("AT-004 offline verification evidence is not retained."))
+        assertFalse(afterGate.contains("share-alike confirmation is recorded."))
+        assertTrue(File(root, "release/acceptance/audits/AT-009-before-after.md").readText().contains("UNCONFIRMED"))
 
         val assessment = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
@@ -94,11 +149,10 @@ class DeviceAcceptancePackageTest {
         assertTrue(assessment.blockers.contains(ReleaseBlocker.REBOOT_EVIDENCE_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.LESSON_CYCLE_NOT_RETAINED))
         assertTrue(assessment.blockers.contains(ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED))
-        assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-001"))
-        assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-004"))
-        assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-020"))
-        assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-030"))
-        assertEquals(AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue("AT-031"))
+        listOf("AT-001", "AT-002", "AT-004", "AT-008", "AT-009", "AT-010", "AT-020", "AT-030", "AT-031")
+            .forEach { id ->
+                assertEquals(id, AcceptanceDisposition.OUTSTANDING, ACCEPTANCE_DISPOSITION.getValue(id))
+            }
         assertFalse(File(root, "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))
     }
 
