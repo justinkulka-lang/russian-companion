@@ -26,6 +26,8 @@ class LocalStoreTest {
             assertEquals(true, outcome.shareAlikeBlocksRelease)
             assertEquals(1, store.learnerCount())
             assertFalse(store.learner().onboardingCompleted)
+            assertEquals(listOf(1, 2, 3), store.eligibleSegments().map { it.lessonNumber })
+            assertEquals(3, store.eligibleGates().size)
         }
     }
 

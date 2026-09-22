@@ -248,9 +248,6 @@ class ReleaseGateTest {
             ReleaseBlocker.OWNER_RELEASE_DECISION_NOT_RETAINED,
         )
         val packagedBlockers = listOf(
-            ReleaseBlocker.PATHWAY_NOT_INSTALLED,
-            ReleaseBlocker.PLAN_DEFINITIONS_NOT_INSTALLED,
-            ReleaseBlocker.DEFAULT_GATE_NOT_INSTALLED,
             ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED,
         ) + missingEvidenceBlockers
     }

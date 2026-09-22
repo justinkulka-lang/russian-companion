@@ -26,19 +26,35 @@ import java.io.File
 
 class BundledContentRulesTest {
     @Test
-    fun shippedSeedMatchesLicensedAudioAndKeepsThePathwayEmpty() {
+    fun shippedSeedMatchesLicensedAudioAndInstallsThePlaceholderPathway() {
         val raw = shippedSeedFile().readText()
         val parsed = SeedJson.parse(raw)
         assertTrue(parsed is SeedParse.Ok)
         val document = (parsed as SeedParse.Ok).document
         assertEquals(1, document.contentVersion)
-        assertTrue(document.courseSegments.isEmpty())
-        assertTrue(document.planDefinitions.isEmpty())
-        assertTrue(document.gateDefinitions.isEmpty())
+        assertEquals(listOf(1, 2, 3), document.courseSegments.map { it.lessonNumber })
+        assertEquals(3, document.courseSegments.size)
+        assertEquals(12, document.planDefinitions.size)
+        assertEquals(3, document.gateDefinitions.size)
         assertTrue(document.optionalDrills.isEmpty())
         assertTrue(document.audioModels.isNotEmpty())
         assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
         val prepared = prepareBundledContent(document)
+        assertEquals(3, prepared.segments.size)
+        assertTrue(
+            prepared.plans
+                .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE && it.required }
+                .map { it.activityType }
+                .containsAll(
+                    listOf(
+                        PlanActivityType.BOOK,
+                        PlanActivityType.ANKI_DROID,
+                        PlanActivityType.LISTEN_RECORD_COMPARE,
+                    ),
+                ),
+        )
+        assertEquals(3, prepared.gates.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE })
+        assertTrue(prepared.gates.none { it.displayedRuleText.contains("Tutor") })
         assertEquals(document.audioModels.size, prepared.audio.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE })
         assertTrue(prepared.drills.isEmpty())
     }

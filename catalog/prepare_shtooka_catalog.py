@@ -2,7 +2,9 @@
 """Deterministic intake for the Shtooka word recordings and OpenRussian headwords.
 
 Copies source-supplied license text, filenames, and accented headwords.
-Does not invent spellings, stress marks, frequency ranks, or lesson mappings.
+Does not invent spellings, stress marks, frequency ranks, or Penguin lesson
+mappings. A 3-lesson placeholder conductor is merged from
+catalog/placeholder_pathway.json and bound to already-packaged audio IDs.
 """
 
 import os
@@ -27,6 +29,7 @@ ASSETS = ROOT / "app/src/main/assets"
 AUDIO_DIR = ASSETS / "audio"
 CACHE_DIR = ROOT / "catalog" / "audio-cache"
 SEED = ASSETS / "content/bundled-content.json"
+PLACEHOLDER_PATHWAY = ROOT / "catalog" / "placeholder_pathway.json"
 INTAKE = ROOT / "catalog/intake.json"
 DECISIONS = ROOT / "catalog/source-decisions.json"
 CHAINS = ROOT / "catalog/license-chains.json"
@@ -1064,6 +1067,20 @@ def assign_license(item, pages, commons_meta, reasons):
     return True
 
 
+def bind_placeholder_pathway(audio_ids):
+    """Install the 3-lesson placeholder conductor. Audio IDs are catalog words, not book items."""
+    raw = json.loads(PLACEHOLDER_PATHWAY.read_text(encoding="utf-8"))
+    listen_index = 0
+    for plan in raw["planDefinitions"]:
+        if plan["activityType"] != "LISTEN_RECORD_COMPARE":
+            continue
+        if listen_index >= len(audio_ids):
+            raise SystemExit("placeholder pathway needs packaged audio")
+        plan["audioModelIds"] = [audio_ids[listen_index]]
+        listen_index += 1
+    return raw
+
+
 def main():
     sakhno_readme = require_readme(
         SOURCES / "rus-balm-voc-sakhno" / "readme.txt",
@@ -1445,11 +1462,12 @@ def main():
         )
         ranks.append({"id": audio_id, "frequencyRank": item["rank"]})
 
+    pathway = bind_placeholder_pathway([row["id"] for row in audio])
     document = {
         "contentVersion": 1,
-        "courseSegments": [],
-        "planDefinitions": [],
-        "gateDefinitions": [],
+        "courseSegments": pathway["courseSegments"],
+        "planDefinitions": pathway["planDefinitions"],
+        "gateDefinitions": pathway["gateDefinitions"],
         "sourceRecords": [sources[source_id] for source_id in source_order],
         "sourceTexts": texts,
         "assetRightsRecords": rights,

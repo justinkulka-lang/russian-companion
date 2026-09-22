@@ -29,7 +29,7 @@ class CatalogIntakeTest {
         assertEquals(true, assessment.replacePackagedSeed)
         assertEquals(emptyList<String>(), assessment.excludedIds)
         val seed = File(root, "app/src/main/assets/content/bundled-content.json").readText()
-        assertTrue(seed.contains("\"courseSegments\": []"))
+        assertFalse(seed.contains("\"courseSegments\": []"))
         assertTrue(seed.contains("\"shareAlikeConfirmation\": \"UNCONFIRMED\""))
         assertFalse(seed.contains("en.openrussian.org/dictionary-data"))
         val document = (SeedJson.parse(seed) as SeedParse.Ok).document
@@ -171,9 +171,9 @@ class CatalogIntakeTest {
             assertEquals(listOf("LICENSE=Creative Commons BY"), evidence.indexLicenses)
         }
         val seed = (SeedJson.parse(File(root, "app/src/main/assets/content/bundled-content.json").readText()) as SeedParse.Ok).document
-        assertTrue(seed.courseSegments.isEmpty())
-        assertTrue(seed.planDefinitions.isEmpty())
-        assertTrue(seed.gateDefinitions.isEmpty())
+        assertEquals(listOf(1, 2, 3), seed.courseSegments.map { it.lessonNumber })
+        assertEquals(12, seed.planDefinitions.size)
+        assertEquals(3, seed.gateDefinitions.size)
         assertTrue(seed.optionalDrills.isEmpty())
         assertTrue(seed.audioModels.isNotEmpty())
         seed.sourceRecords.forEach { record ->
