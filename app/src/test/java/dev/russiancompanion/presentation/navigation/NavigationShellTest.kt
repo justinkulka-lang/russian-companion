@@ -2,7 +2,6 @@ package dev.russiancompanion.presentation.navigation
 
 import android.content.Context
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -39,7 +38,7 @@ class NavigationShellTest {
     }
 
     @Test
-    fun packagedCatalogWithoutPathwayStaysInOnboardingAndReportsShareAlikeBlock() {
+    fun packagedPlaceholderPathwayLetsOnboardingFinishAndStillReportsShareAlikeBlock() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context))
@@ -60,16 +59,22 @@ class NavigationShellTest {
             "Default gates do not require a tutor. Tutor sign-off can be added later only as stricter evidence you choose. All data stays on this device. Backup is a local export you start.",
         ).assertIsDisplayed()
         compose.onNodeWithText("Next").performClick()
-        compose.onNodeWithText("A lesson selection is required to create the plan.").assertIsDisplayed()
-        compose.onNodeWithText("Onboarding cannot finish because plan definitions are unavailable.").assertIsDisplayed()
-        compose.onNodeWithText("Confirm lesson").assertIsNotEnabled()
-        compose.onNodeWithText("Attributions and licenses").performClick()
+        compose.onNodeWithText("Onboarding cannot finish because plan definitions are unavailable.").assertDoesNotExist()
+        compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Lesson 2", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Lesson 3", substring = false).performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Attributions and licenses").performScrollTo().performClick()
         compose.onNodeWithText("Public release is blocked until share-alike confirmation is recorded.")
+            .performScrollTo()
             .assertIsDisplayed()
         compose.onNodeWithText("No attribution inventory is installed. This installation is not release-ready.")
             .assertDoesNotExist()
-        compose.onNodeWithText("Back").performClick()
-        compose.onNodeWithText("Confirm lesson").assertIsDisplayed()
+        compose.onNodeWithText("Back").performScrollTo().performClick()
+        compose.onNodeWithText("Lesson 1", substring = false).performScrollTo().performClick()
+        compose.onNodeWithText("Confirm lesson").performScrollTo().performClick()
+        compose.onNodeWithText("Current lesson: Lesson 1").assertIsDisplayed()
+        compose.onNodeWithText("Home", substring = false).assertIsDisplayed()
+        compose.onNodeWithText("Optional drills").assertDoesNotExist()
     }
 
     @Test

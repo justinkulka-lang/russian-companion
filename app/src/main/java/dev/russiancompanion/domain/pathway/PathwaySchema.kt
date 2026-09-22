@@ -4,8 +4,12 @@ package dev.russiancompanion.domain.pathway
  * Full v1 pathway schema for the Penguin-concurrent beginner arc.
  *
  * Capacity is the book's numbered lesson span (lesson identification only).
- * A shipped pathway may install fewer segments; it must never invent lessons
- * outside this span or reproduce book text.
+ * A shipped pathway may install fewer segments for development and acceptance
+ * work. Public release must not treat a placeholder or partial pathway as
+ * complete: [beginnerArcReleaseReady] requires lessons 1 through 30, each with
+ * eligible required book, AnkiDroid, and listen-record-compare plans and an
+ * eligible default gate. The schema must never invent lessons outside this
+ * span or reproduce book text.
  */
 internal const val PENGUIN_BEGINNER_ARC_LESSON_COUNT = 30
 
@@ -62,6 +66,44 @@ internal enum class PlanActivityKind {
     ANKI_DROID,
     LISTEN_RECORD_COMPARE,
     TUTOR,
+}
+
+internal val BEGINNER_ARC_REQUIRED_PLAN_KINDS = setOf(
+    PlanActivityKind.BOOK,
+    PlanActivityKind.ANKI_DROID,
+    PlanActivityKind.LISTEN_RECORD_COMPARE,
+)
+
+internal data class ArcPlanCoverage(
+    val segmentId: String,
+    val activity: PlanActivityKind,
+    val required: Boolean,
+)
+
+internal data class ArcGateCoverage(
+    val segmentId: String,
+)
+
+/**
+ * True only for the release-complete Penguin-concurrent beginner arc.
+ * A three-lesson placeholder, a missing lesson, or a lesson without its
+ * required plans or default gate is not release-ready.
+ */
+internal fun beginnerArcReleaseReady(
+    segments: List<PathwaySegment>,
+    plans: List<ArcPlanCoverage>,
+    gates: List<ArcGateCoverage>,
+): Boolean {
+    val pathway = validatePathwaySegments(segments)
+    if (!pathway.coversFullArc) return false
+    return pathway.segments.all { segment ->
+        val kinds = plans
+            .filter { it.segmentId == segment.id && it.required }
+            .map { it.activity }
+            .toSet()
+        kinds.containsAll(BEGINNER_ARC_REQUIRED_PLAN_KINDS) &&
+            gates.any { it.segmentId == segment.id }
+    }
 }
 
 internal data class PlanDefinitionDraft(

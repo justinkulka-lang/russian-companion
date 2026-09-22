@@ -48,8 +48,8 @@ import java.util.zip.ZipFile
 
 /**
  * Implementation evidence for the governed lesson cycle.
- * AT-004 and AT-030 stay outstanding: this run does not enable airplane mode,
- * and the packaged catalog still has no lesson or audio.
+ * AT-004 and AT-030 stay outstanding: this run does not enable airplane mode
+ * or retain device evidence.
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])

@@ -9,6 +9,11 @@ import dev.russiancompanion.data.local.seed.PreparedBundle
 import dev.russiancompanion.data.local.seed.SeedJson
 import dev.russiancompanion.data.local.seed.SeedParse
 import dev.russiancompanion.data.local.seed.prepareBundledContent
+import dev.russiancompanion.domain.pathway.ArcGateCoverage
+import dev.russiancompanion.domain.pathway.ArcPlanCoverage
+import dev.russiancompanion.domain.pathway.PathwaySegment
+import dev.russiancompanion.domain.pathway.PlanActivityKind
+import dev.russiancompanion.domain.pathway.beginnerArcReleaseReady
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
@@ -23,6 +28,7 @@ internal enum class ReleaseDecision {
 internal enum class ReleaseBlocker(val message: String) {
     CONTENT_UNREADABLE("Packaged content is absent or corrupt."),
     PATHWAY_NOT_INSTALLED("The packaged beginner pathway is not installed."),
+    PATHWAY_INCOMPLETE("The packaged beginner pathway is not the complete Penguin-concurrent arc."),
     PLAN_DEFINITIONS_NOT_INSTALLED("Required plan definitions are not installed."),
     DEFAULT_GATE_NOT_INSTALLED("A default gate is not installed."),
     LICENSED_AUDIO_NOT_PREPARED("Required licensed native audio is not prepared."),
@@ -125,8 +131,11 @@ fun main() {
 
 private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
     val blockers = mutableListOf<ReleaseBlocker>()
-    if (prepared.segments.none { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }) {
+    val eligibleSegments = prepared.segments.filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+    if (eligibleSegments.isEmpty()) {
         blockers += ReleaseBlocker.PATHWAY_NOT_INSTALLED
+    } else if (!packagedArcIsReleaseReady(prepared)) {
+        blockers += ReleaseBlocker.PATHWAY_INCOMPLETE
     }
     val requiredPlans = setOf(
         PlanActivityType.BOOK,
@@ -165,6 +174,42 @@ private fun contentBlockers(prepared: PreparedBundle): List<ReleaseBlocker> {
         blockers += ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED
     }
     return blockers
+}
+
+private fun packagedArcIsReleaseReady(prepared: PreparedBundle): Boolean {
+    return beginnerArcReleaseReady(
+        segments = prepared.segments
+            .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+            .map { segment ->
+                PathwaySegment(
+                    id = segment.id,
+                    lessonReference = segment.lessonReference,
+                    lessonNumber = segment.lessonNumber,
+                    sortOrder = segment.sortOrder,
+                )
+            },
+        plans = prepared.plans
+            .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+            .map { plan ->
+                ArcPlanCoverage(
+                    segmentId = plan.segmentId,
+                    activity = plan.activityType.toPlanActivityKind(),
+                    required = plan.required,
+                )
+            },
+        gates = prepared.gates
+            .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+            .map { gate -> ArcGateCoverage(segmentId = gate.segmentId) },
+    )
+}
+
+private fun PlanActivityType.toPlanActivityKind(): PlanActivityKind {
+    return when (this) {
+        PlanActivityType.BOOK -> PlanActivityKind.BOOK
+        PlanActivityType.ANKI_DROID -> PlanActivityKind.ANKI_DROID
+        PlanActivityType.LISTEN_RECORD_COMPARE -> PlanActivityKind.LISTEN_RECORD_COMPARE
+        PlanActivityType.TUTOR -> PlanActivityKind.TUTOR
+    }
 }
 
 private fun evidenceBlockers(manifest: String?, repositoryRoot: File): List<ReleaseBlocker> {
