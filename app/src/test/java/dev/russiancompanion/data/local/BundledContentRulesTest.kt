@@ -17,6 +17,7 @@ import dev.russiancompanion.domain.gate.GateComparison
 import dev.russiancompanion.domain.gate.GateEvidenceKind
 import dev.russiancompanion.domain.gate.GateRuleCondition
 import dev.russiancompanion.domain.gate.displayedRuleText
+import dev.russiancompanion.domain.pathway.PENGUIN_BEGINNER_ARC_LESSON_COUNT
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -26,35 +27,70 @@ import java.io.File
 
 class BundledContentRulesTest {
     @Test
-    fun shippedSeedMatchesLicensedAudioAndInstallsThePlaceholderPathway() {
+    fun shippedSeedMatchesLicensedAudioAndInstallsTheCompleteBeginnerPathway() {
         val raw = shippedSeedFile().readText()
         val parsed = SeedJson.parse(raw)
         assertTrue(parsed is SeedParse.Ok)
         val document = (parsed as SeedParse.Ok).document
         assertEquals(1, document.contentVersion)
-        assertEquals(listOf(1, 2, 3), document.courseSegments.map { it.lessonNumber })
-        assertEquals(3, document.courseSegments.size)
-        assertEquals(12, document.planDefinitions.size)
-        assertEquals(3, document.gateDefinitions.size)
+        val expectedLessons = (1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).toList()
+        assertEquals(expectedLessons, document.courseSegments.map { it.lessonNumber })
+        assertEquals(expectedLessons, document.courseSegments.map { it.sortOrder })
+        assertEquals(expectedLessons.map { "Lesson $it" }, document.courseSegments.map { it.lessonReference })
+        assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT * 4, document.planDefinitions.size)
+        assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT, document.gateDefinitions.size)
         assertTrue(document.optionalDrills.isEmpty())
-        assertTrue(document.audioModels.isNotEmpty())
+        assertEquals(1000, document.audioModels.size)
         assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "UNCONFIRMED" })
+        document.courseSegments.forEach { segment ->
+            assertFalse(segment.lessonReference.contains("Penguin"))
+            assertTrue(segment.lessonReference.none { it.code in CYRILLIC })
+        }
+        document.planDefinitions.forEach { plan ->
+            assertFalse(plan.instruction.contains("Penguin"))
+            assertTrue(plan.instruction.none { it.code in CYRILLIC })
+        }
+        document.gateDefinitions.forEach { gate ->
+            assertFalse(gate.displayedRuleText.contains("Tutor"))
+            assertFalse(gate.displayedRuleText.contains("Penguin"))
+            assertTrue(gate.displayedRuleText.none { it.code in CYRILLIC })
+        }
         val prepared = prepareBundledContent(document)
-        assertEquals(3, prepared.segments.size)
-        assertTrue(
-            prepared.plans
-                .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE && it.required }
-                .map { it.activityType }
-                .containsAll(
-                    listOf(
-                        PlanActivityType.BOOK,
-                        PlanActivityType.ANKI_DROID,
-                        PlanActivityType.LISTEN_RECORD_COMPARE,
-                    ),
-                ),
+        assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT, prepared.segments.size)
+        val eligibleAudioIds = prepared.audio
+            .filter { it.eligibilityStatus == EligibilityStatus.ELIGIBLE }
+            .map { it.id }
+            .toSet()
+        assertEquals(document.audioModels.size, eligibleAudioIds.size)
+        val expectedRequired = setOf(
+            PlanActivityType.BOOK,
+            PlanActivityType.ANKI_DROID,
+            PlanActivityType.LISTEN_RECORD_COMPARE,
         )
-        assertEquals(3, prepared.gates.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE })
-        assertTrue(prepared.gates.none { it.displayedRuleText.contains("Tutor") })
+        prepared.segments.forEach { segment ->
+            val plans = prepared.plans.filter {
+                it.segmentId == segment.id && it.eligibilityStatus == EligibilityStatus.ELIGIBLE
+            }
+            assertEquals(
+                expectedRequired,
+                plans.filter { it.required }.map { it.activityType }.toSet(),
+            )
+            val tutor = plans.single { it.activityType == PlanActivityType.TUTOR }
+            assertFalse(tutor.required)
+            val listen = plans.single { it.activityType == PlanActivityType.LISTEN_RECORD_COMPARE }
+            assertEquals(1, listen.audioModelIds.size)
+            assertTrue(eligibleAudioIds.containsAll(listen.audioModelIds))
+            assertEquals(
+                1,
+                prepared.gates.count {
+                    it.segmentId == segment.id && it.eligibilityStatus == EligibilityStatus.ELIGIBLE
+                },
+            )
+        }
+        assertEquals(
+            PENGUIN_BEGINNER_ARC_LESSON_COUNT,
+            prepared.gates.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE },
+        )
         assertEquals(document.audioModels.size, prepared.audio.count { it.eligibilityStatus == EligibilityStatus.ELIGIBLE })
         assertTrue(prepared.drills.isEmpty())
     }

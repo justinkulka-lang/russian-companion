@@ -25,21 +25,23 @@ import java.io.File
 @Config(sdk = [33])
 class PackagedPathwayStoreTest {
     @Test
-    fun packagedPlaceholderPathwayCompletesATutorFreeLessonCycleOnce() {
+    fun packagedCompletePathwayCompletesATutorFreeLessonCycleOnce() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         context.deleteDatabase(LocalStore.DATABASE_NAME)
         LocalStore.open(context).use { store ->
             val segments = store.eligibleSegments()
-            assertEquals(listOf(1, 2, 3), segments.map { it.lessonNumber })
-            assertEquals(listOf("Lesson 1", "Lesson 2", "Lesson 3"), segments.map { it.lessonReference })
+            assertEquals((1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).toList(), segments.map { it.lessonNumber })
+            assertEquals(
+                (1..PENGUIN_BEGINNER_ARC_LESSON_COUNT).map { "Lesson $it" },
+                segments.map { it.lessonReference },
+            )
             val pathway = validatePathwaySegments(
                 segments.map { segment ->
                     PathwaySegment(segment.id, segment.lessonReference, segment.lessonNumber, segment.sortOrder)
                 },
             )
-            assertFalse(pathway.coversFullArc)
-            assertEquals(3, pathway.segments.size)
-            assertTrue(pathway.segments.size < PENGUIN_BEGINNER_ARC_LESSON_COUNT)
+            assertTrue(pathway.coversFullArc)
+            assertEquals(PENGUIN_BEGINNER_ARC_LESSON_COUNT, pathway.segments.size)
             store.eligiblePlans().forEach { plan ->
                 assertFalse(plan.instruction.contains("Penguin"))
                 assertTrue(plan.instruction.none { it.code in 0x0400..0x04FF })
@@ -51,7 +53,7 @@ class PackagedPathwayStoreTest {
             assertTrue(store.completeExternalActivity("plan-anki-1", "2026-09-21", "2026-09-21T09:01"))
             val listen = store.eligiblePlans().single { it.id == "plan-listen-1" }
             val audioId = listen.audioModelIds.single()
-            val recordingRef = "recordings/placeholder.m4a"
+            val recordingRef = "recordings/lesson-cycle.m4a"
             val recordingBytes = byteArrayOf(1, 2, 3, 4)
             File(context.filesDir, recordingRef).apply {
                 parentFile?.mkdirs()
@@ -99,7 +101,7 @@ class PackagedPathwayStoreTest {
             }.exportLocal(
                 out,
                 "2026-09-21T12:00",
-                "placeholder-cycle.zip",
+                "lesson-cycle.zip",
                 null,
             )
             assertTrue(update is ExportUpdate.Completed)

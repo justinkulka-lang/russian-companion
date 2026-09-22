@@ -171,9 +171,9 @@ class CatalogIntakeTest {
             assertEquals(listOf("LICENSE=Creative Commons BY"), evidence.indexLicenses)
         }
         val seed = (SeedJson.parse(File(root, "app/src/main/assets/content/bundled-content.json").readText()) as SeedParse.Ok).document
-        assertEquals(listOf(1, 2, 3), seed.courseSegments.map { it.lessonNumber })
-        assertEquals(12, seed.planDefinitions.size)
-        assertEquals(3, seed.gateDefinitions.size)
+        assertEquals((1..30).toList(), seed.courseSegments.map { it.lessonNumber })
+        assertEquals(120, seed.planDefinitions.size)
+        assertEquals(30, seed.gateDefinitions.size)
         assertTrue(seed.optionalDrills.isEmpty())
         assertTrue(seed.audioModels.isNotEmpty())
         seed.sourceRecords.forEach { record ->
@@ -278,7 +278,44 @@ class CatalogIntakeTest {
         val release = assessRepositoryRelease(root)
         assertEquals(ReleaseDecision.NOT_APPROVED, release.decision)
         assertTrue(release.blockers.contains(ReleaseBlocker.SHARE_ALIKE_UNCONFIRMED))
+        assertFalse(release.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
+        assertFalse(release.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
         assertFalse(release.decision.name.startsWith("APPROVED"))
+    }
+
+    @Test
+    fun catalogRegenerationPreservesTheCompleteBeginnerConductor() {
+        val root = repositoryRoot()
+        val prepare = File(root, "catalog/prepare_shtooka_catalog.py").readText()
+        assertTrue(prepare.contains("catalog/beginner_pathway.json"))
+        assertTrue(prepare.contains("bind_beginner_pathway"))
+        assertFalse(prepare.contains("placeholder_pathway.json"))
+        assertFalse(File(root, "catalog/placeholder_pathway.json").isFile)
+        val pathway = Json.parseToJsonElement(File(root, "catalog/beginner_pathway.json").readText()).jsonObject
+        val seed = (SeedJson.parse(
+            File(root, "app/src/main/assets/content/bundled-content.json").readText(),
+        ) as SeedParse.Ok).document
+        val expectedLessons = (1..30).toList()
+        val jsonLessons = pathway.getValue("courseSegments").jsonArray.map { segment ->
+            segment.jsonObject.getValue("lessonNumber").jsonPrimitive.content.toInt()
+        }
+        assertEquals(expectedLessons, jsonLessons)
+        assertEquals(expectedLessons, seed.courseSegments.map { it.lessonNumber })
+        val unboundListen = pathway.getValue("planDefinitions").jsonArray.filter { plan ->
+            plan.jsonObject.getValue("activityType").jsonPrimitive.content == "LISTEN_RECORD_COMPARE"
+        }
+        assertEquals(30, unboundListen.size)
+        unboundListen.forEach { plan ->
+            assertEquals(0, plan.jsonObject.getValue("audioModelIds").jsonArray.size)
+        }
+        val boundListen = seed.planDefinitions.filter { it.activityType == "LISTEN_RECORD_COMPARE" }
+        assertEquals(30, boundListen.size)
+        assertEquals(seed.audioModels.take(30).map { it.id }, boundListen.map { it.audioModelIds.single() })
+        assertEquals(120, seed.planDefinitions.size)
+        assertEquals(30, seed.gateDefinitions.size)
+        assertEquals(120, pathway.getValue("planDefinitions").jsonArray.size)
+        assertEquals(30, pathway.getValue("gateDefinitions").jsonArray.size)
+        assertFalse(prepare.contains("\"courseSegments\": []"))
     }
 
     private fun sha256(file: File): String {

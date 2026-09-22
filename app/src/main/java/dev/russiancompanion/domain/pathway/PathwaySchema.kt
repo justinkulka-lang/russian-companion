@@ -4,12 +4,12 @@ package dev.russiancompanion.domain.pathway
  * Full v1 pathway schema for the Penguin-concurrent beginner arc.
  *
  * Capacity is the book's numbered lesson span (lesson identification only).
- * A shipped pathway may install fewer segments for development and acceptance
- * work. Public release must not treat a placeholder or partial pathway as
- * complete: [beginnerArcReleaseReady] requires lessons 1 through 30, each with
- * eligible required book, AnkiDroid, and listen-record-compare plans and an
- * eligible default gate. The schema must never invent lessons outside this
- * span or reproduce book text.
+ * A packaged seed may install this span structurally without Penguin text or
+ * lesson-to-audio linguistic mappings. Public release must not treat a
+ * placeholder or partial pathway as complete: [beginnerArcReleaseReady]
+ * requires lessons 1 through 30, each with eligible required book, AnkiDroid,
+ * and listen-record-compare plans and an eligible default gate. The schema
+ * must never invent lessons outside this span or reproduce book text.
  */
 internal const val PENGUIN_BEGINNER_ARC_LESSON_COUNT = 30
 
@@ -86,8 +86,8 @@ internal data class ArcGateCoverage(
 
 /**
  * True only for the release-complete Penguin-concurrent beginner arc.
- * A three-lesson placeholder, a missing lesson, or a lesson without its
- * required plans or default gate is not release-ready.
+ * A partial pathway, or a lesson without its required plans or default gate,
+ * is not release-ready.
  */
 internal fun beginnerArcReleaseReady(
     segments: List<PathwaySegment>,
