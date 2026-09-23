@@ -97,10 +97,12 @@ private val MAPPING_HEADER = listOf(
     "record_id",
     "record_type",
     "app_title",
+    "mapping_record_id",
     "edition_identification",
     "author",
     "publisher_edition",
     "observed_edition_notes",
+    "isbn_observation",
     "isbn",
     "owned_copy_verified",
     "corresponding_lesson",
@@ -109,6 +111,7 @@ private val MAPPING_HEADER = listOf(
     "observation_source",
     "unresolved_questions",
     "alignment_disposition",
+    "mapping_package_digest",
     "variance_conflict",
     "reviewer_notes",
     "reviewer_identity",
@@ -211,10 +214,28 @@ internal data class Unit1ReviewEdge(
     val kind: String,
 )
 
+internal data class MappingPackageFacts(
+    val unitNumber: Int,
+    val mappingRecordId: String?,
+    val editionTitle: String?,
+    val author: String?,
+    val publisherImprint: String?,
+    val observedEditionNotes: String?,
+    val proposedLessonNumber: Int?,
+    val printedPageStart: Int?,
+    val printedPageEnd: Int?,
+    val topicDescription: String?,
+    val observationSource: String?,
+    val isbnObservation: String?,
+    val isbn: String?,
+    val mappingDisposition: String?,
+)
+
 internal data class Unit1ReviewPackage(
     val unitNumber: Int,
     val contentReviewDigest: String,
     val packContentReviewDigest: String,
+    val mappingPackageDigest: String,
     val unitReviewStatus: String,
     val reviewPackageDigest: String,
     val repositorySourceDigest: String,
@@ -231,7 +252,11 @@ internal data class Unit1ReviewFiles(
 
 internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage = buildUnitReviewPackage(pack, 1)
 
-internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Unit1ReviewPackage {
+internal fun buildUnitReviewPackage(
+    pack: V2CurriculumPack,
+    unitNumber: Int,
+    mappingFacts: MappingPackageFacts = governedMappingFacts(unitNumber),
+): Unit1ReviewPackage {
     val unit = pack.unit(unitNumber)
     val unresolved = mutableListOf<String>()
     val records = mutableListOf<Unit1ReviewRecord>()
@@ -246,10 +271,12 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
         unresolved += "Unit $unitNumber is missing from the curriculum pack"
         val instructional = V2Validator.unitContentReviewDigest(pack, unitNumber)
         val distinctUnresolved = unresolved.distinct()
+        val mappingDigest = mappingPackageDigest(mappingFacts)
         return Unit1ReviewPackage(
             unitNumber = unitNumber,
             contentReviewDigest = instructional,
             packContentReviewDigest = V2Validator.contentReviewDigest(pack),
+            mappingPackageDigest = mappingDigest,
             unitReviewStatus = "MISSING",
             reviewPackageDigest = reviewPackageDigest(
                 unitNumber,
@@ -258,6 +285,7 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
                 "",
                 "MISSING",
                 instructional,
+                mappingDigest,
                 emptyList(),
                 emptyList(),
                 emptyList(),
@@ -470,10 +498,12 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
     val distinctUnresolved = unresolved.distinct()
     val distinctBookDirected = bookDirected.distinct()
     val distinctUnavailable = unavailable.distinct()
+    val mappingDigest = mappingPackageDigest(mappingFacts)
     return Unit1ReviewPackage(
         unitNumber = unitNumber,
         contentReviewDigest = instructional,
         packContentReviewDigest = V2Validator.contentReviewDigest(pack),
+        mappingPackageDigest = mappingDigest,
         unitReviewStatus = unitReviewStatus,
         reviewPackageDigest = reviewPackageDigest(
             unitNumber,
@@ -482,6 +512,7 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
             unit.mappingStatus,
             unitReviewStatus,
             instructional,
+            mappingDigest,
             records,
             edges,
             distinctBookDirected,
@@ -534,13 +565,23 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
     val manifest = files[reviewManifestName(unitNumber)]
     if (manifest != null) {
         val digest = jsonStringField(manifest, "contentReviewDigest")
+        val mappingDigest = jsonStringField(manifest, "mappingPackageDigest")
         val packageDigest = jsonStringField(manifest, "reviewPackageDigest")
         val sourceDigest = jsonStringField(manifest, "repositorySourceDigest")
         if (digest != rendered.contentReviewDigest) {
             errors += "Content-review digest does not match the application digest"
         }
+        if (mappingDigest != rendered.mappingPackageDigest) {
+            errors += "Mapping package digest does not match the structural mapping"
+        }
         if (packageDigest != rendered.reviewPackageDigest) {
             errors += "Review package digest does not match the review package"
+        }
+        if (mappingDigest != null && mappingDigest == digest) {
+            errors += "Mapping package digest is only an alias of the content-review digest"
+        }
+        if (mappingDigest != null && mappingDigest == packageDigest) {
+            errors += "Review package digest is only an alias of the mapping package digest"
         }
         if (sourceDigest != rendered.repositorySourceDigest) {
             errors += "Repository source digest does not match the release binding"
@@ -760,13 +801,33 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
                     errors += "Mapping worksheet reviewed content digest does not match the unit content-review digest for ${row[0]}"
                 }
             }
+            if (value("isbn_observation") != "UNRESOLVED") {
+                errors += "Mapping worksheet ISBN observation is not unresolved for ${row[0]}"
+            }
+            if (value("mapping_record_id") != "map-pending-unit-$unitNumber") {
+                errors += "Mapping worksheet is for the wrong unit or lesson for ${row[0]}"
+            }
+            val parsed = mappingFactsFromRow(unitNumber, row)
+            val computed = mappingPackageDigest(parsed)
+            if (value("mapping_package_digest") != computed) {
+                errors += "Mapping package digest does not match the structural mapping facts for ${row[0]}"
+            }
+            if (computed != mappingPackageDigest(governedMappingFacts(unitNumber))) {
+                errors += "Mapping package digest does not match the governed mapping for ${row[0]}"
+            }
         }
     }
     if (Regex("(?i)\\b97[89]\\d{10}\\b|\\b\\d{9}[\\dX]\\b").containsMatchIn(mapping)) {
         errors += "Mapping worksheet records an invented ISBN"
     }
+    // Matches a fixed list of known prohibited mapping-input markers only.
+    // This is not comprehensive copyright detection and does not recognize every copy or paraphrase.
     if (mapping.contains(".pdf", ignoreCase = true) || mapping.contains("PENGUIN_EDITION_MAPPING_INPUT")) {
-        errors += "Mapping worksheet treats the mapping input as redistributable curriculum content"
+        errors += "Mapping worksheet matches a known prohibited mapping-input marker"
+    }
+    val governedDigest = mappingPackageDigest(governedMappingFacts(unitNumber))
+    if (STRUCTURAL_MAPPING_OBSERVATIONS.any { it.unitNumber == unitNumber } && !mapping.contains("mappingPackageDigest: $governedDigest")) {
+        errors += "Mapping worksheet omits the mapping package digest"
     }
     if (!mapping.contains("must not contain copied Penguin prose")) {
         errors += "Mapping worksheet omits the Penguin-prose warning"
@@ -802,16 +863,22 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
         append("- Curriculum source commit: $CURRICULUM_SOURCE_COMMIT\n")
         append("- Unit content-review SHA-256: ${review.contentReviewDigest}\n")
+        append("- Mapping-package SHA-256: ${review.mappingPackageDigest}\n")
         append("- Pack content-review SHA-256: ${review.packContentReviewDigest}\n")
         append("- Review-package SHA-256: ${review.reviewPackageDigest}\n")
         append("- Repository source SHA-256: ${review.repositorySourceDigest}\n\n")
-        append("The unit content-review digest is what a reviewer of Unit ${review.unitNumber} approves. ")
-        append("It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. ")
+        append("`unitContentReviewDigest` binds this unit's instructional curriculum. ")
+        append("It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. ")
         append("It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.\n\n")
-        append("The pack content-review digest is the repository aggregate. It is not an approval of this unit, and it is not part of the review-package digest.\n\n")
-        append("The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.\n\n")
-        append("The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. ")
-        append("That change does not replace the signed content-review digest.\n\n")
+        append("`mappingPackageDigest` binds the proposed edition-mapping facts for Unit ${review.unitNumber}: edition identity, lesson, printed page range, topic description, observation source, ISBN observation state, and the pending disposition. ")
+        append("Reviewer identity, qualification, date, notes, correction notes, and signature stay outside that digest.\n\n")
+        append("`packContentReviewDigest` is the repository aggregate of instructional curriculum. It is not an approval of this unit, and it is not part of the review-package digest.\n\n")
+        append("`reviewPackageDigest` identifies this complete pending review package. It binds the ordered instructional records and the mapping-package digest. ")
+        append("Changing a proposed page range or topic changes the mapping-package digest and therefore this package digest.\n\n")
+        append("`repositorySourceDigest` binds repository and release inputs. Recording an approval later changes that repository hash. ")
+        append("That change does not replace the signed content-review digest or the mapping-package digest.\n\n")
+        append("The marker scan used by this package detects only a fixed list of known prohibited mapping-input markers. ")
+        append("It is not comprehensive copyright detection and cannot recognize every copy or close paraphrase of protected material.\n\n")
         append("## Unit\n\n")
         append(unitRecord?.content ?: "Unit ${review.unitNumber} is missing.")
         append("\n\n## Not yet approved\n\n")
@@ -858,6 +925,7 @@ private fun renderManifest(pack: V2CurriculumPack, review: Unit1ReviewPackage): 
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
         append("  \"curriculumSourceCommit\": ${jsonString(CURRICULUM_SOURCE_COMMIT)},\n")
         append("  \"contentReviewDigest\": ${jsonString(review.contentReviewDigest)},\n")
+        append("  \"mappingPackageDigest\": ${jsonString(review.mappingPackageDigest)},\n")
         append("  \"packContentReviewDigest\": ${jsonString(review.packContentReviewDigest)},\n")
         append("  \"reviewPackageDigest\": ${jsonString(review.reviewPackageDigest)},\n")
         append("  \"repositorySourceDigest\": ${jsonString(review.repositorySourceDigest)},\n")
@@ -923,43 +991,59 @@ private fun renderWorksheet(review: Unit1ReviewPackage): String {
 
 private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): String {
     val unit = pack.unit(unitNumber) ?: error("Unit $unitNumber is missing")
+    val facts = governedMappingFacts(unitNumber)
+    val digest = mappingPackageDigest(facts)
     val lines = mutableListOf(
         "# Warning: this worksheet must not contain copied Penguin prose or exercises.",
         "# Observed edition facts: edition_identification, author, publisher_edition, and observed_edition_notes.",
         "# Proposed structural mapping: corresponding_lesson, corresponding_pages, corresponding_topic, and alignment_disposition PENDING_CURRICULUM_REVIEWER.",
-        "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. ISBN was not visible and must stay blank.",
+        "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. ISBN was not visible and must stay blank. isbn_observation stays UNRESOLVED.",
         "# Qualified linguistic review is still required. Reviewer identity, qualification, date, notes, and reviewed digest stay blank. This worksheet is not an approval.",
+        "# mappingRecordId: ${facts.mappingRecordId.orEmpty()}",
+        "# mappingPackageDigest: $digest",
+        "# mappingPackageDigest binds the proposed edition-mapping facts. Reviewer identity, qualification, date, notes, correction notes, and signature are outside this digest.",
+        "# The marker scan detects only known prohibited mapping-input markers. It is not comprehensive copyright detection.",
         MAPPING_HEADER.joinToString("\t"),
     )
-    val observation = STRUCTURAL_MAPPING_OBSERVATIONS.firstOrNull { it.unitNumber == unitNumber }
+    val populated = facts.mappingRecordId != null
     unit.objectives.forEach { objective ->
-        lines += mappingRow(objective.id, "OBJECTIVE", objective.title, observation)
+        lines += mappingRow(objective.id, "OBJECTIVE", objective.title, if (populated) facts else null, digest)
     }
     unit.sessions.forEach { session ->
-        lines += mappingRow(session.id, "SESSION", session.title, observation)
+        lines += mappingRow(session.id, "SESSION", session.title, if (populated) facts else null, digest)
     }
     return lines.joinToString("\n") + "\n"
 }
 
-private fun mappingRow(id: String, type: String, title: String, observation: StructuralMappingObservation?): String {
-    val structural = if (observation == null) {
-        List(11) { "" }
+private fun mappingRow(
+    id: String,
+    type: String,
+    title: String,
+    facts: MappingPackageFacts?,
+    digest: String,
+): String {
+    val structural = if (facts == null) {
+        List(15) { "" }
     } else {
         listOf(
-            OBSERVED_EDITION_TITLE,
-            OBSERVED_EDITION_AUTHOR,
-            OBSERVED_PUBLISHER_IMPRINT,
-            OBSERVED_EDITION_NOTES,
+            facts.mappingRecordId.orEmpty(),
+            facts.editionTitle.orEmpty(),
+            facts.author.orEmpty(),
+            facts.publisherImprint.orEmpty(),
+            facts.observedEditionNotes.orEmpty(),
+            facts.isbnObservation.orEmpty(),
+            facts.isbn.orEmpty(),
             "",
-            "",
-            observation.lessonLabel,
-            observation.printedPages,
-            observation.topic,
-            MAPPING_OBSERVATION_SOURCE,
+            "Lesson ${facts.proposedLessonNumber}",
+            "${facts.printedPageStart}-${facts.printedPageEnd}",
+            facts.topicDescription.orEmpty(),
+            facts.observationSource.orEmpty(),
             MAPPING_UNRESOLVED_QUESTIONS,
+            facts.mappingDisposition.orEmpty(),
+            digest,
         )
     }
-    return (listOf(id, type, title) + structural + listOf("PENDING_CURRICULUM_REVIEWER".takeIf { observation != null }.orEmpty()) + List(6) { "" })
+    return (listOf(id, type, title) + structural + List(6) { "" })
         .joinToString("\t") { escapeTsv(it) }
 }
 
@@ -971,6 +1055,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
         Curriculum source commit: $CURRICULUM_SOURCE_COMMIT
         Unit content-review digest: ${review.contentReviewDigest}
+        Mapping-package digest: ${review.mappingPackageDigest}
         Pack content-review digest: ${review.packContentReviewDigest}
         Review-package digest: ${review.reviewPackageDigest}
         Repository source digest: ${review.repositorySourceDigest}
@@ -979,13 +1064,15 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## Digests
 
-        `contentReviewDigest` is the unit-scoped digest the reviewer of Unit ${review.unitNumber} approves. It is canonical JSON, digest schema ${V2Validator.CONTENT_REVIEW_DIGEST_SCHEMA}, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version $UNIT1_REVIEW_VERSION_NAME and this unit digest. Signing Unit ${review.unitNumber} does not approve any other unit.
+        `unitContentReviewDigest` (manifest field `contentReviewDigest`) binds the instructional curriculum for Unit ${review.unitNumber}. It is canonical JSON, digest schema ${V2Validator.CONTENT_REVIEW_DIGEST_SCHEMA}, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version $UNIT1_REVIEW_VERSION_NAME and this unit digest. Signing Unit ${review.unitNumber} does not approve any other unit.
 
-        `packContentReviewDigest` is the pack-wide aggregate used for repository and release integrity. It is not the digest a unit reviewer signs, and it is not hashed into `reviewPackageDigest`.
+        `mappingPackageDigest` binds the proposed edition-mapping facts in fixed order: unit number, mapping record id, edition title, author, publisher imprint, observed-edition notes, proposed lesson number, printed page start, printed page end, topic description, observation source, ISBN observation state, ISBN value or null, and the current mapping disposition. Reviewer identity, reviewer qualification, review date, reviewer notes, correction notes, and signature are outside this digest. Completing those workflow fields does not rewrite the mapping facts. Changing the lesson, page range, title, author, publisher, topic, observation source, ISBN state, or ISBN value changes this digest.
 
-        `reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, the curriculum source commit, and the unit content-review digest. It does not approve the curriculum by itself.
+        `packContentReviewDigest` is the pack-wide instructional aggregate used for repository and release integrity. It is not the digest a unit reviewer signs, and it is not hashed into `reviewPackageDigest`.
 
-        `repositorySourceDigest` is the release-gate hash of repository inputs. It tracks the repository and release state after an approval is recorded. A later commit changes it. Release-gate validation and the state-transition rules still have to accept that repository state. It is not the digest the reviewer signs.
+        `reviewPackageDigest` identifies the complete pending review package. It binds the manifest metadata, ordered instructional records, relationship hashes, book-directed and unavailable lists, the pending instructional workflow fields, the curriculum source commit, the unit content-review digest, and `mappingPackageDigest`. A changed mapping fact changes this package digest because the mapping-package digest is an input. It does not approve the curriculum by itself.
+
+        `repositorySourceDigest` binds repository and release inputs. It tracks the repository and release state after an approval is recorded. A later commit changes it. Release-gate validation and the state-transition rules still have to accept that repository state. It is not the digest the reviewer signs, and it is not a substitute for `mappingPackageDigest`.
 
         `curriculumSourceCommit` is the commit that contains this unit's governed curriculum. It is an ancestor of the packet commit. A packet that names its own commit, or a commit that does not contain this curriculum, is rejected.
 
@@ -995,11 +1082,13 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What must be checked
 
-        Check every Cyrillic identity, phonetic statement, instructional explanation, answer key, feedback item, remediation statement, lesson placement, and mapping row. Compare the mapping worksheet with the Product Owner's legally owned edition. Do not copy Penguin text, exercises, answer keys, screenshots, or scans into the repository or the worksheet.
+        Check every Cyrillic identity, phonetic statement, instructional explanation, answer key, feedback item, remediation statement, lesson placement, and mapping row. Compare the mapping worksheet with the Product Owner's legally owned edition. Do not copy protected text, exercises, answer keys, screenshots, or scans into the repository or the worksheet.
+
+        The package marker scan detects only a fixed list of known prohibited mapping-input markers, such as the private mapping-input filename or a PDF extension inside the mapping worksheet. It is not comprehensive copyright detection. It cannot recognize every copy or close paraphrase of protected material. A qualified reviewer still has to make that comparison.
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and unit content-review digest ${review.contentReviewDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit $CURRICULUM_SOURCE_COMMIT before relying on this packet. Any later substantive change reachable from Unit ${review.unitNumber} invalidates this unit's approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit $CURRICULUM_SOURCE_COMMIT before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
@@ -1258,6 +1347,84 @@ private fun record(
     return Unit1ReviewRecord(id, type, objectiveIds, sessionIds, content, sourceId, rightsIds, classification, reviewStatus, hash)
 }
 
+internal fun governedMappingFacts(unitNumber: Int): MappingPackageFacts {
+    val observation = STRUCTURAL_MAPPING_OBSERVATIONS.firstOrNull { it.unitNumber == unitNumber } ?: return MappingPackageFacts(
+        unitNumber = unitNumber,
+        mappingRecordId = null,
+        editionTitle = null,
+        author = null,
+        publisherImprint = null,
+        observedEditionNotes = null,
+        proposedLessonNumber = null,
+        printedPageStart = null,
+        printedPageEnd = null,
+        topicDescription = null,
+        observationSource = null,
+        isbnObservation = null,
+        isbn = null,
+        mappingDisposition = null,
+    )
+    val pages = observation.printedPages.split("-")
+    return MappingPackageFacts(
+        unitNumber = unitNumber,
+        mappingRecordId = "map-pending-unit-$unitNumber",
+        editionTitle = OBSERVED_EDITION_TITLE,
+        author = OBSERVED_EDITION_AUTHOR,
+        publisherImprint = OBSERVED_PUBLISHER_IMPRINT,
+        observedEditionNotes = OBSERVED_EDITION_NOTES,
+        proposedLessonNumber = observation.lessonLabel.removePrefix("Lesson ").toInt(),
+        printedPageStart = pages[0].toInt(),
+        printedPageEnd = pages[1].toInt(),
+        topicDescription = observation.topic,
+        observationSource = MAPPING_OBSERVATION_SOURCE,
+        isbnObservation = "UNRESOLVED",
+        isbn = null,
+        mappingDisposition = "PENDING_CURRICULUM_REVIEWER",
+    )
+}
+
+internal fun mappingPackageDigest(facts: MappingPackageFacts): String {
+    return sha256(
+        canonObj(
+            "unitNumber" to canonNum(facts.unitNumber),
+            "mappingRecordId" to canonStrOrNull(facts.mappingRecordId),
+            "editionTitle" to canonStrOrNull(facts.editionTitle),
+            "author" to canonStrOrNull(facts.author),
+            "publisherImprint" to canonStrOrNull(facts.publisherImprint),
+            "observedEditionNotes" to canonStrOrNull(facts.observedEditionNotes),
+            "proposedLessonNumber" to canonNumOrNull(facts.proposedLessonNumber),
+            "printedPageStart" to canonNumOrNull(facts.printedPageStart),
+            "printedPageEnd" to canonNumOrNull(facts.printedPageEnd),
+            "topicDescription" to canonStrOrNull(facts.topicDescription),
+            "observationSource" to canonStrOrNull(facts.observationSource),
+            "isbnObservation" to canonStrOrNull(facts.isbnObservation),
+            "isbn" to canonStrOrNull(facts.isbn),
+            "mappingDisposition" to canonStrOrNull(facts.mappingDisposition),
+        ),
+    )
+}
+
+internal fun mappingFactsFromRow(unitNumber: Int, row: List<String>): MappingPackageFacts {
+    fun value(column: String): String = row[MAPPING_HEADER.indexOf(column)]
+    val pages = value("corresponding_pages").split("-")
+    return MappingPackageFacts(
+        unitNumber = unitNumber,
+        mappingRecordId = value("mapping_record_id").ifBlank { null },
+        editionTitle = value("edition_identification").ifBlank { null },
+        author = value("author").ifBlank { null },
+        publisherImprint = value("publisher_edition").ifBlank { null },
+        observedEditionNotes = value("observed_edition_notes").ifBlank { null },
+        proposedLessonNumber = value("corresponding_lesson").removePrefix("Lesson ").toIntOrNull(),
+        printedPageStart = pages.getOrNull(0)?.toIntOrNull(),
+        printedPageEnd = pages.getOrNull(1)?.toIntOrNull(),
+        topicDescription = value("corresponding_topic").ifBlank { null },
+        observationSource = value("observation_source").ifBlank { null },
+        isbnObservation = value("isbn_observation").ifBlank { null },
+        isbn = value("isbn").ifBlank { null },
+        mappingDisposition = value("alignment_disposition").ifBlank { null },
+    )
+}
+
 private fun reviewPackageDigest(
     unitNumber: Int,
     installState: String,
@@ -1265,6 +1432,7 @@ private fun reviewPackageDigest(
     mappingStatus: String,
     linguisticReviewStatus: String,
     contentReviewDigest: String,
+    mappingPackageDigest: String,
     records: List<Unit1ReviewRecord>,
     edges: List<Unit1ReviewEdge>,
     bookDirectedIds: List<String>,
@@ -1273,7 +1441,7 @@ private fun reviewPackageDigest(
 ): String {
     return sha256(
         canonObj(
-            "digestSchema" to "1",
+            "digestSchema" to "2",
             "schemaVersion" to UNIT1_REVIEW_SCHEMA_VERSION.toString(),
             "packageId" to canonStr(reviewPackageId(unitNumber)),
             "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
@@ -1281,6 +1449,7 @@ private fun reviewPackageDigest(
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
             "curriculumSourceCommit" to canonStr(CURRICULUM_SOURCE_COMMIT),
             "contentReviewDigest" to canonStr(contentReviewDigest),
+            "mappingPackageDigest" to canonStr(mappingPackageDigest),
             "unitReviewStatus" to canonStr(linguisticReviewStatus),
             "unit" to canonObj(
                 "id" to canonStr("unit-$unitNumber"),
@@ -1320,6 +1489,12 @@ private fun canonObj(vararg fields: Pair<String, String>): String {
 }
 
 private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
+
+private fun canonNum(value: Int): String = value.toString()
+
+private fun canonNumOrNull(value: Int?): String = value?.toString() ?: "null"
+
+private fun canonStrOrNull(value: String?): String = if (value == null) "null" else canonStr(value)
 
 private fun canonStr(value: String): String = jsonString(value)
 

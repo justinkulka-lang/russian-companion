@@ -6,8 +6,9 @@
   "versionCode": 5,
   "curriculumSourceCommit": "5dde572d36895eeec24d1159898d9e3d3998a488",
   "contentReviewDigest": "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
+  "mappingPackageDigest": "9f1b5a6f3efe2a92180b73da24d8291c4f6d6d79f193d034baab9414637f2ae3",
   "packContentReviewDigest": "c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4",
-  "reviewPackageDigest": "7af9c0720f9c70b87ae1eca477cff0d6747d639f12b6a4e3f8ad77c72be8d1e0",
+  "reviewPackageDigest": "dcda3275f08e161d9cef4e26ebcb64655d0cf09aa0222812267d2a9a6bdbe2f4",
   "repositorySourceDigest": "7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b",
   "unitReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {

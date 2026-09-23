@@ -13,17 +13,22 @@ Unit 3 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3 
 - Version: 2.0.0-dev (5)
 - Curriculum source commit: 5dde572d36895eeec24d1159898d9e3d3998a488
 - Unit content-review SHA-256: 94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3
+- Mapping-package SHA-256: 090a3fec638b8a19d34e11d8be88a7796ce18a56a87b7b5b06d626ed777d6448
 - Pack content-review SHA-256: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
-- Review-package SHA-256: 385c86bfcc06fb50195e395c05cca3f27dc255de1c65c4e5aab9f42b8f8269d0
+- Review-package SHA-256: f91276e934d9fc1d1923eeaacb13f84a7fb8ecef5238f42dc1ed313a920258c3
 - Repository source SHA-256: 7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b
 
-The unit content-review digest is what a reviewer of Unit 3 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
+`unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
-The pack content-review digest is the repository aggregate. It is not an approval of this unit, and it is not part of the review-package digest.
+`mappingPackageDigest` binds the proposed edition-mapping facts for Unit 3: edition identity, lesson, printed page range, topic description, observation source, ISBN observation state, and the pending disposition. Reviewer identity, qualification, date, notes, correction notes, and signature stay outside that digest.
 
-The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.
+`packContentReviewDigest` is the repository aggregate of instructional curriculum. It is not an approval of this unit, and it is not part of the review-package digest.
 
-The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. That change does not replace the signed content-review digest.
+`reviewPackageDigest` identifies this complete pending review package. It binds the ordered instructional records and the mapping-package digest. Changing a proposed page range or topic changes the mapping-package digest and therefore this package digest.
+
+`repositorySourceDigest` binds repository and release inputs. Recording an approval later changes that repository hash. That change does not replace the signed content-review digest or the mapping-package digest.
+
+The marker scan used by this package detects only a fixed list of known prohibited mapping-input markers. It is not comprehensive copyright detection and cannot recognize every copy or close paraphrase of protected material.
 
 ## Unit
 
