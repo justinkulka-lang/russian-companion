@@ -114,8 +114,7 @@ class V2RebuildTest {
         assertFalse(unknownResult.ok)
         assertTrue(unknownResult.errors.any { it.contains("Unrecognized linguistic review status") })
 
-        val digest = V2Validator.instructionalContentDigest(pack)
-        val complete = pack.copy(
+        val staged = pack.copy(
             units = pack.units.map { unit ->
                 if (unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
                     unit.copy(readiness = "REVIEW_APPROVED")
@@ -127,9 +126,12 @@ class V2RebuildTest {
                 status = "APPROVED",
                 reviewer = "Qualified Reviewer",
                 packVersion = pack.packVersion,
-                reviewedContentDigest = digest,
                 curriculumMappingId = "map-owned-edition",
             ),
+        )
+        val digest = V2Validator.instructionalContentDigest(staged)
+        val complete = staged.copy(
+            linguisticReview = staged.linguisticReview.copy(reviewedContentDigest = digest),
         )
         val completeResult = V2Validator.validate(complete)
         assertTrue(completeResult.errors.joinToString(), completeResult.ok)
@@ -143,7 +145,7 @@ class V2RebuildTest {
         assertTrue(pending.errors.any { it.contains("Letter ") && it.contains("PENDING_QUALIFIED_REVIEW") })
         assertTrue(pending.errors.any { it.contains("Example ") && it.contains("PENDING_QUALIFIED_REVIEW") })
 
-        val approved = approveInstruction(installed)
+        val approved = rebindReview(approveInstruction(installed))
         val approvedResult = V2Validator.validate(approved)
         assertTrue(
             approvedResult.errors.joinToString(),

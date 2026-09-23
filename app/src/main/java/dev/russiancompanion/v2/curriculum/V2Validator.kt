@@ -54,51 +54,194 @@ internal object V2Validator {
         return V2Validation(errors.isEmpty(), errors)
     }
 
-    internal fun instructionalContentDigest(pack: V2CurriculumPack): String {
-        val payload = buildString {
-            append(pack.packId)
-            append('|')
-            append(pack.packVersion)
-            pack.letters.forEach { letter ->
-                append(letter.id)
-                append(letter.uppercase)
-                append(letter.lowercase)
-            }
-            pack.examples.forEach { example ->
-                append(example.id)
-                append(example.display)
-                append(example.objectiveId)
-            }
-            pack.items.forEach { item ->
-                append(item.id)
-                append(item.prompt)
-                append(item.answer)
-                append(item.objectiveId)
-            }
-            pack.references.forEach { reference ->
-                append(reference.id)
-                append(reference.classification)
-            }
-            pack.units.forEach { unit ->
-                append(unit.number)
-                append(unit.installState)
-                unit.objectives.forEach { objective ->
-                    append(objective.id)
-                    objective.checkItemIds.forEach(::append)
-                }
-                unit.sessions.forEach { session ->
-                    append(session.id)
-                    session.steps.forEach { step ->
-                        append(step.id)
-                        append(step.kind)
-                        step.itemIds.forEach(::append)
-                        step.exampleIds.forEach(::append)
-                    }
-                }
-            }
-        }
-        val digest = MessageDigest.getInstance("SHA-256").digest(payload.toByteArray(Charsets.UTF_8))
+    /**
+     * SHA-256 of content-review digest schema 2: compact JSON with fixed
+     * property order. This is the digest a reviewer signs. It omits workflow
+     * fields that change only when an approval is recorded: review status,
+     * reviewer signature, reviewed digest, mapping approval status, install
+     * state, and readiness.
+     */
+    internal fun contentReviewDigest(pack: V2CurriculumPack): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(
+            canonicalInstructionalDocument(pack).toByteArray(Charsets.UTF_8),
+        )
         return digest.joinToString("") { byte -> "%02x".format(byte) }
+    }
+
+    internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
+
+    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
+
+    internal const val INSTRUCTIONAL_DIGEST_SCHEMA = CONTENT_REVIEW_DIGEST_SCHEMA
+
+    private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
+        return canonObj(
+            "digestSchema" to canonNum(CONTENT_REVIEW_DIGEST_SCHEMA),
+            "schemaVersion" to canonNum(pack.schemaVersion),
+            "packId" to canonStr(pack.packId),
+            "packVersion" to canonNum(pack.packVersion),
+            "sources" to canonArr(pack.sources.map { source ->
+                canonObj(
+                    "id" to canonStr(source.id),
+                    "title" to canonStr(source.title),
+                    "license" to canonStr(source.license),
+                    "attribution" to canonStr(source.attribution),
+                    "modification" to canonStr(source.modification),
+                )
+            }),
+            "rights" to canonArr(pack.rights.map { rights ->
+                canonObj(
+                    "id" to canonStr(rights.id),
+                    "sourceId" to canonStr(rights.sourceId),
+                    "license" to canonStr(rights.license),
+                    "permitsAppUse" to canonBool(rights.permitsAppUse),
+                )
+            }),
+            "letters" to canonArr(pack.letters.map { letter ->
+                canonObj(
+                    "id" to canonStr(letter.id),
+                    "uppercase" to canonStr(letter.uppercase),
+                    "lowercase" to canonStr(letter.lowercase),
+                    "group" to canonStr(letter.group),
+                    "englishNote" to canonStr(letter.englishNote),
+                    "sourceId" to canonStr(letter.sourceId),
+                    "audioAssetId" to canonStrOrNull(letter.audioAssetId),
+                    "exampleWordId" to canonStrOrNull(letter.exampleWordId),
+                    "latinLookalike" to canonStrOrNull(letter.latinLookalike),
+                )
+            }),
+            "examples" to canonArr(pack.examples.map { example ->
+                canonObj(
+                    "id" to canonStr(example.id),
+                    "kind" to canonStr(example.kind),
+                    "letterId" to canonStr(example.letterId),
+                    "display" to canonStr(example.display),
+                    "note" to canonStr(example.note),
+                    "sourceId" to canonStr(example.sourceId),
+                    "objectiveId" to canonStr(example.objectiveId),
+                )
+            }),
+            "items" to canonArr(pack.items.map { item ->
+                canonObj(
+                    "id" to canonStr(item.id),
+                    "kind" to canonStr(item.kind),
+                    "language" to canonStr(item.language),
+                    "prompt" to canonStr(item.prompt),
+                    "promptLetter" to canonStrOrNull(item.promptLetter),
+                    "options" to canonArr(item.options.map(::canonStr)),
+                    "answer" to canonStr(item.answer),
+                    "feedback" to canonStr(item.feedback),
+                    "objectiveId" to canonStr(item.objectiveId),
+                    "sourceId" to canonStr(item.sourceId),
+                    "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
+                )
+            }),
+            "references" to canonArr(pack.references.map { reference ->
+                canonObj(
+                    "id" to canonStr(reference.id),
+                    "title" to canonStr(reference.title),
+                    "summary" to canonStr(reference.summary),
+                    "detail" to canonStr(reference.detail),
+                    "introducedInUnit" to canonNum(reference.introducedInUnit),
+                    "sourceId" to canonStr(reference.sourceId),
+                    "classification" to canonStr(reference.classification),
+                    "searchTerms" to canonArr(reference.searchTerms.map(::canonStr)),
+                )
+            }),
+            "units" to canonArr(pack.units.map(::canonicalUnit)),
+        )
+    }
+
+    private fun canonicalUnit(unit: V2Unit): String {
+        return canonObj(
+            "number" to canonNum(unit.number),
+            "id" to canonStr(unit.id),
+            "title" to canonStr(unit.title),
+            "shortLabel" to canonStr(unit.shortLabel),
+            "topicSummary" to canonStr(unit.topicSummary),
+            "penguinLesson" to canonNum(unit.penguinLesson),
+            "mappingNote" to canonStr(unit.mappingNote),
+            "prerequisiteUnitNumbers" to canonArr(unit.prerequisiteUnitNumbers.map(::canonNum)),
+            "estimatedMinutes" to canonNumOrNull(unit.estimatedMinutes),
+            "objectives" to canonArr(unit.objectives.map { objective ->
+                canonObj(
+                    "id" to canonStr(objective.id),
+                    "unitNumber" to canonNum(objective.unitNumber),
+                    "title" to canonStr(objective.title),
+                    "kind" to canonStr(objective.kind),
+                    "instructionStepIds" to canonArr(objective.instructionStepIds.map(::canonStr)),
+                    "exampleIds" to canonArr(objective.exampleIds.map(::canonStr)),
+                    "practiceStepIds" to canonArr(objective.practiceStepIds.map(::canonStr)),
+                    "checkItemIds" to canonArr(objective.checkItemIds.map(::canonStr)),
+                    "remediationStepIds" to canonArr(objective.remediationStepIds.map(::canonStr)),
+                )
+            }),
+            "sessions" to canonArr(unit.sessions.map { session ->
+                canonObj(
+                    "id" to canonStr(session.id),
+                    "title" to canonStr(session.title),
+                    "estimatedMinutes" to canonNum(session.estimatedMinutes),
+                    "objectiveIds" to canonArr(session.objectiveIds.map(::canonStr)),
+                    "steps" to canonArr(session.steps.map { step ->
+                        canonObj(
+                            "id" to canonStr(step.id),
+                            "kind" to canonStr(step.kind),
+                            "title" to canonStr(step.title),
+                            "body" to canonStr(step.body),
+                            "dominantAction" to canonStr(step.dominantAction),
+                            "referenceIds" to canonArr(step.referenceIds.map(::canonStr)),
+                            "itemIds" to canonArr(step.itemIds.map(::canonStr)),
+                            "exampleIds" to canonArr(step.exampleIds.map(::canonStr)),
+                            "unavailableReason" to canonStrOrNull(step.unavailableReason),
+                            "bookDirection" to canonStrOrNull(step.bookDirection),
+                            "companionDirection" to canonStrOrNull(step.companionDirection),
+                            "remediationStepId" to canonStrOrNull(step.remediationStepId),
+                        )
+                    }),
+                )
+            }),
+            "advancement" to (unit.advancement?.let { rule ->
+                canonObj(
+                    "requireInstruction" to canonBool(rule.requireInstruction),
+                    "requireBookSelfAttestation" to canonBool(rule.requireBookSelfAttestation),
+                    "requireAppChecks" to canonBool(rule.requireAppChecks),
+                    "minimumDistinctChecks" to canonNum(rule.minimumDistinctChecks),
+                    "requireDueReview" to canonBool(rule.requireDueReview),
+                    "tutorOptional" to canonBool(rule.tutorOptional),
+                )
+            } ?: "null"),
+        )
+    }
+
+    private fun canonObj(vararg fields: Pair<String, String>): String {
+        return fields.joinToString(prefix = "{", postfix = "}") { (key, value) -> "${canonStr(key)}:$value" }
+    }
+
+    private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
+
+    private fun canonNum(value: Int): String = value.toString()
+
+    private fun canonNumOrNull(value: Int?): String = value?.toString() ?: "null"
+
+    private fun canonBool(value: Boolean): String = if (value) "true" else "false"
+
+    private fun canonStrOrNull(value: String?): String = if (value == null) "null" else canonStr(value)
+
+    private fun canonStr(value: String): String {
+        return buildString {
+            append('"')
+            value.forEach { char ->
+                when (char) {
+                    '\\' -> append("\\\\")
+                    '"' -> append("\\\"")
+                    '\n' -> append("\\n")
+                    '\r' -> append("\\r")
+                    '\t' -> append("\\t")
+                    else -> if (char.code < 0x20) append("\\u%04x".format(char.code)) else append(char)
+                }
+            }
+            append('"')
+        }
     }
 
     private fun validateReview(pack: V2CurriculumPack, errors: MutableList<String>) {
@@ -117,9 +260,9 @@ internal object V2Validator {
             errors += "APPROVED review is missing ${missing.joinToString(", ")}"
             return
         }
-        val expected = instructionalContentDigest(pack)
+        val expected = contentReviewDigest(pack)
         if (review.reviewedContentDigest != expected) {
-            errors += "APPROVED review digest does not match the shipped instructional content"
+            errors += "APPROVED review digest does not match the shipped content-review digest"
         }
     }
 
@@ -232,10 +375,10 @@ internal object V2Validator {
         if (review.status != "APPROVED" ||
             review.reviewer.isNullOrBlank() ||
             review.packVersion != pack.packVersion ||
-            review.reviewedContentDigest != instructionalContentDigest(pack) ||
+            review.reviewedContentDigest != contentReviewDigest(pack) ||
             review.curriculumMappingId.isNullOrBlank()
         ) {
-            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and instructional-content digest"
+            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and content-review digest"
         }
         val steps = unit.sessions.flatMap { it.steps }
         val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()

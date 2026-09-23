@@ -1,0 +1,26 @@
+# Warning: this worksheet must not contain copied Penguin prose or exercises.
+# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, reviewed digest, and qualification only after comparing the Product Owner's legally owned edition.
+record_id	record_type	app_title	edition_identification	isbn	publisher_edition	owned_copy_verified	corresponding_lesson	corresponding_pages	corresponding_topic	alignment_disposition	variance_conflict	reviewer_notes	reviewer_identity	review_date	reviewed_version_digest	reviewer_qualification
+obj-u1-letter-identity	OBJECTIVE	Identify staged printed letters														
+obj-u1-confusable	OBJECTIVE	Separate Cyrillic letters from Latin look-alikes														
+obj-u1-iotated	OBJECTIVE	Recognize Е Ё Ю Я as a group														
+obj-u1-signs	OBJECTIVE	Treat Ь Ъ Й as non-ordinary-vowel letters														
+obj-u1-print-forms	OBJECTIVE	Match uppercase and lowercase print pairs														
+obj-u1-decoding	OBJECTIVE	Decode a printed letter pair														
+obj-u1-pronunciation	OBJECTIVE	Confirm letter sounds in the book														
+obj-u1-stress	OBJECTIVE	Treat stress as book-marked, not guessed														
+obj-u1-book	OBJECTIVE	Complete Lesson 1 work in the owned book														
+u1-s-orient	SESSION	What this unit is for														
+u1-s-writing-system	SESSION	The writing system														
+u1-s-vowels	SESSION	Plain vowel letters														
+u1-s-early-consonants	SESSION	Early consonant letters														
+u1-s-confusable	SESSION	Letters that look like Latin														
+u1-s-iotated	SESSION	Iotated vowel letters														
+u1-s-signs	SESSION	Soft sign, hard sign, and Й														
+u1-s-print	SESSION	Print forms														
+u1-s-decoding	SESSION	Staged decoding														
+u1-s-pronunciation	SESSION	Pronunciation support														
+u1-s-stress	SESSION	Stress awareness														
+u1-s-book	SESSION	Work in your book														
+u1-s-companions	SESSION	AnkiDroid, binder, and tutor														
+u1-s-check	SESSION	Cumulative letter check														
