@@ -129,6 +129,17 @@ class UnitReviewPipelineTest {
         assertNotEquals(unitFive, V2Validator.unitContentReviewDigest(local, 5))
         assertEquals(buildUnitReviewPackage(pack, 3).reviewPackageDigest, buildUnitReviewPackage(local, 3).reviewPackageDigest)
 
+        val workflow = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number == 5) unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING") else unit
+            },
+            unitReviews = pack.unitReviews.map { review ->
+                if (review.unitNumber == 5) review.copy(status = "REJECTED", notes = "Workflow only.") else review
+            },
+        )
+        assertEquals(unitFive, V2Validator.unitContentReviewDigest(workflow, 5))
+        assertEquals(V2Validator.contentReviewDigest(pack), V2Validator.contentReviewDigest(workflow))
+
         val shared = pack.copy(
             references = pack.references.map { reference ->
                 if (reference.id == "ref-book-topics") reference.copy(detail = reference.detail + " extra") else reference

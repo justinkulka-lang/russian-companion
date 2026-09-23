@@ -4,12 +4,14 @@
 Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
-Units 1–5 are content-complete DEVELOPMENT units awaiting qualified
-review and an owned-edition mapping. None is INSTALLED. Units 3–5 send
-their new book topics to the owned copy and review printed letters already
-in the pack. They do not invent phrases, gender rules, verb forms, or case
-endings. Advancement checks are letter identities, print pairs, confusable
-forms, and signs — never product-policy quizzes.
+Units 1–2 are content-complete DEVELOPMENT units awaiting qualified
+review and an owned-edition mapping. Units 3–5 are DEVELOPMENT paths for
+the next public topics and are not content-complete: their new phrases and
+grammar stay in the owned book, and printed-letter drills are not used as
+a substitute. None is INSTALLED. They do not invent phrases, gender rules,
+verb forms, case endings, or question words. Advancement checks are letter
+identities, print pairs, confusable forms, and signs — never product-policy
+quizzes.
 """
 
 from __future__ import annotations
@@ -295,42 +297,14 @@ def objective(
     }
 
 
-def book_review_bundle(number: int, topics: list[tuple[str, str, str, str]], letters: list[tuple]) -> dict:
-    """Book-directed topics plus a review of letters already packaged.
+def book_directed_topics(number: int, topics: list[tuple[str, str, str, str]]) -> dict:
+    """Name each public topic and send that work to the owned book.
 
     topics: (suffix, session title, step title, book direction)
-    letters: (upper, kind, prompt, options, answer, feedback)
+    These sessions are not content-complete. They do not add recognition
+    items, examples, or letter drills as a stand-in for the lesson.
     """
-    review_id = f"obj-u{number}-review"
     book_id = f"obj-u{number}-book"
-    items = []
-    examples = []
-    for upper, kind, prompt, options, answer, feedback in letters:
-        suffix = letter_id(upper).removeprefix("letter-")
-        items.append(
-            item(
-                f"u{number}-i-{suffix}",
-                prompt,
-                options,
-                answer,
-                feedback,
-                review_id,
-                upper,
-                kind,
-            )
-        )
-        examples.append(
-            example(
-                f"ex-u{number}-{suffix}",
-                "PRINT_PAIR" if kind == "PRINT_PAIR" else "LETTER_FORM",
-                upper,
-                f"{upper} / {upper.lower()}",
-                f"Printed pair {upper} {upper.lower()} from the letters already in this pack.",
-                review_id,
-            )
-        )
-    item_ids = [row["id"] for row in items]
-    example_ids = [row["id"] for row in examples]
     book_steps = []
     book_sessions = []
     for suffix, session_title, step_title, direction in topics:
@@ -354,115 +328,68 @@ def book_review_bundle(number: int, topics: list[tuple[str, str, str, str]], let
                 12,
             )
         )
-    review_step = f"u{number}-st-review"
-    guided_step = f"u{number}-st-review-guided"
+    attest_id = f"u{number}-st-book"
     sessions = [
         session(
             f"u{number}-s-orient",
-            "What this unit is for",
-            [review_id],
+            "What this unit does not contain",
+            [book_id],
             [
                 step(
                     f"u{number}-st-orient",
                     "ORIENT",
-                    f"Unit {number} stays with the owned book",
-                    f"Proposed Lesson {number} is a topic from the publisher's public table of contents. It is not an approved edition alignment. New phrases and grammar for this lesson stay in the book you own. This unit reviews printed letters you already met.",
-                    bookDirection=f"Open Lesson {number} in your copy. Use the book for its explanations, examples, and exercises.",
+                    f"Unit {number} is not content-complete",
+                    (
+                        f"Unit {number} follows the previous unit in the public lesson order. "
+                        "Its new explanations, examples, guided practice, independent checks, "
+                        "answer feedback, and remediation are not in this app. "
+                        "The later steps name the part of the owned lesson to do. "
+                        "They do not copy that lesson, and they do not make this unit content-complete."
+                    ),
+                    bookDirection=f"Open Lesson {number} in your copy before the later steps.",
+                    referenceIds=["ref-book-topics"],
                 ),
             ],
             6,
         ),
         *book_sessions,
         session(
-            f"u{number}-s-review",
-            "Printed-letter review",
-            [review_id],
-            [
-                step(
-                    review_step,
-                    "TEACH",
-                    "Keep printed letters available",
-                    "Review printed letters already in this pack. This review does not introduce the new lesson's phrases or grammar.",
-                    referenceIds=["ref-cyrillic-print"],
-                    exampleIds=example_ids,
-                ),
-                step(
-                    guided_step,
-                    "GUIDED",
-                    "Match one printed pair",
-                    "Choose the printed letter named in the item.",
-                    itemIds=[item_ids[0]],
-                    exampleIds=[example_ids[0]],
-                    remediationStepId=review_step,
-                ),
-                step(
-                    f"u{number}-st-review-check",
-                    "CHECK",
-                    "Letter identities",
-                    "Closed-response items about printed letters already in this pack.",
-                    itemIds=item_ids,
-                    exampleIds=example_ids,
-                    remediationStepId=review_step,
-                ),
-            ],
-            10,
-        ),
-        session(
-            f"u{number}-s-record",
-            "Self-record",
+            f"u{number}-s-book",
+            f"Self-attest Lesson {number}",
             [book_id],
             [
                 step(
-                    f"u{number}-st-record",
-                    "SPEAK",
-                    "Optional recording without a score",
-                    "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it.",
+                    attest_id,
+                    "BOOK",
+                    f"Record Lesson {number} book work",
+                    (
+                        f"When you have done Lesson {number} in your copy, self-attest here. "
+                        "Attestation records your report. It does not grade the lesson, "
+                        "approve a mapping, or mark this unit content-complete."
+                    ),
+                    bookDirection=(
+                        f"After Lesson {number} is finished in your copy, return here and self-attest."
+                    ),
+                    referenceIds=["ref-book-topics"],
                 ),
             ],
             8,
         ),
-        session(
-            f"u{number}-s-book",
-            "Work in your book",
-            [book_id],
-            [
-                step(
-                    f"u{number}-st-book",
-                    "BOOK",
-                    f"Lesson {number} in your copy",
-                    f"Complete Lesson {number} in the edition you own. Self-attest when finished. This app does not copy that lesson.",
-                    bookDirection=f"Do Lesson {number} in your book, then return here to self-attest.",
-                    referenceIds=["ref-book-topics"],
-                ),
-            ],
-            25,
-        ),
     ]
     objectives = [
         objective(
-            review_id,
-            number,
-            "Review printed letters already in the pack",
-            "RECOGNITION",
-            [review_step],
-            example_ids,
-            [guided_step],
-            item_ids,
-            [review_step],
-        ),
-        objective(
             book_id,
             number,
-            f"Complete Lesson {number} work in the owned book",
+            f"Do Lesson {number} in the owned book and self-attest",
             "SELF_ATTESTATION",
-            [f"u{number}-st-book"],
+            book_steps + [attest_id],
             [],
             [],
             [],
             [],
         ),
     ]
-    return {"items": items, "examples": examples, "sessions": sessions, "objectives": objectives}
+    return {"items": [], "examples": [], "sessions": sessions, "objectives": objectives}
 
 
 def build() -> dict:
@@ -1462,8 +1389,8 @@ def build() -> dict:
         reference(
             "ref-book-topics",
             "Later lesson topics stay in the book",
-            "Units 3–5 do not state phrases, gender, verb forms, or case endings.",
-            "Study those topics in the copy you own. The app reviews printed letters already in the pack and does not copy the book.",
+            "Units 3–5 do not contain the phrases, grammar, or question forms named in their public topics.",
+            "Open the matching lesson in the copy you own. This reference does not supply those forms, and it does not make the unit content-complete.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
@@ -1480,7 +1407,9 @@ def build() -> dict:
         install_state: str = "DEVELOPMENT",
         readiness: str = "NOT_PREPARED",
         mapping_note: str = "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+        require_due_review: bool | None = None,
     ) -> dict:
+        due_review = number > 1 if require_due_review is None else require_due_review
         return {
             "number": number,
             "id": f"unit-{number}",
@@ -1501,138 +1430,60 @@ def build() -> dict:
                 "requireBookSelfAttestation": True,
                 "requireAppChecks": True,
                 "minimumDistinctChecks": 2,
-                "requireDueReview": number > 1,
+                "requireDueReview": due_review,
                 "tutorOptional": True,
             },
         }
 
     bundles = [
-        book_review_bundle(
+        book_directed_topics(
             3,
             [
                 (
                     "phrases",
-                    "Everyday phrases and naming",
-                    "Everyday phrases and naming stay in the book",
-                    "Study everyday phrases and naming things in Lesson 3 of your copy. This app does not supply those phrases.",
+                    "Everyday phrases and naming things",
+                    "Work everyday phrases in your copy",
+                    "In your copy, open Lesson 3 and do its section on everyday phrases and naming things. Use the book's explanations, examples, and practice. This app does not supply the phrases or their answers.",
                 ),
                 (
                     "gender",
                     "Basic grammar and gender",
-                    "Grammar and gender stay in the book",
-                    "Study basic grammar and gender in Lesson 3 of your copy. This app does not state those rules.",
-                ),
-            ],
-            [
-                (
-                    "Г",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic Г", "Cyrillic Т", "Cyrillic П"],
-                    "Cyrillic Г",
-                    "Г is a Cyrillic letter already in this pack. It is not Т or П.",
-                ),
-                (
-                    "Д",
-                    "PRINT_PAIR",
-                    "Which pair is the same letter in uppercase and lowercase print?",
-                    ["Д / д", "Д / т", "Т / д"],
-                    "Д / д",
-                    "Д / д is one printed letter. Т is a different letter.",
-                ),
-                (
-                    "Т",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic Т", "Cyrillic Г", "Cyrillic Д"],
-                    "Cyrillic Т",
-                    "Т is a Cyrillic letter already in this pack. It is not Г or Д.",
+                    "Work grammar and gender in your copy",
+                    "In your copy, open Lesson 3 and do its section on basic grammar and gender. Use the book's explanations and practice. This app does not state gender rules.",
                 ),
             ],
         ),
-        book_review_bundle(
+        book_directed_topics(
             4,
             [
                 (
                     "verbs",
-                    "Verbs and the present tense",
-                    "Verbs and present-tense forms stay in the book",
-                    "Study verbs, personal pronouns, and the present tense in Lesson 4 of your copy. This app does not state those forms.",
+                    "Verbs, pronouns, and the present tense",
+                    "Work verbs and the present tense in your copy",
+                    "In your copy, open Lesson 4 and do its section on verbs, personal pronouns, the present tense, and conjugation. Use the book's explanations, examples, and practice. This app does not state those forms.",
                 ),
                 (
                     "cases",
                     "Word stress and noun cases",
-                    "Stress and noun cases stay in the book",
-                    "Study word stress and the introduction to nouns and cases in Lesson 4 of your copy. This app does not mark stress or case endings.",
-                ),
-            ],
-            [
-                (
-                    "П",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic П", "Cyrillic Г", "Cyrillic Т"],
-                    "Cyrillic П",
-                    "П is a Cyrillic letter already in this pack. It is not Г or Т.",
-                ),
-                (
-                    "К",
-                    "PRINT_PAIR",
-                    "Which pair is the same letter in uppercase and lowercase print?",
-                    ["К / к", "К / п", "П / к"],
-                    "К / к",
-                    "К / к is one printed letter. П is a different letter.",
-                ),
-                (
-                    "О",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic О", "Cyrillic С", "Cyrillic Э"],
-                    "Cyrillic О",
-                    "О is a Cyrillic letter already in this pack. It is not С or Э.",
+                    "Work stress and noun cases in your copy",
+                    "In your copy, open Lesson 4 and do its section on word stress and the introduction to nouns and cases. Use the book's explanations and practice. This app does not mark stress or case endings.",
                 ),
             ],
         ),
-        book_review_bundle(
+        book_directed_topics(
             5,
             [
                 (
                     "questions",
                     "Questions",
-                    "Question forms stay in the book",
-                    "Study questions in Lesson 5 of your copy. This app does not supply question words or patterns.",
+                    "Work questions in your copy",
+                    "In your copy, open Lesson 5 and do its section on questions. Use the book's explanations, examples, and practice. This app does not supply question words or patterns.",
                 ),
                 (
                     "prepositional",
                     "Prepositional case and indeclinable nouns",
-                    "Prepositional case stays in the book",
-                    "Study the prepositional case and indeclinable nouns in Lesson 5 of your copy. This app does not state those endings.",
-                ),
-            ],
-            [
-                (
-                    "Ж",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic Ж", "Cyrillic Х", "Cyrillic К"],
-                    "Cyrillic Ж",
-                    "Ж is a Cyrillic letter already in this pack. It is not Х or К.",
-                ),
-                (
-                    "З",
-                    "PRINT_PAIR",
-                    "Which pair is the same letter in uppercase and lowercase print?",
-                    ["З / з", "З / э", "Э / з"],
-                    "З / з",
-                    "З / з is one printed letter. Э is a different letter.",
-                ),
-                (
-                    "И",
-                    "LETTER_IDENTITY",
-                    "Which printed letter is shown?",
-                    ["Cyrillic И", "Cyrillic Н", "Cyrillic Й"],
-                    "Cyrillic И",
-                    "И is a Cyrillic letter already in this pack. It is not Н or Й.",
+                    "Work the prepositional case in your copy",
+                    "In your copy, open Lesson 5 and do its section on the prepositional case and indeclinable nouns. Use the book's explanations and practice. This app does not state those endings.",
                 ),
             ],
         ),
@@ -1667,31 +1518,31 @@ def build() -> dict:
             3,
             "Everyday phrases, naming things, basic grammar, and gender",
             "Everyday phrases",
-            "Content-complete development unit after Unit 2. Everyday phrases, naming, basic grammar, and gender stay in the owned book. The app reviews printed letters already in the pack and does not state those new forms. Qualified review and the owned-edition mapping are still pending.",
+            "Unit 3 follows Unit 2 and is not content-complete. The public topic is everyday phrases, naming things, basic grammar, and gender. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 3 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
             bundles[0]["sessions"],
             [2],
-            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
-            mapping_note="Proposed Lesson 3 mapping from the publisher's public table of contents: everyday phrases, naming things, basic grammar, and gender. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
+            mapping_note="Proposed Lesson 3 mapping from the publisher's public table of contents: everyday phrases, naming things, basic grammar, and gender. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
         ),
         development_unit(
             4,
             "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
             "Verbs and cases",
-            "Content-complete development unit after Unit 3. Verbs, pronouns, present tense, stress, and the introduction to nouns and cases stay in the owned book. The app reviews printed letters already in the pack and does not state those forms. Qualified review and the owned-edition mapping are still pending.",
+            "Unit 4 follows Unit 3 and is not content-complete. The public topic is verbs, personal pronouns, the present tense, conjugation, word stress, and the introduction to nouns and cases. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 4 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
             bundles[1]["sessions"],
             [3],
-            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
-            mapping_note="Proposed Lesson 4 mapping from the publisher's public table of contents: verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
+            mapping_note="Proposed Lesson 4 mapping from the publisher's public table of contents: verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
         ),
         development_unit(
             5,
             "Questions, prepositional case, and indeclinable nouns",
             "Questions",
-            "Content-complete development unit after Unit 4. Questions, the prepositional case, and indeclinable nouns stay in the owned book. The app reviews printed letters already in the pack and does not state those forms. Qualified review and the owned-edition mapping are still pending.",
+            "Unit 5 follows Unit 4 and is not content-complete. The public topic is questions, the prepositional case, and indeclinable nouns. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 5 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
             bundles[2]["sessions"],
             [4],
-            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
-            mapping_note="Proposed Lesson 5 mapping from the publisher's public table of contents: questions, prepositional case, and indeclinable nouns. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
+            mapping_note="Proposed Lesson 5 mapping from the publisher's public table of contents: questions, prepositional case, and indeclinable nouns. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
         ),
     ]
     for number, short, title in UNITS_3_30:
