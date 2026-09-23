@@ -1,0 +1,218 @@
+Adjectives in Russian are simply words that modify nouns. The endings of adjectives change according to the gender, number, and case of the nouns they modify. The rules for changing adjectives is often a lot easier than the rules for changing nouns themselves. There are six cases, and so six main ways of conjugating adjectives to fit the noun they modify. Finally, there are the ''short adjectives'', detailed at the end.
+
+[[File:Red_Square_Security.jpg|thumb|Red Square - Красная Площадь - <br>''<small>KRA</small>-sna-ya <small>PLO</small>-chshad'' ]]
+
+== Nominative adjectives ==
+The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries. All Russian adjectives in their default form end in either '''-ый''', '''-ий''', or '''-ой''', and conjugating them is as simple as removing this default ending and adding the new one.
+
+=== Hard endings ===
+Most Russian adjectives have a hard ending. In fact, all three endings ('''-ый''', '''-ий''', and '''-ой''') are 'hard'. The only exception is those adjectives ending in '''-ний''', which we'll discuss in a moment. For now, we only need to know that an adjective can have four different endings in the nominative case: masculine, feminine, neuter, and plural.
+
+# When adjectives modify a masculine noun, they use their default ending. Most adjectives have the '''-ый''' ending, pronounced 'ee', less common is '''-ий''', also pronounced 'ee', and less common still is '''-ой''', pronounced 'oy'. For example, "new pencil" is '''новый карандаш''' (pronounced ''<small>NO</small>-vee ka-ran-<small>DASH</small>''). As a memory aid, remember that masculine nouns end in a consonant or й, and the masculine ending for adjectives end in й.
+#With feminine nouns, the adjective ends in '''-ая'''. An easy way to remember this is to remember that '''a''' and '''я''' are what go on the end of feminine nouns. For example, "new car" is '''новая машина''' (pronounced ''<small>NO</small>-vah-yah ma-<small>SHEE</small>-na''").
+#With neuter nouns, the adjective ends in '''-ое'''. Like with feminine nouns, you can remember this as the two letters that go on the end of neuter nouns, '''o''' and '''e'''. For example, "new dress" is '''новое платье''' (pronounced ''<small>NO</small>-vo-yeh <small>PLAT</small>-ye'').
+#With plural nouns, regardless of gender, the adjective replaces '''-ый''' or '''-ой''' with '''-ые''' ('ee-ye'), or it replaces '''-ий''' with '''-ие''' ('ee-ye'). For example, "these good new students" is '''эти хорошие новые студенты''' (pronounced ''<small>EH</small>-tee kha-<small>RO</small>-shee-ye <small>NO</small>-vih-yeh stoo-<small>DYENT</small>-ee''). As a memory aid, think of plural as one masculine and one neuter object. Take the first letter from the masculine ending ('''ы''') and the second letter from the neuter ending ('''e''') and you get '''ые'''.
+
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+
+===5- and 7-letter spelling rules===
+When forming the nominative plural of nouns, recall that if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives. As a memory aid, these letters include the non-English-looking 'hushes' ('''ч, ш, щ, ж''') and three letters pronounced at the back of the throat ('''г, к, х'''). This is why adjectives whose stem ends in one of these seven letters have the '''-ий''' ending instead of '''-ый'''.
+
+Four of these letters are also in the 5-letter spelling rule. This states that, if the stem ends in '''ж, ц, ч, ш''', or '''щ''', any unstressed '''o''' in an ending is instead written as '''e'''. For example, 'the good letter' is written '''хорошее письмо''' (and ''not'' '''хорошое письмо''').
+
+== Accusative adjectives ==
+Adjectival endings in the accusative case are similar to noun endings, in that they all use endings from other cases, with the exception of feminine nouns.
+
+Masculine adjectives take the nominative form if their noun is inanimate, and neuter adjectives always take their nominative form. For example, I want a new chair and a new letter - '''Я хочу новый стул и новое письмо'''. However, if the modified masculine noun is a person or animal, then both it and its adjectives take the genitive form. For example, I want a new rabbit - '''Я хочу нового кролика.'''
+
+Feminine adjectives simply have '''-ую''' in the accusative. As a memory aid, these are the two letters that feminine nouns take on in the accusative case. For example, My Russian cat likes my new dog - '''Моя русская кошка любит мою новую собаку'''. One exception is adjectives with the soft ending: they take '''-юю''' in the accusative instead.
+
+Plural adjectives, regardless of gender, are also split according to animation: inanimate plural adjectives take their nominative form, while animate ones take their genitive form.
+
+{| class="wikitable" style="text-align: center"
+|-
+| Masculine || Neuter || Feminine || Plural
+|-
+| '''ый/ий/ой'''<br>'''ого/его''' || '''ое''' || '''ую''' || '''ые/ие'''<br>'''ых/их'''
+|}
+
+== Genitive adjectives ==
+The genitive case is relatively easy, especially compared with how nouns decline in this case. Adjectives use the same ending for both masculine and neuter nouns: '''-ого'''. If the adjective has the soft ending or ends in the 5-letter rule ('''ш, щ, ч, ж, ц'''), it ends in '''-его'''. Note that with these genitive endings there's a new pronunciation rule: '''-ого''' is pronounced 'oh-vo', not 'oh-goh', and '''-его''' is pronounced 'ye-vo', not 'ye-goh'. This unusual pronunciation is only on genitive (and accusative) endings; '''мно́го''', 'much/many', is pronounced 'mno-ga'.
+
+Like masculine and neuter adjectives, the feminine form has two endings: '''-ой''' ('oy'), or '''-ей''' ('yay') for soft adjectives and those ending in the 5-letter rule.
+
+The plural form also has two endings: '''-ых''', or '''-их''', if the adjective's stem ends in one of the ''7-letter-rule'' letters ('''х, г, к, ш, щ, ч, ж''').
+
+{| class="wikitable" style="text-align: center"
+|-
+| Masculine/Neuter || Feminine || Plural
+|-
+| '''ого'''<br>'''его''' || '''ой'''<br>'''ей''' || '''ых'''<br>'''их'''
+|}
+
+Examples:
+:My new husband has many friends - '''У моего нового мужа есть много друзе́й'''
+:Three kilograms of fresh new cheeses - '''Три килогра́мма свежих новых сыров'''
+:A kilogram of beautiful American apples - '''Килогра́мм краси́вых америка́нских я́блок'''
+:I arrived from my old house - '''Я пришёл из моего старого дома'''
+
+== Instrumental adjectives ==
+The instrumental case is used to denote nouns which are the means by which a verb is carried out, such as, "I am writing ''with a pen''" ('''Я пишу́ ''ру́чкой''''').
+
+To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч, ж, ц''') or the soft ending ('''-ний'''), then the instrumental ending is '''-им'''. For example, 'I wrote with a good new pencil' - '''Я написал хорошим новым карандашом'''.
+
+Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending is '''ей'''. These are the same as the feminine singular endings for the genitive, dative, and prepositional cases. For example, 'I want a meeting with an interesting Russian woman' - '''Я хочу встречу с интересной русской женщиной'''.
+
+To form the instrumental plural, all adjectives have '''-ыми'''. Those which end in '''-ий''' have '''-ими'''.
+
+{| class="wikitable" style="text-align: center"
+|-
+| Masculine/Neuter || Feminine || Plural
+|-
+| '''ым'''<br>'''им''' || '''ой'''<br>'''ей''' || '''ыми'''<br>'''ими'''
+|}
+
+Examples:
+:I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''
+:It's under the good books - '''Оно́ под хоро́шими кни́гами'''
+:I am studying Russian - '''Я занима́юсь ру́сским языко́м'''
+
+== Dative adjectives ==
+The dative case denotes the secondary object of a verb. For example, 'I wrote a letter to him' would place 'letter' in the accusative case as it's the direct object of the verb, while 'to him' would be the word 'him' placed in the dative case. Thus, it translates to '''Я написал письмо ему'''. Adjectives in the dative case conjugate as follows:
+
+Masculine and neuter adjectives end in '''-ому'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч, ж, ц''') or the soft ending ('''-ний'''), they end in '''-ему'''. If you already know the prepositional form, you will see this is prepositional form, with an '''у''' attached. This can be a useful memory aid, as most dative masculine and neuter nouns end in '''-у'''.
+
+Similarly, feminine adjectives in the dative actually ''are'' identical to their prepositional form (and their instrumental and genitive forms as well): '''-ой''', unless the stem ends in the 5-letter rule, or the adjective ends in the soft ending, in which case '''-ей'''.
+
+Plural adjectives are like plural nouns in the dative form, in that they're the same as their instrumental cousins, only without the end '''и'''. This also means that they're the same as their instrumental singular forms. In other words, dative plural adjectives end in '''-ым''', unless they end in the 7-letter rule ('''г, к, х, ш, щ, ж, ч'''), in which case the ending is '''-им'''.
+
+{| class="wikitable" style="text-align: center"
+|-
+| Masculine/Neuter || Feminine || Plural
+|-
+| '''ому'''<br>'''ему''' || '''ой'''<br>'''ей''' || '''ым'''<br>'''им'''
+|}
+
+Examples:
+:She wants to speak to your young cousin - '''Она́ хо́чет поговори́ть с ва́шей молодо́й двою́родной сестро́й'''
+:He walked along the new street - '''Он шёл по но́вой у́лице'''
+:I gave five pounds to the nice old lady - '''Я дал пять фу́нтов симпати́чной ста́рой же́нщине'''
+
+==Prepositional adjectives==
+The final case is the [[Russian/Grammar/Prepositional case|prepositional case]]. This is only used after four prepositions ('''в, на, о(б)''', and '''при'''), as discussed more thoroughly on its dedicated page. As you may guess by now, there is an ending for masculine and neuter adjectives, an ending for feminine adjectives, and an ending for plural adjectives, and they all have alternatives if the adjectival stem ends in the 5- or 7- letter rule.
+
+The ending for masculine and neuter endings is the same as that for dative adjectives, minus the end vowel: '''-ом'''. If the stem ends in the 5-letter rule ('''ш, щ, ч, ж, ц'''), or the adjective has the soft ending '''-ний''', the ending is '''-ем'''. For example, 'They were talking about a good new cinema' - '''Они говорили о хорошем новом кино''' (note that '''кино''', 'cinema', is indeclinable).
+
+Feminine adjectives have the same ending as in the genitive, dative, and instrumental cases: '''-ой''', or, if the adjective ends in the 5-letter rule or the soft ending, '''-ей'''. For example, 'They were in the old Russian school' - '''Они были в старой русской школе'''.
+
+Plural adjectives in the prepositional end in '''-ых'''. If the stem ends in the 7-letter rule ('''г, к, х, ш, щ, ж, ч''') or the adjective has the soft ending, the plural prepositional ending is '''-их'''. For example, 'They like to live in big red houses' - '''Они любят жить в больших красных домах'''.
+
+{| class="wikitable" style="text-align: center"
+|-
+| Masculine/Neuter || Feminine || Plural
+|-
+| '''ом'''<br>'''ем''' || '''ой'''<br>'''ей''' || '''ых'''<br>'''их'''
+|}
+
+Examples:
+:I want to live in a clean new city - '''Я хочу́ жить в чи́стом но́вом го́роде'''
+:She's in the blue apartment, not the white apartment - '''Она́ в си́ней кварти́ре, не в бе́лой кварти́ре''' - ''note the soft ending of '''си́ний/си́ней'''''
+:Let's talk about my beautiful young Russian wife! - '''Давайте говорить о мое́й краси́вой молодо́й ру́сской жене́!'''
+
+[[Russian/Grammar/Prepositional case]]
+
+== Summary ==
+A summary of all adjectival endings for each case, gender, and number, can be found here.
+
+{| class="wikitable" align="center" style="text-align:center; margin: 1em auto 1em auto;"
+|-
+! Case
+! colspan="2" | Masculine
+! Neuter || Feminine
+! colspan="2" | Plural
+|-
+! Nominative
+| colspan="2" | '''ый ий ой'''
+| '''ое''' || '''ая'''
+| colspan="2" | '''ые ие'''
+|- 
+! Accusative
+| '''ый ий ой''' || '''ого его''' || '''ое''' || '''ую''' || '''ые ие''' || '''ых их'''
+|-
+! Genitive
+| colspan="3" | '''ого его'''
+| '''ой ей'''
+| colspan="2" | '''ых их'''
+|-
+! Instrumental
+| colspan="3" | '''ым им'''
+| '''ой ей'''
+| colspan="2" | '''ыми ими'''
+|-
+! Dative
+| colspan="3" | '''ому ему'''
+| '''ой ей'''
+| colspan="2" | '''ым им'''
+|-
+! Prepositional
+| colspan="3" | '''ом ем'''
+| '''ой ей'''
+| colspan="2" | '''ых их'''
+|}
+
+The masculine and plural accusative endings are split between inanimate endings on the left, and animate endings on the right. Most other endings come in pairs. For singular endings, only use the right-hand one (with an '''e''' in it) after adjectival stems that end in the 5-letter rule ('''ш, щ, ч, ж, ц'''). For plural endings, only use the right-hand one (with an '''и''')  after the 7-letter rule ('''г, к, х, ш, щ, ж, ч'''; that is, any adjective whose default ending is '''-ий'''). For adjectives that have the soft ending ('''-ний'''), always use the right-hand ending. Finally, notice that for the latter four cases, the neuter ending is the same as the masculine, and the feminine endings are all the same.
+
+== Short adjectives ==
+=== Usage ===
+When an adjective describes something permanent, fixed, or unchanging, we use the 'long-form', which is given in the above sections. By contrast, short adjectives describe something transient, fleeting, or temporary. For instance, 'I'm happy!' could be written in Russian using the usual, 'long-form' adjecitve: '''Я счастли́вый!''' (for a boy) or '''Я счастли́вая!''' (for a girl). However, since the quality of 'being happy' might be a temporary one (compare "I'm always happy" with "I was happy yesterday morning"), we can describe this state using the short form of the adjective to emphasise its temporary nature.  Conversational Russian prefers constructions that use long-form adjectives, though the short form is still used for this important distinction.
+
+Every adjective has both long and short forms; which you use depends on the finer details of what you're trying to say. If in doubt, use the long form. The short form is used in sentences like 'The house is clean', rather than 'The clean house'; though both are broadly conveying the same idea, the temporary nature of the adjective is emphasised by being in the short form, ''and'' by being at the end of the sentence, just like in English.
+
+=== Formation ===
+To make the short form of any adjective, just remove the ending. The feminine then has the suffix '''-а''', the neuter has '''-о''', and all plurals have '''-ы'''. The short form doesn't change according to the case of the noun it modifies, only gender and number, making it very easy to remember. The masculine form is usually just the bare stem, but if it ends in awkward consonant clusters, we add an '''o''' or '''e''' to smooth things out. Specifically, we add '''-o-''' before a final '''-к''', and '''-e-''' before a final '''-н'''. For example, '''ни́зкий''' ('low') would have the short form '''низк''', but since this is hard to pronounce, the masculine short form is instead '''ни́зок'''.
+
+If you have a good grasp of gender and number, you'll find these suffixes very easy to remember. So, the short forms of '''счастли́вый''' is '''сча́стлив, сча́стливa, сча́стливo''', and '''сча́стливы''', and to say "I'm happy" with emphasis on the temporary nature of this happiness, we would say '''Я сча́стлив!'''.
+
+=== Exceptions ===
+There are two adjectives with exceptional short forms, '''большо́й''' ('big') and '''маленький''' ('small'), as follows:
+
+{| class="wikitable"
+|-
+! Gender !! '''Большой''' !! '''Маленький'''
+|-
+! Masculine
+| вели́к || мал
+|-
+! Feminine
+| велика́ || мала́
+|-
+! Neuter
+| велико́ || мало́
+|-
+! Plural
+| велики́ || малы́
+|}
+
+Some adjectives have no short form, and tend to be those that are derived from nouns. These have endings like '''-ский''', '''-овой''', and '''-ной''' (e.g., '''братский'''). There is also a short-form adjective, '''рад''' ('glad'), which has no long form.
+----
+{{Russian}}
+
+{{BookCat}}
+
+== See also ==
+How the endings of adjectives for color change according to the gender, number and the case of the nouns that the adjective modifies:
+
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Nominative_case Nominative] 
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Genitive_case Genitive] 
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Dative_case Dative] 
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Accusative_case Accusative] 
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Instrumental_case Instrumental]
+*[http://wikitranslate.org/wiki/Russian_cases_-_Adjectives_-_Prepositional_case Prepositional]
+
+For an article on short-form adjectives, see:
+*[http://masterrussian.com/aa041601a.shtml Master Russian - Short form adjectives]

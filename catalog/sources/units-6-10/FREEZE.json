@@ -1,0 +1,467 @@
+{
+  "retrieved": "2026-09-23",
+  "openrussian": {
+    "repository": "https://github.com/Badestrand/russian-dictionary",
+    "commit": "50e210c4803237779cb562bc1abcea529066031c",
+    "commitDate": "2021-08-09T10:43:51Z",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseFile": "../units-3-5/openrussian/LICENSE",
+    "licenseSha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "files": {
+      "nouns.csv": {
+        "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9",
+        "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+        "path": "../units-3-5/openrussian/nouns.csv"
+      },
+      "others.csv": {
+        "gitBlob": "2f819ba39652fceab3afe39ff9ef2a69b0dbd49d",
+        "sha256": "9f22a16b17fc9a564298112168b667fced11aafb254ccebf5b7544fc37cdaa92",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv",
+        "path": "../units-3-5/openrussian/others.csv"
+      },
+      "adjectives.csv": {
+        "gitBlob": "09986b701d1b232abb50db96c30b81ceab1c6526",
+        "sha256": "89ab5d10dcd2f21f6b485de704aef372f32251468e3aa96f18b21e259f26b80a",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv",
+        "path": "openrussian/adjectives.csv"
+      }
+    },
+    "rows": [
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:книга",
+        "bare": "книга",
+        "accented": "кни'га",
+        "line": "книга\tкни'га\tbook, volume\tBuch\tf\t\t0\t0\t0\t0\tкни'га\tкни'ги\tкни'ге\tкни'гу\tкни'гой,     кни'гою\tкни'ге\tкни'ги\tкни'г\tкни'гам\tкни'ги\tкни'гами\tкни'гах",
+        "sha256": "922375113b16b2fe4d5851dd01f8239ee1bc9e17c07d7eee05ede3d8e9158e38"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:стол",
+        "bare": "стол",
+        "accented": "стол",
+        "line": "стол\tстол\ttable, desk, board; diet, cooking, cuisine; department, section\tTisch, Tafel; Essen, Kost; Büro, Abteilung\tm\t\t0\t0\t0\t0\tсто'л\tстола'\tстолу'\tсто'л\tстоло'м\tстоле'\tстолы'\tстоло'в\tстола'м\tстолы'\tстола'ми\tстола'х",
+        "sha256": "eb7b12cf08326c5ad56e52053715597e41354653484d9db163332015cce599fd"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:брат",
+        "bare": "брат",
+        "accented": "брат",
+        "line": "брат\tбрат\tbrother\tBruder\tm\t\t1\t0\t0\t0\tбрат\tбра'та\tбра'ту\tбра'та\tбра'том\tбра'те\tбра'тья\tбра'тьев\tбра'тьям\tбра'тьев\tбра'тьями\tбра'тьях",
+        "sha256": "9ad20a8ab851b4060bfd6ec5fe20c56076720f165d5e066897186a276f4206c0"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:мама",
+        "bare": "мама",
+        "accented": "ма'ма",
+        "line": "мама\tма'ма\tmom, mama, mommy, mummy\tMama, Mutti\tf\t\t1\t0\t0\t0\tма'ма\tма'мы\tма'ме\tма'му\tма'мой,   ма'мою\tма'ме\tма'мы\tма'м\tма'мам\tма'м\tма'мами\tма'мах",
+        "sha256": "4a9c2d3f6352b1b0400f0b5cfa62b992b4bb626109d231c8586e9226959ecfcb"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:окно",
+        "bare": "окно",
+        "accented": "окно'",
+        "line": "окно\tокно'\twindow, casement-window, window-sill, gap, opening, port, slot, free period, break\tFenster\tn\t\t0\t0\t0\t0\tокно'\tокна'\tокну'\tокно'\tокно'м\tокне'\tо'кна\tо'кон\tо'кнам\tо'кна\tо'кнами\tо'кнах",
+        "sha256": "4d62d7f74d9f03449b46a7f2ffd0a7fa8c70960439456508e38d8c31a45b6e5a"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:сын",
+        "bare": "сын",
+        "accented": "сын",
+        "line": "сын\tсын\tson\tSohn\t\t\t1\t0\t0\t0\tсы'н\tсы'на\tсы'ну\tсы'на\tсы'ном\tсы'не\tсыновья'\tсынове'й\tсыновья'м\tсынове'й\tсыновья'ми\tсыновья'х",
+        "sha256": "3e862ceeda56e0b49499e095ad2df7ada5c525814c70bb6637cae87551f7fb8d"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:дом",
+        "bare": "дом",
+        "accented": "дом",
+        "line": "дом\tдом\thouse, home, house-hold\tHaus, Gebäude, Zuhause, Heim\tm\t\t0\t0\t0\t0\tдо'м\tдо'ма\tдо'му\tдо'м\tдо'мом\tдо'ме\tдома'\tдомо'в\tдома'м\tдома'\tдома'ми\tдома'х",
+        "sha256": "edb0e2a2bf4898a1be25db0c841054a54637ad18177f3bd72ee3c5bb2b6ec402"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:молоко",
+        "bare": "молоко",
+        "accented": "молоко'",
+        "line": "молоко\tмолоко'\tmilk\tMilch\tn\t\t0\t0\t1\t0\tмолоко'\tмолока'\tмолоку'\tмолоко'\tмолоко'м\tмолоке'\t\t\t\t\t\t",
+        "sha256": "15e9a06b5af1d2099052a4b96ef1efba42848e6bc24cf07c5e8d83aa5683e958"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:учитель",
+        "bare": "учитель",
+        "accented": "учи'тель",
+        "line": "учитель\tучи'тель\tteacher, tutor\tLehrer\tm\tучительница\t1\t0\t0\t0\tучи'тель\tучи'теля\tучи'телю\tучи'теля\tучи'телем\tучи'теле\tучителя'\tучителе'й\tучителя'м\tучителе'й\tучителя'ми\tучителя'х",
+        "sha256": "e8a0c716bc71592323088795465457c4e05c5e9c8c36576f3514dfa4502e325b"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:город",
+        "bare": "город",
+        "accented": "го'род",
+        "line": "город\tго'род\ttown\tStadt\tm\t\t0\t0\t0\t0\tго'род\tго'рода\tго'роду\tго'род\tго'родом\tго'роде\tгорода'\tгородо'в\tгорода'м\tгорода'\tгорода'ми\tгорода'х",
+        "sha256": "a4e2bdd9bf5b2d10a7a68d5ffe3b5e7945d2e8c34664d56bf091e3a040a49deb"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:женщина",
+        "bare": "женщина",
+        "accented": "же'нщина",
+        "line": "женщина\tже'нщина\twoman, women, womanfolk, womankind\tFrau, Dame\tf\t\t1\t0\t0\t0\tже'нщина\tже'нщины\tже'нщине\tже'нщину\tже'нщиной, же'нщиною\tже'нщине\tже'нщины\tже'нщин\tже'нщинам\tже'нщин\tже'нщинами\tже'нщинах",
+        "sha256": "83bb7f534c85efd0d19d983f5e4c87a318b998ebb49c4db60054cadaa24b6734"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:друг",
+        "bare": "друг",
+        "accented": "друг",
+        "line": "друг\tдруг\tfriend\tFreund\tm\t\t1\t0\t0\t0\tдруг\tдру'га\tдру'гу\tдру'га\tдру'гом\tдру'ге\tдрузья'\tдрузе'й\tдрузья'м\tдрузе'й\tдрузья'ми\tдрузья'х",
+        "sha256": "f833947bbe324f91369455fc2a61e124a1ae5833c43549b4ada5909d57dac794"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:человек",
+        "bare": "человек",
+        "accented": "челове'к",
+        "line": "человек\tчелове'к\tperson, people; man\tMensch, Person; Mann; Diener, Diensbote, Lakei, Kellner\tm\t\t1\t0\t0\t0\tчелове'к\tчелове'ка\tчелове'ку\tчелове'ка\tчелове'ком\tчелове'ке\tлю'ди\tлюде'й\tлю'дям\tлюде'й\tлюдьми'\tлю'дях",
+        "sha256": "55e96ec10757706f603d8d88fee767819582158471cccd81ec52290164200f40"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:день",
+        "bare": "день",
+        "accented": "день",
+        "line": "день\tдень\tday, afternoon\tTag\tm\t\t0\t0\t0\t0\tдень\tдня\tдню\tдень\tднём\tдне\tдни\tдне'й\tдня'м\tдни\tдня'ми\tднях",
+        "sha256": "e09b93067f56a3952c140a7bfe5ead3c332c5cbcc8ac0690da7e5766b43509f1"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:слово",
+        "bare": "слово",
+        "accented": "сло'во",
+        "line": "слово\tсло'во\tword; speech\tWort, Vokabel; Rede, Ansprache; Versprechen\tn\t\t0\t0\t0\t0\tсло'во\tсло'ва\tсло'ву\tсло'во\tсло'вом\tсло'ве\tслова'\tсло'в\tслова'м\tслова'\tслова'ми\tслова'х",
+        "sha256": "911c0930f1371a5dc024378d2372567554d8cdee63c09e2dad2231333daa6a52"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:его",
+        "bare": "его",
+        "accented": "его'",
+        "line": "его\tего'\tgenetive of \"he\"; genetive of \"it\"\tGenitiv von \"он\"; Genitiv von \"оно\"",
+        "sha256": "9ff98d80caafc0cdf41e02f6df966ce1305b87a084d81c85bd7729d6427f91a2"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:её",
+        "bare": "её",
+        "accented": "её",
+        "line": "её\tеё\tgenetive of \"she\"\tGenitiv von \"она\"",
+        "sha256": "81b3606e4f41a86a31d1dd7e27f2b2ab250394ca8959ff4a98bce1aff99e93f6"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:их",
+        "bare": "их",
+        "accented": "их",
+        "line": "их\tих\ttheir, them\tGenitiv und Akkusativ von \"они\"; Präpositiv von \"они\": immer \"них\"; ihr, ihre",
+        "sha256": "8a1ff7ecda29b26d9bffd3943ec24f3c797f749447430660396849b50cb154b3"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:есть",
+        "bare": "есть",
+        "accented": "есть",
+        "line": "есть\tесть\tthere is, there are\tes gibt",
+        "sha256": "1508d15de80d3058cce271a2f347f167135b57d25e5bf0c44d7b22fd408e313e"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:один",
+        "bare": "один",
+        "accented": "оди'н",
+        "line": "один\tоди'н\tone, 1; alone\teins, 1; ein; allein, einsam",
+        "sha256": "654324c6589acae89620ba5bcb278d5ab4107c3b7de2c750007dcdd7f1c7892f"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:два",
+        "bare": "два",
+        "accented": "два",
+        "line": "два\tдва\ttwo, 2\tzwei, 2",
+        "sha256": "eb53210bbf7bb37b47edbfcc46b6a7fff8a0f214fa9e9616ee5ee7704ac089aa"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:без",
+        "bare": "без",
+        "accented": "без",
+        "line": "без\tбез\twithout; to (time)\tohne",
+        "sha256": "42a6d7c7aed420045cfd7119e2e87a26211ca3b5da6eedc0b2aa135ec4e41506"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:для",
+        "bare": "для",
+        "accented": "для",
+        "line": "для\tдля\tfor\tfür",
+        "sha256": "472a16babb7622cdd0955b8a83d133cddcfef67baa9e0403113c1365bdff0f89"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:из",
+        "bare": "из",
+        "accented": "из",
+        "line": "из\tиз\tfrom; out of\taus, von",
+        "sha256": "d7de9bc14605e17e9a505d536f7cb3eb83287e587eee910a5ec58d5330ac1e7b"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:от",
+        "bare": "от",
+        "accented": "от",
+        "line": "от\tот\tfrom (away); from (part of a whole); from (cause); from (distance); from (someone); from (range); for, against a purpose\tvon, vor, aus, an, gegen",
+        "sha256": "47f561bb64c68d5758d6c990fc00b14d26f2686f778e9ad88f9647f15d7ea529"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:у",
+        "bare": "у",
+        "accented": "у",
+        "line": "у\tу\t(possession); by, at (place); with; from (take, borrow)\tbei, neben",
+        "sha256": "8ad6bebd078af78e8abc1fd9323402e711a20346b66c7110ab83c638485530bd"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:нет",
+        "bare": "нет",
+        "accented": "нет",
+        "line": "нет\tнет\tno; not\tnein; nicht",
+        "sha256": "a6ce9cb4e6f8b2d458e35d5676dbf8ee6aacd182179ead91668350d84187d404"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:мой",
+        "bare": "мой",
+        "accented": "мой",
+        "line": "мой\tмой\tmy, mine, my people\tmein, meine\t\t\t\t\t\t\tмо'й\tмоего'\tмоему'\tмо'й, моего'\tмои'м\tмоём\tмоя'\tмое'й\tмое'й\tмою'\tмое'й, мое'ю\tмое'й\tмоё\tмоего'\tмоему'\tмоё\tмои'м\tмоём\tмои'\tмои'х\tмои'м\tмои', мои'х\tмои'ми\tмои'х",
+        "sha256": "18e2aca960ba57557256e076cefee993cd5121a1574869a933b3e03b09a1c754"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:твой",
+        "bare": "твой",
+        "accented": "твой",
+        "line": "твой\tтвой\tyour, yours, thy, thine, your people\tdein, deine\t\t\t\t\t\t\tтво'й\tтвоего'\tтвоему'\tтво'й,твоего'\tтвои'м\tтвоём\tтвоя'\tтвое'й\tтвое'й\tтвою'\tтвое'й, твое'ю\tтвое'й\tтвоё\tтвоего'\tтвоему'\tтвоё\tтвои'м\tтвоём\tтвои'\tтвои'х\tтвои'м\tтвои',твои'х\tтвои'ми\tтвои'х",
+        "sha256": "da3da5af8534041c388e602ebcc3fa488e1e3a558fbd51307e7fd4eb6cf3ef14"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:новый",
+        "bare": "новый",
+        "accented": "но'вый",
+        "line": "новый\tно'вый\tnew, novel\tneu\tнове'е\tнове'йший\tнов\tнова'\tно'во\tно'вы / новы'\tно'вый\tно'вого\tно'вому\tно'вый, но'вого\tно'вым\tно'вом\tно'вая\tно'вой\tно'вой\tно'вую\tно'вой, но'вою\tно'вой\tно'вое\tно'вого\tно'вому\tно'вое, но'вого\tно'вым\tно'вом\tно'вые\tно'вых\tно'вым\tно'вые, но'вых\tно'выми\tно'вых",
+        "sha256": "4ca565390c4207ebf83aad182efd91d7b03bebe6f8691e0d86e60bf5105b9e43"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:хороший",
+        "bare": "хороший",
+        "accented": "хоро'ший",
+        "line": "хороший\tхоро'ший\tgood, beautiful, handsome\tgut, schön\tлу'чше\tлу'чший;наилу'чший\tхоро'ш\tхороша'\tхорошо'\tхороши'\tхоро'ший\tхоро'шего\tхоро'шему\tхоро'шего,хоро'ший\tхоро'шим\tхоро'шем\tхоро'шая\tхоро'шей\tхоро'шей\tхоро'шую\tхоро'шей,хоро'шею\tхоро'шей\tхоро'шее\tхоро'шего\tхоро'шему\tхоро'шее\tхоро'шим\tхоро'шем\tхоро'шие\tхоро'ших\tхоро'шим\tхоро'ших,хоро'шие\tхоро'шими\tхоро'ших",
+        "sha256": "63714f12dd0ca559bd3d521de8b15605e74a8141ceea64d56642c58ce51b6d59"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:синий",
+        "bare": "синий",
+        "accented": "си'ний",
+        "line": "синий\tси'ний\tdark blue\tblau; dunkelblau\tсине'е\tсине'йший\tсинь\tсиня'\tси'не\tси'ни\tси'ний\tси'него\tси'нему\tси'ний, си'него\tси'ним\tси'нем\tси'няя\tси'ней\tси'ней\tси'нюю\tси'ней, си'нею\tси'ней\tси'нее\tси'него\tси'нему\tси'нее\tси'ним\tси'нем\tси'ние\tси'них\tси'ним\tси'ние, си'них\tси'ними\tси'них",
+        "sha256": "a2bb88830edfd7ee099df40d539f8c90aa634bfc822b9b415e1f52950082e618"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:этот",
+        "bare": "этот",
+        "accented": "э'тот",
+        "line": "этот\tэ'тот\tthis\tdieser, dieses, diese\t\t\t\t\t\t\tэ'тот\tэ'того\tэ'тому\tэ'тот, э'того\tэ'тим\tэ'том\tэ'та\tэ'той\tэ'той\tэ'ту\tэ'той, э'тою\tэ'той\tэ'то\tэ'того\tэ'тому\tэ'то\tэ'тим\tэ'том\tэ'ти\tэ'тих\tэ'тим\tэ'ти, э'тих\tэ'тими\tэ'тих",
+        "sha256": "91b8d373187ca48a0aa8cf593399a1f22d3bd17636bed1814e1455c3258da662"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:какой",
+        "bare": "какой",
+        "accented": "како'й",
+        "line": "какой\tкако'й\twhich, what, what kind of\twelcher, was für, was für ein, welch\t\t\t\t\t\t\tкако'й\tкако'го\tкако'му\tкако'й,како'го\tкаки'м\tкако'м\tкака'я\tкако'й\tкако'й\tкаку'ю\tкако'й, како'ю\tкако'й\tкако'е\tкако'го\tкако'му\tкако'е\tкаки'м\tкако'м\tкаки'е\tкаки'х\tкаки'м\tкаки'е,каки'х\tкаки'ми\tкаки'х",
+        "sha256": "3295283dce20c2acae609dc8b4708f0f51a7d19815ab047481cbd9159432934a"
+      }
+    ]
+  },
+  "wikibooks": {
+    "pages": [
+      {
+        "key": "accusative",
+        "title": "Russian/Grammar/Accusative_case",
+        "oldid": "4330404",
+        "file": "wikibooks/accusative-4330404.txt",
+        "sha256": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+        "revisionFile": "wikibooks/accusative-4330404.revision.json",
+        "mediawikiSha1": "d1ade98a0d1f565b3f16fd14714be7e7cc23a181",
+        "parentid": 4313380,
+        "timestamp": "2023-10-11T11:05:39Z",
+        "size": 15454
+      },
+      {
+        "key": "adjectives",
+        "title": "Russian/Grammar/Adjectives",
+        "oldid": "4292379",
+        "file": "wikibooks/adjectives-4292379.txt",
+        "sha256": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998",
+        "revisionFile": "wikibooks/adjectives-4292379.revision.json",
+        "mediawikiSha1": "5ad476f41a604940c12203b534630be18c87102d",
+        "parentid": 4292372,
+        "timestamp": "2023-05-22T12:02:38Z",
+        "size": 19203
+      },
+      {
+        "key": "genitive",
+        "title": "Russian/Grammar/Genitive_case",
+        "oldid": "4567338",
+        "file": "wikibooks/genitive-4567338.txt",
+        "sha256": "2bd8751faf3bae6d407445523671ffcf4827750f25318ae5fc0d40e482001591",
+        "revisionFile": "wikibooks/genitive-4567338.revision.json",
+        "mediawikiSha1": "974a99aa4a2d8b802a6ac508ddfb63df9f8591ce",
+        "parentid": 4219349,
+        "timestamp": "2025-10-12T01:13:28Z",
+        "size": 11793
+      },
+      {
+        "key": "numbers",
+        "title": "Russian/Numbers",
+        "oldid": "4371358",
+        "file": "wikibooks/numbers-4371358.txt",
+        "sha256": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+        "revisionFile": "wikibooks/numbers-4371358.revision.json",
+        "mediawikiSha1": "13c19a1bb67ef9fe0016de4708b157bb60b6a1d2",
+        "parentid": 3438262,
+        "timestamp": "2024-02-17T05:41:29Z",
+        "size": 6548
+      },
+      {
+        "key": "gender",
+        "title": "Russian/Grammar/Gender",
+        "oldid": "4310736",
+        "file": "../units-3-5/wikibooks/gender-4310736.txt",
+        "sha256": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
+        "revisionFile": "../units-3-5/wikibooks/gender-4310736.revision.json",
+        "mediawikiSha1": "23aa6b6c5bdfc5742b545459f5a2fe955025cfe7",
+        "parentid": 3551645,
+        "timestamp": "2023-07-22T18:29:18Z",
+        "size": 6499,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "pronouns",
+        "title": "Russian/Grammar/Pronouns",
+        "oldid": "4585698",
+        "file": "../units-3-5/wikibooks/pronouns-4585698.txt",
+        "sha256": "0e220e7623e9e04bbcc78f517f1b11c4788b97ec05e751e71d37fea3a0a93615",
+        "revisionFile": "../units-3-5/wikibooks/pronouns-4585698.revision.json",
+        "mediawikiSha1": "151596d7313d7f4644d876d2b300ff8dce7e8052",
+        "parentid": 4219765,
+        "timestamp": "2025-10-25T22:41:13Z",
+        "size": 9180,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "nominative",
+        "title": "Russian/Grammar/Nominative",
+        "oldid": "4213267",
+        "file": "../units-3-5/wikibooks/nominative-4213267.txt",
+        "sha256": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
+        "revisionFile": "../units-3-5/wikibooks/nominative-4213267.revision.json",
+        "mediawikiSha1": "ce304b5c40a716af95c2b20d6b5cc5bf5dca0442",
+        "parentid": 3791762,
+        "timestamp": "2022-11-27T20:42:23Z",
+        "size": 16965,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "prepositional",
+        "title": "Russian/Grammar/Prepositional case",
+        "oldid": "4567336",
+        "file": "../units-3-5/wikibooks/prepositional-4567336.txt",
+        "sha256": "efe46e6ed2de1d14ab9823467ecdd889b150e108aec5db1fd42f6416159cec35",
+        "revisionFile": "../units-3-5/wikibooks/prepositional-4567336.revision.json",
+        "mediawikiSha1": "a21668281bc34ff6a4139953875a9cb29c07b2c4",
+        "parentid": 4356336,
+        "timestamp": "2025-10-12T01:12:00Z",
+        "size": 11110,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "prepositions",
+        "title": "Russian/Prepositions",
+        "oldid": "4446858",
+        "file": "../units-3-5/wikibooks/prepositions-4446858.txt",
+        "sha256": "7d1b646efc992428060503b72870ac5088a837d1adbbb0d001a4963ea97a22d3",
+        "revisionFile": "../units-3-5/wikibooks/prepositions-4446858.revision.json",
+        "mediawikiSha1": "74cd6568ba9cae414227e9e3687a10cd1372334a",
+        "parentid": 4394389,
+        "timestamp": "2024-11-25T00:13:24Z",
+        "size": 6216,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "personal-pronouns",
+        "title": "Russian/Personal Pronouns",
+        "oldid": "3598527",
+        "file": "../units-3-5/wikibooks/personal-pronouns-3598527.txt",
+        "sha256": "58f8709942d5fc76188045276e7e5e2375b6be2e440fb82576ca78fb2df61e40",
+        "revisionFile": "../units-3-5/wikibooks/personal-pronouns-3598527.revision.json",
+        "mediawikiSha1": "de800561065f37fde57d6ebc6caa140f5b893624",
+        "parentid": 3478114,
+        "timestamp": "2019-11-19T07:18:22Z",
+        "size": 2154,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "copyrights",
+        "title": "Wikibooks:Copyrights",
+        "oldid": "4622060",
+        "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "revisionFile": "../units-3-5/wikibooks/copyrights-4622060.revision.json",
+        "mediawikiSha1": "dbf362ec2b5eb1d35827938654d19c5b69280e5b",
+        "parentid": 4534940,
+        "timestamp": "2026-03-09T17:30:11Z",
+        "size": 10475,
+        "reusedFrom": "units-3-5"
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "item": "до as a genitive preposition",
+      "reason": "The frozen genitive page does not contain a verified до example."
+    },
+    {
+      "item": "short-form adjectives and -о adverbs",
+      "reason": "The frozen adjective page places -о forms in the short-adjective section, which this batch does not teach."
+    },
+    {
+      "item": "есть omission as a free rule",
+      "reason": "The frozen possession pattern includes есть. No admitted free-omission rule is frozen."
+    },
+    {
+      "item": "patronymic and name production; shopping dialogue; current prices",
+      "reason": "No admitted source supplies those productions."
+    }
+  ]
+}
