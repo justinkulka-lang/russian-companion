@@ -29,6 +29,7 @@ internal object V2Validator {
         }
         validateAssetRecords(pack, errors)
         validateReview(pack, errors)
+        validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
         pack.units.forEach { unit ->
             if (unit.penguinLesson != unit.number) {
@@ -62,20 +63,29 @@ internal object V2Validator {
     }
 
     /**
-     * SHA-256 of content-review digest schema 2: compact JSON with fixed
-     * property order. This is the digest a reviewer signs. It omits workflow
-     * fields that change only when an approval is recorded: review status,
-     * reviewer signature, reviewed digest, mapping approval status, install
-     * state, and readiness.
+     * SHA-256 of the pack-wide content-review aggregate, schema 2. This digest
+     * is repository and release integrity. A unit reviewer does not sign it.
+     * Workflow fields stay outside the document: review status, reviewer
+     * signature, reviewed digest, mapping approval status, install state, and
+     * readiness.
      */
-    internal fun contentReviewDigest(pack: V2CurriculumPack): String {
-        val digest = MessageDigest.getInstance("SHA-256").digest(
-            canonicalInstructionalDocument(pack).toByteArray(Charsets.UTF_8),
-        )
-        return digest.joinToString("") { byte -> "%02x".format(byte) }
-    }
+    internal fun contentReviewDigest(pack: V2CurriculumPack): String = sha256(canonicalInstructionalDocument(pack))
+
+    /**
+     * SHA-256 of the unit-scoped content-review digest. It covers that unit and
+     * the instructional records, relationships, shared dependencies, sources,
+     * rights, assets, and advancement rule reachable from it. Scope is part of
+     * the document so this digest cannot collide with the pack aggregate.
+     */
+    internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String =
+        sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
+
+    private fun sha256(text: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
+        return digest.joinToString("") { byte -> "%02x".format(byte) }
+    }
 
     internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
 
@@ -180,6 +190,135 @@ internal object V2Validator {
                 )
             }),
             "units" to canonArr(pack.units.map(::canonicalUnit)),
+        )
+    }
+
+    private fun canonicalUnitInstructionalDocument(pack: V2CurriculumPack, unitNumber: Int): String {
+        val unit = pack.units.firstOrNull { it.number == unitNumber }
+        val exampleIds = if (unit == null) emptySet() else reachableExampleIds(unit)
+        val itemIds = if (unit == null) emptySet() else reachableItemIds(unit)
+        val referenceIds = if (unit == null) emptySet() else reachableReferenceIds(unit)
+        val letterIds = if (unit == null) emptySet() else reachableLetterIds(pack, unit)
+        val examples = pack.examples.filter { it.id in exampleIds }
+        val items = pack.items.filter { it.id in itemIds }
+        val references = pack.references.filter { it.id in referenceIds }
+        val letters = pack.letters.filter { it.id in letterIds }
+        val audio = pack.audioAssets.filter { it.unitNumber == unitNumber || it.letterId in letterIds }
+        val handwriting = pack.handwritingAssets.filter { it.unitNumber == unitNumber || it.letterId in letterIds }
+        val mappings = pack.ownedEditionMappings.filter { it.unitNumber == unitNumber }
+        val sourceIds = (
+            examples.map { it.sourceId } +
+                items.map { it.sourceId } +
+                references.map { it.sourceId } +
+                letters.map { it.sourceId } +
+                audio.map { it.sourceId } +
+                handwriting.map { it.sourceId }
+            ).toSet()
+        val rightsIds = (
+            pack.rights.filter { it.sourceId in sourceIds }.map { it.id } +
+                audio.map { it.rightsId } +
+                handwriting.map { it.rightsId }
+            ).toSet()
+        return canonObj(
+            "digestSchema" to canonNum(CONTENT_REVIEW_DIGEST_SCHEMA),
+            "scope" to canonStr("unit"),
+            "unitNumber" to canonNum(unitNumber),
+            "schemaVersion" to canonNum(pack.schemaVersion),
+            "packId" to canonStr(pack.packId),
+            "packVersion" to canonNum(pack.packVersion),
+            "sources" to canonArr(pack.sources.filter { it.id in sourceIds }.map { source ->
+                canonObj(
+                    "id" to canonStr(source.id),
+                    "title" to canonStr(source.title),
+                    "license" to canonStr(source.license),
+                    "attribution" to canonStr(source.attribution),
+                    "modification" to canonStr(source.modification),
+                )
+            }),
+            "rights" to canonArr(pack.rights.filter { it.id in rightsIds }.map { rights ->
+                canonObj(
+                    "id" to canonStr(rights.id),
+                    "sourceId" to canonStr(rights.sourceId),
+                    "license" to canonStr(rights.license),
+                    "permitsAppUse" to canonBool(rights.permitsAppUse),
+                )
+            }),
+            "audioAssets" to canonArr(audio.map { asset ->
+                canonObj(
+                    "id" to canonStr(asset.id),
+                    "sourceId" to canonStr(asset.sourceId),
+                    "rightsId" to canonStr(asset.rightsId),
+                    "unitNumber" to canonNum(asset.unitNumber),
+                    "letterId" to canonStr(asset.letterId),
+                )
+            }),
+            "handwritingAssets" to canonArr(handwriting.map { asset ->
+                canonObj(
+                    "id" to canonStr(asset.id),
+                    "sourceId" to canonStr(asset.sourceId),
+                    "rightsId" to canonStr(asset.rightsId),
+                    "unitNumber" to canonNum(asset.unitNumber),
+                    "letterId" to canonStr(asset.letterId),
+                )
+            }),
+            "ownedEditionMappings" to canonArr(mappings.map { mapping ->
+                canonObj(
+                    "id" to canonStr(mapping.id),
+                    "unitNumber" to canonNum(mapping.unitNumber),
+                )
+            }),
+            "letters" to canonArr(letters.map { letter ->
+                canonObj(
+                    "id" to canonStr(letter.id),
+                    "uppercase" to canonStr(letter.uppercase),
+                    "lowercase" to canonStr(letter.lowercase),
+                    "group" to canonStr(letter.group),
+                    "englishNote" to canonStr(letter.englishNote),
+                    "sourceId" to canonStr(letter.sourceId),
+                    "audioAssetId" to canonStrOrNull(letter.audioAssetId),
+                    "exampleWordId" to canonStrOrNull(letter.exampleWordId),
+                    "latinLookalike" to canonStrOrNull(letter.latinLookalike),
+                )
+            }),
+            "examples" to canonArr(examples.map { example ->
+                canonObj(
+                    "id" to canonStr(example.id),
+                    "kind" to canonStr(example.kind),
+                    "letterId" to canonStr(example.letterId),
+                    "display" to canonStr(example.display),
+                    "note" to canonStr(example.note),
+                    "sourceId" to canonStr(example.sourceId),
+                    "objectiveId" to canonStr(example.objectiveId),
+                )
+            }),
+            "items" to canonArr(items.map { item ->
+                canonObj(
+                    "id" to canonStr(item.id),
+                    "kind" to canonStr(item.kind),
+                    "language" to canonStr(item.language),
+                    "prompt" to canonStr(item.prompt),
+                    "promptLetter" to canonStrOrNull(item.promptLetter),
+                    "options" to canonArr(item.options.map(::canonStr)),
+                    "answer" to canonStr(item.answer),
+                    "feedback" to canonStr(item.feedback),
+                    "objectiveId" to canonStr(item.objectiveId),
+                    "sourceId" to canonStr(item.sourceId),
+                    "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
+                )
+            }),
+            "references" to canonArr(references.map { reference ->
+                canonObj(
+                    "id" to canonStr(reference.id),
+                    "title" to canonStr(reference.title),
+                    "summary" to canonStr(reference.summary),
+                    "detail" to canonStr(reference.detail),
+                    "introducedInUnit" to canonNum(reference.introducedInUnit),
+                    "sourceId" to canonStr(reference.sourceId),
+                    "classification" to canonStr(reference.classification),
+                    "searchTerms" to canonArr(reference.searchTerms.map(::canonStr)),
+                )
+            }),
+            "units" to canonArr(listOfNotNull(unit).map(::canonicalUnit)),
         )
     }
 
@@ -298,6 +437,41 @@ internal object V2Validator {
         }
     }
 
+    private fun validateUnitReviews(pack: V2CurriculumPack, errors: MutableList<String>) {
+        val seen = mutableSetOf<Int>()
+        pack.unitReviews.forEach { review ->
+            if (review.unitNumber !in 1..30) {
+                errors += "Unit review ${review.id} is outside Units 1-30"
+            }
+            if (!seen.add(review.unitNumber)) {
+                errors += "Unit ${review.unitNumber} has more than one review record"
+            }
+            if (review.status !in CLOSED_REVIEW_STATES) {
+                errors += "Unrecognized unit review status ${review.status} for unit ${review.unitNumber}"
+                return@forEach
+            }
+            if (review.status != "APPROVED") return@forEach
+            val missing = mutableListOf<String>()
+            if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+            if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
+            if (review.packVersion != pack.packVersion) missing += "matching pack version"
+            if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
+            if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
+            if (missing.isNotEmpty()) {
+                errors += "Unit ${review.unitNumber} APPROVED review is missing ${missing.joinToString(", ")}"
+                return@forEach
+            }
+            if (review.reviewedContentDigest != unitContentReviewDigest(pack, review.unitNumber)) {
+                errors += "Unit ${review.unitNumber} APPROVED review digest does not match the unit content-review digest"
+            }
+        }
+    }
+
+    private fun unitReview(pack: V2CurriculumPack, unitNumber: Int): V2UnitReviewRecord? {
+        val matches = pack.unitReviews.filter { it.unitNumber == unitNumber }
+        return if (matches.size == 1) matches.first() else null
+    }
+
     private fun validateSourcesAndRights(pack: V2CurriculumPack, errors: MutableList<String>) {
         val sourceIds = pack.sources.map { it.id }.toSet()
         if (sourceIds.size != pack.sources.size) errors += "Source ids must be unique"
@@ -318,7 +492,7 @@ internal object V2Validator {
         if (unit.number !in 1..2) {
             errors += "Only Units 1-2 may be installed in this pack"
         }
-        if (pack.linguisticReview.status != "APPROVED") {
+        if (unitReview(pack, unit.number)?.status != "APPROVED") {
             errors += "Installed unit ${unit.number} requires an APPROVED qualified-review record"
         }
         if (unit.mappingStatus != "APPROVED") {
@@ -367,7 +541,7 @@ internal object V2Validator {
                 if (unit.installState == "INSTALLED") {
                     errors += "Unit ${unit.number} cannot be INSTALLED while review is pending"
                 }
-                if (pack.linguisticReview.status == "APPROVED") {
+                if (unitReview(pack, unit.number)?.status == "APPROVED") {
                     errors += "Unit ${unit.number} readiness is stale because review is APPROVED"
                 }
                 if (unit.mappingStatus == "APPROVED") {
@@ -384,7 +558,7 @@ internal object V2Validator {
                 }
             }
             "REVIEW_APPROVED" -> {
-                if (pack.linguisticReview.status != "APPROVED") {
+                if (unitReview(pack, unit.number)?.status != "APPROVED") {
                     errors += "Unit ${unit.number} readiness claims review approval that is not recorded"
                 }
             }
@@ -394,7 +568,7 @@ internal object V2Validator {
                 }
             }
             "INSTALLABLE" -> {
-                if (pack.linguisticReview.status != "APPROVED" || unit.mappingStatus != "APPROVED") {
+                if (unitReview(pack, unit.number)?.status != "APPROVED" || unit.mappingStatus != "APPROVED") {
                     errors += "Unit ${unit.number} INSTALLABLE readiness requires approved review and mapping"
                 }
             }
@@ -406,15 +580,16 @@ internal object V2Validator {
         unit: V2Unit,
         errors: MutableList<String>,
     ) {
-        val review = pack.linguisticReview
-        if (review.status != "APPROVED" ||
+        val review = unitReview(pack, unit.number)
+        if (review == null ||
+            review.status != "APPROVED" ||
             review.reviewer.isNullOrBlank() ||
             review.reviewerQualification.isNullOrBlank() ||
             review.packVersion != pack.packVersion ||
-            review.reviewedContentDigest != contentReviewDigest(pack) ||
+            review.reviewedContentDigest != unitContentReviewDigest(pack, unit.number) ||
             review.curriculumMappingId.isNullOrBlank()
         ) {
-            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and content-review digest"
+            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and unit content-review digest"
         }
         val steps = unit.sessions.flatMap { it.steps }
         val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
@@ -712,7 +887,7 @@ internal object V2Validator {
             if (mapping.unitNumber !in 1..30) {
                 errors += "Mapping ${mapping.id} is not related to a unit"
             }
-            if (mapping.status == "APPROVED" && pack.linguisticReview.status != "APPROVED") {
+            if (mapping.status == "APPROVED" && unitReview(pack, mapping.unitNumber)?.status != "APPROVED") {
                 errors += "Mapping ${mapping.id} is APPROVED without an approved linguistic review"
             }
         }
@@ -741,13 +916,13 @@ internal object V2Validator {
     }
 
     private fun ownedEditionMappingResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean {
-        val review = pack.linguisticReview
+        val review = unitReview(pack, unit.number) ?: return false
         val mapping = pack.ownedEditionMappings.firstOrNull { it.id == review.curriculumMappingId } ?: return false
         return mapping.unitNumber == unit.number &&
             mapping.status == "APPROVED" &&
             !mapping.reviewer.isNullOrBlank() &&
             !mapping.reviewerQualification.isNullOrBlank() &&
-            mapping.reviewedContentDigest == contentReviewDigest(pack)
+            mapping.reviewedContentDigest == unitContentReviewDigest(pack, unit.number)
     }
 
     private fun letterAudioResolves(pack: V2CurriculumPack, letter: V2Letter): Boolean {
@@ -758,11 +933,24 @@ internal object V2Validator {
             sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)
     }
 
-    private fun reachableLetterIds(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
-        val exampleIds = (unit.objectives.flatMap { it.exampleIds } + unit.sessions.flatMap { session ->
+    private fun reachableExampleIds(unit: V2Unit): Set<String> {
+        return (unit.objectives.flatMap { it.exampleIds } + unit.sessions.flatMap { session ->
             session.steps.flatMap { it.exampleIds }
         }).toSet()
-        return exampleIds.mapNotNull { pack.example(it)?.letterId }.toSet()
+    }
+
+    private fun reachableItemIds(unit: V2Unit): Set<String> {
+        return (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { session ->
+            session.steps.flatMap { it.itemIds }
+        }).toSet()
+    }
+
+    private fun reachableReferenceIds(unit: V2Unit): Set<String> {
+        return unit.sessions.flatMap { session -> session.steps.flatMap { it.referenceIds } }.toSet()
+    }
+
+    private fun reachableLetterIds(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
+        return reachableExampleIds(unit).mapNotNull { pack.example(it)?.letterId }.toSet()
     }
 
     private fun sourceAndRightsResolve(pack: V2CurriculumPack, sourceId: String, rightsId: String): Boolean {

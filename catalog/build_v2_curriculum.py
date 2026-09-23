@@ -59,8 +59,22 @@ REVIEW_PENDING = {
     "reviewedContentDigest": None,
     "curriculumMappingId": None,
     "reviewerQualification": None,
-    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible.",
+    "notes": "Pack-level status is not a unit approval. Each unit has its own pending review record.",
 }
+
+
+def pending_unit_review(number: int) -> dict:
+    return {
+        "id": f"rev-pending-unit-{number}",
+        "unitNumber": number,
+        "status": "PENDING_QUALIFIED_REVIEW",
+        "reviewer": None,
+        "reviewerQualification": None,
+        "packVersion": None,
+        "reviewedContentDigest": None,
+        "curriculumMappingId": None,
+        "notes": f"No qualified reviewer has signed Unit {number}.",
+    }
 
 UNITS_3_30 = [
     (3, "Everyday phrases", "Everyday phrases, naming things, basic grammar, and gender"),
@@ -1362,6 +1376,7 @@ def build() -> dict:
         "packVersion": 2,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
+        "unitReviews": [pending_unit_review(1), pending_unit_review(2)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH],
         "rights": RIGHTS,
         "letters": letters,

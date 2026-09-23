@@ -16,8 +16,12 @@ class UnitReviewPipelineTest {
         val pack = pack()
         val unit1 = buildUnitReviewPackage(pack, 1)
         val unit2 = buildUnitReviewPackage(pack, 2)
-        assertEquals(V2Validator.contentReviewDigest(pack), unit1.contentReviewDigest)
-        assertEquals(unit1.contentReviewDigest, unit2.contentReviewDigest)
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), unit1.contentReviewDigest)
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 2), unit2.contentReviewDigest)
+        assertNotEquals(unit1.contentReviewDigest, unit2.contentReviewDigest)
+        assertEquals(V2Validator.contentReviewDigest(pack), unit1.packContentReviewDigest)
+        assertEquals(unit1.packContentReviewDigest, unit2.packContentReviewDigest)
+        assertNotEquals(unit1.contentReviewDigest, unit1.packContentReviewDigest)
         assertNotEquals(unit1.reviewPackageDigest, unit2.reviewPackageDigest)
         assertNotEquals(unit1.contentReviewDigest, unit1.reviewPackageDigest)
         assertNotEquals(unit1.reviewPackageDigest, unit1.repositorySourceDigest)
@@ -94,6 +98,88 @@ class UnitReviewPipelineTest {
         val outside = buildUnitReviewPackage(pack, 31)
         assertTrue(outside.unresolved.any { it.contains("outside Units 1-30") })
         assertNotEquals(buildUnitReviewPackage(pack, 3).reviewPackageDigest, buildUnitReviewPackage(pack, 4).reviewPackageDigest)
+    }
+
+    @Test
+    fun unitTwoOnlyMutationLeavesUnitOneDigestUntouched() {
+        val pack = pack()
+        val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
+        val unitTwo = V2Validator.unitContentReviewDigest(pack, 2)
+        val aggregate = V2Validator.contentReviewDigest(pack)
+        val local = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number != 2) {
+                    unit
+                } else {
+                    val session = unit.sessions.first { session -> session.steps.any { it.id == "u2-st-hw" } }
+                    val steps = session.steps.map { step ->
+                        if (step.id == "u2-st-hw") step.copy(body = step.body + " extra book direction") else step
+                    }
+                    unit.copy(sessions = unit.sessions.map { if (it.id == session.id) session.copy(steps = steps) else it })
+                }
+            },
+        )
+        assertEquals(unitOne, V2Validator.unitContentReviewDigest(local, 1))
+        assertNotEquals(unitTwo, V2Validator.unitContentReviewDigest(local, 2))
+        assertNotEquals(aggregate, V2Validator.contentReviewDigest(local))
+        assertEquals(buildUnitReviewPackage(pack, 1).reviewPackageDigest, buildUnitReviewPackage(local, 1).reviewPackageDigest)
+
+        val limits = pack.copy(
+            references = pack.references.map { reference ->
+                if (reference.id == "ref-limits") reference.copy(detail = reference.detail + " extra") else reference
+            },
+        )
+        assertEquals(unitOne, V2Validator.unitContentReviewDigest(limits, 1))
+        assertNotEquals(unitTwo, V2Validator.unitContentReviewDigest(limits, 2))
+
+        val sharedLetter = pack.letters.first { letter ->
+            letter.id in reachableLetters(pack, 1) && letter.id in reachableLetters(pack, 2)
+        }
+        val shared = pack.copy(
+            letters = pack.letters.map { letter ->
+                if (letter.id == sharedLetter.id) letter.copy(englishNote = letter.englishNote + " shared") else letter
+            },
+        )
+        assertNotEquals(unitOne, V2Validator.unitContentReviewDigest(shared, 1))
+        assertNotEquals(unitTwo, V2Validator.unitContentReviewDigest(shared, 2))
+    }
+
+    @Test
+    fun curriculumSourceCommitMustContainTheGovernedCurriculum() {
+        val pack = pack()
+        val root = repo()
+        val head = ProcessBuilder("git", "rev-parse", "HEAD")
+            .directory(root)
+            .redirectError(File("/dev/null"))
+            .start()
+            .let { process ->
+                val text = process.inputStream.bufferedReader().readText().trim()
+                check(process.waitFor() == 0)
+                text
+            }
+        assertTrue(curriculumSourceCommitErrors(head, root).any { it.contains("packet commit itself") })
+        val predating = "08663616a79af9009c657ecfb66d7f6d42a531bf"
+        val rejected = curriculumSourceCommitErrors(predating, root)
+        assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("does not contain this revision's governed curriculum") })
+        assertTrue(rejected.any { it.contains("Unit 2 content-review digest") })
+        listOf(1, 2).forEach { number ->
+            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
+            assertTrue(manifest.contains(CURRICULUM_SOURCE_COMMIT))
+            assertFalse(manifest.contains(predating))
+            assertEquals(
+                V2Validator.unitContentReviewDigest(pack, number),
+                buildUnitReviewPackage(pack, number).contentReviewDigest,
+            )
+        }
+        assertTrue(curriculumSourceCommitErrors(CURRICULUM_SOURCE_COMMIT, root).isEmpty())
+    }
+
+    private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {
+        val unit = pack.unit(unitNumber) ?: return emptySet()
+        val exampleIds = unit.objectives.flatMap { it.exampleIds } + unit.sessions.flatMap { session ->
+            session.steps.flatMap { it.exampleIds }
+        }
+        return exampleIds.map { id -> pack.examples.first { it.id == id }.letterId }.toSet()
     }
 
     private fun writeReview(unitNumber: Int, files: Map<String, String>) {

@@ -63,6 +63,7 @@ internal data class V2CurriculumPack(
     val packVersion: Int,
     val publicReleaseEligible: Boolean,
     val linguisticReview: V2ReviewRecord,
+    val unitReviews: List<V2UnitReviewRecord> = emptyList(),
     val sources: List<V2SourceRecord>,
     val rights: List<V2RightsRecord> = emptyList(),
     val audioAssets: List<V2AudioAsset> = emptyList(),
@@ -79,6 +80,19 @@ internal data class V2CurriculumPack(
 @Serializable
 internal data class V2ReviewRecord(
     val id: String,
+    val status: String,
+    val reviewer: String? = null,
+    val reviewerQualification: String? = null,
+    val packVersion: Int? = null,
+    val reviewedContentDigest: String? = null,
+    val curriculumMappingId: String? = null,
+    val notes: String? = null,
+)
+
+@Serializable
+internal data class V2UnitReviewRecord(
+    val id: String,
+    val unitNumber: Int,
     val status: String,
     val reviewer: String? = null,
     val reviewerQualification: String? = null,

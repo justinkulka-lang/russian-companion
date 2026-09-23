@@ -22,9 +22,16 @@ import java.security.MessageDigest
 
 internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
 
-internal const val UNIT1_REVIEW_SOURCE_COMMIT = "08663616a79af9009c657ecfb66d7f6d42a531bf"
+/**
+ * Commit that contains the curriculum, validators, and review pipeline.
+ * Review packets are generated in a later commit, so this value is not HEAD.
+ * The placeholder is replaced after that curriculum commit exists.
+ */
+internal const val CURRICULUM_SOURCE_COMMIT = "PENDING_CURRICULUM_SOURCE_COMMIT"
 
-internal const val REVIEW_SOURCE_COMMIT = UNIT1_REVIEW_SOURCE_COMMIT
+internal const val UNIT1_REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
+
+internal const val REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
 
 internal fun reviewPacketName(unitNumber: Int) = "UNIT_${unitNumber}_REVIEW_PACKET.md"
 
@@ -155,6 +162,8 @@ internal data class Unit1ReviewEdge(
 internal data class Unit1ReviewPackage(
     val unitNumber: Int,
     val contentReviewDigest: String,
+    val packContentReviewDigest: String,
+    val unitReviewStatus: String,
     val reviewPackageDigest: String,
     val repositorySourceDigest: String,
     val records: List<Unit1ReviewRecord>,
@@ -183,17 +192,19 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
     }
     if (unit == null) {
         unresolved += "Unit $unitNumber is missing from the curriculum pack"
-        val instructional = V2Validator.contentReviewDigest(pack)
+        val instructional = V2Validator.unitContentReviewDigest(pack, unitNumber)
         val distinctUnresolved = unresolved.distinct()
         return Unit1ReviewPackage(
             unitNumber = unitNumber,
             contentReviewDigest = instructional,
+            packContentReviewDigest = V2Validator.contentReviewDigest(pack),
+            unitReviewStatus = "MISSING",
             reviewPackageDigest = reviewPackageDigest(
                 unitNumber,
                 "MISSING",
                 "",
                 "",
-                pack.linguisticReview.status,
+                "MISSING",
                 instructional,
                 emptyList(),
                 emptyList(),
@@ -223,7 +234,21 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
         }
         edges += edge
     }
-    add(packReviewRecord(pack))
+    val unitReviewMatches = pack.unitReviews.filter { it.unitNumber == unitNumber }
+    val unitReviewStatus = when (unitReviewMatches.size) {
+        0 -> {
+            unresolved += "Unit $unitNumber review record is missing"
+            "MISSING"
+        }
+        1 -> {
+            add(unitReviewRecord(unitReviewMatches.first()))
+            unitReviewMatches.first().status
+        }
+        else -> {
+            unresolved += "Unit $unitNumber has more than one review record"
+            "DUPLICATE"
+        }
+    }
     add(unitRecord(unit))
     val advancement = unit.advancement
     if (advancement == null) {
@@ -389,19 +414,21 @@ internal fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int): Un
     objectiveOrder.forEach { objectiveId ->
         if (records.none { it.id == objectiveId }) unresolved += "Objective $objectiveId was not emitted"
     }
-    val instructional = V2Validator.contentReviewDigest(pack)
+    val instructional = V2Validator.unitContentReviewDigest(pack, unitNumber)
     val distinctUnresolved = unresolved.distinct()
     val distinctBookDirected = bookDirected.distinct()
     val distinctUnavailable = unavailable.distinct()
     return Unit1ReviewPackage(
         unitNumber = unitNumber,
         contentReviewDigest = instructional,
+        packContentReviewDigest = V2Validator.contentReviewDigest(pack),
+        unitReviewStatus = unitReviewStatus,
         reviewPackageDigest = reviewPackageDigest(
             unitNumber,
             unit.installState,
             unit.readiness,
             unit.mappingStatus,
-            pack.linguisticReview.status,
+            unitReviewStatus,
             instructional,
             records,
             edges,
@@ -478,8 +505,12 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
         if (jsonStringField(manifest, "packageId") != reviewPackageId(unitNumber)) {
             errors += "Review package is not for Unit $unitNumber"
         }
-        if (jsonStringField(manifest, "sourceCommit") != REVIEW_SOURCE_COMMIT) {
-            errors += "Package source commit does not match the curriculum revision"
+        val recordedCommit = jsonStringField(manifest, "curriculumSourceCommit")
+        if (recordedCommit != CURRICULUM_SOURCE_COMMIT) {
+            errors += "Package curriculum source commit does not match the curriculum revision"
+        }
+        if (recordedCommit != null) {
+            errors += curriculumSourceCommitErrors(recordedCommit, reviewRepositoryRoot())
         }
         if (unit != null && jsonStringField(manifest, "installState") != unit.installState) {
             errors += "Package does not keep Unit $unitNumber in ${unit.installState}"
@@ -490,8 +521,20 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
         if (unit != null && jsonStringField(manifest, "mappingStatus") != unit.mappingStatus) {
             errors += "Package does not keep the Unit $unitNumber mapping unsigned"
         }
-        if (jsonStringField(manifest, "linguisticReviewStatus") != pack.linguisticReview.status) {
-            errors += "Package does not keep linguistic review pending"
+        val unitReview = pack.unitReviews.singleOrNull { it.unitNumber == unitNumber }
+        val expectedReviewStatus = if (unitReview == null && pack.unitReviews.count { it.unitNumber == unitNumber } > 1) {
+            "DUPLICATE"
+        } else {
+            unitReview?.status ?: "MISSING"
+        }
+        if (jsonStringField(manifest, "unitReviewStatus") != expectedReviewStatus) {
+            errors += "Package does not keep the Unit $unitNumber review pending"
+        }
+        if (jsonStringField(manifest, "packContentReviewDigest") != V2Validator.contentReviewDigest(pack)) {
+            errors += "Pack content-review digest does not match the repository aggregate"
+        }
+        if (jsonStringField(manifest, "contentReviewDigest") == jsonStringField(manifest, "packContentReviewDigest")) {
+            errors += "Unit content-review digest is only an alias of the pack aggregate"
         }
         val recordsJson = manifest.substringAfter("\"records\": [").substringBefore("\n  ],\n  \"edges\"")
         val ids = Regex("\"id\": \"([^\"]+)\"").findAll(recordsJson).map { it.groupValues[1] }.toList()
@@ -532,8 +575,11 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
     if (combined.contains("\"readiness\": \"REVIEW_APPROVED\"") || combined.contains("readiness: REVIEW_APPROVED")) {
         errors += "Package describes Unit $unitNumber as reviewed"
     }
-    if (combined.contains("\"status\": \"APPROVED\"") || combined.contains("linguisticReviewStatus\": \"APPROVED\"")) {
+    if (combined.contains("\"status\": \"APPROVED\"") || combined.contains("unitReviewStatus\": \"APPROVED\"") || combined.contains("linguisticReviewStatus\": \"APPROVED\"")) {
         errors += "Package pre-populates linguistic review as approved"
+    }
+    if (combined.contains("08663616a79af9009c657ecfb66d7f6d42a531bf")) {
+        errors += "Package records a curriculum commit that predates this curriculum"
     }
     expected.forEach { (name, text) ->
         val actual = files[name] ?: return@forEach
@@ -625,12 +671,15 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
         append("- Schema version: $UNIT1_REVIEW_SCHEMA_VERSION\n")
         append("- Application: $UNIT1_REVIEW_APPLICATION_ID\n")
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
-        append("- Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT\n")
-        append("- Content-review SHA-256: ${review.contentReviewDigest}\n")
+        append("- Curriculum source commit: $CURRICULUM_SOURCE_COMMIT\n")
+        append("- Unit content-review SHA-256: ${review.contentReviewDigest}\n")
+        append("- Pack content-review SHA-256: ${review.packContentReviewDigest}\n")
         append("- Review-package SHA-256: ${review.reviewPackageDigest}\n")
         append("- Repository source SHA-256: ${review.repositorySourceDigest}\n\n")
-        append("The content-review digest is what a reviewer approves. It covers instructional substance, mapping notes, sources, and rights. ")
-        append("Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.\n\n")
+        append("The unit content-review digest is what a reviewer of Unit ${review.unitNumber} approves. ")
+        append("It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. ")
+        append("It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.\n\n")
+        append("The pack content-review digest is the repository aggregate. It is not an approval of this unit, and it is not part of the review-package digest.\n\n")
         append("The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.\n\n")
         append("The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. ")
         append("That change does not replace the signed content-review digest.\n\n")
@@ -678,11 +727,12 @@ private fun renderManifest(pack: V2CurriculumPack, review: Unit1ReviewPackage): 
         append("  \"applicationId\": ${jsonString(UNIT1_REVIEW_APPLICATION_ID)},\n")
         append("  \"versionName\": ${jsonString(UNIT1_REVIEW_VERSION_NAME)},\n")
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
-        append("  \"sourceCommit\": ${jsonString(REVIEW_SOURCE_COMMIT)},\n")
+        append("  \"curriculumSourceCommit\": ${jsonString(CURRICULUM_SOURCE_COMMIT)},\n")
         append("  \"contentReviewDigest\": ${jsonString(review.contentReviewDigest)},\n")
+        append("  \"packContentReviewDigest\": ${jsonString(review.packContentReviewDigest)},\n")
         append("  \"reviewPackageDigest\": ${jsonString(review.reviewPackageDigest)},\n")
         append("  \"repositorySourceDigest\": ${jsonString(review.repositorySourceDigest)},\n")
-        append("  \"linguisticReviewStatus\": ${jsonString(pack.linguisticReview.status)},\n")
+        append("  \"unitReviewStatus\": ${jsonString(review.unitReviewStatus)},\n")
         append("  \"unit\": {\n")
         append("    \"id\": ${jsonString(unit?.id ?: "unit-${review.unitNumber}")},\n")
         append("    \"installState\": ${jsonString(unit?.installState ?: "MISSING")},\n")
@@ -768,20 +818,25 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         Schema version: $UNIT1_REVIEW_SCHEMA_VERSION
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
-        Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT
-        Content-review digest: ${review.contentReviewDigest}
+        Curriculum source commit: $CURRICULUM_SOURCE_COMMIT
+        Unit content-review digest: ${review.contentReviewDigest}
+        Pack content-review digest: ${review.packContentReviewDigest}
         Review-package digest: ${review.reviewPackageDigest}
         Repository source digest: ${review.repositorySourceDigest}
 
-        This packet was generated from the packaged curriculum. It does not perform review.
+        This packet was generated from the packaged curriculum at curriculum source commit $CURRICULUM_SOURCE_COMMIT. That commit contains the reviewed curriculum. This packet commit records that identity and does not perform review.
 
         ## Digests
 
-        `contentReviewDigest` is what the reviewer approves. It is canonical JSON, digest schema ${V2Validator.CONTENT_REVIEW_DIGEST_SCHEMA}. It includes Russian and English instructional content, examples, options, answers, feedback, remediation content and relationships, objectives, sessions, steps, mapping notes, sources, rights, provenance, classifications, audio and text relationships, and advancement rules. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive instructional, mapping, source, or rights content changes it and invalidates the affected approval. Approval binds only to version $UNIT1_REVIEW_VERSION_NAME and this digest.
+        `contentReviewDigest` is the unit-scoped digest the reviewer of Unit ${review.unitNumber} approves. It is canonical JSON, digest schema ${V2Validator.CONTENT_REVIEW_DIGEST_SCHEMA}, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version $UNIT1_REVIEW_VERSION_NAME and this unit digest. Signing Unit ${review.unitNumber} does not approve any other unit.
 
-        `reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, and the content-review digest. It does not approve the curriculum by itself.
+        `packContentReviewDigest` is the pack-wide aggregate used for repository and release integrity. It is not the digest a unit reviewer signs, and it is not hashed into `reviewPackageDigest`.
+
+        `reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, the curriculum source commit, and the unit content-review digest. It does not approve the curriculum by itself.
 
         `repositorySourceDigest` is the release-gate hash of repository inputs. It tracks the repository and release state after an approval is recorded. A later commit changes it. Release-gate validation and the state-transition rules still have to accept that repository state. It is not the digest the reviewer signs.
+
+        `curriculumSourceCommit` is the commit that contains this unit's governed curriculum. It is an ancestor of the packet commit. A packet that names its own commit, or a commit that does not contain this curriculum, is rejected.
 
         ## Qualifications
 
@@ -793,7 +848,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and content-review digest ${review.contentReviewDigest}. Confirm review-package digest ${review.reviewPackageDigest} before relying on this packet. Any later substantive instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and unit content-review digest ${review.contentReviewDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit $CURRICULUM_SOURCE_COMMIT before relying on this packet. Any later substantive change reachable from Unit ${review.unitNumber} invalidates this unit's approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
@@ -803,11 +858,10 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
     """.trimIndent() + "\n"
 }
 
-private fun packReviewRecord(pack: V2CurriculumPack): Unit1ReviewRecord {
-    val review = pack.linguisticReview
+private fun unitReviewRecord(review: dev.russiancompanion.v2.curriculum.V2UnitReviewRecord): Unit1ReviewRecord {
     return record(
         id = review.id,
-        type = "PACK_REVIEW",
+        type = "UNIT_REVIEW",
         objectiveIds = emptyList(),
         sessionIds = emptyList(),
         content = listOf(
@@ -1074,9 +1128,9 @@ private fun reviewPackageDigest(
             "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
             "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
-            "sourceCommit" to canonStr(REVIEW_SOURCE_COMMIT),
+            "curriculumSourceCommit" to canonStr(CURRICULUM_SOURCE_COMMIT),
             "contentReviewDigest" to canonStr(contentReviewDigest),
-            "linguisticReviewStatus" to canonStr(linguisticReviewStatus),
+            "unitReviewStatus" to canonStr(linguisticReviewStatus),
             "unit" to canonObj(
                 "id" to canonStr("unit-$unitNumber"),
                 "installState" to canonStr(installState),
@@ -1117,6 +1171,68 @@ private fun canonObj(vararg fields: Pair<String, String>): String {
 private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
 
 private fun canonStr(value: String): String = jsonString(value)
+
+internal fun reviewRepositoryRoot(): File =
+    listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+
+internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File): List<String> {
+    val errors = mutableListOf<String>()
+    if (!Regex("[0-9a-f]{40}").matches(recorded)) {
+        errors += "Curriculum source commit is not a full commit id"
+        return errors
+    }
+    val head = gitOutput(repositoryRoot, "rev-parse", "HEAD")?.trim()
+    if (head.isNullOrBlank()) {
+        errors += "Curriculum source commit cannot be resolved"
+        return errors
+    }
+    if (recorded == head) {
+        errors += "Curriculum source commit is the packet commit itself"
+    }
+    if (gitExit(repositoryRoot, "merge-base", "--is-ancestor", recorded, "HEAD") != 0) {
+        errors += "Curriculum source commit is not an ancestor of HEAD"
+    }
+    val committed = gitOutput(repositoryRoot, "show", "$recorded:app/src/main/assets/content/v2-curriculum.json")
+    if (committed == null) {
+        errors += "Curriculum source commit does not contain the packaged curriculum"
+        return errors
+    }
+    val current = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
+    val currentText = if (current.isFile) current.readText() else ""
+    if (currentText != committed) {
+        errors += "Curriculum source commit does not contain this revision's governed curriculum"
+    }
+    try {
+        val recordedPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(committed)
+        val headPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(currentText)
+        (1..30).forEach { number ->
+            if (V2Validator.unitContentReviewDigest(recordedPack, number) != V2Validator.unitContentReviewDigest(headPack, number)) {
+                errors += "Unit $number content-review digest at the curriculum source commit does not match this revision"
+            }
+        }
+    } catch (_: RuntimeException) {
+        errors += "Curriculum source commit does not contain a readable curriculum"
+    }
+    return errors
+}
+
+private fun gitOutput(root: File, vararg args: String): String? {
+    val process = ProcessBuilder(listOf("git") + args)
+        .directory(root)
+        .redirectError(File("/dev/null"))
+        .start()
+    val text = process.inputStream.bufferedReader().readText()
+    return if (process.waitFor() == 0) text else null
+}
+
+private fun gitExit(root: File, vararg args: String): Int {
+    val process = ProcessBuilder(listOf("git") + args)
+        .directory(root)
+        .redirectOutput(File("/dev/null"))
+        .redirectError(File("/dev/null"))
+        .start()
+    return process.waitFor()
+}
 
 internal fun repositorySourceDigest(): String {
     val root = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }

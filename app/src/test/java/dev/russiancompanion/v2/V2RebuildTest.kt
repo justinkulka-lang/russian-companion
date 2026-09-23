@@ -18,6 +18,7 @@ import dev.russiancompanion.v2.curriculum.V2AudioAsset
 import dev.russiancompanion.v2.curriculum.V2OwnedEditionMapping
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.V2UnitReviewRecord
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
@@ -93,6 +94,8 @@ class V2RebuildTest {
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
         assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
+        assertEquals(listOf(1, 2), pack.unitReviews.map { it.unitNumber })
+        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
         assertTrue(pack.references.all { it.classification.isNotBlank() })
@@ -142,13 +145,25 @@ class V2RebuildTest {
                 reviewer = "Qualified Reviewer",
                 reviewerQualification = "Advanced Russian and curriculum review attested.",
                 packVersion = pack.packVersion,
+                reviewedContentDigest = V2Validator.contentReviewDigest(pack),
                 curriculumMappingId = "map-owned-edition",
             ),
         )
-        val digest = V2Validator.instructionalContentDigest(staged)
-        val complete = staged.copy(
-            linguisticReview = staged.linguisticReview.copy(reviewedContentDigest = digest),
+        val packApprovedOnly = V2Validator.validate(staged)
+        assertFalse(packApprovedOnly.ok)
+        assertTrue(
+            packApprovedOnly.errors.joinToString("\n"),
+            packApprovedOnly.errors.any { it.contains("Unit 1 readiness claims review approval") } &&
+                packApprovedOnly.errors.any { it.contains("Unit 2 readiness claims review approval") },
         )
+
+        val unitOneOnly = approveUnitReview(staged, 1)
+        val unitOneResult = V2Validator.validate(unitOneOnly)
+        assertFalse(unitOneResult.ok)
+        assertTrue(unitOneResult.errors.any { it.contains("Unit 2 readiness claims review approval") })
+        assertTrue(unitOneResult.errors.none { it.contains("Unit 1 readiness claims review approval") })
+
+        val complete = approveUnitReview(unitOneOnly, 2)
         val completeResult = V2Validator.validate(complete)
         assertTrue(completeResult.errors.joinToString(), completeResult.ok)
     }
@@ -557,12 +572,11 @@ class V2RebuildTest {
                 ),
             ),
         )
-        val signed = V2Validator.contentReviewDigest(withRecords)
+        val signed = V2Validator.unitContentReviewDigest(withRecords, 1)
         val activated = approveInstruction(withRecords).copy(
             units = withRecords.units.map { unit ->
                 when (unit.number) {
                     1 -> unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED", readiness = "INSTALLABLE")
-                    2 -> if (unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") unit.copy(readiness = "REVIEW_APPROVED") else unit
                     else -> unit
                 }
             },
@@ -576,31 +590,25 @@ class V2RebuildTest {
                     reviewedContentDigest = signed,
                 ),
             ),
-            linguisticReview = withRecords.linguisticReview.copy(
-                status = "APPROVED",
-                reviewer = "Pat Reviewer",
-                reviewerQualification = "Advanced Russian and curriculum review attested.",
-                packVersion = withRecords.packVersion,
-                reviewedContentDigest = signed,
-                curriculumMappingId = "map-owned-edition",
-            ),
+            unitReviews = listOf(approvedUnitReview(withRecords, 1, signed)),
         )
-        assertEquals(signed, V2Validator.contentReviewDigest(activated))
+        assertEquals(signed, V2Validator.unitContentReviewDigest(activated, 1))
+        assertEquals(V2Validator.contentReviewDigest(withRecords), V2Validator.contentReviewDigest(activated))
         val accepted = V2Validator.validate(activated)
         assertTrue(accepted.errors.joinToString("\n"), accepted.ok)
 
         val otherUnitMapping = activated.ownedEditionMappings.first().copy(unitNumber = 2)
         val moved = activated.copy(ownedEditionMappings = listOf(otherUnitMapping))
-        val reboundDigest = V2Validator.contentReviewDigest(moved)
+        val reboundDigest = V2Validator.unitContentReviewDigest(moved, 2)
         val rebound = moved.copy(
             ownedEditionMappings = listOf(otherUnitMapping.copy(reviewedContentDigest = reboundDigest)),
-            linguisticReview = moved.linguisticReview.copy(reviewedContentDigest = reboundDigest),
+            unitReviews = listOf(approvedUnitReview(moved, 1, V2Validator.unitContentReviewDigest(moved, 1))),
         )
         val isolated = V2Validator.validate(rebound)
         assertFalse(isolated.ok)
         assertTrue(isolated.errors.joinToString("\n"), isolated.errors.any { it.contains("unit 1") && it.contains("mapping record does not resolve") })
 
-        val unitTwoAudioOnly = activated.copy(
+        val unitTwoInstalled = activated.copy(
             units = activated.units.map { unit ->
                 if (unit.number == 2) {
                     unit.copy(installState = "INSTALLED", mappingStatus = "APPROVED", readiness = "INSTALLABLE")
@@ -609,10 +617,12 @@ class V2RebuildTest {
                 }
             },
         )
-        val unitTwoResult = V2Validator.validate(unitTwoAudioOnly)
+        val unitTwoResult = V2Validator.validate(unitTwoInstalled)
         assertFalse(unitTwoResult.ok)
+        assertTrue(unitTwoResult.errors.any { it.contains("unit 2") && it.contains("APPROVED qualified-review record") })
         assertTrue(unitTwoResult.errors.any { it.contains("unit 2") && it.contains("mapping record does not resolve") })
         assertTrue(unitTwoResult.errors.any { it.contains("handwriting asset record") })
+        assertTrue(unitTwoResult.errors.none { it.contains("Installed unit 1 requires an APPROVED") })
     }
 
     @Test
@@ -653,17 +663,32 @@ class V2RebuildTest {
                 }
             },
         )
-        val digest = V2Validator.instructionalContentDigest(next)
-        return next.copy(
-            linguisticReview = next.linguisticReview.copy(
-                status = "APPROVED",
-                reviewer = "Qualified Reviewer",
-                reviewerQualification = "Advanced Russian and curriculum review attested.",
-                packVersion = next.packVersion,
-                reviewedContentDigest = digest,
-                curriculumMappingId = "map-owned-edition",
-            ),
+        return approveUnitReview(next, 1)
+    }
+
+    private fun approvedUnitReview(
+        source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+        unitNumber: Int,
+        digest: String = V2Validator.unitContentReviewDigest(source, unitNumber),
+    ): V2UnitReviewRecord {
+        return V2UnitReviewRecord(
+            id = "rev-pending-unit-$unitNumber",
+            unitNumber = unitNumber,
+            status = "APPROVED",
+            reviewer = "Qualified Reviewer",
+            reviewerQualification = "Advanced Russian and curriculum review attested.",
+            packVersion = source.packVersion,
+            reviewedContentDigest = digest,
+            curriculumMappingId = "map-owned-edition",
         )
+    }
+
+    private fun approveUnitReview(
+        source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+        unitNumber: Int,
+    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+        val others = source.unitReviews.filter { it.unitNumber != unitNumber }
+        return source.copy(unitReviews = others + approvedUnitReview(source, unitNumber))
     }
 
     private fun approveInstruction(
@@ -687,19 +712,7 @@ class V2RebuildTest {
 
     private fun rebindReview(
         source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
-    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
-        val digest = V2Validator.instructionalContentDigest(source)
-        return source.copy(
-            linguisticReview = source.linguisticReview.copy(
-                status = "APPROVED",
-                reviewer = "Qualified Reviewer",
-                reviewerQualification = "Advanced Russian and curriculum review attested.",
-                packVersion = source.packVersion,
-                reviewedContentDigest = digest,
-                curriculumMappingId = "map-owned-edition",
-            ),
-        )
-    }
+    ): dev.russiancompanion.v2.curriculum.V2CurriculumPack = approveUnitReview(source, 1)
 
     private fun withReachableReferences(
         source: dev.russiancompanion.v2.curriculum.V2CurriculumPack,

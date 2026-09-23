@@ -11,8 +11,32 @@
     "reviewedContentDigest": null,
     "curriculumMappingId": null,
     "reviewerQualification": null,
-    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible."
+    "notes": "Pack-level status is not a unit approval. Each unit has its own pending review record."
   },
+  "unitReviews": [
+    {
+      "id": "rev-pending-unit-1",
+      "unitNumber": 1,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 1."
+    },
+    {
+      "id": "rev-pending-unit-2",
+      "unitNumber": 2,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 2."
+    }
+  ],
   "sources": [
     {
       "id": "src-unicode-cyrillic",

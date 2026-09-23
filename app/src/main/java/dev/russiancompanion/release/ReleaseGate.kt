@@ -628,7 +628,10 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
         val blockers = mutableListOf<ReleaseBlocker>()
         val installed = pack.units.filter { it.installState == "INSTALLED" }.map { it.number }.toSet()
         if ((1..30).any { it !in installed }) blockers += ReleaseBlocker.V2_UNITS_NOT_INSTALLED
-        if (pack.linguisticReview.status != "APPROVED") blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
+        val approvedUnits = pack.unitReviews.filter { review ->
+            review.status == "APPROVED" && !review.reviewedContentDigest.isNullOrBlank()
+        }.map { it.unitNumber }.toSet()
+        if ((1..30).any { it !in approvedUnits }) blockers += ReleaseBlocker.LINGUISTIC_REVIEW_ABSENT
         if (pack.units.any { it.mappingStatus != "APPROVED" }) {
             blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
         }
@@ -655,9 +658,17 @@ private val json = Json {
 @Serializable
 private data class V2PackDocument(
     val linguisticReview: V2PackReview,
+    val unitReviews: List<V2PackUnitReview> = emptyList(),
     val letters: List<V2PackLetter> = emptyList(),
     val audioAssets: List<V2PackAudioAsset> = emptyList(),
     val units: List<V2PackUnit> = emptyList(),
+)
+
+@Serializable
+private data class V2PackUnitReview(
+    val unitNumber: Int = 0,
+    val status: String = "",
+    val reviewedContentDigest: String? = null,
 )
 
 @Serializable
