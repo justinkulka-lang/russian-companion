@@ -6,7 +6,7 @@ Curriculum source commit: 5dde572d36895eeec24d1159898d9e3d3998a488
 Unit content-review digest: e46c57ebda8258f1afae78031f3a475dcc4f49803ae12299dd4b6b4872245781
 Pack content-review digest: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
 Review-package digest: 3e7d0347ff0052deccbc11f9f2b0354b18163aa4552843ef5806365d6b2db84e
-Repository source digest: 3449b7a61e780fd8736e9c8e10e2cd41d68d14439000b93b1831e9b05b3831e9
+Repository source digest: 7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b
 
 This packet was generated from the packaged curriculum at curriculum source commit 5dde572d36895eeec24d1159898d9e3d3998a488. That commit contains the reviewed curriculum. This packet commit records that identity and does not perform review.
 

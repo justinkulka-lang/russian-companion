@@ -1,6 +1,8 @@
 # Unit 1 linguistic and owned-edition mapping packet
 
-This packet prepares review. It does not record a qualified review, an owned-edition mapping, or an install decision.
+This packet prepares review. It records an unsigned structural mapping proposal. It does not record a qualified review, an approved edition alignment, or an install decision.
+
+The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
 Unit 1 remains in development. Its readiness is content-complete and review-pending. The Lesson 1 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
@@ -13,7 +15,7 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Unit content-review SHA-256: 9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a
 - Pack content-review SHA-256: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
 - Review-package SHA-256: 22c066c7b9a3a0954d8b53bee86fadabb8defc5804621b9d77f76d6379e0df14
-- Repository source SHA-256: 3449b7a61e780fd8736e9c8e10e2cd41d68d14439000b93b1831e9b05b3831e9
+- Repository source SHA-256: 7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b
 
 The unit content-review digest is what a reviewer of Unit 1 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

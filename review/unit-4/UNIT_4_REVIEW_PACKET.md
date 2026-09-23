@@ -1,6 +1,8 @@
 # Unit 4 linguistic and owned-edition mapping packet
 
-This packet prepares review. It does not record a qualified review, an owned-edition mapping, or an install decision.
+This packet prepares review. It records an unsigned structural mapping proposal. It does not record a qualified review, an approved edition alignment, or an install decision.
+
+The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
 Unit 4 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 4 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
@@ -13,7 +15,7 @@ Unit 4 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 4 
 - Unit content-review SHA-256: cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc
 - Pack content-review SHA-256: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
 - Review-package SHA-256: bb9fdeab79be44d60f249415c71b88cc85dd1bbbedd4c33bfbef6605dffffea8
-- Repository source SHA-256: 3449b7a61e780fd8736e9c8e10e2cd41d68d14439000b93b1831e9b05b3831e9
+- Repository source SHA-256: 7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b
 
 The unit content-review digest is what a reviewer of Unit 4 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

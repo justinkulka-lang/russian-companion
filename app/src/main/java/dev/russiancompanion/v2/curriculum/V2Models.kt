@@ -147,6 +147,16 @@ internal data class V2OwnedEditionMapping(
     val reviewer: String? = null,
     val reviewerQualification: String? = null,
     val reviewedContentDigest: String? = null,
+    val editionTitle: String? = null,
+    val author: String? = null,
+    val publisherImprint: String? = null,
+    val proposedLessonNumber: Int? = null,
+    val printedPageStart: Int? = null,
+    val printedPageEnd: Int? = null,
+    val topicDescription: String? = null,
+    val observationSource: String? = null,
+    val isbn: String? = null,
+    val isbnObservation: String = "UNRESOLVED",
 )
 
 @Serializable

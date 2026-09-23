@@ -98,12 +98,16 @@ private val MAPPING_HEADER = listOf(
     "record_type",
     "app_title",
     "edition_identification",
-    "isbn",
+    "author",
     "publisher_edition",
+    "observed_edition_notes",
+    "isbn",
     "owned_copy_verified",
     "corresponding_lesson",
     "corresponding_pages",
     "corresponding_topic",
+    "observation_source",
+    "unresolved_questions",
     "alignment_disposition",
     "variance_conflict",
     "reviewer_notes",
@@ -123,20 +127,69 @@ private val BLANK_REVIEW_COLUMNS = listOf(
 )
 
 private val BLANK_MAPPING_COLUMNS = listOf(
-    "edition_identification",
     "isbn",
-    "publisher_edition",
     "owned_copy_verified",
-    "corresponding_lesson",
-    "corresponding_pages",
-    "corresponding_topic",
-    "alignment_disposition",
     "variance_conflict",
     "reviewer_notes",
     "reviewer_identity",
     "review_date",
     "reviewed_version_digest",
     "reviewer_qualification",
+)
+
+private const val OBSERVED_EDITION_TITLE = "The New Penguin Russian Course: A Complete Course for Beginners"
+
+private const val OBSERVED_EDITION_AUTHOR = "Nicholas J. Brown"
+
+private const val OBSERVED_PUBLISHER_IMPRINT = "Penguin Books"
+
+private const val OBSERVED_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded."
+
+private const val MAPPING_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input v1.0. Page numbers are printed book pages. The input is private and is not repository curriculum."
+
+private const val MAPPING_UNRESOLVED_QUESTIONS =
+    "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
+
+private data class StructuralMappingObservation(
+    val unitNumber: Int,
+    val lessonLabel: String,
+    val printedPages: String,
+    val topic: String,
+)
+
+private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
+    StructuralMappingObservation(
+        1,
+        "Lesson 1",
+        "1-11",
+        "Cyrillic reading foundation: alphabet, pronunciation orientation, transliteration, and street-sign reading",
+    ),
+    StructuralMappingObservation(
+        2,
+        "Lesson 2",
+        "12-23",
+        "Russian handwriting and additional pronunciation",
+    ),
+    StructuralMappingObservation(
+        3,
+        "Lesson 3",
+        "24-35",
+        "Everyday phrases, naming things, introductory grammar, and grammatical gender",
+    ),
+    StructuralMappingObservation(
+        4,
+        "Lesson 4",
+        "36-45",
+        "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
+    ),
+    StructuralMappingObservation(
+        5,
+        "Lesson 5",
+        "46-55",
+        "Asking questions, the prepositional case, indeclinable nouns, and dialogue work",
+    ),
 )
 
 internal data class Unit1ReviewRecord(
@@ -561,8 +614,9 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
         errors += mappingErrors(mapping, pack, unitNumber)
     }
     val combined = files.values.joinToString("\n")
+    val instructional = files.filterKeys { it != reviewMappingName(unitNumber) }.values.joinToString("\n")
     if (combined.contains("Penguin-aligned")) errors += "Package describes Unit $unitNumber as Penguin-aligned"
-    if (combined.contains("The New Penguin Russian Course")) errors += "Package introduces Penguin prose"
+    if (instructional.contains("The New Penguin Russian Course")) errors += "Package introduces Penguin prose"
     if (Regex("(?i)exercise\\s+\\d+").containsMatchIn(combined)) errors += "Package introduces Penguin exercise content"
     if (combined.contains("Qualified Reviewer")) errors += "Package fabricates a reviewer identity"
     if (combined.contains("installState: INSTALLED") || combined.contains("\"installState\": \"INSTALLED\"")) {
@@ -633,21 +687,94 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
     val ids = body.map { it[0] }
     if (ids.size != ids.distinct().size) errors += "Mapping worksheet repeats a stable id"
     if (ids != expectedIds) errors += "Mapping worksheet does not list every Unit $unitNumber objective and session"
+    val observation = STRUCTURAL_MAPPING_OBSERVATIONS.firstOrNull { it.unitNumber == unitNumber }
+    if (body.isNotEmpty() && observation == null) {
+        errors += "Mapping worksheet has rows for Unit $unitNumber without a structural observation"
+    }
     body.forEach { row ->
         if (row.size != MAPPING_HEADER.size) {
             errors += "Mapping worksheet row ${row.firstOrNull()} has the wrong column count"
             return@forEach
         }
+        val value = { column: String -> row[MAPPING_HEADER.indexOf(column)] }
         BLANK_MAPPING_COLUMNS.forEach { column ->
-            if (row[MAPPING_HEADER.indexOf(column)].isNotBlank()) {
+            if (value(column).isNotBlank()) {
                 errors += "Mapping worksheet pre-populates $column for ${row[0]}"
             }
         }
+        if (value("isbn").isNotBlank() || Regex("(?i)\\b97[89]\\d{10}\\b").containsMatchIn(value("isbn"))) {
+            errors += "Mapping worksheet records an invented ISBN for ${row[0]}"
+        }
+        if (value("app_title").contains(OBSERVED_EDITION_TITLE)) {
+            errors += "Mapping worksheet places edition identity in app content for ${row[0]}"
+        }
+        listOf(
+            "edition_identification",
+            "author",
+            "publisher_edition",
+            "observed_edition_notes",
+            "corresponding_lesson",
+            "corresponding_pages",
+            "corresponding_topic",
+            "observation_source",
+            "unresolved_questions",
+        ).forEach { column ->
+            if (Regex("[\\u0400-\\u04FF]").containsMatchIn(value(column))) {
+                errors += "Mapping worksheet introduces Russian lesson content in $column for ${row[0]}"
+            }
+        }
+        if (observation != null) {
+            if (value("edition_identification") != OBSERVED_EDITION_TITLE ||
+                value("author") != OBSERVED_EDITION_AUTHOR ||
+                value("publisher_edition") != OBSERVED_PUBLISHER_IMPRINT
+            ) {
+                errors += "Mapping worksheet is missing edition identity for ${row[0]}"
+            }
+            if (value("corresponding_lesson") != observation.lessonLabel || value("corresponding_lesson") != "Lesson $unitNumber") {
+                errors += "Mapping worksheet is for the wrong unit or lesson for ${row[0]}"
+            }
+            if (value("corresponding_pages") != observation.printedPages) {
+                errors += "Mapping worksheet page range does not match the observed pages for ${row[0]}"
+            }
+            if (value("corresponding_pages").isBlank() && value("alignment_disposition") == "APPROVED") {
+                errors += "Mapping worksheet approves a blank page range for ${row[0]}"
+            }
+            if (value("corresponding_topic") != observation.topic) {
+                errors += "Mapping worksheet topic does not match the structural observation for ${row[0]}"
+            }
+            if (value("observation_source") != MAPPING_OBSERVATION_SOURCE) {
+                errors += "Mapping worksheet observation source does not match the structural input for ${row[0]}"
+            }
+            if (value("alignment_disposition") != "PENDING_CURRICULUM_REVIEWER") {
+                errors += "Mapping worksheet disposition for ${row[0]} is not pending"
+            }
+            if (value("alignment_disposition") == "APPROVED") {
+                if (value("corresponding_pages").isBlank()) {
+                    errors += "Mapping worksheet approves a blank page range for ${row[0]}"
+                }
+                if (value("reviewer_identity").isBlank() || value("reviewer_qualification").isBlank()) {
+                    errors += "Mapping worksheet is APPROVED without an identified qualified reviewer for ${row[0]}"
+                }
+                val digest = value("reviewed_version_digest")
+                if (digest != V2Validator.unitContentReviewDigest(pack, unitNumber)) {
+                    errors += "Mapping worksheet reviewed content digest does not match the unit content-review digest for ${row[0]}"
+                }
+            }
+        }
+    }
+    if (Regex("(?i)\\b97[89]\\d{10}\\b|\\b\\d{9}[\\dX]\\b").containsMatchIn(mapping)) {
+        errors += "Mapping worksheet records an invented ISBN"
+    }
+    if (mapping.contains(".pdf", ignoreCase = true) || mapping.contains("PENGUIN_EDITION_MAPPING_INPUT")) {
+        errors += "Mapping worksheet treats the mapping input as redistributable curriculum content"
     }
     if (!mapping.contains("must not contain copied Penguin prose")) {
         errors += "Mapping worksheet omits the Penguin-prose warning"
     }
-    return errors
+    if (!mapping.contains("Observed edition facts") || !mapping.contains("Proposed structural mapping") || !mapping.contains("Unresolved facts") || !mapping.contains("Qualified linguistic review")) {
+        errors += "Mapping worksheet does not distinguish observed, proposed, unresolved, and linguistic-review facts"
+    }
+    return errors.distinct()
 }
 
 private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): String {
@@ -655,7 +782,10 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
     val unit = pack.unit(review.unitNumber)
     return buildString {
         append("# Unit ${review.unitNumber} linguistic and owned-edition mapping packet\n\n")
-        append("This packet prepares review. It does not record a qualified review, an owned-edition mapping, or an install decision.\n\n")
+        append("This packet prepares review. It records an unsigned structural mapping proposal. It does not record a qualified review, an approved edition alignment, or an install decision.\n\n")
+        append("The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ")
+        append("ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. ")
+        append("The disposition remains PENDING_CURRICULUM_REVIEWER.\n\n")
         if (unit?.installState == "DEVELOPMENT" && unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
             append("Unit ${review.unitNumber} remains in development. Its readiness is content-complete and review-pending. ")
         } else {
@@ -795,20 +925,42 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
     val unit = pack.unit(unitNumber) ?: error("Unit $unitNumber is missing")
     val lines = mutableListOf(
         "# Warning: this worksheet must not contain copied Penguin prose or exercises.",
-        "# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, reviewed digest, and qualification only after comparing the Product Owner's legally owned edition.",
+        "# Observed edition facts: edition_identification, author, publisher_edition, and observed_edition_notes.",
+        "# Proposed structural mapping: corresponding_lesson, corresponding_pages, corresponding_topic, and alignment_disposition PENDING_CURRICULUM_REVIEWER.",
+        "# Unresolved facts: isbn, owned_copy_verified, variance_conflict, and unresolved_questions. ISBN was not visible and must stay blank.",
+        "# Qualified linguistic review is still required. Reviewer identity, qualification, date, notes, and reviewed digest stay blank. This worksheet is not an approval.",
         MAPPING_HEADER.joinToString("\t"),
     )
+    val observation = STRUCTURAL_MAPPING_OBSERVATIONS.firstOrNull { it.unitNumber == unitNumber }
     unit.objectives.forEach { objective ->
-        lines += mappingRow(objective.id, "OBJECTIVE", objective.title)
+        lines += mappingRow(objective.id, "OBJECTIVE", objective.title, observation)
     }
     unit.sessions.forEach { session ->
-        lines += mappingRow(session.id, "SESSION", session.title)
+        lines += mappingRow(session.id, "SESSION", session.title, observation)
     }
     return lines.joinToString("\n") + "\n"
 }
 
-private fun mappingRow(id: String, type: String, title: String): String {
-    return listOf(id, type, title, "", "", "", "", "", "", "", "", "", "", "", "", "", "").joinToString("\t") { escapeTsv(it) }
+private fun mappingRow(id: String, type: String, title: String, observation: StructuralMappingObservation?): String {
+    val structural = if (observation == null) {
+        List(11) { "" }
+    } else {
+        listOf(
+            OBSERVED_EDITION_TITLE,
+            OBSERVED_EDITION_AUTHOR,
+            OBSERVED_PUBLISHER_IMPRINT,
+            OBSERVED_EDITION_NOTES,
+            "",
+            "",
+            observation.lessonLabel,
+            observation.printedPages,
+            observation.topic,
+            MAPPING_OBSERVATION_SOURCE,
+            MAPPING_UNRESOLVED_QUESTIONS,
+        )
+    }
+    return (listOf(id, type, title) + structural + listOf("PENDING_CURRICULUM_REVIEWER".takeIf { observation != null }.orEmpty()) + List(6) { "" })
+        .joinToString("\t") { escapeTsv(it) }
 }
 
 private fun renderInstructions(review: Unit1ReviewPackage): String {

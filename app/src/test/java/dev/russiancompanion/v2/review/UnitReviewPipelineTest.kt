@@ -68,8 +68,24 @@ class UnitReviewPipelineTest {
         parseTsv(files2.getValue(reviewWorksheetName(2))).drop(1).forEach { row ->
             (10 until row.size).forEach { index -> assertEquals("", row[index]) }
         }
-        parseTsv(files2.getValue(reviewMappingName(2))).drop(1).forEach { row ->
-            (3 until row.size).forEach { index -> assertEquals("", row[index]) }
+        val unit2Mapping = parseTsv(files2.getValue(reviewMappingName(2)))
+        val unit2MappingHeader = unit2Mapping.first()
+        unit2Mapping.drop(1).forEach { row ->
+            listOf(
+                "isbn",
+                "owned_copy_verified",
+                "variance_conflict",
+                "reviewer_notes",
+                "reviewer_identity",
+                "review_date",
+                "reviewed_version_digest",
+                "reviewer_qualification",
+            ).forEach { column ->
+                assertEquals(column, "", row[unit2MappingHeader.indexOf(column)])
+            }
+            assertEquals("Lesson 2", row[unit2MappingHeader.indexOf("corresponding_lesson")])
+            assertEquals("12-23", row[unit2MappingHeader.indexOf("corresponding_pages")])
+            assertEquals("PENDING_CURRICULUM_REVIEWER", row[unit2MappingHeader.indexOf("alignment_disposition")])
         }
     }
 
