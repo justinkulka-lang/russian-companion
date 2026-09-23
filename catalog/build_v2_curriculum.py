@@ -1549,7 +1549,11 @@ def build() -> dict:
                 "readiness": "NOT_PREPARED",
                 "penguinLesson": number,
                 "mappingStatus": "NOT_STARTED",
-                "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
+                "mappingNote": (
+                    "Owned-edition structural mapping is absent. Missing input: printed page range, owned-copy topic confirmation, and observation source. No lesson body, audio, or exercises are prepared."
+                    if 11 <= number <= 15
+                    else "The topic identifier is recorded. No lesson body, audio, or exercises are installed."
+                ),
                 "prerequisiteUnitNumbers": [number - 1],
                 "estimatedMinutes": None,
                 "objectives": [],
