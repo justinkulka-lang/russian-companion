@@ -1304,7 +1304,24 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
             "containsGeneratedRussian=${item.containsGeneratedRussian}",
             "reviewStatus=${item.reviewStatus}",
         ).let { lines ->
-            if (item.distractorRationales.isEmpty()) lines else lines + "distractorRationales=${item.distractorRationales.joinToString(" | ")}"
+            val withRationales = if (item.distractorRationales.isEmpty()) {
+                lines
+            } else {
+                lines + "distractorRationales=${item.distractorRationales.joinToString(" | ")}"
+            }
+            val assessment = item.assessment ?: return@let withRationales
+            withRationales + listOf(
+                "testedFeature=${assessment.testedFeature}",
+                "evidenceMode=${assessment.evidenceMode}",
+                "contrastSetId=${assessment.contrastSetId}",
+                "cueLanguage=${assessment.cueLanguage}",
+                "independent=${assessment.independent}",
+                "answerSourceIds=${assessment.answerSourceIds.joinToString(" | ")}",
+                "distractorSourceIds=${assessment.distractorSourceIds.joinToString(" | ")}",
+                "distractorDifference=${assessment.distractorDifference.joinToString(" | ")}",
+                "whyAnswerDemonstratesObjective=${assessment.whyAnswerDemonstratesObjective}",
+                "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
+            )
         }.joinToString("\n"),
         sourceId = item.sourceId,
         rightsIds = rightsIds(pack, item.sourceId),

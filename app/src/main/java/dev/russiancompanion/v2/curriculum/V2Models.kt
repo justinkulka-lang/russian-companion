@@ -238,6 +238,20 @@ internal data class V2Example(
 )
 
 @Serializable
+internal data class V2Assessment(
+    val testedFeature: String,
+    val evidenceMode: String,
+    val contrastSetId: String,
+    val cueLanguage: String,
+    val independent: Boolean,
+    val answerSourceIds: List<String>,
+    val distractorSourceIds: List<String>,
+    val distractorDifference: List<String>,
+    val whyAnswerDemonstratesObjective: String,
+    val contrastMembers: List<String>,
+)
+
+@Serializable
 internal data class V2CheckItem(
     val id: String,
     val kind: String,
@@ -252,6 +266,7 @@ internal data class V2CheckItem(
     val reviewStatus: String,
     val containsGeneratedRussian: Boolean = false,
     val distractorRationales: List<String> = emptyList(),
+    val assessment: V2Assessment? = null,
 )
 
 @Serializable

@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2
 
-import dev.russiancompanion.v2.curriculum.GRAMMAR_ITEM_KINDS
+import dev.russiancompanion.v2.curriculum.V2CheckItem
+import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
@@ -15,43 +16,147 @@ import java.io.File
 
 class Units610InstructionalValidityTest {
     @Test
-    fun everyGovernedObjectiveHasAGrammarCheckAndAdmittedDistractors() {
+    fun everyRecognitionObjectiveHasAnIndependentFeatureValidCheck() {
         val pack = pack()
         val validation = V2Validator.validate(pack)
         assertTrue(validation.errors.joinToString("\n"), validation.ok)
-        val generic = "Return to the explanation. Compare the shown form with the admitted record."
+        val englishCue = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
         (6..10).forEach { number ->
             val unit = pack.unit(number)!!
-            val shipped = pack.provenanceRecords.filter { it.unitNumber == number }.map { it.shippedText }.toSet()
             unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
-                val checks = objective.checkItemIds.map { pack.items.first { item -> item.id == it } }
-                assertTrue("${objective.id} has no grammar check", checks.any { it.kind in GRAMMAR_ITEM_KINDS })
-                assertTrue("${objective.id} is only gloss matching", checks.any { it.kind != "SOURCE_MEANING" })
-                checks.forEach { item ->
-                    assertEquals(item.options.size, item.options.toSet().size)
-                    assertEquals(1, item.options.count { it == item.answer })
-                    assertEquals(item.options.size, item.distractorRationales.size)
-                    item.options.forEachIndexed { index, option ->
-                        assertTrue("$option has no admitted record", option in shipped)
-                        if (option == item.answer) {
-                            assertEquals("", item.distractorRationales[index])
-                        } else {
-                            assertTrue("${item.id} distractor rationale", item.distractorRationales[index].isNotBlank())
-                        }
-                    }
+                val checks = objective.checkItemIds.map { id -> pack.items.first { it.id == id } }
+                val qualifying = checks.filter { V2Validator.featureValid(pack, it) }
+                assertTrue("${objective.id} has no independent feature-valid check", qualifying.isNotEmpty())
+                qualifying.forEach { item ->
+                    assertTrue(item.assessment!!.independent)
+                    assertFalse("${item.id} is an English-cue translation match", V2Validator.isDirectEnglishMatch(item))
+                    assertFalse("${item.id} keeps a recorded-for prompt", englishCue.containsMatchIn(item.prompt))
+                    assertTrue("${item.id} rationale does not name the distinction", item.assessment.whyAnswerDemonstratesObjective.isNotBlank())
                 }
                 objective.exampleIds.forEach { id ->
                     val example = pack.examples.first { it.id == id }
                     assertTrue("${example.id} is English prose", example.display.any { it.code in 0x0400..0x04FF })
                 }
-                val remediation = unit.sessions.flatMap { it.steps }.first { it.id in objective.remediationStepIds }
-                assertFalse(remediation.body == generic)
-                assertTrue(
-                    "${objective.id} remediation is not source-bound",
-                    shipped.any { span -> span.length >= 8 && span in remediation.body },
-                )
             }
         }
+    }
+
+    @Test
+    fun renamingSourceMeaningToFormSelectionDoesNotValidateATranslationMatch() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val translation = seed.copy(
+            kind = "SOURCE_MEANING",
+            prompt = "Which admitted line is recorded for I like dogs?",
+            promptLetter = "I like dogs",
+            distractorRationales = emptyList(),
+            assessment = null,
+        )
+        val renamed = translation.copy(
+            kind = "FORM_SELECTION",
+            distractorRationales = seed.distractorRationales,
+            assessment = seed.assessment,
+        )
+        assertEquals(translation.prompt, renamed.prompt)
+        assertEquals(translation.options, renamed.options)
+        assertEquals(translation.answer, renamed.answer)
+        assertTrue(V2Validator.isDirectEnglishMatch(renamed))
+        assertFalse(V2Validator.featureValid(replace(pack, renamed), renamed))
+        val errors = V2Validator.validate(replace(pack, renamed)).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains(renamed.id) && it.contains("direct English-to-Russian matching") },
+        )
+    }
+
+    @Test
+    fun retainingADirectEnglishCueWithTheSameAnswerFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-2" }
+        val retained = seed.copy(
+            prompt = "Which admitted form is recorded for Our?",
+            promptLetter = "Our",
+        )
+        assertEquals(seed.options, retained.options)
+        assertEquals(seed.answer, retained.answer)
+        assertEquals(seed.kind, retained.kind)
+        assertTrue(V2Validator.isDirectEnglishMatch(retained))
+        assertFalse(V2Validator.featureValid(replace(pack, retained), retained))
+        val errors = V2Validator.validate(replace(pack, retained)).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains("direct English-to-Russian matching") },
+        )
+    }
+
+    @Test
+    fun anUnrelatedAdmittedDistractorFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val unrelated = pack.provenanceRecords.first {
+            it.objectiveId == seed.objectiveId && it.shippedText == "собака"
+        }
+        val assessment = seed.assessment!!
+        val options = seed.options.map { if (it == seed.answer) it else unrelated.shippedText }
+        val swapped = seed.copy(
+            options = options,
+            distractorRationales = seed.distractorRationales.map { if (it.isEmpty()) it else "This is an unrelated admitted example." },
+            assessment = assessment.copy(
+                contrastMembers = options,
+                distractorSourceIds = assessment.distractorSourceIds.mapIndexed { index, id ->
+                    if (options[index] == seed.answer) id else unrelated.itemId
+                },
+                distractorDifference = assessment.distractorDifference.mapIndexed { index, difference ->
+                    if (options[index] == seed.answer) difference else "This is an unrelated admitted example."
+                },
+            ),
+        )
+        assertTrue(unrelated.shippedText in swapped.options)
+        assertFalse(V2Validator.featureValid(replace(pack, swapped), swapped))
+        val errors = V2Validator.validate(replace(pack, swapped)).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains(swapped.id) && it.contains("distractor is unrelated") },
+        )
+    }
+
+    @Test
+    fun guidedOnlyContrastsDoNotSatisfyARecognitionObjective() {
+        val pack = pack()
+        val objective = pack.unit(6)!!.objectives.first { it.id == "obj-u6-possessive" }
+        val guidedOnly = pack.copy(
+            items = pack.items.map { item ->
+                if (item.id in objective.checkItemIds) {
+                    item.copy(assessment = item.assessment!!.copy(independent = false))
+                } else {
+                    item
+                }
+            },
+        )
+        objective.checkItemIds.forEach { id ->
+            val item = guidedOnly.items.first { it.id == id }
+            assertFalse(V2Validator.featureValid(guidedOnly, item))
+        }
+        val errors = V2Validator.validate(guidedOnly).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains(objective.id) && it.contains("no independent feature-valid check") },
+        )
+    }
+
+    @Test
+    fun aRationaleThatDoesNotExplainTheDistinctionFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val unlabeled = seed.copy(
+            assessment = seed.assessment!!.copy(whyAnswerDemonstratesObjective = "The admitted answer is recorded."),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, unlabeled), unlabeled))
+        val errors = V2Validator.validate(replace(pack, unlabeled)).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains(unlabeled.id) && it.contains("does not explain the governed distinction") },
+        )
     }
 
     @Test
@@ -60,7 +165,11 @@ class Units610InstructionalValidityTest {
         val objective = pack.unit(6)!!.objectives.first { it.kind == "RECOGNITION" }
         val stripped = pack.copy(
             items = pack.items.map { item ->
-                if (item.id in objective.checkItemIds) item.copy(kind = "SOURCE_MEANING", distractorRationales = emptyList()) else item
+                if (item.id in objective.checkItemIds) {
+                    item.copy(kind = "SOURCE_MEANING", distractorRationales = emptyList(), assessment = null)
+                } else {
+                    item
+                }
             },
         )
         val errors = V2Validator.validate(stripped).errors
@@ -99,35 +208,53 @@ class Units610InstructionalValidityTest {
     }
 
     @Test
-    fun unitNineCoversTheRequiredNumberScopeAndUnitSevenNamesTheMissingAdverb() {
+    fun unitNineBoundaryCasesAreIndependentQualifyingChecks() {
         val pack = pack()
+        data class Boundary(val feature: String, val shown: String, val answer: String)
+        val required = listOf(
+            Boundary("FINAL_DIGIT_ONE", "сорок один год", "1 -> nominative"),
+            Boundary("COMPOUND_22", "двадцать два часа", "2, 3, 4 -> genitive singular"),
+            Boundary("FINAL_DIGIT_FIVE_PLUS", "пять часов", "5 and more -> genitive plural"),
+            Boundary("FINAL_ZERO_OR_TEN", "десять копеек", "5 and more -> genitive plural"),
+            Boundary("TEENS_OVERRIDE", "двести тринадцать собак", "5 and more -> genitive plural"),
+            Boundary("TEEN_VALUE", "шестнадцать рублей", "5 and more -> genitive plural"),
+            Boundary("COMPOUND_21", "двадцать один час", "1 -> nominative"),
+            Boundary("HUNDREDS_COMPOSITION", "215", "две́сти пятна́дцать"),
+            Boundary("THOUSANDS_COMPOSITION", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре"),
+            Boundary("ODIN_MASCULINE", "мальчик", "один мальчик"),
+            Boundary("ODIN_FEMININE", "девушка", "одна девушка"),
+            Boundary("ODIN_NEUTER", "животное", "одно животное"),
+            Boundary("ODIN_PLURAL", "джинсы", "одни джинсы"),
+            Boundary("DVA_DVE", "девушка", "две"),
+        )
         val unit9 = pack.unit(9)!!
-        val visible = unit9.sessions.flatMap { it.steps }.joinToString("\n") { it.body } +
-            unit9.objectives.flatMap { it.exampleIds }.joinToString("\n") { id ->
-                val example = pack.examples.first { it.id == id }
-                example.display + " " + example.note
+        val independent = unit9.objectives
+            .filter { it.kind == "RECOGNITION" }
+            .flatMap { it.checkItemIds }
+            .map { id -> pack.items.first { item -> item.id == id } }
+            .filter { it.assessment?.independent == true }
+        required.forEach { boundary ->
+            val match = independent.firstOrNull { item ->
+                val assessment = item.assessment!!
+                assessment.testedFeature == boundary.feature &&
+                    item.promptLetter == boundary.shown &&
+                    item.answer == boundary.answer
             }
-        listOf(
-            "ноль", "оди́н", "два́дцать", "три́дцать", "со́рок", "пятьдеся́т", "шестьдеся́т", "се́мьдесят", "во́семьдесят", "девяно́сто",
-            "сто", "две́сти", "три́ста", "четы́реста", "пятьсо́т", "шестьсо́т", "семьсо́т", "восемьсо́т", "девятьсо́т",
-            "ты́сяча", "два́дцать оди́н", "сто оди́н", "две́сти пятна́дцать", "три́ста три́дцать три",
-            "ты́сяча девятьсо́т во́семьдесят четы́ре", "две/три/четы́ре ты́сячи", "пять ~ де́вять ты́сяч",
-            "один мальчик", "одна девушка", "одно животное", "одни джинсы", "две",
-            "один час", "два часа", "пять часов", "двадцать один час", "шестнадцать рублей",
-            "11, 12, 13, 14", "сорок один год", "двести тринадцать собак",
-        ).forEach { span ->
-            assertTrue("missing $span", span in visible)
+            assertTrue("missing independent ${boundary.feature} for ${boundary.shown}", match != null)
+            assertTrue(V2Validator.featureValid(pack, match!!))
+            assertFalse(V2Validator.isDirectEnglishMatch(match))
         }
-        val pattern = unit9.objectives.first { it.id == "obj-u9-pattern" }
-        val patternChecks = pattern.checkItemIds.map { id -> pack.items.first { it.id == id } }
-        assertTrue(patternChecks.any { it.kind == "PATTERN_CLASSIFICATION" && it.answer == "5 and more -> genitive plural" })
-        assertTrue(patternChecks.any { it.answer.contains("must be declined") })
+        val pattern = independent.filter { it.objectiveId == "obj-u9-pattern" }
+        assertTrue(pattern.any { it.answer.contains("must be declined") })
         val unit7 = pack.unit(7)!!
         assertEquals("NOT_PREPARED", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }
         assertTrue(lesson.contains("introductory adverb objective is not prepared"))
         assertFalse(lesson.contains("хорошое"))
     }
+
+    private fun replace(pack: V2CurriculumPack, item: V2CheckItem) =
+        pack.copy(items = pack.items.map { if (it.id == item.id) item else it })
 
     private fun learner(number: Int, book: Boolean, correct: Set<String>, steps: Set<String>) = V2LearnerView(
         onboardingCompleted = true,

@@ -1,6 +1,8 @@
 """Typed Units 6–10 checks. Every Russian span and rule label is an exact frozen substring."""
 
-from units_3_5_intake import OPENRUSSIAN_ID, WIKIBOOKS_ID
+import re
+
+from units_3_5_intake import CYRILLIC, OPENRUSSIAN_ID, WIKIBOOKS_ID
 
 W = WIKIBOOKS_ID
 O = OPENRUSSIAN_ID
@@ -14,12 +16,105 @@ def _field(record, name):
     return ("field", record, name)
 
 
-def _check(prompt, shown, answer, distractors, source=W):
-    return (prompt, shown, answer, distractors, source)
+_TOKEN = {
+    "SAME_LEMMA_FORM": "same word",
+    "RULE_CLASSIFICATION": "shown line",
+    "FEATURE_LABEL": "shown line",
+    "NUMBER_FORM": "shown number",
+    "RULE_APPLICATION": "shown rule",
+    "FEATURE_IN_LINE": "shown line",
+    "COUNTED_PATTERN": "pattern",
+    "AGREEMENT_PAIR": "shown word",
+}
+_UNRELATED = (
+    "different example",
+    "different object example",
+    "different possession",
+    "different word",
+    "belongs to a different word",
+    "other example",
+    "other row in the frozen table",
+    "another example",
+    "different line",
+    "other person row",
+    "different person",
+    "unrelated",
+)
+_WHY = {
+    "SAME_LEMMA_FORM": "Does the answer show the governed row of the same word?",
+    "RULE_CLASSIFICATION": "Does this admitted rule classify the shown line?",
+    "FEATURE_LABEL": "Does this admitted label name the pattern of the shown line?",
+    "NUMBER_FORM": "Does the answer name the shown number from the same frozen table?",
+    "RULE_APPLICATION": "Does the answer apply the shown rule rather than another admitted rule?",
+    "FEATURE_IN_LINE": "Does the answer identify the governed form in the shown line?",
+    "COUNTED_PATTERN": "Does the answer follow the counted pattern of the shown line?",
+    "AGREEMENT_PAIR": "Does the answer agree with the shown word?",
+}
+_CUE = {
+    "SAME_LEMMA_FORM": "ru",
+    "RULE_CLASSIFICATION": "ru",
+    "FEATURE_LABEL": "ru",
+    "NUMBER_FORM": "number",
+    "RULE_APPLICATION": "rule",
+    "FEATURE_IN_LINE": "ru",
+    "COUNTED_PATTERN": "ru",
+    "AGREEMENT_PAIR": "ru",
+}
+_NUMBER_CUE = re.compile(r"[0-9][0-9,~/.\-]*")
+_ENGLISH_CUE = re.compile(r"(?i)which admitted\b.{0,80}\brecorded for\b")
 
 
-def _other(text, rationale):
-    return (text, rationale)
+def _mode_for(shown: str, answer: str) -> str:
+    shown_ru = bool(CYRILLIC.search(shown))
+    answer_ru = bool(CYRILLIC.search(answer))
+    if shown_ru and not answer_ru:
+        return "FEATURE_LABEL" if len(answer) <= 12 else "RULE_CLASSIFICATION"
+    if not shown_ru and answer_ru and _NUMBER_CUE.fullmatch(shown):
+        return "NUMBER_FORM"
+    if not shown_ru and answer_ru:
+        return "RULE_APPLICATION"
+    return "SAME_LEMMA_FORM"
+
+
+def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM", mode=None, cue=None, why=None):
+    mode = mode or _mode_for(shown, answer)
+    cue = cue or _CUE[mode]
+    why = why or _WHY[mode]
+    if _ENGLISH_CUE.search(prompt) and not CYRILLIC.search(shown):
+        if cue == "number":
+            prompt = "Which admitted form matches the shown number?"
+        else:
+            raise SystemExit(f"English-cue prompt is not a grammar check: {prompt!r} shown={shown!r}")
+    normalized = []
+    for row in distractors:
+        if len(row) == 2:
+            text, rationale = row
+            difference = rationale
+        else:
+            text, rationale, difference = row
+        token = _TOKEN[mode]
+        folded = difference.casefold()
+        if any(phrase in folded for phrase in _UNRELATED):
+            raise SystemExit(f"Distractor is unrelated for {mode} {answer!r}: {difference!r}")
+        if token not in folded:
+            difference = f"{difference} The contrast is the {token}."
+            rationale = f"{rationale} The contrast is the {token}."
+        normalized.append((text, rationale, difference))
+    return {
+        "prompt": prompt,
+        "shown": shown,
+        "answer": answer,
+        "distractors": normalized,
+        "source": source,
+        "feature": feature,
+        "mode": mode,
+        "cue": cue,
+        "why": why,
+    }
+
+
+def _other(text, rationale, difference=None):
+    return (text, rationale, difference or rationale)
 
 
 def populate(lesson, number: int) -> None:
@@ -54,20 +149,26 @@ def _unit_6(lesson) -> None:
             _field("adjectives.csv:твой", "decl_f_nom"),
         ],
         [
-            _check("Which admitted line is recorded for my table?", "my table", "мой стол", [
-                _other("моя собака", "This admitted line is the other possessive example."),
-            ]),
-            _check("Which admitted form is recorded for Our?", "Our", "Наш", [
-                _other("Ваш", "This admitted form is the other row in the frozen table."),
-            ]),
-            _check("Which admitted form is recorded for my?", "my", "моя́", [
-                _other("мо́й", "This admitted form is a different row of the same word."),
-                _other("мои́", "This admitted form is the plural row of the same word."),
-            ], O),
-            _check("Which admitted form is recorded for your?", "your", "тво́й", [
-                _other("твоя́", "This admitted form is a different row of the same word."),
-                _other("мо́й", "This admitted form belongs to a different word."),
-            ], O),
+            _check("Which admitted form agrees with the shown word?", "собака", "моя́", [
+                _other("мо́й", "This form is the other agreement row of the same word."),
+                _other("мои́", "This form is the plural row of the same word."),
+            ], O, feature="POSSESSIVE_AGREEMENT"),
+            _check("Which admitted form agrees with the shown word?", "стол", "мо́й", [
+                _other("моя́", "This form is the other agreement row of the same word."),
+            ], O, feature="POSSESSIVE_AGREEMENT"),
+            _check("Which admitted form is the object row of the shown form?", "Наш", "нашу", [
+                _other("Наш", "This form is the dictionary row of the same word, not the object row."),
+                _other("Наши", "This form is the plural row of the same word, not the object row."),
+            ], feature="POSSESSIVE_AGREEMENT"),
+            _check("Which admitted form is the other agreement row of the shown form?", "тво́й", "твоя́", [
+                _other("тво́й", "This form is the dictionary row of the same word, not the other agreement row."),
+            ], O, feature="POSSESSIVE_AGREEMENT"),
+        ],
+        extra=[
+            (gender, "my dog' ('''моя собака''')", "собака", "example"),
+            (gender, "my table' ('''мой стол''')", "стол", "example"),
+            (acc, "| Our || Наш || Нашего || нашу || Наше || Наши || Наших", "нашу", "example"),
+            (acc, "| Our || Наш || Нашего || нашу || Наше || Наши || Наших", "Наши", "example"),
         ],
     )
     decline = "These do not decline according to the gender or number of the modified noun."
@@ -87,16 +188,17 @@ def _unit_6(lesson) -> None:
             _field("others.csv:их", "accented"),
         ],
         [
-            _check("Which admitted line is recorded for I want his cat?", "I want his cat", "Я хочу его кота", [
-                _other("Я хочу его котов", "This admitted line is the other object example."),
-            ]),
-            _check("Which admitted form is recorded for his in the shown line?", "I want his cat", "его", [
-                _other("её", "This admitted form is the other third-person form."),
-                _other("их", "This admitted form is the other third-person form."),
-            ]),
-            _check("Which admitted line is recorded for I want his cats?", "I want his cats", "Я хочу его котов", [
-                _other("Я хочу его кота", "This admitted line is the other object example."),
-            ]),
+            _check("Which admitted form does the shown line use?", "Я хочу его кота", "его́", [
+                _other("её", "This form is the other third-person form, and the shown line uses another form."),
+                _other("их", "This form is the other third-person form, and the shown line uses another form."),
+            ], O, feature="THIRD_PERSON_FORM", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form does the shown line use?", "Я хочу его котов", "его́", [
+                _other("её", "This form is the other third-person form, and the shown line uses another form."),
+                _other("их", "This form is the other third-person form, and the shown line uses another form."),
+            ], O, feature="THIRD_PERSON_FORM", mode="FEATURE_IN_LINE"),
+            _check("Which admitted line keeps the same form as the shown line?", "Я хочу его кота", "Я хочу его котов", [
+                _other("Я хочу его кота", "This line repeats the shown line, not the other admitted line with the same form."),
+            ], feature="THIRD_PERSON_FORM", mode="FEATURE_IN_LINE"),
         ],
     )
     lesson.objective(
@@ -107,22 +209,23 @@ def _unit_6(lesson) -> None:
         [
             _wiki(acc, "I like dogs - '''Я люблю собак'''", "Я люблю собак", "I like dogs"),
             _wiki(acc, "I love you\" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''", "Я тебя люблю", "I love you"),
+            _wiki(acc, "I love you\" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''", "Я люблю тебя", "I love you"),
             _wiki(acc, "Dogs hate cats. - '''Собаки ненавидят котов.'''", "Собаки ненавидят котов.", "Dogs hate cats."),
             _wiki(acc, "Cats hate dogs. - '''Коты ненавидят собак.'''", "Коты ненавидят собак.", "Cats hate dogs."),
         ],
         [
-            _check("Which admitted line is recorded for I like dogs?", "I like dogs", "Я люблю собак", [
-                _other("Я тебя люблю", "This admitted line is a different object example."),
-            ]),
-            _check("Which admitted line is recorded for I love you?", "I love you", "Я тебя люблю", [
-                _other("Я люблю собак", "This admitted line is a different object example."),
-            ]),
-            _check("Which admitted line is recorded for Dogs hate cats?", "Dogs hate cats.", "Собаки ненавидят котов.", [
-                _other("Коты ненавидят собак.", "This admitted line reverses the shown pair."),
-            ]),
-            _check("Which admitted line is recorded for Cats hate dogs?", "Cats hate dogs.", "Коты ненавидят собак.", [
-                _other("Собаки ненавидят котов.", "This admitted line reverses the shown pair."),
-            ]),
+            _check("Which admitted line is the other order of the shown line?", "Я люблю тебя", "Я тебя люблю", [
+                _other("Я люблю тебя", "This line repeats the shown line, not the other order of the same words."),
+            ], feature="OBJECT_ORDER", mode="FEATURE_IN_LINE"),
+            _check("Which admitted line is the other order of the shown line?", "Я тебя люблю", "Я люблю тебя", [
+                _other("Я тебя люблю", "This line repeats the shown line, not the other order of the same words."),
+            ], feature="OBJECT_ORDER", mode="FEATURE_IN_LINE"),
+            _check("Which admitted line reverses the object of the shown line?", "Собаки ненавидят котов.", "Коты ненавидят собак.", [
+                _other("Собаки ненавидят котов.", "This line repeats the shown line, not the reversed object pair."),
+            ], feature="ACCUSATIVE_OBJECT", mode="FEATURE_IN_LINE"),
+            _check("Which admitted line reverses the object of the shown line?", "Коты ненавидят собак.", "Собаки ненавидят котов.", [
+                _other("Коты ненавидят собак.", "This line repeats the shown line, not the reversed object pair."),
+            ], feature="ACCUSATIVE_OBJECT", mode="FEATURE_IN_LINE"),
         ],
     )
     feminine = "Feminine words are the only words to have their own accusative ending:"
@@ -134,19 +237,21 @@ def _unit_6(lesson) -> None:
         [
             _field("nouns.csv:книга", "sg_nom"),
             _field("nouns.csv:книга", "sg_acc"),
+            _field("nouns.csv:мама", "sg_nom"),
             _field("nouns.csv:мама", "sg_acc"),
+            _field("nouns.csv:женщина", "sg_nom"),
             _field("nouns.csv:женщина", "sg_acc"),
         ],
         [
-            _check("Which admitted form is the object row recorded for book?", "book", "кни́гу", [
-                _other("кни́га", "This admitted form is the dictionary row, not the object row."),
-            ], O),
-            _check("Which admitted form is the object row recorded for mom?", "mom", "ма́му", [
-                _other("же́нщину", "This admitted object form belongs to a different word."),
-            ], O),
-            _check("Which admitted form is the object row recorded for woman?", "woman", "же́нщину", [
-                _other("кни́гу", "This admitted object form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the object row of the shown form?", "кни́га", "кни́гу", [
+                _other("кни́га", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="FEMININE_ACCUSATIVE"),
+            _check("Which admitted form is the object row of the shown form?", "ма́ма", "ма́му", [
+                _other("ма́ма", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="FEMININE_ACCUSATIVE"),
+            _check("Which admitted form is the object row of the shown form?", "же́нщина", "же́нщину", [
+                _other("же́нщина", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="FEMININE_ACCUSATIVE"),
         ],
     )
     animate = "If they're animated nouns, they follow the genitive rules"
@@ -156,26 +261,29 @@ def _unit_6(lesson) -> None:
         "CONTRAST_SELECTION",
         (acc, animate, animate),
         [
+            _field("nouns.csv:стол", "sg_nom"),
             _field("nouns.csv:стол", "sg_acc"),
+            _field("nouns.csv:дом", "sg_nom"),
             _field("nouns.csv:дом", "sg_acc"),
             _field("nouns.csv:брат", "sg_nom"),
             _field("nouns.csv:брат", "sg_acc"),
             _field("nouns.csv:учитель", "sg_acc"),
+            _field("nouns.csv:друг", "sg_nom"),
             _field("nouns.csv:друг", "sg_acc"),
         ],
         [
-            _check("Which admitted form is the object row recorded for brother?", "brother", "бра́та", [
-                _other("брат", "This admitted form is the dictionary row, not the object row."),
-            ], O),
-            _check("Which admitted form is the object row recorded for table?", "table", "сто́л", [
-                _other("бра́та", "This admitted form is the object row of a different word."),
-            ], O),
-            _check("Which admitted form is the object row recorded for teacher?", "teacher", "учи́теля", [
-                _other("дру́га", "This admitted object form belongs to a different word."),
-            ], O),
-            _check("Which admitted form is the object row recorded for friend?", "friend", "дру́га", [
-                _other("бра́та", "This admitted object form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the object row of the shown form?", "брат", "бра́та", [
+                _other("брат", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="ANIMACY"),
+            _check("Which admitted form is the inanimate object row of the shown form?", "сто́л", "сто́л", [
+                _other("бра́та", "This form is the animate object row, and the shown word keeps its own object row."),
+            ], O, feature="ANIMACY", mode="AGREEMENT_PAIR"),
+            _check("Which admitted form is the object row of the shown form?", "друг", "дру́га", [
+                _other("друг", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="ANIMACY"),
+            _check("Which admitted form is the inanimate object row of the shown form?", "до́м", "до́м", [
+                _other("учи́теля", "This form is the animate object row, and the shown word keeps its own object row."),
+            ], O, feature="ANIMACY", mode="AGREEMENT_PAIR"),
         ],
         extra=[(acc, "So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case.", "So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case.", "instruction")],
     )
@@ -194,18 +302,24 @@ def _unit_6(lesson) -> None:
             _wiki(acc, "| They/them || Они || Их", "Их", "They/them"),
         ],
         [
-            _check("Which admitted form is recorded for I/me?", "I/me", "Меня", [
-                _other("Нас", "This admitted form is the other person row."),
-            ]),
-            _check("Which admitted form is recorded for We/us?", "We/us", "Нас", [
-                _other("Меня", "This admitted form is the other person row."),
-            ]),
-            _check("Which admitted form is recorded for She/her?", "She/her", "Её", [
-                _other("Его", "This admitted form is the other person row."),
-            ]),
-            _check("Which admitted form is recorded for They/them?", "They/them", "Их", [
-                _other("Вас", "This admitted form is a different person row."),
-            ]),
+            _check("Which admitted form is the object row of the shown form?", "Я", "Меня", [
+                _other("Нас", "This form is not the object row of the shown line."),
+            ], feature="PERSONAL_OBJECT_CASE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the object row of the shown form?", "Мы", "Нас", [
+                _other("Меня", "This form is not the object row of the shown line."),
+            ], feature="PERSONAL_OBJECT_CASE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the object row of the shown form?", "Она", "Её", [
+                _other("Его", "This form is not the object row of the shown line."),
+            ], feature="PERSONAL_OBJECT_CASE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the object row of the shown form?", "Они", "Их", [
+                _other("Вас", "This form is not the object row of the shown line."),
+            ], feature="PERSONAL_OBJECT_CASE", mode="FEATURE_IN_LINE"),
+        ],
+        extra=[
+            (acc, "| I/me || Я || Меня", "Я", "example"),
+            (acc, "| We/us || Мы || Нас", "Мы", "example"),
+            (acc, "| She/her || Она || Её", "Она", "example"),
+            (acc, "| They/them || Они || Их", "Они", "example"),
         ],
     )
     direction = "generally the accusative case denotes ''direction''"
@@ -222,18 +336,18 @@ def _unit_6(lesson) -> None:
             _wiki(acc, "I drove to the museum. - '''Я поехал в музей.'''", "Я поехал в музей.", "I drove to the museum."),
         ],
         [
-            _check("Which admitted function word is recorded for the shown line?", "Я шёл в дом", "direction", [
-                _other("location", "This admitted word is the function recorded for the location line."),
-            ]),
-            _check("Which admitted function word is recorded for the shown line?", "Я жил в Лондоне", "location", [
-                _other("direction", "This admitted word is the function recorded for the direction line."),
-            ]),
-            _check("Which admitted function word is recorded for the shown line?", "Я шёл на улицу", "direction", [
-                _other("location", "This admitted word is the function recorded for the location line."),
-            ]),
-            _check("Which admitted function word is recorded for the shown line?", "Оно на столе", "location", [
-                _other("direction", "This admitted word is the function recorded for the direction line."),
-            ]),
+            _check("Which admitted function does the shown line use?", "Я шёл в дом", "direction", [
+                _other("location", "This label names the other pattern, not the pattern of the shown line."),
+            ], feature="DIRECTION_LOCATION"),
+            _check("Which admitted function does the shown line use?", "Я жил в Лондоне", "location", [
+                _other("direction", "This label names the other pattern, not the pattern of the shown line."),
+            ], feature="DIRECTION_LOCATION"),
+            _check("Which admitted function does the shown line use?", "Я шёл на улицу", "direction", [
+                _other("location", "This label names the other pattern, not the pattern of the shown line."),
+            ], feature="DIRECTION_LOCATION"),
+            _check("Which admitted function does the shown line use?", "Оно на столе", "location", [
+                _other("direction", "This label names the other pattern, not the pattern of the shown line."),
+            ], feature="DIRECTION_LOCATION"),
         ],
         extra=[
             (acc, direction, "direction", "pattern"),
@@ -252,23 +366,32 @@ def _unit_7(lesson) -> None:
         (adj, default, default),
         [
             _field("adjectives.csv:новый", "decl_m_nom"),
+            _field("adjectives.csv:новый", "decl_f_nom"),
+            _field("adjectives.csv:новый", "decl_n_nom"),
+            _field("adjectives.csv:новый", "decl_pl_nom"),
             _field("adjectives.csv:хороший", "decl_m_nom"),
+            _field("adjectives.csv:хороший", "decl_f_nom"),
             _field("adjectives.csv:синий", "decl_m_nom"),
+            _field("adjectives.csv:синий", "decl_f_nom"),
             _field("adjectives.csv:какой", "decl_m_nom"),
+            _field("adjectives.csv:какой", "decl_f_nom"),
         ],
         [
-            _check("Which admitted dictionary form is recorded for new?", "new", "но́вый", [
-                _other("хоро́ший", "This admitted dictionary form belongs to a different word."),
-            ], O),
-            _check("Which admitted dictionary form is recorded for good?", "good", "хоро́ший", [
-                _other("си́ний", "This admitted dictionary form belongs to a different word."),
-            ], O),
-            _check("Which admitted dictionary form is recorded for dark blue?", "dark blue", "си́ний", [
-                _other("како́й", "This admitted dictionary form belongs to a different word."),
-            ], O),
-            _check("Which admitted dictionary form is recorded for what kind of?", "what kind of", "како́й", [
-                _other("но́вый", "This admitted dictionary form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the dictionary row of the shown form?", "но́вая", "но́вый", [
+                _other("но́вая", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="ADJECTIVE_DICTIONARY"),
+            _check("Which admitted form is the dictionary row of the shown form?", "но́вое", "но́вый", [
+                _other("но́вое", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="ADJECTIVE_DICTIONARY"),
+            _check("Which admitted form is the dictionary row of the shown form?", "хоро́шая", "хоро́ший", [
+                _other("хоро́шая", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="ADJECTIVE_DICTIONARY"),
+            _check("Which admitted form is the dictionary row of the shown form?", "си́няя", "си́ний", [
+                _other("си́няя", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="ADJECTIVE_DICTIONARY"),
+            _check("Which admitted form is the dictionary row of the shown form?", "кака́я", "како́й", [
+                _other("кака́я", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="ADJECTIVE_DICTIONARY"),
         ],
     )
     lesson.objective(
@@ -284,27 +407,35 @@ def _unit_7(lesson) -> None:
             _wiki(adj, "the dark blue book - '''синяя книга'''", "синяя книга", "the dark blue book"),
             _wiki(adj, "the dark blue letter - '''синее письмо'''", "синее письмо", "the dark blue letter"),
             _wiki(adj, "the dark blue books - '''синие книги'''", "синие книги", "the dark blue books"),
+            _field("adjectives.csv:новый", "decl_m_nom"),
             _field("adjectives.csv:новый", "decl_f_nom"),
             _field("adjectives.csv:новый", "decl_n_nom"),
             _field("adjectives.csv:новый", "decl_pl_nom"),
         ],
         [
-            _check("Which admitted line is recorded for new pencil?", "new pencil", "новый карандаш", [
-                _other("новая машина", "This admitted line is a different agreement example."),
-            ]),
-            _check("Which admitted line is recorded for new car?", "new car", "новая машина", [
-                _other("новое платье", "This admitted line is a different agreement example."),
-            ]),
-            _check("Which admitted line is recorded for new dress?", "new dress", "новое платье", [
-                _other("новый карандаш", "This admitted line is a different agreement example."),
-            ]),
-            _check("Which admitted line is recorded for the dark blue books?", "the dark blue books", "синие книги", [
-                _other("синяя книга", "This admitted line is the singular book example."),
-            ]),
-            _check("Which admitted form is recorded for new beside the car line?", "new", "но́вая", [
-                _other("но́вый", "This admitted form is a different row of the same word."),
-                _other("но́вые", "This admitted form is the plural row of the same word."),
-            ], O),
+            _check("Which admitted line agrees with the shown word?", "карандаш", "новый карандаш", [
+                _other("новая машина", "This line agrees with another word, not the shown word."),
+            ], feature="ADJECTIVE_AGREEMENT", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "машина", "новая машина", [
+                _other("новое платье", "This line agrees with another word, not the shown word."),
+            ], feature="ADJECTIVE_AGREEMENT", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "платье", "новое платье", [
+                _other("новый карандаш", "This line agrees with another word, not the shown word."),
+            ], feature="ADJECTIVE_AGREEMENT", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "книги", "синие книги", [
+                _other("синяя книга", "This line is the singular row, not the plural row of the shown word."),
+            ], feature="ADJECTIVE_AGREEMENT", mode="AGREEMENT_PAIR"),
+            _check("Which admitted form agrees with the shown word?", "машина", "но́вая", [
+                _other("но́вый", "This form is the other row of the same word, not the row of the shown word."),
+                _other("но́вые", "This form is the plural row of the same word, not the row of the shown word."),
+            ], O, feature="ADJECTIVE_AGREEMENT", mode="AGREEMENT_PAIR"),
+        ],
+        extra=[
+            (adj, '"new pencil" is \'\'\'новый карандаш\'\'\'', "карандаш", "example"),
+            (adj, '"new car" is \'\'\'новая машина\'\'\'', "машина", "example"),
+            (adj, '"new dress" is \'\'\'новое платье\'\'\'', "платье", "example"),
+            (adj, "the dark blue books - '''синие книги'''", "книги", "example"),
+            (adj, "the dark blue book - '''синяя книга'''", "книга", "example"),
         ],
     )
     spelling = "any unstressed '''o''' in an ending is instead written as '''e'''"
@@ -319,18 +450,18 @@ def _unit_7(lesson) -> None:
             _field("adjectives.csv:хороший", "decl_pl_nom"),
         ],
         [
-            _check("Which admitted spelling is written in the shown line?", "хорошее письмо", "e", [
-                _other("и", "This admitted spelling belongs to the other frozen spelling line."),
-            ]),
-            _check("Which admitted spelling does the frozen line say to add?", "хоро́шие", "и", [
-                _other("ы", "This admitted spelling is the one the frozen line says not to add."),
-            ]),
-            _check("Which admitted line is recorded for good letter?", "good letter", "хорошее письмо", [
-                _other("хоро́шее", "This admitted form is the dictionary cell, not the full example line."),
-            ]),
-            _check("Which admitted plural spelling row is recorded for good?", "good", "хоро́шие", [
-                _other("хоро́шее", "This admitted form is a different row of the same word."),
-            ], O),
+            _check("Which admitted spelling does the shown line use?", "хорошее письмо", "e", [
+                _other("и", "This spelling is the other frozen spelling, not the spelling of the shown line."),
+            ], feature="ADJECTIVE_SPELLING"),
+            _check("Which admitted spelling does the shown line use?", "хоро́шие", "и", [
+                _other("ы", "This spelling is the one the frozen line says not to add, not the spelling of the shown line."),
+            ], feature="ADJECTIVE_SPELLING"),
+            _check("Which admitted form is the plural row of the shown form?", "хоро́шее", "хоро́шие", [
+                _other("хоро́шее", "This form is the other row of the same word, not the plural row."),
+            ], O, feature="ADJECTIVE_SPELLING"),
+            _check("Which admitted line shows the spelling of the shown form?", "хоро́шее", "хорошее письмо", [
+                _other("хоро́шие", "This form is the plural row of the same word, not the spelling of the shown line."),
+            ], feature="ADJECTIVE_SPELLING", mode="FEATURE_IN_LINE"),
         ],
         extra=[
             (adj, spelling, "e", "pattern"),
@@ -350,18 +481,18 @@ def _unit_7(lesson) -> None:
             _field("adjectives.csv:какой", "decl_pl_nom"),
         ],
         [
-            _check("Which admitted form is the plural row recorded for what kind of?", "what kind of", "каки́е", [
-                _other("кака́я", "This admitted form is a different row of the same word."),
-            ], O),
-            _check("Which admitted form is the other singular row recorded for what kind of?", "what kind of", "како́е", [
-                _other("како́й", "This admitted form is the dictionary row, not the other singular row."),
-            ], O),
-            _check("Which admitted form is recorded beside the dictionary row for what kind of?", "what kind of", "кака́я", [
-                _other("каки́е", "This admitted form is the plural row of the same word."),
-            ], O),
-            _check("Which admitted dictionary form is recorded for what kind of?", "what kind of", "како́й", [
-                _other("како́е", "This admitted form is a different row of the same word."),
-            ], O),
+            _check("Which admitted form is the plural row of the shown form?", "како́й", "каки́е", [
+                _other("кака́я", "This form is the other row of the same word, not the plural row."),
+            ], O, feature="QUESTION_AGREEMENT"),
+            _check("Which admitted form is the other singular row of the shown form?", "како́й", "како́е", [
+                _other("како́й", "This form is the dictionary row of the same word, not the other singular row."),
+            ], O, feature="QUESTION_AGREEMENT"),
+            _check("Which admitted form is the other singular row of the shown form?", "како́й", "кака́я", [
+                _other("каки́е", "This form is the plural row of the same word, not the other singular row."),
+            ], O, feature="QUESTION_AGREEMENT"),
+            _check("Which admitted form is the dictionary row of the shown form?", "кака́я", "како́й", [
+                _other("како́е", "This form is the other row of the same word, not the dictionary row."),
+            ], O, feature="QUESTION_AGREEMENT"),
         ],
     )
     students = "these good new students\" is '''эти хорошие новые студенты'''"
@@ -378,18 +509,18 @@ def _unit_7(lesson) -> None:
             _field("adjectives.csv:этот", "decl_f_acc"),
         ],
         [
-            _check("Which admitted line is recorded for these good new students?", "these good new students", "эти хорошие новые студенты", [
-                _other("э́ти", "This admitted form is the dictionary cell, not the full example line."),
-            ]),
-            _check("Which admitted form is the object row recorded for this?", "this", "э́ту", [
-                _other("э́та", "This admitted form is a different row of the same word."),
-            ], O),
-            _check("Which admitted form is the plural row recorded for this?", "this", "э́ти", [
-                _other("э́то", "This admitted form is a different row of the same word."),
-            ], O),
-            _check("Which admitted form is the other singular row recorded for this?", "this", "э́та", [
-                _other("э́ту", "This admitted form is the object row of the same word."),
-            ], O),
+            _check("Which admitted form does the shown line use?", "эти хорошие новые студенты", "э́ти", [
+                _other("э́та", "This form is the other row of the same word, and the shown line uses another row."),
+            ], O, feature="DEMONSTRATIVE_AGREEMENT", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the object row of the shown form?", "э́та", "э́ту", [
+                _other("э́та", "This form is the other row of the same word, not the object row."),
+            ], O, feature="DEMONSTRATIVE_AGREEMENT"),
+            _check("Which admitted form is the plural row of the shown form?", "э́то", "э́ти", [
+                _other("э́то", "This form is the other row of the same word, not the plural row."),
+            ], O, feature="DEMONSTRATIVE_AGREEMENT"),
+            _check("Which admitted form is the other singular row of the shown form?", "э́ту", "э́та", [
+                _other("э́ту", "This form is the object row of the same word, not the other singular row."),
+            ], O, feature="DEMONSTRATIVE_AGREEMENT"),
         ],
     )
     cinema = "They were talking about a good new cinema' - '''Они говорили о хорошем новом кино'''"
@@ -402,22 +533,25 @@ def _unit_7(lesson) -> None:
             _wiki(adj, cinema, "Они говорили о хорошем новом кино", "They were talking about a good new cinema"),
             _wiki(adj, "They were in the old Russian school' - '''Они были в старой русской школе'''", "Они были в старой русской школе", "They were in the old Russian school"),
             _wiki(adj, "I want to live in a clean new city - '''Я хочу́ жить в чи́стом но́вом го́роде'''", "Я хочу́ жить в чи́стом но́вом го́роде", "I want to live in a clean new city"),
+            _field("adjectives.csv:новый", "decl_m_nom"),
             _field("adjectives.csv:новый", "decl_m_prep"),
+            _field("adjectives.csv:новый", "decl_f_acc"),
+            _field("adjectives.csv:хороший", "decl_m_nom"),
             _field("adjectives.csv:хороший", "decl_m_prep"),
         ],
         [
-            _check("Which admitted line is recorded for the cinema example?", "They were talking about a good new cinema", "Они говорили о хорошем новом кино", [
-                _other("Они были в старой русской школе", "This admitted line is the school example."),
-            ]),
-            _check("Which admitted line is recorded for the school example?", "They were in the old Russian school", "Они были в старой русской школе", [
-                _other("Я хочу́ жить в чи́стом но́вом го́роде", "This admitted line is the city example."),
-            ]),
-            _check("Which admitted form is the place row recorded for new?", "new", "но́вом", [
-                _other("хоро́шем", "This admitted place row belongs to a different word."),
-            ], O),
-            _check("Which admitted line is recorded for the city example?", "I want to live in a clean new city", "Я хочу́ жить в чи́стом но́вом го́роде", [
-                _other("Они говорили о хорошем новом кино", "This admitted line is the cinema example."),
-            ]),
+            _check("Which admitted form is the place row of the shown form?", "но́вый", "но́вом", [
+                _other("но́вую", "This form is the object row of the same word, not the place row."),
+            ], O, feature="PLACE_AGREEMENT"),
+            _check("Which admitted form does the shown line use?", "Я хочу́ жить в чи́стом но́вом го́роде", "но́вом", [
+                _other("но́вый", "This form is the dictionary row of the same word, and the shown line uses the place row."),
+            ], O, feature="PLACE_AGREEMENT", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the place row of the shown form?", "хоро́ший", "хоро́шем", [
+                _other("хоро́ший", "This form is the dictionary row of the same word, not the place row."),
+            ], O, feature="PLACE_AGREEMENT"),
+            _check("Which admitted form does the shown line use?", "Они были в старой русской школе", "Они были в старой русской школе", [
+                _other("Я хочу́ жить в чи́стом но́вом го́роде", "This line is another place line, not the shown line."),
+            ], feature="PLACE_AGREEMENT", mode="FEATURE_IN_LINE"),
         ],
     )
     rabbit = "I want a new rabbit - '''Я хочу нового кролика.'''"
@@ -431,21 +565,23 @@ def _unit_7(lesson) -> None:
             _wiki(adj, rabbit, "Я хочу нового кролика.", "I want a new rabbit"),
             _wiki(adj, "My Russian cat likes my new dog - '''Моя русская кошка любит мою новую собаку'''", "Моя русская кошка любит мою новую собаку", "My Russian cat likes my new dog"),
             _wiki("accusative", "I like these women. - '''Я люблю ''этих женщин.'''", "этих женщин", "I like these women."),
+            _field("adjectives.csv:новый", "decl_m_nom"),
+            _field("adjectives.csv:новый", "decl_m_gen"),
             _field("adjectives.csv:новый", "decl_f_acc"),
         ],
         [
-            _check("Which admitted line is recorded for a new rabbit?", "I want a new rabbit", "Я хочу нового кролика.", [
-                _other("Я хочу новый стул и новое письмо", "This admitted line is the chair-and-letter example."),
-            ]),
-            _check("Which admitted line is recorded for a new chair and a new letter?", "I want a new chair and a new letter", "Я хочу новый стул и новое письмо", [
-                _other("Я хочу нового кролика.", "This admitted line is the rabbit example."),
-            ]),
-            _check("Which admitted line is recorded for I like these women?", "I like these women.", "этих женщин", [
-                _other("Моя русская кошка любит мою новую собаку", "This admitted line is a different object example."),
-            ]),
-            _check("Which admitted form is the object row recorded for new?", "new", "но́вую", [
-                _other("но́вый", "This admitted form is a different row of the same word."),
-            ], O),
+            _check("Which admitted form is the animate object row of the shown form?", "но́вый", "но́вого", [
+                _other("но́вую", "This form is the other object row of the same word, not the animate object row."),
+            ], O, feature="OBJECT_ADJECTIVE"),
+            _check("Which admitted line uses the animate object row of the shown form?", "но́вого", "Я хочу нового кролика.", [
+                _other("Я хочу новый стул и новое письмо", "This line uses another object row, not the shown word."),
+            ], feature="OBJECT_ADJECTIVE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line uses the object row of the shown form?", "но́вую", "Моя русская кошка любит мою новую собаку", [
+                _other("Я хочу нового кролика.", "This line uses the animate object row, not the shown word."),
+            ], feature="OBJECT_ADJECTIVE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted form is the object row of the shown form?", "но́вый", "но́вую", [
+                _other("но́вый", "This form is the dictionary row of the same word, not the object row."),
+            ], O, feature="OBJECT_ADJECTIVE"),
         ],
     )
 
@@ -459,33 +595,43 @@ def _unit_8(lesson) -> None:
         "FORM_SELECTION",
         (gender, plural, plural),
         [
+            _field("nouns.csv:стол", "sg_nom"),
             _field("nouns.csv:стол", "pl_nom"),
+            _field("nouns.csv:город", "sg_nom"),
             _field("nouns.csv:город", "pl_nom"),
+            _field("nouns.csv:книга", "sg_nom"),
             _field("nouns.csv:книга", "pl_nom"),
+            _field("nouns.csv:окно", "sg_nom"),
             _field("nouns.csv:окно", "pl_nom"),
+            _field("nouns.csv:мама", "sg_nom"),
             _field("nouns.csv:мама", "pl_nom"),
+            _field("nouns.csv:дом", "sg_nom"),
             _field("nouns.csv:дом", "pl_nom"),
+            _field("nouns.csv:слово", "sg_nom"),
             _field("nouns.csv:слово", "pl_nom"),
         ],
         [
-            _check("Which admitted plural form is recorded for table?", "table", "столы́", [
-                _other("кни́ги", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for town?", "town", "города́", [
-                _other("дома́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for window?", "window", "о́кна", [
-                _other("слова́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for mom?", "mom", "ма́мы", [
-                _other("кни́ги", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for house?", "house", "дома́", [
-                _other("столы́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for word?", "word", "слова́", [
-                _other("о́кна", "This admitted plural form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the plural row of the shown form?", "сто́л", "столы́", [
+                _other("сто́л", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "го́род", "города́", [
+                _other("го́род", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "окно́", "о́кна", [
+                _other("окно́", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "ма́ма", "ма́мы", [
+                _other("ма́ма", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "до́м", "дома́", [
+                _other("до́м", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "сло́во", "слова́", [
+                _other("сло́во", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
+            _check("Which admitted form is the plural row of the shown form?", "кни́га", "кни́ги", [
+                _other("кни́га", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_FORMATION"),
         ],
     )
     add_i = "you add '''и''', not '''ы'''"
@@ -497,27 +643,30 @@ def _unit_8(lesson) -> None:
         [
             _wiki("adjectives", "good letter' is written '''хорошее письмо'''", "хорошее письмо", "good letter"),
             _field("adjectives.csv:хороший", "decl_pl_nom"),
+            _field("nouns.csv:книга", "sg_nom"),
             _field("nouns.csv:книга", "pl_nom"),
             _field("nouns.csv:день", "pl_nom"),
+            _field("adjectives.csv:хороший", "decl_n_nom"),
         ],
         [
-            _check("Which admitted spelling does the frozen line say to add?", "хоро́шие", "и", [
-                _other("ы", "This admitted spelling is the one the frozen line says not to add."),
-            ]),
-            _check("Which admitted plural form is recorded for book?", "book", "кни́ги", [
-                _other("дни", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for day?", "day", "дни", [
-                _other("кни́ги", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted line is recorded for good letter?", "good letter", "хорошее письмо", [
-                _other("дни", "This admitted plural form belongs to a different word."),
-            ]),
-            _check("Which admitted plural form is recorded for good?", "good", "хоро́шие", [
-                _other("кни́ги", "This admitted plural form belongs to a different word."),
-            ], O),
+            _check("Which admitted spelling does the shown line use?", "хоро́шие", "и", [
+                _other("ы", "This spelling is the one the frozen line says not to add, not the spelling of the shown line."),
+            ], feature="PLURAL_SPELLING"),
+            _check("Which admitted form is the plural row of the shown form?", "кни́га", "кни́ги", [
+                _other("кни́га", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_SPELLING"),
+            _check("Which admitted spelling does the shown line use?", "кни́ги", "и", [
+                _other("ы", "This spelling is the other spelling, not the spelling of the shown line."),
+            ], feature="PLURAL_SPELLING"),
+            _check("Which admitted spelling does the shown line use?", "хорошее письмо", "e", [
+                _other("и", "This spelling is the other spelling, not the spelling of the shown line."),
+            ], feature="PLURAL_SPELLING"),
+            _check("Which admitted form is the plural row of the shown form?", "хоро́шее", "хоро́шие", [
+                _other("хоро́шее", "This form is the other row of the same word, not the plural row."),
+            ], O, feature="PLURAL_SPELLING"),
         ],
         extra=[
+            ("adjectives", "any unstressed '''o''' in an ending is instead written as '''e'''", "e", "pattern"),
             ("adjectives", add_i, "и", "pattern"),
             ("adjectives", add_i, "ы", "pattern"),
         ],
@@ -529,24 +678,28 @@ def _unit_8(lesson) -> None:
         ("genitive", "Table, five tables - '''Стол, пять столов'''", "Table, five tables - '''Стол, пять столов'''"),
         [
             _wiki("genitive", "Table, five tables - '''Стол, пять столов'''", "пять столов", "five tables"),
+            _field("nouns.csv:брат", "sg_nom"),
             _field("nouns.csv:брат", "pl_nom"),
+            _field("nouns.csv:друг", "sg_nom"),
             _field("nouns.csv:друг", "pl_nom"),
+            _field("nouns.csv:человек", "sg_nom"),
             _field("nouns.csv:человек", "pl_nom"),
+            _field("nouns.csv:сын", "sg_nom"),
             _field("nouns.csv:сын", "pl_nom"),
         ],
         [
-            _check("Which admitted plural form is recorded for brother?", "brother", "бра́тья", [
-                _other("друзья́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted plural form is recorded for person?", "person", "лю́ди", [
-                _other("сыновья́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted line is recorded for five tables?", "five tables", "пять столов", [
-                _other("друзья́", "This admitted plural form belongs to a different word."),
-            ]),
-            _check("Which admitted plural form is recorded for friend?", "friend", "друзья́", [
-                _other("бра́тья", "This admitted plural form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the plural row of the shown form?", "брат", "бра́тья", [
+                _other("брат", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="IRREGULAR_PLURAL"),
+            _check("Which admitted form is the plural row of the shown form?", "челове́к", "лю́ди", [
+                _other("челове́к", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="IRREGULAR_PLURAL"),
+            _check("Which admitted form is the plural row of the shown form?", "друг", "друзья́", [
+                _other("друг", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="IRREGULAR_PLURAL"),
+            _check("Which admitted form is the plural row of the shown form?", "сы́н", "сыновья́", [
+                _other("сы́н", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="IRREGULAR_PLURAL"),
         ],
     )
     lesson.objective(
@@ -557,23 +710,26 @@ def _unit_8(lesson) -> None:
         [
             _wiki("adjectives", "the dark blue books - '''синие книги'''", "синие книги", "the dark blue books"),
             _wiki("accusative", "| Our || Наш || Нашего || нашу || Наше || Наши || Наших", "Наши", "Our"),
+            _field("adjectives.csv:мой", "decl_m_nom"),
             _field("adjectives.csv:мой", "decl_pl_nom"),
+            _field("adjectives.csv:новый", "decl_m_nom"),
             _field("adjectives.csv:новый", "decl_pl_nom"),
+            _field("adjectives.csv:этот", "decl_f_nom"),
             _field("adjectives.csv:этот", "decl_pl_nom"),
         ],
         [
-            _check("Which admitted line is recorded for the dark blue books?", "the dark blue books", "синие книги", [
-                _other("Наши", "This admitted form is a different plural row."),
-            ]),
-            _check("Which admitted form is the plural row recorded for my?", "my", "мои́", [
-                _other("но́вые", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted form is the plural row recorded for this?", "this", "э́ти", [
-                _other("мои́", "This admitted plural form belongs to a different word."),
-            ], O),
-            _check("Which admitted form is the plural row recorded for new?", "new", "но́вые", [
-                _other("э́ти", "This admitted plural form belongs to a different word."),
-            ], O),
+            _check("Which admitted form does the shown line use?", "синие книги", "синие книги", [
+                _other("Наши", "This form is another plural row, not the form in the shown line."),
+            ], feature="PLURAL_AGREEMENT", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the plural row of the shown form?", "мо́й", "мои́", [
+                _other("мо́й", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_AGREEMENT"),
+            _check("Which admitted form is the plural row of the shown form?", "э́та", "э́ти", [
+                _other("э́та", "This form is the other row of the same word, not the plural row."),
+            ], O, feature="PLURAL_AGREEMENT"),
+            _check("Which admitted form is the plural row of the shown form?", "но́вый", "но́вые", [
+                _other("но́вый", "This form is the dictionary row of the same word, not the plural row."),
+            ], O, feature="PLURAL_AGREEMENT"),
         ],
     )
     absent = "There are no restaurants - '''Нет рестора́нов'''"
@@ -588,20 +744,21 @@ def _unit_8(lesson) -> None:
             _wiki("genitive", "This is David's house - '''Э́то - дом Дэвида'''", "Э́то - дом Дэвида", "This is David's house"),
             _wiki("genitive", absent, "Нет рестора́нов", "There are no restaurants"),
             _field("others.csv:есть", "accented"),
+            _field("others.csv:нет", "accented"),
         ],
         [
-            _check("Which admitted line is recorded for There are no restaurants?", "There are no restaurants", "Нет рестора́нов", [
-                _other("На э́той у́лице есть францу́зы", "This admitted line is an existence example."),
-            ]),
-            _check("Which admitted line is recorded for There are Frenchmen on this street?", "There are Frenchmen on this street", "На э́той у́лице есть францу́зы", [
-                _other("Нет рестора́нов", "This admitted line is the absence example."),
-            ]),
-            _check("Which admitted line is recorded for This is David's house?", "This is David's house", "Э́то - дом Дэвида", [
-                _other("В Москве́ есть ста́рые зда́ния", "This admitted line is a different existence example."),
-            ]),
-            _check("Which admitted line is recorded for There are old buildings in Moscow?", "There are old buildings in Moscow", "В Москве́ есть ста́рые зда́ния", [
-                _other("Нет рестора́нов", "This admitted line is the absence example."),
-            ]),
+            _check("Which admitted word does the shown line use?", "Нет рестора́нов", "нет", [
+                _other("есть", "This word is the existence word, not the word in the shown line."),
+            ], O, feature="EXISTENCE_ABSENCE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted word does the shown line use?", "На э́той у́лице есть францу́зы", "есть", [
+                _other("нет", "This word is the absence word, not the word in the shown line."),
+            ], O, feature="EXISTENCE_ABSENCE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted word does the shown line use?", "В Москве́ есть ста́рые зда́ния", "есть", [
+                _other("нет", "This word is the absence word, not the word in the shown line."),
+            ], O, feature="EXISTENCE_ABSENCE", mode="FEATURE_IN_LINE"),
+            _check("Which admitted line uses the shown word?", "нет", "Нет рестора́нов", [
+                _other("На э́той у́лице есть францу́зы", "This line uses the existence word, not the shown word."),
+            ], feature="EXISTENCE_ABSENCE", mode="AGREEMENT_PAIR"),
         ],
     )
 
@@ -734,21 +891,21 @@ def _unit_9(lesson) -> None:
             _wiki("numbers", band_5, "пять ~ де́вять ты́сяч", "5,000 ~ 9,000"),
         ],
         [
-            _check("Which admitted form is recorded for 21?", "21", "два́дцать оди́н", [
+            _check("Which admitted form matches the shown number?", "21", "два́дцать оди́н", [
                 _other("два́дцать", "This admitted form is only the ten, not the composed number."),
-            ]),
-            _check("Which admitted form is recorded for 101?", "101", "сто оди́н", [
-                _other("сто", "This admitted form is only the hundred, not the composed number."),
-            ]),
-            _check("Which admitted form is recorded for 215?", "215", "две́сти пятна́дцать", [
+            ], feature="COMPOUND_21"),
+            _check("Which admitted form is the composition of the shown form?", "сто", "сто оди́н", [
+                _other("сто", "This form is only the hundred, not the composed pattern of the shown form."),
+            ], feature="HUNDREDS_COMPOSITION", mode="COUNTED_PATTERN"),
+            _check("Which admitted form matches the shown number?", "215", "две́сти пятна́дцать", [
                 _other("две́сти", "This admitted form is only the hundred, not the composed number."),
-            ]),
-            _check("Which admitted form is recorded for 1,984?", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре", [
+            ], feature="HUNDREDS_COMPOSITION"),
+            _check("Which admitted form matches the shown number?", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре", [
                 _other("ты́сяча", "This admitted form is only the thousand, not the composed number."),
-            ]),
-            _check("Which admitted form is recorded for 2,000/3,000/4,000?", "2,000/3,000/4,000", "две/три/четы́ре ты́сячи", [
+            ], feature="THOUSANDS_COMPOSITION"),
+            _check("Which admitted form matches the shown number?", "2,000/3,000/4,000", "две/три/четы́ре ты́сячи", [
                 _other("пять ~ де́вять ты́сяч", "This admitted form is the other thousands band."),
-            ]),
+            ], feature="THOUSANDS_COMPOSITION"),
         ],
         extra=[
             ("numbers", "20 два́дцать", "два́дцать", "example"),
@@ -775,18 +932,30 @@ def _unit_9(lesson) -> None:
             _field("others.csv:два", "accented"),
         ],
         [
-            _check("Which admitted line is recorded for one boy?", "one boy", "один мальчик", [
-                _other("одна девушка", "This admitted line is the other one-item example."),
-            ]),
-            _check("Which admitted line is recorded for one girl?", "one girl", "одна девушка", [
-                _other("одно животное", "This admitted line is the other one-item example."),
-            ]),
-            _check("Which admitted line is recorded for one animal?", "one animal", "одно животное", [
-                _other("одни джинсы", "This admitted line is the other one-item example."),
-            ]),
-            _check("Which admitted form is recorded for the other form of two?", "2", "две", [
-                _other("два", "This admitted form is the other form on the same frozen line."),
-            ]),
+            _check("Which admitted line agrees with the shown word?", "джинсы", "одни джинсы", [
+                _other("один мальчик", "This line agrees with another word, not the shown word."),
+            ], feature="ODIN_PLURAL", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "мальчик", "один мальчик", [
+                _other("одна девушка", "This line agrees with another word, not the shown word."),
+            ], feature="ODIN_MASCULINE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "девушка", "одна девушка", [
+                _other("один мальчик", "This line agrees with another word, not the shown word."),
+            ], feature="ODIN_FEMININE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "животное", "одно животное", [
+                _other("одни джинсы", "This line agrees with another word, not the shown word."),
+            ], feature="ODIN_NEUTER", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "джинсы", "одни джинсы", [
+                _other("одно животное", "This line agrees with another word, not the shown word."),
+            ], feature="ODIN_PLURAL", mode="AGREEMENT_PAIR"),
+            _check("Which admitted form agrees with the shown word?", "девушка", "две", [
+                _other("два", "This form is the other agreement row of the same word, not the row of the shown word."),
+            ], feature="DVA_DVE", mode="AGREEMENT_PAIR"),
+        ],
+        extra=[
+            ("numbers", "один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)", "мальчик", "example"),
+            ("numbers", "один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)", "девушка", "example"),
+            ("numbers", "один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)", "животное", "example"),
+            ("numbers", "один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)", "джинсы", "example"),
         ],
     )
     rule_scope = "If the item needs to be in the nominative or inanimate accusative case, use the following rule."
@@ -811,6 +980,7 @@ def _unit_9(lesson) -> None:
             _wiki("numbers", "две девушки (two girls)", "две девушки", "two girls"),
             _wiki("numbers", "пять девушек (five girls)", "пять девушек", "five girls"),
             _wiki("numbers", "шестнадцать рублей (sixteen rubles)", "шестнадцать рублей", "sixteen rubles"),
+            _wiki("numbers", "десять копеек (ten kopeks)", "десять копеек", "ten kopeks"),
             _wiki("numbers", "сорок один год (forty-one years)", "сорок один год", "forty-one years"),
             _wiki("numbers", "пять лет", "пять лет", "пять лет"),
             _wiki("numbers", "двести три собаки (two hundred and three dogs)", "двести три собаки", "two hundred and three dogs"),
@@ -821,30 +991,39 @@ def _unit_9(lesson) -> None:
             _field("nouns.csv:стол", "pl_gen"),
         ],
         [
-            _check("Which admitted counted line follows the one-item pattern?", rule_1, "один час", [
-                _other("два часа", "This admitted line is the two-item counted example."),
-                _other("пять часов", "This admitted line is the five-and-more counted example."),
-            ]),
-            _check("Which admitted counted line follows the two-to-four pattern?", rule_2, "два часа", [
-                _other("один час", "This admitted line is the one-item counted example."),
-                _other("пять часов", "This admitted line is the five-and-more counted example."),
-            ]),
-            _check("Which admitted counted line follows the five-and-more pattern?", rule_5, "пять часов", [
-                _other("два часа", "This admitted line is the two-item counted example."),
-            ]),
-            _check("Which admitted counted line follows the shown final-one cardinal?", "два́дцать оди́н", "двадцать один час", [
-                _other("двадцать два часа", "This admitted line is the final-two counted example."),
-                _other("пять часов", "This admitted line is the five-and-more counted example."),
-            ]),
-            _check("Which admitted counted line follows the teen span?", teens_rule, "шестнадцать рублей", [
-                _other("две девушки", "This admitted line is the two-item example, and the teen span uses the last rule."),
-            ]),
-            _check("Which admitted counted line is recorded for forty-one years?", "forty-one years", "сорок один год", [
-                _other("пять лет", "This admitted line is the five-and-more year example."),
-            ]),
-            _check("Which admitted counted line is recorded for two hundred and thirteen dogs?", "two hundred and thirteen dogs", "двести тринадцать собак", [
-                _other("двести три собаки", "This admitted line uses different final digits."),
-            ]),
+            _check("Which admitted rule classifies the shown line?", "один час", rule_1, [
+                _other(rule_2, "This admitted rule is the two-to-four line, not the rule for the shown line."),
+                _other(rule_5, "This admitted rule is the five-and-more line, not the rule for the shown line."),
+            ], feature="FINAL_DIGIT_ONE"),
+            _check("Which admitted rule classifies the shown line?", "двадцать два часа", rule_2, [
+                _other(rule_1, "This admitted rule is the one-item line, not the rule for the shown line."),
+                _other(rule_5, "This admitted rule is the five-and-more line, not the rule for the shown line."),
+            ], feature="COMPOUND_22"),
+            _check("Which admitted rule classifies the shown line?", "пять часов", rule_5, [
+                _other(rule_2, "This admitted rule is the two-to-four line, not the rule for the shown line."),
+            ], feature="FINAL_DIGIT_FIVE_PLUS"),
+            _check("Which admitted rule classifies the shown line?", "двадцать один час", rule_1, [
+                _other(rule_2, "This admitted rule is the two-to-four line, not the rule for the shown line."),
+                _other(rule_5, "This admitted rule is the five-and-more line, not the rule for the shown line."),
+            ], feature="COMPOUND_21"),
+            _check("Which admitted rule classifies the shown line?", "шестнадцать рублей", rule_5, [
+                _other(rule_2, "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."),
+            ], feature="TEEN_VALUE"),
+            _check("Which admitted rule classifies the shown line?", "сорок один год", rule_1, [
+                _other(rule_5, "This admitted rule is the five-and-more line, not the rule for the shown line."),
+            ], feature="FINAL_DIGIT_ONE"),
+            _check("Which admitted rule classifies the shown line?", "двести тринадцать собак", rule_5, [
+                _other(rule_2, "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."),
+            ], feature="TEENS_OVERRIDE"),
+            _check("Which admitted rule classifies the shown line?", "десять копеек", rule_5, [
+                _other(rule_1, "This admitted rule is the one-item line, not the rule for the shown line."),
+            ], feature="FINAL_ZERO_OR_TEN"),
+            _check("Which admitted rule classifies the shown line?", "Два́дцать пять копе́ек", rule_5, [
+                _other(rule_2, "This admitted rule is the two-to-four line, not the rule for the shown line."),
+            ], feature="FINAL_DIGIT_FIVE_PLUS"),
+            _check("Which admitted rule classifies the shown line?", "двести три собаки", rule_2, [
+                _other(rule_5, "This admitted rule is the five-and-more line, not the rule for the shown line."),
+            ], feature="HUNDREDS_COMPOSITION"),
         ],
         extra=[
             ("numbers", rule_1, rule_1, "pattern"),
@@ -863,6 +1042,7 @@ def _unit_9(lesson) -> None:
             _num("один час", "один час", "один час"),
             _num("три кошки (three cats)", "три кошки", "three cats"),
             _num("пять девушек (five girls)", "пять девушек", "five girls"),
+            _wiki("numbers", "шестнадцать рублей (sixteen rubles)", "шестнадцать рублей", "sixteen rubles"),
             _wiki("numbers", "Я видел двух друзей (I saw two friends)", "Я видел двух друзей", "I saw two friends"),
             _wiki("genitive", "There is one cat - '''Есть оди́н кот'''", "Есть оди́н кот", "There is one cat"),
             _wiki("genitive", "Five roubles - '''Пять рубле́й'''", "Пять рубле́й", "Five roubles"),
@@ -879,10 +1059,10 @@ def _unit_9(lesson) -> None:
             _check("Which admitted rule applies to the shown line?", "пять девушек", rule_5, [
                 _other(rule_2, "This admitted rule is the two-to-four line."),
             ]),
-            _check("Which admitted rule applies to 11, 12, 13, and 14?", teens_rule, rule_5, [
-                _other(rule_2, "This admitted rule is the two-to-four line, and the frozen teen span applies the last rule."),
-                _other(rule_1, "This admitted rule is the one-item line, and the frozen teen span applies the last rule."),
-            ]),
+            _check("Which admitted rule classifies the shown line?", "шестнадцать рублей", rule_5, [
+                _other(rule_2, "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."),
+                _other(rule_1, "This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line."),
+            ], feature="TEENS_OVERRIDE"),
             _check("Which admitted scope sentence covers the shown line?", "Я видел двух друзей", outside, [
                 _other(rule_scope, "This admitted sentence is the other scope in the frozen paragraph."),
             ]),
@@ -902,6 +1082,10 @@ def _unit_9(lesson) -> None:
 def _unit_10(lesson) -> None:
     gen = "genitive"
     have = "to say \"I have X\": '''У меня есть Х'''"
+    possess_rule = "The thing that is possessed remains in the nominative"
+    absence_rule = "Conversely, to say 'There isn't...', 'There aren't...', we use the word"
+    possess_needle = "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''"
+    absence_needle = "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''."
     lesson.objective(
         "have",
         "Choose the admitted possession line",
@@ -914,23 +1098,28 @@ def _unit_10(lesson) -> None:
             _wiki(gen, "Your husband has one friend - '''У твоего́ му́жа есть оди́н друг'''", "У твоего́ му́жа есть оди́н друг", "Your husband has one friend"),
             _wiki("adjectives", "My new husband has many friends - '''У моего нового мужа есть много друзе́й'''", "У моего нового мужа есть много друзе́й", "My new husband has many friends"),
             _field("others.csv:есть", "accented"),
+            _field("others.csv:нет", "accented"),
         ],
         [
-            _check("Which admitted line is recorded for I have X?", "I have X", "У меня есть Х", [
-                _other("У вас есть сын?", "This admitted line is a different possession example."),
-            ]),
-            _check("Which admitted line is recorded for Do you have a son?", "Do you have a son?", "У вас есть сын?", [
-                _other("Да, у меня есть сын.", "This admitted line is a different possession example."),
-            ]),
-            _check("Which admitted line is recorded for Yes, I have a son?", "Yes, I have a son", "Да, у меня есть сын.", [
-                _other("У твоего́ му́жа есть оди́н друг", "This admitted line is a different possession example."),
-            ]),
-            _check("Which admitted line is recorded for Your husband has one friend?", "Your husband has one friend", "У твоего́ му́жа есть оди́н друг", [
-                _other("У моего нового мужа есть много друзе́й", "This admitted line is a different possession example."),
-            ]),
-            _check("Which admitted line is recorded for My new husband has many friends?", "My new husband has many friends", "У моего нового мужа есть много друзе́й", [
-                _other("У меня есть Х", "This admitted line is a different possession example."),
-            ]),
+            _check("Which admitted rule classifies the shown line?", "У меня есть Х", possess_rule, [
+                _other(absence_rule, "This admitted rule is the absence line, not the rule for the shown line."),
+            ], feature="POSSESSION_EST", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "Да, у меня есть сын.", possess_rule, [
+                _other(absence_rule, "This admitted rule is the absence line, not the rule for the shown line."),
+            ], feature="POSSESSION_EST", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "У вас есть сын?", possess_rule, [
+                _other(absence_rule, "This admitted rule is the absence line, not the rule for the shown line."),
+            ], feature="POSSESSION_EST", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "У меня́ нет сы́на", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="POSSESSION_EST", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "У моего́ бра́та нет де́нег", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="POSSESSION_EST", mode="RULE_CLASSIFICATION"),
+        ],
+        extra=[
+            (gen, possess_needle, possess_rule, "instruction"),
+            (gen, absence_needle, absence_rule, "instruction"),
         ],
     )
     son = "No, I don't have a son - '''У меня́ нет сы́на'''"
@@ -946,23 +1135,28 @@ def _unit_10(lesson) -> None:
             _wiki(gen, "My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''", "У моего́ бра́та нет де́нег", "My brother doesn't have any money"),
             _wiki(gen, "Yes, I have a son - '''Да, у меня есть сын.'''", "Да, у меня есть сын.", "Yes, I have a son"),
             _field("others.csv:нет", "accented"),
+            _field("others.csv:есть", "accented"),
         ],
         [
-            _check("Which admitted line is recorded for No, I don't have a son?", "No, I don't have a son", "У меня́ нет сы́на", [
-                _other("Да, у меня есть сын.", "This admitted line is the possession example."),
-            ]),
-            _check("Which admitted line is recorded for There are no restaurants?", "There are no restaurants", "Нет рестора́нов", [
-                _other("У меня́ нет сы́на", "This admitted line is a different absence example."),
-            ]),
-            _check("Which admitted line is recorded for There are no old buildings in Moscow?", "There are no old buildings in Moscow", "В Москве́ нет ста́рых зда́ний", [
-                _other("У моего́ бра́та нет де́нег", "This admitted line is a different absence example."),
-            ]),
-            _check("Which admitted line is recorded for My brother doesn't have any money?", "My brother doesn't have any money", "У моего́ бра́та нет де́нег", [
-                _other("Нет рестора́нов", "This admitted line is a different absence example."),
-            ]),
-            _check("Which admitted form is recorded for no?", "no", "нет", [
-                _other("есть", "This admitted form is the possession word, not the absence word."),
-            ], O),
+            _check("Which admitted rule classifies the shown line?", "У меня́ нет сы́на", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="ABSENCE_NET", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "Нет рестора́нов", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="ABSENCE_NET", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "В Москве́ нет ста́рых зда́ний", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="ABSENCE_NET", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "Да, у меня есть сын.", possess_rule, [
+                _other(absence_rule, "This admitted rule is the absence line, not the rule for the shown line."),
+            ], feature="ABSENCE_NET", mode="RULE_CLASSIFICATION"),
+            _check("Which admitted rule classifies the shown line?", "У моего́ бра́та нет де́нег", absence_rule, [
+                _other(possess_rule, "This admitted rule is the possession line, not the rule for the shown line."),
+            ], feature="ABSENCE_NET", mode="RULE_CLASSIFICATION"),
+        ],
+        extra=[
+            (gen, possess_needle, possess_rule, "instruction"),
+            (gen, absence_needle, absence_rule, "instruction"),
         ],
     )
     table = "'''English''' || I || We || You || You || He/she/it|| They\n|-\n! '''Nominative'''\n| Я || Мы || Ты || Вы || Он/она/оно || Они\n|-\n! '''Genitive'''\n| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их"
@@ -978,26 +1172,27 @@ def _unit_10(lesson) -> None:
             _wiki(gen, table, "Его́/её", "He/she/it"),
             _wiki(gen, table, "Их", "They"),
             _wiki(gen, table, "Я", "I"),
+            _wiki(gen, table, "Они", "They"),
             _field("others.csv:его", "accented"),
             _field("others.csv:её", "accented"),
             _field("others.csv:их", "accented"),
         ],
         [
-            _check("Which admitted cell is the genitive row recorded for I?", "I", "Меня́", [
-                _other("Я", "This admitted cell is the other row in the same frozen table."),
-            ]),
-            _check("Which admitted line is recorded for For him/it?", "For him/it", "Для него́", [
-                _other("Без неё", "This admitted line is the other example in this group."),
-            ]),
-            _check("Which admitted line is recorded for Without her?", "Without her", "Без неё", [
-                _other("Для него́", "This admitted line is the other example in this group."),
-            ]),
-            _check("Which admitted cell is recorded for They?", "They", "Их", [
-                _other("Его́/её", "This admitted cell is a different row in the same frozen table."),
-            ]),
-            _check("Which admitted stressed form is recorded for their?", "their", "их", [
-                _other("его́", "This admitted form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the genitive row of the shown form?", "Я", "Меня́", [
+                _other("Я", "This form is the other row of the same word, not the genitive row."),
+            ], feature="GENITIVE_PRONOUN"),
+            _check("Which admitted form does the shown line use?", "Для него́", "его́", [
+                _other("её", "This form is the other third-person form, and the shown line uses another form."),
+            ], O, feature="GENITIVE_PRONOUN", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form does the shown line use?", "Без неё", "её", [
+                _other("его́", "This form is the other third-person form, and the shown line uses another form."),
+            ], O, feature="GENITIVE_PRONOUN", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the genitive row of the shown form?", "Они", "Их", [
+                _other("Его́/её", "This form is another genitive cell, not the cell of the shown line."),
+            ], feature="GENITIVE_PRONOUN", mode="FEATURE_IN_LINE"),
+            _check("Which admitted form is the stressed row of the shown form?", "Их", "их", [
+                _other("его́", "This form is the other stressed form, not the form of the shown line."),
+            ], O, feature="GENITIVE_PRONOUN", mode="FEATURE_IN_LINE"),
         ],
     )
     lesson.objective(
@@ -1017,23 +1212,33 @@ def _unit_10(lesson) -> None:
             _field("others.csv:из", "accented"),
             _field("others.csv:от", "accented"),
             _field("others.csv:у", "accented"),
+            _field("nouns.csv:молоко", "sg_nom"),
+            _field("nouns.csv:молоко", "sg_gen"),
+            _field("nouns.csv:окно", "sg_nom"),
+            _field("nouns.csv:окно", "sg_gen"),
+            _field("nouns.csv:друг", "sg_nom"),
+            _field("nouns.csv:друг", "sg_gen"),
+            _field("adjectives.csv:мой", "decl_m_nom"),
+            _field("adjectives.csv:мой", "decl_m_gen"),
+            _field("adjectives.csv:мой", "decl_f_nom"),
         ],
         [
-            _check("Which admitted line is recorded for I want a present for my friend?", "I want a present for my friend", "Я хочу́ пода́рок для моего́ дру́га", [
-                _other("Ко́фе без молока́", "This admitted line uses a different preposition example."),
-            ]),
-            _check("Which admitted line is recorded for Black coffee?", "Black coffee", "Ко́фе без молока́", [
-                _other("Я из А́нглии", "This admitted line uses a different preposition example."),
-            ]),
-            _check("Which admitted line is recorded for I'm from England?", "I'm from England", "Я из А́нглии", [
-                _other("Отойти от травы", "This admitted line uses a different preposition example."),
-            ]),
-            _check("Which admitted line is recorded for I am standing by the fence?", "I am standing by the fence", "Я стою́ у забо́ра", [
-                _other("Она сидит у окна́", "This admitted line is a different place example."),
-            ]),
-            _check("Which admitted line is recorded for She is sitting by the window?", "She is sitting by the window", "Она сидит у окна́", [
-                _other("Я стою́ у забо́ра", "This admitted line is a different place example."),
-            ]),
+            _check("Which admitted form is the genitive row of the shown form?", "молоко́", "молока́", [
+                _other("молоко́", "This form is the dictionary row of the same word, not the genitive row."),
+            ], O, feature="GENITIVE_PREPOSITION"),
+            _check("Which admitted form is the genitive row of the shown form?", "окно́", "окна́", [
+                _other("окно́", "This form is the dictionary row of the same word, not the genitive row."),
+            ], O, feature="GENITIVE_PREPOSITION"),
+            _check("Which admitted form is the genitive row of the shown form?", "друг", "дру́га", [
+                _other("друг", "This form is the dictionary row of the same word, not the genitive row."),
+            ], O, feature="GENITIVE_PREPOSITION"),
+            _check("Which admitted form is the genitive row of the shown form?", "мо́й", "моего́", [
+                _other("моя́", "This form is the other agreement row of the same word, not the genitive row."),
+            ], O, feature="GENITIVE_PREPOSITION"),
+            _check("Which admitted form is the dictionary row of the shown form?", "моего́", "мо́й", [
+                _other("моего́", "This form is the genitive row of the same word, not the dictionary row."),
+                _other("моя́", "This form is the other agreement row of the same word, not the dictionary row."),
+            ], O, feature="GENITIVE_PREPOSITION"),
         ],
     )
     cheese = "A kilogram of good Russian cheese - '''Кило́ хоро́шего ру́сского сы́ра'''"
@@ -1046,25 +1251,28 @@ def _unit_10(lesson) -> None:
             _wiki(gen, cheese, "Кило́ хоро́шего ру́сского сы́ра", "A kilogram of good Russian cheese"),
             _wiki(gen, "A kilogram of good Russian sausage - '''Кило́ хоро́шей ру́сской колбасы́'''", "Кило́ хоро́шей ру́сской колбасы́", "A kilogram of good Russian sausage"),
             _wiki("adjectives", "I arrived from my old house - '''Я пришёл из моего старого дома'''", "Я пришёл из моего старого дома", "I arrived from my old house"),
+            _field("adjectives.csv:новый", "decl_m_nom"),
             _field("adjectives.csv:новый", "decl_m_gen"),
             _field("adjectives.csv:новый", "decl_f_gen"),
             _field("adjectives.csv:новый", "decl_pl_gen"),
+            _field("adjectives.csv:хороший", "decl_m_nom"),
             _field("adjectives.csv:хороший", "decl_m_gen"),
+            _field("adjectives.csv:хороший", "decl_f_gen"),
         ],
         [
-            _check("Which admitted line is recorded for A kilogram of good Russian cheese?", "A kilogram of good Russian cheese", "Кило́ хоро́шего ру́сского сы́ра", [
-                _other("Кило́ хоро́шей ру́сской колбасы́", "This admitted line is the other kilogram example."),
-            ]),
-            _check("Which admitted line is recorded for A kilogram of good Russian sausage?", "A kilogram of good Russian sausage", "Кило́ хоро́шей ру́сской колбасы́", [
-                _other("Я пришёл из моего старого дома", "This admitted line is a different genitive example."),
-            ]),
-            _check("Which admitted genitive form is recorded for new?", "new", "но́вого", [
-                _other("но́вой", "This admitted form is a different genitive row of the same word."),
-                _other("но́вых", "This admitted form is the plural genitive row of the same word."),
-            ], O),
-            _check("Which admitted genitive form is recorded for good?", "good", "хоро́шего", [
-                _other("но́вого", "This admitted genitive form belongs to a different word."),
-            ], O),
+            _check("Which admitted line agrees with the shown word?", "но́вого", "Кило́ хоро́шего ру́сского сы́ра", [
+                _other("Кило́ хоро́шей ру́сской колбасы́", "This line uses the other agreement, not the shown word."),
+            ], feature="GENITIVE_ADJECTIVE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted line agrees with the shown word?", "но́вой", "Кило́ хоро́шей ру́сской колбасы́", [
+                _other("Кило́ хоро́шего ру́сского сы́ра", "This line uses the other agreement, not the shown word."),
+            ], feature="GENITIVE_ADJECTIVE", mode="AGREEMENT_PAIR"),
+            _check("Which admitted form is the genitive row of the shown form?", "но́вый", "но́вого", [
+                _other("но́вой", "This form is the other genitive row of the same word."),
+                _other("но́вых", "This form is the plural genitive row of the same word."),
+            ], O, feature="GENITIVE_ADJECTIVE"),
+            _check("Which admitted form is the genitive row of the shown form?", "хоро́ший", "хоро́шего", [
+                _other("хоро́шей", "This form is the other genitive row of the same word."),
+            ], O, feature="GENITIVE_ADJECTIVE"),
         ],
     )
     women = "I like these women. - '''Я люблю ''этих женщин.'''"
@@ -1078,22 +1286,23 @@ def _unit_10(lesson) -> None:
             _wiki("accusative", "These women like me. - '''''Эти женщины'' любят меня.'''", "Эти женщины", "These women like me."),
             _field("nouns.csv:женщина", "pl_acc"),
             _field("nouns.csv:женщина", "pl_nom"),
+            _field("nouns.csv:брат", "pl_nom"),
             _field("nouns.csv:брат", "pl_acc"),
             _field("nouns.csv:друг", "pl_acc"),
         ],
         [
-            _check("Which admitted line is the object form for these women?", "I like these women.", "этих женщин", [
-                _other("Эти женщины", "This admitted line is the other example, where these women are not the object."),
-            ]),
-            _check("Which admitted line is recorded for These women like me?", "These women like me.", "Эти женщины", [
-                _other("этих женщин", "This admitted line is the object example."),
-            ]),
-            _check("Which admitted plural row is the object form recorded for woman?", "woman", "же́нщин", [
-                _other("же́нщины", "This admitted row is the other plural cell, not the object cell."),
-            ], O),
-            _check("Which admitted plural object form is recorded for brother?", "brother", "бра́тьев", [
-                _other("друзе́й", "This admitted plural object form belongs to a different word."),
-            ], O),
+            _check("Which admitted form is the object row of the shown form?", "Эти женщины", "этих женщин", [
+                _other("Эти женщины", "This form is the other row of the same word, not the object row."),
+            ], feature="ANIMATE_PLURAL_OBJECT"),
+            _check("Which admitted form is the other plural row of the shown form?", "этих женщин", "Эти женщины", [
+                _other("этих женщин", "This form is the object row of the same word, not the other plural row."),
+            ], feature="ANIMATE_PLURAL_OBJECT"),
+            _check("Which admitted form is the object row of the shown form?", "же́нщины", "же́нщин", [
+                _other("же́нщины", "This form is the other plural row of the same word, not the object row."),
+            ], O, feature="ANIMATE_PLURAL_OBJECT"),
+            _check("Which admitted form is the object row of the shown form?", "бра́тья", "бра́тьев", [
+                _other("бра́тья", "This form is the other plural row of the same word, not the object row."),
+            ], O, feature="ANIMATE_PLURAL_OBJECT"),
         ],
         extra=[("accusative", "any plural word that's inanimate is identical to its", "any plural word that's inanimate is identical to its", "instruction")],
     )

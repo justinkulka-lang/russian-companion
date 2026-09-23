@@ -449,7 +449,7 @@ internal object V2Validator {
     private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
 
     private fun canonicalCheckItem(item: V2CheckItem): String {
-        val base = canonObj(
+        val fields = mutableListOf(
             "id" to canonStr(item.id),
             "kind" to canonStr(item.kind),
             "language" to canonStr(item.language),
@@ -462,10 +462,25 @@ internal object V2Validator {
             "sourceId" to canonStr(item.sourceId),
             "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
         )
-        if (item.distractorRationales.isEmpty()) return base
-        return base.dropLast(1) +
-            ",\"distractorRationales\":" + canonArr(item.distractorRationales.map(::canonStr)) + "}"
+        if (item.distractorRationales.isNotEmpty()) {
+            fields += "distractorRationales" to canonArr(item.distractorRationales.map(::canonStr))
+        }
+        item.assessment?.let { assessment -> fields += "assessment" to canonicalAssessment(assessment) }
+        return canonObj(*fields.toTypedArray())
     }
+
+    private fun canonicalAssessment(assessment: V2Assessment): String = canonObj(
+        "testedFeature" to canonStr(assessment.testedFeature),
+        "evidenceMode" to canonStr(assessment.evidenceMode),
+        "contrastSetId" to canonStr(assessment.contrastSetId),
+        "cueLanguage" to canonStr(assessment.cueLanguage),
+        "independent" to canonBool(assessment.independent),
+        "answerSourceIds" to canonArr(assessment.answerSourceIds.map(::canonStr)),
+        "distractorSourceIds" to canonArr(assessment.distractorSourceIds.map(::canonStr)),
+        "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
+        "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
+        "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
+    )
 
     private fun canonNum(value: Int): String = value.toString()
 
@@ -781,6 +796,46 @@ internal object V2Validator {
         if (unit.number in 6..10) validateGovernedChecks(pack, unit, errors)
     }
 
+    private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
+    private val NUMBER_CUE = Regex("[0-9][0-9,~/\\.\\-]*")
+    private val EVIDENCE_TOKENS = mapOf(
+        "SAME_LEMMA_FORM" to "same word",
+        "RULE_CLASSIFICATION" to "shown line",
+        "FEATURE_LABEL" to "shown line",
+        "NUMBER_FORM" to "shown number",
+        "RULE_APPLICATION" to "shown rule",
+        "FEATURE_IN_LINE" to "shown line",
+        "COUNTED_PATTERN" to "pattern",
+        "AGREEMENT_PAIR" to "shown word",
+    )
+    private val UNRELATED_DIFFERENCE = listOf(
+        "different example",
+        "different object example",
+        "different possession",
+        "different word",
+        "belongs to a different word",
+        "other example",
+        "other row in the frozen table",
+        "another example",
+        "different line",
+        "other person row",
+        "different person",
+        "unrelated",
+    )
+
+    internal fun isDirectEnglishMatch(item: V2CheckItem): Boolean {
+        val shown = item.promptLetter.orEmpty()
+        val shownRussian = shown.any { it.code in 0x0400..0x04FF }
+        val answerRussian = item.answer.any { it.code in 0x0400..0x04FF }
+        if (ENGLISH_CUE.containsMatchIn(item.prompt) && !shownRussian && answerRussian) return true
+        if (item.assessment?.cueLanguage == "en") return true
+        val cue = item.assessment?.cueLanguage
+        return item.kind in GRAMMAR_ITEM_KINDS && !shownRussian && answerRussian && cue != "rule" && cue != "number"
+    }
+
+    private fun isUnrelatedDifference(text: String): Boolean =
+        UNRELATED_DIFFERENCE.any { phrase -> text.contains(phrase, ignoreCase = true) }
+
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
@@ -791,6 +846,12 @@ internal object V2Validator {
             if (checks.isNotEmpty() && checks.all { it.kind == "SOURCE_MEANING" }) {
                 errors += "SOURCE_MEANING alone cannot satisfy ${objective.id}"
             }
+            if (checks.none { featureValid(pack, it) }) {
+                errors += "Unit ${unit.number} objective ${objective.id} has no independent feature-valid check"
+            }
+            if (checks.any { isDirectEnglishMatch(it) }) {
+                errors += "Unit ${unit.number} objective ${objective.id} independent check can be answered by direct English-to-Russian matching"
+            }
             val remediation = objective.remediationStepIds.mapNotNull { pack.step(it)?.second }
             if (remediation.isEmpty() || remediation.any { it.body == generic || generic in it.body && it.body.removePrefix(generic).isBlank() }) {
                 errors += "Unit ${unit.number} objective ${objective.id} remediation does not target the failed concept"
@@ -800,6 +861,104 @@ internal object V2Validator {
                 errors += "Unit ${unit.number} objective ${objective.id} remediation is not bound to an admitted source span"
             }
         }
+    }
+
+    internal fun featureValid(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
+        val assessment = item.assessment ?: return false
+        return assessment.independent && structureValid(pack, item).isEmpty()
+    }
+
+    private fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        val errors = mutableListOf<String>()
+        val assessment = item.assessment
+        if (item.kind !in GRAMMAR_ITEM_KINDS) {
+            errors += "Item ${item.id} kind does not test a grammatical distinction"
+        }
+        if (assessment == null) {
+            errors += "Item ${item.id} has no assessment target"
+            return errors
+        }
+        if (assessment.testedFeature.isBlank()) errors += "Item ${item.id} has no tested feature"
+        if (assessment.evidenceMode !in EVIDENCE_TOKENS) {
+            errors += "Item ${item.id} evidence mode ${assessment.evidenceMode} is not governed"
+        }
+        if (assessment.cueLanguage !in setOf("ru", "rule", "number")) {
+            errors += "Item ${item.id} cue language ${assessment.cueLanguage} is not governed"
+        }
+        if (assessment.whyAnswerDemonstratesObjective.isBlank() ||
+            assessment.whyAnswerDemonstratesObjective.startsWith("The admitted answer")
+        ) {
+            errors += "Item ${item.id} answer rationale does not explain the governed distinction"
+        }
+        val token = EVIDENCE_TOKENS[assessment.evidenceMode]
+        if (token != null && !assessment.whyAnswerDemonstratesObjective.contains(token, ignoreCase = true)) {
+            errors += "Item ${item.id} answer rationale does not explain the governed distinction"
+        }
+        if (assessment.contrastMembers.toSet() != item.options.toSet()) {
+            errors += "Item ${item.id} options are outside the governed contrast"
+        }
+        if (assessment.distractorDifference.size != item.options.size ||
+            assessment.distractorSourceIds.size != item.options.size
+        ) {
+            errors += "Item ${item.id} distractor metadata does not match the options"
+        } else {
+            item.options.forEachIndexed { index, option ->
+                val difference = assessment.distractorDifference[index]
+                val sourceItemId = assessment.distractorSourceIds[index]
+                if (option == item.answer) {
+                    if (difference.isNotEmpty() || sourceItemId.isNotEmpty()) {
+                        errors += "Item ${item.id} records distractor metadata for the answer"
+                    }
+                } else {
+                    if (difference.isBlank() || isUnrelatedDifference(difference)) {
+                        errors += "Item ${item.id} distractor is unrelated to the governed feature"
+                    } else if (token != null && !difference.contains(token, ignoreCase = true)) {
+                        errors += "Item ${item.id} distractor is unrelated to the governed feature"
+                    }
+                    val provenance = pack.provenanceRecords.firstOrNull { it.itemId == sourceItemId }
+                    if (provenance == null || provenance.shippedText != option || provenance.objectiveId != item.objectiveId) {
+                        errors += "Item ${item.id} distractor has no contrast provenance"
+                    }
+                }
+            }
+        }
+        val answerProvenance = assessment.answerSourceIds.mapNotNull { id ->
+            pack.provenanceRecords.firstOrNull { it.itemId == id }
+        }
+        if (answerProvenance.none { it.shippedText == item.answer && it.objectiveId == item.objectiveId }) {
+            errors += "Item ${item.id} answer has no contrast provenance"
+        }
+        if (isDirectEnglishMatch(item)) {
+            errors += "Item ${item.id} can be answered by direct English-to-Russian matching"
+        }
+        val shown = item.promptLetter.orEmpty()
+        val shownRussian = shown.any { it.code in 0x0400..0x04FF }
+        when (assessment.cueLanguage) {
+            "ru" -> if (!shownRussian) errors += "Item ${item.id} Russian cue has no Russian shown form"
+            "number" -> if (!NUMBER_CUE.matches(shown)) errors += "Item ${item.id} number cue is not a shown number"
+            "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
+        }
+        when (assessment.evidenceMode) {
+            "SAME_LEMMA_FORM", "FEATURE_IN_LINE", "COUNTED_PATTERN", "AGREEMENT_PAIR" -> {
+                if (!shownRussian || item.answer.none { it.code in 0x0400..0x04FF }) {
+                    errors += "Item ${item.id} does not contrast admitted Russian forms"
+                }
+            }
+            "RULE_CLASSIFICATION", "FEATURE_LABEL" -> {
+                if (!shownRussian) errors += "Item ${item.id} does not classify a Russian line"
+            }
+            "NUMBER_FORM" -> {
+                if (item.answer.none { it.code in 0x0400..0x04FF }) {
+                    errors += "Item ${item.id} number check has no admitted form"
+                }
+            }
+            "RULE_APPLICATION" -> {
+                if (item.answer.none { it.code in 0x0400..0x04FF }) {
+                    errors += "Item ${item.id} rule application has no admitted form"
+                }
+            }
+        }
+        return errors
     }
 
     private fun validateOpenableBody(
@@ -967,6 +1126,9 @@ internal object V2Validator {
                         errors += "Item ${item.id} distractor has no governed contrast rationale"
                     }
                 }
+            }
+            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..10) {
+                errors += structureValid(pack, item)
             }
         }
         if (item.isGovernancePrompt()) {
@@ -1314,6 +1476,10 @@ internal object V2Validator {
         hosts += item.feedback
         hosts += item.options
         hosts += item.distractorRationales
+        item.assessment?.let { assessment ->
+            hosts += assessment.whyAnswerDemonstratesObjective
+            hosts += assessment.distractorDifference
+        }
     }
 
     private val LINGUISTIC_CLAIM = Regex(

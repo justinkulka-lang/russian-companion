@@ -280,7 +280,7 @@ class Builder:
             "objectiveId": objective,
         })
 
-    def item(self, item_id, prompt, prompt_letter, options, answer, feedback, objective, source_id, kind, rationales) -> None:
+    def item(self, item_id, prompt, prompt_letter, options, answer, feedback, objective, source_id, kind, rationales, assessment=None) -> None:
         if answer not in options or len(options) != len(set(options)) or options.count(answer) != 1:
             raise SystemExit(f"Unusable answer key for {item_id}: {options} / {answer}")
         if len(rationales) != len(options):
@@ -305,6 +305,8 @@ class Builder:
             "containsGeneratedRussian": False,
             "distractorRationales": rationales,
         })
+        if assessment is not None:
+            self.items[-1]["assessment"] = assessment
 
 
 def _entry(form: str, gloss: str) -> str:
@@ -543,12 +545,37 @@ class Lesson:
             "remediation": remediation_text,
         })
 
-    def _check(self, slug: str, objective: str, kind: str, index: int, check: tuple, guided: bool) -> str:
-        prompt, shown, answer, distractors, source_id = check
-        options = [answer, *[text for text, _rationale in distractors]]
-        rationales = ["", *[self.builder.say(self.number, rationale) for _text, rationale in distractors]]
+    def _ids(self, objective: str, text: str) -> list[str]:
+        return [
+            record["itemId"]
+            for record in self.builder.provenance
+            if record["objectiveId"] == objective and record["shippedText"] == text
+        ]
+
+    def _check(self, slug: str, objective: str, kind: str, index: int, check: dict, guided: bool) -> str:
+        prompt = check["prompt"]
+        shown = check["shown"]
+        answer = check["answer"]
+        distractors = check["distractors"]
+        source_id = check["source"]
+        options = [answer, *[text for text, _rationale, _difference in distractors]]
+        rationales = ["", *[self.builder.say(self.number, rationale) for _text, rationale, _difference in distractors]]
+        differences = ["", *[self.builder.say(self.number, difference) for _text, _rationale, difference in distractors]]
+        why = self.builder.say(self.number, check["why"])
         item_id = f"u{self.number}-{'g' if guided else 'i'}-{slug}-{index}"
-        feedback = self.builder.say(self.number, "The admitted answer for this contrast is ") + answer
+        answer_ids = self._ids(objective, answer)
+        if not answer_ids:
+            raise SystemExit(f"{item_id} answer has no provenance: {answer!r}")
+        distractor_ids = [""]
+        for text, _rationale, _difference in distractors:
+            ids = self._ids(objective, text)
+            if not ids:
+                raise SystemExit(f"{item_id} distractor has no provenance: {text!r}")
+            distractor_ids.append(ids[0])
+        feedback = why
+        if not str(answer).endswith((".", "?", "!")) and not feedback.endswith((".", "?", "!")):
+            feedback += "."
+        feedback = feedback + " " + answer
         if not str(answer).endswith((".", "?", "!")):
             feedback += "."
         self.builder.item(
@@ -562,6 +589,18 @@ class Lesson:
             source_id,
             kind,
             rationales,
+            {
+                "testedFeature": check["feature"],
+                "evidenceMode": check["mode"],
+                "contrastSetId": f"u{self.number}-{slug}-{index}",
+                "cueLanguage": check["cue"],
+                "independent": not guided,
+                "answerSourceIds": [answer_ids[0]],
+                "distractorSourceIds": distractor_ids,
+                "distractorDifference": differences,
+                "whyAnswerDemonstratesObjective": why,
+                "contrastMembers": options,
+            },
         )
         return item_id
 
@@ -644,6 +683,10 @@ def _assert(builder: Builder, units: list[dict]) -> None:
                 item["prompt"], item["promptLetter"], item["answer"], item["feedback"],
                 *item["options"], *item["distractorRationales"],
             ])
+            assessment = item.get("assessment")
+            if assessment:
+                hosts.append(assessment["whyAnswerDemonstratesObjective"])
+                hosts.extend(assessment["distractorDifference"])
             for text in [item["answer"], *item["options"]]:
                 if text not in allowed:
                     raise SystemExit(f"Unit {number} answer or option has no admitted record: {text}")
