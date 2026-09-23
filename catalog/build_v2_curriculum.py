@@ -54,7 +54,7 @@ RIGHTS = [
 ]
 
 REVIEW_PENDING = {
-    "id": "rev-pending-units-1-2",
+    "id": "rev-pending-v2-curriculum",
     "status": "PENDING_QUALIFIED_REVIEW",
     "reviewer": None,
     "packVersion": None,
@@ -1570,8 +1570,8 @@ def build() -> dict:
 
     pack = {
         "schemaVersion": 1,
-        "packId": "v2-units-1-2-foundation",
-        "packVersion": 2,
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
         "unitReviews": [pending_unit_review(number) for number in range(1, 6)],
