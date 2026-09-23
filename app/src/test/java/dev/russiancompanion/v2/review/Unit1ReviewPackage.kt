@@ -80,6 +80,7 @@ private val MAPPING_HEADER = listOf(
     "reviewer_notes",
     "reviewer_identity",
     "review_date",
+    "reviewed_version_digest",
 )
 
 private val BLANK_REVIEW_COLUMNS = listOf(
@@ -103,6 +104,7 @@ private val BLANK_MAPPING_COLUMNS = listOf(
     "reviewer_notes",
     "reviewer_identity",
     "review_date",
+    "reviewed_version_digest",
 )
 
 internal data class Unit1ReviewRecord(
@@ -602,7 +604,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack): String {
     val unit = pack.unit(1) ?: error("Unit 1 is missing")
     val lines = mutableListOf(
         "# Warning: this worksheet must not contain copied Penguin prose or exercises.",
-        "# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, and date only after comparing the Product Owner's legally owned edition.",
+        "# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, and reviewed digest only after comparing the Product Owner's legally owned edition.",
         MAPPING_HEADER.joinToString("\t"),
     )
     unit.objectives.forEach { objective ->
@@ -615,7 +617,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack): String {
 }
 
 private fun mappingRow(id: String, type: String, title: String): String {
-    return listOf(id, type, title, "", "", "", "", "", "", "", "", "", "", "", "").joinToString("\t") { escapeTsv(it) }
+    return listOf(id, type, title, "", "", "", "", "", "", "", "", "", "", "", "", "").joinToString("\t") { escapeTsv(it) }
 }
 
 private fun renderInstructions(review: Unit1ReviewPackage): String {
