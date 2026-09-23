@@ -9,10 +9,10 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 49eae12f175574add477ba4f15224650abaa2293
-- Content-review SHA-256: 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627
-- Review-package SHA-256: 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296
-- Repository source SHA-256: 82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe
+- Curriculum source commit: 08663616a79af9009c657ecfb66d7f6d42a531bf
+- Content-review SHA-256: 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f
+- Review-package SHA-256: 5159dafc1eb118efca09d4767486891f9f4c70b172709f8d3876edde1a3b61e7
+- Repository source SHA-256: 82b1237d133d122fec5a664b047468d9b264044f5fe4e0404e6cbc57efd54ff7
 
 The content-review digest is what a reviewer approves. It covers instructional substance, mapping notes, sources, and rights. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -47,10 +47,11 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Rights: none
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81685876b254af2bc483b7f5c4f29a44afe132a52e0705c510cb863cf21f0f5b
+- Content hash: 1f5b1088149bf652ee1e2019db012f2de474a024edd99e9ca98f5ad827f84e49
 
 status=PENDING_QUALIFIED_REVIEW
 reviewer=
+reviewerQualification=
 packVersion=
 reviewedContentDigest=
 curriculumMappingId=

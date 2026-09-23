@@ -65,6 +65,9 @@ internal data class V2CurriculumPack(
     val linguisticReview: V2ReviewRecord,
     val sources: List<V2SourceRecord>,
     val rights: List<V2RightsRecord> = emptyList(),
+    val audioAssets: List<V2AudioAsset> = emptyList(),
+    val handwritingAssets: List<V2HandwritingAsset> = emptyList(),
+    val ownedEditionMappings: List<V2OwnedEditionMapping> = emptyList(),
     val letters: List<V2Letter>,
     val examples: List<V2Example> = emptyList(),
     val items: List<V2CheckItem>,
@@ -78,6 +81,7 @@ internal data class V2ReviewRecord(
     val id: String,
     val status: String,
     val reviewer: String? = null,
+    val reviewerQualification: String? = null,
     val packVersion: Int? = null,
     val reviewedContentDigest: String? = null,
     val curriculumMappingId: String? = null,
@@ -99,6 +103,36 @@ internal data class V2RightsRecord(
     val sourceId: String,
     val license: String,
     val permitsAppUse: Boolean,
+)
+
+@Serializable
+internal data class V2AudioAsset(
+    val id: String,
+    val sourceId: String,
+    val rightsId: String,
+    val unitNumber: Int,
+    val letterId: String,
+    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+)
+
+@Serializable
+internal data class V2HandwritingAsset(
+    val id: String,
+    val sourceId: String,
+    val rightsId: String,
+    val unitNumber: Int,
+    val letterId: String,
+    val intakeReviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+)
+
+@Serializable
+internal data class V2OwnedEditionMapping(
+    val id: String,
+    val unitNumber: Int,
+    val status: String,
+    val reviewer: String? = null,
+    val reviewerQualification: String? = null,
+    val reviewedContentDigest: String? = null,
 )
 
 @Serializable

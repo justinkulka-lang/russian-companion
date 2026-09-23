@@ -2,10 +2,10 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 49eae12f175574add477ba4f15224650abaa2293
-Content-review digest: 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627
-Review-package digest: 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296
-Repository source digest: 82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe
+Curriculum source commit: 08663616a79af9009c657ecfb66d7f6d42a531bf
+Content-review digest: 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f
+Review-package digest: 5159dafc1eb118efca09d4767486891f9f4c70b172709f8d3876edde1a3b61e7
+Repository source digest: 82b1237d133d122fec5a664b047468d9b264044f5fe4e0404e6cbc57efd54ff7
 
 This packet was generated from the packaged curriculum. It does not perform review.
 
@@ -27,10 +27,10 @@ Check every Cyrillic identity, phonetic statement, instructional explanation, an
 
 ## What approval means
 
-A later approval applies only to version 2.0.0-dev and content-review digest 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627. Confirm review-package digest 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296 before relying on this packet. Any later substantive instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+A later approval applies only to version 2.0.0-dev and content-review digest 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f. Confirm review-package digest 5159dafc1eb118efca09d4767486891f9f4c70b172709f8d3876edde1a3b61e7 before relying on this packet. Any later substantive instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
 
-Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment.
+Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
 ## Generator
 
-The deterministic generator and validator live in `app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt`. Regenerate the files in `review/unit-1/` from the packaged curriculum after any instructional change, then review the new digest.
+The deterministic generator and validator live in `app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt` and accept a unit number from 1 through 30. Regenerate the files in `review/unit-1/` from the packaged curriculum after any instructional change, then review the new digest.

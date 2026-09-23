@@ -21,6 +21,13 @@ internal object V2Validator {
         if (pack.admissions.futureRussianItems != 0) {
             errors += "Future Russian items must stay at zero until reviewed content exists"
         }
+        if (pack.admissions.mappedPronunciationAudio != pack.audioAssets.size) {
+            errors += "mappedPronunciationAudio does not match governed audio records"
+        }
+        if (pack.admissions.handwritingAssets != pack.handwritingAssets.size) {
+            errors += "handwritingAssets does not match governed handwriting records"
+        }
+        validateAssetRecords(pack, errors)
         validateReview(pack, errors)
         validateSourcesAndRights(pack, errors)
         pack.units.forEach { unit ->
@@ -95,6 +102,30 @@ internal object V2Validator {
                     "sourceId" to canonStr(rights.sourceId),
                     "license" to canonStr(rights.license),
                     "permitsAppUse" to canonBool(rights.permitsAppUse),
+                )
+            }),
+            "audioAssets" to canonArr(pack.audioAssets.map { asset ->
+                canonObj(
+                    "id" to canonStr(asset.id),
+                    "sourceId" to canonStr(asset.sourceId),
+                    "rightsId" to canonStr(asset.rightsId),
+                    "unitNumber" to canonNum(asset.unitNumber),
+                    "letterId" to canonStr(asset.letterId),
+                )
+            }),
+            "handwritingAssets" to canonArr(pack.handwritingAssets.map { asset ->
+                canonObj(
+                    "id" to canonStr(asset.id),
+                    "sourceId" to canonStr(asset.sourceId),
+                    "rightsId" to canonStr(asset.rightsId),
+                    "unitNumber" to canonNum(asset.unitNumber),
+                    "letterId" to canonStr(asset.letterId),
+                )
+            }),
+            "ownedEditionMappings" to canonArr(pack.ownedEditionMappings.map { mapping ->
+                canonObj(
+                    "id" to canonStr(mapping.id),
+                    "unitNumber" to canonNum(mapping.unitNumber),
                 )
             }),
             "letters" to canonArr(pack.letters.map { letter ->
@@ -253,6 +284,7 @@ internal object V2Validator {
         if (review.status != "APPROVED") return
         val missing = mutableListOf<String>()
         if (review.reviewer.isNullOrBlank()) missing += "reviewer identity"
+        if (review.reviewerQualification.isNullOrBlank()) missing += "qualification attestation"
         if (review.packVersion != pack.packVersion) missing += "matching pack version"
         if (review.reviewedContentDigest.isNullOrBlank()) missing += "reviewed content digest"
         if (review.curriculumMappingId.isNullOrBlank()) missing += "curriculum mapping"
@@ -300,11 +332,14 @@ internal object V2Validator {
         if (unit.sessions.any { session -> session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() } }) {
             errors += "Installed unit ${unit.number} still has unavailable required experiences"
         }
-        if (pack.admissions.handwritingAssets == 0 && unit.number == 2) {
-            errors += "Installed Unit 2 requires verified handwriting assets"
+        if (!pronunciationAudioResolves(pack, unit)) {
+            errors += "Installed unit ${unit.number} requires a mapped pronunciation audio record"
         }
-        if (pack.admissions.mappedPronunciationAudio == 0) {
-            errors += "Installed unit ${unit.number} requires mapped pronunciation audio"
+        if (unit.number == 2 && !handwritingAssetResolves(pack, unit)) {
+            errors += "Installed Unit 2 requires a verified handwriting asset record"
+        }
+        if (!ownedEditionMappingResolves(pack, unit)) {
+            errors += "Installed unit ${unit.number} mapping record does not resolve"
         }
         validateInstalledReviewRecords(pack, unit, errors)
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
@@ -374,6 +409,7 @@ internal object V2Validator {
         val review = pack.linguisticReview
         if (review.status != "APPROVED" ||
             review.reviewer.isNullOrBlank() ||
+            review.reviewerQualification.isNullOrBlank() ||
             review.packVersion != pack.packVersion ||
             review.reviewedContentDigest != contentReviewDigest(pack) ||
             review.curriculumMappingId.isNullOrBlank()
@@ -632,12 +668,105 @@ internal object V2Validator {
             errors += "Letter ${letter.id} is not a single printed pair"
         }
         if (letter.exampleWordId != null) errors += "Letter ${letter.id} has an example word"
-        if (letter.audioAssetId != null) errors += "Letter ${letter.id} claims audio that is not intake-reviewed"
+        val audioId = letter.audioAssetId
+        if (audioId != null && !letterAudioResolves(pack, letter)) {
+            errors += "Letter ${letter.id} claims audio that is not intake-reviewed"
+        }
         if (pack.sources.none { it.id == letter.sourceId }) {
             errors += "Letter ${letter.id} source ${letter.sourceId} is missing"
         }
         if (letter.reviewStatus !in CLOSED_REVIEW_STATES) {
             errors += "Letter ${letter.id} has unrecognized review status ${letter.reviewStatus}"
         }
+    }
+
+    private fun validateAssetRecords(pack: V2CurriculumPack, errors: MutableList<String>) {
+        if (pack.audioAssets.map { it.id }.distinct().size != pack.audioAssets.size) {
+            errors += "Audio asset ids must be unique"
+        }
+        if (pack.handwritingAssets.map { it.id }.distinct().size != pack.handwritingAssets.size) {
+            errors += "Handwriting asset ids must be unique"
+        }
+        if (pack.ownedEditionMappings.map { it.id }.distinct().size != pack.ownedEditionMappings.size) {
+            errors += "Owned-edition mapping ids must be unique"
+        }
+        pack.audioAssets.forEach { asset ->
+            if (!sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)) {
+                errors += "Audio ${asset.id} source or rights record does not resolve"
+            }
+            if (pack.letters.none { it.id == asset.letterId && it.audioAssetId == asset.id }) {
+                errors += "Audio ${asset.id} is not related to letter ${asset.letterId}"
+            }
+            if (asset.unitNumber !in 1..30) errors += "Audio ${asset.id} is not related to a unit"
+        }
+        pack.handwritingAssets.forEach { asset ->
+            if (!sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)) {
+                errors += "Handwriting ${asset.id} source or rights record does not resolve"
+            }
+            if (pack.letters.none { it.id == asset.letterId }) {
+                errors += "Handwriting ${asset.id} is not related to letter ${asset.letterId}"
+            }
+            if (asset.unitNumber !in 1..30) errors += "Handwriting ${asset.id} is not related to a unit"
+        }
+        pack.ownedEditionMappings.forEach { mapping ->
+            if (mapping.unitNumber !in 1..30) {
+                errors += "Mapping ${mapping.id} is not related to a unit"
+            }
+            if (mapping.status == "APPROVED" && pack.linguisticReview.status != "APPROVED") {
+                errors += "Mapping ${mapping.id} is APPROVED without an approved linguistic review"
+            }
+        }
+    }
+
+    private fun pronunciationAudioResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean {
+        val letterIds = reachableLetterIds(pack, unit)
+        return pack.audioAssets.any { asset ->
+            asset.unitNumber == unit.number &&
+                asset.letterId in letterIds &&
+                asset.intakeReviewStatus == "APPROVED" &&
+                pack.letters.any { it.id == asset.letterId && it.audioAssetId == asset.id } &&
+                sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)
+        }
+    }
+
+    private fun handwritingAssetResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean {
+        val letterIds = reachableLetterIds(pack, unit)
+        return pack.handwritingAssets.any { asset ->
+            asset.unitNumber == unit.number &&
+                asset.letterId in letterIds &&
+                asset.intakeReviewStatus == "APPROVED" &&
+                pack.letters.any { it.id == asset.letterId } &&
+                sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)
+        }
+    }
+
+    private fun ownedEditionMappingResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean {
+        val review = pack.linguisticReview
+        val mapping = pack.ownedEditionMappings.firstOrNull { it.id == review.curriculumMappingId } ?: return false
+        return mapping.unitNumber == unit.number &&
+            mapping.status == "APPROVED" &&
+            !mapping.reviewer.isNullOrBlank() &&
+            !mapping.reviewerQualification.isNullOrBlank() &&
+            mapping.reviewedContentDigest == contentReviewDigest(pack)
+    }
+
+    private fun letterAudioResolves(pack: V2CurriculumPack, letter: V2Letter): Boolean {
+        val audioId = letter.audioAssetId ?: return false
+        val asset = pack.audioAssets.firstOrNull { it.id == audioId } ?: return false
+        return asset.letterId == letter.id &&
+            asset.intakeReviewStatus == "APPROVED" &&
+            sourceAndRightsResolve(pack, asset.sourceId, asset.rightsId)
+    }
+
+    private fun reachableLetterIds(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
+        val exampleIds = (unit.objectives.flatMap { it.exampleIds } + unit.sessions.flatMap { session ->
+            session.steps.flatMap { it.exampleIds }
+        }).toSet()
+        return exampleIds.mapNotNull { pack.example(it)?.letterId }.toSet()
+    }
+
+    private fun sourceAndRightsResolve(pack: V2CurriculumPack, sourceId: String, rightsId: String): Boolean {
+        if (pack.sources.none { it.id == sourceId }) return false
+        return pack.rights.any { it.id == rightsId && it.sourceId == sourceId && it.permitsAppUse }
     }
 }

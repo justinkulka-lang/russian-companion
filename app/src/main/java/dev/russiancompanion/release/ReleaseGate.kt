@@ -632,12 +632,12 @@ private fun v2CurriculumBlockers(repositoryRoot: File): List<ReleaseBlocker> {
         if (pack.units.any { it.mappingStatus != "APPROVED" }) {
             blockers += ReleaseBlocker.PENGUIN_MAPPING_UNAPPROVED
         }
-        val hasMappedAudio = pack.letters.any { !it.audioAssetId.isNullOrBlank() } ||
-            pack.units.any { unit ->
-                unit.sessions.any { session ->
-                    session.steps.any { it.kind == "LISTEN" && it.unavailableReason == null }
-                }
+        val hasMappedAudio = pack.letters.any { letter ->
+            val audioId = letter.audioAssetId
+            !audioId.isNullOrBlank() && pack.audioAssets.any { asset ->
+                asset.id == audioId && asset.letterId == letter.id && asset.sourceId.isNotBlank() && asset.rightsId.isNotBlank()
             }
+        }
         if (!hasMappedAudio) blockers += ReleaseBlocker.V2_MAPPED_AUDIO_ABSENT
         blockers
     } catch (_: SerializationException) {
@@ -656,14 +656,23 @@ private val json = Json {
 private data class V2PackDocument(
     val linguisticReview: V2PackReview,
     val letters: List<V2PackLetter> = emptyList(),
+    val audioAssets: List<V2PackAudioAsset> = emptyList(),
     val units: List<V2PackUnit> = emptyList(),
+)
+
+@Serializable
+private data class V2PackAudioAsset(
+    val id: String,
+    val letterId: String,
+    val sourceId: String = "",
+    val rightsId: String = "",
 )
 
 @Serializable
 private data class V2PackReview(val status: String)
 
 @Serializable
-private data class V2PackLetter(val audioAssetId: String? = null)
+private data class V2PackLetter(val id: String = "", val audioAssetId: String? = null)
 
 @Serializable
 private data class V2PackUnit(

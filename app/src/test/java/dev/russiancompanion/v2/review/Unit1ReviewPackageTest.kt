@@ -18,7 +18,7 @@ class Unit1ReviewPackageTest {
         val pack = pack()
         val rendered = renderUnit1ReviewFiles(pack)
         val dir = File(repo(), "review/unit-1")
-        if (System.getenv("WRITE_UNIT1_REVIEW") == "1") {
+        if (System.getenv("WRITE_UNIT1_REVIEW") == "1" || System.getenv("WRITE_UNIT_REVIEW") == "1") {
             dir.mkdirs()
             rendered.files.forEach { (name, text) -> File(dir, name).writeText(text) }
         }
@@ -230,7 +230,9 @@ class Unit1ReviewPackageTest {
             "mapping status" to mapUnit(pack) { unit -> unit.copy(mappingStatus = "APPROVED") },
             "install state" to mapUnit(pack) { unit -> unit.copy(installState = "INSTALLED") },
             "readiness" to mapUnit(pack) { unit -> unit.copy(readiness = "INSTALLABLE") },
-            "review signature" to pack.copy(linguisticReview = pack.linguisticReview.copy(status = "APPROVED", reviewer = "Pat Reviewer", reviewedContentDigest = baseline, packVersion = pack.packVersion, curriculumMappingId = "map-owned-edition")),
+            "review signature" to pack.copy(linguisticReview = pack.linguisticReview.copy(status = "APPROVED", reviewer = "Pat Reviewer", reviewerQualification = "Advanced Russian and curriculum review attested.", reviewedContentDigest = baseline, packVersion = pack.packVersion, curriculumMappingId = "map-owned-edition")),
+            "audio counter" to pack.copy(admissions = pack.admissions.copy(mappedPronunciationAudio = 4)),
+            "handwriting counter" to pack.copy(admissions = pack.admissions.copy(handwritingAssets = 4)),
         )
         workflow.forEach { (label, mutated) ->
             assertEquals(label, baseline, V2Validator.contentReviewDigest(mutated))
@@ -275,6 +277,7 @@ class Unit1ReviewPackageTest {
             linguisticReview = pack.linguisticReview.copy(
                 status = "APPROVED",
                 reviewer = "Pat Reviewer",
+                reviewerQualification = "Advanced Russian and curriculum review attested.",
                 packVersion = pack.packVersion,
                 curriculumMappingId = "map-owned-edition",
                 notes = "Qualification attested on 2026-09-23. This note is not part of the signed content.",
@@ -287,7 +290,14 @@ class Unit1ReviewPackageTest {
         assertEquals(signed, V2Validator.contentReviewDigest(recorded))
         assertNotEquals(pending.reviewPackageDigest, buildUnit1ReviewPackage(recorded).reviewPackageDigest)
         val accepted = V2Validator.validate(recorded)
-        assertTrue(accepted.errors.joinToString("\n"), accepted.ok)
+        assertFalse(accepted.ok)
+        assertTrue(accepted.errors.joinToString("\n"), accepted.errors.any { it.contains("mapped pronunciation audio record") })
+        assertTrue(accepted.errors.any { it.contains("does not match governed audio records") })
+        assertTrue(accepted.errors.any { it.contains("mapping record does not resolve") })
+        val withoutCounter = recorded.copy(admissions = recorded.admissions.copy(mappedPronunciationAudio = 0))
+        val stillBlocked = V2Validator.validate(withoutCounter)
+        assertFalse(stillBlocked.ok)
+        assertTrue(stillBlocked.errors.any { it.contains("mapped pronunciation audio record") })
 
         val mutated = recorded.copy(
             items = recorded.items.mapIndexed { index, item ->
