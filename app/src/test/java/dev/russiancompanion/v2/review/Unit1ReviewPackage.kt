@@ -9,7 +9,9 @@ import dev.russiancompanion.v2.curriculum.V2ReferenceEntry
 import dev.russiancompanion.v2.curriculum.V2Session
 import dev.russiancompanion.v2.curriculum.V2Step
 import dev.russiancompanion.v2.curriculum.V2Unit
+import dev.russiancompanion.release.currentReleaseBinding
 import dev.russiancompanion.v2.curriculum.V2Validator
+import java.io.File
 import dev.russiancompanion.v2.curriculum.example
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.letter
@@ -18,7 +20,7 @@ import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.unit
 import java.security.MessageDigest
 
-internal const val UNIT1_REVIEW_SCHEMA_VERSION = 2
+internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
 
 internal const val UNIT1_REVIEW_SOURCE_COMMIT = "49eae12f175574add477ba4f15224650abaa2293"
 
@@ -131,8 +133,9 @@ internal data class Unit1ReviewEdge(
 )
 
 internal data class Unit1ReviewPackage(
-    val instructionalContentDigest: String,
+    val contentReviewDigest: String,
     val reviewPackageDigest: String,
+    val repositorySourceDigest: String,
     val records: List<Unit1ReviewRecord>,
     val edges: List<Unit1ReviewEdge>,
     val unresolved: List<String>,
@@ -154,10 +157,11 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
     val unavailable = mutableListOf<String>()
     if (unit == null) {
         unresolved += "Unit 1 is missing from the curriculum pack"
-        val instructional = V2Validator.instructionalContentDigest(pack)
+        val instructional = V2Validator.contentReviewDigest(pack)
         return Unit1ReviewPackage(
-            instructionalContentDigest = instructional,
+            contentReviewDigest = instructional,
             reviewPackageDigest = reviewPackageDigest(instructional, emptyList(), emptyList(), emptyList(), emptyList(), unresolved),
+            repositorySourceDigest = repositorySourceDigest(),
             records = emptyList(),
             edges = emptyList(),
             unresolved = unresolved,
@@ -338,12 +342,12 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
     objectiveOrder.forEach { objectiveId ->
         if (records.none { it.id == objectiveId }) unresolved += "Objective $objectiveId was not emitted"
     }
-    val instructional = V2Validator.instructionalContentDigest(pack)
+    val instructional = V2Validator.contentReviewDigest(pack)
     val distinctUnresolved = unresolved.distinct()
     val distinctBookDirected = bookDirected.distinct()
     val distinctUnavailable = unavailable.distinct()
     return Unit1ReviewPackage(
-        instructionalContentDigest = instructional,
+        contentReviewDigest = instructional,
         reviewPackageDigest = reviewPackageDigest(
             instructional,
             records,
@@ -352,6 +356,7 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
             distinctUnavailable,
             distinctUnresolved,
         ),
+        repositorySourceDigest = repositorySourceDigest(),
         records = records,
         edges = edges,
         unresolved = distinctUnresolved,
@@ -388,16 +393,19 @@ internal fun validateUnit1ReviewFiles(pack: V2CurriculumPack, files: Map<String,
     }
     val manifest = files[UNIT1_MANIFEST_NAME]
     if (manifest != null) {
-        val digest = jsonStringField(manifest, "instructionalContentDigest")
-        if (digest != rendered.instructionalContentDigest) {
-            errors += "Instructional-content digest does not match the application digest"
+        val digest = jsonStringField(manifest, "contentReviewDigest")
+        if (digest != rendered.contentReviewDigest) {
+            errors += "Content-review digest does not match the application digest"
         }
         val packageDigest = jsonStringField(manifest, "reviewPackageDigest")
         if (packageDigest != rendered.reviewPackageDigest) {
             errors += "Review package digest does not match the review package"
         }
+        if (jsonStringField(manifest, "repositorySourceDigest") != rendered.repositorySourceDigest) {
+            errors += "Repository source digest does not match the release binding"
+        }
         if (digest != null && digest == packageDigest) {
-            errors += "Review package digest is only an alias of the instructional-content digest"
+            errors += "Review package digest is only an alias of the content-review digest"
         }
         if (jsonStringField(manifest, "sourceCommit") != UNIT1_REVIEW_SOURCE_COMMIT) {
             errors += "Package source commit does not match the curriculum revision"
@@ -537,11 +545,14 @@ private fun renderPacket(review: Unit1ReviewPackage): String {
         append("- Application: $UNIT1_REVIEW_APPLICATION_ID\n")
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
         append("- Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT\n")
-        append("- Instructional-content SHA-256: ${review.instructionalContentDigest}\n")
-        append("- Review-package SHA-256: ${review.reviewPackageDigest}\n\n")
-        append("The instructional-content digest approves the governed curriculum. ")
-        append("The review-package digest verifies this packet: ordered records, relationship hashes, and every instructional edge. ")
-        append("A later approval binds only to version $UNIT1_REVIEW_VERSION_NAME and the instructional-content digest.\n\n")
+        append("- Content-review SHA-256: ${review.contentReviewDigest}\n")
+        append("- Review-package SHA-256: ${review.reviewPackageDigest}\n")
+        append("- Repository source SHA-256: ${review.repositorySourceDigest}\n\n")
+        append("The content-review digest is what a reviewer approves. It covers instructional substance, mapping notes, sources, and rights. ")
+        append("Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.\n\n")
+        append("The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.\n\n")
+        append("The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. ")
+        append("That change does not replace the signed content-review digest.\n\n")
         append("## Unit\n\n")
         append(unit.content)
         append("\n\n## Not yet approved\n\n")
@@ -586,8 +597,9 @@ private fun renderManifest(review: Unit1ReviewPackage): String {
         append("  \"versionName\": ${jsonString(UNIT1_REVIEW_VERSION_NAME)},\n")
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
         append("  \"sourceCommit\": ${jsonString(UNIT1_REVIEW_SOURCE_COMMIT)},\n")
-        append("  \"instructionalContentDigest\": ${jsonString(review.instructionalContentDigest)},\n")
+        append("  \"contentReviewDigest\": ${jsonString(review.contentReviewDigest)},\n")
         append("  \"reviewPackageDigest\": ${jsonString(review.reviewPackageDigest)},\n")
+        append("  \"repositorySourceDigest\": ${jsonString(review.repositorySourceDigest)},\n")
         append("  \"linguisticReviewStatus\": \"PENDING_QUALIFIED_REVIEW\",\n")
         append("  \"unit\": {\n")
         append("    \"id\": \"unit-1\",\n")
@@ -675,16 +687,19 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
         Schema version: $UNIT1_REVIEW_SCHEMA_VERSION
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
         Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT
-        Instructional-content digest: ${review.instructionalContentDigest}
+        Content-review digest: ${review.contentReviewDigest}
         Review-package digest: ${review.reviewPackageDigest}
+        Repository source digest: ${review.repositorySourceDigest}
 
         This packet was generated from the packaged curriculum. It does not perform review.
 
         ## Digests
 
-        The instructional-content digest is the application digest of the governed curriculum. It is canonical JSON, digest schema ${V2Validator.INSTRUCTIONAL_DIGEST_SCHEMA}, covering linguistic, pedagogical, mapping, provenance, and rights fields. A later content approval binds only to version $UNIT1_REVIEW_VERSION_NAME and that digest. Any later change to a governed curriculum field invalidates the affected approval.
+        `contentReviewDigest` is what the reviewer approves. It is canonical JSON, digest schema ${V2Validator.CONTENT_REVIEW_DIGEST_SCHEMA}. It includes Russian and English instructional content, examples, options, answers, feedback, remediation content and relationships, objectives, sessions, steps, mapping notes, sources, rights, provenance, classifications, audio and text relationships, and advancement rules. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive instructional, mapping, source, or rights content changes it and invalidates the affected approval. Approval binds only to version $UNIT1_REVIEW_VERSION_NAME and this digest.
 
-        The review-package digest binds this packet itself: manifest metadata, ordered records, per-record hashes (including objective and session relationships), every instructional edge, book-directed and unavailable lists, and the instructional-content digest. Use it to verify that a decision refers to this exact package. It does not approve the curriculum by itself.
+        `reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, and the content-review digest. It does not approve the curriculum by itself.
+
+        `repositorySourceDigest` is the release-gate hash of repository inputs. It tracks the repository and release state after an approval is recorded. A later commit changes it. Release-gate validation and the state-transition rules still have to accept that repository state. It is not the digest the reviewer signs.
 
         ## Qualifications
 
@@ -696,7 +711,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and instructional-content digest ${review.instructionalContentDigest}. Confirm the review-package digest ${review.reviewPackageDigest} before relying on this packet. Any later instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and content-review digest ${review.contentReviewDigest}. Confirm review-package digest ${review.reviewPackageDigest} before relying on this packet. Any later substantive instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment.
 
@@ -956,7 +971,7 @@ private fun record(
 }
 
 private fun reviewPackageDigest(
-    instructionalContentDigest: String,
+    contentReviewDigest: String,
     records: List<Unit1ReviewRecord>,
     edges: List<Unit1ReviewEdge>,
     bookDirectedIds: List<String>,
@@ -972,7 +987,7 @@ private fun reviewPackageDigest(
             "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
             "sourceCommit" to canonStr(UNIT1_REVIEW_SOURCE_COMMIT),
-            "instructionalContentDigest" to canonStr(instructionalContentDigest),
+            "contentReviewDigest" to canonStr(contentReviewDigest),
             "linguisticReviewStatus" to canonStr("PENDING_QUALIFIED_REVIEW"),
             "unit" to canonObj(
                 "id" to canonStr("unit-1"),
@@ -1014,6 +1029,11 @@ private fun canonObj(vararg fields: Pair<String, String>): String {
 private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
 
 private fun canonStr(value: String): String = jsonString(value)
+
+internal fun repositorySourceDigest(): String {
+    val root = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+    return currentReleaseBinding(root)?.sourceDigest ?: error("Release source digest is unavailable")
+}
 
 private fun sha256(text: String): String {
     val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))

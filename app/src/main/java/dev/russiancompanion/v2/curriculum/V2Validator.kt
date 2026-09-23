@@ -55,32 +55,31 @@ internal object V2Validator {
     }
 
     /**
-     * SHA-256 of digest schema 1: compact JSON with fixed property order.
-     * Collections keep their packaged order. The approval signature
-     * (reviewer, pack version, reviewed digest, curriculum mapping id) is
-     * excluded so the digest can be computed and then stored.
+     * SHA-256 of content-review digest schema 2: compact JSON with fixed
+     * property order. This is the digest a reviewer signs. It omits workflow
+     * fields that change only when an approval is recorded: review status,
+     * reviewer signature, reviewed digest, mapping approval status, install
+     * state, and readiness.
      */
-    internal fun instructionalContentDigest(pack: V2CurriculumPack): String {
+    internal fun contentReviewDigest(pack: V2CurriculumPack): String {
         val digest = MessageDigest.getInstance("SHA-256").digest(
             canonicalInstructionalDocument(pack).toByteArray(Charsets.UTF_8),
         )
         return digest.joinToString("") { byte -> "%02x".format(byte) }
     }
 
-    internal const val INSTRUCTIONAL_DIGEST_SCHEMA = 1
+    internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
+
+    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
+
+    internal const val INSTRUCTIONAL_DIGEST_SCHEMA = CONTENT_REVIEW_DIGEST_SCHEMA
 
     private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
-        val review = pack.linguisticReview
         return canonObj(
-            "digestSchema" to canonNum(INSTRUCTIONAL_DIGEST_SCHEMA),
+            "digestSchema" to canonNum(CONTENT_REVIEW_DIGEST_SCHEMA),
             "schemaVersion" to canonNum(pack.schemaVersion),
             "packId" to canonStr(pack.packId),
             "packVersion" to canonNum(pack.packVersion),
-            "linguisticReview" to canonObj(
-                "id" to canonStr(review.id),
-                "status" to canonStr(review.status),
-                "notes" to canonStrOrNull(review.notes),
-            ),
             "sources" to canonArr(pack.sources.map { source ->
                 canonObj(
                     "id" to canonStr(source.id),
@@ -106,7 +105,6 @@ internal object V2Validator {
                     "group" to canonStr(letter.group),
                     "englishNote" to canonStr(letter.englishNote),
                     "sourceId" to canonStr(letter.sourceId),
-                    "reviewStatus" to canonStr(letter.reviewStatus),
                     "audioAssetId" to canonStrOrNull(letter.audioAssetId),
                     "exampleWordId" to canonStrOrNull(letter.exampleWordId),
                     "latinLookalike" to canonStrOrNull(letter.latinLookalike),
@@ -120,7 +118,6 @@ internal object V2Validator {
                     "display" to canonStr(example.display),
                     "note" to canonStr(example.note),
                     "sourceId" to canonStr(example.sourceId),
-                    "reviewStatus" to canonStr(example.reviewStatus),
                     "objectiveId" to canonStr(example.objectiveId),
                 )
             }),
@@ -136,7 +133,6 @@ internal object V2Validator {
                     "feedback" to canonStr(item.feedback),
                     "objectiveId" to canonStr(item.objectiveId),
                     "sourceId" to canonStr(item.sourceId),
-                    "reviewStatus" to canonStr(item.reviewStatus),
                     "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
                 )
             }),
@@ -148,21 +144,11 @@ internal object V2Validator {
                     "detail" to canonStr(reference.detail),
                     "introducedInUnit" to canonNum(reference.introducedInUnit),
                     "sourceId" to canonStr(reference.sourceId),
-                    "reviewStatus" to canonStr(reference.reviewStatus),
                     "classification" to canonStr(reference.classification),
                     "searchTerms" to canonArr(reference.searchTerms.map(::canonStr)),
                 )
             }),
             "units" to canonArr(pack.units.map(::canonicalUnit)),
-            "admissions" to canonObj(
-                "generatedRussianWords" to canonNum(pack.admissions.generatedRussianWords),
-                "penguinProseAssets" to canonNum(pack.admissions.penguinProseAssets),
-                "catalogAudioBoundToUnits" to canonNum(pack.admissions.catalogAudioBoundToUnits),
-                "unverifiedExampleWords" to canonNum(pack.admissions.unverifiedExampleWords),
-                "futureRussianItems" to canonNum(pack.admissions.futureRussianItems),
-                "handwritingAssets" to canonNum(pack.admissions.handwritingAssets),
-                "mappedPronunciationAudio" to canonNum(pack.admissions.mappedPronunciationAudio),
-            ),
         )
     }
 
@@ -173,10 +159,7 @@ internal object V2Validator {
             "title" to canonStr(unit.title),
             "shortLabel" to canonStr(unit.shortLabel),
             "topicSummary" to canonStr(unit.topicSummary),
-            "installState" to canonStr(unit.installState),
-            "readiness" to canonStr(unit.readiness),
             "penguinLesson" to canonNum(unit.penguinLesson),
-            "mappingStatus" to canonStr(unit.mappingStatus),
             "mappingNote" to canonStr(unit.mappingNote),
             "prerequisiteUnitNumbers" to canonArr(unit.prerequisiteUnitNumbers.map(::canonNum)),
             "estimatedMinutes" to canonNumOrNull(unit.estimatedMinutes),
@@ -277,9 +260,9 @@ internal object V2Validator {
             errors += "APPROVED review is missing ${missing.joinToString(", ")}"
             return
         }
-        val expected = instructionalContentDigest(pack)
+        val expected = contentReviewDigest(pack)
         if (review.reviewedContentDigest != expected) {
-            errors += "APPROVED review digest does not match the shipped instructional content"
+            errors += "APPROVED review digest does not match the shipped content-review digest"
         }
     }
 
@@ -392,10 +375,10 @@ internal object V2Validator {
         if (review.status != "APPROVED" ||
             review.reviewer.isNullOrBlank() ||
             review.packVersion != pack.packVersion ||
-            review.reviewedContentDigest != instructionalContentDigest(pack) ||
+            review.reviewedContentDigest != contentReviewDigest(pack) ||
             review.curriculumMappingId.isNullOrBlank()
         ) {
-            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and instructional-content digest"
+            errors += "Installed unit ${unit.number} approval must bind to the shipped pack version and content-review digest"
         }
         val steps = unit.sessions.flatMap { it.steps }
         val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()

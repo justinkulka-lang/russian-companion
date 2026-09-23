@@ -33,8 +33,9 @@ class Unit1ReviewPackageTest {
     fun packageDigestIsTheInstructionalContentDigest() {
         val pack = pack()
         val review = buildUnit1ReviewPackage(pack)
-        assertEquals(V2Validator.instructionalContentDigest(pack), review.instructionalContentDigest)
-        assertNotEquals(review.instructionalContentDigest, review.reviewPackageDigest)
+        assertEquals(V2Validator.contentReviewDigest(pack), review.contentReviewDigest)
+        assertNotEquals(review.contentReviewDigest, review.reviewPackageDigest)
+        assertEquals(repositorySourceDigest(), review.repositorySourceDigest)
         assertTrue(review.edges.any { it.kind == "INSTRUCTION" })
         assertTrue(review.edges.any { it.kind == "REMEDIATION" })
         assertTrue(review.edges.any { it.kind == "REFERENCE" })
@@ -97,8 +98,8 @@ class Unit1ReviewPackageTest {
         val badHash = manifest.replace(uniqueRecordHash, "0".repeat(64))
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badHash)).any { it.contains("does not match") })
 
-        val badDigest = manifest.replace(buildUnit1ReviewPackage(pack).instructionalContentDigest, "1".repeat(64))
-        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badDigest)).any { it.contains("Instructional-content digest does not match") })
+        val badDigest = manifest.replace(buildUnit1ReviewPackage(pack).contentReviewDigest, "1".repeat(64))
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badDigest)).any { it.contains("Content-review digest does not match") })
 
         val badPackage = manifest.replace(buildUnit1ReviewPackage(pack).reviewPackageDigest, "2".repeat(64))
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badPackage)).any { it.contains("Review package digest does not match") })
@@ -153,7 +154,7 @@ class Unit1ReviewPackageTest {
     @Test
     fun instructionalDigestChangesForEachGovernedFieldCategory() {
         val pack = pack()
-        val baseline = V2Validator.instructionalContentDigest(pack)
+        val baseline = V2Validator.contentReviewDigest(pack)
         val letter = pack.letters.first()
         val example = pack.examples.first()
         val item = pack.items.first()
@@ -163,23 +164,19 @@ class Unit1ReviewPackageTest {
         val mutations = listOf(
             "letter note" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = it.englishNote + " x") else it }),
             "letter source" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(sourceId = it.sourceId + "-x") else it }),
-            "letter review" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(reviewStatus = "REJECTED") else it }),
             "letter audio" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(audioAssetId = "audio-x") else it }),
             "letter example word" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(exampleWordId = "word-x") else it }),
             "letter lookalike" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(latinLookalike = (it.latinLookalike ?: "") + "Z") else it }),
             "example note" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(note = it.note + " x") else it }),
             "example source" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(sourceId = it.sourceId + "-x") else it }),
-            "example review" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(reviewStatus = "REJECTED") else it }),
             "check options" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(options = it.options + "extra") else it }),
             "check feedback" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = it.feedback + " x") else it }),
             "check prompt letter" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(promptLetter = (it.promptLetter ?: "") + "x") else it }),
             "check source" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(sourceId = it.sourceId + "-x") else it }),
-            "check review" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(reviewStatus = "REJECTED") else it }),
             "reference title" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(title = it.title + " x") else it }),
             "reference summary" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(summary = it.summary + " x") else it }),
             "reference detail" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(detail = it.detail + " x") else it }),
             "reference source" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(sourceId = it.sourceId + "-x") else it }),
-            "reference review" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(reviewStatus = "REJECTED") else it }),
             "reference search" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(searchTerms = it.searchTerms + "extra") else it }),
             "objective title" to mapUnit(pack) { unit -> unit.copy(objectives = unit.objectives.mapIndexed { index, objective -> if (index == 0) objective.copy(title = objective.title + " x") else objective }) },
             "objective kind" to mapUnit(pack) { unit -> unit.copy(objectives = unit.objectives.mapIndexed { index, objective -> if (index == 0) objective.copy(kind = objective.kind + "_X") else objective }) },
@@ -218,17 +215,91 @@ class Unit1ReviewPackageTest {
                 unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(unavailableReason = "closed")) + session.steps.drop(1))) + unit.sessions.drop(1))
             },
             "advancement" to mapUnit(pack) { unit -> unit.copy(advancement = unit.advancement!!.copy(minimumDistinctChecks = unit.advancement.minimumDistinctChecks + 1)) },
-            "mapping status" to mapUnit(pack) { unit -> unit.copy(mappingStatus = unit.mappingStatus + "_X") },
             "mapping note" to mapUnit(pack) { unit -> unit.copy(mappingNote = unit.mappingNote + " x") },
             "source" to pack.copy(sources = pack.sources.map { if (it.id == source.id) it.copy(title = it.title + " x") else it }),
             "rights" to pack.copy(rights = pack.rights.map { if (it.id == rights.id) it.copy(license = it.license + " x") else it }),
         )
         mutations.forEach { (label, mutated) ->
-            assertNotEquals(label, baseline, V2Validator.instructionalContentDigest(mutated))
+            assertNotEquals(label, baseline, V2Validator.contentReviewDigest(mutated))
+        }
+        val workflow = listOf(
+            "letter review" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(reviewStatus = "APPROVED") else it }),
+            "example review" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(reviewStatus = "APPROVED") else it }),
+            "check review" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(reviewStatus = "APPROVED") else it }),
+            "reference review" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(reviewStatus = "APPROVED") else it }),
+            "mapping status" to mapUnit(pack) { unit -> unit.copy(mappingStatus = "APPROVED") },
+            "install state" to mapUnit(pack) { unit -> unit.copy(installState = "INSTALLED") },
+            "readiness" to mapUnit(pack) { unit -> unit.copy(readiness = "INSTALLABLE") },
+            "review signature" to pack.copy(linguisticReview = pack.linguisticReview.copy(status = "APPROVED", reviewer = "Pat Reviewer", reviewedContentDigest = baseline, packVersion = pack.packVersion, curriculumMappingId = "map-owned-edition")),
+        )
+        workflow.forEach { (label, mutated) ->
+            assertEquals(label, baseline, V2Validator.contentReviewDigest(mutated))
         }
         val collidedNote = pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = "AB", sourceId = "C") else it })
         val collidedSource = pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = "A", sourceId = "BC") else it })
-        assertNotEquals(V2Validator.instructionalContentDigest(collidedNote), V2Validator.instructionalContentDigest(collidedSource))
+        assertNotEquals(V2Validator.contentReviewDigest(collidedNote), V2Validator.contentReviewDigest(collidedSource))
+    }
+
+    @Test
+    fun contentReviewDigestSurvivesApprovalActivation() {
+        val pack = pack()
+        val pending = buildUnit1ReviewPackage(pack)
+        val signed = pending.contentReviewDigest
+        val worksheet = renderUnit1ReviewFiles(pack).files.getValue(UNIT1_WORKSHEET_NAME)
+        val attested = worksheet.replace(
+            "\t\t\t\t\t\t\n",
+            "\tAPPROVED\t\tPat Reviewer\t2026-09-23\t$signed\tAdvanced Russian and curriculum review attested.\n",
+        )
+        assertTrue(attested.contains("Pat Reviewer"))
+        assertFalse(worksheet.contains("Pat Reviewer"))
+
+        val activated = pack.copy(
+            letters = pack.letters.map { it.copy(reviewStatus = "APPROVED") },
+            examples = pack.examples.map { it.copy(reviewStatus = "APPROVED") },
+            items = pack.items.map { it.copy(reviewStatus = "APPROVED") },
+            references = pack.references.map { reference ->
+                if (reference.classification == "LINGUISTIC_INSTRUCTION" || reference.reviewStatus != "NOT_REQUIRED") {
+                    reference.copy(reviewStatus = "APPROVED")
+                } else {
+                    reference
+                }
+            },
+            admissions = pack.admissions.copy(mappedPronunciationAudio = 1),
+            units = pack.units.map { unit ->
+                if (unit.number == 1) {
+                    unit.copy(installState = "INSTALLED", readiness = "INSTALLABLE", mappingStatus = "APPROVED")
+                } else {
+                    unit
+                }
+            },
+            linguisticReview = pack.linguisticReview.copy(
+                status = "APPROVED",
+                reviewer = "Pat Reviewer",
+                packVersion = pack.packVersion,
+                curriculumMappingId = "map-owned-edition",
+                notes = "Qualification attested on 2026-09-23. This note is not part of the signed content.",
+            ),
+        )
+        assertEquals(signed, V2Validator.contentReviewDigest(activated))
+        val recorded = activated.copy(
+            linguisticReview = activated.linguisticReview.copy(reviewedContentDigest = signed),
+        )
+        assertEquals(signed, V2Validator.contentReviewDigest(recorded))
+        assertNotEquals(pending.reviewPackageDigest, buildUnit1ReviewPackage(recorded).reviewPackageDigest)
+        val accepted = V2Validator.validate(recorded)
+        assertTrue(accepted.errors.joinToString("\n"), accepted.ok)
+
+        val mutated = recorded.copy(
+            items = recorded.items.mapIndexed { index, item ->
+                if (index == 0) item.copy(feedback = item.feedback + " x") else item
+            },
+        )
+        assertNotEquals(signed, V2Validator.contentReviewDigest(mutated))
+        val invalid = V2Validator.validate(mutated)
+        assertFalse(invalid.ok)
+        assertTrue(invalid.errors.any { it.contains("digest") })
+        assertEquals("DEVELOPMENT", pack.unit(1)!!.installState)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)!!.readiness)
     }
 
     private fun mapUnit(

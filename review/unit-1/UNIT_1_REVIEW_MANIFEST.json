@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "packageId": "unit-1-linguistic-and-mapping-review",
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
   "sourceCommit": "49eae12f175574add477ba4f15224650abaa2293",
-  "instructionalContentDigest": "df33496875f0f66581900c2ec0f925d08ed0f1840e40067abd749dc8d59bde1a",
-  "reviewPackageDigest": "0a7ec32b66f0517989ab708ad7048511824c4b895e36c78a19864a4c1d762f63",
+  "contentReviewDigest": "048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627",
+  "reviewPackageDigest": "1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296",
+  "repositorySourceDigest": "82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe",
   "linguisticReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {
     "id": "unit-1",

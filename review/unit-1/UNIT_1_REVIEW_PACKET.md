@@ -6,14 +6,19 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 
 ## Package identity
 
-- Schema version: 2
+- Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
 - Curriculum source commit: 49eae12f175574add477ba4f15224650abaa2293
-- Instructional-content SHA-256: df33496875f0f66581900c2ec0f925d08ed0f1840e40067abd749dc8d59bde1a
-- Review-package SHA-256: 0a7ec32b66f0517989ab708ad7048511824c4b895e36c78a19864a4c1d762f63
+- Content-review SHA-256: 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627
+- Review-package SHA-256: 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296
+- Repository source SHA-256: 82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe
 
-The instructional-content digest approves the governed curriculum. The review-package digest verifies this packet: ordered records, relationship hashes, and every instructional edge. A later approval binds only to version 2.0.0-dev and the instructional-content digest.
+The content-review digest is what a reviewer approves. It covers instructional substance, mapping notes, sources, and rights. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
+
+The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.
+
+The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. That change does not replace the signed content-review digest.
 
 ## Unit
 
