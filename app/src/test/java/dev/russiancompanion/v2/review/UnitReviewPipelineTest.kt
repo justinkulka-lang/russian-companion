@@ -76,7 +76,7 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
-        listOf(1, 2).forEach { number ->
+        listOf(1, 2, 3, 4, 5).forEach { number ->
             val dir = File(repo(), "review/unit-$number")
             if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
@@ -97,7 +97,45 @@ class UnitReviewPipelineTest {
         assertTrue(errors.any { it.contains("cannot resolve") })
         val outside = buildUnitReviewPackage(pack, 31)
         assertTrue(outside.unresolved.any { it.contains("outside Units 1-30") })
-        assertNotEquals(buildUnitReviewPackage(pack, 3).reviewPackageDigest, buildUnitReviewPackage(pack, 4).reviewPackageDigest)
+        assertNotEquals(buildUnitReviewPackage(pack, 6).reviewPackageDigest, buildUnitReviewPackage(pack, 7).reviewPackageDigest)
+    }
+
+    @Test
+    fun aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit() {
+        val pack = pack()
+        val unitThree = V2Validator.unitContentReviewDigest(pack, 3)
+        val unitFour = V2Validator.unitContentReviewDigest(pack, 4)
+        val unitFive = V2Validator.unitContentReviewDigest(pack, 5)
+        val local = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number != 5) unit else {
+                    val session = unit.sessions.first { it.steps.any { step -> step.id == "u5-st-questions" } }
+                    unit.copy(
+                        sessions = unit.sessions.map { current ->
+                            if (current.id != session.id) current else current.copy(
+                                steps = current.steps.map { step ->
+                                    if (step.id == "u5-st-questions") step.copy(body = step.body + " extra book direction") else step
+                                },
+                            )
+                        },
+                    )
+                }
+            },
+        )
+        assertEquals(unitThree, V2Validator.unitContentReviewDigest(local, 3))
+        assertEquals(unitFour, V2Validator.unitContentReviewDigest(local, 4))
+        assertNotEquals(unitFive, V2Validator.unitContentReviewDigest(local, 5))
+        assertEquals(buildUnitReviewPackage(pack, 3).reviewPackageDigest, buildUnitReviewPackage(local, 3).reviewPackageDigest)
+
+        val shared = pack.copy(
+            references = pack.references.map { reference ->
+                if (reference.id == "ref-book-topics") reference.copy(detail = reference.detail + " extra") else reference
+            },
+        )
+        assertNotEquals(unitThree, V2Validator.unitContentReviewDigest(shared, 3))
+        assertNotEquals(unitFive, V2Validator.unitContentReviewDigest(shared, 5))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), V2Validator.unitContentReviewDigest(shared, 1))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 2), V2Validator.unitContentReviewDigest(shared, 2))
     }
 
     @Test
@@ -162,7 +200,7 @@ class UnitReviewPipelineTest {
         val rejected = curriculumSourceCommitErrors(predating, root)
         assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("does not contain this revision's governed curriculum") })
         assertTrue(rejected.any { it.contains("Unit 2 content-review digest") })
-        listOf(1, 2).forEach { number ->
+        listOf(1, 2, 3, 4, 5).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
             assertTrue(manifest.contains(CURRICULUM_SOURCE_COMMIT))
             assertFalse(manifest.contains(predating))

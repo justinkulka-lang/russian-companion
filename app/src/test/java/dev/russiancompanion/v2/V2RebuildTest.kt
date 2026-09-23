@@ -64,6 +64,18 @@ class V2RebuildTest {
         assertEquals("DEVELOPMENT", pack.unit(2)?.installState)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(2)?.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(2)?.mappingStatus)
+        listOf(3, 4, 5).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
+            assertEquals(listOf(number - 1), unit.prerequisiteUnitNumbers)
+            assertTrue(unit.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
+            assertTrue(unit.objectives.first { it.kind == "RECOGNITION" }.exampleIds.size >= 2)
+            assertTrue(unit.sessions.flatMap { it.steps }.filter { it.kind == "BOOK" }.all { !it.bookDirection.isNullOrBlank() })
+        }
+        assertEquals(listOf(1, 2, 3, 4, 5), pack.unitReviews.map { it.unitNumber })
+        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-hw" }.kind)
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-pron" }.kind)
@@ -89,12 +101,12 @@ class V2RebuildTest {
             assertTrue(objective.checkItemIds.isNotEmpty())
             assertTrue(objective.remediationStepIds.isNotEmpty())
         }
-        assertTrue(pack.units.drop(2).all { it.installState == "NOT_YET_INSTALLED" })
+        assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
         assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
-        assertEquals(listOf(1, 2), pack.unitReviews.map { it.unitNumber })
+        assertEquals(listOf(1, 2, 3, 4, 5), pack.unitReviews.map { it.unitNumber })
         assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
@@ -163,7 +175,15 @@ class V2RebuildTest {
         assertTrue(unitOneResult.errors.any { it.contains("Unit 2 readiness claims review approval") })
         assertTrue(unitOneResult.errors.none { it.contains("Unit 1 readiness claims review approval") })
 
-        val complete = approveUnitReview(unitOneOnly, 2)
+        var partial = unitOneOnly
+        for (number in 2..4) {
+            partial = approveUnitReview(partial, number)
+            val partialResult = V2Validator.validate(partial)
+            assertFalse(partialResult.errors.joinToString("\n"), partialResult.ok)
+            assertTrue(partialResult.errors.any { it.contains("Unit ${number + 1} readiness claims review approval") })
+            assertTrue(partialResult.errors.none { it.contains("Unit $number readiness claims review approval") })
+        }
+        val complete = approveUnitReview(partial, 5)
         val completeResult = V2Validator.validate(complete)
         assertTrue(completeResult.errors.joinToString(), completeResult.ok)
     }
@@ -353,14 +373,26 @@ class V2RebuildTest {
     }
 
     @Test
-    fun unitsThreeToThirtyAreNotInstalledAndDoNotJump() {
+    fun unitsThreeToFiveAreContentCompleteAndLaterUnitsStayClosed() {
         val pack = pack()
         val learner = LocalStore.openInMemory(context()).also { stores += it }.v2LearnerView()
         val unit3 = pack.unit(3)!!
-        assertEquals(V2UnitState.NOT_YET_INSTALLED, unitState(pack, unit3, learner))
+        assertEquals(V2UnitState.LOCKED, unitState(pack, unit3, learner))
         assertFalse(canOpenUnit(unitState(pack, unit3, learner)))
-        assertTrue(unit3.sessions.isEmpty())
-        assertTrue(unit3.objectives.isEmpty())
+        assertTrue(unit3.sessions.isNotEmpty())
+        assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() && it.objectives.isEmpty() })
+        val store = LocalStore.openInMemory(context()).also { stores += it }
+        store.v2CompleteUnit(1, "2026-09-23T12:00")
+        store.v2CompleteUnit(2, "2026-09-23T12:00")
+        store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 3, onboardingCompleted = true))
+        assertEquals(V2UnitState.CURRENT, unitState(pack, unit3, store.v2LearnerView()))
+        assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(4)!!, store.v2LearnerView()))
+        val text = (3..5).joinToString(" ") { number ->
+            val unit = pack.unit(number)!!
+            unit.topicSummary + unit.mappingNote + unit.sessions.flatMap { it.steps }.joinToString(" ") { it.body }
+        }
+        assertFalse(text.contains("Penguin-aligned"))
+        assertFalse(text.contains("The New Penguin Russian Course"))
     }
 
     @Test

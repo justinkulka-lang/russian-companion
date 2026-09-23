@@ -659,8 +659,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..2) {
-            errors += "Only Units 1-2 may be development content in this pack"
+        if (unit.number !in 1..5) {
+            errors += "Only Units 1-5 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"

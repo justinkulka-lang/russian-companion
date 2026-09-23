@@ -35,6 +35,39 @@
       "reviewedContentDigest": null,
       "curriculumMappingId": null,
       "notes": "No qualified reviewer has signed Unit 2."
+    },
+    {
+      "id": "rev-pending-unit-3",
+      "unitNumber": 3,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 3."
+    },
+    {
+      "id": "rev-pending-unit-4",
+      "unitNumber": 4,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 4."
+    },
+    {
+      "id": "rev-pending-unit-5",
+      "unitNumber": 5,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 5."
     }
   ],
   "sources": [
@@ -825,6 +858,96 @@
       "sourceId": "src-unicode-cyrillic",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u1-iotated"
+    },
+    {
+      "id": "ex-u3-0413",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0413",
+      "display": "Г / г",
+      "note": "Printed pair Г г from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u3-review"
+    },
+    {
+      "id": "ex-u3-0414",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0414",
+      "display": "Д / д",
+      "note": "Printed pair Д д from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u3-review"
+    },
+    {
+      "id": "ex-u3-0422",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0422",
+      "display": "Т / т",
+      "note": "Printed pair Т т from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u3-review"
+    },
+    {
+      "id": "ex-u4-041f",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-041f",
+      "display": "П / п",
+      "note": "Printed pair П п from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u4-review"
+    },
+    {
+      "id": "ex-u4-041a",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-041a",
+      "display": "К / к",
+      "note": "Printed pair К к from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u4-review"
+    },
+    {
+      "id": "ex-u4-041e",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-041e",
+      "display": "О / о",
+      "note": "Printed pair О о from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u4-review"
+    },
+    {
+      "id": "ex-u5-0416",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0416",
+      "display": "Ж / ж",
+      "note": "Printed pair Ж ж from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u5-review"
+    },
+    {
+      "id": "ex-u5-0417",
+      "kind": "PRINT_PAIR",
+      "letterId": "letter-0417",
+      "display": "З / з",
+      "note": "Printed pair З з from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u5-review"
+    },
+    {
+      "id": "ex-u5-0418",
+      "kind": "LETTER_FORM",
+      "letterId": "letter-0418",
+      "display": "И / и",
+      "note": "Printed pair И и from the letters already in this pack.",
+      "sourceId": "src-unicode-cyrillic",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u5-review"
     }
   ],
   "items": [
@@ -1223,6 +1346,168 @@
       "sourceId": "src-app-english-v2",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false
+    },
+    {
+      "id": "u3-i-0413",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Г",
+      "options": [
+        "Cyrillic Г",
+        "Cyrillic Т",
+        "Cyrillic П"
+      ],
+      "answer": "Cyrillic Г",
+      "feedback": "Г is a Cyrillic letter already in this pack. It is not Т or П.",
+      "objectiveId": "obj-u3-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u3-i-0414",
+      "kind": "PRINT_PAIR",
+      "language": "en",
+      "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+      "promptLetter": "Д",
+      "options": [
+        "Д / д",
+        "Д / т",
+        "Т / д"
+      ],
+      "answer": "Д / д",
+      "feedback": "Д / д is one printed letter. Т is a different letter.",
+      "objectiveId": "obj-u3-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u3-i-0422",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Т",
+      "options": [
+        "Cyrillic Т",
+        "Cyrillic Г",
+        "Cyrillic Д"
+      ],
+      "answer": "Cyrillic Т",
+      "feedback": "Т is a Cyrillic letter already in this pack. It is not Г or Д.",
+      "objectiveId": "obj-u3-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u4-i-041f",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "П",
+      "options": [
+        "Cyrillic П",
+        "Cyrillic Г",
+        "Cyrillic Т"
+      ],
+      "answer": "Cyrillic П",
+      "feedback": "П is a Cyrillic letter already in this pack. It is not Г or Т.",
+      "objectiveId": "obj-u4-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u4-i-041a",
+      "kind": "PRINT_PAIR",
+      "language": "en",
+      "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+      "promptLetter": "К",
+      "options": [
+        "К / к",
+        "К / п",
+        "П / к"
+      ],
+      "answer": "К / к",
+      "feedback": "К / к is one printed letter. П is a different letter.",
+      "objectiveId": "obj-u4-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u4-i-041e",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "О",
+      "options": [
+        "Cyrillic О",
+        "Cyrillic С",
+        "Cyrillic Э"
+      ],
+      "answer": "Cyrillic О",
+      "feedback": "О is a Cyrillic letter already in this pack. It is not С or Э.",
+      "objectiveId": "obj-u4-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-0416",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "Ж",
+      "options": [
+        "Cyrillic Ж",
+        "Cyrillic Х",
+        "Cyrillic К"
+      ],
+      "answer": "Cyrillic Ж",
+      "feedback": "Ж is a Cyrillic letter already in this pack. It is not Х or К.",
+      "objectiveId": "obj-u5-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-0417",
+      "kind": "PRINT_PAIR",
+      "language": "en",
+      "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+      "promptLetter": "З",
+      "options": [
+        "З / з",
+        "З / э",
+        "Э / з"
+      ],
+      "answer": "З / з",
+      "feedback": "З / з is one printed letter. Э is a different letter.",
+      "objectiveId": "obj-u5-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-0418",
+      "kind": "LETTER_IDENTITY",
+      "language": "en",
+      "prompt": "Which printed letter is shown?",
+      "promptLetter": "И",
+      "options": [
+        "Cyrillic И",
+        "Cyrillic Н",
+        "Cyrillic Й"
+      ],
+      "answer": "Cyrillic И",
+      "feedback": "И is a Cyrillic letter already in this pack. It is not Н or Й.",
+      "objectiveId": "obj-u5-review",
+      "sourceId": "src-app-english-v2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false
     }
   ],
   "references": [
@@ -1354,6 +1639,19 @@
       "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "app limitations"
+      ]
+    },
+    {
+      "id": "ref-book-topics",
+      "title": "Later lesson topics stay in the book",
+      "summary": "Units 3–5 do not state phrases, gender, verb forms, or case endings.",
+      "detail": "Study those topics in the copy you own. The app reviews printed letters already in the pack and does not copy the book.",
+      "introducedInUnit": 3,
+      "sourceId": "src-app-english-v2",
+      "classification": "OPERATIONAL_GUIDANCE",
+      "reviewStatus": "NOT_REQUIRED",
+      "searchTerms": [
+        "later lesson topics stay in the book"
       ]
     }
   ],
@@ -2618,57 +2916,786 @@
       "id": "unit-3",
       "title": "Everyday phrases, naming things, basic grammar, and gender",
       "shortLabel": "Everyday phrases",
-      "topicSummary": "Everyday phrases, naming things, basic grammar, and gender",
-      "installState": "NOT_YET_INSTALLED",
-      "readiness": "NOT_PREPARED",
+      "topicSummary": "Content-complete development unit after Unit 2. Everyday phrases, naming, basic grammar, and gender stay in the owned book. The app reviews printed letters already in the pack and does not state those new forms. Qualified review and the owned-edition mapping are still pending.",
+      "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 3,
-      "mappingStatus": "NOT_STARTED",
-      "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
+      "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+      "mappingNote": "Proposed Lesson 3 mapping from the publisher's public table of contents: everyday phrases, naming things, basic grammar, and gender. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
       "prerequisiteUnitNumbers": [
         2
       ],
-      "estimatedMinutes": null,
-      "objectives": [],
-      "sessions": [],
-      "advancement": null
+      "estimatedMinutes": 73,
+      "objectives": [
+        {
+          "id": "obj-u3-review",
+          "unitNumber": 3,
+          "title": "Review printed letters already in the pack",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u3-st-review"
+          ],
+          "exampleIds": [
+            "ex-u3-0413",
+            "ex-u3-0414",
+            "ex-u3-0422"
+          ],
+          "practiceStepIds": [
+            "u3-st-review-guided"
+          ],
+          "checkItemIds": [
+            "u3-i-0413",
+            "u3-i-0414",
+            "u3-i-0422"
+          ],
+          "remediationStepIds": [
+            "u3-st-review"
+          ]
+        },
+        {
+          "id": "obj-u3-book",
+          "unitNumber": 3,
+          "title": "Complete Lesson 3 work in the owned book",
+          "kind": "SELF_ATTESTATION",
+          "instructionStepIds": [
+            "u3-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
+        }
+      ],
+      "sessions": [
+        {
+          "id": "u3-s-orient",
+          "title": "What this unit is for",
+          "estimatedMinutes": 6,
+          "objectiveIds": [
+            "obj-u3-review"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-orient",
+              "kind": "ORIENT",
+              "title": "Unit 3 stays with the owned book",
+              "body": "Proposed Lesson 3 is a topic from the publisher's public table of contents. It is not an approved edition alignment. New phrases and grammar for this lesson stay in the book you own. This unit reviews printed letters you already met.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Open Lesson 3 in your copy. Use the book for its explanations, examples, and exercises.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u3-s-phrases",
+          "title": "Everyday phrases and naming",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u3-book"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-phrases",
+              "kind": "BOOK",
+              "title": "Everyday phrases and naming stay in the book",
+              "body": "Study everyday phrases and naming things in Lesson 3 of your copy. This app does not supply those phrases.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study everyday phrases and naming things in Lesson 3 of your copy. This app does not supply those phrases.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u3-s-gender",
+          "title": "Basic grammar and gender",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u3-book"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-gender",
+              "kind": "BOOK",
+              "title": "Grammar and gender stay in the book",
+              "body": "Study basic grammar and gender in Lesson 3 of your copy. This app does not state those rules.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study basic grammar and gender in Lesson 3 of your copy. This app does not state those rules.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u3-s-review",
+          "title": "Printed-letter review",
+          "estimatedMinutes": 10,
+          "objectiveIds": [
+            "obj-u3-review"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-review",
+              "kind": "TEACH",
+              "title": "Keep printed letters available",
+              "body": "Review printed letters already in this pack. This review does not introduce the new lesson's phrases or grammar.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-cyrillic-print"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u3-0413",
+                "ex-u3-0414",
+                "ex-u3-0422"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u3-st-review-guided",
+              "kind": "GUIDED",
+              "title": "Match one printed pair",
+              "body": "Choose the printed letter named in the item.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u3-i-0413"
+              ],
+              "exampleIds": [
+                "ex-u3-0413"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u3-st-review"
+            },
+            {
+              "id": "u3-st-review-check",
+              "kind": "CHECK",
+              "title": "Letter identities",
+              "body": "Closed-response items about printed letters already in this pack.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u3-i-0413",
+                "u3-i-0414",
+                "u3-i-0422"
+              ],
+              "exampleIds": [
+                "ex-u3-0413",
+                "ex-u3-0414",
+                "ex-u3-0422"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u3-st-review"
+            }
+          ]
+        },
+        {
+          "id": "u3-s-record",
+          "title": "Self-record",
+          "estimatedMinutes": 8,
+          "objectiveIds": [
+            "obj-u3-book"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-record",
+              "kind": "SPEAK",
+              "title": "Optional recording without a score",
+              "body": "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u3-s-book",
+          "title": "Work in your book",
+          "estimatedMinutes": 25,
+          "objectiveIds": [
+            "obj-u3-book"
+          ],
+          "steps": [
+            {
+              "id": "u3-st-book",
+              "kind": "BOOK",
+              "title": "Lesson 3 in your copy",
+              "body": "Complete Lesson 3 in the edition you own. Self-attest when finished. This app does not copy that lesson.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Do Lesson 3 in your book, then return here to self-attest.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        }
+      ],
+      "advancement": {
+        "requireInstruction": true,
+        "requireBookSelfAttestation": true,
+        "requireAppChecks": true,
+        "minimumDistinctChecks": 2,
+        "requireDueReview": true,
+        "tutorOptional": true
+      }
     },
     {
       "number": 4,
       "id": "unit-4",
       "title": "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
       "shortLabel": "Verbs and cases",
-      "topicSummary": "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
-      "installState": "NOT_YET_INSTALLED",
-      "readiness": "NOT_PREPARED",
+      "topicSummary": "Content-complete development unit after Unit 3. Verbs, pronouns, present tense, stress, and the introduction to nouns and cases stay in the owned book. The app reviews printed letters already in the pack and does not state those forms. Qualified review and the owned-edition mapping are still pending.",
+      "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 4,
-      "mappingStatus": "NOT_STARTED",
-      "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
+      "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+      "mappingNote": "Proposed Lesson 4 mapping from the publisher's public table of contents: verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
       "prerequisiteUnitNumbers": [
         3
       ],
-      "estimatedMinutes": null,
-      "objectives": [],
-      "sessions": [],
-      "advancement": null
+      "estimatedMinutes": 73,
+      "objectives": [
+        {
+          "id": "obj-u4-review",
+          "unitNumber": 4,
+          "title": "Review printed letters already in the pack",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u4-st-review"
+          ],
+          "exampleIds": [
+            "ex-u4-041f",
+            "ex-u4-041a",
+            "ex-u4-041e"
+          ],
+          "practiceStepIds": [
+            "u4-st-review-guided"
+          ],
+          "checkItemIds": [
+            "u4-i-041f",
+            "u4-i-041a",
+            "u4-i-041e"
+          ],
+          "remediationStepIds": [
+            "u4-st-review"
+          ]
+        },
+        {
+          "id": "obj-u4-book",
+          "unitNumber": 4,
+          "title": "Complete Lesson 4 work in the owned book",
+          "kind": "SELF_ATTESTATION",
+          "instructionStepIds": [
+            "u4-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
+        }
+      ],
+      "sessions": [
+        {
+          "id": "u4-s-orient",
+          "title": "What this unit is for",
+          "estimatedMinutes": 6,
+          "objectiveIds": [
+            "obj-u4-review"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-orient",
+              "kind": "ORIENT",
+              "title": "Unit 4 stays with the owned book",
+              "body": "Proposed Lesson 4 is a topic from the publisher's public table of contents. It is not an approved edition alignment. New phrases and grammar for this lesson stay in the book you own. This unit reviews printed letters you already met.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Open Lesson 4 in your copy. Use the book for its explanations, examples, and exercises.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u4-s-verbs",
+          "title": "Verbs and the present tense",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u4-book"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-verbs",
+              "kind": "BOOK",
+              "title": "Verbs and present-tense forms stay in the book",
+              "body": "Study verbs, personal pronouns, and the present tense in Lesson 4 of your copy. This app does not state those forms.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study verbs, personal pronouns, and the present tense in Lesson 4 of your copy. This app does not state those forms.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u4-s-cases",
+          "title": "Word stress and noun cases",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u4-book"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-cases",
+              "kind": "BOOK",
+              "title": "Stress and noun cases stay in the book",
+              "body": "Study word stress and the introduction to nouns and cases in Lesson 4 of your copy. This app does not mark stress or case endings.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study word stress and the introduction to nouns and cases in Lesson 4 of your copy. This app does not mark stress or case endings.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u4-s-review",
+          "title": "Printed-letter review",
+          "estimatedMinutes": 10,
+          "objectiveIds": [
+            "obj-u4-review"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-review",
+              "kind": "TEACH",
+              "title": "Keep printed letters available",
+              "body": "Review printed letters already in this pack. This review does not introduce the new lesson's phrases or grammar.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-cyrillic-print"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u4-041f",
+                "ex-u4-041a",
+                "ex-u4-041e"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u4-st-review-guided",
+              "kind": "GUIDED",
+              "title": "Match one printed pair",
+              "body": "Choose the printed letter named in the item.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u4-i-041f"
+              ],
+              "exampleIds": [
+                "ex-u4-041f"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u4-st-review"
+            },
+            {
+              "id": "u4-st-review-check",
+              "kind": "CHECK",
+              "title": "Letter identities",
+              "body": "Closed-response items about printed letters already in this pack.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u4-i-041f",
+                "u4-i-041a",
+                "u4-i-041e"
+              ],
+              "exampleIds": [
+                "ex-u4-041f",
+                "ex-u4-041a",
+                "ex-u4-041e"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u4-st-review"
+            }
+          ]
+        },
+        {
+          "id": "u4-s-record",
+          "title": "Self-record",
+          "estimatedMinutes": 8,
+          "objectiveIds": [
+            "obj-u4-book"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-record",
+              "kind": "SPEAK",
+              "title": "Optional recording without a score",
+              "body": "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u4-s-book",
+          "title": "Work in your book",
+          "estimatedMinutes": 25,
+          "objectiveIds": [
+            "obj-u4-book"
+          ],
+          "steps": [
+            {
+              "id": "u4-st-book",
+              "kind": "BOOK",
+              "title": "Lesson 4 in your copy",
+              "body": "Complete Lesson 4 in the edition you own. Self-attest when finished. This app does not copy that lesson.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Do Lesson 4 in your book, then return here to self-attest.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        }
+      ],
+      "advancement": {
+        "requireInstruction": true,
+        "requireBookSelfAttestation": true,
+        "requireAppChecks": true,
+        "minimumDistinctChecks": 2,
+        "requireDueReview": true,
+        "tutorOptional": true
+      }
     },
     {
       "number": 5,
       "id": "unit-5",
       "title": "Questions, prepositional case, and indeclinable nouns",
       "shortLabel": "Questions",
-      "topicSummary": "Questions, prepositional case, and indeclinable nouns",
-      "installState": "NOT_YET_INSTALLED",
-      "readiness": "NOT_PREPARED",
+      "topicSummary": "Content-complete development unit after Unit 4. Questions, the prepositional case, and indeclinable nouns stay in the owned book. The app reviews printed letters already in the pack and does not state those forms. Qualified review and the owned-edition mapping are still pending.",
+      "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 5,
-      "mappingStatus": "NOT_STARTED",
-      "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
+      "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+      "mappingNote": "Proposed Lesson 5 mapping from the publisher's public table of contents: questions, prepositional case, and indeclinable nouns. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
       "prerequisiteUnitNumbers": [
         4
       ],
-      "estimatedMinutes": null,
-      "objectives": [],
-      "sessions": [],
-      "advancement": null
+      "estimatedMinutes": 73,
+      "objectives": [
+        {
+          "id": "obj-u5-review",
+          "unitNumber": 5,
+          "title": "Review printed letters already in the pack",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u5-st-review"
+          ],
+          "exampleIds": [
+            "ex-u5-0416",
+            "ex-u5-0417",
+            "ex-u5-0418"
+          ],
+          "practiceStepIds": [
+            "u5-st-review-guided"
+          ],
+          "checkItemIds": [
+            "u5-i-0416",
+            "u5-i-0417",
+            "u5-i-0418"
+          ],
+          "remediationStepIds": [
+            "u5-st-review"
+          ]
+        },
+        {
+          "id": "obj-u5-book",
+          "unitNumber": 5,
+          "title": "Complete Lesson 5 work in the owned book",
+          "kind": "SELF_ATTESTATION",
+          "instructionStepIds": [
+            "u5-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
+        }
+      ],
+      "sessions": [
+        {
+          "id": "u5-s-orient",
+          "title": "What this unit is for",
+          "estimatedMinutes": 6,
+          "objectiveIds": [
+            "obj-u5-review"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-orient",
+              "kind": "ORIENT",
+              "title": "Unit 5 stays with the owned book",
+              "body": "Proposed Lesson 5 is a topic from the publisher's public table of contents. It is not an approved edition alignment. New phrases and grammar for this lesson stay in the book you own. This unit reviews printed letters you already met.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Open Lesson 5 in your copy. Use the book for its explanations, examples, and exercises.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u5-s-questions",
+          "title": "Questions",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u5-book"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-questions",
+              "kind": "BOOK",
+              "title": "Question forms stay in the book",
+              "body": "Study questions in Lesson 5 of your copy. This app does not supply question words or patterns.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study questions in Lesson 5 of your copy. This app does not supply question words or patterns.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u5-s-prepositional",
+          "title": "Prepositional case and indeclinable nouns",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u5-book"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-prepositional",
+              "kind": "BOOK",
+              "title": "Prepositional case stays in the book",
+              "body": "Study the prepositional case and indeclinable nouns in Lesson 5 of your copy. This app does not state those endings.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Study the prepositional case and indeclinable nouns in Lesson 5 of your copy. This app does not state those endings.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u5-s-review",
+          "title": "Printed-letter review",
+          "estimatedMinutes": 10,
+          "objectiveIds": [
+            "obj-u5-review"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-review",
+              "kind": "TEACH",
+              "title": "Keep printed letters available",
+              "body": "Review printed letters already in this pack. This review does not introduce the new lesson's phrases or grammar.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-cyrillic-print"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u5-0416",
+                "ex-u5-0417",
+                "ex-u5-0418"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u5-st-review-guided",
+              "kind": "GUIDED",
+              "title": "Match one printed pair",
+              "body": "Choose the printed letter named in the item.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u5-i-0416"
+              ],
+              "exampleIds": [
+                "ex-u5-0416"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u5-st-review"
+            },
+            {
+              "id": "u5-st-review-check",
+              "kind": "CHECK",
+              "title": "Letter identities",
+              "body": "Closed-response items about printed letters already in this pack.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u5-i-0416",
+                "u5-i-0417",
+                "u5-i-0418"
+              ],
+              "exampleIds": [
+                "ex-u5-0416",
+                "ex-u5-0417",
+                "ex-u5-0418"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u5-st-review"
+            }
+          ]
+        },
+        {
+          "id": "u5-s-record",
+          "title": "Self-record",
+          "estimatedMinutes": 8,
+          "objectiveIds": [
+            "obj-u5-book"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-record",
+              "kind": "SPEAK",
+              "title": "Optional recording without a score",
+              "body": "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u5-s-book",
+          "title": "Work in your book",
+          "estimatedMinutes": 25,
+          "objectiveIds": [
+            "obj-u5-book"
+          ],
+          "steps": [
+            {
+              "id": "u5-st-book",
+              "kind": "BOOK",
+              "title": "Lesson 5 in your copy",
+              "body": "Complete Lesson 5 in the edition you own. Self-attest when finished. This app does not copy that lesson.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-book-topics"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": "Do Lesson 5 in your book, then return here to self-attest.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        }
+      ],
+      "advancement": {
+        "requireInstruction": true,
+        "requireBookSelfAttestation": true,
+        "requireAppChecks": true,
+        "minimumDistinctChecks": 2,
+        "requireDueReview": true,
+        "tutorOptional": true
+      }
     },
     {
       "number": 6,
