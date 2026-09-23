@@ -1,10 +1,14 @@
 """Typed Units 6–10 checks. Every Russian span and rule label is an exact frozen substring.
 
 Governed relationships are resolved from provenance records in the intake builder.
-This module does not infer a relationship from script shape, and it does not rewrite
-a rationale so that a later validator can find an acceptance phrase.
+A relationship is recomputed from complete frozen-source identity: source id,
+revision, record id, source hash, and exact original text. sourceRecordId alone
+is not proof, because a Wikibooks id keeps only a truncated needle. This module
+does not infer a relationship from script shape, and it does not rewrite a
+rationale so that a later validator can find an acceptance phrase.
 """
 
+import hashlib
 import re
 from pathlib import Path
 
@@ -89,83 +93,174 @@ def qualifying_overlap(shown: str, answer: str) -> str | None:
     return None
 
 
-def _lemma(record: dict):
-    match = _LEMMA.fullmatch(record["sourceRecordId"])
-    if not match:
-        return None
-    return f"{match.group(1)}:{match.group(2)}", match.group(3)
+def _sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
 def _cyr(text: str) -> bool:
     return bool(CYRILLIC.search(text))
 
 
-def _page(record: dict) -> str:
-    return record["sourceRecordId"].split(":", 1)[0]
+def _verified(record: dict) -> bool:
+    original = record.get("originalSourceText") or ""
+    return bool(
+        record.get("sourceId")
+        and record.get("sourceRevision")
+        and record.get("sourceRecordId")
+        and original
+        and record.get("sourceHash") == _sha256(original)
+    )
+
+
+def _same_span(left: dict, right: dict) -> bool:
+    """True only when both records are one frozen span, not merely the same truncated id."""
+    return _verified(left) and _verified(right) and (
+        left["sourceId"] == right["sourceId"]
+        and left["sourceRevision"] == right["sourceRevision"]
+        and left["sourceRecordId"] == right["sourceRecordId"]
+        and left["sourceHash"] == right["sourceHash"]
+        and left["originalSourceText"] == right["originalSourceText"]
+    )
+
+
+def _same_source(left: dict, right: dict) -> bool:
+    return (
+        _verified(left)
+        and _verified(right)
+        and left["sourceId"] == right["sourceId"]
+        and left["sourceRevision"] == right["sourceRevision"]
+    )
+
+
+def _displayed_in_frozen(record: dict) -> bool:
+    original = record.get("originalSourceText") or ""
+    shipped = record.get("shippedText") or ""
+    if shipped and (shipped in original or _fold(shipped) in _fold(original)):
+        return True
+    folded = _fold(shipped)
+    return bool(folded) and folded == _fold(original.replace("'", ""))
+
+
+def _openrussian_lemma(record: dict):
+    """Return (file:lemma, field) for a verified OpenRussian cell, else None.
+
+    A Wikibooks record whose sourceRecordId only resembles nouns.csv:lemma#field
+    is not an OpenRussian record.
+    """
+    if record.get("sourceId") != OPENRUSSIAN_ID or not _verified(record):
+        return None
+    match = _LEMMA.fullmatch(record["sourceRecordId"])
+    if not match:
+        return None
+    file_name = f"{match.group(1)}.csv"
+    source_url = record.get("sourceUrl") or ""
+    if file_name not in source_url or record["sourceRevision"] not in source_url:
+        return None
+    return f"{file_name}:{match.group(2)}", match.group(3)
+
+
+def _contains_shown(original: str, shown: str) -> bool:
+    folded = _fold(shown)
+    return bool(folded) and folded in _fold(original)
 
 
 def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str | None:
-    """Return the governed relationship the records actually have, or None."""
+    """Return the governed relationship the records actually have, or None.
+
+    relationParticipantIds are pointers. This function reads the resolved
+    records and accepts a relationship only when source, revision, record id,
+    source hash, and original text support it.
+    """
     group = [cue, answer, *distractors]
-    parsed = [_lemma(record) for record in group]
+    parsed = [_openrussian_lemma(record) for record in group]
     if all(parsed):
-        lemmas = {item[0] for item in parsed}
+        bases = {item[0] for item in parsed}
+        revisions = {record["sourceRevision"] for record in group}
         answer_field = parsed[1][1]
-        if len(lemmas) == 1 and answer_field != parsed[0][1] and all(answer_field != item[1] for item in parsed[2:]):
+        if (
+            len(bases) == 1
+            and len(revisions) == 1
+            and answer_field != parsed[0][1]
+            and all(answer_field != item[1] for item in parsed[2:])
+            and all(_displayed_in_frozen(record) for record in group)
+        ):
             return "SAME_LEMMA_DIFFERENT_FIELD"
     if (
         _cyr(cue["shippedText"])
         and not _cyr(answer["shippedText"])
         and all(not _cyr(record["shippedText"]) for record in distractors)
-        and len({record["sourceRecordId"] for record in group}) == 1
+        and all(_same_span(cue, record) for record in group)
         and cue["shippedText"] != answer["shippedText"]
+        and all(_displayed_in_frozen(record) for record in group)
     ):
         return "RULE_CLASSIFIES_SOURCE_EXAMPLE"
     if (
-        cue["sourceRecordId"].startswith("numbers:")
-        and cue["sourceRecordId"] == answer["sourceRecordId"]
+        cue["sourceId"] == WIKIBOOKS_ID
+        and cue["sourceRecordId"].startswith("numbers:")
+        and _same_span(cue, answer)
+        and _displayed_in_frozen(cue)
+        and _displayed_in_frozen(answer)
         and distractors
         and all(
-            record["sourceRecordId"].startswith("numbers:") and record["sourceRecordId"] != cue["sourceRecordId"]
+            _same_source(cue, record)
+            and record["sourceRecordId"].startswith("numbers:")
+            and record["sourceRecordId"] != cue["sourceRecordId"]
+            and record["originalSourceText"] != cue["originalSourceText"]
+            and _displayed_in_frozen(record)
             for record in distractors
         )
     ):
         return "SAME_RULE_DIFFERENT_BOUNDARY"
-    if len({record["sourceRecordId"] for record in group}) == 1 and cue["shippedText"] != answer["shippedText"]:
-        return "SOURCE_SUPPLIED_PAIR"
-    page = _page(cue)
     if (
-        cue["sourceRecordId"] == answer["sourceRecordId"]
+        all(_same_span(cue, record) for record in group)
+        and cue["shippedText"] != answer["shippedText"]
+        and all(_displayed_in_frozen(record) for record in group)
+    ):
+        return "SOURCE_SUPPLIED_PAIR"
+    if (
+        _same_span(cue, answer)
         and "||" in cue["originalSourceText"]
+        and _displayed_in_frozen(cue)
+        and _displayed_in_frozen(answer)
         and all(
-            _page(record) == page and "||" in record["originalSourceText"] and record["sourceRecordId"] != cue["sourceRecordId"]
+            _same_source(cue, record)
+            and "||" in record["originalSourceText"]
+            and record["originalSourceText"] != cue["originalSourceText"]
+            and record["sourceRecordId"] != cue["sourceRecordId"]
+            and _displayed_in_frozen(record)
             for record in distractors
         )
     ):
         return "SAME_CONSTRUCTION_DIFFERENT_FORM"
-    answer_lemma = _lemma(answer)
-    distractor_lemmas = [_lemma(record) for record in distractors]
+    answer_lemma = _openrussian_lemma(answer)
+    distractor_lemmas = [_openrussian_lemma(record) for record in distractors]
     if (
         answer_lemma
         and distractor_lemmas
         and all(distractor_lemmas)
         and all(item[0] == answer_lemma[0] and item[1] != answer_lemma[1] for item in distractor_lemmas)
+        and all(record["sourceRevision"] == answer["sourceRevision"] for record in distractors)
+        and _verified(cue)
+        and _displayed_in_frozen(cue)
+        and _displayed_in_frozen(answer)
+        and all(_displayed_in_frozen(record) for record in distractors)
+        and _contains_shown(cue["originalSourceText"], answer["shippedText"])
+        and _contains_shown(cue["originalSourceText"], cue["shippedText"])
+        and _fold(cue["shippedText"]) != _fold(answer["shippedText"])
     ):
-        original = _fold(cue["originalSourceText"])
-        folded_answer = _fold(answer["shippedText"])
-        folded_cue = _fold(cue["shippedText"])
-        if folded_answer and folded_answer in original and folded_cue in original and folded_cue != folded_answer:
-            return "SAME_CONSTRUCTION_DIFFERENT_FORM"
+        return "SAME_CONSTRUCTION_DIFFERENT_FORM"
     if (
         distractors
-        and all(record["sourceRecordId"] == answer["sourceRecordId"] for record in distractors)
-        and answer["sourceRecordId"] != cue["sourceRecordId"]
+        and all(_same_span(answer, record) for record in distractors)
+        and not _same_span(cue, answer)
+        and _verified(cue)
+        and _displayed_in_frozen(answer)
+        and all(_displayed_in_frozen(record) for record in distractors)
+        and _contains_shown(cue["originalSourceText"], answer["shippedText"])
+        and _contains_shown(cue["originalSourceText"], cue["shippedText"])
+        and _fold(cue["shippedText"]) != _fold(answer["shippedText"])
     ):
-        original = _fold(cue["originalSourceText"])
-        folded_answer = _fold(answer["shippedText"])
-        folded_cue = _fold(cue["shippedText"])
-        if folded_answer and folded_answer in original and folded_cue in original and folded_cue != folded_answer:
-            return "SAME_CONSTRUCTION_DIFFERENT_FORM"
+        return "SAME_CONSTRUCTION_DIFFERENT_FORM"
     return None
 
 

@@ -13,6 +13,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
+import java.security.MessageDigest
 
 class Units610InstructionalValidityTest {
     @Test
@@ -307,6 +308,100 @@ class Units610InstructionalValidityTest {
     }
 
     @Test
+    fun changingOnlySourceIdWhileRetainingSourceRecordIdFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-third-1" }
+        val broken = rewriteRationale(seed)
+        val cueId = broken.assessment!!.relationParticipantIds[0]
+        val mutated = retarget(pack, cueId) { it.copy(sourceId = "src-openrussian-50e210c4") }
+        assertEquals(pack.provenanceRecords.first { it.itemId == cueId }.sourceRecordId, mutated.provenanceRecords.first { it.itemId == cueId }.sourceRecordId)
+        assertFalse(V2Validator.featureValid(mutated, broken))
+    }
+
+    @Test
+    fun changingSourceRevisionWhileRetainingSourceRecordIdFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u8-i-availability-1" }
+        val broken = rewriteRationale(seed)
+        val answerId = broken.assessment!!.relationParticipantIds[1]
+        val mutated = retarget(pack, answerId) { it.copy(sourceRevision = "not-the-frozen-oldid") }
+        assertEquals(pack.provenanceRecords.first { it.itemId == answerId }.sourceRecordId, mutated.provenanceRecords.first { it.itemId == answerId }.sourceRecordId)
+        assertFalse(V2Validator.featureValid(mutated, broken))
+    }
+
+    @Test
+    fun changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u9-i-cardinal-1" }
+        val broken = rewriteRationale(seed)
+        val cueId = broken.assessment!!.relationParticipantIds[0]
+        val replacement = "different frozen content that keeps the truncated id"
+        val mutated = retarget(pack, cueId) {
+            it.copy(originalSourceText = replacement, sourceHash = sha256(replacement))
+        }
+        val cue = mutated.provenanceRecords.first { it.itemId == cueId }
+        assertEquals(pack.provenanceRecords.first { it.itemId == cueId }.sourceRecordId, cue.sourceRecordId)
+        assertEquals(sha256(cue.originalSourceText), cue.sourceHash)
+        assertFalse(V2Validator.featureValid(mutated, broken))
+    }
+
+    @Test
+    fun aWikibooksRecordShapedLikeAnOpenRussianLemmaCannotBeTheSameLemma() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-3" }
+        assertEquals("SAME_LEMMA_DIFFERENT_FIELD", seed.assessment!!.relationKind)
+        val answerId = seed.assessment.relationParticipantIds[1]
+        val wikibooks = pack.provenanceRecords.first { it.sourceId == "src-wikibooks-russian-cc-by-sa" }
+        val mutated = retarget(pack, answerId) {
+            it.copy(
+                sourceId = wikibooks.sourceId,
+                sourceUrl = wikibooks.sourceUrl,
+                sourceRevision = wikibooks.sourceRevision,
+            )
+        }
+        val shaped = mutated.provenanceRecords.first { it.itemId == answerId }
+        assertTrue(shaped.sourceRecordId.contains(".csv:") && shaped.sourceRecordId.contains("#"))
+        assertEquals("src-wikibooks-russian-cc-by-sa", shaped.sourceId)
+        assertFalse(V2Validator.featureValid(mutated, rewriteRationale(seed)))
+    }
+
+    @Test
+    fun sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan() {
+        val pack = pack()
+        val replacement = "a different frozen span that keeps the truncated record id"
+        val hash = sha256(replacement)
+        listOf("u6-i-third-1" to "SOURCE_SUPPLIED_PAIR", "u8-i-availability-2" to "RULE_CLASSIFIES_SOURCE_EXAMPLE").forEach { (itemId, kind) ->
+            val seed = pack.items.first { it.id == itemId }
+            assertEquals(kind, seed.assessment!!.relationKind)
+            val answerId = seed.assessment.relationParticipantIds[1]
+            val mutated = retarget(pack, answerId) {
+                it.copy(originalSourceText = replacement, sourceHash = hash)
+            }
+            val answer = mutated.provenanceRecords.first { it.itemId == answerId }
+            val cue = mutated.provenanceRecords.first { it.itemId == seed.assessment.relationParticipantIds[0] }
+            assertEquals(cue.sourceRecordId, answer.sourceRecordId)
+            assertFalse(cue.originalSourceText == answer.originalSourceText)
+            assertFalse(V2Validator.featureValid(mutated, rewriteRationale(seed)))
+        }
+    }
+
+    @Test
+    fun contentCompleteRecognitionObjectivesKeepAnIndependentCheck() {
+        val pack = pack()
+        (6..10).mapNotNull { pack.unit(it) }
+            .filter { it.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" }
+            .forEach { unit ->
+                unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+                    val qualifying = objective.checkItemIds
+                        .map { id -> pack.items.first { it.id == id } }
+                        .filter { V2Validator.featureValid(pack, it) }
+                    assertTrue("${objective.id} has no qualifying independent check", qualifying.isNotEmpty())
+                }
+            }
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+    }
+
+    @Test
     fun aRationaleThatDoesNotExplainTheDistinctionFails() {
         val pack = pack()
         val seed = pack.items.first { it.id == "u6-i-possessive-1" }
@@ -417,6 +512,30 @@ class Units610InstructionalValidityTest {
 
     private fun replace(pack: V2CurriculumPack, item: V2CheckItem) =
         pack.copy(items = pack.items.map { if (it.id == item.id) item else it })
+
+    private fun rewriteRationale(item: V2CheckItem): V2CheckItem {
+        val assessment = item.assessment!!
+        return item.copy(
+            distractorRationales = item.distractorRationales.map { if (it.isEmpty()) it else "The contrast is the same word." },
+            assessment = assessment.copy(
+                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
+                distractorDifference = assessment.distractorDifference.map { difference ->
+                    if (difference.isEmpty()) difference else "The contrast is the same word."
+                },
+            ),
+        )
+    }
+
+    private fun retarget(
+        pack: V2CurriculumPack,
+        itemId: String,
+        edit: (dev.russiancompanion.v2.curriculum.V2ProvenanceRecord) -> dev.russiancompanion.v2.curriculum.V2ProvenanceRecord,
+    ) = pack.copy(provenanceRecords = pack.provenanceRecords.map { if (it.itemId == itemId) edit(it) else it })
+
+    private fun sha256(text: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
+        return digest.joinToString("") { byte -> "%02x".format(byte) }
+    }
 
     private fun learner(number: Int, book: Boolean, correct: Set<String>, steps: Set<String>) = V2LearnerView(
         onboardingCompleted = true,

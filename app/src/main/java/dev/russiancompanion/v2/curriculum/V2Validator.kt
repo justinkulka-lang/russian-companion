@@ -808,6 +808,8 @@ internal object V2Validator {
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others)\\.csv:(.+)#([A-Za-z0-9_]+)$")
+    private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
+    private val WIKIBOOKS_SOURCE = "src-wikibooks-russian-cc-by-sa"
     private val TOKEN = Regex("[0-9]+|[a-z\\u0430-\\u044f]+")
     private val LATIN_LOOKALIKE = mapOf(
         "e" to "\u0435",
@@ -888,24 +890,75 @@ internal object V2Validator {
         return (0..big.size - width).any { index -> big.subList(index, index + width) == small }
     }
 
-    private fun lemmaOf(record: V2ProvenanceRecord): Pair<String, String>? {
-        val match = LEMMA_RECORD.matchEntire(record.sourceRecordId) ?: return null
-        return "${match.groupValues[1]}:${match.groupValues[2]}" to match.groupValues[3]
-    }
-
     private fun hasCyrillic(text: String): Boolean = text.any { it.code in 0x0400..0x04FF }
 
+    private fun verifiedFrozen(record: V2ProvenanceRecord): Boolean {
+        if (record.sourceId.isBlank() || record.sourceRevision.isBlank() || record.sourceRecordId.isBlank()) return false
+        if (record.originalSourceText.isBlank()) return false
+        return record.sourceHash == sha256(record.originalSourceText)
+    }
+
+    /** One frozen span. Matching sourceRecordId is not enough: the needle in a Wikibooks id is truncated. */
+    private fun sameFrozenSpan(left: V2ProvenanceRecord, right: V2ProvenanceRecord): Boolean =
+        verifiedFrozen(left) && verifiedFrozen(right) &&
+            left.sourceId == right.sourceId &&
+            left.sourceRevision == right.sourceRevision &&
+            left.sourceRecordId == right.sourceRecordId &&
+            left.sourceHash == right.sourceHash &&
+            left.originalSourceText == right.originalSourceText
+
+    private fun sameFrozenSource(left: V2ProvenanceRecord, right: V2ProvenanceRecord): Boolean =
+        verifiedFrozen(left) && verifiedFrozen(right) &&
+            left.sourceId == right.sourceId &&
+            left.sourceRevision == right.sourceRevision
+
+    private fun displayedInFrozen(record: V2ProvenanceRecord): Boolean {
+        val original = record.originalSourceText
+        val shipped = record.shippedText
+        if (shipped.isNotEmpty() && (shipped in original || foldGoverned(shipped) in foldGoverned(original))) return true
+        val folded = foldGoverned(shipped)
+        return folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))
+    }
+
+    /**
+     * File and lemma before `#`, plus the governed field, for a verified OpenRussian cell.
+     * A Wikibooks record whose sourceRecordId only resembles that shape is rejected.
+     */
+    private fun openRussianLemma(record: V2ProvenanceRecord): Pair<String, String>? {
+        if (record.sourceId != OPENRUSSIAN_SOURCE || !verifiedFrozen(record)) return null
+        val match = LEMMA_RECORD.matchEntire(record.sourceRecordId) ?: return null
+        val fileName = "${match.groupValues[1]}.csv"
+        if (fileName !in record.sourceUrl || record.sourceRevision !in record.sourceUrl) return null
+        return "$fileName:${match.groupValues[2]}" to match.groupValues[3]
+    }
+
+    private fun frozenTextShows(original: String, shown: String): Boolean {
+        val folded = foldGoverned(shown)
+        return folded.isNotEmpty() && folded in foldGoverned(original)
+    }
+
+    /**
+     * Recompute the relationship from resolved provenance. Participant ids are pointers only.
+     * Rationale text is not consulted.
+     */
     private fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
         val group = listOf(cue, answer) + distractors
-        val parsed = group.map { lemmaOf(it) }
+        val parsed = group.map { openRussianLemma(it) }
         if (parsed.all { it != null }) {
-            val lemmas = parsed.map { it!!.first }.toSet()
+            val bases = parsed.map { it!!.first }.toSet()
+            val revisions = group.map { it.sourceRevision }.toSet()
             val answerField = parsed[1]!!.second
-            if (lemmas.size == 1 && answerField != parsed[0]!!.second && parsed.drop(2).all { answerField != it!!.second }) {
+            if (
+                bases.size == 1 &&
+                revisions.size == 1 &&
+                answerField != parsed[0]!!.second &&
+                parsed.drop(2).all { answerField != it!!.second } &&
+                group.all { displayedInFrozen(it) }
+            ) {
                 return "SAME_LEMMA_DIFFERENT_FIELD"
             }
         }
@@ -913,60 +966,81 @@ internal object V2Validator {
             hasCyrillic(cue.shippedText) &&
             !hasCyrillic(answer.shippedText) &&
             distractors.all { !hasCyrillic(it.shippedText) } &&
-            group.map { it.sourceRecordId }.toSet().size == 1 &&
-            cue.shippedText != answer.shippedText
+            group.all { sameFrozenSpan(cue, it) } &&
+            cue.shippedText != answer.shippedText &&
+            group.all { displayedInFrozen(it) }
         ) {
             return "RULE_CLASSIFIES_SOURCE_EXAMPLE"
         }
         if (
+            cue.sourceId == WIKIBOOKS_SOURCE &&
             cue.sourceRecordId.startsWith("numbers:") &&
-            cue.sourceRecordId == answer.sourceRecordId &&
+            sameFrozenSpan(cue, answer) &&
+            displayedInFrozen(cue) &&
+            displayedInFrozen(answer) &&
             distractors.isNotEmpty() &&
-            distractors.all { it.sourceRecordId.startsWith("numbers:") && it.sourceRecordId != cue.sourceRecordId }
+            distractors.all {
+                sameFrozenSource(cue, it) &&
+                    it.sourceRecordId.startsWith("numbers:") &&
+                    it.sourceRecordId != cue.sourceRecordId &&
+                    it.originalSourceText != cue.originalSourceText &&
+                    displayedInFrozen(it)
+            }
         ) {
             return "SAME_RULE_DIFFERENT_BOUNDARY"
         }
-        if (group.map { it.sourceRecordId }.toSet().size == 1 && cue.shippedText != answer.shippedText) {
+        if (
+            group.all { sameFrozenSpan(cue, it) } &&
+            cue.shippedText != answer.shippedText &&
+            group.all { displayedInFrozen(it) }
+        ) {
             return "SOURCE_SUPPLIED_PAIR"
         }
-        val page = cue.sourceRecordId.substringBefore(":")
         if (
-            cue.sourceRecordId == answer.sourceRecordId &&
+            sameFrozenSpan(cue, answer) &&
             "||" in cue.originalSourceText &&
+            displayedInFrozen(cue) &&
+            displayedInFrozen(answer) &&
             distractors.all {
-                it.sourceRecordId.substringBefore(":") == page &&
+                sameFrozenSource(cue, it) &&
                     "||" in it.originalSourceText &&
-                    it.sourceRecordId != cue.sourceRecordId
+                    it.originalSourceText != cue.originalSourceText &&
+                    it.sourceRecordId != cue.sourceRecordId &&
+                    displayedInFrozen(it)
             }
         ) {
             return "SAME_CONSTRUCTION_DIFFERENT_FORM"
         }
-        val answerLemma = lemmaOf(answer)
-        val distractorLemmas = distractors.map { lemmaOf(it) }
+        val answerLemma = openRussianLemma(answer)
+        val distractorLemmas = distractors.map { openRussianLemma(it) }
         if (
             answerLemma != null &&
             distractorLemmas.isNotEmpty() &&
             distractorLemmas.all { it != null } &&
-            distractorLemmas.all { it!!.first == answerLemma.first && it.second != answerLemma.second }
+            distractorLemmas.all { it!!.first == answerLemma.first && it.second != answerLemma.second } &&
+            distractors.all { it.sourceRevision == answer.sourceRevision } &&
+            verifiedFrozen(cue) &&
+            displayedInFrozen(cue) &&
+            displayedInFrozen(answer) &&
+            distractors.all { displayedInFrozen(it) } &&
+            frozenTextShows(cue.originalSourceText, answer.shippedText) &&
+            frozenTextShows(cue.originalSourceText, cue.shippedText) &&
+            foldGoverned(cue.shippedText) != foldGoverned(answer.shippedText)
         ) {
-            val original = foldGoverned(cue.originalSourceText)
-            val foldedAnswer = foldGoverned(answer.shippedText)
-            val foldedCue = foldGoverned(cue.shippedText)
-            if (foldedAnswer.isNotEmpty() && foldedAnswer in original && foldedCue in original && foldedCue != foldedAnswer) {
-                return "SAME_CONSTRUCTION_DIFFERENT_FORM"
-            }
+            return "SAME_CONSTRUCTION_DIFFERENT_FORM"
         }
         if (
             distractors.isNotEmpty() &&
-            distractors.all { it.sourceRecordId == answer.sourceRecordId } &&
-            answer.sourceRecordId != cue.sourceRecordId
+            distractors.all { sameFrozenSpan(answer, it) } &&
+            !sameFrozenSpan(cue, answer) &&
+            verifiedFrozen(cue) &&
+            displayedInFrozen(answer) &&
+            distractors.all { displayedInFrozen(it) } &&
+            frozenTextShows(cue.originalSourceText, answer.shippedText) &&
+            frozenTextShows(cue.originalSourceText, cue.shippedText) &&
+            foldGoverned(cue.shippedText) != foldGoverned(answer.shippedText)
         ) {
-            val original = foldGoverned(cue.originalSourceText)
-            val foldedAnswer = foldGoverned(answer.shippedText)
-            val foldedCue = foldGoverned(cue.shippedText)
-            if (foldedAnswer.isNotEmpty() && foldedAnswer in original && foldedCue in original && foldedCue != foldedAnswer) {
-                return "SAME_CONSTRUCTION_DIFFERENT_FORM"
-            }
+            return "SAME_CONSTRUCTION_DIFFERENT_FORM"
         }
         return null
     }
