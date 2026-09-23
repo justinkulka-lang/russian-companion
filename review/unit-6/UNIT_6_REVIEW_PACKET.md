@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7321922cc2bab38baadaf3c76459dd2cccafd420
-- Unit content-review SHA-256: 4396ee2e2a73b27c28a4723fe0403e3931256b4c11a4b428ccbb7ca58fc172e4
+- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
+- Unit content-review SHA-256: 4bab47ba56408b6eb5118e9ff72fa116ce593b1c90518d8734b56b177cf8e7e4
 - Mapping-package SHA-256: bb61dda77888e744eddd868014923fbf8967eddbebe8fda7b5574804e4a405f2
-- Pack content-review SHA-256: 7dc4ccccd951926f40b3af5c049dcd7022f6a5a4a927ee0a8c717dfb70a28eb2
-- Review-package SHA-256: d6c1de8ef44ac9b2639a6fcd3d8271f1429584a00752f30fe27f48eac820c0a2
-- Repository source SHA-256: fc56c4128805c170c226597b1cac76384146f548c62b886a76b4242a713cde70
+- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
+- Review-package SHA-256: 5bf58eaa8a80ffeeef66ee5e1969188fa018db5615eb1c8f833bb347b8228355
+- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,13 +151,13 @@ remediation=u6-st-rem-third
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: be7cfbdc3a40720587e67c583ab2e4f2ea947d6868cc8a75f48e92cd4562d120
+- Content hash: 1a525a59ea6d25c2e86eb1a2d18674d417fbf879f21b4c3cb2b17b56456ebbde
 
 title=Choose the admitted object line
 kind=RECOGNITION
 unitNumber=6
-instruction=u6-st-orient,u6-st-teach-object-1,u6-st-teach-object-2,u6-st-teach-object-3
-examples=ex-u6-object-0,ex-u6-object-1,ex-u6-object-2,ex-u6-object-3
+instruction=u6-st-orient,u6-st-teach-object-1,u6-st-teach-object-2,u6-st-teach-object-3,u6-st-teach-object-4
+examples=ex-u6-object-0,ex-u6-object-1,ex-u6-object-2,ex-u6-object-3,ex-u6-object-4
 practice=u6-st-guided-object-1
 checks=u6-i-object-1,u6-i-object-2,u6-i-object-3
 remediation=u6-st-rem-object
@@ -170,13 +170,13 @@ remediation=u6-st-rem-object
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d76853966e224eeb8a3235a0e688d483f6ded9ae03c626af13dd886665661d9c
+- Content hash: 51dcfb2f74bb6bcb03b682c3ee947b7046cc0d506bb7885a20f365ebb31f4df5
 
 title=Choose the admitted object form
 kind=RECOGNITION
 unitNumber=6
-instruction=u6-st-orient,u6-st-teach-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3
-examples=ex-or-u6-feminine-0,ex-or-u6-feminine-1,ex-or-u6-feminine-2,ex-or-u6-feminine-3
+instruction=u6-st-orient,u6-st-teach-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4
+examples=ex-or-u6-feminine-0,ex-or-u6-feminine-1,ex-or-u6-feminine-2,ex-or-u6-feminine-3,ex-or-u6-feminine-4,ex-or-u6-feminine-5
 practice=u6-st-guided-feminine-1
 checks=u6-i-feminine-1,u6-i-feminine-2
 remediation=u6-st-rem-feminine
@@ -189,13 +189,13 @@ remediation=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 83fdd464f95f26c0d05def5305453f079c85b33bfcfab21bcab3b4bcbe89e39e
+- Content hash: 0c465418f1797f4179137364070c488a26de9aa90240567e40144d13f98c97fa
 
 title=Choose the admitted animate or inanimate object form
 kind=RECOGNITION
 unitNumber=6
-instruction=u6-st-orient,u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4
-examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5
+instruction=u6-st-orient,u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6
+examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8
 practice=u6-st-guided-animacy-1
 checks=u6-i-animacy-1,u6-i-animacy-2,u6-i-animacy-3
 remediation=u6-st-rem-animacy
@@ -706,12 +706,12 @@ remediationStepId=u6-st-rem-third
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 183e0e61d2f3a7a0d0bbcc78d54d0bec9f54afa4b342b9c319c2d3eb9e2d328c
+- Content hash: 87f0ea20b6c63d59c73701ce9ea2e20aacb636936a8ab66e24ff6beb1a7482e7
 
 title=Choose the admitted object line
 estimatedMinutes=12
 objectives=obj-u6-object
-steps=u6-st-teach-object-1,u6-st-guided-object-1,u6-st-teach-object-2,u6-st-teach-object-3,u6-st-rem-object,u6-st-check-object
+steps=u6-st-teach-object-1,u6-st-guided-object-1,u6-st-teach-object-2,u6-st-teach-object-3,u6-st-teach-object-4,u6-st-rem-object,u6-st-check-object
 
 ### STEP `u6-st-teach-object-1`
 
@@ -787,15 +787,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 590637527a81d7102e159666a5e30a571596e6473cdd471bd5af55ef8e4444b1
+- Content hash: 5300c6e0a14a58fc3e306910145e181a51b307c7d7d99674d16c63eb06adfecd
 
 kind=TEACH
 title=Admitted lines
-body=Собаки ненавидят котов. — Dogs hate cats. Коты ненавидят собак. — Cats hate dogs. 
+body=Я люблю тебя — I love you. Собаки ненавидят котов. — Dogs hate cats. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-u6-object-2,ex-u6-object-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u6-st-teach-object-4`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-object
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20811d981093786de62f3c872f90de9c9ddaefc4887d94a8ceb8d38b9d5e4992
+
+kind=TEACH
+title=Admitted lines
+body=Коты ненавидят собак. — Cats hate dogs. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u6-object-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -853,12 +875,12 @@ remediationStepId=u6-st-rem-object
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d22d22e23793b256c930c19f03055f061f52fcdf088a20510c901f3655f257a
+- Content hash: 828934e500321e15e1962ffb956a14711f2fc3fe7ddf0d40919959c011a83269
 
 title=Choose the admitted object form
 estimatedMinutes=12
 objectives=obj-u6-feminine
-steps=u6-st-teach-feminine-1,u6-st-guided-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-rem-feminine,u6-st-check-feminine
+steps=u6-st-teach-feminine-1,u6-st-guided-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4,u6-st-rem-feminine,u6-st-check-feminine
 
 ### STEP `u6-st-teach-feminine-1`
 
@@ -934,15 +956,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e2b8c77f0c96f7d3ed01455d74452e1862119cf9d64441ccf2179b24f2197882
+- Content hash: 09cf8e1f8671f150f7cb7fdafdaa2b3b7c087b7d0b4afd29016a026fa88aed62
 
 kind=TEACH
 title=Admitted lines
-body=ма́му — mom. же́нщину — woman. 
+body=ма́ма — mom. ма́му — mom. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-or-u6-feminine-2,ex-or-u6-feminine-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u6-st-teach-feminine-4`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-feminine
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 52ebedb9c1b5d4774bf11d7f1518938e4d7474e56034114922ad6ef062c989d6
+
+kind=TEACH
+title=Admitted lines
+body=же́нщина — woman. же́нщину — woman. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u6-feminine-4,ex-or-u6-feminine-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1000,12 +1044,12 @@ remediationStepId=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 974fca4e25934546daad84d5d50a2b01e3b33033d0b9d8fdfa3d157979e1c251
+- Content hash: d001a7e9b89f642e2b1aed8d5854baf8f66c076830156995625cd24464926005
 
 title=Choose the admitted animate or inanimate object form
 estimatedMinutes=12
 objectives=obj-u6-animacy
-steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-rem-animacy,u6-st-check-animacy
+steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6,u6-st-rem-animacy,u6-st-check-animacy
 
 ### STEP `u6-st-teach-animacy-1`
 
@@ -1015,11 +1059,11 @@ steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 67be0f60821d5c07f46a6c89667ba83fd919e9b4e8f9541ef8dcbf85949ea2c2
+- Content hash: 5478a2f88d21023f41ed15a6ce9514f0a4b9171998d0a830a1273066279fd0d3
 
 kind=TEACH
 title=Admitted lines
-body=сто́л — table. до́м — house. 
+body=сто́л — table. сто́л — table. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1081,11 +1125,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5815e3afd00188c1f30efcc24217cbb7f6b3f333dafcdf54f9c3e6b8bf93d10c
+- Content hash: e01ed134e23f448984bbca064af7f641055b23861f56dfdac5600204eb8f5a9f
 
 kind=TEACH
 title=Admitted lines
-body=брат — brother. бра́та — brother. 
+body=до́м — house. до́м — house. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1103,15 +1147,59 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 33db2443505f5b0808fd59c1a18d3fa39f351e274abf01776420243800233890
+- Content hash: eff86adb23faf9b12edcae11945db95ad2bc175c9a99206a5b5e87cd3637ef88
 
 kind=TEACH
 title=Admitted lines
-body=учи́теля — teacher. дру́га — friend. 
+body=брат — brother. бра́та — brother. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-or-u6-animacy-4,ex-or-u6-animacy-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u6-st-teach-animacy-5`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1c6d7494e47795ea6f93495edd56930c455088e5ad70c9641a0586d2585d56aa
+
+kind=TEACH
+title=Admitted lines
+body=учи́теля — teacher. друг — friend. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u6-animacy-6,ex-or-u6-animacy-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u6-st-teach-animacy-6`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2c319ef8adef0b472f5dfc25b92ec4208fa2e341668891a0bcaf802d5c310743
+
+kind=TEACH
+title=Admitted lines
+body=дру́га — friend. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u6-animacy-8
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1928,12 +2016,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a23d45ba5c6175c17e97eebc9969c2149e1dc4a509b8f5139f953ab14e376308
+- Content hash: c88082986d6362a2da6334e14d74fc9c98136aea568c52fcd3861d9be299d2cf
 
 kind=LEXICAL
 letterId=
-display=Собаки ненавидят котов.
-note=Dogs hate cats.
+display=Я люблю тебя
+note=I love you
 objectiveId=obj-u6-object
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1945,7 +2033,24 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97860913d5c486689ff94ca92724a79bc717cc894df38f322f5a5505afb1bb77
+- Content hash: 9eaa09abaf83b372c523c861ca67eb158bac284a95128894e00a04f7f88fd138
+
+kind=LEXICAL
+letterId=
+display=Собаки ненавидят котов.
+note=Dogs hate cats.
+objectiveId=obj-u6-object
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u6-object-4`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-object
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4df50a34dff9066349e1106c4c146eac4bb04be5191cfe68d9f9dde839c66810
 
 kind=LEXICAL
 letterId=
@@ -1996,11 +2101,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbd73b7232e8109d4134f8cd19128124aad541247598cd9d1bfcd4630a6c5cf8
+- Content hash: 5be01a82f3f07688537db5a271e0abafa047f20723fc50382ac54c47efd6c066
 
 kind=LEXICAL
 letterId=
-display=ма́му
+display=ма́ма
 note=mom
 objectiveId=obj-u6-feminine
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2013,7 +2118,41 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b266119b8a28843a3cccba346e3e25c9f010e88dfcec76bc6500cf3dff1ffd84
+- Content hash: 4a45bc9f1967d874680484aca9f6cb9fdd86ec5b78bf90cb04563e75fe2db40d
+
+kind=LEXICAL
+letterId=
+display=ма́му
+note=mom
+objectiveId=obj-u6-feminine
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u6-feminine-4`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 86b8aca019f72c2eba38b41e93ee09ed20437fa465fd80413b876c432d581185
+
+kind=LEXICAL
+letterId=
+display=же́нщина
+note=woman
+objectiveId=obj-u6-feminine
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u6-feminine-5`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7c0b96f448a0ab1f5d31457d72663652e1b677ce9ca8d765a04458366d04a14b
 
 kind=LEXICAL
 letterId=
@@ -2047,12 +2186,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ceb9617be18773abcd9b0fba0b6f51cc7ffe071c43321fc52a09b20cc44b42c6
+- Content hash: 6ca0ef01ca274e3a69b26ac1d9ee63164e8865dec011a7082ddb3744a9de645c
 
 kind=LEXICAL
 letterId=
-display=до́м
-note=house
+display=сто́л
+note=table
 objectiveId=obj-u6-animacy
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2064,12 +2203,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7663644eb46ca3117e91b836ae048244dd1c4a1cfab41e843ab0008c68bf5924
+- Content hash: 48166466d2a444793f8bdcb3192f6ef4885928722f75a07d6d38f18158373f41
 
 kind=LEXICAL
 letterId=
-display=брат
-note=brother
+display=до́м
+note=house
 objectiveId=obj-u6-animacy
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2081,12 +2220,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a4c2e08ba91773f23afb1de1dd0dd3fd697f712b20aa0d6f89157e902ed7306
+- Content hash: 262fc83791455e77b544a4d592d1d710d0743d685b5cd4e533e23f79894f7285
 
 kind=LEXICAL
 letterId=
-display=бра́та
-note=brother
+display=до́м
+note=house
 objectiveId=obj-u6-animacy
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2098,12 +2237,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e439390673c4ac21eefb87eb6328523a775eff0d18772af010e198b03846e33
+- Content hash: 2fe2735f6607b84fccb4aff16b5102f16aa85544d19a239b9b711d77b2598bcd
 
 kind=LEXICAL
 letterId=
-display=учи́теля
-note=teacher
+display=брат
+note=brother
 objectiveId=obj-u6-animacy
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2115,7 +2254,58 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 944d987903cda7ed00c851a81da61b5f4dbc0a4d467745c40fcb7e46f2a2e729
+- Content hash: 3408725d52881f83f46fa5722678bdbf6b3bc9829ed2cd991c4fcca782147ee2
+
+kind=LEXICAL
+letterId=
+display=бра́та
+note=brother
+objectiveId=obj-u6-animacy
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u6-animacy-6`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ac8764f905036ee6ab9806d081ed387a47289a2658bf99d9c9950407ed3d4914
+
+kind=LEXICAL
+letterId=
+display=учи́теля
+note=teacher
+objectiveId=obj-u6-animacy
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u6-animacy-7`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e678c8858246d3f71930178482d58b48f63234011fa8b9403396ae6aba3d61e
+
+kind=LEXICAL
+letterId=
+display=друг
+note=friend
+objectiveId=obj-u6-animacy
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u6-animacy-8`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 86b3ffe7916f13e5bb6cacb625b776e1c2ffe92f89e1070c31e997cdbd88ad42
 
 kind=LEXICAL
 letterId=
@@ -2332,45 +2522,65 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 - Objectives: obj-u6-possessive
 - Sessions: u6-s-possessive
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46b4de8fad5ad43f6791ea35ba2756e9cca2828c77f83bc3063610759762b8fc
+- Content hash: aa4015dacac356429dd5a665c439ded4970c344a80887a6c91ae865cc45f9678
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for my table?
-promptLetter=my table
-options=мой стол | моя собака
-answer=мой стол
-feedback=The admitted answer for this contrast is мой стол.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=собака
+options=моя́ | мо́й | мои́
+answer=моя́
+feedback=Does the answer show the governed row of the same word? моя́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other possessive example.
+distractorRationales= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
+testedFeature=POSSESSIVE_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-possessive-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u6-possessive-5
+distractorSourceIds= | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-7
+distractorDifference= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=моя́ | мо́й | мои́
 
 ### GUIDED_PRACTICE `u6-g-third-0`
 
 - Objectives: obj-u6-third
 - Sessions: u6-s-third
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f1b6cfc9dd3449fa313352178c2837225984eab482c5e0b29ea0a560997abeb
+- Content hash: dbb847394f1e0da88f887a813c8c30e6b2959ca7c58e093d29601ba10c30d8d6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for I want his cat?
-promptLetter=I want his cat
-options=Я хочу его кота | Я хочу его котов
-answer=Я хочу его кота
-feedback=The admitted answer for this contrast is Я хочу его кота.
+prompt=Which admitted form does the shown line use?
+promptLetter=Я хочу его кота
+options=его́ | её | их
+answer=его́
+feedback=Does the answer identify the governed form in the shown line? его́.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other object example.
+distractorRationales= | This form is the other third-person form, and the shown line uses another form. | This form is the other third-person form, and the shown line uses another form.
+testedFeature=THIRD_PERSON_FORM
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-third-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u6-third-5
+distractorSourceIds= | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
+distractorDifference= | This form is the other third-person form, and the shown line uses another form. | This form is the other third-person form, and the shown line uses another form.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=его́ | её | их
 
 ### GUIDED_PRACTICE `u6-g-object-0`
 
@@ -2380,19 +2590,29 @@ distractorRationales= | This admitted line is the other object example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53a3045c425c9870ef019e2f57288c84aeb1206e95a85bafa740ab918fcb06a4
+- Content hash: 2c7a1802b84bd466cc9cc35729c0ea6333235082aed6f59083206a5e424f1421
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for I like dogs?
-promptLetter=I like dogs
-options=Я люблю собак | Я тебя люблю
-answer=Я люблю собак
-feedback=The admitted answer for this contrast is Я люблю собак.
+prompt=Which admitted line is the other order of the shown line?
+promptLetter=Я люблю тебя
+options=Я тебя люблю | Я люблю тебя
+answer=Я тебя люблю
+feedback=Does the answer identify the governed form in the shown line? Я тебя люблю.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is a different object example.
+distractorRationales= | This line repeats the shown line, not the other order of the same words.
+testedFeature=OBJECT_ORDER
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-object-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u6-object-1-ru
+distractorSourceIds= | prov-ex-u6-object-2-ru
+distractorDifference= | This line repeats the shown line, not the other order of the same words.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Я тебя люблю | Я люблю тебя
 
 ### GUIDED_PRACTICE `u6-g-feminine-0`
 
@@ -2402,19 +2622,29 @@ distractorRationales= | This admitted line is a different object example.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c898746b3cc2f663ea05c8157b25ecd90c7c52fd4e391332bc09223c82ee891d
+- Content hash: 985a88a958cdb857d26fd74bf63c3c1d6df795cd2270c41629af007625dedf61
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for book?
-promptLetter=book
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=кни́га
 options=кни́гу | кни́га
 answer=кни́гу
-feedback=The admitted answer for this contrast is кни́гу.
+feedback=Does the answer show the governed row of the same word? кни́гу.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the dictionary row, not the object row.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
+testedFeature=FEMININE_ACCUSATIVE
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-feminine-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u6-feminine-1
+distractorSourceIds= | prov-ex-or-u6-feminine-0
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=кни́гу | кни́га
 
 ### GUIDED_PRACTICE `u6-g-animacy-0`
 
@@ -2424,19 +2654,29 @@ distractorRationales= | This admitted form is the dictionary row, not the object
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d987f1ba406ba9c3e9c8e27faf6b212b966830296bd9f024865fba76146f440a
+- Content hash: 9f69ac4b43e1db9609fcf3c37365046780c3887dc7605b27390f1df717908242
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for brother?
-promptLetter=brother
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=брат
 options=бра́та | брат
 answer=бра́та
-feedback=The admitted answer for this contrast is бра́та.
+feedback=Does the answer show the governed row of the same word? бра́та.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the dictionary row, not the object row.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
+testedFeature=ANIMACY
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-animacy-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u6-animacy-5
+distractorSourceIds= | prov-ex-or-u6-animacy-4
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=бра́та | брат
 
 ### GUIDED_PRACTICE `u6-g-pronoun-0`
 
@@ -2446,19 +2686,29 @@ distractorRationales= | This admitted form is the dictionary row, not the object
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a516419086fbd9168c54c54b2eb4c70650473615bfb4e8d1122aadb99fb526a1
+- Content hash: b2cdbd97994c2deb644adb5a1dc47447f2d82f74b1d3d4477f592a56354c8366
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for I/me?
-promptLetter=I/me
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=Я
 options=Меня | Нас
 answer=Меня
-feedback=The admitted answer for this contrast is Меня.
+feedback=Does the answer identify the governed form in the shown line? Меня.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other person row.
+distractorRationales= | This form is not the object row of the shown line.
+testedFeature=PERSONAL_OBJECT_CASE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-pronoun-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u6-pronoun-0-ru
+distractorSourceIds= | prov-ex-u6-pronoun-1-ru
+distractorDifference= | This form is not the object row of the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Меня | Нас
 
 ### GUIDED_PRACTICE `u6-g-direction-0`
 
@@ -2468,43 +2718,31 @@ distractorRationales= | This admitted form is the other person row.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55e765294cf34406e3e63a15d8bac23dbe7b6fb46043095a5789da70642ed860
+- Content hash: 192199083c6d6c5529c542c1552f144fc9630de8b7cd662d0ec5c687c32d22ab
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted function word is recorded for the shown line?
+prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл в дом
 options=direction | location
 answer=direction
-feedback=The admitted answer for this contrast is direction.
+feedback=Does this admitted label name the pattern of the shown line? direction.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted word is the function recorded for the location line.
+distractorRationales= | This label names the other pattern, not the pattern of the shown line.
+testedFeature=DIRECTION_LOCATION
+evidenceMode=FEATURE_LABEL
+contrastSetId=u6-direction-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u6-direction-x-0
+distractorSourceIds= | prov-u6-direction-x-1
+distractorDifference= | This label names the other pattern, not the pattern of the shown line.
+whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
+contrastMembers=direction | location
 
 ### INDEPENDENT_CHECK `u6-i-possessive-1`
-
-- Objectives: obj-u6-possessive
-- Sessions: u6-s-possessive
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e08f3dcd89e5c4198a5be65a4fa612953911a6b587b656840d653f822055864
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted form is recorded for Our?
-promptLetter=Our
-options=Наш | Ваш
-answer=Наш
-feedback=The admitted answer for this contrast is Наш.
-objectiveId=obj-u6-possessive
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other row in the frozen table.
-
-### INDEPENDENT_CHECK `u6-i-possessive-2`
 
 - Objectives: obj-u6-possessive
 - Sessions: u6-s-possessive
@@ -2512,19 +2750,61 @@ distractorRationales= | This admitted form is the other row in the frozen table.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fcf20097d3d88d9f8995db50a5390816670c6e43164712a5ba3b3230aefd9ac0
+- Content hash: c3b3fd9d7f904d015013fad9d7dee61323e5fb811dd22926d5565fb6eb0b1107
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for my?
-promptLetter=my
-options=моя́ | мо́й | мои́
-answer=моя́
-feedback=The admitted answer for this contrast is моя́.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=стол
+options=мо́й | моя́
+answer=мо́й
+feedback=Does the answer show the governed row of the same word? мо́й.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different row of the same word. | This admitted form is the plural row of the same word.
+distractorRationales= | This form is the other agreement row of the same word.
+testedFeature=POSSESSIVE_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-possessive-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-possessive-4
+distractorSourceIds= | prov-ex-or-u6-possessive-5
+distractorDifference= | This form is the other agreement row of the same word.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=мо́й | моя́
+
+### INDEPENDENT_CHECK `u6-i-possessive-2`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-possessive
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7ce760dd998e5201ac8568978711070ac6711621713c9a6ff048bc77d59dbdca
+
+kind=FORM_SELECTION
+language=en
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=Наш
+options=нашу | Наш | Наши
+answer=нашу
+feedback=Does the answer show the governed row of the same word? нашу.
+objectiveId=obj-u6-possessive
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
+testedFeature=POSSESSIVE_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-possessive-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u6-possessive-x-2
+distractorSourceIds= | prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-3
+distractorDifference= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=нашу | Наш | Наши
 
 ### INDEPENDENT_CHECK `u6-i-possessive-3`
 
@@ -2534,41 +2814,61 @@ distractorRationales= | This admitted form is a different row of the same word. 
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 468d13751a8fb905ee71cd77ccca2978af152b3781e287ede56e27398e34968e
+- Content hash: b68e6f837a723f98788dca7f4d59a0dccee205557840775e3e4fce30416ed9ec
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for your?
-promptLetter=your
-options=тво́й | твоя́ | мо́й
-answer=тво́й
-feedback=The admitted answer for this contrast is тво́й.
+prompt=Which admitted form is the other agreement row of the shown form?
+promptLetter=тво́й
+options=твоя́ | тво́й
+answer=твоя́
+feedback=Does the answer show the governed row of the same word? твоя́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different row of the same word. | This admitted form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the other agreement row.
+testedFeature=POSSESSIVE_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-possessive-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-possessive-9
+distractorSourceIds= | prov-ex-or-u6-possessive-8
+distractorDifference= | This form is the dictionary row of the same word, not the other agreement row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=твоя́ | тво́й
 
 ### INDEPENDENT_CHECK `u6-i-third-1`
 
 - Objectives: obj-u6-third
 - Sessions: u6-s-third
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 687f86edc9cc6479d358c73037e86a1ecf1b18c522b5e422f8472780135ca237
+- Content hash: d73ba1a796924f79017a963f1d2bb77a609d872f544d4d529d5060b6c9edb6b1
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is recorded for his in the shown line?
-promptLetter=I want his cat
-options=его | её | их
-answer=его
-feedback=The admitted answer for this contrast is его.
+prompt=Which admitted form does the shown line use?
+promptLetter=Я хочу его котов
+options=его́ | её | их
+answer=его́
+feedback=Does the answer identify the governed form in the shown line? его́.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other third-person form. | This admitted form is the other third-person form.
+distractorRationales= | This form is the other third-person form, and the shown line uses another form. | This form is the other third-person form, and the shown line uses another form.
+testedFeature=THIRD_PERSON_FORM
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-third-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-third-5
+distractorSourceIds= | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
+distractorDifference= | This form is the other third-person form, and the shown line uses another form. | This form is the other third-person form, and the shown line uses another form.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=его́ | её | их
 
 ### INDEPENDENT_CHECK `u6-i-third-2`
 
@@ -2578,19 +2878,29 @@ distractorRationales= | This admitted form is the other third-person form. | Thi
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6eb097a83346038cca496796cccf17cebc839ae1f0e827bc1598ca96dd6eb6b
+- Content hash: 4abeaae6e6b7b83a7c236d466ee3e6eaec2ac4606a4f9bd0276d5bb86d88e721
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for I want his cats?
-promptLetter=I want his cats
+prompt=Which admitted line keeps the same form as the shown line?
+promptLetter=Я хочу его кота
 options=Я хочу его котов | Я хочу его кота
 answer=Я хочу его котов
-feedback=The admitted answer for this contrast is Я хочу его котов.
+feedback=Does the answer identify the governed form in the shown line? Я хочу его котов.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other object example.
+distractorRationales= | This line repeats the shown line, not the other admitted line with the same form.
+testedFeature=THIRD_PERSON_FORM
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-third-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-third-4-ru
+distractorSourceIds= | prov-ex-u6-third-3-ru
+distractorDifference= | This line repeats the shown line, not the other admitted line with the same form.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Я хочу его котов | Я хочу его кота
 
 ### INDEPENDENT_CHECK `u6-i-object-1`
 
@@ -2600,19 +2910,29 @@ distractorRationales= | This admitted line is the other object example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc38c721e3bd81d6807ddfc954aba655c59f48f6342ff801bb668f52e2f5994c
+- Content hash: d98b1009676ada97dd698a198a6cfb6e939faa3596401958bf9ce8840d6067f9
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for I love you?
-promptLetter=I love you
-options=Я тебя люблю | Я люблю собак
-answer=Я тебя люблю
-feedback=The admitted answer for this contrast is Я тебя люблю.
+prompt=Which admitted line is the other order of the shown line?
+promptLetter=Я тебя люблю
+options=Я люблю тебя | Я тебя люблю
+answer=Я люблю тебя
+feedback=Does the answer identify the governed form in the shown line? Я люблю тебя.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is a different object example.
+distractorRationales= | This line repeats the shown line, not the other order of the same words.
+testedFeature=OBJECT_ORDER
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-object-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-object-2-ru
+distractorSourceIds= | prov-ex-u6-object-1-ru
+distractorDifference= | This line repeats the shown line, not the other order of the same words.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Я люблю тебя | Я тебя люблю
 
 ### INDEPENDENT_CHECK `u6-i-object-2`
 
@@ -2622,19 +2942,29 @@ distractorRationales= | This admitted line is a different object example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f1aac1882a61647028d6d2f7330153cd040454a44c1134364ce80168a1baa57
+- Content hash: c210051f90839a3a7eed9d5e8e63e6a2da26fd692d97917591837ac366234ff0
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for Dogs hate cats?
-promptLetter=Dogs hate cats.
-options=Собаки ненавидят котов. | Коты ненавидят собак.
-answer=Собаки ненавидят котов.
-feedback=The admitted answer for this contrast is Собаки ненавидят котов.
+prompt=Which admitted line reverses the object of the shown line?
+promptLetter=Собаки ненавидят котов.
+options=Коты ненавидят собак. | Собаки ненавидят котов.
+answer=Коты ненавидят собак.
+feedback=Does the answer identify the governed form in the shown line? Коты ненавидят собак.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line reverses the shown pair.
+distractorRationales= | This line repeats the shown line, not the reversed object pair.
+testedFeature=ACCUSATIVE_OBJECT
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-object-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-object-4-ru
+distractorSourceIds= | prov-ex-u6-object-3-ru
+distractorDifference= | This line repeats the shown line, not the reversed object pair.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Коты ненавидят собак. | Собаки ненавидят котов.
 
 ### INDEPENDENT_CHECK `u6-i-object-3`
 
@@ -2644,19 +2974,29 @@ distractorRationales= | This admitted line reverses the shown pair.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60451b955da6f6f15bebbea86d9bee35a6ed3331cd2d628f4e0e31a8a8a7a196
+- Content hash: 1aaf3b58d79f5a9295ccc66f2df70963d9853cdbb9ba1d6e8798caa68c380bfd
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for Cats hate dogs?
-promptLetter=Cats hate dogs.
-options=Коты ненавидят собак. | Собаки ненавидят котов.
-answer=Коты ненавидят собак.
-feedback=The admitted answer for this contrast is Коты ненавидят собак.
+prompt=Which admitted line reverses the object of the shown line?
+promptLetter=Коты ненавидят собак.
+options=Собаки ненавидят котов. | Коты ненавидят собак.
+answer=Собаки ненавидят котов.
+feedback=Does the answer identify the governed form in the shown line? Собаки ненавидят котов.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line reverses the shown pair.
+distractorRationales= | This line repeats the shown line, not the reversed object pair.
+testedFeature=ACCUSATIVE_OBJECT
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-object-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-object-3-ru
+distractorSourceIds= | prov-ex-u6-object-4-ru
+distractorDifference= | This line repeats the shown line, not the reversed object pair.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Собаки ненавидят котов. | Коты ненавидят собак.
 
 ### INDEPENDENT_CHECK `u6-i-feminine-1`
 
@@ -2666,19 +3006,29 @@ distractorRationales= | This admitted line reverses the shown pair.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04990bb9a7a9a432f0b0eeffe262b2b104f7bf8728585f64cd6979169e6a3eb4
+- Content hash: 65e4f2280aec62f433b31d8c1a45d504149546f043a9d6063461e01d57ab8ba3
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for mom?
-promptLetter=mom
-options=ма́му | же́нщину
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=ма́ма
+options=ма́му | ма́ма
 answer=ма́му
-feedback=The admitted answer for this contrast is ма́му.
+feedback=Does the answer show the governed row of the same word? ма́му.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted object form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
+testedFeature=FEMININE_ACCUSATIVE
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-feminine-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-feminine-3
+distractorSourceIds= | prov-ex-or-u6-feminine-2
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=ма́му | ма́ма
 
 ### INDEPENDENT_CHECK `u6-i-feminine-2`
 
@@ -2688,19 +3038,29 @@ distractorRationales= | This admitted object form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2fcdb65529085fda4b8b4d5b591e84e08c6f79c15a61a094f1c851d727bf1a3
+- Content hash: fb49ad177969552912f3d0f2f56d53ac635e44de34a2883305c26b16c2e6b030
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for woman?
-promptLetter=woman
-options=же́нщину | кни́гу
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=же́нщина
+options=же́нщину | же́нщина
 answer=же́нщину
-feedback=The admitted answer for this contrast is же́нщину.
+feedback=Does the answer show the governed row of the same word? же́нщину.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted object form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
+testedFeature=FEMININE_ACCUSATIVE
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-feminine-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-feminine-5
+distractorSourceIds= | prov-ex-or-u6-feminine-4
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=же́нщину | же́нщина
 
 ### INDEPENDENT_CHECK `u6-i-animacy-1`
 
@@ -2710,19 +3070,29 @@ distractorRationales= | This admitted object form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9de2afe5fd39584a19178eae398544bc8c4c8c9dfe44c99bb64255c2ec3e8f3
+- Content hash: 810a6649d180e90fa3eb595fd75e3b8f564ad427a337c56b91ec927566cb6f0c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for table?
-promptLetter=table
+prompt=Which admitted form is the inanimate object row of the shown form?
+promptLetter=сто́л
 options=сто́л | бра́та
 answer=сто́л
-feedback=The admitted answer for this contrast is сто́л.
+feedback=Does the answer agree with the shown word? сто́л.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the object row of a different word.
+distractorRationales= | This form is the animate object row, and the shown word keeps its own object row.
+testedFeature=ANIMACY
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u6-animacy-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-animacy-0
+distractorSourceIds= | prov-ex-or-u6-animacy-5
+distractorDifference= | This form is the animate object row, and the shown word keeps its own object row.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=сто́л | бра́та
 
 ### INDEPENDENT_CHECK `u6-i-animacy-2`
 
@@ -2732,19 +3102,29 @@ distractorRationales= | This admitted form is the object row of a different word
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abe4d790db865529105846d045d1d1507efab2531e0cc14e08fe660bff9f3824
+- Content hash: 21a7655a3782eadd58822114dd01c402cb9d3ae3734ae9b2a61e5fc054e37e72
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for teacher?
-promptLetter=teacher
-options=учи́теля | дру́га
-answer=учи́теля
-feedback=The admitted answer for this contrast is учи́теля.
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=друг
+options=дру́га | друг
+answer=дру́га
+feedback=Does the answer show the governed row of the same word? дру́га.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted object form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the object row.
+testedFeature=ANIMACY
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u6-animacy-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-animacy-8
+distractorSourceIds= | prov-ex-or-u6-animacy-7
+distractorDifference= | This form is the dictionary row of the same word, not the object row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=дру́га | друг
 
 ### INDEPENDENT_CHECK `u6-i-animacy-3`
 
@@ -2754,19 +3134,29 @@ distractorRationales= | This admitted object form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d3a34e889843ba0a8f1474563aa56ba6287eb22f9ddadb009375649ef12adf6
+- Content hash: 24e22dd76bd749f6a2cc2165ea3e41381de106f4b5e101c4982f63cb8ff420e6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row recorded for friend?
-promptLetter=friend
-options=дру́га | бра́та
-answer=дру́га
-feedback=The admitted answer for this contrast is дру́га.
+prompt=Which admitted form is the inanimate object row of the shown form?
+promptLetter=до́м
+options=до́м | учи́теля
+answer=до́м
+feedback=Does the answer agree with the shown word? до́м.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted object form belongs to a different word.
+distractorRationales= | This form is the animate object row, and the shown word keeps its own object row.
+testedFeature=ANIMACY
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u6-animacy-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u6-animacy-2
+distractorSourceIds= | prov-ex-or-u6-animacy-6
+distractorDifference= | This form is the animate object row, and the shown word keeps its own object row.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=до́м | учи́теля
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-1`
 
@@ -2776,19 +3166,29 @@ distractorRationales= | This admitted object form belongs to a different word.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26cf76596ce2a0182b9da841d884ecf41535ed351623538519f870d0c08c9a78
+- Content hash: 176c911ba3defb873f039168d162ddb08e5cdc9bc146d2424f660d7e9ae01bfc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for We/us?
-promptLetter=We/us
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=Мы
 options=Нас | Меня
 answer=Нас
-feedback=The admitted answer for this contrast is Нас.
+feedback=Does the answer identify the governed form in the shown line? Нас.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other person row.
+distractorRationales= | This form is not the object row of the shown line.
+testedFeature=PERSONAL_OBJECT_CASE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-pronoun-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-pronoun-1-ru
+distractorSourceIds= | prov-ex-u6-pronoun-0-ru
+distractorDifference= | This form is not the object row of the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Нас | Меня
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-2`
 
@@ -2798,19 +3198,29 @@ distractorRationales= | This admitted form is the other person row.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8a73f2b7671471e9dae7fca4c14dae5e6471a601b845a43b81adad06d425e96
+- Content hash: 394a21f06ea74b39f1cd875be299da67562272becf2d088e4b711720b46446c7
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for She/her?
-promptLetter=She/her
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=Она
 options=Её | Его
 answer=Её
-feedback=The admitted answer for this contrast is Её.
+feedback=Does the answer identify the governed form in the shown line? Её.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other person row.
+distractorRationales= | This form is not the object row of the shown line.
+testedFeature=PERSONAL_OBJECT_CASE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-pronoun-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-pronoun-5-ru
+distractorSourceIds= | prov-ex-u6-pronoun-4-ru
+distractorDifference= | This form is not the object row of the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Её | Его
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-3`
 
@@ -2820,19 +3230,29 @@ distractorRationales= | This admitted form is the other person row.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70f436ce793893569994cbd8f8e3436fcfe2992b93b7e533c71f7bceff383a4a
+- Content hash: c6f9154fae6055f2a4f9bf4dff8f83d32fa08beb2ac60719e8823de55ddda9ea
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for They/them?
-promptLetter=They/them
+prompt=Which admitted form is the object row of the shown form?
+promptLetter=Они
 options=Их | Вас
 answer=Их
-feedback=The admitted answer for this contrast is Их.
+feedback=Does the answer identify the governed form in the shown line? Их.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different person row.
+distractorRationales= | This form is not the object row of the shown line.
+testedFeature=PERSONAL_OBJECT_CASE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u6-pronoun-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u6-pronoun-6-ru
+distractorSourceIds= | prov-ex-u6-pronoun-3-ru
+distractorDifference= | This form is not the object row of the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=Их | Вас
 
 ### INDEPENDENT_CHECK `u6-i-direction-1`
 
@@ -2842,19 +3262,29 @@ distractorRationales= | This admitted form is a different person row.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00e7f71e8a9114ad97e288a5aef1d52d269f4af26c2cd15978366a4118683773
+- Content hash: 82d7219a3387f25fa11ac34187d57e74d931c05b4021f8f38859aa3b550ab918
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted function word is recorded for the shown line?
+prompt=Which admitted function does the shown line use?
 promptLetter=Я жил в Лондоне
 options=location | direction
 answer=location
-feedback=The admitted answer for this contrast is location.
+feedback=Does this admitted label name the pattern of the shown line? location.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted word is the function recorded for the direction line.
+distractorRationales= | This label names the other pattern, not the pattern of the shown line.
+testedFeature=DIRECTION_LOCATION
+evidenceMode=FEATURE_LABEL
+contrastSetId=u6-direction-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u6-direction-x-1
+distractorSourceIds= | prov-u6-direction-x-0
+distractorDifference= | This label names the other pattern, not the pattern of the shown line.
+whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
+contrastMembers=location | direction
 
 ### INDEPENDENT_CHECK `u6-i-direction-2`
 
@@ -2864,19 +3294,29 @@ distractorRationales= | This admitted word is the function recorded for the dire
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2dc4abc850947554572fd12eac048c4da977e9965190736914f36664e3db314e
+- Content hash: 9b0d11c32e26ab8d0f7cd95ce6b8b70cf405793cc76d8455cbfe1d8160f7b803
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted function word is recorded for the shown line?
+prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл на улицу
 options=direction | location
 answer=direction
-feedback=The admitted answer for this contrast is direction.
+feedback=Does this admitted label name the pattern of the shown line? direction.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted word is the function recorded for the location line.
+distractorRationales= | This label names the other pattern, not the pattern of the shown line.
+testedFeature=DIRECTION_LOCATION
+evidenceMode=FEATURE_LABEL
+contrastSetId=u6-direction-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u6-direction-x-0
+distractorSourceIds= | prov-u6-direction-x-1
+distractorDifference= | This label names the other pattern, not the pattern of the shown line.
+whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
+contrastMembers=direction | location
 
 ### INDEPENDENT_CHECK `u6-i-direction-3`
 
@@ -2886,19 +3326,29 @@ distractorRationales= | This admitted word is the function recorded for the loca
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b64eee6c25e4adbb5f23108ff52cb81581139a127bc8632f50e60df11958eff
+- Content hash: aa78a8df326e50dc302ae0415003d9d8b79cf24d10e2e9b23f0dae262abac164
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted function word is recorded for the shown line?
+prompt=Which admitted function does the shown line use?
 promptLetter=Оно на столе
 options=location | direction
 answer=location
-feedback=The admitted answer for this contrast is location.
+feedback=Does this admitted label name the pattern of the shown line? location.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted word is the function recorded for the direction line.
+distractorRationales= | This label names the other pattern, not the pattern of the shown line.
+testedFeature=DIRECTION_LOCATION
+evidenceMode=FEATURE_LABEL
+contrastSetId=u6-direction-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u6-direction-x-1
+distractorSourceIds= | prov-u6-direction-x-0
+distractorDifference= | This label names the other pattern, not the pattern of the shown line.
+whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
+contrastMembers=location | direction
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -2926,12 +3376,12 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a015742fd9703c57b7c7c2d6b73e836c2be7959e71ecd3e8e8b2ce3605e223a
+- Content hash: 6f51a9211e1f14f502773ceadd967cbcb8ae5db6b3a9bd243eeae3751bbe36c3
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:стол#sg_acc
+sourceRecordId=nouns.csv:стол#sg_nom
 originalSourceText=сто'л
 shippedText=сто́л
 transformation=formatting
@@ -2984,12 +3434,70 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2adb9998ce011d655c8c5863dfc2957f7d48efc807be9b1bdddf910acd657eff
+- Content hash: 60492f9d59a0f4883a1b6801198a92942782ae277db7814abb30579d0bbdbed4
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:дом#sg_acc
+sourceRecordId=nouns.csv:стол#sg_acc
+originalSourceText=сто'л
+shippedText=сто́л
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6ffdb9ee5ac5807ea8e6855321d74cb2913caec8e590deb7ae68017a602b072e
+contentHash=fbd569200eced2f5c7de45fbc2ae050ecd4835bdfea568ba34f8a5b72a673166
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-1-gloss`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 373b264cfda48343ebe43dbff573cf585b91f6f07ede81ac4ab85fbecbc07b36
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:стол#translations_en
+originalSourceText=table, desk, board; diet, cooking, cuisine; department, section
+shippedText=table
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f27cc2c8a71de4aef61cea7eb4777768cd53c906f03627296bd3b8998c919ab6
+contentHash=0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-2`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b8ec9d18c700c4899315c804123aded617c158bf955af10eee53be088458f49d
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дом#sg_nom
 originalSourceText=до'м
 shippedText=до́м
 transformation=formatting
@@ -3005,7 +3513,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-1-gloss`
+### PROVENANCE `prov-ex-or-u6-animacy-2-gloss`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3013,7 +3521,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a99cb8852cebc21ed88c877702e8a2c1df7013bfec6f41ff9f589543f6065b3
+- Content hash: 436292a4d484e702f6ed53fdbeebb1ef227e9a4b1edde4a6f22be21f2d4a5203
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3034,7 +3542,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-2`
+### PROVENANCE `prov-ex-or-u6-animacy-3`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3042,7 +3550,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4df1ce3db82259bc1476b53662ac202a67afd26c32a389bd8286842663b5caf4
+- Content hash: 548e36f255c7c6075b0d9f4262d99ee894c3e1b3115efed8236abb8dd952e663
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дом#sg_acc
+originalSourceText=до'м
+shippedText=до́м
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ce94ec5fc770def6f9e65baa3fdb9ccb1e092f3059486e1179ebb1dd3f7b1ed9
+contentHash=dff2181fee228a7f01235ebbe64bd232b28eb0364ca02c0b2b82abc9e1da070d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-3-gloss`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e7cbc076507e4650f8311db117f149325b220ede6ef6e8437e3024e6c4a593e
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дом#translations_en
+originalSourceText=house, home, house-hold
+shippedText=house
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d5140b4f5c763738e8327a10a66a10858446112daaa55417c81397dd4c9da2f0
+contentHash=d6e21286621a8586f7e54720ab5a39c93acc2f4b8fba7a16ec1c24d69a08c613
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-4`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8536611481b8f364db7cccf05d91492248b056e3ff421bd1db8647fc2ffbe78c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3063,7 +3629,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-2-gloss`
+### PROVENANCE `prov-ex-or-u6-animacy-4-gloss`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3071,7 +3637,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70d23752f882308b4a31b37c4d3ab095f7ff5469b6297d5d9653483bedb4e262
+- Content hash: ad4d6450aeef6e83d7f9a46da7bbe6da799d03a744799bbb9f33d41dcdb39d9f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3092,7 +3658,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-3`
+### PROVENANCE `prov-ex-or-u6-animacy-5`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3100,7 +3666,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8c334ea3ccd1a557dbc00526b99d6890c56363d0dbb44a8d39276392438cb54
+- Content hash: 5b785d5dda9b647f7ccd13e6f262d47d9cf1d45cf7f9eea58027101ad483ce4f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3121,7 +3687,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-3-gloss`
+### PROVENANCE `prov-ex-or-u6-animacy-5-gloss`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3129,7 +3695,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8625d65cf0e989661e2e7a9a143aa6117e3fa47e19d308fe08e94d7a90ba511f
+- Content hash: 3abdb8fc1440f2e4a6b5b178361e1551aa7858c2c573802d5e931037750ebbed
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3150,7 +3716,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-4`
+### PROVENANCE `prov-ex-or-u6-animacy-6`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3158,7 +3724,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 548c3eba53354b118c8c9a55147965943e44f61680f807e871d4886ea33fb8ce
+- Content hash: 15fe09c82e3f50b348cb86138fe370ea7d2214db1ffe7db00c9ecd7fc939e1d0
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3179,7 +3745,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-4-gloss`
+### PROVENANCE `prov-ex-or-u6-animacy-6-gloss`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3187,7 +3753,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9986ce46e195155948c71c0d9a24318969404d4564b5da10a0b44873a6388228
+- Content hash: c6a484493ad95711edc3853ad47e40ba02fff09ad7bdc653fe0e9edec3a01742
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3208,7 +3774,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-5`
+### PROVENANCE `prov-ex-or-u6-animacy-7`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3216,7 +3782,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a41a2fa5a3341f007ea1fcfd5025131a33aea14e05fdcb9ee0227b0bbdb2138
+- Content hash: 5749e2be5f50f3d43f97c67b70e0429c4c698aa7b43bc3fdb3bd5c281b49efa0
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#sg_nom
+originalSourceText=друг
+shippedText=друг
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354
+contentHash=a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-7-gloss`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bdc8d8337e043edbcf816d366cddcd3ce29df486f3c5d17699f949b301ab5841
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#translations_en
+originalSourceText=friend
+shippedText=friend
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
+contentHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-animacy-8`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f8b85097ecf40b4671eda54646b5b49d03347d3373562a2d85831a736ed3df87
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3237,7 +3861,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-animacy-5-gloss`
+### PROVENANCE `prov-ex-or-u6-animacy-8-gloss`
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-orient, u6-s-animacy
@@ -3245,7 +3869,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3996fa0a81cc3e7715adf06c75a9ca53a0136dd02d1c60c30609087ebae8ac5
+- Content hash: e1f29e5b02a0ed93c65f6660c7bc15344385b81bcfbde69833fce887f4f5827e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3390,21 +4014,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfa8c78cc981ea480803c5e00ad6f0d36505068986cc001c87f35c7850172460
+- Content hash: 399e54495674580c2b9e2f97a51c219bf19a17d67c8e26caf52cf0638551657e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:мама#sg_acc
-originalSourceText=ма'му
-shippedText=ма́му
+sourceRecordId=nouns.csv:мама#sg_nom
+originalSourceText=ма'ма
+shippedText=ма́ма
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=895f4d143594a1a9bbab7c8b3def23020ccb3750a64b628a5315d83ca148d8a4
-contentHash=1fed12c9d31b6dafad7e4bc93b3b8ed71b7cda7be16cb8af2d109c88ed6d1017
+sourceHash=90fa96f6c07057bb5647bdb089766761636f5ddb2da623520f1f7f149048be34
+contentHash=1cc52d4a8513a3b381822de8fdf4fd0d5314592a82e9e70af02311cefaf3023d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3448,7 +4072,123 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d47801352bac1e22ae9c0558c00b5aed7cba5f524f7f527a7d711e4481bd52d
+- Content hash: 51e27855e3618668d9009906ed21c302748ad91dc94053d13d7599264f89a59c
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#sg_acc
+originalSourceText=ма'му
+shippedText=ма́му
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=895f4d143594a1a9bbab7c8b3def23020ccb3750a64b628a5315d83ca148d8a4
+contentHash=1fed12c9d31b6dafad7e4bc93b3b8ed71b7cda7be16cb8af2d109c88ed6d1017
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-feminine-3-gloss`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f30191b3a161cb9e1703bf1fac23819e62069a748f7a8f59df8320e27f739217
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#translations_en
+originalSourceText=mom, mama, mommy, mummy
+shippedText=mom
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d4cf71370a668da26fe34070d59753e8c82f2477176bc4eee3a06dc421b77bc6
+contentHash=bcb9dae6ea88dbf28c262998e6661ec60f32a760faa5aef96745b39c38dbf235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-feminine-4`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3fa1996ac0051e95bf16c4c656391a3630c2020448b0e812d03c10c89d81c833
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:женщина#sg_nom
+originalSourceText=же'нщина
+shippedText=же́нщина
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d9a13b025f0e6b4f7717fda208817d80af07700cea9b3f2e156ebc1460262c5e
+contentHash=79c5e99469ee12c11c7e40b6f78487be6c43f02ecfdddffea233621811f428f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-feminine-4-gloss`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2e3cc73819038c9092ba306c4e34dd5f3bf6791884c9efe7d1e3a2512d938ddf
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:женщина#translations_en
+originalSourceText=woman, women, womanfolk, womankind
+shippedText=woman
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=76587fa3848559ed4a1dc5188bedbe0b082834b94616f16b3bbac002543a61b2
+contentHash=cf2e5bff1ef03dcd20d1a0b18ef7d89fc80a3554434165753672f6f40fde1d25
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u6-feminine-5`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 50e9c99564d4bfa73abf6e852a3b5fa5ef3ecfe42d0517b81d7449678b7dd9fa
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3469,7 +4209,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u6-feminine-3-gloss`
+### PROVENANCE `prov-ex-or-u6-feminine-5-gloss`
 
 - Objectives: obj-u6-feminine
 - Sessions: u6-s-orient, u6-s-feminine
@@ -3477,7 +4217,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b23dbe40a1d6548fb4ace06efe814b48c77a0a720c6448c2d5076b0737eecaba
+- Content hash: c711e1b90fa8dc68cb73b2433416c99f15b142cfdbf6623e29e760e2732b894f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4434,7 +5174,65 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 841ab3260fd62807c7fc71d5b769574abd93ad323f9d23f2ab3942c0409f9612
+- Content hash: 497cc265c90d8f4f10df5d964963bb996bf671919eb58e8576c08c48cecb81e3
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:I love you" as '''Я люблю тебя''' and be grammatically correct, it is more commo
+originalSourceText=I love you" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''
+shippedText=I love you
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5c5dea45cfbf2b4cc2117d29e3a8e252755ac0c1d3f01bbef90439528149b536
+contentHash=c33084feaa65adbbbebd0c9bf292a26ffc6dea97b170d88e501ab4865591aafd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u6-object-2-ru`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4881e698e6e852a2018040e82b9b073664d02b1322da23a5a7c2d9a54c16220
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:I love you" as '''Я люблю тебя''' and be grammatically correct, it is more commo
+originalSourceText=I love you" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''
+shippedText=Я люблю тебя
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5c5dea45cfbf2b4cc2117d29e3a8e252755ac0c1d3f01bbef90439528149b536
+contentHash=3f7ff7183d81de619999b085862890d276dbc5928b35ed325e82014b62ef23bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u6-object-3-en`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6ded4f417c806c54c43ea8ba0f602cb8590c3e39840b1598f51f0af58dd6e8aa
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
@@ -4455,7 +5253,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u6-object-2-ru`
+### PROVENANCE `prov-ex-u6-object-3-ru`
 
 - Objectives: obj-u6-object
 - Sessions: u6-s-orient, u6-s-object
@@ -4463,7 +5261,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c61e347d99c8f6d04fb84c1ed428d8cf92f4eba534920025ca369ab2cd9372bb
+- Content hash: 24b7244ca928aa8a3b2ef73e29fac38ce9ed9d5944ab1c7b23cd337bcee53507
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
@@ -4484,7 +5282,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u6-object-3-en`
+### PROVENANCE `prov-ex-u6-object-4-en`
 
 - Objectives: obj-u6-object
 - Sessions: u6-s-orient, u6-s-object
@@ -4492,7 +5290,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ea88a7bb3c8040cc6d4ef5579a5c5e197a580baf7a2f4f2247f1d6d93b3226e
+- Content hash: 1bb660f63530e4a81de21f41d614ebf4e684ec46a5e8b7114050e4d35b285617
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
@@ -4513,7 +5311,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u6-object-3-ru`
+### PROVENANCE `prov-ex-u6-object-4-ru`
 
 - Objectives: obj-u6-object
 - Sessions: u6-s-orient, u6-s-object
@@ -4521,7 +5319,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 476a63be7ab899c6d896643361d7f40e652d0e7f7c5e3cf642a7e6e36551df3b
+- Content hash: f8b3cabf1862671eb9be3a5ae358413aa13d4a12fe0e3d9ccadb93310e1f352d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
@@ -5789,6 +6587,122 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u6-possessive-x-0`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 570c42a36567dd3a23cd942a06caa0f17e1cc47e4cd9d7b4cba39815e1a053e6
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Gender?oldid=4310736
+sourceRevision=4310736
+sourceRecordId=gender:my dog' ('''моя собака''')
+originalSourceText=my dog' ('''моя собака''')
+shippedText=собака
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c114ed19561ee7f12a022dae33b3b16a0ae7caada9d567eeb0e977801f44af3b
+contentHash=b37b813500a387198ef943e150e773c13def41668d6b40fe0e629941ab8172d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-possessive-x-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c0f0f395e68d6cc3ed9115936ceaaf4d4d186728c8831242763101a0af5deb6f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Gender?oldid=4310736
+sourceRevision=4310736
+sourceRecordId=gender:my table' ('''мой стол''')
+originalSourceText=my table' ('''мой стол''')
+shippedText=стол
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=381b9b42554a43ee74befc8cd394837d8bc934544229f81d5d9e1f0f2a952ce5
+contentHash=129dde4ecad0c02e88fb74a179b08337e5ac02fcfb4146ed681c12f8baa6d532
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-possessive-x-2`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 639bcc0920f4d7d5e86008089bd74dc0aecde320a282ca6d50ab210a29f503a6
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| Our || Наш || Нашего || нашу || Наше || Наши || Наших
+originalSourceText=| Our || Наш || Нашего || нашу || Наше || Наши || Наших
+shippedText=нашу
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=921b8a646d43f5d7e6618bb844ceee43cf2a0889a9a20135067457e1d046fe05
+contentHash=536260d741f960d037060ae663fdf926cdfe21aa607c7f521751c46907dd23e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-possessive-x-3`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4532840403836bbe90b0515fc31b8f6cf191d44cfce3415d28f947a36b397f30
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| Our || Наш || Нашего || нашу || Наше || Наши || Наших
+originalSourceText=| Our || Наш || Нашего || нашу || Наше || Наши || Наших
+shippedText=Наши
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=921b8a646d43f5d7e6618bb844ceee43cf2a0889a9a20135067457e1d046fe05
+contentHash=cf4c8d0eb706b64499c77403410da3d20c57728dfbc923e15b2794df4bbe4e61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u6-pronoun-rem`
 
 - Objectives: obj-u6-pronoun
@@ -5876,6 +6790,122 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u6-pronoun-x-0`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6d04ff87754432d463e6551804affafc801f756b56c42c02b8de5583441a5b36
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| I/me || Я || Меня
+originalSourceText=| I/me || Я || Меня
+shippedText=Я
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2eaee437e23bcf074091ac7289ca5e2d61b3fa4128840a4eabb81f0ec101a2aa
+contentHash=52b99c2a977b538a427c673096b80fa8e977b260ed63683753d187b0dbe28858
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-pronoun-x-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3b45af74c7d61ab44520ff540f58f16b187d6a6a25b3f5c1532cac7a0258a4a5
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| We/us || Мы || Нас
+originalSourceText=| We/us || Мы || Нас
+shippedText=Мы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=659ff67c880dfc5d05115cb24b550c0ae073e2e8fa808054c64f82894748e9ea
+contentHash=8b01cf8f5b597e44a42998c957d743b35f1816c8230c2ef9fe19d4a3aceb8105
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-pronoun-x-2`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f00af88a5e751c9139a68520004c9ef9dd8f93563415c393299a6d9f771f7b62
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| She/her || Она || Её
+originalSourceText=| She/her || Она || Её
+shippedText=Она
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e5640cfaa5d1f506d4b6432a4a7e94daade91a05184949830326f572b60a2a73
+contentHash=5b73d9a994ea430bf54dda3cf266f8dcb8a7d83b49bf3cca0c91c92490b29700
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u6-pronoun-x-3`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 87b78f09a2d3f85bebc0253b182b5124450890a1f78e88bd7c3e0c68b581dc5f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative:| They/them || Они || Их
+originalSourceText=| They/them || Они || Их
+shippedText=Они
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=adaef9e86330328ed4a0ff4e194ef821afe96135e2b20ce1749b45ffb40882f4
+contentHash=a02f048eabe88b05907ecbe4bf061a129934e426ad5c62225a85e6cfff3aa5ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u6-third-rem`
 
 - Objectives: obj-u6-third
@@ -5926,10 +6956,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a35ec008d25d7a64877e726955a7b706dbd9982f75b6b3e9594999a026f4b96a
+- Content hash: db0f350e9741ae177b80b4b8d571fe49dd85633f7a638ae706bcff6143b675fa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the other possessive example.
+text=This form is the other agreement row of the same word.
 
 ### AUTHORED_ENGLISH `en-u6-003`
 
@@ -5939,10 +6969,10 @@ text=This admitted line is the other possessive example.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24e00f72167a5e73077dfe0df27e5532ca0106c6e9682569853f2764e7b54366
+- Content hash: 2e1d48bbd78cc7c009071b770265647cef6d0f6ec939b72a93abc6c20a48dd16
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The admitted answer for this contrast is 
+text=This form is the plural row of the same word.
 
 ### AUTHORED_ENGLISH `en-u6-004`
 
@@ -5952,10 +6982,10 @@ text=The admitted answer for this contrast is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e51a24f06d0ebf0b3004080fb101fdc4beb543d83ba8f67da0083e7dee4f09ea
+- Content hash: 54a04193dadb5b3efbc250acbee8cc6849b4b20282fbec7e3d5b0b856581a56c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for my table?
+text=Does the answer show the governed row of the same word?
 
 ### AUTHORED_ENGLISH `en-u6-005`
 
@@ -5965,10 +6995,10 @@ text=Which admitted line is recorded for my table?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2a7bb7ed3033fc0c20e64705fd494173da0dafffc89f84af2012b03dd098ca9
+- Content hash: d4c8d66406204cf06cd9559baaead0dd755c20ec2c12fd27593fb82ee3a998b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Which admitted form agrees with the shown word?
 
 ### AUTHORED_ENGLISH `en-u6-006`
 
@@ -5978,10 +7008,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7986fcdee73160f7f41bc0f2575e5d39a935aa07aa77f178b34d81ffd80f2b23
+- Content hash: 8e592924b2db6238c583410271532070e5a8a3f15354af68e24483f0daed9386
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other row in the frozen table.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u6-007`
 
@@ -5991,10 +7021,10 @@ text=This admitted form is the other row in the frozen table.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 166d97cb4b281664b74b6f9fcdedac7eb924fa61345cc1f368180dd5b11e611a
+- Content hash: 929183e715614e3cba431d730ca563fc5393c49f429f72237ec4cff39624bd26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for Our?
+text=This form is the dictionary row of the same word, not the object row.
 
 ### AUTHORED_ENGLISH `en-u6-008`
 
@@ -6004,10 +7034,10 @@ text=Which admitted form is recorded for Our?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4d4fd99e20fec1e11bdebb9d28511322f9c0577b1a50cd17eebfac7a9b1cdc0
+- Content hash: fe8673d1636cc2429643e4c0c3e7bc39f0bb9ff2e242b00d2f14b6eef1ce85ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different row of the same word.
+text=This form is the plural row of the same word, not the object row.
 
 ### AUTHORED_ENGLISH `en-u6-009`
 
@@ -6017,10 +7047,10 @@ text=This admitted form is a different row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c46f75086c2cee3f28ee46ce84524807494e60b0c195ef92413aa01d506c9c1
+- Content hash: bd67f30af660046ec4a3cc89506f3b5b42e4e8d61bb859855a22f4bc7c40522b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the plural row of the same word.
+text=Which admitted form is the object row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u6-010`
 
@@ -6030,10 +7060,10 @@ text=This admitted form is the plural row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed42e332ce5658bc6148acba49723b009e5e5fc7d56b42be090e41dee5249f7d
+- Content hash: 56250896856cb81c8a15e3ca7fd4a841ef34eab760b87d7da25796feeeb5f521
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for my?
+text=This form is the dictionary row of the same word, not the other agreement row.
 
 ### AUTHORED_ENGLISH `en-u6-011`
 
@@ -6043,10 +7073,10 @@ text=Which admitted form is recorded for my?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1bd43cc851341c6a3fa4aa3af61888011cfe9095221b9ae0b69b7b570272576
+- Content hash: fc56b4b82e968f52504b86c48b238b33f63034023d855eb744837c58391f984e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form belongs to a different word.
+text=Which admitted form is the other agreement row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u6-012`
 
@@ -6056,10 +7086,10 @@ text=This admitted form belongs to a different word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23714d7ea78323225da4083465c691ba38cf6f6abf4bb624e4e7c9badb10fd06
+- Content hash: 8194f1dcee9daa91f86bd9410e9ecf192ad03a616c6466a435771bd9d8657a96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for your?
+text=This form is the other third-person form, and the shown line uses another form.
 
 ### AUTHORED_ENGLISH `en-u6-013`
 
@@ -6069,10 +7099,10 @@ text=Which admitted form is recorded for your?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67de6d3f8d08664e5ffc8d731f58d95db25ce5abc5b2769053c8ed3a7e85b804
+- Content hash: a1cf25871b507ef714947572be0bbda3df13c028c3eb4165ce2d20cb509f8969
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the other object example.
+text=Does the answer identify the governed form in the shown line?
 
 ### AUTHORED_ENGLISH `en-u6-014`
 
@@ -6082,10 +7112,10 @@ text=This admitted line is the other object example.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61b38647053a9bfcd141bbc3ef52d743fbc8f67709676838fdb4a1b3b443baf0
+- Content hash: 031da12f78c36ec9cfb3d804f6c4b1a31ae074efaced07734694154e64fd4534
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for I want his cat?
+text=Which admitted form does the shown line use?
 
 ### AUTHORED_ENGLISH `en-u6-015`
 
@@ -6095,10 +7125,10 @@ text=Which admitted line is recorded for I want his cat?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5296144d2a4a03629125f61e48fd05eb52b950bc6d19467fe994a93f6f43eccb
+- Content hash: 9d56938b25e9a3d9431e4406c4a4dfa143ffa0cc10c5e4de749fc85a6104bdff
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other third-person form.
+text=This line repeats the shown line, not the other admitted line with the same form.
 
 ### AUTHORED_ENGLISH `en-u6-016`
 
@@ -6108,10 +7138,10 @@ text=This admitted form is the other third-person form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c83fb20969ffba0ef1d0d75c358cad1c0f26b18bd5c90a1c01fdd5b056fb165
+- Content hash: 64e4a73d9651bb4740fc235a0481bfa885e838ecf73c18f91d8b09e46728fad9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for his in the shown line?
+text=Which admitted line keeps the same form as the shown line?
 
 ### AUTHORED_ENGLISH `en-u6-017`
 
@@ -6121,10 +7151,10 @@ text=Which admitted form is recorded for his in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a619dd3c51e79e27a3df940d4f950e9f2bc4f3f55f2d9001eef685a4ecf9d36
+- Content hash: 3aa8958f05376dcd89daa8965c08c217f6992733d43e73a8944577d1f0bf3203
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for I want his cats?
+text=This line repeats the shown line, not the other order of the same words.
 
 ### AUTHORED_ENGLISH `en-u6-018`
 
@@ -6134,10 +7164,10 @@ text=Which admitted line is recorded for I want his cats?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53dd8015f5c1390ff4c7eaf25f5ec9fdbbf456ca5b554b7bb7f0a5c61471cd23
+- Content hash: 1e2637a97a1bc11b62a8928c575c4f1a3d7cb809371e422bdf33989435156212
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is a different object example.
+text=Which admitted line is the other order of the shown line?
 
 ### AUTHORED_ENGLISH `en-u6-019`
 
@@ -6147,10 +7177,10 @@ text=This admitted line is a different object example.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b47cb51d2512d908a663f8f419fff38b1fd5a9a77a005f538035c2473883cbe
+- Content hash: db99eeacdb36c6161a99c36326780d9fc3b58cc7753889561a93b5281d427c73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for I like dogs?
+text=This line repeats the shown line, not the reversed object pair.
 
 ### AUTHORED_ENGLISH `en-u6-020`
 
@@ -6160,10 +7190,10 @@ text=Which admitted line is recorded for I like dogs?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b05ad6d511db9eb323e1b8ae35f8b4b54e5717628edb57e9275f25817e2beb3d
+- Content hash: 9426d82a06645a52148e6c2cb3d85332d04201cd3bf2ea0f011c80192bc721e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for I love you?
+text=Which admitted line reverses the object of the shown line?
 
 ### AUTHORED_ENGLISH `en-u6-021`
 
@@ -6173,10 +7203,10 @@ text=Which admitted line is recorded for I love you?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f84b277cee2ca98ce96555917923f3c77ab763722cca017348849ac59b41b16
+- Content hash: 85d27dc58c691bbe97c2d908a7b9fc4ebb09fda8096d0c24bdd3465d11ba1870
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line reverses the shown pair.
+text=This form is the animate object row, and the shown word keeps its own object row.
 
 ### AUTHORED_ENGLISH `en-u6-022`
 
@@ -6186,10 +7216,10 @@ text=This admitted line reverses the shown pair.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4e64fd8c1d4adf90104d82042dde7512b9d05153fe3231af6f40a161c4f8951
+- Content hash: 29c7435c67e372ed848341b5f9a6edb64bd72ea9155c1508c7aa3672f660f1bb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for Dogs hate cats?
+text=Does the answer agree with the shown word?
 
 ### AUTHORED_ENGLISH `en-u6-023`
 
@@ -6199,10 +7229,10 @@ text=Which admitted line is recorded for Dogs hate cats?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15ed2882133a499f782dacc2d064e761398f6c4f0c28c99c953a427122392d91
+- Content hash: 9cf9d191212c4e48b3147e1678ea2da12f3f821e32aac8d6f3cb9e433b098663
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for Cats hate dogs?
+text=Which admitted form is the inanimate object row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u6-024`
 
@@ -6212,10 +7242,10 @@ text=Which admitted line is recorded for Cats hate dogs?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 658fd16d36126bae355c0efd9472d8316ffcc620ca044fda85a7ada07a6727a7
+- Content hash: daa2eafc8222a6ec1c1b890dadf067559aa93c6d03bd544db4b35fdab775ab39
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the dictionary row, not the object row.
+text=This form is not the object row of the shown line.
 
 ### AUTHORED_ENGLISH `en-u6-025`
 
@@ -6225,10 +7255,10 @@ text=This admitted form is the dictionary row, not the object row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 829f0c45c8133bad6202c2a1b1082c25e990f7be6caf33a0a17dfeef9bcf7ae2
+- Content hash: 508298bc5380cc6f30c63e4db44b0cce5a8fe1461fa7f8c3e22b728eefbc7ff8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for book?
+text=This label names the other pattern, not the pattern of the shown line.
 
 ### AUTHORED_ENGLISH `en-u6-026`
 
@@ -6238,10 +7268,10 @@ text=Which admitted form is the object row recorded for book?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89a82ee2d36cc7378f7b082dfef2052d7efa14475db725106357e086b7caae6d
+- Content hash: 1969300051bf8582c2fa09f1fb504d1607033a0a54471e35040e8425f6b9ffdb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted object form belongs to a different word.
+text=Does this admitted label name the pattern of the shown line?
 
 ### AUTHORED_ENGLISH `en-u6-027`
 
@@ -6251,10 +7281,10 @@ text=This admitted object form belongs to a different word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4bc55eadcb51d2f84acaabef1f7cec51ada5593b82db3d10100f59717a94bfa
+- Content hash: 6a0ca2ce63cd9e7f2dc6d93a7985a09e1f676e8c15053a17987501a9bc5e6dd1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for mom?
+text=Which admitted function does the shown line use?
 
 ### AUTHORED_ENGLISH `en-u6-028`
 
@@ -6264,10 +7294,10 @@ text=Which admitted form is the object row recorded for mom?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d0188693d288d58dfa757b39daf9789e3ae0ef49e07f1ad185f1d6fe9169aca
+- Content hash: be3ce9883815ec98805811503004777fc28e9b84598b4830f43e30f80372d9e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for woman?
+text=Admitted possession, objects, and direction
 
 ### AUTHORED_ENGLISH `en-u6-029`
 
@@ -6277,10 +7307,10 @@ text=Which admitted form is the object row recorded for woman?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37933bffd3da291d25dc3bfe33283b2c6caecb3aeecf57f2f457a571a1398e97
+- Content hash: e5241d0c5fbfeb1daca456488a567f3a295608734ce6f3dbc7cc5d5b59858225
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for brother?
+text=Proposed Unit 6 uses frozen records for possession, objects, and direction. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u6-030`
 
@@ -6290,10 +7320,10 @@ text=Which admitted form is the object row recorded for brother?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 091936aa8a74ca0ca1abadaa92d9cff30597750f80396f547d1bcabb9c0516bf
+- Content hash: 8847467b95d3489430ccd00fd559dbf06f984bdbd703a19da3ecd54da9ddb926
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the object row of a different word.
+text=Open Lesson 6 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u6-031`
 
@@ -6303,10 +7333,10 @@ text=This admitted form is the object row of a different word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e128c2edf039efb509d4828a409e7bda6cd00915cb2e7fdb0e7b85d0b36549b
+- Content hash: b8356219c6dff1e22a487d803ba42531912214150acf331fff1a411b7cf3ea9b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for table?
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u6-032`
 
@@ -6316,10 +7346,10 @@ text=Which admitted form is the object row recorded for table?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57ffed5ebabe0288a7b4f44c7e55c19b7cc419cf70b24a5a16c0f93d72761ead
+- Content hash: 5bdd4fe2a8979f7a16fa3df143373d9045c3a98fffda47a16df57d0770c6423e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for teacher?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u6-033`
 
@@ -6329,10 +7359,10 @@ text=Which admitted form is the object row recorded for teacher?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87a57876a607b256cbf5e2c26dd889f01c6ef054b5a2b0ea4394c7a298db2927
+- Content hash: f5fab885aa82dd40aa31d80b199607074e59d37d31504811b6c24a9919c2f5dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row recorded for friend?
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u6-034`
 
@@ -6342,10 +7372,10 @@ text=Which admitted form is the object row recorded for friend?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21589ee1bf325e83d9b89a82d8e54245089bb8eb7cbfccf03b0f611192585c72
+- Content hash: df3a2abd2fe40c12d071e3ff13d0b08ed8e951723b1ba269ef5db2a159a1fd71
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other person row.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u6-035`
 
@@ -6355,10 +7385,10 @@ text=This admitted form is the other person row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8253632a7e294295597d28e27181dcdcf99e74e1968f37f4f1c64418f74ea0f
+- Content hash: 0d5c480a1f2c6c7ed0d690d96ec862f2eef1fe22fe92c411768e9cb294f73483
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for I/me?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u6-036`
 
@@ -6368,10 +7398,10 @@ text=Which admitted form is recorded for I/me?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d7f29bef310129b76376df056ab9738f5e0a59f12df5a450ba13c508da0e5d9
+- Content hash: 2dff479de3db45c4cf50ed26379b4ded4c995903bad32bd093e5c2351378d32f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for We/us?
+text=Work Lesson 6 in your copy
 
 ### AUTHORED_ENGLISH `en-u6-037`
 
@@ -6381,10 +7411,10 @@ text=Which admitted form is recorded for We/us?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 247a154e92bf7b3d899fe597ff96bf42181794ca66b4282b8ce95088830334cc
+- Content hash: bba2af626033937e9b55f489d07dc1446210d4949e56f9b1982ddd38551882e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for She/her?
+text=Do Lesson 6 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u6-038`
 
@@ -6394,10 +7424,10 @@ text=Which admitted form is recorded for She/her?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bd14b35e05c4272217bfb7c08ad1de68040f6d98bcc7e3bdb37c422a2eeef39
+- Content hash: 164d1e8ca5c27e52bc4ab3b9b0e596d521c0e2520e81ff6fb479fd1d18bcae60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different person row.
+text=Names and dialogues stay in the copy you own. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u6-039`
 
@@ -6407,10 +7437,10 @@ text=This admitted form is a different person row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3f4bed72cdb26df54dbc0641849060438039e67bb64516f91a9b46910797d09
+- Content hash: 1bea109a17b72d5fabb3299ef5320acfe1bd4f29a8fea001802e16600e54e6af
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for They/them?
+text=Open Lesson 6 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u6-040`
 
@@ -6420,10 +7450,10 @@ text=Which admitted form is recorded for They/them?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b952036dfb728040566f0b046b83f7fa544af0aba2750ada80ac45b001840206
+- Content hash: 73d9e86008d32528b9004f188e4887c010e4d48dcc9dea5034abb1e655c29501
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted word is the function recorded for the location line.
+text=Record Lesson 6 book work
 
 ### AUTHORED_ENGLISH `en-u6-041`
 
@@ -6433,10 +7463,10 @@ text=This admitted word is the function recorded for the location line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e3c7cc139d3a7c5b3bfb8015cb43fdfae87a7a0e628fa120daa2659d833d5f6
+- Content hash: 1115bcdd70e01309836f49c82536ec00a435509654582e4ccf07cf3e17b01c0e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted function word is recorded for the shown line?
+text=When you have done Lesson 6 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u6-042`
 
@@ -6446,202 +7476,7 @@ text=Which admitted function word is recorded for the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64ae7e6653e43122127f277fe0d69caa3da06dc003e2ffee7ef9a75750934dd1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted word is the function recorded for the direction line.
-
-### AUTHORED_ENGLISH `en-u6-043`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02881c0547734bfdf4882c867a2b33f5d326f1f0d21ab2702131b15720ad7e8a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted possession, objects, and direction
-
-### AUTHORED_ENGLISH `en-u6-044`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abf37510c52301a1b8b68650798ccc2f033321ed42ffd585a26288925a55e146
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 6 uses frozen records for possession, objects, and direction. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u6-045`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e60a9ee9103cd07cb9cbc4f94a53e1570154a57390877adcee693435a103104a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 6 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u6-046`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ed9042f4a9ed11cb65968f8cbb0c516c008572ac0ea2b35acfdee779ac9cc66
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u6-047`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ae350676d7901c9057087c077e4c6c3ebf3096961815220067336b06730bf0d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u6-048`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa6e25a2dede62397818c014217fd042ae70d3a5781f42ec231de00a65b4a242
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u6-049`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a40b7a08691c7e1f9e1991056be34d500b8c4446fb6af50c4e869634c6b3f7f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u6-050`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7f9de2d7b4abbd5b073166087ebc47f38b7f30e70ef44153532cdda472354a3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u6-051`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34083ee30e3396fa522fc52c42055074c1741e62d9f2161e705bf8b4304e666a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 6 in your copy
-
-### AUTHORED_ENGLISH `en-u6-052`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55b90c2507853e62ee914b3caf159186340b47ae7158aff973701b243ebd35a1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 6 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u6-053`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f945791b23c29254a884a50a20bfd528930079cfa3a10c7fadd0e6a5d3b6326
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Names and dialogues stay in the copy you own. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u6-054`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40e5917bb387bb83d6519e83a480edea3128d54bf42fe11c7e72a6334a61f8dc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 6 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u6-055`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bbdd80b903e296601c419b1057e74059f5c5b91655e7e1fab9e1d120e6cc027
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 6 book work
-
-### AUTHORED_ENGLISH `en-u6-056`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 714dbe06af9c9da5fa6300d732538a3145fecb7df3a42a0c6b4778dcb65a3ba4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 6 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u6-057`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64de04a8f67924b8a4f0d5353897df2fb9c9f2de977b39681e2d90402db3df5c
+- Content hash: 004826585ef60e7724d9f0c0f4c1278e8d6048f917f77ee930e046ab8e408368
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 6 work in your copy.
@@ -6779,10 +7614,12 @@ permitsAppUse=true
 - `obj-u6-object` INSTRUCTION `u6-st-teach-object-1`
 - `obj-u6-object` INSTRUCTION `u6-st-teach-object-2`
 - `obj-u6-object` INSTRUCTION `u6-st-teach-object-3`
+- `obj-u6-object` INSTRUCTION `u6-st-teach-object-4`
 - `obj-u6-object` EXAMPLE `ex-u6-object-0`
 - `obj-u6-object` EXAMPLE `ex-u6-object-1`
 - `obj-u6-object` EXAMPLE `ex-u6-object-2`
 - `obj-u6-object` EXAMPLE `ex-u6-object-3`
+- `obj-u6-object` EXAMPLE `ex-u6-object-4`
 - `obj-u6-object` PRACTICE `u6-st-guided-object-1`
 - `obj-u6-object` CHECK `u6-i-object-1`
 - `obj-u6-object` CHECK `u6-i-object-2`
@@ -6792,10 +7629,13 @@ permitsAppUse=true
 - `obj-u6-feminine` INSTRUCTION `u6-st-teach-feminine-1`
 - `obj-u6-feminine` INSTRUCTION `u6-st-teach-feminine-2`
 - `obj-u6-feminine` INSTRUCTION `u6-st-teach-feminine-3`
+- `obj-u6-feminine` INSTRUCTION `u6-st-teach-feminine-4`
 - `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-0`
 - `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-1`
 - `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-2`
 - `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-3`
+- `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-4`
+- `obj-u6-feminine` EXAMPLE `ex-or-u6-feminine-5`
 - `obj-u6-feminine` PRACTICE `u6-st-guided-feminine-1`
 - `obj-u6-feminine` CHECK `u6-i-feminine-1`
 - `obj-u6-feminine` CHECK `u6-i-feminine-2`
@@ -6805,12 +7645,17 @@ permitsAppUse=true
 - `obj-u6-animacy` INSTRUCTION `u6-st-teach-animacy-2`
 - `obj-u6-animacy` INSTRUCTION `u6-st-teach-animacy-3`
 - `obj-u6-animacy` INSTRUCTION `u6-st-teach-animacy-4`
+- `obj-u6-animacy` INSTRUCTION `u6-st-teach-animacy-5`
+- `obj-u6-animacy` INSTRUCTION `u6-st-teach-animacy-6`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-0`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-1`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-2`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-3`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-4`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-5`
+- `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-6`
+- `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-7`
+- `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-8`
 - `obj-u6-animacy` PRACTICE `u6-st-guided-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-2`
@@ -6916,6 +7761,8 @@ permitsAppUse=true
 - `u6-st-teach-object-3` EXAMPLE `ex-u6-object-2`
 - `u6-st-teach-object-3` EXAMPLE `ex-u6-object-3`
 - `u6-st-teach-object-3` REFERENCE `ref-u610-attribution`
+- `u6-st-teach-object-4` EXAMPLE `ex-u6-object-4`
+- `u6-st-teach-object-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-0`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-1`
 - `u6-st-check-object` REMEDIATION `u6-st-rem-object`
@@ -6932,6 +7779,9 @@ permitsAppUse=true
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-2`
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-3`
 - `u6-st-teach-feminine-3` REFERENCE `ref-u610-attribution`
+- `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-4`
+- `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-5`
+- `u6-st-teach-feminine-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-1`
 - `u6-st-check-feminine` REMEDIATION `u6-st-rem-feminine`
@@ -6950,6 +7800,11 @@ permitsAppUse=true
 - `u6-st-teach-animacy-4` EXAMPLE `ex-or-u6-animacy-4`
 - `u6-st-teach-animacy-4` EXAMPLE `ex-or-u6-animacy-5`
 - `u6-st-teach-animacy-4` REFERENCE `ref-u610-attribution`
+- `u6-st-teach-animacy-5` EXAMPLE `ex-or-u6-animacy-6`
+- `u6-st-teach-animacy-5` EXAMPLE `ex-or-u6-animacy-7`
+- `u6-st-teach-animacy-5` REFERENCE `ref-u610-attribution`
+- `u6-st-teach-animacy-6` EXAMPLE `ex-or-u6-animacy-8`
+- `u6-st-teach-animacy-6` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-1`
 - `u6-st-check-animacy` REMEDIATION `u6-st-rem-animacy`
@@ -7009,6 +7864,12 @@ permitsAppUse=true
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-4-gloss`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-5`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-5-gloss`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-6`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-6-gloss`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-7`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-7-gloss`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-8`
+- `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-8-gloss`
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-0`
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-0-gloss`
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-1`
@@ -7017,6 +7878,10 @@ permitsAppUse=true
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-2-gloss`
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-3`
 - `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-3-gloss`
+- `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-4`
+- `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-4-gloss`
+- `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-5`
+- `obj-u6-feminine` PROVENANCE `prov-ex-or-u6-feminine-5-gloss`
 - `obj-u6-possessive` PROVENANCE `prov-ex-or-u6-possessive-4`
 - `obj-u6-possessive` PROVENANCE `prov-ex-or-u6-possessive-4-gloss`
 - `obj-u6-possessive` PROVENANCE `prov-ex-or-u6-possessive-5`
@@ -7053,6 +7918,8 @@ permitsAppUse=true
 - `obj-u6-object` PROVENANCE `prov-ex-u6-object-2-ru`
 - `obj-u6-object` PROVENANCE `prov-ex-u6-object-3-en`
 - `obj-u6-object` PROVENANCE `prov-ex-u6-object-3-ru`
+- `obj-u6-object` PROVENANCE `prov-ex-u6-object-4-en`
+- `obj-u6-object` PROVENANCE `prov-ex-u6-object-4-ru`
 - `obj-u6-possessive` PROVENANCE `prov-ex-u6-possessive-0-en`
 - `obj-u6-possessive` PROVENANCE `prov-ex-u6-possessive-0-ru`
 - `obj-u6-possessive` PROVENANCE `prov-ex-u6-possessive-1-en`
@@ -7096,9 +7963,17 @@ permitsAppUse=true
 - `obj-u6-possessive` PROVENANCE `prov-u6-possessive-rem`
 - `obj-u6-possessive` PROVENANCE `prov-u6-possessive-rem-r0`
 - `obj-u6-possessive` PROVENANCE `prov-u6-possessive-rem-r1`
+- `obj-u6-possessive` PROVENANCE `prov-u6-possessive-x-0`
+- `obj-u6-possessive` PROVENANCE `prov-u6-possessive-x-1`
+- `obj-u6-possessive` PROVENANCE `prov-u6-possessive-x-2`
+- `obj-u6-possessive` PROVENANCE `prov-u6-possessive-x-3`
 - `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-rem`
 - `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-rem-r0`
 - `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-rem-r1`
+- `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-x-0`
+- `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-x-1`
+- `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-x-2`
+- `obj-u6-pronoun` PROVENANCE `prov-u6-pronoun-x-3`
 - `obj-u6-third` PROVENANCE `prov-u6-third-rem`
 
 ## Book-directed experiences

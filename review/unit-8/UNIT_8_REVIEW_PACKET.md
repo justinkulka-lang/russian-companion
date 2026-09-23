@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7321922cc2bab38baadaf3c76459dd2cccafd420
-- Unit content-review SHA-256: bb165244c05b890a09f108f73434bbcaaad63adf0f9382e8ba8acceab950c45b
+- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
+- Unit content-review SHA-256: 3dcf0c47b91ca7d6e751416f9ff799a2bb60cbd7da11432b51e36083a5687c61
 - Mapping-package SHA-256: f93d3635e7b17f9d91b3d02aa7433375d5778b78cd612fce13cc9363f5996a9f
-- Pack content-review SHA-256: 7dc4ccccd951926f40b3af5c049dcd7022f6a5a4a927ee0a8c717dfb70a28eb2
-- Review-package SHA-256: 5fe8869a317f33ef764445e5d6d1787bd6d46ae13ba174671b46bfa5cbc9b343
-- Repository source SHA-256: fc56c4128805c170c226597b1cac76384146f548c62b886a76b4242a713cde70
+- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
+- Review-package SHA-256: 3499febb815973fb14da89f713f0894d79549d946408cd14959f5da79660f917
+- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,15 +113,15 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a011c612bcedac8c20af9135744d007fd54a49a79306ff6dbee08760002c3414
+- Content hash: b72e16579f46b53c7ad7f5f357eb069d4894fbdf05cc8c944c837110a4e4c5a0
 
 title=Choose the admitted plural form
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5
-examples=ex-or-u8-plural-0,ex-or-u8-plural-1,ex-or-u8-plural-2,ex-or-u8-plural-3,ex-or-u8-plural-4,ex-or-u8-plural-5,ex-or-u8-plural-6
+instruction=u8-st-orient,u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8
+examples=ex-or-u8-plural-0,ex-or-u8-plural-1,ex-or-u8-plural-2,ex-or-u8-plural-3,ex-or-u8-plural-4,ex-or-u8-plural-5,ex-or-u8-plural-6,ex-or-u8-plural-7,ex-or-u8-plural-8,ex-or-u8-plural-9,ex-or-u8-plural-10,ex-or-u8-plural-11,ex-or-u8-plural-12,ex-or-u8-plural-13
 practice=u8-st-guided-plural-1
-checks=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5
+checks=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5,u8-i-plural-6
 remediation=u8-st-rem-plural
 
 ### OBJECTIVE `obj-u8-spelling`
@@ -132,13 +132,13 @@ remediation=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d855679b1682d77a25b0a2b2ec8f875eee3c3b8d1a60408daa2a952f1f11a221
+- Content hash: dcec5caf960132aab25097101303ab1970ffb91f4be88a2cb84f7b4156fffa12
 
 title=Identify the admitted plural spelling
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3
-examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3
+instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4
+examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3,ex-or-u8-spelling-4,ex-or-u8-spelling-5
 practice=u8-st-guided-spelling-1
 checks=u8-i-spelling-1,u8-i-spelling-2,u8-i-spelling-3,u8-i-spelling-4
 remediation=u8-st-rem-spelling
@@ -151,13 +151,13 @@ remediation=u8-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f1a7053f985ff325c1b80e9509200608a5f0e90362e3a147d312e71e92954de
+- Content hash: 3a6ed9c2c5c830a0b20d614e72fa7de8a96637cf5a7507a91fec81bbdd09e0c3
 
 title=Choose the admitted irregular plural
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-irregular-1,u8-st-teach-irregular-2,u8-st-teach-irregular-3,u8-st-teach-irregular-4
-examples=ex-u8-irregular-0,ex-or-u8-irregular-1,ex-or-u8-irregular-2,ex-or-u8-irregular-3,ex-or-u8-irregular-4
+instruction=u8-st-orient,u8-st-teach-irregular-1,u8-st-teach-irregular-2,u8-st-teach-irregular-3,u8-st-teach-irregular-4,u8-st-teach-irregular-5,u8-st-teach-irregular-6
+examples=ex-u8-irregular-0,ex-or-u8-irregular-1,ex-or-u8-irregular-2,ex-or-u8-irregular-3,ex-or-u8-irregular-4,ex-or-u8-irregular-5,ex-or-u8-irregular-6,ex-or-u8-irregular-7,ex-or-u8-irregular-8
 practice=u8-st-guided-irregular-1
 checks=u8-i-irregular-1,u8-i-irregular-2,u8-i-irregular-3
 remediation=u8-st-rem-irregular
@@ -170,13 +170,13 @@ remediation=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f49a490096250cf72714ee2ec0431d1290204b3b9a9e2650850ae29dc2e375aa
+- Content hash: 49adde990e643a56b88a5baaf190f154d6faa6182e6dbb84e1011481341caace
 
 title=Choose the admitted plural agreement form
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4
-examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4
+instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5
+examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4,ex-or-u8-agreement-5,ex-or-u8-agreement-6,ex-or-u8-agreement-7
 practice=u8-st-guided-agreement-1
 checks=u8-i-agreement-1,u8-i-agreement-2,u8-i-agreement-3
 remediation=u8-st-rem-agreement
@@ -189,13 +189,13 @@ remediation=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9d72d35456cd5148792e6e2826e81d2625ca0e5a5f9fd9013057a50c005ef5cb
+- Content hash: d11cafd8565e68f3a07dbc7df440fb850f21787e96c39703bf8409e6f5f85c0e
 
 title=Choose between the admitted existence and absence lines
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-teach-availability-4
-examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3,ex-or-u8-availability-4
+examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3,ex-or-u8-availability-4,ex-or-u8-availability-5
 practice=u8-st-guided-availability-1
 checks=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
 remediation=u8-st-rem-availability
@@ -264,12 +264,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85a7c7a2d58c58a1ceeba554a62ea0e95c0a7bc5591c95eae18dd7d52caa4236
+- Content hash: 89b6774eb2a4d6f130e36823f12ad1ee6c1756561e47be62a8f8424a12de3a5f
 
 title=Choose the admitted plural form
 estimatedMinutes=12
 objectives=obj-u8-plural
-steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-rem-plural,u8-st-check-plural
+steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8,u8-st-rem-plural,u8-st-check-plural
 
 ### STEP `u8-st-teach-plural-1`
 
@@ -279,11 +279,11 @@ steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 40537845d762d29a7621230c57178d2311b368f2103fd352d7a7ad94529166e4
+- Content hash: cbe8cb1e3cc78933b96ce8ef44986638978ab624021df36044b9d9f40bb29975
 
 kind=TEACH
 title=Admitted lines
-body=столы́ — table. города́ — town. 
+body=сто́л — table. столы́ — table. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -345,11 +345,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c953d33cce49052ce34a94d2122158b92f81a4216ba46f4e8558a0a67a30f4b7
+- Content hash: 790fddec282061c12773f596ae09a4764844e3d30d5e8e821c8debfb761916a7
 
 kind=TEACH
 title=Admitted lines
-body=кни́ги — book. о́кна — window. 
+body=го́род — town. города́ — town. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -367,11 +367,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3f5c096a3299b32fcf410d682e97be93762549337f1bdf9d9e5c3ab4b37cf8fb
+- Content hash: c879c6bf35f230105c98d84fe8dd777fd50c76ecc773d0f7d8c7ca7d4ae26d70
 
 kind=TEACH
 title=Admitted lines
-body=ма́мы — mom. дома́ — house. 
+body=кни́га — book. кни́ги — book. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -389,15 +389,81 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 73998ad235d57b0502c62bb6a6a5e9a91d2d3f970e2a4ce99e62eeff3f52cb73
+- Content hash: 5a3448a229a5562c44783e36d087492f080f2744112e6cd218237c3f7fe2ac84
 
 kind=TEACH
 title=Admitted lines
-body=слова́ — word. 
+body=окно́ — window. о́кна — window. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u8-plural-6
+examples=ex-or-u8-plural-6,ex-or-u8-plural-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-plural-6`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ff27deae73e5f3fe914228cc68e95f71275312e0a9feded3921d761da260eb71
+
+kind=TEACH
+title=Admitted lines
+body=ма́ма — mom. ма́мы — mom. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-plural-8,ex-or-u8-plural-9
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-plural-7`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5371e2b96f75da7004fcecd27d2621a5efd20300719b7c834c6107f6d466e1e5
+
+kind=TEACH
+title=Admitted lines
+body=до́м — house. дома́ — house. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-plural-10,ex-or-u8-plural-11
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-plural-8`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: adaf74af6dec33c23baf6a12286abf8a179103f51114754d6ebf04ab440100e7
+
+kind=TEACH
+title=Admitted lines
+body=сло́во — word. слова́ — word. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-plural-12,ex-or-u8-plural-13
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -433,14 +499,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 75619ba9af2614cc6d9cc0f6919db48a44f537e47b2f2707200ad42efd673615
+- Content hash: abcba5d179a63751222235bf2e940e215a0df7094d38c64f4a7dcc61214ab67c
 
 kind=CHECK
 title=Independent checks
 body=These checks use only admitted records. A miss returns to the explanation.
 dominantAction=Continue
 references=
-items=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5
+items=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5,u8-i-plural-6
 examples=
 unavailableReason=
 bookDirection=
@@ -455,12 +521,12 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6e31a4fa817329fe0a149b9eb754830fa4f93f102d78b621dcbb19cbd9e30635
+- Content hash: be8f805edf35c2519a7da0377e7c74d8ff34946413cecbae82109f08aa5b9842
 
 title=Identify the admitted plural spelling
 estimatedMinutes=12
 objectives=obj-u8-spelling
-steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-rem-spelling,u8-st-check-spelling
+steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-rem-spelling,u8-st-check-spelling
 
 ### STEP `u8-st-teach-spelling-1`
 
@@ -536,15 +602,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4cea632faf8fb7f1b35f1db0b569f032824faa53c3525197d816366072320377
+- Content hash: 789675a943360563840594a1603106253ad3b050aec161d76b190e326253aec8
 
 kind=TEACH
 title=Admitted lines
-body=кни́ги — book. дни — day. 
+body=кни́га — book. кни́ги — book. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-or-u8-spelling-2,ex-or-u8-spelling-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-spelling-4`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5be21e09274c03834fb2dcb59e8bac11891a20744e7d72a0d7e8a866f12a8cb6
+
+kind=TEACH
+title=Admitted lines
+body=дни — day. хоро́шее — good. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-spelling-4,ex-or-u8-spelling-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -602,12 +690,12 @@ remediationStepId=u8-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1151d81e0f761899400d43937bd06cc8b0976eba86b36d940a4289f7f270d0e6
+- Content hash: 78db66396ffd1e95059b102d1843f4db5bcde2b4a8516fe338689ca360b2d01f
 
 title=Choose the admitted irregular plural
 estimatedMinutes=12
 objectives=obj-u8-irregular
-steps=u8-st-teach-irregular-1,u8-st-guided-irregular-1,u8-st-teach-irregular-2,u8-st-teach-irregular-3,u8-st-teach-irregular-4,u8-st-rem-irregular,u8-st-check-irregular
+steps=u8-st-teach-irregular-1,u8-st-guided-irregular-1,u8-st-teach-irregular-2,u8-st-teach-irregular-3,u8-st-teach-irregular-4,u8-st-teach-irregular-5,u8-st-teach-irregular-6,u8-st-rem-irregular,u8-st-check-irregular
 
 ### STEP `u8-st-teach-irregular-1`
 
@@ -617,11 +705,11 @@ steps=u8-st-teach-irregular-1,u8-st-guided-irregular-1,u8-st-teach-irregular-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9b2c69a23f097a425fac1c1f32579b5b26eb7c01af98c39e0d86b96270e79516
+- Content hash: 235615d254f023366d263a171525ec68534a5fc9773cc2d7f4104235ffe7e02a
 
 kind=TEACH
 title=Admitted lines
-body=пять столов — five tables. бра́тья — brother. 
+body=пять столов — five tables. брат — brother. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -683,11 +771,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 225da9e619f2f7080e82c182bd3d7441a360f6e8908f51682634446e5390d288
+- Content hash: 76d4b1fa6aead4d343bf2f4ef59932717601637b98303ed3493aa5587ecc0971
 
 kind=TEACH
 title=Admitted lines
-body=друзья́ — friend. лю́ди — person. 
+body=бра́тья — brother. друг — friend. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -705,7 +793,51 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f1068e7baf5874bcd0523e59938804f89cc0239a9d52864bec3c376a5eeec919
+- Content hash: c4d3d7fdee30cf1a927759afe33d704735fb43b54dadab62983ec238efe29faf
+
+kind=TEACH
+title=Admitted lines
+body=друзья́ — friend. челове́к — person. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-irregular-4,ex-or-u8-irregular-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-irregular-5`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ebecdf91f50f2a1f79690ebcf0532a3bd807fadc3f5fb2383ad99691ade7a23f
+
+kind=TEACH
+title=Admitted lines
+body=лю́ди — person. сы́н — son. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-irregular-6,ex-or-u8-irregular-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-irregular-6`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b629846a88e2c04b01987efb41edc082e728ae1a91eaf20f3bdedbfcab85f09b
 
 kind=TEACH
 title=Admitted lines
@@ -713,7 +845,7 @@ body=сыновья́ — son.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u8-irregular-4
+examples=ex-or-u8-irregular-8
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -771,12 +903,12 @@ remediationStepId=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ebaed5b8a6681416c00d02c4ac8209bda84005afe76398c31057e26de0987de
+- Content hash: 973be57984e207ac28c148fbe7789f32f3a058136aadf8a130895927db59d097
 
 title=Choose the admitted plural agreement form
 estimatedMinutes=12
 objectives=obj-u8-agreement
-steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-rem-agreement,u8-st-check-agreement
+steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-rem-agreement,u8-st-check-agreement
 
 ### STEP `u8-st-teach-agreement-1`
 
@@ -852,11 +984,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f9844f9c52c9f16700ec92aa9e4a93b6a9102a26e7008ce0a5a6c946962bb081
+- Content hash: 4d3da9c20c878dcb24a0857388b91347f8542ad7c382f355b05cc61435904ee6
 
 kind=TEACH
 title=Admitted lines
-body=мои́ — my. но́вые — new. 
+body=мо́й — my. мои́ — my. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -874,15 +1006,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e7beb7a0f6ffa3d0b6c126f19b90df2ab05ce53228537f6ac41aa8d70d10bf1
+- Content hash: cde50575362ed205f61174a450ddbadfe426c3595064e774dd2396e653ffb6da
 
 kind=TEACH
 title=Admitted lines
-body=э́ти — this. 
+body=но́вый — new. но́вые — new. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u8-agreement-4
+examples=ex-or-u8-agreement-4,ex-or-u8-agreement-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-5`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 778067359f394e587a707e4ca4553aee89316302fa19a6cb330d276179b33f53
+
+kind=TEACH
+title=Admitted lines
+body=э́та — this. э́ти — this. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-6,ex-or-u8-agreement-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1043,15 +1197,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f581d0c2a4a394de1262e491ccf6a6f51fb5419f50e3c4cd6d7b29107d00ccee
+- Content hash: f3b84612f2272b256e80dc3c67548531bbaf8e52f8109021f9cf45561e954db4
 
 kind=TEACH
 title=Admitted lines
-body=есть — there is. 
+body=есть — there is. нет — no. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u8-availability-4
+examples=ex-or-u8-availability-4,ex-or-u8-availability-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1168,11 +1322,11 @@ remediationStepId=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fea803c548422c64119ac82ee2d3899abb8d143a95758873250aac291178d05
+- Content hash: 1a0c751142f3c2901c77b1e53361e50ad7c0a23c211352ad3a5ea3c67fd200bb
 
 kind=LEXICAL
 letterId=
-display=столы́
+display=сто́л
 note=table
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1185,12 +1339,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddd87406f3c46185bdefb80e8f6f1e7dc49ce4befacc5d52b10fe06437e16395
+- Content hash: 22165eceac392c0c6a066cec884a70e0a3f7b214b8b95c620c20853749aaf2bc
 
 kind=LEXICAL
 letterId=
-display=города́
-note=town
+display=столы́
+note=table
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1202,12 +1356,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ef2dca3abbf69875248209896490e3e3cc0c285165fb73698b1216f2ed64200
+- Content hash: 48abc562382b70f0feca7af9349249b5f9cc9cee44b6d86a2e8b6b40a0a7490b
 
 kind=LEXICAL
 letterId=
-display=кни́ги
-note=book
+display=го́род
+note=town
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1219,12 +1373,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7f0beb6c8ff2d4a0b0ac8fd51c9627ddd5a36fd6d8f3003810b58d28edfade1
+- Content hash: 672bdad6217f683a4afcb13febe98eb3aae8522c7dd2920241ad48c95a2242f1
 
 kind=LEXICAL
 letterId=
-display=о́кна
-note=window
+display=города́
+note=town
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1236,12 +1390,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b49d3eb6a0829b25d60045d921bc346e6227ae6b0324812dc73636a52efbeae8
+- Content hash: dfc1107269a24924c3dee2365140bbd8ed9eea7875e1e4d896b493b18639cb7a
 
 kind=LEXICAL
 letterId=
-display=ма́мы
-note=mom
+display=кни́га
+note=book
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1253,12 +1407,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f64822baa3dbb03852573e8ffebe84f978681794f8a5ed525b6cc6765364739
+- Content hash: 320571046bea74e3c91fc2089cf0c228b06fff922492221afdbe35d8f6ec119d
 
 kind=LEXICAL
 letterId=
-display=дома́
-note=house
+display=кни́ги
+note=book
 objectiveId=obj-u8-plural
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1270,7 +1424,126 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0402d9a4c9cdde7fccdf2b4b7a726895be45887edd23ca8159f12e00cd0ae1f8
+- Content hash: 4fd41d7006387ce31de18ba1c3c3b1edd6c4f5338abf3f7ee80f70f656989857
+
+kind=LEXICAL
+letterId=
+display=окно́
+note=window
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-7`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 317606bbe157c548ad64ef92c901192a1a196b5f79fc348756cbf1c571d78606
+
+kind=LEXICAL
+letterId=
+display=о́кна
+note=window
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-8`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 83b3e57f1014ba07cbd51f6ba1415549b0d665b4173a5d674919107691957be7
+
+kind=LEXICAL
+letterId=
+display=ма́ма
+note=mom
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-9`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d02c594aeee9a01695f68f9d8a7f3299d0fbd10bbe938dde7ef4ac704fbf691a
+
+kind=LEXICAL
+letterId=
+display=ма́мы
+note=mom
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-10`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0fdd904e8e22dbf964efca6107294e575b0fbdbf2668aab49515ceac2badfe25
+
+kind=LEXICAL
+letterId=
+display=до́м
+note=house
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-11`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 31b95bd085d67de7c7b70267f18488a1ee4d66e6f099338650f17d7432d53d7b
+
+kind=LEXICAL
+letterId=
+display=дома́
+note=house
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-12`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3ef217136d2dae11e773da32578a57b4506b6c2e3c246a3a64c3bfe8a55158eb
+
+kind=LEXICAL
+letterId=
+display=сло́во
+note=word
+objectiveId=obj-u8-plural
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-plural-13`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b83bc24be4773e990f8fcec31e9a8ccd7bb5f08accd6b8194c0315e40fc13697
 
 kind=LEXICAL
 letterId=
@@ -1321,11 +1594,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61db496d132e5af947f4da90ad7ca9b543ad4ce90f56db6868a837830d94cbd9
+- Content hash: d3b3fb2dde35c929a19d964c6ef40ff18e8d84e7ccc3c80ad5769531dc0a0302
 
 kind=LEXICAL
 letterId=
-display=кни́ги
+display=кни́га
 note=book
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1338,12 +1611,46 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 977373f264683b6463c3f029ca8a9dbf9ab9f359f46684f45ff3c9da03ef7f28
+- Content hash: 0050e96da55475652e64a7314c507105a1544a89244858f253e7d671dd3d4a8d
+
+kind=LEXICAL
+letterId=
+display=кни́ги
+note=book
+objectiveId=obj-u8-spelling
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-spelling-4`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 04b1648aa2a6418304fbf00f04e5474ef7a000f3ba0c34b293b375fd1ab5a1b7
 
 kind=LEXICAL
 letterId=
 display=дни
 note=day
+objectiveId=obj-u8-spelling
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-spelling-5`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0cf1c533e533fb3a17189b3de57bfdd2c3e788e32d412461222b54e00c0f3c69
+
+kind=LEXICAL
+letterId=
+display=хоро́шее
+note=good
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1372,11 +1679,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbcbe9c7660cc372398a82584200b32532ff21b953cd3980e77fbdaba06bd807
+- Content hash: f8f202546b36af7520dfa2ccb8ee7e0d7b9f9d1f00be8f2ea29acff7c26ae1d6
 
 kind=LEXICAL
 letterId=
-display=бра́тья
+display=брат
 note=brother
 objectiveId=obj-u8-irregular
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1389,12 +1696,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b4b4f2e6a62f4d0846aa731a2202d5f44cc38ecaccfdf7aa13eb16d854e9d6d
+- Content hash: 1c1c798f4beee3d476b331477f7cc9ce57fca3667c6815763af6179d8637834d
 
 kind=LEXICAL
 letterId=
-display=друзья́
-note=friend
+display=бра́тья
+note=brother
 objectiveId=obj-u8-irregular
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1406,12 +1713,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 896a0977b6909cf08a5fb5475379213af9e0d21b981d84391d76d29baae59c52
+- Content hash: 3217269de1ad15a000f548e0f54184255b8e6d22d2dd770a3f238cbdefd85adb
 
 kind=LEXICAL
 letterId=
-display=лю́ди
-note=person
+display=друг
+note=friend
 objectiveId=obj-u8-irregular
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1423,7 +1730,75 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f25e372903cfd4ea8414ad52547bd8c1a8a579acfb9790209ed468e34a7b8bc5
+- Content hash: cee4ba0629da083d172eb4f98bf203ea95e2039a444055959a96995a2780dfef
+
+kind=LEXICAL
+letterId=
+display=друзья́
+note=friend
+objectiveId=obj-u8-irregular
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-irregular-5`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 261366c21afd2a8d7f68ccbc1921928232baaa50d3047acdf1dbe76f503fcccd
+
+kind=LEXICAL
+letterId=
+display=челове́к
+note=person
+objectiveId=obj-u8-irregular
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-irregular-6`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f70cc165d6a6a575430d11f49cc915008ca49d13a84f140d73c45172d376f3c1
+
+kind=LEXICAL
+letterId=
+display=лю́ди
+note=person
+objectiveId=obj-u8-irregular
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-irregular-7`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 65321e439f962a7c9b400d26e460848982f7c8431bc03f0350681c61f02a02ad
+
+kind=LEXICAL
+letterId=
+display=сы́н
+note=son
+objectiveId=obj-u8-irregular
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-irregular-8`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f011764acdcea109893c116f356edac87442f180e9c19f4a48392fc57b25e99b
 
 kind=LEXICAL
 letterId=
@@ -1474,11 +1849,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de3233614d6509d9496bde95d1b241d09dd66b146a11759c19b6b58d63a2bd5c
+- Content hash: d8b0ed5a8d642b67c773a45499d506cb103f2b90f823065dcddccb73f507698c
 
 kind=LEXICAL
 letterId=
-display=мои́
+display=мо́й
 note=my
 objectiveId=obj-u8-agreement
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1491,12 +1866,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05edf472e3448d17be3960e33b065ebdf20190a587f4b65f699aa528132bc549
+- Content hash: fcec2acec4fc941cdf6c94b6574400026e671ae3351cc099a20edea8d5cfedd8
 
 kind=LEXICAL
 letterId=
-display=но́вые
-note=new
+display=мои́
+note=my
 objectiveId=obj-u8-agreement
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1508,7 +1883,58 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c370783731965993140f84198a3da1f21da98e664729e42ca95e391ec9dd76a8
+- Content hash: add03a5bb8c57169d44aa6a1bc30574a14b0e93bc357ae6704f336c6c15e36b3
+
+kind=LEXICAL
+letterId=
+display=но́вый
+note=new
+objectiveId=obj-u8-agreement
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-agreement-5`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 24ebafff8616e0d23b0f793577bf0cf1a6037d8a0d4f45a9120cad440b3ada4a
+
+kind=LEXICAL
+letterId=
+display=но́вые
+note=new
+objectiveId=obj-u8-agreement
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-agreement-6`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 659324638d7d589f1d51f7bf0981854fa907916924dab6e26bdb52d97260963a
+
+kind=LEXICAL
+letterId=
+display=э́та
+note=this
+objectiveId=obj-u8-agreement
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-agreement-7`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 419d64f3d19e22918658603104e701b533ba75692cfc805ccf0f5bf4f603edf3
 
 kind=LEXICAL
 letterId=
@@ -1602,6 +2028,23 @@ note=there is
 objectiveId=obj-u8-availability
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-or-u8-availability-5`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-availability
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 18514bcedb98499cb08e421c37482bde0224b89e2f03928cd66a8183921ba0c6
+
+kind=LEXICAL
+letterId=
+display=нет
+note=no
+objectiveId=obj-u8-availability
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u8-g-plural-0`
 
 - Objectives: obj-u8-plural
@@ -1610,19 +2053,29 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33face75d7d9d8f38c2ead7816b25b857b98da42103f7552fc92c319e0599593
+- Content hash: ded7d89f0d80333c5326bcca57f8d70ce00678a8cc52925529946455570a2559
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for table?
-promptLetter=table
-options=столы́ | кни́ги
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=сто́л
+options=столы́ | сто́л
 answer=столы́
-feedback=The admitted answer for this contrast is столы́.
+feedback=Does the answer show the governed row of the same word? столы́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u8-plural-1
+distractorSourceIds= | prov-ex-or-u8-plural-0
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=столы́ | сто́л
 
 ### GUIDED_PRACTICE `u8-g-spelling-0`
 
@@ -1632,19 +2085,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf5e0a0ca0fdd3c0be5065cc1a7936b837a9014e49e128308aa0c8b85f97c807
+- Content hash: 63249411de950ed313c9288b0fb3a8a84922823c96bf17744b3d1d78d36d24dd
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the frozen line say to add?
+prompt=Which admitted spelling does the shown line use?
 promptLetter=хоро́шие
 options=и | ы
 answer=и
-feedback=The admitted answer for this contrast is и.
+feedback=Does the answer show the governed row of the same word? и.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted spelling is the one the frozen line says not to add.
+distractorRationales= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+testedFeature=PLURAL_SPELLING
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-spelling-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u8-spelling-rem-r0
+distractorSourceIds= | prov-u8-spelling-rem-r1
+distractorDifference= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=и | ы
 
 ### GUIDED_PRACTICE `u8-g-irregular-0`
 
@@ -1654,19 +2117,29 @@ distractorRationales= | This admitted spelling is the one the frozen line says n
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 411be27aea334a72f52f4be0760eb70ea5430820dcd708c3e7d13bbb94173e53
+- Content hash: ac58c70ae03b7238dda453bf89d9b90dd466b6d6dfb3ee721426cd7096251eeb
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for brother?
-promptLetter=brother
-options=бра́тья | друзья́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=брат
+options=бра́тья | брат
 answer=бра́тья
-feedback=The admitted answer for this contrast is бра́тья.
+feedback=Does the answer show the governed row of the same word? бра́тья.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=IRREGULAR_PLURAL
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-irregular-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u8-irregular-2
+distractorSourceIds= | prov-ex-or-u8-irregular-1
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=бра́тья | брат
 
 ### GUIDED_PRACTICE `u8-g-agreement-0`
 
@@ -1676,41 +2149,61 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69462e1e83ed35a4d38b15168fe4b16201efc71d37f06ee95d8f6d5a8d700def
+- Content hash: 16b4a83097b806f7c13152bd37e8986a085415c932f313eba8a72dc968f1ef95
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for the dark blue books?
-promptLetter=the dark blue books
+prompt=Which admitted form does the shown line use?
+promptLetter=синие книги
 options=синие книги | Наши
 answer=синие книги
-feedback=The admitted answer for this contrast is синие книги.
+feedback=Does the answer identify the governed form in the shown line? синие книги.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different plural row.
+distractorRationales= | This form is another plural row, not the form in the shown line.
+testedFeature=PLURAL_AGREEMENT
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u8-agreement-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u8-agreement-0-ru
+distractorSourceIds= | prov-ex-u8-agreement-1-ru
+distractorDifference= | This form is another plural row, not the form in the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=синие книги | Наши
 
 ### GUIDED_PRACTICE `u8-g-availability-0`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5894b2a907dd167edd2a34e99bee9b628819dd463bc5d2acbaadb84e5451733
+- Content hash: 9cadc6b6386b80c4c56a2a8883e0e6f5f4a44e3a9a1b82a67330fe8af5172cc3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for There are no restaurants?
-promptLetter=There are no restaurants
-options=Нет рестора́нов | На э́той у́лице есть францу́зы
-answer=Нет рестора́нов
-feedback=The admitted answer for this contrast is Нет рестора́нов.
+prompt=Which admitted word does the shown line use?
+promptLetter=Нет рестора́нов
+options=нет | есть
+answer=нет
+feedback=Does the answer identify the governed form in the shown line? нет.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is an existence example.
+distractorRationales= | This word is the existence word, not the word in the shown line.
+testedFeature=EXISTENCE_ABSENCE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u8-availability-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-or-u8-availability-5
+distractorSourceIds= | prov-ex-or-u8-availability-4
+distractorDifference= | This word is the existence word, not the word in the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=нет | есть
 
 ### INDEPENDENT_CHECK `u8-i-plural-1`
 
@@ -1720,19 +2213,29 @@ distractorRationales= | This admitted line is an existence example.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30d0670624cf177594093980990df681ee9d5649c7b4e2a478f01446013851da
+- Content hash: e67bd5c07b6abb0b1139ae36b0e8575702c4b6f1c9f81f9748d9f60f41c5bd70
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for town?
-promptLetter=town
-options=города́ | дома́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=го́род
+options=города́ | го́род
 answer=города́
-feedback=The admitted answer for this contrast is города́.
+feedback=Does the answer show the governed row of the same word? города́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-3
+distractorSourceIds= | prov-ex-or-u8-plural-2
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=города́ | го́род
 
 ### INDEPENDENT_CHECK `u8-i-plural-2`
 
@@ -1742,19 +2245,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71ea217a8db621fa06fc08602968abb94b46fdbb05ae9df5b7d701707dbd515a
+- Content hash: 69a9388716177d59ef45c20eb46c83d91820ca08cee6c38fa55225c262204c22
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for window?
-promptLetter=window
-options=о́кна | слова́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=окно́
+options=о́кна | окно́
 answer=о́кна
-feedback=The admitted answer for this contrast is о́кна.
+feedback=Does the answer show the governed row of the same word? о́кна.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-7
+distractorSourceIds= | prov-ex-or-u8-plural-6
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=о́кна | окно́
 
 ### INDEPENDENT_CHECK `u8-i-plural-3`
 
@@ -1764,19 +2277,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9379202fced719c2e530fe5fd19fb627fc826642f0110ba6c1627c4b79f4aa0d
+- Content hash: 751e18413c1f5bc376ebb6fefa3d57797be1a076fd93bb3a6a11cbcfcf08888e
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for mom?
-promptLetter=mom
-options=ма́мы | кни́ги
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=ма́ма
+options=ма́мы | ма́ма
 answer=ма́мы
-feedback=The admitted answer for this contrast is ма́мы.
+feedback=Does the answer show the governed row of the same word? ма́мы.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-9
+distractorSourceIds= | prov-ex-or-u8-plural-8
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=ма́мы | ма́ма
 
 ### INDEPENDENT_CHECK `u8-i-plural-4`
 
@@ -1786,19 +2309,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac3a005555cdfded82b6b643728b8d9b264cb9a0e2ab9ef2d9cef8b2ed72fa91
+- Content hash: d28f392f40620e3f8501344ab28e7a9c5bec4a71d1998f4f10cc67802db00c12
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for house?
-promptLetter=house
-options=дома́ | столы́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=до́м
+options=дома́ | до́м
 answer=дома́
-feedback=The admitted answer for this contrast is дома́.
+feedback=Does the answer show the governed row of the same word? дома́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-11
+distractorSourceIds= | prov-ex-or-u8-plural-10
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=дома́ | до́м
 
 ### INDEPENDENT_CHECK `u8-i-plural-5`
 
@@ -1808,19 +2341,61 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b92bb1837487af85322fa771cef083c5e55a46ba90a698075cf116fc24a06719
+- Content hash: 1f37c9d7a2c2e20452dd2dc3a40f9b9805e144060fbba64b89be2f13d44c9088
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for word?
-promptLetter=word
-options=слова́ | о́кна
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=сло́во
+options=слова́ | сло́во
 answer=слова́
-feedback=The admitted answer for this contrast is слова́.
+feedback=Does the answer show the governed row of the same word? слова́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-5
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-13
+distractorSourceIds= | prov-ex-or-u8-plural-12
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=слова́ | сло́во
+
+### INDEPENDENT_CHECK `u8-i-plural-6`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6b1bbeb389b5c9667265c2e3935fb5376da00ecc90410a29b345241a1382b9ff
+
+kind=FORM_SELECTION
+language=en
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=кни́га
+options=кни́ги | кни́га
+answer=кни́ги
+feedback=Does the answer show the governed row of the same word? кни́ги.
+objectiveId=obj-u8-plural
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_FORMATION
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-plural-6
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-plural-5
+distractorSourceIds= | prov-ex-or-u8-plural-4
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=кни́ги | кни́га
 
 ### INDEPENDENT_CHECK `u8-i-spelling-1`
 
@@ -1830,41 +2405,61 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c83c74267b4bcc7becedf26b4e347612bc357d9b2a5d9bcc7d31d3bece44374
+- Content hash: 0abfe66f539e62b3f41d342804db143945de6cb2f56899c6878d44c5b2561da7
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted plural form is recorded for book?
-promptLetter=book
-options=кни́ги | дни
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=кни́га
+options=кни́ги | кни́га
 answer=кни́ги
-feedback=The admitted answer for this contrast is кни́ги.
+feedback=Does the answer show the governed row of the same word? кни́ги.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_SPELLING
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-spelling-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-spelling-3
+distractorSourceIds= | prov-ex-or-u8-spelling-2
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=кни́ги | кни́га
 
 ### INDEPENDENT_CHECK `u8-i-spelling-2`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-spelling
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41e1ec5d088bdc6861bbeb8ceec2dcc3ce71840c761a66623f4354c2fce40475
+- Content hash: fa6c9f40f355f786cdb33a02f4c290825e7407a05521a7d2de0f7d2a0b4ba8a0
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted plural form is recorded for day?
-promptLetter=day
-options=дни | кни́ги
-answer=дни
-feedback=The admitted answer for this contrast is дни.
+prompt=Which admitted spelling does the shown line use?
+promptLetter=кни́ги
+options=и | ы
+answer=и
+feedback=Does the answer show the governed row of the same word? и.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
+testedFeature=PLURAL_SPELLING
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-spelling-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u8-spelling-rem-r0
+distractorSourceIds= | prov-u8-spelling-rem-r1
+distractorDifference= | This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=и | ы
 
 ### INDEPENDENT_CHECK `u8-i-spelling-3`
 
@@ -1874,19 +2469,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cee5173f3f5e5b3e5f1b21f3c2b6774fb1e2287463681d8f0fdefc2a48e0c1e
+- Content hash: 9b29cb5908152ce91a7df940f917c0635de6f02a3a8b66294af1eace44d4cc4c
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted line is recorded for good letter?
-promptLetter=good letter
-options=хорошее письмо | дни
-answer=хорошее письмо
-feedback=The admitted answer for this contrast is хорошее письмо.
+prompt=Which admitted spelling does the shown line use?
+promptLetter=хорошее письмо
+options=e | и
+answer=e
+feedback=Does this admitted label name the pattern of the shown line? e.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This spelling is the other spelling, not the spelling of the shown line.
+testedFeature=PLURAL_SPELLING
+evidenceMode=FEATURE_LABEL
+contrastSetId=u8-spelling-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u8-spelling-x-0
+distractorSourceIds= | prov-u8-spelling-rem-r0
+distractorDifference= | This spelling is the other spelling, not the spelling of the shown line.
+whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
+contrastMembers=e | и
 
 ### INDEPENDENT_CHECK `u8-i-spelling-4`
 
@@ -1896,19 +2501,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c72bc1b208cbec61baad57e5c45305cbb4c545d31d04440dc9febb85ff2369c4
+- Content hash: 94577f13941b604c14a3d8a761f90bc848a3219372c03c5d13e954d57880e972
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted plural form is recorded for good?
-promptLetter=good
-options=хоро́шие | кни́ги
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=хоро́шее
+options=хоро́шие | хоро́шее
 answer=хоро́шие
-feedback=The admitted answer for this contrast is хоро́шие.
+feedback=Does the answer show the governed row of the same word? хоро́шие.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the other row of the same word, not the plural row.
+testedFeature=PLURAL_SPELLING
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-spelling-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-spelling-1
+distractorSourceIds= | prov-ex-or-u8-spelling-5
+distractorDifference= | This form is the other row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=хоро́шие | хоро́шее
 
 ### INDEPENDENT_CHECK `u8-i-irregular-1`
 
@@ -1918,41 +2533,61 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b612f1ec8e0fb70cc8ffe0951e81985480904acf769ac16307db8f7d43bbb50
+- Content hash: 116dc204c569dc1f477236eb828601b28f72eb12ff0ca34bb1ed8c77fe5c8030
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for person?
-promptLetter=person
-options=лю́ди | сыновья́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=челове́к
+options=лю́ди | челове́к
 answer=лю́ди
-feedback=The admitted answer for this contrast is лю́ди.
+feedback=Does the answer show the governed row of the same word? лю́ди.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=IRREGULAR_PLURAL
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-irregular-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-irregular-6
+distractorSourceIds= | prov-ex-or-u8-irregular-5
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=лю́ди | челове́к
 
 ### INDEPENDENT_CHECK `u8-i-irregular-2`
 
 - Objectives: obj-u8-irregular
 - Sessions: u8-s-irregular
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a85382b41729eb25e0d0bbdec48b517cbb77ab92221750c10966d18b7af0cbab
+- Content hash: d2c0bffac773c671e3f67000a2df2dd20dbdadc598a7ff4cfb314ff6635b2869
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is recorded for five tables?
-promptLetter=five tables
-options=пять столов | друзья́
-answer=пять столов
-feedback=The admitted answer for this contrast is пять столов.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=друг
+options=друзья́ | друг
+answer=друзья́
+feedback=Does the answer show the governed row of the same word? друзья́.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=IRREGULAR_PLURAL
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-irregular-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-irregular-4
+distractorSourceIds= | prov-ex-or-u8-irregular-3
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=друзья́ | друг
 
 ### INDEPENDENT_CHECK `u8-i-irregular-3`
 
@@ -1962,19 +2597,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb99d3578db8fe7a89c080ea5396f3f1268c27b3117df0831f2de6f45161ff4f
+- Content hash: 5097b431f2164332083f31859553e5b6b78c3ca5bef4e9b77b2a881a1bff5039
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted plural form is recorded for friend?
-promptLetter=friend
-options=друзья́ | бра́тья
-answer=друзья́
-feedback=The admitted answer for this contrast is друзья́.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=сы́н
+options=сыновья́ | сы́н
+answer=сыновья́
+feedback=Does the answer show the governed row of the same word? сыновья́.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=IRREGULAR_PLURAL
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-irregular-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-irregular-8
+distractorSourceIds= | prov-ex-or-u8-irregular-7
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=сыновья́ | сы́н
 
 ### INDEPENDENT_CHECK `u8-i-agreement-1`
 
@@ -1984,19 +2629,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55c6d15787d6ba4f7b64952e0b6a2b1497a3a2a580d31110420c49ad7ed78f05
+- Content hash: eb3dcd4944e64da642fac759dc42375cd26405705a5fea759a854da0b00810f7
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row recorded for my?
-promptLetter=my
-options=мои́ | но́вые
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=мо́й
+options=мои́ | мо́й
 answer=мои́
-feedback=The admitted answer for this contrast is мои́.
+feedback=Does the answer show the governed row of the same word? мои́.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-agreement-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-agreement-3
+distractorSourceIds= | prov-ex-or-u8-agreement-2
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=мои́ | мо́й
 
 ### INDEPENDENT_CHECK `u8-i-agreement-2`
 
@@ -2006,19 +2661,29 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca8ebd3c2a86717953a5cd05a8b1531b0088210dbe890c66aff77a727a4d6d3a
+- Content hash: e305de343ae1c68f3dd2e2ee09ddf03118d392776f3f87248300c198db7376bc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row recorded for this?
-promptLetter=this
-options=э́ти | мои́
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=э́та
+options=э́ти | э́та
 answer=э́ти
-feedback=The admitted answer for this contrast is э́ти.
+feedback=Does the answer show the governed row of the same word? э́ти.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the other row of the same word, not the plural row.
+testedFeature=PLURAL_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-agreement-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-agreement-7
+distractorSourceIds= | prov-ex-or-u8-agreement-6
+distractorDifference= | This form is the other row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=э́ти | э́та
 
 ### INDEPENDENT_CHECK `u8-i-agreement-3`
 
@@ -2028,63 +2693,93 @@ distractorRationales= | This admitted plural form belongs to a different word.
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b3ec9206549df2efad41c437ce54c9df0fea7ca2811029208a5ea19246b6b14
+- Content hash: a0fc5614f5dd35884424dce3323eacfef04f375ca0197cfd86d21ae745cec47c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row recorded for new?
-promptLetter=new
-options=но́вые | э́ти
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=но́вый
+options=но́вые | но́вый
 answer=но́вые
-feedback=The admitted answer for this contrast is но́вые.
+feedback=Does the answer show the governed row of the same word? но́вые.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted plural form belongs to a different word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+testedFeature=PLURAL_AGREEMENT
+evidenceMode=SAME_LEMMA_FORM
+contrastSetId=u8-agreement-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-agreement-5
+distractorSourceIds= | prov-ex-or-u8-agreement-4
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+contrastMembers=но́вые | но́вый
 
 ### INDEPENDENT_CHECK `u8-i-availability-1`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e0bd55af0fd4f75d7a9fe349540f814b3cfbc9b856cb668d190628c9bae5072
+- Content hash: f0bd7a53b1f9470889f8b92d7dc08152abbbfaefceeebf58b0ffef538abde7cb
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for There are Frenchmen on this street?
-promptLetter=There are Frenchmen on this street
-options=На э́той у́лице есть францу́зы | Нет рестора́нов
-answer=На э́той у́лице есть францу́зы
-feedback=The admitted answer for this contrast is На э́той у́лице есть францу́зы.
+prompt=Which admitted word does the shown line use?
+promptLetter=На э́той у́лице есть францу́зы
+options=есть | нет
+answer=есть
+feedback=Does the answer identify the governed form in the shown line? есть.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the absence example.
+distractorRationales= | This word is the absence word, not the word in the shown line.
+testedFeature=EXISTENCE_ABSENCE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u8-availability-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-availability-4
+distractorSourceIds= | prov-ex-or-u8-availability-5
+distractorDifference= | This word is the absence word, not the word in the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=есть | нет
 
 ### INDEPENDENT_CHECK `u8-i-availability-2`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6bc5588f0e57f33b709d0a4c42911805182a06a8876054931d9613b28d56829
+- Content hash: 41316ae730341bfac65fbff3dc38398293d8c2fd5c3754b633ce6d888bf55f39
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for This is David's house?
-promptLetter=This is David's house
-options=Э́то - дом Дэвида | В Москве́ есть ста́рые зда́ния
-answer=Э́то - дом Дэвида
-feedback=The admitted answer for this contrast is Э́то - дом Дэвида.
+prompt=Which admitted word does the shown line use?
+promptLetter=В Москве́ есть ста́рые зда́ния
+options=есть | нет
+answer=есть
+feedback=Does the answer identify the governed form in the shown line? есть.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is a different existence example.
+distractorRationales= | This word is the absence word, not the word in the shown line.
+testedFeature=EXISTENCE_ABSENCE
+evidenceMode=FEATURE_IN_LINE
+contrastSetId=u8-availability-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-or-u8-availability-4
+distractorSourceIds= | prov-ex-or-u8-availability-5
+distractorDifference= | This word is the absence word, not the word in the shown line.
+whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+contrastMembers=есть | нет
 
 ### INDEPENDENT_CHECK `u8-i-availability-3`
 
@@ -2094,19 +2789,29 @@ distractorRationales= | This admitted line is a different existence example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ae24acdf2e8438ad3c925933cbe027ed8c925b41bffc583684e917f96d310d9
+- Content hash: a93514d8b3db2808b8327d22490354f35329580d8801d6e28b73d1b7c079e102
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for There are old buildings in Moscow?
-promptLetter=There are old buildings in Moscow
-options=В Москве́ есть ста́рые зда́ния | Нет рестора́нов
-answer=В Москве́ есть ста́рые зда́ния
-feedback=The admitted answer for this contrast is В Москве́ есть ста́рые зда́ния.
+prompt=Which admitted line uses the shown word?
+promptLetter=нет
+options=Нет рестора́нов | На э́той у́лице есть францу́зы
+answer=Нет рестора́нов
+feedback=Does the answer agree with the shown word? Нет рестора́нов.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the absence example.
+distractorRationales= | This line uses the existence word, not the shown word.
+testedFeature=EXISTENCE_ABSENCE
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u8-availability-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u8-availability-3-ru
+distractorSourceIds= | prov-ex-u8-availability-0-ru
+distractorDifference= | This line uses the existence word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=Нет рестора́нов | На э́той у́лице есть францу́зы
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -2134,21 +2839,21 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d360284b43d214cf47db3317ceb9dbd8726107e921ff2f13a9c49d6d33d8c450
+- Content hash: 5a922f828c9cbd44ecfa836cd128a90bca6156a2bfecc60259061adcf28b331c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=adjectives.csv:мой#decl_pl_nom
-originalSourceText=мои'
-shippedText=мои́
+sourceRecordId=adjectives.csv:мой#decl_m_nom
+originalSourceText=мо'й
+shippedText=мо́й
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c5b8d56d7aba34a08e837219c698942b27acae4b1f47dc3f1e1ed67474fa8495
-contentHash=c24bfe09886820c4f96674506b5171f32297b963930cd989c314f6f713f83d4a
+sourceHash=3d206e4e718e70c7a4319a0e39c549e646db27d8efa34349ee66bb8920299f46
+contentHash=0d79315390fb1ba9283152ded1b9b28cefc554ba5ae6c16cda9d55019453398c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2192,21 +2897,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f86606cdef419cc8f28f56883cefac5228c041cc3e949a4cdc5ad6f4b3cf5bbb
+- Content hash: 075141014e06b269deb896b48a15af70de55363720b46d51dcac98d3cea74e36
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=adjectives.csv:новый#decl_pl_nom
-originalSourceText=но'вые
-shippedText=но́вые
+sourceRecordId=adjectives.csv:мой#decl_pl_nom
+originalSourceText=мои'
+shippedText=мои́
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=9c8f35cf1d22eaea59cffaebd59ff5164457be0dc140192835d195cc61e13422
-contentHash=3c4c3cd316e12adfbf9b477f448cb180adea90a2625c3509222652b76c0d4946
+sourceHash=c5b8d56d7aba34a08e837219c698942b27acae4b1f47dc3f1e1ed67474fa8495
+contentHash=c24bfe09886820c4f96674506b5171f32297b963930cd989c314f6f713f83d4a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2221,7 +2926,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4623977637984eaa2ed88ff0a5060c08793e78927dc671237ac496ca31552983
+- Content hash: ad8a71585f7f5c124eaf9c7623fd58aec262f40d8111c721d6ad8251a7a4b59b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:мой#translations_en
+originalSourceText=my, mine, my people
+shippedText=my
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c7a8a4267e9d53d42f477b655c1c07e00bbdb597fba48c08908bb1dc5b60f9d5
+contentHash=038468518ad8122e13112743f890c7ba96ac5665b71de548eceb23e9ef237805
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-4`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4557ef8e3c8383416bed76ea86d5a07eb56fdae29d14de014877a007c1dc572c
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:новый#decl_m_nom
+originalSourceText=но'вый
+shippedText=но́вый
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e778b723d9367c7bf01ba266bae24609c35dd8ed12d9281baf556613e381cf38
+contentHash=2b2f765b2e162f149dfd5b622e4a7022f5890647a9ca269decb3b26d59321415
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-4-gloss`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dbc19ed1c44d3e3894ca99b466f9737a5ac48535d251384c3ab634594fbb9875
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -2242,7 +3005,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-agreement-4`
+### PROVENANCE `prov-ex-or-u8-agreement-5`
 
 - Objectives: obj-u8-agreement
 - Sessions: u8-s-orient, u8-s-agreement
@@ -2250,7 +3013,123 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca03a4c0b828e0a0af647534c2e0d7d5cc07b431cd8438c69aee6a263c7a9af9
+- Content hash: 8e4d616b22184eddfe9d11c10545406ebae392a9875d71a743aaea31d08abd48
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:новый#decl_pl_nom
+originalSourceText=но'вые
+shippedText=но́вые
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9c8f35cf1d22eaea59cffaebd59ff5164457be0dc140192835d195cc61e13422
+contentHash=3c4c3cd316e12adfbf9b477f448cb180adea90a2625c3509222652b76c0d4946
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-5-gloss`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1fb459e4e84bde95bacff9261316311225123da0d71c070ad0ff885c74ad76a7
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:новый#translations_en
+originalSourceText=new, novel
+shippedText=new
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=92c9e91cce4a0755da4133f53fa5776f3cac4946bd619da017038e8f5f69d1b4
+contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-6`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2924bb7c80352878708cc8e17a2533837f9348b876a30515c3129364ec0b425e
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:этот#decl_f_nom
+originalSourceText=э'та
+shippedText=э́та
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=023629cef73bde90eecb53daee9a27f0311cbcff38a20550f1f5580e4c729c9b
+contentHash=47c9f160458de6d7726c0b23445aeca695757ac9fc71d779517926810d73bea9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-6-gloss`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f7c01c49d296996375d2bd51c20b01f8595d6f4e0826624a974b73e0fba0c35b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:этот#translations_en
+originalSourceText=this
+shippedText=this
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408
+contentHash=1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-agreement-7`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 88cecdbcd4b5198141088751e81e3bd530988da7b90802700bd6364e9bf6e203
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -2271,7 +3150,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-agreement-4-gloss`
+### PROVENANCE `prov-ex-or-u8-agreement-7-gloss`
 
 - Objectives: obj-u8-agreement
 - Sessions: u8-s-orient, u8-s-agreement
@@ -2279,7 +3158,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efa65099a8833e247bbf017c0ba3141204a18a03ebee6dc5168db2acf9734ec9
+- Content hash: 39864f1ea61797dca9229b451263fd1b4fe456cdf7623f38e656c09d217888bf
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -2358,6 +3237,64 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-or-u8-availability-5`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e869f11611448f13012401cb08374a6a3e81fa187753edc96b0708170ad6058b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=others.csv:нет#accented
+originalSourceText=нет
+shippedText=нет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
+contentHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-availability-5-gloss`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6c45c8b468561841d4b59d3fb34f7e48f47ef96e9f745bb9af8d0bf98c5a4cfb
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=others.csv:нет#translations_en
+originalSourceText=no; not
+shippedText=no
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a190e343b9687b148d11f172ee614b0a71efbc89c99f343042fc39e25f51dbaa
+contentHash=9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-or-u8-irregular-1`
 
 - Objectives: obj-u8-irregular
@@ -2366,21 +3303,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 728171d3d6421aa9f89b73e513d1cca34be173cf80de39f3d3b16113c674fd7e
+- Content hash: 04c8743a45dd2891cf4472c58e7f2766a22564a739ac690244a7262619a7e619
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:брат#pl_nom
-originalSourceText=бра'тья
-shippedText=бра́тья
-transformation=formatting
+sourceRecordId=nouns.csv:брат#sg_nom
+originalSourceText=брат
+shippedText=брат
+transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=66339c3157c90938112ffbf2283087226ae605bea9e4cab6a5b6e016f79a8e6f
-contentHash=eeb4ca32a8d53a389cc2e3b8f23e5f5d32327a24f82dbdf979e3f92b8559636d
+sourceHash=d99306448e987d2ba1fcec05cfa520ffb0d0df90d6caea50b1263dc62637e5e4
+contentHash=d99306448e987d2ba1fcec05cfa520ffb0d0df90d6caea50b1263dc62637e5e4
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2424,21 +3361,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4b7b45cda29d44ed599d5c1847b84ed5d6c4fecb6e2ebaafe66e5470bea2143
+- Content hash: e94849352a71d34501fb1bc046374906782655ddbbf93d33b5ed9284a779dc3c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:друг#pl_nom
-originalSourceText=друзья'
-shippedText=друзья́
+sourceRecordId=nouns.csv:брат#pl_nom
+originalSourceText=бра'тья
+shippedText=бра́тья
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=9e0106cac74996653e753ddbd0b20e570d0ea1d89ea3028b152f9efd97419aa8
-contentHash=81c8e3b0552168015771edb3a5e6b17195a8bed0cdfe0ba26def5f4d195c9042
+sourceHash=66339c3157c90938112ffbf2283087226ae605bea9e4cab6a5b6e016f79a8e6f
+contentHash=eeb4ca32a8d53a389cc2e3b8f23e5f5d32327a24f82dbdf979e3f92b8559636d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2453,7 +3390,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b07f99c41a8156ef36b7836afdad82d08450aafb2d6acbfb956a3902b0973472
+- Content hash: b4d483e1b1014b8253d965ea97dd539fccabd7f7946abe48ce87ffc6acbb45f9
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:брат#translations_en
+originalSourceText=brother
+shippedText=brother
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af
+contentHash=0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e371d4a7b18b1924d98698284b347e82e2d3734d88e910f17fc784978236da8
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#sg_nom
+originalSourceText=друг
+shippedText=друг
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354
+contentHash=a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-3-gloss`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4e04664f17cc2b7b18f4c9eea95b615d7f9ca17b5a875d3a5df56af649c4548c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2474,7 +3469,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-irregular-3`
+### PROVENANCE `prov-ex-or-u8-irregular-4`
 
 - Objectives: obj-u8-irregular
 - Sessions: u8-s-orient, u8-s-irregular
@@ -2482,28 +3477,28 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a94860715bfed39acdb7177549c0d17e8fa3ae1ab4e0186359ae995d78042c11
+- Content hash: ea4bf455ad1a3adf2527802760adde33b9155cf2f42ca347813b0fe600f0271e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:человек#pl_nom
-originalSourceText=лю'ди
-shippedText=лю́ди
+sourceRecordId=nouns.csv:друг#pl_nom
+originalSourceText=друзья'
+shippedText=друзья́
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=70a3287020fcc4cb63e8f3deb666ae477f54a6e8df950b118ecf873b098fede3
-contentHash=8c79de13920d6b4a07967359278c87c29543d3e7a8f2ae1f7af6b1e8b405cb25
+sourceHash=9e0106cac74996653e753ddbd0b20e570d0ea1d89ea3028b152f9efd97419aa8
+contentHash=81c8e3b0552168015771edb3a5e6b17195a8bed0cdfe0ba26def5f4d195c9042
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-irregular-3-gloss`
+### PROVENANCE `prov-ex-or-u8-irregular-4-gloss`
 
 - Objectives: obj-u8-irregular
 - Sessions: u8-s-orient, u8-s-irregular
@@ -2511,7 +3506,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b10fee199fadce2ae3da7bf33b77c4b8dfd07483b1f73edf51897396f23d5d31
+- Content hash: e59f0b08879ac1158184ebf48867ef847239c033c5ca3e550a7e8e1428cd8c93
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#translations_en
+originalSourceText=friend
+shippedText=friend
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
+contentHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-5`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9da19eab4c6a939ec806f9e3784c83bd0e5eb692d7f4945903ad40bd14ded31d
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:человек#sg_nom
+originalSourceText=челове'к
+shippedText=челове́к
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d603a3bf05d8ae8dca94f94ec85946399f9c77bdd198f627737b541d8547eaff
+contentHash=88f5c016b7ed8b04db489dc794eeb8b9df900d632033f4cf368c264d9e281aef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-5-gloss`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e1820cacfa4fb7b5b6df58673c4dbedfa9cfd39f11922b1b61642e8bbb80e3a3
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2532,7 +3585,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-irregular-4`
+### PROVENANCE `prov-ex-or-u8-irregular-6`
 
 - Objectives: obj-u8-irregular
 - Sessions: u8-s-orient, u8-s-irregular
@@ -2540,7 +3593,123 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e65110be01ffcad7d6f02c07713904d033ef1999d5e636dfd9488b2a16a36b3
+- Content hash: e983f96ca598be016cfa4c1879a876c1bf8774b7933a0756716fb9041462e1cc
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:человек#pl_nom
+originalSourceText=лю'ди
+shippedText=лю́ди
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=70a3287020fcc4cb63e8f3deb666ae477f54a6e8df950b118ecf873b098fede3
+contentHash=8c79de13920d6b4a07967359278c87c29543d3e7a8f2ae1f7af6b1e8b405cb25
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-6-gloss`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e289496f4cc9fd3de4672d12b321924e66a4ac709cfa8dbde384ff6361ab3cd0
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:человек#translations_en
+originalSourceText=person, people; man
+shippedText=person
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2f141a2f78a7a2824ff03adf409a4bcd6e8ee9a081c6bfa1f2ab3d0bc23a7d2c
+contentHash=38a81e87e79631e602bf5fbd307ce2fcd382b1670c585ea09032aac778a80531
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-7`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c4345dc2e326569dfeb8247e7f1a16be747f53d464143478a469fa86cc7fb7b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:сын#sg_nom
+originalSourceText=сы'н
+shippedText=сы́н
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1f282b4c3683104e4efbd9ae9e09531b59837421474f6558c44eaa09562c6240
+contentHash=afdb0dba66810c7f7cf480c77ee5f3dc78058cb8b9b41b7a9fc72d6da4e67a1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-7-gloss`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c07c54bd8ecf7333190093791a82dece7e4b1b256f314409acc8c99a58f0d94a
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:сын#translations_en
+originalSourceText=son
+shippedText=son
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=98aa6675482552881925fe70d82559692d811b3bcd33f53b9a702c24d5322696
+contentHash=98aa6675482552881925fe70d82559692d811b3bcd33f53b9a702c24d5322696
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-irregular-8`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3fe46adf60e1518ba4d7f589bcb3f34dbdadedf0791a1edc78a9f60b2aaa4480
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2561,7 +3730,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-irregular-4-gloss`
+### PROVENANCE `prov-ex-or-u8-irregular-8-gloss`
 
 - Objectives: obj-u8-irregular
 - Sessions: u8-s-orient, u8-s-irregular
@@ -2569,7 +3738,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c2a49141c353f1ad625b00aed604fb9aa5247905af33d2b70ec46b596bde86a
+- Content hash: 4f346e9e80480cbf2525e6a6633dc0980d4312ec02b37efdb23717f2a8c8532e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2598,21 +3767,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91c614796e5f97a058cbe3f4720544c537a14eac1c5adcf254fa3c87668879d0
+- Content hash: 7a049e3497430b2e444398fd4512ae5d4d24e7b4a32a253a610f3fbb2c792a68
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:стол#pl_nom
-originalSourceText=столы'
-shippedText=столы́
+sourceRecordId=nouns.csv:стол#sg_nom
+originalSourceText=сто'л
+shippedText=сто́л
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=8011ea483c36f3405f562f4d39dbbcee59039bce8b9bef1765c79bb77a9e9a61
-contentHash=48eea2fafeccf1da8ddff1838f50f9741813b5ad8a86001bfb05eae689b5e80e
+sourceHash=6ffdb9ee5ac5807ea8e6855321d74cb2913caec8e590deb7ae68017a602b072e
+contentHash=fbd569200eced2f5c7de45fbc2ae050ecd4835bdfea568ba34f8a5b72a673166
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2656,21 +3825,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9608509d9880bb74300cf4a93aba17da42ef9ceadd2284db7d08349bb253532
+- Content hash: ce5292d1e84a05ccb92127d58f0a2c4a34f98364e7b2e8d4b8ac28c5484c897c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:город#pl_nom
-originalSourceText=города'
-shippedText=города́
+sourceRecordId=nouns.csv:стол#pl_nom
+originalSourceText=столы'
+shippedText=столы́
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=7901173355179620b95c2ac8b1d7bc506ef451dca86d1374a6b35fbe40bfb166
-contentHash=d7635fb637950cd5e1caf2f04056b4d1e38bae6a17f662ecde0ace36bb62bc50
+sourceHash=8011ea483c36f3405f562f4d39dbbcee59039bce8b9bef1765c79bb77a9e9a61
+contentHash=48eea2fafeccf1da8ddff1838f50f9741813b5ad8a86001bfb05eae689b5e80e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2685,86 +3854,28 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caf265a2e55e3582d20b6f3b3831a0b2912e4f155ff0ad28af01be3ac22b4432
+- Content hash: cbdffe61510b5cadb2712fd183ba6f41f39a039305bdbaa32792242288cf0b98
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:город#translations_en
-originalSourceText=town
-shippedText=town
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
-contentHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-2`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f7efed50ba0e60b465a1a19cf014e5ee02d7f25190afbcbadf550a65fd043bb
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#pl_nom
-originalSourceText=кни'ги
-shippedText=кни́ги
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
-contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-2-gloss`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3942efc9e2d87660007eb47365a33fe50f8f0ff8124bc91d627de145dc2d53f1
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#translations_en
-originalSourceText=book, volume
-shippedText=book
+sourceRecordId=nouns.csv:стол#translations_en
+originalSourceText=table, desk, board; diet, cooking, cuisine; department, section
+shippedText=table
 transformation=sense selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
-contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+sourceHash=f27cc2c8a71de4aef61cea7eb4777768cd53c906f03627296bd3b8998c919ab6
+contentHash=0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-plural-3`
+### PROVENANCE `prov-ex-or-u8-plural-10`
 
 - Objectives: obj-u8-plural
 - Sessions: u8-s-orient, u8-s-plural
@@ -2772,28 +3883,28 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c56f3e8ba972bc05e4b9b64b9e7762abe33e9fb39c86717236087938fb254534
+- Content hash: abfe813f19e842e58f3c2791c535db55ac2f89f300144ab9ba46c3cecbc05094
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:окно#pl_nom
-originalSourceText=о'кна
-shippedText=о́кна
+sourceRecordId=nouns.csv:дом#sg_nom
+originalSourceText=до'м
+shippedText=до́м
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=b608a37e789afde4decc8b392d964251d05344a372ddd7c6e4ce0f526c63b241
-contentHash=363ec24961b965ecfe6b57ac673032f26631bc5997f3776fc284042ed467bd65
+sourceHash=ce94ec5fc770def6f9e65baa3fdb9ccb1e092f3059486e1179ebb1dd3f7b1ed9
+contentHash=dff2181fee228a7f01235ebbe64bd232b28eb0364ca02c0b2b82abc9e1da070d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-plural-3-gloss`
+### PROVENANCE `prov-ex-or-u8-plural-10-gloss`
 
 - Objectives: obj-u8-plural
 - Sessions: u8-s-orient, u8-s-plural
@@ -2801,123 +3912,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe64a05a6f9d7e8f194381a70ea7e84d6a75fd5aab09bb1814a80ea47ec591cc
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:окно#translations_en
-originalSourceText=window, casement-window, window-sill, gap, opening, port, slot, free period, break
-shippedText=window
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=a6a1fa753c5df949c2ba867785897dc3c3168b683ded74a198414ff0ffd1da29
-contentHash=44ff7b02c80d38b26dd6aa31d9470aed81b32e10331a3c994fb1a9945fd847ba
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-4`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 963deaf676f32e09d1a62dda5774493aa3f8c932579f6899d1a9b267bf91873f
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:мама#pl_nom
-originalSourceText=ма'мы
-shippedText=ма́мы
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=9d3e00db115caa33533f0f3307467f7975f9ab0dd7f10df5814b25218e7ae061
-contentHash=2b1e4f815cecaeae3398d8688c092b41f9f59a7d3560709691d5ac8ad0c9254a
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-4-gloss`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b79998f2833ab3e952e1cfe1990a3b094c18d37530e741fb266f9c2449e193d5
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:мама#translations_en
-originalSourceText=mom, mama, mommy, mummy
-shippedText=mom
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d4cf71370a668da26fe34070d59753e8c82f2477176bc4eee3a06dc421b77bc6
-contentHash=bcb9dae6ea88dbf28c262998e6661ec60f32a760faa5aef96745b39c38dbf235
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-5`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96786b8e4007eb4e8021f2b487064a87b46c71fbba63f7fa185aa6470b83039b
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:дом#pl_nom
-originalSourceText=дома'
-shippedText=дома́
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=997a1b146c8e86fcddc562f6d1084e8184b0d72c18820b36ee21fcb8449931f2
-contentHash=ca5f13a8aca214a74fd8db86f14fb9555ffb9cdfe5377040791a719f6aa2e22f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-plural-5-gloss`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-orient, u8-s-plural
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45d7e1912c6533ab8c15657bd7813d56dc01d7c9e7579681bdfb8ca4c64f8581
+- Content hash: 67c292690ce88b94131adc35821a84e9da12bf790bfb945fcbbc40f0493925bc
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2938,7 +3933,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-plural-6`
+### PROVENANCE `prov-ex-or-u8-plural-11`
 
 - Objectives: obj-u8-plural
 - Sessions: u8-s-orient, u8-s-plural
@@ -2946,7 +3941,123 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a0321354ece979496c4fe5c4db2186059c583a602a31e4fd10e4b58f4eb84f7
+- Content hash: 6ae412028fcbacac0f84bbee23f3227f9ee68652db19987b1f92b3e7f9207b27
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дом#pl_nom
+originalSourceText=дома'
+shippedText=дома́
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=997a1b146c8e86fcddc562f6d1084e8184b0d72c18820b36ee21fcb8449931f2
+contentHash=ca5f13a8aca214a74fd8db86f14fb9555ffb9cdfe5377040791a719f6aa2e22f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-11-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ffc60e27db4a442a979e4a929289d6a7e9b85c50ebdb591829aae7ab91fc90e6
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дом#translations_en
+originalSourceText=house, home, house-hold
+shippedText=house
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d5140b4f5c763738e8327a10a66a10858446112daaa55417c81397dd4c9da2f0
+contentHash=d6e21286621a8586f7e54720ab5a39c93acc2f4b8fba7a16ec1c24d69a08c613
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-12`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d090ac4c8f866f49855cf2d6d1bfc22e6b0ba20d82f9f0841c79a608a38c2ae9
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:слово#sg_nom
+originalSourceText=сло'во
+shippedText=сло́во
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8defb47561d90140232f33f2f8df573bdeb2913ac09306a041d6b144b9afe2a2
+contentHash=6fcea07b919f3e48199d961bf5027eb922483fb5cc104b01f7f3cd7a6083aab2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-12-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7f1577e33c24fb77d2a2731a4ab1a1e67517d7cc4321073e8e66f7ecf503aacd
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:слово#translations_en
+originalSourceText=word; speech
+shippedText=word
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bf95a2fa244e47d0d15e64879c80a44ca8011d47e9aad3ca488acf175c8fe1c
+contentHash=98c1eb4ee93476743763878fcb96a25fbc9a175074d64004779ecb5242f645e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-13`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 92c303c32480fb1c0ed8ebcb3177f1abbb4f51cba6c8664a5c5ca1837e2018f1
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2967,7 +4078,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-plural-6-gloss`
+### PROVENANCE `prov-ex-or-u8-plural-13-gloss`
 
 - Objectives: obj-u8-plural
 - Sessions: u8-s-orient, u8-s-plural
@@ -2975,7 +4086,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 092b2a1b7cc3c78879f7f34f7eb3475ef102317d4a877c99d45ae53a07030f2a
+- Content hash: 499e6f6ddbbb717ad6d28ceeab8f1bd1b67cb843e7bb3a10194380071c408f6f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -2990,6 +4101,470 @@ attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=6bf95a2fa244e47d0d15e64879c80a44ca8011d47e9aad3ca488acf175c8fe1c
 contentHash=98c1eb4ee93476743763878fcb96a25fbc9a175074d64004779ecb5242f645e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-2`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7e274029edab84338926e14721cc26071201df14097dcf1ecbf8bfe99ce85987
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:город#sg_nom
+originalSourceText=го'род
+shippedText=го́род
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=090db28c5c196fa3f1b9b6a45f113d4dc8f38ee8869563581ead01c30d2cc011
+contentHash=066ebba99dbdd529d7e462191087c6809b63515f5440e80b41d89b14f1c4450f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-2-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b941d74108745c328342630a4c2744ae5be3e6323a696c54db03ced62fbd0736
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:город#translations_en
+originalSourceText=town
+shippedText=town
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
+contentHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4a746d7e1cdc2a66540a424d84ef433ae32b1f388576ea30559c0267fe3da870
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:город#pl_nom
+originalSourceText=города'
+shippedText=города́
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7901173355179620b95c2ac8b1d7bc506ef451dca86d1374a6b35fbe40bfb166
+contentHash=d7635fb637950cd5e1caf2f04056b4d1e38bae6a17f662ecde0ace36bb62bc50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-3-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ef871b930261ee4e51683dc8925850bfa068090a1937be70b5b4f9c3993cf8a7
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:город#translations_en
+originalSourceText=town
+shippedText=town
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
+contentHash=50ac81f970325a3e011f2437818adde426e1278dee5670dd359edfca43a72d79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-4`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c032ca46e04004ca0f91775d0e1c38654bfad6806c87d320d3060aec6e0174e0
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#sg_nom
+originalSourceText=кни'га
+shippedText=кни́га
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c2f70c7689eb1b282bbb1f165038ea6eeb4c785f1d7abebf94a9a2f4a861059a
+contentHash=47bf48ae649e95e468ffbf192033c48627e3022a30cd0040c9b860d6f3ec9d9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-4-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a78bede051e194506a39c244ae2cee9034bff36536e9ac1813018aeb6f5f1ae3
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#translations_en
+originalSourceText=book, volume
+shippedText=book
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
+contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-5`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4b6b75438c0252096cecab866ce0491dd16069460a5a998dc164e9257cd55604
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#pl_nom
+originalSourceText=кни'ги
+shippedText=кни́ги
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
+contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-5-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 754d85c3a799ed3bd0bc2b73f46efcba36e9ff5ec4a636677b86a8873766a480
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#translations_en
+originalSourceText=book, volume
+shippedText=book
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
+contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-6`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 300c33499aab7aef0e9105b8b588c43668c591d7ab8c25e691bc7c103e2cb0d5
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:окно#sg_nom
+originalSourceText=окно'
+shippedText=окно́
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c34e235593d5b441845aaa54c61a2fd7b95eef367b9274284b75a2d4c37ad5bd
+contentHash=a91dcd700e39c50c5c483c4028f0c413e6d0d01e3fd1825c72d1d99b5067880f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-6-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 41bddb0157e632269610394424b658417bd46715ca7432b0854b96d1a0dd5aed
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:окно#translations_en
+originalSourceText=window, casement-window, window-sill, gap, opening, port, slot, free period, break
+shippedText=window
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a6a1fa753c5df949c2ba867785897dc3c3168b683ded74a198414ff0ffd1da29
+contentHash=44ff7b02c80d38b26dd6aa31d9470aed81b32e10331a3c994fb1a9945fd847ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-7`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e1c69b85a5feffb68800f4941de9e489ecc75fadd23c14e808df4ec6fc797fa9
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:окно#pl_nom
+originalSourceText=о'кна
+shippedText=о́кна
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=b608a37e789afde4decc8b392d964251d05344a372ddd7c6e4ce0f526c63b241
+contentHash=363ec24961b965ecfe6b57ac673032f26631bc5997f3776fc284042ed467bd65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-7-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 579d9f23ee38bb736441e4f815327153d09e0479c0bce222015f5f78c0c3ab0c
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:окно#translations_en
+originalSourceText=window, casement-window, window-sill, gap, opening, port, slot, free period, break
+shippedText=window
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a6a1fa753c5df949c2ba867785897dc3c3168b683ded74a198414ff0ffd1da29
+contentHash=44ff7b02c80d38b26dd6aa31d9470aed81b32e10331a3c994fb1a9945fd847ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-8`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d64dfb02ca0996f9838b6c957d8609087a21e6c4b18bbb752f11971c3a2e44fc
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#sg_nom
+originalSourceText=ма'ма
+shippedText=ма́ма
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=90fa96f6c07057bb5647bdb089766761636f5ddb2da623520f1f7f149048be34
+contentHash=1cc52d4a8513a3b381822de8fdf4fd0d5314592a82e9e70af02311cefaf3023d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-8-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 154e4d458608cd8aaabcf96b157443dc887522fc3e2b2cce1c67cef4aac2dc5c
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#translations_en
+originalSourceText=mom, mama, mommy, mummy
+shippedText=mom
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d4cf71370a668da26fe34070d59753e8c82f2477176bc4eee3a06dc421b77bc6
+contentHash=bcb9dae6ea88dbf28c262998e6661ec60f32a760faa5aef96745b39c38dbf235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-9`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 48256bf58a9b9a53c30ea669a53cd14e52d868376c627f037b9c1c2340f182f7
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#pl_nom
+originalSourceText=ма'мы
+shippedText=ма́мы
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9d3e00db115caa33533f0f3307467f7975f9ab0dd7f10df5814b25218e7ae061
+contentHash=2b1e4f815cecaeae3398d8688c092b41f9f59a7d3560709691d5ac8ad0c9254a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-plural-9-gloss`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9279dd582271b6ac2567bf5f48c376636022a0cd859de37c5dcb41dc8932aa9b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:мама#translations_en
+originalSourceText=mom, mama, mommy, mummy
+shippedText=mom
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d4cf71370a668da26fe34070d59753e8c82f2477176bc4eee3a06dc421b77bc6
+contentHash=bcb9dae6ea88dbf28c262998e6661ec60f32a760faa5aef96745b39c38dbf235
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3062,21 +4637,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1e67ad779517da6a0d0ec6d5720caff3aabdb716d8c049d9fae4067af854beb
+- Content hash: a5be378638048cdc6dbff3229db1cbe7491e040c1cb15fb2d9eb03a74c880c96
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#pl_nom
-originalSourceText=кни'ги
-shippedText=кни́ги
+sourceRecordId=nouns.csv:книга#sg_nom
+originalSourceText=кни'га
+shippedText=кни́га
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
-contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
+sourceHash=c2f70c7689eb1b282bbb1f165038ea6eeb4c785f1d7abebf94a9a2f4a861059a
+contentHash=47bf48ae649e95e468ffbf192033c48627e3022a30cd0040c9b860d6f3ec9d9d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3120,7 +4695,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eabeb7c7de1085677177e6d81fa0bef381d83143ee54ccdcce1c55ce84f50fa3
+- Content hash: 96e01f4987fce7caa038ab81a389a0b62f1bc04248b1bdb074d225cc2e551319
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#pl_nom
+originalSourceText=кни'ги
+shippedText=кни́ги
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
+contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-3-gloss`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27ee8277083da180374632864d6f588d7152cd874a5b0cd3b9ddb6ceb98374e6
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#translations_en
+originalSourceText=book, volume
+shippedText=book
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
+contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-4`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e0f7fe3fb4fc35ad7a5a7aec6ddf500c61372da245d7c236c9ca3354c696b22d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3141,7 +4774,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-spelling-3-gloss`
+### PROVENANCE `prov-ex-or-u8-spelling-4-gloss`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-orient, u8-s-spelling
@@ -3149,7 +4782,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5c130854346eb410ed5c06bdecdaa761b120bc3ad6dc59aa090f76d349c5b1d
+- Content hash: 33738d2fd6826f39df31ab8063aedd92fde0e7b33a9b51f9d3ba107280f626ca
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -3164,6 +4797,64 @@ attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c37665d8bec6964343c8404277140b15122cc1771a0872f1fc7ba1ffab24e8d0
 contentHash=944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-5`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53b8de525c1c569898fb1b312aac55dd5d1b4e48300affb33afee5f5ca357801
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#decl_n_nom
+originalSourceText=хоро'шее
+shippedText=хоро́шее
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4724f1c133507ff8ae8487def1893524be314fbd65ba1b18d36800799e7f2e0d
+contentHash=489dbd73fe531506f7009a155c1a230d665321f1d02a8527d413339b3cc84c70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-5-gloss`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7537b3a1ad40c032d7b883d376125781a58b0aa4d10ad65c09336db94d8a72c7
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#translations_en
+originalSourceText=good, beautiful, handsome
+shippedText=good
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=726e6cd53da1e936c3220647702c178cf8dffbdb36b65f0665fcfc32f2d7f908
+contentHash=770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4019,7 +5710,36 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7d1d494fedafca9263edb457c56d248e2e21549c0d5cad6b33587ca362b2583
+- Content hash: dec8ef912ced7e9f864ca3d8bdf27ed148e64e93013a59649950f4ed67a71a4f
+
+recordType=pattern
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
+sourceRevision=4292379
+sourceRecordId=adjectives:any unstressed '''o''' in an ending is instead written as '''e'''
+originalSourceText=any unstressed '''o''' in an ending is instead written as '''e'''
+shippedText=e
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9660767d43710e8c1f63f03f86c5d598e6cad3e8f8b769f0e004d3a649d1d0f7
+contentHash=3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u8-spelling-x-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cb5ac81f9d5696a8f07f318be494518f1c185fc5a4f9014809a14c6f60d08184
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
@@ -4040,7 +5760,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u8-spelling-x-1`
+### PROVENANCE `prov-u8-spelling-x-2`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-orient, u8-s-spelling
@@ -4048,7 +5768,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac91956f7619412c5c4cd1053ae1b9f8752db7ce0a1eb87e9dcd3a3b9ebfa553
+- Content hash: f4dff89e2572123216c5a84a792d67e5ba59b79cdac3a96521f7d490d5d858c9
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
@@ -4069,6 +5789,292 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u8-099`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c713720726972977aadcff996062ff9943f72e6bc090b8e5ecded6230ab544d7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u8-100`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0830a74b1567dafe29c04d4de67d7bd40eedaaba03dad1322a9e90f102f368a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the dictionary row of the same word, not the plural row.
+
+### AUTHORED_ENGLISH `en-u8-101`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 570a67a8edd832ee1b28c7fe1c01e3e0176ef66c720ed792e77c4e71a3fefa3b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer show the governed row of the same word?
+
+### AUTHORED_ENGLISH `en-u8-102`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0cdba2d0aff2f822c6b2949c1682cfc9d397d6e115ca9b33488f5f218d9022ef
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the plural row of the shown form?
+
+### AUTHORED_ENGLISH `en-u8-103`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f68082aa69e415d1f2bca36e2b73c00bf2f6c16559bc8462d242129f59c0bc67
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u8-104`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c457fc55265d2f897a2822f0882a3fcc46aabe6b3265bdc18fc1946ecfe356ee
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+
+### AUTHORED_ENGLISH `en-u8-105`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1e040bcf6bd53639d2a43305b700effc1b2e020b308b00baf9331b762538a1ea
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted spelling does the shown line use?
+
+### AUTHORED_ENGLISH `en-u8-106`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e60b1abff95123316b68aace85ddd0f1af39385e62cc1d935fea566900c2fd60
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
+
+### AUTHORED_ENGLISH `en-u8-107`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2db2043758595ac385154e1f6885bbf3aa15ba502541bded4e0315eb2cce4dd2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This spelling is the other spelling, not the spelling of the shown line.
+
+### AUTHORED_ENGLISH `en-u8-108`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 32ea1d7af59979226fbfe40d8427bfb153c084d69210dcdff221fb03ae6bb570
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this admitted label name the pattern of the shown line?
+
+### AUTHORED_ENGLISH `en-u8-109`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 236f0fbaaa81f1cc2e5acb312aab4e8fc6be2619975cfe579951c9cb2bd2ab38
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other row of the same word, not the plural row.
+
+### AUTHORED_ENGLISH `en-u8-110`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 07b7aee64fef6067e68cafbef807b352e30d552093d89cea1b087de02e0b725f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is another plural row, not the form in the shown line.
+
+### AUTHORED_ENGLISH `en-u8-111`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d83e09c6503ad61d2b6db77625af385ae60c17a01b67dc4344a5f47edb30216f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer identify the governed form in the shown line?
+
+### AUTHORED_ENGLISH `en-u8-112`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 89b57a5d7e464b2664c7854173b397ca1325f0bb9e654a5f0ca601901c0ed8b2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form does the shown line use?
+
+### AUTHORED_ENGLISH `en-u8-113`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c94d34c89f6371879593bd9accec558a2c6bda25f52068faf61703a39f0971e7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This word is the existence word, not the word in the shown line.
+
+### AUTHORED_ENGLISH `en-u8-114`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b82e016c9f8148bdca6e95ce505b0679c8cdce81456f2f12936b6280e259f044
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted word does the shown line use?
+
+### AUTHORED_ENGLISH `en-u8-115`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d18be7cf8b0108488ace98f65856dce6652fec4934867b6516d7e4bdabe5632e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This word is the absence word, not the word in the shown line.
+
+### AUTHORED_ENGLISH `en-u8-116`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b8ff53fdc8c062be385def39a8e8ed91d8e305ea6db2056267bd45bd488ba02e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This line uses the existence word, not the shown word.
+
+### AUTHORED_ENGLISH `en-u8-117`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b062a53e9cb7e1fa8131640b394c3a7aa6b155de8d8e39df143c5ac28561ab22
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer agree with the shown word?
+
+### AUTHORED_ENGLISH `en-u8-118`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 198055c126c4af88e91d63f39dd48d43a807127d75392aaba9158ce85e35f8a3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line uses the shown word?
+
+### AUTHORED_ENGLISH `en-u8-119`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ba4859ec86ce9b9ee70cafc01996b2def8a8d23ba47c16d0beb0158801ad3d42
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted plural and availability rows
+
+### AUTHORED_ENGLISH `en-u8-120`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2c2c121c2280385ee540054c7d528c27c6c3f68d13218e2d0a0168bf72ef7eac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 8 uses frozen plural and availability rows. Qualified review is pending.
+
 ### AUTHORED_ENGLISH `en-u8-121`
 
 - Objectives: none
@@ -4077,10 +6083,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19fc56749ef4e8e83dd1c55c93aaa17bf645bb4e7b1e7a5dfd00bc0e6637fd3a
+- Content hash: dc40886e90232eb70770582eb3e0cb7bc481fd93189b3aa4d4d391bc4601acc2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=Open Lesson 8 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u8-122`
 
@@ -4090,10 +6096,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8717f24e3351f2d348b8870b39fe9a6bbb3eabbe01b18e582567794b37c3773b
+- Content hash: eeaac0aed68f662071dd8b203460f942a742ca4ac936f17cd223af57f34efd82
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted plural form belongs to a different word.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u8-123`
 
@@ -4103,10 +6109,10 @@ text=This admitted plural form belongs to a different word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2ec41a13877d4d26ff63aaac181b5be88bdfe2d20a025e435b582bfffefa10a
+- Content hash: 27b6517cf55d4aa00135901f5348b549458c9a043213fa20bb22fada99e3aba1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The admitted answer for this contrast is 
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u8-124`
 
@@ -4116,10 +6122,10 @@ text=The admitted answer for this contrast is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66066a204cad3d1d6f21776cc48ab115ef55f9dd6e461e93b58eb130523d692f
+- Content hash: 2a3f2278d986f84a11ee4178d0f5cba34710a4dd7a98132b51c791d3104f68d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for table?
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u8-125`
 
@@ -4129,10 +6135,10 @@ text=Which admitted plural form is recorded for table?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a97264dc7351b79abd69b6025e096b2dfe1fa35a91da636811d518b4b23c6d86
+- Content hash: 25dd21e6f96b17b226ff1112979b1d73846ef92333f8d1809edf018df62472c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u8-126`
 
@@ -4142,10 +6148,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b261effc6fac923de5e7c0b8730191a66977c1f45c9a62c5d099aa75ff13fdea
+- Content hash: 1acfb1009a9bea9b297f1b7a6884392ae3c5de74d13c26167f378b40fca18bc2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for town?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u8-127`
 
@@ -4155,10 +6161,10 @@ text=Which admitted plural form is recorded for town?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9785907846717e0d0725434432a1a03b9e9a14cb2d202f48868e686dfb26a72
+- Content hash: 355e64b0adf448ed5eba886fe17b8baca89fb8ef9daa36c6f86aebcdc9a1e542
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for window?
+text=Work Lesson 8 in your copy
 
 ### AUTHORED_ENGLISH `en-u8-128`
 
@@ -4168,10 +6174,10 @@ text=Which admitted plural form is recorded for window?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 726ff692a065edf2845c70ad821f9d1d386beb4f1756e718e6de4c01b6b4921e
+- Content hash: 52403dde93d097d37e9ce0bf00eb9d23d64405022547d2d91f28dd1c1605aad6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for mom?
+text=Do Lesson 8 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u8-129`
 
@@ -4181,10 +6187,10 @@ text=Which admitted plural form is recorded for mom?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a802b527dc31c6d10d9086d00d756a92d1d5a0ba29ab400f7c3c7132448b7d0
+- Content hash: bf544c173f843b65e3bf1ef9c9c2ab27ce7fea3a5678b06b6d57f64365ed2580
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for house?
+text=A full buying conversation stays in the copy you own. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u8-130`
 
@@ -4194,10 +6200,10 @@ text=Which admitted plural form is recorded for house?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4ea5509d103373e08a7dec855ed30cec9117a624bd691b5bd3934f8fe086f1a
+- Content hash: 1cddf7ee6cbde49c186e63477c1eb2efb01cf071c0be5c0ef1d570a1185f5f92
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for word?
+text=Open Lesson 8 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u8-131`
 
@@ -4207,10 +6213,10 @@ text=Which admitted plural form is recorded for word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e54ae97f68509da3f52e8c86eef6a591a595d154fe69c9a2990b7e3b2e39188
+- Content hash: 752355c7b96afbb01df56b8a93a57457289afff8001fa800466c0b6d4687df13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted spelling is the one the frozen line says not to add.
+text=Record Lesson 8 book work
 
 ### AUTHORED_ENGLISH `en-u8-132`
 
@@ -4220,10 +6226,10 @@ text=This admitted spelling is the one the frozen line says not to add.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9396ecad82d8d49dafe0365e304d32381aa0c4d75b22131182e5ff43ab4619a4
+- Content hash: d92d5396784742549dc1132ed8edd365665db65c580829bd184730425e5774d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted spelling does the frozen line say to add?
+text=When you have done Lesson 8 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u8-133`
 
@@ -4233,449 +6239,7 @@ text=Which admitted spelling does the frozen line say to add?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36468382b2113053e10f6ea4a69e3c8c5a76fad68f72b57ec206ea29d9a73f58
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for book?
-
-### AUTHORED_ENGLISH `en-u8-134`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63580192954824828d377c890281816e3d095294576688124bb0986b212269e9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for day?
-
-### AUTHORED_ENGLISH `en-u8-135`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f84611c4808414e2ae0096c3292a0a8815005629d9f5264defca3272cfa31b16
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for good letter?
-
-### AUTHORED_ENGLISH `en-u8-136`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c83db74971ee2ff32e25caba45e4c9e93dde635932afc56d0feadfd18c393f22
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for good?
-
-### AUTHORED_ENGLISH `en-u8-137`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a67d294b67400eb51da1a9a1594a96d25f940ec8fdbb4555f76d61360d2426ec
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for brother?
-
-### AUTHORED_ENGLISH `en-u8-138`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0194e557dc640eecd6d2a6a5f3b9e9a7b6dab42589649de8374439d588f16a2e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for person?
-
-### AUTHORED_ENGLISH `en-u8-139`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4eaab31ca098af685d6216a6117b5cb950e1adac27ed27ec0fcb6b0bc72738b0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for five tables?
-
-### AUTHORED_ENGLISH `en-u8-140`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f325d586bd08f476fd371e90278417e5cff6424300e0185372084d4a00f9fb7c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted plural form is recorded for friend?
-
-### AUTHORED_ENGLISH `en-u8-141`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e720740c7034d7144da410f3fa7e790b17975f1ac19727f61be7741671924a3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different plural row.
-
-### AUTHORED_ENGLISH `en-u8-142`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb6ce5700cbf273e0fe1af668453f7ffbb1b9cb1381ef67d3da03f9335d23412
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for the dark blue books?
-
-### AUTHORED_ENGLISH `en-u8-143`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e326d102370e56f3784e760caf1be3532ec7fe370751989b3dacdef38b5a8179
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the plural row recorded for my?
-
-### AUTHORED_ENGLISH `en-u8-144`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5265759defddfcdee9c8ea5349fae5751c4c87175dc44993300106ac8f9dd133
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the plural row recorded for this?
-
-### AUTHORED_ENGLISH `en-u8-145`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e005476ec198c430c492cbacd51ec29c74a60874354a1b3fe2c68bde92add229
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the plural row recorded for new?
-
-### AUTHORED_ENGLISH `en-u8-146`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc31586f787d3109d7c5938f8a213c0bdac9e9987fa2988f12675495efe00d0b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is an existence example.
-
-### AUTHORED_ENGLISH `en-u8-147`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4edded909b00825d59d3f9f0c3a2eaab15766f92a6b2676672a3f8ac512bfa5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for There are no restaurants?
-
-### AUTHORED_ENGLISH `en-u8-148`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6bd1722af469093cbf897911a7596a2a5f6ad6d38eb20d7bc63e1526e2fbb8fa
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the absence example.
-
-### AUTHORED_ENGLISH `en-u8-149`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25a67a545b33cb857596b5805c795bbad4b5d43861b9216846dba02aaf8f6875
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for There are Frenchmen on this street?
-
-### AUTHORED_ENGLISH `en-u8-150`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a1a328f61d022f61eb04b99302d9f190bfb884514c56397ab7bdab962b49a9b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is a different existence example.
-
-### AUTHORED_ENGLISH `en-u8-151`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e3232c79761e1b7fd33d6b664a651ba8eccdef6be6b2ba627346b952fabb4a6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for This is David's house?
-
-### AUTHORED_ENGLISH `en-u8-152`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c25914e61572ecc4a74dc6c34710141cd5c1890a37a03fbc56934378bdc4e4ec
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for There are old buildings in Moscow?
-
-### AUTHORED_ENGLISH `en-u8-153`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e37b6b521a8b803a1c43888015179c05ae43820ba864914bb144dd52f2c0ffe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted plural and availability rows
-
-### AUTHORED_ENGLISH `en-u8-154`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 654cb17c1507b16ad8eb2cb5676a7de882754d36cd90a83ff3d75460bcdda4e0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 8 uses frozen plural and availability rows. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u8-155`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 851c55034c0dd7de2c9326f9cb5a5564f7677a406dd96fa2add37a391eedd9b8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 8 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u8-156`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6962c32af59ecd9571db0d328d375509b9aa4a869b0ffdc57fd8300c2c08595b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u8-157`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 913470a8919f1331ce9bd1944643007f0ab45ef33523fa27a24bcbd01ff77e5f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u8-158`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b6ededffc46dff0ae71c6f3e39fb13ede3b7e559f07cb1c489a158bb2064783
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u8-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 818242d1a488586f5dda1e3bb68fc70adb56fa5a9be6428ab67bd97b9ff662e1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u8-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab047da2275cbeb8733f333a27656d2cdfb8c28601dd804d05146d59846950da
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u8-161`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5c024cedd82e06650f32bdab2065891469c6808d408f788daac3828d47367dc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 8 in your copy
-
-### AUTHORED_ENGLISH `en-u8-162`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 253d3ba39e8ebe88cbae1443df37354124ae6686eb9810c7ad2b6d87acf3f0c9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 8 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u8-163`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f29eec38d28de6b9c010959304fcbcd13f37ca7574d2d9eab5130106bc3b14dc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A full buying conversation stays in the copy you own. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u8-164`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 625fe0628d164e163548fee751909490b110b83a6c8b2d79070e69164eea3b59
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 8 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u8-165`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d3e2f0027d475ed4ec0a0d381fae4618d358305175501e7e6eb4339429a07c9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 8 book work
-
-### AUTHORED_ENGLISH `en-u8-166`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd2c0a53bdbb353612d254bd95c7e778a0eef9aecaa27006ff1ba7a608ebb676
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 8 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u8-167`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 060d1c71d59baf08b70c901eb1ae4f8db1048adb805fd09d8afa1d38c6170e52
+- Content hash: dad1caf84f1ba965960e52a8d275907e33479515a7cdec41cdc9c25d20664cc7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 8 work in your copy.
@@ -4775,6 +6339,9 @@ permitsAppUse=true
 - `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-3`
 - `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-4`
 - `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-5`
+- `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-6`
+- `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-7`
+- `obj-u8-plural` INSTRUCTION `u8-st-teach-plural-8`
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-0`
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-1`
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-2`
@@ -4782,21 +6349,32 @@ permitsAppUse=true
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-4`
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-5`
 - `obj-u8-plural` EXAMPLE `ex-or-u8-plural-6`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-7`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-8`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-9`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-10`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-11`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-12`
+- `obj-u8-plural` EXAMPLE `ex-or-u8-plural-13`
 - `obj-u8-plural` PRACTICE `u8-st-guided-plural-1`
 - `obj-u8-plural` CHECK `u8-i-plural-1`
 - `obj-u8-plural` CHECK `u8-i-plural-2`
 - `obj-u8-plural` CHECK `u8-i-plural-3`
 - `obj-u8-plural` CHECK `u8-i-plural-4`
 - `obj-u8-plural` CHECK `u8-i-plural-5`
+- `obj-u8-plural` CHECK `u8-i-plural-6`
 - `obj-u8-plural` REMEDIATION `u8-st-rem-plural`
 - `obj-u8-spelling` INSTRUCTION `u8-st-orient`
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-1`
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-2`
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-3`
+- `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-4`
 - `obj-u8-spelling` EXAMPLE `ex-u8-spelling-0`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-1`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-2`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-3`
+- `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-4`
+- `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-5`
 - `obj-u8-spelling` PRACTICE `u8-st-guided-spelling-1`
 - `obj-u8-spelling` CHECK `u8-i-spelling-1`
 - `obj-u8-spelling` CHECK `u8-i-spelling-2`
@@ -4808,11 +6386,17 @@ permitsAppUse=true
 - `obj-u8-irregular` INSTRUCTION `u8-st-teach-irregular-2`
 - `obj-u8-irregular` INSTRUCTION `u8-st-teach-irregular-3`
 - `obj-u8-irregular` INSTRUCTION `u8-st-teach-irregular-4`
+- `obj-u8-irregular` INSTRUCTION `u8-st-teach-irregular-5`
+- `obj-u8-irregular` INSTRUCTION `u8-st-teach-irregular-6`
 - `obj-u8-irregular` EXAMPLE `ex-u8-irregular-0`
 - `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-1`
 - `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-2`
 - `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-3`
 - `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-4`
+- `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-5`
+- `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-6`
+- `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-7`
+- `obj-u8-irregular` EXAMPLE `ex-or-u8-irregular-8`
 - `obj-u8-irregular` PRACTICE `u8-st-guided-irregular-1`
 - `obj-u8-irregular` CHECK `u8-i-irregular-1`
 - `obj-u8-irregular` CHECK `u8-i-irregular-2`
@@ -4823,11 +6407,15 @@ permitsAppUse=true
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-2`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-3`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-4`
+- `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-5`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-0`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-1`
 - `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-2`
 - `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-3`
 - `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-4`
+- `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-5`
+- `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-6`
+- `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-7`
 - `obj-u8-agreement` PRACTICE `u8-st-guided-agreement-1`
 - `obj-u8-agreement` CHECK `u8-i-agreement-1`
 - `obj-u8-agreement` CHECK `u8-i-agreement-2`
@@ -4843,6 +6431,7 @@ permitsAppUse=true
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-2`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-3`
 - `obj-u8-availability` EXAMPLE `ex-or-u8-availability-4`
+- `obj-u8-availability` EXAMPLE `ex-or-u8-availability-5`
 - `obj-u8-availability` PRACTICE `u8-st-guided-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-2`
@@ -4871,7 +6460,17 @@ permitsAppUse=true
 - `u8-st-teach-plural-4` EXAMPLE `ex-or-u8-plural-5`
 - `u8-st-teach-plural-4` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-plural-5` EXAMPLE `ex-or-u8-plural-6`
+- `u8-st-teach-plural-5` EXAMPLE `ex-or-u8-plural-7`
 - `u8-st-teach-plural-5` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-plural-6` EXAMPLE `ex-or-u8-plural-8`
+- `u8-st-teach-plural-6` EXAMPLE `ex-or-u8-plural-9`
+- `u8-st-teach-plural-6` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-plural-7` EXAMPLE `ex-or-u8-plural-10`
+- `u8-st-teach-plural-7` EXAMPLE `ex-or-u8-plural-11`
+- `u8-st-teach-plural-7` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-12`
+- `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-13`
+- `u8-st-teach-plural-8` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-0`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-1`
 - `u8-st-check-plural` REMEDIATION `u8-st-rem-plural`
@@ -4880,6 +6479,7 @@ permitsAppUse=true
 - `u8-st-check-plural` ITEM `u8-i-plural-3`
 - `u8-st-check-plural` ITEM `u8-i-plural-4`
 - `u8-st-check-plural` ITEM `u8-i-plural-5`
+- `u8-st-check-plural` ITEM `u8-i-plural-6`
 - `u8-s-spelling` OBJECTIVE `obj-u8-spelling`
 - `u8-st-teach-spelling-1` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-teach-spelling-1` EXAMPLE `ex-or-u8-spelling-1`
@@ -4890,6 +6490,9 @@ permitsAppUse=true
 - `u8-st-teach-spelling-3` EXAMPLE `ex-or-u8-spelling-2`
 - `u8-st-teach-spelling-3` EXAMPLE `ex-or-u8-spelling-3`
 - `u8-st-teach-spelling-3` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-spelling-4` EXAMPLE `ex-or-u8-spelling-4`
+- `u8-st-teach-spelling-4` EXAMPLE `ex-or-u8-spelling-5`
+- `u8-st-teach-spelling-4` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-spelling` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-1`
 - `u8-st-check-spelling` REMEDIATION `u8-st-rem-spelling`
@@ -4908,7 +6511,13 @@ permitsAppUse=true
 - `u8-st-teach-irregular-3` EXAMPLE `ex-or-u8-irregular-3`
 - `u8-st-teach-irregular-3` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-irregular-4` EXAMPLE `ex-or-u8-irregular-4`
+- `u8-st-teach-irregular-4` EXAMPLE `ex-or-u8-irregular-5`
 - `u8-st-teach-irregular-4` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-irregular-5` EXAMPLE `ex-or-u8-irregular-6`
+- `u8-st-teach-irregular-5` EXAMPLE `ex-or-u8-irregular-7`
+- `u8-st-teach-irregular-5` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-irregular-6` EXAMPLE `ex-or-u8-irregular-8`
+- `u8-st-teach-irregular-6` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-irregular` EXAMPLE `ex-u8-irregular-0`
 - `u8-st-rem-irregular` EXAMPLE `ex-or-u8-irregular-1`
 - `u8-st-check-irregular` REMEDIATION `u8-st-rem-irregular`
@@ -4926,7 +6535,11 @@ permitsAppUse=true
 - `u8-st-teach-agreement-3` EXAMPLE `ex-or-u8-agreement-3`
 - `u8-st-teach-agreement-3` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-agreement-4` EXAMPLE `ex-or-u8-agreement-4`
+- `u8-st-teach-agreement-4` EXAMPLE `ex-or-u8-agreement-5`
 - `u8-st-teach-agreement-4` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-6`
+- `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-7`
+- `u8-st-teach-agreement-5` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-0`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-1`
 - `u8-st-check-agreement` REMEDIATION `u8-st-rem-agreement`
@@ -4944,6 +6557,7 @@ permitsAppUse=true
 - `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-3`
 - `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-availability-4` EXAMPLE `ex-or-u8-availability-4`
+- `u8-st-teach-availability-4` EXAMPLE `ex-or-u8-availability-5`
 - `u8-st-teach-availability-4` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-1`
@@ -4959,8 +6573,16 @@ permitsAppUse=true
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-4`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-4-gloss`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-5`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-5-gloss`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-6`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-6-gloss`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-7`
+- `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-7-gloss`
 - `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-4`
 - `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-4-gloss`
+- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-5`
+- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-5-gloss`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-1`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-1-gloss`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-2`
@@ -4969,10 +6591,26 @@ permitsAppUse=true
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-3-gloss`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-4`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-4-gloss`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-5`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-5-gloss`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-6`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-6-gloss`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-7`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-7-gloss`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-8`
+- `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-8-gloss`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-0`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-0-gloss`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-1`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-1-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-10`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-10-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-11`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-11-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-12`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-12-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-13`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-13-gloss`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-2`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-2-gloss`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-3`
@@ -4983,12 +6621,22 @@ permitsAppUse=true
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-5-gloss`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-6`
 - `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-6-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-7`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-7-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-8`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-8-gloss`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-9`
+- `obj-u8-plural` PROVENANCE `prov-ex-or-u8-plural-9-gloss`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-1`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-1-gloss`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-2`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-2-gloss`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-3`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-3-gloss`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-4`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-4-gloss`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-5`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-5-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-0-en`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-0-ru`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-1-en`
@@ -5020,6 +6668,7 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-u8-spelling-rem-r1`
 - `obj-u8-spelling` PROVENANCE `prov-u8-spelling-x-0`
 - `obj-u8-spelling` PROVENANCE `prov-u8-spelling-x-1`
+- `obj-u8-spelling` PROVENANCE `prov-u8-spelling-x-2`
 
 ## Book-directed experiences
 

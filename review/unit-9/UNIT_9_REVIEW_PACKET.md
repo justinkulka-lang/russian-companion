@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7321922cc2bab38baadaf3c76459dd2cccafd420
-- Unit content-review SHA-256: 21b2db1154cb14bf8ed9e64ae78a67aa7ffec4717e9a3b12c644e823133cdc0f
+- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
+- Unit content-review SHA-256: 5750cd1f25fe2f8c059a8791215647eed4d34fd164eec449a6c8e70320b3fddf
 - Mapping-package SHA-256: 8980bf7cd5ccd264aeb6eaf7b5e05311d2c6cf7813d1898bc5ad8eefb63cae5a
-- Pack content-review SHA-256: 7dc4ccccd951926f40b3af5c049dcd7022f6a5a4a927ee0a8c717dfb70a28eb2
-- Review-package SHA-256: 26e8009b353ba3aa2e9e5ec7ae230865202a91dd0f171569d107c22c7b4739f2
-- Repository source SHA-256: fc56c4128805c170c226597b1cac76384146f548c62b886a76b4242a713cde70
+- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
+- Review-package SHA-256: 207895eaf354f7e576a24ba2fd971615a8ba2d8dc66ae1c18b1e0440f119ca43
+- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -208,7 +208,7 @@ remediation=u9-st-rem-thousands
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 02e0b85743a5f18dc590d24a5a6de76415ad94e1c001fbe24a0638a5e215c1c5
+- Content hash: 2f4d4aff9c9b69b79ea1d130d4b712e7309ca36b2dc7d4579410506ce2545734
 
 title=Choose the admitted form of one or two
 kind=RECOGNITION
@@ -216,7 +216,7 @@ unitNumber=9
 instruction=u9-st-orient,u9-st-teach-odindva-1,u9-st-teach-odindva-2,u9-st-teach-odindva-3,u9-st-teach-odindva-4,u9-st-teach-odindva-5,u9-st-teach-odindva-6
 examples=ex-u9-odindva-0,ex-u9-odindva-1,ex-u9-odindva-2,ex-u9-odindva-3,ex-u9-odindva-4,ex-u9-odindva-5,ex-u9-odindva-6,ex-u9-odindva-7,ex-or-u9-odindva-8,ex-or-u9-odindva-9
 practice=u9-st-guided-odindva-1
-checks=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3
+checks=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3,u9-i-odindva-4,u9-i-odindva-5
 remediation=u9-st-rem-odindva
 
 ### OBJECTIVE `obj-u9-quantity`
@@ -227,15 +227,15 @@ remediation=u9-st-rem-odindva
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2a2804824c858c2adc2a7983c17b374a2fe59cfa4bd85b9ee19287f59efd2b74
+- Content hash: 3ccb51dcf0ac6fbe4290d3fd3f9b002c549a975691a204a55a3482481b12dc2f
 
 title=Choose the admitted counted form
 kind=RECOGNITION
 unitNumber=9
-instruction=u9-st-orient,u9-st-teach-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9
-examples=ex-u9-quantity-0,ex-u9-quantity-1,ex-u9-quantity-2,ex-u9-quantity-3,ex-u9-quantity-4,ex-u9-quantity-5,ex-u9-quantity-6,ex-u9-quantity-7,ex-u9-quantity-8,ex-u9-quantity-9,ex-u9-quantity-10,ex-u9-quantity-11,ex-u9-quantity-12,ex-u9-quantity-13,ex-or-u9-quantity-14,ex-or-u9-quantity-15
+instruction=u9-st-orient,u9-st-teach-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9,u9-st-teach-quantity-10
+examples=ex-u9-quantity-0,ex-u9-quantity-1,ex-u9-quantity-2,ex-u9-quantity-3,ex-u9-quantity-4,ex-u9-quantity-5,ex-u9-quantity-6,ex-u9-quantity-7,ex-u9-quantity-8,ex-u9-quantity-9,ex-u9-quantity-10,ex-u9-quantity-11,ex-u9-quantity-12,ex-u9-quantity-13,ex-u9-quantity-14,ex-or-u9-quantity-15,ex-or-u9-quantity-16
 practice=u9-st-guided-quantity-1
-checks=u9-i-quantity-1,u9-i-quantity-2,u9-i-quantity-3,u9-i-quantity-4,u9-i-quantity-5,u9-i-quantity-6
+checks=u9-i-quantity-1,u9-i-quantity-2,u9-i-quantity-3,u9-i-quantity-4,u9-i-quantity-5,u9-i-quantity-6,u9-i-quantity-7,u9-i-quantity-8,u9-i-quantity-9
 remediation=u9-st-rem-quantity
 
 ### OBJECTIVE `obj-u9-pattern`
@@ -246,13 +246,13 @@ remediation=u9-st-rem-quantity
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f42f03aa00e8e5f4aede9ffd101db12c126bb504dd14e950661af97aba5166e7
+- Content hash: cd549546e8bbd11558ff1429b28c57e199f955c935116537881c3fe8e4a4b8f2
 
 title=Identify the admitted quantity pattern
 kind=RECOGNITION
 unitNumber=9
-instruction=u9-st-orient,u9-st-teach-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4
-examples=ex-u9-pattern-0,ex-u9-pattern-1,ex-u9-pattern-2,ex-u9-pattern-3,ex-u9-pattern-4,ex-u9-pattern-5
+instruction=u9-st-orient,u9-st-teach-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4,u9-st-teach-pattern-5
+examples=ex-u9-pattern-0,ex-u9-pattern-1,ex-u9-pattern-2,ex-u9-pattern-3,ex-u9-pattern-4,ex-u9-pattern-5,ex-u9-pattern-6
 practice=u9-st-guided-pattern-1
 checks=u9-i-pattern-1,u9-i-pattern-2,u9-i-pattern-3,u9-i-pattern-4
 remediation=u9-st-rem-pattern
@@ -1555,14 +1555,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 32210de9a67d84119ab34afede5b7a6d26de785920ae30433664e8e3b2a74c91
+- Content hash: a6a9151cf904cdb67d0721f20dea081d9e4c78418ff5272309d3f22118a0dd7d
 
 kind=CHECK
 title=Independent checks
 body=These checks use only admitted records. A miss returns to the explanation.
 dominantAction=Continue
 references=
-items=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3
+items=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3,u9-i-odindva-4,u9-i-odindva-5
 examples=
 unavailableReason=
 bookDirection=
@@ -1577,12 +1577,12 @@ remediationStepId=u9-st-rem-odindva
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 713c57e0c513ea6fdb9274934c5600bb6a7d7d7b60e9de4ac7c801327f2b98b7
+- Content hash: 5debbda6da109cdd823fd09beb83f8756d5937f606cb9b0a9e0c3c8313505523
 
 title=Choose the admitted counted form
 estimatedMinutes=12
 objectives=obj-u9-quantity
-steps=u9-st-teach-quantity-1,u9-st-guided-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9,u9-st-rem-quantity,u9-st-check-quantity
+steps=u9-st-teach-quantity-1,u9-st-guided-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9,u9-st-teach-quantity-10,u9-st-rem-quantity,u9-st-check-quantity
 
 ### STEP `u9-st-teach-quantity-1`
 
@@ -1724,11 +1724,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2cc1fef5095dfca6313042901bcb5cf27b980a9af460d3715a5789e1ef55c78a
+- Content hash: 143358078aee17c32dad5975545beae469d79c55c493bec2f776e9eaaa40e77a
 
 kind=TEACH
 title=Admitted lines
-body=сорок один год — forty-one years. пять лет — пять лет. 
+body=десять копеек — ten kopeks. сорок один год — forty-one years. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1746,11 +1746,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 14a10abb3af4e2fc4cce7284cf8a2b17be848762e778bbbc9a77c03f626558d3
+- Content hash: e9644d1844a403daf891189f1cf82001fb76bd0bba4d2802bee5218d136abe0e
 
 kind=TEACH
 title=Admitted lines
-body=двести три собаки — two hundred and three dogs. двести тринадцать собак — two hundred and thirteen dogs. 
+body=пять лет — пять лет. двести три собаки — two hundred and three dogs. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1768,11 +1768,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b9dc03cf738048747e3c9fb1ae41124cca7da8d64b44b1102ddae030d416c763
+- Content hash: 079cf2893ed197d714ebd75b3a1cef82b8e23ea6dc32d7e76b3d8f30aca8f30e
 
 kind=TEACH
 title=Admitted lines
-body=Два́дцать две копе́йки — 22 kopecks. Два́дцать пять копе́ек — 25 kopecks. 
+body=двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1790,15 +1790,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ba717bddc7524845981e2b10f48b03eef3d529983a9dc4015482ad144c0ee8e
+- Content hash: 71899c1f1d62ed08c1a528c7506a50391df9ec19f18aaf63f54870848552a5bb
 
 kind=TEACH
 title=Admitted lines
-body=стола́ — table. столо́в — table. 
+body=Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u9-quantity-14,ex-or-u9-quantity-15
+examples=ex-u9-quantity-14,ex-or-u9-quantity-15
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u9-st-teach-quantity-10`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 49c705e2e4e852556ada2b51627a03fb5161c1929740cd0ebf45f4c583f1658c
+
+kind=TEACH
+title=Admitted lines
+body=столо́в — table. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u9-quantity-16
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1834,14 +1856,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b2ea1098cc8433874d9e08198d1f1b2a1219dbf1ae8e30df5a988272cbaa208f
+- Content hash: fb3597f04f636253c01381b8a809e7b1b2e6a9ef741652800c9943677851baca
 
 kind=CHECK
 title=Independent checks
 body=These checks use only admitted records. A miss returns to the explanation.
 dominantAction=Continue
 references=
-items=u9-i-quantity-1,u9-i-quantity-2,u9-i-quantity-3,u9-i-quantity-4,u9-i-quantity-5,u9-i-quantity-6
+items=u9-i-quantity-1,u9-i-quantity-2,u9-i-quantity-3,u9-i-quantity-4,u9-i-quantity-5,u9-i-quantity-6,u9-i-quantity-7,u9-i-quantity-8,u9-i-quantity-9
 examples=
 unavailableReason=
 bookDirection=
@@ -1856,12 +1878,12 @@ remediationStepId=u9-st-rem-quantity
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 82a0b3da39f47bf902b20a467a873f24c35341a90284d94b485d8584e1c3fa51
+- Content hash: 1f6fb31423f2b31900bb29b9ffd96e54d8760d7619e311a5b0bcd972decbe1da
 
 title=Identify the admitted quantity pattern
 estimatedMinutes=12
 objectives=obj-u9-pattern
-steps=u9-st-teach-pattern-1,u9-st-guided-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4,u9-st-rem-pattern,u9-st-check-pattern
+steps=u9-st-teach-pattern-1,u9-st-guided-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4,u9-st-teach-pattern-5,u9-st-rem-pattern,u9-st-check-pattern
 
 ### STEP `u9-st-teach-pattern-1`
 
@@ -1937,11 +1959,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed8c85363c0b2193430ee27940b7b25f2b8089acd18aa8a9658a3e8a44a96925
+- Content hash: 57a4b2c22650ac20bc89b50c440369cac7c752ed367ad55d1f8a1b1596988b93
 
 kind=TEACH
 title=Admitted lines
-body=пять девушек — five girls. Я видел двух друзей — I saw two friends. 
+body=пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1959,15 +1981,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 62c063ceaad5b091f0e347c502eec3b2c1173b6619ea80c54eb1006a949257a4
+- Content hash: 5346599145188fa616670ffc4b77ecd20d31fbc4de1cb9eae412db2d487f892f
 
 kind=TEACH
 title=Admitted lines
-body=Есть оди́н кот — There is one cat. Пять рубле́й — Five roubles. 
+body=Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-u9-pattern-4,ex-u9-pattern-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u9-st-teach-pattern-5`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-pattern
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1187a6bc81559e7ac52dc52d8e42301ac33a5356dc89b4f9c39d1b93601879d6
+
+kind=TEACH
+title=Admitted lines
+body=Пять рубле́й — Five roubles. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u9-pattern-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -3172,12 +3216,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9ec5b97a48795742a105bb0c456b09f14875f6b9c3f27b7c96cec07d7329345
+- Content hash: 91a2d133f63031fb3605b868347e1f54a38313e109261989694953cb07371689
 
 kind=LEXICAL
 letterId=
-display=сорок один год
-note=forty-one years
+display=десять копеек
+note=ten kopeks
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3189,12 +3233,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ca5736633839a7caa5e25f847be0f3d8dd5f9da9b629eff6b5255cf5d0c7799
+- Content hash: 88a0a601d2d197ed8a1b27861d357b8276854aa20acfc0f25fcbca058c2f204c
 
 kind=LEXICAL
 letterId=
-display=пять лет
-note=пять лет
+display=сорок один год
+note=forty-one years
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3206,12 +3250,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f88e2afbd816b17608dc1199ff4271de062687577effe42224e20814b07e09b
+- Content hash: 458c4c58b70e7cbcf119d2b5650ae3ddec4e0a30c331474341d9e7057c56ff86
 
 kind=LEXICAL
 letterId=
-display=двести три собаки
-note=two hundred and three dogs
+display=пять лет
+note=пять лет
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3223,12 +3267,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 972a0c74d02532bdda71fdcb3b85bef420c59bd3111d0162f56b200a930e0cd5
+- Content hash: dae1c5fd90924a93b24234caef6c55ab11e189b61e2b679d5ac3c1660997a9c5
 
 kind=LEXICAL
 letterId=
-display=двести тринадцать собак
-note=two hundred and thirteen dogs
+display=двести три собаки
+note=two hundred and three dogs
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3240,12 +3284,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29edd722828c5b094b5101bd58d54ff154de5f03541fe4e535ed87104f0b3919
+- Content hash: 50516eddb93fa30eef5b428d361083078d69764ae6e70fbf7e764702885a816f
 
 kind=LEXICAL
 letterId=
-display=Два́дцать две копе́йки
-note=22 kopecks
+display=двести тринадцать собак
+note=two hundred and thirteen dogs
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3257,29 +3301,29 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d439993c9db1f06c8e80900cbd5f44999f48a872ffadf894580d89e8d5f66982
+- Content hash: e50d45ef44a61a7beadd91d7abd26b9bc460afb5d0bc1c4eae4f3daa4f9cd49c
+
+kind=LEXICAL
+letterId=
+display=Два́дцать две копе́йки
+note=22 kopecks
+objectiveId=obj-u9-quantity
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u9-quantity-14`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d67973369a75e57d3c2b67a2ffcfde7923ba269b683a9277645fc475751b6320
 
 kind=LEXICAL
 letterId=
 display=Два́дцать пять копе́ек
 note=25 kopecks
-objectiveId=obj-u9-quantity
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u9-quantity-14`
-
-- Objectives: obj-u9-quantity
-- Sessions: u9-s-quantity
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dcadfba6484b35d137520667fea21a7a03f48f5120c164e2fe4f408efee15ee
-
-kind=LEXICAL
-letterId=
-display=стола́
-note=table
 objectiveId=obj-u9-quantity
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3291,7 +3335,24 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9da99ee7f59df2bb675e1979a284b1b98ae2a1ef33435e91cfb4162105b567c8
+- Content hash: f707297a009d852f539ea9afdbb90f6e82ab03d598057a8dee0165d65865b5cf
+
+kind=LEXICAL
+letterId=
+display=стола́
+note=table
+objectiveId=obj-u9-quantity
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u9-quantity-16`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f08f2fdabe067e9bee31f2cab1b01def3a5e53b2bcfa195f66b95ad0b3c0e9db
 
 kind=LEXICAL
 letterId=
@@ -3359,12 +3420,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9114acae8c256959b226883b49e361dab4e0238d494c19c106fd660202c3a855
+- Content hash: 8c7b1e99ebaca25aadd82c84e82bb1a3c5859745966179825312889253b9ec1e
 
 kind=LEXICAL
 letterId=
-display=Я видел двух друзей
-note=I saw two friends
+display=шестнадцать рублей
+note=sixteen rubles
 objectiveId=obj-u9-pattern
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3376,12 +3437,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd71b02ab0969c10e7a0691624a179e6d952881beda65f6f29d68c75f874ce6e
+- Content hash: 2c8707b4a90957f064a06691111b22c28342b1eceed207b5cdda4e7b5d06f2a2
 
 kind=LEXICAL
 letterId=
-display=Есть оди́н кот
-note=There is one cat
+display=Я видел двух друзей
+note=I saw two friends
 objectiveId=obj-u9-pattern
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -3393,7 +3454,24 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b81111749e3c9db6c611b3ab30c80283ae36ff1d2311feb7ed369859737c7d8
+- Content hash: bf77cffe377ccdecbc8da6a1ae4f8f028f222fdd5e3e898ba72b4bd76d3fe447
+
+kind=LEXICAL
+letterId=
+display=Есть оди́н кот
+note=There is one cat
+objectiveId=obj-u9-pattern
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u9-pattern-6`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6bae6990cda8828642f5502f24c1d7ff156dce436b6d80e6c559b88d845c9f24
 
 kind=LEXICAL
 letterId=
@@ -3410,19 +3488,29 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 534781e61d8fa4b24f02e34720e9d57bf1eb0bcc723ac766661a40bb5714bce4
+- Content hash: 4cdfc49fddd11c5218244095c405ea204fd35ffbd109b683b6b154451fa81d91
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 0?
+prompt=Which admitted form matches the shown number?
 promptLetter=0
 options=ноль | оди́н
 answer=ноль
-feedback=The admitted answer for this contrast is ноль.
+feedback=Does the answer name the shown number from the same frozen table? ноль.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-cardinal-0
+cueLanguage=number
+independent=false
+answerSourceIds=prov-ex-u9-cardinal-0-ru
+distractorSourceIds= | prov-ex-u9-cardinal-1-ru
+distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=ноль | оди́н
 
 ### GUIDED_PRACTICE `u9-g-teens-0`
 
@@ -3432,19 +3520,29 @@ distractorRationales= | This admitted form is a different number in the same tab
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 611eaf132a26a9db3826d3d160499f943c98726a58ff87803abecdd85c06272b
+- Content hash: ac5ba5835e116f0713a54c5fa96bd591cc4d94521431fdbf34312cf449941405
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 11?
+prompt=Which admitted form matches the shown number?
 promptLetter=11
 options=оди́ннадцать | двена́дцать
 answer=оди́ннадцать
-feedback=The admitted answer for this contrast is оди́ннадцать.
+feedback=Does the answer name the shown number from the same frozen table? оди́ннадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | This admitted form is a different teen. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-teens-0
+cueLanguage=number
+independent=false
+answerSourceIds=prov-ex-u9-teens-0-ru
+distractorSourceIds= | prov-ex-u9-teens-1-ru
+distractorDifference= | This admitted form is a different teen. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=оди́ннадцать | двена́дцать
 
 ### GUIDED_PRACTICE `u9-g-tens-0`
 
@@ -3454,19 +3552,29 @@ distractorRationales= | This admitted form is a different teen.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e7f2f945d4fd779dde9b1c1c75226e500ac9fc9e26a1db370a67120fc84b1ec
+- Content hash: e0ab7e426e9d82afa55290dff136cac3b65337eb6e2d369696bbd0ce11884ddd
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 30?
+prompt=Which admitted form matches the shown number?
 promptLetter=30
 options=три́дцать | со́рок
 answer=три́дцать
-feedback=The admitted answer for this contrast is три́дцать.
+feedback=Does the answer name the shown number from the same frozen table? три́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-tens-0
+cueLanguage=number
+independent=false
+answerSourceIds=prov-ex-u9-tens-0-ru
+distractorSourceIds= | prov-ex-u9-tens-1-ru
+distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=три́дцать | со́рок
 
 ### GUIDED_PRACTICE `u9-g-hundreds-0`
 
@@ -3476,19 +3584,29 @@ distractorRationales= | This admitted form is a different ten.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6a99aa88518c66d57a64b644c4af47a188611f51cb05b998801e77f0ea56301
+- Content hash: 2687ff7149766d11f876839672959c1d683cad554d9d21cf05e65f6dad48d576
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 100?
+prompt=Which admitted form matches the shown number?
 promptLetter=100
 options=сто | две́сти
 answer=сто
-feedback=The admitted answer for this contrast is сто.
+feedback=Does the answer name the shown number from the same frozen table? сто.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different hundred.
+distractorRationales= | This admitted form is a different hundred. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-hundreds-0
+cueLanguage=number
+independent=false
+answerSourceIds=prov-ex-u9-hundreds-0-ru
+distractorSourceIds= | prov-ex-u9-hundreds-1-ru
+distractorDifference= | This admitted form is a different hundred. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=сто | две́сти
 
 ### GUIDED_PRACTICE `u9-g-thousands-0`
 
@@ -3498,19 +3616,29 @@ distractorRationales= | This admitted form is a different hundred.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb577db774181e9a6204e67384f40bcfcf6c58d828bb63492ce74d451ecea569
+- Content hash: 8968e14d289546e894eb8ccc777b88d8d367dba4e0bbee5168ef160d00660b2b
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 21?
+prompt=Which admitted form matches the shown number?
 promptLetter=21
 options=два́дцать оди́н | два́дцать
 answer=два́дцать оди́н
-feedback=The admitted answer for this contrast is два́дцать оди́н.
+feedback=Does the answer name the shown number from the same frozen table? два́дцать оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the ten, not the composed number.
+distractorRationales= | This admitted form is only the ten, not the composed number. The contrast is the shown number.
+testedFeature=COMPOUND_21
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-thousands-0
+cueLanguage=number
+independent=false
+answerSourceIds=prov-ex-u9-thousands-1-ru
+distractorSourceIds= | prov-u9-thousands-x-0
+distractorDifference= | This admitted form is only the ten, not the composed number. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=два́дцать оди́н | два́дцать
 
 ### GUIDED_PRACTICE `u9-g-odindva-0`
 
@@ -3520,19 +3648,29 @@ distractorRationales= | This admitted form is only the ten, not the composed num
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9d9fc3544dd99feb5441859a9945dc7bf696e0cb10b6616fb3a96c5158b7fdb
+- Content hash: 937470f3c06ba16e81c08d31cc5586de03351b0156ad9a2f79b19ee7bab5c659
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for one boy?
-promptLetter=one boy
-options=один мальчик | одна девушка
-answer=один мальчик
-feedback=The admitted answer for this contrast is один мальчик.
+prompt=Which admitted line agrees with the shown word?
+promptLetter=джинсы
+options=одни джинсы | один мальчик
+answer=одни джинсы
+feedback=Does the answer agree with the shown word? одни джинсы.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other one-item example.
+distractorRationales= | This line agrees with another word, not the shown word.
+testedFeature=ODIN_PLURAL
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u9-odindva-3-ru
+distractorSourceIds= | prov-ex-u9-odindva-0-ru
+distractorDifference= | This line agrees with another word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=одни джинсы | один мальчик
 
 ### GUIDED_PRACTICE `u9-g-quantity-0`
 
@@ -3542,19 +3680,29 @@ distractorRationales= | This admitted line is the other one-item example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fc8e2f3b82d73a6c35fa2f94431d7a9b8397dff7f111f1b9f57baf9b4e0561d
+- Content hash: 441682e52dd25127e75c0e2f6b52f1457b52116e1681bc09c00867c558ff7ac4
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line follows the one-item pattern?
-promptLetter=1 -> nominative
-options=один час | два часа | пять часов
-answer=один час
-feedback=The admitted answer for this contrast is один час.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=один час
+options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+answer=1 -> nominative
+feedback=Does this admitted rule classify the shown line? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the two-item counted example. | This admitted line is the five-and-more counted example.
+distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=FINAL_DIGIT_ONE
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u9-quantity-x-0
+distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 
 ### GUIDED_PRACTICE `u9-g-pattern-0`
 
@@ -3564,7 +3712,7 @@ distractorRationales= | This admitted line is the two-item counted example. | Th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b39d9fb44cdbf55e98bbd8e35992c534184b5ab8838297e971332a2168bc6f31
+- Content hash: e65835c6dc5c4381ceb27f54254eb1395182a34fde80fc665cdb2e0de9f6d04d
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -3572,11 +3720,21 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=один час
 options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 answer=1 -> nominative
-feedback=The admitted answer for this contrast is 1 -> nominative.
+feedback=Does this admitted rule classify the shown line? 1 -> nominative.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
+distractorRationales= | This admitted rule is the two-to-four line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+testedFeature=GOVERNED_FORM
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-pattern-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-u9-pattern-x-0
+distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-2
+distractorDifference= | This admitted rule is the two-to-four line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-1`
 
@@ -3586,19 +3744,29 @@ distractorRationales= | This admitted rule is the two-to-four line. | This admit
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 649e4e719db8bbca06115b6d32264481af90d22be048766b745824dd24cc95ed
+- Content hash: f9eb7a6d266d28dd82e5e86683d0e6020bafea8e2800d0142a7f4655de589682
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 1?
+prompt=Which admitted form matches the shown number?
 promptLetter=1
 options=оди́н | два
 answer=оди́н
-feedback=The admitted answer for this contrast is оди́н.
+feedback=Does the answer name the shown number from the same frozen table? оди́н.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-cardinal-1
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-cardinal-1-ru
+distractorSourceIds= | prov-ex-u9-cardinal-2-ru
+distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=оди́н | два
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-2`
 
@@ -3608,19 +3776,29 @@ distractorRationales= | This admitted form is a different number in the same tab
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d424787040df09910468ab7b750db53d440a5678f3bbb2c5a2164f7ad4749987
+- Content hash: 4dd2d60ff466127623618d1eb2ce2bb635473fce5a6cb881ab9e9074c16a9565
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 5?
+prompt=Which admitted form matches the shown number?
 promptLetter=5
 options=пять | шесть
 answer=пять
-feedback=The admitted answer for this contrast is пять.
+feedback=Does the answer name the shown number from the same frozen table? пять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-cardinal-2
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-cardinal-5-ru
+distractorSourceIds= | prov-ex-u9-cardinal-6-ru
+distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=пять | шесть
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-3`
 
@@ -3630,19 +3808,29 @@ distractorRationales= | This admitted form is a different number in the same tab
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7ef49a837ecaf2c3f7b3e508ff0e4c7362bd236a7178a81ea4912b2bf4f43e3
+- Content hash: 719bced1a75ef30309300d37608190e0c9995b63dd3f39733fdc6d22227927b7
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 10?
+prompt=Which admitted form matches the shown number?
 promptLetter=10
 options=де́сять | де́вять
 answer=де́сять
-feedback=The admitted answer for this contrast is де́сять.
+feedback=Does the answer name the shown number from the same frozen table? де́сять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-cardinal-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-cardinal-10-ru
+distractorSourceIds= | prov-ex-u9-cardinal-9-ru
+distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=де́сять | де́вять
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-4`
 
@@ -3652,19 +3840,29 @@ distractorRationales= | This admitted form is a different number in the same tab
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b50b04c652beb85c6507b0d16c22c5e2d62ed6ac38e6535e5509f4b9c9080746
+- Content hash: a0d3e203fc2426a2ebce7558afa6a108d527ed17f69acbad4e41d8338547f8e2
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 4?
+prompt=Which admitted form matches the shown number?
 promptLetter=4
 options=четы́ре | три
 answer=четы́ре
-feedback=The admitted answer for this contrast is четы́ре.
+feedback=Does the answer name the shown number from the same frozen table? четы́ре.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-cardinal-4
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-cardinal-4-ru
+distractorSourceIds= | prov-ex-u9-cardinal-3-ru
+distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=четы́ре | три
 
 ### INDEPENDENT_CHECK `u9-i-teens-1`
 
@@ -3674,19 +3872,29 @@ distractorRationales= | This admitted form is a different number in the same tab
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5c5e379656789b5beff2ae63815da1afceee2232d5e8f466fd37d11fb499e54
+- Content hash: e0158c7a1a6cefd58033df0c09a55213b911e468b03cd6b4087d0cf9b835b150
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 14?
+prompt=Which admitted form matches the shown number?
 promptLetter=14
 options=четы́рнадцать | пятна́дцать
 answer=четы́рнадцать
-feedback=The admitted answer for this contrast is четы́рнадцать.
+feedback=Does the answer name the shown number from the same frozen table? четы́рнадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | This admitted form is a different teen. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-teens-1
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-teens-3-ru
+distractorSourceIds= | prov-ex-u9-teens-4-ru
+distractorDifference= | This admitted form is a different teen. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=четы́рнадцать | пятна́дцать
 
 ### INDEPENDENT_CHECK `u9-i-teens-2`
 
@@ -3696,19 +3904,29 @@ distractorRationales= | This admitted form is a different teen.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa72c236ffd77498e401fd237409228351c6d0a0907bfff2be8cb58226aaad72
+- Content hash: 95bade2fa1e32a814517c9bb03d07a3225756c3669c92e6dc6bb4ba5b9e9ab8f
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 19?
+prompt=Which admitted form matches the shown number?
 promptLetter=19
 options=девятна́дцать | два́дцать
 answer=девятна́дцать
-feedback=The admitted answer for this contrast is девятна́дцать.
+feedback=Does the answer name the shown number from the same frozen table? девятна́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the following ten, not the teen.
+distractorRationales= | This admitted form is the following ten, not the teen. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-teens-2
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-teens-8-ru
+distractorSourceIds= | prov-ex-u9-teens-9-ru
+distractorDifference= | This admitted form is the following ten, not the teen. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=девятна́дцать | два́дцать
 
 ### INDEPENDENT_CHECK `u9-i-teens-3`
 
@@ -3718,19 +3936,29 @@ distractorRationales= | This admitted form is the following ten, not the teen.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57e62c0bb6a21fe90b48874ab3d0305c726b719b96499f40b31dcc6a5fabb55a
+- Content hash: 7a872a41e33ac927e9ba31fcb2d1b9cb18b9f10e21b4eb52ecae9f610e0c9777
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 12?
+prompt=Which admitted form matches the shown number?
 promptLetter=12
 options=двена́дцать | два́дцать
 answer=двена́дцать
-feedback=The admitted answer for this contrast is двена́дцать.
+feedback=Does the answer name the shown number from the same frozen table? двена́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the teen.
+distractorRationales= | This admitted form is the ten, not the teen. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-teens-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-teens-1-ru
+distractorSourceIds= | prov-ex-u9-teens-9-ru
+distractorDifference= | This admitted form is the ten, not the teen. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=двена́дцать | два́дцать
 
 ### INDEPENDENT_CHECK `u9-i-tens-1`
 
@@ -3740,19 +3968,29 @@ distractorRationales= | This admitted form is the ten, not the teen.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a32fe0249b918ce11b9e0a2a1385215aae57bc3d4a81fd580be882925f5ca4a3
+- Content hash: 99d08abd36d69d5a93e60bc930d885fbae5f0d0f068f01ec04a02ce850c72274
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 50?
+prompt=Which admitted form matches the shown number?
 promptLetter=50
 options=пятьдеся́т | шестьдеся́т
 answer=пятьдеся́т
-feedback=The admitted answer for this contrast is пятьдеся́т.
+feedback=Does the answer name the shown number from the same frozen table? пятьдеся́т.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-tens-1
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-tens-2-ru
+distractorSourceIds= | prov-ex-u9-tens-3-ru
+distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=пятьдеся́т | шестьдеся́т
 
 ### INDEPENDENT_CHECK `u9-i-tens-2`
 
@@ -3762,19 +4000,29 @@ distractorRationales= | This admitted form is a different ten.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca5c687c7d0f2e4d81578924aba5367581b89828b6c8c62f955631d07c6148df
+- Content hash: 0812550cb799915847ce145994282847d8183e16b1ba4b5d61410ef154af9be4
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 90?
+prompt=Which admitted form matches the shown number?
 promptLetter=90
 options=девяно́сто | во́семьдесят
 answer=девяно́сто
-feedback=The admitted answer for this contrast is девяно́сто.
+feedback=Does the answer name the shown number from the same frozen table? девяно́сто.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-tens-2
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-tens-6-ru
+distractorSourceIds= | prov-ex-u9-tens-5-ru
+distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=девяно́сто | во́семьдесят
 
 ### INDEPENDENT_CHECK `u9-i-tens-3`
 
@@ -3784,19 +4032,29 @@ distractorRationales= | This admitted form is a different ten.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20209f3e566e51a237f83552d74da2026ef5fc3fd3f891f2d3dbc8d35305c6c3
+- Content hash: 975e51f6f90d33fd12891843e8b3e0520f251df1491b0dfe37648dc71391b8ed
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 20?
+prompt=Which admitted form matches the shown number?
 promptLetter=20
 options=два́дцать | двена́дцать
 answer=два́дцать
-feedback=The admitted answer for this contrast is два́дцать.
+feedback=Does the answer name the shown number from the same frozen table? два́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the teen, not the ten.
+distractorRationales= | This admitted form is the teen, not the ten. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-tens-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-tens-7-ru
+distractorSourceIds= | prov-u9-tens-x-0
+distractorDifference= | This admitted form is the teen, not the ten. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=два́дцать | двена́дцать
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-1`
 
@@ -3806,19 +4064,29 @@ distractorRationales= | This admitted form is the teen, not the ten.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f41c527738d5dd85d2f6e0e6311e51556ffc87ca30d4f1112a9770bccacf13c7
+- Content hash: e1e743f101b5a97cc1fcbb6b5e995b46fa1d6c2d64f6aa5b393d72b04d451e94
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 300?
+prompt=Which admitted form matches the shown number?
 promptLetter=300
 options=три́ста | три́дцать
 answer=три́ста
-feedback=The admitted answer for this contrast is три́ста.
+feedback=Does the answer name the shown number from the same frozen table? три́ста.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-hundreds-1
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-hundreds-2-ru
+distractorSourceIds= | prov-u9-hundreds-x-0
+distractorDifference= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=три́ста | три́дцать
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-2`
 
@@ -3828,19 +4096,29 @@ distractorRationales= | This admitted form is the ten, not the hundred.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f899d4d75722b09bcb08426088a2339e63af6b3ecac25fc7c0e5ca3950697c4b
+- Content hash: 854567b19ce7509277a4e6e05c33629e8563963dd60acd8f798ed9aafd2cc8d0
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 500?
+prompt=Which admitted form matches the shown number?
 promptLetter=500
 options=пятьсо́т | пять
 answer=пятьсо́т
-feedback=The admitted answer for this contrast is пятьсо́т.
+feedback=Does the answer name the shown number from the same frozen table? пятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the one-digit number, not the hundred.
+distractorRationales= | This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-hundreds-2
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-hundreds-4-ru
+distractorSourceIds= | prov-u9-hundreds-x-1
+distractorDifference= | This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=пятьсо́т | пять
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-3`
 
@@ -3850,19 +4128,29 @@ distractorRationales= | This admitted form is the one-digit number, not the hund
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0113665b09ce32b0175f12350eacee7a905d41912cec16329373cc7284e09010
+- Content hash: d19ce48fafc9c7c2171af316256d4e508fa334d1bf648578eab0629d77a05182
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 900?
+prompt=Which admitted form matches the shown number?
 promptLetter=900
 options=девятьсо́т | девяно́сто
 answer=девятьсо́т
-feedback=The admitted answer for this contrast is девятьсо́т.
+feedback=Does the answer name the shown number from the same frozen table? девятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+testedFeature=GOVERNED_FORM
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-hundreds-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-hundreds-8-ru
+distractorSourceIds= | prov-u9-hundreds-x-2
+distractorDifference= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=девятьсо́т | девяно́сто
 
 ### INDEPENDENT_CHECK `u9-i-thousands-1`
 
@@ -3872,19 +4160,29 @@ distractorRationales= | This admitted form is the ten, not the hundred.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e01300a5cfc8182cef59e9f23a6881fdf27c1ce9349891ec9fb316176108e63b
+- Content hash: 0eb40f9008722008df819159eb5da5426c481eacd0262966af0ab30f34a11ab3
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 101?
-promptLetter=101
+prompt=Which admitted form is the composition of the shown form?
+promptLetter=сто
 options=сто оди́н | сто
 answer=сто оди́н
-feedback=The admitted answer for this contrast is сто оди́н.
+feedback=Does the answer follow the counted pattern of the shown line? сто оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | This form is only the hundred, not the composed pattern of the shown form.
+testedFeature=HUNDREDS_COMPOSITION
+evidenceMode=COUNTED_PATTERN
+contrastSetId=u9-thousands-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-thousands-2-ru
+distractorSourceIds= | prov-u9-thousands-x-1
+distractorDifference= | This form is only the hundred, not the composed pattern of the shown form.
+whyAnswerDemonstratesObjective=Does the answer follow the counted pattern of the shown line?
+contrastMembers=сто оди́н | сто
 
 ### INDEPENDENT_CHECK `u9-i-thousands-2`
 
@@ -3894,19 +4192,29 @@ distractorRationales= | This admitted form is only the hundred, not the composed
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e9aecebc6594b8d4cdce2ce2f4928a1ac4bdd0a70cdc33e30a7910aea44da4c
+- Content hash: 4155fb97f4bff55f4c4e471f5243fc43f36f255ae32e65acc81178dd6f589d3a
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 215?
+prompt=Which admitted form matches the shown number?
 promptLetter=215
 options=две́сти пятна́дцать | две́сти
 answer=две́сти пятна́дцать
-feedback=The admitted answer for this contrast is две́сти пятна́дцать.
+feedback=Does the answer name the shown number from the same frozen table? две́сти пятна́дцать.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | This admitted form is only the hundred, not the composed number. The contrast is the shown number.
+testedFeature=HUNDREDS_COMPOSITION
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-thousands-2
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-thousands-3-ru
+distractorSourceIds= | prov-u9-thousands-x-2
+distractorDifference= | This admitted form is only the hundred, not the composed number. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=две́сти пятна́дцать | две́сти
 
 ### INDEPENDENT_CHECK `u9-i-thousands-3`
 
@@ -3916,19 +4224,29 @@ distractorRationales= | This admitted form is only the hundred, not the composed
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bd46230003ae801475b356faa084757c65fef21b2392e5f8dda2483dd39e66e
+- Content hash: 64756c07ff525c6cd3daf7cace95fb79054c8935bb86d291175de00348d587c1
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 1,984?
+prompt=Which admitted form matches the shown number?
 promptLetter=1,984
 options=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 answer=ты́сяча девятьсо́т во́семьдесят четы́ре
-feedback=The admitted answer for this contrast is ты́сяча девятьсо́т во́семьдесят четы́ре.
+feedback=Does the answer name the shown number from the same frozen table? ты́сяча девятьсо́т во́семьдесят четы́ре.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the thousand, not the composed number.
+distractorRationales= | This admitted form is only the thousand, not the composed number. The contrast is the shown number.
+testedFeature=THOUSANDS_COMPOSITION
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-thousands-3
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-thousands-5-ru
+distractorSourceIds= | prov-ex-u9-thousands-0-ru
+distractorDifference= | This admitted form is only the thousand, not the composed number. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 
 ### INDEPENDENT_CHECK `u9-i-thousands-4`
 
@@ -3938,19 +4256,29 @@ distractorRationales= | This admitted form is only the thousand, not the compose
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e0808b88676c51be750bdb11e3b380f53de8a77805695c0ee3a3a6e7a56871c
+- Content hash: fe6b88a0290a5a503268d6a6f0580bc549008f308803b92e3984a930bd0c39dc
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is recorded for 2,000/3,000/4,000?
+prompt=Which admitted form matches the shown number?
 promptLetter=2,000/3,000/4,000
 options=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 answer=две/три/четы́ре ты́сячи
-feedback=The admitted answer for this contrast is две/три/четы́ре ты́сячи.
+feedback=Does the answer name the shown number from the same frozen table? две/три/четы́ре ты́сячи.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other thousands band.
+distractorRationales= | This admitted form is the other thousands band. The contrast is the shown number.
+testedFeature=THOUSANDS_COMPOSITION
+evidenceMode=NUMBER_FORM
+contrastSetId=u9-thousands-4
+cueLanguage=number
+independent=true
+answerSourceIds=prov-ex-u9-thousands-6-ru
+distractorSourceIds= | prov-ex-u9-thousands-7-ru
+distractorDifference= | This admitted form is the other thousands band. The contrast is the shown number.
+whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+contrastMembers=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 
 ### INDEPENDENT_CHECK `u9-i-odindva-1`
 
@@ -3960,19 +4288,29 @@ distractorRationales= | This admitted form is the other thousands band.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1949611254c87e32e1bc704246b5e1ffbef0f19ce1a1188d81247ee2e00ead0f
+- Content hash: b768f9861724e7003dff6c8c0c6888ed21d4c9e10c5a7af07547f9880fc1fa77
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for one girl?
-promptLetter=one girl
-options=одна девушка | одно животное
-answer=одна девушка
-feedback=The admitted answer for this contrast is одна девушка.
+prompt=Which admitted line agrees with the shown word?
+promptLetter=мальчик
+options=один мальчик | одна девушка
+answer=один мальчик
+feedback=Does the answer agree with the shown word? один мальчик.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other one-item example.
+distractorRationales= | This line agrees with another word, not the shown word.
+testedFeature=ODIN_MASCULINE
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-odindva-0-ru
+distractorSourceIds= | prov-ex-u9-odindva-1-ru
+distractorDifference= | This line agrees with another word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=один мальчик | одна девушка
 
 ### INDEPENDENT_CHECK `u9-i-odindva-2`
 
@@ -3982,19 +4320,29 @@ distractorRationales= | This admitted line is the other one-item example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 521b0c834ca3c5c7ca8999074406fc5040a59b06715dec43410e96d6a2a99420
+- Content hash: de2829674dda8f71cb7f7fd340340909a978b745982b06066439d674f78e3b49
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is recorded for one animal?
-promptLetter=one animal
-options=одно животное | одни джинсы
-answer=одно животное
-feedback=The admitted answer for this contrast is одно животное.
+prompt=Which admitted line agrees with the shown word?
+promptLetter=девушка
+options=одна девушка | один мальчик
+answer=одна девушка
+feedback=Does the answer agree with the shown word? одна девушка.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the other one-item example.
+distractorRationales= | This line agrees with another word, not the shown word.
+testedFeature=ODIN_FEMININE
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-odindva-1-ru
+distractorSourceIds= | prov-ex-u9-odindva-0-ru
+distractorDifference= | This line agrees with another word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=одна девушка | один мальчик
 
 ### INDEPENDENT_CHECK `u9-i-odindva-3`
 
@@ -4004,19 +4352,93 @@ distractorRationales= | This admitted line is the other one-item example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0b529b909a333fd87056c5425419b07581202a7853a0e101c06cefa2527340c
+- Content hash: 3955d43fec5f2a0a026df0098c826191e0501c3244f6ac7d83c08bfbcebad184
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is recorded for the other form of two?
-promptLetter=2
-options=две | два
-answer=две
-feedback=The admitted answer for this contrast is две.
+prompt=Which admitted line agrees with the shown word?
+promptLetter=животное
+options=одно животное | одни джинсы
+answer=одно животное
+feedback=Does the answer agree with the shown word? одно животное.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other form on the same frozen line.
+distractorRationales= | This line agrees with another word, not the shown word.
+testedFeature=ODIN_NEUTER
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-odindva-2-ru
+distractorSourceIds= | prov-ex-u9-odindva-3-ru
+distractorDifference= | This line agrees with another word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=одно животное | одни джинсы
+
+### INDEPENDENT_CHECK `u9-i-odindva-4`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d413f37938cec7131385d2d14523d4277e35641141be3bdf8e8a6c01bbbad152
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted line agrees with the shown word?
+promptLetter=джинсы
+options=одни джинсы | одно животное
+answer=одни джинсы
+feedback=Does the answer agree with the shown word? одни джинсы.
+objectiveId=obj-u9-odindva
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This line agrees with another word, not the shown word.
+testedFeature=ODIN_PLURAL
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-odindva-3-ru
+distractorSourceIds= | prov-ex-u9-odindva-2-ru
+distractorDifference= | This line agrees with another word, not the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=одни джинсы | одно животное
+
+### INDEPENDENT_CHECK `u9-i-odindva-5`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 09484755c5a925a279ff4bca997265206314ff61ace6e81eb6b6932f7af2e244
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted form agrees with the shown word?
+promptLetter=девушка
+options=две | два
+answer=две
+feedback=Does the answer agree with the shown word? две.
+objectiveId=obj-u9-odindva
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This form is the other agreement row of the same word, not the row of the shown word.
+testedFeature=DVA_DVE
+evidenceMode=AGREEMENT_PAIR
+contrastSetId=u9-odindva-5
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u9-odindva-7-ru
+distractorSourceIds= | prov-ex-or-u9-odindva-9
+distractorDifference= | This form is the other agreement row of the same word, not the row of the shown word.
+whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+contrastMembers=две | два
 
 ### INDEPENDENT_CHECK `u9-i-quantity-1`
 
@@ -4026,19 +4448,29 @@ distractorRationales= | This admitted form is the other form on the same frozen 
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a9515197f3844e908ed87d086a2215875e1d5763483aa4517a31361022a4676
+- Content hash: bd30fe8efe4f2e0078bef84214f59fb04d192e9376f302cf8379037546e3e772
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line follows the two-to-four pattern?
-promptLetter=2, 3, 4 -> genitive singular
-options=два часа | один час | пять часов
-answer=два часа
-feedback=The admitted answer for this contrast is два часа.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=двадцать два часа
+options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
+answer=2, 3, 4 -> genitive singular
+feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the one-item counted example. | This admitted line is the five-and-more counted example.
+distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=COMPOUND_22
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-1
+distractorSourceIds= | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-quantity-2`
 
@@ -4048,19 +4480,29 @@ distractorRationales= | This admitted line is the one-item counted example. | Th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dee873a82093ee67d00d18acafcfb5e7173b1278f2d3f30038cdea7ba97a6270
+- Content hash: 31944aae85c2f1055c5aab5a42a30f74bd9fee58ed25fa502dc3462494e01575
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line follows the five-and-more pattern?
-promptLetter=5 and more -> genitive plural
-options=пять часов | два часа
-answer=пять часов
-feedback=The admitted answer for this contrast is пять часов.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=пять часов
+options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+answer=5 and more -> genitive plural
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the two-item counted example.
+distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
+testedFeature=FINAL_DIGIT_FIVE_PLUS
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-2
+distractorSourceIds= | prov-u9-quantity-x-1
+distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 
 ### INDEPENDENT_CHECK `u9-i-quantity-3`
 
@@ -4070,19 +4512,29 @@ distractorRationales= | This admitted line is the two-item counted example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dee8cf1c3e2c412fd7bf8fb6ddbc440633b064a0ae58fe13e0791d540fe6130f
+- Content hash: 8518c73399f65b875e6c15be59ffb9952c438bc1fe52a38214b055b02e91b70b
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line follows the shown final-one cardinal?
-promptLetter=два́дцать оди́н
-options=двадцать один час | двадцать два часа | пять часов
-answer=двадцать один час
-feedback=The admitted answer for this contrast is двадцать один час.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=двадцать один час
+options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+answer=1 -> nominative
+feedback=Does this admitted rule classify the shown line? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the final-two counted example. | This admitted line is the five-and-more counted example.
+distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=COMPOUND_21
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-0
+distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-quantity-4`
 
@@ -4092,19 +4544,29 @@ distractorRationales= | This admitted line is the final-two counted example. | T
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e539025306718e7e72f35b1f24c47d9ebe1a976d405f888653b233cfed188b2
+- Content hash: 4cc16f540799e4642af68659140c6a8cf5bd6261f9d92f7b84f5ec105f14dcd1
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line follows the teen span?
-promptLetter=11, 12, 13, 14
-options=шестнадцать рублей | две девушки
-answer=шестнадцать рублей
-feedback=The admitted answer for this contrast is шестнадцать рублей.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=шестнадцать рублей
+options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+answer=5 and more -> genitive plural
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the two-item example, and the teen span uses the last rule.
+distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+testedFeature=TEEN_VALUE
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-2
+distractorSourceIds= | prov-u9-quantity-x-1
+distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 
 ### INDEPENDENT_CHECK `u9-i-quantity-5`
 
@@ -4114,19 +4576,29 @@ distractorRationales= | This admitted line is the two-item example, and the teen
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b36d0799e4ff886ba02aa740d262c22625b5498a54d95d6cb26483ff8d5cad2
+- Content hash: 90bb2b1ddeb73417229a8b23460af8c63dcb442643340bdb8f5caed19158e16c
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line is recorded for forty-one years?
-promptLetter=forty-one years
-options=сорок один год | пять лет
-answer=сорок один год
-feedback=The admitted answer for this contrast is сорок один год.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=сорок один год
+options=1 -> nominative | 5 and more -> genitive plural
+answer=1 -> nominative
+feedback=Does this admitted rule classify the shown line? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line is the five-and-more year example.
+distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=FINAL_DIGIT_ONE
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-5
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-0
+distractorSourceIds= | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=1 -> nominative | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-quantity-6`
 
@@ -4136,19 +4608,125 @@ distractorRationales= | This admitted line is the five-and-more year example.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 956727efe1af82888f45f19552af70832cc4277481f6ab1ebc3bdc6132ee2cb8
+- Content hash: 5f8052b568a92d37ed8aed13a6692adc35583ebdc7cff8ffe6ce4956e4a3e7d9
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted counted line is recorded for two hundred and thirteen dogs?
-promptLetter=two hundred and thirteen dogs
-options=двести тринадцать собак | двести три собаки
-answer=двести тринадцать собак
-feedback=The admitted answer for this contrast is двести тринадцать собак.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=двести тринадцать собак
+options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+answer=5 and more -> genitive plural
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted line uses different final digits.
+distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+testedFeature=TEENS_OVERRIDE
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-6
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-2
+distractorSourceIds= | prov-u9-quantity-x-1
+distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+
+### INDEPENDENT_CHECK `u9-i-quantity-7`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 666bed3574a8eda2f53af3326f67407615f840d1c62bd4a10de14b6d15bf8953
+
+kind=NUMBER_FORM_SELECTION
+language=en
+prompt=Which admitted rule classifies the shown line?
+promptLetter=десять копеек
+options=5 and more -> genitive plural | 1 -> nominative
+answer=5 and more -> genitive plural
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+objectiveId=obj-u9-quantity
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line.
+testedFeature=FINAL_ZERO_OR_TEN
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-7
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-2
+distractorSourceIds= | prov-u9-quantity-x-0
+distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 1 -> nominative
+
+### INDEPENDENT_CHECK `u9-i-quantity-8`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 538a15dfe71294c6889f31b853fb79aa6c2582a82413e9d1f37cbfa3d925565b
+
+kind=NUMBER_FORM_SELECTION
+language=en
+prompt=Which admitted rule classifies the shown line?
+promptLetter=Два́дцать пять копе́ек
+options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+answer=5 and more -> genitive plural
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+objectiveId=obj-u9-quantity
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
+testedFeature=FINAL_DIGIT_FIVE_PLUS
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-8
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-2
+distractorSourceIds= | prov-u9-quantity-x-1
+distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+
+### INDEPENDENT_CHECK `u9-i-quantity-9`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 046371e4d9f1eb284c733fddac3a0a934e9e5e46734ded168936c7a5fca885bf
+
+kind=NUMBER_FORM_SELECTION
+language=en
+prompt=Which admitted rule classifies the shown line?
+promptLetter=двести три собаки
+options=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+answer=2, 3, 4 -> genitive singular
+feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
+objectiveId=obj-u9-quantity
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=HUNDREDS_COMPOSITION
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-quantity-9
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-quantity-x-1
+distractorSourceIds= | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-pattern-1`
 
@@ -4158,7 +4736,7 @@ distractorRationales= | This admitted line uses different final digits.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d2af6dc823415f999de3476b0da75ad664255a27096b6b53fc16566733cee73
+- Content hash: ef1fa03c5f334b0c23cf81ec1ba78d22c708ee41585a474584b5d1abef134811
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4166,11 +4744,21 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=три кошки
 options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
 answer=2, 3, 4 -> genitive singular
-feedback=The admitted answer for this contrast is 2, 3, 4 -> genitive singular.
+feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
+distractorRationales= | This admitted rule is the one-item line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+testedFeature=GOVERNED_FORM
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-pattern-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-pattern-x-1
+distractorSourceIds= | prov-u9-pattern-x-0 | prov-u9-pattern-x-2
+distractorDifference= | This admitted rule is the one-item line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
 
 ### INDEPENDENT_CHECK `u9-i-pattern-2`
 
@@ -4180,7 +4768,7 @@ distractorRationales= | This admitted rule is the one-item line. | This admitted
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96c29f87afca6378a113331d9703fb306c7efa63788642f3607d729cca0166d4
+- Content hash: 3ce9bcc76903d730fc177bf266557bdf42e6bb318e4207d8700baf9fbbd253e1
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4188,11 +4776,21 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=пять девушек
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 answer=5 and more -> genitive plural
-feedback=The admitted answer for this contrast is 5 and more -> genitive plural.
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line.
+distractorRationales= | This admitted rule is the two-to-four line. The contrast is the shown line.
+testedFeature=GOVERNED_FORM
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-pattern-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-pattern-x-2
+distractorSourceIds= | prov-u9-pattern-x-1
+distractorDifference= | This admitted rule is the two-to-four line. The contrast is the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 
 ### INDEPENDENT_CHECK `u9-i-pattern-3`
 
@@ -4202,19 +4800,29 @@ distractorRationales= | This admitted rule is the two-to-four line.
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 954244b1e50218ec16aa40222d3c400e2c402a0086799c0b89d4a0983a836fcb
+- Content hash: 2b1e3afbc6df57b58ab31cfea6b3e2578f3521b98b601df367450e4dbc1597cb
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted rule applies to 11, 12, 13, and 14?
-promptLetter=11, 12, 13, 14
+prompt=Which admitted rule classifies the shown line?
+promptLetter=шестнадцать рублей
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
 answer=5 and more -> genitive plural
-feedback=The admitted answer for this contrast is 5 and more -> genitive plural.
+feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line, and the frozen teen span applies the last rule. | This admitted rule is the one-item line, and the frozen teen span applies the last rule.
+distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
+testedFeature=TEENS_OVERRIDE
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-pattern-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-pattern-x-2
+distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-0
+distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
 
 ### INDEPENDENT_CHECK `u9-i-pattern-4`
 
@@ -4224,7 +4832,7 @@ distractorRationales= | This admitted rule is the two-to-four line, and the froz
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63765d1553199de511d5d84e9d500b9c2752ffee048641f17350628a54fa0d2d
+- Content hash: c96ab62de2856cfdde7460603b72e1b77e088ec34ffd8548182dcafe947b4a5a
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4232,11 +4840,21 @@ prompt=Which admitted scope sentence covers the shown line?
 promptLetter=Я видел двух друзей
 options=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
 answer=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
-feedback=The admitted answer for this contrast is When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
+feedback=Does this admitted rule classify the shown line? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted sentence is the other scope in the frozen paragraph.
+distractorRationales= | This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
+testedFeature=GOVERNED_FORM
+evidenceMode=RULE_CLASSIFICATION
+contrastSetId=u9-pattern-4
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u9-pattern-x-3
+distractorSourceIds= | prov-u9-pattern-x-4
+distractorDifference= | This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
+whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+contrastMembers=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -4372,7 +4990,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u9-quantity-14`
+### PROVENANCE `prov-ex-or-u9-quantity-15`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -4380,7 +4998,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd9dec5e3541e36d6a5b0db5be465a5cd8ff685041db182d1291bcf636a3fcd2
+- Content hash: e05f3464a5f25db7680dc43d272bab33682493155693eebdfc4aaba92806a9e4
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4401,7 +5019,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u9-quantity-14-gloss`
+### PROVENANCE `prov-ex-or-u9-quantity-15-gloss`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -4409,7 +5027,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86aef476f1450aaa8de412a71a7702135a1d792da2015dc5fce631fb23979268
+- Content hash: b3ab1435616d5ff94a24042d533dd2dba6d0c88622c511f5857acd2e79f505fa
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4430,7 +5048,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u9-quantity-15`
+### PROVENANCE `prov-ex-or-u9-quantity-16`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -4438,7 +5056,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68320833f19f1159e0708c629906f704ebf4ecd1352116f0fed0e83c9ee75a7a
+- Content hash: 93edf622d706f14a564a9e60f154d295aeeb370b7f8ca7abdfd027f6800130b7
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4459,7 +5077,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u9-quantity-15-gloss`
+### PROVENANCE `prov-ex-or-u9-quantity-16-gloss`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -4467,7 +5085,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3ab1435616d5ff94a24042d533dd2dba6d0c88622c511f5857acd2e79f505fa
+- Content hash: c6c52edc11533fc38775d736de96d4f672eef8b82e1bece61d730f399932010f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -6294,7 +6912,65 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5241efeb0936da1d3077e6c8a75c3df554838fa33f7559f58608d834925077f9
+- Content hash: 96c612633d6572257c1cd815a3eeb54ecf8c4037f2c4efd9fed0ca564e31f972
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:шестнадцать рублей (sixteen rubles)
+originalSourceText=шестнадцать рублей (sixteen rubles)
+shippedText=sixteen rubles
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e83c90ebe3a67a3a2c19cca5bd922469f90bf08019b2a874016a71aabeae216
+contentHash=d3aac78b88c9382246f3f05ddbb255cfb5c14e05b0df34f0d32bde97db2cbd01
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-pattern-3-ru`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 916d44cbe8058eeb31f6850955280f75ed28d3e4a790be6c59249f210033764d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:шестнадцать рублей (sixteen rubles)
+originalSourceText=шестнадцать рублей (sixteen rubles)
+shippedText=шестнадцать рублей
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6e83c90ebe3a67a3a2c19cca5bd922469f90bf08019b2a874016a71aabeae216
+contentHash=35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-pattern-4-en`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f6d79972a547b36b7476bd9b7e0dbde8fde1a5c52c7d831404fa6e39c2a91d05
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6315,7 +6991,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-pattern-3-ru`
+### PROVENANCE `prov-ex-u9-pattern-4-ru`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -6323,7 +6999,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7bc94e7c9fe343b56c9fd42d8cb5ba9b84550112d151d1ca047068bf04d18021
+- Content hash: b862ebdf25dfc208a53b48669b60c0c248f1d750083f3049948733a6f70031e3
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6344,7 +7020,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-pattern-4-en`
+### PROVENANCE `prov-ex-u9-pattern-5-en`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -6352,7 +7028,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 075f54cacbe66b6621ce7ca3b1381f6fe782b6e03dd3d4200f3ce689ef0e224d
+- Content hash: e29bbe173531bf0cf3e058197019d8c833dab3ec6529972aaabeb83d455ce169
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6373,7 +7049,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-pattern-4-ru`
+### PROVENANCE `prov-ex-u9-pattern-5-ru`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -6381,7 +7057,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb9930f5b12f39ff99d155d1d6113ae0e29711bf595925ad0340c3c1f0a9e411
+- Content hash: 7cdf6d288c25511eaf70bd764fd9730a524bc5b5c2ce9b09fc1b8c84b4c7eff1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6402,7 +7078,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-pattern-5-en`
+### PROVENANCE `prov-ex-u9-pattern-6-en`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -6410,7 +7086,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 435fe2fd02257f15da29aea2ae3de71ba28b85f31ba0a8f73100ffc8cff81684
+- Content hash: da8460ab2e4d7ab2c0945ef4daf2434976d0a62fdd9045b639bf355710ece4f5
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6431,7 +7107,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-pattern-5-ru`
+### PROVENANCE `prov-ex-u9-pattern-6-ru`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -6439,7 +7115,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 329308401869e1f0ce506b1e3e16dbd0462eea16568f095aec67e64c8c63989a
+- Content hash: e28e6972a4bc75a49824cf693b4b1f99dfea74df8612d552c5878cac3e2ca49d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6584,7 +7260,65 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d24957a6e8036662ab55cfc72f9c67a78643ebfca7ce68ada93d618dcfa13123
+- Content hash: a9b84cb983598fade0b1b1abbcdfc44aaea4b1df783d0679b404facd4da88997
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:пять лет
+originalSourceText=пять лет
+shippedText=пять лет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
+contentHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-quantity-10-ru`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 529fee4b1616067e9b0b4003db978449d2dc55d17e9d9c6e077bd99a7ee08559
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:пять лет
+originalSourceText=пять лет
+shippedText=пять лет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
+contentHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-quantity-11-en`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 98abc59c9dc430f2cdd5d935a839e17d19e70da9aac5b3ba8859352ec1e68822
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6605,7 +7339,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-10-ru`
+### PROVENANCE `prov-ex-u9-quantity-11-ru`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6613,7 +7347,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b5d90fd960ee3d8827d5db7ea6b1d9d39a980dced86a036f236feb299cef280
+- Content hash: 90bc0df334b3b340ad67b1cc3d192501d2344782c196adf258e86b4598400cf1
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6634,7 +7368,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-11-en`
+### PROVENANCE `prov-ex-u9-quantity-12-en`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6642,7 +7376,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 888057381280c2defcc57d719c1d7df4a62c98b471a7461ea62723729c4b045f
+- Content hash: 67e67812a00c9b4614f59131e76032640898f715a9a82023d00aa0a6b7550b57
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6663,7 +7397,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-11-ru`
+### PROVENANCE `prov-ex-u9-quantity-12-ru`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6671,7 +7405,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c48a6ca9449590bbc3189c308857b72cd115a66c6d6feab266c666bb8cd8ca7
+- Content hash: 30143421a6a6c0b91905c32f37bb7dc83e080aa916ec1a1b89946ad829ca0369
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -6692,7 +7426,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-12-en`
+### PROVENANCE `prov-ex-u9-quantity-13-en`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6700,7 +7434,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 191a52cd7a1b87bbe57bc9a3671f8f605086d4ea4aba0d9237339399298d8c2c
+- Content hash: c8d2380ff2322317429e60701645fba789965a2d54af20c3006a59b89255f65b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6721,7 +7455,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-12-ru`
+### PROVENANCE `prov-ex-u9-quantity-13-ru`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6729,7 +7463,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fcf1ef1603c58f1122a7953b3ce4b244b232ffc1887df1c2f2d3483e147cad5
+- Content hash: ee1b2c1b75e81e29acc27e136fe38e07aa2ace3f3453f8d69aa940e65fa2320d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6750,7 +7484,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-13-en`
+### PROVENANCE `prov-ex-u9-quantity-14-en`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6758,7 +7492,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 355ebcd962d213311116431bd58f7ea8a7590ef9b4d6bf3bf42a46c6fdd870d7
+- Content hash: 9a0db591e474afb2c097ba129556049af28743bf3862b00584c21e601a92a545
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -6779,7 +7513,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-13-ru`
+### PROVENANCE `prov-ex-u9-quantity-14-ru`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -6787,7 +7521,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9090ba0e7f0e50d251fe4eb5284697ad2a5bbf7d5e51e3c6e459968532281ff7
+- Content hash: c3d24bd218f18debe473d85ff8dba19b34f6a5b86f7b5421d3c9fc7f634ce62c
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7164,7 +7898,65 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74915b7d77f4bab6b86e59cbe213b2c77489b3789e5808e84484b12d22b7b7be
+- Content hash: 25678932f39f835f1d6ed2bb17de52b1c05a554c9430bd9689ab5dfc27a43b9b
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:десять копеек (ten kopeks)
+originalSourceText=десять копеек (ten kopeks)
+shippedText=ten kopeks
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0e22631b698380900e2d6284654ce712791246e46da4127f683f3790498aa81c
+contentHash=d428faaa0763098d8deb9b88c09829de01aee171b21b9d67c1d1802b2fa61235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-quantity-8-ru`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4dceb7d03b4f08ed7e6808212255ccfaf1cb6d681e2fcb728276edd164045359
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:десять копеек (ten kopeks)
+originalSourceText=десять копеек (ten kopeks)
+shippedText=десять копеек
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0e22631b698380900e2d6284654ce712791246e46da4127f683f3790498aa81c
+contentHash=fb205d4acd981ae43cd813d92106e7e1c92225016c5a750dbfcd47851009f771
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u9-quantity-9-en`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f98e2312dfe3d21d0aaf55a25479820f956006a42071dfd837f88f15dd30ebf2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7185,7 +7977,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u9-quantity-8-ru`
+### PROVENANCE `prov-ex-u9-quantity-9-ru`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -7193,7 +7985,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25d5a9392cf9c86a8bd013e9251f58a397fdb44cc9e731193c10a4ec57866a7e
+- Content hash: c885b3bc51d5f9ca076accef77598aa438267756c371e0812367809cd304b61a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -7208,64 +8000,6 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=73a68e47fe5f0f04157cbfe202bc037fd733a044f527bf4c654023c973ee46a3
 contentHash=ead90f0119bd544b8199f818c7a4b3d502850a583e85be600b0fe62de62f62a7
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u9-quantity-9-en`
-
-- Objectives: obj-u9-quantity
-- Sessions: u9-s-orient, u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67192ae8c58f0faaa724e61225272fcd2095551506f65733cc8004d819255a17
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:пять лет
-originalSourceText=пять лет
-shippedText=пять лет
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
-contentHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u9-quantity-9-ru`
-
-- Objectives: obj-u9-quantity
-- Sessions: u9-s-orient, u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d586df3a216c482419318358a9eb51708d8c69f950b327a02f7c60430390e203
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:пять лет
-originalSourceText=пять лет
-shippedText=пять лет
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
-contentHash=6a5d25401c418d3d09403dbd78b559a9a2b2ec9bb7ff91851cd17ae8894ad2c3
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9331,6 +10065,122 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u9-odindva-x-0`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9262a00840ccf1e8cb8741c0cebb17bb8bccf8b74111de9e46792f2512d1c08f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=мальчик
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=665c746f7261881b723ca428fa634115d76ffe2ce7436aefab57e15571b045d2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d9fe25585e7c820967b79e7fa77bfdc7c92cc00e7e4ee43649d7db8df7dc8c2d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=девушка
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=465fe08151435409caca84f35dc08ec44bac3addfd35451aa48072794e2101b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-2`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 24729e8184cd21e9e60b38bc3de819f4ce39b44d0b188ef9371da3488f7e3de2
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=животное
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=a14ed2cb59c6982d9f40209a1e15bd9425b81f2a9a2ae881eb7f97da88bbf2fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-3`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 640727e313ed46f614c0d3278f7f3b4ddf60e5b2db787fa6cba2c8310916cc7d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=джинсы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=0a15922e4fa30cf41b3725d28364368a4803782a90a88bf7b4cbb5394b8d4f2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u9-pattern-rem`
 
 - Objectives: obj-u9-pattern
@@ -10056,6 +10906,448 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u9-134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f9bc7baa10d3d486f13953bc65641b067aea171b2644d93462d25fecddeb870
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u9-135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eeff213050361cfd02da29b60b1fc892ec379fbc6ffa778e97e6352451401f38
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different number in the same table. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d28854abd56227904e610e863f8b1feadaa28997575597334a700dc7b37edcad
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer name the shown number from the same frozen table?
+
+### AUTHORED_ENGLISH `en-u9-137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 43bace2f9a0ce7d2403b56d3aac331a3f49aca8d103fb4796f9fda84afb5ffc7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form matches the shown number?
+
+### AUTHORED_ENGLISH `en-u9-138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5e6903d459c8263edebf402c1d4d4a14ff193fc66887bc3793e249a029f4d4ac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u9-139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e236f94bce2a77aa0cd0812f9c98cdc9c5f1ed98e3716508337cd1188a91f7ef
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different teen. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82aa64b1adf75d6957ce2589675f7b7c3c93bb70613c784ee3bef0b97a80bc21
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the following ten, not the teen. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 828e24f81754d45c16e6f9d99686ef3cc6aee3635b1ba43eafa66c3ea866aaac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the ten, not the teen. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6f66e53ebedca46abe3d0fb81e8f8422a89f19b3fd9c781c3bfad487bb7fefe9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different ten. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4e54b30c183f00ecb70dcb2da0f58931fad6c4a44613b5c37c837f5130d6089d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the teen, not the ten. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-144`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 36d104317dcf419e01d8eae5269165b2e82ca2c9f959df59b2a67b01a1fef70b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different hundred. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-145`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d03e9305707fd036b14283ec693e985fb0d1d6e6c8bb6d16d3bbcdcab9cb3dda
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the ten, not the hundred. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-146`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 202cae7866ff2f7e3bb928e9fe4230dfe9f50ec16e7cb8dc373ca8f5c217a138
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-147`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9e86dc0a9a18dc3fd1741a3a7e6857ea7ddbada81ae80a9a5b1838b8ec6fddd1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the ten, not the composed number. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1e00e9584f6f455497278d04de526f0f3e171f49ac2ad4e0975805d55b0e4e92
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is only the hundred, not the composed pattern of the shown form.
+
+### AUTHORED_ENGLISH `en-u9-149`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 76eceac6368de941d2ded21ba09506813982f851834db4eeb856dc2b118a0dd5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer follow the counted pattern of the shown line?
+
+### AUTHORED_ENGLISH `en-u9-150`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f69fab337b885788f8fa8bd2ad3dec5c2344917e2ad24ecc31e72034e8b0dbcc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the composition of the shown form?
+
+### AUTHORED_ENGLISH `en-u9-151`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a41c9c978b6801608b5888ed5439c087b080f22abc5b540eb0aad38943af84fa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the hundred, not the composed number. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-152`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b6e4548daef666cace5dde0b7d319c430549643dd776d0e02f059e5f33d82322
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the thousand, not the composed number. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-153`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 66a6d6486a37002cb6b791cfbc7c0593a28a9a7348fe8fc155bf2192b09536b1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the other thousands band. The contrast is the shown number.
+
+### AUTHORED_ENGLISH `en-u9-154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 77f5370b06c99dc5a171cb85b3c2910e6d74097420253e98eb7b4cb0f97e8184
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This line agrees with another word, not the shown word.
+
+### AUTHORED_ENGLISH `en-u9-155`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 48d153d7bc36b12f831ed455ed74b1daadea04135c34c40dbae7231005b0eeb7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the answer agree with the shown word?
+
+### AUTHORED_ENGLISH `en-u9-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f30dd7c6dc6ee1b04d9d32b146a0442e624ab8085089adb4822bd4c33f463a1f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line agrees with the shown word?
+
+### AUTHORED_ENGLISH `en-u9-157`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4540def9dfe974364dba364ea32d2a515fd83b1c41774c2ec1b776b8006839a1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other agreement row of the same word, not the row of the shown word.
+
+### AUTHORED_ENGLISH `en-u9-158`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e6933bcf690145f39762e241dd06d501887fb17862c4c0a87a0ecfd690fd550
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form agrees with the shown word?
+
+### AUTHORED_ENGLISH `en-u9-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b8dd873f572f980c4669c97e7fef61b017cd89e95dbdea93211aeb8d1fc67f54
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the two-to-four line, not the rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u9-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7425c0decc5a3525811d7834b628cd12f01366084f41cfc82318fe01d5b422e9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the five-and-more line, not the rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u9-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d4f9392687ef812b05f7b38714423e31b8acd4946c27d839afe432314e8211e3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this admitted rule classify the shown line?
+
+### AUTHORED_ENGLISH `en-u9-162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 541bf4ce1219c592c6896dc63dd44919e6a7672cf4b643ce29ac509e456287af
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted rule classifies the shown line?
+
+### AUTHORED_ENGLISH `en-u9-163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d8ed0a23269088e3be7f33f8a053967b4bfb16086e35f800780b7248a03cfb8b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the one-item line, not the rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u9-164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a22a667ae309661c60a51bf5a4322d80b21e513e5d3f2e7ba4f15ef93ce71978
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u9-165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d699e2314ddb50c75599b175ba13863af8f212b5e20e7a3314411e04723d5440
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the two-to-four line. The contrast is the shown line.
+
+### AUTHORED_ENGLISH `en-u9-166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e62a81a6980648228b7b71ae3aae8da666e7a6e3275b6c1dcf2523b82d2a155
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the five-and-more line. The contrast is the shown line.
+
+### AUTHORED_ENGLISH `en-u9-167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 601f28df14cdcd279976ff56548fc91f41e197e4425e3051d200c73f37bf509e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted rule applies to the shown line?
+
 ### AUTHORED_ENGLISH `en-u9-168`
 
 - Objectives: none
@@ -10064,10 +11356,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79d4083bbe040e9e44be2576d99c89a564897db4981795808882d4b45dabc1df
+- Content hash: 45c8079eee20c1b9456a8ac960e82cdf3a8953334406477b23cee59d6b28d1c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=This admitted rule is the one-item line. The contrast is the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-169`
 
@@ -10077,10 +11369,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbe40d41519641a3a18d0a3bb4e6232b44f39e4d9012d9c323ab5c2950216a37
+- Content hash: 6d1ef73662a170d2e72b7390ebc750c56ca816eeb93f73a34ed0bcaf4528d1d3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different number in the same table.
+text=This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-170`
 
@@ -10090,10 +11382,10 @@ text=This admitted form is a different number in the same table.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3d3c4771348e5e0d2574ed4dfbe97902aea5fc60a33b12738821a07f718949a
+- Content hash: 399c9dfc772ab9a8885e9824b4d6670d505d0412b1bbe12494a46ea1f27fdce5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The admitted answer for this contrast is 
+text=This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-171`
 
@@ -10103,10 +11395,10 @@ text=The admitted answer for this contrast is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89bd3139ca1306abc8fa8bfcaf02780ddb7895e81aa0761ba4b0941b8784bd4b
+- Content hash: d6ebb87747dbc80535880dd5f267a85de63b9a702fac27aa2bed31b7303e2c30
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 0?
+text=Which admitted scope sentence covers the shown line?
 
 ### AUTHORED_ENGLISH `en-u9-172`
 
@@ -10116,10 +11408,10 @@ text=Which admitted form is recorded for 0?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2408c77ab8e8c0fa2647b80ae66f2e410b6ea0aedfa921cf48d6e292a014516a
+- Content hash: a12073a585cd7e036e268ea8ef8038b909b9b9465ea0b5e85be688ef7f04508a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Admitted number and quantity rows
 
 ### AUTHORED_ENGLISH `en-u9-173`
 
@@ -10129,10 +11421,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cae1392e530d70296e594423710784986916038f0dcf1160099bc0afee4e735
+- Content hash: 8c8d8a0ca6d554faba5167f6e912515e85c62eeb3472d80d74767df934312c2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 1?
+text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u9-174`
 
@@ -10142,10 +11434,10 @@ text=Which admitted form is recorded for 1?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18bb6ebac9e82b6341d48bc948a0f8c08213b2de3e0cddbef1313d81b46c0cc8
+- Content hash: 9179d75a724896623f858240e5f1edb06e0c943ca53f244cc9c1dc80053f42c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 5?
+text=Open Lesson 9 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u9-175`
 
@@ -10155,10 +11447,10 @@ text=Which admitted form is recorded for 5?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a19c5cee3d0ee0bbe85487e01a1c79ac568c7851c0bc8fa25dd5505a58a1735
+- Content hash: 8d3b648c81804ad9bacb4b19da5cda9f91326bd98efe5c87fedaa2da7f9b9afe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 10?
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u9-176`
 
@@ -10168,10 +11460,10 @@ text=Which admitted form is recorded for 10?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1ce0909f27e6136677d5abd5916e55d8cbb9bf03324202c400f7ee521c03c1d5
+- Content hash: 0693ba28b5fc50a43aabde574978ef197aae34f7ab34b590c0918a70f9de2988
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 4?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u9-177`
 
@@ -10181,10 +11473,10 @@ text=Which admitted form is recorded for 4?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4082f16189dc7e5b04cc4c0c9b6618aa5401203da37c02b8d66f3d3012484faf
+- Content hash: 59efc46607be715a05b88aa845f29f901c644f4dcdbac7e88769a4ddc85b361d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different teen.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u9-178`
 
@@ -10194,10 +11486,10 @@ text=This admitted form is a different teen.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea7a62449b483dd3a608323102fe0f660bf911340d07ea28fb277cf6c865236f
+- Content hash: c3220b59007bf11bcd33c2c32b477f91b292172b3a625e2b8323f68d47156a57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 11?
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u9-179`
 
@@ -10207,10 +11499,10 @@ text=Which admitted form is recorded for 11?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8643ecd351962927c25459d0a9b756537a42d0dfd45bae62f84c110d6583d2d2
+- Content hash: 0d8e086a4af30eaf56c4cf4affb90737384b5ae4e199b1fd79220a36470cde10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 14?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u9-180`
 
@@ -10220,10 +11512,10 @@ text=Which admitted form is recorded for 14?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af376df5f5758e2df98df625536ca4c7cfedde80a3fcb9cb6ecc133661119763
+- Content hash: cc8b14d4823209fd4221b116dbd2bb65b1c203ba620b29c20f2d8687c10aa459
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the following ten, not the teen.
+text=Work Lesson 9 in your copy
 
 ### AUTHORED_ENGLISH `en-u9-181`
 
@@ -10233,10 +11525,10 @@ text=This admitted form is the following ten, not the teen.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e130c9ece2155a171371907a6d2cc4b143b2027335556bb293b430fae7899d06
+- Content hash: b20ea94892c82d484980602f4eb9a83a9a8b10f004f4d0604bee8f9c341daaac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 19?
+text=Do Lesson 9 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u9-182`
 
@@ -10246,10 +11538,10 @@ text=Which admitted form is recorded for 19?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cace55ba81c1d6d08b6a405de7bbdba302db1e4dce85fb07ce19d3b2e1184be9
+- Content hash: 81b5a583145c34fa1da92b8e021533059d2094309bc6af605816dbf8aed9a205
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the ten, not the teen.
+text=These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u9-183`
 
@@ -10259,10 +11551,10 @@ text=This admitted form is the ten, not the teen.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f55b14d8a714fe4b5773f10a4732f5d92556d284bd3d0b82d17da33c44ed8272
+- Content hash: 1a1c448252b789590c0c203f19afd3fd95f6086d7dc5a68ea04f80feea80424f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 12?
+text=Open Lesson 9 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u9-184`
 
@@ -10272,10 +11564,10 @@ text=Which admitted form is recorded for 12?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c33c2bd23e9143b701e3f7bbad7223de0769fea8ad596d0e01d6d1c248f98f8e
+- Content hash: 24b2005c724bafa6c9f065b4f558414ebe47b0d234dbe39d9554cd2b697ff55b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different ten.
+text=Record Lesson 9 book work
 
 ### AUTHORED_ENGLISH `en-u9-185`
 
@@ -10285,10 +11577,10 @@ text=This admitted form is a different ten.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e95e381b18ec81cd17744d6f9b9968f6be9693961b7f9688c0ca2953e45f7dc5
+- Content hash: 7c16cfe15ff66e00adc398f4987869d68756bbe4f1833caac8399022a67f4893
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 30?
+text=When you have done Lesson 9 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u9-186`
 
@@ -10298,826 +11590,7 @@ text=Which admitted form is recorded for 30?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d78f3a8cb435e8351d216b1cbc84f4da1f5b309901065450e62361f74129bbc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 50?
-
-### AUTHORED_ENGLISH `en-u9-187`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45e1f97e52dd9bb7adb298a1f7d13c687956fa800ebd245fd8e85b46acace7bf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 90?
-
-### AUTHORED_ENGLISH `en-u9-188`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e5235090ff978776fa206c439c7fad14a5ce3af4d106c9302466d8bebf72d27
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the teen, not the ten.
-
-### AUTHORED_ENGLISH `en-u9-189`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 694f3b34c6056b74f7ea5d1a7c3e726642fe81d0d9397dc38facaffa5cb57903
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 20?
-
-### AUTHORED_ENGLISH `en-u9-190`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b0dd1dfdc44d1c30045bde229758a2dca8cc3f914d48d2d679c66e07672b7bc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different hundred.
-
-### AUTHORED_ENGLISH `en-u9-191`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 821946d9b399fb35310094a67c2befc96293630f6ec5b89fc5ea734328d7fc24
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 100?
-
-### AUTHORED_ENGLISH `en-u9-192`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d2eb6491d3d33f3ee9d5b469fde5e9b8eae9e51a180981ad113c1d057074c32
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the ten, not the hundred.
-
-### AUTHORED_ENGLISH `en-u9-193`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03ac3f1a55311872ac70790b2070a2ee313671cc5df78d9f4a01d2c1b26fa18a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 300?
-
-### AUTHORED_ENGLISH `en-u9-194`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ea580032d3933b42d01f01ee38150480ec935c09fe2972c069166530d2e03e9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the one-digit number, not the hundred.
-
-### AUTHORED_ENGLISH `en-u9-195`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4feedfc5db030d786a7d6bc731969e5b504dc2e26c199e6813566c62a0390250
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 500?
-
-### AUTHORED_ENGLISH `en-u9-196`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff5ee311771405eeece2e70cb6285b4c5707d464daa129e05b6d9677ff2688a1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 900?
-
-### AUTHORED_ENGLISH `en-u9-197`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9438973e840e6d7dcbb843c4dad86676681b9566ad9ead469a57b209b9421ca8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the ten, not the composed number.
-
-### AUTHORED_ENGLISH `en-u9-198`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8c48cec600440c6a0fca0565d767a3a145e086bf86416601c1377754681343c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 21?
-
-### AUTHORED_ENGLISH `en-u9-199`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5322b57804cf9367ae34f5eb40f582ba56aaa1db116f9d3f010696da598a555
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the hundred, not the composed number.
-
-### AUTHORED_ENGLISH `en-u9-200`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7830ae25b9f3c7f4355bc05c9dac954c5e529104722973886639cf7f26682b9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 101?
-
-### AUTHORED_ENGLISH `en-u9-201`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63bb47c527fdc0d938575077625ee072b1adf395e7d7aaff5bd73bd90cdeafd5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 215?
-
-### AUTHORED_ENGLISH `en-u9-202`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9cd8daa4ac5150898d522a719b52ca10659f15ea65aa1df72e96f712941bc44
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the thousand, not the composed number.
-
-### AUTHORED_ENGLISH `en-u9-203`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f77f5b31ecb8a98cf78c67c4edf7b47c7d325fba21c3497294a02fddcae7e044
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 1,984?
-
-### AUTHORED_ENGLISH `en-u9-204`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa8186a02036fbd7946f46238d1c79068850930a402ae383462ff4a8131219d7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other thousands band.
-
-### AUTHORED_ENGLISH `en-u9-205`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 597585bf83e18ca57b190bfaa4e30b9def6f9e062e6d6ea9acbf997b5bbcc67c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for 2,000/3,000/4,000?
-
-### AUTHORED_ENGLISH `en-u9-206`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1adbf9c5eaf58247751c64ff75d0489a37bdb7217f37ef129388eeebc3efbcb7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the other one-item example.
-
-### AUTHORED_ENGLISH `en-u9-207`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07d6e16908db93f7f43f977ee90d740fb37cf82219e50983dea66431615858ca
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for one boy?
-
-### AUTHORED_ENGLISH `en-u9-208`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b168d4154f186eda36def3e383535e87b08e02e0822c2a4356ef7f748f9ac24b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for one girl?
-
-### AUTHORED_ENGLISH `en-u9-209`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ba8de3d59bff5cb4fa2b5d6ed95e977f6d9b89863632b61f8890186d2ed2e64
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is recorded for one animal?
-
-### AUTHORED_ENGLISH `en-u9-210`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f62be64b699d4a7b80b587ead0490d53119e0c56bf29f40f96d4b19aedbf03ce
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other form on the same frozen line.
-
-### AUTHORED_ENGLISH `en-u9-211`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd426eab1f6e1650da7b42bae809e67c189553ffd2d283342e26c63a6f5e7922
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is recorded for the other form of two?
-
-### AUTHORED_ENGLISH `en-u9-212`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 986f6142fa1e83f7f857b7f701c41f1ae33a6606a42e72188484d6b102ae3a66
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the two-item counted example.
-
-### AUTHORED_ENGLISH `en-u9-213`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 024366658a2691f862452e83d0e4b0c0972fa0b76fc9bbb77d555273cc834d7b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the five-and-more counted example.
-
-### AUTHORED_ENGLISH `en-u9-214`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 287785fbe8ae096075b744979d013a9ecb6d4384ec1fdbcea5057b8b03e915fe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line follows the one-item pattern?
-
-### AUTHORED_ENGLISH `en-u9-215`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3619bcce0277f4755ead687e6b19f5574f7c5d2d5941f69374c90734c44d86c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the one-item counted example.
-
-### AUTHORED_ENGLISH `en-u9-216`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 749914185c892b57b2e4a7e14910be78cfb017655ea7bd757f9adafd849e263c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line follows the two-to-four pattern?
-
-### AUTHORED_ENGLISH `en-u9-217`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09c690d6ce8b216e2baa7d1ef82b372560d645d3724c6b99cd0e1ea0f38fd844
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line follows the five-and-more pattern?
-
-### AUTHORED_ENGLISH `en-u9-218`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcb93cdf346a5db42d5fa260a408214b270fe8691ee35da5213336be9c0322d1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the final-two counted example.
-
-### AUTHORED_ENGLISH `en-u9-219`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef37d7f23b0784dd800002fad1175c7cafe12a337fec9e4658a3d2792acaec7f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line follows the shown final-one cardinal?
-
-### AUTHORED_ENGLISH `en-u9-220`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d64c5895491a860ff982424dc6361c8a1fa6d0c1044c5eb55cf49dbb87730291
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the two-item example, and the teen span uses the last rule.
-
-### AUTHORED_ENGLISH `en-u9-221`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6456a34d497dfea736f9aac3923ab281170b168186c0354d91024aebcc0563a7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line follows the teen span?
-
-### AUTHORED_ENGLISH `en-u9-222`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d91ac265451e2e16b87b25bffc6c76c21c6d8f50de5ee4256c535dba2ebe8fe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line is the five-and-more year example.
-
-### AUTHORED_ENGLISH `en-u9-223`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0425ab819fb55b64539cbea450f029a4935c901bd6a6fde77db1aa6e413c1fa
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line is recorded for forty-one years?
-
-### AUTHORED_ENGLISH `en-u9-224`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f183d4c1fdb3d43c2de830b816208b04bf02a665ea7ff5980099d8879606ecab
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted line uses different final digits.
-
-### AUTHORED_ENGLISH `en-u9-225`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c0afd4f8174368b409433a01ea431fcd6838572af1c7e18d1466940e71383bc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted counted line is recorded for two hundred and thirteen dogs?
-
-### AUTHORED_ENGLISH `en-u9-226`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d921e391f654851f3c500447415ad1907628c2c6773936d9b4d72efc0d40ffa1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the two-to-four line.
-
-### AUTHORED_ENGLISH `en-u9-227`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53944e944a2eb080e5987f99479fdaefa2cd2b14a155db403c32063e95252bad
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the five-and-more line.
-
-### AUTHORED_ENGLISH `en-u9-228`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c623f601ee38dcb3dfbdc3aaafbe358a6be38449b419ccbdc1b30f315e62fcb0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted rule applies to the shown line?
-
-### AUTHORED_ENGLISH `en-u9-229`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83447e8e45bbff71b4f2124412618b2bfc4e00090577bf3c8df8ee3bf8fdef6d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the one-item line.
-
-### AUTHORED_ENGLISH `en-u9-230`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c24b43694bca9ae8241514c11e46e7196c303170c57f7175cc65bccad57fd5fe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the two-to-four line, and the frozen teen span applies the last rule.
-
-### AUTHORED_ENGLISH `en-u9-231`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a056b8a8aa8807cd614d64f2271ec2e2bdd94245a232dfb5d22670fe0e8c687c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the one-item line, and the frozen teen span applies the last rule.
-
-### AUTHORED_ENGLISH `en-u9-232`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bd2dcfeaf3871194c178a31cbeb2125767d8e15b977ae3aaafdb55844217445
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted rule applies to 11, 12, 13, and 14?
-
-### AUTHORED_ENGLISH `en-u9-233`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bad7161d28c8a649b5908bb491e9917167f8b15fd61b9132bde437e9b0b7194b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted sentence is the other scope in the frozen paragraph.
-
-### AUTHORED_ENGLISH `en-u9-234`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a0aef8e740acc7e301da4e378dd47dd6ad5ec01822eb6a993acae15005c1d31
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted scope sentence covers the shown line?
-
-### AUTHORED_ENGLISH `en-u9-235`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88b4da025988e908f533e158f8c0e1829f345968739a49bdcd02078a4871609a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted number and quantity rows
-
-### AUTHORED_ENGLISH `en-u9-236`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01ee92800c9cdbab5d6584b298f0dfe270a697fe9131de4aaba4c743c10097f0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u9-237`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61ed674a97d5ba79b2c623c6ddb603f1383c9179ed2a129fd3dab2f2aa6e506a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 9 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u9-238`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0134188866e1b14dbc0b6050b0b84d50af8f1bee52f5a00ba7a7d933358ed2cc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u9-239`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c28591b3ab43d01afab58cd539cf65250134521a5fc62145d37cdadc858c4ce
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u9-240`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d31b3d6add06e7f2a07514f5d759acfdd7289faed64b05c84089526adfe9421
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u9-241`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61d69f50fb3334a17afd3c0172c30b13a160542e4409644ee85e5a1db6d571f1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u9-242`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffe01d482ca7f265b169472e0a6ed31e79b4088c3b6dcacaa88889c13924336e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u9-243`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3916efdae7cb54a2623964a6ee9419c065176ba05ad32034199d7e0d7141ae90
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 9 in your copy
-
-### AUTHORED_ENGLISH `en-u9-244`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 077a827a0037c31a5525782be2c76e27ea8557b57707a529d55941ca963d3ba5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 9 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u9-245`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a46d6554d32d21883834e8ed8e8e8fa99734151bb895033e5f91cfca641f6b9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u9-246`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: feadc5cfcde682d807a3b2332d770f2174a1399ad445e1fac86721aa6a021c4e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 9 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u9-247`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2455eda8fcf2093fc8b6425b9b98f345a9e24b1a12fa4926def0d32a2e6ca37f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 9 book work
-
-### AUTHORED_ENGLISH `en-u9-248`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96a4927538851ce0a90ec26b2438141fb7c2cbad4f91819f052d5f2a743fc810
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 9 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u9-249`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 333023507b2e7c2886ddde4a9e8ec6a370e905023c8f743399f6e0e687ea3657
+- Content hash: dc0e730a85608cd757068678a44aa00685f3a2dde641481e26659f03655c2149
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 9 work in your copy.
@@ -11339,6 +11812,8 @@ permitsAppUse=true
 - `obj-u9-odindva` CHECK `u9-i-odindva-1`
 - `obj-u9-odindva` CHECK `u9-i-odindva-2`
 - `obj-u9-odindva` CHECK `u9-i-odindva-3`
+- `obj-u9-odindva` CHECK `u9-i-odindva-4`
+- `obj-u9-odindva` CHECK `u9-i-odindva-5`
 - `obj-u9-odindva` REMEDIATION `u9-st-rem-odindva`
 - `obj-u9-quantity` INSTRUCTION `u9-st-orient`
 - `obj-u9-quantity` INSTRUCTION `u9-st-teach-quantity-1`
@@ -11350,6 +11825,7 @@ permitsAppUse=true
 - `obj-u9-quantity` INSTRUCTION `u9-st-teach-quantity-7`
 - `obj-u9-quantity` INSTRUCTION `u9-st-teach-quantity-8`
 - `obj-u9-quantity` INSTRUCTION `u9-st-teach-quantity-9`
+- `obj-u9-quantity` INSTRUCTION `u9-st-teach-quantity-10`
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-0`
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-1`
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-2`
@@ -11364,8 +11840,9 @@ permitsAppUse=true
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-11`
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-12`
 - `obj-u9-quantity` EXAMPLE `ex-u9-quantity-13`
-- `obj-u9-quantity` EXAMPLE `ex-or-u9-quantity-14`
+- `obj-u9-quantity` EXAMPLE `ex-u9-quantity-14`
 - `obj-u9-quantity` EXAMPLE `ex-or-u9-quantity-15`
+- `obj-u9-quantity` EXAMPLE `ex-or-u9-quantity-16`
 - `obj-u9-quantity` PRACTICE `u9-st-guided-quantity-1`
 - `obj-u9-quantity` CHECK `u9-i-quantity-1`
 - `obj-u9-quantity` CHECK `u9-i-quantity-2`
@@ -11373,18 +11850,23 @@ permitsAppUse=true
 - `obj-u9-quantity` CHECK `u9-i-quantity-4`
 - `obj-u9-quantity` CHECK `u9-i-quantity-5`
 - `obj-u9-quantity` CHECK `u9-i-quantity-6`
+- `obj-u9-quantity` CHECK `u9-i-quantity-7`
+- `obj-u9-quantity` CHECK `u9-i-quantity-8`
+- `obj-u9-quantity` CHECK `u9-i-quantity-9`
 - `obj-u9-quantity` REMEDIATION `u9-st-rem-quantity`
 - `obj-u9-pattern` INSTRUCTION `u9-st-orient`
 - `obj-u9-pattern` INSTRUCTION `u9-st-teach-pattern-1`
 - `obj-u9-pattern` INSTRUCTION `u9-st-teach-pattern-2`
 - `obj-u9-pattern` INSTRUCTION `u9-st-teach-pattern-3`
 - `obj-u9-pattern` INSTRUCTION `u9-st-teach-pattern-4`
+- `obj-u9-pattern` INSTRUCTION `u9-st-teach-pattern-5`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-0`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-1`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-2`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-3`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-4`
 - `obj-u9-pattern` EXAMPLE `ex-u9-pattern-5`
+- `obj-u9-pattern` EXAMPLE `ex-u9-pattern-6`
 - `obj-u9-pattern` PRACTICE `u9-st-guided-pattern-1`
 - `obj-u9-pattern` CHECK `u9-i-pattern-1`
 - `obj-u9-pattern` CHECK `u9-i-pattern-2`
@@ -11550,6 +12032,8 @@ permitsAppUse=true
 - `u9-st-check-odindva` ITEM `u9-i-odindva-1`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-2`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-3`
+- `u9-st-check-odindva` ITEM `u9-i-odindva-4`
+- `u9-st-check-odindva` ITEM `u9-i-odindva-5`
 - `u9-s-quantity` OBJECTIVE `obj-u9-quantity`
 - `u9-st-teach-quantity-1` EXAMPLE `ex-u9-quantity-0`
 - `u9-st-teach-quantity-1` EXAMPLE `ex-u9-quantity-1`
@@ -11575,9 +12059,11 @@ permitsAppUse=true
 - `u9-st-teach-quantity-8` EXAMPLE `ex-u9-quantity-12`
 - `u9-st-teach-quantity-8` EXAMPLE `ex-u9-quantity-13`
 - `u9-st-teach-quantity-8` REFERENCE `ref-u610-attribution`
-- `u9-st-teach-quantity-9` EXAMPLE `ex-or-u9-quantity-14`
+- `u9-st-teach-quantity-9` EXAMPLE `ex-u9-quantity-14`
 - `u9-st-teach-quantity-9` EXAMPLE `ex-or-u9-quantity-15`
 - `u9-st-teach-quantity-9` REFERENCE `ref-u610-attribution`
+- `u9-st-teach-quantity-10` EXAMPLE `ex-or-u9-quantity-16`
+- `u9-st-teach-quantity-10` REFERENCE `ref-u610-attribution`
 - `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-0`
 - `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-1`
 - `u9-st-check-quantity` REMEDIATION `u9-st-rem-quantity`
@@ -11587,6 +12073,9 @@ permitsAppUse=true
 - `u9-st-check-quantity` ITEM `u9-i-quantity-4`
 - `u9-st-check-quantity` ITEM `u9-i-quantity-5`
 - `u9-st-check-quantity` ITEM `u9-i-quantity-6`
+- `u9-st-check-quantity` ITEM `u9-i-quantity-7`
+- `u9-st-check-quantity` ITEM `u9-i-quantity-8`
+- `u9-st-check-quantity` ITEM `u9-i-quantity-9`
 - `u9-s-pattern` OBJECTIVE `obj-u9-pattern`
 - `u9-st-teach-pattern-1` EXAMPLE `ex-u9-pattern-0`
 - `u9-st-teach-pattern-1` EXAMPLE `ex-u9-pattern-1`
@@ -11600,6 +12089,8 @@ permitsAppUse=true
 - `u9-st-teach-pattern-4` EXAMPLE `ex-u9-pattern-4`
 - `u9-st-teach-pattern-4` EXAMPLE `ex-u9-pattern-5`
 - `u9-st-teach-pattern-4` REFERENCE `ref-u610-attribution`
+- `u9-st-teach-pattern-5` EXAMPLE `ex-u9-pattern-6`
+- `u9-st-teach-pattern-5` REFERENCE `ref-u610-attribution`
 - `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-0`
 - `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-1`
 - `u9-st-check-pattern` REMEDIATION `u9-st-rem-pattern`
@@ -11613,10 +12104,10 @@ permitsAppUse=true
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-8-gloss`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-9`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-9-gloss`
-- `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-14`
-- `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-14-gloss`
 - `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-15`
 - `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-15-gloss`
+- `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-16`
+- `obj-u9-quantity` PROVENANCE `prov-ex-or-u9-quantity-16-gloss`
 - `obj-u9-cardinal` PROVENANCE `prov-ex-u9-cardinal-0-en`
 - `obj-u9-cardinal` PROVENANCE `prov-ex-u9-cardinal-0-ru`
 - `obj-u9-cardinal` PROVENANCE `prov-ex-u9-cardinal-1-en`
@@ -11685,6 +12176,8 @@ permitsAppUse=true
 - `obj-u9-pattern` PROVENANCE `prov-ex-u9-pattern-4-ru`
 - `obj-u9-pattern` PROVENANCE `prov-ex-u9-pattern-5-en`
 - `obj-u9-pattern` PROVENANCE `prov-ex-u9-pattern-5-ru`
+- `obj-u9-pattern` PROVENANCE `prov-ex-u9-pattern-6-en`
+- `obj-u9-pattern` PROVENANCE `prov-ex-u9-pattern-6-ru`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-0-en`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-0-ru`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-1-en`
@@ -11697,6 +12190,8 @@ permitsAppUse=true
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-12-ru`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-13-en`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-13-ru`
+- `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-14-en`
+- `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-14-ru`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-2-en`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-2-ru`
 - `obj-u9-quantity` PROVENANCE `prov-ex-u9-quantity-3-en`
@@ -11784,6 +12279,10 @@ permitsAppUse=true
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-rem-r0`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-rem-r1`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-rem-r2`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-0`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-1`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-2`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-3`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-rem`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-rem-r0`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-0`
