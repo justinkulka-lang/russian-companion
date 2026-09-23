@@ -9,11 +9,11 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fa77148957d35a381814c6477ef28d997aab628a
+- Curriculum source commit: fc73429d91edb6c8a84924a42d2edc7f591b0c8f
 - Unit content-review SHA-256: 50b7faa5f800b8fa8fa0ff20453abff7c58eaa07637ff53e14b2fe277f0ad308
-- Pack content-review SHA-256: 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f
-- Review-package SHA-256: 7da06b153d4fd35693ab97e4d6cb401a668860cb27df7ec747a2f031f2576c18
-- Repository source SHA-256: 08d50d2137a2af295cfd4446d4c7cfa811547c129dd12cab8da0fb68148553d3
+- Pack content-review SHA-256: 254aa3bea7493d28f140548497d314513e3e6e432ca368a2520ac721f140d027
+- Review-package SHA-256: 5dfcd8039af5c703c9aacdf2ec233bf3aaf991d467339ad5eb74b88d7e5a64f1
+- Repository source SHA-256: 3ba3fdbcee47b035bae48bc8f00461531ced31f3b574cc9ab7d08ed44800af84
 
 The unit content-review digest is what a reviewer of Unit 1 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2253,13 +2253,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0413`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u3-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57c100372b4e32306d70bc5df58813d3f2f5e71ba3668d7b285932aabefc2a82
+- Content hash: b774a86072b5badd87447779c8bab3cbc156834d327bacc7bb544bb8772ddac8
 
 uppercase=Г
 lowercase=г
@@ -2272,13 +2272,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0414`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u3-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5d29e3bee0987d5323fc3234e13a9a82ffd4428d805b9f68188620056c9b5d4
+- Content hash: 8e6a38d91630b3952ce7602567aa62ab3c5511ff13eb157966c4a20639fa2ba9
 
 uppercase=Д
 lowercase=д
@@ -2291,13 +2291,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0416`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u5-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b556f36f35e4d22f80943d971e9ebbe30c561c80f80bd1300a1a927cb1d11aff
+- Content hash: 877580f814d048abb66f2fb6871daa9334f43af0066d48b09779aee03caff142
 
 uppercase=Ж
 lowercase=ж
@@ -2310,13 +2310,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0417`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u5-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60f26c23b007cacc09565b50b1162b2aeff60ec62a0e69631ed72d99cbe23c59
+- Content hash: 975ff3fcff562fa5fd19e102fe3589f40acd60a9b01214794cbea3dde1f18f42
 
 uppercase=З
 lowercase=з
@@ -2329,13 +2329,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0418`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u5-review
 - Sessions: u1-s-vowels
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f5961b7522bb768f71495674c1920962a0205dc8d74381829fdcc2862c7fee2
+- Content hash: c395dc4b42414815d6ee73fa55b843e7d9402cd1b90c50c70110a4649888d1c3
 
 uppercase=И
 lowercase=и
@@ -2348,13 +2348,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-041a`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u4-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf4c1e084feaab012116294c0385b2ea2d63ef3ae59f636345eb69d0f0d54fd8
+- Content hash: 454d1b13594e8ad5c8b8a681b9336de8127f94efece034f4d9415226f8107821
 
 uppercase=К
 lowercase=к
@@ -2405,13 +2405,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-041e`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u4-review
 - Sessions: u1-s-vowels
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c3e9a21b7fa0d9e098ae1365f9f0fe43d3c67ec41eab910289a2714c83d2af0
+- Content hash: 58a1753fa9f2e47dffec8ce2ac832618d72fcd0dbba253512ec30234b423f11b
 
 uppercase=О
 lowercase=о
@@ -2424,13 +2424,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-041f`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u4-review
 - Sessions: none
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fc8cc634a824df76633ee1635f339020c6689534322ca664d79ee1cd5c2e073
+- Content hash: be24bda544ad6d0c03a9b44476acc143769921f5094b8b8487cc4d70fbe91354
 
 uppercase=П
 lowercase=п
@@ -2443,13 +2443,13 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### LETTER `letter-0422`
 
-- Objectives: obj-u1-letter-identity
+- Objectives: obj-u1-letter-identity, obj-u3-review
 - Sessions: u1-s-early-consonants
 - Source: src-unicode-cyrillic
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f26ff22c132941cc32f552938cb45d039bc46a75d6748b4cdc2777a552b5314
+- Content hash: 04d90c823b22ca0e405785ad244da796190bef9b7418ac51c96f7f8724238e25
 
 uppercase=Т
 lowercase=т

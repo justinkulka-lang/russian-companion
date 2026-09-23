@@ -8,8 +8,8 @@ package dev.russiancompanion.acceptance
  * Release-hardening copy now present in the app:
  * generic offline-companion onboarding; grammar practice in the user's book and answer key;
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
- * AT-001 stays outstanding. The v2 pack installs Units 1-2 as a foundation
- * slice and labels Units 3-30 not yet installed. Linguistic review and
+ * AT-001 stays outstanding. Units 1-5 are development content with review
+ * still pending. Units 6-30 are not yet installed. Linguistic review and
  * Penguin edition mapping are pending. Structural tests do not satisfy AT-001.
  * AT-002, AT-004, AT-008, AT-009, AT-010, AT-020, AT-030, and AT-031
  * stay outstanding. A physical-device acceptance package lives under
