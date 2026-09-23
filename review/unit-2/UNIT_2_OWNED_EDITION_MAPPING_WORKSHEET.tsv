@@ -1,0 +1,13 @@
+# Warning: this worksheet must not contain copied Penguin prose or exercises.
+# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, reviewed digest, and qualification only after comparing the Product Owner's legally owned edition.
+record_id	record_type	app_title	edition_identification	isbn	publisher_edition	owned_copy_verified	corresponding_lesson	corresponding_pages	corresponding_topic	alignment_disposition	variance_conflict	reviewer_notes	reviewer_identity	review_date	reviewed_version_digest	reviewer_qualification
+obj-u2-review	OBJECTIVE	Review Unit 1 printed letters														
+obj-u2-book	OBJECTIVE	Complete Lesson 2 work in the owned book														
+u2-s-orient	SESSION	What this unit is for														
+u2-s-handwriting	SESSION	Handwritten forms														
+u2-s-review	SESSION	Unit 1 letter review														
+u2-s-pronunciation	SESSION	Additional pronunciation														
+u2-s-reading	SESSION	Reading in the book														
+u2-s-record	SESSION	Self-record														
+u2-s-book	SESSION	Work in your book														
+u2-s-check	SESSION	Unit 2 letter check														

@@ -2,20 +2,25 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 49eae12f175574add477ba4f15224650abaa2293
-Content-review digest: 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627
-Review-package digest: 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296
-Repository source digest: 82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe
+Curriculum source commit: fa77148957d35a381814c6477ef28d997aab628a
+Unit content-review digest: 50b7faa5f800b8fa8fa0ff20453abff7c58eaa07637ff53e14b2fe277f0ad308
+Pack content-review digest: 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f
+Review-package digest: 7da06b153d4fd35693ab97e4d6cb401a668860cb27df7ec747a2f031f2576c18
+Repository source digest: 08d50d2137a2af295cfd4446d4c7cfa811547c129dd12cab8da0fb68148553d3
 
-This packet was generated from the packaged curriculum. It does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit fa77148957d35a381814c6477ef28d997aab628a. That commit contains the reviewed curriculum. This packet commit records that identity and does not perform review.
 
 ## Digests
 
-`contentReviewDigest` is what the reviewer approves. It is canonical JSON, digest schema 2. It includes Russian and English instructional content, examples, options, answers, feedback, remediation content and relationships, objectives, sessions, steps, mapping notes, sources, rights, provenance, classifications, audio and text relationships, and advancement rules. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive instructional, mapping, source, or rights content changes it and invalidates the affected approval. Approval binds only to version 2.0.0-dev and this digest.
+`contentReviewDigest` is the unit-scoped digest the reviewer of Unit 1 approves. It is canonical JSON, digest schema 2, with scope `unit`. It includes this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It excludes review status, reviewer signature fields, the reviewed digest, mapping approval status, install state, and readiness. Recording those workflow values leaves this digest unchanged. A later change to substantive content reachable from this unit changes it and invalidates this unit's approval. A change that this unit cannot reach does not. Approval binds only to version 2.0.0-dev and this unit digest. Signing Unit 1 does not approve any other unit.
 
-`reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, and the content-review digest. It does not approve the curriculum by itself.
+`packContentReviewDigest` is the pack-wide aggregate used for repository and release integrity. It is not the digest a unit reviewer signs, and it is not hashed into `reviewPackageDigest`.
+
+`reviewPackageDigest` identifies which packet was reviewed: manifest metadata, ordered records, per-record hashes including objective and session relationships, every instructional edge, book-directed and unavailable lists, the pending workflow fields in this packet, the curriculum source commit, and the unit content-review digest. It does not approve the curriculum by itself.
 
 `repositorySourceDigest` is the release-gate hash of repository inputs. It tracks the repository and release state after an approval is recorded. A later commit changes it. Release-gate validation and the state-transition rules still have to accept that repository state. It is not the digest the reviewer signs.
+
+`curriculumSourceCommit` is the commit that contains this unit's governed curriculum. It is an ancestor of the packet commit. A packet that names its own commit, or a commit that does not contain this curriculum, is rejected.
 
 ## Qualifications
 
@@ -27,10 +32,10 @@ Check every Cyrillic identity, phonetic statement, instructional explanation, an
 
 ## What approval means
 
-A later approval applies only to version 2.0.0-dev and content-review digest 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627. Confirm review-package digest 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296 before relying on this packet. Any later substantive instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+A later approval applies only to version 2.0.0-dev and unit content-review digest 50b7faa5f800b8fa8fa0ff20453abff7c58eaa07637ff53e14b2fe277f0ad308. Confirm review-package digest 7da06b153d4fd35693ab97e4d6cb401a668860cb27df7ec747a2f031f2576c18 and curriculum source commit fa77148957d35a381814c6477ef28d997aab628a before relying on this packet. Any later substantive change reachable from Unit 1 invalidates this unit's approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
 
-Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment.
+Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
 ## Generator
 
-The deterministic generator and validator live in `app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt`. Regenerate the files in `review/unit-1/` from the packaged curriculum after any instructional change, then review the new digest.
+The deterministic generator and validator live in `app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt` and accept a unit number from 1 through 30. Regenerate the files in `review/unit-1/` from the packaged curriculum after any instructional change, then review the new digest.

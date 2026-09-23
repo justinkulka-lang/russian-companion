@@ -10,8 +10,33 @@
     "packVersion": null,
     "reviewedContentDigest": null,
     "curriculumMappingId": null,
-    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible."
+    "reviewerQualification": null,
+    "notes": "Pack-level status is not a unit approval. Each unit has its own pending review record."
   },
+  "unitReviews": [
+    {
+      "id": "rev-pending-unit-1",
+      "unitNumber": 1,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 1."
+    },
+    {
+      "id": "rev-pending-unit-2",
+      "unitNumber": 2,
+      "status": "PENDING_QUALIFIED_REVIEW",
+      "reviewer": null,
+      "reviewerQualification": null,
+      "packVersion": null,
+      "reviewedContentDigest": null,
+      "curriculumMappingId": null,
+      "notes": "No qualified reviewer has signed Unit 2."
+    }
+  ],
   "sources": [
     {
       "id": "src-unicode-cyrillic",
@@ -2242,12 +2267,12 @@
       "id": "unit-2",
       "title": "Handwriting and additional pronunciation",
       "shortLabel": "Letter review",
-      "topicSummary": "Unit 1 letter review plus book-directed handwriting and pronunciation. Development content: handwriting images and mapped audio are not installed.",
+      "topicSummary": "Content-complete development unit after Unit 1: printed-letter review, then book-directed handwriting and additional pronunciation. Verified handwriting images and mapped pronunciation audio are not in this app. Qualified review and the owned-edition mapping are still pending.",
       "installState": "DEVELOPMENT",
-      "readiness": "NOT_PREPARED",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
       "penguinLesson": 2,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+      "mappingNote": "Proposed Lesson 2 mapping from the publisher's public table of contents: handwriting recognition and additional pronunciation. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
       "prerequisiteUnitNumbers": [
         1
       ],
@@ -2268,9 +2293,7 @@
             "ex-letter-0425"
           ],
           "practiceStepIds": [
-            "u2-st-review-v",
-            "u2-st-review-u",
-            "u2-st-review-h"
+            "u2-st-review-guided"
           ],
           "checkItemIds": [
             "u2-i-в-not-b",
@@ -2310,7 +2333,7 @@
               "id": "u2-st-orient",
               "kind": "ORIENT",
               "title": "Unit 2 — Book handwriting and letter review",
-              "body": "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
+              "body": "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This unit reviews printed letters from Unit 1. Verified handwriting images and mapped pronunciation audio are not in the app, so those parts stay in the book you own.",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -2332,15 +2355,17 @@
           "steps": [
             {
               "id": "u2-st-hw",
-              "kind": "UNAVAILABLE",
-              "title": "Verified handwriting images are not installed",
-              "body": "Print-to-handwriting correspondence needs reviewed images. None are packaged. Copy forms from your book onto paper. The app will not grade the page.",
+              "kind": "BOOK",
+              "title": "Handwritten forms stay in the owned book",
+              "body": "Verified handwriting images are not in this app. Use Lesson 2 in the book you own to see handwritten forms, and copy them onto paper. This app does not describe those forms and does not grade the page.",
               "dominantAction": "Continue",
-              "referenceIds": [],
+              "referenceIds": [
+                "ref-limits"
+              ],
               "itemIds": [],
               "exampleIds": [],
-              "unavailableReason": "No verified handwriting assets are installed.",
-              "bookDirection": "Copy the handwritten forms from Lesson 2 in your book onto paper.",
+              "unavailableReason": null,
+              "bookDirection": "Copy the handwritten forms from Lesson 2 in your book onto paper. This app does not show or grade them.",
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -2375,6 +2400,24 @@
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
+            },
+            {
+              "id": "u2-st-review-guided",
+              "kind": "GUIDED",
+              "title": "Match the printed pair for Б",
+              "body": "Choose the uppercase and lowercase print pair for the same letter.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u2-i-print-б"
+              ],
+              "exampleIds": [
+                "ex-print-letter-0411"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u2-st-review"
             },
             {
               "id": "u2-st-review-v",
@@ -2442,17 +2485,17 @@
           "steps": [
             {
               "id": "u2-st-pron",
-              "kind": "UNAVAILABLE",
-              "title": "Mapped pronunciation audio is not installed",
-              "body": "Use Lesson 2 pronunciation work in your book. App listen-record-compare stays unavailable until reviewer-mapped audio exists.",
+              "kind": "BOOK",
+              "title": "Additional pronunciation stays in the owned book",
+              "body": "No licensed pronunciation audio is mapped to Unit 2. Use the Lesson 2 pronunciation notes in the book you own. This app does not state those sounds and does not score a recording.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-pronunciation"
               ],
               "itemIds": [],
               "exampleIds": [],
-              "unavailableReason": "No unit-mapped licensed audio exists for Unit 2.",
-              "bookDirection": null,
+              "unavailableReason": null,
+              "bookDirection": "Use the Lesson 2 pronunciation notes in your copy. Model audio is not in this app.",
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -3103,6 +3146,9 @@
       "advancement": null
     }
   ],
+  "audioAssets": [],
+  "handwritingAssets": [],
+  "ownedEditionMappings": [],
   "admissions": {
     "generatedRussianWords": 0,
     "penguinProseAssets": 0,

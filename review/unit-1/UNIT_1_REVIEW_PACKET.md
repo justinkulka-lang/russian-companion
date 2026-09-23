@@ -9,12 +9,15 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 49eae12f175574add477ba4f15224650abaa2293
-- Content-review SHA-256: 048d9e59d3a8f4fea4f88a392d40d28b5eb62677f78f5461fe9ff2bf61a6d627
-- Review-package SHA-256: 1a6d633f8bbb716d27a97ba4e44825ea4cb88208334d0e167f111854fcdcd296
-- Repository source SHA-256: 82aa64e96d2ef5edbba5ae9bfb58ffd9b39fbe06741ecff5b26cfd9e322783fe
+- Curriculum source commit: fa77148957d35a381814c6477ef28d997aab628a
+- Unit content-review SHA-256: 50b7faa5f800b8fa8fa0ff20453abff7c58eaa07637ff53e14b2fe277f0ad308
+- Pack content-review SHA-256: 2c7bc0681dd85b0437147e1c39bcc1793ed75b8916ee61c5f323e92e0685987f
+- Review-package SHA-256: 7da06b153d4fd35693ab97e4d6cb401a668860cb27df7ec747a2f031f2576c18
+- Repository source SHA-256: 08d50d2137a2af295cfd4446d4c7cfa811547c129dd12cab8da0fb68148553d3
 
-The content-review digest is what a reviewer approves. It covers instructional substance, mapping notes, sources, and rights. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
+The unit content-review digest is what a reviewer of Unit 1 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
+
+The pack content-review digest is the repository aggregate. It is not an approval of this unit, and it is not part of the review-package digest.
 
 The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.
 
@@ -39,7 +42,7 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 
 ## Records
 
-### PACK_REVIEW `rev-pending-units-1-2`
+### UNIT_REVIEW `rev-pending-unit-1`
 
 - Objectives: none
 - Sessions: none
@@ -47,14 +50,15 @@ No reviewer has signed this packet. Reviewer identity, qualification, review dat
 - Rights: none
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81685876b254af2bc483b7f5c4f29a44afe132a52e0705c510cb863cf21f0f5b
+- Content hash: ac6016538e32f5248a79efa112112696c23e9229466416c3ad2ccbfdc41a9ee9
 
 status=PENDING_QUALIFIED_REVIEW
 reviewer=
+reviewerQualification=
 packVersion=
 reviewedContentDigest=
 curriculumMappingId=
-notes=No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible.
+notes=No qualified reviewer has signed Unit 1.
 
 ### UNIT `unit-1`
 

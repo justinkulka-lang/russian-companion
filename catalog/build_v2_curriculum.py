@@ -4,11 +4,12 @@
 Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
-Unit 1 is a content-complete DEVELOPMENT unit awaiting qualified review
-and an owned-edition mapping. It is not INSTALLED. Unit 2 stays
-DEVELOPMENT until handwriting assets and mapped audio exist. Advancement
-checks are letter identities, print pairs, confusable forms, and signs —
-never product-policy quizzes.
+Units 1 and 2 are content-complete DEVELOPMENT units awaiting qualified
+review and an owned-edition mapping. Neither is INSTALLED. Unit 2 reviews
+printed letters in the app and sends handwriting and additional
+pronunciation to the owned book. Verified handwriting images and mapped
+audio are not invented. Advancement checks are letter identities, print
+pairs, confusable forms, and signs — never product-policy quizzes.
 """
 
 from __future__ import annotations
@@ -57,8 +58,23 @@ REVIEW_PENDING = {
     "packVersion": None,
     "reviewedContentDigest": None,
     "curriculumMappingId": None,
-    "notes": "No qualified Russian Curriculum Reviewer has signed this pack. Phonetic English notes remain unverified. Pending content may run in development and is release-ineligible.",
+    "reviewerQualification": None,
+    "notes": "Pack-level status is not a unit approval. Each unit has its own pending review record.",
 }
+
+
+def pending_unit_review(number: int) -> dict:
+    return {
+        "id": f"rev-pending-unit-{number}",
+        "unitNumber": number,
+        "status": "PENDING_QUALIFIED_REVIEW",
+        "reviewer": None,
+        "reviewerQualification": None,
+        "packVersion": None,
+        "reviewedContentDigest": None,
+        "curriculumMappingId": None,
+        "notes": f"No qualified reviewer has signed Unit {number}.",
+    }
 
 UNITS_3_30 = [
     (3, "Everyday phrases", "Everyday phrases, naming things, basic grammar, and gender"),
@@ -913,7 +929,7 @@ def build() -> dict:
                     "u2-st-orient",
                     "ORIENT",
                     "Unit 2 — Book handwriting and letter review",
-                    "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This development slice reviews printed letters. Verified handwriting images and mapped pronunciation audio are not installed.",
+                    "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This unit reviews printed letters from Unit 1. Verified handwriting images and mapped pronunciation audio are not in the app, so those parts stay in the book you own.",
                     bookDirection="Open Lesson 2 in your copy for handwritten forms and the author's pronunciation notes.",
                 ),
             ],
@@ -926,11 +942,11 @@ def build() -> dict:
             [
                 step(
                     "u2-st-hw",
-                    "UNAVAILABLE",
-                    "Verified handwriting images are not installed",
-                    "Print-to-handwriting correspondence needs reviewed images. None are packaged. Copy forms from your book onto paper. The app will not grade the page.",
-                    unavailableReason="No verified handwriting assets are installed.",
-                    bookDirection="Copy the handwritten forms from Lesson 2 in your book onto paper.",
+                    "BOOK",
+                    "Handwritten forms stay in the owned book",
+                    "Verified handwriting images are not in this app. Use Lesson 2 in the book you own to see handwritten forms, and copy them onto paper. This app does not describe those forms and does not grade the page.",
+                    bookDirection="Copy the handwritten forms from Lesson 2 in your book onto paper. This app does not show or grade them.",
+                    referenceIds=["ref-limits"],
                 ),
             ],
             15,
@@ -947,6 +963,15 @@ def build() -> dict:
                     "Review the printed letters from Unit 1, especially Latin look-alikes and print pairs.",
                     referenceIds=["ref-cyrillic-print", "ref-confusable"],
                     exampleIds=["ex-letter-0412", "ex-letter-0423", "ex-letter-0425", "ex-print-letter-0411"],
+                ),
+                step(
+                    "u2-st-review-guided",
+                    "GUIDED",
+                    "Match the printed pair for Б",
+                    "Choose the uppercase and lowercase print pair for the same letter.",
+                    itemIds=["u2-i-print-б"],
+                    exampleIds=["ex-print-letter-0411"],
+                    remediationStepId="u2-st-review",
                 ),
                 step(
                     "u2-st-review-v",
@@ -985,10 +1010,10 @@ def build() -> dict:
             [
                 step(
                     "u2-st-pron",
-                    "UNAVAILABLE",
-                    "Mapped pronunciation audio is not installed",
-                    "Use Lesson 2 pronunciation work in your book. App listen-record-compare stays unavailable until reviewer-mapped audio exists.",
-                    unavailableReason="No unit-mapped licensed audio exists for Unit 2.",
+                    "BOOK",
+                    "Additional pronunciation stays in the owned book",
+                    "No licensed pronunciation audio is mapped to Unit 2. Use the Lesson 2 pronunciation notes in the book you own. This app does not state those sounds and does not score a recording.",
+                    bookDirection="Use the Lesson 2 pronunciation notes in your copy. Model audio is not in this app.",
                     referenceIds=["ref-pronunciation"],
                 ),
             ],
@@ -1164,7 +1189,7 @@ def build() -> dict:
             "RECOGNITION",
             ["u2-st-review"],
             example_ids_by_objective.get("obj-u2-review", []) + ["ex-letter-0412", "ex-letter-0423", "ex-letter-0425"],
-            ["u2-st-review-v", "u2-st-review-u", "u2-st-review-h"],
+            ["u2-st-review-guided"],
             ["u2-i-в-not-b", "u2-i-у-not-y", "u2-i-х-not-x", "u2-i-print-б", "u2-i-я-identity"],
             ["u2-st-review"],
         ),
@@ -1317,9 +1342,11 @@ def build() -> dict:
             2,
             "Handwriting and additional pronunciation",
             "Letter review",
-            "Unit 1 letter review plus book-directed handwriting and pronunciation. Development content: handwriting images and mapped audio are not installed.",
+            "Content-complete development unit after Unit 1: printed-letter review, then book-directed handwriting and additional pronunciation. Verified handwriting images and mapped pronunciation audio are not in this app. Qualified review and the owned-edition mapping are still pending.",
             unit2_sessions,
             [1],
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 2 mapping from the publisher's public table of contents: handwriting recognition and additional pronunciation. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
         ),
     ]
     for number, short, title in UNITS_3_30:
@@ -1349,6 +1376,7 @@ def build() -> dict:
         "packVersion": 2,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
+        "unitReviews": [pending_unit_review(1), pending_unit_review(2)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH],
         "rights": RIGHTS,
         "letters": letters,
@@ -1356,6 +1384,9 @@ def build() -> dict:
         "items": items,
         "references": references,
         "units": units,
+        "audioAssets": [],
+        "handwritingAssets": [],
+        "ownedEditionMappings": [],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,
