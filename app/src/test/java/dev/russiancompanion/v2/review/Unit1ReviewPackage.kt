@@ -26,11 +26,18 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  * Commit that contains the curriculum, validators, and review pipeline.
  * Review packets are generated in a later commit, so this value is not HEAD.
  */
-internal const val CURRICULUM_SOURCE_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
+internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
-internal const val UNIT1_REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
+internal const val UNITS_6_10_CURRICULUM_COMMIT = "c9f23afd219681319554d90424f2d59fd550cadc"
 
-internal const val REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
+internal fun curriculumCommitForUnit(unitNumber: Int): String =
+    if (unitNumber in 1..5) UNITS_1_5_CURRICULUM_COMMIT else UNITS_6_10_CURRICULUM_COMMIT
+
+internal const val CURRICULUM_SOURCE_COMMIT = UNITS_6_10_CURRICULUM_COMMIT
+
+internal const val UNIT1_REVIEW_SOURCE_COMMIT = UNITS_1_5_CURRICULUM_COMMIT
+
+internal const val REVIEW_SOURCE_COMMIT = UNITS_1_5_CURRICULUM_COMMIT
 
 internal fun reviewPacketName(unitNumber: Int) = "UNIT_${unitNumber}_REVIEW_PACKET.md"
 
@@ -192,6 +199,36 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Lesson 5",
         "46-55",
         "Asking questions, the prepositional case, indeclinable nouns, and dialogue work",
+    ),
+    StructuralMappingObservation(
+        6,
+        "Lesson 6",
+        "56-67",
+        "Possession, destinations and movement, the accusative, and personal-name orientation",
+    ),
+    StructuralMappingObservation(
+        7,
+        "Lesson 7",
+        "68-80",
+        "Adjectives, agreement, question and demonstrative forms, case agreement, and introductory adverbs",
+    ),
+    StructuralMappingObservation(
+        8,
+        "Lesson 8",
+        "81-91",
+        "Noun plurals, spelling rules, and availability",
+    ),
+    StructuralMappingObservation(
+        9,
+        "Lesson 9",
+        "92-106",
+        "Cardinal numbers, quantity-driven genitive, and neutral quantity practice",
+    ),
+    StructuralMappingObservation(
+        10,
+        "Lesson 10",
+        "107-121",
+        "Possession and existence, genitive pronouns and prepositions, and genitive adjective agreement",
     ),
 )
 
@@ -613,11 +650,12 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
             errors += "Review package is not for Unit $unitNumber"
         }
         val recordedCommit = jsonStringField(manifest, "curriculumSourceCommit")
-        if (recordedCommit != CURRICULUM_SOURCE_COMMIT) {
+        val unitCommit = curriculumCommitForUnit(unitNumber)
+        if (recordedCommit != unitCommit) {
             errors += "Package curriculum source commit does not match the curriculum revision"
         }
         if (recordedCommit != null) {
-            errors += curriculumSourceCommitErrors(recordedCommit, reviewRepositoryRoot())
+            errors += curriculumSourceCommitErrors(recordedCommit, reviewRepositoryRoot(), unitNumber)
         }
         if (unit != null && jsonStringField(manifest, "installState") != unit.installState) {
             errors += "Package does not keep Unit $unitNumber in ${unit.installState}"
@@ -875,7 +913,7 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
         append("- Schema version: $UNIT1_REVIEW_SCHEMA_VERSION\n")
         append("- Application: $UNIT1_REVIEW_APPLICATION_ID\n")
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
-        append("- Curriculum source commit: $CURRICULUM_SOURCE_COMMIT\n")
+        append("- Curriculum source commit: ${curriculumCommitForUnit(review.unitNumber)}\n")
         append("- Unit content-review SHA-256: ${review.contentReviewDigest}\n")
         append("- Mapping-package SHA-256: ${review.mappingPackageDigest}\n")
         append("- Pack content-review SHA-256: ${review.packContentReviewDigest}\n")
@@ -937,7 +975,7 @@ private fun renderManifest(pack: V2CurriculumPack, review: Unit1ReviewPackage): 
         append("  \"applicationId\": ${jsonString(UNIT1_REVIEW_APPLICATION_ID)},\n")
         append("  \"versionName\": ${jsonString(UNIT1_REVIEW_VERSION_NAME)},\n")
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
-        append("  \"curriculumSourceCommit\": ${jsonString(CURRICULUM_SOURCE_COMMIT)},\n")
+        append("  \"curriculumSourceCommit\": ${jsonString(curriculumCommitForUnit(review.unitNumber))},\n")
         append("  \"contentReviewDigest\": ${jsonString(review.contentReviewDigest)},\n")
         append("  \"mappingPackageDigest\": ${jsonString(review.mappingPackageDigest)},\n")
         append("  \"packContentReviewDigest\": ${jsonString(review.packContentReviewDigest)},\n")
@@ -1067,14 +1105,14 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         Schema version: $UNIT1_REVIEW_SCHEMA_VERSION
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
-        Curriculum source commit: $CURRICULUM_SOURCE_COMMIT
+        Curriculum source commit: ${curriculumCommitForUnit(review.unitNumber)}
         Unit content-review digest: ${review.contentReviewDigest}
         Mapping-package digest: ${review.mappingPackageDigest}
         Pack content-review digest: ${review.packContentReviewDigest}
         Review-package digest: ${review.reviewPackageDigest}
         Repository source digest: ${review.repositorySourceDigest}
 
-        This packet was generated from the packaged curriculum at curriculum source commit $CURRICULUM_SOURCE_COMMIT. That commit contains the reviewed curriculum. This packet commit records that identity and does not perform review.
+        This packet was generated from the packaged curriculum at curriculum source commit ${curriculumCommitForUnit(review.unitNumber)}. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
         ## Digests
 
@@ -1102,7 +1140,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit $CURRICULUM_SOURCE_COMMIT before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit ${curriculumCommitForUnit(review.unitNumber)} before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
@@ -1265,7 +1303,28 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
             "objectiveId=${item.objectiveId}",
             "containsGeneratedRussian=${item.containsGeneratedRussian}",
             "reviewStatus=${item.reviewStatus}",
-        ).joinToString("\n"),
+        ).let { lines ->
+            val withRationales = if (item.distractorRationales.isEmpty()) {
+                lines
+            } else {
+                lines + "distractorRationales=${item.distractorRationales.joinToString(" | ")}"
+            }
+            val assessment = item.assessment ?: return@let withRationales
+            withRationales + listOf(
+                "testedFeature=${assessment.testedFeature}",
+                "evidenceMode=${assessment.evidenceMode}",
+                "contrastSetId=${assessment.contrastSetId}",
+                "cueLanguage=${assessment.cueLanguage}",
+                "independent=${assessment.independent}",
+                "answerSourceIds=${assessment.answerSourceIds.joinToString(" | ")}",
+                "distractorSourceIds=${assessment.distractorSourceIds.joinToString(" | ")}",
+                "distractorDifference=${assessment.distractorDifference.joinToString(" | ")}",
+                "whyAnswerDemonstratesObjective=${assessment.whyAnswerDemonstratesObjective}",
+                "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
+                "relationKind=${assessment.relationKind}",
+                "relationParticipantIds=${assessment.relationParticipantIds.joinToString(" | ")}",
+            )
+        }.joinToString("\n"),
         sourceId = item.sourceId,
         rightsIds = rightsIds(pack, item.sourceId),
         classification = "",
@@ -1518,7 +1577,7 @@ private fun reviewPackageDigest(
             "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
             "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
-            "curriculumSourceCommit" to canonStr(CURRICULUM_SOURCE_COMMIT),
+            "curriculumSourceCommit" to canonStr(curriculumCommitForUnit(unitNumber)),
             "contentReviewDigest" to canonStr(contentReviewDigest),
             "mappingPackageDigest" to canonStr(mappingPackageDigest),
             "unitReviewStatus" to canonStr(linguisticReviewStatus),
@@ -1572,7 +1631,7 @@ private fun canonStr(value: String): String = jsonString(value)
 internal fun reviewRepositoryRoot(): File =
     listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 
-internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File): List<String> {
+internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File, unitNumber: Int): List<String> {
     val errors = mutableListOf<String>()
     if (!Regex("[0-9a-f]{40}").matches(recorded)) {
         errors += "Curriculum source commit is not a full commit id"
@@ -1596,16 +1655,11 @@ internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File
     }
     val current = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
     val currentText = if (current.isFile) current.readText() else ""
-    if (currentText != committed) {
-        errors += "Curriculum source commit does not contain this revision's governed curriculum"
-    }
     try {
         val recordedPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(committed)
         val headPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(currentText)
-        (1..30).forEach { number ->
-            if (V2Validator.unitContentReviewDigest(recordedPack, number) != V2Validator.unitContentReviewDigest(headPack, number)) {
-                errors += "Unit $number content-review digest at the curriculum source commit does not match this revision"
-            }
+        if (V2Validator.unitContentReviewDigest(recordedPack, unitNumber) != V2Validator.unitContentReviewDigest(headPack, unitNumber)) {
+            errors += "Unit $unitNumber content-review digest at the curriculum source commit does not match this revision"
         }
     } catch (_: RuntimeException) {
         errors += "Curriculum source commit does not contain a readable curriculum"

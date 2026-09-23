@@ -9,7 +9,7 @@ review and an owned-edition mapping. Units 3–5 are DEVELOPMENT units with
 proposed curriculum taken only from frozen CC BY-SA 4.0 sources. They are
 not installed, not review-approved, and not mapping-approved. Units 1–2
 advancement checks are letter identities, print pairs, confusable forms,
-and signs. Units 3–5 checks use admitted source records only.
+and signs. Units 3–10 checks use admitted source records only. Units 6–10 are the same kind of proposed, review-pending curriculum.
 """
 
 from __future__ import annotations
@@ -18,6 +18,7 @@ import json
 from pathlib import Path
 
 from units_3_5_intake import build_units_3_5
+from units_6_10_intake import build_units_6_10
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -1437,11 +1438,17 @@ def build() -> dict:
         }
 
     proposed = build_units_3_5()
+    later = build_units_6_10()
     items.extend(proposed["items"])
+    items.extend(later["items"])
     examples.extend(proposed["examples"])
+    examples.extend(later["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in later["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
+    references.extend(later["references"])
 
     units = [
         development_unit(
@@ -1501,8 +1508,35 @@ def build() -> dict:
             minimum_checks=proposed["units"][2]["minimum_checks"],
         ),
     ]
+    later_by_number = {unit["number"]: unit for unit in later["units"]}
     for number, short, title in UNITS_3_30:
-        if number <= 5:
+        if number < 6 or number > 10:
+            continue
+        proposed_unit = later_by_number[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                (
+                    "Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed."
+                    if number == 7
+                    else f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
+                ),
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED" if number == 7 else "CONTENT_COMPLETE_REVIEW_PENDING",
+                mapping_note=(
+                    "The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                    if number == 7
+                    else "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=proposed_unit["minimum_checks"],
+            )
+        )
+    for number, short, title in UNITS_3_30:
+        if number <= 10:
             continue
         units.append(
             {
@@ -1530,7 +1564,7 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 6)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 11)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
         "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
@@ -1541,8 +1575,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": proposed["provenance"],
-        "authoredEnglishRecords": proposed["authored"],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

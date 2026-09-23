@@ -15,6 +15,14 @@ internal val CLOSED_INSTALL_STATES = setOf(
     "NOT_YET_INSTALLED",
 )
 
+internal val GRAMMAR_ITEM_KINDS = setOf(
+    "FORM_SELECTION",
+    "CASE_RECOGNITION",
+    "CONTRAST_SELECTION",
+    "PATTERN_CLASSIFICATION",
+    "NUMBER_FORM_SELECTION",
+)
+
 internal val CLOSED_ITEM_KINDS = setOf(
     "LETTER_IDENTITY",
     "PRINT_PAIR",
@@ -27,7 +35,7 @@ internal val CLOSED_ITEM_KINDS = setOf(
     "SOURCE_QUESTION",
     "SOURCE_CASE",
     "SOURCE_INDECLINABLE",
-)
+) + GRAMMAR_ITEM_KINDS
 
 internal val LINGUISTIC_REFERENCE_CLASSIFICATION = "LINGUISTIC_INSTRUCTION"
 
@@ -230,6 +238,22 @@ internal data class V2Example(
 )
 
 @Serializable
+internal data class V2Assessment(
+    val testedFeature: String,
+    val evidenceMode: String,
+    val contrastSetId: String,
+    val cueLanguage: String,
+    val independent: Boolean,
+    val answerSourceIds: List<String>,
+    val distractorSourceIds: List<String>,
+    val distractorDifference: List<String>,
+    val whyAnswerDemonstratesObjective: String,
+    val contrastMembers: List<String>,
+    val relationKind: String = "",
+    val relationParticipantIds: List<String> = emptyList(),
+)
+
+@Serializable
 internal data class V2CheckItem(
     val id: String,
     val kind: String,
@@ -243,6 +267,8 @@ internal data class V2CheckItem(
     val sourceId: String,
     val reviewStatus: String,
     val containsGeneratedRussian: Boolean = false,
+    val distractorRationales: List<String> = emptyList(),
+    val assessment: V2Assessment? = null,
 )
 
 @Serializable

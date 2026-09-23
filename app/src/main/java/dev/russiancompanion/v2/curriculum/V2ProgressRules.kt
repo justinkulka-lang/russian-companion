@@ -50,6 +50,7 @@ internal fun installLabel(unit: V2Unit): String = when (unit.installState) {
 }
 
 internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
+    "NOT_PREPARED" -> "Not prepared"
     "CONTENT_COMPLETE_REVIEW_PENDING" -> "Content complete, review pending"
     "REVIEW_APPROVED" -> "Review approved"
     "MAPPING_APPROVED" -> "Mapping approved"
