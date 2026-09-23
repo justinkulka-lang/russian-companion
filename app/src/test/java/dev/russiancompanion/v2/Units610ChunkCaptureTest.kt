@@ -14,6 +14,7 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performScrollToIndex
 import androidx.compose.ui.unit.dp
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
@@ -47,20 +48,43 @@ class Units610ChunkCaptureTest {
     }
 
     @Test
-    fun unitConceptCardsAtNormalFont() {
-        listOf(6, 7, 8, 9, 10).forEach { number ->
-            openFirstConcept(number)
-            capture("unit$number-concept-card-normal")
-        }
-    }
+    fun unitSixConceptCardAtNormalFont() = openAndCapture(6, "unit6-concept-card-normal")
+
+    @Test
+    fun unitSevenConceptCardAtNormalFont() = openAndCapture(7, "unit7-concept-card-normal")
+
+    @Test
+    fun unitEightConceptCardAtNormalFont() = openAndCapture(8, "unit8-concept-card-normal")
+
+    @Test
+    fun unitNineConceptCardAtNormalFont() = openAndCapture(9, "unit9-concept-card-normal")
+
+    @Test
+    fun unitTenConceptCardAtNormalFont() = openAndCapture(10, "unit10-concept-card-normal")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitConceptCardsAtLargeFont() {
-        listOf(6, 7, 8, 9, 10).forEach { number ->
-            openFirstConcept(number)
-            capture("unit$number-concept-card-large-font")
-        }
+    fun unitSixConceptCardAtLargeFont() = openAndCapture(6, "unit6-concept-card-large-font")
+
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun unitSevenConceptCardAtLargeFont() = openAndCapture(7, "unit7-concept-card-large-font")
+
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun unitEightConceptCardAtLargeFont() = openAndCapture(8, "unit8-concept-card-large-font")
+
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun unitNineConceptCardAtLargeFont() = openAndCapture(9, "unit9-concept-card-large-font")
+
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun unitTenConceptCardAtLargeFont() = openAndCapture(10, "unit10-concept-card-large-font")
+
+    private fun openAndCapture(number: Int, name: String) {
+        openFirstConcept(number)
+        capture(name)
     }
 
     private fun openFirstConcept(number: Int) {
@@ -74,11 +98,16 @@ class Units610ChunkCaptureTest {
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
-        compose.onNodeWithText("Unit $number ·", substring = true).performScrollTo().performClick()
+        openUnitRow(number)
         compose.onNodeWithText(session.title).performScrollTo().performClick()
         compose.onNodeWithTag("v2-step-title").assertIsDisplayed()
         assertAtContentInset("v2-step-title")
         assertAtContentInset("v2-session-continue")
+    }
+
+    private fun openUnitRow(number: Int) {
+        compose.onNodeWithTag("v2-content").performScrollToIndex(number)
+        compose.onNodeWithTag("v2-unit-row-$number").performScrollTo().performClick()
     }
 
     private fun assertAtContentInset(tag: String) {
