@@ -11,12 +11,12 @@ Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
-- Unit content-review SHA-256: c91b68fe05c71f2987ec20a86dc3cadd5a6120b99bfc83f2313044bdfea1b8c9
+- Curriculum source commit: c9f23afd219681319554d90424f2d59fd550cadc
+- Unit content-review SHA-256: d717a7a94e6151c43e02af3f067710594ede0efac9a8bd87a00c28c0426b63a0
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
-- Review-package SHA-256: edd199e95eda5112f17caae958cb9afd36c87a5614f11abf15e975733bf12d9f
-- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
+- Pack content-review SHA-256: 74b9d02735467b27ca3fab75e6b88c408d1950829b7826673a3244ec77e8504f
+- Review-package SHA-256: b954685ae5216f9a2caa54f397e71a1da1aa3ff9f6f7d0743ed18aa53fedf44b
+- Repository source SHA-256: c6e632a8a4fc6957594bc61d0200d48207d0d437a6ab465975c9a083aecd9526
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,13 +151,13 @@ remediation=u7-st-rem-endings
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3eb8d95c1887f39a922c699b4dc49c0b3244ac85ed0379407409a2643627b575
+- Content hash: a1fafa6adafc704af11a65c745fb9d604013dc2dfdc01eb4850dd9d2e46fd77c
 
 title=Identify the admitted spelling
 kind=RECOGNITION
 unitNumber=7
-instruction=u7-st-orient,u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3
-examples=ex-u7-spelling-0,ex-or-u7-spelling-1,ex-or-u7-spelling-2
+instruction=u7-st-orient,u7-st-teach-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4
+examples=ex-u7-spelling-0,ex-or-u7-spelling-1,ex-or-u7-spelling-2,ex-or-u7-spelling-3,ex-or-u7-spelling-4
 practice=u7-st-guided-spelling-1
 checks=u7-i-spelling-1,u7-i-spelling-2,u7-i-spelling-3
 remediation=u7-st-rem-spelling
@@ -750,12 +750,12 @@ remediationStepId=u7-st-rem-endings
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 56cda54a57d9a377489eb5daf092c227012daa21301f5f98032502e3ceedb535
+- Content hash: 97c24c080d26caf2b9b83cf6b4502695f191db33fdcf2adb7ac63c8cd2833ae9
 
 title=Identify the admitted spelling
 estimatedMinutes=12
 objectives=obj-u7-spelling
-steps=u7-st-teach-spelling-1,u7-st-guided-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-rem-spelling,u7-st-check-spelling
+steps=u7-st-teach-spelling-1,u7-st-guided-spelling-1,u7-st-teach-spelling-2,u7-st-teach-spelling-3,u7-st-teach-spelling-4,u7-st-rem-spelling,u7-st-check-spelling
 
 ### STEP `u7-st-teach-spelling-1`
 
@@ -765,11 +765,11 @@ steps=u7-st-teach-spelling-1,u7-st-guided-spelling-1,u7-st-teach-spelling-2,u7-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: da10acca748d0774c60a7510baf3e96a4c53e3f370db28ac375235f9f3fe9cd6
+- Content hash: 15dafbe2a1782990f70f13e251487286a3224f1f9827ef41ad14b9ad85120c54
 
 kind=TEACH
 title=Admitted lines
-body=хорошее письмо — good letter. хоро́шее — good. 
+body=хорошее письмо — good letter. хоро́ший — good. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -831,7 +831,29 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f400e53fc93347da4ae9e73eb97dcf9bf773d43cfc101c4203fa988751ab3d16
+- Content hash: 4e5e340bbb9d9c0a613b510a8f442aea41bf1d10a0962d86de83080033384992
+
+kind=TEACH
+title=Admitted lines
+body=хоро́шая — good. хоро́шее — good. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u7-spelling-2,ex-or-u7-spelling-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-teach-spelling-4`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-spelling
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6f76c2121bb7f9a88ca6a232db9d96153e200d12605b3939a4afbf61b1d85c41
 
 kind=TEACH
 title=Admitted lines
@@ -839,7 +861,7 @@ body=хоро́шие — good.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u7-spelling-2
+examples=ex-or-u7-spelling-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2028,11 +2050,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 087cd5d80fbdc1fc0288caa879c18692660a9591024e89ae298cb12f0afbf396
+- Content hash: 43a8f35be9065fec59e501ca12e9e68b5dc3bdb9a0fb6546033a25f47bf911c3
 
 kind=LEXICAL
 letterId=
-display=хоро́шее
+display=хоро́ший
 note=good
 objectiveId=obj-u7-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2045,7 +2067,41 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72a7cd112d162f983d482416212e85f8ea18f63c42e28c2c24a25f61d0efb5f6
+- Content hash: fcb20572c7e84a99be257ccbadfd8516f5fe6eb6a237efda1d902ffa8f48e22d
+
+kind=LEXICAL
+letterId=
+display=хоро́шая
+note=good
+objectiveId=obj-u7-spelling
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u7-spelling-3`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2a3eaa63d29252110cf422432c20ff55f95b7f8f6c0049492a631c2b9c8e1264
+
+kind=LEXICAL
+letterId=
+display=хоро́шее
+note=good
+objectiveId=obj-u7-spelling
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u7-spelling-4`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d676d32252f132600bebd7e0ceb0fd75bd8f3ea245ebce7dc39fa17bfe6e281f
 
 kind=LEXICAL
 letterId=
@@ -2470,7 +2526,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d98ad00745907c7f2ac2085b5bbba6e5c36fd5e61dcc504a8cb8d1f1a62fa748
+- Content hash: 0be918cc880199132bf67d4e840b297ac6028fc5231d3d6da9b2aed9f0752d04
 
 kind=FORM_SELECTION
 language=en
@@ -2478,85 +2534,91 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=но́вая
 options=но́вый | но́вая
 answer=но́вый
-feedback=Does the answer show the governed row of the same word? но́вый.
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-default
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_DICTIONARY
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-default-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-default-0
 distractorSourceIds= | prov-ex-or-u7-default-1
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вый | но́вая
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-default-1 | prov-ex-or-u7-default-0 | prov-ex-or-u7-default-1
 
 ### GUIDED_PRACTICE `u7-g-endings-0`
 
 - Objectives: obj-u7-endings
 - Sessions: u7-s-endings
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f06188deeb9675d2a2b519b11f6f2beca21c5c12d542ee624ae12dcb0a263d7a
+- Content hash: 5650aef2493aa107bd010ce6afeb6c0068aba0f889958df683d65e4d1d6fca96
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=карандаш
-options=новый карандаш | новая машина
-answer=новый карандаш
-feedback=Does the answer agree with the shown word? новый карандаш.
+prompt=Which admitted form is the other row of the shown form?
+promptLetter=но́вый
+options=но́вая | но́вое | но́вый
+answer=но́вая
+feedback=Does the admitted record show the governed contrast? но́вая.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
+distractorRationales= | This form is another row of the same word. | This form repeats the shown row of the same word.
 testedFeature=ADJECTIVE_AGREEMENT
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-endings-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u7-endings-0-ru
-distractorSourceIds= | prov-ex-u7-endings-1-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=новый карандаш | новая машина
+answerSourceIds=prov-ex-or-u7-endings-8
+distractorSourceIds= | prov-ex-or-u7-endings-9 | prov-ex-or-u7-endings-7
+distractorDifference= | This form is another row of the same word. | This form repeats the shown row of the same word.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вая | но́вое | но́вый
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-8 | prov-ex-or-u7-endings-9 | prov-ex-or-u7-endings-7
 
 ### GUIDED_PRACTICE `u7-g-spelling-0`
 
 - Objectives: obj-u7-spelling
 - Sessions: u7-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c214cc8ffdcbc1ca691f6e82216a47390f8944fdd222efdfd3b2e25254ff2f10
+- Content hash: b88e82d114c0e4f832b344c05d87a486845027161c2ca519a93aaad98a680957
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the shown line use?
-promptLetter=хорошее письмо
-options=e | и
-answer=e
-feedback=Does this admitted label name the pattern of the shown line? e.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=хоро́шее
+options=хоро́шие | хоро́шее
+answer=хоро́шие
+feedback=Does the admitted record show the governed contrast? хоро́шие.
 objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the other frozen spelling, not the spelling of the shown line.
+distractorRationales= | This form is the other row of the same word, not the plural row.
 testedFeature=ADJECTIVE_SPELLING
-evidenceMode=FEATURE_LABEL
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u7-spelling-x-0
-distractorSourceIds= | prov-u7-spelling-x-1
-distractorDifference= | This spelling is the other frozen spelling, not the spelling of the shown line.
-whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
-contrastMembers=e | и
+answerSourceIds=prov-ex-or-u7-spelling-4
+distractorSourceIds= | prov-ex-or-u7-spelling-3
+distractorDifference= | This form is the other row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́шие | хоро́шее
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-spelling-3 | prov-ex-or-u7-spelling-4 | prov-ex-or-u7-spelling-3
 
 ### GUIDED_PRACTICE `u7-g-question-0`
 
@@ -2566,7 +2628,7 @@ contrastMembers=e | и
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3b804894b9dbc6c45b060981fc38f91a050fdbe941cb8a4513a67d4b07a3d9a
+- Content hash: 044b6d2163dc12a8abd509f20224f7385c9da184e338df98881bec669e79c308
 
 kind=FORM_SELECTION
 language=en
@@ -2574,21 +2636,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=како́й
 options=каки́е | кака́я
 answer=каки́е
-feedback=Does the answer show the governed row of the same word? каки́е.
+feedback=Does the admitted record show the governed contrast? каки́е.
 objectiveId=obj-u7-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the plural row.
 testedFeature=QUESTION_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-question-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-question-3
 distractorSourceIds= | prov-ex-or-u7-question-1
 distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=каки́е | кака́я
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-question-0 | prov-ex-or-u7-question-3 | prov-ex-or-u7-question-1
 
 ### GUIDED_PRACTICE `u7-g-demonstrative-0`
 
@@ -2598,7 +2662,7 @@ contrastMembers=каки́е | кака́я
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 004efc88d4e474b52f2502f255f98803a11e7806abd489729ca6d83da5fe7750
+- Content hash: f2f14d2de3f4a4e31bea16cd7490474e97e6106ae19b1a18f485093d42f2ba09
 
 kind=FORM_SELECTION
 language=en
@@ -2606,21 +2670,23 @@ prompt=Which admitted form does the shown line use?
 promptLetter=эти хорошие новые студенты
 options=э́ти | э́та
 answer=э́ти
-feedback=Does the answer identify the governed form in the shown line? э́ти.
+feedback=Does the admitted record show the governed contrast? э́ти.
 objectiveId=obj-u7-demonstrative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, and the shown line uses another row.
 testedFeature=DEMONSTRATIVE_AGREEMENT
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u7-demonstrative-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-demonstrative-3
 distractorSourceIds= | prov-ex-or-u7-demonstrative-1
 distractorDifference= | This form is the other row of the same word, and the shown line uses another row.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=э́ти | э́та
+relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
+relationParticipantIds=prov-ex-u7-demonstrative-0-ru | prov-ex-or-u7-demonstrative-3 | prov-ex-or-u7-demonstrative-1
 
 ### GUIDED_PRACTICE `u7-g-place-0`
 
@@ -2630,7 +2696,7 @@ contrastMembers=э́ти | э́та
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e164942e594dfe1e062ae465bd5a22866e6bbce474fc5f82c711a996257f4704
+- Content hash: 7e390206af787f216261690280aab09a72726270e193d4eff252fb1217401d26
 
 kind=FORM_SELECTION
 language=en
@@ -2638,21 +2704,23 @@ prompt=Which admitted form is the place row of the shown form?
 promptLetter=но́вый
 options=но́вом | но́вую
 answer=но́вом
-feedback=Does the answer show the governed row of the same word? но́вом.
+feedback=Does the admitted record show the governed contrast? но́вом.
 objectiveId=obj-u7-place
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the object row of the same word, not the place row.
 testedFeature=PLACE_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-place-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-place-4
 distractorSourceIds= | prov-ex-or-u7-place-5
 distractorDifference= | This form is the object row of the same word, not the place row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вом | но́вую
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-place-3 | prov-ex-or-u7-place-4 | prov-ex-or-u7-place-5
 
 ### GUIDED_PRACTICE `u7-g-objectadj-0`
 
@@ -2662,7 +2730,7 @@ contrastMembers=но́вом | но́вую
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f48fbd8d377b5c7fe8b8ee5ffe3783dc3877f95d665cc8d715ace98d8e411602
+- Content hash: 7f1fba25da03b536a45f0b1ef518bb8ca58dad3019c33453a684cbf7f3e7a956
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2670,21 +2738,23 @@ prompt=Which admitted form is the animate object row of the shown form?
 promptLetter=но́вый
 options=но́вого | но́вую
 answer=но́вого
-feedback=Does the answer show the governed row of the same word? но́вого.
+feedback=Does the admitted record show the governed contrast? но́вого.
 objectiveId=obj-u7-objectadj
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other object row of the same word, not the animate object row.
 testedFeature=OBJECT_ADJECTIVE
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-objectadj-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-objectadj-5
 distractorSourceIds= | prov-ex-or-u7-objectadj-6
 distractorDifference= | This form is the other object row of the same word, not the animate object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вого | но́вую
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-5 | prov-ex-or-u7-objectadj-6
 
 ### INDEPENDENT_CHECK `u7-i-default-1`
 
@@ -2694,7 +2764,7 @@ contrastMembers=но́вого | но́вую
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c473a7f9448876ede0b70e58aa40c9e07c8cc86c9f5754d5ee71852ba4487a89
+- Content hash: 6168e6e57c265fde50a1bcf7d8daeac8d742144dd42bb7c369a97dcf2c0db291
 
 kind=FORM_SELECTION
 language=en
@@ -2702,21 +2772,23 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=но́вое
 options=но́вый | но́вое
 answer=но́вый
-feedback=Does the answer show the governed row of the same word? но́вый.
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-default
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_DICTIONARY
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-default-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-default-0
 distractorSourceIds= | prov-ex-or-u7-default-2
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вый | но́вое
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-default-2 | prov-ex-or-u7-default-0 | prov-ex-or-u7-default-2
 
 ### INDEPENDENT_CHECK `u7-i-default-2`
 
@@ -2726,7 +2798,7 @@ contrastMembers=но́вый | но́вое
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cc6e18beadc52cd5ffd90669a57e73dc7dd61de9d9b9fc2409cf156fe3b6413
+- Content hash: 4429955921692c7b09a12c4081a873e705cef20987aebc102cc10f94413e7573
 
 kind=FORM_SELECTION
 language=en
@@ -2734,21 +2806,23 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=хоро́шая
 options=хоро́ший | хоро́шая
 answer=хоро́ший
-feedback=Does the answer show the governed row of the same word? хоро́ший.
+feedback=Does the admitted record show the governed contrast? хоро́ший.
 objectiveId=obj-u7-default
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_DICTIONARY
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-default-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-default-4
 distractorSourceIds= | prov-ex-or-u7-default-5
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=хоро́ший | хоро́шая
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-default-5 | prov-ex-or-u7-default-4 | prov-ex-or-u7-default-5
 
 ### INDEPENDENT_CHECK `u7-i-default-3`
 
@@ -2758,7 +2832,7 @@ contrastMembers=хоро́ший | хоро́шая
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eeaa1eb0f79faac87acbba661c3cd441e548afb1efb547a8826b237a1310bea1
+- Content hash: f2f5ba04d40f0e33831ff5718de3a0de4e0bb84706c784a81a524341461ebf54
 
 kind=FORM_SELECTION
 language=en
@@ -2766,21 +2840,23 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=си́няя
 options=си́ний | си́няя
 answer=си́ний
-feedback=Does the answer show the governed row of the same word? си́ний.
+feedback=Does the admitted record show the governed contrast? си́ний.
 objectiveId=obj-u7-default
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_DICTIONARY
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-default-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-default-6
 distractorSourceIds= | prov-ex-or-u7-default-7
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=си́ний | си́няя
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-default-7 | prov-ex-or-u7-default-6 | prov-ex-or-u7-default-7
 
 ### INDEPENDENT_CHECK `u7-i-default-4`
 
@@ -2790,7 +2866,7 @@ contrastMembers=си́ний | си́няя
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b0f13446e023538c40a8adbf619d786776677e69d9b3b9108a9be306e42d523
+- Content hash: 36be1c3221fcab9fd286af26ed752349f5b181ebf3a528cd71415b09cb7e9ddb
 
 kind=FORM_SELECTION
 language=en
@@ -2798,117 +2874,125 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=кака́я
 options=како́й | кака́я
 answer=како́й
-feedback=Does the answer show the governed row of the same word? како́й.
+feedback=Does the admitted record show the governed contrast? како́й.
 objectiveId=obj-u7-default
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_DICTIONARY
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-default-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-default-8
 distractorSourceIds= | prov-ex-or-u7-default-9
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=како́й | кака́я
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-default-9 | prov-ex-or-u7-default-8 | prov-ex-or-u7-default-9
 
 ### INDEPENDENT_CHECK `u7-i-endings-1`
 
 - Objectives: obj-u7-endings
 - Sessions: u7-s-endings
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7be814bfec1cacb39f47ff9fb7349d295cea45e5deb67e6c4c73574bd55628d
+- Content hash: 996fe093c8864a5a1d2d7b6066cf3ac8dec41ca25fd56dede08c8f667ffe682b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=машина
-options=новая машина | новое платье
-answer=новая машина
-feedback=Does the answer agree with the shown word? новая машина.
+prompt=Which admitted form is the other row of the shown form?
+promptLetter=но́вый
+options=но́вое | но́вая
+answer=но́вое
+feedback=Does the admitted record show the governed contrast? но́вое.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
+distractorRationales= | This form is another row of the same word.
 testedFeature=ADJECTIVE_AGREEMENT
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-endings-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-endings-1-ru
-distractorSourceIds= | prov-ex-u7-endings-2-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=новая машина | новое платье
+answerSourceIds=prov-ex-or-u7-endings-9
+distractorSourceIds= | prov-ex-or-u7-endings-8
+distractorDifference= | This form is another row of the same word.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вое | но́вая
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-9 | prov-ex-or-u7-endings-8
 
 ### INDEPENDENT_CHECK `u7-i-endings-2`
 
 - Objectives: obj-u7-endings
 - Sessions: u7-s-endings
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11bebff5641fe734057df6475bb38fedad2f63099a2ea6a208b6540bc30a5918
+- Content hash: 234213182f07146a316de0679fbe88a0250f0376e574c22dff71463ba6c1ae21
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=платье
-options=новое платье | новый карандаш
-answer=новое платье
-feedback=Does the answer agree with the shown word? новое платье.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=но́вый
+options=но́вые | но́вая
+answer=но́вые
+feedback=Does the admitted record show the governed contrast? но́вые.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
+distractorRationales= | This form is the other singular row of the same word, not the plural row.
 testedFeature=ADJECTIVE_AGREEMENT
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-endings-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-endings-2-ru
-distractorSourceIds= | prov-ex-u7-endings-0-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=новое платье | новый карандаш
+answerSourceIds=prov-ex-or-u7-endings-10
+distractorSourceIds= | prov-ex-or-u7-endings-8
+distractorDifference= | This form is the other singular row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вые | но́вая
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-10 | prov-ex-or-u7-endings-8
 
 ### INDEPENDENT_CHECK `u7-i-endings-3`
 
 - Objectives: obj-u7-endings
 - Sessions: u7-s-endings
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1234fb4b28d8502e5a1724d7503f68a9533c9f8f1b03f78e00ce71c8aab8817a
+- Content hash: a85cdc24c60314eefcc5114d69b948da8bf61fabba841f0d2171dbd7828378bf
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=книги
-options=синие книги | синяя книга
-answer=синие книги
-feedback=Does the answer agree with the shown word? синие книги.
+prompt=Which admitted form is the dictionary row of the shown form?
+promptLetter=но́вая
+options=но́вый | но́вое
+answer=но́вый
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line is the singular row, not the plural row of the shown word.
+distractorRationales= | This form is another row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_AGREEMENT
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-endings-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-endings-6-ru
-distractorSourceIds= | prov-ex-u7-endings-4-ru
-distractorDifference= | This line is the singular row, not the plural row of the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=синие книги | синяя книга
+answerSourceIds=prov-ex-or-u7-endings-7
+distractorSourceIds= | prov-ex-or-u7-endings-9
+distractorDifference= | This form is another row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вый | но́вое
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-endings-8 | prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-9
 
 ### INDEPENDENT_CHECK `u7-i-endings-4`
 
@@ -2918,7 +3002,7 @@ contrastMembers=синие книги | синяя книга
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa7ee3409dd7f13a70378fa678f68b202b118f2d55e9ab64feaceae0f4bea5e5
+- Content hash: 1dfc11e55862f65142d25e885147447324448d44e2aed9902a5e7633dc5bb167
 
 kind=FORM_SELECTION
 language=en
@@ -2926,53 +3010,57 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=машина
 options=но́вая | но́вый | но́вые
 answer=но́вая
-feedback=Does the answer agree with the shown word? но́вая.
+feedback=Does the admitted record show the governed contrast? но́вая.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the row of the shown word. | This form is the plural row of the same word, not the row of the shown word.
 testedFeature=ADJECTIVE_AGREEMENT
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u7-endings-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-endings-8
 distractorSourceIds= | prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-10
 distractorDifference= | This form is the other row of the same word, not the row of the shown word. | This form is the plural row of the same word, not the row of the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вая | но́вый | но́вые
+relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
+relationParticipantIds=prov-u7-endings-x-1 | prov-ex-or-u7-endings-8 | prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-10
 
 ### INDEPENDENT_CHECK `u7-i-spelling-1`
 
 - Objectives: obj-u7-spelling
 - Sessions: u7-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63517f6b5f3571827af675472efb805a78736eed4c791baef99bb4fd38b46698
+- Content hash: 7a20eb1cd9f07c3b68b2afae5e5cf1d22004915dded19028d1cefcb5e536b434
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the shown line use?
+prompt=Which admitted form is the other row of the shown form?
 promptLetter=хоро́шие
-options=и | ы
-answer=и
-feedback=Does the answer show the governed row of the same word? и.
+options=хоро́шее | хоро́шие
+answer=хоро́шее
+feedback=Does the admitted record show the governed contrast? хоро́шее.
 objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+distractorRationales= | This form is the plural row of the same word, not the other row.
 testedFeature=ADJECTIVE_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u7-spelling-x-1
-distractorSourceIds= | prov-u7-spelling-x-2
-distractorDifference= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=и | ы
+answerSourceIds=prov-ex-or-u7-spelling-3
+distractorSourceIds= | prov-ex-or-u7-spelling-4
+distractorDifference= | This form is the plural row of the same word, not the other row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́шее | хоро́шие
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-spelling-4 | prov-ex-or-u7-spelling-3 | prov-ex-or-u7-spelling-4
 
 ### INDEPENDENT_CHECK `u7-i-spelling-2`
 
@@ -2982,61 +3070,65 @@ contrastMembers=и | ы
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbaf69bf0998060878c82fa04a316d97575903c917481ef63227c5a3bc1f5052
+- Content hash: f4e39ce141475655897fee97b6dd802ed6cb025d147c4596559d54617affd17c
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=хоро́шее
-options=хоро́шие | хоро́шее
-answer=хоро́шие
-feedback=Does the answer show the governed row of the same word? хоро́шие.
+options=хоро́ший | хоро́шие
+answer=хоро́ший
+feedback=Does the admitted record show the governed contrast? хоро́ший.
 objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other row of the same word, not the plural row.
+distractorRationales= | This form is the plural row of the same word, not the dictionary row.
 testedFeature=ADJECTIVE_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u7-spelling-2
-distractorSourceIds= | prov-ex-or-u7-spelling-1
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=хоро́шие | хоро́шее
+answerSourceIds=prov-ex-or-u7-spelling-1
+distractorSourceIds= | prov-ex-or-u7-spelling-4
+distractorDifference= | This form is the plural row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́ший | хоро́шие
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-spelling-3 | prov-ex-or-u7-spelling-1 | prov-ex-or-u7-spelling-4
 
 ### INDEPENDENT_CHECK `u7-i-spelling-3`
 
 - Objectives: obj-u7-spelling
 - Sessions: u7-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a1031454a0306efbe61d4d07cd3610d035f1618a72fdaf0f0402beea374ccd6
+- Content hash: a42455f784835e5ca4a196dcaec5d0fd5aef0d4cc745b2f2bae82952b6f3778e
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted line shows the spelling of the shown form?
-promptLetter=хоро́шее
-options=хорошее письмо | хоро́шие
-answer=хорошее письмо
-feedback=Does the answer identify the governed form in the shown line? хорошее письмо.
+prompt=Which admitted form is the other row of the shown form?
+promptLetter=хоро́ший
+options=хоро́шая | хоро́шее
+answer=хоро́шая
+feedback=Does the admitted record show the governed contrast? хоро́шая.
 objectiveId=obj-u7-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the plural row of the same word, not the spelling of the shown line.
+distractorRationales= | This form is another row of the same word.
 testedFeature=ADJECTIVE_SPELLING
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-spelling-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-spelling-0-ru
-distractorSourceIds= | prov-ex-or-u7-spelling-2
-distractorDifference= | This form is the plural row of the same word, not the spelling of the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=хорошее письмо | хоро́шие
+answerSourceIds=prov-ex-or-u7-spelling-2
+distractorSourceIds= | prov-ex-or-u7-spelling-3
+distractorDifference= | This form is another row of the same word.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́шая | хоро́шее
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-spelling-1 | prov-ex-or-u7-spelling-2 | prov-ex-or-u7-spelling-3
 
 ### INDEPENDENT_CHECK `u7-i-question-1`
 
@@ -3046,7 +3138,7 @@ contrastMembers=хорошее письмо | хоро́шие
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d890edefd6fbf7967af364319e9bdcdf4196f3b316c535d8ee1568d0c6172214
+- Content hash: fc8df10ebee82312b6d9afe0488c1237865235e1e38e8d5a4f62fd56715b5a24
 
 kind=FORM_SELECTION
 language=en
@@ -3054,21 +3146,23 @@ prompt=Which admitted form is the other singular row of the shown form?
 promptLetter=како́й
 options=како́е | како́й
 answer=како́е
-feedback=Does the answer show the governed row of the same word? како́е.
+feedback=Does the admitted record show the governed contrast? како́е.
 objectiveId=obj-u7-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the other singular row.
 testedFeature=QUESTION_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-question-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-question-2
 distractorSourceIds= | prov-ex-or-u7-question-0
 distractorDifference= | This form is the dictionary row of the same word, not the other singular row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=како́е | како́й
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-question-0 | prov-ex-or-u7-question-2 | prov-ex-or-u7-question-0
 
 ### INDEPENDENT_CHECK `u7-i-question-2`
 
@@ -3078,7 +3172,7 @@ contrastMembers=како́е | како́й
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb6edd521581640c4000450b2c4a31bc8a4014a118a38b61b0e63f9b00644ef8
+- Content hash: 2ce2ca0f08e3709f2ba4dc1dee0a6110464c9d24497bd0cd5ff921621f9a8cba
 
 kind=FORM_SELECTION
 language=en
@@ -3086,21 +3180,23 @@ prompt=Which admitted form is the other singular row of the shown form?
 promptLetter=како́й
 options=кака́я | каки́е
 answer=кака́я
-feedback=Does the answer show the governed row of the same word? кака́я.
+feedback=Does the admitted record show the governed contrast? кака́я.
 objectiveId=obj-u7-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the plural row of the same word, not the other singular row.
 testedFeature=QUESTION_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-question-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-question-1
 distractorSourceIds= | prov-ex-or-u7-question-3
 distractorDifference= | This form is the plural row of the same word, not the other singular row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=кака́я | каки́е
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-question-0 | prov-ex-or-u7-question-1 | prov-ex-or-u7-question-3
 
 ### INDEPENDENT_CHECK `u7-i-question-3`
 
@@ -3110,7 +3206,7 @@ contrastMembers=кака́я | каки́е
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6491299ea758dcae5a823fca58015be1005d484a8b7a017b399ce76372899790
+- Content hash: 84750ec2fbbec5422e5b877d47650090fb758105c4da18967a17564632af4768
 
 kind=FORM_SELECTION
 language=en
@@ -3118,21 +3214,23 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=кака́я
 options=како́й | како́е
 answer=како́й
-feedback=Does the answer show the governed row of the same word? како́й.
+feedback=Does the admitted record show the governed contrast? како́й.
 objectiveId=obj-u7-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the dictionary row.
 testedFeature=QUESTION_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-question-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-question-0
 distractorSourceIds= | prov-ex-or-u7-question-2
 distractorDifference= | This form is the other row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=како́й | како́е
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-question-1 | prov-ex-or-u7-question-0 | prov-ex-or-u7-question-2
 
 ### INDEPENDENT_CHECK `u7-i-demonstrative-1`
 
@@ -3142,7 +3240,7 @@ contrastMembers=како́й | како́е
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0211fb79c8cbee2fa5d513d7734bb75be6c340a85fae2a6af5785e66ef467e7a
+- Content hash: 52a75c62c9b41f7100a1956784a7ed20b57c5c9b7f51c69d177625ddd8d0b060
 
 kind=FORM_SELECTION
 language=en
@@ -3150,21 +3248,23 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=э́та
 options=э́ту | э́та
 answer=э́ту
-feedback=Does the answer show the governed row of the same word? э́ту.
+feedback=Does the admitted record show the governed contrast? э́ту.
 objectiveId=obj-u7-demonstrative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the object row.
 testedFeature=DEMONSTRATIVE_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-demonstrative-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-demonstrative-4
 distractorSourceIds= | prov-ex-or-u7-demonstrative-1
 distractorDifference= | This form is the other row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=э́ту | э́та
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-demonstrative-1 | prov-ex-or-u7-demonstrative-4 | prov-ex-or-u7-demonstrative-1
 
 ### INDEPENDENT_CHECK `u7-i-demonstrative-2`
 
@@ -3174,7 +3274,7 @@ contrastMembers=э́ту | э́та
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9e1739fa53124b51768533dad28f1f3aac7ddcc658d5f796ba77ca75301e074
+- Content hash: 40b181ebbb66c773208809d0f2857a9687b684467cd874ac45ecd02202ffcf8a
 
 kind=FORM_SELECTION
 language=en
@@ -3182,21 +3282,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=э́то
 options=э́ти | э́то
 answer=э́ти
-feedback=Does the answer show the governed row of the same word? э́ти.
+feedback=Does the admitted record show the governed contrast? э́ти.
 objectiveId=obj-u7-demonstrative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the plural row.
 testedFeature=DEMONSTRATIVE_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-demonstrative-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-demonstrative-3
 distractorSourceIds= | prov-ex-or-u7-demonstrative-2
 distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=э́ти | э́то
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-demonstrative-2 | prov-ex-or-u7-demonstrative-3 | prov-ex-or-u7-demonstrative-2
 
 ### INDEPENDENT_CHECK `u7-i-demonstrative-3`
 
@@ -3206,7 +3308,7 @@ contrastMembers=э́ти | э́то
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45d94225f86c076f91b4ceda6a5152a3d5035a2771da26ecd3cde64747b43d8f
+- Content hash: 3e1f3bdb1293422217cabd5160b54b62c9dcb9cc7afb3221ba8aa1ba93a64d8a
 
 kind=FORM_SELECTION
 language=en
@@ -3214,21 +3316,23 @@ prompt=Which admitted form is the other singular row of the shown form?
 promptLetter=э́ту
 options=э́та | э́ту
 answer=э́та
-feedback=Does the answer show the governed row of the same word? э́та.
+feedback=Does the admitted record show the governed contrast? э́та.
 objectiveId=obj-u7-demonstrative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the object row of the same word, not the other singular row.
 testedFeature=DEMONSTRATIVE_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-demonstrative-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-demonstrative-1
 distractorSourceIds= | prov-ex-or-u7-demonstrative-4
 distractorDifference= | This form is the object row of the same word, not the other singular row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=э́та | э́ту
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-demonstrative-4 | prov-ex-or-u7-demonstrative-1 | prov-ex-or-u7-demonstrative-4
 
 ### INDEPENDENT_CHECK `u7-i-place-1`
 
@@ -3238,29 +3342,31 @@ contrastMembers=э́та | э́ту
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64fd549d4e9baa17ddd8a9cf9e278ebe02374dbf1d7eef4008d60f61c287f8a5
+- Content hash: 0d23e327393eb722097c96e4b665622d6f6e34c0eeb4d52a696c88b0e3a65b1a
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form does the shown line use?
-promptLetter=Я хочу́ жить в чи́стом но́вом го́роде
-options=но́вом | но́вый
-answer=но́вом
-feedback=Does the answer identify the governed form in the shown line? но́вом.
+prompt=Which admitted form is the dictionary row of the shown form?
+promptLetter=но́вом
+options=но́вый | но́вую
+answer=но́вый
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-place
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the dictionary row of the same word, and the shown line uses the place row.
+distractorRationales= | This form is the object row of the same word, not the dictionary row.
 testedFeature=PLACE_AGREEMENT
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-place-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u7-place-4
-distractorSourceIds= | prov-ex-or-u7-place-3
-distractorDifference= | This form is the dictionary row of the same word, and the shown line uses the place row.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=но́вом | но́вый
+answerSourceIds=prov-ex-or-u7-place-3
+distractorSourceIds= | prov-ex-or-u7-place-5
+distractorDifference= | This form is the object row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вый | но́вую
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-place-4 | prov-ex-or-u7-place-3 | prov-ex-or-u7-place-5
 
 ### INDEPENDENT_CHECK `u7-i-place-2`
 
@@ -3270,7 +3376,7 @@ contrastMembers=но́вом | но́вый
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab45965890d6443f3714ef4c0c232517d6499032accc5d0ceff874b7451b509c
+- Content hash: c64d29d619bc480a2cd22a9d081425bc68d39596d8cb84d73f120de41ba0ebcd
 
 kind=FORM_SELECTION
 language=en
@@ -3278,117 +3384,125 @@ prompt=Which admitted form is the place row of the shown form?
 promptLetter=хоро́ший
 options=хоро́шем | хоро́ший
 answer=хоро́шем
-feedback=Does the answer show the governed row of the same word? хоро́шем.
+feedback=Does the admitted record show the governed contrast? хоро́шем.
 objectiveId=obj-u7-place
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the place row.
 testedFeature=PLACE_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-place-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-place-7
 distractorSourceIds= | prov-ex-or-u7-place-6
 distractorDifference= | This form is the dictionary row of the same word, not the place row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=хоро́шем | хоро́ший
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-place-6 | prov-ex-or-u7-place-7 | prov-ex-or-u7-place-6
 
 ### INDEPENDENT_CHECK `u7-i-place-3`
 
 - Objectives: obj-u7-place
 - Sessions: u7-s-place
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c937cd4548a23bb3da72f69088edea5b6d4cc86e7e3b15b438f039483b9ab965
+- Content hash: 3ce378bcb11e3cb72268eb8f1772f35e5da74996e7bc53cc7ce81463118a88d9
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form does the shown line use?
-promptLetter=Они были в старой русской школе
-options=Они были в старой русской школе | Я хочу́ жить в чи́стом но́вом го́роде
-answer=Они были в старой русской школе
-feedback=Does the answer identify the governed form in the shown line? Они были в старой русской школе.
+prompt=Which admitted form is the dictionary row of the shown form?
+promptLetter=хоро́шем
+options=хоро́ший | хоро́шем
+answer=хоро́ший
+feedback=Does the admitted record show the governed contrast? хоро́ший.
 objectiveId=obj-u7-place
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line is another place line, not the shown line.
+distractorRationales= | This form is the place row of the same word, not the dictionary row.
 testedFeature=PLACE_AGREEMENT
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-place-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-place-1-ru
-distractorSourceIds= | prov-ex-u7-place-2-ru
-distractorDifference= | This line is another place line, not the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=Они были в старой русской школе | Я хочу́ жить в чи́стом но́вом го́роде
+answerSourceIds=prov-ex-or-u7-place-6
+distractorSourceIds= | prov-ex-or-u7-place-7
+distractorDifference= | This form is the place row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́ший | хоро́шем
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-place-7 | prov-ex-or-u7-place-6 | prov-ex-or-u7-place-7
 
 ### INDEPENDENT_CHECK `u7-i-objectadj-1`
 
 - Objectives: obj-u7-objectadj
 - Sessions: u7-s-objectadj
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcd8642d5078edfc21d19b40936b6146d1857c588e8ee77b74b5b8b8d9e3d609
+- Content hash: b149e219093d6f69c23aa49284ed487dcfb93c2f0d2b2f5c395154fb1bcba30a
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line uses the animate object row of the shown form?
+prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=но́вого
-options=Я хочу нового кролика. | Я хочу новый стул и новое письмо
-answer=Я хочу нового кролика.
-feedback=Does the answer agree with the shown word? Я хочу нового кролика.
+options=но́вый | но́вую
+answer=но́вый
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-objectadj
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line uses another object row, not the shown word.
+distractorRationales= | This form is the other object row of the same word, not the dictionary row.
 testedFeature=OBJECT_ADJECTIVE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-objectadj-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-objectadj-1-ru
-distractorSourceIds= | prov-ex-u7-objectadj-0-ru
-distractorDifference= | This line uses another object row, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=Я хочу нового кролика. | Я хочу новый стул и новое письмо
+answerSourceIds=prov-ex-or-u7-objectadj-4
+distractorSourceIds= | prov-ex-or-u7-objectadj-6
+distractorDifference= | This form is the other object row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вый | но́вую
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-objectadj-5 | prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-6
 
 ### INDEPENDENT_CHECK `u7-i-objectadj-2`
 
 - Objectives: obj-u7-objectadj
 - Sessions: u7-s-objectadj
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 859ab2ea06b54b909269ac180e8771131a75cc732ca63ba267943995a531bac5
+- Content hash: 958bd28cb0e8dc349b01b1c4b74d5da83b72dfcae64582d0459996bec35ae4a3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line uses the object row of the shown form?
+prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=но́вую
-options=Моя русская кошка любит мою новую собаку | Я хочу нового кролика.
-answer=Моя русская кошка любит мою новую собаку
-feedback=Does the answer agree with the shown word? Моя русская кошка любит мою новую собаку.
+options=но́вый | но́вого
+answer=но́вый
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u7-objectadj
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line uses the animate object row, not the shown word.
+distractorRationales= | This form is the other object row of the same word, not the dictionary row.
 testedFeature=OBJECT_ADJECTIVE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-objectadj-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u7-objectadj-2-ru
-distractorSourceIds= | prov-ex-u7-objectadj-1-ru
-distractorDifference= | This line uses the animate object row, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=Моя русская кошка любит мою новую собаку | Я хочу нового кролика.
+answerSourceIds=prov-ex-or-u7-objectadj-4
+distractorSourceIds= | prov-ex-or-u7-objectadj-5
+distractorDifference= | This form is the other object row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вый | но́вого
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-objectadj-6 | prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-5
 
 ### INDEPENDENT_CHECK `u7-i-objectadj-3`
 
@@ -3398,7 +3512,7 @@ contrastMembers=Моя русская кошка любит мою новую с
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50f499c47465039ce272316643b09819dcaf9ed19b91a7efb72d3beca13a4d55
+- Content hash: 1acc83bcaf388bdb450d67aabaed3be15fa10705fb33377734942535293c0c0b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3406,21 +3520,23 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=но́вый
 options=но́вую | но́вый
 answer=но́вую
-feedback=Does the answer show the governed row of the same word? но́вую.
+feedback=Does the admitted record show the governed contrast? но́вую.
 objectiveId=obj-u7-objectadj
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the object row.
 testedFeature=OBJECT_ADJECTIVE
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u7-objectadj-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-objectadj-6
 distractorSourceIds= | prov-ex-or-u7-objectadj-4
 distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вую | но́вый
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-6 | prov-ex-or-u7-objectadj-4
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -5188,21 +5304,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 934e3216b75808cacd297808cbe350217cd27f9a6b38ad306ed31cc4beedda25
+- Content hash: 1a01b31ed4e13c665417b8810e6e6130e3b890961673c99dac6eab7ccf74e659
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=adjectives.csv:хороший#decl_n_nom
-originalSourceText=хоро'шее
-shippedText=хоро́шее
+sourceRecordId=adjectives.csv:хороший#decl_m_nom
+originalSourceText=хоро'ший
+shippedText=хоро́ший
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=4724f1c133507ff8ae8487def1893524be314fbd65ba1b18d36800799e7f2e0d
-contentHash=489dbd73fe531506f7009a155c1a230d665321f1d02a8527d413339b3cc84c70
+sourceHash=e5a6dff7a419e6838b37681671614c43c584fe334e33d70ba8a840c1db5a2925
+contentHash=f8edf7836814fe0ffcdc44297bf0dc63297c079825fa4a5cf3cd5307037bb36a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5246,7 +5362,123 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5a150b0d15c80c46ad4368a3703656b13ea4a01da9e2f1a017f742509d66729
+- Content hash: 354f4851cea4c2c9da9da8981ede617c7fdfde53aca61c3773109e82d8e5a29b
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#decl_f_nom
+originalSourceText=хоро'шая
+shippedText=хоро́шая
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2bc3e7d2387c5398da78069598fee8eaae86354355c05e90c33bd02de6fd609f
+contentHash=c83c8ed40b606a4223a1c27f88910ae55b2a1b6ee56b2907d9b4954588a482b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u7-spelling-2-gloss`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 42f67d7cef56715805d6e3e31429675c08a46bffea0c9478f3cb93693c51d3a4
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#translations_en
+originalSourceText=good, beautiful, handsome
+shippedText=good
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=726e6cd53da1e936c3220647702c178cf8dffbdb36b65f0665fcfc32f2d7f908
+contentHash=770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u7-spelling-3`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc2a067cb8aa7d31a32414f90b0ae67c18c76da465ea73e16c99aee0240bdcaf
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#decl_n_nom
+originalSourceText=хоро'шее
+shippedText=хоро́шее
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4724f1c133507ff8ae8487def1893524be314fbd65ba1b18d36800799e7f2e0d
+contentHash=489dbd73fe531506f7009a155c1a230d665321f1d02a8527d413339b3cc84c70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u7-spelling-3-gloss`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 30673a1354c1e49a13bcbfbd95ebfece4c42e389ebba6b525ed6289e76169254
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=adjectives.csv:хороший#translations_en
+originalSourceText=good, beautiful, handsome
+shippedText=good
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=726e6cd53da1e936c3220647702c178cf8dffbdb36b65f0665fcfc32f2d7f908
+contentHash=770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u7-spelling-4`
+
+- Objectives: obj-u7-spelling
+- Sessions: u7-s-orient, u7-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e9e2394d86d2e2ada749d7236f102239cd122c2980990b43cebbb3511d361c23
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -5267,7 +5499,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u7-spelling-2-gloss`
+### PROVENANCE `prov-ex-or-u7-spelling-4-gloss`
 
 - Objectives: obj-u7-spelling
 - Sessions: u7-s-orient, u7-s-spelling
@@ -5275,7 +5507,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42f67d7cef56715805d6e3e31429675c08a46bffea0c9478f3cb93693c51d3a4
+- Content hash: 094837830a82a8c19647c527bf8f4a66923382870660082e957032337905cc2d
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -6775,6 +7007,84 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u7-037`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: af87f6d150226730b371d71bbb232e9138c3404384ec8a8f44bc1c0a68e07f0f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u7-038`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 829e745d156a015c837164f00956a595d25ded75097160c0ac14e741e28395eb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other row of the same word, not the dictionary row.
+
+### AUTHORED_ENGLISH `en-u7-039`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a41800126f6bcab7be4be98a22ad6398584ad218310fbd4f4ae6f023e8bcd2a6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the admitted record show the governed contrast?
+
+### AUTHORED_ENGLISH `en-u7-040`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dbc08111e39e9a7b35c1ca34ebe551ecc581eb437dea2778a7625891d29d87a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the dictionary row of the shown form?
+
+### AUTHORED_ENGLISH `en-u7-041`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e2b200f14d195cd6225cd305aad7d956e36bf26c62cd6aa8aa01b745239a93b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u7-042`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5a22701a66e5086069fac56f08f75d3d1b6766b0f45b65a1cc9f0642b93b358e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is another row of the same word.
+
 ### AUTHORED_ENGLISH `en-u7-043`
 
 - Objectives: none
@@ -6783,10 +7093,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2005b9d30468685c52ba1308eec97cd402182cb0ffa0a26af084957b851961bb
+- Content hash: 136651087e6db10adacc59b935c43a7fdf5467d8b559f2ad8e6f6a7f39396bdd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=This form repeats the shown row of the same word.
 
 ### AUTHORED_ENGLISH `en-u7-044`
 
@@ -6796,10 +7106,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16b097e695c7d523d0f48a7c7f1232d112482e8db25a1535ef352e105881eaba
+- Content hash: 5ef671fa6a2490382e356d9bf5e8b9dbc3244f766eb7b12990ea9131f8d393f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the dictionary row.
+text=Which admitted form is the other row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-045`
 
@@ -6809,10 +7119,10 @@ text=This form is the other row of the same word, not the dictionary row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 880940f593dfdf80c4ffe5c6cf133dab3f3bc505e9971e71bc90386f608b8ded
+- Content hash: a64e62664c72826856be31ee5866f30ea6f88b85804e4210680527ad1dac9bef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer show the governed row of the same word?
+text=This form is the other singular row of the same word, not the plural row.
 
 ### AUTHORED_ENGLISH `en-u7-046`
 
@@ -6822,10 +7132,10 @@ text=Does the answer show the governed row of the same word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ce266fb3763008738e22cf2733bf0823a8c1a1971b2b881378c95f87d525303
+- Content hash: df19ba06063451be99fdd18c6b1ee94460add4a0863b39e6d0d26a1f2c7c4e26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the dictionary row of the shown form?
+text=Which admitted form is the plural row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-047`
 
@@ -6835,10 +7145,10 @@ text=Which admitted form is the dictionary row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6becce2176f042f1eeda5548a475061334dabaec4413b456ae502776d3b323fd
+- Content hash: f22b16fe3bed95ee03f103912d9429b7ffec3d6722aa12e3862b5341e5698601
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=This form is another row of the same word, not the dictionary row.
 
 ### AUTHORED_ENGLISH `en-u7-048`
 
@@ -6848,10 +7158,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c40fef27add72ab1c67f551e71a8514015336c77c4a99ba4cade39dc77ee89b9
+- Content hash: 1251fa627475d7b5b1b2b68e1a87bc9cb42eed1d445a31e99d54ebe86c9b8636
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line agrees with another word, not the shown word.
+text=This form is the other row of the same word, not the row of the shown word.
 
 ### AUTHORED_ENGLISH `en-u7-049`
 
@@ -6861,10 +7171,10 @@ text=This line agrees with another word, not the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 324e11b04302a79dd9239f0217765d3596d5398b9dae9a1b09e7d54746431cd0
+- Content hash: 247d6f88c03205e1fb38d417e4259bb0010045273a6d43ea61ae23de6f39aa4d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer agree with the shown word?
+text=This form is the plural row of the same word, not the row of the shown word.
 
 ### AUTHORED_ENGLISH `en-u7-050`
 
@@ -6874,10 +7184,10 @@ text=Does the answer agree with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d237360e8f0194ade0ba90f10eb62a8802aadbc4484bf1f268970bfd7bbe48d
+- Content hash: 95bc869dd70ff2b9af44fa335566909d136c0e620d57850d62ccb8c2178d5e0d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line agrees with the shown word?
+text=Which admitted form agrees with the shown word?
 
 ### AUTHORED_ENGLISH `en-u7-051`
 
@@ -6887,10 +7197,10 @@ text=Which admitted line agrees with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66ed2b87624068ddc2cc0b400aebe9c9ea6edc04ab0a4c2c5eb7180a6bfae31d
+- Content hash: f8687b118bcb3e85d202824c61eea0c41e4e88b1a552d88fee6daf81493816f0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line is the singular row, not the plural row of the shown word.
+text=This form is the other row of the same word, not the plural row.
 
 ### AUTHORED_ENGLISH `en-u7-052`
 
@@ -6900,10 +7210,10 @@ text=This line is the singular row, not the plural row of the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a57dc26307f1e4cd360f9c2fe909617f3534875a8767da1bac0894b8a732e67
+- Content hash: 965892ecf54688304250ec089d533c42e565e76ffbc9d1cd36ac6d94f76c2053
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the row of the shown word.
+text=This form is the plural row of the same word, not the other row.
 
 ### AUTHORED_ENGLISH `en-u7-053`
 
@@ -6913,10 +7223,10 @@ text=This form is the other row of the same word, not the row of the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 374fcfcd1500949a05a5e9d541666ef3ac016128075c24ce491bf726fce3bdb4
+- Content hash: d87ae7bc6ec32ca82c380c2b9f6c4243b208a17117b4966ebd7a8303971929f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the plural row of the same word, not the row of the shown word.
+text=This form is the plural row of the same word, not the dictionary row.
 
 ### AUTHORED_ENGLISH `en-u7-054`
 
@@ -6926,10 +7236,10 @@ text=This form is the plural row of the same word, not the row of the shown word
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2335d6433e07c566fe81a13e86952ff4562049e22d3010fc55da202fc63c0cc
+- Content hash: d58aef1d1339c529714f979982206e3d9b3253de432cece2d06e778ac15015c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form agrees with the shown word?
+text=This form is the dictionary row of the same word, not the other singular row.
 
 ### AUTHORED_ENGLISH `en-u7-055`
 
@@ -6939,10 +7249,10 @@ text=Which admitted form agrees with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28fdcdf9673b23192c69dab86771e2f52920200c2836b33209cc4de116fdbf60
+- Content hash: 258b347c705edcd300c4d5ab59749bd50d1cb8692cd0e891558d43407b61b45b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the other frozen spelling, not the spelling of the shown line.
+text=Which admitted form is the other singular row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-056`
 
@@ -6952,10 +7262,10 @@ text=This spelling is the other frozen spelling, not the spelling of the shown l
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 84859d4a20e4eb384ede4e446cd5135a55105888f40dbe0eda8241339990160e
+- Content hash: e34fd9957ce773270ac659176150d0e3f44f11449c2c4b23b4714178a8aac552
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this admitted label name the pattern of the shown line?
+text=This form is the plural row of the same word, not the other singular row.
 
 ### AUTHORED_ENGLISH `en-u7-057`
 
@@ -6965,10 +7275,10 @@ text=Does this admitted label name the pattern of the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b92ff8142dacac1af30dae7818a27a5100917278ab18d2f0e8d325822d65cb4d
+- Content hash: 75d6ae995d67aa6c4862a9723bef964998c99a2debeba1877005a8ca5ac51d23
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted spelling does the shown line use?
+text=This form is the other row of the same word, and the shown line uses another row.
 
 ### AUTHORED_ENGLISH `en-u7-058`
 
@@ -6978,10 +7288,10 @@ text=Which admitted spelling does the shown line use?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4769dff0fa1e12117ca3157fdb2753c0e949e041359dadaa8f1ead32f7190a4c
+- Content hash: d7a4aa7e73fcf9e7d53b69230fb48b0a7083ca1b6f8e7d6221bb5e19d50b42af
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+text=Which admitted form does the shown line use?
 
 ### AUTHORED_ENGLISH `en-u7-059`
 
@@ -6991,10 +7301,10 @@ text=This spelling is the one the frozen line says not to add, not the spelling 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39a85d1c3e78ffe73e1c0498c5fb280f44c9092174ad4288ce8d76a3abfb2207
+- Content hash: 5c2aeddee14cbf4f1619de51a96af2f13ccc9b68195b4546a55081f49cfaf367
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the plural row.
+text=This form is the other row of the same word, not the object row.
 
 ### AUTHORED_ENGLISH `en-u7-060`
 
@@ -7004,10 +7314,10 @@ text=This form is the other row of the same word, not the plural row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bad1d3b175ddce931472098902531f3979c44e791f17cdb581f5777dc780f456
+- Content hash: bbaf2d79c52bd8544fe0b3afeef6d9db6c6387b29128005221e85626c65afa50
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the plural row of the shown form?
+text=Which admitted form is the object row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-061`
 
@@ -7017,10 +7327,10 @@ text=Which admitted form is the plural row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36a55df81256d8120b96010052958851ba51fe9d2aa4940fb44d497a8d8d396c
+- Content hash: 652b57f21a14b919789b2251cfd5bf7d7cc108095c1fb5ffbbe9146ce286d392
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the plural row of the same word, not the spelling of the shown line.
+text=This form is the object row of the same word, not the other singular row.
 
 ### AUTHORED_ENGLISH `en-u7-062`
 
@@ -7030,10 +7340,10 @@ text=This form is the plural row of the same word, not the spelling of the shown
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d31c6accbeb6ad21c6993d12bc0c7d899e59015a570763747a703293c94cb962
+- Content hash: 4220dcf646740fe5b9d8d95f0740ee7d833b37c198d1f0bef915c4fa8d32ddc4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer identify the governed form in the shown line?
+text=This form is the object row of the same word, not the place row.
 
 ### AUTHORED_ENGLISH `en-u7-063`
 
@@ -7043,10 +7353,10 @@ text=Does the answer identify the governed form in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 687af2327c69c1ff4722aaebbc817bfc6051fe26ea57085d31b2cb3a5d6f6e2f
+- Content hash: 5ceb4f32a268f98a9c5b87d3c7b30109429185f3051cb571663db73d2dffbd7a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line shows the spelling of the shown form?
+text=Which admitted form is the place row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-064`
 
@@ -7056,10 +7366,10 @@ text=Which admitted line shows the spelling of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52aebae47b0bcfefded0d1f44d22306217cffcd74c9d84ddb01de28ef67791fa
+- Content hash: b2db0d0e2a93b29c35f4a2975e826c771a18cc768b45c644bf1128d70aca3536
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, not the other singular row.
+text=This form is the object row of the same word, not the dictionary row.
 
 ### AUTHORED_ENGLISH `en-u7-065`
 
@@ -7069,10 +7379,10 @@ text=This form is the dictionary row of the same word, not the other singular ro
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35b17d620428569806d27016f1953c447344153db1ce934853333158c722f4ac
+- Content hash: c628f2c711f413776a10b3b41807f796544a55e53b4f36f37ad42514ac9c9c9b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the other singular row of the shown form?
+text=This form is the dictionary row of the same word, not the place row.
 
 ### AUTHORED_ENGLISH `en-u7-066`
 
@@ -7082,10 +7392,10 @@ text=Which admitted form is the other singular row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24f13ee708ae027b9a3355677606d84d1d958dd32bc5233dca155308b2658f13
+- Content hash: 8d6dd5eacb210cee330dd7d06088fb0414f58bbe04f7324d6bbc41ff58114fb2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the plural row of the same word, not the other singular row.
+text=This form is the place row of the same word, not the dictionary row.
 
 ### AUTHORED_ENGLISH `en-u7-067`
 
@@ -7095,10 +7405,10 @@ text=This form is the plural row of the same word, not the other singular row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 747415fb7139de12a5db5137e8517c7fd351e034def7389e0e02572709e6cbf2
+- Content hash: 0a9e40d8801973403eb906bcfcc3a7aa88ca5eeed892f6344362f5c5b0b0e1bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, and the shown line uses another row.
+text=This form is the other object row of the same word, not the animate object row.
 
 ### AUTHORED_ENGLISH `en-u7-068`
 
@@ -7108,10 +7418,10 @@ text=This form is the other row of the same word, and the shown line uses anothe
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b8b956098ff4b165420bbee08be84a2a64a8e13260c35c005ccaa0c4f1463cd
+- Content hash: 426a903c54e5f611fa746de0b90d2a437eda6efddbe49afe74136701693c53c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form does the shown line use?
+text=Which admitted form is the animate object row of the shown form?
 
 ### AUTHORED_ENGLISH `en-u7-069`
 
@@ -7121,10 +7431,10 @@ text=Which admitted form does the shown line use?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b989c0279ecb7a3d3213d4bca33177be6bf3c8738c79acaa28d0e4ea7d12341
+- Content hash: b99192b44c935cec82b3a121eb2217806936221b498a6ac21662ceaf72fe8f16
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the object row.
+text=This form is the other object row of the same word, not the dictionary row.
 
 ### AUTHORED_ENGLISH `en-u7-070`
 
@@ -7134,10 +7444,10 @@ text=This form is the other row of the same word, not the object row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8b4efc3ed1566e8822c791f24c91f16b3d9cf87a44e82b46aa2568f19805e860
+- Content hash: b59259cdcef4ea2cfccb13c8644f32c15aab5f1b935de4a4803083d307b39034
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row of the shown form?
+text=This form is the dictionary row of the same word, not the object row.
 
 ### AUTHORED_ENGLISH `en-u7-071`
 
@@ -7147,10 +7457,10 @@ text=Which admitted form is the object row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c054b3b07571ef20c8e435c69b22f2de6b84bcaf4b9777af09a31799d7d5e7e
+- Content hash: 4b13c75ac2e2b1a206083e071083e09ec1ec19a30c6bc6d19ee197e8e94e03ec
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the object row of the same word, not the other singular row.
+text=Admitted agreement rows
 
 ### AUTHORED_ENGLISH `en-u7-072`
 
@@ -7160,10 +7470,10 @@ text=This form is the object row of the same word, not the other singular row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9d0674e4e41f88c56e86137a7f4308fb6634ebdf03bc522a882add734bd9d8b
+- Content hash: d8653001801204cb7728380a6fbe15db6c4365f8a4e143ebf60f80feadcedcc2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the object row of the same word, not the place row.
+text=Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u7-073`
 
@@ -7173,10 +7483,10 @@ text=This form is the object row of the same word, not the place row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95c8078568d3119f08a255b33533c386b584b40f7d5f045a9995f693d1b671cf
+- Content hash: e46b14f058002374a8ac10ecb111af2595bce3306d1a6bd7a2215f4c4f1fdd6f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the place row of the shown form?
+text=Open Lesson 7 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u7-074`
 
@@ -7186,10 +7496,10 @@ text=Which admitted form is the place row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d39ed284b37f003e7ff08e3b2a71e04816c05007e7fef38e0273498d08fb91d
+- Content hash: f26070ecb29c197ad6161584a84dce5f0cc348e989a0b554268dd8009be12f1f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, and the shown line uses the place row.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u7-075`
 
@@ -7199,10 +7509,10 @@ text=This form is the dictionary row of the same word, and the shown line uses t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a6a4bbffda145bfe726bf49f9758e51d37f914ad3dd57bbe9eb4a3d64e80273
+- Content hash: 5d821d88be6a407e9dd3e892a60201cbd6137827b36e6dbd1e19049fda29a755
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, not the place row.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u7-076`
 
@@ -7212,10 +7522,10 @@ text=This form is the dictionary row of the same word, not the place row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8ad8050754c4d7706762daeadcdd11120df8198fb6852df8569839a1f514402
+- Content hash: 6f6577b4e5ad727a321c87966f4295b74416cf7b3dfd898ac0e5a6a40954dd84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line is another place line, not the shown line.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u7-077`
 
@@ -7225,10 +7535,10 @@ text=This line is another place line, not the shown line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7fee9e59446e5d0e03d957fee88afde5a1ae8635eca9b8ab3ce2e17c70f5821a
+- Content hash: dcc53dd68bd14084df26baa120dd7024f90d6379f4dc2d1c875a41f011b367a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other object row of the same word, not the animate object row.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u7-078`
 
@@ -7238,10 +7548,10 @@ text=This form is the other object row of the same word, not the animate object 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36d60c2541ca94a1460251b4519fcb274cc6fa7e1b7ef82279c71d730a50ea7c
+- Content hash: 66abe7636ba5fb234b5ec4b239ff211c5488305b678c4d21616e71d8f0ae7d06
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the animate object row of the shown form?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u7-079`
 
@@ -7251,10 +7561,10 @@ text=Which admitted form is the animate object row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efb515dcf46a69c4aca28990239bf7b0bf1cb2e658198573424cb0278ede7af4
+- Content hash: fde47f3e57d3700aae96c17465cc52e214cc2d10049f49443125530879586b16
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line uses another object row, not the shown word.
+text=Work Lesson 7 in your copy
 
 ### AUTHORED_ENGLISH `en-u7-080`
 
@@ -7264,10 +7574,10 @@ text=This line uses another object row, not the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 773ff3251497e62b751b1d41fb41f0d7d524a1e78d5dbb48e55525fc39deda2b
+- Content hash: 15b8e760f50675d33fdaf5c42a1704caaef68064360ba333c73f8a701d678169
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line uses the animate object row of the shown form?
+text=Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u7-081`
 
@@ -7277,10 +7587,10 @@ text=Which admitted line uses the animate object row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ead3bf3acd34836f8856df8b5c4c706517fd447b9be81ab5dae77ba16907a4d8
+- Content hash: 87a49ee984465cc674324aac61187b55b63904361772f4cbf60d8d163991566b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line uses the animate object row, not the shown word.
+text=The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u7-082`
 
@@ -7290,10 +7600,10 @@ text=This line uses the animate object row, not the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 319c1d324d10be790c9d1117385792804b1a2a7c018cf44a8a002256e000efd0
+- Content hash: b7b7f4da618584cd37a6b087813baa494ad4f682cb40cceb01dd7a28877804fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line uses the object row of the shown form?
+text=Open Lesson 7 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u7-083`
 
@@ -7303,10 +7613,10 @@ text=Which admitted line uses the object row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1ba4760d377a11b853793e5fae6a1b170065b5d26f827e2c6243b10e204a7a7
+- Content hash: 33aaa3ead8de7eb72144708b6d26235d86a749c8fb7769fa50f71e964118c3cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, not the object row.
+text=Record Lesson 7 book work
 
 ### AUTHORED_ENGLISH `en-u7-084`
 
@@ -7316,10 +7626,10 @@ text=This form is the dictionary row of the same word, not the object row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 022b210f41c43344a0ba3128aba11203455ad12152f689d2e4407099a9c52baf
+- Content hash: 4c859c0b60aea6a235b1d79949168bb7834e34583ef5bd361ed1bc0f868a22ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted agreement rows
+text=When you have done Lesson 7 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u7-085`
 
@@ -7329,176 +7639,7 @@ text=Admitted agreement rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73250412603565e7e331d9af1fd50e07f0858575d739d11f94cc2f55b94205d9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u7-086`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26b34d9e42e223651a1a4aaf29f6d8908510172e24f11d185dfaf3158c78116a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 7 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u7-087`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b286de00e4d658f0cc40dcde0302735f8a9f97c9d0d18ad436ce3d080fcb0e8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u7-088`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cc20ceb9c8df7ac5b2256dc78d596541e3c5395136fed98247bbdbc0f7772e9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u7-089`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa7ceed7800e244f8741cb409df028c96978ba86a076d526de858d934e7b447c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u7-090`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e3b372da43fab6addbe080b3ecc6d640ef9c947e2d54e1c534693dc6b193bac
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u7-091`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4034ca82e176bb3aa74eb1a6cf4ee90642055f360f13cb1bfd8a1d91b1774671
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u7-092`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76d71996ddbe982f0e5c0d076eef5f3859e52691f6069e66dbec8cd56a504d2f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 7 in your copy
-
-### AUTHORED_ENGLISH `en-u7-093`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 075134c301863d68940d0ee59d558f11508a69cb59d6cad76cab220274c49f0e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u7-094`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07ab21ac0d194bbdc002125febb8d9f007f12219067cff6fd7f4363e3b9e0b23
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u7-095`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30bcbb1daa04af5efb5d258a2a885bb59f78a3c956eb097c06fa905813865d9a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 7 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u7-096`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac6fa54e9198cab05f6a75257274bf7301799043c627bc3c290a929368dcadbb
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 7 book work
-
-### AUTHORED_ENGLISH `en-u7-097`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 14ddb76a9f1f357affb391800295fec1cddf0ec299398900b9091f6e55a37a03
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 7 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u7-098`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 680f88484e3a08656069818c95b21c34e7ffa86d2f864e3874d7f1529d9b263e
+- Content hash: 8021a8feb8d5f87cb4c6f626ec7e00443a9be7adf4c3c805e33d0f9bf6fcd994
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 7 work in your copy.
@@ -7644,9 +7785,12 @@ permitsAppUse=true
 - `obj-u7-spelling` INSTRUCTION `u7-st-teach-spelling-1`
 - `obj-u7-spelling` INSTRUCTION `u7-st-teach-spelling-2`
 - `obj-u7-spelling` INSTRUCTION `u7-st-teach-spelling-3`
+- `obj-u7-spelling` INSTRUCTION `u7-st-teach-spelling-4`
 - `obj-u7-spelling` EXAMPLE `ex-u7-spelling-0`
 - `obj-u7-spelling` EXAMPLE `ex-or-u7-spelling-1`
 - `obj-u7-spelling` EXAMPLE `ex-or-u7-spelling-2`
+- `obj-u7-spelling` EXAMPLE `ex-or-u7-spelling-3`
+- `obj-u7-spelling` EXAMPLE `ex-or-u7-spelling-4`
 - `obj-u7-spelling` PRACTICE `u7-st-guided-spelling-1`
 - `obj-u7-spelling` CHECK `u7-i-spelling-1`
 - `obj-u7-spelling` CHECK `u7-i-spelling-2`
@@ -7790,7 +7934,10 @@ permitsAppUse=true
 - `u7-st-guided-spelling-1` ITEM `u7-g-spelling-0`
 - `u7-st-teach-spelling-2` REFERENCE `ref-u610-attribution`
 - `u7-st-teach-spelling-3` EXAMPLE `ex-or-u7-spelling-2`
+- `u7-st-teach-spelling-3` EXAMPLE `ex-or-u7-spelling-3`
 - `u7-st-teach-spelling-3` REFERENCE `ref-u610-attribution`
+- `u7-st-teach-spelling-4` EXAMPLE `ex-or-u7-spelling-4`
+- `u7-st-teach-spelling-4` REFERENCE `ref-u610-attribution`
 - `u7-st-rem-spelling` EXAMPLE `ex-u7-spelling-0`
 - `u7-st-rem-spelling` EXAMPLE `ex-or-u7-spelling-1`
 - `u7-st-check-spelling` REMEDIATION `u7-st-rem-spelling`
@@ -7940,6 +8087,10 @@ permitsAppUse=true
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-1-gloss`
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-2`
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-2-gloss`
+- `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-3`
+- `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-3-gloss`
+- `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-4`
+- `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-4-gloss`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-en`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-ru`
 - `obj-u7-endings` PROVENANCE `prov-ex-u7-endings-0-en`

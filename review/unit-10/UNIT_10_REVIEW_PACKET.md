@@ -11,12 +11,12 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
-- Unit content-review SHA-256: 2d5b235b9b4c6cb0c2c204350b8ac293935eb41b6b998da1345c622217be54cb
+- Curriculum source commit: c9f23afd219681319554d90424f2d59fd550cadc
+- Unit content-review SHA-256: 6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526
 - Mapping-package SHA-256: bf4d02d3c14e6456ba44602262078cd2c93e2ac9e06e9c3c235242d4c7ea80f2
-- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
-- Review-package SHA-256: c0db669bf9c7dae55173a6f8479de3e4e1813c94fc5d59449d2abd6cc3ca085d
-- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
+- Pack content-review SHA-256: 74b9d02735467b27ca3fab75e6b88c408d1950829b7826673a3244ec77e8504f
+- Review-package SHA-256: 139f3377d547b756175964e8a63751ddaec03ec0246f78b89c4c567048950403
+- Repository source SHA-256: c6e632a8a4fc6957594bc61d0200d48207d0d437a6ab465975c9a083aecd9526
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,13 +113,13 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0bbf5bd963408cc34d0f02b4d3b49f76d4d8b77f54abf43b8e5d594d04419309
+- Content hash: 83c02adb4d5b1264a6397f587cb20809420e08df802c30a755770799084928ac
 
 title=Choose the admitted possession line
 kind=RECOGNITION
 unitNumber=10
 instruction=u10-st-orient,u10-st-teach-have-1,u10-st-teach-have-2,u10-st-teach-have-3,u10-st-teach-have-4,u10-st-teach-have-5
-examples=ex-u10-have-0,ex-u10-have-1,ex-u10-have-2,ex-u10-have-3,ex-u10-have-4,ex-or-u10-have-5,ex-or-u10-have-6
+examples=ex-u10-have-0,ex-u10-have-1,ex-u10-have-2,ex-u10-have-3,ex-u10-have-4,ex-u10-have-5,ex-u10-have-6
 practice=u10-st-guided-have-1
 checks=u10-i-have-1,u10-i-have-2,u10-i-have-3,u10-i-have-4
 remediation=u10-st-rem-have
@@ -132,13 +132,13 @@ remediation=u10-st-rem-have
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: af58426564b85149f71f05fb8af45c68dc878440c65a32c90f90e9eb24ccd9b2
+- Content hash: 42c8cf928f0e19407e28195264456293ee1e7a8b81bfdb59f5c45e6e4f41ca2c
 
 title=Choose the admitted absence line
 kind=RECOGNITION
 unitNumber=10
-instruction=u10-st-orient,u10-st-teach-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4,u10-st-teach-absence-5
-examples=ex-u10-absence-0,ex-u10-absence-1,ex-u10-absence-2,ex-u10-absence-3,ex-u10-absence-4,ex-or-u10-absence-5,ex-or-u10-absence-6
+instruction=u10-st-orient,u10-st-teach-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4
+examples=ex-u10-absence-0,ex-u10-absence-1,ex-u10-absence-2,ex-u10-absence-3,ex-u10-absence-4
 practice=u10-st-guided-absence-1
 checks=u10-i-absence-1,u10-i-absence-2,u10-i-absence-3,u10-i-absence-4
 remediation=u10-st-rem-absence
@@ -151,13 +151,13 @@ remediation=u10-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4c002e00063490761f1a0e1c1bf2a798e0d233d46ea2ba2fec8173ae4037077f
+- Content hash: 40bb920f9503e6fcaa3dabdb9acedbe51e8cb9980dda3bc698c8f8c9613b0407
 
 title=Choose the admitted genitive pronoun form
 kind=RECOGNITION
 unitNumber=10
-instruction=u10-st-orient,u10-st-teach-pronoun-1,u10-st-teach-pronoun-2,u10-st-teach-pronoun-3,u10-st-teach-pronoun-4,u10-st-teach-pronoun-5,u10-st-teach-pronoun-6
-examples=ex-u10-pronoun-0,ex-u10-pronoun-1,ex-u10-pronoun-2,ex-u10-pronoun-3,ex-u10-pronoun-4,ex-u10-pronoun-5,ex-u10-pronoun-6,ex-or-u10-pronoun-7,ex-or-u10-pronoun-8,ex-or-u10-pronoun-9
+instruction=u10-st-orient,u10-st-teach-pronoun-1,u10-st-teach-pronoun-2,u10-st-teach-pronoun-3,u10-st-teach-pronoun-4,u10-st-teach-pronoun-5,u10-st-teach-pronoun-6,u10-st-teach-pronoun-7,u10-st-teach-pronoun-8,u10-st-teach-pronoun-9
+examples=ex-u10-pronoun-0,ex-u10-pronoun-1,ex-u10-pronoun-2,ex-u10-pronoun-3,ex-u10-pronoun-4,ex-u10-pronoun-5,ex-u10-pronoun-6,ex-u10-pronoun-7,ex-u10-pronoun-8,ex-u10-pronoun-9,ex-u10-pronoun-10,ex-u10-pronoun-11,ex-u10-pronoun-12,ex-or-u10-pronoun-13,ex-or-u10-pronoun-14,ex-or-u10-pronoun-15
 practice=u10-st-guided-pronoun-1
 checks=u10-i-pronoun-1,u10-i-pronoun-2,u10-i-pronoun-3,u10-i-pronoun-4
 remediation=u10-st-rem-pronoun
@@ -342,11 +342,11 @@ remediationStepId=u10-st-rem-have
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a3c7843b00f95362dbdd5a12b7ee005adbd85a081cabbb2711e0560413d9319
+- Content hash: 24d264ce518fb46b7697e12056c2d62c8ae93362b8bd18f63993788c75bd4f84
 
 kind=TEACH
 title=Admitted instruction
-body=to say "I have X": '''У меня есть Х'''
+body=The thing that is possessed remains in the nominative
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -386,15 +386,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 256e2b7edb76cd3bcbd2fbafaab6b4b5103d88b97cdbd6e41baf6afae509cdf0
+- Content hash: cad3d68d1237038a40c3a158d2f5da27587d4e1d4cfd353d3b5080722d0e3cdc
 
 kind=TEACH
 title=Admitted lines
-body=У моего нового мужа есть много друзе́й — My new husband has many friends. есть — there is. 
+body=У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u10-have-4,ex-or-u10-have-5
+examples=ex-u10-have-4,ex-u10-have-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -408,15 +408,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 46a1f481779217ae25d24c88fc1ec42aaabafe1e03ff4eb0a2c2bceb52058afd
+- Content hash: 572a444a9afef4807bad6101f9402ff0b63094387e04b6e7a287db0498eb0297
 
 kind=TEACH
 title=Admitted lines
-body=нет — no. 
+body=У моего́ бра́та нет де́нег — My brother doesn't have any money. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u10-have-6
+examples=ex-u10-have-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -430,11 +430,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 34dbb17f662603903255cdcb1b6279eb5284759cdc174c9f7bc5700510c5075d
+- Content hash: a5376d5ede7613c142ad1f4240c56892e680eed2b7d43b52c9fbd8e270450a3e
 
 kind=REMEDIATE
 title=Remediation
-body=to say "I have X": '''У меня есть Х'''
+body=The thing that is possessed remains in the nominative
 dominantAction=Continue
 references=
 items=
@@ -474,12 +474,12 @@ remediationStepId=u10-st-rem-have
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 57babd717bfba5d03e5977bb6b97493241e50756a914cba354a681a570a1b8ad
+- Content hash: 33fdc8bd2c50a06b83ff2e1ca57bc7f7f5c9488a38888d5e20c2dceedbd36729
 
 title=Choose the admitted absence line
 estimatedMinutes=12
 objectives=obj-u10-absence
-steps=u10-st-teach-absence-1,u10-st-guided-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4,u10-st-teach-absence-5,u10-st-rem-absence,u10-st-check-absence
+steps=u10-st-teach-absence-1,u10-st-guided-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4,u10-st-rem-absence,u10-st-check-absence
 
 ### STEP `u10-st-teach-absence-1`
 
@@ -533,11 +533,11 @@ remediationStepId=u10-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab03c7a6f9cba47e9f49ac564cc7a66da4c65ad359721f077374d42b8c005175
+- Content hash: 7db107ce1288401535b845c332c355f696fd6f160fff1cc74de905e5b43ddfdd
 
 kind=TEACH
 title=Admitted instruction
-body=No, I don't have a son - '''У меня́ нет сы́на'''
+body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -577,37 +577,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c16335c769d10a981bbd596ef51ca17763adc2b096cdc5f092b8d96aa92772ca
+- Content hash: a8a20f0480e13db97f3efe297a2a2ed5476c5cb41d499ece7ff3589cab911c81
 
 kind=TEACH
 title=Admitted lines
-body=Да, у меня есть сын. — Yes, I have a son. нет — no. 
+body=Да, у меня есть сын. — Yes, I have a son. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u10-absence-4,ex-or-u10-absence-5
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u10-st-teach-absence-5`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-absence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e389e0b121540a816fce315583523747abe306859d13e54fceef90d2bf194ed2
-
-kind=TEACH
-title=Admitted lines
-body=есть — there is. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u10-absence-6
+examples=ex-u10-absence-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -621,11 +599,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 135cb7711b6ac97f0953dc55ee532215cba9ddb38f0f2871e172f529c01315f4
+- Content hash: bb62a969f1481784021e7a3dbfca061590017eaf1e4cfd4b2d549f5a54cf140c
 
 kind=REMEDIATE
 title=Remediation
-body=No, I don't have a son - '''У меня́ нет сы́на'''
+body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 dominantAction=Continue
 references=
 items=
@@ -665,12 +643,12 @@ remediationStepId=u10-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5aa63faaa97d1aded88569f3b4b164e00547158f1e0d82300f7b2c0dc953bc9a
+- Content hash: adc04d483d5e7093f9fc277d6c81d049ef9fef8567b8dd9e0b6b60cfef9161c9
 
 title=Choose the admitted genitive pronoun form
 estimatedMinutes=12
 objectives=obj-u10-pronoun
-steps=u10-st-teach-pronoun-1,u10-st-guided-pronoun-1,u10-st-teach-pronoun-2,u10-st-teach-pronoun-3,u10-st-teach-pronoun-4,u10-st-teach-pronoun-5,u10-st-teach-pronoun-6,u10-st-rem-pronoun,u10-st-check-pronoun
+steps=u10-st-teach-pronoun-1,u10-st-guided-pronoun-1,u10-st-teach-pronoun-2,u10-st-teach-pronoun-3,u10-st-teach-pronoun-4,u10-st-teach-pronoun-5,u10-st-teach-pronoun-6,u10-st-teach-pronoun-7,u10-st-teach-pronoun-8,u10-st-teach-pronoun-9,u10-st-rem-pronoun,u10-st-check-pronoun
 
 ### STEP `u10-st-teach-pronoun-1`
 
@@ -790,15 +768,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 34e67bc2888b9446eeba0b02622de202bf28b4ef253bb394fb27ca8742186ae0
+- Content hash: 2b83eed69324402b10f2f2eb10130a65b9240248b9af5ac4a17edbb47e0cd441
 
 kind=TEACH
 title=Admitted lines
-body=Они — They. его́ — genetive of "he". 
+body=Мы — We. Нас — We. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u10-pronoun-6,ex-or-u10-pronoun-7
+examples=ex-u10-pronoun-6,ex-u10-pronoun-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -812,7 +790,73 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 64354afb066acb809fc135d85a75d6948fc920d994863086feaaa7548085e6ac
+- Content hash: ee2ba2042077d78fd6630b28ba68fb9c636fa170f6708cfd0f0d4aecae5545bc
+
+kind=TEACH
+title=Admitted lines
+body=Ты — You. Вы — You. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u10-pronoun-8,ex-u10-pronoun-9
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u10-st-teach-pronoun-7`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4ec39d2c7695846f027e2554d415ad8326c6eaba64d0877941edc1f6757b156d
+
+kind=TEACH
+title=Admitted lines
+body=Тебя́ — You. Вас — You. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u10-pronoun-10,ex-u10-pronoun-11
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u10-st-teach-pronoun-8`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9380b9826b07cc6f825b3d93c8b9766e55df6eb78e2d535acb11545e9d13d4a8
+
+kind=TEACH
+title=Admitted lines
+body=Они — They. его́ — genetive of "he". 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u10-pronoun-12,ex-or-u10-pronoun-13
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u10-st-teach-pronoun-9`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 79508a4640a4178bd24af19b1cffd353be580d71f57f2f79a063ad85897b926c
 
 kind=TEACH
 title=Admitted lines
@@ -820,7 +864,7 @@ body=её — genetive of "she". их — their.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u10-pronoun-8,ex-or-u10-pronoun-9
+examples=ex-or-u10-pronoun-14,ex-or-u10-pronoun-15
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1473,11 +1517,11 @@ remediationStepId=u10-st-rem-animate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 41da42f392e260e4861c9219fb80386811c834388b9fd924f15ece6081151d80
+- Content hash: e0802414f9d2c1ed0e6a8b4e737151f24fd8947b81c4b3901c53efb795ef27a5
 
 kind=TEACH
 title=Admitted instruction
-body=I like these women. - '''Я люблю ''этих женщин.'''
+body=I like these women.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1561,11 +1605,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0dce5884885c669e0ead044c3210e4deac4696933046cf5d3d45257d2b97d417
+- Content hash: cec124891d649f1a39283af91a8aff61f5702501937ba2723e68ac9419abf9b2
 
 kind=REMEDIATE
 title=Remediation
-body=I like these women. - '''Я люблю ''этих женщин.'''
+body=I like these women.
 dominantAction=Continue
 references=
 items=
@@ -1741,37 +1785,37 @@ note=My new husband has many friends
 objectiveId=obj-u10-have
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u10-have-5`
+### EXAMPLE `ex-u10-have-5`
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 322a232be16f105c901f206900217466c32ba7da8e2286aea297f1789d5709c2
+- Content hash: 66a07ee7f937482a5972ba56b01c67cf1289f85fbe96f6cffc8cde486f82d5f8
 
 kind=LEXICAL
 letterId=
-display=есть
-note=there is
+display=У меня́ нет сы́на
+note=No, I don't have a son
 objectiveId=obj-u10-have
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u10-have-6`
+### EXAMPLE `ex-u10-have-6`
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29c35523a8bd2a39db94d4e3ff967fea3d1f490065d001e7ce56bd5467924e00
+- Content hash: b19d147e162e5fa4a8648bd24e3d6444fb9f5d7d430c262e45706005584ed570
 
 kind=LEXICAL
 letterId=
-display=нет
-note=no
+display=У моего́ бра́та нет де́нег
+note=My brother doesn't have any money
 objectiveId=obj-u10-have
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1857,40 +1901,6 @@ kind=LEXICAL
 letterId=
 display=Да, у меня есть сын.
 note=Yes, I have a son
-objectiveId=obj-u10-absence
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u10-absence-5`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a23f05ca12432ba3759860a699a56f909c244281de4be9db446626faad712b07
-
-kind=LEXICAL
-letterId=
-display=нет
-note=no
-objectiveId=obj-u10-absence
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u10-absence-6`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34782f50fca9231d8a9e950b17f846d3e86c533816f87cb89eec4cf889d441bd
-
-kind=LEXICAL
-letterId=
-display=есть
-note=there is
 objectiveId=obj-u10-absence
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2004,7 +2014,109 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa787fef0ad5d8499e678ecae719eca43f0de8263239c26b55d1a216a65189f8
+- Content hash: 1e88fff3cab7953074385494e7757cf893d7195aeda1ff781843fa183711ecb6
+
+kind=LEXICAL
+letterId=
+display=Мы
+note=We
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-7`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e9fa9f9a4f9139a02b67e65efe0075f9117d6ae57a6ae2a01ef1fdc751eb9687
+
+kind=LEXICAL
+letterId=
+display=Нас
+note=We
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-8`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4af77aae2d4f5d442d754e9f270ecce6912246dfebd6e05bb327c7f0b9b492d0
+
+kind=LEXICAL
+letterId=
+display=Ты
+note=You
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-9`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81347fc9c0fa32bc862d40989b9c358526334ee19da17d3b94a2b6a00a5b1574
+
+kind=LEXICAL
+letterId=
+display=Вы
+note=You
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-10`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5067abd219023be9ab50ab85137b47e9fea04c7033045bad2d25a2c0e6fc80c9
+
+kind=LEXICAL
+letterId=
+display=Тебя́
+note=You
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-11`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82b343969b7c72f19155b489c74061c77dc6bd8309496c791139f496d5e8602e
+
+kind=LEXICAL
+letterId=
+display=Вас
+note=You
+objectiveId=obj-u10-pronoun
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u10-pronoun-12`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ebeee0b26576f6b9bb0c457e06868a0ed6cf436429d833216474e97b8ff4c04f
 
 kind=LEXICAL
 letterId=
@@ -2013,7 +2125,7 @@ note=They
 objectiveId=obj-u10-pronoun
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u10-pronoun-7`
+### EXAMPLE `ex-or-u10-pronoun-13`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
@@ -2021,7 +2133,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba5346c2859e1b0f9dc9fb679f9bc0d8dafe5e89611e346533c1750f485dcd73
+- Content hash: 3ea7afd668fc3155684af98f3ca351d83ec920b1ae06c31fb13b4682fc2bd7ab
 
 kind=LEXICAL
 letterId=
@@ -2030,7 +2142,7 @@ note=genetive of "he"
 objectiveId=obj-u10-pronoun
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u10-pronoun-8`
+### EXAMPLE `ex-or-u10-pronoun-14`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
@@ -2038,7 +2150,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fed65a96d6b9821872c90b4cab32d909120b64b51cd9bebaf78f95675667666
+- Content hash: d68b0866b1f5e133af836d704743e90a2023f40cf1e8401db3d7bc154006b655
 
 kind=LEXICAL
 letterId=
@@ -2047,7 +2159,7 @@ note=genetive of "she"
 objectiveId=obj-u10-pronoun
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u10-pronoun-9`
+### EXAMPLE `ex-or-u10-pronoun-15`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
@@ -2055,7 +2167,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44fb5d6e515cfa798419db175b3d3bb2b26339c06cf88ec01b36866ccd943e6e
+- Content hash: fba47168de881dcb1403ac01f5a78c2f6545f2e747f27bd28230f3e4741737f6
 
 kind=LEXICAL
 letterId=
@@ -2701,7 +2813,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7851400bb478c6f8b7db507d84c1116dca8447b46d595376aed088c5d240afa9
+- Content hash: 6da49f84a12692faba938a3ff9d7cb983adfebbf0440f02041e31ec8f2ed0e1b
 
 kind=FORM_SELECTION
 language=en
@@ -2709,21 +2821,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У меня есть Х
 options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
 answer=The thing that is possessed remains in the nominative
-feedback=Does this admitted rule classify the shown line? The thing that is possessed remains in the nominative.
+feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-have-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u10-have-x-0
+answerSourceIds=prov-u10-have-rem
 distractorSourceIds= | prov-u10-have-x-1
 distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-have-0-ru | prov-u10-have-rem | prov-u10-have-x-1
 
 ### GUIDED_PRACTICE `u10-g-absence-0`
 
@@ -2733,7 +2847,7 @@ contrastMembers=The thing that is possessed remains in the nominative | Converse
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1eef44ee1ce845cca7ca16a2bb73e7ef06d2de9a7bbaebab48cf80836d18d4c7
+- Content hash: 29356f29b0118ee3451c035ff18f5737c2e4f15a54450d43f0281899cf91eee3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2741,21 +2855,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У меня́ нет сы́на
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-absence-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u10-absence-x-1
+answerSourceIds=prov-u10-absence-rem
 distractorSourceIds= | prov-u10-absence-x-0
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-absence-0-ru | prov-u10-absence-rem | prov-u10-absence-x-0
 
 ### GUIDED_PRACTICE `u10-g-pronoun-0`
 
@@ -2765,29 +2881,31 @@ contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use t
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ece6fcfbdf0028ef3e7f56752773429bf598d9dd9d806a6d189a7ee3582802da
+- Content hash: 84e72fd5b3e0307b34f33001e6c503024b86d99b07707a5d4808fbac74816601
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Я
-options=Меня́ | Я
+options=Меня́ | Нас
 answer=Меня́
-feedback=Does the answer show the governed row of the same word? Меня́.
+feedback=Does the admitted record show the governed contrast? Меня́.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other row of the same word, not the genitive row.
+distractorRationales= | This form is the genitive cell of another row in the same frozen table.
 testedFeature=GENITIVE_PRONOUN
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-pronoun-2-ru
-distractorSourceIds= | prov-ex-u10-pronoun-5-ru
-distractorDifference= | This form is the other row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=Меня́ | Я
+distractorSourceIds= | prov-ex-u10-pronoun-7-ru
+distractorDifference= | This form is the genitive cell of another row in the same frozen table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Меня́ | Нас
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-pronoun-5-ru | prov-ex-u10-pronoun-2-ru | prov-ex-u10-pronoun-7-ru
 
 ### GUIDED_PRACTICE `u10-g-preposition-0`
 
@@ -2797,7 +2915,7 @@ contrastMembers=Меня́ | Я
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9cb076f89e590a799bb58643b2ef560ed7cdf57387c378a7c52cf531c5cfce7
+- Content hash: 1f7453c1c3729e9431e4ff48e531bca8ad72daaafa61d421af3235024784919e
 
 kind=FORM_SELECTION
 language=en
@@ -2805,53 +2923,57 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=молоко́
 options=молока́ | молоко́
 answer=молока́
-feedback=Does the answer show the governed row of the same word? молока́.
+feedback=Does the admitted record show the governed contrast? молока́.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
 testedFeature=GENITIVE_PREPOSITION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u10-preposition-12
 distractorSourceIds= | prov-ex-or-u10-preposition-11
 distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=молока́ | молоко́
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-preposition-11 | prov-ex-or-u10-preposition-12 | prov-ex-or-u10-preposition-11
 
 ### GUIDED_PRACTICE `u10-g-adjective-0`
 
 - Objectives: obj-u10-adjective
 - Sessions: u10-s-adjective
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc8ebcf52dd60af6f253b08b25c25223db18be3ca641cb4007488e4b409f6982
+- Content hash: e059df02972f32e856c4f0ebaac5973904b6ca3900a2df399f8f60a5014041be
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
+prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=но́вого
-options=Кило́ хоро́шего ру́сского сы́ра | Кило́ хоро́шей ру́сской колбасы́
-answer=Кило́ хоро́шего ру́сского сы́ра
-feedback=Does the answer agree with the shown word? Кило́ хоро́шего ру́сского сы́ра.
+options=но́вый | но́вой
+answer=но́вый
+feedback=Does the admitted record show the governed contrast? но́вый.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line uses the other agreement, not the shown word.
+distractorRationales= | This form is the other genitive row of the same word.
 testedFeature=GENITIVE_ADJECTIVE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u10-adjective-0-ru
-distractorSourceIds= | prov-ex-u10-adjective-1-ru
-distractorDifference= | This line uses the other agreement, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=Кило́ хоро́шего ру́сского сы́ра | Кило́ хоро́шей ру́сской колбасы́
+answerSourceIds=prov-ex-or-u10-adjective-3
+distractorSourceIds= | prov-ex-or-u10-adjective-5
+distractorDifference= | This form is the other genitive row of the same word.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вый | но́вой
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-3 | prov-ex-or-u10-adjective-5
 
 ### GUIDED_PRACTICE `u10-g-animate-0`
 
@@ -2861,7 +2983,7 @@ contrastMembers=Кило́ хоро́шего ру́сского сы́ра | К
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0f8a9a036249a14af6538389e8b364bdd9f3407c877de394355007b8e6e41ea
+- Content hash: a01f94069df1c91b7bf8dceba28dc033b550d98f671bb8b740b627492565d0e7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2869,21 +2991,23 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Эти женщины
 options=этих женщин | Эти женщины
 answer=этих женщин
-feedback=Does the answer show the governed row of the same word? этих женщин.
+feedback=Does the admitted record show the governed contrast? этих женщин.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the object row.
 testedFeature=ANIMATE_PLURAL_OBJECT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-animate-0-ru
 distractorSourceIds= | prov-ex-u10-animate-1-ru
 distractorDifference= | This form is the other row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=этих женщин | Эти женщины
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru
 
 ### INDEPENDENT_CHECK `u10-i-have-1`
 
@@ -2893,7 +3017,7 @@ contrastMembers=этих женщин | Эти женщины
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a299cb8d0a02bc311e91ab585af49e4e785b5eae5c2256a24724cc155866ec97
+- Content hash: c075dec14f36c5f72c1d8eab66e4cbe65f77d02817b82a15bcfc12944595d4b8
 
 kind=FORM_SELECTION
 language=en
@@ -2901,21 +3025,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=Да, у меня есть сын.
 options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
 answer=The thing that is possessed remains in the nominative
-feedback=Does this admitted rule classify the shown line? The thing that is possessed remains in the nominative.
+feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-have-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-x-0
+answerSourceIds=prov-u10-have-rem
 distractorSourceIds= | prov-u10-have-x-1
 distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-have-2-ru | prov-u10-have-rem | prov-u10-have-x-1
 
 ### INDEPENDENT_CHECK `u10-i-have-2`
 
@@ -2925,7 +3051,7 @@ contrastMembers=The thing that is possessed remains in the nominative | Converse
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d05f2e0d765cc9fba6f22ed1c6f243acd1ba58ee425f2ec5a6b9d09afa3dd1fe
+- Content hash: 215e7044f972551819908a8d2751aa0c73d3b030b0aca5db834960612152131a
 
 kind=FORM_SELECTION
 language=en
@@ -2933,21 +3059,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У вас есть сын?
 options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
 answer=The thing that is possessed remains in the nominative
-feedback=Does this admitted rule classify the shown line? The thing that is possessed remains in the nominative.
+feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-have-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-x-0
+answerSourceIds=prov-u10-have-rem
 distractorSourceIds= | prov-u10-have-x-1
 distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-have-1-ru | prov-u10-have-rem | prov-u10-have-x-1
 
 ### INDEPENDENT_CHECK `u10-i-have-3`
 
@@ -2957,7 +3085,7 @@ contrastMembers=The thing that is possessed remains in the nominative | Converse
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4431f6569892bc586def5e4b1a0b850b52885deae4dbf33914d358edec8a178
+- Content hash: 544a6bd9069665c50873b781e5443e0d70522ee43013182b80f06c06462526bd
 
 kind=FORM_SELECTION
 language=en
@@ -2965,21 +3093,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У меня́ нет сы́на
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-have-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u10-have-x-1
-distractorSourceIds= | prov-u10-have-x-0
+distractorSourceIds= | prov-u10-have-rem
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-have-5-ru | prov-u10-have-x-1 | prov-u10-have-rem
 
 ### INDEPENDENT_CHECK `u10-i-have-4`
 
@@ -2989,7 +3119,7 @@ contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use t
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a86a4beeec14050c7c6a3911aecec91ebb1a06b32b9c68c5f068112fc5dd709
+- Content hash: 8f1865f86c3fd4cdbf9e56203d8239d8bab5e38c58fd15bdca1c87103714043c
 
 kind=FORM_SELECTION
 language=en
@@ -2997,21 +3127,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У моего́ бра́та нет де́нег
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-have-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u10-have-x-1
-distractorSourceIds= | prov-u10-have-x-0
+distractorSourceIds= | prov-u10-have-rem
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-have-6-ru | prov-u10-have-x-1 | prov-u10-have-rem
 
 ### INDEPENDENT_CHECK `u10-i-absence-1`
 
@@ -3021,7 +3153,7 @@ contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use t
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35503b20afddc14ae65d5c0b32a737e52b0aca3781c7e85d6fdb38a75fa80ad3
+- Content hash: de3baf80d3bcf37b7e9d9dabb271e698cd49ae549589fefb6b2571d5282e163f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3029,21 +3161,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=Нет рестора́нов
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-absence-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-x-1
+answerSourceIds=prov-u10-absence-rem
 distractorSourceIds= | prov-u10-absence-x-0
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-absence-1-ru | prov-u10-absence-rem | prov-u10-absence-x-0
 
 ### INDEPENDENT_CHECK `u10-i-absence-2`
 
@@ -3053,7 +3187,7 @@ contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use t
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6cacfd173d317c33f6e399a0ac1412e8d6cb6d29f8be72885dacdca97267f6c
+- Content hash: 8e748676c0b5f6f225d3f595b8224e67cda7326192f32e1b3fa21419db3a3561
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3061,21 +3195,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=В Москве́ нет ста́рых зда́ний
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-absence-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-x-1
+answerSourceIds=prov-u10-absence-rem
 distractorSourceIds= | prov-u10-absence-x-0
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-absence-2-ru | prov-u10-absence-rem | prov-u10-absence-x-0
 
 ### INDEPENDENT_CHECK `u10-i-absence-3`
 
@@ -3085,7 +3221,7 @@ contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use t
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6692d81dbd8a72dd45ca3bc2256abcb476c17b5f8aa6455d30123ef120bb231
+- Content hash: 17e94049579e0b669f8636bd76e16ebbe253a0f551c325eed3b3c470f3ce5e5f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3093,21 +3229,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=Да, у меня есть сын.
 options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
 answer=The thing that is possessed remains in the nominative
-feedback=Does this admitted rule classify the shown line? The thing that is possessed remains in the nominative.
+feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-absence-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u10-absence-x-0
-distractorSourceIds= | prov-u10-absence-x-1
+distractorSourceIds= | prov-u10-absence-rem
 distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-absence-4-ru | prov-u10-absence-x-0 | prov-u10-absence-rem
 
 ### INDEPENDENT_CHECK `u10-i-absence-4`
 
@@ -3117,7 +3255,7 @@ contrastMembers=The thing that is possessed remains in the nominative | Converse
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a116fb7a1ea8ed7f56989f6d782b28b4d2622bdf61620715ef4719f8510acdc0
+- Content hash: 3ba921921e60595a2b973f1a7f1d4189c45c52e065e4c2b62bce44ca3d0dd508
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3125,85 +3263,91 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=У моего́ бра́та нет де́нег
 options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
 answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does this admitted rule classify the shown line? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u10-absence-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-x-1
+answerSourceIds=prov-u10-absence-rem
 distractorSourceIds= | prov-u10-absence-x-0
 distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u10-absence-3-ru | prov-u10-absence-rem | prov-u10-absence-x-0
 
 ### INDEPENDENT_CHECK `u10-i-pronoun-1`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2fa5b3182ace00a555c761b23f74ec62b3e2f8e728f52b2d93d72c2483e677e
+- Content hash: e972fe2bfa3d13f137c4ddb35f697d677575cc800109b02d4b81b6bbd1e6821c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form does the shown line use?
-promptLetter=Для него́
-options=его́ | её
-answer=его́
-feedback=Does the answer identify the governed form in the shown line? его́.
+prompt=Which admitted form is the genitive row of the shown form?
+promptLetter=Мы
+options=Нас | Меня́
+answer=Нас
+feedback=Does the admitted record show the governed contrast? Нас.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other third-person form, and the shown line uses another form.
+distractorRationales= | This form is the genitive cell of another row in the same frozen table.
 testedFeature=GENITIVE_PRONOUN
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u10-pronoun-7
-distractorSourceIds= | prov-ex-u10-pronoun-3-ru-r1
-distractorDifference= | This form is the other third-person form, and the shown line uses another form.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=его́ | её
+answerSourceIds=prov-ex-u10-pronoun-7-ru
+distractorSourceIds= | prov-ex-u10-pronoun-2-ru
+distractorDifference= | This form is the genitive cell of another row in the same frozen table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Нас | Меня́
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-pronoun-6-ru | prov-ex-u10-pronoun-7-ru | prov-ex-u10-pronoun-2-ru
 
 ### INDEPENDENT_CHECK `u10-i-pronoun-2`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 730dad73ebb4b8c20e1e590c8d4a0f5478fc219d1358ff2c0b60115de75dfa85
+- Content hash: c6dc79889335982a76e4aa07c1f182a27bcb0c32a5c061564e68dd946a4e49c4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form does the shown line use?
-promptLetter=Без неё
-options=её | его́
-answer=её
-feedback=Does the answer identify the governed form in the shown line? её.
+prompt=Which admitted form is the genitive row of the shown form?
+promptLetter=Ты
+options=Тебя́ | Вас
+answer=Тебя́
+feedback=Does the admitted record show the governed contrast? Тебя́.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other third-person form, and the shown line uses another form.
+distractorRationales= | This form is the genitive cell of another row in the same frozen table.
 testedFeature=GENITIVE_PRONOUN
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u10-pronoun-3-ru-r1
-distractorSourceIds= | prov-ex-or-u10-pronoun-7
-distractorDifference= | This form is the other third-person form, and the shown line uses another form.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=её | его́
+answerSourceIds=prov-ex-u10-pronoun-10-ru
+distractorSourceIds= | prov-ex-u10-pronoun-11-ru
+distractorDifference= | This form is the genitive cell of another row in the same frozen table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Тебя́ | Вас
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-pronoun-8-ru | prov-ex-u10-pronoun-10-ru | prov-ex-u10-pronoun-11-ru
 
 ### INDEPENDENT_CHECK `u10-i-pronoun-3`
 
@@ -3213,61 +3357,65 @@ contrastMembers=её | его́
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c45280247d23040ddac8b1a23db7c826e9d663d9e61ba13fdba68d52849bcf2
+- Content hash: 5dca103c954ecae414a6b535617c73abab5bd0331d2f7107e238a3f14469547b
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted form is the genitive row of the shown form?
-promptLetter=Они
-options=Их | Его́/её
-answer=Их
-feedback=Does the answer identify the governed form in the shown line? Их.
+promptLetter=Вы
+options=Вас | Тебя́
+answer=Вас
+feedback=Does the admitted record show the governed contrast? Вас.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another genitive cell, not the cell of the shown line.
+distractorRationales= | This form is the genitive cell of another row in the same frozen table.
 testedFeature=GENITIVE_PRONOUN
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u10-pronoun-4-ru
-distractorSourceIds= | prov-ex-u10-pronoun-3-ru
-distractorDifference= | This form is another genitive cell, not the cell of the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=Их | Его́/её
+answerSourceIds=prov-ex-u10-pronoun-11-ru
+distractorSourceIds= | prov-ex-u10-pronoun-10-ru
+distractorDifference= | This form is the genitive cell of another row in the same frozen table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Вас | Тебя́
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-pronoun-9-ru | prov-ex-u10-pronoun-11-ru | prov-ex-u10-pronoun-10-ru
 
 ### INDEPENDENT_CHECK `u10-i-pronoun-4`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-pronoun
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dfefea06fd93d3fa6704cd88c7c9335923fcd56807679d57e8d7715c3adb592
+- Content hash: 6e4a1617f95255f8b8f4bdd85c137e0dd18f6cd9c15e8560818290a304065581
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the stressed row of the shown form?
-promptLetter=Их
-options=их | его́
-answer=их
-feedback=Does the answer identify the governed form in the shown line? их.
+prompt=Which admitted form is the genitive row of the shown form?
+promptLetter=Они
+options=Их | Нас
+answer=Их
+feedback=Does the admitted record show the governed contrast? Их.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other stressed form, not the form of the shown line.
+distractorRationales= | This form is the genitive cell of another row in the same frozen table.
 testedFeature=GENITIVE_PRONOUN
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u10-pronoun-9
-distractorSourceIds= | prov-ex-or-u10-pronoun-7
-distractorDifference= | This form is the other stressed form, not the form of the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=их | его́
+answerSourceIds=prov-ex-u10-pronoun-4-ru
+distractorSourceIds= | prov-ex-u10-pronoun-7-ru
+distractorDifference= | This form is the genitive cell of another row in the same frozen table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Их | Нас
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-pronoun-12-ru | prov-ex-u10-pronoun-4-ru | prov-ex-u10-pronoun-7-ru
 
 ### INDEPENDENT_CHECK `u10-i-preposition-1`
 
@@ -3277,7 +3425,7 @@ contrastMembers=их | его́
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 967d94681551261a648780c018af242a36a2d0ed1785220869f44881779b4c6d
+- Content hash: a696b1ee02e221837701fd9caabc46bcc554864c8b4e1996bbd1527c27f7f26c
 
 kind=FORM_SELECTION
 language=en
@@ -3285,21 +3433,23 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=окно́
 options=окна́ | окно́
 answer=окна́
-feedback=Does the answer show the governed row of the same word? окна́.
+feedback=Does the admitted record show the governed contrast? окна́.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
 testedFeature=GENITIVE_PREPOSITION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-14
 distractorSourceIds= | prov-ex-or-u10-preposition-13
 distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=окна́ | окно́
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-preposition-13 | prov-ex-or-u10-preposition-14 | prov-ex-or-u10-preposition-13
 
 ### INDEPENDENT_CHECK `u10-i-preposition-2`
 
@@ -3309,7 +3459,7 @@ contrastMembers=окна́ | окно́
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1d201f84b93db8101055be93fff5cd88f70a22167e37fd01381b29531a95ef1
+- Content hash: d31655d38c0a5869623f6041519d0569f247dd4c9dc9e9df17b7049a21e66421
 
 kind=FORM_SELECTION
 language=en
@@ -3317,21 +3467,23 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=друг
 options=дру́га | друг
 answer=дру́га
-feedback=Does the answer show the governed row of the same word? дру́га.
+feedback=Does the admitted record show the governed contrast? дру́га.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
 testedFeature=GENITIVE_PREPOSITION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-16
 distractorSourceIds= | prov-ex-or-u10-preposition-15
 distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=дру́га | друг
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-preposition-15 | prov-ex-or-u10-preposition-16 | prov-ex-or-u10-preposition-15
 
 ### INDEPENDENT_CHECK `u10-i-preposition-3`
 
@@ -3341,7 +3493,7 @@ contrastMembers=дру́га | друг
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8502fab92bec6de102a6a84be3fa0ed25b82a7c3de94737f72a5da1423021667
+- Content hash: 69fd0e5818389931098f3881bbbffb27e68d12b04ebb527211aba0e71c14c08b
 
 kind=FORM_SELECTION
 language=en
@@ -3349,21 +3501,23 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=мо́й
 options=моего́ | моя́
 answer=моего́
-feedback=Does the answer show the governed row of the same word? моего́.
+feedback=Does the admitted record show the governed contrast? моего́.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other agreement row of the same word, not the genitive row.
 testedFeature=GENITIVE_PREPOSITION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-18
 distractorSourceIds= | prov-ex-or-u10-preposition-19
 distractorDifference= | This form is the other agreement row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=моего́ | моя́
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-preposition-17 | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
 
 ### INDEPENDENT_CHECK `u10-i-preposition-4`
 
@@ -3373,7 +3527,7 @@ contrastMembers=моего́ | моя́
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0494cbec73cb3440bb111844c05e83caca06fed56acb4e8a23ff65cc0cfb5acc
+- Content hash: a3e4f58d0e29bf6e7f24f06a0ca6c5399ffd303b9e474bb45fffee292d98b5de
 
 kind=FORM_SELECTION
 language=en
@@ -3381,53 +3535,57 @@ prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=моего́
 options=мо́й | моего́ | моя́
 answer=мо́й
-feedback=Does the answer show the governed row of the same word? мо́й.
+feedback=Does the admitted record show the governed contrast? мо́й.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the genitive row of the same word, not the dictionary row. | This form is the other agreement row of the same word, not the dictionary row.
 testedFeature=GENITIVE_PREPOSITION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-17
 distractorSourceIds= | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
 distractorDifference= | This form is the genitive row of the same word, not the dictionary row. | This form is the other agreement row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=мо́й | моего́ | моя́
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-17 | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
 
 ### INDEPENDENT_CHECK `u10-i-adjective-1`
 
 - Objectives: obj-u10-adjective
 - Sessions: u10-s-adjective
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d589a7f3d40e35f6d17b97b82683204f9e9b54e0e8a552b75cd6b07a33f0394a
+- Content hash: 0713b51b6b294ae1313de892268d9a1c202df79d97f06346222c3a1ac5d0c132
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=но́вой
-options=Кило́ хоро́шей ру́сской колбасы́ | Кило́ хоро́шего ру́сского сы́ра
-answer=Кило́ хоро́шей ру́сской колбасы́
-feedback=Does the answer agree with the shown word? Кило́ хоро́шей ру́сской колбасы́.
+prompt=Which admitted form is the dictionary row of the shown form?
+promptLetter=хоро́шего
+options=хоро́ший | хоро́шей
+answer=хоро́ший
+feedback=Does the admitted record show the governed contrast? хоро́ший.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line uses the other agreement, not the shown word.
+distractorRationales= | This form is the other genitive row of the same word.
 testedFeature=GENITIVE_ADJECTIVE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u10-adjective-1-ru
-distractorSourceIds= | prov-ex-u10-adjective-0-ru
-distractorDifference= | This line uses the other agreement, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=Кило́ хоро́шей ру́сской колбасы́ | Кило́ хоро́шего ру́сского сы́ра
+answerSourceIds=prov-ex-or-u10-adjective-7
+distractorSourceIds= | prov-ex-or-u10-adjective-9
+distractorDifference= | This form is the other genitive row of the same word.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́ший | хоро́шей
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-adjective-8 | prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-9
 
 ### INDEPENDENT_CHECK `u10-i-adjective-2`
 
@@ -3437,7 +3595,7 @@ contrastMembers=Кило́ хоро́шей ру́сской колбасы́ | 
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df465416f004daebb24f57aadf55e6e357581f3c3f154372516c14244e2f10ff
+- Content hash: e9473e810354be130e3751d87b6cda11498dc25b88e3657af03ddaada206e729
 
 kind=FORM_SELECTION
 language=en
@@ -3445,21 +3603,23 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=но́вый
 options=но́вого | но́вой | но́вых
 answer=но́вого
-feedback=Does the answer show the governed row of the same word? но́вого.
+feedback=Does the admitted record show the governed contrast? но́вого.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other genitive row of the same word. | This form is the plural genitive row of the same word.
 testedFeature=GENITIVE_ADJECTIVE
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-adjective-4
 distractorSourceIds= | prov-ex-or-u10-adjective-5 | prov-ex-or-u10-adjective-6
 distractorDifference= | This form is the other genitive row of the same word. | This form is the plural genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вого | но́вой | но́вых
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-adjective-3 | prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-5 | prov-ex-or-u10-adjective-6
 
 ### INDEPENDENT_CHECK `u10-i-adjective-3`
 
@@ -3469,7 +3629,7 @@ contrastMembers=но́вого | но́вой | но́вых
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d68c425877c63f1907b08f9c960ca814fdd2cbcad43d89ebe18307936fe8fcc
+- Content hash: a99d604531cc7ad7b786e27d1252c243be8867b0bb117f91a7bb5dca42ce27e2
 
 kind=FORM_SELECTION
 language=en
@@ -3477,21 +3637,23 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=хоро́ший
 options=хоро́шего | хоро́шей
 answer=хоро́шего
-feedback=Does the answer show the governed row of the same word? хоро́шего.
+feedback=Does the admitted record show the governed contrast? хоро́шего.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other genitive row of the same word.
 testedFeature=GENITIVE_ADJECTIVE
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-adjective-8
 distractorSourceIds= | prov-ex-or-u10-adjective-9
 distractorDifference= | This form is the other genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=хоро́шего | хоро́шей
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-8 | prov-ex-or-u10-adjective-9
 
 ### INDEPENDENT_CHECK `u10-i-animate-1`
 
@@ -3501,7 +3663,7 @@ contrastMembers=хоро́шего | хоро́шей
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbf01c5c68d94c61ed00d4734ad2604961782cc9b4a499ac5b0285ce76e314fc
+- Content hash: 39f212d765c2dfc2415cfe9b55f0af30de58ee37000d77a25be6f7408ca5bce6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3509,21 +3671,23 @@ prompt=Which admitted form is the other plural row of the shown form?
 promptLetter=этих женщин
 options=Эти женщины | этих женщин
 answer=Эти женщины
-feedback=Does the answer show the governed row of the same word? Эти женщины.
+feedback=Does the admitted record show the governed contrast? Эти женщины.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the object row of the same word, not the other plural row.
 testedFeature=ANIMATE_PLURAL_OBJECT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-animate-1-ru
 distractorSourceIds= | prov-ex-u10-animate-0-ru
 distractorDifference= | This form is the object row of the same word, not the other plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=Эти женщины | этих женщин
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru
 
 ### INDEPENDENT_CHECK `u10-i-animate-2`
 
@@ -3533,7 +3697,7 @@ contrastMembers=Эти женщины | этих женщин
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff58048e96f6786597f84c7d869a4c5afd1a6a1e0140820a1adb212ceb5f78bf
+- Content hash: 5426cd8eb1ccaf5c7d137de1d1fa46a54f71b00e8f3e36dff39ecd95b70b0736
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3541,21 +3705,23 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=же́нщины
 options=же́нщин | же́нщины
 answer=же́нщин
-feedback=Does the answer show the governed row of the same word? же́нщин.
+feedback=Does the admitted record show the governed contrast? же́нщин.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other plural row of the same word, not the object row.
 testedFeature=ANIMATE_PLURAL_OBJECT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-animate-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-animate-2
 distractorSourceIds= | prov-ex-or-u10-animate-3
 distractorDifference= | This form is the other plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=же́нщин | же́нщины
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-animate-3 | prov-ex-or-u10-animate-2 | prov-ex-or-u10-animate-3
 
 ### INDEPENDENT_CHECK `u10-i-animate-3`
 
@@ -3565,7 +3731,7 @@ contrastMembers=же́нщин | же́нщины
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d13e21befb361a1edda730310e51435482df48804485bc627d0e354b78796d44
+- Content hash: 6428fc874f6c58056e6a3646e97f0179f0c66260962a6cdc246d4a96b035fc8f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3573,21 +3739,23 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=бра́тья
 options=бра́тьев | бра́тья
 answer=бра́тьев
-feedback=Does the answer show the governed row of the same word? бра́тьев.
+feedback=Does the admitted record show the governed contrast? бра́тьев.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other plural row of the same word, not the object row.
 testedFeature=ANIMATE_PLURAL_OBJECT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-animate-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-animate-5
 distractorSourceIds= | prov-ex-or-u10-animate-4
 distractorDifference= | This form is the other plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=бра́тьев | бра́тья
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u10-animate-4 | prov-ex-or-u10-animate-5 | prov-ex-or-u10-animate-4
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -3606,122 +3774,6 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
-
-### PROVENANCE `prov-ex-or-u10-absence-5`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-orient, u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 228bc36262615c331736e12c2d8ca6952b8785df34e818edc8ab9180edde1e17
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#accented
-originalSourceText=нет
-shippedText=нет
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-contentHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-absence-5-gloss`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-orient, u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35afd986d0a4848ea2bcaf5d20f077a55d6a2663ba3c95ad3f468466843e0fa2
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#translations_en
-originalSourceText=no; not
-shippedText=no
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=a190e343b9687b148d11f172ee614b0a71efbc89c99f343042fc39e25f51dbaa
-contentHash=9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-absence-6`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-orient, u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 218a80b596325054133b4870c983b4734173b46bb65bcfd209c7f8f413a13dcc
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#accented
-originalSourceText=есть
-shippedText=есть
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-contentHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-absence-6-gloss`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-orient, u10-s-absence
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d134bdebb622eecfdedce5537e350b908ade456c53159f2520d03775b99e6b8e
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#translations_en
-originalSourceText=there is, there are
-shippedText=there is
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=ed271bf8221a1122d3a5d635b0b0b0ceef1e0af4ab1db4809db1eae3c21f7c1c
-contentHash=d193d7f0d62fecb468402f2090150fc27e337522d9a981a6a425c6033a7fb6e4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u10-adjective-3`
 
@@ -4413,122 +4465,6 @@ attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
 contentHash=cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-have-5`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-orient, u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddb0b91f19f5b48e48c1235caa03b498beacaf3f0ffb38fd98d1570b4b5356a6
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#accented
-originalSourceText=есть
-shippedText=есть
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-contentHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-have-5-gloss`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-orient, u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55843471738dbd6a0a54f7b6dc35118283a612f99219b020b4146a2ccee8bc0e
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#translations_en
-originalSourceText=there is, there are
-shippedText=there is
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=ed271bf8221a1122d3a5d635b0b0b0ceef1e0af4ab1db4809db1eae3c21f7c1c
-contentHash=d193d7f0d62fecb468402f2090150fc27e337522d9a981a6a425c6033a7fb6e4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-have-6`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-orient, u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cefb0b629481133ac5a233a45153812462b5d0db1a339b12fd2c11322671436
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#accented
-originalSourceText=нет
-shippedText=нет
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-contentHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u10-have-6-gloss`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-orient, u10-s-have
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e082de4bf9e556d9aace8321d8ef8206bac2a8acd961ab9a3600db1d01dcfb08
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#translations_en
-originalSourceText=no; not
-shippedText=no
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=a190e343b9687b148d11f172ee614b0a71efbc89c99f343042fc39e25f51dbaa
-contentHash=9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5347,7 +5283,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-7`
+### PROVENANCE `prov-ex-or-u10-pronoun-13`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5355,7 +5291,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 744dffe2bb35fbcfd36792b1d418d8ae693458eca4dbf05301fe7c8523dd04f8
+- Content hash: b6b77ceb8e85955b8121ff24578769b865150f2fa93ad446ecd523e2b509844c
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5376,7 +5312,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-7-gloss`
+### PROVENANCE `prov-ex-or-u10-pronoun-13-gloss`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5384,7 +5320,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b7233335ce3ffc37efb03d9343b935101cee61d9dd8dd9bab6d2d94b1b20dcc6
+- Content hash: feaeca07a9bd406716829fadc0828f7af1c356c27f582400add291aed5bf846f
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5405,7 +5341,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-8`
+### PROVENANCE `prov-ex-or-u10-pronoun-14`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5413,7 +5349,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ff7dfa1faf6e67606bdad0e56f646332471f4f135882c3671c421013fca98b3
+- Content hash: 10118753899cab88468a9ac5540f91174432f528e11f10b3f28d5dafe5ed6846
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5434,7 +5370,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-8-gloss`
+### PROVENANCE `prov-ex-or-u10-pronoun-14-gloss`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5442,7 +5378,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db45cb52c9aa6192c1e54959d7928dcd8d3e6c3de57163e715f15588804bc698
+- Content hash: 1a10842ec390e09ccfb5cf3de36bd8f883a61b0827b6aeabac453d158c841701
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5463,7 +5399,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-9`
+### PROVENANCE `prov-ex-or-u10-pronoun-15`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5471,7 +5407,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 184b5e79af4aff324fadb7d3a127603f9b7bee8a3e94ad25e5812d7ac4dd382f
+- Content hash: 82da228ec5f2911964fd02980a484658d93e2c9d43487174dd33e25916f53f41
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5492,7 +5428,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u10-pronoun-9-gloss`
+### PROVENANCE `prov-ex-or-u10-pronoun-15-gloss`
 
 - Objectives: obj-u10-pronoun
 - Sessions: u10-s-orient, u10-s-pronoun
@@ -5500,7 +5436,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36e36543a4e5b6fcf9282c63556a9a5386bef67ded37ce51b58224da983cd672
+- Content hash: 2b28cf6e13b453745b0f66d2960c6fb00aa68fb6fbb9079efbb0afb5c335a53a
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
@@ -5529,20 +5465,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5951f47aff88489b8d24844ac0a1aaee68ba4540f37a75a06b4c247be9037ad
+- Content hash: 3fcf5d01ada20f658fe4a64a0cc7de4df1065bdf3945cfdb5e82343379eb69a2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:No, I don't have a son - '''У меня́ нет сы́на'''
-originalSourceText=No, I don't have a son - '''У меня́ нет сы́на'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=No, I don't have a son
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=27f4cd748431401f7cc7ce63d2700bb5c85438694c324039d32bfac39e2fc2da
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=9e2b31b904f961670f9339269c7b4c2b0622cd6abf6e387873e33a283b8d7fa3
 audioAssetId=
 reviewerIdentity=
@@ -5558,20 +5512,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f59def2332f31d2f16cc414a382139f789a88994656772421eec6e821299ebe
+- Content hash: c0573e3fd3bd41726627cf2afe9261d1ed390255bfa70974d31cdd7c916be3fe
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:No, I don't have a son - '''У меня́ нет сы́на'''
-originalSourceText=No, I don't have a son - '''У меня́ нет сы́на'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=У меня́ нет сы́на
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=27f4cd748431401f7cc7ce63d2700bb5c85438694c324039d32bfac39e2fc2da
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef
 audioAssetId=
 reviewerIdentity=
@@ -5587,20 +5559,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d578f7d8baf96624e53ce5e28703ebd08cfe59d463edea229bedc24bb2de2ab1
+- Content hash: 926ca7be088b04e3ce71a8b670085782b819445316d94a5167d81fc3c34131b8
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=There are no restaurants
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=6ffd2ddebf1cdf2a79424056c1b344967b43ed7997bd385f7a43c24e067b5c20
 audioAssetId=
 reviewerIdentity=
@@ -5616,20 +5606,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b81e0c246d6608962fef65f57b032dc8e89a8c49bd7e4576f4408a562a71e36
+- Content hash: b5af82c285e9d2dc31937c4ecb0542e8aaaa5dee667c8ff75fb2acfebd16c77d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Нет рестора́нов
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
 audioAssetId=
 reviewerIdentity=
@@ -5645,20 +5653,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93f2bdb345c0d9b9b444155770013707475d596f4af2bc05edbb6cf636df6a07
+- Content hash: 2b2def160ca57616775b427e10c7b0cc09b4fdf06871a3a88c76ea0767321f35
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
-originalSourceText=There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=There are no old buildings in Moscow
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=162b51cf83a5ac15e5a39367d75fc2632b2a392602e43e26a8108b001df2840f
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=39a67109157a118c5b7d9636b47da4b433d44856195c0d1edaddffb849dec4be
 audioAssetId=
 reviewerIdentity=
@@ -5674,20 +5700,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9b6e7b29dea63671047ea37405fdc2d06d8a8751445c9bf0cc067f1dbe31464
+- Content hash: 1cd4c08d90946d35eba74be6b4dc5db73ac8764b428fa34dedae3d1be765c2ed
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
-originalSourceText=There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=В Москве́ нет ста́рых зда́ний
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=162b51cf83a5ac15e5a39367d75fc2632b2a392602e43e26a8108b001df2840f
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f
 audioAssetId=
 reviewerIdentity=
@@ -5703,20 +5747,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 397dbcafcd2c3a0ed5df81e92b38dde82a425e4e63a67cbebd0c4c571d9e6d23
+- Content hash: 354967582f80a2a94c77e4d8d91aacae9c81cf3377354a726ebb96f68165d460
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''
-originalSourceText=My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=My brother doesn't have any money
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=15f25319eb86ca70a31efb79e94484fe46b2806aebef70ba2291018cbc815fa0
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=f2221618a0d0dff9c87bd714db6140c0c402c56d7ff6beb8a21f070a5cdbb720
 audioAssetId=
 reviewerIdentity=
@@ -5732,20 +5794,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 837992c5fbcd7e01dff2d6223f3bf15334b730ec4aa06fe3d665b33839302fb4
+- Content hash: 08df8ad81c02178682f58ff0c49cd41a9370c78484cb9cf2266306817ac17f6e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''
-originalSourceText=My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=У моего́ бра́та нет де́нег
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=15f25319eb86ca70a31efb79e94484fe46b2806aebef70ba2291018cbc815fa0
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f
 audioAssetId=
 reviewerIdentity=
@@ -5761,20 +5841,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1672246027ee418ffd61ce7cb436b9c20c727db14bc3aaa102bac393de2e4d3e
+- Content hash: aed533c4a99c0fff269abefa51c0f811529e521b3888a01ab71aa05d48559147
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Yes, I have a son
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=6e45e4f1751c9485803230aa2b6cf6445fcdc50bb90c2e0bcd73389fed73e3f5
 audioAssetId=
 reviewerIdentity=
@@ -5790,20 +5888,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43fac9ed8ac9b05a6cb9ef388b1dc5bcc46e95898ec1af600b04e11a37ecc5a6
+- Content hash: 256c86213b2d690e65f6b08226060fe791493b9f8c0a0e5431a91da181544831
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Да, у меня есть сын.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947
 audioAssetId=
 reviewerIdentity=
@@ -5819,20 +5935,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb1db8aa4267bdef329303cae5459155f5d514d4c4806eb650dbcc9b9ca258f3
+- Content hash: 01efd0e8578846acdde4ab679e9a435c05731f1378e0d4b39f1a60265f67cacd
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Да
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=93e6073f9005224b87428f26194784deb52ed7c12da309105f100db2b2a06299
 audioAssetId=
 reviewerIdentity=
@@ -5848,20 +5982,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 156b0f32cf9cd85df521e038b14333b850e521985d80e01d308031866d20626b
+- Content hash: 9a88ec7aec1becd842f45797c337e90b9fe4f0fe3c116abe8aa13781a7206c65
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=у меня есть сын
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=ca7bc58138cd212574af4f71c1973ca9e56c703f0c700037b1071d791b75308f
 audioAssetId=
 reviewerIdentity=
@@ -6051,20 +6203,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4bc4cf594a53c979cd6bd93d9f1dd75f959dbe35fff3018a934279c3bfc0a3e0
+- Content hash: cba978318906312be080df228579dceb2f1d19ea920b05c90849d7aa580c8aef
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
 sourceRevision=4330404
-sourceRecordId=accusative:I like these women. - '''Я люблю ''этих женщин.'''
-originalSourceText=I like these women. - '''Я люблю ''этих женщин.'''
+sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, p
+originalSourceText=These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.
 shippedText=I like these women.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
+sourceHash=60ecac75c1bc369e5363d356aa6adffee953cf47dc8936f6a72d376aad992a44
 contentHash=9fc86b4c17ad53727cbff859d8a904fd9399ba7be1ae461598038b94e3dfa8d9
 audioAssetId=
 reviewerIdentity=
@@ -6080,20 +6233,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e704eecff30a08a0d77a87e21636aacd433e40b21b318e646f6d97caf8db380a
+- Content hash: 23dc96abf337b790aa422e02cd5cc96aa46641d123c80df552b2563d73f993d9
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
 sourceRevision=4330404
-sourceRecordId=accusative:I like these women. - '''Я люблю ''этих женщин.'''
-originalSourceText=I like these women. - '''Я люблю ''этих женщин.'''
+sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, p
+originalSourceText=These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.
 shippedText=этих женщин
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
+sourceHash=60ecac75c1bc369e5363d356aa6adffee953cf47dc8936f6a72d376aad992a44
 contentHash=81735c19e06c3d8e652c4c2245f26b2a62b383425f0e799773eccd0c8123fa09
 audioAssetId=
 reviewerIdentity=
@@ -6109,20 +6263,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cd45e24f63f57e6cf4e3ed38e5b612a083980d1ec735e506a1772f38495de9a
+- Content hash: bab558e146bc1c372d4deaa81fdc98e9e327d8360e39413c5b7862531317aa65
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
 sourceRevision=4330404
-sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.'''
-originalSourceText=These women like me. - '''''Эти женщины'' любят меня.'''
+sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, p
+originalSourceText=These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.
 shippedText=These women like me.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3d057f91c3d652313d81bf0693b57380f361c2dbbefb952978631a4a65fed90d
+sourceHash=60ecac75c1bc369e5363d356aa6adffee953cf47dc8936f6a72d376aad992a44
 contentHash=6f80af660f98d7a25b3048a99d8fd6d2d1f539cb89e78837106ca4ba03a979f3
 audioAssetId=
 reviewerIdentity=
@@ -6138,20 +6293,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b21790bedc824809b7be2ed19dc6ad37001f0247084f01744de96b6131b35483
+- Content hash: 7ced1be4abc284833ad1c6f509676b1189e79327393b901118b0e9559ddd0649
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
 sourceRevision=4330404
-sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.'''
-originalSourceText=These women like me. - '''''Эти женщины'' любят меня.'''
+sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, p
+originalSourceText=These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.
 shippedText=Эти женщины
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3d057f91c3d652313d81bf0693b57380f361c2dbbefb952978631a4a65fed90d
+sourceHash=60ecac75c1bc369e5363d356aa6adffee953cf47dc8936f6a72d376aad992a44
 contentHash=e63eb84d750d37994e889baffeba699198fbc15d5b023583813b54a92b9b2e83
 audioAssetId=
 reviewerIdentity=
@@ -6167,20 +6323,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a991a80ca43cb943e9e16086a3408bef554a0ab887e9439ada01bcbc6d803aee
+- Content hash: 42b5f63cc46cadaaaeb4c7eea63cf0f6857c1ef6534541d4113fce0a6b28a657
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:to say "I have X": '''У меня есть Х'''
-originalSourceText=to say "I have X": '''У меня есть Х'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=I have X
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d48352a1fa4a4b6eab6eb60cd385bf2d837fc60f0cf6131de396851319bddac
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=94a61952d4a8170c64778a30eb60ea49d48fb4ada31ebb9da916f9fca200494f
 audioAssetId=
 reviewerIdentity=
@@ -6196,20 +6370,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c661d1ded136c112e8c29bb4d6f9e9cd5f42e6cdcf79bde85f794c25a5102b2
+- Content hash: 4bb34cff099f404a4aea534b3bc0cace33055d121245cd9eb4015e9b630ab6f6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:to say "I have X": '''У меня есть Х'''
-originalSourceText=to say "I have X": '''У меня есть Х'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=У меня есть Х
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d48352a1fa4a4b6eab6eb60cd385bf2d837fc60f0cf6131de396851319bddac
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=7e62433c5fd78bb66f32c9c9cd53b463dcb7e74afa4fe51319582613f300be56
 audioAssetId=
 reviewerIdentity=
@@ -6225,20 +6417,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e9bf5c292a65783d186a5b0a7fa689e9544e93ab52d3aa5a842614a691a8d4c
+- Content hash: 4466bc09a006d33d001816985a442ddebe48833b754e38c04e8bbd79179f4b55
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Do you have a son? - '''У вас есть сын?'''
-originalSourceText=Do you have a son? - '''У вас есть сын?'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Do you have a son?
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=344a2eb7c7dfaba506264cccbe3727ee5de13723844fc3e7096a723ceefaa067
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=f5f304e0ca287fc549508c38a76ca32e714ce64c87d6aa8f30356c97a3eab617
 audioAssetId=
 reviewerIdentity=
@@ -6254,20 +6464,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2da70ea491d35f44ee2b9537a71acc38b8d260d95c710a1e079c77c65292143e
+- Content hash: 607d11faa7c629c414d05137c70c42438e97967c2af5db66440dd9f4ef0e853e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Do you have a son? - '''У вас есть сын?'''
-originalSourceText=Do you have a son? - '''У вас есть сын?'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=У вас есть сын?
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=344a2eb7c7dfaba506264cccbe3727ee5de13723844fc3e7096a723ceefaa067
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=a703190a745ab124225aab59b1f2a5ee6b216bab2cc57675a3824a66b70a2f52
 audioAssetId=
 reviewerIdentity=
@@ -6283,20 +6511,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 016701d033652ee185d869e5b0d2f8a7c848ce146a765db31956827c8f026ad9
+- Content hash: 0425a3ffb35b7e6f1e8c0b2e7ab5f6dd42546b5f96f04eb87d2bead6ebe25073
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Yes, I have a son
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=6e45e4f1751c9485803230aa2b6cf6445fcdc50bb90c2e0bcd73389fed73e3f5
 audioAssetId=
 reviewerIdentity=
@@ -6312,20 +6558,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01a1e3f57d1685a22cb6c4d06de4598a8bec37944a1171691c7fd7cdef1ea53f
+- Content hash: 7ebb9185d1e9a07f42f8f56f70858eff5029ef2f2668893dff4e8a50c735267e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Да, у меня есть сын.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947
 audioAssetId=
 reviewerIdentity=
@@ -6341,20 +6605,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2f1b48b1ca872240c3218ac298686300895449a5fc012747976b3d61ba03526
+- Content hash: e1901356c8ff5960c5bf4ceed9cf2903643d9b352c152192307386e43fa75de2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Да
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=93e6073f9005224b87428f26194784deb52ed7c12da309105f100db2b2a06299
 audioAssetId=
 reviewerIdentity=
@@ -6370,20 +6652,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6844aa381c4889b3edf11dae4e9e07dee7452689faa5ee2cc30c33354a4db60c
+- Content hash: 305e7debfcaf92f570ccb020cb93285d2efe4a312c079b4a1c8622d468b6108f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Yes, I have a son - '''Да, у меня есть сын.'''
-originalSourceText=Yes, I have a son - '''Да, у меня есть сын.'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=у меня есть сын
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=847c72740b9a44aa467d11481a8c2bd5c91cd0e184dc55aeb81b9afafe79bf12
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=ca7bc58138cd212574af4f71c1973ca9e56c703f0c700037b1071d791b75308f
 audioAssetId=
 reviewerIdentity=
@@ -6501,6 +6801,194 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=07d544096755d1455898d3d78db81e7d04d394d6e0e76e45ff702263f37ae69b
 contentHash=d93d94db1728f02685e23ae5dacc7d08cee25876ebd528a3e4abbdad231cad3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-have-5-en`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5d7f0b60ef3dc20224b0a51c79a8f92fac8c46af6d4884e245072338b757a2a
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=No, I don't have a son
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=9e2b31b904f961670f9339269c7b4c2b0622cd6abf6e387873e33a283b8d7fa3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-have-5-ru`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e02a6945d547003daf6c4b6db0c60964eee7271873ce7b814cbcfdfedf5acac3
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=У меня́ нет сы́на
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-have-6-en`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a0a32bf1e754580fb78f2825d3dde4ce36d33301c2c3c7aa274ef391bcb9189c
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=My brother doesn't have any money
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=f2221618a0d0dff9c87bd714db6140c0c402c56d7ff6beb8a21f070a5cdbb720
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-have-6-ru`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3e3123e9d046444122a936ad6e3a87c293b0274112f3656cba07fdc3910fa0b8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=У моего́ бра́та нет де́нег
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6971,6 +7459,228 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u10-pronoun-10-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 826afe47a6763a93fb3f3384f412d642be9affc8e1da020adbc0cab7d6bed42e
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=You
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-10-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 24b063c7b914fbcdfe8eecce8e6766bdd0735a953e040aae02eaa6ccaca4c7f8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Тебя́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=310546bf08567a949a33696dd2c0bf323a1536310801a7861afec385b8286a23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-11-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1099b6f5cbb6d2d50cfb61199773462f36e030d168f9225ebeb22962a1985347
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=You
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-11-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 157ce18dc91b104b03effbee83de898efe87837a40ac4f550a5ebdc90a52d773
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Вас
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=b445eeaab458948cc7acbaae4ff53c98f0787fd17fc36ecfa4e15d2548a47978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-12-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2854d10a7072ec7ff9a66771d5a907e6befe6fd43c5b9a3ee544b1911d97523c
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=They
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-12-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d990911d0f0ca9ebf6eb39fdfca602c877da6ac739323d82f9a5ac04d14425a4
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Они
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=a02f048eabe88b05907ecbe4bf061a129934e426ad5c62225a85e6cfff3aa5ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u10-pronoun-2-en`
 
 - Objectives: obj-u10-pronoun
@@ -7349,7 +8059,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bcdb873e93143f07232ada9e60d5a0897c6c11bc6be49fa3305140803260ec0
+- Content hash: 21eb035850379f33e3e8435ded493a8c92af82160eef5242904e7bff9ab1fa1b
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7364,14 +8074,14 @@ originalSourceText='''English''' || I || We || You || You || He/she/it|| They
 |-
 ! '''Genitive'''
 | Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
-shippedText=They
+shippedText=We
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
-contentHash=a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55
+contentHash=f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7386,7 +8096,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1e7acc3a996ca331f9a41ce54a606d756b58a21acc550fa6d140daae3cd96de
+- Content hash: 9a8b59958e68e970d7b2ea7a42e8516543cc1aa81054205d0fa9db56323db17d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -7401,14 +8111,236 @@ originalSourceText='''English''' || I || We || You || You || He/she/it|| They
 |-
 ! '''Genitive'''
 | Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
-shippedText=Они
+shippedText=Мы
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
-contentHash=a02f048eabe88b05907ecbe4bf061a129934e426ad5c62225a85e6cfff3aa5ba
+contentHash=8b01cf8f5b597e44a42998c957d743b35f1816c8230c2ef9fe19d4a3aceb8105
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-7-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51787a7f0fff798225cc80eca016fdceb9e123b197d73fcc5dd22025b18d84af
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=We
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-7-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a9c051f626fdae3bb76779157a433f052452f2f4b6ed401df5394181bd5da1c9
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Нас
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=979b9f9413611ee53cda1c6eed938dfe61022f4af993ab3a1749840814ac1c12
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-8-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3329d201018ccc2c66a0ccc48b1ce519c0d2a6d67a45ca2d76c6f024359f6c6f
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=You
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-8-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5245ebd4152f36b4a0aeab011bc68420946da827f32f5d979425acd25a7333fd
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Ты
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=f9e361994e7bf2e28ee75793a1b15468e527fc0194cb1f1e3019c82f47834c2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-9-en`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f9c73093a3c7cc5dc2a2ec6a8a45232b4cf0625da073b6ba79aed5768ac1499b
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=You
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u10-pronoun-9-ru`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dbf9e625768c5f3ae7a0e5c0cb20242343607e56fe45526261f81597f9cda2a4
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:'''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+originalSourceText='''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+shippedText=Вы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7b07d1d7cd9027034c78a0f6957e63b087996f5d75b7b6c35f879527994f3c83
+contentHash=041bfceecc8f943abfac18267516b5f6c35bc3ea04549121a57540e55da76cd3
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7423,50 +8355,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e543c78c709039a8b8d2259f24963d5b68c25edf260f2ac356309dbb153c971
+- Content hash: fac0b2a05c0a7ad4972330c356d22f205b3cc14f3c04846c6cc854f5282bc048
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:No, I don't have a son - '''У меня́ нет сы́на'''
-originalSourceText=No, I don't have a son - '''У меня́ нет сы́на'''
-shippedText=No, I don't have a son - '''У меня́ нет сы́на'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=27f4cd748431401f7cc7ce63d2700bb5c85438694c324039d32bfac39e2fc2da
-contentHash=27f4cd748431401f7cc7ce63d2700bb5c85438694c324039d32bfac39e2fc2da
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u10-absence-rem-r0`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-orient, u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d64d8d4ca55307817257ade9b9a06bfd140578c99b928870d6313453b5d81849
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
-sourceRevision=4567338
-sourceRecordId=genitive:No, I don't have a son - '''У меня́ нет сы́на'''
-originalSourceText=No, I don't have a son - '''У меня́ нет сы́на'''
-shippedText=У меня́ нет сы́на
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=27f4cd748431401f7cc7ce63d2700bb5c85438694c324039d32bfac39e2fc2da
-contentHash=3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=c61582e6ae4e8b50173a5028a2051418d86c0fbe21f50f82b3fd39a1ff12176b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7481,20 +8402,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75cf0d0087cdfdb130c427ca38dec37f95dfbf4188450b230a3cea856fd6247f
+- Content hash: d4a2d77ab74c4c5c73343d32d86ed4d85e28da172cb0f810df916af794b93acf
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:This literally means, 'By me exists X'. Since the preposition '''у''' calls the 
-originalSourceText=This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=The thing that is possessed remains in the nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=ad74f5470d26cbd7d1d3650f371de722c050559dee35e21c787de357fc8c0c37
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=a8d11bdd86b37e4fa4fd0171c5a5b79d88d8bb82035bdb4cb2da3b37dc52b18d
 audioAssetId=
 reviewerIdentity=
@@ -7510,20 +8449,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f89f84aaec217966363e7b8d2621695d2873270545f835bc93f1ed583b75f78f
+- Content hash: ec3c8d6ec91ad89b0ae8cc8ba11ee059b6e1e3dfdad922912b7298e3b2f6e5c4
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''
-originalSourceText=Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=8cf1e15662cc78c844cbae6e2b3ac5137eadfe5bb1c10488fc1f1464b1e9d625
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=c61582e6ae4e8b50173a5028a2051418d86c0fbe21f50f82b3fd39a1ff12176b
 audioAssetId=
 reviewerIdentity=
@@ -7597,79 +8554,22 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 276746a923a984200071c3dd7beb87f944a92a3e9419132e7d53cb6556132993
+- Content hash: 05e287aa0554cf35553b326e6b9bca6776b3818f949c04dcce3480463f790e77
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
 sourceRevision=4330404
-sourceRecordId=accusative:I like these women. - '''Я люблю ''этих женщин.'''
-originalSourceText=I like these women. - '''Я люблю ''этих женщин.'''
-shippedText=I like these women. - '''Я люблю ''этих женщин.'''
+sourceRecordId=accusative:These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, p
+originalSourceText=These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.
+shippedText=I like these women.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
-contentHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u10-animate-rem-r0`
-
-- Objectives: obj-u10-animate
-- Sessions: u10-s-orient, u10-s-animate
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e54832de1fe3faea62fc784708811d15a809bcd3ae773d6aed5752e756f724ee
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
-sourceRevision=4330404
-sourceRecordId=accusative:I like these women. - '''Я люблю ''этих женщин.'''
-originalSourceText=I like these women. - '''Я люблю ''этих женщин.'''
-shippedText=Я люблю
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
-contentHash=fc9bbcd33f6637988abc3174eea8eab4d1a8a4b2579f91f408ae97d27b650c08
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u10-animate-rem-r1`
-
-- Objectives: obj-u10-animate
-- Sessions: u10-s-orient, u10-s-animate
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52568a3c6e1e2c349eb546bdaf95e1b7f7cd0ce1f63fd6e714f9533185aaf83d
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
-sourceRevision=4330404
-sourceRecordId=accusative:I like these women. - '''Я люблю ''этих женщин.'''
-originalSourceText=I like these women. - '''Я люблю ''этих женщин.'''
-shippedText=этих женщин
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5a6c38977fbb473e77d734324334171e7ee5050e46ac07ebc641c663a7b71598
-contentHash=81735c19e06c3d8e652c4c2245f26b2a62b383425f0e799773eccd0c8123fa09
+sourceHash=60ecac75c1bc369e5363d356aa6adffee953cf47dc8936f6a72d376aad992a44
+contentHash=9fc86b4c17ad53727cbff859d8a904fd9399ba7be1ae461598038b94e3dfa8d9
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7713,50 +8613,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed4b4309f3b46563b63f66da74b3605ef8bc75f4287174251929138687e70256
+- Content hash: 8a4da650375ae3cf3bc189a7c6d27d20c3775a18f3075160f54d6e8212b4c401
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:to say "I have X": '''У меня есть Х'''
-originalSourceText=to say "I have X": '''У меня есть Х'''
-shippedText=to say "I have X": '''У меня есть Х'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=The thing that is possessed remains in the nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d48352a1fa4a4b6eab6eb60cd385bf2d837fc60f0cf6131de396851319bddac
-contentHash=5d48352a1fa4a4b6eab6eb60cd385bf2d837fc60f0cf6131de396851319bddac
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u10-have-rem-r0`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-orient, u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbca92b2f21a3f5b53df432e1ecb64ba22257bffa3ae2a8fbc333bdab0feaee4
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
-sourceRevision=4567338
-sourceRecordId=genitive:to say "I have X": '''У меня есть Х'''
-originalSourceText=to say "I have X": '''У меня есть Х'''
-shippedText=У меня есть Х
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d48352a1fa4a4b6eab6eb60cd385bf2d837fc60f0cf6131de396851319bddac
-contentHash=7e62433c5fd78bb66f32c9c9cd53b463dcb7e74afa4fe51319582613f300be56
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=a8d11bdd86b37e4fa4fd0171c5a5b79d88d8bb82035bdb4cb2da3b37dc52b18d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7771,20 +8660,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e175aaa5c327ff2c14e37120ac7c7d0ff60286bd6fd2cf2916f7603699b418a
+- Content hash: b2cf4da1c1c720452ac506d608f4e7048d82ec5d4c12718a5a00837b19f6a8cc
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:This literally means, 'By me exists X'. Since the preposition '''у''' calls the 
-originalSourceText=This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=The thing that is possessed remains in the nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=ad74f5470d26cbd7d1d3650f371de722c050559dee35e21c787de357fc8c0c37
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=a8d11bdd86b37e4fa4fd0171c5a5b79d88d8bb82035bdb4cb2da3b37dc52b18d
 audioAssetId=
 reviewerIdentity=
@@ -7800,20 +8707,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b99ee957ead11c1c54758307a9061553d92e8c01b6379e118c5461e423a0a9c6
+- Content hash: 93820269ee20a433b16a7b78babadebf228f7808146dbcb8955c877bc345c40b
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''
-originalSourceText=Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=8cf1e15662cc78c844cbae6e2b3ac5137eadfe5bb1c10488fc1f1464b1e9d625
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=c61582e6ae4e8b50173a5028a2051418d86c0fbe21f50f82b3fd39a1ff12176b
 audioAssetId=
 reviewerIdentity=
@@ -7937,6 +8862,357 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u10-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ebf91a08b4de9008699858a6980964355d846afec466f840891cec2c865cb435
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u10-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 68eff13952ff159697013faf8348784385e8c55db8aada1a8cc185a93ea897a3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the absence line, not the rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u10-162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 55a77f33bf818e574b433abe796833200bffc8b6b01b424eea8c7ca40f71309d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the admitted record show the governed contrast?
+
+### AUTHORED_ENGLISH `en-u10-163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d9fcf28a798567f3306fb905f23e69c87a9019255ab406f000c59946f8fd12b4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted rule classifies the shown line?
+
+### AUTHORED_ENGLISH `en-u10-164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9a49e748907689afa3b7ba876913a1cc03223687cc5b34e8111deacac5cbb6d9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u10-165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 15cdcb95d0249465bf9a0df8fd3dcb74472e9043b405826fbfd5ec12c447b8b1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the possession line, not the rule for the shown line.
+
+### AUTHORED_ENGLISH `en-u10-166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a2c4f62c0d1cad1b971adcfadb8fb495885b8dc3568608f5d141a1d6acfce1f5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the genitive cell of another row in the same frozen table.
+
+### AUTHORED_ENGLISH `en-u10-167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a58d18ee934d06a22a4d71dc55a81fd82ef0699bcd236ad7f3eb20960250d68b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the genitive row of the shown form?
+
+### AUTHORED_ENGLISH `en-u10-168`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8672ca806a7db1e05f7374da9d2c651a64ab65cf481293e24014253c01130350
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the dictionary row of the same word, not the genitive row.
+
+### AUTHORED_ENGLISH `en-u10-169`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5ae3ccd1431cc85bc90c3523f86f2ef81d0693c60047a80ac4650f383e77a0d2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other agreement row of the same word, not the genitive row.
+
+### AUTHORED_ENGLISH `en-u10-170`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aa7d40969011675bf68b1c529df2a845ce8e6df3ba1be272bb1927b25898ad89
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the genitive row of the same word, not the dictionary row.
+
+### AUTHORED_ENGLISH `en-u10-171`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cd006585bdacb6285acb5f62e88edc5c368f1c053745c1f6783d1e9dc098fccc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other agreement row of the same word, not the dictionary row.
+
+### AUTHORED_ENGLISH `en-u10-172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fc7cbcfaecd3c07565cd82acb568d7e37c1b38ac5ad875477998813524a724ab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the dictionary row of the shown form?
+
+### AUTHORED_ENGLISH `en-u10-173`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c424be0d49bc3527f3bcec049c5c93fcb376d0dab5884156fb02fb16aabe04ae
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other genitive row of the same word.
+
+### AUTHORED_ENGLISH `en-u10-174`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 46344f7f74503795662ad3ccd02c322130a47358def02015609fa47b3ae28ecd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the plural genitive row of the same word.
+
+### AUTHORED_ENGLISH `en-u10-175`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6f83040c8947b7d7c3ae7f9cd93c08fcae16aa30fd3151efe51aa6513f76af03
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other row of the same word, not the object row.
+
+### AUTHORED_ENGLISH `en-u10-176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b01133bce8eecda2bb232b4edf9540b61a99893743a9d6029480d38a3a69e7d0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the object row of the shown form?
+
+### AUTHORED_ENGLISH `en-u10-177`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d370ed041db6daa789d1353c472abc7682021fe852e850506f30ca135183bdbb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the object row of the same word, not the other plural row.
+
+### AUTHORED_ENGLISH `en-u10-178`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e365da8159343f5076292ae50180b1c301f3dd308e4536d5edb719142b75ba3a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the other plural row of the shown form?
+
+### AUTHORED_ENGLISH `en-u10-179`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 01e25c58aff50acfb6b08ae9d47bd680994099d404620d575f5a7237accdbcb5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other plural row of the same word, not the object row.
+
+### AUTHORED_ENGLISH `en-u10-180`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 02333669c11089d876aed831ec4d475c4f5c4e36a16313fbe3d1b131c303a600
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted possession and expanded rows
+
+### AUTHORED_ENGLISH `en-u10-181`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ee9c403bfbaaf1421086fac49bc1bbc2b600e743e766b03995505cb57bb62fa8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 10 uses frozen possession and expanded rows. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u10-182`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2c67545a8c03a65d5c20be7531f639f2bcb6aa476ebf66dadedea70abc2081db
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 10 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u10-183`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a15e5285c768d32c534a821fdd545b33498a287b4d54687d7c88ce49192273c1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u10-184`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d71eb57ba3abf331c644167078940212f0d651db5c5fd4ccfd512f07ab902002
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u10-185`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c46701496d2d82a958bfab1e4496d7a251fd58fffe86bcae9d900570404087d9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u10-186`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 93b0b77593c515ac26fe5ff96c75ded3258ed9645f91f4dc208c64d366b6127d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
 ### AUTHORED_ENGLISH `en-u10-187`
 
 - Objectives: none
@@ -7945,10 +9221,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 98931b0a42017c3733770738d60a359c4f6672bde70e39ff18d36d3b575f57ec
+- Content hash: 4ce2dff9b11611a7673030c5484b0adeac5c0a90371eb87b94488b0fe6c2ff61
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u10-188`
 
@@ -7958,10 +9234,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23232f4b6c2a564224640f245cc13469f7141389544f7cb1eef10be381d3630b
+- Content hash: 1b35fbc737d4a2cba02673a44a1ec1b03e112bf894af92f2cefc5bfee9e1d4d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the absence line, not the rule for the shown line.
+text=Work Lesson 10 in your copy
 
 ### AUTHORED_ENGLISH `en-u10-189`
 
@@ -7971,10 +9247,10 @@ text=This admitted rule is the absence line, not the rule for the shown line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50eb7a33c59f1ac5fc8a89c7a82f188f72af3d050bcf676484b23b3966519830
+- Content hash: 9d7e109a18641e35f1cf4472bd87ba4298369134d84557bbab9270bc4a94fcf5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this admitted rule classify the shown line?
+text=Do Lesson 10 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u10-190`
 
@@ -7984,10 +9260,10 @@ text=Does this admitted rule classify the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba52c6290784309a8e8ce62154f90d7a5630a4dc42cf527e5d03c930bf815ed6
+- Content hash: d68e0dcc70e795d5c25f62477fb95863f38c93a0a79e8a0d219a139141bbe183
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted rule classifies the shown line?
+text=This unit does not teach a pattern that leaves the admitted word out. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u10-191`
 
@@ -7997,10 +9273,10 @@ text=Which admitted rule classifies the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a45871e92babab64d76c6e19e4bd89cc7c72e6c89578fa2f9d41dc1ed66740f
+- Content hash: 5af2413577cab172fe9d6dcf84e31bbd216b4fb77a66ba7f023a3ae01ad13a3b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Open Lesson 10 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u10-192`
 
@@ -8010,10 +9286,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ab0df130a5d390b9388ead9321cd08dc5780d1af4e1c4f3ebcc16215b5e5506
+- Content hash: 32c1ac8b970e1d1cb859099db257049d4fdbcbf9973033c12176eb31b036499b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the possession line, not the rule for the shown line.
+text=Record Lesson 10 book work
 
 ### AUTHORED_ENGLISH `en-u10-193`
 
@@ -8023,10 +9299,10 @@ text=This admitted rule is the possession line, not the rule for the shown line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e19325aece81b4e019636205f187f23aae36a088c010bc992aaf5fe81a6e623
+- Content hash: b0491f1a5455446d526cdba7a36acdf49528085e8e45c1cb1b107235b4809256
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the genitive row.
+text=When you have done Lesson 10 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u10-194`
 
@@ -8036,488 +9312,7 @@ text=This form is the other row of the same word, not the genitive row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b844ba18e7d0bdd210e0b35a5b84de046abddae5647f89739b52a6192087d7d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer show the governed row of the same word?
-
-### AUTHORED_ENGLISH `en-u10-195`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec07332c71abe6d8baaa43786cc6f6f93ea75c0febf321f40e75c2aaf3574355
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the genitive row of the shown form?
-
-### AUTHORED_ENGLISH `en-u10-196`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f71bdac5058957236365b8449887b2064ddb98056b9a5a974fa059833b63d84b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other third-person form, and the shown line uses another form.
-
-### AUTHORED_ENGLISH `en-u10-197`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b0d7d5d7495cc447fe2004fa50c61513b1ab3c4161eb046a8da3ea6a41f5785
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer identify the governed form in the shown line?
-
-### AUTHORED_ENGLISH `en-u10-198`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcef25afbf3fb2f8d121b02028a14cff11f0a02710fb63162b31000fb72f266b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form does the shown line use?
-
-### AUTHORED_ENGLISH `en-u10-199`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56fcd9cde4bd0719398a0367bf26f8d6f511e881459f32851225eb7199cc7bf9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another genitive cell, not the cell of the shown line.
-
-### AUTHORED_ENGLISH `en-u10-200`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a1346b8ae3c84b154aaf11e42955a6f5505d8d5eb21f046cebf71cfb9e66017
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other stressed form, not the form of the shown line.
-
-### AUTHORED_ENGLISH `en-u10-201`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fd81c44425bf1ce35c91bd12b07f5d3528ae16e2ac0b798b586f4cf6a5dd8da
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the stressed row of the shown form?
-
-### AUTHORED_ENGLISH `en-u10-202`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7d4d163ddc5f92b43ec05aebf8780c6d76a7025dd12659e051b2aa69c5926c7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, not the genitive row.
-
-### AUTHORED_ENGLISH `en-u10-203`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 586c455df1f9825c72ad972d3d2a229f23b639a5fc046ae8d34f5a4b83b2eb5d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other agreement row of the same word, not the genitive row.
-
-### AUTHORED_ENGLISH `en-u10-204`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b64daa64cb1c6c8d6add70249eeb1f149b1fdcd31fcab94771c5f815d460cf43
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the genitive row of the same word, not the dictionary row.
-
-### AUTHORED_ENGLISH `en-u10-205`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cd67829b7f6c1ec53cc11c792120f1c4ae08449054c757c8327145a360d2341
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other agreement row of the same word, not the dictionary row.
-
-### AUTHORED_ENGLISH `en-u10-206`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 214d15b454fcd775c7f66a86e2eb609d1e04d1df1156817a1c806f5cae93d27c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the dictionary row of the shown form?
-
-### AUTHORED_ENGLISH `en-u10-207`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21e82a9a8c51409a3ebc425964f7b1fe1e4b178490e17c80ee5b864492c4f1bf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line uses the other agreement, not the shown word.
-
-### AUTHORED_ENGLISH `en-u10-208`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93e2061da918dbb1dfb783de7eef8384183003afb0d31ab11ff7645878e66ff2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer agree with the shown word?
-
-### AUTHORED_ENGLISH `en-u10-209`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d81c67738f12cb86d7a6fb09697e06cd735af429e61f434bee9192dfa99fdc5c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line agrees with the shown word?
-
-### AUTHORED_ENGLISH `en-u10-210`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a6565ebb2002fe3b73ab7df0e9c590cba2cbfbe6fc61f6a87cd9dddbe7a3b62
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other genitive row of the same word.
-
-### AUTHORED_ENGLISH `en-u10-211`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9477b34b014467875a1af4027abfdd8394dc6ec6d638ffe91e59dc3412afad46
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the plural genitive row of the same word.
-
-### AUTHORED_ENGLISH `en-u10-212`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93d3d00aa014bc7590c8bba7122b82c112f72a51ccc5936b797bd9c13c80d885
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the object row.
-
-### AUTHORED_ENGLISH `en-u10-213`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbd20fe4db5c515fb332bbc0668d19b0dcfc67ae9ad876ca308c633c208ce860
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the object row of the shown form?
-
-### AUTHORED_ENGLISH `en-u10-214`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0845f6418daa235edc1108ae5cb37fbf6b3f91e9e71745cdde3b60717ac38cb6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the object row of the same word, not the other plural row.
-
-### AUTHORED_ENGLISH `en-u10-215`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82d0904b4b096bf554af2925eb516151fe2f9ecbf84e5c564c0c1fbef6c7072e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the other plural row of the shown form?
-
-### AUTHORED_ENGLISH `en-u10-216`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d27e1c1c0b2521f995d21e30335904a0e9482af3a2f7cd8f5187267f6c002f7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other plural row of the same word, not the object row.
-
-### AUTHORED_ENGLISH `en-u10-217`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 570a496588e991623b26e56e119c03a133d1c02a97e20eac768ca3935636a26c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted possession and expanded rows
-
-### AUTHORED_ENGLISH `en-u10-218`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92b0770a3bb7ab73d57a7ecd50c43bf922fed08290e554b100c3f4d8ef3efa98
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 10 uses frozen possession and expanded rows. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u10-219`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67d738fc7fae397788a60083213b80a698dacc3d296b3bd0d9dbeec100b34331
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 10 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u10-220`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be3b0b530d18c8aff9d44dd377a255bd094ad173f5e69f99e181172556bff731
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u10-221`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 799332cb27020b8a6a7628d1ce0f1b007e644012cb7ec616fd8c96fcf41749c5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u10-222`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 120d258d6c8cad92fb2d6904db4b2642b3998e10738b7b77d9d735d3fff0bf58
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u10-223`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 316f1510eb38bb30d065d3d42b63382f4501c82448a4d6ba0dd8d233953422f3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u10-224`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d445d56eea8da2be56d651ee71a47b249104827bb4fd436581e8895bb626a0c5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u10-225`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eafddb1adcb743ba4d2e51e01b3a37f8a944db5b5461969276044037004f7e43
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 10 in your copy
-
-### AUTHORED_ENGLISH `en-u10-226`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 783741eb65987b8a6fcfb43df7adc7edc6b669afed66a705e73a3196301e3e86
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 10 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u10-227`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 587b8dd91914fc40b52d1a5aa8340b16329fe48525734bc67356331674e8f903
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This unit does not teach a pattern that leaves the admitted word out. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u10-228`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad06d7dd9b6f8630aebcf6953ab2e896b168aee598a588073707dca6c9d925ea
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 10 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u10-229`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b88b806a5a1a0da40404e09842b377a97ace055a07f5a74daa09895764f5c8ff
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 10 book work
-
-### AUTHORED_ENGLISH `en-u10-230`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3a4bd2dec79a841e8766e262203b6fa79615d3f17b45902698001f9bbaaa8f3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 10 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u10-231`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7faf3fd82155d4cb7f18e085962274fcad7835b4f1bdb26c624091db05a523a
+- Content hash: 74ab83fb3803618e7d5c1f5b34df4434a7029f6513edaf369729ae6eefeb88ec
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 10 work in your copy.
@@ -8622,8 +9417,8 @@ permitsAppUse=true
 - `obj-u10-have` EXAMPLE `ex-u10-have-2`
 - `obj-u10-have` EXAMPLE `ex-u10-have-3`
 - `obj-u10-have` EXAMPLE `ex-u10-have-4`
-- `obj-u10-have` EXAMPLE `ex-or-u10-have-5`
-- `obj-u10-have` EXAMPLE `ex-or-u10-have-6`
+- `obj-u10-have` EXAMPLE `ex-u10-have-5`
+- `obj-u10-have` EXAMPLE `ex-u10-have-6`
 - `obj-u10-have` PRACTICE `u10-st-guided-have-1`
 - `obj-u10-have` CHECK `u10-i-have-1`
 - `obj-u10-have` CHECK `u10-i-have-2`
@@ -8635,14 +9430,11 @@ permitsAppUse=true
 - `obj-u10-absence` INSTRUCTION `u10-st-teach-absence-2`
 - `obj-u10-absence` INSTRUCTION `u10-st-teach-absence-3`
 - `obj-u10-absence` INSTRUCTION `u10-st-teach-absence-4`
-- `obj-u10-absence` INSTRUCTION `u10-st-teach-absence-5`
 - `obj-u10-absence` EXAMPLE `ex-u10-absence-0`
 - `obj-u10-absence` EXAMPLE `ex-u10-absence-1`
 - `obj-u10-absence` EXAMPLE `ex-u10-absence-2`
 - `obj-u10-absence` EXAMPLE `ex-u10-absence-3`
 - `obj-u10-absence` EXAMPLE `ex-u10-absence-4`
-- `obj-u10-absence` EXAMPLE `ex-or-u10-absence-5`
-- `obj-u10-absence` EXAMPLE `ex-or-u10-absence-6`
 - `obj-u10-absence` PRACTICE `u10-st-guided-absence-1`
 - `obj-u10-absence` CHECK `u10-i-absence-1`
 - `obj-u10-absence` CHECK `u10-i-absence-2`
@@ -8656,6 +9448,9 @@ permitsAppUse=true
 - `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-4`
 - `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-5`
 - `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-6`
+- `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-7`
+- `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-8`
+- `obj-u10-pronoun` INSTRUCTION `u10-st-teach-pronoun-9`
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-0`
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-1`
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-2`
@@ -8663,9 +9458,15 @@ permitsAppUse=true
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-4`
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-5`
 - `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-6`
-- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-7`
-- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-8`
-- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-9`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-7`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-8`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-9`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-10`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-11`
+- `obj-u10-pronoun` EXAMPLE `ex-u10-pronoun-12`
+- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-13`
+- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-14`
+- `obj-u10-pronoun` EXAMPLE `ex-or-u10-pronoun-15`
 - `obj-u10-pronoun` PRACTICE `u10-st-guided-pronoun-1`
 - `obj-u10-pronoun` CHECK `u10-i-pronoun-1`
 - `obj-u10-pronoun` CHECK `u10-i-pronoun-2`
@@ -8771,9 +9572,9 @@ permitsAppUse=true
 - `u10-st-teach-have-3` EXAMPLE `ex-u10-have-3`
 - `u10-st-teach-have-3` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-have-4` EXAMPLE `ex-u10-have-4`
-- `u10-st-teach-have-4` EXAMPLE `ex-or-u10-have-5`
+- `u10-st-teach-have-4` EXAMPLE `ex-u10-have-5`
 - `u10-st-teach-have-4` REFERENCE `ref-u610-attribution`
-- `u10-st-teach-have-5` EXAMPLE `ex-or-u10-have-6`
+- `u10-st-teach-have-5` EXAMPLE `ex-u10-have-6`
 - `u10-st-teach-have-5` REFERENCE `ref-u610-attribution`
 - `u10-st-rem-have` EXAMPLE `ex-u10-have-0`
 - `u10-st-rem-have` EXAMPLE `ex-u10-have-1`
@@ -8793,10 +9594,7 @@ permitsAppUse=true
 - `u10-st-teach-absence-3` EXAMPLE `ex-u10-absence-3`
 - `u10-st-teach-absence-3` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-absence-4` EXAMPLE `ex-u10-absence-4`
-- `u10-st-teach-absence-4` EXAMPLE `ex-or-u10-absence-5`
 - `u10-st-teach-absence-4` REFERENCE `ref-u610-attribution`
-- `u10-st-teach-absence-5` EXAMPLE `ex-or-u10-absence-6`
-- `u10-st-teach-absence-5` REFERENCE `ref-u610-attribution`
 - `u10-st-rem-absence` EXAMPLE `ex-u10-absence-0`
 - `u10-st-rem-absence` EXAMPLE `ex-u10-absence-1`
 - `u10-st-check-absence` REMEDIATION `u10-st-rem-absence`
@@ -8818,11 +9616,20 @@ permitsAppUse=true
 - `u10-st-teach-pronoun-4` EXAMPLE `ex-u10-pronoun-5`
 - `u10-st-teach-pronoun-4` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-pronoun-5` EXAMPLE `ex-u10-pronoun-6`
-- `u10-st-teach-pronoun-5` EXAMPLE `ex-or-u10-pronoun-7`
+- `u10-st-teach-pronoun-5` EXAMPLE `ex-u10-pronoun-7`
 - `u10-st-teach-pronoun-5` REFERENCE `ref-u610-attribution`
-- `u10-st-teach-pronoun-6` EXAMPLE `ex-or-u10-pronoun-8`
-- `u10-st-teach-pronoun-6` EXAMPLE `ex-or-u10-pronoun-9`
+- `u10-st-teach-pronoun-6` EXAMPLE `ex-u10-pronoun-8`
+- `u10-st-teach-pronoun-6` EXAMPLE `ex-u10-pronoun-9`
 - `u10-st-teach-pronoun-6` REFERENCE `ref-u610-attribution`
+- `u10-st-teach-pronoun-7` EXAMPLE `ex-u10-pronoun-10`
+- `u10-st-teach-pronoun-7` EXAMPLE `ex-u10-pronoun-11`
+- `u10-st-teach-pronoun-7` REFERENCE `ref-u610-attribution`
+- `u10-st-teach-pronoun-8` EXAMPLE `ex-u10-pronoun-12`
+- `u10-st-teach-pronoun-8` EXAMPLE `ex-or-u10-pronoun-13`
+- `u10-st-teach-pronoun-8` REFERENCE `ref-u610-attribution`
+- `u10-st-teach-pronoun-9` EXAMPLE `ex-or-u10-pronoun-14`
+- `u10-st-teach-pronoun-9` EXAMPLE `ex-or-u10-pronoun-15`
+- `u10-st-teach-pronoun-9` REFERENCE `ref-u610-attribution`
 - `u10-st-rem-pronoun` EXAMPLE `ex-u10-pronoun-0`
 - `u10-st-rem-pronoun` EXAMPLE `ex-u10-pronoun-1`
 - `u10-st-check-pronoun` REMEDIATION `u10-st-rem-pronoun`
@@ -8919,10 +9726,6 @@ permitsAppUse=true
 - `u10-st-check-animate` ITEM `u10-i-animate-3`
 - `u10-s-book` OBJECTIVE `obj-u10-book`
 - `u10-st-book-work` REFERENCE `ref-u610-attribution`
-- `obj-u10-absence` PROVENANCE `prov-ex-or-u10-absence-5`
-- `obj-u10-absence` PROVENANCE `prov-ex-or-u10-absence-5-gloss`
-- `obj-u10-absence` PROVENANCE `prov-ex-or-u10-absence-6`
-- `obj-u10-absence` PROVENANCE `prov-ex-or-u10-absence-6-gloss`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3-gloss`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-4`
@@ -8947,10 +9750,6 @@ permitsAppUse=true
 - `obj-u10-animate` PROVENANCE `prov-ex-or-u10-animate-5-gloss`
 - `obj-u10-animate` PROVENANCE `prov-ex-or-u10-animate-6`
 - `obj-u10-animate` PROVENANCE `prov-ex-or-u10-animate-6-gloss`
-- `obj-u10-have` PROVENANCE `prov-ex-or-u10-have-5`
-- `obj-u10-have` PROVENANCE `prov-ex-or-u10-have-5-gloss`
-- `obj-u10-have` PROVENANCE `prov-ex-or-u10-have-6`
-- `obj-u10-have` PROVENANCE `prov-ex-or-u10-have-6-gloss`
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-10`
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-10-gloss`
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-11`
@@ -8979,12 +9778,12 @@ permitsAppUse=true
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-8-gloss`
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-9`
 - `obj-u10-preposition` PROVENANCE `prov-ex-or-u10-preposition-9-gloss`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-7`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-7-gloss`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-8`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-8-gloss`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-9`
-- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-9-gloss`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-13`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-13-gloss`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-14`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-14-gloss`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-15`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-or-u10-pronoun-15-gloss`
 - `obj-u10-absence` PROVENANCE `prov-ex-u10-absence-0-en`
 - `obj-u10-absence` PROVENANCE `prov-ex-u10-absence-0-ru`
 - `obj-u10-absence` PROVENANCE `prov-ex-u10-absence-1-en`
@@ -9019,6 +9818,10 @@ permitsAppUse=true
 - `obj-u10-have` PROVENANCE `prov-ex-u10-have-3-ru`
 - `obj-u10-have` PROVENANCE `prov-ex-u10-have-4-en`
 - `obj-u10-have` PROVENANCE `prov-ex-u10-have-4-ru`
+- `obj-u10-have` PROVENANCE `prov-ex-u10-have-5-en`
+- `obj-u10-have` PROVENANCE `prov-ex-u10-have-5-ru`
+- `obj-u10-have` PROVENANCE `prov-ex-u10-have-6-en`
+- `obj-u10-have` PROVENANCE `prov-ex-u10-have-6-ru`
 - `obj-u10-preposition` PROVENANCE `prov-ex-u10-preposition-0-en`
 - `obj-u10-preposition` PROVENANCE `prov-ex-u10-preposition-0-ru`
 - `obj-u10-preposition` PROVENANCE `prov-ex-u10-preposition-1-en`
@@ -9035,6 +9838,12 @@ permitsAppUse=true
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-0-ru`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-1-en`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-1-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-10-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-10-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-11-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-11-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-12-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-12-ru`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-2-en`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-2-ru`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-3-en`
@@ -9047,18 +9856,20 @@ permitsAppUse=true
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-5-ru`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-6-en`
 - `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-6-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-7-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-7-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-8-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-8-ru`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-9-en`
+- `obj-u10-pronoun` PROVENANCE `prov-ex-u10-pronoun-9-ru`
 - `obj-u10-absence` PROVENANCE `prov-u10-absence-rem`
-- `obj-u10-absence` PROVENANCE `prov-u10-absence-rem-r0`
 - `obj-u10-absence` PROVENANCE `prov-u10-absence-x-0`
 - `obj-u10-absence` PROVENANCE `prov-u10-absence-x-1`
 - `obj-u10-adjective` PROVENANCE `prov-u10-adjective-rem`
 - `obj-u10-adjective` PROVENANCE `prov-u10-adjective-rem-r0`
 - `obj-u10-animate` PROVENANCE `prov-u10-animate-rem`
-- `obj-u10-animate` PROVENANCE `prov-u10-animate-rem-r0`
-- `obj-u10-animate` PROVENANCE `prov-u10-animate-rem-r1`
 - `obj-u10-animate` PROVENANCE `prov-u10-animate-x-0`
 - `obj-u10-have` PROVENANCE `prov-u10-have-rem`
-- `obj-u10-have` PROVENANCE `prov-u10-have-rem-r0`
 - `obj-u10-have` PROVENANCE `prov-u10-have-x-0`
 - `obj-u10-have` PROVENANCE `prov-u10-have-x-1`
 - `obj-u10-preposition` PROVENANCE `prov-u10-preposition-rem`

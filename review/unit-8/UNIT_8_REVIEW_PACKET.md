@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
-- Unit content-review SHA-256: 3dcf0c47b91ca7d6e751416f9ff799a2bb60cbd7da11432b51e36083a5687c61
+- Curriculum source commit: c9f23afd219681319554d90424f2d59fd550cadc
+- Unit content-review SHA-256: e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78
 - Mapping-package SHA-256: f93d3635e7b17f9d91b3d02aa7433375d5778b78cd612fce13cc9363f5996a9f
-- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
-- Review-package SHA-256: 3499febb815973fb14da89f713f0894d79549d946408cd14959f5da79660f917
-- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
+- Pack content-review SHA-256: 74b9d02735467b27ca3fab75e6b88c408d1950829b7826673a3244ec77e8504f
+- Review-package SHA-256: 34506aeb15b93a484f84a9677183be8c43dd723a813e52e47e1db8c7d92a6545
+- Repository source SHA-256: c6e632a8a4fc6957594bc61d0200d48207d0d437a6ab465975c9a083aecd9526
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,13 +132,13 @@ remediation=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dcec5caf960132aab25097101303ab1970ffb91f4be88a2cb84f7b4156fffa12
+- Content hash: 626a941515f473e43e8ff54b586b4ee0bb6ab8d02b48393e635c128fb50a91ce
 
 title=Identify the admitted plural spelling
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4
-examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3,ex-or-u8-spelling-4,ex-or-u8-spelling-5
+instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5
+examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3,ex-or-u8-spelling-4,ex-or-u8-spelling-5,ex-or-u8-spelling-6
 practice=u8-st-guided-spelling-1
 checks=u8-i-spelling-1,u8-i-spelling-2,u8-i-spelling-3,u8-i-spelling-4
 remediation=u8-st-rem-spelling
@@ -189,13 +189,13 @@ remediation=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d11cafd8565e68f3a07dbc7df440fb850f21787e96c39703bf8409e6f5f85c0e
+- Content hash: b2f8519ffa5e2c894cc8fcdfe34b5d93d42eb1659cd025a3d075ae77fac69e98
 
 title=Choose between the admitted existence and absence lines
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-teach-availability-4
-examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3,ex-or-u8-availability-4,ex-or-u8-availability-5
+instruction=u8-st-orient,u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3
+examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3
 practice=u8-st-guided-availability-1
 checks=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
 remediation=u8-st-rem-availability
@@ -521,12 +521,12 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: be8f805edf35c2519a7da0377e7c74d8ff34946413cecbae82109f08aa5b9842
+- Content hash: 40c6cee625742b417310b4a7741a8cd1a1056918f919209a7474ebb26aa0279f
 
 title=Identify the admitted plural spelling
 estimatedMinutes=12
 objectives=obj-u8-spelling
-steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-rem-spelling,u8-st-check-spelling
+steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5,u8-st-rem-spelling,u8-st-check-spelling
 
 ### STEP `u8-st-teach-spelling-1`
 
@@ -536,11 +536,11 @@ steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 475baff183bcf7859d0002593eb26ba96e1b7457effac85ef131b724746e7aa6
+- Content hash: ed79fb69671dbb80a1eef7387b2d7a66f589a8ff04797c02c27e7df8178f1fef
 
 kind=TEACH
 title=Admitted lines
-body=хорошее письмо — good letter. хоро́шие — good. 
+body=хорошее письмо — good letter. хоро́ший — good. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -602,11 +602,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 789675a943360563840594a1603106253ad3b050aec161d76b190e326253aec8
+- Content hash: b0c92f39defe4918f84a731890ae0a770b279e6ebbd08137be1f79018237fefc
 
 kind=TEACH
 title=Admitted lines
-body=кни́га — book. кни́ги — book. 
+body=хоро́шие — good. кни́га — book. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -624,15 +624,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5be21e09274c03834fb2dcb59e8bac11891a20744e7d72a0d7e8a866f12a8cb6
+- Content hash: 9222e3d9aef92816cd8f48c375fa61b3f7e1c4eb55e64049f0c664827dccb9ae
 
 kind=TEACH
 title=Admitted lines
-body=дни — day. хоро́шее — good. 
+body=кни́ги — book. дни — day. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-or-u8-spelling-4,ex-or-u8-spelling-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-spelling-5`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2d32c3cfb5df49fb11a9fb172378957f12d552c380752112d41e46b6fd212a29
+
+kind=TEACH
+title=Admitted lines
+body=хоро́шее — good. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-spelling-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1094,12 +1116,12 @@ remediationStepId=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cd67d71f2cfadb48b3490e4649e632e0228022f8f4933409921d9743d75a4d13
+- Content hash: f7a7ad81db983fa5612489dfa5cdc2794c8860f47dcf30955b76533655a6b2da
 
 title=Choose between the admitted existence and absence lines
 estimatedMinutes=12
 objectives=obj-u8-availability
-steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-teach-availability-4,u8-st-rem-availability,u8-st-check-availability
+steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-rem-availability,u8-st-check-availability
 
 ### STEP `u8-st-teach-availability-1`
 
@@ -1153,11 +1175,11 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7426464d3152c951503802a7a53dbae5d20ffbe326f29aed6cf411651db56bd0
+- Content hash: a3bf9ca13286a8f7dcc0845295a5a89c3ce504efd643cd4bc0f86e0db7ea5e96
 
 kind=TEACH
 title=Admitted instruction
-body=There are no restaurants - '''Нет рестора́нов'''
+body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1175,37 +1197,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 63f7e89bc7a4ccd1aa6bd3c0e4c70ab30b513b4e7d5b94011712b2318d2c638d
+- Content hash: 9655c7a486a9314c3c5f8f76c773444a4a39af4170efaa9437de64dcacd072c7
 
 kind=TEACH
 title=Admitted lines
-body=Э́то - дом Дэвида — This is David's house. Нет рестора́нов — There are no restaurants. 
+body=Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-u8-availability-2,ex-u8-availability-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-availability-4`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f3b84612f2272b256e80dc3c67548531bbaf8e52f8109021f9cf45561e954db4
-
-kind=TEACH
-title=Admitted lines
-body=есть — there is. нет — no. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-availability-4,ex-or-u8-availability-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1219,11 +1219,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 954206665824dc03da73092b8df84235963036975181a13321ad06e17371795d
+- Content hash: b4a11016bffec565e63d46d8adfe267b1a700c47c9872fbb4bed382fc386cb8a
 
 kind=REMEDIATE
 title=Remediation
-body=There are no restaurants - '''Нет рестора́нов'''
+body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 dominantAction=Continue
 references=
 items=
@@ -1577,11 +1577,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02146a3dd1fb4c8ec821d896ae68ca358ecc19926bcc605a9733aea5802233ca
+- Content hash: 093fa27625a46a6adf2314f4d562fa6fa73c3b48f6241d409fc538da3f95be90
 
 kind=LEXICAL
 letterId=
-display=хоро́шие
+display=хоро́ший
 note=good
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1594,12 +1594,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3b3fb2dde35c929a19d964c6ef40ff18e8d84e7ccc3c80ad5769531dc0a0302
+- Content hash: afc16bbfacfccc9d623799efa4f6ecbfaa1802911f94715c7f12d26d259106d1
 
 kind=LEXICAL
 letterId=
-display=кни́га
-note=book
+display=хоро́шие
+note=good
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1611,11 +1611,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0050e96da55475652e64a7314c507105a1544a89244858f253e7d671dd3d4a8d
+- Content hash: ce652610ed02d0273b5726f22386bc84817b760dab45aab9159b7792ac8ec445
 
 kind=LEXICAL
 letterId=
-display=кни́ги
+display=кни́га
 note=book
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1628,12 +1628,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04b1648aa2a6418304fbf00f04e5474ef7a000f3ba0c34b293b375fd1ab5a1b7
+- Content hash: 401fae52adddab4b712493494317b7ecaf7f353380f8dc88a436ab38f7573b33
 
 kind=LEXICAL
 letterId=
-display=дни
-note=day
+display=кни́ги
+note=book
 objectiveId=obj-u8-spelling
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1645,7 +1645,24 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0cf1c533e533fb3a17189b3de57bfdd2c3e788e32d412461222b54e00c0f3c69
+- Content hash: fe3cb2255292c6833b2b8dfec5d60558fecffee9cd8773015aef35e543604795
+
+kind=LEXICAL
+letterId=
+display=дни
+note=day
+objectiveId=obj-u8-spelling
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-or-u8-spelling-6`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2fe04353f6f66523465c4a087d41a49ca2244512954becbf84f2396766876bab
 
 kind=LEXICAL
 letterId=
@@ -1985,12 +2002,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1a3192f746dcaf6b278597e5b5178aca318a98c07583f679528f91b450d16c9
+- Content hash: 6deed42b889f93a1797d40331dea59963ab16b1260c84fb1e7413ae623286d1a
 
 kind=LEXICAL
 letterId=
-display=Э́то - дом Дэвида
-note=This is David's house
+display=Нет рестора́нов
+note=There are no restaurants
 objectiveId=obj-u8-availability
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2002,46 +2019,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fca6bd739e9c08f1a44d12f7f9f36f5e0da1c8629595788a9f899de333982548
+- Content hash: 974a35e42abd6113d421f8262f4d328bff404c9681b32bfb3350dee6f53f5416
 
 kind=LEXICAL
 letterId=
-display=Нет рестора́нов
-note=There are no restaurants
-objectiveId=obj-u8-availability
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u8-availability-4`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30e8dc375cd52b106fe31556cfae8d19b41f8186816d263d7fb7fff90fa1aea3
-
-kind=LEXICAL
-letterId=
-display=есть
-note=there is
-objectiveId=obj-u8-availability
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u8-availability-5`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18514bcedb98499cb08e421c37482bde0224b89e2f03928cd66a8183921ba0c6
-
-kind=LEXICAL
-letterId=
-display=нет
-note=no
+display=В Москве́ нет ста́рых зда́ний
+note=There are no old buildings in Moscow
 objectiveId=obj-u8-availability
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -2053,7 +2036,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ded7d89f0d80333c5326bcca57f8d70ce00678a8cc52925529946455570a2559
+- Content hash: fc0538c3eca16fabbbc9367868c8ceb108ae24e1fecb4c85c62103e581f3a7e7
 
 kind=FORM_SELECTION
 language=en
@@ -2061,53 +2044,57 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=сто́л
 options=столы́ | сто́л
 answer=столы́
-feedback=Does the answer show the governed row of the same word? столы́.
+feedback=Does the admitted record show the governed contrast? столы́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-plural-1
 distractorSourceIds= | prov-ex-or-u8-plural-0
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=столы́ | сто́л
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex-or-u8-plural-0
 
 ### GUIDED_PRACTICE `u8-g-spelling-0`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63249411de950ed313c9288b0fb3a8a84922823c96bf17744b3d1d78d36d24dd
+- Content hash: 3bcdfdb2dacb4cd68e75e6e979c03ca2484833b2d87be0b23f7328f2299b116b
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the shown line use?
-promptLetter=хоро́шие
-options=и | ы
-answer=и
-feedback=Does the answer show the governed row of the same word? и.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=кни́га
+options=кни́ги | кни́га
+answer=кни́ги
+feedback=Does the admitted record show the governed contrast? кни́ги.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u8-spelling-rem-r0
-distractorSourceIds= | prov-u8-spelling-rem-r1
-distractorDifference= | This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=и | ы
+answerSourceIds=prov-ex-or-u8-spelling-4
+distractorSourceIds= | prov-ex-or-u8-spelling-3
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=кни́ги | кни́га
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3
 
 ### GUIDED_PRACTICE `u8-g-irregular-0`
 
@@ -2117,7 +2104,7 @@ contrastMembers=и | ы
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac58c70ae03b7238dda453bf89d9b90dd466b6d6dfb3ee721426cd7096251eeb
+- Content hash: b93092cc8643ca45d575e96e13815c4f3ad7003bd37298c69597e28f84a452cc
 
 kind=FORM_SELECTION
 language=en
@@ -2125,85 +2112,91 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=брат
 options=бра́тья | брат
 answer=бра́тья
-feedback=Does the answer show the governed row of the same word? бра́тья.
+feedback=Does the admitted record show the governed contrast? бра́тья.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=IRREGULAR_PLURAL
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-irregular-2
 distractorSourceIds= | prov-ex-or-u8-irregular-1
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=бра́тья | брат
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-irregular-1 | prov-ex-or-u8-irregular-2 | prov-ex-or-u8-irregular-1
 
 ### GUIDED_PRACTICE `u8-g-agreement-0`
 
 - Objectives: obj-u8-agreement
 - Sessions: u8-s-agreement
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16b4a83097b806f7c13152bd37e8986a085415c932f313eba8a72dc968f1ef95
+- Content hash: 1343ee40f97982230f5315008cf88ccebcee239a2a8b635c38994da6e84405bc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form does the shown line use?
-promptLetter=синие книги
-options=синие книги | Наши
-answer=синие книги
-feedback=Does the answer identify the governed form in the shown line? синие книги.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=но́вый
+options=но́вые | но́вый
+answer=но́вые
+feedback=Does the admitted record show the governed contrast? но́вые.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another plural row, not the form in the shown line.
+distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u8-agreement-0-ru
-distractorSourceIds= | prov-ex-u8-agreement-1-ru
-distractorDifference= | This form is another plural row, not the form in the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=синие книги | Наши
+answerSourceIds=prov-ex-or-u8-agreement-5
+distractorSourceIds= | prov-ex-or-u8-agreement-4
+distractorDifference= | This form is the dictionary row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=но́вые | но́вый
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
 
 ### GUIDED_PRACTICE `u8-g-availability-0`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9cadc6b6386b80c4c56a2a8883e0e6f5f4a44e3a9a1b82a67330fe8af5172cc3
+- Content hash: 8cccc9de0b22c97e1b65de175bdfe319ced253e849c3449b30cddb1f15a16820
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted word does the shown line use?
-promptLetter=Нет рестора́нов
-options=нет | есть
-answer=нет
-feedback=Does the answer identify the governed form in the shown line? нет.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=На э́той у́лице есть францу́зы
+options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+answer=It is followed by the nominative case
+feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This word is the existence word, not the word in the shown line.
+distractorRationales= | This admitted rule is the other construction in the same frozen span.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u8-availability-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-or-u8-availability-5
-distractorSourceIds= | prov-ex-or-u8-availability-4
-distractorDifference= | This word is the existence word, not the word in the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=нет | есть
+answerSourceIds=prov-u8-availability-x-0
+distractorSourceIds= | prov-u8-availability-rem
+distractorDifference= | This admitted rule is the other construction in the same frozen span.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u8-availability-0-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
 
 ### INDEPENDENT_CHECK `u8-i-plural-1`
 
@@ -2213,7 +2206,7 @@ contrastMembers=нет | есть
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e67bd5c07b6abb0b1139ae36b0e8575702c4b6f1c9f81f9748d9f60f41c5bd70
+- Content hash: ca62e07080fc023b49175d0fbb8228e0d73158629c092c4075d049a2a0721ba5
 
 kind=FORM_SELECTION
 language=en
@@ -2221,21 +2214,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=го́род
 options=города́ | го́род
 answer=города́
-feedback=Does the answer show the governed row of the same word? города́.
+feedback=Does the admitted record show the governed contrast? города́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-3
 distractorSourceIds= | prov-ex-or-u8-plural-2
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=города́ | го́род
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-2 | prov-ex-or-u8-plural-3 | prov-ex-or-u8-plural-2
 
 ### INDEPENDENT_CHECK `u8-i-plural-2`
 
@@ -2245,7 +2240,7 @@ contrastMembers=города́ | го́род
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69a9388716177d59ef45c20eb46c83d91820ca08cee6c38fa55225c262204c22
+- Content hash: a57d5c987cfd473cecf8c3b85b54ecbb633bd7085d4353a31ca79c7577562c3b
 
 kind=FORM_SELECTION
 language=en
@@ -2253,21 +2248,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=окно́
 options=о́кна | окно́
 answer=о́кна
-feedback=Does the answer show the governed row of the same word? о́кна.
+feedback=Does the admitted record show the governed contrast? о́кна.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-7
 distractorSourceIds= | prov-ex-or-u8-plural-6
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=о́кна | окно́
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-6 | prov-ex-or-u8-plural-7 | prov-ex-or-u8-plural-6
 
 ### INDEPENDENT_CHECK `u8-i-plural-3`
 
@@ -2277,7 +2274,7 @@ contrastMembers=о́кна | окно́
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 751e18413c1f5bc376ebb6fefa3d57797be1a076fd93bb3a6a11cbcfcf08888e
+- Content hash: 816b2b93f90b92db0ef4b17f2b02307dcb9b19d95626bdca203d2d99abd5bd9a
 
 kind=FORM_SELECTION
 language=en
@@ -2285,21 +2282,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=ма́ма
 options=ма́мы | ма́ма
 answer=ма́мы
-feedback=Does the answer show the governed row of the same word? ма́мы.
+feedback=Does the admitted record show the governed contrast? ма́мы.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-9
 distractorSourceIds= | prov-ex-or-u8-plural-8
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=ма́мы | ма́ма
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-8 | prov-ex-or-u8-plural-9 | prov-ex-or-u8-plural-8
 
 ### INDEPENDENT_CHECK `u8-i-plural-4`
 
@@ -2309,7 +2308,7 @@ contrastMembers=ма́мы | ма́ма
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d28f392f40620e3f8501344ab28e7a9c5bec4a71d1998f4f10cc67802db00c12
+- Content hash: a00967f8d55416e45ccc8235ce06d3595f6cc310abd1ed3fc0fab74510230c9a
 
 kind=FORM_SELECTION
 language=en
@@ -2317,21 +2316,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=до́м
 options=дома́ | до́м
 answer=дома́
-feedback=Does the answer show the governed row of the same word? дома́.
+feedback=Does the admitted record show the governed contrast? дома́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-11
 distractorSourceIds= | prov-ex-or-u8-plural-10
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=дома́ | до́м
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-10 | prov-ex-or-u8-plural-11 | prov-ex-or-u8-plural-10
 
 ### INDEPENDENT_CHECK `u8-i-plural-5`
 
@@ -2341,7 +2342,7 @@ contrastMembers=дома́ | до́м
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f37c9d7a2c2e20452dd2dc3a40f9b9805e144060fbba64b89be2f13d44c9088
+- Content hash: 18e21667812bfd08b5da96f40d4f2d7674ccba08a35aaf605f1ade3b77c9fea4
 
 kind=FORM_SELECTION
 language=en
@@ -2349,21 +2350,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=сло́во
 options=слова́ | сло́во
 answer=слова́
-feedback=Does the answer show the governed row of the same word? слова́.
+feedback=Does the admitted record show the governed contrast? слова́.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-5
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-13
 distractorSourceIds= | prov-ex-or-u8-plural-12
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=слова́ | сло́во
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-12 | prov-ex-or-u8-plural-13 | prov-ex-or-u8-plural-12
 
 ### INDEPENDENT_CHECK `u8-i-plural-6`
 
@@ -2373,7 +2376,7 @@ contrastMembers=слова́ | сло́во
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b1bbeb389b5c9667265c2e3935fb5376da00ecc90410a29b345241a1382b9ff
+- Content hash: c04ecde09d426e8873dd5b1e13aaa970185eeeb85bac0cd8a587e20a0fdee85a
 
 kind=FORM_SELECTION
 language=en
@@ -2381,21 +2384,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=кни́га
 options=кни́ги | кни́га
 answer=кни́ги
-feedback=Does the answer show the governed row of the same word? кни́ги.
+feedback=Does the admitted record show the governed contrast? кни́ги.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_FORMATION
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-6
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-5
 distractorSourceIds= | prov-ex-or-u8-plural-4
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=кни́ги | кни́га
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex-or-u8-plural-4
 
 ### INDEPENDENT_CHECK `u8-i-spelling-1`
 
@@ -2405,93 +2410,99 @@ contrastMembers=кни́ги | кни́га
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0abfe66f539e62b3f41d342804db143945de6cb2f56899c6878d44c5b2561da7
+- Content hash: 644ea2874bbafc5fb343ded15ff60a9ebd88c3c2371a4a42f16818e3d23c3348
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
-promptLetter=кни́га
-options=кни́ги | кни́га
-answer=кни́ги
-feedback=Does the answer show the governed row of the same word? кни́ги.
+prompt=Which admitted form is the dictionary row of the shown form?
+promptLetter=кни́ги
+options=кни́га | кни́ги
+answer=кни́га
+feedback=Does the admitted record show the governed contrast? кни́га.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | This form is the plural row of the same word, not the dictionary row.
 testedFeature=PLURAL_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-3
-distractorSourceIds= | prov-ex-or-u8-spelling-2
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=кни́ги | кни́га
+distractorSourceIds= | prov-ex-or-u8-spelling-4
+distractorDifference= | This form is the plural row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=кни́га | кни́ги
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4
 
 ### INDEPENDENT_CHECK `u8-i-spelling-2`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa6c9f40f355f786cdb33a02f4c290825e7407a05521a7d2de0f7d2a0b4ba8a0
+- Content hash: 5aad5d491acf0c50bb762ca5c900eacaa7707c38fc824b8d46634fa1b577ea5f
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the shown line use?
-promptLetter=кни́ги
-options=и | ы
-answer=и
-feedback=Does the answer show the governed row of the same word? и.
+prompt=Which admitted form is the plural row of the shown form?
+promptLetter=хоро́шее
+options=хоро́шие | хоро́шее
+answer=хоро́шие
+feedback=Does the admitted record show the governed contrast? хоро́шие.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
+distractorRationales= | This form is the other row of the same word, not the plural row.
 testedFeature=PLURAL_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-spelling-rem-r0
-distractorSourceIds= | prov-u8-spelling-rem-r1
-distractorDifference= | This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=и | ы
+answerSourceIds=prov-ex-or-u8-spelling-2
+distractorSourceIds= | prov-ex-or-u8-spelling-6
+distractorDifference= | This form is the other row of the same word, not the plural row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́шие | хоро́шее
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6
 
 ### INDEPENDENT_CHECK `u8-i-spelling-3`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-spelling
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b29cb5908152ce91a7df940f917c0635de6f02a3a8b66294af1eace44d4cc4c
+- Content hash: e717680f36ef32b73739adc44c288dbff992a498d7f8a1df07bb25867a0e3194
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling does the shown line use?
-promptLetter=хорошее письмо
-options=e | и
-answer=e
-feedback=Does this admitted label name the pattern of the shown line? e.
+prompt=Which admitted form is the other row of the shown form?
+promptLetter=хоро́шие
+options=хоро́шее | хоро́шие
+answer=хоро́шее
+feedback=Does the admitted record show the governed contrast? хоро́шее.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the other spelling, not the spelling of the shown line.
+distractorRationales= | This form is the plural row of the same word, not the other row.
 testedFeature=PLURAL_SPELLING
-evidenceMode=FEATURE_LABEL
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-spelling-x-0
-distractorSourceIds= | prov-u8-spelling-rem-r0
-distractorDifference= | This spelling is the other spelling, not the spelling of the shown line.
-whyAnswerDemonstratesObjective=Does this admitted label name the pattern of the shown line?
-contrastMembers=e | и
+answerSourceIds=prov-ex-or-u8-spelling-6
+distractorSourceIds= | prov-ex-or-u8-spelling-2
+distractorDifference= | This form is the plural row of the same word, not the other row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́шее | хоро́шие
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2
 
 ### INDEPENDENT_CHECK `u8-i-spelling-4`
 
@@ -2501,29 +2512,31 @@ contrastMembers=e | и
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94577f13941b604c14a3d8a761f90bc848a3219372c03c5d13e954d57880e972
+- Content hash: 4b42aa5b07a850377a3c25cb889ccfa649c57e165edb5b7754aae4aa5fc92467
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which admitted form is the dictionary row of the shown form?
 promptLetter=хоро́шее
-options=хоро́шие | хоро́шее
-answer=хоро́шие
-feedback=Does the answer show the governed row of the same word? хоро́шие.
+options=хоро́ший | хоро́шие
+answer=хоро́ший
+feedback=Does the admitted record show the governed contrast? хоро́ший.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other row of the same word, not the plural row.
+distractorRationales= | This form is the plural row of the same word, not the dictionary row.
 testedFeature=PLURAL_SPELLING
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-1
-distractorSourceIds= | prov-ex-or-u8-spelling-5
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
-contrastMembers=хоро́шие | хоро́шее
+distractorSourceIds= | prov-ex-or-u8-spelling-2
+distractorDifference= | This form is the plural row of the same word, not the dictionary row.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=хоро́ший | хоро́шие
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-1 | prov-ex-or-u8-spelling-2
 
 ### INDEPENDENT_CHECK `u8-i-irregular-1`
 
@@ -2533,7 +2546,7 @@ contrastMembers=хоро́шие | хоро́шее
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 116dc204c569dc1f477236eb828601b28f72eb12ff0ca34bb1ed8c77fe5c8030
+- Content hash: bf1df5bcd101068414834fb8ee7edc8d272333cfbcbc27629ab5afd8f3a9ccef
 
 kind=FORM_SELECTION
 language=en
@@ -2541,21 +2554,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=челове́к
 options=лю́ди | челове́к
 answer=лю́ди
-feedback=Does the answer show the governed row of the same word? лю́ди.
+feedback=Does the admitted record show the governed contrast? лю́ди.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=IRREGULAR_PLURAL
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-6
 distractorSourceIds= | prov-ex-or-u8-irregular-5
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=лю́ди | челове́к
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-irregular-5 | prov-ex-or-u8-irregular-6 | prov-ex-or-u8-irregular-5
 
 ### INDEPENDENT_CHECK `u8-i-irregular-2`
 
@@ -2565,7 +2580,7 @@ contrastMembers=лю́ди | челове́к
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2c0bffac773c671e3f67000a2df2dd20dbdadc598a7ff4cfb314ff6635b2869
+- Content hash: e8b9c8ed38c4f951da78edd121163d5e9edbe931f6f1c37cb4166111de84f369
 
 kind=FORM_SELECTION
 language=en
@@ -2573,21 +2588,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=друг
 options=друзья́ | друг
 answer=друзья́
-feedback=Does the answer show the governed row of the same word? друзья́.
+feedback=Does the admitted record show the governed contrast? друзья́.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=IRREGULAR_PLURAL
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-4
 distractorSourceIds= | prov-ex-or-u8-irregular-3
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=друзья́ | друг
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-irregular-3 | prov-ex-or-u8-irregular-4 | prov-ex-or-u8-irregular-3
 
 ### INDEPENDENT_CHECK `u8-i-irregular-3`
 
@@ -2597,7 +2614,7 @@ contrastMembers=друзья́ | друг
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5097b431f2164332083f31859553e5b6b78c3ca5bef4e9b77b2a881a1bff5039
+- Content hash: a773f748e2ecf04dbb1952b6de734b2fde81b5e0af9ee5ce1d88e47a5fe82985
 
 kind=FORM_SELECTION
 language=en
@@ -2605,21 +2622,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=сы́н
 options=сыновья́ | сы́н
 answer=сыновья́
-feedback=Does the answer show the governed row of the same word? сыновья́.
+feedback=Does the admitted record show the governed contrast? сыновья́.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=IRREGULAR_PLURAL
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-8
 distractorSourceIds= | prov-ex-or-u8-irregular-7
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=сыновья́ | сы́н
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-irregular-7 | prov-ex-or-u8-irregular-8 | prov-ex-or-u8-irregular-7
 
 ### INDEPENDENT_CHECK `u8-i-agreement-1`
 
@@ -2629,7 +2648,7 @@ contrastMembers=сыновья́ | сы́н
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb3dcd4944e64da642fac759dc42375cd26405705a5fea759a854da0b00810f7
+- Content hash: c85609d53e7e5ec2cf7efa2ac43432ed672f5b0866bacdacad3e4bfa3c2e9979
 
 kind=FORM_SELECTION
 language=en
@@ -2637,21 +2656,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=мо́й
 options=мои́ | мо́й
 answer=мои́
-feedback=Does the answer show the governed row of the same word? мои́.
+feedback=Does the admitted record show the governed contrast? мои́.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-3
 distractorSourceIds= | prov-ex-or-u8-agreement-2
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=мои́ | мо́й
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-agreement-2 | prov-ex-or-u8-agreement-3 | prov-ex-or-u8-agreement-2
 
 ### INDEPENDENT_CHECK `u8-i-agreement-2`
 
@@ -2661,7 +2682,7 @@ contrastMembers=мои́ | мо́й
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e305de343ae1c68f3dd2e2ee09ddf03118d392776f3f87248300c198db7376bc
+- Content hash: 8ef8bfd447db626fbd6493bcf34db48e666e6d7a6c497f75b02c1862edc2fda6
 
 kind=FORM_SELECTION
 language=en
@@ -2669,21 +2690,23 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=э́та
 options=э́ти | э́та
 answer=э́ти
-feedback=Does the answer show the governed row of the same word? э́ти.
+feedback=Does the admitted record show the governed contrast? э́ти.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the other row of the same word, not the plural row.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-7
 distractorSourceIds= | prov-ex-or-u8-agreement-6
 distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=э́ти | э́та
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | prov-ex-or-u8-agreement-6
 
 ### INDEPENDENT_CHECK `u8-i-agreement-3`
 
@@ -2693,7 +2716,7 @@ contrastMembers=э́ти | э́та
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0fc5614f5dd35884424dce3323eacfef04f375ca0197cfd86d21ae745cec47c
+- Content hash: bdff7b91ef64e9db066de4ec445ea8619f1cba922d9c583ed66e32e98545865f
 
 kind=FORM_SELECTION
 language=en
@@ -2701,85 +2724,91 @@ prompt=Which admitted form is the plural row of the shown form?
 promptLetter=но́вый
 options=но́вые | но́вый
 answer=но́вые
-feedback=Does the answer show the governed row of the same word? но́вые.
+feedback=Does the admitted record show the governed contrast? но́вые.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This form is the dictionary row of the same word, not the plural row.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=SAME_LEMMA_FORM
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-5
 distractorSourceIds= | prov-ex-or-u8-agreement-4
 distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the answer show the governed row of the same word?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=но́вые | но́вый
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
 
 ### INDEPENDENT_CHECK `u8-i-availability-1`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0bd7a53b1f9470889f8b92d7dc08152abbbfaefceeebf58b0ffef538abde7cb
+- Content hash: 200096bac8df3334995578d1b856c35c8ba38e690f876dd9f4249787ffabbd47
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted word does the shown line use?
-promptLetter=На э́той у́лице есть францу́зы
-options=есть | нет
-answer=есть
-feedback=Does the answer identify the governed form in the shown line? есть.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=В Москве́ нет ста́рых зда́ний
+options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
+answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This word is the absence word, not the word in the shown line.
+distractorRationales= | This admitted rule is the other construction in the same frozen span.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u8-availability-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u8-availability-4
-distractorSourceIds= | prov-ex-or-u8-availability-5
-distractorDifference= | This word is the absence word, not the word in the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=есть | нет
+answerSourceIds=prov-u8-availability-rem
+distractorSourceIds= | prov-u8-availability-x-0
+distractorDifference= | This admitted rule is the other construction in the same frozen span.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u8-availability-3-ru | prov-u8-availability-rem | prov-u8-availability-x-0
 
 ### INDEPENDENT_CHECK `u8-i-availability-2`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41316ae730341bfac65fbff3dc38398293d8c2fd5c3754b633ce6d888bf55f39
+- Content hash: fc721924dc6298dbf4d3c6b35bb395de24a22dd3fff5b09083401d3ed3cb0c46
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted word does the shown line use?
-promptLetter=В Москве́ есть ста́рые зда́ния
-options=есть | нет
-answer=есть
-feedback=Does the answer identify the governed form in the shown line? есть.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=Нет рестора́нов
+options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
+answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This word is the absence word, not the word in the shown line.
+distractorRationales= | This admitted rule is the other construction in the same frozen span.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=FEATURE_IN_LINE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u8-availability-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u8-availability-4
-distractorSourceIds= | prov-ex-or-u8-availability-5
-distractorDifference= | This word is the absence word, not the word in the shown line.
-whyAnswerDemonstratesObjective=Does the answer identify the governed form in the shown line?
-contrastMembers=есть | нет
+answerSourceIds=prov-u8-availability-rem
+distractorSourceIds= | prov-u8-availability-x-0
+distractorDifference= | This admitted rule is the other construction in the same frozen span.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u8-availability-2-ru | prov-u8-availability-rem | prov-u8-availability-x-0
 
 ### INDEPENDENT_CHECK `u8-i-availability-3`
 
@@ -2789,29 +2818,31 @@ contrastMembers=есть | нет
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a93514d8b3db2808b8327d22490354f35329580d8801d6e28b73d1b7c079e102
+- Content hash: 44f450c4b38fb2fdc64c615bcbcbcf5449d1329af128b019c98843841f4f0155
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line uses the shown word?
-promptLetter=нет
-options=Нет рестора́нов | На э́той у́лице есть францу́зы
-answer=Нет рестора́нов
-feedback=Does the answer agree with the shown word? Нет рестора́нов.
+prompt=Which admitted rule classifies the shown line?
+promptLetter=В Москве́ есть ста́рые зда́ния
+options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+answer=It is followed by the nominative case
+feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line uses the existence word, not the shown word.
+distractorRationales= | This admitted rule is the other construction in the same frozen span.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u8-availability-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u8-availability-3-ru
-distractorSourceIds= | prov-ex-u8-availability-0-ru
-distractorDifference= | This line uses the existence word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=Нет рестора́нов | На э́той у́лице есть францу́зы
+answerSourceIds=prov-u8-availability-x-0
+distractorSourceIds= | prov-u8-availability-rem
+distractorDifference= | This admitted rule is the other construction in the same frozen span.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u8-availability-1-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -3173,122 +3204,6 @@ attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408
 contentHash=1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-availability-4`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 640acc28e1d62ced029f30975a5a6c176b3904e1167016dcd529818c306b4ea6
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#accented
-originalSourceText=есть
-shippedText=есть
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-contentHash=747f78e5a0bee66b45da0182bf6b87d089a2c8b7f1562672be30dd3eb71051f4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-availability-4-gloss`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 196550808830d56fa6ef2c913318ed5e56a7e18654dd5fa23e021d6cee609758
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:есть#translations_en
-originalSourceText=there is, there are
-shippedText=there is
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=ed271bf8221a1122d3a5d635b0b0b0ceef1e0af4ab1db4809db1eae3c21f7c1c
-contentHash=d193d7f0d62fecb468402f2090150fc27e337522d9a981a6a425c6033a7fb6e4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-availability-5`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e869f11611448f13012401cb08374a6a3e81fa187753edc96b0708170ad6058b
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#accented
-originalSourceText=нет
-shippedText=нет
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-contentHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u8-availability-5-gloss`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c45c8b468561841d4b59d3fb34f7e48f47ef96e9f745bb9af8d0bf98c5a4cfb
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=others.csv:нет#translations_en
-originalSourceText=no; not
-shippedText=no
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=a190e343b9687b148d11f172ee614b0a71efbc89c99f343042fc39e25f51dbaa
-contentHash=9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4579,21 +4494,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6310f291139691f391f572d809cbba037f8605b7060ee1f761339cfb6064ed9
+- Content hash: 144efd9f0e70c9954cfef9551451e15cbec9e9a4730f44b63a5d97ae009befce
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=adjectives.csv:хороший#decl_pl_nom
-originalSourceText=хоро'шие
-shippedText=хоро́шие
+sourceRecordId=adjectives.csv:хороший#decl_m_nom
+originalSourceText=хоро'ший
+shippedText=хоро́ший
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dff3fa575b6346226ecb4ee63aa04e1bbe470ce9e0799a62dd03daca064cd95a
-contentHash=92238b614f583ee52220925959bf2ac3e3130ce9e4da96660dd4cde32ea58042
+sourceHash=e5a6dff7a419e6838b37681671614c43c584fe334e33d70ba8a840c1db5a2925
+contentHash=f8edf7836814fe0ffcdc44297bf0dc63297c079825fa4a5cf3cd5307037bb36a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4637,21 +4552,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5be378638048cdc6dbff3229db1cbe7491e040c1cb15fb2d9eb03a74c880c96
+- Content hash: 661c2434b7b1ed530fd46c058d4c9e4bec4889f223a6f28fd1c457399c84f782
 
 recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#sg_nom
-originalSourceText=кни'га
-shippedText=кни́га
+sourceRecordId=adjectives.csv:хороший#decl_pl_nom
+originalSourceText=хоро'шие
+shippedText=хоро́шие
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c2f70c7689eb1b282bbb1f165038ea6eeb4c785f1d7abebf94a9a2f4a861059a
-contentHash=47bf48ae649e95e468ffbf192033c48627e3022a30cd0040c9b860d6f3ec9d9d
+sourceHash=dff3fa575b6346226ecb4ee63aa04e1bbe470ce9e0799a62dd03daca064cd95a
+contentHash=92238b614f583ee52220925959bf2ac3e3130ce9e4da96660dd4cde32ea58042
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4666,21 +4581,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6073d3128e55706d675ac903eb54c6e7c5e04056dacc0190d4587d0f77d59d5d
+- Content hash: e24bb6f953aea1519654a718639d3511d67c2a4d80560d1074e66ad7d56a2fbe
 
 recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#translations_en
-originalSourceText=book, volume
-shippedText=book
+sourceRecordId=adjectives.csv:хороший#translations_en
+originalSourceText=good, beautiful, handsome
+shippedText=good
 transformation=sense selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
-contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+sourceHash=726e6cd53da1e936c3220647702c178cf8dffbdb36b65f0665fcfc32f2d7f908
+contentHash=770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4695,21 +4610,21 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96e01f4987fce7caa038ab81a389a0b62f1bc04248b1bdb074d225cc2e551319
+- Content hash: 40907f8b576871e0707caab7ed385aae4e871e4c6c305c0847f15d4caadae2bd
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
 sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=nouns.csv:книга#pl_nom
-originalSourceText=кни'ги
-shippedText=кни́ги
+sourceRecordId=nouns.csv:книга#sg_nom
+originalSourceText=кни'га
+shippedText=кни́га
 transformation=formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
-contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
+sourceHash=c2f70c7689eb1b282bbb1f165038ea6eeb4c785f1d7abebf94a9a2f4a861059a
+contentHash=47bf48ae649e95e468ffbf192033c48627e3022a30cd0040c9b860d6f3ec9d9d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4753,7 +4668,65 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0f7fe3fb4fc35ad7a5a7aec6ddf500c61372da245d7c236c9ca3354c696b22d
+- Content hash: 4796652521112caab6b57e370fead39b168f59f6b9290497ba9e22c83f19ba38
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#pl_nom
+originalSourceText=кни'ги
+shippedText=кни́ги
+transformation=formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=982e926f49da76e1baac568dd0be7636a9f9eb323560a17f63021cea6a9a3e57
+contentHash=308a11c0eddb837396b27e70b8c91dddbc249dfb6eb8ed2a49042e36c78c6758
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-4-gloss`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 76f0c7985db2c92517f006ca56c08250d22075a5230ad4d55d5c9356ae3c9739
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:книга#translations_en
+originalSourceText=book, volume
+shippedText=book
+transformation=sense selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c8b9c6eacf6d3e19e7d5e0dcdfe1ad0d3bf4d8fca70084d9dd3f6a62ed1ad36d
+contentHash=92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-or-u8-spelling-5`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2c0b6c6aa19186ab2df502d969aec2271184ce6e356ac22145fc00d1f5cb7fff
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4774,7 +4747,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-spelling-4-gloss`
+### PROVENANCE `prov-ex-or-u8-spelling-5-gloss`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-orient, u8-s-spelling
@@ -4782,7 +4755,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33738d2fd6826f39df31ab8063aedd92fde0e7b33a9b51f9d3ba107280f626ca
+- Content hash: 91858911c319921481270ee3b7294eee0c75745edc34d8e6c4bb7f424f1ae5ca
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
@@ -4803,7 +4776,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-spelling-5`
+### PROVENANCE `prov-ex-or-u8-spelling-6`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-orient, u8-s-spelling
@@ -4811,7 +4784,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53b8de525c1c569898fb1b312aac55dd5d1b4e48300affb33afee5f5ca357801
+- Content hash: 7eeed77a1f5f355bd1e35cf3d0591093bd4b0815c4881b907cce7f377447f72e
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -4832,7 +4805,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-or-u8-spelling-5-gloss`
+### PROVENANCE `prov-ex-or-u8-spelling-6-gloss`
 
 - Objectives: obj-u8-spelling
 - Sessions: u8-s-orient, u8-s-spelling
@@ -4840,7 +4813,7 @@ reviewedDigest=
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7537b3a1ad40c032d7b883d376125781a58b0aa4d10ad65c09336db94d8a72c7
+- Content hash: bd6c183f323cc2c3b59dbba79cb151213498821a9607b635c546215932fe33ea
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv
@@ -4985,20 +4958,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 641171c252b165b32d39be45186b64abfc12926f5ecef367e14d18690fa66178
+- Content hash: 38d3820c72eaa67e63f814f40b05ba0fac122214c021ce745f02ffd5811e59d9
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
-originalSourceText=There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=There are Frenchmen on this street
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=0120f0703c28fb1cfee0e0650e514c951e5e88ca708128dc00b58fb7962c6720
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=69022a0642801a4d0f1d32ab645e55b4b5559963a2614d2711690d4f78ec7f38
 audioAssetId=
 reviewerIdentity=
@@ -5014,20 +5005,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adad90ac885c2fc1a3c1e4f43189894be509ae6049106b6c8b82a43206f724ac
+- Content hash: f8b82329793e142f8bbfba918683f6df06afae84b7e8ae06accb6859bcea13f8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
-originalSourceText=There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=На э́той у́лице есть францу́зы
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=0120f0703c28fb1cfee0e0650e514c951e5e88ca708128dc00b58fb7962c6720
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
 audioAssetId=
 reviewerIdentity=
@@ -5043,20 +5052,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 772cece13e972b95f94f463ec3a253447f778fb00dc2bba2e1de4928c5067a0e
+- Content hash: 38ce87e61777e6077e6488aeac5b9a99fe55981f5830629806b1ebb172034396
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
-originalSourceText=There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=There are old buildings in Moscow
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=b546288bc20b36be05fdc1e4685c5e05e6bdb63158ae109871dc2f856e150e75
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=d258e0ca47506d48eea3aa5a34cbdad016788ca522f7004e11014e368d675e36
 audioAssetId=
 reviewerIdentity=
@@ -5072,20 +5099,38 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 782cbfe461aedaa7aad7ae17f026196720dc9906934c63108b4c3e68bf409474
+- Content hash: efdc070805576f8f7c2067a0723e4d7c1d0fca69b5b680ff2c97f75c7c27ef40
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
-originalSourceText=There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
 shippedText=В Москве́ есть ста́рые зда́ния
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=b546288bc20b36be05fdc1e4685c5e05e6bdb63158ae109871dc2f856e150e75
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
 contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
 audioAssetId=
 reviewerIdentity=
@@ -5101,21 +5146,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a441d5e47de7a92a7208e7b4fa90286af9e143786da43e99d848712b6a376cd
+- Content hash: bcbe346259ff2b3cc78f70134ed27fcf590cc9c4f11339ff10d34febce1a7136
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:This is David's house - '''Э́то - дом Дэвида'''
-originalSourceText=This is David's house - '''Э́то - дом Дэвида'''
-shippedText=This is David's house
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=There are no restaurants
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=188c3383fe2700e1b78015cc082bd3c4a5a4633360878f5bf82567515867ed09
-contentHash=acabfde547abe8f95ea8d03d155e9bdb1fc4a42967237e7c0dd53c8bcbeca476
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=6ffd2ddebf1cdf2a79424056c1b344967b43ed7997bd385f7a43c24e067b5c20
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5130,79 +5193,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dd8ffd5cb473108931f9dfddb9194c1de342a023012e3f316d45b0bb25f2c0c
+- Content hash: 056fa50148536bfcae65d334c3814bc4ef835a1b5d4bd2b882946b92d3064493
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:This is David's house - '''Э́то - дом Дэвида'''
-originalSourceText=This is David's house - '''Э́то - дом Дэвида'''
-shippedText=Э́то - дом Дэвида
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=Нет рестора́нов
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=188c3383fe2700e1b78015cc082bd3c4a5a4633360878f5bf82567515867ed09
-contentHash=42c25d05f657c4e4bca68c284a43eb723f1895a6a131c40a7c9b1acba07762db
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u8-availability-2-ru-r0`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd09b15b0f0faf3a44506ed0cd75a72f11d26829b6840c680390521695426e22
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
-sourceRevision=4567338
-sourceRecordId=genitive:This is David's house - '''Э́то - дом Дэвида'''
-originalSourceText=This is David's house - '''Э́то - дом Дэвида'''
-shippedText=Э́то
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=188c3383fe2700e1b78015cc082bd3c4a5a4633360878f5bf82567515867ed09
-contentHash=55576c346a52c73481289c85a87ad6ed352e83cf72d1db756b64f5305b47bde4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u8-availability-2-ru-r1`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-orient, u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c28a5b69e42bf4cd89212f0bf1c9c4ca50a74afb77611b0542b4b335675a0d88
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
-sourceRevision=4567338
-sourceRecordId=genitive:This is David's house - '''Э́то - дом Дэвида'''
-originalSourceText=This is David's house - '''Э́то - дом Дэвида'''
-shippedText=дом Дэвида
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=188c3383fe2700e1b78015cc082bd3c4a5a4633360878f5bf82567515867ed09
-contentHash=d54246d76d8b8db2cdbc9de30c1530e8893844ba8fa22783c7596ed69d48a282
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5217,21 +5240,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 793f086b3a857c0fedb3dec519d75e40c09dcc2063e4cb8a1285677d22e7f2e0
+- Content hash: 029de23ca75e5447a48247c194bbafe7b38ca2491c4e5a978c9c32bddec0decf
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
-shippedText=There are no restaurants
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=There are no old buildings in Moscow
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
-contentHash=6ffd2ddebf1cdf2a79424056c1b344967b43ed7997bd385f7a43c24e067b5c20
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=39a67109157a118c5b7d9636b47da4b433d44856195c0d1edaddffb849dec4be
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5246,21 +5287,39 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a763a4fe5c9b26c451b8e314c985104e21963eb22c8ec11f4511137d1ab168b6
+- Content hash: 7814c317b3b4163c4e3bb2f3aa2b5270dc3c762cdfc32c4a757f68479d7cc03e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
-shippedText=Нет рестора́нов
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=В Москве́ нет ста́рых зда́ний
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
-contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5449,28 +5508,46 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c66dee951ab8af89e520542a2ad12097207dc706072e364e5d9b0e513ee4047
+- Content hash: ded8d1eee22e638866eb67e207d177b53b01e0b37d27138325b253f92b105e15
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
-shippedText=There are no restaurants - '''Нет рестора́нов'''
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=Conversely, to say 'There isn't...', 'There aren't...', we use the word
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
-contentHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=c61582e6ae4e8b50173a5028a2051418d86c0fbe21f50f82b3fd39a1ff12176b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u8-availability-rem-r0`
+### PROVENANCE `prov-u8-availability-x-0`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-orient, u8-s-availability
@@ -5478,21 +5555,86 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78bb5522b1e80a772df61bed2498304630b4901c7428913cdda9278fef70c92f
+- Content hash: fb3bb72c9ce42a19a5410acbf9efc40c9aef01812809b07615be94e85c3cfd9b
 
-recordType=example
+recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
 sourceRevision=4567338
-sourceRecordId=genitive:There are no restaurants - '''Нет рестора́нов'''
-originalSourceText=There are no restaurants - '''Нет рестора́нов'''
-shippedText=Нет рестора́нов
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=It is followed by the nominative case
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=5d0a4ebe771be7722018e5844bee2f27d16701c903d035a0035a94fb6f10856f
-contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=64651a813309ce16aa47ccc72a0bff5f3cdb04eb87f34bceebf5ac293d324e80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u8-availability-x-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b46271bd4219199af4589ccabc9df3a557f0b23fe917ec9d5887ed1f94e578cc
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
+sourceRevision=4567338
+sourceRecordId=genitive:Another use of the genitive is in the phrase "I have...". Though Russian does ha
+originalSourceText=Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег
+shippedText=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3
+contentHash=c61582e6ae4e8b50173a5028a2051418d86c0fbe21f50f82b3fd39a1ff12176b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5789,6 +5931,175 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u8-086`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fbcff1db12e7e9e199aaf293ed5dda4aa565eac2cd902edef2b6b0df4ec85fb0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u8-087`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b93474eb9a912e579705db6b420301e233d48c3e71673d1fa67396562ad07fbb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the dictionary row of the same word, not the plural row.
+
+### AUTHORED_ENGLISH `en-u8-088`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3c2cbcac486038ec3a5e972c3de81b8037cbb5ce641dccf2a04f476525186959
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the admitted record show the governed contrast?
+
+### AUTHORED_ENGLISH `en-u8-089`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f59f37fe529d8d9a8ea52be99b1090cfd1c94fed559ec77a2120e0e28cf2a1ab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the plural row of the shown form?
+
+### AUTHORED_ENGLISH `en-u8-090`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7edd78a91532b2484c10a1ad89980bdff1a149681bb8e3d795ba486859f9db5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u8-091`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c29e46f7e67f374e994eeddfb023baba7dd7f95de0600c8961c5ba667375ada7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the plural row of the same word, not the dictionary row.
+
+### AUTHORED_ENGLISH `en-u8-092`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 20e8424dfde83d887b258c590ef533822810a79373912625eacc0ae00b82da9b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the dictionary row of the shown form?
+
+### AUTHORED_ENGLISH `en-u8-093`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: abbf374693b72b06a93279786be1cbd5d180951b431d628d6318503dc183c8aa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other row of the same word, not the plural row.
+
+### AUTHORED_ENGLISH `en-u8-094`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cef4165cf722cfeb544cf801b6bb49ddb07ca601d62ffeff1fdfb2869b6b2565
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the plural row of the same word, not the other row.
+
+### AUTHORED_ENGLISH `en-u8-095`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 71f24b9009530d7b65d269c09e736a136a60731b43e4eae283b0f7bc10650262
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form is the other row of the shown form?
+
+### AUTHORED_ENGLISH `en-u8-096`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 993ab214d55302c57dc14598416b379f16e0aa61fa0424378feeb0e3a0bf78b3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the other construction in the same frozen span.
+
+### AUTHORED_ENGLISH `en-u8-097`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 60ed3647a296e074aa5d70fc39fdbd2d9781b9e18e09ca507951698bc07eb66d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted rule classifies the shown line?
+
+### AUTHORED_ENGLISH `en-u8-098`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b4016e69fb3f2fec24f26693cd091d4065dd30b307729c4fff40eb1dbdda2772
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted plural and availability rows
+
 ### AUTHORED_ENGLISH `en-u8-099`
 
 - Objectives: none
@@ -5797,10 +6108,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c713720726972977aadcff996062ff9943f72e6bc090b8e5ecded6230ab544d7
+- Content hash: 846ee1143b98041527b735978d6d1da7141b1ca765d1da6b14f48987e73ea73a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=Proposed Unit 8 uses frozen plural and availability rows. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u8-100`
 
@@ -5810,10 +6121,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0830a74b1567dafe29c04d4de67d7bd40eedaaba03dad1322a9e90f102f368a8
+- Content hash: 96f01458b43d59645c995d584d7a3c71527c68ab7adffeb8b0b885f6d28dda27
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the dictionary row of the same word, not the plural row.
+text=Open Lesson 8 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u8-101`
 
@@ -5823,10 +6134,10 @@ text=This form is the dictionary row of the same word, not the plural row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 570a67a8edd832ee1b28c7fe1c01e3e0176ef66c720ed792e77c4e71a3fefa3b
+- Content hash: 11e5bacd6bb71532b037308e127741152342571bf4550cc97a521541a7270c55
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer show the governed row of the same word?
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u8-102`
 
@@ -5836,10 +6147,10 @@ text=Does the answer show the governed row of the same word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0cdba2d0aff2f822c6b2949c1682cfc9d397d6e115ca9b33488f5f218d9022ef
+- Content hash: bbde2f62526cbc44c25ba2ee9ed4f459c01b4c4e2d52a2cfaa8ce60628688654
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the plural row of the shown form?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u8-103`
 
@@ -5849,10 +6160,10 @@ text=Which admitted form is the plural row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f68082aa69e415d1f2bca36e2b73c00bf2f6c16559bc8462d242129f59c0bc67
+- Content hash: ded0807ee15ca42c6bc801927147b5aa6b32b710363f6324ea78d527c0ac35c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u8-104`
 
@@ -5862,10 +6173,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c457fc55265d2f897a2822f0882a3fcc46aabe6b3265bdc18fc1946ecfe356ee
+- Content hash: a744a54ce4d42f5b0272d16093bac9b4c37a86b4abca42a9f9b084d8c8eb8536
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the one the frozen line says not to add, not the spelling of the shown line. The contrast is the same word.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u8-105`
 
@@ -5875,10 +6186,10 @@ text=This spelling is the one the frozen line says not to add, not the spelling 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e040bcf6bd53639d2a43305b700effc1b2e020b308b00baf9331b762538a1ea
+- Content hash: ca43e2167206cb6a80ca6c259fc8634c4ae755b2da9c7801d731485b2105701f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted spelling does the shown line use?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u8-106`
 
@@ -5888,10 +6199,10 @@ text=Which admitted spelling does the shown line use?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e60b1abff95123316b68aace85ddd0f1af39385e62cc1d935fea566900c2fd60
+- Content hash: a83a7c406bbb200bd158ad5c07acaceb60c0cf4f00f1ee2f8065861513bc6ffe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the other spelling, not the spelling of the shown line. The contrast is the same word.
+text=Work Lesson 8 in your copy
 
 ### AUTHORED_ENGLISH `en-u8-107`
 
@@ -5901,10 +6212,10 @@ text=This spelling is the other spelling, not the spelling of the shown line. Th
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2db2043758595ac385154e1f6885bbf3aa15ba502541bded4e0315eb2cce4dd2
+- Content hash: a5f005506bdbfb5211067bee5847b6064636c5aa4013e9cca015fbcda1bd72d7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the other spelling, not the spelling of the shown line.
+text=Do Lesson 8 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u8-108`
 
@@ -5914,10 +6225,10 @@ text=This spelling is the other spelling, not the spelling of the shown line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32ea1d7af59979226fbfe40d8427bfb153c084d69210dcdff221fb03ae6bb570
+- Content hash: 1d7dc01bca1c1aa07867edbbd0888307395c7e686c82c757be16a2b0e1ed9fd2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this admitted label name the pattern of the shown line?
+text=A full buying conversation stays in the copy you own. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u8-109`
 
@@ -5927,10 +6238,10 @@ text=Does this admitted label name the pattern of the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 236f0fbaaa81f1cc2e5acb312aab4e8fc6be2619975cfe579951c9cb2bd2ab38
+- Content hash: edb38e7e2fcf2aeb1baf1cf6049950989efca9e262f50d1db27f91eecd630ef0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other row of the same word, not the plural row.
+text=Open Lesson 8 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u8-110`
 
@@ -5940,10 +6251,10 @@ text=This form is the other row of the same word, not the plural row.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07b7aee64fef6067e68cafbef807b352e30d552093d89cea1b087de02e0b725f
+- Content hash: 7b249e6cd6a30b3d4148098e26a63bb21fe223c37d9584d4e238524460f08bf3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another plural row, not the form in the shown line.
+text=Record Lesson 8 book work
 
 ### AUTHORED_ENGLISH `en-u8-111`
 
@@ -5953,10 +6264,10 @@ text=This form is another plural row, not the form in the shown line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d83e09c6503ad61d2b6db77625af385ae60c17a01b67dc4344a5f47edb30216f
+- Content hash: e6230995caacdf3c612a2960a89be16d8f3f7c4b4148a983d0ab20f8129814d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer identify the governed form in the shown line?
+text=When you have done Lesson 8 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u8-112`
 
@@ -5966,280 +6277,7 @@ text=Does the answer identify the governed form in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89b57a5d7e464b2664c7854173b397ca1325f0bb9e654a5f0ca601901c0ed8b2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form does the shown line use?
-
-### AUTHORED_ENGLISH `en-u8-113`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c94d34c89f6371879593bd9accec558a2c6bda25f52068faf61703a39f0971e7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the existence word, not the word in the shown line.
-
-### AUTHORED_ENGLISH `en-u8-114`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b82e016c9f8148bdca6e95ce505b0679c8cdce81456f2f12936b6280e259f044
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted word does the shown line use?
-
-### AUTHORED_ENGLISH `en-u8-115`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d18be7cf8b0108488ace98f65856dce6652fec4934867b6516d7e4bdabe5632e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the absence word, not the word in the shown line.
-
-### AUTHORED_ENGLISH `en-u8-116`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8ff53fdc8c062be385def39a8e8ed91d8e305ea6db2056267bd45bd488ba02e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line uses the existence word, not the shown word.
-
-### AUTHORED_ENGLISH `en-u8-117`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b062a53e9cb7e1fa8131640b394c3a7aa6b155de8d8e39df143c5ac28561ab22
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer agree with the shown word?
-
-### AUTHORED_ENGLISH `en-u8-118`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 198055c126c4af88e91d63f39dd48d43a807127d75392aaba9158ce85e35f8a3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line uses the shown word?
-
-### AUTHORED_ENGLISH `en-u8-119`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba4859ec86ce9b9ee70cafc01996b2def8a8d23ba47c16d0beb0158801ad3d42
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted plural and availability rows
-
-### AUTHORED_ENGLISH `en-u8-120`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c2c121c2280385ee540054c7d528c27c6c3f68d13218e2d0a0168bf72ef7eac
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 8 uses frozen plural and availability rows. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u8-121`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc40886e90232eb70770582eb3e0cb7bc481fd93189b3aa4d4d391bc4601acc2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 8 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u8-122`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eeaac0aed68f662071dd8b203460f942a742ca4ac936f17cd223af57f34efd82
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u8-123`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27b6517cf55d4aa00135901f5348b549458c9a043213fa20bb22fada99e3aba1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u8-124`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a3f2278d986f84a11ee4178d0f5cba34710a4dd7a98132b51c791d3104f68d0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u8-125`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25dd21e6f96b17b226ff1112979b1d73846ef92333f8d1809edf018df62472c5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u8-126`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1acfb1009a9bea9b297f1b7a6884392ae3c5de74d13c26167f378b40fca18bc2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u8-127`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 355e64b0adf448ed5eba886fe17b8baca89fb8ef9daa36c6f86aebcdc9a1e542
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 8 in your copy
-
-### AUTHORED_ENGLISH `en-u8-128`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52403dde93d097d37e9ce0bf00eb9d23d64405022547d2d91f28dd1c1605aad6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 8 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u8-129`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf544c173f843b65e3bf1ef9c9c2ab27ce7fea3a5678b06b6d57f64365ed2580
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A full buying conversation stays in the copy you own. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u8-130`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1cddf7ee6cbde49c186e63477c1eb2efb01cf071c0be5c0ef1d570a1185f5f92
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 8 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u8-131`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 752355c7b96afbb01df56b8a93a57457289afff8001fa800466c0b6d4687df13
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 8 book work
-
-### AUTHORED_ENGLISH `en-u8-132`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d92d5396784742549dc1132ed8edd365665db65c580829bd184730425e5774d1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 8 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u8-133`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dad1caf84f1ba965960e52a8d275907e33479515a7cdec41cdc9c25d20664cc7
+- Content hash: 3e69622bd8deb9cfc5672e237f7380f9d5a1fe5533e5c3146a5054a593d49350
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 8 work in your copy.
@@ -6369,12 +6407,14 @@ permitsAppUse=true
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-2`
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-3`
 - `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-4`
+- `obj-u8-spelling` INSTRUCTION `u8-st-teach-spelling-5`
 - `obj-u8-spelling` EXAMPLE `ex-u8-spelling-0`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-1`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-2`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-3`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-4`
 - `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-5`
+- `obj-u8-spelling` EXAMPLE `ex-or-u8-spelling-6`
 - `obj-u8-spelling` PRACTICE `u8-st-guided-spelling-1`
 - `obj-u8-spelling` CHECK `u8-i-spelling-1`
 - `obj-u8-spelling` CHECK `u8-i-spelling-2`
@@ -6425,13 +6465,10 @@ permitsAppUse=true
 - `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-1`
 - `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-2`
 - `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-3`
-- `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-4`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-0`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-1`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-2`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-3`
-- `obj-u8-availability` EXAMPLE `ex-or-u8-availability-4`
-- `obj-u8-availability` EXAMPLE `ex-or-u8-availability-5`
 - `obj-u8-availability` PRACTICE `u8-st-guided-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-2`
@@ -6493,6 +6530,8 @@ permitsAppUse=true
 - `u8-st-teach-spelling-4` EXAMPLE `ex-or-u8-spelling-4`
 - `u8-st-teach-spelling-4` EXAMPLE `ex-or-u8-spelling-5`
 - `u8-st-teach-spelling-4` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-spelling-5` EXAMPLE `ex-or-u8-spelling-6`
+- `u8-st-teach-spelling-5` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-spelling` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-1`
 - `u8-st-check-spelling` REMEDIATION `u8-st-rem-spelling`
@@ -6556,9 +6595,6 @@ permitsAppUse=true
 - `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-2`
 - `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-3`
 - `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
-- `u8-st-teach-availability-4` EXAMPLE `ex-or-u8-availability-4`
-- `u8-st-teach-availability-4` EXAMPLE `ex-or-u8-availability-5`
-- `u8-st-teach-availability-4` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-1`
 - `u8-st-check-availability` REMEDIATION `u8-st-rem-availability`
@@ -6579,10 +6615,6 @@ permitsAppUse=true
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-6-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-7`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-7-gloss`
-- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-4`
-- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-4-gloss`
-- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-5`
-- `obj-u8-availability` PROVENANCE `prov-ex-or-u8-availability-5-gloss`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-1`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-1-gloss`
 - `obj-u8-irregular` PROVENANCE `prov-ex-or-u8-irregular-2`
@@ -6637,6 +6669,8 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-4-gloss`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-5`
 - `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-5-gloss`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-6`
+- `obj-u8-spelling` PROVENANCE `prov-ex-or-u8-spelling-6-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-0-en`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-0-ru`
 - `obj-u8-agreement` PROVENANCE `prov-ex-u8-agreement-1-en`
@@ -6647,8 +6681,6 @@ permitsAppUse=true
 - `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-1-ru`
 - `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-2-en`
 - `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-2-ru`
-- `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-2-ru-r0`
-- `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-2-ru-r1`
 - `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-3-en`
 - `obj-u8-availability` PROVENANCE `prov-ex-u8-availability-3-ru`
 - `obj-u8-irregular` PROVENANCE `prov-ex-u8-irregular-0-en`
@@ -6658,7 +6690,8 @@ permitsAppUse=true
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem`
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem-r0`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-rem`
-- `obj-u8-availability` PROVENANCE `prov-u8-availability-rem-r0`
+- `obj-u8-availability` PROVENANCE `prov-u8-availability-x-0`
+- `obj-u8-availability` PROVENANCE `prov-u8-availability-x-1`
 - `obj-u8-irregular` PROVENANCE `prov-u8-irregular-rem`
 - `obj-u8-irregular` PROVENANCE `prov-u8-irregular-rem-r0`
 - `obj-u8-irregular` PROVENANCE `prov-u8-irregular-rem-r1`

@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d68ea30ae7be0e07093edf2677121217b8a3e156
-- Unit content-review SHA-256: 5750cd1f25fe2f8c059a8791215647eed4d34fd164eec449a6c8e70320b3fddf
+- Curriculum source commit: c9f23afd219681319554d90424f2d59fd550cadc
+- Unit content-review SHA-256: d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f
 - Mapping-package SHA-256: 8980bf7cd5ccd264aeb6eaf7b5e05311d2c6cf7813d1898bc5ad8eefb63cae5a
-- Pack content-review SHA-256: 4aae0ab67bc859d00219f562259bca02abe60fa7bbe72d0c54b524582b4712a8
-- Review-package SHA-256: 207895eaf354f7e576a24ba2fd971615a8ba2d8dc66ae1c18b1e0440f119ca43
-- Repository source SHA-256: 2603676e0ca4d17fe6eadb5b1c27d557267ee671015840fc2f02078d218bc237
+- Pack content-review SHA-256: 74b9d02735467b27ca3fab75e6b88c408d1950829b7826673a3244ec77e8504f
+- Review-package SHA-256: 9f360f3d2d5d307bfd4a06e373ba337b84a901a77f14567cfd29c263fe0a9f27
+- Repository source SHA-256: c6e632a8a4fc6957594bc61d0200d48207d0d437a6ab465975c9a083aecd9526
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3488,7 +3488,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cdfc49fddd11c5218244095c405ea204fd35ffbd109b683b6b154451fa81d91
+- Content hash: e88a2f35b4f1b56391279c36181573bc1d939a79eb13ed06a7dcd53922120aa8
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3496,21 +3496,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=0
 options=ноль | оди́н
 answer=ноль
-feedback=Does the answer name the shown number from the same frozen table? ноль.
+feedback=Does the admitted record show the governed contrast? ноль.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-0
 cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-cardinal-0-ru
 distractorSourceIds= | prov-ex-u9-cardinal-1-ru
-distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different number in the same table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=ноль | оди́н
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | prov-ex-u9-cardinal-1-ru
 
 ### GUIDED_PRACTICE `u9-g-teens-0`
 
@@ -3520,7 +3522,7 @@ contrastMembers=ноль | оди́н
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac5ba5835e116f0713a54c5fa96bd591cc4d94521431fdbf34312cf449941405
+- Content hash: f47b83e69214a10122fa984a35398fb7b1110a39e42c11592d0e17a4e02dd7d7
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3528,21 +3530,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=11
 options=оди́ннадцать | двена́дцать
 answer=оди́ннадцать
-feedback=Does the answer name the shown number from the same frozen table? оди́ннадцать.
+feedback=Does the admitted record show the governed contrast? оди́ннадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different teen. The contrast is the shown number.
+distractorRationales= | This admitted form is a different teen.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-0
 cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-teens-0-ru
 distractorSourceIds= | prov-ex-u9-teens-1-ru
-distractorDifference= | This admitted form is a different teen. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different teen.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=оди́ннадцать | двена́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u9-teens-1-ru
 
 ### GUIDED_PRACTICE `u9-g-tens-0`
 
@@ -3552,7 +3556,7 @@ contrastMembers=оди́ннадцать | двена́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0ab7e426e9d82afa55290dff136cac3b65337eb6e2d369696bbd0ce11884ddd
+- Content hash: 9a07dd90b63a9355ce984c25a061029d232c56c5ab865b82a9db1456ccec43a8
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3560,21 +3564,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=30
 options=три́дцать | со́рок
 answer=три́дцать
-feedback=Does the answer name the shown number from the same frozen table? три́дцать.
+feedback=Does the admitted record show the governed contrast? три́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-0
 cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-tens-0-ru
 distractorSourceIds= | prov-ex-u9-tens-1-ru
-distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different ten.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=три́дцать | со́рок
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-tens-1-ru
 
 ### GUIDED_PRACTICE `u9-g-hundreds-0`
 
@@ -3584,7 +3590,7 @@ contrastMembers=три́дцать | со́рок
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2687ff7149766d11f876839672959c1d683cad554d9d21cf05e65f6dad48d576
+- Content hash: 47486572e15a5ddbcf70073ef6bca386f185b03adec080d421069d6ff0c7da96
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3592,21 +3598,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=100
 options=сто | две́сти
 answer=сто
-feedback=Does the answer name the shown number from the same frozen table? сто.
+feedback=Does the admitted record show the governed contrast? сто.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different hundred. The contrast is the shown number.
+distractorRationales= | This admitted form is a different hundred.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-0
 cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-hundreds-0-ru
 distractorSourceIds= | prov-ex-u9-hundreds-1-ru
-distractorDifference= | This admitted form is a different hundred. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different hundred.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=сто | две́сти
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | prov-ex-u9-hundreds-1-ru
 
 ### GUIDED_PRACTICE `u9-g-thousands-0`
 
@@ -3616,7 +3624,7 @@ contrastMembers=сто | две́сти
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8968e14d289546e894eb8ccc777b88d8d367dba4e0bbee5168ef160d00660b2b
+- Content hash: 86ece6ec6a3cdd7db3c0ce4f9b0ff3c6b05ad1d7f750d1b77c5036bfa11dac51
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3624,21 +3632,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=21
 options=два́дцать оди́н | два́дцать
 answer=два́дцать оди́н
-feedback=Does the answer name the shown number from the same frozen table? два́дцать оди́н.
+feedback=Does the admitted record show the governed contrast? два́дцать оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the ten, not the composed number. The contrast is the shown number.
+distractorRationales= | This admitted form is only the ten, not the composed number.
 testedFeature=COMPOUND_21
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-0
 cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-thousands-1-ru
 distractorSourceIds= | prov-u9-thousands-x-0
-distractorDifference= | This admitted form is only the ten, not the composed number. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is only the ten, not the composed number.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=два́дцать оди́н | два́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | prov-u9-thousands-x-0
 
 ### GUIDED_PRACTICE `u9-g-odindva-0`
 
@@ -3648,29 +3658,31 @@ contrastMembers=два́дцать оди́н | два́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 937470f3c06ba16e81c08d31cc5586de03351b0156ad9a2f79b19ee7bab5c659
+- Content hash: 770d5538fbe526a0a35848f590a4a79665a539ec74d7014f20838aa7a10a6f88
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=джинсы
-options=одни джинсы | один мальчик
-answer=одни джинсы
-feedback=Does the answer agree with the shown word? одни джинсы.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=мальчик
+options=один | одна
+answer=один
+feedback=Does the admitted record show the governed contrast? один.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
-testedFeature=ODIN_PLURAL
-evidenceMode=AGREEMENT_PAIR
+distractorRationales= | This form is another admitted form in the same frozen line.
+testedFeature=ODIN_MASCULINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u9-odindva-3-ru
-distractorSourceIds= | prov-ex-u9-odindva-0-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=одни джинсы | один мальчик
+answerSourceIds=prov-u9-odindva-x-4
+distractorSourceIds= | prov-u9-odindva-x-5
+distractorDifference= | This form is another admitted form in the same frozen line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=один | одна
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
 
 ### GUIDED_PRACTICE `u9-g-quantity-0`
 
@@ -3680,7 +3692,7 @@ contrastMembers=одни джинсы | один мальчик
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 441682e52dd25127e75c0e2f6b52f1457b52116e1681bc09c00867c558ff7ac4
+- Content hash: fe301e94cda6e0cc4b166fa0a7302342a8e4f94ac824cf4a76ccecdb7d131f7f
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3688,21 +3700,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=один час
 options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 answer=1 -> nominative
-feedback=Does this admitted rule classify the shown line? 1 -> nominative.
+feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_ONE
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-u9-quantity-x-0
 distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-3 | prov-u9-quantity-x-0 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 
 ### GUIDED_PRACTICE `u9-g-pattern-0`
 
@@ -3712,7 +3726,7 @@ contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> g
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e65835c6dc5c4381ceb27f54254eb1395182a34fde80fc665cdb2e0de9f6d04d
+- Content hash: 58dccec6949d6800c2155c21d82c116642d38b019848363993ae28b9a5442445
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -3720,21 +3734,23 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=один час
 options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 answer=1 -> nominative
-feedback=Does this admitted rule classify the shown line? 1 -> nominative.
+feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+distractorRationales= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-pattern-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-u9-pattern-x-0
 distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-2
-distractorDifference= | This admitted rule is the two-to-four line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+distractorDifference= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-pattern-x-5 | prov-u9-pattern-x-0 | prov-u9-pattern-x-1 | prov-u9-pattern-x-2
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-1`
 
@@ -3744,7 +3760,7 @@ contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> g
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9eb7a6d266d28dd82e5e86683d0e6020bafea8e2800d0142a7f4655de589682
+- Content hash: 989ec2c103d1d7aebe4faee6e88845a0594b4f84fd36d9f607b17255c4a09f7f
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3752,21 +3768,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1
 options=оди́н | два
 answer=оди́н
-feedback=Does the answer name the shown number from the same frozen table? оди́н.
+feedback=Does the admitted record show the governed contrast? оди́н.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-1
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-1-ru
 distractorSourceIds= | prov-ex-u9-cardinal-2-ru
-distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different number in the same table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=оди́н | два
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | prov-ex-u9-cardinal-2-ru
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-2`
 
@@ -3776,7 +3794,7 @@ contrastMembers=оди́н | два
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dd2d60ff466127623618d1eb2ce2bb635473fce5a6cb881ab9e9074c16a9565
+- Content hash: f09f892ba84acc666cb2d10ccd4216f3acd156f676000b9e07518977a6bf9ee9
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3784,21 +3802,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=5
 options=пять | шесть
 answer=пять
-feedback=Does the answer name the shown number from the same frozen table? пять.
+feedback=Does the admitted record show the governed contrast? пять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-2
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-5-ru
 distractorSourceIds= | prov-ex-u9-cardinal-6-ru
-distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different number in the same table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=пять | шесть
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | prov-ex-u9-cardinal-6-ru
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-3`
 
@@ -3808,7 +3828,7 @@ contrastMembers=пять | шесть
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 719bced1a75ef30309300d37608190e0c9995b63dd3f39733fdc6d22227927b7
+- Content hash: 22e110519577db93fa3babcccfa429c8ffac8a6b46a065c874c0b3aaa66be6aa
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3816,21 +3836,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=10
 options=де́сять | де́вять
 answer=де́сять
-feedback=Does the answer name the shown number from the same frozen table? де́сять.
+feedback=Does the admitted record show the governed contrast? де́сять.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-10-ru
 distractorSourceIds= | prov-ex-u9-cardinal-9-ru
-distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different number in the same table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=де́сять | де́вять
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | prov-ex-u9-cardinal-9-ru
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-4`
 
@@ -3840,7 +3862,7 @@ contrastMembers=де́сять | де́вять
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0d3e203fc2426a2ebce7558afa6a108d527ed17f69acbad4e41d8338547f8e2
+- Content hash: 8319b773bc18b763b21f12d3dcf18cd71b9fc89e8f61a240897c2121fc5e721a
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3848,21 +3870,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=4
 options=четы́ре | три
 answer=четы́ре
-feedback=Does the answer name the shown number from the same frozen table? четы́ре.
+feedback=Does the admitted record show the governed contrast? четы́ре.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different number in the same table. The contrast is the shown number.
+distractorRationales= | This admitted form is a different number in the same table.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-4
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-4-ru
 distractorSourceIds= | prov-ex-u9-cardinal-3-ru
-distractorDifference= | This admitted form is a different number in the same table. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different number in the same table.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=четы́ре | три
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | prov-ex-u9-cardinal-3-ru
 
 ### INDEPENDENT_CHECK `u9-i-teens-1`
 
@@ -3872,7 +3896,7 @@ contrastMembers=четы́ре | три
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0158c7a1a6cefd58033df0c09a55213b911e468b03cd6b4087d0cf9b835b150
+- Content hash: 3d22e6d136f92f69fed89ca26f33fc9c2584d80c1e4696a3f5c8645b750707d5
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3880,21 +3904,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=14
 options=четы́рнадцать | пятна́дцать
 answer=четы́рнадцать
-feedback=Does the answer name the shown number from the same frozen table? четы́рнадцать.
+feedback=Does the admitted record show the governed contrast? четы́рнадцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different teen. The contrast is the shown number.
+distractorRationales= | This admitted form is a different teen.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-1
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-3-ru
 distractorSourceIds= | prov-ex-u9-teens-4-ru
-distractorDifference= | This admitted form is a different teen. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different teen.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=четы́рнадцать | пятна́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u9-teens-4-ru
 
 ### INDEPENDENT_CHECK `u9-i-teens-2`
 
@@ -3904,7 +3930,7 @@ contrastMembers=четы́рнадцать | пятна́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95bade2fa1e32a814517c9bb03d07a3225756c3669c92e6dc6bb4ba5b9e9ab8f
+- Content hash: 0c5b875ca0fa5cfa6664c411a3c1155336efbef284eba8b834374a42cfa2679f
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3912,21 +3938,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=19
 options=девятна́дцать | два́дцать
 answer=девятна́дцать
-feedback=Does the answer name the shown number from the same frozen table? девятна́дцать.
+feedback=Does the admitted record show the governed contrast? девятна́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the following ten, not the teen. The contrast is the shown number.
+distractorRationales= | This admitted form is the following ten, not the teen.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-2
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-8-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the following ten, not the teen. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the following ten, not the teen.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=девятна́дцать | два́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u9-teens-9-ru
 
 ### INDEPENDENT_CHECK `u9-i-teens-3`
 
@@ -3936,7 +3964,7 @@ contrastMembers=девятна́дцать | два́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a872a41e33ac927e9ba31fcb2d1b9cb18b9f10e21b4eb52ecae9f610e0c9777
+- Content hash: d5463e8b05f3ca67ac763f3b5947f3ce7353e30ae5610bc5e33a0ee3e90b68b2
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3944,21 +3972,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=12
 options=двена́дцать | два́дцать
 answer=двена́дцать
-feedback=Does the answer name the shown number from the same frozen table? двена́дцать.
+feedback=Does the admitted record show the governed contrast? двена́дцать.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the teen. The contrast is the shown number.
+distractorRationales= | This admitted form is the ten, not the teen.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-1-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the ten, not the teen. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the ten, not the teen.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=двена́дцать | два́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u9-teens-9-ru
 
 ### INDEPENDENT_CHECK `u9-i-tens-1`
 
@@ -3968,7 +3998,7 @@ contrastMembers=двена́дцать | два́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99d08abd36d69d5a93e60bc930d885fbae5f0d0f068f01ec04a02ce850c72274
+- Content hash: dfe7b833f9030b286f72ade3c177bd9f6603675849d335733fb7be6e62539106
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3976,21 +4006,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=50
 options=пятьдеся́т | шестьдеся́т
 answer=пятьдеся́т
-feedback=Does the answer name the shown number from the same frozen table? пятьдеся́т.
+feedback=Does the admitted record show the governed contrast? пятьдеся́т.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-1
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-2-ru
 distractorSourceIds= | prov-ex-u9-tens-3-ru
-distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different ten.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=пятьдеся́т | шестьдеся́т
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-tens-3-ru
 
 ### INDEPENDENT_CHECK `u9-i-tens-2`
 
@@ -4000,7 +4032,7 @@ contrastMembers=пятьдеся́т | шестьдеся́т
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0812550cb799915847ce145994282847d8183e16b1ba4b5d61410ef154af9be4
+- Content hash: ed565f78e02a3cc638678e389ae086c97db9c8790a3857497aeefc5e8852601c
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4008,21 +4040,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=90
 options=девяно́сто | во́семьдесят
 answer=девяно́сто
-feedback=Does the answer name the shown number from the same frozen table? девяно́сто.
+feedback=Does the admitted record show the governed contrast? девяно́сто.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is a different ten. The contrast is the shown number.
+distractorRationales= | This admitted form is a different ten.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-2
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-6-ru
 distractorSourceIds= | prov-ex-u9-tens-5-ru
-distractorDifference= | This admitted form is a different ten. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is a different ten.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=девяно́сто | во́семьдесят
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-tens-5-ru
 
 ### INDEPENDENT_CHECK `u9-i-tens-3`
 
@@ -4032,7 +4066,7 @@ contrastMembers=девяно́сто | во́семьдесят
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 975e51f6f90d33fd12891843e8b3e0520f251df1491b0dfe37648dc71391b8ed
+- Content hash: febfb47ca01311631ccdcfd4e92429c499a2097acceb5fe273e1c010890a0c7b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4040,21 +4074,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=20
 options=два́дцать | двена́дцать
 answer=два́дцать
-feedback=Does the answer name the shown number from the same frozen table? два́дцать.
+feedback=Does the admitted record show the governed contrast? два́дцать.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the teen, not the ten. The contrast is the shown number.
+distractorRationales= | This admitted form is the teen, not the ten.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-7-ru
 distractorSourceIds= | prov-u9-tens-x-0
-distractorDifference= | This admitted form is the teen, not the ten. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the teen, not the ten.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=два́дцать | двена́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-tens-x-0
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-1`
 
@@ -4064,7 +4100,7 @@ contrastMembers=два́дцать | двена́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1e743f101b5a97cc1fcbb6b5e995b46fa1d6c2d64f6aa5b393d72b04d451e94
+- Content hash: eac492f7d3045ffe6b8a528d25f1b9bdf25a21fca6f25b74057159f792c99a3d
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4072,21 +4108,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=300
 options=три́ста | три́дцать
 answer=три́ста
-feedback=Does the answer name the shown number from the same frozen table? три́ста.
+feedback=Does the admitted record show the governed contrast? три́ста.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+distractorRationales= | This admitted form is the ten, not the hundred.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-1
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-2-ru
 distractorSourceIds= | prov-u9-hundreds-x-0
-distractorDifference= | This admitted form is the ten, not the hundred. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the ten, not the hundred.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=три́ста | три́дцать
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | prov-u9-hundreds-x-0
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-2`
 
@@ -4096,7 +4134,7 @@ contrastMembers=три́ста | три́дцать
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 854567b19ce7509277a4e6e05c33629e8563963dd60acd8f798ed9aafd2cc8d0
+- Content hash: ae8cb497e49c80990a2cbb9c28448981ef14811006a20de65ac40e825a0207d4
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4104,21 +4142,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=500
 options=пятьсо́т | пять
 answer=пятьсо́т
-feedback=Does the answer name the shown number from the same frozen table? пятьсо́т.
+feedback=Does the admitted record show the governed contrast? пятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
+distractorRationales= | This admitted form is the one-digit number, not the hundred.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-2
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-4-ru
 distractorSourceIds= | prov-u9-hundreds-x-1
-distractorDifference= | This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the one-digit number, not the hundred.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=пятьсо́т | пять
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | prov-u9-hundreds-x-1
 
 ### INDEPENDENT_CHECK `u9-i-hundreds-3`
 
@@ -4128,7 +4168,7 @@ contrastMembers=пятьсо́т | пять
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d19ce48fafc9c7c2171af316256d4e508fa334d1bf648578eab0629d77a05182
+- Content hash: 736409b8bd782b199a84ee8e186f21bdde0cd3eb9c69499f9b975824fddcb059
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4136,21 +4176,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=900
 options=девятьсо́т | девяно́сто
 answer=девятьсо́т
-feedback=Does the answer name the shown number from the same frozen table? девятьсо́т.
+feedback=Does the admitted record show the governed contrast? девятьсо́т.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the ten, not the hundred. The contrast is the shown number.
+distractorRationales= | This admitted form is the ten, not the hundred.
 testedFeature=GOVERNED_FORM
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-8-ru
 distractorSourceIds= | prov-u9-hundreds-x-2
-distractorDifference= | This admitted form is the ten, not the hundred. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the ten, not the hundred.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=девятьсо́т | девяно́сто
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | prov-u9-hundreds-x-2
 
 ### INDEPENDENT_CHECK `u9-i-thousands-1`
 
@@ -4160,29 +4202,31 @@ contrastMembers=девятьсо́т | девяно́сто
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0eb40f9008722008df819159eb5da5426c481eacd0262966af0ab30f34a11ab3
+- Content hash: 1319f7133f95988582819d4d22c5526298b480d42c551998ea97a2cd24ffd6b5
 
 kind=NUMBER_FORM_SELECTION
 language=en
-prompt=Which admitted form is the composition of the shown form?
-promptLetter=сто
+prompt=Which admitted form matches the shown number?
+promptLetter=101
 options=сто оди́н | сто
 answer=сто оди́н
-feedback=Does the answer follow the counted pattern of the shown line? сто оди́н.
+feedback=Does the admitted record show the governed contrast? сто оди́н.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is only the hundred, not the composed pattern of the shown form.
+distractorRationales= | This admitted form is only the hundred, not the composed number.
 testedFeature=HUNDREDS_COMPOSITION
-evidenceMode=COUNTED_PATTERN
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-1
-cueLanguage=ru
+cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-2-ru
 distractorSourceIds= | prov-u9-thousands-x-1
-distractorDifference= | This form is only the hundred, not the composed pattern of the shown form.
-whyAnswerDemonstratesObjective=Does the answer follow the counted pattern of the shown line?
+distractorDifference= | This admitted form is only the hundred, not the composed number.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=сто оди́н | сто
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | prov-u9-thousands-x-1
 
 ### INDEPENDENT_CHECK `u9-i-thousands-2`
 
@@ -4192,7 +4236,7 @@ contrastMembers=сто оди́н | сто
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4155fb97f4bff55f4c4e471f5243fc43f36f255ae32e65acc81178dd6f589d3a
+- Content hash: 63916f782b72021c155fa8b78b401cadd691abdd15192921a79ed864eb1a815a
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4200,21 +4244,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=215
 options=две́сти пятна́дцать | две́сти
 answer=две́сти пятна́дцать
-feedback=Does the answer name the shown number from the same frozen table? две́сти пятна́дцать.
+feedback=Does the admitted record show the governed contrast? две́сти пятна́дцать.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the hundred, not the composed number. The contrast is the shown number.
+distractorRationales= | This admitted form is only the hundred, not the composed number.
 testedFeature=HUNDREDS_COMPOSITION
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-2
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-3-ru
 distractorSourceIds= | prov-u9-thousands-x-2
-distractorDifference= | This admitted form is only the hundred, not the composed number. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is only the hundred, not the composed number.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=две́сти пятна́дцать | две́сти
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | prov-u9-thousands-x-2
 
 ### INDEPENDENT_CHECK `u9-i-thousands-3`
 
@@ -4224,7 +4270,7 @@ contrastMembers=две́сти пятна́дцать | две́сти
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64756c07ff525c6cd3daf7cace95fb79054c8935bb86d291175de00348d587c1
+- Content hash: 4f62a43a45d9bf042d0094bf23a5849ae5899b51e2b9e3d5d88d73c3bf28198e
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4232,21 +4278,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1,984
 options=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 answer=ты́сяча девятьсо́т во́семьдесят четы́ре
-feedback=Does the answer name the shown number from the same frozen table? ты́сяча девятьсо́т во́семьдесят четы́ре.
+feedback=Does the admitted record show the governed contrast? ты́сяча девятьсо́т во́семьдесят четы́ре.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is only the thousand, not the composed number. The contrast is the shown number.
+distractorRationales= | This admitted form is only the thousand, not the composed number.
 testedFeature=THOUSANDS_COMPOSITION
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-3
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-5-ru
 distractorSourceIds= | prov-ex-u9-thousands-0-ru
-distractorDifference= | This admitted form is only the thousand, not the composed number. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is only the thousand, not the composed number.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | prov-ex-u9-thousands-0-ru
 
 ### INDEPENDENT_CHECK `u9-i-thousands-4`
 
@@ -4256,7 +4304,7 @@ contrastMembers=ты́сяча девятьсо́т во́семьдесят ч�
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe6b88a0290a5a503268d6a6f0580bc549008f308803b92e3984a930bd0c39dc
+- Content hash: 820a9f2fff6a236ee411b51165709825031287216f691860d9a1dce6f8d992cc
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4264,21 +4312,23 @@ prompt=Which admitted form matches the shown number?
 promptLetter=2,000/3,000/4,000
 options=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 answer=две/три/четы́ре ты́сячи
-feedback=Does the answer name the shown number from the same frozen table? две/три/четы́ре ты́сячи.
+feedback=Does the admitted record show the governed contrast? две/три/четы́ре ты́сячи.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted form is the other thousands band. The contrast is the shown number.
+distractorRationales= | This admitted form is the other thousands band.
 testedFeature=THOUSANDS_COMPOSITION
-evidenceMode=NUMBER_FORM
+evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-4
 cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-6-ru
 distractorSourceIds= | prov-ex-u9-thousands-7-ru
-distractorDifference= | This admitted form is the other thousands band. The contrast is the shown number.
-whyAnswerDemonstratesObjective=Does the answer name the shown number from the same frozen table?
+distractorDifference= | This admitted form is the other thousands band.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
+relationKind=SAME_RULE_DIFFERENT_BOUNDARY
+relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | prov-ex-u9-thousands-7-ru
 
 ### INDEPENDENT_CHECK `u9-i-odindva-1`
 
@@ -4288,29 +4338,31 @@ contrastMembers=две/три/четы́ре ты́сячи | пять ~ де́�
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b768f9861724e7003dff6c8c0c6888ed21d4c9e10c5a7af07547f9880fc1fa77
+- Content hash: 2108a37768f151566f7b389e2a56fadde5a3915cde6c21af4f622c273adb2429
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=мальчик
-options=один мальчик | одна девушка
-answer=один мальчик
-feedback=Does the answer agree with the shown word? один мальчик.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=девушка
+options=одна | один
+answer=одна
+feedback=Does the admitted record show the governed contrast? одна.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
-testedFeature=ODIN_MASCULINE
-evidenceMode=AGREEMENT_PAIR
+distractorRationales= | This form is another admitted form in the same frozen line.
+testedFeature=ODIN_FEMININE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u9-odindva-0-ru
-distractorSourceIds= | prov-ex-u9-odindva-1-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=один мальчик | одна девушка
+answerSourceIds=prov-u9-odindva-x-5
+distractorSourceIds= | prov-u9-odindva-x-4
+distractorDifference= | This form is another admitted form in the same frozen line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=одна | один
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odindva-x-4
 
 ### INDEPENDENT_CHECK `u9-i-odindva-2`
 
@@ -4320,29 +4372,31 @@ contrastMembers=один мальчик | одна девушка
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de2829674dda8f71cb7f7fd340340909a978b745982b06066439d674f78e3b49
+- Content hash: b99c671df7549abf83014dc9c1162980e3bcbaf5955f51cabca3879975f71a59
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=девушка
-options=одна девушка | один мальчик
-answer=одна девушка
-feedback=Does the answer agree with the shown word? одна девушка.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=животное
+options=одно | один
+answer=одно
+feedback=Does the admitted record show the governed contrast? одно.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
-testedFeature=ODIN_FEMININE
-evidenceMode=AGREEMENT_PAIR
+distractorRationales= | This form is another admitted form in the same frozen line.
+testedFeature=ODIN_NEUTER
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u9-odindva-1-ru
-distractorSourceIds= | prov-ex-u9-odindva-0-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=одна девушка | один мальчик
+answerSourceIds=prov-u9-odindva-x-6
+distractorSourceIds= | prov-u9-odindva-x-4
+distractorDifference= | This form is another admitted form in the same frozen line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=одно | один
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odindva-x-4
 
 ### INDEPENDENT_CHECK `u9-i-odindva-3`
 
@@ -4352,29 +4406,31 @@ contrastMembers=одна девушка | один мальчик
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3955d43fec5f2a0a026df0098c826191e0501c3244f6ac7d83c08bfbcebad184
+- Content hash: 8e6a5c7e901eabeaa9ba2f175e4722c5a86b2b096789bb678f74a0695d702b9c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=животное
-options=одно животное | одни джинсы
-answer=одно животное
-feedback=Does the answer agree with the shown word? одно животное.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=джинсы
+options=одни | один
+answer=одни
+feedback=Does the admitted record show the governed contrast? одни.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
-testedFeature=ODIN_NEUTER
-evidenceMode=AGREEMENT_PAIR
+distractorRationales= | This form is another admitted form in the same frozen line.
+testedFeature=ODIN_PLURAL
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u9-odindva-2-ru
-distractorSourceIds= | prov-ex-u9-odindva-3-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=одно животное | одни джинсы
+answerSourceIds=prov-u9-odindva-x-7
+distractorSourceIds= | prov-u9-odindva-x-4
+distractorDifference= | This form is another admitted form in the same frozen line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=одни | один
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odindva-x-4
 
 ### INDEPENDENT_CHECK `u9-i-odindva-4`
 
@@ -4384,29 +4440,31 @@ contrastMembers=одно животное | одни джинсы
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d413f37938cec7131385d2d14523d4277e35641141be3bdf8e8a6c01bbbad152
+- Content hash: 02863031a4cb211b78caa2ced918e002246ba9b2850e19ef2f0eb40b7ece3c93
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line agrees with the shown word?
-promptLetter=джинсы
-options=одни джинсы | одно животное
-answer=одни джинсы
-feedback=Does the answer agree with the shown word? одни джинсы.
+prompt=Which admitted form agrees with the shown word?
+promptLetter=мальчик
+options=один | одна
+answer=один
+feedback=Does the admitted record show the governed contrast? один.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This line agrees with another word, not the shown word.
-testedFeature=ODIN_PLURAL
-evidenceMode=AGREEMENT_PAIR
+distractorRationales= | This form is another admitted form in the same frozen line.
+testedFeature=ODIN_MASCULINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u9-odindva-3-ru
-distractorSourceIds= | prov-ex-u9-odindva-2-ru
-distractorDifference= | This line agrees with another word, not the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
-contrastMembers=одни джинсы | одно животное
+answerSourceIds=prov-u9-odindva-x-4
+distractorSourceIds= | prov-u9-odindva-x-5
+distractorDifference= | This form is another admitted form in the same frozen line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=один | одна
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
 
 ### INDEPENDENT_CHECK `u9-i-odindva-5`
 
@@ -4416,29 +4474,31 @@ contrastMembers=одни джинсы | одно животное
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09484755c5a925a279ff4bca997265206314ff61ace6e81eb6b6932f7af2e244
+- Content hash: c085abede84e28f0be6ab062c75eeb06a2563328828382e1860151e6d9b7ced0
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which admitted form agrees with the shown word?
-promptLetter=девушка
+promptLetter=девушки
 options=две | два
 answer=две
-feedback=Does the answer agree with the shown word? две.
+feedback=Does the admitted record show the governed contrast? две.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other agreement row of the same word, not the row of the shown word.
+distractorRationales= | This form is the other admitted form of two.
 testedFeature=DVA_DVE
-evidenceMode=AGREEMENT_PAIR
+evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u9-odindva-5
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u9-odindva-7-ru
-distractorSourceIds= | prov-ex-or-u9-odindva-9
-distractorDifference= | This form is the other agreement row of the same word, not the row of the shown word.
-whyAnswerDemonstratesObjective=Does the answer agree with the shown word?
+distractorSourceIds= | prov-u9-odindva-x-8
+distractorDifference= | This form is the other admitted form of two.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=две | два
+relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
+relationParticipantIds=prov-u9-odindva-x-10 | prov-ex-u9-odindva-7-ru | prov-u9-odindva-x-8
 
 ### INDEPENDENT_CHECK `u9-i-quantity-1`
 
@@ -4448,7 +4508,7 @@ contrastMembers=две | два
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd30fe8efe4f2e0078bef84214f59fb04d192e9376f302cf8379037546e3e772
+- Content hash: 8b1df2565bbd936ecbd6f2935bcede766e2e43150ae5e3f3ff964695705c0fbe
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4456,21 +4516,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=двадцать два часа
 options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
 answer=2, 3, 4 -> genitive singular
-feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
+feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=COMPOUND_22
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-1
 distractorSourceIds= | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
 distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-7 | prov-u9-quantity-x-1 | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-2`
 
@@ -4480,7 +4542,7 @@ contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> g
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31944aae85c2f1055c5aab5a42a30f74bd9fee58ed25fa502dc3462494e01575
+- Content hash: 5e3abecdb938d034e2c39d2e5cf903cd164d6094d6a5f8725f723fb04529b89e
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4488,21 +4550,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=пять часов
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_FIVE_PLUS
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-2
 distractorSourceIds= | prov-u9-quantity-x-1
 distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-5 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
 
 ### INDEPENDENT_CHECK `u9-i-quantity-3`
 
@@ -4512,7 +4576,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8518c73399f65b875e6c15be59ffb9952c438bc1fe52a38214b055b02e91b70b
+- Content hash: d3f2b295cde81fc534c91fa6f684f66f070e815b7db888583b0b76bf103a792b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4520,21 +4584,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=двадцать один час
 options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 answer=1 -> nominative
-feedback=Does this admitted rule classify the shown line? 1 -> nominative.
+feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=COMPOUND_21
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-0
 distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-6 | prov-u9-quantity-x-0 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-4`
 
@@ -4544,7 +4610,7 @@ contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> g
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cc16f540799e4642af68659140c6a8cf5bd6261f9d92f7b84f5ec105f14dcd1
+- Content hash: 2ea52b01fbac2d4ed7030bc421c041c762442e8a0b650328b0a85fe909f7bc15
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4552,21 +4618,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=шестнадцать рублей
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEEN_VALUE
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-2
 distractorSourceIds= | prov-u9-quantity-x-1
 distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-8 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
 
 ### INDEPENDENT_CHECK `u9-i-quantity-5`
 
@@ -4576,7 +4644,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90bb2b1ddeb73417229a8b23460af8c63dcb442643340bdb8f5caed19158e16c
+- Content hash: 4e7a3e5ae6233604d8dd900fcad819ad681e484747a052ae990e6dea25322663
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4584,21 +4652,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=сорок один год
 options=1 -> nominative | 5 and more -> genitive plural
 answer=1 -> nominative
-feedback=Does this admitted rule classify the shown line? 1 -> nominative.
+feedback=Does the admitted record show the governed contrast? 1 -> nominative.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=FINAL_DIGIT_ONE
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-5
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-0
 distractorSourceIds= | prov-u9-quantity-x-2
 distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=1 -> nominative | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-9 | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-6`
 
@@ -4608,7 +4678,7 @@ contrastMembers=1 -> nominative | 5 and more -> genitive plural
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f8052b568a92d37ed8aed13a6692adc35583ebdc7cff8ffe6ce4956e4a3e7d9
+- Content hash: 81c49b781417ca42d5a6d8066c04a75e1ccb42de3dc1000c265e6e382276106c
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4616,21 +4686,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=двести тринадцать собак
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEENS_OVERRIDE
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-6
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-2
 distractorSourceIds= | prov-u9-quantity-x-1
 distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-10 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
 
 ### INDEPENDENT_CHECK `u9-i-quantity-7`
 
@@ -4640,7 +4712,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 666bed3574a8eda2f53af3326f67407615f840d1c62bd4a10de14b6d15bf8953
+- Content hash: 2a45e92a9bb6636571a4936e4d8b302a2d5f984f547ae402c98821bbfc4a9106
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4648,21 +4720,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=десять копеек
 options=5 and more -> genitive plural | 1 -> nominative
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line.
 testedFeature=FINAL_ZERO_OR_TEN
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-7
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-2
 distractorSourceIds= | prov-u9-quantity-x-0
 distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 1 -> nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-11 | prov-u9-quantity-x-2 | prov-u9-quantity-x-0
 
 ### INDEPENDENT_CHECK `u9-i-quantity-8`
 
@@ -4672,29 +4746,31 @@ contrastMembers=5 and more -> genitive plural | 1 -> nominative
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 538a15dfe71294c6889f31b853fb79aa6c2582a82413e9d1f37cbfa3d925565b
+- Content hash: d341650e081d5d0f9545382d9af5e8ed2573f98101549453dcd097ade34ec1be
 
 kind=NUMBER_FORM_SELECTION
 language=en
 prompt=Which admitted rule classifies the shown line?
-promptLetter=Два́дцать пять копе́ек
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+promptLetter=два часа
+options=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+answer=2, 3, 4 -> genitive singular
+feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
-testedFeature=FINAL_DIGIT_FIVE_PLUS
-evidenceMode=RULE_CLASSIFICATION
+distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+testedFeature=FINAL_DIGIT_TWO
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-8
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-2
-distractorSourceIds= | prov-u9-quantity-x-1
-distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+answerSourceIds=prov-u9-quantity-x-1
+distractorSourceIds= | prov-u9-quantity-x-2
+distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-4 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-9`
 
@@ -4704,7 +4780,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 046371e4d9f1eb284c733fddac3a0a934e9e5e46734ded168936c7a5fca885bf
+- Content hash: 0b12dd54cf3f28c34d4984def7c344c0d1aeda5aaa27a7799144ddace8c5e473
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4712,21 +4788,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=двести три собаки
 options=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 answer=2, 3, 4 -> genitive singular
-feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
+feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
 testedFeature=HUNDREDS_COMPOSITION
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-quantity-9
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-quantity-x-1
 distractorSourceIds= | prov-u9-quantity-x-2
 distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-quantity-x-12 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
 
 ### INDEPENDENT_CHECK `u9-i-pattern-1`
 
@@ -4736,7 +4814,7 @@ contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef1fa03c5f334b0c23cf81ec1ba78d22c708ee41585a474584b5d1abef134811
+- Content hash: c0f37a943dca636fb39bf962c18a35db56441fb0346b83acdcd497b1a8d813b3
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4744,21 +4822,23 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=три кошки
 options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
 answer=2, 3, 4 -> genitive singular
-feedback=Does this admitted rule classify the shown line? 2, 3, 4 -> genitive singular.
+feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the one-item line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
+distractorRationales= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-pattern-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-pattern-x-1
 distractorSourceIds= | prov-u9-pattern-x-0 | prov-u9-pattern-x-2
-distractorDifference= | This admitted rule is the one-item line. The contrast is the shown line. | This admitted rule is the five-and-more line. The contrast is the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+distractorDifference= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-pattern-x-6 | prov-u9-pattern-x-1 | prov-u9-pattern-x-0 | prov-u9-pattern-x-2
 
 ### INDEPENDENT_CHECK `u9-i-pattern-2`
 
@@ -4768,7 +4848,7 @@ contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> g
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ce9bcc76903d730fc177bf266557bdf42e6bb318e4207d8700baf9fbbd253e1
+- Content hash: 10233dc8481908730e4acd324009c22678a951d27de6059c372a1b7584301731
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4776,21 +4856,23 @@ prompt=Which admitted rule applies to the shown line?
 promptLetter=пять девушек
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted rule is the two-to-four line. The contrast is the shown line.
+distractorRationales= | This admitted rule is the two-to-four line.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-pattern-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-pattern-x-2
 distractorSourceIds= | prov-u9-pattern-x-1
-distractorDifference= | This admitted rule is the two-to-four line. The contrast is the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+distractorDifference= | This admitted rule is the two-to-four line.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-pattern-x-7 | prov-u9-pattern-x-2 | prov-u9-pattern-x-1
 
 ### INDEPENDENT_CHECK `u9-i-pattern-3`
 
@@ -4800,7 +4882,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b1e3afbc6df57b58ab31cfea6b3e2578f3521b98b601df367450e4dbc1597cb
+- Content hash: c83477f3fb670538caa301bc72afcd0568c6a92a33334e890105ac34a5100662
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4808,21 +4890,23 @@ prompt=Which admitted rule classifies the shown line?
 promptLetter=шестнадцать рублей
 options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
 answer=5 and more -> genitive plural
-feedback=Does this admitted rule classify the shown line? 5 and more -> genitive plural.
+feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
 testedFeature=TEENS_OVERRIDE
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-pattern-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-pattern-x-2
 distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-0
 distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-pattern-x-8 | prov-u9-pattern-x-2 | prov-u9-pattern-x-1 | prov-u9-pattern-x-0
 
 ### INDEPENDENT_CHECK `u9-i-pattern-4`
 
@@ -4832,7 +4916,7 @@ contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c96ab62de2856cfdde7460603b72e1b77e088ec34ffd8548182dcafe947b4a5a
+- Content hash: 08f5bcc83bbc6ce7803cc073f7760af7f92923ac801f5bb2ac1f601b83687457
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -4840,21 +4924,23 @@ prompt=Which admitted scope sentence covers the shown line?
 promptLetter=Я видел двух друзей
 options=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
 answer=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
-feedback=Does this admitted rule classify the shown line? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
+feedback=Does the admitted record show the governed contrast? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
+distractorRationales= | This admitted sentence is the other scope in the frozen paragraph.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFICATION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u9-pattern-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-pattern-x-3
 distractorSourceIds= | prov-u9-pattern-x-4
-distractorDifference= | This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
-whyAnswerDemonstratesObjective=Does this admitted rule classify the shown line?
+distractorDifference= | This admitted sentence is the other scope in the frozen paragraph.
+whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
 contrastMembers=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u9-pattern-x-9 | prov-u9-pattern-x-3 | prov-u9-pattern-x-4
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -10123,6 +10209,35 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u9-odindva-x-10`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c01e33ce8deb75f03db3f942ecc378d9698f0186fc636d893b090bcdc3550eed
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:две девушки (two girls)
+originalSourceText=две девушки (two girls)
+shippedText=девушки
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7637403c0b886832b177bf3325f55c0f16ba39eed89d582ba24b989bd9b5b0aa
+contentHash=cc57517b72f2d203d1b0e1cca7b2bff84ae712afb3b3aaefcfea4e528aa17578
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u9-odindva-x-2`
 
 - Objectives: obj-u9-odindva
@@ -10175,6 +10290,180 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
 contentHash=0a15922e4fa30cf41b3725d28364368a4803782a90a88bf7b4cbb5394b8d4f2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-4`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7c5ec1496b389ecb4cab728d45b2b87849a56ead357931835bc6803b1800a2d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=один
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-5`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 163b51088c42e2be1e683868b8117863d7716e416f49e500b4c98cf3728a55ce
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=одна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-6`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6326aefeb5984c896d8b72325cff4b43e200b279b9f0c2b76ff698fc19d4ed84
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=одно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=daea981c3ace6d30cb7f6a6c4509df77f2a32760136d645c8480d85102f29a28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-7`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 357d3048492f0beb7f9f775bcb680741baa7ed80c41c92cc129597ede260654a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
+originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans)
+shippedText=одни
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f4bd8d843190fac2d6dd54e2d9bb136ebb97699e794fa094dcbded80d1e24104
+contentHash=dd7623d1d1f180ac41dee5b5cb63af6f60785d042583d724c404d8db439b816b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-8`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51b566da53fea35a3be35e8bf3cad57639c2e61a9b91d465f4e6acf8eb59671c
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:2 два (две)
+originalSourceText=2 два (две)
+shippedText=два
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=693ad5f87d7036aa8e77931d6be59a8cd40f69af3d471bfb7bbe47bfd527a4a9
+contentHash=86879b3ea456e970d141644f759486ebbc22c0fb7f4adf0c954d5b223c735652
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-odindva-x-9`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 47d18a5bc5273f1216378f39d27ad1dd8a07d9a017ae91562165ae3c2b78d978
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:2 два (две)
+originalSourceText=2 два (две)
+shippedText=две
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=693ad5f87d7036aa8e77931d6be59a8cd40f69af3d471bfb7bbe47bfd527a4a9
+contentHash=5e90d8f1014b08932352c6c3c8cd0c94b891f2ff2aa388b3ec975fa622023415
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10247,20 +10536,47 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5079cacae22c858196c58a1982b995d1486f7fab4945d9869b05a1b8c3739b08
+- Content hash: 8727437c989936bb75facd3d04e07f1e384ec727543fb6daeb09741683cd499c
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:1 -> nominative
-originalSourceText=1 -> nominative
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
 shippedText=1 -> nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=068f2a612d11cc116eb611f464e47da5637c0248cf1b1479ade01f665864ea73
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
 contentHash=068f2a612d11cc116eb611f464e47da5637c0248cf1b1479ade01f665864ea73
 audioAssetId=
 reviewerIdentity=
@@ -10276,20 +10592,47 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59cced888414d145d7573c9e1cc8c7b66f6bc478ac439648e0b80bca57d1afee
+- Content hash: 3c71e402202a3a07beaceb157929e24d409a87ac8275bcb81ab812ab61c929d2
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:2, 3, 4 -> genitive singular
-originalSourceText=2, 3, 4 -> genitive singular
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
 shippedText=2, 3, 4 -> genitive singular
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=596c830602b145223fc7862f18b55276cc760807fc92914047c3f1143f21229e
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
 contentHash=596c830602b145223fc7862f18b55276cc760807fc92914047c3f1143f21229e
 audioAssetId=
 reviewerIdentity=
@@ -10297,7 +10640,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u9-pattern-x-2`
+### PROVENANCE `prov-u9-pattern-x-10`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -10305,94 +10648,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77c0296d67cd3e2e5be6a5966d5a1ec3e25af8b0101db3ba74e35bc800a7c960
-
-recordType=pattern
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:5 and more -> genitive plural
-originalSourceText=5 and more -> genitive plural
-shippedText=5 and more -> genitive plural
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
-contentHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u9-pattern-x-3`
-
-- Objectives: obj-u9-pattern
-- Sessions: u9-s-orient, u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0912d7ad037592623b2f02818c909d49836e8a24536750174f3291091770cfba
-
-recordType=instruction
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:When the items at hand belong not in the nominative or inanimate accusative case
-originalSourceText=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
-shippedText=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2ae1db2c19121995df8e645fc5c7f116ff8b068abc85d19b4bb1aa61abd9818c
-contentHash=2ae1db2c19121995df8e645fc5c7f116ff8b068abc85d19b4bb1aa61abd9818c
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u9-pattern-x-4`
-
-- Objectives: obj-u9-pattern
-- Sessions: u9-s-orient, u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e7093f1307d3cbd8ecbb6686103e1474cb58066de633456af3bf19c41bd2784
-
-recordType=instruction
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
-originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.
-shippedText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=19c78700d64e3818c362738f4f0ec87df7ea749f03611013047e8ad6d9a283b0
-contentHash=19c78700d64e3818c362738f4f0ec87df7ea749f03611013047e8ad6d9a283b0
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u9-pattern-x-5`
-
-- Objectives: obj-u9-pattern
-- Sessions: u9-s-orient, u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 199fae56c0e2d4817fed0e4da392761184e5b1da8eae34a7544f97cb6b25e4f7
+- Content hash: ae65f56ea9d2ee103e93a99400a1feae2a29f96ce0dcc6832cad388c4f3da5aa
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -10413,7 +10669,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u9-pattern-x-6`
+### PROVENANCE `prov-u9-pattern-x-11`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-orient, u9-s-pattern
@@ -10421,7 +10677,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1061fe9e7a349ed8a860557d64bc3367ec043611e653e68ff0fc2967f71951a3
+- Content hash: 759ab9974f4f0299296ca202ad729b68c0854858282cc0f54ba18aae05d0cf46
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10436,6 +10692,454 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=271b8bb92db74040675bbbed20eaf7e8a0818e8455af7436f6f13dae78168db4
 contentHash=271b8bb92db74040675bbbed20eaf7e8a0818e8455af7436f6f13dae78168db4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 578e13ffba203c22ef61fb0e15c7363242c6d9bee10fab3fb14210b3cec7e7e2
+
+recordType=pattern
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=5 and more -> genitive plural
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-3`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5291defcca80651e86d037e77243e5877d1295db4142f12a72139285f18e37f1
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=2ae1db2c19121995df8e645fc5c7f116ff8b068abc85d19b4bb1aa61abd9818c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-4`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d5614def4fcfb874f9ab9804b752e3e5991f2181c81e736f2428a70fff99a03a
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=19c78700d64e3818c362738f4f0ec87df7ea749f03611013047e8ad6d9a283b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-5`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cf5b048f33861f050af4256585c7f2de14e0c2db360bd227e3323e12a77a5ed1
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=один час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-6`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fd6ed2cc8396cf621a510dc14a570658eec06754bd7af58e8248089dd3998206
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=три кошки
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=c9112ceafd474abcd6eced8d52d2b5acce7f1ec3243ab6ab81fb0780acd93043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-7`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 103de6ba2e4f1fd7e38a73f547ec6e1744d25c03d24a967e53830308d25d1472
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=пять девушек
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=e4c87b9100f8ca3c3365928e83236cad3bd0636b45d00c3f9dedec28ffa0498b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-8`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bad902e6e66fda88213e7ea9cfdc7dafccb36b67d89c556e7fd43e8d9d177aa
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=шестнадцать рублей
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-pattern-x-9`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 185b85050833a53555144c9f2e03be788ac17be20791a7d613709c11103320d9
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=Я видел двух друзей
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=6ec2184264f7d117a594231af4caf40aa4f2d2bc1436def1bf5254c4fb4f7117
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10479,20 +11183,47 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0e9e5259909b8b6225f99f1cb943b8d1f0f24194ff12ec22aada8dab08420d2
+- Content hash: 5273708aeaa5796ade383995e768a4d728e8c04eef960e9d862b411b9ba6f11a
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:1 -> nominative
-originalSourceText=1 -> nominative
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
 shippedText=1 -> nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=068f2a612d11cc116eb611f464e47da5637c0248cf1b1479ade01f665864ea73
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
 contentHash=068f2a612d11cc116eb611f464e47da5637c0248cf1b1479ade01f665864ea73
 audioAssetId=
 reviewerIdentity=
@@ -10508,20 +11239,47 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c661c4cbd7a3ab2c95475fc5a29c21c59a96edc13b3e425a628785ccd2f59e5c
+- Content hash: f732aa93eba713a39d9c557aa581b5aa772e02626290a358b8fba8549ddd4116
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:2, 3, 4 -> genitive singular
-originalSourceText=2, 3, 4 -> genitive singular
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
 shippedText=2, 3, 4 -> genitive singular
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=596c830602b145223fc7862f18b55276cc760807fc92914047c3f1143f21229e
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
 contentHash=596c830602b145223fc7862f18b55276cc760807fc92914047c3f1143f21229e
 audioAssetId=
 reviewerIdentity=
@@ -10529,7 +11287,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u9-quantity-x-2`
+### PROVENANCE `prov-u9-quantity-x-10`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -10537,28 +11295,55 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81205751d764ec7e7f6952a28ba8c814c87ddb108e99bd51bae0fdf0452ff085
+- Content hash: 96326f8f2001b5be966f240a54922603a8e5ec10dc35f6f21e278e3a35a0c17f
 
-recordType=pattern
+recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:5 and more -> genitive plural
-originalSourceText=5 and more -> genitive plural
-shippedText=5 and more -> genitive plural
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=двести тринадцать собак
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
-contentHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=c7ec9a2fd397fe4273cf455901fb9bb41c6000fdf342ffba7b6ab22fe6c23dda
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u9-quantity-x-3`
+### PROVENANCE `prov-u9-quantity-x-11`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -10566,7 +11351,119 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6aff1cdd9a36192ea57a922010e62a00427d1a19f0f905148a3c1f793d71d0a7
+- Content hash: fa3fbda93eb5a8d624000e00a09d792c6a4a37863d8a6d26161c8a2566e28c0b
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=десять копеек
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=fb205d4acd981ae43cd813d92106e7e1c92225016c5a750dbfcd47851009f771
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-12`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0bc2aa733c9c749f5088de71d8ef0df9656404904705b1848f6ab201d9651495
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=двести три собаки
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=3378bc773e386356bbd40849fbc646c8fa242d9568c4da021e6b3aefcf006d1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-13`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 17a454a11cb86b6b65beb5ce41c34f06a3946764b90e7f89af9d3a5f8092e63c
 
 recordType=pattern
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Genitive_case?oldid=4567338
@@ -10587,7 +11484,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u9-quantity-x-4`
+### PROVENANCE `prov-u9-quantity-x-14`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-orient, u9-s-quantity
@@ -10595,7 +11492,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96746ac147d5bfc4986fc4eab9b8df3c53dbb3b589a467ebd59c788b68a17bec
+- Content hash: 5d9ced54f5d1b10fda64d9df4ffa8445c6e0e35bc578ef530e13a2fd54d1542d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -10610,6 +11507,454 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=5f58005797ee755d409c7e2a11d603278c2a5706fd14966295f6e9b6659d53fa
 contentHash=bd9be8fe6c901cfc24d6a74bc0944f212233cf70df8d59293a97e228fffe6a89
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 67af28d3341285674eef52afbbe4cbe1ae3118f2ff62649b0be2973e5bdc552e
+
+recordType=pattern
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=5 and more -> genitive plural
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=24f8e189f534550f06937aeb3ab40c99586f3024f303e93d6280ab8cd855fe45
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-3`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cf014aec67174a95b6205ea37bcd0b4dbda55ab0a7bfcd5b8e6d4b239ade9b42
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=один час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-4`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 055e0488ad5ccc6c87ae169a6bd1f1da0a1e8bdda45fb73a89a0ed1b7127c670
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=два часа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=29effe1520939a15946d77aca610e86d5a33ff3cf747b6b653c5155a76805b1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-5`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aad2afab854977a7766142a299091bca42afb94a8765e909ab224fd469c6b78c
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=пять часов
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=e323224d27d02edb9a7c35bd15e0919791e785100bbea36301b4d07c6ad191df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-6`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 58a27f925164bc72745b305f5aa8ee0fcb74168262c580c4b60d540d6e1d5840
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=двадцать один час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=87bee02c1ecf4f5be986cd4c90129fe40aa3c0500a799c5404306c05bb01c8ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-7`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d02420293b2b0f638a65589d72db0371aff8b18861627e56c3f6c16b27b9026d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=двадцать два часа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=74885decbdca27deb5edf5a88acf41150fc426948c474d6c00648a77ac075762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-8`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fa369e511ec04ce1ba82294869691d03b61dde4ec443f60b2496d34b9a34b87f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=шестнадцать рублей
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-quantity-x-9`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 36bcdeccfe01fe9e5d986d42ec795cae172de0c4001bff959191ff1c1d0347f3
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:If the item needs to be in the nominative or inanimate accusative case, use the 
+originalSourceText=If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+shippedText=сорок один год
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=290344c55c22db717a5bf1d7fa6ac7024794035b23b1079a83cb8a9fe58903f9
+contentHash=ead90f0119bd544b8199f818c7a4b3d502850a583e85be600b0fe62de62f62a7
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10906,6 +12251,279 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u9-113`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 744aaebd583dad381d506bf4208c66d9aad1fd5b98486107d60d83291046f7b8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u9-114`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: be132d610d0ed90e6f4fb0a67a798ef88f7796c10c3470d366981e8a4d2e6ae9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different number in the same table.
+
+### AUTHORED_ENGLISH `en-u9-115`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3a9f6c78de2c10b790bfe5dcb56a0fedbdb31d26d2b16237b8cb197256e15498
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does the admitted record show the governed contrast?
+
+### AUTHORED_ENGLISH `en-u9-116`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7ed4bd34bd0f09ab44cb08db2be874acf60c2bc6fa36432cddff098c3651c27d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form matches the shown number?
+
+### AUTHORED_ENGLISH `en-u9-117`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b5a00d643441d9e493bf5c21d412761ef22448c7be0e4823f3e7ad2c9f64ac07
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u9-118`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: febdd5a39b0f2d8e26cc230416b9ee0f69693776969e2d1d033b688fa61db7d6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different teen.
+
+### AUTHORED_ENGLISH `en-u9-119`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f92f5b3b855928eb93910e651d0448d87c1d771d80513345c61c87cedfd52cf3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the following ten, not the teen.
+
+### AUTHORED_ENGLISH `en-u9-120`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4e76717143c7878cd8b816d2885b969cbdac267139a4de3d99da61fe91d64342
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the ten, not the teen.
+
+### AUTHORED_ENGLISH `en-u9-121`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 844e59a8f20630e74d927e178c089d2d65e599166fe9e9fca56e1db547bd982d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different ten.
+
+### AUTHORED_ENGLISH `en-u9-122`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 77ce6f03f56cdeed4f3f5fd0316f4ddf745007d8d63c8997c0b89c12bd0d4ee8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the teen, not the ten.
+
+### AUTHORED_ENGLISH `en-u9-123`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1f7c223c8ddc98d95778a012a8d15355e57f134f8b1f5f3c490e8415c336d6ab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is a different hundred.
+
+### AUTHORED_ENGLISH `en-u9-124`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 41c63a0af512a847f74b0202250485fe0a0967f1853e8215388e1a165588862e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the ten, not the hundred.
+
+### AUTHORED_ENGLISH `en-u9-125`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6ec880c0ea751ab8b8a4fb8caad3a7e7d950d63022ba4c1991625370d5c50cb4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the one-digit number, not the hundred.
+
+### AUTHORED_ENGLISH `en-u9-126`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 43eee71ca174d43be95a133b1d10d552dbb7b92a4239435b2af8ec245ad3f3ad
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the ten, not the composed number.
+
+### AUTHORED_ENGLISH `en-u9-127`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b46aa41f61b317b62569afd323f47bfce554b99b7ed70eaf08c9d7bb3588b708
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the hundred, not the composed number.
+
+### AUTHORED_ENGLISH `en-u9-128`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e898b8f3720b1c6468535591b03f522776a01d52577a0b53979916165681aeee
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is only the thousand, not the composed number.
+
+### AUTHORED_ENGLISH `en-u9-129`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c8bb044c16fbbad242d3f3479657371e819d5d01d95471a56f9365baa0635b5d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted form is the other thousands band.
+
+### AUTHORED_ENGLISH `en-u9-130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c4f3b5d6f1235e13df9ffee9cf6c00670f1f75c6fe58aebe1562ce3fb353aefa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is another admitted form in the same frozen line.
+
+### AUTHORED_ENGLISH `en-u9-131`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e87bf84a82c83e69920443806fe505d895bd1a77e342779ad2337b4927abeb5e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted form agrees with the shown word?
+
+### AUTHORED_ENGLISH `en-u9-132`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7ac354f80e243afb391a597d21cfd121948c6c8d723d0d57db128e835ed5a0ff
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the other admitted form of two.
+
+### AUTHORED_ENGLISH `en-u9-133`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3169177e265c00417ae32e197b528919b5418131db7dda53d95ed34dbed6dc23
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This admitted rule is the two-to-four line, not the rule for the shown line.
+
 ### AUTHORED_ENGLISH `en-u9-134`
 
 - Objectives: none
@@ -10914,10 +12532,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f9bc7baa10d3d486f13953bc65641b067aea171b2644d93462d25fecddeb870
+- Content hash: 2455e3e595e00ed40f39332d7146bda9f3e7b4728d66778543624648899b27f9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=This admitted rule is the five-and-more line, not the rule for the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-135`
 
@@ -10927,10 +12545,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eeff213050361cfd02da29b60b1fc892ec379fbc6ffa778e97e6352451401f38
+- Content hash: 599fc641942602507a5ca14eeb1ed11ae913baef8b03164fa81455119c35e8a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different number in the same table. The contrast is the shown number.
+text=Which admitted rule classifies the shown line?
 
 ### AUTHORED_ENGLISH `en-u9-136`
 
@@ -10940,10 +12558,10 @@ text=This admitted form is a different number in the same table. The contrast is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d28854abd56227904e610e863f8b1feadaa28997575597334a700dc7b37edcad
+- Content hash: a13631884f7030c025e31ce863dcfb58814e6da9f8cdb85a548c03eef43b1229
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer name the shown number from the same frozen table?
+text=This admitted rule is the one-item line, not the rule for the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-137`
 
@@ -10953,10 +12571,10 @@ text=Does the answer name the shown number from the same frozen table?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43bace2f9a0ce7d2403b56d3aac331a3f49aca8d103fb4796f9fda84afb5ffc7
+- Content hash: 40a01bfdba2bbaf97bd9f093882f5dab72895d0a03c78918e0b096c045e36f6d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form matches the shown number?
+text=This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-138`
 
@@ -10966,10 +12584,10 @@ text=Which admitted form matches the shown number?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e6903d459c8263edebf402c1d4d4a14ff193fc66887bc3793e249a029f4d4ac
+- Content hash: 2a7558a196dd962af4fc8996e93aa9a3d47348840faca0026283dba9b7dc109c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=This admitted rule is the two-to-four line.
 
 ### AUTHORED_ENGLISH `en-u9-139`
 
@@ -10979,10 +12597,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e236f94bce2a77aa0cd0812f9c98cdc9c5f1ed98e3716508337cd1188a91f7ef
+- Content hash: d1b4dd3d1f4a8f963fe6a8d00e1d5c9eeaf16a1809d74359314ad16633b38d98
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different teen. The contrast is the shown number.
+text=This admitted rule is the five-and-more line.
 
 ### AUTHORED_ENGLISH `en-u9-140`
 
@@ -10992,10 +12610,10 @@ text=This admitted form is a different teen. The contrast is the shown number.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82aa64b1adf75d6957ce2589675f7b7c3c93bb70613c784ee3bef0b97a80bc21
+- Content hash: c74d678c45415dd8f415f8bf5b9b7b806696fce74dbace3bcadd9b6f960cd296
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the following ten, not the teen. The contrast is the shown number.
+text=Which admitted rule applies to the shown line?
 
 ### AUTHORED_ENGLISH `en-u9-141`
 
@@ -11005,10 +12623,10 @@ text=This admitted form is the following ten, not the teen. The contrast is the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 828e24f81754d45c16e6f9d99686ef3cc6aee3635b1ba43eafa66c3ea866aaac
+- Content hash: c53b8c77887c92e2dcb54850d202b3c2008f8b979f59a42c5143e4a19aa246c8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the ten, not the teen. The contrast is the shown number.
+text=This admitted rule is the one-item line.
 
 ### AUTHORED_ENGLISH `en-u9-142`
 
@@ -11018,10 +12636,10 @@ text=This admitted form is the ten, not the teen. The contrast is the shown numb
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f66e53ebedca46abe3d0fb81e8f8422a89f19b3fd9c781c3bfad487bb7fefe9
+- Content hash: 75938d24f708e08e5a58ac0d37494665095c53f1e0abb41690302fd014ade26b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different ten. The contrast is the shown number.
+text=This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
 
 ### AUTHORED_ENGLISH `en-u9-143`
 
@@ -11031,10 +12649,10 @@ text=This admitted form is a different ten. The contrast is the shown number.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e54b30c183f00ecb70dcb2da0f58931fad6c4a44613b5c37c837f5130d6089d
+- Content hash: 3933efa71a8f87e8c3559a28d2479c35b977ce32198d58a8593a0e13927f2d7a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the teen, not the ten. The contrast is the shown number.
+text=This admitted sentence is the other scope in the frozen paragraph.
 
 ### AUTHORED_ENGLISH `en-u9-144`
 
@@ -11044,10 +12662,10 @@ text=This admitted form is the teen, not the ten. The contrast is the shown numb
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36d104317dcf419e01d8eae5269165b2e82ca2c9f959df59b2a67b01a1fef70b
+- Content hash: 75f99685294337160461390cbda3fddf3c1fa26091396a906315566be76094d6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is a different hundred. The contrast is the shown number.
+text=Which admitted scope sentence covers the shown line?
 
 ### AUTHORED_ENGLISH `en-u9-145`
 
@@ -11057,10 +12675,10 @@ text=This admitted form is a different hundred. The contrast is the shown number
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d03e9305707fd036b14283ec693e985fb0d1d6e6c8bb6d16d3bbcdcab9cb3dda
+- Content hash: 320705b7d72cd2e49f370b2f85a80362a8f78a2ac2c374336474af0f268cb8bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the ten, not the hundred. The contrast is the shown number.
+text=Admitted number and quantity rows
 
 ### AUTHORED_ENGLISH `en-u9-146`
 
@@ -11070,10 +12688,10 @@ text=This admitted form is the ten, not the hundred. The contrast is the shown n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 202cae7866ff2f7e3bb928e9fe4230dfe9f50ec16e7cb8dc373ca8f5c217a138
+- Content hash: c0c5a5428b00143fbad80ce47e5359285f4ad7a5aa3d11f2067628d470035680
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the one-digit number, not the hundred. The contrast is the shown number.
+text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u9-147`
 
@@ -11083,10 +12701,10 @@ text=This admitted form is the one-digit number, not the hundred. The contrast i
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e86dc0a9a18dc3fd1741a3a7e6857ea7ddbada81ae80a9a5b1838b8ec6fddd1
+- Content hash: 7f127e1fda604d54c7d1911b6d147c757a8dddbb83acce71f7c4d5e1e38d7a0e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the ten, not the composed number. The contrast is the shown number.
+text=Open Lesson 9 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u9-148`
 
@@ -11096,10 +12714,10 @@ text=This admitted form is only the ten, not the composed number. The contrast i
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e00e9584f6f455497278d04de526f0f3e171f49ac2ad4e0975805d55b0e4e92
+- Content hash: 3e60593dad66c1565f80071cb45763f9ef75fe496646852b046c8999c4b44783
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is only the hundred, not the composed pattern of the shown form.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u9-149`
 
@@ -11109,10 +12727,10 @@ text=This form is only the hundred, not the composed pattern of the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76eceac6368de941d2ded21ba09506813982f851834db4eeb856dc2b118a0dd5
+- Content hash: 8af508b548be08191c68669f9a6da1fbdad4a15751971fbac93622731ef6fc15
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer follow the counted pattern of the shown line?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u9-150`
 
@@ -11122,10 +12740,10 @@ text=Does the answer follow the counted pattern of the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f69fab337b885788f8fa8bd2ad3dec5c2344917e2ad24ecc31e72034e8b0dbcc
+- Content hash: 34f0320c17413e90ab501f34093bdc61a4eb61af3d3cbe8ecf215038352ac9a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is the composition of the shown form?
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u9-151`
 
@@ -11135,10 +12753,10 @@ text=Which admitted form is the composition of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a41c9c978b6801608b5888ed5439c087b080f22abc5b540eb0aad38943af84fa
+- Content hash: 006a4697fc9155263f7354031e51da6355ffdad0435db7f56bad99700d55ad58
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the hundred, not the composed number. The contrast is the shown number.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u9-152`
 
@@ -11148,10 +12766,10 @@ text=This admitted form is only the hundred, not the composed number. The contra
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6e4548daef666cace5dde0b7d319c430549643dd776d0e02f059e5f33d82322
+- Content hash: 92a549f3c4cd78b53836720f05d60b6e1ef6a367749880e8c11fe1ea74bb98ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is only the thousand, not the composed number. The contrast is the shown number.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u9-153`
 
@@ -11161,10 +12779,10 @@ text=This admitted form is only the thousand, not the composed number. The contr
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66a6d6486a37002cb6b791cfbc7c0593a28a9a7348fe8fc155bf2192b09536b1
+- Content hash: 362f70a9c905bb4a191a3327ffa75c19b8f1079a591effe879e6fd7e41e2cd51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted form is the other thousands band. The contrast is the shown number.
+text=Work Lesson 9 in your copy
 
 ### AUTHORED_ENGLISH `en-u9-154`
 
@@ -11174,10 +12792,10 @@ text=This admitted form is the other thousands band. The contrast is the shown n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77f5370b06c99dc5a171cb85b3c2910e6d74097420253e98eb7b4cb0f97e8184
+- Content hash: 15e68961b44190cde4c83ef9f7c202b4d61d5665b4656bcd92f73e597a315b79
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This line agrees with another word, not the shown word.
+text=Do Lesson 9 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
 
 ### AUTHORED_ENGLISH `en-u9-155`
 
@@ -11187,10 +12805,10 @@ text=This line agrees with another word, not the shown word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48d153d7bc36b12f831ed455ed74b1daadea04135c34c40dbae7231005b0eeb7
+- Content hash: da438a58137a73f26d342eb3012b07d2fa90d550c1ce4dc7f7d378580723bebe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the answer agree with the shown word?
+text=These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u9-156`
 
@@ -11200,10 +12818,10 @@ text=Does the answer agree with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f30dd7c6dc6ee1b04d9d32b146a0442e624ab8085089adb4822bd4c33f463a1f
+- Content hash: e23982416950d4f6fb5dcc3968b69dd92e9ba77d4eeb2ddfbb90fbc521cb2972
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line agrees with the shown word?
+text=Open Lesson 9 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u9-157`
 
@@ -11213,10 +12831,10 @@ text=Which admitted line agrees with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4540def9dfe974364dba364ea32d2a515fd83b1c41774c2ec1b776b8006839a1
+- Content hash: 0b6b6da600756aa0b1ecc8a0376204a1f6a1cff3692115a5ea458b29e29cfd28
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other agreement row of the same word, not the row of the shown word.
+text=Record Lesson 9 book work
 
 ### AUTHORED_ENGLISH `en-u9-158`
 
@@ -11226,10 +12844,10 @@ text=This form is the other agreement row of the same word, not the row of the s
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e6933bcf690145f39762e241dd06d501887fb17862c4c0a87a0ecfd690fd550
+- Content hash: 17a3e6dafcdbb55b05fcf6192d483596ee826ffb9a46ce5e6ec1f3b5839d64fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form agrees with the shown word?
+text=When you have done Lesson 9 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u9-159`
 
@@ -11239,358 +12857,7 @@ text=Which admitted form agrees with the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8dd873f572f980c4669c97e7fef61b017cd89e95dbdea93211aeb8d1fc67f54
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the two-to-four line, not the rule for the shown line.
-
-### AUTHORED_ENGLISH `en-u9-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7425c0decc5a3525811d7834b628cd12f01366084f41cfc82318fe01d5b422e9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the five-and-more line, not the rule for the shown line.
-
-### AUTHORED_ENGLISH `en-u9-161`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4f9392687ef812b05f7b38714423e31b8acd4946c27d839afe432314e8211e3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this admitted rule classify the shown line?
-
-### AUTHORED_ENGLISH `en-u9-162`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 541bf4ce1219c592c6896dc63dd44919e6a7672cf4b643ce29ac509e456287af
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted rule classifies the shown line?
-
-### AUTHORED_ENGLISH `en-u9-163`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8ed0a23269088e3be7f33f8a053967b4bfb16086e35f800780b7248a03cfb8b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the one-item line, not the rule for the shown line.
-
-### AUTHORED_ENGLISH `en-u9-164`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a22a667ae309661c60a51bf5a4322d80b21e513e5d3f2e7ba4f15ef93ce71978
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
-
-### AUTHORED_ENGLISH `en-u9-165`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d699e2314ddb50c75599b175ba13863af8f212b5e20e7a3314411e04723d5440
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the two-to-four line. The contrast is the shown line.
-
-### AUTHORED_ENGLISH `en-u9-166`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e62a81a6980648228b7b71ae3aae8da666e7a6e3275b6c1dcf2523b82d2a155
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the five-and-more line. The contrast is the shown line.
-
-### AUTHORED_ENGLISH `en-u9-167`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 601f28df14cdcd279976ff56548fc91f41e197e4425e3051d200c73f37bf509e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted rule applies to the shown line?
-
-### AUTHORED_ENGLISH `en-u9-168`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45c8079eee20c1b9456a8ac960e82cdf3a8953334406477b23cee59d6b28d1c2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the one-item line. The contrast is the shown line.
-
-### AUTHORED_ENGLISH `en-u9-169`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d1ef73662a170d2e72b7390ebc750c56ca816eeb93f73a34ed0bcaf4528d1d3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
-
-### AUTHORED_ENGLISH `en-u9-170`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 399c9dfc772ab9a8885e9824b4d6670d505d0412b1bbe12494a46ea1f27fdce5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted sentence is the other scope in the frozen paragraph. The contrast is the shown line.
-
-### AUTHORED_ENGLISH `en-u9-171`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6ebb87747dbc80535880dd5f267a85de63b9a702fac27aa2bed31b7303e2c30
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted scope sentence covers the shown line?
-
-### AUTHORED_ENGLISH `en-u9-172`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a12073a585cd7e036e268ea8ef8038b909b9b9465ea0b5e85be688ef7f04508a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted number and quantity rows
-
-### AUTHORED_ENGLISH `en-u9-173`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c8d8a0ca6d554faba5167f6e912515e85c62eeb3472d80d74767df934312c2f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u9-174`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9179d75a724896623f858240e5f1edb06e0c943ca53f244cc9c1dc80053f42c1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 9 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u9-175`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8d3b648c81804ad9bacb4b19da5cda9f91326bd98efe5c87fedaa2da7f9b9afe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u9-176`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0693ba28b5fc50a43aabde574978ef197aae34f7ab34b590c0918a70f9de2988
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u9-177`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59efc46607be715a05b88aa845f29f901c644f4dcdbac7e88769a4ddc85b361d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u9-178`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3220b59007bf11bcd33c2c32b477f91b292172b3a625e2b8323f68d47156a57
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u9-179`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d8e086a4af30eaf56c4cf4affb90737384b5ae4e199b1fd79220a36470cde10
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u9-180`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc8b14d4823209fd4221b116dbd2bb65b1c203ba620b29c20f2d8687c10aa459
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 9 in your copy
-
-### AUTHORED_ENGLISH `en-u9-181`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b20ea94892c82d484980602f4eb9a83a9a8b10f004f4d0604bee8f9c341daaac
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 9 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.
-
-### AUTHORED_ENGLISH `en-u9-182`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81b5a583145c34fa1da92b8e021533059d2094309bc6af605816dbf8aed9a205
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u9-183`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a1c448252b789590c0c203f19afd3fd95f6086d7dc5a68ea04f80feea80424f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 9 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u9-184`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24b2005c724bafa6c9f065b4f558414ebe47b0d234dbe39d9554cd2b697ff55b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 9 book work
-
-### AUTHORED_ENGLISH `en-u9-185`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c16cfe15ff66e00adc398f4987869d68756bbe4f1833caac8399022a67f4893
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 9 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u9-186`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc0e730a85608cd757068678a44aa00685f3a2dde641481e26659f03655c2149
+- Content hash: e42420a0ec60c2b5ffcd1881812ba9735ae6ecc3241d3ff155cfacedf3797980
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 9 work in your copy.
@@ -12281,23 +13548,45 @@ permitsAppUse=true
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-rem-r2`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-0`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-1`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-10`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-2`
 - `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-3`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-4`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-5`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-6`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-7`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-8`
+- `obj-u9-odindva` PROVENANCE `prov-u9-odindva-x-9`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-rem`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-rem-r0`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-0`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-1`
+- `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-10`
+- `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-11`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-2`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-3`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-4`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-5`
 - `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-6`
+- `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-7`
+- `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-8`
+- `obj-u9-pattern` PROVENANCE `prov-u9-pattern-x-9`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-rem`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-0`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-1`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-10`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-11`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-12`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-13`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-14`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-2`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-3`
 - `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-4`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-5`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-6`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-7`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-8`
+- `obj-u9-quantity` PROVENANCE `prov-u9-quantity-x-9`
 - `obj-u9-teens` PROVENANCE `prov-u9-teens-rem`
 - `obj-u9-teens` PROVENANCE `prov-u9-teens-rem-r0`
 - `obj-u9-tens` PROVENANCE `prov-u9-tens-rem`
