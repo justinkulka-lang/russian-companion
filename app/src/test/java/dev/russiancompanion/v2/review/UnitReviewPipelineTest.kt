@@ -222,9 +222,9 @@ class UnitReviewPipelineTest {
         assertEquals(prior, pending.mappingPackageDigest)
         assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
         assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("d13ea0fcbc14b2a4f76cc9b92a7fe4762bbe126ba8f4c20f2b2bd17f04717718", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("e715f8694bd195f3c32c8554e6501b1d286fc9d7ba3068926d175b6a396895db", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("ce049d52d81f3a4f51e67edf3c782856c9b651a8c253fb4f6acbf4b3f2eed69e", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687", V2Validator.unitContentReviewDigest(pack, 5))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),

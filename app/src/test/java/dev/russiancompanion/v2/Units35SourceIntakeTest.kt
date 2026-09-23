@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.V2AuthoredEnglishRecord
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.unit
@@ -55,7 +56,74 @@ class Units35SourceIntakeTest {
         assertNotEquals(buildUnitReviewPackage(pack, 4).contentReviewDigest, buildUnitReviewPackage(pack, 5).contentReviewDigest)
         assertNotEquals(buildUnitReviewPackage(pack, 3).reviewPackageDigest, buildUnitReviewPackage(pack, 4).reviewPackageDigest)
         assertTrue(buildUnitReviewPackage(pack, 3).records.any { it.type == "PROVENANCE" })
+        assertTrue(buildUnitReviewPackage(pack, 3).records.any { it.type == "AUTHORED_ENGLISH" && it.classification == "INDEPENDENTLY_AUTHORED_SCAFFOLD" })
+        assertTrue(buildUnitReviewPackage(pack, 1).records.none { it.type == "AUTHORED_ENGLISH" })
         assertTrue(buildUnitReviewPackage(pack, 3).unresolved.isEmpty())
+        assertTrue(pack.provenanceRecords.filter { it.sourceId == "src-openrussian-50e210c4" }.all { "/blob/" in it.sourceUrl && "/tree/" !in it.sourceUrl })
+    }
+
+    @Test
+    fun learnerGlossesAreDelimitedSensesAndEnglishClaimsFailClosed() {
+        val pack = pack()
+        listOf(
+            "prov-u3-gloss-чай" to "tea",
+            "prov-u3-gloss-хлеб" to "bread",
+            "prov-u4-pronoun-gloss-она" to "she",
+        ).forEach { (id, sense) ->
+            val record = pack.provenanceRecords.first { it.itemId == id }
+            assertEquals("sense selection", record.transformation)
+            assertEquals(sense, record.shippedText)
+            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            assertTrue(record.originalSourceText.contains(","))
+            assertTrue(record.shippedText != record.originalSourceText)
+        }
+        val learner = pack.units.filter { it.number in 3..5 }.flatMap { it.sessions }.flatMap { it.steps }
+            .joinToString("\n") { "${it.title}\n${it.body}\n${it.bookDirection.orEmpty()}" }
+        assertFalse(learner.contains("methinks"))
+        assertFalse(learner.contains("she, it, he"))
+        assertFalse(learner.contains("auscultate"))
+        val gender = pack.unit(3)!!.sessions.first { it.id == "u3-s-gender" }
+        val teaches = gender.steps.filter { it.kind == "TEACH" }
+        assertTrue(teaches.size >= 4)
+        assertTrue(teaches.first().body.length < 500)
+        assertFalse(teaches.first().body.contains("хлеб"))
+        assertFalse(teaches.first().body.contains("молоко"))
+        val kinds = gender.steps.map { it.kind }
+        kinds.forEachIndexed { index, kind ->
+            if (kind == "GUIDED") assertEquals("TEACH", kinds[index - 1])
+        }
+        val poisoned = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number != 3) unit else unit.copy(
+                    sessions = unit.sessions.map { session ->
+                        session.copy(
+                            steps = session.steps.map { step ->
+                                if (step.kind != "TEACH") step else step.copy(body = step.body + " Russian has ten genders.")
+                            },
+                        )
+                    },
+                )
+            },
+        )
+        assertTrue(V2Validator.validate(poisoned).errors.any { it.contains("English linguistic claim has no admitted source record") })
+        val smuggled = pack.copy(
+            authoredEnglishRecords = pack.authoredEnglishRecords + V2AuthoredEnglishRecord(
+                id = "en-smuggle",
+                unitNumber = 3,
+                text = "Russian has ten genders",
+                classification = "INDEPENDENTLY_AUTHORED_SCAFFOLD",
+            ),
+        )
+        assertTrue(V2Validator.validate(smuggled).errors.any { it.contains("independently authored English makes a linguistic claim") })
+        val unitThree = V2Validator.unitContentReviewDigest(pack, 3)
+        val edited = pack.copy(
+            authoredEnglishRecords = pack.authoredEnglishRecords.map { record ->
+                if (record.unitNumber != 3) record else record.copy(text = record.text + " Please continue.")
+            },
+        )
+        assertNotEquals(unitThree, V2Validator.unitContentReviewDigest(edited, 3))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), V2Validator.unitContentReviewDigest(edited, 1))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 2), V2Validator.unitContentReviewDigest(edited, 2))
     }
 
     @Test

@@ -672,8 +672,24 @@ class V2RebuildTest {
         val still = advancementDecision(pack, unit, store.v2LearnerView())
         assertFalse(still.allowed)
         store.v2RecordAttempt("u1-i-р-not-p", "The Cyrillic letter Р", true, "2026-09-22T12:03")
+        val skipped = advancementDecision(pack, unit, store.v2LearnerView())
+        assertFalse(skipped.remaining.joinToString(), skipped.allowed)
+        assertTrue(skipped.remaining.any { it.startsWith("Demonstrate every check for ") })
+        unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            pack.items.filter { it.objectiveId == objective.id }.forEach { item ->
+                store.v2RecordAttempt(item.id, item.answer, true, "2026-09-22T12:04")
+            }
+        }
         val ready = advancementDecision(pack, unit, store.v2LearnerView())
         assertTrue(ready.remaining.joinToString(), ready.allowed)
+    }
+
+    @Test
+    fun advancementCannotSkipARequiredObjective() {
+        val pack = pack()
+        val store = LocalStore.openInMemory(context()).also { stores += it }
+        assertObjectiveSkipBlocks(pack, store, 3, "obj-u3-naming")
+        assertObjectiveSkipBlocks(pack, store, 5, "obj-u5-prepositional")
     }
 
     @Test
@@ -868,10 +884,10 @@ class V2RebuildTest {
         assertEquals(0, pack.ownedEditionMappings.size)
         assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
         assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("d13ea0fcbc14b2a4f76cc9b92a7fe4762bbe126ba8f4c20f2b2bd17f04717718", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("e715f8694bd195f3c32c8554e6501b1d286fc9d7ba3068926d175b6a396895db", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("ce049d52d81f3a4f51e67edf3c782856c9b651a8c253fb4f6acbf4b3f2eed69e", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("00fbc256c90b3021fb76c8cf325d663c3ea4372bb16a1e03b894e61303421203", V2Validator.contentReviewDigest(pack))
+        assertEquals("cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("f5857a7268eb71ff985151ed98f6d2d8054e429621ae18014fe13760752684b5", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -964,6 +980,30 @@ class V2RebuildTest {
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
         assertTrue(store.v2LearnerView().onboardingCompleted)
         assertTrue(File(repo(), "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt").readText().contains("MIGRATION_6_7"))
+    }
+
+    private fun assertObjectiveSkipBlocks(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, store: LocalStore, unitNumber: Int, skippedObjectiveId: String) {
+        val unit = pack.unit(unitNumber)!!
+        val skipped = unit.objectives.first { it.id == skippedObjectiveId }
+        val skippedItems = pack.items.filter { it.objectiveId == skipped.id }.map { it.id }.toSet()
+        unit.sessions.flatMap { it.steps }.filter { it.kind == "ORIENT" || it.kind == "TEACH" }.forEach {
+            store.v2CompleteStep(it.id, "2026-09-23T12:00")
+        }
+        store.v2AttestBook(unitNumber, "2026-09-23T12:01")
+        pack.items.filter { it.objectiveId in unit.objectives.map { objective -> objective.id } && it.id !in skippedItems }.forEach { item ->
+            store.v2RecordAttempt(item.id, item.answer, true, "2026-09-23T12:02")
+        }
+        val learner = store.v2LearnerView()
+        val correct = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct().count { it in learner.correctItemIds }
+        assertTrue("Unit $unitNumber recorded $correct checks", correct >= unit.advancement!!.minimumDistinctChecks)
+        val blocked = advancementDecision(pack, unit, learner)
+        assertFalse(blocked.remaining.joinToString(), blocked.allowed)
+        assertTrue(blocked.remaining.joinToString(), blocked.remaining.any { it.contains(skipped.title) })
+        pack.items.filter { it.id in skippedItems }.forEach { item ->
+            store.v2RecordAttempt(item.id, item.answer, true, "2026-09-23T12:03")
+        }
+        val ready = advancementDecision(pack, unit, store.v2LearnerView())
+        assertTrue(ready.remaining.joinToString(), ready.allowed)
     }
 
     private fun assertAtContentInset(tag: String) {

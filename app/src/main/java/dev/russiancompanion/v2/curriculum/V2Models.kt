@@ -77,6 +77,7 @@ internal data class V2CurriculumPack(
     val handwritingAssets: List<V2HandwritingAsset> = emptyList(),
     val ownedEditionMappings: List<V2OwnedEditionMapping> = emptyList(),
     val provenanceRecords: List<V2ProvenanceRecord> = emptyList(),
+    val authoredEnglishRecords: List<V2AuthoredEnglishRecord> = emptyList(),
     val letters: List<V2Letter>,
     val examples: List<V2Example> = emptyList(),
     val items: List<V2CheckItem>,
@@ -192,6 +193,14 @@ internal data class V2ProvenanceRecord(
     val reviewDate: String = "",
     val reviewedDigest: String = "",
     val audioAssetId: String? = null,
+)
+
+@Serializable
+internal data class V2AuthoredEnglishRecord(
+    val id: String,
+    val unitNumber: Int,
+    val text: String,
+    val classification: String,
 )
 
 @Serializable

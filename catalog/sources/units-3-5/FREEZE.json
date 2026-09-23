@@ -12,17 +12,20 @@
       "nouns.csv": {
         "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9",
         "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
-        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv"
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+        "path": "openrussian/nouns.csv"
       },
       "verbs.csv": {
         "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a",
         "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
-        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv"
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "path": "openrussian/verbs.csv"
       },
       "others.csv": {
         "gitBlob": "2f819ba39652fceab3afe39ff9ef2a69b0dbd49d",
         "sha256": "9f22a16b17fc9a564298112168b667fced11aafb254ccebf5b7544fc37cdaa92",
-        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv"
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv",
+        "path": "openrussian/others.csv"
       }
     },
     "rows": [
@@ -562,7 +565,8 @@
         "line": "идти\tидти'\tgo, walk\tgehen, kommen, folgen, fahren, abgehen, fuhren, vergehen, stattfinden, laufen, gezeigt werden, stehen, passen\timperfective\t-\tиди'\tиди'те\tшёл\tшла'\tшло'\tшли'\tиду'\tидёшь\tидёт\tидём\tидёте\tиду'т",
         "sha256": "fce9bac79ac02518ccd21a99ee96a7a98b5f3967f26904e00bc107beb7c475ac"
       }
-    ]
+    ],
+    "byteVerification": "Retained file bytes are checked against the recorded sha256 and git blob id. Every selected row line must occur as a full line in that file."
   },
   "wikibooks": {
     "licenseId": "CC BY-SA 4.0",
@@ -577,72 +581,113 @@
         "oldid": "4310736",
         "file": "wikibooks/gender-4310736.txt",
         "sha256": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
-        "bytes": 6499
+        "bytes": 6499,
+        "revisionFile": "wikibooks/gender-4310736.revision.json",
+        "mediawikiSha1": "23aa6b6c5bdfc5742b545459f5a2fe955025cfe7",
+        "parentid": 3551645,
+        "timestamp": "2023-07-22T18:29:18Z"
       },
       {
         "key": "pronouns",
         "oldid": "4585698",
         "file": "wikibooks/pronouns-4585698.txt",
         "sha256": "0e220e7623e9e04bbcc78f517f1b11c4788b97ec05e751e71d37fea3a0a93615",
-        "bytes": 9180
+        "bytes": 9180,
+        "revisionFile": "wikibooks/pronouns-4585698.revision.json",
+        "mediawikiSha1": "151596d7313d7f4644d876d2b300ff8dce7e8052",
+        "parentid": 4219765,
+        "timestamp": "2025-10-25T22:41:13Z"
       },
       {
         "key": "verbs",
         "oldid": "4233876",
         "file": "wikibooks/verbs-4233876.txt",
         "sha256": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
-        "bytes": 13603
+        "bytes": 13603,
+        "revisionFile": "wikibooks/verbs-4233876.revision.json",
+        "mediawikiSha1": "ead519a34f238de6a6bdd8c2473f719edc1e2105",
+        "parentid": 4219484,
+        "timestamp": "2023-01-31T14:28:09Z"
       },
       {
         "key": "cases",
         "oldid": "4195114",
         "file": "wikibooks/cases-4195114.txt",
         "sha256": "ed6e661353627ea6ec98bba7421fbd935dfe29d58f0b7e40e3c6ea3fe5b5cdc7",
-        "bytes": 14526
+        "bytes": 14526,
+        "revisionFile": "wikibooks/cases-4195114.revision.json",
+        "mediawikiSha1": "460c5b1498122f57faf0003ce2b7e6f12c89ac21",
+        "parentid": 4195080,
+        "timestamp": "2022-10-18T09:39:47Z"
       },
       {
         "key": "nominative",
         "oldid": "4213267",
         "file": "wikibooks/nominative-4213267.txt",
         "sha256": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
-        "bytes": 16965
+        "bytes": 16965,
+        "revisionFile": "wikibooks/nominative-4213267.revision.json",
+        "mediawikiSha1": "ce304b5c40a716af95c2b20d6b5cc5bf5dca0442",
+        "parentid": 3791762,
+        "timestamp": "2022-11-27T20:42:23Z"
       },
       {
         "key": "prepositional",
         "oldid": "4567336",
         "file": "wikibooks/prepositional-4567336.txt",
         "sha256": "efe46e6ed2de1d14ab9823467ecdd889b150e108aec5db1fd42f6416159cec35",
-        "bytes": 11110
+        "bytes": 11110,
+        "revisionFile": "wikibooks/prepositional-4567336.revision.json",
+        "mediawikiSha1": "a21668281bc34ff6a4139953875a9cb29c07b2c4",
+        "parentid": 4356336,
+        "timestamp": "2025-10-12T01:12:00Z"
       },
       {
         "key": "interrogative",
         "oldid": "4220316",
         "file": "wikibooks/interrogative-4220316.txt",
         "sha256": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291",
-        "bytes": 9941
+        "bytes": 9941,
+        "revisionFile": "wikibooks/interrogative-4220316.revision.json",
+        "mediawikiSha1": "9a80099839708fdd49c797efef5a0c8d8afb349b",
+        "parentid": 4220290,
+        "timestamp": "2022-12-17T16:44:40Z"
       },
       {
         "key": "prepositions",
         "oldid": "4446858",
         "file": "wikibooks/prepositions-4446858.txt",
         "sha256": "7d1b646efc992428060503b72870ac5088a837d1adbbb0d001a4963ea97a22d3",
-        "bytes": 6216
+        "bytes": 6216,
+        "revisionFile": "wikibooks/prepositions-4446858.revision.json",
+        "mediawikiSha1": "74cd6568ba9cae414227e9e3687a10cd1372334a",
+        "parentid": 4394389,
+        "timestamp": "2024-11-25T00:13:24Z"
       },
       {
         "key": "personal-pronouns",
         "oldid": "3598527",
         "file": "wikibooks/personal-pronouns-3598527.txt",
         "sha256": "58f8709942d5fc76188045276e7e5e2375b6be2e440fb82576ca78fb2df61e40",
-        "bytes": 2154
+        "bytes": 2154,
+        "revisionFile": "wikibooks/personal-pronouns-3598527.revision.json",
+        "mediawikiSha1": "de800561065f37fde57d6ebc6caa140f5b893624",
+        "parentid": 3478114,
+        "timestamp": "2019-11-19T07:18:22Z"
       },
       {
         "key": "copyrights",
         "oldid": "4622060",
         "file": "wikibooks/copyrights-4622060.txt",
         "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
-        "bytes": 10475
+        "bytes": 10475,
+        "revisionFile": "wikibooks/copyrights-4622060.revision.json",
+        "mediawikiSha1": "dbf362ec2b5eb1d35827938654d19c5b69280e5b",
+        "parentid": 4534940,
+        "timestamp": "2026-03-09T17:30:11Z"
       }
-    ]
+    ],
+    "revisionVerification": "Each snapshot's sha1 and size must match the retained MediaWiki revision record for its oldid."
   },
   "excluded": [
     {

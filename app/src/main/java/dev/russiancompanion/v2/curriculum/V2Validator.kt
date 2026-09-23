@@ -30,6 +30,7 @@ internal object V2Validator {
         validateAssetRecords(pack, errors)
         validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateProvenance(pack, errors)
+        validateAuthoredEnglish(pack, errors)
         validateReview(pack, errors)
         validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
@@ -201,7 +202,12 @@ internal object V2Validator {
             }),
             "units" to canonArr(pack.units.map(::canonicalUnit)),
         ).let { base ->
-            base.dropLast(1) + ",\"provenanceRecords\":" + canonArr(pack.provenanceRecords.sortedBy { it.itemId }.map(::canonicalProvenance)) + "}"
+            appendBoundRecords(
+                base,
+                pack.provenanceRecords.sortedBy { it.itemId },
+                pack.authoredEnglishRecords,
+                includeAuthored = true,
+            )
         }
     }
 
@@ -327,13 +333,31 @@ internal object V2Validator {
             }),
             "units" to canonArr(listOfNotNull(unit).map(::canonicalUnit)),
         ).let { base ->
-            val records = pack.provenanceRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.itemId }
-            if (records.isEmpty()) {
-                base
-            } else {
-                base.dropLast(1) + ",\"provenanceRecords\":" + canonArr(records.map(::canonicalProvenance)) + "}"
-            }
+            appendBoundRecords(
+                base,
+                pack.provenanceRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.itemId },
+                pack.authoredEnglishRecords.filter { it.unitNumber == unitNumber },
+                includeAuthored = pack.authoredEnglishRecords.any { it.unitNumber == unitNumber },
+            )
         }
+    }
+
+    private fun appendBoundRecords(
+        base: String,
+        provenance: List<V2ProvenanceRecord>,
+        authored: List<V2AuthoredEnglishRecord>,
+        includeAuthored: Boolean,
+    ): String {
+        var document = base
+        if (provenance.isNotEmpty()) {
+            document = document.dropLast(1) +
+                ",\"provenanceRecords\":" + canonArr(provenance.map(::canonicalProvenance)) + "}"
+        }
+        if (includeAuthored) {
+            document = document.dropLast(1) +
+                ",\"authoredEnglishRecords\":" + canonArr(authored.sortedBy { it.id }.map(::canonicalAuthored)) + "}"
+        }
+        return document
     }
 
     private fun canonicalProvenance(record: V2ProvenanceRecord): String {
@@ -356,6 +380,15 @@ internal object V2Validator {
             "sourceHash" to canonStr(record.sourceHash),
             "contentHash" to canonStr(record.contentHash),
             "audioAssetId" to canonStrOrNull(record.audioAssetId),
+        )
+    }
+
+    private fun canonicalAuthored(record: V2AuthoredEnglishRecord): String {
+        return canonObj(
+            "id" to canonStr(record.id),
+            "unitNumber" to canonNum(record.unitNumber),
+            "text" to canonStr(record.text),
+            "classification" to canonStr(record.classification),
         )
     }
 
@@ -1167,6 +1200,15 @@ internal object V2Validator {
             if (record.contentHash != sha256(record.shippedText) || record.sourceHash != sha256(record.originalSourceText)) {
                 errors += "Provenance ${record.itemId} source hash does not match the frozen record"
             }
+            if (record.transformation == "sense selection" && !isDelimitedSense(record.originalSourceText, record.shippedText)) {
+                errors += "Provenance ${record.itemId} sense selection is not a delimited source sense"
+            }
+            if (record.sourceId == "src-openrussian-50e210c4" && "/tree/" in record.sourceUrl) {
+                errors += "Provenance ${record.itemId} source URL is not an exact file link"
+            }
+            if (record.sourceId == "src-openrussian-50e210c4" && "/blob/" !in record.sourceUrl) {
+                errors += "Provenance ${record.itemId} source URL is not an exact file link"
+            }
             if (pack.sources.none { it.id == record.sourceId }) {
                 errors += "Provenance ${record.itemId} source does not resolve"
             }
@@ -1232,6 +1274,110 @@ internal object V2Validator {
         hosts += item.answer
         hosts += item.feedback
         hosts += item.options
+    }
+
+    private val LINGUISTIC_CLAIM = Regex(
+        "(?i)(\\brussian\\b.*\\b(has|have|is|are)\\b|\\b(has|have)\\b.*\\b(gender|genders|cases|tense)\\b|\\bten genders\\b|\\b\\d+\\s+genders\\b)",
+    )
+    private val GRAMMAR_TERM = Regex(
+        "(?i)\\b(genders?|cases?|tenses?|verbs?|nouns?|pronouns?|masculine|feminine|neuter|nominative|prepositional|indeclinable|declinable)\\b",
+    )
+
+    private fun isDelimitedSense(original: String, shipped: String): Boolean {
+        if (shipped.isBlank() || shipped == original) return false
+        val parts = original.split(Regex("\\s*[,;]\\s*")).map { it.trim() }.filter { it.isNotEmpty() }
+        return shipped in parts
+    }
+
+    private fun validateAuthoredEnglish(pack: V2CurriculumPack, errors: MutableList<String>) {
+        val seen = mutableSetOf<String>()
+        pack.authoredEnglishRecords.forEach { record ->
+            if (!seen.add(record.id)) {
+                errors += "Authored English ${record.id} is duplicated"
+            }
+            if (record.classification != "INDEPENDENTLY_AUTHORED_SCAFFOLD") {
+                errors += "Authored English ${record.id} classification is not independently authored"
+            }
+            if (record.text.isBlank()) {
+                errors += "Authored English ${record.id} is blank"
+            }
+            if (record.unitNumber !in 3..5) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-5 source intake"
+            }
+            if (CYRILLIC_REGION.containsMatchIn(record.text) ||
+                LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
+                (GRAMMAR_TERM.containsMatchIn(record.text) && '?' !in record.text)
+            ) {
+                errors += "independently authored English makes a linguistic claim"
+            }
+        }
+        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
+            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }
+            val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
+            val spans = shipped + scaffolds
+            val hosts = mutableListOf<String>()
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    hosts += step.title
+                    hosts += step.body
+                    step.bookDirection?.let { hosts += it }
+                    step.companionDirection?.let { hosts += it }
+                    step.exampleIds.forEach { id ->
+                        pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                    }
+                    step.itemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+                }
+            }
+            unit.objectives.forEach { objective ->
+                objective.exampleIds.forEach { id ->
+                    pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                }
+                objective.checkItemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+            }
+            hosts.forEach { host ->
+                val leftover = unboundLetters(host, spans)
+                if (leftover.isNotEmpty()) {
+                    errors += "English linguistic claim has no admitted source record: ${leftover.take(120)}"
+                }
+            }
+            val allowed = (shipped + scaffolds).toSet()
+            val itemIds = (unit.sessions.flatMap { it.steps }.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
+            itemIds.forEach { itemId ->
+                val item = pack.item(itemId) ?: return@forEach
+                (listOf(item.answer) + item.options).forEach { text ->
+                    if (text !in allowed) {
+                        errors += "English linguistic claim has no admitted source record: $text"
+                    }
+                }
+            }
+        }
+    }
+
+    private fun unboundLetters(host: String, spans: List<String>): String {
+        val covered = BooleanArray(host.length)
+        spans.filter { it.isNotEmpty() }.distinct().sortedByDescending { it.length }.forEach { span ->
+            var start = 0
+            while (start <= host.length - span.length) {
+                val index = host.indexOf(span, start)
+                if (index < 0) break
+                val end = index + span.length
+                if ((index until end).all { !covered[it] } && englishSpanBoundary(host, index, end)) {
+                    for (cursor in index until end) covered[cursor] = true
+                }
+                start = index + 1
+            }
+        }
+        return host.filterIndexed { index, char -> !covered[index] && char.isLetter() }
+    }
+
+    private fun englishSpanBoundary(host: String, index: Int, end: Int): Boolean {
+        val span = host.substring(index, end)
+        if (span.any { it.code > 127 }) return true
+        val before = if (index == 0) ' ' else host[index - 1]
+        val after = if (end == host.length) ' ' else host[end]
+        val startOk = !before.isLetter() || !span.first().isLetter()
+        val endOk = !after.isLetter() || !span.last().isLetter()
+        return startOk && endOk
     }
 
     private fun isShareAlikeLicense(license: String): Boolean {

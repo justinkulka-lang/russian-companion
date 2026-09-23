@@ -450,6 +450,9 @@ internal fun buildUnitReviewPackage(
             unresolved += "Provenance ${provenance.itemId} audio ${provenance.audioAssetId} cannot be resolved"
         }
     }
+    pack.authoredEnglishRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.id }.forEach { authored ->
+        add(authoredEnglishRecord(pack, authored))
+    }
     val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.distinct()
     letterIds.forEach { letterId ->
         val letter = pack.letter(letterId)
@@ -1304,6 +1307,26 @@ private fun provenanceRecord(
         rightsIds = rightsIds(pack, provenance.sourceId),
         classification = "",
         reviewStatus = provenance.reviewStatus,
+    )
+}
+
+private fun authoredEnglishRecord(
+    pack: V2CurriculumPack,
+    authored: dev.russiancompanion.v2.curriculum.V2AuthoredEnglishRecord,
+): Unit1ReviewRecord {
+    return record(
+        id = authored.id,
+        type = "AUTHORED_ENGLISH",
+        objectiveIds = emptyList(),
+        sessionIds = emptyList(),
+        content = listOf(
+            "classification=${authored.classification}",
+            "text=${authored.text}",
+        ).joinToString("\n"),
+        sourceId = "src-app-english-v2",
+        rightsIds = rightsIds(pack, "src-app-english-v2"),
+        classification = authored.classification,
+        reviewStatus = "PENDING_QUALIFIED_REVIEW",
     )
 }
 

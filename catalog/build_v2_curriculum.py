@@ -1542,6 +1542,7 @@ def build() -> dict:
         "handwritingAssets": [],
         "ownedEditionMappings": [],
         "provenanceRecords": proposed["provenance"],
+        "authoredEnglishRecords": proposed["authored"],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,
