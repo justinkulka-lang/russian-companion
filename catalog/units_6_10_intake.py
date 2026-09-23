@@ -552,7 +552,15 @@ class Lesson:
             if record["objectiveId"] == objective and record["shippedText"] == text
         ]
 
+    def _record(self, item_id: str) -> dict:
+        for record in self.builder.provenance:
+            if record["itemId"] == item_id:
+                return record
+        raise SystemExit(f"Missing provenance {item_id}")
+
     def _check(self, slug: str, objective: str, kind: str, index: int, check: dict, guided: bool) -> str:
+        from units_6_10_lessons import classify_relation, qualifying_overlap
+
         prompt = check["prompt"]
         shown = check["shown"]
         answer = check["answer"]
@@ -563,15 +571,38 @@ class Lesson:
         differences = ["", *[self.builder.say(self.number, difference) for _text, _rationale, difference in distractors]]
         why = self.builder.say(self.number, check["why"])
         item_id = f"u{self.number}-{'g' if guided else 'i'}-{slug}-{index}"
+        if not guided:
+            overlap = qualifying_overlap(shown, answer)
+            if overlap:
+                raise SystemExit(f"{item_id} qualifying check is {overlap}: {shown!r} -> {answer!r}")
+        cue_ids = self._ids(objective, shown)
         answer_ids = self._ids(objective, answer)
+        if not cue_ids:
+            raise SystemExit(f"{item_id} cue has no provenance: {shown!r}")
         if not answer_ids:
             raise SystemExit(f"{item_id} answer has no provenance: {answer!r}")
-        distractor_ids = [""]
+        distractor_choices = []
         for text, _rationale, _difference in distractors:
             ids = self._ids(objective, text)
             if not ids:
                 raise SystemExit(f"{item_id} distractor has no provenance: {text!r}")
-            distractor_ids.append(ids[0])
+            distractor_choices.append(ids)
+        relation = None
+        chosen = None
+        import itertools
+        for cue_id, answer_id, *distractor_pick in itertools.product(cue_ids, answer_ids, *distractor_choices):
+            cue_record = self._record(cue_id)
+            answer_record = self._record(answer_id)
+            distractor_records = [self._record(item) for item in distractor_pick]
+            kind_found = classify_relation(cue_record, answer_record, distractor_records)
+            if kind_found:
+                relation = kind_found
+                chosen = (cue_id, answer_id, distractor_pick)
+                break
+        if relation is None or chosen is None:
+            raise SystemExit(f"{item_id} has no governed relationship: {shown!r} -> {answer!r}")
+        cue_id, answer_id, distractor_pick = chosen
+        distractor_ids = ["", *distractor_pick]
         feedback = why
         if not str(answer).endswith((".", "?", "!")) and not feedback.endswith((".", "?", "!")):
             feedback += "."
@@ -591,15 +622,17 @@ class Lesson:
             rationales,
             {
                 "testedFeature": check["feature"],
-                "evidenceMode": check["mode"],
+                "evidenceMode": relation,
                 "contrastSetId": f"u{self.number}-{slug}-{index}",
                 "cueLanguage": check["cue"],
                 "independent": not guided,
-                "answerSourceIds": [answer_ids[0]],
+                "answerSourceIds": [answer_id],
                 "distractorSourceIds": distractor_ids,
                 "distractorDifference": differences,
                 "whyAnswerDemonstratesObjective": why,
                 "contrastMembers": options,
+                "relationKind": relation,
+                "relationParticipantIds": [cue_id, answer_id, *distractor_pick],
             },
         )
         return item_id

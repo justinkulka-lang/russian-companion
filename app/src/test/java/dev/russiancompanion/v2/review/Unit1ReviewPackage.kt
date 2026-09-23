@@ -1321,6 +1321,8 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
                 "distractorDifference=${assessment.distractorDifference.joinToString(" | ")}",
                 "whyAnswerDemonstratesObjective=${assessment.whyAnswerDemonstratesObjective}",
                 "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
+                "relationKind=${assessment.relationKind}",
+                "relationParticipantIds=${assessment.relationParticipantIds.joinToString(" | ")}",
             )
         }.joinToString("\n"),
         sourceId = item.sourceId,

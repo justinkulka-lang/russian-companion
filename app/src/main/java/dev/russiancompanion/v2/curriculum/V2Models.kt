@@ -249,6 +249,8 @@ internal data class V2Assessment(
     val distractorDifference: List<String>,
     val whyAnswerDemonstratesObjective: String,
     val contrastMembers: List<String>,
+    val relationKind: String = "",
+    val relationParticipantIds: List<String> = emptyList(),
 )
 
 @Serializable

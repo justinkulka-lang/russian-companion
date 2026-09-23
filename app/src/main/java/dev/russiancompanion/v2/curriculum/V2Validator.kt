@@ -480,6 +480,8 @@ internal object V2Validator {
         "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
         "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
         "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
+        "relationKind" to canonStr(assessment.relationKind),
+        "relationParticipantIds" to canonArr(assessment.relationParticipantIds.map(::canonStr)),
     )
 
     private fun canonNum(value: Int): String = value.toString()
@@ -798,29 +800,23 @@ internal object V2Validator {
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
     private val NUMBER_CUE = Regex("[0-9][0-9,~/\\.\\-]*")
-    private val EVIDENCE_TOKENS = mapOf(
-        "SAME_LEMMA_FORM" to "same word",
-        "RULE_CLASSIFICATION" to "shown line",
-        "FEATURE_LABEL" to "shown line",
-        "NUMBER_FORM" to "shown number",
-        "RULE_APPLICATION" to "shown rule",
-        "FEATURE_IN_LINE" to "shown line",
-        "COUNTED_PATTERN" to "pattern",
-        "AGREEMENT_PAIR" to "shown word",
+    private val RELATION_KINDS = setOf(
+        "SAME_LEMMA_DIFFERENT_FIELD",
+        "SAME_CONSTRUCTION_DIFFERENT_FORM",
+        "SAME_RULE_DIFFERENT_BOUNDARY",
+        "SOURCE_SUPPLIED_PAIR",
+        "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     )
-    private val UNRELATED_DIFFERENCE = listOf(
-        "different example",
-        "different object example",
-        "different possession",
-        "different word",
-        "belongs to a different word",
-        "other example",
-        "other row in the frozen table",
-        "another example",
-        "different line",
-        "other person row",
-        "different person",
-        "unrelated",
+    private val LEMMA_RECORD = Regex("^(nouns|adjectives|others)\\.csv:(.+)#([A-Za-z0-9_]+)$")
+    private val TOKEN = Regex("[0-9]+|[a-z\\u0430-\\u044f]+")
+    private val LATIN_LOOKALIKE = mapOf(
+        "e" to "\u0435",
+        "y" to "\u0443",
+        "a" to "\u0430",
+        "o" to "\u043e",
+        "p" to "\u0440",
+        "c" to "\u0441",
+        "x" to "\u0445",
     )
 
     internal fun isDirectEnglishMatch(item: V2CheckItem): Boolean {
@@ -832,9 +828,6 @@ internal object V2Validator {
         val cue = item.assessment?.cueLanguage
         return item.kind in GRAMMAR_ITEM_KINDS && !shownRussian && answerRussian && cue != "rule" && cue != "number"
     }
-
-    private fun isUnrelatedDifference(text: String): Boolean =
-        UNRELATED_DIFFERENCE.any { phrase -> text.contains(phrase, ignoreCase = true) }
 
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
@@ -868,6 +861,116 @@ internal object V2Validator {
         return assessment.independent && structureValid(pack, item).isEmpty()
     }
 
+    internal fun qualifyingOverlap(shown: String, answer: String): String? {
+        val shownTokens = governedTokens(shown)
+        val answerTokens = governedTokens(answer)
+        if (shownTokens.isNotEmpty() && shownTokens == answerTokens) return "repeats"
+        if (tokenSequenceContained(answerTokens, shownTokens)) return "answer-in-cue"
+        if (tokenSequenceContained(shownTokens, answerTokens)) return "cue-in-answer"
+        val foldedAnswer = foldGoverned(answer)
+        if (foldedAnswer.length == 1) {
+            val letter = LATIN_LOOKALIKE[foldedAnswer] ?: foldedAnswer
+            val foldedShown = foldGoverned(shown)
+            if (foldedAnswer in foldedShown || letter in foldedShown) return "answer-in-cue"
+        }
+        return null
+    }
+
+    private fun foldGoverned(text: String): String =
+        text.replace("\u0301", "").replace("\u0451", "\u0435").replace("\u0401", "\u0435").lowercase()
+
+    private fun governedTokens(text: String): List<String> =
+        TOKEN.findAll(foldGoverned(text)).map { it.value }.toList()
+
+    private fun tokenSequenceContained(small: List<String>, big: List<String>): Boolean {
+        if (small.isEmpty() || small.size >= big.size) return false
+        val width = small.size
+        return (0..big.size - width).any { index -> big.subList(index, index + width) == small }
+    }
+
+    private fun lemmaOf(record: V2ProvenanceRecord): Pair<String, String>? {
+        val match = LEMMA_RECORD.matchEntire(record.sourceRecordId) ?: return null
+        return "${match.groupValues[1]}:${match.groupValues[2]}" to match.groupValues[3]
+    }
+
+    private fun hasCyrillic(text: String): Boolean = text.any { it.code in 0x0400..0x04FF }
+
+    private fun classifyRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val group = listOf(cue, answer) + distractors
+        val parsed = group.map { lemmaOf(it) }
+        if (parsed.all { it != null }) {
+            val lemmas = parsed.map { it!!.first }.toSet()
+            val answerField = parsed[1]!!.second
+            if (lemmas.size == 1 && answerField != parsed[0]!!.second && parsed.drop(2).all { answerField != it!!.second }) {
+                return "SAME_LEMMA_DIFFERENT_FIELD"
+            }
+        }
+        if (
+            hasCyrillic(cue.shippedText) &&
+            !hasCyrillic(answer.shippedText) &&
+            distractors.all { !hasCyrillic(it.shippedText) } &&
+            group.map { it.sourceRecordId }.toSet().size == 1 &&
+            cue.shippedText != answer.shippedText
+        ) {
+            return "RULE_CLASSIFIES_SOURCE_EXAMPLE"
+        }
+        if (
+            cue.sourceRecordId.startsWith("numbers:") &&
+            cue.sourceRecordId == answer.sourceRecordId &&
+            distractors.isNotEmpty() &&
+            distractors.all { it.sourceRecordId.startsWith("numbers:") && it.sourceRecordId != cue.sourceRecordId }
+        ) {
+            return "SAME_RULE_DIFFERENT_BOUNDARY"
+        }
+        if (group.map { it.sourceRecordId }.toSet().size == 1 && cue.shippedText != answer.shippedText) {
+            return "SOURCE_SUPPLIED_PAIR"
+        }
+        val page = cue.sourceRecordId.substringBefore(":")
+        if (
+            cue.sourceRecordId == answer.sourceRecordId &&
+            "||" in cue.originalSourceText &&
+            distractors.all {
+                it.sourceRecordId.substringBefore(":") == page &&
+                    "||" in it.originalSourceText &&
+                    it.sourceRecordId != cue.sourceRecordId
+            }
+        ) {
+            return "SAME_CONSTRUCTION_DIFFERENT_FORM"
+        }
+        val answerLemma = lemmaOf(answer)
+        val distractorLemmas = distractors.map { lemmaOf(it) }
+        if (
+            answerLemma != null &&
+            distractorLemmas.isNotEmpty() &&
+            distractorLemmas.all { it != null } &&
+            distractorLemmas.all { it!!.first == answerLemma.first && it.second != answerLemma.second }
+        ) {
+            val original = foldGoverned(cue.originalSourceText)
+            val foldedAnswer = foldGoverned(answer.shippedText)
+            val foldedCue = foldGoverned(cue.shippedText)
+            if (foldedAnswer.isNotEmpty() && foldedAnswer in original && foldedCue in original && foldedCue != foldedAnswer) {
+                return "SAME_CONSTRUCTION_DIFFERENT_FORM"
+            }
+        }
+        if (
+            distractors.isNotEmpty() &&
+            distractors.all { it.sourceRecordId == answer.sourceRecordId } &&
+            answer.sourceRecordId != cue.sourceRecordId
+        ) {
+            val original = foldGoverned(cue.originalSourceText)
+            val foldedAnswer = foldGoverned(answer.shippedText)
+            val foldedCue = foldGoverned(cue.shippedText)
+            if (foldedAnswer.isNotEmpty() && foldedAnswer in original && foldedCue in original && foldedCue != foldedAnswer) {
+                return "SAME_CONSTRUCTION_DIFFERENT_FORM"
+            }
+        }
+        return null
+    }
+
     private fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
         val assessment = item.assessment
@@ -879,7 +982,7 @@ internal object V2Validator {
             return errors
         }
         if (assessment.testedFeature.isBlank()) errors += "Item ${item.id} has no tested feature"
-        if (assessment.evidenceMode !in EVIDENCE_TOKENS) {
+        if (assessment.relationKind !in RELATION_KINDS || assessment.evidenceMode != assessment.relationKind) {
             errors += "Item ${item.id} evidence mode ${assessment.evidenceMode} is not governed"
         }
         if (assessment.cueLanguage !in setOf("ru", "rule", "number")) {
@@ -890,18 +993,31 @@ internal object V2Validator {
         ) {
             errors += "Item ${item.id} answer rationale does not explain the governed distinction"
         }
-        val token = EVIDENCE_TOKENS[assessment.evidenceMode]
-        if (token != null && !assessment.whyAnswerDemonstratesObjective.contains(token, ignoreCase = true)) {
-            errors += "Item ${item.id} answer rationale does not explain the governed distinction"
-        }
         if (assessment.contrastMembers.toSet() != item.options.toSet()) {
             errors += "Item ${item.id} options are outside the governed contrast"
         }
+        val distractorCount = item.options.count { it != item.answer }
         if (assessment.distractorDifference.size != item.options.size ||
-            assessment.distractorSourceIds.size != item.options.size
+            assessment.distractorSourceIds.size != item.options.size ||
+            assessment.relationParticipantIds.size != distractorCount + 2
         ) {
             errors += "Item ${item.id} distractor metadata does not match the options"
         } else {
+            val participants = assessment.relationParticipantIds.map { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }
+            }
+            val cue = participants.firstOrNull()
+            val answerRecord = participants.getOrNull(1)
+            val shown = item.promptLetter.orEmpty()
+            if (cue == null || cue.shippedText != shown || cue.objectiveId != item.objectiveId) {
+                errors += "Item ${item.id} cue has no contrast provenance"
+            }
+            if (answerRecord == null || answerRecord.shippedText != item.answer || answerRecord.objectiveId != item.objectiveId ||
+                assessment.answerSourceIds != listOf(answerRecord.itemId)
+            ) {
+                errors += "Item ${item.id} answer has no contrast provenance"
+            }
+            var distractorIndex = 0
             item.options.forEachIndexed { index, option ->
                 val difference = assessment.distractorDifference[index]
                 val sourceItemId = assessment.distractorSourceIds[index]
@@ -910,23 +1026,30 @@ internal object V2Validator {
                         errors += "Item ${item.id} records distractor metadata for the answer"
                     }
                 } else {
-                    if (difference.isBlank() || isUnrelatedDifference(difference)) {
-                        errors += "Item ${item.id} distractor is unrelated to the governed feature"
-                    } else if (token != null && !difference.contains(token, ignoreCase = true)) {
+                    if (difference.isBlank()) {
                         errors += "Item ${item.id} distractor is unrelated to the governed feature"
                     }
-                    val provenance = pack.provenanceRecords.firstOrNull { it.itemId == sourceItemId }
-                    if (provenance == null || provenance.shippedText != option || provenance.objectiveId != item.objectiveId) {
-                        errors += "Item ${item.id} distractor has no contrast provenance"
+                    val expectedId = assessment.relationParticipantIds.getOrNull(distractorIndex + 2)
+                    val provenance = participants.getOrNull(distractorIndex + 2)
+                    distractorIndex += 1
+                    if (sourceItemId != expectedId || provenance == null || provenance.shippedText != option || provenance.objectiveId != item.objectiveId) {
+                        errors += "Item ${item.id} distractor is unrelated to the governed feature"
                     }
                 }
             }
+            if (errors.isEmpty() && cue != null && answerRecord != null) {
+                val distractorRecords = participants.drop(2).filterNotNull()
+                val actual = classifyRelation(cue, answerRecord, distractorRecords)
+                if (actual != assessment.relationKind) {
+                    errors += "Item ${item.id} distractor is unrelated to the governed feature"
+                }
+            }
         }
-        val answerProvenance = assessment.answerSourceIds.mapNotNull { id ->
-            pack.provenanceRecords.firstOrNull { it.itemId == id }
-        }
-        if (answerProvenance.none { it.shippedText == item.answer && it.objectiveId == item.objectiveId }) {
-            errors += "Item ${item.id} answer has no contrast provenance"
+        if (assessment.independent) {
+            val overlap = qualifyingOverlap(item.promptLetter.orEmpty(), item.answer)
+            if (overlap != null) {
+                errors += "Item ${item.id} qualifying check is $overlap"
+            }
         }
         if (isDirectEnglishMatch(item)) {
             errors += "Item ${item.id} can be answered by direct English-to-Russian matching"
@@ -937,26 +1060,6 @@ internal object V2Validator {
             "ru" -> if (!shownRussian) errors += "Item ${item.id} Russian cue has no Russian shown form"
             "number" -> if (!NUMBER_CUE.matches(shown)) errors += "Item ${item.id} number cue is not a shown number"
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
-        }
-        when (assessment.evidenceMode) {
-            "SAME_LEMMA_FORM", "FEATURE_IN_LINE", "COUNTED_PATTERN", "AGREEMENT_PAIR" -> {
-                if (!shownRussian || item.answer.none { it.code in 0x0400..0x04FF }) {
-                    errors += "Item ${item.id} does not contrast admitted Russian forms"
-                }
-            }
-            "RULE_CLASSIFICATION", "FEATURE_LABEL" -> {
-                if (!shownRussian) errors += "Item ${item.id} does not classify a Russian line"
-            }
-            "NUMBER_FORM" -> {
-                if (item.answer.none { it.code in 0x0400..0x04FF }) {
-                    errors += "Item ${item.id} number check has no admitted form"
-                }
-            }
-            "RULE_APPLICATION" -> {
-                if (item.answer.none { it.code in 0x0400..0x04FF }) {
-                    errors += "Item ${item.id} rule application has no admitted form"
-                }
-            }
         }
         return errors
     }

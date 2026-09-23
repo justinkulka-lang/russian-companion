@@ -145,6 +145,168 @@ class Units610InstructionalValidityTest {
     }
 
     @Test
+    fun anUnrelatedDistractorCarryingSameWordStillFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val unrelated = pack.provenanceRecords.first {
+            it.objectiveId == seed.objectiveId && it.shippedText == "собака"
+        }
+        val assessment = seed.assessment!!
+        val options = seed.options.map { if (it == seed.answer) it else unrelated.shippedText }
+        val participants = assessment.relationParticipantIds.toMutableList()
+        var distractorSlot = 0
+        options.forEachIndexed { index, option ->
+            if (option != seed.answer) {
+                participants[distractorSlot + 2] = unrelated.itemId
+                distractorSlot += 1
+            }
+        }
+        val swapped = seed.copy(
+            options = options,
+            distractorRationales = seed.distractorRationales.map { if (it.isEmpty()) it else "This contrast is the same word." },
+            assessment = assessment.copy(
+                contrastMembers = options,
+                evidenceMode = "SAME_LEMMA_DIFFERENT_FIELD",
+                relationKind = "SAME_LEMMA_DIFFERENT_FIELD",
+                relationParticipantIds = participants,
+                distractorSourceIds = assessment.distractorSourceIds.mapIndexed { index, id ->
+                    if (options[index] == seed.answer) id else unrelated.itemId
+                },
+                distractorDifference = assessment.distractorDifference.mapIndexed { index, difference ->
+                    if (options[index] == seed.answer) difference else "This contrast is the same word."
+                },
+                whyAnswerDemonstratesObjective = "Does the same word still explain this contrast?",
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, swapped), swapped))
+    }
+
+    @Test
+    fun aDifferentLemmaWithTheSameRelationLabelFails() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val otherLemma = pack.provenanceRecords.first {
+            it.objectiveId == seed.objectiveId && it.sourceRecordId.startsWith("adjectives.csv:твой#")
+        }
+        val assessment = seed.assessment!!
+        val bad = seed.copy(
+            options = listOf(seed.answer, otherLemma.shippedText),
+            distractorRationales = listOf("", "This contrast is the same word."),
+            assessment = assessment.copy(
+                evidenceMode = "SAME_LEMMA_DIFFERENT_FIELD",
+                relationKind = "SAME_LEMMA_DIFFERENT_FIELD",
+                contrastMembers = listOf(seed.answer, otherLemma.shippedText),
+                relationParticipantIds = listOf(assessment.relationParticipantIds[0], assessment.relationParticipantIds[1], otherLemma.itemId),
+                distractorSourceIds = listOf("", otherLemma.itemId),
+                distractorDifference = listOf("", "This contrast is the same word."),
+                whyAnswerDemonstratesObjective = "Does the same word still explain this contrast?",
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, bad), bad))
+    }
+
+    @Test
+    fun aShownLineContainingItsAnswerFailsAsQualifyingEvidence() {
+        assertEquals("answer-in-cue", V2Validator.qualifyingOverlap("Я хочу его котов", "его́"))
+        assertEquals("answer-in-cue", V2Validator.qualifyingOverlap("Я хочу его котов", "его"))
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-g-third-0" }
+        val assessment = seed.assessment!!
+        val cueId = assessment.relationParticipantIds[0]
+        val shown = "Я хочу его котов"
+        val mutated = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if (record.itemId == cueId) record.copy(shippedText = shown) else record
+            },
+        )
+        val bad = seed.copy(
+            promptLetter = shown,
+            assessment = assessment.copy(
+                independent = true,
+                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
+                distractorDifference = assessment.distractorDifference.map { difference ->
+                    if (difference.isEmpty()) difference else "$difference The contrast is the same word."
+                },
+            ),
+        )
+        assertFalse(V2Validator.featureValid(mutated, bad))
+    }
+
+    @Test
+    fun anAnswerSentenceSelectedByCueTokenFails() {
+        assertEquals("cue-in-answer", V2Validator.qualifyingOverlap("нет", "Нет рестора́нов"))
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u8-i-availability-2" }
+        val assessment = seed.assessment!!
+        val cueId = assessment.relationParticipantIds[0]
+        val answerId = assessment.relationParticipantIds[1]
+        val shown = "нет"
+        val answer = "Нет рестора́нов"
+        val mutated = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                when (record.itemId) {
+                    cueId -> record.copy(shippedText = shown)
+                    answerId -> record.copy(shippedText = answer)
+                    else -> record
+                }
+            },
+        )
+        val bad = seed.copy(
+            promptLetter = shown,
+            answer = answer,
+            options = listOf(answer, seed.options.first { it != seed.answer }),
+            assessment = assessment.copy(
+                evidenceMode = "SOURCE_SUPPLIED_PAIR",
+                relationKind = "SOURCE_SUPPLIED_PAIR",
+                contrastMembers = listOf(answer, seed.options.first { it != seed.answer }),
+                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
+                distractorDifference = listOf("", "The contrast is the same word."),
+            ),
+        )
+        assertFalse(V2Validator.featureValid(mutated, bad))
+    }
+
+    @Test
+    fun falsifiedRelationshipIdsFail() {
+        val pack = pack()
+        val seed = pack.items.first { it.assessment?.independent == true && it.id.startsWith("u6-i-") }
+        val foreign = pack.provenanceRecords.first { it.objectiveId.startsWith("obj-u9-") }
+        val assessment = seed.assessment!!
+        val falsified = seed.copy(
+            assessment = assessment.copy(
+                relationParticipantIds = listOf(foreign.itemId) + assessment.relationParticipantIds.drop(1),
+                whyAnswerDemonstratesObjective = "Does this rewritten rationale create a valid contrast?",
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, falsified), falsified))
+    }
+
+    @Test
+    fun changingProseRationaleCannotValidateAnInvalidContrast() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u6-i-possessive-1" }
+        val valid = seed.copy(
+            assessment = seed.assessment!!.copy(
+                whyAnswerDemonstratesObjective = "Is the governed contrast still the admitted one?",
+                distractorDifference = seed.assessment.distractorDifference.map { difference ->
+                    if (difference.isEmpty()) difference else "This row is a different admitted row."
+                },
+            ),
+        )
+        assertTrue(V2Validator.featureValid(replace(pack, valid), valid))
+        val invalid = valid.copy(
+            assessment = valid.assessment!!.copy(
+                relationParticipantIds = listOf("missing-provenance-id") + valid.assessment.relationParticipantIds.drop(1),
+                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
+                distractorDifference = valid.assessment.distractorDifference.map { difference ->
+                    if (difference.isEmpty()) difference else "The contrast is the same word."
+                },
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, invalid), invalid))
+    }
+
+    @Test
     fun aRationaleThatDoesNotExplainTheDistinctionFails() {
         val pack = pack()
         val seed = pack.items.first { it.id == "u6-i-possessive-1" }
@@ -221,11 +383,11 @@ class Units610InstructionalValidityTest {
             Boundary("COMPOUND_21", "двадцать один час", "1 -> nominative"),
             Boundary("HUNDREDS_COMPOSITION", "215", "две́сти пятна́дцать"),
             Boundary("THOUSANDS_COMPOSITION", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре"),
-            Boundary("ODIN_MASCULINE", "мальчик", "один мальчик"),
-            Boundary("ODIN_FEMININE", "девушка", "одна девушка"),
-            Boundary("ODIN_NEUTER", "животное", "одно животное"),
-            Boundary("ODIN_PLURAL", "джинсы", "одни джинсы"),
-            Boundary("DVA_DVE", "девушка", "две"),
+            Boundary("ODIN_MASCULINE", "мальчик", "один"),
+            Boundary("ODIN_FEMININE", "девушка", "одна"),
+            Boundary("ODIN_NEUTER", "животное", "одно"),
+            Boundary("ODIN_PLURAL", "джинсы", "одни"),
+            Boundary("DVA_DVE", "девушки", "две"),
         )
         val unit9 = pack.unit(9)!!
         val independent = unit9.objectives
