@@ -1,6 +1,8 @@
 # Unit 4 linguistic and owned-edition mapping packet
 
-This packet prepares review. It does not record a qualified review, an owned-edition mapping, or an install decision.
+This packet prepares review. It records an unsigned structural mapping proposal. It does not record a qualified review, an approved edition alignment, or an install decision.
+
+The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
 Unit 4 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 4 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
@@ -11,17 +13,22 @@ Unit 4 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 4 
 - Version: 2.0.0-dev (5)
 - Curriculum source commit: 5dde572d36895eeec24d1159898d9e3d3998a488
 - Unit content-review SHA-256: cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc
+- Mapping-package SHA-256: 3760c217663b5b3f037dd9f8d85a5e1a51c320861191d59a01ae6c2c9b4ee4ef
 - Pack content-review SHA-256: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
-- Review-package SHA-256: bb9fdeab79be44d60f249415c71b88cc85dd1bbbedd4c33bfbef6605dffffea8
-- Repository source SHA-256: 3449b7a61e780fd8736e9c8e10e2cd41d68d14439000b93b1831e9b05b3831e9
+- Review-package SHA-256: e512cc611230ce1602ae2934e33e2c7367299c6a1bb934426c85b58da5c7a865
+- Repository source SHA-256: 7c7c47ac0a462b2eee6257439ef1cb1599fb77c505504a79e55b2e200e91281b
 
-The unit content-review digest is what a reviewer of Unit 4 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
+`unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
-The pack content-review digest is the repository aggregate. It is not an approval of this unit, and it is not part of the review-package digest.
+`mappingPackageDigest` binds the proposed edition-mapping facts for Unit 4: edition identity, lesson, printed page range, topic description, observation source, ISBN observation state, and the pending disposition. Reviewer identity, qualification, date, notes, correction notes, and signature stay outside that digest.
 
-The review-package digest identifies this pending packet: ordered records, relationship hashes, workflow fields as they stand here, and every instructional edge.
+`packContentReviewDigest` is the repository aggregate of instructional curriculum. It is not an approval of this unit, and it is not part of the review-package digest.
 
-The repository source digest is the release-gate hash of repository inputs. Recording an approval later changes that repository hash. That change does not replace the signed content-review digest.
+`reviewPackageDigest` identifies this complete pending review package. It binds the ordered instructional records and the mapping-package digest. Changing a proposed page range or topic changes the mapping-package digest and therefore this package digest.
+
+`repositorySourceDigest` binds repository and release inputs. Recording an approval later changes that repository hash. That change does not replace the signed content-review digest or the mapping-package digest.
+
+The marker scan used by this package detects only a fixed list of known prohibited mapping-input markers. It is not comprehensive copyright detection and cannot recognize every copy or close paraphrase of protected material.
 
 ## Unit
 

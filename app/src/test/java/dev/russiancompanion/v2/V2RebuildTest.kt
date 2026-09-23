@@ -799,13 +799,7 @@ class V2RebuildTest {
                 ),
             ),
             admissions = source.admissions.copy(mappedPronunciationAudio = 1),
-            ownedEditionMappings = listOf(
-                V2OwnedEditionMapping(
-                    id = "map-owned-edition",
-                    unitNumber = 1,
-                    status = "PENDING_CURRICULUM_REVIEWER",
-                ),
-            ),
+            ownedEditionMappings = listOf(structuralMapping()),
         )
         val signed = V2Validator.unitContentReviewDigest(withRecords, 1)
         val activated = approveInstruction(withRecords).copy(
@@ -816,9 +810,7 @@ class V2RebuildTest {
                 }
             },
             ownedEditionMappings = listOf(
-                V2OwnedEditionMapping(
-                    id = "map-owned-edition",
-                    unitNumber = 1,
+                structuralMapping(
                     status = "APPROVED",
                     reviewer = "Pat Reviewer",
                     reviewerQualification = "Advanced Russian and curriculum review attested.",
@@ -861,6 +853,93 @@ class V2RebuildTest {
     }
 
     @Test
+    fun structuralMappingSafeguardsRejectIncompleteOrInventedRecords() {
+        val pack = pack()
+        assertEquals(0, pack.ownedEditionMappings.size)
+        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
+        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
+        assertEquals("94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("e46c57ebda8258f1afae78031f3a475dcc4f49803ae12299dd4b6b4872245781", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4", V2Validator.contentReviewDigest(pack))
+        val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
+        assertFalse(seed.contains("The New Penguin Russian Course"))
+        assertEquals(0, pack.admissions.penguinProseAssets)
+
+        val baseline = structuralMapping()
+        assertEquals(
+            V2Validator.unitContentReviewDigest(pack.copy(ownedEditionMappings = listOf(baseline)), 1),
+            V2Validator.unitContentReviewDigest(pack.copy(ownedEditionMappings = listOf(baseline.copy(status = "APPROVED"))), 1),
+        )
+        assertNotEquals(
+            V2Validator.unitContentReviewDigest(pack.copy(ownedEditionMappings = listOf(baseline)), 1),
+            V2Validator.unitContentReviewDigest(pack.copy(ownedEditionMappings = listOf(baseline.copy(printedPageEnd = 99))), 1),
+        )
+
+        val missingIdentity = V2Validator.validate(pack.copy(ownedEditionMappings = listOf(structuralMapping(editionTitle = null))))
+        assertTrue(missingIdentity.errors.joinToString("\n"), missingIdentity.errors.any { it.contains("missing edition identity") })
+
+        val inventedIsbn = V2Validator.validate(
+            pack.copy(ownedEditionMappings = listOf(structuralMapping(isbn = "9780140120417", isbnObservation = "UNRESOLVED"))),
+        )
+        assertTrue(inventedIsbn.errors.joinToString("\n"), inventedIsbn.errors.any { it.contains("invented ISBN") })
+
+        val blankPages = V2Validator.validate(
+            pack.copy(
+                ownedEditionMappings = listOf(
+                    structuralMapping(
+                        status = "APPROVED",
+                        reviewer = "Pat Reviewer",
+                        reviewerQualification = "Advanced Russian and curriculum review attested.",
+                        reviewedContentDigest = V2Validator.unitContentReviewDigest(pack, 1),
+                        printedPageStart = null,
+                        printedPageEnd = null,
+                    ),
+                ),
+            ),
+        )
+        assertTrue(blankPages.errors.joinToString("\n"), blankPages.errors.any { it.contains("blank page range") })
+
+        val unsigned = V2Validator.validate(
+            pack.copy(
+                ownedEditionMappings = listOf(
+                    structuralMapping(
+                        status = "APPROVED",
+                        reviewedContentDigest = V2Validator.unitContentReviewDigest(pack, 1),
+                    ),
+                ),
+            ),
+        )
+        assertTrue(unsigned.errors.joinToString("\n"), unsigned.errors.any { it.contains("without an identified qualified reviewer") })
+
+        val digestMismatch = V2Validator.validate(
+            pack.copy(
+                ownedEditionMappings = listOf(
+                    structuralMapping(
+                        status = "APPROVED",
+                        reviewer = "Pat Reviewer",
+                        reviewerQualification = "Advanced Russian and curriculum review attested.",
+                        reviewedContentDigest = "0".repeat(64),
+                    ),
+                ),
+            ),
+        )
+        assertTrue(digestMismatch.errors.joinToString("\n"), digestMismatch.errors.any { it.contains("does not match the unit content-review digest") })
+
+        val wrongLesson = V2Validator.validate(pack.copy(ownedEditionMappings = listOf(structuralMapping(proposedLessonNumber = 4))))
+        assertTrue(wrongLesson.errors.joinToString("\n"), wrongLesson.errors.any { it.contains("wrong unit or lesson") })
+
+        val redistributed = V2Validator.validate(
+            pack.copy(
+                sources = pack.sources.map { source ->
+                    if (source.id == pack.sources.first().id) source.copy(title = "The New Penguin Russian Course") else source
+                },
+            ),
+        )
+        assertTrue(redistributed.errors.joinToString("\n"), redistributed.errors.any { it.contains("not redistributable curriculum content") })
+    }
+
+    @Test
     fun noInternetPermissionIsDeclared() {
         val manifest = File(repo(), "app/src/main/AndroidManifest.xml").readText()
         assertFalse(manifest.contains("INTERNET"))
@@ -886,6 +965,39 @@ class V2RebuildTest {
             assertEquals("$tag visible left", unclipped.left, visible.left)
             assertTrue("$tag visible at ${visible.left}", visible.left >= V2ContentInset)
         }
+    }
+
+    private fun structuralMapping(
+        unitNumber: Int = 1,
+        status: String = "PENDING_CURRICULUM_REVIEWER",
+        reviewer: String? = null,
+        reviewerQualification: String? = null,
+        reviewedContentDigest: String? = null,
+        editionTitle: String? = "Fixture edition",
+        proposedLessonNumber: Int? = unitNumber,
+        printedPageStart: Int? = 1,
+        printedPageEnd: Int? = 11,
+        isbn: String? = "FIXTURE-ISBN",
+        isbnObservation: String = "OBSERVED",
+    ): V2OwnedEditionMapping {
+        return V2OwnedEditionMapping(
+            id = "map-owned-edition",
+            unitNumber = unitNumber,
+            status = status,
+            reviewer = reviewer,
+            reviewerQualification = reviewerQualification,
+            reviewedContentDigest = reviewedContentDigest,
+            editionTitle = editionTitle,
+            author = "Fixture author",
+            publisherImprint = "Fixture imprint",
+            proposedLessonNumber = proposedLessonNumber,
+            printedPageStart = printedPageStart,
+            printedPageEnd = printedPageEnd,
+            topicDescription = "Fixture topic",
+            observationSource = "Fixture observation",
+            isbn = isbn,
+            isbnObservation = isbnObservation,
+        )
     }
 
     private fun installedUnitOne(source: dev.russiancompanion.v2.curriculum.V2CurriculumPack): dev.russiancompanion.v2.curriculum.V2CurriculumPack {

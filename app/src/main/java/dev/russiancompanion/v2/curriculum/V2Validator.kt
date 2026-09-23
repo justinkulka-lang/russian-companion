@@ -28,6 +28,7 @@ internal object V2Validator {
             errors += "handwritingAssets does not match governed handwriting records"
         }
         validateAssetRecords(pack, errors)
+        validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateReview(pack, errors)
         validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
@@ -67,7 +68,10 @@ internal object V2Validator {
      * is repository and release integrity. A unit reviewer does not sign it.
      * Workflow fields stay outside the document: review status, reviewer
      * signature, reviewed digest, mapping approval status, install state, and
-     * readiness.
+     * readiness. Structural edition identity, proposed lesson, printed page
+     * range, topic description, and ISBN observation are inside a mapping
+     * record when one exists. Approval status and the reviewer signature on
+     * that record stay outside.
      */
     internal fun contentReviewDigest(pack: V2CurriculumPack): String = sha256(canonicalInstructionalDocument(pack))
 
@@ -90,6 +94,16 @@ internal object V2Validator {
     internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
 
     internal const val INSTRUCTIONAL_DIGEST_SCHEMA = CONTENT_REVIEW_DIGEST_SCHEMA
+
+    private val ISBN_OBSERVATIONS = setOf("UNRESOLVED", "OBSERVED")
+
+    private val MAPPING_STATUSES = setOf("PENDING_CURRICULUM_REVIEWER", "APPROVED", "REJECTED")
+
+    private val REDISTRIBUTED_MAPPING_MARKERS = listOf(
+        "the new penguin russian course",
+        "penguin_edition_mapping_input",
+        "mapping input v1",
+    )
 
     private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
         return canonObj(
@@ -132,12 +146,7 @@ internal object V2Validator {
                     "letterId" to canonStr(asset.letterId),
                 )
             }),
-            "ownedEditionMappings" to canonArr(pack.ownedEditionMappings.map { mapping ->
-                canonObj(
-                    "id" to canonStr(mapping.id),
-                    "unitNumber" to canonNum(mapping.unitNumber),
-                )
-            }),
+            "ownedEditionMappings" to canonArr(pack.ownedEditionMappings.map(::canonicalMapping)),
             "letters" to canonArr(pack.letters.map { letter ->
                 canonObj(
                     "id" to canonStr(letter.id),
@@ -261,12 +270,7 @@ internal object V2Validator {
                     "letterId" to canonStr(asset.letterId),
                 )
             }),
-            "ownedEditionMappings" to canonArr(mappings.map { mapping ->
-                canonObj(
-                    "id" to canonStr(mapping.id),
-                    "unitNumber" to canonNum(mapping.unitNumber),
-                )
-            }),
+            "ownedEditionMappings" to canonArr(mappings.map(::canonicalMapping)),
             "letters" to canonArr(letters.map { letter ->
                 canonObj(
                     "id" to canonStr(letter.id),
@@ -319,6 +323,23 @@ internal object V2Validator {
                 )
             }),
             "units" to canonArr(listOfNotNull(unit).map(::canonicalUnit)),
+        )
+    }
+
+    private fun canonicalMapping(mapping: V2OwnedEditionMapping): String {
+        return canonObj(
+            "id" to canonStr(mapping.id),
+            "unitNumber" to canonNum(mapping.unitNumber),
+            "editionTitle" to canonStrOrNull(mapping.editionTitle),
+            "author" to canonStrOrNull(mapping.author),
+            "publisherImprint" to canonStrOrNull(mapping.publisherImprint),
+            "proposedLessonNumber" to canonNumOrNull(mapping.proposedLessonNumber),
+            "printedPageStart" to canonNumOrNull(mapping.printedPageStart),
+            "printedPageEnd" to canonNumOrNull(mapping.printedPageEnd),
+            "topicDescription" to canonStrOrNull(mapping.topicDescription),
+            "observationSource" to canonStrOrNull(mapping.observationSource),
+            "isbnObservation" to canonStr(mapping.isbnObservation),
+            "isbn" to canonStrOrNull(mapping.isbn),
         )
     }
 
@@ -916,13 +937,103 @@ internal object V2Validator {
             if (asset.unitNumber !in 1..30) errors += "Handwriting ${asset.id} is not related to a unit"
         }
         pack.ownedEditionMappings.forEach { mapping ->
-            if (mapping.unitNumber !in 1..30) {
-                errors += "Mapping ${mapping.id} is not related to a unit"
+            errors += mappingRecordErrors(pack, mapping)
+        }
+    }
+
+    private fun mappingRecordErrors(pack: V2CurriculumPack, mapping: V2OwnedEditionMapping): List<String> {
+        val errors = mutableListOf<String>()
+        val unit = pack.units.firstOrNull { it.number == mapping.unitNumber }
+        if (mapping.unitNumber !in 1..30 || unit == null) {
+            errors += "Mapping ${mapping.id} is not related to a unit"
+            errors += "Mapping ${mapping.id} is for the wrong unit or lesson"
+        }
+        if (mapping.proposedLessonNumber != null && mapping.proposedLessonNumber != mapping.unitNumber) {
+            errors += "Mapping ${mapping.id} is for the wrong unit or lesson"
+        }
+        if (unit != null && mapping.proposedLessonNumber != null && mapping.proposedLessonNumber != unit.penguinLesson) {
+            errors += "Mapping ${mapping.id} is for the wrong unit or lesson"
+        }
+        if (mapping.isbnObservation !in ISBN_OBSERVATIONS) {
+            errors += "Mapping ${mapping.id} has an unrecognized ISBN observation"
+        }
+        if (mapping.isbnObservation == "UNRESOLVED" && !mapping.isbn.isNullOrBlank()) {
+            errors += "Mapping ${mapping.id} records an invented ISBN"
+        }
+        if (mapping.isbnObservation == "OBSERVED" && mapping.isbn.isNullOrBlank()) {
+            errors += "Mapping ${mapping.id} records an invented ISBN"
+        }
+        if (mapping.status !in MAPPING_STATUSES) {
+            errors += "Mapping ${mapping.id} has unrecognized status ${mapping.status}"
+        }
+        val identityMissing = mapping.editionTitle.isNullOrBlank() ||
+            mapping.author.isNullOrBlank() ||
+            mapping.publisherImprint.isNullOrBlank()
+        if (identityMissing) {
+            errors += "Mapping ${mapping.id} is missing edition identity"
+        }
+        if (mapping.status == "APPROVED") {
+            if (!identityMissing && (mapping.isbnObservation != "OBSERVED" || mapping.isbn.isNullOrBlank())) {
+                errors += "Mapping ${mapping.id} is missing edition identity"
             }
-            if (mapping.status == "APPROVED" && unitReview(pack, mapping.unitNumber)?.status != "APPROVED") {
+            if (mapping.printedPageStart == null || mapping.printedPageEnd == null || mapping.printedPageStart > mapping.printedPageEnd) {
+                errors += "Mapping ${mapping.id} approves a blank page range"
+            }
+            if (mapping.reviewer.isNullOrBlank() || mapping.reviewerQualification.isNullOrBlank()) {
+                errors += "Mapping ${mapping.id} is APPROVED without an identified qualified reviewer"
+            }
+            if (mapping.proposedLessonNumber == null || mapping.proposedLessonNumber != mapping.unitNumber) {
+                errors += "Mapping ${mapping.id} is for the wrong unit or lesson"
+            }
+            if (unit != null && mapping.reviewedContentDigest != unitContentReviewDigest(pack, mapping.unitNumber)) {
+                errors += "Mapping ${mapping.id} reviewed content digest does not match the unit content-review digest"
+            }
+            if (unitReview(pack, mapping.unitNumber)?.status != "APPROVED") {
                 errors += "Mapping ${mapping.id} is APPROVED without an approved linguistic review"
             }
         }
+        return errors.distinct()
+    }
+
+    private fun validateMappingInputStaysOutOfCurriculum(pack: V2CurriculumPack, errors: MutableList<String>) {
+        pack.sources.forEach { source ->
+            if (isRedistributedMappingInput(source.id, source.title, source.license, source.attribution, source.modification)) {
+                errors += "Mapping input is not redistributable curriculum content (${source.id})"
+            }
+        }
+        pack.examples.forEach { example ->
+            if (isRedistributedMappingInput(example.id, example.display, example.note, example.sourceId)) {
+                errors += "Mapping input is not redistributable curriculum content (${example.id})"
+            }
+        }
+        pack.items.forEach { item ->
+            if (isRedistributedMappingInput(item.id, item.prompt, item.answer, item.feedback, item.sourceId)) {
+                errors += "Mapping input is not redistributable curriculum content (${item.id})"
+            }
+        }
+        pack.references.forEach { reference ->
+            if (isRedistributedMappingInput(reference.id, reference.title, reference.summary, reference.detail, reference.sourceId)) {
+                errors += "Mapping input is not redistributable curriculum content (${reference.id})"
+            }
+        }
+        pack.units.forEach { unit ->
+            val parts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    parts += step.body
+                    parts += step.title
+                    step.bookDirection?.let { parts += it }
+                }
+            }
+            if (isRedistributedMappingInput(*parts.toTypedArray())) {
+                errors += "Mapping input is not redistributable curriculum content (unit ${unit.number})"
+            }
+        }
+    }
+
+    private fun isRedistributedMappingInput(vararg parts: String?): Boolean {
+        val text = parts.filterNotNull().joinToString(" ").lowercase()
+        return REDISTRIBUTED_MAPPING_MARKERS.any { text.contains(it) }
     }
 
     private fun pronunciationAudioResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean {
@@ -952,9 +1063,7 @@ internal object V2Validator {
         val mapping = pack.ownedEditionMappings.firstOrNull { it.id == review.curriculumMappingId } ?: return false
         return mapping.unitNumber == unit.number &&
             mapping.status == "APPROVED" &&
-            !mapping.reviewer.isNullOrBlank() &&
-            !mapping.reviewerQualification.isNullOrBlank() &&
-            mapping.reviewedContentDigest == unitContentReviewDigest(pack, unit.number)
+            mappingRecordErrors(pack, mapping).isEmpty()
     }
 
     private fun letterAudioResolves(pack: V2CurriculumPack, letter: V2Letter): Boolean {

@@ -68,8 +68,26 @@ class UnitReviewPipelineTest {
         parseTsv(files2.getValue(reviewWorksheetName(2))).drop(1).forEach { row ->
             (10 until row.size).forEach { index -> assertEquals("", row[index]) }
         }
-        parseTsv(files2.getValue(reviewMappingName(2))).drop(1).forEach { row ->
-            (3 until row.size).forEach { index -> assertEquals("", row[index]) }
+        val unit2Mapping = parseTsv(files2.getValue(reviewMappingName(2)))
+        val unit2MappingHeader = unit2Mapping.first()
+        unit2Mapping.drop(1).forEach { row ->
+            listOf(
+                "isbn",
+                "owned_copy_verified",
+                "variance_conflict",
+                "reviewer_notes",
+                "reviewer_identity",
+                "review_date",
+                "reviewed_version_digest",
+                "reviewer_qualification",
+            ).forEach { column ->
+                assertEquals(column, "", row[unit2MappingHeader.indexOf(column)])
+            }
+            assertEquals("Lesson 2", row[unit2MappingHeader.indexOf("corresponding_lesson")])
+            assertEquals("12-23", row[unit2MappingHeader.indexOf("corresponding_pages")])
+            assertEquals("PENDING_CURRICULUM_REVIEWER", row[unit2MappingHeader.indexOf("alignment_disposition")])
+            assertEquals("map-pending-unit-2", row[unit2MappingHeader.indexOf("mapping_record_id")])
+            assertEquals(mappingPackageDigest(governedMappingFacts(2)), row[unit2MappingHeader.indexOf("mapping_package_digest")])
         }
     }
 
@@ -193,6 +211,89 @@ class UnitReviewPipelineTest {
         )
         assertNotEquals(unitOne, V2Validator.unitContentReviewDigest(shared, 1))
         assertNotEquals(unitTwo, V2Validator.unitContentReviewDigest(shared, 2))
+    }
+
+    @Test
+    fun mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields() {
+        val pack = pack()
+        val facts = governedMappingFacts(1)
+        val prior = mappingPackageDigest(facts)
+        val pending = buildUnitReviewPackage(pack, 1)
+        assertEquals(prior, pending.mappingPackageDigest)
+        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
+        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
+        assertEquals("94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("e46c57ebda8258f1afae78031f3a475dcc4f49803ae12299dd4b6b4872245781", V2Validator.unitContentReviewDigest(pack, 5))
+        val mutations = listOf(
+            "lesson number" to facts.copy(proposedLessonNumber = 9),
+            "printed page start" to facts.copy(printedPageStart = 2),
+            "printed page end" to facts.copy(printedPageEnd = 12),
+            "edition title" to facts.copy(editionTitle = facts.editionTitle + " x"),
+            "author" to facts.copy(author = facts.author + " x"),
+            "publisher" to facts.copy(publisherImprint = facts.publisherImprint + " x"),
+            "topic description" to facts.copy(topicDescription = facts.topicDescription + " x"),
+            "observation source" to facts.copy(observationSource = facts.observationSource + " x"),
+            "ISBN observation state" to facts.copy(isbnObservation = "OBSERVED"),
+            "ISBN value" to facts.copy(isbn = "FIXTURE-ISBN"),
+        )
+        mutations.forEach { (label, mutated) ->
+            val mappingDigest = mappingPackageDigest(mutated)
+            val reviewDigest = buildUnitReviewPackage(pack, 1, mutated).reviewPackageDigest
+            assertNotEquals(label, prior, mappingDigest)
+            assertNotEquals(label, pending.reviewPackageDigest, reviewDigest)
+            assertEquals(label, pending.contentReviewDigest, buildUnitReviewPackage(pack, 1, mutated).contentReviewDigest)
+        }
+        assertNotEquals(prior, mappingPackageDigest(facts.copy(printedPageEnd = 99)))
+
+        val files = renderUnitReviewFiles(pack, 1).files
+        val worksheet = files.getValue(reviewMappingName(1))
+        val rows = parseTsv(worksheet)
+        val header = rows.first()
+        val identity = header.indexOf("reviewer_identity")
+        val qualification = header.indexOf("reviewer_qualification")
+        val date = header.indexOf("review_date")
+        val notes = header.indexOf("reviewer_notes")
+        val completedRows = rows.mapIndexed { index, row ->
+            if (index == 0) row else row.toMutableList().also { filled ->
+                filled[identity] = "Pat Reviewer"
+                filled[qualification] = "Advanced Russian and curriculum review attested."
+                filled[date] = "2026-09-23"
+                filled[notes] = "Reviewed against the owned copy."
+            }
+        }
+        val pendingFacts = mappingFactsFromRow(1, rows[1])
+        val completedFacts = mappingFactsFromRow(1, completedRows[1])
+        assertEquals(pendingFacts, completedFacts)
+        assertEquals(prior, mappingPackageDigest(pendingFacts))
+        assertEquals(prior, mappingPackageDigest(completedFacts))
+        assertEquals("", rows[1][identity])
+        assertEquals("", rows[1][qualification])
+        assertEquals("", rows[1][date])
+        assertEquals("", rows[1][notes])
+
+        val otherUnit = files + (reviewMappingName(1) to renderUnitReviewFiles(pack, 2).files.getValue(reviewMappingName(2)))
+        val swapped = validateUnitReviewFiles(pack, 1, otherUnit)
+        assertTrue(swapped.joinToString("\n"), swapped.any { it.contains("wrong unit or lesson") })
+
+        val changedPages = worksheet.replace("1-11", "1-12")
+        val invalidated = validateUnitReviewFiles(pack, 1, files + (reviewMappingName(1) to changedPages))
+        assertTrue(invalidated.joinToString("\n"), invalidated.any { it.contains("Mapping package digest does not match") })
+
+        val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
+            .directory(repo())
+            .redirectError(File("/dev/null"))
+            .start()
+            .let { process ->
+                val text = process.inputStream.bufferedReader().readText()
+                check(process.waitFor() == 0)
+                text
+            }
+        assertEquals("", listed.trim())
+        val curriculum = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
+        assertFalse(curriculum.contains("PENGUIN_EDITION_MAPPING_INPUT"))
+        assertFalse(curriculum.contains("The New Penguin Russian Course"))
+        assertTrue(files.getValue("REVIEWER_INSTRUCTIONS.md").contains("not comprehensive copyright detection"))
     }
 
     @Test

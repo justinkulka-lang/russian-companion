@@ -78,10 +78,29 @@ class Unit1ReviewPackageTest {
             assertEquals(16, row.size)
             (10 until row.size).forEach { index -> assertEquals("", row[index]) }
         }
-        val mapping = parseTsv(files.getValue(UNIT1_MAPPING_NAME))
-        mapping.drop(1).forEach { row ->
-            (3 until row.size).forEach { index -> assertEquals("", row[index]) }
+        val mappingRows = parseTsv(files.getValue(UNIT1_MAPPING_NAME))
+        val mappingHeader = mappingRows.first()
+        mappingRows.drop(1).forEach { row ->
+            listOf(
+                "isbn",
+                "owned_copy_verified",
+                "variance_conflict",
+                "reviewer_notes",
+                "reviewer_identity",
+                "review_date",
+                "reviewed_version_digest",
+                "reviewer_qualification",
+            ).forEach { column ->
+                assertEquals(column, "", row[mappingHeader.indexOf(column)])
+            }
+            assertEquals("PENDING_CURRICULUM_REVIEWER", row[mappingHeader.indexOf("alignment_disposition")])
+            assertEquals("Lesson 1", row[mappingHeader.indexOf("corresponding_lesson")])
+            assertEquals("1-11", row[mappingHeader.indexOf("corresponding_pages")])
+            assertEquals("UNRESOLVED", row[mappingHeader.indexOf("isbn_observation")])
+            assertEquals("map-pending-unit-1", row[mappingHeader.indexOf("mapping_record_id")])
+            assertEquals(64, row[mappingHeader.indexOf("mapping_package_digest")].length)
         }
+        assertFalse(files.getValue(UNIT1_PACKET_NAME).contains("The New Penguin Russian Course"))
         assertFalse(files.values.joinToString("\n").contains("Qualified Reviewer"))
         assertEquals("DEVELOPMENT", pack.unit(1)!!.installState)
     }
@@ -123,6 +142,18 @@ class Unit1ReviewPackageTest {
 
         val prose = files.getValue(UNIT1_PACKET_NAME) + "\nThe New Penguin Russian Course\n"
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_PACKET_NAME to prose)).any { it.contains("Penguin prose") })
+
+        val mapping = files.getValue(UNIT1_MAPPING_NAME)
+        val inventedIsbn = mapping.replace("\tUNRESOLVED\t\t\tLesson 1\t", "\tUNRESOLVED\t9780140120417\t\tLesson 1\t")
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MAPPING_NAME to inventedIsbn)).any { it.contains("invented ISBN") })
+        val wrongLesson = mapping.replace("Lesson 1", "Lesson 9")
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MAPPING_NAME to wrongLesson)).any { it.contains("wrong unit or lesson") })
+        val approvedBlankPages = mapping.replace("PENDING_CURRICULUM_REVIEWER", "APPROVED").replace("1-11", "")
+        val approvedErrors = validateUnit1ReviewFiles(pack, files + (UNIT1_MAPPING_NAME to approvedBlankPages))
+        assertTrue(approvedErrors.joinToString("\n"), approvedErrors.any { it.contains("not pending") || it.contains("blank page range") })
+        assertTrue(approvedErrors.any { it.contains("without an identified qualified reviewer") })
+        val redistributed = mapping + "\nPENGUIN_EDITION_MAPPING_INPUT.pdf\n"
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MAPPING_NAME to redistributed)).any { it.contains("known prohibited mapping-input marker") })
 
         val installed = manifest.replace("\"installState\": \"DEVELOPMENT\"", "\"installState\": \"INSTALLED\"")
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to installed)).any { it.contains("installed") })
