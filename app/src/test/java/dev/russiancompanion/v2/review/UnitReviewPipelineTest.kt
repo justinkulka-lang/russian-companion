@@ -95,11 +95,11 @@ class UnitReviewPipelineTest {
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            listOf(1, 2, 3, 4, 5).forEach { number ->
+            (1..10).forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
             }
         }
-        listOf(1, 2, 3, 4, 5).forEach { number ->
+        (1..10).forEach { number ->
             val dir = File(repo(), "review/unit-$number")
             val committed = reviewFileNames(number).associateWith { name -> File(dir, name).readText() }
             val errors = validateUnitReviewFiles(pack, number, committed)
@@ -314,7 +314,7 @@ class UnitReviewPipelineTest {
         val rejected = curriculumSourceCommitErrors(predating, root)
         assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("does not contain this revision's governed curriculum") })
         assertTrue(rejected.any { it.contains("Unit 2 content-review digest") })
-        listOf(1, 2, 3, 4, 5).forEach { number ->
+        (1..10).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
             assertTrue(manifest.contains(CURRICULUM_SOURCE_COMMIT))
             assertFalse(manifest.contains(predating))

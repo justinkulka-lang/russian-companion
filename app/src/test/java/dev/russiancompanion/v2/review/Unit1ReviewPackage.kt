@@ -193,6 +193,36 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "46-55",
         "Asking questions, the prepositional case, indeclinable nouns, and dialogue work",
     ),
+    StructuralMappingObservation(
+        6,
+        "Lesson 6",
+        "56-67",
+        "Possession, destinations and movement, the accusative, and personal-name orientation",
+    ),
+    StructuralMappingObservation(
+        7,
+        "Lesson 7",
+        "68-80",
+        "Adjectives, agreement, question and demonstrative forms, case agreement, and introductory adverbs",
+    ),
+    StructuralMappingObservation(
+        8,
+        "Lesson 8",
+        "81-91",
+        "Noun plurals, spelling rules, and availability",
+    ),
+    StructuralMappingObservation(
+        9,
+        "Lesson 9",
+        "92-106",
+        "Cardinal numbers, quantity-driven genitive, and neutral quantity practice",
+    ),
+    StructuralMappingObservation(
+        10,
+        "Lesson 10",
+        "107-121",
+        "Possession and existence, genitive pronouns and prepositions, and genitive adjective agreement",
+    ),
 )
 
 internal data class Unit1ReviewRecord(

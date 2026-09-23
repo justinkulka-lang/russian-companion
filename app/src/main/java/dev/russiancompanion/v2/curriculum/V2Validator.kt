@@ -778,8 +778,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..5) {
-            errors += "Only Units 1-5 may be development content in this pack"
+        if (unit.number !in 1..10) {
+            errors += "Only Units 1-10 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -1222,8 +1222,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..5) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-5 source intake"
+            if (record.unitNumber !in 3..10) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-10 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -1301,8 +1301,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..5) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-5 source intake"
+            if (record.unitNumber !in 3..10) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-10 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||

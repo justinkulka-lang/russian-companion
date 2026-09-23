@@ -1,0 +1,14 @@
+Units 6–10 proposed curriculum notice
+
+This notice covers the proposed instructional records for Units 6, 7, 8, 9, and 10. It is not a review approval, a mapping approval, or a release authorization.
+
+Admitted text sources, frozen on 2026-09-23:
+
+- OpenRussian dictionary data by the Badestrand/russian-dictionary contributors. Git commit 50e210c4803237779cb562bc1abcea529066031c. License: Creative Commons Attribution-ShareAlike 4.0 International. License URL: https://creativecommons.org/licenses/by-sa/4.0/. The legal code is packaged in this app as cc-by-sa-4.0.txt. Units 6–10 add the frozen adjectives.csv bytes to the nouns, verbs, and others files already retained for Units 3–5.
+- Wikibooks Russian grammar excerpts by the Wikibooks contributors. Each used page is frozen by its oldid. Newly retained pages are Accusative case 4330404, Adjectives 4292379, Genitive case 4567338, and Numbers 4371358. Previously retained pages are reused at the same oldids, including Nominative 4213267, Prepositional case 4567336, Prepositions 4446858, Pronouns 4585698, Personal Pronouns 3598527, and Wikibooks:Copyrights 4622060. The copyrights page states the Creative Commons Attribution-ShareAlike 4.0 route. License URL: https://creativecommons.org/licenses/by-sa/4.0/.
+
+The selection, stress-mark formatting, English arrangement, and exercise structure are modifications of those sources. Learner-facing dictionary glosses are delimited sense selections; the full source field stays in the provenance record. Those selections are pending qualified review. The adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0.
+
+Application code, user data, and user recordings are outside that curriculum-data statement. No audio is included in this proposed curriculum. Where an exact admitted recording is not matched, listening and speaking stay with the book the learner owns. Counted money examples are frozen grammar illustrations, not a statement of a present-day amount. Short-form adjectives and an unsourced есть-omission rule are not taught here.
+
+Reviewer identity, qualification, date, and signature are blank. Qualified review is still pending.
