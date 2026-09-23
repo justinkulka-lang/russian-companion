@@ -25,9 +25,8 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
 /**
  * Commit that contains the curriculum, validators, and review pipeline.
  * Review packets are generated in a later commit, so this value is not HEAD.
- * The placeholder is replaced after that curriculum commit exists.
  */
-internal const val CURRICULUM_SOURCE_COMMIT = "PENDING_CURRICULUM_SOURCE_COMMIT"
+internal const val CURRICULUM_SOURCE_COMMIT = "fa77148957d35a381814c6477ef28d997aab628a"
 
 internal const val UNIT1_REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
 
