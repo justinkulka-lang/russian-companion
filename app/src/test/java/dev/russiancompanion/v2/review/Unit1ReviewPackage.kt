@@ -26,7 +26,7 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  * Commit that contains the curriculum, validators, and review pipeline.
  * Review packets are generated in a later commit, so this value is not HEAD.
  */
-internal const val CURRICULUM_SOURCE_COMMIT = "5dde572d36895eeec24d1159898d9e3d3998a488"
+internal const val CURRICULUM_SOURCE_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
 internal const val UNIT1_REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
 
@@ -439,7 +439,21 @@ internal fun buildUnitReviewPackage(
         val reference = pack.reference(referenceId) ?: return@forEach
         add(referenceRecord(pack, unit, reference))
     }
-    val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId }.distinct()
+    pack.provenanceRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.itemId }.forEach { provenance ->
+        add(provenanceRecord(pack, unit, provenance))
+        if (unit.objectives.none { it.id == provenance.objectiveId }) {
+            unresolved += "Provenance ${provenance.itemId} objective ${provenance.objectiveId} cannot be resolved"
+        } else {
+            addEdge(Unit1ReviewEdge(provenance.objectiveId, provenance.itemId, "PROVENANCE"))
+        }
+        if (provenance.audioAssetId != null && pack.audioAssets.none { it.id == provenance.audioAssetId }) {
+            unresolved += "Provenance ${provenance.itemId} audio ${provenance.audioAssetId} cannot be resolved"
+        }
+    }
+    pack.authoredEnglishRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.id }.forEach { authored ->
+        add(authoredEnglishRecord(pack, authored))
+    }
+    val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.distinct()
     letterIds.forEach { letterId ->
         val letter = pack.letter(letterId)
         if (letter == null) {
@@ -1256,6 +1270,63 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
         rightsIds = rightsIds(pack, item.sourceId),
         classification = "",
         reviewStatus = item.reviewStatus,
+    )
+}
+
+private fun provenanceRecord(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    provenance: dev.russiancompanion.v2.curriculum.V2ProvenanceRecord,
+): Unit1ReviewRecord {
+    return record(
+        id = provenance.itemId,
+        type = "PROVENANCE",
+        objectiveIds = listOf(provenance.objectiveId),
+        sessionIds = unit.sessions.filter { provenance.objectiveId in it.objectiveIds }.map { it.id },
+        content = listOf(
+            "recordType=${provenance.recordType}",
+            "sourceUrl=${provenance.sourceUrl}",
+            "sourceRevision=${provenance.sourceRevision}",
+            "sourceRecordId=${provenance.sourceRecordId}",
+            "originalSourceText=${provenance.originalSourceText}",
+            "shippedText=${provenance.shippedText}",
+            "transformation=${provenance.transformation}",
+            "licenseId=${provenance.licenseId}",
+            "licenseUrl=${provenance.licenseUrl}",
+            "attribution=${provenance.attribution}",
+            "shareAlikeTreatment=${provenance.shareAlikeTreatment}",
+            "sourceHash=${provenance.sourceHash}",
+            "contentHash=${provenance.contentHash}",
+            "audioAssetId=${provenance.audioAssetId.orEmpty()}",
+            "reviewerIdentity=${provenance.reviewerIdentity}",
+            "reviewerQualification=${provenance.reviewerQualification}",
+            "reviewDate=${provenance.reviewDate}",
+            "reviewedDigest=${provenance.reviewedDigest}",
+        ).joinToString("\n"),
+        sourceId = provenance.sourceId,
+        rightsIds = rightsIds(pack, provenance.sourceId),
+        classification = "",
+        reviewStatus = provenance.reviewStatus,
+    )
+}
+
+private fun authoredEnglishRecord(
+    pack: V2CurriculumPack,
+    authored: dev.russiancompanion.v2.curriculum.V2AuthoredEnglishRecord,
+): Unit1ReviewRecord {
+    return record(
+        id = authored.id,
+        type = "AUTHORED_ENGLISH",
+        objectiveIds = emptyList(),
+        sessionIds = emptyList(),
+        content = listOf(
+            "classification=${authored.classification}",
+            "text=${authored.text}",
+        ).joinToString("\n"),
+        sourceId = "src-app-english-v2",
+        rightsIds = rightsIds(pack, "src-app-english-v2"),
+        classification = authored.classification,
+        reviewStatus = "PENDING_QUALIFIED_REVIEW",
     )
 }
 

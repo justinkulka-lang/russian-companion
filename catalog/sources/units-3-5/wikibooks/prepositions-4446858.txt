@@ -1,0 +1,155 @@
+Prepositions are small words that precede a phrase and connect it to the rest of the sentence. Example of prepositions in English include 'He went '''''in''''' the shop', 'She spoke '''''about''''' him, 'They went '''''by''''' the shops', etc. Russian prepositions work just like their English counterparts, with one important difference: they all place the next phrase in one of the [[Russian/Grammar/Cases|six grammatical cases]]. As such, a good understanding of the Russian case system is needed to use prepositions. Some cases are used primarily or even entirely with prepositions, while others are used more in their main function than with prepositions- this page assumes familiarity of Russian cases and pronunciation.
+
+
+{{Russian}}
+==Prepositions==
+{| width="100%"
+|-
+| width="50%" |
+===Nominative===
+<small>Usually, nominative has no prepositions, but there are several cases where some scholars [http://www.gramota.ru/forum/klass/19329 believe] it has:</small>
+* (что) за - (what a) 
+* в - into, as a (plural denoting new state)
+
+===Accusative===
+* в(о) - into
+* на - onto
+* с(о) - approx
+* за - for
+* о - against (physical contact)
+* под - under
+* по - up to, as far as
+* про - on the topic of
+* сквозь - through, across
+* через - in, after, by
+
+===Genitive===
+* без - without
+* близ - near, close
+* вдоль - along
+* вместо - instead of
+* вне - outside of
+* внутри - inside, within
+* возле - by, near
+* вокруг - about, around
+*впереди - ahead of
+* для - for
+* до - until
+* из(о) - of, outside of, from
+* из-за - from behind
+* из-под - from below
+* кроме - except (for)
+* мимо - past (movement)
+* накануне - on the eve
+* около - around
+* от(о) - off, (away) from
+* после - after
+* (на)против - against, across from
+* ради - for the sake of
+* с(о) - (down) from
+* (по)среди - among
+* у - at, close to. Equivalent to the French "chez"
+
+The following prepositions are also used in genitive plural:
+
+*мало - few, little
+*много - a lot, many, much
+*несколько - a few, not many
+*ско́лько - how much? how many?
+
+===Dative===
+* к(о) - to, towards
+* по - many meanings in English; no direct translation
+* благодаря - thanks to
+* вопреки - contrary to, despite
+* наперекор - in defiance of (more intense than вопреки)
+* согласно - according to, in accordance with
+
+===Instrumental===
+* над - above, on top of
+* под - under, beneath
+* за - behind, before
+* п'''е'''ред - in front of
+* м'''е'''жду - in between
+*с(о) - with
+
+====Russian/Prepositions Instrumental quiz====
+[[Russian/Prepositions Instrumental quiz]]
+
+===Prepositional===
+* в(о) - in
+* на - on
+* при - in times of, in the presence of
+* о(б) - about (becomes обо before ''мне'', ''что'' and inflected forms of ''весь'')
+
+A rule of thumb to distinguish between в(о) and на: if one can inhabit or enter a space where something is happening, it is на and otherwise it is в(о). Note that there are many exceptions to this rule which must be learnt by rote.
+|}
+
+==Prepositions with 2 cases==
+Like in German, some prepositions can have 2 cases. The accusative (again, like in German) and the genitive cases are used to express movement: accusative pertains to destination, while genitive indicates the source of movement. The instrumental and the Prepositional are used to express staticness.
+
+===Accusative and Prepositional===
+* в or во - in, inside of
+* на - on, on top of, at
+
+===Accusative and instrumental===
+* за - for, behind
+* под - under
+
+
+==Prepositions with 3 cases==
+
+===Accusative, Genitive, Instrumental===
+* с - approximately (acc.), from (gen.), with (inst.)
+
+===Accusative, Prepositional, Dative===
+*по - to & including; apiece (acc.), upon, directly after (prep.), along, according to (dat.)
+
+==Examples==
+
+'''Nominative''':
+;Он пришёл к нам в гости. :He came to visit us. 
+
+'''Accusative''':
+;Книга упала на пол. :The book fell on the floor.
+;За Родину! :For the Motherland!
+
+'''Genitive''':
+;Четыре стула сто'''я'''т вокруг стола. :Four chairs are standing around the table.
+;Диван стоит у стен'''ы'''. :The couch is standing against the wall.
+;Он выходит из университéта. :He's coming out of the university.
+;Bозвращáюсь с рабóты. :I'm coming back from work.
+
+'''Dative''':
+;Ваза пододв'''и'''нута к кр'''а'''ю стола.  :The vase is moved towards the edge of the table.
+;Идý к роди́телям. :I'm going to my parents'.
+
+'''Instrumental''':
+;Лампа висит под потолк'''о'''м. :The lamp hangs under the ceiling.
+;Игорь идёт с другом. :Igor walks with a friend.
+;Он стоит за дверью. :He's standing behind the door.
+
+'''Prepositional''':
+;Стол и стулья стоят в центре комнаты. :The table and the chairs are in the middle of the room.
+;Ваза стоит на столе. :The vase stands on the table.
+;Книга и вещи лежат на столе. :The book and the things are lying on the table.
+;Телевизор стоит на столике. :The television is on the small table.
+;Картина висит на стене. :The painting hangs on the wall.
+
+'''Note''': using the preposition "в/во" when saying you're in a place, or going to a place, works in the majority of cases; however, some places require you to use "на" instead of "в/во". 
+
+'''For example''':
+;Pабóтаю '''в''' университéте. :I work at the university.
+'''but''':
+;Pабóтаю '''на''' факультéте (чего-нибудь). :I work at the faculty (of something).
+
+'''Similarly''':
+;Идý '''в''' бюро. :I'm going to the office.
+'''but''':
+;Идý '''на''' работу. :I'm going to work.
+
+And more. There is a limited number of those, but the use of "на" over that of "в/во" is mandatory in these cases.
+
+[[nl:Russisch/Voorzetsels]]
+[[es:Ruso/Gramática/Preposiciones]]
+{{BookCat}}

@@ -1,0 +1,111 @@
+This page explains the concept of gender in language. If you have studied another language that has gender, such as French or Spanish, and so are familiar with grammatical gender, feel free to skip this section.
+
+== What gender is ==
+'Gender' is a way of categorising nouns in a language. In most languages, words are described as being 'masculine' or 'feminine', and a lot of languages, including Russian, also have words described as 'neuter' (i.e., neutral, or no gender). In languages like French, the gender of a particular word is mostly arbitrary: there's nothing in the word ''peau'' ('skin') that tells us it's a ''feminine'' word, and so a word's gender is largely just something you have to learn. Fortunately, in Russian, gender ''can'' be predicted. Like most other things in Russian, the gender of a noun is denoted by what letters are on the end of the word:
+: Masculine nouns end in a consonant: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. Notice that '''й''' is a consonant. For example, '''кролик''' (''<small>KRO</small>-leek'', 'rabbit') ends in a consonant, '''-к''', so it is a ''masculine'' word.
+: Feminine nouns end in '''а''' or '''я'''. For example, '''собака''' (''so-<small>BA</small>-ka'', 'dog') ends in an '''-a''', so it is a ''feminine'' word.
+: Neuter nouns end in '''о''' or '''е'''. For example, '''письмо''' (''pees-<small>MO</small>'', 'letter') ends in an '''-o''', so it is grammatically ''neuter''.
+: Nouns ending in '''-ь''' can be either masculine or feminine. These just have to be memorised.
+So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. But why is this important?
+
+== What gender is for ==
+To learn Russian, you have to be able to know the gender of a noun when you use it. When you modify a noun with an [[Russian/Grammar/Adjectives|adjective]] ('nice dog', 'Red Square', 'old door'), the adjective changes its ending to match the gender of the word it's modifying. So although adjectives don't have an intrinsic gender, they have a number of different endings they can use to match the gender of their noun. The same is true for [[Russian/Possessive_Pronouns|possessive pronouns]]: the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different, as the gender of 'dog' ('''собака''', ''f'') and 'table' ('''стол''', ''m'') are different. [[Russian/Personal Pronouns|Personal pronouns]] (I, we, they, etc) don't usually have any inherent gender, instead taking on the gender of the thing they're referring to - though third-person singular pronouns ''do'' have specific genders: '''он''' ('he'), '''она''' ('she'), and '''оно''' ('it'). Gender also influences how you form the [[Russian/Grammar/Past tense|past tense]] of [[Russian/Grammar/Verbs|verbs]]: The 'wrote' in 'He wrote' ('''он написал''') and 'she wrote' ('''она написала''') are different, as the genders of the subject of the verb, 'he' and 'she', are different.
+
+Gender affects a lot of different parts of Russian grammar, and so is an important part of learning Russian. Fortunately, it's easy to learn, and easy to use.
+
+== Plurals ==
+Russian uses plurals in much the same way as English. The rules for forming the plural depend on which [[Russian/Grammar/Cases|grammatical case]] the word is in. However, the important thing here is that the rules are largely the same for all nouns, regardless of gender. This carries over into adjectives too: the endings they take on when their noun is plural, are independent  of gender. There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.
+
+As such, it is perhaps easiest to think of plurals as a 'fourth gender', and this is the way summary tables in this Wikibook will be presented. 
+
+== Examples ==
+This section lists some common words by their gender.
+
+=== Masculine ===
+:'''Стол''' - Table
+:'''Стул''' - Chair
+:'''Театр''' - Theatre
+:'''Музей''' - Museum
+:'''Мужчина''' - Man
+:'''Брат''' - Brother
+:'''Сын''' - Son
+:'''Отец''' - Father
+:'''Муж''' - Husband
+:'''Дядя''' - Uncle (though it has a 'feminine' ending and conjugates like a feminine noun, 'uncle' is 'inherently' masculine, and so '''дядя''' is too)
+:'''Поезд''' - Train
+:'''Самолёт''' - Plane
+:'''Дом''' - House/Home
+:'''Магазин''' - Shop
+:'''Город''' - City
+:'''Кролик''' - Rabbit
+:'''Конь''' - Horse (An adult male horse)
+
+=== Feminine ===
+:'''Лошадь''' - Mare (An adult female horse)
+:'''Книга''' - Book
+:'''Машина''' - Car
+:'''Гитара''' - Guitar
+:'''Россия''' - Russia
+:'''Англия''' - England
+:'''Франция''' - France (Note that countries often end in '''-ия''', which makes them decline in unusual ways)
+:'''Женщина''' - Woman
+:'''Сестра''' - Sister
+:'''Дочь''' - Daughter
+:'''Мать''' - Mother
+:'''Жена''' - Wife
+:'''Тётя''' - Aunt
+:'''Весна''' - Spring
+:'''Земля''' - Earth
+:'''Дверь''' - Door
+:'''Мебель''' - Furniture
+:'''Жизнь''' - Life
+:'''Тетрадь''' - Notebook
+
+=== Neuter ===
+:'''Солнце''' - Sun
+:'''Небо''' - Sky
+:'''Окно''' - Window
+:'''Письмо''' - Letter
+:'''Лето''' - Summer
+:'''Золото''' - Gold
+:'''Молоко''' - Milk
+:'''Мясо''' - Meat
+:'''Тело''' - Body
+:'''Равновесие''' - Balance
+:'''Кресло''' - Armchair
+:'''Море''' - Sea
+:'''Платье''' - Dress
+
+=== Plural ===
+:'''Столы''' - Tables
+:'''Стулья''' - Chairs
+:'''Театры''' - Theaters
+:'''Музеи''' - Museums
+:'''Мужчины''' - Men
+:'''Братья''' - Brothers
+:'''Сыновья/Сыны''' - Sons
+:'''Отцы''' - Fathers
+:'''Мужья''' - Husbands
+:'''Дяди''' - Uncles
+:'''Поезда''' - Trains
+:'''Самолёты''' - Planes
+:'''Дома''' - Houses
+:'''Магазины''' - Shops
+:'''Города''' - Cities
+:'''Кролики''' - Rabbits
+:'''Кони''' - Horses (Adult male horses)
+:'''Лошади''' - Horses 
+:'''Книги''' - Books
+:'''Машины''' - Cars
+:'''Гитары''' - Guitars
+:'''Женщины''' - Women
+:'''Сёстры''' - Sisters
+:'''Дочери''' - Daughters
+:'''Матери''' - Mothers
+:'''Жены''' - Wives
+:'''Тёти''' - Aunts
+:'''Письма''' - Letters
+:'''Тела''' - Bodies
+
+{{BookCat}}
+{{Russian}}

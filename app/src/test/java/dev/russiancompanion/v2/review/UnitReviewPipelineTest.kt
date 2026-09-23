@@ -129,12 +129,12 @@ class UnitReviewPipelineTest {
         val local = pack.copy(
             units = pack.units.map { unit ->
                 if (unit.number != 5) unit else {
-                    val session = unit.sessions.first { it.steps.any { step -> step.id == "u5-st-questions" } }
+                    val session = unit.sessions.first { it.steps.any { step -> step.id == "u5-st-book-work" } }
                     unit.copy(
                         sessions = unit.sessions.map { current ->
                             if (current.id != session.id) current else current.copy(
                                 steps = current.steps.map { step ->
-                                    if (step.id == "u5-st-questions") step.copy(body = step.body + " extra book direction") else step
+                                    if (step.id == "u5-st-book-work") step.copy(body = step.body + " extra book direction") else step
                                 },
                             )
                         },
@@ -222,9 +222,9 @@ class UnitReviewPipelineTest {
         assertEquals(prior, pending.mappingPackageDigest)
         assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
         assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("e46c57ebda8258f1afae78031f3a475dcc4f49803ae12299dd4b6b4872245781", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687", V2Validator.unitContentReviewDigest(pack, 5))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),

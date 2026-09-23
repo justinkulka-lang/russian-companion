@@ -29,6 +29,8 @@ internal object V2Validator {
         }
         validateAssetRecords(pack, errors)
         validateMappingInputStaysOutOfCurriculum(pack, errors)
+        validateProvenance(pack, errors)
+        validateAuthoredEnglish(pack, errors)
         validateReview(pack, errors)
         validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
@@ -199,7 +201,14 @@ internal object V2Validator {
                 )
             }),
             "units" to canonArr(pack.units.map(::canonicalUnit)),
-        )
+        ).let { base ->
+            appendBoundRecords(
+                base,
+                pack.provenanceRecords.sortedBy { it.itemId },
+                pack.authoredEnglishRecords,
+                includeAuthored = true,
+            )
+        }
     }
 
     private fun canonicalUnitInstructionalDocument(pack: V2CurriculumPack, unitNumber: Int): String {
@@ -323,6 +332,63 @@ internal object V2Validator {
                 )
             }),
             "units" to canonArr(listOfNotNull(unit).map(::canonicalUnit)),
+        ).let { base ->
+            appendBoundRecords(
+                base,
+                pack.provenanceRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.itemId },
+                pack.authoredEnglishRecords.filter { it.unitNumber == unitNumber },
+                includeAuthored = pack.authoredEnglishRecords.any { it.unitNumber == unitNumber },
+            )
+        }
+    }
+
+    private fun appendBoundRecords(
+        base: String,
+        provenance: List<V2ProvenanceRecord>,
+        authored: List<V2AuthoredEnglishRecord>,
+        includeAuthored: Boolean,
+    ): String {
+        var document = base
+        if (provenance.isNotEmpty()) {
+            document = document.dropLast(1) +
+                ",\"provenanceRecords\":" + canonArr(provenance.map(::canonicalProvenance)) + "}"
+        }
+        if (includeAuthored) {
+            document = document.dropLast(1) +
+                ",\"authoredEnglishRecords\":" + canonArr(authored.sortedBy { it.id }.map(::canonicalAuthored)) + "}"
+        }
+        return document
+    }
+
+    private fun canonicalProvenance(record: V2ProvenanceRecord): String {
+        return canonObj(
+            "itemId" to canonStr(record.itemId),
+            "unitNumber" to canonNum(record.unitNumber),
+            "objectiveId" to canonStr(record.objectiveId),
+            "recordType" to canonStr(record.recordType),
+            "sourceId" to canonStr(record.sourceId),
+            "sourceUrl" to canonStr(record.sourceUrl),
+            "sourceRevision" to canonStr(record.sourceRevision),
+            "sourceRecordId" to canonStr(record.sourceRecordId),
+            "originalSourceText" to canonStr(record.originalSourceText),
+            "shippedText" to canonStr(record.shippedText),
+            "transformation" to canonStr(record.transformation),
+            "licenseId" to canonStr(record.licenseId),
+            "licenseUrl" to canonStr(record.licenseUrl),
+            "attribution" to canonStr(record.attribution),
+            "shareAlikeTreatment" to canonStr(record.shareAlikeTreatment),
+            "sourceHash" to canonStr(record.sourceHash),
+            "contentHash" to canonStr(record.contentHash),
+            "audioAssetId" to canonStrOrNull(record.audioAssetId),
+        )
+    }
+
+    private fun canonicalAuthored(record: V2AuthoredEnglishRecord): String {
+        return canonObj(
+            "id" to canonStr(record.id),
+            "unitNumber" to canonNum(record.unitNumber),
+            "text" to canonStr(record.text),
+            "classification" to canonStr(record.classification),
         )
     }
 
@@ -648,7 +714,7 @@ internal object V2Validator {
         val itemIds = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
         val exampleIds = (steps.flatMap { it.exampleIds } + unit.objectives.flatMap { it.exampleIds }).toSet()
         val referenceIds = steps.flatMap { it.referenceIds }.toSet()
-        val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId }.toSet()
+        val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.toSet()
         itemIds.forEach { id ->
             val item = pack.item(id) ?: return@forEach
             requireInstalledReview(item.reviewStatus, allowNotRequired = false, "Check $id", errors)
@@ -877,7 +943,11 @@ internal object V2Validator {
     }
 
     private fun validateExample(pack: V2CurriculumPack, example: V2Example, errors: MutableList<String>) {
-        if (pack.letter(example.letterId) == null) {
+        if (example.letterId.isBlank()) {
+            if (example.kind != "LEXICAL") {
+                errors += "Example ${example.id} letter ${example.letterId} is missing"
+            }
+        } else if (pack.letter(example.letterId) == null) {
             errors += "Example ${example.id} letter ${example.letterId} is missing"
         }
         if (pack.sources.none { it.id == example.sourceId }) {
@@ -1091,11 +1161,265 @@ internal object V2Validator {
     }
 
     private fun reachableLetterIds(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
-        return reachableExampleIds(unit).mapNotNull { pack.example(it)?.letterId }.toSet()
+        return reachableExampleIds(unit).mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.toSet()
     }
 
     private fun sourceAndRightsResolve(pack: V2CurriculumPack, sourceId: String, rightsId: String): Boolean {
         if (pack.sources.none { it.id == sourceId }) return false
         return pack.rights.any { it.id == rightsId && it.sourceId == sourceId && it.permitsAppUse }
+    }
+
+    private val CYRILLIC_REGION = Regex("[\\u0400-\\u04FF\\u0301](?:[\\u0400-\\u04FF\\u0301]|[ \\t]+(?=[\\u0400-\\u04FF]))*[?!.,]*")
+
+    private fun validateProvenance(pack: V2CurriculumPack, errors: MutableList<String>) {
+        pack.sources.forEach { source ->
+            if (isExcludedSource(source.id, source.license, source.title)) {
+                errors += "Source ${source.id} excluded source cannot enter the seed"
+            }
+        }
+        val seen = mutableSetOf<String>()
+        pack.provenanceRecords.forEach { record ->
+            if (!seen.add(record.itemId)) {
+                errors += "Provenance ${record.itemId} is duplicated"
+            }
+            if (record.sourceRevision.isBlank()) {
+                errors += "Provenance ${record.itemId} source revision is unresolved"
+            }
+            if (record.shippedText.isBlank() || record.originalSourceText.isBlank() || record.sourceRecordId.isBlank()) {
+                errors += "Provenance ${record.itemId} source record is unresolved"
+            }
+            if (record.attribution.isBlank() || record.shareAlikeTreatment.isBlank()) {
+                errors += "Provenance ${record.itemId} attribution does not resolve"
+            }
+            if (!isShareAlikeLicense(record.licenseId) || record.licenseUrl.isBlank()) {
+                errors += "Provenance ${record.itemId} incompatible license"
+            }
+            if (isExcludedProvenance(record)) {
+                errors += "Provenance ${record.itemId} excluded source cannot enter the seed"
+            }
+            if (record.contentHash != sha256(record.shippedText) || record.sourceHash != sha256(record.originalSourceText)) {
+                errors += "Provenance ${record.itemId} source hash does not match the frozen record"
+            }
+            if (record.transformation == "sense selection" && !isDelimitedSense(record.originalSourceText, record.shippedText)) {
+                errors += "Provenance ${record.itemId} sense selection is not a delimited source sense"
+            }
+            if (record.sourceId == "src-openrussian-50e210c4" && "/tree/" in record.sourceUrl) {
+                errors += "Provenance ${record.itemId} source URL is not an exact file link"
+            }
+            if (record.sourceId == "src-openrussian-50e210c4" && "/blob/" !in record.sourceUrl) {
+                errors += "Provenance ${record.itemId} source URL is not an exact file link"
+            }
+            if (pack.sources.none { it.id == record.sourceId }) {
+                errors += "Provenance ${record.itemId} source does not resolve"
+            }
+            val rights = pack.rights.filter { it.sourceId == record.sourceId && it.permitsAppUse }
+            if (rights.isEmpty() || rights.any { !isShareAlikeLicense(it.license) }) {
+                errors += "Provenance ${record.itemId} rights do not resolve"
+            }
+            if (record.audioAssetId != null) {
+                errors += "Provenance ${record.itemId} audio mapping is not an exact admitted text match"
+            }
+            if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
+                errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
+            }
+            if (record.unitNumber !in 3..5) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-5 source intake"
+            }
+            if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
+                errors += "Provenance ${record.itemId} objective is missing"
+            }
+        }
+        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
+            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }.toSet()
+            val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
+            unit.objectives.forEach { objective ->
+                hosts += objective.title
+                objective.exampleIds.forEach { id ->
+                    pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                }
+                objective.checkItemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+            }
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    hosts += step.title
+                    hosts += step.body
+                    step.bookDirection?.let { hosts += it }
+                    step.companionDirection?.let { hosts += it }
+                    step.unavailableReason?.let { hosts += it }
+                    step.exampleIds.forEach { id ->
+                        pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                    }
+                    step.itemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+                    step.referenceIds.forEach { id ->
+                        pack.reference(id)?.let { hosts += it.title; hosts += it.summary; hosts += it.detail }
+                    }
+                }
+            }
+            hosts.forEach { host ->
+                CYRILLIC_REGION.findAll(host).forEach { match ->
+                    val text = match.value.trim()
+                    val trimmed = text.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }
+                    if (text !in shipped && trimmed !in shipped) {
+                        errors += "Russian text has no admitted source record: $text"
+                    }
+                }
+            }
+        }
+    }
+
+    private fun addItemHosts(pack: V2CurriculumPack, itemId: String, hosts: MutableList<String>) {
+        val item = pack.item(itemId) ?: return
+        hosts += item.prompt
+        item.promptLetter?.let { hosts += it }
+        hosts += item.answer
+        hosts += item.feedback
+        hosts += item.options
+    }
+
+    private val LINGUISTIC_CLAIM = Regex(
+        "(?i)(\\brussian\\b.*\\b(has|have|is|are)\\b|\\b(has|have)\\b.*\\b(gender|genders|cases|tense)\\b|\\bten genders\\b|\\b\\d+\\s+genders\\b)",
+    )
+    private val GRAMMAR_TERM = Regex(
+        "(?i)\\b(genders?|cases?|tenses?|verbs?|nouns?|pronouns?|masculine|feminine|neuter|nominative|prepositional|indeclinable|declinable)\\b",
+    )
+
+    private fun isDelimitedSense(original: String, shipped: String): Boolean {
+        if (shipped.isBlank() || shipped == original) return false
+        val parts = original.split(Regex("\\s*[,;]\\s*")).map { it.trim() }.filter { it.isNotEmpty() }
+        return shipped in parts
+    }
+
+    private fun validateAuthoredEnglish(pack: V2CurriculumPack, errors: MutableList<String>) {
+        val seen = mutableSetOf<String>()
+        pack.authoredEnglishRecords.forEach { record ->
+            if (!seen.add(record.id)) {
+                errors += "Authored English ${record.id} is duplicated"
+            }
+            if (record.classification != "INDEPENDENTLY_AUTHORED_SCAFFOLD") {
+                errors += "Authored English ${record.id} classification is not independently authored"
+            }
+            if (record.text.isBlank()) {
+                errors += "Authored English ${record.id} is blank"
+            }
+            if (record.unitNumber !in 3..5) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-5 source intake"
+            }
+            if (CYRILLIC_REGION.containsMatchIn(record.text) ||
+                LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
+                (GRAMMAR_TERM.containsMatchIn(record.text) && '?' !in record.text)
+            ) {
+                errors += "independently authored English makes a linguistic claim"
+            }
+        }
+        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
+            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }
+            val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
+            val spans = shipped + scaffolds
+            val hosts = mutableListOf<String>()
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    hosts += step.title
+                    hosts += step.body
+                    step.bookDirection?.let { hosts += it }
+                    step.companionDirection?.let { hosts += it }
+                    step.exampleIds.forEach { id ->
+                        pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                    }
+                    step.itemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+                }
+            }
+            unit.objectives.forEach { objective ->
+                objective.exampleIds.forEach { id ->
+                    pack.example(id)?.let { hosts += it.display; hosts += it.note }
+                }
+                objective.checkItemIds.forEach { id -> addItemHosts(pack, id, hosts) }
+            }
+            hosts.forEach { host ->
+                val leftover = unboundLetters(host, spans)
+                if (leftover.isNotEmpty()) {
+                    errors += "English linguistic claim has no admitted source record: ${leftover.take(120)}"
+                }
+            }
+            val allowed = (shipped + scaffolds).toSet()
+            val itemIds = (unit.sessions.flatMap { it.steps }.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
+            itemIds.forEach { itemId ->
+                val item = pack.item(itemId) ?: return@forEach
+                (listOf(item.answer) + item.options).forEach { text ->
+                    if (text !in allowed) {
+                        errors += "English linguistic claim has no admitted source record: $text"
+                    }
+                }
+            }
+        }
+    }
+
+    private fun unboundLetters(host: String, spans: List<String>): String {
+        val covered = BooleanArray(host.length)
+        spans.filter { it.isNotEmpty() }.distinct().sortedByDescending { it.length }.forEach { span ->
+            var start = 0
+            while (start <= host.length - span.length) {
+                val index = host.indexOf(span, start)
+                if (index < 0) break
+                val end = index + span.length
+                if ((index until end).all { !covered[it] } && englishSpanBoundary(host, index, end)) {
+                    for (cursor in index until end) covered[cursor] = true
+                }
+                start = index + 1
+            }
+        }
+        return host.filterIndexed { index, char -> !covered[index] && char.isLetter() }
+    }
+
+    private fun englishSpanBoundary(host: String, index: Int, end: Int): Boolean {
+        val span = host.substring(index, end)
+        if (span.any { it.code > 127 }) return true
+        val before = if (index == 0) ' ' else host[index - 1]
+        val after = if (end == host.length) ' ' else host[end]
+        val startOk = !before.isLetter() || !span.first().isLetter()
+        val endOk = !after.isLetter() || !span.last().isLetter()
+        return startOk && endOk
+    }
+
+    private fun isShareAlikeLicense(license: String): Boolean {
+        val value = license.lowercase()
+        if (value.contains("nc") || value.contains("nd") || value.contains("noncommercial") || value.contains("noderivatives")) {
+            return false
+        }
+        return license == "CC BY-SA 4.0"
+    }
+
+    private fun isExcludedSource(vararg parts: String): Boolean {
+        return parts.any { part -> excludedSourceToken(part) }
+    }
+
+    private fun isExcludedProvenance(record: V2ProvenanceRecord): Boolean {
+        val haystack = "${record.sourceId} ${record.sourceUrl} ${record.licenseId}"
+        if (!excludedSourceToken(haystack)) return false
+        val value = haystack.lowercase()
+        val attributedTatoeba = "tatoeba" in value &&
+            "audio" !in value &&
+            record.sourceRecordId.matches(Regex("\\d+")) &&
+            record.attribution.isNotBlank() &&
+            "translation" in record.transformation.lowercase() &&
+            isShareAlikeLicense(record.licenseId)
+        return !attributedTatoeba
+    }
+
+    private fun excludedSourceToken(text: String): Boolean {
+        val value = text.lowercase()
+        return listOf(
+            "penguin",
+            "fsi",
+            "wiktionary",
+            "tatoeba",
+            "openrussian-audio",
+            "website-audio",
+            "noncommercial",
+            "noderivatives",
+            "cc-by-nc",
+            "cc-by-nd",
+            "cc by-nc",
+            "cc by-nd",
+        ).any { token -> value.contains(token) }
     }
 }

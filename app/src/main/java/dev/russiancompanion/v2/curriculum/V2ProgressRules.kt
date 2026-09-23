@@ -202,6 +202,11 @@ internal fun advancementDecision(
         if (correct < rule.minimumDistinctChecks) {
             remaining += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
         }
+        unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objectiveState(objective, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) {
+                remaining += "Demonstrate every check for ${objective.title}"
+            }
+        }
     }
     if (rule.requireDueReview) {
         val reviewSteps = unit.sessions.flatMap { it.steps }.filter { step ->

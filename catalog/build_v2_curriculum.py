@@ -5,19 +5,19 @@ Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
 Units 1–2 are content-complete DEVELOPMENT units awaiting qualified
-review and an owned-edition mapping. Units 3–5 are DEVELOPMENT paths for
-the next public topics and are not content-complete: their new phrases and
-grammar stay in the owned book, and printed-letter drills are not used as
-a substitute. None is INSTALLED. They do not invent phrases, gender rules,
-verb forms, case endings, or question words. Advancement checks are letter
-identities, print pairs, confusable forms, and signs — never product-policy
-quizzes.
+review and an owned-edition mapping. Units 3–5 are DEVELOPMENT units with
+proposed curriculum taken only from frozen CC BY-SA 4.0 sources. They are
+not installed, not review-approved, and not mapping-approved. Units 1–2
+advancement checks are letter identities, print pairs, confusable forms,
+and signs. Units 3–5 checks use admitted source records only.
 """
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
+
+from units_3_5_intake import build_units_3_5
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -1389,8 +1389,8 @@ def build() -> dict:
         reference(
             "ref-book-topics",
             "Later lesson topics stay in the book",
-            "Units 3–5 do not contain the phrases, grammar, or question forms named in their public topics.",
-            "Open the matching lesson in the copy you own. This reference does not supply those forms, and it does not make the unit content-complete.",
+            "Units 6 and later do not contain lesson bodies.",
+            "Units 3–5 contain proposed licensed records that still need qualified review. Open the matching lesson in the copy you own. This reference does not approve those records.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
@@ -1408,6 +1408,7 @@ def build() -> dict:
         readiness: str = "NOT_PREPARED",
         mapping_note: str = "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
         require_due_review: bool | None = None,
+        minimum_checks: int = 2,
     ) -> dict:
         due_review = number > 1 if require_due_review is None else require_due_review
         return {
@@ -1429,69 +1430,18 @@ def build() -> dict:
                 "requireInstruction": True,
                 "requireBookSelfAttestation": True,
                 "requireAppChecks": True,
-                "minimumDistinctChecks": 2,
+                "minimumDistinctChecks": minimum_checks,
                 "requireDueReview": due_review,
                 "tutorOptional": True,
             },
         }
 
-    bundles = [
-        book_directed_topics(
-            3,
-            [
-                (
-                    "phrases",
-                    "Everyday phrases and naming things",
-                    "Work everyday phrases in your copy",
-                    "In your copy, open Lesson 3 and do its section on everyday phrases and naming things. Use the book's explanations, examples, and practice. This app does not supply the phrases or their answers.",
-                ),
-                (
-                    "gender",
-                    "Basic grammar and gender",
-                    "Work grammar and gender in your copy",
-                    "In your copy, open Lesson 3 and do its section on basic grammar and gender. Use the book's explanations and practice. This app does not state gender rules.",
-                ),
-            ],
-        ),
-        book_directed_topics(
-            4,
-            [
-                (
-                    "verbs",
-                    "Verbs, pronouns, and the present tense",
-                    "Work verbs and the present tense in your copy",
-                    "In your copy, open Lesson 4 and do its section on verbs, personal pronouns, the present tense, and conjugation. Use the book's explanations, examples, and practice. This app does not state those forms.",
-                ),
-                (
-                    "cases",
-                    "Word stress and noun cases",
-                    "Work stress and noun cases in your copy",
-                    "In your copy, open Lesson 4 and do its section on word stress and the introduction to nouns and cases. Use the book's explanations and practice. This app does not mark stress or case endings.",
-                ),
-            ],
-        ),
-        book_directed_topics(
-            5,
-            [
-                (
-                    "questions",
-                    "Questions",
-                    "Work questions in your copy",
-                    "In your copy, open Lesson 5 and do its section on questions. Use the book's explanations, examples, and practice. This app does not supply question words or patterns.",
-                ),
-                (
-                    "prepositional",
-                    "Prepositional case and indeclinable nouns",
-                    "Work the prepositional case in your copy",
-                    "In your copy, open Lesson 5 and do its section on the prepositional case and indeclinable nouns. Use the book's explanations and practice. This app does not state those endings.",
-                ),
-            ],
-        ),
-    ]
-    for bundle in bundles:
-        items.extend(bundle["items"])
-        examples.extend(bundle["examples"])
-        objectives.extend(bundle["objectives"])
+    proposed = build_units_3_5()
+    items.extend(proposed["items"])
+    examples.extend(proposed["examples"])
+    for proposed_unit in proposed["units"]:
+        objectives.extend(proposed_unit["objectives"])
+    references.extend(proposed["references"])
 
     units = [
         development_unit(
@@ -1518,31 +1468,37 @@ def build() -> dict:
             3,
             "Everyday phrases, naming things, basic grammar, and gender",
             "Everyday phrases",
-            "Unit 3 follows Unit 2 and is not content-complete. The public topic is everyday phrases, naming things, basic grammar, and gender. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 3 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
-            bundles[0]["sessions"],
+            "Proposed Unit 3 is a development unit awaiting qualified review. It contains admitted records for gender, everyday phrases, and naming, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+            proposed["units"][0]["sessions"],
             [2],
-            mapping_note="Proposed Lesson 3 mapping from the publisher's public table of contents: everyday phrases, naming things, basic grammar, and gender. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 3 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
             require_due_review=False,
+            minimum_checks=proposed["units"][0]["minimum_checks"],
         ),
         development_unit(
             4,
             "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
             "Verbs and cases",
-            "Unit 4 follows Unit 3 and is not content-complete. The public topic is verbs, personal pronouns, the present tense, conjugation, word stress, and the introduction to nouns and cases. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 4 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
-            bundles[1]["sessions"],
+            "Proposed Unit 4 is a development unit awaiting qualified review. It contains admitted pronoun, present-tense, written-stress, and nominative records, plus separate book self-attestation. Written stress is not a pronunciation score. It is not installed and the owned-edition mapping is not signed.",
+            proposed["units"][1]["sessions"],
             [3],
-            mapping_note="Proposed Lesson 4 mapping from the publisher's public table of contents: verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 4 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
             require_due_review=False,
+            minimum_checks=proposed["units"][1]["minimum_checks"],
         ),
         development_unit(
             5,
             "Questions, prepositional case, and indeclinable nouns",
             "Questions",
-            "Unit 5 follows Unit 4 and is not content-complete. The public topic is questions, the prepositional case, and indeclinable nouns. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 5 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
-            bundles[2]["sessions"],
+            "Proposed Unit 5 is a development unit awaiting qualified review. It contains admitted question, prepositional, and indeclinable records, plus separate book self-attestation. Question intonation is not taught. It is not installed and the owned-edition mapping is not signed.",
+            proposed["units"][2]["sessions"],
             [4],
-            mapping_note="Proposed Lesson 5 mapping from the publisher's public table of contents: questions, prepositional case, and indeclinable nouns. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+            mapping_note="Proposed Lesson 5 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
             require_due_review=False,
+            minimum_checks=proposed["units"][2]["minimum_checks"],
         ),
     ]
     for number, short, title in UNITS_3_30:
@@ -1575,8 +1531,8 @@ def build() -> dict:
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
         "unitReviews": [pending_unit_review(number) for number in range(1, 6)],
-        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH],
-        "rights": RIGHTS,
+        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
+        "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
         "examples": examples,
         "items": items,
@@ -1585,6 +1541,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
+        "provenanceRecords": proposed["provenance"],
+        "authoredEnglishRecords": proposed["authored"],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

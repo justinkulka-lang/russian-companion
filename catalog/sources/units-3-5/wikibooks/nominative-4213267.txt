@@ -1,0 +1,194 @@
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+
+=== Plural Nouns ===
+If you want to refer to a group of objects in the nominative, you use the plural, just like in English. Though there are no rules needed to form the nominative singular (just look the word up in the dictionary), there ''are'' rules for forming the plural. These are very simple to learn:
+: Masculine nouns add '''-ы''' to the end of the word, just like how we add 's' in English. For example, '''стол''' ('table') >> '''столы''' ('tables').
+: Feminine nouns that end in '''-а''' replace the vowel with '''-ы''', while nouns that end in '''-я''' or '''-ь''' have '''-и'''. For example, '''машина''' ('car') >> '''машины''' ('cars'); '''свинья''' ('pig') >> '''свиньи''' ('pigs'); '''ночь''' ('night') >> '''ночи''' ('nights').
+: Neuter nouns that end in '''-о''' have '''-а''' in the nominative plural, while '''-е''' becomes '''-я''': '''письмо''' ('letter') >> '''письма''' ('letters'); '''море''' ('sea') >> '''моря''' ('seas').
+These are the basic rulers for making words plural. In other cases, there are different rules which must be learned. As with many things in Russian, there are exceptions. There are several words in Russian with exceptional nominative plurals:
+:'''Сын '''>>''' Сыновья''' ('son', 'sons')
+:'''Брат '''>>''' Братья''' ('brother', brothers')
+:'''Друг '''>>''' Друзья''' ('friend', 'friends')
+Perhaps the most common exceptions are those that fall under the Seven-Letter Rule.
+
+===The 7-letter spelling rule===
+There is a spelling rule called the '7-letter spelling rule', so called because it comes into effect after seven letters: '''к, г, х, ш, щ, ж''', and '''ч'''. When you remove the default ending from a word, you are left with the stem. If the stem ends in one of those seven letters, then you generally have to add an alternate ending. For example, '''книга''', 'book', has the stem '''книг-''', so it obeys the 7-letter rule. What to do when this spelling rule appears will be covered in each instance individually. However, the rule generally just requires the use of an 'alternate' noun ending.
+
+For the nominative plural, if a masculine or feminine word ends in the 7-letter rule, you always use the ending '''-и''', not '''-ы'''. So, although '''книга''', 'book', ends in '''-а''', its nominative plural is '''книги''', as its stem ends in '''г'''.
+:These rabbits - '''Эти кролики'''
+:The mice are nice - '''Мыши симпатичные'''
+:These are my friends - '''Эти мои друзья''' - ''Note the exceptional ending '''-я'''''
+
+What follows is a summary table for the endings found on singular and plural nouns in the nominative case. Where there are multiple endings, refer to the rules above:
+
+{| class="wikitable"
+|-
+! Nominative !! Masculine !! Feminine !! Neuter
+|-
+| Singular || ''const.'', '''ь''' || '''а/я/ь''' || '''о/е'''
+|-
+| Plural || '''ы/и''' || '''ы/и''' || '''а/я'''
+|}
+
+In the future, the plural case will be treated as a sort of 'fourth gender', and will be give its own column. Here, however, it has a separate row.
+
+As with all things in Russian, there are some irregular, unpredictable exceptions to the above rules:
+: Some masculine nouns drop the last vowel before adding '''ы''' or '''и''', such as '''подарок''' ('gift') >> '''подарки'''. Theses are known as 'fleeting vowels', and are generally found in dictionaries in parentheses: '''подар(о)к'''.
+: Some masculine nouns add '''a''' to form the nominative plural, such as '''дом''' ('house') >> '''дома''' ('houses').
+: As mentioned above, words of foreign origin ending in '''o''', '''и''', or '''у''', don't change between singular and plural. So, '''радио''' means 'radio' or 'radios', and '''такси''' is both 'taxi' and 'taxis'.
+
+==Adjectives==
+Like nouns, adjectives change according to case, number, and gender. An adjective has no inherent gender, so it changes its ending to suit the gender (and case and number) of the noun it's modifying. An adjective modifying a singular, feminine noun in the [[Russian/Grammar/Instrumental case|instrumental case]], is itself in the singular, feminine, instrumental case. 
+
+However, when you look up an adjective in the dictionary, what do you see? You see the default, nominative, masculine, singular form. For a more thorough treatment of adjectives, see their [[Russian/Grammar/Adjectives|dedicated page]]. For our purposes, we only need to know two things: all adjectives end in either '''-ый''', '''-ий''', or '''-ой''', and conjugating adjectives is as simple as removing these endings and adding the new ones. The ending you add is the one that corresponds to the noun.
+
+Adjectives modifying masculine nouns in the nominative case keep their default endings: 'new pencil' is '''новый карандаш'''.
+For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.
+For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.
+
+Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.
+
+=== The 7-letter spelling rule ===
+As mentioned earlier, if the stem of a noun ends in '''к''', '''г''', '''х''', '''ш''', '''щ''', '''ж''', and '''ч''', then different endings from usual apply. The same is true for adjectives. Adjectives such as '''хороший''' ('good'), '''русский''' ('Russian'), and '''другой''' ('different'), take on alternate endings to other adjectives. In the nominative case, this only affects plural adjectives: instead of '''-ые''', these adjectives have the ending '''-ие'''.
+:New books - '''Новые книги'''
+:Old books - '''Старые книги'''
+:Good books - '''Хорошие книги'''
+:Different books - '''Разные книги'''
+In general, after these seven consonants, whenever you would normally see '''ы''' in an adjectival ending, you instead find '''и'''. This also applies to standard adjectival endings: after these seven letters, you always have the default ending '''ий'''. This can be useful in predicting or remembering the default endings of adjectives.
+Unlike nouns, adjectives are affected by a second spelling rule.
+
+=== The 5-letter spelling rule ===
+On top of the previous spelling rule, there's a second important rule: after the letters '''ш, щ, ж, ч''', and '''ц''', the first unstressed '''о''' in an ending becomes '''е'''. For nominative adjectives, this only affects neuter singular endings: we have '''-ее''' as the ending, not '''-ое'''.
+:Bad wine - '''Плохое вино'''
+:Good wine - '''Хорошее вино'''
+:Old letter - '''Старое письмо'''
+:Fresh letter - '''Свежее письмо'''
+An easy way to remember this is that four of the five letters are the 'hushes', '''ш''', '''щ''', '''ж''', and '''ч''', and these are also four letters from the seven-letter spelling rule. Few adjectives end in '''цый''', so you don't have to worry about this so much. As such, almost all adjectives that follow this rule also follow the 7-letter rule: '''хороший''', '''хорошее письмо''', '''хорошие письма'''.
+
+=== Soft adjectives ===
+The final nuance with Russian adjectives are the adjectives that have the so-called 'soft ending': '''-ний''', such as '''синий''' ('dark blue'). These adjectives don't fall into the above two spelling rules, but still take on the exceptional endings. These are covered more thoroughly on [[Russian/Grammar/Adjectives#Soft_endings|their own page]], but in the nominative case they have only one unique ending: the feminine singular ending for these adjectives is '''-яя''', not '''-ая'''. They also take on the alternate neuter and plural endings we learned for the seven- and five-letter spelling rules: '''-ее''' for neuter nouns, and '''-ие''' for plural nouns.
+
+So, a summary of adjectival endings in the nominative case is as follows:
+{| class="wikitable"
+|-
+! Masculine !! Feminine !! Neuter !! Plural
+|-
+| ый ий ой || ая<br>''яя''<sup>1</sup> || ое<br>''ее''<sup>2</sup> || ые<br>''ие''<sup>3</sup>
+|}
+:<sup>1</sup>For adjectives with the soft ending.
+:<sup>2</sup>For adjectives ending in the five-letter rule, and those with the soft ending.
+:<sup>3</sup>For adjectives ending in the seven-letter rule, and those with the soft ending.
+
+==Personal Pronouns==
+The personal pronouns (words used to denote the speaker) are:
+{| class="wikitable"
+|-
+!  !! Singular !! Plural
+|-
+! 1st-person
+| Я ('I') || Мы ('We')
+|-
+! 2nd-person
+| Ты ('You', informal) || Вы ('You', polite/plural)
+|-
+! 3rd-person
+| Он/она/оно ('He', 'She', 'It') || Они ('They')
+|}
+
+They are more thoroughly discussed on their [[Russian/Personal_Pronouns|dedicated page]].
+
+==Possessive pronouns==
+The possessive pronouns are as follows:
+{| class="wikitable"
+|-
+!  !! Masculine !! Feminine !! Neuter !! Plural
+|-
+! My
+| Мой || Моя || Моё || Мои
+|-
+! Your (informal)
+| Твой || Твоя || Твоё || Твои
+|-
+! Our
+| Наш || Наша || Наше || Наши
+|-
+! Your (polite/plural)
+| Ваш || Ваша || Ваше || Ваши
+|}
+
+'His' and 'its' are '''его''' ('ye-voh'), 'her' is '''её''' ('ye-yoh'), and 'their' is '''их''' ('eekh'), and these do not change with the gender or number of the possessed object.
+
+==Demonstrative Pronouns==
+
+это translates to "this" or "these."
+
+Note that it starts with э, not е or з.
+
+When это is followed by a nominative case noun, это changes to match the gender of the noun, thus becoming a demonstrative adjective:
+
+<table cols=5 border=1>
+
+<tr>
+<td>English</td><td>Masculine</td><td>Feminine</td><td>Neuter</td><td>Plural</td>
+</tr>
+
+<tr>
+<td>This</td><td>этот ("etuht")</td><td>эта ("etuh")</td><td>это ("etuh")</td></td><td>эти ("etee")</td>
+</tr>
+
+</table>
+
+For example, Этот чемодан мой ("This suitcase is mine.").
+
+However, when a possessive pronoun is between это and the noun, the possessive pronoun changes but это doesn't change. For example, Это мой чемодан ("This is my suitcase").
+
+Also note that for neuter nouns, changing word order doesn't change это, and that эта and это are both pronounced [ˈɛtə], since their endings are both unstressed.
+
+==Demonstrative Adjectives==
+
+<table cols=5 border=1>
+
+<tr>
+<td>English</td><td>Masculine</td><td>Feminine</td><td>Neuter</td><td>Plural</td>
+</tr>
+
+<tr>
+<td>That</td><td>тот ("tot")</td><td>та ("ta")</td><td>то ("to")</td></td><td>те ("tyeh")</td>
+</tr>
+
+</table>
+
+
+* [[Russian:Grammar/Accusative|Next: Accusative case]]
+
+* [[Russian|Back to Table of Contents]]
+
+{{BookCat}}
+{{Russian}}

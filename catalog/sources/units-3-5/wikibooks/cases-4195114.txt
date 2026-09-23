@@ -1,0 +1,214 @@
+A '''[[w:Grammatical_case|case]]''' is a grammatical concept that tells you what a word is doing in a sentence. For example, the thing performing a verb is denoted as such with a case, while something being counted or enumerated has a different case. This page gives brief overviews of what each of the six cases are used for, with a table summarising how to put a word in that case.
+
+== What is a case? ==
+Russian has six cases, and the case of a word is denoted by suffixes (word endings) that tell you the context of the word. English has few cases, favouring grammatical constructions over implicit case endings: compare the sentences, "I like apples" and "apples like me"; the first-person pronoun is 'I' when it's the subject of the verb, but it's 'me' when it's the object of the verb. These cases in English are called ''subjective'' and ''objective'', and convey the same information as the Russian [[Russian/Grammar/Nominative|''nominative'']] and [[Russian/Grammar/Accusative case|''accusative'']] cases. Russian sentences are more heavily based on cases than English, so they make up the bulk of mastering basic Russian.
+
+Cases in Russian affect nouns, [[Russian/Grammar/Adjectives|adjectives]], and [[Russian/Grammar/Pronouns|pronouns]] ('I', 'me', 'my', 'your', etc). Adjectives modify a noun, and take the case ending that corresponds with whatever case the noun is in. This is true of possessive pronouns as well. So, in the phrase "My cute dog licked your big hands", 'hands' is the object of the verb, so is in the ''accusative'' case - and therefore 'your' and 'big' would also be in the accusative. Nouns and adjectives also change according to [[Russian/Grammar/Gender|gender]] (masculine/feminine/neuter) and number (singular/plural), but more on that later.
+
+Cases are 'called' in two main ways: when you want to use a noun in the main function of the case, or when a preposition specifically calls it. For instance, if you wanted to say, "Under the rug", Russians say '''под''' (pod) and then the word 'rug' in its ''instrumental'' form, since the preposition '''под''' calls the instrumental case when it means 'under'. In Russian this is, "'''Под ковриком'''" (''pod <small>KOV</small>-ree-kom''), where '''ковриком''' is the instrumental form of '''коврик''' (''<small>KOV</small>-reek''), 'rug'.
+
+The following subsections give an overview of what each case does, with summary tables of conjugation The format for these will be "X,Y → Z", meaning if the word ends in X or Y, you remove the X or Y and replace it with Z. "+X" means you append X to the end of the word. Generally speaking, these tables should be used for revision of rules already learned, not learning cases themselves. For that, see the pages on each case, where declination is explained more thoroughly, and exceptions and caveats to these general rules will be given.
+
+===[[Russian/Grammar/Nominative|Nominative case]]===
+'''Имени́тельный паде́ж''' - '''''eem-een-<small>EET</small>-eel-nyy puhd-<small>YEZH</small>'''''
+
+The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. It is also used for the subject of a sentence: in "Bob eats lunch", Bob is the subject of the sentence, so would be in its default nominative form. The gender of a word can be deduced by its nominative form. As you don't need to decline a noun in the nominative singular (you just use its default, undeclined form), for the nominative singular cells in the following declination tables, the letters that define gender will be used instead.
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="2"|''Nominative'' !! colspan="3"| Singular !! rowspan="2"|Plural
+|-
+! Masculine || Neuter || Feminine
+|-
+! Nouns
+| ''const.'' or й || о or e || а or я || +ы; й, а, я → ы; ь → и<br>о → а; е → я
+|-
+! Adjectives
+| ый ий ой || ое ее || ая яя || ый, ой → ые<br>ий → ие
+|-
+! Possessive<br>pronouns
+| Мой<br>Твой<br>Наш<br>Ваш || Моё<br>Твоё<br>Наше<br>Ваше || Моя<br>Твоя<br>Наша<br>Ваша || Мои<br>Твои<br>Наши<br>Ваши
+|}
+
+=== [[Russian/Grammar/Genitive case|Genitive case]] ===
+'''Роди́тельный паде́ж''' - '''''ruh-<small>DEE</small>-teel-nyy puhd-<small>YEZH</small>'''''
+
+The genitive case has four main uses:
+
+*'''Counting''' - When counting five or more objects ("I have six sheep"), the thing being enumerated is usually put in the genitive case.
+*'''Possession''' - If something is owned by something else, the owner is in the genitive case. This is similar to the 's in English: "my brother's car". "Brother's", in Russian, would be the singular word "brother", '''брат''', in its genitive form, '''брата'''. This also corresponds with the English 'of', as in 'car of my brother'.
+*'''Negation''' - To say something is there, we generally use the nominative case. If it isn't there, we use '''нет''' followed by the genitive.
+*'''Prepositions''' - A number of common prepositions call the genitive case. The most common is '''у''', which means 'by' or 'near'. It's also used to say "I have...": '''У''' + ''gen'' '''есть''' + ''nom''.
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="2"|''Genitive'' !! colspan="2"| Singular !! rowspan="2"|Plural
+|-
+! Masculine/Neuter || Feminine
+|-
+! Nouns
+| ''const.'' or о → а<br>й, е, ь → я || а → ы<br>ь, я → и || ов, ев, ей<br>''(see page)''
+|-
+! Adjectives
+| ого его || ой ей || ых их
+|-
+! Possessive<br>pronouns
+| Моего<br>Твоего<br>Нашего<br>Вашего || Моей<br>Твоей<br>Нашей<br>Вашей || Моих<br>Твоих<br>Наших<br>Ваших
+|}
+
+===[[Russian/Grammar/Dative case|Dative case]]===
+'''Да́тельный паде́ж''' - '''''<small>DA</small>-teel-nyy puhd-<small>YEZH</small>'''''
+
+The dative case is used to denote indirect objects, which are objects that indicate "to whom", or "to what" an action is done. So in the sentence, "I am writing a letter to you", "(a) letter" is the direct object of the verb, while '(to) you' is the indirect object. In Russian, direct objects go in the accusative case, and indirect objects go in the dative case. As in English, sentences do not always have indirect objects.
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="2"|''Dative'' !! colspan="2"| Singular !! rowspan="2"|Plural
+|-
+! Masculine/Neuter || Feminine
+|-
+! Nouns
+| ''const.'' or о → у<br>й, е, ь → ю || а → е<br>я, ь → и || ''const.'', о, а → ам<br>й, е, я → ям
+|-
+! Adjectives
+| ому ему || ой ей || ым им
+|-
+! Possessive<br>pronouns
+| Моему<br>Твоему<br>Нашему<br>Вашему || Моей<br>Твоей<br>Нашей<br>Вашей || Моим<br>Твоим<br>Нашим<br>Вашим
+|}
+
+=== [[Russian/Grammar/Accusative case|Accusative case]] ===
+'''Вини́тельный паде́ж''' - '''''vee-<small>NEE</small>-teel-nyy puhd-<small>YEZH</small>'''''
+
+The accusative case is used for the direct object of a verb. In "Bob eats lunch," "lunch" is the direct object of the verb "eats". In English, the object of a sentence is indicated by context and word order, with a strict subject-verb-object (SVO) system. In English, "Bob eats lunch" and "Lunch eats Bob" have different meanings. But in Russian, since the two cases are distinguished by suffixes, we can change the order of words and still know who's the object and who's the subject. If English indicated the direct object by adding "oo", we could say "Bob eats lunchoo" or "Lunchoo eats Bob", and either way it would clear that Bob was doing the eating.
+
+One nuance of the accusative case is that it makes a distinction of animacy. That is, masculine nouns denoting people or animals (i.e., ''animate'' nouns) take their genitive form, while neuter nouns and inanimate masculine nouns take their nominative form. Plural nouns of any gender take their nominative plural form if inanimate, or their genitive plural form if animate.
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="3"|''Accusative'' !! colspan="4"| Singular !! rowspan="2" colspan="2"|Plural
+|-
+! colspan="2"|Masculine || rowspan="2"|Neuter || rowspan="2"|Feminine
+|-
+! Inanimate || Animate || Inanimate || Animate
+|-
+! Nouns
+| ''As nom.'' || ''As gen.'' || ''As nom.'' || a → у<br>я→ю || ''As nom.'' || ''As gen.''
+|-
+! Adjectives
+| ''As nom.'' || ''As gen.'' || ''As nom.'' || aя → ую<br>яя → юю || ''As nom.'' || ''As gen.''
+|-
+! Possessive<br>pronouns
+| ''As nom.'' || ''As gen.'' || ''As nom.'' || Мою<br>Твою<br>Нашу<br>Вашу  || ''As nom.'' || ''As gen.''
+|}
+
+=== [[Russian/Grammar/Instrumental case|Instrumental case]]===
+'''Твори́тельный паде́ж''' - '''''tvuh-<small>REE</small>-teel-nyy puhd-<small>YEZH</small>'''''
+
+The instrumental case is used to denote the object by which something is done. In the sentence, "I am writing with a pencil", the phrase 'with a pencil' in Russian is simply the word 'pencil' ('''карандаш''') put into its instrumental form ('''карандашом''').  In this way, it corresponds to one of the two meanings of the word 'with' in English: 'with', as in 'by means of'. The other meaning, 'in the company of', such as "I rode with Jane", is also commanded by the instrumental case, though this requires a preposition: '''с''' + ''inst''.
+
+There are five other common prepositions that command the instrumental: '''под''' (pod, 'under') '''над''' (nad, 'above'/'on top of') '''за''' (za, 'behind') '''между''' (mezh-doo, 'between'), and '''перед''' (pye-red, 'before'/'in front of').
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="2"|''Instrumental'' !! colspan="2"| Singular !! rowspan="2"|Plural
+|-
+! Masculine/Neuter || Feminine
+|-
+! Nouns
+| ом ем ём || ой ей ёй|| ''const.'', о, а → ами<br>й, е, я → ями
+|-
+! Adjectives
+| ым им || ой ей || ыми ими
+|-
+! Possessive<br>pronouns
+| Моим<br>Твоим<br>Нашим<br>Вашим || Моей<br>Твоей<br>Нашей<br>Вашей || Моими<br>Твоими<br>Нашими<br>Вашими
+|}
+
+=== [[Russian/Grammar/Prepositional case|Prepositional case]] ===
+'''Предло́жный паде́ж''' - '''''preed-<small>LOZH</small>-nyy puhd-<small>YEZH</small>'''''
+
+The prepositional case is also called the ''locative'' case, as it was commonly used to denote a sentence's object's location or an activity. Nowadays, however, it's only ever called after a few prepositions, hence its name. It's not rare, though, and the prepositions that call it are the most common of all Russian prepositions. They are '''в''' (in), '''на''' (on), and '''о/обо''' (about; it's '''обо''' in the phrase "about me" or "about my"). However, these prepositions can also call other cases, in which case their meaning changes. For instance, '''в''' + ''prep'' means 'in', as in, "I live in England". '''в''' + ''acc'', however, means 'into' or 'to', as in, "I'm flying to New York".
+
+{| class="wikitable" style="text-align:center"
+|-
+! Rowspan="2"|''Prepositional'' !! colspan="2"| Singular !! rowspan="2"|Plural
+|-
+! Masculine/Neuter || Feminine
+|-
+! Nouns
+| е || а, я → е<br>ь → и|| ''const.'', о, а → ах<br>й, е, ь, я → ях
+|-
+! Adjectives
+| ом ем || ой ей || ых их
+|-
+! Possessive<br>pronouns
+| Моём<br>Твоём<br>Нашем<br>Вашем || Моей<br>Твоей<br>Нашей<br>Вашей || Моих<br>Твоих<br>Наших<br>Ваших
+|}
+
+== Summary of declinations ==
+The following tables contain the same information as above, only sorted according to word type (noun or adjective):
+
+{| class="wikitable" style="text-align:center"
+|-
+! rowspan="3"|''Nouns'' !! colspan="4"| Singular !! colspan="2" rowspan="2"| Plural
+|-
+! colspan="2"| Masculine!! rowspan="2"|Neuter !! rowspan="2"|Feminine
+|-
+! Inanimate || Animate || Inanimate || Animate
+|-
+! Nominative
+| colspan="2"|''const.'' or й|| о or е || а or я || colspan="2"|+ы; й, а, я → ы; ь → и<br>о → а; е → я
+|-
+! Genitive
+| colspan="3"|''const.'' or о → а<br>й, е, ь → я || а → ы<br>ь, я → и|| colspan="2" |ов, ев, ей<br>''(see page)''
+|-
+! Dative
+| colspan="3"|''const.'' or о → у<br>й, е, ь → ю|| а → е<br>я, ь → и|| colspan="2" |''const.'', о, а → ам<br>й, е, я → ям
+|-
+! Accusative
+| ''As nom.'' || ''As gen.'' || ''As nom.'' || a → у<br>я→ю || ''As nom.'' || ''As gen.''
+|-
+! Instrumental
+| colspan="3"|ом ем ём|| ой ей ёй|| colspan="2"|''const.'', о, а → ами<br>й, е, я → ями
+|-
+! Prepositional
+| colspan="3"|е|| а, я → е<br>ь → и|| colspan="2" |''const.'', о, а → ах<br>й, е, я → ях
+|}
+
+Note that entries for the nominative singular don't describe declination rules, but rather describe gender. So the feminine entry, 'а or я', says that feminine nouns are those that end in either '''-а''' or '''-я''' in the nominative singular. For a more complete description of gender in Russian, see [[Russian/Grammar/Gender]]. 
+
+{| class="wikitable" style="text-align:center"
+|-
+! rowspan="3"|''Adjectives'' !! colspan="4"| Singular !! colspan="2" rowspan="2"| Plural
+|-
+! colspan="2"| Masculine!! rowspan="2"|Neuter !! rowspan="2"|Feminine
+|-
+! Inanimate || Animate || Inanimate || Animate
+|-
+! Nominative
+| colspan="2"|ый ий ой|| ое ее || ая яя || colspan="2"|ые ие
+|-
+! Genitive
+| colspan="3"|ого его || ой ей || colspan="2"| ых их
+|-
+! Dative
+| colspan="3"|ому ему || ой ей || colspan="2"|ым им
+|-
+! Accusative
+| ''As nom.'' || ''As gen.'' || ''As nom.'' || aя → ую<br>яя → юю || ''As nom.'' || ''As gen.''
+|-
+! Instrumental
+| colspan="3"|ым им|| ой ей|| colspan="2"|ыми ими
+|-
+! Prepositional
+| colspan="3"|ом ем || ой ей || colspan="2"|ых их
+|}
+
+Unlike nouns, adjectives have no intrinsic gender, instead taking on the gender of the noun they modify. However, by default, they end in either '''ый''', '''ий''', or '''ой''', and they keep these forms when modifying masculine singular nouns in the nominative case.
+
+* [[Russian/Grammar/Nominative|Next: Nominative case]]
+* [[Russian|Back to Table of Contents]]
+
+{{BookCat}}
+{{Russian}}

@@ -1,0 +1,122 @@
+This page discusses the nature of verbs in Russian, as well as the basics of how to use them in the present tense. For more advanced concepts, see the pages on [[Russian/Verbal Aspect|verbal aspect]], the [[Russian/Grammar/Past tense|past tense]], the [[Russian/Grammar/Future tense|future tense]], and [[Russian/Grammar/Participles|verbal participles]].
+
+[[File:G. Caillebotte - Homme portant une blouse.jpg|thumb|'''Идти''' (''eed-<small>TEE</small>'') — to walk]]
+
+== The Nature of Verbs ==
+In English, there are several ways to say that different people are doing some action, such as studying: "I study", "we study", "you study", "he/she/it studies", and "they study". However, notice that third-person singular pronouns (he, she, and it) change 'study' into 'studies'. When verbs change, this is called 'conjugation'. English has a simple verb conjugation system, whereas other languages have much more elaborate systems of conjugation, even resulting in dozens of forms of a single verb. The word ''conjugate'' comes from the Latin ''conjungare'', meaning 'to conjoin (side by side)' and refers to the process of placing the verb stem next to its various possible endings. For example: ''conjungo, conjungas, conjungat, conjungamus, conjungatis, conjungant''. (The verb stem, 'conjung', stays the same, but it is 'yoked together' with different endings to express different persons, numbers, tenses, etc.)
+
+Like English verbs, Russian verbs also conjugate according to who is doing the verb: when on its own the default ''infinitive'' form corresponds to the English 'to' ('to see', 'to walk', etc), and this infinitive can conjugate for each of the six [[Russian/Personal Pronouns|personal pronouns]] - '''я''' ('I'), '''мы''' ('we'), '''ты''' ('you', informal), '''вы''' ('you', plural/polite), '''он/она/оно''' ('he/she/it'), and '''они''' ('they'). Notice that although the third-person singular pronoun has three forms for each gender, there is still only one third-person singular form of a verb, just as in English. The other thing to note is that Russian has two words for 'you' like French and German, but unlike modern English. Briefly, '''ты''' is used informally for a single person who you know well, while '''вы''' is used for groups of people, or for an individual person to whom you want to show respect.
+:You <small>(informal)</small> are speaking - '''Ты говоришь''' - ''ti ga-vuh-REESH''
+:You <small>(formal/plural)</small> are speaking - '''Вы говорите''' - ''vi ga-vuh-REET-ye''
+
+The rules for conjugating Russian verbs come in two main patterns: the [[Russian/Grammar/Verbs#First conjugation|'first' or 'type 1' conjugation]], and the [[Russian/Grammar/Verbs#Second conjugation|'second' or 'type 2' conjugation]]. All verbs have an infinitive form, which is listed in dictionaries, and this virtually always ends in '''-ть''' (e.g., '''говорить''', 'to speak', '''работать''', 'to work').
+
+=== How to place emphasis ===
+In Russian, basic sentences with verbs are constructed with the verb's subject (the thing doing the verbing), the verb's object (the thing being verbed), and the verb itself. English uses a specific word order to denote the subject and object of a verb: 'cats like dogs' and 'dogs like cats' are the same words but reordered to change who's doing what. Russian, however, uses a [[Russian/Grammar/Cases|case]] system to denote what's the object and what's the subject - that is, the words change their endings depending on what they're doing in a sentence.  This means that word order can instead be used to emphasise parts of a sentence; specifically, the word placed at the end of a sentence is the one emphasised. In practice, Russians usually say "Subject object verb", such as "I her like". Other word orders place emphasis on other words: "I like her" emphasises that it is ''her'' I like, while "Her like I" emphasises that it is ''me'' who likes her.
+
+Because verbs take on different forms for different pronouns, Russians often omit the noun or pronoun altogether if it's obvious who the speaker is:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́.''' - ''da, ga-vuh-<small>RYOO</small>''
+This can also be done for the [[Russian/Grammar/Future tense|future tense]], but not the [[Russian/Grammar/Past tense|past tense]], for reasons that will be obvious once you learn those tenses.
+Finally, note that objects like 'plane' or 'boat' call for the third-person form of a verb: 'He is flying' and 'The plane is flying' both use the third-person singular form '''лета́ет'''.
+
+=== Questions and negation ===
+To form a question in Russian, simply place an higher intonation on stress of the verb. This is different to English, which often reorders sentences ('You are riding.' - 'Are you riding?') or adds auxiliary words ('You ride' - 'Do you ride?'), with a higher intonation on the end of the sentence. The use of pronouns in asking questions ('He is riding' - 'Who is riding?'; 'You are going here' - 'You are going where?') is detailed more thoroughly on the page on [[Russian/Interrogative Pronouns|interrogative pronouns]].
+
+To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'. The use of this phrase, its negation, and forming the genitive case in general are discussed further on the [[Russian/Grammar/Genitive case|genitive page]].
+
+=== The Infinitive ===
+As discussed above, verbs by default are in their ''infinitive'' form, meaning they haven't been conjugated yet. In English, this corresponds to the 'to...' form of a verb; in the sentence, "I want to live in Moscow", 'to live' is the infinitive of that verb. Just like in English, dictionaries give verbs in their infinitive, unconjugated form. The infinitive almost always ends in '''-ть''', and conjugating a verb is as simple as removing this '''-ть''' and adding the appropriate ending.
+:What do you want to do? - '''Что вы хотите делать?''' - ''shto vi kho-<small>TEE</small>-tye'' - '''делать''' is the infinitive of the verb 'to do'
+
+== The Present tense ==
+The present tense is used much like in English, with a few important exceptions. First, Russians omit the verb 'to be' in the present tense: "She is nice" in Russian is '''Она симпатичная''', with no word for 'is'. A long hyphen or dash is used to equate two nouns together, where the word 'is' or 'are' is used in English: "They are students" is '''Они – студенты'''. Second, as discussed more in the page on the [[Russian/Grammar/Future tense|future tense]], there are times when Russians use the present tense when English wouldn't, such as reporting a story.
+
+Second, there is the concept of [[Russian/Verbal_Aspect|verbal aspect]]: simply put, all verbs in Russian have ''two'' words, the imperfective and the perfective. For instance, 'to speak' is '''говорить''' ''and'' '''сказать'''. Which you use is discussed more thoroughly on the specific page, but for our purposed we just need to know that the present tense can only be formed using the ''imperfective'' word. So to say "I am speaking", you use the imperfective '''говорить''', not the perfective '''сказать'''. So, unless otherwise stated, the rest of this page will use imperfective verbs.
+
+So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings. Verbs in Russian conjugate in one of two ways.
+
+===First conjugation===
+These verbs usually end in '''-ать''', though there are enough exceptions that it's probably best to simply learn the conjugation of a new verb. Eventually, you will be able to 'predict' how verbs conjugate. To conjugate these verbs, remove the '''-ть''', and add the appropriate ending:
+
+{| class="wikitable" style="text-align:center"
+|-
+! Я, I !! Мы, we !! Ты, you (informal) !! Вы, you (formal) !! Он/она/оно !! Они, they
+|-
+| -ю || -ем || -ешь || -ете || -ет || -ют
+|}
+
+Remember, these six forms are for each personal pronoun ('I', 'we', etc). If you want to refer to something else, such as "The plane flies" or "The boat sails", remember that 'plane' and 'boat' are in the third-person, so would take the '''он''' ending of '''-ет'''.
+
+Let's look at how you conjugate '''читать''', 'to read':
+
+{| class="wikitable"
+|-
+!  !! Singular !! Plural
+|-
+! First person
+| Я читаю<br>I am reading<br>I read || Мы читаем<br>We are reading<br>We read
+|-
+! Second person
+| Ты читаешь<br>You are reading<br>You read || Вы читаете<br>You are reading<br>You read
+|-
+! Third person
+| Он/она/оно читает<br>He/she/it is reading<br>He/she/it reads || Они читают<br>They are reading<br>They read
+|-
+|}
+
+Notice that conjugating verbs forms the present tense, and a Russian present tense verb can be translated as either the ''simple present'' tense ('I read') or the ''continuous present'' tense ('I am reading') in English.
+
+===Second conjugation===
+Second conjugation verbs usually end in '''-ить'''. Like other verbs, to conjugate them, simply remove the '''-ть''' and add the appropriate ending. These endings are similar to first-conjugation verbs, though with a change in vowel:
+
+{| class="wikitable" style="text-align:center"
+|-
+! rowspan="2"|  !! colspan="2"|First Person !! colspan="2"|Second Person !! colspan="2"|Third Person
+|-
+! Я, I !! Мы, we !! Ты, you (informal) !! Вы, you (formal) !! Он/она/оно !! Они, they
+|-
+! First conjugation
+| -ю || -ем || -ешь || -ете || -ет || -ют
+|-
+! Second conjugation
+| -ю || -им || -ишь || -ите || -ит || -ят
+|}
+
+Let's look at how you conjugate '''говори́ть''', 'to speak':
+
+{| class="wikitable"
+|-
+!  !! Singular !! Plural
+|-
+! First person
+| Я говорю́<br>I am speaking<br>I speak || Мы говори́м<br>We are speaking<br>We speak 
+|-
+! Second person
+| Ты говори́шь<br>You are speaking<br>You speak || Вы говори́те<br>You are speaking<br>You speak 
+|-
+! Third person
+| Он/она/оно говори́т<br>He/she/it is speaking<br>He/she/it speaks || Они говоря́т<br>They are speaking<br>They speak 
+|-
+|}
+
+=== Exceptions ===
+Like all things in Russian, there are exceptions to the above rules:
+*Seven verbs with the infinitive ending '''–еть''', and three which end in '''-ать''', take the second conjugation: '''видеть''' ('to see'), '''вертеть''' ('to twirl'), '''обидеть''' ('to offend'), '''зависеть''' ('to depend'), '''ненавидеть''' ('to hate'), '''терпеть''' ('to tolerate'), '''смотреть''' ('to watch'), '''слышать''' ('to hear'), '''дышать''' ('to breathe'), and '''держать''' ('to keep').
+*Two verbs with the infinitive ending '''–ить''' take the first conjugation endings: '''брить''' ('to shave') and '''стелить''' ('to lay').
+*The verb '''гнать''' ('to drive') takes the second conjugation endings  - However, verbs of motion are quite complex, and will be discussed in [[Russian/Grammar/Verbs_of_Motion|their own page]].
+
+== The Past and Future tenses ==
+Now that we've covered the present tense, there are two other tenses that can be used in Russian: [[Russian/Grammar/Past tense|the past tense]] and [[Russian/Grammar/Future tense|the future tense]]. These are detailed more thoroughly on their own pages, but in brief, they are formed as follows:
+* To form the [[Russian/Grammar/Past tense|<small>PAST TENSE</small>]] of a verb, remove '''-ть''' and add '''-л''' ('''-ла''' if the subject is feminine, '''-ло''' if neuter, '''-ли''' if plural). This rule applies to both [[Russian/Verbal Aspect|aspects]] of a verb. So, "I was speaking" (imperfective) is '''я говорил''', while "I spoke" (perfective) is '''я сказал'''.
+* To form the [[Russian/Grammar/Future tense|<small>FUTURE TENSE</small>]] of verbs, choose your aspect. If you're using the ''perfective'' aspect to form the future, simply conjugate it as you would the imperfective aspect, and this creates the future tense. If you're using the ''imperfective'' aspect to form the future, conjugate the verb 'to be', '''быть''', and add the infinitive of the imperfective. So, "I will speak" (perfective) is '''я скажу''', while "I will be speaking" (imperfective) is '''я буду говорить'''.
+
+{{BookCat}}
+{{Russian}}
