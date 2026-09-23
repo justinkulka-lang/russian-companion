@@ -1,0 +1,685 @@
+{
+  "retrieved": "2026-09-23",
+  "openrussian": {
+    "repository": "https://github.com/Badestrand/russian-dictionary",
+    "commit": "50e210c4803237779cb562bc1abcea529066031c",
+    "commitDate": "2021-08-09T10:43:51Z",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseFile": "openrussian/LICENSE",
+    "licenseSha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "files": {
+      "nouns.csv": {
+        "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9",
+        "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv"
+      },
+      "verbs.csv": {
+        "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a",
+        "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv"
+      },
+      "others.csv": {
+        "gitBlob": "2f819ba39652fceab3afe39ff9ef2a69b0dbd49d",
+        "sha256": "9f22a16b17fc9a564298112168b667fced11aafb254ccebf5b7544fc37cdaa92",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv"
+      }
+    },
+    "rows": [
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:стол",
+        "bare": "стол",
+        "accented": "стол",
+        "line": "стол\tстол\ttable, desk, board; diet, cooking, cuisine; department, section\tTisch, Tafel; Essen, Kost; Büro, Abteilung\tm\t\t0\t0\t0\t0\tсто'л\tстола'\tстолу'\tсто'л\tстоло'м\tстоле'\tстолы'\tстоло'в\tстола'м\tстолы'\tстола'ми\tстола'х",
+        "sha256": "eb7b12cf08326c5ad56e52053715597e41354653484d9db163332015cce599fd"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:дом",
+        "bare": "дом",
+        "accented": "дом",
+        "line": "дом\tдом\thouse, home, house-hold\tHaus, Gebäude, Zuhause, Heim\tm\t\t0\t0\t0\t0\tдо'м\tдо'ма\tдо'му\tдо'м\tдо'мом\tдо'ме\tдома'\tдомо'в\tдома'м\tдома'\tдома'ми\tдома'х",
+        "sha256": "edb0e2a2bf4898a1be25db0c841054a54637ad18177f3bd72ee3c5bb2b6ec402"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:город",
+        "bare": "город",
+        "accented": "го'род",
+        "line": "город\tго'род\ttown\tStadt\tm\t\t0\t0\t0\t0\tго'род\tго'рода\tго'роду\tго'род\tго'родом\tго'роде\tгорода'\tгородо'в\tгорода'м\tгорода'\tгорода'ми\tгорода'х",
+        "sha256": "a4e2bdd9bf5b2d10a7a68d5ffe3b5e7945d2e8c34664d56bf091e3a040a49deb"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:брат",
+        "bare": "брат",
+        "accented": "брат",
+        "line": "брат\tбрат\tbrother\tBruder\tm\t\t1\t0\t0\t0\tбрат\tбра'та\tбра'ту\tбра'та\tбра'том\tбра'те\tбра'тья\tбра'тьев\tбра'тьям\tбра'тьев\tбра'тьями\tбра'тьях",
+        "sha256": "9ad20a8ab851b4060bfd6ec5fe20c56076720f165d5e066897186a276f4206c0"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:учитель",
+        "bare": "учитель",
+        "accented": "учи'тель",
+        "line": "учитель\tучи'тель\tteacher, tutor\tLehrer\tm\tучительница\t1\t0\t0\t0\tучи'тель\tучи'теля\tучи'телю\tучи'теля\tучи'телем\tучи'теле\tучителя'\tучителе'й\tучителя'м\tучителе'й\tучителя'ми\tучителя'х",
+        "sha256": "e8a0c716bc71592323088795465457c4e05c5e9c8c36576f3514dfa4502e325b"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:хлеб",
+        "bare": "хлеб",
+        "accented": "хлеб",
+        "line": "хлеб\tхлеб\tbread, loaf, corn, crops, cereals, grain, living, means of subsistence, daily bread\tBrot\tm\t\t0\t0\t0\t0\tхле'б\tхле'ба\tхле'бу\tхле'б\tхле'бом\tхле'бе\tхле'бы\tхле'бов\tхле'бам\tхле'бы\tхле'бами\tхле'бах",
+        "sha256": "908d420cb8540a32ca6bb103fc8de969e47cde2c9c8f5d67234008e952aa6543"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:чай",
+        "bare": "чай",
+        "accented": "чай",
+        "line": "чай\tчай\ttea, tea-party, methinks, maybe\tTee\tm\t\t0\t0\t0\t0\tча'й\tча'я\tча'ю\tча'й\tча'ем\tча'е\tчаи'\tчаёв\tчая'м\tчаи'\tчая'ми\tчая'х",
+        "sha256": "012bb78a5c5a0abfe2c015a09fd1fc4ea08a549845a38629de79d405fa00f2b8"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:друг",
+        "bare": "друг",
+        "accented": "друг",
+        "line": "друг\tдруг\tfriend\tFreund\tm\t\t1\t0\t0\t0\tдруг\tдру'га\tдру'гу\tдру'га\tдру'гом\tдру'ге\tдрузья'\tдрузе'й\tдрузья'м\tдрузе'й\tдрузья'ми\tдрузья'х",
+        "sha256": "f833947bbe324f91369455fc2a61e124a1ae5833c43549b4ada5909d57dac794"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:книга",
+        "bare": "книга",
+        "accented": "кни'га",
+        "line": "книга\tкни'га\tbook, volume\tBuch\tf\t\t0\t0\t0\t0\tкни'га\tкни'ги\tкни'ге\tкни'гу\tкни'гой,     кни'гою\tкни'ге\tкни'ги\tкни'г\tкни'гам\tкни'ги\tкни'гами\tкни'гах",
+        "sha256": "922375113b16b2fe4d5851dd01f8239ee1bc9e17c07d7eee05ede3d8e9158e38"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:вода",
+        "bare": "вода",
+        "accented": "вода'",
+        "line": "вода\tвода'\twater\tWasser\tf\t\t0\t0\t0\t0\tвода'\tводы'\tводе'\tво'ду\tводо'й,  водо'ю\tводе'\tво'ды\tво'д\tво'дам\tво'ды\tво'дами\tво'дах",
+        "sha256": "3cd6ee84169a02e46422c02f8aaec197d80da5809ec65cc2a05f5b3ee9f17f71"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:школа",
+        "bare": "школа",
+        "accented": "шко'ла",
+        "line": "школа\tшко'ла\tschool, schoolhouse\tSchule\tf\t\t0\t0\t0\t0\tшко'ла\tшко'лы\tшко'ле\tшко'лу\tшко'лой, шко'лою\tшко'ле\tшко'лы\tшко'л\tшко'лам\tшко'лы\tшко'лами\tшко'лах",
+        "sha256": "d4c19267e74f93a0369127339111575c5d53b9b60dadcd860e63f44b85e2fc9f"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:работа",
+        "bare": "работа",
+        "accented": "рабо'та",
+        "line": "работа\tрабо'та\twork, working, job\tArbeit, Werk (eines Künstlers etc.)\tf\t\t0\t0\t0\t0\tрабо'та\tрабо'ты\tрабо'те\tрабо'ту\tрабо'той,  рабо'тою\tрабо'те\tрабо'ты\tрабо'т\tрабо'там\tрабо'ты\tрабо'тами\tрабо'тах",
+        "sha256": "a9be4d3cf2d6cf89690ce127b89fa75037e632e796e537d03a46006d70ea431a"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:мама",
+        "bare": "мама",
+        "accented": "ма'ма",
+        "line": "мама\tма'ма\tmom, mama, mommy, mummy\tMama, Mutti\tf\t\t1\t0\t0\t0\tма'ма\tма'мы\tма'ме\tма'му\tма'мой,   ма'мою\tма'ме\tма'мы\tма'м\tма'мам\tма'м\tма'мами\tма'мах",
+        "sha256": "4a9c2d3f6352b1b0400f0b5cfa62b992b4bb626109d231c8586e9226959ecfcb"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:женщина",
+        "bare": "женщина",
+        "accented": "же'нщина",
+        "line": "женщина\tже'нщина\twoman, women, womanfolk, womankind\tFrau, Dame\tf\t\t1\t0\t0\t0\tже'нщина\tже'нщины\tже'нщине\tже'нщину\tже'нщиной, же'нщиною\tже'нщине\tже'нщины\tже'нщин\tже'нщинам\tже'нщин\tже'нщинами\tже'нщинах",
+        "sha256": "83bb7f534c85efd0d19d983f5e4c87a318b998ebb49c4db60054cadaa24b6734"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:семья",
+        "bare": "семья",
+        "accented": "семья'",
+        "line": "семья\tсемья'\tfamily\tFamilie\tf\t\t0\t0\t0\t0\tсемья'\tсемьи'\tсемье'\tсемью'\tсемьёй, семьёю\tсемье'\tсе'мьи\tсеме'й\tсе'мьям\tсе'мьи\tсе'мьями\tсе'мьях",
+        "sha256": "0120cb10b6434c32e1441ab16e38650673a46b964f1f24407e1985741d748a67"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:дверь",
+        "bare": "дверь",
+        "accented": "дверь",
+        "line": "дверь\tдверь\tdoor\tTür\tf\t\t0\t0\t0\t0\tдверь\tдве'ри\tдве'ри\tдверь\tдве'рью\tдве'ри, двери'\tдве'ри\tдвере'й\tдверя'м\tдве'ри\tдверьми',  дверя'ми\tдверя'х",
+        "sha256": "7f273e2fc162274c62d477cae21d8fab453ea1b4787418019ac88fb1cdb158a8"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:окно",
+        "bare": "окно",
+        "accented": "окно'",
+        "line": "окно\tокно'\twindow, casement-window, window-sill, gap, opening, port, slot, free period, break\tFenster\tn\t\t0\t0\t0\t0\tокно'\tокна'\tокну'\tокно'\tокно'м\tокне'\tо'кна\tо'кон\tо'кнам\tо'кна\tо'кнами\tо'кнах",
+        "sha256": "4d62d7f74d9f03449b46a7f2ffd0a7fa8c70960439456508e38d8c31a45b6e5a"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:письмо",
+        "bare": "письмо",
+        "accented": "письмо'",
+        "line": "письмо\tписьмо'\tletter, writing, script\tBrief, Schreiben\tn\t\t0\t0\t0\t0\tписьмо'\tписьма'\tписьму'\tписьмо'\tписьмо'м\tписьме'\tпи'сьма\tпи'сем\tпи'сьмам\tпи'сьма\tпи'сьмами\tпи'сьмах",
+        "sha256": "9eda4b8987960c230ccbcff2165823adb9454d139a3ee5c8598236956501de2e"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:молоко",
+        "bare": "молоко",
+        "accented": "молоко'",
+        "line": "молоко\tмолоко'\tmilk\tMilch\tn\t\t0\t0\t1\t0\tмолоко'\tмолока'\tмолоку'\tмолоко'\tмолоко'м\tмолоке'\t\t\t\t\t\t",
+        "sha256": "15e9a06b5af1d2099052a4b96ef1efba42848e6bc24cf07c5e8d83aa5683e958"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:море",
+        "bare": "море",
+        "accented": "мо'ре",
+        "line": "море\tмо'ре\tsea, ocean\tMeer, die See\tn\t\t0\t0\t0\t0\tмо'ре\tмо'ря\tмо'рю\tмо'ре\tмо'рем\tмо'ре\tморя'\tморе'й\tморя'м\tморя'\tморя'ми\tморя'х",
+        "sha256": "2f801612ada9e3d051ca4e566aeb6392b1e9a702cb6dc6fdc0e6438a44c783ef"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:место",
+        "bare": "место",
+        "accented": "ме'сто",
+        "line": "место\tме'сто\tplace, spot, site, locality; region, area; site, scene; room, space; job, position; piece of luggage\tPlatz, Ort, Stelle; Sitzplatz, Koje; Gepäckstück\tn\t\t0\t0\t0\t0\tме'сто\tме'ста\tме'сту\tме'сто\tме'стом\tме'сте\tместа'\tме'ст\tместа'м\tместа'\tместа'ми\tместа'х",
+        "sha256": "1ce4cdb17f847a8808b2ccc3d00601f5f7b321c95e466ec1cdef0dd7373a854f"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:слово",
+        "bare": "слово",
+        "accented": "сло'во",
+        "line": "слово\tсло'во\tword; speech\tWort, Vokabel; Rede, Ansprache; Versprechen\tn\t\t0\t0\t0\t0\tсло'во\tсло'ва\tсло'ву\tсло'во\tсло'вом\tсло'ве\tслова'\tсло'в\tслова'м\tслова'\tслова'ми\tслова'х",
+        "sha256": "911c0930f1371a5dc024378d2372567554d8cdee63c09e2dad2231333daa6a52"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:мужчина",
+        "bare": "мужчина",
+        "accented": "мужчи'на",
+        "line": "мужчина\tмужчи'на\tman\tMann\tm\t\t1\t0\t0\t0\tмужчи'на\tмужчи'ны\tмужчи'не\tмужчи'ну\tмужчи'ной,  мужчи'ною\tмужчи'не\tмужчи'ны\tмужчи'н\tмужчи'нам\tмужчи'н\tмужчи'нами\tмужчи'нах",
+        "sha256": "c2819b1eb7015ff0ae13c6b3059bdb4cde862d3c28d26c61dba02c6490dc2a1c"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:дядя",
+        "bare": "дядя",
+        "accented": "дя'дя",
+        "line": "дядя\tдя'дя\tuncle, Mister, man, fellow\tOnkel\t\t\t1\t0\t0\t0\tдя'дя\tдя'ди\tдя'де\tдя'дю\tдя'дей,    дя'дею\tдя'де\tдядья'\tдя'дей\tдядья'м\tдя'дей\tдядья'ми\tдядья'х",
+        "sha256": "1833cffce06505ce92fa59273e20bb5703fd49b52e8dd2915a81bd9dd198ed19"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:собака",
+        "bare": "собака",
+        "accented": "соба'ка",
+        "line": "собака\tсоба'ка\tdog\tHund; Klammeraffe (@-Symbol)\tf\t\t1\t0\t0\t0\tсоба'ка\tсоба'ки\tсоба'ке\tсоба'ку\tсоба'кой, соба'кою\tсоба'ке\tсоба'ки\tсоба'к\tсоба'кам\tсоба'к\tсоба'ками\tсоба'ках",
+        "sha256": "16e61048d5cb7b8146b014ff4c9759cae78d56cf16c27837f0fc53613b513b89"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:радио",
+        "bare": "радио",
+        "accented": "ра'дио",
+        "line": "радио\tра'дио\tradio, radio set, wireless\tRadio, Radioapparat, Radioempfänger; Funk, Rundfunk, Hörfunk\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "26df29745f2bd384559304b135b6f0d22437c1ebbd802e0aaa710755c857c855"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:такси",
+        "bare": "такси",
+        "accented": "такси'",
+        "line": "такси\tтакси'\ttaxi\tTaxi\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "ce5027102545dee50e5ae9be296b6b3a7a7d2b537e4f1ecc8377c11ebff2892e"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:метро",
+        "bare": "метро",
+        "accented": "метро'",
+        "line": "метро\tметро'\tmetro; subway; underground\tU-Bahn, Metro\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "994665e5aba3318c385321fb4a04ac720cf4e6500b0ee398fdd2c7be43713750"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:кино",
+        "bare": "кино",
+        "accented": "кино'",
+        "line": "кино\tкино'\tcinema, pictures, movies\tKino, Film, Filmkunst, Kinematographie\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "47ea72bbf47c61cddd1cbada65e0743eaf659316d48358d4cd1605abae579111"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:пальто",
+        "bare": "пальто",
+        "accented": "пальто'",
+        "line": "пальто\tпальто'\tcoat, topcoat\tMantel\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "e1397af2953e324cfe48f0ee07d45eea635a9caad8407831a978b09116d65ed6"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:кофе",
+        "bare": "кофе",
+        "accented": "ко'фе",
+        "line": "кофе\tко'фе\tcoffee\tKaffee\tm\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "20ca5bd0e92f1b3bde30eb13c3d1bb35ed8386a85a00d5eea8764e6cedf55f37"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:кафе",
+        "bare": "кафе",
+        "accented": "кафе'",
+        "line": "кафе\tкафе'\tcafé, coffee-house\tCafé\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "c697c626fb27d1bd33d007e18f43bbd6e3a265690162f67cb3720df6d31db0b6"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:меню",
+        "bare": "меню",
+        "accented": "меню'",
+        "line": "меню\tменю'\tmenu, bill of fare\tMenü; Speisekarte\tn\t\t0\t1\t0\t0\t\t\t\t\t\t\t\t\t\t\t\t",
+        "sha256": "7cfa36de84e4110fd32f56c9f4f9025cc134468b6205aacc7f14696ccca5ac92"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:я",
+        "bare": "я",
+        "accented": "я",
+        "line": "я\tя\tI\tich",
+        "sha256": "93a4434b25c3d81ed842164c09dc51b990784267f7431434e631ab92d2e12e4b"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:ты",
+        "bare": "ты",
+        "accented": "ты",
+        "line": "ты\tты\tyou\tdu",
+        "sha256": "5893c476a17e1529e605b40bdb8cc0d5fb140475447a0694d8d9729aa1458a4f"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:он",
+        "bare": "он",
+        "accented": "он",
+        "line": "он\tон\the; it (masculine inanimate nouns)\ter",
+        "sha256": "95fc98fe47d22da2f3cd6f4a383c2061e4782a431346fe19cbdd0aee81c64c36"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:она",
+        "bare": "она",
+        "accented": "она'",
+        "line": "она\tона'\tshe, it, he, she, it, he, she\tsie",
+        "sha256": "8e8bd0542bb0536c4cfd74d163d9642c42c8640cec28fac889a099c0e5c91da9"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:оно",
+        "bare": "оно",
+        "accented": "оно'",
+        "line": "оно\tоно'\tit, he, she\tes",
+        "sha256": "ec7182563538f878f6a9a3b890554c2e18ad36fb38e2ec0a9e4937c30abede70"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:мы",
+        "bare": "мы",
+        "accented": "мы",
+        "line": "мы\tмы\twe\twir",
+        "sha256": "2896fda2e1812b2dfcd7ffbb040ec07f346f8db64f7e96b0607def1dc1e4f71b"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:вы",
+        "bare": "вы",
+        "accented": "вы",
+        "line": "вы\tвы\tyou (plural); you (formal)\tihr (Plural); Sie (höfliches Du)",
+        "sha256": "ac07c6ce9bb0e9a53a460306d3dca0e5a2120c9d80494acc401586cf3e4167da"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:они",
+        "bare": "они",
+        "accented": "они'",
+        "line": "они\tони'\tthey\tsie (Plural)",
+        "sha256": "9b4482d3bc56216bcd939c615ec1ea282c8bccdee5a52f69dacc0b96d7b6b47e"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:кто",
+        "bare": "кто",
+        "accented": "кто",
+        "line": "кто\tкто\twho\twer",
+        "sha256": "06a4d42f38a8ed92e9a03b209ce4d37252f58bd7c0a70dc135399e55283fa3c2"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:что",
+        "bare": "что",
+        "accented": "что",
+        "line": "что\tчто\twhat\twas; dass",
+        "sha256": "69f9c09888f123338d82653f529a8ea6655065c71546ec5b23f0f142a6e455c9"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:где",
+        "bare": "где",
+        "accented": "где",
+        "line": "где\tгде\twhere\two",
+        "sha256": "c4defb33537d2044622e7c20bf78084c5c9a03ab0c8ecb86d19d67df4a5bbcf3"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:когда",
+        "bare": "когда",
+        "accented": "когда'",
+        "line": "когда\tкогда'\twhen, while, as\twann / wenn; als",
+        "sha256": "331829b0dc4a02606a316aa7f694eff94307298acf6deaa750806535893d0707"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:почему",
+        "bare": "почему",
+        "accented": "почему'",
+        "line": "почему\tпочему'\twhy\twarum, weshalb",
+        "sha256": "9fbca5ab79928c4402d221302b54a0de709eda3237cbe6a6706bde720dafe5c2"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:это",
+        "bare": "это",
+        "accented": "э'то",
+        "line": "это\tэ'то\tthis is; that is; it\tdas",
+        "sha256": "4dad7a42cb69fc6b33b2cd47a7473c0ff4d4eb1a86576311f36e077ea3d7ac7f"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:здравствуйте",
+        "bare": "здравствуйте",
+        "accented": "здра'вствуйте",
+        "line": "здравствуйте\tздра'вствуйте\thello\tHallo (formell), Guten Tag",
+        "sha256": "32942d267484002191ed241a275fd5fe9423bec065119316a14785aa7012c516"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:спасибо",
+        "bare": "спасибо",
+        "accented": "спаси'бо",
+        "line": "спасибо\tспаси'бо\tthanks, thank you\tdanke",
+        "sha256": "4cd2d0391507d6a9d2d96cb2e47455d13787f710d6c98c848081262b0a70a875"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:пожалуйста",
+        "bare": "пожалуйста",
+        "accented": "пожа'луйста",
+        "line": "пожалуйста\tпожа'луйста\tplease; you are welcome; here you go\tbitte, bitte sehr, bitte schön",
+        "sha256": "0bd65e65bae281264dc2cc246b5b10a0b4ed938f42d462f957456042bfaf98af"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:да",
+        "bare": "да",
+        "accented": "да",
+        "line": "да\tда\tyes\tja; aber; und",
+        "sha256": "19f900b6642e2d398b97b6f062a6791ad790ed1fa7f200c50821f74dcfa5589e"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:нет",
+        "bare": "нет",
+        "accented": "нет",
+        "line": "нет\tнет\tno; not\tnein; nicht",
+        "sha256": "a6ce9cb4e6f8b2d458e35d5676dbf8ee6aacd182179ead91668350d84187d404"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:в",
+        "bare": "в",
+        "accented": "в",
+        "line": "в\tв\tin; at; into; to; for; on; within\tin (Ort), im (Ort); zu (Ort), zum (Ort); um (Zeit); pro (mal)",
+        "sha256": "52fe259a76948983f9ac78db6b3ceaca466b4032f1147b6d069ee587605a4daf"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:на",
+        "bare": "на",
+        "accented": "на",
+        "line": "на\tна\ton (place); on (day/week); on (transport means); to; onto, upon; at\tauf (Objekt); in (Ort); auf (Bewegung dahin); dahin (Ort); für (Zeitdauer, Wert, Sinn); für/am (Zeit)",
+        "sha256": "09cecc56e938e829bdcf510d4c1b7c471f190ac9c6ceee08a5a358a9b9ad90da"
+      },
+      {
+        "file": "others.csv",
+        "recordId": "others.csv:о",
+        "bare": "о",
+        "accented": "о",
+        "line": "о\tо\tabout; of; on; against\tüber",
+        "sha256": "726cecb96484a5f35c1ce57054dd8f97f91bdd7a173fec619c8efc3fd06af64a"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:чита'ть",
+        "bare": "читать",
+        "accented": "чита'ть",
+        "line": "читать\tчита'ть\tread\tlesen\timperfective\tпрочитать;почитать;прочесть\tчита'й\tчита'йте\tчита'л\tчита'ла\tчита'ло\tчита'ли\tчита'ю\tчита'ешь\tчита'ет\tчита'ем\tчита'ете\tчита'ют",
+        "sha256": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:де'лать",
+        "bare": "делать",
+        "accented": "де'лать",
+        "line": "делать\tде'лать\tmake, do\tmachen, erledigen; tun; anfertigen, herstellen\timperfective\tсделать;поделать\tде'лай\tде'лайте\tде'лал\tде'лала\tде'лало\tде'лали\tде'лаю\tде'лаешь\tде'лает\tде'лаем\tде'лаете\tде'лают",
+        "sha256": "14e204ce2f664f2732fee08193d113d914d6de216bc64f127c79fbd7f1085b6a"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:знать",
+        "bare": "знать",
+        "accented": "знать",
+        "line": "знать\tзнать\tknow, be aware, be acquainted, have a knowledge, aristocracy, nobility, the elite, evidently, it seems\twissen, kennen, sich auskennen, Bescheid wissen, können, verstehen, beherrschen\timperfective\tузнать\tзна'й\tзна'йте\tзна'л\tзна'ла\tзна'ло\tзна'ли\tзна'ю\tзна'ешь\tзна'ет\tзна'ем\tзна'ете\tзна'ют",
+        "sha256": "5aa25e2178376b734fba6bf7e4e8a4ec6ef4f43d9cfc8c98e7b4c545c96cd4cc"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:рабо'тать",
+        "bare": "работать",
+        "accented": "рабо'тать",
+        "line": "работать\tрабо'тать\twork, operate\tarbeiten, berufstätig sein, sein, tätig sein, geöffnet sein; funktionieren, in Betrieb sein, gehen, laufen\timperfective\tпоработать;сработать\tрабо'тай\tрабо'тайте\tрабо'тал\tрабо'тала\tрабо'тало\tрабо'тали\tрабо'таю\tрабо'таешь\tрабо'тает\tрабо'таем\tрабо'таете\tрабо'тают",
+        "sha256": "b8d975eb8d78e19b3fece108b60ab916d3e29d08a886c27f2608c6bb9e7de8db"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:понима'ть",
+        "bare": "понимать",
+        "accented": "понима'ть",
+        "line": "понимать\tпонима'ть\tunderstand, comprehend, realize\tverstehen, erkennen; begreifen, einsehen\timperfective\tпонять\tпонима'й\tпонима'йте\tпонима'л\tпонима'ла\tпонима'ло\tпонима'ли\tпонима'ю\tпонима'ешь\tпонима'ет\tпонима'ем\tпонима'ете\tпонима'ют",
+        "sha256": "bcf3cbfe78d01561b4c1eca851fe182a4fffc2cf198ffd13bdad66ed76952254"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:слу'шать",
+        "bare": "слушать",
+        "accented": "слу'шать",
+        "line": "слушать\tслу'шать\tlisten, hear, attend, examine chest, auscultate, obey\tzuhören, * hören (nur im Sinne von \"auch zuhören\"); hinhören, lauschen\timperfective\tпослушать\tслу'шай\tслу'шайте\tслу'шал\tслу'шала\tслу'шало\tслу'шали\tслу'шаю\tслу'шаешь\tслу'шает\tслу'шаем\tслу'шаете\tслу'шают",
+        "sha256": "64f8d34720dfe1c1c8f3c4e264c08c62e627a772be051baac0bf22c3935ea2ac"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:жить",
+        "bare": "жить",
+        "accented": "жить",
+        "line": "жить\tжить\tlive\tleben, wohnen\timperfective\tпрожить\tживи'\tживи'те\tжи'л\tжила'\tжи'ло,жило'\tжи'ли\tживу'\tживёшь\tживёт\tживём\tживёте\tживу'т",
+        "sha256": "c864c4f342cb69277e9eb394cc3650401b28665de820ca21a0da26a02035e89c"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:говори'ть",
+        "bare": "говорить",
+        "accented": "говори'ть",
+        "line": "говорить\tговори'ть\tspeak, talk gapirish\tsprechen, reden, sagen\timperfective\tсказать;поговорить\tговори'\tговори'те\tговори'л\tговори'ла\tговори'ло\tговори'ли\tговорю'\tговори'шь\tговори'т\tговори'м\tговори'те\tговоря'т",
+        "sha256": "bf45fbab3f69925b30c759fcdefa015596be65ee6dc72ae55b8dfe64d58268f0"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:ви'деть",
+        "bare": "видеть",
+        "accented": "ви'деть",
+        "line": "видеть\tви'деть\tsee\tsehen; treffen, begegnen\timperfective\tзавидеть;увидеть\tви'дь\tви'дьте\tви'дел\tви'дела\tви'дело\tви'дели\tви'жу\tви'дишь\tви'дит\tви'дим\tви'дите\tви'дят",
+        "sha256": "6a566df27d920aaa378b06969e62c3ad670a5693a34162617fdcda25e73eb70b"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:смотре'ть",
+        "bare": "смотреть",
+        "accented": "смотре'ть",
+        "line": "смотреть\tсмотре'ть\tlook, watch\tschauen, sehen, ansehen, zusehen\timperfective\tпосмотреть\tсмотри'\tсмотри'те\tсмотре'л\tсмотре'ла\tсмотре'ло\tсмотре'ли\tсмотрю'\tсмо'тришь\tсмо'трит\tсмо'трим\tсмо'трите\tсмо'трят",
+        "sha256": "94d53ef5f17d56d210c24ab9f2ef57cba5d93d3c6de6ca8a3584dde867974f06"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:писа'ть",
+        "bare": "писать",
+        "accented": "писа'ть",
+        "line": "писать\tписа'ть\twrite; paint\tschreiben, malen\timperfective\tнаписать\tпиши'\tпиши'те\tписа'л\tписа'ла\tписа'ло\tписа'ли\tпишу'\tпи'шешь\tпи'шет\tпи'шем\tпи'шете\tпи'шут",
+        "sha256": "b6f6315b5fa2ac1b5e7dbd88d143ac26462ff2e238799fae7229d6e91a0cc861"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:идти'",
+        "bare": "идти",
+        "accented": "идти'",
+        "line": "идти\tидти'\tgo, walk\tgehen, kommen, folgen, fahren, abgehen, fuhren, vergehen, stattfinden, laufen, gezeigt werden, stehen, passen\timperfective\t-\tиди'\tиди'те\tшёл\tшла'\tшло'\tшли'\tиду'\tидёшь\tидёт\tидём\tидёте\tиду'т",
+        "sha256": "fce9bac79ac02518ccd21a99ee96a7a98b5f3967f26904e00bc107beb7c475ac"
+      }
+    ]
+  },
+  "wikibooks": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rightsInfoText": "Creative Commons Attribution-Share Alike 4.0",
+    "rightsInfoUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "copyrightsOldid": "4622060",
+    "treatment": "CC BY-SA 4.0 route of the dual CC BY-SA 4.0 and GFDL grant stated by the frozen copyrights page and by site rightsinfo.",
+    "pages": [
+      {
+        "key": "gender",
+        "oldid": "4310736",
+        "file": "wikibooks/gender-4310736.txt",
+        "sha256": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
+        "bytes": 6499
+      },
+      {
+        "key": "pronouns",
+        "oldid": "4585698",
+        "file": "wikibooks/pronouns-4585698.txt",
+        "sha256": "0e220e7623e9e04bbcc78f517f1b11c4788b97ec05e751e71d37fea3a0a93615",
+        "bytes": 9180
+      },
+      {
+        "key": "verbs",
+        "oldid": "4233876",
+        "file": "wikibooks/verbs-4233876.txt",
+        "sha256": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
+        "bytes": 13603
+      },
+      {
+        "key": "cases",
+        "oldid": "4195114",
+        "file": "wikibooks/cases-4195114.txt",
+        "sha256": "ed6e661353627ea6ec98bba7421fbd935dfe29d58f0b7e40e3c6ea3fe5b5cdc7",
+        "bytes": 14526
+      },
+      {
+        "key": "nominative",
+        "oldid": "4213267",
+        "file": "wikibooks/nominative-4213267.txt",
+        "sha256": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
+        "bytes": 16965
+      },
+      {
+        "key": "prepositional",
+        "oldid": "4567336",
+        "file": "wikibooks/prepositional-4567336.txt",
+        "sha256": "efe46e6ed2de1d14ab9823467ecdd889b150e108aec5db1fd42f6416159cec35",
+        "bytes": 11110
+      },
+      {
+        "key": "interrogative",
+        "oldid": "4220316",
+        "file": "wikibooks/interrogative-4220316.txt",
+        "sha256": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291",
+        "bytes": 9941
+      },
+      {
+        "key": "prepositions",
+        "oldid": "4446858",
+        "file": "wikibooks/prepositions-4446858.txt",
+        "sha256": "7d1b646efc992428060503b72870ac5088a837d1adbbb0d001a4963ea97a22d3",
+        "bytes": 6216
+      },
+      {
+        "key": "personal-pronouns",
+        "oldid": "3598527",
+        "file": "wikibooks/personal-pronouns-3598527.txt",
+        "sha256": "58f8709942d5fc76188045276e7e5e2375b6be2e440fb82576ca78fb2df61e40",
+        "bytes": 2154
+      },
+      {
+        "key": "copyrights",
+        "oldid": "4622060",
+        "file": "wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "bytes": 10475
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "source": "Wiktionary entries",
+      "reason": "The frozen Wiktionary:Copyrights revision 87545419 is marked outdated. Individual entry oldids were not captured, so no Wiktionary lexical fact is admitted."
+    },
+    {
+      "source": "Tatoeba",
+      "reason": "No sentence export revision was frozen with per-sentence author, license, and translation provenance."
+    },
+    {
+      "source": "OpenRussian website audio",
+      "reason": "The publisher warns that audio samples may have copyright issues."
+    },
+    {
+      "source": "Tatoeba audio",
+      "reason": "Per-recording rights were not verified."
+    },
+    {
+      "source": "FSI mirrors",
+      "reason": "Primary asset-level government provenance was not established."
+    },
+    {
+      "source": "Penguin PDF",
+      "reason": "Private mapping evidence only. Instructional content is excluded."
+    },
+    {
+      "source": "OpenRussian verb row писать / пи'сать",
+      "reason": "A second row with a different meaning was not selected."
+    },
+    {
+      "source": "OpenRussian gloss for говорить",
+      "reason": "The English field contains a non-gloss artifact, so the English meaning is taken from the frozen Wikibooks verb page instead."
+    },
+    {
+      "source": "OpenRussian gloss for куда",
+      "reason": "The frozen English field says wherever, which is not the Wikibooks where-to gloss. The Wikibooks interrogative page is used instead."
+    }
+  ]
+}

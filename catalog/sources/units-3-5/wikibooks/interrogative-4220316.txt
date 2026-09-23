@@ -1,0 +1,194 @@
+Like all pronouns, the interrogative pronouns are words that replace nouns in a sentence. Interrogative pronouns are those that ask questions, or ''interrogate''. Compare "Peter is doing it" with "Who is doing it" - replacing the noun with an interrogative pronoun turns it into a question, though the rest of the sentence is left intact. Like the nouns they replace, interrogative pronouns must conjugate to suit the appropriate grammatical case. While some words discussed here are used more as adverbs than pronouns, they are still pronouns and are included here for the sake of completeness.
+
+== The pronouns ==
+The twelve interrogative pronouns are as follows:
+{| class="wikitable"
+|-
+! Russian !! Pronunciation !! English
+|-
+| Кто || ''kto'' || Who
+|-
+| Что || ''što'' || What
+|-
+| Когда || ''kogdá'' || When
+|-
+| Почему || ''počemú'' || Why
+|-
+| Как || ''kak'' || How
+|-
+| Где || ''gde'' || Where (location)
+|-
+| Куда || ''kudá'' || Whither, where to
+|-
+| Откуда || ''otkúda'' || Whence, where from
+|-
+| Сколько || ''skól'ko'' || How much, how many
+|-
+| Чей || ''chej'' || Whose
+|-
+| Какой || ''kakój'' || What kind
+|-
+| Который || ''kotóryj'' || Which, what, who(m)
+|}
+==== Russian pronoun quiz====
+[[Russian/Pronouns/Quiz]]
+
+
+There are a few nuances to how you conjugate these pronouns, before we discuss how to use them.
+
+=== Какой, который, чей ===
+You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. They are therefore called ''adjectival'' pronouns. As such, when they are used in a sentence, they take on the ending appropriate for the gender and number of the noun it refers to, and the case appropriate for where it is in the sentence. This can mean that it takes on a different case to its noun.
+
+'''Чей''' is an irregular adjective with unpredictable endings, and conjugates as follows:
+
+{| class="wikitable" style="text-align:center"
+|-
+! Case
+! colspan="2" | Masculine
+! Neuter || Feminine
+! colspan="2" | Plural
+|-
+! Nominative
+| colspan="2" | '''чей'''
+| '''чьё''' || '''чья'''
+| colspan="2" | '''чьи'''
+|-
+! Genitive
+| colspan="3" | '''чьего'''
+| '''чьей'''
+| colspan="2" | '''чьих'''
+|-
+! Dative
+| colspan="3" | '''чьему'''
+| '''чьей'''
+| colspan="2" | '''чьим'''
+|- 
+! Accusative
+| ''inan''<br/>'''чей''' || ''anim''<br/>'''чьего''' || '''чьё''' || '''чью''' || '''чьи''' || '''чьих'''
+|-
+! Instrumental
+| colspan="3" | '''чьим'''
+| '''чьею'''
+| colspan="2" | '''чьими'''
+|-
+! Prepositional
+| colspan="3" | '''чьём'''
+| '''чьей'''
+| colspan="2" | '''чьих'''
+|}
+:Which dog are you talking about? - '''Вы говорите о ''которой'' собаке?''' - ''prepositional feminine singular to match '''собака''', used when there is some definite set of possibly meaned dogs, otherwise better use'' '''о ''какой'''''
+:What kind of cheese? - '''Какой сыр?'''
+:The girl who works here is nice - '''Девушка, которая работает там, симпатичная'''.
+:He talks about the girl who works here - '''Он говорит о девушке, которая работает там.'''
+:Whose house is this? - '''Чей это дом?'''
+:This is Boris' house - '''Это дом Бориса'''
+:Whose money is this? - '''Чьи это деньги?''' (money is plural in Russian, however the indeclineable это is still used in this construction, just as it is with feminine and masculine nouns)
+:Whose is this? - '''Это чьё?'''
+:We know whose it is - '''Мы знаем, чьё это'''
+
+=== Кто, что, сколько ===
+In contrast to the three adjectival pronouns, there are three nominal pronouns, so called because they more closely resemble nouns. These pronouns do not conjugate by gender and number like their adjectival counterparts, but still change according to case:
+
+{| class="wikitable"
+|-
+!  !! Кто !! Что !! Сколько
+|-
+! Nominative
+| Кто || Что || Сколько
+|-
+! Genitive
+| Кого || Чего || Скольких
+|-
+! Dative
+| Кому || Чему || Скольким
+|-
+! Accusative
+| Кого || Что || Сколько
+|-
+! Instrumental
+| Кем || Чем || Сколькими
+|-
+! Prepositional
+| Ком || Чём || Скольких
+|}
+
+If you are familiar with the case system, you may notice that these endings are roughly similar to the adjectival endings, with a few alterations. As ever, '''кого''' is pronounced 'ko-vo', not 'ko-go', and similarly for '''чего'''.
+
+The remaining six pronouns are indeclinable and do not conjugate.
+
+== Asking questions ==
+=== Кто? Что? ===
+To ask a question, use the pronoun as the subject of the verb. If you need to give it a gender, such as when forming the [[Russian/Grammar/Past tense|past tense]], treat '''кто''' as a masculine singular noun (e.g., "Who was working? '''Кто работал?'''), '''что''' as a neuter singular noun (e.g., <!--"What was speaking?" '''Что говорило?''' # WHAT cannot speak. "Что говорило?" would rather be short for "Что оно говорило?"-->"What was rolling?" '''Что катилось?'''), and '''сколько''' as a plural noun (e.g., "How many people are walking?" '''Сколько человек идут? <!--Though one would say "идёт" more likely in this case-->''').
+:What is this? - '''Что это?'''
+<!--:What's he walking into? - '''В чём он идёт?''' # It is "What is he dressed in?"-->
+<!--:That would be "В чём он одет?" '''В чём он идёт?''' makes no sense whatsoever.-->
+:What're you writing with? - '''Чем ты пишешь?'''
+:Who is this? - '''Кто это?'''
+:Who are they? - '''Кто они?'''
+:Who here speaks English? - '''Кто здесь говорит по-английски?'''
+:Whom did you see? - '''Кого ты видел?'''
+:To whom did you write? - '''Кому вы написали?'''
+:He doesn't know what this means - '''Он не знает, что это значит'''
+These can also be used as conjunctions (i.e., words that join sentences together), and are sometimes translated differently than when used as interrogative pronouns:
+:I think that's his house - '''Я думаю, что это его дом''''
+
+=== Как? Когда? Почему? ===
+'''Как''' ('how'), '''когда''' ('when'), and '''почему''' ('why'), don't conjugate, and are used just like in English:
+:How did he do it? - '''Как он это сделал?'''
+:How do you get to the theatre? - '''Как пройти в театр?'''
+:When will you arrive? - '''Когда вы придёте?'''
+:Why doesn't he know? - '''Почему он не знает?'''
+:I don't know how he did it - '''Я не знаю, как он это сделал'''
+There are a number of common colloquialisms that are standard beginner's phrases:
+:How do you do?/How're things? - '''Как дела?'''
+:What's your name?/What do they call you? - '''Как вас/тебя зовут?''' - ''literally, 'how you (they) call?<nowiki>'</nowiki>''
+
+=== Сколько? Какой? Чей? ===
+This pronoun simply means 'how much' or 'how many':
+:How much does it cost? - '''Сколько стоит?'''
+:How much did you write? - '''Сколько вы написали?'''
+Like other quantity words, it also commands the genitive case. It often calls the plural form of a noun:
+:How many apples? - '''Сколько яблок?'''
+:How much water? - '''Сколько воды?'''
+:How many women? - '''Сколько женщин?'''
+The two adjectival pronouns, '''какой''' and '''чей''', are also simple in use. '''Какой''' asks what category something belongs to, or which item of a set, while '''чей''' asks for the owner of something:
+:Whose cat is that? - '''Чья это кошка?'''
+:What kind of cat is that? - '''Какая это кошка?'''
+
+[[/Сколько Какой Чей quiz/]]
+
+=== Где? Куда? Откуда? ===
+The penultimate set of pronouns relate to motion and location. The English 'Where?' can translate in two ways: 'Where are you?' and 'Where are you going?'. '''Где?''' asks the first, locative question, while '''куда''' asks the second, directional question. To ask specifically where someone has come ''from'', use '''откуда'''.
+:Where do you live? - '''Где вы живёте?'''
+:Where are you walking to? - '''Куда вы идёте?'''
+:Where are you walking from? - '''Откуда вы идёте?'''
+
+=== Который? ===
+The primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.
+:Which apple is mine? - '''Которое яблоко моё?'''
+:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+It can also be used as an adjective meaning 'who' or 'whom':
+:The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''
+:The man who changed the world - '''Человек, который изменил мир'''
+
+==Examples==
+
+;к чему это? : What is it?
+
+;Чт'''о''' это? :What is this?
+
+;Кт'''о''' они? :Who are they?
+
+;Куд'''а''' идёт Иван? :Where is Ivan going?
+
+;Отк'''у'''да вы? :Where are you from?
+
+;Когд'''а''' П'''а'''вел и Мар'''и'''на '''е'''здят к род'''и'''телям? :When are Pavel and Marina going to (their) parents?
+
+;Гд'''е''' их род'''и'''тели ж'''и'''ли р'''а'''ньше? :Where did their parents live before?
+
+;В как'''о'''м д'''о'''ме они ж'''и'''ли р'''а'''ньше? :In what kind of house did they live before?
+
+{{BookCat}}
+{{Russian}}

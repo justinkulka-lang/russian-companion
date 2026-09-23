@@ -1,0 +1,154 @@
+Pronouns are words which take the place of nouns (compare "Your husband drove to Florida" with "He drove to Florida"), which denote ownership ("My cat", "Your cat", etc), or which replace nouns with questions (compare "He drove" with "Who drove?" and "What drove?"). Russian has six categories of pronouns, the three most common of which are detailed further on their own pages: Personal, Possessive, Interrogative, Demonstrative, Reflexive, and Determinative. In Russian, the pronouns change according to the gender of the  noun.
+
+== Formality ==
+While most pronouns can be used just as they would in English, there's an important facet to them that English doesn't have: formality.
+
+In modern English, there are two first-person personal pronouns, 'I' and 'we', four third-person pronouns, the singular ('he, 'she', and 'it') and the plural ('they'), and a single second-person pronoun, 'you'. That English has only one second-person personal pronoun, is a peculiarity of our language. In Russian, and indeed in most other languages, there is a distinction between two forms of 'you'.
+
+Like first- and third-person pronouns, second-person pronouns have a singular and a plural form. To say 'you' and mean one person, say '''ты''' (''ti''). To refer to more than one person, use '''вы''' (''vi'').  However, if you want to show respect, such as to a teacher or elder, or the person is someone you don't know, use '''вы''' instead of '''ты'''.
+:Where are you, brother? - '''Где ты, брат?''' - Notice the singular form '''ты'''
+:Where are you, teacher? - '''Где вы, учительница?''' - Notice the plural form '''вы'''
+
+Interestingly, though English lost its second-person singular pronoun ''thou'', some dialects have created a new plural one: Southern US English uses 'y'all' to refer to just that: 'you all'. But this isn't just a contraction, as it's used in a pronoun in its own right, giving us constructions like: "I want to talk to all y'all".
+
+It is important to at least grasp this distinction, as it becomes important when learning about [[Russian/Grammar/Verbs|verbs]]: verbs have ''six'' basic forms of conjugation, one for each type of pronoun (1st/2nd/3rd person, and singular/plural).
+
+== [[Russian/Personal Pronouns|Personal]] ==
+Broadly speaking, sentences involve three people: the person speaking, the person being spoken to, and someone else not involved in the conversation. The person speaking is known as the 'first person' (think of ''first-person games'' that are viewed through the eyes of the player), the person spoken to is the 'second person', and the other person is the 'third person'. Each 'person' can be referred to as either singular ('I', 'he') or plural ('we', 'they'). Finally, note that third-person singular pronoun comes in three varieties that vary with gender: 'he', 'she', and 'it'. Russian pronouns are generally used the same as in English, with the exception of the above distinction between formal and informal 'you':
+:I see  - '''Я ви́жу''' - ''ya <small>VEE</small>-zhoo''
+:We see - '''Мы ви́дим''' - ''mi <small>VEE</small>-deem''
+:You speak (sing. informal) - '''Tы говори́шь''' - ''ti ga-vo-<small>REESH</small>''
+:You speak (sing. formal) - '''Вы говори́те''' - ''vi ga-vo-<small>REE</small>-tye''
+:You speak (plural) - '''Вы говори́те''' - ''vi ga-vo-<small>REE</small>-tye''
+:He/she/it reads - '''Он/Она́/Оно́ чита́ет''' - ''on/on-<small>AH</small>/on-<small>OH</small> chee-<small>TA</small>-yet''
+:They read - '''Они́ чита́ют''' - ''on-<small>EE</small> chee-<small>TA</small>-yoot''
+Notice that though the verbs are the same in meaning, they change form: 'speak' changes from '''ты говоришь''' to '''вы говорите'''. Changing verbs like this is known as ''conjugation'', and is covered more fully on its [[Russian/Grammar/Verbs#First_conjugation|dedicated page]]. When nouns, pronouns, and adjectives change, it's called ''declension'' (this can also refer to verbs changing, however 'conjugation' refers specifically to verbs). Like most things in Russian, the personal pronouns change depending on which of the [[Russian/Grammar/Cases|six cases]] they're in:
+{| class="wikitable"
+|-
+! rowspan="2"|''Personal Pronouns'' !! colspan="2"|First person !! colspan="2"|Second person !! colspan="2"|Third person
+|- style="font-style:italic"
+! s !! p !! s !! p !! s !! p
+|-
+! [[Russian/Grammar/Nominative|Nominative]]
+| Я || Мы || Ты || Вы || Он/Она/Оно || Они
+|-
+! [[Russian/Grammar/Genitive_case|Genitive]]
+| Меня́ || Нас || Тебя́ || Вас || Его́/Её || Их
+|-
+! [[Russian/Grammar/Dative_case|Dative]]
+| Мне || Нам || Тебе́ || Вам || Ему́/Ей || Им
+|-
+! [[Russian/Grammar/Accusative_case|Accusative]]
+| Меня́ || Нас || Тебя́ || Вас || Его́/Её || Их
+|-
+! [[Russian/Grammar/Instrumental_case|Instrumental]]
+| Мной || На́ми || Тобо́й || Ва́ми || Им/Ей || И́ми
+|-
+! [[Russian/Grammar/Prepositional_case|Prepositional]]
+| Мне || Нас || Тебе́ || Вас || Нём/Ней || Них
+|}
+Note that when some of these have several forms, these are clarified in the pages for that specific case. Also note that third-person singular pronouns have the suffice '''н-''' when preceded by a preposition: '''к ней''', '''от неё''', etc. This doesn't apply to the possessive pronouns, or in general any third-person pronoun that isn't ''directly'' called by the preposition.
+:I like you - '''Я тебя люблю'''
+:You talk to me - '''Вы мне говорите'''
+:You talk about me - '''Вы говорите обо мне'''
+:You talk with me - '''Вы говорите со мной'''
+
+As the last example shows, the third-person singular pronouns '''он''', '''она''', and '''оно''' vary by gender in grammar, but not in meaning. The '''он''' in "Я сел на стул, и он развалился" (I sat on a chair, and it fell apart) is grammatically male to correspond with the table, but still translates to 'it' in English.
+
+
+===quiz===
+<quiz display=simple>
+
+{Formal or informal? Вы говорите со мной
+|type="()"}
++ formal
+- informal
+
+{Formal or informal? Я тебя люблю
+|type="()"}
+- formal
++ informal
+
+{Formal or informal? Tы говори́шь
+|type="()"}
+- formal
++ informal
+
+
+</quiz>
+
+== [[Russian/Possessive Pronouns|Possessive]] ==
+These pronouns act as adjectives and modify a noun, stating that it is owned by one of the three speakers (''my'' cat, ''your'' cat, '''his''' cat). Unlike personal pronouns, but like adjectives, possessive pronouns also change to match the gender and number of the noun they modify. So in the following table, notice that the different gender and number of each type of pronoun refers to the object that's possessed, not the possessor. Since there are four pronouns that conjugate in four ways laterally and six ways vertically, shown here is only the forms for '''мой''', 'my'. The rest are detailed on their own pages:
+{| class="wikitable"
+|-
+! ''My'' !! Masculine !! Feminine !! Neuter !! Plural
+|-
+! [[Russian/Grammar/Nominative|Nominative]]
+| Мой || Моя || Моё || Мои 
+|-
+! [[Russian/Grammar/Genitive_case|Genitive]]
+| Моего́ || Мое́й || Моего́ || Мои́х
+|-
+! [[Russian/Grammar/Dative_case|Dative]]
+| Моему́ || Мое́й || Моему́ || Мои́м
+|-
+! [[Russian/Grammar/Accusative_case|Accusative]]
+| Мой/Моего́ || Мою́ || Моё́ || Мои́/Мои́х
+|-
+! [[Russian/Grammar/Instrumental_case|Instrumental]]
+| Мои́м || Мое́й || Мои́м || Мои́ми
+|-
+! [[Russian/Grammar/Prepositional_case|Prepositional]]
+| Моём || Мое́й || Моём || Мои́х
+|}
+The various forms given in the accusative case are detailed more thoroughly on that page.
+Third-person possessive pronouns are special: there are only three words, and each refers to the gender of the speaker, not the case, gender, or number of the object possessed. For masculine and neuter possessors, the word is '''его''', 'his'/'its', pronouns ''ye-vo''. For feminine possessors, use '''её'''. For plural possessors of any gender, use '''их'''.
+:My chair - '''Мой стул'''
+:My dog - '''Моя собака'''
+:My dress - '''Моё платье'''
+:My books - '''Мои книги'''
+:His chair - '''Его стул'''
+:His books - '''Его книги'''
+:Let's talk about his books - '''Давайте говорить о его книгах'''
+
+===quiz===
+<quiz display=simple>
+
+{Gender? Мой стул
+|type="()"}
++Masculine 
+-Feminine 
+-Neuter 
+-Plural
+
+{Gender? Моя собака
+|type="()"}
+-Masculine 
++Feminine 
+-Neuter 
+-Plural
+
+{Gender? Моё платье
+|type="()"}
+-Masculine 
+-Feminine 
++Neuter 
+-Plural
+
+
+</quiz>
+
+
+
+{{BookCat}}
+{{Russian}}
+
+== [[Russian/Demonstrative Pronouns|Demonstrative]] ==
+There are many demonstrative pronouns in Russian.
+Here are a few:
+*такой
+*тот
+
+Examples:
+*Взгляни на тот рисунок. = Look at that painting.
+*Он такой умный! = He is so smart!

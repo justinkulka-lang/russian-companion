@@ -1,0 +1,37 @@
+The personal pronouns in Russian are arguably the easiest to learn. As they do not modify nouns (unlike their [[Russian/Possessive_Pronouns|possessive counterparts]]), they conjugate only by case. They are:
+
+{| class="wikitable" style="text-align:center; width:800px"
+|-
+! rowspan="2"|English !! colspan="2"|First person !! colspan="2"|Second person !! colspan="4"|Third person
+|-
+! I / me !! We / us !! Thou<br>''<small>(sing. informal)</small>'' !! You<br>''<small>(pl. formal)</small>'' !! He / his !! It !! She / her !! They / them
+|-
+! Nominative
+| Я || Мы || Ты || Вы || Он || Оно || Она || Они
+|-
+! Genitive
+| Меня || Нас || Тебя || Вас || colspan="2"| Его || Её || Их
+|-
+! Dative
+| Мне || Нам || Тебе || Вам || colspan="2"| Ему || Ей || Им
+|-
+! Accusative
+| Меня || Нас || Тебя || Вас || colspan="2"| Его || Её || Их
+|-
+! Instrumental
+| Мной || Нами || Тобой || Вами || colspan="2"| Им || Ей/Ею || Ими
+|-
+! Prepositional
+| Мне|| Нас || Тебе || Вас || colspan="2"| Нём || Ней || Них
+|}
+
+There are two important nuances to these pronouns. First, notice that the masculine and neuter third-person singular pronouns are the same in all cases but the nominative, and in the genitive and accusative are pronounced <nowiki>'</nowiki>''ye-vo''<nowiki>'</nowiki>, not <nowiki>'</nowiki>''ye-go''<nowiki>'</nowiki>. Second, if the pronoun's case is called by a preposition, third-person pronouns gain the prefix '''н-''' (e.g., compare 'his' in 'It's his house', '''Это его дом''', and 'He has a house', '''У него есть дом''').
+:Nominative: Where are you? - '''Где вы?'''
+:Genitive: What do you have there? - '''Что у вас там есть?'''
+:Dative: He's writing to thee - '''Он тебе пишет'''
+:Accusative: I love thee - '''Я тебя люблю'''
+:Instrumental: She's walking with them - '''Она с ними идёт''' - ''note the suffice '''н-''' after the preposition''
+:Prepositional: We're talking about her - '''Мы о ней говорим '''
+
+{{Russian}}
+{{BookCat}}

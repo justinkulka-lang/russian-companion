@@ -20,6 +20,13 @@ internal val CLOSED_ITEM_KINDS = setOf(
     "PRINT_PAIR",
     "CONFUSABLE",
     "SIGN",
+    "SOURCE_GENDER",
+    "SOURCE_MEANING",
+    "SOURCE_FORM",
+    "SOURCE_STRESS",
+    "SOURCE_QUESTION",
+    "SOURCE_CASE",
+    "SOURCE_INDECLINABLE",
 )
 
 internal val LINGUISTIC_REFERENCE_CLASSIFICATION = "LINGUISTIC_INSTRUCTION"
@@ -69,6 +76,7 @@ internal data class V2CurriculumPack(
     val audioAssets: List<V2AudioAsset> = emptyList(),
     val handwritingAssets: List<V2HandwritingAsset> = emptyList(),
     val ownedEditionMappings: List<V2OwnedEditionMapping> = emptyList(),
+    val provenanceRecords: List<V2ProvenanceRecord> = emptyList(),
     val letters: List<V2Letter>,
     val examples: List<V2Example> = emptyList(),
     val items: List<V2CheckItem>,
@@ -157,6 +165,33 @@ internal data class V2OwnedEditionMapping(
     val observationSource: String? = null,
     val isbn: String? = null,
     val isbnObservation: String = "UNRESOLVED",
+)
+
+@Serializable
+internal data class V2ProvenanceRecord(
+    val itemId: String,
+    val unitNumber: Int,
+    val objectiveId: String,
+    val recordType: String,
+    val sourceId: String,
+    val sourceUrl: String,
+    val sourceRevision: String,
+    val sourceRecordId: String,
+    val originalSourceText: String,
+    val shippedText: String,
+    val transformation: String,
+    val licenseId: String,
+    val licenseUrl: String,
+    val attribution: String,
+    val shareAlikeTreatment: String,
+    val sourceHash: String,
+    val contentHash: String,
+    val reviewStatus: String = "PENDING_QUALIFIED_REVIEW",
+    val reviewerIdentity: String = "",
+    val reviewerQualification: String = "",
+    val reviewDate: String = "",
+    val reviewedDigest: String = "",
+    val audioAssetId: String? = null,
 )
 
 @Serializable

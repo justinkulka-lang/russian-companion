@@ -439,7 +439,18 @@ internal fun buildUnitReviewPackage(
         val reference = pack.reference(referenceId) ?: return@forEach
         add(referenceRecord(pack, unit, reference))
     }
-    val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId }.distinct()
+    pack.provenanceRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.itemId }.forEach { provenance ->
+        add(provenanceRecord(pack, unit, provenance))
+        if (unit.objectives.none { it.id == provenance.objectiveId }) {
+            unresolved += "Provenance ${provenance.itemId} objective ${provenance.objectiveId} cannot be resolved"
+        } else {
+            addEdge(Unit1ReviewEdge(provenance.objectiveId, provenance.itemId, "PROVENANCE"))
+        }
+        if (provenance.audioAssetId != null && pack.audioAssets.none { it.id == provenance.audioAssetId }) {
+            unresolved += "Provenance ${provenance.itemId} audio ${provenance.audioAssetId} cannot be resolved"
+        }
+    }
+    val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.distinct()
     letterIds.forEach { letterId ->
         val letter = pack.letter(letterId)
         if (letter == null) {
@@ -1256,6 +1267,43 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
         rightsIds = rightsIds(pack, item.sourceId),
         classification = "",
         reviewStatus = item.reviewStatus,
+    )
+}
+
+private fun provenanceRecord(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    provenance: dev.russiancompanion.v2.curriculum.V2ProvenanceRecord,
+): Unit1ReviewRecord {
+    return record(
+        id = provenance.itemId,
+        type = "PROVENANCE",
+        objectiveIds = listOf(provenance.objectiveId),
+        sessionIds = unit.sessions.filter { provenance.objectiveId in it.objectiveIds }.map { it.id },
+        content = listOf(
+            "recordType=${provenance.recordType}",
+            "sourceUrl=${provenance.sourceUrl}",
+            "sourceRevision=${provenance.sourceRevision}",
+            "sourceRecordId=${provenance.sourceRecordId}",
+            "originalSourceText=${provenance.originalSourceText}",
+            "shippedText=${provenance.shippedText}",
+            "transformation=${provenance.transformation}",
+            "licenseId=${provenance.licenseId}",
+            "licenseUrl=${provenance.licenseUrl}",
+            "attribution=${provenance.attribution}",
+            "shareAlikeTreatment=${provenance.shareAlikeTreatment}",
+            "sourceHash=${provenance.sourceHash}",
+            "contentHash=${provenance.contentHash}",
+            "audioAssetId=${provenance.audioAssetId.orEmpty()}",
+            "reviewerIdentity=${provenance.reviewerIdentity}",
+            "reviewerQualification=${provenance.reviewerQualification}",
+            "reviewDate=${provenance.reviewDate}",
+            "reviewedDigest=${provenance.reviewedDigest}",
+        ).joinToString("\n"),
+        sourceId = provenance.sourceId,
+        rightsIds = rightsIds(pack, provenance.sourceId),
+        classification = "",
+        reviewStatus = provenance.reviewStatus,
     )
 }
 

@@ -1,0 +1,161 @@
+The '''prepositional case''' is the sixth and final case in Russian, though due to its relative simplicity it is often learned before the more complex genitive, dative, and instrumental cases.
+
+== Usage ==
+Words decline into a case for two broad reasons: because they match that case's primary function (the [[Russian/Grammar/Nominative|nominative]] denotes the verbal subject, the [[Russian/Grammar/Accusative case|accusative]] denotes the verbal object, etc), or because they come after a preposition that governs that particular case ('''у''' governs the [[Russian/Grammar/Genitive case|genitive]], '''между''' governs the [[Russian/Grammar/Instrumental case|instrumental]], etc). The prepositional case is so called because it is only ever used after prepositions. Historically, the prepositional case was called the ''locative'' case as its primary function was to denote the location of something. This use has been taken over by prepositions, so its name was changed accordingly. However, you may still hear it referred to by its old name, and some words still bear hallmarks of the old locative case.
+
+=== Prepositions ===
+
+The four prepositions that call this case are '''о/об/обо''' ('about'), '''при''' ('on') '''в''' ('in'), and '''на''' ('on'). Notice that these last two are locative in meaning when they call the prepositional case.
+
+* '''О/об/обо''' means 'about', and denotes the person or thing about which some verb is done ('they were talking about him', '''они говорили о нём''').
+::When the following word begins with a vowel, '''о''' becomes '''об''' ('I heard about the bus', '''я послышал об автобусе''').
+::Before awkward clusters of consonants, it becomes '''обо''' ('Boris read about me', '''Борис читал обо мне''').
+* '''При''' means 'on' or 'on one's person' ('She has an umbrella on her', '''У неё есть зонтик при себе'''), and 'during' ('This happened during the reign of Peter I', '''Всё это случилось при Петре первом'''). As you might guess, this preposition is quite rare
+* '''В''' means 'in' or 'at', referring to the location of a person or thing ('I'm in Moscow', '''я в Москве'''). 
+* '''На''' means 'on' or 'at', and like '''в''' refers to the location of something ('He's on the roof', '''Он на крыше''').
+
+=== At a place ===
+The word 'at' is translated using '''в''' + ''prep', '''на''' + ''prep', and '''у''' + ''[[Russian/Grammar/Genitive case|gen]]''.
+
+If you wish to say someone or something is at an enclosed building, such as 'He is at the theatre', use '''в''' + ''prep'', as he is ''in'' that particular place: '''Он в театре'''. To say someone or something is at a particular street, such as 'She lives at Tverskaya street', use '''на''' + ''prep'', as she is ''on'' something, rather than in it: '''Она живёт на Тверской улице'''. In general, if the place where someone or something is 'at' is an inanimate structure that humans normally go inside, use '''в''' + ''prep'' (e.g., 'They were at the theatre', 'He was at Moscow for the meeting'), otherwise use '''на''' + ''prep'' (e.g., 'They were at the field'). If the place is ''animate'', instead use '''у''' + ''[[Russian/Grammar/Genitive case|gen]]'', meaning 'by someone's place' (e.g., 'They were at Sasha's')
+
+'''В''' and '''на''' can also call the [[Russian/Grammar/Accusative case#Usage|accusative case]] to refer to the direction towards which something is moving into or onto ('I'm walking ''into'' Moscow', 'He climbed ''onto'' the roof'). As a memory aid, recall that when '''в''' and '''на''' refer to the ''location'' of something, they use the prepositional case, which was once called the ''locative'' case. '''О/об/обо''' calls the accusative to mean 'against' or 'upon' something ('He leant upon the wall').
+
+Examples:
+: Let's talk about the weather - '''Дава́йте говори́ть о пого́де'''
+: They'll read about [[w:Aeroflot|Aeroflot]] tomorrow - '''Они́ прочита́ют об Аэрофло́те за́втра'''
+: She told a story about me - '''Она́ рассказа́ла расска́з обо́ мне'''
+: Boris lives in Liverpool - '''Бо́рис живёт в Ливерпул́е'''
+: Tatya is at work - '''Та́тя на рабо́те'''
+
+== Nouns ==
+Forming the prepositional case is arguably easier than any other case.
+
+=== Singular ===
+To form the prepositional case, in general, you add '''е''' (pronounced ''yeh''):
+* Masculine and neuter nouns ending in a consonant add '''e''', and nouns ending in '''й''', '''o''', or '''ь''', replace that letter with '''е'''. Nouns ending in '''ий''' instead become '''ии'''.
+::About the garden - '''Сад --> О саде'''
+::About the train - '''Поезд --> О поезде'''
+::About the museum - '''Музей --> О музее'''
+::About the letter - '''Письмо --> О письме'''
+* Feminine nouns ending in '''а''' or '''я''' replace that letter with '''е'''. Those ending in '''ь''' instead replace that letter with '''и'''. Feminine nouns that end in '''ия''' become '''ии'''.
+::About the book - '''Книга --> О книге'''
+::About the bird - '''Птица --> О птице'''
+::About the pig - '''Свинья --> О свинье'''
+::About mother - '''Мать --> О матери''' - ''note the addition of '''-ер-''' when '''мать''' declines''
+* Neuter nouns ending in '''е''' are unchanged, unless they end in '''ие''', in which case they become '''ии'''. Those that have the exceptional ending '''мя''' become '''ени''' (though this is fortunately quite rare).
+
+Exceptions:
+* As you might have guessed from the above, always write '''ии''' instead of '''ие'''
+*Some nouns have a stressed '''у''' or '''ю''' after '''в''' + ''prep'' and '''на''' + ''prep'', but not after '''о/об/обо''' + ''prep''. This is the final hallmark of the old locative meaning of this case, as it can be seen as an ending that only occurs after ''locative'' prepositions ('in' and 'on'). See [http://www.study-languages-online.com/grammar_comments/locative-case.html here] for a list of such words.
+
+In general, add or replace with '''е''', but always have '''ии''' instead of '''ие'''.
+
+=== Plural ===
+The two plural endings, '''ах''' and '''ях''', follow the same rules as the [[Russian/Grammar/Instrumental case|instrumental]] and [[Russian/Grammar/Dative case|dative]] plurals: after consonants, '''o''', or '''а''', use the ending '''ах'''. If such a noun has an irregular nominative plural ending in '''я''' (e.g., '''друг''' --> '''друзья'''), or if the noun ends in '''ь''', '''й''', '''е''', or '''я''', the ending is '''ях''' (e.g., '''друг''' --> '''друзья''' --> '''друзьях''').
+::About the gardens - '''Сад --> Садах'''
+::About the trains - '''Поезд --> Поездах'''
+::About the museums - '''Музей --> Музеях'''
+::About the letters - '''Письмо - Письмах'''
+::About the books - '''Книга --> Книгах'''
+::About the birds - '''Птица --> Птицах'''
+::About the pigs - '''Свинья --> Свиньях'''
+::About the mothers - '''Мать --> Матерях'''
+
+One exception is feminine nouns ending in '''мя''', which instead take the ending '''енах'''. Again, this ending is fortunately quite rare.
+
+
+{| class="wikitable" style="text-align:center"
+|-
+! ''Prepositional'' !! Masculine !! Neuter !! Feminine !! Plural
+|-
+! Nouns
+| е<br>(''ий --> ии'') || е<br>(''ие --> ии'')<br>(''мя --> ени'') || а, я --> е<br>ь --> и<br>(''ия --> ии'') || ах ях<br>(''мя --> енах'')
+|}
+Rules in italics are rare exceptions to the more general rules.
+
+==Adjectives==
+Adjectives modifying masculine or neuter nouns in the prepositional case usually end in '''ом'''. For adjectives with the soft ending ('''ний'''), or for those whose stem ends in the 5-letter rule ('''ш, щ, ч, ж, ц''') and unstressed, the ending is '''ем'''.
+
+For feminine adjectives, the endings are the same as those in the [[Russian/Grammar/Genitive case|genitive]], [[Russian/Grammar/Dative case|dative]], and [[Russian/Grammar/Instrumental case|instrumental]] cases: '''ой''', or for those with the soft ending or which end in the 5-letter rule, '''ей'''.
+
+Like nouns, adjectives in the prepositional plural end in "х", and in fact take the same endings as the genitive plural: '''ых''' or, for those which normally end in '''ий''', '''их'''.
+
+{| class="wikitable" style="text-align:center"
+|-
+! ''Prepositional'' !! Masculine/Neuter !! Feminine !! Plural
+|-
+! Adjectives
+| ом ем || ой ей || ых их
+|}
+
+: I heard about your beautiful new wife - '''Я слышал о твое́й красивой новой жене'''
+: They're talking about those old Russian cars in the big red garage - '''Они говорят об этих старых русских машинах в большом красном гараже'''
+
+== Pronouns ==
+=== Personal ===
+The personal pronouns in the prepositional case are as follows:
+{| class="wikitable" style="text-align:center"
+|-
+! !! Singular !! Plural
+|-
+! First person
+| Мне || Нас
+|-
+! Second person
+| Тебе́ || Вас
+|-
+! Third Person
+| Нём/Ней || Них
+|}
+The third person singular personal pronoun '''нём'''  is masculine and neuter, and '''ней''' is feminine.
+
+===Possessive===
+The possessive pronouns are as follows:
+{| class="wikitable" style="text-align:center"
+|-
+! !! Masculine/Neuter !! Feminine !! Plural
+|-
+! My
+| Moём || Мое́й || Мои́х
+|-
+! Our
+| На́шем || На́шей || На́ших
+|-
+! Your (sg., informal)
+| Твоём || Твое́й || Твои́х
+|-
+! Your (pl., formal)
+| Ва́шем || Ва́шей || Ва́ших
+|-
+! Reflexive
+| Своём || Свое́й || Свои́х
+|}
+
+As ever, possessive pronouns conjugate almost exactly like adjectives. The possessive pronouns in the third person are '''его''' for masculine and neuter owners ('his' and 'its), '''её''' for feminine owners ('her'), and '''их''' for plural owners ('their'). These are the same in all cases.
+
+Examples:
+: I am reading about them - '''Я чита́ю о них'''
+: I am reading about their children - '''Я чита́ю о их де́тях'''
+
+=== This and that ===
+{| class="wikitable" style="text-align:center"
+|-
+! !! Masculine/Neuter !! Feminine !! Plural
+|-
+! About this
+| Э́том || Э́той || Э́тих
+|-
+! About that
+| Том || Той || Тех
+|}
+
+Remember that '''о''' ('about') becomes '''об''' before the vowel '''э'''.
+
+* [[Russian|Back to Table of Contents]]
+
+==References==
+* Exhaustive explanation of Russian prepositions: [http://www.alphadictionary.com/rusgrammar/prepprep.html]
+* List of nouns that decline irregularly in the prepositional case: [http://www.study-languages-online.com/grammar_comments/locative-case.html]
+{{BookCat}}
+{{Russian}}

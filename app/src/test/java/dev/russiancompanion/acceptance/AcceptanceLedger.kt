@@ -9,9 +9,10 @@ package dev.russiancompanion.acceptance
  * generic offline-companion onboarding; grammar practice in the user's book and answer key;
  * vocabulary and forms practice remaining in AnkiDroid as a user report.
  * AT-001 stays outstanding. Units 1-2 are content-complete development
- * content with review still pending. Units 3-5 are development paths for
- * the public topics and are not content-complete. Units 6-30 are not yet
- * installed. Linguistic review and Penguin edition mapping are pending. Structural tests do not satisfy AT-001.
+ * content with review still pending. Units 3-5 are proposed development
+ * content from admitted licensed sources, still review-pending, and not
+ * installed. Units 6-30 are not yet installed. Linguistic review and the
+ * owned-edition mapping are pending. Structural tests do not satisfy AT-001.
  * AT-002, AT-004, AT-008, AT-009, AT-010, AT-020, AT-030, and AT-031
  * stay outstanding. A physical-device acceptance package lives under
  * release/acceptance/; those forms and working audits are not retained

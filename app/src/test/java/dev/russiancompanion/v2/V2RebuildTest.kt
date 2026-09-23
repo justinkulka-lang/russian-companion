@@ -68,11 +68,15 @@ class V2RebuildTest {
         listOf(3, 4, 5).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(listOf(number - 1), unit.prerequisiteUnitNumbers)
-            assertEquals(listOf("SELF_ATTESTATION"), unit.objectives.map { it.kind })
-            assertTrue(unit.sessions.flatMap { it.steps }.none { it.kind == "TEACH" || it.kind == "CHECK" || it.kind == "GUIDED" })
+            assertTrue(unit.objectives.any { it.kind == "RECOGNITION" })
+            assertTrue(unit.objectives.any { it.kind == "SELF_ATTESTATION" })
+            assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "TEACH" })
+            assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "CHECK" })
+            val independent = unit.sessions.flatMap { it.steps }.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct()
+            assertTrue(independent.size >= if (number == 3) 12 else 14)
             assertTrue(unit.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
             assertTrue(unit.sessions.flatMap { it.steps }.filter { it.kind == "BOOK" }.all { !it.bookDirection.isNullOrBlank() })
             assertFalse(unit.topicSummary.contains("Content-complete"))
@@ -168,7 +172,7 @@ class V2RebuildTest {
 
         val staged = pack.copy(
             units = pack.units.map { unit ->
-                if (unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
+                if (unit.number in 1..2 && unit.readiness == "CONTENT_COMPLETE_REVIEW_PENDING") {
                     unit.copy(readiness = "REVIEW_APPROVED")
                 } else {
                     unit
@@ -418,11 +422,12 @@ class V2RebuildTest {
     }
 
     @Test
-    fun unitsThreeToFiveStayNotPreparedAndLaterUnitsStayClosed() {
+    fun unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed() {
         val pack = pack()
         val learner = LocalStore.openInMemory(context()).also { stores += it }.v2LearnerView()
         val unit3 = pack.unit(3)!!
-        assertEquals("NOT_PREPARED", unit3.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit3.readiness)
+        assertEquals("DEVELOPMENT", unit3.installState)
         assertEquals(V2UnitState.LOCKED, unitState(pack, unit3, learner))
         assertFalse(canOpenUnit(unitState(pack, unit3, learner)))
         assertTrue(unit3.sessions.isNotEmpty())
@@ -447,7 +452,9 @@ class V2RebuildTest {
         assertFalse(text.contains("Penguin-aligned"))
         assertFalse(text.contains("The New Penguin Russian Course"))
         assertFalse(text.contains("Content-complete"))
-        assertTrue(pack.items.none { it.id.startsWith("u3-") || it.id.startsWith("u4-") || it.id.startsWith("u5-") })
+        assertTrue(pack.items.any { it.id.startsWith("u3-") })
+        assertTrue(pack.items.any { it.id.startsWith("u4-") })
+        assertTrue(pack.items.any { it.id.startsWith("u5-") })
     }
 
     @Test
@@ -455,7 +462,7 @@ class V2RebuildTest {
         val pack = pack()
         val claimed = pack.copy(
             units = pack.units.map { unit ->
-                if (unit.number == 3) unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING") else unit
+                if (unit.number == 3) bookDirectionOnly(unit) else unit
             },
         )
         val claimedResult = V2Validator.validate(claimed)
@@ -514,16 +521,16 @@ class V2RebuildTest {
         listOf(3, 4, 5).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             val text = unit.topicSummary + unit.mappingNote + unit.sessions.flatMap { it.steps }.joinToString(" ") {
                 it.title + it.body + (it.bookDirection ?: "")
             }
             assertFalse(text.contains("Content-complete"))
-            assertFalse(text.contains("CONTENT_COMPLETE_REVIEW_PENDING"))
             val packet = File(repo(), "review/unit-$number/UNIT_${number}_REVIEW_PACKET.md").readText()
-            assertFalse(packet.contains("CONTENT_COMPLETE_REVIEW_PENDING"))
+            assertTrue(packet.contains("content-complete and review-pending"))
             assertFalse(packet.contains("Content-complete development"))
+            assertTrue(packet.contains("PENDING_QUALIFIED_REVIEW"))
         }
         assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" })
 
@@ -537,7 +544,7 @@ class V2RebuildTest {
                         sessions = unit.sessions.map { session ->
                             session.copy(
                                 steps = session.steps.map { step ->
-                                    if (step.id == "u5-st-questions") step.copy(body = step.body + " extra book direction") else step
+                                    if (step.id == "u5-st-book-work") step.copy(body = step.body + " extra book direction") else step
                                 },
                             )
                         },
@@ -583,8 +590,11 @@ class V2RebuildTest {
             3,
         )
         val reviewedResult = V2Validator.validate(reviewed)
-        assertFalse(reviewedResult.ok)
-        assertTrue(reviewedResult.errors.any { it.contains("Unit 3 is not content-complete") })
+        assertTrue(reviewedResult.errors.joinToString("\n"), reviewedResult.ok)
+        assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == 3 }.status)
+        assertTrue(pack.unitReviews.first { it.unitNumber == 3 }.reviewer.isNullOrBlank())
+        assertFalse(pack.publicReleaseEligible)
+        assertEquals("DEVELOPMENT", reviewed.unit(3)!!.installState)
         val store = LocalStore.openInMemory(context()).also { stores += it }
         store.v2CompleteUnit(1, "2026-09-23T12:00")
         store.v2CompleteUnit(2, "2026-09-23T12:00")
@@ -858,10 +868,10 @@ class V2RebuildTest {
         assertEquals(0, pack.ownedEditionMappings.size)
         assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
         assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("cdb6c6b34c6d8b4a56f8e13a495629aec57eebaaa1227943f03fbd8bd75774fc", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("e46c57ebda8258f1afae78031f3a475dcc4f49803ae12299dd4b6b4872245781", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4", V2Validator.contentReviewDigest(pack))
+        assertEquals("d13ea0fcbc14b2a4f76cc9b92a7fe4762bbe126ba8f4c20f2b2bd17f04717718", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("e715f8694bd195f3c32c8554e6501b1d286fc9d7ba3068926d175b6a396895db", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("ce049d52d81f3a4f51e67edf3c782856c9b651a8c253fb4f6acbf4b3f2eed69e", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("00fbc256c90b3021fb76c8cf325d663c3ea4372bb16a1e03b894e61303421203", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -1082,6 +1092,14 @@ class V2RebuildTest {
             },
         )
     }
+
+    private fun bookDirectionOnly(unit: dev.russiancompanion.v2.curriculum.V2Unit) = unit.copy(
+        readiness = "CONTENT_COMPLETE_REVIEW_PENDING",
+        sessions = unit.sessions.map { session ->
+            session.copy(steps = session.steps.filter { it.kind == "BOOK" })
+        }.filter { it.steps.isNotEmpty() },
+        objectives = unit.objectives.filter { it.kind == "SELF_ATTESTATION" },
+    )
 
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
 

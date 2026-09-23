@@ -1,0 +1,14 @@
+Units 3–5 proposed curriculum notice
+
+This notice covers the proposed instructional records for Units 3, 4, and 5. It is not a review approval, a mapping approval, or a release authorization.
+
+Admitted text sources, frozen on 2026-09-23:
+
+- OpenRussian dictionary data by the Badestrand/russian-dictionary contributors. Git commit 50e210c4803237779cb562bc1abcea529066031c. License: Creative Commons Attribution-ShareAlike 4.0 International. License URL: https://creativecommons.org/licenses/by-sa/4.0/. The legal code is packaged in this app as cc-by-sa-4.0.txt.
+- Wikibooks Russian grammar excerpts by the Wikibooks contributors. Each used page is frozen by its oldid. The project copyrights page states the Creative Commons Attribution-ShareAlike 4.0 route of the dual CC BY-SA 4.0 and GFDL grant. License URL: https://creativecommons.org/licenses/by-sa/4.0/.
+
+The selection, stress-mark formatting, English arrangement, and exercise structure are modifications of those sources. The adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0.
+
+Application code, user data, and user recordings are outside that curriculum-data statement. No audio is included in this proposed curriculum. Where an exact admitted recording is not matched, listening and speaking stay with the book the learner owns.
+
+Reviewer identity, qualification, date, and signature are blank. Qualified review is still pending.
