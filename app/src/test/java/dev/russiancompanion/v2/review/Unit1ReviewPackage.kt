@@ -28,7 +28,7 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  */
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
-internal const val UNITS_6_10_CURRICULUM_COMMIT = "8103acf4f556c59f8621cad9eac3ea1c9b74a5fb"
+internal const val UNITS_6_10_CURRICULUM_COMMIT = "7321922cc2bab38baadaf3c76459dd2cccafd420"
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     if (unitNumber in 1..5) UNITS_1_5_CURRICULUM_COMMIT else UNITS_6_10_CURRICULUM_COMMIT
