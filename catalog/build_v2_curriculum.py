@@ -1518,11 +1518,19 @@ def build() -> dict:
                 number,
                 title,
                 short,
-                f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+                (
+                    "Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed."
+                    if number == 7
+                    else f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
+                ),
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="CONTENT_COMPLETE_REVIEW_PENDING",
-                mapping_note="Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
+                readiness="NOT_PREPARED" if number == 7 else "CONTENT_COMPLETE_REVIEW_PENDING",
+                mapping_note=(
+                    "The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                    if number == 7
+                    else "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                ),
                 require_due_review=False,
                 minimum_checks=proposed_unit["minimum_checks"],
             )

@@ -173,21 +173,7 @@ internal object V2Validator {
                     "objectiveId" to canonStr(example.objectiveId),
                 )
             }),
-            "items" to canonArr(pack.items.map { item ->
-                canonObj(
-                    "id" to canonStr(item.id),
-                    "kind" to canonStr(item.kind),
-                    "language" to canonStr(item.language),
-                    "prompt" to canonStr(item.prompt),
-                    "promptLetter" to canonStrOrNull(item.promptLetter),
-                    "options" to canonArr(item.options.map(::canonStr)),
-                    "answer" to canonStr(item.answer),
-                    "feedback" to canonStr(item.feedback),
-                    "objectiveId" to canonStr(item.objectiveId),
-                    "sourceId" to canonStr(item.sourceId),
-                    "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
-                )
-            }),
+            "items" to canonArr(pack.items.map(::canonicalCheckItem)),
             "references" to canonArr(pack.references.map { reference ->
                 canonObj(
                     "id" to canonStr(reference.id),
@@ -304,21 +290,7 @@ internal object V2Validator {
                     "objectiveId" to canonStr(example.objectiveId),
                 )
             }),
-            "items" to canonArr(items.map { item ->
-                canonObj(
-                    "id" to canonStr(item.id),
-                    "kind" to canonStr(item.kind),
-                    "language" to canonStr(item.language),
-                    "prompt" to canonStr(item.prompt),
-                    "promptLetter" to canonStrOrNull(item.promptLetter),
-                    "options" to canonArr(item.options.map(::canonStr)),
-                    "answer" to canonStr(item.answer),
-                    "feedback" to canonStr(item.feedback),
-                    "objectiveId" to canonStr(item.objectiveId),
-                    "sourceId" to canonStr(item.sourceId),
-                    "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
-                )
-            }),
+            "items" to canonArr(items.map(::canonicalCheckItem)),
             "references" to canonArr(references.map { reference ->
                 canonObj(
                     "id" to canonStr(reference.id),
@@ -475,6 +447,25 @@ internal object V2Validator {
     }
 
     private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
+
+    private fun canonicalCheckItem(item: V2CheckItem): String {
+        val base = canonObj(
+            "id" to canonStr(item.id),
+            "kind" to canonStr(item.kind),
+            "language" to canonStr(item.language),
+            "prompt" to canonStr(item.prompt),
+            "promptLetter" to canonStrOrNull(item.promptLetter),
+            "options" to canonArr(item.options.map(::canonStr)),
+            "answer" to canonStr(item.answer),
+            "feedback" to canonStr(item.feedback),
+            "objectiveId" to canonStr(item.objectiveId),
+            "sourceId" to canonStr(item.sourceId),
+            "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
+        )
+        if (item.distractorRationales.isEmpty()) return base
+        return base.dropLast(1) +
+            ",\"distractorRationales\":" + canonArr(item.distractorRationales.map(::canonStr)) + "}"
+    }
 
     private fun canonNum(value: Int): String = value.toString()
 
@@ -787,6 +778,28 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+        if (unit.number in 6..10) validateGovernedChecks(pack, unit, errors)
+    }
+
+    private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
+        val generic = "Return to the explanation. Compare the shown form with the admitted record."
+        unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
+            if (checks.none { it.kind in GRAMMAR_ITEM_KINDS }) {
+                errors += "Unit ${unit.number} objective ${objective.id} has no check of its grammatical distinction"
+            }
+            if (checks.isNotEmpty() && checks.all { it.kind == "SOURCE_MEANING" }) {
+                errors += "SOURCE_MEANING alone cannot satisfy ${objective.id}"
+            }
+            val remediation = objective.remediationStepIds.mapNotNull { pack.step(it)?.second }
+            if (remediation.isEmpty() || remediation.any { it.body == generic || generic in it.body && it.body.removePrefix(generic).isBlank() }) {
+                errors += "Unit ${unit.number} objective ${objective.id} remediation does not target the failed concept"
+            }
+            val shipped = pack.provenanceRecords.filter { it.objectiveId == objective.id }.map { it.shippedText }
+            if (remediation.any { step -> shipped.none { span -> span.length >= 8 && span in step.body } }) {
+                errors += "Unit ${unit.number} objective ${objective.id} remediation is not bound to an admitted source span"
+            }
+        }
     }
 
     private fun validateOpenableBody(
@@ -934,6 +947,28 @@ internal object V2Validator {
         if (item.kind !in CLOSED_ITEM_KINDS) {
             errors += "Item ${item.id} kind ${item.kind} is not a Russian-learning check"
         }
+        if (item.options.size != item.options.toSet().size) {
+            errors += "Item ${item.id} options are not distinct"
+        }
+        if (item.options.count { it == item.answer } != 1) {
+            errors += "Item ${item.id} repeats the answer in the options"
+        }
+        if (item.kind in GRAMMAR_ITEM_KINDS) {
+            if (item.distractorRationales.size != item.options.size) {
+                errors += "Item ${item.id} distractor rationales do not match the options"
+            } else {
+                item.options.forEachIndexed { index, option ->
+                    val rationale = item.distractorRationales[index]
+                    if (option == item.answer) {
+                        if (rationale.isNotEmpty()) {
+                            errors += "Item ${item.id} records a distractor rationale for the answer"
+                        }
+                    } else if (rationale.isBlank()) {
+                        errors += "Item ${item.id} distractor has no governed contrast rationale"
+                    }
+                }
+            }
+        }
         if (item.isGovernancePrompt()) {
             errors += "Item ${item.id} is a governance or policy prompt, not a Russian-learning check"
         }
@@ -958,6 +993,10 @@ internal object V2Validator {
         }
         if (pack.units.flatMap { it.objectives }.none { it.id == example.objectiveId }) {
             errors += "Example ${example.id} objective is missing"
+        }
+        val unitNumber = pack.units.firstOrNull { unit -> unit.objectives.any { it.id == example.objectiveId } }?.number
+        if (unitNumber in 6..10 && example.display.none { it.code in 0x0400..0x04FF }) {
+            errors += "Example ${example.id} stores English instructional prose as a Russian example"
         }
     }
 
@@ -1274,6 +1313,7 @@ internal object V2Validator {
         hosts += item.answer
         hosts += item.feedback
         hosts += item.options
+        hosts += item.distractorRationales
     }
 
     private val LINGUISTIC_CLAIM = Regex(

@@ -309,21 +309,27 @@ class UnitReviewPipelineTest {
                 check(process.waitFor() == 0)
                 text
             }
-        assertTrue(curriculumSourceCommitErrors(head, root).any { it.contains("packet commit itself") })
+        assertTrue(curriculumSourceCommitErrors(head, root, 1).any { it.contains("packet commit itself") })
         val predating = "08663616a79af9009c657ecfb66d7f6d42a531bf"
-        val rejected = curriculumSourceCommitErrors(predating, root)
-        assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("does not contain this revision's governed curriculum") })
-        assertTrue(rejected.any { it.contains("Unit 2 content-review digest") })
-        (1..10).forEach { number ->
+        val rejected = curriculumSourceCommitErrors(predating, root, 2)
+        assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("Unit 2 content-review digest") || it.contains("readable curriculum") })
+        (1..5).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(CURRICULUM_SOURCE_COMMIT))
+            assertTrue(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
             assertFalse(manifest.contains(predating))
-            assertEquals(
-                V2Validator.unitContentReviewDigest(pack, number),
-                buildUnitReviewPackage(pack, number).contentReviewDigest,
-            )
+            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isEmpty())
         }
-        assertTrue(curriculumSourceCommitErrors(CURRICULUM_SOURCE_COMMIT, root).isEmpty())
+        (6..10).forEach { number ->
+            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
+            assertTrue(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
+            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
+            assertTrue(
+                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).joinToString("\n"),
+                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isEmpty(),
+            )
+            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
+        }
+        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 10).isNotEmpty())
     }
 
     private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {

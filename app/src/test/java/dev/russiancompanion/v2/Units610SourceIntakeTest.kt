@@ -9,6 +9,9 @@ import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.governedMappingFacts
 import dev.russiancompanion.v2.review.mappingPackageDigest
+import dev.russiancompanion.v2.review.renderUnitReviewFiles
+import dev.russiancompanion.v2.review.reviewManifestName
+import dev.russiancompanion.v2.review.validateUnitReviewFiles
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
@@ -32,7 +35,10 @@ class Units610SourceIntakeTest {
         listOf(6, 7, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals(
+                if (number == 7) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING",
+                unit.readiness,
+            )
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.single { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.single { it.unitNumber == number }.reviewer.isNullOrBlank())
@@ -69,6 +75,11 @@ class Units610SourceIntakeTest {
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
+        assertEquals("1335b22c65ebb01690b39239bdde49d2332ba8ff52d411ccbc3b04d5a5b3075c", buildUnitReviewPackage(pack, 1).reviewPackageDigest)
+        assertEquals("bb4ed50ed544251586d42c7cd6dfe12d04dde8bd2cab301ff0a28033ab76dacb", buildUnitReviewPackage(pack, 2).reviewPackageDigest)
+        assertEquals("fa04c8d93397950c9c5bbccac321058e503f98f6d89cfcd1c81ad637db1c763b", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        assertEquals("3dc7fd8fdb39f6fe0f5a84b6c8381133e161de9c663ba4c1b3203d0f98e67bd1", buildUnitReviewPackage(pack, 4).reviewPackageDigest)
+        assertEquals("bcd4c3feff6f868af8a3f1101d811012139ff395274c379da1cef4c500e2e0be", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
@@ -89,6 +100,38 @@ class Units610SourceIntakeTest {
         assertNotEquals(V2Validator.unitContentReviewDigest(pack, 3), V2Validator.unitContentReviewDigest(shared, 3))
         val swapped = buildUnitReviewPackage(pack, 7)
         assertNotEquals(buildUnitReviewPackage(pack, 6).reviewPackageDigest, swapped.reviewPackageDigest)
+        val before = (1..9).associateWith { buildUnitReviewPackage(pack, it).reviewPackageDigest }
+        val contentBefore = (1..9).associateWith { V2Validator.unitContentReviewDigest(pack, it) }
+        val laterOnly = pack.copy(
+            items = pack.items.map { item ->
+                if (item.objectiveId.startsWith("obj-u10-")) item.copy(feedback = item.feedback + " later only") else item
+            },
+        )
+        (1..9).forEach { number ->
+            assertEquals(contentBefore.getValue(number), V2Validator.unitContentReviewDigest(laterOnly, number))
+            assertEquals(before.getValue(number), buildUnitReviewPackage(laterOnly, number).reviewPackageDigest)
+        }
+        assertNotEquals(V2Validator.unitContentReviewDigest(pack, 10), V2Validator.unitContentReviewDigest(laterOnly, 10))
+        assertNotEquals(V2Validator.contentReviewDigest(pack), V2Validator.contentReviewDigest(laterOnly))
+        val sharedSource = pack.copy(
+            sources = pack.sources.map { source ->
+                if (source.id == "src-wikibooks-russian-cc-by-sa") source.copy(attribution = source.attribution + " shared later") else source
+            },
+        )
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), V2Validator.unitContentReviewDigest(sharedSource, 1))
+        assertEquals(buildUnitReviewPackage(pack, 1).reviewPackageDigest, buildUnitReviewPackage(sharedSource, 1).reviewPackageDigest)
+        assertNotEquals(V2Validator.unitContentReviewDigest(pack, 6), V2Validator.unitContentReviewDigest(sharedSource, 6))
+        assertNotEquals(buildUnitReviewPackage(pack, 6).reviewPackageDigest, buildUnitReviewPackage(sharedSource, 6).reviewPackageDigest)
+    }
+
+    @Test
+    fun wrongUnitPacketSubstitutionFails() {
+        val pack = pack()
+        val unitOne = renderUnitReviewFiles(pack, 1).files
+        val unitTen = renderUnitReviewFiles(pack, 10).files
+        val swapped = unitOne + (reviewManifestName(1) to unitTen.getValue(reviewManifestName(10)))
+        val errors = validateUnitReviewFiles(pack, 1, swapped)
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains("not for Unit 1") || it.contains("does not match") })
     }
 
     @Test

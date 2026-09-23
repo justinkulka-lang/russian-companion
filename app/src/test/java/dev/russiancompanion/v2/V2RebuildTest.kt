@@ -532,12 +532,18 @@ class V2RebuildTest {
             assertFalse(packet.contains("Content-complete development"))
             assertTrue(packet.contains("PENDING_QUALIFIED_REVIEW"))
         }
-        listOf(6, 7, 8, 9, 10).forEach { number ->
+        listOf(6, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         }
+        val unitSeven = pack.unit(7)!!
+        assertEquals("DEVELOPMENT", unitSeven.installState)
+        assertEquals("NOT_PREPARED", unitSeven.readiness)
+        assertEquals("PENDING_CURRICULUM_REVIEWER", unitSeven.mappingStatus)
+        assertTrue(unitSeven.topicSummary.contains("introductory adverb objective"))
+        assertTrue(unitSeven.mappingNote.contains("introductory adverb objective is not prepared"))
         assertTrue(pack.units.drop(10).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" })
 
         val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
@@ -893,7 +899,7 @@ class V2RebuildTest {
         assertEquals("cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("0152b0dc635c827e33c95854f08fd38e902da91d9c8f51c1e8dafe143bd7ca50", V2Validator.contentReviewDigest(pack))
+        assertEquals("7dc4ccccd951926f40b3af5c049dcd7022f6a5a4a927ee0a8c717dfb70a28eb2", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
