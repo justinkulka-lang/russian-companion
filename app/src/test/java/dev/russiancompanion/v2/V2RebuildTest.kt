@@ -32,6 +32,7 @@ import dev.russiancompanion.v2.ui.V2ContentInset
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
@@ -64,6 +65,39 @@ class V2RebuildTest {
         assertEquals("DEVELOPMENT", pack.unit(2)?.installState)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(2)?.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(2)?.mappingStatus)
+        listOf(3, 4, 5).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
+            assertEquals(listOf(number - 1), unit.prerequisiteUnitNumbers)
+            assertEquals(listOf("SELF_ATTESTATION"), unit.objectives.map { it.kind })
+            assertTrue(unit.sessions.flatMap { it.steps }.none { it.kind == "TEACH" || it.kind == "CHECK" || it.kind == "GUIDED" })
+            assertTrue(unit.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
+            assertTrue(unit.sessions.flatMap { it.steps }.filter { it.kind == "BOOK" }.all { !it.bookDirection.isNullOrBlank() })
+            assertFalse(unit.topicSummary.contains("Content-complete"))
+            val decision = advancementDecision(pack, unit, dev.russiancompanion.v2.curriculum.V2LearnerView(
+                onboardingCompleted = true,
+                currentUnitNumber = number,
+                startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
+                hasPenguin = true,
+                hasAnki = false,
+                hasBinder = false,
+                hasTutor = false,
+                dailyMinutes = 25,
+                transliterationEnabled = true,
+                currentSessionId = null,
+                currentStepIndex = 0,
+                completedStepIds = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                correctItemIds = emptySet(),
+                bookAttestedUnits = setOf(number),
+                completedUnitNumbers = emptySet(),
+            ))
+            assertFalse(decision.allowed)
+            assertTrue(decision.remaining.any { it.contains("distinct in-app checks") })
+        }
+        assertEquals(listOf(1, 2, 3, 4, 5), pack.unitReviews.map { it.unitNumber })
+        assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-hw" }.kind)
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-pron" }.kind)
@@ -89,12 +123,12 @@ class V2RebuildTest {
             assertTrue(objective.checkItemIds.isNotEmpty())
             assertTrue(objective.remediationStepIds.isNotEmpty())
         }
-        assertTrue(pack.units.drop(2).all { it.installState == "NOT_YET_INSTALLED" })
+        assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
         assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
-        assertEquals(listOf(1, 2), pack.unitReviews.map { it.unitNumber })
+        assertEquals(listOf(1, 2, 3, 4, 5), pack.unitReviews.map { it.unitNumber })
         assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
@@ -163,9 +197,40 @@ class V2RebuildTest {
         assertTrue(unitOneResult.errors.any { it.contains("Unit 2 readiness claims review approval") })
         assertTrue(unitOneResult.errors.none { it.contains("Unit 1 readiness claims review approval") })
 
-        val complete = approveUnitReview(unitOneOnly, 2)
-        val completeResult = V2Validator.validate(complete)
-        assertTrue(completeResult.errors.joinToString(), completeResult.ok)
+        val bothContentComplete = approveUnitReview(unitOneOnly, 2)
+        val bothResult = V2Validator.validate(bothContentComplete)
+        assertTrue(bothResult.errors.joinToString("\n"), bothResult.ok)
+
+        val unitThreeApproved = approveUnitReview(bothContentComplete, 3)
+        assertEquals("PENDING_QUALIFIED_REVIEW", unitThreeApproved.unitReviews.first { it.unitNumber == 4 }.status)
+        assertEquals("PENDING_QUALIFIED_REVIEW", unitThreeApproved.unitReviews.first { it.unitNumber == 5 }.status)
+        assertEquals("APPROVED", unitThreeApproved.unitReviews.first { it.unitNumber == 1 }.status)
+        assertEquals(
+            V2Validator.unitContentReviewDigest(bothContentComplete, 1),
+            V2Validator.unitContentReviewDigest(unitThreeApproved, 1),
+        )
+        assertEquals(
+            V2Validator.unitContentReviewDigest(bothContentComplete, 2),
+            V2Validator.unitContentReviewDigest(unitThreeApproved, 2),
+        )
+        val unitFourClaim = unitThreeApproved.copy(
+            units = unitThreeApproved.units.map { unit ->
+                if (unit.number == 4) unit.copy(readiness = "REVIEW_APPROVED") else unit
+            },
+        )
+        val unitFourResult = V2Validator.validate(unitFourClaim)
+        assertFalse(unitFourResult.ok)
+        assertTrue(unitFourResult.errors.any { it.contains("Unit 4 readiness claims review approval") })
+        assertTrue(unitFourResult.errors.none { it.contains("Unit 3 readiness claims review approval") })
+        val mappedThree = unitThreeApproved.copy(
+            units = unitThreeApproved.units.map { unit ->
+                if (unit.number == 3) unit.copy(mappingStatus = "APPROVED") else unit
+            },
+        )
+        val mappedResult = V2Validator.validate(mappedThree)
+        assertFalse(mappedResult.ok)
+        assertTrue(mappedResult.errors.any { it.contains("Unit 3 mapping must remain pending") })
+        assertTrue(mappedResult.errors.none { it.contains("Unit 4 mapping") })
     }
 
     @Test
@@ -353,14 +418,184 @@ class V2RebuildTest {
     }
 
     @Test
-    fun unitsThreeToThirtyAreNotInstalledAndDoNotJump() {
+    fun unitsThreeToFiveStayNotPreparedAndLaterUnitsStayClosed() {
         val pack = pack()
         val learner = LocalStore.openInMemory(context()).also { stores += it }.v2LearnerView()
         val unit3 = pack.unit(3)!!
-        assertEquals(V2UnitState.NOT_YET_INSTALLED, unitState(pack, unit3, learner))
+        assertEquals("NOT_PREPARED", unit3.readiness)
+        assertEquals(V2UnitState.LOCKED, unitState(pack, unit3, learner))
         assertFalse(canOpenUnit(unitState(pack, unit3, learner)))
-        assertTrue(unit3.sessions.isEmpty())
-        assertTrue(unit3.objectives.isEmpty())
+        assertTrue(unit3.sessions.isNotEmpty())
+        assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() && it.objectives.isEmpty() })
+        val store = LocalStore.openInMemory(context()).also { stores += it }
+        store.v2CompleteUnit(1, "2026-09-23T12:00")
+        store.v2CompleteUnit(2, "2026-09-23T12:00")
+        store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 3, onboardingCompleted = true))
+        assertEquals(V2UnitState.CURRENT, unitState(pack, unit3, store.v2LearnerView()))
+        assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(4)!!, store.v2LearnerView()))
+        val attested = store.v2LearnerView().copy(
+            completedStepIds = unit3.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            bookAttestedUnits = setOf(3),
+        )
+        val blocked = advancementDecision(pack, unit3, attested)
+        assertFalse(blocked.allowed)
+        assertTrue(blocked.remaining.any { it.contains("distinct in-app checks") })
+        val text = (3..5).joinToString(" ") { number ->
+            val unit = pack.unit(number)!!
+            unit.topicSummary + unit.mappingNote + unit.sessions.flatMap { it.steps }.joinToString(" ") { it.body + (it.bookDirection ?: "") }
+        }
+        assertFalse(text.contains("Penguin-aligned"))
+        assertFalse(text.contains("The New Penguin Russian Course"))
+        assertFalse(text.contains("Content-complete"))
+        assertTrue(pack.items.none { it.id.startsWith("u3-") || it.id.startsWith("u4-") || it.id.startsWith("u5-") })
+    }
+
+    @Test
+    fun genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness() {
+        val pack = pack()
+        val claimed = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number == 3) unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING") else unit
+            },
+        )
+        val claimedResult = V2Validator.validate(claimed)
+        assertFalse(claimedResult.ok)
+        assertTrue(claimedResult.errors.any { it.contains("book direction does not replace") })
+        assertTrue(claimedResult.errors.any { it.contains("no teach step") })
+
+        val letterId = pack.letters.first().id
+        val counted = claimed.copy(
+            admissions = claimed.admissions.copy(mappedPronunciationAudio = 1),
+            audioAssets = listOf(
+                V2AudioAsset(
+                    id = "audio-unrelated-unit-30",
+                    sourceId = "src-unicode-cyrillic",
+                    rightsId = "rights-unicode-cyrillic",
+                    unitNumber = 30,
+                    letterId = letterId,
+                    intakeReviewStatus = "APPROVED",
+                ),
+            ),
+        )
+        val countedResult = V2Validator.validate(counted)
+        assertFalse(countedResult.ok)
+        assertTrue(countedResult.errors.any { it.contains("book direction does not replace") })
+        assertTrue(countedResult.errors.none { it.contains("Unit 3") && it.contains("mapped pronunciation audio record") })
+
+        val emptied = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number == 3) {
+                    unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING", sessions = emptyList(), objectives = emptyList())
+                } else {
+                    unit
+                }
+            },
+        )
+        val emptiedResult = V2Validator.validate(emptied)
+        assertFalse(emptiedResult.ok)
+        assertTrue(emptiedResult.errors.any { it.contains("empty sessions or objectives do not count") })
+    }
+
+    @Test
+    fun durablePackIdentityStaysHonestAndUnitIsolationHolds() {
+        val pack = pack()
+        assertEquals("v2-curriculum-foundation", pack.packId)
+        assertEquals(3, pack.packVersion)
+        assertEquals("rev-pending-v2-curriculum", pack.linguisticReview.id)
+        assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
+        val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
+        assertTrue(seed.contains("\"packId\": \"v2-curriculum-foundation\""))
+        assertTrue(seed.contains("\"packVersion\": 3"))
+        assertTrue(seed.contains("\"id\": \"rev-pending-v2-curriculum\""))
+        assertFalse(seed.contains("v2-units-1-2-foundation"))
+        assertFalse(seed.contains("rev-pending-units-1-2"))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(2)!!.readiness)
+        listOf(3, 4, 5).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
+            val text = unit.topicSummary + unit.mappingNote + unit.sessions.flatMap { it.steps }.joinToString(" ") {
+                it.title + it.body + (it.bookDirection ?: "")
+            }
+            assertFalse(text.contains("Content-complete"))
+            assertFalse(text.contains("CONTENT_COMPLETE_REVIEW_PENDING"))
+            val packet = File(repo(), "review/unit-$number/UNIT_${number}_REVIEW_PACKET.md").readText()
+            assertFalse(packet.contains("CONTENT_COMPLETE_REVIEW_PENDING"))
+            assertFalse(packet.contains("Content-complete development"))
+        }
+        assertTrue(pack.units.drop(5).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" })
+
+        val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
+        val unitThree = V2Validator.unitContentReviewDigest(pack, 3)
+        val unitFive = V2Validator.unitContentReviewDigest(pack, 5)
+        val local = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number != 5) unit else {
+                    unit.copy(
+                        sessions = unit.sessions.map { session ->
+                            session.copy(
+                                steps = session.steps.map { step ->
+                                    if (step.id == "u5-st-questions") step.copy(body = step.body + " extra book direction") else step
+                                },
+                            )
+                        },
+                    )
+                }
+            },
+        )
+        assertEquals(unitOne, V2Validator.unitContentReviewDigest(local, 1))
+        assertEquals(unitThree, V2Validator.unitContentReviewDigest(local, 3))
+        assertNotEquals(unitFive, V2Validator.unitContentReviewDigest(local, 5))
+        assertNotEquals(V2Validator.contentReviewDigest(pack), V2Validator.contentReviewDigest(local))
+        val workflow = pack.copy(
+            units = pack.units.map { unit ->
+                if (unit.number == 5) unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING") else unit
+            },
+        )
+        assertEquals(unitFive, V2Validator.unitContentReviewDigest(workflow, 5))
+    }
+
+    @Test
+    fun notPreparedBookDirectionCannotBePromotedOrAdvanced() {
+        val pack = pack()
+        val unit3 = pack.unit(3)!!
+        val promoted = listOf(
+            "installed" to unit3.copy(installState = "INSTALLED", readiness = "INSTALLABLE", mappingStatus = "APPROVED"),
+            "installable" to unit3.copy(readiness = "INSTALLABLE"),
+            "review-approved" to unit3.copy(readiness = "REVIEW_APPROVED"),
+            "mapping-approved" to unit3.copy(readiness = "MAPPING_APPROVED", mappingStatus = "APPROVED"),
+        )
+        promoted.forEach { (label, replacement) ->
+            val candidate = pack.copy(
+                units = pack.units.map { unit -> if (unit.number == 3) replacement else unit },
+            )
+            val result = V2Validator.validate(candidate)
+            assertFalse(label + "\n" + result.errors.joinToString("\n"), result.ok)
+        }
+        val reviewed = approveUnitReview(
+            pack.copy(
+                units = pack.units.map { unit ->
+                    if (unit.number == 3) unit.copy(readiness = "REVIEW_APPROVED") else unit
+                },
+            ),
+            3,
+        )
+        val reviewedResult = V2Validator.validate(reviewed)
+        assertFalse(reviewedResult.ok)
+        assertTrue(reviewedResult.errors.any { it.contains("Unit 3 is not content-complete") })
+        val store = LocalStore.openInMemory(context()).also { stores += it }
+        store.v2CompleteUnit(1, "2026-09-23T12:00")
+        store.v2CompleteUnit(2, "2026-09-23T12:00")
+        val attested = store.v2LearnerView().copy(
+            currentUnitNumber = 3,
+            completedStepIds = unit3.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            bookAttestedUnits = setOf(3),
+        )
+        val decision = advancementDecision(pack, unit3, attested)
+        assertFalse(decision.allowed)
+        assertTrue(decision.remaining.any { it.contains("distinct in-app checks") })
     }
 
     @Test

@@ -531,6 +531,9 @@ internal object V2Validator {
             errors += "Unit ${unit.number} has unknown readiness ${unit.readiness}"
             return
         }
+        if (unit.readiness != "NOT_PREPARED") {
+            validateSubstantiveContent(pack, unit, errors)
+        }
         when (unit.readiness) {
             "NOT_PREPARED" -> {
                 if (unit.installState == "INSTALLED") {
@@ -570,6 +573,35 @@ internal object V2Validator {
             "INSTALLABLE" -> {
                 if (unitReview(pack, unit.number)?.status != "APPROVED" || unit.mappingStatus != "APPROVED") {
                     errors += "Unit ${unit.number} INSTALLABLE readiness requires approved review and mapping"
+                }
+            }
+        }
+    }
+
+    private fun validateSubstantiveContent(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
+        if (unit.sessions.isEmpty() || unit.objectives.isEmpty()) {
+            errors += "Unit ${unit.number} is not content-complete: empty sessions or objectives do not count"
+        }
+        val recognition = unit.objectives.filter { it.kind == "RECOGNITION" }
+        if (recognition.isEmpty()) {
+            errors += "Unit ${unit.number} is not content-complete: book direction does not replace instruction, examples, guided practice, independent checks, feedback, and remediation"
+        }
+        if (unit.sessions.flatMap { it.steps }.none { it.kind == "TEACH" }) {
+            errors += "Unit ${unit.number} is not content-complete: it has no teach step"
+        }
+        recognition.forEach { objective ->
+            if (objective.instructionStepIds.isEmpty() ||
+                objective.exampleIds.size < 2 ||
+                objective.practiceStepIds.isEmpty() ||
+                objective.checkItemIds.isEmpty() ||
+                objective.remediationStepIds.isEmpty()
+            ) {
+                errors += "Unit ${unit.number} objective ${objective.id} is missing instruction, examples, guided practice, independent checks, or remediation"
+            }
+            objective.checkItemIds.forEach { itemId ->
+                val item = pack.item(itemId)
+                if (item == null || item.feedback.isBlank()) {
+                    errors += "Unit ${unit.number} check $itemId has no factual feedback"
                 }
             }
         }
@@ -659,8 +691,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..2) {
-            errors += "Only Units 1-2 may be development content in this pack"
+        if (unit.number !in 1..5) {
+            errors += "Only Units 1-5 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"

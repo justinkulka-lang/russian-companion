@@ -4,12 +4,14 @@
 Cyrillic letters are public-domain writing-system facts. No Penguin prose,
 no generated example words, no catalog-order audio bindings.
 
-Units 1 and 2 are content-complete DEVELOPMENT units awaiting qualified
-review and an owned-edition mapping. Neither is INSTALLED. Unit 2 reviews
-printed letters in the app and sends handwriting and additional
-pronunciation to the owned book. Verified handwriting images and mapped
-audio are not invented. Advancement checks are letter identities, print
-pairs, confusable forms, and signs — never product-policy quizzes.
+Units 1–2 are content-complete DEVELOPMENT units awaiting qualified
+review and an owned-edition mapping. Units 3–5 are DEVELOPMENT paths for
+the next public topics and are not content-complete: their new phrases and
+grammar stay in the owned book, and printed-letter drills are not used as
+a substitute. None is INSTALLED. They do not invent phrases, gender rules,
+verb forms, case endings, or question words. Advancement checks are letter
+identities, print pairs, confusable forms, and signs — never product-policy
+quizzes.
 """
 
 from __future__ import annotations
@@ -52,7 +54,7 @@ RIGHTS = [
 ]
 
 REVIEW_PENDING = {
-    "id": "rev-pending-units-1-2",
+    "id": "rev-pending-v2-curriculum",
     "status": "PENDING_QUALIFIED_REVIEW",
     "reviewer": None,
     "packVersion": None,
@@ -293,6 +295,101 @@ def objective(
         "checkItemIds": checks,
         "remediationStepIds": remediation,
     }
+
+
+def book_directed_topics(number: int, topics: list[tuple[str, str, str, str]]) -> dict:
+    """Name each public topic and send that work to the owned book.
+
+    topics: (suffix, session title, step title, book direction)
+    These sessions are not content-complete. They do not add recognition
+    items, examples, or letter drills as a stand-in for the lesson.
+    """
+    book_id = f"obj-u{number}-book"
+    book_steps = []
+    book_sessions = []
+    for suffix, session_title, step_title, direction in topics:
+        step_id = f"u{number}-st-{suffix}"
+        book_steps.append(step_id)
+        book_sessions.append(
+            session(
+                f"u{number}-s-{suffix}",
+                session_title,
+                [book_id],
+                [
+                    step(
+                        step_id,
+                        "BOOK",
+                        step_title,
+                        direction,
+                        bookDirection=direction,
+                        referenceIds=["ref-book-topics"],
+                    ),
+                ],
+                12,
+            )
+        )
+    attest_id = f"u{number}-st-book"
+    sessions = [
+        session(
+            f"u{number}-s-orient",
+            "What this unit does not contain",
+            [book_id],
+            [
+                step(
+                    f"u{number}-st-orient",
+                    "ORIENT",
+                    f"Unit {number} is not content-complete",
+                    (
+                        f"Unit {number} follows the previous unit in the public lesson order. "
+                        "Its new explanations, examples, guided practice, independent checks, "
+                        "answer feedback, and remediation are not in this app. "
+                        "The later steps name the part of the owned lesson to do. "
+                        "They do not copy that lesson, and they do not make this unit content-complete."
+                    ),
+                    bookDirection=f"Open Lesson {number} in your copy before the later steps.",
+                    referenceIds=["ref-book-topics"],
+                ),
+            ],
+            6,
+        ),
+        *book_sessions,
+        session(
+            f"u{number}-s-book",
+            f"Self-attest Lesson {number}",
+            [book_id],
+            [
+                step(
+                    attest_id,
+                    "BOOK",
+                    f"Record Lesson {number} book work",
+                    (
+                        f"When you have done Lesson {number} in your copy, self-attest here. "
+                        "Attestation records your report. It does not grade the lesson, "
+                        "approve a mapping, or mark this unit content-complete."
+                    ),
+                    bookDirection=(
+                        f"After Lesson {number} is finished in your copy, return here and self-attest."
+                    ),
+                    referenceIds=["ref-book-topics"],
+                ),
+            ],
+            8,
+        ),
+    ]
+    objectives = [
+        objective(
+            book_id,
+            number,
+            f"Do Lesson {number} in the owned book and self-attest",
+            "SELF_ATTESTATION",
+            book_steps + [attest_id],
+            [],
+            [],
+            [],
+            [],
+        ),
+    ]
+    return {"items": [], "examples": [], "sessions": sessions, "objectives": objectives}
 
 
 def build() -> dict:
@@ -1289,6 +1386,15 @@ def build() -> dict:
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
         ),
+        reference(
+            "ref-book-topics",
+            "Later lesson topics stay in the book",
+            "Units 3–5 do not contain the phrases, grammar, or question forms named in their public topics.",
+            "Open the matching lesson in the copy you own. This reference does not supply those forms, and it does not make the unit content-complete.",
+            3,
+            "OPERATIONAL_GUIDANCE",
+            "NOT_REQUIRED",
+        ),
     ]
 
     def development_unit(
@@ -1301,7 +1407,9 @@ def build() -> dict:
         install_state: str = "DEVELOPMENT",
         readiness: str = "NOT_PREPARED",
         mapping_note: str = "Topic-level alignment uses the publisher's public table of contents. Edition comparison is not signed. This unit is incomplete development content, not a production-depth installed unit.",
+        require_due_review: bool | None = None,
     ) -> dict:
+        due_review = number > 1 if require_due_review is None else require_due_review
         return {
             "number": number,
             "id": f"unit-{number}",
@@ -1322,10 +1430,68 @@ def build() -> dict:
                 "requireBookSelfAttestation": True,
                 "requireAppChecks": True,
                 "minimumDistinctChecks": 2,
-                "requireDueReview": number > 1,
+                "requireDueReview": due_review,
                 "tutorOptional": True,
             },
         }
+
+    bundles = [
+        book_directed_topics(
+            3,
+            [
+                (
+                    "phrases",
+                    "Everyday phrases and naming things",
+                    "Work everyday phrases in your copy",
+                    "In your copy, open Lesson 3 and do its section on everyday phrases and naming things. Use the book's explanations, examples, and practice. This app does not supply the phrases or their answers.",
+                ),
+                (
+                    "gender",
+                    "Basic grammar and gender",
+                    "Work grammar and gender in your copy",
+                    "In your copy, open Lesson 3 and do its section on basic grammar and gender. Use the book's explanations and practice. This app does not state gender rules.",
+                ),
+            ],
+        ),
+        book_directed_topics(
+            4,
+            [
+                (
+                    "verbs",
+                    "Verbs, pronouns, and the present tense",
+                    "Work verbs and the present tense in your copy",
+                    "In your copy, open Lesson 4 and do its section on verbs, personal pronouns, the present tense, and conjugation. Use the book's explanations, examples, and practice. This app does not state those forms.",
+                ),
+                (
+                    "cases",
+                    "Word stress and noun cases",
+                    "Work stress and noun cases in your copy",
+                    "In your copy, open Lesson 4 and do its section on word stress and the introduction to nouns and cases. Use the book's explanations and practice. This app does not mark stress or case endings.",
+                ),
+            ],
+        ),
+        book_directed_topics(
+            5,
+            [
+                (
+                    "questions",
+                    "Questions",
+                    "Work questions in your copy",
+                    "In your copy, open Lesson 5 and do its section on questions. Use the book's explanations, examples, and practice. This app does not supply question words or patterns.",
+                ),
+                (
+                    "prepositional",
+                    "Prepositional case and indeclinable nouns",
+                    "Work the prepositional case in your copy",
+                    "In your copy, open Lesson 5 and do its section on the prepositional case and indeclinable nouns. Use the book's explanations and practice. This app does not state those endings.",
+                ),
+            ],
+        ),
+    ]
+    for bundle in bundles:
+        items.extend(bundle["items"])
+        examples.extend(bundle["examples"])
+        objectives.extend(bundle["objectives"])
 
     units = [
         development_unit(
@@ -1348,8 +1514,40 @@ def build() -> dict:
             readiness="CONTENT_COMPLETE_REVIEW_PENDING",
             mapping_note="Proposed Lesson 2 mapping from the publisher's public table of contents: handwriting recognition and additional pronunciation. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
         ),
+        development_unit(
+            3,
+            "Everyday phrases, naming things, basic grammar, and gender",
+            "Everyday phrases",
+            "Unit 3 follows Unit 2 and is not content-complete. The public topic is everyday phrases, naming things, basic grammar, and gender. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 3 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
+            bundles[0]["sessions"],
+            [2],
+            mapping_note="Proposed Lesson 3 mapping from the publisher's public table of contents: everyday phrases, naming things, basic grammar, and gender. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
+        ),
+        development_unit(
+            4,
+            "Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases",
+            "Verbs and cases",
+            "Unit 4 follows Unit 3 and is not content-complete. The public topic is verbs, personal pronouns, the present tense, conjugation, word stress, and the introduction to nouns and cases. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 4 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
+            bundles[1]["sessions"],
+            [3],
+            mapping_note="Proposed Lesson 4 mapping from the publisher's public table of contents: verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
+        ),
+        development_unit(
+            5,
+            "Questions, prepositional case, and indeclinable nouns",
+            "Questions",
+            "Unit 5 follows Unit 4 and is not content-complete. The public topic is questions, the prepositional case, and indeclinable nouns. Those explanations, examples, checks, feedback, and remediation are not in this app. The steps send the learner to Lesson 5 in the owned copy. Qualified review and the owned-edition mapping are still pending.",
+            bundles[2]["sessions"],
+            [4],
+            mapping_note="Proposed Lesson 5 mapping from the publisher's public table of contents: questions, prepositional case, and indeclinable nouns. Owned-edition comparison is not signed. The unit is not content-complete and is not labeled aligned.",
+            require_due_review=False,
+        ),
     ]
     for number, short, title in UNITS_3_30:
+        if number <= 5:
+            continue
         units.append(
             {
                 "number": number,
@@ -1372,11 +1570,11 @@ def build() -> dict:
 
     pack = {
         "schemaVersion": 1,
-        "packId": "v2-units-1-2-foundation",
-        "packVersion": 2,
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(1), pending_unit_review(2)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 6)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH],
         "rights": RIGHTS,
         "letters": letters,
