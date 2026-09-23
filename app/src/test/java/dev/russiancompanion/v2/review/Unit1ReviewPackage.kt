@@ -18,7 +18,7 @@ import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.unit
 import java.security.MessageDigest
 
-internal const val UNIT1_REVIEW_SCHEMA_VERSION = 1
+internal const val UNIT1_REVIEW_SCHEMA_VERSION = 2
 
 internal const val UNIT1_REVIEW_SOURCE_COMMIT = "49eae12f175574add477ba4f15224650abaa2293"
 
@@ -62,6 +62,7 @@ private val WORKSHEET_HEADER = listOf(
     "reviewer_identity",
     "review_date",
     "reviewed_version_digest",
+    "reviewer_qualification",
 )
 
 private val MAPPING_HEADER = listOf(
@@ -81,6 +82,7 @@ private val MAPPING_HEADER = listOf(
     "reviewer_identity",
     "review_date",
     "reviewed_version_digest",
+    "reviewer_qualification",
 )
 
 private val BLANK_REVIEW_COLUMNS = listOf(
@@ -89,6 +91,7 @@ private val BLANK_REVIEW_COLUMNS = listOf(
     "reviewer_identity",
     "review_date",
     "reviewed_version_digest",
+    "reviewer_qualification",
 )
 
 private val BLANK_MAPPING_COLUMNS = listOf(
@@ -105,6 +108,7 @@ private val BLANK_MAPPING_COLUMNS = listOf(
     "reviewer_identity",
     "review_date",
     "reviewed_version_digest",
+    "reviewer_qualification",
 )
 
 internal data class Unit1ReviewRecord(
@@ -128,6 +132,7 @@ internal data class Unit1ReviewEdge(
 
 internal data class Unit1ReviewPackage(
     val instructionalContentDigest: String,
+    val reviewPackageDigest: String,
     val records: List<Unit1ReviewRecord>,
     val edges: List<Unit1ReviewEdge>,
     val unresolved: List<String>,
@@ -149,7 +154,16 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
     val unavailable = mutableListOf<String>()
     if (unit == null) {
         unresolved += "Unit 1 is missing from the curriculum pack"
-        return Unit1ReviewPackage(V2Validator.instructionalContentDigest(pack), emptyList(), emptyList(), unresolved, emptyList(), emptyList())
+        val instructional = V2Validator.instructionalContentDigest(pack)
+        return Unit1ReviewPackage(
+            instructionalContentDigest = instructional,
+            reviewPackageDigest = reviewPackageDigest(instructional, emptyList(), emptyList(), emptyList(), emptyList(), unresolved),
+            records = emptyList(),
+            edges = emptyList(),
+            unresolved = unresolved,
+            bookDirectedIds = emptyList(),
+            unavailableIds = emptyList(),
+        )
     }
     fun add(record: Unit1ReviewRecord) {
         if (!seen.add(record.id)) {
@@ -214,6 +228,7 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
     unit.sessions.forEach { session ->
         add(sessionRecord(session))
         session.objectiveIds.forEach { objectiveId ->
+            edges += Unit1ReviewEdge(session.id, objectiveId, "OBJECTIVE")
             if (unit.objectives.none { it.id == objectiveId }) {
                 unresolved += "Session ${session.id} objective $objectiveId cannot be resolved"
             }
@@ -229,12 +244,15 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
                 if (pack.step(target) == null) unresolved += "Step ${step.id} remediation $target cannot be resolved"
             }
             step.exampleIds.forEach { exampleId ->
+                edges += Unit1ReviewEdge(step.id, exampleId, "EXAMPLE")
                 if (pack.example(exampleId) == null) unresolved += "Step ${step.id} example $exampleId cannot be resolved"
             }
             step.itemIds.forEach { itemId ->
+                edges += Unit1ReviewEdge(step.id, itemId, "ITEM")
                 if (pack.item(itemId) == null) unresolved += "Step ${step.id} item $itemId cannot be resolved"
             }
             step.referenceIds.forEach { referenceId ->
+                edges += Unit1ReviewEdge(step.id, referenceId, "REFERENCE")
                 if (pack.reference(referenceId) == null) unresolved += "Step ${step.id} reference $referenceId cannot be resolved"
             }
         }
@@ -320,13 +338,25 @@ internal fun buildUnit1ReviewPackage(pack: V2CurriculumPack): Unit1ReviewPackage
     objectiveOrder.forEach { objectiveId ->
         if (records.none { it.id == objectiveId }) unresolved += "Objective $objectiveId was not emitted"
     }
+    val instructional = V2Validator.instructionalContentDigest(pack)
+    val distinctUnresolved = unresolved.distinct()
+    val distinctBookDirected = bookDirected.distinct()
+    val distinctUnavailable = unavailable.distinct()
     return Unit1ReviewPackage(
-        instructionalContentDigest = V2Validator.instructionalContentDigest(pack),
+        instructionalContentDigest = instructional,
+        reviewPackageDigest = reviewPackageDigest(
+            instructional,
+            records,
+            edges,
+            distinctBookDirected,
+            distinctUnavailable,
+            distinctUnresolved,
+        ),
         records = records,
         edges = edges,
-        unresolved = unresolved.distinct(),
-        bookDirectedIds = bookDirected.distinct(),
-        unavailableIds = unavailable.distinct(),
+        unresolved = distinctUnresolved,
+        bookDirectedIds = distinctBookDirected,
+        unavailableIds = distinctUnavailable,
     )
 }
 
@@ -360,7 +390,14 @@ internal fun validateUnit1ReviewFiles(pack: V2CurriculumPack, files: Map<String,
     if (manifest != null) {
         val digest = jsonStringField(manifest, "instructionalContentDigest")
         if (digest != rendered.instructionalContentDigest) {
-            errors += "Package digest does not match the instructional-content digest"
+            errors += "Instructional-content digest does not match the application digest"
+        }
+        val packageDigest = jsonStringField(manifest, "reviewPackageDigest")
+        if (packageDigest != rendered.reviewPackageDigest) {
+            errors += "Review package digest does not match the review package"
+        }
+        if (digest != null && digest == packageDigest) {
+            errors += "Review package digest is only an alias of the instructional-content digest"
         }
         if (jsonStringField(manifest, "sourceCommit") != UNIT1_REVIEW_SOURCE_COMMIT) {
             errors += "Package source commit does not match the curriculum revision"
@@ -377,7 +414,7 @@ internal fun validateUnit1ReviewFiles(pack: V2CurriculumPack, files: Map<String,
         if (!manifest.contains("\"linguisticReviewStatus\": \"PENDING_QUALIFIED_REVIEW\"")) {
             errors += "Package does not keep linguistic review pending"
         }
-        val recordsJson = manifest.substringAfter("\"records\": [").substringBefore("\n  ],\n  \"remediation\"")
+        val recordsJson = manifest.substringAfter("\"records\": [").substringBefore("\n  ],\n  \"edges\"")
         val ids = Regex("\"id\": \"([^\"]+)\"").findAll(recordsJson).map { it.groupValues[1] }.toList()
         if (ids.size != ids.distinct().size) errors += "Manifest repeats a stable id"
         val expectedIds = rendered.records.map { it.id }
@@ -387,6 +424,12 @@ internal fun validateUnit1ReviewFiles(pack: V2CurriculumPack, files: Map<String,
                 errors += "Content hash for ${record.id} does not match"
             }
         }
+        val edgesJson = manifest.substringAfter("\"edges\": [").substringBefore("\n  ],\n  \"bookDirectedIds\"")
+        val edgeTriples = Regex("\"from\": \"([^\"]+)\", \"to\": \"([^\"]+)\", \"kind\": \"([^\"]+)\"").findAll(edgesJson).map {
+            Triple(it.groupValues[1], it.groupValues[2], it.groupValues[3])
+        }.toList()
+        val expectedEdges = rendered.edges.map { Triple(it.fromId, it.toId, it.kind) }
+        if (edgeTriples != expectedEdges) errors += "Manifest edges do not match the Unit 1 traversal"
     }
     val worksheet = files[UNIT1_WORKSHEET_NAME]
     if (worksheet != null) {
@@ -495,12 +538,14 @@ private fun renderPacket(review: Unit1ReviewPackage): String {
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
         append("- Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT\n")
         append("- Instructional-content SHA-256: ${review.instructionalContentDigest}\n")
-        append("- Package digest: ${review.instructionalContentDigest}\n\n")
-        append("The package digest is the application instructional-content digest. Approval, if a reviewer later grants it, binds only to this digest and version.\n\n")
+        append("- Review-package SHA-256: ${review.reviewPackageDigest}\n\n")
+        append("The instructional-content digest approves the governed curriculum. ")
+        append("The review-package digest verifies this packet: ordered records, relationship hashes, and every instructional edge. ")
+        append("A later approval binds only to version $UNIT1_REVIEW_VERSION_NAME and the instructional-content digest.\n\n")
         append("## Unit\n\n")
         append(unit.content)
         append("\n\n## Not yet approved\n\n")
-        append("No qualified reviewer has signed this packet. Reviewer identity, review date, disposition, and reviewed digest are blank. ")
+        append("No reviewer has signed this packet. Reviewer identity, qualification, review date, disposition, and reviewed digest are blank. ")
         append("Do not treat this development unit as reviewed, installable, or installed.\n\n")
         append("## Records\n\n")
         review.records.forEach { record ->
@@ -515,9 +560,12 @@ private fun renderPacket(review: Unit1ReviewPackage): String {
             append(record.content)
             append("\n\n")
         }
-        append("## Remediation paths\n\n")
-        val remediation = review.edges.filter { it.kind == "REMEDIATION" }
-        if (remediation.isEmpty()) append("None.\n\n") else remediation.forEach { append("- `${it.fromId}` -> `${it.toId}`\n") }
+        append("## Instructional relationships\n\n")
+        if (review.edges.isEmpty()) {
+            append("None.\n\n")
+        } else {
+            review.edges.forEach { append("- `${it.fromId}` ${it.kind} `${it.toId}`\n") }
+        }
         append("\n## Book-directed experiences\n\n")
         if (review.bookDirectedIds.isEmpty()) append("None.\n\n") else review.bookDirectedIds.forEach { append("- `$it`\n") }
         append("\n## Unavailable experiences\n\n")
@@ -539,7 +587,7 @@ private fun renderManifest(review: Unit1ReviewPackage): String {
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
         append("  \"sourceCommit\": ${jsonString(UNIT1_REVIEW_SOURCE_COMMIT)},\n")
         append("  \"instructionalContentDigest\": ${jsonString(review.instructionalContentDigest)},\n")
-        append("  \"packageDigest\": ${jsonString(review.instructionalContentDigest)},\n")
+        append("  \"reviewPackageDigest\": ${jsonString(review.reviewPackageDigest)},\n")
         append("  \"linguisticReviewStatus\": \"PENDING_QUALIFIED_REVIEW\",\n")
         append("  \"unit\": {\n")
         append("    \"id\": \"unit-1\",\n")
@@ -557,14 +605,13 @@ private fun renderManifest(review: Unit1ReviewPackage): String {
         append("  \"records\": [\n")
         review.records.forEachIndexed { index, record ->
             val comma = if (index == review.records.lastIndex) "" else ","
-            append("    {\"id\": ${jsonString(record.id)}, \"type\": ${jsonString(record.type)}, \"contentHash\": ${jsonString(record.contentHash)}, \"sourceId\": ${jsonString(record.sourceId)}, \"rightsIds\": ${jsonArray(record.rightsIds)}, \"reviewStatus\": ${jsonString(record.reviewStatus)}}$comma\n")
+            append("    {\"id\": ${jsonString(record.id)}, \"type\": ${jsonString(record.type)}, \"objectiveIds\": ${jsonArray(record.objectiveIds)}, \"sessionIds\": ${jsonArray(record.sessionIds)}, \"contentHash\": ${jsonString(record.contentHash)}, \"sourceId\": ${jsonString(record.sourceId)}, \"rightsIds\": ${jsonArray(record.rightsIds)}, \"reviewStatus\": ${jsonString(record.reviewStatus)}}$comma\n")
         }
         append("  ],\n")
-        append("  \"remediation\": [\n")
-        val remediation = review.edges.filter { it.kind == "REMEDIATION" }
-        remediation.forEachIndexed { index, edge ->
-            val comma = if (index == remediation.lastIndex) "" else ","
-            append("    {\"from\": ${jsonString(edge.fromId)}, \"to\": ${jsonString(edge.toId)}}$comma\n")
+        append("  \"edges\": [\n")
+        review.edges.forEachIndexed { index, edge ->
+            val comma = if (index == review.edges.lastIndex) "" else ","
+            append("    {\"from\": ${jsonString(edge.fromId)}, \"to\": ${jsonString(edge.toId)}, \"kind\": ${jsonString(edge.kind)}}$comma\n")
         }
         append("  ],\n")
         append("  \"bookDirectedIds\": ${jsonArray(review.bookDirectedIds)},\n")
@@ -593,10 +640,11 @@ private fun renderWorksheet(review: Unit1ReviewPackage): String {
             "",
             "",
             "",
+            "",
         ).joinToString("\t") { escapeTsv(it) }
     }
     lines += "# Allowed disposition values, to be entered by the reviewer and not by this generator: APPROVED, CORRECTION_REQUIRED, REJECTED."
-    lines += "# Reviewer identity, review date, correction comment, and reviewed version digest must stay blank until a qualified human reviewer completes them."
+    lines += "# Reviewer identity, qualification, review date, correction comment, and reviewed version digest must stay blank until a human reviewer completes them."
     return lines.joinToString("\n") + "\n"
 }
 
@@ -604,7 +652,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack): String {
     val unit = pack.unit(1) ?: error("Unit 1 is missing")
     val lines = mutableListOf(
         "# Warning: this worksheet must not contain copied Penguin prose or exercises.",
-        "# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, and reviewed digest only after comparing the Product Owner's legally owned edition.",
+        "# Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, reviewed digest, and qualification only after comparing the Product Owner's legally owned edition.",
         MAPPING_HEADER.joinToString("\t"),
     )
     unit.objectives.forEach { objective ->
@@ -617,7 +665,7 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack): String {
 }
 
 private fun mappingRow(id: String, type: String, title: String): String {
-    return listOf(id, type, title, "", "", "", "", "", "", "", "", "", "", "", "", "").joinToString("\t") { escapeTsv(it) }
+    return listOf(id, type, title, "", "", "", "", "", "", "", "", "", "", "", "", "", "").joinToString("\t") { escapeTsv(it) }
 }
 
 private fun renderInstructions(review: Unit1ReviewPackage): String {
@@ -628,12 +676,19 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
         Curriculum source commit: $UNIT1_REVIEW_SOURCE_COMMIT
         Instructional-content digest: ${review.instructionalContentDigest}
+        Review-package digest: ${review.reviewPackageDigest}
 
         This packet was generated from the packaged curriculum. It does not perform review.
 
+        ## Digests
+
+        The instructional-content digest is the application digest of the governed curriculum. It is canonical JSON, digest schema ${V2Validator.INSTRUCTIONAL_DIGEST_SCHEMA}, covering linguistic, pedagogical, mapping, provenance, and rights fields. A later content approval binds only to version $UNIT1_REVIEW_VERSION_NAME and that digest. Any later change to a governed curriculum field invalidates the affected approval.
+
+        The review-package digest binds this packet itself: manifest metadata, ordered records, per-record hashes (including objective and session relationships), every instructional edge, book-directed and unavailable lists, and the instructional-content digest. Use it to verify that a decision refers to this exact package. It does not approve the curriculum by itself.
+
         ## Qualifications
 
-        The reviewer must be able to judge Cyrillic letter identity, phonetic statements, instructional explanations, answer keys, feedback, remediation, lesson placement, and an owned-edition mapping. The repository does not name or appoint that reviewer.
+        A reviewer must possess demonstrable advanced Russian competence and sufficient language-teaching or curriculum-review competence to validate Cyrillic letter identity, phonetics, instructional explanations, answer keys, feedback, remediation, and owned-edition placement. The repository does not name, appoint, or attest any reviewer. The reviewer qualification field stays blank until that person attests their own qualification.
 
         ## What must be checked
 
@@ -641,7 +696,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and digest ${review.instructionalContentDigest}. Any later instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME and instructional-content digest ${review.instructionalContentDigest}. Confirm the review-package digest ${review.reviewPackageDigest} before relying on this packet. Any later instructional change invalidates the affected approval. Leave disposition, correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 1 reviewed, installable, installed, or as an approved edition alignment.
 
@@ -884,9 +939,81 @@ private fun record(
     classification: String,
     reviewStatus: String,
 ): Unit1ReviewRecord {
-    val hash = sha256(listOf(type, id, content, sourceId, rightsIds.joinToString(","), classification, reviewStatus).joinToString("\u001f"))
+    val hash = sha256(
+        canonObj(
+            "type" to canonStr(type),
+            "id" to canonStr(id),
+            "objectiveIds" to canonArr(objectiveIds.map(::canonStr)),
+            "sessionIds" to canonArr(sessionIds.map(::canonStr)),
+            "content" to canonStr(content),
+            "sourceId" to canonStr(sourceId),
+            "rightsIds" to canonArr(rightsIds.map(::canonStr)),
+            "classification" to canonStr(classification),
+            "reviewStatus" to canonStr(reviewStatus),
+        ),
+    )
     return Unit1ReviewRecord(id, type, objectiveIds, sessionIds, content, sourceId, rightsIds, classification, reviewStatus, hash)
 }
+
+private fun reviewPackageDigest(
+    instructionalContentDigest: String,
+    records: List<Unit1ReviewRecord>,
+    edges: List<Unit1ReviewEdge>,
+    bookDirectedIds: List<String>,
+    unavailableIds: List<String>,
+    unresolved: List<String>,
+): String {
+    return sha256(
+        canonObj(
+            "digestSchema" to "1",
+            "schemaVersion" to UNIT1_REVIEW_SCHEMA_VERSION.toString(),
+            "packageId" to canonStr("unit-1-linguistic-and-mapping-review"),
+            "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
+            "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
+            "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
+            "sourceCommit" to canonStr(UNIT1_REVIEW_SOURCE_COMMIT),
+            "instructionalContentDigest" to canonStr(instructionalContentDigest),
+            "linguisticReviewStatus" to canonStr("PENDING_QUALIFIED_REVIEW"),
+            "unit" to canonObj(
+                "id" to canonStr("unit-1"),
+                "installState" to canonStr("DEVELOPMENT"),
+                "readiness" to canonStr("CONTENT_COMPLETE_REVIEW_PENDING"),
+                "mappingStatus" to canonStr("PENDING_CURRICULUM_REVIEWER"),
+            ),
+            "records" to canonArr(records.map { record ->
+                canonObj(
+                    "id" to canonStr(record.id),
+                    "type" to canonStr(record.type),
+                    "objectiveIds" to canonArr(record.objectiveIds.map(::canonStr)),
+                    "sessionIds" to canonArr(record.sessionIds.map(::canonStr)),
+                    "contentHash" to canonStr(record.contentHash),
+                    "sourceId" to canonStr(record.sourceId),
+                    "rightsIds" to canonArr(record.rightsIds.map(::canonStr)),
+                    "classification" to canonStr(record.classification),
+                    "reviewStatus" to canonStr(record.reviewStatus),
+                )
+            }),
+            "edges" to canonArr(edges.map { edge ->
+                canonObj(
+                    "from" to canonStr(edge.fromId),
+                    "to" to canonStr(edge.toId),
+                    "kind" to canonStr(edge.kind),
+                )
+            }),
+            "bookDirectedIds" to canonArr(bookDirectedIds.map(::canonStr)),
+            "unavailableIds" to canonArr(unavailableIds.map(::canonStr)),
+            "unresolved" to canonArr(unresolved.map(::canonStr)),
+        ),
+    )
+}
+
+private fun canonObj(vararg fields: Pair<String, String>): String {
+    return fields.joinToString(prefix = "{", postfix = "}") { (key, value) -> "${canonStr(key)}:$value" }
+}
+
+private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
+
+private fun canonStr(value: String): String = jsonString(value)
 
 private fun sha256(text: String): String {
     val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))

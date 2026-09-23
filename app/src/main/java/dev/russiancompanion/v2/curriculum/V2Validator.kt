@@ -54,51 +54,211 @@ internal object V2Validator {
         return V2Validation(errors.isEmpty(), errors)
     }
 
+    /**
+     * SHA-256 of digest schema 1: compact JSON with fixed property order.
+     * Collections keep their packaged order. The approval signature
+     * (reviewer, pack version, reviewed digest, curriculum mapping id) is
+     * excluded so the digest can be computed and then stored.
+     */
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String {
-        val payload = buildString {
-            append(pack.packId)
-            append('|')
-            append(pack.packVersion)
-            pack.letters.forEach { letter ->
-                append(letter.id)
-                append(letter.uppercase)
-                append(letter.lowercase)
-            }
-            pack.examples.forEach { example ->
-                append(example.id)
-                append(example.display)
-                append(example.objectiveId)
-            }
-            pack.items.forEach { item ->
-                append(item.id)
-                append(item.prompt)
-                append(item.answer)
-                append(item.objectiveId)
-            }
-            pack.references.forEach { reference ->
-                append(reference.id)
-                append(reference.classification)
-            }
-            pack.units.forEach { unit ->
-                append(unit.number)
-                append(unit.installState)
-                unit.objectives.forEach { objective ->
-                    append(objective.id)
-                    objective.checkItemIds.forEach(::append)
-                }
-                unit.sessions.forEach { session ->
-                    append(session.id)
-                    session.steps.forEach { step ->
-                        append(step.id)
-                        append(step.kind)
-                        step.itemIds.forEach(::append)
-                        step.exampleIds.forEach(::append)
-                    }
-                }
-            }
-        }
-        val digest = MessageDigest.getInstance("SHA-256").digest(payload.toByteArray(Charsets.UTF_8))
+        val digest = MessageDigest.getInstance("SHA-256").digest(
+            canonicalInstructionalDocument(pack).toByteArray(Charsets.UTF_8),
+        )
         return digest.joinToString("") { byte -> "%02x".format(byte) }
+    }
+
+    internal const val INSTRUCTIONAL_DIGEST_SCHEMA = 1
+
+    private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
+        val review = pack.linguisticReview
+        return canonObj(
+            "digestSchema" to canonNum(INSTRUCTIONAL_DIGEST_SCHEMA),
+            "schemaVersion" to canonNum(pack.schemaVersion),
+            "packId" to canonStr(pack.packId),
+            "packVersion" to canonNum(pack.packVersion),
+            "linguisticReview" to canonObj(
+                "id" to canonStr(review.id),
+                "status" to canonStr(review.status),
+                "notes" to canonStrOrNull(review.notes),
+            ),
+            "sources" to canonArr(pack.sources.map { source ->
+                canonObj(
+                    "id" to canonStr(source.id),
+                    "title" to canonStr(source.title),
+                    "license" to canonStr(source.license),
+                    "attribution" to canonStr(source.attribution),
+                    "modification" to canonStr(source.modification),
+                )
+            }),
+            "rights" to canonArr(pack.rights.map { rights ->
+                canonObj(
+                    "id" to canonStr(rights.id),
+                    "sourceId" to canonStr(rights.sourceId),
+                    "license" to canonStr(rights.license),
+                    "permitsAppUse" to canonBool(rights.permitsAppUse),
+                )
+            }),
+            "letters" to canonArr(pack.letters.map { letter ->
+                canonObj(
+                    "id" to canonStr(letter.id),
+                    "uppercase" to canonStr(letter.uppercase),
+                    "lowercase" to canonStr(letter.lowercase),
+                    "group" to canonStr(letter.group),
+                    "englishNote" to canonStr(letter.englishNote),
+                    "sourceId" to canonStr(letter.sourceId),
+                    "reviewStatus" to canonStr(letter.reviewStatus),
+                    "audioAssetId" to canonStrOrNull(letter.audioAssetId),
+                    "exampleWordId" to canonStrOrNull(letter.exampleWordId),
+                    "latinLookalike" to canonStrOrNull(letter.latinLookalike),
+                )
+            }),
+            "examples" to canonArr(pack.examples.map { example ->
+                canonObj(
+                    "id" to canonStr(example.id),
+                    "kind" to canonStr(example.kind),
+                    "letterId" to canonStr(example.letterId),
+                    "display" to canonStr(example.display),
+                    "note" to canonStr(example.note),
+                    "sourceId" to canonStr(example.sourceId),
+                    "reviewStatus" to canonStr(example.reviewStatus),
+                    "objectiveId" to canonStr(example.objectiveId),
+                )
+            }),
+            "items" to canonArr(pack.items.map { item ->
+                canonObj(
+                    "id" to canonStr(item.id),
+                    "kind" to canonStr(item.kind),
+                    "language" to canonStr(item.language),
+                    "prompt" to canonStr(item.prompt),
+                    "promptLetter" to canonStrOrNull(item.promptLetter),
+                    "options" to canonArr(item.options.map(::canonStr)),
+                    "answer" to canonStr(item.answer),
+                    "feedback" to canonStr(item.feedback),
+                    "objectiveId" to canonStr(item.objectiveId),
+                    "sourceId" to canonStr(item.sourceId),
+                    "reviewStatus" to canonStr(item.reviewStatus),
+                    "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
+                )
+            }),
+            "references" to canonArr(pack.references.map { reference ->
+                canonObj(
+                    "id" to canonStr(reference.id),
+                    "title" to canonStr(reference.title),
+                    "summary" to canonStr(reference.summary),
+                    "detail" to canonStr(reference.detail),
+                    "introducedInUnit" to canonNum(reference.introducedInUnit),
+                    "sourceId" to canonStr(reference.sourceId),
+                    "reviewStatus" to canonStr(reference.reviewStatus),
+                    "classification" to canonStr(reference.classification),
+                    "searchTerms" to canonArr(reference.searchTerms.map(::canonStr)),
+                )
+            }),
+            "units" to canonArr(pack.units.map(::canonicalUnit)),
+            "admissions" to canonObj(
+                "generatedRussianWords" to canonNum(pack.admissions.generatedRussianWords),
+                "penguinProseAssets" to canonNum(pack.admissions.penguinProseAssets),
+                "catalogAudioBoundToUnits" to canonNum(pack.admissions.catalogAudioBoundToUnits),
+                "unverifiedExampleWords" to canonNum(pack.admissions.unverifiedExampleWords),
+                "futureRussianItems" to canonNum(pack.admissions.futureRussianItems),
+                "handwritingAssets" to canonNum(pack.admissions.handwritingAssets),
+                "mappedPronunciationAudio" to canonNum(pack.admissions.mappedPronunciationAudio),
+            ),
+        )
+    }
+
+    private fun canonicalUnit(unit: V2Unit): String {
+        return canonObj(
+            "number" to canonNum(unit.number),
+            "id" to canonStr(unit.id),
+            "title" to canonStr(unit.title),
+            "shortLabel" to canonStr(unit.shortLabel),
+            "topicSummary" to canonStr(unit.topicSummary),
+            "installState" to canonStr(unit.installState),
+            "readiness" to canonStr(unit.readiness),
+            "penguinLesson" to canonNum(unit.penguinLesson),
+            "mappingStatus" to canonStr(unit.mappingStatus),
+            "mappingNote" to canonStr(unit.mappingNote),
+            "prerequisiteUnitNumbers" to canonArr(unit.prerequisiteUnitNumbers.map(::canonNum)),
+            "estimatedMinutes" to canonNumOrNull(unit.estimatedMinutes),
+            "objectives" to canonArr(unit.objectives.map { objective ->
+                canonObj(
+                    "id" to canonStr(objective.id),
+                    "unitNumber" to canonNum(objective.unitNumber),
+                    "title" to canonStr(objective.title),
+                    "kind" to canonStr(objective.kind),
+                    "instructionStepIds" to canonArr(objective.instructionStepIds.map(::canonStr)),
+                    "exampleIds" to canonArr(objective.exampleIds.map(::canonStr)),
+                    "practiceStepIds" to canonArr(objective.practiceStepIds.map(::canonStr)),
+                    "checkItemIds" to canonArr(objective.checkItemIds.map(::canonStr)),
+                    "remediationStepIds" to canonArr(objective.remediationStepIds.map(::canonStr)),
+                )
+            }),
+            "sessions" to canonArr(unit.sessions.map { session ->
+                canonObj(
+                    "id" to canonStr(session.id),
+                    "title" to canonStr(session.title),
+                    "estimatedMinutes" to canonNum(session.estimatedMinutes),
+                    "objectiveIds" to canonArr(session.objectiveIds.map(::canonStr)),
+                    "steps" to canonArr(session.steps.map { step ->
+                        canonObj(
+                            "id" to canonStr(step.id),
+                            "kind" to canonStr(step.kind),
+                            "title" to canonStr(step.title),
+                            "body" to canonStr(step.body),
+                            "dominantAction" to canonStr(step.dominantAction),
+                            "referenceIds" to canonArr(step.referenceIds.map(::canonStr)),
+                            "itemIds" to canonArr(step.itemIds.map(::canonStr)),
+                            "exampleIds" to canonArr(step.exampleIds.map(::canonStr)),
+                            "unavailableReason" to canonStrOrNull(step.unavailableReason),
+                            "bookDirection" to canonStrOrNull(step.bookDirection),
+                            "companionDirection" to canonStrOrNull(step.companionDirection),
+                            "remediationStepId" to canonStrOrNull(step.remediationStepId),
+                        )
+                    }),
+                )
+            }),
+            "advancement" to (unit.advancement?.let { rule ->
+                canonObj(
+                    "requireInstruction" to canonBool(rule.requireInstruction),
+                    "requireBookSelfAttestation" to canonBool(rule.requireBookSelfAttestation),
+                    "requireAppChecks" to canonBool(rule.requireAppChecks),
+                    "minimumDistinctChecks" to canonNum(rule.minimumDistinctChecks),
+                    "requireDueReview" to canonBool(rule.requireDueReview),
+                    "tutorOptional" to canonBool(rule.tutorOptional),
+                )
+            } ?: "null"),
+        )
+    }
+
+    private fun canonObj(vararg fields: Pair<String, String>): String {
+        return fields.joinToString(prefix = "{", postfix = "}") { (key, value) -> "${canonStr(key)}:$value" }
+    }
+
+    private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
+
+    private fun canonNum(value: Int): String = value.toString()
+
+    private fun canonNumOrNull(value: Int?): String = value?.toString() ?: "null"
+
+    private fun canonBool(value: Boolean): String = if (value) "true" else "false"
+
+    private fun canonStrOrNull(value: String?): String = if (value == null) "null" else canonStr(value)
+
+    private fun canonStr(value: String): String {
+        return buildString {
+            append('"')
+            value.forEach { char ->
+                when (char) {
+                    '\\' -> append("\\\\")
+                    '"' -> append("\\\"")
+                    '\n' -> append("\\n")
+                    '\r' -> append("\\r")
+                    '\t' -> append("\\t")
+                    else -> if (char.code < 0x20) append("\\u%04x".format(char.code)) else append(char)
+                }
+            }
+            append('"')
+        }
     }
 
     private fun validateReview(pack: V2CurriculumPack, errors: MutableList<String>) {

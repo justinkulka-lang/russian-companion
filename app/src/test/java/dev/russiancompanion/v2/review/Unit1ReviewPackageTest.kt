@@ -7,6 +7,7 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
@@ -33,6 +34,11 @@ class Unit1ReviewPackageTest {
         val pack = pack()
         val review = buildUnit1ReviewPackage(pack)
         assertEquals(V2Validator.instructionalContentDigest(pack), review.instructionalContentDigest)
+        assertNotEquals(review.instructionalContentDigest, review.reviewPackageDigest)
+        assertTrue(review.edges.any { it.kind == "INSTRUCTION" })
+        assertTrue(review.edges.any { it.kind == "REMEDIATION" })
+        assertTrue(review.edges.any { it.kind == "REFERENCE" })
+        assertTrue(review.edges.any { it.kind == "EXAMPLE" })
         assertTrue(review.unresolved.isEmpty())
         val unit = pack.unit(1)!!
         val ids = review.records.map { it.id }
@@ -63,11 +69,8 @@ class Unit1ReviewPackageTest {
         val files = renderUnit1ReviewFiles(pack).files
         val worksheet = parseTsv(files.getValue(UNIT1_WORKSHEET_NAME))
         worksheet.drop(1).forEach { row ->
-            assertEquals("", row[10])
-            assertEquals("", row[11])
-            assertEquals("", row[12])
-            assertEquals("", row[13])
-            assertEquals("", row[14])
+            assertEquals(16, row.size)
+            (10 until row.size).forEach { index -> assertEquals("", row[index]) }
         }
         val mapping = parseTsv(files.getValue(UNIT1_MAPPING_NAME))
         mapping.drop(1).forEach { row ->
@@ -95,11 +98,14 @@ class Unit1ReviewPackageTest {
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badHash)).any { it.contains("does not match") })
 
         val badDigest = manifest.replace(buildUnit1ReviewPackage(pack).instructionalContentDigest, "1".repeat(64))
-        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badDigest)).any { it.contains("Package digest does not match") })
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badDigest)).any { it.contains("Instructional-content digest does not match") })
+
+        val badPackage = manifest.replace(buildUnit1ReviewPackage(pack).reviewPackageDigest, "2".repeat(64))
+        assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_MANIFEST_NAME to badPackage)).any { it.contains("Review package digest does not match") })
 
         val approved = files.getValue(UNIT1_WORKSHEET_NAME).replaceFirst(
-            Regex("(\t[0-9a-f]{64})\t\t\t\t\t"),
-            "$1\tAPPROVED\t\t\t\t",
+            Regex("(\t[0-9a-f]{64})\t\t\t\t\t\t"),
+            "$1\tAPPROVED\t\t\t\t\t",
         )
         assertTrue(validateUnit1ReviewFiles(pack, files + (UNIT1_WORKSHEET_NAME to approved)).any { it.contains("pre-populates a reviewer field") || it.contains("disposition") })
 
@@ -143,6 +149,92 @@ class Unit1ReviewPackageTest {
         assertEquals("DEVELOPMENT", pack().unit(2)!!.installState)
         assertTrue(pack().units.drop(2).all { it.installState == "NOT_YET_INSTALLED" })
     }
+
+    @Test
+    fun instructionalDigestChangesForEachGovernedFieldCategory() {
+        val pack = pack()
+        val baseline = V2Validator.instructionalContentDigest(pack)
+        val letter = pack.letters.first()
+        val example = pack.examples.first()
+        val item = pack.items.first()
+        val reference = pack.references.first()
+        val source = pack.sources.first()
+        val rights = pack.rights.first()
+        val mutations = listOf(
+            "letter note" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = it.englishNote + " x") else it }),
+            "letter source" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(sourceId = it.sourceId + "-x") else it }),
+            "letter review" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(reviewStatus = "REJECTED") else it }),
+            "letter audio" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(audioAssetId = "audio-x") else it }),
+            "letter example word" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(exampleWordId = "word-x") else it }),
+            "letter lookalike" to pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(latinLookalike = (it.latinLookalike ?: "") + "Z") else it }),
+            "example note" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(note = it.note + " x") else it }),
+            "example source" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(sourceId = it.sourceId + "-x") else it }),
+            "example review" to pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(reviewStatus = "REJECTED") else it }),
+            "check options" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(options = it.options + "extra") else it }),
+            "check feedback" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = it.feedback + " x") else it }),
+            "check prompt letter" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(promptLetter = (it.promptLetter ?: "") + "x") else it }),
+            "check source" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(sourceId = it.sourceId + "-x") else it }),
+            "check review" to pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(reviewStatus = "REJECTED") else it }),
+            "reference title" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(title = it.title + " x") else it }),
+            "reference summary" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(summary = it.summary + " x") else it }),
+            "reference detail" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(detail = it.detail + " x") else it }),
+            "reference source" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(sourceId = it.sourceId + "-x") else it }),
+            "reference review" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(reviewStatus = "REJECTED") else it }),
+            "reference search" to pack.copy(references = pack.references.map { if (it.id == reference.id) it.copy(searchTerms = it.searchTerms + "extra") else it }),
+            "objective title" to mapUnit(pack) { unit -> unit.copy(objectives = unit.objectives.mapIndexed { index, objective -> if (index == 0) objective.copy(title = objective.title + " x") else objective }) },
+            "objective kind" to mapUnit(pack) { unit -> unit.copy(objectives = unit.objectives.mapIndexed { index, objective -> if (index == 0) objective.copy(kind = objective.kind + "_X") else objective }) },
+            "objective instruction" to mapUnit(pack) { unit -> unit.copy(objectives = unit.objectives.mapIndexed { index, objective -> if (index == 0) objective.copy(instructionStepIds = objective.instructionStepIds + "step-x") else objective }) },
+            "session title" to mapUnit(pack) { unit -> unit.copy(sessions = unit.sessions.mapIndexed { index, session -> if (index == 0) session.copy(title = session.title + " x") else session }) },
+            "session effort" to mapUnit(pack) { unit -> unit.copy(sessions = unit.sessions.mapIndexed { index, session -> if (index == 0) session.copy(estimatedMinutes = session.estimatedMinutes + 1) else session }) },
+            "session objectives" to mapUnit(pack) { unit -> unit.copy(sessions = unit.sessions.mapIndexed { index, session -> if (index == 0) session.copy(objectiveIds = session.objectiveIds + "obj-x") else session }) },
+            "step title" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(title = step.title + " x")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "step body" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(body = step.body + " x")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "step direction" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(bookDirection = (step.bookDirection ?: "") + " x")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "step reference" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(referenceIds = step.referenceIds + "ref-x")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "step remediation" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(remediationStepId = (step.remediationStepId ?: "") + "x")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "step unavailable" to mapUnit(pack) { unit ->
+                val session = unit.sessions.first()
+                val step = session.steps.first()
+                unit.copy(sessions = listOf(session.copy(steps = listOf(step.copy(unavailableReason = "closed")) + session.steps.drop(1))) + unit.sessions.drop(1))
+            },
+            "advancement" to mapUnit(pack) { unit -> unit.copy(advancement = unit.advancement!!.copy(minimumDistinctChecks = unit.advancement.minimumDistinctChecks + 1)) },
+            "mapping status" to mapUnit(pack) { unit -> unit.copy(mappingStatus = unit.mappingStatus + "_X") },
+            "mapping note" to mapUnit(pack) { unit -> unit.copy(mappingNote = unit.mappingNote + " x") },
+            "source" to pack.copy(sources = pack.sources.map { if (it.id == source.id) it.copy(title = it.title + " x") else it }),
+            "rights" to pack.copy(rights = pack.rights.map { if (it.id == rights.id) it.copy(license = it.license + " x") else it }),
+        )
+        mutations.forEach { (label, mutated) ->
+            assertNotEquals(label, baseline, V2Validator.instructionalContentDigest(mutated))
+        }
+        val collidedNote = pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = "AB", sourceId = "C") else it })
+        val collidedSource = pack.copy(letters = pack.letters.map { if (it.id == letter.id) it.copy(englishNote = "A", sourceId = "BC") else it })
+        assertNotEquals(V2Validator.instructionalContentDigest(collidedNote), V2Validator.instructionalContentDigest(collidedSource))
+    }
+
+    private fun mapUnit(
+        pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+        transform: (dev.russiancompanion.v2.curriculum.V2Unit) -> dev.russiancompanion.v2.curriculum.V2Unit,
+    ) = pack.copy(units = pack.units.map { unit -> if (unit.number == 1) transform(unit) else unit })
 
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
 
