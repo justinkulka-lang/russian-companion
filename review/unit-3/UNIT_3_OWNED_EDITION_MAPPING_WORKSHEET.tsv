@@ -1,11 +1,8 @@
 # Warning: this worksheet must not contain copied Penguin prose or exercises.
 # Enter edition, ISBN, owned-copy verification, lesson, page, topic, alignment, variance, notes, identity, date, reviewed digest, and qualification only after comparing the Product Owner's legally owned edition.
 record_id	record_type	app_title	edition_identification	isbn	publisher_edition	owned_copy_verified	corresponding_lesson	corresponding_pages	corresponding_topic	alignment_disposition	variance_conflict	reviewer_notes	reviewer_identity	review_date	reviewed_version_digest	reviewer_qualification
-obj-u3-review	OBJECTIVE	Review printed letters already in the pack														
-obj-u3-book	OBJECTIVE	Complete Lesson 3 work in the owned book														
-u3-s-orient	SESSION	What this unit is for														
-u3-s-phrases	SESSION	Everyday phrases and naming														
+obj-u3-book	OBJECTIVE	Do Lesson 3 in the owned book and self-attest														
+u3-s-orient	SESSION	What this unit does not contain														
+u3-s-phrases	SESSION	Everyday phrases and naming things														
 u3-s-gender	SESSION	Basic grammar and gender														
-u3-s-review	SESSION	Printed-letter review														
-u3-s-record	SESSION	Self-record														
-u3-s-book	SESSION	Work in your book														
+u3-s-book	SESSION	Self-attest Lesson 3														
