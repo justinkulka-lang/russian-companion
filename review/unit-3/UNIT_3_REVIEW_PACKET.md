@@ -9,11 +9,11 @@ Unit 3 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 6cb691ddf7289cbfdff9f9227c784d2c3e58b591
-- Unit content-review SHA-256: 0213e05c43a6b185ab5bd6474b6cd8541cf8343189c9f8f729d4cc70f668e364
-- Pack content-review SHA-256: f284264f8cd213f46194ed637d4a6d8694fea4ed146a6f570116c5fb094bbf9c
-- Review-package SHA-256: bb9247bd3dfeacbea2105ba60be008f6d386437a3bae5fd2de9f40ce561056f0
-- Repository source SHA-256: 96bd29ec7785087d1395369fc33f422a914dadbf02fd7a8414b3a9c6c8960c11
+- Curriculum source commit: 5dde572d36895eeec24d1159898d9e3d3998a488
+- Unit content-review SHA-256: 94e10dc03eae358b2b07fbbea590334ed6faa850f1868aa20e95655d334b0ea3
+- Pack content-review SHA-256: c281e870526e733e96f2129bcd8c4deddc748e596698e327c881ac659bac88a4
+- Review-package SHA-256: 385c86bfcc06fb50195e395c05cca3f27dc255de1c65c4e5aab9f42b8f8269d0
+- Repository source SHA-256: 3449b7a61e780fd8736e9c8e10e2cd41d68d14439000b93b1831e9b05b3831e9
 
 The unit content-review digest is what a reviewer of Unit 3 approves. It covers this unit and the instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule reachable from it. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
