@@ -11,12 +11,12 @@ Unit 16 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8586751e9bbee2a60a7c0a9ab8780965be3deb98
-- Unit content-review SHA-256: 601f64ee9833969fd77abaea5d1db820445fc088f80da5cf25ef559aae574e20
+- Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
+- Unit content-review SHA-256: 99b2b78d460cae22aff4c83da91f5c83e28bf02291c71335b4cec4c4d06f3b10
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4
-- Review-package SHA-256: fbd5fcb49b641ee1e3e0a440cb9f3ef0f6e627414b372d4d2ac7fb4bc1acb240
-- Repository source SHA-256: 9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1
+- Pack content-review SHA-256: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
+- Review-package SHA-256: 8a50b7e5071b63012d29ff9bcbf8777a7a1334a2b07539e94622a0833100c39a
+- Repository source SHA-256: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -33,7 +33,7 @@ The marker scan used by this package detects only a fixed list of known prohibit
 ## Unit
 
 number=16
-title=Instrumental case, selected demonstratives, and surname declension
+title=Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming
 topicSummary=Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
@@ -75,10 +75,10 @@ notes=No qualified reviewer has signed Unit 16.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6673a9b696808a328ff1af3abb6ba964908b94ced14f8be76d251191a12103e4
+- Content hash: 68a577d155a23f7ea2383cfb44a7ef0c5ef5f6ef5879a506baed9c5dd48abe39
 
 number=16
-title=Instrumental case, selected demonstratives, and surname declension
+title=Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming
 topicSummary=Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED

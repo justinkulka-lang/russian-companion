@@ -4,19 +4,19 @@
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
-  "curriculumSourceCommit": "8586751e9bbee2a60a7c0a9ab8780965be3deb98",
-  "contentReviewDigest": "bacc607f965aedbb6b7b87e25cf9a926f36d8dbe979dfb1f779cdf9de8effd5c",
+  "curriculumSourceCommit": "c61635a97f59a868a5baac43e13801bd84346a76",
+  "contentReviewDigest": "accaf74db69e7946020722c052a82407837a6642941b594000dd22800aadd6f4",
   "mappingPackageDigest": "f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e",
-  "packContentReviewDigest": "ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4",
-  "reviewPackageDigest": "771d7b5450472e5ec10876143e85ea10d2a98785ba8d51b6b3d38357ba9a5348",
-  "repositorySourceDigest": "9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1",
+  "packContentReviewDigest": "503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d",
+  "reviewPackageDigest": "9acb3025b2837bf2a7b13dd64cc52ab38ca02f98d38414b875d97530781f38f6",
+  "repositorySourceDigest": "bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802",
   "unitReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {
     "id": "unit-17",
     "installState": "DEVELOPMENT",
     "readiness": "NOT_PREPARED",
     "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-    "contentHash": "2d50e29bac61f74773d46d7df86b7a81cff81073a1c24a1808cef7d89738b6b0"
+    "contentHash": "a5598c28bcd69bc9146cfcc893c62ae13fc5764375b6c9b41285bf21687b5bc7"
   },
   "counts": {
     "ADVANCEMENT": 1,
@@ -36,7 +36,7 @@
   },
   "records": [
     {"id": "rev-pending-unit-17", "type": "UNIT_REVIEW", "objectiveIds": [], "sessionIds": [], "contentHash": "f0f2b3f08bfffa56ca863cc753bdd6122cea6e898073dc738cca5e4d9c38fd12", "sourceId": "", "rightsIds": [], "reviewStatus": "PENDING_QUALIFIED_REVIEW"},
-    {"id": "unit-17", "type": "UNIT", "objectiveIds": ["obj-u17-ordinals", "obj-u17-hours", "obj-u17-years", "obj-u17-minutes", "obj-u17-book", "obj-u17-calendar"], "sessionIds": ["u17-s-orient", "u17-s-ordinals", "u17-s-hours", "u17-s-years", "u17-s-minutes", "u17-s-book", "u17-s-gap-calendar"], "contentHash": "2d50e29bac61f74773d46d7df86b7a81cff81073a1c24a1808cef7d89738b6b0", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
+    {"id": "unit-17", "type": "UNIT", "objectiveIds": ["obj-u17-ordinals", "obj-u17-hours", "obj-u17-years", "obj-u17-minutes", "obj-u17-book", "obj-u17-calendar"], "sessionIds": ["u17-s-orient", "u17-s-ordinals", "u17-s-hours", "u17-s-years", "u17-s-minutes", "u17-s-book", "u17-s-gap-calendar"], "contentHash": "a5598c28bcd69bc9146cfcc893c62ae13fc5764375b6c9b41285bf21687b5bc7", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "unit-17-advancement", "type": "ADVANCEMENT", "objectiveIds": [], "sessionIds": [], "contentHash": "be2ab1c0d3c5914987906005f43769060a289934b176874c132910c71c6c9bb3", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u17-ordinals", "type": "OBJECTIVE", "objectiveIds": ["obj-u17-ordinals"], "sessionIds": [], "contentHash": "74f336b1bfb7fb8d218740a4d45a8b48eb7798b43d18ff66dc5fd280310a390e", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u17-hours", "type": "OBJECTIVE", "objectiveIds": ["obj-u17-hours"], "sessionIds": [], "contentHash": "3c480cd39ecb44499f4cddfeffb232709af5e91dcd850dc6255316185c041f07", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},

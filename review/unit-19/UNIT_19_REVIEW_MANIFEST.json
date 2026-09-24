@@ -4,19 +4,19 @@
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
-  "curriculumSourceCommit": "8586751e9bbee2a60a7c0a9ab8780965be3deb98",
-  "contentReviewDigest": "81a49ac6830dcdfc03b7cb8333cdf31da2a4fad6ca76cfdf82ae9cdec2c3524d",
+  "curriculumSourceCommit": "c61635a97f59a868a5baac43e13801bd84346a76",
+  "contentReviewDigest": "9a46af320ddf65aeb43cb5eba02fc9069e0fa71f753098525353a5f32e489367",
   "mappingPackageDigest": "907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9",
-  "packContentReviewDigest": "ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4",
-  "reviewPackageDigest": "3e79fa72e35f2d70727bdd9c8b49e7edc77191f4030b813dfcc79f6c43a0ef83",
-  "repositorySourceDigest": "9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1",
+  "packContentReviewDigest": "503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d",
+  "reviewPackageDigest": "e6c16d0ce7b169b01e7730e672472f0683b97ff9e9f3487f5e5830818d2b3237",
+  "repositorySourceDigest": "bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802",
   "unitReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {
     "id": "unit-19",
     "installState": "DEVELOPMENT",
     "readiness": "NOT_PREPARED",
     "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-    "contentHash": "313db9ae47b5e656092703023f868bd720715b12f3fd990c4a324cb37b4a53b1"
+    "contentHash": "d1a19cd7a2390ebb4de5eb668ace368700a079841d7990ee2b9b0a8798b13bf6"
   },
   "counts": {
     "ADVANCEMENT": 1,
@@ -36,7 +36,7 @@
   },
   "records": [
     {"id": "rev-pending-unit-19", "type": "UNIT_REVIEW", "objectiveIds": [], "sessionIds": [], "contentHash": "b90249a5df0faa57db023997dbf4cdc183868b50371eb688f9116d817e9b7a0b", "sourceId": "", "rightsIds": [], "reviewStatus": "PENDING_QUALIFIED_REVIEW"},
-    {"id": "unit-19", "type": "UNIT", "objectiveIds": ["obj-u19-prefix-caution", "obj-u19-book", "obj-u19-conditional", "obj-u19-obligation"], "sessionIds": ["u19-s-orient", "u19-s-prefix-caution", "u19-s-book", "u19-s-gap-conditional", "u19-s-gap-obligation"], "contentHash": "313db9ae47b5e656092703023f868bd720715b12f3fd990c4a324cb37b4a53b1", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
+    {"id": "unit-19", "type": "UNIT", "objectiveIds": ["obj-u19-prefix-caution", "obj-u19-book", "obj-u19-conditional", "obj-u19-obligation"], "sessionIds": ["u19-s-orient", "u19-s-prefix-caution", "u19-s-book", "u19-s-gap-conditional", "u19-s-gap-obligation"], "contentHash": "d1a19cd7a2390ebb4de5eb668ace368700a079841d7990ee2b9b0a8798b13bf6", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "unit-19-advancement", "type": "ADVANCEMENT", "objectiveIds": [], "sessionIds": [], "contentHash": "4abb3be838cbccf1b6d562d14b13b108e028e992d6e4b22e84e404e2b0a9d9b1", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u19-prefix-caution", "type": "OBJECTIVE", "objectiveIds": ["obj-u19-prefix-caution"], "sessionIds": [], "contentHash": "f7d9de9fc5b47569660575fa9277b733db0dc6afc51e424be13949bf778899c8", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u19-book", "type": "OBJECTIVE", "objectiveIds": ["obj-u19-book"], "sessionIds": [], "contentHash": "85b93d8e85f2e45df69890673a8dc6dda3d4924a156e84e73066fa4f9972eb78", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},

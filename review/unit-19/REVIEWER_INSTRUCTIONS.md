@@ -2,14 +2,14 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 8586751e9bbee2a60a7c0a9ab8780965be3deb98
-Unit content-review digest: 81a49ac6830dcdfc03b7cb8333cdf31da2a4fad6ca76cfdf82ae9cdec2c3524d
+Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
+Unit content-review digest: 9a46af320ddf65aeb43cb5eba02fc9069e0fa71f753098525353a5f32e489367
 Mapping-package digest: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-Pack content-review digest: ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4
-Review-package digest: 3e79fa72e35f2d70727bdd9c8b49e7edc77191f4030b813dfcc79f6c43a0ef83
-Repository source digest: 9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1
+Pack content-review digest: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
+Review-package digest: e6c16d0ce7b169b01e7730e672472f0683b97ff9e9f3487f5e5830818d2b3237
+Repository source digest: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
 
-This packet was generated from the packaged curriculum at curriculum source commit 8586751e9bbee2a60a7c0a9ab8780965be3deb98. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit c61635a97f59a868a5baac43e13801bd84346a76. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
 ## Digests
 
@@ -37,7 +37,7 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
 
 ## What approval means
 
-A later approval applies only to version 2.0.0-dev, unit content-review digest 81a49ac6830dcdfc03b7cb8333cdf31da2a4fad6ca76cfdf82ae9cdec2c3524d, and mapping-package digest 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9. Confirm review-package digest 3e79fa72e35f2d70727bdd9c8b49e7edc77191f4030b813dfcc79f6c43a0ef83 and curriculum source commit 8586751e9bbee2a60a7c0a9ab8780965be3deb98 before relying on this packet. Any later substantive instructional change reachable from Unit 19 invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
+A later approval applies only to version 2.0.0-dev, unit content-review digest 9a46af320ddf65aeb43cb5eba02fc9069e0fa71f753098525353a5f32e489367, and mapping-package digest 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9. Confirm review-package digest e6c16d0ce7b169b01e7730e672472f0683b97ff9e9f3487f5e5830818d2b3237 and curriculum source commit c61635a97f59a868a5baac43e13801bd84346a76 before relying on this packet. Any later substantive instructional change reachable from Unit 19 invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 19 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 

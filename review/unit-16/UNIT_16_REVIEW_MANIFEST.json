@@ -4,19 +4,19 @@
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
-  "curriculumSourceCommit": "8586751e9bbee2a60a7c0a9ab8780965be3deb98",
-  "contentReviewDigest": "601f64ee9833969fd77abaea5d1db820445fc088f80da5cf25ef559aae574e20",
+  "curriculumSourceCommit": "c61635a97f59a868a5baac43e13801bd84346a76",
+  "contentReviewDigest": "99b2b78d460cae22aff4c83da91f5c83e28bf02291c71335b4cec4c4d06f3b10",
   "mappingPackageDigest": "7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa",
-  "packContentReviewDigest": "ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4",
-  "reviewPackageDigest": "fbd5fcb49b641ee1e3e0a440cb9f3ef0f6e627414b372d4d2ac7fb4bc1acb240",
-  "repositorySourceDigest": "9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1",
+  "packContentReviewDigest": "503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d",
+  "reviewPackageDigest": "8a50b7e5071b63012d29ff9bcbf8777a7a1334a2b07539e94622a0833100c39a",
+  "repositorySourceDigest": "bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802",
   "unitReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {
     "id": "unit-16",
     "installState": "DEVELOPMENT",
     "readiness": "NOT_PREPARED",
     "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-    "contentHash": "6673a9b696808a328ff1af3abb6ba964908b94ced14f8be76d251191a12103e4"
+    "contentHash": "68a577d155a23f7ea2383cfb44a7ef0c5ef5f6ef5879a506baed9c5dd48abe39"
   },
   "counts": {
     "ADVANCEMENT": 1,
@@ -36,7 +36,7 @@
   },
   "records": [
     {"id": "rev-pending-unit-16", "type": "UNIT_REVIEW", "objectiveIds": [], "sessionIds": [], "contentHash": "cb485cc9de75e135827503666153f81f7c05dbe055162e7e9d99f0eddcea15d0", "sourceId": "", "rightsIds": [], "reviewStatus": "PENDING_QUALIFIED_REVIEW"},
-    {"id": "unit-16", "type": "UNIT", "objectiveIds": ["obj-u16-inst-sg", "obj-u16-inst-pl", "obj-u16-inst-adj", "obj-u16-inst-means", "obj-u16-inst-prep", "obj-u16-book", "obj-u16-complements"], "sessionIds": ["u16-s-orient", "u16-s-inst-sg", "u16-s-inst-pl", "u16-s-inst-adj", "u16-s-inst-means", "u16-s-inst-prep", "u16-s-book", "u16-s-gap-complements"], "contentHash": "6673a9b696808a328ff1af3abb6ba964908b94ced14f8be76d251191a12103e4", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
+    {"id": "unit-16", "type": "UNIT", "objectiveIds": ["obj-u16-inst-sg", "obj-u16-inst-pl", "obj-u16-inst-adj", "obj-u16-inst-means", "obj-u16-inst-prep", "obj-u16-book", "obj-u16-complements"], "sessionIds": ["u16-s-orient", "u16-s-inst-sg", "u16-s-inst-pl", "u16-s-inst-adj", "u16-s-inst-means", "u16-s-inst-prep", "u16-s-book", "u16-s-gap-complements"], "contentHash": "68a577d155a23f7ea2383cfb44a7ef0c5ef5f6ef5879a506baed9c5dd48abe39", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "unit-16-advancement", "type": "ADVANCEMENT", "objectiveIds": [], "sessionIds": [], "contentHash": "65e7eb78d5faa17ce5694c924cbccdeaa1bb090c75946e850254562b70cd813a", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u16-inst-sg", "type": "OBJECTIVE", "objectiveIds": ["obj-u16-inst-sg"], "sessionIds": [], "contentHash": "17949ea8cee45278f262c330c7ecfdd6329322cc27c0395833fe47ecd3c596e6", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},
     {"id": "obj-u16-inst-pl", "type": "OBJECTIVE", "objectiveIds": ["obj-u16-inst-pl"], "sessionIds": [], "contentHash": "1717306060e4fdd6c4e1cc708b9774340da2e41d06b441b609f42d856a666ffe", "sourceId": "", "rightsIds": [], "reviewStatus": "NO_SEPARATE_REVIEW_FIELD"},

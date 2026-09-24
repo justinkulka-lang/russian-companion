@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8586751e9bbee2a60a7c0a9ab8780965be3deb98
-- Unit content-review SHA-256: 81a49ac6830dcdfc03b7cb8333cdf31da2a4fad6ca76cfdf82ae9cdec2c3524d
+- Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
+- Unit content-review SHA-256: 9a46af320ddf65aeb43cb5eba02fc9069e0fa71f753098525353a5f32e489367
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4
-- Review-package SHA-256: 3e79fa72e35f2d70727bdd9c8b49e7edc77191f4030b813dfcc79f6c43a0ef83
-- Repository source SHA-256: 9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1
+- Pack content-review SHA-256: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
+- Review-package SHA-256: e6c16d0ce7b169b01e7730e672472f0683b97ff9e9f3487f5e5830818d2b3237
+- Repository source SHA-256: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -33,7 +33,7 @@ The marker scan used by this package detects only a fixed list of known prohibit
 ## Unit
 
 number=19
-title=Conditional, obligation, and prefixes
+title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
@@ -75,10 +75,10 @@ notes=No qualified reviewer has signed Unit 19.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 313db9ae47b5e656092703023f868bd720715b12f3fd990c4a324cb37b4a53b1
+- Content hash: d1a19cd7a2390ebb4de5eb668ace368700a079841d7990ee2b9b0a8798b13bf6
 
 number=19
-title=Conditional, obligation, and prefixes
+title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED

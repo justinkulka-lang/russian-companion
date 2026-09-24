@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8586751e9bbee2a60a7c0a9ab8780965be3deb98
-- Unit content-review SHA-256: bacc607f965aedbb6b7b87e25cf9a926f36d8dbe979dfb1f779cdf9de8effd5c
+- Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
+- Unit content-review SHA-256: accaf74db69e7946020722c052a82407837a6642941b594000dd22800aadd6f4
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4
-- Review-package SHA-256: 771d7b5450472e5ec10876143e85ea10d2a98785ba8d51b6b3d38357ba9a5348
-- Repository source SHA-256: 9d97952ac42de8bef2a1e305455b3017ed4477c27a90cab77ba93beaa86432a1
+- Pack content-review SHA-256: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
+- Review-package SHA-256: 9acb3025b2837bf2a7b13dd64cc52ab38ca02f98d38414b875d97530781f38f6
+- Repository source SHA-256: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -33,7 +33,7 @@ The marker scan used by this package detects only a fixed list of known prohibit
 ## Unit
 
 number=17
-title=Time, date, age, ordinal numbers, months, and years
+title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
@@ -75,10 +75,10 @@ notes=No qualified reviewer has signed Unit 17.
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d50e29bac61f74773d46d7df86b7a81cff81073a1c24a1808cef7d89738b6b0
+- Content hash: a5598c28bcd69bc9146cfcc893c62ae13fc5764375b6c9b41285bf21687b5bc7
 
 number=17
-title=Time, date, age, ordinal numbers, months, and years
+title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
