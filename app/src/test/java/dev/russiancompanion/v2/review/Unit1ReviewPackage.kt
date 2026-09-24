@@ -34,7 +34,7 @@ internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63
 
 internal const val UNITS_16_20_CURRICULUM_COMMIT = "55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511"
 
-internal const val UNITS_21_25_CURRICULUM_COMMIT = "2deaebc80b58499f312543e82849408c85e6eb66"
+internal const val UNITS_21_25_CURRICULUM_COMMIT = "fd1f6497b235208786d0f720d71a248a22f8d69e"
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
     in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT

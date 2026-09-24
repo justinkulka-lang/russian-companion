@@ -11,12 +11,12 @@ Unit 22 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 2deaebc80b58499f312543e82849408c85e6eb66
-- Unit content-review SHA-256: 8e964522a3b7a6791fb7f26b04b1cdca26030f05b771252ebf523404c75aec0d
+- Curriculum source commit: fd1f6497b235208786d0f720d71a248a22f8d69e
+- Unit content-review SHA-256: 9b019832345deb4495570153288fb0886500833b02bf362fce6a70d082bdccf6
 - Mapping-package SHA-256: 997ae9e19ac8c160b37e5eee4e8c358254993aa481ffb14459e1d27c8a378284
-- Pack content-review SHA-256: dae62d02feae1d2a1e5fe02dd216db6dc549421bf1ecc4cc8c7e3396614c1005
-- Review-package SHA-256: 34ea996c1b9280956e10e0c9c8240f72ad49c8188e6ee5f05a4de911a1967d23
-- Repository source SHA-256: 9189b52de515ad4629245abce45044b5340220b1c74167245d3d59f6436ba839
+- Pack content-review SHA-256: 9dff789084710c14ab4b12f82cd1520a635048cba2e7157e6159312707c43b8d
+- Review-package SHA-256: 2cfafac487273ca1e39f1d81d6d3fdd6ee79e6b983d33e3cec01c22128117c55
+- Repository source SHA-256: fd292b8a2e1ba0029b808c978cbc87e34f49c1389c811abe9bcfa940f14bb427
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=22
 title=Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions
-topicSummary=Proposed Unit 22 is in development and is not prepared. Admitted compound, ordinal, and item-form rows await qualified review. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 22 is in development and is not prepared. Admitted item-form lines and last-digit examples await qualified review. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 22, printed pages 271-284. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=22
 prerequisites=21
-estimatedMinutes=82
+estimatedMinutes=62
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 22.
 
 ### UNIT `unit-22`
 
-- Objectives: obj-u22-cardinals, obj-u22-compounds, obj-u22-ordinals, obj-u22-noun-forms, obj-u22-book, obj-u22-declension, obj-u22-both-forms, obj-u22-half-forms, obj-u22-collective
-- Sessions: u22-s-orient, u22-s-cardinals, u22-s-compounds, u22-s-ordinals, u22-s-noun-forms, u22-s-book, u22-s-gap-declension, u22-s-gap-both-forms, u22-s-gap-half-forms, u22-s-gap-collective
+- Objectives: obj-u22-noun-forms, obj-u22-compounds, obj-u22-book, obj-u22-ordinals, obj-u22-declension, obj-u22-both-forms, obj-u22-half-forms, obj-u22-collective
+- Sessions: u22-s-orient, u22-s-noun-forms, u22-s-compounds, u22-s-book, u22-s-gap-ordinals, u22-s-gap-declension, u22-s-gap-both-forms, u22-s-gap-half-forms, u22-s-gap-collective
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c33cdb06c356cc5ca7ae19e0b6fff0eeda0ce8de00077cbfaebb1099201aa7c
+- Content hash: 21d10d875bfc099f2e0a0e0b5657a675bc4e9038b33a8e653637711310872f25
 
 number=22
 title=Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions
-topicSummary=Proposed Unit 22 is in development and is not prepared. Admitted compound, ordinal, and item-form rows await qualified review. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 22 is in development and is not prepared. Admitted item-form lines and last-digit examples await qualified review. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 22, printed pages 271-284. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=22
 prerequisites=21
-estimatedMinutes=82
+estimatedMinutes=62
 
 ### ADVANCEMENT `unit-22-advancement`
 
@@ -96,71 +96,14 @@ estimatedMinutes=82
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dcbf011ef6dc8fabf82cda4235300929c3b9af8a2ae3bc99e59fc31c82ded1da
+- Content hash: 3006c2480bbf289cb5965f909b277d61afadd43245705f2ad0ff32fc4978255a
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=8
+minimumDistinctChecks=4
 requireDueReview=false
 tutorOptional=true
-
-### OBJECTIVE `obj-u22-cardinals`
-
-- Objectives: obj-u22-cardinals
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a85d223489b2713b4e8173505612af94686e6c186c7cb5f36b2a0093c23946b
-
-title=Choose the admitted compound cardinal line
-kind=RECOGNITION
-unitNumber=22
-instruction=u22-st-orient,u22-st-teach-cardinals-1,u22-st-teach-cardinals-2,u22-st-teach-cardinals-3
-examples=ex-u22-cardinals-0,ex-u22-cardinals-1,ex-u22-cardinals-2,ex-u22-cardinals-3
-practice=u22-st-guided-cardinals-1
-checks=u22-i-cardinals-1,u22-i-cardinals-2
-remediation=u22-st-rem-cardinals
-
-### OBJECTIVE `obj-u22-compounds`
-
-- Objectives: obj-u22-compounds
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c3158ef9dbaacfd1b5bfe498395ccf9de95386adbcf57ca353d9a823e1b2807
-
-title=Choose the admitted compound quantity line
-kind=RECOGNITION
-unitNumber=22
-instruction=u22-st-orient,u22-st-teach-compounds-1,u22-st-teach-compounds-2,u22-st-teach-compounds-3
-examples=ex-u22-compounds-0,ex-u22-compounds-1,ex-u22-compounds-2
-practice=u22-st-guided-compounds-1
-checks=u22-i-compounds-1,u22-i-compounds-2
-remediation=u22-st-rem-compounds
-
-### OBJECTIVE `obj-u22-ordinals`
-
-- Objectives: obj-u22-ordinals
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 51442f9953df310cf10a39ce9391ff1d043920254faa95c0d78e087fd59428c9
-
-title=Choose the admitted ordinal line
-kind=RECOGNITION
-unitNumber=22
-instruction=u22-st-orient,u22-st-teach-ordinals-1,u22-st-teach-ordinals-2,u22-st-teach-ordinals-3
-examples=ex-u22-ordinals-0,ex-u22-ordinals-1,ex-u22-ordinals-2
-practice=u22-st-guided-ordinals-1
-checks=u22-i-ordinals-1,u22-i-ordinals-2
-remediation=u22-st-rem-ordinals
 
 ### OBJECTIVE `obj-u22-noun-forms`
 
@@ -170,16 +113,35 @@ remediation=u22-st-rem-ordinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 11e1e8e60799a888d76733f31e2416a85c7d2079e57434ff771b7a80f2d5076b
+- Content hash: f44364becfd217c0b4c0d70a4074ecbff0990d893c4389ae58b1d3cdff605a02
 
-title=Choose the admitted noun form after the numeral
+title=Choose the admitted item form for the numeral group
 kind=RECOGNITION
 unitNumber=22
-instruction=u22-st-orient,u22-st-teach-noun-forms-1,u22-st-teach-noun-forms-2,u22-st-teach-noun-forms-3
-examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1,ex-u22-noun-forms-2
+instruction=u22-st-orient,u22-st-teach-noun-forms-1,u22-st-teach-noun-forms-2,u22-st-teach-noun-forms-3,u22-st-teach-noun-forms-4
+examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1,ex-u22-noun-forms-2,ex-u22-noun-forms-3,ex-u22-noun-forms-4,ex-u22-noun-forms-5
 practice=u22-st-guided-noun-forms-1
 checks=u22-i-noun-forms-1,u22-i-noun-forms-2
 remediation=u22-st-rem-noun-forms
+
+### OBJECTIVE `obj-u22-compounds`
+
+- Objectives: obj-u22-compounds
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eae59b8f631c1c3cdf6782fe178c3a36e1f84acfac0c1bdcc008f851f3f09868
+
+title=Choose the admitted example by its last digit
+kind=RECOGNITION
+unitNumber=22
+instruction=u22-st-orient,u22-st-teach-compounds-1,u22-st-teach-compounds-2,u22-st-teach-compounds-3
+examples=ex-u22-compounds-0,ex-u22-compounds-1,ex-u22-compounds-2
+practice=u22-st-guided-compounds-1
+checks=u22-i-compounds-1,u22-i-compounds-2
+remediation=u22-st-rem-compounds
 
 ### OBJECTIVE `obj-u22-book`
 
@@ -195,6 +157,25 @@ title=Self-attest Lesson 22 book work
 kind=SELF_ATTESTATION
 unitNumber=22
 instruction=u22-st-book-work,u22-st-book
+examples=
+practice=
+checks=
+remediation=
+
+### OBJECTIVE `obj-u22-ordinals`
+
+- Objectives: obj-u22-ordinals
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 04a2499cb9c34fb3fa4ed2db26bc86e518479390c28512efe49b073af629887f
+
+title=Ordinal list position stays in the copy you own
+kind=GUIDANCE
+unitNumber=22
+instruction=u22-st-gap-ordinals
 examples=
 practice=
 checks=
@@ -278,32 +259,32 @@ remediation=
 
 ### SESSION `u22-s-orient`
 
-- Objectives: obj-u22-cardinals, obj-u22-compounds, obj-u22-ordinals, obj-u22-noun-forms, obj-u22-book
+- Objectives: obj-u22-noun-forms, obj-u22-compounds, obj-u22-book
 - Sessions: u22-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bb3f897c801d501cf131b6551b099de8cf4023660b0859859753b369cb7f8fd0
+- Content hash: 32f82de0aae88cf1c79c33fe314e2fee57c577d3093dd55a45e8fa34826fdef5
 
-title=Admitted numeral rows
+title=Admitted numeral groups
 estimatedMinutes=8
-objectives=obj-u22-cardinals,obj-u22-compounds,obj-u22-ordinals,obj-u22-noun-forms,obj-u22-book
+objectives=obj-u22-noun-forms,obj-u22-compounds,obj-u22-book
 steps=u22-st-orient
 
 ### STEP `u22-st-orient`
 
-- Objectives: obj-u22-cardinals, obj-u22-compounds, obj-u22-ordinals, obj-u22-noun-forms, obj-u22-book
+- Objectives: obj-u22-noun-forms, obj-u22-compounds, obj-u22-book
 - Sessions: u22-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e39443a3044b9ec5ce26663fa856f0bc5873ff1b625f18a65c1201e68b152c1
+- Content hash: 67f4349d779754ac78661b4bfa9f90a8511c3c6d1b614e6f90df88a21d931e2c
 
 kind=ORIENT
-title=Admitted numeral rows
-body=Proposed Unit 22 uses frozen compound cardinal lines, ordinal lines, and item-form lines. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.
+title=Admitted numeral groups
+body=Proposed Unit 22 uses frozen item-form lines and last-digit examples. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -313,78 +294,78 @@ bookDirection=Open Lesson 22 in the copy you own. The app records do not replace
 companionDirection=
 remediationStepId=
 
-### SESSION `u22-s-cardinals`
+### SESSION `u22-s-noun-forms`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cf5e53f9465662d67b0441bae17e082d95d5eb2a00848b0fcb38e6491cf99cd5
+- Content hash: 503c82b9f8e713e2dadd3a7f7762db2f87b0b6ee4eae37df509785d3bc7e7f3b
 
-title=Choose the admitted compound cardinal line
+title=Choose the admitted item form for the numeral group
 estimatedMinutes=12
-objectives=obj-u22-cardinals
-steps=u22-st-teach-cardinals-1,u22-st-guided-cardinals-1,u22-st-teach-cardinals-2,u22-st-teach-cardinals-3,u22-st-rem-cardinals,u22-st-check-cardinals
+objectives=obj-u22-noun-forms
+steps=u22-st-teach-noun-forms-1,u22-st-guided-noun-forms-1,u22-st-teach-noun-forms-2,u22-st-teach-noun-forms-3,u22-st-teach-noun-forms-4,u22-st-rem-noun-forms,u22-st-check-noun-forms
 
-### STEP `u22-st-teach-cardinals-1`
+### STEP `u22-st-teach-noun-forms-1`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85f804bbc029fe0c6dab10f241c7101dc4f07303592a58044265682cb738c7e1
+- Content hash: 89028d7b1cd50498235cbe5e6626bf6644528e4cd96a48d98f6785234f6c3466
 
 kind=TEACH
 title=Admitted lines
-body=два́дцать оди́н — 21. сто оди́н — 101. 
+body=один мальчик — one boy. одна девушка — one girl. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
-examples=ex-u22-cardinals-0,ex-u22-cardinals-1
+examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u22-st-guided-cardinals-1`
+### STEP `u22-st-guided-noun-forms-1`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3db5705b9f24b8c752e3ef6a487a5dc22619e7f8a85d4032901d6ce38aef3e8b
+- Content hash: ec6deae071050268ce658d6a04d44e9c216f6c704be3e2f3adc20c846c5cafe4
 
 kind=GUIDED
 title=Guided practice
 body=Choose the admitted record. The feedback states the frozen field.
 dominantAction=Continue
 references=
-items=u22-g-cardinals-0
+items=u22-g-noun-forms-0
 examples=
 unavailableReason=
 bookDirection=
 companionDirection=
-remediationStepId=u22-st-rem-cardinals
+remediationStepId=u22-st-rem-noun-forms
 
-### STEP `u22-st-teach-cardinals-2`
+### STEP `u22-st-teach-noun-forms-2`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6f074240e3de32dfecaa0a6507dfae8d22a3f6515425f757c0a001a9f4b1c594
+- Content hash: fb808899cd56dbc30de3c14d98414a56c4f0f9cdfec81cc64766cb8d607eb7a2
 
 kind=TEACH
 title=Admitted instruction
-body=* 21 два́дцать оди́н
+body=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -394,71 +375,93 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u22-st-teach-cardinals-3`
+### STEP `u22-st-teach-noun-forms-3`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1ab30cd4be97fd86c4c8b86dba6d5b41a7bc8e0c0074ef2182d30f1f4fbe3034
+- Content hash: 1692a5400ffb713e1fcabd606e18a09b63bba35ef192c03e538114402814136d
 
 kind=TEACH
 title=Admitted lines
-body=две́сти пятна́дцать — 215. три́ста три́дцать три — 333. 
+body=две девушки — two girls. три кошки — three cats. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
-examples=ex-u22-cardinals-2,ex-u22-cardinals-3
+examples=ex-u22-noun-forms-2,ex-u22-noun-forms-3
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u22-st-rem-cardinals`
+### STEP `u22-st-teach-noun-forms-4`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6ab0f6f08d62a327cf2706f546524846366b9b93125bad9f0a9371246003c18e
+- Content hash: ebf4500257128c8576d4c25369a942ca399d5bd40e9c0ba4d70f70349a26f20f
+
+kind=TEACH
+title=Admitted lines
+body=пять девушек — five girls. десять копеек — ten kopeks. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u22-noun-forms-4,ex-u22-noun-forms-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u22-st-rem-noun-forms`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4896edbb75b326bd55edd00827bc4640236b733a8b721df6387067f2cd84c10c
 
 kind=REMEDIATE
 title=Remediation
-body=* 21 два́дцать оди́н
+body=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).
 dominantAction=Continue
 references=
 items=
-examples=ex-u22-cardinals-0,ex-u22-cardinals-1
+examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u22-st-check-cardinals`
+### STEP `u22-st-check-noun-forms`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 78bb608bf2739d0ffb763e75bb654df77389f7c1f35b9ffbaab848944135b92b
+- Content hash: a3a0bf9fa8a9506fd54af23d896ef22a0d4484ab71cec4a0a7bf2f4c2a17c760
 
 kind=CHECK
 title=Independent checks
 body=These checks use only admitted records. A miss returns to the explanation.
 dominantAction=Continue
 references=
-items=u22-i-cardinals-1,u22-i-cardinals-2
+items=u22-i-noun-forms-1,u22-i-noun-forms-2
 examples=
 unavailableReason=
 bookDirection=
 companionDirection=
-remediationStepId=u22-st-rem-cardinals
+remediationStepId=u22-st-rem-noun-forms
 
 ### SESSION `u22-s-compounds`
 
@@ -468,9 +471,9 @@ remediationStepId=u22-st-rem-cardinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 110c2121c065b8584c9172f9fc5b25724a995aefbd2d8dc45b6d00e241b44ef4
+- Content hash: 1ce3d43bb0910553d8e21f582fe453f121399b0f756b17132b69213cf0465b22
 
-title=Choose the admitted compound quantity line
+title=Choose the admitted example by its last digit
 estimatedMinutes=12
 objectives=obj-u22-compounds
 steps=u22-st-teach-compounds-1,u22-st-guided-compounds-1,u22-st-teach-compounds-2,u22-st-teach-compounds-3,u22-st-rem-compounds,u22-st-check-compounds
@@ -527,11 +530,11 @@ remediationStepId=u22-st-rem-compounds
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f6eb1b6a042da443e44e1617d6f21121e077fba28d607804ed8e479864610ab4
+- Content hash: 860efd0a9f4902f7e853a27b4ce1ec3359715924929883927d057b63498293b7
 
 kind=TEACH
 title=Admitted instruction
-body=тридцать три рюмки (thirty-three shot glasses)
+body=Numerals larger than twenty follow the above rules using the last digit.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -571,11 +574,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0e09d7ac64f73f4f4bac4f8de5c93b0b13d835315e45cac9e26e48147b24bb92
+- Content hash: de403d8c5c0f8afa0eafbd02645eb8c5bbb8c9a269b0299bec9e69f204dccf7b
 
 kind=REMEDIATE
 title=Remediation
-body=тридцать три рюмки (thirty-three shot glasses)
+body=Numerals larger than twenty follow the above rules using the last digit.
 dominantAction=Continue
 references=
 items=
@@ -606,300 +609,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u22-st-rem-compounds
-
-### SESSION `u22-s-ordinals`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9d0b3688314294c4d867dcbe984c88f006d3296a5713cc22f1b4bb00f644dc35
-
-title=Choose the admitted ordinal line
-estimatedMinutes=12
-objectives=obj-u22-ordinals
-steps=u22-st-teach-ordinals-1,u22-st-guided-ordinals-1,u22-st-teach-ordinals-2,u22-st-teach-ordinals-3,u22-st-rem-ordinals,u22-st-check-ordinals
-
-### STEP `u22-st-teach-ordinals-1`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d95119c94e035d56debef0b8ba65ab149197c9aac0d4d2a3ae8d6f5e955a59b7
-
-kind=TEACH
-title=Admitted lines
-body=пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. 
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=ex-u22-ordinals-0,ex-u22-ordinals-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-guided-ordinals-1`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3bd027ccd57845d20b2112db89d9033fbc7050bbb00f38bb50ca761d2c4604f2
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u22-g-ordinals-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u22-st-rem-ordinals
-
-### STEP `u22-st-teach-ordinals-2`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: debcda91d3e141aa522ed5c1faee28af36e6a6320c33a3481a1b9567f9a0ddb4
-
-kind=TEACH
-title=Admitted instruction
-body=Ordinal numbers
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-teach-ordinals-3`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8690371b758473f475906338e83ebb5259f3740dd8dcabc5a9232abef6943fa
-
-kind=TEACH
-title=Admitted lines
-body=тре́тий — Ordinal numbers. 
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=ex-u22-ordinals-2
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-rem-ordinals`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 959e22226a6c712738348106d464a6e114d6395f2493f08327e380a2361747f3
-
-kind=REMEDIATE
-title=Remediation
-body=Ordinal numbers
-dominantAction=Continue
-references=
-items=
-examples=ex-u22-ordinals-0,ex-u22-ordinals-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-check-ordinals`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 293ffb208cd7ec4fb83585ab7eaf9fe0901f67d639181470be63f3b909be604f
-
-kind=CHECK
-title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
-dominantAction=Continue
-references=
-items=u22-i-ordinals-1,u22-i-ordinals-2
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u22-st-rem-ordinals
-
-### SESSION `u22-s-noun-forms`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e7ec5443f6b800de2079714be6e1e926a3aae3f240f28c96de6756ffffbf71e6
-
-title=Choose the admitted noun form after the numeral
-estimatedMinutes=12
-objectives=obj-u22-noun-forms
-steps=u22-st-teach-noun-forms-1,u22-st-guided-noun-forms-1,u22-st-teach-noun-forms-2,u22-st-teach-noun-forms-3,u22-st-rem-noun-forms,u22-st-check-noun-forms
-
-### STEP `u22-st-teach-noun-forms-1`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 050f90cf2097ecd1dc72e6b7934562f576964766c4bbcd2841369d9cbdafaedc
-
-kind=TEACH
-title=Admitted lines
-body=один мальчик — one boy. две девушки — two girls. 
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-guided-noun-forms-1`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec6deae071050268ce658d6a04d44e9c216f6c704be3e2f3adc20c846c5cafe4
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u22-g-noun-forms-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u22-st-rem-noun-forms
-
-### STEP `u22-st-teach-noun-forms-2`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c883d710530ddb52ab570e8b52634a322e92cf5f413dfead34aae5ebe6d9b70a
-
-kind=TEACH
-title=Admitted instruction
-body=один мальчик (one boy)
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-teach-noun-forms-3`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 23d1b1fe7c023611a37d1ae8bbf00df94db0789992e7a9ed7b04ed23fa3052f6
-
-kind=TEACH
-title=Admitted lines
-body=пять девушек — five girls. 
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=ex-u22-noun-forms-2
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-rem-noun-forms`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 156739c526e7d03a249fb24a7e4e4ce78fdebf7df92664ef3730c6ec85f76fd9
-
-kind=REMEDIATE
-title=Remediation
-body=один мальчик (one boy)
-dominantAction=Continue
-references=
-items=
-examples=ex-u22-noun-forms-0,ex-u22-noun-forms-1
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u22-st-check-noun-forms`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3a0bf9fa8a9506fd54af23d896ef22a0d4484ab71cec4a0a7bf2f4c2a17c760
-
-kind=CHECK
-title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
-dominantAction=Continue
-references=
-items=u22-i-noun-forms-1,u22-i-noun-forms-2
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u22-st-rem-noun-forms
 
 ### SESSION `u22-s-book`
 
@@ -957,6 +666,43 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 22 work in your copy.
+companionDirection=
+remediationStepId=
+
+### SESSION `u22-s-gap-ordinals`
+
+- Objectives: obj-u22-ordinals
+- Sessions: u22-s-gap-ordinals
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 378490de8db2853aa9864fc966e44a4905a5af95ef6af9835325d89f3c4b4d04
+
+title=Ordinal list position stays in the copy you own
+estimatedMinutes=4
+objectives=obj-u22-ordinals
+steps=u22-st-gap-ordinals
+
+### STEP `u22-st-gap-ordinals`
+
+- Objectives: obj-u22-ordinals
+- Sessions: u22-s-gap-ordinals
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 296522fd8a47f60dcacaf40c96814a2db394c93f7ef57792e97e6915a7006e6b
+
+kind=UNAVAILABLE
+title=Ordinal list position stays in the copy you own
+body=Ordinal list position stays in the copy you own. A numbered list does not by itself supply a checked distinction.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=The frozen ordinal list does not by itself support a checked distinction.
+bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1108,72 +854,106 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### EXAMPLE `ex-u22-cardinals-0`
+### EXAMPLE `ex-u22-noun-forms-0`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 445a9c299f1afbceb74b8e033138fe09bb6f141112490e713a8380f75d7e187c
+- Content hash: d16a485c377cf28b21a41841042109330fbfbaac572888ebdcbf7ce17e3e3387
 
 kind=LEXICAL
 letterId=
-display=два́дцать оди́н
-note=21
-objectiveId=obj-u22-cardinals
+display=один мальчик
+note=one boy
+objectiveId=obj-u22-noun-forms
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-u22-cardinals-1`
+### EXAMPLE `ex-u22-noun-forms-1`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80e49a4a48fce11806aa64fe3a1a764564412f1623e80a74957b8d3ae9c81c39
+- Content hash: f4e07ddd3682d28f54080af90c3de2c560f365140c06cf1ab7d26df2a7faa186
 
 kind=LEXICAL
 letterId=
-display=сто оди́н
-note=101
-objectiveId=obj-u22-cardinals
+display=одна девушка
+note=one girl
+objectiveId=obj-u22-noun-forms
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-u22-cardinals-2`
+### EXAMPLE `ex-u22-noun-forms-2`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba1eed7916da9b705c533aea336d948114e05bdb51a4b3d9e5b6afb58db31f7f
+- Content hash: 0dd7b358eb2b3555196cf95916dd999ba9f7e52f3e8d2f953a5e152c20ae59cc
 
 kind=LEXICAL
 letterId=
-display=две́сти пятна́дцать
-note=215
-objectiveId=obj-u22-cardinals
+display=две девушки
+note=two girls
+objectiveId=obj-u22-noun-forms
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-u22-cardinals-3`
+### EXAMPLE `ex-u22-noun-forms-3`
 
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9521b3deca12a9fc02f3fb96df876bae8fdcbefaccebcd237aa0c27a743971d7
+- Content hash: 087f2c79092f493f81908c7c42d9e5e90f9d3d74d84decb8c1cc02b31a48e7bc
 
 kind=LEXICAL
 letterId=
-display=три́ста три́дцать три
-note=333
-objectiveId=obj-u22-cardinals
+display=три кошки
+note=three cats
+objectiveId=obj-u22-noun-forms
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u22-noun-forms-4`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cd3faf38e3ffd687cde81d9dd957a2bb95042db95998d453ff81a807c6f324f9
+
+kind=LEXICAL
+letterId=
+display=пять девушек
+note=five girls
+objectiveId=obj-u22-noun-forms
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u22-noun-forms-5`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c994a5baf7d7facd1fe6636aeb9545ff53427d658e1e80c4eb4bb4ca0aa85cd2
+
+kind=LEXICAL
+letterId=
+display=десять копеек
+note=ten kopeks
+objectiveId=obj-u22-noun-forms
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
 ### EXAMPLE `ex-u22-compounds-0`
@@ -1227,58 +1007,7 @@ note=sixty-nine words
 objectiveId=obj-u22-compounds
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-u22-ordinals-0`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2d6c756cfea954ef87ab380d150bb6971adab90f6967a7fa8e2d85193862a22
-
-kind=LEXICAL
-letterId=
-display=пе́рвый
-note=Ordinal numbers
-objectiveId=obj-u22-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u22-ordinals-1`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7075cf16743ab116d07967e491603db70e75175db2e63f78994413287b6cf5eb
-
-kind=LEXICAL
-letterId=
-display=второ́й
-note=Ordinal numbers
-objectiveId=obj-u22-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u22-ordinals-2`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1aeddf7df561eaa47be0231b91c08056282c5d683fe001fc66b064ba1fca115d
-
-kind=LEXICAL
-letterId=
-display=тре́тий
-note=Ordinal numbers
-objectiveId=obj-u22-ordinals
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u22-noun-forms-0`
+### GUIDED_PRACTICE `u22-g-noun-forms-0`
 
 - Objectives: obj-u22-noun-forms
 - Sessions: u22-s-noun-forms
@@ -1286,82 +1015,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d16a485c377cf28b21a41841042109330fbfbaac572888ebdcbf7ce17e3e3387
-
-kind=LEXICAL
-letterId=
-display=один мальчик
-note=one boy
-objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u22-noun-forms-1`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72dd8a9fbc6bcd259486b6154c59873c877726795ce9cf6fb236af0b79ac829e
-
-kind=LEXICAL
-letterId=
-display=две девушки
-note=two girls
-objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-u22-noun-forms-2`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70408013551938a11fc2967fdbeeda43999f8130f3cfcd8bc529a84eb57b1350
-
-kind=LEXICAL
-letterId=
-display=пять девушек
-note=five girls
-objectiveId=obj-u22-noun-forms
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### GUIDED_PRACTICE `u22-g-cardinals-0`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec20d8e4b284704a7c30b819ff86e02eb0a6a8a7478961fb44b9c178aec1055e
+- Content hash: bd8a73134c474095b3252563e0146e81df1399327813f0511734087d0c10dd36
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the twenty-one line?
-promptLetter=сто оди́н
-options=два́дцать оди́н | две́сти пятна́дцать | три́ста три́дцать три
-answer=два́дцать оди́н
-feedback=Does this answer show the twenty-one line? два́дцать оди́н.
-objectiveId=obj-u22-cardinals
+prompt=The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?
+promptLetter=одна девушка
+options=один мальчик | две девушки | пять девушек
+answer=один мальчик
+feedback=The frozen note says a form of one should be used in the proper form. This line is the other example with one. один мальчик.
+objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the twenty-one line? | Does this row fail the twenty-one line?
-testedFeature=TWENTY_ONE_LINE
+distractorRationales= | The frozen examples place two girls with two, not with one. | The frozen examples place five girls with five, not with one.
+testedFeature=ONE_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-cardinals-0
+contrastSetId=u22-noun-forms-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u22-cardinals-0-ru
-distractorSourceIds= | prov-ex-u22-cardinals-2-ru | prov-ex-u22-cardinals-3-ru
-distractorDifference= | Does this row fail the twenty-one line? | Does this row fail the twenty-one line?
-whyAnswerDemonstratesObjective=Does this answer show the twenty-one line?
-contrastMembers=два́дцать оди́н | две́сти пятна́дцать | три́ста три́дцать три
+answerSourceIds=prov-ex-u22-noun-forms-0-ru
+distractorSourceIds= | prov-ex-u22-noun-forms-2-ru | prov-ex-u22-noun-forms-4-ru
+distractorDifference= | Two girls follows two, not a form of one. | Five girls follows five, not a form of one.
+whyAnswerDemonstratesObjective=The frozen note says a form of one should be used in the proper form. This line is the other example with one.
+contrastMembers=один мальчик | две девушки | пять девушек
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-cardinals-1-ru | prov-ex-u22-cardinals-0-ru | prov-ex-u22-cardinals-2-ru | prov-ex-u22-cardinals-3-ru
+relationParticipantIds=prov-ex-u22-noun-forms-1-ru | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-2-ru | prov-ex-u22-noun-forms-4-ru
 responseKind=RUSSIAN_PHRASE
 
 ### GUIDED_PRACTICE `u22-g-compounds-0`
@@ -1372,312 +1050,32 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 260978aa616bf8f858e3ce5234a5b56da601af3ce21909a190d6f18ba5197ddb
+- Content hash: 60ad6ab8c99819b828a61309b74ec935c63ba4846b8c1245548ed7c8061d935b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the shot-glass line?
-promptLetter=сорок один год
-options=тридцать три рюмки | шестьдесят девять слов
-answer=тридцать три рюмки
-feedback=Does this answer show the shot-glass line? тридцать три рюмки.
+prompt=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?
+promptLetter=тридцать три рюмки
+options=сорок один год | тридцать три рюмки | шестьдесят девять слов
+answer=сорок один год
+feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one. сорок один год.
 objectiveId=obj-u22-compounds
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the shot-glass line?
-testedFeature=SHOT_GLASS_LINE
+distractorRationales= | Thirty-three shot glasses ends in three, so it is not the example that ends in one. | Sixty-nine words ends in nine, so it is not the example that ends in one.
+testedFeature=LAST_DIGIT_ONE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u22-compounds-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u22-compounds-0-ru
-distractorSourceIds= | prov-ex-u22-compounds-2-ru
-distractorDifference= | Does this row fail the shot-glass line?
-whyAnswerDemonstratesObjective=Does this answer show the shot-glass line?
-contrastMembers=тридцать три рюмки | шестьдесят девять слов
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-2-ru
-responseKind=RUSSIAN_PHRASE
-
-### GUIDED_PRACTICE `u22-g-ordinals-0`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3d6773f204c540249d4dfa5b6f1ee4598b854fc6df4bf87a1d53fd9fbb79d40
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the first ordinal?
-promptLetter=второ́й
-options=пе́рвый | тре́тий | четвёртый
-answer=пе́рвый
-feedback=Does this answer show the first ordinal? пе́рвый.
-objectiveId=obj-u22-ordinals
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
-testedFeature=FIRST_ORDINAL
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-ordinals-0
-cueLanguage=ru
-independent=false
-answerSourceIds=prov-ex-u22-ordinals-0-ru
-distractorSourceIds= | prov-ex-u22-ordinals-2-ru | prov-u22-ordinals-x-0
-distractorDifference= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the first ordinal?
-contrastMembers=пе́рвый | тре́тий | четвёртый
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-ordinals-1-ru | prov-ex-u22-ordinals-0-ru | prov-ex-u22-ordinals-2-ru | prov-u22-ordinals-x-0
-responseKind=RUSSIAN_TOKEN
-
-### GUIDED_PRACTICE `u22-g-noun-forms-0`
-
-- Objectives: obj-u22-noun-forms
-- Sessions: u22-s-noun-forms
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e89a82eadfe89388ca9b83520787e6fb6c5db7fb4fbbd96ae44cfe6385c9aa0
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the one-boy line?
-promptLetter=две девушки
-options=один мальчик | пять девушек
-answer=один мальчик
-feedback=Does this answer show the one-boy line? один мальчик.
-objectiveId=obj-u22-noun-forms
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the one-boy line?
-testedFeature=ONE_BOY_LINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-noun-forms-0
-cueLanguage=ru
-independent=false
-answerSourceIds=prov-ex-u22-noun-forms-0-ru
-distractorSourceIds= | prov-ex-u22-noun-forms-2-ru
-distractorDifference= | Does this row fail the one-boy line?
-whyAnswerDemonstratesObjective=Does this answer show the one-boy line?
-contrastMembers=один мальчик | пять девушек
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-noun-forms-1-ru | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-2-ru
-responseKind=RUSSIAN_PHRASE
-
-### INDEPENDENT_CHECK `u22-i-cardinals-1`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b8edaa9b72236f570c66c992c3c9f9df97fd02f5a154512447df1e15b90136e
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the hundred-one line?
-promptLetter=два́дцать оди́н
-options=сто оди́н | две́сти пятна́дцать | три́ста три́дцать три
-answer=сто оди́н
-feedback=Does this answer show the hundred-one line? сто оди́н.
-objectiveId=obj-u22-cardinals
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the hundred-one line? | Does this row fail the hundred-one line?
-testedFeature=HUNDRED_ONE_LINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-cardinals-1
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u22-cardinals-1-ru
-distractorSourceIds= | prov-ex-u22-cardinals-2-ru | prov-ex-u22-cardinals-3-ru
-distractorDifference= | Does this row fail the hundred-one line? | Does this row fail the hundred-one line?
-whyAnswerDemonstratesObjective=Does this answer show the hundred-one line?
-contrastMembers=сто оди́н | две́сти пятна́дцать | три́ста три́дцать три
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-cardinals-0-ru | prov-ex-u22-cardinals-1-ru | prov-ex-u22-cardinals-2-ru | prov-ex-u22-cardinals-3-ru
-responseKind=RUSSIAN_PHRASE
-
-### INDEPENDENT_CHECK `u22-i-cardinals-2`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f15d9d263f59d6686f322771fcd3822de05423001d306f9f0dfe151eb3c80e89
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the two-hundred-fifteen line?
-promptLetter=два́дцать оди́н
-options=две́сти пятна́дцать | сто оди́н | три́ста три́дцать три
-answer=две́сти пятна́дцать
-feedback=Does this answer show the two-hundred-fifteen line? две́сти пятна́дцать.
-objectiveId=obj-u22-cardinals
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the two-hundred-fifteen line? | Does this row fail the two-hundred-fifteen line?
-testedFeature=TWO_HUNDRED_FIFTEEN_LINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-cardinals-2
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u22-cardinals-2-ru
-distractorSourceIds= | prov-ex-u22-cardinals-1-ru | prov-ex-u22-cardinals-3-ru
-distractorDifference= | Does this row fail the two-hundred-fifteen line? | Does this row fail the two-hundred-fifteen line?
-whyAnswerDemonstratesObjective=Does this answer show the two-hundred-fifteen line?
-contrastMembers=две́сти пятна́дцать | сто оди́н | три́ста три́дцать три
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-cardinals-0-ru | prov-ex-u22-cardinals-2-ru | prov-ex-u22-cardinals-1-ru | prov-ex-u22-cardinals-3-ru
-responseKind=RUSSIAN_PHRASE
-
-### INDEPENDENT_CHECK `u22-i-compounds-1`
-
-- Objectives: obj-u22-compounds
-- Sessions: u22-s-compounds
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10a634f77ffd9ef92532ea6bd3e77f49e2dd58aa8b4912de53ebe2774554d4c4
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the forty-one-year line?
-promptLetter=тридцать три рюмки
-options=сорок один год | шестьдесят девять слов
-answer=сорок один год
-feedback=Does this answer show the forty-one-year line? сорок один год.
-objectiveId=obj-u22-compounds
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the forty-one-year line?
-testedFeature=FORTY_ONE_YEAR_LINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-compounds-1
-cueLanguage=ru
-independent=true
 answerSourceIds=prov-ex-u22-compounds-1-ru
-distractorSourceIds= | prov-ex-u22-compounds-2-ru
-distractorDifference= | Does this row fail the forty-one-year line?
-whyAnswerDemonstratesObjective=Does this answer show the forty-one-year line?
-contrastMembers=сорок один год | шестьдесят девять слов
+distractorSourceIds= | prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-2-ru
+distractorDifference= | This example ends in three, not in one. | This example ends in nine, not in one.
+whyAnswerDemonstratesObjective=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.
+contrastMembers=сорок один год | тридцать три рюмки | шестьдесят девять слов
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-2-ru
+relationParticipantIds=prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-2-ru
 responseKind=RUSSIAN_PHRASE
-
-### INDEPENDENT_CHECK `u22-i-compounds-2`
-
-- Objectives: obj-u22-compounds
-- Sessions: u22-s-compounds
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 773ff112821ea0596a19871404c1a7cacce5973539499ea82288db3679b63c44
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the sixty-nine-word line?
-promptLetter=тридцать три рюмки
-options=шестьдесят девять слов | сорок один год
-answer=шестьдесят девять слов
-feedback=Does this answer show the sixty-nine-word line? шестьдесят девять слов.
-objectiveId=obj-u22-compounds
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the sixty-nine-word line?
-testedFeature=SIXTY_NINE_WORD_LINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-compounds-2
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u22-compounds-2-ru
-distractorSourceIds= | prov-ex-u22-compounds-1-ru
-distractorDifference= | Does this row fail the sixty-nine-word line?
-whyAnswerDemonstratesObjective=Does this answer show the sixty-nine-word line?
-contrastMembers=шестьдесят девять слов | сорок один год
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-2-ru | prov-ex-u22-compounds-1-ru
-responseKind=RUSSIAN_PHRASE
-
-### INDEPENDENT_CHECK `u22-i-ordinals-1`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70747d1a25dafec2f503b5ceefc6d5c06af1ecfe8320f0b032c39c4e15b0a2bc
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the second ordinal?
-promptLetter=пе́рвый
-options=второ́й | тре́тий | четвёртый
-answer=второ́й
-feedback=Does this answer show the second ordinal? второ́й.
-objectiveId=obj-u22-ordinals
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
-testedFeature=SECOND_ORDINAL
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-ordinals-1
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u22-ordinals-1-ru
-distractorSourceIds= | prov-ex-u22-ordinals-2-ru | prov-u22-ordinals-x-0
-distractorDifference= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the second ordinal?
-contrastMembers=второ́й | тре́тий | четвёртый
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-ordinals-0-ru | prov-ex-u22-ordinals-1-ru | prov-ex-u22-ordinals-2-ru | prov-u22-ordinals-x-0
-responseKind=RUSSIAN_TOKEN
-
-### INDEPENDENT_CHECK `u22-i-ordinals-2`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34f051761953f082c72b3b611a9948a18a26e34bbb5833fbb95eec1d0443fc69
-
-kind=FORM_SELECTION
-language=en
-prompt=Which admitted line is the third ordinal?
-promptLetter=пе́рвый
-options=тре́тий | второ́й | четвёртый
-answer=тре́тий
-feedback=Does this answer show the third ordinal? тре́тий.
-objectiveId=obj-u22-ordinals
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
-testedFeature=THIRD_ORDINAL
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u22-ordinals-2
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u22-ordinals-2-ru
-distractorSourceIds= | prov-ex-u22-ordinals-1-ru | prov-u22-ordinals-x-0
-distractorDifference= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the third ordinal?
-contrastMembers=тре́тий | второ́й | четвёртый
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-ordinals-0-ru | prov-ex-u22-ordinals-2-ru | prov-ex-u22-ordinals-1-ru | prov-u22-ordinals-x-0
-responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u22-i-noun-forms-1`
 
@@ -1687,31 +1085,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcf72722a36e0d3b20876a2f4849ead92b6763ec3d6e52a824c510fc6291d1cf
+- Content hash: bc0bf2ce926f6b54109c6b4b5b2dd956404dc46119867b0cb896b1c38a600361
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the two-girl line?
-promptLetter=один мальчик
-options=две девушки | пять девушек
-answer=две девушки
-feedback=Does this answer show the two-girl line? две девушки.
+prompt=The frozen note groups two, three, and four together. Which admitted line is another example from that group?
+promptLetter=две девушки
+options=три кошки | один мальчик | пять девушек
+answer=три кошки
+feedback=The frozen note says two, three, and four require the following item to be presented together. This line is the three example. три кошки.
 objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the two-girl line?
-testedFeature=TWO_GIRL_LINE
+distractorRationales= | The frozen examples place one boy with a form of one, not with two, three, or four. | The frozen examples place five girls with the five group, not with two, three, or four.
+testedFeature=TWO_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u22-noun-forms-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u22-noun-forms-1-ru
-distractorSourceIds= | prov-ex-u22-noun-forms-2-ru
-distractorDifference= | Does this row fail the two-girl line?
-whyAnswerDemonstratesObjective=Does this answer show the two-girl line?
-contrastMembers=две девушки | пять девушек
+answerSourceIds=prov-ex-u22-noun-forms-3-ru
+distractorSourceIds= | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-4-ru
+distractorDifference= | One boy follows a form of one, not two, three, or four. | Five girls follows the five group, not two, three, or four.
+whyAnswerDemonstratesObjective=The frozen note says two, three, and four require the following item to be presented together. This line is the three example.
+contrastMembers=три кошки | один мальчик | пять девушек
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-1-ru | prov-ex-u22-noun-forms-2-ru
+relationParticipantIds=prov-ex-u22-noun-forms-2-ru | prov-ex-u22-noun-forms-3-ru | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-4-ru
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u22-i-noun-forms-2`
@@ -1722,42 +1120,112 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3cdc3347ee297c508c6265d29fb8034384a104d70bdc9ec7db61647f3bb0fdef
+- Content hash: 0f4b5d167d087ef2acf0d29fa5e35a76e009cc7aa5c9392dacdb7e2bb1f7bc8c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the five-girl line?
-promptLetter=один мальчик
-options=пять девушек | две девушки
-answer=пять девушек
-feedback=Does this answer show the five-girl line? пять девушек.
+prompt=The frozen note groups five through twenty together. Which admitted line is another example from that group?
+promptLetter=пять девушек
+options=десять копеек | один мальчик | две девушки
+answer=десять копеек
+feedback=The frozen note says these numerals require their attached items in the later group. This line is another example from that group. десять копеек.
 objectiveId=obj-u22-noun-forms
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the five-girl line?
-testedFeature=FIVE_GIRL_LINE
+distractorRationales= | The frozen examples place one boy with a form of one, not with the five group. | The frozen examples place two girls with two, not with the five group.
+testedFeature=FIVE_ITEM_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u22-noun-forms-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u22-noun-forms-2-ru
-distractorSourceIds= | prov-ex-u22-noun-forms-1-ru
-distractorDifference= | Does this row fail the five-girl line?
-whyAnswerDemonstratesObjective=Does this answer show the five-girl line?
-contrastMembers=пять девушек | две девушки
+answerSourceIds=prov-ex-u22-noun-forms-5-ru
+distractorSourceIds= | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-2-ru
+distractorDifference= | One boy follows a form of one, not the five group. | Two girls follows two, not the five group.
+whyAnswerDemonstratesObjective=The frozen note says these numerals require their attached items in the later group. This line is another example from that group.
+contrastMembers=десять копеек | один мальчик | две девушки
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-2-ru | prov-ex-u22-noun-forms-1-ru
+relationParticipantIds=prov-ex-u22-noun-forms-4-ru | prov-ex-u22-noun-forms-5-ru | prov-ex-u22-noun-forms-0-ru | prov-ex-u22-noun-forms-2-ru
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u22-i-compounds-1`
+
+- Objectives: obj-u22-compounds
+- Sessions: u22-s-compounds
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 05e122676f846de1026eb32a75db93d6cfce828c9327493f160f3ca142773611
+
+kind=FORM_SELECTION
+language=en
+prompt=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?
+promptLetter=сорок один год
+options=шестьдесят девять слов | сорок один год | тридцать три рюмки
+answer=шестьдесят девять слов
+feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine. шестьдесят девять слов.
+objectiveId=obj-u22-compounds
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | Forty-one years ends in one, so it is not the example that ends in nine. | Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
+testedFeature=LAST_DIGIT_NINE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u22-compounds-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u22-compounds-2-ru
+distractorSourceIds= | prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-0-ru
+distractorDifference= | This example ends in one, not in nine. | This example ends in three, not in nine.
+whyAnswerDemonstratesObjective=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.
+contrastMembers=шестьдесят девять слов | сорок один год | тридцать три рюмки
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-2-ru | prov-ex-u22-compounds-1-ru | prov-ex-u22-compounds-0-ru
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u22-i-compounds-2`
+
+- Objectives: obj-u22-compounds
+- Sessions: u22-s-compounds
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b446fba4665ba4b0f614d61aaab23ef5a2956b3376aaccd06a167b30cf7fc57a
+
+kind=FORM_SELECTION
+language=en
+prompt=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?
+promptLetter=шестьдесят девять слов
+options=тридцать три рюмки | шестьдесят девять слов | сорок один год
+answer=тридцать три рюмки
+feedback=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three. тридцать три рюмки.
+objectiveId=obj-u22-compounds
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | Sixty-nine words ends in nine, so it is not the example that ends in three. | Forty-one years ends in one, so it is not the example that ends in three.
+testedFeature=LAST_DIGIT_THREE
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u22-compounds-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u22-compounds-0-ru
+distractorSourceIds= | prov-ex-u22-compounds-2-ru | prov-ex-u22-compounds-1-ru
+distractorDifference= | This example ends in nine, not in three. | This example ends in one, not in three.
+whyAnswerDemonstratesObjective=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.
+contrastMembers=тридцать три рюмки | шестьдесят девять слов | сорок один год
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u22-compounds-2-ru | prov-ex-u22-compounds-0-ru | prov-ex-u22-compounds-2-ru | prov-ex-u22-compounds-1-ru
 responseKind=RUSSIAN_PHRASE
 
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u22-s-orient, u22-s-cardinals, u22-s-compounds, u22-s-ordinals, u22-s-noun-forms, u22-s-book, u22-s-gap-declension, u22-s-gap-both-forms, u22-s-gap-half-forms, u22-s-gap-collective
+- Sessions: u22-s-orient, u22-s-noun-forms, u22-s-compounds, u22-s-book, u22-s-gap-ordinals, u22-s-gap-declension, u22-s-gap-both-forms, u22-s-gap-half-forms, u22-s-gap-collective
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: b1e11188a91f13c285553e8e3e73d92016ea5989143a4061356f559e8ca1cda3
+- Content hash: 2400267049a34a88720fbfc73a22cbd322749d9fe329ca0e2329adf410f2c873
 
 title=Units 21–25 source notice
 summary=Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.
@@ -1767,286 +1235,6 @@ introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
 
-### PROVENANCE `prov-ex-u22-cardinals-0-en`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc598a0642c975f7af3383094d4312a9164426e92c0c4e4f6d99cd66bed596c5
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=21
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-0-ru`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5ae2d1cb4990a60e8adeb336c29d5ca292fba20d015296feb3f402688fa8daf
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=два́дцать оди́н
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=bd9be8fe6c901cfc24d6a74bc0944f212233cf70df8d59293a97e228fffe6a89
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-1-en`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78985e3c8c6139e334d9ebb7732205dc680cbb4c2a4f32491a144c83db9c3984
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=101
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-1-ru`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f25207902e1247ae2c17998c59a506afb80ab398923d0a4e86788fcccadd83a
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=сто оди́н
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=cf3907388f279da5d23d396187f4e0a82c4320085a75bb14f9440a041da72898
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-2-en`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80a2772d4e6fe11ba83253563ca480d2dd33938cf58c86074aae7c002e0de16e
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=215
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=d86580a57f7bf542e85202283cb845953c9d28f80a8e651db08b2fc0b2d6a731
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-2-ru`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a681c6cbe47d64788414de831f1856a082cd49be105637b401b1f3353ccccdb
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=две́сти пятна́дцать
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=7a06b5f1175021b989aa0edfcfd3b534ebb96e2af098c776d7afca95d8fff8a4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-3-en`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9db4f9504d7a71f0d39bdd385de6f7b66246284bc21d4ee89530f942947833dc
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=333
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=556d7dc3a115356350f1f9910b1af1ab0e312d4b3e4fc788d2da63668f36d017
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-cardinals-3-ru`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 005cb6d582accfaee13cb94928f5e8ce571191653563f9880ff5356ea3bfdaeb
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=три́ста три́дцать три
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=3a7c85c91c509f0a791543c439de19ab3c5f2ed4144785a4fdedacfee89c6a4a
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
 ### PROVENANCE `prov-ex-u22-compounds-0-en`
 
 - Objectives: obj-u22-compounds
@@ -2055,20 +1243,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1ccfc1492b2d087c37ee763a8225bee88975af165011a574630e29eadd204fbc
+- Content hash: ce6439c9c1ec77c071a5451c176227bbc827654eb01905e61ef048882403792d
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=thirty-three shot glasses
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=98524e9d269ea62109bb0b2b36495c13a66d970a46599df2b1ad9d3ec84b5d1f
 audioAssetId=
 reviewerIdentity=
@@ -2084,20 +1272,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64fb24dda25ce2438fa95c1efd811c4bfce839911d7477780bb44d0099499c91
+- Content hash: 5b5582024adcac5114c0f8c4cd1fca646cecdc6322048c3e0540f16f09443996
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=тридцать три рюмки
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=52fc1027860cd0ca871d4f70d7476e9300a59fc8bb389be76296357c9dd75305
 audioAssetId=
 reviewerIdentity=
@@ -2113,20 +1301,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58da736d040180f3761aebf58fda25666b1e97c27cdf5d9cb8fa8f3c78894f8e
+- Content hash: 03a13bfb06e962329f727e52486a61a5054f9ab33d9610a6cf8021d257499f8a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=forty-one years
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=f560e293f902cea6da61277d67ea45ffba4c4a28e298e403294b3c3302bc041a
 audioAssetId=
 reviewerIdentity=
@@ -2142,20 +1330,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2344e74341eb03e19b774b769310aeea4ee1f72dfac5d461074399e0c511d70
+- Content hash: bac788c0de5caf89c33ea86660b6b4181aac07d5be60db6fb8ee0e12ec55a11a
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=сорок один год
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=ead90f0119bd544b8199f818c7a4b3d502850a583e85be600b0fe62de62f62a7
 audioAssetId=
 reviewerIdentity=
@@ -2171,20 +1359,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a319bb59d26cef0a75a721a5c49a5d4067cf6fdf7774ee19994fdf6ff33f64d
+- Content hash: a8d304b546b34194145aec8fcc2c796e7d7ece28578bf1bb351d9cbdca196619
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=sixty-nine words
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=50efa3d6529776bc38b29feecc0500261f678febeea7afcdafb4cc9a820c95dc
 audioAssetId=
 reviewerIdentity=
@@ -2200,20 +1388,20 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c66dc8442e6cb9de21816cce651902dfccd329922b8c30a5448a3d98e9e2d3b8
+- Content hash: 80222d053ebbe060c1111a19d003237a4b2b373234503b51d05c18c5ee06b132
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
 shippedText=шестьдесят девять слов
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
 contentHash=b305bb467a254f0a78ddf916e22f0602526651514879f096c78aa88e806e4954
 audioAssetId=
 reviewerIdentity=
@@ -2229,24 +1417,24 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3691799e403e7f177d37bee03984fe4104fafb7114afc538969ac69c74114437
+- Content hash: 5a15da8c99cf058c20ddc7a7c0bbfe397dfbdfdf550472771ca19662ae99419a
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
 shippedText=one boy
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
 contentHash=0410984731f03935f59963dae070b023f5a7382afabbd6ed413fd9bf74c48a9a
 audioAssetId=
 reviewerIdentity=
@@ -2262,24 +1450,24 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe2cff4470058b4b53fd2a37d92dc0e3549b9779772586f21a636ccd4d9f50f3
+- Content hash: e3b592cc92227dd06e429d4c8fa11e9e159b28fae94d4ee39ee54d24b95f01e2
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
 shippedText=один мальчик
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
 contentHash=91d6b3993f6fe037c9187293c97bab80217b9bdad6da6c25535edd8db3f9c24a
 audioAssetId=
 reviewerIdentity=
@@ -2295,25 +1483,25 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28b8266170b20b2e6abb64dc5607f0eb7949b2ec6635ce423dbc4c2e508bbec3
+- Content hash: 9aefcf5346beca14cb4c5ca5a17734a454f3e4cf8e388b9086c4107b1e0bc0ed
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
-shippedText=two girls
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=one girl
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
-contentHash=97f3ff1b2578a096fa7f9c428ecf396dfa4c7fa05fe71dac02db7e1b3f332494
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=f3bdd70149380a6206a7a1e0f347f0bc9603ad5f85adfe278cc2211696ad410d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2328,25 +1516,25 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43edcc6a2b8b10aa6c8d3ea81b7f527b014bca6b078f84a3689665d963100da9
+- Content hash: 65db0b0f7a7d6e0719a3a349a2c7c1167a305ad3a273e6bd8a214181228d96bf
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
-shippedText=две девушки
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=одна девушка
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
-contentHash=19cc9abc24de158e3fb5b292b05aa8256f93709fbeb345264829d4df09a9ba96
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=a9ce26cbd196218b33aceb1da48a3e37fcb64bd2497f7c77d3a32cf59e649a98
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2361,25 +1549,25 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a184786ff15a8e5900de88e4761efef31a02ad5f6284bb9c0f9d615753f62a0d
+- Content hash: 9a885238f2f80731e5e32632dac4c1a0945fbfa594522dc129e53bfd9d6a02a0
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
-shippedText=five girls
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=two girls
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
-contentHash=52ea4540416033534494e348995fb4192eb4439b8cbbfb7ee18e0fe2f89faf2d
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=97f3ff1b2578a096fa7f9c428ecf396dfa4c7fa05fe71dac02db7e1b3f332494
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2394,24 +1582,156 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a89ba9d40b1cecf9ef27c1a0f06b7107adfd7d01ae257263ca5bee712c735088
+- Content hash: e0ff92dabb9afe2c9a02b3dee0b1aec14a522d23f87602ffceae92a7cca62512
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=две девушки
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=19cc9abc24de158e3fb5b292b05aa8256f93709fbeb345264829d4df09a9ba96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u22-noun-forms-3-en`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c114fe120aa10b5f3db853f0da13657ddc431ac2ffae935a8e57d535320134ed
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=three cats
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=fca174f0295575999950da84879a431550ab4681a81fbe299216b816ac0203c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u22-noun-forms-3-ru`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a20fedfe5430a1519d49b06278753f58851bf762dbbc20aefa0c26877b3aea87
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=три кошки
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=c9112ceafd474abcd6eced8d52d2b5acce7f1ec3243ab6ab81fb0780acd93043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u22-noun-forms-4-en`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e8bb7cf1b6f21714c65186bd35b372342787a42c81fcd68696618d5aa97cc1f9
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=five girls
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=52ea4540416033534494e348995fb4192eb4439b8cbbfb7ee18e0fe2f89faf2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u22-noun-forms-4-ru`
+
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c912236f192af1a9bed3bf663c968de7c8d698eda06b47cdfc3c80596c7be35
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
 shippedText=пять девушек
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
 contentHash=e4c87b9100f8ca3c3365928e83236cad3bd0636b45d00c3f9dedec28ffa0498b
 audioAssetId=
 reviewerIdentity=
@@ -2419,298 +1739,66 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u22-ordinals-0-en`
+### PROVENANCE `prov-ex-u22-noun-forms-5-en`
 
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8609d070aa1d1d598aa6f274425968b9af4e7dd993ff996ee21501d1031d3c18
+- Content hash: 1df7b448eccfe9222e71c5b86269b5b01fd759f9488c01a38672c6673f279ba1
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=Ordinal numbers
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=ten kopeks
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=0eec9803ce7ab58fac8a7f900e826f13dffcb9d0e261e239b46a2385328744fb
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=d428faaa0763098d8deb9b88c09829de01aee171b21b9d67c1d1802b2fa61235
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u22-ordinals-0-ru`
+### PROVENANCE `prov-ex-u22-noun-forms-5-ru`
 
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
+- Objectives: obj-u22-noun-forms
+- Sessions: u22-s-orient, u22-s-noun-forms
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 771dca58eb2ffb785d6a01a72942eb95f5c5f931a8239fb6c7ae161ab930d989
+- Content hash: 8d16ba5eb758cf950fe3ce51e0a1c66cf9769ab108747e0c068eab4eb69d8022
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=пе́рвый
-transformation=wikibooks emphasis formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=4bb8d0e4061ae6189f6efa4209895b4e41894ddd80b411f08da6768535d34028
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-ordinals-1-en`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be60aef73b5a856b78bbf941b1540b7c03dfea97cb359928e530275c8d8c739d
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=Ordinal numbers
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=десять копеек
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=0eec9803ce7ab58fac8a7f900e826f13dffcb9d0e261e239b46a2385328744fb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-ordinals-1-ru`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9b83236659a2361e5dc6317ec262105d937c2404bccbd66761ad6259e5f7642
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=второ́й
-transformation=wikibooks emphasis formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=785e5c72600508c93a2fa4083c1e0899334be6c6b6d80991abe6e9de3630c5f8
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-ordinals-2-en`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82acf73f4978b6d5b137f763d64111b21e64baab7f77f112dd3ec5f4ebcc1d95
-
-recordType=meaning
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=Ordinal numbers
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=0eec9803ce7ab58fac8a7f900e826f13dffcb9d0e261e239b46a2385328744fb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u22-ordinals-2-ru`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c540bb61a38925ca13b026c41e3bc38f83a9ae6bf658c4b6048ec51ed966798
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=тре́тий
-transformation=wikibooks emphasis formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=3594a89f5e61222499fbe52de82641bddcf85dc268f4289103d5856d3e4a69a9
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-cardinals-rem`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3cd02c3c56cbadbb91dec77037f74d4f64429e14022c35a216bad77886abc17
-
-recordType=instruction
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=* 21 два́дцать оди́н
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=7c1c21383e7008a8d6aa276e1cbfd8bb52a7bc15e7d2726a28e6735b693f4f72
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-cardinals-rem-r0`
-
-- Objectives: obj-u22-cardinals
-- Sessions: u22-s-orient, u22-s-cardinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2b948b79a4323029f53dea89db1dd0d1e17bd8ec8ecc380c57c4a49d826a12b
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три
-originalSourceText=* 21 два́дцать оди́н
-* 101 сто оди́н
-* 215 две́сти пятна́дцать
-* 333 три́ста три́дцать три
-shippedText=два́дцать оди́н
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=41b8a3219c1d76b5ce9e362298db8a972d75004dcea6dfdc4d7e60e9e629b34d
-contentHash=bd9be8fe6c901cfc24d6a74bc0944f212233cf70df8d59293a97e228fffe6a89
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=fb205d4acd981ae43cd813d92106e7e1c92225016c5a750dbfcd47851009f771
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2725,50 +1813,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a94e4e5593237834e58438089c55a3e74e2951463ebb88e37950a915385a1fa
+- Content hash: a992ffc5aac548e2da57d909330b9e602608d849dbecc91f190fb0e3f998099b
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
-shippedText=тридцать три рюмки (thirty-three shot glasses)
+sourceRecordId=numbers:Numerals larger than twenty follow the above rules using the last digit.  Think 
+originalSourceText=Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).
+shippedText=Numerals larger than twenty follow the above rules using the last digit.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
-contentHash=c16ee03017c23f46aaa1a30d4a638ce4ece6d1e3644cc4d8fd05b322bc8102eb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-compounds-rem-r0`
-
-- Objectives: obj-u22-compounds
-- Sessions: u22-s-orient, u22-s-compounds
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72a0b08bb01d78d656f0e1a89c5ed1c8a3c974e8f4e86c9e23b896243ab61d11
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years)
-originalSourceText=тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words)
-shippedText=тридцать три рюмки
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d2a44eccff874ed3995ed97ef95f3e4c2df8bd2bf24aef982282a8748de25938
-contentHash=52fc1027860cd0ca871d4f70d7476e9300a59fc8bb389be76296357c9dd75305
+sourceHash=6c7e90c66ec83d102754614b6bbbd66aaec1e8099b24ebbdd90e4bc91610408b
+contentHash=49acf73f76940fbfb37cd46e4475c39d739ce299cdaf7f3d0d88d78ad5e9f7f5
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2783,25 +1842,25 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 129ca3118fcf09f772731bf4ca4332584999c6ee1df7e4baa5b6b7d9affb582b
+- Content hash: 74295b0da92c456d5df619b29d0b77b27f328ccc2692d58b065f9780389dd591
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
-shippedText=один мальчик (one boy)
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
-contentHash=c6b31544dcc36b2d9b35f13876e5a5688cff02a010f235be09a7669a9d6560db
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=e26644ea15073bff0a4fd5189cfd34a057ca41d8b00413f209a3b8e01a0cae16
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2816,223 +1875,30 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fab5858d4fa8a416a804f2ce79ca22be5fbfabcf4535d3244ee0b2c9f5f95ed4
+- Content hash: 49abae82642db9d7e346b0a5b34745f1d56ffa7a1013db0b92c6cd623be4bc69
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
 sourceRevision=4371358
-sourceRecordId=numbers:один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одн
-originalSourceText=один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+sourceRecordId=numbers:The numeral один (1) should be used in the proper form to indicate gender (and, 
+originalSourceText=The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
 
 The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
 
-The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls)
-shippedText=один мальчик
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).
+shippedText=один
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=3155e4ab0fac64df5d6edafc5495e9a4e6f759ce24a8397018e5acb5857ac6fe
-contentHash=91d6b3993f6fe037c9187293c97bab80217b9bdad6da6c25535edd8db3f9c24a
+sourceHash=9364ec7624564d1f7856a4c4a391398cc9b3901cd6ff3d613683157b821c82fc
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
-
-### PROVENANCE `prov-u22-ordinals-rem`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e981ed7956627c3c0157ae2578ea657498c5bed9cae0c6dcbe25b44d6237955
-
-recordType=instruction
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=Ordinal numbers
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=0eec9803ce7ab58fac8a7f900e826f13dffcb9d0e261e239b46a2385328744fb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-ordinals-x-0`
-
-- Objectives: obj-u22-ordinals
-- Sessions: u22-s-orient, u22-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 435e9bac2bedf5e9b49bc63216b91ddbd82a432716552629a0c62ea31f98d275
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=четвёртый
-transformation=wikibooks emphasis formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=c3402154dc456181b72caed397b66d64fc94976bf34b35fe7575ffc4e4608c6e
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### AUTHORED_ENGLISH `en-u22-030`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0843c23f7559d481ca34658b5fa5a794fbf24ed9dda8f0bf560d0c43ef6b2a67
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u22-031`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31bf536d7ad0973638719c70661d863c2c1f56aafa3e8d7f1121c3cda9b5af6e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the twenty-one line?
-
-### AUTHORED_ENGLISH `en-u22-032`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4bc79570e7c9295d4cf8141e94e20cc239296e00ae43fdc34985db8b186d258
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the twenty-one line?
-
-### AUTHORED_ENGLISH `en-u22-033`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6646601f535c8b54188076a06269a1cf49183fb29ec321724a9050fdf262b917
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the twenty-one line?
-
-### AUTHORED_ENGLISH `en-u22-034`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bb5cb042baa0e0339e5c6d5cd54febf4b6ad6f74fc8ecd3b57d5b58cc7e0065
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u22-035`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bd4975c4a174fa6b7f2209c8cd255986d989c70463f6896db6533f135f4ec4f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the hundred-one line?
-
-### AUTHORED_ENGLISH `en-u22-036`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3c9325a165e17692ade7d4808260139b926a364bfff1298f0ca07b5f4dab959
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the hundred-one line?
-
-### AUTHORED_ENGLISH `en-u22-037`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3fc780b8c446f7779f7e16a56a0514edf2b5a029bf65148881aff873807b78d2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the hundred-one line?
-
-### AUTHORED_ENGLISH `en-u22-038`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fe3bcc7953f80e2ce419b48f16e0324ac211efb30305256b31c3e43a3284450
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-hundred-fifteen line?
 
 ### AUTHORED_ENGLISH `en-u22-039`
 
@@ -3042,10 +1908,10 @@ text=Does this row fail the two-hundred-fifteen line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 321055ce7b71ab80d04d8ddfe4c26bbc5e0711e4cb48826875537a1e40fe2a04
+- Content hash: 27bca7dacd3e30f3616d715629e2df4d369cad5fc46e76f43054fccc0efc68b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-hundred-fifteen line?
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u22-040`
 
@@ -3055,10 +1921,10 @@ text=Does this answer show the two-hundred-fifteen line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dfd6fa5dc191073106071cb34190bef24e71c4e386c0d3270e5d7a72efa154f
+- Content hash: b0dacec1326f0f5db1e522d93576e6e2845e7d4c9b220f38d9a496bd256dceb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-hundred-fifteen line?
+text=The frozen examples place two girls with two, not with one.
 
 ### AUTHORED_ENGLISH `en-u22-041`
 
@@ -3068,10 +1934,10 @@ text=Which admitted line is the two-hundred-fifteen line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d7bdf6501c7201033ff3e86c70e1e3541b937d374a43b3c933577f502a0df41
+- Content hash: 8c0072fc9746618a716913bae534d9c38b4a36a77bfca0584184ac1544df5be1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the shot-glass line?
+text=The frozen examples place five girls with five, not with one.
 
 ### AUTHORED_ENGLISH `en-u22-042`
 
@@ -3081,10 +1947,10 @@ text=Does this row fail the shot-glass line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25fc3f2e92d2dde27e5fffc7b6d7a7e71caffe62de1a92e065b186f0ea6481f2
+- Content hash: 71192e0d9687c4477572c5131d573f9c99ac86ae64a25722b265a6712e3244af
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the shot-glass line?
+text=Two girls follows two, not a form of one.
 
 ### AUTHORED_ENGLISH `en-u22-043`
 
@@ -3094,10 +1960,10 @@ text=Does this answer show the shot-glass line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03d4f2f8926a926d5e6940c043075d9855b26259d376ea636815e35f7335b505
+- Content hash: 045fa3b3e52ffa5641089fc3f99f07c80080972170ea50aed5ac304fe6e5f8b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the shot-glass line?
+text=Five girls follows five, not a form of one.
 
 ### AUTHORED_ENGLISH `en-u22-044`
 
@@ -3107,10 +1973,10 @@ text=Which admitted line is the shot-glass line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5ef91c1ac2de0b80e1b3db02d86cdd0c21c854d0a39e248a89485cb377f9ced
+- Content hash: 3668e9ca6dd81687ce6b3d4dc2dffdc3ca8701414bf27cc6745bd43e5a451585
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the forty-one-year line?
+text=The frozen note says a form of one should be used in the proper form. This line is the other example with one.
 
 ### AUTHORED_ENGLISH `en-u22-045`
 
@@ -3120,10 +1986,10 @@ text=Does this row fail the forty-one-year line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa6b431fabab05ef97720e83845f631b7ff4f01a6499dcb0fa9f412f3ec4b743
+- Content hash: ce1786676e9cdacc59ed2f6e02218fb2f2003640935f554185b86b92fd053137
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the forty-one-year line?
+text=The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?
 
 ### AUTHORED_ENGLISH `en-u22-046`
 
@@ -3133,10 +1999,10 @@ text=Does this answer show the forty-one-year line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a89e7179d95a6b7b54b6ea845861a62d32b24404c0de639b5678a02f5872287
+- Content hash: e0f883a7b080e0914ad86db9f1d425d74b5236804e5cd6e6c82052d72065018a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the forty-one-year line?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u22-047`
 
@@ -3146,10 +2012,10 @@ text=Which admitted line is the forty-one-year line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d27d6b2c9bc4a5b5af4b0585a4f4a15f57e92d49fbb65e5858cc1bde75a4f73
+- Content hash: a829a88f3162b93f23b5c3227379c6aef75dc0a40ececc3cb346e15e16c7b144
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the sixty-nine-word line?
+text=The frozen examples place one boy with a form of one, not with two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-048`
 
@@ -3159,10 +2025,10 @@ text=Does this row fail the sixty-nine-word line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 664366cfcdd765a29a619762164208746a89a75e994a3edfb282fa3dacd67d9e
+- Content hash: 4df212eb7539dfed07396bff205a5b1e8624496f1fee5f5f64591eb6b182d2eb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the sixty-nine-word line?
+text=The frozen examples place five girls with the five group, not with two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-049`
 
@@ -3172,10 +2038,10 @@ text=Does this answer show the sixty-nine-word line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae800d71a57b666384276b323c339dbcaf40beb202976c82e088ef414893ec83
+- Content hash: dcb1e0f75abaca3bfeb49e9643038e0a3982fb2340158de5df55fb58044a8964
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the sixty-nine-word line?
+text=One boy follows a form of one, not two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-050`
 
@@ -3185,10 +2051,10 @@ text=Which admitted line is the sixty-nine-word line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e998a0a31e9fe5a04aa85d573977ce83964f0273e2948df104647c68c284fc20
+- Content hash: 6650ba94e1fd56ab608b48c2e4d8b2dbe140cdd7dab5c2ad86130a2f3481df75
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the first ordinal?
+text=Five girls follows the five group, not two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-051`
 
@@ -3198,10 +2064,10 @@ text=Does this row fail the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4752012c21acda887fef4c0d15a8a2dd6be6810d42dde99eb2907029d42e4058
+- Content hash: 229415ff534c99882f2d7bf375aeb50fca3c56afd82731f3a4ab8270ac7beffb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the first ordinal?
+text=The frozen note says two, three, and four require the following item to be presented together. This line is the three example.
 
 ### AUTHORED_ENGLISH `en-u22-052`
 
@@ -3211,10 +2077,10 @@ text=Does this answer show the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d8eda4c18e7bfb693de4e9978f677013d95bb05859306078bc6369bd472143c
+- Content hash: 8877a3c742f7853b7fcbcc73bb843936e14695a095fe4b7cb0e039c228decafe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the first ordinal?
+text=The frozen note groups two, three, and four together. Which admitted line is another example from that group?
 
 ### AUTHORED_ENGLISH `en-u22-053`
 
@@ -3224,10 +2090,10 @@ text=Which admitted line is the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0af8a004c6fa4f4b5065ee04bce3b5a8fde261308460f81f9b5cc0c238529b81
+- Content hash: 751ff93deef592a8e3b24488c0ccfae69c40d5992da77776102a622a6e48d173
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the second ordinal?
+text=The frozen examples place one boy with a form of one, not with the five group.
 
 ### AUTHORED_ENGLISH `en-u22-054`
 
@@ -3237,10 +2103,10 @@ text=Does this row fail the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd7f3311bad171d8e8e98c79c9a5ff72c3b84677d387569d5597220c917bdfa8
+- Content hash: 4b9fc30e46f65e2ddf7f14ce36a8c6eb5152aa259a046d8a475ea16da8680feb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the second ordinal?
+text=The frozen examples place two girls with two, not with the five group.
 
 ### AUTHORED_ENGLISH `en-u22-055`
 
@@ -3250,10 +2116,10 @@ text=Does this answer show the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ec2c93ed46ebf0eba693819ba86dff7c4aa24c626b07e333a1bb82d7bc549b4
+- Content hash: b5b5f873394a5ad2f16614e3d3b41f6adc7f3e62e364ae7bf8fdfdf6bdadc47c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the second ordinal?
+text=One boy follows a form of one, not the five group.
 
 ### AUTHORED_ENGLISH `en-u22-056`
 
@@ -3263,10 +2129,10 @@ text=Which admitted line is the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79ca09d27ff27ed4a0f86f07108594c02a5af939ee379de8a5e58ea966abe22e
+- Content hash: 73e5de08dc00efbc20743ab76f8a2d45975ea867dcfd3b7ca01aa36a0873fcfc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the third ordinal?
+text=Two girls follows two, not the five group.
 
 ### AUTHORED_ENGLISH `en-u22-057`
 
@@ -3276,10 +2142,10 @@ text=Does this row fail the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03b91900737adbb21fbc75b70874e71371be0c4fa4799b3915f820f9d4c8e769
+- Content hash: e2f0530f093dce008df07d7bed524d6f70bca0b1aa24caad3f3502d701b82521
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the third ordinal?
+text=The frozen note says these numerals require their attached items in the later group. This line is another example from that group.
 
 ### AUTHORED_ENGLISH `en-u22-058`
 
@@ -3289,10 +2155,10 @@ text=Does this answer show the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d1693369146ad6ea5d2ee83934746d8bbd4088955c40b506ad1b33f4101a9f4
+- Content hash: 62e1f961a8aa8a6b293411b3b0595a6b19c2d37172d276768be0af706fe1c615
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the third ordinal?
+text=The frozen note groups five through twenty together. Which admitted line is another example from that group?
 
 ### AUTHORED_ENGLISH `en-u22-059`
 
@@ -3302,10 +2168,10 @@ text=Which admitted line is the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c1a82a24ea74b69f10836686e63adbb81fd530b5a3c775d1fa66cfcc60f86f2
+- Content hash: d6b0e5ee709a1b52e6a01b1f276e1a9c832680084df249fdb2e706b7dac9cb71
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-boy line?
+text=Thirty-three shot glasses ends in three, so it is not the example that ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-060`
 
@@ -3315,10 +2181,10 @@ text=Does this row fail the one-boy line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd059dbf9bd920f687baf1e3223f843d0f652b273e9bde4a7d08f57ad212b917
+- Content hash: 9a4631972bda9b7dde63d063d02130fd60ab82707b93cee2bcb4772bd5fc986e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-boy line?
+text=Sixty-nine words ends in nine, so it is not the example that ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-061`
 
@@ -3328,10 +2194,10 @@ text=Does this answer show the one-boy line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0adae11413aa1286ad636e9fdf50846d6b7900dea0454fc93b236df01dcb123e
+- Content hash: 7f6ddfbe1966a1e097aaa69239deebd8e62721e0367e2b70b08e1e951eac46e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-boy line?
+text=This example ends in three, not in one.
 
 ### AUTHORED_ENGLISH `en-u22-062`
 
@@ -3341,10 +2207,10 @@ text=Which admitted line is the one-boy line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6d54e1bbe2e9fbf90aa62fb0037bf0c7e9dcb5379b435cb7ebc55dd89ca17c0
+- Content hash: 249e59b26295bbcc8773d345bb224fdb997f8cfe8a86bcdbbbebf93c89b7e033
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-girl line?
+text=This example ends in nine, not in one.
 
 ### AUTHORED_ENGLISH `en-u22-063`
 
@@ -3354,10 +2220,10 @@ text=Does this row fail the two-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f7905bf60e88af5ed31dc27ace36d647a5c5ec9764668754048222e3781d655
+- Content hash: bc96925eaa9b4cc680ddf5aebef95da5982aead14c5b6693d7e2e23659f2d8f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-girl line?
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-064`
 
@@ -3367,10 +2233,10 @@ text=Does this answer show the two-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56990314e88e2f25eb2cf588b49c4c3b5d2974dca6f420618f46d904ed97cecc
+- Content hash: 55d3ece593930481b26dbf5ad8ac27b75ea1c0c0921f15d8dd59c4f470217776
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-girl line?
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?
 
 ### AUTHORED_ENGLISH `en-u22-065`
 
@@ -3380,10 +2246,10 @@ text=Which admitted line is the two-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d86a11140e7d9e50549bbc7ad1f86a0762d87b685c9ba66814a560ba1c24a9e0
+- Content hash: 36ff04d234df3fc86f1d60c1df29c9e519bb7c132e2c9bfa4044b42c16eb878b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-girl line?
+text=Forty-one years ends in one, so it is not the example that ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-066`
 
@@ -3393,10 +2259,10 @@ text=Does this row fail the five-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7713f489230ca97d547a44557d1eaedf348562b21f973c5977a9f1a66c498cd
+- Content hash: ff0fb2fed54657e522906d767bf9b504b60c7d457dc6b9d1b3a9a32dcbdf37f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-girl line?
+text=Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-067`
 
@@ -3406,10 +2272,10 @@ text=Does this answer show the five-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa84717a93eb92f0fd469a0dc3599d8316feef379e38dfc320739fb69a5f8067
+- Content hash: 834cfd23e1463407192d6e8333b26b0c0d0b0a2d151720ce666646036cf3bb68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-girl line?
+text=This example ends in one, not in nine.
 
 ### AUTHORED_ENGLISH `en-u22-068`
 
@@ -3419,10 +2285,10 @@ text=Which admitted line is the five-girl line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 920f3d134c59a1536bfdbdc82199c1c23d933c0699a3d246cb7582456876d6cf
+- Content hash: ec4a8e0bdd61c08f3ba1eacb54fc6ad907df2b5eac93848068b19c39a6fb3a58
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted numeral rows
+text=This example ends in three, not in nine.
 
 ### AUTHORED_ENGLISH `en-u22-069`
 
@@ -3432,10 +2298,10 @@ text=Admitted numeral rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2f5c1471d1b658d3effab88c9970ab1010d58ecf0e09d7c83005ac73d678258
+- Content hash: 5baf4fa6a3bc6b0fbada9086d97c0329454f942595200f5a32df30d8116e1e0a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 22 uses frozen compound cardinal lines, ordinal lines, and item-form lines. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-070`
 
@@ -3445,10 +2311,10 @@ text=Proposed Unit 22 uses frozen compound cardinal lines, ordinal lines, and it
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f73b3bf97c9a52c1cab0bb66022f550fdd6441eb4c245f9195c0fd8386da6e5
+- Content hash: 87510b28b4b25e7c212a79d6b162444620cc59b1a6bda9c208b7bbb6d4c6fa24
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 22 in the copy you own. The app records do not replace that lesson.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?
 
 ### AUTHORED_ENGLISH `en-u22-071`
 
@@ -3458,10 +2324,10 @@ text=Open Lesson 22 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce774a73f9d8ce2b4993abcc564d890825cd7ac9150401bf1d7f646732b695b3
+- Content hash: 9664fb5d716faae113e3ad6555439b42b9edc989a8cb760a173c2d5f1c4e73f4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Sixty-nine words ends in nine, so it is not the example that ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-072`
 
@@ -3471,10 +2337,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dec6a5df663c445dfca4f848a76bc9bab714c31b003bb62656f96ee5e05e7372
+- Content hash: 82fdb970eeca7ddc7cb965f58f0f61046f257281f0938d9336222cd716fed34d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Forty-one years ends in one, so it is not the example that ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-073`
 
@@ -3484,10 +2350,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e008f5043f10c12f044f6ec493bd3d00bd3d975df3c82cc02e4f44d735ad643
+- Content hash: f8cd3e22b70e3cf34f717efb6250bc8ea7032f414026cd5ea5ea0b1d16394749
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=This example ends in nine, not in three.
 
 ### AUTHORED_ENGLISH `en-u22-074`
 
@@ -3497,10 +2363,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0cc7d78f87130be5c703d868e4cda9bbf368774a891533f2d5a5282c57530ca
+- Content hash: 3989e5cc9fb69cb0e7d652190749a3d4c480bedea2582e8be3196b93ddbfa65e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=This example ends in one, not in three.
 
 ### AUTHORED_ENGLISH `en-u22-075`
 
@@ -3510,10 +2376,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f994e913753dbaa411b244ab091240033360e67a29beaea0db5495472f1f6a89
+- Content hash: df2c751e821c8738d96ec5b07354d2abc54bda0bc9b7e9cfacfeb2a53c6f347b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-076`
 
@@ -3523,10 +2389,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c84ba2b80f694357d9359ab64b7903800fe100ab08af8df1e19b3efc8098cd6
+- Content hash: e0533b5969a2afea2a6cb05cdd82212cdc431352bf2c3a91fa85bae3e2ebf5cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 22 in your copy
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?
 
 ### AUTHORED_ENGLISH `en-u22-077`
 
@@ -3536,10 +2402,10 @@ text=Work Lesson 22 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9cfb587b044d7a31bf6cfd55224870281bc01a361d2a78e009cb06b5c060854
+- Content hash: 1c0d2c15ec376ad1337d01b439329c9e3e375fc1558e03cd0c96f893b5bee547
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Admitted numeral groups
 
 ### AUTHORED_ENGLISH `en-u22-078`
 
@@ -3549,10 +2415,10 @@ text=Do Lesson 22 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 318bd188ec53cd6ef61f97fb5fa4c14dc707127f3dc6bde2c9dc45725eb8ea78
+- Content hash: 9ded3a2b6c01371cf6375f992033fb7ef72166b9fe295bce10c6cdc6c0b8a9b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 22 in your copy and complete its lesson work.
+text=Proposed Unit 22 uses frozen item-form lines and last-digit examples. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u22-079`
 
@@ -3562,10 +2428,10 @@ text=Open Lesson 22 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9555921b4d5ee77e75c7da2f5d28242cb1ba897ca85c412687d747c69edbfe24
+- Content hash: 8dedd822a644dd47626b1248312652964d71832598bfe80d87ef71e12d7a32f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 22 book work
+text=Open Lesson 22 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u22-080`
 
@@ -3575,10 +2441,10 @@ text=Record Lesson 22 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd9037f79d435d8a736c9e26437a589fd6569823b744819ec728ba20c1e71396
+- Content hash: 8ad43851460d8c747e9e5815b130ecdb32b7485b754d667af3c99908a31c7571
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u22-081`
 
@@ -3588,10 +2454,10 @@ text=When you have done Lesson 22 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5dee4695f84248430b1450eff20f8c5863f031f6da57cf7b41d1819d4e7cbd24
+- Content hash: 083f0f151243fbc041ee29746577a27550cb355751f1340dd74c9a489f339f80
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 22 work in your copy.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u22-082`
 
@@ -3601,10 +2467,10 @@ text=Self-attest only after the Lesson 22 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e63477de9a50570c74b1da8ade4d8af694bd172c46e19b69393249c38e6f73fa
+- Content hash: e1e9654a98dfd085630841423de66108096d4b703c470423b5f773a234599164
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Declined quantity forms stay in the copy you own
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u22-083`
 
@@ -3614,10 +2480,10 @@ text=Declined quantity forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbfd38b2cc6ff08204cd4b603f9e9cc20f2587c809d25bc7a2b425d4fcf07d6b
+- Content hash: 34bbf0618d9388d092fbafed7a5034a4bed9f635fb9bbafd4c0914f0fc53521c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Declined quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u22-084`
 
@@ -3627,10 +2493,10 @@ text=Declined quantity forms stay in the copy you own. The frozen number rows do
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e49a8ecf39f7b6c8d38c6f8682f0bf841ddd123605c37c38a9eee3c0685f0b16
+- Content hash: 930816769dca30ebf12e3022b7b28a2440f221985537b60953b59f95d065a212
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Both-forms stay in the copy you own
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u22-085`
 
@@ -3640,10 +2506,10 @@ text=Both-forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f1af28db9c7c33d0542fbc90b94f187a7b6675088361e5d5bedf83a98f2323a
+- Content hash: 2080f892ba6a46cde3dc26018c4acb4626c1a5ff001979ab767b655258185350
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Both-forms stay in the copy you own. The frozen number rows do not supply that pattern.
+text=Work Lesson 22 in your copy
 
 ### AUTHORED_ENGLISH `en-u22-086`
 
@@ -3653,10 +2519,10 @@ text=Both-forms stay in the copy you own. The frozen number rows do not supply t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57b35bab63fce1a741f1ff7ae4831f7684efa02da01680b25c4bb1af7c669f66
+- Content hash: b38931a5a2ca8292bb6959324dab1f54592377a7756ed84d8f907ba93847489f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=One-and-a-half forms stay in the copy you own
+text=Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u22-087`
 
@@ -3666,10 +2532,10 @@ text=One-and-a-half forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5cc05552c160d2af63eed7556a4f6505b9148544feb1ee9ea1e274736fb77488
+- Content hash: ec87e89b41455053fbb180325aba4b54c712db9173b7a92b90164c7c8fa8b3aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=One-and-a-half forms stay in the copy you own. The frozen number rows do not supply that pattern.
+text=Open Lesson 22 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u22-088`
 
@@ -3679,10 +2545,10 @@ text=One-and-a-half forms stay in the copy you own. The frozen number rows do no
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef5e6f729e6d5995d6ba10e8b1a3b44d16566a65c584346f962b18e084a5779e
+- Content hash: 56630359c1936cf63598318228d2e1c8491d1231645ca35dbc69a5f37908e5bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Collective quantity forms stay in the copy you own
+text=Record Lesson 22 book work
 
 ### AUTHORED_ENGLISH `en-u22-089`
 
@@ -3692,7 +2558,150 @@ text=Collective quantity forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80271005814ede77758b8612e4a77e03b4ff81281d4f018ded230901b1a6ed4a
+- Content hash: dc7e692c41c9dd20f97dc5d998526a9936d776437b31d1e1105cf45221f626e2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u22-090`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 374055bfee024246f3ed39308ee8a978ce16b1fc228a1180b6303e2fc61b32ca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 22 work in your copy.
+
+### AUTHORED_ENGLISH `en-u22-091`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d3c611aa11854dae4ec41c3b8a03d2e9fff93b38d58da3142ea4064efb45242c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Ordinal list position stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u22-092`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cde051f1118c83410cc6f8065be40a3c231d724afc12ab33948ec799107d3835
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Ordinal list position stays in the copy you own. A numbered list does not by itself supply a checked distinction.
+
+### AUTHORED_ENGLISH `en-u22-093`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f30a8809e7e000fa8e8aaf35a909fe78ffd41748da28b0523c98cdefef8d2352
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Declined quantity forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u22-094`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 322fa3615f8aff84f2a513d1a9ca7ed943c1feed3a110b96aa202e2fe88fc884
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Declined quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.
+
+### AUTHORED_ENGLISH `en-u22-095`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8a28a411984cec5e8bdb5d128482fc614410ff4ce8c579127f59440310fb840c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Both-forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u22-096`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 88c89b790904bb431e320ddc1c584534f89f98af11776b78ba9d6ad8dd76d052
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Both-forms stay in the copy you own. The frozen number rows do not supply that pattern.
+
+### AUTHORED_ENGLISH `en-u22-097`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 17de72dddb3f3cc24e8ee3e66e7e8080ef45a38e231e3d3d55023c5d0e69da6f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=One-and-a-half forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u22-098`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: efd43e883b488b40ea6ca96c28b036235aea3bbea492e2ade1d3ff834446d98d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=One-and-a-half forms stay in the copy you own. The frozen number rows do not supply that pattern.
+
+### AUTHORED_ENGLISH `en-u22-099`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e95857964b30f68bafe3f9b7f2c1d5d799a3e048b3a2df2b2000e39eb5aae39c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Collective quantity forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u22-100`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fb0c47a70c2f989d04132e3cf9bb81c9a2c6248241a3d731211a5453cd80c450
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Collective quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.
@@ -3757,18 +2766,21 @@ permitsAppUse=true
 
 ## Instructional relationships
 
-- `obj-u22-cardinals` INSTRUCTION `u22-st-orient`
-- `obj-u22-cardinals` INSTRUCTION `u22-st-teach-cardinals-1`
-- `obj-u22-cardinals` INSTRUCTION `u22-st-teach-cardinals-2`
-- `obj-u22-cardinals` INSTRUCTION `u22-st-teach-cardinals-3`
-- `obj-u22-cardinals` EXAMPLE `ex-u22-cardinals-0`
-- `obj-u22-cardinals` EXAMPLE `ex-u22-cardinals-1`
-- `obj-u22-cardinals` EXAMPLE `ex-u22-cardinals-2`
-- `obj-u22-cardinals` EXAMPLE `ex-u22-cardinals-3`
-- `obj-u22-cardinals` PRACTICE `u22-st-guided-cardinals-1`
-- `obj-u22-cardinals` CHECK `u22-i-cardinals-1`
-- `obj-u22-cardinals` CHECK `u22-i-cardinals-2`
-- `obj-u22-cardinals` REMEDIATION `u22-st-rem-cardinals`
+- `obj-u22-noun-forms` INSTRUCTION `u22-st-orient`
+- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-1`
+- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-2`
+- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-3`
+- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-4`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-0`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-1`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-2`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-3`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-4`
+- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-5`
+- `obj-u22-noun-forms` PRACTICE `u22-st-guided-noun-forms-1`
+- `obj-u22-noun-forms` CHECK `u22-i-noun-forms-1`
+- `obj-u22-noun-forms` CHECK `u22-i-noun-forms-2`
+- `obj-u22-noun-forms` REMEDIATION `u22-st-rem-noun-forms`
 - `obj-u22-compounds` INSTRUCTION `u22-st-orient`
 - `obj-u22-compounds` INSTRUCTION `u22-st-teach-compounds-1`
 - `obj-u22-compounds` INSTRUCTION `u22-st-teach-compounds-2`
@@ -3780,55 +2792,35 @@ permitsAppUse=true
 - `obj-u22-compounds` CHECK `u22-i-compounds-1`
 - `obj-u22-compounds` CHECK `u22-i-compounds-2`
 - `obj-u22-compounds` REMEDIATION `u22-st-rem-compounds`
-- `obj-u22-ordinals` INSTRUCTION `u22-st-orient`
-- `obj-u22-ordinals` INSTRUCTION `u22-st-teach-ordinals-1`
-- `obj-u22-ordinals` INSTRUCTION `u22-st-teach-ordinals-2`
-- `obj-u22-ordinals` INSTRUCTION `u22-st-teach-ordinals-3`
-- `obj-u22-ordinals` EXAMPLE `ex-u22-ordinals-0`
-- `obj-u22-ordinals` EXAMPLE `ex-u22-ordinals-1`
-- `obj-u22-ordinals` EXAMPLE `ex-u22-ordinals-2`
-- `obj-u22-ordinals` PRACTICE `u22-st-guided-ordinals-1`
-- `obj-u22-ordinals` CHECK `u22-i-ordinals-1`
-- `obj-u22-ordinals` CHECK `u22-i-ordinals-2`
-- `obj-u22-ordinals` REMEDIATION `u22-st-rem-ordinals`
-- `obj-u22-noun-forms` INSTRUCTION `u22-st-orient`
-- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-1`
-- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-2`
-- `obj-u22-noun-forms` INSTRUCTION `u22-st-teach-noun-forms-3`
-- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-0`
-- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-1`
-- `obj-u22-noun-forms` EXAMPLE `ex-u22-noun-forms-2`
-- `obj-u22-noun-forms` PRACTICE `u22-st-guided-noun-forms-1`
-- `obj-u22-noun-forms` CHECK `u22-i-noun-forms-1`
-- `obj-u22-noun-forms` CHECK `u22-i-noun-forms-2`
-- `obj-u22-noun-forms` REMEDIATION `u22-st-rem-noun-forms`
 - `obj-u22-book` INSTRUCTION `u22-st-book-work`
 - `obj-u22-book` INSTRUCTION `u22-st-book`
+- `obj-u22-ordinals` INSTRUCTION `u22-st-gap-ordinals`
 - `obj-u22-declension` INSTRUCTION `u22-st-gap-declension`
 - `obj-u22-both-forms` INSTRUCTION `u22-st-gap-both-forms`
 - `obj-u22-half-forms` INSTRUCTION `u22-st-gap-half-forms`
 - `obj-u22-collective` INSTRUCTION `u22-st-gap-collective`
-- `u22-s-orient` OBJECTIVE `obj-u22-cardinals`
-- `u22-s-orient` OBJECTIVE `obj-u22-compounds`
-- `u22-s-orient` OBJECTIVE `obj-u22-ordinals`
 - `u22-s-orient` OBJECTIVE `obj-u22-noun-forms`
+- `u22-s-orient` OBJECTIVE `obj-u22-compounds`
 - `u22-s-orient` OBJECTIVE `obj-u22-book`
 - `u22-st-orient` REFERENCE `ref-u2125-attribution`
-- `u22-s-cardinals` OBJECTIVE `obj-u22-cardinals`
-- `u22-st-teach-cardinals-1` EXAMPLE `ex-u22-cardinals-0`
-- `u22-st-teach-cardinals-1` EXAMPLE `ex-u22-cardinals-1`
-- `u22-st-teach-cardinals-1` REFERENCE `ref-u2125-attribution`
-- `u22-st-guided-cardinals-1` REMEDIATION `u22-st-rem-cardinals`
-- `u22-st-guided-cardinals-1` ITEM `u22-g-cardinals-0`
-- `u22-st-teach-cardinals-2` REFERENCE `ref-u2125-attribution`
-- `u22-st-teach-cardinals-3` EXAMPLE `ex-u22-cardinals-2`
-- `u22-st-teach-cardinals-3` EXAMPLE `ex-u22-cardinals-3`
-- `u22-st-teach-cardinals-3` REFERENCE `ref-u2125-attribution`
-- `u22-st-rem-cardinals` EXAMPLE `ex-u22-cardinals-0`
-- `u22-st-rem-cardinals` EXAMPLE `ex-u22-cardinals-1`
-- `u22-st-check-cardinals` REMEDIATION `u22-st-rem-cardinals`
-- `u22-st-check-cardinals` ITEM `u22-i-cardinals-1`
-- `u22-st-check-cardinals` ITEM `u22-i-cardinals-2`
+- `u22-s-noun-forms` OBJECTIVE `obj-u22-noun-forms`
+- `u22-st-teach-noun-forms-1` EXAMPLE `ex-u22-noun-forms-0`
+- `u22-st-teach-noun-forms-1` EXAMPLE `ex-u22-noun-forms-1`
+- `u22-st-teach-noun-forms-1` REFERENCE `ref-u2125-attribution`
+- `u22-st-guided-noun-forms-1` REMEDIATION `u22-st-rem-noun-forms`
+- `u22-st-guided-noun-forms-1` ITEM `u22-g-noun-forms-0`
+- `u22-st-teach-noun-forms-2` REFERENCE `ref-u2125-attribution`
+- `u22-st-teach-noun-forms-3` EXAMPLE `ex-u22-noun-forms-2`
+- `u22-st-teach-noun-forms-3` EXAMPLE `ex-u22-noun-forms-3`
+- `u22-st-teach-noun-forms-3` REFERENCE `ref-u2125-attribution`
+- `u22-st-teach-noun-forms-4` EXAMPLE `ex-u22-noun-forms-4`
+- `u22-st-teach-noun-forms-4` EXAMPLE `ex-u22-noun-forms-5`
+- `u22-st-teach-noun-forms-4` REFERENCE `ref-u2125-attribution`
+- `u22-st-rem-noun-forms` EXAMPLE `ex-u22-noun-forms-0`
+- `u22-st-rem-noun-forms` EXAMPLE `ex-u22-noun-forms-1`
+- `u22-st-check-noun-forms` REMEDIATION `u22-st-rem-noun-forms`
+- `u22-st-check-noun-forms` ITEM `u22-i-noun-forms-1`
+- `u22-st-check-noun-forms` ITEM `u22-i-noun-forms-2`
 - `u22-s-compounds` OBJECTIVE `obj-u22-compounds`
 - `u22-st-teach-compounds-1` EXAMPLE `ex-u22-compounds-0`
 - `u22-st-teach-compounds-1` EXAMPLE `ex-u22-compounds-1`
@@ -3843,36 +2835,10 @@ permitsAppUse=true
 - `u22-st-check-compounds` REMEDIATION `u22-st-rem-compounds`
 - `u22-st-check-compounds` ITEM `u22-i-compounds-1`
 - `u22-st-check-compounds` ITEM `u22-i-compounds-2`
-- `u22-s-ordinals` OBJECTIVE `obj-u22-ordinals`
-- `u22-st-teach-ordinals-1` EXAMPLE `ex-u22-ordinals-0`
-- `u22-st-teach-ordinals-1` EXAMPLE `ex-u22-ordinals-1`
-- `u22-st-teach-ordinals-1` REFERENCE `ref-u2125-attribution`
-- `u22-st-guided-ordinals-1` REMEDIATION `u22-st-rem-ordinals`
-- `u22-st-guided-ordinals-1` ITEM `u22-g-ordinals-0`
-- `u22-st-teach-ordinals-2` REFERENCE `ref-u2125-attribution`
-- `u22-st-teach-ordinals-3` EXAMPLE `ex-u22-ordinals-2`
-- `u22-st-teach-ordinals-3` REFERENCE `ref-u2125-attribution`
-- `u22-st-rem-ordinals` EXAMPLE `ex-u22-ordinals-0`
-- `u22-st-rem-ordinals` EXAMPLE `ex-u22-ordinals-1`
-- `u22-st-check-ordinals` REMEDIATION `u22-st-rem-ordinals`
-- `u22-st-check-ordinals` ITEM `u22-i-ordinals-1`
-- `u22-st-check-ordinals` ITEM `u22-i-ordinals-2`
-- `u22-s-noun-forms` OBJECTIVE `obj-u22-noun-forms`
-- `u22-st-teach-noun-forms-1` EXAMPLE `ex-u22-noun-forms-0`
-- `u22-st-teach-noun-forms-1` EXAMPLE `ex-u22-noun-forms-1`
-- `u22-st-teach-noun-forms-1` REFERENCE `ref-u2125-attribution`
-- `u22-st-guided-noun-forms-1` REMEDIATION `u22-st-rem-noun-forms`
-- `u22-st-guided-noun-forms-1` ITEM `u22-g-noun-forms-0`
-- `u22-st-teach-noun-forms-2` REFERENCE `ref-u2125-attribution`
-- `u22-st-teach-noun-forms-3` EXAMPLE `ex-u22-noun-forms-2`
-- `u22-st-teach-noun-forms-3` REFERENCE `ref-u2125-attribution`
-- `u22-st-rem-noun-forms` EXAMPLE `ex-u22-noun-forms-0`
-- `u22-st-rem-noun-forms` EXAMPLE `ex-u22-noun-forms-1`
-- `u22-st-check-noun-forms` REMEDIATION `u22-st-rem-noun-forms`
-- `u22-st-check-noun-forms` ITEM `u22-i-noun-forms-1`
-- `u22-st-check-noun-forms` ITEM `u22-i-noun-forms-2`
 - `u22-s-book` OBJECTIVE `obj-u22-book`
 - `u22-st-book-work` REFERENCE `ref-u2125-attribution`
+- `u22-s-gap-ordinals` OBJECTIVE `obj-u22-ordinals`
+- `u22-st-gap-ordinals` REFERENCE `ref-u2125-attribution`
 - `u22-s-gap-declension` OBJECTIVE `obj-u22-declension`
 - `u22-st-gap-declension` REFERENCE `ref-u2125-attribution`
 - `u22-s-gap-both-forms` OBJECTIVE `obj-u22-both-forms`
@@ -3881,14 +2847,6 @@ permitsAppUse=true
 - `u22-st-gap-half-forms` REFERENCE `ref-u2125-attribution`
 - `u22-s-gap-collective` OBJECTIVE `obj-u22-collective`
 - `u22-st-gap-collective` REFERENCE `ref-u2125-attribution`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-0-en`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-0-ru`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-1-en`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-1-ru`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-2-en`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-2-ru`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-3-en`
-- `obj-u22-cardinals` PROVENANCE `prov-ex-u22-cardinals-3-ru`
 - `obj-u22-compounds` PROVENANCE `prov-ex-u22-compounds-0-en`
 - `obj-u22-compounds` PROVENANCE `prov-ex-u22-compounds-0-ru`
 - `obj-u22-compounds` PROVENANCE `prov-ex-u22-compounds-1-en`
@@ -3901,20 +2859,15 @@ permitsAppUse=true
 - `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-1-ru`
 - `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-2-en`
 - `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-2-ru`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-0-en`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-0-ru`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-1-en`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-1-ru`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-2-en`
-- `obj-u22-ordinals` PROVENANCE `prov-ex-u22-ordinals-2-ru`
-- `obj-u22-cardinals` PROVENANCE `prov-u22-cardinals-rem`
-- `obj-u22-cardinals` PROVENANCE `prov-u22-cardinals-rem-r0`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-3-en`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-3-ru`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-4-en`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-4-ru`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-5-en`
+- `obj-u22-noun-forms` PROVENANCE `prov-ex-u22-noun-forms-5-ru`
 - `obj-u22-compounds` PROVENANCE `prov-u22-compounds-rem`
-- `obj-u22-compounds` PROVENANCE `prov-u22-compounds-rem-r0`
 - `obj-u22-noun-forms` PROVENANCE `prov-u22-noun-forms-rem`
 - `obj-u22-noun-forms` PROVENANCE `prov-u22-noun-forms-rem-r0`
-- `obj-u22-ordinals` PROVENANCE `prov-u22-ordinals-rem`
-- `obj-u22-ordinals` PROVENANCE `prov-u22-ordinals-x-0`
 
 ## Book-directed experiences
 
@@ -3924,6 +2877,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
+- `u22-st-gap-ordinals`
 - `u22-st-gap-declension`
 - `u22-st-gap-both-forms`
 - `u22-st-gap-half-forms`

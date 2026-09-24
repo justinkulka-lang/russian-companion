@@ -11,12 +11,12 @@ Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 2deaebc80b58499f312543e82849408c85e6eb66
-- Unit content-review SHA-256: 42988ecb7bdc16e5545b22be4dc03d48500f06ffb076c49ff8ae8180ec82bb32
+- Curriculum source commit: fd1f6497b235208786d0f720d71a248a22f8d69e
+- Unit content-review SHA-256: 80c584f75c59e98b7b020feda3ecf1a89cef88cc4f62b93f971ef86597395a84
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: dae62d02feae1d2a1e5fe02dd216db6dc549421bf1ecc4cc8c7e3396614c1005
-- Review-package SHA-256: 54af069275166f431c12da6d045e4a319327b657f031d7ccf537d0ab26f9e26a
-- Repository source SHA-256: 9189b52de515ad4629245abce45044b5340220b1c74167245d3d59f6436ba839
+- Pack content-review SHA-256: 9dff789084710c14ab4b12f82cd1520a635048cba2e7157e6159312707c43b8d
+- Review-package SHA-256: 521df4fbe57d2b100c6f264fede596f10a31a728abd4fb829b01ae45385cb7c6
+- Repository source SHA-256: fd292b8a2e1ba0029b808c978cbc87e34f49c1389c811abe9bcfa940f14bb427
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c15d4d8746495636fe59078349e7ac3cf6d7415199cebb5a6334fb0891ac3271
+- Content hash: 5298c7b6f3b2dd0c98bde90222664740db744fa66c66402ff8c52861556bb955
 
-title=Choose the admitted personal-name form
+title=Choose the admitted form paired with the shown name words
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-name-structure-1,u25-st-teach-name-structure-2,u25-st-teach-name-structure-3
@@ -132,9 +132,9 @@ remediation=u25-st-rem-name-structure
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 763c714d64b51a6caf56519ef36aba34227f274a5fb9c6bc0fca3e660f9416b9
+- Content hash: bbb6b2931bf4b2b2573898f3062c4c49bac3cd1392a087adc1a52f6d8b868668
 
-title=Choose the admitted listed diminutive pair
+title=Choose the admitted short form paired with the shown name
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-diminutives-1,u25-st-teach-diminutives-2,u25-st-teach-diminutives-3
@@ -151,9 +151,9 @@ remediation=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3eae2ca5afaa25d70948f7807349dc31362792ff6a3330a9ad86d95dfa1aee11
+- Content hash: 53a626e616f80c4be7178b5bcddd121d0077bd18f62d908e8fc02faa0c872966
 
-title=Choose the admitted courtesy line
+title=Choose the admitted form paired with the shown courtesy word
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3
@@ -170,13 +170,13 @@ remediation=u25-st-rem-courtesy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f382e2fcb43f6909827319c74ca4a24e7bbc9b2892dd88df9e1ae1960f7a136b
+- Content hash: 4c2f71c9406feaf0061a1737fb6858c16109b0e917ead36458a3ab5c0594ea6a
 
-title=Choose the admitted formal-name question
+title=Choose the admitted form paired with the shown name question or reply
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-name-question-1,u25-st-teach-name-question-2,u25-st-teach-name-question-3
-examples=ex-u25-name-question-0,ex-u25-name-question-1,ex-u25-name-question-2
+examples=ex-u25-name-question-0,ex-u25-name-question-1,ex-u25-name-question-2,ex-u25-name-question-3
 practice=u25-st-guided-name-question-1
 checks=u25-i-name-question-1,u25-i-name-question-2
 remediation=u25-st-rem-name-question
@@ -283,9 +283,9 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 42e0fd381ca9fc66c56ed50536e863777605f3aaf0a29ceb90805f73c56daf33
+- Content hash: 0597959254af3c2e9a2c2f99a0cabe6a048ba080b0c6fadebd136066c0053586
 
-title=Choose the admitted personal-name form
+title=Choose the admitted form paired with the shown name words
 estimatedMinutes=12
 objectives=obj-u25-name-structure
 steps=u25-st-teach-name-structure-1,u25-st-guided-name-structure-1,u25-st-teach-name-structure-2,u25-st-teach-name-structure-3,u25-st-rem-name-structure,u25-st-check-name-structure
@@ -430,9 +430,9 @@ remediationStepId=u25-st-rem-name-structure
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 012d4ca2ed280c05e075c1ce8849ec43d61df533458fbe408a85a5cb5af65455
+- Content hash: ff67b755cf26dde838156c03ab13acc61178a6f927944b7ecfa2349d4e1d5d73
 
-title=Choose the admitted listed diminutive pair
+title=Choose the admitted short form paired with the shown name
 estimatedMinutes=12
 objectives=obj-u25-diminutives
 steps=u25-st-teach-diminutives-1,u25-st-guided-diminutives-1,u25-st-teach-diminutives-2,u25-st-teach-diminutives-3,u25-st-rem-diminutives,u25-st-check-diminutives
@@ -445,11 +445,11 @@ steps=u25-st-teach-diminutives-1,u25-st-guided-diminutives-1,u25-st-teach-diminu
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2fe458a49d610db7a41c0d03594dfe8ae0ad97bd17e5210f2aff4a182ed3bd2e
+- Content hash: 4c3f604018f6f5d97bb16098b7756004b9666f0d35fe25ffe064b0972b13b7a9
 
 kind=TEACH
 title=Admitted lines
-body=Александр — Sasha for Alexander. Алексей — Alyosha for Alexei. 
+body=Александр — Alexander. Алексей — Alexei. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -511,11 +511,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 87c1f032445be2778082167d703263296992eb060dca9ee9671d7ee067c8ca3a
+- Content hash: 911d7b2dd9949f05a6b1857f0255d420c8e35eae74a86fab249478cf3771099c
 
 kind=TEACH
 title=Admitted lines
-body=Дмитрий — Dima for Dmitri. 
+body=Дмитрий — Dmitri. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -577,9 +577,9 @@ remediationStepId=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e9ddbed93c538cf4bbadb88d464e733e5c1d8bc755033567422f45a253427f76
+- Content hash: 81d8c1bec5dc7d597d4380ca8b199670067f41cd7985c43fa7c8bee7a9a8c4ae
 
-title=Choose the admitted courtesy line
+title=Choose the admitted form paired with the shown courtesy word
 estimatedMinutes=12
 objectives=obj-u25-courtesy
 steps=u25-st-teach-courtesy-1,u25-st-guided-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3,u25-st-rem-courtesy,u25-st-check-courtesy
@@ -724,9 +724,9 @@ remediationStepId=u25-st-rem-courtesy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6b1f5cb91808aff1ac2937d4d7fde5dae714f8c9b62a6a0937a955aa353079b8
+- Content hash: e80f4af7c482f6aa61572717aed52d9855eecf4fa4eb11a2514dc54b73d4ede6
 
-title=Choose the admitted formal-name question
+title=Choose the admitted form paired with the shown name question or reply
 estimatedMinutes=12
 objectives=obj-u25-name-question
 steps=u25-st-teach-name-question-1,u25-st-guided-name-question-1,u25-st-teach-name-question-2,u25-st-teach-name-question-3,u25-st-rem-name-question,u25-st-check-name-question
@@ -739,11 +739,11 @@ steps=u25-st-teach-name-question-1,u25-st-guided-name-question-1,u25-st-teach-na
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 596aafb46874954fbfd3b33bd04d6c9d3f89b85b6b65b03ec5de8f0d020b5ff7
+- Content hash: 714878f3144439e50a111f592e9d6f33dcdf97a4613441002f9f445737ad5d42
 
 kind=TEACH
 title=Admitted lines
-body=Как Вас зову́т? — What is your name? Меня́ зову́т — My name is. 
+body=Как Вас зову́т? — What is your name? Меня́ зову́т — My name is... 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -805,15 +805,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 15d9349e05c06c037e5a3752972f87be5ca48586dc40465629c0c17effdc05e1
+- Content hash: 43752853fedc726426d59b61429fe9a305d5bdf281cd30c2eb2e9e86ccd3f793
 
 kind=TEACH
 title=Admitted lines
-body=Прошу́ проще́ния — I'm sorry / excuse me (formal). 
+body=Прошу́ проще́ния — I'm sorry / excuse me (formal). Как дела́? — How are you? 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
-examples=ex-u25-name-question-2
+examples=ex-u25-name-question-2,ex-u25-name-question-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1072,12 +1072,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec0ae8c001933143b6d66cb78c93dfa1dc58a21b3a207330de9facbdd77e51bd
+- Content hash: 02b78f6789e0a4e6213f30bf779695f259aec4eda5a3059935721d1489150a54
 
 kind=LEXICAL
 letterId=
 display=Александр
-note=Sasha for Alexander
+note=Alexander
 objectiveId=obj-u25-diminutives
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1089,12 +1089,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ad7df631280ef0359c30d30600427383c5c81c141186d3a6ab6a727680fb774
+- Content hash: 8599b154e712b1843441d77f5aa77e829c5064f9aa31b1d81e600068a0ff5ab0
 
 kind=LEXICAL
 letterId=
 display=Алексей
-note=Alyosha for Alexei
+note=Alexei
 objectiveId=obj-u25-diminutives
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1106,12 +1106,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 988c1bac2bbd06bab6d060614879165759587d9fdfb6324e8ce49ceac40f67d8
+- Content hash: 556f9a8d48e4139c9aebc1c4d4859a0e2cb6cf5f836e05d6d2889b9c7b0d2419
 
 kind=LEXICAL
 letterId=
 display=Дмитрий
-note=Dima for Dmitri
+note=Dmitri
 objectiveId=obj-u25-diminutives
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1191,12 +1191,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 431f971f5266af1fa175186831b6b19ad87cecaf45aceda83b5dff3cb657d040
+- Content hash: 8afbfb931d0c4973b72cb7be10d179c17f3f38af4094e3303ddf88b40de9a796
 
 kind=LEXICAL
 letterId=
 display=Меня́ зову́т
-note=My name is
+note=My name is...
 objectiveId=obj-u25-name-question
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1217,6 +1217,23 @@ note=I'm sorry / excuse me (formal)
 objectiveId=obj-u25-name-question
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u25-name-question-3`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-name-question
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0aefb945ac58a2d5ff326de936832a18797547357dfd76bd7c7c70118f22af28
+
+kind=LEXICAL
+letterId=
+display=Как дела́?
+note=How are you?
+objectiveId=obj-u25-name-question
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u25-g-name-structure-0`
 
 - Objectives: obj-u25-name-structure
@@ -1225,31 +1242,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb768605b37de472205c82901bed4c98959ed30626accd38e7008c380d660f15
+- Content hash: 7330b2ae6b828f16c50f001ac3ca34188bc09ea63fab0d3266fe86d3740a6f58
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the first-name form?
-promptLetter=отчество
-options=имя | фамилия | ович
+prompt=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
+promptLetter=first name
+options=имя | отчество | фамилия | ович
 answer=имя
-feedback=Does this answer show the first-name form? имя.
+feedback=The frozen sentence says Russians use three names and pairs the shown words with this form. имя.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the first-name form? | Does this row fail the first-name form?
-testedFeature=FIRST_NAME_FORM
+distractorRationales= | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
+testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-name-structure-0-ru
-distractorSourceIds= | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
-distractorDifference= | Does this row fail the first-name form? | Does this row fail the first-name form?
-whyAnswerDemonstratesObjective=Does this answer show the first-name form?
-contrastMembers=имя | фамилия | ович
+distractorSourceIds= | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
+distractorDifference= | This form is paired with patronymic name. | This form is paired with family name. | This ending means son of, rather than the paired form.
+whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs the shown words with this form.
+contrastMembers=имя | отчество | фамилия | ович
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
+relationParticipantIds=prov-ex-u25-name-structure-0-en | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
 responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u25-g-diminutives-0`
@@ -1260,31 +1277,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4c28127c4d4fcec501b0f2859674a83c984a62aa9b8f3ce9320bbd8dd06bdcb
+- Content hash: b59f9ca7c0b9decce2a21e224c30f850ce7ed59a5d783ee8e45807095f95c7cf
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the Alexander diminutive?
-promptLetter=Александр
-options=Sasha for Alexander | Alyosha for Alexei | Dima for Dmitri
-answer=Sasha for Alexander
-feedback=Does this answer show the Alexander diminutive? Sasha for Alexander.
+prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+promptLetter=Alexander
+options=Sasha | Alyosha | Dima
+answer=Sasha
+feedback=The frozen list includes Sasha for Alexander as the pair for the shown name. Sasha.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the Alexander diminutive? | Does this row fail the Alexander diminutive?
-testedFeature=ALEXANDER_DIMINUTIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | The frozen list pairs Alyosha for Alexei with a different name. | The frozen list pairs Dima for Dmitri with a different name.
+testedFeature=SHORT_FORM_PAIR
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
-answerSourceIds=prov-ex-u25-diminutives-0-en
-distractorSourceIds= | prov-ex-u25-diminutives-1-en | prov-ex-u25-diminutives-2-en
-distractorDifference= | Does this row fail the Alexander diminutive? | Does this row fail the Alexander diminutive?
-whyAnswerDemonstratesObjective=Does this answer show the Alexander diminutive?
-contrastMembers=Sasha for Alexander | Alyosha for Alexei | Dima for Dmitri
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u25-diminutives-0-ru | prov-ex-u25-diminutives-0-en | prov-ex-u25-diminutives-1-en | prov-ex-u25-diminutives-2-en
+answerSourceIds=prov-u25-diminutives-x-0
+distractorSourceIds= | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-2
+distractorDifference= | Alyosha is paired with Alexei, not with the shown name. | Dima is paired with Dmitri, not with the shown name.
+whyAnswerDemonstratesObjective=The frozen list includes Sasha for Alexander as the pair for the shown name.
+contrastMembers=Sasha | Alyosha | Dima
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u25-diminutives-0-en | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u25-g-courtesy-0`
@@ -1295,31 +1312,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70c5d7ebc6785b608e2359c3a9a106f62af77e2f276ac5f7de109ebd2577bec0
+- Content hash: e9dc87d9bd97cd3cc78e14b45c0df166c45ba2ed8ab4258e89c91df47a307f12
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the please line?
-promptLetter=Спаси́бо
-options=Пожа́луйста | Извини́те
+prompt=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+promptLetter=please
+options=Пожа́луйста | Спаси́бо | Извини́те
 answer=Пожа́луйста
-feedback=Does this answer show the please line? Пожа́луйста.
+feedback=The frozen list says please; also used for a request and pairs that word with this form. Пожа́луйста.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the please line?
-testedFeature=PLEASE_LINE
+distractorRationales= | The frozen list pairs thanks with a different form. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-courtesy-0-ru
-distractorSourceIds= | prov-ex-u25-courtesy-2-ru
-distractorDifference= | Does this row fail the please line?
-whyAnswerDemonstratesObjective=Does this answer show the please line?
-contrastMembers=Пожа́луйста | Извини́те
+distractorSourceIds= | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
+distractorDifference= | Thanks is a different courtesy word. | The informal apology is a different courtesy word.
+whyAnswerDemonstratesObjective=The frozen list says please; also used for a request and pairs that word with this form.
+contrastMembers=Пожа́луйста | Спаси́бо | Извини́те
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru
+relationParticipantIds=prov-ex-u25-courtesy-0-en | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
 responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u25-g-name-question-0`
@@ -1330,31 +1347,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af323d6e112e6a9dfa51c8dc702e9b9cc16fb2021d8ddf97673f19b9e8b90934
+- Content hash: 5fa2218280f832a67e6c5678e8d897de561cd8b5526baa146a6804b7e5050deb
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the name-question line?
-promptLetter=Меня́ зову́т
-options=Как Вас зову́т? | Прошу́ проще́ния
+prompt=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+promptLetter=What is your name?
+options=Как Вас зову́т? | Меня́ зову́т | Прошу́ проще́ния
 answer=Как Вас зову́т?
-feedback=Does this answer show the name-question line? Как Вас зову́т?
+feedback=The frozen list pairs What is your name? with this form and My name is... with the reply. Как Вас зову́т?
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the name-question line?
-testedFeature=NAME_QUESTION_LINE
+distractorRationales= | The frozen list pairs My name is... with the reply, not with the shown question. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+testedFeature=NAME_QUESTION_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-name-question-0-ru
-distractorSourceIds= | prov-ex-u25-name-question-2-ru
-distractorDifference= | Does this row fail the name-question line?
-whyAnswerDemonstratesObjective=Does this answer show the name-question line?
-contrastMembers=Как Вас зову́т? | Прошу́ проще́ния
+distractorSourceIds= | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
+distractorDifference= | This form is the reply, not the question. | This form is the formal apology, not the question.
+whyAnswerDemonstratesObjective=The frozen list pairs What is your name? with this form and My name is... with the reply.
+contrastMembers=Как Вас зову́т? | Меня́ зову́т | Прошу́ проще́ния
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru
+relationParticipantIds=prov-ex-u25-name-question-0-en | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u25-i-name-structure-1`
@@ -1365,31 +1382,31 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52d7c399b9dae2f127a8f1aec266d655ae185eec318256bbf943d7736b31a47d
+- Content hash: 1040efd01702ef89732ceb479cb0606ad83ca2fd5aa658e9b02b87808ae4f410
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the patronymic form?
-promptLetter=имя
-options=отчество | фамилия | овна
+prompt=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
+promptLetter=patronymic name
+options=отчество | имя | фамилия | овна
 answer=отчество
-feedback=Does this answer show the patronymic form? отчество.
+feedback=The frozen sentence says Russians use three names and pairs patronymic name with this form. отчество.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the patronymic form? | Does this row fail the patronymic form?
-testedFeature=PATRONYMIC_FORM
+distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-structure-1-ru
-distractorSourceIds= | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
-distractorDifference= | Does this row fail the patronymic form? | Does this row fail the patronymic form?
-whyAnswerDemonstratesObjective=Does this answer show the patronymic form?
-contrastMembers=отчество | фамилия | овна
+distractorSourceIds= | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
+distractorDifference= | This form is paired with first name. | This form is paired with family name. | This ending means daughter of, rather than the paired form.
+whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+contrastMembers=отчество | имя | фамилия | овна
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
+relationParticipantIds=prov-ex-u25-name-structure-1-en | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u25-i-name-structure-2`
@@ -1400,31 +1417,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f8d70ad920e5120f5101f033a0d67a14169a013f0fecea8b2276d1b1d792504
+- Content hash: 0e85470bb0909136524c854e898ecb9b8e693210e97eab9a589b55876419a285
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the family-name form?
-promptLetter=имя
-options=фамилия | отчество | ович
+prompt=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
+promptLetter=family name
+options=фамилия | имя | отчество | ович
 answer=фамилия
-feedback=Does this answer show the family-name form? фамилия.
+feedback=The frozen sentence says Russians use three names and pairs family name with this form. фамилия.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the family-name form? | Does this row fail the family-name form?
-testedFeature=FAMILY_NAME_FORM
+distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
+testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-structure-2-ru
-distractorSourceIds= | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
-distractorDifference= | Does this row fail the family-name form? | Does this row fail the family-name form?
-whyAnswerDemonstratesObjective=Does this answer show the family-name form?
-contrastMembers=фамилия | отчество | ович
+distractorSourceIds= | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
+distractorDifference= | This form is paired with first name. | This form is paired with patronymic name. | This ending means son of, rather than the paired form.
+whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs family name with this form.
+contrastMembers=фамилия | имя | отчество | ович
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
+relationParticipantIds=prov-ex-u25-name-structure-2-en | prov-ex-u25-name-structure-2-ru | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u25-i-diminutives-1`
@@ -1435,31 +1452,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e000be98c38160f66ba7172e4087f4cad53209885fb6df4069f8400e8380fa9e
+- Content hash: c239a0a55d6d3fe814826035c2f5a896c635b9bac950a06340523736778f1368
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the Alexei diminutive?
-promptLetter=Алексей
-options=Alyosha for Alexei | Sasha for Alexander | Dima for Dmitri
-answer=Alyosha for Alexei
-feedback=Does this answer show the Alexei diminutive? Alyosha for Alexei.
+prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+promptLetter=Alexei
+options=Alyosha | Sasha | Dima
+answer=Alyosha
+feedback=The frozen list includes Alyosha for Alexei as the pair for the shown name. Alyosha.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the Alexei diminutive? | Does this row fail the Alexei diminutive?
-testedFeature=ALEXEI_DIMINUTIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Dima for Dmitri with a different name.
+testedFeature=SHORT_FORM_PAIR
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u25-diminutives-1-en
-distractorSourceIds= | prov-ex-u25-diminutives-0-en | prov-ex-u25-diminutives-2-en
-distractorDifference= | Does this row fail the Alexei diminutive? | Does this row fail the Alexei diminutive?
-whyAnswerDemonstratesObjective=Does this answer show the Alexei diminutive?
-contrastMembers=Alyosha for Alexei | Sasha for Alexander | Dima for Dmitri
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u25-diminutives-1-ru | prov-ex-u25-diminutives-1-en | prov-ex-u25-diminutives-0-en | prov-ex-u25-diminutives-2-en
+answerSourceIds=prov-u25-diminutives-x-1
+distractorSourceIds= | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-2
+distractorDifference= | Sasha is paired with Alexander, not with the shown name. | Dima is paired with Dmitri, not with the shown name.
+whyAnswerDemonstratesObjective=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+contrastMembers=Alyosha | Sasha | Dima
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u25-diminutives-1-en | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u25-i-diminutives-2`
@@ -1470,31 +1487,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78d602e2d2c972cb1eb77420bec00fb4e1f9d7ab998f82cc51ce40834b362072
+- Content hash: 038412db94c75edd733943bda22ba2cc27195766680544454354c7de1182a07c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the Dmitri diminutive?
-promptLetter=Дмитрий
-options=Dima for Dmitri | Sasha for Alexander | Alyosha for Alexei
-answer=Dima for Dmitri
-feedback=Does this answer show the Dmitri diminutive? Dima for Dmitri.
+prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+promptLetter=Dmitri
+options=Dima | Sasha | Alyosha
+answer=Dima
+feedback=The frozen list includes Dima for Dmitri as the pair for the shown name. Dima.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the Dmitri diminutive? | Does this row fail the Dmitri diminutive?
-testedFeature=DMITRI_DIMINUTIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Alyosha for Alexei with a different name.
+testedFeature=SHORT_FORM_PAIR
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u25-diminutives-2-en
-distractorSourceIds= | prov-ex-u25-diminutives-0-en | prov-ex-u25-diminutives-1-en
-distractorDifference= | Does this row fail the Dmitri diminutive? | Does this row fail the Dmitri diminutive?
-whyAnswerDemonstratesObjective=Does this answer show the Dmitri diminutive?
-contrastMembers=Dima for Dmitri | Sasha for Alexander | Alyosha for Alexei
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u25-diminutives-2-ru | prov-ex-u25-diminutives-2-en | prov-ex-u25-diminutives-0-en | prov-ex-u25-diminutives-1-en
+answerSourceIds=prov-u25-diminutives-x-2
+distractorSourceIds= | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1
+distractorDifference= | Sasha is paired with Alexander, not with the shown name. | Alyosha is paired with Alexei, not with the shown name.
+whyAnswerDemonstratesObjective=The frozen list includes Dima for Dmitri as the pair for the shown name.
+contrastMembers=Dima | Sasha | Alyosha
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u25-diminutives-2-en | prov-u25-diminutives-x-2 | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u25-i-courtesy-1`
@@ -1505,31 +1522,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1da0c60a882ff58b7d3a9e108464279c981a737907c81900395f760fc018e072
+- Content hash: e47668eb0f6145b2fbac1cd1a38a181a42b8bda39fe84bdcd30be3099b724a42
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the thanks line?
-promptLetter=Пожа́луйста
-options=Спаси́бо | Извини́те
+prompt=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+promptLetter=thanks
+options=Спаси́бо | Пожа́луйста | Извини́те
 answer=Спаси́бо
-feedback=Does this answer show the thanks line? Спаси́бо.
+feedback=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form. Спаси́бо.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the thanks line?
-testedFeature=THANKS_LINE
+distractorRationales= | The frozen list says please; also used for a request, not for thanks. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-courtesy-1-ru
-distractorSourceIds= | prov-ex-u25-courtesy-2-ru
-distractorDifference= | Does this row fail the thanks line?
-whyAnswerDemonstratesObjective=Does this answer show the thanks line?
-contrastMembers=Спаси́бо | Извини́те
+distractorSourceIds= | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru
+distractorDifference= | Please is the request word, not the thanks word. | The informal apology is not the thanks word.
+whyAnswerDemonstratesObjective=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+contrastMembers=Спаси́бо | Пожа́луйста | Извини́те
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
+relationParticipantIds=prov-ex-u25-courtesy-1-en | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u25-i-courtesy-2`
@@ -1540,31 +1557,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87c025b7db28a6530163e49955c9de54cead57674f3870531f41226752cf47e7
+- Content hash: c2ea987c19c31560694f4c0414ffd2fcfcf682137403a0778c8b3c56e9636694
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the apology line?
-promptLetter=Пожа́луйста
-options=Извини́те | Спаси́бо
+prompt=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
+promptLetter=I'm sorry / excuse me (informal)
+options=Извини́те | Пожа́луйста | Спаси́бо
 answer=Извини́те
-feedback=Does this answer show the apology line? Извини́те.
+feedback=The frozen list pairs I'm sorry / excuse me (informal) with this form. Извини́те.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the apology line?
-testedFeature=APOLOGY_LINE
+distractorRationales= | The frozen list says please; also used for a request, not for the informal apology. | The frozen list pairs thanks with a different form.
+testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-courtesy-2-ru
-distractorSourceIds= | prov-ex-u25-courtesy-1-ru
-distractorDifference= | Does this row fail the apology line?
-whyAnswerDemonstratesObjective=Does this answer show the apology line?
-contrastMembers=Извини́те | Спаси́бо
+distractorSourceIds= | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru
+distractorDifference= | Please is the request word, not the informal apology. | Thanks is not the informal apology.
+whyAnswerDemonstratesObjective=The frozen list pairs I'm sorry / excuse me (informal) with this form.
+contrastMembers=Извини́те | Пожа́луйста | Спаси́бо
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru | prov-ex-u25-courtesy-1-ru
+relationParticipantIds=prov-ex-u25-courtesy-2-en | prov-ex-u25-courtesy-2-ru | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u25-i-name-question-1`
@@ -1575,31 +1592,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80a0a168c8bdebcc2e8a34f2db924d0c5640adae48c081da561dadc3af5abbe1
+- Content hash: 3f6e09a11cc3555f4baed6e3da66d3785fbd2d9071c54d2a3a7173cc5e6ce1a8
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the name-answer line?
-promptLetter=Как Вас зову́т?
-options=Меня́ зову́т | Прошу́ проще́ния
+prompt=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+promptLetter=My name is...
+options=Меня́ зову́т | Как Вас зову́т? | Прошу́ проще́ния
 answer=Меня́ зову́т
-feedback=Does this answer show the name-answer line? Меня́ зову́т.
+feedback=The frozen list pairs My name is... with this reply and What is your name? with the question. Меня́ зову́т.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the name-answer line?
-testedFeature=NAME_ANSWER_LINE
+distractorRationales= | The frozen list pairs What is your name? with the question, not with the shown reply. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-question-1-ru
-distractorSourceIds= | prov-ex-u25-name-question-2-ru
-distractorDifference= | Does this row fail the name-answer line?
-whyAnswerDemonstratesObjective=Does this answer show the name-answer line?
-contrastMembers=Меня́ зову́т | Прошу́ проще́ния
+distractorSourceIds= | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru
+distractorDifference= | This form is the question, not the reply. | This form is the formal apology, not the reply.
+whyAnswerDemonstratesObjective=The frozen list pairs My name is... with this reply and What is your name? with the question.
+contrastMembers=Меня́ зову́т | Как Вас зову́т? | Прошу́ проще́ния
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
+relationParticipantIds=prov-ex-u25-name-question-1-en | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u25-i-name-question-2`
@@ -1610,31 +1627,31 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64cb62b2bda81247b4f5b037b0838e5cbf4c483ee421feb0fd2b6be8417ddc33
+- Content hash: f8755fe6f917459fdaa9997e5c0a2c7cb62ef37b6de5616a4aec66978c0ce47c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the formal-apology line?
+prompt=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
 promptLetter=Как Вас зову́т?
-options=Прошу́ проще́ния | Меня́ зову́т
-answer=Прошу́ проще́ния
-feedback=Does this answer show the formal-apology line? Прошу́ проще́ния.
+options=Меня́ зову́т | Прошу́ проще́ния | Как дела́?
+answer=Меня́ зову́т
+feedback=The frozen list pairs My name is... with this reply and What is your name? with the shown question. Меня́ зову́т.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the formal-apology line?
-testedFeature=FORMAL_APOLOGY_LINE
+distractorRationales= | The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply. | The frozen list pairs How are you? with this form, not with the name reply.
+testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u25-name-question-2-ru
-distractorSourceIds= | prov-ex-u25-name-question-1-ru
-distractorDifference= | Does this row fail the formal-apology line?
-whyAnswerDemonstratesObjective=Does this answer show the formal-apology line?
-contrastMembers=Прошу́ проще́ния | Меня́ зову́т
+answerSourceIds=prov-ex-u25-name-question-1-ru
+distractorSourceIds= | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-3-ru
+distractorDifference= | This form is the formal apology, not the name reply. | This form asks how someone is, rather than giving the name reply.
+whyAnswerDemonstratesObjective=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+contrastMembers=Меня́ зову́т | Прошу́ проще́ния | Как дела́?
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-1-ru
+relationParticipantIds=prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-3-ru
 responseKind=RUSSIAN_PHRASE
 
 ### REFERENCE `ref-u2125-attribution`
@@ -1951,7 +1968,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 138eb32b145aff5258d9d382c88501328e4725d9fa30b5898188d06e4988c85e
+- Content hash: a1b36661f67546ed4afd688220a774f67a3ed809ce8c1e5bbc340882cb5c7413
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -1987,14 +2004,14 @@ originalSourceText=Some of the most common examples include Sasha for Alexander,
 |-
 |Дмитрий
 |Dmitry
-shippedText=Sasha for Alexander
+shippedText=Alexander
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
-contentHash=ca837ed1d9a46c73cd0a3a99803c4f30379d15d1a1b39a6f6bae6eda93d262e0
+contentHash=dbadfc88144b0c153a2d1bdf154681c857a237eb79d58df24e918bca6e17db05
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2067,7 +2084,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1a9014a1ccc248659fe908bc4cd3cb4d07d961f35bd29bcdbf5e00d2d0e2f23
+- Content hash: 398a912b5bedb22e888c1af44e0435a642e8f5c7fb2c0137c19b1b703c1daee6
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -2103,14 +2120,14 @@ originalSourceText=Some of the most common examples include Sasha for Alexander,
 |-
 |Дмитрий
 |Dmitry
-shippedText=Alyosha for Alexei
+shippedText=Alexei
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
-contentHash=9ec1c4bd7fc690fa860685c1e4cbb0971966444ff47c173f5c34e537dbd26ce0
+contentHash=17fcfd893d793744fe116c058b2f692669e1c76cc50c54aab85477fcd6cf778b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2183,7 +2200,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0cf382540ce996da0bb4fdd3ad5c6e2fc9dec30eed307d7429cb2e93d8b1fbe
+- Content hash: aa5cf818e5c49ed92af307fdc4ff30cf8506da2a5c321ddc2e36e65d1181b7f7
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
@@ -2219,14 +2236,14 @@ originalSourceText=Some of the most common examples include Sasha for Alexander,
 |-
 |Дмитрий
 |Dmitry
-shippedText=Dima for Dmitri
+shippedText=Dmitri
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
-contentHash=06e2838c1d9b9ff2c0df190d18f82169ab5365bb2cdd699817d83e3177b5eb26
+contentHash=aee2ee18efdac537e181c5d3622849cce2f568a449c3f5656c92f11053bed5f0
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2395,7 +2412,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72a3d17bc02d9dc261bed907ba48d5e098d9276304a20c3c46a9efce42174100
+- Content hash: 4cb2dc7f4dff6c39cc3289ba98fa6b93b53c472d07488a7ba8dc043672c95ea2
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
@@ -2421,14 +2438,14 @@ originalSourceText=;До свида́ния (''Do svidanya'') :good bye
 
 ;Как Вас зову́т? (''Kak Vas zovut?'') :What is your name? (lit. "What do [they] call you?")
 ;Меня́ зову́т... (''Menya zovut...'') :My name is...
-shippedText=My name is
+shippedText=My name is...
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1d52af5b7f670f8965d8c18a236c9f17734cae0eceec1df6f3805c5d53173ad8
-contentHash=deb83494817def510d32bbe2498b88af969d3e4325b65102eab7daab94399f5f
+contentHash=acdcb67f621efeabf9780f333706e9ea5824a4f4980210fadb1b49f6165fd13e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2573,6 +2590,102 @@ attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen o
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1d52af5b7f670f8965d8c18a236c9f17734cae0eceec1df6f3805c5d53173ad8
 contentHash=9d3d2475bbe15f41818fa90a82c38b4d90c43de970625d1948975281a8dcabf4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-name-question-3-en`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a2fc4e008a09c8bb6bffdf53b95cc92153aa51ac72a5f1d7540ccc4ba19bbc0e
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
+sourceRevision=3353859
+sourceRecordId=useful:;До свида́ния (''Do svidanya'') :good bye
+;Пока́ (''Poka'') :bye; also used as E
+originalSourceText=;До свида́ния (''Do svidanya'') :good bye
+;Пока́ (''Poka'') :bye; also used as English "until": подождите, пока я приду (wait until I come)
+
+;Пожа́луйста (''Pozhalusta'') :please; also used for saying "you are welcome" as an abreviation of "please think nothing of it"
+;Спаси́бо (''Spasiba'') :thanks
+
+;Прошу́ проще́ния (''Proshu proshcheniya'') :I'm sorry / excuse me (formal)
+;Извини́те (''Izvinitye'') :I'm sorry / excuse me (informal)
+
+;Да (''Da'') :yes
+;Нет (''Nyet'') :no / not
+
+;Как дела́? (''Kak dyela?'') :How are you?
+;Хорошо́. (''Kharasho'') :Fine/ Good
+
+;Я бу́ду борщ с больши́м коли́чеством смета́ны (в рестора́не) (''Ya budu borshcht s bal'shim kalichistvuhm smitany (fristarani)'') :I'll take borshch with lots of sour cream (in the restaurant).
+
+;Как Вас зову́т? (''Kak Vas zovut?'') :What is your name? (lit. "What do [they] call you?")
+;Меня́ зову́т... (''Menya zovut...'') :My name is...
+shippedText=How are you?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1d52af5b7f670f8965d8c18a236c9f17734cae0eceec1df6f3805c5d53173ad8
+contentHash=df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-name-question-3-ru`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc7830883e97bb96e477923f91cf5531067306332d51937e14f79d3a64a59a37
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Useful_Words_and_Expressions?oldid=3353859
+sourceRevision=3353859
+sourceRecordId=useful:;До свида́ния (''Do svidanya'') :good bye
+;Пока́ (''Poka'') :bye; also used as E
+originalSourceText=;До свида́ния (''Do svidanya'') :good bye
+;Пока́ (''Poka'') :bye; also used as English "until": подождите, пока я приду (wait until I come)
+
+;Пожа́луйста (''Pozhalusta'') :please; also used for saying "you are welcome" as an abreviation of "please think nothing of it"
+;Спаси́бо (''Spasiba'') :thanks
+
+;Прошу́ проще́ния (''Proshu proshcheniya'') :I'm sorry / excuse me (formal)
+;Извини́те (''Izvinitye'') :I'm sorry / excuse me (informal)
+
+;Да (''Da'') :yes
+;Нет (''Nyet'') :no / not
+
+;Как дела́? (''Kak dyela?'') :How are you?
+;Хорошо́. (''Kharasho'') :Fine/ Good
+
+;Я бу́ду борщ с больши́м коли́чеством смета́ны (в рестора́не) (''Ya budu borshcht s bal'shim kalichistvuhm smitany (fristarani)'') :I'll take borshch with lots of sour cream (in the restaurant).
+
+;Как Вас зову́т? (''Kak Vas zovut?'') :What is your name? (lit. "What do [they] call you?")
+;Меня́ зову́т... (''Menya zovut...'') :My name is...
+shippedText=Как дела́?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1d52af5b7f670f8965d8c18a236c9f17734cae0eceec1df6f3805c5d53173ad8
+contentHash=e6e79c4d694bec971dd39386744f36a5d2a7f3012cf8b6642cae43322e19e224
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2981,6 +3094,180 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u25-diminutives-x-0`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc770d9fbc28a82ea763e0d8ab58f55c5af137199b6c7a07d8cfa17b31e22219
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
+sourceRevision=4660786
+sourceRecordId=names:Some of the most common examples include Sasha for Alexander, Alyosha for Alexei
+originalSourceText=Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. 
+
+===Boys first names===
+{| align="center" style="background:#fff;{{Text default color}}; width:800px; padding-left:10px;"
+!<p align="left">Russian</p>
+!<p align="left">Transcription</p>
+!<p align="left">English Equivalent/Origin/Meaning</p>
+|-
+|Александр
+|Aleksandr
+|Alexander
+|-
+|Алексей
+|Alexey
+|Greek origin
+|-
+|Андрей
+|Andrey
+|Andrew
+|-
+|Борис
+|Boris
+|Derived from Borislav, a pre-christian Slavic name meaning "good fighter"
+|-
+|Владимир
+|Vladimir
+|A pre-Christian Slavic name meaning "the Lord of the World"
+|-
+|Дмитрий
+|Dmitry
+shippedText=Sasha
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
+contentHash=fabcad3f11442896070a804f5a6fa6c929d6f60bf17aba0c218f75dfb94c8bee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-diminutives-x-1`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c4a91087c101eb219079d8e1039996d18c00c179028b32b9c95e074f058ddbf
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
+sourceRevision=4660786
+sourceRecordId=names:Some of the most common examples include Sasha for Alexander, Alyosha for Alexei
+originalSourceText=Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. 
+
+===Boys first names===
+{| align="center" style="background:#fff;{{Text default color}}; width:800px; padding-left:10px;"
+!<p align="left">Russian</p>
+!<p align="left">Transcription</p>
+!<p align="left">English Equivalent/Origin/Meaning</p>
+|-
+|Александр
+|Aleksandr
+|Alexander
+|-
+|Алексей
+|Alexey
+|Greek origin
+|-
+|Андрей
+|Andrey
+|Andrew
+|-
+|Борис
+|Boris
+|Derived from Borislav, a pre-christian Slavic name meaning "good fighter"
+|-
+|Владимир
+|Vladimir
+|A pre-Christian Slavic name meaning "the Lord of the World"
+|-
+|Дмитрий
+|Dmitry
+shippedText=Alyosha
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
+contentHash=70e16512738680080e7c1ffeda48da3c5b9df89f67abca02224b77066099ce43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-diminutives-x-2`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0ee24c1dfc67dc9fb7ea2951d521f98c8d13850d0a01116a363c5c51188c61b1
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Names?oldid=4660786
+sourceRevision=4660786
+sourceRecordId=names:Some of the most common examples include Sasha for Alexander, Alyosha for Alexei
+originalSourceText=Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. 
+
+===Boys first names===
+{| align="center" style="background:#fff;{{Text default color}}; width:800px; padding-left:10px;"
+!<p align="left">Russian</p>
+!<p align="left">Transcription</p>
+!<p align="left">English Equivalent/Origin/Meaning</p>
+|-
+|Александр
+|Aleksandr
+|Alexander
+|-
+|Алексей
+|Alexey
+|Greek origin
+|-
+|Андрей
+|Andrey
+|Andrew
+|-
+|Борис
+|Boris
+|Derived from Borislav, a pre-christian Slavic name meaning "good fighter"
+|-
+|Владимир
+|Vladimir
+|A pre-Christian Slavic name meaning "the Lord of the World"
+|-
+|Дмитрий
+|Dmitry
+shippedText=Dima
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=daaa8b6356bcfba4de090ec4477207ce1c272a17e715e471f7602791aa1d2fea
+contentHash=850a3a6f4fda0c51073cf7644807469b6ce78ff21314a3ad154c0a077b0476a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u25-name-question-rem`
 
 - Objectives: obj-u25-name-question
@@ -3325,357 +3612,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u25-130`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a7869015732244c8b64da7d5a633ca9171a6b372391b15412fac1385ef1a404
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u25-131`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5875f0c52dd44d156a75af7a10afb35a3da89d35ee73865ee8694050be50b9c2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the first-name form?
-
-### AUTHORED_ENGLISH `en-u25-132`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99241e77ba2aa7e84f66826324593b4008883af5fa032062f8795f68f0f64830
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the first-name form?
-
-### AUTHORED_ENGLISH `en-u25-133`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb68e8f149ad028d5fa01b7c991aadf47ad97924f9b616f490b121702060d23b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the first-name form?
-
-### AUTHORED_ENGLISH `en-u25-134`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db7933c5b6d8d8a3cb6ba494f20359eafe4f17da7d9889592413353372c4b4b4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u25-135`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1d3799c77876911698f62f90285f527809f152e1a65c6d38422eed2fa071885
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the patronymic form?
-
-### AUTHORED_ENGLISH `en-u25-136`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a724bebb89dfbd35ea08426b4c049158789e07bb1d34cb1fe0298cfe3a78afd
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the patronymic form?
-
-### AUTHORED_ENGLISH `en-u25-137`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bad609f05ea4558a377a4608fba670d4717214b65652a9f0af87803b07fc64f4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the patronymic form?
-
-### AUTHORED_ENGLISH `en-u25-138`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9bebacea48ce9d7a7adb9211a880e4f2193bfb4c0bad47d312fc888c748207d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the family-name form?
-
-### AUTHORED_ENGLISH `en-u25-139`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f14da4c62b497f9d3e91df8f3734c87448ddd5f04203ab42d9a0bf9fc0b5b091
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the family-name form?
-
-### AUTHORED_ENGLISH `en-u25-140`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3bc2c178bf20a3e999e249281e533d7fbaa80d3ae2fc7748053dd0228b1b90f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the family-name form?
-
-### AUTHORED_ENGLISH `en-u25-141`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a485dd0d4d382913da17abd64311656e58bea1241525a2b6754d4d085819ea4c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the Alexander diminutive?
-
-### AUTHORED_ENGLISH `en-u25-142`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7eede8275d14bca94f0ff95b3191e5374faab64d25b17e7caf198f5a1f509ed
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the Alexander diminutive?
-
-### AUTHORED_ENGLISH `en-u25-143`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d05be3ac6cc7d9344783b2a532e3b7022987a63e1e53900a10c72562846b2b23
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the Alexander diminutive?
-
-### AUTHORED_ENGLISH `en-u25-144`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: daf8674e125936ef40b9bc5bcf5cb95b806dbcacbd098a3e0267148aadfe8e08
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the Alexei diminutive?
-
-### AUTHORED_ENGLISH `en-u25-145`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec38221faf73b8af9f147802d21fb9703314045d302fc416fbbe54074b8188ac
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the Alexei diminutive?
-
-### AUTHORED_ENGLISH `en-u25-146`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f60f65e7a8129d4bd98012a1d305f2ef78d71a3be73fb00a68acefa4b02418e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the Alexei diminutive?
-
-### AUTHORED_ENGLISH `en-u25-147`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eea46469252c0e89e8b3ed7dc45f49025913ff8c26cc86a5c57ca775f569cc6e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the Dmitri diminutive?
-
-### AUTHORED_ENGLISH `en-u25-148`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa17fd9f3356885bb38fa2e71884fb3a3a5f7e9b622ebdc67e465c523e6a8c20
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the Dmitri diminutive?
-
-### AUTHORED_ENGLISH `en-u25-149`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce1a37bea1cd99a088ebfb7e5e19a9c2f9def8e967046561ca2d69dbf0d1d38b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the Dmitri diminutive?
-
-### AUTHORED_ENGLISH `en-u25-150`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: beb708e6a23ce39d4ccd30900aca8fc482bbf5967dff325e4fff94f3e6801ab4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the please line?
-
-### AUTHORED_ENGLISH `en-u25-151`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ccf1e3cb43cebdea541ba4c4f53ab093eaaa393700d1092a83bd25341ec50a11
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the please line?
-
-### AUTHORED_ENGLISH `en-u25-152`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 454c84001f1392b3e2ba6d6a77c5481d9992305f579a21a33feea237cf6016a4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the please line?
-
-### AUTHORED_ENGLISH `en-u25-153`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b19376c8da74ffa7f63b0efb12cb9b22487b4f02553f01f06b1598df2f46027
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the thanks line?
-
-### AUTHORED_ENGLISH `en-u25-154`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7bf23c35d42970231235a28c8b04c43e3b4d537afb0b2098fdde7d8866fb876
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the thanks line?
-
-### AUTHORED_ENGLISH `en-u25-155`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ddbcc30a0133555a26311c4cf126e02d649cc49b711588aa2d2c0605b176174
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the thanks line?
-
-### AUTHORED_ENGLISH `en-u25-156`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd59a67b538f829a7783166b41998d8c068d2e12d965c18c0b4534cdbc541432
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the apology line?
-
 ### AUTHORED_ENGLISH `en-u25-157`
 
 - Objectives: none
@@ -3684,10 +3620,10 @@ text=Does this row fail the apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7995ff80ad07f648491a9402d489b293d7e5915d4deba4d973cf423cbc6097a4
+- Content hash: caff908d6d3396caa3f19ea23624526bb5fc278030000a341a4a2e352e83a4ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the apology line?
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u25-158`
 
@@ -3697,10 +3633,10 @@ text=Does this answer show the apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: daa44f49331240f5e3f813a5339025e7999f66540d98d8f4e9af105af3efb7df
+- Content hash: dfec0037a22077c38de476e8496a8e30c03027c3e9570c595025f13cff3fdcdb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the apology line?
+text=The frozen sentence pairs this form with patronymic name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-159`
 
@@ -3710,10 +3646,10 @@ text=Which admitted line is the apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad019915038eaf1407d68c6926917de8bc6fa1ea935119933b472c24df9ff756
+- Content hash: 1cd0432da614169a887c6e845d2f49a7f7d809e0d630a03b07e3f0f262349ca2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the name-question line?
+text=The frozen sentence pairs this form with family name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-160`
 
@@ -3723,10 +3659,10 @@ text=Does this row fail the name-question line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1820c3272789ee6abb7b091854dff449423df423b3a079b8bc27e03fa1e02536
+- Content hash: ac364c3539730cc1d067c103cdd3abe8817dfbbd2595e73c592fd989774bcf3c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the name-question line?
+text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-161`
 
@@ -3736,10 +3672,10 @@ text=Does this answer show the name-question line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d87f62641cdb02adce0ff02c460ce4c4e32d896a3eb615117ad2c748aa2d4eea
+- Content hash: 980ba58c2826ddf7c2042e384aa473f016cf7803baa7b23906703816ece525f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the name-question line?
+text=This form is paired with patronymic name.
 
 ### AUTHORED_ENGLISH `en-u25-162`
 
@@ -3749,10 +3685,10 @@ text=Which admitted line is the name-question line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e796fe2f517d886cf7a7af7d72c52674304d2a5906ad27b4237e1f17ba2a493a
+- Content hash: ce7b70553d124a051dec6d2ee68ca7666dc9e38fdcf2892c7cdc48de4f618ea7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the name-answer line?
+text=This form is paired with family name.
 
 ### AUTHORED_ENGLISH `en-u25-163`
 
@@ -3762,10 +3698,10 @@ text=Does this row fail the name-answer line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b219e5a544de8b915d5c62a23081b1d8f351bfcf086d7469e97b03c943e8fa02
+- Content hash: f332389bddfa33131ad1706ad8c77687ee94beaa6698a4c45c4436813a2794a4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the name-answer line?
+text=This ending means son of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-164`
 
@@ -3775,10 +3711,10 @@ text=Does this answer show the name-answer line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d150cf1782bee9a73ff8c4a56b18baadefcad00774b037924abcbd845f2a7dfb
+- Content hash: 785fae48d0b82ebba54c3e2faf464c6fae9bf8c54cc7218d0ec021915b345463
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the name-answer line?
+text=The frozen sentence says Russians use three names and pairs the shown words with this form.
 
 ### AUTHORED_ENGLISH `en-u25-165`
 
@@ -3788,10 +3724,10 @@ text=Which admitted line is the name-answer line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ecf889ae086fdcdf06d83cea2e517da074f5d66e2d15f2553031ff71b81c4411
+- Content hash: 4c7b5e77a64884a5c07f69e15f549743406192d86dd79f189ff33e53ed519f44
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the formal-apology line?
+text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-166`
 
@@ -3801,10 +3737,10 @@ text=Does this row fail the formal-apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f4e6169dcd4d64dac8d06dd660f8312df02d3d223b59396af7add614733561d
+- Content hash: 11aa2d55d5a97554eadd7c2ba2b8ab94175691c1f61bdc98c0d6240bebb0f8c8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the formal-apology line?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u25-167`
 
@@ -3814,10 +3750,10 @@ text=Does this answer show the formal-apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 979f9570d674b33400311e5f02fad2ea225011f6e2dd285423f3884f26a266a5
+- Content hash: f7cf68823adf54871a33ff0a7358577a82563dcf867b0f51679ec054738912d1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the formal-apology line?
+text=The frozen sentence pairs this form with first name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-168`
 
@@ -3827,10 +3763,10 @@ text=Which admitted line is the formal-apology line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c2a6f59ff01b4bc9ea0db6789c9c871872f0d7f5a64adee766f6c9b3a5aa9b6
+- Content hash: 944ef4411757e9a9762c3440a9f9ac2ae364d7565954fd38d65ee2983bb66b99
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted name and courtesy lines
+text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-169`
 
@@ -3840,10 +3776,10 @@ text=Admitted name and courtesy lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 932edb48fe782075e1a3287e60ca4fd7690f6988359c0448b0b0495869288837
+- Content hash: 42d216f0259bf515c9eba884011c87418cf45e4944a3aead487ec0c7048959ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, and courtesy lines. A general nickname-formation rule and modern address guidance stay in the copy you own. Qualified review is pending.
+text=This form is paired with first name.
 
 ### AUTHORED_ENGLISH `en-u25-170`
 
@@ -3853,10 +3789,10 @@ text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 84c169ce06edbe08ec923985e8ccfa3344e882e20c99cd760f7b447029a89832
+- Content hash: 49d6a4adbad9206646c6d27450a8b23e5151c9bc29b2f848c3b400c77c1dad68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+text=This ending means daughter of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-171`
 
@@ -3866,10 +3802,10 @@ text=Open Lesson 25 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 025e0b54166a4b0625b889b445a9c48f772b350a8b9fd589f1f0b848cfe7ff84
+- Content hash: fb7694a8efb21e16af47d38b028f4eb609a054484367b79d7e79517602ed7f8f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-172`
 
@@ -3879,10 +3815,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1cd23185d8d8de53b3f569069cce2e498425526d20dd3d18f5d09e42e519fc5b
+- Content hash: 38db844c89aa9d5d0ba7f0c0c8f82fbba57b3562cac0e91c40cc75721d8ab242
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-173`
 
@@ -3892,10 +3828,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f4d0a7447c3d8173f4300d3d716b69cb88ff15be640167dcef42c0f071af26f
+- Content hash: 1a623fa6e2c33a3ac173591e95bd8b7925cca2595747fea78d69906ca91da348
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen sentence says Russians use three names and pairs family name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-174`
 
@@ -3905,10 +3841,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b2064524ebd83b8f94049cc46093af13d517b0bc7ebb34f9f08445cec365816a
+- Content hash: 3da2c3fdf4919773ecad32270ef116241c82a60695824ece8fc7e6ecc3915b5e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-175`
 
@@ -3918,10 +3854,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b652416a564fe5db9a63fb9fd63ca4856f902aa24f7fb65e541a3a0351474251
+- Content hash: 62a152ec046fa81f7777013d930b98753290c63bb40b3a3f934b43886c20e697
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The frozen list pairs Alyosha for Alexei with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-176`
 
@@ -3931,10 +3867,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37ffac7ae33421464d3140753b2a7edef5b5a684acfb80b574f48b3b7b22eb27
+- Content hash: 39413ecb8c5246ff0aae8eacb617a171ca608b8d2f25e07afc07700363095d17
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 25 in your copy
+text=The frozen list pairs Dima for Dmitri with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-177`
 
@@ -3944,10 +3880,10 @@ text=Work Lesson 25 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64bc0bb7cd565fd17685bd4520ab0572dfe894188a99e9b9795e4b0d3a45e907
+- Content hash: abd28b87999458242fe7663b4167f894a4635b30021d73e97d5b3565a3714b35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Alyosha is paired with Alexei, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-178`
 
@@ -3957,10 +3893,10 @@ text=Do Lesson 25 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe41849d759f8627695e8b47e3c95f389e5651c771d190117e38cab93006afd6
+- Content hash: 4f214e9c83e721723e97cab8577831e1085a561f9765f0d59f7f9243aedfc15d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in your copy and complete its lesson work.
+text=Dima is paired with Dmitri, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-179`
 
@@ -3970,10 +3906,10 @@ text=Open Lesson 25 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65abd6f56c3e0ef29a775ec60681f40bad5bfbdafee718ad971473e86d830fb1
+- Content hash: dbff0644542d74ed347b9668f4e952b79dc38c99073f376366f422f7d3693410
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 25 book work
+text=The frozen list includes Sasha for Alexander as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-180`
 
@@ -3983,10 +3919,10 @@ text=Record Lesson 25 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 563db188e3ebad60b6503eb26d71c7d3b8bcdff19d6f091cd7fca5868f210ff6
+- Content hash: dca6385b9f9b5f62e9d2b4eb54ee557e9d48af425a3aabb3df38f5aa22a762c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-181`
 
@@ -3996,10 +3932,10 @@ text=When you have done Lesson 25 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f3c1900f4c95d53e63375ca85fe5f22b95046aca2e03283c527dbc92f0ea0bc
+- Content hash: 72d55407c4f7719530aa6c98a75ddc30b87a9e22312b6429f13bac17a49f1bdb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 25 work in your copy.
+text=The frozen list pairs Sasha for Alexander with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-182`
 
@@ -4009,10 +3945,10 @@ text=Self-attest only after the Lesson 25 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6927b02b5a365d813519a109707f3c16219d6bb3dd9dffc3bc4ab557c3d49ce5
+- Content hash: 63a02b75bc7e01a79a63884fb540643d6851df8106ffe2afb8e7ce6a4a2ea73b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general nickname-formation rule stays in the copy you own
+text=Sasha is paired with Alexander, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-183`
 
@@ -4022,10 +3958,10 @@ text=A general nickname-formation rule stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73ecd6d6128fc78ff24fd6e0ac02ce80bc6e7cd25f0dc51b22482f241ca6e90d
+- Content hash: eb10ee2cdb3f2f76c002ab6b8d63891d62456b270ba7e40c27301c6c1c28f69f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.
+text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-184`
 
@@ -4035,10 +3971,10 @@ text=A general nickname-formation rule stays in the copy you own. A listed pair 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d29f7d51c1f42f70c2f05bc002ae21c7a98683e64cb5a53b9f11f68e2a8caaf3
+- Content hash: d973b4b4d5a2a04f8e89011684c0caab6875a3084462e9a027da70ac6b9a391b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Modern address guidance stays in the copy you own
+text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-185`
 
@@ -4048,7 +3984,657 @@ text=Modern address guidance stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03d89e0a68062f94ada281e123ed8f1669b69cb1df87a99c30f3c263616ba993
+- Content hash: ef07908771ea881413deee5d33e0db79d13a48c6999ae1ee07f52c4a24af064e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs thanks with a different form.
+
+### AUTHORED_ENGLISH `en-u25-186`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 66d1f62853ab05f322725fa97635d4cdaf1337b006315d6e513d705c3f5fec6f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+
+### AUTHORED_ENGLISH `en-u25-187`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4dbf33e1f957f7e8ad4bb6fee4336cb507f88874f3a3ee4c933cfac852688ff0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Thanks is a different courtesy word.
+
+### AUTHORED_ENGLISH `en-u25-188`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8ff05bf10d19c98e611b8e3d79fdf2f4ad4ceda7f808398e411a49269fcf7cf7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The informal apology is a different courtesy word.
+
+### AUTHORED_ENGLISH `en-u25-189`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9d8bc37f68fd207b00069baac7b03a9fa458942c24c76a109b3f50198e8950d4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list says please; also used for a request and pairs that word with this form.
+
+### AUTHORED_ENGLISH `en-u25-190`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e69cea083ac820f89ccefc856ae1d15f7750032c4a9d7c2e14db4063a0b796ca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-191`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 452c3338b893c88c59432f846920d072f01209cc7226af81d4132270c6e9b856
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list says please; also used for a request, not for thanks.
+
+### AUTHORED_ENGLISH `en-u25-192`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c879c31490ef422e8ef01353d0c5d964968be148b801d096ecbf04d5c973f17d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Please is the request word, not the thanks word.
+
+### AUTHORED_ENGLISH `en-u25-193`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 72ef20d31f21e82c8df92444317aef38890ec6b297d5f3aea0b5b2f431420a3a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The informal apology is not the thanks word.
+
+### AUTHORED_ENGLISH `en-u25-194`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 09d694961908538f862d4cbbffdb46863faf4b8ba3d5ce18c14bd3c00bedcfab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+
+### AUTHORED_ENGLISH `en-u25-195`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5313d616ef6e5ef5cf0a4eecbb969d5b13e8dd0763f398d44a5fcaa4feb474cd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-196`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0d16db9c3e80d8844b5edd72f9fab03ef3be51977fd62c6ff88a0ba4512819ea
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list says please; also used for a request, not for the informal apology.
+
+### AUTHORED_ENGLISH `en-u25-197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e810986ceb8eedfd27da0778073e6f996bc4ef4291405f132c5fd9d914147e2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Please is the request word, not the informal apology.
+
+### AUTHORED_ENGLISH `en-u25-198`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ddc4b1ee317aa0629ca0842a61eb2e459bc588d722f0a9bf7dee33f1f2a7d735
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Thanks is not the informal apology.
+
+### AUTHORED_ENGLISH `en-u25-199`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bbce22c1e5a73f4a08112a83fc1b2b46ae0a4a6f2a645421a13111863b17781a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
+
+### AUTHORED_ENGLISH `en-u25-200`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: de66ebd141c761e6134d42de33a7891f112954768ade3a35944c9e88218cd2ba
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-201`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ec79dff51a13811c30d86d4e727eee56535594bdec7afae6096c6a3fbcbaa038
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs My name is... with the reply, not with the shown question.
+
+### AUTHORED_ENGLISH `en-u25-202`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f5e1e82dce91deb99b9b58f87cbff1800d76fa67508c2f3930c36ddd53ec227c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+
+### AUTHORED_ENGLISH `en-u25-203`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: da5f6fd4a3006a4e2a913847266434e0273bdbe26ec7876c4783c94c4906b168
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the reply, not the question.
+
+### AUTHORED_ENGLISH `en-u25-204`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 876ed1511ed27cc2ee7b3ce49f0c0c03d5289e77b49c2ec1daf4c0489c1982c4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the formal apology, not the question.
+
+### AUTHORED_ENGLISH `en-u25-205`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: faff9d07ca198b4e7c3f635064d4cbc36cf1b28d02983462fc92eaf462462bfc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs What is your name? with this form and My name is... with the reply.
+
+### AUTHORED_ENGLISH `en-u25-206`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b77c94753d717814ba95e9530b31d332e80dc1641d426f1712e8bed6bb217a63
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-207`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 080397678a6fd90ed034bf402bda2a22f42dfb5882d9cb5ff5028ede953b3126
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs What is your name? with the question, not with the shown reply.
+
+### AUTHORED_ENGLISH `en-u25-208`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e64dffe4034c16905d4c0a4ccea3cf385908b0ac8de4c07e65c1fafd779a2c74
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the question, not the reply.
+
+### AUTHORED_ENGLISH `en-u25-209`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 68d28f0a8cd25c957866a67a7124fe976f58599af29ec0d69f72c9a4692a3e69
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the formal apology, not the reply.
+
+### AUTHORED_ENGLISH `en-u25-210`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b637dda6e2a2a35e78328b8af248ca8adc22cd5672e98b423361ba03a969bc2b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs My name is... with this reply and What is your name? with the question.
+
+### AUTHORED_ENGLISH `en-u25-211`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b28ff776fba6ce5852396fd85eb276d254467c6b832a7b6bb7d3dd2bb3338106
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-212`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 278301fb0421300eb87c00c9cc389b94d7775ed7f3d8542b11f41181e1e7da36
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+
+### AUTHORED_ENGLISH `en-u25-213`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1de18f4374d7910ece46d1044740ccd6905d5fb881c2455f9da0579bcb253e93
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs How are you? with this form, not with the name reply.
+
+### AUTHORED_ENGLISH `en-u25-214`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5ebc209633d9abb70d72771bb214cd3d70c29fbce7b0c1e87c8a1f77107ad8df
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the formal apology, not the name reply.
+
+### AUTHORED_ENGLISH `en-u25-215`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f6a65dccbd0657f3759e3e7d236883430e7de6fcb5bcb44d116e62af471f631a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form asks how someone is, rather than giving the name reply.
+
+### AUTHORED_ENGLISH `en-u25-216`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed3527036a3f816a9566514a221ee6df4f3a272b46fa3d7114f4444be4b411a0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+
+### AUTHORED_ENGLISH `en-u25-217`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03bd0f6ddd6b26982f6d7aacc7545cdfc3f65223d2d4e0ec8613e94815bb7a89
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+
+### AUTHORED_ENGLISH `en-u25-218`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e65ff0060cf3efd93cbefcff4d951b227436bce35966857b462d5ce9f122259
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted name and courtesy lines
+
+### AUTHORED_ENGLISH `en-u25-219`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 31223a1805c4c085ea53cf1a914fe6c1362f6d84cbd8bf42e318b0718bc101a1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, and courtesy lines. A general nickname-formation rule and modern address guidance stay in the copy you own. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u25-220`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 589ea5611abf7a3d748f7d5a851bd46906e3cfe48f303ca4491b4cd3790220fd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u25-221`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b28c496750e1a34ad5c3346cb8b01b9427c3794d7a8531e6d2c99efb82fe69de
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u25-222`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3f8c5cdbe03f6c485b7f997b0fec92fc325cd8ceeb162bc55e9ba606fcf37f4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u25-223`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 95d6cf958e0818489e4cf7e3b70781294b9400af263077a5c3aad4c5221c9e0a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u25-224`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4cb7db0fd5030a8a65ab99a8f78f001cf51b36b3d9cbf4bde809a426edc0e0f0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u25-225`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c6123537afaedfd8ba78dfb6238af14a745289538a602097b87cb59c329d8512
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u25-226`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 352b92f05c0edd2867de510648853983376657dfb74e018a040c1e3da701edc9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 25 in your copy
+
+### AUTHORED_ENGLISH `en-u25-227`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2051899e75108d56de50334abb52fb77fa7d0c4240099d39612c938f45a0ea0e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u25-228`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c6d417a2f021d7076be87bd664f386c9d72d39a30e2cab50a0641fa8f13be854
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 25 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u25-229`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 77b0718c4cd70a1445ba1e65f3dfad7e77e3a3e7b4676e96ef8ed86bb2f43f6d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 25 book work
+
+### AUTHORED_ENGLISH `en-u25-230`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3f06b0a12f9a52fe4f09579eb5ecc3c22bc56ed0d483dea77789259b1aa81825
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u25-231`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 409a2c1e39f171fa15de4ffeab8c8a352778163f6ca50f060863333ba923bb0f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 25 work in your copy.
+
+### AUTHORED_ENGLISH `en-u25-232`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5062c445de17cc848d9775d468e43d9ea61f7a81e2c84ffd3786e895d47330a9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general nickname-formation rule stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u25-233`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bef5264384905a043737686ce77f92ce7f29e1bd449d361456ae6145c5bdd8b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.
+
+### AUTHORED_ENGLISH `en-u25-234`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b5d02408219b90e9de6d2f18690b364789151d715205bc5a06c57ec268922642
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Modern address guidance stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u25-235`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7b248b402f160cfb9bd14d26cbf8eb3ef707cf7e9e8b02f903da331fcb99eea5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Modern address guidance stays in the copy you own. The frozen lines do not supply that guidance.
@@ -4154,6 +4740,7 @@ permitsAppUse=true
 - `obj-u25-name-question` EXAMPLE `ex-u25-name-question-0`
 - `obj-u25-name-question` EXAMPLE `ex-u25-name-question-1`
 - `obj-u25-name-question` EXAMPLE `ex-u25-name-question-2`
+- `obj-u25-name-question` EXAMPLE `ex-u25-name-question-3`
 - `obj-u25-name-question` PRACTICE `u25-st-guided-name-question-1`
 - `obj-u25-name-question` CHECK `u25-i-name-question-1`
 - `obj-u25-name-question` CHECK `u25-i-name-question-2`
@@ -4219,6 +4806,7 @@ permitsAppUse=true
 - `u25-st-guided-name-question-1` ITEM `u25-g-name-question-0`
 - `u25-st-teach-name-question-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-name-question-3` EXAMPLE `ex-u25-name-question-2`
+- `u25-st-teach-name-question-3` EXAMPLE `ex-u25-name-question-3`
 - `u25-st-teach-name-question-3` REFERENCE `ref-u2125-attribution`
 - `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-0`
 - `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-1`
@@ -4249,6 +4837,8 @@ permitsAppUse=true
 - `obj-u25-name-question` PROVENANCE `prov-ex-u25-name-question-1-ru`
 - `obj-u25-name-question` PROVENANCE `prov-ex-u25-name-question-2-en`
 - `obj-u25-name-question` PROVENANCE `prov-ex-u25-name-question-2-ru`
+- `obj-u25-name-question` PROVENANCE `prov-ex-u25-name-question-3-en`
+- `obj-u25-name-question` PROVENANCE `prov-ex-u25-name-question-3-ru`
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-0-en`
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-0-ru`
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-1-en`
@@ -4260,6 +4850,9 @@ permitsAppUse=true
 - `obj-u25-courtesy` PROVENANCE `prov-u25-courtesy-rem`
 - `obj-u25-courtesy` PROVENANCE `prov-u25-courtesy-rem-r0`
 - `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-rem`
+- `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-0`
+- `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-1`
+- `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-x-2`
 - `obj-u25-name-question` PROVENANCE `prov-u25-name-question-rem`
 - `obj-u25-name-question` PROVENANCE `prov-u25-name-question-rem-r0`
 - `obj-u25-name-structure` PROVENANCE `prov-u25-name-structure-rem`

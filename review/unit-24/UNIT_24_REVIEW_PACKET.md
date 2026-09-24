@@ -11,12 +11,12 @@ Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 2deaebc80b58499f312543e82849408c85e6eb66
-- Unit content-review SHA-256: be4e6f261417245c03a8b1c2c47c52cd5181f30e7740ccd8a24c4b700420f3f3
+- Curriculum source commit: fd1f6497b235208786d0f720d71a248a22f8d69e
+- Unit content-review SHA-256: 34000381d687bf714193b787e6800443e2bcdad53c03f17664554009e171cf3a
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: dae62d02feae1d2a1e5fe02dd216db6dc549421bf1ecc4cc8c7e3396614c1005
-- Review-package SHA-256: a29875a970f59bacf48f08b300a2ade81c3e114800301d6f54868e25bdef6b54
-- Repository source SHA-256: 9189b52de515ad4629245abce45044b5340220b1c74167245d3d59f6436ba839
+- Pack content-review SHA-256: 9dff789084710c14ab4b12f82cd1520a635048cba2e7157e6159312707c43b8d
+- Review-package SHA-256: c6df0de15bcb26592f14a9bc57b95a22f6981aec90ba73e6cac7de8961f37ca8
+- Repository source SHA-256: fd292b8a2e1ba0029b808c978cbc87e34f49c1389c811abe9bcfa940f14bb427
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,13 +113,13 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d63fd0b0734e29f22925f0efa3752b0736d85ca6390b2299063fa24c642a012e
+- Content hash: 51a93229dcb1abbc1885fa4382176f6a55ba63611076dcfdb8d2085e842e12f9
 
-title=Choose the admitted verbal negation line
+title=Choose the admitted negation example
 kind=RECOGNITION
 unitNumber=24
-instruction=u24-st-orient,u24-st-teach-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3
-examples=ex-u24-verbal-ne-0,ex-u24-verbal-ne-1,ex-u24-verbal-ne-2
+instruction=u24-st-orient,u24-st-teach-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-teach-verbal-ne-4
+examples=ex-u24-verbal-ne-0,ex-u24-verbal-ne-1,ex-u24-verbal-ne-2,ex-u24-verbal-ne-3,ex-u24-verbal-ne-4
 practice=u24-st-guided-verbal-ne-1
 checks=u24-i-verbal-ne-1,u24-i-verbal-ne-2
 remediation=u24-st-rem-verbal-ne
@@ -132,9 +132,9 @@ remediation=u24-st-rem-verbal-ne
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44035dcf61801f79eb431c36197bbbb60d5c6034743d35a2498df601361b4928
+- Content hash: d1cda5ece5cf30cb6889863430c1142a1ff8f5ed32112374c36aa1fdedde9334
 
-title=Choose the admitted absence form
+title=Choose the admitted replacement for the exists word
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-absence-1,u24-st-teach-absence-2,u24-st-teach-absence-3
@@ -264,12 +264,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7bee7addcb5db5ad84eebf0448912d7dcb14fa9ba54ebf89040d43779bda0a59
+- Content hash: 980b4227e5bfa98b59ca86a60f563e74b7505ae39589d70228ee3211c43230d3
 
-title=Choose the admitted verbal negation line
+title=Choose the admitted negation example
 estimatedMinutes=12
 objectives=obj-u24-verbal-ne
-steps=u24-st-teach-verbal-ne-1,u24-st-guided-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-rem-verbal-ne,u24-st-check-verbal-ne
+steps=u24-st-teach-verbal-ne-1,u24-st-guided-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-teach-verbal-ne-4,u24-st-rem-verbal-ne,u24-st-check-verbal-ne
 
 ### STEP `u24-st-teach-verbal-ne-1`
 
@@ -279,11 +279,11 @@ steps=u24-st-teach-verbal-ne-1,u24-st-guided-verbal-ne-1,u24-st-teach-verbal-ne-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec365421cc19ba07754a53010064d59e157fb19bf2d2a5829f8ca38b288faca7
+- Content hash: 5d426974558dfc21eb9ded49a8393c3612fdb617dd04fb87778823ce6318c05c
 
 kind=TEACH
 title=Admitted lines
-body=не говорю́ — No, I'm not speaking. не студент — He's not a student. 
+body=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -345,15 +345,37 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ee7f04dbffb26b0b1e045dc06a615d889fd8f5a9b24388e3ddedfab91416d4a1
+- Content hash: a1f8bb591a19ac93e33c0efe57856ec63846e76a7296a1e2ab16ca3b23fa9ae9
 
 kind=TEACH
 title=Admitted lines
-body=не приходит — Boris isn't coming. 
+body=Вы говори́те? — Are you speaking? Он не студент — He's not a student. 
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
-examples=ex-u24-verbal-ne-2
+examples=ex-u24-verbal-ne-2,ex-u24-verbal-ne-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-teach-verbal-ne-4`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-verbal-ne
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: aa19764d82347e70fe9add64edf05587776e0bd8d1e88fbefa4016e311b81c66
+
+kind=TEACH
+title=Admitted lines
+body=Борис не приходит — Boris isn't coming. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u24-verbal-ne-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -411,9 +433,9 @@ remediationStepId=u24-st-rem-verbal-ne
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2e802b54124e6a9b01e8593cd41d805612cab1ae1adaab4c6757f3de5b71b633
+- Content hash: 6d11adea05a974dbd4fd6df204886a36ef13f8d755106e9f78c25a188ce2f053
 
-title=Choose the admitted absence form
+title=Choose the admitted replacement for the exists word
 estimatedMinutes=12
 objectives=obj-u24-absence
 steps=u24-st-teach-absence-1,u24-st-guided-absence-1,u24-st-teach-absence-2,u24-st-teach-absence-3,u24-st-rem-absence,u24-st-check-absence
@@ -728,12 +750,12 @@ remediationStepId=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0966688458a82bdf2d82e5475685f0345f4b15ca34eb6be31fc5eb683e7909bd
+- Content hash: 8ca068b40a680381f7ad32b62d52f258ff9b112785dc890f0d7b72428a2070fe
 
 kind=LEXICAL
 letterId=
-display=не говорю́
-note=No, I'm not speaking
+display=Да, говорю́
+note=Yes, I'm speaking
 objectiveId=obj-u24-verbal-ne
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -745,12 +767,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a2fd50bced904bc6b957c20a6fdaf9619c1f7eb44f73fd8cbc0d559e46b994e
+- Content hash: 779a97e878d25ad71c21283f730a641c0e9821f6338211d8e9e27b27839de221
 
 kind=LEXICAL
 letterId=
-display=не студент
-note=He's not a student
+display=Нет, не говорю́
+note=No, I'm not speaking
 objectiveId=obj-u24-verbal-ne
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -762,11 +784,45 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 856ba893322f49c9c580769864ee72099c12fb0d3e94b35e5993ab7f028712d7
+- Content hash: d9f97f2d7b27d5c33c15d63291a6b6061f58d2b1df6fbf75818a8ffaadf2daa8
 
 kind=LEXICAL
 letterId=
-display=не приходит
+display=Вы говори́те?
+note=Are you speaking?
+objectiveId=obj-u24-verbal-ne
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u24-verbal-ne-3`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ff0f71cd2ae2c77804631f3f0d3e49df83ea97d761fc8d023f107d5e7633395f
+
+kind=LEXICAL
+letterId=
+display=Он не студент
+note=He's not a student
+objectiveId=obj-u24-verbal-ne
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u24-verbal-ne-4`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3e20ae661a06d6e8f9ae6dd2421a22861b989cf62b07ca236923c7f75c42aea4
+
+kind=LEXICAL
+letterId=
+display=Борис не приходит
 note=Boris isn't coming
 objectiveId=obj-u24-verbal-ne
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -830,32 +886,32 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7eb0d66d46e04c6a33012443bca8442124fe1583b83ddaf9f4449c083b5644af
+- Content hash: f51f1fe394bc95b24a3288acae0e1e10d6ab45351e160b0fcf8c78001ce66f75
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the not-speaking line?
-promptLetter=не студент
-options=не говорю́ | не приходит
-answer=не говорю́
-feedback=Does this answer show the not-speaking line? не говорю́.
+prompt=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
+promptLetter=Да, говорю́
+options=Нет, не говорю́ | Он не студент | Вы говори́те?
+answer=Нет, не говорю́
+feedback=The frozen example No, I'm not speaking adds the particle before the speaking reply. Нет, не говорю́.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the not-speaking line?
-testedFeature=NOT_SPEAKING_LINE
+distractorRationales= | The frozen example He's not a student is omitted in the present form, so the particle stands on its own. | The frozen example Are you speaking? is the question before the reply.
+testedFeature=PARTICLE_BEFORE_SHOWN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u24-verbal-ne-0-ru
-distractorSourceIds= | prov-ex-u24-verbal-ne-2-ru
-distractorDifference= | Does this row fail the not-speaking line?
-whyAnswerDemonstratesObjective=Does this answer show the not-speaking line?
-contrastMembers=не говорю́ | не приходит
+answerSourceIds=prov-ex-u24-verbal-ne-1-ru
+distractorSourceIds= | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-2-ru
+distractorDifference= | This example omits the present form instead of adding the particle before the speaking reply. | This example is the question, not the reply with the particle added.
+whyAnswerDemonstratesObjective=The frozen example No, I'm not speaking adds the particle before the speaking reply.
+contrastMembers=Нет, не говорю́ | Он не студент | Вы говори́те?
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-0-ru | prov-ex-u24-verbal-ne-2-ru
-responseKind=RUSSIAN_PHRASE
+relationParticipantIds=prov-ex-u24-verbal-ne-0-ru | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-2-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u24-g-absence-0`
 
@@ -865,31 +921,31 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8863fc3043038d95ea8cf55bc8098da5a07369889fdaab530c458da04f799fdf
+- Content hash: 51235c27f30d6fcb650fce5f9d2953c0261576dc92c157be651b51120107e580
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the absence form?
+prompt=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
 promptLetter=есть
-options=нет | не
+options=нет | не | Да
 answer=нет
-feedback=Does this answer show the absence form? нет.
+feedback=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word. нет.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the absence form?
-testedFeature=ABSENCE_FORM
+distractorRationales= | The frozen note adds this particle before a word. It is not the replacement for the exists word. | The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
+testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-absence-1-ru
-distractorSourceIds= | prov-ex-u24-absence-2-ru
-distractorDifference= | Does this row fail the absence form?
-whyAnswerDemonstratesObjective=Does this answer show the absence form?
-contrastMembers=нет | не
+distractorSourceIds= | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
+distractorDifference= | This particle is placed before a word, not used as the replacement. | This token is the agreeing reply, not the replacement.
+whyAnswerDemonstratesObjective=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+contrastMembers=нет | не | Да
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-absence-0-ru | prov-ex-u24-absence-1-ru | prov-ex-u24-absence-2-ru
+relationParticipantIds=prov-ex-u24-absence-0-ru | prov-ex-u24-absence-1-ru | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u24-i-verbal-ne-1`
@@ -900,32 +956,32 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 538eda9b6eff63f6058d87135c841143e11d3ecc7055aa48354e0442ddf30787
+- Content hash: 8bd602398f2601eb89953b565ef32290b0e9e6ae1661142dcc6112d4c521a1fc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the not-student line?
-promptLetter=не говорю́
-options=не студент | не приходит
-answer=не студент
-feedback=Does this answer show the not-student line? не студент.
+prompt=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
+promptLetter=Вы говори́те?
+options=Он не студент | Нет, не говорю́ | Да, говорю́
+answer=Он не студент
+feedback=The frozen example He's not a student is the one omitted in the present form, with the particle on its own. Он не студент.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the not-student line?
-testedFeature=NOT_STUDENT_LINE
+distractorRationales= | The frozen example No, I'm not speaking adds the particle before the speaking word. | The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
+testedFeature=PARTICLE_ALONE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u24-verbal-ne-1-ru
-distractorSourceIds= | prov-ex-u24-verbal-ne-2-ru
-distractorDifference= | Does this row fail the not-student line?
-whyAnswerDemonstratesObjective=Does this answer show the not-student line?
-contrastMembers=не студент | не приходит
+answerSourceIds=prov-ex-u24-verbal-ne-3-ru
+distractorSourceIds= | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-0-ru
+distractorDifference= | This example adds the particle before the speaking word. | This example is the agreeing reply, without the particle.
+whyAnswerDemonstratesObjective=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+contrastMembers=Он не студент | Нет, не говорю́ | Да, говорю́
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-verbal-ne-0-ru | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-2-ru
-responseKind=RUSSIAN_PHRASE
+relationParticipantIds=prov-ex-u24-verbal-ne-2-ru | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u24-i-verbal-ne-2`
 
@@ -935,31 +991,31 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9f11992c37343236d342476c7ad4f5e229b1092aeab842a9a1e39703272ba92
+- Content hash: 46fb2efdc6a3b6da828aaf73252669819b97337a2e3fce7cf1008be3a3e1fd94
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the not-coming line?
-promptLetter=не говорю́
-options=не приходит | не студент
-answer=не приходит
-feedback=Does this answer show the not-coming line? не приходит.
+prompt=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
+promptLetter=Нет, не говорю́
+options=Борис не приходит | не студент | не говорю́
+answer=Борис не приходит
+feedback=The frozen example Boris isn't coming places the particle before the coming word. Борис не приходит.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the not-coming line?
-testedFeature=NOT_COMING_LINE
+distractorRationales= | The frozen example He's not a student uses the particle on its own because the present form is omitted. | The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
+testedFeature=PARTICLE_BEFORE_COMING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u24-verbal-ne-2-ru
-distractorSourceIds= | prov-ex-u24-verbal-ne-1-ru
-distractorDifference= | Does this row fail the not-coming line?
-whyAnswerDemonstratesObjective=Does this answer show the not-coming line?
-contrastMembers=не приходит | не студент
+answerSourceIds=prov-ex-u24-verbal-ne-4-ru
+distractorSourceIds= | prov-u24-verbal-ne-x-0 | prov-ex-u24-verbal-ne-1-ru-r1
+distractorDifference= | This short line uses the particle on its own with the student word. | This short line places the particle before the speaking word.
+whyAnswerDemonstratesObjective=The frozen example Boris isn't coming places the particle before the coming word.
+contrastMembers=Борис не приходит | не студент | не говорю́
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-verbal-ne-0-ru | prov-ex-u24-verbal-ne-2-ru | prov-ex-u24-verbal-ne-1-ru
+relationParticipantIds=prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-4-ru | prov-u24-verbal-ne-x-0 | prov-ex-u24-verbal-ne-1-ru-r1
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u24-i-absence-1`
@@ -970,31 +1026,31 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0f89b5d5f60c3006cbaacc36e52c45fcf6f92c5bc61ed6eaa1dbec8834386b0
+- Content hash: cbfa85d4560cf4de48fbce13c7780f1e9394f224faba4571c90d74e38ee8ba67
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the existence form?
+prompt=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
 promptLetter=нет
-options=есть | не
+options=есть | не | Да
 answer=есть
-feedback=Does this answer show the existence form? есть.
+feedback=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement. есть.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the existence form?
-testedFeature=EXISTENCE_FORM
+distractorRationales= | The frozen note adds this particle before a word. It is not the form that means exists. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
+testedFeature=EXISTS_WORD
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-absence-0-ru
-distractorSourceIds= | prov-ex-u24-absence-2-ru
-distractorDifference= | Does this row fail the existence form?
-whyAnswerDemonstratesObjective=Does this answer show the existence form?
-contrastMembers=есть | не
+distractorSourceIds= | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
+distractorDifference= | This particle is not the form that means exists. | This token is the agreeing reply, not the exists word.
+whyAnswerDemonstratesObjective=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+contrastMembers=есть | не | Да
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-absence-1-ru | prov-ex-u24-absence-0-ru | prov-ex-u24-absence-2-ru
+relationParticipantIds=prov-ex-u24-absence-1-ru | prov-ex-u24-absence-0-ru | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u24-i-absence-2`
@@ -1005,31 +1061,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f86c863b6bae985dd0e9b54d76b921a3f2fd4fe8d679388b700e3fe29bf1d6c5
+- Content hash: 788bddcd4542426fecd4a99e7fc69bc0522b1d2770388171e893ad89ad3a1c3f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the particle form?
-promptLetter=нет
-options=не | есть
-answer=не
-feedback=Does this answer show the particle form? не.
+prompt=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+promptLetter=не
+options=нет | есть | Да
+answer=нет
+feedback=The frozen note says this replacement has a different meaning from the reply that means no. нет.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | Does this row fail the particle form?
-testedFeature=PARTICLE_FORM
+distractorRationales= | The frozen note uses this form to mean 'exists' before replacing it. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
+testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u24-absence-2-ru
-distractorSourceIds= | prov-ex-u24-absence-0-ru
-distractorDifference= | Does this row fail the particle form?
-whyAnswerDemonstratesObjective=Does this answer show the particle form?
-contrastMembers=не | есть
+answerSourceIds=prov-ex-u24-absence-1-ru
+distractorSourceIds= | prov-ex-u24-absence-0-ru | prov-u24-absence-x-0
+distractorDifference= | This form means exists, so it is the form being replaced. | This token is the agreeing reply, not the replacement.
+whyAnswerDemonstratesObjective=The frozen note says this replacement has a different meaning from the reply that means no.
+contrastMembers=нет | есть | Да
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u24-absence-1-ru | prov-ex-u24-absence-2-ru | prov-ex-u24-absence-0-ru
+relationParticipantIds=prov-ex-u24-absence-2-ru | prov-ex-u24-absence-1-ru | prov-ex-u24-absence-0-ru | prov-u24-absence-x-0
 responseKind=RUSSIAN_TOKEN
 
 ### REFERENCE `ref-u2125-attribution`
@@ -1280,7 +1336,155 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee6b9ee740f724b170783507b1a5a2453601bceb675a6e784b3661114d451ae3
+- Content hash: dcf35525f742e24b278068eaed66b988d86c612edf894a34d5b4d2ac0ad3c086
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Yes, I'm speaking
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=f25c658221ac8a9422a58a9cd68575e9afe0220c03cae8807b005101e921a037
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-0-ru`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1a287fd41c2a2e1e4d5e2767ec8a7ce781398bf1c8b045b6121673bdb768f57c
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Да, говорю́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=d6aba452b4e6c07ddce1697f94bee4cd40f136c49d3cc72e0c10ee1ddf7eb8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-0-ru-r0`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c5c4b4f336fd92dce7b7ef1c7cb07ecebe077122aabf3c67a95aad095b24efa3
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Да
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=93e6073f9005224b87428f26194784deb52ed7c12da309105f100db2b2a06299
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-0-ru-r1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51464b1b7d782a32bf9bca872188eb052e5cad3eae9862949e254eec7cfd6b42
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=говорю́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=1da7e603d5de973ed4a9f180bda8699dc65f8d64745ae3ee388777db96750878
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-1-en`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbfde46210611daafba1948b794510b6db2638a45d3d80045b917563e3dd4bf5
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1309,7 +1513,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u24-verbal-ne-0-ru`
+### PROVENANCE `prov-ex-u24-verbal-ne-1-ru`
 
 - Objectives: obj-u24-verbal-ne
 - Sessions: u24-s-orient, u24-s-verbal-ne
@@ -1317,7 +1521,81 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba9545a1ec914eb086a847ff272ae32fb24a079db6228ecc72fc00d1b4a22c68
+- Content hash: 16333f52ba9f7ab39182ad0dfe550efba1deef50bf11f0fa4e50d25eeb4689c6
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Нет, не говорю́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=557de97ba45ad1ef86e1a51c7ecd95e995626dbedd9bdc64236abb7e8bab159a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-1-ru-r0`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9a14a9f6e043cdae5c57ae22ba2cc896ce5eabb34a03228a610697501a1552ad
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Нет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=43e5ab70f691a6a6391be1da21bc18c31c04892ceb19fde88e44ad50c5ec9052
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-1-ru-r1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 301ae2561c1e7c7bcdf5352af6f778f883ca18ba208b36b2713667ce8a15701e
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1346,7 +1624,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u24-verbal-ne-1-en`
+### PROVENANCE `prov-ex-u24-verbal-ne-2-en`
 
 - Objectives: obj-u24-verbal-ne
 - Sessions: u24-s-orient, u24-s-verbal-ne
@@ -1354,7 +1632,81 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55da80b7d5196b3c6b287522f170ab9a6777d21d07d62ce82e2bab200e8c5f3b
+- Content hash: 9dae7d99372d42d3f5e9eeafed3a00ed50ca312721c115ee430e8805cfb63000
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Are you speaking?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=dd5e68a905065ed897f7f8e81709238865c85c699fad133c9d005b0ac774ae0a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-2-ru`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b7b7be2cba65a73a7fc7c86d9073666501f014e0dc38226bdf817215eba7aa4f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Вы говори́те?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=7de30c54e5512329189f7292b960b2c71470057c16addf08959aa521dd70d95a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-verbal-ne-3-en`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3367ac9e947bc95e56acb4630e895bce3a26e6a2c9505a2d6b7bb2619942a8bc
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1383,7 +1735,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u24-verbal-ne-1-ru`
+### PROVENANCE `prov-ex-u24-verbal-ne-3-ru`
 
 - Objectives: obj-u24-verbal-ne
 - Sessions: u24-s-orient, u24-s-verbal-ne
@@ -1391,7 +1743,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec4cc081e6aba50efb5a211e0e9a9a203e39c9bda8c120abdc48da67750b4f40
+- Content hash: b8e94fb5e2c2fa676f0c44556c052941ea2c607c7b1d33b187ccba4ec0421800
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1406,21 +1758,21 @@ originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the 
 :Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
 
 The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
-shippedText=не студент
+shippedText=Он не студент
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
-contentHash=f0c86d318f2f9bd98127d6a70154242d5bde79baf736131182780cfa59a3f976
+contentHash=cc1ecdcf74dbcf1f75e04d09b93e9f33a4b275eac6bdedfe1e6b7ae85dc744bd
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u24-verbal-ne-2-en`
+### PROVENANCE `prov-ex-u24-verbal-ne-4-en`
 
 - Objectives: obj-u24-verbal-ne
 - Sessions: u24-s-orient, u24-s-verbal-ne
@@ -1428,7 +1780,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2e4bf9c4c11c32b8845573c306b5f7fe70855362bbfde693bc59dbce7655fbd
+- Content hash: d04212f32da7b0b652c5d6d5283108ff8980b1f90d898b5399aa0c71a5007589
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1457,7 +1809,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-ex-u24-verbal-ne-2-ru`
+### PROVENANCE `prov-ex-u24-verbal-ne-4-ru`
 
 - Objectives: obj-u24-verbal-ne
 - Sessions: u24-s-orient, u24-s-verbal-ne
@@ -1465,7 +1817,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64afce6d8e31b0036df63351e4160c735f9c6e00623853b04e3973577cdd693e
+- Content hash: de82900528083885211221a6c3ed379891fa21115d4b0ecb22ac8a8a44deb90d
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
@@ -1480,14 +1832,14 @@ originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the 
 :Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
 
 The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
-shippedText=не приходит
+shippedText=Борис не приходит
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
-contentHash=265b57dffad779c8832cbe1d9238866e1c357fda8e144e7a4d9de6cd5a90ecc0
+contentHash=5455d8e6afdd487df5605c29aad83db51789a67ea99f9d5a4b6f30ac84ed4f18
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1546,6 +1898,43 @@ attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen o
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d64bc02196c45ce6bdf92c3c9f63147f2317a79545348869e4f246282f2d4db7
 contentHash=dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-absence-x-0`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6d9e4886c5a00b4e1d4475774d52ab042d954fb91976ac7f3491864cac74a40e
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
+
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=Да
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=93e6073f9005224b87428f26194784deb52ed7c12da309105f100db2b2a06299
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1626,148 +2015,79 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u24-090`
+### PROVENANCE `prov-u24-verbal-ne-x-0`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08722db14b595735dca221f3f27f6deea91ff11ce36b52f1c5d52e55a7944795
+- Content hash: 23221cbacfda96fba3a6794c97faf1b77d846d6f32d3c0c2eb9c3a257e773ee6
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
 
-### AUTHORED_ENGLISH `en-u24-091`
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=не студент
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=f0c86d318f2f9bd98127d6a70154242d5bde79baf736131182780cfa59a3f976
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+### PROVENANCE `prov-u24-verbal-ne-x-1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfcc5aaa9ca41e765490dbf143652a66ba074c3135df5672660fc9f4e568adc6
+- Content hash: 5a920480461312dd62013d36ca4a331f308f68a05d79d0554dde982c7bf54ca3
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the not-speaking line?
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876
+sourceRevision=4233876
+sourceRecordId=verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaki
+originalSourceText=To negate a verb, simply add '''не''' (''nye'') before the verb:
+:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''
+:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''
+:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''
+:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own
+:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''
 
-### AUTHORED_ENGLISH `en-u24-092`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33ecaca970a5ec8405d7eb3b8bbffc2d95b379eecff656dc82974725a5f8384c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the not-speaking line?
-
-### AUTHORED_ENGLISH `en-u24-093`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7146c887c12edef6ce3142b730ce81465e4b4adc45f0ddef57089ea66a2ab491
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the not-speaking line?
-
-### AUTHORED_ENGLISH `en-u24-094`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e7c0afbc1ecc30db2a9af9ef720948157b669a7b007325caa6302bc1ebbace6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u24-095`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37dcbfb3006b9972c563474416c854dfbcf7820f3c33f3cdfa199b202477692c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the not-student line?
-
-### AUTHORED_ENGLISH `en-u24-096`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29ac47b20a739b4d622b7db6b3606c0c4395b118aab86e418f0ef28be0afbf83
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the not-student line?
-
-### AUTHORED_ENGLISH `en-u24-097`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 961431063fc847c9008271d8bc580be1248a3be401098f3b46eed75591f078b8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the not-student line?
-
-### AUTHORED_ENGLISH `en-u24-098`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81478ec6c5d9d1cd11bf9f42e0eee1d9757eda891d86446eb34ef043815d391e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the not-coming line?
-
-### AUTHORED_ENGLISH `en-u24-099`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39c144f0b2390ff03e71cfb2d8e006b960960ef3e526e5db8e1bb3124e175363
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the not-coming line?
-
-### AUTHORED_ENGLISH `en-u24-100`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4d45aa167c71fe54fa6dfa57dc537e13e30620aa1e6535cc9727cdaa774ee58
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the not-coming line?
+The phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'.
+shippedText=не говорю́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9
+contentHash=52ed3200eef557bc3f96567529f41a5df0ac323dc562c42d424871151fc83662
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### AUTHORED_ENGLISH `en-u24-101`
 
@@ -1777,10 +2097,10 @@ text=Which admitted line is the not-coming line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a1ce322c41d9c9fedc7a53ac0489811c9a5e7d947b57ef898e0387547e6aa9a
+- Content hash: f884fd8d97016519290f66888bddef0f3bfdf97157f263fa0857a51d6cb25152
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the absence form?
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u24-102`
 
@@ -1790,10 +2110,10 @@ text=Does this row fail the absence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3247913eff46f70efc52b6590fbf0eb2167208d69b172c82695a3a322c4a57e1
+- Content hash: a2868ca5a2da4de531ab26da277104eae73d4981e781a87baf444f6abb9c0243
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the absence form?
+text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
 
 ### AUTHORED_ENGLISH `en-u24-103`
 
@@ -1803,10 +2123,10 @@ text=Does this answer show the absence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd9f306205942605eb991081d80af0522c2dd7285311caa4f23aa8dbb01b4f1a
+- Content hash: 41041805b37abe223fe6cae90d66e3761d09179e20ec7a3ea7ede07d4df38b13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the absence form?
+text=The frozen example Are you speaking? is the question before the reply.
 
 ### AUTHORED_ENGLISH `en-u24-104`
 
@@ -1816,10 +2136,10 @@ text=Which admitted line is the absence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd17bb2f47a9af9d032538758dfe60e1e42abc48f3416dc7eb3fd1e2598da677
+- Content hash: c2ca404f67a53ef9d114468065aafb76fd6dca61caf4d328586dd991e39a42d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the existence form?
+text=This example omits the present form instead of adding the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-105`
 
@@ -1829,10 +2149,10 @@ text=Does this row fail the existence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15b93e7ca25f3cc7560b4b2d104ff1fb7bba75606c08eb4e1eefc29f3aebcd55
+- Content hash: 72993a9717f7f12aa988a9f9f5e3f18177111dd2fe132577392331607464955b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the existence form?
+text=This example is the question, not the reply with the particle added.
 
 ### AUTHORED_ENGLISH `en-u24-106`
 
@@ -1842,10 +2162,10 @@ text=Does this answer show the existence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c2f8b21f52e5acc8c0e7e96abb5f9c8487c98e89de0da1a2fb6f3fae0e2f7d7
+- Content hash: 203f87cd2960d3f3a4d2b1e90e5278d4a324b57577e3c89505752e1122438c0a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the existence form?
+text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-107`
 
@@ -1855,10 +2175,10 @@ text=Which admitted line is the existence form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b0af85a50eeae7dcea00d69b5ccf04127d19c0d2f28ee2f0d5c3dc15e86384a
+- Content hash: 295e3725c9435842de2d70ae0342ff2b157e30a8c12f6b81aa81706475620350
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the particle form?
+text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
 
 ### AUTHORED_ENGLISH `en-u24-108`
 
@@ -1868,10 +2188,10 @@ text=Does this row fail the particle form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 776b6a06a20e2ed8c0e8e039990ee3bb2db637413ea18b7f17af5b394340a68e
+- Content hash: c9486f4e672822e5795d1cb126ad7aaba45ca0854931de3c3258508218973a35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the particle form?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u24-109`
 
@@ -1881,10 +2201,10 @@ text=Does this answer show the particle form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39e5af7fc4a8e2e67f575e50080a8d517cf952ecd20d97f65bb762b35037e11c
+- Content hash: e39a15205a4e275e0f67ea00502d766fdfcafc2e60c89449b5a0ab237a801f95
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the particle form?
+text=The frozen example No, I'm not speaking adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-110`
 
@@ -1894,10 +2214,10 @@ text=Which admitted line is the particle form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4de30bee7cdd69877fc7035fc4f3f222cfde65f3b5893aae3194bd68198ce067
+- Content hash: f0bbc7f74dbe19d2e0d1eb5dcf2752b27b11a792dce01ff51ee10b566e039e5e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-111`
 
@@ -1907,10 +2227,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2811acd1263d4686896ceabe4ba2474e08207e383742dfaf9f8a9371e7f6a3e7
+- Content hash: 97a847e088346de9218409817e0dc0f651ed4a900f7d3526c66b2d20ae8d688b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses frozen verbal negation lines and the admitted absence form. Object-form choice under negation, negative stand-in forms, and placement contrasts stay in the copy you own. Qualified review is pending.
+text=This example adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-112`
 
@@ -1920,10 +2240,10 @@ text=Proposed Unit 24 uses frozen verbal negation lines and the admitted absence
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c948987e6b8fca224112d696f772933aa94a773a408813e23a6de0ec9800704c
+- Content hash: aa6fbc1819ea5b5407b8f9a65e2a72c9d6093e8e906c8dcd7bf2c3afd8fb6939
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=This example is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-113`
 
@@ -1933,10 +2253,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59c5020a4de5b00d3cd44bd1f170f7ef8a05169f2aeaa6d553b8c6ef15a2dde6
+- Content hash: bf8ef91865fc9b251564eb70755cbdd1f1b34a3c499669948d2cf752c3acbd49
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
 
 ### AUTHORED_ENGLISH `en-u24-114`
 
@@ -1946,10 +2266,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 05e5408035b87cb44cf0ee3f4b73900aa95c99b784df28c22ca2e63875d0eb66
+- Content hash: beb119560d2545ef1ec25fef6d3687aba298f6b437683e8a8d6a8f23ac0f1d4f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-115`
 
@@ -1959,10 +2279,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 100799e377996d97b6b46c638ac6d67044120d9dd23a5ffd6d37f15d6c5751a8
+- Content hash: 75b94c02b98dc793e04460b5a86af641ee904f72ecbff3581a6528203a7fbbef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
 
 ### AUTHORED_ENGLISH `en-u24-116`
 
@@ -1972,10 +2292,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae75c3385cc43a302bd879dd4e08641f409d95686dd577e1e96737719f38748d
+- Content hash: 5082251b7a6f19d94f6c8457c33c3961504f767ee18654b6456aa4ab1ab214cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-117`
 
@@ -1985,10 +2305,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64426265b6c8f466e0082646790ca02938a66505447d5d2b13ad44204a9f46a9
+- Content hash: 1a4f5c297f6f4a2e6bd030ec59c0c61f9ca7030019ad1ef2e8dfbe1159c1702c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=This short line uses the particle on its own with the student word.
 
 ### AUTHORED_ENGLISH `en-u24-118`
 
@@ -1998,10 +2318,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37054561717ed2e97c299029871a6b58b3f7fcad644a7eeb1d4c1f184294d105
+- Content hash: b54e8d34a963aea3ff041761c69223bd35d62fbc448d168d8f0ba1bff0a498b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=This short line places the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-119`
 
@@ -2011,10 +2331,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e6488dd72407b6d2f4e63d33f6cf56a4da483f3faf21ba85da00bc5a21f6646
+- Content hash: 6770d83429273afd99d43aa7b2ae8f12cac451fc2174f12824f4c4d68ae2d819
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The frozen example Boris isn't coming places the particle before the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-120`
 
@@ -2024,10 +2344,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1450cb89d5dfb55ad55236afe62c303134502c69dcd2a8dec343ec3a603d0780
+- Content hash: cedfb46a8699cd500204f9bb12a63e46a83b6e3653b986006ab2cb401a37ee73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-121`
 
@@ -2037,10 +2357,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5ca1b61c7192536b9d4fc55afb01b95c9192f63c969e3e821b0d6403b7b7660
+- Content hash: 63b9c6a0e639b781dc13145a8bbc9dcc9892f0fa2b8a3dfa5cab11083018da14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-122`
 
@@ -2050,10 +2370,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4aa9692e94976ff4b774cb4d0e32bc4f3117ceb33572376a2a3d2d18fceb3bbd
+- Content hash: cc4a709422458791a6ff30f7018381878479edef164f6f53bfe8f2e8456a92da
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-123`
 
@@ -2063,10 +2383,10 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dae02c82fcddc1f9b71e83e665b1c5c2ad393332a7f904eca15a6c63e9ef0af1
+- Content hash: b3626c1f74208a2e1bbeedd408edf07e7842bc9c7613be2c7a4646c862bd1ff6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 24 work in your copy.
+text=This particle is placed before a word, not used as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-124`
 
@@ -2076,10 +2396,10 @@ text=Self-attest only after the Lesson 24 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e8195e6d3e2962068bfd5d311807d4c06e80a782a7236bc9e0bdf7ef196ad9f
+- Content hash: 5411bca3e0b6d0279e4c4b855814ac35e4ed3de08d8f26b27d5afc1a75b96675
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Object-form choice under negation stays in the copy you own
+text=This token is the agreeing reply, not the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-125`
 
@@ -2089,10 +2409,10 @@ text=Object-form choice under negation stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 196ac87a8cfe55cfb91840de1b547a1a7a46f42b5cb5ef25b6c61e29ffba9fa3
+- Content hash: 67a0488f012840758ba8d56b4e8307b56a41b2bf62e2c46eba59751f9d87f3b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Object-form choice under negation stays in the copy you own. The frozen lines do not supply that pattern.
+text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-126`
 
@@ -2102,10 +2422,10 @@ text=Object-form choice under negation stays in the copy you own. The frozen lin
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb2ec51852f4d8c7537027beb142a1945408e878e7f9e7eafe784e186840a97c
+- Content hash: 22a1715934a2d1fbd758d9111738c7e269fb1a6b7af309e0a3eb1c53bdb3480a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Negative stand-in forms stay in the copy you own
+text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
 
 ### AUTHORED_ENGLISH `en-u24-127`
 
@@ -2115,10 +2435,10 @@ text=Negative stand-in forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff882f7039d08c675c59bba692ea95af504f5d019da7038438e1cb1f91977fc3
+- Content hash: 70f1200601f3a7224992827dcfce0667afd5603ff471924ac97d955142f7e594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Negative stand-in forms stay in the copy you own. The frozen lines do not supply that pattern.
+text=The frozen note adds this particle before a word. It is not the form that means exists.
 
 ### AUTHORED_ENGLISH `en-u24-128`
 
@@ -2128,10 +2448,10 @@ text=Negative stand-in forms stay in the copy you own. The frozen lines do not s
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db1119405114f8f81c00a890036529358313d94d8e801cc7817c2b1c77a284d9
+- Content hash: a05abf59ea549fef5bc2620ee14ec221d62b80eece56188131ab5f59503d6649
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own
+text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 
 ### AUTHORED_ENGLISH `en-u24-129`
 
@@ -2141,7 +2461,358 @@ text=Placement contrasts stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c10a4762a6bb84b97e0bf017d3b0cf3f9aaa597eac6d64dbf9992a62f90ebb7
+- Content hash: 7ca4fd81377854cf3ec3d7647ef27ea2842f0aa8a5e12efdb4d206394ff586a1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This particle is not the form that means exists.
+
+### AUTHORED_ENGLISH `en-u24-130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 018b724d3c146199e678fdac3718ca354edca19db9d6d75f008bb91da61d0192
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This token is the agreeing reply, not the exists word.
+
+### AUTHORED_ENGLISH `en-u24-131`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bb51d2cf8f89a8906600cbf94536bf98bedf3f29055143296448881598f5610d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+
+### AUTHORED_ENGLISH `en-u24-132`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5e358914a6d56b3c12bd38784b9a8c31546fe78dcd04d79227257a5a51b594c4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
+
+### AUTHORED_ENGLISH `en-u24-133`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4ccd0448e6a07de902fa34651c0098c93ad0fa700905d6c57feb51bdfa258b5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen note uses this form to mean 'exists' before replacing it.
+
+### AUTHORED_ENGLISH `en-u24-134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 87b0d00afec5d12e54840061c222bd39b6ccbd304cbd4ec184b5d57f01f89e20
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form means exists, so it is the form being replaced.
+
+### AUTHORED_ENGLISH `en-u24-135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a20eee3cff15dd652f49e5d30d5c93d76225d95fc9e6d2b4ec493072fedd2182
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen note says this replacement has a different meaning from the reply that means no.
+
+### AUTHORED_ENGLISH `en-u24-136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d5d07b8fee7aaa6df3fcbd64552705601e7e98c0db65bba8ebee247c7b44976d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+
+### AUTHORED_ENGLISH `en-u24-137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 65ecc38561c38d4af17819a00d8af87819acd16cacf5398d2a7751f06e13672a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted negation lines
+
+### AUTHORED_ENGLISH `en-u24-138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b9986d08a028d7d829b6f4b210e99449ec2e994b938f36951190e9fcff4003ec
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 24 uses frozen verbal negation lines and the admitted absence form. Object-form choice under negation, negative stand-in forms, and placement contrasts stay in the copy you own. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u24-139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bace6ac5bd4bbe4bcb0d483cd61234f5fa9c164ba80f50991b882f56f3dd0d81
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u24-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d430db2ddc791e99dbeb1c8721b8b643e4b6da4b599f94de0ab61c75c5532936
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u24-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0a9d1d75a3f14db183d12e0f9aea41b2f231bff1f1aca0b42e4078231784bcfe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u24-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7b60b5738b0f8a9e84989ed819b85e56fb49cf28614183041a36c074e831a930
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u24-143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0436eb8a1464bf92e66ffc8a9fb8bf80b14b28d04f4d452e8efc587b147a9546
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u24-144`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 91f3374791971e71b542d6137f19d634d6ebbb83ec14028947c15122fcf2eb3b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u24-145`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9452ebe1c58fc5f62dbac2c0f10b93737cc9233ecde887e890322d71c8c8ea8b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 24 in your copy
+
+### AUTHORED_ENGLISH `en-u24-146`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ec35db9511216d31618e9263575acf21405278e97286955b1a4f1021df86d5b0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u24-147`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 28d3795df347e282271e27a82ca2993b89a26c723212c81423cda16d287b7e8b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 24 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u24-148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d1027c2eac0f8daef7d46e228fca1e483a65931f63c76abbcc8428393b02cd25
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 24 book work
+
+### AUTHORED_ENGLISH `en-u24-149`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5686f3f82eab535e2e2e9641736d76f21c9145c37d413e610035e25dc3384a54
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u24-150`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 107bc4fa6a130f85c0804d43884fb8d4011fc6e35794b79b2944f276ee1f17cc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 24 work in your copy.
+
+### AUTHORED_ENGLISH `en-u24-151`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3f4b419c2e3d07f8a480edb33ab7f79de232128419fc6fa406f4f5630ff42c57
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Object-form choice under negation stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-152`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8463baa0327186c325c1707cad228ac7e7aece84cfa4110882d1288a870e4b81
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Object-form choice under negation stays in the copy you own. The frozen lines do not supply that pattern.
+
+### AUTHORED_ENGLISH `en-u24-153`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d602cdbf3578764d7c01fd8f1f640e50c2c361b8ef1e398c50b00988882cb328
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Negative stand-in forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: adcf45d71034c1792672aa9fe1c321c30b506539d421deea11d987f319c80924
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Negative stand-in forms stay in the copy you own. The frozen lines do not supply that pattern.
+
+### AUTHORED_ENGLISH `en-u24-155`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 88864fd3d8273e24da46ee02e4fb3581a2da3db2c98d1a145d0fe999ddf83eec
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Placement contrasts stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 01a9fbaf6e05abed1668843b49ae01b43ead9ed1d090fd5856019575a172013a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.
@@ -2210,9 +2881,12 @@ permitsAppUse=true
 - `obj-u24-verbal-ne` INSTRUCTION `u24-st-teach-verbal-ne-1`
 - `obj-u24-verbal-ne` INSTRUCTION `u24-st-teach-verbal-ne-2`
 - `obj-u24-verbal-ne` INSTRUCTION `u24-st-teach-verbal-ne-3`
+- `obj-u24-verbal-ne` INSTRUCTION `u24-st-teach-verbal-ne-4`
 - `obj-u24-verbal-ne` EXAMPLE `ex-u24-verbal-ne-0`
 - `obj-u24-verbal-ne` EXAMPLE `ex-u24-verbal-ne-1`
 - `obj-u24-verbal-ne` EXAMPLE `ex-u24-verbal-ne-2`
+- `obj-u24-verbal-ne` EXAMPLE `ex-u24-verbal-ne-3`
+- `obj-u24-verbal-ne` EXAMPLE `ex-u24-verbal-ne-4`
 - `obj-u24-verbal-ne` PRACTICE `u24-st-guided-verbal-ne-1`
 - `obj-u24-verbal-ne` CHECK `u24-i-verbal-ne-1`
 - `obj-u24-verbal-ne` CHECK `u24-i-verbal-ne-2`
@@ -2245,7 +2919,10 @@ permitsAppUse=true
 - `u24-st-guided-verbal-ne-1` ITEM `u24-g-verbal-ne-0`
 - `u24-st-teach-verbal-ne-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-verbal-ne-3` EXAMPLE `ex-u24-verbal-ne-2`
+- `u24-st-teach-verbal-ne-3` EXAMPLE `ex-u24-verbal-ne-3`
 - `u24-st-teach-verbal-ne-3` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-verbal-ne-4` EXAMPLE `ex-u24-verbal-ne-4`
+- `u24-st-teach-verbal-ne-4` REFERENCE `ref-u2125-attribution`
 - `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-0`
 - `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-1`
 - `u24-st-check-verbal-ne` REMEDIATION `u24-st-rem-verbal-ne`
@@ -2281,14 +2958,25 @@ permitsAppUse=true
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-2-ru`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-0-en`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-0-ru`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-0-ru-r0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-0-ru-r1`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-1-en`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-1-ru`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-1-ru-r0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-1-ru-r1`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-2-en`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-2-ru`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-3-en`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-3-ru`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-4-en`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-4-ru`
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-rem`
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-rem-r0`
+- `obj-u24-absence` PROVENANCE `prov-u24-absence-x-0`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-rem`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-rem-r0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-x-0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-x-1`
 
 ## Book-directed experiences
 
