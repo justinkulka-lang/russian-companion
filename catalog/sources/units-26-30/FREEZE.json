@@ -1,0 +1,111 @@
+{
+  "retrieved": "2026-09-24",
+  "license": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "wikibooksLicenseTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
+    "wikibooksLicenseTextSha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+    "wikibooksLicenseOldid": "4622060",
+    "statement": "English Wikipedia article text at the frozen oldids is CC BY-SA 4.0. English Wikibooks text is CC BY-SA 4.0 as stated by the retained Wikibooks:Copyrights oldid 4622060, which was re-fetched and found byte-identical to the repository record. Page history for each frozen oldid identifies contributors. Linked media, Phonos, and audio are not covered."
+  },
+  "decisions": [
+    {
+      "id": "wikipedia-russian-grammar-1369617627",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Exact spans for word order, respectful written Вы capitalization, two indeclinable abbreviation examples, short-form adjectives, passive participles, verbal adverbs, active participles, and the bookish-speech observation about adverbial participles. The rest of the article is retained and not ingested as curriculum."
+    },
+    {
+      "id": "wikipedia-russian-alphabet-1371795481",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Letter-name cells from the frozen alphabet table for Unit 30 review only. Unit 1 remains the first introduction. Embedded audio, Phonos, and Commons media are not admitted."
+    },
+    {
+      "id": "wikibooks-russian-various-stuff-3353858",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Only the address-notation lines and their abbreviation glosses. Anecdotal postal advice is excluded."
+    },
+    {
+      "id": "wikibooks-various-stuff-anecdotal-postal-3353858",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Claims that a postal index is not vital, that delivery time is predictable, personal recommendations, and international hearsay stay out of learner-facing content."
+    },
+    {
+      "id": "wiktionary",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "Wiktionary remains excluded. No entry is admitted for particles or any other strand."
+    },
+    {
+      "id": "embedded-wikimedia-audio",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "Phonos, pronunciation.ogg, and Commons media linked from the frozen pages are not admitted and are not bound as audio."
+    },
+    {
+      "id": "penguin-private-pdf",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "The private owned PDF is not curriculum. Its prose, examples, exercises, readings, and page images are not admitted."
+    },
+    {
+      "id": "mutable-webpages",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "A current page, a URL without oldid, a search snippet, or a commercial grammar page is not a frozen record."
+    }
+  ],
+  "pages": [
+    {
+      "key": "grammar",
+      "title": "Russian grammar",
+      "oldid": "1369617627",
+      "url": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "file": "wikipedia/russian-grammar-1369617627.txt",
+      "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+      "revisionFile": "wikipedia/russian-grammar-1369617627.revision.json",
+      "mediawikiSha1": "b0d918fad1e27c15eaed7feb7171b4fe36de8d20",
+      "parentid": 1367678642,
+      "timestamp": "2026-08-16T02:18:44Z",
+      "size": 165374,
+      "retrieved": "2026-09-24",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors."
+    },
+    {
+      "key": "alphabet",
+      "title": "Russian alphabet",
+      "oldid": "1371795481",
+      "url": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+      "file": "wikipedia/russian-alphabet-1371795481.txt",
+      "sha256": "6bc0e74576c4e0170cbb8e503d7f16c911d8849713756f1d5b3c0f0995197305",
+      "revisionFile": "wikipedia/russian-alphabet-1371795481.revision.json",
+      "mediawikiSha1": "d2bea69534132f37a3f614da0c219b74bcf33af8",
+      "parentid": 1371785356,
+      "timestamp": "2026-08-28T13:58:43Z",
+      "size": 56784,
+      "retrieved": "2026-09-24",
+      "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors."
+    },
+    {
+      "key": "address",
+      "title": "Russian/Various Stuff",
+      "oldid": "3353858",
+      "url": "https://en.wikibooks.org/w/index.php?title=Russian/Various_Stuff&oldid=3353858",
+      "file": "wikibooks/various-stuff-3353858.txt",
+      "sha256": "123fb1d05952ebb36d7f217fb36db17654e521d03e71020aeda1f3e886768cf0",
+      "revisionFile": "wikibooks/various-stuff-3353858.revision.json",
+      "mediawikiSha1": "02f6d0027b2c24315a11f12ae9eabb0a4f308fa5",
+      "parentid": 3237679,
+      "timestamp": "2017-12-25T06:15:08Z",
+      "size": 8593,
+      "retrieved": "2026-09-24",
+      "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors."
+    }
+  ]
+}

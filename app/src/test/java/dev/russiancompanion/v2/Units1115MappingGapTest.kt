@@ -69,7 +69,7 @@ class Units1115MappingGapTest {
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number })
         }
-        assertTrue(pack.units.drop(25).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
         assertFalse(File(repo(), "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -99,6 +99,8 @@ class Units1115MappingGapTest {
             installState = "DEVELOPMENT",
             readiness = "CONTENT_COMPLETE_REVIEW_PENDING",
             mappingStatus = "PENDING_CURRICULUM_REVIEWER",
+            sessions = emptyList(),
+            objectives = emptyList(),
         )
         val errors = V2Validator.validate(replaceUnit(pack, claimed)).errors
         assertTrue(errors.joinToString("\n"), errors.any { it.contains("empty sessions or objectives do not count") })

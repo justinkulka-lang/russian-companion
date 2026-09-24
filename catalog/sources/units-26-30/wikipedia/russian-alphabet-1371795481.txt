@@ -1,0 +1,674 @@
+{{Short description|Modern writing system of 33 letters}}
+{{Use dmy dates|date=October 2020}}
+{{Infobox writing system
+| name        = Russian Cyrillic alphabet
+| type        = [[Alphabet]]
+| languages   = [[Russian language|Russian]] [[Reforms of Russian orthography|modern orthography]]: 1918 to present
+| fam1        = [[Egyptian hieroglyphs]]<ref>Himelfarb, Elizabeth J. "First Alphabet Found in Egypt", Archaeology 53, Issue 1 (Jan./Feb. 2000): 21.</ref>
+| fam2        = [[Phoenician alphabet]]
+| fam3        = [[Greek alphabet]] (partly [[Glagolitic alphabet]])
+| fam4        = [[Early Cyrillic alphabet]]
+| children    = 
+| unicode     = subset of [[Unicode Cyrillic|Cyrillic (U+0400...U+04FF)]]
+| iso15924    = Cyrl
+| native_name = Русская кириллическая азбука
+| sample      = Russian Cyrillic alphabet.svg
+| imagesize   = 350px
+}}
+
+The '''Russian alphabet'''{{efn|{{langx|ru|русский алфавит|russkij alfavit}}, {{IPA|ru|ˈruskʲɪj ɐlfɐˈvʲit|IPA}}; more traditionally also {{langx|ru|русская азбука|russkaja azbuka|label=none}}, {{IPA|ru|ˈruskəjə ˈazbʊkə|IPA}}}} is the [[writing system]] used to write the [[Russian language]].
+
+The modern Russian alphabet consists of 33 letters: twenty [[consonants]] ({{angbr|б}}, {{angbr|в}}, {{angbr|г}}, {{angbr|д}}, {{angbr|ж}}, {{angbr|з}}, {{angbr|к}}, {{angbr|л}}, {{angbr|м}}, {{angbr|н}}, {{angbr|п}}, {{angbr|р}}, {{angbr|с}}, {{angbr|т}}, {{angbr|ф}}, {{angbr|х}}, {{angbr|ц}}, {{angbr|ч}}, {{angbr|ш}}, {{angbr|щ}}), ten [[vowels]] ({{angbr|а}}, {{angbr|е}}, {{angbr|ё}}, {{angbr|и}}, {{angbr|о}}, {{angbr|у}}, {{angbr|ы}}, {{angbr|э}}, {{angbr|ю}}, {{angbr|я}}), a [[semivowel]] / consonant ({{Tooltip|{{angbr|й}}|short и}}), and two [[modifier letter]]s or "signs" ({{angbr|ъ}}, {{angbr|ь}}) that alter pronunciation of a preceding consonant or a following vowel.
+
+{{Listen
+| filename     = russian_alphabet.ogg
+| title        = Russian alphabet
+| description  = Listen to the Russian alphabet
+| pos          = right
+| embed        =
+| format       = [[Ogg]]
+}}
+{{TOC limit}}
+{{Clear}}
+
+==History==
+[[Old Church Slavonic]] emerged as a standard language in the 9th century as a result of the efforts of [[Cyril and Methodius]]; it was the first Slavic [[literary language]].{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=393}} A new script, later known as [[Glagolitic]], was based on [[Greek cursive]] but included new letters for vowels that did not exist in Greek.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|pp=393–394}} This script was soon replaced by [[Cyrillic script|Cyrillic]] in the 10th century, likely developed by the disciples of Cyril and Methodius and likewise based on the [[Greek alphabet]].{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=394}} The earliest evidence of Russian writing culture comes from [[birch-bark manuscript]]s dating to the 11th–15th centuries and written by laypeople.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=393}} 
+
+The [[early Cyrillic alphabet]] had 44 letters, many of which were used for numerals.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=401}} The alphabet was adapted to Russian from Old Church Slavonic, but over time it came to contain several redundant and superfluous letters as a result of [[phonological]] changes in Russian, including the loss of [[yer]]s.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=401}} [[Peter the Great]] made the first attempt to [[Reforms of Russian orthography|reform Russian orthography]] in 1708–1710.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=401}} The last major reform took place in 1917–1918.{{sfn|Rakhlin|Kornilov||Grigorenko|2017|p=401}}
+
+==Letters==
+{| class=wikitable
+|- style="vertical-align: bottom; background: #eee;"
+! Letter
+! [[Russian cursive|Cursive]]
+! Italics
+! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both" || {{n/a}} || U+0411 / U+0431
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[В]]в}}</big>
+| [[File:03-Russian alphabet-В в.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''В в''</span> || {{lang|ru|вэ}}<br/>{{IPA|ru|vɛ|}} {{Respell|ve/veh}}|| {{lang|ru-petr1708|вѣди}}<br/>{{IPA|[ˈvʲedʲɪ]}} || {{IPAblink|v}} or {{IPA|[vʲ]}} 
+|v|| '''v'''ine || {{lang|ru|'''в'''ода}} ''vodá''<br/>"water" || 2 || U+0412 / U+0432
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Г]]г}}</big>
+| [[File:04-Russian alphabet-Г г.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Г г''</span> || {{lang|ru|гэ}}<br/>{{IPA|ru|ɡɛ|}} {{Respell|ghe/gheh}}|| {{lang|ru-petr1708|глаголь}}<br/>{{IPA|[ɡɫɐˈɡolʲ]}} || {{IPAblink|ɡ}} or {{IPA|[gʲ]}} 
+|g|| '''g'''o || {{lang|ru|'''г'''од}} ''god''<br/>"year" || 3 || U+0413 / U+0433
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Д]]д}}{{ref|De|†}}</big>
+| [[File:05-Russian alphabet-Д д.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Д д''</span> || {{lang|ru|дэ}}<br/>{{IPA|ru|dɛ|}} {{Respell|de/deh}}|| {{lang|ru-petr1708|добро}}<br/>{{IPA|[dɐˈbro]}} || {{IPAblink|d̪|d}} or {{IPA|[dʲ]}} 
+|d|| '''d'''o || {{lang|ru|'''д'''а}} ''da''<br/>"yes" || 4 || U+0414 / U+0434
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Е]]е}}</big>
+| [[File:06-Russian alphabet-Е е.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Е е''</span> || {{lang|ru|е}}<br/>{{IPA|ru|je|}} || {{lang|ru-petr1708|есть}}<br/>{{IPA|[jesʲtʲ]}} || {{IPA|[je]}}, {{IPA|[&nbsp;ʲe]}} or {{IPAblink|e}} 
+|ye, je, e|| '''ye'''s  || {{lang|ru|н'''е'''}} ''ne''<br/>"not" || 5 || U+0415 / U+0435
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ё]]ё}}</big>
+| [[File:07-Russian alphabet-Ё ё.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ё ё''</span> || {{lang|ru|ё}}<br/>{{IPA|ru|jo|}} || – || {{IPA|[jo]}} or {{IPA|[&nbsp;ʲo]}} 
+|yo, jo, ë||'''yo'''gurt ||{{lang|ru|'''ё'''ж}} ''yozh''<br/>"[[hedgehog]]" || {{n/a}} || U+0401 / U+0451
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ж]]ж}}</big>
+| [[File:08-Russian alphabet-Ж ж.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ж ж''</span> || {{lang|ru|жэ}}<br/>{{IPA|ru|ʐɛ|| Russian Ж pronunciation.ogg}} || {{lang|ru-petr1708|живѣте}}<br/>{{IPA|[ʐɨˈvʲetʲɪ]}}{{sfn|Ushakov|1935|p=863|loc="живете"}}{{refn|group="lower-alpha"|The dictionary makes difference between {{lang|ru|е}} and {{lang|ru|ё}}.{{sfn|Ushakov|1935|p=833|loc="ёлка"}}}} || {{IPAblink|ʐ}} 
+|zh, ž|| mea'''s'''ure ||{{lang|ru|'''ж'''ук}} ''zhuk''<br/>"beetle" || {{n/a}} || U+0416 / U+0436
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[З]]з}}</big>
+| [[File:09-Russian alphabet-З з.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''З з''</span> || {{lang|ru|зэ}}<br/>{{IPA|ru|zɛ|}} {{Respell|ze/zeh}}|| {{lang|ru-petr1708|земля}}<br/>{{IPA|[zʲɪˈmlʲa]}} || {{IPAblink|z}} or {{IPA|[zʲ]}} 
+|z|| '''z'''oo || {{lang|ru|'''з'''ной}} ''znoy''<br/>"heat" || 7 || U+0417 / U+0437
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[И]]и}}</big>
+| [[File:10-Russian alphabet-И и.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''И и''</span> || {{lang|ru|и}}<br/>{{IPA|ru|i|}} {{Respell|ee}}|| {{lang|ru-petr1708|иже}}<br/>{{IPA|[ˈiʐɨ]}} || {{IPAblink|i}}, {{IPA|[&nbsp;ʲi]}}, or {{IPA|[ɨ]}} 
+|i|| pol'''i'''ce || {{lang|ru|'''и'''л'''и'''}} ''íli''<br/>"or" || 8 || U+0418 / U+0438
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Й]]й}}</big>
+| [[File:11-Russian alphabet-Й й.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Й й''</span> || {{lang|ru|и краткое}}{{Break}}'short i'<br/>{{IPA|ru|ˈi ˈkratkəjə|}} || {{lang|ru-petr1708|и съ краткой}}<br/>{{IPA|[ɪ s ˈkratkəj]}} || {{IPAblink|j}} 
+|y, i, j|| '''y'''ou or to'''y''' ||{{lang|ru|мо'''й'''}} ''moy''<br/>"my, mine" || {{n/a}} || U+0419 / U+0439
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[К]]к}}</big>
+| [[File:12-Russian alphabet-К к.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''К к''</span> || {{lang|ru|ка}}<br/>{{IPA|ru|ka|}} || {{lang|ru-petr1708|како}}<br/>{{IPA|[ˈkakə]}} || {{IPAblink|k}} or {{IPA|[kʲ]}} 
+|k|| '''k'''ept || {{lang|ru|'''к'''то}} ''kto''<br/>"who" || 20 || U+041A / U+043A
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Л]]л}}{{ref|El|‡}}</big>
+| [[File:13-Russian alphabet-Л л.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Л л''</span> || {{lang|ru|эль}}<br/>{{IPA|ru|ɛlʲ|}} || {{lang|ru-petr1708|люди}}<br/>{{IPA|[ˈlʲʉdʲɪ]}} || {{IPA|[ɫ]}} or {{IPA|[lʲ]}} 
+|l|| fee'''l''' or '''l'''amp || {{lang|ru|'''л'''уч}} ''luch''<br/>"ray" || 30 || U+041B / U+043B
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[М]]м}}</big>
+| [[File:14-Russian alphabet-М м.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''М м''</span> || {{lang|ru|эм}}<br/>{{IPA|ru|ɛm|}} {{Respell|em/ehm}}|| {{lang|ru-petr1708|мыслѣте}}<br />{{IPA |[mɨˈsʲlʲetʲɪ]}}{{sfn|Ushakov|1938|p=288|loc="мыслете"}} || {{IPAblink|m}} or {{IPA|[mʲ]}} 
+|m|| '''m'''ap || {{lang|ru|'''м'''еч}} ''mech''<br/>"sword" || 40 || U+041C / U+043C
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Н]]н}}</big>
+| [[File:15-Russian alphabet-Н н.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Н н''</span> || {{lang|ru|эн}}<br/>{{IPA|ru|ɛn|}} {{Respell|en/ehn}}|| {{lang|ru-petr1708|нашъ}}<br/>{{IPA|[naʂ]}} || {{IPAblink|n̪|n}} or {{IPA|[nʲ]}} 
+|n|| '''n'''ot || {{lang|ru|'''н'''о}} ''no''<br/>"but" || 50 || U+041D / U+043D
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[О]]о}}</big>
+| [[File:16-Russian alphabet-О о.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''О о''</span> || {{lang|ru|о}}<br/>{{IPA|ru|о|}} || {{lang|ru-petr1708|онъ}}<br/>{{IPA|[on]}} || {{IPAblink|o}}
+|o|| m'''o'''re || {{lang|ru|'''о'''н}} ''on''<br/>"he" || 70 || U+041E / U+043E
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[П]]п}}</big>
+| [[File:17-Russian alphabet-П п.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''П п''</span> || {{lang|ru|пэ}}<br/>{{IPA|ru|pɛ|}} {{Respell|pe/peh}}|| {{lang|ru-petr1708|покой}}<br/>{{IPA|[pɐˈkoj]}} || {{IPAblink|p}} or {{IPA|[pʲ]}} 
+|p|| '''p'''et || {{lang|ru|'''п'''од}} ''pod''<br/>"under" || 80 || U+041F / U+043F
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Р]]р}}</big>
+| [[File:18-Russian alphabet-Р р.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Р р''</span> || {{lang|ru|эр}}<br/>{{IPA|ru|ɛr|}} {{Respell|err/ehrr}}|| {{lang|ru-petr1708|рцы}}<br/>{{IPA|[rtsɨ]}} || {{IPAblink|r}} or {{IPA|[rʲ]}} 
+|r|| [[Alveolar trill|rolled '''r''']] || {{lang|ru|'''р'''ека}} ''reká''<br/>"river" || 100 || U+0420 / U+0440
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[С]]с}}</big>
+| [[File:19-Russian alphabet-С с.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''С с''</span> || {{lang|ru|эс}}<br/>{{IPA|ru|ɛs|}} {{Respell|es/ehs}}|| {{lang|ru-petr1708|слово}}<br/>{{IPA|[ˈsɫovə]}} || {{IPAblink|s}} or {{IPA|[sʲ]}} 
+|s|| '''s'''et || {{lang|ru|е'''с'''ли}} ''yésli''<br/>"if" || 200 || U+0421 / U+0441
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Т]]т}}</big>
+| [[File:20-Russian alphabet-Т т.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Т т''</span> || {{lang|ru|тэ}}<br/>{{IPA|ru|tɛ|}} {{Respell|te/teh}}|| {{lang|ru-petr1708|твердо}}<br/>{{IPA|[ˈtvʲerdə]}} || {{IPAblink|t̪|t}} or {{IPA|[tʲ]}} 
+|t|| '''t'''op || {{lang|ru|'''т'''о'''т'''}} ''tot''<br/>"that" || 300 || U+0422 / U+0442
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[У]]у}}</big>
+| [[File:21-Russian alphabet-У у.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''У у''</span> || {{lang|ru|у}}<br/>{{IPA|ru|u|}} {{Respell|oo}}|| {{lang|ru-petr1708|укъ}}<br/>{{IPA|[uk]}} || {{IPAblink|u}} 
+|u|| t'''oo'''l || {{lang|ru|к'''у'''ст}} ''kust''<br/>"bush" || 400 || U+0423 / U+0443
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ф]]ф}}</big>
+| [[File:22-Russian alphabet-Ф ф.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ф ф''</span> || {{lang|ru|эф}}<br/>{{IPA|ru|ɛf|}} {{Respell|ef/ehf}}|| {{lang|ru-petr1708|фертъ}}<br/>{{IPA|[fʲert]}} || {{IPAblink|f}} or {{IPA|[fʲ]}} 
+|f|| '''f'''ace || {{lang|ru|'''ф'''ея}} ''féya''<br/>"fairy" || 500 || U+0424 / U+0444
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Х]]х}}</big>
+| [[File:23-Russian alphabet-Х х.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Х х''</span> || {{lang|ru|ха}}<br/>{{IPA|ru|xa|}} || {{lang|ru-petr1708|хѣръ}}<br/>{{IPA|[xʲer]}} || {{IPAblink|x}} or {{IPA|[xʲ]}} 
+|kh, h|| like Scottish "lo'''ch'''", u'''gh'''|| {{lang|ru|ду'''х'''}} ''dukh''<br/>"spirit" || 600 || U+0425 / U+0445
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ц]]ц}}</big>
+| [[File:24-Russian alphabet-Ц ц.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ц ц''</span> || {{lang|ru|цэ}}<br/>{{IPA|ru|tsɛ|}} {{Respell|tse/tseh}}|| {{lang|ru-petr1708|цы}}<br/>{{IPA|[tsɨ]}} || {{IPAblink|t͡s}} 
+|ts, c|| si'''ts''' || {{lang|ru|коне'''ц'''}} ''konéts''<br/>"end" || 900 || U+0426 / U+0446
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ч]]ч}}</big>
+| [[File:25-Russian alphabet-Ч ч.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ч ч''</span> || {{lang|ru|че}}<br/>{{IPA|ru|tɕe|}} || {{lang|ru-petr1708|червь}}<br/>{{IPA|[tɕerfʲ]}} || {{IPAblink|t͡ɕ}} 
+|ch, č|| '''ch'''eck ||{{lang|ru|'''ч'''ас}} ''chas''<br/>"hour" || 90 || U+0427 / U+0447
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ш]]ш}}</big>
+| [[File:26-Russian alphabet-Ш ш.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ш ш''</span> || {{lang|ru|ша}}<br/>{{IPA|ru|ʂa|}} || {{lang|ru-petr1708|ша}}<br/>{{IPA|[ʂa]}} || {{IPAblink|ʂ}} 
+|sh, š|| similar to "sh" in hu'''sh''' ||{{lang|ru|ва'''ш'''}} ''vash''<br/>"yours" || {{n/a}} || U+0428 / U+0448
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Щ]]щ}}</big>
+| [[File:27-Russian alphabet-Щ щ.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Щ щ''</span> || {{lang|ru|ща}}<br/>{{IPA|ru|ɕːa|}}||{{lang|ru-petr1708|ща}}<br/>{{IPA|[ɕtɕa]}} || {{IPAblink|ɕː}}, {{IPA|[ɕ]}}
+|shch, sch, šč, śś|| similar to a long "sh" as in pu'''sh sh'''ips or a short "sh" as in sheep<!-- [Shch] (/ʃtʃ/ in IPA) is now considered old-fashioned. See [[Shcha]] and [[Help:IPA/Russian]]. -->||{{lang|ru|'''щ'''ека}} ''śeká''<br/>"cheek" || {{n/a}} || U+0429 / U+0449
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ъ]]ъ}}</big>
+| [[File:28-Russian alphabet-ъ.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ъ ъ''</span> || {{lang|ru|твёрдый знак}}{{Break}}'hard sign'<br/>{{IPA|ru|ˈtvʲɵrdɨj znak|| Russian Ъ pronunciation.ogg}} || {{lang|ru-petr1708|еръ}}<br/>{{IPA|[jer]}} ||  {{IPAblink|∅}}
+|ʺ|| silent, prevents [[Palatalization (phonetics)|palatalization]] of the preceding [[consonant]] || {{lang|ru|об'''ъ'''ект}} ''obʺyékt''<br/>"object" || {{n/a}} || U+042A / U+044A
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ы]]ы}}</big>
+| [[File:29-Russian alphabet-ы.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ы ы''</span> || {{lang|ru|ы}}<br/>{{IPA|ru|ɨ|}} || {{lang|ru|еры}}<br/>{{IPA|[jɪˈrɨ]}} || {{IPAblink|ɨ}} or {{IPA|[i]}}
+|y|| General American ros'''e'''s (rough equivalent) ||{{lang|ru-petr1708|т'''ы'''}} ''ty''<br/>"you" || {{n/a}} || U+042B / U+044B
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ь]]ь}}</big>
+| [[File:30-Russian alphabet-ь.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ь ь''</span> || {{lang|ru|мягкий знак}}{{Break}}'soft sign'<br/>{{IPA|ru|ˈmʲæxʲkʲɪj znak|| Russian Ь pronunciation.ogg}} || {{lang|ru-petr1708|ерь}}<br />{{IPA|[jerʲ]}}</td> || {{IPA|[&nbsp;[[ʲ]]]}} 
+|ʹ|| silent, [[Palatalization (phonetics)|palatalizes]] the preceding consonant (if phonologically possible) ||{{lang|ru|гус'''ь'''}} ''gusʹ''<br/>"goose" || {{n/a}} || U+042C / U+044C
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Э]]э}}</big>
+| [[File:31-Russian alphabet-Э э.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Э э''</span> || {{lang|ru|э}}<br/>{{IPA|ru|ɛ|}} {{Respell|e/eh}}|| {{lang|ru-petr1708|э оборотное}}{{Break}}'rotated «э»'<br/>{{IPA|[ˈɛ ɐbɐˈrotnəjɪ]}} || {{IPAblink|ɛ}} or {{IPAblink|e}}
+|e, è|| m'''e'''t || {{lang|ru|'''э'''то}} ''èto''<br/>"this" || {{n/a}} || U+042D / U+044D
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ю]]ю}}</big>
+| [[File:32-Russian alphabet-Ю ю.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Ю ю''</span> || {{lang|ru|ю}}<br />{{IPA|ru|ju|}} {{Respell|ew}}|| {{lang|ru-petr1708|ю}}<br />{{IPA |[ju]}} || {{IPA |[ju]}} or {{IPA|[&nbsp;ʲu]}} 
+|yu, ju||'''u'''se or '''you'''th|| {{lang|ru|'''ю'''г}} ''yug''<br/>"south" || {{n/a}} || U+042E / U+044E
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Я]]я}}</big>
+| [[File:33-Russian alphabet-Я я.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Я я''</span> || {{lang|ru|я}}<br />{{IPA|ru|ja|}} || {{lang|ru-petr1708|я}}<br />{{IPA |[ja]}} || {{IPA |[ja]}} or {{IPA|[&nbsp;ʲa]}} 
+|ya, ja||'''ya'''rd || {{lang|ru|р'''я'''д}} ''ryad''<br/>"row" || {{n/a}} || U+042F / U+044F
+|- style="vertical-align: bottom; background: #eee;"
+|}
+:{{note|De|†}} An alternative form of the [[De (Cyrillic)#Allography|letter De]] (<span style="font-family: 'Garamond', 'Gill Sans', serif; font-size:  larger">Д&nbsp;д</span>) closely resembles the Greek letter [[delta (letter)|delta]] (<span style="font-family: 'Garamond', 'Gill Sans', serif; font-size: larger">Δ&nbsp;δ</span>).
+:{{note|El|‡}} An alternative form of the [[El (Cyrillic)#Allography|letter El]] (<span style="font-family: 'Garamond', 'Gill Sans', serif; font-size:  larger">Л&nbsp;л</span>) closely resembles the Greek letter [[lambda]] (<span style="font-family: 'Garamond', 'Gill Sans', serif; font-size: larger">Λ&nbsp;λ</span>).
+
+== Historic letters ==
+===Letters eliminated in 1917–1918===
+{{Main|Reforms of Russian orthography#Post-revolution reform}}
+{| class=wikitable
+!Letter
+![[Russian cursive|Cursive]]
+!Italics
+!Old name
+![[International Phonetic Alphabet|IPA]]
+!Common transliteration
+!Similar Russian letter
+!Examples
+![[Russian alphabet#Numeric values|No.]]
+![[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[І]]і}}</big>
+| [[File:1-Imperial Russian-І і.svg|class=skin-invert]] || {{serif|''І і''}} || {{lang|ru|і десятеричное}}<br/>{{IPA|ru|i dʲɪsʲɪtʲɪˈrʲitɕnəjə|}} || {{IPA|/i/}}, {{IPA |/ʲi/}}, {{IPA|/j/}} 
+|i|| Like {{lang|ru|'''и'''}} or {{lang|ru|'''й'''}} || стихотворен'''і'''я (now стихотворен'''и'''я) ''stikhotvoréniya''<br/>"poems, (of) poem" || 10 || U+0406 / U+0456
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ѣ]]ѣ}}</big>
+| [[File:3-Imperial Russian-Ѣ ѣ.svg|class=skin-invert]] || {{serif|''Ѣ ѣ''}} || {{lang|ru|ять}}<br/>{{IPA|ru|jætʲ|}} || {{IPAslink|e}}, {{IPA |/ʲe/}} 
+|ě||  Like {{lang|ru|'''е'''}} || Алекс'''ѣ'''й (now Алекс'''е'''й) ''Aleksěy''<br/>Alexey || {{n/a}} || U+0462 / U+0463
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ѳ]]ѳ}}</big>
+| [[File:2-Imperial Russian-Ѳ ѳ.svg|class=skin-invert]] || {{serif|''Ѳ ѳ''}} || {{lang|ru|ѳита}}<br />{{IPA|ru|fʲɪˈta|}} || {{IPA |/f/}}, {{IPA |/fʲ/}}, /θ/ 
+|f|| Like {{lang|ru|'''ф'''}} || ор'''ѳ'''ографія (now ор'''ф'''ограф'''и'''я) ''orfográfiya''<br/>"orthography, spelling" || 9 || U+0472 / U+0473
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ѵ]]ѵ}}</big>
+| [[File:4-Imperial Russian-Ѵ ѵ.svg|class=skin-invert]] || {{serif|''Ѵ ѵ''}} || {{lang|ru|ижица}}<br/>{{IPA|ru|ˈiʐɨtsə|}} || {{IPA|/i/}}, {{IPA |/ʲi/}} 
+|y or í|| Usually like {{lang|ru|'''и'''}}, see [[#Letters eliminated in 1918|below]] || м'''ѵ'''ро (now м'''и'''ро) ''myro or míro''<br/>"chrism (myrrh)" || 400 || U+0474 / U+0475
+|- style="vertical-align: bottom; background: #eee;"
+|}
+
+* {{lang|ru-petr1708|і}} &mdash; Identical in pronunciation to {{angbr|{{lang|ru|и}}}}, it was used exclusively immediately before other vowels and the {{angbr|{{lang|ru|й}}}} ("[[Short I]]") (for example, {{angbr|{{lang|ru-petr1708|патріархъ}}}} {{IPA|[pətrʲɪˈarx]}}, 'patriarch') and in the word {{angbr|{{lang|ru-petr1708|міръ}}}} {{IPA |[mʲir]}} ('world') and its derivatives, to distinguish it from the word {{angbr|{{lang|ru-petr1708|миръ}}}} {{IPA|[mʲir]}} ('peace') (the two words are actually etymologically cognate,{{sfn|Vasmer|1986|p=626}} and not arbitrarily [[homonym]]s).{{sfn|Smirnovskiy|1915|p=4}}
+* ѣ &mdash; Originally had a distinct sound, but by the middle of the eighteenth century, it had become identical in pronunciation to {{angbr|{{lang|ru|е}}}} in the standard language. Since its [[Reforms of Russian orthography|elimination in 1918]], it has [[Reforms of Russian orthography#The post-revolution reform|remained a political symbol of the old orthography]].
+* ѳ &mdash; From the [[Greek alphabet|Greek]] [[theta]], it was identical to {{angbr|{{lang|ru|ф}}}} in pronunciation, but it was used etymologically (for example, {{angbr|{{lang|ru-petr1708|Ѳёдоръ}}}} "Theodore" became {{angbr|{{lang|ru-luna1918|Фёдор}}}} "Fyodor").
+* ѵ &mdash; From the [[Greek alphabet|Greek]] [[upsilon]], usually identical to {{angbr|и}} in pronunciation, as in [[Medieval Greek|Byzantine Greek]], it was used etymologically for Greek loanwords, like Latin [[Y]] (as in ''synod, myrrh''); by 1918, it had become very rare. In spellings of the eighteenth century, it was also used after some vowels, where it has since been replaced with {{angbr|{{lang|ru-luna1918|в}}}} or (rarely) {{angbr|{{lang|ru-luna1918|у}}}}. For example, a Greek prefix originally spelled {{angbr|аѵто-}} (equivalent to English {{wikt-lang|en|auto-}}) is now spelled {{angbr|{{lang|ru-luna1918|авто-}}}} in most cases and {{angbr|{{lang|ru-luna1918|ауто-}}}} as a component in some compound words.
+
+[[File:Historical evolution of the Russian Cyrillic alphabet, until the 19th century (Grech).jpg|thumb|300px|center|<div style="text-align: center">Historical evolution of the Russian Cyrillic alphabet, until the 19th century</div>]]
+
+<gallery mode=packed; caption="19th century Russian Cyrillic alphabet"; style="text-align:center">
+19th century Russian alphabet (Körner).jpg|(Körner, 1895) 
+19th century Russian alphabet (Motti).jpg|(Motti, 1890) 
+19th century Russian alphabet (Fuchs).jpg|(Fuchs, 1888)
+19th century Russian alphabet (Moser).jpg|(Moser, 1888)
+19th century Russian alphabet (Reiff).jpg|(Reiff, 1883)
+19th century Russian alphabet (Boltz).jpg|(Boltz, 1880)
+</gallery>
+
+=== Letters eliminated before 1750 ===
+{| class=wikitable
+!Letter
+![[Russian cursive|Cursive]]
+!Italics
+!Old name
+![[International Phonetic Alphabet|IPA]]
+!Common transliteration
+!Similar Russian letter
+!Examples
+![[Russian alphabet#Numeric values|No.]]
+![[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Dze|Ѕ]]ѕ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѕ ѕ''</span> || {{lang|ru|ѕѣло}}<br />{{IPA|ru|zʲɪˈɫo|}}<ref>{{Citation | url = http://feb-web.ru/feb/sl18/slov-abc/08/sl816402.htm?cmd=2&istext=1 | title = ФЭБ | publisher = feb-web.ru }}</ref> || {{IPA|/z/}}, {{IPA|/zʲ/}} 
+|z|| {{lang|ru|'''з'''}} ||{{lang|ru|'''s'''ѣлѡ}} (obsolete stem, now {{lang|ru|очень}}) <br/>"very"
+| 6 || U+0405, U+0455
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Ksi (Cyrillic letter)|Ѯ]]ѯ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѯ ѯ''</span> || {{lang|ru|ѯи}}<br />{{IPA|ru|ksʲi|}} || {{IPA |/ks/}}, {{IPA|/ksʲ/}} 
+|x, ks|| '''кс''' || Але'''ѯ'''андръ (now Але'''кс'''андр) <br/>"Alexander" || 60 || U+046E, U+046F
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Psi (Cyrillic)|Ѱ]]ѱ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѱ ѱ''</span> || {{lang|ru|ѱи}}<br />{{IPA|ru|psʲi|}} || {{IPA |/ps/}}, {{IPA |/psʲ/}} 
+|ps|| '''пс''' || '''ѱ'''аломъ (now '''пс'''алом) <br/>"psalm" || 700 || U+0470, U+0471
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Omega (Cyrillic)|Ѡ]]ѡ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѡ ѡ''</span> || {{lang|ru|ѡмега}}<br/>{{IPA|ru|ɐˈmʲeɡə|}} || {{IPA|/o/}} 
+|o, w|| {{lang|ru|'''о'''}} || '''ѡ'''бразъ (now '''о'''браз) <br/>"image, icon" || 800 || U+0460, U+0461
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Yus|Ѫ]]ѫ}}</big>
+| [[File:Большой юс.svg|class=skin-invert|frameless|72x72px]]|| <span style="font-family: 'Times New Roman', serif;">''Ѫ ѫ''</span> || {{lang|ru|юсъ большой}}<br/>{{IPA|ru|jus bɐlʲˈʂoj|}} || {{IPA |/u/}}, {{IPA|/&nbsp;ʲu/}}  
+|ą|| {{lang|ru|'''у'''}}, {{lang|ru|'''ю'''}} || п'''ѫ'''ть (now п'''у'''ть) <br/>"way" || {{n/a}} || U+046A, U+046B
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Yus|Ѧ]]ѧ}}</big>
+| [[File:Малый юс.svg|class=skin-invert|frameless|96x96px]]|| <span style="font-family: 'Times New Roman', serif;">''Ѧ ѧ''</span> || {{lang|ru|юсъ малый}}<br/>{{IPA|ru|jus ˈmaɫɨj|}} || {{IPA |/&nbsp;ʲa/}}
+|ę|| {{lang|ru|'''я'''}}  || п'''ѧ'''ть (now п'''я'''ть) <br/>"five" || 900 || U+0466, U+0467
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Yus|Ѭ]]ѭ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѭ ѭ''</span> || {{lang|ru|юсъ большой іотированный}}<br/>{{IPA|ru|jus bɐlʲˈʂoj jɪˈtʲirəvənnɨj|}} || {{IPA|/ju/}}
+|yą|| {{lang|ru|'''ю'''}} || зна'''ѭ''' (now зна'''ю''') <br/>"(I) know" || {{n/a}} || U+046C, U+046D
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Yus|Ѩ]]ѩ}}</big>
+| – || <span style="font-family: 'Times New Roman', serif;">''Ѩ ѩ''</span> || {{lang|ru|юсъ малый іотированный}}<br/>{{IPA|ru|jus ˈmaɫɨj jɪˈtʲirəvən.nɨj|}} || {{IPA|/ja/}}
+|yę|| {{lang|ru|'''я'''}} || '''ѩ'''зыкъ (now '''я'''зык) <br/>"tongue, language" || {{n/a}} || U+0468, U+0469
+|}
+
+* {{angbr|{{lang|ru|ѕ}}}} corresponded to a more archaic {{IPA|/dz/}} pronunciation, already absent in [[East Slavic languages|East Slavic]] at the start of the historical period, but kept by tradition in certain words until the eighteenth century in secular writing and in [[Church Slavonic]] and [[Macedonian language|Macedonian]] to the present day.
+* {{angbr|{{lang|ru|ѯ}}}} and {{angbr|{{lang|ru|ѱ}}}} derived from Greek letters [[Xi (letter)|xi]] and [[Psi (letter)|psi]]. It was used etymologically, though inconsistently, in secular writing until the eighteenth century and more consistently to the present day in Church Slavonic.
+* {{angbr|{{lang|ru|ѡ}}}} is the Greek letter [[omega]], identical in pronunciation to {{angbr|{{lang|ru|о}}}}. It was used in secular writing until the eighteenth century, but in the present day in Church Slavonic, it was mostly used to distinguish inflexional forms otherwise written identically.
+* Two "[[yus]]es", "big" {{angbr|{{lang|ru|ѫ}}}} and "small" {{angbr|{{lang|ru|ѧ}}}}, used to stand for [[nasalized]] vowels {{IPA|/õ/}} and {{IPA|/ẽ/}}. According to linguistic reconstruction, both became irrelevant for East Slavic phonology at the beginning of the historical period{{when|date=May 2022}} but were introduced along with the rest of the Cyrillic script. The iotated yuses, {{angbr|{{lang|ru|ѭ}}}} and {{angbr|{{lang|ru|ѩ}}}}, had largely vanished by the twelfth century. The uniotated {{angbr|{{lang|ru|ѫ}}}} continued to be used, etymologically, until the sixteenth century. Thereafter it was restricted to being a [[dominical letter]] in the [[Easter|Paschal]] tables. The seventeenth-century usage of {{angbr|{{lang|ru|ѫ}}}} and {{angbr|{{lang|ru|ѧ}}}} survives in contemporary Church Slavonic, and the sounds (but not the letters) in [[Polish language|Polish]].
+* The letter {{angbr|{{lang|ru|ѧ}}}} was adapted to represent the iotated {{IPA|/ja/}} {{angbr|{{lang|ru|я}}}} in the middle or end of a word; the modern letter {{angbr|{{lang|ru|я}}}} is an adaptation of its cursive form of the seventeenth century, enshrined by the [[Reforms of Russian orthography|typographical reform of 1708]].
+* Until 1708, the iotated {{IPA|/ja/}} was written [[Iotified A|{{angbr|ꙗ}}]] at the beginning of a word. This distinction between {{angbr|{{lang|ru|ѧ}}}} and {{angbr|ꙗ}} survives in Church Slavonic.
+
+Although it is usually stated that the letters in the table above were eliminated in the typographical reform of 1708, reality is somewhat more complex. The letters were indeed originally omitted from the sample alphabet, printed in a western-style serif font, presented in [[Peter the Great|Peter]]{{'s}} edict, along with the letters {{angbr|{{lang|ru|з}}}} (replaced by {{angbr|{{lang|ru|ѕ}}}}), {{angbr|{{lang|ru|и}}}} and {{angbr|{{lang|ru|ф}}}} (the diacriticized letter {{angbr|{{lang|ru|й}}}} was also removed), but were reinstated except {{angbr|{{lang|ru|ѱ}}}} and {{angbr|{{lang|ru|ѡ}}}} under pressure from the [[Russian Orthodox Church]] in a later variant of the modern typeface (1710). Nonetheless, since 1735, the [[Russian Academy of Sciences]] began to use fonts without {{angbr|{{lang|ru|ѕ}}}}, {{angbr|{{lang|ru|ѯ}}}} and {{angbr|{{lang|ru|ѵ}}}}; however, {{angbr|{{lang|ru|ѵ}}}} was sometimes used again since 1758.
+
+==Consonants==
+{| class="wikitable floatright"
+|+Consonants
+!Either<br/>hard (default)<br/>or soft
+|[[Б]], [[В]], [[Г]],<br/>[[Д]], [[З]], [[К]],<br/>[[Л]], [[М]], [[Н]],<br/>[[П]], [[Р]], [[С]],<br/>[[Т]], [[Ф]], [[Х]]
+|-
+!Always hard
+|[[Ж]], [[Ш]], [[Ц]]
+|-
+!Always soft
+|[[Й]], [[Ч]], [[Щ]]
+|}
+
+{{See also|Russian phonology}}
+Most consonants can represent both "soft" ([[Palatalization (phonetics)|palatalized]], represented in the [[International Phonetic Alphabet|IPA]] with a {{angbr IPA|ʲ}}) and "hard" consonant phonemes.<ref>Russian language course "Russo Sem Mestre" (Portuguese for ''Russian without Master''), by Custódio Gomes Sobrinho</ref> If consonant letters are followed by vowel letters, the soft/hard quality of the consonant depends on whether the vowel is meant to follow "hard" consonants {{nowrap|{{angbr|{{lang|ru|а, о, э, у, ы}}}}}} or "soft" consonants {{nowrap|{{angbr|{{lang|ru|я, ё, е, ю, и}}}}}}. A soft sign {{angbr|{{lang|ru|ь|italic=no}}}} indicates palatalization of the preceding consonant without adding a vowel.
+
+However, in modern Russian, six consonant phonemes do not have phonemically distinct "soft" and "hard" variants (except in foreign proper names) and do not change "softness" in the presence of other letters: {{nowrap|{{IPA|/ʐ/}}, {{IPA|/ʂ/}} and {{IPA|/ts/}}}} are always hard; {{nowrap|{{IPA|/j/}}, {{IPA|/tɕ/}} and {{IPA|/ɕː/}}}} are always soft. (Before 1950, Russian linguists considered {{nowrap|{{IPA|/j/}}}} a semivowel rather than a consonant.)
+
+==Vowels==
+{| class="wikitable floatright"
+|+Vowels
+!Hard
+|[[А]]
+|[[Э]]
+|[[Ы]]
+|[[О]]
+|[[У]]
+|-
+!Soft
+|[[Я]]
+|[[Е]]
+|[[И]]
+|[[Ё]]
+|[[Ю]]
+|-
+| colspan="6" |<small>Each row is roughly analogous</small><br /><small>to the Latin A, E, I, O, U.</small>
+|}
+The Russian alphabet contains 10 vowel letters. They are grouped into soft and hard vowels.<ref>Russian language course "Russo Sem Mestre" (Portuguese for ''Russian without Master''), by Custódio Gomes Sobrinho</ref> The soft vowels, {{angbr|{{lang|ru|е, ё, и, ю, я}}}}, either indicate a preceding [[Palatalization (phonetics)|palatalized consonant]], or (with the exception of {{angbr|{{lang|ru|и}}}}) are iotated (pronounced with a preceding {{IPA|/j/}}) in all other cases. The IPA vowels shown are a guideline only and sometimes are realized as different sounds, particularly when unstressed. However, {{angbr|{{lang|ru|е}}}} may be used in words of foreign origin without palatalization ({{IPA|/e/}}), and {{angbr|{{lang|ru|я}}}} is often realized as {{IPAblink|æ}} between soft consonants, such as in {{lang|ru|мяч}} ('toy ball').
+
+=== Individual vowels ===
+{{angbr|{{lang|ru|ы}}}} is an old [[Proto-Slavic]] close central vowel, thought to have been preserved better in modern Russian than in other Slavic languages. It was originally nasalized in certain positions: Old Russian {{lang|ru|камы}} {{IPA |[ˈkamɨ̃]}}; Modern Russian {{lang|ru|камень}} {{IPA|[ˈkamʲɪnʲ]}} ('rock'). Its written form developed as follows: {{angbr|{{lang|ru|ъ}}}} + {{angbr|{{lang|ru|і}}}} → {{angbr|{{lang|ru|ꙑ}}}} → {{angbr|{{lang|ru|ы}}}}.
+
+{{angbr|{{lang|ru|э}}}} was introduced in 1708 to distinguish the non-iotated/non-palatalizing {{IPA|/e/}} from the iotated/palatalizing one. The original usage had been {{angbr|{{lang|ru|е}}}} for the uniotated {{IPA|/e/}}, {{angbr|{{lang|ru|ѥ}}}} or {{angbr|{{lang|ru|ѣ}}}} for the iotated, but {{angbr|{{lang|ru|ѥ}}}} had dropped out of use by the sixteenth century. In native Russian words, {{angbr|{{lang|ru|э}}}} is found only at the beginnings of a few words {{lang|ru|э́тот/э́та/э́то}} 'this (is) (m./f./n.)', {{lang|ru|э́ти}} 'these', {{lang|ru|э́кий}} 'what a', {{lang|ru|э́дак/э́так}} 'that way', {{lang|ru|э́дакий/э́такий}} 'sort of', and interjections like {{lang|ru|эй}} 'hey') or in compound words (e.g., {{lang|ru|поэ́тому}} 'therefore' = {{lang|ru|по}} + {{lang|ru|этому}}, where {{lang|ru|этому}} is the dative case of {{lang|ru|этот}}). In words that come from foreign languages in which iotated {{IPA|/e/}} is uncommon or nonexistent (such as English), {{angbr|{{lang|ru|э}}}} is usually written in the beginning of words and after vowels except {{angbr|{{lang|ru|и}}}} (e.g., {{lang|ru|поэ́т}}, 'poet'), and {{angbr|{{lang|ru|е}}}} after {{angbr|{{lang|ru|и}}}} and consonants. However, the pronunciation is inconsistent. Many of these borrowed words, especially monosyllables, words ending in {{angbr|{{lang|ru|е}}}} and many words where {{angbr|{{lang|ru|е}}}} follows {{angbr|{{lang|ru|т}}}}, {{angbr|{{lang|ru|д}}}}, {{angbr|{{lang|ru|н}}}}, {{angbr|{{lang|ru|с}}}}, {{angbr|{{lang|ru|з}}}} or {{angbr|{{lang|ru|р}}}}, are pronounced with {{IPA|/e/}} without palatalization or iotation: {{lang|ru|секс}} (''seks'' — 'sex'), {{lang|ru|моде́ль}} (''model'' — 'model'), {{lang|ru|кафе́}} (''kafe'' — 'café'), {{lang|ru|прое́кт}} (''proekt'' — 'project'; here, the spelling is etymological: German ''Projekt'' was adopted from Latin ''proiectum'', so the word is spelled with {{angbr|{{lang|ru|е}}}} to reflect the original {{IPA|/je/}} and not with {{angbr|{{lang|ru|э}}}} as usual after vowels; but the pronunciation is counter-etymological: a [[hypercorrection]] that has become standard). But many other words are pronounced with {{IPA|/ʲe/}}: {{lang|ru|се́кта}} (''syekta'' — 'sect'), {{lang|ru|дебю́т}} (''dyebyut'' — 'debut').
+
+Proper names are sometimes written with {{angbr|{{lang|ru|э}}}} after consonants: {{lang|ru|Сэм}} — 'Sam', {{lang|ru|Мэ́ри}} — 'Mary', {{lang|ru|Ма́о Цзэду́н}} — 'Mao Zedong'; the use of {{angbr|{{lang|ru|э}}}} after consonants is common in East Asian names and in English names with the sounds {{IPAc-en|æ}} and {{IPAc-en|ɛər}}, with some exceptions such as {{lang|ru|Джек}} ('Jack') and {{lang|ru|Ше́ннон}} ('Shannon'), since both {{angbr|{{lang|ru|э}}}} and {{angbr|{{lang|ru|е}}}}, in cases of {{lang|ru|же}} ("zhe"), {{lang|ru|ше}} ("she") and {{lang|ru|це}} ("tse"), follow consonants that are always hard (non-palatalized), yet {{angbr|{{lang|ru|е}}}} usually prevails in writing. However, English names with the sounds {{IPAc-en|ɛ}}, {{IPAc-en|ə}} (if spelled {{angbr|e}} in English) and {{IPAc-en|eɪ}} after consonants are normally spelled with {{angbr|{{lang|ru|е}}}} in Russian: {{lang|ru|Бе́тти}} — 'Betty', {{lang|ru|Пи́тер}} — 'Peter', {{lang|ru|Лейк-Плэ́сид}} — 'Lake Placid'. Pronunciation mostly remains unpalatalized, so {{lang|ru|Пи́тер}} {{IPA|[ˈpʲitɛr]}} — Russian rendering of the English name 'Peter' is pronounced differently from {{lang|ru|Пи́тер}} {{IPA|[ˈpʲitʲɪr]}} — is a colloquial Russian name of [[Saint Petersburg]].
+
+{{angbr|{{lang|ru|ё}}}}, introduced by [[Nikolay Karamzin|Karamzin]] in 1797 and made official in 1943 by the [[Ministry of Education (Soviet Union)|Soviet Ministry of Education]],{{Sfn |Benson|1960|p=271}} marks a {{IPA|/jo/}} sound that historically developed from stressed {{IPA|/je/}}. The written letter {{angbr|{{lang|ru|ё}}}} is optional; it is formally correct to write {{angbr|e}} for both {{IPA |/je/}} and {{IPA |/jo/}}. None of the several attempts in the twentieth century to mandate the use of {{angbr|{{lang|ru|ё}}}} have stuck.
+
+==Non-vocalized letters==
+===Hard sign===
+The [[hard sign]], {{angbr|{{lang|ru|ъ}}}}, acts like a "silent back vowel" that separates a succeeding "soft vowel" ({{angbr|{{lang|ru|е, ё, ю, я}}}}, but not {{angbr|{{lang|ru|и}}}}) from a preceding consonant, invoking implicit [[iotation#Iotified vowels|iotation]] of the vowel with a distinct {{IPA|/j/}} glide. Today it is used mostly to separate a prefix ending with a hard consonant from the following [[Root (linguistics)|root]]. Its original pronunciation, lost by 1400 at the latest, was that of a very short middle schwa-like sound, likely pronounced {{IPAblink|ə}} or {{IPAblink|ɯ}}. Until [[Reforms of Russian orthography|the 1918 reform]], no written word could end in a consonant: those that end in a "hard" consonant in modern orthography then had a final {{angbr|{{lang|ru|ъ}}}}.
+
+While {{angbr|{{lang|ru|и}}}} is also a soft vowel, root-initial {{IPA|/i/}} following a hard consonant is typically pronounced as {{IPA|[ɨ]}}. This is normally spelled {{angbr|{{lang|ru|ы}}}} (the hard counterpart to {{angbr|{{lang|ru|и}}}}) unless this vowel occurs at the beginning of a word, in which case it remains {{angbr|{{lang|ru|и}}}}. An alternation between the two letters (but not the sounds) can be seen with the pair {{lang|ru|без и́мени}} ('without name', which is pronounced {{IPA|[bʲɪ'''z ˈɨ'''mʲɪnʲɪ]}}) and {{lang|ru|безымя́нный}} ('nameless', which is pronounced {{IPA|[bʲɪ'''zɨ'''ˈmʲænːɨj]}}). This spelling convention, however, is not applied with certain loaned prefixes such as in the word {{lang|ru|панислами́зм}} — {{IPA|[ˌpanɨsɫɐˈmʲizm]}}, 'Pan-Islamism') and compound words (e.g., {{lang|ru|госизме́на}} — {{IPA|[ˌɡosɨˈzmʲenə]}}, 'high treason').
+
+===Soft sign===
+The [[soft sign]], {{angbr|{{lang|ru|ь|italic=no}}}}, in most positions acts like a "silent front vowel" and indicates that the preceding consonant is [[Palatalization (phonetics)|palatalized]] (except for always-hard {{lang|ru|ж, ш, ц}}) and the following vowel (if present) is iotated (including {{angbr|{{lang|ru|ьо}}}} in loans). This is important as palatalization is phonemic in Russian. For example, {{lang|ru|брат}} {{IPA|[brat]}} ('brother') contrasts with {{lang|ru|брать}} {{IPA|[bratʲ]}} ('to take'). The original pronunciation of the soft sign, lost by 1400 at the latest, was that of a very short fronted reduced vowel {{IPA|/ĭ/}} but likely pronounced {{IPAblink|ɪ}} or {{IPA|[jɪ]}}. There are still some remnants of this ancient reading in modern Russian, e.g., in co-existing versions of the same name, read and written differently, such as {{lang|ru|Мар'''ь'''я}} and {{lang|ru|Мар'''и'''я}} ('Mary').<ref>See Polish Maria as a given name but Maryja in context of the Virgin Mary.</ref>
+
+When applied after [[Stem (linguistics)|stem]]-final always-soft ({{lang|ru|ч, щ}}, but not {{lang|ru|й}}) or always-hard ({{lang|ru|ж, ш}}, but not {{lang|ru|ц}}) consonants, the soft sign does not alter pronunciation, but has grammatical significance:<ref>{{cite web|url=http://new.gramota.ru/spravka/rules/130-mtz |title=Буквы Ъ и Ь - "Грамота.ру" – справочно-информационный Интернет-портал "Русский язык" |publisher=gramota.ru |access-date=2017-05-27}}</ref>
+*the feminine marker for singular nouns in the nominative and accusative; e.g., {{lang|ru|тушь}} ('India ink', feminine) cf. {{lang|ru|туш}} ('flourish after a toast', masculine) — both pronounced {{IPA|[tuʂ]}};
+*the imperative mood for some verbs;
+*the infinitives of some verbs (with {{lang|ru|-чь}} ending);
+*the second person for non-past verbs (with {{lang|ru|-шь}} ending); and
+*some adverbs and particles.
+
+== Treatment of foreign sounds ==
+Because Russian borrows terms from other languages, there are various conventions for sounds not present in Russian. For example, while Russian has no {{IPAblink|h}}, there are a number of common words (particularly proper nouns) borrowed from languages like [[English language|English]] and [[German language|German]] that contain such a sound in the original language. In well-established terms, such as {{lang|ru|галлюцинация}} {{IPA|ru|ɡəlʲʊtsɨˈnatsɨjə|}} ('hallucination'), this is written with {{angbr|{{lang|ru|г}}}} and pronounced with {{IPA|/ɡ/}}, while newer terms use {{angbr|{{lang|ru|х}}}}, pronounced with {{IPA|/x/}}, such as {{lang|ru|хобби}} {{IPA|ru|ˈxobʲɪ|}} ('hobby').{{Sfn|Dunn|Khairov|2009|pp=17–8}} Similarly, words originally with {{IPAblink|θ}} in their source language are either pronounced with {{IPA|/t(ʲ)/}}, as in the name {{lang|ru|'''Т'''ельма}} ('[[Thelma]]') or, if borrowed early enough, with {{IPA|/f(ʲ)/}} or {{IPA|/v(ʲ)/}}, as in the names {{lang|ru|'''Ф'''ёдор}} ('[[Theodore (given name)|Theodore]]') and {{lang|ru|Мат'''в'''е́й}} ('[[Matthew (name)|Matthew]]').<ref>{{Cite journal |last=Kiparsky |first=V. |date=1959 |title=Foreign h in Russian |url=https://www.jstor.org/stable/4205121 |journal=The Slavonic and East European Review |volume=38 |issue=90 |pages=82–94 |issn=0037-6795}}</ref>
+
+For the {{IPAblink|d͡ʒ}} [[affricate]], which is common in the Asian countries that were part of the [[Russian Empire]] and the [[USSR]], the letter combination {{angbr|дж}} is used: this is often transliterated into English either as {{angbr|dzh}} or the [[Dutch language|Dutch]] form {{angbr|dj}}.
+
+== Numeric values ==
+The numerical values correspond to the [[Greek numerals]], with {{angbr|{{lang|ru|ѕ}}}} being used for [[digamma]], {{angbr|{{lang|ru|ч}}}} for [[qoppa|koppa]], and {{angbr|{{lang|ru|ц}}}} for [[sampi]]. The system was abandoned for secular purposes in 1708, after a transitional period of a century or so; it continues to be used in [[Church Slavonic]], while general Russian texts use [[Arabic numerals#Russia|Indo-Arabic numerals]] and [[Roman numerals]].
+
+== Diacritics ==
+The Cyrillic alphabet and Russian spelling generally employ fewer [[diacritic]]s than those used in other European languages written with the Latin alphabet. The only diacritic, in the proper sense, is the [[acute accent]]&nbsp;{{angbr|◌́}} (Russian: {{lang|ru|знак ударения}} 'mark of stress'), which marks [[stress (linguistics)|stress]] on a vowel, as it is done in Spanish and Greek. ([[Unicode]] has no [[code point]]s for the accented letters; they are instead produced by suffixing the unaccented letter with {{unichar|301|combining acute accent|cwith=◌}}.) Although Russian word stress is often unpredictable and can fall on different syllables in different forms of the same word, the diacritic accent is used only in dictionaries, children's books, resources for foreign-language learners, the defining entry (in bold) in articles on [[Russian Wikipedia]], or on [[minimal pair]]s distinguished only by stress (for instance, {{lang|ru|за́мок}} 'castle' vs. {{lang|ru|замо́к}} 'lock'). Rarely, it is also used to specify the stress in uncommon foreign words, and in poems with unusual stress used to fit the meter.
+
+The letter {{angbr|{{lang|ru|ё}}}} is a special variant of the letter {{angbr|{{lang|ru|е}}}}, which is not always distinguished in written Russian, but the [[diaeresis (diacritic)|umlaut-like sign]] has no other uses. Stress on this letter is never marked with a diacritic, as it is always stressed (except in some compounds and loanwords).
+
+Both {{angbr|{{lang|ru|ё}}}} and the letter {{angbr|{{lang|ru|й}}}} have completely separated from {{angbr|{{lang|ru|е}}}} and {{angbr|{{lang|ru|и}}}}. {{angbr|{{lang|ru|Й}}}} has been used since the 16th century (except that it was removed in 1708, but reinstated in 1735). Since then, its usage has been mandatory. It was formerly considered a diacriticized letter, but in the 20th century, it came to be considered a separate letter of the Russian alphabet. It was classified as a "semivowel" by 19th- and 20th-century grammarians, but since the 1970s, it has been considered a consonant letter.
+
+==Frequency==
+{{more citations needed section|date=August 2014}}
+The frequency of characters in a [[Text corpus|corpus]] of written Russian was found to be as follows:<ref>{{Cite web |last=Trost |first=Stefan |title=Alphabet and Character Frequency: Russian (Русский) |url=https://www.sttmedia.com/characterfrequency-russian |access-date=2024-10-05 |website=Stefan Trost Media |language=en |quote=Basis of this list was a Russian text with 1,351,370 characters (210,844 words), 1,086,255 characters were used for the counting.}}</ref>
+
+{| class="wikitable sortable" style="text-align: center;"
+|- style="vertical-align: middle; background: #eee;"
+! Rank
+! Letter
+! Frequency
+! Other information
+! English comparison
+|-
+|1
+| {{Font color|blue|{{lang|ru|О}}}}
+| 11.18%
+|
+|By comparison, 'e' in English appears about 13% in texts.
+|-
+|2
+| {{Font color|blue|{{lang|ru|Е}}}}
+| 8.75%
+| Foreign words sometimes use {{lang|ru|Е}} rather than {{lang|ru|Э}}, even if it is pronounced ''e'' instead of ''ye''. In addition, {{lang|ru|Ё}} is often replaced by {{lang|ru|Е}}; this makes {{lang|ru|Е}} even more common.
+|'T' appears about 9.1%
+|-
+|3
+| {{Font color|blue|{{lang|ru|А}}}}
+| 7.64%
+|
+|'A' appears about 8.2%
+|-
+|4
+| {{Font color|blue|{{lang|ru|И}}}}
+| 7.09%
+|
+|'O' appears about 7.5%
+|-
+|5
+| {{lang|ru|Н}}
+| 6.78%
+| The most common consonant in the Russian alphabet.
+|'I' appears about 7%
+|-
+|6
+| {{lang|ru|Т}}
+| 6.09%
+| 
+|
+|-
+|7
+| {{lang|ru|С}}
+| 4.97%
+|
+|
+|-
+|8
+| {{lang|ru|Л}}
+| 4.96%
+|
+|
+|-
+|9
+| {{lang|ru|В}}
+| 4.38%
+| 
+|
+|-
+|10
+| {{lang|ru|Р}}
+| 4.23%
+|
+|
+|-
+|11
+| {{lang|ru|К}}
+| 3.30%
+|
+|
+|-
+|12
+| {{lang|ru|М}}
+| 3.17%
+|
+|
+|-
+|13
+| {{lang|ru|Д}}
+| 3.09%
+|
+|
+|-
+|14
+| {{lang|ru|П}}
+| 2.47%
+|
+|
+|-
+|15
+| {{Font color|blue|{{lang|ru|Ы}}}}
+| 2.36%
+|
+|
+|-
+|16
+| {{Font color|blue|{{lang|ru|У}}}}
+| 2.22%
+|
+|
+|-
+|17
+| {{lang|ru|Б}}
+| 2.01%
+|
+|
+|-
+|18
+| {{Font color|blue|{{lang|ru|Я}}}}
+| 1.96%
+|
+|
+|-
+|19
+| {{lang|ru|Ь}}
+| 1.84%
+|
+|
+|-
+|20
+| {{lang|ru|Г}}
+| 1.72%
+|
+|
+|-
+|21
+| {{lang|ru|З}}
+| 1.48%
+|
+|
+|-
+|22
+| {{lang|ru|Ч}}
+| 1.40%
+|
+|
+|-
+|23
+| {{lang|ru|Й}}
+| 1.21%
+| 
+|
+|-
+|24
+| {{lang|ru|Ж}}
+| 1.01%
+|
+|
+|-
+|25
+| {{lang|ru|Х}}
+| 0.95%
+|
+|
+|-
+|26
+| {{lang|ru|Ш}}
+| 0.72%
+|
+|
+|-
+|27
+| {{Font color|blue|{{lang|ru|Ю}}}}
+| 0.47%
+|
+|
+|-
+|28
+| {{lang|ru|Ц}}
+| 0.39%
+|
+|
+|-
+|29
+| {{Font color|blue|{{lang|ru|Э}}}}
+| 0.36%
+| Foreign words sometimes use {{lang|ru|Е}} rather than {{lang|ru|Э}}, even if it is pronounced ''e'' instead of ''ye''. In addition, {{lang|ru|Ё}} is often replaced by {{lang|ru|Е}}; this makes {{lang|ru|Е}} even more common.
+|K : 0.77%
+|-
+|30
+| {{lang|ru|Щ}}
+| 0.30%
+|
+|J : 0.15%
+|-
+|31
+| {{lang|ru|Ф}}
+| 0.21%
+| The least common consonant in the Russian alphabet.
+|X : 0.15%
+|-
+|32
+| {{Font color|blue|{{lang|ru|Ё}}}}
+| 0.20%
+| In written Russian, {{angbr|ё}} is often replaced by {{angbr|е}}.
+|Q : 0.095%
+|-
+|33
+| {{lang|ru|Ъ}}
+| 0.02%
+| {{angbr|Ъ}} used to be a very common letter in the Russian alphabet. This is because before the [[Reforms of Russian orthography#The post-revolution reform|1918 reform]], any word ending with a non-[[Palatalization (phonetics)|palatalized]] consonant was written with a final {{lang|ru|Ъ}} — e.g., pre-1918 {{lang|ru|вотъ}} vs. post-reform {{lang|ru|вот}}. The reform eliminated the use of {{lang|ru|Ъ}} in this context, leaving it the least common letter in the Russian alphabet.
+|'Z' : 0.074%
+|}
+
+==Keyboard layout==
+{{See also|Keyboard layout#Russian|JCUKEN}}
+
+Microsoft Windows [[keyboard layout]] for personal computers is as follows:
+
+:[[File:KB Russian.svg|540px|Russian keyboard layout]]
+
+However, there are several variations of so-called "phonetic keyboards" that are often used by non-Russians, where pressing an English letter key will type the Russian letter with a similar sound (A → А, S → С, D → Д, F → Ф, etc.).
+
+==Letter names==
+Until approximately the year 1900, [[mnemonic]] names inherited from [[Church Slavonic]] were used for the letters. They are given here in the pre-1918 orthography of the post-1708 civil alphabet.
+
+The Russian poet [[Alexander Pushkin]] wrote: "The [names of the] letters that make up the Slavonic alphabet don't represent a meaning at all. ''{{lang|ru|Аз}}'', ''{{lang|ru|буки}}'', ''{{lang|ru|веди}}'', ''{{lang|ru|глаголь}}'', ''{{lang|ru|добро}}'' etc. are individual words, chosen just for their initial sound". However, since the names of the first few letters of the Slavonic alphabet seem to form readable text, attempts have been made to compose meaningful snippets of text from groups of consecutive letters for the rest of the alphabet.<ref>{{cite book
+ |last = Maksimovich
+ |first = M. A.
+ |title = История древней русской словесности
+ |year = 1839
+ |publisher = Университетская типография
+ |location = Kiev
+ |pages = 215
+ |url = https://books.google.com/books?id=H6RSAAAAcAAJ
+}}</ref><ref>{{cite book
+ |author = Pavskij G.P.
+ |title = Филологическия наблюдения над составом русскаго языка: О буквах и слогах. Первое разсуждение
+ |year = 1850
+ |pages= 35
+ |url = https://books.google.com/books?id=GNddAAAAcAAJ
+}}</ref>
+
+== See also ==
+{{Commons}}
+
+{{Div col|colwidth=16em}}
+*[[Belarusian alphabet]]
+*[[Bulgarian alphabet]]
+*[[Computer russification]]
+*[[Cyrillic alphabets]]
+*[[List of Cyrillic digraphs and trigraphs]]
+*[[Reforms of Russian orthography]]
+*[[Romanization of Russian]]
+*[[Russian Braille]]
+*[[Russian cursive]]
+*[[Russian Latin alphabet]]
+*[[Russian manual alphabet]]
+*[[Russian Morse code]]
+*[[Russian orthography]]
+*[[Russian phonology]]
+*[[Scientific transliteration of Cyrillic]]
+*[[Serbian Cyrillic alphabet]]
+*[[Ukrainian alphabet]]
+*[[Yoficator]]
+{{div col end}}
+
+==Notes==
+{{Reflist | group = "lower-alpha"}}
+
+== References ==
+{{Reflist}}
+
+==Bibliography==
+{{Commons category}}
+*{{citation
+|last=Benson |first=Morton |year=1960
+|title=Review of ''The Russian Alphabet'' by Thomas F. Magner |journal=The Slavic and East European Journal
+|volume=4 |issue=3 |pages=271–72 |doi=10.2307/304189|jstor=304189 }}
+*{{citation
+|last1 =Dunn |first1 =John |last2=Khairov |first2=Shamil |year=2009
+|title=Modern Russian Grammar |series= Modern Grammars |publisher=Routledge}}
+*{{citation |last=Smirnovskiy |first=P |title=A Textbook in Russian Grammar |volume=Part&nbsp;I. Etymology |edition=26th |year=1915 |publisher=Shaw |place=[[Canada]] |url=http://members.shaw.ca/arsoys/smirnovsky-etymology.djvu}}
+* {{cite book |last1=Rakhlin |first1=Natalia |last2=Kornilov |first2=Sergey A. |last3=Grigorenko |first3=Elena L. |title=Learning to Read across Languages and Writing Systems |date=12 October 2017 |publisher=[[Cambridge University Press]] |isbn=978-1-107-09588-5 |url=https://books.google.com/books?id=t-w0DwAAQBAJ |language=en |chapter=Learning to Read Russian}}
+* {{cite book |last=Ushakov |first=Dmitry |author-link=Dmitry Ushakov |title=Толковый словарь русского языка |script-title=ru:Толковый словарь русского языка Ушакова |trans-title=Explanatory Dictionary of the Russian Language |volume=1 |date=1935 |publisher=Государственное издательство иностранных и национальных словарей |url=https://archive.org/details/1-1935_202412/Ушаков%20Д.Н.%20%20%20Толковый%20словарь%20русского%20языка%20Том%201%20%281935%29/ |location=Moscow |language=ru}}
+* {{cite book |last=Ushakov |first=Dmitry |author-link=Dmitry Ushakov |title=Толковый словарь русского языка |script-title=ru:Толковый словарь русского языка Ушакова |trans-title=Explanatory Dictionary of the Russian Language |volume=2 |date=1938 |publisher=Государственное издательство иностранных и национальных словарей |url=https://archive.org/details/1-1935_202412/Ушаков%20Д.Н.%20%20%20Толковый%20словарь%20русского%20языка%20Том%201%20%281935%29/ |location=Moscow |language=ru}}
+* {{cite book |last1=Vasmer |first1=Max |author1-link=Max Vasmer |title=Этимологический словарь русского языка |trans-title=Etymological Dictionary of the Russian Language |date=1986 |volume=2 |publisher=Прогресс |location=Moscow |url=https://archive.org/details/3_20210824_20210824_1803/Этимологический%20словарь%20русского%20языка.%20Том%202%20-%20Макс%20Фасмер}}
+
+==Further reading==
+*{{citation
+|last =Halle |first= Morris |author-link=Morris Halle |year= 1959 |title= Sound Pattern of Russian |publisher=MIT Press}}
+
+==External links==
+*Ivan G. Iliev. [https://www.academia.edu/31909544/Kurze_Geschichte_des_kyrillischen_Alphabets "Kurze Geschichte des kyrillischen Alphabets"]. Plovdiv. 2015. {{Webarchive|url=https://web.archive.org/web/20200625080415/https://www.academia.edu/31909544/Kurze_Geschichte_des_kyrillischen_Alphabets |date=25 June 2020 }}
+*Ivan G. Iliev. [http://www.ijors.net/issue2_2_2013/articles/iliev.html "Short History of the Cyrillic Alphabet"].
+
+{{Russian language}}
+{{Cyrillic navbox}}
+{{Authority control}}
+
+{{DEFAULTSORT:Russian Alphabet}}
+[[Category:Cyrillic alphabets]]
+[[Category:Russian language|Alphabet]]
+[[Category:Russian-language computing|Alphabet]]

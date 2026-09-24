@@ -63,7 +63,7 @@ class Units1620SourceIntakeTest {
             assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
-        assertTrue(pack.units.drop(25).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
         preservedContentDigests.forEach { (number, digest) ->
             assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
         }

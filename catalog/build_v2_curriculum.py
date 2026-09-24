@@ -22,6 +22,7 @@ from units_6_10_intake import build_units_6_10
 from units_11_15_intake import build_units_11_15
 from units_16_20_intake import build_units_16_20
 from units_21_25_intake import build_units_21_25
+from units_26_30_intake import build_units_26_30
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -1445,16 +1446,19 @@ def build() -> dict:
     following = build_units_11_15()
     intake = build_units_16_20()
     later_intake = build_units_21_25()
+    late_intake = build_units_26_30()
     items.extend(proposed["items"])
     items.extend(later["items"])
     items.extend(following["items"])
     items.extend(intake["items"])
     items.extend(later_intake["items"])
+    items.extend(late_intake["items"])
     examples.extend(proposed["examples"])
     examples.extend(later["examples"])
     examples.extend(following["examples"])
     examples.extend(intake["examples"])
     examples.extend(later_intake["examples"])
+    examples.extend(late_intake["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in later["units"]:
@@ -1465,11 +1469,14 @@ def build() -> dict:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in later_intake["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in late_intake["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
     references.extend(later["references"])
     references.extend(following["references"])
     references.extend(intake["references"])
     references.extend(later_intake["references"])
+    references.extend(late_intake["references"])
 
     units = [
         development_unit(
@@ -1679,29 +1686,29 @@ def build() -> dict:
             if number in (27, 29, 30)
             else ""
         )
+        proposed_unit = next(item for item in late_intake["units"] if item["number"] == number)
         units.append(
-            {
-                "number": number,
-                "id": f"unit-{number}",
-                "title": title,
-                "shortLabel": short,
-                "topicSummary": title,
-                "installState": "NOT_YET_INSTALLED",
-                "readiness": "NOT_PREPARED",
-                "penguinLesson": number,
-                "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-                "mappingNote": (
+            development_unit(
+                number,
+                title,
+                short,
+                (
+                    f"Proposed Unit {number} is in development and is not prepared. "
+                    "Admitted frozen spans await qualified review. Unsupported topics stay book-directed. "
+                    "It is not installed and the owned-edition mapping is not signed."
+                ),
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED",
+                mapping_note=(
                     f"Proposed Lesson {number}. Observed structural scope: {topic}. "
-                    "No admitted frozen source supports this lesson. "
+                    "Admitted frozen spans are pending qualified review and do not approve alignment. "
                     f"{variance_note}"
                     "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
                 ),
-                "prerequisiteUnitNumbers": [number - 1],
-                "estimatedMinutes": None,
-                "objectives": [],
-                "sessions": [],
-                "advancement": None,
-            }
+                require_due_review=False,
+                minimum_checks=max(proposed_unit["minimum_checks"], 1),
+            )
         )
 
     pack = {
@@ -1710,9 +1717,9 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 26)],
-        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
-        "rights": [*RIGHTS, *proposed["rights"]],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 31)],
+        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"], *late_intake["sources"]],
+        "rights": [*RIGHTS, *proposed["rights"], *late_intake["rights"]],
         "letters": letters,
         "examples": examples,
         "items": items,
@@ -1721,8 +1728,9 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"]],
-        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"]],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"], *late_intake["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"], *late_intake["authored"]],
+        "sourceCapabilities": late_intake["capabilities"],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

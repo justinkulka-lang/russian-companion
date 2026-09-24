@@ -156,7 +156,7 @@ class Units2125SourceIntakeTest {
         preservedMappingDigests.forEach { (number, digest) ->
             assertEquals("mapping $number", digest, mappingPackageDigest(governedMappingFacts(number)))
         }
-        assertTrue(pack.units.drop(25).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() })
+        assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
         assertFalse(File(repo(), "review/unit-23").exists())
     }
 

@@ -329,6 +329,7 @@ internal data class V2Objective(
     val practiceStepIds: List<String> = emptyList(),
     val checkItemIds: List<String> = emptyList(),
     val remediationStepIds: List<String> = emptyList(),
+    val gating: Boolean = true,
 )
 
 @Serializable
