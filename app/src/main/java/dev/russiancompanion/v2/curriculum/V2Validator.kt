@@ -1192,8 +1192,8 @@ internal object V2Validator {
         "ENGLISH_CLASSIFICATION",
     )
     private val CLAUSE_START = setOf(
-        "он", "она", "оно", "они", "я", "ты", "вы", "мы",
-        "ему", "ей", "им", "мне", "тебе", "вам", "нам", "когда",
+        "\u043e\u043d", "\u043e\u043d\u0430", "\u043e\u043d\u043e", "\u043e\u043d\u0438", "\u044f", "\u0442\u044b", "\u0432\u044b", "\u043c\u044b",
+        "\u0435\u043c\u0443", "\u0435\u0439", "\u0438\u043c", "\u043c\u043d\u0435", "\u0442\u0435\u0431\u0435", "\u0432\u0430\u043c", "\u043d\u0430\u043c", "\u043a\u043e\u0433\u0434\u0430",
     )
     private val ENGLISH_CLASSIFICATION_PROMPT = Regex("(?i)\\blabel\\b|\\benglish\\b")
 
