@@ -1663,9 +1663,40 @@ def build() -> dict:
                 minimum_checks=max(proposed_unit["minimum_checks"], 1),
             )
         )
+    late_scope = {
+        26: (
+            "320-331",
+            "Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work",
+        ),
+        27: (
+            "332-342",
+            "Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension",
+        ),
+        28: (
+            "343-354",
+            "Imperfective and perfective verbal adverbs, formation and use, vocabulary and readings",
+        ),
+        29: (
+            "355-367",
+            "Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading",
+        ),
+        30: (
+            "368-377",
+            "Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading",
+        ),
+    }
     for number, short, title in UNITS_3_30:
         if number <= 25:
             continue
+        pages, topic = late_scope[number]
+        extra = ""
+        if number == 27:
+            extra = " Active participles are not part of this lesson."
+        if number == 30:
+            extra = (
+                " Letter names are only reviewed and applied here. Printed page 378 begins the grammatical tables."
+                " Lessons 26-30 have no following book revision block."
+            )
         units.append(
             {
                 "number": number,
@@ -1676,8 +1707,12 @@ def build() -> dict:
                 "installState": "NOT_YET_INSTALLED",
                 "readiness": "NOT_PREPARED",
                 "penguinLesson": number,
-                "mappingStatus": "NOT_STARTED",
-                "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
+                "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+                "mappingNote": (
+                    f"Proposed Lesson {number}, printed pages {pages}. Observed structural scope: {topic}.{extra} "
+                    "No admitted frozen source supports this lesson. Mapping status is PENDING_CURRICULUM_REVIEWER. "
+                    "This note does not approve coverage, variance, or alignment."
+                ),
                 "prerequisiteUnitNumbers": [number - 1],
                 "estimatedMinutes": None,
                 "objectives": [],

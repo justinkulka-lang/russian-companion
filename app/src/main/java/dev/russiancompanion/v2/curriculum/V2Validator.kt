@@ -31,6 +31,8 @@ internal object V2Validator {
         validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateProvenance(pack, errors)
         validateSourceCapabilities(pack, errors)
+        errors += structuralSequenceErrors(pack)
+        validateLateUnitRussian(pack, errors)
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
         validateReview(pack, errors)
@@ -683,7 +685,7 @@ internal object V2Validator {
     }
 
     private fun completionGapErrors(pack: V2CurriculumPack, unit: V2Unit): List<String> {
-        if (unit.number !in 16..25) return emptyList()
+        if (unit.number !in 16..30) return emptyList()
         val records = pack.provenanceRecords.filter { it.unitNumber == unit.number }
         val joined = records.joinToString("\n") { it.originalSourceText }
         return when (unit.number) {
@@ -736,6 +738,31 @@ internal object V2Validator {
                 pack,
                 unit,
                 "Unit 25 is not content-complete without admitted productive-diminutive and register source capabilities",
+            )
+            26 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 26 is not content-complete without admitted indefinite-pronoun, word-order, postal-address, and letter-writing source capabilities",
+            )
+            27 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 27 is not content-complete without admitted passive-participle and participle-stress source capabilities",
+            )
+            28 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 28 is not content-complete without admitted imperfective-verbal-adverb and perfective-verbal-adverb source capabilities",
+            )
+            29 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 29 is not content-complete without admitted active-participle, participle-punctuation, short-form-adjective, and bookish-register source capabilities",
+            )
+            30 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, letter-name-review, particle, and capstone-reading source capabilities",
             )
             else -> emptyList()
         }
@@ -822,6 +849,33 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u25-nickname-rule", "productive-diminutive"),
             RequiredSourceCapability("obj-u25-address", "register"),
         ),
+        26 to listOf(
+            RequiredSourceCapability("obj-u26-indefinite", "indefinite-pronoun"),
+            RequiredSourceCapability("obj-u26-word-order", "word-order"),
+            RequiredSourceCapability("obj-u26-postal-address", "postal-address"),
+            RequiredSourceCapability("obj-u26-letter-writing", "letter-writing"),
+        ),
+        27 to listOf(
+            RequiredSourceCapability("obj-u27-passive", "passive-participle"),
+            RequiredSourceCapability("obj-u27-stress", "participle-stress"),
+        ),
+        28 to listOf(
+            RequiredSourceCapability("obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
+            RequiredSourceCapability("obj-u28-perfective-adverb", "perfective-verbal-adverb"),
+        ),
+        29 to listOf(
+            RequiredSourceCapability("obj-u29-active", "active-participle"),
+            RequiredSourceCapability("obj-u29-punctuation", "participle-punctuation"),
+            RequiredSourceCapability("obj-u29-short-adjective", "short-form-adjective"),
+            RequiredSourceCapability("obj-u29-register", "bookish-register"),
+        ),
+        30 to listOf(
+            RequiredSourceCapability("obj-u30-dictionary", "dictionary-use"),
+            RequiredSourceCapability("obj-u30-abbreviation", "abbreviation"),
+            RequiredSourceCapability("obj-u30-letter-names", "letter-name-review"),
+            RequiredSourceCapability("obj-u30-particle", "particle"),
+            RequiredSourceCapability("obj-u30-capstone", "capstone-reading"),
+        ),
     )
 
     private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
@@ -891,10 +945,124 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
         }
+        if (capability.unitNumber in 26..30) {
+            if (STRUCTURAL_PAGE_RANGE.matches(capability.exactSpan.trim())) {
+                errors += "Source capability ${capability.id} structural page range is not linguistic evidence"
+            }
+            if (mutableWebpage(spanHost)) {
+                errors += "Source capability ${capability.id} mutable webpage cannot clear a source blocker"
+            }
+            if (!admittedLateSource(capability)) {
+                errors += "Source capability ${capability.id} is not an admitted frozen source"
+            }
+        }
         if (!capabilityHasCheckChain(pack, capability, spanHost)) {
             errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
         }
         return errors
+    }
+
+    private val STRUCTURAL_PAGE_RANGE = Regex("""^\d{2,3}-\d{2,3}$""")
+
+    /**
+     * Units 26-30 have no admitted frozen source. Keyword text, a page range,
+     * and a mutable page cannot join this empty allowlist.
+     */
+    private val ADMITTED_UNITS_26_30_SOURCES = emptySet<String>()
+
+    private fun admittedLateSource(capability: V2SourceCapability): Boolean {
+        val key = listOf(
+            capability.sourceId,
+            capability.sourceRevision,
+            capability.sourceRecordId,
+            capability.sourceHash,
+        ).joinToString("|")
+        return key in ADMITTED_UNITS_26_30_SOURCES
+    }
+
+    private fun mutableWebpage(record: V2ProvenanceRecord): Boolean {
+        val url = record.sourceUrl.lowercase()
+        val mutableHost = listOf(
+            "wikipedia.org",
+            "wikibooks.org",
+            "wiktionary.org",
+            "wikimedia.org",
+            "wikisource.org",
+        ).any { url.contains(it) }
+        return mutableHost && !url.contains("oldid=")
+    }
+
+    private fun structuralSequenceErrors(pack: V2CurriculumPack): List<String> {
+        val errors = mutableListOf<String>()
+        pack.units.forEach { unit ->
+            val claims = claimsOn(pack, unit)
+            if (unit.number < 29 && "active-participle" in claims) {
+                errors += "Unit ${unit.number} cannot contain active-participle instruction"
+            }
+            if ("letter-name-introduction" in claims && unit.number != 1) {
+                errors += "Unit ${unit.number} cannot introduce letter names"
+            }
+        }
+        return errors
+    }
+
+    private fun claimsOn(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
+        val claims = mutableSetOf<String>()
+        pack.sourceCapabilities.filter { it.unitNumber == unit.number }.forEach { claims += it.supportedClaim }
+        unit.objectives.forEach { objective ->
+            if (objective.id.contains("active-participle")) claims += "active-participle"
+            if (objective.id.contains("letter-name-introduction")) claims += "letter-name-introduction"
+        }
+        val objectiveIds = unit.objectives.map { it.id }.toSet()
+        pack.items.filter { it.objectiveId in objectiveIds }.forEach { item ->
+            val feature = item.assessment?.testedFeature.orEmpty()
+            if (feature == "active-participle" || feature == "letter-name-introduction") claims += feature
+        }
+        return claims
+    }
+
+    private fun validateLateUnitRussian(pack: V2CurriculumPack, errors: MutableList<String>) {
+        pack.units.filter { it.number in 26..30 }.forEach { unit ->
+            val provenance = pack.provenanceRecords.filter { it.unitNumber == unit.number }
+            learnerRussian(pack, unit).forEach { text ->
+                val resolved = provenance.any { record ->
+                    record.shippedText == text || record.originalSourceText == text
+                }
+                if (!resolved) {
+                    errors += "Unit ${unit.number} Russian text has no resolved provenance record"
+                }
+            }
+        }
+    }
+
+    private fun learnerRussian(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val texts = mutableListOf<String>()
+        unit.sessions.forEach { session ->
+            session.steps.forEach { step ->
+                texts += step.body
+                texts += step.title
+                step.bookDirection?.let { texts += it }
+                step.companionDirection?.let { texts += it }
+                step.unavailableReason?.let { texts += it }
+            }
+        }
+        val objectiveIds = unit.objectives.map { it.id }.toSet()
+        pack.examples.filter { it.objectiveId in objectiveIds }.forEach { example ->
+            texts += example.display
+            texts += example.note
+        }
+        pack.items.filter { it.objectiveId in objectiveIds }.forEach { item ->
+            texts += item.prompt
+            texts += item.answer
+            texts += item.feedback
+            texts += item.options
+            texts += item.distractorRationales
+            item.assessment?.let { assessment ->
+                texts += assessment.whyAnswerDemonstratesObjective
+                texts += assessment.distractorDifference
+            }
+        }
+        return texts.filter { hasCyrillic(it) }
     }
 
     private fun capabilityHasCheckChain(

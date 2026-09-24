@@ -190,6 +190,12 @@ private const val UNITS_21_25_EDITION_NOTES =
 private const val UNITS_21_25_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 21-25, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
+private const val UNITS_26_30_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification."
+
+private const val UNITS_26_30_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 26-30, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum. Classification RESEARCH_GAPS_BLOCK_IMPLEMENTATION. This observation is not an approved alignment."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -382,6 +388,46 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
         UNITS_21_25_EDITION_NOTES,
         UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        26,
+        "Lesson 26",
+        "320-331",
+        "Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work",
+        UNITS_26_30_EDITION_NOTES,
+        UNITS_26_30_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        27,
+        "Lesson 27",
+        "332-342",
+        "Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension",
+        UNITS_26_30_EDITION_NOTES,
+        UNITS_26_30_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        28,
+        "Lesson 28",
+        "343-354",
+        "Imperfective and perfective verbal adverbs, formation and use, vocabulary and readings",
+        UNITS_26_30_EDITION_NOTES,
+        UNITS_26_30_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        29,
+        "Lesson 29",
+        "355-367",
+        "Present and past active participles, participles as adjectives, optional punctuation, long and short adjectives, and bookish reading",
+        UNITS_26_30_EDITION_NOTES,
+        UNITS_26_30_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        30,
+        "Lesson 30",
+        "368-377",
+        "Course orientation, dictionary use, abbreviations, review and application of letter names, particles, vocabulary and a final reading",
+        UNITS_26_30_EDITION_NOTES,
+        UNITS_26_30_OBSERVATION_SOURCE,
     ),
 )
 
@@ -1223,7 +1269,18 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
     unit.sessions.forEach { session ->
         lines += mappingRow(session.id, "SESSION", session.title, if (populated) facts else null, digest)
     }
+    if (unit.objectives.isEmpty() && unit.sessions.isEmpty()) {
+        lines.add(
+            8,
+            "# This worksheet records a pending structural observation only. It is not a review packet and it does not approve instructional content.",
+        )
+        lines += mappingRow(unit.id, "UNIT", unit.title, if (populated) facts else null, digest)
+    }
     return lines.joinToString("\n") + "\n"
+}
+
+internal fun structuralMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): String {
+    return renderMappingWorksheet(pack, unitNumber)
 }
 
 private fun mappingRow(

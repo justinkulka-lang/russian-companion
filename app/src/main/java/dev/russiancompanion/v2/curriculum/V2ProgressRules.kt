@@ -191,6 +191,9 @@ internal fun advancementDecision(
     if (unit.number in 16..25 && unit.readiness == "NOT_PREPARED") {
         remaining += "This unit is not prepared"
     }
+    if (unit.number in 26..30) {
+        remaining += "This unit is not prepared"
+    }
     if (rule.requireInstruction) {
         val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
         if (instructionSteps.any { it.id !in learner.completedStepIds }) {
