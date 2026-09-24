@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
-- Unit content-review SHA-256: e0bcebd17932aade5256a3057a760b054b6506d3a042abe4937037c1ec806a41
+- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
+- Unit content-review SHA-256: 8c99d3279aeb5bc1a12c99f5ab8f74517469783e0a27f2bc63f02bde4835cbdd
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
-- Review-package SHA-256: cabeac50cc69f7c01169dd4f68bd5d611b9bbc5049cfa64684aae418484db77d
-- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
+- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
+- Review-package SHA-256: f281aa619b9abe1da1734fb8e271ffcc992d5fbfa5d4dcd78c0f680f1ea660e4
+- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2277,7 +2277,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9369c1a081ba23fc3b8c3d95f5c4f5a76a8819f30282435c7973630c8fc108c6
+- Content hash: 43eeecccb1c94ddb7e948ad728b9568d090c3826e4996288636d38ce7f720e33
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2289,7 +2289,7 @@ feedback=The frozen line writes became beside стать. associates of connecti
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes remain beside остаться. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
+distractorRationales= | The frozen line writes remain beside остаться. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
 testedFeature=COMPLEMENT_BECAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-0
@@ -2297,8 +2297,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u16-complements-0-en
 distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes remain beside остаться. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
-whyAnswerDemonstratesObjective=The frozen line writes became beside стать. associates of connective verbs
+distractorDifference= | The frozen line writes remain beside остаться. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
+whyAnswerDemonstratesObjective=The frozen line writes became beside стать. associates of connective verbs.
 contrastMembers=became | remain | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
@@ -2662,7 +2662,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c100d1a9d6e66c999e530a7b9dbfba27fa33596a7e0f70356a8830beb71bed85
+- Content hash: 2e423f44654dc4b4c852324894e11c46a21b45524efcb959b0a9b140fcfd8d69
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2674,7 +2674,7 @@ feedback=The frozen line writes remain beside остаться. associates of co
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
+distractorRationales= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
 testedFeature=COMPLEMENT_REMAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-1
@@ -2682,8 +2682,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-1-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
-whyAnswerDemonstratesObjective=The frozen line writes remain beside остаться. associates of connective verbs
+distractorDifference= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
+whyAnswerDemonstratesObjective=The frozen line writes remain beside остаться. associates of connective verbs.
 contrastMembers=remain | became | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-1-ru | prov-ex-u16-complements-1-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
@@ -2697,7 +2697,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b67aa62f07d7b52bf1a4c0392f7aed0e654ab6255f321444f5574bf3a0adea1f
+- Content hash: c0143a66ad9e1cd99ec3834d9905e2d5b5618648529af7c01d27d560ab6a2c12
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2709,7 +2709,7 @@ feedback=The frozen line writes turn out to be beside оказаться. associ
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes remain beside остаться. associates of connective verbs
+distractorRationales= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes remain beside остаться. associates of connective verbs.
 testedFeature=COMPLEMENT_TURN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-2
@@ -2717,8 +2717,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-3-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
-distractorDifference= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes remain beside остаться. associates of connective verbs
-whyAnswerDemonstratesObjective=The frozen line writes turn out to be beside оказаться. associates of connective verbs
+distractorDifference= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes remain beside остаться. associates of connective verbs.
+whyAnswerDemonstratesObjective=The frozen line writes turn out to be beside оказаться. associates of connective verbs.
 contrastMembers=turn out to be | became | remain
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-3-ru | prov-ex-u16-complements-3-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en

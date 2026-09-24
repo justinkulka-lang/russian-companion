@@ -59,8 +59,8 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(7) + (16..30).toList(), contentUnits)
-        assertEquals(16, contentUnits.size)
+        assertEquals(listOf(7, 17, 19) + (21..30).toList(), contentUnits)
+        assertEquals(13, contentUnits.size)
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -72,7 +72,7 @@ class GapClosureDossierTest {
         assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
         assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
         assertEquals(
-            listOf(18, 20, 23),
+            listOf(23),
             model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber },
         )
         assertEquals(
@@ -102,21 +102,37 @@ class GapClosureDossierTest {
             "active-participle",
             "short-form-adjective",
             "letter-name-review",
+            "adverb-introduction",
+            "instrumental-complements",
+            "age",
+            "weekdays",
+            "months",
+            "clock-question",
+            "comparison",
+            "relative-kotoryy",
+            "conditional-by",
+            "obligation-dolzhen",
+            "motion-directionality",
+            "motion-foot-transport",
+            "motion-carrying-leading",
+            "motion-po-setting-out",
+            "motion-prefixed-path",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
-        assertTrue(headings.any { it.unitNumber == 7 && it.claim == "adverb-introduction" })
+        assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
+        assertTrue(headings.any { it.unitNumber == 7 && it.claim == "adverb-paradigm" && it.objective == "obj-u7-adverb" })
         assertEquals(
-            listOf(
-                "obj-u16-complements",
-                "obj-u17-calendar",
-                "obj-u18-comparison",
-                "obj-u18-relative",
-                "obj-u19-conditional",
-                "obj-u19-obligation",
-                "obj-u20-motion",
-            ),
-            headings.filter { it.unitNumber in 16..20 }.map { it.objective },
+            listOf("productive-clock-time", "calendar-date"),
+            headings.filter { it.unitNumber == 17 }.map { it.claim },
         )
+        assertEquals(
+            listOf("probability-dolzhen"),
+            headings.filter { it.unitNumber == 19 }.map { it.claim },
+        )
+        assertTrue(text.contains("0f0744dfeb76433fddb5604a065c92427c54848a"))
+        assertTrue(text.contains("merged into this Batch A branch only"))
+        assertTrue(text.contains("closed as superseded"))
+        assertFalse(text.contains("PR #42 merged into main"))
     }
 
     private fun matrixRows(text: String): List<DossierMatrixRow> {
@@ -172,6 +188,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "f7e784afa41a44961a5f79a2b80d71875e07536d"
+        const val BASELINE_COMMIT = "a18f4f897251dbaa6e1da42c1c0810dcef1221ce"
     }
 }

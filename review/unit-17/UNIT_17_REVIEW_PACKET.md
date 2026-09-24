@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
-- Unit content-review SHA-256: cf2d183a3308a61bd9ed1154b39d6d272db40812cf1fd70396b7a5e01d0d2ca6
+- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
+- Unit content-review SHA-256: 0031dae602b66bf57605eb61deb84ebe1bf722751c2f0a9eb64294c1662a1a55
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
-- Review-package SHA-256: d8d66919281b0a981f06ae2bac04ef5cc2a903dc3393350da234762de37cdefe
-- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
+- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
+- Review-package SHA-256: 0a758ad5c08c0d1d4079834826e7384bfdc5c0c952c1d2d0fa0be822b5d2cd26
+- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2311,7 +2311,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bcbce862e8a65d61c95e09766ca4b2e681559709b71b9ee390be1cc4e9f3272
+- Content hash: 82f9f632d51abb6111b54941aa4ea0a0bd5b9ce7b1bb59a63217bf55b3cbfb5a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2319,11 +2319,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? What time is it?
+feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
 testedFeature=CLOCK_QUESTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-0
@@ -2331,8 +2331,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2836,7 +2836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4afffe96008c5314c5dc0dd4fef777bbcd009b435ce0e2d0c4acf6ecd31d42e9
+- Content hash: 1302f49be5b6256f5bd93889262a300c6fea2d9f608714390dacf15807deaa10
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2844,11 +2844,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? What time is it?
+feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
 testedFeature=CLOCK_QUESTION_AGAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-1
@@ -2856,8 +2856,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2871,7 +2871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e8ae663056596d0355d6c91fa37c4d34ee8a3da3c4065a4eead17cbda985237
+- Content hash: eb53c4a18808e42cff1a72a328ac767eb8eccb9e5eca55bdaf20f33bb61aed89
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2879,11 +2879,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? What time is it?
+feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
 testedFeature=CLOCK_QUESTION_CHECK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-2
@@ -2891,8 +2891,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0

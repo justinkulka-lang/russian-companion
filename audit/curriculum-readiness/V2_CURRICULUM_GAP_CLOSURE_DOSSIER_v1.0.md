@@ -2,22 +2,25 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `f7e784afa41a44961a5f79a2b80d71875e07536d`  
-**Pack content-review digest:** `b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd`  
-**Repository source digest:** `0aba6436df419cfe8c040f6d29089a339a83a03d9351bd32e45d420d5fda7889`  
+**Canonical commit:** `a18f4f897251dbaa6e1da42c1c0810dcef1221ce`  
+**Pack content-review digest:** `a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c`  
+**Repository source digest:** `0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
 
-This dossier converts the merged curriculum-readiness reconciliation into an actionable research queue. It does not add curriculum, approve Russian, approve the owned-edition mapping, activate a variance, install a unit, freeze a candidate, complete AT-031, or authorize release.
+This dossier converts the live curriculum-readiness reconciliation into an actionable research queue. It does not add curriculum, approve Russian, approve the owned-edition mapping, activate a variance, install a unit, freeze a candidate, complete AT-031, or authorize release.
+
+PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch A branch only. It is not merged into `main`. After PR #43 merges, PR #42 may be closed as superseded by PR #43. This dossier does not claim that PR #42 merged separately.
 
 ## Executive result
 
-- Content blockers: **16 units** — Unit 7 and Units 16–30.
+- Content blockers: **13 units** — Unit 7, Units 17 and 19, and Units 21–30.
+- Units 16, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
-- Missing review packets: **Units 18, 20, and 23**.
+- Missing review packets: **Unit 23 only**.
 - Unactivated authority variances: **Units 27, 29, and 30**.
 - Disclosed catalog orphans: **2 Unit 4 examples**.
 - Required local-experience blockers unrelated to sources/assets: **0**.
@@ -46,7 +49,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 4 | Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 5 | Questions, prepositional case, and indeclinable nouns | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 6 | Possession, going places, accusative case, and personal names | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 8 | Plurals, first spelling rules, existence questions, and buying things | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 9 | Numbers, genitive singular and plural, quantities, and money | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
@@ -55,11 +58,11 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 13 | Aspect in the past, tense use, infinitive aspect, and reported speech | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 15 | Requests, the imperative, and consolidation of aspect use | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close documented source-supported curriculum gaps, then regenerate review materials; generate the missing review packet only after the instructional chain exists |
-| 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close documented source-supported curriculum gaps, then regenerate review materials; generate the missing review packet only after the instructional chain exists |
+| 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close documented source-supported curriculum gaps, then regenerate review materials; generate the missing review packet only after the instructional chain exists |
@@ -77,10 +80,10 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `adverb-introduction` — `NOT_PACKAGED—authority topic gap`
+#### `adverb-paradigm` — `obj-u7-adverb`
 
-- **Required claim/skill:** A bounded beginner introduction to the adverb objective required by the Unit 7 scope, including the exact form/meaning distinction the app will teach and assess.
-- **Why the current record is insufficient:** The frozen adjectives page supports admitted agreement rows but does not supply a bounded adverb paradigm outside an excluded short-form section.
+- **Required claim/skill:** The productive adverb pattern required by the Unit 7 scope. The admitted orientation sentence does not supply that paradigm.
+- **Why the current record is insufficient:** The frozen adjectives page supports admitted agreement rows and one orientation sentence. It does not supply a bounded adverb paradigm outside an excluded short-form section.
 - **Required source:** A frozen, app-compatible licensed grammar source that explicitly explains the selected beginner adverb pattern and supplies source-verifiable examples sufficient for instruction, guided practice, independent checks, feedback, and remediation.
 - **Russian examples required:** Yes
 - **English scaffold boundary:** English may frame the task and navigation; it may not supply the Russian rule or examples.
@@ -89,62 +92,34 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-### Unit 16 — Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming
-
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
-
-#### `instrumental-complements-identity-role-becoming` — `obj-u16-complements`
-
-- **Required claim/skill:** Instrumental complements expressing identity, role, profession/status, or becoming, limited to distinctions explicitly supported by the admitted source.
-- **Why the current record is insufficient:** Existing frozen instrumental rows cover forms, agreement, means/accompaniment, and selected prepositions but do not state the complement pattern.
-- **Required source:** A frozen licensed grammar source with explicit explanatory spans and examples for each admitted complement distinction. Do not infer a general rule from isolated instrumental noun forms.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may describe what the learner should notice only after the linguistic relationship is source-bound.
-- **Book-directed disposition:** The current guidance step may remain book-directed until sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Units 16, 18, and 20 no longer have open Batch A research requests. Their admitted complement, comparison, relative, and motion spans are packaged. Readiness is `CONTENT_COMPLETE_REVIEW_PENDING`. Reviewer and mapping signature fields stay blank.
 
 ### Unit 17 — Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `clock-calendar-age` — `obj-u17-calendar`
+Age, weekday, month, and clock-question spans are admitted. These two capabilities remain unresolved.
 
-- **Required claim/skill:** Telling clock time, weekdays, calendar dates, and age expressions as separately source-supported beginner strands.
-- **Why the current record is insufficient:** Existing ordinal/hour/year/minute rows do not establish clock-time syntax, weekday/date constructions, or age expressions.
-- **Required source:** Frozen licensed instructional spans that separately establish clock time, weekdays, dates, and age, with examples adequate for non-ambiguous checks.
+#### `productive-clock-time` — `obj-u17-clock-answers`
+
+- **Required claim/skill:** Productive clock-time answers, limited to constructions the admitted source explicitly states.
+- **Why the current record is insufficient:** The admitted clock question does not supply answer forms for telling the time.
+- **Required source:** A frozen licensed instructional span that states the clock-time answer pattern and examples sufficient for checks.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English can organize the four subtopics but cannot derive Russian constructions.
-- **Book-directed disposition:** Current guidance may remain book-directed until all required strands are sourced.
+- **English scaffold boundary:** English can name the task. It cannot derive the answer pattern.
+- **Book-directed disposition:** Current guidance may remain book-directed until the answer pattern is sourced.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-### Unit 18 — Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который
+#### `calendar-date` — `obj-u17-calendar-date`
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
-
-#### `comparison-forms` — `obj-u18-comparison`
-
-- **Required claim/skill:** Comparative formation/use and superlative expression within the observed Unit 18 scope.
-- **Why the current record is insufficient:** No admitted comparison source exists; the frozen adjective page is expressly not a comparison source.
-- **Required source:** Frozen licensed grammar instruction explicitly supporting the chosen comparative and superlative patterns and source-bound examples.
+- **Required claim/skill:** Calendar-date syntax, limited to constructions the admitted source explicitly states.
+- **Why the current record is insufficient:** Admitted month and weekday rows do not state how a calendar date is formed.
+- **Required source:** A frozen licensed instructional span that states the date construction and examples sufficient for checks.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English may explain UI directions only.
-- **Book-directed disposition:** May remain book-directed until sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `relative-kotoryy-agreement` — `obj-u18-relative`
-
-- **Required claim/skill:** Relative clauses using inflected который, including only case/gender/number relationships explicitly supported by the source.
-- **Why the current record is insufficient:** No admitted frozen instructional source establishes relative-clause agreement.
-- **Required source:** Frozen licensed grammar instruction with explicit rules and examples for inflection and antecedent/clause relationships sufficient for independent checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English scaffolding cannot invent agreement rules.
-- **Book-directed disposition:** May remain book-directed until sourced.
+- **English scaffold boundary:** English can name the task. It cannot derive the date construction.
+- **Book-directed disposition:** Current guidance may remain book-directed until the date construction is sourced.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
@@ -153,42 +128,16 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `conditional-by` — `obj-u19-conditional`
+Conditional and obligation spans are admitted. Probability remains unresolved.
 
-- **Required claim/skill:** Conditional constructions with бы, restricted to forms and placement explicitly stated by the source.
-- **Why the current record is insufficient:** The admitted prefix cautions do not supply conditional syntax.
-- **Required source:** Frozen licensed grammar instruction containing explicit conditional constructions, relationships, and examples.
+#### `probability-dolzhen` — `obj-u19-probability`
+
+- **Required claim/skill:** Probability with forms of должен, limited to the meaning the admitted source explicitly states.
+- **Why the current record is insufficient:** The admitted obligation lines do not state a probability use.
+- **Required source:** A frozen licensed grammar span that explicitly supports the probability reading and examples sufficient for checks.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English can label a source-stated contrast.
+- **English scaffold boundary:** English cannot infer modal force.
 - **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `obligation-dolzhen` — `obj-u19-obligation`
-
-- **Required claim/skill:** Obligation or probability with forms of должен, limited to source-supported agreement and construction patterns.
-- **Why the current record is insufficient:** The admitted aspect/prefix material does not supply obligation patterns.
-- **Required source:** Frozen licensed grammar instruction with explicit forms, governed relationships, meanings, and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer modal force or agreement.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-### Unit 20 — Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs
-
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
-
-#### `motion-verb-system` — `obj-u20-motion`
-
-- **Required claim/skill:** Unidirectional/multidirectional motion; foot versus transport; carrying/leading pairs; selected prefixed motion verbs; and only the cumulative review relationships supported by admitted sources.
-- **Why the current record is insufficient:** No motion curriculum exists. A red link, general verb page, or dictionary rows are not an instructional source.
-- **Required source:** One or more frozen licensed instructional sources explicitly teaching the required motion contrasts and pairs, with source-bound examples for each assessed distinction.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may sequence the strands but not manufacture pairings or usage rules.
-- **Book-directed disposition:** The whole strand remains book-directed until sourced.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
@@ -569,8 +518,6 @@ No admissions counter, unrelated catalog audio, filename-only record, or generat
 
 ## Missing review packets
 
-- **Unit 18:** No review package or mapping worksheet exists because the unit lacks a source-supported instructional body and advancement checks. Minimum state: Required source gaps resolved or explicitly governed as book-directed without falsely claiming app completeness; Instruction, examples, guided practice, independent checks, feedback, and remediation present for every app-taught objective; Deterministic unit content-review digest generated; Structural mapping worksheet generated with reviewer fields blank; Packet validator passes. **Do not create an empty packet merely to remove the missing-packet blocker.**
-- **Unit 20:** No review package or mapping worksheet exists because the unit lacks a source-supported instructional body and advancement checks. Minimum state: Required source gaps resolved or explicitly governed as book-directed without falsely claiming app completeness; Instruction, examples, guided practice, independent checks, feedback, and remediation present for every app-taught objective; Deterministic unit content-review digest generated; Structural mapping worksheet generated with reviewer fields blank; Packet validator passes. **Do not create an empty packet merely to remove the missing-packet blocker.**
 - **Unit 23:** No review package or mapping worksheet exists because the unit lacks a source-supported instructional body and advancement checks. Minimum state: Required source gaps resolved or explicitly governed as book-directed without falsely claiming app completeness; Instruction, examples, guided practice, independent checks, feedback, and remediation present for every app-taught objective; Deterministic unit content-review digest generated; Structural mapping worksheet generated with reviewer fields blank; Packet validator passes. **Do not create an empty packet merely to remove the missing-packet blocker.**
 
 ## Authority variances
@@ -609,10 +556,10 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
-3. **Curriculum research batch A:** Unit 7 and Units 16–20.
+3. **Remaining Batch A research:** Unit 7 adverb-paradigm, Unit 17 productive-clock-time and calendar-date, and Unit 19 probability-dolzhen. Units 16, 18, and 20 research requests are closed.
 4. **Curriculum research batch B:** Units 21–25.
 5. **Curriculum research batch C:** Units 26–30.
-6. Generate packets for Units 18, 20, and 23 only after their instructional chains exist.
+6. Generate the Unit 23 packet only after its instructional chain exists.
 7. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 8. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.
 9. Run the final curriculum-wide independent audit, including the reserved Claude audit package.

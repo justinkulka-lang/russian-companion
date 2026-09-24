@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
-- Unit content-review SHA-256: 701207711e329c88de6feedda2a49d3dd0f075e11ed48ed0dfd425541236e837
+- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
+- Unit content-review SHA-256: fc87c867b7d87e0af1c71a397e54fbd5d742ed3e25513df601afa9eca7594f35
 - Mapping-package SHA-256: bbc970db2dfb4a17b8433024c289db9045424d73e3e64a61f699f992704ffbda
-- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
-- Review-package SHA-256: f7a5a0e050aac1a841cc885d3862df85e6e31e6ac452ce48b332813285a4217f
-- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
+- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
+- Review-package SHA-256: b913c5cccdabc700790c9dd78e15fb0959110a4ee11739e3c7ee778f99d993b8
+- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -731,7 +731,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 660da73508e7dc7b30a8a827f16c77c4afd71578247e91837ba9fbb497f751b6
+- Content hash: 2f6f0f1eca3cd84f37666565cd709edb7bae92c4b354493c04c51ac878ded494
 
 kind=CONTRAST_SELECTION
 language=en
@@ -739,11 +739,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Которое яблоко моё?
 options=Which apple is mine? | Which book do you want? | The man who changed the world
 answer=Which apple is mine?
-feedback=The frozen line writes Which apple is mine? beside Которое яблоко моё? Which apple is mine?
+feedback=The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes Which apple is mine?
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? | The frozen line writes The man who changed the world beside Человек, который изменил мир.
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes | The frozen line writes The man who changed the world beside Человек, который изменил мир.
 testedFeature=RELATIVE_APPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-0
@@ -751,8 +751,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u18-relative-0-en
 distractorSourceIds= | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? | The frozen line writes The man who changed the world beside Человек, который изменил мир.
-whyAnswerDemonstratesObjective=The frozen line writes Which apple is mine? beside Которое яблоко моё?
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes | The frozen line writes The man who changed the world beside Человек, который изменил мир.
+whyAnswerDemonstratesObjective=The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
 contrastMembers=Which apple is mine? | Which book do you want? | The man who changed the world
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-0-ru | prov-ex-u18-relative-0-en | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
@@ -836,7 +836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71effa6c4625b682fdbd2a3d15427c5da52142b95a96ff285de7cf17490b9d59
+- Content hash: cd5e1785c89f6bdedea8f7d4a29228c1e084f358493f25a7c08fe52874b84780
 
 kind=CONTRAST_SELECTION
 language=en
@@ -848,7 +848,7 @@ feedback=The frozen line writes The woman (who) I'm friends with beside Же́н
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё?
+distractorRationales= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
 testedFeature=RELATIVE_WOMAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-1
@@ -856,7 +856,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-2-en
 distractorSourceIds= | prov-ex-u18-relative-3-en | prov-ex-u18-relative-0-en
-distractorDifference= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё?
+distractorDifference= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
 whyAnswerDemonstratesObjective=The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.
 contrastMembers=The woman (who) I'm friends with | The man who changed the world | Which apple is mine?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
@@ -871,7 +871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 609e3012cbebe89aee7062371d8c2c69349d080ce9d3d547ea8d8d4f65da1d0f
+- Content hash: e17f01dda87937d365fe47e411ca25fea49e4dee3867d3e28fd62b6d48295323
 
 kind=CONTRAST_SELECTION
 language=en
@@ -883,7 +883,7 @@ feedback=The frozen line writes The man who changed the world beside Челов�
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+distractorRationales= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
 testedFeature=RELATIVE_MAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-2
@@ -891,7 +891,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-3-en
 distractorSourceIds= | prov-ex-u18-relative-2-en | prov-ex-u18-relative-1-en
-distractorDifference= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+distractorDifference= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
 whyAnswerDemonstratesObjective=The frozen line writes The man who changed the world beside Человек, который изменил мир.
 contrastMembers=The man who changed the world | The woman (who) I'm friends with | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
