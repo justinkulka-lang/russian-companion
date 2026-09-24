@@ -32,10 +32,14 @@ internal const val UNITS_6_10_CURRICULUM_COMMIT = "c9f23afd219681319554d90424f2d
 
 internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
 
+internal const val UNITS_16_20_CURRICULUM_COMMIT = "8586751e9bbee2a60a7c0a9ab8780965be3deb98"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
     in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
     in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
     in 6..10 -> UNITS_6_10_CURRICULUM_COMMIT
+    in 11..15 -> UNITS_11_15_CURRICULUM_COMMIT
+    in 16..20 -> UNITS_16_20_CURRICULUM_COMMIT
     else -> UNITS_11_15_CURRICULUM_COMMIT
 }
 
@@ -908,13 +912,16 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
             "observed_edition_notes",
             "corresponding_lesson",
             "corresponding_pages",
-            "corresponding_topic",
             "observation_source",
             "unresolved_questions",
         ).forEach { column ->
             if (Regex("[\\u0400-\\u04FF]").containsMatchIn(value(column))) {
                 errors += "Mapping worksheet introduces Russian lesson content in $column for ${row[0]}"
             }
+        }
+        val topic = value("corresponding_topic")
+        if (Regex("[\\u0400-\\u04FF]").containsMatchIn(topic) && topic != observation?.topic) {
+            errors += "Mapping worksheet introduces Russian lesson content in corresponding_topic for ${row[0]}"
         }
         if (observation != null) {
             if (value("edition_identification") != OBSERVED_EDITION_TITLE ||

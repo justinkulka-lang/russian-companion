@@ -94,17 +94,21 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
+        val packetUnits = (1..15).toList() + listOf(16, 17, 19)
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            (1..15).forEach { number ->
+            packetUnits.forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
             }
         }
-        (1..15).forEach { number ->
+        packetUnits.forEach { number ->
             val dir = File(repo(), "review/unit-$number")
             val committed = reviewFileNames(number).associateWith { name -> File(dir, name).readText() }
             val errors = validateUnitReviewFiles(pack, number, committed)
             assertTrue(errors.joinToString("\n"), errors.isEmpty())
             assertEquals(renderUnitReviewFiles(pack, number).files, committed)
+        }
+        listOf(18, 20).forEach { number ->
+            assertFalse(File(repo(), "review/unit-$number").exists())
         }
     }
 
@@ -349,6 +353,16 @@ class UnitReviewPipelineTest {
                 curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
             )
             assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isNotEmpty())
+        }
+        listOf(16, 17, 19).forEach { number ->
+            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
+            assertTrue(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
+            assertFalse(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
+            assertTrue(
+                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).joinToString("\n"),
+                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).isEmpty(),
+            )
+            assertTrue(curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isNotEmpty())
         }
     }
 
