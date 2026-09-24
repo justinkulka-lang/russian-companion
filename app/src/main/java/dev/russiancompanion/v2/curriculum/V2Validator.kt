@@ -1246,6 +1246,7 @@ internal object V2Validator {
         "SAME_RULE_DIFFERENT_BOUNDARY",
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "EXPLICIT_PARENTHETICAL_GLOSS",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1465,11 +1466,63 @@ internal object V2Validator {
      * Recompute the relationship from resolved provenance. Participant ids are pointers only.
      * Rationale text is not consulted.
      */
+    private val parentheticalRelation = Regex("(?<![\\u0400-\\u04FF\\u0301])([^\\s()]+)\\s+\\(([^)]+)\\)")
+
+    private fun parentheticalOwners(original: String): Map<String, Set<String>> {
+        val formatted = formatWikibooksEmphasis(original)
+        val owners = mutableMapOf<String, MutableSet<String>>()
+        parentheticalRelation.findAll(formatted).forEach { match ->
+            owners.getOrPut(match.groupValues[2]) { mutableSetOf() }.add(match.groupValues[1])
+        }
+        return owners
+    }
+
+    private fun boundedParenthetical(original: String, form: String, gloss: String): Boolean {
+        val formatted = formatWikibooksEmphasis(original)
+        val needle = "$form ($gloss)"
+        var index = formatted.indexOf(needle)
+        while (index >= 0) {
+            if (index == 0 || !isWikiWordChar(formatted[index - 1])) return true
+            index = formatted.indexOf(needle, index + 1)
+        }
+        return false
+    }
+
+    /**
+     * Null means the pair is not an explicit parenthetical and other rules may apply.
+     * An empty string means the gloss has an explicit owner and this pair is not that owner.
+     */
+    private fun parentheticalDecision(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        if (cue.unitNumber < 26) return null
+        val owners = parentheticalOwners(cue.originalSourceText)[answer.shippedText] ?: return null
+        val group = listOf(cue, answer) + distractors
+        if (
+            owners == setOf(cue.shippedText) &&
+            boundedParenthetical(cue.originalSourceText, cue.shippedText, answer.shippedText) &&
+            hasCyrillic(cue.shippedText) &&
+            !hasCyrillic(answer.shippedText) &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            cue.shippedText != answer.shippedText &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_PARENTHETICAL_GLOSS"
+        }
+        return ""
+    }
+
     private fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val parenthetical = parentheticalDecision(cue, answer, distractors)
+        if (parenthetical == "") return null
+        if (parenthetical != null) return parenthetical
         val group = listOf(cue, answer) + distractors
         val parsed = group.map { openRussianLemma(it) }
         if (parsed.all { it != null }) {
@@ -2386,6 +2439,20 @@ internal object V2Validator {
             }
             if (!isShareAlikeLicense(record.licenseId) || record.licenseUrl.isBlank()) {
                 errors += "Provenance ${record.itemId} incompatible license"
+            }
+            if (record.unitNumber in 26..30 && record.sourceId.startsWith("src-wikipedia-")) {
+                if (!record.attribution.contains("Wikipedia:Copyrights oldid 1369466282") ||
+                    !record.attribution.contains("CC BY-SA 4.0")
+                ) {
+                    errors += "Provenance ${record.itemId} Wikipedia license route is missing"
+                }
+            }
+            if (record.unitNumber in 26..30 && record.sourceId.startsWith("src-wikibooks-")) {
+                if (!record.attribution.contains("Wikibooks:Copyrights oldid 4622060") ||
+                    record.attribution.contains("Wikipedia:Copyrights oldid")
+                ) {
+                    errors += "Provenance ${record.itemId} Wikibooks license route is missing"
+                }
             }
             if (isExcludedProvenance(record)) {
                 errors += "Provenance ${record.itemId} excluded source cannot enter the seed"

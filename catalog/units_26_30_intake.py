@@ -48,16 +48,11 @@ class FrozenSources:
         self.freeze = json.loads(FREEZE_PATH.read_text(encoding="utf-8"))
         self.pages: dict[str, str] = {}
         self.by_key = {page["key"]: page for page in self.freeze["pages"]}
-        license_path = (SOURCE_ROOT / self.freeze["license"]["wikibooksLicenseTextFile"]).resolve()
-        license_bytes = license_path.read_bytes()
-        first = hashlib.sha256(license_bytes).hexdigest()
-        second = hashlib.sha256(license_bytes).hexdigest()
-        if first != second or first != self.freeze["license"]["wikibooksLicenseTextSha256"]:
-            raise SystemExit("Wikibooks copyrights snapshot is not the retained byte-identical record")
-        if "Creative Commons Attribution-ShareAlike 4.0" not in license_bytes.decode("utf-8"):
-            raise SystemExit("Retained copyrights snapshot does not state CC BY-SA 4.0")
         if self.freeze["license"]["licenseId"] != LICENSE_ID:
             raise SystemExit("Retained license identifier is not CC BY-SA 4.0")
+        route_errors = license_admission_errors(self.freeze, SOURCE_ROOT)
+        if route_errors:
+            raise SystemExit("; ".join(route_errors))
         admitted = {item["id"] for item in self.freeze["decisions"] if item["disposition"] == "ADMITTED"}
         required = {
             "wikipedia-russian-grammar-1369617627",
@@ -382,14 +377,70 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
     }
 
 
+def license_admission_errors(
+    freeze: dict,
+    source_root: Path,
+    file_overrides: dict[str, bytes] | None = None,
+) -> list[str]:
+    """Admit each frozen page only on its own license-evidence route.
+
+    A Wikipedia oldid is not admitted by the Wikibooks copyrights snapshot.
+    """
+    errors: list[str] = []
+    license_block = freeze.get("license") or {}
+    routes = license_block.get("routes") or {}
+    overrides = file_overrides or {}
+    loaded: dict[str, bytes] = {}
+    for name, route in routes.items():
+        if name in overrides:
+            loaded[name] = overrides[name]
+        else:
+            path = (source_root / route["file"]).resolve()
+            if not path.is_file():
+                errors.append(f"{name} license evidence is missing")
+                continue
+            loaded[name] = path.read_bytes()
+        first = hashlib.sha256(loaded[name]).hexdigest()
+        second = hashlib.sha256(loaded[name]).hexdigest()
+        if first != second or first != route.get("sha256"):
+            errors.append(f"{name.capitalize()} license evidence hash does not match")
+        statement = route.get("requiredStatement") or ""
+        if not statement or statement not in loaded[name].decode("utf-8"):
+            errors.append(f"{name.capitalize()} license evidence does not state CC BY-SA 4.0")
+        if name == "wikipedia":
+            revision_path = source_root / route["revisionFile"]
+            if not revision_path.is_file():
+                errors.append("Wikipedia license revision identity is missing")
+            else:
+                revision = json.loads(revision_path.read_text(encoding="utf-8"))
+                if str(revision.get("revid")) != str(route.get("oldid")):
+                    errors.append("Wikipedia license revision does not match the frozen oldid")
+                if hashlib.sha1(loaded[name]).hexdigest() != revision.get("sha1") or len(loaded[name]) != revision.get("size"):
+                    errors.append("Wikipedia license bytes do not match the retained revision")
+    for page in freeze.get("pages") or []:
+        source_id = page.get("sourceId") or ""
+        route_name = page.get("licenseRoute")
+        route = routes.get(route_name) if route_name else None
+        if source_id.startswith("src-wikipedia-") and route_name != "wikipedia":
+            errors.append(f"Wikipedia source {source_id} has only Wikibooks license evidence")
+            continue
+        if source_id.startswith("src-wikibooks-") and route_name != "wikibooks":
+            errors.append(f"Wikibooks source {source_id} has only Wikipedia license evidence")
+            continue
+        if route is None or source_id not in route.get("appliesToSourceIds", []):
+            errors.append(f"Source {source_id} license route does not match its evidence")
+    return errors
+
+
 def _attribution_reference() -> dict:
     return {
         "id": REFERENCE,
         "title": "Units 26–30 source notice",
         "summary": "Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.",
         "detail": (
-            "Wikipedia article text is frozen by oldid under CC BY-SA 4.0. "
-            "The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
+            "Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. "
+            "The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
+            "The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. "
             "The adapted selection and arrangement are share-alike. "
             "Application code, user data, user recordings, and separately licensed audio are outside that statement. "
             "No audio is included. Linked media, Phonos, and pronunciation files are not admitted. "
@@ -562,6 +613,12 @@ def _assert(builder: Builder, units: list[dict]) -> None:
             for banned in ("чита́ющая", "чита́вшая", "живу́щие", "active present participle", "active past participle"):
                 if banned in joined:
                     raise SystemExit(f"Unit 27 contains active-participle instruction: {banned}")
+            for example in builder.examples:
+                if example["objectiveId"] == "obj-u27-present-passive" and example["display"].endswith("емый") and example["note"] == "we leave":
+                    raise SystemExit("Present passive participle is keyed to we leave")
+            for item in builder.items:
+                if item["objectiveId"] == "obj-u27-present-passive" and item["promptLetter"].endswith("емый") and item["answer"] == "we leave":
+                    raise SystemExit("Present passive check keys the participle to we leave")
         if number == 30:
             orient = next(step["body"] for session in unit["sessions"] for step in session["steps"] if step["id"] == "u30-st-orient")
             if "introduced the printed letter names" not in orient or "reviews admitted table names" not in orient:

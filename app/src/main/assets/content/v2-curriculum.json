@@ -378,14 +378,14 @@
       "id": "src-wikipedia-russian-grammar-1369617627",
       "title": "Russian grammar",
       "license": "CC BY-SA 4.0",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
     },
     {
       "id": "src-wikipedia-russian-alphabet-1371795481",
       "title": "Russian alphabet",
       "license": "CC BY-SA 4.0",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
     },
     {
@@ -6883,7 +6883,7 @@
       "id": "ex-u27-present-passive-1",
       "kind": "LEXICAL",
       "letterId": "",
-      "display": "оставля́емый",
+      "display": "оставля́ем",
       "note": "we leave",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -23179,7 +23179,7 @@
       ],
       "assessment": {
         "testedFeature": "PAST_PASSIVE",
-        "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
         "contrastSetId": "u27-passive-1",
         "cueLanguage": "ru",
         "independent": true,
@@ -23202,7 +23202,7 @@
           "done/made",
           "killed"
         ],
-        "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
         "relationParticipantIds": [
           "prov-ex-u27-passive-1-ru",
           "prov-ex-u27-passive-1-en",
@@ -23236,7 +23236,7 @@
       ],
       "assessment": {
         "testedFeature": "PAST_PASSIVE",
-        "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
         "contrastSetId": "u27-passive-2",
         "cueLanguage": "ru",
         "independent": true,
@@ -23259,7 +23259,7 @@
           "written",
           "done/made"
         ],
-        "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
         "relationParticipantIds": [
           "prov-ex-u27-passive-2-ru",
           "prov-ex-u27-passive-2-en",
@@ -23273,7 +23273,7 @@
       "id": "u27-g-present-passive-0",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English label is written beside the shown form?",
+      "prompt": "Which admitted English gloss follows the listed forms for the shown form?",
       "promptLetter": "обсужда́емый",
       "options": [
         "being discussed",
@@ -23281,15 +23281,15 @@
         "to discuss"
       ],
       "answer": "being discussed",
-      "feedback": "The frozen line says an ending is added to form the passive present form. This label is written beside the shown form. being discussed.",
+      "feedback": "The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss. being discussed.",
       "objectiveId": "obj-u27-present-passive",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes this label beside a different form for we leave.",
-        "The frozen line writes this label beside the base, not the shown form for to discuss."
+        "The frozen parenthetical we leave belongs to the plural form in the same note.",
+        "The frozen line writes to discuss on the base, not as this gloss."
       ],
       "assessment": {
         "testedFeature": "PRESENT_PASSIVE",
@@ -23307,10 +23307,10 @@
         ],
         "distractorDifference": [
           "",
-          "This label is paired with the other listed form (we leave).",
-          "This label is paired with the base (to discuss)."
+          "This parenthetical belongs to the plural form (we leave).",
+          "This label is the base gloss (to discuss)."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.",
         "contrastMembers": [
           "being discussed",
           "we leave",
@@ -23330,27 +23330,27 @@
       "id": "u27-i-present-passive-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English label is written beside this shown form?",
-      "promptLetter": "оставля́емый",
+      "prompt": "Which admitted English parenthetical follows the shown form?",
+      "promptLetter": "оставля́ем",
       "options": [
         "we leave",
         "being discussed",
-        "to discuss"
+        "to leave"
       ],
       "answer": "we leave",
-      "feedback": "The frozen line says an ending is added to form the passive present form. This label is written beside the shown form. we leave.",
+      "feedback": "The frozen line writes (we leave) after the shown form. This label is that parenthetical. we leave.",
       "objectiveId": "obj-u27-present-passive",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes this label beside a different form for being discussed.",
-        "The frozen line writes this label beside the base for to discuss."
+        "The frozen line gives being discussed to the discuss forms, not this parenthetical.",
+        "The frozen parenthetical to leave belongs to the other form in the same row."
       ],
       "assessment": {
         "testedFeature": "PRESENT_PASSIVE",
-        "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
         "contrastSetId": "u27-present-passive-1",
         "cueLanguage": "ru",
         "independent": true,
@@ -23360,25 +23360,25 @@
         "distractorSourceIds": [
           "",
           "prov-ex-u27-present-passive-0-en",
-          "prov-u27-present-passive-x-0"
+          "prov-u27-present-passive-x-2"
         ],
         "distractorDifference": [
           "",
-          "This label is paired with the discussed form (being discussed).",
-          "This label is paired with the base, not the shown form (to discuss)."
+          "This gloss belongs to the discuss forms (being discussed).",
+          "This parenthetical belongs to the other form (to leave)."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes (we leave) after the shown form. This label is that parenthetical.",
         "contrastMembers": [
           "we leave",
           "being discussed",
-          "to discuss"
+          "to leave"
         ],
-        "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
         "relationParticipantIds": [
           "prov-ex-u27-present-passive-1-ru",
           "prov-ex-u27-present-passive-1-en",
           "prov-ex-u27-present-passive-0-en",
-          "prov-u27-present-passive-x-0"
+          "prov-u27-present-passive-x-2"
         ],
         "responseKind": "ENGLISH_CLASSIFICATION"
       }
@@ -23387,32 +23387,32 @@
       "id": "u27-i-present-passive-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English label names the base beside the discussed form?",
-      "promptLetter": "обсужда́емый",
+      "prompt": "Which admitted English parenthetical follows this shown form?",
+      "promptLetter": "оставля́ть",
       "options": [
-        "to discuss",
+        "to leave",
         "we leave",
         "being discussed"
       ],
-      "answer": "to discuss",
-      "feedback": "The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form. to discuss.",
+      "answer": "to leave",
+      "feedback": "The frozen line writes (to leave) after the shown form. This label is that parenthetical. to leave.",
       "objectiveId": "obj-u27-present-passive",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes this label beside a different form for we leave.",
-        "The frozen line writes this label beside the shown form itself for being discussed."
+        "The frozen parenthetical we leave belongs to the plural form, not this form.",
+        "The frozen line gives being discussed to the discuss forms, not this parenthetical."
       ],
       "assessment": {
         "testedFeature": "PRESENT_PASSIVE",
-        "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
         "contrastSetId": "u27-present-passive-2",
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-u27-present-passive-x-0"
+          "prov-u27-present-passive-x-2"
         ],
         "distractorSourceIds": [
           "",
@@ -23421,19 +23421,19 @@
         ],
         "distractorDifference": [
           "",
-          "This label is paired with the leave form (we leave).",
-          "This label is the gloss of the shown form, not its base (being discussed)."
+          "This parenthetical belongs to the plural form (we leave).",
+          "This gloss belongs to the discuss forms (being discussed)."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes (to leave) after the shown form. This label is that parenthetical.",
         "contrastMembers": [
-          "to discuss",
+          "to leave",
           "we leave",
           "being discussed"
         ],
-        "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
         "relationParticipantIds": [
-          "prov-ex-u27-present-passive-0-ru",
-          "prov-u27-present-passive-x-0",
+          "prov-u27-present-passive-x-1",
+          "prov-u27-present-passive-x-2",
           "prov-ex-u27-present-passive-1-en",
           "prov-ex-u27-present-passive-0-en"
         ],
@@ -25022,7 +25022,7 @@
       "id": "ref-u2630-attribution",
       "title": "Units 26–30 source notice",
       "summary": "Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.",
-      "detail": "Wikipedia article text is frozen by oldid under CC BY-SA 4.0. The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.",
+      "detail": "Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.",
       "introducedInUnit": 26,
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "classification": "LICENSE_OR_ATTRIBUTION",
@@ -86357,7 +86357,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb",
@@ -86382,7 +86382,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "7fc5ec2fe3f07d4354ad9cf33cd75267b1fa72b1008542a20d84ffb780fb6e9a",
@@ -86407,7 +86407,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "5023391fca384a34e059824398fbb85adee90369578fc9e6d160d467107a2847",
@@ -86432,7 +86432,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "43f2aae94da7406aebd485402667a57a843379b96f157ad951ee064db5d30b44",
@@ -86457,7 +86457,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "22d1ce046862f699d15a2f7abd5fcecad9b1a80178400229f97be08f71208fcd",
@@ -86482,7 +86482,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "3eca3a3cf9a26dadeb79961313357f78a72b4d484ff3be5bee80dda5b8e2fe31",
@@ -86507,7 +86507,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a",
       "contentHash": "161520da5a385e7beeacc5d94f4b354c087bda9f1678704eb8fb8c84004ec295",
@@ -86532,7 +86532,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a",
       "contentHash": "af9795853c377adfd655f697eeb6614e6b58c29b1a7d1290a9ed51f1ae2461f3",
@@ -86557,7 +86557,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a",
       "contentHash": "4ecacd0435d4b69f551ae3a4fc7d6a292b0eaeaaabca048fe52b7eee8985f927",
@@ -86582,7 +86582,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a",
       "contentHash": "fe268a1ae8b1ecfc2b97c1565d18983fea9c92d9ba28ebc914698f46ece77948",
@@ -86607,7 +86607,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
       "contentHash": "e2f032bcf5b97e540ef00d2ebf95b51f82a0bd301716adf33bc4a040d170a172",
@@ -86632,7 +86632,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "041bfceecc8f943abfac18267516b5f6c35bc3ea04549121a57540e55da76cd3",
@@ -86657,7 +86657,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca",
@@ -86682,7 +86682,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "b445eeaab458948cc7acbaae4ff53c98f0787fd17fc36ecfa4e15d2548a47978",
@@ -86707,7 +86707,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca",
@@ -86732,7 +86732,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "f75a313e055229ee26a1815119a6571a44906c5da0e0cacfb5c7cce0b6be65ad",
@@ -86757,7 +86757,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca",
@@ -86782,7 +86782,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "9405dc8d9f4ebf6ea78323809076790db4e81ea793167b25ba51290ed83941bd",
@@ -86807,7 +86807,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "91c032683b0598f6d3052576bf2becf65130112c4cda40aa93d5b05d2ead5d29",
@@ -86832,7 +86832,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39",
       "contentHash": "4b452881c274f705ee405c73b3ab15c4c746e92fd5015f313cec5cc7a059126f",
@@ -87232,7 +87232,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "c25c020315d009265fc9fad3e3c10cb27086410ef5500099b15e1f75bc50fe52",
@@ -87257,7 +87257,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "b905e7fdce4bfc33eeb81f5f306db580406535f2fdfd607b09aea2ef8b81c148",
@@ -87282,7 +87282,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "5fd33438bde38c7620ba2eb7af1c95c33a537236ef8571d62d8d732f63fa0d04",
@@ -87307,7 +87307,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "ccc0e8da6b80e08e80d75a89afe11e8f2d5cd0f29a10f782104ca5f2648e8903",
@@ -87332,7 +87332,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "d93293f98c7e637ed3178f155f98b7aa29cf0e627cd8126c9d3d690fbe4a1efb",
@@ -87357,7 +87357,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "d5405925e3082bc1479a5cec3ce6e984cfc4a0caaf7216755eb8c7b2bca2d96d",
@@ -87382,7 +87382,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "c2a358b9fc240114249d8d2bfed6dffe2287e80d2a223d506ec8ce952b26cc38",
@@ -87407,7 +87407,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "a868ae4195d4c828587a71ce497fcc75baf5ecc6c86f7ef4204bc867bade8778",
@@ -87432,7 +87432,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "f288190c655d646940a9a13c574a58a82126707650cd44444d715b13b00db220",
       "contentHash": "c14c3c2158f53ec73bf8397ea67eebb54d4337382e0002deed8c398318c4e771",
@@ -87457,7 +87457,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "f288190c655d646940a9a13c574a58a82126707650cd44444d715b13b00db220",
       "contentHash": "b85deb3ba042296b8b2bb28b18bf2afa3317b890593d2ea6887cc0559c9a4225",
@@ -87482,7 +87482,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
       "contentHash": "9ce1b8b9d6449f1544869f624b04480d808e32dd65749f808c2e923c0e0e75eb",
@@ -87507,7 +87507,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
       "contentHash": "7286184dd42d938241428f156de82595ed8855b02b524f3b73ceefa18c8664d2",
@@ -87532,7 +87532,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
       "contentHash": "6f286c27a472f08635329a88e5ddec1b95e1b7e065385d1d7acca9b8619dab79",
@@ -87553,14 +87553,14 @@
       "sourceRevision": "1369617627",
       "sourceRecordId": "grammar::обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – b",
       "originalSourceText": ":обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – being discussed ''or'' able to be discussed;\n\nIn order to form the passive present participle it is necessary to add an adjective ending to the 1st person plural of the present tense:\n\n{| class=\"wikitable\"\n| оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый",
-      "shippedText": "оставля́емый",
+      "shippedText": "оставля́ем",
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
-      "contentHash": "ffeb9e1b3af15a4256b166b14a67e123b5fbd3653a67d641935877bed8d5d45a",
+      "contentHash": "2f07c01896f4bca0ab01a455a7a68e538429ac9e95ee175888024925bc670a41",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -87582,7 +87582,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
       "contentHash": "1850bd949ba162702ae5548f8a5d1bd89665ee911c3d5236a7385ba06e4a15b0",
@@ -87607,7 +87607,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
       "contentHash": "d0d89a2d688b658f468b25f2dcae6db611481d02e9a74083214ae7db47af03bb",
@@ -87632,10 +87632,60 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
       "contentHash": "643b168439a7df97c4ea3b2b86232ffab44be17dc4d4a4f2eee9e01b2c35866c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u27-present-passive-x-1",
+      "unitNumber": 27,
+      "objectiveId": "obj-u27-present-passive",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar::обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – b",
+      "originalSourceText": ":обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – being discussed ''or'' able to be discussed;\n\nIn order to form the passive present participle it is necessary to add an adjective ending to the 1st person plural of the present tense:\n\n{| class=\"wikitable\"\n| оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый",
+      "shippedText": "оставля́ть",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
+      "contentHash": "df98b0ded0693cd99f6c22b7d5bea84f712c99e8d1d2661dd690042bd51e3434",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u27-present-passive-x-2",
+      "unitNumber": 27,
+      "objectiveId": "obj-u27-present-passive",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar::обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – b",
+      "originalSourceText": ":обсужда́ть – to discuss;\n:обсужда́емый (full form), обсужда́ем (short form) – being discussed ''or'' able to be discussed;\n\nIn order to form the passive present participle it is necessary to add an adjective ending to the 1st person plural of the present tense:\n\n{| class=\"wikitable\"\n| оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый",
+      "shippedText": "to leave",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac",
+      "contentHash": "743283ca17613d8d489dce31f0733d7fe46caf3852c945d629c9f79faf504f6b",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -87657,7 +87707,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "3f3304c3bb58ec03eaafd94fceff12f0425f2372b4647b3df212f231ff0367e3",
@@ -87682,7 +87732,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "722e657c7f247549021b2a6894f80de044f1d70d1cc144aa812e92f74559abe2",
@@ -87707,7 +87757,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "ac6cda03d8d50f768775a69e0c596d358285201c9c13e61a769d5de160c249ba",
@@ -87732,7 +87782,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "da68ec380dacf9e0519da4eac4242d46fa64f2f954556020fba14a3e00b83892",
@@ -87757,7 +87807,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "10c92585953b70df1fa6bdfc08b1e63058063dcb668b7544afd884299f68f05a",
@@ -87782,7 +87832,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159",
@@ -87807,7 +87857,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727",
@@ -87832,7 +87882,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
       "contentHash": "2a51c800506c91b890b8a62f026b96d0062267000a01f07bf39e71b2cf472626",
@@ -87857,7 +87907,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "17455f0242469f0b62adccc939fc3787af5cc6683deef742aa2a5e905092203d",
@@ -87882,7 +87932,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "2a51c800506c91b890b8a62f026b96d0062267000a01f07bf39e71b2cf472626",
@@ -87907,7 +87957,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "8e06c8b41465671cb38047f1a80769cc30fab14ce2bf8e4925618b0bee216279",
@@ -87932,7 +87982,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "abe757d3d9908eacd3b59c364b293907854b0fcd58f2251b5374b266ec24c19e",
@@ -87957,7 +88007,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "641279ab1a9364603b445398bcfe2d31001b37f3c653cb2aca0e7f833a191b0b",
@@ -87982,7 +88032,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "2b8a2901e08e41aedd9a8f41c5b224caada089534a9c47b19b4db47e2ba118ce",
@@ -88007,7 +88057,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "76f8d1528fcda9b60a1bdb389c372bd84f6f7e4e615452f7401265408e38d6ae",
@@ -88032,7 +88082,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
       "contentHash": "b8012cb642c887a0a4f6f8e52fc6d97946274076ba64b113dff1db0a0ca37caa",
@@ -88057,7 +88107,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "a06a9caea772c126c7a375fdb9db87d8e4f284d25315d30473659f697e1ada98",
@@ -88082,7 +88132,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "54fc0bf0aab2d13e68793f9f83c6a74192dddfc7258421dcbd066cb85b7e79a4",
@@ -88107,7 +88157,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "ce86deb0a4f292bce9547ca5326857b8d5d66bce06de76ec50d3234f68b0b2b2",
@@ -88132,7 +88182,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "bd20a96b52a0d1fc808fea6e34a05775c72f7edb6f376920e44f6a2357b2ca11",
@@ -88157,7 +88207,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6112e30d27313fa2f7e7d84c5cbfe8c527b89d0f4b2047a1c3923a83c8eedeeb",
       "contentHash": "c87ca5f2464153658c2ec7ba8239942c3e739a26128d0ab65a51a06d0561f688",
@@ -88182,7 +88232,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6112e30d27313fa2f7e7d84c5cbfe8c527b89d0f4b2047a1c3923a83c8eedeeb",
       "contentHash": "a93fcdf7dbae1c2f165aae3ee372a6cedc28effc66ebdbc08ae6eaa951ef53f6",
@@ -88207,7 +88257,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "d212c8415770d6bbf27c6b2d30bcc0a9e72196fe3e5b7fd9cff5e167bbbbd59b",
@@ -88232,7 +88282,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
@@ -88257,7 +88307,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
       "contentHash": "87c7367dafd3c64cb89c8417c9b63a89a68bf9cf76619529a823e5a88fedeed4",
@@ -88282,7 +88332,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "2b2f765b2e162f149dfd5b622e4a7022f5890647a9ca269decb3b26d59321415",
@@ -88307,7 +88357,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
@@ -88332,7 +88382,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745",
@@ -88357,7 +88407,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
@@ -88382,7 +88432,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "7e7bdbcd586e76916429c3e938a66eb72771755d3b5961b9c8ed5e9db3f3ffb4",
@@ -88407,7 +88457,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "b4f0534e651ac8d5e10d95ddfcafdb123550a5e3185e3fe61ec1746a7222a88e",
@@ -88432,7 +88482,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "52373b4850a9d54ea0e26e8965bb0b1bba856721d3926f3449f40295c5eeeee4",
@@ -88457,7 +88507,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
       "contentHash": "28b780920257464a195d68ccdab3e56274481e11d6b14ed275f5274c95603005",
@@ -88482,7 +88532,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "ae97d1d7472164fbdb7d49796b4e9dec13d759c26aea4c61a4d279b1a650091c",
@@ -88507,7 +88557,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "f12073a1a349eeaa0a784aac41d57a52a531b8cc56794bba3fe17005b0aa53ed",
@@ -88532,7 +88582,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "860b4221ddb9bece82cbb0c36b001daf3262ffb9664f4b6a5a7d9b78a6a576cb",
@@ -88557,7 +88607,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "c69bffbeed760c7b98e4311c04cd0205ee6491ac5b661e7be99c413f64e18126",
@@ -88582,7 +88632,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "6f7348c07ad73d20066880f70b3f4172dcf5d081b794385ab77e36a1c831de1e",
@@ -88607,7 +88657,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "8743f1c8e93eab807d6904cf2adba3cd036bbe159ea0ffe8da93c268fe7eae1b",
@@ -88632,7 +88682,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "958d5b68fa520eeb656398287de1a59b8e950f5ec54058e570927973f6993546",
@@ -88657,7 +88707,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d",
       "contentHash": "4e458038b57fae2db0465d645856b27cc0c6e148d01f1a6e2a29e2a40ff92882",
@@ -88682,7 +88732,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159",
@@ -88707,7 +88757,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "70a0d5198ebb88f97a2cc83a236a8afcc28c7d9e6abf40c173dd54c9f45ad7f6",
@@ -88732,7 +88782,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f",
@@ -88757,7 +88807,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "76deb8f5b745c4a39abea5d62488f1237c3f097d881d0e74d0fbc8c631c20903",
@@ -88782,7 +88832,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "b1eef04a2bd7c18eef7239e669a1c723eaf33e5efc105c1eab0c10254291ebc1",
@@ -88807,7 +88857,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "88a1881f0025cf7117501d07aefc5d4be6696656790d765678df8bc48ca52687",
@@ -88832,7 +88882,7 @@
       "transformation": "wikimedia emphasis formatting",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "2f05d4b689d270cafb02285f35f44866f7dc8a2d368a3f9d1124373eeab31fb1",
@@ -88857,7 +88907,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
       "contentHash": "ff7772053abf7d817d6eec229a09e14f0d1552f1cb0aeedb2ac73784ac2d2e39",
@@ -88882,7 +88932,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80",
@@ -88907,7 +88957,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "e4755b63db17b4b8560ecdb52ae0bcc48298928d729f8222179039f734fe8853",
@@ -88932,7 +88982,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f",
@@ -88957,7 +89007,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046",
@@ -88982,7 +89032,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "bd26d7b3d68b18c9b55358d46b32842310ab356f9570960e41568ec54bba7c32",
@@ -89007,7 +89057,7 @@
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
       "contentHash": "e05e2aeff5c60d2adf4d8541cd92e829ef16ade6198c4874b4975b44cc93bedb",
@@ -95524,1337 +95574,1343 @@
     {
       "id": "en-u27-087",
       "unitNumber": 27,
-      "text": "The frozen line writes this label beside a different form for we leave.",
+      "text": "The frozen parenthetical we leave belongs to the plural form in the same note.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-088",
       "unitNumber": 27,
-      "text": "The frozen line writes this label beside the base, not the shown form for to discuss.",
+      "text": "The frozen line writes to discuss on the base, not as this gloss.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-089",
       "unitNumber": 27,
-      "text": "This label is paired with the other listed form (we leave).",
+      "text": "This parenthetical belongs to the plural form (we leave).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-090",
       "unitNumber": 27,
-      "text": "This label is paired with the base (to discuss).",
+      "text": "This label is the base gloss (to discuss).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-091",
       "unitNumber": 27,
-      "text": "The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.",
+      "text": "The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-092",
       "unitNumber": 27,
-      "text": "The frozen line writes this label beside a different form for being discussed.",
+      "text": "Which admitted English gloss follows the listed forms for the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-093",
       "unitNumber": 27,
-      "text": "The frozen line writes this label beside the base for to discuss.",
+      "text": "The frozen line gives being discussed to the discuss forms, not this parenthetical.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-094",
       "unitNumber": 27,
-      "text": "This label is paired with the discussed form (being discussed).",
+      "text": "The frozen parenthetical to leave belongs to the other form in the same row.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-095",
       "unitNumber": 27,
-      "text": "This label is paired with the base, not the shown form (to discuss).",
+      "text": "This gloss belongs to the discuss forms (being discussed).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-096",
       "unitNumber": 27,
-      "text": "The frozen line writes this label beside the shown form itself for being discussed.",
+      "text": "This parenthetical belongs to the other form (to leave).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-097",
       "unitNumber": 27,
-      "text": "This label is paired with the leave form (we leave).",
+      "text": "The frozen line writes (we leave) after the shown form. This label is that parenthetical.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-098",
       "unitNumber": 27,
-      "text": "This label is the gloss of the shown form, not its base (being discussed).",
+      "text": "Which admitted English parenthetical follows the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-099",
       "unitNumber": 27,
-      "text": "The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form.",
+      "text": "The frozen parenthetical we leave belongs to the plural form, not this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-100",
       "unitNumber": 27,
-      "text": "Which admitted English label names the base beside the discussed form?",
+      "text": "The frozen line writes (to leave) after the shown form. This label is that parenthetical.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-101",
       "unitNumber": 27,
-      "text": "Admitted past passive lines",
+      "text": "Which admitted English parenthetical follows this shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-102",
       "unitNumber": 27,
-      "text": "Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.",
+      "text": "Admitted past passive lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-103",
       "unitNumber": 27,
-      "text": "Open Lesson 27 in the copy you own. The app records do not replace that lesson.",
+      "text": "Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-104",
       "unitNumber": 27,
-      "text": "Read the admitted examples on this card.",
+      "text": "Open Lesson 27 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-105",
       "unitNumber": 27,
-      "text": "Guided practice",
+      "text": "Read the admitted examples on this card.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-106",
       "unitNumber": 27,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-107",
       "unitNumber": 27,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-108",
       "unitNumber": 27,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-109",
       "unitNumber": 27,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-110",
       "unitNumber": 27,
-      "text": "Work Lesson 27 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-111",
       "unitNumber": 27,
-      "text": "Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 27 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-112",
       "unitNumber": 27,
-      "text": "Open Lesson 27 in your copy and complete its lesson work.",
+      "text": "Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-113",
       "unitNumber": 27,
-      "text": "Record Lesson 27 book work",
+      "text": "Open Lesson 27 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-114",
       "unitNumber": 27,
-      "text": "When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 27 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-115",
       "unitNumber": 27,
-      "text": "Self-attest only after the Lesson 27 work in your copy.",
+      "text": "When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-116",
       "unitNumber": 27,
-      "text": "Participle stress stays in the copy you own",
+      "text": "Self-attest only after the Lesson 27 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-117",
       "unitNumber": 27,
-      "text": "Participle stress stays in the copy you own. A marked example is not a stress rule.",
+      "text": "Participle stress stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-118",
       "unitNumber": 27,
-      "text": "Comprehension passages stay in the copy you own",
+      "text": "Participle stress stays in the copy you own. A marked example is not a stress rule.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u27-119",
       "unitNumber": 27,
-      "text": "Comprehension passages stay in the copy you own. The admitted lines do not supply them.",
+      "text": "Comprehension passages stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u28-120",
-      "unitNumber": 28,
-      "text": "Admitted lines",
+      "id": "en-u27-120",
+      "unitNumber": 27,
+      "text": "Comprehension passages stay in the copy you own. The admitted lines do not supply them.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-121",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a different form for to be learning.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-122",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a completed form for to say.",
+      "text": "The frozen table writes this label beside a different form for to be learning.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-123",
       "unitNumber": 28,
-      "text": "This label is paired with the learning form (to be learning).",
+      "text": "The frozen table writes this label beside a completed form for to say.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-124",
       "unitNumber": 28,
-      "text": "This label is paired with a different row (to say).",
+      "text": "This label is paired with the learning form (to be learning).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-125",
       "unitNumber": 28,
-      "text": "The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.",
+      "text": "This label is paired with a different row (to say).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-126",
       "unitNumber": 28,
-      "text": "Which admitted English label is written beside the shown form?",
+      "text": "The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-127",
       "unitNumber": 28,
-      "text": "Admitted instruction",
+      "text": "Which admitted English label is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-128",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a different form for to think.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-129",
       "unitNumber": 28,
-      "text": "This label is paired with the thinking form (to think).",
+      "text": "The frozen table writes this label beside a different form for to think.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-130",
       "unitNumber": 28,
-      "text": "Which admitted English label is written beside this shown form?",
+      "text": "This label is paired with the thinking form (to think).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-131",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside the shown form for to think.",
+      "text": "Which admitted English label is written beside this shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-132",
       "unitNumber": 28,
-      "text": "This label is the gloss of the shown form (to think).",
+      "text": "The frozen table writes this label beside the shown form for to think.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-133",
       "unitNumber": 28,
-      "text": "The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table.",
+      "text": "This label is the gloss of the shown form (to think).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-134",
       "unitNumber": 28,
-      "text": "Which admitted English gloss is written for the other table form, not the shown form?",
+      "text": "The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-135",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a different form for to learn.",
+      "text": "Which admitted English gloss is written for the other table form, not the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-136",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a different form for to enter.",
+      "text": "The frozen table writes this label beside a different form for to learn.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-137",
       "unitNumber": 28,
-      "text": "This label is paired with the learning form (to learn).",
+      "text": "The frozen table writes this label beside a different form for to enter.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-138",
       "unitNumber": 28,
-      "text": "This label is paired with the entering form (to enter).",
+      "text": "This label is paired with the learning form (to learn).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-139",
       "unitNumber": 28,
-      "text": "The frozen line says most are formed with the listed suffix. This label is written beside the shown form.",
+      "text": "This label is paired with the entering form (to enter).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-140",
       "unitNumber": 28,
-      "text": "The frozen table writes this label beside a different form for to say.",
+      "text": "The frozen line says most are formed with the listed suffix. This label is written beside the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-141",
       "unitNumber": 28,
-      "text": "This label is paired with the saying form (to say).",
+      "text": "The frozen table writes this label beside a different form for to say.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-142",
       "unitNumber": 28,
-      "text": "Which admitted English label is written beside the remaining shown form?",
+      "text": "This label is paired with the saying form (to say).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-143",
       "unitNumber": 28,
-      "text": "Admitted adverbial lines",
+      "text": "Which admitted English label is written beside the remaining shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-144",
       "unitNumber": 28,
-      "text": "Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.",
+      "text": "Admitted adverbial lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-145",
       "unitNumber": 28,
-      "text": "Open Lesson 28 in the copy you own. The app records do not replace that lesson.",
+      "text": "Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-146",
       "unitNumber": 28,
-      "text": "Read the admitted examples on this card.",
+      "text": "Open Lesson 28 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-147",
       "unitNumber": 28,
-      "text": "Guided practice",
+      "text": "Read the admitted examples on this card.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-148",
       "unitNumber": 28,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-149",
       "unitNumber": 28,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-150",
       "unitNumber": 28,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-151",
       "unitNumber": 28,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-152",
       "unitNumber": 28,
-      "text": "Work Lesson 28 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-153",
       "unitNumber": 28,
-      "text": "Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 28 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-154",
       "unitNumber": 28,
-      "text": "Open Lesson 28 in your copy and complete its lesson work.",
+      "text": "Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-155",
       "unitNumber": 28,
-      "text": "Record Lesson 28 book work",
+      "text": "Open Lesson 28 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-156",
       "unitNumber": 28,
-      "text": "When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 28 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-157",
       "unitNumber": 28,
-      "text": "Self-attest only after the Lesson 28 work in your copy.",
+      "text": "When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-158",
       "unitNumber": 28,
-      "text": "Readings stay in the copy you own",
+      "text": "Self-attest only after the Lesson 28 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u28-159",
       "unitNumber": 28,
-      "text": "Readings stay in the copy you own. The admitted lines do not supply a reading passage.",
+      "text": "Readings stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u29-160",
-      "unitNumber": 29,
-      "text": "Admitted lines",
+      "id": "en-u28-160",
+      "unitNumber": 28,
+      "text": "Readings stay in the copy you own. The admitted lines do not supply a reading passage.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-161",
       "unitNumber": 29,
-      "text": "The frozen line writes this label on the other line for in the present.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-162",
       "unitNumber": 29,
-      "text": "The frozen line writes this label as a different phrase on the past line for that read.",
+      "text": "The frozen line writes this label on the other line for in the present.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-163",
       "unitNumber": 29,
-      "text": "This label is paired with the other form (in the present).",
+      "text": "The frozen line writes this label as a different phrase on the past line for that read.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-164",
       "unitNumber": 29,
-      "text": "This phrase is not the time label asked for here (that read).",
+      "text": "This label is paired with the other form (in the present).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-165",
       "unitNumber": 29,
-      "text": "The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.",
+      "text": "This phrase is not the time label asked for here (that read).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-166",
       "unitNumber": 29,
-      "text": "Which admitted English label is written on the line with the shown form?",
+      "text": "The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-167",
       "unitNumber": 29,
-      "text": "Admitted instruction",
+      "text": "Which admitted English label is written on the line with the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-168",
       "unitNumber": 29,
-      "text": "The frozen line writes this label on the other line for in the past.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-169",
       "unitNumber": 29,
-      "text": "The frozen line writes this word inside the gloss, not as the time label for reading.",
+      "text": "The frozen line writes this label on the other line for in the past.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-170",
       "unitNumber": 29,
-      "text": "This label is paired with the other form (in the past).",
+      "text": "The frozen line writes this word inside the gloss, not as the time label for reading.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-171",
       "unitNumber": 29,
-      "text": "This word is not the time label (reading).",
+      "text": "This label is paired with the other form (in the past).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-172",
       "unitNumber": 29,
-      "text": "The frozen line says the other form is happening now, in the present. This label is written on the shown line.",
+      "text": "This word is not the time label (reading).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-173",
       "unitNumber": 29,
-      "text": "Which admitted English label is written on the line with this shown form?",
+      "text": "The frozen line says the other form is happening now, in the present. This label is written on the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-174",
       "unitNumber": 29,
-      "text": "The frozen line writes this label on the shown line for in the past.",
+      "text": "Which admitted English label is written on the line with this shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-175",
       "unitNumber": 29,
-      "text": "The frozen line writes this phrase on the shown line, and it is not the other time label for that read.",
+      "text": "The frozen line writes this label on the shown line for in the past.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-176",
       "unitNumber": 29,
-      "text": "This label is the one on the shown line (in the past).",
+      "text": "The frozen line writes this phrase on the shown line, and it is not the other time label for that read.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-177",
       "unitNumber": 29,
-      "text": "This phrase stays on the shown line (that read).",
+      "text": "This label is the one on the shown line (in the past).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-178",
       "unitNumber": 29,
-      "text": "The frozen line says the form indicates actions that happened in the past. This label is the other time label.",
+      "text": "This phrase stays on the shown line (that read).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-179",
       "unitNumber": 29,
-      "text": "Which admitted English gloss names the other time, not the one on the shown line?",
+      "text": "The frozen line says the form indicates actions that happened in the past. This label is the other time label.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-180",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside a different form for beige.",
+      "text": "Which admitted English gloss names the other time, not the one on the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-181",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside a different form for khaki-colored.",
+      "text": "The frozen line writes this label beside a different form for beige.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-182",
       "unitNumber": 29,
-      "text": "This label is paired with an invariant form (beige).",
+      "text": "The frozen line writes this label beside a different form for khaki-colored.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-183",
       "unitNumber": 29,
-      "text": "This label is paired with the other invariant form (khaki-colored).",
+      "text": "This label is paired with an invariant form (beige).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-184",
       "unitNumber": 29,
-      "text": "The frozen line says the short form appears in the stated role. This label is written beside the shown form.",
+      "text": "This label is paired with the other invariant form (khaki-colored).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-185",
       "unitNumber": 29,
-      "text": "Which admitted English label is written beside the shown form?",
+      "text": "The frozen line says the short form appears in the stated role. This label is written beside the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-186",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside an invariant form for beige.",
+      "text": "Which admitted English label is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-187",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside an invariant form for khaki-colored.",
+      "text": "The frozen line writes this label beside an invariant form for beige.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-188",
       "unitNumber": 29,
-      "text": "This label is not the gloss of the shown form (beige).",
+      "text": "The frozen line writes this label beside an invariant form for khaki-colored.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-189",
       "unitNumber": 29,
-      "text": "This label is paired with a different form (khaki-colored).",
+      "text": "This label is not the gloss of the shown form (beige).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-190",
       "unitNumber": 29,
-      "text": "Which admitted English label is written beside this shown form?",
+      "text": "This label is paired with a different form (khaki-colored).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-191",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside the other forms for new.",
+      "text": "Which admitted English label is written beside this shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-192",
       "unitNumber": 29,
-      "text": "The frozen line writes this label beside the other invariant form for khaki-colored.",
+      "text": "The frozen line writes this label beside the other forms for new.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-193",
       "unitNumber": 29,
-      "text": "This label is paired with a different form (new).",
+      "text": "The frozen line writes this label beside the other invariant form for khaki-colored.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-194",
       "unitNumber": 29,
-      "text": "The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.",
+      "text": "This label is paired with a different form (new).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-195",
       "unitNumber": 29,
-      "text": "Which admitted English label is written beside the invariant form?",
+      "text": "The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-196",
       "unitNumber": 29,
-      "text": "The frozen line gives this label to the replacement line for colloquial language.",
+      "text": "Which admitted English label is written beside the invariant form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-197",
       "unitNumber": 29,
-      "text": "The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.",
+      "text": "The frozen line gives this label to the replacement line for colloquial language.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-198",
       "unitNumber": 29,
-      "text": "This label is paired with the other line (colloquial language).",
+      "text": "The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-199",
       "unitNumber": 29,
-      "text": "This gloss is not the speech label (Having eaten, I went for a walk).",
+      "text": "This label is paired with the other line (colloquial language).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-200",
       "unitNumber": 29,
-      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.",
+      "text": "This gloss is not the speech label (Having eaten, I went for a walk).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-201",
       "unitNumber": 29,
-      "text": "Which admitted English label names the kind of speech the source gives the shown line?",
+      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-202",
       "unitNumber": 29,
-      "text": "The frozen line gives this label to the other construction for bookish speech.",
+      "text": "Which admitted English label names the kind of speech the source gives the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-203",
       "unitNumber": 29,
-      "text": "The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.",
+      "text": "The frozen line gives this label to the other construction for bookish speech.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-204",
       "unitNumber": 29,
-      "text": "This label is paired with the other line (bookish speech).",
+      "text": "The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-205",
       "unitNumber": 29,
-      "text": "This gloss is paired with the other line (Having eaten, I went for a walk).",
+      "text": "This label is paired with the other line (bookish speech).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-206",
       "unitNumber": 29,
-      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.",
+      "text": "This gloss is paired with the other line (Having eaten, I went for a walk).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-207",
       "unitNumber": 29,
-      "text": "Which admitted English label names the replacement named for the shown line?",
+      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-208",
       "unitNumber": 29,
-      "text": "The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.",
+      "text": "Which admitted English label names the replacement named for the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-209",
       "unitNumber": 29,
-      "text": "The frozen line uses this phrase for the replacement for colloquial language.",
+      "text": "The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-210",
       "unitNumber": 29,
-      "text": "This phrase is the speech label (bookish speech).",
+      "text": "The frozen line uses this phrase for the replacement for colloquial language.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-211",
       "unitNumber": 29,
-      "text": "This phrase is the other label (colloquial language).",
+      "text": "This phrase is the speech label (bookish speech).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-212",
       "unitNumber": 29,
-      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.",
+      "text": "This phrase is the other label (colloquial language).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-213",
       "unitNumber": 29,
-      "text": "Which admitted English gloss is written beside the shown line?",
+      "text": "The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-214",
       "unitNumber": 29,
-      "text": "Admitted active and short-form lines",
+      "text": "Which admitted English gloss is written beside the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-215",
       "unitNumber": 29,
-      "text": "Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.",
+      "text": "Admitted active and short-form lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-216",
       "unitNumber": 29,
-      "text": "Open Lesson 29 in the copy you own. The app records do not replace that lesson.",
+      "text": "Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-217",
       "unitNumber": 29,
-      "text": "Read the admitted examples on this card.",
+      "text": "Open Lesson 29 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-218",
       "unitNumber": 29,
-      "text": "Guided practice",
+      "text": "Read the admitted examples on this card.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-219",
       "unitNumber": 29,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-220",
       "unitNumber": 29,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-221",
       "unitNumber": 29,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-222",
       "unitNumber": 29,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-223",
       "unitNumber": 29,
-      "text": "Work Lesson 29 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-224",
       "unitNumber": 29,
-      "text": "Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 29 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-225",
       "unitNumber": 29,
-      "text": "Open Lesson 29 in your copy and complete its lesson work.",
+      "text": "Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-226",
       "unitNumber": 29,
-      "text": "Record Lesson 29 book work",
+      "text": "Open Lesson 29 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-227",
       "unitNumber": 29,
-      "text": "When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 29 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-228",
       "unitNumber": 29,
-      "text": "Self-attest only after the Lesson 29 work in your copy.",
+      "text": "When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-229",
       "unitNumber": 29,
-      "text": "Participial punctuation stays in the copy you own",
+      "text": "Self-attest only after the Lesson 29 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-230",
       "unitNumber": 29,
-      "text": "Participial punctuation stays in the copy you own. No admitted span states that rule.",
+      "text": "Participial punctuation stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-231",
       "unitNumber": 29,
-      "text": "A general bookish-register claim stays in the copy you own",
+      "text": "Participial punctuation stays in the copy you own. No admitted span states that rule.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-232",
       "unitNumber": 29,
-      "text": "A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.",
+      "text": "A general bookish-register claim stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-233",
       "unitNumber": 29,
-      "text": "The bookish reading stays in the copy you own",
+      "text": "A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u29-234",
       "unitNumber": 29,
-      "text": "The bookish reading stays in the copy you own. The admitted note is not that reading.",
+      "text": "The bookish reading stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u30-235",
-      "unitNumber": 30,
-      "text": "Admitted lines",
+      "id": "en-u29-235",
+      "unitNumber": 29,
+      "text": "The bookish reading stays in the copy you own. The admitted note is not that reading.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-236",
       "unitNumber": 30,
-      "text": "The frozen table writes this respelling beside a different name for be/beh.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-237",
       "unitNumber": 30,
-      "text": "The frozen table writes this equivalent in another column for father.",
+      "text": "The frozen table writes this respelling beside a different name for be/beh.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-238",
       "unitNumber": 30,
-      "text": "This respelling belongs to the other row (be/beh).",
+      "text": "The frozen table writes this equivalent in another column for father.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-239",
       "unitNumber": 30,
-      "text": "This equivalent is not the respelling (father).",
+      "text": "This respelling belongs to the other row (be/beh).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-240",
       "unitNumber": 30,
-      "text": "The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.",
+      "text": "This equivalent is not the respelling (father).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-241",
       "unitNumber": 30,
-      "text": "Which admitted English respelling is written beside the shown table name?",
+      "text": "The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-242",
       "unitNumber": 30,
-      "text": "Admitted instruction",
+      "text": "Which admitted English respelling is written beside the shown table name?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-243",
       "unitNumber": 30,
-      "text": "The frozen table writes this respelling beside a different name for ah.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-244",
       "unitNumber": 30,
-      "text": "The frozen table writes this equivalent in another column for bad.",
+      "text": "The frozen table writes this respelling beside a different name for ah.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-245",
       "unitNumber": 30,
-      "text": "This respelling belongs to the other row (ah).",
+      "text": "The frozen table writes this equivalent in another column for bad.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-246",
       "unitNumber": 30,
-      "text": "This equivalent is not the respelling (bad).",
+      "text": "This respelling belongs to the other row (ah).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-247",
       "unitNumber": 30,
-      "text": "Which admitted English respelling is written beside this shown table name?",
+      "text": "This equivalent is not the respelling (bad).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-248",
       "unitNumber": 30,
-      "text": "The frozen table writes this equivalent in a different row for bad.",
+      "text": "Which admitted English respelling is written beside this shown table name?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-249",
       "unitNumber": 30,
-      "text": "The frozen table writes this gloss in a different row for both.",
+      "text": "The frozen table writes this equivalent in a different row for bad.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-250",
       "unitNumber": 30,
-      "text": "This equivalent belongs to the other row (bad).",
+      "text": "The frozen table writes this gloss in a different row for both.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-251",
       "unitNumber": 30,
-      "text": "This gloss belongs to the other row (both).",
+      "text": "This equivalent belongs to the other row (bad).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-252",
       "unitNumber": 30,
-      "text": "The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.",
+      "text": "This gloss belongs to the other row (both).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-253",
       "unitNumber": 30,
-      "text": "Which admitted English equivalent is written in the same row as the shown name?",
+      "text": "The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-254",
       "unitNumber": 30,
-      "text": "The frozen line writes this label beside the other example for USA.",
+      "text": "Which admitted English equivalent is written in the same row as the shown name?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-255",
       "unitNumber": 30,
-      "text": "The frozen line uses this word as the heading, not as the gloss for Abbreviations.",
+      "text": "The frozen line writes this label beside the other example for USA.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-256",
       "unitNumber": 30,
-      "text": "This label is paired with the other example (USA).",
+      "text": "The frozen line uses this word as the heading, not as the gloss for Abbreviations.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-257",
       "unitNumber": 30,
-      "text": "This word is the heading (Abbreviations).",
+      "text": "This label is paired with the other example (USA).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-258",
       "unitNumber": 30,
-      "text": "The frozen line lists these examples under Abbreviations. This label is written beside the shown example.",
+      "text": "This word is the heading (Abbreviations).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-259",
       "unitNumber": 30,
-      "text": "Which admitted English label is written beside the shown example?",
+      "text": "The frozen line lists these examples under Abbreviations. This label is written beside the shown example.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-260",
       "unitNumber": 30,
-      "text": "The frozen line writes this label beside the other example for USSR.",
+      "text": "Which admitted English label is written beside the shown example?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-261",
       "unitNumber": 30,
-      "text": "The frozen line uses this word as the heading for Abbreviations.",
+      "text": "The frozen line writes this label beside the other example for USSR.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-262",
       "unitNumber": 30,
-      "text": "This label is paired with the other example (USSR).",
+      "text": "The frozen line uses this word as the heading for Abbreviations.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-263",
       "unitNumber": 30,
-      "text": "This word is the heading, not the gloss (Abbreviations).",
+      "text": "This label is paired with the other example (USSR).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-264",
       "unitNumber": 30,
-      "text": "Which admitted English label is written beside this shown example?",
+      "text": "This word is the heading, not the gloss (Abbreviations).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-265",
       "unitNumber": 30,
-      "text": "The frozen line writes this label beside the shown example for USSR.",
+      "text": "Which admitted English label is written beside this shown example?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-266",
       "unitNumber": 30,
-      "text": "This label is the gloss (USSR).",
+      "text": "The frozen line writes this label beside the shown example for USSR.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-267",
       "unitNumber": 30,
-      "text": "This label is the other gloss (USA).",
+      "text": "This label is the gloss (USSR).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-268",
       "unitNumber": 30,
-      "text": "The frozen line lists these examples under Abbreviations. This word is the heading above the examples.",
+      "text": "This label is the other gloss (USA).",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-269",
       "unitNumber": 30,
-      "text": "Which admitted English word is the heading rather than the gloss of the shown example?",
+      "text": "The frozen line lists these examples under Abbreviations. This word is the heading above the examples.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-270",
       "unitNumber": 30,
-      "text": "The frozen note glosses street for a different mark.",
+      "text": "Which admitted English word is the heading rather than the gloss of the shown example?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-271",
       "unitNumber": 30,
-      "text": "The frozen note glosses building for a different mark.",
+      "text": "The frozen note glosses street for a different mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-272",
       "unitNumber": 30,
-      "text": "Street belongs to another mark.",
+      "text": "The frozen note glosses building for a different mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-273",
       "unitNumber": 30,
-      "text": "Building belongs to another mark.",
+      "text": "Street belongs to another mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-274",
       "unitNumber": 30,
-      "text": "The lines are marked with abbreviations. This label glosses the mark in the shown line.",
+      "text": "Building belongs to another mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-275",
       "unitNumber": 30,
-      "text": "Which admitted English label glosses the mark in the shown line?",
+      "text": "The lines are marked with abbreviations. This label glosses the mark in the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-276",
       "unitNumber": 30,
-      "text": "The frozen note glosses city for the place mark.",
+      "text": "Which admitted English label glosses the mark in the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-277",
       "unitNumber": 30,
-      "text": "The frozen note glosses apartment for a later mark.",
+      "text": "The frozen note glosses city for the place mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-278",
       "unitNumber": 30,
-      "text": "City belongs to another mark.",
+      "text": "The frozen note glosses apartment for a later mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-279",
       "unitNumber": 30,
-      "text": "Apartment belongs to a later mark.",
+      "text": "City belongs to another mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-280",
       "unitNumber": 30,
-      "text": "The lines are marked with abbreviations. This label glosses the first mark in the shown line.",
+      "text": "Apartment belongs to a later mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-281",
       "unitNumber": 30,
-      "text": "Which admitted English label glosses the first mark in the shown line?",
+      "text": "The lines are marked with abbreviations. This label glosses the first mark in the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-282",
       "unitNumber": 30,
-      "text": "The frozen note glosses city for a different mark.",
+      "text": "Which admitted English label glosses the first mark in the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-283",
       "unitNumber": 30,
-      "text": "City is the gloss of the place mark.",
+      "text": "The frozen note glosses city for a different mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-284",
       "unitNumber": 30,
-      "text": "Street is the gloss of a different mark.",
+      "text": "City is the gloss of the place mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-285",
       "unitNumber": 30,
-      "text": "The lines are marked with abbreviations. This label is the gloss written for the shown mark.",
+      "text": "Street is the gloss of a different mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-286",
       "unitNumber": 30,
-      "text": "Which admitted English gloss is written for the shown mark?",
+      "text": "The lines are marked with abbreviations. This label is the gloss written for the shown mark.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-287",
       "unitNumber": 30,
-      "text": "Review admitted table names and abbreviation examples",
+      "text": "Which admitted English gloss is written for the shown mark?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-288",
       "unitNumber": 30,
-      "text": "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.",
+      "text": "Review admitted table names and abbreviation examples",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-289",
       "unitNumber": 30,
-      "text": "Open Lesson 30 in the copy you own. The app records do not replace that lesson.",
+      "text": "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-290",
       "unitNumber": 30,
-      "text": "Read the admitted examples on this card.",
+      "text": "Open Lesson 30 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-291",
       "unitNumber": 30,
-      "text": "Guided practice",
+      "text": "Read the admitted examples on this card.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-292",
       "unitNumber": 30,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-293",
       "unitNumber": 30,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-294",
       "unitNumber": 30,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-295",
       "unitNumber": 30,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-296",
       "unitNumber": 30,
-      "text": "Work Lesson 30 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-297",
       "unitNumber": 30,
-      "text": "Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 30 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-298",
       "unitNumber": 30,
-      "text": "Open Lesson 30 in your copy and complete its lesson work.",
+      "text": "Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-299",
       "unitNumber": 30,
-      "text": "Record Lesson 30 book work",
+      "text": "Open Lesson 30 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-300",
       "unitNumber": 30,
-      "text": "When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 30 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-301",
       "unitNumber": 30,
-      "text": "Self-attest only after the Lesson 30 work in your copy.",
+      "text": "When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-302",
       "unitNumber": 30,
-      "text": "Dictionary use stays in the copy you own",
+      "text": "Self-attest only after the Lesson 30 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-303",
       "unitNumber": 30,
-      "text": "Dictionary use stays in the copy you own. No admitted span gives that procedure.",
+      "text": "Dictionary use stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-304",
       "unitNumber": 30,
-      "text": "A general abbreviation system stays in the copy you own",
+      "text": "Dictionary use stays in the copy you own. No admitted span gives that procedure.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-305",
       "unitNumber": 30,
-      "text": "A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.",
+      "text": "A general abbreviation system stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-306",
       "unitNumber": 30,
-      "text": "A general particle system stays in the copy you own",
+      "text": "A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-307",
       "unitNumber": 30,
-      "text": "A general particle system stays in the copy you own. An isolated label is not that system.",
+      "text": "A general particle system stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-308",
       "unitNumber": 30,
-      "text": "The final reading stays in the copy you own",
+      "text": "A general particle system stays in the copy you own. An isolated label is not that system.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-309",
+      "unitNumber": 30,
+      "text": "The final reading stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u30-310",
       "unitNumber": 30,
       "text": "The final reading stays in the copy you own. No admitted text supplies it.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"

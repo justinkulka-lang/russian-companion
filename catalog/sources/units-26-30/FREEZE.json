@@ -3,10 +3,44 @@
   "license": {
     "licenseId": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "packagedLegalText": "app/src/main/assets/licenses/cc-by-sa-4.0.txt",
+    "routes": {
+      "wikipedia": {
+        "appliesToSourceIds": [
+          "src-wikipedia-russian-grammar-1369617627",
+          "src-wikipedia-russian-alphabet-1371795481"
+        ],
+        "title": "Wikipedia:Copyrights",
+        "oldid": "1369466282",
+        "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Copyrights&oldid=1369466282",
+        "timestamp": "2026-08-15T04:26:00Z",
+        "parentid": 1363128585,
+        "mediawikiSha1": "26cff2324a4f42a3d58effe2f1bb0908a37bf126",
+        "size": 26648,
+        "retrieved": "2026-09-24",
+        "file": "wikipedia/copyrights-1369466282.txt",
+        "revisionFile": "wikipedia/copyrights-1369466282.revision.json",
+        "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+        "requiredStatement": "Most of Wikipedia's text and many of its images are co-licensed under the [[Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License|Creative Commons Attribution-ShareAlike 4.0 International License]] (CC BY-SA) and the [[Wikipedia:Text of the GNU Free Documentation License|GNU Free Documentation License]] (GFDL)",
+        "statement": "Most of Wikipedia's text and many of its images are co-licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) and the GNU Free Documentation License (GFDL)."
+      },
+      "wikibooks": {
+        "appliesToSourceIds": [
+          "src-wikibooks-russian-various-stuff-3353858"
+        ],
+        "title": "Wikibooks:Copyrights",
+        "oldid": "4622060",
+        "url": "https://en.wikibooks.org/w/index.php?title=Wikibooks:Copyrights&oldid=4622060",
+        "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0",
+        "statement": "English Wikibooks text is available under Creative Commons Attribution-ShareAlike 4.0 as stated by the retained Wikibooks:Copyrights oldid 4622060."
+      }
+    },
     "wikibooksLicenseTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
     "wikibooksLicenseTextSha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
     "wikibooksLicenseOldid": "4622060",
-    "statement": "English Wikipedia article text at the frozen oldids is CC BY-SA 4.0. English Wikibooks text is CC BY-SA 4.0 as stated by the retained Wikibooks:Copyrights oldid 4622060, which was re-fetched and found byte-identical to the repository record. Page history for each frozen oldid identifies contributors. Linked media, Phonos, and audio are not covered."
+    "statement": "English Wikipedia article text is CC BY-SA 4.0 under the retained Wikipedia:Copyrights oldid 1369466282. English Wikibooks text is CC BY-SA 4.0 under the retained Wikibooks:Copyrights oldid 4622060. Those routes are not interchangeable. Page history for each frozen oldid identifies contributors. Linked media, Phonos, and audio are not covered."
   },
   "decisions": [
     {
@@ -73,7 +107,8 @@
       "size": 165374,
       "retrieved": "2026-09-24",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors."
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors."
     },
     {
       "key": "alphabet",
@@ -89,7 +124,8 @@
       "size": 56784,
       "retrieved": "2026-09-24",
       "sourceId": "src-wikipedia-russian-alphabet-1371795481",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors."
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors."
     },
     {
       "key": "address",
@@ -105,6 +141,7 @@
       "size": 8593,
       "retrieved": "2026-09-24",
       "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+      "licenseRoute": "wikibooks",
       "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors."
     }
   ]

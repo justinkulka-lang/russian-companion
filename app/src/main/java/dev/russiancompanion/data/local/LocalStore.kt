@@ -838,6 +838,7 @@ internal class LocalStore private constructor(
                 "cc-by-sa-4.0.txt" -> "CC BY-SA 4.0"
                 "units-3-5-curriculum-notice.txt" -> "Units 3–5 curriculum notice"
                 "units-6-10-curriculum-notice.txt" -> "Units 6–10 curriculum notice"
+                "units-26-30-curriculum-notice.txt" -> "Units 26–30 curriculum notice"
                 "cc-by-3.0-us.html" -> "CC BY 3.0 US"
                 "cc-by-2.0-fr.html" -> "CC BY 2.0 FR"
                 "public-domain-notice.txt" -> "Public-domain mark"

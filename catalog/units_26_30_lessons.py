@@ -29,15 +29,34 @@ SOURCE_IDS = {
 }
 
 
-def _span(page: str, start: str, end: str) -> str:
-    text = _PAGES[page]
-    begin = text.find(start)
-    finish = text.find(end, begin if begin >= 0 else 0)
-    if begin < 0 or finish < 0:
-        raise SystemExit(f"Frozen span is missing on {page}: {start!r} .. {end!r}")
-    if text.find(start, begin + 1) >= 0 and text.find(start, begin + 1) < finish + len(end):
-        pass
+def _marker_indexes(text: str, marker: str) -> list[int]:
+    if not marker:
+        return []
+    indexes = []
+    start = 0
+    while True:
+        found = text.find(marker, start)
+        if found < 0:
+            return indexes
+        indexes.append(found)
+        start = found + 1
+
+
+def _span_in(text: str, start: str, end: str, page: str = "span") -> str:
+    """Return one span only when the start and end markers are each unique."""
+    starts = _marker_indexes(text, start)
+    ends = _marker_indexes(text, end)
+    if len(starts) != 1 or len(ends) != 1:
+        raise SystemExit(f"Frozen span markers are ambiguous on {page}: {start!r} .. {end!r}")
+    begin = starts[0]
+    finish = ends[0]
+    if finish < begin + len(start):
+        raise SystemExit(f"Frozen span markers are ambiguous on {page}: {start!r} .. {end!r}")
     return text[begin:finish + len(end)]
+
+
+def _span(page: str, start: str, end: str) -> str:
+    return _span_in(_PAGES[page], start, end, page)
 
 
 def _wiki(page, needle, ru, en):
@@ -315,7 +334,8 @@ def _unit_27(lesson) -> None:
     killed = _clean("grammar", past, format_wikibooks_emphasis("уби́'''т'''ый"))
     short = _clean("grammar", past, format_wikibooks_emphasis("напи́са'''н'''"))
     discussed = _clean("grammar", present, "обсужда́емый")
-    left = _clean("grammar", present, format_wikibooks_emphasis("оставля́'''ем'''ый"))
+    plural = _clean("grammar", present, format_wikibooks_emphasis("оставля́'''ем'''"))
+    base = _clean("grammar", present, "оставля́ть")
     lesson.objective(
         "passive",
         "Choose the admitted gloss for the shown past passive form",
@@ -375,47 +395,51 @@ def _unit_27(lesson) -> None:
         ("grammar", present, "In order to form the passive present participle"),
         [
             _wiki("grammar", present, discussed, "being discussed"),
-            _wiki("grammar", present, left, "we leave"),
+            _wiki("grammar", present, plural, "we leave"),
         ],
         [
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside the shown form?",
+                "Which admitted English gloss follows the listed forms for the shown form?",
                 discussed,
                 "being discussed",
                 [
-                    ("we leave", "The frozen line writes this label beside a different form for we leave.", "This label is paired with the other listed form (we leave)."),
-                    ("to discuss", "The frozen line writes this label beside the base, not the shown form for to discuss.", "This label is paired with the base (to discuss)."),
+                    ("we leave", "The frozen parenthetical we leave belongs to the plural form in the same note.", "This parenthetical belongs to the plural form (we leave)."),
+                    ("to discuss", "The frozen line writes to discuss on the base, not as this gloss.", "This label is the base gloss (to discuss)."),
                 ],
                 feature="PRESENT_PASSIVE",
-                why="The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.",
+                why="The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.",
             ),
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside this shown form?",
-                left,
+                "Which admitted English parenthetical follows the shown form?",
+                plural,
                 "we leave",
                 [
-                    ("being discussed", "The frozen line writes this label beside a different form for being discussed.", "This label is paired with the discussed form (being discussed)."),
-                    ("to discuss", "The frozen line writes this label beside the base for to discuss.", "This label is paired with the base, not the shown form (to discuss)."),
+                    ("being discussed", "The frozen line gives being discussed to the discuss forms, not this parenthetical.", "This gloss belongs to the discuss forms (being discussed)."),
+                    ("to leave", "The frozen parenthetical to leave belongs to the other form in the same row.", "This parenthetical belongs to the other form (to leave)."),
                 ],
                 feature="PRESENT_PASSIVE",
-                why="The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.",
+                why="The frozen line writes (we leave) after the shown form. This label is that parenthetical.",
             ),
             _distinction(
                 "grammar",
-                "Which admitted English label names the base beside the discussed form?",
-                discussed,
-                "to discuss",
+                "Which admitted English parenthetical follows this shown form?",
+                base,
+                "to leave",
                 [
-                    ("we leave", "The frozen line writes this label beside a different form for we leave.", "This label is paired with the leave form (we leave)."),
-                    ("being discussed", "The frozen line writes this label beside the shown form itself for being discussed.", "This label is the gloss of the shown form, not its base (being discussed)."),
+                    ("we leave", "The frozen parenthetical we leave belongs to the plural form, not this form.", "This parenthetical belongs to the plural form (we leave)."),
+                    ("being discussed", "The frozen line gives being discussed to the discuss forms, not this parenthetical.", "This gloss belongs to the discuss forms (being discussed)."),
                 ],
                 feature="PRESENT_PASSIVE",
-                why="The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form.",
+                why="The frozen line writes (to leave) after the shown form. This label is that parenthetical.",
             ),
         ],
-        extra=[_extra("grammar", present, "to discuss")],
+        extra=[
+            _extra("grammar", present, "to discuss"),
+            _extra("grammar", present, base),
+            _extra("grammar", present, "to leave"),
+        ],
     )
 
 

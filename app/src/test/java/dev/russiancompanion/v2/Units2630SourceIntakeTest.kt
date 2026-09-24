@@ -76,6 +76,21 @@ class Units2630SourceIntakeTest {
         assertEquals(license.getValue("wikibooksLicenseTextSha256").jsonPrimitive.content, sha256(copyrights))
         assertEquals(sha256(copyrights), sha256(copyrights.copyOf()))
         assertTrue(String(copyrights, Charsets.UTF_8).contains("Creative Commons Attribution-ShareAlike 4.0"))
+        val routes = license.getValue("routes").jsonObject
+        val wikipedia = routes.getValue("wikipedia").jsonObject
+        val wikibooks = routes.getValue("wikibooks").jsonObject
+        assertNotEquals(wikipedia.getValue("file").jsonPrimitive.content, wikibooks.getValue("file").jsonPrimitive.content)
+        assertEquals("1369466282", wikipedia.getValue("oldid").jsonPrimitive.content)
+        assertTrue(wikipedia.getValue("url").jsonPrimitive.content.contains("oldid=1369466282"))
+        assertEquals("2026-09-24", wikipedia.getValue("retrieved").jsonPrimitive.content)
+        val wikipediaBytes = File(root, "catalog/sources/units-26-30/${wikipedia.getValue("file").jsonPrimitive.content}").readBytes()
+        val wikipediaHash = sha256(wikipediaBytes)
+        assertEquals(wikipediaHash, sha256(wikipediaBytes.copyOf()))
+        assertEquals(wikipedia.getValue("sha256").jsonPrimitive.content, wikipediaHash)
+        assertTrue(String(wikipediaBytes, Charsets.UTF_8).contains(wikipedia.getValue("requiredStatement").jsonPrimitive.content))
+        assertTrue(File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").isFile)
+        assertTrue(File(root, "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt").readText().contains("Wikipedia:Copyrights oldid 1369466282"))
+        assertTrue(File(root, "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt").readText().contains("Wikibooks:Copyrights oldid 4622060"))
         val expected = mapOf(
             "grammar" to "1369617627",
             "alphabet" to "1371795481",
@@ -188,6 +203,146 @@ class Units2630SourceIntakeTest {
         assertFalse(blocked.allowed)
         assertTrue(blocked.remaining.any { it.contains("indefinite-pronoun") })
         assertFalse(blocked.remaining.any { it.contains("word-order") && it.contains("not content-complete") })
+    }
+
+    @Test
+    fun presentPassiveGlossFollowsOnlyTheExplicitParenthetical() {
+        val pack = pack()
+        val objective = "obj-u27-present-passive"
+        assertTrue(pack.examples.none { it.objectiveId == objective && it.display.endsWith("\u0435\u043c\u044b\u0439") && it.note == "we leave" })
+        assertTrue(pack.items.none { it.objectiveId == objective && (it.promptLetter ?: "").endsWith("\u0435\u043c\u044b\u0439") && it.answer == "we leave" })
+        val paired = pack.items.single { it.objectiveId == objective && it.answer == "we leave" }
+        assertEquals("\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301\u0435\u043c", paired.promptLetter)
+        assertEquals("EXPLICIT_PARENTHETICAL_GLOSS", paired.assessment!!.relationKind)
+        assertEquals("EXPLICIT_PARENTHETICAL_GLOSS", paired.assessment!!.evidenceMode)
+        assertFalse(paired.feedback.contains("written beside the shown form"))
+        val cueId = paired.assessment!!.relationParticipantIds.first()
+        val participle = "\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301\u0435\u043c\u044b\u0439"
+        val stolenCue = pack.provenanceRecords.single { it.itemId == cueId }.copy(
+            shippedText = participle,
+            contentHash = sha256(participle),
+        )
+        val stolen = pack.copy(
+            provenanceRecords = replace(pack, stolenCue),
+            items = pack.items.map { if (it.id == paired.id) it.copy(promptLetter = stolenCue.shippedText) else it },
+        )
+        val stolenErrors = V2Validator.validate(stolen).errors
+        assertTrue(stolenErrors.joinToString("\n"), stolenErrors.any { paired.id in it })
+
+        val answerId = paired.assessment!!.answerSourceIds.single()
+        val changedAnswer = pack.provenanceRecords.single { it.itemId == answerId }.copy(
+            shippedText = "to leave",
+            contentHash = sha256("to leave"),
+        )
+        val changedParticipant = pack.copy(
+            provenanceRecords = replace(pack, changedAnswer),
+            items = pack.items.map { item ->
+                if (item.id != paired.id) item else item.copy(answer = "to leave", options = item.options.map { if (it == "we leave") "to leave" else it })
+            },
+        )
+        val participantErrors = V2Validator.validate(changedParticipant).errors
+        assertTrue(participantErrors.joinToString("\n"), participantErrors.any { paired.id in it })
+
+        val moved = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if (!record.originalSourceText.contains("(\u0077e leave)")) record else {
+                    val text = record.originalSourceText
+                        .replace("\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301'''\u0435\u043c''' (we leave)", "\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301'''\u0435\u043c'''")
+                        .replace("\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301'''\u0435\u043c'''\u044b\u0439", "\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0301'''\u0435\u043c'''\u044b\u0439 (we leave)")
+                    record.copy(originalSourceText = text, sourceHash = sha256(text))
+                }
+            },
+        )
+        val movedErrors = V2Validator.validate(moved).errors
+        assertTrue(movedErrors.joinToString("\n"), movedErrors.any { paired.id in it })
+
+        val cooccurrence = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if ("(we leave)" !in record.originalSourceText) record else {
+                    val text = record.originalSourceText.replace("(we leave)", "we leave")
+                    record.copy(originalSourceText = text, sourceHash = sha256(text))
+                }
+            },
+        )
+        val cooccurrenceErrors = V2Validator.validate(cooccurrence).errors
+        assertTrue(cooccurrenceErrors.joinToString("\n"), cooccurrenceErrors.any { paired.id in it })
+        assertFalse(cooccurrenceErrors.isEmpty())
+    }
+
+    @Test
+    fun wikipediaLicenseRouteIsNotTheWikibooksSnapshot() {
+        val root = repo()
+        val script = """
+            import json
+            from pathlib import Path
+            from units_26_30_intake import license_admission_errors
+            root = Path('.').resolve().parent
+            freeze_path = root / 'catalog/sources/units-26-30/FREEZE.json'
+            source_root = freeze_path.parent
+            freeze = json.loads(freeze_path.read_text())
+            assert license_admission_errors(freeze, source_root) == []
+            wikibooks_only = json.loads(json.dumps(freeze))
+            for page in wikibooks_only['pages']:
+                if page['sourceId'].startswith('src-wikipedia-'):
+                    page['licenseRoute'] = 'wikibooks'
+            wikibooks_errors = license_admission_errors(wikibooks_only, source_root)
+            assert any('only Wikibooks license evidence' in error for error in wikibooks_errors), wikibooks_errors
+            changed_hash = json.loads(json.dumps(freeze))
+            changed_hash['license']['routes']['wikipedia']['sha256'] = '0' * 64
+            hash_errors = license_admission_errors(changed_hash, source_root)
+            assert any('Wikipedia license evidence hash does not match' in error for error in hash_errors), hash_errors
+            missing_statement = license_admission_errors(freeze, source_root, {'wikipedia': b'no license statement here'})
+            assert any('does not state CC BY-SA 4.0' in error for error in missing_statement), missing_statement
+            print('ok')
+        """.trimIndent()
+        val process = ProcessBuilder("python3", "-c", script)
+            .directory(File(root, "catalog"))
+            .redirectErrorStream(true)
+            .start()
+        val output = process.inputStream.bufferedReader().readText()
+        assertEquals(output, 0, process.waitFor())
+        val pack = pack()
+        val wikipedia = pack.provenanceRecords.filter { it.unitNumber in 26..30 && it.sourceId.startsWith("src-wikipedia-") }
+        assertTrue(wikipedia.isNotEmpty())
+        wikipedia.forEach { record ->
+            assertTrue(record.attribution.contains("Wikipedia:Copyrights oldid 1369466282"))
+            assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+        }
+        val onlyWikibooks = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if (!record.sourceId.startsWith("src-wikipedia-")) record else record.copy(
+                    attribution = "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060.",
+                )
+            },
+        )
+        val errors = V2Validator.validate(onlyWikibooks).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains("Wikipedia license route is missing") })
+    }
+
+    @Test
+    fun duplicateSpanMarkersFailClosed() {
+        val root = repo()
+        val script = """
+            import units_26_30_lessons as lessons
+            def rejected(text, start, end):
+                try:
+                    lessons._span_in(text, start, end, 'sample')
+                except SystemExit as error:
+                    return 'ambiguous' in str(error)
+                return False
+            assert rejected('alpha beta alpha end', 'alpha', 'end')
+            assert rejected('start end middle end', 'start', 'end')
+            assert lessons._span_in('start unique body end', 'start', 'end', 'sample') == 'start unique body end'
+            admitted = lessons._span('grammar', 'Basic word order, both in conversation and written language', 'Word order can express logical stress, and degree of definiteness.')
+            assert admitted.startswith('Basic word order')
+            print('ok')
+        """.trimIndent()
+        val process = ProcessBuilder("python3", "-c", script)
+            .directory(File(root, "catalog"))
+            .redirectErrorStream(true)
+            .start()
+        val output = process.inputStream.bufferedReader().readText()
+        assertEquals(output, 0, process.waitFor())
     }
 
     @Test
