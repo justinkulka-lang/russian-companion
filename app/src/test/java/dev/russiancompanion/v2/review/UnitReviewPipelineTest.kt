@@ -107,7 +107,7 @@ class UnitReviewPipelineTest {
             assertTrue(errors.joinToString("\n"), errors.isEmpty())
             assertEquals(renderUnitReviewFiles(pack, number).files, committed)
         }
-        listOf(18, 20).forEach { number ->
+        listOf(18, 20, 23).forEach { number ->
             assertFalse(File(repo(), "review/unit-$number").exists())
         }
     }

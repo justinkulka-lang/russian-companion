@@ -682,7 +682,7 @@ internal object V2Validator {
     }
 
     private fun completionGapErrors(pack: V2CurriculumPack, unit: V2Unit): List<String> {
-        if (unit.number !in 16..20) return emptyList()
+        if (unit.number !in 16..25) return emptyList()
         val records = pack.provenanceRecords.filter { it.unitNumber == unit.number }
         val joined = records.joinToString("\n") { it.originalSourceText }
         return when (unit.number) {
@@ -710,6 +710,31 @@ internal object V2Validator {
                 emptyList()
             } else {
                 listOf("Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone")
+            }
+            21 -> if (hasReflexiveObjectSource(records) && hasPurposeSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 21 is not content-complete without reflexive-object and purpose sources")
+            }
+            22 -> if (hasNumeralDeclensionSource(records) && hasBothSource(records) && hasHalfSource(records) && hasCollectiveSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 22 is not content-complete without declined-numeral, both, one-and-a-half, and collective sources")
+            }
+            23 -> if (hasDurationSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 23 is not content-complete without elapsed-time and duration sources")
+            }
+            24 -> if (hasNegationAlternationSource(records) && hasNegativePronounSource(records) && hasNegationScopeSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 24 is not content-complete without alternation, negative-pronoun, and scope sources")
+            }
+            25 -> if (hasProductiveDiminutiveSource(records) && hasRegisterSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 25 is not content-complete without a productive diminutive rule and a register source")
             }
             else -> emptyList()
         }
@@ -768,6 +793,107 @@ internal object V2Validator {
             record.sourceRevision != "4059032" &&
                 !dictionaryRow(record) &&
                 record.originalSourceText.contains("\u0434\u043e\u043b\u0436\u0435\u043d")
+        }
+    }
+
+    private fun outsideNumbers(record: V2ProvenanceRecord): Boolean {
+        return record.sourceRevision != "4371358" && !dictionaryRow(record)
+    }
+
+    private fun outsideBasicNegation(record: V2ProvenanceRecord): Boolean {
+        return record.sourceRevision != "4233876" && record.sourceRevision != "4195114" && !dictionaryRow(record)
+    }
+
+    private fun hasReflexiveObjectSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            record.sourceRevision != "4220315" &&
+                !dictionaryRow(record) &&
+                record.originalSourceText.contains("\u0441\u0435\u0431\u044f")
+        }
+    }
+
+    private fun hasPurposeSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            record.sourceRevision != "4220315" &&
+                !dictionaryRow(record) &&
+                record.originalSourceText.contains("\u0447\u0442\u043e\u0431\u044b")
+        }
+    }
+
+    private fun hasNumeralDeclensionSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            outsideNumbers(record) && record.originalSourceText.lowercase().contains("declension of numerals")
+        }
+    }
+
+    private fun hasBothSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            outsideNumbers(record) &&
+                (record.originalSourceText.contains("\u043e\u0431\u0430") || record.originalSourceText.contains("\u043e\u0431\u0435"))
+        }
+    }
+
+    private fun hasHalfSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            outsideNumbers(record) && record.originalSourceText.contains("\u043f\u043e\u043b\u0442\u043e\u0440")
+        }
+    }
+
+    private fun hasCollectiveSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            outsideNumbers(record) && (text.contains("collective numeral") || text.contains("\u0441\u043e\u0431\u0438\u0440\u0430\u0442\u0435\u043b\u044c\u043d"))
+        }
+    }
+
+    private fun hasDurationSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            outsideNumbers(record) &&
+                (text.contains(" ago") || text.contains("during") || text.contains("elapsed"))
+        }
+    }
+
+    private fun hasNegationAlternationSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            outsideBasicNegation(record) &&
+                text.contains("accusative") &&
+                text.contains("genitive") &&
+                text.contains("negat")
+        }
+    }
+
+    private fun hasNegativePronounSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            outsideBasicNegation(record) &&
+                (text.contains("negative pronoun") || record.originalSourceText.contains("\u043d\u0438\u043a\u0442\u043e"))
+        }
+    }
+
+    private fun hasNegationScopeSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            outsideBasicNegation(record) && record.originalSourceText.lowercase().contains("scope")
+        }
+    }
+
+    private fun hasProductiveDiminutiveSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            record.sourceRevision != "4660786" &&
+                !dictionaryRow(record) &&
+                text.contains("diminutive") &&
+                text.contains("suffix")
+        }
+    }
+
+    private fun hasRegisterSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            record.sourceRevision != "4660786" &&
+                record.sourceRevision != "3353859" &&
+                !dictionaryRow(record) &&
+                record.originalSourceText.lowercase().contains("register")
         }
     }
 
@@ -896,8 +1022,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..20) {
-            errors += "Only Units 1-20 may be development content in this pack"
+        if (unit.number !in 1..25) {
+            errors += "Only Units 1-25 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -905,7 +1031,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number in 6..20) validateGovernedChecks(pack, unit, errors)
+        if (unit.number in 6..25) validateGovernedChecks(pack, unit, errors)
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -1067,7 +1193,7 @@ internal object V2Validator {
                 errors += "MediaWiki markup in learner-facing $field"
             }
         }
-        pack.units.filter { it.number in 16..20 }.forEach { unit ->
+        pack.units.filter { it.number in 16..25 }.forEach { unit ->
             reject("unit ${unit.number} title", unit.title)
             reject("unit ${unit.number} topic", unit.topicSummary)
             unit.sessions.forEach { session ->
@@ -1084,7 +1210,7 @@ internal object V2Validator {
                 reject("objective ${objective.id} title", objective.title)
             }
         }
-        val governedUnits = pack.units.filter { it.number in 16..20 }
+        val governedUnits = pack.units.filter { it.number in 16..25 }
         val exampleIds = governedUnits.flatMap { unit -> unit.objectives.flatMap { it.exampleIds } }.toSet()
         val itemIds = governedUnits.flatMap { unit ->
             unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { session -> session.steps.flatMap { it.itemIds } }
@@ -1106,10 +1232,10 @@ internal object V2Validator {
                 assessment.contrastMembers.forEach { reject("item ${item.id} contrast", it) }
             }
         }
-        pack.provenanceRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+        pack.provenanceRecords.filter { it.unitNumber in 16..25 }.forEach { record ->
             reject("provenance ${record.itemId} shippedText", record.shippedText)
         }
-        pack.authoredEnglishRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+        pack.authoredEnglishRecords.filter { it.unitNumber in 16..25 }.forEach { record ->
             reject("authored ${record.id}", record.text)
         }
     }
@@ -1330,7 +1456,7 @@ internal object V2Validator {
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 11..20) {
+        if (unitNumber in 11..25) {
             errors += explicitTargetErrors(pack, item)
         }
         return errors
@@ -1395,6 +1521,36 @@ internal object V2Validator {
         "ONE_MINUTE_ROW" to "one-minute row",
         "TWO_MINUTE_ROW" to "two-minute row",
         "FIVE_MINUTE_ROW" to "five-minute row",
+        "FILM_AGREEMENT_LINE" to "film agreement line",
+        "BOOK_AGREEMENT_LINE" to "book agreement line",
+        "JEANS_AGREEMENT_LINE" to "jeans agreement line",
+        "TWENTY_ONE_LINE" to "twenty-one line",
+        "HUNDRED_ONE_LINE" to "hundred-one line",
+        "TWO_HUNDRED_FIFTEEN_LINE" to "two-hundred-fifteen line",
+        "SHOT_GLASS_LINE" to "shot-glass line",
+        "FORTY_ONE_YEAR_LINE" to "forty-one-year line",
+        "SIXTY_NINE_WORD_LINE" to "sixty-nine-word line",
+        "ONE_BOY_LINE" to "one-boy line",
+        "TWO_GIRL_LINE" to "two-girl line",
+        "FIVE_GIRL_LINE" to "five-girl line",
+        "NOT_SPEAKING_LINE" to "not-speaking line",
+        "NOT_STUDENT_LINE" to "not-student line",
+        "NOT_COMING_LINE" to "not-coming line",
+        "ABSENCE_FORM" to "absence form",
+        "EXISTENCE_FORM" to "existence form",
+        "PARTICLE_FORM" to "particle form",
+        "FIRST_NAME_FORM" to "first-name form",
+        "PATRONYMIC_FORM" to "patronymic form",
+        "FAMILY_NAME_FORM" to "family-name form",
+        "ALEXANDER_DIMINUTIVE" to "Alexander diminutive",
+        "ALEXEI_DIMINUTIVE" to "Alexei diminutive",
+        "DMITRI_DIMINUTIVE" to "Dmitri diminutive",
+        "PLEASE_LINE" to "please line",
+        "THANKS_LINE" to "thanks line",
+        "APOLOGY_LINE" to "apology line",
+        "NAME_QUESTION_LINE" to "name-question line",
+        "NAME_ANSWER_LINE" to "name-answer line",
+        "FORMAL_APOLOGY_LINE" to "formal-apology line",
         "DISSUADE_MEANING" to "dissuade meaning",
         "AGREE_MEANING" to "agree meaning",
         "DISSUADE_PERFECTIVE" to "dissuade perfective",
@@ -2029,8 +2185,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..20) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-20 source intake"
+            if (record.unitNumber !in 3..25) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-25 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -2113,8 +2269,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..20) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-20 source intake"
+            if (record.unitNumber !in 3..25) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-25 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||

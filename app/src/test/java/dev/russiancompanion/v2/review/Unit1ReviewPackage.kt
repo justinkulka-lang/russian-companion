@@ -181,6 +181,12 @@ private const val UNITS_16_20_EDITION_NOTES =
 private const val UNITS_16_20_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
+private const val UNITS_21_25_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification."
+
+private const val UNITS_21_25_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 21-25, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -333,6 +339,46 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20",
         UNITS_16_20_EDITION_NOTES,
         UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        21,
+        "Lesson 21",
+        "259-270",
+        "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        22,
+        "Lesson 22",
+        "271-284",
+        "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        23,
+        "Lesson 23",
+        "285-295",
+        "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        24,
+        "Lesson 24",
+        "296-306",
+        "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of \u043d\u0435",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        25,
+        "Lesson 25",
+        "307-321",
+        "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
     ),
 )
 

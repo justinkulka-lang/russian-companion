@@ -67,7 +67,7 @@ class Units1115InstructionalValidityTest {
             }
         }
         assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
-        assertTrue(pack.units.drop(20).all { it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
+        assertTrue(pack.units.drop(25).all { it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
     }
 
     @Test

@@ -1,0 +1,118 @@
+{{Russian}}
+;До́брое у́тро (''Dobroye utro'') :good morning
+;До́брый день (''Dobriy den'') :good day
+;До́брый ве́чер (''Dobriy vecher'') :good evening
+;Здра́вствуйте (''Zdravstvuyte'') :it's a kind of universal greeting, you can use it 24 hours a day, though only once per day to the same person.  formal.
+;Споко́йной но́чи (''Spokoynoy nochi'') :good night (literally, 'peaceful night')
+;Приве́т (''Privyet'') :hi. informal.
+;До свида́ния (''Do svidanya'') :good bye
+;Пока́ (''Poka'') :bye; also used as English "until": подождите, пока я приду (wait until I come)
+
+;Пожа́луйста (''Pozhalusta'') :please; also used for saying "you are welcome" as an abreviation of "please think nothing of it"
+;Спаси́бо (''Spasiba'') :thanks
+
+;Прошу́ проще́ния (''Proshu proshcheniya'') :I'm sorry / excuse me (formal)
+;Извини́те (''Izvinitye'') :I'm sorry / excuse me (informal)
+
+;Да (''Da'') :yes
+;Нет (''Nyet'') :no / not
+
+;Как дела́? (''Kak dyela?'') :How are you?
+;Хорошо́. (''Kharasho'') :Fine/ Good
+
+;Я бу́ду борщ с больши́м коли́чеством смета́ны (в рестора́не) (''Ya budu borshcht s bal'shim kalichistvuhm smitany (fristarani)'') :I'll take borshch with lots of sour cream (in the restaurant).
+
+;Как Вас зову́т? (''Kak Vas zovut?'') :What is your name? (lit. "What do [they] call you?")
+;Меня́ зову́т... (''Menya zovut...'') :My name is... (lit. "[they] call me ...")
+;Когда́ Вы родили́сь/роди́лись? (''Kogda Vy rodilis?'') :When were you born?
+;Где Вы родили́сь/роди́лись? (''Gdye Vy rodilis?'') :Where were you born?
+;Где Вы живёте? (''Gdye Vy zhivyotye?'') :Where do you live?
+;Кто Вы? (''Kto Vy?'') :Who are you?
+;Где Вы? (''Gdye Vy?'') :Where are you?
+;Где Вы у́читесь? (''Gdye Vy u chityes?'') :Where do you study?
+;Ру́сский язы́к о́чень краси́вый. (''Russkiy yazyk ochen' krasivy'') :The Russian language is very beautiful.
+;Я Вас люблю́. (''Ya Vas lublyu.'') :I love you.
+;Я хочу́ есть. (''Ya khochu yest'.'') :I'm hungry (I want to eat).
+;Я хочу́ пить. (''Ya khochu pit'.'') :I'm thirsty (I want to drink).
+;Мне ну́жен перево́дчик. (''Mne nuzhen pervodchik.'') :I need an interpreter/translator.
+
+
+{| border=0 cellpadding=3 cellspacing=0
+|- bgcolor=#eeeeee
+! Translation !! Phrase !! Transcription !! Literal translation
+|-
+| Russian
+| русский
+| /{{IPA|ˈruskʲɪj}}/ ([[Media:CPIDL Russian - russkij.ogg|listen]])
+|-
+| hello
+| здравствуйте
+| /{{IPA|ˈzdrastvujtʲe}}/ ([[Media:CPIDL Russian - Zdravstvujte.ogg|listen]])
+| be healthy ([[imperative]] 2nd person plural/singular polite)
+|-
+| good-bye
+| до свидания
+| /{{IPA|do svʲɪˈdanja}}/ ([[Media:CPIDL Russian - do svidania.ogg|listen]])
+| until seeing
+|-
+| please
+| пожалуйста
+| /{{IPA|poˈʐalujsta}}/ ([[Media:CPIDL Russian - pozhalujsta.ogg|listen]])
+|-
+| thank you
+| спасибо
+| /{{IPA|spʌˈsʲibə}}/ ([[Media:CPIDL Russian - Spasibo.ogg|listen]])
+|-
+| that one
+| тот
+| /{{IPA|tot}}/ ([[Media:CPIDL Russian - tot.ogg|listen]])
+|-
+| how much?
+| сколько?
+| /{{IPA|ˈskolʲko}}/ ([[Media:CPIDL Russian - skol'ko.ogg|listen]])
+|-
+| English
+| английский
+| /{{IPA|anˈglʲijskʲɪj}}/ ([[Media:CPIDL Russian - anglijskij.ogg|listen]])
+|-
+| yes
+| да
+| /{{IPA|da}}/ ([[Media:CPIDL Russian - da.ogg|listen]])
+|-
+| no
+| нет
+| /{{IPA|nʲɛt}}/ ([[Media:CPIDL Russian - net.ogg|listen]])
+| “there isn’t” (short for не есть)
+|-
+| sorry
+| извините
+| /{{IPA|ɪzvʲɪˈnitʲɪ}}/
+|-
+| I don’t understand
+| не понимаю
+| /{{IPA|nʲe ponɪˈmaju}}/
+|-
+| I don’t speak Russian
+| не говорю по‑русски
+| /{{IPA|nʲɪ govʌˈrʲu po.ˈruskʲɪ}}/
+|-
+| generic toast
+| за здоровье
+| /{{IPA|zə zdʌˈrovjɪ}}/ ([[Media:CPIDL Russian - za zdorovje.ogg|listen]])
+| for health
+|-
+| Do you speak English?
+| говорите по‑английски?
+| /{{IPA|govʌˈrʲitʲɪ po.anˈglʲijskʲɪ}}/ ([[Media:CPIDL Russian - vi govorite.ogg|listen]])
+|-
+| where’s the bathroom?
+| где здесь туалет?
+| /{{IPA|gdɛ zdesʲ tuaˈlɛt}}/
+| where here (is) (the) toilet?
+|-
+| I love you
+| Я тебя люблю 
+| /{{IPA|ya teˈbʲa lʲuˈblʲu}}/
+|}
+
+{{BookCat}}

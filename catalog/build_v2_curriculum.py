@@ -21,6 +21,7 @@ from units_3_5_intake import build_units_3_5
 from units_6_10_intake import build_units_6_10
 from units_11_15_intake import build_units_11_15
 from units_16_20_intake import build_units_16_20
+from units_21_25_intake import build_units_21_25
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -100,11 +101,11 @@ UNITS_3_30 = [
     (18, "Comparison", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
     (19, "Conditionals", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
     (20, "Motion verbs", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs"),
-    (21, "Purpose", "Further possession and purpose"),
-    (22, "Number forms", "Number declension, both, collective numerals, and fractions"),
-    (23, "Duration", "Time expressions covering when and duration"),
-    (24, "Negation", "Negation and placement of the particle не"),
-    (25, "Names and politeness", "Diminutives, proper names, and politeness"),
+    (21, "Possession", "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses"),
+    (22, "Numerals", "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions"),
+    (23, "Duration", "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period"),
+    (24, "Negation", "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не"),
+    (25, "Names", "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions"),
     (26, "Word order", "Indefinite pronouns, word order, and letter writing"),
     (27, "Participles", "Participles: types and stress"),
     (28, "Verbal adverbs", "Verbal adverbs"),
@@ -1443,14 +1444,17 @@ def build() -> dict:
     later = build_units_6_10()
     following = build_units_11_15()
     intake = build_units_16_20()
+    later_intake = build_units_21_25()
     items.extend(proposed["items"])
     items.extend(later["items"])
     items.extend(following["items"])
     items.extend(intake["items"])
+    items.extend(later_intake["items"])
     examples.extend(proposed["examples"])
     examples.extend(later["examples"])
     examples.extend(following["examples"])
     examples.extend(intake["examples"])
+    examples.extend(later_intake["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in later["units"]:
@@ -1459,10 +1463,13 @@ def build() -> dict:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in intake["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in later_intake["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
     references.extend(later["references"])
     references.extend(following["references"])
     references.extend(intake["references"])
+    references.extend(later_intake["references"])
 
     units = [
         development_unit(
@@ -1618,8 +1625,46 @@ def build() -> dict:
                 minimum_checks=max(proposed_unit["minimum_checks"], 1),
             )
         )
+    next_intake_by_number = {unit["number"]: unit for unit in later_intake["units"]}
+    next_intake_pages = {
+        21: ("259-270", "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses"),
+        22: ("271-284", "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions"),
+        23: ("285-295", "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period"),
+        24: ("296-306", "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не"),
+        25: ("307-321", "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions"),
+    }
+    next_intake_summaries = {
+        21: "Proposed Unit 21 is in development and is not prepared. Admitted agreement lines await qualified review. Reflexive object reference and purpose clauses have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        22: "Proposed Unit 22 is in development and is not prepared. Admitted compound, ordinal, and item-form rows await qualified review. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        23: "Proposed Unit 23 is in development and is not prepared. Elapsed time and duration have no admitted frozen instructional source. Hour, year, and minute rows are not duration instruction. It is not installed and the owned-edition mapping is not signed.",
+        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines and the absence form await qualified review. Object-form choice under negation, negative stand-in forms, and placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, and courtesy lines await qualified review. A general nickname-formation rule and modern address guidance have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+    }
     for number, short, title in UNITS_3_30:
-        if number <= 20:
+        if number < 21 or number > 25:
+            continue
+        proposed_unit = next_intake_by_number[number]
+        pages, topic = next_intake_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                next_intake_summaries[number],
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=max(proposed_unit["minimum_checks"], 1),
+            )
+        )
+    for number, short, title in UNITS_3_30:
+        if number <= 25:
             continue
         units.append(
             {
@@ -1647,7 +1692,7 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 21)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 26)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
         "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
@@ -1658,8 +1703,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"]],
-        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"]],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,
