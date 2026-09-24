@@ -68,9 +68,11 @@ def _relation(answer: str, shown: str, citation: str = "") -> str:
     text = f"The frozen line writes {answer} beside {shown}"
     if citation:
         text = f"{text}. {citation}"
-    elif not text.endswith((".", "?", "!")):
+    if text.endswith("?"):
+        text = f"{text} The frozen line writes"
+    elif not text.endswith("."):
         text += "."
-    if shown not in text or answer not in text:
+    if shown not in text or answer not in text or text.endswith("?"):
         raise SystemExit(f"Explanation omits the keyed relationship {shown!r} -> {answer!r}: {text!r}")
     return text
 

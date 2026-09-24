@@ -20646,8 +20646,8 @@
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes remain beside остаться. associates of connective verbs",
-        "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
+        "The frozen line writes remain beside остаться. associates of connective verbs.",
+        "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_BECAME",
@@ -20665,10 +20665,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes remain beside остаться. associates of connective verbs",
-          "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
+          "The frozen line writes remain beside остаться. associates of connective verbs.",
+          "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes became beside стать. associates of connective verbs",
+        "whyAnswerDemonstratesObjective": "The frozen line writes became beside стать. associates of connective verbs.",
         "contrastMembers": [
           "became",
           "remain",
@@ -20703,8 +20703,8 @@
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes became beside стать. associates of connective verbs",
-        "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
+        "The frozen line writes became beside стать. associates of connective verbs.",
+        "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_REMAIN",
@@ -20722,10 +20722,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes became beside стать. associates of connective verbs",
-          "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
+          "The frozen line writes became beside стать. associates of connective verbs.",
+          "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes remain beside остаться. associates of connective verbs",
+        "whyAnswerDemonstratesObjective": "The frozen line writes remain beside остаться. associates of connective verbs.",
         "contrastMembers": [
           "remain",
           "became",
@@ -20760,8 +20760,8 @@
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes became beside стать. associates of connective verbs",
-        "The frozen line writes remain beside остаться. associates of connective verbs"
+        "The frozen line writes became beside стать. associates of connective verbs.",
+        "The frozen line writes remain beside остаться. associates of connective verbs."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_TURN",
@@ -20779,10 +20779,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes became beside стать. associates of connective verbs",
-          "The frozen line writes remain beside остаться. associates of connective verbs"
+          "The frozen line writes became beside стать. associates of connective verbs.",
+          "The frozen line writes remain beside остаться. associates of connective verbs."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes turn out to be beside оказаться. associates of connective verbs",
+        "whyAnswerDemonstratesObjective": "The frozen line writes turn out to be beside оказаться. associates of connective verbs.",
         "contrastMembers": [
           "turn out to be",
           "became",
@@ -21934,14 +21934,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION",
@@ -21958,9 +21958,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -21985,14 +21985,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_AGAIN",
@@ -22009,9 +22009,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22036,14 +22036,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_CHECK",
@@ -22060,9 +22060,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22259,14 +22259,14 @@
         "The man who changed the world"
       ],
       "answer": "Which apple is mine?",
-      "feedback": "The frozen line writes Which apple is mine? beside Которое яблоко моё? Which apple is mine?",
+      "feedback": "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes Which apple is mine?",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?",
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes",
         "The frozen line writes The man who changed the world beside Человек, который изменил мир."
       ],
       "assessment": {
@@ -22285,10 +22285,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?",
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes",
           "The frozen line writes The man who changed the world beside Человек, который изменил мир."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes Which apple is mine? beside Которое яблоко моё?",
+        "whyAnswerDemonstratesObjective": "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes",
         "contrastMembers": [
           "Which apple is mine?",
           "Which book do you want?",
@@ -22324,7 +22324,7 @@
       "distractorRationales": [
         "",
         "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
-        "The frozen line writes Which apple is mine? beside Которое яблоко моё?"
+        "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes"
       ],
       "assessment": {
         "testedFeature": "RELATIVE_WOMAN",
@@ -22343,7 +22343,7 @@
         "distractorDifference": [
           "",
           "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
-          "The frozen line writes Which apple is mine? beside Которое яблоко моё?"
+          "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes"
         ],
         "whyAnswerDemonstratesObjective": "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
         "contrastMembers": [
@@ -22381,7 +22381,7 @@
       "distractorRationales": [
         "",
         "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
       ],
       "assessment": {
         "testedFeature": "RELATIVE_MAN",
@@ -22400,7 +22400,7 @@
         "distractorDifference": [
           "",
           "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
         ],
         "whyAnswerDemonstratesObjective": "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
         "contrastMembers": [
