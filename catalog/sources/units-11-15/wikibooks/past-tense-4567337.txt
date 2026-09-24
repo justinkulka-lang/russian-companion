@@ -1,0 +1,136 @@
+English has two basic past tenses: the simple past ('I walked') and the past progressive ('I was walking'). Russian has only one past, and the rules are the same for both imperfective and perfective verbs. Objects called by the verb are still in the accusative case, and indirect objects are still in the dative case.
+
+== Usage ==
+Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we want to use. As discussed in [[Russian/Verbal_Aspect|Verbal Aspect]], the imperfective aspect of verbs is used for incomplete or indefinitely repeated actions, while perfective aspects are for completed actions, or actions repeated a known number of times. These correspond roughly with the past progressive ('I was verbing') and the simple past ('I verbed'), respectively. So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал'''), as it refers to an action that ''was'' completed:
+:I was reading a book when she rang - '''Я читал книгу, когда она позвонила'''
+:I read a book, and then she rang - '''Я прочитал книгу, потом она позвонила'''
+Notice that in Russian, as in English, as well as using different past tenses, we also use different words: interruptions can use the conjunction 'when' ('''когда'''), while sequential actions can use the adverb 'then' ('''потом''').
+
+=== Imperfective past ===
+Past tense sentences where the action was unfinished ('I was reading when she interrupted me', or any 'X was/were verbing'), actions repeated indefinitely ('She wrote to me every day'), and expressions of duration ('We rode for four hours'), all require the imperfective:
+* I was reading when she rang me - '''Я читал, когда она мне позвонила''' - ''the reading is incomplete, so is imperfective. The call was successful, so it's perfective.''
+* He called me while I was writing a letter - '''Он мне позвони́л, когда́ я писа́л письмо́''' - ''the call was successful, so it's perfective. the writing was interrupted, so it's imperfective.''
+* He was walking - '''Он шёл''' - ''no mention of interruption, but incompleteness implied, so imperfective''
+* She wrote a letter to me every day - '''Она мне каждый день писала письмо''' - ''indefinitely repeated''
+* She wrote me interesting letters - '''Она писала мне интересные письма''' - ''no mention of time, but repetition is implied, so imperfective''
+* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'For a long time' is simply '''долго'''.''
+* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. 'For three hours' is simply 'three hours', no prepositions or special cases needed.''
+
+Sentences where no action was attempted ('I didn't call her'), or actions ''were'' attempted but without success ('I tried to call you (but failed)'), or which denote states ('He was cold'), ''generally'' use the imperfective tense:
+:She lived in France - '''Она жила во Франции'''
+:They didn't call me - '''Они́ мне не звони́ли'''
+:We didn't call her - '''Мы ей не звони́ли'''
+:I called you (but didn't get through) - '''Я вам звони́л'''
+To refer to states, use the [[Russian/Grammar/Dative case|dative]] for the person or thing; literally 'to me it is interesting', 'to her it is boring'. To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.
+:He was cold - '''Ему было холодно'''
+:They were bored - '''Им было скучно'''
+Notice that what these all emphasise is the ''process'', not the result.
+
+=== Perfective past ===
+Perfective verbs, on the other hand, emphasise the result. They refer to a completed action ('I rang her (and succeeded)'), to sequences of successive actions ('He did X, then Y, then Z'), and their negation refers to attempted (but failed) actions ('She didn't understand'):
+:She bought my book, read it, and then wrote me a letter - '''Она́  купи́ла мою́ кни́гу, прочита́ла её и написа́ла мне письмо́ ''' - ''sequence of actions, so all take the perfective aspect.''
+:I called you (and got through) - '''Я вам позвони́л''' - successful action, so perfective aspect taken.
+:She didn't understand/She failed to understand - '''Она́ не поняла́''' - failed action, so perfective aspect taken.
+
+Taking both of the above, you can see that negating verbs in the past tense can be done in several ways: '''не''' + perf. refers to actions attempted but failed, while '''не''' + imperfective refers to actions that were never attempted. The imperfective on its own can also ''implicitly'' refer to a failed attempt (e.g., 'I rang you', with the implication of failure).
+
+== Regular conjugation ==
+So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''. If the subject of the verb is feminine, add '''-ла'''. If it is neuter, add '''-ло''', and if it is plural, add '''-ли''':
+{| class="wikitable" style="text-align:center"
+|-
+! Masculine !! Feminine !! Neuter !! Plural
+|-
+| '''-л''' || '''-ла''' || '''-ло''' || '''-ли'''
+|}
+
+For example, the verb 'to read' is '''чита́ть''' in the imperfective and '''прочита́ть''' in the perfective. The imperfective conjugates into the past tense as follows:
+
+{| class="wikitable"
+|-
+! ''Чита́ть'' !! Masculine !! Feminine !! Neuter !! Plural
+|-
+! Present
+| Он чита́ет<br>He's reading || Она чита́ет<br>She's reading || Оно чита́ет<br>It's reading || Они чита́ют<br>They're reading
+|-
+! Past
+| Он чита́л<br>He was reading || Она чита́ла<br>She was reading || Оно чита́ло<br>It was reading || Они чита́ли<br>They were reading
+|}
+
+:You were reading a book - '''Ты читал(а) книгу''' - ''could be either masculine or feminine or, indeed, neuter''
+:You were reading a book - '''Вы читали книгу''' - '''''вы''' always takes the plural ending, even when referring to a single person''
+:I am writing a letter - '''Я письмо пишу'''
+:I was writing a letter - '''Я письмо писал(а)'''
+:I wrote a letter - '''Я письмо написал(а)'''
+
+Although verbs change by person and ignore gender in the [[Russian/Grammar/Verbs|present]] and [[Russian/Grammar/Future tense|future]] tenses, the past tense changes with gender ignore person, very similar to a [[Russian/Adjectives#Short adjectives|short-form adjective]].
+
+=== To be, быть ===
+An important perfective verb is '''быть''', 'to be'. It has no imperfective aspect, and is generally omitted in the present tense. However, it ''is'' used in the past tense, and means 'was' or 'were'. It conjugates as all regular verbs do: '''был''', '''была''', '''было''', and '''были'''.
+:He was in Moscow - '''Он был в Москве́'''
+:She is beautiful - '''Она краси́вая'''
+:She was beautiful - '''Она была́ краси́вая'''
+:When I was in New York, I saw the Empire State Building - '''Когда́ я была́ в Нью-Йо́рке, я увиде́ла Эмпа́йр-стейт-би́лдинг'''
+:The film was interesting - '''Фильм был интере́сный'''
+:The wine was good - '''Вино́ бы́ло хоро́шее'''
+:The film wasn't interesting - '''фильм не был интере́сный''' / '''фильм был неинтере́сный''' (second version is better).
+:The wine wasn't good - '''Вино́ не бы́ло хоро́шее''' / '''Вино́ бы́ло нехоро́шее''' (second version is better).
+The past tense of '''быть''' can also mean 'there was/were', replacing '''там''':
+:There are Russian books in the shop - '''Там ру́сские кни́ги в магази́не'''
+:There were Russian books in the shop - '''В магази́не бы́ли ру́сские кни́ги'''
+:There was an Englishwoman here - '''Здесь была́ англича́нка'''
+To negate this and say 'there wasn't/weren't', the phrase '''не́ было''' + ''gen'' is used:
+:There weren't any buses - '''Не́ было авто́бусов''' - ''note the genitive plural '''авто́бусов'''''
+:There was a bookshop there - '''Там был кни́жний магази́н'''
+:There wasn't a bookshop there - '''Там не́ было кни́жного магази́на'''
+Note that the stress falls on the '''не́'''.
+
+
+'''Быть''' is not the only verb 'to be' in the Russian language. In some cases it may be replaced by the imperfective verbs '''быва́ть''' ('to exist' or 'to spend some time somewhere') and '''явля́ться''' (mainly used in the present tense).
+
+=== To have, есть ===
+If you've learned the [[Russian/Grammar/Genitive case|genitive case]], recall that to say 'I have...' is '''У''' + ''gen'' + '''есть''' + ''nom'', and to say 'I haven't...' is '''У''' + ''gen'' + '''нет''' + ''gen'':
+:I have cats - '''У меня́ есть коты́'''
+:I don't have cats - '''У меня́ нет кото́в'''
+To form the past tense, 'I had...', replace '''есть''' with '''был/была́/бы́ло/бы́ли''' as appropriate. Notice that the gender and number of the verb depends on the possessed item, not the possessor, since that is the subject of the verb:
+:I had a bottle of vodka - '''У меня́ была́ буты́лка во́дки''' - '''''меня''' follows '''у''' so is genitive; '''буты́лка''' is the subject so is nominative; '''во́дки''' is genitive as it's in the bottle ('bottle ''of'' vodka').''
+:He had dollars - '''У него́ бы́ли до́ллары''' - ''note the use of '''него''' after a preposition.''
+To negate these and say 'I hadn't...', use the same construction as 'There weren't...': '''У''' + ''gen'' + '''не́ было''' + ''gen'':
+:He had no dollars - '''У него́ не́ было до́лларов'''
+:We had no dollars - '''У нас не́ было до́лларов'''
+
+=== Reflexive verbs ===
+Some verbs, such as the imperfective '''улыба́ться''' ('to smile'), have the reflexive ending '''-сь/ся''' to indicate that the object is also the subject. Instead of saying 'I dress myself', Russians say 'I dress' and place the reflexive ending on the verb. Though not always reflexive in meaning (there is no verb '''улыбать''', and 'to smile' isn't reflexive in English, but Russians still use it reflexively), the ending nonetheless must be accounted for when forming the past tense. Similar to how reflexive verbs are conjugated in the present tense, you add the appropriate reflexive ending ''after'' forming the past tense.
+
+For instance, though there is no verb '''улыбать''', that is what we get when we remove the reflexive ending from '''улыба́ться'''. We form the past tense from this, and then reattach the reflexive ending. Note that, as in the present tense, we use '''-ся''' if the word ends in a consonant, and '''-сь''' if it ends in a vowel. So, the past tense of '''улыба́ться''' is:
+
+:He was smiling - '''Он улыба́лся'''
+:She was smiling - '''Она улыба́лась'''
+:It was smiling - '''Оно улыба́лось'''
+:They were smiling - '''Они улыба́лись'''
+
+The reflexive imperfective verb '''учи́ться''' ('to study') conjugates as follows:
+:He was studying - '''Он учи́лся'''
+:She was studying - '''Она учи́лась'''
+:It was studying - '''Оно учи́лось'''
+:They were studying - '''Они учи́лись'''
+
+== Irregular conjugation ==
+Not all verbs end in '''-ть'''. Some, such as '''идти''' ('to walk') and '''мочь''' ('to be able'), have irregular past tenses that cannot be predicted.<br>
+To walk, '''идти''':
+:He walked - '''Он шёл'''
+:She walked - '''Она шла'''
+:It walked - '''Оно шло'''
+:They walked - '''Они шли'''
+To be able, '''мочь''':
+:He was able - '''Он мог'''
+:She was able - '''Она могла́'''
+:It was able - '''Оно могло́'''
+:They were able - '''Они могли́'''
+
+== Participles ==
+Though participles are covered more thoroughly in their own chapter, a brief summary is included here:
+*The ''past active'' participle is formed by replacing '''-ть''' with '''-(в)ший''', usually on a perfective verb. It tells us that the noun did something in the past, such as 'The man who drove'. 'Who drove' is the past active participle, and would be a single adjective in Russian: 'Мужчина поехавший'.
+*The ''past passive'' participle is formed by replacing '''-ть''' with '''-нный''', '''ённый''', or '''-тый''', on perfective verbs only. It tells us that the noun had something done to it in the past, such as 'The apple that was carried'. 'That was carried' is the past passive participle, and would be a single adjective in Russian: 'Перенесённое яблоко'
+*The ''past adverbial participle'' is formed replacing '''-ть''' with '''-в''', '''-ши''', or '''-вши''', usually on a perfective verb. It acts as a secondary verb, such as in 'Having gathered the apples, the man tripped over'. 'Having gathered' is the past adverbial participle.
+{{Russian}}
+{{BookCat}}

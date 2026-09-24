@@ -95,11 +95,11 @@ class UnitReviewPipelineTest {
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            (1..10).forEach { number ->
+            (1..15).forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
             }
         }
-        (1..10).forEach { number ->
+        (1..15).forEach { number ->
             val dir = File(repo(), "review/unit-$number")
             val committed = reviewFileNames(number).associateWith { name -> File(dir, name).readText() }
             val errors = validateUnitReviewFiles(pack, number, committed)

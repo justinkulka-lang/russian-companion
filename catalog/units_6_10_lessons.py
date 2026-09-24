@@ -23,7 +23,7 @@ _PAGE_FILE = {
     "genitive": "genitive-4567338.txt",
     "numbers": "numbers-4371358.txt",
 }
-_LEMMA = re.compile(r"^(nouns|adjectives|others)\.csv:(.+)#([A-Za-z0-9_]+)$")
+_LEMMA = re.compile(r"^(nouns|adjectives|others|verbs)\.csv:(.+)#([A-Za-z0-9_]+)$")
 _NUMBER_CUE = re.compile(r"[0-9][0-9,~/.\-]*")
 _ENGLISH_CUE = re.compile(r"(?i)which admitted\b.{0,80}\brecorded for\b")
 _LATIN_LOOKALIKE = {"e": "е", "y": "у", "a": "а", "o": "о", "p": "р", "c": "с", "x": "х"}

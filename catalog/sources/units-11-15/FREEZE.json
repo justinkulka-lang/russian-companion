@@ -1,0 +1,279 @@
+{
+  "retrieved": "2026-09-23",
+  "openrussian": {
+    "repository": "https://github.com/Badestrand/russian-dictionary",
+    "commit": "50e210c4803237779cb562bc1abcea529066031c",
+    "commitDate": "2021-08-09T10:43:51Z",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseFile": "../units-3-5/openrussian/LICENSE",
+    "licenseSha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "files": {
+      "nouns.csv": {
+        "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9",
+        "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+        "path": "../units-3-5/openrussian/nouns.csv"
+      },
+      "verbs.csv": {
+        "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a",
+        "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "path": "../units-3-5/openrussian/verbs.csv"
+      },
+      "adjectives.csv": {
+        "gitBlob": "09986b701d1b232abb50db96c30b81ceab1c6526",
+        "sha256": "89ab5d10dcd2f21f6b485de704aef372f32251468e3aa96f18b21e259f26b80a",
+        "url": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv",
+        "path": "../units-6-10/openrussian/adjectives.csv"
+      }
+    },
+    "rows": [
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:чита'ть",
+        "bare": "читать",
+        "accented": "чита'ть",
+        "line": "читать\tчита'ть\tread\tlesen\timperfective\tпрочитать;почитать;прочесть\tчита'й\tчита'йте\tчита'л\tчита'ла\tчита'ло\tчита'ли\tчита'ю\tчита'ешь\tчита'ет\tчита'ем\tчита'ете\tчита'ют",
+        "sha256": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:быть",
+        "bare": "быть",
+        "accented": "быть",
+        "line": "быть\tбыть\tbe\tsein, werden\timperfective\t\tбу'дь\tбу'дьте\tбы'л\tбыла'\tбы'ло\tбы'ли\tесть\tесть\tесть\tесть\tесть\tесть",
+        "sha256": "072709cafd3335ed366ecef3494adb9ad712c091a3adbeae1963281b7a6d1724"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:улыба'ться",
+        "bare": "улыбаться",
+        "accented": "улыба'ться",
+        "line": "улыбаться\tулыба'ться\tsmile\tlächeln\timperfective\tулыбнуться\tулыба'йся\tулыба'йтесь\tулыба'лся\tулыба'лась\tулыба'лось\tулыба'лись\tулыба'юсь\tулыба'ешься\tулыба'ется\tулыба'емся\tулыба'етесь\tулыба'ются",
+        "sha256": "cd068e3832a8bc1a80485aaf4a85a8a42ffb468ab8624bfb6cd113523fd9647a"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:учи'ться",
+        "bare": "учиться",
+        "accented": "учи'ться",
+        "line": "учиться\tучи'ться\tlearn, study, be an apprentice\terlernen, lernen; studieren\timperfective\tвыучиться;научиться\tучи'сь\tучи'тесь\tучи'лся\tучи'лась\tучи'лось\tучи'лись\tучу'сь\tу'чишься\tу'чится\tу'чимся\tу'читесь\tу'чатся",
+        "sha256": "ddf447e9987fa05a47ad58a81ae43d8d5f79817b0729bf449984d31af3da0dfe"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:сказа'ть",
+        "bare": "сказать",
+        "accented": "сказа'ть",
+        "line": "сказать\tсказа'ть\tsay, tell, speak, talk\tsagen, mitteilen\tperfective\tговорить\tскажи'\tскажи'те\tсказа'л\tсказа'ла\tсказа'ло\tсказа'ли\tскажу'\tска'жешь\tска'жет\tска'жем\tска'жете\tска'жут",
+        "sha256": "f8904ee1a3b22f70ec8f1fad560e1ddba8e99c6f095f6eb2e5d696d5a6c0ee78"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:де'лать",
+        "bare": "делать",
+        "accented": "де'лать",
+        "line": "делать\tде'лать\tmake, do\tmachen, erledigen; tun; anfertigen, herstellen\timperfective\tсделать;поделать\tде'лай\tде'лайте\tде'лал\tде'лала\tде'лало\tде'лали\tде'лаю\tде'лаешь\tде'лает\tде'лаем\tде'лаете\tде'лают",
+        "sha256": "14e204ce2f664f2732fee08193d113d914d6de216bc64f127c79fbd7f1085b6a"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:сде'лать",
+        "bare": "сделать",
+        "accented": "сде'лать",
+        "line": "сделать\tсде'лать\tmake; do\tmachen, erledigen; tun; anfertigen, herstellen\tperfective\tделать\tсде'лай\tсде'лайте\tсде'лал\tсде'лала\tсде'лало\tсде'лали\tсде'лаю\tсде'лаешь\tсде'лает\tсде'лаем\tсде'лаете\tсде'лают",
+        "sha256": "5712154e7010ec5913efd2179f446bf25bb2c3e6436f1f9d1df344232127e6f6"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:писа'ть",
+        "bare": "писать",
+        "accented": "писа'ть",
+        "line": "писать\tписа'ть\twrite; paint\tschreiben, malen\timperfective\tнаписать\tпиши'\tпиши'те\tписа'л\tписа'ла\tписа'ло\tписа'ли\tпишу'\tпи'шешь\tпи'шет\tпи'шем\tпи'шете\tпи'шут",
+        "sha256": "b6f6315b5fa2ac1b5e7dbd88d143ac26462ff2e238799fae7229d6e91a0cc861"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:написа'ть",
+        "bare": "написать",
+        "accented": "написа'ть",
+        "line": "написать\tнаписа'ть\twrite; paint\tschreiben; malen\tperfective\tписать\tнапиши'\tнапиши'те\tнаписа'л\tнаписа'ла\tнаписа'ло\tнаписа'ли\tнапишу'\tнапи'шешь\tнапи'шет\tнапи'шем\tнапи'шете\tнапи'шут",
+        "sha256": "4977dcbda703402a1f5b374f345c4f1292221e96b89dc7fb42bc3344f8e33179"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:рабо'тать",
+        "bare": "работать",
+        "accented": "рабо'тать",
+        "line": "работать\tрабо'тать\twork, operate\tarbeiten, berufstätig sein, sein, tätig sein, geöffnet sein; funktionieren, in Betrieb sein, gehen, laufen\timperfective\tпоработать;сработать\tрабо'тай\tрабо'тайте\tрабо'тал\tрабо'тала\tрабо'тало\tрабо'тали\tрабо'таю\tрабо'таешь\tрабо'тает\tрабо'таем\tрабо'таете\tрабо'тают",
+        "sha256": "b8d975eb8d78e19b3fece108b60ab916d3e29d08a886c27f2608c6bb9e7de8db"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:дать",
+        "bare": "дать",
+        "accented": "дать",
+        "line": "дать\tдать\tgive\tgeben\tperfective\tдавать\tда'й\tда'йте\tда'л\tдала'\tда'ло,дало'\tда'ли\tда'м\tда'шь\tда'ст\tдади'м\tдади'те\tдаду'т",
+        "sha256": "47f9b0a431742faf70ad6d3020fa9630b9b878163210a473152f21c1f9c39413"
+      },
+      {
+        "file": "verbs.csv",
+        "recordId": "verbs.csv:прочита'ть",
+        "bare": "прочитать",
+        "accented": "прочита'ть",
+        "line": "прочитать\tпрочита'ть\tread, spend reading\tlesen\tperfective\tчитать\tпрочита'й\tпрочита'йте\tпрочита'л\tпрочита'ла\tпрочита'ло\tпрочита'ли\tпрочита'ю\tпрочита'ешь\tпрочита'ет\tпрочита'ем\tпрочита'ете\tпрочита'ют",
+        "sha256": "9e4227810e9d586fdd7dd915d01fb9d9523b403ee78d21308142a19c9cfc5686"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:кни'га",
+        "bare": "книга",
+        "accented": "кни'га",
+        "line": "книга\tкни'га\tbook, volume\tBuch\tf\t\t0\t0\t0\t0\tкни'га\tкни'ги\tкни'ге\tкни'гу\tкни'гой,     кни'гою\tкни'ге\tкни'ги\tкни'г\tкни'гам\tкни'ги\tкни'гами\tкни'гах",
+        "sha256": "922375113b16b2fe4d5851dd01f8239ee1bc9e17c07d7eee05ede3d8e9158e38"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:стол",
+        "bare": "стол",
+        "accented": "стол",
+        "line": "стол\tстол\ttable, desk, board; diet, cooking, cuisine; department, section\tTisch, Tafel; Essen, Kost; Büro, Abteilung\tm\t\t0\t0\t0\t0\tсто'л\tстола'\tстолу'\tсто'л\tстоло'м\tстоле'\tстолы'\tстоло'в\tстола'м\tстолы'\tстола'ми\tстола'х",
+        "sha256": "eb7b12cf08326c5ad56e52053715597e41354653484d9db163332015cce599fd"
+      },
+      {
+        "file": "nouns.csv",
+        "recordId": "nouns.csv:дом",
+        "bare": "дом",
+        "accented": "дом",
+        "line": "дом\tдом\thouse, home, house-hold\tHaus, Gebäude, Zuhause, Heim\tm\t\t0\t0\t0\t0\tдо'м\tдо'ма\tдо'му\tдо'м\tдо'мом\tдо'ме\tдома'\tдомо'в\tдома'м\tдома'\tдома'ми\tдома'х",
+        "sha256": "edb0e2a2bf4898a1be25db0c841054a54637ad18177f3bd72ee3c5bb2b6ec402"
+      },
+      {
+        "file": "adjectives.csv",
+        "recordId": "adjectives.csv:хоро'ший",
+        "bare": "хороший",
+        "accented": "хоро'ший",
+        "line": "хороший\tхоро'ший\tgood, beautiful, handsome\tgut, schön\tлу'чше\tлу'чший;наилу'чший\tхоро'ш\tхороша'\tхорошо'\tхороши'\tхоро'ший\tхоро'шего\tхоро'шему\tхоро'шего,хоро'ший\tхоро'шим\tхоро'шем\tхоро'шая\tхоро'шей\tхоро'шей\tхоро'шую\tхоро'шей,хоро'шею\tхоро'шей\tхоро'шее\tхоро'шего\tхоро'шему\tхоро'шее\tхоро'шим\tхоро'шем\tхоро'шие\tхоро'ших\tхоро'шим\tхоро'ших,хоро'шие\tхоро'шими\tхоро'ших",
+        "sha256": "63714f12dd0ca559bd3d521de8b15605e74a8141ceea64d56642c58ce51b6d59"
+      }
+    ]
+  },
+  "wikibooks": {
+    "pages": [
+      {
+        "key": "past",
+        "title": "Russian/Grammar/Past_tense",
+        "oldid": "4567337",
+        "file": "wikibooks/past-tense-4567337.txt",
+        "sha256": "4550574588e023a84084d9deea9b35f35fac82d64cef00d599dc0a059e48b9f3",
+        "revisionFile": "wikibooks/past-tense-4567337.revision.json",
+        "mediawikiSha1": "35f3a03fb4e99fb64a83599016a4cd28875979ed",
+        "parentid": 4230837,
+        "timestamp": "2025-10-12T01:12:35Z",
+        "size": 14047
+      },
+      {
+        "key": "future",
+        "title": "Russian/Grammar/Future_tense",
+        "oldid": "3353822",
+        "file": "wikibooks/future-tense-3353822.txt",
+        "sha256": "1a1d31ff818472a2e0801d5c0a39f52afdef1d4ee9648b5a7b8f358621e6dfb7",
+        "revisionFile": "wikibooks/future-tense-3353822.revision.json",
+        "mediawikiSha1": "493893ea25e1b0227af246d6aadb30430a72a4b7",
+        "parentid": 2535543,
+        "timestamp": "2017-12-25T05:52:58Z",
+        "size": 7409
+      },
+      {
+        "key": "dative",
+        "title": "Russian/Grammar/Dative_case",
+        "oldid": "4289617",
+        "file": "wikibooks/dative-case-4289617.txt",
+        "sha256": "550fc940fb1be400513775075b4bf04149facb04ca6b16dcba42bef92ddf6cd3",
+        "revisionFile": "wikibooks/dative-case-4289617.revision.json",
+        "mediawikiSha1": "e905d912fb90e81f11ca21365278b25d8698b3cd",
+        "parentid": 4219350,
+        "timestamp": "2023-05-18T07:52:39Z",
+        "size": 10954
+      },
+      {
+        "key": "aspect",
+        "title": "Russian/Verbal_Aspect",
+        "oldid": "4059032",
+        "file": "wikibooks/verbal-aspect-4059032.txt",
+        "sha256": "0702bb0213b24bb48f1bbbfb4b1aa7fb76cf90fd520fe4bababb4d87db96e24e",
+        "revisionFile": "wikibooks/verbal-aspect-4059032.revision.json",
+        "mediawikiSha1": "06af79f1d11d6be1c34c97ac04d992cf743a5ce2",
+        "parentid": 3353857,
+        "timestamp": "2022-05-17T05:05:36Z",
+        "size": 8418
+      },
+      {
+        "key": "verbs",
+        "title": "Russian/Grammar/Verbs",
+        "oldid": "4233876",
+        "file": "../units-3-5/wikibooks/verbs-4233876.txt",
+        "sha256": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
+        "revisionFile": "../units-3-5/wikibooks/verbs-4233876.revision.json",
+        "mediawikiSha1": "ead519a34f238de6a6bdd8c2473f719edc1e2105",
+        "parentid": 4219484,
+        "timestamp": "2023-01-31T14:28:09Z",
+        "size": 13603,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "prepositional",
+        "title": "Russian/Grammar/Prepositional_case",
+        "oldid": "4567336",
+        "file": "../units-3-5/wikibooks/prepositional-4567336.txt",
+        "sha256": "efe46e6ed2de1d14ab9823467ecdd889b150e108aec5db1fd42f6416159cec35",
+        "revisionFile": "../units-3-5/wikibooks/prepositional-4567336.revision.json",
+        "mediawikiSha1": "a21668281bc34ff6a4139953875a9cb29c07b2c4",
+        "parentid": 4356336,
+        "timestamp": "2025-10-12T01:12:00Z",
+        "size": 11110,
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "adjectives",
+        "title": "Russian/Grammar/Adjectives",
+        "oldid": "4292379",
+        "file": "../units-6-10/wikibooks/adjectives-4292379.txt",
+        "sha256": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998",
+        "revisionFile": "../units-6-10/wikibooks/adjectives-4292379.revision.json",
+        "mediawikiSha1": "5ad476f41a604940c12203b534630be18c87102d",
+        "parentid": 4292372,
+        "timestamp": "2023-05-22T12:02:38Z",
+        "size": 19203,
+        "reusedFrom": "units-6-10"
+      },
+      {
+        "key": "accusative",
+        "title": "Russian/Grammar/Accusative_case",
+        "oldid": "4330404",
+        "file": "../units-6-10/wikibooks/accusative-4330404.txt",
+        "sha256": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+        "revisionFile": "../units-6-10/wikibooks/accusative-4330404.revision.json",
+        "mediawikiSha1": "d1ade98a0d1f565b3f16fd14714be7e7cc23a181",
+        "parentid": 4313380,
+        "timestamp": "2023-10-11T11:05:39Z",
+        "size": 15454,
+        "reusedFrom": "units-6-10"
+      },
+      {
+        "key": "copyrights",
+        "title": "Wikibooks:Copyrights",
+        "oldid": "4622060",
+        "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "revisionFile": "../units-3-5/wikibooks/copyrights-4622060.revision.json",
+        "mediawikiSha1": "dbf362ec2b5eb1d35827938654d19c5b69280e5b",
+        "parentid": 4534940,
+        "timestamp": "2026-03-09T17:30:11Z",
+        "size": 10475,
+        "reusedFrom": "units-3-5"
+      }
+    ]
+  }
+}

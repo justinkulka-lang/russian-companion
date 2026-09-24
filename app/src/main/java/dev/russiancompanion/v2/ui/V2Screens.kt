@@ -310,11 +310,11 @@ internal fun V2UnitScreen(
         if (readiness.isNotEmpty()) {
             Text(readiness, modifier = Modifier.semantics { testTag = "v2-readiness" })
         }
+        if (unit.number in 11..15 && unit.mappingStatus == "PENDING_CURRICULUM_REVIEWER") {
+            Text(unit.mappingNote, modifier = Modifier.semantics { testTag = "v2-mapping-pending" })
+        }
         if (state == V2UnitState.NOT_YET_INSTALLED) {
             Text("This unit is on the map so you can see the Penguin sequence. It has no lesson content, audio, or completion path.")
-            if (unit.number in 11..15) {
-                Text(unit.mappingNote, modifier = Modifier.semantics { testTag = "v2-mapping-gap" })
-            }
             return@V2Scaffold
         }
         if (state == V2UnitState.LOCKED) {

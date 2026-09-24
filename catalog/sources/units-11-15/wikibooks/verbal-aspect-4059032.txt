@@ -1,0 +1,58 @@
+
+
+==Introduction to Aspect==
+For most native speakers of English (and indeed of many other languages) one of the most difficult tasks in learning Russian is learning to cope with the complexity of Russian verbs.  Unlike, say, Spanish and German, where the great difficulty lies in memorizing the many forms of verbs (much more than the Russian system), the difficulty in Russian is in coming to understand a property inherent to each verb: aspect.
+
+All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of an aspectual pair, one word is the imperfective aspect of that verb, and the other is the perfective aspect. Very roughly, the imperfective aspect is used when the action is incomplete, or when the focus is in the process of the action, while the perfective aspect is used either when the action ''is'' complete or the focus is in the completion of the action or its outcome.
+Rather than expound more theory here, we shall proceed by considering an example. Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать'''). Consider these example sentences that use ''imperfective'' aspects:
+
+:Misha, what were you doing after lunch? - '''Мишa, что ты ''де́лал'' после обеда?'''
+:I was talking to Katya - '''Я ''говори́л'' с Катей'''
+
+Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written the concern is not with whether the action is complete, but simply what was happening.  The first speaker wondered what Misha was doing after lunch.  The first speaker could be Misha's boss, wondering why he was not at his desk. Now, let's consider the same sentences with ''perfective'' aspects:
+
+:Misha, what did you do after lunch? - '''Миша, что ты ''сде́лал'' после обеда?'''
+:I told my mother about my grades - '''Я ''сказа́л'' мое́й маме об отметках'''
+
+In this example, it's the outcome of the action that is of importance.  The first speaker could be Misha's father, wondering why his mother was so upset when he arrived home from work.
+
+== Forming aspectual pairs ==
+So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect. For example, 'to speak' is both '''говорить''' (imperfective) and '''сказать''' (perfective). Can we predict the form of one aspect if we know the other? Does every verb even have a pair of aspects?  Almost always, the answer is a definite 'yes'; take, for instance, '''делать/сделать''' both mean 'to do' or 'to make', and the latter is clearly the former with a prefix - most perfective verbs are simply their imperfective counterpart with a prefix.
+
+=== Prefixes and the perfectives ===
+Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a prefix. For instance, '''написать''' is the perfective of '''писать''' ('to write'), '''посмотреть''' is the perfective of '''смотреть''' ('to watch'), and we've already seen the imperfective '''делать''' and the perfective '''сделать''' ('to do'). For such verbs, the aspectual pair will often be given in dictionaries as a prefix indicated in parentheses: '''(с)делать, (по)смотреть, (на)писать''', etc. Such pairs of aspects are easy to learn, as the perfective also conjugates the same as the imperfective, only with a prefix.
+
+However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be applied to an imperfective to make a whole new verbal pair. For instance, we can add the prefix '''от''' to the imperfective '''говорить''' to make the new perfective '''отговорить''', meaning 'to dissuade'. From this, we can derive a new imperfective aspect, '''отговаривать'''. Another aspectual pair we can derive from '''говорить''' is '''договариваться''' (impf.) and '''договориться''' (perf.), meaning "to agree". So we have three pairs derived using prefixes:
+: '''говорить''' (impf.) and '''сказать''' (pf.)
+: '''отговаривать''' (impf.) and '''отговорить''' (pf.)
+: '''договариваться''' (impf.) and '''договориться''' (pf.)
+In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefix'. The prefix itself is largely unpredictable (the most common is '''по-''', and others are '''про-''', '''на-''', '''за-''', etc), not all verbs form their perfective aspect with a prefix, and some prefixes can create whole new verbs.
+
+=== Other ways to predict aspect ===
+Is there any other way to predict whether a new word is perfective or imperfective? Yes: if it contains '''-ыва-''', it is almost certainly ''imperfective'', and the corresponding perfective is the same word without the '''-ыв-'''.
+: '''опаздывать''' (impf.) and '''опоздать''' (pf.) - 'to be late'
+: '''рассказывать''' (impf.) and '''рассказать''' (pf.) - 'to tell, recount'
+As ever, exceptions are plentiful, such as '''покупать''' (impf.) and '''купить''' (pf.) - 'to buy'.
+
+=== Multi-aspect verbs ===
+Rarely, some verbs have more than two aspects; for example, '''читать''', '''прочитать''', and '''почитать''' all mean 'to read'.  The first is the standard imperfective, and means simply 'to read'. The second verb shown, '''прочитать''', is the standard perfective aspectual partner of '''читать''', but also more specifically means, 'to read an entire work'.  The last verb, '''почитать''', is also perfective, and so also describes a complete action. However, its more specific meaning is, 'to read for some period of time' or 'to read for a while'. Fortunately, these are rare, and only really occur in verbs of motion.
+
+=== Unpredictable pairs ===
+Some verbs have unpredictable pairs of aspects, such as:
+:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
+:'''брать''' (impf.) and '''взять''' (pf.) - 'to take, get, obtain'
+
+Finally, there are a few verbs that do not have an aspectual partner, such as '''быть''' (pf., 'to be').
+
+==Why must I endure this?==
+In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.  Perfective verbs carry the meaning of complete action, while imperfective verbs carry the meaning of a process or state.  When choosing a verb to utter, it is important to choose a verb of the proper aspect.  
+
+Beyond the semantic difference, there is a formal difference that you will see when studying verb conjugation and tense formation.  Namely, while perfective and imperfective verbs can appear in the past or in the future, only imperfective verbs can appear in the present tense.  What happens if you try to make a present-tense form of a perfective verb?  You get a perfective verb with future meaning.  Imperfective verbs are put into the future tense by another mechanism (in fact, by a mechanism much more like that used in English -- namely, the use of a helping verb).  This may seem like a rather odd way to handle things, and perhaps it is.  In any case, Russians don't seem to mind.  The reason, for those of us who like to believe there are reasons for these things, is that a complete action cannot occur "now".  At the instant we call "now", a complete action must either have already been completed, or remain to be completed.  "Now" can only point to the process of an action.
+
+==In conclusion==
+Verbal aspect is a very important feature of Russian, and should be considered (consciously or otherwise) whenever a Russian verb is encountered or is to be rendered.  If you consider aspect each time you encounter a verb, it won't take long to get a good feel for aspect.  As for producing Russian in writing or in speech, this is one more thing to think about before you open the gates.
+
+:See also: the [[w:Grammatical_aspect#Aspect in Slavic languages|Wikipedia article about grammatical aspect]]
+
+{{BookCat}}
+{{Russian}}

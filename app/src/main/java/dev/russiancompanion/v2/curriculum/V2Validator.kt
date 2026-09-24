@@ -786,8 +786,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..10) {
-            errors += "Only Units 1-10 may be development content in this pack"
+        if (unit.number !in 1..15) {
+            errors += "Only Units 1-15 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -795,7 +795,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number in 6..10) validateGovernedChecks(pack, unit, errors)
+        if (unit.number in 6..15) validateGovernedChecks(pack, unit, errors)
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -807,7 +807,7 @@ internal object V2Validator {
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     )
-    private val LEMMA_RECORD = Regex("^(nouns|adjectives|others)\\.csv:(.+)#([A-Za-z0-9_]+)$")
+    private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
     private val WIKIBOOKS_SOURCE = "src-wikibooks-russian-cc-by-sa"
     private val TOKEN = Regex("[0-9]+|[a-z\\u0430-\\u044f]+")
@@ -1304,7 +1304,7 @@ internal object V2Validator {
                     }
                 }
             }
-            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..10) {
+            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..15) {
                 errors += structureValid(pack, item)
             }
         }
@@ -1334,7 +1334,7 @@ internal object V2Validator {
             errors += "Example ${example.id} objective is missing"
         }
         val unitNumber = pack.units.firstOrNull { unit -> unit.objectives.any { it.id == example.objectiveId } }?.number
-        if (unitNumber in 6..10 && example.display.none { it.code in 0x0400..0x04FF }) {
+        if (unitNumber in 6..15 && example.display.none { it.code in 0x0400..0x04FF }) {
             errors += "Example ${example.id} stores English instructional prose as a Russian example"
         }
     }
@@ -1600,8 +1600,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..10) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-10 source intake"
+            if (record.unitNumber !in 3..15) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-15 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -1684,8 +1684,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..10) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-10 source intake"
+            if (record.unitNumber !in 3..15) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-15 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
