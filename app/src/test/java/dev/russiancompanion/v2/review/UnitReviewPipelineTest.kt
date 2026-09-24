@@ -330,6 +330,16 @@ class UnitReviewPipelineTest {
             assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
         }
         assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 10).isNotEmpty())
+        (11..15).forEach { number ->
+            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
+            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
+            assertFalse(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
+            assertTrue(
+                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
+                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
+            )
+            assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isNotEmpty())
+        }
     }
 
     private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {
