@@ -295,6 +295,87 @@ class Units1115InstructionalValidityTest {
     }
 
     @Test
+    fun learnerFacingReferenceDoesNotClaimUnpreparedUnitsHaveLessonBodies() {
+        val pack = pack()
+        val unprepared = pack.units.filter { unit ->
+            unit.readiness == "NOT_PREPARED" || unit.installState == "NOT_YET_INSTALLED"
+        }.map { it.number }.toSet()
+        assertTrue(unprepared.contains(7))
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        val falseClaim = "Units 1 through 15 contain proposed lesson bodies that still need qualified review."
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(7))
+        val reference = pack.references.first { it.id == "ref-book-topics" }
+        assertEquals(
+            "Some units contain proposed lesson bodies that still require qualified review.",
+            reference.summary,
+        )
+        assertEquals(
+            "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
+            reference.detail,
+        )
+        val text = "${reference.title}. ${reference.summary}. ${reference.detail}"
+        text.split(Regex("(?<=[.!?])\\s+")).forEach { sentence ->
+            val overlap = claimedPreparedUnits(sentence).intersect(unprepared)
+            assertTrue("${reference.id} claims an unprepared unit has a lesson body in $overlap: $sentence", overlap.isEmpty())
+        }
+    }
+
+    @Test
+    fun responseOptionsMustShareTheDeclaredKind() {
+        val pack = pack()
+        val pluralFuture = pack.items.first { it.id == "u12-i-future-imp-2" }
+        assertEquals("Вы бу́дете говори́ть", pluralFuture.answer)
+        assertEquals("RUSSIAN_CLAUSE", pluralFuture.assessment!!.responseKind)
+        assertFalse(pluralFuture.options.contains("бу́дешь"))
+        assertTrue(pluralFuture.options.contains("Я бу́ду говори́ть"))
+        assertTrue(pluralFuture.options.all { V2Validator.structuralResponseKind(it) == "RUSSIAN_CLAUSE" })
+        assertTrue(V2Validator.featureValid(pack, pluralFuture))
+        val bareAuxiliary = pluralFuture.copy(
+            options = listOf(pluralFuture.answer, "бу́дешь"),
+            assessment = pluralFuture.assessment.copy(contrastMembers = listOf(pluralFuture.answer, "бу́дешь")),
+        )
+        assertEquals("RUSSIAN_TOKEN", V2Validator.structuralResponseKind("бу́дешь"))
+        assertFalse(V2Validator.featureValid(replace(pack, bareAuxiliary), bareAuxiliary))
+        assertTrue(errorsFor(pack, bareAuxiliary).any { it.contains("response type") })
+
+        val woman = pack.items.first { it.id == "u14-i-impersonal-2" }
+        assertEquals("ей было холодно", woman.answer)
+        assertEquals("RUSSIAN_CLAUSE", woman.assessment!!.responseKind)
+        assertFalse(woman.options.contains("было"))
+        assertTrue(woman.options.contains("Ему было холодно"))
+        assertTrue(V2Validator.featureValid(pack, woman))
+        val component = woman.copy(
+            options = listOf(woman.answer, "было"),
+            assessment = woman.assessment.copy(contrastMembers = listOf(woman.answer, "было")),
+        )
+        assertEquals("RUSSIAN_TOKEN", V2Validator.structuralResponseKind("было"))
+        assertFalse(V2Validator.featureValid(replace(pack, component), component))
+        assertTrue(errorsFor(pack, component).any { it.contains("response type") })
+
+        val unequal = pack.items.first { it.id == "u13-i-tense-keep-1" }
+        assertEquals("RUSSIAN_CLAUSE", unequal.assessment!!.responseKind)
+        val lengths = unequal.options.map { V2Validator.structuralResponseKind(it) to it.split(Regex("\\s+")).size }
+        assertTrue(lengths.all { it.first == "RUSSIAN_CLAUSE" })
+        assertTrue(lengths.map { it.second }.distinct().size > 1)
+        assertTrue(V2Validator.featureValid(pack, unequal))
+    }
+
+    private fun claimedPreparedUnits(sentence: String): Set<Int> {
+        if (Regex("(?i)not prepared|not yet installed|do not contain|does not contain").containsMatchIn(sentence)) {
+            return emptySet()
+        }
+        if (!Regex("(?i)lesson bod").containsMatchIn(sentence)) return emptySet()
+        if (!Regex("(?i)contain|prepared|packaged").containsMatchIn(sentence)) return emptySet()
+        val claimed = mutableSetOf<Int>()
+        Regex("(?i)units\\s+(\\d+)\\s*(?:–|-|through|to)\\s*(\\d+)").findAll(sentence).forEach { match ->
+            val start = match.groupValues[1].toInt()
+            val end = match.groupValues[2].toInt()
+            claimed += (minOf(start, end)..maxOf(start, end)).toSet()
+        }
+        return claimed
+    }
+
+    @Test
     fun everyAdvancementCheckNamesOneExplicitTarget() {
         val pack = pack()
         val validation = V2Validator.validate(pack)

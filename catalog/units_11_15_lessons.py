@@ -4,10 +4,19 @@ Relationships are recomputed from complete frozen-source identity. This module
 does not conjugate, decline, or compose new Russian.
 """
 
+import re
+from itertools import combinations
+
+from units_3_5_intake import CYRILLIC
 from units_6_10_lessons import _check, _other
 
 O = "src-openrussian-50e210c4"
 W = "src-wikibooks-russian-cc-by-sa"
+_TOKEN = re.compile(r"[0-9]+|[a-zа-я]+")
+_CLAUSE_START = {
+    "он", "она", "оно", "они", "я", "ты", "вы", "мы",
+    "ему", "ей", "им", "мне", "тебе", "вам", "нам", "когда",
+}
 
 
 def _wiki(page, needle, ru, en):
@@ -16,6 +25,40 @@ def _wiki(page, needle, ru, en):
 
 def _field(record, name):
     return ("field", record, name)
+
+
+def _fold_tokens(text: str) -> list[str]:
+    folded = text.replace("\u0301", "").replace("ё", "е").replace("Ё", "е").lower()
+    return _TOKEN.findall(folded)
+
+
+def _response_kind(text: str) -> str:
+    """Structural option shape. This is not a linguistic classification."""
+    if not CYRILLIC.search(text):
+        return "ENGLISH_CLASSIFICATION"
+    tokens = _fold_tokens(text)
+    if len(tokens) <= 1:
+        return "RUSSIAN_TOKEN"
+    if "," in text or ";" in text or tokens[0] in _CLAUSE_START:
+        return "RUSSIAN_CLAUSE"
+    return "RUSSIAN_PHRASE"
+
+
+def _contained(small: list[str], big: list[str]) -> bool:
+    if not small or len(small) >= len(big):
+        return False
+    width = len(small)
+    return any(big[index:index + width] == small for index in range(len(big) - width + 1))
+
+
+def _shared_response_kind(options: list[str]) -> str:
+    kinds = {_response_kind(option) for option in options}
+    if len(kinds) != 1:
+        raise SystemExit(f"response options do not share a response kind: {options} -> {sorted(kinds)}")
+    for left, right in combinations(options, 2):
+        if _contained(_fold_tokens(left), _fold_tokens(right)) or _contained(_fold_tokens(right), _fold_tokens(left)):
+            raise SystemExit(f"response option is a component of another option: {left!r} / {right!r}")
+    return kinds.pop()
 
 
 def _target(prompt, shown, answer, wrongs, source=W, feature="TARGET", phrase=""):
@@ -31,6 +74,7 @@ def _target(prompt, shown, answer, wrongs, source=W, feature="TARGET", phrase=""
         source,
         feature=feature,
         why=why,
+        response_kind=_shared_response_kind([answer, *wrongs]),
     )
 
 
@@ -170,11 +214,10 @@ def _unit_12(lesson) -> None:
         [
             _target("Which admitted line is the first-person plural future?", "We will be speaking", "Мы бу́дем говори́ть", ["Я бу́ду говори́ть"], W, "FIRST_PERSON_PLURAL_FUTURE", "first-person plural future"),
             _target("Which admitted line is the first-person singular future?", "I will be speaking", "Я бу́ду говори́ть", ["Мы бу́дем говори́ть"], W, "FIRST_PERSON_SINGULAR_FUTURE", "first-person singular future"),
-            _target("Which admitted line is the second-person plural future?", "Ты бу́дешь говори́ть", "Вы бу́дете говори́ть", ["бу́дешь"], W, "SECOND_PERSON_PLURAL_FUTURE", "second-person plural future"),
+            _target("Which admitted line is the second-person plural future?", "Ты бу́дешь говори́ть", "Вы бу́дете говори́ть", ["Я бу́ду говори́ть"], W, "SECOND_PERSON_PLURAL_FUTURE", "second-person plural future"),
         ],
         extra=[
             (future, "Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking", "Вы бу́дете говори́ть", "example"),
-            (future, "Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking", "бу́дешь", "example"),
         ],
     )
     lesson.objective(
@@ -384,7 +427,12 @@ def _unit_14(lesson) -> None:
     speak = "I will speak - '''Я бу́ду говори́ть'''\n:I will speak for 30 minutes - '''Я поговорю три́дцать мину́т'''"
     work = "I will work - '''Я бу́ду рабо́тать'''\n:I will work for three hours - '''Я порабо́таю три ча́са'''"
     cold = "He was cold - '''Ему было холодно'''\n:They were bored - '''Им было скучно'''"
-    cold_rule = "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''."
+    cold_span = (
+        "To refer to these states in the past tense, always use '''было'''; "
+        "'she was cold'/'to her it was cold' is '''ей было холодно'''.\n"
+        ":He was cold - '''Ему было холодно'''\n"
+        ":They were bored - '''Им было скучно'''"
+    )
     lesson.objective(
         "future-aspect",
         "Choose the admitted future aspect line",
@@ -428,16 +476,16 @@ def _unit_14(lesson) -> None:
         [
             _wiki(past, cold, "Ему было холодно", "He was cold"),
             _wiki(past, cold, "Им было скучно", "They were bored"),
-            _wiki(past, cold_rule, "ей было холодно", "she was cold"),
+            _wiki(past, cold_span, "ей было холодно", "she was cold"),
             _field("verbs.csv:быть", "past_n"),
         ],
         [
             _target("Which admitted line is the impersonal past for one person who was cold?", "He was cold", "Ему было холодно", ["Им было скучно"], W, "IMPERSONAL_PAST", "impersonal past"),
             _target("Which admitted line is the impersonal past for more than one bored person?", "They were bored", "Им было скучно", ["Ему было холодно"], W, "IMPERSONAL_PAST", "impersonal past"),
-            _target("Which admitted line is the impersonal past for one woman who was cold?", "she was cold", "ей было холодно", ["было"], W, "IMPERSONAL_PAST", "impersonal past"),
+            _target("Which admitted line is the impersonal past for one woman who was cold?", "she was cold", "ей было холодно", ["Ему было холодно"], W, "IMPERSONAL_PAST", "impersonal past"),
         ],
         extra=[
-            (past, cold_rule, "было", "example"),
+            (past, cold_span, "Ему было холодно", "example"),
         ],
     )
 

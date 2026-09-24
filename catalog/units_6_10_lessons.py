@@ -272,7 +272,7 @@ def _cue_language(shown: str) -> str:
     return "rule"
 
 
-def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM", mode=None, cue=None, why=None):
+def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM", mode=None, cue=None, why=None, response_kind=None):
     del mode  # Relationship kind is derived from provenance records, not from this argument.
     if _ENGLISH_CUE.search(prompt) and not CYRILLIC.search(shown):
         if _cue_language(shown) == "number":
@@ -287,7 +287,7 @@ def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM"
         else:
             text, rationale, difference = row
         normalized.append((text, rationale, difference))
-    return {
+    payload = {
         "prompt": prompt,
         "shown": shown,
         "answer": answer,
@@ -297,6 +297,9 @@ def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM"
         "cue": cue or _cue_language(shown),
         "why": why or "Does the admitted record show the governed contrast?",
     }
+    if response_kind:
+        payload["responseKind"] = response_kind
+    return payload
 
 
 def _other(text, rationale, difference=None):

@@ -469,20 +469,26 @@ internal object V2Validator {
         return canonObj(*fields.toTypedArray())
     }
 
-    private fun canonicalAssessment(assessment: V2Assessment): String = canonObj(
-        "testedFeature" to canonStr(assessment.testedFeature),
-        "evidenceMode" to canonStr(assessment.evidenceMode),
-        "contrastSetId" to canonStr(assessment.contrastSetId),
-        "cueLanguage" to canonStr(assessment.cueLanguage),
-        "independent" to canonBool(assessment.independent),
-        "answerSourceIds" to canonArr(assessment.answerSourceIds.map(::canonStr)),
-        "distractorSourceIds" to canonArr(assessment.distractorSourceIds.map(::canonStr)),
-        "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
-        "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
-        "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
-        "relationKind" to canonStr(assessment.relationKind),
-        "relationParticipantIds" to canonArr(assessment.relationParticipantIds.map(::canonStr)),
-    )
+    private fun canonicalAssessment(assessment: V2Assessment): String {
+        val fields = mutableListOf(
+            "testedFeature" to canonStr(assessment.testedFeature),
+            "evidenceMode" to canonStr(assessment.evidenceMode),
+            "contrastSetId" to canonStr(assessment.contrastSetId),
+            "cueLanguage" to canonStr(assessment.cueLanguage),
+            "independent" to canonBool(assessment.independent),
+            "answerSourceIds" to canonArr(assessment.answerSourceIds.map(::canonStr)),
+            "distractorSourceIds" to canonArr(assessment.distractorSourceIds.map(::canonStr)),
+            "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
+            "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
+            "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
+            "relationKind" to canonStr(assessment.relationKind),
+            "relationParticipantIds" to canonArr(assessment.relationParticipantIds.map(::canonStr)),
+        )
+        if (assessment.responseKind.isNotBlank()) {
+            fields += "responseKind" to canonStr(assessment.responseKind)
+        }
+        return canonObj(*fields.toTypedArray())
+    }
 
     private fun canonNum(value: Int): String = value.toString()
 
@@ -1179,6 +1185,41 @@ internal object V2Validator {
         "TENSE_KEPT" to "same tense",
         "ENGLISH_TENSE_CHANGE" to "changing the reported tense",
     )
+    private val RESPONSE_KINDS = setOf(
+        "RUSSIAN_TOKEN",
+        "RUSSIAN_PHRASE",
+        "RUSSIAN_CLAUSE",
+        "ENGLISH_CLASSIFICATION",
+    )
+    private val CLAUSE_START = setOf(
+        "он", "она", "оно", "они", "я", "ты", "вы", "мы",
+        "ему", "ей", "им", "мне", "тебе", "вам", "нам", "когда",
+    )
+    private val ENGLISH_CLASSIFICATION_PROMPT = Regex("(?i)\\blabel\\b|\\benglish\\b")
+
+    /**
+     * Structural option shape for Units 11–15. Equal word counts are not required.
+     * A full clause and one of its components do not share a shape.
+     */
+    internal fun structuralResponseKind(text: String): String {
+        if (!hasCyrillic(text)) return "ENGLISH_CLASSIFICATION"
+        val tokens = governedTokens(text)
+        if (tokens.size <= 1) return "RUSSIAN_TOKEN"
+        if (text.contains(',') || text.contains(';') || tokens.first() in CLAUSE_START) return "RUSSIAN_CLAUSE"
+        return "RUSSIAN_PHRASE"
+    }
+
+    private fun responseShapeIncompatible(item: V2CheckItem): Boolean {
+        val declared = item.assessment?.responseKind.orEmpty()
+        if (declared !in RESPONSE_KINDS) return true
+        if (item.options.any { structuralResponseKind(it) != declared }) return true
+        if (declared == "ENGLISH_CLASSIFICATION" && !ENGLISH_CLASSIFICATION_PROMPT.containsMatchIn(item.prompt)) return true
+        val lists = item.options.map { governedTokens(it) }
+        return lists.indices.any { left ->
+            lists.indices.any { right -> left != right && tokenSequenceContained(lists[left], lists[right]) }
+        }
+    }
+
     private val TARGET_FIELDS = mapOf(
         "FEMININE_PAST" to "past_f",
         "MASCULINE_PAST" to "past_m",
@@ -1215,7 +1256,7 @@ internal object V2Validator {
         }
         val answerCyrillic = hasCyrillic(item.answer)
         val distractorTexts = item.options.filter { it != item.answer }
-        if (distractorTexts.any { hasCyrillic(it) != answerCyrillic }) {
+        if (responseShapeIncompatible(item)) {
             errors += "Item ${item.id} response type"
         }
         if (

@@ -251,6 +251,7 @@ internal data class V2Assessment(
     val contrastMembers: List<String>,
     val relationKind: String = "",
     val relationParticipantIds: List<String> = emptyList(),
+    val responseKind: String = "",
 )
 
 @Serializable

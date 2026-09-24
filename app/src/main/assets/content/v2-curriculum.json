@@ -14871,7 +14871,8 @@
           "prov-ex-or-u11-past-read-1",
           "prov-ex-or-u11-past-read-2",
           "prov-ex-or-u11-past-read-3"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -14921,7 +14922,8 @@
           "prov-ex-or-u11-past-read-1",
           "prov-ex-or-u11-past-read-0",
           "prov-ex-or-u11-past-read-3"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -14971,7 +14973,8 @@
           "prov-ex-u11-past-read-4-ru",
           "prov-ex-u11-past-read-5-ru",
           "prov-u11-past-read-x-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15027,7 +15030,8 @@
           "prov-ex-or-u11-past-be-1",
           "prov-ex-or-u11-past-be-2",
           "prov-ex-or-u11-past-be-3"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15077,7 +15081,8 @@
           "prov-ex-or-u11-past-be-1",
           "prov-ex-or-u11-past-be-3",
           "prov-ex-or-u11-past-be-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15127,7 +15132,8 @@
           "prov-ex-or-u11-past-be-2",
           "prov-ex-or-u11-past-be-3",
           "prov-ex-or-u11-past-be-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15177,7 +15183,8 @@
           "prov-ex-u11-past-aspect-1-en",
           "prov-ex-u11-past-aspect-1-ru",
           "prov-ex-u11-past-aspect-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15227,7 +15234,8 @@
           "prov-ex-u11-past-aspect-0-en",
           "prov-ex-u11-past-aspect-0-ru",
           "prov-ex-u11-past-aspect-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15277,7 +15285,8 @@
           "prov-ex-or-u11-past-aspect-2",
           "prov-ex-or-u11-past-aspect-3",
           "prov-ex-or-u11-past-aspect-4"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15333,7 +15342,8 @@
           "prov-ex-or-u11-reflexive-2",
           "prov-ex-or-u11-reflexive-3",
           "prov-ex-or-u11-reflexive-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15383,7 +15393,8 @@
           "prov-ex-u11-reflexive-4-ru",
           "prov-ex-u11-reflexive-5-ru",
           "prov-u11-reflexive-x-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15433,7 +15444,8 @@
           "prov-ex-or-u11-reflexive-6",
           "prov-ex-or-u11-reflexive-7",
           "prov-ex-or-u11-reflexive-8"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15483,7 +15495,8 @@
           "prov-ex-u12-future-imp-1-en",
           "prov-ex-u12-future-imp-1-ru",
           "prov-ex-u12-future-imp-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15533,7 +15546,8 @@
           "prov-ex-u12-future-imp-0-en",
           "prov-ex-u12-future-imp-0-ru",
           "prov-ex-u12-future-imp-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15544,7 +15558,7 @@
       "promptLetter": "Ты бу́дешь говори́ть",
       "options": [
         "Вы бу́дете говори́ть",
-        "бу́дешь"
+        "Я бу́ду говори́ть"
       ],
       "answer": "Вы бу́дете говори́ть",
       "feedback": "Does this answer show the second-person plural future? Вы бу́дете говори́ть.",
@@ -15558,7 +15572,7 @@
       ],
       "assessment": {
         "testedFeature": "SECOND_PERSON_PLURAL_FUTURE",
-        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
         "contrastSetId": "u12-future-imp-2",
         "cueLanguage": "ru",
         "independent": true,
@@ -15567,7 +15581,7 @@
         ],
         "distractorSourceIds": [
           "",
-          "prov-u12-future-imp-x-1"
+          "prov-ex-u12-future-imp-0-ru"
         ],
         "distractorDifference": [
           "",
@@ -15576,14 +15590,15 @@
         "whyAnswerDemonstratesObjective": "Does this answer show the second-person plural future?",
         "contrastMembers": [
           "Вы бу́дете говори́ть",
-          "бу́дешь"
+          "Я бу́ду говори́ть"
         ],
-        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
         "relationParticipantIds": [
           "prov-ex-u12-future-imp-2-ru",
           "prov-u12-future-imp-x-0",
-          "prov-u12-future-imp-x-1"
-        ]
+          "prov-ex-u12-future-imp-0-ru"
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15633,7 +15648,8 @@
           "prov-ex-u12-future-perf-1-en",
           "prov-ex-u12-future-perf-1-ru",
           "prov-ex-u12-future-perf-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15683,7 +15699,8 @@
           "prov-ex-or-u12-future-perf-2",
           "prov-ex-or-u12-future-perf-3",
           "prov-ex-or-u12-future-perf-4"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15733,7 +15750,8 @@
           "prov-ex-u12-future-perf-0-en",
           "prov-ex-u12-future-perf-0-ru",
           "prov-ex-u12-future-perf-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -15783,7 +15801,8 @@
           "prov-ex-u12-aspect-0-ru",
           "prov-ex-u12-aspect-1-ru",
           "prov-ex-u12-aspect-2-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15833,7 +15852,8 @@
           "prov-ex-u12-aspect-1-ru",
           "prov-ex-u12-aspect-0-ru",
           "prov-ex-u12-aspect-3-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15883,7 +15903,8 @@
           "prov-ex-u12-aspect-2-ru",
           "prov-ex-u12-aspect-3-ru",
           "prov-ex-u12-aspect-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15933,7 +15954,8 @@
           "prov-ex-or-u12-dative-0",
           "prov-ex-or-u12-dative-1",
           "prov-ex-or-u12-dative-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -15983,7 +16005,8 @@
           "prov-ex-or-u12-dative-3",
           "prov-ex-or-u12-dative-4",
           "prov-ex-or-u12-dative-5"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16033,7 +16056,8 @@
           "prov-ex-or-u12-dative-6",
           "prov-ex-or-u12-dative-7",
           "prov-ex-or-u12-dative-8"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16083,7 +16107,8 @@
           "prov-ex-u12-spelling-3-en",
           "prov-ex-u12-spelling-3-ru",
           "prov-u12-spelling-rem-r6"
-        ]
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
       }
     },
     {
@@ -16133,7 +16158,8 @@
           "prov-ex-or-u12-spelling-0",
           "prov-ex-or-u12-spelling-1",
           "prov-ex-or-u12-spelling-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16183,7 +16209,8 @@
           "prov-ex-u12-spelling-3-en",
           "prov-u12-spelling-rem-r6",
           "prov-ex-u12-spelling-3-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
       }
     },
     {
@@ -16233,7 +16260,8 @@
           "prov-ex-or-u12-prep-plural-0",
           "prov-ex-or-u12-prep-plural-1",
           "prov-ex-or-u12-prep-plural-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16283,7 +16311,8 @@
           "prov-ex-or-u12-prep-plural-3",
           "prov-ex-or-u12-prep-plural-4",
           "prov-ex-or-u12-prep-plural-5"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16333,7 +16362,8 @@
           "prov-ex-or-u12-prep-plural-6",
           "prov-ex-or-u12-prep-plural-7",
           "prov-ex-or-u12-prep-plural-8"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16383,7 +16413,8 @@
           "prov-ex-u13-past-aspect-1-en",
           "prov-ex-u13-past-aspect-1-ru",
           "prov-ex-u13-past-aspect-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16433,7 +16464,8 @@
           "prov-ex-u13-past-aspect-0-en",
           "prov-ex-u13-past-aspect-0-ru",
           "prov-ex-u13-past-aspect-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16483,7 +16515,8 @@
           "prov-ex-or-u13-past-aspect-2",
           "prov-ex-or-u13-past-aspect-3",
           "prov-ex-or-u13-past-aspect-4"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16533,7 +16566,8 @@
           "prov-ex-u13-tense-keep-0-ru",
           "prov-ex-u13-tense-keep-0-en",
           "prov-u13-tense-keep-x-1"
-        ]
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
       }
     },
     {
@@ -16583,7 +16617,8 @@
           "prov-ex-u13-tense-keep-1-ru",
           "prov-ex-u13-tense-keep-2-ru",
           "prov-u13-tense-keep-x-3"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16633,7 +16668,8 @@
           "prov-u13-tense-keep-x-2",
           "prov-u13-tense-keep-x-1",
           "prov-ex-u13-tense-keep-0-en"
-        ]
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
       }
     },
     {
@@ -16683,7 +16719,8 @@
           "prov-ex-u13-infinitive-0-ru",
           "prov-ex-u13-infinitive-1-ru",
           "prov-ex-u13-infinitive-2-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16733,7 +16770,8 @@
           "prov-ex-u13-infinitive-2-ru",
           "prov-ex-u13-infinitive-3-ru",
           "prov-ex-u13-infinitive-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16783,7 +16821,8 @@
           "prov-ex-u13-infinitive-1-ru",
           "prov-ex-u13-infinitive-0-ru",
           "prov-ex-u13-infinitive-3-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -16833,7 +16872,8 @@
           "prov-ex-u13-reported-1-ru",
           "prov-ex-u13-reported-0-ru",
           "prov-u13-reported-x-1"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16883,7 +16923,8 @@
           "prov-ex-u13-reported-0-ru",
           "prov-ex-u13-reported-1-ru",
           "prov-u13-reported-x-1"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16933,7 +16974,8 @@
           "prov-ex-u13-reported-0-ru",
           "prov-u13-reported-x-1",
           "prov-ex-u13-reported-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -16983,7 +17025,8 @@
           "prov-ex-u14-future-aspect-1-en",
           "prov-ex-u14-future-aspect-1-ru",
           "prov-ex-u14-future-aspect-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17033,7 +17076,8 @@
           "prov-ex-u14-future-aspect-3-en",
           "prov-ex-u14-future-aspect-3-ru",
           "prov-ex-u14-future-aspect-2-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17083,7 +17127,8 @@
           "prov-ex-u14-future-aspect-0-en",
           "prov-ex-u14-future-aspect-0-ru",
           "prov-ex-u14-future-aspect-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17133,7 +17178,8 @@
           "prov-ex-u14-future-person-1-en",
           "prov-ex-u14-future-person-1-ru",
           "prov-ex-u14-future-person-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17183,7 +17229,8 @@
           "prov-ex-or-u14-future-person-3",
           "prov-ex-or-u14-future-person-4",
           "prov-ex-or-u14-future-person-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17233,7 +17280,8 @@
           "prov-ex-u14-future-person-0-en",
           "prov-ex-u14-future-person-0-ru",
           "prov-ex-u14-future-person-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17283,7 +17331,8 @@
           "prov-ex-u14-impersonal-0-en",
           "prov-ex-u14-impersonal-0-ru",
           "prov-ex-u14-impersonal-1-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17333,7 +17382,8 @@
           "prov-ex-u14-impersonal-1-en",
           "prov-ex-u14-impersonal-1-ru",
           "prov-ex-u14-impersonal-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17344,7 +17394,7 @@
       "promptLetter": "she was cold",
       "options": [
         "ей было холодно",
-        "было"
+        "Ему было холодно"
       ],
       "answer": "ей было холодно",
       "feedback": "Does this answer show the impersonal past? ей было холодно.",
@@ -17376,14 +17426,15 @@
         "whyAnswerDemonstratesObjective": "Does this answer show the impersonal past?",
         "contrastMembers": [
           "ей было холодно",
-          "было"
+          "Ему было холодно"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
           "prov-ex-u14-impersonal-2-en",
           "prov-ex-u14-impersonal-2-ru",
           "prov-u14-impersonal-x-0"
-        ]
+        ],
+        "responseKind": "RUSSIAN_CLAUSE"
       }
     },
     {
@@ -17433,7 +17484,8 @@
           "prov-ex-or-u15-imperative-0",
           "prov-ex-or-u15-imperative-1",
           "prov-ex-or-u15-imperative-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17483,7 +17535,8 @@
           "prov-ex-or-u15-imperative-1",
           "prov-ex-or-u15-imperative-0",
           "prov-ex-or-u15-imperative-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17533,7 +17586,8 @@
           "prov-ex-or-u15-imperative-2",
           "prov-ex-or-u15-imperative-0",
           "prov-ex-or-u15-imperative-1"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17583,7 +17637,8 @@
           "prov-ex-or-u15-say-request-0",
           "prov-ex-or-u15-say-request-1",
           "prov-ex-or-u15-say-request-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17633,7 +17688,8 @@
           "prov-ex-or-u15-say-request-3",
           "prov-ex-or-u15-say-request-4",
           "prov-ex-or-u15-say-request-5"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17683,7 +17739,8 @@
           "prov-ex-or-u15-say-request-1",
           "prov-ex-or-u15-say-request-0",
           "prov-ex-or-u15-say-request-2"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17733,7 +17790,8 @@
           "prov-ex-u15-aspect-consolidate-0-ru",
           "prov-ex-u15-aspect-consolidate-1-ru",
           "prov-ex-u15-aspect-consolidate-2-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17783,7 +17841,8 @@
           "prov-ex-u15-aspect-consolidate-1-ru",
           "prov-ex-u15-aspect-consolidate-0-ru",
           "prov-ex-u15-aspect-consolidate-3-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -17833,7 +17892,8 @@
           "prov-ex-u15-aspect-consolidate-2-ru",
           "prov-ex-u15-aspect-consolidate-3-ru",
           "prov-ex-u15-aspect-consolidate-0-ru"
-        ]
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
       }
     }
   ],
@@ -17971,8 +18031,8 @@
     {
       "id": "ref-book-topics",
       "title": "Where lesson bodies are packaged",
-      "summary": "Units 1 through 15 contain proposed lesson bodies that still need qualified review.",
-      "detail": "Units 16 and later do not contain lesson bodies. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
+      "summary": "Some units contain proposed lesson bodies that still require qualified review.",
+      "detail": "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
       "introducedInUnit": 3,
       "sourceId": "src-app-english-v2",
       "classification": "OPERATIONAL_GUIDANCE",
@@ -59776,31 +59836,6 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u12-future-imp-x-1",
-      "unitNumber": 12,
-      "objectiveId": "obj-u12-future-imp",
-      "recordType": "example",
-      "sourceId": "src-wikibooks-russian-cc-by-sa",
-      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
-      "sourceRevision": "3353822",
-      "sourceRecordId": "future:Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will",
-      "originalSourceText": "Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking",
-      "shippedText": "бу́дешь",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "2c3be73d304f54f2992e677a68f4bf6b5c3cabedc4c9cbca0c33fa4160ae8916",
-      "contentHash": "b6d8d689fd4c7aa23f2a4f2ed3aab60669c303cd62056bbd74ac1ce8008db58b",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
       "itemId": "prov-ex-u12-future-perf-0-ru",
       "unitNumber": 12,
       "objectiveId": "obj-u12-future-perf",
@@ -64559,14 +64594,14 @@
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337",
       "sourceRevision": "4567337",
       "sourceRecordId": "past:To refer to these states in the past tense, always use '''было'''; 'she was cold",
-      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.",
+      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.\n:He was cold - '''Ему было холодно'''\n:They were bored - '''Им было скучно'''",
       "shippedText": "ей было холодно",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617",
+      "sourceHash": "b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e",
       "contentHash": "338c49fae2de8da6001ee43dbe0d90701218d3c8857ecdaafd340905f1442acd",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
@@ -64584,14 +64619,14 @@
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337",
       "sourceRevision": "4567337",
       "sourceRecordId": "past:To refer to these states in the past tense, always use '''было'''; 'she was cold",
-      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.",
+      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.\n:He was cold - '''Ему было холодно'''\n:They were bored - '''Им было скучно'''",
       "shippedText": "she was cold",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617",
+      "sourceHash": "b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e",
       "contentHash": "b355b1fa13404a7d5c50ea87f675f0ee39f4a2b81ab4df52d322bac24786398c",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
@@ -64709,15 +64744,15 @@
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337",
       "sourceRevision": "4567337",
       "sourceRecordId": "past:To refer to these states in the past tense, always use '''было'''; 'she was cold",
-      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.",
-      "shippedText": "было",
+      "originalSourceText": "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.\n:He was cold - '''Ему было холодно'''\n:They were bored - '''Им было скучно'''",
+      "shippedText": "Ему было холодно",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617",
-      "contentHash": "3b79270b18c82245ad3db99ff39709d313d980461458bfb3c5fdace93e91dff8",
+      "sourceHash": "b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e",
+      "contentHash": "c3b4bc104ad30d272a95b317fa79354404133499664df22276c6dee9f8dfe4ee",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",

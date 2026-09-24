@@ -1391,8 +1391,8 @@ def build() -> dict:
         reference(
             "ref-book-topics",
             "Where lesson bodies are packaged",
-            "Units 1 through 15 contain proposed lesson bodies that still need qualified review.",
-            "Units 16 and later do not contain lesson bodies. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
+            "Some units contain proposed lesson bodies that still require qualified review.",
+            "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
