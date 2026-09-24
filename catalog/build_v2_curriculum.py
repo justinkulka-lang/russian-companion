@@ -19,6 +19,7 @@ from pathlib import Path
 
 from units_3_5_intake import build_units_3_5
 from units_6_10_intake import build_units_6_10
+from units_11_15_intake import build_units_11_15
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -1389,9 +1390,9 @@ def build() -> dict:
         ),
         reference(
             "ref-book-topics",
-            "Later lesson topics stay in the book",
-            "Units 6 and later do not contain lesson bodies.",
-            "Units 3–5 contain proposed licensed records that still need qualified review. Open the matching lesson in the copy you own. This reference does not approve those records.",
+            "Where lesson bodies are packaged",
+            "Some units contain proposed lesson bodies that still require qualified review.",
+            "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
@@ -1439,16 +1440,22 @@ def build() -> dict:
 
     proposed = build_units_3_5()
     later = build_units_6_10()
+    following = build_units_11_15()
     items.extend(proposed["items"])
     items.extend(later["items"])
+    items.extend(following["items"])
     examples.extend(proposed["examples"])
     examples.extend(later["examples"])
+    examples.extend(following["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in later["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in following["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
     references.extend(later["references"])
+    references.extend(following["references"])
 
     units = [
         development_unit(
@@ -1535,8 +1542,39 @@ def build() -> dict:
                 minimum_checks=proposed_unit["minimum_checks"],
             )
         )
+    following_by_number = {unit["number"]: unit for unit in following["units"]}
+    following_pages = {
+        11: ("122-132", "Past-tense formation and use, including reflexive verbs"),
+        12: ("133-148", "Future formation, introductory verbal aspect, the dative case, additional spelling rules, and prepositional plural"),
+        13: ("149-161", "Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech"),
+        14: ("162-170", "Aspect in future-tense contexts and impersonal constructions"),
+        15: ("171-187", "Requests, imperative forms, and consolidation of aspect use"),
+    }
     for number, short, title in UNITS_3_30:
-        if number <= 10:
+        if number < 11 or number > 15:
+            continue
+        proposed_unit = following_by_number[number]
+        pages, topic = following_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=proposed_unit["minimum_checks"],
+            )
+        )
+    for number, short, title in UNITS_3_30:
+        if number <= 15:
             continue
         units.append(
             {
@@ -1549,11 +1587,7 @@ def build() -> dict:
                 "readiness": "NOT_PREPARED",
                 "penguinLesson": number,
                 "mappingStatus": "NOT_STARTED",
-                "mappingNote": (
-                    "Owned-edition structural mapping is absent. Missing input: printed page range, owned-copy topic confirmation, and observation source. No lesson body, audio, or exercises are prepared."
-                    if 11 <= number <= 15
-                    else "The topic identifier is recorded. No lesson body, audio, or exercises are installed."
-                ),
+                "mappingNote": "The topic identifier is recorded. No lesson body, audio, or exercises are installed.",
                 "prerequisiteUnitNumbers": [number - 1],
                 "estimatedMinutes": None,
                 "objectives": [],
@@ -1568,7 +1602,7 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 11)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 16)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
         "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
@@ -1579,8 +1613,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": [*proposed["provenance"], *later["provenance"]],
-        "authoredEnglishRecords": [*proposed["authored"], *later["authored"]],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

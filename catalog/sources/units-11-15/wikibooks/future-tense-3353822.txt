@@ -1,0 +1,93 @@
+The '''future tense''' in Russian is formed in two ways: using the imperfective [[Russian/Verbal Aspect|verbal aspect]], or the perfective verbal aspect. Which one you use depends on the finer points of what you're trying to say. Unlike the [[Russian/Grammar/Past tense|past tense]], they conjugate into the future tense in different ways.
+
+== Usage ==
+Quite simply, the future tense in Russian corresponds to things happening in the future. Like English, Russian has no true future tense, instead a future tense is formed by using grammatical constructions involving auxiliary words and present tense verbs (present tense 'I'm running', v future tense 'I ''will be'' running'). In Russian to form a future tense, you either use a perfective verb and conjugate it in the present. For example, "Я делаю (present tense conjugation of imperfective verb" refers to the present time ("I do/I am doing"), while "Я сделаю (present tense conjugation of perfective verb)" refers to a time in the future ("I will do"). Or you use an auxiliary verb "быть" conjugated in the present together with the infinitve of an imperfective verb "Я буду делать (present tense conjugation of the verb "быть")" ("I will be doing").
+
+=== Imperfective or Perfective? ===
+
+As discussed in [[Russian/Verbal Aspect|Verbal Aspect]], aspect is largely a distinction between completion: imperfective verbs denote incomplete or indefinitely repeating actions, while perfective verbs denote completed or definitely repeating. This difference between indefinite repetition and repetition for a known length of time, is the main deciding factor when choosing aspect in the future tense.
+
+For example, compare, "I will walk to school every day", with, "I will walk to school this week" - the former is an action that is indefinitely repeated, so would use the imperfective aspect, while the latter is done for a definite period of time, so would use the perfective aspect.
+
+:I will be going to school every day - '''Я буду ходить в школу каждый день'''
+:I will go to school in the morning - '''Я пойду в школу с утра'''
+:I will attend school for a week - '''Я похожу в школу неделю'''
+:I will work - '''Я бу́ду рабо́тать'''
+:I will work for three hours - '''Я порабо́таю три ча́са'''
+:I will speak - '''Я бу́ду говори́ть'''
+:I will speak for 30 minutes - '''Я поговорю три́дцать мину́т'''
+
+=== Present or future? ===
+
+There is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''". Whatever tense was used originally is kept.
+
+Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in "If I fly, I'll phone you", "I fly" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: "If I ''will fly'', I'll phone you" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.
+
+Finally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.
+
+Examples:
+:I will tell him in the evening - '''Я скажу ему ве́чером'''
+:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
+:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+
+== The imperfective future ==
+Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''. That is, to make the future of the imperfective '''говори́ть''', we use the construction "'''*быть говорить'''" (never actually appear in infinitive), and we conjugate it by conjugating '''быть''': '''Я бу́ду, мы бу́дем, ты бу́дешь, вы бу́дете, он бу́дет''', and '''они бу́дут'''. So, to conjugate the imperfective future with pronouns, we simply conjugate '''быть''' accordingly:
+
+{| class="wikitable"
+|-
+!  || Singular || Plural
+|-
+! First person
+| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking
+|-
+! Second person
+| Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking
+|-
+! Third person
+| Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They will be speaking
+|}
+
+So forming the imperfective future is relatively easy, and simply requires conjugating '''быть''', 'to be', to form "will be". '''Быть''' is an perfective verb and, as we'll see, conjugating perfective verbs turns them into the future tense. Thus, "'''Он будет говорить'''" translates as "He ''will be'' speaking".
+
+== The perfective future ==
+Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the standard rules of verbal conjugation. Conjugating an imperfective verb the 'normal' way generates the present tense, and conjugating a perfective verb this way generates the future tense. For instance, 'to speak' is '''сказа́ть''' in the perfective, so "I will speak" is "'''Я скажу́'''":
+
+{| class="wikitable" style="text-align:center"
+|-
+!  || Singular || Plural
+|-
+! First person
+| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak
+|-
+! Second person
+| Ты ска́жешь<br>You will speak || Вы ска́жете<br>You will speak
+|-
+! Third person
+| Он ска́жет<br>He will speak || Они ска́жут<br>They will speak
+|}
+
+So although this conjugates like a normal imperfective verb, it refers to the ''future''. Thus, learning to spot the aspect of a new verb can be important for working out the tense of a sentence.
+
+So, to summarise how to form the tenses:
+
+{| class="wikitable" style="text-align:center"
+|-
+! Tense !! Imperfective !! Perfective
+|-
+! Past
+| colspan="2"| Remove -ть, add -л(а/о/и)
+|-
+! Present
+| Normal<br>conjugation || ''Can't be formed''
+|-
+! Future
+| Быть <br>+ infinitive || Normal<br>conjugation
+|}
+
+----
+
+* [[Russian/Grammar/Past_tense|Previous: Past tense]]
+* [[Russian/Grammar/What_and_Which|Next: What and Which]]
+* [[Russian|Back to Table of Contents]]
+{{BookCat}}
+{{Russian}}

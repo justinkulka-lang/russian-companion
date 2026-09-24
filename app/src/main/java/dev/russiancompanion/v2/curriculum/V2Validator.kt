@@ -469,20 +469,26 @@ internal object V2Validator {
         return canonObj(*fields.toTypedArray())
     }
 
-    private fun canonicalAssessment(assessment: V2Assessment): String = canonObj(
-        "testedFeature" to canonStr(assessment.testedFeature),
-        "evidenceMode" to canonStr(assessment.evidenceMode),
-        "contrastSetId" to canonStr(assessment.contrastSetId),
-        "cueLanguage" to canonStr(assessment.cueLanguage),
-        "independent" to canonBool(assessment.independent),
-        "answerSourceIds" to canonArr(assessment.answerSourceIds.map(::canonStr)),
-        "distractorSourceIds" to canonArr(assessment.distractorSourceIds.map(::canonStr)),
-        "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
-        "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
-        "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
-        "relationKind" to canonStr(assessment.relationKind),
-        "relationParticipantIds" to canonArr(assessment.relationParticipantIds.map(::canonStr)),
-    )
+    private fun canonicalAssessment(assessment: V2Assessment): String {
+        val fields = mutableListOf(
+            "testedFeature" to canonStr(assessment.testedFeature),
+            "evidenceMode" to canonStr(assessment.evidenceMode),
+            "contrastSetId" to canonStr(assessment.contrastSetId),
+            "cueLanguage" to canonStr(assessment.cueLanguage),
+            "independent" to canonBool(assessment.independent),
+            "answerSourceIds" to canonArr(assessment.answerSourceIds.map(::canonStr)),
+            "distractorSourceIds" to canonArr(assessment.distractorSourceIds.map(::canonStr)),
+            "distractorDifference" to canonArr(assessment.distractorDifference.map(::canonStr)),
+            "whyAnswerDemonstratesObjective" to canonStr(assessment.whyAnswerDemonstratesObjective),
+            "contrastMembers" to canonArr(assessment.contrastMembers.map(::canonStr)),
+            "relationKind" to canonStr(assessment.relationKind),
+            "relationParticipantIds" to canonArr(assessment.relationParticipantIds.map(::canonStr)),
+        )
+        if (assessment.responseKind.isNotBlank()) {
+            fields += "responseKind" to canonStr(assessment.responseKind)
+        }
+        return canonObj(*fields.toTypedArray())
+    }
 
     private fun canonNum(value: Int): String = value.toString()
 
@@ -786,8 +792,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..10) {
-            errors += "Only Units 1-10 may be development content in this pack"
+        if (unit.number !in 1..15) {
+            errors += "Only Units 1-15 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -795,7 +801,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number in 6..10) validateGovernedChecks(pack, unit, errors)
+        if (unit.number in 6..15) validateGovernedChecks(pack, unit, errors)
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -807,7 +813,7 @@ internal object V2Validator {
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     )
-    private val LEMMA_RECORD = Regex("^(nouns|adjectives|others)\\.csv:(.+)#([A-Za-z0-9_]+)$")
+    private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
     private val WIKIBOOKS_SOURCE = "src-wikibooks-russian-cc-by-sa"
     private val TOKEN = Regex("[0-9]+|[a-z\\u0430-\\u044f]+")
@@ -1135,7 +1141,212 @@ internal object V2Validator {
             "number" -> if (!NUMBER_CUE.matches(shown)) errors += "Item ${item.id} number cue is not a shown number"
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
+        val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
+        if (unitNumber in 11..15) {
+            errors += explicitTargetErrors(pack, item)
+        }
         return errors
+    }
+
+    /**
+     * Structural protection for Units 11–15 advancement checks.
+     * It rejects known ambiguity classes. It is not qualified linguistic approval.
+     */
+    private val COLOCATION_PROMPT = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
+    private val PAST_FIELDS = setOf("past_m", "past_f", "past_n", "past_pl")
+    private val IMPERSONAL_INFLECTION = setOf("past_m", "past_f", "past_pl")
+    private val TARGET_PHRASES = mapOf(
+        "FEMININE_PAST" to "feminine past",
+        "MASCULINE_PAST" to "masculine past",
+        "NEUTER_PAST" to "neuter past",
+        "PLURAL_PAST" to "plural past",
+        "DATIVE_SINGULAR" to "dative singular",
+        "PREPOSITIONAL_PLURAL" to "prepositional plural",
+        "SINGULAR_IMPERATIVE" to "singular imperative",
+        "PLURAL_IMPERATIVE" to "plural imperative",
+        "FIRST_PERSON_SINGULAR_FUTURE" to "first-person singular future",
+        "FIRST_PERSON_PLURAL_FUTURE" to "first-person plural future",
+        "SECOND_PERSON_PLURAL_FUTURE" to "second-person plural future",
+        "THIRD_PERSON_PLURAL_FUTURE" to "third-person plural future",
+        "PERFECTIVE_PARTNER" to "perfective partner",
+        "IMPERFECTIVE_PARTNER" to "imperfective partner",
+        "PERFECTIVE_PAST" to "perfective past",
+        "IMPERFECTIVE_PAST" to "imperfective past",
+        "REPORTED_EVENING" to "reported evening",
+        "DIRECT_EVENING" to "direct evening",
+        "MOSCOW_FUTURE" to "Moscow",
+        "BOUNDED_FUTURE" to "bounded future",
+        "UNBOUNDED_FUTURE" to "unbounded future",
+        "IMPERSONAL_PAST" to "impersonal past",
+        "ACCEPTED_SPELLING" to "accepted spelling",
+        "REJECTED_SPELLING" to "rejected spelling",
+        "NEUTER_FORM" to "neuter form",
+        "MASCULINE_FORM" to "masculine form",
+        "TENSE_KEPT" to "same tense",
+        "ENGLISH_TENSE_CHANGE" to "changing the reported tense",
+    )
+    private val RESPONSE_KINDS = setOf(
+        "RUSSIAN_TOKEN",
+        "RUSSIAN_PHRASE",
+        "RUSSIAN_CLAUSE",
+        "ENGLISH_CLASSIFICATION",
+    )
+    private val CLAUSE_START = setOf(
+        "\u043e\u043d", "\u043e\u043d\u0430", "\u043e\u043d\u043e", "\u043e\u043d\u0438", "\u044f", "\u0442\u044b", "\u0432\u044b", "\u043c\u044b",
+        "\u0435\u043c\u0443", "\u0435\u0439", "\u0438\u043c", "\u043c\u043d\u0435", "\u0442\u0435\u0431\u0435", "\u0432\u0430\u043c", "\u043d\u0430\u043c", "\u043a\u043e\u0433\u0434\u0430",
+    )
+    private val ENGLISH_CLASSIFICATION_PROMPT = Regex("(?i)\\blabel\\b|\\benglish\\b")
+
+    /**
+     * Structural option shape for Units 11–15. Equal word counts are not required.
+     * A full clause and one of its components do not share a shape.
+     */
+    internal fun structuralResponseKind(text: String): String {
+        if (!hasCyrillic(text)) return "ENGLISH_CLASSIFICATION"
+        val tokens = governedTokens(text)
+        if (tokens.size <= 1) return "RUSSIAN_TOKEN"
+        if (text.contains(',') || text.contains(';') || tokens.first() in CLAUSE_START) return "RUSSIAN_CLAUSE"
+        return "RUSSIAN_PHRASE"
+    }
+
+    private fun responseShapeIncompatible(item: V2CheckItem): Boolean {
+        val declared = item.assessment?.responseKind.orEmpty()
+        if (declared !in RESPONSE_KINDS) return true
+        if (item.options.any { structuralResponseKind(it) != declared }) return true
+        if (declared == "ENGLISH_CLASSIFICATION" && !ENGLISH_CLASSIFICATION_PROMPT.containsMatchIn(item.prompt)) return true
+        val lists = item.options.map { governedTokens(it) }
+        return lists.indices.any { left ->
+            lists.indices.any { right -> left != right && tokenSequenceContained(lists[left], lists[right]) }
+        }
+    }
+
+    private val TARGET_FIELDS = mapOf(
+        "FEMININE_PAST" to "past_f",
+        "MASCULINE_PAST" to "past_m",
+        "NEUTER_PAST" to "past_n",
+        "PLURAL_PAST" to "past_pl",
+        "DATIVE_SINGULAR" to "sg_dat",
+        "PREPOSITIONAL_PLURAL" to "pl_prep",
+        "SINGULAR_IMPERATIVE" to "imperative_sg",
+        "PLURAL_IMPERATIVE" to "imperative_pl",
+        "NEUTER_FORM" to "decl_n_nom",
+        "MASCULINE_FORM" to "decl_m_nom",
+        "FIRST_PERSON_SINGULAR_FUTURE" to "presfut_sg1",
+        "FIRST_PERSON_PLURAL_FUTURE" to "presfut_pl1",
+        "SECOND_PERSON_PLURAL_FUTURE" to "presfut_pl2",
+        "THIRD_PERSON_PLURAL_FUTURE" to "presfut_pl3",
+    )
+
+    private fun explicitTargetErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        val errors = mutableListOf<String>()
+        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
+        val feature = assessment.testedFeature
+        val phrase = TARGET_PHRASES[feature]
+        if (feature.isBlank() || phrase == null || !item.prompt.contains(phrase)) {
+            errors += "Item ${item.id} has no explicit target"
+        }
+        if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
+            errors += "Item ${item.id} answer rationale is not tied to the target"
+        }
+        if (item.options.count { it == item.answer } != 1) {
+            errors += "Item ${item.id} does not have one correct option"
+        }
+        if (COLOCATION_PROMPT.containsMatchIn(item.prompt)) {
+            errors += "Item ${item.id} source co-location prompt"
+        }
+        val answerCyrillic = hasCyrillic(item.answer)
+        val distractorTexts = item.options.filter { it != item.answer }
+        if (responseShapeIncompatible(item)) {
+            errors += "Item ${item.id} response type"
+        }
+        if (
+            item.prompt.contains("spelling", ignoreCase = true) &&
+            !answerCyrillic &&
+            item.options.any { hasCyrillic(it) }
+        ) {
+            errors += "Item ${item.id} English gloss"
+        }
+        if (
+            item.prompt.contains("imperative", ignoreCase = true) &&
+            !item.prompt.contains("singular", ignoreCase = true) &&
+            !item.prompt.contains("plural", ignoreCase = true)
+        ) {
+            errors += "Item ${item.id} unspecified imperative"
+        }
+        if (!connectedToObjective(pack, item)) {
+            errors += "Item ${item.id} is not connected to its objective"
+        }
+        val participants = assessment.relationParticipantIds.map { id ->
+            pack.provenanceRecords.firstOrNull { it.itemId == id }
+        }
+        val cue = participants.firstOrNull()
+        val answerRecord = participants.getOrNull(1)
+        val distractorRecords = participants.drop(2).filterNotNull()
+        val answerField = answerRecord?.let { openRussianLemma(it) }
+        val expectedField = TARGET_FIELDS[feature]
+        if (expectedField != null && answerField != null && answerField.second != expectedField) {
+            errors += "Item ${item.id} has no explicit target"
+        }
+        if (expectedField != null && distractorRecords.any { openRussianLemma(it)?.second == expectedField }) {
+            errors += "Item ${item.id} distractor is also supported"
+        }
+        if (answerField != null && answerField.second in PAST_FIELDS) {
+            val sameLemmaPast = distractorRecords.any { record ->
+                val parsed = openRussianLemma(record)
+                parsed != null && parsed.first == answerField.first && parsed.second in PAST_FIELDS
+            }
+            val named = listOf("feminine", "masculine", "neuter", "plural").any {
+                item.prompt.contains(it, ignoreCase = true)
+            }
+            if (sameLemmaPast && !named) {
+                errors += "Item ${item.id} past target"
+            }
+        }
+        if (feature.startsWith("IMPERSONAL") && answerRecord != null && answerRecord.shippedText == item.answer) {
+            val field = openRussianLemma(answerRecord)?.second
+            if (field in IMPERSONAL_INFLECTION) {
+                errors += "Item ${item.id} unrelated inflected form"
+            }
+        }
+        if (feature == "ACCEPTED_SPELLING" && answerRecord != null) {
+            val original = answerRecord.originalSourceText
+            val at = original.indexOf(item.answer)
+            if (at >= 0) {
+                val window = original.substring(maxOf(0, at - 40), at)
+                if (Regex("(?i)\\bnot\\b").containsMatchIn(window)) {
+                    errors += "Item ${item.id} rejected spelling"
+                }
+            }
+        }
+        val originals = listOfNotNull(cue?.originalSourceText, answerRecord?.originalSourceText).distinct()
+        if (distractorTexts.any { distractor -> originals.any { alternativeGloss(it, item.answer, distractor) } }) {
+            errors += "Item ${item.id} distractor is also supported"
+        }
+        return errors
+    }
+
+    private fun alternativeGloss(original: String, answer: String, distractor: String): Boolean {
+        if (hasCyrillic(answer) || hasCyrillic(distractor)) return false
+        if (answer.isBlank() || distractor.isBlank() || answer == distractor) return false
+        val answerAt = original.indexOf(answer)
+        val distractorAt = original.indexOf(distractor)
+        if (answerAt < 0 || distractorAt < 0) return false
+        val between = if (answerAt < distractorAt) {
+            original.substring(answerAt + answer.length, distractorAt)
+        } else {
+            original.substring(distractorAt + distractor.length, answerAt)
+        }
+        return between.length <= 24 && Regex("(?i)\\bor\\b").containsMatchIn(between)
+    }
+
+    private fun connectedToObjective(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
+        val objective = pack.units.flatMap { it.objectives }.firstOrNull { it.id == item.objectiveId } ?: return false
+        if (objective.kind != "RECOGNITION") return false
+        if (item.id in objective.checkItemIds) return true
+        val stepIds = objective.practiceStepIds.toSet()
+        return pack.units.flatMap { it.sessions }.flatMap { it.steps }.any { step ->
+            step.id in stepIds && item.id in step.itemIds
+        }
     }
 
     private fun validateOpenableBody(
@@ -1304,7 +1515,7 @@ internal object V2Validator {
                     }
                 }
             }
-            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..10) {
+            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..15) {
                 errors += structureValid(pack, item)
             }
         }
@@ -1334,7 +1545,7 @@ internal object V2Validator {
             errors += "Example ${example.id} objective is missing"
         }
         val unitNumber = pack.units.firstOrNull { unit -> unit.objectives.any { it.id == example.objectiveId } }?.number
-        if (unitNumber in 6..10 && example.display.none { it.code in 0x0400..0x04FF }) {
+        if (unitNumber in 6..15 && example.display.none { it.code in 0x0400..0x04FF }) {
             errors += "Example ${example.id} stores English instructional prose as a Russian example"
         }
     }
@@ -1600,8 +1811,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..10) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-10 source intake"
+            if (record.unitNumber !in 3..15) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-15 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -1684,8 +1895,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..10) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-10 source intake"
+            if (record.unitNumber !in 3..15) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-15 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||

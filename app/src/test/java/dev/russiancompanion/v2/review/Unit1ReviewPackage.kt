@@ -30,8 +30,14 @@ internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b
 
 internal const val UNITS_6_10_CURRICULUM_COMMIT = "c9f23afd219681319554d90424f2d59fd550cadc"
 
-internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber in 1..5) UNITS_1_5_CURRICULUM_COMMIT else UNITS_6_10_CURRICULUM_COMMIT
+internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
+
+internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
+    in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
+    in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
+    in 6..10 -> UNITS_6_10_CURRICULUM_COMMIT
+    else -> UNITS_11_15_CURRICULUM_COMMIT
+}
 
 internal const val CURRICULUM_SOURCE_COMMIT = UNITS_6_10_CURRICULUM_COMMIT
 
@@ -159,6 +165,12 @@ private const val OBSERVED_EDITION_NOTES =
 private const val MAPPING_OBSERVATION_SOURCE =
     "Product Owner structural mapping input v1.0. Page numbers are printed book pages. The input is private and is not repository curriculum."
 
+private const val UNITS_11_15_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+
+private const val UNITS_11_15_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -167,6 +179,8 @@ private data class StructuralMappingObservation(
     val lessonLabel: String,
     val printedPages: String,
     val topic: String,
+    val observedEditionNotes: String = OBSERVED_EDITION_NOTES,
+    val observationSource: String = MAPPING_OBSERVATION_SOURCE,
 )
 
 private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
@@ -229,6 +243,46 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Lesson 10",
         "107-121",
         "Possession and existence, genitive pronouns and prepositions, and genitive adjective agreement",
+    ),
+    StructuralMappingObservation(
+        11,
+        "Lesson 11",
+        "122-132",
+        "Past-tense formation and use, including reflexive verbs",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        12,
+        "Lesson 12",
+        "133-148",
+        "Future formation, introductory verbal aspect, the dative case, additional spelling rules, and prepositional plural",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        13,
+        "Lesson 13",
+        "149-161",
+        "Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        14,
+        "Lesson 14",
+        "162-170",
+        "Aspect in future-tense contexts and impersonal constructions",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        15,
+        "Lesson 15",
+        "171-187",
+        "Requests, imperative forms, and consolidation of aspect use",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
     ),
 )
 
@@ -835,8 +889,11 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
             if (value("corresponding_topic") != observation.topic) {
                 errors += "Mapping worksheet topic does not match the structural observation for ${row[0]}"
             }
-            if (value("observation_source") != MAPPING_OBSERVATION_SOURCE) {
+            if (value("observation_source") != observation.observationSource) {
                 errors += "Mapping worksheet observation source does not match the structural input for ${row[0]}"
+            }
+            if (value("observed_edition_notes") != observation.observedEditionNotes) {
+                errors += "Mapping worksheet edition notes do not match the structural observation for ${row[0]}"
             }
             if (value("alignment_disposition") != "PENDING_CURRICULUM_REVIEWER") {
                 errors += "Mapping worksheet disposition for ${row[0]} is not pending"
@@ -1323,7 +1380,11 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
                 "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
                 "relationKind=${assessment.relationKind}",
                 "relationParticipantIds=${assessment.relationParticipantIds.joinToString(" | ")}",
-            )
+            ) + if (assessment.responseKind.isBlank()) {
+                emptyList()
+            } else {
+                listOf("responseKind=${assessment.responseKind}")
+            }
         }.joinToString("\n"),
         sourceId = item.sourceId,
         rightsIds = rightsIds(pack, item.sourceId),
@@ -1501,12 +1562,12 @@ internal fun governedMappingFacts(unitNumber: Int): MappingPackageFacts {
         editionTitle = OBSERVED_EDITION_TITLE,
         author = OBSERVED_EDITION_AUTHOR,
         publisherImprint = OBSERVED_PUBLISHER_IMPRINT,
-        observedEditionNotes = OBSERVED_EDITION_NOTES,
+        observedEditionNotes = observation.observedEditionNotes,
         proposedLessonNumber = observation.lessonLabel.removePrefix("Lesson ").toInt(),
         printedPageStart = pages[0].toInt(),
         printedPageEnd = pages[1].toInt(),
         topicDescription = observation.topic,
-        observationSource = MAPPING_OBSERVATION_SOURCE,
+        observationSource = observation.observationSource,
         isbnObservation = "UNRESOLVED",
         isbn = null,
         mappingDisposition = "PENDING_CURRICULUM_REVIEWER",

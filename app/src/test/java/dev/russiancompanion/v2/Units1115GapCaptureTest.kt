@@ -53,15 +53,16 @@ class Units1115GapCaptureTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         val pack = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
-        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
         compose.onNodeWithTag("v2-content").performScrollToIndex(11)
         compose.onNodeWithTag("v2-unit-row-11").performScrollTo().performClick()
         compose.onNodeWithTag("v2-unit-heading").assertIsDisplayed()
-        compose.onNodeWithText("Not prepared").assertIsDisplayed()
-        compose.onNodeWithTag("v2-mapping-gap").assertIsDisplayed()
-        compose.onNodeWithText("Missing input: printed page range", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("Content complete, review pending").assertIsDisplayed()
+        compose.onNodeWithTag("v2-mapping-pending").assertIsDisplayed()
+        compose.onNodeWithText("printed pages 122-132", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("PENDING_CURRICULUM_REVIEWER", substring = true).assertIsDisplayed()
         capture(name)
     }
 

@@ -15,8 +15,13 @@ import java.io.File
 import java.security.MessageDigest
 
 class Units1115MappingGapTest {
-    private val gap =
-        "Owned-edition structural mapping is absent. Missing input: printed page range, owned-copy topic confirmation, and observation source. No lesson body, audio, or exercises are prepared."
+    private val pages = mapOf(
+        11 to "122-132",
+        12 to "133-148",
+        13 to "149-161",
+        14 to "162-170",
+        15 to "171-187",
+    )
 
     private val authorityTitles = mapOf(
         11 to "Past tense and reflexive verbs",
@@ -29,9 +34,9 @@ class Units1115MappingGapTest {
     private val preservedContentDigests = mapOf(
         1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
         2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7",
-        4 to "71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9",
-        5 to "3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687",
+        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
+        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
+        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
         6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
         7 to "d717a7a94e6151c43e02af3f067710594ede0efac9a8bd87a00c28c0426b63a0",
         8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
@@ -40,30 +45,29 @@ class Units1115MappingGapTest {
     )
 
     @Test
-    fun unitsElevenThroughFifteenStayUnpreparedWithoutStructuralMapping() {
+    fun unitsElevenThroughFifteenRecordPendingMappingAndReviewPendingContent() {
         val pack = pack()
-        assertTrue(V2Validator.validate(pack).ok)
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
         (11..15).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals(authorityTitles.getValue(number), unit.title)
-            assertEquals(authorityTitles.getValue(number), unit.topicSummary)
-            assertEquals("NOT_YET_INSTALLED", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
-            assertEquals("NOT_STARTED", unit.mappingStatus)
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
-            assertEquals(gap, unit.mappingNote)
-            assertTrue(unit.sessions.isEmpty())
-            assertTrue(unit.objectives.isEmpty())
-            assertNull(unit.advancement)
+            assertTrue(unit.mappingNote.contains(pages.getValue(number)))
+            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            assertFalse(unit.mappingNote.contains("APPROVED"))
+            assertTrue(unit.sessions.isNotEmpty())
+            assertTrue(unit.objectives.any { it.kind == "RECOGNITION" })
             val facts = governedMappingFacts(number)
-            assertNull(facts.printedPageStart)
-            assertNull(facts.printedPageEnd)
-            assertNull(facts.topicDescription)
-            assertNull(facts.observationSource)
-            assertNull(facts.proposedLessonNumber)
+            assertEquals(pages.getValue(number), "${facts.printedPageStart}-${facts.printedPageEnd}")
+            assertEquals(number, facts.proposedLessonNumber)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
+            assertNull(facts.isbn)
+            assertEquals("UNRESOLVED", facts.isbnObservation)
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
-            assertTrue(pack.provenanceRecords.none { it.unitNumber == number })
-            assertTrue(pack.items.none { it.objectiveId.startsWith("obj-u$number-") })
+            assertTrue(pack.provenanceRecords.any { it.unitNumber == number })
         }
         assertTrue(pack.units.drop(15).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
         assertFalse(File(repo(), "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))
@@ -91,7 +95,7 @@ class Units1115MappingGapTest {
     @Test
     fun anEmptyUnitCannotBeMarkedContentComplete() {
         val pack = pack()
-        val claimed = pack.unit(11)!!.copy(
+        val claimed = pack.unit(16)!!.copy(
             installState = "DEVELOPMENT",
             readiness = "CONTENT_COMPLETE_REVIEW_PENDING",
             mappingStatus = "PENDING_CURRICULUM_REVIEWER",

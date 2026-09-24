@@ -635,6 +635,8 @@ class Lesson:
                 "relationParticipantIds": [cue_id, answer_id, *distractor_pick],
             },
         )
+        if check.get("responseKind"):
+            self.builder.items[-1]["assessment"]["responseKind"] = check["responseKind"]
         return item_id
 
 

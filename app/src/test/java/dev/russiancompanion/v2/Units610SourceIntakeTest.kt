@@ -68,18 +68,18 @@ class Units610SourceIntakeTest {
         val pack = pack()
         assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
         assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("71eea30a758a20783157fb2951516a018622a7699cb2c56ffc807b209fb93da9", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("3988520bf278695abe77b973389360b14a8011445b05c45d4cc415e4d04b2687", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
+        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
         assertEquals("1335b22c65ebb01690b39239bdde49d2332ba8ff52d411ccbc3b04d5a5b3075c", buildUnitReviewPackage(pack, 1).reviewPackageDigest)
         assertEquals("bb4ed50ed544251586d42c7cd6dfe12d04dde8bd2cab301ff0a28033ab76dacb", buildUnitReviewPackage(pack, 2).reviewPackageDigest)
-        assertEquals("fa04c8d93397950c9c5bbccac321058e503f98f6d89cfcd1c81ad637db1c763b", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
-        assertEquals("3dc7fd8fdb39f6fe0f5a84b6c8381133e161de9c663ba4c1b3203d0f98e67bd1", buildUnitReviewPackage(pack, 4).reviewPackageDigest)
-        assertEquals("bcd4c3feff6f868af8a3f1101d811012139ff395274c379da1cef4c500e2e0be", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
+        assertEquals("ad313aac4c44fed5f091d39b86c442ada3ea3c02997f0451b47226f3498e200f", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        assertEquals("cfcd90bce59726e877354d0161396e6708753714782dc8096a1fcd030dc4acfb", buildUnitReviewPackage(pack, 4).reviewPackageDigest)
+        assertEquals("4f749c803872aa56fd72c304a6900d40cc6039f23cb46f83d6f270139a43fdd2", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
