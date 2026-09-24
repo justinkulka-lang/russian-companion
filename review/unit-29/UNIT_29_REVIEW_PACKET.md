@@ -11,12 +11,12 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9551e824c0657c54f74a0f4e512e4964f7e6f05d
-- Unit content-review SHA-256: 7e6eecefebb2ec6093de03ea69a835c38057110336edc8992933fd8104a9ed5c
+- Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
+- Unit content-review SHA-256: 565f44ea1ab0c43a308aeedaf83126cd4079038317da257d19813e75bd9fa13e
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: f96d532a7d8e633269ae4d9e3c4bfa1b8f08802737c5896c6d1679db5c2fcf55
-- Review-package SHA-256: a75c4633b26a754976079b8eb0cea5e69ed0f8965135172957f1fb9923ce92c7
-- Repository source SHA-256: 15c636ca8640209a5bfefccaa72ce390a95621c003ffc6f778c2072e0b93f463
+- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
+- Review-package SHA-256: 36e266e01f57eab526dc7e0c07832538358130c5eeb045974a80bd418d626962
+- Repository source SHA-256: 0de22730ea75425feaeb0016bb19d46914f12fdad77240cb8e5c697e3ddde6ee
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1323,11 +1323,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 26bef9d6a092aeb089fe3658ca05d36a8ba8ff3acf0b18875ec92239227a586d
+- Content hash: e5953d2c7c5bcbf707aeb965eb4bd3972b2d0fcc28ec525de635a891f4834929
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0. The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1341,7 +1341,7 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 214711dfd8f4e797c81efa1403dd8b6cedf0cac2ba9dfda3d9844f5d17d05834
+- Content hash: 1068b9010d58cbb7253f2a871db533cec60b1e14b504b8f3b4b03017ed26788e
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1356,7 +1356,7 @@ shippedText=in the past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=54fc0bf0aab2d13e68793f9f83c6a74192dddfc7258421dcbd066cb85b7e79a4
@@ -1374,7 +1374,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c58fe427c76db05c5711efc582318630f0ae23d4253202b2f1508087be127c44
+- Content hash: 655bd42ee95f5a0e737fe381e68ce8ab517f8d1bec297a983ecb02a11f30376c
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1389,7 +1389,7 @@ shippedText=чита́вшая
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=a06a9caea772c126c7a375fdb9db87d8e4f284d25315d30473659f697e1ada98
@@ -1407,7 +1407,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbdbc7926da5c07f0617f496ed61ac84b690e33fee8160037d028be83f3f615d
+- Content hash: f75f57eb488217e28045304139ca07ff0e06fa8b140a5f7c7d565f2637eb90a7
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1422,7 +1422,7 @@ shippedText=in the present
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=bd20a96b52a0d1fc808fea6e34a05775c72f7edb6f376920e44f6a2357b2ca11
@@ -1440,7 +1440,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd7b9bb2413bae8db69eec36c1a4d38e1091d188b5098016a4ff5c868ac24c0a
+- Content hash: 89e1e5379d32f8b39e051187521f7da5b4f5a057f68c50791fd3c18e140f880c
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1455,7 +1455,7 @@ shippedText=чита́ющая
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=ce86deb0a4f292bce9547ca5326857b8d5d66bce06de76ec50d3234f68b0b2b2
@@ -1473,7 +1473,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 913e8b4ed1b814033c2dae6a47aa837130ea0ebb6b9eb94eb380362c488d6111
+- Content hash: 6d7b9dc12287606e42ed3b39cc3bd65996f6eebd6a2749b91a469205fd022779
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1484,7 +1484,7 @@ shippedText=living
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=6112e30d27313fa2f7e7d84c5cbfe8c527b89d0f4b2047a1c3923a83c8eedeeb
 contentHash=a93fcdf7dbae1c2f165aae3ee372a6cedc28effc66ebdbc08ae6eaa951ef53f6
@@ -1502,7 +1502,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f387c4601f3b7a0c66894c9d097a4457ba8133318a4f511c68b8424dce43b82
+- Content hash: be40b0cec0d469969bee42c6a746d067ebd8f4491d9de482be6a6b55222b6b81
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1513,7 +1513,7 @@ shippedText=живу́щие
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=6112e30d27313fa2f7e7d84c5cbfe8c527b89d0f4b2047a1c3923a83c8eedeeb
 contentHash=c87ca5f2464153658c2ec7ba8239942c3e739a26128d0ab65a51a06d0561f688
@@ -1531,7 +1531,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64a65804069af5fb11f1a67dc9cc697e7a3797ec21861192ec6e32e8ba8d67f6
+- Content hash: 6817b92e6e5a0dae21245f9f54d90fc4740fcca0ddc858c3639318f785bdaca9
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1542,7 +1542,7 @@ shippedText=bookish speech
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=c69bffbeed760c7b98e4311c04cd0205ee6491ac5b661e7be99c413f64e18126
@@ -1560,7 +1560,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4e6d8ddf99097437ff57ef576572e8016c38f2fe03f69362e863cc69cc5f238
+- Content hash: 8804a376f8c037e5b1a0e19186878764272eb9789c1933b4bfdd573023e1c5b8
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1571,7 +1571,7 @@ shippedText=Пообедав, я пошёл гулять
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=ae97d1d7472164fbdb7d49796b4e9dec13d759c26aea4c61a4d279b1a650091c
@@ -1589,7 +1589,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a1403767787a1738374c2579fff3a8cb0d945601e384e3e16b51db25f56f480
+- Content hash: 45945dda5d76957ed2677de8aa4ad669c067a4914af3f4b94b4a6ef09ffc469b
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1600,7 +1600,7 @@ shippedText=Пообедав
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=f12073a1a349eeaa0a784aac41d57a52a531b8cc56794bba3fe17005b0aa53ed
@@ -1618,7 +1618,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82f05b6e43265bbf23e8cc2b248ae0c8da88d661bae55bb2e761df0c744aaf17
+- Content hash: f667cc0c008a41261d2c0d50665bcd0537c4dc25d3a20fdae584a34cdb2118ae
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1629,7 +1629,7 @@ shippedText=я пошёл гулять
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=860b4221ddb9bece82cbb0c36b001daf3262ffb9664f4b6a5a7d9b78a6a576cb
@@ -1647,7 +1647,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 86f9aa57f79f8c6c9141d9e12af30d6e95c07392ffa9e93420e74943fbfdb535
+- Content hash: e47820daede03565b2b791746f4b5da20e0a47b7b23115c75223fe4272cbac2f
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1658,7 +1658,7 @@ shippedText=colloquial language
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=8743f1c8e93eab807d6904cf2adba3cd036bbe159ea0ffe8da93c268fe7eae1b
@@ -1676,7 +1676,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57a1300fbed7e9cd9e54180a3b2b45ab88c91ca82a4d2208ec129c6e91c4c3c1
+- Content hash: 903e7f23f70b613050d134bc7109f557b12308e77770c154fec6855c672b5bef
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1687,7 +1687,7 @@ shippedText=Я пообедал и пошёл гулять
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=6f7348c07ad73d20066880f70b3f4172dcf5d081b794385ab77e36a1c831de1e
@@ -1705,7 +1705,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 389f6e2e44b42b8c24bdc7bf3820b19334f1ed2ce46960e98de7ebd02b42cfad
+- Content hash: 4eb8aee17127ee58a6a44f4a315ad1fdb8bc6831ebfd284fbd89c9744c6ad9f5
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1716,7 +1716,7 @@ shippedText=new
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
@@ -1734,7 +1734,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5a9e5ac35865d140f7e60fa17473fd45663073bc9b0376523de5892d6f65ec5
+- Content hash: 4fc73a25f6e4f5b9c0a42649219440e7b45590b3fe19c860c2f39671f033a3a8
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1745,7 +1745,7 @@ shippedText=но́вый
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=2b2f765b2e162f149dfd5b622e4a7022f5890647a9ca269decb3b26d59321415
@@ -1763,7 +1763,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 601fb9f8d423c45dca15ef24a886c69df3809f2a8904083669ff09a872a0ffcb
+- Content hash: d71947b7428b122359e96fd14dde6801c7f817d55cb49745c27583f57212d8e8
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1774,7 +1774,7 @@ shippedText=new
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
@@ -1792,7 +1792,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bf438f939ea1eadb321dca6d1cdcb6fa79d1331e48528182649b747f584d4a2
+- Content hash: 18ebae084c382f1aee22937d9b415fe8219e36cfb4f0031d05c601b09d9aefcf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1803,7 +1803,7 @@ shippedText=нов
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
@@ -1821,7 +1821,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae120f01dff2c491704b4bf03c460078484ae0a342018dbab4293698f201f5c4
+- Content hash: 2b2d0ecf4f23a8161cf4271e29a6f79f1c3996e0b83ac9ef981bd95686a2e6f8
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1832,7 +1832,7 @@ shippedText=beige
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=b4f0534e651ac8d5e10d95ddfcafdb123550a5e3185e3fe61ec1746a7222a88e
@@ -1850,7 +1850,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb5dbc8026fd025801f12141d6a6d6f1eac6e2440582b78bc2492fe47a35bb52
+- Content hash: 9aad60bec900c283828b5488bb9b88e9594e3c7f976a4a2695b2f74ad637753d
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1861,7 +1861,7 @@ shippedText=беж
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=7e7bdbcd586e76916429c3e938a66eb72771755d3b5961b9c8ed5e9db3f3ffb4
@@ -1879,7 +1879,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b1a6bc69b72a6e9c930cd8267f59dcad5e04d62a2f3630b095ee12bb7c73340
+- Content hash: 1ede29f73b5e1a7323e0888d54042a06fada46699b081a9bf02fe26d78ef8e31
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1894,7 +1894,7 @@ shippedText=The active past participle is used in order to indicate actions that
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=d212c8415770d6bbf27c6b2d30bcc0a9e72196fe3e5b7fd9cff5e167bbbbd59b
@@ -1912,7 +1912,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5986be67a308f278514b68ef9a5441ad25211ad6385c57a1ca1d027456dc129
+- Content hash: 0708979f1dc7988559a007929ffb0ae5c5ac79e83cc0703b1f18571e2cb80ddc
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1927,7 +1927,7 @@ shippedText=reading
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985
@@ -1945,7 +1945,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 103ea38099553d596157c60683741c16a77c44480b47f17d9d05b239342d9418
+- Content hash: f6ab1796e2b45f57719e9187b56578b352ebba3c8b6fbaa5251c5d4ae4263ea1
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1960,7 +1960,7 @@ shippedText=that read
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8
 contentHash=87c7367dafd3c64cb89c8417c9b63a89a68bf9cf76619529a823e5a88fedeed4
@@ -1978,7 +1978,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 915f1e5236e988332a7f615a2c9a6a63ac6715c91306011234ee130c65c6e21d
+- Content hash: 38ef2e1a75edfbfa197f67f5f626de512c6db493ff0b7edc96e29c3e49933b85
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1989,7 +1989,7 @@ shippedText=adverbial participles are considered a feature of bookish speech
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=958d5b68fa520eeb656398287de1a59b8e950f5ec54058e570927973f6993546
@@ -2007,7 +2007,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b8e166f0ff100b1dd2170da5b663aaedd2bc00edaeacf4dac9f485ddcc1e7ba
+- Content hash: 35aee95cff19ba4db6c721166229d5eedf7fbf981bc1099520b6315009d07a1d
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2018,7 +2018,7 @@ shippedText=Having eaten, I went for a walk
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=81d3d51990e27aee8e876c7b2a68cf9237d7ac26be64cb7e52d336cdf0d4a74d
 contentHash=4e458038b57fae2db0465d645856b27cc0c6e148d01f1a6e2a29e2a40ff92882
@@ -2036,7 +2036,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3a7abbe5fbf4a6c755f41eb97623866cabd7828281ad07859c268f3624fcfc3
+- Content hash: 55bed033788c782c17e56af1b18998e59040cf7cf611b44ad5a3c073b8a836bd
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2047,7 +2047,7 @@ shippedText=the short form appears only in the nominative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=52373b4850a9d54ea0e26e8965bb0b1bba856721d3926f3449f40295c5eeeee4
@@ -2065,7 +2065,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af9e504099feaf9bfb866073f0c02f057ad0986c02ae6056cb50f7bf9a747f0b
+- Content hash: 4a743cf7f92e0a4793a5a48582d2c2e7db7db01f3e237fcd586df3e15b14904a
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2076,7 +2076,7 @@ shippedText=khaki-colored
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
 contentHash=28b780920257464a195d68ccdab3e56274481e11d6b14ed275f5274c95603005
@@ -2086,19 +2086,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u29-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 288cc933a45dc16eea721a5a60ae9d6160ed6c6e727075d0d523d4579756d89e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
 ### AUTHORED_ENGLISH `en-u29-161`
 
 - Objectives: none
@@ -2107,10 +2094,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea76a5c2e2516fb9920494ae6f9dc392d9d39485c017876c4de7404721fc46c5
+- Content hash: b90e87d90c5f041e87f9c5e1f51a26fff009a4f3c0804f809be462899d2bc4f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the present.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u29-162`
 
@@ -2120,10 +2107,10 @@ text=The frozen line writes this label on the other line for in the present.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a6b3540665a8b43e9566751645e5f835c53ddb526932983f4f98b8b65d459ad
+- Content hash: 92e01f390d8f613d04f137472475e19aa9904ee0e5a41d09ab251b1681ab60fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label as a different phrase on the past line for that read.
+text=The frozen line writes this label on the other line for in the present.
 
 ### AUTHORED_ENGLISH `en-u29-163`
 
@@ -2133,10 +2120,10 @@ text=The frozen line writes this label as a different phrase on the past line fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b3118fb501ba8ed63e895d1b4ed512f5fb929aca7c6d14df0f8f5f944f176fc
+- Content hash: 6f4c51f743c65c7542bf55e22068586aea6a9d95fd44e1ea6ae1deda8c9037ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the present).
+text=The frozen line writes this label as a different phrase on the past line for that read.
 
 ### AUTHORED_ENGLISH `en-u29-164`
 
@@ -2146,10 +2133,10 @@ text=This label is paired with the other form (in the present).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20df56b9db6638d2d56c03ea5c82e694590de525e92d343b203fea62782a0cb2
+- Content hash: 520a478493e4eaa32e772a8e78cd4eee12786c53bd9ed4492eab3b2dc05441a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is not the time label asked for here (that read).
+text=This label is paired with the other form (in the present).
 
 ### AUTHORED_ENGLISH `en-u29-165`
 
@@ -2159,10 +2146,10 @@ text=This phrase is not the time label asked for here (that read).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c013d7cd0c32073bccd9a1a61ed6ab2bbb85834a37bb586d0014a9012008e68
+- Content hash: 9e8bdd09098653a6480d5a3c20c720c5a16bf829ec4b339133b4814f5fdd4828
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
+text=This phrase is not the time label asked for here (that read).
 
 ### AUTHORED_ENGLISH `en-u29-166`
 
@@ -2172,10 +2159,10 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 485141e830a55809d4966154ca2eca01f6b467d32a9bcf47a27e731517728408
+- Content hash: 6aafcb79daf31bd11b1629df2a03986ce04bd85a20bfc0dfc70c9e350b31093b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with the shown form?
+text=The frozen line says the form indicates actions that happened in the past. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-167`
 
@@ -2185,10 +2172,10 @@ text=Which admitted English label is written on the line with the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2d9e91a622cf1eadb99539e872eae32096b45fcd838eedcc81ae11cd304ac2a
+- Content hash: c591115cebc6267112a8d4c8af9d6e61baf2cfb5f144c8fa51c70588db0d746d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Which admitted English label is written on the line with the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-168`
 
@@ -2198,10 +2185,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e72e4dc6ef346eb51c65e50074ff8690ee15e8d3edd4f5947e03fe8e3a41b078
+- Content hash: 035034241aa9715010b26370180ce6cd41648a010c78651f3a01553ebc6566ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the other line for in the past.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u29-169`
 
@@ -2211,10 +2198,10 @@ text=The frozen line writes this label on the other line for in the past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 979e6c2fa7891e0b8f7b482a344a62146a045ed3c52a4fd9009641265d033893
+- Content hash: ece6c094222e7a5bc9176d1f635fcc633cc3bcc280dd3b6bda59b0ec2fb5e57f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this word inside the gloss, not as the time label for reading.
+text=The frozen line writes this label on the other line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-170`
 
@@ -2224,10 +2211,10 @@ text=The frozen line writes this word inside the gloss, not as the time label fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50328fdf7c849958f241af0e1e0fd90905a8beb8c42ccfc7898201ad5d09312f
+- Content hash: 7ea8e5d147965a0c9b41d06dfe95cb10f37afef6075ceda697088391aaebe634
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other form (in the past).
+text=The frozen line writes this word inside the gloss, not as the time label for reading.
 
 ### AUTHORED_ENGLISH `en-u29-171`
 
@@ -2237,10 +2224,10 @@ text=This label is paired with the other form (in the past).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 988f131ff51fde1972367ce8caab82171469fee9a5aa2d9f9f1bd9379f318926
+- Content hash: 7136bcec2a205eef8e7244b08724cc667a809cc19b32f59611af78c3621bc9f7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is not the time label (reading).
+text=This label is paired with the other form (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-172`
 
@@ -2250,10 +2237,10 @@ text=This word is not the time label (reading).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8dab8cdd16bc21ac9b0c19f049cdaafbf734ba5a230ab083673bb699d0b962c6
+- Content hash: 148ec1e9cc43ef6f3ba1f92cb9736622ae4b57afccb9c79c1610d53ec76d2019
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
+text=This word is not the time label (reading).
 
 ### AUTHORED_ENGLISH `en-u29-173`
 
@@ -2263,10 +2250,10 @@ text=The frozen line says the other form is happening now, in the present. This 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc6c3fbc2c5c61c0e95dec4abfb66d6d7deb5b949a6c5050054ee37be3aac37b
+- Content hash: 84b75ec6be6d8fa4abcabbe0fa677b87ca6941caac93cd56ab07c5a8c58c2754
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written on the line with this shown form?
+text=The frozen line says the other form is happening now, in the present. This label is written on the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-174`
 
@@ -2276,10 +2263,10 @@ text=Which admitted English label is written on the line with this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a0ccd8a04472cb1a96455bd7bc09901d4887c4782f57af995c1173be5baa450
+- Content hash: 4483def1294a8820c2ebb245c7e6413d53c66a4a2e2fd8b636b80fcec3321419
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label on the shown line for in the past.
+text=Which admitted English label is written on the line with this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-175`
 
@@ -2289,10 +2276,10 @@ text=The frozen line writes this label on the shown line for in the past.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2dd004b6ac1296cb01f2bcfa2e293c454b459c545c33429df08680a4ade4489a
+- Content hash: 852e9ff92b7c896d205b65c97da1afe420362041180d99375656c893941c25cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
+text=The frozen line writes this label on the shown line for in the past.
 
 ### AUTHORED_ENGLISH `en-u29-176`
 
@@ -2302,10 +2289,10 @@ text=The frozen line writes this phrase on the shown line, and it is not the oth
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9eb7bf91e94829ff9d0434991338de686c74d1953b797ea248f5036536b82842
+- Content hash: 90b12ed6e39a463328f5288d73f1a78fbaba6a6c48b29a49229ea51ef734d44f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the one on the shown line (in the past).
+text=The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
 
 ### AUTHORED_ENGLISH `en-u29-177`
 
@@ -2315,10 +2302,10 @@ text=This label is the one on the shown line (in the past).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ef2da8390109d9f77b228eb2c99906cccd522da7dcb4eeac3857b050f62acfa
+- Content hash: 75a41d70c8cc3ad5e3d6f66fa8506ba25855931ef6ad4a5b7417573e84cb20d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase stays on the shown line (that read).
+text=This label is the one on the shown line (in the past).
 
 ### AUTHORED_ENGLISH `en-u29-178`
 
@@ -2328,10 +2315,10 @@ text=This phrase stays on the shown line (that read).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a59faad24ff3d93553bf78fb23576f59a0e1b1dfcf2e825a43157aa04d59acb2
+- Content hash: bffe8334e648c33bb09a2f1be4d32a1701135cc5e5ded4727ad61d905042f857
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
+text=This phrase stays on the shown line (that read).
 
 ### AUTHORED_ENGLISH `en-u29-179`
 
@@ -2341,10 +2328,10 @@ text=The frozen line says the form indicates actions that happened in the past. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c2141a2cb204d9c9c8f67d1a7abc198363af57f005b5be9405cb4a4ba1c39b0
+- Content hash: 348ec181f6786fc2cbf5f04fbf173843837df126ca5a1d506fc0ee0f3c58bc30
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss names the other time, not the one on the shown line?
+text=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
 
 ### AUTHORED_ENGLISH `en-u29-180`
 
@@ -2354,10 +2341,10 @@ text=Which admitted English gloss names the other time, not the one on the shown
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5fe81294d126a88c8064649fb8cbd5a0dd15cddb92fb4f1d6dc8c70787a94a5
+- Content hash: 17ea373a487c815f48af8b6b8ddba9b67144bb376ee363b8a52ea242e27cf4a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for beige.
+text=Which admitted English gloss names the other time, not the one on the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-181`
 
@@ -2367,10 +2354,10 @@ text=The frozen line writes this label beside a different form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b23bfb17e021c93edadc47470ce82dbb54c0db02c164355286684b7ed818644
+- Content hash: 173d7ee8d5d57b702086dd49da3fa46e567a454274d8fa611306225fe6c72e2c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for khaki-colored.
+text=The frozen line writes this label beside a different form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-182`
 
@@ -2380,10 +2367,10 @@ text=The frozen line writes this label beside a different form for khaki-colored
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7864541f30c7d342c7d0b2e2207c15283f7fe87c1076b3fe43190ebf2b4ff3a6
+- Content hash: f4fb18652469fe4d2563c567f39a675b64eda7f2429c5e28ff77290af55f3187
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with an invariant form (beige).
+text=The frozen line writes this label beside a different form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-183`
 
@@ -2393,10 +2380,10 @@ text=This label is paired with an invariant form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb4193d140db1a254d10e896bf9719f844e0a477e4c92d9874d144bf5612e2fe
+- Content hash: 0aabf1b72ee542b79fb4fc4ee46997b1edb9bdb81a95691f367674bde5b1f6c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other invariant form (khaki-colored).
+text=This label is paired with an invariant form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-184`
 
@@ -2406,10 +2393,10 @@ text=This label is paired with the other invariant form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ac733e19a47c5ff5f5c16c937a5ee208e1720dec8a41b506bcaee90ed8f2123
+- Content hash: f7b2d33ec2c153aa78592d3ac0b786a282a1ef38675946e47a8720eeb55553f0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
+text=This label is paired with the other invariant form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-185`
 
@@ -2419,10 +2406,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02b5efdb83d6f2ee4ac55ff5e77a648a9158deda31f0b001a1ffca3c17393fe5
+- Content hash: 1d584e5e52bd39d30a606dab0412d33b80e3a3fc65d7783c8278609891b3e8ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
 
 ### AUTHORED_ENGLISH `en-u29-186`
 
@@ -2432,10 +2419,10 @@ text=Which admitted English label is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc58170d4fdd2a2ab128a3cc6366384083d4ff45cc37b692d89827c959964b57
+- Content hash: cbe17ea4ca81fe24eb7ae82a15afd14c48ac6d97ccf1afc332a48bb6902517c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for beige.
+text=Which admitted English label is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u29-187`
 
@@ -2445,10 +2432,10 @@ text=The frozen line writes this label beside an invariant form for beige.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0173859eca7c8546dd874c684efc275f7ab2a647faee634fa674ce1b32cd686a
+- Content hash: 3425a12fe4da4af921bc23fbb6eec10e7adf87dd44f744cd3310f12e928605f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside an invariant form for khaki-colored.
+text=The frozen line writes this label beside an invariant form for beige.
 
 ### AUTHORED_ENGLISH `en-u29-188`
 
@@ -2458,10 +2445,10 @@ text=The frozen line writes this label beside an invariant form for khaki-colore
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b107c1df19e8bbc800c8dae97f57276d8c8b58e84ae761e2bae54a18d360848f
+- Content hash: 4a0f70c6c429b8b7112c3f7aa48470f93139131b7f838833a3f1ba66841c9228
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is not the gloss of the shown form (beige).
+text=The frozen line writes this label beside an invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-189`
 
@@ -2471,10 +2458,10 @@ text=This label is not the gloss of the shown form (beige).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca17b4a887154fef78a0b9569b1374b0d5e0fda9b38439c7b3d40633ad11c5d7
+- Content hash: 7832cfdc394b5af70bc652e759cd0b599aa5061a3eadd3ad432d3529374a6961
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (khaki-colored).
+text=This label is not the gloss of the shown form (beige).
 
 ### AUTHORED_ENGLISH `en-u29-190`
 
@@ -2484,10 +2471,10 @@ text=This label is paired with a different form (khaki-colored).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 371b2b046b1c988d13da6ab282f0cb9c0aa19bf7e1decf29445b0460b9683a5b
+- Content hash: 9ec9d21b0af870980619d05eca820b97c52b292ad83e883f8b0b03c1e81be05d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
+text=This label is paired with a different form (khaki-colored).
 
 ### AUTHORED_ENGLISH `en-u29-191`
 
@@ -2497,10 +2484,10 @@ text=Which admitted English label is written beside this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28b5931fa3fa79995910a11e34acf3cbec0c711e8a7c8c8f63298beb07a621c8
+- Content hash: a93ab331fe90e263781e6528c7e46d9b0629672784a577be1389d4c48092188d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other forms for new.
+text=Which admitted English label is written beside this shown form?
 
 ### AUTHORED_ENGLISH `en-u29-192`
 
@@ -2510,10 +2497,10 @@ text=The frozen line writes this label beside the other forms for new.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0615054fbf1ffe7e01b845549fe96be2aaa6a7fd65dd4040e5889e98d61490c0
+- Content hash: 0ec14f18ebeea5066eee895a997d6af8754a95b6518098291e7a3c9ca5adf558
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other invariant form for khaki-colored.
+text=The frozen line writes this label beside the other forms for new.
 
 ### AUTHORED_ENGLISH `en-u29-193`
 
@@ -2523,10 +2510,10 @@ text=The frozen line writes this label beside the other invariant form for khaki
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be4396839943416662a5d9d0055657f68b24614d9efb6039a43db5d23d3c51ea
+- Content hash: 885ff536f8952b1cc75467691682877acc56a5fd63f85023823abe43c1268807
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (new).
+text=The frozen line writes this label beside the other invariant form for khaki-colored.
 
 ### AUTHORED_ENGLISH `en-u29-194`
 
@@ -2536,10 +2523,10 @@ text=This label is paired with a different form (new).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee7379e939173ac37c6171adc55f5b98f611b897b5101d9c67b1529e4914fcb6
+- Content hash: d2e7d24e03710c7cd280bec7a9978dee9182d72acbbbf58673a429ac506e46b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
+text=This label is paired with a different form (new).
 
 ### AUTHORED_ENGLISH `en-u29-195`
 
@@ -2549,10 +2536,10 @@ text=The frozen line says the short form appears in the stated role. This label 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 483211b7bcd6d4866c47593f9250bafde538311e19c244cac319720ae164fbcc
+- Content hash: ea5b2d32a7d2ca8b4edcdbd99799105b3d4cb3eddc0dc9edc968b2cf873a68c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the invariant form?
+text=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
 
 ### AUTHORED_ENGLISH `en-u29-196`
 
@@ -2562,10 +2549,10 @@ text=Which admitted English label is written beside the invariant form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 653ed69ea10d42397a8729f951cc44030d670b76f46a79aca82c2ccaae7f0199
+- Content hash: 47af61ddfda9b0777dd4024de6a94533a49318ebae9f82da28de3b85248db33a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the replacement line for colloquial language.
+text=Which admitted English label is written beside the invariant form?
 
 ### AUTHORED_ENGLISH `en-u29-197`
 
@@ -2575,10 +2562,10 @@ text=The frozen line gives this label to the replacement line for colloquial lan
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a6fc59a21500af369b8b3c7b980ce32bc4739fa1ecf16fb5e0e0c84745db3ae
+- Content hash: 82c79534995c08be9e3d4e5fd5743054c7ed38b2febf411ecc3224d1028a25de
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
+text=The frozen line gives this label to the replacement line for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-198`
 
@@ -2588,10 +2575,10 @@ text=The frozen line writes this as the gloss, not as the speech label for Havin
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77546ed6ddff52cbed2ac710a3efbe57df4c3e8872f4ce9992b517aacec9c2a8
+- Content hash: 6d12892d068bff36e0561d66f0e989add8d6a8a64501a3383c3f8d7a2ccfde2c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (colloquial language).
+text=The frozen line writes this as the gloss, not as the speech label for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-199`
 
@@ -2601,10 +2588,10 @@ text=This label is paired with the other line (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e407345830c5f4a5f10b0d6dea710ec5dd0389a48bb5850e1a1dc1f6ad7d0df9
+- Content hash: 65031c0cfbf7ff7020f4e9d5afc2eeb8fa054944caedeb3e3e236724ae59e2e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is not the speech label (Having eaten, I went for a walk).
+text=This label is paired with the other line (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-200`
 
@@ -2614,10 +2601,10 @@ text=This gloss is not the speech label (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9db1933013ee955e7e36939fbb57ca6533f092c1260fb2607a4b1197a31856b6
+- Content hash: b739e77e37618b3e3d8889634d9d53f3b66cfe7a6c8783989458352374865989
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
+text=This gloss is not the speech label (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-201`
 
@@ -2627,10 +2614,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6607d7c473b89653762c49eee7f632e68121fd310a04c248d302d88ce73d9651
+- Content hash: 1989a333e0fa5356c9a0b019be16893305209335711a4fbf2decb13caf64eba6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the kind of speech the source gives the shown line?
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label is the one given to that construction.
 
 ### AUTHORED_ENGLISH `en-u29-202`
 
@@ -2640,10 +2627,10 @@ text=Which admitted English label names the kind of speech the source gives the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bccdc4d0aec41d59b7c7129af9a089614cb054d97156367c36ddce6dcb7cbc56
+- Content hash: 837162acbd4ad20eeb1ec211ffa49aa0fc6e2c05bd3b18f6b89351f45af9efcd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives this label to the other construction for bookish speech.
+text=Which admitted English label names the kind of speech the source gives the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-203`
 
@@ -2653,10 +2640,10 @@ text=The frozen line gives this label to the other construction for bookish spee
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d3b9438488a922cc81db26af0d8f4b96576a70b512533bd295454af69147803
+- Content hash: b464acb3f64aec78be3172a39f328aa1e7d8edafc018ab2edcf7e1f17911b3c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
+text=The frozen line gives this label to the other construction for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-204`
 
@@ -2666,10 +2653,10 @@ text=The frozen line writes this gloss beside the other line for Having eaten, I
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e6acde60c442c80780b4a25517a0c9555bd8d5e0dd7832d2cc9953d08f26379
+- Content hash: 44ec6e437154861f6ceda5b8bf1b5ed66ffd38e377561d48219551b91be3b176
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other line (bookish speech).
+text=The frozen line writes this gloss beside the other line for Having eaten, I went for a walk.
 
 ### AUTHORED_ENGLISH `en-u29-205`
 
@@ -2679,10 +2666,10 @@ text=This label is paired with the other line (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40e6155446210a2c2688792fb3c19807e7fb2f9f59233d158421ed8d0f2885db
+- Content hash: 148f90b2a05bfe7eb1c051aa19fbd2fd4fc139b7b9618dbe5b955d2db3bb6f26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss is paired with the other line (Having eaten, I went for a walk).
+text=This label is paired with the other line (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-206`
 
@@ -2692,10 +2679,10 @@ text=This gloss is paired with the other line (Having eaten, I went for a walk).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f884ba76969fb9729284ef69b0ee7005e02153d1cc0fd1c5d02020915a3b90e9
+- Content hash: 9bc177acbe7d51868abc61ffa86163079722bd03fe8bdc6535c15c241fab95a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
+text=This gloss is paired with the other line (Having eaten, I went for a walk).
 
 ### AUTHORED_ENGLISH `en-u29-207`
 
@@ -2705,10 +2692,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7970e1f9557e40f0a1633258f9ee64042137c12b0df68adfc0e30fe8fea49bc8
+- Content hash: e6e2c795af99e7022b9fb0486ec9f183c6ba57dccce1b50b049a747d86288615
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the replacement named for the shown line?
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This label names the replacement in colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-208`
 
@@ -2718,10 +2705,10 @@ text=Which admitted English label names the replacement named for the shown line
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90cdacde670b2a6f22f6bea9ee7300c791d4b3029f1b8a02fd4edcea0b03a53c
+- Content hash: 2355cac69b5a778e30790535ba062c2071d348082ce312e26a9b7c349e9955a3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
+text=Which admitted English label names the replacement named for the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-209`
 
@@ -2731,10 +2718,10 @@ text=The frozen line uses this phrase for the kind of speech, not as the gloss f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 110338b5170d06fdc592130f60dc6f5fd163b0db399227e16d1db8316fe71e47
+- Content hash: ff87e5a699b64f80551bfa79b82015666f6738598b34416a0855b7691c14b4eb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this phrase for the replacement for colloquial language.
+text=The frozen line uses this phrase for the kind of speech, not as the gloss for bookish speech.
 
 ### AUTHORED_ENGLISH `en-u29-210`
 
@@ -2744,10 +2731,10 @@ text=The frozen line uses this phrase for the replacement for colloquial languag
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2eb4c414e7d58b2a8facaf82839665595b8060ea29863e897f62d60b289930ab
+- Content hash: 997e066f8e069c451f9e6e07083a9528bbeb09e527aec478b67c701e41b62d28
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the speech label (bookish speech).
+text=The frozen line uses this phrase for the replacement for colloquial language.
 
 ### AUTHORED_ENGLISH `en-u29-211`
 
@@ -2757,10 +2744,10 @@ text=This phrase is the speech label (bookish speech).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e7f23381d571b41554023f1b30a81bae9cd11e30d3a97653ac474d273a86976
+- Content hash: 6956595c9746732770f181b3fa2f6b8483b53c4b284f77c93f6668c75f262e7e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This phrase is the other label (colloquial language).
+text=This phrase is the speech label (bookish speech).
 
 ### AUTHORED_ENGLISH `en-u29-212`
 
@@ -2770,10 +2757,10 @@ text=This phrase is the other label (colloquial language).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 716ddbcacc3dbe94d2b11bc3c72cc1fcab5964a02ddede13e82b1c2ebd2fb52c
+- Content hash: 927a81a78bdc62e911bc69c29c77de14894fac086a6b2c4d86e8298e9551431c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
+text=This phrase is the other label (colloquial language).
 
 ### AUTHORED_ENGLISH `en-u29-213`
 
@@ -2783,10 +2770,10 @@ text=The frozen line says adverbial participles are considered a feature of book
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39a734dbc057cb104c8dd84f873403955b350ea65aecd106324cca56cc3d9472
+- Content hash: 02f117d267444f43f69a507e2661296cc7cbee999febea3e755be85f198aa6a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown line?
+text=The frozen line says adverbial participles are considered a feature of bookish speech. This gloss is written beside the shown line.
 
 ### AUTHORED_ENGLISH `en-u29-214`
 
@@ -2796,10 +2783,10 @@ text=Which admitted English gloss is written beside the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cc0b279fd64f46fdf052c69a18d30672ceb14b2293777d34ffe704fe8e78cc2
+- Content hash: 9841d30ffc1a77687135ba7409ab2d569fa2a81e7f7dbf307e94e5048816d07a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted active and short-form lines
+text=Which admitted English gloss is written beside the shown line?
 
 ### AUTHORED_ENGLISH `en-u29-215`
 
@@ -2809,10 +2796,10 @@ text=Admitted active and short-form lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eeb5d5b9d322793be80583fc4f7eee9b0544b8b2936ab5341db82171cf40bb10
+- Content hash: dc0261bd4a5d1b21e174313f984436928f0281b32ce34d4600863eea3be7f6fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.
+text=Admitted active and short-form lines
 
 ### AUTHORED_ENGLISH `en-u29-216`
 
@@ -2822,10 +2809,10 @@ text=Proposed Unit 29 uses admitted active lines, the short-form contrast, and t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46c3789815218c173a5d34b611e9041e702afb03145f505d41dbea9030823103
+- Content hash: cfd390ca5bd1f740bc1374e0f28b49d4219a07db339185b987b991fa189aee24
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
+text=Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u29-217`
 
@@ -2835,10 +2822,10 @@ text=Open Lesson 29 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a0bcf3add9372df467ef835db88ee5bd896e566fb685bfeeec61b4f512d5737
+- Content hash: c7825027e04e5b0df35056a852db7557904d6e5027ed190ef669fb632b0fc291
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Open Lesson 29 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u29-218`
 
@@ -2848,10 +2835,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5120aefa7f6e51a3a0e9318e45a19a09053cedf6c3b767503c3df57cce3a9587
+- Content hash: 327d5e952d32edfdfaff54f59dfd8d206c5f2803b638b37ab59531e760cd612c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u29-219`
 
@@ -2861,10 +2848,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df26b5b9de4bc415b80b5ba3135d644236cec1c242685505756885beab248c2c
+- Content hash: d62ce30e546e67af387d609a16d882ad87625350d25102c4d430582b46642f96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u29-220`
 
@@ -2874,10 +2861,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b86cd0d1562ec82b47e755870cd6623ebb46e67554d4612ec18548e5def8090
+- Content hash: dc4cee186711f7ae9bdcd67bbd0470e57864a53d6f4aa3a3937495a455cb25bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u29-221`
 
@@ -2887,10 +2874,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3ce00286e5c30d688a91c26e101bb3aaee453406ebebe0113497da5c074712e
+- Content hash: a7d6bba42216ae75a7f4118d555605f99b508ce184ea2b80ee1aa0b8bacabf39
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u29-222`
 
@@ -2900,10 +2887,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d706420faac612ae62daa0d7338c2d02bceea736c8b6c120dfbb17559a50413
+- Content hash: 0115ef038643b0a9321d3aa80069db4f4d7e7981a06983e94f2ef9cc3e09527a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u29-223`
 
@@ -2913,10 +2900,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ef753f793da9ca597b23a8a1522de115bd84badf257a1188cc3532b9a022014
+- Content hash: 07070889a14f51ea772558d6f15f3dbd0a90ccac2f0dab0f69574a0fcdd2225f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 29 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u29-224`
 
@@ -2926,10 +2913,10 @@ text=Work Lesson 29 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5560e7265baf085d6944b7e868df967f3831de1d3a19505a500c1fcfff9b0dda
+- Content hash: 145960b31b1a0d9fd3594ef888ee36bfe4c3a26ead5b010fca88a41ed73811b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 29 in your copy
 
 ### AUTHORED_ENGLISH `en-u29-225`
 
@@ -2939,10 +2926,10 @@ text=Do Lesson 29 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7bb856296f155910ac89d8c99054d8bdfdbdd767e2a4442fdb7bc6d79bf0271a
+- Content hash: 9b00c19a1901af087ad34210e249f0cdc82ba455a32c5e190c9b5b6cbd6366c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 29 in your copy and complete its lesson work.
+text=Do Lesson 29 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u29-226`
 
@@ -2952,10 +2939,10 @@ text=Open Lesson 29 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f08b0ad9c47cdbbeff3437bcf0ff413293c923e6c27d4bfa6d472aa930fc0b6
+- Content hash: abdad8ea2ae9d7ade933bffaaf030864958c474ec98bdad64d4e9df59d87d909
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 29 book work
+text=Open Lesson 29 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u29-227`
 
@@ -2965,10 +2952,10 @@ text=Record Lesson 29 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cf28c70eae8a6d65f0436e3fe13db4531a4364d901f440d67d60d6af5151bde
+- Content hash: e92bfa15c42b673f3eec3f977be2fbcd0ef6db59cf38e1e8bf2cff32dc0e9c35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 29 book work
 
 ### AUTHORED_ENGLISH `en-u29-228`
 
@@ -2978,10 +2965,10 @@ text=When you have done Lesson 29 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fd2a2f8a9e6f0a564dc53bb2b57afdac177c9dd5c25d4c667e02d6d285eaa1c
+- Content hash: 37cb6fa09f44c2d00ac8aaaa44474b4e2392dd7a387c6b335420b92680a327fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 29 work in your copy.
+text=When you have done Lesson 29 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u29-229`
 
@@ -2991,10 +2978,10 @@ text=Self-attest only after the Lesson 29 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e99edb9ca32559af1cf9c7c7a340760e1be78dffad5b441a0683038d7236c9b4
+- Content hash: a4e2fc787869867c70ac5ab48c90a959068835e765ccf1abe923120194e157ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participial punctuation stays in the copy you own
+text=Self-attest only after the Lesson 29 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u29-230`
 
@@ -3004,10 +2991,10 @@ text=Participial punctuation stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69ce709570a93d3c17762b9de1c738f0e3ffcca9c121faa7c3188e90db65d808
+- Content hash: 1e6e6009c0076d5cca7c4ebb89b1a92af5651de34ea1b0a3785b582793fdd2c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participial punctuation stays in the copy you own. No admitted span states that rule.
+text=Participial punctuation stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u29-231`
 
@@ -3017,10 +3004,10 @@ text=Participial punctuation stays in the copy you own. No admitted span states 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88e4027179263a844b94758e791c842d27b264f8f35ccc22f65e61ebfe37f8be
+- Content hash: 345a8b45e9bf4264cc719b14d22c01110b2b54610ebb4b938d16ba1c7bf974db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own
+text=Participial punctuation stays in the copy you own. No admitted span states that rule.
 
 ### AUTHORED_ENGLISH `en-u29-232`
 
@@ -3030,10 +3017,10 @@ text=A general bookish-register claim stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 088d9fe4bef084350c43681a81f67ff7c04dd37691f6ff8d1061a8648c072521
+- Content hash: 5699b54612c827f4ac06fdb962ea77aaa5ac96cc34753967db1f0ace09aa4944
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
+text=A general bookish-register claim stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u29-233`
 
@@ -3043,10 +3030,10 @@ text=A general bookish-register claim stays in the copy you own. The adverbial n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65b6d38dce0d746795210f9c22b82d7b5d68220f165933052ed64612ebcd9ae4
+- Content hash: 36917a5735d586caecd23af78f5c4396d207793a1d3eedb3a82a82908abbe4c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The bookish reading stays in the copy you own
+text=A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.
 
 ### AUTHORED_ENGLISH `en-u29-234`
 
@@ -3056,7 +3043,20 @@ text=The bookish reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b679baf5ca7974743cb02945ef76f962c2a377adf9323177f2cf9c8872728eb9
+- Content hash: 598d49afd7350aa12d68e44185306d003c4492c520ab8d07017ebee907245115
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The bookish reading stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u29-235`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9a2902af7992967eb1b4693e44e6abf4f43753ed8c31ff560d2206b1717b2814
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The bookish reading stays in the copy you own. The admitted note is not that reading.
@@ -3107,11 +3107,11 @@ exactSpan=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-l
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b59a57f73576cc650177e8fef0ae1fff518e1dd7c5c63156ae370c40505dcc32
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
 
 Russian grammar
 CC BY-SA 4.0
-Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`

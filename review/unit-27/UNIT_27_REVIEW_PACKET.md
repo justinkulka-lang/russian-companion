@@ -11,12 +11,12 @@ Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9551e824c0657c54f74a0f4e512e4964f7e6f05d
-- Unit content-review SHA-256: 5265014d551eca8110c57ff5ae5dc683ea0f3b39d3c6f3539aa0d03a40ef81af
+- Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
+- Unit content-review SHA-256: 35a9b402c66b5a657d991bd6aded6ecf550a9e818f1db7b8dbc26a2ded7f851d
 - Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
-- Pack content-review SHA-256: f96d532a7d8e633269ae4d9e3c4bfa1b8f08802737c5896c6d1679db5c2fcf55
-- Review-package SHA-256: 9595a28b497304769fbdcc27d80d80f625bc95bbad9c2580dcae829e4396b007
-- Repository source SHA-256: 15c636ca8640209a5bfefccaa72ce390a95621c003ffc6f778c2072e0b93f463
+- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
+- Review-package SHA-256: 41851cc9449e18e0aee5a8043f6ea24caf6ca38f4a4cf55b7be9bb898a61127a
+- Repository source SHA-256: 0de22730ea75425feaeb0016bb19d46914f12fdad77240cb8e5c697e3ddde6ee
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -774,11 +774,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd5837c696fb7f7643802f3f34f5c40f49e693e1d273b320f9d8d098c82a3638
+- Content hash: fbfc2f38a20fffa94635a9b2bc259878f4c9a20fa6bc8e4a93caf323945223e2
 
 kind=LEXICAL
 letterId=
-display=оставля́емый
+display=оставля́ем
 note=we leave
 objectiveId=obj-u27-present-passive
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -826,19 +826,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43425451242e8b6f33d7614789a55da25332b2a6ca9eb71ed982de12017844c3
+- Content hash: 81b8ae0d4709dbeed2dc6f35458a3b29e1fd90bd15e5ed48e7f9e0ea6c40beb3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown form?
+prompt=Which admitted English gloss follows the listed forms for the shown form?
 promptLetter=обсужда́емый
 options=being discussed | we leave | to discuss
 answer=being discussed
-feedback=The frozen line says an ending is added to form the passive present form. This label is written beside the shown form. being discussed.
+feedback=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss. being discussed.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes this label beside a different form for we leave. | The frozen line writes this label beside the base, not the shown form for to discuss.
+distractorRationales= | The frozen parenthetical we leave belongs to the plural form in the same note. | The frozen line writes to discuss on the base, not as this gloss.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u27-present-passive-0
@@ -846,8 +846,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u27-present-passive-0-en
 distractorSourceIds= | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
-distractorDifference= | This label is paired with the other listed form (we leave). | This label is paired with the base (to discuss).
-whyAnswerDemonstratesObjective=The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.
+distractorDifference= | This parenthetical belongs to the plural form (we leave). | This label is the base gloss (to discuss).
+whyAnswerDemonstratesObjective=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
 contrastMembers=being discussed | we leave | to discuss
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u27-present-passive-0-ru | prov-ex-u27-present-passive-0-en | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
@@ -861,7 +861,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac2cbfc3b77fedd4ac7efad4e3355e29fdc3e932f0175eafd0c82964b9ebf1aa
+- Content hash: 12d3a97d28c4a1b07c6c118eb7fb701b4ae366d8c8807b3e462e582dd091c040
 
 kind=CONTRAST_SELECTION
 language=en
@@ -875,7 +875,7 @@ containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The frozen line writes this label beside a different form for done/made. | The frozen line writes this label beside a different form for killed.
 testedFeature=PAST_PASSIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-passive-1
 cueLanguage=ru
 independent=true
@@ -884,7 +884,7 @@ distractorSourceIds= | prov-ex-u27-passive-0-en | prov-ex-u27-passive-2-en
 distractorDifference= | This label is paired with the making form (done/made). | This label is paired with the other listed form (killed).
 whyAnswerDemonstratesObjective=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
 contrastMembers=written | done/made | killed
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-ex-u27-passive-1-ru | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en | prov-ex-u27-passive-2-en
 responseKind=ENGLISH_CLASSIFICATION
 
@@ -896,7 +896,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c04ffc1932d45b5e4ed6f2ffa273fb3ffe215e92c5d85b84b4b182c394b29542
+- Content hash: aeccdac7f4d94db9401d0b7f049623ce457b7dae3960c4707c4390b599ef7678
 
 kind=CONTRAST_SELECTION
 language=en
@@ -910,7 +910,7 @@ containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The frozen line writes this label beside the writing form for written. | The frozen line writes this label beside the making form for done/made.
 testedFeature=PAST_PASSIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-passive-2
 cueLanguage=ru
 independent=true
@@ -919,7 +919,7 @@ distractorSourceIds= | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en
 distractorDifference= | This label is paired with a different form (written). | This label is paired with a different form (done/made).
 whyAnswerDemonstratesObjective=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
 contrastMembers=killed | written | done/made
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-ex-u27-passive-2-ru | prov-ex-u27-passive-2-en | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en
 responseKind=ENGLISH_CLASSIFICATION
 
@@ -931,31 +931,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 218334826c64ff9b0957ed3cbfee9a6fdedb9ba00ad2d5db8d9ee6c64e6e9594
+- Content hash: e0027f5d1d40131ec1207e365fce6c340f208402f9ddf5eb5938d7eece3c25ec
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown form?
-promptLetter=оставля́емый
-options=we leave | being discussed | to discuss
+prompt=Which admitted English parenthetical follows the shown form?
+promptLetter=оставля́ем
+options=we leave | being discussed | to leave
 answer=we leave
-feedback=The frozen line says an ending is added to form the passive present form. This label is written beside the shown form. we leave.
+feedback=The frozen line writes (we leave) after the shown form. This label is that parenthetical. we leave.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes this label beside a different form for being discussed. | The frozen line writes this label beside the base for to discuss.
+distractorRationales= | The frozen line gives being discussed to the discuss forms, not this parenthetical. | The frozen parenthetical to leave belongs to the other form in the same row.
 testedFeature=PRESENT_PASSIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-present-passive-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u27-present-passive-1-en
-distractorSourceIds= | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-0
-distractorDifference= | This label is paired with the discussed form (being discussed). | This label is paired with the base, not the shown form (to discuss).
-whyAnswerDemonstratesObjective=The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.
-contrastMembers=we leave | being discussed | to discuss
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u27-present-passive-1-ru | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-0
+distractorSourceIds= | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-2
+distractorDifference= | This gloss belongs to the discuss forms (being discussed). | This parenthetical belongs to the other form (to leave).
+whyAnswerDemonstratesObjective=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+contrastMembers=we leave | being discussed | to leave
+relationKind=EXPLICIT_PARENTHETICAL_GLOSS
+relationParticipantIds=prov-ex-u27-present-passive-1-ru | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u27-i-present-passive-2`
@@ -966,31 +966,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54e46bbabd85fe4bfd0dfab89c9c11460425f448971ad6ebbf66e28db16e6324
+- Content hash: fd5737faa23fae841450111055367bef0b99c8bbaea64cb1180bca6ed83310b1
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label names the base beside the discussed form?
-promptLetter=обсужда́емый
-options=to discuss | we leave | being discussed
-answer=to discuss
-feedback=The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form. to discuss.
+prompt=Which admitted English parenthetical follows this shown form?
+promptLetter=оставля́ть
+options=to leave | we leave | being discussed
+answer=to leave
+feedback=The frozen line writes (to leave) after the shown form. This label is that parenthetical. to leave.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes this label beside a different form for we leave. | The frozen line writes this label beside the shown form itself for being discussed.
+distractorRationales= | The frozen parenthetical we leave belongs to the plural form, not this form. | The frozen line gives being discussed to the discuss forms, not this parenthetical.
 testedFeature=PRESENT_PASSIVE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-present-passive-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u27-present-passive-x-0
+answerSourceIds=prov-u27-present-passive-x-2
 distractorSourceIds= | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
-distractorDifference= | This label is paired with the leave form (we leave). | This label is the gloss of the shown form, not its base (being discussed).
-whyAnswerDemonstratesObjective=The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form.
-contrastMembers=to discuss | we leave | being discussed
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u27-present-passive-0-ru | prov-u27-present-passive-x-0 | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
+distractorDifference= | This parenthetical belongs to the plural form (we leave). | This gloss belongs to the discuss forms (being discussed).
+whyAnswerDemonstratesObjective=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+contrastMembers=to leave | we leave | being discussed
+relationKind=EXPLICIT_PARENTHETICAL_GLOSS
+relationParticipantIds=prov-u27-present-passive-x-1 | prov-u27-present-passive-x-2 | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2630-attribution`
@@ -1001,11 +1001,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: d858d9d138766f5e653da684e6343f98dff842984d8c49a292e0ae89f8070996
+- Content hash: bf1a750cdb6c38a1724d6b743099f222514b8c09bd9007ce84b45c09bedfebf7
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0. The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1019,7 +1019,7 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f7d5ab805f97f0c73bcca1cf027e5f576a196d7ec2ad974d44e0f6acdd07826
+- Content hash: fa97d9e494dd07abc5f013782df52a0e1f0acc94c10f93ed76752e34dc784e95
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1043,7 +1043,7 @@ shippedText=done/made
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=b905e7fdce4bfc33eeb81f5f306db580406535f2fdfd607b09aea2ef8b81c148
@@ -1061,7 +1061,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b36238281a3daaad0209a2623281f97fc188c8e374d46cc6fb288b14b8b2131
+- Content hash: 7dd0de8b6c9b6282d2381ece527875d0078e5fd99697dbb313c10a40139c139f
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1085,7 +1085,7 @@ shippedText=сде́ланный
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=c25c020315d009265fc9fad3e3c10cb27086410ef5500099b15e1f75bc50fe52
@@ -1103,7 +1103,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea5943951ceb8e3a2e19601f131009a02047180c93bb10df0446a7c369717d56
+- Content hash: cfa528e9f951a6df2cd22850f278c02f7f65c84005be0ae2121941321786768e
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1127,7 +1127,7 @@ shippedText=written
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=ccc0e8da6b80e08e80d75a89afe11e8f2d5cd0f29a10f782104ca5f2648e8903
@@ -1145,7 +1145,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 863997d490f1dc6ee9264d202dbf8b831e1c06694c62e39f7a77afa5d397de78
+- Content hash: 77e2d5bc08ae782e497e3e33a4bcb993a09a6ef67d6877cc19263282941e82f8
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1169,7 +1169,7 @@ shippedText=напи́санный
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=5fd33438bde38c7620ba2eb7af1c95c33a537236ef8571d62d8d732f63fa0d04
@@ -1187,7 +1187,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 301f318ce7eff4f416f340763f3e8bcb1bd508ceecd8763c758df2d0456c1b95
+- Content hash: b0d92c13129c309a68862685aee85194965972bbd71d85545a743f6a0ccd0a26
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1211,7 +1211,7 @@ shippedText=killed
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=d5405925e3082bc1479a5cec3ce6e984cfc4a0caaf7216755eb8c7b2bca2d96d
@@ -1229,7 +1229,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ee0fd9bfb21e7b0954e6c991e9bad55a8fb34651a535b21ca62ddd19d614947
+- Content hash: a80c2d580ff107ba316e4fc574eb9cb826545ee3abb03b98e388b515e8e51844
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1253,7 +1253,7 @@ shippedText=уби́тый
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=d93293f98c7e637ed3178f155f98b7aa29cf0e627cd8126c9d3d690fbe4a1efb
@@ -1271,7 +1271,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bc408da2e559d58772707e149a5ca56aa45cddfdbf1498119f1591e1dd4ddd0
+- Content hash: a1009112448076a862efd6ca61e38d118e3c724771c8516290fd66459cf0c0c4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1295,7 +1295,7 @@ shippedText=short form
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=a868ae4195d4c828587a71ce497fcc75baf5ecc6c86f7ef4204bc867bade8778
@@ -1313,7 +1313,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dae4bb4efd2bd074834eed1db5b278984390ad22c08b7044dcfca0f5b043f60
+- Content hash: f39f7ffc3e45efe6dc6f86d1261ddfed9834fc282ede5006f7151188def03b66
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1337,7 +1337,7 @@ shippedText=напи́сан
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=c2a358b9fc240114249d8d2bfed6dffe2287e80d2a223d506ec8ce952b26cc38
@@ -1355,7 +1355,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb1f5949059a13271d3ba1d2cf666cab12ce46634156a1504b662abea56b079c
+- Content hash: 45c00bd43b75ea7e0d45b93a3e21d76cce9c666784672de4bcf5838dca718814
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1366,7 +1366,7 @@ shippedText=the letter was written by Ivan
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=f288190c655d646940a9a13c574a58a82126707650cd44444d715b13b00db220
 contentHash=b85deb3ba042296b8b2bb28b18bf2afa3317b890593d2ea6887cc0559c9a4225
@@ -1384,7 +1384,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 858b326063467179e19a566231dc8c7d827751c4a9b8907e187ad212b7555936
+- Content hash: 36eade9ce46239600354ad80bf10b9f6faf362933689949c7238ca96585d947c
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1395,7 +1395,7 @@ shippedText=письмо написано Иваном
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=f288190c655d646940a9a13c574a58a82126707650cd44444d715b13b00db220
 contentHash=c14c3c2158f53ec73bf8397ea67eebb54d4337382e0002deed8c398318c4e771
@@ -1413,7 +1413,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 494c6b5d02a1646326514a53ab9ba60a08bd81fb682c97aa81f4386cf492a50b
+- Content hash: 7337a158ad0805978956a2ea10261375d0f1c7f4e6d8e5ac6994e28fc40b63b0
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1431,7 +1431,7 @@ shippedText=being discussed
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
 contentHash=6f286c27a472f08635329a88e5ddec1b95e1b7e065385d1d7acca9b8619dab79
@@ -1449,7 +1449,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 501a994a2830d5c32cec4425254802050f2c2902dea555f389e89c52f9a9b406
+- Content hash: 72406d5079f4d6b368067f0918ab79ae389c79163a2e7e4e5c3e72d2df2741a6
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1467,7 +1467,7 @@ shippedText=обсужда́емый
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
 contentHash=7286184dd42d938241428f156de82595ed8855b02b524f3b73ceefa18c8664d2
@@ -1485,7 +1485,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 049027e25033d97ed7d210933c8cb1ebfed7d9b0819b324a3d7f039ec1bef479
+- Content hash: dec2da8c6bf8f6adab711b5b4ae1b8633a9b1e9baab1c373b25e9c220ab77939
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1503,7 +1503,7 @@ shippedText=we leave
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
 contentHash=1850bd949ba162702ae5548f8a5d1bd89665ee911c3d5236a7385ba06e4a15b0
@@ -1521,7 +1521,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fc4cba08407cf51b302fc79c11ec8061921c1c4cd3dc9aa9fd68622eb0ff366
+- Content hash: e963408de1e3a3b12a18958b5d988afcffebe04d786f4be559524d2966a25736
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1535,14 +1535,14 @@ In order to form the passive present participle it is necessary to add an adject
 
 {| class="wikitable"
 | оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый
-shippedText=оставля́емый
+shippedText=оставля́ем
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
-contentHash=ffeb9e1b3af15a4256b166b14a67e123b5fbd3653a67d641935877bed8d5d45a
+contentHash=2f07c01896f4bca0ab01a455a7a68e538429ac9e95ee175888024925bc670a41
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1557,7 +1557,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 587d3181b00257c97f6d5ca603bbb5ff31e35fd77947c75b35c05ee57fad2b72
+- Content hash: 04b49e51fa1791157c7d93e9b73807f8f640a7a6547b3ba44cc1271edb34f3fc
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1581,7 +1581,7 @@ shippedText=Passive past participles are formed by means of the suffixes
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c
 contentHash=9ce1b8b9d6449f1544869f624b04480d808e32dd65749f808c2e923c0e0e75eb
@@ -1599,7 +1599,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2cc19f8a88ed9867568c564f45d86c94d1f5ebe97ed0c4d8ebff5df043d26295
+- Content hash: 67dec443aa90ae076d9ecadfa9c1b23e883d436fda1fea0f92ba5995f2588446
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1617,7 +1617,7 @@ shippedText=In order to form the passive present participle
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
 contentHash=d0d89a2d688b658f468b25f2dcae6db611481d02e9a74083214ae7db47af03bb
@@ -1635,7 +1635,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77ced90fba9e98e2ae02b8a0af126a128260b282778d41ade78b4b4d122c04aa
+- Content hash: 72b9afdd8e178811b35e336acdffca0d9cde95d538128bcfffc0a95027406402
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1653,10 +1653,82 @@ shippedText=to discuss
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
 contentHash=643b168439a7df97c4ea3b2b86232ffab44be17dc4d4a4f2eee9e01b2c35866c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-present-passive-x-1`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2be321895cd5fd3279333593203a693a6562c658fc39f49dfdbaff0cf6578043
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar::обсужда́ть – to discuss;
+:обсужда́емый (full form), обсужда́ем (short form) – b
+originalSourceText=:обсужда́ть – to discuss;
+:обсужда́емый (full form), обсужда́ем (short form) – being discussed ''or'' able to be discussed;
+
+In order to form the passive present participle it is necessary to add an adjective ending to the 1st person plural of the present tense:
+
+{| class="wikitable"
+| оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый
+shippedText=оставля́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
+contentHash=df98b0ded0693cd99f6c22b7d5bea84f712c99e8d1d2661dd690042bd51e3434
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-present-passive-x-2`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8ae4efa2ab56b91b551969fa79a9c19a9b28f265a665fe9fc70bb30735c1fa49
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar::обсужда́ть – to discuss;
+:обсужда́емый (full form), обсужда́ем (short form) – b
+originalSourceText=:обсужда́ть – to discuss;
+:обсужда́емый (full form), обсужда́ем (short form) – being discussed ''or'' able to be discussed;
+
+In order to form the passive present participle it is necessary to add an adjective ending to the 1st person plural of the present tense:
+
+{| class="wikitable"
+| оставля́ть (to leave) – оставля́'''ем''' (we leave) – оставля́'''ем'''ый
+shippedText=to leave
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d4b8ff6f49dc7e2a8e466c44e2a342a52c10e1cdf9acc09cb32a588b8c919eac
+contentHash=743283ca17613d8d489dce31f0733d7fe46caf3852c945d629c9f79faf504f6b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1879,10 +1951,10 @@ text=Which admitted English label is written beside the remaining shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e20f821c6fd1b10296078faec1539a0d61e313fa58acaa51a36b7d638ec51939
+- Content hash: 5c7f2e82b47975bef5a2d5d88d62e9e9f7e0e2644a9b7fed7439499fabb08cfd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for we leave.
+text=The frozen parenthetical we leave belongs to the plural form in the same note.
 
 ### AUTHORED_ENGLISH `en-u27-088`
 
@@ -1892,10 +1964,10 @@ text=The frozen line writes this label beside a different form for we leave.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de1a267e738f94c9fecc3a18c496053deafaaa4ee1552c5999fdc017c736100e
+- Content hash: 90f53d8eab8305f90c80878a66873af399dd48e5ee378c96e7fe16b3cac5a91f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the base, not the shown form for to discuss.
+text=The frozen line writes to discuss on the base, not as this gloss.
 
 ### AUTHORED_ENGLISH `en-u27-089`
 
@@ -1905,10 +1977,10 @@ text=The frozen line writes this label beside the base, not the shown form for t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03e1ca7504be862e2aabdc80a613d00dbbeebc57661bef33f5ce978077c46c50
+- Content hash: 14c0bcdeb40303d84b079e3a6f6b463a40396d15fe3a01e0ce74512fc2db1890
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other listed form (we leave).
+text=This parenthetical belongs to the plural form (we leave).
 
 ### AUTHORED_ENGLISH `en-u27-090`
 
@@ -1918,10 +1990,10 @@ text=This label is paired with the other listed form (we leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bd0590449a49a213b836eb223428ec66ad84605170fcddd21eb9333bca7f86d
+- Content hash: aa5eeb1bbfd1398d33117e0ad6e34496bef23aa37953f7d3f21add108d7364b0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the base (to discuss).
+text=This label is the base gloss (to discuss).
 
 ### AUTHORED_ENGLISH `en-u27-091`
 
@@ -1931,10 +2003,10 @@ text=This label is paired with the base (to discuss).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f184d1d0e43ee9573064ad9190ebaf2d59d359531e4b7373a657667a7ca94f4
+- Content hash: d9b3e4f37e09eae1d474000fe0d209406820396f663f45e7e60173935ad0e6fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says an ending is added to form the passive present form. This label is written beside the shown form.
+text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
 
 ### AUTHORED_ENGLISH `en-u27-092`
 
@@ -1944,10 +2016,10 @@ text=The frozen line says an ending is added to form the passive present form. T
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be29f39b72d0699fc56cf50bf65b6867b0f0056537d4154bad9aef3375959de2
+- Content hash: 78957dcb6bb9aa9c2ac781aa10673a7fc269279e9619836a4e7247b0b03aadb4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for being discussed.
+text=Which admitted English gloss follows the listed forms for the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-093`
 
@@ -1957,10 +2029,10 @@ text=The frozen line writes this label beside a different form for being discuss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a0ec6588b6a2c86b2f1f6bda12b5921e95961df541d0c50cd0b08ff77495c72
+- Content hash: f9dece1d4701bbd4c159c3cacc64dabd9f6b0b105519a4c314b187bfbd51ff6a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the base for to discuss.
+text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-094`
 
@@ -1970,10 +2042,10 @@ text=The frozen line writes this label beside the base for to discuss.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bae8dd862a1c3d9b8d8d29e5fefc6ecad5227e8be9c32099549b316b18b4375a
+- Content hash: 4b0e0a430e4e44868ed19d0668c2a6864c72189fb05ebe7ef07293c0d7d92943
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the discussed form (being discussed).
+text=The frozen parenthetical to leave belongs to the other form in the same row.
 
 ### AUTHORED_ENGLISH `en-u27-095`
 
@@ -1983,10 +2055,10 @@ text=This label is paired with the discussed form (being discussed).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8993c1af63d1515763e7fb9910d21cc70033ecdcbdeeaf93cd6d8bef291f2dc
+- Content hash: 396a877375df8db49f6bd97893bd61985ace7c4fff8fd107e4d7bcd69a46eefe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the base, not the shown form (to discuss).
+text=This gloss belongs to the discuss forms (being discussed).
 
 ### AUTHORED_ENGLISH `en-u27-096`
 
@@ -1996,10 +2068,10 @@ text=This label is paired with the base, not the shown form (to discuss).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54e3a256519a6e76903925569b773ba7eb8ca4e3663f16c8fc77ce9964a8a8a1
+- Content hash: d6e056e5ba82b33cf2b7ecce71c07bb7965da324a4903daef617844fdfbfec18
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the shown form itself for being discussed.
+text=This parenthetical belongs to the other form (to leave).
 
 ### AUTHORED_ENGLISH `en-u27-097`
 
@@ -2009,10 +2081,10 @@ text=The frozen line writes this label beside the shown form itself for being di
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36356945d122e02871b39c8f5414ab267cf2489ff1c02aff30abfa91eea0e5fb
+- Content hash: b3a502399a30fbdf895aa2778d73b5403bc965852382a5f9f7ce3d4e5ceb1fec
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the leave form (we leave).
+text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-098`
 
@@ -2022,10 +2094,10 @@ text=This label is paired with the leave form (we leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e7b4fb8350719223ed6049f3ce6ef68a4973526d0c23bb3b7d8310d79518f525
+- Content hash: b5c145e11801b50a8f614215c302fef7d6d2cd4cef6db983f5323b7ad175db10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the gloss of the shown form, not its base (being discussed).
+text=Which admitted English parenthetical follows the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-099`
 
@@ -2035,10 +2107,10 @@ text=This label is the gloss of the shown form, not its base (being discussed).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7844e0a916ff136eacee672192734d3dcb5bdffa77d0f08106c743a571ac4b93
+- Content hash: 080080b06602653d1676deb66af8db093d47994ca2e3cf1d0ca9569b26650731
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says an ending is added to form the passive present form. This label is the base written beside the shown form.
+text=The frozen parenthetical we leave belongs to the plural form, not this form.
 
 ### AUTHORED_ENGLISH `en-u27-100`
 
@@ -2048,10 +2120,10 @@ text=The frozen line says an ending is added to form the passive present form. T
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1217550d72b693d60f7b697a3fa3dddaafd25c34d2b9c615c477a1b2cca5a012
+- Content hash: bf4654071ead42782e5c90731a96c15d77bc8f429eb00c11c53c6ac73e4e6c6c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label names the base beside the discussed form?
+text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-101`
 
@@ -2061,10 +2133,10 @@ text=Which admitted English label names the base beside the discussed form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd7901f726ad02c45c5c0bf652f8182b72637d78dc807db6905d00468595cf66
+- Content hash: aa203f6d9968f02d58227c6d22706221af93d44c59c47fa7cce62e1db8e0bdaa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted past passive lines
+text=Which admitted English parenthetical follows this shown form?
 
 ### AUTHORED_ENGLISH `en-u27-102`
 
@@ -2074,10 +2146,10 @@ text=Admitted past passive lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 386c950f909d226ac07d6f78467162c149b8de07885893a7f5d2faa418dad128
+- Content hash: e5c7632fd303c2ce1e22ab6300cb2feb4d0ce03bfd6f81ce8a96de3f3093886a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
+text=Admitted past passive lines
 
 ### AUTHORED_ENGLISH `en-u27-103`
 
@@ -2087,10 +2159,10 @@ text=Proposed Unit 27 uses admitted past passive lines. Present passive lines ar
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10a6c50e3840c38b4c8fe858f6d8415befd0f4f747fda7e5b9161f9482e917f7
+- Content hash: 187839d4800048c2fd22526601ccb398995b11b9bea876feb9165bbbe8328452
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
+text=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u27-104`
 
@@ -2100,10 +2172,10 @@ text=Open Lesson 27 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c95c21faaef7e63bede47f87b1c2aa6a80040e676590a482ce5bdfa633329b89
+- Content hash: 9ebd6121bf9578fbd7c68cf260be22b24ab50ce4edfe60a96e3f3ef6fd9fe442
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u27-105`
 
@@ -2113,10 +2185,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e3d067de9d24478bb71332d3d7596f42b23a88ad53e02db57e45a9dcfe57177
+- Content hash: 1254ab53d9cd3af84a6280b1b8b262ef35c3fb7a76c5d44828b7baa8346cefe0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u27-106`
 
@@ -2126,10 +2198,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a5961b05d35faada7fcd6575f5af19075ff8b7cdfdffc1201c1bbef7c61e757
+- Content hash: 4a8b0371cba864a09b0079ca8ef9af2bcd474939a1095582654ffe19138c5ffc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u27-107`
 
@@ -2139,10 +2211,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c4a78dd79646f1200680f047e670aad98d86226f2b5483db14a55b16e9885aa
+- Content hash: 335e1294ecd43021f4e9a99a51db414c2e0eef9d099d7fa411a15e2b552b9f31
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u27-108`
 
@@ -2152,10 +2224,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7c67ce8684efa448eba2158f46aa04605249ce967770a530337a70590a18ed2
+- Content hash: 6360cbac4ba49a71af46aa069a5e905dc254e8a71b0d00cc1366e39235bc5b1a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u27-109`
 
@@ -2165,10 +2237,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e68a75c614238538e96743be3a630e463eb8c70bf8801325d435723eb997f834
+- Content hash: 9d8bcf862b35e19b25907821c0ea67e49bf5f4e3d75573b22533f1544e574290
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u27-110`
 
@@ -2178,10 +2250,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b06730a7ddbaab018ae74dc0ffd325a9240e7fc2e4593df210a277988a9b44a
+- Content hash: 06b3a032811026b797bbe2facc666bb72797a09f28668d3eadc748fe4acb35db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 27 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u27-111`
 
@@ -2191,10 +2263,10 @@ text=Work Lesson 27 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69ae9853cf27524f9b7d184aacf5f27e7f8f971b1863e9ad923ab2a8cf522da8
+- Content hash: 21c2905311dcdfa7e8d803ee43cc4b7ad4e9d9f279497c888a55db29008dc1eb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 27 in your copy
 
 ### AUTHORED_ENGLISH `en-u27-112`
 
@@ -2204,10 +2276,10 @@ text=Do Lesson 27 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a5a1970191bb03f8d1c729822787b505bf52512eabb91e6cac063644a1106990
+- Content hash: 9f52ee7350e6afa8462922119be302e14b2f3f9661235afea022fddce6ff232e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in your copy and complete its lesson work.
+text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u27-113`
 
@@ -2217,10 +2289,10 @@ text=Open Lesson 27 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5e069460067e4fd52e92b36f757ae05df288e77d76b3bdee9ef481ab66531e4
+- Content hash: 6396f2b81b39d811bb7fc593fecb81271eb5c0faa63a9aa1d58650871e0db4ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 27 book work
+text=Open Lesson 27 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u27-114`
 
@@ -2230,10 +2302,10 @@ text=Record Lesson 27 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 940c8259e64bf3011b9eceb966206aee8c7b0db6a5780cd7424efbca3db09fa3
+- Content hash: 16ac5b4952da787dcd68a32289c4aba8b683f270375383a1d3583b973392effa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 27 book work
 
 ### AUTHORED_ENGLISH `en-u27-115`
 
@@ -2243,10 +2315,10 @@ text=When you have done Lesson 27 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6653a8a11b1393f77d0f978c7b8e8ffa9f97d7177172148b91d19a48abee7b0
+- Content hash: d176cc177bf13a53dd6d3cfad8ce885e055524da0631fa0d3f3edfba869b7e75
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 27 work in your copy.
+text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u27-116`
 
@@ -2256,10 +2328,10 @@ text=Self-attest only after the Lesson 27 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f55c26b0f3c23b882d2c49508e593c79ee0bde9693f81f90658a328da8932e3f
+- Content hash: 6c9ccd26550b26bd3d7d4ab56b715f6196602f88b3a1f6e385301575bff4df2e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own
+text=Self-attest only after the Lesson 27 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u27-117`
 
@@ -2269,10 +2341,10 @@ text=Participle stress stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 009bbaa8de63c749abef5eeac1faf7182cfce3e716bd0a2e973ff358b74c00ef
+- Content hash: c9bbd4b7a5b7b3bcc900b2b6b6e66636c8440a8becf0dea285ad6c2470393c10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own. A marked example is not a stress rule.
+text=Participle stress stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u27-118`
 
@@ -2282,10 +2354,10 @@ text=Participle stress stays in the copy you own. A marked example is not a stre
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e15c6d71c70bf72b56b0800d4c951150ab980448ccd58a25d27e5ec106d9054e
+- Content hash: 8ae002d85ee54a2bc0596f97b74b120ad1d1fb74fa0a82fcd7b9e221f752cc6f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Comprehension passages stay in the copy you own
+text=Participle stress stays in the copy you own. A marked example is not a stress rule.
 
 ### AUTHORED_ENGLISH `en-u27-119`
 
@@ -2295,7 +2367,20 @@ text=Comprehension passages stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e44189b955024ecf3e97aaabf9dba207260bac8a29b5bbdbffc159df2e385de
+- Content hash: c8cc2ecdcb91ab6a341ee602f039b0b99308584cbf67d56868739840e156a628
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Comprehension passages stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u27-120`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b1ac19ab54fb8f1f4568131cdc9f82d3fb2a9da962d0bba0b60f227067f85908
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Comprehension passages stay in the copy you own. The admitted lines do not supply them.
@@ -2338,11 +2423,11 @@ Passive past participles are formed by means of the suffixes ''''-нн-'''' or '
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b59a57f73576cc650177e8fef0ae1fff518e1dd7c5c63156ae370c40505dcc32
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
 
 Russian grammar
 CC BY-SA 4.0
-Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -2473,6 +2558,8 @@ permitsAppUse=true
 - `obj-u27-passive` PROVENANCE `prov-u27-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-0`
+- `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-1`
+- `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-2`
 - `obj-u27-passive` SOURCE_CAPABILITY `cap-obj-u27-passive`
 
 ## Book-directed experiences

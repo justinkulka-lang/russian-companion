@@ -11,12 +11,12 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9551e824c0657c54f74a0f4e512e4964f7e6f05d
-- Unit content-review SHA-256: 23e1753d3b4a1c830cf2350b3b9d95fc32a689f4e57800876a7786e0bd63495f
+- Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
+- Unit content-review SHA-256: d883e14a4d3be35ba752557466c8ade86465127a1470d9fece450eca35c5057d
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: f96d532a7d8e633269ae4d9e3c4bfa1b8f08802737c5896c6d1679db5c2fcf55
-- Review-package SHA-256: 411c66793205750244164fb5fe886c3e0d97724bfa41ec629ea08ed9b2d4d9f1
-- Repository source SHA-256: 15c636ca8640209a5bfefccaa72ce390a95621c003ffc6f778c2072e0b93f463
+- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
+- Review-package SHA-256: 0c8a73fc7504b46e3d5c1822f1074f40c89ff69226de07829d7ef07f2baba351
+- Repository source SHA-256: 0de22730ea75425feaeb0016bb19d46914f12fdad77240cb8e5c697e3ddde6ee
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1340,11 +1340,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: e1a355d99e40426dec827a31efbc25657d126034a9e7d30e2619f852388194b5
+- Content hash: a98333d1aace8537a671b090e052980a82863b7ce7f6b3b8f084ca28ac2b30b5
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0. The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1358,7 +1358,7 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f521b76c3d863e03ac365d1fd05b66f4b6a6ab7a4725dfeb6200a8235852e35f
+- Content hash: 4a334b1002c8a4e70eb4af023073a97231cca276ade42b9fb765f74ebb077dd4
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1373,7 +1373,7 @@ shippedText=USSR
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=e4755b63db17b4b8560ecdb52ae0bcc48298928d729f8222179039f734fe8853
@@ -1391,7 +1391,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7721c0fb618277b3ea7781e8285aaf4cb285972360db17dfdb2e4c7612c1612c
+- Content hash: abcd8f0ddb1218c05814b39d7194b2a3d315bd3b76e255051326e92c8b2958c7
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1406,7 +1406,7 @@ shippedText=СССР
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80
@@ -1424,7 +1424,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc9356348decdec9bba37b0eb4cc2e5806284b9128095c423021f4e7531d68f5
+- Content hash: 9c669acf4e35bd870249d1af721e89a52ec7bf344143843e5247aa7a4a217fb2
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1439,7 +1439,7 @@ shippedText=USA
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046
@@ -1457,7 +1457,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb5baaefe97a8d86d433322acce88bfa25a673862b4d977f3a9748ec63b5f48f
+- Content hash: 1c41864aa8bd3e0febca5648079e09e0863a14b4741dd5016e8c54c0d07e6f15
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1472,7 +1472,7 @@ shippedText=США
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f
@@ -1886,7 +1886,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1126311eb7684559b6a94ba2227fa4d4aaa824c1abdc7c7f919cd7390e037907
+- Content hash: d35274bf4dc092ba9454f20cfa427c8bf88059ad66d8b3250aab389f87fcc33d
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -1914,7 +1914,7 @@ shippedText=ah
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=70a0d5198ebb88f97a2cc83a236a8afcc28c7d9e6abf40c173dd54c9f45ad7f6
@@ -1932,7 +1932,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc81da642e1281400fecf76696b103dbad407e329327efcb7f73e99b5f594d45
+- Content hash: a0b827de7af7d7c738b22111ad482bdb08d324dc4928176e45f7d637d594da45
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -1960,7 +1960,7 @@ shippedText=а
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
@@ -1978,7 +1978,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92ad9d681e97901dba6b4c9d7777dfc42b0dd4501b5630f0943ef2353706cc2f
+- Content hash: 521a72194c3db4017f21e91387126df7bd1fbab2417eff45310c12e6feca8c02
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2006,7 +2006,7 @@ shippedText=be/beh
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=76deb8f5b745c4a39abea5d62488f1237c3f097d881d0e74d0fbc8c631c20903
@@ -2024,7 +2024,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1f66ef1a4c716a6c4058f2350870696b2b67886b66a50e467b105b7ccf022e98
+- Content hash: d065b8dddc270f1fcf77dab46c872e6ba9d0f1875e11da3c7f63b6d33f87fac3
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2052,7 +2052,7 @@ shippedText=бэ
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
@@ -2070,7 +2070,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62ab39426231d09ba9d4a949d2ed630e99335c5532bcf79868c825ca81a33cca
+- Content hash: dd0f12f9b90adcd21965fadaf96673d84b650df8e9fc66a9903dc6f8d767afc4
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2085,7 +2085,7 @@ shippedText=* Abbreviations:
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=bd26d7b3d68b18c9b55358d46b32842310ab356f9570960e41568ec54bba7c32
@@ -2103,7 +2103,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 184bba8d2d0093ac50b00d764dde2ce6ae9cefbb202eb64696068d4387ea6a04
+- Content hash: 73350bb599f4bddf381b40ec6ca6f2a87c3baf3e8838ec77edfa08115812c2fc
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2118,7 +2118,7 @@ shippedText=Abbreviations
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
 contentHash=e05e2aeff5c60d2adf4d8541cd92e829ef16ade6198c4874b4975b44cc93bedb
@@ -2235,7 +2235,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f78ee013f4d58eaed0c11ea0030d408cf84835c5881d7771c7a5f47811296baf
+- Content hash: b0c6433af017ad48ac4b822de80e8b7c80ddfa9b6c3c07371869dd6f0a9123df
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2263,7 +2263,7 @@ shippedText=Approximate English equivalent
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=b1eef04a2bd7c18eef7239e669a1c723eaf33e5efc105c1eab0c10254291ebc1
@@ -2281,7 +2281,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 272e80cdeef7d390a3077ab7160e024780bc38036eca650482f9475efa65efee
+- Content hash: 3cda468848d3189c608fca22bc52bb601531331ebb38012213fe54c640ad72ee
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2309,7 +2309,7 @@ shippedText=father
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=88a1881f0025cf7117501d07aefc5d4be6696656790d765678df8bc48ca52687
@@ -2327,7 +2327,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce9fcb410afe2df6005abafd08107c28254cee833d5ce9b48f96df1e8c4a645d
+- Content hash: 70bbcb0a78ab7851ce94399801688451752ec56d1409e6144b7c451ef8135fd9
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2355,7 +2355,7 @@ shippedText=bad
 transformation=wikimedia emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=2f05d4b689d270cafb02285f35f44866f7dc8a2d368a3f9d1124373eeab31fb1
@@ -2373,7 +2373,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf99a48d4f2b5309245b983eacf6ecf6c624643640cd82c73e6631994af25469
+- Content hash: 83362ead05a52f5f6f4b3e0d2849f7d33c737e8eebdd3da64ed0be84fe5e404b
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
@@ -2401,7 +2401,7 @@ shippedText=both
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
 contentHash=ff7772053abf7d817d6eec229a09e14f0d1552f1cb0aeedb2ac73784ac2d2e39
@@ -2411,19 +2411,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u30-235`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4e4ced98883ba80a9b1e276769b9924fbcc25dc472a3b099689bb6fe6a7f2f4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
 ### AUTHORED_ENGLISH `en-u30-236`
 
 - Objectives: none
@@ -2432,10 +2419,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8962c42b68ae09bd6097a4a028e551de28cce4f787cebedc6ce4fbc9742a6dc0
+- Content hash: b00f389341ce3964cf34b01522e84647d0fbda40215ed8c334c3b3bc735bfb84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this respelling beside a different name for be/beh.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u30-237`
 
@@ -2445,10 +2432,10 @@ text=The frozen table writes this respelling beside a different name for be/beh.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5795d372e74327b3f84544ee64cb2290fbf68a95ab35a25ef68e6d1eb553ff01
+- Content hash: 0bb2a76da2660f826c9668553c84a04b63ea1e37c9403b5f4452d3d61e104580
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in another column for father.
+text=The frozen table writes this respelling beside a different name for be/beh.
 
 ### AUTHORED_ENGLISH `en-u30-238`
 
@@ -2458,10 +2445,10 @@ text=The frozen table writes this equivalent in another column for father.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 990ef75823b8fdd24581a41fd637542d4ff52799caada14bed775b7664bfb156
+- Content hash: a508c681a8add509b0c41ab05ae0f7521a749129c8eebfb700f4fe00d236b9f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This respelling belongs to the other row (be/beh).
+text=The frozen table writes this equivalent in another column for father.
 
 ### AUTHORED_ENGLISH `en-u30-239`
 
@@ -2471,10 +2458,10 @@ text=This respelling belongs to the other row (be/beh).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5a6104c0a24f4fa929bbd8a98f0658810932f83620043e87cabb61502b74e04
+- Content hash: af02ee0887ef39507f6563a573b8d76759b6d39b9748f9e006b8becf1848621d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent is not the respelling (father).
+text=This respelling belongs to the other row (be/beh).
 
 ### AUTHORED_ENGLISH `en-u30-240`
 
@@ -2484,10 +2471,10 @@ text=This equivalent is not the respelling (father).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 844d044895716630352e9586c6f173a64109975fe876ef8a6c8e0c2668cbf8f3
+- Content hash: 19c01374bef58054aecb742a5d17f40101c74dca5d44e7844e2288c5b7b6d5b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
+text=This equivalent is not the respelling (father).
 
 ### AUTHORED_ENGLISH `en-u30-241`
 
@@ -2497,10 +2484,10 @@ text=The frozen table places a respelling beside the name in the Approximate Eng
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 257b622d0b5dddb44c48f83787af1c50eacee574781fac85ada3cb48f0ef8e7a
+- Content hash: c30c371b37ee4af140dfddab97b40ad13e55b62575e6709198c0a78636ea63b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English respelling is written beside the shown table name?
+text=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
 
 ### AUTHORED_ENGLISH `en-u30-242`
 
@@ -2510,10 +2497,10 @@ text=Which admitted English respelling is written beside the shown table name?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e604cad5cd7b748aef326e10455dd241e3b78e8729bd88f961bc8aed07b5046b
+- Content hash: 8d572f653d3df6b2c5838fc6b649f8b66dc3fa3c9fc86e533b2055196f497e1e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Which admitted English respelling is written beside the shown table name?
 
 ### AUTHORED_ENGLISH `en-u30-243`
 
@@ -2523,10 +2510,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 238d1349dcd36d6c764c0d09cfd5cb8b59e634f9a0b1ee0646951d06d56d5deb
+- Content hash: 0f8239f0d5697b951f825eb73d798bf58502cdb98257962812cd60dd357b92c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this respelling beside a different name for ah.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u30-244`
 
@@ -2536,10 +2523,10 @@ text=The frozen table writes this respelling beside a different name for ah.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f34f6ceb3fc671d5f64d2d9d40cd17e301085911be34486df1d925ac1a03d868
+- Content hash: 59360f2634a26a612d3f3318b5ae77c1528d968abf08319c41918358ed388693
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in another column for bad.
+text=The frozen table writes this respelling beside a different name for ah.
 
 ### AUTHORED_ENGLISH `en-u30-245`
 
@@ -2549,10 +2536,10 @@ text=The frozen table writes this equivalent in another column for bad.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e41ddfb716a9a61998e4a0e323e53ee1ce84780b29ea2b1a936c64cd20454840
+- Content hash: beed43c3d646799265d248ce669afc73f35488c6a84719103bf1804680f5f29b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This respelling belongs to the other row (ah).
+text=The frozen table writes this equivalent in another column for bad.
 
 ### AUTHORED_ENGLISH `en-u30-246`
 
@@ -2562,10 +2549,10 @@ text=This respelling belongs to the other row (ah).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03adb071d535d5200ddc459dafe6454b1f75857c07618021ba39607a7e81f9da
+- Content hash: a8d2897a1dd5ca240a470a8356513559e22174c829b8e818fe27cb9faf4513cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent is not the respelling (bad).
+text=This respelling belongs to the other row (ah).
 
 ### AUTHORED_ENGLISH `en-u30-247`
 
@@ -2575,10 +2562,10 @@ text=This equivalent is not the respelling (bad).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e93d327ab5a8c9a368971700df36a2d6473511a53510ae3809191237a9dc56d3
+- Content hash: e7c299eaf3641e74e5cb915bd7d4c9a00ac91c529cad5d7b37adc30f4c3f2a45
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English respelling is written beside this shown table name?
+text=This equivalent is not the respelling (bad).
 
 ### AUTHORED_ENGLISH `en-u30-248`
 
@@ -2588,10 +2575,10 @@ text=Which admitted English respelling is written beside this shown table name?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 602d32cb30ea97f372bdb7d5560473b894766291872f7bb353194f53bc8424ea
+- Content hash: ddf0ef9888231cdbd2418f6134f4ca94fedcfe5b1dc1fc8ee01aa170710431ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this equivalent in a different row for bad.
+text=Which admitted English respelling is written beside this shown table name?
 
 ### AUTHORED_ENGLISH `en-u30-249`
 
@@ -2601,10 +2588,10 @@ text=The frozen table writes this equivalent in a different row for bad.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f6e5f63c0c4acb2f4772331ca44482002eb18f815fb259f6ecfc2fbe01e21c6
+- Content hash: e704bb3b33804e45a8bb6f865a7f3a79f5dae5b5b24482b25e419a792826a479
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this gloss in a different row for both.
+text=The frozen table writes this equivalent in a different row for bad.
 
 ### AUTHORED_ENGLISH `en-u30-250`
 
@@ -2614,10 +2601,10 @@ text=The frozen table writes this gloss in a different row for both.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2fc15bc670de4a4d778d64b899d2c3c46a17c1240500decdfd43a1da02ac12af
+- Content hash: 2e87a62ee57213b2c750aff1af2d8c0f2fde259f5d0d85b62573dbf63c4e2147
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This equivalent belongs to the other row (bad).
+text=The frozen table writes this gloss in a different row for both.
 
 ### AUTHORED_ENGLISH `en-u30-251`
 
@@ -2627,10 +2614,10 @@ text=This equivalent belongs to the other row (bad).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6265857fb539212b546850c11bde3fd64f8d8ad28e13d9b2d623b6e1ab82569
+- Content hash: e3b83c2642f22c1649a49e9faa0cb5ff662729125451f59af49fdb1dd132d375
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss belongs to the other row (both).
+text=This equivalent belongs to the other row (bad).
 
 ### AUTHORED_ENGLISH `en-u30-252`
 
@@ -2640,10 +2627,10 @@ text=This gloss belongs to the other row (both).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a75f4e82f683511c6f62cdc1ec2c2497d6edbb348662746355bc76aed2ef923e
+- Content hash: 8538508f5d3f84451fb0b8e3c05bb07676385e7ffb0261a64e3268a35809f505
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
+text=This gloss belongs to the other row (both).
 
 ### AUTHORED_ENGLISH `en-u30-253`
 
@@ -2653,10 +2640,10 @@ text=The frozen table places a respelling beside the name in the Approximate Eng
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 024cb42a775ff5f9a9982763d1ef1f637c581b88830466f5b638c8673e07078b
+- Content hash: e2a291f475ece99941c14705665eded11421a01d6151f700794316c3d7dd251f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English equivalent is written in the same row as the shown name?
+text=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
 
 ### AUTHORED_ENGLISH `en-u30-254`
 
@@ -2666,10 +2653,10 @@ text=Which admitted English equivalent is written in the same row as the shown n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a5a8b52be3ff5835321c8c60b33ef1675012da351509aedb37a4ffd485e8b1e
+- Content hash: ffe54649a9edfef5cba0af73abd3a98632a43913b44c0b5d9128cc127ab4c000
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other example for USA.
+text=Which admitted English equivalent is written in the same row as the shown name?
 
 ### AUTHORED_ENGLISH `en-u30-255`
 
@@ -2679,10 +2666,10 @@ text=The frozen line writes this label beside the other example for USA.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 521994f5eaf9a30b18ef4f0bc388c132869dafb863d04614bbaf0b68b858d004
+- Content hash: 7be2c42ddae7b9050f4a2b4139954c66fe579a56dba3237851fdb6f25515d829
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this word as the heading, not as the gloss for Abbreviations.
+text=The frozen line writes this label beside the other example for USA.
 
 ### AUTHORED_ENGLISH `en-u30-256`
 
@@ -2692,10 +2679,10 @@ text=The frozen line uses this word as the heading, not as the gloss for Abbrevi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37298fb23203ad32e4dcc61c8e9ecd178d658eccd4f10af5e8d2befb02dcadcf
+- Content hash: cc8c8eb556f52758667a404e3e9864399020d65054114efd6911fbac6e8e423e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other example (USA).
+text=The frozen line uses this word as the heading, not as the gloss for Abbreviations.
 
 ### AUTHORED_ENGLISH `en-u30-257`
 
@@ -2705,10 +2692,10 @@ text=This label is paired with the other example (USA).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf773923cf0ee8585d7e25237ebcb79275a954e3ce8fce20961bf5142c5a7678
+- Content hash: c8fd41957d1802865ff99a308a171537a6550ce5bd15b818395cdf395a5f1c98
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the heading (Abbreviations).
+text=This label is paired with the other example (USA).
 
 ### AUTHORED_ENGLISH `en-u30-258`
 
@@ -2718,10 +2705,10 @@ text=This word is the heading (Abbreviations).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69d05488676b62645e15aefe8d03f00c2b6ad27c719ca62f37e30c88e754c18a
+- Content hash: d4a43b95bf40693a978224d3661e5667db7707540e354db269724e826eabfedd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
+text=This word is the heading (Abbreviations).
 
 ### AUTHORED_ENGLISH `en-u30-259`
 
@@ -2731,10 +2718,10 @@ text=The frozen line lists these examples under Abbreviations. This label is wri
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68fdf19a84bf5f32eb7cfbf9ccf3138a457cbfd59d1de40fdddde97f07ca0a7a
+- Content hash: a416679a507c7bd5310160e4e8c177544bd8bcb9c422dff7d5a9e4dcd6a0fbce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown example?
+text=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
 
 ### AUTHORED_ENGLISH `en-u30-260`
 
@@ -2744,10 +2731,10 @@ text=Which admitted English label is written beside the shown example?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41b7a50c3778f52e641bc83431929990cc731ef0e78ce312dc9d03351bee58f8
+- Content hash: 44b8b1b87f6ef5faa1c2e45dfbfd96f4a73038fb0805021302bf05739dd7f16b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the other example for USSR.
+text=Which admitted English label is written beside the shown example?
 
 ### AUTHORED_ENGLISH `en-u30-261`
 
@@ -2757,10 +2744,10 @@ text=The frozen line writes this label beside the other example for USSR.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 469d457dc153f2013f1d3848a327afc9e8a326168fce204c24c6c9bd2ad7e206
+- Content hash: 8bae337f7ee15ab9a313f367f2b4ce8a73838b6838b87d20b982a20eecc11135
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line uses this word as the heading for Abbreviations.
+text=The frozen line writes this label beside the other example for USSR.
 
 ### AUTHORED_ENGLISH `en-u30-262`
 
@@ -2770,10 +2757,10 @@ text=The frozen line uses this word as the heading for Abbreviations.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ad99db52945e2b8b37ad6b86819c153e2701dcc7e116cf1c364cabec7c3d879
+- Content hash: 63836444fa3d30017d71ae334e0578a708d0827a98ebe6f7f528de9038936a43
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other example (USSR).
+text=The frozen line uses this word as the heading for Abbreviations.
 
 ### AUTHORED_ENGLISH `en-u30-263`
 
@@ -2783,10 +2770,10 @@ text=This label is paired with the other example (USSR).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcc35907ac81b605e9269807e69da222cf4b7d4811d9ba23e11344b235d6b88b
+- Content hash: 31c5588f71cef918607a941c17c723564cea731d701bd650d365ddaa6f1c29ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This word is the heading, not the gloss (Abbreviations).
+text=This label is paired with the other example (USSR).
 
 ### AUTHORED_ENGLISH `en-u30-264`
 
@@ -2796,10 +2783,10 @@ text=This word is the heading, not the gloss (Abbreviations).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d8bf7f9c59b1f5cd9b54e48d8872cd2412aeba91ff3ad9983e764b29804a3ae
+- Content hash: d4ae69e9faa26c91a3d60ac78a7ffba0e3738951d69d50ca3387b0ce2f76ae71
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown example?
+text=This word is the heading, not the gloss (Abbreviations).
 
 ### AUTHORED_ENGLISH `en-u30-265`
 
@@ -2809,10 +2796,10 @@ text=Which admitted English label is written beside this shown example?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b2247c6d1631438c498c367c6ebc2269c5ea260295e7e3c21ffaa2c9899ac796
+- Content hash: 1a2b977e82a5363f92ca914f699c1e6c7de67844c00878b95508082d6c2050ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the shown example for USSR.
+text=Which admitted English label is written beside this shown example?
 
 ### AUTHORED_ENGLISH `en-u30-266`
 
@@ -2822,10 +2809,10 @@ text=The frozen line writes this label beside the shown example for USSR.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a630e70a9a50d2345c3a086c08ac7d055f14297b5e1258ea57a0f73f5f0961e
+- Content hash: da6031b4bc25ba669c62e06719db15a2e0b733bbd3142193104df7e632150049
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the gloss (USSR).
+text=The frozen line writes this label beside the shown example for USSR.
 
 ### AUTHORED_ENGLISH `en-u30-267`
 
@@ -2835,10 +2822,10 @@ text=This label is the gloss (USSR).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b32d5103105f3f3434ca26af67eca30646310bebf221b800d549e4c4d45a41c9
+- Content hash: d1a3134d677eb79c8ab1da3900d29e6d6bf1fa3b05f966f0056c390e805e58a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the other gloss (USA).
+text=This label is the gloss (USSR).
 
 ### AUTHORED_ENGLISH `en-u30-268`
 
@@ -2848,10 +2835,10 @@ text=This label is the other gloss (USA).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 916021f86bf860aa143148a1899ab5627eea714edceea56dc46c897c7056d990
+- Content hash: e3f3ea3796117e1e3ec3ea2d02f124309ca33c4ca8d935be65875b7fa229bbaa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
+text=This label is the other gloss (USA).
 
 ### AUTHORED_ENGLISH `en-u30-269`
 
@@ -2861,10 +2848,10 @@ text=The frozen line lists these examples under Abbreviations. This word is the 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad88c2586cf71ea3aba899ed469a9ff84b1fc8e77c3604c7403ae91273795824
+- Content hash: 65e112c205c6b3b5175f0bfeabb5f11ee062306bce213aa72dd135cffa327bfd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English word is the heading rather than the gloss of the shown example?
+text=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
 
 ### AUTHORED_ENGLISH `en-u30-270`
 
@@ -2874,10 +2861,10 @@ text=Which admitted English word is the heading rather than the gloss of the sho
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfa21b1969234ce8f637683a17b399005a48b8a715515004fa6b00bdc6706ed1
+- Content hash: 362191da9028237760a554cbf94cd00a138bf774ab71192b7c4569a94926b2b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses street for a different mark.
+text=Which admitted English word is the heading rather than the gloss of the shown example?
 
 ### AUTHORED_ENGLISH `en-u30-271`
 
@@ -2887,10 +2874,10 @@ text=The frozen note glosses street for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ea90f0b4b2c88f2d9f36787291f5542fbc0734e7441ca25e5699d6ea85d16e6
+- Content hash: e470caa037e4f845b1c3e1ca0570cab1da791ae950a00b2a18348f53c7bc3b45
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses building for a different mark.
+text=The frozen note glosses street for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-272`
 
@@ -2900,10 +2887,10 @@ text=The frozen note glosses building for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bcf9473d0d3b1468e04ea85ceddce075072a6c616bd0e6c302cf4f50f48c1c23
+- Content hash: d45e2987eae70b5869ecfcb1433b1275f620244d4ef5be04a6a3fc9c83764645
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Street belongs to another mark.
+text=The frozen note glosses building for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-273`
 
@@ -2913,10 +2900,10 @@ text=Street belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab18a4d9994633325fdc7585aa4e0c28130284ff9584dea68711841d8811fadf
+- Content hash: a7c2db8cc57bfa8485c0f090d101822aaa4048a165c7b6e6eba754d7fba764c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Building belongs to another mark.
+text=Street belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-274`
 
@@ -2926,10 +2913,10 @@ text=Building belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1d38a692c2ad9829318b0df30680027861420e4f76d36b13ffaa03b18b2a9c5
+- Content hash: bd193f41ad6930257450f69f813ff4f6a0019bcb89fab9ad62bd128cc8c7516b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label glosses the mark in the shown line.
+text=Building belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-275`
 
@@ -2939,10 +2926,10 @@ text=The lines are marked with abbreviations. This label glosses the mark in the
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e1775e1b8bf6d53a069c8f6bd01b08d1ad9f0bb37c14f82dac63779b363df9b
+- Content hash: 08fe366eb09d820aad2710ccb50bff1d375870d401d740acdb26764d1a4d54a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label glosses the mark in the shown line?
+text=The lines are marked with abbreviations. This label glosses the mark in the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-276`
 
@@ -2952,10 +2939,10 @@ text=Which admitted English label glosses the mark in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b274be004d4fcb81819a94cf0ca562d272733ccb7571d520bc39aa1976ef8f60
+- Content hash: 1e595818b078371bf83b9368e5d3b965e06c17e3e66fb1cdb882f9be96b29859
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses city for the place mark.
+text=Which admitted English label glosses the mark in the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-277`
 
@@ -2965,10 +2952,10 @@ text=The frozen note glosses city for the place mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f7b2905ccff5fc4c7dd7df2ac54e39ff15adb9f6efe4f9f1f47ded772a35709
+- Content hash: df1fc31f31b8e12f6fd737b9721a0bfa4b5192069e813ef3205878a27ae81843
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses apartment for a later mark.
+text=The frozen note glosses city for the place mark.
 
 ### AUTHORED_ENGLISH `en-u30-278`
 
@@ -2978,10 +2965,10 @@ text=The frozen note glosses apartment for a later mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7c0303d6d17c2072617df7afe531a1bcfda2bdaa763bb4beaff920dea828a2e
+- Content hash: 7f71c388cf421e2eea0dc7adb7ff28e3f3632ea1e9bc5721c8a7a0ddade0b201
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=City belongs to another mark.
+text=The frozen note glosses apartment for a later mark.
 
 ### AUTHORED_ENGLISH `en-u30-279`
 
@@ -2991,10 +2978,10 @@ text=City belongs to another mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3e6fee6afe4a35b7aab8016490259b57f00b7f9070fca5d734e6458dbc15ed1
+- Content hash: e8049a220dde580fea42ef0769cc727c4ab342e6275ac1f73bb1ff8fb8f4d5e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Apartment belongs to a later mark.
+text=City belongs to another mark.
 
 ### AUTHORED_ENGLISH `en-u30-280`
 
@@ -3004,10 +2991,10 @@ text=Apartment belongs to a later mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e42c4a798bc1eb9e481d759cbcce7ae66050c1fc2193dc3cf0a4a7f993c0db31
+- Content hash: 86772363490d30d60e70bd856c382adfd6f3c444d44747fc8a480d87eee5cd7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label glosses the first mark in the shown line.
+text=Apartment belongs to a later mark.
 
 ### AUTHORED_ENGLISH `en-u30-281`
 
@@ -3017,10 +3004,10 @@ text=The lines are marked with abbreviations. This label glosses the first mark 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4df16187b4b940883e0c187aa820468b08feda2d614f95e20427f89121c76a86
+- Content hash: d901a755bb54eceda4ddacbfcf1609960ac1ed54d7335968c9b8b0614838890d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label glosses the first mark in the shown line?
+text=The lines are marked with abbreviations. This label glosses the first mark in the shown line.
 
 ### AUTHORED_ENGLISH `en-u30-282`
 
@@ -3030,10 +3017,10 @@ text=Which admitted English label glosses the first mark in the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ac27a57feb1b6c4a3b3dff406f9e53edf31909eed49a24f7814ef50b98604bc
+- Content hash: e68f9d7f9bcc091bad08b4fe691234819f1bcf13fe78471666730c34f9eade77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note glosses city for a different mark.
+text=Which admitted English label glosses the first mark in the shown line?
 
 ### AUTHORED_ENGLISH `en-u30-283`
 
@@ -3043,10 +3030,10 @@ text=The frozen note glosses city for a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b8133cdd6a636ef0527d86d9bdaf07f495db91d30a10e3629a1c6d22068ffdf
+- Content hash: c9afedcff2b350b0db22a298fe57c651e77e9e25c153a2e38b8b24748d8563d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=City is the gloss of the place mark.
+text=The frozen note glosses city for a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-284`
 
@@ -3056,10 +3043,10 @@ text=City is the gloss of the place mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62ca9a25ba93099419f5e0f7e849074a9e51b7822a8fdaaa272580d03c7c1770
+- Content hash: 4c93ba3fd0fe40a773cb6ff973fb65712e988448a2c1c3e02c5b8f24ee9f0b12
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Street is the gloss of a different mark.
+text=City is the gloss of the place mark.
 
 ### AUTHORED_ENGLISH `en-u30-285`
 
@@ -3069,10 +3056,10 @@ text=Street is the gloss of a different mark.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e24906d6d9f322059fc0986476a83c6c86c441871d072ef6deaea7220b93295
+- Content hash: b271beac4c1a1482c6ae54ecdf73df7cb7d6615371f1067ebc9a8d822319b83b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The lines are marked with abbreviations. This label is the gloss written for the shown mark.
+text=Street is the gloss of a different mark.
 
 ### AUTHORED_ENGLISH `en-u30-286`
 
@@ -3082,10 +3069,10 @@ text=The lines are marked with abbreviations. This label is the gloss written fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e12951a7f6f5793b8567d5e5f97c6477a09c082181d5aebf17203e8ee6278712
+- Content hash: b35aa35ec594e7b0bcc86f20354ce67492ec624eb97364ee14d10877d52e9c05
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown mark?
+text=The lines are marked with abbreviations. This label is the gloss written for the shown mark.
 
 ### AUTHORED_ENGLISH `en-u30-287`
 
@@ -3095,10 +3082,10 @@ text=Which admitted English gloss is written for the shown mark?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7accace23f3c732dcaeaa60b3f1d25b9a0a7961a79e9ffa230adcd3a940a7023
+- Content hash: 3278ec565663b06c5a564722fb81aadd9d14fba6c08db607e5ed4d331f3d955a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Review admitted table names and abbreviation examples
+text=Which admitted English gloss is written for the shown mark?
 
 ### AUTHORED_ENGLISH `en-u30-288`
 
@@ -3108,10 +3095,10 @@ text=Review admitted table names and abbreviation examples
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fbc8256d91a7f28c7fc5994b0d4ad3160148c0183685bd37d863e4ed8ef24c3
+- Content hash: b090adf1603fa3240b99d5311b9e5309f93a4a9b743eaceb428ac77c6cb51604
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.
+text=Review admitted table names and abbreviation examples
 
 ### AUTHORED_ENGLISH `en-u30-289`
 
@@ -3121,10 +3108,10 @@ text=Unit 1 introduced the printed letter names. This unit reviews admitted tabl
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 58f937a9e8623020189b5987574108d60b046e2809c244d7d22b63edcb29172e
+- Content hash: 1094ffd9d085c562ce3171538af42c0446d91ff96ab07a69acecbff42b929024
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
+text=Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u30-290`
 
@@ -3134,10 +3121,10 @@ text=Open Lesson 30 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9f251be25644229b634359c36f8ca28e9fe5795f92781e8e292e8ece831b951
+- Content hash: bff05de22e8556faf4f32660ea293218a924873af0c172a656a60212c735af38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Open Lesson 30 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u30-291`
 
@@ -3147,10 +3134,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 92c889e5394081d4846a3c053953a2cf0d44b2523ff2b9ebfde506e87ad25b18
+- Content hash: 4bb8b922ab75c0309f94180149cc0b302187e3d4cf94ad16582f75924e3bd2bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u30-292`
 
@@ -3160,10 +3147,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 161556e5fd098b44767524c5a8e7e6fb093cc2b0ecfef3260ae141bee66c6e09
+- Content hash: 2af5425b27066a494e389b0fca2ca3a8c6f8e40baa47d1f658f9603a767b3c47
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u30-293`
 
@@ -3173,10 +3160,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33afaf5319a9fe5bd00d5d6e289aa1ff4f0108c940c78415746f7b1dfa2adae1
+- Content hash: f8f30f5132c8f8ba50fa49bbcd04e0b59807a5a9c90ef05176bc9778a2cee65e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u30-294`
 
@@ -3186,10 +3173,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bafc7aab113555af48672af75b7ee6ea3ffe6c573a5b4bc895960f0a29057942
+- Content hash: c7386dfa0b01ba90f3bad1a0d9f597a135d8041dac604073b156fb72f53c900d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u30-295`
 
@@ -3199,10 +3186,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 851a702df44c2a67b01730efb3640f279ac0f92967d2e08320ae5211db691702
+- Content hash: 946808ac1df2ae6bb295929577482469dc4d2fdc940a232299ebd33189a8b1b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u30-296`
 
@@ -3212,10 +3199,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75756d99ffb55e839124f5f7186f8d9ccd20df89dd9b3f26f74cdcce39aa51ab
+- Content hash: 7a8c1906f5702d32d24e036deabb9f1d78510e3117f59b184cd89fd8b102b828
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 30 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u30-297`
 
@@ -3225,10 +3212,10 @@ text=Work Lesson 30 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35aeb5b4c56352073c8b93ccd215732c724a864bc3447d8b8a68fc2ebb3e9850
+- Content hash: a0c27a73c86eebde4430ea76de024958bbb709bb7eb8179480c9220193d2db54
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 30 in your copy
 
 ### AUTHORED_ENGLISH `en-u30-298`
 
@@ -3238,10 +3225,10 @@ text=Do Lesson 30 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 403c385826339043b98e81b9606bee0797d709e75bcbad857f778a53c3be683a
+- Content hash: 39ed80e72d13ca0e3b8098a9c45cdf3592ee2d3e7754a02412c9e7440ab0ea4c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 30 in your copy and complete its lesson work.
+text=Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u30-299`
 
@@ -3251,10 +3238,10 @@ text=Open Lesson 30 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1643ae5a118e85fff271aa2f08b9bc69decbdae16f122639da7293ca8e4eecc
+- Content hash: 2f368ae70e16cea93f7067f6d707e66e2eb4ae97994cab6302aee7a3cc013ff4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 30 book work
+text=Open Lesson 30 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u30-300`
 
@@ -3264,10 +3251,10 @@ text=Record Lesson 30 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc1df13177c1cde7b7ce2f9fcf7931667805d693fbd3c152d07156bc378a8494
+- Content hash: 5fc6eb3f940258f9e15b4ad8a1acc16182567a7ab38f1de7ffa2a8c51413cbe4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 30 book work
 
 ### AUTHORED_ENGLISH `en-u30-301`
 
@@ -3277,10 +3264,10 @@ text=When you have done Lesson 30 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4ed2af0e0e15aaa1a51695e4a754b0189ea59f3a6422666a833346a3c64fd7d5
+- Content hash: 30951b24818ea4b9a4c9e20b23faad420f25dc538b11c554d8ecc8be67f4a09b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 30 work in your copy.
+text=When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u30-302`
 
@@ -3290,10 +3277,10 @@ text=Self-attest only after the Lesson 30 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0485212862816c69a68cd48a0a38a63bca227ec886daa9fec8cf7ff368581d4
+- Content hash: b8629c89ba2874aef0a77b4f21852801baea15178fd9643a6caaf8bc78607297
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own
+text=Self-attest only after the Lesson 30 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u30-303`
 
@@ -3303,10 +3290,10 @@ text=Dictionary use stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30a7ca6ccd9d3fb2e4f4a72808ccedaa8d707c568de3d44dca6a2a29d10e7d26
+- Content hash: e2ef97bcf5874d1a925b05de25e69314eabf0a836c9717086101e1952ae35bc5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dictionary use stays in the copy you own. No admitted span gives that procedure.
+text=Dictionary use stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u30-304`
 
@@ -3316,10 +3303,10 @@ text=Dictionary use stays in the copy you own. No admitted span gives that proce
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4eb9320d7e691deb0036e3b2bfc35d5321ec19fdce0790b284fee9c0ecfeed0e
+- Content hash: d7ee521e6f7133857c8b5ab2f6ffedf653b018df55774ed30f4caa29670696ae
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general abbreviation system stays in the copy you own
+text=Dictionary use stays in the copy you own. No admitted span gives that procedure.
 
 ### AUTHORED_ENGLISH `en-u30-305`
 
@@ -3329,10 +3316,10 @@ text=A general abbreviation system stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7dc1835a3c38b8f0d3793de670d9fcf2e07a5326833a9ed4066e48e907ca916
+- Content hash: 448ba438fce05164a3fd8b42a6f6ef24dda00f21e07d0704d05b64b512f4f173
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.
+text=A general abbreviation system stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u30-306`
 
@@ -3342,10 +3329,10 @@ text=A general abbreviation system stays in the copy you own. Two examples and t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b8243f7a08df4c95d49aa1efb7272f8f20afa4372930a04fc47697690726b2a
+- Content hash: 2b21849612f03bf20ba758e842f83c0892806cde6de6ce49c87cd8ff407d0db5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general particle system stays in the copy you own
+text=A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.
 
 ### AUTHORED_ENGLISH `en-u30-307`
 
@@ -3355,10 +3342,10 @@ text=A general particle system stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a8acf5cb2ca8c1753675d3329591edccdae8ebf6ac6fc38605823755ec39de36
+- Content hash: 951c3e6f386b77958cbaedd09c37b230a627ee84d0afcfc8f7317ecdc698c235
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general particle system stays in the copy you own. An isolated label is not that system.
+text=A general particle system stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u30-308`
 
@@ -3368,10 +3355,10 @@ text=A general particle system stays in the copy you own. An isolated label is n
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 958c5140411513e7dbd4f6bcf66a12ea3a969e6ac03d1c6ac4c4633534a6de9f
+- Content hash: aa4e8787202c0e0e8e414d7fc61af7b45f0f7d6165add074656531256668e840
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The final reading stays in the copy you own
+text=A general particle system stays in the copy you own. An isolated label is not that system.
 
 ### AUTHORED_ENGLISH `en-u30-309`
 
@@ -3381,7 +3368,20 @@ text=The final reading stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c405b3332eade295978fdb3244d48b5d815733284920dc02d0b5fefab6ac9a40
+- Content hash: 49974698f4fade99ec9076d4485bd23c1c7840617bf1d368f5c71ab7e48f147d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The final reading stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u30-310`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3242753db04f7a4807781732290553e51eaff6a7eeb77aa4c21cec774dbdd499
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The final reading stays in the copy you own. No admitted text supplies it.
@@ -3428,11 +3428,11 @@ exactSpan=! Name
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c9d58550ea665b9b7b736c34aa23fa7bac53928efa4b7d1a151edb5e519be7e1
+- Content hash: 81798404ef9abb847e6d3c0503056b209aa3a80177268e99ab6c27f944a4a3c8
 
 Russian alphabet
 CC BY-SA 4.0
-Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1371795481 identifies the contributors.
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
@@ -3443,11 +3443,11 @@ Selected spans only. Russian quotations are unchanged. English claims are quoted
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b59a57f73576cc650177e8fef0ae1fff518e1dd7c5c63156ae370c40505dcc32
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
 
 Russian grammar
 CC BY-SA 4.0
-Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-wikibooks-russian-various-stuff-3353858`

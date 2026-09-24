@@ -11,12 +11,12 @@ Unit 26 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9551e824c0657c54f74a0f4e512e4964f7e6f05d
-- Unit content-review SHA-256: 707851d79572c2e28e58e1ffe01b85bfb43096102aa43dfc69e281566f1bd179
+- Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
+- Unit content-review SHA-256: d26dfcdd213097af4d425b500421bb766523ffaa9bd912d95b27843a334511b9
 - Mapping-package SHA-256: c3b63d48cd809527d6450916cfead9c419eb5a607a329c7def2d8b42df6bf725
-- Pack content-review SHA-256: f96d532a7d8e633269ae4d9e3c4bfa1b8f08802737c5896c6d1679db5c2fcf55
-- Review-package SHA-256: b1d0f26d91bacb508c4072a9d8253917ccdeb2c9a9a7917ce8363e555368fd40
-- Repository source SHA-256: 15c636ca8640209a5bfefccaa72ce390a95621c003ffc6f778c2072e0b93f463
+- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
+- Review-package SHA-256: d281c3291adeac546cdd9239da11cb26e13887c8074a25969ce2148fd15fbc66
+- Repository source SHA-256: 0de22730ea75425feaeb0016bb19d46914f12fdad77240cb8e5c697e3ddde6ee
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1474,11 +1474,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 1919afb554f8693b2f1dccba2e02f0993e85ee04b4b11814436030220a52f92b
+- Content hash: c78a161e42c8602ffcfff748a6ecabfcd13a109e9fbf24d0e4eef6aaab0fdde4
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0. The Wikibooks address note is frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
@@ -1888,7 +1888,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38d86f4393ee4f88ca3ca3828f357c8aaff3495f3e1694730d21eea904d7aa24
+- Content hash: 3ca059932613f86c989579e6eb7cbb3e1420ba7c41c8473743d70d48e8eb0df0
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1899,7 +1899,7 @@ shippedText=capital letter
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca
@@ -1917,7 +1917,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29de3db9306e02e871e596466778775c3d6c605eb0b81fa62b4dbe555c51a2d3
+- Content hash: 1623c9be4bdf843786d83054b9f16fbf5f893e8e5776bc7cf9c967b3b8f12872
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1928,7 +1928,7 @@ shippedText=Вы
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=041bfceecc8f943abfac18267516b5f6c35bc3ea04549121a57540e55da76cd3
@@ -1946,7 +1946,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03d9456e97ba3a83dd4b4e6992082acf89c924463845261a81e9a52adac8036c
+- Content hash: 366fbdb9177936fe01165b4edf1ff5d54d2cf24179f794463a6161165adcd295
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1957,7 +1957,7 @@ shippedText=capital letter
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca
@@ -1975,7 +1975,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7651683c55a5c4af99cf7becbe6d33cb2211bf8d10d480c3fc3c20caf35436a3
+- Content hash: 6bb137403f62563d992f4f140e812641cf530d6d8569b9ca7025df119e3f24f7
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -1986,7 +1986,7 @@ shippedText=Вас
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=b445eeaab458948cc7acbaae4ff53c98f0787fd17fc36ecfa4e15d2548a47978
@@ -2004,7 +2004,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79f2de40c748ea4da6e285658d7845f1722ef5aa2268493b04547b99e05ac06a
+- Content hash: 9f5e837be660d97c40bb4c00986bf84a1d0f38ba2c5448bca276c202f2bbc5b0
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2015,7 +2015,7 @@ shippedText=capital letter
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=ec7b76efc7879ceb4e0e5cbdb5df0b86f26f82a9f83b708151006924934dbcca
@@ -2033,7 +2033,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42df8ff3cc643cfe2191f8691aa9c7e55d55f16c27dd47578cb7e1a034025e6b
+- Content hash: 3be8c335a7a8488ba1dc1f11ace5ec827a32e1562daf7b0d657abc43cfc6439d
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2044,7 +2044,7 @@ shippedText=Вам
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=f75a313e055229ee26a1815119a6571a44906c5da0e0cacfb5c7cce0b6be65ad
@@ -2062,7 +2062,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81effd751a506ead86b611f845c0a19b57e8db183feeff35b8c02c78bcea58b1
+- Content hash: 4798724d8d22d7ee97c23ae6070a71bd759410573672fe86881c2b519a73d906
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2082,7 +2082,7 @@ shippedText=To the shop went I
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=7fc5ec2fe3f07d4354ad9cf33cd75267b1fa72b1008542a20d84ffb780fb6e9a
@@ -2100,7 +2100,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d747103cb3eeb7dbe5350550cb7432650e185b099a011754c24ab33f7e610bc0
+- Content hash: 3f6b05ed745ef0cab83455dee3c2366756cfe00aa43f42cc57df1c19ff65c1a7
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2120,7 +2120,7 @@ shippedText=В магазин пошёл я.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb
@@ -2138,7 +2138,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adb149b7479341ff5f26d077fc44d046f22dbc5150b053b7aec14d1a3f556ec1
+- Content hash: b88a0c50d6cc1175e875a7317833b6e37e3b6f37c62c0be55bfda04cd66181d8
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2158,7 +2158,7 @@ shippedText=Went I to the shop
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=43f2aae94da7406aebd485402667a57a843379b96f157ad951ee064db5d30b44
@@ -2176,7 +2176,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc6548ae80172f35d45d96fbe0f821dfaab21ff4b9483b97085ad3ac8a4a0203
+- Content hash: e8842a27f5a4884114dee0eaceec5b5e3c16fb14896804d2c4f4ed2a0566221e
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2196,7 +2196,7 @@ shippedText=Пошёл я в магазин.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=5023391fca384a34e059824398fbb85adee90369578fc9e6d160d467107a2847
@@ -2214,7 +2214,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3db38ab5346d807aa7441e57971fc9e774d3d14e62aac6e5799b1a96ec2183d0
+- Content hash: 72906f1466250fdb4e4f33a781a029f0c6b797ff041c28fdfe680f251e15bf8e
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2234,7 +2234,7 @@ shippedText=I went to the shop
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=3eca3a3cf9a26dadeb79961313357f78a72b4d484ff3be5bee80dda5b8e2fe31
@@ -2252,7 +2252,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd76cd95a29d9cd614c047917c6acd968d4331a2f4e0d5b25b210eb926952aaf
+- Content hash: ab9e802467a122238505646cc920a2d23cdf5139cc89cf2dbe70401863b6e8fb
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2272,7 +2272,7 @@ shippedText=Я пошёл в магазин.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=22d1ce046862f699d15a2f7abd5fcecad9b1a80178400229f97be08f71208fcd
@@ -2290,7 +2290,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a3a6b02f5295d276962f61208482d0f426ec01023c1e737354fcc8beec951eb
+- Content hash: 464847df7c963f5a267fca71cb891ec1aa5359112c6c82a21c7bb340b4edab81
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2301,7 +2301,7 @@ shippedText=Into the room rushed a boy
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a
 contentHash=af9795853c377adfd655f697eeb6614e6b58c29b1a7d1290a9ed51f1ae2461f3
@@ -2319,7 +2319,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25dfeff95eb2e8724fc727a5fb647566c8188101378c91930a04e144900e1d13
+- Content hash: 9bbf93631f62c5f02285f9d5dba2b656b457f26075ab44fb3f3161fb24153165
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2330,7 +2330,7 @@ shippedText=В ко́мнату вбежа́л ма́льчик
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a
 contentHash=161520da5a385e7beeacc5d94f4b354c087bda9f1678704eb8fb8c84004ec295
@@ -2348,7 +2348,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed6cbcf7f3c5eb2108ba26678199fb466caecc16a912e3b32a6428fcb9a47c6d
+- Content hash: b7e08510aedebb07b9f2f0bf6d1b6aae0812032fb47655bdaca996040201d950
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2359,7 +2359,7 @@ shippedText=The boy rushed into the room
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a
 contentHash=fe268a1ae8b1ecfc2b97c1565d18983fea9c92d9ba28ebc914698f46ece77948
@@ -2377,7 +2377,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13a2dca50b287119ecc12355be4263697efa04a7040e5cb3f76d119bd4f981ed
+- Content hash: 6a17ea6c2273742e060168e5b970f67ef8c0fe0b1c1fe74a2290cc4d4a05f789
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2388,7 +2388,7 @@ shippedText=Ма́льчик вбежа́л в ко́мнату
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=e6c24b646cc9f16a293ab1fcab7d128117764b04a001be8cb8ed689eb5f56c4a
 contentHash=4ecacd0435d4b69f551ae3a4fc7d6a292b0eaeaaabca048fe52b7eee8985f927
@@ -2505,7 +2505,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33a2b4edfdc44d9d26270c01ae0975d6e07f960a78709a567cee4d7947b797b0
+- Content hash: 9ae1354b71df29be1236dcfcccee94e27d9064a4940bb153646c6697b34dde95
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2516,7 +2516,7 @@ shippedText=It begins with a capital letter
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=9405dc8d9f4ebf6ea78323809076790db4e81ea793167b25ba51290ed83941bd
@@ -2534,7 +2534,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5e2acab193a70fd47373c6f7ea2f7848a94f733af91649da845931e530116c0
+- Content hash: d1b2d26f7f0210bb245db62dd5a2d9211d41e862657e3f2632abcd4fd77ba307
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2545,7 +2545,7 @@ shippedText=minuscule
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=91c032683b0598f6d3052576bf2becf65130112c4cda40aa93d5b05d2ead5d29
@@ -2563,7 +2563,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8b91e5eb6f38713f3a9da41edb8e67e3c32a027c7764849bef5bc9547e078de
+- Content hash: 22527649b683b72043c75184270d5b7c64f05fc06b11e9b5b49b29f963833895
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2574,7 +2574,7 @@ shippedText=plural form
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb803d78624370e8c81d92c0c728e5ccf24fe2a0ed2af196343a7494df9fbc39
 contentHash=4b452881c274f705ee405c73b3ab15c4c746e92fd5015f313cec5cc7a059126f
@@ -2592,7 +2592,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2eda5abd78d8798670bc441611ecf74c3d2434b164dc08d9f4f7261f3171943f
+- Content hash: 69531ec0181d0e2e4a3f98f6235cc173642154445397e9022f69088c185fd8f2
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2612,7 +2612,7 @@ shippedText=Word order can express logical stress, and degree of definiteness.
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
 contentHash=e2f032bcf5b97e540ef00d2ebf95b51f82a0bd301716adf33bc4a040d170a172
@@ -3566,11 +3566,11 @@ Word order can express logical stress, and degree of definiteness.
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b59a57f73576cc650177e8fef0ae1fff518e1dd7c5c63156ae370c40505dcc32
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
 
 Russian grammar
 CC BY-SA 4.0
-Wikipedia contributors, CC BY-SA 4.0. Page history for oldid 1369617627 identifies the contributors.
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-wikibooks-russian-various-stuff-3353858`
