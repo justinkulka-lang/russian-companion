@@ -70,6 +70,7 @@ internal val CURRICULUM_READINESS_COLUMNS = listOf(
     "linguisticReviewBlocker" to "Linguistic-review blocker",
     "mappingBlocker" to "Mapping blocker",
     "assetBlocker" to "Asset blocker",
+    "localExperienceBlocker" to "Local-experience blocker",
     "authorityVarianceBlocker" to "Authority-variance blocker",
     "completeInstructionalChain" to "Complete instructional chain",
     "finalDisposition" to "Final disposition",
@@ -113,6 +114,7 @@ internal data class ReadinessUnitRow(
     val linguisticReviewBlocker: String,
     val mappingBlocker: String,
     val assetBlocker: String,
+    val localExperienceBlocker: String,
     val authorityVarianceBlocker: String,
     val completeInstructionalChain: Boolean,
     val finalDisposition: String,
@@ -131,17 +133,29 @@ internal data class CurriculumReadinessReconciliation(
     val packContentReviewDigest: String,
     val repositorySourceDigest: String,
     val generatedRussianAdmissionCount: Int,
-    val detectedGeneratedRussianItems: Int,
+    val itemsMarkedContainsGeneratedRussian: Int,
     val penguinProseAdmissionCount: Int,
-    val detectedPenguinProseMarkers: Int,
+    val knownPenguinTitleMarkerMatches: Int,
     val packagedAudioBoundToV2Units: Int,
     val packagedExampleRecords: Int,
+    val reachableExampleRecords: Int,
+    val sharedExampleRecords: Int,
+    val exampleCrossUnitReferenceExcess: Int,
+    val exampleDuplicateUnitReferenceExcess: Int,
+    val orphanedExampleRecords: Int,
+    val orphanedExampleIds: String,
     val packagedCheckItems: Int,
-    val crossUnitExampleRecords: Int,
+    val reachableCheckItems: Int,
+    val sharedCheckItems: Int,
+    val checkItemCrossUnitReferenceExcess: Int,
+    val checkItemDuplicateUnitReferenceExcess: Int,
+    val orphanedCheckItems: Int,
+    val orphanedCheckItemIds: String,
     val distinctAdmittedSources: Int,
     val distinctRightsRecords: Int,
     val crossUnitSourceRecords: Int,
-    val internetPermission: String,
+    val internetPermissionDeclaredInMainManifest: String,
+    val internetPermissionDeclaredInMergedDebugManifest: String,
     val publicRelease: String,
     val candidateFrozen: Boolean,
     val candidateArtifact: String,
@@ -172,37 +186,59 @@ internal fun reconcileCurriculumReadiness(
     repositoryRoot: File,
     pack: V2CurriculumPack = loadCurriculumPack(repositoryRoot),
     reviewManifests: Map<Int, String?>? = null,
+    runtimeAdvancementAllowed: ((V2CurriculumPack, V2Unit) -> Boolean)? = null,
 ): CurriculumReadinessReconciliation {
     val numbers = pack.units.map { it.number }
     if (numbers != (1..30).toList()) {
         throw IllegalArgumentException("Units 1-30 must be present exactly once in order")
     }
     val rows = pack.units.map { unit ->
-        unitRow(repositoryRoot, pack, unit, reviewManifests)
+        unitRow(repositoryRoot, pack, unit, reviewManifests, runtimeAdvancementAllowed)
     }
     val assessment = assessRepositoryRelease(repositoryRoot)
     val candidateFile = File(repositoryRoot, ACCEPTANCE_CANDIDATE_PATH)
     val candidateText = if (candidateFile.isFile) candidateFile.readText() else ""
     val candidate = readAcceptanceCandidate(repositoryRoot)
-    val manifest = File(repositoryRoot, "app/src/main/AndroidManifest.xml").let { file ->
+    val mainManifest = File(repositoryRoot, "app/src/main/AndroidManifest.xml").let { file ->
         if (file.isFile) file.readText() else ""
     }
+    val mergedManifest = mergedDebugManifestFile(repositoryRoot).let { file ->
+        if (file.isFile) file.readText() else null
+    }
+    val examples = catalogReachability(pack.examples.map { it.id }.toSet(), exampleReferences(pack))
+    val checks = catalogReachability(pack.items.map { it.id }.toSet(), checkItemReferences(pack))
     val model = CurriculumReadinessReconciliation(
         units = rows,
         packContentReviewDigest = V2Validator.contentReviewDigest(pack),
         repositorySourceDigest = computeReleaseSourceDigest(repositoryRoot),
         generatedRussianAdmissionCount = pack.admissions.generatedRussianWords,
-        detectedGeneratedRussianItems = pack.items.count { it.containsGeneratedRussian },
+        itemsMarkedContainsGeneratedRussian = itemsMarkedContainsGeneratedRussian(pack),
         penguinProseAdmissionCount = pack.admissions.penguinProseAssets,
-        detectedPenguinProseMarkers = penguinMarkerCount(pack),
+        knownPenguinTitleMarkerMatches = knownPenguinTitleMarkerMatches(pack),
         packagedAudioBoundToV2Units = pack.admissions.catalogAudioBoundToUnits,
-        packagedExampleRecords = pack.examples.size,
-        packagedCheckItems = pack.items.size,
-        crossUnitExampleRecords = crossUnitExamples(pack),
+        packagedExampleRecords = examples.packaged,
+        reachableExampleRecords = examples.reachable,
+        sharedExampleRecords = examples.sharedAcrossUnits,
+        exampleCrossUnitReferenceExcess = examples.crossUnitReferenceExcess,
+        exampleDuplicateUnitReferenceExcess = examples.duplicateUnitReferenceExcess,
+        orphanedExampleRecords = examples.orphaned,
+        orphanedExampleIds = idList(examples.orphanIds),
+        packagedCheckItems = checks.packaged,
+        reachableCheckItems = checks.reachable,
+        sharedCheckItems = checks.sharedAcrossUnits,
+        checkItemCrossUnitReferenceExcess = checks.crossUnitReferenceExcess,
+        checkItemDuplicateUnitReferenceExcess = checks.duplicateUnitReferenceExcess,
+        orphanedCheckItems = checks.orphaned,
+        orphanedCheckItemIds = idList(checks.orphanIds),
         distinctAdmittedSources = distinctAdmittedSources(pack).size,
         distinctRightsRecords = distinctRightsRecords(pack),
         crossUnitSourceRecords = crossUnitSources(pack),
-        internetPermission = if (manifest.contains("android.permission.INTERNET")) "PRESENT" else "ABSENT",
+        internetPermissionDeclaredInMainManifest = internetPermissionDeclaredInManifestText(mainManifest),
+        internetPermissionDeclaredInMergedDebugManifest = if (mergedManifest == null) {
+            "NOT_GENERATED"
+        } else {
+            internetPermissionDeclaredInManifestText(mergedManifest)
+        },
         publicRelease = candidate?.publicRelease ?: "UNREADABLE",
         candidateFrozen = candidate?.frozen ?: false,
         candidateArtifact = candidate?.artifact?.status ?: "NOT_RECORDED",
@@ -233,15 +269,32 @@ internal fun renderCurriculumReadinessMarkdown(model: CurriculumReadinessReconci
         append("Generator: `app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliation.kt`.\n\n")
         append("Invocation: `WRITE_CURRICULUM_READINESS=1 ./gradlew :app:testDebugUnitTest --offline ")
         append("--tests dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest`.\n\n")
+        append("Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussian` counts ")
+        append("check items whose `containsGeneratedRussian` flag is true and does not inspect item text for ")
+        append("Russian authorship. `knownPenguinTitleMarkerMatches` counts occurrences of the known title ")
+        append("marker \"the new penguin\" in packaged unit, example, item, provenance, and reference text ")
+        append("and does not search the repository for other Penguin prose. ")
+        append("`internetPermissionDeclaredInMainManifest` reads only `app/src/main/AndroidManifest.xml`. ")
+        append("`internetPermissionDeclaredInMergedDebugManifest` reads only the debug merged manifest at ")
+        append("`app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml` ")
+        append("when that build output exists, and is `NOT_GENERATED` when it does not. ")
+        append("These are narrow structural or known-marker checks. They are not comprehensive authorship, ")
+        append("copyright, or merged-manifest analysis.\n\n")
         append("## Global reconciliation\n\n")
         append("| Total | Value |\n")
         append("| --- | --- |\n")
         globalRows(model).forEach { (key, value) ->
             append("| ${escapeCell(key)} | ${escapeCell(value)} |\n")
         }
-        append("\n`totalExamples` sums the unit rows. ")
-        append("${model.crossUnitExampleRecords} packaged examples are referenced by more than one unit and are counted once in each of those rows. ")
-        append("`packagedExampleRecords` is the catalog size. `packagedCheckItems` is the check-item catalog size.\n")
+        append("\n`totalExamples` and `totalIndependentChecks` sum unit rows. ")
+        append("A row sum minus the count of shared records does not prove catalog coverage. ")
+        append("`packagedExampleRecords` = `reachableExampleRecords` + `orphanedExampleRecords`. ")
+        append("`exampleCrossUnitReferenceExcess` adds one for every unit beyond the first that references a record, ")
+        append("so a record shared by three units contributes 2. ")
+        append("`exampleDuplicateUnitReferenceExcess` counts repeated references to the same record inside one unit. ")
+        append("The same identities apply to check items. ")
+        append("Orphaned example ids: ${model.orphanedExampleIds}. ")
+        append("Orphaned check-item ids: ${model.orphanedCheckItemIds}.\n")
         append("`totalAdmittedSources` and `totalRightsRecords` sum the unit rows. ")
         append("${model.crossUnitSourceRecords} admitted sources are referenced by more than one unit. ")
         append("`distinctAdmittedSources` and `distinctRightsRecords` count each shared source or rights record once.\n")
@@ -282,16 +335,17 @@ internal fun renderCurriculumReadinessMarkdown(model: CurriculumReadinessReconci
 internal fun renderCurriculumReadinessJson(model: CurriculumReadinessReconciliation): String {
     return buildString {
         append("{\n")
-        append("  \"schemaVersion\": 1,\n")
+        append("  \"schemaVersion\": 2,\n")
         append("  \"kind\": \"v2-curriculum-readiness-reconciliation\",\n")
         append("  \"packContentReviewDigest\": ${json(model.packContentReviewDigest)},\n")
         append("  \"repositorySourceDigest\": ${json(model.repositorySourceDigest)},\n")
         append("  \"generatedRussianAdmissionCount\": ${model.generatedRussianAdmissionCount},\n")
-        append("  \"detectedGeneratedRussianItems\": ${model.detectedGeneratedRussianItems},\n")
+        append("  \"itemsMarkedContainsGeneratedRussian\": ${model.itemsMarkedContainsGeneratedRussian},\n")
         append("  \"penguinProseAdmissionCount\": ${model.penguinProseAdmissionCount},\n")
-        append("  \"detectedPenguinProseMarkers\": ${model.detectedPenguinProseMarkers},\n")
+        append("  \"knownPenguinTitleMarkerMatches\": ${model.knownPenguinTitleMarkerMatches},\n")
         append("  \"packagedAudioBoundToV2Units\": ${model.packagedAudioBoundToV2Units},\n")
-        append("  \"internetPermission\": ${json(model.internetPermission)},\n")
+        append("  \"internetPermissionDeclaredInMainManifest\": ${json(model.internetPermissionDeclaredInMainManifest)},\n")
+        append("  \"internetPermissionDeclaredInMergedDebugManifest\": ${json(model.internetPermissionDeclaredInMergedDebugManifest)},\n")
         append("  \"publicRelease\": ${json(model.publicRelease)},\n")
         append("  \"candidateFrozen\": ${model.candidateFrozen},\n")
         append("  \"candidateArtifact\": ${json(model.candidateArtifact)},\n")
@@ -383,6 +437,7 @@ internal fun matrixValue(row: ReadinessUnitRow, key: String): String = when (key
     "linguisticReviewBlocker" -> row.linguisticReviewBlocker
     "mappingBlocker" -> row.mappingBlocker
     "assetBlocker" -> row.assetBlocker
+    "localExperienceBlocker" -> row.localExperienceBlocker
     "authorityVarianceBlocker" -> row.authorityVarianceBlocker
     "completeInstructionalChain" -> if (row.completeInstructionalChain) "YES" else "NO"
     "finalDisposition" -> row.finalDisposition
@@ -397,6 +452,7 @@ private fun unitRow(
     pack: V2CurriculumPack,
     unit: V2Unit,
     reviewManifests: Map<Int, String?>?,
+    runtimeAdvancementAllowed: ((V2CurriculumPack, V2Unit) -> Boolean)?,
 ): ReadinessUnitRow {
     val reviewPackage = buildUnitReviewPackage(pack, unit.number)
     val contentDigest = V2Validator.unitContentReviewDigest(pack, unit.number)
@@ -427,7 +483,10 @@ private fun unitRow(
         unresolvedCaps.none { it.objectiveId == requirement.objectiveId && it.claim == requirement.claim }
     }
     val contentErrors = V2Validator.contentCompletenessErrors(pack, unit)
-    val contentCodes = contentCodes(pack, unit, contentErrors, unresolvedCaps.map { it.claim })
+    val unavailableClasses = unit.sessions.flatMap { it.steps }.flatMap { step ->
+        unavailableExperienceClasses(step.kind, step.unavailableReason)
+    }.toSet()
+    val contentCodes = contentCodes(pack, unit, contentErrors, unresolvedCaps.map { it.claim }, unavailableClasses)
     val linguisticCodes = linguisticCodes(
         pack,
         unit,
@@ -440,27 +499,34 @@ private fun unitRow(
         curriculumCommit,
     )
     val mappingCodes = mappingCodes(repositoryRoot, pack, unit, mappingDigest)
-    val assetCodes = assetCodes(pack, unit, reviewPackage.unavailableIds.size)
+    val assetCodes = assetCodes(pack, unit, unavailableClasses)
+    val localExperience = if (UnavailableExperienceClass.LOCAL_EXPERIENCE in unavailableClasses) {
+        "REQUIRED_LOCAL_EXPERIENCE_UNAVAILABLE"
+    } else {
+        "NONE"
+    }
     val variance = if (V2Validator.authorityVarianceApplies(unit.number)) "PROPOSED_NOT_ACTIVATED" else "NOT_APPLICABLE"
     val chainComplete = contentErrors.isEmpty()
     val untaught = unit.objectives.any { it.kind == "RECOGNITION" && it.gating && it.instructionStepIds.isEmpty() }
     val unsupported = unit.objectives.any { it.kind != "RECOGNITION" && it.checkItemIds.isNotEmpty() }
-    val canAdvance = unit.advancement != null &&
-        advancementDecision(pack, unit, idealizedLearner(pack, unit)).allowed &&
-        !untaught &&
-        !unsupported
+    val decisionAllowed = runtimeAdvancementAllowed?.invoke(pack, unit)
+        ?: (unit.advancement != null && advancementDecision(pack, unit, idealizedLearner(pack, unit)).allowed)
+    val advancement = reportAdvancement(unit.readiness, decisionAllowed)
+    val canAdvance = advancement.canPresentlySucceed && !untaught && !unsupported
     val claimsInstall = unit.installState == "INSTALLED" || unit.readiness == "INSTALLABLE"
     val installApproved = signed && unit.mappingStatus == "APPROVED" && mappingCodes.none { it != "NONE" }
     val disposition = disposition(
         unit = unit,
         reviewStatus = reviewStatus,
         canAdvance = canAdvance,
+        advancementInconsistent = advancement.readinessInconsistent,
         claimsInstall = claimsInstall,
         installApproved = installApproved,
         content = joinCodes(contentCodes),
         linguistic = joinCodes(linguisticCodes),
         mapping = joinCodes(mappingCodes),
         asset = joinCodes(assetCodes),
+        localExperience = localExperience,
         variance = variance,
     )
     val sourceIds = admittedSourceIds(pack, unit)
@@ -502,6 +568,7 @@ private fun unitRow(
         linguisticReviewBlocker = joinCodes(linguisticCodes),
         mappingBlocker = joinCodes(mappingCodes),
         assetBlocker = joinCodes(assetCodes),
+        localExperienceBlocker = localExperience,
         authorityVarianceBlocker = variance,
         completeInstructionalChain = chainComplete,
         finalDisposition = disposition,
@@ -514,6 +581,7 @@ private fun contentCodes(
     unit: V2Unit,
     errors: List<String>,
     unresolvedClaims: List<String>,
+    unavailableClasses: Set<UnavailableExperienceClass>,
 ): List<String> {
     val codes = linkedSetOf<String>()
     if (unit.readiness == "NOT_PREPARED") codes += "RECORDED_NOT_PREPARED"
@@ -543,7 +611,9 @@ private fun contentCodes(
     if (unresolvedClaims.isNotEmpty() || errors.any { it.contains("source capabilities") }) {
         codes += "UNRESOLVED_REQUIRED_SOURCE_CAPABILITY"
     }
-    if (errors.any { it.contains("unavailable") }) codes += "UNAVAILABLE_REQUIRED_EXPERIENCE"
+    if (UnavailableExperienceClass.SOURCE_SUPPORTED_CURRICULUM in unavailableClasses) {
+        codes += "MISSING_SOURCE_SUPPORTED_CURRICULUM"
+    }
     if (unit.objectives.any { it.kind != "RECOGNITION" && it.checkItemIds.isNotEmpty() } ||
         errors.any { it.contains("must not carry advancement checks") }
     ) {
@@ -552,7 +622,11 @@ private fun contentCodes(
     if (unit.objectives.any { it.kind == "RECOGNITION" && it.gating && it.instructionStepIds.isEmpty() }) {
         codes += "UNTAUGHT_OBJECTIVE"
     }
-    if (errors.isNotEmpty() && codes.isEmpty()) codes += "VALIDATOR_REJECTS_CONTENT_COMPLETE"
+    val explainedByOtherClass = UnavailableExperienceClass.LOCAL_EXPERIENCE in unavailableClasses ||
+        UnavailableExperienceClass.LICENSED_OR_MAPPED_ASSET in unavailableClasses
+    if (errors.isNotEmpty() && codes.isEmpty() && !explainedByOtherClass) {
+        codes += "VALIDATOR_REJECTS_CONTENT_COMPLETE"
+    }
     return codes.toList()
 }
 
@@ -652,7 +726,11 @@ private fun mappingCodes(
     return codes.toList()
 }
 
-private fun assetCodes(pack: V2CurriculumPack, unit: V2Unit, unavailableCount: Int): List<String> {
+private fun assetCodes(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    unavailableClasses: Set<UnavailableExperienceClass>,
+): List<String> {
     val codes = linkedSetOf<String>()
     if (V2Validator.installationRequiresPronunciationAudio(unit.number)) {
         val records = pack.audioAssets.filter { it.unitNumber == unit.number }
@@ -669,7 +747,13 @@ private fun assetCodes(pack: V2CurriculumPack, unit: V2Unit, unavailableCount: I
     ) {
         codes += "REQUIRED_HANDWRITING_ASSET_ABSENT"
     }
-    if (unavailableCount > 0) codes += "REQUIRED_LOCAL_EXPERIENCE_UNAVAILABLE"
+    if (UnavailableExperienceClass.LICENSED_OR_MAPPED_ASSET in unavailableClasses) {
+        unit.sessions.flatMap { it.steps }.forEach { step ->
+            if (UnavailableExperienceClass.LICENSED_OR_MAPPED_ASSET in unavailableExperienceClasses(step.kind, step.unavailableReason)) {
+                codes += assetRecordCode(step.unavailableReason.orEmpty())
+            }
+        }
+    }
     return codes.toList()
 }
 
@@ -712,7 +796,7 @@ private fun unapprovedLinguisticRecords(pack: V2CurriculumPack, unit: V2Unit): I
     return count
 }
 
-private fun idealizedLearner(pack: V2CurriculumPack, unit: V2Unit): V2LearnerView {
+internal fun idealizedLearner(pack: V2CurriculumPack, unit: V2Unit): V2LearnerView {
     val steps = unit.sessions.flatMap { it.steps }
     val items = (steps.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
     return V2LearnerView(
@@ -738,12 +822,14 @@ private fun disposition(
     unit: V2Unit,
     reviewStatus: String,
     canAdvance: Boolean,
+    advancementInconsistent: Boolean,
     claimsInstall: Boolean,
     installApproved: Boolean,
     content: String,
     linguistic: String,
     mapping: String,
     asset: String,
+    localExperience: String,
     variance: String,
 ): String {
     val categories = listOfNotNull(
@@ -751,9 +837,14 @@ private fun disposition(
         if (linguistic != "NONE") "LINGUISTIC_REVIEW" else null,
         if (mapping != "NONE") "OWNED_EDITION_MAPPING" else null,
         if (asset != "NONE") "ASSET" else null,
+        if (localExperience != "NONE") "LOCAL_EXPERIENCE" else null,
         if (variance != "NOT_APPLICABLE") "AUTHORITY_VARIANCE" else null,
     )
-    val claim = if (claimsInstall && !installApproved) "INVALID_INSTALL_OR_READINESS_CLAIM" else "RECORDED_STATE"
+    val claim = when {
+        advancementInconsistent -> "INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"
+        claimsInstall && !installApproved -> "INVALID_INSTALL_OR_READINESS_CLAIM"
+        else -> "RECORDED_STATE"
+    }
     return "$claim;install=${unit.installState};readiness=${unit.readiness};review=$reviewStatus;" +
         "mapping=${unit.mappingStatus};advancement=${if (canAdvance) "YES" else "NO"};" +
         "categories=${categories.joinToString("+").ifEmpty { "NONE" }}"
@@ -783,7 +874,7 @@ private fun nextWork(model: CurriculumReadinessReconciliation): List<ReadinessNe
                     "MISSING_FEEDBACK",
                     "MISSING_REMEDIATION",
                     "UNRESOLVED_REQUIRED_SOURCE_CAPABILITY",
-                    "UNAVAILABLE_REQUIRED_EXPERIENCE",
+                    "MISSING_SOURCE_SUPPORTED_CURRICULUM",
                     "RECORDED_NOT_PREPARED",
                 )
             }
@@ -811,6 +902,12 @@ private fun nextWork(model: CurriculumReadinessReconciliation): List<ReadinessNe
             title = "Missing handwriting assets",
             units = handwritingUnits.map { it.unitNumber },
             requiredInput = "A verified handwriting asset for Unit 2, bound to a reachable letter, with a resolving source, rights record, and approved intake status. The handwritingAssets counter does not clear a missing record.",
+        ),
+        ReadinessNextWork(
+            id = "required-local-experience-unavailable",
+            title = "Required local experience unavailable",
+            units = model.units.filter { it.localExperienceBlocker != "NONE" }.map { it.unitNumber },
+            requiredInput = "A required local experience that the packaged step marks unavailable for a reason other than a missing admitted source and other than a missing licensed or mapped asset record. An UNAVAILABLE step whose reason is a missing frozen span stays in the source-supported curriculum group. It does not create an asset blocker.",
         ),
         ReadinessNextWork(
             id = "unresolved-authority-variances",
@@ -891,14 +988,26 @@ private fun globalRows(model: CurriculumReadinessReconciliation): List<Pair<Stri
         "totalMappedAudioRecords" to units.sumOf { it.mappedAudioCount }.toString(),
         "totalHandwritingAssetRecords" to units.sumOf { it.handwritingAssetCount }.toString(),
         "generatedRussianAdmissionCount" to model.generatedRussianAdmissionCount.toString(),
-        "detectedGeneratedRussianItems" to model.detectedGeneratedRussianItems.toString(),
+        "itemsMarkedContainsGeneratedRussian" to model.itemsMarkedContainsGeneratedRussian.toString(),
         "penguinProseAdmissionCount" to model.penguinProseAdmissionCount.toString(),
-        "detectedPenguinProseMarkers" to model.detectedPenguinProseMarkers.toString(),
+        "knownPenguinTitleMarkerMatches" to model.knownPenguinTitleMarkerMatches.toString(),
         "packagedAudioBoundToV2Units" to model.packagedAudioBoundToV2Units.toString(),
         "packagedExampleRecords" to model.packagedExampleRecords.toString(),
+        "reachableExampleRecords" to model.reachableExampleRecords.toString(),
+        "sharedExampleRecords" to model.sharedExampleRecords.toString(),
+        "exampleCrossUnitReferenceExcess" to model.exampleCrossUnitReferenceExcess.toString(),
+        "exampleDuplicateUnitReferenceExcess" to model.exampleDuplicateUnitReferenceExcess.toString(),
+        "orphanedExampleRecords" to model.orphanedExampleRecords.toString(),
+        "orphanedExampleIds" to model.orphanedExampleIds,
         "packagedCheckItems" to model.packagedCheckItems.toString(),
-        "crossUnitExampleRecords" to model.crossUnitExampleRecords.toString(),
-        "internetPermission" to model.internetPermission,
+        "reachableCheckItems" to model.reachableCheckItems.toString(),
+        "sharedCheckItems" to model.sharedCheckItems.toString(),
+        "checkItemCrossUnitReferenceExcess" to model.checkItemCrossUnitReferenceExcess.toString(),
+        "checkItemDuplicateUnitReferenceExcess" to model.checkItemDuplicateUnitReferenceExcess.toString(),
+        "orphanedCheckItems" to model.orphanedCheckItems.toString(),
+        "orphanedCheckItemIds" to model.orphanedCheckItemIds,
+        "internetPermissionDeclaredInMainManifest" to model.internetPermissionDeclaredInMainManifest,
+        "internetPermissionDeclaredInMergedDebugManifest" to model.internetPermissionDeclaredInMergedDebugManifest,
         "packContentReviewDigest" to model.packContentReviewDigest,
         "repositorySourceDigest" to model.repositorySourceDigest,
         "candidateFrozen" to model.candidateFrozen.toString(),
@@ -921,6 +1030,7 @@ private fun blockerTotals(model: CurriculumReadinessReconciliation): List<Pair<S
         "LINGUISTIC_REVIEW" to units.count { it.linguisticReviewBlocker != "NONE" },
         "OWNED_EDITION_MAPPING" to units.count { it.mappingBlocker != "NONE" },
         "ASSET" to units.count { it.assetBlocker != "NONE" },
+        "LOCAL_EXPERIENCE" to units.count { it.localExperienceBlocker != "NONE" },
         "AUTHORITY_VARIANCE" to units.count { it.authorityVarianceBlocker != "NOT_APPLICABLE" },
     )
 }
@@ -958,15 +1068,135 @@ private fun distinctRightsRecords(pack: V2CurriculumPack): Int {
     return pack.rights.count { it.sourceId in sourceIds }
 }
 
-private fun crossUnitExamples(pack: V2CurriculumPack): Int {
-    val unitsByExample = linkedMapOf<String, MutableSet<Int>>()
-    pack.units.forEach { unit ->
-        val ids = unit.objectives.flatMap { it.exampleIds } +
-            unit.sessions.flatMap { session -> session.steps.flatMap { it.exampleIds } }
-        ids.forEach { id -> unitsByExample.getOrPut(id) { linkedSetOf() }.add(unit.number) }
-    }
-    return unitsByExample.values.count { it.size > 1 }
+internal data class AdvancementReport(
+    val canPresentlySucceed: Boolean,
+    val readinessInconsistent: Boolean,
+)
+
+/**
+ * A NOT_PREPARED unit is never reported as able to advance. If a runtime
+ * regression allows that unit anyway, the report keeps advancement at NO and
+ * marks the readiness inconsistency.
+ */
+internal fun reportAdvancement(readiness: String, runtimeAllowed: Boolean): AdvancementReport {
+    val inconsistent = readiness == "NOT_PREPARED" && runtimeAllowed
+    return AdvancementReport(
+        canPresentlySucceed = runtimeAllowed && readiness != "NOT_PREPARED",
+        readinessInconsistent = inconsistent,
+    )
 }
+
+internal enum class UnavailableExperienceClass {
+    SOURCE_SUPPORTED_CURRICULUM,
+    LICENSED_OR_MAPPED_ASSET,
+    LOCAL_EXPERIENCE,
+}
+
+private val SOURCE_GAP_MARKERS = listOf(
+    "no admitted",
+    "admitted frozen",
+    "instructional source",
+    "does not by itself support",
+    "not that source",
+)
+
+private val ASSET_GAP_MARKERS = listOf(
+    "licensed audio",
+    "pronunciation audio",
+    "handwriting asset",
+    "handwriting record",
+    "audio record",
+    "mapped audio",
+    "audio-to-text",
+    "audio to text",
+)
+
+internal fun unavailableExperienceClasses(kind: String, unavailableReason: String?): Set<UnavailableExperienceClass> {
+    if (kind != "UNAVAILABLE" && unavailableReason.isNullOrBlank()) return emptySet()
+    val text = unavailableReason.orEmpty().lowercase()
+    val classes = linkedSetOf<UnavailableExperienceClass>()
+    if (SOURCE_GAP_MARKERS.any { it in text }) classes += UnavailableExperienceClass.SOURCE_SUPPORTED_CURRICULUM
+    if (ASSET_GAP_MARKERS.any { it in text }) classes += UnavailableExperienceClass.LICENSED_OR_MAPPED_ASSET
+    if (classes.isEmpty()) classes += UnavailableExperienceClass.LOCAL_EXPERIENCE
+    return classes
+}
+
+private fun assetRecordCode(reason: String): String {
+    val text = reason.lowercase()
+    return when {
+        "handwriting" in text -> "REQUIRED_HANDWRITING_ASSET_ABSENT"
+        "audio-to-text" in text || "audio to text" in text -> "REQUIRED_VERIFIED_AUDIO_TO_TEXT_MAPPING_ABSENT"
+        else -> "REQUIRED_LICENSED_AUDIO_ABSENT"
+    }
+}
+
+internal data class CatalogReachability(
+    val packaged: Int,
+    val reachable: Int,
+    val sharedAcrossUnits: Int,
+    val crossUnitReferenceExcess: Int,
+    val duplicateUnitReferenceExcess: Int,
+    val orphaned: Int,
+    val orphanIds: List<String>,
+)
+
+internal fun catalogReachability(
+    catalogIds: Set<String>,
+    referencesByUnit: Map<Int, List<String>>,
+): CatalogReachability {
+    val mentions = linkedMapOf<String, MutableMap<Int, Int>>()
+    referencesByUnit.forEach { (unitNumber, ids) ->
+        ids.forEach { id ->
+            val perUnit = mentions.getOrPut(id) { linkedMapOf() }
+            perUnit[unitNumber] = (perUnit[unitNumber] ?: 0) + 1
+        }
+    }
+    val inCatalog = mentions.filterKeys { it in catalogIds }
+    val orphanIds = catalogIds.filter { it !in mentions }.sorted()
+    return CatalogReachability(
+        packaged = catalogIds.size,
+        reachable = inCatalog.size,
+        sharedAcrossUnits = inCatalog.values.count { it.size >= 2 },
+        crossUnitReferenceExcess = inCatalog.values.sumOf { (it.size - 1).coerceAtLeast(0) },
+        duplicateUnitReferenceExcess = inCatalog.values.sumOf { perUnit ->
+            perUnit.values.sumOf { (it - 1).coerceAtLeast(0) }
+        },
+        orphaned = orphanIds.size,
+        orphanIds = orphanIds,
+    )
+}
+
+private fun exampleReferences(pack: V2CurriculumPack): Map<Int, List<String>> =
+    pack.units.associate { unit ->
+        unit.number to (
+            unit.objectives.flatMap { it.exampleIds } +
+                unit.sessions.flatMap { session -> session.steps.flatMap { it.exampleIds } }
+            )
+    }
+
+private fun checkItemReferences(pack: V2CurriculumPack): Map<Int, List<String>> =
+    pack.units.associate { unit ->
+        unit.number to (
+            unit.objectives.flatMap { it.checkItemIds } +
+                unit.sessions.flatMap { session -> session.steps.flatMap { it.itemIds } }
+            )
+    }
+
+private fun idList(ids: List<String>): String = if (ids.isEmpty()) "NONE" else ids.joinToString(", ")
+
+internal fun itemsMarkedContainsGeneratedRussian(pack: V2CurriculumPack): Int =
+    pack.items.count { it.containsGeneratedRussian }
+
+internal fun knownPenguinTitleMarkerMatches(pack: V2CurriculumPack): Int = penguinMarkerCount(pack)
+
+internal fun internetPermissionDeclaredInManifestText(manifest: String): String =
+    if (manifest.contains("android.permission.INTERNET")) "PRESENT" else "ABSENT"
+
+internal fun mergedDebugManifestFile(repositoryRoot: File): File =
+    File(
+        repositoryRoot,
+        "app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml",
+    )
 
 private fun penguinMarkerCount(pack: V2CurriculumPack): Int {
     val marker = "the new penguin"

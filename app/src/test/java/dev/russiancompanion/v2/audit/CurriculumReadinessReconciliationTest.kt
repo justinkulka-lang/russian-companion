@@ -4,7 +4,10 @@ import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2SourceCapability
+import dev.russiancompanion.v2.curriculum.V2Step
+import dev.russiancompanion.v2.curriculum.V2Unit
 import dev.russiancompanion.v2.curriculum.V2Validator
+import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.curriculumCommitForUnit
 import dev.russiancompanion.v2.review.governedMappingFacts
@@ -58,11 +61,18 @@ class CurriculumReadinessReconciliationTest {
         val model = liveModel()
         assertEquals(V2Validator.contentReviewDigest(pack), model.packContentReviewDigest)
         assertEquals(computeReleaseSourceDigest(root()), model.repositorySourceDigest)
-        assertEquals("ABSENT", model.internetPermission)
+        assertEquals("ABSENT", model.internetPermissionDeclaredInMainManifest)
+        assertEquals("ABSENT", model.internetPermissionDeclaredInMergedDebugManifest)
         assertEquals(0, model.generatedRussianAdmissionCount)
-        assertEquals(0, model.detectedGeneratedRussianItems)
+        assertEquals(0, model.itemsMarkedContainsGeneratedRussian)
         assertEquals(0, model.penguinProseAdmissionCount)
-        assertEquals(0, model.detectedPenguinProseMarkers)
+        assertEquals(0, model.knownPenguinTitleMarkerMatches)
+        assertTrue(model.packagedExampleRecords == model.reachableExampleRecords + model.orphanedExampleRecords)
+        assertTrue(model.packagedCheckItems == model.reachableCheckItems + model.orphanedCheckItems)
+        assertEquals("ex-u4-verb-знать, ex-u4-verb-работать", model.orphanedExampleIds)
+        assertEquals("NONE", model.orphanedCheckItemIds)
+        assertEquals(2, model.orphanedExampleRecords)
+        assertEquals(0, model.orphanedCheckItems)
         assertEquals(0, model.packagedAudioBoundToV2Units)
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertFalse(model.candidateFrozen)
@@ -116,6 +126,16 @@ class CurriculumReadinessReconciliationTest {
                 assertTrue(row.contentBlocker.contains("UNRESOLVED_REQUIRED_SOURCE_CAPABILITY"))
             }
         }
+        val unit7 = model.units.first { it.unitNumber == 7 }
+        assertEquals("NOT_PREPARED", unit7.readiness)
+        assertFalse(unit7.advancementCanPresentlySucceed)
+        assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
+        assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
+        assertTrue((16..30).all { number ->
+            model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM")
+        })
+        assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
+        assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
         assertEquals(listOf(18, 20, 23), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
         assertTrue(model.releaseGateBlockers.contains("OWNER_RELEASE_DECISION_NOT_RETAINED"))
         assertTrue(model.releaseGateBlockers.contains("CANDIDATE_NOT_FROZEN"))
@@ -229,6 +249,207 @@ class CurriculumReadinessReconciliationTest {
         assertNotEquals("APPROVED", claimed.unitReviewStatus)
     }
 
+    @Test
+    fun notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers() {
+        val pack = pack()
+        listOf(7, 16, 30).forEach { number ->
+            val unit = pack.unit(number)
+            val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
+            assertFalse(decision.allowed)
+            assertTrue(decision.remaining.any { it == "This unit is not prepared" })
+            val row = liveModel().units.first { it.unitNumber == number }
+            assertFalse(row.advancementCanPresentlySucceed)
+        }
+        val early = pack.unit(1).copy(readiness = "NOT_PREPARED")
+        val earlyDecision = advancementDecision(pack, early, idealizedLearner(pack, early))
+        assertFalse(earlyDecision.allowed)
+        assertTrue(earlyDecision.remaining.any { it == "This unit is not prepared" })
+
+        val preparedSeven = pack.unit(7).copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val preparedDecision = advancementDecision(pack, preparedSeven, idealizedLearner(pack, preparedSeven))
+        assertFalse(preparedDecision.remaining.any { it == "This unit is not prepared" })
+        assertTrue(preparedDecision.remaining.joinToString("\n"), preparedDecision.allowed)
+
+        val late = pack.unit(27).copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val lateDecision = advancementDecision(pack, late, idealizedLearner(pack, late))
+        assertFalse(lateDecision.allowed)
+        assertFalse(lateDecision.remaining.any { it == "This unit is not prepared" })
+        assertTrue(lateDecision.remaining.any { it == "Unit 27 is blocked by an unresolved authority variance" })
+        assertTrue(lateDecision.remaining.any { it.contains("participle-stress") })
+
+        val missingChecks = pack.unit(1)
+        val starved = idealizedLearner(pack, missingChecks).copy(correctItemIds = emptySet())
+        val starvedDecision = advancementDecision(
+            pack,
+            missingChecks.copy(readiness = "INSTALLABLE"),
+            starved,
+        )
+        assertFalse(starvedDecision.allowed)
+        assertTrue(starvedDecision.remaining.any { it.contains("distinct in-app checks") || it.contains("Demonstrate") })
+
+        val inconsistent = reconcileCurriculumReadiness(
+            root(),
+            pack,
+            runtimeAdvancementAllowed = { _, unit -> unit.number == 7 },
+        ).units.first { it.unitNumber == 7 }
+        assertFalse(inconsistent.advancementCanPresentlySucceed)
+        assertTrue(inconsistent.finalDisposition.startsWith("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
+        val closed = reportAdvancement("NOT_PREPARED", runtimeAllowed = false)
+        assertFalse(closed.canPresentlySucceed)
+        assertFalse(closed.readinessInconsistent)
+        val open = reportAdvancement("CONTENT_COMPLETE_REVIEW_PENDING", runtimeAllowed = true)
+        assertTrue(open.canPresentlySucceed)
+        assertFalse(open.readinessInconsistent)
+    }
+
+    @Test
+    fun narrowMarkerChecksDoNotClaimComprehensiveInspection() {
+        val pack = pack()
+        val flagged = pack.items.first().copy(id = "probe-generated-flag", containsGeneratedRussian = true)
+        val unmarkedRussian = pack.items.first().copy(
+            id = "probe-unmarked-russian",
+            containsGeneratedRussian = false,
+            prompt = "это не flagged generated Russian",
+            answer = "привет",
+        )
+        val flaggedPack = pack.copy(items = pack.items + flagged + unmarkedRussian)
+        assertEquals(1, itemsMarkedContainsGeneratedRussian(flaggedPack))
+        assertEquals(0, itemsMarkedContainsGeneratedRussian(pack))
+        assertEquals(0, flaggedPack.admissions.generatedRussianWords)
+
+        val marked = pack.unit(3)
+        val penguinStep = marked.sessions.first().steps.first().copy(
+            id = "probe-penguin-title",
+            body = "See the new penguin course title marker.",
+        )
+        val otherPenguin = marked.sessions.first().steps.first().copy(
+            id = "probe-penguin-books",
+            body = "Penguin Books is not the known title marker.",
+        )
+        assertEquals(1, knownPenguinTitleMarkerMatches(pack.withUnit(marked.withAddedStep(penguinStep))))
+        assertEquals(0, knownPenguinTitleMarkerMatches(pack.withUnit(marked.withAddedStep(otherPenguin))))
+        assertEquals(0, knownPenguinTitleMarkerMatches(pack))
+
+        val markdown = renderCurriculumReadinessMarkdown(liveModel())
+        assertTrue(markdown.contains("not comprehensive authorship, copyright, or merged-manifest analysis"))
+        assertEquals("ABSENT", internetPermissionDeclaredInManifestText(File(root(), "app/src/main/AndroidManifest.xml").readText()))
+        assertEquals("ABSENT", internetPermissionDeclaredInManifestText("<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />"))
+        assertEquals("PRESENT", internetPermissionDeclaredInManifestText("<uses-permission android:name=\"android.permission.INTERNET\" />"))
+        val merged = mergedDebugManifestFile(root())
+        assertTrue(merged.isFile)
+        assertEquals("ABSENT", internetPermissionDeclaredInManifestText(merged.readText()))
+        assertFalse(merged.readText().contains("android.permission.INTERNET"))
+    }
+
+    @Test
+    fun unavailableStepsSplitContentFromAssetAndLocalExperience() {
+        val pack = pack()
+        val live = liveModel()
+        assertEquals("NONE", live.units.first { it.unitNumber == 16 }.assetBlocker)
+        assertEquals("NONE", live.units.first { it.unitNumber == 16 }.localExperienceBlocker)
+        assertTrue(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertTrue(live.units.first { it.unitNumber == 1 }.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
+        assertEquals("NONE", live.units.first { it.unitNumber == 1 }.localExperienceBlocker)
+
+        val both = reconcileCurriculumReadiness(
+            root(),
+            pack.withUnit(pack.unit(1).withAddedStep(unavailableStep("probe-source-gap", "The paradigm has no admitted frozen span."))),
+        ).units.first { it.unitNumber == 1 }
+        assertTrue(both.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertTrue(both.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
+        assertEquals("NONE", both.localExperienceBlocker)
+
+        val local = reconcileCurriculumReadiness(
+            root(),
+            pack.withUnit(
+                pack.unit(8).withAddedStep(
+                    unavailableStep("probe-local", "This local exercise cannot be opened on the device."),
+                ),
+            ),
+        ).units.first { it.unitNumber == 8 }
+        assertEquals("NONE", local.contentBlocker)
+        assertEquals("NONE", local.assetBlocker)
+        assertEquals("REQUIRED_LOCAL_EXPERIENCE_UNAVAILABLE", local.localExperienceBlocker)
+        assertFalse(local.completeInstructionalChain)
+
+        val namedAsset = reconcileCurriculumReadiness(
+            root(),
+            pack.withUnit(
+                pack.unit(16).withAddedStep(
+                    unavailableStep("probe-audio", "Required licensed pronunciation audio record is absent."),
+                ),
+            ),
+        ).units.first { it.unitNumber == 16 }
+        assertTrue(namedAsset.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
+        assertTrue(namedAsset.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertEquals("NONE", namedAsset.localExperienceBlocker)
+
+        val classes = unavailableExperienceClasses(
+            "UNAVAILABLE",
+            "The licensed audio example has no admitted frozen span.",
+        )
+        assertTrue(UnavailableExperienceClass.SOURCE_SUPPORTED_CURRICULUM in classes)
+        assertTrue(UnavailableExperienceClass.LICENSED_OR_MAPPED_ASSET in classes)
+        assertFalse(UnavailableExperienceClass.LOCAL_EXPERIENCE in classes)
+    }
+
+    @Test
+    fun catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately() {
+        val orphan = catalogReachability(
+            catalogIds = setOf("a", "orphan"),
+            referencesByUnit = mapOf(1 to listOf("a")),
+        )
+        assertEquals(2, orphan.packaged)
+        assertEquals(1, orphan.reachable)
+        assertEquals(1, orphan.orphaned)
+        assertEquals(listOf("orphan"), orphan.orphanIds)
+        assertEquals(0, orphan.sharedAcrossUnits)
+        assertEquals(0, orphan.crossUnitReferenceExcess)
+        assertEquals(0, orphan.duplicateUnitReferenceExcess)
+
+        val twoUnits = catalogReachability(
+            catalogIds = setOf("shared"),
+            referencesByUnit = mapOf(1 to listOf("shared"), 2 to listOf("shared")),
+        )
+        assertEquals(1, twoUnits.sharedAcrossUnits)
+        assertEquals(1, twoUnits.crossUnitReferenceExcess)
+        assertEquals(0, twoUnits.orphaned)
+
+        val threeUnits = catalogReachability(
+            catalogIds = setOf("shared"),
+            referencesByUnit = mapOf(1 to listOf("shared"), 2 to listOf("shared"), 3 to listOf("shared")),
+        )
+        assertEquals(1, threeUnits.sharedAcrossUnits)
+        assertEquals(2, threeUnits.crossUnitReferenceExcess)
+        assertEquals(1, threeUnits.reachable)
+        assertEquals(0, threeUnits.orphaned)
+
+        val duplicate = catalogReachability(
+            catalogIds = setOf("dup"),
+            referencesByUnit = mapOf(4 to listOf("dup", "dup")),
+        )
+        assertEquals(0, duplicate.sharedAcrossUnits)
+        assertEquals(0, duplicate.crossUnitReferenceExcess)
+        assertEquals(1, duplicate.duplicateUnitReferenceExcess)
+        assertEquals(1, duplicate.reachable)
+
+        val control = catalogReachability(
+            catalogIds = setOf("a", "b"),
+            referencesByUnit = mapOf(1 to listOf("a"), 2 to listOf("b")),
+        )
+        assertEquals(0, control.orphaned)
+        assertEquals(2, control.reachable)
+        assertEquals(control.packaged, control.reachable + control.orphaned)
+        assertEquals(0, control.sharedAcrossUnits)
+
+        val live = liveModel()
+        assertEquals(live.packagedExampleRecords, live.reachableExampleRecords + live.orphanedExampleRecords)
+        assertEquals(3, live.sharedExampleRecords)
+        assertEquals(3, live.exampleCrossUnitReferenceExcess)
+        assertTrue(live.exampleDuplicateUnitReferenceExcess > 0)
+        assertNotEquals(live.packagedExampleRecords, live.units.sumOf { it.exampleCount } - live.sharedExampleRecords)
+    }
+
     private fun liveModel() = reconcileCurriculumReadiness(root(), pack())
 
     private fun pack() = loadCurriculumPack(root())
@@ -244,8 +465,21 @@ class CurriculumReadinessReconciliationTest {
         }
     }
 
-    private fun V2CurriculumPack.withUnit(unit: dev.russiancompanion.v2.curriculum.V2Unit) =
+    private fun V2CurriculumPack.withUnit(unit: V2Unit) =
         copy(units = units.map { if (it.number == unit.number) unit else it })
 
     private fun V2CurriculumPack.unit(number: Int) = units.first { it.number == number }
+
+    private fun V2Unit.withAddedStep(step: V2Step): V2Unit {
+        val session = sessions.first()
+        return copy(sessions = listOf(session.copy(steps = session.steps + step)) + sessions.drop(1))
+    }
+
+    private fun unavailableStep(id: String, reason: String) = V2Step(
+        id = id,
+        kind = "UNAVAILABLE",
+        title = "Probe",
+        body = "",
+        unavailableReason = reason,
+    )
 }
