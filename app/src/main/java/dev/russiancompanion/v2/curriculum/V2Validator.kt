@@ -870,15 +870,22 @@ internal object V2Validator {
     }
 
     private fun lateUnitSourceGap(pack: V2CurriculumPack, unit: V2Unit): List<String> {
-        val message = when (unit.number) {
-            26 -> "Unit 26 is not content-complete without admitted indefinite-pronoun, word-order, postal-address, and letter-writing source capabilities"
-            27 -> "Unit 27 is not content-complete without admitted passive-participle and participle-stress source capabilities"
-            28 -> "Unit 28 is not content-complete without admitted imperfective-verbal-adverb and perfective-verbal-adverb source capabilities"
-            29 -> "Unit 29 is not content-complete without admitted active-participle, participle-punctuation, short-form-adjective, and bookish-register source capabilities"
-            30 -> "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, letter-name-review, particle, and capstone-reading source capabilities"
-            else -> return emptyList()
+        if (unit.number !in 26..30) return emptyList()
+        val missing = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty().filter { requirement ->
+            pack.sourceCapabilities.none { capability ->
+                capability.unitNumber == unit.number &&
+                    capability.objectiveId == requirement.objectiveId &&
+                    capability.supportedClaim == requirement.claim &&
+                    capabilityDefects(pack, capability).isEmpty()
+            }
+        }.map { it.claim }
+        if (missing.isEmpty()) return emptyList()
+        val listed = when (missing.size) {
+            1 -> missing[0]
+            2 -> "${missing[0]} and ${missing[1]}"
+            else -> missing.dropLast(1).joinToString(", ") + ", and " + missing.last()
         }
-        return missingCapabilityError(pack, unit, message)
+        return listOf("Unit ${unit.number} is not content-complete without admitted $listed source capabilities")
     }
 
     private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
@@ -968,10 +975,18 @@ internal object V2Validator {
     private val STRUCTURAL_PAGE_RANGE = Regex("""^\d{2,3}-\d{2,3}$""")
 
     /**
-     * Units 26-30 have no admitted frozen source. Keyword text, a page range,
-     * and a mutable page cannot join this empty allowlist.
+     * Exact frozen identities for Units 26-30. A keyword, a page range, a mutable
+     * page, or a different record cannot join this allowlist.
      */
-    private val ADMITTED_UNITS_26_30_SOURCES = emptySet<String>()
+    private val ADMITTED_UNITS_26_30_SOURCES = setOf(
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:Basic word order, both in conversation and written language, is [[subject–verb–o|30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar::\u0441\u0434\u0435\u0301\u043b\u0430\u0442\u044c \u2013 to do/to make (perfective verb)\n:\u0441\u0434\u0435\u0301\u043b\u0430'''\u043d\u043d'''\u044b\u0439 \u2013 done/made\n\nPassi|d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:Present adverbial participles are formed by adding the suffix -\u0430/-\u044f (or sometime|20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:most are formed with the suffix -\u0432 (alternative form -\u0432\u0448\u0438, always used before -\u0441|686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:The active past participle is used in order to indicate actions that happened in|dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:such as {{wikt-lang|ru|\u0431\u0435\u0436}} ('beige', non-adapted form of {{wikt-lang|ru|\u0431\u0435\u0301\u0436\u0435\u0432|0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
+    )
 
     private fun admittedLateSource(capability: V2SourceCapability): Boolean {
         val key = listOf(
@@ -1211,8 +1226,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..25) {
-            errors += "Only Units 1-25 may be development content in this pack"
+        if (unit.number !in 1..30) {
+            errors += "Only Units 1-30 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -1220,7 +1235,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number in 6..25) validateGovernedChecks(pack, unit, errors)
+        if (unit.number in 6..30) validateGovernedChecks(pack, unit, errors)
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -1231,6 +1246,7 @@ internal object V2Validator {
         "SAME_RULE_DIFFERENT_BOUNDARY",
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+        "EXPLICIT_PARENTHETICAL_GLOSS",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1382,7 +1398,7 @@ internal object V2Validator {
                 errors += "MediaWiki markup in learner-facing $field"
             }
         }
-        pack.units.filter { it.number in 16..25 }.forEach { unit ->
+        pack.units.filter { it.number in 16..30 }.forEach { unit ->
             reject("unit ${unit.number} title", unit.title)
             reject("unit ${unit.number} topic", unit.topicSummary)
             unit.sessions.forEach { session ->
@@ -1399,7 +1415,7 @@ internal object V2Validator {
                 reject("objective ${objective.id} title", objective.title)
             }
         }
-        val governedUnits = pack.units.filter { it.number in 16..25 }
+        val governedUnits = pack.units.filter { it.number in 16..30 }
         val exampleIds = governedUnits.flatMap { unit -> unit.objectives.flatMap { it.exampleIds } }.toSet()
         val itemIds = governedUnits.flatMap { unit ->
             unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { session -> session.steps.flatMap { it.itemIds } }
@@ -1421,10 +1437,10 @@ internal object V2Validator {
                 assessment.contrastMembers.forEach { reject("item ${item.id} contrast", it) }
             }
         }
-        pack.provenanceRecords.filter { it.unitNumber in 16..25 }.forEach { record ->
+        pack.provenanceRecords.filter { it.unitNumber in 16..30 }.forEach { record ->
             reject("provenance ${record.itemId} shippedText", record.shippedText)
         }
-        pack.authoredEnglishRecords.filter { it.unitNumber in 16..25 }.forEach { record ->
+        pack.authoredEnglishRecords.filter { it.unitNumber in 16..30 }.forEach { record ->
             reject("authored ${record.id}", record.text)
         }
     }
@@ -1450,11 +1466,63 @@ internal object V2Validator {
      * Recompute the relationship from resolved provenance. Participant ids are pointers only.
      * Rationale text is not consulted.
      */
+    private val parentheticalRelation = Regex("(?<![\\u0400-\\u04FF\\u0301])([^\\s()]+)\\s+\\(([^)]+)\\)")
+
+    private fun parentheticalOwners(original: String): Map<String, Set<String>> {
+        val formatted = formatWikibooksEmphasis(original)
+        val owners = mutableMapOf<String, MutableSet<String>>()
+        parentheticalRelation.findAll(formatted).forEach { match ->
+            owners.getOrPut(match.groupValues[2]) { mutableSetOf() }.add(match.groupValues[1])
+        }
+        return owners
+    }
+
+    private fun boundedParenthetical(original: String, form: String, gloss: String): Boolean {
+        val formatted = formatWikibooksEmphasis(original)
+        val needle = "$form ($gloss)"
+        var index = formatted.indexOf(needle)
+        while (index >= 0) {
+            if (index == 0 || !isWikiWordChar(formatted[index - 1])) return true
+            index = formatted.indexOf(needle, index + 1)
+        }
+        return false
+    }
+
+    /**
+     * Null means the pair is not an explicit parenthetical and other rules may apply.
+     * An empty string means the gloss has an explicit owner and this pair is not that owner.
+     */
+    private fun parentheticalDecision(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        if (cue.unitNumber < 26) return null
+        val owners = parentheticalOwners(cue.originalSourceText)[answer.shippedText] ?: return null
+        val group = listOf(cue, answer) + distractors
+        if (
+            owners == setOf(cue.shippedText) &&
+            boundedParenthetical(cue.originalSourceText, cue.shippedText, answer.shippedText) &&
+            hasCyrillic(cue.shippedText) &&
+            !hasCyrillic(answer.shippedText) &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            cue.shippedText != answer.shippedText &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_PARENTHETICAL_GLOSS"
+        }
+        return ""
+    }
+
     private fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val parenthetical = parentheticalDecision(cue, answer, distractors)
+        if (parenthetical == "") return null
+        if (parenthetical != null) return parenthetical
         val group = listOf(cue, answer) + distractors
         val parsed = group.map { openRussianLemma(it) }
         if (parsed.all { it != null }) {
@@ -1645,7 +1713,7 @@ internal object V2Validator {
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 11..25) {
+        if (unitNumber in 11..30) {
             errors += explicitTargetErrors(pack, item)
         }
         return errors
@@ -1825,7 +1893,7 @@ internal object V2Validator {
         val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
         val feature = assessment.testedFeature
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 21..25) {
+        if (unitNumber in 21..30) {
             errors += observableDistinctionErrors(pack, item)
         } else {
             val phrase = TARGET_PHRASES[feature]
@@ -2104,7 +2172,7 @@ internal object V2Validator {
                 }
             }
             val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-            if (governedUnit in 6..15 || governedUnit in 21..25) {
+            if (governedUnit in 6..15 || governedUnit in 21..30) {
                 errors += structureValid(pack, item)
             }
         }
@@ -2372,6 +2440,20 @@ internal object V2Validator {
             if (!isShareAlikeLicense(record.licenseId) || record.licenseUrl.isBlank()) {
                 errors += "Provenance ${record.itemId} incompatible license"
             }
+            if (record.unitNumber in 26..30 && record.sourceId.startsWith("src-wikipedia-")) {
+                if (!record.attribution.contains("Wikipedia:Copyrights oldid 1369466282") ||
+                    !record.attribution.contains("CC BY-SA 4.0")
+                ) {
+                    errors += "Provenance ${record.itemId} Wikipedia license route is missing"
+                }
+            }
+            if (record.unitNumber in 26..30 && record.sourceId.startsWith("src-wikibooks-")) {
+                if (!record.attribution.contains("Wikibooks:Copyrights oldid 4622060") ||
+                    record.attribution.contains("Wikipedia:Copyrights oldid")
+                ) {
+                    errors += "Provenance ${record.itemId} Wikibooks license route is missing"
+                }
+            }
             if (isExcludedProvenance(record)) {
                 errors += "Provenance ${record.itemId} excluded source cannot enter the seed"
             }
@@ -2400,8 +2482,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..25) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-25 source intake"
+            if (record.unitNumber !in 3..30) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-30 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -2484,8 +2566,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..25) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-25 source intake"
+            if (record.unitNumber !in 3..30) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-30 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||

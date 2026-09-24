@@ -21,9 +21,18 @@ class Units35SourceIntakeTest {
         val validation = V2Validator.validate(pack)
         assertTrue(validation.errors.joinToString("\n"), validation.ok)
         assertTrue(pack.provenanceRecords.isNotEmpty())
-        val admitted = setOf("src-openrussian-50e210c4", "src-wikibooks-russian-cc-by-sa")
+        val admitted = setOf(
+            "src-openrussian-50e210c4",
+            "src-wikibooks-russian-cc-by-sa",
+            "src-wikipedia-russian-grammar-1369617627",
+            "src-wikipedia-russian-alphabet-1371795481",
+            "src-wikibooks-russian-various-stuff-3353858",
+        )
         pack.provenanceRecords.forEach { record ->
-            assertTrue(record.sourceId in admitted)
+            assertTrue(record.itemId, record.sourceId in admitted)
+            if (record.unitNumber in 26..30) {
+                assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
+            }
             assertTrue(record.sourceRevision.isNotBlank())
             assertTrue(record.sourceUrl.isNotBlank())
             assertTrue(record.attribution.isNotBlank())

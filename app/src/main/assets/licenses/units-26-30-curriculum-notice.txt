@@ -1,0 +1,15 @@
+Units 26–30 proposed curriculum notice
+
+This notice covers the proposed instructional records for Units 26, 27, 28, 29, and 30. It is not a review approval, a mapping approval, or a release authorization.
+
+Admitted text sources, frozen on 2026-09-24:
+
+- English Wikipedia, Russian grammar, oldid 1369617627. Wikipedia contributors. License: Creative Commons Attribution-ShareAlike 4.0 International, via the retained Wikipedia:Copyrights oldid 1369466282. License URL: https://creativecommons.org/licenses/by-sa/4.0/. The legal code is packaged in this app as cc-by-sa-4.0.txt.
+- English Wikipedia, Russian alphabet, oldid 1371795481. Wikipedia contributors. License: Creative Commons Attribution-ShareAlike 4.0 International, via the retained Wikipedia:Copyrights oldid 1369466282. License URL: https://creativecommons.org/licenses/by-sa/4.0/. The legal code is packaged in this app as cc-by-sa-4.0.txt.
+- English Wikibooks, Russian/Various Stuff, oldid 3353858, address-notation span only. Wikibooks contributors. License: Creative Commons Attribution-ShareAlike 4.0 International, via the separate retained Wikibooks:Copyrights oldid 4622060. License URL: https://creativecommons.org/licenses/by-sa/4.0/. The legal code is packaged in this app as cc-by-sa-4.0.txt.
+
+The Wikipedia license route and the Wikibooks license route are not interchangeable. Linked media, Phonos, and audio on those pages are not admitted. The selection and arrangement of admitted spans are modifications. Those selections are pending qualified review. The adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0.
+
+Application code, user data, and user recordings are outside that curriculum-data statement. No audio is included in this proposed curriculum. Penguin material is excluded.
+
+Reviewer identity, qualification, date, and signature are blank. Qualified review is still pending.

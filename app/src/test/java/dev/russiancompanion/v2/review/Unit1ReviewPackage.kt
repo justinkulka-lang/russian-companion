@@ -36,6 +36,8 @@ internal const val UNITS_16_20_CURRICULUM_COMMIT = "55ac696b9e9dd1c695f7fcc2b7cc
 
 internal const val UNITS_21_25_CURRICULUM_COMMIT = "fd1f6497b235208786d0f720d71a248a22f8d69e"
 
+internal const val UNITS_26_30_CURRICULUM_COMMIT = "54cbb80fc752aa4b60ef68e612aa829c4a60b6ed"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
     in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
     in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
@@ -43,6 +45,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber
     in 11..15 -> UNITS_11_15_CURRICULUM_COMMIT
     in 16..20 -> UNITS_16_20_CURRICULUM_COMMIT
     in 21..25 -> UNITS_21_25_CURRICULUM_COMMIT
+    in 26..30 -> UNITS_26_30_CURRICULUM_COMMIT
     else -> UNITS_11_15_CURRICULUM_COMMIT
 }
 
@@ -689,6 +692,35 @@ internal fun buildUnitReviewPackage(
     pack.authoredEnglishRecords.filter { it.unitNumber == unitNumber }.sortedBy { it.id }.forEach { authored ->
         add(authoredEnglishRecord(pack, authored))
     }
+    if (unitNumber >= 26) {
+        pack.sourceCapabilities.filter { it.unitNumber == unitNumber }.sortedBy { it.id }.forEach { capability ->
+            add(
+                record(
+                    id = capability.id,
+                    type = "SOURCE_CAPABILITY",
+                    objectiveIds = listOf(capability.objectiveId),
+                    sessionIds = emptyList(),
+                    content = listOf(
+                        "sourceId=${capability.sourceId}",
+                        "sourceRevision=${capability.sourceRevision}",
+                        "sourceRecordId=${capability.sourceRecordId}",
+                        "sourceHash=${capability.sourceHash}",
+                        "supportedClaim=${capability.supportedClaim}",
+                        "exactSpan=${capability.exactSpan}",
+                    ).joinToString("\n"),
+                    sourceId = capability.sourceId,
+                    rightsIds = pack.rights.filter { it.sourceId == capability.sourceId }.map { it.id },
+                    classification = "SOURCE_CAPABILITY",
+                    reviewStatus = "PENDING_QUALIFIED_REVIEW",
+                ),
+            )
+            if (unit.objectives.none { it.id == capability.objectiveId }) {
+                unresolved += "Source capability ${capability.id} objective ${capability.objectiveId} cannot be resolved"
+            } else {
+                addEdge(Unit1ReviewEdge(capability.objectiveId, capability.id, "SOURCE_CAPABILITY"))
+            }
+        }
+    }
     val letterIds = exampleIds.mapNotNull { pack.example(it)?.letterId?.takeIf { id -> id.isNotBlank() } }.distinct()
     letterIds.forEach { letterId ->
         val letter = pack.letter(letterId)
@@ -1162,6 +1194,24 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
         }
         append("\n## Book-directed experiences\n\n")
         if (review.bookDirectedIds.isEmpty()) append("None.\n\n") else review.bookDirectedIds.forEach { append("- `$it`\n") }
+        if (review.unitNumber >= 26 && unit != null) {
+            append("\n## Unsupported-capability register\n\n")
+            val supported = pack.sourceCapabilities.filter { it.unitNumber == review.unitNumber }
+            if (supported.isEmpty()) append("None admitted.\n\n") else supported.forEach { append("- `${it.id}` supports `${it.supportedClaim}` for `${it.objectiveId}`\n") }
+            val unsupported = unit.objectives.filter { it.kind == "GUIDANCE" }
+            if (unsupported.isEmpty()) append("\nNo guidance objective is recorded.\n\n") else {
+                append("\nGuidance objectives stay unsupported until an admitted frozen capability exists:\n\n")
+                unsupported.forEach { append("- `${it.id}` ${it.title}\n") }
+            }
+            append("\n## Book-directed register\n\n")
+            val bookSteps = unit.sessions.flatMap { it.steps }.filter { !it.bookDirection.isNullOrBlank() || !it.unavailableReason.isNullOrBlank() }
+            if (bookSteps.isEmpty()) append("None.\n\n") else bookSteps.forEach { step ->
+                append("- `${step.id}` ${step.bookDirection ?: step.unavailableReason.orEmpty()}\n")
+            }
+            append("\n## Optional non-gating register\n\n")
+            val optional = unit.objectives.filter { !it.gating }
+            if (optional.isEmpty()) append("None.\n\n") else optional.forEach { append("- `${it.id}` ${it.title}\n") }
+        }
         append("\n## Unavailable experiences\n\n")
         if (review.unavailableIds.isEmpty()) append("None.\n\n") else review.unavailableIds.forEach { append("- `$it`\n") }
         append("\n## Unresolved relationships\n\n")
@@ -1263,18 +1313,27 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
         MAPPING_HEADER.joinToString("\t"),
     )
     val populated = facts.mappingRecordId != null
-    unit.objectives.forEach { objective ->
-        lines += mappingRow(objective.id, "OBJECTIVE", objective.title, if (populated) facts else null, digest)
-    }
-    unit.sessions.forEach { session ->
-        lines += mappingRow(session.id, "SESSION", session.title, if (populated) facts else null, digest)
-    }
-    if (unit.objectives.isEmpty() && unit.sessions.isEmpty()) {
+    if (unitNumber in 26..30 && populated) {
         lines.add(
             8,
             "# This worksheet records a pending structural observation only. It is not a review packet and it does not approve instructional content.",
         )
+    }
+    if (unit.objectives.isEmpty() && unit.sessions.isEmpty()) {
+        if (unitNumber !in 26..30) {
+            lines.add(
+                8,
+                "# This worksheet records a pending structural observation only. It is not a review packet and it does not approve instructional content.",
+            )
+        }
         lines += mappingRow(unit.id, "UNIT", unit.title, if (populated) facts else null, digest)
+    } else {
+        unit.objectives.forEach { objective ->
+            lines += mappingRow(objective.id, "OBJECTIVE", objective.title, if (populated) facts else null, digest)
+        }
+        unit.sessions.forEach { session ->
+            lines += mappingRow(session.id, "SESSION", session.title, if (populated) facts else null, digest)
+        }
     }
     return lines.joinToString("\n") + "\n"
 }

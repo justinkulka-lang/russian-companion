@@ -33,6 +33,7 @@ RELATION_KINDS = (
     "SAME_RULE_DIFFERENT_BOUNDARY",
     "SOURCE_SUPPLIED_PAIR",
     "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+    "EXPLICIT_PARENTHETICAL_GLOSS",
 )
 
 
@@ -167,13 +168,65 @@ def _contains_shown(original: str, shown: str) -> bool:
     return bool(folded) and folded in _fold(original)
 
 
+_PARENTHETICAL = re.compile(r"(?<![\u0400-\u04FF\u0301])([^\s()]+)\s+\(([^)]+)\)")
+
+
+def _parenthetical_owners(original: str) -> dict[str, set[str]]:
+    formatted = format_wikibooks_emphasis(original)
+    owners: dict[str, set[str]] = {}
+    for match in _PARENTHETICAL.finditer(formatted):
+        owners.setdefault(match.group(2), set()).add(match.group(1))
+    return owners
+
+
+def _bounded_parenthetical(original: str, form: str, gloss: str) -> bool:
+    formatted = format_wikibooks_emphasis(original)
+    needle = f"{form} ({gloss})"
+    start = 0
+    while True:
+        index = formatted.find(needle, start)
+        if index < 0:
+            return False
+        if index == 0 or not ("\u0400" <= formatted[index - 1] <= "\u04FF" and formatted[index - 1].isalpha()):
+            return True
+        start = index + 1
+
+
+def _parenthetical_relation(cue: dict, answer: dict, distractors: list[dict]) -> str | None | bool:
+    """Return the explicit kind, False when a parenthetical owner forbids the pair, or None."""
+    if int(cue.get("unitNumber") or 0) < 26:
+        return None
+    owners = _parenthetical_owners(cue.get("originalSourceText") or "").get(answer.get("shippedText") or "")
+    if not owners:
+        return None
+    group = [cue, answer, *distractors]
+    if (
+        owners == {cue.get("shippedText")}
+        and _bounded_parenthetical(cue.get("originalSourceText") or "", cue.get("shippedText") or "", answer.get("shippedText") or "")
+        and _cyr(cue.get("shippedText") or "")
+        and not _cyr(answer.get("shippedText") or "")
+        and all(_same_span(cue, record) for record in group)
+        and cue.get("shippedText") != answer.get("shippedText")
+        and all(_displayed_in_frozen(record) for record in group)
+        and all(record.get("shippedText") != answer.get("shippedText") for record in distractors)
+    ):
+        return "EXPLICIT_PARENTHETICAL_GLOSS"
+    return False
+
+
 def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str | None:
     """Return the governed relationship the records actually have, or None.
 
     relationParticipantIds are pointers. This function reads the resolved
     records and accepts a relationship only when source, revision, record id,
-    source hash, and original text support it.
+    source hash, and original text support it. Co-occurrence in one span does
+    not reassign an explicit parenthetical gloss.
     """
+    parenthetical = _parenthetical_relation(cue, answer, distractors)
+    if parenthetical is False:
+        return None
+    if parenthetical:
+        return parenthetical
     group = [cue, answer, *distractors]
     parsed = [_openrussian_lemma(record) for record in group]
     if all(parsed):

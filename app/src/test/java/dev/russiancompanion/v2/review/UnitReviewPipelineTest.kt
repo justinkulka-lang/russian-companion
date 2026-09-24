@@ -94,7 +94,7 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
-        val packetUnits = (1..15).toList() + listOf(16, 17, 19, 21, 22, 24, 25)
+        val packetUnits = (1..15).toList() + listOf(16, 17, 19, 21, 22, 24, 25, 26, 27, 28, 29, 30)
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
             packetUnits.forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
@@ -116,9 +116,10 @@ class UnitReviewPipelineTest {
     fun unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords() {
         val pack = pack()
         val unit30 = buildUnitReviewPackage(pack, 30)
-        assertTrue(unit30.unresolved.any { it.contains("Unit 30") && it.contains("advancement") })
-        val errors = validateUnitReviewFiles(pack, 30, renderUnitReviewFiles(pack, 30).files)
-        assertTrue(errors.any { it.contains("cannot resolve") })
+        assertTrue(unit30.unresolved.joinToString("\n"), unit30.unresolved.isEmpty())
+        assertEquals("PENDING_QUALIFIED_REVIEW", unit30.unitReviewStatus)
+        assertTrue(unit30.unavailableIds.isNotEmpty())
+        assertTrue(unit30.records.none { it.type == "UNIT_REVIEW" && it.reviewStatus == "APPROVED" })
         val outside = buildUnitReviewPackage(pack, 31)
         assertTrue(outside.unresolved.any { it.contains("outside Units 1-30") })
         assertNotEquals(buildUnitReviewPackage(pack, 6).reviewPackageDigest, buildUnitReviewPackage(pack, 7).reviewPackageDigest)
