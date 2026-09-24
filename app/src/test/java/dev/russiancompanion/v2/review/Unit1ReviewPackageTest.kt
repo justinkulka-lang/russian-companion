@@ -185,7 +185,8 @@ class Unit1ReviewPackageTest {
         assertEquals("DEVELOPMENT", pack().unit(1)!!.installState)
         assertEquals("DEVELOPMENT", pack().unit(2)!!.installState)
         assertTrue(pack().units.none { it.installState == "INSTALLED" })
-        assertTrue(pack().units.drop(15).all { it.installState == "NOT_YET_INSTALLED" })
+        assertTrue((16..20).all { pack().unit(it)!!.installState == "DEVELOPMENT" })
+        assertTrue(pack().units.drop(20).all { it.installState == "NOT_YET_INSTALLED" })
     }
 
     @Test

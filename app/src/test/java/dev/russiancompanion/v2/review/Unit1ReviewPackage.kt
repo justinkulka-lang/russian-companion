@@ -171,6 +171,12 @@ private const val UNITS_11_15_EDITION_NOTES =
 private const val UNITS_11_15_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
+private const val UNITS_16_20_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+
+private const val UNITS_16_20_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -283,6 +289,46 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Requests, imperative forms, and consolidation of aspect use",
         UNITS_11_15_EDITION_NOTES,
         UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        16,
+        "Lesson 16",
+        "188-200",
+        "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        17,
+        "Lesson 17",
+        "201-214",
+        "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        18,
+        "Lesson 18",
+        "215-229",
+        "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        19,
+        "Lesson 19",
+        "230-239",
+        "Conditional constructions with бы; obligation or probability with forms of должен; productive meanings of selected verbal prefixes",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        20,
+        "Lesson 20",
+        "240-256",
+        "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
     ),
 )
 

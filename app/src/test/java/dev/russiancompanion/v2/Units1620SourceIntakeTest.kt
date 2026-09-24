@@ -1,0 +1,310 @@
+package dev.russiancompanion.v2
+
+import dev.russiancompanion.v2.curriculum.V2LearnerView
+import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.V2ProvenanceRecord
+import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.V2Validator
+import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.unit
+import dev.russiancompanion.v2.review.governedMappingFacts
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.jsonObject
+import kotlinx.serialization.json.jsonPrimitive
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
+import org.junit.Test
+import java.io.File
+import java.security.MessageDigest
+
+class Units1620SourceIntakeTest {
+    private val pages = mapOf(
+        16 to "188-200",
+        17 to "201-214",
+        18 to "215-229",
+        19 to "230-239",
+        20 to "240-256",
+    )
+
+    private val preservedContentDigests = mapOf(
+        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
+        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
+        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
+        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
+        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
+    )
+
+    @Test
+    fun structuralMappingsMatchTheOwnedEditionObservations() {
+        val pack = pack()
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+        pages.forEach { (number, range) ->
+            val unit = pack.unit(number)!!
+            val facts = governedMappingFacts(number)
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
+            assertEquals(number, unit.penguinLesson)
+            assertTrue(unit.mappingNote.contains(range))
+            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            assertFalse(unit.mappingNote.contains("APPROVED"))
+            assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
+            assertEquals(number, facts.proposedLessonNumber)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
+            assertEquals("UNRESOLVED", facts.isbnObservation)
+            assertNull(facts.isbn)
+            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.first { it.unitNumber == number }.status)
+            assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
+        }
+        assertTrue(pack.units.drop(20).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() })
+        preservedContentDigests.forEach { (number, digest) ->
+            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+        }
+    }
+
+    @Test
+    fun frozenSourceBytesAndRevisionsStayImmutable() {
+        val root = repo()
+        val freeze = Json.parseToJsonElement(File(root, "catalog/sources/units-16-20/FREEZE.json").readText()).jsonObject
+        val openRussian = freeze.getValue("openrussian").jsonObject
+        assertEquals("50e210c4803237779cb562bc1abcea529066031c", openRussian.getValue("commit").jsonPrimitive.content)
+        assertEquals("CC BY-SA 4.0", openRussian.getValue("licenseId").jsonPrimitive.content)
+        val pages = freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray
+        val expected = mapOf(
+            "instrumental" to "4219602",
+            "adjectives" to "4292379",
+            "numbers" to "4371358",
+            "aspect" to "4059032",
+            "copyrights" to "4622060",
+        )
+        val seen = mutableSetOf<String>()
+        pages.forEach { element ->
+            val page = element.jsonObject
+            val key = page.getValue("key").jsonPrimitive.content
+            seen += key
+            assertEquals(expected.getValue(key), page.getValue("oldid").jsonPrimitive.content)
+            val bytes = frozenFile(root, page.getValue("file").jsonPrimitive.content).readBytes()
+            assertEquals(page.getValue("sha256").jsonPrimitive.content, sha256(bytes))
+            val revision = Json.parseToJsonElement(frozenFile(root, page.getValue("revisionFile").jsonPrimitive.content).readText()).jsonObject
+            assertEquals(page.getValue("oldid").jsonPrimitive.content, revision.getValue("revid").jsonPrimitive.content)
+            assertEquals(page.getValue("mediawikiSha1").jsonPrimitive.content, revision.getValue("sha1").jsonPrimitive.content)
+            assertEquals(page.getValue("size").jsonPrimitive.content, bytes.size.toString())
+        }
+        assertEquals(expected.keys, seen)
+        val excluded = freeze.getValue("decisions").jsonArray.map { it.jsonObject }
+            .filter { it.getValue("disposition").jsonPrimitive.content == "EXCLUDED" }
+            .map { it.getValue("id").jsonPrimitive.content }
+            .toSet()
+        assertTrue(excluded.contains("wikibooks-verbs-of-motion-red-link"))
+        assertTrue(excluded.contains("wikibooks-verbs-4233876"))
+        assertTrue(excluded.contains("penguin-private-pdf"))
+    }
+
+    @Test
+    fun everyRussianSpanOccursInItsRecordedSource() {
+        val pack = pack()
+        val root = repo()
+        val freeze = Json.parseToJsonElement(File(root, "catalog/sources/units-16-20/FREEZE.json").readText()).jsonObject
+        val byOldid = freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray.associate { element ->
+            val page = element.jsonObject
+            page.getValue("oldid").jsonPrimitive.content to frozenFile(root, page.getValue("file").jsonPrimitive.content).readText()
+        }
+        pack.provenanceRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+            assertEquals(sha256(record.originalSourceText), record.sourceHash)
+            assertTrue(record.itemId, normalized(record.originalSourceText).contains(normalized(record.shippedText)))
+            val page = byOldid[record.sourceRevision]
+            if (page != null) {
+                assertTrue(record.itemId, page.contains(record.originalSourceText))
+            } else {
+                assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
+            }
+            assertFalse(record.originalSourceText.contains("The New Penguin Russian Course"))
+        }
+        assertEquals(0, pack.admissions.generatedRussianWords)
+        assertEquals(0, pack.admissions.penguinProseAssets)
+        assertEquals(0, pack.audioAssets.size)
+        assertTrue(pack.provenanceRecords.none { it.unitNumber in setOf(18, 20) && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
+    }
+
+    @Test
+    fun unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance() {
+        val pack = pack()
+        assertTrue(reason(pack, 16).contains("becoming complements"))
+        assertTrue(reason(pack, 17).contains("weekdays"))
+        assertTrue(reason(pack, 17).contains("age"))
+        assertTrue(reason(pack, 18).contains("Comparison forms"))
+        assertTrue(reason(pack, 18).contains("Relative-clause"))
+        assertTrue(reason(pack, 19).contains("Conditional patterns"))
+        assertTrue(reason(pack, 19).contains("Obligation patterns"))
+        assertTrue(reason(pack, 20).contains("red link"))
+        listOf(16, 17, 18, 19, 20).forEach { number ->
+            val unit = pack.unit(number)!!
+            val decision = advancementDecision(
+                pack,
+                unit,
+                learner(
+                    number,
+                    book = true,
+                    correct = unit.objectives.flatMap { it.checkItemIds }.toSet(),
+                    steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                ),
+            )
+            assertFalse(decision.allowed)
+            assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
+        }
+    }
+
+    @Test
+    fun unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources() {
+        val pack = pack()
+        val errors = V2Validator.validate(claimComplete(pack, 18)).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains("without comparison and relative-clause sources") })
+        val adjectiveOnly = pack.copy(
+            provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.sourceRevision == "4292379" }.copy(
+                unitNumber = 18,
+                originalSourceText = "comparative лу'чше and superlative который are inferred",
+            ),
+        )
+        val inferred = V2Validator.validate(claimComplete(adjectiveOnly, 18)).errors
+        assertTrue(inferred.joinToString("\n"), inferred.any { it.contains("without comparison and relative-clause sources") })
+        val dictionaryOnly = pack.copy(
+            provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.sourceId == "src-openrussian-50e210c4" }.copy(
+                unitNumber = 18,
+                originalSourceText = "comparative хороший superlative который",
+            ),
+        )
+        val fromRows = V2Validator.validate(claimComplete(dictionaryOnly, 18)).errors
+        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without comparison and relative-clause sources") })
+    }
+
+    @Test
+    fun unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources() {
+        val pack = pack()
+        val errors = V2Validator.validate(claimComplete(pack, 19)).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains("without conditional and obligation sources") })
+        val aspectOnly = pack.copy(
+            provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.unitNumber == 19 }.copy(
+                originalSourceText = "бы and должен are not on this aspect page",
+            ),
+        )
+        val still = V2Validator.validate(claimComplete(aspectOnly, 19)).errors
+        assertTrue(still.joinToString("\n"), still.any { it.contains("without conditional and obligation sources") })
+    }
+
+    @Test
+    fun unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows() {
+        val pack = pack()
+        val base = V2Validator.validate(claimComplete(pack, 20)).errors
+        assertTrue(base.joinToString("\n"), base.any { it.contains("red link, general verb page, or dictionary rows") })
+        val samples = listOf(
+            sample(pack, "red-link", "src-wikibooks-russian-cc-by-sa", "Verbs of Motion"),
+            sample(pack, "4233876", "src-wikibooks-russian-cc-by-sa", "A general verb page mentions unidirectional and multidirectional motion."),
+            sample(pack, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", "dictionary row unidirectional multidirectional"),
+        )
+        samples.forEach { record ->
+            val claimed = pack.copy(provenanceRecords = pack.provenanceRecords + record)
+            val errors = V2Validator.validate(claimComplete(claimed, 20)).errors
+            assertTrue(errors.joinToString("\n"), errors.any { it.contains("red link, general verb page, or dictionary rows") })
+        }
+    }
+
+    @Test
+    fun noPenguinContentOrPrivatePdfEnteredGit() {
+        val root = repo()
+        val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
+            .directory(root)
+            .redirectError(File("/dev/null"))
+            .start()
+            .let { process ->
+                val text = process.inputStream.bufferedReader().readText()
+                check(process.waitFor() == 0)
+                text
+            }
+        assertEquals("", listed.trim())
+        val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
+        assertFalse(curriculum.contains("The New Penguin Russian Course"))
+        assertFalse(curriculum.contains("PENGUIN_EDITION_MAPPING_INPUT"))
+        assertFalse(File(root, "catalog/sources/units-16-20").walkTopDown().any { it.isFile && it.extension.equals("pdf", ignoreCase = true) })
+        val candidate = File(root, "release/acceptance/candidate.json").readText()
+        assertTrue(candidate.contains("\"publicRelease\": \"NOT_APPROVED\""))
+        assertTrue(candidate.contains("\"frozen\": false"))
+        assertTrue(candidate.contains("\"sourceCommit\": null"))
+        assertTrue(candidate.contains("AT-031"))
+    }
+
+    private fun reason(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, number: Int): String {
+        return pack.unit(number)!!.sessions.flatMap { it.steps }.mapNotNull { it.unavailableReason }.joinToString("\n")
+    }
+
+    private fun claimComplete(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, number: Int) = pack.copy(
+        units = pack.units.map { unit ->
+            if (unit.number != number) {
+                unit
+            } else {
+                unit.copy(
+                    readiness = "CONTENT_COMPLETE_REVIEW_PENDING",
+                    sessions = unit.sessions.map { session ->
+                        session.copy(
+                            steps = session.steps.map { step ->
+                                if (step.kind == "UNAVAILABLE" || !step.unavailableReason.isNullOrBlank()) {
+                                    step.copy(kind = "ORIENT", unavailableReason = null)
+                                } else {
+                                    step
+                                }
+                            },
+                        )
+                    },
+                )
+            }
+        },
+    )
+
+    private fun sample(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, revision: String, sourceId: String, text: String): V2ProvenanceRecord {
+        return pack.provenanceRecords.first().copy(
+            unitNumber = 20,
+            sourceRevision = revision,
+            sourceId = sourceId,
+            originalSourceText = text,
+            shippedText = text,
+        )
+    }
+
+    private fun learner(number: Int, book: Boolean, correct: Set<String>, steps: Set<String>) = V2LearnerView(
+        onboardingCompleted = true,
+        currentUnitNumber = number,
+        startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
+        hasPenguin = true,
+        hasAnki = false,
+        hasBinder = false,
+        hasTutor = false,
+        dailyMinutes = 25,
+        transliterationEnabled = true,
+        currentSessionId = null,
+        currentStepIndex = 0,
+        completedStepIds = steps,
+        correctItemIds = correct,
+        bookAttestedUnits = if (book) setOf(number) else emptySet(),
+        completedUnitNumbers = emptySet(),
+    )
+
+    private fun frozenFile(root: File, relative: String): File {
+        return File(File(root, "catalog/sources/units-16-20"), relative).canonicalFile
+    }
+
+    private fun normalized(text: String) = text.replace("\u0301", "").replace("'", "")
+
+    private fun sha256(text: String): String = sha256(text.toByteArray(Charsets.UTF_8))
+
+    private fun sha256(bytes: ByteArray): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(bytes)
+        return digest.joinToString("") { byte -> "%02x".format(byte) }
+    }
+
+    private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
+
+    private fun repo(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+}

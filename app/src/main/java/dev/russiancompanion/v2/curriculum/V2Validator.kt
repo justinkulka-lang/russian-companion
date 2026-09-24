@@ -634,6 +634,7 @@ internal object V2Validator {
         }
         if (unit.readiness != "NOT_PREPARED") {
             validateSubstantiveContent(pack, unit, errors)
+            errors += completionGapErrors(pack, unit)
         }
         when (unit.readiness) {
             "NOT_PREPARED" -> {
@@ -676,6 +677,108 @@ internal object V2Validator {
                     errors += "Unit ${unit.number} INSTALLABLE readiness requires approved review and mapping"
                 }
             }
+        }
+    }
+
+    private fun completionGapErrors(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        if (unit.number !in 16..20) return emptyList()
+        val records = pack.provenanceRecords.filter { it.unitNumber == unit.number }
+        val joined = records.joinToString("\n") { it.originalSourceText }
+        return when (unit.number) {
+            16 -> if (hasComplementSpan(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 16 is not content-complete without an admitted instrumental complement span")
+            }
+            17 -> if (hasCalendarSpan(joined)) {
+                emptyList()
+            } else {
+                listOf("Unit 17 is not content-complete without telling-time, weekday, date, and age sources")
+            }
+            18 -> if (hasComparisonSource(records) && hasRelativeSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 18 is not content-complete without comparison and relative-clause sources")
+            }
+            19 -> if (hasConditionalSource(records) && hasObligationSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 19 is not content-complete without conditional and obligation sources")
+            }
+            20 -> if (hasMotionSource(records)) {
+                emptyList()
+            } else {
+                listOf("Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone")
+            }
+            else -> emptyList()
+        }
+    }
+
+    private fun dictionaryRow(record: V2ProvenanceRecord): Boolean {
+        return record.sourceId == "src-openrussian-50e210c4" ||
+            record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c")
+    }
+
+    private fun hasComplementSpan(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            text.contains("work as") || text.contains("become") || text.contains("\u0441\u0442\u0430\u0442\u044c")
+        }
+    }
+
+    private fun hasCalendarSpan(text: String): Boolean {
+        val folded = text.lowercase()
+        val weekday = folded.contains("\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a") || folded.contains("monday")
+        val clock = folded.contains("o'clock") || folded.contains("half past") || folded.contains("\u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0447\u0430\u0441")
+        val date = folded.contains("\u044f\u043d\u0432\u0430\u0440\u044f") || folded.contains("january")
+        val age = folded.contains("years old")
+        return weekday && clock && date && age
+    }
+
+    private fun hasComparisonSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            record.sourceRevision != "4292379" &&
+                !dictionaryRow(record) &&
+                (text.contains("comparative") || text.contains("superlative")) &&
+                text.any { it.code in 0x0400..0x04FF }
+        }
+    }
+
+    private fun hasRelativeSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            record.sourceRevision != "4292379" &&
+                !dictionaryRow(record) &&
+                record.originalSourceText.contains("\u043a\u043e\u0442\u043e\u0440")
+        }
+    }
+
+    private fun hasConditionalSource(records: List<V2ProvenanceRecord>): Boolean {
+        val particle = Regex("(?<![\\p{L}])\u0431\u044b(?![\\p{L}])")
+        return records.any { record ->
+            record.sourceRevision != "4059032" &&
+                !dictionaryRow(record) &&
+                particle.containsMatchIn(record.originalSourceText)
+        }
+    }
+
+    private fun hasObligationSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            record.sourceRevision != "4059032" &&
+                !dictionaryRow(record) &&
+                record.originalSourceText.contains("\u0434\u043e\u043b\u0436\u0435\u043d")
+        }
+    }
+
+    private fun hasMotionSource(records: List<V2ProvenanceRecord>): Boolean {
+        return records.any { record ->
+            val text = record.originalSourceText.lowercase()
+            record.sourceRevision != "4233876" &&
+                record.sourceRevision != "4059032" &&
+                record.sourceRevision != "red-link" &&
+                !dictionaryRow(record) &&
+                text.contains("unidirectional") &&
+                text.contains("multidirectional")
         }
     }
 
@@ -792,8 +895,8 @@ internal object V2Validator {
     }
 
     private fun validateDevelopment(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
-        if (unit.number !in 1..15) {
-            errors += "Only Units 1-15 may be development content in this pack"
+        if (unit.number !in 1..20) {
+            errors += "Only Units 1-20 may be development content in this pack"
         }
         if (unit.mappingStatus != "PENDING_CURRICULUM_REVIEWER") {
             errors += "Unit ${unit.number} mapping must remain pending until a reviewer signs the owned edition"
@@ -801,7 +904,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number in 6..15) validateGovernedChecks(pack, unit, errors)
+        if (unit.number in 6..20) validateGovernedChecks(pack, unit, errors)
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -1142,14 +1245,14 @@ internal object V2Validator {
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 11..15) {
+        if (unitNumber in 11..20) {
             errors += explicitTargetErrors(pack, item)
         }
         return errors
     }
 
     /**
-     * Structural protection for Units 11–15 advancement checks.
+     * Structural protection for Units 11–20 advancement checks.
      * It rejects known ambiguity classes. It is not qualified linguistic approval.
      */
     private val COLOCATION_PROMPT = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
@@ -1184,6 +1287,32 @@ internal object V2Validator {
         "MASCULINE_FORM" to "masculine form",
         "TENSE_KEPT" to "same tense",
         "ENGLISH_TENSE_CHANGE" to "changing the reported tense",
+        "INSTRUMENTAL_SINGULAR" to "instrumental singular",
+        "INSTRUMENTAL_PLURAL" to "instrumental plural",
+        "MASCULINE_INSTRUMENTAL" to "masculine instrumental",
+        "PLURAL_INSTRUMENTAL" to "plural instrumental",
+        "PENCIL_INSTRUMENTAL" to "pencil instrumental",
+        "ACCOMPANIMENT_LINE" to "accompaniment line",
+        "MEANS_INSTRUMENTAL" to "means instrumental",
+        "BETWEEN_LINE" to "between line",
+        "OVER_LABEL" to "over label",
+        "UNDER_LABEL" to "under label",
+        "BEFORE_LABEL" to "before label",
+        "FIRST_ORDINAL" to "first ordinal",
+        "SECOND_ORDINAL" to "second ordinal",
+        "THIRD_ORDINAL" to "third ordinal",
+        "ONE_HOUR_ROW" to "one-hour row",
+        "TWO_HOUR_ROW" to "two-hour row",
+        "FIVE_HOUR_ROW" to "five-hour row",
+        "ONE_YEAR_ROW" to "one-year row",
+        "TWO_YEAR_ROW" to "two-year row",
+        "FIVE_YEAR_ROW" to "five-year row",
+        "ONE_MINUTE_ROW" to "one-minute row",
+        "TWO_MINUTE_ROW" to "two-minute row",
+        "FIVE_MINUTE_ROW" to "five-minute row",
+        "DISSUADE_MEANING" to "dissuade meaning",
+        "AGREE_MEANING" to "agree meaning",
+        "DISSUADE_PERFECTIVE" to "dissuade perfective",
     )
     private val RESPONSE_KINDS = setOf(
         "RUSSIAN_TOKEN",
@@ -1235,6 +1364,10 @@ internal object V2Validator {
         "FIRST_PERSON_PLURAL_FUTURE" to "presfut_pl1",
         "SECOND_PERSON_PLURAL_FUTURE" to "presfut_pl2",
         "THIRD_PERSON_PLURAL_FUTURE" to "presfut_pl3",
+        "INSTRUMENTAL_SINGULAR" to "sg_inst",
+        "INSTRUMENTAL_PLURAL" to "pl_inst",
+        "MASCULINE_INSTRUMENTAL" to "decl_m_inst",
+        "PLURAL_INSTRUMENTAL" to "decl_pl_inst",
     )
 
     private fun explicitTargetErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
@@ -1811,8 +1944,8 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..15) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-15 source intake"
+            if (record.unitNumber !in 3..20) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 3-20 source intake"
             }
             if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
                 errors += "Provenance ${record.itemId} objective is missing"
@@ -1895,8 +2028,8 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..15) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-15 source intake"
+            if (record.unitNumber !in 3..20) {
+                errors += "Authored English ${record.id} is outside the proposed Units 3-20 source intake"
             }
             if (CYRILLIC_REGION.containsMatchIn(record.text) ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||

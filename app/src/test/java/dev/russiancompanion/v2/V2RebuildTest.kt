@@ -100,7 +100,7 @@ class V2RebuildTest {
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.any { it.contains("distinct in-app checks") })
         }
-        assertEquals((1..15).toList(), pack.unitReviews.map { it.unitNumber })
+        assertEquals((1..20).toList(), pack.unitReviews.map { it.unitNumber })
         assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() })
         assertTrue(pack.unit(2)!!.sessions.flatMap { it.steps }.none { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() })
         assertEquals("BOOK", pack.unit(2)!!.sessions.flatMap { it.steps }.first { it.id == "u2-st-hw" }.kind)
@@ -128,12 +128,13 @@ class V2RebuildTest {
             assertTrue(objective.remediationStepIds.isNotEmpty())
         }
         assertTrue((11..15).all { pack.unit(it)!!.installState == "DEVELOPMENT" })
-        assertTrue(pack.units.drop(15).all { it.installState == "NOT_YET_INSTALLED" })
+        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.readiness == "NOT_PREPARED" })
+        assertTrue(pack.units.drop(20).all { it.installState == "NOT_YET_INSTALLED" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.catalogAudioBoundToUnits)
         assertEquals("PENDING_QUALIFIED_REVIEW", pack.linguisticReview.status)
-        assertEquals((1..15).toList(), pack.unitReviews.map { it.unitNumber })
+        assertEquals((1..20).toList(), pack.unitReviews.map { it.unitNumber })
         assertTrue(pack.unitReviews.all { it.status == "PENDING_QUALIFIED_REVIEW" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertTrue(pack.items.none { it.isGovernance() })
         assertTrue(pack.items.all { !it.promptLetter.isNullOrBlank() })
@@ -433,7 +434,8 @@ class V2RebuildTest {
         assertFalse(canOpenUnit(unitState(pack, unit3, learner)))
         assertTrue(unit3.sessions.isNotEmpty())
         assertTrue((11..15).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.sessions.isNotEmpty() })
-        assertTrue(pack.units.drop(15).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() && it.objectives.isEmpty() })
+        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.sessions.isNotEmpty() })
+        assertTrue(pack.units.drop(20).all { it.installState == "NOT_YET_INSTALLED" && it.sessions.isEmpty() && it.objectives.isEmpty() })
         val store = LocalStore.openInMemory(context()).also { stores += it }
         store.v2CompleteUnit(1, "2026-09-23T12:00")
         store.v2CompleteUnit(2, "2026-09-23T12:00")
@@ -552,7 +554,8 @@ class V2RebuildTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         }
-        assertTrue(pack.units.drop(15).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" })
+        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.readiness == "NOT_PREPARED" })
+        assertTrue(pack.units.drop(20).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" })
 
         val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
         val unitThree = V2Validator.unitContentReviewDigest(pack, 3)
@@ -907,7 +910,7 @@ class V2RebuildTest {
         assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c", V2Validator.contentReviewDigest(pack))
+        assertEquals("ee981b73c6d4d7462814731bc0d238933e0c9f4c2e8fb00965f98e6b4c1d37d4", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)

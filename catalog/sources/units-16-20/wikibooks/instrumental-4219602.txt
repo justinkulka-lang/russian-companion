@@ -1,0 +1,98 @@
+The instrumental case is traditionally taught as the fourth case in Russian. It typically denotes an object as being the means by which some action is carried out (e.g., I ate ''with a fork'').
+
+== Usage ==
+The instrumental case is used to denote the means by which some actions is carried out. In the phrase, 'Boris wrote the school a letter with a pencil', there are four items:
+# 'Boris' is the person who is doing, or did, or will do, the verb, so he is the ''subject'' of the verb. Thus, the word '''Бори́с''' is in its nominative form.
+# 'A letter' is the thing that's being verbed, the ''direct object'' of the verb. Thus, the word '''письмо''' is in its accusative form.
+# 'To school' is the thing that's being indirectly verbed, so it's the ''indirect'' object of the verb. Thus, the word '''школа''' is in its dative form, '''школе''', and means 'to school'.
+# 'With a pencil' is the thing that allows the verb to be done, or is the means by which it is done. Thus, the word '''карандаш''' is in its instrumental form, '''карандашо́м''', and means 'with a pencil'
+# Finally, the complete sentence is: '''Борис писал письмо школе карандашом'''. Notice that the words 'a', 'to', 'with', etc, are omitted in Russian and instead controlled by grammatical endings.
+
+So the instrumental case is so called because it denotes the instrument by which some task is carried out, and this is its primary meaning. Thus, a word in the instrumental case can be translated by adding the words 'with' or 'by'.
+
+Like the other cases, there are prepositions which can place whatever comes after them in the instrumental case. There are six in total: '''С(о), над, под, за, перед''', and '''между'''.
+*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own is also 'with'. There are two concepts that are both conveyed by the English word 'with', but are conveyed separately in Russian. 'With', as in 'by means of' ('He built it with his hands') is conveyed by the instrumental case on its own ('his hands' in their inst. form). 'With', as in 'accompanied with' ('He built it with her') is conveyed by '''''c(o)''''' followed by the instrumental case ('with her' is '''c''' + ''inst.''). It can also be used to denote the manner in which something is done ('He built it with ease'). In both of these uses, '''c(o)''' ''inst'' is the antonym of '''без''' + ''gen'' ('without').
+*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if there is no motion involved - if there's motion, use '''под''' + [[Russian/Grammar/Accusative case|''acc'']] instead ('The book is under the bed' - no movement, 'The book slid under the bed' - movement). '''Под''' + ''inst'' can also mean 'physically near', and '''под''' + ''acc'' can mean 'temporally near' or 'near in time' ('They live ''near'' the city' - physically near).
+*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is in front of the house', 'The dog walked in front of the house', 'the family has a responsibility ''to'' the dog').
+*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them').
+*'''За''' generally means 'behind' or 'beyond', but has a few nuances to it. Like '''под''', when no motion is involved, the instrumental case is used. When motion ''is'' involved, however, the accusative case is used ('It's behind the house' - '''за''' + ''inst'', 'It went behind the house' - '''за''' + ''acc'').
+
+== Nouns ==
+Nouns in the instrumental case decline unusually compared to other cases, using rules that aren't found elsewhere. While not as complex as the [[Russian/Grammar/Genitive case|genitive plural]], it still warrants extra attention.
+
+=== Singular ===
+* Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental. However, if this ending syllable is both a) unstressed, and b) preceded by the five-letter rule ('''ч, ж, ш, щ, ц'''), then the ending becomes '''-ем'''.
+:: Train - '''поезд''' --> '''поездом'''
+:: Morning - '''утро''' --> '''утром'''
+:: Pencil - '''карандаш''' --> '''карандашом''' - ''ends in '''ш''', but ending syllable is stressed''
+:: Husband - '''муж''' - '''мужем''' - ''ends in '''ж''' and is unstressed''
+* Nouns ending in '''й''', '''е''', or '''ь''', have the ending '''-ем'''. If this ending is stressed, it becomes '''-ём'''. This applies mainly to masculine and neuter nouns; See below for feminine nouns ending in '''ь'''.
+:: Museum - '''музей''' --> '''музеем'''
+:: Sea - '''море''' --> '''морем'''
+:: Dictionary - '''словарь''' --> '''словарём''' - ''ending is stressed''
+:: Day - '''день''' --> '''днём''' - '''''e''' is a fleeting vowel, so vanishes when the word declines''
+* Those ending in '''а''' of any gender have '''-ой'''. As above, if the ending is both unstressed and ends in the five-letter rule, the ending becomes '''-ей'''.
+:: Book - '''книга''' --> '''книгой'''
+:: Newspaper - '''газета''' --> '''газетой'''
+:: Arm/hand - '''Рука''' --> '''Рукой'''
+:: Chicken - '''курица''' --> '''курицей''' - ''untressed ending and stem ends in '''ц'''''
+:: Pear - '''груша''' --> '''грушей''' - ''unstressed ending and stem ends in '''ш'''''
+* The ending '''я''' of any gender becomes '''-ей'''. If stressed, it becomes '''-ёй'''.
+:: Week - '''неделя''' --> '''неделей'''
+:: Surname - '''фамилия''' --> '''фамилией'''
+:: Pig - '''свинья''' --> '''свиньёй''' - ''stress on end syllable''
+* Feminine nouns ending in '''ь''' have '''-ью''' in the instrumental.
+:: Square - '''площадь''' --> '''площадью'''
+:: Horse - '''лошадь''' --> '''лошадью'''
+:: Church - '''церковь''' --> '''церковью'''
+So masculine and neuter nouns have the endings '''ом''', '''ем''', or '''ём''', and feminine nouns have '''ой''', '''ей''', '''ёй''', or '''ью'''.
+
+=== Plural ===
+There are two general endings for the instrumental plural: '''ами''' and '''ями'''. If the noun ends in a consonant, '''а''', or '''о''', the ending is '''ами'''. However, if such a noun has an irregular nominative plural that ends in '''я''', use '''ями''' instead. If the noun ends in '''й''', '''ь''', '''я''' or '''е''', use '''ями'''. In the following examples, the first word is the nom. sing., the last is the inst. pl., and the middle word (if one is given) is the nom. pl.:
+: House - '''дом''' --> '''домами'''
+: Book - '''книга''' --> '''книгами'''
+: Letter - '''письмо''' --> '''письмами'''
+: Museum - '''музей''' --> '''музеями'''
+: Day - '''день''' --> '''днями'''
+: Pig - ''' свинья ''' --> '''свиньями'''
+: Sea - '''море''' --> '''морями'''
+: Brother - '''брат''' --> '''братья''' --> '''братьями''' - ''note the irregular nominative plural''
+: Friend - '''друг''' --> '''друзья''' --> '''друзьями''' - ''note the irregular nominative plural''
+
+There are three words which have the irregular instrumental plural ending '''ьми''',  (the three words given are the nom. sing., the nom. pl., and the inst. pl.):
+: Daughter - '''дочь''' --> '''дочери''' --> '''дочерьми'''
+: Mother - '''мать''' --> '''матери''' --> '''матерьми'''
+: Child - '''ребёнок''' --> '''дети''' --> '''детьми'''
+: Person - '''человек''' --> '''люди''' --> '''людьми'''
+
+{| class="wikitable" style="text-align:center"
+|-
+! ''Instrumental'' !! Masculine/Neuter !! Feminine !! Plural
+|-
+| Nouns || ом/ем/ём || ой/ей/ёй || ами/ями
+|}
+
+== Adjectives ==
+Adjectives modifying masculine or neuter nouns in the instrumental case have two endings: adjectives which have the default ending '''ый''' or '''ое''' have the instrumental ending '''ым''', and those which end in '''ий''' or '''ее''' have '''им'''. Feminine adjectives have the same endings as the [[Russian/Grammar/Genitive case|genitive]], [[Russian/Grammar/Prepositional case|prepositional]], and [[Russian/Grammar/Dative case|dative]] cases: '''ой''', or, if the adjective's stem ends in the five letter rule ('''ц, ш, щ, ч, ж''') or it has the soft ending ('''ний'''), the ending is '''ей'''.
+
+The plural ending is '''ыми'''. For adjectives that end in '''ий''', the ending is '''ими'''.
+
+{| class="wikitable" style="text-align:center"
+|-
+! ''Instrumental'' !! Masculine/Neuter !! Feminine !! Plural
+|-
+! Adjectives
+|| ым им || ой ей || ыми ими
+|}
+
+:She walked to school with her new friends - '''Она шла в шко́лу с её но́выми друзья́ми'''
+:They live between the old Russian bookshops - '''Они живу́т ме́жду ста́рыми ру́сскими кни́жними магази́нами'''
+:Sasha was under the pink bed - '''Са́ша был под ро́зовой крова́тью'''
+
+== Pronouns ==
+
+* [[Russian:Grammar/Prepositional|Next: Prepositional case]]
+* [[Russian|Back to Table of Contents]]
+
+{{BookCat}}
+{{Russian}}
