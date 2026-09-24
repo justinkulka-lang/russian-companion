@@ -739,31 +739,7 @@ internal object V2Validator {
                 unit,
                 "Unit 25 is not content-complete without admitted productive-diminutive and register source capabilities",
             )
-            26 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 26 is not content-complete without admitted indefinite-pronoun, word-order, postal-address, and letter-writing source capabilities",
-            )
-            27 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 27 is not content-complete without admitted passive-participle and participle-stress source capabilities",
-            )
-            28 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 28 is not content-complete without admitted imperfective-verbal-adverb and perfective-verbal-adverb source capabilities",
-            )
-            29 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 29 is not content-complete without admitted active-participle, participle-punctuation, short-form-adjective, and bookish-register source capabilities",
-            )
-            30 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, letter-name-review, particle, and capstone-reading source capabilities",
-            )
+            in 26..30 -> lateUnitSourceGap(pack, unit)
             else -> emptyList()
         }
     }
@@ -877,6 +853,33 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u30-capstone", "capstone-reading"),
         ),
     )
+
+    /**
+     * Runtime advancement for Units 26-30 stays closed while required source
+     * capabilities are unresolved. Units 27, 29, and 30 also stay closed while
+     * the authority variance is proposed and not activated.
+     */
+    internal fun unresolvedLateUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        if (unit.number !in 26..30) return emptyList()
+        val blockers = mutableListOf<String>()
+        blockers += lateUnitSourceGap(pack, unit)
+        if (unit.number in UNRESOLVED_VARIANCE_UNITS) {
+            blockers += "Unit ${unit.number} is blocked by an unresolved authority variance"
+        }
+        return blockers
+    }
+
+    private fun lateUnitSourceGap(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val message = when (unit.number) {
+            26 -> "Unit 26 is not content-complete without admitted indefinite-pronoun, word-order, postal-address, and letter-writing source capabilities"
+            27 -> "Unit 27 is not content-complete without admitted passive-participle and participle-stress source capabilities"
+            28 -> "Unit 28 is not content-complete without admitted imperfective-verbal-adverb and perfective-verbal-adverb source capabilities"
+            29 -> "Unit 29 is not content-complete without admitted active-participle, participle-punctuation, short-form-adjective, and bookish-register source capabilities"
+            30 -> "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, letter-name-review, particle, and capstone-reading source capabilities"
+            else -> return emptyList()
+        }
+        return missingCapabilityError(pack, unit, message)
+    }
 
     private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
         val required = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty()

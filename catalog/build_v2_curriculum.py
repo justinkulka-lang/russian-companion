@@ -1674,6 +1674,11 @@ def build() -> dict:
         if number <= 25:
             continue
         topic = late_scope[number]
+        variance_note = (
+            "An unresolved authority variance remains unactivated. "
+            if number in (27, 29, 30)
+            else ""
+        )
         units.append(
             {
                 "number": number,
@@ -1687,7 +1692,8 @@ def build() -> dict:
                 "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
                 "mappingNote": (
                     f"Proposed Lesson {number}. Observed structural scope: {topic}. "
-                    "No admitted frozen source supports this lesson. An unresolved authority variance remains unactivated. "
+                    "No admitted frozen source supports this lesson. "
+                    f"{variance_note}"
                     "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
                 ),
                 "prerequisiteUnitNumbers": [number - 1],

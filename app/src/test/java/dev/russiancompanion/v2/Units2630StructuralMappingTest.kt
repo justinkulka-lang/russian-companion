@@ -36,6 +36,14 @@ class Units2630StructuralMappingTest {
         30 to "368-377",
     )
 
+    private val requiredClaim = mapOf(
+        26 to ("obj-u26-indefinite" to "indefinite-pronoun"),
+        27 to ("obj-u27-passive" to "passive-participle"),
+        28 to ("obj-u28-imperfective-adverb" to "imperfective-verbal-adverb"),
+        29 to ("obj-u29-active" to "active-participle"),
+        30 to ("obj-u30-dictionary" to "dictionary-use"),
+    )
+
     private val gapMessage = mapOf(
         26 to "Unit 26 is not content-complete without admitted indefinite-pronoun, word-order, postal-address, and letter-writing source capabilities",
         27 to "Unit 27 is not content-complete without admitted passive-participle and participle-stress source capabilities",
@@ -68,7 +76,11 @@ class Units2630StructuralMappingTest {
             assertFalse(unit.mappingNote.contains(range))
             assertFalse(unit.mappingNote.contains("printed pages"))
             assertTrue(unit.mappingNote.contains("Observed structural scope"))
-            assertTrue(unit.mappingNote.contains("unresolved authority variance remains unactivated"))
+            if (number in setOf(27, 29, 30)) {
+                assertTrue(unit.mappingNote.contains("unresolved authority variance remains unactivated"))
+            } else {
+                assertFalse(unit.mappingNote.contains("unresolved authority variance"))
+            }
             assertTrue(unit.mappingNote.contains(facts.topicDescription!!))
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
@@ -195,8 +207,59 @@ class Units2630StructuralMappingTest {
             val bookErrors = V2Validator.validate(bookDirected).errors
             assertTrue(bookErrors.joinToString("\n"), bookErrors.any { it == gapMessage.getValue(number) })
             val decision = advancementDecision(bookDirected, bookDirected.unit(number)!!, learner(number, book = true))
-            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertFalse(decision.allowed)
             assertFalse(decision.remaining.any { it == "This unit is not prepared" })
+            assertTrue(decision.remaining.any { it == gapMessage.getValue(number) })
+        }
+    }
+
+    @Test
+    fun pageRangeBookAttestationAndEmptyContentCannotAdvance() {
+        val pack = pack()
+        pages.forEach { (number, range) ->
+            val empty = permissiveAdvancement(pack, number, "CONTENT_COMPLETE_REVIEW_PENDING")
+            assertTrue(empty.unit(number)!!.objectives.isEmpty())
+            assertTrue(empty.unit(number)!!.sessions.isEmpty())
+            val emptyDecision = advancementDecision(empty, empty.unit(number)!!, learner(number, book = true))
+            assertFalse(emptyDecision.allowed)
+            assertTrue(emptyDecision.remaining.joinToString("\n"), emptyDecision.remaining.any { it == gapMessage.getValue(number) })
+            assertFalse(emptyDecision.remaining.any { it == "This unit is not prepared" })
+
+            val attested = bookShell(claimComplete(pack, number), number)
+            val attestedDecision = advancementDecision(attested, attested.unit(number)!!, learner(number, book = true))
+            assertFalse(attestedDecision.allowed)
+            assertTrue(attestedDecision.remaining.any { it == gapMessage.getValue(number) })
+            assertFalse(attestedDecision.remaining.any { it == "Self-attest the book work for this unit" })
+
+            val required = requiredClaim.getValue(number)
+            val ranged = permissiveAdvancement(
+                capabilityOn(
+                    pack,
+                    number,
+                    range,
+                    "cap-pages-$number",
+                    required.first,
+                    required.second,
+                    "4220315",
+                    oldidUrl(),
+                ),
+                number,
+                "CONTENT_COMPLETE_REVIEW_PENDING",
+            )
+            val rangedDecision = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
+            assertFalse(rangedDecision.allowed)
+            assertTrue(rangedDecision.remaining.any { it == gapMessage.getValue(number) })
+
+            if (number in setOf(27, 29, 30)) {
+                val variance = "Unit $number is blocked by an unresolved authority variance"
+                assertTrue(emptyDecision.remaining.any { it == variance })
+                assertTrue(attestedDecision.remaining.any { it == variance })
+                assertTrue(rangedDecision.remaining.any { it == variance })
+            } else {
+                assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
+                assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
+                assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
+            }
         }
     }
 
@@ -204,16 +267,27 @@ class Units2630StructuralMappingTest {
     fun preparedLateUnitIsNotPermanentlyBlockedFromAdvancement() {
         val pack = pack()
         pages.keys.forEach { number ->
-            listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
-                val prepared = permissiveAdvancement(pack, number, readiness)
-                val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
-                assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
-                assertFalse(decision.remaining.any { it == "This unit is not prepared" })
-            }
             val unprepared = permissiveAdvancement(pack, number, "NOT_PREPARED")
             val blocked = advancementDecision(unprepared, unprepared.unit(number)!!, learner(number, book = true))
             assertFalse(blocked.allowed)
             assertTrue(blocked.remaining.any { it == "This unit is not prepared" })
+            assertTrue(blocked.remaining.any { it == gapMessage.getValue(number) })
+            listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
+                val prepared = permissiveAdvancement(pack, number, readiness)
+                val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                assertFalse("$number $readiness ${decision.remaining}", decision.allowed)
+                assertFalse(decision.remaining.any { it == "This unit is not prepared" })
+                assertEquals(
+                    blocked.remaining.filter { it != "This unit is not prepared" },
+                    decision.remaining,
+                )
+                assertTrue(decision.remaining.any { it == gapMessage.getValue(number) })
+                if (number in setOf(27, 29, 30)) {
+                    assertTrue(decision.remaining.any { it == "Unit $number is blocked by an unresolved authority variance" })
+                } else {
+                    assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
+                }
+            }
         }
     }
 

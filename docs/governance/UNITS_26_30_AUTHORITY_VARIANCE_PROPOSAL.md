@@ -4,7 +4,7 @@ Status: PROPOSED_NOT_ACTIVATED
 
 This proposal is not binding. It does not amend `MASTER_AUTHORITY_v2.0.md`. It does not approve a mapping, a linguistic review, installation, a candidate freeze, physical acceptance, AT-031, or public release. Activation requires a separate written Product Owner decision and a qualified-reviewer decision.
 
-While this status remains `PROPOSED_NOT_ACTIVATED`, production validation does not choose the letter-name or active-participle resolutions below. Units 27, 29, and 30 stay blocked from content-complete, installable, and installed states until that decision is recorded.
+While this status remains `PROPOSED_NOT_ACTIVATED`, production validation does not choose the letter-name or active-participle resolutions below. Units 27, 29, and 30 stay blocked from content-complete, installable, installed, and advancement states until that decision is recorded. Units 26–30 also cannot advance while their required source capabilities are unresolved. A page range or book self-attestation does not clear those blockers.
 
 Observed owned-edition structure that differs from the current schedule:
 
