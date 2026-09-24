@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
-- Unit content-review SHA-256: accaf74db69e7946020722c052a82407837a6642941b594000dd22800aadd6f4
+- Curriculum source commit: 55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511
+- Unit content-review SHA-256: c1f0b86dec7a182ce90985cd446159b07577730cfdbf7bcc027eabafc81f6b74
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
-- Review-package SHA-256: 9acb3025b2837bf2a7b13dd64cc52ab38ca02f98d38414b875d97530781f38f6
-- Repository source SHA-256: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
+- Pack content-review SHA-256: b9285baade11d2646a21de012d4251b4a84f3b44d0fd074c28538422e4457764
+- Review-package SHA-256: 93770a5fc7525ab4844df0d7395b1848aeb69d1a967ee902559695818e21b7f1
+- Repository source SHA-256: bebec4a2a4b7098d29922c418465a787dcf7d70b7edc57705cddf0d170438086
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -279,11 +279,11 @@ steps=u17-st-teach-ordinals-1,u17-st-guided-ordinals-1,u17-st-teach-ordinals-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4e489d41f8da68c5dd037493432afc936f8cbf2301d8a7005a0656d9d7818c68
+- Content hash: cc9625160e084d2487a0e665c39102ce68e0e1d42aa8479a1ebc1e4f12fb8402
 
 kind=TEACH
 title=Admitted lines
-body=п'''е'''рвый — Ordinal numbers. втор'''о'''й — Ordinal numbers. 
+body=пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. 
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -345,11 +345,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e95638c29e488d164886fec0316c7ed907a50914ddb35239c19fd5d08d45ffeb
+- Content hash: 894b9f6d5342bbfdd147fa09c61823fabccb81b0d87ec9194fdf23a06b07aaff
 
 kind=TEACH
 title=Admitted lines
-body=тр'''е'''тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. 
+body=тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. 
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -948,11 +948,11 @@ remediationStepId=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4accce69a84b25c56c5d01c137e7548f92e6b8f1f6a382dc973bf6eb75854379
+- Content hash: fdcdc280ab2f2f64f3e084bb8ebdf3e4b4b3e1f0b9d3e5a669766e28bba7b497
 
 kind=LEXICAL
 letterId=
-display=п'''е'''рвый
+display=пе́рвый
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -965,11 +965,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 655ce0514cc8be4f99a036aaac5706bcab98b55a1cc5efcdecec842d2fb3427b
+- Content hash: fab6bcdac94f5ec4811a8f6426da4221ffceb813aa9f827fb6bfe4c2c163d8c3
 
 kind=LEXICAL
 letterId=
-display=втор'''о'''й
+display=второ́й
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -982,11 +982,11 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22c7e931b26a931b62245262206b133173e82830cd70562e071e0189289dfea3
+- Content hash: 5b58cd163bf55a015091b9968c498fa3e048d04ff7a22fe3d79f047bb9c9de42
 
 kind=LEXICAL
 letterId=
-display=тр'''е'''тий
+display=тре́тий
 note=Ordinal numbers
 objectiveId=obj-u17-ordinals
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1186,15 +1186,15 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c900959de0fdf306f9c0371ca993cd035378c8d0ea3b16c5d322bb4e5f1abfa
+- Content hash: c859cc6e57c8b2c5760f7d5bd972e5f02bfbf6a47c5d6f80a2b46d54c4581b02
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted line is the first ordinal?
-promptLetter=втор'''о'''й
-options=п'''е'''рвый | тр'''е'''тий | четв'''ё'''ртый
-answer=п'''е'''рвый
-feedback=Does this answer show the first ordinal? п'''е'''рвый.
+promptLetter=второ́й
+options=пе́рвый | тре́тий | четвёртый
+answer=пе́рвый
+feedback=Does this answer show the first ordinal? пе́рвый.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1208,10 +1208,10 @@ answerSourceIds=prov-ex-u17-ordinals-0-ru
 distractorSourceIds= | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
 distractorDifference= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
 whyAnswerDemonstratesObjective=Does this answer show the first ordinal?
-contrastMembers=п'''е'''рвый | тр'''е'''тий | четв'''ё'''ртый
+contrastMembers=пе́рвый | тре́тий | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-1-ru | prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
-responseKind=RUSSIAN_PHRASE
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u17-g-hours-0`
 
@@ -1326,15 +1326,15 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68970eb7af68628ad966c19c1faf5f50319a726b501b5d85669badd46100ce0d
+- Content hash: a1307c38c4e36236c083e73b38b91ca0b2043948db6bb23ce24d8ebd320fbad6
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted line is the second ordinal?
-promptLetter=п'''е'''рвый
-options=втор'''о'''й | тр'''е'''тий | четв'''ё'''ртый
-answer=втор'''о'''й
-feedback=Does this answer show the second ordinal? втор'''о'''й.
+promptLetter=пе́рвый
+options=второ́й | тре́тий | четвёртый
+answer=второ́й
+feedback=Does this answer show the second ordinal? второ́й.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1348,10 +1348,10 @@ answerSourceIds=prov-ex-u17-ordinals-1-ru
 distractorSourceIds= | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
 distractorDifference= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
 whyAnswerDemonstratesObjective=Does this answer show the second ordinal?
-contrastMembers=втор'''о'''й | тр'''е'''тий | четв'''ё'''ртый
+contrastMembers=второ́й | тре́тий | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-1-ru | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
-responseKind=RUSSIAN_PHRASE
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u17-i-ordinals-2`
 
@@ -1361,15 +1361,15 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a9cf0972dc04a30c363fd0acfc9d24d2ff108af1a96bff5c44290b87655844e
+- Content hash: 2d4652066a94cd47c3505b07695a508e0a4a5f63d87a20a22b0a708e74304195
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted line is the third ordinal?
-promptLetter=п'''е'''рвый
-options=тр'''е'''тий | втор'''о'''й | четв'''ё'''ртый
-answer=тр'''е'''тий
-feedback=Does this answer show the third ordinal? тр'''е'''тий.
+promptLetter=пе́рвый
+options=тре́тий | второ́й | четвёртый
+answer=тре́тий
+feedback=Does this answer show the third ordinal? тре́тий.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1383,10 +1383,10 @@ answerSourceIds=prov-ex-u17-ordinals-2-ru
 distractorSourceIds= | prov-ex-u17-ordinals-1-ru | prov-u17-ordinals-x-0
 distractorDifference= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
 whyAnswerDemonstratesObjective=Does this answer show the third ordinal?
-contrastMembers=тр'''е'''тий | втор'''о'''й | четв'''ё'''ртый
+contrastMembers=тре́тий | второ́й | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-2-ru | prov-ex-u17-ordinals-1-ru | prov-u17-ordinals-x-0
-responseKind=RUSSIAN_PHRASE
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u17-i-hours-1`
 
@@ -2136,7 +2136,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1602a121c5d76266acacb3c81621c2e50e5e5c436cc1527ffc6c2eddca6a07c3
+- Content hash: b70b28849db2fbac539474c6e5462abb7d369884530061bf244322a3b4341cb8
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -2152,128 +2152,14 @@ Ordinal numerals in Russian are relatively easy to deal with.  They all decline 
 # втор'''о'''й, втор'''а'''я, втор'''о'''е
 # тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
 # четв'''ё'''ртый
-shippedText=п'''е'''рвый
-transformation=selection
+shippedText=пе́рвый
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=1804582a9a074d91b2a94c2320a7edcc4acacbb65a8b2ecf9f8c1cb2720e5a91
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-0-ru-r0`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a050c736690ba21dd4009a2aa1bbb6b4e5df894615c6294c189fe71f667743b
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=п
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=34c6fbb62da8ce5c68089f837d44c62e43f0a983c7ca88c3806e44cf482bb935
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-0-ru-r1`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caa17c819ff5fecaf2bab3cd653565af8169afcb0a99ec6d1124a797e40aa396
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=е
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=259f56cb715ba3a3f1ca41a4ff1972cca698cb49eef1ae018dff325507da8b26
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-0-ru-r2`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46b5c41b0f994f27bd375eacdd33ea10aee356ae78c11096ce8f9ee98b06c643
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=рвый
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=7f4376306985252f3ed04c991d9efae3fae05f154c8bf2cddf92d70d0a61bcdc
+contentHash=4bb8d0e4061ae6189f6efa4209895b4e41894ddd80b411f08da6768535d34028
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2326,7 +2212,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a229a02e13e0d3138ea6850f8e21e446cc61cbe9160a59a9a14ea44236eb0c25
+- Content hash: 9b81393e51c948b733d061a03f4055736d50a01c6df12bfd806b42bb57bee27f
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -2342,128 +2228,14 @@ Ordinal numerals in Russian are relatively easy to deal with.  They all decline 
 # втор'''о'''й, втор'''а'''я, втор'''о'''е
 # тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
 # четв'''ё'''ртый
-shippedText=втор'''о'''й
-transformation=selection
+shippedText=второ́й
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=c7107bf55876e9046bc21b5a2845c61c9217aa38ec72dd744e51eeb414555171
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-1-ru-r0`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 716dd670bfeca0455cf0ebe7bf339ec168d082cb4791018e82b8afeab0f0100f
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=втор
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=4fb6d6bbbf0856219af6fa93bbf8249af609121cf6aa3a07123562323a0825fd
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-1-ru-r1`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff6573f9cb6b14e3c98b2b77c878ff228fdd5ab6c3e0b436717e81d14c13a385
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=о
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=50338c005c41fb4e6e6b74c9f7f8d0f56ae08517102498639f8a610b06cd9859
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-1-ru-r2`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e447ce62c495e245f02bee56d866f685cbba2d2dffe01a4a37959c222e3e71e
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=й
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=15f2ccabeb425c29c67317f181d744944e9c477d09fb42aacdbb4f64e1afcc3f
+contentHash=785e5c72600508c93a2fa4083c1e0899334be6c6b6d80991abe6e9de3630c5f8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2516,7 +2288,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f325e00e08e0cdadc0cd595577e5021a7d74a544e04fed467ec4399baed6c062
+- Content hash: d8413652dcd3d030a1802d071982f768c37925c88218dfc006c8e223791ed2e4
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -2532,128 +2304,14 @@ Ordinal numerals in Russian are relatively easy to deal with.  They all decline 
 # втор'''о'''й, втор'''а'''я, втор'''о'''е
 # тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
 # четв'''ё'''ртый
-shippedText=тр'''е'''тий
-transformation=selection
+shippedText=тре́тий
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=dd911b7ec541d394263c125ac3dd16366ca3f84e1f026fd54739e5bf78fea210
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-2-ru-r0`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5af2d531d71e1305a80b671e312c934bf8ee041dd55d981baec3f9ee17bab41b
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=тр
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=7dfd5bf6b368fddcf528ade0f7582f893d2fdfffc5eb6a6fcbe560ebdd92349f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-2-ru-r1`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e93c762377299e24d1d75cd9dfe1bb5f225f03f81dd7cc22143ad5eaec5b7565
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=е
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=259f56cb715ba3a3f1ca41a4ff1972cca698cb49eef1ae018dff325507da8b26
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u17-ordinals-2-ru-r2`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a6c930edeed198790a60abd170a113d9269df347d1e3d9b3d665929e746700b
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=тий
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=29433faa31930a0a661d09198bbed065819f16d0c3bea7c552aa56ee15b555db
+contentHash=3594a89f5e61222499fbe52de82641bddcf85dc268f4289103d5856d3e4a69a9
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3220,7 +2878,7 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7730c2479e63f8525892113d0cf8d4698a755e04a7bcd3b64acc51598bb9e03d
+- Content hash: b3a81925aa92f9f70e670f3fcee6314416eef0b613bcf7ce0fe928a4a0004bf5
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
@@ -3236,128 +2894,14 @@ Ordinal numerals in Russian are relatively easy to deal with.  They all decline 
 # втор'''о'''й, втор'''а'''я, втор'''о'''е
 # тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
 # четв'''ё'''ртый
-shippedText=четв'''ё'''ртый
-transformation=selection
+shippedText=четвёртый
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=e3ac09bf8b650bece063c30d020ba2e72e69d34bd0cd805983e07b197fb23ff4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u17-ordinals-x-0-r0`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69abe81d9872033e7ea1207871e793ad8dd62562dd53fbc5c28d302fbc007d58
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=четв
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=c1383682d6f42c96f8e631fa079fb41717130df7081912b64824035035f3230b
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u17-ordinals-x-0-r1`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07cb4b31866d621788e43202a9ac1c5ba4d4a3de59bd590e38d06c6f840d91b7
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=ё
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=30fbc377ae9122edc2cdbed70b9261817d196eca8db96ac8bfa4cfaf412667ac
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u17-ordinals-x-0-r2`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-orient, u17-s-ordinals
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a9dc9d8d6cea9e881b1b7eacf8bdf8f0f933b1a963f21a397e2c7e0643e52dce
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
-sourceRevision=4371358
-sourceRecordId=numbers:==Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal wit
-originalSourceText===Ordinal numbers==
-
-Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
-
-# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
-# втор'''о'''й, втор'''а'''я, втор'''о'''е
-# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
-# четв'''ё'''ртый
-shippedText=ртый
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
-contentHash=3073e1c3b5b35f03e8391a999944ad2298b4c207c3d1017ce38542c8a5407534
+contentHash=c3402154dc456181b72caed397b66d64fc94976bf34b35fe7575ffc4e4608c6e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4331,19 +3875,10 @@ permitsAppUse=true
 - `obj-u17-minutes` PROVENANCE `prov-ex-u17-minutes-2-ru`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-ru`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-ru-r0`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-ru-r1`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-ru-r2`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-ru`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-ru-r0`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-ru-r1`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-ru-r2`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru-r0`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru-r1`
-- `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru-r2`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-ru`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-0-en`
@@ -4360,9 +3895,6 @@ permitsAppUse=true
 - `obj-u17-minutes` PROVENANCE `prov-u17-minutes-rem-r0`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-rem`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0`
-- `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0-r0`
-- `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0-r1`
-- `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0-r2`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem-r0`
 

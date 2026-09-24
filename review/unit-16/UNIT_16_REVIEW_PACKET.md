@@ -11,12 +11,12 @@ Unit 16 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: c61635a97f59a868a5baac43e13801bd84346a76
-- Unit content-review SHA-256: 99b2b78d460cae22aff4c83da91f5c83e28bf02291c71335b4cec4c4d06f3b10
+- Curriculum source commit: 55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511
+- Unit content-review SHA-256: f632bdb0e898dfe4717b1d398725c3ff131b88ac0a2857a79a47b55e3d4d0567
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: 503ad0c6aed8904979571dec926aba4e27e4429799c00e5da371d7a267eb954d
-- Review-package SHA-256: 8a50b7e5071b63012d29ff9bcbf8777a7a1334a2b07539e94622a0833100c39a
-- Repository source SHA-256: bb8428f4d4d1c2b4ee1e4547bbb8f62d326377d4b80463e0c7b5aca0708c8802
+- Pack content-review SHA-256: b9285baade11d2646a21de012d4251b4a84f3b44d0fd074c28538422e4457764
+- Review-package SHA-256: 7a6f06aceb8be6ebf63db989301fc6935ebb71ff654ed3cbfa340d58e289b8b9
+- Repository source SHA-256: bebec4a2a4b7098d29922c418465a787dcf7d70b7edc57705cddf0d170438086
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -342,11 +342,11 @@ remediationStepId=u16-st-rem-inst-sg
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 326768f88881a6c9999a05736e70c3d2de3f985165e0b7ac4d4393c3e5f082d4
+- Content hash: ec7fe3b94a0a4b3899b51c7ed706ca4796c40761128a374c4ea28061e3af2dcc
 
 kind=TEACH
 title=Admitted instruction
-body=Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental.
+body=Nouns ending in о or a consonant have -ом in the instrumental.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -474,11 +474,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 273d348cfca7ab5caf61bb732d7c623af83b8b86ec779206543be826737b88c0
+- Content hash: 1034ff2dbc3a027e44af8c7d28564595bb52d7fe6390068c2a5e1ff2cfab0ebf
 
 kind=REMEDIATE
 title=Remediation
-body=Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental.
+body=Nouns ending in о or a consonant have -ом in the instrumental.
 dominantAction=Continue
 references=
 items=
@@ -577,11 +577,11 @@ remediationStepId=u16-st-rem-inst-pl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 47bd0d38477659586e58d9c0f26ce3f57fb09bae33d305213b6152ba4b956f9c
+- Content hash: bac30651c68679570f1876e44cfde703282a24fb915f0438b5b30afc57eb53ae
 
 kind=TEACH
 title=Admitted instruction
-body=There are two general endings for the instrumental plural: '''ами''' and '''ями'''.
+body=There are two general endings for the instrumental plural: ами and ями.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -709,11 +709,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 630140ba023c2d5e7d71be56f982a9cb640d8b57c43e14297640490d55a5aec1
+- Content hash: 234a38ef70e7d42d91c3f88c492312a5059ceb29171cc9de84d13f0e08ec6e65
 
 kind=REMEDIATE
 title=Remediation
-body=There are two general endings for the instrumental plural: '''ами''' and '''ями'''.
+body=There are two general endings for the instrumental plural: ами and ями.
 dominantAction=Continue
 references=
 items=
@@ -812,11 +812,11 @@ remediationStepId=u16-st-rem-inst-adj
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 03b47c62f370b401e50977d301f2755d629beac761e785f9e61be96a1b985b13
+- Content hash: 558a944bf3590e3735ae27071bd856824bdcba136f617b7927a0237694a6a7c6
 
 kind=TEACH
 title=Admitted instruction
-body=To form masculine and neuter adjectives, the ending is '''-ым'''.
+body=To form masculine and neuter adjectives, the ending is -ым.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -878,11 +878,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5f2f3589e8aea28e342513c34bb47aeb2f57220e5df0aa259737d944f991f056
+- Content hash: a266edaabb2b44498ca1bc133a56f7290193073863ad85a0fc79b527cef59f23
 
 kind=REMEDIATE
 title=Remediation
-body=To form masculine and neuter adjectives, the ending is '''-ым'''.
+body=To form masculine and neuter adjectives, the ending is -ым.
 dominantAction=Continue
 references=
 items=
@@ -4707,21 +4707,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dba797b30169102f1a0760e233598e3c93e15a4fcb22293f28b46cb31133140f
+- Content hash: 6fcb53fa509309a5ec9ea52a97a614481dba33657dce4455df46cd51d31da7bf
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
 sourceRevision=4292379
 sourceRecordId=adjectives:To form masculine and neuter adjectives, the ending is '''-ым'''.
 originalSourceText=To form masculine and neuter adjectives, the ending is '''-ым'''.
-shippedText=To form masculine and neuter adjectives, the ending is '''-ым'''.
-transformation=selection
+shippedText=To form masculine and neuter adjectives, the ending is -ым.
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=cd77e214b9946ec42e67b210a7c156925aa34a45546facd4a992129b6d9d8c80
-contentHash=cd77e214b9946ec42e67b210a7c156925aa34a45546facd4a992129b6d9d8c80
+contentHash=08b376984e5648e8f98d4add74cba3a68d932bac27ae59828fbc8aa14fad8c5e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4808,21 +4808,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5c657b48d9c2a3d68b1149ac047bcf7948dce33f9cae9acf45b0ef38143dd3e
+- Content hash: 32a53f02e2bb17f3e1500ec698ff9d26ccfb9710e40815845a61ceed50219cee
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Instrumental_case?oldid=4219602
 sourceRevision=4219602
 sourceRecordId=instrumental:There are two general endings for the instrumental plural: '''ами''' and '''ями'
 originalSourceText=There are two general endings for the instrumental plural: '''ами''' and '''ями'''.
-shippedText=There are two general endings for the instrumental plural: '''ами''' and '''ями'''.
-transformation=selection
+shippedText=There are two general endings for the instrumental plural: ами and ями.
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=f47a1a0a107b7689d8dd009d9328e9319e7a096629908e4f9999ccd9c2771189
-contentHash=f47a1a0a107b7689d8dd009d9328e9319e7a096629908e4f9999ccd9c2771189
+contentHash=06953f22cc580708daa3a9f6d85e0f69fc1779ec64aaad8991581c36b00703b1
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4965,21 +4965,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3de5a4e4d4e8724db05063a68be012af95c3343f8108388792153af1b6a492d
+- Content hash: a7e8146754dac3f385d6fb63a6340d4865934307da1947b0ebada98a5845263e
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Instrumental_case?oldid=4219602
 sourceRevision=4219602
 sourceRecordId=instrumental:Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental.
 originalSourceText=Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental.
-shippedText=Nouns ending in '''о''' or a consonant have '''-ом''' in the instrumental.
-transformation=selection
+shippedText=Nouns ending in о or a consonant have -ом in the instrumental.
+transformation=wikibooks emphasis formatting
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=7c6d072e0876588868aab135b8f27f87edc2177648fdc4608a95682eed230111
-contentHash=7c6d072e0876588868aab135b8f27f87edc2177648fdc4608a95682eed230111
+contentHash=6821b765067ecbca649035f5fbdf3b68d81bb5a4038b649700f65ea497d1a015
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
