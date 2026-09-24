@@ -11,12 +11,12 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
-- Unit content-review SHA-256: cdbe656e0396eba8bf5bca5193c3b62b2a65abd9b80ca816d2217a35b51ef80b
+- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
+- Unit content-review SHA-256: 270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6
 - Mapping-package SHA-256: 9c6ac67d6b78fbe614157046d787b8e75bb45305454e8725e726c7e01c081e6d
-- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
-- Review-package SHA-256: 26e6df31cbbfce897fb2a8a30e7d96804cb02cc5c2be9fc810c86734a6144f22
-- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
+- Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
+- Review-package SHA-256: 93e17535fb440d18daecc02aa92c4bbbe29d386fe907ba2c1494ff229ec1b7c4
+- Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1241,13 +1241,13 @@ relationParticipantIds=prov-ex-u14-impersonal-1-en | prov-ex-u14-impersonal-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83841b283d46ed6609f6497e5fc521004ef1b87c5948d8f230e337f93271b64e
+- Content hash: 83c966dfe6a81cd3862757efc28a4aa090caadcb8e7d84a3001633e07131089e
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which admitted line is the impersonal past for one woman who was cold?
 promptLetter=she was cold
-options=ей было холодно | было
+options=ей было холодно | Ему было холодно
 answer=ей было холодно
 feedback=Does this answer show the impersonal past? ей было холодно.
 objectiveId=obj-u14-impersonal
@@ -1263,7 +1263,7 @@ answerSourceIds=prov-ex-u14-impersonal-2-ru
 distractorSourceIds= | prov-u14-impersonal-x-0
 distractorDifference= | Does this row fail the impersonal past?
 whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
-contrastMembers=ей было холодно | было
+contrastMembers=ей было холодно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-2-en | prov-ex-u14-impersonal-2-ru | prov-u14-impersonal-x-0
 
@@ -2013,20 +2013,22 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 185cd068d2d045457f057b96b08b423bf246b7f79a9817305bf73c48676c180e
+- Content hash: 51ac4d15313496f4acff478cf2a8f6b3146e194421de3c398744a07618a73655
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337
 sourceRevision=4567337
 sourceRecordId=past:To refer to these states in the past tense, always use '''было'''; 'she was cold
 originalSourceText=To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.
+:He was cold - '''Ему было холодно'''
+:They were bored - '''Им было скучно'''
 shippedText=she was cold
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617
+sourceHash=b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e
 contentHash=b355b1fa13404a7d5c50ea87f675f0ee39f4a2b81ab4df52d322bac24786398c
 audioAssetId=
 reviewerIdentity=
@@ -2042,20 +2044,22 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59642b66de1a3daa48c9e8db1d175cad9a320a8100643c9699e62f50d70c8c67
+- Content hash: e101183f3be3607421c61d89808ae7ef6b466ee63946f5cfda98e02d497b72fd
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337
 sourceRevision=4567337
 sourceRecordId=past:To refer to these states in the past tense, always use '''было'''; 'she was cold
 originalSourceText=To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.
+:He was cold - '''Ему было холодно'''
+:They were bored - '''Им было скучно'''
 shippedText=ей было холодно
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617
+sourceHash=b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e
 contentHash=338c49fae2de8da6001ee43dbe0d90701218d3c8857ecdaafd340905f1442acd
 audioAssetId=
 reviewerIdentity=
@@ -2216,21 +2220,23 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b87a1bb90afcdf23bf6c46095a28283f99647f03514e2eea52d6e90763abc5c
+- Content hash: 35b82169126d42ba60d3bdc4a421468e854bcd55b2da5764a9b4124e67d37085
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337
 sourceRevision=4567337
 sourceRecordId=past:To refer to these states in the past tense, always use '''было'''; 'she was cold
 originalSourceText=To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.
-shippedText=было
+:He was cold - '''Ему было холодно'''
+:They were bored - '''Им было скучно'''
+shippedText=Ему было холодно
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617
-contentHash=3b79270b18c82245ad3db99ff39709d313d980461458bfb3c5fdace93e91dff8
+sourceHash=b637dad3df74ba0ecc3c8e1bcfd78900e96cce7b6e0f51c261b09e092c07115e
+contentHash=c3b4bc104ad30d272a95b317fa79354404133499664df22276c6dee9f8dfe4ee
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=

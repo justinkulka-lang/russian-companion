@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
-- Unit content-review SHA-256: 7c9e326925939b5ad6408223ee869d64cdcd2f094851ff37b9dd87a2f4c42b48
+- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
+- Unit content-review SHA-256: c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb
 - Mapping-package SHA-256: 2ada287c0c46c616b1249034c2a7121f07b55557d6bb625c5995b3d618230967
-- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
-- Review-package SHA-256: 074df43b35876aa48dfe1d4f0cb223a93ed6d0aa4be086e23a54f12c6c78e6d7
-- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
+- Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
+- Review-package SHA-256: bf2a4f4f810768b0a704f199081af9bb84beffa56301d4c29518d76c7d310d29
+- Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2211,13 +2211,13 @@ relationParticipantIds=prov-ex-u12-future-imp-0-en | prov-ex-u12-future-imp-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e99427c6ebb2086039a18546a5420d063bfe3699195becb36da98d0b0ec20cb
+- Content hash: 41112d20407ccfbace647f2593f59b312ed3e8193739691010b5cd3835868819
 
 kind=FORM_SELECTION
 language=en
 prompt=Which admitted line is the second-person plural future?
 promptLetter=Ты бу́дешь говори́ть
-options=Вы бу́дете говори́ть | бу́дешь
+options=Вы бу́дете говори́ть | Я бу́ду говори́ть
 answer=Вы бу́дете говори́ть
 feedback=Does this answer show the second-person plural future? Вы бу́дете говори́ть.
 objectiveId=obj-u12-future-imp
@@ -2225,17 +2225,17 @@ containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | Does this row fail the second-person plural future?
 testedFeature=SECOND_PERSON_PLURAL_FUTURE
-evidenceMode=SOURCE_SUPPLIED_PAIR
+evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u12-future-imp-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u12-future-imp-x-0
-distractorSourceIds= | prov-u12-future-imp-x-1
+distractorSourceIds= | prov-ex-u12-future-imp-0-ru
 distractorDifference= | Does this row fail the second-person plural future?
 whyAnswerDemonstratesObjective=Does this answer show the second-person plural future?
-contrastMembers=Вы бу́дете говори́ть | бу́дешь
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-u12-future-imp-x-1
+contrastMembers=Вы бу́дете говори́ть | Я бу́ду говори́ть
+relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
+relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-ex-u12-future-imp-0-ru
 
 ### INDEPENDENT_CHECK `u12-i-future-perf-1`
 
@@ -4857,35 +4857,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u12-future-imp-x-1`
-
-- Objectives: obj-u12-future-imp
-- Sessions: u12-s-orient, u12-s-future-imp
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab05ceec2e088e251951790ca6d8a9b9d6cb0e346816db9f59921cd2a71bb953
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822
-sourceRevision=3353822
-sourceRecordId=future:Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will
-originalSourceText=Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking
-shippedText=бу́дешь
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2c3be73d304f54f2992e677a68f4bf6b5c3cabedc4c9cbca0c33fa4160ae8916
-contentHash=b6d8d689fd4c7aa23f2a4f2ed3aab60669c303cd62056bbd74ac1ce8008db58b
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
 ### PROVENANCE `prov-u12-future-perf-rem`
 
 - Objectives: obj-u12-future-perf
@@ -6396,7 +6367,6 @@ permitsAppUse=true
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-rem`
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-rem-r0`
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-x-0`
-- `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-x-1`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-rem`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-x-0`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-x-1`
