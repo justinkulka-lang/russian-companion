@@ -11,12 +11,12 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5dbc70d193d34437763a476aea849b0cedc4f922
-- Unit content-review SHA-256: 73af1c33858dd98cd7e40a9df246b36cedd5d3732afa79b5e3fb18945c7e93ea
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: ee8923e6c74674f99f72fa55e56bcd1c2bae711975134b72dc9957b0657e0eab
 - Mapping-package SHA-256: c603458fabe692e2492d828ebda299c5e5d78d058ee0d7620a0d0c15a13a6d0a
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: 61311a1b5e2d45c0400b0a47649e6daaf66efcdb5c84c8d65ee164147f20fb45
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: 927a5a94a4ec5dac221ab11d25a99674b3c76119d2df07be665282ab47ed80c5
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,13 +151,13 @@ remediation=u15-st-rem-say-request
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f1c4307d170e2d959db222def557097afb4ed8c861fba1a08625775b5213c026
+- Content hash: cdcf3cac37b66f9b8c866d7a76a1ac373c321788dc425cdd69c4012da2054f24
 
 title=Choose the admitted aspect pair
 kind=RECOGNITION
 unitNumber=15
-instruction=u15-st-orient,u15-st-teach-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3,u15-st-teach-aspect-consolidate-4
-examples=ex-u15-aspect-consolidate-0,ex-u15-aspect-consolidate-1,ex-u15-aspect-consolidate-2,ex-or-u15-aspect-consolidate-3,ex-or-u15-aspect-consolidate-4
+instruction=u15-st-orient,u15-st-teach-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3
+examples=ex-u15-aspect-consolidate-0,ex-u15-aspect-consolidate-1,ex-u15-aspect-consolidate-2,ex-u15-aspect-consolidate-3
 practice=u15-st-guided-aspect-consolidate-1
 checks=u15-i-aspect-consolidate-1,u15-i-aspect-consolidate-2
 remediation=u15-st-rem-aspect-consolidate
@@ -542,12 +542,12 @@ remediationStepId=u15-st-rem-say-request
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 13599ddd2900b065d7654897098cf983e34a1d66be6108a6e662558f489686ae
+- Content hash: 74d1775293d29d76b9a1e03358c0a5ad1cf748f3beecb0322a9ea1d6dc218f05
 
 title=Choose the admitted aspect pair
 estimatedMinutes=12
 objectives=obj-u15-aspect-consolidate
-steps=u15-st-teach-aspect-consolidate-1,u15-st-guided-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3,u15-st-teach-aspect-consolidate-4,u15-st-rem-aspect-consolidate,u15-st-check-aspect-consolidate
+steps=u15-st-teach-aspect-consolidate-1,u15-st-guided-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3,u15-st-rem-aspect-consolidate,u15-st-check-aspect-consolidate
 
 ### STEP `u15-st-teach-aspect-consolidate-1`
 
@@ -557,11 +557,11 @@ steps=u15-st-teach-aspect-consolidate-1,u15-st-guided-aspect-consolidate-1,u15-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 29c086cf13b5aefd0c970069dd5b025b35edaeb06dac3b3a5f676a02bf97910e
+- Content hash: 7252047db871228944dc55e1048d652216e652aab4f4fa7147402e6a70ed9bd4
 
 kind=TEACH
 title=Admitted lines
-body=делать/сделать — to do. говорить — to say, speak, tell. 
+body=говори́ть — to speak. сказа́ть — to speak. 
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -601,11 +601,11 @@ remediationStepId=u15-st-rem-aspect-consolidate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 559c935ce03ad09254ae4c85ecce8c84261d16f4d3de2f869bc980af47a3816a
+- Content hash: 478c87b6152caff186f54d9ab699ec7e8c449de02f13d2c5c59493e97b6775c3
 
 kind=TEACH
 title=Admitted instruction
-body=In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.
+body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -623,37 +623,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b219dc76998d5f29577ca1a23c3d96e0849d4290dd95dc78b38ac2f4030ba191
+- Content hash: 7c303d407afc4d3c628327b5dbb4b27f763d05c23cd33eeb25a9c71bb11f540e
 
 kind=TEACH
 title=Admitted lines
-body=сказать — to say, speak, tell. де́лать — make. 
+body=де́лать — to do. сде́лать — to do. 
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
-examples=ex-u15-aspect-consolidate-2,ex-or-u15-aspect-consolidate-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u15-st-teach-aspect-consolidate-4`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-aspect-consolidate
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6baaadb37288336bed8c5dab2a490372ac2330e32fc72fb75b5d8fdaffdf9d68
-
-kind=TEACH
-title=Admitted lines
-body=сде́лать — make. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u15-aspect-consolidate-4
+examples=ex-u15-aspect-consolidate-2,ex-u15-aspect-consolidate-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -667,11 +645,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3773fdc2a81f19d725d67769fc338e274a4e6115a7150eccad9cea604487c2a5
+- Content hash: 5ec524551f336fbb9d41638406784c49e3ef10c7d1694ffe1cf7a57d1b2eb377
 
 kind=REMEDIATE
 title=Remediation
-body=In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.
+body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
 dominantAction=Continue
 references=
 items=
@@ -940,12 +918,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1c353bf1702d404f674d825ffb3b6d67d07f3cd6cf018ccf58e38eaa5b9b108
+- Content hash: 2c40178b298d8664db415b71dae012601d6dffef2490489585b498196ed0028b
 
 kind=LEXICAL
 letterId=
-display=делать/сделать
-note=to do
+display=говори́ть
+note=to speak
 objectiveId=obj-u15-aspect-consolidate
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -957,12 +935,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db688e6c8ef4bcb6528c6aff7368e340fbf232eee5e81514053da3187625b81e
+- Content hash: 26e063c86c4e5ffdf945f0b5554a27e4cf975a20e4fad5c7d7585c4e997613b3
 
 kind=LEXICAL
 letterId=
-display=говорить
-note=to say, speak, tell
+display=сказа́ть
+note=to speak
 objectiveId=obj-u15-aspect-consolidate
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -974,46 +952,29 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d6901890671693b1520c15e88b4be62f7569c808b29ea85563c7d70d508405d
-
-kind=LEXICAL
-letterId=
-display=сказать
-note=to say, speak, tell
-objectiveId=obj-u15-aspect-consolidate
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u15-aspect-consolidate-3`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e4bd152bc2385ba60059e75777f8f5e5d108eb26fedcfb100ee1dc5c3c0d3fb
+- Content hash: 722c2310e61545d293de63955ba54936e55dbaf98f29a261c699afc2747cdff6
 
 kind=LEXICAL
 letterId=
 display=де́лать
-note=make
+note=to do
 objectiveId=obj-u15-aspect-consolidate
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u15-aspect-consolidate-4`
+### EXAMPLE `ex-u15-aspect-consolidate-3`
 
 - Objectives: obj-u15-aspect-consolidate
 - Sessions: u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b969e232dcac443ec3f48c9de825f3d70a499bb7f6ff6bbca61485da77bc346
+- Content hash: 586febe34e7264919165e29d63753d951c8221e142fdda85e76c4b1d8bf4f65e
 
 kind=LEXICAL
 letterId=
 display=сде́лать
-note=make
+note=to do
 objectiveId=obj-u15-aspect-consolidate
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -1025,28 +986,28 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfb68c39a047ebac0a5db08d6c59466c430a48fbffd2b22cbc47de25e805c11b
+- Content hash: 02354cc1584b49781b7d5adb0976771644d9f093bdd6619dc644ea5cc709ed78
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the plural imperative?
 promptLetter=чита́й
 options=чита́йте | чита́ть
 answer=чита́йте
-feedback=Does the admitted record show the governed contrast? чита́йте.
+feedback=Does this answer show the plural imperative? чита́йте.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the plural imperative?
+testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u15-imperative-1
 distractorSourceIds= | prov-ex-or-u15-imperative-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the plural imperative?
+whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=чита́йте | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-2
@@ -1059,28 +1020,28 @@ relationParticipantIds=prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f853f0c3782781eb74ae1403bafb4c5934f66f720c37b0eb6c01896dc5c5317
+- Content hash: 9c49edc5418ba4106806da755c69ea109b71cbb0dd326f8c38c4049fb272cd90
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the plural imperative?
 promptLetter=скажи́
 options=скажи́те | сказа́ть
 answer=скажи́те
-feedback=Does the admitted record show the governed contrast? скажи́те.
+feedback=Does this answer show the plural imperative? скажи́те.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the plural imperative?
+testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u15-say-request-1
 distractorSourceIds= | prov-ex-or-u15-say-request-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the plural imperative?
+whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=скажи́те | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-2
@@ -1093,31 +1054,31 @@ relationParticipantIds=prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4c98a5c50907e9a715d9b26be994fc611f76e3fd51496f838281892251ec355
+- Content hash: 20117f8648b10de5e3657234e4243259de2d44f4604353eacf5f5f84bbd5c414
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=говорить
-options=сказать | to say, speak, tell
-answer=сказать
-feedback=Does the admitted record show the governed contrast? сказать.
+prompt=Which admitted line is the perfective partner?
+promptLetter=говори́ть
+options=сказа́ть | де́лать
+answer=сказа́ть
+feedback=Does this answer show the perfective partner? сказа́ть.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the gloss in the same frozen line.
-testedFeature=ASPECT_PAIR
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u15-aspect-consolidate-2-ru
-distractorSourceIds= | prov-ex-u15-aspect-consolidate-1-en
-distractorDifference= | This admitted wording is the gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=сказать | to say, speak, tell
+answerSourceIds=prov-ex-u15-aspect-consolidate-1-ru
+distractorSourceIds= | prov-ex-u15-aspect-consolidate-2-ru
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-2-ru | prov-ex-u15-aspect-consolidate-1-en
+relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-2-ru
 
 ### INDEPENDENT_CHECK `u15-i-imperative-1`
 
@@ -1127,28 +1088,28 @@ relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bbe900aafd65bc86c64060e526b40f9a9d07eb03eb583d5f45baf8bc19be2c1c
+- Content hash: 645771c818457786b062e782a2d3974a3852480cc52369e460006f1e0acdc51b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the singular imperative?
 promptLetter=чита́йте
 options=чита́й | чита́ть
 answer=чита́й
-feedback=Does the admitted record show the governed contrast? чита́й.
+feedback=Does this answer show the singular imperative? чита́й.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the singular imperative?
+testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-imperative-0
 distractorSourceIds= | prov-ex-or-u15-imperative-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the singular imperative?
+whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=чита́й | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-2
@@ -1161,28 +1122,28 @@ relationParticipantIds=prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-0
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9f19432a7d033d618af29e822acdc58153aac46117becd763ee17f0b2fc43878
+- Content hash: 18df1dcd57896173cdefaa0bc43e6b27f0ad8ae3abe3d8fc34a2cd068969d66c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the singular imperative?
 promptLetter=чита́ть
 options=чита́й | чита́йте
 answer=чита́й
-feedback=Does the admitted record show the governed contrast? чита́й.
+feedback=Does this answer show the singular imperative? чита́й.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the singular imperative?
+testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-imperative-0
 distractorSourceIds= | prov-ex-or-u15-imperative-1
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the singular imperative?
+whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=чита́й | чита́йте
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-2 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1
@@ -1195,28 +1156,28 @@ relationParticipantIds=prov-ex-or-u15-imperative-2 | prov-ex-or-u15-imperative-0
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a3f0923e4878566712f7da1d0767c980a8f0337714ceb3bdfc87d2f30e6cfd5
+- Content hash: 4fa14f9b43e260e477ad787418d062bd0647b265c0a0986dbbadd9e137295817
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the plural imperative?
 promptLetter=да́й
 options=да́йте | дать
 answer=да́йте
-feedback=Does the admitted record show the governed contrast? да́йте.
+feedback=Does this answer show the plural imperative? да́йте.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the plural imperative?
+testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-say-request-4
 distractorSourceIds= | prov-ex-or-u15-say-request-5
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the plural imperative?
+whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=да́йте | дать
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-3 | prov-ex-or-u15-say-request-4 | prov-ex-or-u15-say-request-5
@@ -1229,28 +1190,28 @@ relationParticipantIds=prov-ex-or-u15-say-request-3 | prov-ex-or-u15-say-request
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f5ba85c3c9bfc930b84e7cfce2fbd9518560f4d6b8a20a76451726daf411bef
+- Content hash: cd9bc2e136c7052ae89a5e015b8db67ed7305f0be3ae7747c0e7cf303488ad11
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the singular imperative?
 promptLetter=скажи́те
 options=скажи́ | сказа́ть
 answer=скажи́
-feedback=Does the admitted record show the governed contrast? скажи́.
+feedback=Does this answer show the singular imperative? скажи́.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERATIVE_ROW
+distractorRationales= | Does this row fail the singular imperative?
+testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-say-request-0
 distractorSourceIds= | prov-ex-or-u15-say-request-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the singular imperative?
+whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=скажи́ | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-2
@@ -1263,31 +1224,31 @@ relationParticipantIds=prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7031a6c9c28513cba40ef9a3acb68d4aad6c7591f4bf9d19b6c5862190aab67
+- Content hash: 016b10db57b1e6a7f99dade69422ee9c6dddf5b2f703de6edac2fa0bda1b8983
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted label classifies the shown line?
-promptLetter=делать/сделать
-options=to do | to make
-answer=to do
-feedback=Does the admitted record show the governed contrast? to do.
+prompt=Which admitted line is the imperfective partner?
+promptLetter=сказа́ть
+options=говори́ть | сде́лать
+answer=говори́ть
+feedback=Does this answer show the imperfective partner? говори́ть.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=ASPECT_PAIR
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | Does this row fail the imperfective partner?
+testedFeature=IMPERFECTIVE_PARTNER
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u15-aspect-consolidate-0-en
-distractorSourceIds= | prov-u15-aspect-consolidate-x-1
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=to do | to make
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-0-en | prov-u15-aspect-consolidate-x-1
+answerSourceIds=prov-ex-u15-aspect-consolidate-0-ru
+distractorSourceIds= | prov-ex-u15-aspect-consolidate-3-ru
+distractorDifference= | Does this row fail the imperfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
+contrastMembers=говори́ть | сде́лать
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-3-ru
 
 ### INDEPENDENT_CHECK `u15-i-aspect-consolidate-2`
 
@@ -1297,31 +1258,31 @@ relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac9ae252e3881d67d0428476d21b81d445a12b47b206417cd85824487ef26375
+- Content hash: 47c68f1340db0331214020cf478f5c1e0e63b5ca3329dc9f5fd5dd9b6159bc12
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=сказать
-options=говорить | impf.
-answer=говорить
-feedback=Does the admitted record show the governed contrast? говорить.
+prompt=Which admitted line is the perfective partner?
+promptLetter=де́лать
+options=сде́лать | говори́ть
+answer=сде́лать
+feedback=Does this answer show the perfective partner? сде́лать.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted label is in the same frozen line.
-testedFeature=ASPECT_PAIR
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u15-aspect-consolidate-1-ru
-distractorSourceIds= | prov-u15-aspect-consolidate-x-0
-distractorDifference= | This admitted label is in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=говорить | impf.
+answerSourceIds=prov-ex-u15-aspect-consolidate-3-ru
+distractorSourceIds= | prov-ex-u15-aspect-consolidate-0-ru
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u15-aspect-consolidate-2-ru | prov-ex-u15-aspect-consolidate-1-ru | prov-u15-aspect-consolidate-x-0
+relationParticipantIds=prov-ex-u15-aspect-consolidate-2-ru | prov-ex-u15-aspect-consolidate-3-ru | prov-ex-u15-aspect-consolidate-0-ru
 
 ### REFERENCE `ref-u1115-attribution`
 
@@ -1340,122 +1301,6 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
-
-### PROVENANCE `prov-ex-or-u15-aspect-consolidate-3`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 134df4eae9bcc3c7f470a6cccfc5ad1335bf23585fa5282348ab3ffe045d396f
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:де'лать#accented
-originalSourceText=де'лать
-shippedText=де́лать
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=0403a68d923f8ef72fdb5e73c46c4af2d2112066801bd0f15d966f4c41274f82
-contentHash=c472ba4cd4b95d85e2b7686abe28d3860a88b3ecb9eb6de34881b9fd9e089bbb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u15-aspect-consolidate-3-gloss`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78555ea6d8ff056b1d38307e070385b9c22ffc183768dc2472c89bffe6c7e2f7
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:де'лать#translations_en
-originalSourceText=make, do
-shippedText=make
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dffc18cec2273cbec32177da9ca70838604bcb1e2db289259436c71fc1b3e5c8
-contentHash=d05aa2a15fb3c40efeeb03bec445393f00074484cf01c8fb2da90ca6695a5531
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u15-aspect-consolidate-4`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f6493a4b587ade159a47bfff5417938e1701d4c05442f7b53de870cc2cf4609
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:сде'лать#accented
-originalSourceText=сде'лать
-shippedText=сде́лать
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=b227198d3e452dd57dc84667747418915c20c3c213e771e7283a29f639287756
-contentHash=b57324378572bf8c4a9dc00f2daeecb1ed4a8f4975529115e9554a00849c3325
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u15-aspect-consolidate-4-gloss`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b29b38d8a06b35f4da9340052af2e32e4ff86af7bb75b65311aee5a99965d9f
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:сде'лать#translations_en
-originalSourceText=make; do
-shippedText=make
-transformation=sense selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=328d167906a4c6ef8aecd45e2d1df85b66bbda26119bb2a6ed64141ed7fac162
-contentHash=d05aa2a15fb3c40efeeb03bec445393f00074484cf01c8fb2da90ca6695a5531
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u15-imperative-0`
 
@@ -1987,21 +1832,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f331c825f34a1aca5ad34c726ef6689041d02ed0a65c366d044c5ffe87a9b672
+- Content hash: 6a776f85d89cbc9d8ed9e56c441a32ef1ffba1df276fce8b5b0fc49d3ba2f2ff
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
-originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
-shippedText=to do
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=to speak
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
-contentHash=217655f48dde4e0a45408a559183ec410abf98188b35ad563cb8c512f13d2269
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=4ca762c41972c065576195229be6704587e0aacec753eebbaa8e26b288a97741
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2016,79 +1861,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87ad2fb740af1a75275213f635b39d5f1dfa4ed328549a2424be51643a825344
+- Content hash: 6f98441964adf7db57426467e16fea27032b5a3b5a06d11b6aa9ef4951439b59
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
-originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
-shippedText=делать/сделать
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=говори́ть
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
-contentHash=2b9ff3bfc7afabd64dfbeec124a7510d95fe88bd83040019f913d33080d7149c
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u15-aspect-consolidate-0-ru-r0`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3735b9e11f25e77b23220ea0e5cfcb389304fe12b889ebb40c12b069a868ecf
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
-sourceRevision=4059032
-sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
-originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
-shippedText=делать
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
-contentHash=cf92f0e083fad5d106f6c5dff1c7faf332fa7732aa812d302569060a9650d7cb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-u15-aspect-consolidate-0-ru-r1`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-orient, u15-s-aspect-consolidate
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a33ce3bb7959b790439ccbaefd4b2eb05aaecfcfaf7851bcdab59804758474c5
-
-recordType=example
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
-sourceRevision=4059032
-sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
-originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
-shippedText=сделать
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
-contentHash=1f8d750e2d78fea8de0e157bbd15ca0c348c33aaf2f11da07abf54a7cc45e91a
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=1f37b6b2cea84a10b3a4fb1a11f4d155460f649d86b38cd375ea5ee336fcd5e4
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2103,21 +1890,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 528ee2b33fa2a1146ecd2de63f51c5c8b76777c7623c1dab6a1729cb1ea77c42
+- Content hash: 38253c3c5437776c35d11d813181ead757c62d0e2c704436e4f883de2c712783
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-originalSourceText='''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-shippedText=to say, speak, tell
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=to speak
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dd47a55b128222560d10b13d90e72cfcf700df3f7cf6a6b5a13201f2e7deb81f
-contentHash=2156cc45913c245586a2a42296e5a0ac3d0070ed2a7f214a74aecdc89dda52be
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=4ca762c41972c065576195229be6704587e0aacec753eebbaa8e26b288a97741
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2132,21 +1919,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e147d09ad059a83316f18600675638b94dbd4be5c6783afc04ce83b882ae7c9b
+- Content hash: a617ab63d07dfd11aba9405db363e0874d2a5de58efc0c9f492d9ab8b780fea6
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-originalSourceText='''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-shippedText=говорить
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=сказа́ть
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dd47a55b128222560d10b13d90e72cfcf700df3f7cf6a6b5a13201f2e7deb81f
-contentHash=638abb44738563f127000abca4a2c8df1b89f93217b94b9019c567279b714f32
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=5547b4749450ac775ed6300c8589dd3d617007a61025ac2ed585dba015b692a8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2161,21 +1948,21 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f52a2e397460ba81a7e64eaa3ae40c20d235b5f80842f0e6b4b7fc8805c7c7d0
+- Content hash: 454e4bfae0a98c6ea72e065ea916d0dc9a5d6e54010314e377fb8f78e3fa4f85
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-originalSourceText='''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-shippedText=to say, speak, tell
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=to do
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dd47a55b128222560d10b13d90e72cfcf700df3f7cf6a6b5a13201f2e7deb81f
-contentHash=2156cc45913c245586a2a42296e5a0ac3d0070ed2a7f214a74aecdc89dda52be
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=217655f48dde4e0a45408a559183ec410abf98188b35ad563cb8c512f13d2269
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2190,21 +1977,79 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63e0247b5464641d01e132f134e15a56d50229ced0864753ae49515b64bcbe5a
+- Content hash: b405bea6e4dda534a9c06664f80005069706cb718b0bb7f43ae9b73388ba8e63
 
 recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-originalSourceText='''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-shippedText=сказать
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=де́лать
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dd47a55b128222560d10b13d90e72cfcf700df3f7cf6a6b5a13201f2e7deb81f
-contentHash=5ebbc57b6eb689b5070333ba0842b800cb0dc075224d16dd1576acc33082d416
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=c472ba4cd4b95d85e2b7686abe28d3860a88b3ecb9eb6de34881b9fd9e089bbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u15-aspect-consolidate-3-en`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 975eb06a6bf7003f4935f98e932c8edcadd67f2d90290718c02bca391cf6962c
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=to do
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=217655f48dde4e0a45408a559183ec410abf98188b35ad563cb8c512f13d2269
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u15-aspect-consolidate-3-ru`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a0ec20b630a8ec5cc77105a93342d4203107dae684edd24b29c9ab2244976476
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=сде́лать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=b57324378572bf8c4a9dc00f2daeecb1ed4a8f4975529115e9554a00849c3325
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2364,21 +2209,137 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 672f4204c99d984cffee4b1f2969057ed34f3d4a8d5112242d441c5123e09bea
+- Content hash: 3c590b405221491aff99cf0ebb61be363594de3d922b04f0d006fb47fcf679b9
 
 recordType=instruction
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:In short, all of this is to say that there are two types of verbs in Russian, pe
-originalSourceText=In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.
-shippedText=In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=a40d59aae61b445ec120c5c38711d5ec53c8e6731ff191615a7efd626a00c72c
-contentHash=a40d59aae61b445ec120c5c38711d5ec53c8e6731ff191615a7efd626a00c72c
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-rem-r0`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bfc4c7f458687c82f77f8599107580476eded367241ef6f01f12237f0c028a33
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=говори́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=1f37b6b2cea84a10b3a4fb1a11f4d155460f649d86b38cd375ea5ee336fcd5e4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-rem-r1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cd1d4c1c0aefc8e613eb6c5e78f1f18a5fb35b1aacbb67f2848f4292aa0ba4ec
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=сказа́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=5547b4749450ac775ed6300c8589dd3d617007a61025ac2ed585dba015b692a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-rem-r2`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b0a5e74469d8ef1fc599577039a8086c7bef2f5f72ff2f4b51ea8cfdbf22b614
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=де́лать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=c472ba4cd4b95d85e2b7686abe28d3860a88b3ecb9eb6de34881b9fd9e089bbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-rem-r3`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b1374beb956dc83b7ca96d5d7307c2ccb85e06f4daa864e0a951070a39ec141f
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''
+originalSourceText=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+shippedText=сде́лать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8
+contentHash=b57324378572bf8c4a9dc00f2daeecb1ed4a8f4975529115e9554a00849c3325
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2393,21 +2354,79 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1bd14aa01356d6f645aa3b02d3873dc925a9611f154f87aaf7b4cc9a1ac7f5f
+- Content hash: c622efee5b83c18270f6f8a3b15786335372d96e16ecc425c63884c0641decec
 
-recordType=instruction
+recordType=example
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
 sourceRevision=4059032
-sourceRecordId=aspect:'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-originalSourceText='''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'
-shippedText=impf.
+sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
+originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
+shippedText=делать/сделать
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=dd47a55b128222560d10b13d90e72cfcf700df3f7cf6a6b5a13201f2e7deb81f
-contentHash=660fb00832179a8220eb120b2690a1f5bf081ededb6c51d907f032b990ea7582
+sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
+contentHash=2b9ff3bfc7afabd64dfbeec124a7510d95fe88bd83040019f913d33080d7149c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-x-0-r0`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ee599e3244fc4fbe54354316a383991648e55139ec9fa9afecd2e5bc9086f2f3
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
+originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
+shippedText=делать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
+contentHash=cf92f0e083fad5d106f6c5dff1c7faf332fa7732aa812d302569060a9650d7cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-x-0-r1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 06233bc0f806e832eee10a5509c387076512c24e4d437a15970caaacd84c46ba
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
+originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
+shippedText=сделать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
+contentHash=1f8d750e2d78fea8de0e157bbd15ca0c348c33aaf2f11da07abf54a7cc45e91a
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2422,7 +2441,36 @@ reviewedDigest=
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfe48807157389dac028e8f7cf8fb10ef4de3a9eda516eeb0244642e984b0da9
+- Content hash: 616260cb13a3feb681b6501a30061e020a36f0233690386dde873218bdaeb8f1
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
+sourceRevision=4059032
+sourceRecordId=aspect:'''делать/сделать''' both mean 'to do' or 'to make'
+originalSourceText='''делать/сделать''' both mean 'to do' or 'to make'
+shippedText=to do
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=628630c448b68024698887754bb3cd3d47c3f7dea8399e373908c5b9b66c399b
+contentHash=217655f48dde4e0a45408a559183ec410abf98188b35ad563cb8c512f13d2269
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u15-aspect-consolidate-x-2`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 320071cc9fa4befd91c3fb81281b042f298f832775954c54403f2572e7f554d9
 
 recordType=meaning
 sourceUrl=https://en.wikibooks.org/wiki/Russian/Verbal_Aspect?oldid=4059032
@@ -2675,7 +2723,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u15-094`
+### AUTHORED_ENGLISH `en-u15-162`
 
 - Objectives: none
 - Sessions: none
@@ -2683,12 +2731,12 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 692d629936148d18cd034a6875669e1d7824f4d955d51d1716b3d7fcba130d68
+- Content hash: f854bc20a941df4e475a5f046ca8d79e81341a2d54b39e1407680c6708bec3bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
 
-### AUTHORED_ENGLISH `en-u15-095`
+### AUTHORED_ENGLISH `en-u15-163`
 
 - Objectives: none
 - Sessions: none
@@ -2696,12 +2744,12 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6098ba7c7a799cb18b62a8e2c61078fcfd018c916732b4bb5492c45d87ba8183
+- Content hash: bdffff51cfee9bddd792146f207d5465370308720ff72b7dd458521eb564b24d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another row of the same word.
+text=Does this row fail the plural imperative?
 
-### AUTHORED_ENGLISH `en-u15-096`
+### AUTHORED_ENGLISH `en-u15-164`
 
 - Objectives: none
 - Sessions: none
@@ -2709,12 +2757,12 @@ text=This form is another row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 687bb053492d2a6220d8a66a874f0104ede0a0013e9a7f4111e659cb34d21a9b
+- Content hash: 6c32511482bf0dd3f21f190d8ccea219225721a88e3964cb9a44f8d7f9bf3934
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the admitted record show the governed contrast?
+text=Does this answer show the plural imperative?
 
-### AUTHORED_ENGLISH `en-u15-097`
+### AUTHORED_ENGLISH `en-u15-165`
 
 - Objectives: none
 - Sessions: none
@@ -2722,12 +2770,12 @@ text=Does the admitted record show the governed contrast?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2b0425ed542a4d3ce5b00177ed81723898510119ad7aba4cbfe6878438b78dd
+- Content hash: 0dc8877ab3c9d36245e3412831aa13a5998138f57282fc9b916015e71eb08e05
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted row is the other row of the shown form?
+text=Which admitted row is the plural imperative?
 
-### AUTHORED_ENGLISH `en-u15-098`
+### AUTHORED_ENGLISH `en-u15-166`
 
 - Objectives: none
 - Sessions: none
@@ -2735,12 +2783,12 @@ text=Which admitted row is the other row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 001d608f5d1dd6af213ea3ca492d08a7637492524cd654959d3ff19db7c84ec4
+- Content hash: 4360a7cd8e5b1a651fdfe2d4a2cf17e4ad32ff05433dc61a0876d1a5a8e15284
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
 
-### AUTHORED_ENGLISH `en-u15-099`
+### AUTHORED_ENGLISH `en-u15-167`
 
 - Objectives: none
 - Sessions: none
@@ -2748,12 +2796,12 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee046b749aa5a576344cdc40af622442198407ca6d1d5684eaf80b9a55786b3b
+- Content hash: ac05907048799e73299c9029700a73a1c54f8414e96cb1ce6974012c277709a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the gloss in the same frozen line.
+text=Does this row fail the singular imperative?
 
-### AUTHORED_ENGLISH `en-u15-100`
+### AUTHORED_ENGLISH `en-u15-168`
 
 - Objectives: none
 - Sessions: none
@@ -2761,12 +2809,12 @@ text=This admitted wording is the gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38d3f5917c9cbf75c0ae9f8a1fa5f90b6938df05b26989b8e4723f5fd08012a7
+- Content hash: 902d6d0ec5da547fd6cbd978ab2c5bac78d62d8acd75ebda3d841b3f9a202187
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the other line in the same frozen record?
+text=Does this answer show the singular imperative?
 
-### AUTHORED_ENGLISH `en-u15-101`
+### AUTHORED_ENGLISH `en-u15-169`
 
 - Objectives: none
 - Sessions: none
@@ -2774,12 +2822,12 @@ text=Which admitted line is the other line in the same frozen record?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1752c7a3ef5f9faed25289b2045e77845409f4852b8ca4692df5bd97fef73faa
+- Content hash: 45e7632909a45709a179c231ba0c88490c97dae3f5170e5d3bd891907c62b905
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other gloss in the same frozen line.
+text=Which admitted row is the singular imperative?
 
-### AUTHORED_ENGLISH `en-u15-102`
+### AUTHORED_ENGLISH `en-u15-170`
 
 - Objectives: none
 - Sessions: none
@@ -2787,12 +2835,12 @@ text=This admitted wording is the other gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65ed5560bd5dd6238e9cc2b9697226c170080b4a757e3e0116bb83fecfacf02b
+- Content hash: d166d29fac35a9ac3336af86279c077d0df18d57336664fd74b60134147c7202
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted label classifies the shown line?
+text=Does this row fail the perfective partner?
 
-### AUTHORED_ENGLISH `en-u15-103`
+### AUTHORED_ENGLISH `en-u15-171`
 
 - Objectives: none
 - Sessions: none
@@ -2800,12 +2848,12 @@ text=Which admitted label classifies the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 139c41ee76b2ff896217d8081e5a09b24f7c4d41e8c1d63dae71a36398768fac
+- Content hash: b2ffbcae8266e7ac479bd6d6b93d8ebb32d600ad11d292af16612d337ec43b51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted label is in the same frozen line.
+text=Does this answer show the perfective partner?
 
-### AUTHORED_ENGLISH `en-u15-104`
+### AUTHORED_ENGLISH `en-u15-172`
 
 - Objectives: none
 - Sessions: none
@@ -2813,12 +2861,64 @@ text=This admitted label is in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a69db9f14be240128389bc5d91485759c467f0497ec9d5deb21245b5854639b
+- Content hash: 592ffbeebf80d29ed4756a8b0648ac8f8173c2c3e2f92c3b73bc6ec2f5830264
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the perfective partner?
+
+### AUTHORED_ENGLISH `en-u15-173`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f825104021d3fee6da9f6bd6eae3befca87301c819d65dbc79df777edbdbfa65
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u15-174`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7224775d5c9565b6a7683c90f88732867fda05dbf861bad249a3225125c9c8f9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u15-175`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 221abe3ab41083df45b03bbdabf5e17b43c7cce78debcf2a2b66f9c6a5578e59
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u15-176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bf98b7c8d7e168c09c9e7c93630350cf0155f2a4cccb00af440bb672241909e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted request rows and aspect pairs
 
-### AUTHORED_ENGLISH `en-u15-105`
+### AUTHORED_ENGLISH `en-u15-177`
 
 - Objectives: none
 - Sessions: none
@@ -2826,12 +2926,12 @@ text=Admitted request rows and aspect pairs
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 401287d4d2fc5373bcc57f78fe185b64a421cb5155710e5519ae7666a48a3eb7
+- Content hash: 6c1b2523539bfb8321fb2139e8b4240144cc6a24906aa555d8abb44be5eefa98
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u15-106`
+### AUTHORED_ENGLISH `en-u15-178`
 
 - Objectives: none
 - Sessions: none
@@ -2839,12 +2939,12 @@ text=Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qua
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a4cb307937595c7fa3fe8a306907be552787a7f56f5230361604998529a23f6
+- Content hash: 422c5be493e084f1612312d34931246b4acac4d6b7cf8011a5afd0474e63edb9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 15 in the copy you own. The app records do not replace that lesson.
 
-### AUTHORED_ENGLISH `en-u15-107`
+### AUTHORED_ENGLISH `en-u15-179`
 
 - Objectives: none
 - Sessions: none
@@ -2852,12 +2952,12 @@ text=Open Lesson 15 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d31e53e1b982b77805dd116bfa654907cb7a58eeca57de0245acc62c7e0d4a7
+- Content hash: f0472ba6dc34a9190bd0f0239cbb1bf7f994d52817a7621c244f043d894fcf02
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
 
-### AUTHORED_ENGLISH `en-u15-108`
+### AUTHORED_ENGLISH `en-u15-180`
 
 - Objectives: none
 - Sessions: none
@@ -2865,12 +2965,12 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6b851f04ecc2115fd6770f2360f1699c4261acd062675166fd8d494803d41378
+- Content hash: 4174a9335abdf9649539dd69d75fec0b0ee57a19a41d43795f4dabc19ef3bfcc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
 
-### AUTHORED_ENGLISH `en-u15-109`
+### AUTHORED_ENGLISH `en-u15-181`
 
 - Objectives: none
 - Sessions: none
@@ -2878,12 +2978,12 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c5449d904f8996e484f3cd0041c952d580a008bfc6b14eeb0d547ca19af5a7d
+- Content hash: 600f992b48370bdb7669f8791a913b1d18a5210338165746c3c9577bcee426bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
 
-### AUTHORED_ENGLISH `en-u15-110`
+### AUTHORED_ENGLISH `en-u15-182`
 
 - Objectives: none
 - Sessions: none
@@ -2891,12 +2991,12 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04d3d958fb7eb5fd96153538607dd9efa9ac1ff6aec95a06ed56cd141321b939
+- Content hash: 37ab656fee259783d5af151e4379d0b730fc3582e7a0d649bd41a5f86fb97e36
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
 
-### AUTHORED_ENGLISH `en-u15-111`
+### AUTHORED_ENGLISH `en-u15-183`
 
 - Objectives: none
 - Sessions: none
@@ -2904,12 +3004,12 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77ddeeb004250dcbc0635542a155d83ff0c3b1c92d761a4c6c14a87cc30a9cb5
+- Content hash: e27821e264bf420c860a5f9b02e12515e4296f363c2004f0be9729de095180b0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
 
-### AUTHORED_ENGLISH `en-u15-112`
+### AUTHORED_ENGLISH `en-u15-184`
 
 - Objectives: none
 - Sessions: none
@@ -2917,12 +3017,12 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09d39913c1a88eb5b7280a27809d785682480faa7387250417745292ad824817
+- Content hash: d432fa79d34bb5f819d85036e44bba6f0bc8cb3c597f017d9dc8e6cf77a97c2b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 15 in your copy
 
-### AUTHORED_ENGLISH `en-u15-113`
+### AUTHORED_ENGLISH `en-u15-185`
 
 - Objectives: none
 - Sessions: none
@@ -2930,12 +3030,12 @@ text=Work Lesson 15 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cbf62625e382c4d0c0f54540a582827e0737c6056e4cadabd38aac070d68eb80
+- Content hash: 0697f4b8b6baf535f883e38c16eae3aa4adcb74d0657ed0307b49e32aede8db1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
-### AUTHORED_ENGLISH `en-u15-114`
+### AUTHORED_ENGLISH `en-u15-186`
 
 - Objectives: none
 - Sessions: none
@@ -2943,12 +3043,12 @@ text=Do Lesson 15 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: def0a500a5f6c7e468f8d749626a4f14f8960fd80e8a4b147b46af8ceeb7f097
+- Content hash: 44e3c745d2986f3ecc6a797e14d74bb40dc2a17e3811fc491b3618548dc3d055
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 15 in your copy and complete its lesson work.
 
-### AUTHORED_ENGLISH `en-u15-115`
+### AUTHORED_ENGLISH `en-u15-187`
 
 - Objectives: none
 - Sessions: none
@@ -2956,12 +3056,12 @@ text=Open Lesson 15 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8186329a224978e3872a89f0adf8cde131ee8b50a7726291a729b99b5bad9440
+- Content hash: f19be495d9ac7f1045c99271ccbcbabe8e52ca503d59dc62da8169b32e560be1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 15 book work
 
-### AUTHORED_ENGLISH `en-u15-116`
+### AUTHORED_ENGLISH `en-u15-188`
 
 - Objectives: none
 - Sessions: none
@@ -2969,12 +3069,12 @@ text=Record Lesson 15 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20ba3540698ec6ba0312ae3e16b18ce4755fe7c623053e3b23c7c058800850cc
+- Content hash: db348541e980012dd845a82d9124154ac512a54e8b20bef1be317fd56c7d2120
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u15-117`
+### AUTHORED_ENGLISH `en-u15-189`
 
 - Objectives: none
 - Sessions: none
@@ -2982,7 +3082,7 @@ text=When you have done Lesson 15 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b808a787385c566c00853988ddc4bfeb875597a7efe952292a2dae83a1250e57
+- Content hash: 5809e30429bd934d23b725096f0f1df86281fb358925ea274d39fbc8f7328cdf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 15 work in your copy.
@@ -3107,12 +3207,10 @@ permitsAppUse=true
 - `obj-u15-aspect-consolidate` INSTRUCTION `u15-st-teach-aspect-consolidate-1`
 - `obj-u15-aspect-consolidate` INSTRUCTION `u15-st-teach-aspect-consolidate-2`
 - `obj-u15-aspect-consolidate` INSTRUCTION `u15-st-teach-aspect-consolidate-3`
-- `obj-u15-aspect-consolidate` INSTRUCTION `u15-st-teach-aspect-consolidate-4`
 - `obj-u15-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-0`
 - `obj-u15-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-1`
 - `obj-u15-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-2`
-- `obj-u15-aspect-consolidate` EXAMPLE `ex-or-u15-aspect-consolidate-3`
-- `obj-u15-aspect-consolidate` EXAMPLE `ex-or-u15-aspect-consolidate-4`
+- `obj-u15-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-3`
 - `obj-u15-aspect-consolidate` PRACTICE `u15-st-guided-aspect-consolidate-1`
 - `obj-u15-aspect-consolidate` CHECK `u15-i-aspect-consolidate-1`
 - `obj-u15-aspect-consolidate` CHECK `u15-i-aspect-consolidate-2`
@@ -3165,10 +3263,8 @@ permitsAppUse=true
 - `u15-st-guided-aspect-consolidate-1` ITEM `u15-g-aspect-consolidate-0`
 - `u15-st-teach-aspect-consolidate-2` REFERENCE `ref-u1115-attribution`
 - `u15-st-teach-aspect-consolidate-3` EXAMPLE `ex-u15-aspect-consolidate-2`
-- `u15-st-teach-aspect-consolidate-3` EXAMPLE `ex-or-u15-aspect-consolidate-3`
+- `u15-st-teach-aspect-consolidate-3` EXAMPLE `ex-u15-aspect-consolidate-3`
 - `u15-st-teach-aspect-consolidate-3` REFERENCE `ref-u1115-attribution`
-- `u15-st-teach-aspect-consolidate-4` EXAMPLE `ex-or-u15-aspect-consolidate-4`
-- `u15-st-teach-aspect-consolidate-4` REFERENCE `ref-u1115-attribution`
 - `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-0`
 - `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-1`
 - `u15-st-check-aspect-consolidate` REMEDIATION `u15-st-rem-aspect-consolidate`
@@ -3176,10 +3272,6 @@ permitsAppUse=true
 - `u15-st-check-aspect-consolidate` ITEM `u15-i-aspect-consolidate-2`
 - `u15-s-book` OBJECTIVE `obj-u15-book`
 - `u15-st-book-work` REFERENCE `ref-u1115-attribution`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-or-u15-aspect-consolidate-3`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-or-u15-aspect-consolidate-3-gloss`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-or-u15-aspect-consolidate-4`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-or-u15-aspect-consolidate-4-gloss`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0-gloss`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-1`
@@ -3200,20 +3292,27 @@ permitsAppUse=true
 - `obj-u15-say-request` PROVENANCE `prov-ex-or-u15-say-request-5-gloss`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-0-en`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-0-ru`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-0-ru-r0`
-- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-0-ru-r1`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-1-en`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-1-ru`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-2-en`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-2-ru`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-3-en`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ex-u15-aspect-consolidate-3-ru`
 - `obj-u15-imperative` PROVENANCE `prov-ex-u15-imperative-3-en`
 - `obj-u15-imperative` PROVENANCE `prov-ex-u15-imperative-3-ru`
 - `obj-u15-imperative` PROVENANCE `prov-ex-u15-imperative-3-ru-r0`
 - `obj-u15-imperative` PROVENANCE `prov-ex-u15-imperative-3-ru-r1`
 - `obj-u15-imperative` PROVENANCE `prov-ex-u15-imperative-3-ru-r2`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-rem`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-rem-r0`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-rem-r1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-rem-r2`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-rem-r3`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-x-0`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-x-0-r0`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-x-0-r1`
 - `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-x-1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-u15-aspect-consolidate-x-2`
 - `obj-u15-imperative` PROVENANCE `prov-u15-imperative-rem`
 - `obj-u15-imperative` PROVENANCE `prov-u15-imperative-rem-r0`
 - `obj-u15-imperative` PROVENANCE `prov-u15-imperative-rem-r1`

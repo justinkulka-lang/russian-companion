@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5dbc70d193d34437763a476aea849b0cedc4f922
-- Unit content-review SHA-256: 8334910483619c2c9f10677d59b58665e55870ad7a7489180c0ff1f20c70bf54
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: 7c9e326925939b5ad6408223ee869d64cdcd2f094851ff37b9dd87a2f4c42b48
 - Mapping-package SHA-256: 2ada287c0c46c616b1249034c2a7121f07b55557d6bb625c5995b3d618230967
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: 7adf1ba5f72ab097099763182f1e84180b885a1318a180258315409d573d7415
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: 074df43b35876aa48dfe1d4f0cb223a93ed6d0aa4be086e23a54f12c6c78e6d7
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1973,31 +1973,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4944eb1a842df242fc85760f9af55f1c4fb25b0cbb3eeb33af704cd746423613
+- Content hash: 89f49de31197fdd70f29080578038b629ff17d47265dbaeec90acdca82a2ef7c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я бу́ду говори́ть
-options=Мы бу́дем говори́ть | I will be speaking
+prompt=Which admitted line is the first-person plural future?
+promptLetter=We will be speaking
+options=Мы бу́дем говори́ть | Я бу́ду говори́ть
 answer=Мы бу́дем говори́ть
-feedback=Does the admitted record show the governed contrast? Мы бу́дем говори́ть.
+feedback=Does this answer show the first-person plural future? Мы бу́дем говори́ть.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the first-person plural future?
+testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-imp-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u12-future-imp-1-ru
-distractorSourceIds= | prov-ex-u12-future-imp-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Мы бу́дем говори́ть | I will be speaking
+distractorSourceIds= | prov-ex-u12-future-imp-0-ru
+distractorDifference= | Does this row fail the first-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-en
+relationParticipantIds=prov-ex-u12-future-imp-1-en | prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-ru
 
 ### GUIDED_PRACTICE `u12-g-future-perf-0`
 
@@ -2007,31 +2007,31 @@ relationParticipantIds=prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: feecf94e2515f7e6d8e75ce14afeaddf122c11936f4219748c9d402549af9d4f
+- Content hash: 249edfc42a0fded9a1cd1cb1c637e06619ff364050bcddec0a832bcdb847074a
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я скажу́
-options=Мы ска́жем | I will speak
+prompt=Which admitted line is the first-person plural future?
+promptLetter=We will speak
+options=Мы ска́жем | Я скажу́
 answer=Мы ска́жем
-feedback=Does the admitted record show the governed contrast? Мы ска́жем.
+feedback=Does this answer show the first-person plural future? Мы ска́жем.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the first-person plural future?
+testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-perf-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u12-future-perf-1-ru
-distractorSourceIds= | prov-ex-u12-future-perf-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Мы ска́жем | I will speak
+distractorSourceIds= | prov-ex-u12-future-perf-0-ru
+distractorDifference= | Does this row fail the first-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+contrastMembers=Мы ска́жем | Я скажу́
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-en
+relationParticipantIds=prov-ex-u12-future-perf-1-en | prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-ru
 
 ### GUIDED_PRACTICE `u12-g-aspect-0`
 
@@ -2041,28 +2041,28 @@ relationParticipantIds=prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6895f260582ce18039e7381557a5d6abe1a51a86a714ba51b4a3a1d79c5a1e7
+- Content hash: b2fe65b7ce107e26466034567828ee667c6dc9979739ac6e65268881f631e389
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does the admitted record show the governed contrast? сказа́ть.
+feedback=Does this answer show the perfective partner? сказа́ть.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another admitted word.
-testedFeature=ASPECT_PARTNER
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u12-aspect-1-ru
 distractorSourceIds= | prov-ex-u12-aspect-2-ru
-distractorDifference= | This form is another admitted word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-2-ru
@@ -2075,28 +2075,28 @@ relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55104e24ce5749bb3985ecf287a2ed341d7f44ed91f246e782954e1bad441849
+- Content hash: aaf07d2195b317463fd56ab4d50fdd64344e7814480f071851cd7b675da2c4c0
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the dative singular?
 promptLetter=кни́га
 options=кни́ге | кни́ги
 answer=кни́ге
-feedback=Does the admitted record show the governed contrast? кни́ге.
+feedback=Does this answer show the dative singular? кни́ге.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=DATIVE_ROW
+distractorRationales= | Does this row fail the dative singular?
+testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u12-dative-1
 distractorSourceIds= | prov-ex-or-u12-dative-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the dative singular?
+whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=кни́ге | кни́ги
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-0 | prov-ex-or-u12-dative-1 | prov-ex-or-u12-dative-2
@@ -2109,31 +2109,31 @@ relationParticipantIds=prov-ex-or-u12-dative-0 | prov-ex-or-u12-dative-1 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59697a2e6da6c3ce7bb9979c929e29bff6f4c683900f2df053961e6632629526
+- Content hash: ccc5e9bc3d1eb8a002a928e1e03026a4e7157404a13ee2f5c0b5c2344b281490
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling is written in the frozen line?
-promptLetter=хорошее письмо
-options=the good letter | хорошое письмо
-answer=the good letter
-feedback=Does the admitted record show the governed contrast? the good letter.
+prompt=Which admitted line is the accepted spelling rather than the rejected example?
+promptLetter=the good letter
+options=хорошее письмо | хорошое письмо
+answer=хорошее письмо
+feedback=Does this answer show the accepted spelling? хорошее письмо.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This spelling is the rejected spelling in the same frozen line.
-testedFeature=FIVE_LETTER_SPELLING
+distractorRationales= | Does this row fail the accepted spelling?
+testedFeature=ACCEPTED_SPELLING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-spelling-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
-answerSourceIds=prov-ex-u12-spelling-3-en
+answerSourceIds=prov-ex-u12-spelling-3-ru
 distractorSourceIds= | prov-u12-spelling-rem-r6
-distractorDifference= | This spelling is the rejected spelling in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=the good letter | хорошое письмо
+distractorDifference= | Does this row fail the accepted spelling?
+whyAnswerDemonstratesObjective=Does this answer show the accepted spelling?
+contrastMembers=хорошее письмо | хорошое письмо
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-spelling-3-ru | prov-ex-u12-spelling-3-en | prov-u12-spelling-rem-r6
+relationParticipantIds=prov-ex-u12-spelling-3-en | prov-ex-u12-spelling-3-ru | prov-u12-spelling-rem-r6
 
 ### GUIDED_PRACTICE `u12-g-prep-plural-0`
 
@@ -2143,19 +2143,19 @@ relationParticipantIds=prov-ex-u12-spelling-3-ru | prov-ex-u12-spelling-3-en | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89fbcb74c8d27d0c073b0e581a31358956a5988d3c4f66f9cb3f05d78d318e70
+- Content hash: f0cea99966a996c8dca570454f57152a32654e08d0398083ee396ee57637728d
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the prepositional plural?
 promptLetter=кни́ги
 options=кни́гах | кни́ге
 answer=кни́гах
-feedback=Does the admitted record show the governed contrast? кни́гах.
+feedback=Does this answer show the prepositional plural? кни́гах.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
+distractorRationales= | Does this row fail the prepositional plural?
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-0
@@ -2163,8 +2163,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u12-prep-plural-1
 distractorSourceIds= | prov-ex-or-u12-prep-plural-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the prepositional plural?
+whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=кни́гах | кни́ге
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-0 | prov-ex-or-u12-prep-plural-1 | prov-ex-or-u12-prep-plural-2
@@ -2177,31 +2177,31 @@ relationParticipantIds=prov-ex-or-u12-prep-plural-0 | prov-ex-or-u12-prep-plural
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c758080d7a0a6dfb2fb3cc7f481b619e87b848eb9b361c2bb8eafaf87931806e
+- Content hash: ea5659f4f1a9ca11dfdb6e49432fc01dfe337ff17c395b0a53f587e8fa62f1ba
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Мы бу́дем говори́ть
-options=Я бу́ду говори́ть | We will be speaking
+prompt=Which admitted line is the first-person singular future?
+promptLetter=I will be speaking
+options=Я бу́ду говори́ть | Мы бу́дем говори́ть
 answer=Я бу́ду говори́ть
-feedback=Does the admitted record show the governed contrast? Я бу́ду говори́ть.
+feedback=Does this answer show the first-person singular future? Я бу́ду говори́ть.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the first-person singular future?
+testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-imp-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u12-future-imp-0-ru
-distractorSourceIds= | prov-ex-u12-future-imp-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я бу́ду говори́ть | We will be speaking
+distractorSourceIds= | prov-ex-u12-future-imp-1-ru
+distractorDifference= | Does this row fail the first-person singular future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-en
+relationParticipantIds=prov-ex-u12-future-imp-0-en | prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-ru
 
 ### INDEPENDENT_CHECK `u12-i-future-imp-2`
 
@@ -2211,31 +2211,31 @@ relationParticipantIds=prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: babc9b5d2c4c8c4466f69979dfe5cb2d21e180721a578469a4c4852e7107f7d9
+- Content hash: 6e99427c6ebb2086039a18546a5420d063bfe3699195becb36da98d0b0ec20cb
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the second-person plural future?
 promptLetter=Ты бу́дешь говори́ть
-options=Вы бу́дете говори́ть | You will be speaking
+options=Вы бу́дете говори́ть | бу́дешь
 answer=Вы бу́дете говори́ть
-feedback=Does the admitted record show the governed contrast? Вы бу́дете говори́ть.
+feedback=Does this answer show the second-person plural future? Вы бу́дете говори́ть.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the second-person plural future?
+testedFeature=SECOND_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-imp-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-u12-future-imp-x-0
-distractorSourceIds= | prov-ex-u12-future-imp-2-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Вы бу́дете говори́ть | You will be speaking
+distractorSourceIds= | prov-u12-future-imp-x-1
+distractorDifference= | Does this row fail the second-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the second-person plural future?
+contrastMembers=Вы бу́дете говори́ть | бу́дешь
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-ex-u12-future-imp-2-en
+relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-u12-future-imp-x-1
 
 ### INDEPENDENT_CHECK `u12-i-future-perf-1`
 
@@ -2245,28 +2245,28 @@ relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd66fa9009740314ff32a07be58594cdefc3030af9654dbf1a7f9692382888fd
+- Content hash: b1b450434ae911dc0a66bc613171f8afc5196ecf08bac251860dc0589ef8b55c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the first-person plural future?
 promptLetter=скажу́
 options=ска́жем | ска́жешь
 answer=ска́жем
-feedback=Does the admitted record show the governed contrast? ска́жем.
+feedback=Does this answer show the first-person plural future? ска́жем.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the first-person plural future?
+testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-future-perf-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-future-perf-3
 distractorSourceIds= | prov-ex-or-u12-future-perf-4
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the first-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
 contrastMembers=ска́жем | ска́жешь
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-future-perf-2 | prov-ex-or-u12-future-perf-3 | prov-ex-or-u12-future-perf-4
@@ -2279,31 +2279,31 @@ relationParticipantIds=prov-ex-or-u12-future-perf-2 | prov-ex-or-u12-future-perf
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65c4a649baccf06a7ab2109b3e5b450680f5101238f10f1a21129e3f2e206216
+- Content hash: 69fbda2d89ebfd08048e0196972b665e501bacb93a41f6eff030b8457efea889
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Мы ска́жем
-options=Я скажу́ | We will speak
+prompt=Which admitted line is the first-person singular future?
+promptLetter=I will speak
+options=Я скажу́ | Мы ска́жем
 answer=Я скажу́
-feedback=Does the admitted record show the governed contrast? Я скажу́.
+feedback=Does this answer show the first-person singular future? Я скажу́.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_LINE
+distractorRationales= | Does this row fail the first-person singular future?
+testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-perf-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u12-future-perf-0-ru
-distractorSourceIds= | prov-ex-u12-future-perf-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я скажу́ | We will speak
+distractorSourceIds= | prov-ex-u12-future-perf-1-ru
+distractorDifference= | Does this row fail the first-person singular future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+contrastMembers=Я скажу́ | Мы ска́жем
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-en
+relationParticipantIds=prov-ex-u12-future-perf-0-en | prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-ru
 
 ### INDEPENDENT_CHECK `u12-i-aspect-1`
 
@@ -2313,28 +2313,28 @@ relationParticipantIds=prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab57415ec48538de77d7b6b06ff827d0672fffc9e3fca2347f7211c6ed9f30e6
+- Content hash: b56369e2fb30c6f8573e132688f9c6912f3f154ffeeb8808ec852a6c1c9fb759
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does the admitted record show the governed contrast? говори́ть.
+feedback=Does this answer show the imperfective partner? говори́ть.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another admitted word.
-testedFeature=ASPECT_PARTNER
+distractorRationales= | Does this row fail the imperfective partner?
+testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-0-ru
 distractorSourceIds= | prov-ex-u12-aspect-3-ru
-distractorDifference= | This form is another admitted word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the imperfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-3-ru
@@ -2347,28 +2347,28 @@ relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5a192dd80ced36afd817c2b8320c56810409e49938b23a4cc5909f8593afa2ed
+- Content hash: da6c78aa4d6054cf39ad91cdf2a06ac48a0b803b0d5f9dd74baa303fcf82ec47
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does the admitted record show the governed contrast? сде́лать.
+feedback=Does this answer show the perfective partner? сде́лать.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another admitted word.
-testedFeature=ASPECT_PARTNER
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-3-ru
 distractorSourceIds= | prov-ex-u12-aspect-0-ru
-distractorDifference= | This form is another admitted word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-ex-u12-aspect-0-ru
@@ -2381,28 +2381,28 @@ relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9a08aa3b0ffbe0024d53de6d73ba379bf0cce02c0d3a1957c419ff4bc75f141
+- Content hash: 17ac86e73c7962bd1396b6677a89bbe86ff06653263f87895171dc0c1a98defe
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the dative singular?
 promptLetter=сто́л
 options=столу́ | столы́
 answer=столу́
-feedback=Does the admitted record show the governed contrast? столу́.
+feedback=Does this answer show the dative singular? столу́.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=DATIVE_ROW
+distractorRationales= | Does this row fail the dative singular?
+testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-dative-4
 distractorSourceIds= | prov-ex-or-u12-dative-5
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the dative singular?
+whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=столу́ | столы́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-3 | prov-ex-or-u12-dative-4 | prov-ex-or-u12-dative-5
@@ -2415,28 +2415,28 @@ relationParticipantIds=prov-ex-or-u12-dative-3 | prov-ex-or-u12-dative-4 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba051daadcae7e60fac5b29cf4ac7ef4d8762e39ea0c1dedbe78ab2cdefc3379
+- Content hash: 63521104dab482a659a56f80ee927ff19f26d40313a4fb13506e209a141c40ec
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the dative singular?
 promptLetter=до́м
 options=до́му | дома́
 answer=до́му
-feedback=Does the admitted record show the governed contrast? до́му.
+feedback=Does this answer show the dative singular? до́му.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=DATIVE_ROW
+distractorRationales= | Does this row fail the dative singular?
+testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-dative-7
 distractorSourceIds= | prov-ex-or-u12-dative-8
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the dative singular?
+whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=до́му | дома́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-6 | prov-ex-or-u12-dative-7 | prov-ex-or-u12-dative-8
@@ -2449,28 +2449,28 @@ relationParticipantIds=prov-ex-or-u12-dative-6 | prov-ex-or-u12-dative-7 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa14962c66f514072cb13f4a3c32b6d096cfab600cb74f10a95e0dad04663195
+- Content hash: 45be16151f02018a8717968ec39113413214db6cbf1bde6a72bd6ef53464bc65
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the neuter form?
 promptLetter=хоро́ший
 options=хоро́шее | хоро́шая
 answer=хоро́шее
-feedback=Does the admitted record show the governed contrast? хоро́шее.
+feedback=Does this answer show the neuter form? хоро́шее.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=FIVE_LETTER_SPELLING
+distractorRationales= | Does this row fail the neuter form?
+testedFeature=NEUTER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-spelling-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-spelling-1
 distractorSourceIds= | prov-ex-or-u12-spelling-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the neuter form?
+whyAnswerDemonstratesObjective=Does this answer show the neuter form?
 contrastMembers=хоро́шее | хоро́шая
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-spelling-0 | prov-ex-or-u12-spelling-1 | prov-ex-or-u12-spelling-2
@@ -2483,31 +2483,31 @@ relationParticipantIds=prov-ex-or-u12-spelling-0 | prov-ex-or-u12-spelling-1 | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b141c543755f6bcaef6583b031a959dc1d9acce4926be83b50a24b1c88f771e1
+- Content hash: f1e1ba1351acf5bfa061f79d36adbe476b36eea437c0a47a5e1db29e879e7e48
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted spelling is written in the frozen line?
-promptLetter=хорошое письмо
-options=хорошее письмо | the good letter
-answer=хорошее письмо
-feedback=Does the admitted record show the governed contrast? хорошее письмо.
+prompt=Which admitted line is the rejected spelling rather than the accepted example?
+promptLetter=the good letter
+options=хорошое письмо | хорошее письмо
+answer=хорошое письмо
+feedback=Does this answer show the rejected spelling? хорошое письмо.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the gloss in the same frozen line.
-testedFeature=FIVE_LETTER_SPELLING
+distractorRationales= | Does this row fail the rejected spelling?
+testedFeature=REJECTED_SPELLING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-spelling-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u12-spelling-3-ru
-distractorSourceIds= | prov-ex-u12-spelling-3-en
-distractorDifference= | This admitted wording is the gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=хорошее письмо | the good letter
+answerSourceIds=prov-u12-spelling-rem-r6
+distractorSourceIds= | prov-ex-u12-spelling-3-ru
+distractorDifference= | Does this row fail the rejected spelling?
+whyAnswerDemonstratesObjective=Does this answer show the rejected spelling?
+contrastMembers=хорошое письмо | хорошее письмо
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-u12-spelling-rem-r6 | prov-ex-u12-spelling-3-ru | prov-ex-u12-spelling-3-en
+relationParticipantIds=prov-ex-u12-spelling-3-en | prov-u12-spelling-rem-r6 | prov-ex-u12-spelling-3-ru
 
 ### INDEPENDENT_CHECK `u12-i-prep-plural-1`
 
@@ -2517,19 +2517,19 @@ relationParticipantIds=prov-u12-spelling-rem-r6 | prov-ex-u12-spelling-3-ru | pr
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a9aef6b034731bc9a266bca02a09f6da00040291f800cf5f6fc2d19c7175e5f
+- Content hash: 16b8af2a1b550440627c27d0fff067d89af4d0068bf2ce61808bf8d01f863f6a
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the prepositional plural?
 promptLetter=столы́
 options=стола́х | столу́
 answer=стола́х
-feedback=Does the admitted record show the governed contrast? стола́х.
+feedback=Does this answer show the prepositional plural? стола́х.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
+distractorRationales= | Does this row fail the prepositional plural?
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-1
@@ -2537,8 +2537,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-prep-plural-4
 distractorSourceIds= | prov-ex-or-u12-prep-plural-5
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the prepositional plural?
+whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=стола́х | столу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-3 | prov-ex-or-u12-prep-plural-4 | prov-ex-or-u12-prep-plural-5
@@ -2551,19 +2551,19 @@ relationParticipantIds=prov-ex-or-u12-prep-plural-3 | prov-ex-or-u12-prep-plural
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88a5064de679e2ef2d4f53cc684ba05d50e5e2f6b16012c3598b67d396dc2b44
+- Content hash: 0e5cd9d44a211c9170acc87b1df9f271ba8e561e1ffc5fb82a754d980cdedfad
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the prepositional plural?
 promptLetter=дома́
 options=дома́х | до́му
 answer=дома́х
-feedback=Does the admitted record show the governed contrast? дома́х.
+feedback=Does this answer show the prepositional plural? дома́х.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
+distractorRationales= | Does this row fail the prepositional plural?
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-2
@@ -2571,8 +2571,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-prep-plural-7
 distractorSourceIds= | prov-ex-or-u12-prep-plural-8
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the prepositional plural?
+whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=дома́х | до́му
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-6 | prov-ex-or-u12-prep-plural-7 | prov-ex-or-u12-prep-plural-8
@@ -4857,6 +4857,35 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u12-future-imp-x-1`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ab05ceec2e088e251951790ca6d8a9b9d6cb0e346816db9f59921cd2a71bb953
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822
+sourceRevision=3353822
+sourceRecordId=future:Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will
+originalSourceText=Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking
+shippedText=бу́дешь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2c3be73d304f54f2992e677a68f4bf6b5c3cabedc4c9cbca0c33fa4160ae8916
+contentHash=b6d8d689fd4c7aa23f2a4f2ed3aab60669c303cd62056bbd74ac1ce8008db58b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u12-future-perf-rem`
 
 - Objectives: obj-u12-future-perf
@@ -5379,136 +5408,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u12-023`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e12589f7f4c12311604338afcb2eb40dc29280b216ab19c2974891944345129d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u12-024`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0cc1cffe6d6ab69b22243492ca2710f56c6b8efb5c8cc463ab3b1dbb7a8994c4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other gloss in the same frozen line.
-
-### AUTHORED_ENGLISH `en-u12-025`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed67b42e3d14562e4c303e1e1342f7cfe160383158f3371aacebfeabc99709b7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the admitted record show the governed contrast?
-
-### AUTHORED_ENGLISH `en-u12-026`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd50b3a86ac5bcf9bf5dc60906c55338b876d6928238807a83382ff26f410b8d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the other line in the same frozen record?
-
-### AUTHORED_ENGLISH `en-u12-027`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62d06da25c9097b3a80fe8214cf530ab4d12c26d27f9a9643168759c13a7befb
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u12-028`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e83c31f52eced3363feec231873ca3ca01f4ff574d7a2a211785b4a9306c01a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another row of the same word.
-
-### AUTHORED_ENGLISH `en-u12-029`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b53f8eae78669a091a2effa3846a142687b301750feae4d2396dee8cce778862
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted row is the other row of the shown form?
-
-### AUTHORED_ENGLISH `en-u12-030`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2db8bf38cdc484e96cce162f2387d8a0a0b10faebc8604d6018edf4338690948
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another admitted word.
-
-### AUTHORED_ENGLISH `en-u12-031`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eceb60c7e659f8f79e0b9877da19506cdceed6a3daa7e2b821a7d5ce8d963ddc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This spelling is the rejected spelling in the same frozen line.
-
-### AUTHORED_ENGLISH `en-u12-032`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d02588e8ad62b7c544dc248f13f65a915bdf917a5b9031fd25bf84d971f78dd
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted spelling is written in the frozen line?
-
 ### AUTHORED_ENGLISH `en-u12-033`
 
 - Objectives: none
@@ -5517,10 +5416,10 @@ text=Which admitted spelling is written in the frozen line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c02d030ff6bf53119858f83ac5f368984f7cb0f7069fb89057949e9172a520e
+- Content hash: c78a7da75b8d522090652d5dcc41f1645c305a3f0d99d64b6c07c0b6dcfc62a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the gloss in the same frozen line.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u12-034`
 
@@ -5530,10 +5429,10 @@ text=This admitted wording is the gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb481611971e059b0331ce5d29112dafbf9bc6cec666023c5be09406ab4eb8c5
+- Content hash: 827476d46db8a692790dcf7a6c16965a5974676f6bb1acd69b5efa3373051803
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted future, aspect, and row contrasts
+text=Does this row fail the first-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-035`
 
@@ -5543,10 +5442,10 @@ text=Admitted future, aspect, and row contrasts
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9c3815c9b370213146d19581a51fd871da9f31a62aca270b840234a06d6173f
+- Content hash: ed752376ec69e988531f76dcdceed1dc74c39a26aa42abf32ab5e023e398cdfa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 12 uses frozen records for future lines, aspect partners, indirect-object rows, spelling, and plural rows. Qualified review is pending.
+text=Does this answer show the first-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-036`
 
@@ -5556,10 +5455,10 @@ text=Proposed Unit 12 uses frozen records for future lines, aspect partners, ind
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43809a1867312424bf3784e663b7a006232be3a7a4630ae2f6bd3009bb1d02cf
+- Content hash: 134fe8139a6d65dc74713c11050c25c3ba424747f534a683ad4f6d579428d5c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 12 in the copy you own. The app records do not replace that lesson.
+text=Which admitted line is the first-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-037`
 
@@ -5569,10 +5468,10 @@ text=Open Lesson 12 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0562cbb0cd5c1770f97b86b498e2fb36105d8da6885f86da0f8bc5e222574a70
+- Content hash: 9f72e035228581adfbf8b304c9d4cbf02d641d44700943d1dd52cbd16e0f597c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u12-038`
 
@@ -5582,10 +5481,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a8e0fd9f8aad879f91840a4fd61853943bf957ebe9073eff23cc74472a53509
+- Content hash: 6f4b9e05cdf27117a0713a48f8538efabbdc38cc167b7d6a8811203b2b7181f5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Does this row fail the first-person singular future?
 
 ### AUTHORED_ENGLISH `en-u12-039`
 
@@ -5595,10 +5494,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 427d7b6e9e9f137f9d9a1c7d7fd2c788b89edc6a6a1cab524f9c9e68de95616f
+- Content hash: 8402c458657f1324a0d9e14b1f7a331404bc36eb46815553703c54233b70897e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Does this answer show the first-person singular future?
 
 ### AUTHORED_ENGLISH `en-u12-040`
 
@@ -5608,10 +5507,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd28d81a9721b7e81cc393a81e77ff20b44d538834b3a384e350261baafe2b6f
+- Content hash: bd8bb0565a2ec9a29ef2fa9fe39408ab0e85fb1a16789748b96473aa2c0d28e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Which admitted line is the first-person singular future?
 
 ### AUTHORED_ENGLISH `en-u12-041`
 
@@ -5621,10 +5520,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 23eba2899568720f068cd06e6e1b402a83c951015b704f9b3f83344d829d3679
+- Content hash: 5bfdb8f2855596b444b1fde2115a999ebce6c9832bf06abf4199bf1f26a91cca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Does this row fail the second-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-042`
 
@@ -5634,10 +5533,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb18c3e5ec5a3be47820475647036f9479d6561dd2163f902c4f9791effd2576
+- Content hash: 859277aae7e80db07ac2c23b085a3468e1ca5915a81a9f0dfcc08c800e729dfe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 12 in your copy
+text=Does this answer show the second-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-043`
 
@@ -5647,10 +5546,10 @@ text=Work Lesson 12 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acfa7fec8cef6cfba620bac9fbc06c82cb9b2930d6b8461aba199e4173aa1765
+- Content hash: c5b8952fe624943d0c6e57deb0b65e9da03bebd1c594f5fd3869c944a89713c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 12 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Which admitted line is the second-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-044`
 
@@ -5660,10 +5559,10 @@ text=Do Lesson 12 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba8ea69a28d1c261f5330d103943e48df492baa4aedf34edb013027f3e65f666
+- Content hash: 4447d551d5768fbd3d8cfe953d441105957f266a90183015bc162517bc9b7c02
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 12 in your copy and complete its lesson work.
+text=Which admitted row is the first-person plural future?
 
 ### AUTHORED_ENGLISH `en-u12-045`
 
@@ -5673,10 +5572,10 @@ text=Open Lesson 12 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42ed7bbc2a512af00302329ce3770a5c57c2588806d3fcc2467bd2ce6db02f66
+- Content hash: 8e45df38bc31c5de667cf8bb28dd155b1582fd37af7e56f75ab081d399ed05a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 12 book work
+text=Does this row fail the perfective partner?
 
 ### AUTHORED_ENGLISH `en-u12-046`
 
@@ -5686,10 +5585,10 @@ text=Record Lesson 12 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04ed4775ee3ab7af8b18e6f8317d2513ba2b4ace25b423ed16230a3e875a750d
+- Content hash: f59164decf78adb0881b9ada73e1a01e2d95fc1369befa2e70318f3eeb475462
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 12 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Does this answer show the perfective partner?
 
 ### AUTHORED_ENGLISH `en-u12-047`
 
@@ -5699,7 +5598,423 @@ text=When you have done Lesson 12 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 751ababe20793c6efb4e75ed40f84e9f3ab57c31089a15a28e97f1190ee2d683
+- Content hash: 1ad5976c9fb5a0983251949d9a87a93df5920012a376630282f367c32ba7265b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the perfective partner?
+
+### AUTHORED_ENGLISH `en-u12-048`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8f0e14827b32592a048e49e19abf3e174cd3ad0f7d3449be884f78ebf73f92de
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u12-049`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 93ee33da18f48686be5f266f0cba253556ec8589a8dbeb17a66f85e4b0cef79b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u12-050`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8a38b6376c0abf911f79a590337d29fe66dd2bd252c83d1a4a893d80497b3bf9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u12-051`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 95bcaba97377eae2ea743f85227c8f06f68e758677c85ccaf470b4b0481f5041
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the dative singular?
+
+### AUTHORED_ENGLISH `en-u12-052`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6a0fa6916df92c408c48341b867816ebd89457b63c529827a0e6b1501358877c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the dative singular?
+
+### AUTHORED_ENGLISH `en-u12-053`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8086b0ee4f0611e5f6b2a85e1d66d909bc02c1e3415cde57bdd5eeb2e66d1045
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted row is the dative singular?
+
+### AUTHORED_ENGLISH `en-u12-054`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 74aa73fbe263cb61a6bfffecd39bcadfe547604ef4b016e495bd11f9739204ad
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the accepted spelling?
+
+### AUTHORED_ENGLISH `en-u12-055`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bc5ac15aef93bd6fecf6d941c70ac29f22e207a91ecb67f3f71ca5c3b2598b6f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the accepted spelling?
+
+### AUTHORED_ENGLISH `en-u12-056`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e04d779ffc4ac7015c9d8271e3558b14d016f7ca93d8345c212e02c89c925472
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the accepted spelling rather than the rejected example?
+
+### AUTHORED_ENGLISH `en-u12-057`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 075be8152d1358c98a6216377fe0ffdefbdf5543958030dfe7df6a421c923245
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the neuter form?
+
+### AUTHORED_ENGLISH `en-u12-058`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9598fd1d3e500d067462deef117b6d3ec3aeb161b94d5b7f88a194e0904edaf7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the neuter form?
+
+### AUTHORED_ENGLISH `en-u12-059`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 23abeee1318e1d50202c7d2dd14700a8761da9839a08da17900c9c2429f5b0d2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted row is the neuter form?
+
+### AUTHORED_ENGLISH `en-u12-060`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 18a5ca2bf578438d755571f76c02e20d67e23e3b5daccc717eb54c9eaea958e9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the rejected spelling?
+
+### AUTHORED_ENGLISH `en-u12-061`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 085f8bdced59fbb19f8eecb136151becb2da9c5044d02102a1fea3f17c4afad8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the rejected spelling?
+
+### AUTHORED_ENGLISH `en-u12-062`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 018eb42cd08de9336785130cb65716fd4d893dbe0f032f8585331e5d1d61743b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the rejected spelling rather than the accepted example?
+
+### AUTHORED_ENGLISH `en-u12-063`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fe4fed0f04a3b8eb7f770a28c1ecc3e43e72574d5cd478dcb92a71e8c4790629
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the prepositional plural?
+
+### AUTHORED_ENGLISH `en-u12-064`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fbacd51a9325b133818204db3cbbef60cb29ec3889fcbf20d294dd785c535d5c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the prepositional plural?
+
+### AUTHORED_ENGLISH `en-u12-065`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: accf4fa98c0d90893e8330c40dd0ade8b064275c92867d40e6203e59e0bcb5e6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted row is the prepositional plural?
+
+### AUTHORED_ENGLISH `en-u12-066`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 07c9a79ddef6c1dfac174fb5673e6c21b9506df45b05b7caacc31deddb6c1710
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted future, aspect, and row contrasts
+
+### AUTHORED_ENGLISH `en-u12-067`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 372872d5234913e2f36f38ccb72928a16481d0355681f988b2cd21fdcf428bf4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 12 uses frozen records for future lines, aspect partners, indirect-object rows, spelling, and plural rows. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u12-068`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 537189365ad1b4de386370fb714f7f2a4dcd5205799e8c14835eac83f4fee398
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 12 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u12-069`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1a76d50404c3d07782bc6e1b6f09bc305a1bfbdbb0a008a30f7c692ef4de36fb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u12-070`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3db85d375c97c75fbd8d951f240fdcc3963e7126733bd0e64477478e9f49f90c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u12-071`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 95ca330efe2c0644d596af4636f0f3d1535805e8a18fa1964ec254aca9c54f7e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u12-072`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5cdb3e5ca1526a8476a6ea89e0b3548191c44ed6e51d80849979efa2d66ddf6a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u12-073`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bcada9bb798dbd044add00c00b055940e40c09776927fb389bf9945fbae1b161
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u12-074`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e778a781873c72493b87fa891f5ef790e624285a4d58701aa1c4e31b86919466
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 12 in your copy
+
+### AUTHORED_ENGLISH `en-u12-075`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 42ea95a50724be4a756172391eb0af85a5dfbf3af397c77718c5f09b449661ef
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 12 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u12-076`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2ab17dde2565141f36491ac86065b7ee181ea8c0cb0f34712c38c9e2800ad549
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 12 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u12-077`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3433a92eda42a75d5e5e5384109656ff4b3f80ca46a4d99c091cda2c98fdd394
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 12 book work
+
+### AUTHORED_ENGLISH `en-u12-078`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 025efef946cf5661648e9a3d0f2ce9817eb6305b15fda5b2f0f4be1f7576f769
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 12 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u12-079`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0dfdc8b90dd9ec23f09632546e2b068e826caf076f780516891087eede6984aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 12 work in your copy.
@@ -6081,6 +6396,7 @@ permitsAppUse=true
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-rem`
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-rem-r0`
 - `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-x-0`
+- `obj-u12-future-imp` PROVENANCE `prov-u12-future-imp-x-1`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-rem`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-x-0`
 - `obj-u12-future-perf` PROVENANCE `prov-u12-future-perf-x-1`

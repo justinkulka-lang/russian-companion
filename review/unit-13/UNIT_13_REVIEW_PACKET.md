@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5dbc70d193d34437763a476aea849b0cedc4f922
-- Unit content-review SHA-256: ee438b8e27d8cc4f38dc2e3ec5f1bb10f0ad79ff4fa2a732171700993cc292f8
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: fae727446e997181f3b0109cccb5825431536966646130997074913bb67eab56
 - Mapping-package SHA-256: 8a1ca19f20178d0c0882bb24e7cc74914684c8735ff4089dc95727f3a7427f7f
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: d8c03e466cb35fe0cb136f5dec3e53ee026337b47b3c72f37a6242aa9ed69957
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: a48586506c306de76f8e83f86526d24fc5a72b173d9a9b482870b371a6deef54
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1190,31 +1190,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1146f9d8d4e352bfa96f3e1a606c7ba89320c3e51b10af5275ff09be9ef22d11
+- Content hash: 1fab11c7d3b600ac4043cdddf9e7ff045af0860a22ed4268424091d6eedd3e99
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=я читал
-options=я прочитал | I was reading
+prompt=Which admitted line is the perfective past?
+promptLetter=I read
+options=я прочитал | я читал
 answer=я прочитал
-feedback=Does the admitted record show the governed contrast? я прочитал.
+feedback=Does this answer show the perfective past? я прочитал.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the perfective past?
+testedFeature=PERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-past-aspect-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u13-past-aspect-1-ru
-distractorSourceIds= | prov-ex-u13-past-aspect-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=я прочитал | I was reading
+distractorSourceIds= | prov-ex-u13-past-aspect-0-ru
+distractorDifference= | Does this row fail the perfective past?
+whyAnswerDemonstratesObjective=Does this answer show the perfective past?
+contrastMembers=я прочитал | я читал
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-en
+relationParticipantIds=prov-ex-u13-past-aspect-1-en | prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-ru
 
 ### GUIDED_PRACTICE `u13-g-tense-keep-0`
 
@@ -1224,28 +1224,28 @@ relationParticipantIds=prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21d131dd6ba2834e776fa42ad2f620d411d4b246ed6d287c839681fc3f37b42b
+- Content hash: 7a9cb767ca7dbabec488a5229a75c6b995229374a6b22cb09f5c29da3910b392
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted label classifies the shown line?
+prompt=Which admitted label keeps the same tense?
 promptLetter=Он сказа́л, что он англича́нин
 options=we keep the tense the same | we usually change the tense
 answer=we keep the tense the same
-feedback=Does the admitted record show the governed contrast? we keep the tense the same.
+feedback=Does this answer show the same tense? we keep the tense the same.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other report label in the same frozen line.
-testedFeature=REPORTED_TENSE
+distractorRationales= | Does this row fail the same tense?
+testedFeature=TENSE_KEPT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u13-tense-keep-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-tense-keep-0-en
 distractorSourceIds= | prov-u13-tense-keep-x-1
-distractorDifference= | This admitted wording is the other report label in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the same tense?
+whyAnswerDemonstratesObjective=Does this answer show the same tense?
 contrastMembers=we keep the tense the same | we usually change the tense
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en | prov-u13-tense-keep-x-1
@@ -1258,28 +1258,28 @@ relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 764eb9ccddc62aafac978ec33151d281d22d11f2c9a72c44bddd5d0fb8b843b9
+- Content hash: 6c587010309f28d805a590be3b34b00f52a875a6d8e07e301dc3de8fff84b541
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does the admitted record show the governed contrast? сказа́ть.
+feedback=Does this answer show the perfective partner? сказа́ть.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other pair in the same frozen line.
-testedFeature=INFINITIVE_ASPECT
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-infinitive-1-ru
 distractorSourceIds= | prov-ex-u13-infinitive-2-ru
-distractorDifference= | This form is the other pair in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-2-ru
@@ -1292,28 +1292,28 @@ relationParticipantIds=prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f92d3b2e4643d8bc748011347d24d333cc4970b3fd069b2b2ee9874b0b9b1a63
+- Content hash: 389e9368f8dfcbe2915a06106122faaebe7313a245948bf64aa6c007954c8075
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the reported evening?
 promptLetter=Я скажу ему ве́чером
 options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Does the admitted record show the governed contrast? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
+feedback=Does this answer show the reported evening? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another line in the same frozen record.
-testedFeature=REPORTED_LINE
+distractorRationales= | Does this row fail the reported evening?
+testedFeature=REPORTED_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-reported-0-ru
 distractorSourceIds= | prov-u13-reported-x-1
-distractorDifference= | This form is another line in the same frozen record.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the reported evening?
+whyAnswerDemonstratesObjective=Does this answer show the reported evening?
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | prov-u13-reported-x-1
@@ -1326,31 +1326,31 @@ relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b25eb33afe9e03d697ebfc60ae2bb5e78d49e5e8bdbf6e1ecfce02407c109761
+- Content hash: 10ef2aa5fe2a8ce3718ef976a424bdcb193ab3f60126582024c379512fd74411
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=я прочитал
-options=я читал | I read
+prompt=Which admitted line is the imperfective past?
+promptLetter=I was reading
+options=я читал | я прочитал
 answer=я читал
-feedback=Does the admitted record show the governed contrast? я читал.
+feedback=Does this answer show the imperfective past? я читал.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the imperfective past?
+testedFeature=IMPERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-past-aspect-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u13-past-aspect-0-ru
-distractorSourceIds= | prov-ex-u13-past-aspect-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=я читал | I read
+distractorSourceIds= | prov-ex-u13-past-aspect-1-ru
+distractorDifference= | Does this row fail the imperfective past?
+whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
+contrastMembers=я читал | я прочитал
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-en
+relationParticipantIds=prov-ex-u13-past-aspect-0-en | prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-ru
 
 ### INDEPENDENT_CHECK `u13-i-past-aspect-2`
 
@@ -1360,28 +1360,28 @@ relationParticipantIds=prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9c8395ab1d8164e54788985ea5c0c9902615773c8ce11776c2e718910d3c2c6
+- Content hash: 7bf0388cd75c80ddc977333d4b754db43dbf3a91ea440f1b1948f2b5820c0352
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the masculine past?
 promptLetter=чита́ть
 options=чита́л | чита́ла
 answer=чита́л
-feedback=Does the admitted record show the governed contrast? чита́л.
+feedback=Does this answer show the masculine past? чита́л.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the masculine past?
+testedFeature=MASCULINE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u13-past-aspect-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u13-past-aspect-3
 distractorSourceIds= | prov-ex-or-u13-past-aspect-4
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the masculine past?
+whyAnswerDemonstratesObjective=Does this answer show the masculine past?
 contrastMembers=чита́л | чита́ла
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u13-past-aspect-2 | prov-ex-or-u13-past-aspect-3 | prov-ex-or-u13-past-aspect-4
@@ -1394,28 +1394,28 @@ relationParticipantIds=prov-ex-or-u13-past-aspect-2 | prov-ex-or-u13-past-aspect
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13e0646ba79c47c044cc995c1d650161ce3f3e46e08cedb8f2a08db862b53478
+- Content hash: 3ef25149d1c9ab6988615a9f41255f1eccd04ed1ede31c8177ffaf95f4e7967e
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the reported evening?
 promptLetter=Я скажу ему ве́чером
 options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Does the admitted record show the governed contrast? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
+feedback=Does this answer show the reported evening? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another line in the same frozen record.
-testedFeature=REPORTED_TENSE
+distractorRationales= | Does this row fail the reported evening?
+testedFeature=REPORTED_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-tense-keep-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-tense-keep-2-ru
 distractorSourceIds= | prov-u13-tense-keep-x-3
-distractorDifference= | This form is another line in the same frozen record.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the reported evening?
+whyAnswerDemonstratesObjective=Does this answer show the reported evening?
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-tense-keep-1-ru | prov-ex-u13-tense-keep-2-ru | prov-u13-tense-keep-x-3
@@ -1428,31 +1428,31 @@ relationParticipantIds=prov-ex-u13-tense-keep-1-ru | prov-ex-u13-tense-keep-2-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f6dcdc64229988a002f715c90af0b4dd74edec746f8aaabd5105e32ff85de02
+- Content hash: 38409e2c951ee69bbf378eb6356541d8e7dd13cf1cf7d2ef808c32dabdc8023f
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted label classifies the shown line?
-promptLetter=Он сказа́л, что он англича́нин
-options=we keep the tense the same | the reported verb changes tense
-answer=we keep the tense the same
-feedback=Does the admitted record show the governed contrast? we keep the tense the same.
+prompt=Which admitted label is about changing the reported tense?
+promptLetter=the reported verb changes tense
+options=we usually change the tense | we keep the tense the same
+answer=we usually change the tense
+feedback=Does this answer show the changing the reported tense? we usually change the tense.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other report label in the same frozen line.
-testedFeature=REPORTED_TENSE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | Does this row fail the changing the reported tense?
+testedFeature=ENGLISH_TENSE_CHANGE
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-tense-keep-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u13-tense-keep-0-en
-distractorSourceIds= | prov-u13-tense-keep-x-2
-distractorDifference= | This admitted wording is the other report label in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=we keep the tense the same | the reported verb changes tense
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en | prov-u13-tense-keep-x-2
+answerSourceIds=prov-u13-tense-keep-x-1
+distractorSourceIds= | prov-ex-u13-tense-keep-0-en
+distractorDifference= | Does this row fail the changing the reported tense?
+whyAnswerDemonstratesObjective=Does this answer show the changing the reported tense?
+contrastMembers=we usually change the tense | we keep the tense the same
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-u13-tense-keep-x-2 | prov-u13-tense-keep-x-1 | prov-ex-u13-tense-keep-0-en
 
 ### INDEPENDENT_CHECK `u13-i-infinitive-1`
 
@@ -1462,28 +1462,28 @@ relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0634daece4147950f15541095982265a5a27b5f56afafe552bd1f97e72abe2e7
+- Content hash: 2116aad7703e1771d0de70e0bacede56af0f90e009920836b9f810eac42cf548
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does the admitted record show the governed contrast? сде́лать.
+feedback=Does this answer show the perfective partner? сде́лать.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other pair in the same frozen line.
-testedFeature=INFINITIVE_ASPECT
+distractorRationales= | Does this row fail the perfective partner?
+testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-infinitive-3-ru
 distractorSourceIds= | prov-ex-u13-infinitive-0-ru
-distractorDifference= | This form is the other pair in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the perfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-2-ru | prov-ex-u13-infinitive-3-ru | prov-ex-u13-infinitive-0-ru
@@ -1496,28 +1496,28 @@ relationParticipantIds=prov-ex-u13-infinitive-2-ru | prov-ex-u13-infinitive-3-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a7995e11df4faee36217eabadaff5339a89bba365c29609e843028a1c541c1e
+- Content hash: ccf8cd54b46ebc77e996d24737fab11334c67e1d01b75d9365c20dc2f0077d68
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does the admitted record show the governed contrast? говори́ть.
+feedback=Does this answer show the imperfective partner? говори́ть.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is the other pair in the same frozen line.
-testedFeature=INFINITIVE_ASPECT
+distractorRationales= | Does this row fail the imperfective partner?
+testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-infinitive-0-ru
 distractorSourceIds= | prov-ex-u13-infinitive-3-ru
-distractorDifference= | This form is the other pair in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the imperfective partner?
+whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-3-ru
@@ -1530,28 +1530,28 @@ relationParticipantIds=prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5693c5f283ca3e4c6082918df1844497e79d1b640cd4094ff7d827cdc4bfe2c8
+- Content hash: 17c488996d2cec2e9655c70ef6ece25df2f5de262fd615e83ee04badc1123f84
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the direct evening?
 promptLetter=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
 options=Я скажу ему ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Я скажу ему ве́чером
-feedback=Does the admitted record show the governed contrast? Я скажу ему ве́чером.
+feedback=Does this answer show the direct evening? Я скажу ему ве́чером.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another line in the same frozen record.
-testedFeature=REPORTED_LINE
+distractorRationales= | Does this row fail the direct evening?
+testedFeature=DIRECT_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-reported-1-ru
 distractorSourceIds= | prov-u13-reported-x-1
-distractorDifference= | This form is another line in the same frozen record.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the direct evening?
+whyAnswerDemonstratesObjective=Does this answer show the direct evening?
 contrastMembers=Я скажу ему ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru | prov-u13-reported-x-1
@@ -1564,31 +1564,31 @@ relationParticipantIds=prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6306a6b2bcffca0a903aa3819c13bb40a2cf96ea720a0b23e0e1de85d7c793bf
+- Content hash: a7a5e0c40893a2b09fa6f9644e1d931b9582cbae83874f81c2d9d1e393fcc138
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
-options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Я скажу ему ве́чером
-answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Does the admitted record show the governed contrast? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
+prompt=Which admitted line is the future plan about Moscow?
+promptLetter=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
+options=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски | Я скажу ему ве́чером
+answer=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
+feedback=Does this answer show the Moscow? Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another line in the same frozen record.
-testedFeature=REPORTED_LINE
+distractorRationales= | Does this row fail the Moscow?
+testedFeature=MOSCOW_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u13-reported-0-ru
+answerSourceIds=prov-u13-reported-x-1
 distractorSourceIds= | prov-ex-u13-reported-1-ru
-distractorDifference= | This form is another line in the same frozen record.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Я скажу ему ве́чером
+distractorDifference= | Does this row fail the Moscow?
+whyAnswerDemonstratesObjective=Does this answer show the Moscow?
+contrastMembers=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски | Я скажу ему ве́чером
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-u13-reported-x-1 | prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru
+relationParticipantIds=prov-ex-u13-reported-0-ru | prov-u13-reported-x-1 | prov-ex-u13-reported-1-ru
 
 ### REFERENCE `ref-u1115-attribution`
 
@@ -4011,7 +4011,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u13-048`
+### AUTHORED_ENGLISH `en-u13-080`
 
 - Objectives: none
 - Sessions: none
@@ -4019,12 +4019,12 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c88dafd724fda00c58d066fa5a91a5af1936fe9d218f9823aa5b89b22a7a932
+- Content hash: 049fd1f7919262f431cf050e6cd8895636f2088ae2228eabe1078cd7df4e1740
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
 
-### AUTHORED_ENGLISH `en-u13-049`
+### AUTHORED_ENGLISH `en-u13-081`
 
 - Objectives: none
 - Sessions: none
@@ -4032,12 +4032,12 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a560d488d762c820dd57490b06b87b0e02a928fb41177f3b9934546a1fdc4b9
+- Content hash: 813c287502237135cfd631ae84bbd6c86a1da80e0690223b199d17648716a39c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other gloss in the same frozen line.
+text=Does this row fail the perfective past?
 
-### AUTHORED_ENGLISH `en-u13-050`
+### AUTHORED_ENGLISH `en-u13-082`
 
 - Objectives: none
 - Sessions: none
@@ -4045,12 +4045,12 @@ text=This admitted wording is the other gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d692f5f6ee66214682d85bba7173ec126bc7d68cb1110182e613368c35fd1de
+- Content hash: 2301248f8ea9c05e04f548d3dab364271d090577f80ee186f0d2ef8ac69a66f4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the admitted record show the governed contrast?
+text=Does this answer show the perfective past?
 
-### AUTHORED_ENGLISH `en-u13-051`
+### AUTHORED_ENGLISH `en-u13-083`
 
 - Objectives: none
 - Sessions: none
@@ -4058,12 +4058,12 @@ text=Does the admitted record show the governed contrast?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb7600265786f8f2726d4c275fe927c1225cdfd321be7c4efd9be4cf35804ce7
+- Content hash: d512215c1ed43e240c11a0b36d80cc7def0c5eb9a8f38f95502fbf0c5d309aef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the other line in the same frozen record?
+text=Which admitted line is the perfective past?
 
-### AUTHORED_ENGLISH `en-u13-052`
+### AUTHORED_ENGLISH `en-u13-084`
 
 - Objectives: none
 - Sessions: none
@@ -4071,12 +4071,12 @@ text=Which admitted line is the other line in the same frozen record?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 50cc178836e03d93d9a9d3ee2e4a43bf12b39aa40ff425ebe66affcc511d55e1
+- Content hash: 97e867106f4bf7fed76bedb143fab12575140efc1dc67fe227165b0647a92bd3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
 
-### AUTHORED_ENGLISH `en-u13-053`
+### AUTHORED_ENGLISH `en-u13-085`
 
 - Objectives: none
 - Sessions: none
@@ -4084,12 +4084,12 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f24224a9375ce96f17455c60d4d4640ff00e66f46ca5cb1c97c56520c504371
+- Content hash: a0ba9684dedf70ae60f074399d3f044c30a242f2db7139ff377e92b38d63623d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another row of the same word.
+text=Does this row fail the imperfective past?
 
-### AUTHORED_ENGLISH `en-u13-054`
+### AUTHORED_ENGLISH `en-u13-086`
 
 - Objectives: none
 - Sessions: none
@@ -4097,12 +4097,12 @@ text=This form is another row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d19364dfd8ef51cd4bf814486d4c9f89a219f606762a5260fc9346e1b4f89c3
+- Content hash: 13e1de530d2e01bf7a0899627189b1f7075eaf75dd856b6a29cc3b38ced2a7c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted row is the other row of the shown form?
+text=Does this answer show the imperfective past?
 
-### AUTHORED_ENGLISH `en-u13-055`
+### AUTHORED_ENGLISH `en-u13-087`
 
 - Objectives: none
 - Sessions: none
@@ -4110,12 +4110,12 @@ text=Which admitted row is the other row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9488f425257418b409522ccd7343fc961fad9657156b87d5023411e698e3306
+- Content hash: 53cf5c3ef9ea4a929c9416dfe376acecaed202eddd23e80a4bf158e796b22d52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other report label in the same frozen line.
+text=Which admitted line is the imperfective past?
 
-### AUTHORED_ENGLISH `en-u13-056`
+### AUTHORED_ENGLISH `en-u13-088`
 
 - Objectives: none
 - Sessions: none
@@ -4123,12 +4123,12 @@ text=This admitted wording is the other report label in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a3ac276741eea50b9b7868d23af47bd76d425380024799818b386dcf998f310
+- Content hash: 846aecbe1b3fc0945aa4958aff572ba6d17a69245c9ea5c63f471a5a95d3a1f7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted label classifies the shown line?
+text=Does this row fail the masculine past?
 
-### AUTHORED_ENGLISH `en-u13-057`
+### AUTHORED_ENGLISH `en-u13-089`
 
 - Objectives: none
 - Sessions: none
@@ -4136,12 +4136,12 @@ text=Which admitted label classifies the shown line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d8b6c4222830447cc56ee2879a3df2ec5824bd61ca7faea85395763c6549844
+- Content hash: 4a5e7ca4ce3144892c9b4bfe81fac621f66afe5755455813037f390f5db23dd9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another line in the same frozen record.
+text=Does this answer show the masculine past?
 
-### AUTHORED_ENGLISH `en-u13-058`
+### AUTHORED_ENGLISH `en-u13-090`
 
 - Objectives: none
 - Sessions: none
@@ -4149,12 +4149,12 @@ text=This form is another line in the same frozen record.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2e97e7c2a81b56330663a3e4acfdf360045fbac3e3f59d7c0749c15cf01b294
+- Content hash: 0ce6cd874ab820ad6b7bc76e39e0c0505386dfd1d086640c6238a5edd40a32c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the other pair in the same frozen line.
+text=Which admitted row is the masculine past?
 
-### AUTHORED_ENGLISH `en-u13-059`
+### AUTHORED_ENGLISH `en-u13-091`
 
 - Objectives: none
 - Sessions: none
@@ -4162,12 +4162,285 @@ text=This form is the other pair in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8d159afe7523beb4b9bfbfce751f52d9f191d9ecc301a242578ee3528c62bed
+- Content hash: ecff2e7d54e6760b958f480be935a1ca48c12599849095e4808a96be62d6555f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the same tense?
+
+### AUTHORED_ENGLISH `en-u13-092`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 612e24841eae8e4414fee775f4ddbe9aa2ddc5e6fbc44cc503d19856e04f1a7a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the same tense?
+
+### AUTHORED_ENGLISH `en-u13-093`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e297d0bfa44f9e8cca74a31e58afeaa6b1fc1be366f579cc4819e895fafc194c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted label keeps the same tense?
+
+### AUTHORED_ENGLISH `en-u13-094`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3191eacbc759e14d16f9c8eb3bb7e55d7a7870848d5e2969ec7b392b9effbb17
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the reported evening?
+
+### AUTHORED_ENGLISH `en-u13-095`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eba74e2f53205ca24f7cd9e17329971365117283eaeb67c3d57c45782caadd77
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the reported evening?
+
+### AUTHORED_ENGLISH `en-u13-096`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1dade795ce165020ccbf76631ccfd88ce4459dc0853f7cddba1b9420df5360f8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the reported evening?
+
+### AUTHORED_ENGLISH `en-u13-097`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f33f6c08b3d71983965a34121561e2b8a6cad63bee9ca99b14c4edf19a121158
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the changing the reported tense?
+
+### AUTHORED_ENGLISH `en-u13-098`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7fe8977c90971f888f744647c088719e5db31745be4b3ee748186b170c455037
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the changing the reported tense?
+
+### AUTHORED_ENGLISH `en-u13-099`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e64a232c79c3df90f9c9109ba9df1bef388f68593416ae344a0bed05bc0c4642
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted label is about changing the reported tense?
+
+### AUTHORED_ENGLISH `en-u13-100`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 074f3fc68296f60189c088e170abe45b7a73f20e75d0180f3d6e22c918170ed9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the perfective partner?
+
+### AUTHORED_ENGLISH `en-u13-101`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bab06267f9f8d744a691ee6290ea56ada532e59412db2e6a4e9e1194f657761
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the perfective partner?
+
+### AUTHORED_ENGLISH `en-u13-102`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f99280b0551b463ec50072ea0a8603feddf1539b2bda9c8f32820775dda79378
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the perfective partner?
+
+### AUTHORED_ENGLISH `en-u13-103`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cb78522b1c7fc6c3e01d817ba8fe66f1c62d2829042944614eb41d4fc9172a3b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u13-104`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 854b90be8d1a4f1cbfb6f86eab09ea58719e15833d9ce9cd7dc84d58b3ba506a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u13-105`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5821af724bf6d3850c6744bcef7877b45bec7e2e40eea8f49f6a766ce8a69b9e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the imperfective partner?
+
+### AUTHORED_ENGLISH `en-u13-106`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d82b5a861b8058640731b91a6ac65c3a785348972d4065ba087e55c6bfeff3c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the direct evening?
+
+### AUTHORED_ENGLISH `en-u13-107`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 29b328aa78749f8cc2647d3a043c530e942c1d2ff1d9e21ac9aa4328bd91e928
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the direct evening?
+
+### AUTHORED_ENGLISH `en-u13-108`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e54d726d02c9107fdf5045afe1938d566cf636a5295eb97cec3ea9eb03fa4d3d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the direct evening?
+
+### AUTHORED_ENGLISH `en-u13-109`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c3e7e062c0e06001f44fefeff6d0e496b1310ff044a53a15148a588eb6572eca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the Moscow?
+
+### AUTHORED_ENGLISH `en-u13-110`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1f9e63f30dee64cd264a8408e20065289e02fab4b3a20111e0533a2dee3591d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the Moscow?
+
+### AUTHORED_ENGLISH `en-u13-111`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d93f605912de00e130d360c1d1786963b3ca759879b831f3e620923d3e6cad97
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the future plan about Moscow?
+
+### AUTHORED_ENGLISH `en-u13-112`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 45af619d41dd7fef275b0a1cedaadf2ecca15b79bd21ec306e833e1496099f20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted past aspect and report lines
 
-### AUTHORED_ENGLISH `en-u13-060`
+### AUTHORED_ENGLISH `en-u13-113`
 
 - Objectives: none
 - Sessions: none
@@ -4175,12 +4448,12 @@ text=Admitted past aspect and report lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4317264a6c135e842732ac95d873c8ddf03155d71fa96e48e7b6d96dd329c950
+- Content hash: bd37abb9f8f4175b3d8fa658e306513d3b9a3bee971cf12c2514e2d795d31a00
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 13 uses frozen records for past aspect lines, report labels, and infinitive partners. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u13-061`
+### AUTHORED_ENGLISH `en-u13-114`
 
 - Objectives: none
 - Sessions: none
@@ -4188,12 +4461,12 @@ text=Proposed Unit 13 uses frozen records for past aspect lines, report labels, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d83db971850b4879f203637ae411ef2c0efd339c5c6f319d2c63bf67eba17a27
+- Content hash: 7bac41a1d9fac344522fccec21f42b6468220dca3b71dd5d36ab0b112db5a6b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 13 in the copy you own. The app records do not replace that lesson.
 
-### AUTHORED_ENGLISH `en-u13-062`
+### AUTHORED_ENGLISH `en-u13-115`
 
 - Objectives: none
 - Sessions: none
@@ -4201,12 +4474,12 @@ text=Open Lesson 13 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 592b2a0ee9b4739163451173970fa8f7b68b966db28f5c9c66786852297c40d2
+- Content hash: e2594c73d59de5ab44eaf1c6f00808475386f4ad4489e6ed8fe6e656728a37c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
 
-### AUTHORED_ENGLISH `en-u13-063`
+### AUTHORED_ENGLISH `en-u13-116`
 
 - Objectives: none
 - Sessions: none
@@ -4214,12 +4487,12 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a021976658245d04ac6959b18e58a86528205d0500c975494d6e15d41ee2c26
+- Content hash: de03e18eaa2287700fefae155534790df6ac2456474bc2185f34e22b9cd67c32
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
 
-### AUTHORED_ENGLISH `en-u13-064`
+### AUTHORED_ENGLISH `en-u13-117`
 
 - Objectives: none
 - Sessions: none
@@ -4227,12 +4500,12 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aeac8aa5dcba417933a719991b65b6690b4568d664a04db0c92260e47a1cc339
+- Content hash: 8aa3f39bb8b6cdc488d3d884bdf9d94edcd2b92696b3e19a37872aa0e9de5111
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
 
-### AUTHORED_ENGLISH `en-u13-065`
+### AUTHORED_ENGLISH `en-u13-118`
 
 - Objectives: none
 - Sessions: none
@@ -4240,12 +4513,12 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e9ed0e667e0b25bb0a0f4c09cc0c93f4ba49f7fff0087bedc47e2623af406f4
+- Content hash: f6788d1d8a8f4af9e87980173a37c90516b64ab8386a42300701ffddf0859767
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
 
-### AUTHORED_ENGLISH `en-u13-066`
+### AUTHORED_ENGLISH `en-u13-119`
 
 - Objectives: none
 - Sessions: none
@@ -4253,12 +4526,12 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3eca0b68c30637262b24107441845f3272b1c23ffb0a13f627942be174196b91
+- Content hash: 71ebfe4b0269841da9ea38eb6a7a5b42e732ff01dc0f78acf813fb1af9895081
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
 
-### AUTHORED_ENGLISH `en-u13-067`
+### AUTHORED_ENGLISH `en-u13-120`
 
 - Objectives: none
 - Sessions: none
@@ -4266,12 +4539,12 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 289305f055d7e15c372eb4a3a0d0b64b3a59511352be95e773f2cf80e48f69e3
+- Content hash: a40083e586f5d284c54523544dc3bc6030ba583ac6dbd2fb8cd2436d0a225452
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 13 in your copy
 
-### AUTHORED_ENGLISH `en-u13-068`
+### AUTHORED_ENGLISH `en-u13-121`
 
 - Objectives: none
 - Sessions: none
@@ -4279,12 +4552,12 @@ text=Work Lesson 13 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17c19af8107b0f4aeed57cc990630486667f6a749cf07196b367b281e9d462da
+- Content hash: fe48121c2daf3aa8a5df3ffd527e7fa5766a15b290f6af61f215029c621af804
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 13 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
-### AUTHORED_ENGLISH `en-u13-069`
+### AUTHORED_ENGLISH `en-u13-122`
 
 - Objectives: none
 - Sessions: none
@@ -4292,12 +4565,12 @@ text=Do Lesson 13 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e33a31ac1b07ff7507761aaa9520f993766866fec5b02d73d10a5fe2276d3ab6
+- Content hash: afa5c7640b201aa1116500f1f32629f93570d582edfa0147886039b69ac71650
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 13 in your copy and complete its lesson work.
 
-### AUTHORED_ENGLISH `en-u13-070`
+### AUTHORED_ENGLISH `en-u13-123`
 
 - Objectives: none
 - Sessions: none
@@ -4305,12 +4578,12 @@ text=Open Lesson 13 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28c8edf09cefec1dfb908379e587eecd13dfb7ad50953420fde65a2df909fc67
+- Content hash: c05027d4d6db7c034bb421c4abc5e40f7c6de1b48f3e5caa26f71f3fc2f7fd2c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 13 book work
 
-### AUTHORED_ENGLISH `en-u13-071`
+### AUTHORED_ENGLISH `en-u13-124`
 
 - Objectives: none
 - Sessions: none
@@ -4318,12 +4591,12 @@ text=Record Lesson 13 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed9af1d4d0ac3a94e1e6ba7451816f57ddf775ab4c9f5ef21f0cfcc05a60746c
+- Content hash: 0ef2ff7506b35335eb12c78741a5193488ba3766c45384e00774b8f56ec4ed8e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 13 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u13-072`
+### AUTHORED_ENGLISH `en-u13-125`
 
 - Objectives: none
 - Sessions: none
@@ -4331,7 +4604,7 @@ text=When you have done Lesson 13 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66b730a8772500826f4d223d99ece224edcb1fed72415308f595cbda416c982e
+- Content hash: 9bd4dd5a7868bfd5e08131d08a0c967920baed0075bd008f28f3614b9ee7712b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 13 work in your copy.

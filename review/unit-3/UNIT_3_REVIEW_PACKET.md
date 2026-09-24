@@ -11,12 +11,12 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4a6c21da07b515df226a090cc0ff6b1ff4a78aa1
-- Unit content-review SHA-256: cc1bff764440af7c1c036de19fc6e09d897e52397f80d5afaf04bff0be181bf7
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: 056ce012769d7f3fd16691efd559dd26dc3d9aaea3b71bb4c87c1e197ccf9a3d
 - Mapping-package SHA-256: 090a3fec638b8a19d34e11d8be88a7796ce18a56a87b7b5b06d626ed777d6448
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: fa04c8d93397950c9c5bbccac321058e503f98f6d89cfcd1c81ad637db1c763b
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: 60b4d5d5e87f3986f8eecd109a0ea07c7339c407db125f7d18949a3c7a5893d9
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1694,14 +1694,14 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-app-english-v2
 - Classification: OPERATIONAL_GUIDANCE
 - Current review status: NOT_REQUIRED
-- Content hash: 17ba96c9f8e0574526b4445857ee5b61d1a0c2b7869edf2665832d45a0d16f03
+- Content hash: 70d6b6feabaded3b4b3d1d39a3f28e576c1caefc50954d08503e03fe7cc9851b
 
-title=Later lesson topics stay in the book
-summary=Units 6 and later do not contain lesson bodies.
-detail=Units 3–5 contain proposed licensed records that still need qualified review. Open the matching lesson in the copy you own. This reference does not approve those records.
+title=Where lesson bodies are packaged
+summary=Units 1 through 15 contain proposed lesson bodies that still need qualified review.
+detail=Units 16 and later do not contain lesson bodies. Open the matching lesson in the copy you own. This reference does not approve the packaged records.
 classification=OPERATIONAL_GUIDANCE
 introducedInUnit=3
-searchTerms=later lesson topics stay in the book
+searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
 
 ### PROVENANCE `prov-u3-dyadya-note`

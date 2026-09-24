@@ -11,12 +11,12 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5dbc70d193d34437763a476aea849b0cedc4f922
-- Unit content-review SHA-256: f07f3c82abfcaec713b96e2a9b2ed5a8a55f1112791941a6c6927c0164c689d9
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: cdbe656e0396eba8bf5bca5193c3b62b2a65abd9b80ca816d2217a35b51ef80b
 - Mapping-package SHA-256: 9c6ac67d6b78fbe614157046d787b8e75bb45305454e8725e726c7e01c081e6d
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: 7505a52bd4f702c65ae4b70321190d3bbb85bf60ded19fb9a2bf844ba327f6b2
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: 26e6df31cbbfce897fb2a8a30e7d96804cb02cc5c2be9fc810c86734a6144f22
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,13 +151,13 @@ remediation=u14-st-rem-future-person
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3f30988c8eaf3940e5df4f351241b2b64941925c9dad849e13809cbe7d8a0fc8
+- Content hash: c21dc1ead1a658f2809cdaf1cd2121fb15beada49c5c9ece3a73c2f5d1b6344a
 
 title=Choose the admitted impersonal line
 kind=RECOGNITION
 unitNumber=14
-instruction=u14-st-orient,u14-st-teach-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-teach-impersonal-4
-examples=ex-u14-impersonal-0,ex-u14-impersonal-1,ex-u14-impersonal-2,ex-or-u14-impersonal-3,ex-or-u14-impersonal-4,ex-or-u14-impersonal-5
+instruction=u14-st-orient,u14-st-teach-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3
+examples=ex-u14-impersonal-0,ex-u14-impersonal-1,ex-u14-impersonal-2,ex-or-u14-impersonal-3
 practice=u14-st-guided-impersonal-1
 checks=u14-i-impersonal-1,u14-i-impersonal-2
 remediation=u14-st-rem-impersonal
@@ -542,12 +542,12 @@ remediationStepId=u14-st-rem-future-person
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4a26bef9181b2735a78c3af6f38c9806798585472732d59d4645789b1b0e4eff
+- Content hash: aa50e2022cd7e1710d934c7a96f946aef0c57c91b5289b2429f16ccdac95ad13
 
 title=Choose the admitted impersonal line
 estimatedMinutes=12
 objectives=obj-u14-impersonal
-steps=u14-st-teach-impersonal-1,u14-st-guided-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-teach-impersonal-4,u14-st-rem-impersonal,u14-st-check-impersonal
+steps=u14-st-teach-impersonal-1,u14-st-guided-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-rem-impersonal,u14-st-check-impersonal
 
 ### STEP `u14-st-teach-impersonal-1`
 
@@ -632,28 +632,6 @@ dominantAction=Continue
 references=ref-u1115-attribution
 items=
 examples=ex-u14-impersonal-2,ex-or-u14-impersonal-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u14-st-teach-impersonal-4`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-impersonal
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c82b41b79c1b81bb78d86e1ba96bdb8013cb5877e1bceb51ce536d45461ea27a
-
-kind=TEACH
-title=Admitted lines
-body=была́ — be. бы́ли — be. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u14-impersonal-4,ex-or-u14-impersonal-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -983,40 +961,6 @@ note=be
 objectiveId=obj-u14-impersonal
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
-### EXAMPLE `ex-or-u14-impersonal-4`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47a8adae321ff0ca6f1da3ad3cc7a35c449d6906156719a8bc34538559b82cf3
-
-kind=LEXICAL
-letterId=
-display=была́
-note=be
-objectiveId=obj-u14-impersonal
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
-### EXAMPLE `ex-or-u14-impersonal-5`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 30d12b6a2a2184aba5fd72c8a46103c4a2b08ae1e59d506259cda13141f14458
-
-kind=LEXICAL
-letterId=
-display=бы́ли
-note=be
-objectiveId=obj-u14-impersonal
-reviewStatus=PENDING_QUALIFIED_REVIEW
-
 ### GUIDED_PRACTICE `u14-g-future-aspect-0`
 
 - Objectives: obj-u14-future-aspect
@@ -1025,31 +969,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45f10735f764faab73a140544793da19f192cb3a90a1fa4f1a6a7f6af6321d99
+- Content hash: 04a02c73da5b8192891a7ca29217910b758e6b28d644fc0058b570bc17c95647
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я бу́ду говори́ть
-options=Я поговорю три́дцать мину́т | I will speak
+prompt=Which admitted line is the bounded future?
+promptLetter=I will speak for 30 minutes
+options=Я поговорю три́дцать мину́т | Я бу́ду говори́ть
 answer=Я поговорю три́дцать мину́т
-feedback=Does the admitted record show the governed contrast? Я поговорю три́дцать мину́т.
+feedback=Does this answer show the bounded future? Я поговорю три́дцать мину́т.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_ASPECT
+distractorRationales= | Does this row fail the bounded future?
+testedFeature=BOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u14-future-aspect-1-ru
-distractorSourceIds= | prov-ex-u14-future-aspect-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я поговорю три́дцать мину́т | I will speak
+distractorSourceIds= | prov-ex-u14-future-aspect-0-ru
+distractorDifference= | Does this row fail the bounded future?
+whyAnswerDemonstratesObjective=Does this answer show the bounded future?
+contrastMembers=Я поговорю три́дцать мину́т | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspect-0-en
+relationParticipantIds=prov-ex-u14-future-aspect-1-en | prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspect-0-ru
 
 ### GUIDED_PRACTICE `u14-g-future-person-0`
 
@@ -1059,31 +1003,31 @@ relationParticipantIds=prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspec
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77c2afc396da40ccf3a414298c72d53d21fb88349478a48eb1047f77839a2fbd
+- Content hash: 3b7e40537286a3bb85d9118b2ee0aee6c44986f87af32dd1ddf7c18f4a85baf4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я бу́ду говори́ть
-options=Мы бу́дем говори́ть | I will be speaking
+prompt=Which admitted line is the first-person plural future?
+promptLetter=We will be speaking
+options=Мы бу́дем говори́ть | Я бу́ду говори́ть
 answer=Мы бу́дем говори́ть
-feedback=Does the admitted record show the governed contrast? Мы бу́дем говори́ть.
+feedback=Does this answer show the first-person plural future? Мы бу́дем говори́ть.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_PERSON
+distractorRationales= | Does this row fail the first-person plural future?
+testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-person-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u14-future-person-1-ru
-distractorSourceIds= | prov-ex-u14-future-person-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Мы бу́дем говори́ть | I will be speaking
+distractorSourceIds= | prov-ex-u14-future-person-0-ru
+distractorDifference= | Does this row fail the first-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-future-person-0-ru | prov-ex-u14-future-person-1-ru | prov-ex-u14-future-person-0-en
+relationParticipantIds=prov-ex-u14-future-person-1-en | prov-ex-u14-future-person-1-ru | prov-ex-u14-future-person-0-ru
 
 ### GUIDED_PRACTICE `u14-g-impersonal-0`
 
@@ -1093,31 +1037,31 @@ relationParticipantIds=prov-ex-u14-future-person-0-ru | prov-ex-u14-future-perso
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7bffbef575873637bacb31770bbdbedbdaf710215b23af5da61d7f831d4549f
+- Content hash: 97dccae3f09ddc7f8d148682721e3001e440c6bba30784ee4e061824e722462d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Ему было холодно
-options=Им было скучно | He was cold
-answer=Им было скучно
-feedback=Does the admitted record show the governed contrast? Им было скучно.
+prompt=Which admitted line is the impersonal past for one person who was cold?
+promptLetter=He was cold
+options=Ему было холодно | Им было скучно
+answer=Ему было холодно
+feedback=Does this answer show the impersonal past? Ему было холодно.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=IMPERSONAL_STATE
+distractorRationales= | Does this row fail the impersonal past?
+testedFeature=IMPERSONAL_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
-answerSourceIds=prov-ex-u14-impersonal-1-ru
-distractorSourceIds= | prov-ex-u14-impersonal-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Им было скучно | He was cold
+answerSourceIds=prov-ex-u14-impersonal-0-ru
+distractorSourceIds= | prov-ex-u14-impersonal-1-ru
+distractorDifference= | Does this row fail the impersonal past?
+whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+contrastMembers=Ему было холодно | Им было скучно
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-ru | prov-ex-u14-impersonal-0-en
+relationParticipantIds=prov-ex-u14-impersonal-0-en | prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-ru
 
 ### INDEPENDENT_CHECK `u14-i-future-aspect-1`
 
@@ -1127,31 +1071,31 @@ relationParticipantIds=prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 848281c28ba83edf4a3434776427876a6d66346905d50dd897997d5d1f58d0fc
+- Content hash: a2ac3a9658d4d269c1a8a0c72106793f713cc2ae6b09d2d950efeee44b8864ff
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я бу́ду рабо́тать
-options=Я порабо́таю три ча́са | I will work
+prompt=Which admitted line is the bounded future?
+promptLetter=I will work for three hours
+options=Я порабо́таю три ча́са | Я бу́ду рабо́тать
 answer=Я порабо́таю три ча́са
-feedback=Does the admitted record show the governed contrast? Я порабо́таю три ча́са.
+feedback=Does this answer show the bounded future? Я порабо́таю три ча́са.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_ASPECT
+distractorRationales= | Does this row fail the bounded future?
+testedFeature=BOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-aspect-3-ru
-distractorSourceIds= | prov-ex-u14-future-aspect-2-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я порабо́таю три ча́са | I will work
+distractorSourceIds= | prov-ex-u14-future-aspect-2-ru
+distractorDifference= | Does this row fail the bounded future?
+whyAnswerDemonstratesObjective=Does this answer show the bounded future?
+contrastMembers=Я порабо́таю три ча́са | Я бу́ду рабо́тать
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-future-aspect-2-ru | prov-ex-u14-future-aspect-3-ru | prov-ex-u14-future-aspect-2-en
+relationParticipantIds=prov-ex-u14-future-aspect-3-en | prov-ex-u14-future-aspect-3-ru | prov-ex-u14-future-aspect-2-ru
 
 ### INDEPENDENT_CHECK `u14-i-future-aspect-2`
 
@@ -1161,31 +1105,31 @@ relationParticipantIds=prov-ex-u14-future-aspect-2-ru | prov-ex-u14-future-aspec
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3eeb0e1f8efaa317b455ebc77ba2e6120c8ea36fbe35ed46636ce60c56f7c580
+- Content hash: ffd9a72c24e24672a0ae9c9af0e4194c12f8ddbe51f14e21373748e651e5cde6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Я поговорю три́дцать мину́т
-options=Я бу́ду говори́ть | I will speak for 30 minutes
+prompt=Which admitted line is the unbounded future?
+promptLetter=I will speak
+options=Я бу́ду говори́ть | Я поговорю три́дцать мину́т
 answer=Я бу́ду говори́ть
-feedback=Does the admitted record show the governed contrast? Я бу́ду говори́ть.
+feedback=Does this answer show the unbounded future? Я бу́ду говори́ть.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_ASPECT
+distractorRationales= | Does this row fail the unbounded future?
+testedFeature=UNBOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-aspect-0-ru
-distractorSourceIds= | prov-ex-u14-future-aspect-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я бу́ду говори́ть | I will speak for 30 minutes
+distractorSourceIds= | prov-ex-u14-future-aspect-1-ru
+distractorDifference= | Does this row fail the unbounded future?
+whyAnswerDemonstratesObjective=Does this answer show the unbounded future?
+contrastMembers=Я бу́ду говори́ть | Я поговорю три́дцать мину́т
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspect-1-en
+relationParticipantIds=prov-ex-u14-future-aspect-0-en | prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspect-1-ru
 
 ### INDEPENDENT_CHECK `u14-i-future-person-1`
 
@@ -1195,28 +1139,28 @@ relationParticipantIds=prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspec
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4023e8a57b6221e1ef58684f7f74d7b2b70494ed2c0c46927c98106fb4825486
+- Content hash: f2219c006f1ad7545e542c7f3a603d206bc04c2ee2a7b1a108f20e9beeb2a896
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the third-person plural future?
 promptLetter=ска́жет
 options=ска́жут | скажу́
 answer=ска́жут
-feedback=Does the admitted record show the governed contrast? ска́жут.
+feedback=Does this answer show the third-person plural future? ска́жут.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=FUTURE_PERSON
+distractorRationales= | Does this row fail the third-person plural future?
+testedFeature=THIRD_PERSON_PLURAL_FUTURE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u14-future-person-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u14-future-person-4
 distractorSourceIds= | prov-ex-or-u14-future-person-2
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the third-person plural future?
+whyAnswerDemonstratesObjective=Does this answer show the third-person plural future?
 contrastMembers=ска́жут | скажу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u14-future-person-3 | prov-ex-or-u14-future-person-4 | prov-ex-or-u14-future-person-2
@@ -1229,31 +1173,31 @@ relationParticipantIds=prov-ex-or-u14-future-person-3 | prov-ex-or-u14-future-pe
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87fa6fb6d7c95bc23be0b764fd55023b9bc8a2b4987c125d99ee573e3c2aef57
+- Content hash: 5b9d04ac81f46309fc46c9359fc6048a01979265cfd2cb0aeb1b1475a32493aa
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Мы бу́дем говори́ть
-options=Я бу́ду говори́ть | We will be speaking
+prompt=Which admitted line is the first-person singular future?
+promptLetter=I will be speaking
+options=Я бу́ду говори́ть | Мы бу́дем говори́ть
 answer=Я бу́ду говори́ть
-feedback=Does the admitted record show the governed contrast? Я бу́ду говори́ть.
+feedback=Does this answer show the first-person singular future? Я бу́ду говори́ть.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=FUTURE_PERSON
+distractorRationales= | Does this row fail the first-person singular future?
+testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-person-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-person-0-ru
-distractorSourceIds= | prov-ex-u14-future-person-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Я бу́ду говори́ть | We will be speaking
+distractorSourceIds= | prov-ex-u14-future-person-1-ru
+distractorDifference= | Does this row fail the first-person singular future?
+whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-future-person-1-ru | prov-ex-u14-future-person-0-ru | prov-ex-u14-future-person-1-en
+relationParticipantIds=prov-ex-u14-future-person-0-en | prov-ex-u14-future-person-0-ru | prov-ex-u14-future-person-1-ru
 
 ### INDEPENDENT_CHECK `u14-i-impersonal-1`
 
@@ -1263,65 +1207,65 @@ relationParticipantIds=prov-ex-u14-future-person-1-ru | prov-ex-u14-future-perso
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5824e9a4e9511ce82e434f6d5b1925bf4cc8e1dab87d3a4e7fb147ebaebea5a0
+- Content hash: ad998ca92aa4c7b6972d6db30de90d05e8d06da97ec18862b120aa4014932a17
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=Им было скучно
-options=Ему было холодно | They were bored
-answer=Ему было холодно
-feedback=Does the admitted record show the governed contrast? Ему было холодно.
+prompt=Which admitted line is the impersonal past for more than one bored person?
+promptLetter=They were bored
+options=Им было скучно | Ему было холодно
+answer=Им было скучно
+feedback=Does this answer show the impersonal past? Им было скучно.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=IMPERSONAL_STATE
+distractorRationales= | Does this row fail the impersonal past?
+testedFeature=IMPERSONAL_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u14-impersonal-0-ru
-distractorSourceIds= | prov-ex-u14-impersonal-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Ему было холодно | They were bored
+answerSourceIds=prov-ex-u14-impersonal-1-ru
+distractorSourceIds= | prov-ex-u14-impersonal-0-ru
+distractorDifference= | Does this row fail the impersonal past?
+whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+contrastMembers=Им было скучно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u14-impersonal-1-ru | prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-en
+relationParticipantIds=prov-ex-u14-impersonal-1-en | prov-ex-u14-impersonal-1-ru | prov-ex-u14-impersonal-0-ru
 
 ### INDEPENDENT_CHECK `u14-i-impersonal-2`
 
 - Objectives: obj-u14-impersonal
 - Sessions: u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f8d00d1462f307d32abcb924a77789fca09e0ceb5cd830beed8fdefb8366778
+- Content hash: 83841b283d46ed6609f6497e5fc521004ef1b87c5948d8f230e337f93271b64e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
-promptLetter=бы́ло
-options=была́ | бы́ли
-answer=была́
-feedback=Does the admitted record show the governed contrast? была́.
+prompt=Which admitted line is the impersonal past for one woman who was cold?
+promptLetter=she was cold
+options=ей было холодно | было
+answer=ей было холодно
+feedback=Does this answer show the impersonal past? ей было холодно.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=IMPERSONAL_STATE
-evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
+distractorRationales= | Does this row fail the impersonal past?
+testedFeature=IMPERSONAL_PAST
+evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-or-u14-impersonal-4
-distractorSourceIds= | prov-ex-or-u14-impersonal-5
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=была́ | бы́ли
-relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u14-impersonal-3 | prov-ex-or-u14-impersonal-4 | prov-ex-or-u14-impersonal-5
+answerSourceIds=prov-ex-u14-impersonal-2-ru
+distractorSourceIds= | prov-u14-impersonal-x-0
+distractorDifference= | Does this row fail the impersonal past?
+whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+contrastMembers=ей было холодно | было
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u14-impersonal-2-en | prov-ex-u14-impersonal-2-ru | prov-u14-impersonal-x-0
 
 ### REFERENCE `ref-u1115-attribution`
 
@@ -1553,122 +1497,6 @@ reviewedDigest=
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
 - Content hash: 6ddfaba894efb4bb65cd70d677c815212fa71324ece5ec96f6e38049fd84c2fc
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:быть#translations_en
-originalSourceText=be
-shippedText=be
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=46599c5bb5c33101f80cea8438e2228085513dbbb19b2f5ce97bd68494d3344d
-contentHash=46599c5bb5c33101f80cea8438e2228085513dbbb19b2f5ce97bd68494d3344d
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u14-impersonal-4`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-orient, u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fd7df24ccc7938d26a963ca2fe8798627da30ea55b6ceeb57a9b3da11e7ca803
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:быть#past_f
-originalSourceText=была'
-shippedText=была́
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=415b3042ea6865097f0e9688e07086d125f5aa9278e1262ead6662469c1f93a7
-contentHash=66c8d613deaff676846544bdcf893fd9a4d4943b53c70cfefb40d88c7863932a
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u14-impersonal-4-gloss`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-orient, u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0aa11765c26fee50d10673657f9a528effe914ad39525df888dd83d1c1ad6d5c
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:быть#translations_en
-originalSourceText=be
-shippedText=be
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=46599c5bb5c33101f80cea8438e2228085513dbbb19b2f5ce97bd68494d3344d
-contentHash=46599c5bb5c33101f80cea8438e2228085513dbbb19b2f5ce97bd68494d3344d
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u14-impersonal-5`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-orient, u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43f8f5e22cda95a660776cce0c78469990eb338dd8d13c87db747a82deffa8bb
-
-recordType=lexical record
-sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
-sourceRevision=50e210c4803237779cb562bc1abcea529066031c
-sourceRecordId=verbs.csv:быть#past_pl
-originalSourceText=бы'ли
-shippedText=бы́ли
-transformation=formatting
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=c1d5b45071b293a0a51cccaeb61173449562613fc4dc14821c6ef53c8a34f03e
-contentHash=0f8c3e4f1cfbcf3f6244115fb1e10d4ef039e8937f7994d750f205efc1cf540c
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-ex-or-u14-impersonal-5-gloss`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-orient, u14-s-impersonal
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 222a000232cf5c3e8f1ae44fb823aaba0b5cb858085994cb6d4852824a4eb1d9
 
 recordType=lexical record
 sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv
@@ -2380,7 +2208,36 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u14-073`
+### PROVENANCE `prov-u14-impersonal-x-0`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4b87a1bb90afcdf23bf6c46095a28283f99647f03514e2eea52d6e90763abc5c
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Past_tense?oldid=4567337
+sourceRevision=4567337
+sourceRecordId=past:To refer to these states in the past tense, always use '''было'''; 'she was cold
+originalSourceText=To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.
+shippedText=было
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=d145f917c83704067a133b939559924a1f8813b281de3e8be98a603c7661c617
+contentHash=3b79270b18c82245ad3db99ff39709d313d980461458bfb3c5fdace93e91dff8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### AUTHORED_ENGLISH `en-u14-126`
 
 - Objectives: none
 - Sessions: none
@@ -2388,12 +2245,12 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7a278a98506f178b7c918754696e4ff95d601acc94089365928c4e1bc43df9a
+- Content hash: 2157343ee4386a592c463ca88edcf393d9b34677e05d7a1433db0765e7794980
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
 
-### AUTHORED_ENGLISH `en-u14-074`
+### AUTHORED_ENGLISH `en-u14-127`
 
 - Objectives: none
 - Sessions: none
@@ -2401,12 +2258,12 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d99363a64e1e18e9ce513c80a7897e68a87c9f4666ac0dcdde465e85685ec516
+- Content hash: 25276d4546462907c30a022745ba656cddcfc4898779e1e5ff30631ba294a7e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other gloss in the same frozen line.
+text=Does this row fail the bounded future?
 
-### AUTHORED_ENGLISH `en-u14-075`
+### AUTHORED_ENGLISH `en-u14-128`
 
 - Objectives: none
 - Sessions: none
@@ -2414,12 +2271,12 @@ text=This admitted wording is the other gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e313daee7c6a688567cce36337d25db4d6a1cd0805867ebdb47aa7c05956d47
+- Content hash: 01ba7c8a7dee4d618b55d8dadbd6a9101089418c62d7a64fb5e7a38daf796fa8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the admitted record show the governed contrast?
+text=Does this answer show the bounded future?
 
-### AUTHORED_ENGLISH `en-u14-076`
+### AUTHORED_ENGLISH `en-u14-129`
 
 - Objectives: none
 - Sessions: none
@@ -2427,12 +2284,12 @@ text=Does the admitted record show the governed contrast?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13328d60a00013d93653066250d719cf88c530a20fce5850c4617032a100d312
+- Content hash: 1097deae968c1b55023a850e3bff40034a150f30eeb51ebb763dc3c12719cbb5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the other line in the same frozen record?
+text=Which admitted line is the bounded future?
 
-### AUTHORED_ENGLISH `en-u14-077`
+### AUTHORED_ENGLISH `en-u14-130`
 
 - Objectives: none
 - Sessions: none
@@ -2440,12 +2297,12 @@ text=Which admitted line is the other line in the same frozen record?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85abd6c632dee235dbf79d3104de4cef93c471d5476c954d83d89835ee933bd6
+- Content hash: 888b653f8fb5926663b4b86313dc4b7dbf9c5a5160ae247a44daea5edf4d618b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
 
-### AUTHORED_ENGLISH `en-u14-078`
+### AUTHORED_ENGLISH `en-u14-131`
 
 - Objectives: none
 - Sessions: none
@@ -2453,12 +2310,12 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 749075191e7a0c0cdc978d3957861ae748d06797bc81e6fa955ad84444b62334
+- Content hash: 3c518e9664b9ee1bceb5bbc0a9dc302bb316e64eac3b38e3c32d5639e86b8023
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another row of the same word.
+text=Does this row fail the unbounded future?
 
-### AUTHORED_ENGLISH `en-u14-079`
+### AUTHORED_ENGLISH `en-u14-132`
 
 - Objectives: none
 - Sessions: none
@@ -2466,12 +2323,12 @@ text=This form is another row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c8ad37e0a32a9865b7dd5c7899206de142e4f243010cc9e5a411b3a5db302c6
+- Content hash: 4f34aa285c11b2ba24515de8e6b4ace7e385c9f394a55c5539fedc9718421706
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted row is the other row of the shown form?
+text=Does this answer show the unbounded future?
 
-### AUTHORED_ENGLISH `en-u14-080`
+### AUTHORED_ENGLISH `en-u14-133`
 
 - Objectives: none
 - Sessions: none
@@ -2479,12 +2336,207 @@ text=Which admitted row is the other row of the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9f803ab77ee1e42268f1c616a2a8816a5b27c9321472fe6cd427ecef06218d2
+- Content hash: 8e8fc055b0d60b70fa8cec873fdf96976c10e03ee42ea5da653fa80889c8a20d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the unbounded future?
+
+### AUTHORED_ENGLISH `en-u14-134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6fd79a939768aa2c4bae67b272709ee45fbce9aee9048edc4571b9e15af06fab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the first-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1c2b805ce7404c5c32b51b9b2ded646a357c0bed5142ea5a14bcdb8311b8fcd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the first-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 456b0deb9e1a787e730a1fb7c594b8b645571d23feb910b6c27d461a0f383011
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the first-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d75434ddb4bc785df9c428ac1d2b7c0337d65017b3f3de1026e97f8083053405
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the third-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e8fe143e7c91c12d239de56985b07ebc7e7d8479f39c7898da24aafabdf88f83
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the third-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3d17f193751efea0a8006f4c839b7ea9eb6db9a272cab0e2ec865c59c77f1d5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted row is the third-person plural future?
+
+### AUTHORED_ENGLISH `en-u14-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f4b4d5f58de9960c3e4fe27180ac29d28c38f214ce9ced07a05465ebd405fd3d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the first-person singular future?
+
+### AUTHORED_ENGLISH `en-u14-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 86981ba52dfb148897215a04a3ca2c108e4597924aa9792a39ed38faf54f9fac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the first-person singular future?
+
+### AUTHORED_ENGLISH `en-u14-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2d36924af84625f79abc7e424e8f49a5fd14248c1318875353200ab955e0f02e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the first-person singular future?
+
+### AUTHORED_ENGLISH `en-u14-143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 841a2fef43e9f2b774d8037e039b7ae2e77cff56eb14117e8c02d30516273eb3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the impersonal past?
+
+### AUTHORED_ENGLISH `en-u14-144`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b4f9ea62b4cc6a876aa844e0aa5b168ea37ff09f51da467b95bc32b165b6f1a4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the impersonal past?
+
+### AUTHORED_ENGLISH `en-u14-145`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0394a4027a3dee35ceb291fb1fb3e62ed30e9579bc13dc499693608dc0dc349a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the impersonal past for one person who was cold?
+
+### AUTHORED_ENGLISH `en-u14-146`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 138110b9a5e85a5d42d9040c63795c4448e5c7da8aab081f5337f49cf14ef29f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the impersonal past for more than one bored person?
+
+### AUTHORED_ENGLISH `en-u14-147`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6d9cb6453f5578db2b72550a103490e1d9fa335feafd7ff50ec7996066ebd93f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the impersonal past for one woman who was cold?
+
+### AUTHORED_ENGLISH `en-u14-148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8d1e9198c0e6127346a665010ba78b0c6f810777efc63bdd54ff22b653eb5e11
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted future aspect and state lines
 
-### AUTHORED_ENGLISH `en-u14-081`
+### AUTHORED_ENGLISH `en-u14-149`
 
 - Objectives: none
 - Sessions: none
@@ -2492,12 +2544,12 @@ text=Admitted future aspect and state lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: faab4a5b8e99bd72aa898a3ed5425dd1f2b4272a02604bed4bce6375374df510
+- Content hash: 77de772d1c0fad289f6d33f5f82e2010f3281033592d9faac07b81c5cdd121f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 14 uses frozen records for future aspect lines and state lines. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u14-082`
+### AUTHORED_ENGLISH `en-u14-150`
 
 - Objectives: none
 - Sessions: none
@@ -2505,12 +2557,12 @@ text=Proposed Unit 14 uses frozen records for future aspect lines and state line
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 823470cf4def872dc35fcddb9fef6d9e1ec9f3643f166d274f4fe10dfa1d9f49
+- Content hash: 6281784a7a86b2e117aed8efc297cb2f4a8013933ffdbc3d5f95b12d96cbcb87
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 14 in the copy you own. The app records do not replace that lesson.
 
-### AUTHORED_ENGLISH `en-u14-083`
+### AUTHORED_ENGLISH `en-u14-151`
 
 - Objectives: none
 - Sessions: none
@@ -2518,12 +2570,12 @@ text=Open Lesson 14 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43114883f8f02034cbf8f282756887771b4a3eec70460b4a68d5838ace9ae1a6
+- Content hash: 9f98b7c0848a403301d0dbb06bc84b783876a5b1f5db790a887de920d82208e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
 
-### AUTHORED_ENGLISH `en-u14-084`
+### AUTHORED_ENGLISH `en-u14-152`
 
 - Objectives: none
 - Sessions: none
@@ -2531,12 +2583,12 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e96c523b0ba9ed5433d81ed833879d0adfa8c740fd7b4e078511723f3ae4737b
+- Content hash: bed77a7fbf8a922d6962e5ab8119da7ab6ee36aef2db8dc1d2b29fbbfc2e5a35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
 
-### AUTHORED_ENGLISH `en-u14-085`
+### AUTHORED_ENGLISH `en-u14-153`
 
 - Objectives: none
 - Sessions: none
@@ -2544,12 +2596,12 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5eab06de70747b3a1fc715147463131b60c06d2bf97dbbbad0e289333a409d97
+- Content hash: 20fbea90291eecae0e1c86874da5bac0660f6274386ebd4ad14958068615146a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
 
-### AUTHORED_ENGLISH `en-u14-086`
+### AUTHORED_ENGLISH `en-u14-154`
 
 - Objectives: none
 - Sessions: none
@@ -2557,12 +2609,12 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc841c6e6e60f707b34511a7352ef19b8caadd0138ef2f8dcd7fb3212af72873
+- Content hash: edb5155faf4124c133a1b5092a8b14d747f88e9858d16cb4d5cc6db6bb9ea4a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
 
-### AUTHORED_ENGLISH `en-u14-087`
+### AUTHORED_ENGLISH `en-u14-155`
 
 - Objectives: none
 - Sessions: none
@@ -2570,12 +2622,12 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 754fc76da7a46ac964827014f2aae48539aef932cd4491c8195a3adc73f32caa
+- Content hash: 35df23a31bd9e1c2b5b42c32bec60e6178c2634d8799fc9bb1642bd3d3461a24
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
 
-### AUTHORED_ENGLISH `en-u14-088`
+### AUTHORED_ENGLISH `en-u14-156`
 
 - Objectives: none
 - Sessions: none
@@ -2583,12 +2635,12 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 380fdfc50dfdb0feb271a07c897e012f1502386c687e9959a4471498b80be4d2
+- Content hash: 5d0d8b71e35354036214362c62275ba9d675864d1f27df2e4ca2ac636238931b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 14 in your copy
 
-### AUTHORED_ENGLISH `en-u14-089`
+### AUTHORED_ENGLISH `en-u14-157`
 
 - Objectives: none
 - Sessions: none
@@ -2596,12 +2648,12 @@ text=Work Lesson 14 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 070cbce056bdfb053d07a8f2d079eb0b01867a01aac6d98d05162d04f8859fc1
+- Content hash: b424d754382c82ba04a518784146161ca0209d78b0d7569c82ca73c149b8d8c5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 14 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
-### AUTHORED_ENGLISH `en-u14-090`
+### AUTHORED_ENGLISH `en-u14-158`
 
 - Objectives: none
 - Sessions: none
@@ -2609,12 +2661,12 @@ text=Do Lesson 14 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d85fffad9aa068b0f5d8f89df1a3cccf0da01c4b180718740daff81ba06cc711
+- Content hash: 752b985d157e277b2fe6c084efd78edbb04b432e3704e015442a8ea6ab662578
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 14 in your copy and complete its lesson work.
 
-### AUTHORED_ENGLISH `en-u14-091`
+### AUTHORED_ENGLISH `en-u14-159`
 
 - Objectives: none
 - Sessions: none
@@ -2622,12 +2674,12 @@ text=Open Lesson 14 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f5e9c7591aebe1226905cf52f4fffff48454ce111157b2f20601850dbbc09df
+- Content hash: 67f99e3117a743ca10ca8d2e2c918d8403553c5ab6f7c994dd7b45904b3e35ab
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 14 book work
 
-### AUTHORED_ENGLISH `en-u14-092`
+### AUTHORED_ENGLISH `en-u14-160`
 
 - Objectives: none
 - Sessions: none
@@ -2635,12 +2687,12 @@ text=Record Lesson 14 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 806d700d6b58d9c738d93d1b7b20aacba5c13eab53e3aca6ad9bf160ab94af54
+- Content hash: 8697cfd554dcd32aacec134a8e81b3b6ae7cac400f9f2309a57b6cd64d797d7f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 14 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u14-093`
+### AUTHORED_ENGLISH `en-u14-161`
 
 - Objectives: none
 - Sessions: none
@@ -2648,7 +2700,7 @@ text=When you have done Lesson 14 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b9044d896af22cf127d5d3f2046c2c4f8509bd15feacbcab7ffc9d86e4b78c5
+- Content hash: 2e702bbc6bc6c427ed1e9f824bef235ab1081622032311577ab9e4ef9ee48769
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 14 work in your copy.
@@ -2772,13 +2824,10 @@ permitsAppUse=true
 - `obj-u14-impersonal` INSTRUCTION `u14-st-teach-impersonal-1`
 - `obj-u14-impersonal` INSTRUCTION `u14-st-teach-impersonal-2`
 - `obj-u14-impersonal` INSTRUCTION `u14-st-teach-impersonal-3`
-- `obj-u14-impersonal` INSTRUCTION `u14-st-teach-impersonal-4`
 - `obj-u14-impersonal` EXAMPLE `ex-u14-impersonal-0`
 - `obj-u14-impersonal` EXAMPLE `ex-u14-impersonal-1`
 - `obj-u14-impersonal` EXAMPLE `ex-u14-impersonal-2`
 - `obj-u14-impersonal` EXAMPLE `ex-or-u14-impersonal-3`
-- `obj-u14-impersonal` EXAMPLE `ex-or-u14-impersonal-4`
-- `obj-u14-impersonal` EXAMPLE `ex-or-u14-impersonal-5`
 - `obj-u14-impersonal` PRACTICE `u14-st-guided-impersonal-1`
 - `obj-u14-impersonal` CHECK `u14-i-impersonal-1`
 - `obj-u14-impersonal` CHECK `u14-i-impersonal-2`
@@ -2832,9 +2881,6 @@ permitsAppUse=true
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-u14-impersonal-2`
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-or-u14-impersonal-3`
 - `u14-st-teach-impersonal-3` REFERENCE `ref-u1115-attribution`
-- `u14-st-teach-impersonal-4` EXAMPLE `ex-or-u14-impersonal-4`
-- `u14-st-teach-impersonal-4` EXAMPLE `ex-or-u14-impersonal-5`
-- `u14-st-teach-impersonal-4` REFERENCE `ref-u1115-attribution`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-0`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-1`
 - `u14-st-check-impersonal` REMEDIATION `u14-st-rem-impersonal`
@@ -2850,10 +2896,6 @@ permitsAppUse=true
 - `obj-u14-future-person` PROVENANCE `prov-ex-or-u14-future-person-4-gloss`
 - `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-3`
 - `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-3-gloss`
-- `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-4`
-- `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-4-gloss`
-- `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-5`
-- `obj-u14-impersonal` PROVENANCE `prov-ex-or-u14-impersonal-5-gloss`
 - `obj-u14-future-aspect` PROVENANCE `prov-ex-u14-future-aspect-0-en`
 - `obj-u14-future-aspect` PROVENANCE `prov-ex-u14-future-aspect-0-ru`
 - `obj-u14-future-aspect` PROVENANCE `prov-ex-u14-future-aspect-1-en`
@@ -2877,6 +2919,7 @@ permitsAppUse=true
 - `obj-u14-future-person` PROVENANCE `prov-u14-future-person-rem-r0`
 - `obj-u14-impersonal` PROVENANCE `prov-u14-impersonal-rem`
 - `obj-u14-impersonal` PROVENANCE `prov-u14-impersonal-rem-r0`
+- `obj-u14-impersonal` PROVENANCE `prov-u14-impersonal-x-0`
 
 ## Book-directed experiences
 

@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 5dbc70d193d34437763a476aea849b0cedc4f922
-- Unit content-review SHA-256: 2074c6ed209d3153c7ee1a3a828b3bfc9bfaffc046b139ac33b3757c65b5c4f0
+- Curriculum source commit: 7e6b3f2de508062126ead6dcaa7cceae9fa9b49f
+- Unit content-review SHA-256: 218810ed3506c76ea4db50f323e2a85d99fea3bb32cb8534638f0e26bfb61974
 - Mapping-package SHA-256: 75f552ecbcc6b6bfe7547a80bcb492ab71499679d3784880e2aa3bdba1ac9d0a
-- Pack content-review SHA-256: 2ea3680a58363115277f941e341fa41a4291712d08d9c04a2404374f0278e54e
-- Review-package SHA-256: 64a19bc52c298208c686d9dc8dd683cc85763522dc687c1245f6ec2bb1038d56
-- Repository source SHA-256: 012bdc14a4c6359397b9c1ff18c8ed44ac2752abf28210ab789926ff5abc309a
+- Pack content-review SHA-256: 74e0cbc8db1287db0b8786cd5d8b57468ac9df9f3c79d45ace4729550afd271a
+- Review-package SHA-256: f265dc123c03426e78203104d468e57649b50d69d0e1c8d362d3418d38ed1a02
+- Repository source SHA-256: 86fc66ec7d4634bf6043b9a0e7aa3857203768abb74b7e7c75edabd6845e8101
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1466,28 +1466,28 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dd929ae8fd9f5ef321da1f54b2ba51eb68da7218ecee0b6649aea9abadb53e1
+- Content hash: fbf5ac306f07845330aeffe2300ec056db29bce225d1acd7fa9d587c447dafc8
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the feminine past?
 promptLetter=чита́л
 options=чита́ла | чита́ло | чита́ли
 answer=чита́ла
-feedback=Does the admitted record show the governed contrast? чита́ла.
+feedback=Does this answer show the feminine past? чита́ла.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word. | This form is another row of the same word.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-read-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-past-read-1
 distractorSourceIds= | prov-ex-or-u11-past-read-2 | prov-ex-or-u11-past-read-3
-distractorDifference= | This form is another row of the same word. | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=чита́ла | чита́ло | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-2 | prov-ex-or-u11-past-read-3
@@ -1500,28 +1500,28 @@ relationParticipantIds=prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-1 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2b1c65ff6b6d81198fee73c5984078e40d3ba9714e3a624cf3169f52db01a50
+- Content hash: c6437e53d22c955e774c2d9da738ff68d1eb0c2383bd223feb15a0523af5d768
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the feminine past?
 promptLetter=бы́л
 options=была́ | бы́ло | бы́ли
 answer=была́
-feedback=Does the admitted record show the governed contrast? была́.
+feedback=Does this answer show the feminine past? была́.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word. | This form is another row of the same word.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-past-be-1
 distractorSourceIds= | prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3
-distractorDifference= | This form is another row of the same word. | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=была́ | бы́ло | бы́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-0 | prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3
@@ -1534,31 +1534,31 @@ relationParticipantIds=prov-ex-or-u11-past-be-0 | prov-ex-or-u11-past-be-1 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a3382df4a12207b83723c061a4a33aab92a30b756e5b35fe82385eb6dd26d63
+- Content hash: ac7e880f650b226674ffd9bd4d80e2a9b89cc8c49ee4ca0b04261cfc08d95af8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=я читал
-options=я прочитал | I was reading
+prompt=Which admitted line is the perfective past?
+promptLetter=I read
+options=я прочитал | я читал
 answer=я прочитал
-feedback=Does the admitted record show the governed contrast? я прочитал.
+feedback=Does this answer show the perfective past? я прочитал.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the perfective past?
+testedFeature=PERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-past-aspect-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u11-past-aspect-1-ru
-distractorSourceIds= | prov-ex-u11-past-aspect-0-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=я прочитал | I was reading
+distractorSourceIds= | prov-ex-u11-past-aspect-0-ru
+distractorDifference= | Does this row fail the perfective past?
+whyAnswerDemonstratesObjective=Does this answer show the perfective past?
+contrastMembers=я прочитал | я читал
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-en
+relationParticipantIds=prov-ex-u11-past-aspect-1-en | prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-ru
 
 ### GUIDED_PRACTICE `u11-g-reflexive-0`
 
@@ -1568,28 +1568,28 @@ relationParticipantIds=prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8de2803e05f457327317fea1765530f64fedd412b139e5069ebfbd45f548aae5
+- Content hash: ba93f07256b1151ce037b96611e36d82dcc1034b9ae919e314a5361ffb2c62a2
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the feminine past?
 promptLetter=улыба́лся
 options=улыба́лась | улыба́лись | улыба́ться
 answer=улыба́лась
-feedback=Does the admitted record show the governed contrast? улыба́лась.
+feedback=Does this answer show the feminine past? улыба́лась.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word. | This form is another row of the same word.
-testedFeature=REFLEXIVE_PAST
+distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-reflexive-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-reflexive-2
 distractorSourceIds= | prov-ex-or-u11-reflexive-3 | prov-ex-or-u11-reflexive-0
-distractorDifference= | This form is another row of the same word. | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=улыба́лась | улыба́лись | улыба́ться
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-1 | prov-ex-or-u11-reflexive-2 | prov-ex-or-u11-reflexive-3 | prov-ex-or-u11-reflexive-0
@@ -1602,28 +1602,28 @@ relationParticipantIds=prov-ex-or-u11-reflexive-1 | prov-ex-or-u11-reflexive-2 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34fcb3d73e17d05cbd7d13d48e4eeab8e3f70c7ce2b17f172b8ee1df0fbb9053
+- Content hash: cdb1dc58942dabd2f3660907392047867a12b778bf15e7accaa3bce6d5474b4a
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the masculine past?
 promptLetter=чита́ла
 options=чита́л | чита́ли
 answer=чита́л
-feedback=Does the admitted record show the governed contrast? чита́л.
+feedback=Does this answer show the masculine past? чита́л.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the masculine past?
+testedFeature=MASCULINE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-read-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-read-0
 distractorSourceIds= | prov-ex-or-u11-past-read-3
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the masculine past?
+whyAnswerDemonstratesObjective=Does this answer show the masculine past?
 contrastMembers=чита́л | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-3
@@ -1636,28 +1636,28 @@ relationParticipantIds=prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-0 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f438c9a052308a383313d4dbf70e0ec7d79c5d6cd3f69dfc32f4ac5ae57ca6f3
+- Content hash: 549ea3306c3ffb9d572b4770b3fb945a4dbd4563176dd015d1cd28b02c0ffb20
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted line is the feminine past?
 promptLetter=Он чита́л
 options=Она чита́ла | Они чита́ли
 answer=Она чита́ла
-feedback=Does the admitted record show the governed contrast? Она чита́ла.
+feedback=Does this answer show the feminine past? Она чита́ла.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another cell of the same frozen line.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-past-read-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u11-past-read-5-ru
 distractorSourceIds= | prov-u11-past-read-x-0
-distractorDifference= | This form is another cell of the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=Она чита́ла | Они чита́ли
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-past-read-4-ru | prov-ex-u11-past-read-5-ru | prov-u11-past-read-x-0
@@ -1670,28 +1670,28 @@ relationParticipantIds=prov-ex-u11-past-read-4-ru | prov-ex-u11-past-read-5-ru |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45f3c0e160636c6aa94a3f7a8e46ca2cd2d879a02e04dfb028f9ccaf9ea7dcbe
+- Content hash: 7057e9eaad32548e61991c58e91618de6422b680feb548d50231c32e126ee1d3
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the plural past?
 promptLetter=была́
 options=бы́ли | бы́л
 answer=бы́ли
-feedback=Does the admitted record show the governed contrast? бы́ли.
+feedback=Does this answer show the plural past? бы́ли.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the plural past?
+testedFeature=PLURAL_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-be-3
 distractorSourceIds= | prov-ex-or-u11-past-be-0
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the plural past?
+whyAnswerDemonstratesObjective=Does this answer show the plural past?
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
@@ -1704,28 +1704,28 @@ relationParticipantIds=prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3b409f3651730d1d487041541f05a7590cc9ec14cb7a0c9828535ca8da16f85
+- Content hash: cc433157f383117351b8a47fa9f2314f2d2344fa5e9fd8353d6f21e08c11c4d2
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the plural past?
 promptLetter=бы́ло
 options=бы́ли | бы́л
 answer=бы́ли
-feedback=Does the admitted record show the governed contrast? бы́ли.
+feedback=Does this answer show the plural past? бы́ли.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=PAST_ROW
+distractorRationales= | Does this row fail the plural past?
+testedFeature=PLURAL_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-be-3
 distractorSourceIds= | prov-ex-or-u11-past-be-0
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the plural past?
+whyAnswerDemonstratesObjective=Does this answer show the plural past?
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
@@ -1738,31 +1738,31 @@ relationParticipantIds=prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72d881d78e666c68dbf6bbf1165eeefbd4db0e26c3e65edf4279997eba884ce1
+- Content hash: 522784e18a1a1960b6639d77709e400e808741fc28bb76851f4da6ea77b53f35
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
-promptLetter=я прочитал
-options=я читал | I read
+prompt=Which admitted line is the imperfective past?
+promptLetter=I was reading
+options=я читал | я прочитал
 answer=я читал
-feedback=Does the admitted record show the governed contrast? я читал.
+feedback=Does this answer show the imperfective past? я читал.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This admitted wording is the other gloss in the same frozen line.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the imperfective past?
+testedFeature=IMPERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-past-aspect-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u11-past-aspect-0-ru
-distractorSourceIds= | prov-ex-u11-past-aspect-1-en
-distractorDifference= | This admitted wording is the other gloss in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=я читал | I read
+distractorSourceIds= | prov-ex-u11-past-aspect-1-ru
+distractorDifference= | Does this row fail the imperfective past?
+whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
+contrastMembers=я читал | я прочитал
 relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-en
+relationParticipantIds=prov-ex-u11-past-aspect-0-en | prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-ru
 
 ### INDEPENDENT_CHECK `u11-i-past-aspect-2`
 
@@ -1772,28 +1772,28 @@ relationParticipantIds=prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4a9e43c1cd17223368cf3ad6e7df0acb69f66577ccf97fbfb34e938e35590d5
+- Content hash: 9cdecb47b8fd6e48b86492fc9813320245919c114b39238f18429e59168d0f3a
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the feminine past?
 promptLetter=прочита́л
 options=прочита́ла | прочита́ло
 answer=прочита́ла
-feedback=Does the admitted record show the governed contrast? прочита́ла.
+feedback=Does this answer show the feminine past? прочита́ла.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=PAST_ASPECT_LINE
+distractorRationales= | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-aspect-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-aspect-3
 distractorSourceIds= | prov-ex-or-u11-past-aspect-4
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=прочита́ла | прочита́ло
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect-3 | prov-ex-or-u11-past-aspect-4
@@ -1806,28 +1806,28 @@ relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8046b0c17ea02a1b78233acfdf76f54302bd85e67833ad4adf34014f7e9af4ff
+- Content hash: 48d9a336579ef85b2ccec24fbbcd99eed1beb95bd639755e3244e18abc08f157
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the other line in the same frozen record?
+prompt=Which admitted line is the feminine past?
 promptLetter=Он улыба́лся
 options=Она улыба́лась | Они улыба́лись
 answer=Она улыба́лась
-feedback=Does the admitted record show the governed contrast? Она улыба́лась.
+feedback=Does this answer show the feminine past? Она улыба́лась.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another cell of the same frozen line.
-testedFeature=REFLEXIVE_PAST
+distractorRationales= | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-reflexive-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u11-reflexive-5-ru
 distractorSourceIds= | prov-u11-reflexive-x-0
-distractorDifference= | This form is another cell of the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=Она улыба́лась | Они улыба́лись
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-reflexive-4-ru | prov-ex-u11-reflexive-5-ru | prov-u11-reflexive-x-0
@@ -1840,28 +1840,28 @@ relationParticipantIds=prov-ex-u11-reflexive-4-ru | prov-ex-u11-reflexive-5-ru |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67d5d745085e1e311f0d66fe1f815d0733787c7ea18d078409b0482a16a14747
+- Content hash: 68974d5e0a422640b84b19e6478cdcff557f3aa4ddbac824e063a352839b22fa
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the other row of the shown form?
+prompt=Which admitted row is the feminine past?
 promptLetter=учи́лся
 options=учи́лась | учи́лись
 answer=учи́лась
-feedback=Does the admitted record show the governed contrast? учи́лась.
+feedback=Does this answer show the feminine past? учи́лась.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | This form is another row of the same word.
-testedFeature=REFLEXIVE_PAST
+distractorRationales= | Does this row fail the feminine past?
+testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-reflexive-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-reflexive-7
 distractorSourceIds= | prov-ex-or-u11-reflexive-8
-distractorDifference= | This form is another row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Does this row fail the feminine past?
+whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=учи́лась | учи́лись
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-6 | prov-ex-or-u11-reflexive-7 | prov-ex-or-u11-reflexive-8
@@ -3989,10 +3989,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4aa03ce94dfc31bd5ade8a8c8c2d7f8e6726b8ff07e8d50129f256aac770ea43
+- Content hash: 09b50b6f5e769b99446fbf3cdb05ae02a9945628fe5fcdf272b5be8d45666efc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another row of the same word.
+text=Does this row fail the feminine past?
 
 ### AUTHORED_ENGLISH `en-u11-003`
 
@@ -4002,10 +4002,10 @@ text=This form is another row of the same word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d50c494d7aa1f488f33382411444dea0c6092cfbd98aead8abdc2776348da85
+- Content hash: 1e95b1eaef31186c6400fd12102d57df78c84058f776a0b3a428f931f796125a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does the admitted record show the governed contrast?
+text=Does this answer show the feminine past?
 
 ### AUTHORED_ENGLISH `en-u11-004`
 
@@ -4015,10 +4015,10 @@ text=Does the admitted record show the governed contrast?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 627f04b0996eae858059a73330399535049d5bb233b60922422066af668a96e5
+- Content hash: b8c69c5a0681b50acef982f86da6579c6debba8e5d4374a54ed1463846596e3c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted row is the other row of the shown form?
+text=Which admitted row is the feminine past?
 
 ### AUTHORED_ENGLISH `en-u11-005`
 
@@ -4041,10 +4041,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6a8a25e7723acff36425a2083be99479f462864e2b6abef8698eb8c1ecf3794
+- Content hash: c8ab887fec1d946116144e8d47eeb94318dadfcd3ca697feb09a1c3f7e1fd534
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is another cell of the same frozen line.
+text=Does this row fail the masculine past?
 
 ### AUTHORED_ENGLISH `en-u11-007`
 
@@ -4054,10 +4054,10 @@ text=This form is another cell of the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b12889909a724428df50e942c4f91e0a95d09ce0f767baaa80075559daa1e7c1
+- Content hash: b8f7daf1d23da644c58bb3f73f3577f2c6da9e88cb52d15b45d4ddd455271c84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This admitted wording is the other gloss in the same frozen line.
+text=Does this answer show the masculine past?
 
 ### AUTHORED_ENGLISH `en-u11-008`
 
@@ -4067,10 +4067,10 @@ text=This admitted wording is the other gloss in the same frozen line.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c70d4708260347efeb14c36473656e1b8a1af75a3d9eb9f0abfe7d6da9cf060c
+- Content hash: 259b1643160d73c91153ce46be9382965588e26cab6ab95ea157c92723a15935
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the other line in the same frozen record?
+text=Which admitted row is the masculine past?
 
 ### AUTHORED_ENGLISH `en-u11-009`
 
@@ -4080,10 +4080,10 @@ text=Which admitted line is the other line in the same frozen record?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e9f5c1cbb190429a41eb22b26985c8d2f3812908df16e4ddb85f4d42f478cd6
+- Content hash: bd980b2424415786f1e8cd78216f52a3a1b2c547d832ed4719f3480ac67c9d68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted past and reflexive rows
+text=Which admitted line is the feminine past?
 
 ### AUTHORED_ENGLISH `en-u11-010`
 
@@ -4093,10 +4093,10 @@ text=Admitted past and reflexive rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d73c892299990b2844fdda95ed7c138b728d7a57eb304300ad917076b7e3cf4f
+- Content hash: 291122fe5dbf3de75ccf2594a5c54214bee2511b44dad10b51697f85e4816f35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 11 uses frozen records for past rows and reflexive past rows. Qualified review is pending.
+text=Does this row fail the plural past?
 
 ### AUTHORED_ENGLISH `en-u11-011`
 
@@ -4106,10 +4106,10 @@ text=Proposed Unit 11 uses frozen records for past rows and reflexive past rows.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 544bceecf2205b0f5b6e5c4de33dc64abfe50fe5f96fc286dc7067d2a086b61b
+- Content hash: 03fa0478ca269992ec1cba8304757e54fb7147e7ea9210b38eb570f069e6678c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 11 in the copy you own. The app records do not replace that lesson.
+text=Does this answer show the plural past?
 
 ### AUTHORED_ENGLISH `en-u11-012`
 
@@ -4119,10 +4119,10 @@ text=Open Lesson 11 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 968234b5a42adaa7d913e9522c1a4192136934fd1313456741b5586eb159cd41
+- Content hash: b7e6b483fa727b357593dd36640536008e7859d4e034445149d46ed9a379ead3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Which admitted row is the plural past?
 
 ### AUTHORED_ENGLISH `en-u11-013`
 
@@ -4132,10 +4132,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fdcb4411a2319e5e229891c2e628203a9507084c9d8a96849e5091dd1ecef67d
+- Content hash: 61e01e410a9b56be7a30f04d172ae892d93e1144f1c8269579d515319911b7ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Does this row fail the perfective past?
 
 ### AUTHORED_ENGLISH `en-u11-014`
 
@@ -4145,10 +4145,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b51b7fe9fd40f78afa5c7f43d8f48804e18fc38f8f0887ead74685488760ed7a
+- Content hash: 1b85c5df0194bb86d70b64d3a9ef8cc45c968d90fded1a906f2b4506c515ae20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Does this answer show the perfective past?
 
 ### AUTHORED_ENGLISH `en-u11-015`
 
@@ -4158,10 +4158,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5080c276275601f9d4ccce97f6e813fadfa70c85c85d06a420e21c1fd91c799e
+- Content hash: 14e79c7a7da5f1f4689ad6481cfa98b5c4825dfde7e9b7389cd932a23735b5e9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Which admitted line is the perfective past?
 
 ### AUTHORED_ENGLISH `en-u11-016`
 
@@ -4171,10 +4171,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4fceb97b6d44e3a9d4ca6674c94994233668dbd5fd5050a45dd75710929a3d8
+- Content hash: dcbbf5c38a6027f62869c681a3544dba0eddd3347e3dc2d5b18bdadb68f9f725
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Does this row fail the imperfective past?
 
 ### AUTHORED_ENGLISH `en-u11-017`
 
@@ -4184,10 +4184,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 34616cfebc170302fae63fd8f073cf97587ae4ec332d06467ec9e631816319f5
+- Content hash: 98c83a62f60fa28a0841df90a20a9e056776105f230114e11cbe644232c84733
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 11 in your copy
+text=Does this answer show the imperfective past?
 
 ### AUTHORED_ENGLISH `en-u11-018`
 
@@ -4197,10 +4197,10 @@ text=Work Lesson 11 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3acdcf4f7ad8a778acbf5d43564e2b906b22de233e70296f9971c15de90d45fd
+- Content hash: 14c59ac21dabe01a080c5fef6eead800de777c37221be3147c06a56bbba7e278
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 11 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Which admitted line is the imperfective past?
 
 ### AUTHORED_ENGLISH `en-u11-019`
 
@@ -4210,10 +4210,10 @@ text=Do Lesson 11 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 969e82ba3d6eda87c1a176e637ce9f15dbb9ac9a6e77083bdc7806428371b50a
+- Content hash: 40e51267c3b22ed59b84893ad3f9e92f273b396797ff0da914d05e5bf3763eb7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 11 in your copy and complete its lesson work.
+text=Admitted past and reflexive rows
 
 ### AUTHORED_ENGLISH `en-u11-020`
 
@@ -4223,10 +4223,10 @@ text=Open Lesson 11 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fee00f0d23b14332fa8f995431079b9108985235c47eb313ac3eb79730625121
+- Content hash: d70482e2e0ead53fb48855a1df02cb10f211d26b6d34a6300fb48f66f83b9ba8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 11 book work
+text=Proposed Unit 11 uses frozen records for past rows and reflexive past rows. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u11-021`
 
@@ -4236,10 +4236,10 @@ text=Record Lesson 11 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee10d0bb7731e7e1b2f2459236a8ef4785daa1b2c4b2c5861dbed822f2f018d7
+- Content hash: 477c6ff6c720fc8ee21355c5f7c4e1f116e29bc21f2019b79b8de0f3760382fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 11 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Open Lesson 11 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u11-022`
 
@@ -4249,7 +4249,137 @@ text=When you have done Lesson 11 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 553d03493067cadfbb05201402f248db325d29d930ce10439b43fc4d043508c5
+- Content hash: f1126b328d32f2ea44f69865935efbb7e1d0a4edd85e1baac5841f0ae32f6a47
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u11-023`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 782918d32ddf15c13f399dc4ad8f0364e06fb85a775199d5dbb8237fafd8d543
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u11-024`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7a9b2fb09bd79817b6b2e596e52e45c01ece0f268ecf66d877c5a18ea79d83fe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u11-025`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 472d60e07ae6920f736aaa2c004c307bbeae5caf34976cecfbeab961e8c105a2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u11-026`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81f90d62db37b269d0f0325df4491413f9df373e4c5ec40d99bcec52f923c893
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u11-027`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4aac3f49eed1c6fed64b12737ef365c57bfd87c6291b6295b03c581e59a6a195
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 11 in your copy
+
+### AUTHORED_ENGLISH `en-u11-028`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8cd3f935e2df2576c5edf0ba22b3bc457c807f323a508eb840d4e28703c15c01
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 11 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u11-029`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9b4d720fdbd4f05ba6c8f65c4af5997834f7c0c73403aae778c377309a1374d5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 11 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u11-030`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b20381b910294f8de2b5578d28a635b6dc2be3b94ae22fb560a4a3474d7bd1d3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 11 book work
+
+### AUTHORED_ENGLISH `en-u11-031`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c021cf405602559a0a33744352f922b2ea97484c0085a2dcb64ebb857c48fe6b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 11 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u11-032`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9fabe7b7708e56fec22f378da495320b0b1761da209254ae0f1e574f15c7a66a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 11 work in your copy.
