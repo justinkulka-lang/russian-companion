@@ -18,6 +18,33 @@ import java.io.File
 import java.security.MessageDigest
 
 class Units1115InstructionalValidityTest {
+    private val lessonBodyDenial = Regex(
+        "(?i)do not contain lesson bodies|does not contain (?:a )?lesson bod(?:y|ies)|lack(?:s|ing)? (?:a )?lesson bod(?:y|ies)|no lesson bod(?:y|ies)",
+    )
+
+    private fun deniedLessonBodyUnits(sentence: String, maxUnit: Int): Set<Int> {
+        if (!lessonBodyDenial.containsMatchIn(sentence)) return emptySet()
+        val denied = mutableSetOf<Int>()
+        var named = false
+        Regex("(?i)units\\s+(\\d+)\\s+and later").findAll(sentence).forEach { match ->
+            named = true
+            val start = match.groupValues[1].toInt()
+            if (start <= maxUnit) denied += (start..maxUnit).toSet()
+        }
+        Regex("(?i)units\\s+(\\d+)\\s*(?:–|-|through|to)\\s*(\\d+)").findAll(sentence).forEach { match ->
+            named = true
+            val start = match.groupValues[1].toInt()
+            val end = match.groupValues[2].toInt()
+            denied += (minOf(start, end)..maxOf(start, end)).toSet()
+        }
+        Regex("(?i)\\bunit\\s+(\\d+)\\b").findAll(sentence).forEach { match ->
+            named = true
+            denied += match.groupValues[1].toInt()
+        }
+        if (!named) denied += (1..maxUnit).toSet()
+        return denied
+    }
+
     @Test
     fun everyRecognitionObjectiveHasAnIndependentFeatureValidCheck() {
         val pack = pack()
@@ -71,7 +98,7 @@ class Units1115InstructionalValidityTest {
     fun changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails() {
         val pack = pack()
         val seed = pack.items.first { it.id == "u15-i-aspect-consolidate-1" }
-        assertEquals("RULE_CLASSIFIES_SOURCE_EXAMPLE", seed.assessment!!.relationKind)
+        assertEquals("SOURCE_SUPPLIED_PAIR", seed.assessment!!.relationKind)
         val broken = rewriteRationale(seed)
         val cueId = broken.assessment!!.relationParticipantIds[0]
         val replacement = "different frozen content that keeps the truncated id"
@@ -90,7 +117,7 @@ class Units1115InstructionalValidityTest {
         val seed = pack.items.first { it.id == "u14-i-impersonal-1" }
         assertEquals("SOURCE_SUPPLIED_PAIR", seed.assessment!!.relationKind)
         val replacement = "a different frozen span that keeps the truncated record id"
-        val answerId = seed.assessment!!.relationParticipantIds[1]
+        val answerId = seed.assessment.relationParticipantIds[1]
         val mutated = retarget(pack, answerId) {
             it.copy(originalSourceText = replacement, sourceHash = sha256(replacement))
         }
@@ -244,6 +271,193 @@ class Units1115InstructionalValidityTest {
         assertEquals(V2Validator.unitContentReviewDigest(pack, 11), V2Validator.unitContentReviewDigest(shifted, 11))
     }
 
+    @Test
+    fun learnerFacingReferencesDoNotDenyAPackagedLessonBody() {
+        val pack = pack()
+        val withLessonBody = pack.units.filter { unit ->
+            unit.sessions.any { session -> session.steps.any { it.kind == "TEACH" || it.kind == "CHECK" } }
+        }.map { it.number }.toSet()
+        assertTrue(withLessonBody.isNotEmpty())
+        val maxUnit = pack.units.maxOf { it.number }
+        val sample = withLessonBody.min()
+        assertEquals(setOf(sample), deniedLessonBodyUnits("Unit $sample does not contain a lesson body.", maxUnit) intersect withLessonBody)
+        assertTrue(
+            deniedLessonBodyUnits("Units $sample and later do not contain lesson bodies.", maxUnit).containsAll(withLessonBody.filter { it >= sample }),
+        )
+        pack.references.forEach { reference ->
+            val text = "${reference.title}. ${reference.summary}. ${reference.detail}"
+            text.split(Regex("(?<=[.!?])\\s+")).forEach { sentence ->
+                if (!lessonBodyDenial.containsMatchIn(sentence)) return@forEach
+                val overlap = deniedLessonBodyUnits(sentence, maxUnit) intersect withLessonBody
+                assertTrue("${reference.id} denies a packaged lesson body in $overlap: $sentence", overlap.isEmpty())
+            }
+        }
+    }
+
+    @Test
+    fun everyAdvancementCheckNamesOneExplicitTarget() {
+        val pack = pack()
+        val validation = V2Validator.validate(pack)
+        assertTrue(validation.errors.joinToString("\n"), validation.ok)
+        val colocated = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
+        (11..15).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+                objective.checkItemIds.forEach { id ->
+                    val item = pack.items.first { it.id == id }
+                    assertTrue("${item.id} is not feature-valid", V2Validator.featureValid(pack, item))
+                    assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
+                    assertEquals(1, item.options.count { it == item.answer })
+                    assertEquals("PENDING_QUALIFIED_REVIEW", item.reviewStatus)
+                    val answerCyrillic = item.answer.any { it.code in 0x0400..0x04FF }
+                    assertTrue(
+                        "${item.id} mixes response types",
+                        item.options.filter { it != item.answer }.all { option ->
+                            option.any { it.code in 0x0400..0x04FF } == answerCyrillic
+                        },
+                    )
+                }
+            }
+        }
+    }
+
+    @Test
+    fun impersonalObjectiveCannotBeSatisfiedByAnUnrelatedInflectedForm() {
+        val pack = pack()
+        val impersonal = pack.items.filter { it.objectiveId == "obj-u14-impersonal" }
+        assertTrue(impersonal.isNotEmpty())
+        impersonal.forEach { item ->
+            assertTrue(item.prompt.contains("impersonal past"))
+            assertFalse(item.answer.contains("была"))
+            assertFalse(item.answer.contains("были"))
+            assertTrue(V2Validator.featureValid(pack, item) || !item.assessment!!.independent)
+        }
+        val seed = impersonal.first { it.assessment!!.independent }
+        val feminine = pack.provenanceRecords.first { it.sourceRecordId == "verbs.csv:быть#past_f" }
+        val distractor = seed.options.first { it != seed.answer }
+        val options = listOf(feminine.shippedText, distractor)
+        val assessment = seed.assessment!!
+        val swapped = seed.copy(
+            answer = feminine.shippedText,
+            options = options,
+            assessment = assessment.copy(
+                contrastMembers = options,
+                answerSourceIds = listOf(feminine.itemId),
+                relationParticipantIds = listOf(assessment.relationParticipantIds[0], feminine.itemId) +
+                    assessment.relationParticipantIds.drop(2),
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, swapped), swapped))
+        val errors = V2Validator.validate(replace(pack, swapped)).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains(swapped.id) && it.contains("unrelated inflected form") })
+    }
+
+    @Test
+    fun englishGlossCannotAnswerARussianSpellingQuestion() {
+        val pack = pack()
+        val spelling = pack.items.first { it.objectiveId == "obj-u12-spelling" && it.prompt.contains("accepted spelling") }
+        assertTrue(spelling.answer.any { it.code in 0x0400..0x04FF })
+        assertTrue(spelling.options.all { it.any { char -> char.code in 0x0400..0x04FF } })
+        val gloss = "the good letter"
+        val options = listOf(gloss, spelling.options.first { it != spelling.answer })
+        val bad = spelling.copy(
+            answer = gloss,
+            options = options,
+            assessment = spelling.assessment!!.copy(contrastMembers = options),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, bad), bad))
+        val errors = V2Validator.validate(replace(pack, bad)).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains(bad.id) && it.contains("English gloss") })
+    }
+
+    @Test
+    fun knownAmbiguityClassesFailClosed() {
+        val pack = pack()
+        val past = pack.items.first { it.id == "u11-i-past-read-1" }
+        val targetlessPast = past.copy(prompt = "Which admitted row is the other row of the shown form?")
+        val pastErrors = errorsFor(pack, targetlessPast)
+        assertTrue(pastErrors.joinToString("\n"), pastErrors.any { it.contains("past target") })
+        assertTrue(pastErrors.joinToString("\n"), pastErrors.any { it.contains("source co-location prompt") })
+
+        val imperative = pack.items.first { it.id == "u15-i-imperative-1" }
+        val unspecified = imperative.copy(prompt = "Which admitted form is the imperative?")
+        assertTrue(errorsFor(pack, unspecified).any { it.contains("unspecified imperative") })
+
+        val objective = "obj-u15-aspect-consolidate"
+        val cue = pack.provenanceRecords.first { it.objectiveId == objective && it.shippedText == "делать/сделать" }
+        val toDo = pack.provenanceRecords.first { it.objectiveId == objective && it.shippedText == "to do" }
+        val toMake = pack.provenanceRecords.first { it.objectiveId == objective && it.shippedText == "to make" }
+        val aspect = pack.items.first { it.id == "u15-i-aspect-consolidate-1" }
+        val options = listOf("to do", "to make")
+        val glossDistractor = aspect.copy(
+            prompt = "Which admitted label is the perfective partner?",
+            promptLetter = cue.shippedText,
+            options = options,
+            answer = "to do",
+            assessment = aspect.assessment!!.copy(
+                testedFeature = "PERFECTIVE_PARTNER",
+                cueLanguage = "ru",
+                evidenceMode = "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+                relationKind = "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+                contrastMembers = options,
+                answerSourceIds = listOf(toDo.itemId),
+                distractorSourceIds = listOf("", toMake.itemId),
+                distractorDifference = listOf("", "Does this row fail the perfective partner?"),
+                whyAnswerDemonstratesObjective = "Does this answer show the perfective partner?",
+                relationParticipantIds = listOf(cue.itemId, toDo.itemId, toMake.itemId),
+            ),
+        )
+        assertTrue(errorsFor(pack, glossDistractor).any { it.contains("distractor is also supported") })
+
+        val spelling = pack.items.first { it.id == "u12-i-spelling-2" }
+        val acceptedNegative = spelling.copy(
+            prompt = "Which admitted line is the accepted spelling?",
+            assessment = spelling.assessment!!.copy(
+                testedFeature = "ACCEPTED_SPELLING",
+                whyAnswerDemonstratesObjective = "Does this answer show the accepted spelling?",
+            ),
+        )
+        assertTrue(errorsFor(pack, acceptedNegative).any { it.contains("rejected spelling") })
+
+        val impersonal = pack.items.first { it.objectiveId == "obj-u14-impersonal" && it.assessment!!.independent }
+        val feminine = pack.provenanceRecords.first { it.sourceRecordId == "verbs.csv:быть#past_f" }
+        val impersonalOptions = listOf(feminine.shippedText, impersonal.options.first { it != impersonal.answer })
+        val impersonalSwap = impersonal.copy(
+            answer = feminine.shippedText,
+            options = impersonalOptions,
+            assessment = impersonal.assessment!!.copy(
+                contrastMembers = impersonalOptions,
+                answerSourceIds = listOf(feminine.itemId),
+                relationParticipantIds = listOf(impersonal.assessment.relationParticipantIds[0], feminine.itemId) +
+                    impersonal.assessment.relationParticipantIds.drop(2),
+            ),
+        )
+        assertTrue(errorsFor(pack, impersonalSwap).any { it.contains("unrelated inflected form") })
+
+        val englishSpelling = spelling.copy(
+            answer = "the good letter",
+            options = listOf("the good letter", spelling.options.first { it.any { char -> char.code in 0x0400..0x04FF } }),
+        )
+        assertTrue(errorsFor(pack, englishSpelling).any { it.contains("English gloss") })
+    }
+
+    @Test
+    fun aGenericRationaleIsNotTiedToTheTarget() {
+        val pack = pack()
+        val seed = pack.items.first { it.id == "u11-i-past-read-1" }
+        val generic = seed.copy(
+            assessment = seed.assessment!!.copy(
+                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
+            ),
+        )
+        assertFalse(V2Validator.featureValid(replace(pack, generic), generic))
+        assertTrue(errorsFor(pack, generic).any { it.contains("answer rationale is not tied to the target") })
+    }
+
+    private fun errorsFor(pack: V2CurriculumPack, item: V2CheckItem): List<String> =
+        V2Validator.validate(replace(pack, item)).errors.filter { it.contains(item.id) }
+
     private fun replace(pack: V2CurriculumPack, item: V2CheckItem) =
         pack.copy(items = pack.items.map { if (it.id == item.id) item else it })
 
@@ -252,7 +466,6 @@ class Units1115InstructionalValidityTest {
         return item.copy(
             distractorRationales = item.distractorRationales.map { if (it.isEmpty()) it else "The contrast is the same word." },
             assessment = assessment.copy(
-                whyAnswerDemonstratesObjective = "The contrast is the same word in the shown line.",
                 distractorDifference = assessment.distractorDifference.map { difference ->
                     if (difference.isEmpty()) difference else "The contrast is the same word."
                 },

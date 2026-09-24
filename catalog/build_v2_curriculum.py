@@ -1390,9 +1390,9 @@ def build() -> dict:
         ),
         reference(
             "ref-book-topics",
-            "Later lesson topics stay in the book",
-            "Units 6 and later do not contain lesson bodies.",
-            "Units 3–5 contain proposed licensed records that still need qualified review. Open the matching lesson in the copy you own. This reference does not approve those records.",
+            "Where lesson bodies are packaged",
+            "Units 1 through 15 contain proposed lesson bodies that still need qualified review.",
+            "Units 16 and later do not contain lesson bodies. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",

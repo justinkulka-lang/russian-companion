@@ -18,6 +18,22 @@ def _field(record, name):
     return ("field", record, name)
 
 
+def _target(prompt, shown, answer, wrongs, source=W, feature="TARGET", phrase=""):
+    if phrase not in prompt:
+        raise SystemExit(f"Prompt does not state {phrase!r}: {prompt}")
+    why = f"Does this answer show the {phrase}?"
+    rationale = f"Does this row fail the {phrase}?"
+    return _check(
+        prompt,
+        shown,
+        answer,
+        [_other(text, rationale) for text in wrongs],
+        source,
+        feature=feature,
+        why=why,
+    )
+
+
 def populate(lesson, number: int) -> None:
     {
         11: _unit_11,
@@ -51,16 +67,9 @@ def _unit_11(lesson) -> None:
             _wiki(past, table, "Она чита́ла", "She was reading"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "чита́л", "чита́ла", [
-                _other("чита́ло", "This form is another row of the same word."),
-                _other("чита́ли", "This form is another row of the same word."),
-            ], O, feature="PAST_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "чита́ла", "чита́л", [
-                _other("чита́ли", "This form is another row of the same word."),
-            ], O, feature="PAST_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "Он чита́л", "Она чита́ла", [
-                _other("Они чита́ли", "This form is another cell of the same frozen line."),
-            ], feature="PAST_ROW"),
+            _target("Which admitted row is the feminine past?", "чита́л", "чита́ла", ["чита́ло", "чита́ли"], O, "FEMININE_PAST", "feminine past"),
+            _target("Which admitted row is the masculine past?", "чита́ла", "чита́л", ["чита́ли"], O, "MASCULINE_PAST", "masculine past"),
+            _target("Which admitted line is the feminine past?", "Он чита́л", "Она чита́ла", ["Они чита́ли"], W, "FEMININE_PAST", "feminine past"),
         ],
         extra=[
             (past, table, "Они чита́ли", "example"),
@@ -80,16 +89,9 @@ def _unit_11(lesson) -> None:
             _wiki(past, "She was beautiful - '''Она была́ краси́вая'''", "Она была́ краси́вая", "She was beautiful"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "бы́л", "была́", [
-                _other("бы́ло", "This form is another row of the same word."),
-                _other("бы́ли", "This form is another row of the same word."),
-            ], O, feature="PAST_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "была́", "бы́ли", [
-                _other("бы́л", "This form is another row of the same word."),
-            ], O, feature="PAST_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "бы́ло", "бы́ли", [
-                _other("бы́л", "This form is another row of the same word."),
-            ], O, feature="PAST_ROW"),
+            _target("Which admitted row is the feminine past?", "бы́л", "была́", ["бы́ло", "бы́ли"], O, "FEMININE_PAST", "feminine past"),
+            _target("Which admitted row is the plural past?", "была́", "бы́ли", ["бы́л"], O, "PLURAL_PAST", "plural past"),
+            _target("Which admitted row is the plural past?", "бы́ло", "бы́ли", ["бы́л"], O, "PLURAL_PAST", "plural past"),
         ],
     )
     lesson.objective(
@@ -105,15 +107,9 @@ def _unit_11(lesson) -> None:
             _field("verbs.csv:прочита'ть", "past_n"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "я читал", "я прочитал", [
-                _other("I was reading", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="PAST_ASPECT_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "я прочитал", "я читал", [
-                _other("I read", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="PAST_ASPECT_LINE"),
-            _check("Which admitted row is the other row of the shown form?", "прочита́л", "прочита́ла", [
-                _other("прочита́ло", "This form is another row of the same word."),
-            ], O, feature="PAST_ASPECT_LINE"),
+            _target("Which admitted line is the perfective past?", "I read", "я прочитал", ["я читал"], W, "PERFECTIVE_PAST", "perfective past"),
+            _target("Which admitted line is the imperfective past?", "I was reading", "я читал", ["я прочитал"], W, "IMPERFECTIVE_PAST", "imperfective past"),
+            _target("Which admitted row is the feminine past?", "прочита́л", "прочита́ла", ["прочита́ло"], O, "FEMININE_PAST", "feminine past"),
         ],
         extra=[
             (past, pair, "I was reading", "meaning"),
@@ -137,16 +133,9 @@ def _unit_11(lesson) -> None:
             _field(study, "past_pl"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "улыба́лся", "улыба́лась", [
-                _other("улыба́лись", "This form is another row of the same word."),
-                _other("улыба́ться", "This form is another row of the same word."),
-            ], O, feature="REFLEXIVE_PAST"),
-            _check("Which admitted line is the other line in the same frozen record?", "Он улыба́лся", "Она улыба́лась", [
-                _other("Они улыба́лись", "This form is another cell of the same frozen line."),
-            ], feature="REFLEXIVE_PAST"),
-            _check("Which admitted row is the other row of the shown form?", "учи́лся", "учи́лась", [
-                _other("учи́лись", "This form is another row of the same word."),
-            ], O, feature="REFLEXIVE_PAST"),
+            _target("Which admitted row is the feminine past?", "улыба́лся", "улыба́лась", ["улыба́лись", "улыба́ться"], O, "FEMININE_PAST", "feminine past"),
+            _target("Which admitted line is the feminine past?", "Он улыба́лся", "Она улыба́лась", ["Они улыба́лись"], W, "FEMININE_PAST", "feminine past"),
+            _target("Which admitted row is the feminine past?", "учи́лся", "учи́лась", ["учи́лись"], O, "FEMININE_PAST", "feminine past"),
         ],
         extra=[
             (past, reflex, "Они улыба́лись", "example"),
@@ -179,18 +168,13 @@ def _unit_12(lesson) -> None:
             _wiki(future, "Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They will be speaking", "Он бу́дет говори́ть", "He will be speaking"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Я бу́ду говори́ть", "Мы бу́дем говори́ть", [
-                _other("I will be speaking", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Мы бу́дем говори́ть", "Я бу́ду говори́ть", [
-                _other("We will be speaking", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Ты бу́дешь говори́ть", "Вы бу́дете говори́ть", [
-                _other("You will be speaking", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_LINE"),
+            _target("Which admitted line is the first-person plural future?", "We will be speaking", "Мы бу́дем говори́ть", ["Я бу́ду говори́ть"], W, "FIRST_PERSON_PLURAL_FUTURE", "first-person plural future"),
+            _target("Which admitted line is the first-person singular future?", "I will be speaking", "Я бу́ду говори́ть", ["Мы бу́дем говори́ть"], W, "FIRST_PERSON_SINGULAR_FUTURE", "first-person singular future"),
+            _target("Which admitted line is the second-person plural future?", "Ты бу́дешь говори́ть", "Вы бу́дете говори́ть", ["бу́дешь"], W, "SECOND_PERSON_PLURAL_FUTURE", "second-person plural future"),
         ],
         extra=[
             (future, "Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking", "Вы бу́дете говори́ть", "example"),
+            (future, "Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking", "бу́дешь", "example"),
         ],
     )
     lesson.objective(
@@ -206,15 +190,9 @@ def _unit_12(lesson) -> None:
             _field("verbs.csv:сказа'ть", "presfut_sg2"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Я скажу́", "Мы ска́жем", [
-                _other("I will speak", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_LINE"),
-            _check("Which admitted row is the other row of the shown form?", "скажу́", "ска́жем", [
-                _other("ска́жешь", "This form is another row of the same word."),
-            ], O, feature="FUTURE_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Мы ска́жем", "Я скажу́", [
-                _other("We will speak", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_LINE"),
+            _target("Which admitted line is the first-person plural future?", "We will speak", "Мы ска́жем", ["Я скажу́"], W, "FIRST_PERSON_PLURAL_FUTURE", "first-person plural future"),
+            _target("Which admitted row is the first-person plural future?", "скажу́", "ска́жем", ["ска́жешь"], O, "FIRST_PERSON_PLURAL_FUTURE", "first-person plural future"),
+            _target("Which admitted line is the first-person singular future?", "I will speak", "Я скажу́", ["Мы ска́жем"], W, "FIRST_PERSON_SINGULAR_FUTURE", "first-person singular future"),
         ],
         extra=[
             (future, perf, "I will speak", "meaning"),
@@ -233,15 +211,9 @@ def _unit_12(lesson) -> None:
             _wiki(aspect, pair, "сде́лать", "to do"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "говори́ть", "сказа́ть", [
-                _other("де́лать", "This form is another admitted word."),
-            ], feature="ASPECT_PARTNER"),
-            _check("Which admitted line is the other line in the same frozen record?", "сказа́ть", "говори́ть", [
-                _other("сде́лать", "This form is another admitted word."),
-            ], feature="ASPECT_PARTNER"),
-            _check("Which admitted line is the other line in the same frozen record?", "де́лать", "сде́лать", [
-                _other("говори́ть", "This form is another admitted word."),
-            ], feature="ASPECT_PARTNER"),
+            _target("Which admitted line is the perfective partner?", "говори́ть", "сказа́ть", ["де́лать"], W, "PERFECTIVE_PARTNER", "perfective partner"),
+            _target("Which admitted line is the imperfective partner?", "сказа́ть", "говори́ть", ["сде́лать"], W, "IMPERFECTIVE_PARTNER", "imperfective partner"),
+            _target("Which admitted line is the perfective partner?", "де́лать", "сде́лать", ["говори́ть"], W, "PERFECTIVE_PARTNER", "perfective partner"),
         ],
     )
     lesson.objective(
@@ -261,15 +233,9 @@ def _unit_12(lesson) -> None:
             _field(house, "pl_nom"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "кни́га", "кни́ге", [
-                _other("кни́ги", "This form is another row of the same word."),
-            ], O, feature="DATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "сто́л", "столу́", [
-                _other("столы́", "This form is another row of the same word."),
-            ], O, feature="DATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "до́м", "до́му", [
-                _other("дома́", "This form is another row of the same word."),
-            ], O, feature="DATIVE_ROW"),
+            _target("Which admitted row is the dative singular?", "кни́га", "кни́ге", ["кни́ги"], O, "DATIVE_SINGULAR", "dative singular"),
+            _target("Which admitted row is the dative singular?", "сто́л", "столу́", ["столы́"], O, "DATIVE_SINGULAR", "dative singular"),
+            _target("Which admitted row is the dative singular?", "до́м", "до́му", ["дома́"], O, "DATIVE_SINGULAR", "dative singular"),
         ],
         extra=[
             ("dative", "To give (to)... - '''Давать/дать''' + ''dat''", "Давать/дать", "example"),
@@ -287,15 +253,9 @@ def _unit_12(lesson) -> None:
             _wiki(adjectives, spell, "хорошее письмо", "the good letter"),
         ],
         [
-            _check("Which admitted spelling is written in the frozen line?", "хорошее письмо", "the good letter", [
-                _other("хорошое письмо", "This spelling is the rejected spelling in the same frozen line."),
-            ], feature="FIVE_LETTER_SPELLING"),
-            _check("Which admitted row is the other row of the shown form?", "хоро́ший", "хоро́шее", [
-                _other("хоро́шая", "This form is another row of the same word."),
-            ], O, feature="FIVE_LETTER_SPELLING"),
-            _check("Which admitted spelling is written in the frozen line?", "хорошое письмо", "хорошее письмо", [
-                _other("the good letter", "This admitted wording is the gloss in the same frozen line."),
-            ], feature="FIVE_LETTER_SPELLING"),
+            _target("Which admitted line is the accepted spelling rather than the rejected example?", "the good letter", "хорошее письмо", ["хорошое письмо"], W, "ACCEPTED_SPELLING", "accepted spelling"),
+            _target("Which admitted row is the neuter form?", "хоро́ший", "хоро́шее", ["хоро́шая"], O, "NEUTER_FORM", "neuter form"),
+            _target("Which admitted line is the rejected spelling rather than the accepted example?", "the good letter", "хорошое письмо", ["хорошее письмо"], W, "REJECTED_SPELLING", "rejected spelling"),
         ],
         extra=[
             (adjectives, spell, "хорошое письмо", "example"),
@@ -319,15 +279,9 @@ def _unit_12(lesson) -> None:
             _field(house, "sg_dat"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "кни́ги", "кни́гах", [
-                _other("кни́ге", "This form is another row of the same word."),
-            ], O, feature="PREPOSITIONAL_PLURAL"),
-            _check("Which admitted row is the other row of the shown form?", "столы́", "стола́х", [
-                _other("столу́", "This form is another row of the same word."),
-            ], O, feature="PREPOSITIONAL_PLURAL"),
-            _check("Which admitted row is the other row of the shown form?", "дома́", "дома́х", [
-                _other("до́му", "This form is another row of the same word."),
-            ], O, feature="PREPOSITIONAL_PLURAL"),
+            _target("Which admitted row is the prepositional plural?", "кни́ги", "кни́гах", ["кни́ге"], O, "PREPOSITIONAL_PLURAL", "prepositional plural"),
+            _target("Which admitted row is the prepositional plural?", "столы́", "стола́х", ["столу́"], O, "PREPOSITIONAL_PLURAL", "prepositional plural"),
+            _target("Which admitted row is the prepositional plural?", "дома́", "дома́х", ["до́му"], O, "PREPOSITIONAL_PLURAL", "prepositional plural"),
         ],
     )
 
@@ -353,15 +307,9 @@ def _unit_13(lesson) -> None:
             _field("verbs.csv:чита'ть", "past_f"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "я читал", "я прочитал", [
-                _other("I was reading", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="PAST_ASPECT_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "я прочитал", "я читал", [
-                _other("I read", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="PAST_ASPECT_LINE"),
-            _check("Which admitted row is the other row of the shown form?", "чита́ть", "чита́л", [
-                _other("чита́ла", "This form is another row of the same word."),
-            ], O, feature="PAST_ASPECT_LINE"),
+            _target("Which admitted line is the perfective past?", "I read", "я прочитал", ["я читал"], W, "PERFECTIVE_PAST", "perfective past"),
+            _target("Which admitted line is the imperfective past?", "I was reading", "я читал", ["я прочитал"], W, "IMPERFECTIVE_PAST", "imperfective past"),
+            _target("Which admitted row is the masculine past?", "чита́ть", "чита́л", ["чита́ла"], O, "MASCULINE_PAST", "masculine past"),
         ],
         extra=[
             (past, pair, "I was reading", "meaning"),
@@ -379,15 +327,9 @@ def _unit_13(lesson) -> None:
             _wiki(future, told, "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", "She said that she would speak to him in the evening"),
         ],
         [
-            _check("Which admitted label classifies the shown line?", "Он сказа́л, что он англича́нин", "we keep the tense the same", [
-                _other("we usually change the tense", "This admitted wording is the other report label in the same frozen line."),
-            ], feature="REPORTED_TENSE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Я скажу ему ве́чером", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", [
-                _other("Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски", "This form is another line in the same frozen record."),
-            ], feature="REPORTED_TENSE"),
-            _check("Which admitted label classifies the shown line?", "Он сказа́л, что он англича́нин", "we keep the tense the same", [
-                _other("the reported verb changes tense", "This admitted wording is the other report label in the same frozen line."),
-            ], feature="REPORTED_TENSE"),
+            _target("Which admitted label keeps the same tense?", "Он сказа́л, что он англича́нин", "we keep the tense the same", ["we usually change the tense"], W, "TENSE_KEPT", "same tense"),
+            _target("Which admitted line is the reported evening?", "Я скажу ему ве́чером", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", ["Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"], W, "REPORTED_EVENING", "reported evening"),
+            _target("Which admitted label is about changing the reported tense?", "the reported verb changes tense", "we usually change the tense", ["we keep the tense the same"], W, "ENGLISH_TENSE_CHANGE", "changing the reported tense"),
         ],
         extra=[
             (future, report, "we keep the tense the same", "instruction"),
@@ -408,15 +350,9 @@ def _unit_13(lesson) -> None:
             _wiki(aspect, inf, "сде́лать", "to do"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "говори́ть", "сказа́ть", [
-                _other("де́лать", "This form is the other pair in the same frozen line."),
-            ], feature="INFINITIVE_ASPECT"),
-            _check("Which admitted line is the other line in the same frozen record?", "де́лать", "сде́лать", [
-                _other("говори́ть", "This form is the other pair in the same frozen line."),
-            ], feature="INFINITIVE_ASPECT"),
-            _check("Which admitted line is the other line in the same frozen record?", "сказа́ть", "говори́ть", [
-                _other("сде́лать", "This form is the other pair in the same frozen line."),
-            ], feature="INFINITIVE_ASPECT"),
+            _target("Which admitted line is the perfective partner?", "говори́ть", "сказа́ть", ["де́лать"], W, "PERFECTIVE_PARTNER", "perfective partner"),
+            _target("Which admitted line is the perfective partner?", "де́лать", "сде́лать", ["говори́ть"], W, "PERFECTIVE_PARTNER", "perfective partner"),
+            _target("Which admitted line is the imperfective partner?", "сказа́ть", "говори́ть", ["сде́лать"], W, "IMPERFECTIVE_PARTNER", "imperfective partner"),
         ],
     )
     lesson.objective(
@@ -431,15 +367,9 @@ def _unit_13(lesson) -> None:
             _wiki(future, "'''Он сказа́л, что он ''был'' англича́нином'''", "Он сказа́л, что он ''был'' англича́нином", "был"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Я скажу ему ве́чером", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", [
-                _other("Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски", "This form is another line in the same frozen record."),
-            ], feature="REPORTED_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", "Я скажу ему ве́чером", [
-                _other("Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски", "This form is another line in the same frozen record."),
-            ], feature="REPORTED_LINE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", [
-                _other("Я скажу ему ве́чером", "This form is another line in the same frozen record."),
-            ], feature="REPORTED_LINE"),
+            _target("Which admitted line is the reported evening?", "Я скажу ему ве́чером", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", ["Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"], W, "REPORTED_EVENING", "reported evening"),
+            _target("Which admitted line is the direct evening?", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", "Я скажу ему ве́чером", ["Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"], W, "DIRECT_EVENING", "direct evening"),
+            _target("Which admitted line is the future plan about Moscow?", "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером", "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски", ["Я скажу ему ве́чером"], W, "MOSCOW_FUTURE", "Moscow"),
         ],
         extra=[
             (future, report, "we keep the tense the same", "instruction"),
@@ -454,6 +384,7 @@ def _unit_14(lesson) -> None:
     speak = "I will speak - '''Я бу́ду говори́ть'''\n:I will speak for 30 minutes - '''Я поговорю три́дцать мину́т'''"
     work = "I will work - '''Я бу́ду рабо́тать'''\n:I will work for three hours - '''Я порабо́таю три ча́са'''"
     cold = "He was cold - '''Ему было холодно'''\n:They were bored - '''Им было скучно'''"
+    cold_rule = "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''."
     lesson.objective(
         "future-aspect",
         "Choose the admitted future aspect line",
@@ -466,15 +397,9 @@ def _unit_14(lesson) -> None:
             _wiki(future, work, "Я порабо́таю три ча́са", "I will work for three hours"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Я бу́ду говори́ть", "Я поговорю три́дцать мину́т", [
-                _other("I will speak", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_ASPECT"),
-            _check("Which admitted line is the other line in the same frozen record?", "Я бу́ду рабо́тать", "Я порабо́таю три ча́са", [
-                _other("I will work", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_ASPECT"),
-            _check("Which admitted line is the other line in the same frozen record?", "Я поговорю три́дцать мину́т", "Я бу́ду говори́ть", [
-                _other("I will speak for 30 minutes", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_ASPECT"),
+            _target("Which admitted line is the bounded future?", "I will speak for 30 minutes", "Я поговорю три́дцать мину́т", ["Я бу́ду говори́ть"], W, "BOUNDED_FUTURE", "bounded future"),
+            _target("Which admitted line is the bounded future?", "I will work for three hours", "Я порабо́таю три ча́са", ["Я бу́ду рабо́тать"], W, "BOUNDED_FUTURE", "bounded future"),
+            _target("Which admitted line is the unbounded future?", "I will speak", "Я бу́ду говори́ть", ["Я поговорю три́дцать мину́т"], W, "UNBOUNDED_FUTURE", "unbounded future"),
         ],
     )
     lesson.objective(
@@ -490,15 +415,9 @@ def _unit_14(lesson) -> None:
             _field("verbs.csv:сказа'ть", "presfut_pl3"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Я бу́ду говори́ть", "Мы бу́дем говори́ть", [
-                _other("I will be speaking", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_PERSON"),
-            _check("Which admitted row is the other row of the shown form?", "ска́жет", "ска́жут", [
-                _other("скажу́", "This form is another row of the same word."),
-            ], O, feature="FUTURE_PERSON"),
-            _check("Which admitted line is the other line in the same frozen record?", "Мы бу́дем говори́ть", "Я бу́ду говори́ть", [
-                _other("We will be speaking", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="FUTURE_PERSON"),
+            _target("Which admitted line is the first-person plural future?", "We will be speaking", "Мы бу́дем говори́ть", ["Я бу́ду говори́ть"], W, "FIRST_PERSON_PLURAL_FUTURE", "first-person plural future"),
+            _target("Which admitted row is the third-person plural future?", "ска́жет", "ска́жут", ["скажу́"], O, "THIRD_PERSON_PLURAL_FUTURE", "third-person plural future"),
+            _target("Which admitted line is the first-person singular future?", "I will be speaking", "Я бу́ду говори́ть", ["Мы бу́дем говори́ть"], W, "FIRST_PERSON_SINGULAR_FUTURE", "first-person singular future"),
         ],
     )
     lesson.objective(
@@ -509,21 +428,16 @@ def _unit_14(lesson) -> None:
         [
             _wiki(past, cold, "Ему было холодно", "He was cold"),
             _wiki(past, cold, "Им было скучно", "They were bored"),
-            _wiki(past, "To refer to these states in the past tense, always use '''было'''; 'she was cold'/'to her it was cold' is '''ей было холодно'''.", "ей было холодно", "she was cold"),
+            _wiki(past, cold_rule, "ей было холодно", "she was cold"),
             _field("verbs.csv:быть", "past_n"),
-            _field("verbs.csv:быть", "past_f"),
-            _field("verbs.csv:быть", "past_pl"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "Ему было холодно", "Им было скучно", [
-                _other("He was cold", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="IMPERSONAL_STATE"),
-            _check("Which admitted line is the other line in the same frozen record?", "Им было скучно", "Ему было холодно", [
-                _other("They were bored", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="IMPERSONAL_STATE"),
-            _check("Which admitted row is the other row of the shown form?", "бы́ло", "была́", [
-                _other("бы́ли", "This form is another row of the same word."),
-            ], O, feature="IMPERSONAL_STATE"),
+            _target("Which admitted line is the impersonal past for one person who was cold?", "He was cold", "Ему было холодно", ["Им было скучно"], W, "IMPERSONAL_PAST", "impersonal past"),
+            _target("Which admitted line is the impersonal past for more than one bored person?", "They were bored", "Им было скучно", ["Ему было холодно"], W, "IMPERSONAL_PAST", "impersonal past"),
+            _target("Which admitted line is the impersonal past for one woman who was cold?", "she was cold", "ей было холодно", ["было"], W, "IMPERSONAL_PAST", "impersonal past"),
+        ],
+        extra=[
+            (past, cold_rule, "было", "example"),
         ],
     )
 
@@ -536,6 +450,7 @@ def _unit_15(lesson) -> None:
     give = "verbs.csv:дать"
     do_pair = "'''делать/сделать''' both mean 'to do' or 'to make'"
     speak_pair = "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'"
+    pair = "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''')."
     request = "*  Купи, пожалуйста, свежие фрукты.- ''' Please, buy fresh fruits.'''"
     lesson.objective(
         "imperative",
@@ -549,15 +464,9 @@ def _unit_15(lesson) -> None:
             _wiki(acc, request, "Купи, пожалуйста, свежие фрукты.", "Please, buy fresh fruits."),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "чита́й", "чита́йте", [
-                _other("чита́ть", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "чита́йте", "чита́й", [
-                _other("чита́ть", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "чита́ть", "чита́й", [
-                _other("чита́йте", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
+            _target("Which admitted row is the plural imperative?", "чита́й", "чита́йте", ["чита́ть"], O, "PLURAL_IMPERATIVE", "plural imperative"),
+            _target("Which admitted row is the singular imperative?", "чита́йте", "чита́й", ["чита́ть"], O, "SINGULAR_IMPERATIVE", "singular imperative"),
+            _target("Which admitted row is the singular imperative?", "чита́ть", "чита́й", ["чита́йте"], O, "SINGULAR_IMPERATIVE", "singular imperative"),
         ],
         extra=[
             (acc, request, "Please, buy fresh fruits.", "meaning"),
@@ -577,42 +486,30 @@ def _unit_15(lesson) -> None:
             _field(give, "accented"),
         ],
         [
-            _check("Which admitted row is the other row of the shown form?", "скажи́", "скажи́те", [
-                _other("сказа́ть", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "да́й", "да́йте", [
-                _other("дать", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
-            _check("Which admitted row is the other row of the shown form?", "скажи́те", "скажи́", [
-                _other("сказа́ть", "This form is another row of the same word."),
-            ], O, feature="IMPERATIVE_ROW"),
+            _target("Which admitted row is the plural imperative?", "скажи́", "скажи́те", ["сказа́ть"], O, "PLURAL_IMPERATIVE", "plural imperative"),
+            _target("Which admitted row is the plural imperative?", "да́й", "да́йте", ["дать"], O, "PLURAL_IMPERATIVE", "plural imperative"),
+            _target("Which admitted row is the singular imperative?", "скажи́те", "скажи́", ["сказа́ть"], O, "SINGULAR_IMPERATIVE", "singular imperative"),
         ],
     )
     lesson.objective(
         "aspect-consolidate",
         "Choose the admitted aspect pair",
         "CONTRAST_SELECTION",
-        (aspect, "In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs.", "In short, all of this is to say that there are two types of verbs in Russian, perfective verbs, and imperfective verbs."),
+        (aspect, pair, pair),
         [
-            _wiki(aspect, do_pair, "делать/сделать", "to do"),
-            _wiki(aspect, speak_pair, "говорить", "to say, speak, tell"),
-            _wiki(aspect, speak_pair, "сказать", "to say, speak, tell"),
-            _field("verbs.csv:де'лать", "accented"),
-            _field("verbs.csv:сде'лать", "accented"),
+            _wiki(aspect, pair, "говори́ть", "to speak"),
+            _wiki(aspect, pair, "сказа́ть", "to speak"),
+            _wiki(aspect, pair, "де́лать", "to do"),
+            _wiki(aspect, pair, "сде́лать", "to do"),
         ],
         [
-            _check("Which admitted line is the other line in the same frozen record?", "говорить", "сказать", [
-                _other("to say, speak, tell", "This admitted wording is the gloss in the same frozen line."),
-            ], feature="ASPECT_PAIR"),
-            _check("Which admitted label classifies the shown line?", "делать/сделать", "to do", [
-                _other("to make", "This admitted wording is the other gloss in the same frozen line."),
-            ], feature="ASPECT_PAIR"),
-            _check("Which admitted line is the other line in the same frozen record?", "сказать", "говорить", [
-                _other("impf.", "This admitted label is in the same frozen line."),
-            ], feature="ASPECT_PAIR"),
+            _target("Which admitted line is the perfective partner?", "говори́ть", "сказа́ть", ["де́лать"], W, "PERFECTIVE_PARTNER", "perfective partner"),
+            _target("Which admitted line is the imperfective partner?", "сказа́ть", "говори́ть", ["сде́лать"], W, "IMPERFECTIVE_PARTNER", "imperfective partner"),
+            _target("Which admitted line is the perfective partner?", "де́лать", "сде́лать", ["говори́ть"], W, "PERFECTIVE_PARTNER", "perfective partner"),
         ],
         extra=[
-            (aspect, speak_pair, "impf.", "instruction"),
+            (aspect, do_pair, "делать/сделать", "example"),
+            (aspect, do_pair, "to do", "meaning"),
             (aspect, do_pair, "to make", "meaning"),
         ],
     )
