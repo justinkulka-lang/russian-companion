@@ -1,0 +1,170 @@
+{{Russian}}206202211633901
+
+== Cardinal numbers ==
+
+{| class="wikitable"
+! One to ten
+! Eleven to nineteen
+! Tens 
+! Hundreds
+! Large numbers, zero
+|-
+| 1 оди́н (одна́, одно́, одни́)
+| 11 оди́ннадцать
+| style="color: gray;" | 10 де́сять
+| 100 сто
+| 1,000 ты́сяча
+|-
+| 2 два (две)
+| 12 двена́дцать
+| 20 два́дцать
+| 200 две́сти
+| 1,000,000 миллио́н
+|-
+| 3 три
+| 13 трина́дцать
+| 30 три́дцать
+| 300 три́ста
+| 1,000,000,000 миллиа́рд
+|-
+| 4 четы́ре
+| 14 четы́рнадцать
+| 40 со́рок
+| 400 четы́реста
+| 0 ноль
+|-
+| 5 пять
+| 15 пятна́дцать
+| 50 пятьдеся́т
+| 500 пятьсо́т
+|
+|-
+| 6 шесть
+| 16 шестна́дцать
+| 60 шестьдеся́т
+| 600 шестьсо́т
+|
+|-
+| 7 семь
+| 17 семна́дцать
+| 70 се́мьдесят
+| 700 семьсо́т
+|
+|-
+| 8 во́семь
+| 18 восемна́дцать
+| 80 во́семьдесят
+| 800 восемьсо́т
+|
+|-
+| 9 де́вять
+| 19 девятна́дцать
+| 90 девяно́сто
+| 900 девятьсо́т
+|-
+| 10 де́сять
+|
+|
+|
+|
+|}
+
+; Examples
+* 21 два́дцать оди́н
+* 101 сто оди́н
+* 215 две́сти пятна́дцать
+* 333 три́ста три́дцать три
+* 1,984 ты́сяча девятьсо́т во́семьдесят четы́ре
+* 2,000/3,000/4,000 две/три/четы́ре ты́сячи (use genitive singular, see below)
+* 5,000 ~ 9,000 пять ~ де́вять ты́сяч (use genitive plural, see below)
+* 2,000,000 два миллиона
+* 5,000,000 пять миллионов
+* 2,000,000,000 два миллиа́рда
+
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+
+==Ordinal numbers==
+
+Ordinal numerals in Russian are relatively easy to deal with.  They all decline like adjectives.  For example: Только что фотографировала восемнадцатую девушку (She just photographed the eighteenth girl).
+
+# п'''е'''рвый, п'''е'''рвая, п'''е'''рвое
+# втор'''о'''й, втор'''а'''я, втор'''о'''е
+# тр'''е'''тий, тр'''е'''тья, тр'''е'''тье
+# четв'''ё'''ртый
+# п'''я'''тый
+# шест'''о'''й
+# седьм'''о'''й
+# восьм'''о'''й
+# дев'''я'''тый
+# дес'''я'''тый
+# од'''и'''ннадцатый
+# двен'''а'''дцатый
+# трин'''а'''дцатый
+# чет'''ы'''рнадцатый
+# пятн'''а'''дцатый
+# шестн'''а'''дцатый
+# семн'''а'''дцатый
+# восемн'''а'''дцатый
+# девятн'''а'''дцатый
+# двадц'''а'''тый
+# дв'''а'''дцать п'''е'''рвый
+# дв'''а'''дцать втор'''о'''й
+30th тридц'''а'''тый <br>
+40th сороков'''о'''й <br>
+100th с'''о'''тый <br>
+1000th т'''ы'''сячный<br>
+10000th десятит'''ы'''сячный<br>
+1000000th милли'''о'''нный<br>
+
+{{BookCat}}

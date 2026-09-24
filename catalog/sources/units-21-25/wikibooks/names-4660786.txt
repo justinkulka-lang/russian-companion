@@ -1,0 +1,133 @@
+{{Russian}}
+
+==Russian names==
+
+Russians use three names: first name, or имя; middle or patronymic name, or отчество, which is their father's first name plus a suffix meaning "son of" (ович) or "daughter of" (овна); and the last name or family name, or фамилия. Women's last names add an а to the masculine form of the name.
+
+To address a boss, a teacher, or somebody who is older or superior in rank use the person's first name and patronymic. For instance: Василий Иванович!
+
+To address a military or police officer use the rank and the officer's family name. For instance: Рядовой Иванов (Private Ivanov).
+If you don't know the family name, use Товарищ and the rank. For instance Товарищ рядовой (Comrade private).
+
+To address a suspect, a former spouse, and other types that don't deserve the title Comrade, use гражданин fem. гражданка (citizen). For instance: Гражданин, пройдёмте. (The citizen, follow me.)
+
+The titles Господин fem. Госпожа (Mr. or Ms.) are reserved for wealthy foreigners. Ordinary citizens of foreign countries are your comrades. However, lately Russians have started to use Господин/Госпожа more frequently, especially in business circles.
+
+Russians use relatively few first names. There are only a dozen or so men's first names, and maybe three dozen women's first names. Creativity in baby-naming isn't encouraged.
+
+Russians also use diminutives or nicknames&#151;lots! Each name typically has a version used by your best friend, another used by your other friends, another used by your teachers, another used by your grandmother, another used when you are scolded, etc. Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. 
+
+===Boys first names===
+{| align="center" style="background:#fff;{{Text default color}}; width:800px; padding-left:10px;"
+!<p align="left">Russian</p>
+!<p align="left">Transcription</p>
+!<p align="left">English Equivalent/Origin/Meaning</p>
+|-
+|Александр
+|Aleksandr
+|Alexander
+|-
+|Алексей
+|Alexey
+|Greek origin
+|-
+|Андрей
+|Andrey
+|Andrew
+|-
+|Борис
+|Boris
+|Derived from Borislav, a pre-christian Slavic name meaning "good fighter"
+|-
+|Владимир
+|Vladimir
+|A pre-Christian Slavic name meaning "the Lord of the World"
+|-
+|Дмитрий
+|Dmitry
+|Greek origin
+|-
+|Николай
+|Nikolay
+|Nicholas
+|-
+|Павел
+|Pavel
+|Paul
+|-
+|Пётр
+|Pyotr
+|Peter
+|-
+|Сергей
+|Sergey
+|Latin origin
+|}
+
+===Girls first names===
+{| align="center" style="background:#fff;{{Text default color}};width:800px; padding-left:10px;"
+!<p align="left">Russian</p>
+!<p align="left">Transcription</p>
+!<p align="left">English Equivalent/Origin/Meaning</p>
+|-
+|Александра 
+|Aleksandra
+|Alexandra (Be careful! It can also be the male form in genitive; it is usually known in context)
+|-
+|Екатерина
+|Yekaterina
+|Catherine
+|-
+|Елена
+|Yelena
+|Helen
+|-
+|Ксения
+|Kseniya
+|A Russian equivalent of Oksana, from Greek Xenia
+|-
+|Мария
+|Mariya
+|Mary
+|-
+|Наталья
+|Natalya
+|Natalie
+|-
+|Оксана
+|Oksana
+|The most widespread Ukrainian female name
+|-
+|Ольга
+|Ol'ga
+|A pre-Christian name derived from Varangian Helga
+|-
+|Анна
+|Anna
+|Anne
+|-
+|Елизавета
+|Yel'izaveta
+|Elizabeth
+|-
+|Ирина
+|Yirina
+|Irene
+|-from Greek (Ειρηνη-irini=peace)
+|Юлия
+|Yuliya
+|Julia
+|-
+|Светлана 
+|Svetlana
+|Lucy, Claire, Roxanne
+|-
+|}
+
+
+
+(Source: [http://en.wikipedia.org/wiki/Russian_name Wikipedia: Russian Names])
+
+[[Russian|Back to Table of Contents]]
+
+{{BookCat}}

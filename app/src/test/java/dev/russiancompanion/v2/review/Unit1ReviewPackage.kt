@@ -26,11 +26,31 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  * Commit that contains the curriculum, validators, and review pipeline.
  * Review packets are generated in a later commit, so this value is not HEAD.
  */
-internal const val CURRICULUM_SOURCE_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
+internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
-internal const val UNIT1_REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
+internal const val UNITS_6_10_CURRICULUM_COMMIT = "c9f23afd219681319554d90424f2d59fd550cadc"
 
-internal const val REVIEW_SOURCE_COMMIT = CURRICULUM_SOURCE_COMMIT
+internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
+
+internal const val UNITS_16_20_CURRICULUM_COMMIT = "55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511"
+
+internal const val UNITS_21_25_CURRICULUM_COMMIT = "fd1f6497b235208786d0f720d71a248a22f8d69e"
+
+internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
+    in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
+    in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
+    in 6..10 -> UNITS_6_10_CURRICULUM_COMMIT
+    in 11..15 -> UNITS_11_15_CURRICULUM_COMMIT
+    in 16..20 -> UNITS_16_20_CURRICULUM_COMMIT
+    in 21..25 -> UNITS_21_25_CURRICULUM_COMMIT
+    else -> UNITS_11_15_CURRICULUM_COMMIT
+}
+
+internal const val CURRICULUM_SOURCE_COMMIT = UNITS_6_10_CURRICULUM_COMMIT
+
+internal const val UNIT1_REVIEW_SOURCE_COMMIT = UNITS_1_5_CURRICULUM_COMMIT
+
+internal const val REVIEW_SOURCE_COMMIT = UNITS_1_5_CURRICULUM_COMMIT
 
 internal fun reviewPacketName(unitNumber: Int) = "UNIT_${unitNumber}_REVIEW_PACKET.md"
 
@@ -152,6 +172,24 @@ private const val OBSERVED_EDITION_NOTES =
 private const val MAPPING_OBSERVATION_SOURCE =
     "Product Owner structural mapping input v1.0. Page numbers are printed book pages. The input is private and is not repository curriculum."
 
+private const val UNITS_11_15_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+
+private const val UNITS_11_15_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
+private const val UNITS_16_20_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+
+private const val UNITS_16_20_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
+private const val UNITS_21_25_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification."
+
+private const val UNITS_21_25_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 21-25, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -160,6 +198,8 @@ private data class StructuralMappingObservation(
     val lessonLabel: String,
     val printedPages: String,
     val topic: String,
+    val observedEditionNotes: String = OBSERVED_EDITION_NOTES,
+    val observationSource: String = MAPPING_OBSERVATION_SOURCE,
 )
 
 private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
@@ -192,6 +232,156 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Lesson 5",
         "46-55",
         "Asking questions, the prepositional case, indeclinable nouns, and dialogue work",
+    ),
+    StructuralMappingObservation(
+        6,
+        "Lesson 6",
+        "56-67",
+        "Possession, destinations and movement, the accusative, and personal-name orientation",
+    ),
+    StructuralMappingObservation(
+        7,
+        "Lesson 7",
+        "68-80",
+        "Adjectives, agreement, question and demonstrative forms, case agreement, and introductory adverbs",
+    ),
+    StructuralMappingObservation(
+        8,
+        "Lesson 8",
+        "81-91",
+        "Noun plurals, spelling rules, and availability",
+    ),
+    StructuralMappingObservation(
+        9,
+        "Lesson 9",
+        "92-106",
+        "Cardinal numbers, quantity-driven genitive, and neutral quantity practice",
+    ),
+    StructuralMappingObservation(
+        10,
+        "Lesson 10",
+        "107-121",
+        "Possession and existence, genitive pronouns and prepositions, and genitive adjective agreement",
+    ),
+    StructuralMappingObservation(
+        11,
+        "Lesson 11",
+        "122-132",
+        "Past-tense formation and use, including reflexive verbs",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        12,
+        "Lesson 12",
+        "133-148",
+        "Future formation, introductory verbal aspect, the dative case, additional spelling rules, and prepositional plural",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        13,
+        "Lesson 13",
+        "149-161",
+        "Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        14,
+        "Lesson 14",
+        "162-170",
+        "Aspect in future-tense contexts and impersonal constructions",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        15,
+        "Lesson 15",
+        "171-187",
+        "Requests, imperative forms, and consolidation of aspect use",
+        UNITS_11_15_EDITION_NOTES,
+        UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        16,
+        "Lesson 16",
+        "188-200",
+        "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        17,
+        "Lesson 17",
+        "201-214",
+        "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        18,
+        "Lesson 18",
+        "215-229",
+        "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        19,
+        "Lesson 19",
+        "230-239",
+        "Conditional constructions with бы; obligation or probability with forms of должен; productive meanings of selected verbal prefixes",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        20,
+        "Lesson 20",
+        "240-256",
+        "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        21,
+        "Lesson 21",
+        "259-270",
+        "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        22,
+        "Lesson 22",
+        "271-284",
+        "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        23,
+        "Lesson 23",
+        "285-295",
+        "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        24,
+        "Lesson 24",
+        "296-306",
+        "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of \u043d\u0435",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        25,
+        "Lesson 25",
+        "307-321",
+        "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
+        UNITS_21_25_EDITION_NOTES,
+        UNITS_21_25_OBSERVATION_SOURCE,
     ),
 )
 
@@ -613,11 +803,12 @@ internal fun validateUnitReviewFiles(pack: V2CurriculumPack, unitNumber: Int, fi
             errors += "Review package is not for Unit $unitNumber"
         }
         val recordedCommit = jsonStringField(manifest, "curriculumSourceCommit")
-        if (recordedCommit != CURRICULUM_SOURCE_COMMIT) {
+        val unitCommit = curriculumCommitForUnit(unitNumber)
+        if (recordedCommit != unitCommit) {
             errors += "Package curriculum source commit does not match the curriculum revision"
         }
         if (recordedCommit != null) {
-            errors += curriculumSourceCommitErrors(recordedCommit, reviewRepositoryRoot())
+            errors += curriculumSourceCommitErrors(recordedCommit, reviewRepositoryRoot(), unitNumber)
         }
         if (unit != null && jsonStringField(manifest, "installState") != unit.installState) {
             errors += "Package does not keep Unit $unitNumber in ${unit.installState}"
@@ -770,13 +961,16 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
             "observed_edition_notes",
             "corresponding_lesson",
             "corresponding_pages",
-            "corresponding_topic",
             "observation_source",
             "unresolved_questions",
         ).forEach { column ->
             if (Regex("[\\u0400-\\u04FF]").containsMatchIn(value(column))) {
                 errors += "Mapping worksheet introduces Russian lesson content in $column for ${row[0]}"
             }
+        }
+        val topic = value("corresponding_topic")
+        if (Regex("[\\u0400-\\u04FF]").containsMatchIn(topic) && topic != observation?.topic) {
+            errors += "Mapping worksheet introduces Russian lesson content in corresponding_topic for ${row[0]}"
         }
         if (observation != null) {
             if (value("edition_identification") != OBSERVED_EDITION_TITLE ||
@@ -797,8 +991,11 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
             if (value("corresponding_topic") != observation.topic) {
                 errors += "Mapping worksheet topic does not match the structural observation for ${row[0]}"
             }
-            if (value("observation_source") != MAPPING_OBSERVATION_SOURCE) {
+            if (value("observation_source") != observation.observationSource) {
                 errors += "Mapping worksheet observation source does not match the structural input for ${row[0]}"
+            }
+            if (value("observed_edition_notes") != observation.observedEditionNotes) {
+                errors += "Mapping worksheet edition notes do not match the structural observation for ${row[0]}"
             }
             if (value("alignment_disposition") != "PENDING_CURRICULUM_REVIEWER") {
                 errors += "Mapping worksheet disposition for ${row[0]} is not pending"
@@ -875,7 +1072,7 @@ private fun renderPacket(pack: V2CurriculumPack, review: Unit1ReviewPackage): St
         append("- Schema version: $UNIT1_REVIEW_SCHEMA_VERSION\n")
         append("- Application: $UNIT1_REVIEW_APPLICATION_ID\n")
         append("- Version: $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)\n")
-        append("- Curriculum source commit: $CURRICULUM_SOURCE_COMMIT\n")
+        append("- Curriculum source commit: ${curriculumCommitForUnit(review.unitNumber)}\n")
         append("- Unit content-review SHA-256: ${review.contentReviewDigest}\n")
         append("- Mapping-package SHA-256: ${review.mappingPackageDigest}\n")
         append("- Pack content-review SHA-256: ${review.packContentReviewDigest}\n")
@@ -937,7 +1134,7 @@ private fun renderManifest(pack: V2CurriculumPack, review: Unit1ReviewPackage): 
         append("  \"applicationId\": ${jsonString(UNIT1_REVIEW_APPLICATION_ID)},\n")
         append("  \"versionName\": ${jsonString(UNIT1_REVIEW_VERSION_NAME)},\n")
         append("  \"versionCode\": $UNIT1_REVIEW_VERSION_CODE,\n")
-        append("  \"curriculumSourceCommit\": ${jsonString(CURRICULUM_SOURCE_COMMIT)},\n")
+        append("  \"curriculumSourceCommit\": ${jsonString(curriculumCommitForUnit(review.unitNumber))},\n")
         append("  \"contentReviewDigest\": ${jsonString(review.contentReviewDigest)},\n")
         append("  \"mappingPackageDigest\": ${jsonString(review.mappingPackageDigest)},\n")
         append("  \"packContentReviewDigest\": ${jsonString(review.packContentReviewDigest)},\n")
@@ -1067,14 +1264,14 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         Schema version: $UNIT1_REVIEW_SCHEMA_VERSION
         Application: $UNIT1_REVIEW_APPLICATION_ID $UNIT1_REVIEW_VERSION_NAME ($UNIT1_REVIEW_VERSION_CODE)
-        Curriculum source commit: $CURRICULUM_SOURCE_COMMIT
+        Curriculum source commit: ${curriculumCommitForUnit(review.unitNumber)}
         Unit content-review digest: ${review.contentReviewDigest}
         Mapping-package digest: ${review.mappingPackageDigest}
         Pack content-review digest: ${review.packContentReviewDigest}
         Review-package digest: ${review.reviewPackageDigest}
         Repository source digest: ${review.repositorySourceDigest}
 
-        This packet was generated from the packaged curriculum at curriculum source commit $CURRICULUM_SOURCE_COMMIT. That commit contains the reviewed curriculum. This packet commit records that identity and does not perform review.
+        This packet was generated from the packaged curriculum at curriculum source commit ${curriculumCommitForUnit(review.unitNumber)}. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
         ## Digests
 
@@ -1102,7 +1299,7 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         ## What approval means
 
-        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit $CURRICULUM_SOURCE_COMMIT before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
+        A later approval applies only to version $UNIT1_REVIEW_VERSION_NAME, unit content-review digest ${review.contentReviewDigest}, and mapping-package digest ${review.mappingPackageDigest}. Confirm review-package digest ${review.reviewPackageDigest} and curriculum source commit ${curriculumCommitForUnit(review.unitNumber)} before relying on this packet. Any later substantive instructional change reachable from Unit ${review.unitNumber} invalidates this unit's content approval. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank until that human review happens. Allowed linguistic-review disposition values are APPROVED, CORRECTION_REQUIRED, and REJECTED. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER.
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
@@ -1265,7 +1462,32 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
             "objectiveId=${item.objectiveId}",
             "containsGeneratedRussian=${item.containsGeneratedRussian}",
             "reviewStatus=${item.reviewStatus}",
-        ).joinToString("\n"),
+        ).let { lines ->
+            val withRationales = if (item.distractorRationales.isEmpty()) {
+                lines
+            } else {
+                lines + "distractorRationales=${item.distractorRationales.joinToString(" | ")}"
+            }
+            val assessment = item.assessment ?: return@let withRationales
+            withRationales + listOf(
+                "testedFeature=${assessment.testedFeature}",
+                "evidenceMode=${assessment.evidenceMode}",
+                "contrastSetId=${assessment.contrastSetId}",
+                "cueLanguage=${assessment.cueLanguage}",
+                "independent=${assessment.independent}",
+                "answerSourceIds=${assessment.answerSourceIds.joinToString(" | ")}",
+                "distractorSourceIds=${assessment.distractorSourceIds.joinToString(" | ")}",
+                "distractorDifference=${assessment.distractorDifference.joinToString(" | ")}",
+                "whyAnswerDemonstratesObjective=${assessment.whyAnswerDemonstratesObjective}",
+                "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
+                "relationKind=${assessment.relationKind}",
+                "relationParticipantIds=${assessment.relationParticipantIds.joinToString(" | ")}",
+            ) + if (assessment.responseKind.isBlank()) {
+                emptyList()
+            } else {
+                listOf("responseKind=${assessment.responseKind}")
+            }
+        }.joinToString("\n"),
         sourceId = item.sourceId,
         rightsIds = rightsIds(pack, item.sourceId),
         classification = "",
@@ -1442,12 +1664,12 @@ internal fun governedMappingFacts(unitNumber: Int): MappingPackageFacts {
         editionTitle = OBSERVED_EDITION_TITLE,
         author = OBSERVED_EDITION_AUTHOR,
         publisherImprint = OBSERVED_PUBLISHER_IMPRINT,
-        observedEditionNotes = OBSERVED_EDITION_NOTES,
+        observedEditionNotes = observation.observedEditionNotes,
         proposedLessonNumber = observation.lessonLabel.removePrefix("Lesson ").toInt(),
         printedPageStart = pages[0].toInt(),
         printedPageEnd = pages[1].toInt(),
         topicDescription = observation.topic,
-        observationSource = MAPPING_OBSERVATION_SOURCE,
+        observationSource = observation.observationSource,
         isbnObservation = "UNRESOLVED",
         isbn = null,
         mappingDisposition = "PENDING_CURRICULUM_REVIEWER",
@@ -1518,7 +1740,7 @@ private fun reviewPackageDigest(
             "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
             "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
-            "curriculumSourceCommit" to canonStr(CURRICULUM_SOURCE_COMMIT),
+            "curriculumSourceCommit" to canonStr(curriculumCommitForUnit(unitNumber)),
             "contentReviewDigest" to canonStr(contentReviewDigest),
             "mappingPackageDigest" to canonStr(mappingPackageDigest),
             "unitReviewStatus" to canonStr(linguisticReviewStatus),
@@ -1572,7 +1794,7 @@ private fun canonStr(value: String): String = jsonString(value)
 internal fun reviewRepositoryRoot(): File =
     listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 
-internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File): List<String> {
+internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File, unitNumber: Int): List<String> {
     val errors = mutableListOf<String>()
     if (!Regex("[0-9a-f]{40}").matches(recorded)) {
         errors += "Curriculum source commit is not a full commit id"
@@ -1596,16 +1818,11 @@ internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File
     }
     val current = File(repositoryRoot, "app/src/main/assets/content/v2-curriculum.json")
     val currentText = if (current.isFile) current.readText() else ""
-    if (currentText != committed) {
-        errors += "Curriculum source commit does not contain this revision's governed curriculum"
-    }
     try {
         val recordedPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(committed)
         val headPack = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(currentText)
-        (1..30).forEach { number ->
-            if (V2Validator.unitContentReviewDigest(recordedPack, number) != V2Validator.unitContentReviewDigest(headPack, number)) {
-                errors += "Unit $number content-review digest at the curriculum source commit does not match this revision"
-            }
+        if (V2Validator.unitContentReviewDigest(recordedPack, unitNumber) != V2Validator.unitContentReviewDigest(headPack, unitNumber)) {
+            errors += "Unit $unitNumber content-review digest at the curriculum source commit does not match this revision"
         }
     } catch (_: RuntimeException) {
         errors += "Curriculum source commit does not contain a readable curriculum"

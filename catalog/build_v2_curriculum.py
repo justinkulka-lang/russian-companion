@@ -9,7 +9,7 @@ review and an owned-edition mapping. Units 3–5 are DEVELOPMENT units with
 proposed curriculum taken only from frozen CC BY-SA 4.0 sources. They are
 not installed, not review-approved, and not mapping-approved. Units 1–2
 advancement checks are letter identities, print pairs, confusable forms,
-and signs. Units 3–5 checks use admitted source records only.
+and signs. Units 3–10 checks use admitted source records only. Units 6–10 are the same kind of proposed, review-pending curriculum.
 """
 
 from __future__ import annotations
@@ -18,6 +18,10 @@ import json
 from pathlib import Path
 
 from units_3_5_intake import build_units_3_5
+from units_6_10_intake import build_units_6_10
+from units_11_15_intake import build_units_11_15
+from units_16_20_intake import build_units_16_20
+from units_21_25_intake import build_units_21_25
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -92,16 +96,16 @@ UNITS_3_30 = [
     (13, "Aspect in the past", "Aspect in the past, tense use, infinitive aspect, and reported speech"),
     (14, "Aspect in the future", "Aspect in the future and impersonal constructions"),
     (15, "Requests", "Requests, the imperative, and consolidation of aspect use"),
-    (16, "Instrumental", "Instrumental case, selected demonstratives, and surname declension"),
-    (17, "Time and dates", "Time, date, age, ordinal numbers, months, and years"),
-    (18, "Comparison", "Comparative, superlative, and relative clauses"),
-    (19, "Conditionals", "Conditional, obligation, and prefixes"),
-    (20, "Motion verbs", "Verbs of motion: going, running, and bringing"),
-    (21, "Purpose", "Further possession and purpose"),
-    (22, "Number forms", "Number declension, both, collective numerals, and fractions"),
-    (23, "Duration", "Time expressions covering when and duration"),
-    (24, "Negation", "Negation and placement of the particle не"),
-    (25, "Names and politeness", "Diminutives, proper names, and politeness"),
+    (16, "Instrumental", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
+    (17, "Time and dates", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
+    (18, "Comparison", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+    (19, "Conditionals", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
+    (20, "Motion verbs", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs"),
+    (21, "Possession", "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses"),
+    (22, "Numerals", "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions"),
+    (23, "Duration", "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period"),
+    (24, "Negation", "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не"),
+    (25, "Names", "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions"),
     (26, "Word order", "Indefinite pronouns, word order, and letter writing"),
     (27, "Participles", "Participles: types and stress"),
     (28, "Verbal adverbs", "Verbal adverbs"),
@@ -1388,9 +1392,9 @@ def build() -> dict:
         ),
         reference(
             "ref-book-topics",
-            "Later lesson topics stay in the book",
-            "Units 6 and later do not contain lesson bodies.",
-            "Units 3–5 contain proposed licensed records that still need qualified review. Open the matching lesson in the copy you own. This reference does not approve those records.",
+            "Where lesson bodies are packaged",
+            "Some units contain proposed lesson bodies that still require qualified review.",
+            "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
             3,
             "OPERATIONAL_GUIDANCE",
             "NOT_REQUIRED",
@@ -1437,11 +1441,35 @@ def build() -> dict:
         }
 
     proposed = build_units_3_5()
+    later = build_units_6_10()
+    following = build_units_11_15()
+    intake = build_units_16_20()
+    later_intake = build_units_21_25()
     items.extend(proposed["items"])
+    items.extend(later["items"])
+    items.extend(following["items"])
+    items.extend(intake["items"])
+    items.extend(later_intake["items"])
     examples.extend(proposed["examples"])
+    examples.extend(later["examples"])
+    examples.extend(following["examples"])
+    examples.extend(intake["examples"])
+    examples.extend(later_intake["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in later["units"]:
+        objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in following["units"]:
+        objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in intake["units"]:
+        objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in later_intake["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
+    references.extend(later["references"])
+    references.extend(following["references"])
+    references.extend(intake["references"])
+    references.extend(later_intake["references"])
 
     units = [
         development_unit(
@@ -1501,8 +1529,142 @@ def build() -> dict:
             minimum_checks=proposed["units"][2]["minimum_checks"],
         ),
     ]
+    later_by_number = {unit["number"]: unit for unit in later["units"]}
     for number, short, title in UNITS_3_30:
-        if number <= 5:
+        if number < 6 or number > 10:
+            continue
+        proposed_unit = later_by_number[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                (
+                    "Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed."
+                    if number == 7
+                    else f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
+                ),
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED" if number == 7 else "CONTENT_COMPLETE_REVIEW_PENDING",
+                mapping_note=(
+                    "The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                    if number == 7
+                    else "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=proposed_unit["minimum_checks"],
+            )
+        )
+    following_by_number = {unit["number"]: unit for unit in following["units"]}
+    following_pages = {
+        11: ("122-132", "Past-tense formation and use, including reflexive verbs"),
+        12: ("133-148", "Future formation, introductory verbal aspect, the dative case, additional spelling rules, and prepositional plural"),
+        13: ("149-161", "Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech"),
+        14: ("162-170", "Aspect in future-tense contexts and impersonal constructions"),
+        15: ("171-187", "Requests, imperative forms, and consolidation of aspect use"),
+    }
+    for number, short, title in UNITS_3_30:
+        if number < 11 or number > 15:
+            continue
+        proposed_unit = following_by_number[number]
+        pages, topic = following_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=proposed_unit["minimum_checks"],
+            )
+        )
+    intake_by_number = {unit["number"]: unit for unit in intake["units"]}
+    intake_pages = {
+        16: ("188-200", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
+        17: ("201-214", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
+        18: ("215-229", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+        19: ("230-239", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
+        20: ("240-256", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20"),
+    }
+    intake_summaries = {
+        16: "Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        18: "Proposed Unit 18 is in development and is not prepared. Comparison and relative-clause agreement have no admitted frozen instructional source. The frozen adjective page is not a comparison source. It is not installed and the owned-edition mapping is not signed.",
+        19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        20: "Proposed Unit 20 is in development and is not prepared. Unidirectional and multidirectional motion pairs have no admitted frozen instructional source. A red link, a general page, and dictionary rows are not that source. It is not installed and the owned-edition mapping is not signed.",
+    }
+    for number, short, title in UNITS_3_30:
+        if number < 16 or number > 20:
+            continue
+        proposed_unit = intake_by_number[number]
+        pages, topic = intake_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                intake_summaries[number],
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=max(proposed_unit["minimum_checks"], 1),
+            )
+        )
+    next_intake_by_number = {unit["number"]: unit for unit in later_intake["units"]}
+    next_intake_pages = {
+        21: ("259-270", "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses"),
+        22: ("271-284", "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions"),
+        23: ("285-295", "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period"),
+        24: ("296-306", "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не"),
+        25: ("307-321", "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions"),
+    }
+    next_intake_summaries = {
+        21: "Proposed Unit 21 is in development and is not prepared. Admitted object-possession lines await qualified review. Reflexive object reference and purpose clauses have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        22: "Proposed Unit 22 is in development and is not prepared. Admitted item-form lines and last-digit examples await qualified review. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        23: "Proposed Unit 23 is in development and is not prepared. Elapsed time and duration have no admitted frozen instructional source. Hour, year, and minute rows are not duration instruction. It is not installed and the owned-edition mapping is not signed.",
+        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines and the absence form await qualified review. Object-form choice under negation, negative stand-in forms, and placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, and courtesy lines await qualified review. A general nickname-formation rule and modern address guidance have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+    }
+    for number, short, title in UNITS_3_30:
+        if number < 21 or number > 25:
+            continue
+        proposed_unit = next_intake_by_number[number]
+        pages, topic = next_intake_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                next_intake_summaries[number],
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=max(proposed_unit["minimum_checks"], 1),
+            )
+        )
+    for number, short, title in UNITS_3_30:
+        if number <= 25:
             continue
         units.append(
             {
@@ -1530,7 +1692,7 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 6)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 26)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
         "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
@@ -1541,8 +1703,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": proposed["provenance"],
-        "authoredEnglishRecords": proposed["authored"],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

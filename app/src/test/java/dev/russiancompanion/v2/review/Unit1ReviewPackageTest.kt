@@ -184,7 +184,9 @@ class Unit1ReviewPackageTest {
         assertFalse(File(repo(), "app/src/main/AndroidManifest.xml").readText().contains("INTERNET"))
         assertEquals("DEVELOPMENT", pack().unit(1)!!.installState)
         assertEquals("DEVELOPMENT", pack().unit(2)!!.installState)
-        assertTrue(pack().units.drop(5).all { it.installState == "NOT_YET_INSTALLED" })
+        assertTrue(pack().units.none { it.installState == "INSTALLED" })
+        assertTrue((16..20).all { pack().unit(it)!!.installState == "DEVELOPMENT" })
+        assertTrue(pack().units.drop(25).all { it.installState == "NOT_YET_INSTALLED" })
     }
 
     @Test

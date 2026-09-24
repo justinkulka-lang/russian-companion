@@ -1,0 +1,193 @@
+The genitive case has four main uses: to denote possession ('Michael's car', meaning 'the car of Michael'), to denote number ('five apples'), in negative constructions ('there are no books'), and after several important prepositions ('without me').
+
+== Usage ==
+The genitive case is the third most commonly used case, after the nominative and accusative, and has four main uses.
+
+=== Counting ===
+When denoting how many of something you have, we usually place the object in question in the genitive case. However, Russian has some key differences to English:
+* If the number is 1 or ends in ''один'', use ''nominative singular'':
+:There is one cat - '''Есть оди́н кот'''
+:He knows twenty-one words - '''Он зна́ет два́дцать одно́ сло́во'''
+* If the number ends in 2, 3 or 4 use the ''genitive singular'':
+:Two roubles - '''Два рубля́'''
+:22 kopecks - '''Два́дцать две копе́йки'''
+* If the number ends in 5, 6, 7, 8, 9, 0 or '-надцать' use the ''genitive plural'':
+:Five roubles - '''Пять рубле́й'''
+:25 kopecks - '''Два́дцать пять копе́ек'''
+<br>
+Notice that for the ''teens'' (11, 12, 13, 14, ... 19) ending on ''-надцать'' always the last rule is to be applied, no matter what digit they end on.
+
+<br>
+There are also other quantity words that take the genitive, either singular or plural according to meaning:
+*'''Мно́го''' - a lot, many, much
+*'''Не́сколько''' - a few, not many
+*'''Ма́ло''' - few, little
+*'''Ско́лько''' - how much? how many?
+
+Examples:
+:A lot of money - '''Мно́го де́нег'''
+:Many apples - '''Мно́го я́блок'''
+:A few months - '''Не́сколько ме́сяцев'''
+:Few beers - '''Ма́ло пив'''
+:How many pounds? - '''Ско́лько фунтов?'''
+
+The effective difference between '''не́сколько''' and '''ма́ло''' is like that between 'a few' and 'few' - one denotes a quantity that is just enough ('I have a few friends here'), while the other denotes an insufficient quantity ('I have few friends here'). That said, though, they are largely interchangeable.
+
+=== Possession and Negation ===
+To denote something as belonging to something else, you place the owner in the genitive case:
+:This is David's house - '''Э́то - дом Дэвида'''
+:This is Ivan's brother - '''Э́то - брат Ива́на'''
+Note that (unlike English'' 's'' forms and Russian possessive adjectives and pronouns) Russian possessive genitives are usually ''postpositional''.
+
+Another use of the genitive is in the phrase "I have...". Though Russian does have the verb 'to have' ('''иметь'''), it is rarely used. Instead, Russians use the following construction to say "I have X": '''У меня есть Х'''.
+This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''
+To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.
+:Do you have a son? - '''У вас есть сын?'''
+:Yes, I have a son - '''Да, у меня есть сын.'''
+:Yes, I do - '''Да, есть.'''
+
+'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:
+:There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''
+:There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''
+
+Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.
+:There are no restaurants - '''Нет рестора́нов'''
+:There are no old buildings in Moscow - '''В Москве́ нет ста́рых зда́ний'''
+
+So, combining the above, to say 'I ''don't'' have...' is constructed as ''''У меня нет...'''', followed by the ''genitive'' case.
+:Do you have a son? - '''У вас есть сын?'''
+:No, I don't have a son - '''У меня́ нет сы́на'''
+:My brother doesn't have any money - '''У моего́ бра́та нет де́нег'''
+
+=== Prepositions ===
+We've already seen how '''у''' commands the genitive case to roughly mean 'by', but many more prepositions use the genitive. The four most common, including '''у''', are:
+*'''Для''' - for, for the benefit of
+:I want a present for my friend - '''Я хочу́ пода́рок для моего́ дру́га'''
+:He did this for her - '''Он э́то сде́лал для неё'''
+*'''У''' - by, near
+:I am standing by the fence - '''Я стою́ у забо́ра'''
+:She is sitting by the window - '''Она сидит у окна́'''
+:Your husband has one friend - '''У твоего́ му́жа есть оди́н друг'''
+*'''Без''' - without
+:He will drive without you - '''Он пое́дет без тебя́'''
+:Black coffee - '''Ко́фе без молока́'''
+*'''Из''' - from, out of (the opposite of '''в''' + ''acc'', 'into')
+:I'm from England - '''Я из А́нглии'''
+:She's arrived from work - '''Она́ пришла́ с рабо́ты'''
+*'''От''' - away from
+:Get away from the grass - '''Отойти от травы'''
+
+== Nouns ==
+=== Singular ===
+Masculine nouns:
+* if it ends in a consonant, add -а
+* if it ends in й, replace with я 
+* if it ends in ь, replace with я
+
+Neuter nouns:
+* if it ends in о, replace with а
+* if it ends in е, replace with я
+
+Notice that these are the same rules for masculine animate nouns in the accusative case. Similarly, feminine nouns use the same rules as the nominative plural:
+* Replace '''-a''' with '''-ы'''.
+* Replace '''-я''' and '''-ь''' with '''-и'''.
+* If '''-а''' is preceded by one of the 'seven consonants', replace it instead with a '''-и'''.
+
+=== Plural ===
+The genitive plural is by far the most complicated ending in Russian, and is also the one with the most exceptions. However, as these rules are also the same for the accusative plural of animate nouns, they are also very commonly used:
+* Masculine nouns ending in a consonant add '''-ов''' in the genitive plural.
+:Table, five tables - '''Стол, пять столов'''
+* Nouns ending in '''-й''' or '''-ц''' are replaced by '''-ев'''.
+:Museum, six museums - '''Музе́й, шесть музе́ев'''
+* Nouns ending in '''-ь''', '''-е''', or one of the 'hushes' ('''-ш''', '''-щ''', '''-ж''', '''-ч''') add '''-ей'''.
+:Thing, ten things - '''Вещь, десять веще́й'''
+* Feminine nouns ending in a consonant and '''-я''' replace the '''-я''' with '''-ь'''. If they end in a vowel and '''-я''', replace the '''-я''' with '''-й'''.
+:Week, seven weeks - '''Неде́ля, семь неде́ль'''
+* Feminine nouns lose their '''-a''', and neuter nouns lose their '''-o'''.
+:Book, eight books - '''Кни́га, во́семь книг'''
+
+In the case of awkward consonant clusters resulting from dropping ending vowels, it is common for '''o''' or '''e''' to be added between the consonants: '''марка''' - '''марок''', '''англичанка''' - '''англичанок'''.
+
+==Adjectives==
+=== Usage ===
+Adjectives take the number, gender, and case of the noun they modify. However, there is a peculiarity in Russian when counting: though we use the genitive singular on nouns that are numbered 2, 3, 4, 22, 23, 24, etc, we use the genitive ''plural'' for any adjectives attached to that noun:
+:Three bookshops - '''Три кни́жных магази́на'''
+:Five bookshops - '''Пять книжных магази́нов'''
+:He knows 102 Russian words - '''Он зна́ет сто два ру́сских сло́ва'''
+:He knows 106 Russian words - '''Он зна́ет сто шесть ру́сских слов'''
+
+=== Conjugation ===
+Like nouns, masculine and neuter adjectives have the same ending in the genitive singular, '''-ого''', pronounced 'oh-vo'. If the adjectival stem ends in '''ж''', '''ч''', '''ш''', '''щ''', or '''ц''', the ending is '''-его''', pronounced 'ye-vo'. Notice that this is the same ending for masculine animate adjectives in the accusative case.
+Similarly, feminine adjectives in the genitive case have the same ending as the prepositional case: '''-ой''', or, after the same five 'hush' consonants, '''-ей'''.
+:A kilogram of good Russian cheese - '''Кило́ хоро́шего ру́сского сы́ра'''
+:A kilogram of good Russian sausage - '''Кило́ хоро́шей ру́сской колбасы́'''
+
+To form the plural, the ending for all genders is simply '''-ых''', or, if the stem ends in '''к, г, х, ш, щ, ж''', or '''ч''', the ending is '''-их''',
+:A kilogram of clean fresh apples - '''Кило́ чи́стых све́жих я́блок'''
+
+== Personal Pronouns==
+To use personal pronouns refer to the following table:
+{| class="wikitable"
+|-
+! '''English''' || I || We || You || You || He/she/it|| They
+|-
+! '''Nominative'''
+| Я || Мы || Ты || Вы || Он/она/оно || Они
+|-
+! '''Genitive'''
+| Меня́ || Нас || Тебя́ || Вас || Его́/её || Их
+|}
+
+Notice that the genitive for 'of him' and 'of it' are the same: '''его́'''. Also, when the genitive is called by a preposition, '''его''', '''её''', and '''их''' have an '''н''' preceding them:
+:For him/it - '''Для него́'''
+:Without her - '''Без неё'''
+
+Other pronouns are conjugated as follows:
+
+{| class="wikitable"
+|-
+! Of this <small>(mn/f/pl)</small> || Of that <small>(mn/f/pl)</small> || Of all <small>(mn/f/pl)</small> || Of one's own <small>(mn/f/pl)</small> || Of what? || Of whom?
+|-
+| Э́того́ / э́той / э́тих || Того́ / той / тех || Всего́ / всей / всех || Своего́ / своей / своих || Чего || Кого
+|}
+
+Notice that, where available, variants of a word in the genitive are given in the order masculine/neuter, then feminine, and then plural.
+
+==Possessive Pronouns==
+Like personal pronouns, refer to this table for the possessive pronouns:
+{| class="wikitable"
+|-
+! English !! Masculine/Neuter !! Feminine !! Plural
+|-
+! of my
+| '''Моего́'''
+| '''Мое́й''' || '''Мои́х '''
+|-
+! of our
+| '''На́шего''' || '''На́шей''' || '''На́ших'''
+|-
+! of your
+| '''Твоего́''' || '''Твое́й''' || '''Твои́х'''
+|-
+! of your
+| '''Ва́шего''' || '''Ва́шей''' || '''Ва́ших'''
+|}
+
+As ever, possessive pronouns conjugate almost exactly like adjectives. For third person possessive pronouns (of his, of her, of its, of their), use '''его''', '''её''', or '''их''', regardless of the gender of the modified noun.
+
+Examples:
+:The roof of my house - '''Крыша моего дома'''
+:The brother of his uncle - '''Брат его дяди'''
+:The sister of his aunt - '''Сестра́ его тёти'''
+:The brother of my wife - '''брат моей жены'''
+:The wife of my brother - '''жена моего брата'''
+:My brother is older than your sister - '''Мой брат старше твоей сестры'''
+:Without his chair - '''Без его сту́ла'''
+:Without his letter - '''Без его письма́'''
+<br/>
+----
+* [[Russian:Grammar/Dative|Next: Dative case]]
+* [[Russian|Back to Table of Contents]]
+
+{{BookCat}}
+{{Russian}}

@@ -50,6 +50,7 @@ internal fun installLabel(unit: V2Unit): String = when (unit.installState) {
 }
 
 internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
+    "NOT_PREPARED" -> "Not prepared"
     "CONTENT_COMPLETE_REVIEW_PENDING" -> "Content complete, review pending"
     "REVIEW_APPROVED" -> "Review approved"
     "MAPPING_APPROVED" -> "Mapping approved"
@@ -187,6 +188,9 @@ internal fun advancementDecision(
 ): V2AdvancementDecision {
     val rule = unit.advancement ?: return V2AdvancementDecision(false, listOf("This unit has no advancement rule."))
     val remaining = mutableListOf<String>()
+    if (unit.number in 16..25 && unit.readiness == "NOT_PREPARED") {
+        remaining += "This unit is not prepared"
+    }
     if (rule.requireInstruction) {
         val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
         if (instructionSteps.any { it.id !in learner.completedStepIds }) {

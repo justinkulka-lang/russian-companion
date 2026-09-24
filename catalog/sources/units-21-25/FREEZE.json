@@ -1,0 +1,178 @@
+{
+  "retrieved": "2026-09-24",
+  "license": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "retainedTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
+    "retainedTextSha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+    "statement": "The frozen Wikibooks:Copyrights oldid 4622060 states that Wikibooks text is available under Creative Commons Attribution-ShareAlike 4.0. Page history for each frozen oldid identifies the contributors. Linked media is not covered by that page-text license."
+  },
+  "decisions": [
+    {
+      "id": "wikibooks-possessive-pronouns-4220315",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "свой agreement examples and the source rule that свой follows the possessed object. себя and чтобы are not on this page."
+    },
+    {
+      "id": "wikibooks-numbers-4371358",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Cardinal compounds, ordinal list forms, and nominative or inanimate-accusative noun-form examples. General numeral declension, оба, обе, полтора, полторы, collective numerals, and duration grammar are not established."
+    },
+    {
+      "id": "wikibooks-verbs-4233876",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "не placed before a verb, and есть replaced by нет. Accusative versus genitive under verbal negation, negative pronouns, and scope-sensitive placement are not established."
+    },
+    {
+      "id": "wikibooks-cases-4195114",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Existential absence stated as нет followed by the genitive. The accusative and genitive alternation under verbal negation is not established."
+    },
+    {
+      "id": "wikibooks-names-4660786",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Personal-name structure, the source patronymic address example, listed full names, and the source-listed Latin diminutive pairs. Dated social, title, citizen, foreigner, creativity, and name-count claims are not shipped."
+    },
+    {
+      "id": "wikibooks-useful-words-3353859",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Source-listed please, thanks, apology, and formal-name question lines. Linked audio is not admitted."
+    },
+    {
+      "id": "wikibooks-names-dated-claims-4660786",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Claims about people who do not deserve Comrade, wealthy foreigners, ordinary foreign citizens, a dozen names, and discouraged naming creativity stay out of learner-facing content."
+    },
+    {
+      "id": "wikibooks-useful-words-linked-audio-3353859",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "MediaWiki audio links on the useful-words page are not admitted. No audio file, byte hash, or verified text match is retained."
+    },
+    {
+      "id": "openrussian-50e210c4803237779cb562bc1abcea529066031c",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "No exact lexical row is required for these strands. Dictionary rows are not used to infer grammar."
+    },
+    {
+      "id": "penguin-private-pdf",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "The private owned PDF is an observation source only. Its prose, examples, exercises, and page images are not admitted."
+    }
+  ],
+  "wikibooks": {
+    "pages": [
+      {
+        "key": "possessive",
+        "title": "Russian/Possessive_Pronouns",
+        "oldid": "4220315",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4220315&title=Russian/Possessive_Pronouns",
+        "file": "wikibooks/possessive-pronouns-4220315.txt",
+        "sha256": "9467e696bca4d8359bcc369cf77a97c779a0a1f5b5dc343381d6a379b7b87e2e",
+        "revisionFile": "wikibooks/possessive-pronouns-4220315.revision.json",
+        "mediawikiSha1": "46e34b246ad4095453b49064986768ac1d8c5bb6",
+        "parentid": 4220261,
+        "timestamp": "2022-12-17T16:41:21Z",
+        "size": 7045,
+        "retrieved": "2026-09-24"
+      },
+      {
+        "key": "numbers",
+        "title": "Russian/Numbers",
+        "oldid": "4371358",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4371358&title=Russian/Numbers",
+        "file": "../units-6-10/wikibooks/numbers-4371358.txt",
+        "sha256": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+        "revisionFile": "../units-6-10/wikibooks/numbers-4371358.revision.json",
+        "mediawikiSha1": "13c19a1bb67ef9fe0016de4708b157bb60b6a1d2",
+        "parentid": 3438262,
+        "timestamp": "2024-02-17T05:41:29Z",
+        "size": 6548,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-6-10"
+      },
+      {
+        "key": "verbs",
+        "title": "Russian/Grammar/Verbs",
+        "oldid": "4233876",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4233876&title=Russian/Grammar/Verbs",
+        "file": "../units-3-5/wikibooks/verbs-4233876.txt",
+        "sha256": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
+        "revisionFile": "../units-3-5/wikibooks/verbs-4233876.revision.json",
+        "mediawikiSha1": "ead519a34f238de6a6bdd8c2473f719edc1e2105",
+        "parentid": 4219484,
+        "timestamp": "2023-01-31T14:28:09Z",
+        "size": 13603,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "cases",
+        "title": "Russian/Grammar/Cases",
+        "oldid": "4195114",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4195114&title=Russian/Grammar/Cases",
+        "file": "../units-3-5/wikibooks/cases-4195114.txt",
+        "sha256": "ed6e661353627ea6ec98bba7421fbd935dfe29d58f0b7e40e3c6ea3fe5b5cdc7",
+        "revisionFile": "../units-3-5/wikibooks/cases-4195114.revision.json",
+        "mediawikiSha1": "460c5b1498122f57faf0003ce2b7e6f12c89ac21",
+        "parentid": 4195080,
+        "timestamp": "2022-10-18T09:39:47Z",
+        "size": 14526,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "names",
+        "title": "Russian/Names",
+        "oldid": "4660786",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4660786&title=Russian/Names",
+        "file": "wikibooks/names-4660786.txt",
+        "sha256": "06d32a65cd43133091804a8d10e291e7c98e0d6712d9639a8d8f94ed9ea05476",
+        "revisionFile": "wikibooks/names-4660786.revision.json",
+        "mediawikiSha1": "24799b47fa31758a1387da9fc8a458fb9d99b91b",
+        "parentid": 4008145,
+        "timestamp": "2026-08-17T22:28:41Z",
+        "size": 3759,
+        "retrieved": "2026-09-24"
+      },
+      {
+        "key": "useful",
+        "title": "Russian/Useful_Words_and_Expressions",
+        "oldid": "3353859",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=3353859&title=Russian/Useful_Words_and_Expressions",
+        "file": "wikibooks/useful-words-3353859.txt",
+        "sha256": "83dc390142f8b11ddeaf9ffee22880b9beb169e9234789bc3bab40bf695e0108",
+        "revisionFile": "wikibooks/useful-words-3353859.revision.json",
+        "mediawikiSha1": "bae94fe605be73ba5d519d67d8843703511fad76",
+        "parentid": 3112536,
+        "timestamp": "2017-12-25T06:15:11Z",
+        "size": 4541,
+        "retrieved": "2026-09-24"
+      },
+      {
+        "key": "copyrights",
+        "title": "Wikibooks:Copyrights",
+        "oldid": "4622060",
+        "url": "https://en.wikibooks.org/w/index.php?oldid=4622060&title=Wikibooks:Copyrights",
+        "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "revisionFile": "../units-3-5/wikibooks/copyrights-4622060.revision.json",
+        "mediawikiSha1": "dbf362ec2b5eb1d35827938654d19c5b69280e5b",
+        "parentid": 4534940,
+        "timestamp": "2026-03-09T17:30:11Z",
+        "size": 10475,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-3-5"
+      }
+    ]
+  }
+}

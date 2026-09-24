@@ -1,0 +1,229 @@
+<div style="text-align: center">
+  
+{| border="1"
+|-
+! rowspan="3" |
+! colspan="7" | possessor
+|-
+! colspan="4" | singular
+! colspan="3" | plural
+|-
+! 1 (я)
+! 2 (ты)
+! 3<em>m</em> (он)
+! 3<em>f</em> (она́)
+! 1 (мы)
+! 2 (вы)
+! 3 (они́)
+|-
+! nom
+|
+мо<strong>й</strong><br/>
+мо<strong>я́</strong><br/>
+мо<strong>ё</strong><br/>
+мо<strong>и́</strong>
+|
+тво<strong>й</strong><br/>
+тво<strong>я́</strong><br/>
+тво<strong>ё</strong><br/>
+тво<strong>и́</strong>
+| rowspan="6" | его́ || rowspan="6" | её
+|
+наш<br/>
+на́ш<strong>а</strong><br/>
+на́ш<strong>е</strong><br/>
+на́ш<strong>и</strong>
+|
+ваш<br/>
+ва́ш<strong>а</strong><br/>
+ва́ш<strong>е</strong><br/>
+ва́ш<strong>и</strong>
+| rowspan="6" | их
+|-
+! gen
+|
+мо<strong>его́</strong><br/>
+мо<strong>е́й</strong><br/>
+мо<strong>его́</strong><br/>
+мо<strong>и́х</strong><br/>
+|
+тво<strong>его́</strong><br/>
+тво<strong>е́й</strong><br/>
+тво<strong>его́</strong><br/>
+тво<strong>и́х</strong><br/>
+|
+на́ш<strong>его</strong><br/>
+на́ш<strong>ей</strong><br/>
+на́ш<strong>его</strong><br/>
+на́ш<strong>их</strong><br/>
+|
+ва́ш<strong>его</strong><br/>
+ва́ш<strong>ей</strong><br/>
+ва́ш<strong>его</strong><br/>
+ва́ш<strong>их</strong><br/>
+|-
+! dat
+|
+мо<strong>ему́</strong><br/>
+мо<strong>е́й</strong><br/>
+мо<strong>ему́</strong><br/>
+мо<strong>и́м</strong><br/>
+|
+тво<strong>ему́</strong><br/>
+тво<strong>е́й</strong><br/>
+тво<strong>ему́</strong><br/>
+тво<strong>и́м</strong><br/>
+|
+на́ш<strong>ему</strong><br/>
+на́ш<strong>ей</strong><br/>
+на́ш<strong>ему</strong><br/>
+на́ш<strong>им</strong><br/>
+|
+ва́ш<strong>ему</strong><br/>
+ва́ш<strong>ей</strong><br/>
+ва́ш<strong>ему</strong><br/>
+ва́ш<strong>им</strong><br/>
+|-
+! acc
+|
+{|
+|- style="font-style: italic;"
+| inan || anim
+|-
+| мо<strong>й</strong> || мо<strong>его́</strong>
+|-
+| colspan="2" | мо<strong>ю́</strong>
+|-
+| colspan="2" | мо<strong>ё</strong>
+|-
+| мо<strong>и́</strong> || мо<strong>и́х</strong>
+|}
+|
+{|
+|- style="font-style: italic;"
+| inan || anim
+|-
+| тво<strong>й</strong> || тво<strong>его́</strong>
+|-
+| colspan="2" | тво<strong>ю́</strong>
+|-
+| colspan="2" | тво<strong>ё</strong>
+|-
+| тво<strong>и́</strong> || тво<strong>и́х</strong>
+|}
+|
+{|
+|- style="font-style: italic;"
+| inan || anim
+|-
+| наш || на́ш<strong>его</strong>
+|-
+| colspan="2" | на́ш<strong>у</strong>
+|-
+| colspan="2" | на́ш<strong>е</strong>
+|-
+| на́ш<strong>и</strong> || на́ш<strong>их</strong>
+|}
+|
+{|
+|- style="font-style: italic;"
+| inan || anim
+|-
+| ваш || ва́ш<strong>его</strong>
+|-
+| colspan="2" | ва́ш<strong>у</strong>
+|-
+| colspan="2" | ва́ш<strong>е</strong>
+|-
+| ва́ш<strong>и</strong> || ва́ш<strong>их</strong>
+|}
+|-
+! inst
+|
+мо<strong>и́м</strong><br/>
+мо<strong>е́й</strong><br/>
+мо<strong>и́м</strong><br/>
+мо<strong>и́ми</strong><br/>
+|
+тво<strong>и́м</strong><br/>
+тво<strong>е́й</strong><br/>
+тво<strong>и́м</strong><br/>
+тво<strong>и́ми</strong><br/>
+|
+на́ш<strong>им</strong><br/>
+на́ш<strong>ей</strong><br/>
+на́ш<strong>им</strong><br/>
+на́ш<strong>ими</strong><br/>
+|
+ва́ш<strong>им</strong><br/>
+ва́ш<strong>ей</strong><br/>
+ва́ш<strong>им</strong><br/>
+ва́ш<strong>ими</strong><br/>
+|-
+! prep
+|
+мо<strong>ём</strong><br/>
+мо<strong>е́й</strong><br/>
+мо<strong>ём</strong><br/>
+мо<strong>и́х</strong>
+|
+тво<strong>ём</strong><br/>
+тво<strong>е́й</strong><br/>
+тво<strong>ём</strong><br/>
+тво<strong>и́х</strong>
+|
+на́ш<strong>ем</strong><br/>
+на́ш<strong>ей</strong><br/>
+на́ш<strong>ем</strong><br/>
+на́ш<strong>их</strong>
+|
+ва́ш<strong>ем</strong><br/>
+ва́ш<strong>ей</strong><br/>
+ва́ш<strong>ем</strong><br/>
+ва́ш<strong>их</strong>
+|}
+</div>
+----
+The 3rd person possessive pronouns (его́ his, её her, его́ its, их their) take the gender and the quantity of the possessing person/object:
+
+:"фильм" (movie) is of masculine gender, yet:
+::Бо́ря рассказа́л о его́ люби́мом фи́льме.  (Borya told about his favorite movie.)
+::А́нна рассказа́ла о её люби́мом фи́льме. (Anna told about her favorite movie.)
+
+:"кни́га" (book) is of feminine gender, yet:
+::Его́ кни́га ста́ла бестсе́ллером.  (His book became a bestseller.)
+::Её кни́га ста́ла бестсе́ллером.  (Her book became a bestseller.)
+
+:"джи́нсы" (jeans) is a plural only noun, yet:
+::Его́ джи́нсы вы́глядели вызыва́юще.  (His jeans looked outrageous.)
+::Её джи́нсы вы́глядели вызыва́юще.  (Her jeans looked outrageous.)
+
+The above rule is common to both English and Russian languages and is opposite to the one in French.
+
+The reflexive pronouns (свой his/her/its own m., своя his/her/its own f., своё his/her/its own n., свои his/her/its own pl.), as well as all possessive nouns except the 3rd person ones take the gender and the quantity of the object in possession:
+
+:"фильм" (movie) is of masculine gender, and:
+::Бо́ря рассказа́л о своём люби́мом фи́льме.  (Borya told about his favorite movie.)
+::А́нна рассказа́ла о своём люби́мом фи́льме.  (Anna told about her favorite movie.)
+
+::"Я не ви́дел твоего́ люби́мого фи́льма, Бо́ря."  (I didn't see your favorite movie, Borya).
+::"Я не ви́дел твоего́ люби́мого фи́льма, А́нна." (I didn't see your favorite movie, Anna.)
+
+:"кни́га" (book) is of feminine gender, and:
+::Свое́й кни́ги он никогда́ не написа́л.  (He never wrote his own book.)
+::Свое́й кни́ги она́ никогда́ не написа́ла.  (She never wrote her own book.)
+
+::"Мо́жно, возьму́ твою́ кни́гу, Бо́ря?"  (Can I take your book, Borya?)
+::"Мо́жно, возьму́ твою́ кни́гу, А́нна?"  (Can I take your book, Anna?)
+
+:"джи́нсы" (jeans) is a plural-only noun, and:
+::Бо́ря наде́л свои́ джи́нсы.  (Borya put on his own jeans.)
+::А́нна наде́ла свои́ джи́нсы.  (Anna put on her own jeans.)
+
+::Тебе́ иду́т твои́ джи́нсы, Бо́ря.  (Your jeans fit you, Borya.)
+::Тебе́ иду́т твои́ джи́нсы, А́нна.  (Your jeans fit you, Anna.)
+
+This rule doesn't apply to English, but agrees with the use of 1st and 2nd person possessive pronouns in French.
+
+{{Russian}}
+{{BookCat}}
