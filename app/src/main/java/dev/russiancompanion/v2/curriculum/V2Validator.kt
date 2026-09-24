@@ -1878,8 +1878,49 @@ internal object V2Validator {
         if (!citesFrozenEvidence(why, originals)) {
             errors += "Item ${item.id} answer rationale does not cite the frozen evidence"
         }
+        errors += keyedGlossErrors(item)
         return errors
     }
+
+    /**
+     * Batch A gloss checks must describe the keyed shown form and answer.
+     * A swapped gloss, or a numbered "other gloss" rationale, fails here.
+     */
+    private fun keyedGlossErrors(item: V2CheckItem): List<String> {
+        if (item.objectiveId !in BATCH_A_OBJECTIVES) return emptyList()
+        val assessment = item.assessment ?: return listOf("Item ${item.id} explanation does not name the keyed answer")
+        val why = assessment.whyAnswerDemonstratesObjective
+        val errors = mutableListOf<String>()
+        val shown = item.promptLetter.orEmpty()
+        if (!namesGloss(why, item.answer) || !namesGloss(item.feedback, item.answer)) {
+            errors += "Item ${item.id} explanation does not name the keyed answer"
+        }
+        if (shown.isNotBlank() && !namesGloss(why, shown)) {
+            errors += "Item ${item.id} explanation does not name the shown form"
+        }
+        item.options.filter { it != item.answer }.forEach { distractor ->
+            if (namesGloss(why, distractor) && !namesGloss(item.answer, distractor)) {
+                errors += "Item ${item.id} explanation names a different gloss"
+            }
+        }
+        item.options.forEachIndexed { index, option ->
+            if (option == item.answer) return@forEachIndexed
+            val rationale = item.distractorRationales.getOrElse(index) { "" }
+            val difference = assessment.distractorDifference.getOrElse(index) { "" }
+            if (!namesGloss(rationale, option) || !namesGloss(difference, option)) {
+                errors += "Item ${item.id} distractor rationale does not name its competing gloss"
+            }
+            if (namesGloss(rationale, item.answer) && !namesGloss(option, item.answer)) {
+                errors += "Item ${item.id} distractor rationale names the keyed answer"
+            }
+            if (namesGloss(difference, item.answer) && !namesGloss(option, item.answer)) {
+                errors += "Item ${item.id} distractor rationale names the keyed answer"
+            }
+        }
+        return errors
+    }
+
+    private fun namesGloss(host: String, phrase: String): Boolean = phrase.isNotEmpty() && host.contains(phrase)
 
     private fun citesFrozenEvidence(why: String, originals: List<String>): Boolean {
         if (why.length < 12) return false

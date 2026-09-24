@@ -20639,15 +20639,15 @@
         "turn out to be"
       ],
       "answer": "became",
-      "feedback": "The frozen line writes appear to be beside the shown form. became.",
+      "feedback": "The frozen line writes became beside стать. associates of connective verbs. became.",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes remain beside остаться. associates of connective verbs",
+        "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_BECAME",
@@ -20665,10 +20665,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes remain beside остаться. associates of connective verbs",
+          "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes appear to be beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes became beside стать. associates of connective verbs",
         "contrastMembers": [
           "became",
           "remain",
@@ -20696,15 +20696,15 @@
         "turn out to be"
       ],
       "answer": "remain",
-      "feedback": "The frozen line writes appear to be beside the shown form. remain.",
+      "feedback": "The frozen line writes remain beside остаться. associates of connective verbs. remain.",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes became beside стать. associates of connective verbs",
+        "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_REMAIN",
@@ -20722,10 +20722,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes became beside стать. associates of connective verbs",
+          "The frozen line writes turn out to be beside оказаться. associates of connective verbs"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes appear to be beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes remain beside остаться. associates of connective verbs",
         "contrastMembers": [
           "remain",
           "became",
@@ -20753,15 +20753,15 @@
         "remain"
       ],
       "answer": "turn out to be",
-      "feedback": "The frozen line writes appear to be beside the shown form. turn out to be.",
+      "feedback": "The frozen line writes turn out to be beside оказаться. associates of connective verbs. turn out to be.",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes became beside стать. associates of connective verbs",
+        "The frozen line writes remain beside остаться. associates of connective verbs"
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_TURN",
@@ -20779,10 +20779,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes became beside стать. associates of connective verbs",
+          "The frozen line writes remain beside остаться. associates of connective verbs"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes appear to be beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes turn out to be beside оказаться. associates of connective verbs",
         "contrastMembers": [
           "turn out to be",
           "became",
@@ -21439,14 +21439,14 @@
         "to_me (is) 20 years"
       ],
       "answer": "I am 20 (years old)",
-      "feedback": "The frozen line writes I am 20 (years old) beside the shown form. I am 20 (years old).",
+      "feedback": "The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "to_me (is) 20 years"
       ],
       "assessment": {
         "testedFeature": "AGE_STATEMENT",
@@ -21463,9 +21463,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "to_me (is) 20 years"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside мне двадцать лет.",
         "contrastMembers": [
           "I am 20 (years old)",
           "to_me (is) 20 years"
@@ -21490,14 +21490,14 @@
         "age statements"
       ],
       "answer": "I am 20 (years old)",
-      "feedback": "The frozen line writes I am 20 (years old) beside the shown form. I am 20 (years old).",
+      "feedback": "The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "age statements"
       ],
       "assessment": {
         "testedFeature": "AGE_HEADING",
@@ -21514,9 +21514,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "age statements"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside мне двадцать лет.",
         "contrastMembers": [
           "I am 20 (years old)",
           "age statements"
@@ -21541,14 +21541,14 @@
         "age statements"
       ],
       "answer": "20 years",
-      "feedback": "The frozen line writes I am 20 (years old) beside the shown form. 20 years.",
+      "feedback": "The frozen line writes 20 years beside двадцать лет. 20 years.",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "age statements"
       ],
       "assessment": {
         "testedFeature": "AGE_YEARS",
@@ -21565,9 +21565,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "age statements"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes 20 years beside двадцать лет.",
         "contrastMembers": [
           "20 years",
           "age statements"
@@ -21593,15 +21593,15 @@
         "Wednesday"
       ],
       "answer": "Monday",
-      "feedback": "The frozen line writes days of the week beside the shown form. Monday.",
+      "feedback": "понедельник || noun || Monday. Monday.",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "вторник || noun || Tuesday",
+        "среда || noun || Wednesday"
       ],
       "assessment": {
         "testedFeature": "WEEKDAY_MONDAY",
@@ -21619,10 +21619,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "вторник || noun || Tuesday",
+          "среда || noun || Wednesday"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes days of the week beside the shown form.",
+        "whyAnswerDemonstratesObjective": "понедельник || noun || Monday",
         "contrastMembers": [
           "Monday",
           "Tuesday",
@@ -21650,15 +21650,15 @@
         "Saturday"
       ],
       "answer": "Thursday",
-      "feedback": "The frozen line writes days of the week beside the shown form. Thursday.",
+      "feedback": "четверг || noun || Thursday. Thursday.",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "пятница || noun || Friday",
+        "суббота || noun || Saturday"
       ],
       "assessment": {
         "testedFeature": "WEEKDAY_THURSDAY",
@@ -21676,10 +21676,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "пятница || noun || Friday",
+          "суббота || noun || Saturday"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes days of the week beside the shown form.",
+        "whyAnswerDemonstratesObjective": "четверг || noun || Thursday",
         "contrastMembers": [
           "Thursday",
           "Friday",
@@ -21707,15 +21707,15 @@
         "Saturday"
       ],
       "answer": "Sunday",
-      "feedback": "The frozen line writes days of the week beside the shown form. Sunday.",
+      "feedback": "воскресенье || noun || Sunday. Sunday.",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "понедельник || noun || Monday",
+        "суббота || noun || Saturday"
       ],
       "assessment": {
         "testedFeature": "WEEKDAY_SUNDAY",
@@ -21733,10 +21733,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "понедельник || noun || Monday",
+          "суббота || noun || Saturday"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes days of the week beside the shown form.",
+        "whyAnswerDemonstratesObjective": "воскресенье || noun || Sunday",
         "contrastMembers": [
           "Sunday",
           "Monday",
@@ -21764,15 +21764,15 @@
         "March"
       ],
       "answer": "January",
-      "feedback": "The frozen line writes Months of the year beside the shown form. January.",
+      "feedback": "Январь || January. January.",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "Февраль || February",
+        "Март || March"
       ],
       "assessment": {
         "testedFeature": "MONTH_JANUARY",
@@ -21790,10 +21790,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "Февраль || February",
+          "Март || March"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes Months of the year beside the shown form.",
+        "whyAnswerDemonstratesObjective": "Январь || January",
         "contrastMembers": [
           "January",
           "February",
@@ -21821,15 +21821,15 @@
         "August"
       ],
       "answer": "June",
-      "feedback": "The frozen line writes Months of the year beside the shown form. June.",
+      "feedback": "Июнь || June. June.",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "Июль || July",
+        "Август || August"
       ],
       "assessment": {
         "testedFeature": "MONTH_JUNE",
@@ -21847,10 +21847,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "Июль || July",
+          "Август || August"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes Months of the year beside the shown form.",
+        "whyAnswerDemonstratesObjective": "Июнь || June",
         "contrastMembers": [
           "June",
           "July",
@@ -21878,15 +21878,15 @@
         "April"
       ],
       "answer": "December",
-      "feedback": "The frozen line writes Months of the year beside the shown form. December.",
+      "feedback": "Декабрь || December. December.",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "Январь || January",
+        "Апрель || April"
       ],
       "assessment": {
         "testedFeature": "MONTH_DECEMBER",
@@ -21904,10 +21904,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "Январь || January",
+          "Апрель || April"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes Months of the year beside the shown form.",
+        "whyAnswerDemonstratesObjective": "Декабрь || December",
         "contrastMembers": [
           "December",
           "January",
@@ -21934,14 +21934,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is beside the shown form. What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION",
@@ -21958,9 +21958,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -21985,14 +21985,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is beside the shown form. What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_AGAIN",
@@ -22009,9 +22009,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22036,14 +22036,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is beside the shown form. What time is it?",
+      "feedback": "The frozen line writes What time is it? beside Который час? What time is it?",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_CHECK",
@@ -22060,9 +22060,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час?",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22088,15 +22088,15 @@
         "redder"
       ],
       "answer": "bigger",
-      "feedback": "The frozen line writes comparative forms beside the shown form. bigger.",
+      "feedback": "бо́льший 'bigger'. bigger.",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "лу́чший 'better'",
+        "красне́е 'redder'"
       ],
       "assessment": {
         "testedFeature": "COMPARISON_BIGGER",
@@ -22114,10 +22114,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "лу́чший 'better'",
+          "красне́е 'redder'"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes comparative forms beside the shown form.",
+        "whyAnswerDemonstratesObjective": "бо́льший 'bigger'",
         "contrastMembers": [
           "bigger",
           "better",
@@ -22145,15 +22145,15 @@
         "less"
       ],
       "answer": "the biggest",
-      "feedback": "The frozen line writes comparative forms beside the shown form. the biggest.",
+      "feedback": "наибо́льший 'the biggest'. the biggest.",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "бо́лее 'more'",
+        "ме́нее 'less'"
       ],
       "assessment": {
         "testedFeature": "COMPARISON_BIGGEST",
@@ -22171,10 +22171,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "бо́лее 'more'",
+          "ме́нее 'less'"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes comparative forms beside the shown form.",
+        "whyAnswerDemonstratesObjective": "наибо́льший 'the biggest'",
         "contrastMembers": [
           "the biggest",
           "more",
@@ -22202,15 +22202,15 @@
         "bigger"
       ],
       "answer": "kinder",
-      "feedback": "The frozen line writes comparative forms beside the shown form. kinder.",
+      "feedback": "бо́лее до́брый 'kinder'. kinder.",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "наиме́нее 'least'",
+        "бо́льший 'bigger'"
       ],
       "assessment": {
         "testedFeature": "COMPARISON_KINDER",
@@ -22228,10 +22228,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "наиме́нее 'least'",
+          "бо́льший 'bigger'"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes comparative forms beside the shown form.",
+        "whyAnswerDemonstratesObjective": "бо́лее до́брый 'kinder'",
         "contrastMembers": [
           "kinder",
           "least",
@@ -22259,15 +22259,15 @@
         "The man who changed the world"
       ],
       "answer": "Which apple is mine?",
-      "feedback": "The frozen line writes changed the world beside the shown form. Which apple is mine?",
+      "feedback": "The frozen line writes Which apple is mine? beside Которое яблоко моё? Which apple is mine?",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?",
+        "The frozen line writes The man who changed the world beside Человек, который изменил мир."
       ],
       "assessment": {
         "testedFeature": "RELATIVE_APPLE",
@@ -22285,10 +22285,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?",
+          "The frozen line writes The man who changed the world beside Человек, который изменил мир."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes changed the world beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes Which apple is mine? beside Которое яблоко моё?",
         "contrastMembers": [
           "Which apple is mine?",
           "Which book do you want?",
@@ -22316,15 +22316,15 @@
         "Which apple is mine?"
       ],
       "answer": "The woman (who) I'm friends with",
-      "feedback": "The frozen line writes changed the world beside the shown form. The woman (who) I'm friends with.",
+      "feedback": "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. The woman (who) I'm friends with.",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
+        "The frozen line writes Which apple is mine? beside Которое яблоко моё?"
       ],
       "assessment": {
         "testedFeature": "RELATIVE_WOMAN",
@@ -22342,10 +22342,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
+          "The frozen line writes Which apple is mine? beside Которое яблоко моё?"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes changed the world beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
         "contrastMembers": [
           "The woman (who) I'm friends with",
           "The man who changed the world",
@@ -22373,15 +22373,15 @@
         "Which book do you want?"
       ],
       "answer": "The man who changed the world",
-      "feedback": "The frozen line writes changed the world beside the shown form. The man who changed the world.",
+      "feedback": "The frozen line writes The man who changed the world beside Человек, который изменил мир. The man who changed the world.",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
+        "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
       ],
       "assessment": {
         "testedFeature": "RELATIVE_MAN",
@@ -22399,10 +22399,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
+          "The frozen line writes Which book do you want? beside Которую книгу вы хотите?"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes changed the world beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
         "contrastMembers": [
           "The man who changed the world",
           "The woman (who) I'm friends with",
@@ -22601,15 +22601,15 @@
         "I would like to sleep"
       ],
       "answer": "a male speaker",
-      "feedback": "The frozen line writes a male speaker beside the shown form. a male speaker.",
+      "feedback": "a male speaker would say я спал бы. a male speaker.",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "while a female speaker would say я спала́ бы (or я бы поспала́)",
+        "I would like to sleep"
       ],
       "assessment": {
         "testedFeature": "CONDITIONAL_MALE",
@@ -22627,10 +22627,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "while a female speaker would say я спала́ бы (or я бы поспала́)",
+          "I would like to sleep"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes a male speaker beside the shown form.",
+        "whyAnswerDemonstratesObjective": "a male speaker would say я спал бы",
         "contrastMembers": [
           "a male speaker",
           "a female speaker",
@@ -22658,15 +22658,15 @@
         "I would like to sleep"
       ],
       "answer": "a female speaker",
-      "feedback": "The frozen line writes a male speaker beside the shown form. a female speaker.",
+      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "a male speaker would say я спал бы",
+        "I would like to sleep"
       ],
       "assessment": {
         "testedFeature": "CONDITIONAL_FEMALE",
@@ -22684,10 +22684,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "a male speaker would say я спал бы",
+          "I would like to sleep"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes a male speaker beside the shown form.",
+        "whyAnswerDemonstratesObjective": "while a female speaker would say я спала́ бы (or я бы поспала́)",
         "contrastMembers": [
           "a female speaker",
           "a male speaker",
@@ -22715,15 +22715,15 @@
         "I would like to sleep"
       ],
       "answer": "a female speaker",
-      "feedback": "The frozen line writes a male speaker beside the shown form. a female speaker.",
+      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "a male speaker would say я спал бы",
+        "I would like to sleep"
       ],
       "assessment": {
         "testedFeature": "CONDITIONAL_FEMALE_ALT",
@@ -22741,10 +22741,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "a male speaker would say я спал бы",
+          "I would like to sleep"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes a male speaker beside the shown form.",
+        "whyAnswerDemonstratesObjective": "while a female speaker would say я спала́ бы (or я бы поспала́)",
         "contrastMembers": [
           "a female speaker",
           "a male speaker",
@@ -22772,15 +22772,15 @@
         "If the subject is plural"
       ],
       "answer": "I have to",
-      "feedback": "The frozen line writes translates to beside the shown form. I have to.",
+      "feedback": "\"I have to\" translates to я должен. I have to.",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "If the subject is feminine, it's должна.",
+        "If the subject is plural, it's должны."
       ],
       "assessment": {
         "testedFeature": "OBLIGATION_HAVE",
@@ -22798,10 +22798,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "If the subject is feminine, it's должна.",
+          "If the subject is plural, it's должны."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes translates to beside the shown form.",
+        "whyAnswerDemonstratesObjective": "\"I have to\" translates to я должен",
         "contrastMembers": [
           "I have to",
           "If the subject is feminine",
@@ -22829,15 +22829,15 @@
         "If the subject is plural"
       ],
       "answer": "If the subject is feminine",
-      "feedback": "The frozen line writes translates to beside the shown form. If the subject is feminine.",
+      "feedback": "If the subject is feminine, it's должна. If the subject is feminine.",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "\"I have to\" translates to я должен",
+        "If the subject is plural, it's должны."
       ],
       "assessment": {
         "testedFeature": "OBLIGATION_FEMININE_FORM",
@@ -22855,10 +22855,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "\"I have to\" translates to я должен",
+          "If the subject is plural, it's должны."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes translates to beside the shown form.",
+        "whyAnswerDemonstratesObjective": "If the subject is feminine, it's должна.",
         "contrastMembers": [
           "If the subject is feminine",
           "I have to",
@@ -22886,15 +22886,15 @@
         "If the subject is feminine"
       ],
       "answer": "If the subject is plural",
-      "feedback": "The frozen line writes translates to beside the shown form. If the subject is plural.",
+      "feedback": "If the subject is plural, it's должны. If the subject is plural.",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "\"I have to\" translates to я должен",
+        "If the subject is feminine, it's должна."
       ],
       "assessment": {
         "testedFeature": "OBLIGATION_PLURAL_FORM",
@@ -22912,10 +22912,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "\"I have to\" translates to я должен",
+          "If the subject is feminine, it's должна."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes translates to beside the shown form.",
+        "whyAnswerDemonstratesObjective": "If the subject is plural, it's должны.",
         "contrastMembers": [
           "If the subject is plural",
           "I have to",
@@ -22942,14 +22942,14 @@
         "multidirectional"
       ],
       "answer": "unidirectional",
-      "feedback": "The frozen line writes unidirectional beside the shown form. unidirectional.",
+      "feedback": "The frozen line writes unidirectional beside идти́. unidirectional.",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form."
+        "multidirectional"
       ],
       "assessment": {
         "testedFeature": "MOTION_DIRECTION",
@@ -22966,9 +22966,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form."
+          "multidirectional"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes unidirectional beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes unidirectional beside идти́.",
         "contrastMembers": [
           "unidirectional",
           "multidirectional"
@@ -22994,15 +22994,15 @@
         "to carry"
       ],
       "answer": "to go, walk",
-      "feedback": "The frozen line writes to go by vehicle beside the shown form. to go, walk.",
+      "feedback": "| to go, walk || идти́. to go, walk.",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "| to go by vehicle, ride || е́хать",
+        "| to carry || нести́"
       ],
       "assessment": {
         "testedFeature": "MOTION_FOOT",
@@ -23020,10 +23020,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "| to go by vehicle, ride || е́хать",
+          "| to carry || нести́"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes to go by vehicle beside the shown form.",
+        "whyAnswerDemonstratesObjective": "| to go, walk || идти́",
         "contrastMembers": [
           "to go, walk",
           "to go by vehicle, ride",
@@ -23051,15 +23051,15 @@
         "to convey, transport"
       ],
       "answer": "to carry",
-      "feedback": "The frozen line writes to convey, transport beside the shown form. to carry.",
+      "feedback": "| to carry || нести́. to carry.",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "| to lead || вести́",
+        "| to convey, transport || везти́"
       ],
       "assessment": {
         "testedFeature": "MOTION_CARRY",
@@ -23077,10 +23077,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "| to lead || вести́",
+          "| to convey, transport || везти́"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes to convey, transport beside the shown form.",
+        "whyAnswerDemonstratesObjective": "| to carry || нести́",
         "contrastMembers": [
           "to carry",
           "to lead",
@@ -23108,15 +23108,15 @@
         "He went to a friend's place"
       ],
       "answer": "beginning of a movement",
-      "feedback": "The frozen line writes beginning of a movement beside the shown form. beginning of a movement.",
+      "feedback": "The frozen line writes beginning of a movement beside Он пошёл к другу. beginning of a movement.",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "setting out",
+        "He went to a friend's place"
       ],
       "assessment": {
         "testedFeature": "MOTION_PO",
@@ -23134,10 +23134,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "setting out",
+          "He went to a friend's place"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes beginning of a movement beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes beginning of a movement beside Он пошёл к другу.",
         "contrastMembers": [
           "beginning of a movement",
           "setting out",
@@ -23165,15 +23165,15 @@
         "The ball flew onto the roof of the house."
       ],
       "answer": "The boy stepped back from the stranger who had offered him candy.",
-      "feedback": "The frozen line writes stepped back beside the shown form. The boy stepped back from the stranger who had offered him candy.",
+      "feedback": "The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца. The boy stepped back from the stranger who had offered him candy.",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes other gloss 1 beside a different shown form.",
-        "The frozen line writes other gloss 2 beside a different shown form."
+        "They will leave Vladivostok in a month.",
+        "The ball flew onto the roof of the house."
       ],
       "assessment": {
         "testedFeature": "MOTION_PREFIX",
@@ -23191,10 +23191,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes other gloss 1 beside another shown form.",
-          "The frozen line writes other gloss 2 beside another shown form."
+          "They will leave Vladivostok in a month.",
+          "The ball flew onto the roof of the house."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes stepped back beside the shown form.",
+        "whyAnswerDemonstratesObjective": "The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца.",
         "contrastMembers": [
           "The boy stepped back from the stranger who had offered him candy.",
           "They will leave Vladivostok in a month.",
@@ -87681,6 +87681,356 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-u17-weekdays-x-6",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "понедельник || noun || Monday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "179e7b70733d159ca30f0bef2babb8e284cb747d9c795b2eba47837084475dc7",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-6-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "понедельник",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "21465eccacbbd63aeaffce6b51c4205dac3e0ee0729b23a433c7462724ea326f",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-7",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "вторник || noun || Tuesday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "16ab5de640e91562e7b63e65fae10057308cc05256df936315bf2d307eeecacb",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-7-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "вторник",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "e910dde3d1719ef37308bf965bae3a964429f63f779bd74d465d9a6a4144b486",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-8",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "среда || noun || Wednesday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "a1002df2917ed5b48cdd6fed03ba6482d127afa86d80fdd3cde842c31532fc32",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-8-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "среда",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "a4733c2f8090e03fb0b0c4f0241f9e555833f9d9e8908270b126d85146b5ed81",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-9",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "четверг || noun || Thursday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "2aac8a3627b3bdfa528a772b7ae76c0a374cc274deb725bc6480b776f4a79f83",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-9-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "четверг",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "c5e3b3c07b8566d3a4aa4ca4096ff6a14db6bd1d69090955f06d105ffd04144f",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-10",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "пятница || noun || Friday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "2b3639510b3cab0f5860f0a93a84873564b5b29119c26b90a2dc2f3a3a6ac8d7",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-10-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "пятница",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "09e84f8ec21362561fa7953600cf1e0a59ac8a01206b5c12551934ccafe79937",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-11",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "суббота || noun || Saturday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "304e531494640d4864a639c5519c3f78d1426db400fb51df3910c55277365d15",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-11-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "суббота",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "fba272c3bf6a0eca716efe737d388ae71c594b8b1663cf997d51dd6ea6a05222",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-12",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "воскресенье || noun || Sunday",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "0e0548f151b2584a52352411c19e63992ded183598c8a0eb90c5da86617dcb01",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-weekdays-x-12-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-weekdays",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+      "sourceRevision": "3594124",
+      "sourceRecordId": "days:Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyeh",
+      "originalSourceText": "Russians don't capitalize days of the week.\n\n{|\n|-\n| день || noun || day || dyehn\n|-\n| colspan=\"4\" | A cognate (same word in Russian and English).\n|-\n| &nbsp;\n|-\n| сегодня || noun || today || sevódnya\n|-\n| colspan=\"4\" | The г here is pronounced as a в. It sounds like \"с его дня\", which would mean \"from his day\", if день were an animate noun. But it's not.\n|-\n| &nbsp;\n|-\n| понедельник || noun || Monday || ponyedyél'nik\n|-\n| colspan=\"4\" | On Mondays we ride our ''ponies'' to ''Nick's deli''.\n|-\n| &nbsp;\n|-\n| вторник || noun || Tuesday || vtórnik\n|-\n| colspan=\"4\" | On Tuesdays we go to the ''store'' with ''Nick''.\n|-\n| &nbsp;\n|-\n| среда || noun || Wednesday || sryéda\n|-\n| colspan=\"4\" | Wednesdays are a good day for ''shredding''.\n|-\n| &nbsp;\n|-\n| четверг || noun || Thursday || chetvérg\n|-\n| colspan=\"4\" | On Thursdays ''Chet'' goes to ''work''.\n|-\n| &nbsp;\n|-\n| пятница || noun || Friday || pyátnitsa\n|-\n| colspan=\"4\" | \"On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.\n|-\n| &nbsp;\n|-\n| суббота || noun || Saturday || soobbóta\n|-\n| colspan=\"4\" | \"On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.\n|-\n| &nbsp;\n|-\n| воскресенье || noun || Sunday",
+      "shippedText": "воскресенье",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0",
+      "contentHash": "b960040913df77a57f788dd2d72c06f17398b6e543b26fbe76539547362a6e76",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-u17-months-0-ru",
       "unitNumber": 17,
       "objectiveId": "obj-u17-months",
@@ -88256,6 +88606,31 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-u17-clock-x-1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+      "sourceRevision": "4220316",
+      "sourceRecordId": "interrogative:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книг",
+      "originalSourceText": "What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''",
+      "shippedText": "Которую книгу вы хотите?",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd",
+      "contentHash": "0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-u18-comparison-0-ru",
       "unitNumber": 18,
       "objectiveId": "obj-u18-comparison",
@@ -88648,6 +89023,406 @@
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
       "contentHash": "d7d5dcc369426e2e5f8dcb89af4308b0daed6e55910d53395ce38bd6dd1a9456",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-7",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́льший 'bigger'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "f530fe252ade7ed210df165a2109ddb51e417659dd6e632fec3c7749345f71b2",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-7-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́льший",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "2d6a7c7e177a213cc9ef31e1ef6f45e957af234534b7fe0d2c5004a53adac75a",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-8",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "лу́чший 'better'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "ec30e033e40f6a73b363283cefb1aee64f474229a5d351b7c667a35f7da70d40",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-8-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "лу́чший",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "5215163536b5fd6ba106c4211559462134b443d5262de4fa10e4f43ed45dbd00",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-9",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "красне́е 'redder'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "3a71b777feed4858e2c1115a4ae5f249931af7e4e4f0e0601edbf58ea3c64a34",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-9-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "красне́е",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "0e1edd58ea98f7a780b78f12f2ce398796c5f20110e059b867d4312a743cf643",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-10",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "наибо́льший 'the biggest'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "795292bb5077a66769537ffc3cfada2e5921d84cdc4ea2a8522608d11331e116",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-10-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "наибо́льший",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "7a4bdc0c9c26d8b35c6a3a08915b3acbb6ad2f8dbc1a673a4839303c264f6da7",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-11",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́лее 'more'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "07c229b1fe63daeb811ed0f1dc5867c7e062bcf818b30ad08745cc95ecd555fe",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-11-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́лее",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "29d600d22692d4ed8bbf1d2a21050b247a7f513b649827f7944064046a1f89b3",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-12",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "ме́нее 'less'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "b54672fd066fd8f6deb1c9d87b3bcfd8b414e0f0ea7e32cd43ed700b70ac4181",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-12-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "ме́нее",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "95c24b912af49c6efbd25d73482c766e3ca24660dc43769d7b45695659260b8d",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-13",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "наиме́нее 'least'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "63aa4884698736f5ce5db55318d946a1ec06224b4efb2ab12f885b37470ec174",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-13-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "наиме́нее",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "07522c83daf655ef87f800bc63c6059feee438fc6c93eb73f159a91059752d51",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-14",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́лее до́брый 'kinder'",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "2719d8496247c26576d34007fe67b004e011614af7670d3bcec9357d157bba70",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u18-comparison-x-14-r0",
+      "unitNumber": 18,
+      "objectiveId": "obj-u18-comparison",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup",
+      "originalSourceText": "forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.\n\nAn alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.",
+      "shippedText": "бо́лее до́брый",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa",
+      "contentHash": "ccdcb9048411e528c90ba9b2531723b54a7a2f21886397700963bcfda8445c59",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -89673,6 +90448,306 @@
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
       "contentHash": "45575ac52823bbff1c1112e2a61408676d32322aa1d2b40cf154f1f09ecb4e7c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "\"I have to\" translates to я должен",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "b123c1e27dd7d5f45c662bd2bf9faf5309939efc22b3196b9502e96d90e20b8c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-0-r0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "я должен",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "37d62a1d0f985a59600cf8f32343e8fcf0e058a96a45c3ba67c30ec3639da8bc",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-1",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "If the subject is feminine, it's должна.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "800b97b37b616df520107b75821632f53b94d5f71e7109d6fd37e8d101c9a569",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-1-r0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "должна",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "9eca2f8398f4b83cfea14ca2a3a6de1ed33d800cadf4aa34b3e38c11826889cf",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-2",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "If the subject is plural, it's должны.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "901c5b078bc9927aa89d717ef858e113862954c374256969c7f50053a3cf32cf",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-2-r0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+      "sourceRevision": "4460699",
+      "sourceRecordId": "lesson3:\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin",
+      "originalSourceText": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.",
+      "shippedText": "должны",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024",
+      "contentHash": "744bab4723450805924e3804acaf20eaba77b72cb3130531db1bf1192f3d6307",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-3",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "a male speaker would say я спал бы",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "3d50903dd751fd213267299704ce99eaca5ab6b64296fab7e014e15f530a7cb4",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-3-r0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "я спал бы",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "856371ff01cee588e8f21b0c8978223ca02fb9668ed540f2f4ed125d9a88d761",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-4",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "while a female speaker would say я спала́ бы (or я бы поспала́)",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "f5e3209f502334fc7672665f4ee0a83bc6e37dc2799d014a2c2748ae0616431c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-4-r0",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "я спала́ бы",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "a1b27096ce17c9403b9bef9986bf9350c18ddad0d51c0bef9ee78ee384b8842d",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-4-r1",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "я бы поспала́",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u19-obligation-x-5",
+      "unitNumber": 19,
+      "objectiveId": "obj-u19-obligation",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th",
+      "originalSourceText": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say \"I would (hypothetically) sleep\" or \"I would like to sleep\", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).",
+      "shippedText": "I would like to sleep",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b",
+      "contentHash": "39f6f6abad4d00f676dd3c52a1834dd4cd6c9ce85d89e8d6d4757df0ccc2d03d",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -99599,1007 +100674,851 @@
     {
       "id": "en-u16-036",
       "unitNumber": 16,
-      "text": "The frozen line writes other gloss 1 beside a different shown form.",
+      "text": "The frozen line writes",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-037",
       "unitNumber": 16,
-      "text": "The frozen line writes other gloss 2 beside a different shown form.",
+      "text": "beside",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-038",
       "unitNumber": 16,
-      "text": "The frozen line writes other gloss 1 beside another shown form.",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-039",
       "unitNumber": 16,
-      "text": "The frozen line writes other gloss 2 beside another shown form.",
+      "text": "Admitted instrumental rows",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-040",
       "unitNumber": 16,
-      "text": "The frozen line writes appear to be beside the shown form.",
+      "text": "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-041",
       "unitNumber": 16,
-      "text": "Which admitted English gloss is written beside the shown form?",
+      "text": "Open Lesson 16 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-042",
       "unitNumber": 16,
-      "text": "Admitted instrumental rows",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-043",
       "unitNumber": 16,
-      "text": "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-044",
       "unitNumber": 16,
-      "text": "Open Lesson 16 in the copy you own. The app records do not replace that lesson.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-045",
       "unitNumber": 16,
-      "text": "Guided practice",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-046",
       "unitNumber": 16,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-047",
       "unitNumber": 16,
-      "text": "Remediation",
+      "text": "Work Lesson 16 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-048",
       "unitNumber": 16,
-      "text": "Independent checks",
+      "text": "Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-049",
       "unitNumber": 16,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Open Lesson 16 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-050",
       "unitNumber": 16,
-      "text": "Work Lesson 16 in your copy",
+      "text": "Record Lesson 16 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-051",
       "unitNumber": 16,
-      "text": "Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-052",
       "unitNumber": 16,
-      "text": "Open Lesson 16 in your copy and complete its lesson work.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u16-053",
-      "unitNumber": 16,
-      "text": "Record Lesson 16 book work",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u16-054",
-      "unitNumber": 16,
-      "text": "When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u16-055",
-      "unitNumber": 16,
       "text": "Self-attest only after the Lesson 16 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-056",
+      "id": "en-u17-053",
       "unitNumber": 17,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-057",
+      "id": "en-u17-054",
       "unitNumber": 17,
       "text": "Does this row fail the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-058",
+      "id": "en-u17-055",
       "unitNumber": 17,
       "text": "Does this answer show the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-059",
+      "id": "en-u17-056",
       "unitNumber": 17,
       "text": "Which admitted line is the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-060",
+      "id": "en-u17-057",
       "unitNumber": 17,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-061",
+      "id": "en-u17-058",
       "unitNumber": 17,
       "text": "Does this row fail the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-062",
+      "id": "en-u17-059",
       "unitNumber": 17,
       "text": "Does this answer show the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-063",
+      "id": "en-u17-060",
       "unitNumber": 17,
       "text": "Which admitted line is the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-064",
+      "id": "en-u17-061",
       "unitNumber": 17,
       "text": "Does this row fail the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-065",
+      "id": "en-u17-062",
       "unitNumber": 17,
       "text": "Does this answer show the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-066",
+      "id": "en-u17-063",
       "unitNumber": 17,
       "text": "Which admitted line is the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-067",
+      "id": "en-u17-064",
       "unitNumber": 17,
       "text": "Does this row fail the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-068",
+      "id": "en-u17-065",
       "unitNumber": 17,
       "text": "Does this answer show the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-069",
+      "id": "en-u17-066",
       "unitNumber": 17,
       "text": "Which admitted line is the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-070",
+      "id": "en-u17-067",
       "unitNumber": 17,
       "text": "Does this row fail the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-071",
+      "id": "en-u17-068",
       "unitNumber": 17,
       "text": "Does this answer show the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-072",
+      "id": "en-u17-069",
       "unitNumber": 17,
       "text": "Which admitted line is the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-073",
+      "id": "en-u17-070",
       "unitNumber": 17,
       "text": "Does this row fail the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-074",
+      "id": "en-u17-071",
       "unitNumber": 17,
       "text": "Does this answer show the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-075",
+      "id": "en-u17-072",
       "unitNumber": 17,
       "text": "Which admitted line is the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-076",
+      "id": "en-u17-073",
       "unitNumber": 17,
       "text": "Does this row fail the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-077",
+      "id": "en-u17-074",
       "unitNumber": 17,
       "text": "Does this answer show the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-078",
+      "id": "en-u17-075",
       "unitNumber": 17,
       "text": "Which admitted line is the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-079",
+      "id": "en-u17-076",
       "unitNumber": 17,
       "text": "Does this row fail the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-080",
+      "id": "en-u17-077",
       "unitNumber": 17,
       "text": "Does this answer show the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-081",
+      "id": "en-u17-078",
       "unitNumber": 17,
       "text": "Which admitted line is the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-082",
+      "id": "en-u17-079",
       "unitNumber": 17,
       "text": "Does this row fail the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-083",
+      "id": "en-u17-080",
       "unitNumber": 17,
       "text": "Does this answer show the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-084",
+      "id": "en-u17-081",
       "unitNumber": 17,
       "text": "Which admitted line is the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-085",
+      "id": "en-u17-082",
       "unitNumber": 17,
       "text": "Does this row fail the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-086",
+      "id": "en-u17-083",
       "unitNumber": 17,
       "text": "Does this answer show the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-087",
+      "id": "en-u17-084",
       "unitNumber": 17,
       "text": "Which admitted line is the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-088",
+      "id": "en-u17-085",
       "unitNumber": 17,
       "text": "Does this row fail the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-089",
+      "id": "en-u17-086",
       "unitNumber": 17,
       "text": "Does this answer show the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-090",
+      "id": "en-u17-087",
       "unitNumber": 17,
       "text": "Which admitted line is the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-091",
+      "id": "en-u17-088",
       "unitNumber": 17,
       "text": "Does this row fail the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-092",
+      "id": "en-u17-089",
       "unitNumber": 17,
       "text": "Does this answer show the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-093",
+      "id": "en-u17-090",
       "unitNumber": 17,
       "text": "Which admitted line is the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-094",
+      "id": "en-u17-091",
       "unitNumber": 17,
-      "text": "The frozen line writes other gloss 1 beside a different shown form.",
+      "text": "The frozen line writes",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-095",
+      "id": "en-u17-092",
       "unitNumber": 17,
-      "text": "The frozen line writes other gloss 1 beside another shown form.",
+      "text": "beside",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-096",
-      "unitNumber": 17,
-      "text": "The frozen line writes I am 20 (years old) beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-097",
+      "id": "en-u17-093",
       "unitNumber": 17,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-098",
-      "unitNumber": 17,
-      "text": "The frozen line writes other gloss 2 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-099",
-      "unitNumber": 17,
-      "text": "The frozen line writes other gloss 2 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-100",
-      "unitNumber": 17,
-      "text": "The frozen line writes days of the week beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-101",
-      "unitNumber": 17,
-      "text": "The frozen line writes Months of the year beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-102",
-      "unitNumber": 17,
-      "text": "The frozen line writes What time is beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-103",
+      "id": "en-u17-094",
       "unitNumber": 17,
       "text": "Admitted number and quantity rows",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-104",
+      "id": "en-u17-095",
       "unitNumber": 17,
       "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-105",
+      "id": "en-u17-096",
       "unitNumber": 17,
       "text": "Open Lesson 17 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-106",
+      "id": "en-u17-097",
       "unitNumber": 17,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-107",
+      "id": "en-u17-098",
       "unitNumber": 17,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-108",
+      "id": "en-u17-099",
       "unitNumber": 17,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-109",
+      "id": "en-u17-100",
       "unitNumber": 17,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-110",
+      "id": "en-u17-101",
       "unitNumber": 17,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-111",
+      "id": "en-u17-102",
       "unitNumber": 17,
       "text": "Work Lesson 17 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-112",
+      "id": "en-u17-103",
       "unitNumber": 17,
       "text": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-113",
+      "id": "en-u17-104",
       "unitNumber": 17,
       "text": "Open Lesson 17 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-114",
+      "id": "en-u17-105",
       "unitNumber": 17,
       "text": "Record Lesson 17 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-115",
+      "id": "en-u17-106",
       "unitNumber": 17,
       "text": "When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-116",
+      "id": "en-u17-107",
       "unitNumber": 17,
       "text": "Self-attest only after the Lesson 17 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-117",
+      "id": "en-u17-108",
       "unitNumber": 17,
       "text": "Productive clock-time answers stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-118",
+      "id": "en-u17-109",
       "unitNumber": 17,
       "text": "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-119",
+      "id": "en-u17-110",
       "unitNumber": 17,
       "text": "Calendar-date syntax stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-120",
+      "id": "en-u17-111",
       "unitNumber": 17,
       "text": "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-121",
+      "id": "en-u18-112",
+      "unitNumber": 18,
+      "text": "The frozen line writes",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-113",
+      "unitNumber": 18,
+      "text": "beside",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-114",
       "unitNumber": 18,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-122",
-      "unitNumber": 18,
-      "text": "The frozen line writes other gloss 1 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-123",
-      "unitNumber": 18,
-      "text": "The frozen line writes other gloss 2 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-124",
-      "unitNumber": 18,
-      "text": "The frozen line writes other gloss 1 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-125",
-      "unitNumber": 18,
-      "text": "The frozen line writes other gloss 2 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-126",
-      "unitNumber": 18,
-      "text": "The frozen line writes comparative forms beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-127",
+      "id": "en-u18-115",
       "unitNumber": 18,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-128",
+      "id": "en-u18-116",
       "unitNumber": 18,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-129",
-      "unitNumber": 18,
-      "text": "The frozen line writes changed the world beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-130",
+      "id": "en-u18-117",
       "unitNumber": 18,
       "text": "Admitted comparison and relative lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-131",
+      "id": "en-u18-118",
       "unitNumber": 18,
       "text": "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-132",
+      "id": "en-u18-119",
       "unitNumber": 18,
       "text": "Open Lesson 18 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-133",
+      "id": "en-u18-120",
       "unitNumber": 18,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-134",
+      "id": "en-u18-121",
       "unitNumber": 18,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-135",
+      "id": "en-u18-122",
       "unitNumber": 18,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-136",
+      "id": "en-u18-123",
       "unitNumber": 18,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-137",
+      "id": "en-u18-124",
       "unitNumber": 18,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-138",
+      "id": "en-u18-125",
       "unitNumber": 18,
       "text": "Work Lesson 18 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-139",
+      "id": "en-u18-126",
       "unitNumber": 18,
       "text": "Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-140",
+      "id": "en-u18-127",
       "unitNumber": 18,
       "text": "Open Lesson 18 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-141",
+      "id": "en-u18-128",
       "unitNumber": 18,
       "text": "Record Lesson 18 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-142",
+      "id": "en-u18-129",
       "unitNumber": 18,
       "text": "When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-143",
+      "id": "en-u18-130",
       "unitNumber": 18,
       "text": "Self-attest only after the Lesson 18 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-144",
+      "id": "en-u19-131",
       "unitNumber": 19,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-145",
+      "id": "en-u19-132",
       "unitNumber": 19,
       "text": "Does this row fail the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-146",
+      "id": "en-u19-133",
       "unitNumber": 19,
       "text": "Does this answer show the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-147",
+      "id": "en-u19-134",
       "unitNumber": 19,
       "text": "Which admitted English label is the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-148",
+      "id": "en-u19-135",
       "unitNumber": 19,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-149",
+      "id": "en-u19-136",
       "unitNumber": 19,
       "text": "Does this row fail the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-150",
+      "id": "en-u19-137",
       "unitNumber": 19,
       "text": "Does this answer show the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-151",
+      "id": "en-u19-138",
       "unitNumber": 19,
       "text": "Which admitted English label is the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-152",
+      "id": "en-u19-139",
       "unitNumber": 19,
       "text": "Does this row fail the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-153",
+      "id": "en-u19-140",
       "unitNumber": 19,
       "text": "Does this answer show the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-154",
+      "id": "en-u19-141",
       "unitNumber": 19,
       "text": "Which admitted line is the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-155",
-      "unitNumber": 19,
-      "text": "The frozen line writes other gloss 1 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-156",
-      "unitNumber": 19,
-      "text": "The frozen line writes other gloss 2 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-157",
-      "unitNumber": 19,
-      "text": "The frozen line writes other gloss 1 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-158",
-      "unitNumber": 19,
-      "text": "The frozen line writes other gloss 2 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-159",
-      "unitNumber": 19,
-      "text": "The frozen line writes a male speaker beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-160",
+      "id": "en-u19-142",
       "unitNumber": 19,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-161",
-      "unitNumber": 19,
-      "text": "The frozen line writes translates to beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-162",
+      "id": "en-u19-143",
       "unitNumber": 19,
       "text": "Admitted prefix cautions",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-163",
+      "id": "en-u19-144",
       "unitNumber": 19,
       "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-164",
+      "id": "en-u19-145",
       "unitNumber": 19,
       "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-165",
+      "id": "en-u19-146",
       "unitNumber": 19,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-166",
+      "id": "en-u19-147",
       "unitNumber": 19,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-167",
+      "id": "en-u19-148",
       "unitNumber": 19,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-168",
+      "id": "en-u19-149",
       "unitNumber": 19,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-169",
+      "id": "en-u19-150",
       "unitNumber": 19,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-170",
+      "id": "en-u19-151",
       "unitNumber": 19,
       "text": "Work Lesson 19 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-171",
+      "id": "en-u19-152",
       "unitNumber": 19,
       "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-172",
+      "id": "en-u19-153",
       "unitNumber": 19,
       "text": "Open Lesson 19 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-173",
+      "id": "en-u19-154",
       "unitNumber": 19,
       "text": "Record Lesson 19 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-174",
+      "id": "en-u19-155",
       "unitNumber": 19,
       "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-175",
+      "id": "en-u19-156",
       "unitNumber": 19,
       "text": "Self-attest only after the Lesson 19 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-176",
+      "id": "en-u19-157",
       "unitNumber": 19,
       "text": "Probability stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u19-177",
+      "id": "en-u19-158",
       "unitNumber": 19,
       "text": "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-178",
+      "id": "en-u20-159",
+      "unitNumber": 20,
+      "text": "The frozen line writes",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-160",
+      "unitNumber": 20,
+      "text": "beside",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-161",
       "unitNumber": 20,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-179",
-      "unitNumber": 20,
-      "text": "The frozen line writes other gloss 1 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-180",
-      "unitNumber": 20,
-      "text": "The frozen line writes other gloss 1 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-181",
-      "unitNumber": 20,
-      "text": "The frozen line writes unidirectional beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-182",
+      "id": "en-u20-162",
       "unitNumber": 20,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-183",
+      "id": "en-u20-163",
       "unitNumber": 20,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-184",
-      "unitNumber": 20,
-      "text": "The frozen line writes other gloss 2 beside a different shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-185",
-      "unitNumber": 20,
-      "text": "The frozen line writes other gloss 2 beside another shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-186",
-      "unitNumber": 20,
-      "text": "The frozen line writes to go by vehicle beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-187",
-      "unitNumber": 20,
-      "text": "The frozen line writes to convey, transport beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-188",
-      "unitNumber": 20,
-      "text": "The frozen line writes beginning of a movement beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-189",
-      "unitNumber": 20,
-      "text": "The frozen line writes stepped back beside the shown form.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-190",
+      "id": "en-u20-164",
       "unitNumber": 20,
       "text": "Admitted motion lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-191",
+      "id": "en-u20-165",
       "unitNumber": 20,
       "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-192",
+      "id": "en-u20-166",
       "unitNumber": 20,
       "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-193",
+      "id": "en-u20-167",
       "unitNumber": 20,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-194",
+      "id": "en-u20-168",
       "unitNumber": 20,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-195",
+      "id": "en-u20-169",
       "unitNumber": 20,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-196",
+      "id": "en-u20-170",
       "unitNumber": 20,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-197",
+      "id": "en-u20-171",
       "unitNumber": 20,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-198",
+      "id": "en-u20-172",
       "unitNumber": 20,
       "text": "Work Lesson 20 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-199",
+      "id": "en-u20-173",
       "unitNumber": 20,
       "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-200",
+      "id": "en-u20-174",
       "unitNumber": 20,
       "text": "Open Lesson 20 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-201",
+      "id": "en-u20-175",
       "unitNumber": 20,
       "text": "Record Lesson 20 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-202",
+      "id": "en-u20-176",
       "unitNumber": 20,
       "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u20-203",
+      "id": "en-u20-177",
       "unitNumber": 20,
       "text": "Self-attest only after the Lesson 20 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"

@@ -569,9 +569,14 @@ class Lesson:
         distractors = check["distractors"]
         source_id = check["source"]
         options = [answer, *[text for text, _rationale, _difference in distractors]]
-        rationales = ["", *[self.builder.say(self.number, rationale) for _text, rationale, _difference in distractors]]
-        differences = ["", *[self.builder.say(self.number, difference) for _text, _rationale, difference in distractors]]
-        why = self.builder.say(self.number, check["why"])
+        quoted = bool(check.get("frozenQuote"))
+
+        def host(text: str) -> str:
+            return text if quoted else self.builder.say(self.number, text)
+
+        rationales = ["", *[host(rationale) for _text, rationale, _difference in distractors]]
+        differences = ["", *[host(difference) for _text, _rationale, difference in distractors]]
+        why = host(check["why"])
         item_id = f"u{self.number}-{'g' if guided else 'i'}-{slug}-{index}"
         if not guided:
             overlap = qualifying_overlap(shown, answer)
