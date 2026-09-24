@@ -15,7 +15,7 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb
 - Mapping-package SHA-256: 2ada287c0c46c616b1249034c2a7121f07b55557d6bb625c5995b3d618230967
 - Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
-- Review-package SHA-256: bf2a4f4f810768b0a704f199081af9bb84beffa56301d4c29518d76c7d310d29
+- Review-package SHA-256: 12e0640faaa2b1deea1fc99148f2cb5664c14c62cabbcf859941e274381c359b
 - Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
@@ -1973,7 +1973,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89f49de31197fdd70f29080578038b629ff17d47265dbaeec90acdca82a2ef7c
+- Content hash: 1c2344121060a1ad12c877e4ce0a68689735ad6e741350826a6dc9d630314212
 
 kind=FORM_SELECTION
 language=en
@@ -1998,6 +1998,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person plural fut
 contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-imp-1-en | prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u12-g-future-perf-0`
 
@@ -2007,7 +2008,7 @@ relationParticipantIds=prov-ex-u12-future-imp-1-en | prov-ex-u12-future-imp-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 249edfc42a0fded9a1cd1cb1c637e06619ff364050bcddec0a832bcdb847074a
+- Content hash: e5db8a18103cda840a591eb18892b4f98b4c1de0f3ab9417ffe75f42c458bc96
 
 kind=FORM_SELECTION
 language=en
@@ -2032,6 +2033,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person plural fut
 contrastMembers=Мы ска́жем | Я скажу́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-perf-1-en | prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u12-g-aspect-0`
 
@@ -2041,7 +2043,7 @@ relationParticipantIds=prov-ex-u12-future-perf-1-en | prov-ex-u12-future-perf-1-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b2fe65b7ce107e26466034567828ee667c6dc9979739ac6e65268881f631e389
+- Content hash: dd331e1be76ccf1b0d8e235def1670f10fc83a6de1eb195cad7008d4c49e1a46
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2066,6 +2068,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-2-ru
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u12-g-dative-0`
 
@@ -2075,7 +2078,7 @@ relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aaf07d2195b317463fd56ab4d50fdd64344e7814480f071851cd7b675da2c4c0
+- Content hash: 8a65ed1005dcd516029cdfc8356ae775ab60a6c44fe6195eb8aa95944b0f3e15
 
 kind=CASE_RECOGNITION
 language=en
@@ -2100,6 +2103,7 @@ whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=кни́ге | кни́ги
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-0 | prov-ex-or-u12-dative-1 | prov-ex-or-u12-dative-2
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u12-g-spelling-0`
 
@@ -2109,7 +2113,7 @@ relationParticipantIds=prov-ex-or-u12-dative-0 | prov-ex-or-u12-dative-1 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ccc5e9bc3d1eb8a002a928e1e03026a4e7157404a13ee2f5c0b5c2344b281490
+- Content hash: 987581f0d882639d1f1c7d5b78e97c24943b2bfb1b01a424d2002d6ea164f5af
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2134,6 +2138,7 @@ whyAnswerDemonstratesObjective=Does this answer show the accepted spelling?
 contrastMembers=хорошее письмо | хорошое письмо
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-spelling-3-en | prov-ex-u12-spelling-3-ru | prov-u12-spelling-rem-r6
+responseKind=RUSSIAN_PHRASE
 
 ### GUIDED_PRACTICE `u12-g-prep-plural-0`
 
@@ -2143,7 +2148,7 @@ relationParticipantIds=prov-ex-u12-spelling-3-en | prov-ex-u12-spelling-3-ru | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0cea99966a996c8dca570454f57152a32654e08d0398083ee396ee57637728d
+- Content hash: 5c6d87dcd2f8cbbc715df2abb1efe9ac3b79ffc4621a39e64b613f4f78918164
 
 kind=CASE_RECOGNITION
 language=en
@@ -2168,6 +2173,7 @@ whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=кни́гах | кни́ге
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-0 | prov-ex-or-u12-prep-plural-1 | prov-ex-or-u12-prep-plural-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-future-imp-1`
 
@@ -2177,7 +2183,7 @@ relationParticipantIds=prov-ex-or-u12-prep-plural-0 | prov-ex-or-u12-prep-plural
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea5659f4f1a9ca11dfdb6e49432fc01dfe337ff17c395b0a53f587e8fa62f1ba
+- Content hash: 3d162e552cd94e3fc2dd9a7a12bd3846dcca9db97ea812f8e81571a783183537
 
 kind=FORM_SELECTION
 language=en
@@ -2202,6 +2208,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person singular f
 contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-imp-0-en | prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u12-i-future-imp-2`
 
@@ -2211,7 +2218,7 @@ relationParticipantIds=prov-ex-u12-future-imp-0-en | prov-ex-u12-future-imp-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41112d20407ccfbace647f2593f59b312ed3e8193739691010b5cd3835868819
+- Content hash: 869fcbd42695134a2b5c13f12be6b2e84c027af1218c91e1a59737609c298450
 
 kind=FORM_SELECTION
 language=en
@@ -2236,6 +2243,7 @@ whyAnswerDemonstratesObjective=Does this answer show the second-person plural fu
 contrastMembers=Вы бу́дете говори́ть | Я бу́ду говори́ть
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-ex-u12-future-imp-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u12-i-future-perf-1`
 
@@ -2245,7 +2253,7 @@ relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1b450434ae911dc0a66bc613171f8afc5196ecf08bac251860dc0589ef8b55c
+- Content hash: 5eb01181440c7ab428584410d6586b4738043a3e1cd57a7b0dcafc116e3e7258
 
 kind=FORM_SELECTION
 language=en
@@ -2270,6 +2278,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person plural fut
 contrastMembers=ска́жем | ска́жешь
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-future-perf-2 | prov-ex-or-u12-future-perf-3 | prov-ex-or-u12-future-perf-4
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-future-perf-2`
 
@@ -2279,7 +2288,7 @@ relationParticipantIds=prov-ex-or-u12-future-perf-2 | prov-ex-or-u12-future-perf
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69fbda2d89ebfd08048e0196972b665e501bacb93a41f6eff030b8457efea889
+- Content hash: 6081847bbcdd20be1bc8154bf02bf6b7c9e40ea168fb7b3c6972a0abe41a6f22
 
 kind=FORM_SELECTION
 language=en
@@ -2304,6 +2313,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person singular f
 contrastMembers=Я скажу́ | Мы ска́жем
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-perf-0-en | prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u12-i-aspect-1`
 
@@ -2313,7 +2323,7 @@ relationParticipantIds=prov-ex-u12-future-perf-0-en | prov-ex-u12-future-perf-0-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b56369e2fb30c6f8573e132688f9c6912f3f154ffeeb8808ec852a6c1c9fb759
+- Content hash: ee7b14ad922af4ada1647966a4dc0722c08d4317cc76efd143555a03275ccf92
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2338,6 +2348,7 @@ whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-3-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-aspect-2`
 
@@ -2347,7 +2358,7 @@ relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da6c78aa4d6054cf39ad91cdf2a06ac48a0b803b0d5f9dd74baa303fcf82ec47
+- Content hash: 0ebe600f99712ee4c895419d56a3aa776d5430dad8e296882cb4084a17b515bd
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2372,6 +2383,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-ex-u12-aspect-0-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-dative-1`
 
@@ -2381,7 +2393,7 @@ relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17ac86e73c7962bd1396b6677a89bbe86ff06653263f87895171dc0c1a98defe
+- Content hash: e636719e49713d30fda1841686d705320e403e15b7b5424a2c04b8108494197b
 
 kind=CASE_RECOGNITION
 language=en
@@ -2406,6 +2418,7 @@ whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=столу́ | столы́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-3 | prov-ex-or-u12-dative-4 | prov-ex-or-u12-dative-5
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-dative-2`
 
@@ -2415,7 +2428,7 @@ relationParticipantIds=prov-ex-or-u12-dative-3 | prov-ex-or-u12-dative-4 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63521104dab482a659a56f80ee927ff19f26d40313a4fb13506e209a141c40ec
+- Content hash: e28189acac5e061b030c54b67be5b9340ff620d63d854f2588c0c9cc99f36526
 
 kind=CASE_RECOGNITION
 language=en
@@ -2440,6 +2453,7 @@ whyAnswerDemonstratesObjective=Does this answer show the dative singular?
 contrastMembers=до́му | дома́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-6 | prov-ex-or-u12-dative-7 | prov-ex-or-u12-dative-8
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-spelling-1`
 
@@ -2449,7 +2463,7 @@ relationParticipantIds=prov-ex-or-u12-dative-6 | prov-ex-or-u12-dative-7 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45be16151f02018a8717968ec39113413214db6cbf1bde6a72bd6ef53464bc65
+- Content hash: f87f6aafd46febfcf61688587285990f3de5b0ea665548fafabd97827da3e41c
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2474,6 +2488,7 @@ whyAnswerDemonstratesObjective=Does this answer show the neuter form?
 contrastMembers=хоро́шее | хоро́шая
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-spelling-0 | prov-ex-or-u12-spelling-1 | prov-ex-or-u12-spelling-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-spelling-2`
 
@@ -2483,7 +2498,7 @@ relationParticipantIds=prov-ex-or-u12-spelling-0 | prov-ex-or-u12-spelling-1 | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1e1ba1351acf5bfa061f79d36adbe476b36eea437c0a47a5e1db29e879e7e48
+- Content hash: 2822d6a70db512fd3357bd94f770eb89c297281e03e5a9efb559f4059899f6f3
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2508,6 +2523,7 @@ whyAnswerDemonstratesObjective=Does this answer show the rejected spelling?
 contrastMembers=хорошое письмо | хорошее письмо
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-spelling-3-en | prov-u12-spelling-rem-r6 | prov-ex-u12-spelling-3-ru
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u12-i-prep-plural-1`
 
@@ -2517,7 +2533,7 @@ relationParticipantIds=prov-ex-u12-spelling-3-en | prov-u12-spelling-rem-r6 | pr
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16b8af2a1b550440627c27d0fff067d89af4d0068bf2ce61808bf8d01f863f6a
+- Content hash: 5a80fa38726e1ed997e2a0680b3eaeb6916d9113e85c14706aeee7b5dcbed1bb
 
 kind=CASE_RECOGNITION
 language=en
@@ -2542,6 +2558,7 @@ whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=стола́х | столу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-3 | prov-ex-or-u12-prep-plural-4 | prov-ex-or-u12-prep-plural-5
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u12-i-prep-plural-2`
 
@@ -2551,7 +2568,7 @@ relationParticipantIds=prov-ex-or-u12-prep-plural-3 | prov-ex-or-u12-prep-plural
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e5cd9d44a211c9170acc87b1df9f271ba8e561e1ffc5fb82a754d980cdedfad
+- Content hash: a7ecb1f0c595fca067fca20a92e6269176247794cfdfb7d094bed9ee723e6082
 
 kind=CASE_RECOGNITION
 language=en
@@ -2576,6 +2593,7 @@ whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
 contrastMembers=дома́х | до́му
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-6 | prov-ex-or-u12-prep-plural-7 | prov-ex-or-u12-prep-plural-8
+responseKind=RUSSIAN_TOKEN
 
 ### REFERENCE `ref-u1115-attribution`
 

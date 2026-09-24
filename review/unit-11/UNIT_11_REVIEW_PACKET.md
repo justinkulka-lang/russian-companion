@@ -15,7 +15,7 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324
 - Mapping-package SHA-256: 75f552ecbcc6b6bfe7547a80bcb492ab71499679d3784880e2aa3bdba1ac9d0a
 - Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
-- Review-package SHA-256: c875c941b2ac72b23592d2d29ad4cc6f0c713e6851882783a18a18115417b32d
+- Review-package SHA-256: 55eef1a72e36403512925e012dccf3bcde03fa36fade140c4cc84ab593b1be58
 - Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
@@ -1466,7 +1466,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fbf5ac306f07845330aeffe2300ec056db29bce225d1acd7fa9d587c447dafc8
+- Content hash: ea927d3801ea162ab68190cf3c0658c0338fb69c60e36274c477f51f1142e3b0
 
 kind=FORM_SELECTION
 language=en
@@ -1491,6 +1491,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=чита́ла | чита́ло | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-2 | prov-ex-or-u11-past-read-3
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u11-g-past-be-0`
 
@@ -1500,7 +1501,7 @@ relationParticipantIds=prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-1 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6437e53d22c955e774c2d9da738ff68d1eb0c2383bd223feb15a0523af5d768
+- Content hash: 940f2c9e8a56475252734043ed581a4d8ddd99087aa0eeacc1a8153f5de62039
 
 kind=FORM_SELECTION
 language=en
@@ -1525,6 +1526,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=была́ | бы́ло | бы́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-0 | prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u11-g-past-aspect-0`
 
@@ -1534,7 +1536,7 @@ relationParticipantIds=prov-ex-or-u11-past-be-0 | prov-ex-or-u11-past-be-1 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac7e880f650b226674ffd9bd4d80e2a9b89cc8c49ee4ca0b04261cfc08d95af8
+- Content hash: bade56ff1177df35dadf2cd64507a1c968fcf1f17b68bb1d347545e12b95036f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1559,6 +1561,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective past?
 contrastMembers=я прочитал | я читал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-past-aspect-1-en | prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u11-g-reflexive-0`
 
@@ -1568,7 +1571,7 @@ relationParticipantIds=prov-ex-u11-past-aspect-1-en | prov-ex-u11-past-aspect-1-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba93f07256b1151ce037b96611e36d82dcc1034b9ae919e314a5361ffb2c62a2
+- Content hash: ca68ecf5d01b163081f533f63fa1ea86d087f7370292db1b4e7e2f88fe2b834c
 
 kind=FORM_SELECTION
 language=en
@@ -1593,6 +1596,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=улыба́лась | улыба́лись | улыба́ться
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-1 | prov-ex-or-u11-reflexive-2 | prov-ex-or-u11-reflexive-3 | prov-ex-or-u11-reflexive-0
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-past-read-1`
 
@@ -1602,7 +1606,7 @@ relationParticipantIds=prov-ex-or-u11-reflexive-1 | prov-ex-or-u11-reflexive-2 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdb1dc58942dabd2f3660907392047867a12b778bf15e7accaa3bce6d5474b4a
+- Content hash: 2a9c07287cc9868b3986f09b2838b26b0d25c595ceaf83cfb9b3eaa6ca6d28b5
 
 kind=FORM_SELECTION
 language=en
@@ -1627,6 +1631,7 @@ whyAnswerDemonstratesObjective=Does this answer show the masculine past?
 contrastMembers=чита́л | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-3
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-past-read-2`
 
@@ -1636,7 +1641,7 @@ relationParticipantIds=prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-0 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 549ea3306c3ffb9d572b4770b3fb945a4dbd4563176dd015d1cd28b02c0ffb20
+- Content hash: 98845ad6136ab7253c215746004b55f62e44170ee18547ad4712c12ab2bb0560
 
 kind=FORM_SELECTION
 language=en
@@ -1661,6 +1666,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=Она чита́ла | Они чита́ли
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-past-read-4-ru | prov-ex-u11-past-read-5-ru | prov-u11-past-read-x-0
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u11-i-past-be-1`
 
@@ -1670,7 +1676,7 @@ relationParticipantIds=prov-ex-u11-past-read-4-ru | prov-ex-u11-past-read-5-ru |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7057e9eaad32548e61991c58e91618de6422b680feb548d50231c32e126ee1d3
+- Content hash: a72cff8a12fe2816806409697dc3d3f4483f619f76d7306fe17e94b140125479
 
 kind=FORM_SELECTION
 language=en
@@ -1695,6 +1701,7 @@ whyAnswerDemonstratesObjective=Does this answer show the plural past?
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-past-be-2`
 
@@ -1704,7 +1711,7 @@ relationParticipantIds=prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc433157f383117351b8a47fa9f2314f2d2344fa5e9fd8353d6f21e08c11c4d2
+- Content hash: 9ebdf79f106729cdf56086b23511a1f736b126936dd32209b97a4fc4fb69c02a
 
 kind=FORM_SELECTION
 language=en
@@ -1729,6 +1736,7 @@ whyAnswerDemonstratesObjective=Does this answer show the plural past?
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-past-aspect-1`
 
@@ -1738,7 +1746,7 @@ relationParticipantIds=prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 522784e18a1a1960b6639d77709e400e808741fc28bb76851f4da6ea77b53f35
+- Content hash: fba217ee816e8c5a104cec61187e40a68c7836a6a638aa7333d49052a4ab503b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1763,6 +1771,7 @@ whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
 contrastMembers=я читал | я прочитал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-past-aspect-0-en | prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u11-i-past-aspect-2`
 
@@ -1772,7 +1781,7 @@ relationParticipantIds=prov-ex-u11-past-aspect-0-en | prov-ex-u11-past-aspect-0-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9cdecb47b8fd6e48b86492fc9813320245919c114b39238f18429e59168d0f3a
+- Content hash: 6a8c4f177edc84a2c911b15dec08738896d2ee940c5ab6152944b3d87c0c318e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1797,6 +1806,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=прочита́ла | прочита́ло
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect-3 | prov-ex-or-u11-past-aspect-4
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-reflexive-1`
 
@@ -1806,7 +1816,7 @@ relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 48d9a336579ef85b2ccec24fbbcd99eed1beb95bd639755e3244e18abc08f157
+- Content hash: 4bb39a55762cabf04030a8a6f1dd1508bc50784b5f5d11063691037ba6c9a767
 
 kind=FORM_SELECTION
 language=en
@@ -1831,6 +1841,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=Она улыба́лась | Они улыба́лись
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-reflexive-4-ru | prov-ex-u11-reflexive-5-ru | prov-u11-reflexive-x-0
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u11-i-reflexive-2`
 
@@ -1840,7 +1851,7 @@ relationParticipantIds=prov-ex-u11-reflexive-4-ru | prov-ex-u11-reflexive-5-ru |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68974d5e0a422640b84b19e6478cdcff557f3aa4ddbac824e063a352839b22fa
+- Content hash: ebc347ed2a2a54619dc1ff3041ee0edc6ef9fe9262c9d23e68b7ed8f259c13ae
 
 kind=FORM_SELECTION
 language=en
@@ -1865,6 +1876,7 @@ whyAnswerDemonstratesObjective=Does this answer show the feminine past?
 contrastMembers=учи́лась | учи́лись
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-6 | prov-ex-or-u11-reflexive-7 | prov-ex-or-u11-reflexive-8
+responseKind=RUSSIAN_TOKEN
 
 ### REFERENCE `ref-u1115-attribution`
 

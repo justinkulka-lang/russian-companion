@@ -1380,7 +1380,11 @@ private fun itemRecord(pack: V2CurriculumPack, unit: V2Unit, item: V2CheckItem, 
                 "contrastMembers=${assessment.contrastMembers.joinToString(" | ")}",
                 "relationKind=${assessment.relationKind}",
                 "relationParticipantIds=${assessment.relationParticipantIds.joinToString(" | ")}",
-            )
+            ) + if (assessment.responseKind.isBlank()) {
+                emptyList()
+            } else {
+                listOf("responseKind=${assessment.responseKind}")
+            }
         }.joinToString("\n"),
         sourceId = item.sourceId,
         rightsIds = rightsIds(pack, item.sourceId),

@@ -15,7 +15,7 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd
 - Mapping-package SHA-256: c603458fabe692e2492d828ebda299c5e5d78d058ee0d7620a0d0c15a13a6d0a
 - Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
-- Review-package SHA-256: 4b1c6646b735adb9db0737491c1ec5db556c5979f5346264669d6cb17bd776cc
+- Review-package SHA-256: 1b362cdac7c0a5b6bcdb2503c562c5ceca50972f6310f7cf2d9cbf43cc42c3ec
 - Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
@@ -986,7 +986,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02354cc1584b49781b7d5adb0976771644d9f093bdd6619dc644ea5cc709ed78
+- Content hash: 0a0034f31eba3c8df6f0cda880e4975b6fc141fa5e787aef2cf6b8d69bfeac3d
 
 kind=FORM_SELECTION
 language=en
@@ -1011,6 +1011,7 @@ whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=чита́йте | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-2
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u15-g-say-request-0`
 
@@ -1020,7 +1021,7 @@ relationParticipantIds=prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c49edc5418ba4106806da755c69ea109b71cbb0dd326f8c38c4049fb272cd90
+- Content hash: b8f8ee87fad9387456d5753cc161b0934566e96506d64852164b00f6be9e79ff
 
 kind=FORM_SELECTION
 language=en
@@ -1045,6 +1046,7 @@ whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=скажи́те | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-2
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u15-g-aspect-consolidate-0`
 
@@ -1054,7 +1056,7 @@ relationParticipantIds=prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20117f8648b10de5e3657234e4243259de2d44f4604353eacf5f5f84bbd5c414
+- Content hash: 7d004a1005b1fa0c754d8973dce55647e477cceae80abef35cb30f31223b0d51
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1079,6 +1081,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-2-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-imperative-1`
 
@@ -1088,7 +1091,7 @@ relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 645771c818457786b062e782a2d3974a3852480cc52369e460006f1e0acdc51b
+- Content hash: 9590aad2ec1e770f5c5b3cae6180ecceb4192f172bf9c003e0a6a6bb9b3dc47f
 
 kind=FORM_SELECTION
 language=en
@@ -1113,6 +1116,7 @@ whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=чита́й | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-imperative-2`
 
@@ -1122,7 +1126,7 @@ relationParticipantIds=prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-0
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 18df1dcd57896173cdefaa0bc43e6b27f0ad8ae3abe3d8fc34a2cd068969d66c
+- Content hash: 3352011c855d89361d93f26216834ad094faec1304b43889185562c821f072e7
 
 kind=FORM_SELECTION
 language=en
@@ -1147,6 +1151,7 @@ whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=чита́й | чита́йте
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-2 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-say-request-1`
 
@@ -1156,7 +1161,7 @@ relationParticipantIds=prov-ex-or-u15-imperative-2 | prov-ex-or-u15-imperative-0
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4fa14f9b43e260e477ad787418d062bd0647b265c0a0986dbbadd9e137295817
+- Content hash: 51d8a66144e6a14aee3c96c1df5c1d3de535cc8338e1796728f015eb8f663908
 
 kind=FORM_SELECTION
 language=en
@@ -1181,6 +1186,7 @@ whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
 contrastMembers=да́йте | дать
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-3 | prov-ex-or-u15-say-request-4 | prov-ex-or-u15-say-request-5
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-say-request-2`
 
@@ -1190,7 +1196,7 @@ relationParticipantIds=prov-ex-or-u15-say-request-3 | prov-ex-or-u15-say-request
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd9bc2e136c7052ae89a5e015b8db67ed7305f0be3ae7747c0e7cf303488ad11
+- Content hash: 37f2c19b4d0184a09cfa0f39a69b6c83331820cff01363378be216a316cbe40f
 
 kind=FORM_SELECTION
 language=en
@@ -1215,6 +1221,7 @@ whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
 contrastMembers=скажи́ | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-aspect-consolidate-1`
 
@@ -1224,7 +1231,7 @@ relationParticipantIds=prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 016b10db57b1e6a7f99dade69422ee9c6dddf5b2f703de6edac2fa0bda1b8983
+- Content hash: 1e452e48192cfeacfdab9820709dd5374446fe840aa89efde105f321259f6077
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1249,6 +1256,7 @@ whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-3-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u15-i-aspect-consolidate-2`
 
@@ -1258,7 +1266,7 @@ relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 47c68f1340db0331214020cf478f5c1e0e63b5ca3329dc9f5fd5dd9b6159bc12
+- Content hash: a07fe66922332686def34e4f9a73db3f02ec2770e83cf903bfffd5342f7278ab
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1283,6 +1291,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-2-ru | prov-ex-u15-aspect-consolidate-3-ru | prov-ex-u15-aspect-consolidate-0-ru
+responseKind=RUSSIAN_TOKEN
 
 ### REFERENCE `ref-u1115-attribution`
 

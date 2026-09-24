@@ -15,7 +15,7 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5
 - Mapping-package SHA-256: 8a1ca19f20178d0c0882bb24e7cc74914684c8735ff4089dc95727f3a7427f7f
 - Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
-- Review-package SHA-256: dc12e92c1159ceeefe04480640a0cd923303a13ec4136b06cef968d377c61116
+- Review-package SHA-256: 3fffd804d757c2d3b4fc032dbdf39bfcb21390de4053f0581d620fd6404f9981
 - Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
@@ -1190,7 +1190,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1fab11c7d3b600ac4043cdddf9e7ff045af0860a22ed4268424091d6eedd3e99
+- Content hash: dc05d6660bb9fd8460b916e995c69b95cbf7278be14591d1ebf9f41e2ad05cd0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1215,6 +1215,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective past?
 contrastMembers=я прочитал | я читал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-past-aspect-1-en | prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u13-g-tense-keep-0`
 
@@ -1224,7 +1225,7 @@ relationParticipantIds=prov-ex-u13-past-aspect-1-en | prov-ex-u13-past-aspect-1-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a9cb767ca7dbabec488a5229a75c6b995229374a6b22cb09f5c29da3910b392
+- Content hash: a725fcd46438f850be573cb9a244eab245ca0cb6895fbbdd5c1a8218e3324726
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1249,6 +1250,7 @@ whyAnswerDemonstratesObjective=Does this answer show the same tense?
 contrastMembers=we keep the tense the same | we usually change the tense
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en | prov-u13-tense-keep-x-1
+responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u13-g-infinitive-0`
 
@@ -1258,7 +1260,7 @@ relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c587010309f28d805a590be3b34b00f52a875a6d8e07e301dc3de8fff84b541
+- Content hash: 34193a944505245b75ef2a503aab9e147c489b1a9b88fa45188448c19ac243d6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1283,6 +1285,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-2-ru
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u13-g-reported-0`
 
@@ -1292,7 +1295,7 @@ relationParticipantIds=prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 389e9368f8dfcbe2915a06106122faaebe7313a245948bf64aa6c007954c8075
+- Content hash: ef29332ac062d8e06633ef3f8908cd129b857f700db37004f84b5f55477b11c3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1317,6 +1320,7 @@ whyAnswerDemonstratesObjective=Does this answer show the reported evening?
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | prov-u13-reported-x-1
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u13-i-past-aspect-1`
 
@@ -1326,7 +1330,7 @@ relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10ef2aa5fe2a8ce3718ef976a424bdcb193ab3f60126582024c379512fd74411
+- Content hash: 438c31e03a4c2682f19760850943efdfb19067ab58255c65289b75d08c91e27f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1351,6 +1355,7 @@ whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
 contrastMembers=я читал | я прочитал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-past-aspect-0-en | prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u13-i-past-aspect-2`
 
@@ -1360,7 +1365,7 @@ relationParticipantIds=prov-ex-u13-past-aspect-0-en | prov-ex-u13-past-aspect-0-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7bf0388cd75c80ddc977333d4b754db43dbf3a91ea440f1b1948f2b5820c0352
+- Content hash: 20a155b3eb37505747abdb725873440548aa39bf74f522fd5b4471e0f3951eef
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1385,6 +1390,7 @@ whyAnswerDemonstratesObjective=Does this answer show the masculine past?
 contrastMembers=чита́л | чита́ла
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u13-past-aspect-2 | prov-ex-or-u13-past-aspect-3 | prov-ex-or-u13-past-aspect-4
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u13-i-tense-keep-1`
 
@@ -1394,7 +1400,7 @@ relationParticipantIds=prov-ex-or-u13-past-aspect-2 | prov-ex-or-u13-past-aspect
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ef25149d1c9ab6988615a9f41255f1eccd04ed1ede31c8177ffaf95f4e7967e
+- Content hash: b3797cad604a17f780ac1fc0302d26c78e3a95124446c9ef55e7d655933f8288
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1419,6 +1425,7 @@ whyAnswerDemonstratesObjective=Does this answer show the reported evening?
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-tense-keep-1-ru | prov-ex-u13-tense-keep-2-ru | prov-u13-tense-keep-x-3
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u13-i-tense-keep-2`
 
@@ -1428,7 +1435,7 @@ relationParticipantIds=prov-ex-u13-tense-keep-1-ru | prov-ex-u13-tense-keep-2-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38409e2c951ee69bbf378eb6356541d8e7dd13cf1cf7d2ef808c32dabdc8023f
+- Content hash: fb12d8cbfb9e1e3acaa0b4871c30700686c7eeb880c40d6f3c42d873f692d3b9
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1453,6 +1460,7 @@ whyAnswerDemonstratesObjective=Does this answer show the changing the reported t
 contrastMembers=we usually change the tense | we keep the tense the same
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u13-tense-keep-x-2 | prov-u13-tense-keep-x-1 | prov-ex-u13-tense-keep-0-en
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u13-i-infinitive-1`
 
@@ -1462,7 +1470,7 @@ relationParticipantIds=prov-u13-tense-keep-x-2 | prov-u13-tense-keep-x-1 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2116aad7703e1771d0de70e0bacede56af0f90e009920836b9f810eac42cf548
+- Content hash: 852143eba10849e8ce4092799fb9e1f6201ee2b02c4c7750e0bd7bf51c234bc1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1487,6 +1495,7 @@ whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-2-ru | prov-ex-u13-infinitive-3-ru | prov-ex-u13-infinitive-0-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u13-i-infinitive-2`
 
@@ -1496,7 +1505,7 @@ relationParticipantIds=prov-ex-u13-infinitive-2-ru | prov-ex-u13-infinitive-3-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ccf8cd54b46ebc77e996d24737fab11334c67e1d01b75d9365c20dc2f0077d68
+- Content hash: 7af0b03e3a6cf14564498edc868aa9220b9a61ce92e04495217db1aa2b65036e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1521,6 +1530,7 @@ whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-3-ru
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u13-i-reported-1`
 
@@ -1530,7 +1540,7 @@ relationParticipantIds=prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17c488996d2cec2e9655c70ef6ece25df2f5de262fd615e83ee04badc1123f84
+- Content hash: ac6af3e0e15b9541bebe3a1b74847ec5f8a13746b10c2191d027df814bbfd73d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1555,6 +1565,7 @@ whyAnswerDemonstratesObjective=Does this answer show the direct evening?
 contrastMembers=Я скажу ему ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru | prov-u13-reported-x-1
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u13-i-reported-2`
 
@@ -1564,7 +1575,7 @@ relationParticipantIds=prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7a5e0c40893a2b09fa6f9644e1d931b9582cbae83874f81c2d9d1e393fcc138
+- Content hash: 378b3ca6825eeb652b5b7563daf421b79b99895a712d91914304fd4c5c26303a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1589,6 +1600,7 @@ whyAnswerDemonstratesObjective=Does this answer show the Moscow?
 contrastMembers=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски | Я скажу ему ве́чером
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-u13-reported-x-1 | prov-ex-u13-reported-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### REFERENCE `ref-u1115-attribution`
 

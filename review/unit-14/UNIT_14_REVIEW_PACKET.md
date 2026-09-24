@@ -15,7 +15,7 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
 - Unit content-review SHA-256: 270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6
 - Mapping-package SHA-256: 9c6ac67d6b78fbe614157046d787b8e75bb45305454e8725e726c7e01c081e6d
 - Pack content-review SHA-256: 6628c57c00f012ed7e8eb96dfbe995a83dc8b72e33684bf76e4656fb6d9f762c
-- Review-package SHA-256: 93e17535fb440d18daecc02aa92c4bbbe29d386fe907ba2c1494ff229ec1b7c4
+- Review-package SHA-256: 5112a0ac37378a59a9d383d1f931ebd2926d03102859291e7094523ed06895d3
 - Repository source SHA-256: 65cc69bcd62d2ad92e8c6014b9c68b5b56621a5e9be64bb9beb736cd8ef93647
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
@@ -969,7 +969,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04a02c73da5b8192891a7ca29217910b758e6b28d644fc0058b570bc17c95647
+- Content hash: cef29045b9b3c5c550f0eaaf5b89a9693bf71f133a36ffc5dfc4595fa97109cc
 
 kind=CONTRAST_SELECTION
 language=en
@@ -994,6 +994,7 @@ whyAnswerDemonstratesObjective=Does this answer show the bounded future?
 contrastMembers=Я поговорю три́дцать мину́т | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-1-en | prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspect-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u14-g-future-person-0`
 
@@ -1003,7 +1004,7 @@ relationParticipantIds=prov-ex-u14-future-aspect-1-en | prov-ex-u14-future-aspec
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b7e40537286a3bb85d9118b2ee0aee6c44986f87af32dd1ddf7c18f4a85baf4
+- Content hash: 26af8753ec0c816657404d33f86e9b40795c597437cafb52cc38de5e1b5211f6
 
 kind=FORM_SELECTION
 language=en
@@ -1028,6 +1029,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person plural fut
 contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-person-1-en | prov-ex-u14-future-person-1-ru | prov-ex-u14-future-person-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### GUIDED_PRACTICE `u14-g-impersonal-0`
 
@@ -1037,7 +1039,7 @@ relationParticipantIds=prov-ex-u14-future-person-1-en | prov-ex-u14-future-perso
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97dccae3f09ddc7f8d148682721e3001e440c6bba30784ee4e061824e722462d
+- Content hash: e644e811fd2a06f93dbbb044ee33bf132e6478199d5321881c83db92c968e31b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1062,6 +1064,7 @@ whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
 contrastMembers=Ему было холодно | Им было скучно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-0-en | prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u14-i-future-aspect-1`
 
@@ -1071,7 +1074,7 @@ relationParticipantIds=prov-ex-u14-impersonal-0-en | prov-ex-u14-impersonal-0-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2ac3a9658d4d269c1a8a0c72106793f713cc2ae6b09d2d950efeee44b8864ff
+- Content hash: e7cd9bf9c120c8ec380131472ee511c06e75ad5aa1189b378614a62360b908a3
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1096,6 +1099,7 @@ whyAnswerDemonstratesObjective=Does this answer show the bounded future?
 contrastMembers=Я порабо́таю три ча́са | Я бу́ду рабо́тать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-3-en | prov-ex-u14-future-aspect-3-ru | prov-ex-u14-future-aspect-2-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u14-i-future-aspect-2`
 
@@ -1105,7 +1109,7 @@ relationParticipantIds=prov-ex-u14-future-aspect-3-en | prov-ex-u14-future-aspec
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffd9a72c24e24672a0ae9c9af0e4194c12f8ddbe51f14e21373748e651e5cde6
+- Content hash: 4078b2b9506e9c44e3bd033e2e7d81ed76dc4d055e3dbd914935257d24822655
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1130,6 +1134,7 @@ whyAnswerDemonstratesObjective=Does this answer show the unbounded future?
 contrastMembers=Я бу́ду говори́ть | Я поговорю три́дцать мину́т
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-0-en | prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspect-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u14-i-future-person-1`
 
@@ -1139,7 +1144,7 @@ relationParticipantIds=prov-ex-u14-future-aspect-0-en | prov-ex-u14-future-aspec
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2219c006f1ad7545e542c7f3a603d206bc04c2ee2a7b1a108f20e9beeb2a896
+- Content hash: c0285335b65255c5ce4f80e22e865a2bc53a68437150f61eef3965a31d10ed91
 
 kind=FORM_SELECTION
 language=en
@@ -1164,6 +1169,7 @@ whyAnswerDemonstratesObjective=Does this answer show the third-person plural fut
 contrastMembers=ска́жут | скажу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u14-future-person-3 | prov-ex-or-u14-future-person-4 | prov-ex-or-u14-future-person-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u14-i-future-person-2`
 
@@ -1173,7 +1179,7 @@ relationParticipantIds=prov-ex-or-u14-future-person-3 | prov-ex-or-u14-future-pe
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b9d04ac81f46309fc46c9359fc6048a01979265cfd2cb0aeb1b1475a32493aa
+- Content hash: dd5f3385a4b9844a65aafeb867d5ab7cb413f5d5ac6976864d58c09ee0bb9286
 
 kind=FORM_SELECTION
 language=en
@@ -1198,6 +1204,7 @@ whyAnswerDemonstratesObjective=Does this answer show the first-person singular f
 contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-person-0-en | prov-ex-u14-future-person-0-ru | prov-ex-u14-future-person-1-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u14-i-impersonal-1`
 
@@ -1207,7 +1214,7 @@ relationParticipantIds=prov-ex-u14-future-person-0-en | prov-ex-u14-future-perso
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad998ca92aa4c7b6972d6db30de90d05e8d06da97ec18862b120aa4014932a17
+- Content hash: c1149a604a42df5f8a462ab98ddd9ca08748d84a23d5526c32c2be0d535ccddc
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1232,6 +1239,7 @@ whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
 contrastMembers=Им было скучно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-1-en | prov-ex-u14-impersonal-1-ru | prov-ex-u14-impersonal-0-ru
+responseKind=RUSSIAN_CLAUSE
 
 ### INDEPENDENT_CHECK `u14-i-impersonal-2`
 
@@ -1241,7 +1249,7 @@ relationParticipantIds=prov-ex-u14-impersonal-1-en | prov-ex-u14-impersonal-1-ru
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83c966dfe6a81cd3862757efc28a4aa090caadcb8e7d84a3001633e07131089e
+- Content hash: aaa6feacc8851ca52598c8cc1e337375e906f6d3d02020ac78513a50c6137476
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1266,6 +1274,7 @@ whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
 contrastMembers=ей было холодно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-2-en | prov-ex-u14-impersonal-2-ru | prov-u14-impersonal-x-0
+responseKind=RUSSIAN_CLAUSE
 
 ### REFERENCE `ref-u1115-attribution`
 
