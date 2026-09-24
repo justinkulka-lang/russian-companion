@@ -65,7 +65,10 @@ class Units2630StructuralMappingTest {
             assertTrue(unit.sessions.isEmpty())
             assertNull(unit.advancement)
             assertFalse(unit.openable())
-            assertTrue(unit.mappingNote.contains(range))
+            assertFalse(unit.mappingNote.contains(range))
+            assertFalse(unit.mappingNote.contains("printed pages"))
+            assertTrue(unit.mappingNote.contains("Observed structural scope"))
+            assertTrue(unit.mappingNote.contains("unresolved authority variance remains unactivated"))
             assertTrue(unit.mappingNote.contains(facts.topicDescription!!))
             assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
@@ -79,15 +82,39 @@ class Units2630StructuralMappingTest {
             assertTrue(pack.provenanceRecords.none { it.unitNumber == number })
             assertTrue(pack.examples.none { it.objectiveId.startsWith("obj-u$number-") })
             assertTrue(pack.items.none { it.objectiveId.startsWith("obj-u$number-") })
-            assertFalse(advancementDecision(pack, unit, learner(number, book = true)).allowed)
+            val decision = advancementDecision(pack, unit, learner(number, book = true))
+            assertFalse(decision.allowed)
+            assertEquals(listOf("This unit has no advancement rule."), decision.remaining)
         }
         val unit30 = pack.unit(30)!!
-        assertTrue(unit30.mappingNote.contains("Printed page 378 begins the grammatical tables."))
-        assertTrue(unit30.mappingNote.contains("Lessons 26-30 have no following book revision block."))
-        assertTrue(unit30.mappingNote.contains("Letter names are only reviewed and applied here."))
-        assertTrue(pack.unit(27)!!.mappingNote.contains("Active participles are not part of this lesson."))
+        assertFalse(unit30.mappingNote.contains("Printed page 378"))
+        assertFalse(unit30.mappingNote.contains("Letter names are only reviewed and applied here."))
+        assertFalse(pack.unit(27)!!.mappingNote.contains("Active participles are not part of this lesson."))
         assertTrue(pack.unit(27)!!.mappingNote.contains("optional present passive material"))
         assertTrue(pack.unit(30)!!.mappingNote.contains("dictionary use"))
+    }
+
+    @Test
+    fun packagedCurriculumOmitsUnits2630PageRanges() {
+        val root = repo()
+        val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
+        val generator = File(root, "catalog/build_v2_curriculum.py").readText()
+        val pack = pack()
+        pages.forEach { (number, range) ->
+            val unit = pack.unit(number)!!
+            assertFalse(curriculum.contains(range))
+            assertFalse(generator.contains(range))
+            assertFalse(unit.mappingNote.contains(range))
+            assertFalse(unit.title.contains(range))
+            assertFalse(unit.topicSummary.contains(range))
+            val worksheet = File(root, "review/unit-$number/UNIT_${number}_OWNED_EDITION_MAPPING_WORKSHEET.tsv").readText()
+            assertTrue(worksheet.contains(range))
+            assertEquals(range, "${governedMappingFacts(number).printedPageStart}-${governedMappingFacts(number).printedPageEnd}")
+        }
+        assertFalse(curriculum.contains("Printed page 378"))
+        assertFalse(generator.contains("Printed page 378"))
+        assertFalse(curriculum.contains("Active participles are not part of this lesson."))
+        assertFalse(curriculum.contains("Letter names are only reviewed and applied here."))
     }
 
     @Test
@@ -108,6 +135,7 @@ class Units2630StructuralMappingTest {
             assertFalse(File(dir, "REVIEWER_INSTRUCTIONS.md").exists())
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
+            assertTrue(rendered.contains(pages.getValue(number)))
             assertTrue(rendered.contains("mappingPackageDigest: $digest"))
             assertTrue(rendered.contains("PENDING_CURRICULUM_REVIEWER"))
             assertTrue(rendered.contains("not a review packet"))
@@ -121,24 +149,39 @@ class Units2630StructuralMappingTest {
     }
 
     @Test
-    fun sequencingConstraintsRejectReorderedInstruction() {
+    fun unresolvedVarianceBlocksCompletionWithoutChoosingTheProposal() {
         val pack = pack()
-        listOf(26, 27, 28).forEach { number ->
-            val errors = V2Validator.validate(withClaim(pack, number, "active-participle")).errors
-            assertTrue(errors.joinToString("\n"), errors.any { it == "Unit $number cannot contain active-participle instruction" })
+        val proposal = File(repo(), "docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md").readText()
+        assertTrue(proposal.contains("Status: PROPOSED_NOT_ACTIVATED"))
+        assertFalse(proposal.contains("Status: ACTIVATED"))
+        assertTrue(proposal.contains("Letter names are introduced in Lesson 1"))
+        assertTrue(proposal.contains("Active participles first appear in Lesson 29"))
+        assertTrue(proposal.contains("Printed page 378 begins the Grammatical Tables."))
+        assertTrue(proposal.contains("does not choose the letter-name or active-participle resolutions"))
+        pages.keys.forEach { number ->
+            val active = V2Validator.validate(withClaim(pack, number, "active-participle")).errors
+            assertFalse(active.joinToString("\n"), active.any { it.contains("cannot contain active-participle instruction") })
+            val letters = V2Validator.validate(withClaim(pack, number, "letter-name-introduction")).errors
+            assertFalse(letters.joinToString("\n"), letters.any { it.contains("cannot introduce letter names") })
         }
-        val firstPermitted = V2Validator.validate(withClaim(pack, 29, "active-participle")).errors
-        assertFalse(firstPermitted.any { it.contains("cannot contain active-participle instruction") })
-        val introduced = V2Validator.validate(withClaim(pack, 30, "letter-name-introduction")).errors
-        assertTrue(introduced.joinToString("\n"), introduced.any { it == "Unit 30 cannot introduce letter names" })
-        val reviewOnly = V2Validator.validate(withClaim(pack, 30, "letter-name-review")).errors
-        assertFalse(reviewOnly.any { it.contains("cannot introduce letter names") })
         val unitOne = V2Validator.validate(withClaim(pack, 1, "letter-name-introduction")).errors
         assertFalse(unitOne.any { it.contains("cannot introduce letter names") })
-        val keywordOnly = pack.copy(
-            provenanceRecords = pack.provenanceRecords + sample(pack, 27, "9000001", "src-wikibooks-russian-cc-by-sa", "active participle formation"),
-        )
-        assertFalse(V2Validator.validate(keywordOnly).errors.any { it.contains("cannot contain active-participle instruction") })
+        assertFalse(unitOne.any { it.contains("unresolved authority variance") })
+        assertFalse(V2Validator.validate(pack).errors.any { it.contains("unresolved authority variance") })
+        listOf(27, 29, 30).forEach { number ->
+            val message = "Unit $number is blocked by an unresolved authority variance"
+            val complete = V2Validator.validate(claimComplete(pack, number)).errors
+            assertTrue(complete.joinToString("\n"), complete.any { it == message })
+            val installable = V2Validator.validate(claimInstallable(pack, number)).errors
+            assertTrue(installable.joinToString("\n"), installable.any { it == message })
+            val installed = V2Validator.validate(claimInstalled(pack, number)).errors
+            assertTrue(installed.joinToString("\n"), installed.any { it == message })
+        }
+        listOf(26, 28).forEach { number ->
+            val errors = V2Validator.validate(claimComplete(pack, number)).errors
+            assertFalse(errors.joinToString("\n"), errors.any { it.contains("unresolved authority variance") })
+            assertTrue(errors.any { it == gapMessage.getValue(number) })
+        }
     }
 
     @Test
@@ -152,8 +195,25 @@ class Units2630StructuralMappingTest {
             val bookErrors = V2Validator.validate(bookDirected).errors
             assertTrue(bookErrors.joinToString("\n"), bookErrors.any { it == gapMessage.getValue(number) })
             val decision = advancementDecision(bookDirected, bookDirected.unit(number)!!, learner(number, book = true))
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.any { it.contains("not prepared") })
+            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertFalse(decision.remaining.any { it == "This unit is not prepared" })
+        }
+    }
+
+    @Test
+    fun preparedLateUnitIsNotPermanentlyBlockedFromAdvancement() {
+        val pack = pack()
+        pages.keys.forEach { number ->
+            listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
+                val prepared = permissiveAdvancement(pack, number, readiness)
+                val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
+                assertFalse(decision.remaining.any { it == "This unit is not prepared" })
+            }
+            val unprepared = permissiveAdvancement(pack, number, "NOT_PREPARED")
+            val blocked = advancementDecision(unprepared, unprepared.unit(number)!!, learner(number, book = true))
+            assertFalse(blocked.allowed)
+            assertTrue(blocked.remaining.any { it == "This unit is not prepared" })
         }
     }
 
@@ -378,6 +438,38 @@ class Units2630StructuralMappingTest {
     private fun claimComplete(pack: V2CurriculumPack, number: Int) = pack.copy(
         units = pack.units.map { unit ->
             if (unit.number != number) unit else unit.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        },
+    )
+
+    private fun claimInstallable(pack: V2CurriculumPack, number: Int) = pack.copy(
+        units = pack.units.map { unit ->
+            if (unit.number != number) unit else unit.copy(readiness = "INSTALLABLE")
+        },
+    )
+
+    private fun claimInstalled(pack: V2CurriculumPack, number: Int) = pack.copy(
+        units = pack.units.map { unit ->
+            if (unit.number != number) unit else unit.copy(installState = "INSTALLED", readiness = "INSTALLABLE")
+        },
+    )
+
+    private fun permissiveAdvancement(pack: V2CurriculumPack, number: Int, readiness: String) = pack.copy(
+        units = pack.units.map { unit ->
+            if (unit.number != number) {
+                unit
+            } else {
+                unit.copy(
+                    readiness = readiness,
+                    advancement = V2AdvancementRule(
+                        requireInstruction = false,
+                        requireBookSelfAttestation = false,
+                        requireAppChecks = false,
+                        minimumDistinctChecks = 0,
+                        requireDueReview = false,
+                        tutorOptional = true,
+                    ),
+                )
+            }
         },
     )
 

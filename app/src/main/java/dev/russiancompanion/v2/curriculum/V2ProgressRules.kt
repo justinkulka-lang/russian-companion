@@ -191,7 +191,7 @@ internal fun advancementDecision(
     if (unit.number in 16..25 && unit.readiness == "NOT_PREPARED") {
         remaining += "This unit is not prepared"
     }
-    if (unit.number in 26..30) {
+    if (unit.number in 26..30 && unit.readiness == "NOT_PREPARED") {
         remaining += "This unit is not prepared"
     }
     if (rule.requireInstruction) {

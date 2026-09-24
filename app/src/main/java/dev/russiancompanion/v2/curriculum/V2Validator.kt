@@ -31,7 +31,6 @@ internal object V2Validator {
         validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateProvenance(pack, errors)
         validateSourceCapabilities(pack, errors)
-        errors += structuralSequenceErrors(pack)
         validateLateUnitRussian(pack, errors)
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
@@ -640,6 +639,7 @@ internal object V2Validator {
             validateSubstantiveContent(pack, unit, errors)
             errors += completionGapErrors(pack, unit)
         }
+        errors += unresolvedVarianceErrors(unit)
         when (unit.readiness) {
             "NOT_PREPARED" -> {
                 if (unit.installState == "INSTALLED") {
@@ -992,33 +992,19 @@ internal object V2Validator {
         return mutableHost && !url.contains("oldid=")
     }
 
-    private fun structuralSequenceErrors(pack: V2CurriculumPack): List<String> {
-        val errors = mutableListOf<String>()
-        pack.units.forEach { unit ->
-            val claims = claimsOn(pack, unit)
-            if (unit.number < 29 && "active-participle" in claims) {
-                errors += "Unit ${unit.number} cannot contain active-participle instruction"
-            }
-            if ("letter-name-introduction" in claims && unit.number != 1) {
-                errors += "Unit ${unit.number} cannot introduce letter names"
-            }
-        }
-        return errors
-    }
+    private val UNRESOLVED_VARIANCE_UNITS = setOf(27, 29, 30)
 
-    private fun claimsOn(pack: V2CurriculumPack, unit: V2Unit): Set<String> {
-        val claims = mutableSetOf<String>()
-        pack.sourceCapabilities.filter { it.unitNumber == unit.number }.forEach { claims += it.supportedClaim }
-        unit.objectives.forEach { objective ->
-            if (objective.id.contains("active-participle")) claims += "active-participle"
-            if (objective.id.contains("letter-name-introduction")) claims += "letter-name-introduction"
-        }
-        val objectiveIds = unit.objectives.map { it.id }.toSet()
-        pack.items.filter { it.objectiveId in objectiveIds }.forEach { item ->
-            val feature = item.assessment?.testedFeature.orEmpty()
-            if (feature == "active-participle" || feature == "letter-name-introduction") claims += feature
-        }
-        return claims
+    /**
+     * The Units 26-30 authority variance is proposed and not activated.
+     * Affected units cannot become content-complete, installable, or installed
+     * until a Product Owner and qualified reviewer activate it.
+     */
+    private fun unresolvedVarianceErrors(unit: V2Unit): List<String> {
+        if (unit.number !in UNRESOLVED_VARIANCE_UNITS) return emptyList()
+        val claimsCompletion = unit.readiness != "NOT_PREPARED"
+        val claimsInstall = unit.installState == "INSTALLED" || unit.readiness == "INSTALLABLE"
+        if (!claimsCompletion && !claimsInstall) return emptyList()
+        return listOf("Unit ${unit.number} is blocked by an unresolved authority variance")
     }
 
     private fun validateLateUnitRussian(pack: V2CurriculumPack, errors: MutableList<String>) {

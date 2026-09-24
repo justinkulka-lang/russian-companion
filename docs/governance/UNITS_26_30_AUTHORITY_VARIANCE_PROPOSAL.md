@@ -4,6 +4,8 @@ Status: PROPOSED_NOT_ACTIVATED
 
 This proposal is not binding. It does not amend `MASTER_AUTHORITY_v2.0.md`. It does not approve a mapping, a linguistic review, installation, a candidate freeze, physical acceptance, AT-031, or public release. Activation requires a separate written Product Owner decision and a qualified-reviewer decision.
 
+While this status remains `PROPOSED_NOT_ACTIVATED`, production validation does not choose the letter-name or active-participle resolutions below. Units 27, 29, and 30 stay blocked from content-complete, installable, and installed states until that decision is recorded.
+
 Observed owned-edition structure that differs from the current schedule:
 
 - Letter names are introduced in Lesson 1, section 1.5. Lesson 30 only reviews and applies them for abbreviations. Unit 30 must not claim to introduce letter names for the first time.
