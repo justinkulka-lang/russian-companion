@@ -20,6 +20,7 @@ from pathlib import Path
 from units_3_5_intake import build_units_3_5
 from units_6_10_intake import build_units_6_10
 from units_11_15_intake import build_units_11_15
+from units_16_20_intake import build_units_16_20
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -94,11 +95,11 @@ UNITS_3_30 = [
     (13, "Aspect in the past", "Aspect in the past, tense use, infinitive aspect, and reported speech"),
     (14, "Aspect in the future", "Aspect in the future and impersonal constructions"),
     (15, "Requests", "Requests, the imperative, and consolidation of aspect use"),
-    (16, "Instrumental", "Instrumental case, selected demonstratives, and surname declension"),
-    (17, "Time and dates", "Time, date, age, ordinal numbers, months, and years"),
-    (18, "Comparison", "Comparative, superlative, and relative clauses"),
-    (19, "Conditionals", "Conditional, obligation, and prefixes"),
-    (20, "Motion verbs", "Verbs of motion: going, running, and bringing"),
+    (16, "Instrumental", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
+    (17, "Time and dates", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
+    (18, "Comparison", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+    (19, "Conditionals", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
+    (20, "Motion verbs", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs"),
     (21, "Purpose", "Further possession and purpose"),
     (22, "Number forms", "Number declension, both, collective numerals, and fractions"),
     (23, "Duration", "Time expressions covering when and duration"),
@@ -1441,21 +1442,27 @@ def build() -> dict:
     proposed = build_units_3_5()
     later = build_units_6_10()
     following = build_units_11_15()
+    intake = build_units_16_20()
     items.extend(proposed["items"])
     items.extend(later["items"])
     items.extend(following["items"])
+    items.extend(intake["items"])
     examples.extend(proposed["examples"])
     examples.extend(later["examples"])
     examples.extend(following["examples"])
+    examples.extend(intake["examples"])
     for proposed_unit in proposed["units"]:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in later["units"]:
         objectives.extend(proposed_unit["objectives"])
     for proposed_unit in following["units"]:
         objectives.extend(proposed_unit["objectives"])
+    for proposed_unit in intake["units"]:
+        objectives.extend(proposed_unit["objectives"])
     references.extend(proposed["references"])
     references.extend(later["references"])
     references.extend(following["references"])
+    references.extend(intake["references"])
 
     units = [
         development_unit(
@@ -1573,8 +1580,46 @@ def build() -> dict:
                 minimum_checks=proposed_unit["minimum_checks"],
             )
         )
+    intake_by_number = {unit["number"]: unit for unit in intake["units"]}
+    intake_pages = {
+        16: ("188-200", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
+        17: ("201-214", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
+        18: ("215-229", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+        19: ("230-239", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
+        20: ("240-256", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20"),
+    }
+    intake_summaries = {
+        16: "Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        18: "Proposed Unit 18 is in development and is not prepared. Comparison and relative-clause agreement have no admitted frozen instructional source. The frozen adjective page is not a comparison source. It is not installed and the owned-edition mapping is not signed.",
+        19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        20: "Proposed Unit 20 is in development and is not prepared. Unidirectional and multidirectional motion pairs have no admitted frozen instructional source. A red link, a general page, and dictionary rows are not that source. It is not installed and the owned-edition mapping is not signed.",
+    }
     for number, short, title in UNITS_3_30:
-        if number <= 15:
+        if number < 16 or number > 20:
+            continue
+        proposed_unit = intake_by_number[number]
+        pages, topic = intake_pages[number]
+        units.append(
+            development_unit(
+                number,
+                title,
+                short,
+                intake_summaries[number],
+                proposed_unit["sessions"],
+                [number - 1],
+                readiness="NOT_PREPARED",
+                mapping_note=(
+                    f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
+                    "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
+                    "Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment."
+                ),
+                require_due_review=False,
+                minimum_checks=max(proposed_unit["minimum_checks"], 1),
+            )
+        )
+    for number, short, title in UNITS_3_30:
+        if number <= 20:
             continue
         units.append(
             {
@@ -1602,7 +1647,7 @@ def build() -> dict:
         "packVersion": 3,
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
-        "unitReviews": [pending_unit_review(number) for number in range(1, 16)],
+        "unitReviews": [pending_unit_review(number) for number in range(1, 21)],
         "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"]],
         "rights": [*RIGHTS, *proposed["rights"]],
         "letters": letters,
@@ -1613,8 +1658,8 @@ def build() -> dict:
         "audioAssets": [],
         "handwritingAssets": [],
         "ownedEditionMappings": [],
-        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"]],
-        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"]],
+        "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"]],
+        "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

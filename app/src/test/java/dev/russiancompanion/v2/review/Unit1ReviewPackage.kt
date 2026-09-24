@@ -32,10 +32,14 @@ internal const val UNITS_6_10_CURRICULUM_COMMIT = "c9f23afd219681319554d90424f2d
 
 internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
 
+internal const val UNITS_16_20_CURRICULUM_COMMIT = "55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
     in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
     in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
     in 6..10 -> UNITS_6_10_CURRICULUM_COMMIT
+    in 11..15 -> UNITS_11_15_CURRICULUM_COMMIT
+    in 16..20 -> UNITS_16_20_CURRICULUM_COMMIT
     else -> UNITS_11_15_CURRICULUM_COMMIT
 }
 
@@ -171,6 +175,12 @@ private const val UNITS_11_15_EDITION_NOTES =
 private const val UNITS_11_15_OBSERVATION_SOURCE =
     "Product Owner structural mapping input for Units 11-15, v1.0, visually inspected on 23 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
 
+private const val UNITS_16_20_EDITION_NOTES =
+    "Introduction signed Nicholas J. Brown, London, 1996. Scanned file extent was 528 pages. ISBN was not visible and is not recorded. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Private-file SHA-256 is 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303."
+
+private const val UNITS_16_20_OBSERVATION_SOURCE =
+    "Product Owner structural mapping input for Units 16-20, v1.0, visually inspected on 24 September 2026. Page numbers are printed book pages. The private PDF is not repository curriculum."
+
 private const val MAPPING_UNRESOLVED_QUESTIONS =
     "Confirm the exact edition and ISBN from the purchase record. Confirm each printed page range against the owned copy. Record any variance. Confirm whether app objectives cover the required skill progression without later material. Confirm Unit 1 and Unit 2 linguistic accuracy. Review Units 3-5 only after lawful source-based content is prepared. The ownership statement is not reviewer verification. Qualified linguistic review is not recorded here."
 
@@ -283,6 +293,46 @@ private val STRUCTURAL_MAPPING_OBSERVATIONS = listOf(
         "Requests, imperative forms, and consolidation of aspect use",
         UNITS_11_15_EDITION_NOTES,
         UNITS_11_15_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        16,
+        "Lesson 16",
+        "188-200",
+        "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        17,
+        "Lesson 17",
+        "201-214",
+        "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        18,
+        "Lesson 18",
+        "215-229",
+        "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        19,
+        "Lesson 19",
+        "230-239",
+        "Conditional constructions with бы; obligation or probability with forms of должен; productive meanings of selected verbal prefixes",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
+    ),
+    StructuralMappingObservation(
+        20,
+        "Lesson 20",
+        "240-256",
+        "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20",
+        UNITS_16_20_EDITION_NOTES,
+        UNITS_16_20_OBSERVATION_SOURCE,
     ),
 )
 
@@ -862,13 +912,16 @@ private fun mappingErrors(mapping: String, pack: V2CurriculumPack, unitNumber: I
             "observed_edition_notes",
             "corresponding_lesson",
             "corresponding_pages",
-            "corresponding_topic",
             "observation_source",
             "unresolved_questions",
         ).forEach { column ->
             if (Regex("[\\u0400-\\u04FF]").containsMatchIn(value(column))) {
                 errors += "Mapping worksheet introduces Russian lesson content in $column for ${row[0]}"
             }
+        }
+        val topic = value("corresponding_topic")
+        if (Regex("[\\u0400-\\u04FF]").containsMatchIn(topic) && topic != observation?.topic) {
+            errors += "Mapping worksheet introduces Russian lesson content in corresponding_topic for ${row[0]}"
         }
         if (observation != null) {
             if (value("edition_identification") != OBSERVED_EDITION_TITLE ||

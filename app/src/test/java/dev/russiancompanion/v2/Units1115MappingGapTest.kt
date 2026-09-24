@@ -69,7 +69,7 @@ class Units1115MappingGapTest {
             assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number })
         }
-        assertTrue(pack.units.drop(15).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
+        assertTrue(pack.units.drop(20).all { it.installState == "NOT_YET_INSTALLED" && it.readiness == "NOT_PREPARED" && it.sessions.isEmpty() })
         assertFalse(File(repo(), "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -95,7 +95,7 @@ class Units1115MappingGapTest {
     @Test
     fun anEmptyUnitCannotBeMarkedContentComplete() {
         val pack = pack()
-        val claimed = pack.unit(16)!!.copy(
+        val claimed = pack.unit(21)!!.copy(
             installState = "DEVELOPMENT",
             readiness = "CONTENT_COMPLETE_REVIEW_PENDING",
             mappingStatus = "PENDING_CURRICULUM_REVIEWER",
