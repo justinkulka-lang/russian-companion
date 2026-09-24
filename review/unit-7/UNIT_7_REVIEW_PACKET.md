@@ -11,12 +11,12 @@ Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: c9f23afd219681319554d90424f2d59fd550cadc
-- Unit content-review SHA-256: d717a7a94e6151c43e02af3f067710594ede0efac9a8bd87a00c28c0426b63a0
+- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
+- Unit content-review SHA-256: 56f1f67b9bda3e58eedd8f7bbb390c23fce2cff39b36a5d964a028cc2eeb33d1
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
-- Review-package SHA-256: b954685ae5216f9a2caa54f397e71a1da1aa3ff9f6f7d0743ed18aa53fedf44b
-- Repository source SHA-256: 0aba6436df419cfe8c040f6d29089a339a83a03d9351bd32e45d420d5fda7889
+- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
+- Review-package SHA-256: 41041d9b5bcacbbff95417067cf2f6bf6222274460e47e03faa48f5d2548023e
+- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=102
+estimatedMinutes=106
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 7.
 
 ### UNIT `unit-7`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-book
-- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-book, obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book, u7-s-adverb
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 028941d9fe327bc348ef45156a08ca9875b004dceb888228679f9f02a5e6ed09
+- Content hash: ab024fede66ced06107fe2a3061dce1e3837938909abef941d20e0dfd8c6ac66
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=102
+estimatedMinutes=106
 
 ### ADVANCEMENT `unit-7-advancement`
 
@@ -252,6 +252,25 @@ title=Self-attest Lesson 7 book work
 kind=SELF_ATTESTATION
 unitNumber=7
 instruction=u7-st-book-work,u7-st-book
+examples=
+practice=
+checks=
+remediation=
+
+### OBJECTIVE `obj-u7-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8d2526bce2788d4afe278fcd145f9c35562b3fb7ef473fdaec500f73f04f6ad3
+
+title=Admitted orientation
+kind=GUIDANCE
+unitNumber=7
+instruction=u7-st-adverb-orient
 examples=
 practice=
 checks=
@@ -1665,6 +1684,65 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 7 work in your copy.
+companionDirection=
+remediationStepId=
+
+### SESSION `u7-s-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8e6a2b44f6b94a8be8dcd0568f0bb1d91702ebd352630ea806b28ad6c52b820a
+
+title=Admitted orientation
+estimatedMinutes=4
+objectives=obj-u7-adverb
+steps=u7-st-adverb-orient,u7-st-adverb-gap
+
+### STEP `u7-st-adverb-orient`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e894de7dab04c391b71a923030466934ffd908f7a71c7a95f4b8ddcff995291a
+
+kind=TEACH
+title=Admitted orientation
+body=Adverbs describe a verb much like adjectives describe nouns.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-adverb-gap`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9a0506f6d521d310d72e0f55ed6b292f53f85f7c534226df08b99b0bf56224e0
+
+kind=UNAVAILABLE
+title=Adverb forms stay in the copy you own
+body=The introductory adverb objective is not prepared.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=
+unavailableReason=The introductory Russian adverb paradigm has no admitted frozen span.
+bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -3541,12 +3619,12 @@ relationParticipantIds=prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-6 | p
 ### REFERENCE `ref-u610-attribution`
 
 - Objectives: none
-- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book
+- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book, u7-s-adverb
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 0a0b75683ed7c4a333cb7c82f1710bfdf9b6d06a3167492f8334ba3fcc88549d
+- Content hash: 236a6221bcabddfa80468f04b620cb2259a0be2ccd34d3dec7281fc74f9b644f
 
 title=Units 6–10 source notice
 summary=Proposed Units 6–10 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts.
@@ -6456,6 +6534,35 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u7-adverb-orient`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 511b31208e7fb1b809e4955656f745245f84f349553ed79e2ee948d84b60198f
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adverbs?oldid=3197995
+sourceRevision=3197995
+sourceRecordId=adverbs:Adverbs describe a verb much like adjectives describe nouns.
+originalSourceText=Adverbs describe a verb much like adjectives describe nouns.
+shippedText=Adverbs describe a verb much like adjectives describe nouns.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed
+contentHash=bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u7-default-rem`
 
 - Objectives: obj-u7-default
@@ -7644,6 +7751,45 @@ text=When you have done Lesson 7 in your copy, self-attest here. Attestation rec
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 7 work in your copy.
 
+### AUTHORED_ENGLISH `en-u7-195`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bef095f19703b2041b941f249019e4537b8d8f3f9708f2f7bc37884bb4238b76
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted orientation
+
+### AUTHORED_ENGLISH `en-u7-196`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bbb0888d2b1f360b3bc17b55e921d7228bccb9314114c5bab5acd3efa7d022e6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Adverb forms stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u7-197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f13d32b01013b6615e3fae6e6a621ffc18e11ed80ebe0c7ffce4ac2e2d81af11
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The introductory adverb objective is not prepared.
+
 ### SOURCE `src-openrussian-50e210c4`
 
 - Objectives: none
@@ -7863,6 +8009,7 @@ permitsAppUse=true
 - `obj-u7-objectadj` REMEDIATION `u7-st-rem-objectadj`
 - `obj-u7-book` INSTRUCTION `u7-st-book-work`
 - `obj-u7-book` INSTRUCTION `u7-st-book`
+- `obj-u7-adverb` INSTRUCTION `u7-st-adverb-orient`
 - `u7-s-orient` OBJECTIVE `obj-u7-default`
 - `u7-s-orient` OBJECTIVE `obj-u7-endings`
 - `u7-s-orient` OBJECTIVE `obj-u7-spelling`
@@ -8023,6 +8170,9 @@ permitsAppUse=true
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-3`
 - `u7-s-book` OBJECTIVE `obj-u7-book`
 - `u7-st-book-work` REFERENCE `ref-u610-attribution`
+- `u7-s-adverb` OBJECTIVE `obj-u7-adverb`
+- `u7-st-adverb-orient` REFERENCE `ref-u610-attribution`
+- `u7-st-adverb-gap` REFERENCE `ref-u610-attribution`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0-gloss`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-1`
@@ -8123,6 +8273,7 @@ permitsAppUse=true
 - `obj-u7-place` PROVENANCE `prov-ex-u7-place-2-ru`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-en`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-ru`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-orient`
 - `obj-u7-default` PROVENANCE `prov-u7-default-rem`
 - `obj-u7-demonstrative` PROVENANCE `prov-u7-demonstrative-rem`
 - `obj-u7-demonstrative` PROVENANCE `prov-u7-demonstrative-rem-r0`
@@ -8151,8 +8302,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-None.
-
+- `u7-st-adverb-gap`
 
 ## Unresolved relationships
 

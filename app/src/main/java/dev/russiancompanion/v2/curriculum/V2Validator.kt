@@ -689,7 +689,7 @@ internal object V2Validator {
             return missingCapabilityError(
                 pack,
                 unit,
-                "Unit 7 is not content-complete without an admitted introductory adverb paradigm",
+                "Unit 7 is not content-complete without an admitted introductory adverb paradigm source capability",
             )
         }
         if (unit.number !in 16..30) return emptyList()
@@ -697,22 +697,22 @@ internal object V2Validator {
             16 -> missingCapabilityError(
                 pack,
                 unit,
-                "Unit 16 is not content-complete without an admitted instrumental complement span",
+                "Unit 16 is not content-complete without an admitted instrumental complement span source capability",
             )
             17 -> missingCapabilityError(
                 pack,
                 unit,
-                "Unit 17 is not content-complete without telling-time, weekday, date, and age sources",
+                "Unit 17 is not content-complete without telling-time, weekday, date, and age sources as required source capabilities",
             )
             18 -> missingCapabilityError(
                 pack,
                 unit,
-                "Unit 18 is not content-complete without comparison and relative-clause sources",
+                "Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities",
             )
             19 -> missingCapabilityError(
                 pack,
                 unit,
-                "Unit 19 is not content-complete without conditional and obligation sources",
+                "Unit 19 is not content-complete without conditional and obligation sources as required source capabilities",
             )
             20 -> missingCapabilityError(
                 pack,

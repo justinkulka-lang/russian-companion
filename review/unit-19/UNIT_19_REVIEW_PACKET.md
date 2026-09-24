@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511
-- Unit content-review SHA-256: 9a46af320ddf65aeb43cb5eba02fc9069e0fa71f753098525353a5f32e489367
+- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
+- Unit content-review SHA-256: 38cc28f764d971e6e99330e4183da2e8ea0e8ee5764ab1d7f6412b44987a8aa8
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
-- Review-package SHA-256: e0e76c45d8036df184ae8aa189138ce03c3df3e51de18accf2278e79f91167d9
-- Repository source SHA-256: 0aba6436df419cfe8c040f6d29089a339a83a03d9351bd32e45d420d5fda7889
+- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
+- Review-package SHA-256: 22ec5bd794115946bfe9785ff366ce9a7e0ec61b6d32ec60a26b6eaf2904b8a3
+- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=19
 title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
-topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 19, printed pages 230-239. Independently stated topic scope: Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=19
 prerequisites=18
-estimatedMinutes=38
+estimatedMinutes=58
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 19.
 
 ### UNIT `unit-19`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-book, obj-u19-conditional, obj-u19-obligation
-- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-book, u19-s-gap-conditional, u19-s-gap-obligation
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book, obj-u19-probability
+- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-book, u19-s-gap-probability
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d1a19cd7a2390ebb4de5eb668ace368700a079841d7990ee2b9b0a8798b13bf6
+- Content hash: 3f8a47b3c9e8e9f4295b173e46928446ed0a739b679d50691dc607d3ca94ae4b
 
 number=19
 title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
-topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 19, printed pages 230-239. Independently stated topic scope: Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=19
 prerequisites=18
-estimatedMinutes=38
+estimatedMinutes=58
 
 ### ADVANCEMENT `unit-19-advancement`
 
@@ -124,6 +124,44 @@ practice=u19-st-guided-prefix-caution-1
 checks=u19-i-prefix-caution-1,u19-i-prefix-caution-2
 remediation=u19-st-rem-prefix-caution
 
+### OBJECTIVE `obj-u19-conditional`
+
+- Objectives: obj-u19-conditional
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9a7d34cb1673835e06c90206f269f565c6245ca0f41c77802d3eb43c92575666
+
+title=Choose the admitted gloss beside the shown conditional
+kind=RECOGNITION
+unitNumber=19
+instruction=u19-st-orient,u19-st-teach-conditional-1,u19-st-teach-conditional-2,u19-st-teach-conditional-3
+examples=ex-u19-conditional-0,ex-u19-conditional-1,ex-u19-conditional-2,ex-u19-conditional-3
+practice=u19-st-guided-conditional-1
+checks=u19-i-conditional-1,u19-i-conditional-2
+remediation=u19-st-rem-conditional
+
+### OBJECTIVE `obj-u19-obligation`
+
+- Objectives: obj-u19-obligation
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e7dc781719c023678372bec8a56d29dddbf2a368f3b4d4d28e6b8640c431bc86
+
+title=Choose the admitted gloss beside the shown obligation form
+kind=RECOGNITION
+unitNumber=19
+instruction=u19-st-orient,u19-st-teach-obligation-1,u19-st-teach-obligation-2,u19-st-teach-obligation-3
+examples=ex-u19-obligation-0,ex-u19-obligation-1,ex-u19-obligation-2,ex-u19-obligation-3
+practice=u19-st-guided-obligation-1
+checks=u19-i-obligation-1,u19-i-obligation-2
+remediation=u19-st-rem-obligation
+
 ### OBJECTIVE `obj-u19-book`
 
 - Objectives: obj-u19-book
@@ -143,39 +181,20 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u19-conditional`
+### OBJECTIVE `obj-u19-probability`
 
-- Objectives: obj-u19-conditional
+- Objectives: obj-u19-probability
 - Sessions: none
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4018ed4ca4f7b82fa39a590f00068a5699efa81506f2aeba1f91b72b76a32e32
+- Content hash: 08319a08f819323ae3089b9fcafc24794937848a9375dd68b9c4c3ec820e0927
 
-title=Conditional patterns stay in the copy you own
+title=Probability stays in the copy you own
 kind=GUIDANCE
 unitNumber=19
-instruction=u19-st-gap-conditional
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u19-obligation`
-
-- Objectives: obj-u19-obligation
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 849de86876b19e32811434e209264175cabce496673b234f509d550efd01d8cf
-
-title=Obligation patterns stay in the copy you own
-kind=GUIDANCE
-unitNumber=19
-instruction=u19-st-gap-obligation
+instruction=u19-st-gap-probability
 examples=
 practice=
 checks=
@@ -183,32 +202,32 @@ remediation=
 
 ### SESSION `u19-s-orient`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-book
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book
 - Sessions: u19-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0afd42b4335b3f6799cfb8ab04beea9c843527a462ce7177af3c193b36e1e394
+- Content hash: b09ebd559bbbe1403e7a98109aa5559aa4b05c2e58ec0e0c0e28bbc05037fb01
 
 title=Admitted prefix cautions
 estimatedMinutes=8
-objectives=obj-u19-prefix-caution,obj-u19-book
+objectives=obj-u19-prefix-caution,obj-u19-conditional,obj-u19-obligation,obj-u19-book
 steps=u19-st-orient
 
 ### STEP `u19-st-orient`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-book
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book
 - Sessions: u19-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 048809941e3ba0d22768f9e669f9c7b6705328fe8b32ade079be86e1019d08da
+- Content hash: b283e4488de3eed3624ffcebe6e1440b546ef8a3aa6570f36ebd8c09c0eafb46
 
 kind=ORIENT
 title=Admitted prefix cautions
-body=Proposed Unit 19 uses frozen prefix cautions. Conditional patterns and obligation patterns stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -365,6 +384,300 @@ bookDirection=
 companionDirection=
 remediationStepId=u19-st-rem-prefix-caution
 
+### SESSION `u19-s-conditional`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c3ee166a4233e889b5124afb3f09d20e726332b41de4b33acd1ef094961db3f9
+
+title=Choose the admitted gloss beside the shown conditional
+estimatedMinutes=12
+objectives=obj-u19-conditional
+steps=u19-st-teach-conditional-1,u19-st-guided-conditional-1,u19-st-teach-conditional-2,u19-st-teach-conditional-3,u19-st-rem-conditional,u19-st-check-conditional
+
+### STEP `u19-st-teach-conditional-1`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c155e5691cfc9fdc09c5312ebe36e3e5915fc5f61e89b6ab3fdbf6a55cc9b964
+
+kind=TEACH
+title=Admitted lines
+body=я спал бы — a male speaker. я спала́ бы — a female speaker. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u19-conditional-0,ex-u19-conditional-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-guided-conditional-1`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09f95df6ad6e9cd07f11a3fa10ee1df4a2cd176c172f26ff09b2db3a4a3954fd
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u19-g-conditional-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-conditional
+
+### STEP `u19-st-teach-conditional-2`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bfac1256cfcb9a8fabbc31f807c62afb346c4152f2867c608005260371f54bcb
+
+kind=TEACH
+title=Admitted instruction
+body=a male speaker
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-teach-conditional-3`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 973026481a0eee6864ccaf27188222ff1269d1cb68c24c95ae61c508efb7b9c0
+
+kind=TEACH
+title=Admitted lines
+body=я бы поспа́л — I would like to sleep. я бы поспала́ — a female speaker. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u19-conditional-2,ex-u19-conditional-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-rem-conditional`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d9e2f65b7f0a48969c9b9c4affbbd2a6a0bb29792fc950bca013ef8707fcca81
+
+kind=REMEDIATE
+title=Remediation
+body=a male speaker
+dominantAction=Continue
+references=
+items=
+examples=ex-u19-conditional-0,ex-u19-conditional-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-check-conditional`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6ea6414e70ee78df4e913f6b89b381539da26ff4b889a9ca6757439ac438a66d
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u19-i-conditional-1,u19-i-conditional-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-conditional
+
+### SESSION `u19-s-obligation`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d72cdeba005706f9048bd5eaaabf90a24987b36a034c3bbd40ea1c022a0d6504
+
+title=Choose the admitted gloss beside the shown obligation form
+estimatedMinutes=12
+objectives=obj-u19-obligation
+steps=u19-st-teach-obligation-1,u19-st-guided-obligation-1,u19-st-teach-obligation-2,u19-st-teach-obligation-3,u19-st-rem-obligation,u19-st-check-obligation
+
+### STEP `u19-st-teach-obligation-1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 50814c177abe620833418e755fba8d537e5bf588497097971c94050290fad88c
+
+kind=TEACH
+title=Admitted lines
+body=я должен — I have to. должна — If the subject is feminine. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u19-obligation-0,ex-u19-obligation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-guided-obligation-1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 28c20e1f10e63a163e2cefed311167d0438c7eef90e469a79cc5cdc46a0d3edd
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u19-g-obligation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-obligation
+
+### STEP `u19-st-teach-obligation-2`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 78bad5b5ff8387428e2920acaa464fc22021033666ddd4eac5c5178bf7444746
+
+kind=TEACH
+title=Admitted instruction
+body=I have to
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-teach-obligation-3`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3ae23374da1af5eb4b5c1ead88f0effdb1531959b3f5892547160aa70a9372c8
+
+kind=TEACH
+title=Admitted lines
+body=должно — If the subject is neuter. должны — If the subject is plural. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u19-obligation-2,ex-u19-obligation-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-rem-obligation`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 294251e4f358da3dda06a4f6e1dae157915ec8a7a428d3aec2938b57d619d4bf
+
+kind=REMEDIATE
+title=Remediation
+body=I have to
+dominantAction=Continue
+references=
+items=
+examples=ex-u19-obligation-0,ex-u19-obligation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-check-obligation`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6988785e6ef549f60df29c1cb1b9bf7c7a06371e7d8531c7a6c468128df63e27
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u19-i-obligation-1,u19-i-obligation-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-obligation
+
 ### SESSION `u19-s-book`
 
 - Objectives: obj-u19-book
@@ -424,76 +737,39 @@ bookDirection=Self-attest only after the Lesson 19 work in your copy.
 companionDirection=
 remediationStepId=
 
-### SESSION `u19-s-gap-conditional`
+### SESSION `u19-s-gap-probability`
 
-- Objectives: obj-u19-conditional
-- Sessions: u19-s-gap-conditional
+- Objectives: obj-u19-probability
+- Sessions: u19-s-gap-probability
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 73e86e376b3916de87343f99fec3fb9c4b554386adfecda1dc8856ac0fa2e8b7
+- Content hash: af6ff33cc46f52ca4c256c40f012b9f0cbbd851233be2e51b7fd677a1880e2b5
 
-title=Conditional patterns stay in the copy you own
+title=Probability stays in the copy you own
 estimatedMinutes=4
-objectives=obj-u19-conditional
-steps=u19-st-gap-conditional
+objectives=obj-u19-probability
+steps=u19-st-gap-probability
 
-### STEP `u19-st-gap-conditional`
+### STEP `u19-st-gap-probability`
 
-- Objectives: obj-u19-conditional
-- Sessions: u19-s-gap-conditional
+- Objectives: obj-u19-probability
+- Sessions: u19-s-gap-probability
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5aed51be8cc73d95828dea34d36fef0b62a8e2d7e4aba616919ea00a2b0a4ccc
+- Content hash: c235a17ce399da2cb8e9131db04670854d19379675978261e65618b3adba7fb2
 
 kind=UNAVAILABLE
-title=Conditional patterns stay in the copy you own
-body=Conditional patterns stay in the copy you own. Prefix cautions do not supply that pattern.
+title=Probability stays in the copy you own
+body=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
 examples=
-unavailableReason=Conditional patterns have no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u19-s-gap-obligation`
-
-- Objectives: obj-u19-obligation
-- Sessions: u19-s-gap-obligation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6c41ec6566b595efe04f3e3739ad4731c5f67f0c1f9282724ba567fed17cab45
-
-title=Obligation patterns stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u19-obligation
-steps=u19-st-gap-obligation
-
-### STEP `u19-st-gap-obligation`
-
-- Objectives: obj-u19-obligation
-- Sessions: u19-s-gap-obligation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fe090b1af9428d651dcc8200bac2e26d935543c04f87b0a0627dd539002117b7
-
-kind=UNAVAILABLE
-title=Obligation patterns stay in the copy you own
-body=Obligation patterns stay in the copy you own. Prefix cautions do not supply that pattern.
-dominantAction=Continue
-references=ref-u1620-attribution
-items=
-examples=
-unavailableReason=Obligation patterns have no admitted frozen span.
+unavailableReason=Probability use has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -566,6 +842,142 @@ note=to do
 objectiveId=obj-u19-prefix-caution
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u19-conditional-0`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 67ccf89739dbda69f7c1819767c1c4821ffba395768ec9c7ac7b5121162b567f
+
+kind=LEXICAL
+letterId=
+display=я спал бы
+note=a male speaker
+objectiveId=obj-u19-conditional
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-conditional-1`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e0107b8137be17518ab4b0229b046f1b722827a32187c8a0d5615642701967e1
+
+kind=LEXICAL
+letterId=
+display=я спала́ бы
+note=a female speaker
+objectiveId=obj-u19-conditional
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-conditional-2`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a0012cc7c797d9951a5fd117d85ed51df83a3755739ac8783b9a798dfd1c93ca
+
+kind=LEXICAL
+letterId=
+display=я бы поспа́л
+note=I would like to sleep
+objectiveId=obj-u19-conditional
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-conditional-3`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ea14c7d836ef3f87d99f3bf7cb91e072ad340f7bf930010c59c1ac3ef295d7c9
+
+kind=LEXICAL
+letterId=
+display=я бы поспала́
+note=a female speaker
+objectiveId=obj-u19-conditional
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-obligation-0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c00235bae93c996779d807f7f461107c5a488dc3600a991d23583a6b40fc3faa
+
+kind=LEXICAL
+letterId=
+display=я должен
+note=I have to
+objectiveId=obj-u19-obligation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-obligation-1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c230dbcd147cf56e17ea5421de18d21142cd945eba01450bdaa912465b62470a
+
+kind=LEXICAL
+letterId=
+display=должна
+note=If the subject is feminine
+objectiveId=obj-u19-obligation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-obligation-2`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4ebc6bcc73a544bd02cf4ec48344d3372ec610d06ec493acbfc009943186738
+
+kind=LEXICAL
+letterId=
+display=должно
+note=If the subject is neuter
+objectiveId=obj-u19-obligation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-obligation-3`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aaaeb0f19bba461752d612e4127ddef484f3367c1130dd593d16e4b487ee075d
+
+kind=LEXICAL
+letterId=
+display=должны
+note=If the subject is plural
+objectiveId=obj-u19-obligation
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u19-g-prefix-caution-0`
 
 - Objectives: obj-u19-prefix-caution
@@ -599,6 +1011,76 @@ whyAnswerDemonstratesObjective=Does this answer show the dissuade meaning?
 contrastMembers=to dissuade | to agree | to write
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-prefix-caution-0-ru | prov-ex-u19-prefix-caution-0-en | prov-ex-u19-prefix-caution-1-en | prov-ex-u19-prefix-caution-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u19-g-conditional-0`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ea515726e8dc59e74ea76151598bf1e41c4b3d77b129159637da1890651e798e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=я спал бы
+options=a male speaker | a female speaker | I would like to sleep
+answer=a male speaker
+feedback=The frozen line writes a male speaker beside the shown form. a male speaker.
+objectiveId=obj-u19-conditional
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=CONDITIONAL_MALE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-conditional-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u19-conditional-0-en
+distractorSourceIds= | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-2-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+contrastMembers=a male speaker | a female speaker | I would like to sleep
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-conditional-0-ru | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u19-g-obligation-0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fb90bab3ec46d0bce91f60f3a003256cdcec2dbbd551215d650b403cbea85f4b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=я должен
+options=I have to | If the subject is feminine | If the subject is plural
+answer=I have to
+feedback=The frozen line writes translates to beside the shown form. I have to.
+objectiveId=obj-u19-obligation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=OBLIGATION_HAVE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-obligation-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u19-obligation-0-en
+distractorSourceIds= | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-3-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+contrastMembers=I have to | If the subject is feminine | If the subject is plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-obligation-0-ru | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-3-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u19-i-prefix-caution-1`
@@ -671,23 +1153,627 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u19-prefix-caution-x-0 | prov-ex-u19-prefix-caution-0-ru | prov-ex-u19-prefix-caution-1-ru | prov-ex-u19-prefix-caution-3-ru
 responseKind=RUSSIAN_TOKEN
 
+### INDEPENDENT_CHECK `u19-i-conditional-1`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bf155d47ce16af18a9b025b8c33f18fe648cf08e7c99b83a8877d34e12c23dc5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=я спала́ бы
+options=a female speaker | a male speaker | I would like to sleep
+answer=a female speaker
+feedback=The frozen line writes a male speaker beside the shown form. a female speaker.
+objectiveId=obj-u19-conditional
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=CONDITIONAL_FEMALE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-conditional-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-conditional-1-en
+distractorSourceIds= | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+contrastMembers=a female speaker | a male speaker | I would like to sleep
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-conditional-1-ru | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u19-i-conditional-2`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a1280ff1b4ac6ef2f5c69d5d2e0985796c8b1c873f8e53bd07bd1d313baf501f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=я бы поспала́
+options=a female speaker | a male speaker | I would like to sleep
+answer=a female speaker
+feedback=The frozen line writes a male speaker beside the shown form. a female speaker.
+objectiveId=obj-u19-conditional
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=CONDITIONAL_FEMALE_ALT
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-conditional-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-conditional-1-en
+distractorSourceIds= | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+contrastMembers=a female speaker | a male speaker | I would like to sleep
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-conditional-3-ru | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u19-i-obligation-1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 801e32583eca5446eb6f95003ef8d6f9397b8d7a9e9744ac697330632b9696ed
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=должна
+options=If the subject is feminine | I have to | If the subject is plural
+answer=If the subject is feminine
+feedback=The frozen line writes translates to beside the shown form. If the subject is feminine.
+objectiveId=obj-u19-obligation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=OBLIGATION_FEMININE_FORM
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-obligation-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-obligation-1-en
+distractorSourceIds= | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-3-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+contrastMembers=If the subject is feminine | I have to | If the subject is plural
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-obligation-1-ru | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-3-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u19-i-obligation-2`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eaac9b7053a8defe6264778f5977097a9547129ac31ad9860af13967e99e878f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=должны
+options=If the subject is plural | I have to | If the subject is feminine
+answer=If the subject is plural
+feedback=The frozen line writes translates to beside the shown form. If the subject is plural.
+objectiveId=obj-u19-obligation
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+testedFeature=OBLIGATION_PLURAL_FORM
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u19-obligation-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-obligation-3-en
+distractorSourceIds= | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en
+distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
+whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+contrastMembers=If the subject is plural | I have to | If the subject is feminine
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u19-obligation-3-ru | prov-ex-u19-obligation-3-en | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u1620-attribution`
 
 - Objectives: none
-- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-book, u19-s-gap-conditional, u19-s-gap-obligation
+- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-book, u19-s-gap-probability
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: d11699fa9f1f8d20c5d60aa4051f891b7e40bfbd014750c0e3c471a3ff792774
+- Content hash: 4b280a7597269481a441c14bd1bc65edd90b387be7b86f381b9b6e5e768904a5
 
 title=Units 16–20 source notice
-summary=Proposed Units 16, 17, and 19 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts. Units 18 and 20 do not.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Comparison, relative-clause agreement, conditional patterns, obligation patterns, and motion pairs are not prepared. Review is pending.
+summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ex-u19-conditional-0-en`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 72b8dadb9198b806f1b8e2b93f1d658d059ad14eb821b83315c625024756a983
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=a male speaker
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=dd580ccd9edc2fd1fcbf4d911445dddaf47d086534564ac1c0cf559eb852c0f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-0-ru`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d65e1cc8b687d8fb3f90599222aeebbb2bde30963cd4052c48d3cb5f86ea5f93
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я спал бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=856371ff01cee588e8f21b0c8978223ca02fb9668ed540f2f4ed125d9a88d761
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-1-en`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6665e23a41a41349b119a6d0e27e88305e73f71e4d124e1c330cdf59e4d8b6a5
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=a female speaker
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=712884eb6eb9b4afb1628eeb1c0ad140583ed4d05e1c6cda2ad96bae432da26f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-1-ru`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 94c72475ca778e84d7c1564611fa899ec2dcc688455a0dd818e9d1c8f017719c
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я спала́ бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=a1b27096ce17c9403b9bef9986bf9350c18ddad0d51c0bef9ee78ee384b8842d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-2-en`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b365761ae194ac98fadc7727aeef0888c06eedd5ccf80f1e448e3bb667c84287
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=I would like to sleep
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=39f6f6abad4d00f676dd3c52a1834dd4cd6c9ce85d89e8d6d4757df0ccc2d03d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-2-ru`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6ec2ba2a83292812db07094345920da7d7cb3ef48e9f0ed7e3e061920e4a31cf
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я бы поспа́л
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=ba688e93984e45e86628905147860d86651290e208cc6e0b5d42778ccd1236a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-3-en`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b499ad854cb1e7f608f126967fa34a69336dc26e2a99c33913477c0c5c70d931
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=a female speaker
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=712884eb6eb9b4afb1628eeb1c0ad140583ed4d05e1c6cda2ad96bae432da26f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-conditional-3-ru`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 28e5ee30c839e7b908289231b0406d3e8433d5988d7e834d7b241f6b748325bc
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я бы поспала́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-0-en`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 281f888e8103a2c41e121d39547c1a93f31065aa3dea0ab4d86f436924ce96ad
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=I have to
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=45575ac52823bbff1c1112e2a61408676d32322aa1d2b40cf154f1f09ecb4e7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-0-ru`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bdc0bbdb22efa51f78fd3cedffbf6c4c6366d21e939b80ee44af0e77d6697531
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=я должен
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=37d62a1d0f985a59600cf8f32343e8fcf0e058a96a45c3ba67c30ec3639da8bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-1-en`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a93319d5b85d2f8c715f8fe7b2c2c7fc08a0ecfdd1dcefc64ee441f3a70a3b31
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=If the subject is feminine
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=2006c168add34ac8f2308c26c3885b30cafd88b275d9e1f76a1865c2daafa2e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-1-ru`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 49baf6302ce3aa1c86e59afeb6d6577e9b424fbe456a177e3bb055727e18ca76
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=должна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=9eca2f8398f4b83cfea14ca2a3a6de1ed33d800cadf4aa34b3e38c11826889cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-2-en`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f6ae0897de2de2203a06d24b5d43740afbf0cd2475efd78fa5e72e8f320871b7
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=If the subject is neuter
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=f28d26212efa8f9750b2effb968d8422b48c0580596629af53544e455d1a5985
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-2-ru`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5a98a9b032854c4f2323717eb712b2601a52d1843545a38e7b13fdbd0092adb8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=должно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=a74c1953aef781e6f79630a7e73f17f49cab2ee17c7c8879ca97d86aa3dab30b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-3-en`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5a9ebd5864f19ed5ac3a0d41eae7eaa61b84543a3572f91fdf21817bf1878759
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=If the subject is plural
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=86ae3bda8024bbb0c1b078209e396c1fe054abceed564390ce211e9438503dc7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-obligation-3-ru`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2fbd42adf00206ff753f9557235e5631af7db85662294b875a3ad23727e8c1ef
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=должны
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=744bab4723450805924e3804acaf20eaba77b72cb3130531db1bf1192f3d6307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u19-prefix-caution-0-en`
 
@@ -969,6 +2055,64 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u19-conditional-rem`
+
+- Objectives: obj-u19-conditional
+- Sessions: u19-s-orient, u19-s-conditional
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8a8d24b029747c770b83e9a8c09e64081912fced84ae7a9f59a36ed144997566
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=a male speaker
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=dd580ccd9edc2fd1fcbf4d911445dddaf47d086534564ac1c0cf559eb852c0f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-rem`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4fa21442b1183dc349bc6434dafa648e44e8f3717b16f86494f1936ddf09c4e3
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=I have to
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=45575ac52823bbff1c1112e2a61408676d32322aa1d2b40cf154f1f09ecb4e7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u19-prefix-caution-rem`
 
 - Objectives: obj-u19-prefix-caution
@@ -1039,7 +2183,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u19-106`
+### AUTHORED_ENGLISH `en-u19-144`
 
 - Objectives: none
 - Sessions: none
@@ -1047,12 +2191,12 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e14ff9832e6aef8486c75f359e280c419f90d00906b7e85f7443acf199a2c0ed
+- Content hash: d1ef374a8923edd74877c662ac663f04470361bdea11d9a2e32b8b1e09c9c318
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
 
-### AUTHORED_ENGLISH `en-u19-107`
+### AUTHORED_ENGLISH `en-u19-145`
 
 - Objectives: none
 - Sessions: none
@@ -1060,12 +2204,12 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 924facc829c279975ed7d062f18a041dc5e459d6016cde9238814df653f7aca7
+- Content hash: bf722c1787fdc9e13d2b6358a3e0d28021793fa6415335f17128fe822aea16ef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the dissuade meaning?
 
-### AUTHORED_ENGLISH `en-u19-108`
+### AUTHORED_ENGLISH `en-u19-146`
 
 - Objectives: none
 - Sessions: none
@@ -1073,12 +2217,12 @@ text=Does this row fail the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9166af16fc1ac10a658ee6c5f14c3d2917344b70f409bf3559499ddfdf37db31
+- Content hash: 5fd5195613e4cf6da12caef147fbf18a82dec98cc62118c1df28a98c2a72ed58
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the dissuade meaning?
 
-### AUTHORED_ENGLISH `en-u19-109`
+### AUTHORED_ENGLISH `en-u19-147`
 
 - Objectives: none
 - Sessions: none
@@ -1086,12 +2230,12 @@ text=Does this answer show the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41353510bf9915ea287f59ef9871078ae8dc7c20a3c5b742b694cf58948ae132
+- Content hash: 0fadfcd41d7288a625c80bc1e9d438e645993fd3508fb1c661c18d076d43cd1b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is the dissuade meaning?
 
-### AUTHORED_ENGLISH `en-u19-110`
+### AUTHORED_ENGLISH `en-u19-148`
 
 - Objectives: none
 - Sessions: none
@@ -1099,12 +2243,12 @@ text=Which admitted English label is the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 398551c00d8a8562dd090cc7e7f133285ed08c96d2337a09e24364b3bc0b948e
+- Content hash: 3e0a3a62a5e42ddabae9ab00ee099abb47b100b4fac69c0b2516eb9c760bd0fa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
 
-### AUTHORED_ENGLISH `en-u19-111`
+### AUTHORED_ENGLISH `en-u19-149`
 
 - Objectives: none
 - Sessions: none
@@ -1112,12 +2256,12 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b3a51d2105206ab356f2ed78c0423b9d90819fd98e8dd29b936484bae7b1ccb
+- Content hash: d43c52817e286d05220cfde982c87a14c6974e6681e81427461b111baf0c0df9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the agree meaning?
 
-### AUTHORED_ENGLISH `en-u19-112`
+### AUTHORED_ENGLISH `en-u19-150`
 
 - Objectives: none
 - Sessions: none
@@ -1125,12 +2269,12 @@ text=Does this row fail the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32e91872a07f0f8b4ea87d0bc89944d13b701a372fb1c1cae13a7a0c7aaa7e82
+- Content hash: d53d0ded07eaabef35c1073ca9511f9d96cb324c4f05af7bf3177cf4469cb5e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the agree meaning?
 
-### AUTHORED_ENGLISH `en-u19-113`
+### AUTHORED_ENGLISH `en-u19-151`
 
 - Objectives: none
 - Sessions: none
@@ -1138,12 +2282,12 @@ text=Does this answer show the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c64a8dc98ccdbbc2ce501daa8be56a9d6add2ba7842b18b7735e7e834074a0e3
+- Content hash: f85901022582dc01da12c06f52dccf54b82caba0845e82a6aba004458dee4131
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English label is the agree meaning?
 
-### AUTHORED_ENGLISH `en-u19-114`
+### AUTHORED_ENGLISH `en-u19-152`
 
 - Objectives: none
 - Sessions: none
@@ -1151,12 +2295,12 @@ text=Which admitted English label is the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e7005137182c5bc89863ccb58a3894fca67f0bc5e4ec74d4a54bf99c05d6263
+- Content hash: 692ea27233bebaf0c1c24a386eea0cd0e64b02e03406eaf93c7ff961bb63494f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the dissuade perfective?
 
-### AUTHORED_ENGLISH `en-u19-115`
+### AUTHORED_ENGLISH `en-u19-153`
 
 - Objectives: none
 - Sessions: none
@@ -1164,12 +2308,12 @@ text=Does this row fail the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4ba4ac451ed39e1b1cd524cd8b19f6ff80b3da6797da99eb86371a692f34051
+- Content hash: c79e99ce54e940fa51f8307f37264f2ce13e9c487828c8bd10ea1b9fde71d667
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this answer show the dissuade perfective?
 
-### AUTHORED_ENGLISH `en-u19-116`
+### AUTHORED_ENGLISH `en-u19-154`
 
 - Objectives: none
 - Sessions: none
@@ -1177,12 +2321,12 @@ text=Does this answer show the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 61b928f4271a52ea898c2e709fdf1e3c577688f17ec87bd604aba1eddaa5e130
+- Content hash: 3a73d1165effe30a3b8b7f01eb9d4d7f8139a559b1ed999362992a2c82de20f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted line is the dissuade perfective?
 
-### AUTHORED_ENGLISH `en-u19-117`
+### AUTHORED_ENGLISH `en-u19-155`
 
 - Objectives: none
 - Sessions: none
@@ -1190,12 +2334,103 @@ text=Which admitted line is the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdf6b65edc686f07b664ae362e2e1496229fe7039fe7f3abe406c12d9507419b
+- Content hash: c93f2d7430d92d92ec73b345ee07d38b37f839cc61fcbd7108e46ae6e67035a5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes other gloss 1 beside a different shown form.
+
+### AUTHORED_ENGLISH `en-u19-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d185eab25491cd455e13be9379e6a7d6065ea757514aebdab9f23df647a9899
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes other gloss 2 beside a different shown form.
+
+### AUTHORED_ENGLISH `en-u19-157`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 494fea3728cfc9adb23e1d4ca1d2da7ffa839d27242122f52341cf59e81e9e5a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes other gloss 1 beside another shown form.
+
+### AUTHORED_ENGLISH `en-u19-158`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 540ba6256a4aaeae46985652f0d2c30493ccee2b250890e013c15226147668e8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes other gloss 2 beside another shown form.
+
+### AUTHORED_ENGLISH `en-u19-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 098ff215a6a4b082c21992a34c0da42f5e10346f0313900129a88ef70cacbf75
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes a male speaker beside the shown form.
+
+### AUTHORED_ENGLISH `en-u19-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7760abec4b0a3d024c31f42351b89adc24b7e0223adaf3e8b3caa33d49255e7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English gloss is written beside the shown form?
+
+### AUTHORED_ENGLISH `en-u19-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5438d1d4a48a05a756c8d7ebe4c849fa705407f2debc53ed269d14b6ccc57ea6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes translates to beside the shown form.
+
+### AUTHORED_ENGLISH `en-u19-162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5c5e0129d9dda6d275ffdca84a4925175d4168cdc7afa3a59af12fc84e910053
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted prefix cautions
 
-### AUTHORED_ENGLISH `en-u19-118`
+### AUTHORED_ENGLISH `en-u19-163`
 
 - Objectives: none
 - Sessions: none
@@ -1203,12 +2438,12 @@ text=Admitted prefix cautions
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4143f7438f3b0c55bcfde69ad85a6ac01d793b681510017a647f2488e0333ae2
+- Content hash: f789e3c4b1e9ddca477b627d01c982fbf6e8a7881ec690cf4cc129ad39f952b8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 19 uses frozen prefix cautions. Conditional patterns and obligation patterns stay in the copy you own. Qualified review is pending.
+text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u19-119`
+### AUTHORED_ENGLISH `en-u19-164`
 
 - Objectives: none
 - Sessions: none
@@ -1216,12 +2451,12 @@ text=Proposed Unit 19 uses frozen prefix cautions. Conditional patterns and obli
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64f518b15bd616b70758c29ed88f92e190210646f30dae0680bdb781922bcf90
+- Content hash: 06b54f89e4af266e35014fe1e76a4c8ddb6bc22bb0ed6671d694d552eda68780
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
 
-### AUTHORED_ENGLISH `en-u19-120`
+### AUTHORED_ENGLISH `en-u19-165`
 
 - Objectives: none
 - Sessions: none
@@ -1229,12 +2464,12 @@ text=Open Lesson 19 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 218e5d5450cf9c0a2a02310cabf6d92e698bc08537a56435b6ba83aae40a7d93
+- Content hash: 7e2d30d04fa59640ecd259a1ca0e0ae392b9abdef4a9d4cef7d3fe1170a5147f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
 
-### AUTHORED_ENGLISH `en-u19-121`
+### AUTHORED_ENGLISH `en-u19-166`
 
 - Objectives: none
 - Sessions: none
@@ -1242,12 +2477,12 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00e99d2e497b4c1ade18e4126efa028783b4ec1ebf95db91e170fd269df28129
+- Content hash: d044789a5505cda2212e85113474e2ef96f7917d57b7d0f6e3633ddd3c377fa2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
 
-### AUTHORED_ENGLISH `en-u19-122`
+### AUTHORED_ENGLISH `en-u19-167`
 
 - Objectives: none
 - Sessions: none
@@ -1255,12 +2490,12 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52b9e2d38254b452b22796cbecc74ac2346ee8262fd1010ed561c19b85a51da7
+- Content hash: 5df612bf17a02ad921f9d81dbf0ad005c5598481fd26f6afc6cd87f45f72c6b0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
 
-### AUTHORED_ENGLISH `en-u19-123`
+### AUTHORED_ENGLISH `en-u19-168`
 
 - Objectives: none
 - Sessions: none
@@ -1268,12 +2503,12 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1394ce27f2941e51f19e35f8b6ee07cf482f59f86c0dd22e8daf0404f51f5368
+- Content hash: ad387f0a40f498ea2c37d6774e94655da50138ccf521c1a990bd33fed49f9a5f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
 
-### AUTHORED_ENGLISH `en-u19-124`
+### AUTHORED_ENGLISH `en-u19-169`
 
 - Objectives: none
 - Sessions: none
@@ -1281,12 +2516,12 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c4e24610a8e44e438de8f16340588d514033467e1fd1d7d478f9bf8a65edec5
+- Content hash: 4107e6d3a86e5ecff3dffc0c1c762095aa5cddbdea8f0878f5b001e018236b60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
 
-### AUTHORED_ENGLISH `en-u19-125`
+### AUTHORED_ENGLISH `en-u19-170`
 
 - Objectives: none
 - Sessions: none
@@ -1294,12 +2529,12 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59782ebda8c561ab27e8cf1ba0898686620368802834a4fbf5451551fdb03f6f
+- Content hash: 25e5eeafa35c92d5ca083c0c69e7d64471c639e8bf663f69139c119bae1cf128
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 19 in your copy
 
-### AUTHORED_ENGLISH `en-u19-126`
+### AUTHORED_ENGLISH `en-u19-171`
 
 - Objectives: none
 - Sessions: none
@@ -1307,12 +2542,12 @@ text=Work Lesson 19 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1827b585585a454e1a1d1ca105f6d854af68254411099bb961d42ca55554aa5d
+- Content hash: e2a21e527d0b9d1373ff354424541a66dddf01be9bfd2ffcc90c95f5f37621c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
-### AUTHORED_ENGLISH `en-u19-127`
+### AUTHORED_ENGLISH `en-u19-172`
 
 - Objectives: none
 - Sessions: none
@@ -1320,12 +2555,12 @@ text=Do Lesson 19 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19c406a4139be8f6cf4fc8ed2ed61aa235646b14a800e3abb80533de6fd7ac4e
+- Content hash: 5ad3a165682d59a989a55a7af9f9e1f56193693c7f8e4500b098942d8697aabf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 19 in your copy and complete its lesson work.
 
-### AUTHORED_ENGLISH `en-u19-128`
+### AUTHORED_ENGLISH `en-u19-173`
 
 - Objectives: none
 - Sessions: none
@@ -1333,12 +2568,12 @@ text=Open Lesson 19 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0ae845f3a8a5d546dd33c3d0f263ad662ea53879751a6fa68bb7ebfa81b4897
+- Content hash: 287a8d063feb267a05ebf22aac36a1df47d105b8654ebe32390911c6334f0b11
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 19 book work
 
-### AUTHORED_ENGLISH `en-u19-129`
+### AUTHORED_ENGLISH `en-u19-174`
 
 - Objectives: none
 - Sessions: none
@@ -1346,12 +2581,12 @@ text=Record Lesson 19 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bba71d2d9536a37e473862e9cdd9b63e10946e9693f582bb9f830faf0369ce84
+- Content hash: d9b8a573ec4abcbdb0b10b13efcf5a9b411a10b7ec08c939da9e1202297bbdaf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u19-130`
+### AUTHORED_ENGLISH `en-u19-175`
 
 - Objectives: none
 - Sessions: none
@@ -1359,12 +2594,12 @@ text=When you have done Lesson 19 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1e6912ec3a490955a1729c3656042e62aaa6546b1be536ad5cc6040fe94f8b2
+- Content hash: f0ba7c9c0b591dac04e53077be5d197c473dfde11d36a78fcec5c7a8e8068fee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 19 work in your copy.
 
-### AUTHORED_ENGLISH `en-u19-131`
+### AUTHORED_ENGLISH `en-u19-176`
 
 - Objectives: none
 - Sessions: none
@@ -1372,12 +2607,12 @@ text=Self-attest only after the Lesson 19 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 223989c35173089f76350d9cb6a2a1d4c3b54517116ac67461884af9eeafbfb8
+- Content hash: efd726cf60ba0fe3f9961ef620a1d0e3e34913ddb55143cc48f14bd402a9251c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Conditional patterns stay in the copy you own
+text=Probability stays in the copy you own
 
-### AUTHORED_ENGLISH `en-u19-132`
+### AUTHORED_ENGLISH `en-u19-177`
 
 - Objectives: none
 - Sessions: none
@@ -1385,36 +2620,10 @@ text=Conditional patterns stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e9611d930e378cb2c6cef34dc2efd8c72359ce03d1e153b32582ee1ddfc2331
+- Content hash: d4d934e06ead7ef40be9cd7033932cd35f27f16b9523b24fdf6797fd80e3e8c8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Conditional patterns stay in the copy you own. Prefix cautions do not supply that pattern.
-
-### AUTHORED_ENGLISH `en-u19-133`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5e290b41adf4142b4d3302f982ff0c6fafd48e566355fb8264f160d357df936
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Obligation patterns stay in the copy you own
-
-### AUTHORED_ENGLISH `en-u19-134`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dade6acbb02560a1031301265437f65c1c504a1a5b827b7502494c5645a6213e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Obligation patterns stay in the copy you own. Prefix cautions do not supply that pattern.
+text=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -1430,6 +2639,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
+
+Russian grammar
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -1457,6 +2681,20 @@ Original
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
+
+src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -1488,11 +2726,36 @@ permitsAppUse=true
 - `obj-u19-prefix-caution` CHECK `u19-i-prefix-caution-1`
 - `obj-u19-prefix-caution` CHECK `u19-i-prefix-caution-2`
 - `obj-u19-prefix-caution` REMEDIATION `u19-st-rem-prefix-caution`
+- `obj-u19-conditional` INSTRUCTION `u19-st-orient`
+- `obj-u19-conditional` INSTRUCTION `u19-st-teach-conditional-1`
+- `obj-u19-conditional` INSTRUCTION `u19-st-teach-conditional-2`
+- `obj-u19-conditional` INSTRUCTION `u19-st-teach-conditional-3`
+- `obj-u19-conditional` EXAMPLE `ex-u19-conditional-0`
+- `obj-u19-conditional` EXAMPLE `ex-u19-conditional-1`
+- `obj-u19-conditional` EXAMPLE `ex-u19-conditional-2`
+- `obj-u19-conditional` EXAMPLE `ex-u19-conditional-3`
+- `obj-u19-conditional` PRACTICE `u19-st-guided-conditional-1`
+- `obj-u19-conditional` CHECK `u19-i-conditional-1`
+- `obj-u19-conditional` CHECK `u19-i-conditional-2`
+- `obj-u19-conditional` REMEDIATION `u19-st-rem-conditional`
+- `obj-u19-obligation` INSTRUCTION `u19-st-orient`
+- `obj-u19-obligation` INSTRUCTION `u19-st-teach-obligation-1`
+- `obj-u19-obligation` INSTRUCTION `u19-st-teach-obligation-2`
+- `obj-u19-obligation` INSTRUCTION `u19-st-teach-obligation-3`
+- `obj-u19-obligation` EXAMPLE `ex-u19-obligation-0`
+- `obj-u19-obligation` EXAMPLE `ex-u19-obligation-1`
+- `obj-u19-obligation` EXAMPLE `ex-u19-obligation-2`
+- `obj-u19-obligation` EXAMPLE `ex-u19-obligation-3`
+- `obj-u19-obligation` PRACTICE `u19-st-guided-obligation-1`
+- `obj-u19-obligation` CHECK `u19-i-obligation-1`
+- `obj-u19-obligation` CHECK `u19-i-obligation-2`
+- `obj-u19-obligation` REMEDIATION `u19-st-rem-obligation`
 - `obj-u19-book` INSTRUCTION `u19-st-book-work`
 - `obj-u19-book` INSTRUCTION `u19-st-book`
-- `obj-u19-conditional` INSTRUCTION `u19-st-gap-conditional`
-- `obj-u19-obligation` INSTRUCTION `u19-st-gap-obligation`
+- `obj-u19-probability` INSTRUCTION `u19-st-gap-probability`
 - `u19-s-orient` OBJECTIVE `obj-u19-prefix-caution`
+- `u19-s-orient` OBJECTIVE `obj-u19-conditional`
+- `u19-s-orient` OBJECTIVE `obj-u19-obligation`
 - `u19-s-orient` OBJECTIVE `obj-u19-book`
 - `u19-st-orient` REFERENCE `ref-u1620-attribution`
 - `u19-s-prefix-caution` OBJECTIVE `obj-u19-prefix-caution`
@@ -1510,12 +2773,56 @@ permitsAppUse=true
 - `u19-st-check-prefix-caution` REMEDIATION `u19-st-rem-prefix-caution`
 - `u19-st-check-prefix-caution` ITEM `u19-i-prefix-caution-1`
 - `u19-st-check-prefix-caution` ITEM `u19-i-prefix-caution-2`
+- `u19-s-conditional` OBJECTIVE `obj-u19-conditional`
+- `u19-st-teach-conditional-1` EXAMPLE `ex-u19-conditional-0`
+- `u19-st-teach-conditional-1` EXAMPLE `ex-u19-conditional-1`
+- `u19-st-teach-conditional-1` REFERENCE `ref-u1620-attribution`
+- `u19-st-guided-conditional-1` REMEDIATION `u19-st-rem-conditional`
+- `u19-st-guided-conditional-1` ITEM `u19-g-conditional-0`
+- `u19-st-teach-conditional-2` REFERENCE `ref-u1620-attribution`
+- `u19-st-teach-conditional-3` EXAMPLE `ex-u19-conditional-2`
+- `u19-st-teach-conditional-3` EXAMPLE `ex-u19-conditional-3`
+- `u19-st-teach-conditional-3` REFERENCE `ref-u1620-attribution`
+- `u19-st-rem-conditional` EXAMPLE `ex-u19-conditional-0`
+- `u19-st-rem-conditional` EXAMPLE `ex-u19-conditional-1`
+- `u19-st-check-conditional` REMEDIATION `u19-st-rem-conditional`
+- `u19-st-check-conditional` ITEM `u19-i-conditional-1`
+- `u19-st-check-conditional` ITEM `u19-i-conditional-2`
+- `u19-s-obligation` OBJECTIVE `obj-u19-obligation`
+- `u19-st-teach-obligation-1` EXAMPLE `ex-u19-obligation-0`
+- `u19-st-teach-obligation-1` EXAMPLE `ex-u19-obligation-1`
+- `u19-st-teach-obligation-1` REFERENCE `ref-u1620-attribution`
+- `u19-st-guided-obligation-1` REMEDIATION `u19-st-rem-obligation`
+- `u19-st-guided-obligation-1` ITEM `u19-g-obligation-0`
+- `u19-st-teach-obligation-2` REFERENCE `ref-u1620-attribution`
+- `u19-st-teach-obligation-3` EXAMPLE `ex-u19-obligation-2`
+- `u19-st-teach-obligation-3` EXAMPLE `ex-u19-obligation-3`
+- `u19-st-teach-obligation-3` REFERENCE `ref-u1620-attribution`
+- `u19-st-rem-obligation` EXAMPLE `ex-u19-obligation-0`
+- `u19-st-rem-obligation` EXAMPLE `ex-u19-obligation-1`
+- `u19-st-check-obligation` REMEDIATION `u19-st-rem-obligation`
+- `u19-st-check-obligation` ITEM `u19-i-obligation-1`
+- `u19-st-check-obligation` ITEM `u19-i-obligation-2`
 - `u19-s-book` OBJECTIVE `obj-u19-book`
 - `u19-st-book-work` REFERENCE `ref-u1620-attribution`
-- `u19-s-gap-conditional` OBJECTIVE `obj-u19-conditional`
-- `u19-st-gap-conditional` REFERENCE `ref-u1620-attribution`
-- `u19-s-gap-obligation` OBJECTIVE `obj-u19-obligation`
-- `u19-st-gap-obligation` REFERENCE `ref-u1620-attribution`
+- `u19-s-gap-probability` OBJECTIVE `obj-u19-probability`
+- `u19-st-gap-probability` REFERENCE `ref-u1620-attribution`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-en`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-ru`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-1-en`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-1-ru`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-2-en`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-2-ru`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-3-en`
+- `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-3-ru`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-0-en`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-0-ru`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-1-en`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-1-ru`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-2-en`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-2-ru`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-3-en`
+- `obj-u19-obligation` PROVENANCE `prov-ex-u19-obligation-3-ru`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-0-en`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-0-ru`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-1-en`
@@ -1524,6 +2831,8 @@ permitsAppUse=true
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-2-ru`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-3-en`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-3-ru`
+- `obj-u19-conditional` PROVENANCE `prov-u19-conditional-rem`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-rem`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-rem`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-x-0`
 
@@ -1535,8 +2844,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u19-st-gap-conditional`
-- `u19-st-gap-obligation`
+- `u19-st-gap-probability`
 
 ## Unresolved relationships
 
