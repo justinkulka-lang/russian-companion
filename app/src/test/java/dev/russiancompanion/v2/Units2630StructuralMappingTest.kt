@@ -162,10 +162,15 @@ class Units2630StructuralMappingTest {
                 file.writeText(rendered)
             }
             assertEquals(rendered, file.readText())
-            assertFalse(File(dir, "UNIT_${number}_REVIEW_PACKET.md").exists())
-            assertFalse(File(dir, "UNIT_${number}_REVIEW_MANIFEST.json").exists())
-            assertFalse(File(dir, "UNIT_${number}_REVIEW_WORKSHEET.tsv").exists())
-            assertFalse(File(dir, "REVIEWER_INSTRUCTIONS.md").exists())
+            assertTrue(File(dir, "UNIT_${number}_REVIEW_PACKET.md").exists())
+            assertTrue(File(dir, "UNIT_${number}_REVIEW_MANIFEST.json").exists())
+            assertTrue(File(dir, "UNIT_${number}_REVIEW_WORKSHEET.tsv").exists())
+            assertTrue(File(dir, "REVIEWER_INSTRUCTIONS.md").exists())
+            val packet = File(dir, "UNIT_${number}_REVIEW_PACKET.md").readText()
+            assertTrue(packet.contains("Unsupported-capability register"))
+            assertTrue(packet.contains("Book-directed register"))
+            assertTrue(packet.contains("Optional non-gating register"))
+            assertTrue(packet.contains("No reviewer has signed this packet."))
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertTrue(rendered.contains(pages.getValue(number)))
@@ -173,7 +178,7 @@ class Units2630StructuralMappingTest {
             assertTrue(rendered.contains("PENDING_CURRICULUM_REVIEWER"))
             assertTrue(rendered.contains("not a review packet"))
             assertFalse(rendered.contains("\tAPPROVED\t"))
-            val row = rendered.lines().first { it.startsWith("unit-$number\t") }.split("\t")
+            val row = rendered.lines().first { it.startsWith("obj-u$number-") || it.startsWith("unit-$number\t") }.split("\t")
             listOf(9, 10, 18, 19, 20, 21, 22, 23).forEach { index ->
                 assertEquals("column $index", "", row[index])
             }

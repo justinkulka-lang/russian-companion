@@ -94,7 +94,7 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
-        val packetUnits = (1..15).toList() + listOf(16, 17, 19, 21, 22, 24, 25)
+        val packetUnits = (1..15).toList() + listOf(16, 17, 19, 21, 22, 24, 25, 26, 27, 28, 29, 30)
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
             packetUnits.forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)

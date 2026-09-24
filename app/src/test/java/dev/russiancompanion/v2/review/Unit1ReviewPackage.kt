@@ -36,6 +36,8 @@ internal const val UNITS_16_20_CURRICULUM_COMMIT = "55ac696b9e9dd1c695f7fcc2b7cc
 
 internal const val UNITS_21_25_CURRICULUM_COMMIT = "fd1f6497b235208786d0f720d71a248a22f8d69e"
 
+internal const val UNITS_26_30_CURRICULUM_COMMIT = "9551e824c0657c54f74a0f4e512e4964f7e6f05d"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber) {
     in 1..2 -> UNITS_1_5_CURRICULUM_COMMIT
     in 3..5 -> UNITS_11_15_CURRICULUM_COMMIT
@@ -43,6 +45,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String = when (unitNumber
     in 11..15 -> UNITS_11_15_CURRICULUM_COMMIT
     in 16..20 -> UNITS_16_20_CURRICULUM_COMMIT
     in 21..25 -> UNITS_21_25_CURRICULUM_COMMIT
+    in 26..30 -> UNITS_26_30_CURRICULUM_COMMIT
     else -> UNITS_11_15_CURRICULUM_COMMIT
 }
 
@@ -1310,12 +1313,19 @@ private fun renderMappingWorksheet(pack: V2CurriculumPack, unitNumber: Int): Str
         MAPPING_HEADER.joinToString("\t"),
     )
     val populated = facts.mappingRecordId != null
-    val structuralObservation = unitNumber in 26..30 && populated
-    if (structuralObservation || (unit.objectives.isEmpty() && unit.sessions.isEmpty())) {
+    if (unitNumber in 26..30 && populated) {
         lines.add(
             8,
             "# This worksheet records a pending structural observation only. It is not a review packet and it does not approve instructional content.",
         )
+    }
+    if (unit.objectives.isEmpty() && unit.sessions.isEmpty()) {
+        if (unitNumber !in 26..30) {
+            lines.add(
+                8,
+                "# This worksheet records a pending structural observation only. It is not a review packet and it does not approve instructional content.",
+            )
+        }
         lines += mappingRow(unit.id, "UNIT", unit.title, if (populated) facts else null, digest)
     } else {
         unit.objectives.forEach { objective ->
