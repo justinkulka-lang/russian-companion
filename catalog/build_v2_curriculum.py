@@ -99,7 +99,7 @@ UNITS_3_30 = [
     (15, "Requests", "Requests, the imperative, and consolidation of aspect use"),
     (16, "Instrumental", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
     (17, "Time and dates", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
-    (18, "Comparison", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+    (18, "Comparison", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun"),
     (19, "Conditionals", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
     (20, "Motion verbs", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs"),
     (21, "Possession", "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses"),
@@ -1598,16 +1598,23 @@ def build() -> dict:
     intake_pages = {
         16: ("188-200", "Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming"),
         17: ("201-214", "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers"),
-        18: ("215-229", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun который"),
+        18: ("215-229", "Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun"),
         19: ("230-239", "Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes"),
         20: ("240-256", "Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20"),
     }
     intake_summaries = {
-        16: "Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        17: "Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        18: "Proposed Unit 18 is in development and is not prepared. Comparison and relative-clause agreement have no admitted frozen instructional source. The frozen adjective page is not a comparison source. It is not installed and the owned-edition mapping is not signed.",
-        19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions await qualified review. Conditional patterns and obligation patterns have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        20: "Proposed Unit 20 is in development and is not prepared. Unidirectional and multidirectional motion pairs have no admitted frozen instructional source. A red link, a general page, and dictionary rows are not that source. It is not installed and the owned-edition mapping is not signed.",
+        16: "Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        18: "Proposed Unit 18 is in development. Admitted comparison lines and admitted relative lines await qualified review. It is not installed and the owned-edition mapping is not signed.",
+        19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        20: "Proposed Unit 20 is in development. Admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths await qualified review. It is not installed and the owned-edition mapping is not signed.",
+    }
+    intake_readiness = {
+        16: "CONTENT_COMPLETE_REVIEW_PENDING",
+        17: "NOT_PREPARED",
+        18: "CONTENT_COMPLETE_REVIEW_PENDING",
+        19: "NOT_PREPARED",
+        20: "CONTENT_COMPLETE_REVIEW_PENDING",
     }
     for number, short, title in UNITS_3_30:
         if number < 16 or number > 20:
@@ -1622,7 +1629,7 @@ def build() -> dict:
                 intake_summaries[number],
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="NOT_PREPARED",
+                readiness=intake_readiness[number],
                 mapping_note=(
                     f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
                     "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
@@ -1730,7 +1737,7 @@ def build() -> dict:
         "ownedEditionMappings": [],
         "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"], *late_intake["provenance"]],
         "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"], *late_intake["authored"]],
-        "sourceCapabilities": late_intake["capabilities"],
+        "sourceCapabilities": [*intake["capabilities"], *late_intake["capabilities"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

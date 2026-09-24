@@ -1,0 +1,71 @@
+{{Russian}}
+
+These memory aids aren't true! They're nonsense made up to help you remember the meanings of Russian words.
+
+==Days of the Week==
+ 
+Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday || voskresén'ye
+|-
+| colspan="4" | "There's a ''cross'' in the middle of Sunday. It's also the ''sanest'' day of the week.
+|-
+| &nbsp;
+|-
+| Какой сегодня день? || phrase || What day is it? || Kakóy sevódnya dyen'?
+|-
+| &nbsp;
+|-
+|}
+
+{{BookCat}}

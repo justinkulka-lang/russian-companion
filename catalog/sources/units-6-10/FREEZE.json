@@ -443,6 +443,23 @@
         "timestamp": "2026-03-09T17:30:11Z",
         "size": 10475,
         "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "adverbs",
+        "title": "Russian/Grammar/Adverbs",
+        "oldid": "3197995",
+        "file": "wikibooks/adverbs-3197995.txt",
+        "sha256": "712b24db1dc27e566b0c73cb5cacbfb4308818f9394fbd311926e01c139ead66",
+        "revisionFile": "wikibooks/adverbs-3197995.revision.json",
+        "mediawikiSha1": "0b2fc67bd50094dd782fae3b618d88170045b009",
+        "parentid": 3189173,
+        "timestamp": "2017-03-21T20:52:04Z",
+        "size": 248,
+        "retrieved": "2026-09-24",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "url": "https://en.wikibooks.org/wiki/Russian/Grammar/Adverbs?oldid=3197995",
+        "licenseRoute": "wikibooks",
+        "scope": "The English orientation sentence only. Russian interrogatives on this page are not checks. A productive -о adverb rule is not stated."
       }
     ]
   },
@@ -462,6 +479,10 @@
     {
       "item": "patronymic and name production; shopping dialogue; current prices",
       "reason": "No admitted source supplies those productions."
+    },
+    {
+      "item": "productive -о adverb paradigm",
+      "reason": "The frozen adverbs page states only that adverbs describe a verb much like adjectives describe nouns. It does not state a productive -о formation rule."
     }
   ]
 }

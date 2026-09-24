@@ -131,12 +131,19 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(unit7.advancementCanPresentlySucceed)
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
-        assertTrue((16..30).all { number ->
-            model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM")
-        })
+        listOf(16, 18, 20).forEach { number ->
+            assertFalse(
+                model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
+            )
+        }
+        ((17..30).toList() - listOf(18, 20)).forEach { number ->
+            assertTrue(
+                model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
+            )
+        }
         assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
         assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
-        assertEquals(listOf(18, 20, 23), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
+        assertEquals(listOf(23), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
         assertTrue(model.releaseGateBlockers.contains("OWNER_RELEASE_DECISION_NOT_RETAINED"))
         assertTrue(model.releaseGateBlockers.contains("CANDIDATE_NOT_FROZEN"))
     }
@@ -252,7 +259,7 @@ class CurriculumReadinessReconciliationTest {
     @Test
     fun notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers() {
         val pack = pack()
-        listOf(7, 16, 30).forEach { number ->
+        listOf(7, 17, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
@@ -347,7 +354,9 @@ class CurriculumReadinessReconciliationTest {
         val live = liveModel()
         assertEquals("NONE", live.units.first { it.unitNumber == 16 }.assetBlocker)
         assertEquals("NONE", live.units.first { it.unitNumber == 16 }.localExperienceBlocker)
-        assertTrue(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertFalse(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertEquals("NONE", live.units.first { it.unitNumber == 17 }.assetBlocker)
+        assertTrue(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertTrue(live.units.first { it.unitNumber == 1 }.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertEquals("NONE", live.units.first { it.unitNumber == 1 }.localExperienceBlocker)
 
@@ -375,11 +384,11 @@ class CurriculumReadinessReconciliationTest {
         val namedAsset = reconcileCurriculumReadiness(
             root(),
             pack.withUnit(
-                pack.unit(16).withAddedStep(
+                pack.unit(17).withAddedStep(
                     unavailableStep("probe-audio", "Required licensed pronunciation audio record is absent."),
                 ),
             ),
-        ).units.first { it.unitNumber == 16 }
+        ).units.first { it.unitNumber == 17 }
         assertTrue(namedAsset.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertTrue(namedAsset.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertEquals("NONE", namedAsset.localExperienceBlocker)

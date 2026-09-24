@@ -194,6 +194,7 @@ internal fun advancementDecision(
     if (unit.number in 26..30) {
         remaining += V2Validator.unresolvedLateUnitAdvancementBlockers(pack, unit)
     }
+    remaining += V2Validator.unresolvedPartialUnitAdvancementBlockers(pack, unit)
     if (rule.requireInstruction) {
         val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
         if (instructionSteps.any { it.id !in learner.completedStepIds }) {

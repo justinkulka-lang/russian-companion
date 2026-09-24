@@ -32,6 +32,36 @@
       "scope": "Prefix cautions and source-supplied pairs. Conditional бы and должен are not established. Prefixes are not treated as mechanically predictable perfective markers."
     },
     {
+      "id": "wikipedia-russian-grammar-1369617627",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Exact spans for instrumental complements, age, comparison, conditional бы, and selected motion pairs. The rest of the article is retained and is not a Unit 7 adverb paradigm, a clock-time answer, a calendar date, or a probability use of должен."
+    },
+    {
+      "id": "wikibooks-days-3594124",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Seven weekday names and the capitalization sentence. Mnemonic stories are not learner text. Case government, scheduling, and date syntax are not stated."
+    },
+    {
+      "id": "wikibooks-months-4376719",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Month names and English meanings only. Calendar-date syntax is not stated."
+    },
+    {
+      "id": "wikibooks-interrogative-4220316",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The clock question Который час? and source relative examples with который. Productive clock-time answers are not stated."
+    },
+    {
+      "id": "wikibooks-lesson3-4460699",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The obligation span for должен, должна, должно, and должны. The dolphin mnemonic and editorial asides are not learner text. Probability is not stated."
+    },
+    {
       "id": "wikibooks-verbs-of-motion-red-link",
       "disposition": "EXCLUDED",
       "licenseId": null,
@@ -172,7 +202,165 @@
         "timestamp": "2026-03-09T17:30:11Z",
         "size": 10475,
         "reusedFrom": "units-3-5"
+      },
+      {
+        "key": "grammar",
+        "title": "Russian grammar",
+        "oldid": "1369617627",
+        "file": "../units-26-30/wikipedia/russian-grammar-1369617627.txt",
+        "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+        "revisionFile": "../units-26-30/wikipedia/russian-grammar-1369617627.revision.json",
+        "mediawikiSha1": "b0d918fad1e27c15eaed7feb7171b4fe36de8d20",
+        "parentid": 1367678642,
+        "timestamp": "2026-08-16T02:18:44Z",
+        "size": 165374,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-26-30",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "url": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "licenseRoute": "wikipedia",
+        "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors."
+      },
+      {
+        "key": "days",
+        "title": "Russian/Vocabulary/Days of the Week",
+        "oldid": "3594124",
+        "file": "wikibooks/days-3594124.txt",
+        "sha256": "00d89a2a2f1063b8b83f9c41be6219e79f52536759f351fc5eceb2a269f8af29",
+        "revisionFile": "wikibooks/days-3594124.revision.json",
+        "mediawikiSha1": "5560f78f075579c61a1b46abb23097d87827ed49",
+        "parentid": 3353853,
+        "timestamp": "2019-11-05T20:03:33Z",
+        "size": 1738,
+        "retrieved": "2026-09-24",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "url": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124",
+        "licenseRoute": "wikibooks",
+        "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors."
+      },
+      {
+        "key": "months",
+        "title": "Russian/Vocabulary/Months",
+        "oldid": "4376719",
+        "file": "wikibooks/months-4376719.txt",
+        "sha256": "d8445149d47c9fed9a010b199e515611876adbb83dffa30296be75c32131e254",
+        "revisionFile": "wikibooks/months-4376719.revision.json",
+        "mediawikiSha1": "a8774329565ad1dae362295c30e70967782a7560",
+        "parentid": 4056832,
+        "timestamp": "2024-03-04T10:52:38Z",
+        "size": 813,
+        "retrieved": "2026-09-24",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "url": "https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719",
+        "licenseRoute": "wikibooks",
+        "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors."
+      },
+      {
+        "key": "interrogative",
+        "title": "Russian/Interrogative Pronouns",
+        "oldid": "4220316",
+        "file": "../units-3-5/wikibooks/interrogative-4220316.txt",
+        "sha256": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291",
+        "revisionFile": "../units-3-5/wikibooks/interrogative-4220316.revision.json",
+        "mediawikiSha1": "9a80099839708fdd49c797efef5a0c8d8afb349b",
+        "parentid": 4220290,
+        "timestamp": "2022-12-17T16:44:40Z",
+        "size": 9941,
+        "retrieved": "2026-09-24",
+        "reusedFrom": "units-3-5",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "url": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "licenseRoute": "wikibooks",
+        "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors."
+      },
+      {
+        "key": "lesson3",
+        "title": "Russian/Lesson 3",
+        "oldid": "4460699",
+        "file": "wikibooks/lesson3-4460699.txt",
+        "sha256": "63740f56e068f51cd5aa4565bfe199841154a4b942fbf7fd8a18c440544e33a6",
+        "revisionFile": "wikibooks/lesson3-4460699.revision.json",
+        "mediawikiSha1": "52b0b61fe90bc7ed11d3185605b29959962c581c",
+        "parentid": 4302787,
+        "timestamp": "2024-12-26T13:58:28Z",
+        "size": 38782,
+        "retrieved": "2026-09-24",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "url": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
+        "licenseRoute": "wikibooks",
+        "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors."
       }
     ]
-  }
+  },
+  "license": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "routes": {
+      "wikipedia": {
+        "appliesToSourceIds": [
+          "src-wikipedia-russian-grammar-1369617627"
+        ],
+        "title": "Wikipedia:Copyrights",
+        "oldid": "1369466282",
+        "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Copyrights&oldid=1369466282",
+        "file": "../units-26-30/wikipedia/copyrights-1369466282.txt",
+        "revisionFile": "../units-26-30/wikipedia/copyrights-1369466282.revision.json",
+        "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+        "requiredStatement": "Most of Wikipedia's text and many of its images are co-licensed under the [[Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License|Creative Commons Attribution-ShareAlike 4.0 International License]] (CC BY-SA) and the [[Wikipedia:Text of the GNU Free Documentation License|GNU Free Documentation License]] (GFDL)"
+      },
+      "wikibooks": {
+        "appliesToSourceIds": [
+          "src-wikibooks-russian-cc-by-sa"
+        ],
+        "title": "Wikibooks:Copyrights",
+        "oldid": "4622060",
+        "url": "https://en.wikibooks.org/w/index.php?title=Wikibooks:Copyrights&oldid=4622060",
+        "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
+        "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0"
+      }
+    }
+  },
+  "pages": [
+    {
+      "key": "grammar",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "licenseRoute": "wikipedia",
+      "oldid": "1369617627",
+      "file": "../units-26-30/wikipedia/russian-grammar-1369617627.txt",
+      "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+    },
+    {
+      "key": "days",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "licenseRoute": "wikibooks",
+      "oldid": "3594124",
+      "file": "wikibooks/days-3594124.txt",
+      "sha256": "00d89a2a2f1063b8b83f9c41be6219e79f52536759f351fc5eceb2a269f8af29"
+    },
+    {
+      "key": "months",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "licenseRoute": "wikibooks",
+      "oldid": "4376719",
+      "file": "wikibooks/months-4376719.txt",
+      "sha256": "d8445149d47c9fed9a010b199e515611876adbb83dffa30296be75c32131e254"
+    },
+    {
+      "key": "interrogative",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "licenseRoute": "wikibooks",
+      "oldid": "4220316",
+      "file": "../units-3-5/wikibooks/interrogative-4220316.txt",
+      "sha256": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291"
+    },
+    {
+      "key": "lesson3",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "licenseRoute": "wikibooks",
+      "oldid": "4460699",
+      "file": "wikibooks/lesson3-4460699.txt",
+      "sha256": "63740f56e068f51cd5aa4565bfe199841154a4b942fbf7fd8a18c440544e33a6"
+    }
+  ]
 }

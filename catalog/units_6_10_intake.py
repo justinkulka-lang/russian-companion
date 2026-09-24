@@ -175,6 +175,7 @@ class Builder:
             "personal-pronouns": "Russian/Personal_Pronouns",
             "pronouns": "Russian/Grammar/Pronouns",
             "copyrights": "Wikibooks:Copyrights",
+            "adverbs": "Russian/Grammar/Adverbs",
         }
 
     def say(self, unit: int, text: str) -> str:
@@ -653,6 +654,7 @@ def build_units_6_10() -> dict:
         _unit(builder, 9, "Admitted number and quantity rows", "Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.", 26, populate),
         _unit(builder, 10, "Admitted possession and expanded rows", "Proposed Unit 10 uses frozen possession and expanded rows. Qualified review is pending.", 22, populate),
     ]
+    _adverb_orientation(builder, next(unit for unit in units if unit["number"] == 7))
     _assert(builder, units)
     return {
         "units": units,
@@ -662,6 +664,43 @@ def build_units_6_10() -> dict:
         "authored": builder.authored,
         "references": [_attribution_reference()],
     }
+
+
+def _adverb_orientation(builder: Builder, unit: dict) -> None:
+    sentence = "Adverbs describe a verb much like adjectives describe nouns."
+    shipped = builder.wiki(
+        "prov-u7-adverb-orient", 7, "obj-u7-adverb", "adverbs", sentence, sentence, record_type="instruction",
+    )
+    teach = _step(
+        "u7-st-adverb-orient", "TEACH", builder.say(7, "Admitted orientation"), shipped,
+        reference_ids=["ref-u610-attribution"],
+    )
+    gap = _step(
+        "u7-st-adverb-gap", "UNAVAILABLE",
+        builder.say(7, "Adverb forms stay in the copy you own"),
+        builder.say(7, "The introductory adverb objective is not prepared."),
+        reference_ids=["ref-u610-attribution"],
+    )
+    gap["unavailableReason"] = "The introductory Russian adverb paradigm has no admitted frozen span."
+    objective = {
+        "id": "obj-u7-adverb",
+        "unitNumber": 7,
+        "title": "Admitted orientation",
+        "kind": "GUIDANCE",
+        "instructionStepIds": [teach["id"]],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": [],
+    }
+    unit["sessions"].append({
+        "id": "u7-s-adverb",
+        "title": "Admitted orientation",
+        "estimatedMinutes": 4,
+        "objectiveIds": [objective["id"]],
+        "steps": [teach, gap],
+    })
+    unit["objectives"].append(objective)
 
 
 def _unit(builder, number, title, body, minimum, populate):
