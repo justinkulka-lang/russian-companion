@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: 38cc28f764d971e6e99330e4183da2e8ea0e8ee5764ab1d7f6412b44987a8aa8
+- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
+- Unit content-review SHA-256: 9b740c5702f2cd9e85fd48cc5c2e6356bf478e71c0fc29e9417018d8f2537024
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
-- Review-package SHA-256: 22ec5bd794115946bfe9785ff366ce9a7e0ec61b6d32ec60a26b6eaf2904b8a3
-- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
+- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
+- Review-package SHA-256: 69b6361b8150ef97e80e099d9d5e09695b4f0225da094eeabe84111a0a25e8da
+- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1021,7 +1021,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea515726e8dc59e74ea76151598bf1e41c4b3d77b129159637da1890651e798e
+- Content hash: 89612f9ae4dbb5f85164e5f23e4a9a4ab7ceb1bcafcef6467efe4f60484e7c41
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1029,11 +1029,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я спал бы
 options=a male speaker | a female speaker | I would like to sleep
 answer=a male speaker
-feedback=The frozen line writes a male speaker beside the shown form. a male speaker.
+feedback=a male speaker would say я спал бы. a male speaker.
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | while a female speaker would say я спала́ бы (or я бы поспала́) | I would like to sleep
 testedFeature=CONDITIONAL_MALE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-conditional-0
@@ -1041,8 +1041,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u19-conditional-0-en
 distractorSourceIds= | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+distractorDifference= | while a female speaker would say я спала́ бы (or я бы поспала́) | I would like to sleep
+whyAnswerDemonstratesObjective=a male speaker would say я спал бы
 contrastMembers=a male speaker | a female speaker | I would like to sleep
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-conditional-0-ru | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-2-en
@@ -1056,7 +1056,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb90bab3ec46d0bce91f60f3a003256cdcec2dbbd551215d650b403cbea85f4b
+- Content hash: 5b0acfb8977cd37f5cfd463b436550f8cc54520d2ec2aedce8422fac7c846e67
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1064,11 +1064,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я должен
 options=I have to | If the subject is feminine | If the subject is plural
 answer=I have to
-feedback=The frozen line writes translates to beside the shown form. I have to.
+feedback="I have to" translates to я должен. I have to.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | If the subject is feminine, it's должна. | If the subject is plural, it's должны.
 testedFeature=OBLIGATION_HAVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-obligation-0
@@ -1076,8 +1076,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u19-obligation-0-en
 distractorSourceIds= | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+distractorDifference= | If the subject is feminine, it's должна. | If the subject is plural, it's должны.
+whyAnswerDemonstratesObjective="I have to" translates to я должен
 contrastMembers=I have to | If the subject is feminine | If the subject is plural
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-obligation-0-ru | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-3-en
@@ -1161,7 +1161,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf155d47ce16af18a9b025b8c33f18fe648cf08e7c99b83a8877d34e12c23dc5
+- Content hash: 09cd8bfe84f483197f1c110513a0e51d6b41bee7b0f2336378be4cfc6b9e1d95
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1169,11 +1169,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я спала́ бы
 options=a female speaker | a male speaker | I would like to sleep
 answer=a female speaker
-feedback=The frozen line writes a male speaker beside the shown form. a female speaker.
+feedback=while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | a male speaker would say я спал бы | I would like to sleep
 testedFeature=CONDITIONAL_FEMALE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-conditional-1
@@ -1181,8 +1181,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-conditional-1-en
 distractorSourceIds= | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+distractorDifference= | a male speaker would say я спал бы | I would like to sleep
+whyAnswerDemonstratesObjective=while a female speaker would say я спала́ бы (or я бы поспала́)
 contrastMembers=a female speaker | a male speaker | I would like to sleep
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-conditional-1-ru | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
@@ -1196,7 +1196,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1280ff1b4ac6ef2f5c69d5d2e0985796c8b1c873f8e53bd07bd1d313baf501f
+- Content hash: 2729775dec7b3c50b8be27afab2c33456605b27e1da1d2887730d3fe7fd94b1b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1204,11 +1204,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я бы поспала́
 options=a female speaker | a male speaker | I would like to sleep
 answer=a female speaker
-feedback=The frozen line writes a male speaker beside the shown form. a female speaker.
+feedback=while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | a male speaker would say я спал бы | I would like to sleep
 testedFeature=CONDITIONAL_FEMALE_ALT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-conditional-2
@@ -1216,8 +1216,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-conditional-1-en
 distractorSourceIds= | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes a male speaker beside the shown form.
+distractorDifference= | a male speaker would say я спал бы | I would like to sleep
+whyAnswerDemonstratesObjective=while a female speaker would say я спала́ бы (or я бы поспала́)
 contrastMembers=a female speaker | a male speaker | I would like to sleep
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-conditional-3-ru | prov-ex-u19-conditional-1-en | prov-ex-u19-conditional-0-en | prov-ex-u19-conditional-2-en
@@ -1231,7 +1231,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 801e32583eca5446eb6f95003ef8d6f9397b8d7a9e9744ac697330632b9696ed
+- Content hash: 8186f7003c3c0f51f79f4c91b928f852372cd9f6a0e027532dec6cfe15286159
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1239,11 +1239,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=должна
 options=If the subject is feminine | I have to | If the subject is plural
 answer=If the subject is feminine
-feedback=The frozen line writes translates to beside the shown form. If the subject is feminine.
+feedback=If the subject is feminine, it's должна. If the subject is feminine.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | "I have to" translates to я должен | If the subject is plural, it's должны.
 testedFeature=OBLIGATION_FEMININE_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-obligation-1
@@ -1251,8 +1251,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-obligation-1-en
 distractorSourceIds= | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+distractorDifference= | "I have to" translates to я должен | If the subject is plural, it's должны.
+whyAnswerDemonstratesObjective=If the subject is feminine, it's должна.
 contrastMembers=If the subject is feminine | I have to | If the subject is plural
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-obligation-1-ru | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-3-en
@@ -1266,7 +1266,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eaac9b7053a8defe6264778f5977097a9547129ac31ad9860af13967e99e878f
+- Content hash: fadb0b19d072bd0d5d5902ea2685916697c16f6c11d81b48234120bc7b613bc2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1274,11 +1274,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=должны
 options=If the subject is plural | I have to | If the subject is feminine
 answer=If the subject is plural
-feedback=The frozen line writes translates to beside the shown form. If the subject is plural.
+feedback=If the subject is plural, it's должны. If the subject is plural.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | "I have to" translates to я должен | If the subject is feminine, it's должна.
 testedFeature=OBLIGATION_PLURAL_FORM
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u19-obligation-2
@@ -1286,8 +1286,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u19-obligation-3-en
 distractorSourceIds= | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes translates to beside the shown form.
+distractorDifference= | "I have to" translates to я должен | If the subject is feminine, it's должна.
+whyAnswerDemonstratesObjective=If the subject is plural, it's должны.
 contrastMembers=If the subject is plural | I have to | If the subject is feminine
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-obligation-3-ru | prov-ex-u19-obligation-3-en | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en
@@ -2113,6 +2113,354 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u19-obligation-x-0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e73419ba3216b765de3b3ed72f58c92685d6b3b9c2b8ac0146191cdf08a4007
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText="I have to" translates to я должен
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=b123c1e27dd7d5f45c662bd2bf9faf5309939efc22b3196b9502e96d90e20b8c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-0-r0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8d73098f3c941514b3c0ad3cff9a51eeb7b14e07e393e2e06488c8a322dba92e
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=я должен
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=37d62a1d0f985a59600cf8f32343e8fcf0e058a96a45c3ba67c30ec3639da8bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8467ee002bbea024a79cead9fa364dfcefe51a5e2c26e9bb8fec408dae3f7cb3
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=If the subject is feminine, it's должна.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=800b97b37b616df520107b75821632f53b94d5f71e7109d6fd37e8d101c9a569
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-1-r0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9364daafa8606ea89a8a17b6a09f02a9ae7e7075214a0cd6c02efd249f490e00
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=должна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=9eca2f8398f4b83cfea14ca2a3a6de1ed33d800cadf4aa34b3e38c11826889cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-2`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f80e4337108111d880f3a5d787bc9deac0522ac778c78886ffc546af2b545fa3
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=If the subject is plural, it's должны.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=901c5b078bc9927aa89d717ef858e113862954c374256969c7f50053a3cf32cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-2-r0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 743c297f653af92fec81631ff4e16c1d0b3f5534674c9c1e8a976bec407be1a5
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699
+sourceRevision=4460699
+sourceRecordId=lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+originalSourceText="I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+shippedText=должны
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4cba14b162669f6618b522812c6e8c32dc87af3298c6a569b48efc3d1c110024
+contentHash=744bab4723450805924e3804acaf20eaba77b72cb3130531db1bf1192f3d6307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-3`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b5b30dcea23b23dec38e93dab4249e172e3aa940bed7336cc11688d06e34eb35
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=a male speaker would say я спал бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=3d50903dd751fd213267299704ce99eaca5ab6b64296fab7e014e15f530a7cb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-3-r0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5d5f75c0f5862be5eadd763cee2ac8f01b960a194c50b607e714dc6711118a29
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я спал бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=856371ff01cee588e8f21b0c8978223ca02fb9668ed540f2f4ed125d9a88d761
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-4`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8b6a4efd3ff349ffa993007b3d4a188d745374bd3223274d10ecb697f7740fa9
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=while a female speaker would say я спала́ бы (or я бы поспала́)
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=f5e3209f502334fc7672665f4ee0a83bc6e37dc2799d014a2c2748ae0616431c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-4-r0`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6c3f0717ab480b2a3fdbac2cec9c57d59801169c544d21ecc719d24352159f58
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я спала́ бы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=a1b27096ce17c9403b9bef9986bf9350c18ddad0d51c0bef9ee78ee384b8842d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-4-r1`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3a46fb9293c094027d83ed565cadbf6273adee474b101018e23f29fb7f8133c1
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=я бы поспала́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-obligation-x-5`
+
+- Objectives: obj-u19-obligation
+- Sessions: u19-s-orient, u19-s-obligation
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2efcfe64bc4c62678d14c09c958d21c51cc700e4daa6256d4d8d4689f69bb5b2
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+originalSourceText=The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject into a sentence formed like in the past tense. Thus, to say "I would (hypothetically) sleep" or "I would like to sleep", a male speaker would say я спал бы (or я бы поспа́л), while a female speaker would say я спала́ бы (or я бы поспала́).
+shippedText=I would like to sleep
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=89e936975899977b1e909f141a20601e3fc98b125f76d85c8fa5a7dbb0605d3b
+contentHash=39f6f6abad4d00f676dd3c52a1834dd4cd6c9ce85d89e8d6d4757df0ccc2d03d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u19-prefix-caution-rem`
 
 - Objectives: obj-u19-prefix-caution
@@ -2183,6 +2531,175 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u19-131`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a9f28e0697c44bf402415af5b85951c5f748b60d2b74d3eb57c6ef93adb944a2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u19-132`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e1f09c457a4477cec11a5510836cf277c4a5c03da79bfe22a461d25d34e75ea3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the dissuade meaning?
+
+### AUTHORED_ENGLISH `en-u19-133`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0a2d0ac2f66005a1e078f2379f617e942cf9feb218b16439d6e123af3a0ff338
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the dissuade meaning?
+
+### AUTHORED_ENGLISH `en-u19-134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0d7c60fefec80f04676ac6079ec7ebf27fc83ae3a96168f345bf4c1393c925dd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English label is the dissuade meaning?
+
+### AUTHORED_ENGLISH `en-u19-135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6b03d515084aaa7f7277bad2a2691596b508e288a8c1b6cc29d862a6d77481e6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u19-136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ec260ae6a4f6b20c65c854f59724a8ffbf8c09bf904f1b69b23090b6977a4976
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the agree meaning?
+
+### AUTHORED_ENGLISH `en-u19-137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a026d20b845762aa21e6b74cee6353c499aa7659fd1f34992c055c519b365e3e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the agree meaning?
+
+### AUTHORED_ENGLISH `en-u19-138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 96be818631797665d7984f0fb27d315c8a1396e0adeeeeaa192726a64b04aeea
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English label is the agree meaning?
+
+### AUTHORED_ENGLISH `en-u19-139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 86b8d25986ba7821ba83f92bf56d6bd80c4bf068061da9cc7e7fc152474940b2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the dissuade perfective?
+
+### AUTHORED_ENGLISH `en-u19-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e347c145560f625fe42ab242a8b4c46c94a2f9deeafcc2cb5d56bca19aa408c7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the dissuade perfective?
+
+### AUTHORED_ENGLISH `en-u19-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ae0b45b5d604c665d0714255dc2b9809599f17362c13cc3100d09d21bb31d4a9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the dissuade perfective?
+
+### AUTHORED_ENGLISH `en-u19-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eb94e53930f5fd22c1afb4a53032b60a0c9712e9c1d6c18b257d466608e5b46e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English gloss is written beside the shown form?
+
+### AUTHORED_ENGLISH `en-u19-143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d5a62ca1cb0530c6a49a9fbfe418b01d86ce3bfc3acbaf97ec8c6e7d4506db76
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted prefix cautions
+
 ### AUTHORED_ENGLISH `en-u19-144`
 
 - Objectives: none
@@ -2191,10 +2708,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1ef374a8923edd74877c662ac663f04470361bdea11d9a2e32b8b1e09c9c318
+- Content hash: 7c776aa10059c6c83e06055e812cf922a452c1c5a4077a4b256711380c6fee14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u19-145`
 
@@ -2204,10 +2721,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf722c1787fdc9e13d2b6358a3e0d28021793fa6415335f17128fe822aea16ef
+- Content hash: 7bc1a93bcb7b04f8d2e7d11411ae1818c3f801c73c1c251350835be9e324939c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the dissuade meaning?
+text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u19-146`
 
@@ -2217,10 +2734,10 @@ text=Does this row fail the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fd5195613e4cf6da12caef147fbf18a82dec98cc62118c1df28a98c2a72ed58
+- Content hash: 99ec88aaa4b4e11614913728b61a8f7ad58b818d958ed488e6bb0cd254eef15b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the dissuade meaning?
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u19-147`
 
@@ -2230,10 +2747,10 @@ text=Does this answer show the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fadfcd41d7288a625c80bc1e9d438e645993fd3508fb1c661c18d076d43cd1b
+- Content hash: fc8793bbeb1c28bfa70c6ff460469ab91bc5baf0bfe7e67e64a1279981904b13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the dissuade meaning?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u19-148`
 
@@ -2243,10 +2760,10 @@ text=Which admitted English label is the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e0a3a62a5e42ddabae9ab00ee099abb47b100b4fac69c0b2516eb9c760bd0fa
+- Content hash: 856b3081f3f159cf5d55d400009008d7ee051a3ec83656fc31c6273bbef41db7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u19-149`
 
@@ -2256,10 +2773,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d43c52817e286d05220cfde982c87a14c6974e6681e81427461b111baf0c0df9
+- Content hash: 146a77e1d271179920d61521f8af09a90dba37e5162bf06ab780a60538f3ccfb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the agree meaning?
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u19-150`
 
@@ -2269,10 +2786,10 @@ text=Does this row fail the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d53d0ded07eaabef35c1073ca9511f9d96cb324c4f05af7bf3177cf4469cb5e0
+- Content hash: 89b6d7a71fe7970d03a6945463d6ac462b5bb00613f7320a8b88a73908d840fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the agree meaning?
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u19-151`
 
@@ -2282,10 +2799,10 @@ text=Does this answer show the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f85901022582dc01da12c06f52dccf54b82caba0845e82a6aba004458dee4131
+- Content hash: 2a4a0550a7b229ba71993c003d70fc017bdf293206c12e229a4321bc054e9f90
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the agree meaning?
+text=Work Lesson 19 in your copy
 
 ### AUTHORED_ENGLISH `en-u19-152`
 
@@ -2295,10 +2812,10 @@ text=Which admitted English label is the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 692ea27233bebaf0c1c24a386eea0cd0e64b02e03406eaf93c7ff961bb63494f
+- Content hash: 67ae0d0ee07f0f969a86aa35017e124c465fa32973ada81b0dc52a9d82fc45b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the dissuade perfective?
+text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u19-153`
 
@@ -2308,10 +2825,10 @@ text=Does this row fail the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c79e99ce54e940fa51f8307f37264f2ce13e9c487828c8bd10ea1b9fde71d667
+- Content hash: caa2666fe418d0abb90b0b12c4610c8bfc41dc23212b153765df1f6e858a4f66
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the dissuade perfective?
+text=Open Lesson 19 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u19-154`
 
@@ -2321,10 +2838,10 @@ text=Does this answer show the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a73d1165effe30a3b8b7f01eb9d4d7f8139a559b1ed999362992a2c82de20f1
+- Content hash: 19b535cb05a8432a237916fca32988f32facbfeb387a996851bdd0cec380f43c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the dissuade perfective?
+text=Record Lesson 19 book work
 
 ### AUTHORED_ENGLISH `en-u19-155`
 
@@ -2334,10 +2851,10 @@ text=Which admitted line is the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c93f2d7430d92d92ec73b345ee07d38b37f839cc61fcbd7108e46ae6e67035a5
+- Content hash: f5b73b879e9056eabf77ba19f7d73c662be20ff48ddb44961c76d03d1fcfcfcd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside a different shown form.
+text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u19-156`
 
@@ -2347,10 +2864,10 @@ text=The frozen line writes other gloss 1 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d185eab25491cd455e13be9379e6a7d6065ea757514aebdab9f23df647a9899
+- Content hash: b1ccfa7ae535c4c899d4e17dd1aab7ee24f71e39b1d152958ce4aea6f6250b38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside a different shown form.
+text=Self-attest only after the Lesson 19 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u19-157`
 
@@ -2360,10 +2877,10 @@ text=The frozen line writes other gloss 2 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 494fea3728cfc9adb23e1d4ca1d2da7ffa839d27242122f52341cf59e81e9e5a
+- Content hash: 6f6807c623f7fd4840c93ee75b0d149585c81541c74931e9f0a56ae1d4c969fb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside another shown form.
+text=Probability stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u19-158`
 
@@ -2373,254 +2890,7 @@ text=The frozen line writes other gloss 1 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 540ba6256a4aaeae46985652f0d2c30493ccee2b250890e013c15226147668e8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside another shown form.
-
-### AUTHORED_ENGLISH `en-u19-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 098ff215a6a4b082c21992a34c0da42f5e10346f0313900129a88ef70cacbf75
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes a male speaker beside the shown form.
-
-### AUTHORED_ENGLISH `en-u19-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7760abec4b0a3d024c31f42351b89adc24b7e0223adaf3e8b3caa33d49255e7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
-
-### AUTHORED_ENGLISH `en-u19-161`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5438d1d4a48a05a756c8d7ebe4c849fa705407f2debc53ed269d14b6ccc57ea6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes translates to beside the shown form.
-
-### AUTHORED_ENGLISH `en-u19-162`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5c5e0129d9dda6d275ffdca84a4925175d4168cdc7afa3a59af12fc84e910053
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted prefix cautions
-
-### AUTHORED_ENGLISH `en-u19-163`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f789e3c4b1e9ddca477b627d01c982fbf6e8a7881ec690cf4cc129ad39f952b8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u19-164`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06b54f89e4af266e35014fe1e76a4c8ddb6bc22bb0ed6671d694d552eda68780
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u19-165`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e2d30d04fa59640ecd259a1ca0e0ae392b9abdef4a9d4cef7d3fe1170a5147f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u19-166`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d044789a5505cda2212e85113474e2ef96f7917d57b7d0f6e3633ddd3c377fa2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u19-167`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5df612bf17a02ad921f9d81dbf0ad005c5598481fd26f6afc6cd87f45f72c6b0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u19-168`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad387f0a40f498ea2c37d6774e94655da50138ccf521c1a990bd33fed49f9a5f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u19-169`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4107e6d3a86e5ecff3dffc0c1c762095aa5cddbdea8f0878f5b001e018236b60
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u19-170`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25e5eeafa35c92d5ca083c0c69e7d64471c639e8bf663f69139c119bae1cf128
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 19 in your copy
-
-### AUTHORED_ENGLISH `en-u19-171`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2a21e527d0b9d1373ff354424541a66dddf01be9bfd2ffcc90c95f5f37621c0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u19-172`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ad3a165682d59a989a55a7af9f9e1f56193693c7f8e4500b098942d8697aabf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u19-173`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 287a8d063feb267a05ebf22aac36a1df47d105b8654ebe32390911c6334f0b11
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 19 book work
-
-### AUTHORED_ENGLISH `en-u19-174`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9b8a573ec4abcbdb0b10b13efcf5a9b411a10b7ec08c939da9e1202297bbdaf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u19-175`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0ba7c9c0b591dac04e53077be5d197c473dfde11d36a78fcec5c7a8e8068fee
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 19 work in your copy.
-
-### AUTHORED_ENGLISH `en-u19-176`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efd726cf60ba0fe3f9961ef620a1d0e3e34913ddb55143cc48f14bd402a9251c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Probability stays in the copy you own
-
-### AUTHORED_ENGLISH `en-u19-177`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4d934e06ead7ef40be9cd7033932cd35f27f16b9523b24fdf6797fd80e3e8c8
+- Content hash: 85d31b0af85dbb77b0b52eebce522c2b8a75bb0e25261629ebdb7db910878525
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.
@@ -2833,6 +3103,18 @@ permitsAppUse=true
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-3-ru`
 - `obj-u19-conditional` PROVENANCE `prov-u19-conditional-rem`
 - `obj-u19-obligation` PROVENANCE `prov-u19-obligation-rem`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-0-r0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-1`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-1-r0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-2`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-2-r0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-3`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-3-r0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-4`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-4-r0`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-4-r1`
+- `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-5`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-rem`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-x-0`
 

@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: db77d02ce69cc75166c5169bf1ccc0da37bc3ab31c4f0db52edfc7fe96ed7ff5
+- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
+- Unit content-review SHA-256: d1782963b7dbe84321c5f4c464a405d2326509e3ff92838b4a822910335f43d4
 - Mapping-package SHA-256: 145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f
-- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
-- Review-package SHA-256: 719cdcf484fbe7c6d680ee7cd450ad6afe62ea1d7117ba57ccefe9fc42ef29eb
-- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
+- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
+- Review-package SHA-256: 5639e96573ecca647cef715725e7a21b878b374933b61cc54aaa5979e8b87141
+- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -574,7 +574,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e85851206f9ca19b8dec2f66043ef661bca25632ad1c53c42e9c1e2deb8e3b0
+- Content hash: cc8960228d3d994e67c8ee73cc2020997ce9bcb5fb93628a8035267b5fc6b181
 
 kind=CONTRAST_SELECTION
 language=en
@@ -582,11 +582,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=идти́
 options=unidirectional | multidirectional
 answer=unidirectional
-feedback=The frozen line writes unidirectional beside the shown form. unidirectional.
+feedback=The frozen line writes unidirectional beside идти́. unidirectional.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | multidirectional
 testedFeature=MOTION_DIRECTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-0
@@ -594,8 +594,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u20-motion-rem
 distractorSourceIds= | prov-u20-motion-x-1
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes unidirectional beside the shown form.
+distractorDifference= | multidirectional
+whyAnswerDemonstratesObjective=The frozen line writes unidirectional beside идти́.
 contrastMembers=unidirectional | multidirectional
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-0-ru | prov-u20-motion-rem | prov-u20-motion-x-1
@@ -609,7 +609,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9848a2fe0cc09ef4a6b353fded7838c020f5b0a30b9dfe6301634d923f0875b7
+- Content hash: 2211ecb7d5d45039984be154677b19ebf7c3ea9d7266708245d81e96d6d7cef7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -617,11 +617,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=идти́
 options=to go, walk | to go by vehicle, ride | to carry
 answer=to go, walk
-feedback=The frozen line writes to go by vehicle beside the shown form. to go, walk.
+feedback=| to go, walk || идти́. to go, walk.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | | to go by vehicle, ride || е́хать | | to carry || нести́
 testedFeature=MOTION_FOOT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-1
@@ -629,8 +629,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-0-en
 distractorSourceIds= | prov-ex-u20-motion-1-en | prov-ex-u20-motion-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes to go by vehicle beside the shown form.
+distractorDifference= | | to go by vehicle, ride || е́хать | | to carry || нести́
+whyAnswerDemonstratesObjective=| to go, walk || идти́
 contrastMembers=to go, walk | to go by vehicle, ride | to carry
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-0-ru | prov-ex-u20-motion-0-en | prov-ex-u20-motion-1-en | prov-ex-u20-motion-2-en
@@ -644,7 +644,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f610562141c6eb5f754b3735eee1867587697c912144db712110834acf2e9d26
+- Content hash: c535920006336826af022b66abd9846752fbbb9c83d474600f97d9ced33ed9b6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -652,11 +652,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=нести́
 options=to carry | to lead | to convey, transport
 answer=to carry
-feedback=The frozen line writes to convey, transport beside the shown form. to carry.
+feedback=| to carry || нести́. to carry.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | | to lead || вести́ | | to convey, transport || везти́
 testedFeature=MOTION_CARRY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-2
@@ -664,8 +664,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-2-en
 distractorSourceIds= | prov-ex-u20-motion-3-en | prov-u20-motion-x-3
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes to convey, transport beside the shown form.
+distractorDifference= | | to lead || вести́ | | to convey, transport || везти́
+whyAnswerDemonstratesObjective=| to carry || нести́
 contrastMembers=to carry | to lead | to convey, transport
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-2-ru | prov-ex-u20-motion-2-en | prov-ex-u20-motion-3-en | prov-u20-motion-x-3
@@ -679,7 +679,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ecc96823b743cbb736576b5e024c83fc374e511df18e9af7c8932c43b0caf303
+- Content hash: 82608dbe423a21ab8720d340c8655fba955cd047dd3531b5751bb03cd022c113
 
 kind=CONTRAST_SELECTION
 language=en
@@ -687,11 +687,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Он пошёл к другу.
 options=beginning of a movement | setting out | He went to a friend's place
 answer=beginning of a movement
-feedback=The frozen line writes beginning of a movement beside the shown form. beginning of a movement.
+feedback=The frozen line writes beginning of a movement beside Он пошёл к другу. beginning of a movement.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | setting out | He went to a friend's place
 testedFeature=MOTION_PO
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-3
@@ -699,8 +699,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u20-motion-4-en
 distractorSourceIds= | prov-u20-motion-x-5 | prov-ex-u20-motion-5-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes beginning of a movement beside the shown form.
+distractorDifference= | setting out | He went to a friend's place
+whyAnswerDemonstratesObjective=The frozen line writes beginning of a movement beside Он пошёл к другу.
 contrastMembers=beginning of a movement | setting out | He went to a friend's place
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-4-ru | prov-ex-u20-motion-4-en | prov-u20-motion-x-5 | prov-ex-u20-motion-5-en
@@ -714,7 +714,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fec18f870ffcd3321478eb37860804c6fe575747db6e5dc88added90166fc74
+- Content hash: 589eb17ea8152bfdc3f623b463a3514a8c8976421054b9c43e2344f6f46e3329
 
 kind=CONTRAST_SELECTION
 language=en
@@ -722,11 +722,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Мальчик отошёл от незнакомца
 options=The boy stepped back from the stranger who had offered him candy. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
 answer=The boy stepped back from the stranger who had offered him candy.
-feedback=The frozen line writes stepped back beside the shown form. The boy stepped back from the stranger who had offered him candy.
+feedback=The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца. The boy stepped back from the stranger who had offered him candy.
 objectiveId=obj-u20-motion
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
 testedFeature=MOTION_PREFIX
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u20-motion-4
@@ -734,8 +734,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u20-motion-x-7
 distractorSourceIds= | prov-ex-u20-motion-6-en | prov-ex-u20-motion-7-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes stepped back beside the shown form.
+distractorDifference= | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
+whyAnswerDemonstratesObjective=The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца.
 contrastMembers=The boy stepped back from the stranger who had offered him candy. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u20-motion-x-9 | prov-u20-motion-x-7 | prov-ex-u20-motion-6-en | prov-ex-u20-motion-7-en
@@ -2216,7 +2216,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u20-178`
+### AUTHORED_ENGLISH `en-u20-159`
 
 - Objectives: none
 - Sessions: none
@@ -2224,12 +2224,38 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8ff9ff82e031935f01fc01d86be817daad1d0acd168fac747d9adb0956918ba
+- Content hash: 07eb1a2f7de16b0e715df5e22786edb246c6ad8d596bf3298dcd7178df933b15
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes
+
+### AUTHORED_ENGLISH `en-u20-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 91025e3604d2ab4bcc5f2ee9490b958c10f8d0ace81c697e3b3a9810428483ff
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=beside
+
+### AUTHORED_ENGLISH `en-u20-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 09ad14466a57c6a81f4bfb664524d13c4ab835ea997e1675b6e1d479dc1a997d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted lines
 
-### AUTHORED_ENGLISH `en-u20-179`
+### AUTHORED_ENGLISH `en-u20-162`
 
 - Objectives: none
 - Sessions: none
@@ -2237,51 +2263,12 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebb5afa8aa73c44a3e5981c78447e8c00c803012bb3341ac823f0241621b9625
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside a different shown form.
-
-### AUTHORED_ENGLISH `en-u20-180`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba6a14cbfe97d927db38d24c682f0e0250e5240df51606983e0ae1c5d1ef693b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside another shown form.
-
-### AUTHORED_ENGLISH `en-u20-181`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87d30fd2fc367fc2e0b3e602ac80d1a21b06f21962bde6106846ca7805b57fe4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes unidirectional beside the shown form.
-
-### AUTHORED_ENGLISH `en-u20-182`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1de33cb402362fb4dbf1c39dec05d000d954101fea83e066cd701a412afc7ccb
+- Content hash: bd6418a14ebb7a931f44e100ca19a70f21f3b365ca52ad8affda6131f0a6693a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Which admitted English gloss is written beside the shown form?
 
-### AUTHORED_ENGLISH `en-u20-183`
+### AUTHORED_ENGLISH `en-u20-163`
 
 - Objectives: none
 - Sessions: none
@@ -2289,12 +2276,12 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef6fd2deda45ae684fbbc854061fb013ba62ce95f7db7264f006696ef0c6dfb4
+- Content hash: 25a4d1a6d984cc0bbc910aba6fa3598e4bbd8ce9c6520d72331be831977de9e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted instruction
 
-### AUTHORED_ENGLISH `en-u20-184`
+### AUTHORED_ENGLISH `en-u20-164`
 
 - Objectives: none
 - Sessions: none
@@ -2302,90 +2289,12 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0dd2ea42ea2a5fef2310de96acb58f8631b01969be717515d81c3aaa13f23f61
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside a different shown form.
-
-### AUTHORED_ENGLISH `en-u20-185`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc4ac0259dc1bd3f9fb8e72e3b853c6c5d11c1c5bd8cd6478cf498108432b2d3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside another shown form.
-
-### AUTHORED_ENGLISH `en-u20-186`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32a5e298d821602cb4ef92628730afbea664aad01ee4829caf3ce1f29b748510
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes to go by vehicle beside the shown form.
-
-### AUTHORED_ENGLISH `en-u20-187`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 804d3d104636d89d5415dab1d403c11ef36358e9cc03c4b9b7423dff53cab357
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes to convey, transport beside the shown form.
-
-### AUTHORED_ENGLISH `en-u20-188`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72daa7aadbb10ae28f06baee6b0faa257671a2ced3f2ece143b814ea24592cbb
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes beginning of a movement beside the shown form.
-
-### AUTHORED_ENGLISH `en-u20-189`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8147736a84f5bf44f9821811482eda2124534253908a0d1a8f7704049392f54f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes stepped back beside the shown form.
-
-### AUTHORED_ENGLISH `en-u20-190`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bf2ee96afaefb1b901ddea6890ff767afce35537984ac96c465cc903e75b7d7
+- Content hash: 6af1ce4288f38ea8c379000a80999370fefe0c701921bc197a110c0caf10a0b4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted motion lines
 
-### AUTHORED_ENGLISH `en-u20-191`
+### AUTHORED_ENGLISH `en-u20-165`
 
 - Objectives: none
 - Sessions: none
@@ -2393,12 +2302,12 @@ text=Admitted motion lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e1b72bac7b3fab1b4117cc462ac79c0d5b209c070b44798df1b98a668d1e097
+- Content hash: 1e3eb2c90f4f9d571210953ac0202a3e9b23f8ee874322e905fbafe45543a468
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u20-192`
+### AUTHORED_ENGLISH `en-u20-166`
 
 - Objectives: none
 - Sessions: none
@@ -2406,12 +2315,12 @@ text=Proposed Unit 20 uses admitted motion lines for direction, foot and transpo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d466af35859b576f506d799f41e2286736aca618335a8e2ad46dad2d24418fd7
+- Content hash: 62e533576bbeabca07c65733050cd3e988276c749a1b2105b468771a23b906fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 20 in the copy you own. The app records do not replace that lesson.
 
-### AUTHORED_ENGLISH `en-u20-193`
+### AUTHORED_ENGLISH `en-u20-167`
 
 - Objectives: none
 - Sessions: none
@@ -2419,12 +2328,12 @@ text=Open Lesson 20 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc3eb55d3ef46b7fe559062746692859f8c0b923b1364d0be2078d8c0a19add9
+- Content hash: ba3851188959f7b8d314d6cbc20af38f15427c8fa3ac0e094a6ac271ade8bab1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Guided practice
 
-### AUTHORED_ENGLISH `en-u20-194`
+### AUTHORED_ENGLISH `en-u20-168`
 
 - Objectives: none
 - Sessions: none
@@ -2432,12 +2341,12 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85ff3be1416d48506fa78c482b67fc28f117357742ef32c0c485f99996ab7b25
+- Content hash: c714675051c433b1edb14acdd5dedd6919bb649afa942d7b56811ac61ae8fc31
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Choose the admitted record. The feedback states the frozen field.
 
-### AUTHORED_ENGLISH `en-u20-195`
+### AUTHORED_ENGLISH `en-u20-169`
 
 - Objectives: none
 - Sessions: none
@@ -2445,12 +2354,12 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 16e02f83f0eafa167dace95577d2145ea043b2b3c0faa1139b0dfe32cbedb375
+- Content hash: bda2d3af980f64bb06e2e8842a04d14c4a0a1bb9df40d9619a3e9ec2f8a32197
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Remediation
 
-### AUTHORED_ENGLISH `en-u20-196`
+### AUTHORED_ENGLISH `en-u20-170`
 
 - Objectives: none
 - Sessions: none
@@ -2458,12 +2367,12 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8d8a391add934329e3d90d97e733e029f4271796c19ef5698ce472e113798fb
+- Content hash: 1c1e11454a203a4f65226eb38c469c9ccd2477908a2fa5d3e5f657489dbdac6b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Independent checks
 
-### AUTHORED_ENGLISH `en-u20-197`
+### AUTHORED_ENGLISH `en-u20-171`
 
 - Objectives: none
 - Sessions: none
@@ -2471,12 +2380,12 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 103ded18bf34caf8dffa6be6d92797e25df098b6391d9c9129649ac40d6f98e7
+- Content hash: c196d80f04bc8e26b24572d61db134bb3e1ade42fec7a144a2ec77d4605f6448
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=These checks use only admitted records. A miss returns to the explanation.
 
-### AUTHORED_ENGLISH `en-u20-198`
+### AUTHORED_ENGLISH `en-u20-172`
 
 - Objectives: none
 - Sessions: none
@@ -2484,12 +2393,12 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8c04078a59ec0d1787e0e27bdd84b2212811adeb3043f32e26133af3bfa731b
+- Content hash: 0a900b91d61bd52a21f42fae259d24686fce425573826d4529f2814fdb89fa57
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Work Lesson 20 in your copy
 
-### AUTHORED_ENGLISH `en-u20-199`
+### AUTHORED_ENGLISH `en-u20-173`
 
 - Objectives: none
 - Sessions: none
@@ -2497,12 +2406,12 @@ text=Work Lesson 20 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bf5d1b6f4469fcdcd71d1245e9c00eb9fd2f0ffa655ed116227b84fd20b3830
+- Content hash: 554fc5d8a330d4ecdf138527bac46e3c14ea4d756068a639d35d149b98ec2d49
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
-### AUTHORED_ENGLISH `en-u20-200`
+### AUTHORED_ENGLISH `en-u20-174`
 
 - Objectives: none
 - Sessions: none
@@ -2510,12 +2419,12 @@ text=Do Lesson 20 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0a0769626c90fedade2eee5cae50972dafcd562ae43376f70a13710e86c1743
+- Content hash: 92e723ba5e62ca224c18e3d3ffc2aa5c2ddccb8de4975696d15e7c20c55b9b14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Open Lesson 20 in your copy and complete its lesson work.
 
-### AUTHORED_ENGLISH `en-u20-201`
+### AUTHORED_ENGLISH `en-u20-175`
 
 - Objectives: none
 - Sessions: none
@@ -2523,12 +2432,12 @@ text=Open Lesson 20 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83b6009db75c0fde3182605c04a4a0ff083a9d82878921643cbd9dfad88522f0
+- Content hash: c92c430eec70a145d92b114a66922ad7b931878992f208bb042490a097899b59
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 20 book work
 
-### AUTHORED_ENGLISH `en-u20-202`
+### AUTHORED_ENGLISH `en-u20-176`
 
 - Objectives: none
 - Sessions: none
@@ -2536,12 +2445,12 @@ text=Record Lesson 20 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fda72b6a2dee94b360343f741f58774d140f403e8de35e35170cdf231cc8853a
+- Content hash: fb966ce1a56236acf5abc6ebb20089160127f0b698535a8e3120a9689625a8f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u20-203`
+### AUTHORED_ENGLISH `en-u20-177`
 
 - Objectives: none
 - Sessions: none
@@ -2549,7 +2458,7 @@ text=When you have done Lesson 20 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 316d405394c6f442f7db33ead93e571c41758dd8fe43a5e244413c73214e2b40
+- Content hash: f020cfdc634f866c4a8d95ed7b26c76f376006c13665a853b0cd5def3383ef30
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 20 work in your copy.

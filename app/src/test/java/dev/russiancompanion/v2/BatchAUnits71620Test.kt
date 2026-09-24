@@ -132,6 +132,92 @@ class BatchAUnits71620Test {
     }
 
     @Test
+    fun batchAExplanationsNameTheKeyedRelationshipAndRejectASwap() {
+        val pack = pack()
+        val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
+        assertEquals(32, items.size)
+        val liveErrors = V2Validator.validate(pack).errors
+        items.groupBy { it.objectiveId }.forEach { (_, group) ->
+            group.forEach { item ->
+                val assessment = item.assessment!!
+                val why = assessment.whyAnswerDemonstratesObjective
+                val shown = item.promptLetter!!
+                assertTrue(item.id, why.contains(item.answer) && item.feedback.contains(item.answer))
+                assertTrue(item.id, why.contains(shown))
+                group.map { it.answer }.filter { other ->
+                    other != item.answer && !item.answer.contains(other) && !other.contains(item.answer)
+                }.forEach { other ->
+                    assertFalse("${item.id} names $other", why.contains(other) || item.feedback.contains(other))
+                }
+                item.options.forEachIndexed { index, option ->
+                    if (option == item.answer) return@forEachIndexed
+                    val rationale = item.distractorRationales[index]
+                    val difference = assessment.distractorDifference[index]
+                    assertTrue("${item.id} rationale for $option", rationale.contains(option) && difference.contains(option))
+                    if (!option.contains(item.answer)) {
+                        assertFalse("${item.id} rationale names ${item.answer}", rationale.contains(item.answer) || difference.contains(item.answer))
+                    }
+                    if (!item.answer.contains(option)) {
+                        assertFalse("${item.id} explanation names $option", why.contains(option))
+                    }
+                }
+                assertTrue(
+                    liveErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    liveErrors.none { error ->
+                        error.contains(item.id) && (
+                            error.contains("explanation") || error.contains("gloss") || error.contains("distractor rationale")
+                            )
+                    },
+                )
+                val distractor = item.options.first { option ->
+                    option != item.answer && !item.answer.contains(option) && !option.contains(item.answer)
+                }
+                val replacedWhy = why.replace(item.answer, distractor)
+                val replacedFeedback = item.feedback.replace(item.answer, distractor)
+                assertFalse(replacedWhy.contains(item.answer))
+                val replacedErrors = V2Validator.validate(
+                    replaceItem(
+                        pack,
+                        item.copy(
+                            feedback = replacedFeedback,
+                            assessment = assessment.copy(whyAnswerDemonstratesObjective = replacedWhy),
+                        ),
+                    ),
+                ).errors
+                assertTrue(
+                    replacedErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    replacedErrors.any { it.contains(item.id) && (it.contains("keyed answer") || it.contains("different gloss")) },
+                )
+            }
+            group.forEach { item ->
+                val other = group.firstOrNull { candidate ->
+                    candidate.answer != item.answer &&
+                        !candidate.assessment!!.whyAnswerDemonstratesObjective.contains(item.answer)
+                } ?: return@forEach
+                val swappedErrors = V2Validator.validate(
+                    replaceItem(
+                        pack,
+                        item.copy(
+                            feedback = other.feedback,
+                            assessment = item.assessment!!.copy(
+                                whyAnswerDemonstratesObjective = other.assessment!!.whyAnswerDemonstratesObjective,
+                            ),
+                        ),
+                    ),
+                ).errors
+                assertTrue(
+                    swappedErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    swappedErrors.any {
+                        it.contains(item.id) && (
+                            it.contains("explanation") || it.contains("gloss") || it.contains("frozen evidence")
+                            )
+                    },
+                )
+            }
+        }
+    }
+
+    @Test
     fun generatedRussianAndInternetStayClosed() {
         val pack = pack()
         val marked = pack.copy(admissions = pack.admissions.copy(generatedRussianWords = 1))
@@ -145,6 +231,9 @@ class BatchAUnits71620Test {
         assertTrue(pack.unitReviews.all { it.reviewer.isNullOrBlank() && it.status == "PENDING_QUALIFIED_REVIEW" })
         assertTrue(pack.ownedEditionMappings.isEmpty())
     }
+
+    private fun replaceItem(pack: V2CurriculumPack, mutated: dev.russiancompanion.v2.curriculum.V2CheckItem) =
+        pack.copy(items = pack.items.map { if (it.id == mutated.id) mutated else it })
 
     private fun replaceCapability(pack: V2CurriculumPack, id: String, mutated: dev.russiancompanion.v2.curriculum.V2SourceCapability) =
         pack.copy(sourceCapabilities = pack.sourceCapabilities.map { if (it.id == id) mutated else it })
@@ -207,4 +296,19 @@ class BatchAUnits71620Test {
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
 
     private fun repo(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+
+    private companion object {
+        val BATCH_A_OBJECTIVES = setOf(
+            "obj-u16-complements",
+            "obj-u17-age",
+            "obj-u17-weekdays",
+            "obj-u17-months",
+            "obj-u17-clock",
+            "obj-u18-comparison",
+            "obj-u18-relative",
+            "obj-u19-conditional",
+            "obj-u19-obligation",
+            "obj-u20-motion",
+        )
+    }
 }

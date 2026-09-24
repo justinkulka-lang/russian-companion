@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: 9d8af88bfe9cb7531d03de5fdf39634385464b62ecfd49a345a776e1963829ae
+- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
+- Unit content-review SHA-256: e0bcebd17932aade5256a3057a760b054b6506d3a042abe4937037c1ec806a41
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
-- Review-package SHA-256: a91331d011d42ef1aaf86226c7f3a99ef4db0fcadf781af16ef81ff1c255cebf
-- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
+- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
+- Review-package SHA-256: cabeac50cc69f7c01169dd4f68bd5d611b9bbc5049cfa64684aae418484db77d
+- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2277,7 +2277,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99336ef6a3829c6930c8623b179644f28121d5fdc43ab5842a3cd6a0905c8d57
+- Content hash: 9369c1a081ba23fc3b8c3d95f5c4f5a76a8819f30282435c7973630c8fc108c6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2285,11 +2285,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=стать
 options=became | remain | turn out to be
 answer=became
-feedback=The frozen line writes appear to be beside the shown form. became.
+feedback=The frozen line writes became beside стать. associates of connective verbs. became.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes remain beside остаться. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
 testedFeature=COMPLEMENT_BECAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-0
@@ -2297,8 +2297,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u16-complements-0-en
 distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes appear to be beside the shown form.
+distractorDifference= | The frozen line writes remain beside остаться. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
+whyAnswerDemonstratesObjective=The frozen line writes became beside стать. associates of connective verbs
 contrastMembers=became | remain | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
@@ -2662,7 +2662,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 14c264720b3c38bd0deed81daed989bf6cd6a653cc7d14bf464166ceacd3d622
+- Content hash: c100d1a9d6e66c999e530a7b9dbfba27fa33596a7e0f70356a8830beb71bed85
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2670,11 +2670,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=остаться
 options=remain | became | turn out to be
 answer=remain
-feedback=The frozen line writes appear to be beside the shown form. remain.
+feedback=The frozen line writes remain beside остаться. associates of connective verbs. remain.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
 testedFeature=COMPLEMENT_REMAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-1
@@ -2682,8 +2682,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-1-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes appear to be beside the shown form.
+distractorDifference= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes turn out to be beside оказаться. associates of connective verbs
+whyAnswerDemonstratesObjective=The frozen line writes remain beside остаться. associates of connective verbs
 contrastMembers=remain | became | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-1-ru | prov-ex-u16-complements-1-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
@@ -2697,7 +2697,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bef7a726034047e7cbb96b3492f46680647954bbb7c4a80fc9dfda043225dea4
+- Content hash: b67aa62f07d7b52bf1a4c0392f7aed0e654ab6255f321444f5574bf3a0adea1f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2705,11 +2705,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=оказаться
 options=turn out to be | became | remain
 answer=turn out to be
-feedback=The frozen line writes appear to be beside the shown form. turn out to be.
+feedback=The frozen line writes turn out to be beside оказаться. associates of connective verbs. turn out to be.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes remain beside остаться. associates of connective verbs
 testedFeature=COMPLEMENT_TURN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-2
@@ -2717,8 +2717,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-3-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes appear to be beside the shown form.
+distractorDifference= | The frozen line writes became beside стать. associates of connective verbs | The frozen line writes remain beside остаться. associates of connective verbs
+whyAnswerDemonstratesObjective=The frozen line writes turn out to be beside оказаться. associates of connective verbs
 contrastMembers=turn out to be | became | remain
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-3-ru | prov-ex-u16-complements-3-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
@@ -6119,10 +6119,10 @@ text=Which admitted English label is the before label?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 46b94aa2933a6b8a46fff21ade4f34f9f8443faa0f19eb0d9146973d5d42251c
+- Content hash: ce4890d71c002533c706a9629b6f414194b8b166dafd508d68d4ae909fe0cdbb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside a different shown form.
+text=The frozen line writes
 
 ### AUTHORED_ENGLISH `en-u16-037`
 
@@ -6132,10 +6132,10 @@ text=The frozen line writes other gloss 1 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 727b11d4fefed5f71a1289c17dab4707718916781ecc37863fcdd79d535df5ad
+- Content hash: 5721d3706dc8a47232739c9e4b2d5e5b2864eec26f5b380e58ee7a395999c16b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside a different shown form.
+text=beside
 
 ### AUTHORED_ENGLISH `en-u16-038`
 
@@ -6145,10 +6145,10 @@ text=The frozen line writes other gloss 2 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 767fda55190d9665413c8c4407170c2cabf9cbd2f9dec15171dfff3476f9e0ac
+- Content hash: e3fe195213411111a5d392176a2da1f89b59199c2cd7c04bd69638d22b877939
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside another shown form.
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u16-039`
 
@@ -6158,10 +6158,10 @@ text=The frozen line writes other gloss 1 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5bf71ae7c3ddee2c4d12afb52423d761e63fad34bd805e5ee2314f7a013e27d1
+- Content hash: 8c5e4540b366e024ee3bc65adb768c33c20ab057d312cca0d57f9f8b0964c940
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside another shown form.
+text=Admitted instrumental rows
 
 ### AUTHORED_ENGLISH `en-u16-040`
 
@@ -6171,10 +6171,10 @@ text=The frozen line writes other gloss 2 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a4c33e2ed32ac4c9505ccb7472404cbedafc1a85302a6246aece34d51326469
+- Content hash: 662e4c9108daa74278a739b60a8807fc1420b81fc4ecdd2178a9f20e43faee8a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes appear to be beside the shown form.
+text=Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u16-041`
 
@@ -6184,10 +6184,10 @@ text=The frozen line writes appear to be beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f686252a1a3343ed239f80db66b134d2324addf1745d22af248123683859a3bf
+- Content hash: 1586b8decf1f58bcf45a9d109e941805cae47b5c7fc752b9ea235ac256575d04
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
+text=Open Lesson 16 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u16-042`
 
@@ -6197,10 +6197,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3671a0aa8dbdc2c576e8665fccbcee006b809de623a98484e4b633f474db9201
+- Content hash: 1e343971f1ed08763a60dea0923a5cdcc6dfaa3ee878dd0fb7c724c93fb6b937
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instrumental rows
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u16-043`
 
@@ -6210,10 +6210,10 @@ text=Admitted instrumental rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20c7a127086be4f3f5f4efaecc7b44cc75ff3787a577f5665ac771e6343ffe5c
+- Content hash: 52a4f8b6c412cf79ca3ff5c15f2259ae9a5e987a036450c205a8447b837a7059
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u16-044`
 
@@ -6223,10 +6223,10 @@ text=Proposed Unit 16 uses frozen instrumental rows and the admitted complement 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 568587db2273d6870d55027066443a35a2f44e52f330d609443163e2895c4494
+- Content hash: e5e42cec95fb7a9655a15f34a40280dc216e4ca062ce0b4a84e30797819d138a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 16 in the copy you own. The app records do not replace that lesson.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u16-045`
 
@@ -6236,10 +6236,10 @@ text=Open Lesson 16 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc29b3d9cf8cd1326f9ce3451146a78fe1a942c261ff573342c8d32913cd5137
+- Content hash: 0df098aaf1f685f09825c74d769c1dff7bf5e8fdb94d505c48eb2f84d0dee9ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u16-046`
 
@@ -6249,10 +6249,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d98e27175a49c2d2c620161047ee1a761e679c94b754b8a1ae3caff71e88e5f4
+- Content hash: 9c1507bbf39360cf5aee8cab3131079c65b9395a3f1dfb930ffee44546600ddb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u16-047`
 
@@ -6262,10 +6262,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d67354e76b93bc80bf2d271af5aef574f893e74c1bc616a3c4b93199fb6d0da
+- Content hash: ae8e45ccfebe3cfd49ea8fe99892782a48d8f457c365ef8f2ccf7f2076157b4c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Work Lesson 16 in your copy
 
 ### AUTHORED_ENGLISH `en-u16-048`
 
@@ -6275,10 +6275,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00489c8a7c2abc7b1aac986e5bb7a8b843134dfcf755d14be0c51f6cbc9dc07a
+- Content hash: 1a34b2b2f093554bd959c7f3feb579721bef3d4c4f3622aaafb07d1c27202fe8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u16-049`
 
@@ -6288,10 +6288,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 308060fbc6c4e4cea67c15b6a483afa3dc7d232e50e6f6c7a6c2b3ad4bc4032b
+- Content hash: 54fcb1af8a1314225b91742d62b8951521d5d07ed88ef42b73a14e8cbcbc5e3c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Open Lesson 16 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u16-050`
 
@@ -6301,10 +6301,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 263e853a7821346322575911e3874e4671b5490f84f2740cc8743ae256e675d7
+- Content hash: 09ecb92b588c765e4dc4014805ddb2e1a8b1d71c3e7e0e4e4e1b90b1fd938dc0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 16 in your copy
+text=Record Lesson 16 book work
 
 ### AUTHORED_ENGLISH `en-u16-051`
 
@@ -6314,10 +6314,10 @@ text=Work Lesson 16 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53399b71dd231308c849f4bfbe28f5b3af64c6c5cc2c23c29646d9189065d04f
+- Content hash: 833a921a94fbc0f3c1d2b3e7ed04eeb4592969c1299190d241a05b90a42b03fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u16-052`
 
@@ -6327,46 +6327,7 @@ text=Do Lesson 16 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4595243bd9b4a96e4a048aaa41ce305c20c447fa0d7f71b037f8f264556d0208
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 16 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u16-053`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82acbb00b475c3d0b591053af4090a2470ee9f268a0e37ea75313cc90c5e218a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 16 book work
-
-### AUTHORED_ENGLISH `en-u16-054`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 453ed163728037b20d19a42ffd3875372e76058c2448ecc7720aab850b686adc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u16-055`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8eb9e5c5cf5a5c40964714e0bb7e3564353a051f8bfadc52af9edc31017567cb
+- Content hash: d3d5b01700b936506a57e663a07c581e4bfa9dc43094c04d968405cfb7f18b84
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 16 work in your copy.

@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: 42d42c697599fe90277ad3947c69d71fcf25baaa41b1d0927bb7733a0b836be5
+- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
+- Unit content-review SHA-256: 701207711e329c88de6feedda2a49d3dd0f075e11ed48ed0dfd425541236e837
 - Mapping-package SHA-256: bbc970db2dfb4a17b8433024c289db9045424d73e3e64a61f699f992704ffbda
-- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
-- Review-package SHA-256: ceda14d7b2f4a154d0ab031b4ed344a04f084d630c2d067f7223ad7f76a7b4e1
-- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
+- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
+- Review-package SHA-256: f7a5a0e050aac1a841cc885d3862df85e6e31e6ac452ce48b332813285a4217f
+- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -696,7 +696,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07b60b4de9953ea51ecee974a16733491e62897bf674a90981972329ea1b7d4b
+- Content hash: 8fa0f4ee2b56c77c6ffe0b98e6be7d544ad57a364ea325b8ef7157edbccf944d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -704,11 +704,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=бо́льший
 options=bigger | better | redder
 answer=bigger
-feedback=The frozen line writes comparative forms beside the shown form. bigger.
+feedback=бо́льший 'bigger'. bigger.
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | лу́чший 'better' | красне́е 'redder'
 testedFeature=COMPARISON_BIGGER
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-comparison-0
@@ -716,8 +716,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u18-comparison-0-en
 distractorSourceIds= | prov-ex-u18-comparison-1-en | prov-ex-u18-comparison-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes comparative forms beside the shown form.
+distractorDifference= | лу́чший 'better' | красне́е 'redder'
+whyAnswerDemonstratesObjective=бо́льший 'bigger'
 contrastMembers=bigger | better | redder
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-comparison-0-ru | prov-ex-u18-comparison-0-en | prov-ex-u18-comparison-1-en | prov-ex-u18-comparison-2-en
@@ -731,7 +731,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 45437547da89d70282fb191525d0d26e1842df6d3fe1763e5600e548ff7da7d5
+- Content hash: 660da73508e7dc7b30a8a827f16c77c4afd71578247e91837ba9fbb497f751b6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -739,11 +739,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Которое яблоко моё?
 options=Which apple is mine? | Which book do you want? | The man who changed the world
 answer=Which apple is mine?
-feedback=The frozen line writes changed the world beside the shown form. Which apple is mine?
+feedback=The frozen line writes Which apple is mine? beside Которое яблоко моё? Which apple is mine?
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? | The frozen line writes The man who changed the world beside Человек, который изменил мир.
 testedFeature=RELATIVE_APPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-0
@@ -751,8 +751,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u18-relative-0-en
 distractorSourceIds= | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes changed the world beside the shown form.
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? | The frozen line writes The man who changed the world beside Человек, который изменил мир.
+whyAnswerDemonstratesObjective=The frozen line writes Which apple is mine? beside Которое яблоко моё?
 contrastMembers=Which apple is mine? | Which book do you want? | The man who changed the world
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-0-ru | prov-ex-u18-relative-0-en | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
@@ -766,7 +766,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 330fbf32aa6f452bbcca772d2bf13782ec72bc80feeac8441cc17968a988dbc1
+- Content hash: a740ecf074345d9691e49695d24215d49f06e9d812f25312e045f1f8f640f59a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -774,11 +774,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=наибо́льший
 options=the biggest | more | less
 answer=the biggest
-feedback=The frozen line writes comparative forms beside the shown form. the biggest.
+feedback=наибо́льший 'the biggest'. the biggest.
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | бо́лее 'more' | ме́нее 'less'
 testedFeature=COMPARISON_BIGGEST
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-comparison-1
@@ -786,8 +786,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-comparison-3-en
 distractorSourceIds= | prov-u18-comparison-x-1 | prov-u18-comparison-x-2
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes comparative forms beside the shown form.
+distractorDifference= | бо́лее 'more' | ме́нее 'less'
+whyAnswerDemonstratesObjective=наибо́льший 'the biggest'
 contrastMembers=the biggest | more | less
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-comparison-3-ru | prov-ex-u18-comparison-3-en | prov-u18-comparison-x-1 | prov-u18-comparison-x-2
@@ -801,7 +801,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a866e1f2a2c8d6cabbd807e5f5987d5e7655c0d6d1f269038ef80815c031f2d5
+- Content hash: 7300736557147e39e4e2f3ae1d3e3ea58961e74d760e8b4a4fe7a25cb375b293
 
 kind=CONTRAST_SELECTION
 language=en
@@ -809,11 +809,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=бо́лее до́брый
 options=kinder | least | bigger
 answer=kinder
-feedback=The frozen line writes comparative forms beside the shown form. kinder.
+feedback=бо́лее до́брый 'kinder'. kinder.
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | наиме́нее 'least' | бо́льший 'bigger'
 testedFeature=COMPARISON_KINDER
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-comparison-2
@@ -821,8 +821,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u18-comparison-x-4
 distractorSourceIds= | prov-u18-comparison-x-3 | prov-ex-u18-comparison-0-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes comparative forms beside the shown form.
+distractorDifference= | наиме́нее 'least' | бо́льший 'bigger'
+whyAnswerDemonstratesObjective=бо́лее до́брый 'kinder'
 contrastMembers=kinder | least | bigger
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u18-comparison-x-0 | prov-u18-comparison-x-4 | prov-u18-comparison-x-3 | prov-ex-u18-comparison-0-en
@@ -836,7 +836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d699ef9bc9e93e7d1089c48c98254f8d5a12ce9818a72f96547def64d8b091b
+- Content hash: 71effa6c4625b682fdbd2a3d15427c5da52142b95a96ff285de7cf17490b9d59
 
 kind=CONTRAST_SELECTION
 language=en
@@ -844,11 +844,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Же́нщина, с кото́рой я дружу́
 options=The woman (who) I'm friends with | The man who changed the world | Which apple is mine?
 answer=The woman (who) I'm friends with
-feedback=The frozen line writes changed the world beside the shown form. The woman (who) I'm friends with.
+feedback=The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. The woman (who) I'm friends with.
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё?
 testedFeature=RELATIVE_WOMAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-1
@@ -856,8 +856,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-2-en
 distractorSourceIds= | prov-ex-u18-relative-3-en | prov-ex-u18-relative-0-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes changed the world beside the shown form.
+distractorDifference= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё?
+whyAnswerDemonstratesObjective=The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.
 contrastMembers=The woman (who) I'm friends with | The man who changed the world | Which apple is mine?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-2-ru | prov-ex-u18-relative-2-en | prov-ex-u18-relative-3-en | prov-ex-u18-relative-0-en
@@ -871,7 +871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f8a9be3bf89f7d5742744a4c2d40fa2a294c71e1cf180cf97c53862c3da0235
+- Content hash: 609e3012cbebe89aee7062371d8c2c69349d080ce9d3d547ea8d8d4f65da1d0f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -879,11 +879,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Человек, который изменил мир
 options=The man who changed the world | The woman (who) I'm friends with | Which book do you want?
 answer=The man who changed the world
-feedback=The frozen line writes changed the world beside the shown form. The man who changed the world.
+feedback=The frozen line writes The man who changed the world beside Человек, который изменил мир. The man who changed the world.
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
 testedFeature=RELATIVE_MAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-2
@@ -891,8 +891,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-3-en
 distractorSourceIds= | prov-ex-u18-relative-2-en | prov-ex-u18-relative-1-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes changed the world beside the shown form.
+distractorDifference= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+whyAnswerDemonstratesObjective=The frozen line writes The man who changed the world beside Человек, который изменил мир.
 contrastMembers=The man who changed the world | The woman (who) I'm friends with | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-3-ru | prov-ex-u18-relative-3-en | prov-ex-u18-relative-2-en | prov-ex-u18-relative-1-en
@@ -1677,6 +1677,316 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u18-comparison-x-10`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e7c972abc5e573a9c4f0f6e02f531b6e5cefe204fa39967656e9cbf0e113fdf7
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=наибо́льший 'the biggest'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=795292bb5077a66769537ffc3cfada2e5921d84cdc4ea2a8522608d11331e116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-10-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: df9b1fc7fb265ee4769fc41b6ae89cb52804bee5c1393081cfa486fe1a124465
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=наибо́льший
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=7a4bdc0c9c26d8b35c6a3a08915b3acbb6ad2f8dbc1a673a4839303c264f6da7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-11`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f8aa9a0108a95e85c6b572157d8d98c1eb908a8cf658df509edbe0c543677d1d
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́лее 'more'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=07c229b1fe63daeb811ed0f1dc5867c7e062bcf818b30ad08745cc95ecd555fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-11-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a960d0784d166f9649dd58c4f2ca61a816df8c5d0fe1ae6db264a81d81a31d06
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́лее
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=29d600d22692d4ed8bbf1d2a21050b247a7f513b649827f7944064046a1f89b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-12`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a32bcdae2346bf753c705aa92c07a2e8fd6cfc08250472c7d33751e73be7b231
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=ме́нее 'less'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=b54672fd066fd8f6deb1c9d87b3bcfd8b414e0f0ea7e32cd43ed700b70ac4181
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-12-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a72c3c80ec3a6cfe5543936ca2962a52dc6d60d3b5d5b595dacfb9456f7fa093
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=ме́нее
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=95c24b912af49c6efbd25d73482c766e3ca24660dc43769d7b45695659260b8d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-13`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed16d5c335bb43fe5764f44a6d16c0ae726719a7ead640155e19a88de13d3fe5
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=наиме́нее 'least'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=63aa4884698736f5ce5db55318d946a1ec06224b4efb2ab12f885b37470ec174
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-13-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e8fe5b4d38ebbd8332e9db2c7e8fbc755fc8fb4c7fa3fc4e5f7869c09c4c2c34
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=наиме́нее
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=07522c83daf655ef87f800bc63c6059feee438fc6c93eb73f159a91059752d51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-14`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 02949912161942281be2f9e4050df261db650de77d8309eaf00f19d723956a2f
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́лее до́брый 'kinder'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=2719d8496247c26576d34007fe67b004e011614af7670d3bcec9357d157bba70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-14-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: db907d52ce38ab97a65b0c554828d946c733e53c36d7e7a7cc20c4bf1b9f2e05
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́лее до́брый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=ccdcb9048411e528c90ba9b2531723b54a7a2f21886397700963bcfda8445c59
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u18-comparison-x-2`
 
 - Objectives: obj-u18-comparison
@@ -1832,6 +2142,192 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u18-comparison-x-7`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e59a65293480f65376840ed51299e9e3a7a904673ea91ac4ba3666f247dc9d80
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́льший 'bigger'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=f530fe252ade7ed210df165a2109ddb51e417659dd6e632fec3c7749345f71b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-7-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3fa7c5d801b2c289ea531c407e1c9478a111619493071fda3cab3c9990e8fa0c
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=бо́льший
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=2d6a7c7e177a213cc9ef31e1ef6f45e957af234534b7fe0d2c5004a53adac75a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-8`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: be7839a71c8c369fc137b6dff0db44950d0dd8c10a0503096569bf1918202fed
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=лу́чший 'better'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=ec30e033e40f6a73b363283cefb1aee64f474229a5d351b7c667a35f7da70d40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-8-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d08366a7eed5f86d05e470b4c345cf16a7b2aa3c3bd25e19436ca20700a148a1
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=лу́чший
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=5215163536b5fd6ba106c4211559462134b443d5262de4fa10e4f43ed45dbd00
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-9`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7003cd34aac3280f538cf84441bb323a0b7411a984fced06680da484f73bbf45
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=красне́е 'redder'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=3a71b777feed4858e2c1115a4ae5f249931af7e4e4f0e0601edbf58ea3c64a34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u18-comparison-x-9-r0`
+
+- Objectives: obj-u18-comparison
+- Sessions: u18-s-orient, u18-s-comparison
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7fba3002b6af7f06f608c6c0851ca52f74c76b27ea10c33bf91fca8964f3347b
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+originalSourceText=forms are usual only for qualitative adjectives and adverbs. Comparative and superlative synthetic forms are not part of the [[Linguistic paradigm|paradigm]] of original adjective but are different lexical items, since not all qualitative adjectives have them. A few adjectives have irregular forms that are declined as usual adjectives: большо́й 'big' – бо́льший 'bigger', хоро́ший 'good' – лу́чший 'better'. Most synthetically-derived comparative forms are derived by adding the suffix -е́е or -е́й to the adjective stem: кра́сный 'red' – красне́е 'redder'; these forms are difficult to distinguish from adverbs, whose comparative forms often coincide with those of their adjectival counterparts.<ref name=Belo /> Superlative synthetic forms are derived by adding the suffix -е́йш- or -а́йш- and additionally sometimes the prefix наи-, or using a special comparative form with the prefix наи-: до́брый 'kind' – добре́йший 'the kindest', большо́й 'big' – наибо́льший 'the biggest'.
+
+An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / ме́нее 'less' and са́мый 'most' / наибо́лее 'most' / наиме́нее 'least': for example, до́брый 'kind' – бо́лее до́брый 'kinder' – са́мый до́брый 'the kindest'. This way is rarely used if special comparative forms exist.
+shippedText=красне́е
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=8a4405aa1d1c8dd642668a7ab5c4c353f4b6a4cd25bef2615b9870f5fb4d08aa
+contentHash=0e1edd58ea98f7a780b78f12f2ce398796c5f20110e059b867d4312a743cf643
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u18-relative-rem`
 
 - Objectives: obj-u18-relative
@@ -1867,6 +2363,123 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u18-112`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ba8eec7e6ce303098cbe320c7bef207d2bd4acb26867808c53a32a7a29c5dfc1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen line writes
+
+### AUTHORED_ENGLISH `en-u18-113`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e64d0e28de2be9184f938886a34b543524e1d4b60ffda1ed6fc5dd3c8c2494bf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=beside
+
+### AUTHORED_ENGLISH `en-u18-114`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 63ed01b7539af2a70d574bcb64254f0a5e47bdf931ebd593d06ac52bbe6bb290
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u18-115`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 125d662cfae5137056fe73e50aa555b74bf7ce94478c25a4a035a48947f5936e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English gloss is written beside the shown form?
+
+### AUTHORED_ENGLISH `en-u18-116`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5d290f0edb99cea111d0c65e9b35d58c0423163ddc98c51b2ed1049bf53e684a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u18-117`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 145c9b92d6359c27d3d078237cd19c7e4d6c8c32f17417bdead9f51a1e0b3f36
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted comparison and relative lines
+
+### AUTHORED_ENGLISH `en-u18-118`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2807061fc256322decfac54ff9f8b86683dcc08d6cf0ea1c531dd35130c60b47
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u18-119`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fa925fe2bbab26da0f312ec335afb3c258c2450d50bd5ff65275c0e40137e667
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 18 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u18-120`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b32701f0c8ef31b39abc9f878c8fc368b3457bd1114850264ce9f1638c38a61a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
 ### AUTHORED_ENGLISH `en-u18-121`
 
 - Objectives: none
@@ -1875,10 +2488,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 776bb595de43cdcbeca58896d9ea9f41b1f0896b6ec28bcb606a9cfc08c3b79e
+- Content hash: e5976a5a9eecf00bf6ec04090fe6214987c511275bdc88a8f92ed3cc74bab92c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u18-122`
 
@@ -1888,10 +2501,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb7f54f7d8f62f90a99072177f96e9c73a5f0a24e8604faaefc46ff898964a84
+- Content hash: fefc7765ee8f3bb175282b0508c25e546d6b96f3cf35e0e849a2283d0a665674
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside a different shown form.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u18-123`
 
@@ -1901,10 +2514,10 @@ text=The frozen line writes other gloss 1 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 878dd319dffe6a123dab1501214709f9c03519bb8df7c9c54526b76dbc89eeb7
+- Content hash: 07b5a198f7a5421b097b4e94a665ff9a3b08ed503be50f02c0670da3df4d595e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside a different shown form.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u18-124`
 
@@ -1914,10 +2527,10 @@ text=The frozen line writes other gloss 2 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b03e39687fca326d4f18147b4b0f141fdcc2db10d85038bab976f2adcbc60fb
+- Content hash: 526cf6732454a5fc30aae2e8a33ff1cc8bc3b1059bce5a17d091bc60d4d5e06a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside another shown form.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u18-125`
 
@@ -1927,10 +2540,10 @@ text=The frozen line writes other gloss 1 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 015b4cc6f8b2d9327a5f27871b7a9714dfce35fe11b43b6b7ed28d2e11e92f35
+- Content hash: c00477e9acf9aacaccb38d4f808e5dc150535fa08a7e40ea3d1d7ff52c7f10f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside another shown form.
+text=Work Lesson 18 in your copy
 
 ### AUTHORED_ENGLISH `en-u18-126`
 
@@ -1940,10 +2553,10 @@ text=The frozen line writes other gloss 2 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4480382c7b658f0aa4740074a66c1bddeab6e0e2373ff681553252a3f7bdf6f
+- Content hash: f1bdca75343171d3fcff783607291429f3d394ecfe528b4687f5ab4658bb5d9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes comparative forms beside the shown form.
+text=Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u18-127`
 
@@ -1953,10 +2566,10 @@ text=The frozen line writes comparative forms beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20f57aa49ee67408242b7203797640f91a7097948a1580b0793da7bc39a665ec
+- Content hash: 4c252a2f761061a352b6849b26c5fc7dacd0e7c594b1f2f9be9fa62e73301071
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
+text=Open Lesson 18 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u18-128`
 
@@ -1966,10 +2579,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64559383b3aa2e21e4657149ad900e9201174460ba9e587d0df9fb0562d4e0b1
+- Content hash: 8def71d0202ffce133af842c4f2c364f30388a8fdbc055e2582215d73b2f524b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Record Lesson 18 book work
 
 ### AUTHORED_ENGLISH `en-u18-129`
 
@@ -1979,10 +2592,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de7d5a59aed30be4cacffff30213b77201bdfaf4c055eaf9183179959adfa060
+- Content hash: 21a0c75314cdd4ed6256663839a1fd24665fb1bd5af9b614c47bd23981d4b152
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes changed the world beside the shown form.
+text=When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u18-130`
 
@@ -1992,176 +2605,7 @@ text=The frozen line writes changed the world beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 186c7d08ec686f81e32855942bc94132111cd78d3989e9d0ec4c63a51b396c82
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted comparison and relative lines
-
-### AUTHORED_ENGLISH `en-u18-131`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10aac07edb8acbcc88778f90e1851a8ecfad75a6e37c9a165dec238d8f0e9ca6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u18-132`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6d13c35cfa4a44912a7e02e377a07f5374e713a490c67d88ad9940bf8df7f49
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 18 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u18-133`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f9883ec4659198ed7b28d5f1a284e59ec4feee65f7a8db89006e332c2622feb2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u18-134`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36fff7551e878611f522dc7675c47461abde8dd5192bac0f0a00235f66bf13df
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u18-135`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88bf5c8821c9c847e67e50fb2c42a30030617ffddb6656e7384438a1939816e4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u18-136`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0746a5908c844ed07483352212f694dde812fac66601e3f875dbbb4f76235642
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u18-137`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7979a3c5b02c8b08a7e7b50fef539718282813b37d65fd42eb1876fba9736c42
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u18-138`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d67b5a72fda3594a4a1af5902a13a501946fc3941bc527d0aaeeba9e6b58f378
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 18 in your copy
-
-### AUTHORED_ENGLISH `en-u18-139`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1321b0c8cb77d912ed5584765a5f01f5fc2897228f7a038af012be28138254e8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u18-140`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 964517346af58c3235370e8f56e12aefb328f31bd4f54ef82758b22f50c42273
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 18 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u18-141`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebd75ffe9df42b1e14e4809f06069010983232bac675fb2163ce40dc2685943d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 18 book work
-
-### AUTHORED_ENGLISH `en-u18-142`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 80876397e724d0a93f83bfcc3c68fd35e5fc7e9ee3678d23d6b0574ff2ed795d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u18-143`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 317a4a03dd9912ca7259393a0312990a2695070bd6038484d7c8f5a7e80402f2
+- Content hash: 3719a6c99e3eb30904916686fc9607e30f1e9d1ad9719974ef00403eff897313
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 18 work in your copy.
@@ -2340,11 +2784,27 @@ permitsAppUse=true
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-rem`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-0`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-1`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-10`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-10-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-11`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-11-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-12`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-12-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-13`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-13-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-14`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-14-r0`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-2`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-3`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-4`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-5`
 - `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-6`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-7`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-7-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-8`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-8-r0`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-9`
+- `obj-u18-comparison` PROVENANCE `prov-u18-comparison-x-9-r0`
 - `obj-u18-relative` PROVENANCE `prov-u18-relative-rem`
 
 ## Book-directed experiences

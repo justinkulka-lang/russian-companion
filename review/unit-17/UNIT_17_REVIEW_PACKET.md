@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: afa28605750babc409272ca6a50e382fc6939db6ff70ee9ef8af50df491a591d
+- Curriculum source commit: e9881115e6b162e8f40c02d00d32309251aa5110
+- Unit content-review SHA-256: cf2d183a3308a61bd9ed1154b39d6d272db40812cf1fd70396b7a5e01d0d2ca6
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 60b89910b0b7126a53a32ef44a72b80c80344ccd56abd1f8025315aedbe69d57
-- Review-package SHA-256: b53da3434c9c013f7d15e60a6d4f976c44d1d19e04dc463943d716e546c31e37
-- Repository source SHA-256: b1087a0ef4354b4e2ec7a1cb4f568c3368bffaa1095236bbcdf0ad432ee322a1
+- Pack content-review SHA-256: 695182d0a03bf2a559b13b4adb576d4d97092d0f51adf9f5d024008aec6ac925
+- Review-package SHA-256: d8d66919281b0a981f06ae2bac04ef5cc2a903dc3393350da234762de37cdefe
+- Repository source SHA-256: a7136a6af55ce3594c1e3350d9b726ec406d14699e7a6b93ea58ab4367c658ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2206,7 +2206,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0e1c2b6855ee5c7c3d215957d828cae83025995b60dea5efadf96f9d28e9b22
+- Content hash: c8248a46be6832de800f1d0e4ce9fb09318865f4b83abb11cc977bf56c22994f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2214,11 +2214,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=мне двадцать лет
 options=I am 20 (years old) | to_me (is) 20 years
 answer=I am 20 (years old)
-feedback=The frozen line writes I am 20 (years old) beside the shown form. I am 20 (years old).
+feedback=The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | to_me (is) 20 years
 testedFeature=AGE_STATEMENT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-0
@@ -2226,8 +2226,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-0
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside the shown form.
+distractorDifference= | to_me (is) 20 years
+whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside мне двадцать лет.
 contrastMembers=I am 20 (years old) | to_me (is) 20 years
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-0
@@ -2241,7 +2241,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6711ab84ff181bb59d6f3a74ece60fbdc0c738af53993c7e245cb96fbbf42c6
+- Content hash: a2c69b97dddd9ad34ae306c73f193a8cf826b5b66f49b2861b7804f0768fcc42
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2249,11 +2249,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=понедельник
 options=Monday | Tuesday | Wednesday
 answer=Monday
-feedback=The frozen line writes days of the week beside the shown form. Monday.
+feedback=понедельник || noun || Monday. Monday.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | вторник || noun || Tuesday | среда || noun || Wednesday
 testedFeature=WEEKDAY_MONDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-0
@@ -2261,8 +2261,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-weekdays-0-en
 distractorSourceIds= | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes days of the week beside the shown form.
+distractorDifference= | вторник || noun || Tuesday | среда || noun || Wednesday
+whyAnswerDemonstratesObjective=понедельник || noun || Monday
 contrastMembers=Monday | Tuesday | Wednesday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-weekdays-0-ru | prov-ex-u17-weekdays-0-en | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
@@ -2276,7 +2276,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ecfa8e6bfb5dde7803f772744f0f2ff1cd51b7d3af72d9f226f926b5c3cef753
+- Content hash: 8542307d831e117c9b2040f503408649e5bc227baef17455de566b00334577a9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2284,11 +2284,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Январь
 options=January | February | March
 answer=January
-feedback=The frozen line writes Months of the year beside the shown form. January.
+feedback=Январь || January. January.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | Февраль || February | Март || March
 testedFeature=MONTH_JANUARY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-0
@@ -2296,8 +2296,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-months-0-en
 distractorSourceIds= | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes Months of the year beside the shown form.
+distractorDifference= | Февраль || February | Март || March
+whyAnswerDemonstratesObjective=Январь || January
 contrastMembers=January | February | March
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-months-0-ru | prov-ex-u17-months-0-en | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
@@ -2311,7 +2311,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0148953911a92c67cb6eb9c7fbdca17ea3755bdfdc878341d14e104f74c21429
+- Content hash: 5bcbce862e8a65d61c95e09766ca4b2e681559709b71b9ee390be1cc4e9f3272
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2319,11 +2319,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is beside the shown form. What time is it?
+feedback=The frozen line writes What time is it? beside Который час? What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
 testedFeature=CLOCK_QUESTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-0
@@ -2331,8 +2331,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes What time is beside the shown form.
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2626,7 +2626,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca54ac3024b3a1191acfaba41daa7ce01fb3625f9aa3db60c323bea6823a9f4b
+- Content hash: f978daadc7f4b408df4dbf362e8b21e128c530e154ade696bbfb2ed793090721
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2634,11 +2634,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=мне двадцать лет
 options=I am 20 (years old) | age statements
 answer=I am 20 (years old)
-feedback=The frozen line writes I am 20 (years old) beside the shown form. I am 20 (years old).
+feedback=The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | age statements
 testedFeature=AGE_HEADING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-1
@@ -2646,8 +2646,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside the shown form.
+distractorDifference= | age statements
+whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside мне двадцать лет.
 contrastMembers=I am 20 (years old) | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-1
@@ -2661,7 +2661,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42ed5a972bb545f44f3b9a1f1b6485223c71d5ff8de585545f95d0aac2078962
+- Content hash: 754c02e97ba268e05dc8cdea3b92cd7f36ad93534a5bbbdecc75bdef0e0c919f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2669,11 +2669,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=двадцать лет
 options=20 years | age statements
 answer=20 years
-feedback=The frozen line writes I am 20 (years old) beside the shown form. 20 years.
+feedback=The frozen line writes 20 years beside двадцать лет. 20 years.
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | age statements
 testedFeature=AGE_YEARS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-2
@@ -2681,8 +2681,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-1-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside the shown form.
+distractorDifference= | age statements
+whyAnswerDemonstratesObjective=The frozen line writes 20 years beside двадцать лет.
 contrastMembers=20 years | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-1-ru | prov-ex-u17-age-1-en | prov-u17-age-x-1
@@ -2696,7 +2696,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4176984a56cd28aa74821c29df76bbf56986e81790f3558c34366024cc4f58e8
+- Content hash: 4c9a5411fc0136bcf2342aba79ef0c54b97cb7f253d1ecc248246b0f5ced9e45
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2704,11 +2704,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=четверг
 options=Thursday | Friday | Saturday
 answer=Thursday
-feedback=The frozen line writes days of the week beside the shown form. Thursday.
+feedback=четверг || noun || Thursday. Thursday.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | пятница || noun || Friday | суббота || noun || Saturday
 testedFeature=WEEKDAY_THURSDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-1
@@ -2716,8 +2716,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-weekdays-3-en
 distractorSourceIds= | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes days of the week beside the shown form.
+distractorDifference= | пятница || noun || Friday | суббота || noun || Saturday
+whyAnswerDemonstratesObjective=четверг || noun || Thursday
 contrastMembers=Thursday | Friday | Saturday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-weekdays-3-ru | prov-ex-u17-weekdays-3-en | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
@@ -2731,7 +2731,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0227ec0fb5aed913790f1293c389d128b7fe9384a0dda463637b561d539db4f
+- Content hash: d341ddcf5c6aef17f6014993145f93334a8dbe8e751469f641f73ada78d54e78
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2739,11 +2739,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=воскресенье
 options=Sunday | Monday | Saturday
 answer=Sunday
-feedback=The frozen line writes days of the week beside the shown form. Sunday.
+feedback=воскресенье || noun || Sunday. Sunday.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | понедельник || noun || Monday | суббота || noun || Saturday
 testedFeature=WEEKDAY_SUNDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-2
@@ -2751,8 +2751,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-weekdays-x-5
 distractorSourceIds= | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes days of the week beside the shown form.
+distractorDifference= | понедельник || noun || Monday | суббота || noun || Saturday
+whyAnswerDemonstratesObjective=воскресенье || noun || Sunday
 contrastMembers=Sunday | Monday | Saturday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-weekdays-x-2 | prov-u17-weekdays-x-5 | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
@@ -2766,7 +2766,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7a171a6507a556b8eb7aba985b2417b1692c26c79bde7db0ccdc7314aeeef09
+- Content hash: a1f4298459b9d8e8b3b8a1dc9dbc729898e2bea23698d270b28a8764db9cf391
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2774,11 +2774,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Июнь
 options=June | July | August
 answer=June
-feedback=The frozen line writes Months of the year beside the shown form. June.
+feedback=Июнь || June. June.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | Июль || July | Август || August
 testedFeature=MONTH_JUNE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-1
@@ -2786,8 +2786,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-months-x-4
 distractorSourceIds= | prov-u17-months-x-5 | prov-u17-months-x-6
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes Months of the year beside the shown form.
+distractorDifference= | Июль || July | Август || August
+whyAnswerDemonstratesObjective=Июнь || June
 contrastMembers=June | July | August
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-months-x-0 | prov-u17-months-x-4 | prov-u17-months-x-5 | prov-u17-months-x-6
@@ -2801,7 +2801,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 835fd03272c20a6442ff5f60f4cd725d847a196489be61efd352ce2fac65dd44
+- Content hash: 5536cc2d3ff2cf1caba932593113ef1067eb0cce1ec06484e1a026c4c00ba947
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2809,11 +2809,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Декабрь
 options=December | January | April
 answer=December
-feedback=The frozen line writes Months of the year beside the shown form. December.
+feedback=Декабрь || December. December.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form. | The frozen line writes other gloss 2 beside a different shown form.
+distractorRationales= | Январь || January | Апрель || April
 testedFeature=MONTH_DECEMBER
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-2
@@ -2821,8 +2821,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-months-x-7
 distractorSourceIds= | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form. | The frozen line writes other gloss 2 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes Months of the year beside the shown form.
+distractorDifference= | Январь || January | Апрель || April
+whyAnswerDemonstratesObjective=Декабрь || December
 contrastMembers=December | January | April
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-months-x-3 | prov-u17-months-x-7 | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
@@ -2836,7 +2836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aed1a7f7209c8a9d2797e2c7f8937ba09df34487f831fa878e2227c90fa9161d
+- Content hash: 4afffe96008c5314c5dc0dd4fef777bbcd009b435ce0e2d0c4acf6ecd31d42e9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2844,11 +2844,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is beside the shown form. What time is it?
+feedback=The frozen line writes What time is it? beside Который час? What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
 testedFeature=CLOCK_QUESTION_AGAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-1
@@ -2856,8 +2856,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes What time is beside the shown form.
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2871,7 +2871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 009b48c13206405797a88164461d77718534b5b1cb73c93e6152d828376c578b
+- Content hash: 2e8ae663056596d0355d6c91fa37c4d34ee8a3da3c4065a4eead17cbda985237
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2879,11 +2879,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is beside the shown form. What time is it?
+feedback=The frozen line writes What time is it? beside Который час? What time is it?
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes other gloss 1 beside a different shown form.
+distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
 testedFeature=CLOCK_QUESTION_CHECK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-2
@@ -2891,8 +2891,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes other gloss 1 beside another shown form.
-whyAnswerDemonstratesObjective=The frozen line writes What time is beside the shown form.
+distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите?
+whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час?
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -5787,6 +5787,37 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-clock-x-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 14a8c452a236c0e5c37e22007654f7209b1550c3da12d22a6d2df6b6a23e2782
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=Которую книгу вы хотите?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-hours-rem`
 
 - Objectives: obj-u17-hours
@@ -7113,6 +7144,516 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-weekdays-x-10`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6837cc5d61a3a694d2087c0b4875c20368c3f273fc44e2e35486965501f36934
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=пятница || noun || Friday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=2b3639510b3cab0f5860f0a93a84873564b5b29119c26b90a2dc2f3a3a6ac8d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-10-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 384ac0ba6e50c14d2fa605be4a048d6dd069877fd50a4db08b703e0c4a2fb4bb
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=пятница
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=09e84f8ec21362561fa7953600cf1e0a59ac8a01206b5c12551934ccafe79937
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-11`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 48a614daaf85738c79bc477b31e03994b0e329ccecb907ee9bc3148996ed7959
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=суббота || noun || Saturday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=304e531494640d4864a639c5519c3f78d1426db400fb51df3910c55277365d15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-11-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bb85719e46e59c31364ea080a7d87839163fcad80576bccecb6a9c83f9a5ce77
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=суббота
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=fba272c3bf6a0eca716efe737d388ae71c594b8b1663cf997d51dd6ea6a05222
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-12`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 16e076c1d6f763952a9c94e7279e952db9c49585446395a4d8fdef0f8c2224d8
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=воскресенье || noun || Sunday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=0e0548f151b2584a52352411c19e63992ded183598c8a0eb90c5da86617dcb01
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-12-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7912adbca716e336bf8926e6cd66a83e4913c2b2d54e35b01dbad101dea88dd9
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=воскресенье
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=b960040913df77a57f788dd2d72c06f17398b6e543b26fbe76539547362a6e76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-weekdays-x-2`
 
 - Objectives: obj-u17-weekdays
@@ -7453,6 +7994,686 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-weekdays-x-6`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0c5c23fc7e1afa6dc9b9066a1ca69585bc0e9f40d56d0005ce9d4a6074f3e20d
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=понедельник || noun || Monday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=179e7b70733d159ca30f0bef2babb8e284cb747d9c795b2eba47837084475dc7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-6-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c315c9feeaa7954ddd5a613fd718f056226c2640df31850d5073e5f4be7f8e6a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=понедельник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=21465eccacbbd63aeaffce6b51c4205dac3e0ee0729b23a433c7462724ea326f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-7`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 223e9c590162bd9152ba19fd073614d266340a7aa176bfa36f6903b9e7c5d57c
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=вторник || noun || Tuesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=16ab5de640e91562e7b63e65fae10057308cc05256df936315bf2d307eeecacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-7-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d7fd27c1d64335165beedcee7615713ee042805fe095f574b389af4e32683115
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=вторник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=e910dde3d1719ef37308bf965bae3a964429f63f779bd74d465d9a6a4144b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-8`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dba6adc336cf39092770637dced2ddf7b808227bc1df9a7eaf722b7ceb6df0dc
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=среда || noun || Wednesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=a1002df2917ed5b48cdd6fed03ba6482d127afa86d80fdd3cde842c31532fc32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-8-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3661a042997e214226c96be70aa36c525ca4a228ab12a5a7f7115cc0790ada8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=среда
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=a4733c2f8090e03fb0b0c4f0241f9e555833f9d9e8908270b126d85146b5ed81
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-9`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bcde0388980ac629710bf56fdae361b5ef712aa3d3ffe94cf4081a4d7bc7c4d
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=четверг || noun || Thursday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=2aac8a3627b3bdfa528a772b7ae76c0a374cc274deb725bc6480b776f4a79f83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-9-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8976d7f7ca9a3189a1d50d08021aea9e2f18a09ec01cd2f96527ff3ec45081d2
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=четверг
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=c5e3b3c07b8566d3a4aa4ca4096ff6a14db6bd1d69090955f06d105ffd04144f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-years-rem`
 
 - Objectives: obj-u17-years
@@ -7527,6 +8748,45 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u17-053`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6c8c7e400f164b0ecd2522c41de53c8090d04b4e3536084c6d7c32820bf417b8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u17-054`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8e0fb274f59c88a4cca2820151b7f2c7fc3f75d744f36386bf2d16e636da01ee
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the first ordinal?
+
+### AUTHORED_ENGLISH `en-u17-055`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 70b35fa92e4ec8e6c701684da6270f77fef329368778c36337eba1f6f9acc4f8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the first ordinal?
+
 ### AUTHORED_ENGLISH `en-u17-056`
 
 - Objectives: none
@@ -7535,10 +8795,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1febc5c6c719140656dc8fb28a43d8b0b6aac258d2aa196d2b4519c3319f1663
+- Content hash: 10f16fd67980a557ae0734442df0674a3b4f84acd841648126801e6c795260cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=Which admitted line is the first ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-057`
 
@@ -7548,10 +8808,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ebd3291d9a8fa44ec93948e4c15943f6e325bb35c997e34c0e0691b31675619
+- Content hash: ee3ff7cded2a13ddbfec9cf0536cc7e01b928b6395d509d131a52f1d5816d679
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the first ordinal?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u17-058`
 
@@ -7561,10 +8821,10 @@ text=Does this row fail the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b24845f93c765f5c72716bedcd4611ebb3fbddad6e76ba12cdba0a177509b66a
+- Content hash: c2e2ba25245ac4f0d565e59f9fec749f575044d69d0ca6e3d526c9f26677f5c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the first ordinal?
+text=Does this row fail the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-059`
 
@@ -7574,10 +8834,10 @@ text=Does this answer show the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 33a9a0ab7e6caaed98afc587016560f64324b7899967209d249037af87d24bb6
+- Content hash: 757f2c2a53ff771345ff2373fa18bb13e24190e3291d4d96c16aae5b82c5c017
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the first ordinal?
+text=Does this answer show the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-060`
 
@@ -7587,10 +8847,10 @@ text=Which admitted line is the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56e67ef9246a05e2191212c97d218d6368fd28ef287f34c38601d1d6d9b5d55c
+- Content hash: 3e537713add3f18b163034e9554708be0db5f030d2a34d7241c4fff1eda10d07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Which admitted line is the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-061`
 
@@ -7600,10 +8860,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f292f077ce06f7e0b489c6395a3be087c57dca98e94e148ac1ad6318eed6246f
+- Content hash: c231cde803fa74748da8b4051d11ae77849c95e6edb2b6ce8974b75c437e6216
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the second ordinal?
+text=Does this row fail the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-062`
 
@@ -7613,10 +8873,10 @@ text=Does this row fail the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f226855102a4449cd6c3fd903dba49d771ba298af2474596bda750724ec2386
+- Content hash: 00cd25b98d9a5edf54a21b2221ea1800afcaf99651a8fcae4d655355659ad0a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the second ordinal?
+text=Does this answer show the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-063`
 
@@ -7626,10 +8886,10 @@ text=Does this answer show the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 621bd740ba224d03331a6f1c0ad0fd8cd23e2804a5e35230b523c54a3402eb61
+- Content hash: dcee9d4b3c62fea68626a5c96b14d872c5b5df1f2dd14481310ed3d446cd83e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the second ordinal?
+text=Which admitted line is the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-064`
 
@@ -7639,10 +8899,10 @@ text=Which admitted line is the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ade23d5e1ee65201f7cbe87114bb1d2e8758fcf2f7ffbb177881b6851c70b3c6
+- Content hash: 7e9963c26927b128374c576225b3cbfafaa4751adb67d4402a0ab69a29ecac3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the third ordinal?
+text=Does this row fail the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-065`
 
@@ -7652,10 +8912,10 @@ text=Does this row fail the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5936b365f22d740d1b11e30697b2627f368c764520d436b7b9c147efd62c10f
+- Content hash: e3b06124f98aefc1d238c2a418ddfc9b516b4ac6fcfb7d0512dc184fb3f03f12
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the third ordinal?
+text=Does this answer show the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-066`
 
@@ -7665,10 +8925,10 @@ text=Does this answer show the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1110d48d0b08ded087da9753b1d545b47477f1102772c83a0343249ed08f78a4
+- Content hash: 8562d08b84360d077f84cb69d9a6b5e4f04081a9625881a38af6e035ba594138
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the third ordinal?
+text=Which admitted line is the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-067`
 
@@ -7678,10 +8938,10 @@ text=Which admitted line is the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: afd6e92d8b2ba9211d79d3005263d8eeb66a620164251a462846c58de49ca3a9
+- Content hash: f298c006f90fedc6e64e8c3bab4646433ae2bb90d8d36d322698c9e0a878dce3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-hour row?
+text=Does this row fail the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-068`
 
@@ -7691,10 +8951,10 @@ text=Does this row fail the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e26e609684916b5e3fb136a55c4e8aa86ab293ef65046d2c785f1d44a217855c
+- Content hash: ff9f936acd2181cbd406ce32d903f91211a6832c803e93b121c54292e9b68607
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-hour row?
+text=Does this answer show the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-069`
 
@@ -7704,10 +8964,10 @@ text=Does this answer show the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 194a033306dd864317a19d7174d5fbee38b4edd88e0581b5e0ec8831317f0d3e
+- Content hash: bb46e4446dbf38d2d5620f87aac128fda93c1e135490c3c9ed3439b2bd09a448
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-hour row?
+text=Which admitted line is the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-070`
 
@@ -7717,10 +8977,10 @@ text=Which admitted line is the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6416a3a371910e29328b96aad6d7d4fb99929c31dba3d234f7ade042764caf41
+- Content hash: d67e57824a3f3aafa56b58e28c04f042f0b2d504d981b0e259120e0b1ceca6ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-hour row?
+text=Does this row fail the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-071`
 
@@ -7730,10 +8990,10 @@ text=Does this row fail the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0000caf93f6a2456306517f1b6a9e570d6dd3898f462e88f19a7f56cdf0eba96
+- Content hash: 1dccfb6925981081ed7d24e5e3a66977400554d022422e7c07a45420f70c03fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-hour row?
+text=Does this answer show the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-072`
 
@@ -7743,10 +9003,10 @@ text=Does this answer show the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77abe79f2ec824270b24d84a8203fc5d71cc0329f9022706d8c2d6e23b5783df
+- Content hash: 195eec76257a420aeebbbe6153fd219d78c5cb82a489ae3baaf0f17d20a7c344
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-hour row?
+text=Which admitted line is the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-073`
 
@@ -7756,10 +9016,10 @@ text=Which admitted line is the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e14b7a37e8c2578864a9544ad93fca0ddc2b7657ddcc02f6cad889225195f550
+- Content hash: 1b88ae77a76aaebd4d2e27db1270969c845dceb8403ad6a572145127fe27a67b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-hour row?
+text=Does this row fail the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-074`
 
@@ -7769,10 +9029,10 @@ text=Does this row fail the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebe6002eb47cf5a8894a0d4f51abcdec9606ab8f1071290cafe510f005bf1dc6
+- Content hash: 68c6803332b893bf3561f024a2b8013a22feec03feb28aa46d7540ea8fbd895c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-hour row?
+text=Does this answer show the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-075`
 
@@ -7782,10 +9042,10 @@ text=Does this answer show the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e471694e33d699f0d0a5cf621801f8e782d29d48a463e218c7556d015a7b0e83
+- Content hash: 0f18afa03685fe5dac4975818cd6af60f9cc18efa834a885d64a0b8d5842ab13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-hour row?
+text=Which admitted line is the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-076`
 
@@ -7795,10 +9055,10 @@ text=Which admitted line is the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdc8916f31721d787e993e98867744be239ae790ee6ee4af7e8981865a36f713
+- Content hash: 9807eecbaeb421d3b52402c65d9cf5fcc4009756b59a7c3d3b8196281bdffa69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-year row?
+text=Does this row fail the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-077`
 
@@ -7808,10 +9068,10 @@ text=Does this row fail the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76c12582b40e9716fd2d2025885de220b8fa26c54c612fc4fb05b3efe6e60030
+- Content hash: c3f488716860a0a83c35b77ce8624a6da4e4f0377e3652431e88497a572456bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-year row?
+text=Does this answer show the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-078`
 
@@ -7821,10 +9081,10 @@ text=Does this answer show the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9eefd6459564445f4b7168b3800e64e657c1ac0e98e9d9a89cc56889a63ba84a
+- Content hash: 655c259de3792b1df5f4fe19a10ceb10435174b8b0389c73e528c98e4c80f8c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-year row?
+text=Which admitted line is the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-079`
 
@@ -7834,10 +9094,10 @@ text=Which admitted line is the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 925cfe49919ba46677f3847abf43e28c64621ba913f1b44a7120902d6e9e195d
+- Content hash: 6ef3db62701cfbf45d9dc4e1d2ddb3b789154fbfe459b2950faea555261c46c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-year row?
+text=Does this row fail the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-080`
 
@@ -7847,10 +9107,10 @@ text=Does this row fail the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dad5504a5ff627492384c9f4de2af14eefde414e2fb9072decfdab28198e40d8
+- Content hash: 71fdfe75679391e25492e4c64c6b6102e5b5e41772667e740336e3843913eee7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-year row?
+text=Does this answer show the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-081`
 
@@ -7860,10 +9120,10 @@ text=Does this answer show the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a482f038021339bb2e990aedb4879bfb4c1161fb4ea8580e0c4f0c8b90266812
+- Content hash: a6771284c971cd2a537e187e8db063b54d56c34f9f0d0fc7991d4aedc7aaec68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-year row?
+text=Which admitted line is the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-082`
 
@@ -7873,10 +9133,10 @@ text=Which admitted line is the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aec569762ec5b4a036657986f3cf988f89a0f5761a8d65d56e39169a11eb4458
+- Content hash: c7490f2280bebc0f02b5c0aa5201bf5cc739b0a266fa4c8468f5a8d0795d7524
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-year row?
+text=Does this row fail the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-083`
 
@@ -7886,10 +9146,10 @@ text=Does this row fail the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc2b7f0ff14321b23bf4f0d712773e3ce37e0eac6bf81700fc557d0aedfcc372
+- Content hash: 62ddc192045b9c96cc22991bc52c608c98dd014ff2ea76be82200fdac138d8f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-year row?
+text=Does this answer show the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-084`
 
@@ -7899,10 +9159,10 @@ text=Does this answer show the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a62da4c473fdef44ef2b2c4ec1be1ccdbe2ff270aa78b06daced6d7203d8225e
+- Content hash: 4780dbb4feec4f8167e289165824cdeb8047330408f508bc46bfc867bf4e1e07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-year row?
+text=Which admitted line is the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-085`
 
@@ -7912,10 +9172,10 @@ text=Which admitted line is the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fbc5cabf09932a49eef4a81063c7e987667ea266ded081e287cfa05596b80a8
+- Content hash: 78c5bbbe3fd84e06a267d357419138684be1281f1a33c077ce9064f3781f685e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-minute row?
+text=Does this row fail the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-086`
 
@@ -7925,10 +9185,10 @@ text=Does this row fail the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6533964255d483bd65c1e90d6544666b18f5ce813100a3e99661daf6f6f26d36
+- Content hash: 08aad61743c5951e94b89c561bead6b5e30f53ce67f9a298de2a9a5c080aa3cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-minute row?
+text=Does this answer show the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-087`
 
@@ -7938,10 +9198,10 @@ text=Does this answer show the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9b08983917945dd08f52287041d0431ea55b282b836966d390e00b4ca208807
+- Content hash: f3a31f81e6c3d6c5c83baa145655d300a9e62ac130ce7c9590d5e7a5eb0c6272
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-minute row?
+text=Which admitted line is the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-088`
 
@@ -7951,10 +9211,10 @@ text=Which admitted line is the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb39724dfd753fb0f0d5a9e159274e0b911f85100379207ed5bcd4d784249864
+- Content hash: f48610a903a4061aaa5b3d6c0e959502e1c4abb9ddbd01d7bf68d277601623be
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-minute row?
+text=Does this row fail the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-089`
 
@@ -7964,10 +9224,10 @@ text=Does this row fail the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60dba42f5328b0e118978aa3b840aacb0a623e9c18e94a954e70c5218231d2d0
+- Content hash: 9141e00674de1e4248ecc558db4eebb7c8360cb18e5af4064a6393e1e3531c51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-minute row?
+text=Does this answer show the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-090`
 
@@ -7977,10 +9237,10 @@ text=Does this answer show the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 811dff38dd71b19e13eb8be73d0d7850ed8ddce83c815552dbca4995390c00a6
+- Content hash: 3df8b823be07610480d947978b5a51d85894119203de3bd24f498a99a5796fb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-minute row?
+text=Which admitted line is the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-091`
 
@@ -7990,10 +9250,10 @@ text=Which admitted line is the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b77a75a157427ee3a60c555570133393deae5942b28edd087fc276130dffb1e7
+- Content hash: 119bdcce9fd6bbd1378ffe8fb0d4f1bbdb435501e8a08b4790405fb2a7191eb2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-minute row?
+text=The frozen line writes
 
 ### AUTHORED_ENGLISH `en-u17-092`
 
@@ -8003,10 +9263,10 @@ text=Does this row fail the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5eac1a5fae4c4ad42cad7e56f8543c61f04593f0701a951393ec70629fb6c2f6
+- Content hash: 6ec521cb00fbf46ccd6633aed5fbde5c4f09ddc1572dc08d2f4445fa0fea1b10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-minute row?
+text=beside
 
 ### AUTHORED_ENGLISH `en-u17-093`
 
@@ -8016,10 +9276,10 @@ text=Does this answer show the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb346686ae18a36030919e7aea1319a539a8ca4c6c6be08a3d44a3c66ef384bc
+- Content hash: 617b0b314bf70fe5ef6cf6990d9d75016c2d5121def69ef8ab5cf497b6dc0d05
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-minute row?
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u17-094`
 
@@ -8029,10 +9289,10 @@ text=Which admitted line is the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0bf26d30250d60bbfb0de79aeed32749d83e6d2f22e1cc0f34bb1a755363f8d7
+- Content hash: f1691ad497adb2cd8a37d27d1bb6faf357e467c7c406d091c441399831b7e8bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside a different shown form.
+text=Admitted number and quantity rows
 
 ### AUTHORED_ENGLISH `en-u17-095`
 
@@ -8042,10 +9302,10 @@ text=The frozen line writes other gloss 1 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c6438900a39b5e54e866e0d643fc2ed29b4f22fcad0b3d0e334bd06cb1a7c77
+- Content hash: 2bd14f73799c5d768bbeb696a5fe4cc52982866557e2c40609a516be24e20a74
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 1 beside another shown form.
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u17-096`
 
@@ -8055,10 +9315,10 @@ text=The frozen line writes other gloss 1 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9fef0e44acb60f3b8d22566a45835e68ed68f9645d20feb4d0a0e7ed61a17351
+- Content hash: 88f70d9ed98385225d00f42a2f0ed969056c8cc60a569921bd505d8676e02028
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes I am 20 (years old) beside the shown form.
+text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u17-097`
 
@@ -8068,10 +9328,10 @@ text=The frozen line writes I am 20 (years old) beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: beaef8b7552aa1698202844b99720e85a87a4acacd8bffa80f19dd7bc237d95f
+- Content hash: f3cf20459ea4568a2549a19ce7d9a2026c2f9c9fc988fd01d2e929dff76e19ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u17-098`
 
@@ -8081,10 +9341,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c05ab755222e47af5f8e8d4bb66cebec488237d641ce9c75fba76fe60ded11ce
+- Content hash: 7c7ce65c948c628818c5d38baf454805c8097e829f69fbe580daad75144fe0c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside a different shown form.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u17-099`
 
@@ -8094,10 +9354,10 @@ text=The frozen line writes other gloss 2 beside a different shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 57e7c8ebae423a6f31959364b2cf38fe32206dbd803a0caa6aac5d05b6182944
+- Content hash: d7276a0fdef60014a596f3d8f09b359f4e73336d6ef0543d9fcb189a41e2ba6f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes other gloss 2 beside another shown form.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u17-100`
 
@@ -8107,10 +9367,10 @@ text=The frozen line writes other gloss 2 beside another shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1e94f6a0b9704e10ceb36603ae74cd8ef2d018eed2d81a1f9787ac2efcd0b25
+- Content hash: 62cbecb2857dd43202cdd79eefbf3c7d76f041d9ca53dd7328e7f8556e2f3771
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes days of the week beside the shown form.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u17-101`
 
@@ -8120,10 +9380,10 @@ text=The frozen line writes days of the week beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc015ab25b6930b204c60b121991a4f9fc977bfa93167bfeb9478064f9ca3f41
+- Content hash: 85dd2a220d921e6e7428c3a939c93f92629777c8cb1fbc4fe0337780603884c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes Months of the year beside the shown form.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u17-102`
 
@@ -8133,10 +9393,10 @@ text=The frozen line writes Months of the year beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63bf4f8b5e3a80291b1747960651e617bc62f797f849217488b8c81a9689e37c
+- Content hash: 7fe9ca1c3e673db872d0c3c42ba5c149a254ff37300494c691d795eb0f32c3bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes What time is beside the shown form.
+text=Work Lesson 17 in your copy
 
 ### AUTHORED_ENGLISH `en-u17-103`
 
@@ -8146,10 +9406,10 @@ text=The frozen line writes What time is beside the shown form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 322769de37be0da3b659fa1abef0c512ed7311b24a9f6fe3e6849848aa9fd46c
+- Content hash: b3bfb84cd87436733207b2d8cbe1d1462f37221b468a1fa99ded9e7714a8302f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted number and quantity rows
+text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u17-104`
 
@@ -8159,10 +9419,10 @@ text=Admitted number and quantity rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b8c92fa93ae0ed742c00a4aaabe5355137f8ec487ccbe30b40bab36aaff11954
+- Content hash: 629ba63fe366f6b3b7329c7d57bf3396d90e63375981ea7e21ff98eaab0448b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
+text=Open Lesson 17 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u17-105`
 
@@ -8172,10 +9432,10 @@ text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month,
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d66f13b42e4bbba8b5cfa45556f9a4ba3b70241749e8f8719b6dc1cfb5e26dd3
+- Content hash: 2d7850bf9ddc010ef08da066c0faf81e8cd1a54cc122d99c31fa48e6781bc56d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
+text=Record Lesson 17 book work
 
 ### AUTHORED_ENGLISH `en-u17-106`
 
@@ -8185,10 +9445,10 @@ text=Open Lesson 17 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a57011d6a9d1e5097f6519cc92877b08493f2ca08bb99132b03678683921532
+- Content hash: ca1db8351d63c705a17f0450fecb2c217d29e2ebdfd27713599180d0b655095f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u17-107`
 
@@ -8198,10 +9458,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab4dad82b571fabdcf4ddebff6e43de65946696fcaf1d6db834201277d2faa61
+- Content hash: 7583088bff9ee52e5eda8470451b2e8f24e4ec7a475e253465a55987de93a303
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Self-attest only after the Lesson 17 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u17-108`
 
@@ -8211,10 +9471,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 52f441c4fbd76db2f8220492bbc9b5c3c09d113f22e1c07cc10364db3171665d
+- Content hash: 09ea17c0b9d73f5b83a5f55c624275d8bd551d95f728d530c3c9082e2fa00abf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Productive clock-time answers stay in the copy you own
 
 ### AUTHORED_ENGLISH `en-u17-109`
 
@@ -8224,10 +9484,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: adbdcea8aec5f59246406b9e0f6816669f35ffd05edf07e2092d6c5aed9c2d1b
+- Content hash: f67102fbfc3f63851ff4385dc054707abb17ddda25a0e7bba050d3ab79825500
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
 
 ### AUTHORED_ENGLISH `en-u17-110`
 
@@ -8237,10 +9497,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a86e7482dff6918c30bdf60e540b1aa4f6c2436fc820e63c5e32e237a863374
+- Content hash: 69afcd7f9697c7212cd7ed21f496612cbaf5e09a51150e5351c2e736b317e32a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Calendar-date syntax stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u17-111`
 
@@ -8250,124 +9510,7 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b8978e0ed2849e41cedb9bdeada8561be36e958943ead9b5c046fa572c15b46
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 17 in your copy
-
-### AUTHORED_ENGLISH `en-u17-112`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f1674190f3e236139ef885964d7ad57565028af89611bb4901b9eea016478b6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u17-113`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bea30e2be672f4412210cdcfcda7c1acff1578f87053f33a0f286cf94d45e73
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u17-114`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f6a50a57a44828b854800b3433cf24242148acd9f00618e0cf73feee4211083
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 17 book work
-
-### AUTHORED_ENGLISH `en-u17-115`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b53fd002c644d26a574729b465121708bef451706b9ad89249c8da8d5da9d37
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u17-116`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2777fdef71b139a86f3806be66f8d02753c1d9bf519f050af61293e7cdd7eb24
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 17 work in your copy.
-
-### AUTHORED_ENGLISH `en-u17-117`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3935423ffe8698b154ae0eef9443668481469ba0c1a26d98b2cdae098ea11c4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Productive clock-time answers stay in the copy you own
-
-### AUTHORED_ENGLISH `en-u17-118`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70fe2066c5d6c4af893bb890a093c512e111dc84439880cfd13b0f8785ca826e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
-
-### AUTHORED_ENGLISH `en-u17-119`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab083d732629ff13e9039cac1192ce72bb2a75fca795c1602e1d1b2d5dd1f64d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Calendar-date syntax stays in the copy you own
-
-### AUTHORED_ENGLISH `en-u17-120`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 573951fc815bf21cbf9a62ebb7c351cf3e2167863b7ab4e3a93e867cde71eb2b
+- Content hash: eaca056791ee7fcadb68d59e66b1d5c3b88e42b00c9bb09422259c4559a3df2a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.
@@ -8738,6 +9881,7 @@ permitsAppUse=true
 - `obj-u17-age` PROVENANCE `prov-u17-age-x-1`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-rem`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-x-0`
+- `obj-u17-clock` PROVENANCE `prov-u17-clock-x-1`
 - `obj-u17-hours` PROVENANCE `prov-u17-hours-rem`
 - `obj-u17-hours` PROVENANCE `prov-u17-hours-rem-r0`
 - `obj-u17-minutes` PROVENANCE `prov-u17-minutes-rem`
@@ -8756,10 +9900,24 @@ permitsAppUse=true
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-rem`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-0`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-1`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-10`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-10-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-11`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-11-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-12`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-12-r0`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-2`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-3`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-4`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-5`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-6`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-6-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-7`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-7-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-8`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-8-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-9`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-9-r0`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem-r0`
 
