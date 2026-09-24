@@ -4,6 +4,7 @@ import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2ProvenanceRecord
+import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
@@ -77,9 +78,16 @@ class Units2125SourceIntakeTest {
         "Lord of the World",
     )
 
+    private val keywordBlob = (
+        "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b declension of numerals \u043e\u0431\u0430 \u043e\u0431\u0435 " +
+            "\u043f\u043e\u043b\u0442\u043e\u0440\u0430 collective numeral \u0441\u043e\u0431\u0438\u0440\u0430\u0442\u0435\u043b\u044c\u043d " +
+            " ago during elapsed accusative genitive negation negative pronoun \u043d\u0438\u043a\u0442\u043e scope " +
+            "diminutive suffix register"
+        )
+
     private val gapObjectives = mapOf(
         21 to listOf("obj-u21-object-reference", "obj-u21-purpose"),
-        22 to listOf("obj-u22-declension", "obj-u22-both-forms", "obj-u22-half-forms", "obj-u22-collective"),
+        22 to listOf("obj-u22-ordinals", "obj-u22-declension", "obj-u22-both-forms", "obj-u22-half-forms", "obj-u22-collective"),
         23 to listOf("obj-u23-duration"),
         24 to listOf("obj-u24-alternation", "obj-u24-stand-ins", "obj-u24-placement"),
         25 to listOf("obj-u25-nickname-rule", "obj-u25-address"),
@@ -217,7 +225,7 @@ class Units2125SourceIntakeTest {
         assertTrue(excluded.contains("openrussian-50e210c4803237779cb562bc1abcea529066031c"))
         assertTrue(excluded.contains("penguin-private-pdf"))
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(102, intake.size)
+        assertEquals(109, intake.size)
         assertEquals(setOf(21, 22, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -276,6 +284,7 @@ class Units2125SourceIntakeTest {
         }
         assertTrue(reason(pack, 21).contains("Reflexive object reference"))
         assertTrue(reason(pack, 21).contains("Purpose clauses"))
+        assertTrue(reason(pack, 22).contains("ordinal list"))
         assertTrue(reason(pack, 22).contains("General numeral declension"))
         assertTrue(reason(pack, 22).contains("Both-forms"))
         assertTrue(reason(pack, 22).contains("One-and-a-half"))
@@ -305,15 +314,15 @@ class Units2125SourceIntakeTest {
     @Test
     fun partialStrandsStayShortOfTheMissingSources() {
         val pack = pack()
-        assertGap(pack, 21, "without reflexive-object and purpose sources", "4220315", "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b")
-        assertGap(pack, 22, "without declined-numeral, both, one-and-a-half, and collective sources", "4371358", "declension of numerals \u043e\u0431\u0430 \u043f\u043e\u043b\u0442\u043e\u0440\u0430 collective numeral")
-        assertGap(pack, 24, "without alternation, negative-pronoun, and scope sources", "4233876", "accusative genitive negation negative pronoun scope")
-        assertGap(pack, 24, "without alternation, negative-pronoun, and scope sources", "4195114", "accusative genitive negation negative pronoun scope")
-        assertGap(pack, 25, "without a productive diminutive rule and a register source", "4660786", "diminutive suffix register")
-        assertGap(pack, 25, "without a productive diminutive rule and a register source", "3353859", "register diminutive suffix")
-        val dictionary = sample(pack, 21, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b")
+        assertGap(pack, 21, "without admitted reflexive-object and purpose source capabilities", "4220315", keywordBlob)
+        assertGap(pack, 22, "without admitted declined-numeral, both, one-and-a-half, and collective source capabilities", "4371358", keywordBlob)
+        assertGap(pack, 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4233876", keywordBlob)
+        assertGap(pack, 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4195114", keywordBlob)
+        assertGap(pack, 25, "without admitted productive-diminutive and register source capabilities", "4660786", keywordBlob)
+        assertGap(pack, 25, "without admitted productive-diminutive and register source capabilities", "3353859", keywordBlob)
+        val dictionary = sample(pack, 21, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
         val fromRows = V2Validator.validate(claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + dictionary), 21)).errors
-        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without reflexive-object and purpose sources") })
+        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without admitted reflexive-object and purpose source capabilities") })
     }
 
     @Test
@@ -331,13 +340,102 @@ class Units2125SourceIntakeTest {
         assertFalse(File(repo(), "review/unit-23").exists())
         val numbersHour = sample(pack, 23, "4371358", "src-wikibooks-russian-cc-by-sa", "one hour one year one minute elapsed during ago")
         val stretched = V2Validator.validate(claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + numbersHour), 23)).errors
-        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without elapsed-time and duration sources") })
-        val dictionary = sample(pack, 23, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", "elapsed during ago")
+        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without an admitted elapsed-time and duration source capability") })
+        val dictionary = sample(pack, 23, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
         val fromRows = V2Validator.validate(claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + dictionary), 23)).errors
-        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without elapsed-time and duration sources") })
+        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without an admitted elapsed-time and duration source capability") })
         val bare = V2Validator.validate(claimComplete(pack, 23)).errors
-        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without elapsed-time and duration sources") })
+        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without an admitted elapsed-time and duration source capability") })
         assertTrue(bare.any { it.contains("no teach step") })
+    }
+
+    @Test
+    fun keywordTextDoesNotAdmitASourceCapability() {
+        val pack = pack()
+        listOf(21, 22, 23, 24, 25).forEach { number ->
+            val unrelated = sample(pack, number, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob)
+            val claimed = claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + unrelated), number)
+            val errors = V2Validator.validate(claimed).errors
+            assertTrue(errors.joinToString("\n"), errors.any { it.contains("source capability") || it.contains("source capabilities") })
+            assertTrue(errors.none { it.contains("keyword") })
+        }
+    }
+
+    @Test
+    fun forgedRevisionMixedSpanAndWrongObjectiveCapabilitiesFail() {
+        val pack = pack()
+        val host = pack.provenanceRecords.first { it.unitNumber == 21 && it.originalSourceText.length > 40 }
+        val other = pack.provenanceRecords.first { it.unitNumber == 25 && it.originalSourceText != host.originalSourceText }
+        val forged = capability(host, "cap-forged", host.unitNumber, "obj-u21-object-reference", "reflexive-object")
+            .copy(sourceRevision = "9999999")
+        val mixed = capability(host, "cap-mixed", host.unitNumber, "obj-u21-object-reference", "reflexive-object")
+            .copy(exactSpan = other.originalSourceText)
+        val wrongUnit = capability(host, "cap-wrong-unit", 22, "obj-u22-declension", "declined-numeral")
+        val wrongObjective = capability(host, "cap-wrong-objective", 21, "obj-u21-svoy", "reflexive-object")
+        val keywordRecord = sample(pack, 21, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob).copy(
+            objectiveId = "obj-u21-object-reference",
+        )
+        val keywordCapability = capability(
+            keywordRecord,
+            "cap-keywords",
+            21,
+            "obj-u21-object-reference",
+            "reflexive-object",
+        )
+        val withCapabilities = pack.copy(
+            provenanceRecords = pack.provenanceRecords + keywordRecord,
+            sourceCapabilities = listOf(forged, mixed, wrongUnit, wrongObjective, keywordCapability),
+        )
+        val errors = V2Validator.validate(claimComplete(withCapabilities, 21)).errors.joinToString("\n")
+        assertTrue(errors, errors.contains("cap-forged") && errors.contains("revision does not match the frozen record"))
+        assertTrue(errors, errors.contains("cap-mixed") && errors.contains("span is not in the frozen record"))
+        assertTrue(errors, errors.contains("cap-wrong-unit") && errors.contains("wrong unit or objective"))
+        assertTrue(errors, errors.contains("cap-wrong-objective") && errors.contains("wrong unit or objective"))
+        assertTrue(errors, errors.contains("cap-keywords") && errors.contains("no reviewable instruction and check chain"))
+        assertTrue(errors, errors.contains("without admitted reflexive-object and purpose source capabilities"))
+    }
+
+    @Test
+    fun checksRejectCircularFeedbackAndLineLabelRecall() {
+        val pack = pack()
+        val governed = pack.items.filter { item ->
+            val unit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
+            unit in 21..25 && item.assessment != null
+        }
+        assertTrue(governed.isNotEmpty())
+        governed.forEach { item ->
+            val assessment = item.assessment ?: error(item.id)
+            val why = assessment.whyAnswerDemonstratesObjective
+            val differences = assessment.distractorDifference.filter { it.isNotBlank() }
+            assertFalse(item.id, item.prompt.contains("line is the", ignoreCase = true))
+            assertFalse(item.id, item.prompt.contains("English label", ignoreCase = true))
+            assertFalse(item.id, why.trim().endsWith("?"))
+            assertFalse(item.id, why.startsWith("Does this", ignoreCase = true))
+            assertEquals(item.id, differences.size, differences.toSet().size)
+            differences.forEach { difference ->
+                assertFalse(item.id, difference.startsWith("Does this", ignoreCase = true))
+            }
+        }
+        val donor = governed.first { item -> item.options.count { it != item.answer } >= 2 }
+        val circular = donor.copy(
+            prompt = "Which admitted line is the film agreement line?",
+            feedback = "Does this answer show the film agreement line?",
+            distractorRationales = donor.options.map { option ->
+                if (option == donor.answer) "" else "Does this row fail the film agreement line?"
+            },
+            assessment = donor.assessment!!.copy(
+                whyAnswerDemonstratesObjective = "Does this answer show the film agreement line?",
+                distractorDifference = donor.options.map { option ->
+                    if (option == donor.answer) "" else "Does this row fail the film agreement line?"
+                },
+            ),
+        )
+        val errors = V2Validator.validate(pack.copy(items = pack.items.map { if (it.id == donor.id) circular else it })).errors
+        val text = errors.joinToString("\n")
+        assertTrue(text, text.contains("prompt discloses its classification"))
+        assertTrue(text, text.contains("tests line-label recall"))
+        assertTrue(text, text.contains("circular feedback"))
+        assertTrue(text, text.contains("repeats a generic rationale"))
     }
 
     @Test
@@ -452,6 +550,24 @@ class Units2125SourceIntakeTest {
                 )
             }
         },
+    )
+
+    private fun capability(
+        record: V2ProvenanceRecord,
+        id: String,
+        unitNumber: Int,
+        objectiveId: String,
+        claim: String,
+    ) = V2SourceCapability(
+        id = id,
+        sourceId = record.sourceId,
+        sourceRevision = record.sourceRevision,
+        sourceRecordId = record.sourceRecordId,
+        sourceHash = record.sourceHash,
+        exactSpan = record.originalSourceText,
+        unitNumber = unitNumber,
+        objectiveId = objectiveId,
+        supportedClaim = claim,
     )
 
     private fun sample(pack: V2CurriculumPack, number: Int, revision: String, sourceId: String, text: String): V2ProvenanceRecord {

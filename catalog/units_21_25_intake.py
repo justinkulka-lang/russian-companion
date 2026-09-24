@@ -389,11 +389,12 @@ def build_units_21_25() -> dict:
     frozen = FrozenSources()
     builder = Builder(frozen)
     prepared = [
-        _unit(builder, 21, "Admitted agreement lines", "Proposed Unit 21 uses frozen agreement lines for the reflexive possessive. Reflexive object reference and purpose clauses stay in the copy you own. Qualified review is pending.", 2, populate, [
+        _unit(builder, 21, "Admitted object-possession lines", "Proposed Unit 21 uses frozen lines where the reflexive possessive follows the object in possession. Reflexive object reference and purpose clauses stay in the copy you own. Qualified review is pending.", 2, populate, [
             ("object-reference", "Reflexive object reference stays in the copy you own", "Reflexive object reference stays in the copy you own. No admitted frozen span states that pattern.", "Reflexive object reference has no admitted frozen span."),
             ("purpose", "Purpose clauses stay in the copy you own", "Purpose clauses stay in the copy you own. No admitted frozen span states that pattern.", "Purpose clauses have no admitted frozen span."),
         ]),
-        _unit(builder, 22, "Admitted numeral rows", "Proposed Unit 22 uses frozen compound cardinal lines, ordinal lines, and item-form lines. Declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.", 8, populate, [
+        _unit(builder, 22, "Admitted numeral groups", "Proposed Unit 22 uses frozen item-form lines and last-digit examples. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.", 4, populate, [
+            ("ordinals", "Ordinal list position stays in the copy you own", "Ordinal list position stays in the copy you own. A numbered list does not by itself supply a checked distinction.", "The frozen ordinal list does not by itself support a checked distinction."),
             ("declension", "Declined quantity forms stay in the copy you own", "Declined quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.", "General numeral declension has no admitted frozen span."),
             ("both-forms", "Both-forms stay in the copy you own", "Both-forms stay in the copy you own. The frozen number rows do not supply that pattern.", "Both-forms have no admitted frozen span."),
             ("half-forms", "One-and-a-half forms stay in the copy you own", "One-and-a-half forms stay in the copy you own. The frozen number rows do not supply that pattern.", "One-and-a-half forms have no admitted frozen span."),

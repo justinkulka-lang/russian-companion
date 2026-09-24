@@ -30,6 +30,7 @@ internal object V2Validator {
         validateAssetRecords(pack, errors)
         validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateProvenance(pack, errors)
+        validateSourceCapabilities(pack, errors)
         validateAuthoredEnglish(pack, errors)
         validateLearnerFacingMarkup(pack, errors)
         validateReview(pack, errors)
@@ -711,31 +712,31 @@ internal object V2Validator {
             } else {
                 listOf("Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone")
             }
-            21 -> if (hasReflexiveObjectSource(records) && hasPurposeSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 21 is not content-complete without reflexive-object and purpose sources")
-            }
-            22 -> if (hasNumeralDeclensionSource(records) && hasBothSource(records) && hasHalfSource(records) && hasCollectiveSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 22 is not content-complete without declined-numeral, both, one-and-a-half, and collective sources")
-            }
-            23 -> if (hasDurationSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 23 is not content-complete without elapsed-time and duration sources")
-            }
-            24 -> if (hasNegationAlternationSource(records) && hasNegativePronounSource(records) && hasNegationScopeSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 24 is not content-complete without alternation, negative-pronoun, and scope sources")
-            }
-            25 -> if (hasProductiveDiminutiveSource(records) && hasRegisterSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 25 is not content-complete without a productive diminutive rule and a register source")
-            }
+            21 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 21 is not content-complete without admitted reflexive-object and purpose source capabilities",
+            )
+            22 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 22 is not content-complete without admitted declined-numeral, both, one-and-a-half, and collective source capabilities",
+            )
+            23 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 23 is not content-complete without an admitted elapsed-time and duration source capability",
+            )
+            24 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 24 is not content-complete without admitted alternation, negative-pronoun, and scope source capabilities",
+            )
+            25 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 25 is not content-complete without admitted productive-diminutive and register source capabilities",
+            )
             else -> emptyList()
         }
     }
@@ -796,104 +797,135 @@ internal object V2Validator {
         }
     }
 
-    private fun outsideNumbers(record: V2ProvenanceRecord): Boolean {
-        return record.sourceRevision != "4371358" && !dictionaryRow(record)
+    private data class RequiredSourceCapability(val objectiveId: String, val claim: String)
+
+    private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
+        21 to listOf(
+            RequiredSourceCapability("obj-u21-object-reference", "reflexive-object"),
+            RequiredSourceCapability("obj-u21-purpose", "purpose-clause"),
+        ),
+        22 to listOf(
+            RequiredSourceCapability("obj-u22-declension", "declined-numeral"),
+            RequiredSourceCapability("obj-u22-both-forms", "both-forms"),
+            RequiredSourceCapability("obj-u22-half-forms", "one-and-a-half"),
+            RequiredSourceCapability("obj-u22-collective", "collective-numeral"),
+        ),
+        23 to listOf(
+            RequiredSourceCapability("obj-u23-duration", "elapsed-time-duration"),
+        ),
+        24 to listOf(
+            RequiredSourceCapability("obj-u24-alternation", "negation-alternation"),
+            RequiredSourceCapability("obj-u24-stand-ins", "negative-pronoun"),
+            RequiredSourceCapability("obj-u24-placement", "negation-scope"),
+        ),
+        25 to listOf(
+            RequiredSourceCapability("obj-u25-nickname-rule", "productive-diminutive"),
+            RequiredSourceCapability("obj-u25-address", "register"),
+        ),
+    )
+
+    private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
+        val required = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty()
+        val satisfied = required.all { requirement ->
+            pack.sourceCapabilities.any { capability ->
+                capability.unitNumber == unit.number &&
+                    capability.objectiveId == requirement.objectiveId &&
+                    capability.supportedClaim == requirement.claim &&
+                    capabilityDefects(pack, capability).isEmpty()
+            }
+        }
+        return if (satisfied) emptyList() else listOf(message)
     }
 
-    private fun outsideBasicNegation(record: V2ProvenanceRecord): Boolean {
-        return record.sourceRevision != "4233876" && record.sourceRevision != "4195114" && !dictionaryRow(record)
-    }
-
-    private fun hasReflexiveObjectSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            record.sourceRevision != "4220315" &&
-                !dictionaryRow(record) &&
-                record.originalSourceText.contains("\u0441\u0435\u0431\u044f")
+    private fun validateSourceCapabilities(pack: V2CurriculumPack, errors: MutableList<String>) {
+        val seen = mutableSetOf<String>()
+        pack.sourceCapabilities.forEach { capability ->
+            if (!seen.add(capability.id)) {
+                errors += "Source capability ${capability.id} is duplicated"
+            }
+            errors += capabilityDefects(pack, capability)
         }
     }
 
-    private fun hasPurposeSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            record.sourceRevision != "4220315" &&
-                !dictionaryRow(record) &&
-                record.originalSourceText.contains("\u0447\u0442\u043e\u0431\u044b")
+    /**
+     * A completion blocker clears only when an explicit capability names the
+     * governed claim. Keyword text in an unrelated licensed record does not.
+     */
+    private fun capabilityDefects(pack: V2CurriculumPack, capability: V2SourceCapability): List<String> {
+        val errors = mutableListOf<String>()
+        val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
+            it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }
+        if (binding == null || capability.supportedClaim.isBlank() || capability.objectiveId.isBlank()) {
+            errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
+            return errors
+        }
+        if (
+            capability.sourceId.isBlank() ||
+            capability.sourceRevision.isBlank() ||
+            capability.sourceRecordId.isBlank() ||
+            capability.sourceHash.isBlank() ||
+            capability.exactSpan.isBlank()
+        ) {
+            errors += "Source capability ${capability.id} revision does not match the frozen record"
+            return errors
+        }
+        val frozen = pack.provenanceRecords.filter {
+            it.sourceId == capability.sourceId &&
+                it.sourceRevision == capability.sourceRevision &&
+                it.sourceRecordId == capability.sourceRecordId &&
+                it.sourceHash == capability.sourceHash &&
+                it.sourceHash == sha256(it.originalSourceText) &&
+                isShareAlikeLicense(it.licenseId)
+        }
+        if (frozen.isEmpty()) {
+            errors += "Source capability ${capability.id} revision does not match the frozen record"
+            return errors
+        }
+        val spanHost = frozen.firstOrNull { capability.exactSpan == it.originalSourceText }
+        if (spanHost == null) {
+            errors += "Source capability ${capability.id} span is not in the frozen record"
+            return errors
+        }
+        if (spanHost.unitNumber != capability.unitNumber || spanHost.objectiveId != capability.objectiveId) {
+            errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
+            return errors
+        }
+        if (!capabilityHasCheckChain(pack, capability, spanHost)) {
+            errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
+        }
+        return errors
     }
 
-    private fun hasNumeralDeclensionSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            outsideNumbers(record) && record.originalSourceText.lowercase().contains("declension of numerals")
+    private fun capabilityHasCheckChain(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber } ?: return false
+        val objective = unit.objectives.firstOrNull { it.id == capability.objectiveId } ?: return false
+        if (objective.kind != "RECOGNITION" ||
+            objective.instructionStepIds.isEmpty() ||
+            objective.exampleIds.size < 2 ||
+            objective.practiceStepIds.isEmpty() ||
+            objective.checkItemIds.isEmpty() ||
+            objective.remediationStepIds.isEmpty()
+        ) {
+            return false
         }
-    }
-
-    private fun hasBothSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            outsideNumbers(record) &&
-                (record.originalSourceText.contains("\u043e\u0431\u0430") || record.originalSourceText.contains("\u043e\u0431\u0435"))
-        }
-    }
-
-    private fun hasHalfSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            outsideNumbers(record) && record.originalSourceText.contains("\u043f\u043e\u043b\u0442\u043e\u0440")
-        }
-    }
-
-    private fun hasCollectiveSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            outsideNumbers(record) && (text.contains("collective numeral") || text.contains("\u0441\u043e\u0431\u0438\u0440\u0430\u0442\u0435\u043b\u044c\u043d"))
-        }
-    }
-
-    private fun hasDurationSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            outsideNumbers(record) &&
-                (text.contains(" ago") || text.contains("during") || text.contains("elapsed"))
-        }
-    }
-
-    private fun hasNegationAlternationSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            outsideBasicNegation(record) &&
-                text.contains("accusative") &&
-                text.contains("genitive") &&
-                text.contains("negat")
-        }
-    }
-
-    private fun hasNegativePronounSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            outsideBasicNegation(record) &&
-                (text.contains("negative pronoun") || record.originalSourceText.contains("\u043d\u0438\u043a\u0442\u043e"))
-        }
-    }
-
-    private fun hasNegationScopeSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            outsideBasicNegation(record) && record.originalSourceText.lowercase().contains("scope")
-        }
-    }
-
-    private fun hasProductiveDiminutiveSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            record.sourceRevision != "4660786" &&
-                !dictionaryRow(record) &&
-                text.contains("diminutive") &&
-                text.contains("suffix")
-        }
-    }
-
-    private fun hasRegisterSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            record.sourceRevision != "4660786" &&
-                record.sourceRevision != "3353859" &&
-                !dictionaryRow(record) &&
-                record.originalSourceText.lowercase().contains("register")
+        return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
+            val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }
+            }
+            val bound = participants.any {
+                it.sourceId == spanHost.sourceId &&
+                    it.sourceRevision == spanHost.sourceRevision &&
+                    it.sourceRecordId == spanHost.sourceRecordId &&
+                    it.sourceHash == spanHost.sourceHash &&
+                    it.originalSourceText == capability.exactSpan &&
+                    it.objectiveId == capability.objectiveId
+            }
+            bound && item.assessment?.independent == true && structureValid(pack, item).isEmpty()
         }
     }
 
@@ -1521,36 +1553,6 @@ internal object V2Validator {
         "ONE_MINUTE_ROW" to "one-minute row",
         "TWO_MINUTE_ROW" to "two-minute row",
         "FIVE_MINUTE_ROW" to "five-minute row",
-        "FILM_AGREEMENT_LINE" to "film agreement line",
-        "BOOK_AGREEMENT_LINE" to "book agreement line",
-        "JEANS_AGREEMENT_LINE" to "jeans agreement line",
-        "TWENTY_ONE_LINE" to "twenty-one line",
-        "HUNDRED_ONE_LINE" to "hundred-one line",
-        "TWO_HUNDRED_FIFTEEN_LINE" to "two-hundred-fifteen line",
-        "SHOT_GLASS_LINE" to "shot-glass line",
-        "FORTY_ONE_YEAR_LINE" to "forty-one-year line",
-        "SIXTY_NINE_WORD_LINE" to "sixty-nine-word line",
-        "ONE_BOY_LINE" to "one-boy line",
-        "TWO_GIRL_LINE" to "two-girl line",
-        "FIVE_GIRL_LINE" to "five-girl line",
-        "NOT_SPEAKING_LINE" to "not-speaking line",
-        "NOT_STUDENT_LINE" to "not-student line",
-        "NOT_COMING_LINE" to "not-coming line",
-        "ABSENCE_FORM" to "absence form",
-        "EXISTENCE_FORM" to "existence form",
-        "PARTICLE_FORM" to "particle form",
-        "FIRST_NAME_FORM" to "first-name form",
-        "PATRONYMIC_FORM" to "patronymic form",
-        "FAMILY_NAME_FORM" to "family-name form",
-        "ALEXANDER_DIMINUTIVE" to "Alexander diminutive",
-        "ALEXEI_DIMINUTIVE" to "Alexei diminutive",
-        "DMITRI_DIMINUTIVE" to "Dmitri diminutive",
-        "PLEASE_LINE" to "please line",
-        "THANKS_LINE" to "thanks line",
-        "APOLOGY_LINE" to "apology line",
-        "NAME_QUESTION_LINE" to "name-question line",
-        "NAME_ANSWER_LINE" to "name-answer line",
-        "FORMAL_APOLOGY_LINE" to "formal-apology line",
         "DISSUADE_MEANING" to "dissuade meaning",
         "AGREE_MEANING" to "agree meaning",
         "DISSUADE_PERFECTIVE" to "dissuade perfective",
@@ -1611,16 +1613,71 @@ internal object V2Validator {
         "PLURAL_INSTRUMENTAL" to "decl_pl_inst",
     )
 
+    private val DISCLOSED_CLASSIFICATION = Regex(
+        "(?i)\\b(?:film agreement line|book agreement line|jeans agreement line|twenty-one line|hundred-one line|" +
+            "two-hundred-fifteen line|shot-glass line|forty-one-year line|sixty-nine-word line|one-boy line|" +
+            "two-girl line|five-girl line|not-speaking line|not-student line|not-coming line|absence form|" +
+            "existence form|particle form|first-name form|patronymic form|family-name form|alexander diminutive|" +
+            "alexei diminutive|dmitri diminutive|please line|thanks line|apology line|name-question line|" +
+            "name-answer line|formal-apology line)\\b",
+    )
+    private val LINE_LABEL_PROMPT = Regex(
+        "(?i)which admitted (?:[a-z]+ ){0,4}(?:line|label) is the\\b",
+    )
+    private val CIRCULAR_RATIONALE = Regex(
+        "(?i)^does this (?:answer|row|line)\\b|^does the admitted record show the governed contrast\\??$",
+    )
+
+    private fun observableDistinctionErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        val errors = mutableListOf<String>()
+        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
+        val why = assessment.whyAnswerDemonstratesObjective
+        if (LINE_LABEL_PROMPT.containsMatchIn(item.prompt) || DISCLOSED_CLASSIFICATION.containsMatchIn(item.prompt)) {
+            errors += "Item ${item.id} prompt discloses its classification"
+            errors += "Item ${item.id} tests line-label recall"
+        }
+        val hosted = listOf(why) + item.distractorRationales + assessment.distractorDifference
+        if (hosted.any { CIRCULAR_RATIONALE.containsMatchIn(it.trim()) } || why.trim().endsWith("?")) {
+            errors += "Item ${item.id} circular feedback"
+        }
+        val rationales = item.distractorRationales.filter { it.isNotBlank() }
+        val differences = assessment.distractorDifference.filter { it.isNotBlank() }
+        if (rationales.size != rationales.toSet().size || differences.size != differences.toSet().size) {
+            errors += "Item ${item.id} repeats a generic rationale"
+        }
+        val originals = assessment.relationParticipantIds.mapNotNull { id ->
+            pack.provenanceRecords.firstOrNull { it.itemId == id }?.originalSourceText
+        }
+        if (!citesFrozenEvidence(why, originals)) {
+            errors += "Item ${item.id} answer rationale does not cite the frozen evidence"
+        }
+        return errors
+    }
+
+    private fun citesFrozenEvidence(why: String, originals: List<String>): Boolean {
+        if (why.length < 12) return false
+        return originals.any { original ->
+            original.length >= 12 && original.windowed(12).any { window ->
+                window.any { it.isLetter() } && window in why
+            }
+        }
+    }
+
     private fun explicitTargetErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
         val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
         val feature = assessment.testedFeature
-        val phrase = TARGET_PHRASES[feature]
-        if (feature.isBlank() || phrase == null || !item.prompt.contains(phrase)) {
-            errors += "Item ${item.id} has no explicit target"
-        }
-        if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
-            errors += "Item ${item.id} answer rationale is not tied to the target"
+        val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
+        if (unitNumber in 21..25) {
+            errors += observableDistinctionErrors(pack, item)
+        } else {
+            val phrase = TARGET_PHRASES[feature]
+            if (feature.isBlank() || phrase == null || !item.prompt.contains(phrase)) {
+                errors += "Item ${item.id} has no explicit target"
+            }
+            if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
+                errors += "Item ${item.id} answer rationale is not tied to the target"
+            }
         }
         if (item.options.count { it == item.answer } != 1) {
             errors += "Item ${item.id} does not have one correct option"
@@ -1889,7 +1946,8 @@ internal object V2Validator {
                     }
                 }
             }
-            if (item.objectiveId.startsWith("obj-u") && item.objectiveId.drop(5).substringBefore("-").toIntOrNull() in 6..15) {
+            val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
+            if (governedUnit in 6..15 || governedUnit in 21..25) {
                 errors += structureValid(pack, item)
             }
         }

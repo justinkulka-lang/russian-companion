@@ -72,6 +72,19 @@ internal val GOVERNANCE_PROMPT_MARKERS = listOf(
 )
 
 @Serializable
+internal data class V2SourceCapability(
+    val id: String,
+    val sourceId: String,
+    val sourceRevision: String,
+    val sourceRecordId: String,
+    val sourceHash: String,
+    val exactSpan: String,
+    val unitNumber: Int,
+    val objectiveId: String,
+    val supportedClaim: String,
+)
+
+@Serializable
 internal data class V2CurriculumPack(
     val schemaVersion: Int,
     val packId: String,
@@ -91,6 +104,7 @@ internal data class V2CurriculumPack(
     val items: List<V2CheckItem>,
     val references: List<V2ReferenceEntry>,
     val units: List<V2Unit>,
+    val sourceCapabilities: List<V2SourceCapability> = emptyList(),
     val admissions: V2Admissions,
 )
 
