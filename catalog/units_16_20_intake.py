@@ -24,6 +24,7 @@ from units_3_5_intake import (
     WIKIBOOKS_ID,
     delimited_senses,
     format_stress,
+    format_wikibooks_emphasis,
     sha256_text,
     unbound_letters,
 )
@@ -180,14 +181,19 @@ class Builder:
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
         original = self.frozen.require(page, needle)
-        if shipped not in original and shipped.replace("\u0301", "") not in original:
-            raise SystemExit(f"Shipped text {shipped!r} is not in {page}")
+        cleaned = format_wikibooks_emphasis(shipped)
+        if format_wikibooks_emphasis(cleaned) != cleaned:
+            raise SystemExit(f"{item_id} emphasis transform is not stable")
+        formatted = format_wikibooks_emphasis(original)
+        if cleaned not in original and cleaned not in formatted:
+            raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
+        transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
         self.add_provenance(
             item_id, unit, objective, record_type, WIKIBOOKS_ID,
             f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}",
-            self.frozen.oldid(page), page + ":" + needle[:80], original, shipped, "selection", self.wikibooks_attr,
+            self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, self.wikibooks_attr,
         )
-        return shipped
+        return cleaned
 
     def field(self, item_id, unit, objective, record_id, name) -> str:
         original = self.frozen.row(record_id)[name]

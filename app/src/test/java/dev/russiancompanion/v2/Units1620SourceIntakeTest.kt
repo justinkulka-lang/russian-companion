@@ -7,7 +7,10 @@ import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.unit
+import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.review.governedMappingFacts
+import dev.russiancompanion.v2.review.renderUnitReviewFiles
+import dev.russiancompanion.v2.review.reviewPacketName
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
@@ -213,6 +216,90 @@ class Units1620SourceIntakeTest {
     }
 
     @Test
+    fun learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource() {
+        val pack = pack()
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+        val ordinals = mapOf(
+            "\u043f'''\u0435'''\u0440\u0432\u044b\u0439" to "\u043f\u0435\u0301\u0440\u0432\u044b\u0439",
+            "\u0432\u0442\u043e\u0440'''\u043e'''\u0439" to "\u0432\u0442\u043e\u0440\u043e\u0301\u0439",
+            "\u0442\u0440'''\u0435'''\u0442\u0438\u0439" to "\u0442\u0440\u0435\u0301\u0442\u0438\u0439",
+            "\u0447\u0435\u0442\u0432'''\u0451'''\u0440\u0442\u044b\u0439" to "\u0447\u0435\u0442\u0432\u0451\u0440\u0442\u044b\u0439",
+        )
+        ordinals.forEach { (raw, clean) ->
+            val record = pack.provenanceRecords.first {
+                it.unitNumber == 17 && it.shippedText == clean && it.transformation == "wikibooks emphasis formatting"
+            }
+            assertTrue(record.originalSourceText.contains(raw))
+            assertFalse(record.shippedText.contains("'''"))
+            assertEquals(sha256(record.originalSourceText), record.sourceHash)
+            assertEquals("4371358", record.sourceRevision)
+            assertEquals("PENDING_QUALIFIED_REVIEW", record.reviewStatus)
+            if (raw.contains("\u0451")) assertFalse(clean.contains("\u0301"))
+        }
+        val display = pack.examples.filter { it.id.startsWith("ex-u17-ordinals-") }.map { it.display }
+        assertEquals(listOf("\u043f\u0435\u0301\u0440\u0432\u044b\u0439", "\u0432\u0442\u043e\u0440\u043e\u0301\u0439", "\u0442\u0440\u0435\u0301\u0442\u0438\u0439", "\u0432\u043e\u0441\u0435\u043c\u043d\u0430\u0434\u0446\u0430\u0442\u0443\u044e \u0434\u0435\u0432\u0443\u0448\u043a\u0443"), display)
+        learnerFields(pack, 16..20).forEach { (field, text) ->
+            assertFalse(field, mediaWiki(text))
+        }
+        val instrumental = pack.unit(16)!!.sessions.flatMap { it.steps }.first { it.body.contains("-ом") }.body
+        assertFalse(mediaWiki(instrumental))
+        assertFalse(instrumental.contains("\u0301"))
+        assertTrue(instrumental.contains("\u043e"))
+        listOf(18, 20).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("NOT_PREPARED", unit.readiness)
+            assertTrue(pack.provenanceRecords.none { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
+        }
+        listOf(16, 17, 19).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("NOT_PREPARED", unit.readiness)
+            assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
+            assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
+            val packet = renderUnitReviewFiles(pack, number).files.getValue(reviewPacketName(number))
+            val learnerLine = listOf(
+                "body=",
+                "display=",
+                "prompt=",
+                "promptLetter=",
+                "options=",
+                "answer=",
+                "feedback=",
+                "shippedText=",
+                "contrastMembers=",
+                "whyAnswerDemonstratesObjective=",
+            )
+            packet.lines().forEach { line ->
+                if (mediaWiki(line) && learnerLine.any { it in line } && "originalSourceText=" !in line && "sourceRecordId=" !in line) {
+                    assertFalse(line, true)
+                }
+            }
+        }
+        val markers = listOf("'''", "''", "[[", "]]", "{{", "}}", "<ref", "</ref>", "{|", "|}")
+        markers.forEach { marker ->
+            assertTrue(marker, V2Validator.validate(inject(pack, "step", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "remediation", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "example", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "note", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "prompt", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "promptLetter", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "option", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "answer", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "feedback", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "assessment", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+            assertTrue(marker, V2Validator.validate(inject(pack, "title", marker)).errors.any { it.contains("MediaWiki markup in learner-facing") })
+        }
+        val preservedOriginal = pack.provenanceRecords.first { it.unitNumber == 17 && it.shippedText == "\u043f\u0435\u0301\u0440\u0432\u044b\u0439" }
+        val dirtyOriginal = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if (record.itemId == preservedOriginal.itemId) record else record
+            },
+        )
+        assertTrue(V2Validator.validate(dirtyOriginal).errors.none { it.contains(preservedOriginal.itemId) && it.contains("MediaWiki markup") })
+    }
+
+    @Test
     fun noPenguinContentOrPrivatePdfEnteredGit() {
         val root = repo()
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
@@ -293,6 +380,78 @@ class Units1620SourceIntakeTest {
 
     private fun frozenFile(root: File, relative: String): File {
         return File(File(root, "catalog/sources/units-16-20"), relative).canonicalFile
+    }
+
+    private fun mediaWiki(text: String): Boolean {
+        return listOf("'''", "''", "[[", "]]", "{{", "}}", "<ref", "</ref>", "{|", "|}").any { it in text }
+    }
+
+    private fun learnerFields(pack: V2CurriculumPack, units: IntRange): List<Pair<String, String>> {
+        val fields = mutableListOf<Pair<String, String>>()
+        pack.units.filter { it.number in units }.forEach { unit ->
+            unit.sessions.forEach { session ->
+                fields += session.id to session.title
+                session.steps.forEach { step ->
+                    fields += step.id to step.title
+                    fields += step.id to step.body
+                }
+            }
+        }
+        val exampleIds = pack.units.filter { it.number in units }.flatMap { unit -> unit.objectives.flatMap { it.exampleIds } }.toSet()
+        pack.examples.filter { it.id in exampleIds }.forEach { example ->
+            fields += example.id to example.display
+            fields += example.id to example.note
+        }
+        val itemIds = pack.units.filter { it.number in units }.flatMap { unit ->
+            unit.sessions.flatMap { session -> session.steps.flatMap { it.itemIds } }
+        }.toSet()
+        pack.items.filter { it.id in itemIds }.forEach { item ->
+            fields += item.id to item.prompt
+            item.promptLetter?.let { fields += item.id to it }
+            fields += item.id to item.answer
+            fields += item.id to item.feedback
+            item.options.forEach { fields += item.id to it }
+            item.assessment?.let { assessment ->
+                fields += item.id to assessment.whyAnswerDemonstratesObjective
+                assessment.distractorDifference.forEach { fields += item.id to it }
+                assessment.contrastMembers.forEach { fields += item.id to it }
+            }
+        }
+        pack.provenanceRecords.filter { it.unitNumber in units }.forEach { record ->
+            fields += record.itemId to record.shippedText
+        }
+        return fields
+    }
+
+    private fun inject(pack: V2CurriculumPack, field: String, marker: String): V2CurriculumPack {
+        val unit = pack.unit(17)!!
+        return when (field) {
+            "title" -> pack.copy(units = pack.units.map { if (it.number == 17) it.copy(sessions = it.sessions.map { session -> session.copy(steps = session.steps.map { step -> if (step.kind == "TEACH") step.copy(title = step.title + marker) else step }) }) else it })
+            "step", "remediation" -> pack.copy(units = pack.units.map { current ->
+                if (current.number != 17) current else current.copy(sessions = current.sessions.map { session ->
+                    session.copy(steps = session.steps.map { step ->
+                        val selected = if (field == "remediation") step.kind == "REMEDIATE" else step.kind == "TEACH"
+                        if (selected) step.copy(body = step.body + marker) else step
+                    })
+                })
+            })
+            "example" -> pack.copy(examples = pack.examples.map { if (it.id == "ex-u17-ordinals-0") it.copy(display = it.display + marker) else it })
+            "note" -> pack.copy(examples = pack.examples.map { if (it.id == "ex-u17-ordinals-0") it.copy(note = it.note + marker) else it })
+            "prompt" -> pack.copy(items = pack.items.map { if (it.id.startsWith("u17-i-ordinals")) it.copy(prompt = it.prompt + marker) else it })
+            "promptLetter" -> pack.copy(items = pack.items.map { if (it.id.startsWith("u17-i-ordinals")) it.copy(promptLetter = (it.promptLetter ?: "") + marker) else it })
+            "option" -> pack.copy(items = pack.items.map { if (it.id.startsWith("u17-i-ordinals")) it.copy(options = it.options + marker) else it })
+            "answer" -> pack.copy(items = pack.items.map { if (it.id.startsWith("u17-i-ordinals")) it.copy(answer = it.answer + marker) else it })
+            "feedback" -> pack.copy(items = pack.items.map { if (it.id.startsWith("u17-i-ordinals")) it.copy(feedback = it.feedback + marker) else it })
+            "assessment" -> pack.copy(items = pack.items.map { item ->
+                val assessment = item.assessment
+                if (!item.id.startsWith("u17-i-ordinals") || assessment == null) item else item.copy(
+                    assessment = assessment.copy(whyAnswerDemonstratesObjective = assessment.whyAnswerDemonstratesObjective + marker),
+                )
+            })
+            else -> error(field)
+        }.let { edited ->
+            if (field == "title") edited else edited
+        }.also { _ -> unit.number }
     }
 
     private fun normalized(text: String) = text.replace("\u0301", "").replace("'", "")

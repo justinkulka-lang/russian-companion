@@ -7,6 +7,7 @@ or compose new Russian.
 from pathlib import Path
 
 from units_11_15_lessons import _field, _shared_response_kind, _target, _wiki
+from units_3_5_intake import format_wikibooks_emphasis
 
 ROOT = Path(__file__).resolve().parents[1]
 _PAGE_FILE = {
@@ -165,19 +166,23 @@ def _unit_17(lesson) -> None:
     years = _span("numbers", "* один год", "* пять лет")
     minutes = _span("numbers", "* одна минута", "* шесть минут")
     year_gloss = _span("numbers", "сорок один год (forty-one years)", "forty-one years")
-    first = "п'''е'''рвый"
-    second = "втор'''о'''й"
-    third = "тр'''е'''тий"
-    fourth = "четв'''ё'''ртый"
+    raw_first = "п'''е'''рвый"
+    raw_second = "втор'''о'''й"
+    raw_third = "тр'''е'''тий"
+    raw_fourth = "четв'''ё'''ртый"
+    first = format_wikibooks_emphasis(raw_first)
+    second = format_wikibooks_emphasis(raw_second)
+    third = format_wikibooks_emphasis(raw_third)
+    fourth = format_wikibooks_emphasis(raw_fourth)
     lesson.objective(
         "ordinals",
         "Choose the admitted ordinal line",
         "FORM_SELECTION",
         ("numbers", ordinals, "Ordinal numbers"),
         [
-            _wiki("numbers", ordinals, first, "Ordinal numbers"),
-            _wiki("numbers", ordinals, second, "Ordinal numbers"),
-            _wiki("numbers", ordinals, third, "Ordinal numbers"),
+            _wiki("numbers", ordinals, raw_first, "Ordinal numbers"),
+            _wiki("numbers", ordinals, raw_second, "Ordinal numbers"),
+            _wiki("numbers", ordinals, raw_third, "Ordinal numbers"),
             _wiki("numbers", ordinals, "восемнадцатую девушку", "She just photographed the eighteenth girl"),
         ],
         [
@@ -186,7 +191,7 @@ def _unit_17(lesson) -> None:
             _target("Which admitted line is the third ordinal?", first, third, [second, fourth], feature="THIRD_ORDINAL", phrase="third ordinal"),
         ],
         extra=[
-            ("numbers", ordinals, fourth, "example"),
+            ("numbers", ordinals, raw_fourth, "example"),
         ],
     )
     lesson.objective(

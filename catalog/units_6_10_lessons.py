@@ -12,7 +12,7 @@ import hashlib
 import re
 from pathlib import Path
 
-from units_3_5_intake import CYRILLIC, OPENRUSSIAN_ID, WIKIBOOKS_ID
+from units_3_5_intake import CYRILLIC, OPENRUSSIAN_ID, WIKIBOOKS_ID, format_wikibooks_emphasis
 
 W = WIKIBOOKS_ID
 O = OPENRUSSIAN_ID
@@ -138,7 +138,10 @@ def _displayed_in_frozen(record: dict) -> bool:
     if shipped and (shipped in original or _fold(shipped) in _fold(original)):
         return True
     folded = _fold(shipped)
-    return bool(folded) and folded == _fold(original.replace("'", ""))
+    if folded and folded == _fold(original.replace("'", "")):
+        return True
+    formatted = _fold(format_wikibooks_emphasis(original))
+    return bool(folded) and folded in formatted
 
 
 def _openrussian_lemma(record: dict):

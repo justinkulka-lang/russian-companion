@@ -158,6 +158,36 @@ def delimited_senses(original: str) -> list[str]:
     return [part.strip() for part in re.split(r"[,;]", original) if part.strip()]
 
 
+_WIKI_VOWEL = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+_WIKI_STRESS = re.compile("'''([" + _WIKI_VOWEL + "])'''")
+
+
+def _wiki_word_char(char: str) -> bool:
+    return bool(char) and "\u0400" <= char <= "\u04FF" and char.isalpha()
+
+
+def format_wikibooks_emphasis(text: str) -> str:
+    """Turn admitted Wikibooks emphasis into learner-facing text.
+
+    A bold single vowel inside a word is that source's stress mark. Any other
+    bold or italic emphasis is removed. Stress is not invented for an unmarked vowel.
+    """
+
+    def mark(match: re.Match) -> str:
+        vowel = match.group(1)
+        start, end = match.span()
+        before = text[start - 1] if start else ""
+        after = text[end] if end < len(text) else ""
+        if vowel in "ёЁ":
+            return vowel
+        if _wiki_word_char(before) or _wiki_word_char(after):
+            return vowel + "\u0301"
+        return vowel
+
+    cleaned = _WIKI_STRESS.sub(mark, text)
+    return cleaned.replace("'''", "").replace("''", "")
+
+
 def format_stress(accented: str) -> str:
     if "'" not in accented:
         return accented

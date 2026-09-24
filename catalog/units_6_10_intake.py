@@ -452,14 +452,15 @@ class Lesson:
         self.number = number
         self.specs: list[dict] = []
 
-    def _regions(self, item_id: str, objective: str, page: str, needle: str, text: str, record_type: str) -> None:
-        self.builder.wiki(item_id, self.number, objective, page, needle, text, record_type=record_type)
-        for piece_index, match in enumerate(REGION.finditer(text)):
+    def _regions(self, item_id: str, objective: str, page: str, needle: str, text: str, record_type: str) -> str:
+        shipped = self.builder.wiki(item_id, self.number, objective, page, needle, text, record_type=record_type)
+        for piece_index, match in enumerate(REGION.finditer(shipped)):
             piece = match.group(0).strip().rstrip("?!.,")
-            if piece and piece != text.strip().rstrip("?!.,"):
+            if piece and piece != shipped.strip().rstrip("?!.,"):
                 self.builder.wiki(
                     f"{item_id}-r{piece_index}", self.number, objective, page, needle, piece, record_type="example",
                 )
+        return shipped
 
     def objective(
         self,
@@ -484,8 +485,8 @@ class Lesson:
                 if not CYRILLIC.search(ru):
                     raise SystemExit(f"{objective} example is English instructional prose: {ru!r}")
                 example_id = f"ex-u{unit}-{slug}-{index}"
-                self._regions(f"prov-{example_id}-ru", objective, page, needle, ru, "example")
-                builder.wiki(f"prov-{example_id}-en", unit, objective, page, needle, en, record_type="meaning")
+                ru = self._regions(f"prov-{example_id}-ru", objective, page, needle, ru, "example")
+                en = builder.wiki(f"prov-{example_id}-en", unit, objective, page, needle, en, record_type="meaning")
                 builder.example(example_id, ru, en, objective)
             elif row[0] == "field":
                 _, record_id, field_name = row
@@ -502,7 +503,7 @@ class Lesson:
         if len(example_ids) < 2:
             raise SystemExit(f"{objective} has fewer than two examples")
         page, needle, remediation_text = remediation
-        self._regions(f"prov-u{unit}-{slug}-rem", objective, page, needle, remediation_text, "instruction")
+        remediation_text = self._regions(f"prov-u{unit}-{slug}-rem", objective, page, needle, remediation_text, "instruction")
         for index, (extra_page, extra_needle, extra_text, record_type) in enumerate(extra or []):
             self._regions(
                 f"prov-u{unit}-{slug}-x-{index}", objective, extra_page, extra_needle, extra_text, record_type,

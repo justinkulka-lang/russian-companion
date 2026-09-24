@@ -31,6 +31,7 @@ internal object V2Validator {
         validateMappingInputStaysOutOfCurriculum(pack, errors)
         validateProvenance(pack, errors)
         validateAuthoredEnglish(pack, errors)
+        validateLearnerFacingMarkup(pack, errors)
         validateReview(pack, errors)
         validateUnitReviews(pack, errors)
         validateSourcesAndRights(pack, errors)
@@ -1026,7 +1027,91 @@ internal object V2Validator {
         val shipped = record.shippedText
         if (shipped.isNotEmpty() && (shipped in original || foldGoverned(shipped) in foldGoverned(original))) return true
         val folded = foldGoverned(shipped)
-        return folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))
+        if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
+        val formatted = foldGoverned(formatWikibooksEmphasis(original))
+        return folded.isNotEmpty() && folded in formatted
+    }
+
+    private val wikiStressMark = Regex(
+        "'''([\u0430\u0435\u0451\u0438\u043e\u0443\u044b\u044d\u044e\u044f\u0410\u0415\u0401\u0418\u041e\u0423\u042b\u042d\u042e\u042f])'''",
+    )
+
+    /** Admitted Wikibooks bold around one intra-word vowel is a stress mark. Yo keeps its own letter. */
+    private fun formatWikibooksEmphasis(text: String): String {
+        val marked = wikiStressMark.replace(text) { match ->
+            val vowel = match.groupValues[1]
+            val start = match.range.first
+            val end = match.range.last + 1
+            val before = if (start > 0) text[start - 1] else ' '
+            val after = if (end < text.length) text[end] else ' '
+            if (vowel == "\u0451" || vowel == "\u0401") {
+                vowel
+            } else if (isWikiWordChar(before) || isWikiWordChar(after)) {
+                vowel + "\u0301"
+            } else {
+                vowel
+            }
+        }
+        return marked.replace("'''", "").replace("''", "")
+    }
+
+    private fun isWikiWordChar(char: Char): Boolean = char.code in 0x0400..0x04FF && char.isLetter()
+
+    private val mediaWikiLearnerArtifact = Regex(
+        """'''|''|\[\[|\]\]|\{\{|\}\}|<ref|</ref>|\{[|]|\|[}]""",
+    )
+
+    private fun validateLearnerFacingMarkup(pack: V2CurriculumPack, errors: MutableList<String>) {
+        fun reject(field: String, text: String?) {
+            if (!text.isNullOrEmpty() && mediaWikiLearnerArtifact.containsMatchIn(text)) {
+                errors += "MediaWiki markup in learner-facing $field"
+            }
+        }
+        pack.units.filter { it.number in 16..20 }.forEach { unit ->
+            reject("unit ${unit.number} title", unit.title)
+            reject("unit ${unit.number} topic", unit.topicSummary)
+            unit.sessions.forEach { session ->
+                reject("session ${session.id} title", session.title)
+                session.steps.forEach { step ->
+                    reject("step ${step.id} title", step.title)
+                    reject("step ${step.id} body", step.body)
+                    reject("step ${step.id} book direction", step.bookDirection)
+                    reject("step ${step.id} companion direction", step.companionDirection)
+                    reject("step ${step.id} unavailable reason", step.unavailableReason)
+                }
+            }
+            unit.objectives.forEach { objective ->
+                reject("objective ${objective.id} title", objective.title)
+            }
+        }
+        val governedUnits = pack.units.filter { it.number in 16..20 }
+        val exampleIds = governedUnits.flatMap { unit -> unit.objectives.flatMap { it.exampleIds } }.toSet()
+        val itemIds = governedUnits.flatMap { unit ->
+            unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { session -> session.steps.flatMap { it.itemIds } }
+        }.toSet()
+        pack.examples.filter { it.id in exampleIds }.forEach { example ->
+            reject("example ${example.id} display", example.display)
+            reject("example ${example.id} note", example.note)
+        }
+        pack.items.filter { it.id in itemIds }.forEach { item ->
+            reject("item ${item.id} prompt", item.prompt)
+            reject("item ${item.id} promptLetter", item.promptLetter)
+            reject("item ${item.id} answer", item.answer)
+            reject("item ${item.id} feedback", item.feedback)
+            item.options.forEach { reject("item ${item.id} option", it) }
+            item.distractorRationales.forEach { reject("item ${item.id} rationale", it) }
+            item.assessment?.let { assessment ->
+                reject("item ${item.id} why", assessment.whyAnswerDemonstratesObjective)
+                assessment.distractorDifference.forEach { reject("item ${item.id} assessment difference", it) }
+                assessment.contrastMembers.forEach { reject("item ${item.id} contrast", it) }
+            }
+        }
+        pack.provenanceRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+            reject("provenance ${record.itemId} shippedText", record.shippedText)
+        }
+        pack.authoredEnglishRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+            reject("authored ${record.id}", record.text)
+        }
     }
 
     /**
