@@ -2687,4 +2687,69 @@ internal object V2Validator {
             "cc by-nd",
         ).any { token -> value.contains(token) }
     }
+
+    /**
+     * The same content-complete checks `validateReadiness` runs once a unit
+     * leaves `NOT_PREPARED`: substantive chain, unavailable experiences,
+     * recognition example depth, objective-chain gaps, and source-capability gaps.
+     * Authority-variance errors stay out of this list.
+     */
+    internal fun contentCompletenessErrors(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val errors = mutableListOf<String>()
+        validateSubstantiveContent(pack, unit, errors)
+        if (unit.sessions.any { session ->
+                session.steps.any { it.kind == "UNAVAILABLE" || !it.unavailableReason.isNullOrBlank() }
+            }
+        ) {
+            errors += "Unit ${unit.number} is not content-complete while a required experience is unavailable"
+        }
+        if (unit.objectives.filter { it.kind == "RECOGNITION" }.any { it.exampleIds.size < 2 }) {
+            errors += "Unit ${unit.number} content-complete claim has a recognition objective with fewer than two examples"
+        }
+        unit.objectives.forEach { objective ->
+            validateObjectiveChain(pack, unit, objective, errors, requireCompleteRecognition = true)
+        }
+        errors += completionGapErrors(pack, unit)
+        return errors.distinct()
+    }
+
+    internal data class SourceCapabilityRequirement(
+        val objectiveId: String,
+        val claim: String,
+    )
+
+    internal fun requiredSourceCapabilityBindings(unitNumber: Int): List<SourceCapabilityRequirement> {
+        return REQUIRED_SOURCE_CAPABILITIES[unitNumber].orEmpty().map {
+            SourceCapabilityRequirement(it.objectiveId, it.claim)
+        }
+    }
+
+    /** A claim is resolved only when a defect-free capability names that claim. Keyword text is not evidence. */
+    internal fun unresolvedRequiredSourceCapabilities(
+        pack: V2CurriculumPack,
+        unitNumber: Int,
+    ): List<SourceCapabilityRequirement> {
+        return REQUIRED_SOURCE_CAPABILITIES[unitNumber].orEmpty().filter { requirement ->
+            pack.sourceCapabilities.none { capability ->
+                capability.unitNumber == unitNumber &&
+                    capability.objectiveId == requirement.objectiveId &&
+                    capability.supportedClaim == requirement.claim &&
+                    capabilityDefects(pack, capability).isEmpty()
+            }
+        }.map { SourceCapabilityRequirement(it.objectiveId, it.claim) }
+    }
+
+    internal fun authorityVarianceApplies(unitNumber: Int): Boolean = unitNumber in UNRESOLVED_VARIANCE_UNITS
+
+    /** This pack installs only Units 1–2, and those installed units must resolve pronunciation audio. */
+    internal fun installationRequiresPronunciationAudio(unitNumber: Int): Boolean = unitNumber in 1..2
+
+    /** Installed Unit 2 is the only unit `validateInstalled` requires a handwriting asset for. */
+    internal fun installationRequiresHandwritingAsset(unitNumber: Int): Boolean = unitNumber == 2
+
+    internal fun mappedPronunciationAudioResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean =
+        pronunciationAudioResolves(pack, unit)
+
+    internal fun verifiedHandwritingAssetResolves(pack: V2CurriculumPack, unit: V2Unit): Boolean =
+        handwritingAssetResolves(pack, unit)
 }
