@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
-- Unit content-review SHA-256: 8c99d3279aeb5bc1a12c99f5ab8f74517469783e0a27f2bc63f02bde4835cbdd
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: 1b483e3b93f57c2f7b70be9e544698f6946cb9b2152f11cd02447355ad307efb
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
-- Review-package SHA-256: f281aa619b9abe1da1734fb8e271ffcc992d5fbfa5d4dcd78c0f680f1ea660e4
-- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: 39a64406aee10da4e60f0ba76be54a508327af060bd8b7b34351646a1fe5e2fc
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2277,7 +2277,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43eeecccb1c94ddb7e948ad728b9568d090c3826e4996288636d38ce7f720e33
+- Content hash: ddb13ea2d4fdc53225f2caaa66fb651f354f78b8ad51afd1a4c6f2790fe2c5c2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2285,11 +2285,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=стать
 options=became | remain | turn out to be
 answer=became
-feedback=The frozen line writes became beside стать. associates of connective verbs. became.
+feedback=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes remain beside остаться. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
+distractorRationales= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
 testedFeature=COMPLEMENT_BECAME
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-0
@@ -2297,8 +2297,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u16-complements-0-en
 distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes remain beside остаться. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
-whyAnswerDemonstratesObjective=The frozen line writes became beside стать. associates of connective verbs.
+distractorDifference= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
 contrastMembers=became | remain | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
@@ -2662,7 +2662,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2e423f44654dc4b4c852324894e11c46a21b45524efcb959b0a9b140fcfd8d69
+- Content hash: 51b9828900715cb5dd8a3ecb66731b79a4eb1144f010f9f63829fd348db959d9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2670,11 +2670,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=остаться
 options=remain | became | turn out to be
 answer=remain
-feedback=The frozen line writes remain beside остаться. associates of connective verbs. remain.
+feedback=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
+distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
 testedFeature=COMPLEMENT_REMAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-1
@@ -2682,8 +2682,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-1-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes turn out to be beside оказаться. associates of connective verbs.
-whyAnswerDemonstratesObjective=The frozen line writes remain beside остаться. associates of connective verbs.
+distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
 contrastMembers=remain | became | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-1-ru | prov-ex-u16-complements-1-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
@@ -2697,7 +2697,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0143a66ad9e1cd99ec3834d9905e2d5b5618648529af7c01d27d560ab6a2c12
+- Content hash: 9fd02a2b53f3e58dc8d920b3f91f26082610b5320e5441d2e37d76e0b0df9ec4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2705,11 +2705,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=оказаться
 options=turn out to be | became | remain
 answer=turn out to be
-feedback=The frozen line writes turn out to be beside оказаться. associates of connective verbs. turn out to be.
+feedback=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes remain beside остаться. associates of connective verbs.
+distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
 testedFeature=COMPLEMENT_TURN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-2
@@ -2717,8 +2717,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-3-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
-distractorDifference= | The frozen line writes became beside стать. associates of connective verbs. | The frozen line writes remain beside остаться. associates of connective verbs.
-whyAnswerDemonstratesObjective=The frozen line writes turn out to be beside оказаться. associates of connective verbs.
+distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
 contrastMembers=turn out to be | became | remain
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-3-ru | prov-ex-u16-complements-3-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
@@ -5243,6 +5243,35 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u16-complements-x-0`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f2120c71aab7cb0c67575b9fce3fff4a534ce5fd821e2d34f1b216f55606797a
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=associates of connective verbs
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=968c7fe7aade96c60fd17cd7fc8bc99d80a4e6d95f01391a475431b5fb3ad753
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u16-inst-adj-rem`
 
 - Objectives: obj-u16-inst-adj
@@ -6119,10 +6148,10 @@ text=Which admitted English label is the before label?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce4890d71c002533c706a9629b6f414194b8b166dafd508d68d4ae909fe0cdbb
+- Content hash: db72f6ef7286a71dcfb6a47e0658b0583573850b8e7df8e4cc7baf9e4e71fc60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u16-037`
 
@@ -6132,10 +6161,10 @@ text=The frozen line writes
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5721d3706dc8a47232739c9e4b2d5e5b2864eec26f5b380e58ee7a395999c16b
+- Content hash: d2c281b425bffd18c1a315524ba203a837be5fc9b78b87958ecbdbc2f7ac86d7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=beside
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u16-038`
 
@@ -6755,6 +6784,7 @@ permitsAppUse=true
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-u16-inst-sg-9-en`
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-u16-inst-sg-9-ru`
 - `obj-u16-complements` PROVENANCE `prov-u16-complements-rem`
+- `obj-u16-complements` PROVENANCE `prov-u16-complements-x-0`
 - `obj-u16-inst-adj` PROVENANCE `prov-u16-inst-adj-rem`
 - `obj-u16-inst-adj` PROVENANCE `prov-u16-inst-adj-rem-r0`
 - `obj-u16-inst-means` PROVENANCE `prov-u16-inst-means-rem`

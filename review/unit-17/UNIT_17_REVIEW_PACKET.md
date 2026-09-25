@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
-- Unit content-review SHA-256: 0031dae602b66bf57605eb61deb84ebe1bf722751c2f0a9eb64294c1662a1a55
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: 4dcda07bb955c29c892a1c710cead78842493706a6ef980bce5203661382dad3
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
-- Review-package SHA-256: 0a758ad5c08c0d1d4079834826e7384bfdc5c0c952c1d2d0fa0be822b5d2cd26
-- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: db2ba7ae6fc9f32d7774e65f37c71ad6e5e645c7040c5a9e0117a5bb708edf6e
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2206,7 +2206,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8248a46be6832de800f1d0e4ce9fb09318865f4b83abb11cc977bf56c22994f
+- Content hash: 27c57550c5b28a8f5276a0d0ebfcd46d5b49237cf6171f338303704c400e79a5
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2214,11 +2214,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=мне двадцать лет
 options=I am 20 (years old) | to_me (is) 20 years
 answer=I am 20 (years old)
-feedback=The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).
+feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | to_me (is) 20 years
+distractorRationales= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
 testedFeature=AGE_STATEMENT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-0
@@ -2226,8 +2226,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-0
-distractorDifference= | to_me (is) 20 years
-whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside мне двадцать лет.
+distractorDifference= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 contrastMembers=I am 20 (years old) | to_me (is) 20 years
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-0
@@ -2241,7 +2241,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2c69b97dddd9ad34ae306c73f193a8cf826b5b66f49b2861b7804f0768fcc42
+- Content hash: 01c42aaf1999bde913d649db172917006a0f71beceb96f32d8e71a288cad1172
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2249,7 +2249,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=понедельник
 options=Monday | Tuesday | Wednesday
 answer=Monday
-feedback=понедельник || noun || Monday. Monday.
+feedback=понедельник || noun || Monday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2276,7 +2276,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8542307d831e117c9b2040f503408649e5bc227baef17455de566b00334577a9
+- Content hash: 64165e5d4b3947f08ceab9f1ee1d7fadfef22f8325baab6778f972091932a19d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2284,7 +2284,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Январь
 options=January | February | March
 answer=January
-feedback=Январь || January. January.
+feedback=Январь || January
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2311,7 +2311,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82f9f632d51abb6111b54941aa4ea0a0bd5b9ce7b1bb59a63217bf55b3cbfb5a
+- Content hash: 1f64d34faa0d327178ed5ed2b2ab2ede008fc95d5d2fb1c527cf0423ba89be3e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2319,11 +2319,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-0
@@ -2331,8 +2331,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2626,7 +2626,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f978daadc7f4b408df4dbf362e8b21e128c530e154ade696bbfb2ed793090721
+- Content hash: 9e7bb00c9e1a608bab2c9729f1887701cacb4469ca2924f86a32d0a93ec29b0d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2634,11 +2634,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=мне двадцать лет
 options=I am 20 (years old) | age statements
 answer=I am 20 (years old)
-feedback=The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).
+feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | age statements
+distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
 testedFeature=AGE_HEADING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-1
@@ -2646,8 +2646,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | age statements
-whyAnswerDemonstratesObjective=The frozen line writes I am 20 (years old) beside мне двадцать лет.
+distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
 contrastMembers=I am 20 (years old) | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-1
@@ -2661,7 +2661,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 754c02e97ba268e05dc8cdea3b92cd7f36ad93534a5bbbdecc75bdef0e0c919f
+- Content hash: 1d9c2c8d1d5fee59454698896c035d8c181e721b26472c2a464f12767fa508ba
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2669,11 +2669,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=двадцать лет
 options=20 years | age statements
 answer=20 years
-feedback=The frozen line writes 20 years beside двадцать лет. 20 years.
+feedback=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | age statements
+distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
 testedFeature=AGE_YEARS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-2
@@ -2681,8 +2681,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-1-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | age statements
-whyAnswerDemonstratesObjective=The frozen line writes 20 years beside двадцать лет.
+distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
 contrastMembers=20 years | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-1-ru | prov-ex-u17-age-1-en | prov-u17-age-x-1
@@ -2696,7 +2696,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c9a5411fc0136bcf2342aba79ef0c54b97cb7f253d1ecc248246b0f5ced9e45
+- Content hash: 096314db630bd3a52f564b94b30e1d91992b4bcea7201c2bc1867554f2cc1a80
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2704,7 +2704,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=четверг
 options=Thursday | Friday | Saturday
 answer=Thursday
-feedback=четверг || noun || Thursday. Thursday.
+feedback=четверг || noun || Thursday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2731,7 +2731,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d341ddcf5c6aef17f6014993145f93334a8dbe8e751469f641f73ada78d54e78
+- Content hash: 6a50312ff9358f0c9255a349cdee372daad3624cdbe0663e5b230d3718f8dd3d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2739,7 +2739,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=воскресенье
 options=Sunday | Monday | Saturday
 answer=Sunday
-feedback=воскресенье || noun || Sunday. Sunday.
+feedback=воскресенье || noun || Sunday
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2766,7 +2766,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a1f4298459b9d8e8b3b8a1dc9dbc729898e2bea23698d270b28a8764db9cf391
+- Content hash: 57d8e0a545fcb584cf6a41874ad4983aa123d4debbf53f309b9ca0c3ac97a1ac
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2774,7 +2774,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Июнь
 options=June | July | August
 answer=June
-feedback=Июнь || June. June.
+feedback=Июнь || June
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2801,7 +2801,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5536cc2d3ff2cf1caba932593113ef1067eb0cce1ec06484e1a026c4c00ba947
+- Content hash: 0201f2ecba6780aad561a66a896ab2273a1e0af3fdccac7c23962030d574aa15
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2809,7 +2809,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Декабрь
 options=December | January | April
 answer=December
-feedback=Декабрь || December. December.
+feedback=Декабрь || December
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2836,7 +2836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1302f49be5b6256f5bd93889262a300c6fea2d9f608714390dacf15807deaa10
+- Content hash: a3d4be42344bc54bbd63fb3f61a283046f07d8e4ae6e808d74572d4b35034732
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2844,11 +2844,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION_AGAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-1
@@ -2856,8 +2856,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -2871,7 +2871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb53c4a18808e42cff1a72a328ac767eb8eccb9e5eca55bdaf20f33bb61aed89
+- Content hash: f78aae4a07edb7cd18d5b3c9d94fbf6ab7d74d87e75a1b198eb467abbc884d88
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2879,11 +2879,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=CLOCK_QUESTION_CHECK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-2
@@ -2891,8 +2891,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
-whyAnswerDemonstratesObjective=The frozen line writes What time is it? beside Который час? The frozen line writes
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -9250,10 +9250,10 @@ text=Which admitted line is the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 119bdcce9fd6bbd1378ffe8fb0d4f1bbdb435501e8a08b4790405fb2a7191eb2
+- Content hash: d3a95479896a680834278fd439a98cfd24f2f2f048ca928de5a65f8aa29528f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u17-092`
 
@@ -9263,10 +9263,10 @@ text=The frozen line writes
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ec521cb00fbf46ccd6633aed5fbde5c4f09ddc1572dc08d2f4445fa0fea1b10
+- Content hash: 84ceb9d8203f83e5dbeec1d945c706b1736bc1867b2c1d3ee62d8b1634a2180a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=beside
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u17-093`
 

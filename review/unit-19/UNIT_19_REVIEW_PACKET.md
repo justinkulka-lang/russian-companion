@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
-- Unit content-review SHA-256: 9b740c5702f2cd9e85fd48cc5c2e6356bf478e71c0fc29e9417018d8f2537024
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: f1d0f31a2e04e1eb880c09910bc1162e8f43707cdd8c028f2aea2dd32fc9a855
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
-- Review-package SHA-256: b04cb08b8648d243664deb38e6ffb6ede7dc0900abf6f9f8377c73f22063dd75
-- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: 3128a7d98e430c8b7ef6729383d14649ced75ae10d0b1b021a5348f848cc6c02
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1021,7 +1021,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89612f9ae4dbb5f85164e5f23e4a9a4ab7ceb1bcafcef6467efe4f60484e7c41
+- Content hash: f23ad3c3a0c8e1fcd939d321871404e30e26831ae3a7be848e3d851f863ffd63
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1029,7 +1029,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я спал бы
 options=a male speaker | a female speaker | I would like to sleep
 answer=a male speaker
-feedback=a male speaker would say я спал бы. a male speaker.
+feedback=a male speaker would say я спал бы
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1056,7 +1056,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b0acfb8977cd37f5cfd463b436550f8cc54520d2ec2aedce8422fac7c846e67
+- Content hash: 3d0976f7a52443fd4e7cc22aa423d2ae1e990ece4f32c13de7bdabbdd11bc3c7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1064,7 +1064,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я должен
 options=I have to | If the subject is feminine | If the subject is plural
 answer=I have to
-feedback="I have to" translates to я должен. I have to.
+feedback="I have to" translates to я должен
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1161,7 +1161,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09cd8bfe84f483197f1c110513a0e51d6b41bee7b0f2336378be4cfc6b9e1d95
+- Content hash: be7d581f496f58e5519980c81d1d1e8e2cb5f949a7f78697257312b5aaea52be
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1169,7 +1169,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я спала́ бы
 options=a female speaker | a male speaker | I would like to sleep
 answer=a female speaker
-feedback=while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.
+feedback=while a female speaker would say я спала́ бы (or я бы поспала́)
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1196,7 +1196,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2729775dec7b3c50b8be27afab2c33456605b27e1da1d2887730d3fe7fd94b1b
+- Content hash: 82932ceb090b80773278a751c1f9eaac9548844f6a2f9b340a176edcc7456317
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1204,7 +1204,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=я бы поспала́
 options=a female speaker | a male speaker | I would like to sleep
 answer=a female speaker
-feedback=while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.
+feedback=while a female speaker would say я спала́ бы (or я бы поспала́)
 objectiveId=obj-u19-conditional
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1231,7 +1231,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8186f7003c3c0f51f79f4c91b928f852372cd9f6a0e027532dec6cfe15286159
+- Content hash: 078e75d0310d96afd89a8203cc25772f827a3d598ed3ea053ec323282c4ac358
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1239,7 +1239,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=должна
 options=If the subject is feminine | I have to | If the subject is plural
 answer=If the subject is feminine
-feedback=If the subject is feminine, it's должна. If the subject is feminine.
+feedback=If the subject is feminine, it's должна.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -1266,7 +1266,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fadb0b19d072bd0d5d5902ea2685916697c16f6c11d81b48234120bc7b613bc2
+- Content hash: 9a6af2130d6c7529fcf3b243890f9166e2f9c17d8f6e192b4bd399889b5d192a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1274,7 +1274,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=должны
 options=If the subject is plural | I have to | If the subject is feminine
 answer=If the subject is plural
-feedback=If the subject is plural, it's должны. If the subject is plural.
+feedback=If the subject is plural, it's должны.
 objectiveId=obj-u19-obligation
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -2682,10 +2682,10 @@ text=Which admitted line is the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb94e53930f5fd22c1afb4a53032b60a0c9712e9c1d6c18b257d466608e5b46e
+- Content hash: 3632dfe6d46a31e4928faf4af3e89789a62513ca9908dd3a6b5da8de6bcf7b7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u19-143`
 
@@ -2695,10 +2695,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5a62ca1cb0530c6a49a9fbfe418b01d86ce3bfc3acbaf97ec8c6e7d4506db76
+- Content hash: b3a4fe74cef83221d9c586c008235314c26cb9193681f793bbe53f15397745e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted prefix cautions
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u19-144`
 
@@ -2708,10 +2708,10 @@ text=Admitted prefix cautions
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c776aa10059c6c83e06055e812cf922a452c1c5a4077a4b256711380c6fee14
+- Content hash: 19bfdaff1258571487bd3c2aedf44b37992147d400c6a750efff47d990320b9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u19-145`
 
@@ -2721,10 +2721,10 @@ text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7bc1a93bcb7b04f8d2e7d11411ae1818c3f801c73c1c251350835be9e324939c
+- Content hash: 89b03478a69026594b6502a7f063a586d4b35742d756b6e6ae0bc8cff8425ccc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
+text=Admitted prefix cautions
 
 ### AUTHORED_ENGLISH `en-u19-146`
 
@@ -2734,10 +2734,10 @@ text=Open Lesson 19 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99ec88aaa4b4e11614913728b61a8f7ad58b818d958ed488e6bb0cd254eef15b
+- Content hash: 2c9701e5c8fe1e7cf3bc5564cec813f9a1ff0feb8698b47fc1405e4f914e30b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u19-147`
 
@@ -2747,10 +2747,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc8793bbeb1c28bfa70c6ff460469ab91bc5baf0bfe7e67e64a1279981904b13
+- Content hash: efee18bf7fce70d65ac0eecf91e2b49040e34e04f2efaf58dd30b97f6397c95e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u19-148`
 
@@ -2760,10 +2760,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 856b3081f3f159cf5d55d400009008d7ee051a3ec83656fc31c6273bbef41db7
+- Content hash: 2d07af3425e00ce8944a0a531aebe71d0b648d4bfd7e43ee3897ea008041dbde
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u19-149`
 
@@ -2773,10 +2773,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 146a77e1d271179920d61521f8af09a90dba37e5162bf06ab780a60538f3ccfb
+- Content hash: e65c22814bfd55608e485c1ffbd08f8a32fffd8c8ee81ae0955ef570391c86cd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u19-150`
 
@@ -2786,10 +2786,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89b6d7a71fe7970d03a6945463d6ac462b5bb00613f7320a8b88a73908d840fe
+- Content hash: 81956ed5b237457e34100702b1dd4b04e5f428d694afe6a2e4c7f15055d6b0dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u19-151`
 
@@ -2799,10 +2799,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a4a0550a7b229ba71993c003d70fc017bdf293206c12e229a4321bc054e9f90
+- Content hash: ff7afc1610678cbf36e141af9bde4fad6bb84dd38733412b2b310060a7e57935
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 19 in your copy
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u19-152`
 
@@ -2812,10 +2812,10 @@ text=Work Lesson 19 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67ae0d0ee07f0f969a86aa35017e124c465fa32973ada81b0dc52a9d82fc45b2
+- Content hash: 8cbcb707a75f7d6667e013e25e67d57d1551050b5b12f674afd243f3e5c14d77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u19-153`
 
@@ -2825,10 +2825,10 @@ text=Do Lesson 19 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caa2666fe418d0abb90b0b12c4610c8bfc41dc23212b153765df1f6e858a4f66
+- Content hash: 2564f185bcaa67010e2cec20089b4d2f7d9e992080214094ed80bdb2c0fdeff0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in your copy and complete its lesson work.
+text=Work Lesson 19 in your copy
 
 ### AUTHORED_ENGLISH `en-u19-154`
 
@@ -2838,10 +2838,10 @@ text=Open Lesson 19 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19b535cb05a8432a237916fca32988f32facbfeb387a996851bdd0cec380f43c
+- Content hash: 81c9bfa5c82595f1de6b9da3808734cf1a3d8e7400f1d6d98436a62e9804a72b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 19 book work
+text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u19-155`
 
@@ -2851,10 +2851,10 @@ text=Record Lesson 19 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5b73b879e9056eabf77ba19f7d73c662be20ff48ddb44961c76d03d1fcfcfcd
+- Content hash: a031d48a7240c9486c6da0afb85ed10d431293b6eacfee6c85785d7a93f2e011
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Open Lesson 19 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u19-156`
 
@@ -2864,10 +2864,10 @@ text=When you have done Lesson 19 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b1ccfa7ae535c4c899d4e17dd1aab7ee24f71e39b1d152958ce4aea6f6250b38
+- Content hash: 3a702452ff50417a471069ff0a041aa7ce743e4fdf5cb05a9b649af77c8eccca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 19 work in your copy.
+text=Record Lesson 19 book work
 
 ### AUTHORED_ENGLISH `en-u19-157`
 
@@ -2877,10 +2877,10 @@ text=Self-attest only after the Lesson 19 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f6807c623f7fd4840c93ee75b0d149585c81541c74931e9f0a56ae1d4c969fb
+- Content hash: 75eac4868db5ec00475e80d4d99b47a975e9576598a4807d1bee3469a501835d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Probability stays in the copy you own
+text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u19-158`
 
@@ -2890,7 +2890,33 @@ text=Probability stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85d31b0af85dbb77b0b52eebce522c2b8a75bb0e25261629ebdb7db910878525
+- Content hash: baa27dabdfa3d82fd00f7e0b5f4d864157affe1fad875d6bca67da628e0ba48a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 19 work in your copy.
+
+### AUTHORED_ENGLISH `en-u19-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bdaf5b58fc9ba0f4c1ce491052d866c3725184b12de5b3aa74ff27fdd7864997
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Probability stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u19-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 13bf301b7b654e266dea7b7b47a2bd2a50ad7e14f3edf078096787d7c100251a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.

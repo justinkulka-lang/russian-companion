@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a18f4f897251dbaa6e1da42c1c0810dcef1221ce
-- Unit content-review SHA-256: fc87c867b7d87e0af1c71a397e54fbd5d742ed3e25513df601afa9eca7594f35
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: 405c2ea8e232528baf6d2b4a078c7df0f93c19383433fa9409f5b6244789041a
 - Mapping-package SHA-256: bbc970db2dfb4a17b8433024c289db9045424d73e3e64a61f699f992704ffbda
-- Pack content-review SHA-256: a9535dcbcb5d40b1221201100647f8af32240f179a40772f795177279509347c
-- Review-package SHA-256: b913c5cccdabc700790c9dd78e15fb0959110a4ee11739e3c7ee778f99d993b8
-- Repository source SHA-256: 0bfdfb00ebf9234e0d1e89ac0fdfd81a3b3328b4d5774f6c67b4fc1cd9c32069
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: df05b00ed30140dbed680bb66cd3b1d0c0363714c9bc40b421471d8059e4aa63
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -696,7 +696,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fa0f4ee2b56c77c6ffe0b98e6be7d544ad57a364ea325b8ef7157edbccf944d
+- Content hash: 8961ee0539a2afa4fefafa1e2cd7147c31ff39a647b6371eb545913f70a864a8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -704,7 +704,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=бо́льший
 options=bigger | better | redder
 answer=bigger
-feedback=бо́льший 'bigger'. bigger.
+feedback=бо́льший 'bigger'
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -731,7 +731,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f6f0f1eca3cd84f37666565cd709edb7bae92c4b354493c04c51ac878ded494
+- Content hash: 6ff393e0ce94815ecb7216b5c8cfbd328b301d7d5a8edce523c4c71b8953bc0f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -739,11 +739,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Которое яблоко моё?
 options=Which apple is mine? | Which book do you want? | The man who changed the world
 answer=Which apple is mine?
-feedback=The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes Which apple is mine?
+feedback=The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?".
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes | The frozen line writes The man who changed the world beside Человек, который изменил мир.
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?". | The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world".
 testedFeature=RELATIVE_APPLE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-0
@@ -751,8 +751,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u18-relative-0-en
 distractorSourceIds= | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
-distractorDifference= | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes | The frozen line writes The man who changed the world beside Человек, который изменил мир.
-whyAnswerDemonstratesObjective=The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?". | The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?".
 contrastMembers=Which apple is mine? | Which book do you want? | The man who changed the world
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-0-ru | prov-ex-u18-relative-0-en | prov-ex-u18-relative-1-en | prov-ex-u18-relative-3-en
@@ -766,7 +766,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a740ecf074345d9691e49695d24215d49f06e9d812f25312e045f1f8f640f59a
+- Content hash: f7f42652a8578a51a7e7eccba22844be62bd6dcd45dcf7d043c9602847db81dc
 
 kind=CONTRAST_SELECTION
 language=en
@@ -774,7 +774,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=наибо́льший
 options=the biggest | more | less
 answer=the biggest
-feedback=наибо́льший 'the biggest'. the biggest.
+feedback=наибо́льший 'the biggest'
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -801,7 +801,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7300736557147e39e4e2f3ae1d3e3ea58961e74d760e8b4a4fe7a25cb375b293
+- Content hash: 3b44c5e7d2f6ac7193dda172e4cca77ff9de3852de242d5878548b797be94f43
 
 kind=CONTRAST_SELECTION
 language=en
@@ -809,7 +809,7 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=бо́лее до́брый
 options=kinder | least | bigger
 answer=kinder
-feedback=бо́лее до́брый 'kinder'. kinder.
+feedback=бо́лее до́брый 'kinder'
 objectiveId=obj-u18-comparison
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -836,7 +836,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd5e1785c89f6bdedea8f7d4a29228c1e084f358493f25a7c08fe52874b84780
+- Content hash: 9b6f33fc6551a29f8a7c5ba5e7c52adbecc6585440f648c8c1f0d8b05b43ba89
 
 kind=CONTRAST_SELECTION
 language=en
@@ -844,11 +844,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Же́нщина, с кото́рой я дружу́
 options=The woman (who) I'm friends with | The man who changed the world | Which apple is mine?
 answer=The woman (who) I'm friends with
-feedback=The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. The woman (who) I'm friends with.
+feedback=The frozen source pairs the shown form "Же́нщина, с кото́рой я дружу́" with the admitted gloss "The woman (who) I'm friends with".
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
+distractorRationales= | The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world". | The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?".
 testedFeature=RELATIVE_WOMAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-1
@@ -856,8 +856,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-2-en
 distractorSourceIds= | prov-ex-u18-relative-3-en | prov-ex-u18-relative-0-en
-distractorDifference= | The frozen line writes The man who changed the world beside Человек, который изменил мир. | The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes
-whyAnswerDemonstratesObjective=The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.
+distractorDifference= | The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world". | The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Же́нщина, с кото́рой я дружу́" with the admitted gloss "The woman (who) I'm friends with".
 contrastMembers=The woman (who) I'm friends with | The man who changed the world | Which apple is mine?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-2-ru | prov-ex-u18-relative-2-en | prov-ex-u18-relative-3-en | prov-ex-u18-relative-0-en
@@ -871,7 +871,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e17f01dda87937d365fe47e411ca25fea49e4dee3867d3e28fd62b6d48295323
+- Content hash: 625e7cd53d58f4fc72bbff63c3566534d9e064287525adf36cb90214efe5185d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -879,11 +879,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Человек, который изменил мир
 options=The man who changed the world | The woman (who) I'm friends with | Which book do you want?
 answer=The man who changed the world
-feedback=The frozen line writes The man who changed the world beside Человек, который изменил мир. The man who changed the world.
+feedback=The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world".
 objectiveId=obj-u18-relative
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
+distractorRationales= | The frozen source pairs the shown form "Же́нщина, с кото́рой я дружу́" with the admitted gloss "The woman (who) I'm friends with". | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
 testedFeature=RELATIVE_MAN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u18-relative-2
@@ -891,8 +891,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u18-relative-3-en
 distractorSourceIds= | prov-ex-u18-relative-2-en | prov-ex-u18-relative-1-en
-distractorDifference= | The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. | The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes
-whyAnswerDemonstratesObjective=The frozen line writes The man who changed the world beside Человек, который изменил мир.
+distractorDifference= | The frozen source pairs the shown form "Же́нщина, с кото́рой я дружу́" with the admitted gloss "The woman (who) I'm friends with". | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Человек, который изменил мир" with the admitted gloss "The man who changed the world".
 contrastMembers=The man who changed the world | The woman (who) I'm friends with | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u18-relative-3-ru | prov-ex-u18-relative-3-en | prov-ex-u18-relative-2-en | prov-ex-u18-relative-1-en
@@ -2371,10 +2371,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba8eec7e6ce303098cbe320c7bef207d2bd4acb26867808c53a32a7a29c5dfc1
+- Content hash: 0126f00f319fb4e19386a738b8673d2ff95241691d56fd3503ad9370fd8956aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u18-113`
 
@@ -2384,10 +2384,10 @@ text=The frozen line writes
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e64d0e28de2be9184f938886a34b543524e1d4b60ffda1ed6fc5dd3c8c2494bf
+- Content hash: 32405175dc4eaeba4ee5fa46067e1d8585b9f824a96fbc30c15fba09a0545a26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=beside
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u18-114`
 
