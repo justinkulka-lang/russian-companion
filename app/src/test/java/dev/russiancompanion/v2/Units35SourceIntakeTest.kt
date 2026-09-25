@@ -31,6 +31,12 @@ class Units35SourceIntakeTest {
             "src-wikipedia-date-time-country-1366690592",
             "src-wikipedia-date-notation-russia-1357134172",
             "src-enwiktionary-dolzhen-84965088",
+            "src-enwiktionary-poltora-89737719",
+            "src-ruwiki-morfologiya-148939075",
+            "src-ruwiki-otritsatelnye-141256493",
+            "src-ruwiki-diminutiv-149098069",
+            "src-ruwiki-lichnoe-imya-154915954",
+            "src-ruwiki-obraschenie-153012874",
             "src-pressbooks-diverse-russian-traditions-grammar",
             "src-wikibooks-russian-various-stuff-3353858",
         )
