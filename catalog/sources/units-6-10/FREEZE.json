@@ -460,6 +460,24 @@
         "url": "https://en.wikibooks.org/wiki/Russian/Grammar/Adverbs?oldid=3197995",
         "licenseRoute": "wikibooks",
         "scope": "The English orientation sentence only. Russian interrogatives on this page are not checks. A productive -о adverb rule is not stated."
+      },
+      {
+        "key": "adverb-formation",
+        "title": "Adverb",
+        "oldid": "1374548415",
+        "file": "wikipedia/adverb-1374548415.txt",
+        "sha256": "99e58a8afb153b9aa86d591a2a78b6bd4956010b50abb1243d87f1dda92202a1",
+        "revisionFile": "wikipedia/adverb-1374548415.revision.json",
+        "mediawikiSha1": "634adb1b4e03c6625eee4b922193fb86c8fecf79",
+        "parentid": 1355039052,
+        "timestamp": "2026-09-12T18:51:45Z",
+        "size": 18748,
+        "retrieved": "2026-09-25",
+        "sourceId": "src-wikipedia-adverb-1374548415",
+        "url": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+        "licenseRoute": "wikipedia",
+        "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+        "scope": "The stated suffix pattern replacing -ий, -а, or -е with -о, and the three Russian pairs быстро/quickly, хорошо/well, and прекрасно/wonderfully. Ukrainian examples in the same sentence are not Russian adverbs. Stress is not marked."
       }
     ]
   },
@@ -481,8 +499,38 @@
       "reason": "No admitted source supplies those productions."
     },
     {
-      "item": "productive -о adverb paradigm",
-      "reason": "The frozen adverbs page states only that adverbs describe a verb much like adjectives describe nouns. It does not state a productive -о formation rule."
+      "item": "Wikibooks adverbs stub as an adverb paradigm",
+      "reason": "The frozen Wikibooks adverbs page states only that adverbs describe a verb much like adjectives describe nouns. It does not state the suffix pattern. That pattern is admitted from Wikipedia Adverb oldid 1374548415, bounded to the stated pairs."
+    }
+  ],
+  "license": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "routes": {
+      "wikipedia": {
+        "appliesToSourceIds": [
+          "src-wikipedia-adverb-1374548415"
+        ],
+        "title": "Wikipedia:Copyrights",
+        "oldid": "1369466282",
+        "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Copyrights&oldid=1369466282",
+        "file": "../units-26-30/wikipedia/copyrights-1369466282.txt",
+        "revisionFile": "../units-26-30/wikipedia/copyrights-1369466282.revision.json",
+        "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+        "requiredStatement": "Most of Wikipedia's text and many of its images are co-licensed under the [[Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License|Creative Commons Attribution-ShareAlike 4.0 International License]] (CC BY-SA) and the [[Wikipedia:Text of the GNU Free Documentation License|GNU Free Documentation License]] (GFDL)"
+      }
+    }
+  },
+  "pages": [
+    {
+      "key": "adverb-formation",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "licenseRoute": "wikipedia",
+      "oldid": "1374548415",
+      "file": "wikipedia/adverb-1374548415.txt",
+      "sha256": "99e58a8afb153b9aa86d591a2a78b6bd4956010b50abb1243d87f1dda92202a1",
+      "title": "Adverb",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors."
     }
   ]
 }

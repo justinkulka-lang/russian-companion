@@ -66,7 +66,7 @@ class Units1115InstructionalValidityTest {
                 }
             }
         }
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
         assertTrue(pack.units.drop(25).all { it.readiness == "NOT_PREPARED" && it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
     }
 
@@ -300,10 +300,11 @@ class Units1115InstructionalValidityTest {
         val unprepared = pack.units.filter { unit ->
             unit.readiness == "NOT_PREPARED" || unit.installState == "NOT_YET_INSTALLED"
         }.map { it.number }.toSet()
-        assertTrue(unprepared.contains(7))
-        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
-        val falseClaim = "Units 1 through 15 contain proposed lesson bodies that still need qualified review."
-        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(7))
+        assertFalse(unprepared.contains(7))
+        assertTrue(unprepared.contains(19))
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
+        val falseClaim = "Units 19 through 21 contain proposed lesson bodies that still need qualified review."
+        assertTrue(claimedPreparedUnits(falseClaim).intersect(unprepared).contains(19))
         val reference = pack.references.first { it.id == "ref-book-topics" }
         assertEquals(
             "Some units contain proposed lesson bodies that still require qualified review.",

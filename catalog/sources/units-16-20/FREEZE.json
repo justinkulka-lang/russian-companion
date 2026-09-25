@@ -62,6 +62,18 @@
       "scope": "The obligation span for должен, должна, должно, and должны. The dolphin mnemonic and editorial asides are not learner text. Probability is not stated."
     },
     {
+      "id": "wikipedia-date-time-country-1366690592",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The three stated clock constructions and the times the sentence binds to them: четверть восьмого is 7:15, полвосьмого is 7:30, and без четверти восемь is 7:45. No other hour is admitted."
+    },
+    {
+      "id": "wikipedia-date-notation-russia-1357134172",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Written day-month-year order, the expanded 28 августа 2017 г. form with г short for года, and the spoken ordinal day plus genitive month in Двадцать восьмое августа. Other dates, 09/15/2024, and a year on the spoken example are not admitted."
+    },
+    {
       "id": "wikibooks-verbs-of-motion-red-link",
       "disposition": "EXCLUDED",
       "licenseId": null,
@@ -289,6 +301,40 @@
         "url": "https://en.wikibooks.org/wiki/Russian/Lesson_3?oldid=4460699",
         "licenseRoute": "wikibooks",
         "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors."
+      },
+      {
+        "key": "clock-country",
+        "title": "Date and time representation by country",
+        "oldid": "1366690592",
+        "file": "wikipedia/date-time-country-1366690592.txt",
+        "sha256": "8d5735db9bb34ece6f4e84454cb3ff584b67da5661edcd54540265e7ba68b135",
+        "revisionFile": "wikipedia/date-time-country-1366690592.revision.json",
+        "mediawikiSha1": "eec29f6c7e21ac127fee5971e579855be564d3c4",
+        "parentid": 1358491301,
+        "timestamp": "2026-07-29T15:27:25Z",
+        "size": 11158,
+        "retrieved": "2026-09-25",
+        "sourceId": "src-wikipedia-date-time-country-1366690592",
+        "url": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+        "licenseRoute": "wikipedia",
+        "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors."
+      },
+      {
+        "key": "date-russia",
+        "title": "Date and time notation in Russia",
+        "oldid": "1357134172",
+        "file": "wikipedia/date-notation-russia-1357134172.txt",
+        "sha256": "8a5b99005097fe97858e4188250ab61056925d5229af60059a0cc86d6ae8fd57",
+        "revisionFile": "wikipedia/date-notation-russia-1357134172.revision.json",
+        "mediawikiSha1": "f9c39509ab0a36f00f8276b2beb7f6e34bb94711",
+        "parentid": 1353731274,
+        "timestamp": "2026-05-31T23:13:14Z",
+        "size": 2815,
+        "retrieved": "2026-09-25",
+        "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+        "url": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+        "licenseRoute": "wikipedia",
+        "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors."
       }
     ]
   },
@@ -298,7 +344,9 @@
     "routes": {
       "wikipedia": {
         "appliesToSourceIds": [
-          "src-wikipedia-russian-grammar-1369617627"
+          "src-wikipedia-russian-grammar-1369617627",
+          "src-wikipedia-date-time-country-1366690592",
+          "src-wikipedia-date-notation-russia-1357134172"
         ],
         "title": "Wikipedia:Copyrights",
         "oldid": "1369466282",
@@ -361,6 +409,26 @@
       "oldid": "4460699",
       "file": "wikibooks/lesson3-4460699.txt",
       "sha256": "63740f56e068f51cd5aa4565bfe199841154a4b942fbf7fd8a18c440544e33a6"
+    },
+    {
+      "key": "clock-country",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "licenseRoute": "wikipedia",
+      "oldid": "1366690592",
+      "file": "wikipedia/date-time-country-1366690592.txt",
+      "sha256": "8d5735db9bb34ece6f4e84454cb3ff584b67da5661edcd54540265e7ba68b135",
+      "title": "Date and time representation by country",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors."
+    },
+    {
+      "key": "date-russia",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "licenseRoute": "wikipedia",
+      "oldid": "1357134172",
+      "file": "wikipedia/date-notation-russia-1357134172.txt",
+      "sha256": "8a5b99005097fe97858e4188250ab61056925d5229af60059a0cc86d6ae8fd57",
+      "title": "Date and time notation in Russia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors."
     }
   ]
 }

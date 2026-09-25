@@ -1547,17 +1547,13 @@ def build() -> dict:
                 title,
                 short,
                 (
-                    "Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed."
-                    if number == 7
-                    else f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
+                    f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
                 ),
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="NOT_PREPARED" if number == 7 else "CONTENT_COMPLETE_REVIEW_PENDING",
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING",
                 mapping_note=(
-                    "The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
-                    if number == 7
-                    else "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
+                    "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment."
                 ),
                 require_due_review=False,
                 minimum_checks=proposed_unit["minimum_checks"],
@@ -1604,14 +1600,14 @@ def build() -> dict:
     }
     intake_summaries = {
         16: "Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.",
-        17: "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.",
         18: "Proposed Unit 18 is in development. Admitted comparison lines and admitted relative lines await qualified review. It is not installed and the owned-edition mapping is not signed.",
         19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
         20: "Proposed Unit 20 is in development. Admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths await qualified review. It is not installed and the owned-edition mapping is not signed.",
     }
     intake_readiness = {
         16: "CONTENT_COMPLETE_REVIEW_PENDING",
-        17: "NOT_PREPARED",
+        17: "CONTENT_COMPLETE_REVIEW_PENDING",
         18: "CONTENT_COMPLETE_REVIEW_PENDING",
         19: "NOT_PREPARED",
         20: "CONTENT_COMPLETE_REVIEW_PENDING",
@@ -1725,8 +1721,8 @@ def build() -> dict:
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
         "unitReviews": [pending_unit_review(number) for number in range(1, 31)],
-        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"], *late_intake["sources"]],
-        "rights": [*RIGHTS, *proposed["rights"], *late_intake["rights"]],
+        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"], *late_intake["sources"], *later["sources"], *intake["sources"]],
+        "rights": [*RIGHTS, *proposed["rights"], *late_intake["rights"], *later["rights"], *intake["rights"]],
         "letters": letters,
         "examples": examples,
         "items": items,
@@ -1737,7 +1733,7 @@ def build() -> dict:
         "ownedEditionMappings": [],
         "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"], *late_intake["provenance"]],
         "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"], *late_intake["authored"]],
-        "sourceCapabilities": [*intake["capabilities"], *late_intake["capabilities"]],
+        "sourceCapabilities": [*later["capabilities"], *intake["capabilities"], *late_intake["capabilities"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

@@ -127,16 +127,16 @@ class CurriculumReadinessReconciliationTest {
             }
         }
         val unit7 = model.units.first { it.unitNumber == 7 }
-        assertEquals("NOT_PREPARED", unit7.readiness)
-        assertFalse(unit7.advancementCanPresentlySucceed)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
+        assertTrue(unit7.advancementCanPresentlySucceed)
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
-        listOf(16, 18, 20).forEach { number ->
+        listOf(7, 16, 17, 18, 20).forEach { number ->
             assertFalse(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        ((17..30).toList() - listOf(18, 20)).forEach { number ->
+        ((19..30).toList() - listOf(20)).forEach { number ->
             assertTrue(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
@@ -259,7 +259,7 @@ class CurriculumReadinessReconciliationTest {
     @Test
     fun notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers() {
         val pack = pack()
-        listOf(7, 17, 30).forEach { number ->
+        listOf(19, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
@@ -297,8 +297,8 @@ class CurriculumReadinessReconciliationTest {
         val inconsistent = reconcileCurriculumReadiness(
             root(),
             pack,
-            runtimeAdvancementAllowed = { _, unit -> unit.number == 7 },
-        ).units.first { it.unitNumber == 7 }
+            runtimeAdvancementAllowed = { _, unit -> unit.number == 19 },
+        ).units.first { it.unitNumber == 19 }
         assertFalse(inconsistent.advancementCanPresentlySucceed)
         assertTrue(inconsistent.finalDisposition.startsWith("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         val closed = reportAdvancement("NOT_PREPARED", runtimeAllowed = false)
@@ -356,7 +356,8 @@ class CurriculumReadinessReconciliationTest {
         assertEquals("NONE", live.units.first { it.unitNumber == 16 }.localExperienceBlocker)
         assertFalse(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertEquals("NONE", live.units.first { it.unitNumber == 17 }.assetBlocker)
-        assertTrue(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertFalse(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertTrue(live.units.first { it.unitNumber == 19 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertTrue(live.units.first { it.unitNumber == 1 }.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertEquals("NONE", live.units.first { it.unitNumber == 1 }.localExperienceBlocker)
 
@@ -384,11 +385,11 @@ class CurriculumReadinessReconciliationTest {
         val namedAsset = reconcileCurriculumReadiness(
             root(),
             pack.withUnit(
-                pack.unit(17).withAddedStep(
+                pack.unit(19).withAddedStep(
                     unavailableStep("probe-audio", "Required licensed pronunciation audio record is absent."),
                 ),
             ),
-        ).units.first { it.unitNumber == 17 }
+        ).units.first { it.unitNumber == 19 }
         assertTrue(namedAsset.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertTrue(namedAsset.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertEquals("NONE", namedAsset.localExperienceBlocker)

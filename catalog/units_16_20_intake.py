@@ -26,8 +26,11 @@ from units_3_5_intake import (
     format_stress,
     format_wikibooks_emphasis,
     sha256_text,
+    text_in_frozen,
     unbound_letters,
+    unfold_wiki_labels,
 )
+from explicit_spans import DATE_SPAN
 from units_6_10_intake import GRAMMAR_KINDS, Lesson, _step
 from units_11_15_intake import ADJ_FIELDS, NOUN_FIELDS, git_blob_sha1
 
@@ -95,6 +98,8 @@ class FrozenSources:
             "wikibooks-months-4376719",
             "wikibooks-interrogative-4220316",
             "wikibooks-lesson3-4460699",
+            "wikipedia-date-time-country-1366690592",
+            "wikipedia-date-notation-russia-1357134172",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -195,10 +200,14 @@ class Builder:
         cleaned = format_wikibooks_emphasis(shipped)
         if format_wikibooks_emphasis(cleaned) != cleaned:
             raise SystemExit(f"{item_id} emphasis transform is not stable")
-        formatted = format_wikibooks_emphasis(original)
-        if cleaned not in original and cleaned not in formatted:
+        if not text_in_frozen(original, cleaned):
             raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
-        transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
+        if cleaned in original:
+            transformation = "selection"
+        elif cleaned in format_wikibooks_emphasis(original):
+            transformation = "wikibooks emphasis formatting"
+        else:
+            transformation = "wiki label selection"
         meta = self.frozen.page_meta[page]
         source_id = meta.get("sourceId", WIKIBOOKS_ID)
         source_url = meta.get("url") or (
@@ -472,10 +481,7 @@ def build_units_16_20() -> dict:
     builder = Builder(frozen)
     units = [
         _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.", 8, populate, [
-            ("clock-answers", "Productive clock-time answers stay in the copy you own", "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.", "Productive clock-time answers have no admitted frozen span."),
-            ("calendar-date", "Calendar-date syntax stays in the copy you own", "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.", "Calendar-date syntax has no admitted frozen span."),
-        ]),
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.", 8, populate, []),
         _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
         _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.", 2, populate, [
             ("probability", "Probability stays in the copy you own", "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.", "Probability use has no admitted frozen span."),
@@ -492,7 +498,42 @@ def build_units_16_20() -> dict:
         "authored": builder.authored,
         "references": [_attribution_reference()],
         "capabilities": capabilities,
+        "sources": _admitted_sources(frozen),
+        "rights": _admitted_rights(frozen),
     }
+
+
+def _admitted_sources(frozen: FrozenSources) -> list[dict]:
+    wanted = {
+        "src-wikipedia-date-time-country-1366690592",
+        "src-wikipedia-date-notation-russia-1357134172",
+    }
+    sources = []
+    for page in frozen.freeze["wikibooks"]["pages"]:
+        if page.get("sourceId") not in wanted:
+            continue
+        sources.append({
+            "id": page["sourceId"],
+            "title": page["title"],
+            "license": LICENSE_ID,
+            "attribution": page["attribution"],
+            "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
+        })
+    if {item["id"] for item in sources} != wanted:
+        raise SystemExit(f"Clock and date sources were not frozen: {sources}")
+    return sources
+
+
+def _admitted_rights(frozen: FrozenSources) -> list[dict]:
+    return [
+        {
+            "id": "rights-" + source["id"].removeprefix("src-"),
+            "sourceId": source["id"],
+            "license": LICENSE_ID,
+            "permitsAppUse": True,
+        }
+        for source in _admitted_sources(frozen)
+    ]
 
 
 RESOLVED_CLAIMS = {
@@ -501,6 +542,8 @@ RESOLVED_CLAIMS = {
     "weekdays",
     "months",
     "clock-question",
+    "productive-clock-time",
+    "calendar-date",
     "comparison",
     "relative-kotoryy",
     "conditional-by",
@@ -574,7 +617,7 @@ def _attribution_reference() -> dict:
             "Those license routes are not interchangeable. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
             "No audio is included. Learner-facing dictionary glosses are delimited sense selections. "
-            "Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending."
+            "Probability use is not prepared. Review is pending."
         ),
         "introducedInUnit": 16,
         "sourceId": WIKIBOOKS_ID,
@@ -631,6 +674,8 @@ def _assert(builder: Builder, units: list[dict]) -> None:
                     raise SystemExit(f"Unit {number} ships a dirty gloss: {dirty}")
             for banned in ("dolphin", "pronounced", "Remember that", "Wade", "Blackwell"):
                 if banned.casefold() in host.casefold():
+                    if banned == "pronounced" and host == unfold_wiki_labels(DATE_SPAN):
+                        continue
                     raise SystemExit(f"Unit {number} ships excluded commentary: {banned}")
 
 

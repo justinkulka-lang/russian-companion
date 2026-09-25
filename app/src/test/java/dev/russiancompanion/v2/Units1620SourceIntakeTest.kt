@@ -48,7 +48,7 @@ class Units1620SourceIntakeTest {
             val unit = pack.unit(number)!!
             val facts = governedMappingFacts(number)
             assertEquals("DEVELOPMENT", unit.installState)
-            val expectedReadiness = if (number in setOf(16, 18, 20)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED"
+            val expectedReadiness = if (number == 19) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
             assertEquals(expectedReadiness, unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
@@ -89,6 +89,8 @@ class Units1620SourceIntakeTest {
             "months" to "4376719",
             "interrogative" to "4220316",
             "lesson3" to "4460699",
+            "clock-country" to "1366690592",
+            "date-russia" to "1357134172",
         )
         val seen = mutableSetOf<String>()
         pages.forEach { element ->
@@ -124,7 +126,12 @@ class Units1620SourceIntakeTest {
         }
         pack.provenanceRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
-            assertTrue(record.itemId, normalized(record.originalSourceText).contains(normalized(record.shippedText)))
+            val unfolded = dev.russiancompanion.v2.curriculum.V2Validator.unfoldWikiLabels(record.originalSourceText)
+            assertTrue(
+                record.itemId,
+                normalized(record.originalSourceText).contains(normalized(record.shippedText)) ||
+                    normalized(unfolded).contains(normalized(record.shippedText)),
+            )
             val page = byOldid[record.sourceRevision]
             if (page != null) {
                 assertTrue(record.itemId, page.contains(record.originalSourceText))
@@ -143,12 +150,12 @@ class Units1620SourceIntakeTest {
     fun unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance() {
         val pack = pack()
         assertFalse(reason(pack, 16).contains("becoming complements"))
-        assertTrue(reason(pack, 17).contains("Productive clock-time"))
-        assertTrue(reason(pack, 17).contains("Calendar-date"))
+        assertFalse(reason(pack, 17).contains("Productive clock-time"))
+        assertFalse(reason(pack, 17).contains("Calendar-date"))
         assertFalse(reason(pack, 18).contains("Comparison forms"))
         assertTrue(reason(pack, 19).contains("Probability"))
         assertFalse(reason(pack, 20).contains("red link"))
-        listOf(17, 19).forEach { number ->
+        listOf(19).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -163,7 +170,7 @@ class Units1620SourceIntakeTest {
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
         }
-        listOf(16, 18, 20).forEach { number ->
+        listOf(16, 17, 18, 20).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -279,11 +286,10 @@ class Units1620SourceIntakeTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
         }
-        listOf(17, 19).forEach { number ->
-            val unit = pack.unit(number)!!
-            assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
-        }
+        assertEquals("DEVELOPMENT", pack.unit(17)!!.installState)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
+        assertEquals("NOT_PREPARED", pack.unit(19)!!.readiness)
         listOf(16, 17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)

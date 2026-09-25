@@ -757,6 +757,9 @@ internal object V2Validator {
         "obj-u17-weekdays",
         "obj-u17-months",
         "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-calendar-date",
+        "obj-u7-adverb",
         "obj-u18-comparison",
         "obj-u18-relative",
         "obj-u19-conditional",
@@ -852,13 +855,17 @@ internal object V2Validator {
      * the authority variance is proposed and not activated.
      */
     /**
-     * Units 17 and 19 stay blocked after a readiness edit while productive
-     * clock-time, calendar-date, or probability evidence is still unresolved.
-     * Unit 7 does not use this gate.
+     * A readiness edit cannot advance a unit while one of its required source
+     * capabilities is still unresolved.
      */
     internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
         return when (unit.number) {
+            7 -> if ("adverb-paradigm" in unresolved) {
+                listOf("Unit 7 is missing an introductory adverb paradigm source capability")
+            } else {
+                emptyList()
+            }
             17 -> if ("productive-clock-time" in unresolved || "calendar-date" in unresolved) {
                 listOf("Unit 17 is missing productive clock-time and calendar-date source capabilities")
             } else {
@@ -1249,6 +1256,7 @@ internal object V2Validator {
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
         "EXPLICIT_PARENTHETICAL_GLOSS",
+        "EXPLICIT_SOURCE_PAIR",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1362,7 +1370,9 @@ internal object V2Validator {
         val folded = foldGoverned(shipped)
         if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
         val formatted = foldGoverned(formatWikibooksEmphasis(original))
-        return folded.isNotEmpty() && folded in formatted
+        if (folded.isNotEmpty() && folded in formatted) return true
+        val unfolded = foldGoverned(unfoldWikiLabels(original))
+        return folded.isNotEmpty() && folded in unfolded
     }
 
     private val wikiStressMark = Regex(
@@ -1389,6 +1399,17 @@ internal object V2Validator {
     }
 
     private fun isWikiWordChar(char: Char): Boolean = char.code in 0x0400..0x04FF && char.isLetter()
+
+    /** Mechanical wiki-label unfolding. It does not paraphrase the retained span. */
+    internal fun unfoldWikiLabels(text: String): String {
+        val withoutLang = Regex("""\{\{lang\|ru\|([^{}]*)\}\}""").replace(text) { it.groupValues[1] }
+        val withoutLinks = Regex("""\[\[([^\[\]]+)\]\]""").replace(withoutLang) { match ->
+            val body = match.groupValues[1]
+            val bar = body.indexOf('|')
+            if (bar >= 0) body.substring(bar + 1) else body
+        }
+        return formatWikibooksEmphasis(withoutLinks)
+    }
 
     private val mediaWikiLearnerArtifact = Regex(
         """'''|''|\[\[|\]\]|\{\{|\}\}|<ref|</ref>|\{[|]|\|[}]""",
@@ -1517,7 +1538,32 @@ internal object V2Validator {
         return ""
     }
 
-    private fun classifyRelation(
+    /**
+     * Null means the span is not one of the admitted explicit-pair slices.
+     * An empty string means the slice forbids this cue and gloss.
+     */
+    internal fun explicitSourcePair(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val table = ExplicitSourcePairs.glosses[cue.originalSourceText] ?: return null
+        val group = listOf(cue, answer) + distractors
+        val allowed = table[cue.shippedText]
+        if (
+            allowed != null &&
+            answer.shippedText in allowed &&
+            cue.shippedText != answer.shippedText &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_SOURCE_PAIR"
+        }
+        return ""
+    }
+
+    internal fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
@@ -1525,6 +1571,9 @@ internal object V2Validator {
         val parenthetical = parentheticalDecision(cue, answer, distractors)
         if (parenthetical == "") return null
         if (parenthetical != null) return parenthetical
+        val explicit = explicitSourcePair(cue, answer, distractors)
+        if (explicit == "") return null
+        if (explicit != null) return explicit
         val group = listOf(cue, answer) + distractors
         val parsed = group.map { openRussianLemma(it) }
         if (parsed.all { it != null }) {
@@ -1715,7 +1764,7 @@ internal object V2Validator {
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 11..30) {
+        if (unitNumber in 11..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
             errors += explicitTargetErrors(pack, item)
         }
         return errors

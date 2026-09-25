@@ -9,7 +9,8 @@ from pathlib import Path
 
 from units_11_15_lessons import _shared_response_kind, _wiki
 from units_26_30_lessons import _check, _span_in
-from units_3_5_intake import format_wikibooks_emphasis
+from explicit_spans import CLOCK_SPAN, DATE_SPAN
+from units_3_5_intake import format_wikibooks_emphasis, text_in_frozen, unfold_wiki_labels
 
 _ROOT = Path(__file__).resolve().parents[1]
 _PAGE_FILE = {
@@ -18,7 +19,11 @@ _PAGE_FILE = {
     "months": _ROOT / "catalog/sources/units-16-20/wikibooks/months-4376719.txt",
     "interrogative": _ROOT / "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
     "lesson3": _ROOT / "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+    "clock-country": _ROOT / "catalog/sources/units-16-20/wikipedia/date-time-country-1366690592.txt",
+    "date-russia": _ROOT / "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
 }
+CLOCK_SOURCE = "src-wikipedia-date-time-country-1366690592"
+DATE_SOURCE = "src-wikipedia-date-notation-russia-1357134172"
 
 
 def _span(page: str, start: str, end: str) -> str:
@@ -42,8 +47,7 @@ FORBIDDEN = (
 
 def _form(needle: str, raw: str) -> str:
     shipped = format_wikibooks_emphasis(raw)
-    formatted = format_wikibooks_emphasis(needle)
-    if shipped not in needle and shipped not in formatted:
+    if not text_in_frozen(needle, shipped):
         raise SystemExit(f"Shipped text is not in the frozen span: {shipped!r}")
     for banned in FORBIDDEN:
         if banned.casefold() in shipped.casefold():
@@ -329,6 +333,90 @@ def _calendar_partial(lesson) -> None:
         extra=_extra("interrogative", clock, ["Which book do you want?", book_ru]),
     )
     _bind(lesson, "clock", "clock-question", clock)
+    _clock_answers(lesson)
+    _calendar_date(lesson)
+
+
+def _clock_answers(lesson) -> None:
+    needle = CLOCK_SPAN
+    if needle != _span("clock-country", "uses the same convention:", "7:45 respectively"):
+        raise SystemExit("Clock span identity drifted")
+    forms = (
+        ("четверть восьмого", "7:15", "quarter of the eighth hour", "CLOCK_QUARTER"),
+        ("полвосьмого", "7:30", "half of eight", "CLOCK_HALF"),
+        ("без четверти восемь", "7:45", "eight without a quarter", "CLOCK_WITHOUT"),
+    )
+    reasons = {
+        answer: _pair(shown, answer, citation)
+        for shown, answer, citation, _feature in forms
+    }
+    lesson.objective(
+        "clock-answers",
+        "Choose the admitted time beside the shown form",
+        "CONTRAST_SELECTION",
+        ("clock-country", needle, unfold_wiki_labels(needle)),
+        [
+            _wiki("clock-country", needle, _form(needle, shown), _form(needle, answer))
+            for shown, answer, _citation, _feature in forms
+        ],
+        [
+            _gloss_check(
+                _form(needle, shown),
+                _form(needle, answer),
+                [
+                    _quoted(reasons[other], other)
+                    for _other_shown, other, _other_citation, _other_feature in forms
+                    if other != answer
+                ],
+                feature,
+                reasons[answer],
+                CLOCK_SOURCE,
+            )
+            for shown, answer, _citation, feature in forms
+        ],
+        extra=_extra("clock-country", needle, [citation for _shown, _answer, citation, _feature in forms]),
+    )
+    _bind(lesson, "clock-answers", "productive-clock-time", needle)
+
+
+def _calendar_date(lesson) -> None:
+    needle = DATE_SPAN
+    if needle != _span("date-russia", "In [[Russia]], dates are usually written", 'Двадцать восьмое августа}}").'):
+        raise SystemExit("Calendar span identity drifted")
+    spoken = "Двадцать восьмое августа"
+    written = "28 августа 2017 г."
+    genitive = "the month in genitive case"
+    order = "day month year"
+    year = "of the year"
+    numeric = "28.08.17"
+    spoken_citation = "the ordinal number of the day first"
+    order_citation = "dates are usually written"
+    year_citation = "is short for"
+    numeric_citation = "the all-numeric date"
+    for anchor in (spoken, written, genitive, order, year, numeric, spoken_citation, order_citation, year_citation, numeric_citation):
+        if not text_in_frozen(needle, anchor):
+            raise SystemExit(f"Calendar anchor is not in the frozen span: {anchor!r}")
+    spoken_why = _pair(spoken, genitive, spoken_citation)
+    order_why = _pair(written, order, order_citation)
+    year_why = _pair(written, year, year_citation)
+    numeric_why = _pair(numeric, numeric, numeric_citation)
+    lesson.objective(
+        "calendar-date",
+        "Choose the admitted date relation beside the shown form",
+        "CONTRAST_SELECTION",
+        ("date-russia", needle, unfold_wiki_labels(needle)),
+        [
+            _wiki("date-russia", needle, spoken, genitive),
+            _wiki("date-russia", needle, written, order),
+        ],
+        [
+            _gloss_check(spoken, genitive, [_quoted(order_why, order), _quoted(numeric_why, numeric)], "DATE_SPOKEN", spoken_why, DATE_SOURCE),
+            _gloss_check(written, order, [_quoted(spoken_why, genitive), _quoted(numeric_why, numeric)], "DATE_ORDER", order_why, DATE_SOURCE),
+            _gloss_check(written, year, [_quoted(order_why, order), _quoted(numeric_why, numeric)], "DATE_YEAR", year_why, DATE_SOURCE),
+        ],
+        extra=_extra("date-russia", needle, [year, numeric, spoken_citation, order_citation, year_citation, numeric_citation]),
+    )
+    _bind(lesson, "calendar-date", "calendar-date", needle)
 
 
 def _comparison_and_relative(lesson) -> None:

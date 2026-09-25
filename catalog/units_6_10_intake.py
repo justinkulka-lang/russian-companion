@@ -28,6 +28,7 @@ from units_3_5_intake import (
     delimited_senses,
     format_stress,
     sha256_text,
+    text_in_frozen,
     unbound_letters,
 )
 
@@ -130,6 +131,7 @@ class FrozenSources:
             raise SystemExit("OpenRussian license hash mismatch")
         if "Creative Commons Attribution-ShareAlike 4.0" not in self.pages["copyrights"]:
             raise SystemExit("Frozen Wikibooks copyrights page does not state CC BY-SA 4.0")
+        self.page_meta = {page["key"]: page for page in self.freeze["wikibooks"]["pages"]}
 
     def row(self, record_id: str) -> dict:
         return self.rows[record_id]
@@ -224,12 +226,18 @@ class Builder:
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
         original = self.frozen.require(page, needle)
-        if shipped not in original and shipped.replace("\u0301", "") not in original:
+        if not text_in_frozen(original, shipped):
             raise SystemExit(f"Shipped text {shipped!r} is not in {page}")
+        meta = self.frozen.page_meta[page]
+        source_id = meta.get("sourceId", WIKIBOOKS_ID)
+        source_url = meta.get("url") or (
+            f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}"
+        )
+        attribution = meta.get("attribution", self.wikibooks_attr)
         self.add_provenance(
-            item_id, unit, objective, record_type, WIKIBOOKS_ID,
-            f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}",
-            self.frozen.oldid(page), page + ":" + needle[:80], original, shipped, "selection", self.wikibooks_attr,
+            item_id, unit, objective, record_type, source_id,
+            source_url,
+            self.frozen.oldid(page), page + ":" + needle[:80], original, shipped, "selection", attribution,
         )
         return shipped
 
@@ -270,6 +278,11 @@ class Builder:
         source = OPENRUSSIAN_ID if example_id.startswith("ex-lex-") else WIKIBOOKS_ID
         if example_id.startswith("ex-mix-"):
             source = WIKIBOOKS_ID
+        if not example_id.startswith("ex-or-"):
+            for record in reversed(self.provenance):
+                if record["shippedText"] == display and record["objectiveId"] == objective:
+                    source = record["sourceId"]
+                    break
         self.examples.append({
             "id": example_id,
             "kind": "LEXICAL",
@@ -430,7 +443,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
 def spec_note(builder: Builder, number: int) -> str:
     notes = {
         6: "Names and dialogues stay in the copy you own. Listening stays with the book. No audio is mapped here.",
-        7: "The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.",
+        7: "The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.",
         8: "A full buying conversation stays in the copy you own. Listening stays with the book. No audio is mapped here.",
         9: "These frozen quantity examples are not a statement of a present-day amount. Listening stays with the book. No audio is mapped here.",
         10: "This unit does not teach a pattern that leaves the admitted word out. Listening stays with the book. No audio is mapped here.",
@@ -619,7 +632,7 @@ class Lesson:
                 feedback += "."
         self.builder.item(
             item_id,
-            self.builder.say(self.number, prompt),
+            prompt if quoted and self.number == 7 else self.builder.say(self.number, prompt),
             shown,
             options,
             answer,
@@ -655,13 +668,16 @@ def build_units_6_10() -> dict:
     builder = Builder(frozen)
     units = [
         _unit(builder, 6, "Admitted possession, objects, and direction", "Proposed Unit 6 uses frozen records for possession, objects, and direction. Qualified review is pending.", 18, populate),
-        _unit(builder, 7, "Admitted agreement rows", "Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.", 22, populate),
+        _unit(builder, 7, "Admitted agreement rows", "Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.", 22, populate),
         _unit(builder, 8, "Admitted plural and availability rows", "Proposed Unit 8 uses frozen plural and availability rows. Qualified review is pending.", 18, populate),
         _unit(builder, 9, "Admitted number and quantity rows", "Proposed Unit 9 uses frozen number and quantity rows. Qualified review is pending.", 26, populate),
         _unit(builder, 10, "Admitted possession and expanded rows", "Proposed Unit 10 uses frozen possession and expanded rows. Qualified review is pending.", 22, populate),
     ]
-    _adverb_orientation(builder, next(unit for unit in units if unit["number"] == 7))
+    builder.say(7, "The frozen source pairs the shown form")
+    builder.say(7, "with the admitted gloss")
+    builder.say(7, "Which admitted English gloss is written beside the shown form?")
     _assert(builder, units)
+    page = next(item for item in frozen.freeze["wikibooks"]["pages"] if item["key"] == "adverb-formation")
     return {
         "units": units,
         "items": builder.items,
@@ -669,44 +685,21 @@ def build_units_6_10() -> dict:
         "provenance": builder.provenance,
         "authored": builder.authored,
         "references": [_attribution_reference()],
+        "capabilities": [item for unit in units for item in unit["capabilities"]],
+        "sources": [{
+            "id": page["sourceId"],
+            "title": page["title"],
+            "license": LICENSE_ID,
+            "attribution": page["attribution"],
+            "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
+        }],
+        "rights": [{
+            "id": "rights-" + page["sourceId"].removeprefix("src-"),
+            "sourceId": page["sourceId"],
+            "license": LICENSE_ID,
+            "permitsAppUse": True,
+        }],
     }
-
-
-def _adverb_orientation(builder: Builder, unit: dict) -> None:
-    sentence = "Adverbs describe a verb much like adjectives describe nouns."
-    shipped = builder.wiki(
-        "prov-u7-adverb-orient", 7, "obj-u7-adverb", "adverbs", sentence, sentence, record_type="instruction",
-    )
-    teach = _step(
-        "u7-st-adverb-orient", "TEACH", builder.say(7, "Admitted orientation"), shipped,
-        reference_ids=["ref-u610-attribution"],
-    )
-    gap = _step(
-        "u7-st-adverb-gap", "UNAVAILABLE",
-        builder.say(7, "Adverb forms stay in the copy you own"),
-        builder.say(7, "The introductory adverb objective is not prepared."),
-        reference_ids=["ref-u610-attribution"],
-    )
-    gap["unavailableReason"] = "The introductory Russian adverb paradigm has no admitted frozen span."
-    objective = {
-        "id": "obj-u7-adverb",
-        "unitNumber": 7,
-        "title": "Admitted orientation",
-        "kind": "GUIDANCE",
-        "instructionStepIds": [teach["id"]],
-        "exampleIds": [],
-        "practiceStepIds": [],
-        "checkItemIds": [],
-        "remediationStepIds": [],
-    }
-    unit["sessions"].append({
-        "id": "u7-s-adverb",
-        "title": "Admitted orientation",
-        "estimatedMinutes": 4,
-        "objectiveIds": [objective["id"]],
-        "steps": [teach, gap],
-    })
-    unit["objectives"].append(objective)
 
 
 def _unit(builder, number, title, body, minimum, populate):
@@ -716,7 +709,42 @@ def _unit(builder, number, title, body, minimum, populate):
     if independent < minimum:
         raise SystemExit(f"Unit {number} has {independent} independent checks, needs {minimum}")
     sessions, objectives = _chain(builder, number, lesson.specs, title, body)
-    return {"number": number, "sessions": sessions, "objectives": objectives, "minimum_checks": minimum}
+    resolved = []
+    seen = set()
+    for spec in getattr(lesson, "capabilities", []):
+        if spec["supportedClaim"] != "adverb-paradigm" or number != 7:
+            raise SystemExit(f"Refusing to satisfy an unsupported claim: {spec}")
+        matches = [
+            record for record in builder.provenance
+            if record["unitNumber"] == number
+            and record["objectiveId"] == spec["objectiveId"]
+            and record["originalSourceText"] == spec["exactSpan"]
+        ]
+        if not matches:
+            raise SystemExit(f"Capability span was not retained for {spec['objectiveId']}")
+        host = matches[0]
+        key = (spec["objectiveId"], spec["supportedClaim"])
+        if key in seen:
+            raise SystemExit(f"Duplicate capability {key}")
+        seen.add(key)
+        resolved.append({
+            "id": f"cap-u{number}-{spec['supportedClaim']}",
+            "sourceId": host["sourceId"],
+            "sourceRevision": host["sourceRevision"],
+            "sourceRecordId": host["sourceRecordId"],
+            "sourceHash": host["sourceHash"],
+            "exactSpan": host["originalSourceText"],
+            "unitNumber": number,
+            "objectiveId": spec["objectiveId"],
+            "supportedClaim": spec["supportedClaim"],
+        })
+    return {
+        "number": number,
+        "sessions": sessions,
+        "objectives": objectives,
+        "minimum_checks": minimum,
+        "capabilities": resolved,
+    }
 
 
 def _attribution_reference() -> dict:
