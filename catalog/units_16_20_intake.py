@@ -82,6 +82,7 @@ class FrozenSources:
             raise SystemExit("OpenRussian license hash mismatch")
         if "Creative Commons Attribution-ShareAlike 4.0" not in self.pages["copyrights"]:
             raise SystemExit("Frozen Wikibooks copyrights page does not state CC BY-SA 4.0")
+        self.page_meta = {page["key"]: page for page in self.freeze["wikibooks"]["pages"]}
         admitted = {item["id"] for item in self.freeze["decisions"] if item["disposition"] == "ADMITTED"}
         required = {
             "openrussian-50e210c4803237779cb562bc1abcea529066031c",
@@ -89,6 +90,11 @@ class FrozenSources:
             "wikibooks-adjectives-4292379",
             "wikibooks-numbers-4371358",
             "wikibooks-verbal-aspect-4059032",
+            "wikipedia-russian-grammar-1369617627",
+            "wikibooks-days-3594124",
+            "wikibooks-months-4376719",
+            "wikibooks-interrogative-4220316",
+            "wikibooks-lesson3-4460699",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -131,6 +137,11 @@ class Builder:
             "numbers": "Russian/Numbers",
             "aspect": "Russian/Verbal_Aspect",
             "copyrights": "Wikibooks:Copyrights",
+            "grammar": "Russian_grammar",
+            "days": "Russian/Vocabulary/Days_of_the_Week",
+            "months": "Russian/Vocabulary/Months",
+            "interrogative": "Russian/Interrogative_Pronouns",
+            "lesson3": "Russian/Lesson_3",
         }
 
     def say(self, unit: int, text: str) -> str:
@@ -188,10 +199,16 @@ class Builder:
         if cleaned not in original and cleaned not in formatted:
             raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
         transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
+        meta = self.frozen.page_meta[page]
+        source_id = meta.get("sourceId", WIKIBOOKS_ID)
+        source_url = meta.get("url") or (
+            f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}"
+        )
+        attribution = meta.get("attribution", self.wikibooks_attr)
         self.add_provenance(
-            item_id, unit, objective, record_type, WIKIBOOKS_ID,
-            f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}",
-            self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, self.wikibooks_attr,
+            item_id, unit, objective, record_type, source_id,
+            source_url,
+            self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, attribution,
         )
         return cleaned
 
@@ -230,6 +247,11 @@ class Builder:
 
     def example(self, example_id, display, note, objective) -> None:
         source = OPENRUSSIAN_ID if example_id.startswith("ex-or-") else WIKIBOOKS_ID
+        if not example_id.startswith("ex-or-"):
+            for record in reversed(self.provenance):
+                if record["shippedText"] == display and record["objectiveId"] == objective:
+                    source = record["sourceId"]
+                    break
         self.examples.append({
             "id": example_id,
             "kind": "LEXICAL",
@@ -448,37 +470,20 @@ def build_units_16_20() -> dict:
 
     frozen = FrozenSources()
     builder = Builder(frozen)
-    prepared = [
-        _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental singular rows, instrumental plural rows, agreement rows, means and accompaniment lines, and selected governing lines. Identity, role, and becoming complements stay in the copy you own. Qualified review is pending.", 10, populate, [
-            ("complements", "Complements stay in the copy you own", "Identity, role, and becoming complements stay in the copy you own. No admitted frozen span states that pattern.", "Identity, role, and becoming complements have no admitted frozen span."),
+    units = [
+        _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.", 8, populate, [
+            ("clock-answers", "Productive clock-time answers stay in the copy you own", "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.", "Productive clock-time answers have no admitted frozen span."),
+            ("calendar-date", "Calendar-date syntax stays in the copy you own", "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.", "Calendar-date syntax has no admitted frozen span."),
         ]),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows, ordinal rows, hour rows, year rows, and minute rows. Clock time, weekdays, dates, and age stay in the copy you own. Qualified review is pending.", 8, populate, [
-            ("calendar", "Clock time and dates stay in the copy you own", "Clock time, weekdays, dates, and age stay in the copy you own. The frozen number rows do not establish those patterns.", "Telling time, weekdays, calendar dates, and age have no admitted frozen span."),
+        _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
+        _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.", 2, populate, [
+            ("probability", "Probability stays in the copy you own", "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.", "Probability use has no admitted frozen span."),
         ]),
-        _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions. Conditional patterns and obligation patterns stay in the copy you own. Qualified review is pending.", 2, populate, [
-            ("conditional", "Conditional patterns stay in the copy you own", "Conditional patterns stay in the copy you own. Prefix cautions do not supply that pattern.", "Conditional patterns have no admitted frozen span."),
-            ("obligation", "Obligation patterns stay in the copy you own", "Obligation patterns stay in the copy you own. Prefix cautions do not supply that pattern.", "Obligation patterns have no admitted frozen span."),
-        ]),
+        _unit(builder, 20, "Admitted motion lines", "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.", 2, populate, []),
     ]
-    closed = [
-        _closed_unit(
-            builder, 18, "Comparison stays unprepared",
-            "Proposed Unit 18 is not prepared. Comparison and relative-clause agreement stay in the copy you own. Qualified review is pending.",
-            [
-                ("comparison", "Comparison stays in the copy you own", "Comparison stays in the copy you own. The frozen adjective page is not a comparison source.", "Comparison forms have no admitted frozen instructional source."),
-                ("relative", "Relative-clause agreement stays in the copy you own", "Relative-clause agreement stays in the copy you own. No frozen instructional source for that pattern is admitted here.", "Relative-clause agreement has no admitted frozen instructional source."),
-            ],
-        ),
-        _closed_unit(
-            builder, 20, "Motion pairs stay unprepared",
-            "Proposed Unit 20 is not prepared. Motion pairs stay in the copy you own. Qualified review is pending.",
-            [
-                ("motion", "Motion pairs stay in the copy you own", "Motion pairs stay in the copy you own. A red link is not an instructional source. A general page is not enough. Dictionary rows are not a motion curriculum.", "Unidirectional and multidirectional motion pairs have no admitted frozen instructional source. A red link, a general page, and dictionary rows are not that source."),
-            ],
-        ),
-    ]
-    units = prepared + closed
     _assert(builder, units)
+    capabilities = [item for unit in units for item in unit["capabilities"]]
     return {
         "units": units,
         "items": builder.items,
@@ -486,7 +491,26 @@ def build_units_16_20() -> dict:
         "provenance": builder.provenance,
         "authored": builder.authored,
         "references": [_attribution_reference()],
+        "capabilities": capabilities,
     }
+
+
+RESOLVED_CLAIMS = {
+    "instrumental-complements",
+    "age",
+    "weekdays",
+    "months",
+    "clock-question",
+    "comparison",
+    "relative-kotoryy",
+    "conditional-by",
+    "obligation-dolzhen",
+    "motion-directionality",
+    "motion-foot-transport",
+    "motion-carrying-leading",
+    "motion-po-setting-out",
+    "motion-prefixed-path",
+}
 
 
 def _unit(builder, number, title, body, minimum, populate, gaps):
@@ -500,20 +524,57 @@ def _unit(builder, number, title, body, minimum, populate, gaps):
         session, objective = _gap(builder, number, slug, gap_title, gap_body, reason)
         sessions.append(session)
         objectives.append(objective)
-    return {"number": number, "sessions": sessions, "objectives": objectives, "minimum_checks": minimum}
+    resolved = []
+    seen = set()
+    for spec in lesson.capabilities:
+        if spec["supportedClaim"] not in RESOLVED_CLAIMS:
+            raise SystemExit(f"Refusing to satisfy an unsupported claim: {spec}")
+        matches = [
+            record for record in builder.provenance
+            if record["unitNumber"] == number
+            and record["objectiveId"] == spec["objectiveId"]
+            and record["originalSourceText"] == spec["exactSpan"]
+        ]
+        if not matches:
+            raise SystemExit(f"Capability span was not retained for {spec['objectiveId']} {spec['supportedClaim']}")
+        host = matches[0]
+        key = (spec["objectiveId"], spec["supportedClaim"])
+        if key in seen:
+            raise SystemExit(f"Duplicate capability {key}")
+        seen.add(key)
+        resolved.append({
+            "id": f"cap-u{number}-{spec['supportedClaim']}",
+            "sourceId": host["sourceId"],
+            "sourceRevision": host["sourceRevision"],
+            "sourceRecordId": host["sourceRecordId"],
+            "sourceHash": host["sourceHash"],
+            "exactSpan": host["originalSourceText"],
+            "unitNumber": number,
+            "objectiveId": spec["objectiveId"],
+            "supportedClaim": spec["supportedClaim"],
+        })
+    return {
+        "number": number,
+        "sessions": sessions,
+        "objectives": objectives,
+        "minimum_checks": minimum,
+        "capabilities": resolved,
+    }
 
 
 def _attribution_reference() -> dict:
     return {
         "id": REFERENCE,
         "title": "Units 16–20 source notice",
-        "summary": "Proposed Units 16, 17, and 19 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts. Units 18 and 20 do not.",
+        "summary": "Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.",
         "detail": (
             "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c "
-            "under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. "
+            "under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
+            "Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. "
+            "Those license routes are not interchangeable. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
             "No audio is included. Learner-facing dictionary glosses are delimited sense selections. "
-            "Comparison, relative-clause agreement, conditional patterns, obligation patterns, and motion pairs are not prepared. Review is pending."
+            "Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending."
         ),
         "introducedInUnit": 16,
         "sourceId": WIKIBOOKS_ID,
@@ -568,9 +629,9 @@ def _assert(builder: Builder, units: list[dict]) -> None:
             for dirty in DIRTY_LEARNER_TEXT:
                 if dirty in host:
                     raise SystemExit(f"Unit {number} ships a dirty gloss: {dirty}")
-    for number in (18, 20):
-        if any(record["unitNumber"] == number and CYRILLIC.search(record["shippedText"]) for record in builder.provenance):
-            raise SystemExit(f"Unit {number} shipped Russian without an admitted instructional source")
+            for banned in ("dolphin", "pronounced", "Remember that", "Wade", "Blackwell"):
+                if banned.casefold() in host.casefold():
+                    raise SystemExit(f"Unit {number} ships excluded commentary: {banned}")
 
 
 if __name__ == "__main__":

@@ -685,35 +685,40 @@ internal object V2Validator {
     }
 
     private fun completionGapErrors(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        if (unit.number == 7) {
+            return missingCapabilityError(
+                pack,
+                unit,
+                "Unit 7 is not content-complete without an admitted introductory adverb paradigm source capability",
+            )
+        }
         if (unit.number !in 16..30) return emptyList()
-        val records = pack.provenanceRecords.filter { it.unitNumber == unit.number }
-        val joined = records.joinToString("\n") { it.originalSourceText }
         return when (unit.number) {
-            16 -> if (hasComplementSpan(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 16 is not content-complete without an admitted instrumental complement span")
-            }
-            17 -> if (hasCalendarSpan(joined)) {
-                emptyList()
-            } else {
-                listOf("Unit 17 is not content-complete without telling-time, weekday, date, and age sources")
-            }
-            18 -> if (hasComparisonSource(records) && hasRelativeSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 18 is not content-complete without comparison and relative-clause sources")
-            }
-            19 -> if (hasConditionalSource(records) && hasObligationSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 19 is not content-complete without conditional and obligation sources")
-            }
-            20 -> if (hasMotionSource(records)) {
-                emptyList()
-            } else {
-                listOf("Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone")
-            }
+            16 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 16 is not content-complete without an admitted instrumental complement span source capability",
+            )
+            17 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 17 is not content-complete without telling-time, weekday, date, and age sources as required source capabilities",
+            )
+            18 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities",
+            )
+            19 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 19 is not content-complete without conditional and obligation sources as required source capabilities",
+            )
+            20 -> missingCapabilityError(
+                pack,
+                unit,
+                "Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone",
+            )
             21 -> missingCapabilityError(
                 pack,
                 unit,
@@ -744,65 +749,52 @@ internal object V2Validator {
         }
     }
 
-    private fun dictionaryRow(record: V2ProvenanceRecord): Boolean {
-        return record.sourceId == "src-openrussian-50e210c4" ||
-            record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c")
-    }
-
-    private fun hasComplementSpan(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            text.contains("work as") || text.contains("become") || text.contains("\u0441\u0442\u0430\u0442\u044c")
-        }
-    }
-
-    private fun hasCalendarSpan(text: String): Boolean {
-        val folded = text.lowercase()
-        val weekday = folded.contains("\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a") || folded.contains("monday")
-        val clock = folded.contains("o'clock") || folded.contains("half past") || folded.contains("\u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0447\u0430\u0441")
-        val date = folded.contains("\u044f\u043d\u0432\u0430\u0440\u044f") || folded.contains("january")
-        val age = folded.contains("years old")
-        return weekday && clock && date && age
-    }
-
-    private fun hasComparisonSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            record.sourceRevision != "4292379" &&
-                !dictionaryRow(record) &&
-                (text.contains("comparative") || text.contains("superlative")) &&
-                text.any { it.code in 0x0400..0x04FF }
-        }
-    }
-
-    private fun hasRelativeSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            record.sourceRevision != "4292379" &&
-                !dictionaryRow(record) &&
-                record.originalSourceText.contains("\u043a\u043e\u0442\u043e\u0440")
-        }
-    }
-
-    private fun hasConditionalSource(records: List<V2ProvenanceRecord>): Boolean {
-        val particle = Regex("(?<![\\p{L}])\u0431\u044b(?![\\p{L}])")
-        return records.any { record ->
-            record.sourceRevision != "4059032" &&
-                !dictionaryRow(record) &&
-                particle.containsMatchIn(record.originalSourceText)
-        }
-    }
-
-    private fun hasObligationSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            record.sourceRevision != "4059032" &&
-                !dictionaryRow(record) &&
-                record.originalSourceText.contains("\u0434\u043e\u043b\u0436\u0435\u043d")
-        }
-    }
-
     private data class RequiredSourceCapability(val objectiveId: String, val claim: String)
 
+    private val BATCH_A_OBJECTIVES = setOf(
+        "obj-u16-complements",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u20-motion",
+    )
+
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
+        7 to listOf(
+            RequiredSourceCapability("obj-u7-adverb", "adverb-paradigm"),
+        ),
+        16 to listOf(
+            RequiredSourceCapability("obj-u16-complements", "instrumental-complements"),
+        ),
+        17 to listOf(
+            RequiredSourceCapability("obj-u17-age", "age"),
+            RequiredSourceCapability("obj-u17-weekdays", "weekdays"),
+            RequiredSourceCapability("obj-u17-months", "months"),
+            RequiredSourceCapability("obj-u17-clock", "clock-question"),
+            RequiredSourceCapability("obj-u17-clock-answers", "productive-clock-time"),
+            RequiredSourceCapability("obj-u17-calendar-date", "calendar-date"),
+        ),
+        18 to listOf(
+            RequiredSourceCapability("obj-u18-comparison", "comparison"),
+            RequiredSourceCapability("obj-u18-relative", "relative-kotoryy"),
+        ),
+        19 to listOf(
+            RequiredSourceCapability("obj-u19-conditional", "conditional-by"),
+            RequiredSourceCapability("obj-u19-obligation", "obligation-dolzhen"),
+            RequiredSourceCapability("obj-u19-probability", "probability-dolzhen"),
+        ),
+        20 to listOf(
+            RequiredSourceCapability("obj-u20-motion", "motion-directionality"),
+            RequiredSourceCapability("obj-u20-motion", "motion-foot-transport"),
+            RequiredSourceCapability("obj-u20-motion", "motion-carrying-leading"),
+            RequiredSourceCapability("obj-u20-motion", "motion-po-setting-out"),
+            RequiredSourceCapability("obj-u20-motion", "motion-prefixed-path"),
+        ),
         21 to listOf(
             RequiredSourceCapability("obj-u21-object-reference", "reflexive-object"),
             RequiredSourceCapability("obj-u21-purpose", "purpose-clause"),
@@ -859,6 +851,28 @@ internal object V2Validator {
      * capabilities are unresolved. Units 27, 29, and 30 also stay closed while
      * the authority variance is proposed and not activated.
      */
+    /**
+     * Units 17 and 19 stay blocked after a readiness edit while productive
+     * clock-time, calendar-date, or probability evidence is still unresolved.
+     * Unit 7 does not use this gate.
+     */
+    internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
+        return when (unit.number) {
+            17 -> if ("productive-clock-time" in unresolved || "calendar-date" in unresolved) {
+                listOf("Unit 17 is missing productive clock-time and calendar-date source capabilities")
+            } else {
+                emptyList()
+            }
+            19 -> if ("probability-dolzhen" in unresolved) {
+                listOf("Unit 19 is missing a probability source capability")
+            } else {
+                emptyList()
+            }
+            else -> emptyList()
+        }
+    }
+
     internal fun unresolvedLateUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         if (unit.number !in 26..30) return emptyList()
         val blockers = mutableListOf<String>()
@@ -1098,18 +1112,6 @@ internal object V2Validator {
                     it.objectiveId == capability.objectiveId
             }
             bound && item.assessment?.independent == true && structureValid(pack, item).isEmpty()
-        }
-    }
-
-    private fun hasMotionSource(records: List<V2ProvenanceRecord>): Boolean {
-        return records.any { record ->
-            val text = record.originalSourceText.lowercase()
-            record.sourceRevision != "4233876" &&
-                record.sourceRevision != "4059032" &&
-                record.sourceRevision != "red-link" &&
-                !dictionaryRow(record) &&
-                text.contains("unidirectional") &&
-                text.contains("multidirectional")
         }
     }
 
@@ -1876,8 +1878,49 @@ internal object V2Validator {
         if (!citesFrozenEvidence(why, originals)) {
             errors += "Item ${item.id} answer rationale does not cite the frozen evidence"
         }
+        errors += keyedGlossErrors(item)
         return errors
     }
+
+    /**
+     * Batch A gloss checks must describe the keyed shown form and answer.
+     * A swapped gloss, or a numbered "other gloss" rationale, fails here.
+     */
+    private fun keyedGlossErrors(item: V2CheckItem): List<String> {
+        if (item.objectiveId !in BATCH_A_OBJECTIVES) return emptyList()
+        val assessment = item.assessment ?: return listOf("Item ${item.id} explanation does not name the keyed answer")
+        val why = assessment.whyAnswerDemonstratesObjective
+        val errors = mutableListOf<String>()
+        val shown = item.promptLetter.orEmpty()
+        if (!namesGloss(why, item.answer) || !namesGloss(item.feedback, item.answer)) {
+            errors += "Item ${item.id} explanation does not name the keyed answer"
+        }
+        if (shown.isNotBlank() && !namesGloss(why, shown)) {
+            errors += "Item ${item.id} explanation does not name the shown form"
+        }
+        item.options.filter { it != item.answer }.forEach { distractor ->
+            if (namesGloss(why, distractor) && !namesGloss(item.answer, distractor)) {
+                errors += "Item ${item.id} explanation names a different gloss"
+            }
+        }
+        item.options.forEachIndexed { index, option ->
+            if (option == item.answer) return@forEachIndexed
+            val rationale = item.distractorRationales.getOrElse(index) { "" }
+            val difference = assessment.distractorDifference.getOrElse(index) { "" }
+            if (!namesGloss(rationale, option) || !namesGloss(difference, option)) {
+                errors += "Item ${item.id} distractor rationale does not name its competing gloss"
+            }
+            if (namesGloss(rationale, item.answer) && !namesGloss(option, item.answer)) {
+                errors += "Item ${item.id} distractor rationale names the keyed answer"
+            }
+            if (namesGloss(difference, item.answer) && !namesGloss(option, item.answer)) {
+                errors += "Item ${item.id} distractor rationale names the keyed answer"
+            }
+        }
+        return errors
+    }
+
+    private fun namesGloss(host: String, phrase: String): Boolean = phrase.isNotEmpty() && host.contains(phrase)
 
     private fun citesFrozenEvidence(why: String, originals: List<String>): Boolean {
         if (why.length < 12) return false
@@ -1893,7 +1936,7 @@ internal object V2Validator {
         val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
         val feature = assessment.testedFeature
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 21..30) {
+        if (unitNumber in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
             errors += observableDistinctionErrors(pack, item)
         } else {
             val phrase = TARGET_PHRASES[feature]
@@ -2172,7 +2215,7 @@ internal object V2Validator {
                 }
             }
             val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-            if (governedUnit in 6..15 || governedUnit in 21..30) {
+            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
                 errors += structureValid(pack, item)
             }
         }

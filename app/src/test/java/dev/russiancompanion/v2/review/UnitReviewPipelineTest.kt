@@ -94,7 +94,7 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
-        val packetUnits = (1..15).toList() + listOf(16, 17, 19, 21, 22, 24, 25, 26, 27, 28, 29, 30)
+        val packetUnits = (1..15).toList() + listOf(16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30)
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
             packetUnits.forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
@@ -107,7 +107,7 @@ class UnitReviewPipelineTest {
             assertTrue(errors.joinToString("\n"), errors.isEmpty())
             assertEquals(renderUnitReviewFiles(pack, number).files, committed)
         }
-        listOf(18, 20, 23).forEach { number ->
+        listOf(23).forEach { number ->
             assertFalse(File(repo(), "review/unit-$number").exists())
         }
     }
@@ -353,9 +353,9 @@ class UnitReviewPipelineTest {
                 curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
                 curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
             )
-            assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isNotEmpty())
+            assertTrue(curriculumSourceCommitErrors("c9f23afd219681319554d90424f2d59fd550cadc", root, number).isNotEmpty())
         }
-        listOf(16, 17, 19).forEach { number ->
+        listOf(16, 17, 18, 19, 20).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
             assertTrue(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
             assertFalse(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
@@ -373,7 +373,7 @@ class UnitReviewPipelineTest {
                 curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).joinToString("\n"),
                 curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).isEmpty(),
             )
-            assertTrue(curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).isNotEmpty())
+            assertTrue(curriculumSourceCommitErrors("55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511", root, number).isNotEmpty())
         }
     }
 

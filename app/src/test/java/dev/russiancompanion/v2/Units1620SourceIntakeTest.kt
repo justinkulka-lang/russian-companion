@@ -48,7 +48,8 @@ class Units1620SourceIntakeTest {
             val unit = pack.unit(number)!!
             val facts = governedMappingFacts(number)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
+            val expectedReadiness = if (number in setOf(16, 18, 20)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED"
+            assertEquals(expectedReadiness, unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -83,6 +84,11 @@ class Units1620SourceIntakeTest {
             "numbers" to "4371358",
             "aspect" to "4059032",
             "copyrights" to "4622060",
+            "grammar" to "1369617627",
+            "days" to "3594124",
+            "months" to "4376719",
+            "interrogative" to "4220316",
+            "lesson3" to "4460699",
         )
         val seen = mutableSetOf<String>()
         pages.forEach { element ->
@@ -130,21 +136,19 @@ class Units1620SourceIntakeTest {
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.audioAssets.size)
-        assertTrue(pack.provenanceRecords.none { it.unitNumber in setOf(18, 20) && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
+        assertTrue(pack.provenanceRecords.any { it.unitNumber in setOf(18, 20) && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
     }
 
     @Test
     fun unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance() {
         val pack = pack()
-        assertTrue(reason(pack, 16).contains("becoming complements"))
-        assertTrue(reason(pack, 17).contains("weekdays"))
-        assertTrue(reason(pack, 17).contains("age"))
-        assertTrue(reason(pack, 18).contains("Comparison forms"))
-        assertTrue(reason(pack, 18).contains("Relative-clause"))
-        assertTrue(reason(pack, 19).contains("Conditional patterns"))
-        assertTrue(reason(pack, 19).contains("Obligation patterns"))
-        assertTrue(reason(pack, 20).contains("red link"))
-        listOf(16, 17, 18, 19, 20).forEach { number ->
+        assertFalse(reason(pack, 16).contains("becoming complements"))
+        assertTrue(reason(pack, 17).contains("Productive clock-time"))
+        assertTrue(reason(pack, 17).contains("Calendar-date"))
+        assertFalse(reason(pack, 18).contains("Comparison forms"))
+        assertTrue(reason(pack, 19).contains("Probability"))
+        assertFalse(reason(pack, 20).contains("red link"))
+        listOf(17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -152,21 +156,40 @@ class Units1620SourceIntakeTest {
                 learner(
                     number,
                     book = true,
-                    correct = unit.objectives.flatMap { it.checkItemIds }.toSet(),
+                    correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
                     steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
                 ),
             )
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
         }
+        listOf(16, 18, 20).forEach { number ->
+            val unit = pack.unit(number)!!
+            val decision = advancementDecision(
+                pack,
+                unit,
+                learner(
+                    number,
+                    book = true,
+                    correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                    steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                ),
+            )
+            assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        }
     }
 
     @Test
     fun unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources() {
         val pack = pack()
-        val errors = V2Validator.validate(claimComplete(pack, 18)).errors
+        assertTrue(
+            V2Validator.validate(claimComplete(pack, 18)).errors.joinToString("\n"),
+            V2Validator.validate(claimComplete(pack, 18)).ok,
+        )
+        val stripped = withoutCapabilities(pack, 18)
+        val errors = V2Validator.validate(claimComplete(stripped, 18)).errors
         assertTrue(errors.joinToString("\n"), errors.any { it.contains("without comparison and relative-clause sources") })
-        val adjectiveOnly = pack.copy(
+        val adjectiveOnly = stripped.copy(
             provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.sourceRevision == "4292379" }.copy(
                 unitNumber = 18,
                 originalSourceText = "comparative лу'чше and superlative который are inferred",
@@ -174,7 +197,7 @@ class Units1620SourceIntakeTest {
         )
         val inferred = V2Validator.validate(claimComplete(adjectiveOnly, 18)).errors
         assertTrue(inferred.joinToString("\n"), inferred.any { it.contains("without comparison and relative-clause sources") })
-        val dictionaryOnly = pack.copy(
+        val dictionaryOnly = stripped.copy(
             provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.sourceId == "src-openrussian-50e210c4" }.copy(
                 unitNumber = 18,
                 originalSourceText = "comparative хороший superlative который",
@@ -201,7 +224,12 @@ class Units1620SourceIntakeTest {
     @Test
     fun unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows() {
         val pack = pack()
-        val base = V2Validator.validate(claimComplete(pack, 20)).errors
+        assertTrue(
+            V2Validator.validate(claimComplete(pack, 20)).errors.joinToString("\n"),
+            V2Validator.validate(claimComplete(pack, 20)).ok,
+        )
+        val stripped = withoutCapabilities(pack, 20)
+        val base = V2Validator.validate(claimComplete(stripped, 20)).errors
         assertTrue(base.joinToString("\n"), base.any { it.contains("red link, general verb page, or dictionary rows") })
         val samples = listOf(
             sample(pack, "red-link", "src-wikibooks-russian-cc-by-sa", "Verbs of Motion"),
@@ -209,7 +237,7 @@ class Units1620SourceIntakeTest {
             sample(pack, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", "dictionary row unidirectional multidirectional"),
         )
         samples.forEach { record ->
-            val claimed = pack.copy(provenanceRecords = pack.provenanceRecords + record)
+            val claimed = stripped.copy(provenanceRecords = stripped.provenanceRecords + record)
             val errors = V2Validator.validate(claimComplete(claimed, 20)).errors
             assertTrue(errors.joinToString("\n"), errors.any { it.contains("red link, general verb page, or dictionary rows") })
         }
@@ -245,16 +273,20 @@ class Units1620SourceIntakeTest {
         assertFalse(mediaWiki(instrumental))
         assertFalse(instrumental.contains("\u0301"))
         assertTrue(instrumental.contains("\u043e"))
-        listOf(18, 20).forEach { number ->
+        listOf(16, 18, 20).forEach { number ->
+            val unit = pack.unit(number)!!
+            assertEquals("DEVELOPMENT", unit.installState)
+            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
+            assertTrue(pack.provenanceRecords.any { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
+        }
+        listOf(17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals("NOT_PREPARED", unit.readiness)
-            assertTrue(pack.provenanceRecords.none { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
         }
         listOf(16, 17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals("NOT_PREPARED", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
             val packet = renderUnitReviewFiles(pack, number).files.getValue(reviewPacketName(number))
@@ -322,6 +354,10 @@ class Units1620SourceIntakeTest {
         assertTrue(candidate.contains("\"sourceCommit\": null"))
         assertTrue(candidate.contains("AT-031"))
     }
+
+    private fun withoutCapabilities(pack: V2CurriculumPack, number: Int) = pack.copy(
+        sourceCapabilities = pack.sourceCapabilities.filter { it.unitNumber != number },
+    )
 
     private fun reason(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, number: Int): String {
         return pack.unit(number)!!.sessions.flatMap { it.steps }.mapNotNull { it.unavailableReason }.joinToString("\n")

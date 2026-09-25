@@ -1,0 +1,737 @@
+{{Russian}}
+
+:Я студeнт.
+
+This means "I am a student" in Russian.
+
+* "Я" means "I".
+* "студе́нт", as you may remember from [[Russian/Lesson_1|Lesson 1]], means "student".
+* Russian does not distinguish "''a'' student" from "''the'' student"; that is, it does not use ''articles'' ("a", "an", "the").  So the above sentence could also be translated as "I am ''the'' student."
+* Russian does not use the verb ''to be'' in the present tense.  Instead, a dash separates the subject of the sentence from the predicate (but the dash is not put between a ''pronoun'' and a verb).
+
+Examples
+{|
+| style="font-size: smaller" | You
+| style="font-size: smaller" | not
+| style="font-size: smaller" | student.
+| rowspan="2" valign="bottom" | ("You are not a student.")
+|-
+| Ты
+| ''не''
+| студeнт.
+|}
+
+{|
+| style="font-size: smaller" | This
+| style="font-size: smaller" | boy &ndash;
+| style="font-size: smaller" | student.
+| rowspan="2" valign="bottom"  | ("This boy is a student.")
+|-
+| Этот
+| мальчик &ndash;
+| студeнт.
+|}
+
+
+Russian has eight personal pronouns altogether:
+
+<!-- not counting the other cases, but trying not to scare the reader -->
+
+
+{| border="1"
+|-
+| я (I) || мы (we)
+|-
+| ты (you, singular) || вы (you, plural)
+|-
+| он (he), она́ (she), оно́ (it) || они́ (they)
+|}
+
+==Grammar vs. vocabulary; "getting by" vs. "good Russian"==
+Are you learning Russian to "get by" on a one-week business trip to Moscow? Or do you want to learn "good Russian"? 
+
+To "get by" you need basic grammar, but not the byzantine grammar of "good Russian." You could treat all nouns as if they were masculine, and all verbs as if you are the person doing the action, and Russians would understand your meaning. But you should read over the many grammar rules so that you have a clue what Russians are saying. E.g., you should be able to recognize when a Russian uses the prepositional case, even if you only use the nominative case.
+
+If you want to marry a Russian, learn good Russian. Russians (and people all over the world) are impressed by good language skills. Note that in English the words "conjugate" (to produce the different forms of a verb) and "conjugal" (relating to marriage) come from the same root word (meaning "to join together"). In other words, Russians think that someone who can say "I study, you study, he studies, she studies, we study, they study" correctly (in Russian) will make a good spouse!
+
+Native speakers learn grammar as children, by listening to adults talk, and being corrected by their peers. A child who reads a lot, and whose parents speak correctly, doesn't need to learn grammar rules. As an adult learning Russian, you'll learn best if a native Russian listens to you and corrects your mistakes. But the grammar rules will act as shortcuts, to help you learn faster.
+
+When learning anything, some people are auditory learners, some are visual, and some are movement learners. (See "The Open Mind," by Dawna Marcova, for more about this.) But all three learning styles are needed for organizing and committing to long-term memory. You may prefer to hear spoken Russian, or see written Russian, or (for movement learners) write a Russian word and then write how it sounds in English. You may need to do an activity, such as cooking dinner, to pay attention. But all of us need to do all of these things to learn well.
+
+==Gender==
+<!-- The following grammar sections should be broken up into additional lessons. -->
+You may guess correctly that the correct way to say "''He'' is a student" in Russian is "Он студент."  However, things change a bit when talking about "она".  As in many Indo-European languages&mdash;including English until several hundred years ago&mdash;''gender'' is an important feature of Russian grammar.  Every noun, as well as the three third-person singular pronouns, has a characteristic gender: masculine, feminine, or neuter.
+
+Masculine nouns end in a consonant. Remember that й is a consonant.
+
+Feminine nouns end in а or я. 
+
+Neuter nouns end in о or е.
+
+Nouns ending in ь can be masculine or feminine. Nouns ending in ь that describe abstract concepts are generally feminine, but otherwise there's no rule; you just have to memorize these words.
+
+===quiz===
+<quiz display=simple>
+{Она Арти́стка
+|type="()"}
+- masculine
++ feminine
+- neuter
+</quiz>
+
+<!-- ... студентка ... -->
+
+==Formal and Informal==
+
+Russians differentiate between formal and informal social relationships. Two words translate to "you": Вы (pronounced "vee" but make it short, don't draw out the vowel) is how you say "you" to a teacher, police officer, etc. Ты (pronounced "tee") is how you say "you" to a friend or family member. Russians are more formal than Americans, so if in doubt use Вы!
+
+Вы is also "you plural" or "you all." In other words, you address a superior person as if he or she were several people.
+
+The greeting здравствуйте (formal) and здравствуй (informal) has two forms.
+
+The word "your" also comes in formal and informal: ваш (formal) and твой (informal).
+
+===quiz===
+<quiz display=simple>
+{Привет ! Меня зовут Андрей. А тебя?
+|type="()"}
+- formal
++ informal
+
+
+{Здравствуйте! Меня зовут Петр, а Вас?
+|type="()"}
++ formal
+- informal
+</quiz>
+
+==Russian names==
+
+Russians use three names: first name, or имя; middle or patronymic name, or отчество, which is their father's first name plus a suffix meaning "son of" (ович) or "daughter of" (овна); and the last name or family name, or фамилия. Women's last names add an "а" to the masculine form of the name.
+
+To address a Russian formally, don't use "Mr." or "Ms." Instead, address the person using his or her first name and patronymic.
+
+Russians use relatively few first names. There are only a dozen or so men's first names, and maybe three dozen women's first names. Creativity in baby-naming isn't encouraged.
+
+Russians also use diminutives or nicknames. Each name typically has a version used by your best friend, another used by your other friends, another used by your teachers, another used by your grandmother, another used when you are scolded, etc.
+
+==Noun Cases==
+English uses word order to indicate a sentence's subject and object. E.g., "Bob eats lunch" and "Lunch eats Bob" have different meanings in English. Word order is less important in Russian. Instead, meaning is conveyed by suffixes. It would be like an eaten lunch becoming "lunchoo," so you could say "Bob eats lunchoo" or "Lunchoo eats Bob," and still make it clear that it's the lunch that is eaten (not Bob).
+
+This would be straightforward enough if there were simply one case for the subject of a sentence, and a second case for the object of the sentence. Instead, Russian has six cases, conveying such meanings as where you are vs. where you're going, or whether the object of the sentence is animate or inanimate!
+
+===Nominative case===
+The primary case, used for the subject of the sentence ("Bob"), is called the nominative case. This is the case you find in dictionaries.
+
+===Accusative case===
+"Lunch" is the direct object of "Bob eats lunch." The direct object is used in the accusative case. Inanimate masculine and neuter nouns in the accusative case are the same as nouns in the nominative case. Feminine nouns change their а or я ending to у or ю, respectively. E.g., "car" is машина (pronounced "masheena") in nominative case, and машину (pronounced "masheenoo")in the accusative case.
+
+===Prepositional case===
+When a sentence contains a complement of location, the noun is in the prepositional case. In general, you add е (pronounced "yeh") to end of the word. E.g., "I live in Michigan" becomes "I live in Michigane." If the word ends in й, а, or я, replace that letter with е. E.g., "She works in Minnesota" becomes "She works in Minnesote."
+
+There are two exceptions to the е ending. Never write ие, instead write ии (yes, Russians pronounce both, like "ee-ee"). The other exception is foreign nouns ending in о, и, or у. These look the same as the nominative case. E.g., Colorado, Kentucky, and Peru don't change.
+
+Nouns in the prepositional case are always preceded by "in" or "about." Each word comes in two versions. If "in" is an activity, or a place where an activity is done (for example, the ballet) use на (pronounced "na"). For other places, use в (pronounced "veh" or pronounced with the next word if it starts with a vowel, e.g., "in Atlante" would be "vatlante"). 
+
+"About" is о, or, if the following word starts with a vowel, об. There are several cases when "about" is обо, e.g. обо мне.
+
+====Куда vs. где====
+Куда asks "where (whither) are [you/he/she/etc.] going?" It's pronounced "koodá.".
+
+Где asks "where are [you/he/she/etc.]?" I.e., куда is moving, где is static. It's pronounced "gdye," with the d palatalized.
+
+Statements that could answer the question куда are in the accusative case. E.g., "We're driving to St. Petersburg, Florida" would be in the accusative case, if you said it in Russian.
+
+Statements that could answer the question где are in the prepositional case. E.g., "We live in Moscow, Idaho" would be in the prepositional case. 
+
+This is easy to remember because the vowels in Куда are у and а—nouns that end in а (feminine nouns) change to у in the accusative case. The vowel in где is е, the letter you add to end nouns in the prepositional case.
+
+===Genitive case===
+
+The genitive case is used to show possession, negation, and quantity such as numbers. E.g., <q>I have six chairs</q> (У меня есть шесть стульев) is plural both in English and in Russian! It's genitive case.
+
+====Genitive nouns====
+
+Masculine and neuter nouns form the genitive case the same way: add а at the end. E.g., стол (sing. table) becomes стола́, but столы́ (pl. tables) becomes столо́в. The exceptions are masculine words ending in й or ь add я. if the word ends in a vowel, drop the vowel then add a.
+
+Feminine nouns drop the а and add ы. E.g., лампа (lamp) becomes лампы. The exceptions are if the word ends in я or ь, or for the 7-letter spelling rule, add и.
+
+====Genitive adjectives====
+
+Masculine and neuter adjectives form the genitive case the same way: change the ending to ого. This is pronounced "ovo"! The exceptions are masculine words ending in й or ь, or for the 5-letter spelling rule with the ending unstressed, change to его (pronounced "yevo").
+
+Feminine adjectives change the ending to ой (rhymes with "boy"). The exceptions are feminine words ending in й or ь, or for the 5-letter spelling rule with the ending unstressed, change to ей (pronounced "yay").
+
+====Genitive case of possessive pronouns====
+
+{| class="wikitable"
+|-
+!Nominative
+!Genitive
+!Meaning
+|-
+|мой, моё (masc., neut.)
+|моего́
+|my
+|-
+|твой, твоё (masc., neut.)
+|твоего́
+|your (informal)
+|-
+|наш, на́ше (masc., neut.)
+|на́шего
+|our
+|-
+|ваш, ва́ше (masc., neut.)
+|ва́шего
+|your (formal, plural)
+|-
+|моя́ (feminine)
+|мое́й
+|my
+|-
+|твоя́ (feminine)
+|твое́й
+|your (informal)
+|-
+|на́ша (feminine)
+|на́шей
+|our
+|-
+|ва́ша (feminine)
+|ва́шей
+|your (formal, plural)
+|}
+
+The possessive pronouns его́, её, and их (his, hers, theirs) never change.
+
+====Genitive case of demonstrative pronouns====
+
+{| class="wikitable"
+|-
+!Nominative
+!Genitive
+!Meaning
+|-
+|тот, то (masc., neut.)
+|того́
+|that
+|-
+|э́то, э́тот (masc., neut.)
+|э́того
+|this
+|-
+|та (feminine)
+|той
+|that
+|-
+|э́та (feminine)
+|э́той
+|this
+|-
+|те (plural)
+|тех
+|those
+|-
+|э́ти (plural)
+|э́тих
+|these
+|}
+
+====Genitive case of "one" and "third"====
+
+{| class="wikitable"
+|-
+!Nominative
+!Genitive
+!Meaning
+|-
+|оди́н, одно́ (masc., neut.)
+|одного́
+|one
+|-
+|тре́тий, тре́тье (masc., neut.)
+|тре́тьего
+|third
+|-
+|одна́ (feminine)
+|одно́й
+|one
+|-
+|тре́тья (feminine)
+|тре́тьей
+|third
+|}
+
+===="I have something"====
+Genitive case is also used for saying you have something, or you don't have something. To say that you have something, start with У (means <q>by</q> or <q>next to</q>). Then change the pronoun (я, ты, вы, etc.) to the following:
+
+{| class="wikitable"
+|-
+!Nominative
+!Genitive
+!Pronunciation
+!Meaning
+|-
+|кто
+|у кого́
+|oo kovo
+|who
+|-
+|я
+|у меня́
+|oo myehnyah
+|I have
+|-
+|ты
+|у тебя́
+|oo tyebyah
+|you have (informal)
+|-
+|он
+|у него́
+|oo nyehvo
+|he has
+|-
+|она
+|у неё
+|oo nyehyo
+|she has
+|-
+|мы
+|у нас
+|oo nas
+|we have
+|-
+|вы
+|у вас
+|oo vas
+|you have (formal or plural)
+|-
+|они
+|у них
+|oo neekh
+|they have
+|}
+In many cases, the genitive ого́ ending is irregularly pronounced ovo.
+
+In other words, Russians don't say <q>Ivan has a dacha,</q> but rather say <q>By Ivan is dacha.</q>
+
+===="No something"====
+In Russian, you use genitive instead of nominative with negative word нет ''n'et'' "no" when you want to say that there isn't something or one does not have something. If there is none of it, it can't be the subject, right?
+{| class="wikitable"
+|-
+!Positive
+!Negative
+|-
+|В городе есть аэропорт.<br/>
+''vgorradi yest' aihruhporrt''<br/>
+In (the) city there is an airport.
+|В городе нет аэропорта.<br/>
+''vgorradi n'et aihruhporrta''<br/>
+In (the) city there is no airport.
+|-
+|У меня есть кошка.<br/>
+''oo mehn'ah yest' koshka''<br/>
+I have a cat.
+|У меня нет кошки.<br/>
+''oo mehn'ah n'et koshki''<br/>
+I have no cat.
+|}
+
+===Dative case===
+
+Dative case is used with the indirect object of a sentence. It is, when people want <q>to say something to her</q> or <q>to give(to sell, to show and etc.) something to him</q>, etc. (for example: He shows to her this beautiful picture (Он пока́зывает ей э́ту прекра́сную карти́ну). Note here the difference between the direct object from earlier and the indirect object: Ivan gives a ''letter'' (direct object, accusative case) to his ''sister'' (indirect object, dative case; also depending on the vowel. If it is silent or not. But that rarely happens in modern Russian)
+
+{| class="wikitable"
+|-
+!Nominative
+!Dative
+!Pronunciation
+!Meaning
+|-
+|кто
+|ком'у
+|komoo
+|to whom
+|-
+|я
+|мне
+|mnye
+|to me
+|-
+|ты
+|теб'е
+|tyebye
+|to you (informal)
+|-
+|он
+|ем'у
+|yemoo
+|to him
+|-
+|она
+|ей
+|yey
+|to her
+|-
+|мы
+|нам
+|nam<ref name=a_in_nam_vam>The letter <q>а</q> in нам and вам is pronouncing as <q>U</q> in pronoun <q>Us</q>.</ref>
+|to us
+|-
+|вы
+|вам
+|vam<ref name=a_in_nam_vam/>
+|to you (formal or plural)
+|-
+|они
+|им
+|eem
+|to them
+|}
+
+{{reflist}}
+
+====Dative case quiz====
+[[/Dative case quiz/]]
+
+===Instrumental case===
+
+==Russian lacks "a," "the," and "to be"==
+Russian lacks the articles "a," "an," and "the." English uses the definite article "the" to indicate a specific place, thing, etc.: "I ate the orange" suggests there was only one orange, or it was special or something. English uses the indefinite articles "a" and "an" to indicate that the following noun is not a specific, e.g., "I ate an orange" suggests there were several oranges.
+
+Russian also lacks the verb "to be," and its conjugations "am," "are," and "is."
+
+Thus the English four-word sentence "I am a student" is just two words in Russian: "Я студент." In written Russian, when a sentence has two nouns in a row, a &#x2014; is written between the nouns to indicate the verb "to be." E.g., "Tanya is a student" translates to "Таня &#x2014; студентка."
+
+=="This," "these," and "those"==
+Russian has the adjectives "this" and "these." To "get by" in Russian use это (pronounced "eta") for both "this" (singular) and "these" (plural). To speak "good Russian" it gets confusing. If a word is between "this" (or "these") and the noun ("This is my suitcase") then это doesn't change. But if the noun immediately follows "this" or "these" ("This suitcase is mine") then, if the noun is masculine, это changes to этот (pronounced "etot") ; if the noun is feminine then это changes to эта (pronounced "eta") ; if the noun is neuter then это doesn't change; and if the noun is plural ("these") then  это changes to эти (pronounced "etee") .
+
+Russian also has the adjective "those": те. This follows the conjugation for 'that', implying that the noun is in a remote location (not here). Masculine is тот, Feminine is та, Neuter is то, and Plural is те.
+
+===this these and those quiz===
+[[Russian Lesson 3/This these and those quiz|This these and those quiz]]
+
+==Plural nouns==
+In English we add "s" (or "es") to indicate that a noun is plural. Russian isn't so simple.
+
+Masculine nouns ending in a "hard" consonant add '''ы'''. E.g., студент (student) becomes студенты (students).
+Masculine nouns ending in the "soft" consonants '''й''' or '''ь''' add '''и'''. E.g., словарь (dictionary) becomes словари (dictionaries).
+If you speak Russian (without writing) you can "get by" without learning this distinction, as '''ы''' and '''и''' sound similar.
+
+Feminine nouns ending in '''а''' change the '''а''' to '''ы'''. This is not always the case. Sometimes '''а''' is replaced by '''и''' e.g. '''груша''' → '''груши'''.
+Feminine nouns ending in '''я''' change the '''я''' to '''и'''.
+Thus masculine and feminine nouns follow a similar pattern for plural. Again, if you only want to speak "get by" Russian you can ignore this distinction because '''a''' and '''я''' sound similar.
+
+Neuter nouns have a different pattern for plural.
+Neuter nouns ending in '''o''' change the '''o''' to '''a'''. This is not always the case. Sometimes '''o''' is replaced by '''и''' e.g. '''яблоко''' → '''яблоки'''.
+Neuter nouns ending in e change the '''e''' to '''я'''.
+Thus, neuter plural nouns look like feminine singular nouns.
+
+Note that these rules are for plural nouns. Plural adjectives follow different rules.
+
+===The 7-letter spelling rule===
+Now it gets complicated.
+After the letters '''к''', '''г''', '''х''', '''ш''', '''щ''', '''ж''', and '''ч''', always add (or change '''a''' or '''я''' to) '''и''', not '''ы'''. E.g., книга (book) becomes книги (books).
+
+===Exceptional plurals===
+
+Some masculine nouns drop the last vowel before adding '''ы''' or '''и'''. E.g., подарок (present or gift) becomes подарки.
+
+Some masculine nouns add '''a''' for plural. E.g., дом (house) becomes дома (houses).
+
+Words of foreign origin ending in '''o''', '''и''', or '''у''' don't change between singular and plural. E.g., радио means "radio" or "radios." Note that foreign nouns with these endings also don't change in prepositional case (e.g., Colorado, Kentucky, and Peru).
+
+==The personal pronouns "he," "she," and "it"==
+The personal pronouns are straightforward:
+
+"He" (masculine) is он.
+
+"She" (feminine) is она.
+
+"It" (neuter) is оно.
+
+"They" (plural) is они.
+
+Note that in English we use "he" and "she" for animate objects (people and animals) and "it" for everything else, but Russians use "he" for all masculine nouns, "she" for all feminine nouns, and "it" for all neuter nouns. Thus, a car (машина) is always "she" because машина is feminine.
+
+=="Whose?"==
+The English question word "whose" translates to four Russian words, depending on gender:
+
+чей (pronounced "chey") is masculine.
+
+чья (pronounced "chyah") is feminine.
+
+чьё (pronounced "chyo") is neuter.
+
+чьи (pronounced "chyee") is plural.
+
+If you just want to "get by," say "chee" and you'll be right about 50% of the time.
+
+==The possessive pronouns "my," "your," "our," "his," "her," and "their"==
+
+To learn to conjugate verbs as well as possessive pronouns, memorize the following order of pronouns:
+
+я (I)
+ты (you, informal)
+он/она (he/she)
+мы (we)
+вы (you, formal and plural)
+они (they)
+
+In this order, in English the possessive pronouns are "my, your, his, her, our, (no formal your), their." Russian makes this complicated because four of these words change depending on whether the following noun is masculine, feminine, neuter, or plural. Three don't change.
+
+The three possessive pronouns that don't change are "his," "her," and "their." In Russian these are его ("his"), pronounced "yehvo" (not "yehgo"); её, pronounced "yehyo" ("her yo-yo" would sound like "yeh-yo yo-yo"); and их (pronounced "eech," like the German word for "I").
+
+The four possessive pronouns that change are "my," "your" (informal and formal), and "our."
+
+"My" is мой (masculine, pronounced "moy," which sounds vaguely like a New York Yiddish version of "my"); моя (feminine, pronounced "mo-yah"); моё (neuter, pronounced "mo-yo"), and мои (plural, pronounced "mo-ee").
+
+"Your" (informal Ты) is твой (masculine, pronounced "tvoy"); твоя (feminine, pronounced "tvo-yah"); твоё (neuter, pronounced "tvo-yo"), and твои (plural, pronounced "tvo-ee").
+
+"Our" (Мы) is наш (masculine, pronounced "nash," not like "Nashville" but rhymes with "wash"); наша (feminine, pronounced "nasha"); наше (neuter, pronounced "nashyeh"), and наши (plural, pronounced "nashee").
+
+"Your" (formal Вы) is ваш (masculine, pronounced "vash", rhymes with "wash"); ваша (feminine, pronounced "vasha"); ваше (neuter, pronounced "vash-yeh"), and ваши (plural, pronounced "vashee"). A memory aid is "your car is a washing machine." Picture opening the hood of a car and finding a washing machine where the engine should be. "Your car" is ваша машина (sounds like "washing machine").
+
+==Adjective endings (nominative case)==
+Russian adjectives agree with their nouns in gender, number, and case. Here we will learn the adjective endings for gender and number (singular vs. plural). (Cases will be later.)
+
+The dictionary form of adjectives end in ый (pronounced "ee"). This is the ending with masculine nouns. E.g., "new pencil" is новый карандаш (pronounced "no-vee karandash").
+
+With feminine nouns, the adjective ends in ая. E.g., "new car" is новая машина (pronounced "no-vah-yah masheena").
+
+With neuter nouns, the adjective ends in ое. E.g., "new dress" is новое платье (pronounced "no-vo-yeh plat-yeh"). As a memory aid, think of "oh yeah."
+
+With plural nouns, the adjective ends in ые. E.g., "new students" is новые студенты (pronounced "no-vih-yeh studentih"). As a memory aid, think of plural as one masculine and one neuter object. Take the first letter from the masculine ending (ы) and the second letter from the neuter ending (е) and you get ые.
+
+Adjectives with "soft endings" (й or ь) have the same second letter in their endings, but the first letter of the endings change. The masculine ending ый becomes ий, the feminine ending ая becomes яя, the neuter ending ое becomes ее (like the "yeah-yeah" chorus of 1965 Beatles songs), and the plural ending ые becomes ие (maintaining the memory aid that you take a masculine object and a neuter object to get two objects).
+
+===5- and 7-letter spelling rules===
+Recall that with plurals, after the letters г, ж, к, х, ч, ш, and щ, you use и, not ы. This 7-letter spelling rule also applies to adjectives. As a memory aid, ч, ш, and щ are together in the alphabet.
+
+The 5-letter spelling rule is that after the letters ж, ц, ч, ш, and щ, don't write an unstressed o, but instead write e. As a memory aid, ц, ч, ш, and щ are together in the alphabet.
+
+=="What?" and "which?"==
+Что (pronounced "shto," not "chto") and какой both mean "what." As a loose rule, какой means "which." The correct rule is that if a noun follows "what," use какой. If no noun follows "what," use что.
+
+As a memory aid, the following noun's gender and number change какой. Какой precedes masculine nouns, какая precedes feminine nouns, какое precedes neuter nouns, and какие precedes plural nouns. Because что does not modify nouns, it does not change according to gender.
+
+If you just want to "get by," always use что for "what."
+
+==Showing Ownership==
+In English, "my" and "I have" are different, just as "your" and "you have" are different. Russian makes a similar distinction&#x2014;but it's more complicated.
+
+First, the pronoun is in the genitive case (меня, тебя etc.), which indicates possession/ownership. The preposition used with the genitive pronouns to indicate ownership is У (pronounced "oo"), meaning roughly "with".
+
+The forms are as follows:
+
+"I have": У меня (pronounced "oo meen-yah", meaning roughly "with me")
+
+"You have" (informal): У тебя (pronounced "oo teeb-yah", meaning roughly "with you")
+
+"You have" (formal): у вас (pronounced "oo vas")
+
+"He has": у него (pronounced "oo nee-go", meaning "with him")
+
+"She has": у неё (pronounced "oo nee-yo", meaning "with her")
+
+"We have": у нас (pronounced "oo nas", meaning "with us")
+
+"They have": у них (pronounced "oo neech", meaning "with them")
+
+
+Thus the question "У тебя есть карандаш?" when interpreted rather literally, means "With you is a pencil?" It is easy to see how this can be correctly interpreted as "Do you have a pencil (with you)?" or even just "Do you own a pencil?"
+
+These three phrases are sometimes followed by есть (pronounced "yehst", meaning "is"). Есть questions the existence of something, e.g.,  У вас есть синий костюм? ("Do you have a blue suit?").
+
+==Verb conjugation, present tense==
+
+In English we say, "I study," "you study," "he studies," "she studies," "we study," "they study." Note that some pronouns use "study," while other pronouns use "studies." "Verb conjugation" is how verbs change with pronouns. English has simple two-form verb conjugation for the present tense.
+
+Russian verbs conjugate in six forms, for "I", "you (singular and informal)", "he" and "she", "we", "you (plural and formal singular)" and "they". In addition, Russian verbs conjugate in either of two ways. In other words, some verbs are first conjugation, when others are second conjugation.
+
+All verbs have an infinitive form, which is listed in dictionaries. Typically this form ends in -ть.
+
+First-conjugation verbs usually end in something other than -ить (e.g. in -ать). These verbs conjugate by dropping the ть and replacing it with the following endings:
+
+<table border="0">
+ <tr><td>я</td><td>"I"</td><td>ю or у</td><td>чит'аю ("read," pronounced "cheet-a-you")</td><td>жив'у ("live," pronounced "zheevoo")</td></tr>
+ <tr><td>ты</td><td>"you" (informal)</td><td>ешь or ёшь</td><td>чит'аешь ("read," pronounced "cheet-a-yesh")</td><td>живёшь ("live," pronounced "zheevyosh")</td></tr>
+ <tr><td>он/она</td><td>"he," "she"</td><td>ет or ёт</td><td>чит'ает ("reads," pronounced "cheet-a-yet")</td><td>живёт ("live," pronounced "zheevyot")</td></tr>
+ <tr><td>мы</td><td>"we"</td><td>ем or ём</td><td>чит'аем ("read," pronounced "cheet-a-yem")</td><td> живём ("live," pronounced "zheevyom")</td></tr>
+ <tr><td>вы</td><td>"you" (formal)</td><td>ете or ёте</td><td>чит'аете ("read," pronounced "cheet-a-yehta")</td><td> живёте ("live," pronounced "zheevyota")</td></tr>
+ <tr><td>они</td><td>"they"</td><td>ют or ут</td><td>чит'ают ("read," pronounced "cheet-a-yout")</td><td> жив'ут ("live," pronounced "zheevoot")</td></tr>
+</table>
+
+Second-conjugation verbs usually end in -ить. These verbs conjugate by dropping the -ть and replacing it with the following endings:
+
+<table border="0">
+ <tr><td>я</td><td>"I"</td><td>ю</td><td>говор'ю ("talk," pronounced "govor-you")</td></tr>
+ <tr><td>ты</td><td>"you" (informal)</td><td>ишь</td><td>говор'ишь ("talk," pronounced "govor-eesh")</td></tr>
+ <tr><td>он/она</td><td>"he," "she"</td><td>ит</td><td>говор'ит ("talks," pronounced "govor-eet")</td></tr>
+ <tr><td>мы</td><td>"we"</td><td>им</td><td>говор'им ("talk," pronounced "govor-eem")</td></tr>
+ <tr><td>вы</td><td>"you" (formal)</td><td>ите</td><td>говор'ите ("talk," pronounced "govor-eetyeh")</td></tr>
+ <tr><td>они</td><td>"they"</td><td>ят</td><td> говор'ят ("talk," pronounced "govor-yat")</td></tr>
+</table>
+
+==Verb conjugation, past tense==
+
+Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, "I understood" changes depending on whether the speaker is a man or a woman. But the verb is the same for "he understood" or for "I understood," where the speaker is a man. "We understood" and "they understood" are the same.
+
+To form a past tense verb, drop the ть and add л (pronounced "l") for masculine pronouns ("I," "you," "he"), ла (pronounced "la") for feminine pronouns ("I," "you," "she"), and ли (pronounced "lee") for plural pronouns (мы, они, "we," "they"). (Neuter subjects can't talk.)
+
+<table border="0">
+ <tr><td>Masculine pronoun</td><td>"л"</td><td>понимал ("understood," pronounced "poneemal")</td></tr>
+ <tr><td>Feminine pronoun</td><td>"ла"</td><td>понимала ("understood," pronounced "poneemala")</td></tr>
+ <tr><td>Plural pronoun</td><td>"ли"</td><td>понимали ("understood," pronounced "poneemalee")</td></tr>
+</table>
+
+==Verb conjugation, future tense==
+
+Russian future tense is incredibly more complex in meaning than English future tense.  Russian future tense also contains information pertaining to the [[w:Grammatical aspect|aspect]] of the verb.  
+
+'''Imperfective Aspect'''
+
+The simplest, and imperfective aspect of a verb can be attained by the use of the verb "быть."  By placing the correct form of "быть," in front of a Russian infinitive, you can create a verb in imperfective future tense.
+
+Form будь is imperative of to be, but in this case it roughly means "will"
+<table border="1">
+  <tr>
+    <td>я бу́ду</td>
+    <td>мы бу́дем</td>
+  </tr>
+  <tr>
+    <td>ты бу́дешь</td>
+    <td>вы бу́дете</td>
+  </tr>
+  <tr>
+    <td>он/она́/оно́ бу́дет</td>
+    <td>они́ бу́дут</td>
+  </tr>
+</table>
+
+Can you decipher these?
+
+* Я буду играть.
+* Ты будешь говорить.
+
+As an FYI, the imperfective aspect in Russian refers to a habitual action that we would not go out of our way to delineate. While "Я играю в игру" (I am playing the game) shows current action in a way not unlike English, "Я играла в игру" (I played-feminine the game) relates a habitual action to the playing of the game in the past.  English leaves this ambiguous.
+
+'''Perfective aspect'''
+For perfective aspect verbs, just use the table above for present tense endings, and you will get future tense (do you remember that perfective verbs have no present tense?) E.g. заиграть 'to begin playing' - я заиграю 'I shall begin to play'.
+
+==Prepositional case adjectives==
+Recall that the prepositional case is used when the object of a sentence is a location. Earlier you learned how to modify nouns (usually by adding е).
+
+Russian adjectives must agree with their following noun in gender, number, and case. 
+
+With a masculine noun in the prepositional case, a preceding adjective usually ends in ом. The ending is ем for the 5-letter spelling rule, and for soft-ending (й or ь) adjectives.
+
+With a feminine noun in the prepositional case, a preceding adjective usually ends in ой (pronounced "oy"). The ending is ей (pronounced ("yee") for the 5-letter spelling rule, and for soft-ending (й or ь) adjectives.
+
+===Prepositional case plural adjectives and nouns===
+
+With a plural noun in the prepositional case, a preceding adjective usually ends in ых (pronounced "eeh"). The ending is их (pronounced ("ih") for the 7-letter spelling rule, and for soft-ending (й or ь) adjectives.
+
+Plural nouns in the prepositional case usually end in ах (pronounced "ach"). The ending is ях (pronounced ("yach") for soft-ending (й or ь) nouns.
+
+===Prepositional case personal pronouns===
+The personal pronouns change (considerably!) in the prepositional case. 
+
+Я ("I") becomes обо мне (pronounced "obo mnyeh"). 
+
+Ты ("you" informal) becomes о тебе (pronounced "o tyehbyeh"). 
+
+Он ("he") becomes о нём (pronounced "o nyom"). 
+
+Она ("she") becomes о ней (pronounced "o nyee"). 
+
+Мы ("we") becomes о нас (pronounced "o nas"). 
+
+Вы ("you" formal) becomes о вас (pronounced "o vas"). 
+
+Они ("they") becomes о них (pronounced "o neech").
+
+===Prepositional case possessive pronouns===
+If the object possessed is masculine or neuter, use the following possessive pronouns: моём ("my"), твоём ("your" informal), нашем ("our'), вашем ("your" formal), чьём ("whose?"), этом ("this").
+
+If the object possessed is feminine, use the following possessive pronouns: моей ("my"), твоей ("your" informal), нашей ("our'), вашей ("your" formal), чьей ("whose?"), этой ("this").
+
+If the objects possessed are plural, use the following possessive pronouns: моих ("my"), твоих ("your" informal), наших ("our'), ваших ("your" formal), чьих ("whose?"), этих ("this").
+
+(Russian schools teach all that to second-graders! Now you understand why Ronald Reagan called the Soviet Union the "evil empire"!)
+
+===Prepositional case question words===
+Some question words change in the prepositional case. Что ("what," pronounced "shto") changes to о чём (pronounced "o chyom"). Кто ("who," pronounced "kto") changes to о ком.
+
+==Conjunctions: "and," "yes but," and "but"==
+Let's do something simpler. 
+
+И (pronounced "ee") means "and."
+
+А (pronounced "ah") means "yes, but."
+
+Но (pronounced "no") means "but."
+
+==Reflexive verbs==
+In English we add "self" to a pronoun to indicate reflexive action. E.g., "I wash myself" is different from "I wash my dog." In Russian, reflexive action is in the verb, not in the pronoun. E.g., a Russian would say something like "I washself."
+
+This reflexive action is indicated by the suffix ся added to the verb, if the verb ends in a consonant. But if the verb ends in a vowel you instead add сь. Note that the former adds a syllable but the latter doesn't!
+
+The verb учиться means "study" (pronounced "oo-cheet-syah"). The verb conjugates:
+
+<table border="0">
+ <tr><td>я</td><td>"I"</td><td> учусь (pronounced "oochoos")</td></tr>
+ <tr><td>ты</td><td>"you" (informal)</td><td> учишься (pronounced "oocheesh-syah")</td></tr>
+ <tr><td>он/она</td><td>"he," "she"</td><td> учится (pronounced "oocheet-syah")</td></tr>
+ <tr><td>мы</td><td>"we"</td><td> учимся (pronounced "oocheem-syah")</td></tr>
+ <tr><td>вы</td><td>"you" (formal)</td><td> учитесь (pronounced "oocheetyes")</td></tr>
+ <tr><td>они</td><td>"they"</td><td> учатся (pronounced "oochat-syah")</td></tr>
+</table>
+
+==Three words for "study"==
+Russia has three words that translate to "study." (You can imagine that Russians must study three times harder than Americans to learn language skills!)
+
+Учиться (pronounced "oo-cheet-syah") usually refers to where you go to school, e.g., "I go to Harvard University." As a memory aid, picture that Russians students cheat.
+
+Изучать (pronounced "ee-zoo-chat") usually refers to the subject you study, e.g., "I study physics." As a memory aid, think that the zoo is where you study subjects such as monkeys, elephants, etc.
+
+заниматься (pronounced "zan-ee-mat-syah") usually refers to doing homework, e.g., "I'm studying at the library." As a memory aid, think that your "zany mother makes you do your homework."
+
+There is also a fourth verb, готовиться (perf. подготовиться), which means to prepare yourself, in this case to study for something, e.g. an exam. This is used with the preposition к + dative case. Например: Я готовлюсь к экзамену по русскому языку.
+
+==Two words for "also"==
+Russian has two words that translate to "also." 
+
+Тоже (pronounced "to-zheh") means that two people are doing the same thing (e.g., "I'm a student and my sister is also a student"). 
+
+Также (pronounced "takzheh") means that one person does two different things (e.g., "I'm a student and I also work part-time").
+
+As a memory aid, picture that Emperor Tojo of Japan is also the emperor of Russia. He has a reclusive brother Takzhye who only does things by himself.
+
+==Going by foot, by car, and going regularly==
+Russian has three words that translate to "going."
+
+Идти (pronounced "eed-tee") means to go by foot. As a memory aid, think the conjugation он идёт ("he walks," pronounced "on eed-dyot") which sounds like "he's an idiot to walk (with the traffic so dangerous)."
+
+ехать (pronounced "ee-hot") means to go by car, bus, etc. Note that conjugations are еду, едешь, едет, едем, едете, едут&#x2014;none have the х!
+
+ходить (pronounced "hod-deet") means to go back and forth habitually, e.g., "I go to school every day." As a memory aid, think of hod carriers going back and forth up and down ladders (a hod carrier carries morter to a bricklayer).
+
+==Necessity and freedom==
+"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin")&#x2014;if the subject is masculine! If the subject is feminine, it's должна. If the subject is neuter, it's должно. If the subject is plural, it's должны.
+
+Remember that "have to" is an adjective, not a verb! Don't try to conjugate it as a verb.
+
+The opposite of "have to" is freedom. E.g., "I'm free this evening" means there's nothing you have to do. The adjectives are свободен (masculine, pronounced "sva-bod-den"), свободна (feminine, pronounced "sva-bod-na"), свободно (neuter, pronounced "sva-bod-no") and свободны (plural, pronounced "sva-bod-nih").
+
+Note that вы ("you" formal, and "y'all") uses the plural forms, regardless of the gender of the person you're addressing.
+
+Note that кто ("who") uses the masculine form, regardless of the gender of the person you're asking about
+
+----
+[[Russian/Lesson 4|Lesson 4 >>]]
+
+
+{{BookCat}}

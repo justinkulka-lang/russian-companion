@@ -28,11 +28,18 @@ def _span(page: str, start: str, end: str) -> str:
 
 
 def populate(lesson, number: int) -> None:
-    {
+    from units_16_20_batch_a import add_batch
+
+    lesson.capabilities = []
+    existing = {
         16: _unit_16,
         17: _unit_17,
         19: _unit_19,
-    }[number](lesson)
+    }
+    if number in existing:
+        existing[number](lesson)
+    if number in (16, 17, 18, 19, 20):
+        add_batch(lesson)
 
 
 def _unit_16(lesson) -> None:

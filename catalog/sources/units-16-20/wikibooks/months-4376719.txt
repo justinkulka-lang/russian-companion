@@ -1,0 +1,67 @@
+{{Russian}}
+
+==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December || Dekábr'
+|-
+|}
+
+{{BookCat}}

@@ -224,6 +224,7 @@ class Units610SourceIntakeTest {
             "prepositions" to "4446858",
             "personal-pronouns" to "3598527",
             "copyrights" to "4622060",
+            "adverbs" to "3197995",
         )
         freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray.forEach { element ->
             val page = element.jsonObject

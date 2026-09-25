@@ -591,7 +591,7 @@ private fun contentCodes(
             it.contains("book direction does not replace") ||
                 it.contains("empty sessions or objectives") ||
                 it.contains("has no teach step") ||
-                (it.contains("not content-complete without") && !it.contains("source capabilities"))
+                (it.contains("not content-complete without") && !it.contains("source capabilit"))
         }
     ) {
         codes += "MISSING_INSTRUCTIONAL_STRAND"

@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511
-- Unit content-review SHA-256: c1f0b86dec7a182ce90985cd446159b07577730cfdbf7bcc027eabafc81f6b74
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: 4dcda07bb955c29c892a1c710cead78842493706a6ef980bce5203661382dad3
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
-- Review-package SHA-256: 93770a5fc7525ab4844df0d7395b1848aeb69d1a967ee902559695818e21b7f1
-- Repository source SHA-256: 0aba6436df419cfe8c040f6d29089a339a83a03d9351bd32e45d420d5fda7889
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: db2ba7ae6fc9f32d7774e65f37c71ad6e5e645c7040c5a9e0117a5bb708edf6e
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=70
+estimatedMinutes=122
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 17.
 
 ### UNIT `unit-17`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-book, obj-u17-calendar
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-book, u17-s-gap-calendar
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book, obj-u17-clock-answers, obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-book, u17-s-gap-clock-answers, u17-s-gap-calendar-date
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a5598c28bcd69bc9146cfcc893c62ae13fc5764375b6c9b41285bf21687b5bc7
+- Content hash: 941464ef55fc6abcce5a53817030b1fea9c6fb5570ff46cb8ff2f00a20285e04
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number, ordinal, hour, year, and minute rows await qualified review. Clock time, weekdays, dates, and age have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=70
+estimatedMinutes=122
 
 ### ADVANCEMENT `unit-17-advancement`
 
@@ -181,6 +181,82 @@ practice=u17-st-guided-minutes-1
 checks=u17-i-minutes-1,u17-i-minutes-2
 remediation=u17-st-rem-minutes
 
+### OBJECTIVE `obj-u17-age`
+
+- Objectives: obj-u17-age
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5ca66d762c1a959075e6ccb655b080cc2c421477e99dc55d58d97f6c3ad0635e
+
+title=Choose the admitted gloss beside the shown age line
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-age-1,u17-st-teach-age-2
+examples=ex-u17-age-0,ex-u17-age-1
+practice=u17-st-guided-age-1
+checks=u17-i-age-1,u17-i-age-2
+remediation=u17-st-rem-age
+
+### OBJECTIVE `obj-u17-weekdays`
+
+- Objectives: obj-u17-weekdays
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 94545218dd818e063a3e408440de5f5a265dcc4e07f26b3b886c9f6d09f52174
+
+title=Choose the admitted gloss beside the shown weekday
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-weekdays-1,u17-st-teach-weekdays-2,u17-st-teach-weekdays-3
+examples=ex-u17-weekdays-0,ex-u17-weekdays-1,ex-u17-weekdays-2,ex-u17-weekdays-3
+practice=u17-st-guided-weekdays-1
+checks=u17-i-weekdays-1,u17-i-weekdays-2
+remediation=u17-st-rem-weekdays
+
+### OBJECTIVE `obj-u17-months`
+
+- Objectives: obj-u17-months
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1200c03e867b146c2db5d4085e37536bf6ff6081d4e04ebc0d055eb3c05337fe
+
+title=Choose the admitted gloss beside the shown month
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-months-1,u17-st-teach-months-2,u17-st-teach-months-3
+examples=ex-u17-months-0,ex-u17-months-1,ex-u17-months-2,ex-u17-months-3
+practice=u17-st-guided-months-1
+checks=u17-i-months-1,u17-i-months-2
+remediation=u17-st-rem-months
+
+### OBJECTIVE `obj-u17-clock`
+
+- Objectives: obj-u17-clock
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7396b09953c242a4bea5a5fc9410b4e872985b1a9a9da588689c78921fcd3f3f
+
+title=Choose the admitted gloss beside the shown clock question
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-clock-1,u17-st-teach-clock-2
+examples=ex-u17-clock-0,ex-u17-clock-1
+practice=u17-st-guided-clock-1
+checks=u17-i-clock-1,u17-i-clock-2
+remediation=u17-st-rem-clock
+
 ### OBJECTIVE `obj-u17-book`
 
 - Objectives: obj-u17-book
@@ -200,20 +276,39 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u17-calendar`
+### OBJECTIVE `obj-u17-clock-answers`
 
-- Objectives: obj-u17-calendar
+- Objectives: obj-u17-clock-answers
 - Sessions: none
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f2d3941faf6c424c62fce2db2d52e1deb241b7e9e62a1857003c454dfcb4464f
+- Content hash: 8a8a999f222a55c60ededf2fa4f518c8c7f5701d8e962042cdc967b1b36939e8
 
-title=Clock time and dates stay in the copy you own
+title=Productive clock-time answers stay in the copy you own
 kind=GUIDANCE
 unitNumber=17
-instruction=u17-st-gap-calendar
+instruction=u17-st-gap-clock-answers
+examples=
+practice=
+checks=
+remediation=
+
+### OBJECTIVE `obj-u17-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 93df012879783fd6f7b300c04fa77eea75f228e59f5cb7b489314f30582c7228
+
+title=Calendar-date syntax stays in the copy you own
+kind=GUIDANCE
+unitNumber=17
+instruction=u17-st-gap-calendar-date
 examples=
 practice=
 checks=
@@ -221,32 +316,32 @@ remediation=
 
 ### SESSION `u17-s-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4c88973fc32e029c2a4372e8addb384f118c8ab9e07674de3b4f9d2572402d5f
+- Content hash: 62731961b881f1638d42bf1408ea49c4564c715039c6a5cecc8c68668ace51fc
 
 title=Admitted number and quantity rows
 estimatedMinutes=8
-objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-book
+objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-book
 steps=u17-st-orient
 
 ### STEP `u17-st-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae45fa872ab13d064e7ead2b9ba9d751aff00da65510afe0eacd9b246536cfda
+- Content hash: 7c3e6be84e0d540884a480be0fb121c467b052005ca5eda4b36ef95fc99b4a21
 
 kind=ORIENT
 title=Admitted number and quantity rows
-body=Proposed Unit 17 uses frozen number rows, ordinal rows, hour rows, year rows, and minute rows. Clock time, weekdays, dates, and age stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -844,6 +939,550 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-minutes
 
+### SESSION `u17-s-age`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f225f6fd4fe1c49bce9f04cdae2f5feaa40330e9cee10caa6699956112db62f2
+
+title=Choose the admitted gloss beside the shown age line
+estimatedMinutes=12
+objectives=obj-u17-age
+steps=u17-st-teach-age-1,u17-st-guided-age-1,u17-st-teach-age-2,u17-st-rem-age,u17-st-check-age
+
+### STEP `u17-st-teach-age-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 586db3580545aa451cfc3afbe32e631a8c71b0f19979c3b709021dc72ab16484
+
+kind=TEACH
+title=Admitted lines
+body=мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-age-0,ex-u17-age-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-age-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1385c7b7bae67d8f27f0aa225cdff7def5c178b55823d8fa23c820aa1115f72e
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-age-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-age
+
+### STEP `u17-st-teach-age-2`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 480a724455d77ae35250748f4e2756a634a02c49594c670b6f48742fbd5339b5
+
+kind=TEACH
+title=Admitted instruction
+body=I am 20 (years old)
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-age`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 55f7dfc3d3ce346c519af45b07a5857ef2e9f2541620cc6a0d6398be66f1033f
+
+kind=REMEDIATE
+title=Remediation
+body=I am 20 (years old)
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-age-0,ex-u17-age-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-age`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6c044a04e440a37e51bc5046e1252a17d10a2871643b4cccd6c013ebc9a7b1eb
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-age-1,u17-i-age-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-age
+
+### SESSION `u17-s-weekdays`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a7c0d20cb430ae9df315f5e9dcffac04953d83d1de99a6f67b8b8e90764d48e1
+
+title=Choose the admitted gloss beside the shown weekday
+estimatedMinutes=12
+objectives=obj-u17-weekdays
+steps=u17-st-teach-weekdays-1,u17-st-guided-weekdays-1,u17-st-teach-weekdays-2,u17-st-teach-weekdays-3,u17-st-rem-weekdays,u17-st-check-weekdays
+
+### STEP `u17-st-teach-weekdays-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 990df8748617cb53b94dc413dd649c676ea2171e1356aef0950d5f353682d5b6
+
+kind=TEACH
+title=Admitted lines
+body=понедельник — Monday. вторник — Tuesday. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-weekdays-0,ex-u17-weekdays-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-weekdays-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 46a7c5bb929b3f5ffc2d744174071f3824ec330cd2fd8ff34aa7a71cf2a8602b
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-weekdays-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-weekdays
+
+### STEP `u17-st-teach-weekdays-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c624a27267bd189dacf37cf174ed9ac3f03bf2063b426be998d3e2679b08aed3
+
+kind=TEACH
+title=Admitted instruction
+body=Russians don't capitalize days of the week.
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-weekdays-3`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 253eb5ef796460b6fec992acede5b2e944a62848fb5a289cb776b0d139fae67c
+
+kind=TEACH
+title=Admitted lines
+body=среда — Wednesday. четверг — Thursday. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-weekdays-2,ex-u17-weekdays-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-weekdays`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 458617b82e598cef49a277a944eb461314475ded840a1c3a3f39ccfeafa9e4f8
+
+kind=REMEDIATE
+title=Remediation
+body=Russians don't capitalize days of the week.
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-weekdays-0,ex-u17-weekdays-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-weekdays`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 189a2e184b75f178b3ae05f057c7eafc5f86b4b344613a1b9e4ed97c93e96867
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-weekdays-1,u17-i-weekdays-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-weekdays
+
+### SESSION `u17-s-months`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7ebcfc1c107a93b44d2a4e7d50a76caee87ab373a3168872438ef273ee57255e
+
+title=Choose the admitted gloss beside the shown month
+estimatedMinutes=12
+objectives=obj-u17-months
+steps=u17-st-teach-months-1,u17-st-guided-months-1,u17-st-teach-months-2,u17-st-teach-months-3,u17-st-rem-months,u17-st-check-months
+
+### STEP `u17-st-teach-months-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1868f9bbcc1fc20014242cdeb133d3817ec3b8e3b688ac8acee603ce479378ce
+
+kind=TEACH
+title=Admitted lines
+body=Январь — January. Февраль — February. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-months-0,ex-u17-months-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-months-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 824da8b7641d552349d93da7805605aa25171f3670909681c9c7a312ff84637d
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-months-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-months
+
+### STEP `u17-st-teach-months-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bddb9eeecef6465fa76480e0dd35b856197ed33734eecfa5a64286310e9f56c
+
+kind=TEACH
+title=Admitted instruction
+body=Months of the year
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-months-3`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6ec6b9e1e84cab5dd076b41ba75cf44853180986ddc8592ee55e440a13ac4401
+
+kind=TEACH
+title=Admitted lines
+body=Март — March. Апрель — April. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-months-2,ex-u17-months-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-months`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9dde5edb6797af425291e84746363ddcfb0be15a5717dc643355d37c92b724b3
+
+kind=REMEDIATE
+title=Remediation
+body=Months of the year
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-months-0,ex-u17-months-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-months`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4211ebf2adf0a23c3a0adbe92158848f0d87f2b4aa72c83887aa6ca1efb5e7f8
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-months-1,u17-i-months-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-months
+
+### SESSION `u17-s-clock`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 054a00dee1d37c5e0de76966506032eb82b21bd0baa2f053b9f2dfe1aeefdb66
+
+title=Choose the admitted gloss beside the shown clock question
+estimatedMinutes=12
+objectives=obj-u17-clock
+steps=u17-st-teach-clock-1,u17-st-guided-clock-1,u17-st-teach-clock-2,u17-st-rem-clock,u17-st-check-clock
+
+### STEP `u17-st-teach-clock-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 036d2b74fcdf0468c66c44c61a6b6d341caed521a4df6d0e481481a4f816687c
+
+kind=TEACH
+title=Admitted lines
+body=Который час? — What time is it? час — time. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-clock-0,ex-u17-clock-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-clock-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 73028d81c19c18a16fbb3d47c7ab0a9f8044fe578dc6f6f85b0625ec35521005
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-clock-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock
+
+### STEP `u17-st-teach-clock-2`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 54205a61f9757f852a70862b58aaada43566bd9beea091a4eb0b96ca913f7e79
+
+kind=TEACH
+title=Admitted instruction
+body=What time is it?
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-clock`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01c19047dcdb6119a015489664813cea87759fbe59991fe8c81959c64efe4aba
+
+kind=REMEDIATE
+title=Remediation
+body=What time is it?
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-clock-0,ex-u17-clock-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-clock`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c708f1dfd21d262fc03c2beae48770523277156c1b824a4a5fd0bf7670e0232f
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-clock-1,u17-i-clock-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock
+
 ### SESSION `u17-s-book`
 
 - Objectives: obj-u17-book
@@ -903,39 +1542,76 @@ bookDirection=Self-attest only after the Lesson 17 work in your copy.
 companionDirection=
 remediationStepId=
 
-### SESSION `u17-s-gap-calendar`
+### SESSION `u17-s-gap-clock-answers`
 
-- Objectives: obj-u17-calendar
-- Sessions: u17-s-gap-calendar
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-gap-clock-answers
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ac4cfca348adf90d1a5c261c49d886028bf6caa821e1f361c2858ac3558bd990
+- Content hash: ee5231df8fc8f2ee7f36bf251417083d5cbe009271977adbf7b357fa94e41828
 
-title=Clock time and dates stay in the copy you own
+title=Productive clock-time answers stay in the copy you own
 estimatedMinutes=4
-objectives=obj-u17-calendar
-steps=u17-st-gap-calendar
+objectives=obj-u17-clock-answers
+steps=u17-st-gap-clock-answers
 
-### STEP `u17-st-gap-calendar`
+### STEP `u17-st-gap-clock-answers`
 
-- Objectives: obj-u17-calendar
-- Sessions: u17-s-gap-calendar
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-gap-clock-answers
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b19cde1daeab111d3baf7409983135a286daaa50818b4d31733394dfa3efc70e
+- Content hash: 6d25100176a8ccd29872a7c8b840a96b98c02b7952e2c6be2e0eab83f87a546c
 
 kind=UNAVAILABLE
-title=Clock time and dates stay in the copy you own
-body=Clock time, weekdays, dates, and age stay in the copy you own. The frozen number rows do not establish those patterns.
+title=Productive clock-time answers stay in the copy you own
+body=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
 examples=
-unavailableReason=Telling time, weekdays, calendar dates, and age have no admitted frozen span.
+unavailableReason=Productive clock-time answers have no admitted frozen span.
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### SESSION `u17-s-gap-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-gap-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b31d31c5807cc372df0cc223b573440f367a4dce9613967d862d883b343319cc
+
+title=Calendar-date syntax stays in the copy you own
+estimatedMinutes=4
+objectives=obj-u17-calendar-date
+steps=u17-st-gap-calendar-date
+
+### STEP `u17-st-gap-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-gap-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3b1dc384185be38f33d0603d12358320b26b45653166aff27fba7fe8a634da9b
+
+kind=UNAVAILABLE
+title=Calendar-date syntax stays in the copy you own
+body=Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=Calendar-date syntax has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -1178,6 +1854,210 @@ note=пять минут
 objectiveId=obj-u17-minutes
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u17-age-0`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b43ebe7e65ee92f7e5efd978157a7da114d12b92341be82c1777286a4988043d
+
+kind=LEXICAL
+letterId=
+display=мне двадцать лет
+note=I am 20 (years old)
+objectiveId=obj-u17-age
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-age-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bc66947a3d5a35242d0e4f182b2d783839b7a9bb93419b2443b7b832b8e9b048
+
+kind=LEXICAL
+letterId=
+display=двадцать лет
+note=20 years
+objectiveId=obj-u17-age
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-weekdays-0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a63e42b6dae82002c9d52232706020e5d5d4fcc05aebd68f9b3db1cd8ff279a6
+
+kind=LEXICAL
+letterId=
+display=понедельник
+note=Monday
+objectiveId=obj-u17-weekdays
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-weekdays-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8bcbb835f0dd6a20be7e3c22e28bca913e2e2b5dd767fd30a1c54c737a38d47e
+
+kind=LEXICAL
+letterId=
+display=вторник
+note=Tuesday
+objectiveId=obj-u17-weekdays
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-weekdays-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 48e4db8810a3dd6657b87baf857e2a729d63916c1e6490872499e8394da01557
+
+kind=LEXICAL
+letterId=
+display=среда
+note=Wednesday
+objectiveId=obj-u17-weekdays
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-weekdays-3`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fee36f2ee3e8bfd8484c91f50d8966a725b8d4d62c11cb04342991e659ca574b
+
+kind=LEXICAL
+letterId=
+display=четверг
+note=Thursday
+objectiveId=obj-u17-weekdays
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-months-0`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d1a429d007a415bac57f3fd267277c284fbc84d3a8ccb1ed406e197585080943
+
+kind=LEXICAL
+letterId=
+display=Январь
+note=January
+objectiveId=obj-u17-months
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-months-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bec7e026dfb9dabf6a8bac4b6f48c8813c42bfa79b610522aeba434ebbaf35f
+
+kind=LEXICAL
+letterId=
+display=Февраль
+note=February
+objectiveId=obj-u17-months
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-months-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 319b934d143631f7687ba90c56e6b1633ad52dc10544ef3174c324ebfe499ace
+
+kind=LEXICAL
+letterId=
+display=Март
+note=March
+objectiveId=obj-u17-months
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-months-3`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 34920124911cd4046308fe7f28d1e06d8be399a672cf4aedf9a1f30e566555e1
+
+kind=LEXICAL
+letterId=
+display=Апрель
+note=April
+objectiveId=obj-u17-months
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-0`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bd9310ac176a2827e6bd8a7e3c5c902178699ded6f4ed5c095db5603fff1213b
+
+kind=LEXICAL
+letterId=
+display=Который час?
+note=What time is it?
+objectiveId=obj-u17-clock
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 574bcb7012b831a548f25f82b478e57f1ce1077073e68e3f648b1e3381ed9ab1
+
+kind=LEXICAL
+letterId=
+display=час
+note=time
+objectiveId=obj-u17-clock
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u17-g-ordinals-0`
 
 - Objectives: obj-u17-ordinals
@@ -1317,6 +2197,146 @@ contrastMembers=одна минута | пять минут
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-minutes-1-ru | prov-ex-u17-minutes-0-ru | prov-ex-u17-minutes-2-ru
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u17-g-age-0`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27c57550c5b28a8f5276a0d0ebfcd46d5b49237cf6171f338303704c400e79a5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=мне двадцать лет
+options=I am 20 (years old) | to_me (is) 20 years
+answer=I am 20 (years old)
+feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+objectiveId=obj-u17-age
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
+testedFeature=AGE_STATEMENT
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-age-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-age-0-en
+distractorSourceIds= | prov-u17-age-x-0
+distractorDifference= | The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "to_me (is) 20 years".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+contrastMembers=I am 20 (years old) | to_me (is) 20 years
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-0
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-weekdays-0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 01c42aaf1999bde913d649db172917006a0f71beceb96f32d8e71a288cad1172
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=понедельник
+options=Monday | Tuesday | Wednesday
+answer=Monday
+feedback=понедельник || noun || Monday
+objectiveId=obj-u17-weekdays
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | вторник || noun || Tuesday | среда || noun || Wednesday
+testedFeature=WEEKDAY_MONDAY
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-weekdays-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-weekdays-0-en
+distractorSourceIds= | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
+distractorDifference= | вторник || noun || Tuesday | среда || noun || Wednesday
+whyAnswerDemonstratesObjective=понедельник || noun || Monday
+contrastMembers=Monday | Tuesday | Wednesday
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-weekdays-0-ru | prov-ex-u17-weekdays-0-en | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-months-0`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 64165e5d4b3947f08ceab9f1ee1d7fadfef22f8325baab6778f972091932a19d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Январь
+options=January | February | March
+answer=January
+feedback=Январь || January
+objectiveId=obj-u17-months
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | Февраль || February | Март || March
+testedFeature=MONTH_JANUARY
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-months-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-months-0-en
+distractorSourceIds= | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
+distractorDifference= | Февраль || February | Март || March
+whyAnswerDemonstratesObjective=Январь || January
+contrastMembers=January | February | March
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-months-0-ru | prov-ex-u17-months-0-en | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-clock-0`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1f64d34faa0d327178ed5ed2b2ab2ede008fc95d5d2fb1c527cf0423ba89be3e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Который час?
+options=What time is it? | Which book do you want?
+answer=What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+objectiveId=obj-u17-clock
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+testedFeature=CLOCK_QUESTION
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-clock-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-clock-0-en
+distractorSourceIds= | prov-u17-clock-x-0
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+contrastMembers=What time is it? | Which book do you want?
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u17-i-ordinals-1`
 
@@ -1598,23 +2618,543 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-minutes-0-ru | prov-ex-u17-minutes-2-ru | prov-ex-u17-minutes-1-ru
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u17-i-age-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9e7bb00c9e1a608bab2c9729f1887701cacb4469ca2924f86a32d0a93ec29b0d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=мне двадцать лет
+options=I am 20 (years old) | age statements
+answer=I am 20 (years old)
+feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+objectiveId=obj-u17-age
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+testedFeature=AGE_HEADING
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-age-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-age-0-en
+distractorSourceIds= | prov-u17-age-x-1
+distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+contrastMembers=I am 20 (years old) | age statements
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-age-2`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1d9c2c8d1d5fee59454698896c035d8c181e721b26472c2a464f12767fa508ba
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=двадцать лет
+options=20 years | age statements
+answer=20 years
+feedback=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+objectiveId=obj-u17-age
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+testedFeature=AGE_YEARS
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-age-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-age-1-en
+distractorSourceIds= | prov-u17-age-x-1
+distractorDifference= | The frozen source pairs the shown form "age statements" with the admitted gloss "age statements".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+contrastMembers=20 years | age statements
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-age-1-ru | prov-ex-u17-age-1-en | prov-u17-age-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-weekdays-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 096314db630bd3a52f564b94b30e1d91992b4bcea7201c2bc1867554f2cc1a80
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=четверг
+options=Thursday | Friday | Saturday
+answer=Thursday
+feedback=четверг || noun || Thursday
+objectiveId=obj-u17-weekdays
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | пятница || noun || Friday | суббота || noun || Saturday
+testedFeature=WEEKDAY_THURSDAY
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-weekdays-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-weekdays-3-en
+distractorSourceIds= | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
+distractorDifference= | пятница || noun || Friday | суббота || noun || Saturday
+whyAnswerDemonstratesObjective=четверг || noun || Thursday
+contrastMembers=Thursday | Friday | Saturday
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-weekdays-3-ru | prov-ex-u17-weekdays-3-en | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-weekdays-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6a50312ff9358f0c9255a349cdee372daad3624cdbe0663e5b230d3718f8dd3d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=воскресенье
+options=Sunday | Monday | Saturday
+answer=Sunday
+feedback=воскресенье || noun || Sunday
+objectiveId=obj-u17-weekdays
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | понедельник || noun || Monday | суббота || noun || Saturday
+testedFeature=WEEKDAY_SUNDAY
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-weekdays-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u17-weekdays-x-5
+distractorSourceIds= | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
+distractorDifference= | понедельник || noun || Monday | суббота || noun || Saturday
+whyAnswerDemonstratesObjective=воскресенье || noun || Sunday
+contrastMembers=Sunday | Monday | Saturday
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u17-weekdays-x-2 | prov-u17-weekdays-x-5 | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-months-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 57d8e0a545fcb584cf6a41874ad4983aa123d4debbf53f309b9ca0c3ac97a1ac
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Июнь
+options=June | July | August
+answer=June
+feedback=Июнь || June
+objectiveId=obj-u17-months
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | Июль || July | Август || August
+testedFeature=MONTH_JUNE
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-months-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u17-months-x-4
+distractorSourceIds= | prov-u17-months-x-5 | prov-u17-months-x-6
+distractorDifference= | Июль || July | Август || August
+whyAnswerDemonstratesObjective=Июнь || June
+contrastMembers=June | July | August
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u17-months-x-0 | prov-u17-months-x-4 | prov-u17-months-x-5 | prov-u17-months-x-6
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-months-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0201f2ecba6780aad561a66a896ab2273a1e0af3fdccac7c23962030d574aa15
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Декабрь
+options=December | January | April
+answer=December
+feedback=Декабрь || December
+objectiveId=obj-u17-months
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | Январь || January | Апрель || April
+testedFeature=MONTH_DECEMBER
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-months-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u17-months-x-7
+distractorSourceIds= | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
+distractorDifference= | Январь || January | Апрель || April
+whyAnswerDemonstratesObjective=Декабрь || December
+contrastMembers=December | January | April
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-u17-months-x-3 | prov-u17-months-x-7 | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-clock-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3d4be42344bc54bbd63fb3f61a283046f07d8e4ae6e808d74572d4b35034732
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Который час?
+options=What time is it? | Which book do you want?
+answer=What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+objectiveId=obj-u17-clock
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+testedFeature=CLOCK_QUESTION_AGAIN
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-clock-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-clock-0-en
+distractorSourceIds= | prov-u17-clock-x-0
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+contrastMembers=What time is it? | Which book do you want?
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-clock-2`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f78aae4a07edb7cd18d5b3c9d94fbf6ab7d74d87e75a1b198eb467abbc884d88
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Который час?
+options=What time is it? | Which book do you want?
+answer=What time is it?
+feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+objectiveId=obj-u17-clock
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+testedFeature=CLOCK_QUESTION_CHECK
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u17-clock-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-clock-0-en
+distractorSourceIds= | prov-u17-clock-x-0
+distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+contrastMembers=What time is it? | Which book do you want?
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u1620-attribution`
 
 - Objectives: none
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-book, u17-s-gap-calendar
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-book, u17-s-gap-clock-answers, u17-s-gap-calendar-date
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 6080b7307f74fbcb3d6ffb8b99fb202ed3510c05c62fe2cfa079d49b15fb973f
+- Content hash: 412bb14bcd4b1871c52aa80fc02eee436b4b4ce7897156c421af126ef299053b
 
 title=Units 16–20 source notice
-summary=Proposed Units 16, 17, and 19 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts. Units 18 and 20 do not.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Comparison, relative-clause agreement, conditional patterns, obligation patterns, and motion pairs are not prepared. Review is pending.
+summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ex-u17-age-0-en`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8d7491ca4d3dcecdd2dbb3f68fc448b57a4105ddadf838fd5dbbc17c4a6b2a8c
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=I am 20 (years old)
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=d7c7336e5fa69ca95cb2de81696a3717301145c4e9c5a489921c0f03e3f50c02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-age-0-ru`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0f7f199aff950fe43dac64d9e5ea5745eed39a73b488bcfff38c20db79409cd1
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=мне двадцать лет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=941a0ccf67a1aaf9501fecd563275bc58a9130f448fcfc9676c6f295d7cb1bf5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-age-1-en`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc2b8af412227d0eb6f39f15520db562cdd7bf5515830c3025df0900e49a334e
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=20 years
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=1f2183e042701cfddc9eb938bd753ab3c42616dc587ad472b1e2dd7716d2e7f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-age-1-ru`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c2a92ac8215cbf4c9d4ad2e7f30c738f53665d54c84dc7bf791331e56ce2854e
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=двадцать лет
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=58a0ce1a860ec3c2300e5c2b9bfb6bb4bd2874424b30f64eb453eb585907e3c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-0-en`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 06a0ced94b952b2c8e0fb54da3a9317e88dec05616312e40bf1ebd043a57ec6f
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=What time is it?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-0-ru`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82ab64f5c14e5b2bb03fdaa970564b094bed14e4a2b01d512a71ad122e69aaad
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=Который час?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=ee16a8b5a980d4047816a6588c2cb4cf0e09766e6e8513a98ff38bb073ca2b57
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-1-en`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 99f6fb970b8b1f6c723a0133f26fdb5f5a5ccd6f6f7ce3183e69ca2067c0c4f5
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=time
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-1-ru`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53b151b10c38e84ca6345edd8fd9539ec47cc2803115a516c1021bd5426aa0d8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u17-hours-0-en`
 
@@ -2090,6 +3630,750 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u17-months-0-en`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 40ce2241777561cd4ddc8aaf6084475dadd4589aa70f9381cdb3cb9457e34f36
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=January
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=37082e68df858e0ba76442174128811135890ae4c2c5df8b6f31aef5885d0be7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-0-ru`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1c7be145280400d063bd0ab7c7902523da69dc82e27c3a81721a190843e1206a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Январь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=c0dcf58dba31a7cbbe4d172ab80ddd7507cd99e02e6f6b0bb8857e14a08652d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-1-en`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 34cd79fd3f18771fad3248b115b488629ddb14e69c51cfc5b505ee6e93798c49
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=February
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=c877c6ff405ec29ca3d090237af972c34926ffde7088da4839394b48931da888
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-1-ru`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b3f64d0380579790525a652b5de959794b2d538d9caed7e6d0ac890c9276a5fa
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Февраль
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=80abfad3c4781c8489822b877d3150a357f774a804bf37071980692354a760b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-2-en`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9729a926dede46ce386916e8ec87e54bb6a3da24e033dcd31e33d5b4b43d7bfd
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=March
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=9d95a2cf0d7180b5089691163b188a7203b0cde179346b8cfaa8ab6c2c3e6414
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-2-ru`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 519d5c4397ffa3870ea54aeebd93b85dfdb97ddc654469f9cdd7ce86070a5d00
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Март
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=869d8f1dd2aa06ac362b89373e710e37f00dc8a57a62939a083d161a20671ec6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-3-en`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 194439003554d16281060c6c29901d186d65bcac67cd540ed57f5bbd18466004
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=April
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=4afe6ea150d532c17693519cac32da104f47073d500d2507272d294d8590d3f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-months-3-ru`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 70db31efa353e7fc3f1dc82c65ed6589f30502ff37ff9ec85a18a74f912c003d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Апрель
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=6201bc1f385fddc029c732b24ae4fb8394fd714a06d5e8b22b159f3f56caffa5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u17-ordinals-0-en`
 
 - Objectives: obj-u17-ordinals
@@ -2394,6 +4678,686 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u17-weekdays-0-en`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 65d15cded4662d191de651e5f05937c1383b4ca6eed2141e920343cf3ec7beee
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Monday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=6a00dfc1dc867e8454c2c8856e1512d9bf02a76710e3411c0972aec886c76c61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-0-ru`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ddc77703777bd463415815b13ddf213ceeac00befc0f5ea3ca10b623034a4e7a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=понедельник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=21465eccacbbd63aeaffce6b51c4205dac3e0ee0729b23a433c7462724ea326f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-1-en`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9147c32b167c657e17b6877d4801e0f530d9316ae88db66aadceab347253f7bb
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Tuesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=7d8af1de1262f150187d5938bf649d6c35726970685f916d1ec6392a801b9762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-1-ru`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c5bfd72e9ed8c8d37e12efa636cca31a6e3493a836c9e530a9792ef82f513b0c
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=вторник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=e910dde3d1719ef37308bf965bae3a964429f63f779bd74d465d9a6a4144b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-2-en`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b488fa6944172deb129f6a3800bde43f9b99972c76856af33139693b6242546c
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Wednesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=c0a6cc829cd08735294765c75938a7da2b0f222d52e98bff13cb237cd99deaac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-2-ru`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e66265274e0876c76148495b5b36400f397b75be2dce75eb1262e0b46adbaebd
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=среда
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=a4733c2f8090e03fb0b0c4f0241f9e555833f9d9e8908270b126d85146b5ed81
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-3-en`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c5437e57b536b837054c64201a5c1ea61ba8933d5092b184f01f3b61f08cc935
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Thursday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=fc2662062ffdef9610020183ea2b087c21d71150d78a7c7463be8a9050bd3ac9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-weekdays-3-ru`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b05a2c5744972501e87f69e0b122542fa676261bef24eecaa8961876b3a33394
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=четверг
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=c5e3b3c07b8566d3a4aa4ca4096ff6a14db6bd1d69090955f06d105ffd04144f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u17-years-0-en`
 
 - Objectives: obj-u17-years
@@ -2674,6 +5638,186 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-age-rem`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bfb9641b8f2ae8eaea11db5b5d09b3c0c45cbdc44699b5026941254e8bd12b3a
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=I am 20 (years old)
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=d7c7336e5fa69ca95cb2de81696a3717301145c4e9c5a489921c0f03e3f50c02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-age-x-0`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e57b68fa372857f928a26c4831b29683c024a44dde4789ffd1368b77c62a0534
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=to_me (is) 20 years
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=897bba20ebc380e2254686c85afda14ab8369f22d6c2bee76bd5faec94d513bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-age-x-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2c56f5ac734ef15c0c364de8b632849364d8e52823c3aec3512206473f111682
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
+originalSourceText=age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_me (is) 20 years
+shippedText=age statements
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
+contentHash=0e65f9ce32b2da5506d985a46adb76ee71cc4b0206ecb01c08146fb561f5b110
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-rem`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6c9be3f98c6d7b837cfb7f5f8117a7efa09a158401ac439073cc285bbd5c6453
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=What time is it?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-x-0`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d7d4ee377675a1bf10eb22a5ebb0c81cde9289ea435a388418152f91ccaac21f
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=Which book do you want?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=015da34c8fd355619be542aea1566c3ef8ca07a087eb223d32cf32ef57d7dca7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-x-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 14a8c452a236c0e5c37e22007654f7209b1550c3da12d22a6d2df6b6a23e2782
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316
+sourceRevision=4220316
+sourceRecordId=interrogative:What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книг
+originalSourceText=What time is it? - '''Который час?'''
+:Which book do you want? - '''Которую книгу вы хотите?'''
+shippedText=Которую книгу вы хотите?
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
+contentHash=0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-hours-rem`
 
 - Objectives: obj-u17-hours
@@ -2832,6 +5976,843 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-months-rem`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3716c7ed69fb208c10f9552573f070a55c5154572183205aa4ca1379af7dd6c4
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Months of the year
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=36ee7f204522c8bc132c87d4d2cce3ad49412c9d306696423d6ff05c588e8358
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-0`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3bdfe5e98006f2c38022cafb22fa0ed4cd4c05ad8a0fbb62e7ca248047878f81
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Июнь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=326e32f8daefd317474dcfcc72d1fe4fc89682cc50eb137f40e8c69ebc25f5f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cc3ca8b5440e85d6906f621c21ba5b6037ff45ea2903759fb9d975232e460a38
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Июль
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=8721bc334237618d3fccf41d6d1a951848498a0720a3ada382b008eec4666a00
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9edf5fe416fbc75142f5dda2d3329e8ef0f1f95e90f55076cf4b624c1530bb7d
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Август
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=e3131072a64775a5abeed60fe62a2af86f57c7e4022c910dc7e940a30b95c722
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-3`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2fc528d7eadba490f65ca8f8f120945427c3ae51ca2c8d6af50e5c13abe629ff
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=Декабрь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=f3c529c3c23d716bbe77a35dfde93f78ac0e0acffcee6733511118c531935274
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-4`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 30767bfb25f7ab19bdf7be1e319392de55b1fca1c1e3b65595190049ce5f5c79
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=June
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=d5808c0e0a479813fafc659ded78dcd18372dd71f3d0d5d52efdc940e6a384e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-5`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fa103a9c6de32dc36969e1e4a2a4e63ac7255446158335e159543843698e909a
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=July
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=e9cf7a1ca4a760843ff30e1fbb125e6a066c63e883c58523bdbe04c9daf5dbae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-6`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 98ddc0deb41256808f752b8f8c33a2fed405df0f24f9f9b1ab3b45b0d1116e89
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=August
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=a66d8970e569a944234cbee8c414357fa6092c1ab779fbd637433f23e2a8abb8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-months-x-7`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed4f83e47f40ce0fa8eb9b06a277f72c82660a95bb7091d18b8702a1f97323b4
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Months?oldid=4376719
+sourceRevision=4376719
+sourceRecordId=months:==Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcrip
+originalSourceText===Months of the year==
+  
+{|
+|-
+| '''Russian''' || '''English''' || '''Transcription'''
+|-
+| &nbsp;
+|-
+| Месяц || Month || Mésyats
+|-
+| &nbsp;
+|-
+| Год || Year || Goad
+|-
+| &nbsp;
+|-
+| Январь || January || Yanvár'
+|-
+| &nbsp;
+|-
+| Февраль || February || Fevrál'
+|-
+| &nbsp;
+|-
+| Март || March || Mart
+|-
+| &nbsp;
+|-
+| Апрель || April || Aprél'
+|-
+| &nbsp;
+|-
+| Май || May || Mai
+|-
+| &nbsp;
+|-
+| Июнь || June || Iyún'
+|-
+| &nbsp;
+|-
+| Июль || July || Iyúl'
+|-
+| &nbsp;
+|-
+| Август || August || Avgust
+|-
+| &nbsp;
+|-
+| Сентябрь || September || Sentyábr'
+|-
+| &nbsp;
+|-
+| Октябрь || October || Oktyábr'
+|-
+| &nbsp;
+|-
+| Ноябрь || November || Noyábr'
+|-
+| &nbsp;
+|-
+| Декабрь || December
+shippedText=December
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1aa67eeb27b290bc6f2efe8d2b21956dc646262b5302772d6dc1f7b151516d81
+contentHash=8fb204ca460968479407fe3f09b85a7500b2f4a20ca644e5f7822f53161f331a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-ordinals-rem`
 
 - Objectives: obj-u17-ordinals
@@ -2902,6 +6883,1791 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
 contentHash=c3402154dc456181b72caed397b66d64fc94976bf34b35fe7575ffc4e4608c6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-rem`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed2595095cbaa1f3a6735c02b768ec35d9f164e223d23157a3fad3e6daedab7f
+
+recordType=instruction
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Russians don't capitalize days of the week.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=8c1448bcf41f4b002961164f74951ff6c8230ed12ef968d588371ca3498dcbd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bed089aa1e3fec64f4ebe2a5e7a89678e7cca712239f1f087f1961ff6cd0677
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=пятница
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=09e84f8ec21362561fa7953600cf1e0a59ac8a01206b5c12551934ccafe79937
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 682f1c86c4e35efe14e393ea7d8e837cd071c79dd23a4a5ab603ffcde5d6ca6a
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=суббота
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=fba272c3bf6a0eca716efe737d388ae71c594b8b1663cf997d51dd6ea6a05222
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-10`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6837cc5d61a3a694d2087c0b4875c20368c3f273fc44e2e35486965501f36934
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=пятница || noun || Friday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=2b3639510b3cab0f5860f0a93a84873564b5b29119c26b90a2dc2f3a3a6ac8d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-10-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 384ac0ba6e50c14d2fa605be4a048d6dd069877fd50a4db08b703e0c4a2fb4bb
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=пятница
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=09e84f8ec21362561fa7953600cf1e0a59ac8a01206b5c12551934ccafe79937
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-11`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 48a614daaf85738c79bc477b31e03994b0e329ccecb907ee9bc3148996ed7959
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=суббота || noun || Saturday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=304e531494640d4864a639c5519c3f78d1426db400fb51df3910c55277365d15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-11-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bb85719e46e59c31364ea080a7d87839163fcad80576bccecb6a9c83f9a5ce77
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=суббота
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=fba272c3bf6a0eca716efe737d388ae71c594b8b1663cf997d51dd6ea6a05222
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-12`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 16e076c1d6f763952a9c94e7279e952db9c49585446395a4d8fdef0f8c2224d8
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=воскресенье || noun || Sunday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=0e0548f151b2584a52352411c19e63992ded183598c8a0eb90c5da86617dcb01
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-12-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7912adbca716e336bf8926e6cd66a83e4913c2b2d54e35b01dbad101dea88dd9
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=воскресенье
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=b960040913df77a57f788dd2d72c06f17398b6e543b26fbe76539547362a6e76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1b8430b8e527e44863b35012b6b0c762b7f8cc8f0af78571a9aaf0125f4623d6
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=воскресенье
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=b960040913df77a57f788dd2d72c06f17398b6e543b26fbe76539547362a6e76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-3`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b1e8a373c924e1cddf285c704081e12fd38b357bdfb33ca8ebb8e6dfa738ae90
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Friday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=e21f3f372a46d4be7b49f6809fc91baefeadae004af06485518e124a142c0271
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-4`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c79217be90dbb7ffcf7b0da7105f2a50354db1a8aadfed9ff6596defb55d068f
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Saturday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=dbe35c7363c2f7ec747b902fb240907fc58ae00b98f107be2d4c7b9cd7f6226e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-5`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ebb97522a4f341c195c921bdbd9f1d685aca1d0ad65f131c5f652378f4d3b10a
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=Sunday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=873fef760e5d001ba0a843bf1846713fd92538699f323ef00d51f97a2ad2756c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-6`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0c5c23fc7e1afa6dc9b9066a1ca69585bc0e9f40d56d0005ce9d4a6074f3e20d
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=понедельник || noun || Monday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=179e7b70733d159ca30f0bef2babb8e284cb747d9c795b2eba47837084475dc7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-6-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c315c9feeaa7954ddd5a613fd718f056226c2640df31850d5073e5f4be7f8e6a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=понедельник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=21465eccacbbd63aeaffce6b51c4205dac3e0ee0729b23a433c7462724ea326f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-7`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 223e9c590162bd9152ba19fd073614d266340a7aa176bfa36f6903b9e7c5d57c
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=вторник || noun || Tuesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=16ab5de640e91562e7b63e65fae10057308cc05256df936315bf2d307eeecacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-7-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d7fd27c1d64335165beedcee7615713ee042805fe095f574b389af4e32683115
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=вторник
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=e910dde3d1719ef37308bf965bae3a964429f63f779bd74d465d9a6a4144b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-8`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dba6adc336cf39092770637dced2ddf7b808227bc1df9a7eaf722b7ceb6df0dc
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=среда || noun || Wednesday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=a1002df2917ed5b48cdd6fed03ba6482d127afa86d80fdd3cde842c31532fc32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-8-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3661a042997e214226c96be70aa36c525ca4a228ab12a5a7f7115cc0790ada8
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=среда
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=a4733c2f8090e03fb0b0c4f0241f9e555833f9d9e8908270b126d85146b5ed81
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-9`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bcde0388980ac629710bf56fdae361b5ef712aa3d3ffe94cf4081a4d7bc7c4d
+
+recordType=label
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=четверг || noun || Thursday
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=2aac8a3627b3bdfa528a772b7ae76c0a374cc274deb725bc6480b776f4a79f83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-weekdays-x-9-r0`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8976d7f7ca9a3189a1d50d08021aea9e2f18a09ec01cd2f96527ff3ec45081d2
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Vocabulary/Days_of_the_Week?oldid=3594124
+sourceRevision=3594124
+sourceRecordId=days:Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyeh
+originalSourceText=Russians don't capitalize days of the week.
+
+{|
+|-
+| день || noun || day || dyehn
+|-
+| colspan="4" | A cognate (same word in Russian and English).
+|-
+| &nbsp;
+|-
+| сегодня || noun || today || sevódnya
+|-
+| colspan="4" | The г here is pronounced as a в. It sounds like "с его дня", which would mean "from his day", if день were an animate noun. But it's not.
+|-
+| &nbsp;
+|-
+| понедельник || noun || Monday || ponyedyél'nik
+|-
+| colspan="4" | On Mondays we ride our ''ponies'' to ''Nick's deli''.
+|-
+| &nbsp;
+|-
+| вторник || noun || Tuesday || vtórnik
+|-
+| colspan="4" | On Tuesdays we go to the ''store'' with ''Nick''.
+|-
+| &nbsp;
+|-
+| среда || noun || Wednesday || sryéda
+|-
+| colspan="4" | Wednesdays are a good day for ''shredding''.
+|-
+| &nbsp;
+|-
+| четверг || noun || Thursday || chetvérg
+|-
+| colspan="4" | On Thursdays ''Chet'' goes to ''work''.
+|-
+| &nbsp;
+|-
+| пятница || noun || Friday || pyátnitsa
+|-
+| colspan="4" | "On Fridays we eat ''pizza'' on a ''yacht'', ''neatly''.
+|-
+| &nbsp;
+|-
+| суббота || noun || Saturday || soobbóta
+|-
+| colspan="4" | "On Saturdays ''Sue'' goes ''boating''. Also Saturday is the ''Sabbath''. Don't confuse суббота with собакa, that is a dog.
+|-
+| &nbsp;
+|-
+| воскресенье || noun || Sunday
+shippedText=четверг
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2b7535d060e24ab51c953bd1bab5411dea13a6cf3e1acc9ffcf9a532f1753a0
+contentHash=c5e3b3c07b8566d3a4aa4ca4096ff6a14db6bd1d69090955f06d105ffd04144f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -2982,19 +8748,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u17-052`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e1bde6c22983b51e6a217f2ee9391f81c2d33a3d63faf8a9d29c73c22a1b4e3b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
 ### AUTHORED_ENGLISH `en-u17-053`
 
 - Objectives: none
@@ -3003,10 +8756,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4819f275fbd47584574a45d9237fa1923d3b8ae13d83b39c91748362f195b035
+- Content hash: 6c8c7e400f164b0ecd2522c41de53c8090d04b4e3536084c6d7c32820bf417b8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the first ordinal?
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u17-054`
 
@@ -3016,10 +8769,10 @@ text=Does this row fail the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a1e2c4540e2c8eae81c248030827fdbec8c451eb2b188bbe765cf127a9df01b
+- Content hash: 8e0fb274f59c88a4cca2820151b7f2c7fc3f75d744f36386bf2d16e636da01ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the first ordinal?
+text=Does this row fail the first ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-055`
 
@@ -3029,10 +8782,10 @@ text=Does this answer show the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4d3b816d42efd2ec49b5a3b467d588074e6ffaaf40caa2dc2903702733374fea
+- Content hash: 70b35fa92e4ec8e6c701684da6270f77fef329368778c36337eba1f6f9acc4f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the first ordinal?
+text=Does this answer show the first ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-056`
 
@@ -3042,10 +8795,10 @@ text=Which admitted line is the first ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0db5f5c039a4e6d8229501ad97cd85e48bca8f7ffc0ff6675adc569ef17f7c87
+- Content hash: 10f16fd67980a557ae0734442df0674a3b4f84acd841648126801e6c795260cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Which admitted line is the first ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-057`
 
@@ -3055,10 +8808,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3969bbb866d8fb4b45c37ee2eb2cf682996335d640d1444a330ed22a6cf626b7
+- Content hash: ee3ff7cded2a13ddbfec9cf0536cc7e01b928b6395d509d131a52f1d5816d679
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the second ordinal?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u17-058`
 
@@ -3068,10 +8821,10 @@ text=Does this row fail the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc0b164f8a524c4831b9f86024b9bc7eced51be59911237fc522dab7af33ca01
+- Content hash: c2e2ba25245ac4f0d565e59f9fec749f575044d69d0ca6e3d526c9f26677f5c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the second ordinal?
+text=Does this row fail the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-059`
 
@@ -3081,10 +8834,10 @@ text=Does this answer show the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 53bc6f430c2dab9ef0b34d474d75070d8d284c8be51e1c5600c8607ca1e99794
+- Content hash: 757f2c2a53ff771345ff2373fa18bb13e24190e3291d4d96c16aae5b82c5c017
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the second ordinal?
+text=Does this answer show the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-060`
 
@@ -3094,10 +8847,10 @@ text=Which admitted line is the second ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20dcf607fd60c65dd4e885d58e8bf39cf0793957891726b60840eca29b494e89
+- Content hash: 3e537713add3f18b163034e9554708be0db5f030d2a34d7241c4fff1eda10d07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the third ordinal?
+text=Which admitted line is the second ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-061`
 
@@ -3107,10 +8860,10 @@ text=Does this row fail the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55af982a1347c8f63dd80954394c292c171dca6f4ba1ccec431a6055d9e109e2
+- Content hash: c231cde803fa74748da8b4051d11ae77849c95e6edb2b6ce8974b75c437e6216
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the third ordinal?
+text=Does this row fail the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-062`
 
@@ -3120,10 +8873,10 @@ text=Does this answer show the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b9070cea818597670a64c4b0644e57c08e402c8a8627a1775e608871800c3d1c
+- Content hash: 00cd25b98d9a5edf54a21b2221ea1800afcaf99651a8fcae4d655355659ad0a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the third ordinal?
+text=Does this answer show the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-063`
 
@@ -3133,10 +8886,10 @@ text=Which admitted line is the third ordinal?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3efbd49c1617a59156ac1b6e92c8af4c55d20480897a99164c7cc7c20f1d00f2
+- Content hash: dcee9d4b3c62fea68626a5c96b14d872c5b5df1f2dd14481310ed3d446cd83e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-hour row?
+text=Which admitted line is the third ordinal?
 
 ### AUTHORED_ENGLISH `en-u17-064`
 
@@ -3146,10 +8899,10 @@ text=Does this row fail the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cd138f9ebfb20762b267be21953bf86fd9ee2cff3f315ea3b1dee1181ff0d44
+- Content hash: 7e9963c26927b128374c576225b3cbfafaa4751adb67d4402a0ab69a29ecac3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-hour row?
+text=Does this row fail the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-065`
 
@@ -3159,10 +8912,10 @@ text=Does this answer show the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 661a42dec3678d5deffcbece3442ac7249cd7ec4fb9834e424eca83cf688ab2c
+- Content hash: e3b06124f98aefc1d238c2a418ddfc9b516b4ac6fcfb7d0512dc184fb3f03f12
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-hour row?
+text=Does this answer show the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-066`
 
@@ -3172,10 +8925,10 @@ text=Which admitted line is the one-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6b0404333f62345b94fea3db0e1ea5457b9c7bce6b239a9120fc019e5924d02
+- Content hash: 8562d08b84360d077f84cb69d9a6b5e4f04081a9625881a38af6e035ba594138
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-hour row?
+text=Which admitted line is the one-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-067`
 
@@ -3185,10 +8938,10 @@ text=Does this row fail the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8f3c1047f05bb018b44a89040d4d06ce921010aaaaef64b0883640886a373a03
+- Content hash: f298c006f90fedc6e64e8c3bab4646433ae2bb90d8d36d322698c9e0a878dce3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-hour row?
+text=Does this row fail the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-068`
 
@@ -3198,10 +8951,10 @@ text=Does this answer show the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 37686308da19e2c89c02ae86dfd69c469627c63d03c6bcc1316d71dec3455b2e
+- Content hash: ff9f936acd2181cbd406ce32d903f91211a6832c803e93b121c54292e9b68607
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-hour row?
+text=Does this answer show the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-069`
 
@@ -3211,10 +8964,10 @@ text=Which admitted line is the two-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ade527640fb9e64793a8ca6d62b5a080152bd3495e89779579c04df3b3793e0
+- Content hash: bb46e4446dbf38d2d5620f87aac128fda93c1e135490c3c9ed3439b2bd09a448
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-hour row?
+text=Which admitted line is the two-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-070`
 
@@ -3224,10 +8977,10 @@ text=Does this row fail the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 608248c1792240dee4bd637e96fe9c69280f6315bc83bfe517e0976c6b386849
+- Content hash: d67e57824a3f3aafa56b58e28c04f042f0b2d504d981b0e259120e0b1ceca6ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-hour row?
+text=Does this row fail the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-071`
 
@@ -3237,10 +8990,10 @@ text=Does this answer show the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8efd1385cae49032a52ef533e14c3767df850cd339e5ed2f6bd94018e8929a68
+- Content hash: 1dccfb6925981081ed7d24e5e3a66977400554d022422e7c07a45420f70c03fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-hour row?
+text=Does this answer show the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-072`
 
@@ -3250,10 +9003,10 @@ text=Which admitted line is the five-hour row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 276514c496ea2759f0437881e57745b3ec24cfa521ee86329085a500b82f1c02
+- Content hash: 195eec76257a420aeebbbe6153fd219d78c5cb82a489ae3baaf0f17d20a7c344
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-year row?
+text=Which admitted line is the five-hour row?
 
 ### AUTHORED_ENGLISH `en-u17-073`
 
@@ -3263,10 +9016,10 @@ text=Does this row fail the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 688b2e559d255df7460277c9fdc56550e3b8905c7fac61511b2c39530e3a47c7
+- Content hash: 1b88ae77a76aaebd4d2e27db1270969c845dceb8403ad6a572145127fe27a67b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-year row?
+text=Does this row fail the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-074`
 
@@ -3276,10 +9029,10 @@ text=Does this answer show the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8bf0b3554ed72bebb0abbc4370feb1dd09bfcbe0f8622d9206d2bfdb951a3eba
+- Content hash: 68c6803332b893bf3561f024a2b8013a22feec03feb28aa46d7540ea8fbd895c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-year row?
+text=Does this answer show the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-075`
 
@@ -3289,10 +9042,10 @@ text=Which admitted line is the one-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 296538664414f417685246b9ad95ddb728b3104fbef776ed7678a8ed4600b89e
+- Content hash: 0f18afa03685fe5dac4975818cd6af60f9cc18efa834a885d64a0b8d5842ab13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-year row?
+text=Which admitted line is the one-year row?
 
 ### AUTHORED_ENGLISH `en-u17-076`
 
@@ -3302,10 +9055,10 @@ text=Does this row fail the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 218adb1c3c7c8730947c0d10c6530fa270ce6e108780e93f1b23f1ba3130317c
+- Content hash: 9807eecbaeb421d3b52402c65d9cf5fcc4009756b59a7c3d3b8196281bdffa69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-year row?
+text=Does this row fail the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-077`
 
@@ -3315,10 +9068,10 @@ text=Does this answer show the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c95216a4700503efed2e759dadb9ee9be7287ca48d2f74ca98af1a58bdca933e
+- Content hash: c3f488716860a0a83c35b77ce8624a6da4e4f0377e3652431e88497a572456bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-year row?
+text=Does this answer show the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-078`
 
@@ -3328,10 +9081,10 @@ text=Which admitted line is the two-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00308cc3250f28fee0fd854eaf7e3bf7f07bb6e697714eabad392c61cd2d9924
+- Content hash: 655c259de3792b1df5f4fe19a10ceb10435174b8b0389c73e528c98e4c80f8c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-year row?
+text=Which admitted line is the two-year row?
 
 ### AUTHORED_ENGLISH `en-u17-079`
 
@@ -3341,10 +9094,10 @@ text=Does this row fail the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c0570c14ac96d7ef79a442e673cf9a434c076b3cc0bfb1609c04a5cce0d2311
+- Content hash: 6ef3db62701cfbf45d9dc4e1d2ddb3b789154fbfe459b2950faea555261c46c1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-year row?
+text=Does this row fail the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-080`
 
@@ -3354,10 +9107,10 @@ text=Does this answer show the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2eb0e50064f903bf3e98c751cc8585c0fba591ebed458f5d7e1faa5b401d34c0
+- Content hash: 71fdfe75679391e25492e4c64c6b6102e5b5e41772667e740336e3843913eee7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-year row?
+text=Does this answer show the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-081`
 
@@ -3367,10 +9120,10 @@ text=Which admitted line is the five-year row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e285ff2632a9a302b947b9e56fc1f6241bb043079b5e0b6fab11cfa7754d287b
+- Content hash: a6771284c971cd2a537e187e8db063b54d56c34f9f0d0fc7991d4aedc7aaec68
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-minute row?
+text=Which admitted line is the five-year row?
 
 ### AUTHORED_ENGLISH `en-u17-082`
 
@@ -3380,10 +9133,10 @@ text=Does this row fail the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebee6e8a0caa298ab8b7c2649d237b097e8ca3c38809b682458af932286d498f
+- Content hash: c7490f2280bebc0f02b5c0aa5201bf5cc739b0a266fa4c8468f5a8d0795d7524
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-minute row?
+text=Does this row fail the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-083`
 
@@ -3393,10 +9146,10 @@ text=Does this answer show the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f15f978dfeeb1c7c2f463db8b06183cc58c91fe6179a1050e8d4f04b7ad32228
+- Content hash: 62ddc192045b9c96cc22991bc52c608c98dd014ff2ea76be82200fdac138d8f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-minute row?
+text=Does this answer show the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-084`
 
@@ -3406,10 +9159,10 @@ text=Which admitted line is the one-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 581dd9967cd58341a9655bf7abdeb4c94a681c9286d3527d417b6874040a16cd
+- Content hash: 4780dbb4feec4f8167e289165824cdeb8047330408f508bc46bfc867bf4e1e07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-minute row?
+text=Which admitted line is the one-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-085`
 
@@ -3419,10 +9172,10 @@ text=Does this row fail the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6a6861cdbba4d3434b1a9f50367ce472ff41d30613b554ee06d9b6fe44d61e25
+- Content hash: 78c5bbbe3fd84e06a267d357419138684be1281f1a33c077ce9064f3781f685e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-minute row?
+text=Does this row fail the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-086`
 
@@ -3432,10 +9185,10 @@ text=Does this answer show the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d25250fb898839efdb9781366ead9c36eddcb4b45c1d2318e853a975d4ab2090
+- Content hash: 08aad61743c5951e94b89c561bead6b5e30f53ce67f9a298de2a9a5c080aa3cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-minute row?
+text=Does this answer show the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-087`
 
@@ -3445,10 +9198,10 @@ text=Which admitted line is the two-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9912ec3a98869ca135e8da95583aea118f6aa40cc71b5ae5ed12ad0572f8c5ac
+- Content hash: f3a31f81e6c3d6c5c83baa145655d300a9e62ac130ce7c9590d5e7a5eb0c6272
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-minute row?
+text=Which admitted line is the two-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-088`
 
@@ -3458,10 +9211,10 @@ text=Does this row fail the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85d1be7740e7fa8d834c1ebc5da64ff96f6ddf46f5dafccc861efcd3c17840e8
+- Content hash: f48610a903a4061aaa5b3d6c0e959502e1c4abb9ddbd01d7bf68d277601623be
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-minute row?
+text=Does this row fail the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-089`
 
@@ -3471,10 +9224,10 @@ text=Does this answer show the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fbafb68edba1f74c1fe732c9f67dea940d30a7027b4b881a1682369de5bf441
+- Content hash: 9141e00674de1e4248ecc558db4eebb7c8360cb18e5af4064a6393e1e3531c51
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-minute row?
+text=Does this answer show the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-090`
 
@@ -3484,10 +9237,10 @@ text=Which admitted line is the five-minute row?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c80624e2db212f6f16a0c727e0088e5b12b86fee7cbc018a166ee19be827048e
+- Content hash: 3df8b823be07610480d947978b5a51d85894119203de3bd24f498a99a5796fb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted number and quantity rows
+text=Which admitted line is the five-minute row?
 
 ### AUTHORED_ENGLISH `en-u17-091`
 
@@ -3497,10 +9250,10 @@ text=Admitted number and quantity rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9c405b9ce15ca59bfa530e5ca477efc22f7c7d441c85e8a4eb943ec663f0459c
+- Content hash: d3a95479896a680834278fd439a98cfd24f2f2f048ca928de5a65f8aa29528f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows, ordinal rows, hour rows, year rows, and minute rows. Clock time, weekdays, dates, and age stay in the copy you own. Qualified review is pending.
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u17-092`
 
@@ -3510,10 +9263,10 @@ text=Proposed Unit 17 uses frozen number rows, ordinal rows, hour rows, year row
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c88b25161c2554ef223072c4ab86d8f81802d34ca494c47c0e5776130f9dae4c
+- Content hash: 84ceb9d8203f83e5dbeec1d945c706b1736bc1867b2c1d3ee62d8b1634a2180a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u17-093`
 
@@ -3523,10 +9276,10 @@ text=Open Lesson 17 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d8509478193e62696d762515f9d39544154feea403aca82fb7f21ad5c9ed9b3
+- Content hash: 617b0b314bf70fe5ef6cf6990d9d75016c2d5121def69ef8ab5cf497b6dc0d05
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u17-094`
 
@@ -3536,10 +9289,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b05d5a3a0806613b4de9fae977f67293b618dc39c8aa1320705466781c02e74
+- Content hash: f1691ad497adb2cd8a37d27d1bb6faf357e467c7c406d091c441399831b7e8bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted number and quantity rows
 
 ### AUTHORED_ENGLISH `en-u17-095`
 
@@ -3549,10 +9302,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d2d369dd3eaf8fcf8fd432ba9bf7f0c3bb97780a49e28ed158e7870c75585ab6
+- Content hash: 2bd14f73799c5d768bbeb696a5fe4cc52982866557e2c40609a516be24e20a74
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u17-096`
 
@@ -3562,10 +9315,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 01eb3dbdd4700458f226d0a3c91e2aa38433da2e404c52f89bafb8c5a7ee2a9a
+- Content hash: 88f70d9ed98385225d00f42a2f0ed969056c8cc60a569921bd505d8676e02028
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u17-097`
 
@@ -3575,10 +9328,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8f601b596b4ab78aa42a40ee58b06aa7d96433b822145f64f4bbd8ae1e870d5
+- Content hash: f3cf20459ea4568a2549a19ce7d9a2026c2f9c9fc988fd01d2e929dff76e19ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u17-098`
 
@@ -3588,10 +9341,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b522fd27344c7033288703bbb3d312ba483f45089202ecaac6246295eeb02a37
+- Content hash: 7c7ce65c948c628818c5d38baf454805c8097e829f69fbe580daad75144fe0c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 17 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u17-099`
 
@@ -3601,10 +9354,10 @@ text=Work Lesson 17 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 458bb0e819ad3d9436a2c74bdb4ab06a6257aff861abf804da33bc06b5f90142
+- Content hash: d7276a0fdef60014a596f3d8f09b359f4e73336d6ef0543d9fcb189a41e2ba6f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u17-100`
 
@@ -3614,10 +9367,10 @@ text=Do Lesson 17 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 861c5b4ab30657a7d614b8667a6a133a28d220af1af61fe31982defa1b9476e3
+- Content hash: 62cbecb2857dd43202cdd79eefbf3c7d76f041d9ca53dd7328e7f8556e2f3771
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u17-101`
 
@@ -3627,10 +9380,10 @@ text=Open Lesson 17 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 631b8e9630a7bde97f5153b985d72f79e0a61a7dd64b4bcdc77edea46017c4fa
+- Content hash: 85dd2a220d921e6e7428c3a939c93f92629777c8cb1fbc4fe0337780603884c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 17 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u17-102`
 
@@ -3640,10 +9393,10 @@ text=Record Lesson 17 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd826b81596ef6759afb2cb3f2141b7c0622d9e5d5074f9f6f42c123ef76d4f9
+- Content hash: 7fe9ca1c3e673db872d0c3c42ba5c149a254ff37300494c691d795eb0f32c3bc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 17 in your copy
 
 ### AUTHORED_ENGLISH `en-u17-103`
 
@@ -3653,10 +9406,10 @@ text=When you have done Lesson 17 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24fa60c54827ace343390e105f6efb68182f899d8944ae6b8829c0d96771e38b
+- Content hash: b3bfb84cd87436733207b2d8cbe1d1462f37221b468a1fa99ded9e7714a8302f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 17 work in your copy.
+text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u17-104`
 
@@ -3666,10 +9419,10 @@ text=Self-attest only after the Lesson 17 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c464f62024dc923e29aa500bab8a054971a9573202e2465f7f267ae39d6211e
+- Content hash: 629ba63fe366f6b3b7329c7d57bf3396d90e63375981ea7e21ff98eaab0448b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Clock time and dates stay in the copy you own
+text=Open Lesson 17 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u17-105`
 
@@ -3679,10 +9432,88 @@ text=Clock time and dates stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38b13d1aba5f6987a438fc771a8bacfdd535f225e64f30bf54620069b20b9cd2
+- Content hash: 2d7850bf9ddc010ef08da066c0faf81e8cd1a54cc122d99c31fa48e6781bc56d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Clock time, weekdays, dates, and age stay in the copy you own. The frozen number rows do not establish those patterns.
+text=Record Lesson 17 book work
+
+### AUTHORED_ENGLISH `en-u17-106`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ca1db8351d63c705a17f0450fecb2c217d29e2ebdfd27713599180d0b655095f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u17-107`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7583088bff9ee52e5eda8470451b2e8f24e4ec7a475e253465a55987de93a303
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 17 work in your copy.
+
+### AUTHORED_ENGLISH `en-u17-108`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 09ea17c0b9d73f5b83a5f55c624275d8bd551d95f728d530c3c9082e2fa00abf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Productive clock-time answers stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u17-109`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f67102fbfc3f63851ff4385dc054707abb17ddda25a0e7bba050d3ab79825500
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
+
+### AUTHORED_ENGLISH `en-u17-110`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 69afcd7f9697c7212cd7ed21f496612cbaf5e09a51150e5351c2e736b317e32a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Calendar-date syntax stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u17-111`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eaca056791ee7fcadb68d59e66b1d5c3b88e42b00c9bb09422259c4559a3df2a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -3698,6 +9529,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
+
+Russian grammar
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -3725,6 +9571,20 @@ Original
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
+
+src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -3790,13 +9650,60 @@ permitsAppUse=true
 - `obj-u17-minutes` CHECK `u17-i-minutes-1`
 - `obj-u17-minutes` CHECK `u17-i-minutes-2`
 - `obj-u17-minutes` REMEDIATION `u17-st-rem-minutes`
+- `obj-u17-age` INSTRUCTION `u17-st-orient`
+- `obj-u17-age` INSTRUCTION `u17-st-teach-age-1`
+- `obj-u17-age` INSTRUCTION `u17-st-teach-age-2`
+- `obj-u17-age` EXAMPLE `ex-u17-age-0`
+- `obj-u17-age` EXAMPLE `ex-u17-age-1`
+- `obj-u17-age` PRACTICE `u17-st-guided-age-1`
+- `obj-u17-age` CHECK `u17-i-age-1`
+- `obj-u17-age` CHECK `u17-i-age-2`
+- `obj-u17-age` REMEDIATION `u17-st-rem-age`
+- `obj-u17-weekdays` INSTRUCTION `u17-st-orient`
+- `obj-u17-weekdays` INSTRUCTION `u17-st-teach-weekdays-1`
+- `obj-u17-weekdays` INSTRUCTION `u17-st-teach-weekdays-2`
+- `obj-u17-weekdays` INSTRUCTION `u17-st-teach-weekdays-3`
+- `obj-u17-weekdays` EXAMPLE `ex-u17-weekdays-0`
+- `obj-u17-weekdays` EXAMPLE `ex-u17-weekdays-1`
+- `obj-u17-weekdays` EXAMPLE `ex-u17-weekdays-2`
+- `obj-u17-weekdays` EXAMPLE `ex-u17-weekdays-3`
+- `obj-u17-weekdays` PRACTICE `u17-st-guided-weekdays-1`
+- `obj-u17-weekdays` CHECK `u17-i-weekdays-1`
+- `obj-u17-weekdays` CHECK `u17-i-weekdays-2`
+- `obj-u17-weekdays` REMEDIATION `u17-st-rem-weekdays`
+- `obj-u17-months` INSTRUCTION `u17-st-orient`
+- `obj-u17-months` INSTRUCTION `u17-st-teach-months-1`
+- `obj-u17-months` INSTRUCTION `u17-st-teach-months-2`
+- `obj-u17-months` INSTRUCTION `u17-st-teach-months-3`
+- `obj-u17-months` EXAMPLE `ex-u17-months-0`
+- `obj-u17-months` EXAMPLE `ex-u17-months-1`
+- `obj-u17-months` EXAMPLE `ex-u17-months-2`
+- `obj-u17-months` EXAMPLE `ex-u17-months-3`
+- `obj-u17-months` PRACTICE `u17-st-guided-months-1`
+- `obj-u17-months` CHECK `u17-i-months-1`
+- `obj-u17-months` CHECK `u17-i-months-2`
+- `obj-u17-months` REMEDIATION `u17-st-rem-months`
+- `obj-u17-clock` INSTRUCTION `u17-st-orient`
+- `obj-u17-clock` INSTRUCTION `u17-st-teach-clock-1`
+- `obj-u17-clock` INSTRUCTION `u17-st-teach-clock-2`
+- `obj-u17-clock` EXAMPLE `ex-u17-clock-0`
+- `obj-u17-clock` EXAMPLE `ex-u17-clock-1`
+- `obj-u17-clock` PRACTICE `u17-st-guided-clock-1`
+- `obj-u17-clock` CHECK `u17-i-clock-1`
+- `obj-u17-clock` CHECK `u17-i-clock-2`
+- `obj-u17-clock` REMEDIATION `u17-st-rem-clock`
 - `obj-u17-book` INSTRUCTION `u17-st-book-work`
 - `obj-u17-book` INSTRUCTION `u17-st-book`
-- `obj-u17-calendar` INSTRUCTION `u17-st-gap-calendar`
+- `obj-u17-clock-answers` INSTRUCTION `u17-st-gap-clock-answers`
+- `obj-u17-calendar-date` INSTRUCTION `u17-st-gap-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-ordinals`
 - `u17-s-orient` OBJECTIVE `obj-u17-hours`
 - `u17-s-orient` OBJECTIVE `obj-u17-years`
 - `u17-s-orient` OBJECTIVE `obj-u17-minutes`
+- `u17-s-orient` OBJECTIVE `obj-u17-age`
+- `u17-s-orient` OBJECTIVE `obj-u17-weekdays`
+- `u17-s-orient` OBJECTIVE `obj-u17-months`
+- `u17-s-orient` OBJECTIVE `obj-u17-clock`
 - `u17-s-orient` OBJECTIVE `obj-u17-book`
 - `u17-st-orient` REFERENCE `ref-u1620-attribution`
 - `u17-s-ordinals` OBJECTIVE `obj-u17-ordinals`
@@ -3857,10 +9764,74 @@ permitsAppUse=true
 - `u17-st-check-minutes` REMEDIATION `u17-st-rem-minutes`
 - `u17-st-check-minutes` ITEM `u17-i-minutes-1`
 - `u17-st-check-minutes` ITEM `u17-i-minutes-2`
+- `u17-s-age` OBJECTIVE `obj-u17-age`
+- `u17-st-teach-age-1` EXAMPLE `ex-u17-age-0`
+- `u17-st-teach-age-1` EXAMPLE `ex-u17-age-1`
+- `u17-st-teach-age-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-age-1` REMEDIATION `u17-st-rem-age`
+- `u17-st-guided-age-1` ITEM `u17-g-age-0`
+- `u17-st-teach-age-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-age` EXAMPLE `ex-u17-age-0`
+- `u17-st-rem-age` EXAMPLE `ex-u17-age-1`
+- `u17-st-check-age` REMEDIATION `u17-st-rem-age`
+- `u17-st-check-age` ITEM `u17-i-age-1`
+- `u17-st-check-age` ITEM `u17-i-age-2`
+- `u17-s-weekdays` OBJECTIVE `obj-u17-weekdays`
+- `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-0`
+- `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-1`
+- `u17-st-teach-weekdays-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-weekdays-1` REMEDIATION `u17-st-rem-weekdays`
+- `u17-st-guided-weekdays-1` ITEM `u17-g-weekdays-0`
+- `u17-st-teach-weekdays-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-2`
+- `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-3`
+- `u17-st-teach-weekdays-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-0`
+- `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-1`
+- `u17-st-check-weekdays` REMEDIATION `u17-st-rem-weekdays`
+- `u17-st-check-weekdays` ITEM `u17-i-weekdays-1`
+- `u17-st-check-weekdays` ITEM `u17-i-weekdays-2`
+- `u17-s-months` OBJECTIVE `obj-u17-months`
+- `u17-st-teach-months-1` EXAMPLE `ex-u17-months-0`
+- `u17-st-teach-months-1` EXAMPLE `ex-u17-months-1`
+- `u17-st-teach-months-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-months-1` REMEDIATION `u17-st-rem-months`
+- `u17-st-guided-months-1` ITEM `u17-g-months-0`
+- `u17-st-teach-months-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-months-3` EXAMPLE `ex-u17-months-2`
+- `u17-st-teach-months-3` EXAMPLE `ex-u17-months-3`
+- `u17-st-teach-months-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-months` EXAMPLE `ex-u17-months-0`
+- `u17-st-rem-months` EXAMPLE `ex-u17-months-1`
+- `u17-st-check-months` REMEDIATION `u17-st-rem-months`
+- `u17-st-check-months` ITEM `u17-i-months-1`
+- `u17-st-check-months` ITEM `u17-i-months-2`
+- `u17-s-clock` OBJECTIVE `obj-u17-clock`
+- `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-0`
+- `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-1`
+- `u17-st-teach-clock-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-clock-1` REMEDIATION `u17-st-rem-clock`
+- `u17-st-guided-clock-1` ITEM `u17-g-clock-0`
+- `u17-st-teach-clock-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-clock` EXAMPLE `ex-u17-clock-0`
+- `u17-st-rem-clock` EXAMPLE `ex-u17-clock-1`
+- `u17-st-check-clock` REMEDIATION `u17-st-rem-clock`
+- `u17-st-check-clock` ITEM `u17-i-clock-1`
+- `u17-st-check-clock` ITEM `u17-i-clock-2`
 - `u17-s-book` OBJECTIVE `obj-u17-book`
 - `u17-st-book-work` REFERENCE `ref-u1620-attribution`
-- `u17-s-gap-calendar` OBJECTIVE `obj-u17-calendar`
-- `u17-st-gap-calendar` REFERENCE `ref-u1620-attribution`
+- `u17-s-gap-clock-answers` OBJECTIVE `obj-u17-clock-answers`
+- `u17-st-gap-clock-answers` REFERENCE `ref-u1620-attribution`
+- `u17-s-gap-calendar-date` OBJECTIVE `obj-u17-calendar-date`
+- `u17-st-gap-calendar-date` REFERENCE `ref-u1620-attribution`
+- `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
+- `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
+- `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`
+- `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-ru`
+- `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-0-en`
+- `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-0-ru`
+- `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-1-en`
+- `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-1-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-en`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-1-en`
@@ -3873,6 +9844,14 @@ permitsAppUse=true
 - `obj-u17-minutes` PROVENANCE `prov-ex-u17-minutes-1-ru`
 - `obj-u17-minutes` PROVENANCE `prov-ex-u17-minutes-2-en`
 - `obj-u17-minutes` PROVENANCE `prov-ex-u17-minutes-2-ru`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-0-en`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-0-ru`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-1-en`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-1-ru`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-2-en`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-2-ru`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-3-en`
+- `obj-u17-months` PROVENANCE `prov-ex-u17-months-3-ru`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-0-ru`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-1-en`
@@ -3881,6 +9860,14 @@ permitsAppUse=true
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-ru`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-0-en`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-0-ru`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-1-en`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-1-ru`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-2-en`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-2-ru`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-3-en`
+- `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-3-ru`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-0-en`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-0-ru`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-1-en`
@@ -3889,12 +9876,48 @@ permitsAppUse=true
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-2-ru`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-3-en`
 - `obj-u17-years` PROVENANCE `prov-ex-u17-years-3-ru`
+- `obj-u17-age` PROVENANCE `prov-u17-age-rem`
+- `obj-u17-age` PROVENANCE `prov-u17-age-x-0`
+- `obj-u17-age` PROVENANCE `prov-u17-age-x-1`
+- `obj-u17-clock` PROVENANCE `prov-u17-clock-rem`
+- `obj-u17-clock` PROVENANCE `prov-u17-clock-x-0`
+- `obj-u17-clock` PROVENANCE `prov-u17-clock-x-1`
 - `obj-u17-hours` PROVENANCE `prov-u17-hours-rem`
 - `obj-u17-hours` PROVENANCE `prov-u17-hours-rem-r0`
 - `obj-u17-minutes` PROVENANCE `prov-u17-minutes-rem`
 - `obj-u17-minutes` PROVENANCE `prov-u17-minutes-rem-r0`
+- `obj-u17-months` PROVENANCE `prov-u17-months-rem`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-0`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-1`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-2`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-3`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-4`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-5`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-6`
+- `obj-u17-months` PROVENANCE `prov-u17-months-x-7`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-rem`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-rem`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-1`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-10`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-10-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-11`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-11-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-12`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-12-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-2`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-3`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-4`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-5`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-6`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-6-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-7`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-7-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-8`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-8-r0`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-9`
+- `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-9-r0`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem`
 - `obj-u17-years` PROVENANCE `prov-u17-years-rem-r0`
 
@@ -3906,7 +9929,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u17-st-gap-calendar`
+- `u17-st-gap-clock-answers`
+- `u17-st-gap-calendar-date`
 
 ## Unresolved relationships
 

@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 16 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 16 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 16 remains in development. Its readiness is content-complete and review-pending. The Lesson 16 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511
-- Unit content-review SHA-256: f632bdb0e898dfe4717b1d398725c3ff131b88ac0a2857a79a47b55e3d4d0567
+- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
+- Unit content-review SHA-256: 1b483e3b93f57c2f7b70be9e544698f6946cb9b2152f11cd02447355ad307efb
 - Mapping-package SHA-256: 7b89d0ad3f4bdb94e023804b86d8eaf30bcd0d44cace703783682dc3d27b9afa
-- Pack content-review SHA-256: b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd
-- Review-package SHA-256: 7a6f06aceb8be6ebf63db989301fc6935ebb71ff654ed3cbfa340d58e289b8b9
-- Repository source SHA-256: 0aba6436df419cfe8c040f6d29089a339a83a03d9351bd32e45d420d5fda7889
+- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
+- Review-package SHA-256: 39a64406aee10da4e60f0ba76be54a508327af060bd8b7b34351646a1fe5e2fc
+- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=16
 title=Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming
-topicSummary=Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 16, printed pages 188-200. Independently stated topic scope: Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=16
 prerequisites=15
-estimatedMinutes=82
+estimatedMinutes=90
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 16.
 
 ### UNIT `unit-16`
 
-- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-book, obj-u16-complements
-- Sessions: u16-s-orient, u16-s-inst-sg, u16-s-inst-pl, u16-s-inst-adj, u16-s-inst-means, u16-s-inst-prep, u16-s-book, u16-s-gap-complements
+- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-complements, obj-u16-book
+- Sessions: u16-s-orient, u16-s-inst-sg, u16-s-inst-pl, u16-s-inst-adj, u16-s-inst-means, u16-s-inst-prep, u16-s-complements, u16-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 68a577d155a23f7ea2383cfb44a7ef0c5ef5f6ef5879a506baed9c5dd48abe39
+- Content hash: 25fa8e0d5d43f0ef125a6b1d7927ac92c6b41c0f9d7736de6c380cd4517b4d6d
 
 number=16
 title=Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming
-topicSummary=Proposed Unit 16 is in development and is not prepared. Admitted instrumental rows await qualified review. Identity, role, and becoming complements have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 16, printed pages 188-200. Independently stated topic scope: Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=16
 prerequisites=15
-estimatedMinutes=82
+estimatedMinutes=90
 
 ### ADVANCEMENT `unit-16-advancement`
 
@@ -200,6 +200,25 @@ practice=u16-st-guided-inst-prep-1
 checks=u16-i-inst-prep-1,u16-i-inst-prep-2
 remediation=u16-st-rem-inst-prep
 
+### OBJECTIVE `obj-u16-complements`
+
+- Objectives: obj-u16-complements
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8e9d356029b1fc4f8db3ef0c776870b69cc1eb426440c8b46ffa81439904ae5e
+
+title=Choose the admitted gloss beside the shown complement
+kind=RECOGNITION
+unitNumber=16
+instruction=u16-st-orient,u16-st-teach-complements-1,u16-st-teach-complements-2,u16-st-teach-complements-3
+examples=ex-u16-complements-0,ex-u16-complements-1,ex-u16-complements-2,ex-u16-complements-3
+practice=u16-st-guided-complements-1
+checks=u16-i-complements-1,u16-i-complements-2
+remediation=u16-st-rem-complements
+
 ### OBJECTIVE `obj-u16-book`
 
 - Objectives: obj-u16-book
@@ -219,53 +238,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u16-complements`
-
-- Objectives: obj-u16-complements
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 939c04d669d740cdefe792cdb4ff6b8b76cf57684f22cdcaa73812f5e88c4d61
-
-title=Complements stay in the copy you own
-kind=GUIDANCE
-unitNumber=16
-instruction=u16-st-gap-complements
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u16-s-orient`
 
-- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-book
+- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-complements, obj-u16-book
 - Sessions: u16-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a1df4b1429f167977ef5de759bc63d79bed2feea60930632aaaeb436c690957
+- Content hash: afa3a5ef7de167b9165d2da7a51686c65429fd65f18284005054559b97bc430e
 
 title=Admitted instrumental rows
 estimatedMinutes=8
-objectives=obj-u16-inst-sg,obj-u16-inst-pl,obj-u16-inst-adj,obj-u16-inst-means,obj-u16-inst-prep,obj-u16-book
+objectives=obj-u16-inst-sg,obj-u16-inst-pl,obj-u16-inst-adj,obj-u16-inst-means,obj-u16-inst-prep,obj-u16-complements,obj-u16-book
 steps=u16-st-orient
 
 ### STEP `u16-st-orient`
 
-- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-book
+- Objectives: obj-u16-inst-sg, obj-u16-inst-pl, obj-u16-inst-adj, obj-u16-inst-means, obj-u16-inst-prep, obj-u16-complements, obj-u16-book
 - Sessions: u16-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c6b445fef559f8e78b8e76a8f6288a54bcc4c35c18ef9aab708a48a3f4a225b7
+- Content hash: b7aebb9edb47c0e63b3b9c6cdb1aba25ee6ef2a2e28833bc64d578c92e717df9
 
 kind=ORIENT
 title=Admitted instrumental rows
-body=Proposed Unit 16 uses frozen instrumental singular rows, instrumental plural rows, agreement rows, means and accompaniment lines, and selected governing lines. Identity, role, and becoming complements stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1208,6 +1208,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u16-st-rem-inst-prep
 
+### SESSION `u16-s-complements`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3758aaf511623d74bcb88cd7ba52c372576cb2011f43d5b6fbd4b550df416156
+
+title=Choose the admitted gloss beside the shown complement
+estimatedMinutes=12
+objectives=obj-u16-complements
+steps=u16-st-teach-complements-1,u16-st-guided-complements-1,u16-st-teach-complements-2,u16-st-teach-complements-3,u16-st-rem-complements,u16-st-check-complements
+
+### STEP `u16-st-teach-complements-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bdf22c5fd35092a2914e77c30ae4a9dea1553c497b564894532f538fd229ab1d
+
+kind=TEACH
+title=Admitted lines
+body=стать — became. остаться — remain. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u16-complements-0,ex-u16-complements-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u16-st-guided-complements-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 92fceccbbef7688d82e445fbd9a7cd5a49ffd1feb24df25798eed042f87fd202
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u16-g-complements-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-complements
+
+### STEP `u16-st-teach-complements-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c1c76ae06707b2787223c8817edfc82fb0c7785aed48119d9a2a325784fb5b0d
+
+kind=TEACH
+title=Admitted instruction
+body=associates of connective verbs
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u16-st-teach-complements-3`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ac7ac4a1ad85e8275e7352da9235674e3aa92418e7c1c8fcbfd68e96ef62a6f2
+
+kind=TEACH
+title=Admitted lines
+body=казаться — appear to be. оказаться — turn out to be. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u16-complements-2,ex-u16-complements-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u16-st-rem-complements`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: baa7ac2be4d54d65b93eb54920839a6590bac11dc785a0e8060709904059f73f
+
+kind=REMEDIATE
+title=Remediation
+body=associates of connective verbs
+dominantAction=Continue
+references=
+items=
+examples=ex-u16-complements-0,ex-u16-complements-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u16-st-check-complements`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: cea27f1c78662575043f396fda51439897e3190fbf0b27ffb6662102a1a25a0b
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u16-i-complements-1,u16-i-complements-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-complements
+
 ### SESSION `u16-s-book`
 
 - Objectives: obj-u16-book
@@ -1264,43 +1411,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 16 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u16-s-gap-complements`
-
-- Objectives: obj-u16-complements
-- Sessions: u16-s-gap-complements
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 337d4385705405c4a773785dbf9c4a4b9033fa1da56ad1f682a32d3c57ba1dda
-
-title=Complements stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u16-complements
-steps=u16-st-gap-complements
-
-### STEP `u16-st-gap-complements`
-
-- Objectives: obj-u16-complements
-- Sessions: u16-s-gap-complements
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6a45de12aa35216275fa6860b508bec0ec2c46c4d589ea81d581ba9b6feeb611
-
-kind=UNAVAILABLE
-title=Complements stay in the copy you own
-body=Identity, role, and becoming complements stay in the copy you own. No admitted frozen span states that pattern.
-dominantAction=Continue
-references=ref-u1620-attribution
-items=
-examples=
-unavailableReason=Identity, role, and becoming complements have no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1916,6 +2026,74 @@ note=between
 objectiveId=obj-u16-inst-prep
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u16-complements-0`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1488c876e9da48dbf67fda8b81ea7a3a29aeac42ab2234186fe63ea0017b3112
+
+kind=LEXICAL
+letterId=
+display=стать
+note=became
+objectiveId=obj-u16-complements
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u16-complements-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2dcb05b7e0b53cffcd227de05993d85b632848d87b60717b97faf05366e4a97c
+
+kind=LEXICAL
+letterId=
+display=остаться
+note=remain
+objectiveId=obj-u16-complements
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u16-complements-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dcf4658e798c62445c8c0102449c4523b9215e5a5989c20ec636ca56465816d8
+
+kind=LEXICAL
+letterId=
+display=казаться
+note=appear to be
+objectiveId=obj-u16-complements
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u16-complements-3`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eb14a8ebdea58bba7442ed1f8bcaa0429990d4f628294f544c7595d757ecaaec
+
+kind=LEXICAL
+letterId=
+display=оказаться
+note=turn out to be
+objectiveId=obj-u16-complements
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u16-g-inst-sg-0`
 
 - Objectives: obj-u16-inst-sg
@@ -2089,6 +2267,41 @@ whyAnswerDemonstratesObjective=Does this answer show the over label?
 contrastMembers=over | under | before
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-inst-prep-0-ru | prov-ex-u16-inst-prep-0-en | prov-ex-u16-inst-prep-1-en | prov-ex-u16-inst-prep-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u16-g-complements-0`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ddb13ea2d4fdc53225f2caaa66fb651f354f78b8ad51afd1a4c6f2790fe2c5c2
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=стать
+options=became | remain | turn out to be
+answer=became
+feedback=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
+objectiveId=obj-u16-complements
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+testedFeature=COMPLEMENT_BECAME
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u16-complements-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u16-complements-0-en
+distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
+distractorDifference= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
+contrastMembers=became | remain | turn out to be
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u16-i-inst-sg-1`
@@ -2441,19 +2654,89 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-inst-prep-2-ru | prov-ex-u16-inst-prep-2-en | prov-ex-u16-inst-prep-0-en | prov-ex-u16-inst-prep-3-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u16-i-complements-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51b9828900715cb5dd8a3ecb66731b79a4eb1144f010f9f63829fd348db959d9
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=остаться
+options=remain | became | turn out to be
+answer=remain
+feedback=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+objectiveId=obj-u16-complements
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+testedFeature=COMPLEMENT_REMAIN
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u16-complements-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u16-complements-1-en
+distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
+distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+contrastMembers=remain | became | turn out to be
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u16-complements-1-ru | prov-ex-u16-complements-1-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u16-i-complements-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9fd02a2b53f3e58dc8d920b3f91f26082610b5320e5441d2e37d76e0b0df9ec4
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=оказаться
+options=turn out to be | became | remain
+answer=turn out to be
+feedback=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+objectiveId=obj-u16-complements
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+testedFeature=COMPLEMENT_TURN
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u16-complements-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u16-complements-3-en
+distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
+distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+contrastMembers=turn out to be | became | remain
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u16-complements-3-ru | prov-ex-u16-complements-3-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u1620-attribution`
 
 - Objectives: none
-- Sessions: u16-s-orient, u16-s-inst-sg, u16-s-inst-pl, u16-s-inst-adj, u16-s-inst-means, u16-s-inst-prep, u16-s-book, u16-s-gap-complements
+- Sessions: u16-s-orient, u16-s-inst-sg, u16-s-inst-pl, u16-s-inst-adj, u16-s-inst-means, u16-s-inst-prep, u16-s-complements, u16-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 1738f6a83fddb055e6c63df3fb66aa5cdd1a6da067b0a1039ca2f9604af25107
+- Content hash: 51aa084aa2fa1d7f4e4bf84f267270371d8581ce4e0abc4badc6c84689abdc69
 
 title=Units 16–20 source notice
-summary=Proposed Units 16, 17, and 19 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts. Units 18 and 20 do not.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Comparison, relative-clause agreement, conditional patterns, obligation patterns, and motion pairs are not prepared. Review is pending.
+summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
@@ -3967,6 +4250,238 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u16-complements-0-en`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5ff2e59b43022e9265154df58d25dc2d7eb3473ad4d61ca1c9df6066552bf7f1
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=became
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=3f5c81b45da7f1f27fbcfc7cd9563b04b8449463aec53ddd2616b2161bd68c54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-0-ru`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f9be30250c24029d1d3134b365e7e28af4a7ae75a80bd49e08e1fbb239c0ce95
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=стать
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-1-en`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8f518bf01b73635fb8048bf10dd3d8d87362673a4da664e86b422f3b3d6338c2
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=remain
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=fc2b6c264e75e681bcfe01332f5450aa1ab4a30005091c6206b31a80daff925e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-1-ru`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 43be8043a7bf065b7d96dfd3e3f3e6833d449ba2af74e0df0aa19d2db61a3a6e
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=остаться
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-2-en`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2bb8de7f730969d2b7f4614ecf8c96bdd65ca72d521bbc2bd7c4b068b8352c0b
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=appear to be
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=c648933976dad95a218d37feda5d5e7cb3de93825717de19be7a95504a833806
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-2-ru`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 68449d98e8f078d734934bcdee458c4b611918c1db4b6d62fbbbb60c59139609
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=казаться
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=b062a5a0669b0b01ff07c50aefb536ea411a9b402b2fe73ac824aafa87de031a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-3-en`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6ee40cfb7e223dfed0d9f8a54542670b01bf26e9b6fd277b309e43077a812c3d
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=turn out to be
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=9fbb857d234bb78a1fef02ea65e9a768d5cec51017b4bea3b7e6c5408494c29e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u16-complements-3-ru`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 46558818322aa4f775c61f03baf4b601610e4280eaafccfd2ee63056f7a5d236
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=оказаться
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=276c54a6d1adfaf8a5fb67d34864c44eab7df4279352d57b7e9be82c75d2002c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u16-inst-means-0-en`
 
 - Objectives: obj-u16-inst-means
@@ -4693,6 +5208,64 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=990f9e691440309a940389e625e00f899f4ba58904cc92d647a2c77f04e5875a
 contentHash=3d3d9beb085a919e6f8c68c2eaa06121628055456613ffa7fb20edf2889bffb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u16-complements-rem`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d34be6b0ec1a3321438acd424b92d34be8cb8deb4c70662329abc998f15e9883
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=associates of connective verbs
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=968c7fe7aade96c60fd17cd7fc8bc99d80a4e6d95f01391a475431b5fb3ad753
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u16-complements-x-0`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f2120c71aab7cb0c67575b9fce3fff4a534ce5fd821e2d34f1b216f55606797a
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became
+originalSourceText=associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be
+shippedText=associates of connective verbs
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630
+contentHash=968c7fe7aade96c60fd17cd7fc8bc99d80a4e6d95f01391a475431b5fb3ad753
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5575,10 +6148,10 @@ text=Which admitted English label is the before label?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3799b7fd0849c3223722b7a4d760b4e060184b3b20b4f74438da3f84444ee2ab
+- Content hash: db72f6ef7286a71dcfb6a47e0658b0583573850b8e7df8e4cc7baf9e4e71fc60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instrumental rows
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u16-037`
 
@@ -5588,10 +6161,10 @@ text=Admitted instrumental rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b698b4c8640b90aef0bc27a01100ba08a0ef412484c99b4645de796691d24549
+- Content hash: d2c281b425bffd18c1a315524ba203a837be5fc9b78b87958ecbdbc2f7ac86d7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 16 uses frozen instrumental singular rows, instrumental plural rows, agreement rows, means and accompaniment lines, and selected governing lines. Identity, role, and becoming complements stay in the copy you own. Qualified review is pending.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u16-038`
 
@@ -5601,10 +6174,10 @@ text=Proposed Unit 16 uses frozen instrumental singular rows, instrumental plura
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e890173e1a83fba36972df999bcd0d0cc2650ac4efcea2d9a232a3c3997e1080
+- Content hash: e3fe195213411111a5d392176a2da1f89b59199c2cd7c04bd69638d22b877939
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 16 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u16-039`
 
@@ -5614,10 +6187,10 @@ text=Open Lesson 16 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 662fe9d248f2be42a5b7696e316b928d3a8d4e2555afad6dff02b1bb60b12361
+- Content hash: 8c5e4540b366e024ee3bc65adb768c33c20ab057d312cca0d57f9f8b0964c940
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Admitted instrumental rows
 
 ### AUTHORED_ENGLISH `en-u16-040`
 
@@ -5627,10 +6200,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8fa67246b44916efe4e869b697df39ed1dff7f3ddfd068681dc046878ea56f34
+- Content hash: 662e4c9108daa74278a739b60a8807fc1420b81fc4ecdd2178a9f20e43faee8a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u16-041`
 
@@ -5640,10 +6213,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d1d3fd9094f09b9a73a5511efc041cde550cf017af7d626129dada488c68a41f
+- Content hash: 1586b8decf1f58bcf45a9d109e941805cae47b5c7fc752b9ea235ac256575d04
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Open Lesson 16 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u16-042`
 
@@ -5653,10 +6226,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e0542e1f8b9ec609b0ef47e1068db3bc263c326901b3eba760f580b59a801b9
+- Content hash: 1e343971f1ed08763a60dea0923a5cdcc6dfaa3ee878dd0fb7c724c93fb6b937
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u16-043`
 
@@ -5666,10 +6239,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 956378bb01f88b78a5df6d9087b3b4248a8613965b57ae8269396f069163fdcc
+- Content hash: 52a4f8b6c412cf79ca3ff5c15f2259ae9a5e987a036450c205a8447b837a7059
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u16-044`
 
@@ -5679,10 +6252,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 381909067502e10c51ef77e81daf8c91c0aa74a6e8ce1e075c731e56488eb854
+- Content hash: e5e42cec95fb7a9655a15f34a40280dc216e4ca062ce0b4a84e30797819d138a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 16 in your copy
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u16-045`
 
@@ -5692,10 +6265,10 @@ text=Work Lesson 16 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7d4dd7984ecd95ad972cbae918e7bba906f4c85d5fe6a3df79a8ba69a289164
+- Content hash: 0df098aaf1f685f09825c74d769c1dff7bf5e8fdb94d505c48eb2f84d0dee9ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u16-046`
 
@@ -5705,10 +6278,10 @@ text=Do Lesson 16 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5af69e1b2e90254d7100ee34b2fe104b2962f87826c490038c87400271222ace
+- Content hash: 9c1507bbf39360cf5aee8cab3131079c65b9395a3f1dfb930ffee44546600ddb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 16 in your copy and complete its lesson work.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u16-047`
 
@@ -5718,10 +6291,10 @@ text=Open Lesson 16 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3a0d07e46a32f211dd4386d7e8c294bc7e5a733d4c14be0b50cb34a31528c06
+- Content hash: ae8e45ccfebe3cfd49ea8fe99892782a48d8f457c365ef8f2ccf7f2076157b4c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 16 book work
+text=Work Lesson 16 in your copy
 
 ### AUTHORED_ENGLISH `en-u16-048`
 
@@ -5731,10 +6304,10 @@ text=Record Lesson 16 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 44318fa7e6592e265b9f54329641bbc8005ec88947927e1f4334ae14a1c5a1c9
+- Content hash: 1a34b2b2f093554bd959c7f3feb579721bef3d4c4f3622aaafb07d1c27202fe8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u16-049`
 
@@ -5744,10 +6317,10 @@ text=When you have done Lesson 16 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db7884f2794268c18865501597154e630ff9c37833ac08f74c837c4bb118ef15
+- Content hash: 54fcb1af8a1314225b91742d62b8951521d5d07ed88ef42b73a14e8cbcbc5e3c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 16 work in your copy.
+text=Open Lesson 16 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u16-050`
 
@@ -5757,10 +6330,10 @@ text=Self-attest only after the Lesson 16 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 28c60ea6d7deb3ba4d9094bf24ca6a0bd3a7ad61998537bc955327680c36e652
+- Content hash: 09ecb92b588c765e4dc4014805ddb2e1a8b1d71c3e7e0e4e4e1b90b1fd938dc0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Complements stay in the copy you own
+text=Record Lesson 16 book work
 
 ### AUTHORED_ENGLISH `en-u16-051`
 
@@ -5770,10 +6343,23 @@ text=Complements stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78237790f5cc601e9c4332cedf98dc725e96577c1e9b7a1fdfe4aa9d1d88c50b
+- Content hash: 833a921a94fbc0f3c1d2b3e7ed04eeb4592969c1299190d241a05b90a42b03fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Identity, role, and becoming complements stay in the copy you own. No admitted frozen span states that pattern.
+text=When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u16-052`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d3d5b01700b936506a57e663a07c581e4bfa9dc43094c04d968405cfb7f18b84
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 16 work in your copy.
 
 ### SOURCE `src-openrussian-50e210c4`
 
@@ -5804,6 +6390,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
+
+Russian grammar
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -5845,6 +6446,20 @@ permitsAppUse=true
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
+
+src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -5949,14 +6564,26 @@ permitsAppUse=true
 - `obj-u16-inst-prep` CHECK `u16-i-inst-prep-1`
 - `obj-u16-inst-prep` CHECK `u16-i-inst-prep-2`
 - `obj-u16-inst-prep` REMEDIATION `u16-st-rem-inst-prep`
+- `obj-u16-complements` INSTRUCTION `u16-st-orient`
+- `obj-u16-complements` INSTRUCTION `u16-st-teach-complements-1`
+- `obj-u16-complements` INSTRUCTION `u16-st-teach-complements-2`
+- `obj-u16-complements` INSTRUCTION `u16-st-teach-complements-3`
+- `obj-u16-complements` EXAMPLE `ex-u16-complements-0`
+- `obj-u16-complements` EXAMPLE `ex-u16-complements-1`
+- `obj-u16-complements` EXAMPLE `ex-u16-complements-2`
+- `obj-u16-complements` EXAMPLE `ex-u16-complements-3`
+- `obj-u16-complements` PRACTICE `u16-st-guided-complements-1`
+- `obj-u16-complements` CHECK `u16-i-complements-1`
+- `obj-u16-complements` CHECK `u16-i-complements-2`
+- `obj-u16-complements` REMEDIATION `u16-st-rem-complements`
 - `obj-u16-book` INSTRUCTION `u16-st-book-work`
 - `obj-u16-book` INSTRUCTION `u16-st-book`
-- `obj-u16-complements` INSTRUCTION `u16-st-gap-complements`
 - `u16-s-orient` OBJECTIVE `obj-u16-inst-sg`
 - `u16-s-orient` OBJECTIVE `obj-u16-inst-pl`
 - `u16-s-orient` OBJECTIVE `obj-u16-inst-adj`
 - `u16-s-orient` OBJECTIVE `obj-u16-inst-means`
 - `u16-s-orient` OBJECTIVE `obj-u16-inst-prep`
+- `u16-s-orient` OBJECTIVE `obj-u16-complements`
 - `u16-s-orient` OBJECTIVE `obj-u16-book`
 - `u16-st-orient` REFERENCE `ref-u1620-attribution`
 - `u16-s-inst-sg` OBJECTIVE `obj-u16-inst-sg`
@@ -6059,10 +6686,23 @@ permitsAppUse=true
 - `u16-st-check-inst-prep` REMEDIATION `u16-st-rem-inst-prep`
 - `u16-st-check-inst-prep` ITEM `u16-i-inst-prep-1`
 - `u16-st-check-inst-prep` ITEM `u16-i-inst-prep-2`
+- `u16-s-complements` OBJECTIVE `obj-u16-complements`
+- `u16-st-teach-complements-1` EXAMPLE `ex-u16-complements-0`
+- `u16-st-teach-complements-1` EXAMPLE `ex-u16-complements-1`
+- `u16-st-teach-complements-1` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-complements-1` REMEDIATION `u16-st-rem-complements`
+- `u16-st-guided-complements-1` ITEM `u16-g-complements-0`
+- `u16-st-teach-complements-2` REFERENCE `ref-u1620-attribution`
+- `u16-st-teach-complements-3` EXAMPLE `ex-u16-complements-2`
+- `u16-st-teach-complements-3` EXAMPLE `ex-u16-complements-3`
+- `u16-st-teach-complements-3` REFERENCE `ref-u1620-attribution`
+- `u16-st-rem-complements` EXAMPLE `ex-u16-complements-0`
+- `u16-st-rem-complements` EXAMPLE `ex-u16-complements-1`
+- `u16-st-check-complements` REMEDIATION `u16-st-rem-complements`
+- `u16-st-check-complements` ITEM `u16-i-complements-1`
+- `u16-st-check-complements` ITEM `u16-i-complements-2`
 - `u16-s-book` OBJECTIVE `obj-u16-book`
 - `u16-st-book-work` REFERENCE `ref-u1620-attribution`
-- `u16-s-gap-complements` OBJECTIVE `obj-u16-complements`
-- `u16-st-gap-complements` REFERENCE `ref-u1620-attribution`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0-gloss`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-1`
@@ -6115,6 +6755,14 @@ permitsAppUse=true
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-or-u16-inst-sg-6-gloss`
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-or-u16-inst-sg-7`
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-or-u16-inst-sg-7-gloss`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-0-en`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-0-ru`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-1-en`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-1-ru`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-2-en`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-2-ru`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-3-en`
+- `obj-u16-complements` PROVENANCE `prov-ex-u16-complements-3-ru`
 - `obj-u16-inst-means` PROVENANCE `prov-ex-u16-inst-means-0-en`
 - `obj-u16-inst-means` PROVENANCE `prov-ex-u16-inst-means-0-ru`
 - `obj-u16-inst-means` PROVENANCE `prov-ex-u16-inst-means-1-en`
@@ -6135,6 +6783,8 @@ permitsAppUse=true
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-u16-inst-sg-8-ru`
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-u16-inst-sg-9-en`
 - `obj-u16-inst-sg` PROVENANCE `prov-ex-u16-inst-sg-9-ru`
+- `obj-u16-complements` PROVENANCE `prov-u16-complements-rem`
+- `obj-u16-complements` PROVENANCE `prov-u16-complements-x-0`
 - `obj-u16-inst-adj` PROVENANCE `prov-u16-inst-adj-rem`
 - `obj-u16-inst-adj` PROVENANCE `prov-u16-inst-adj-rem-r0`
 - `obj-u16-inst-means` PROVENANCE `prov-u16-inst-means-rem`
@@ -6157,7 +6807,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u16-st-gap-complements`
+None.
+
 
 ## Unresolved relationships
 

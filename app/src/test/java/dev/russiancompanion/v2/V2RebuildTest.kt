@@ -128,7 +128,9 @@ class V2RebuildTest {
             assertTrue(objective.remediationStepIds.isNotEmpty())
         }
         assertTrue((11..15).all { pack.unit(it)!!.installState == "DEVELOPMENT" })
-        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.readiness == "NOT_PREPARED" })
+        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" })
+        assertTrue(listOf(16, 18, 20).all { pack.unit(it)!!.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
+        assertTrue(listOf(17, 19).all { pack.unit(it)!!.readiness == "NOT_PREPARED" })
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
         assertEquals(0, pack.admissions.generatedRussianWords)
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -556,7 +558,9 @@ class V2RebuildTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         }
-        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" && pack.unit(it)!!.readiness == "NOT_PREPARED" })
+        assertTrue((16..20).all { pack.unit(it)!!.installState == "DEVELOPMENT" })
+        assertTrue(listOf(16, 18, 20).all { pack.unit(it)!!.readiness == "CONTENT_COMPLETE_REVIEW_PENDING" })
+        assertTrue(listOf(17, 19).all { pack.unit(it)!!.readiness == "NOT_PREPARED" })
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" })
 
         val unitOne = V2Validator.unitContentReviewDigest(pack, 1)
@@ -912,7 +916,7 @@ class V2RebuildTest {
         assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("b111f54f5f75e0e57d375f857e500c6e9c9d35f265c1f9abd30d9b9b6f3acacd", V2Validator.contentReviewDigest(pack))
+        assertEquals("1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
