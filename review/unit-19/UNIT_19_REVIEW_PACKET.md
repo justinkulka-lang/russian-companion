@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
-- Unit content-review SHA-256: 23367132afee412c0d01f07c7234cd22c34318c90401197e11775c8c82b9212f
+- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
+- Unit content-review SHA-256: f1d0f31a2e04e1eb880c09910bc1162e8f43707cdd8c028f2aea2dd32fc9a855
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
-- Review-package SHA-256: 673ac3e2699b88548ab44fd6b2a0326968eecbdb41ac7a72764952e2f5c426db
-- Repository source SHA-256: 1f1b41e5bd9cea14aa246fb47b1d1077228658b80566da7c2b8d4343bda9ae10
+- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
+- Review-package SHA-256: 6dc272fe3a393024c5a2254d77845bc95d74abc6e6fc862b3b077b84877aa47c
+- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1301,11 +1301,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a147c80df46e4089fdf72b503e97b1b096cea70b282741fed089845f7a9ec3b9
+- Content hash: 4b280a7597269481a441c14bd1bc65edd90b387be7b86f381b9b6e5e768904a5
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
@@ -2531,58 +2531,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u19-127`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebeb49bf5ab67aefcbed8900d13469d9e45120cf6022335895ffdab4193ef4e8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u19-128`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 385085b9a17e092eb664e6b9e29776b8cc08e9113be0adaa1f9509370747c505
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the dissuade meaning?
-
-### AUTHORED_ENGLISH `en-u19-129`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 264c72740697395612de1bd352b4d83bc7a55c35f4ecc0d362817eaa840f91aa
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the dissuade meaning?
-
-### AUTHORED_ENGLISH `en-u19-130`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce8ffe1ef2c241218a36105bccf8b6e9e263cef1828124559c17a3de84c2782f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the dissuade meaning?
-
 ### AUTHORED_ENGLISH `en-u19-131`
 
 - Objectives: none
@@ -2591,10 +2539,10 @@ text=Which admitted English label is the dissuade meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 678aa5ea0b3bb582d31bab62f3ff8364b193ebfe11c01bbbf767a523ea84e14e
+- Content hash: a9f28e0697c44bf402415af5b85951c5f748b60d2b74d3eb57c6ef93adb944a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u19-132`
 
@@ -2604,10 +2552,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a88d9f5b649bfbdf525c031ed4c50c161b9533f58b04b4eb1770bf35f10c4d5
+- Content hash: e1f09c457a4477cec11a5510836cf277c4a5c03da79bfe22a461d25d34e75ea3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the agree meaning?
+text=Does this row fail the dissuade meaning?
 
 ### AUTHORED_ENGLISH `en-u19-133`
 
@@ -2617,10 +2565,10 @@ text=Does this row fail the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ad1613b9e934dc58991828aa0bdb29e6b5e3fe574e93a4ba13b4b920b0f1b448
+- Content hash: 0a2d0ac2f66005a1e078f2379f617e942cf9feb218b16439d6e123af3a0ff338
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the agree meaning?
+text=Does this answer show the dissuade meaning?
 
 ### AUTHORED_ENGLISH `en-u19-134`
 
@@ -2630,10 +2578,10 @@ text=Does this answer show the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0680e727fa0315f7fe9e0596e121cceb980b992671098b780541d6422577ca39
+- Content hash: 0d7c60fefec80f04676ac6079ec7ebf27fc83ae3a96168f345bf4c1393c925dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is the agree meaning?
+text=Which admitted English label is the dissuade meaning?
 
 ### AUTHORED_ENGLISH `en-u19-135`
 
@@ -2643,10 +2591,10 @@ text=Which admitted English label is the agree meaning?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7c052f495013842dca33e1620f7f9c933f6e7b9eab3c972371c9c39efdc8939
+- Content hash: 6b03d515084aaa7f7277bad2a2691596b508e288a8c1b6cc29d862a6d77481e6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the dissuade perfective?
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u19-136`
 
@@ -2656,10 +2604,10 @@ text=Does this row fail the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 93e7d8e61c0ccca3a689dd246be71db5649660c84418cf29176f1a966bb63d76
+- Content hash: ec260ae6a4f6b20c65c854f59724a8ffbf8c09bf904f1b69b23090b6977a4976
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the dissuade perfective?
+text=Does this row fail the agree meaning?
 
 ### AUTHORED_ENGLISH `en-u19-137`
 
@@ -2669,10 +2617,10 @@ text=Does this answer show the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 83ecd229657cf257234a4f8a78ec2c0b526e4c0924cba9eb11c81ec7c455f2a7
+- Content hash: a026d20b845762aa21e6b74cee6353c499aa7659fd1f34992c055c519b365e3e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the dissuade perfective?
+text=Does this answer show the agree meaning?
 
 ### AUTHORED_ENGLISH `en-u19-138`
 
@@ -2682,10 +2630,10 @@ text=Which admitted line is the dissuade perfective?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c973e5b82e04df5b036715b269f8ea04005f2b49888e4eec98dab0984e245e13
+- Content hash: 96be818631797665d7984f0fb27d315c8a1396e0adeeeeaa192726a64b04aeea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=Which admitted English label is the agree meaning?
 
 ### AUTHORED_ENGLISH `en-u19-139`
 
@@ -2695,10 +2643,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3926bce708bf4a2ad3080962713c332fc00b0bf1a7dd4f58f5ac3ed3f06b9fc2
+- Content hash: 86b8d25986ba7821ba83f92bf56d6bd80c4bf068061da9cc7e7fc152474940b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=Does this row fail the dissuade perfective?
 
 ### AUTHORED_ENGLISH `en-u19-140`
 
@@ -2708,10 +2656,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ec7d95bc4f0fb07f234d4120dfaa331a06145eb16571bc2ea4debd99640166c
+- Content hash: e347c145560f625fe42ab242a8b4c46c94a2f9deeafcc2cb5d56bca19aa408c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
+text=Does this answer show the dissuade perfective?
 
 ### AUTHORED_ENGLISH `en-u19-141`
 
@@ -2721,10 +2669,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a4dab8d7e39bfde3f9bc9c6525edee6552abe62bbd20d3936b4d14e45ee06fd4
+- Content hash: ae0b45b5d604c665d0714255dc2b9809599f17362c13cc3100d09d21bb31d4a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted prefix cautions
+text=Which admitted line is the dissuade perfective?
 
 ### AUTHORED_ENGLISH `en-u19-142`
 
@@ -2734,10 +2682,10 @@ text=Admitted prefix cautions
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96691deb82c1316772210995c4d56e19cacd47e99f5c137d44c784e3ab3dad59
+- Content hash: 3632dfe6d46a31e4928faf4af3e89789a62513ca9908dd3a6b5da8de6bcf7b7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u19-143`
 
@@ -2747,10 +2695,10 @@ text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af44dcd0f8753bf59623bebb08eddff4e84494c7c7975f3c7092a4a4f259d88d
+- Content hash: b3a4fe74cef83221d9c586c008235314c26cb9193681f793bbe53f15397745e0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u19-144`
 
@@ -2760,10 +2708,10 @@ text=Open Lesson 19 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d15c7b49b7ba25fde8e02082faae3dc2676a458be780dbfefb2d91e907d3ed9
+- Content hash: 19bfdaff1258571487bd3c2aedf44b37992147d400c6a750efff47d990320b9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u19-145`
 
@@ -2773,10 +2721,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a40da49b0f6d014a1fc030771a398089f05cb68a6ee739ddf5fa6a30ada08c1d
+- Content hash: 89b03478a69026594b6502a7f063a586d4b35742d756b6e6ae0bc8cff8425ccc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted prefix cautions
 
 ### AUTHORED_ENGLISH `en-u19-146`
 
@@ -2786,10 +2734,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c0fbb5b43fc125dbfe05dd7dd19724356bc94f8ee46c49f011dfaac267641311
+- Content hash: 2c9701e5c8fe1e7cf3bc5564cec813f9a1ff0feb8698b47fc1405e4f914e30b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u19-147`
 
@@ -2799,10 +2747,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f17587ce50dd0ff28466888769ce066c9bf56e450e293b0404c942298e3ab7a
+- Content hash: efee18bf7fce70d65ac0eecf91e2b49040e34e04f2efaf58dd30b97f6397c95e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 19 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u19-148`
 
@@ -2812,10 +2760,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4758793c5bdf90339dedc9da6df3b2847678170cca3b9a91d8f5431c1fae8972
+- Content hash: 2d07af3425e00ce8944a0a531aebe71d0b648d4bfd7e43ee3897ea008041dbde
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u19-149`
 
@@ -2825,10 +2773,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3aaa1b948748a6fef3874bfebc6dc84832465a8f3c873cd40887a35e5066956
+- Content hash: e65c22814bfd55608e485c1ffbd08f8a32fffd8c8ee81ae0955ef570391c86cd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 19 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u19-150`
 
@@ -2838,10 +2786,10 @@ text=Work Lesson 19 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 477af9bcb89e8ee523a8c3faf30727da8598f772f9e8e10dce25bea12803688a
+- Content hash: 81956ed5b237457e34100702b1dd4b04e5f428d694afe6a2e4c7f15055d6b0dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u19-151`
 
@@ -2851,10 +2799,10 @@ text=Do Lesson 19 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e355503dab74ce7c78db2326dac8c5c887f41a05f10a51cd97fbed21d2570d02
+- Content hash: ff7afc1610678cbf36e141af9bde4fad6bb84dd38733412b2b310060a7e57935
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 19 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u19-152`
 
@@ -2864,10 +2812,10 @@ text=Open Lesson 19 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5d3a4b49f5f78c6d883fd944adc8fd70919cbeb6619245391029f5d47df7cb6d
+- Content hash: 8cbcb707a75f7d6667e013e25e67d57d1551050b5b12f674afd243f3e5c14d77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 19 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u19-153`
 
@@ -2877,10 +2825,10 @@ text=Record Lesson 19 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 188238b8a7d83f8c2daac27db6d5f290677393610aa6e896e2019e809e5edd25
+- Content hash: 2564f185bcaa67010e2cec20089b4d2f7d9e992080214094ed80bdb2c0fdeff0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 19 in your copy
 
 ### AUTHORED_ENGLISH `en-u19-154`
 
@@ -2890,10 +2838,10 @@ text=When you have done Lesson 19 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a42b64405c2a12f6d04db65f71fe665190fe5c19a05634aa6d0b68d1ab186998
+- Content hash: 81c9bfa5c82595f1de6b9da3808734cf1a3d8e7400f1d6d98436a62e9804a72b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 19 work in your copy.
+text=Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u19-155`
 
@@ -2903,10 +2851,10 @@ text=Self-attest only after the Lesson 19 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 430eacf05f0ca548a5effab1edbbc1a5610d22e4937a6cfab8e82437482f7377
+- Content hash: a031d48a7240c9486c6da0afb85ed10d431293b6eacfee6c85785d7a93f2e011
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Probability stays in the copy you own
+text=Open Lesson 19 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u19-156`
 
@@ -2916,7 +2864,59 @@ text=Probability stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1bbce6825ba01b2d8c78cfbc7b6ed2608fa59257b5629952082dee8af8d184b7
+- Content hash: 3a702452ff50417a471069ff0a041aa7ce743e4fdf5cb05a9b649af77c8eccca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 19 book work
+
+### AUTHORED_ENGLISH `en-u19-157`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 75eac4868db5ec00475e80d4d99b47a975e9576598a4807d1bee3469a501835d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u19-158`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: baa27dabdfa3d82fd00f7e0b5f4d864157affe1fad875d6bca67da628e0ba48a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 19 work in your copy.
+
+### AUTHORED_ENGLISH `en-u19-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bdaf5b58fc9ba0f4c1ce491052d866c3725184b12de5b3aa74ff27fdd7864997
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Probability stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u19-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 13bf301b7b654e266dea7b7b47a2bd2a50ad7e14f3edf078096787d7c100251a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.

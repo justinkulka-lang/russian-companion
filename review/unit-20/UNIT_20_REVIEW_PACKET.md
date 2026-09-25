@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
-- Unit content-review SHA-256: a2c834f3ebe7a2aad558b5218691675a79af6764eedf375b50f806db614d4e66
+- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
+- Unit content-review SHA-256: b2f23ebd7c015fd2d8b5799bf1a620ca037ef9bdf86d5670e6346fedc4249213
 - Mapping-package SHA-256: 145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f
-- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
-- Review-package SHA-256: f09d87386e087b62e2c8ee23e2be129ff2ac02a244247dcc1fa905bd07119cde
-- Repository source SHA-256: 1f1b41e5bd9cea14aa246fb47b1d1077228658b80566da7c2b8d4343bda9ae10
+- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
+- Review-package SHA-256: 48ce95ca8dd2b14de0ee9b5887b9ca71df25c8f923032f7fff55e458f057ce64
+- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -749,11 +749,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a8eaaef2ac836f5300df3debc9ce00aa27d647fb1725aba6e8c50b104c98de3c
+- Content hash: d3e5f49fb3b05a7a27b845242bcb27fc11aeeb07a4a8be42c59a134843a04313
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
@@ -2216,58 +2216,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u20-157`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2dd084005eede7aea71fb328cb996c2e03b16847e587fbe7c32f5034b190a886
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
-
-### AUTHORED_ENGLISH `en-u20-158`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ed47e4e12319a7dc95fc91c9d818c633661d1e0512f8f7a1399df518ce7748c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
-
-### AUTHORED_ENGLISH `en-u20-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: acc0f7f5a7a11f998e6ca75c261f88e7884de4568c49e9989abffc38735e12aa
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u20-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0ce5ce2d8ec32cbe1fc99e326897f997dced1957530e3e6427394750875548e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
-
 ### AUTHORED_ENGLISH `en-u20-161`
 
 - Objectives: none
@@ -2276,10 +2224,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2b9d58713d5d742d440873e702fa9b6a251e3e5ba644a0dfa949c6bd2ab7eb26
+- Content hash: 5795f7c3d5563e0b4d599746344cb634dec12bc1ea6c1b89603e88b9895a9722
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u20-162`
 
@@ -2289,10 +2237,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af6225e39d6e9826d234d48e53a6433c07e70650bfd9f0aef67a452f1cb69207
+- Content hash: 27f8dc93320d766c78d0a44d427e6fe75367b74b1a61856feed87ef19d5f6d46
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted motion lines
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u20-163`
 
@@ -2302,10 +2250,10 @@ text=Admitted motion lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 99e46fedb8d1e126e84bd3051de2e00fb039bcd80b2908fed9ed6df8e14f91cd
+- Content hash: d4a51b8271ea0a583916431f7f9d8b33f9201d51e3d3a747c7c2eeba4b72385b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u20-164`
 
@@ -2315,10 +2263,10 @@ text=Proposed Unit 20 uses admitted motion lines for direction, foot and transpo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 589112aa48966ccda4d3b70bac8f0c16d4ec4587495d63e29dc687bfbc3c3895
+- Content hash: e291c805fda0e5bebcc6f97b40e9e40be925bc91b1126bad3ae2d6b2d40d0384
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 20 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u20-165`
 
@@ -2328,10 +2276,10 @@ text=Open Lesson 20 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97a5fb600930f6ff25753670e0dfbebda19048360ddc35934827113c88fe3377
+- Content hash: 83a1b242600368499eee2d08e7c798914b1aae1612e35d954030ac48fd671fcf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u20-166`
 
@@ -2341,10 +2289,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73a7db45e1562696abd14e01dbd744bed985b1a06d03aeb5ce6bcd7e283e08aa
+- Content hash: c3d17f43b564baaf6cf22603a38c1c1b40ac3e3412e2072d1f82242896e44fcc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted motion lines
 
 ### AUTHORED_ENGLISH `en-u20-167`
 
@@ -2354,10 +2302,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4026d6980428354d8e05d27754055c07356757547f35885f7a32190e578556c5
+- Content hash: a12b17127662efbf876e7d26b470f50529a0560c0d1dbcc938ba07adce4c564b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u20-168`
 
@@ -2367,10 +2315,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ed8d489bb706635210a3051d3a3f7e779d095daeb3780e7b7c15c5a32f17be9
+- Content hash: 82b74d1e7e31cb2cacd8ca79fd2f03ca9adf68db5650660e94dd4bccb16d9be4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 20 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u20-169`
 
@@ -2380,10 +2328,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 660f67bf312e5aa0504baf3343e26241b86572074cac2d5d6ff5b7d8d7c9b889
+- Content hash: 8f383c03860bf7b8b472c479a1a13ba076fcb7de479ebce8cbb4ec10bd1c6b76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u20-170`
 
@@ -2393,10 +2341,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea233d7109be5ec880ef88588797bbe7e0c73b4f24ae92f02b33ae1efcade2fe
+- Content hash: 5ffb57843e84dcaee6a8235903c59134c759dfbe056e200513847ff8e842026f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 20 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u20-171`
 
@@ -2406,10 +2354,10 @@ text=Work Lesson 20 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 59aedac82ee57040d63984283b38db890aaa0fe0a625a1d80e21a07af66356ee
+- Content hash: 53089167cc313526ab5025e082e6612090672e93ce322bc636edab4bd7e5a221
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u20-172`
 
@@ -2419,10 +2367,10 @@ text=Do Lesson 20 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 838034df519682c49c89b5f6354a65562afe44c4c4a81a62362eb522fcf5c620
+- Content hash: 95b470d7bcdee0854905f947b5e00366730ae2a871c2c5a78844ef5d099169e2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 20 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u20-173`
 
@@ -2432,10 +2380,10 @@ text=Open Lesson 20 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1596b1975205b4b9ec8654fa46d4de474a918dd866775348fd71ca6c78017c58
+- Content hash: d0b6c06d9fbe7dda0f7445777e23275737332cf8b00de2b4c1644a951a3092cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 20 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u20-174`
 
@@ -2445,10 +2393,10 @@ text=Record Lesson 20 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe9346050cc35dd0b898131d425396ea28a8420bd3fdee79fab4ff983717a9c7
+- Content hash: 3406c88e455946b58631a8d4d36cc286bab067dabb2ec65e6b4eceaf45d2eea5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 20 in your copy
 
 ### AUTHORED_ENGLISH `en-u20-175`
 
@@ -2458,7 +2406,59 @@ text=When you have done Lesson 20 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ba34e951ee13886cfbc5338d8966b5fc0590ad80283ee9bd9343a60a9a01ec9
+- Content hash: 701e057cafbccbdb22b111d74ea48d2ec9776f3a144f13cf7e8777f1680bc9dc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u20-176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9424ba8ba75c4b4223b16ddd13eeb3a7bb68733770fe9873c6c278c4e8bc5e37
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 20 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u20-177`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9277a9ef31f0a5f25a5156091bc193eaee255f26a956dcb1a9e7a3b4f02ae6cb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 20 book work
+
+### AUTHORED_ENGLISH `en-u20-178`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 45a4c737634bc2599efba83f58cb5659284f00f2df18217c9c9b5d11c60a4144
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u20-179`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9f6d181d3f6930618eed14f59dbdfe2b39a5c10cbc56d8f104ce68af44286d32
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 20 work in your copy.

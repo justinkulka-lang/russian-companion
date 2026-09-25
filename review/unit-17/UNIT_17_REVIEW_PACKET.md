@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 17 remains in development. Its readiness is content-complete and review-pending. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
-- Unit content-review SHA-256: 4e1e3508bdbcc984fc982810bcf5829c40f64f938658ad68c954c89e1e845cf4
+- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
+- Unit content-review SHA-256: 6acff0060d62e86caa6937dcd238fb9f4102bdb4010c1df9aea012701cfa5010
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
-- Review-package SHA-256: 103d721a59130a348ea3a98d24a0da1ab73d586516272bd20ca8cc4de6a421dc
-- Repository source SHA-256: 1f1b41e5bd9cea14aa246fb47b1d1077228658b80566da7c2b8d4343bda9ae10
+- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
+- Review-package SHA-256: 67e2bf692ac15d0d9022784a003948101f7a9acd50bdfd299ab45cc72733753e
+- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=138
+estimatedMinutes=142
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 17.
 
 ### UNIT `unit-17`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book, obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8dc1641d11130e1b2a609212d2239470df30a5b15f94f8ba0c14d83b84ebe34c
+- Content hash: 74bf3c7645dcb5247b5e3fa01947cfefbe4079b03bb026355ae8a8671b73f0e2
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=138
+estimatedMinutes=142
 
 ### ADVANCEMENT `unit-17-advancement`
 
@@ -314,6 +314,25 @@ practice=
 checks=
 remediation=
 
+### OBJECTIVE `obj-u17-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5347f99a6d535d668d2fd3453af1c567b3fe4826e273ceb9f1215a0b028ae416
+
+title=Productive clock-time answers stay in the copy you own
+kind=GUIDANCE
+unitNumber=17
+instruction=u17-st-gap-clock-productive
+examples=
+practice=
+checks=
+remediation=
+
 ### SESSION `u17-s-orient`
 
 - Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
@@ -337,13 +356,13 @@ steps=u17-st-orient
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f2a6a116d1c57658840820f132ac2b47870fb963a0a5fdb3f0ce10b2931e23a4
+- Content hash: b948c5576b3d7a53ffa1cf2e85a95b3abd4fb319066441f003dec87615fa3e47
 
 kind=ORIENT
 title=Admitted number and quantity rows
-body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.
+body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -374,13 +393,13 @@ steps=u17-st-teach-ordinals-1,u17-st-guided-ordinals-1,u17-st-teach-ordinals-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cc9625160e084d2487a0e665c39102ce68e0e1d42aa8479a1ebc1e4f12fb8402
+- Content hash: f477e781df059878981bd6e32081419ae76cced5473165bd6dedb4f9febd13fb
 
 kind=TEACH
 title=Admitted lines
 body=пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-ordinals-0,ex-u17-ordinals-1
 unavailableReason=
@@ -418,13 +437,13 @@ remediationStepId=u17-st-rem-ordinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b0f13b85b77ea71b93f082a6c9f4f638bc85ca7ca8980ddda845acecdbed0e4a
+- Content hash: 82ff52747797efe4e0b3bcf1761831f58479d2214e6e53530aaa6e813c489e21
 
 kind=TEACH
 title=Admitted instruction
 body=Ordinal numbers
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -440,13 +459,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 894b9f6d5342bbfdd147fa09c61823fabccb81b0d87ec9194fdf23a06b07aaff
+- Content hash: d0a1ad0f50dc34a0a1e345b67c757180ffde0573785fed4b7918af47854134b7
 
 kind=TEACH
 title=Admitted lines
 body=тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-ordinals-2,ex-u17-ordinals-3
 unavailableReason=
@@ -521,13 +540,13 @@ steps=u17-st-teach-hours-1,u17-st-guided-hours-1,u17-st-teach-hours-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 47b127c30b821ec7e4d95feedb3668c619336b227d6bc957223d05905c17f057
+- Content hash: f85155c5035e2b363f36ac09496d2fa2c297595a08aba1eda76edd43f2b07d44
 
 kind=TEACH
 title=Admitted lines
 body=один час — один час. два часа — два часа. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-hours-0,ex-u17-hours-1
 unavailableReason=
@@ -565,13 +584,13 @@ remediationStepId=u17-st-rem-hours
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4070f65a539d410aac522ca4b47a62a63b28e12969d09d766c8f3d91a7c9685b
+- Content hash: 86936f5320c97bde593152324c8185215636ccf673f9e7e4cfca8cbaa419a135
 
 kind=TEACH
 title=Admitted instruction
 body=* один час
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -587,13 +606,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2b27272789901a65d9618570bb9d4dc8faede477062bae5a95c224f65d69f1d7
+- Content hash: 7a2f0e92c5b9b97aba1b62a62db8938b0ca4dd96c27bdf52eb701c7ce8117334
 
 kind=TEACH
 title=Admitted lines
 body=пять часов — пять часов. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-hours-2
 unavailableReason=
@@ -668,13 +687,13 @@ steps=u17-st-teach-years-1,u17-st-guided-years-1,u17-st-teach-years-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: be64f0174bd2c4901ba5464398e23b2cc54c643dcda97399ce943ab1e50dd4bf
+- Content hash: 642543ccce976d05c1c7accd4527d061ed0c1cfba172f2e48cc82d4c1172e2b2
 
 kind=TEACH
 title=Admitted lines
 body=один год — один год. два года — два года. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-years-0,ex-u17-years-1
 unavailableReason=
@@ -712,13 +731,13 @@ remediationStepId=u17-st-rem-years
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8197ae586564591dbbc0da8f7419f3488a6864fbb863645ab6924b136465ec59
+- Content hash: 76168acc66d055ffb54e156da5a5dee6f7b82350b3606bd36fb04c26bdbdcdf5
 
 kind=TEACH
 title=Admitted instruction
 body=* один год
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -734,13 +753,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0fea7b8ad86d1317df37dbc0f1da736f2ff7b3bb9718eacb0fe1b8e9fc331537
+- Content hash: 5f4184a051d8c6e9788dd28068d72952f31ee9f29073c424426506618688fa4e
 
 kind=TEACH
 title=Admitted lines
 body=пять лет — пять лет. сорок один год — forty-one years. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-years-2,ex-u17-years-3
 unavailableReason=
@@ -815,13 +834,13 @@ steps=u17-st-teach-minutes-1,u17-st-guided-minutes-1,u17-st-teach-minutes-2,u17-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 31a867678f71bc9100044d557cad8bca957004a4acfe6c86487ef0c5acd74381
+- Content hash: 293dccbe692109ec8519e7dfffe1c17782cafd0b83c16fc279aa07cf8e99f7df
 
 kind=TEACH
 title=Admitted lines
 body=одна минута — одна минута. две минуты — две минуты. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-minutes-0,ex-u17-minutes-1
 unavailableReason=
@@ -859,13 +878,13 @@ remediationStepId=u17-st-rem-minutes
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 26976d1fb40ab46ad192118098641849f93bc8a466021459b5203ed0626001ed
+- Content hash: 84ce263667dc9e52896ffd331456bfadeb4f5dc89711b4a174006eb0e3dfa654
 
 kind=TEACH
 title=Admitted instruction
 body=* одна минута
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -881,13 +900,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 512d1332a831a26acd11ee943e0ed29ae92e6d0a37b5784cbfb850d3a93135dd
+- Content hash: ec5ad5cceb661e5a990ab6faa9e089428ec588484cfe16cbed904612846174e1
 
 kind=TEACH
 title=Admitted lines
 body=пять минут — пять минут. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-minutes-2
 unavailableReason=
@@ -962,13 +981,13 @@ steps=u17-st-teach-age-1,u17-st-guided-age-1,u17-st-teach-age-2,u17-st-rem-age,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 586db3580545aa451cfc3afbe32e631a8c71b0f19979c3b709021dc72ab16484
+- Content hash: 2d2dafec70b1ebe54224228e6896b5b8bcded3f24b98fd8c615e4206da91de0d
 
 kind=TEACH
 title=Admitted lines
 body=мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-age-0,ex-u17-age-1
 unavailableReason=
@@ -1006,13 +1025,13 @@ remediationStepId=u17-st-rem-age
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 480a724455d77ae35250748f4e2756a634a02c49594c670b6f48742fbd5339b5
+- Content hash: 1ee8bcd33cdd3a7a2f01f515a8bdff489f7fb65ed68728f21d6aae09b6f4da3f
 
 kind=TEACH
 title=Admitted instruction
 body=I am 20 (years old)
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1087,13 +1106,13 @@ steps=u17-st-teach-weekdays-1,u17-st-guided-weekdays-1,u17-st-teach-weekdays-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 990df8748617cb53b94dc413dd649c676ea2171e1356aef0950d5f353682d5b6
+- Content hash: 7dcb00cb72e36b1dc4432c07cec51ec3726401f09b4c2736c59fc217d7bbc856
 
 kind=TEACH
 title=Admitted lines
 body=понедельник — Monday. вторник — Tuesday. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-weekdays-0,ex-u17-weekdays-1
 unavailableReason=
@@ -1131,13 +1150,13 @@ remediationStepId=u17-st-rem-weekdays
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c624a27267bd189dacf37cf174ed9ac3f03bf2063b426be998d3e2679b08aed3
+- Content hash: 843c8500d979352f0318b309f08ca64eca57ed9d3ab9b623476dbcb3599b5ae0
 
 kind=TEACH
 title=Admitted instruction
 body=Russians don't capitalize days of the week.
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1153,13 +1172,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 253eb5ef796460b6fec992acede5b2e944a62848fb5a289cb776b0d139fae67c
+- Content hash: 06b04225141847947c57218533e13dcd0aa6ba019942a31b6f03f1fddc47944b
 
 kind=TEACH
 title=Admitted lines
 body=среда — Wednesday. четверг — Thursday. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-weekdays-2,ex-u17-weekdays-3
 unavailableReason=
@@ -1234,13 +1253,13 @@ steps=u17-st-teach-months-1,u17-st-guided-months-1,u17-st-teach-months-2,u17-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1868f9bbcc1fc20014242cdeb133d3817ec3b8e3b688ac8acee603ce479378ce
+- Content hash: 2cd8f772ef292e2f0ebb79e8deac4c0caf3123bb95df612f113c5343ad549f9a
 
 kind=TEACH
 title=Admitted lines
 body=Январь — January. Февраль — February. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-months-0,ex-u17-months-1
 unavailableReason=
@@ -1278,13 +1297,13 @@ remediationStepId=u17-st-rem-months
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3bddb9eeecef6465fa76480e0dd35b856197ed33734eecfa5a64286310e9f56c
+- Content hash: 1d06d8b840b2ade6177bfd9b01297c3f1a73917aa761a0f6429a5a8bf119fd1a
 
 kind=TEACH
 title=Admitted instruction
 body=Months of the year
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1300,13 +1319,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6ec6b9e1e84cab5dd076b41ba75cf44853180986ddc8592ee55e440a13ac4401
+- Content hash: 5779154752a2ce4beefc8a790d2f7451588681382ae2d141ae9628740cbea1f7
 
 kind=TEACH
 title=Admitted lines
 body=Март — March. Апрель — April. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-months-2,ex-u17-months-3
 unavailableReason=
@@ -1381,13 +1400,13 @@ steps=u17-st-teach-clock-1,u17-st-guided-clock-1,u17-st-teach-clock-2,u17-st-rem
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 036d2b74fcdf0468c66c44c61a6b6d341caed521a4df6d0e481481a4f816687c
+- Content hash: 18c192047c7916cfe0d6bf48cc9f748e49e3c89485c157284283fe0060c69b52
 
 kind=TEACH
 title=Admitted lines
 body=Который час? — What time is it? час — time. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-clock-0,ex-u17-clock-1
 unavailableReason=
@@ -1425,13 +1444,13 @@ remediationStepId=u17-st-rem-clock
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 54205a61f9757f852a70862b58aaada43566bd9beea091a4eb0b96ca913f7e79
+- Content hash: 8c0af52fda024e86e03c1dec9a7a68768895a4552510594cb1a3e22aabb8d0b5
 
 kind=TEACH
 title=Admitted instruction
 body=What time is it?
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1506,13 +1525,13 @@ steps=u17-st-teach-clock-answers-1,u17-st-guided-clock-answers-1,u17-st-teach-cl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 94067b53ea1a0defdcd86218366ec4bb949f60650f7601d016bd8218fe8f6d73
+- Content hash: 96fa88b72a0fdc2737370dcd53f512f4b44900d6ae4887618d91daa1f5534083
 
 kind=TEACH
 title=Admitted lines
 body=четверть восьмого — 7:15. полвосьмого — 7:30. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1
 unavailableReason=
@@ -1550,13 +1569,13 @@ remediationStepId=u17-st-rem-clock-answers
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 643c02b1eba71ccf9516cfc1acd97a394c43829ce755ab7eead56409d2bc1454
+- Content hash: 32f178734157571eca73ad1dde08f2a320cca8085761ce651b019755a8d1c2b0
 
 kind=TEACH
 title=Admitted instruction
 body=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1572,13 +1591,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c24d20277ca01a2fdefecbc08c0edf6944b49807d404c3e0d0a21d2611a288b
+- Content hash: a1f5cb62911c40788ecfa811c6b896b182db20acdb28081bf9265eb7c780810b
 
 kind=TEACH
 title=Admitted lines
 body=без четверти восемь — 7:45. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-clock-answers-2
 unavailableReason=
@@ -1653,13 +1672,13 @@ steps=u17-st-teach-calendar-date-1,u17-st-guided-calendar-date-1,u17-st-teach-ca
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f3b37080d6b58b10095a17d946c957b07948e5abbd0cb358599ec0dd7bb2873e
+- Content hash: 3f81974b1bfe5b743d7fccab1437f6dbbc91bc30bde011bbcf32092568c40fbe
 
 kind=TEACH
 title=Admitted lines
 body=Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. 
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=ex-u17-calendar-date-0,ex-u17-calendar-date-1
 unavailableReason=
@@ -1697,7 +1716,7 @@ remediationStepId=u17-st-rem-calendar-date
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a00df45475e57ca12eebf75ee09393213ea74d282ddd5b68ede1e5ef0d5f4895
+- Content hash: d74b8efed2fc0cbb8d130389f856f2a8bb728fac5262d2c331c5fc659791a685
 
 kind=TEACH
 title=Admitted instruction
@@ -1705,7 +1724,7 @@ body=In Russia, dates are usually written in "day month year" (DMY) order. This 
 
 When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1782,13 +1801,13 @@ steps=u17-st-book-work,u17-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 766a513185857117a20bf3d1063cb2e0247e6b40c242eea8355579ccddf6a5d3
+- Content hash: 99f93bba31aaf8349b93ffd7d9bfbdb6e750a659624c583f0fa6d42cb1010131
 
 kind=BOOK
 title=Work Lesson 17 in your copy
 body=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 dominantAction=Continue
-references=ref-u1620-attribution
+references=ref-u17-attribution
 items=
 examples=
 unavailableReason=
@@ -1815,6 +1834,43 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 17 work in your copy.
+companionDirection=
+remediationStepId=
+
+### SESSION `u17-s-gap-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-gap-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 353daab4e66219989aa2211249f8f539fcd8a564f835c6ea0487bc5fe37b30f1
+
+title=Productive clock-time answers stay in the copy you own
+estimatedMinutes=4
+objectives=obj-u17-clock-productive
+steps=u17-st-gap-clock-productive
+
+### STEP `u17-st-gap-clock-productive`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-gap-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 889538d7b7f0e0ce3371c997370afb60784b578564d40c7e40f3db166ce780a4
+
+kind=UNAVAILABLE
+title=Productive clock-time answers stay in the copy you own
+body=The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=
+unavailableReason=Productive clock-time answers have no admitted frozen span.
+bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -3395,22 +3451,22 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-calendar-date-1-ru | prov-u17-calendar-date-x-0 | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
-### REFERENCE `ref-u1620-attribution`
+### REFERENCE `ref-u17-attribution`
 
 - Objectives: none
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 4136866982202bbc8b80331b5fcc6ec6966b04a7d6f82e92fc88167052a39f2f
+- Content hash: 88fcd473b52a24e2857e442e852713a58a3be3f85327d28cbbbbbd3c2b9bc96d
 
-title=Units 16–20 source notice
-summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.
+title=Unit 17 source notice
+summary=Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The three clock phrases are bounded recognition. Productive clock-time answers are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
-introducedInUnit=16
-searchTerms=units 16-20 source notice
+introducedInUnit=17
+searchTerms=unit 17 source notice
 reviewStatus=NOT_REQUIRED
 
 ### PROVENANCE `prov-ex-u17-age-0-en`
@@ -10182,7 +10238,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u17-053`
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-003ed81da751`
 
 - Objectives: none
 - Sessions: none
@@ -10190,688 +10246,12 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c8c7e400f164b0ecd2522c41de53c8090d04b4e3536084c6d7c32820bf417b8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u17-054`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e0fb274f59c88a4cca2820151b7f2c7fc3f75d744f36386bf2d16e636da01ee
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the first ordinal?
-
-### AUTHORED_ENGLISH `en-u17-055`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70b35fa92e4ec8e6c701684da6270f77fef329368778c36337eba1f6f9acc4f8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the first ordinal?
-
-### AUTHORED_ENGLISH `en-u17-056`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 10f16fd67980a557ae0734442df0674a3b4f84acd841648126801e6c795260cc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the first ordinal?
-
-### AUTHORED_ENGLISH `en-u17-057`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee3ff7cded2a13ddbfec9cf0536cc7e01b928b6395d509d131a52f1d5816d679
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u17-058`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2e2ba25245ac4f0d565e59f9fec749f575044d69d0ca6e3d526c9f26677f5c6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the second ordinal?
-
-### AUTHORED_ENGLISH `en-u17-059`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 757f2c2a53ff771345ff2373fa18bb13e24190e3291d4d96c16aae5b82c5c017
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the second ordinal?
-
-### AUTHORED_ENGLISH `en-u17-060`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e537713add3f18b163034e9554708be0db5f030d2a34d7241c4fff1eda10d07
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the second ordinal?
-
-### AUTHORED_ENGLISH `en-u17-061`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c231cde803fa74748da8b4051d11ae77849c95e6edb2b6ce8974b75c437e6216
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the third ordinal?
-
-### AUTHORED_ENGLISH `en-u17-062`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 00cd25b98d9a5edf54a21b2221ea1800afcaf99651a8fcae4d655355659ad0a0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the third ordinal?
-
-### AUTHORED_ENGLISH `en-u17-063`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcee9d4b3c62fea68626a5c96b14d872c5b5df1f2dd14481310ed3d446cd83e0
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the third ordinal?
-
-### AUTHORED_ENGLISH `en-u17-064`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7e9963c26927b128374c576225b3cbfafaa4751adb67d4402a0ab69a29ecac3a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-hour row?
-
-### AUTHORED_ENGLISH `en-u17-065`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3b06124f98aefc1d238c2a418ddfc9b516b4ac6fcfb7d0512dc184fb3f03f12
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-hour row?
-
-### AUTHORED_ENGLISH `en-u17-066`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8562d08b84360d077f84cb69d9a6b5e4f04081a9625881a38af6e035ba594138
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-hour row?
-
-### AUTHORED_ENGLISH `en-u17-067`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f298c006f90fedc6e64e8c3bab4646433ae2bb90d8d36d322698c9e0a878dce3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-hour row?
-
-### AUTHORED_ENGLISH `en-u17-068`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff9f936acd2181cbd406ce32d903f91211a6832c803e93b121c54292e9b68607
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-hour row?
-
-### AUTHORED_ENGLISH `en-u17-069`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb46e4446dbf38d2d5620f87aac128fda93c1e135490c3c9ed3439b2bd09a448
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-hour row?
-
-### AUTHORED_ENGLISH `en-u17-070`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d67e57824a3f3aafa56b58e28c04f042f0b2d504d981b0e259120e0b1ceca6ca
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-hour row?
-
-### AUTHORED_ENGLISH `en-u17-071`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dccfb6925981081ed7d24e5e3a66977400554d022422e7c07a45420f70c03fd
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-hour row?
-
-### AUTHORED_ENGLISH `en-u17-072`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 195eec76257a420aeebbbe6153fd219d78c5cb82a489ae3baaf0f17d20a7c344
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-hour row?
-
-### AUTHORED_ENGLISH `en-u17-073`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b88ae77a76aaebd4d2e27db1270969c845dceb8403ad6a572145127fe27a67b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-year row?
-
-### AUTHORED_ENGLISH `en-u17-074`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68c6803332b893bf3561f024a2b8013a22feec03feb28aa46d7540ea8fbd895c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-year row?
-
-### AUTHORED_ENGLISH `en-u17-075`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0f18afa03685fe5dac4975818cd6af60f9cc18efa834a885d64a0b8d5842ab13
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-year row?
-
-### AUTHORED_ENGLISH `en-u17-076`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9807eecbaeb421d3b52402c65d9cf5fcc4009756b59a7c3d3b8196281bdffa69
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-year row?
-
-### AUTHORED_ENGLISH `en-u17-077`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c3f488716860a0a83c35b77ce8624a6da4e4f0377e3652431e88497a572456bd
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-year row?
-
-### AUTHORED_ENGLISH `en-u17-078`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 655c259de3792b1df5f4fe19a10ceb10435174b8b0389c73e528c98e4c80f8c1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-year row?
-
-### AUTHORED_ENGLISH `en-u17-079`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6ef3db62701cfbf45d9dc4e1d2ddb3b789154fbfe459b2950faea555261c46c1
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-year row?
-
-### AUTHORED_ENGLISH `en-u17-080`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71fdfe75679391e25492e4c64c6b6102e5b5e41772667e740336e3843913eee7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-year row?
-
-### AUTHORED_ENGLISH `en-u17-081`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a6771284c971cd2a537e187e8db063b54d56c34f9f0d0fc7991d4aedc7aaec68
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-year row?
-
-### AUTHORED_ENGLISH `en-u17-082`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c7490f2280bebc0f02b5c0aa5201bf5cc739b0a266fa4c8468f5a8d0795d7524
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the one-minute row?
-
-### AUTHORED_ENGLISH `en-u17-083`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62ddc192045b9c96cc22991bc52c608c98dd014ff2ea76be82200fdac138d8f3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the one-minute row?
-
-### AUTHORED_ENGLISH `en-u17-084`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4780dbb4feec4f8167e289165824cdeb8047330408f508bc46bfc867bf4e1e07
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the one-minute row?
-
-### AUTHORED_ENGLISH `en-u17-085`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 78c5bbbe3fd84e06a267d357419138684be1281f1a33c077ce9064f3781f685e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the two-minute row?
-
-### AUTHORED_ENGLISH `en-u17-086`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08aad61743c5951e94b89c561bead6b5e30f53ce67f9a298de2a9a5c080aa3cf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the two-minute row?
-
-### AUTHORED_ENGLISH `en-u17-087`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3a31f81e6c3d6c5c83baa145655d300a9e62ac130ce7c9590d5e7a5eb0c6272
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the two-minute row?
-
-### AUTHORED_ENGLISH `en-u17-088`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f48610a903a4061aaa5b3d6c0e959502e1c4abb9ddbd01d7bf68d277601623be
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this row fail the five-minute row?
-
-### AUTHORED_ENGLISH `en-u17-089`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9141e00674de1e4248ecc558db4eebb7c8360cb18e5af4064a6393e1e3531c51
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Does this answer show the five-minute row?
-
-### AUTHORED_ENGLISH `en-u17-090`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3df8b823be07610480d947978b5a51d85894119203de3bd24f498a99a5796fb3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted line is the five-minute row?
-
-### AUTHORED_ENGLISH `en-u17-091`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3a95479896a680834278fd439a98cfd24f2f2f048ca928de5a65f8aa29528f3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
-
-### AUTHORED_ENGLISH `en-u17-092`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 84ceb9d8203f83e5dbeec1d945c706b1736bc1867b2c1d3ee62d8b1634a2180a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
-
-### AUTHORED_ENGLISH `en-u17-093`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 617b0b314bf70fe5ef6cf6990d9d75016c2d5121def69ef8ab5cf497b6dc0d05
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
-
-### AUTHORED_ENGLISH `en-u17-094`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1691ad497adb2cd8a37d27d1bb6faf357e467c7c406d091c441399831b7e8bf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted number and quantity rows
-
-### AUTHORED_ENGLISH `en-u17-095`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb6e35f3da4499a89292ce885ad1e14ba2df9ffa06ad45eaa48c25278010d6bf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.
-
-### AUTHORED_ENGLISH `en-u17-096`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 88f70d9ed98385225d00f42a2f0ed969056c8cc60a569921bd505d8676e02028
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
-
-### AUTHORED_ENGLISH `en-u17-097`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3cf20459ea4568a2549a19ce7d9a2026c2f9c9fc988fd01d2e929dff76e19ed
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
-
-### AUTHORED_ENGLISH `en-u17-098`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c7ce65c948c628818c5d38baf454805c8097e829f69fbe580daad75144fe0c2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
-
-### AUTHORED_ENGLISH `en-u17-099`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d7276a0fdef60014a596f3d8f09b359f4e73336d6ef0543d9fcb189a41e2ba6f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
-
-### AUTHORED_ENGLISH `en-u17-100`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62cbecb2857dd43202cdd79eefbf3c7d76f041d9ca53dd7328e7f8556e2f3771
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
-
-### AUTHORED_ENGLISH `en-u17-101`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 85dd2a220d921e6e7428c3a939c93f92629777c8cb1fbc4fe0337780603884c7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
-
-### AUTHORED_ENGLISH `en-u17-102`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7fe9ca1c3e673db872d0c3c42ba5c149a254ff37300494c691d795eb0f32c3bc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 17 in your copy
-
-### AUTHORED_ENGLISH `en-u17-103`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3bfb84cd87436733207b2d8cbe1d1462f37221b468a1fa99ded9e7714a8302f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u17-104`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 629ba63fe366f6b3b7329c7d57bf3396d90e63375981ea7e21ff98eaab0448b9
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 17 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u17-105`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d7850bf9ddc010ef08da066c0faf81e8cd1a54cc122d99c31fa48e6781bc56d
+- Content hash: 3f92ad75dc5c8584c942611725b3af99f4fc37da40dce822706517712152a588
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Record Lesson 17 book work
 
-### AUTHORED_ENGLISH `en-u17-106`
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-00b9e89c0f6c`
 
 - Objectives: none
 - Sessions: none
@@ -10879,12 +10259,233 @@ text=Record Lesson 17 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ca1db8351d63c705a17f0450fecb2c217d29e2ebdfd27713599180d0b655095f
+- Content hash: af9170d9ac7de3280272cb7d78cb6ff1dcb094be3bbf4d54dcd3f0be273c3d89
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-02404730d4ba`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0a7dd2c20517f280284a03f3edbb4a0065a7a678455baf40af153e82da142906
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the one-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2114923f3bee`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1c4e52224d9d346f296dcb5483cdeaf25d86a86f877ccdba0f91d8bd8e4d4cd8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 17 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-239fbee06b63`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 07a2a10109ca2d5002233d1bc6ab0b55ee2f280fe19c411ac4596699aac46c49
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the two-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-26f3fd1f76d9`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e0684146aa9a923e73bef7441717a33fc935bc1e73b50ef70ed780f033bd8df4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-28776b79f5c4`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 11d15086911012e36dc0f05aa6f972e52d393831520e3ee8b6032efa04a01ee7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2b7d28840646`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 292a3c19d7b14d956581be0f7a24c599bc6dbfa348137342e2b55cc1b769de29
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2bb3b02abc19`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27c899f7bcd5c28ba48c202e701c9b238318adc6c08cc464eb3975f6f8b86512
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the one-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2df47f739e9c`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3866544fa161b56d86320ef97dd6480a7908f7aa9db404f4c4d0171298dd2b58
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen source pairs the shown form
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-2fc0263e802a`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b89df5bc1a2d6f5c421188884cdc06bcc6b1fdd64c3aa4a984206cfa6a0e8014
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the first ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3435fbdfccf5`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1626363a99d5795b71dda01deeae20b31f57c95026ae20cbc60b6946c97de375
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the two-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-35c1c837c5cd`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5dcb0aa5a8a1c6c5f4cffafc6cea2d61a795615330ae3460ec5ef5398faf62bf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the five-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-38478b9c58cf`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3996f18b9e7a84243b91d6082706abcb7f80af5778a5dabbda99f21fefb8dacb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the second ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3b45294d491a`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e4a8ac5c6bfde64cb5a3eb6c01ad6971a46de3d8ac8d3b8b10609a94356b49f4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Productive clock-time answers stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3d4545c9821e`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53a419f99fb12991849d67ce2be95559e6dcd2973b423e46c20efac750502f8f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the third ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3e0f91e58d17`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 89fa2515964c97b54c184dceb3f957ef74487c4e009c01937e877b9cd7c368c1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the two-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3e781f275910`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 525647b3ae995919bed53ae6c5330d47b3b847e6fd4667e26d663733665bab17
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-3e8fc175c5e9`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a1848ddcc82c9a57e003c7f1cc3ef1b83d7474cd731a0ea20c26b8846b0b7f22
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
-### AUTHORED_ENGLISH `en-u17-107`
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-4a565ef7eee9`
 
 - Objectives: none
 - Sessions: none
@@ -10892,10 +10493,491 @@ text=When you have done Lesson 17 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7583088bff9ee52e5eda8470451b2e8f24e4ec7a475e253465a55987de93a303
+- Content hash: 470e995b797827edd390cfc1464b5ada86bc9655eb694e97c4d4bc2789995ce3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the first ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-4a677873d253`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 048b1069ba347ed698efd107ed86ddce2776ff5b3eea183c68df3084942cb13d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the second ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-50133fa53a4d`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 784361112f6e847e6ec3700ea88287cd653701258818d98d82f5de55405beca5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-56c027a21a9d`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03d5f60e20c0723683eeb0edea7b013a42f9a21eae609522e14094ac26ba9c9f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the third ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-57e46635f2bd`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cdbd6119ceda55d7878fd3ce02b7db517ace62ccf1b7aa9d0141b83168796a16
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the two-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-5aec97c275c9`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1c08744a98a6c0da1d06b3426c8d321a0173ef108bab86c654fba5c41c3703ef
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the one-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-5cfee3d3134f`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f67dc78255a436bf05dee0af658f428f169efc5d07a218964f01c3469aec01c2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the one-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-5d461569f10d`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1d95730cbc517d8d652c37a8a043c3315f64412584991b70d167e7dd5dd499b1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=with the admitted gloss
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-617649b89b68`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dd4d02c05ef0d3bc6a0411624544c7d69f8cc7a170a18e1d2b7f0751cf991232
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-64cd6c31fa83`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3471fd179342fcf1b60a1309e05f197b8cc293381d309046c91be8e31b216c0f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the two-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-6bef09347414`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 677a81b11a18378fe552ecc9d0e30c6e90c6fbbbc3c5d4aeec474bf91ffe672c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 17 work in your copy.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-6ec2da2b5ac2`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 07471c745e6ca618d0a5c48ffccda1f6a2b38639a68c264057cf0543723004b1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the five-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-7186068f3b65`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9bc55caa97ed5bfcaf50c9d3c545bd0130d17bea7949b478af9df4dc52073023
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted English gloss is written beside the shown form?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-765305856617`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c1980c237f330d9c78cefbcb7aa9ac4835736b2dc8a0d6f04854e6cc4a7f662
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the two-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-7b6d504d7e63`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eb6c31ecc5e85bb2802afd8a86fca157899c7cc8ce899fa83ffb4b95a532aebb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the one-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-8cb586ba7d43`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 350147b2d245996af5ca8f23d145d6b251ba3d23e54dae4e1fa8a50257e5ca02
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the five-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-8e33f215cdfe`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: be4969c9703f84aff6eb2dfc67e5a5d5000938c08cf105e0ab783f0a747ba315
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the one-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-a0443536ec80`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f45cc0af26bd68d2d624dc9b67a37de63ea19daddae723d7b54929afdd737cc2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the five-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-a06590cf9b03`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ce8c6bc687a5948f4cd0e0f00bad36f02d47ec096fcab2b9877e0aef0279bcb2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the one-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-a2d0c3e3c8fb`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a883ba4884a2b5634bb31a5554d2d71e0d0539177ed02fd4fab81eebd7534553
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the five-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-aaa9986a64dc`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 191b80a7b7bfdd8fc09cc3e849c67ae2b5a40e9d39e1ade0634c464356d22715
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 17 in your copy
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-b253eceff95a`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0b8aeb2ec45222267831cd6da46c732fdbfbceeea66507aef6b971546344bf2b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the first ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-c2dcb6b4308a`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 447cad1ccac6e67d61963f13a01ee65416cff911086aa033bae9a66811073fc4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted instruction
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-c70a0c59e89c`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2345fcfd063f70b3fca340611f3e001fe8462197e55e1918690e62f2186c822b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the five-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-cae98cce8087`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bfe4c65cd81ff8a65fe93c7168879b298303d25e6f80b7bb96a1343db2c27035
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the two-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-ce17b55d3ca7`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 26191e59c44de6a1c66c4393767e4f28b15406084310f1be8fcc02930ffa9a9b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the five-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-d05581a9fe2f`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 124d1e8a8790766f3939fc00bebc27b68a312110da99f9258204262cfae0510a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted number and quantity rows
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-d82b22bc37db`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5aa3b8b25c21f62a675742072701b936f0ff00f039bd62a80b5c32548e692db2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-d979ddd5df23`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 95c2c0673597cf6e66792b8c03798a5d3257e426a5ba830a7f002e53de6eca26
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 17 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-daea861c2e57`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 28d0b515da624ac3692261f2052fd95583e0b89cd4c7c12351c73c891327402e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the second ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-dda63ae4acfb`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ab0b16cac21e00609ca0515caaa7dbb07352332c811c65c8d6a66f9e4abbc871
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-e29f9a8d4bbc`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f3b0b8b78ca17a08128d0eeb7de503beceddbc410c47d6eaf535e417b3f20d21
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the five-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-e99f8a478520`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2cf68fa6960c5d29054e2808b14deb00dbfa32d7c0ad921058accec13cc022c9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the two-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-eca82d7d14b0`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c14d4979b7254e9fbbbddf3148f1ab88f0ce09a1e7862244d4ba8bd316ba4ea8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the two-year row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-f7af114e6a9d`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1dbbeec1232ef0595f42dcbd29a1b61f16ebb3b0679caf4fd17fa0722800b820
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the five-hour row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-f96c7b5fc626`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a0f9ec078473d361ae041fcab04dc4690c4a7167aeb9cbd8d515ffe00c88b23f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this answer show the third ordinal?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-fe44eddb2d81`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 703e4971534c4fc094005192eb3c3298c2d8206e9590aa7ea78c65c83a8d03f1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Does this row fail the one-minute row?
+
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-feb442607c79`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f918c0efa6c07673b8d983aad822f22b2edaf5bfeff8d9f9bcdfc56765b6a18a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted line is the one-hour row?
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -11154,6 +11236,7 @@ permitsAppUse=true
 - `obj-u17-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
 - `obj-u17-book` INSTRUCTION `u17-st-book-work`
 - `obj-u17-book` INSTRUCTION `u17-st-book`
+- `obj-u17-clock-productive` INSTRUCTION `u17-st-gap-clock-productive`
 - `u17-s-orient` OBJECTIVE `obj-u17-ordinals`
 - `u17-s-orient` OBJECTIVE `obj-u17-hours`
 - `u17-s-orient` OBJECTIVE `obj-u17-years`
@@ -11165,17 +11248,17 @@ permitsAppUse=true
 - `u17-s-orient` OBJECTIVE `obj-u17-clock-answers`
 - `u17-s-orient` OBJECTIVE `obj-u17-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-book`
-- `u17-st-orient` REFERENCE `ref-u1620-attribution`
+- `u17-st-orient` REFERENCE `ref-u17-attribution`
 - `u17-s-ordinals` OBJECTIVE `obj-u17-ordinals`
 - `u17-st-teach-ordinals-1` EXAMPLE `ex-u17-ordinals-0`
 - `u17-st-teach-ordinals-1` EXAMPLE `ex-u17-ordinals-1`
-- `u17-st-teach-ordinals-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-ordinals-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-ordinals-1` REMEDIATION `u17-st-rem-ordinals`
 - `u17-st-guided-ordinals-1` ITEM `u17-g-ordinals-0`
-- `u17-st-teach-ordinals-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-ordinals-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-ordinals-3` EXAMPLE `ex-u17-ordinals-2`
 - `u17-st-teach-ordinals-3` EXAMPLE `ex-u17-ordinals-3`
-- `u17-st-teach-ordinals-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-ordinals-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-0`
 - `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-1`
 - `u17-st-check-ordinals` REMEDIATION `u17-st-rem-ordinals`
@@ -11184,12 +11267,12 @@ permitsAppUse=true
 - `u17-s-hours` OBJECTIVE `obj-u17-hours`
 - `u17-st-teach-hours-1` EXAMPLE `ex-u17-hours-0`
 - `u17-st-teach-hours-1` EXAMPLE `ex-u17-hours-1`
-- `u17-st-teach-hours-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-hours-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-hours-1` REMEDIATION `u17-st-rem-hours`
 - `u17-st-guided-hours-1` ITEM `u17-g-hours-0`
-- `u17-st-teach-hours-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-hours-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-hours-3` EXAMPLE `ex-u17-hours-2`
-- `u17-st-teach-hours-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-hours-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-hours` EXAMPLE `ex-u17-hours-0`
 - `u17-st-rem-hours` EXAMPLE `ex-u17-hours-1`
 - `u17-st-check-hours` REMEDIATION `u17-st-rem-hours`
@@ -11198,13 +11281,13 @@ permitsAppUse=true
 - `u17-s-years` OBJECTIVE `obj-u17-years`
 - `u17-st-teach-years-1` EXAMPLE `ex-u17-years-0`
 - `u17-st-teach-years-1` EXAMPLE `ex-u17-years-1`
-- `u17-st-teach-years-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-years-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-years-1` REMEDIATION `u17-st-rem-years`
 - `u17-st-guided-years-1` ITEM `u17-g-years-0`
-- `u17-st-teach-years-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-years-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-years-3` EXAMPLE `ex-u17-years-2`
 - `u17-st-teach-years-3` EXAMPLE `ex-u17-years-3`
-- `u17-st-teach-years-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-years-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-years` EXAMPLE `ex-u17-years-0`
 - `u17-st-rem-years` EXAMPLE `ex-u17-years-1`
 - `u17-st-check-years` REMEDIATION `u17-st-rem-years`
@@ -11213,12 +11296,12 @@ permitsAppUse=true
 - `u17-s-minutes` OBJECTIVE `obj-u17-minutes`
 - `u17-st-teach-minutes-1` EXAMPLE `ex-u17-minutes-0`
 - `u17-st-teach-minutes-1` EXAMPLE `ex-u17-minutes-1`
-- `u17-st-teach-minutes-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-minutes-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-minutes-1` REMEDIATION `u17-st-rem-minutes`
 - `u17-st-guided-minutes-1` ITEM `u17-g-minutes-0`
-- `u17-st-teach-minutes-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-minutes-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-minutes-3` EXAMPLE `ex-u17-minutes-2`
-- `u17-st-teach-minutes-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-minutes-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-minutes` EXAMPLE `ex-u17-minutes-0`
 - `u17-st-rem-minutes` EXAMPLE `ex-u17-minutes-1`
 - `u17-st-check-minutes` REMEDIATION `u17-st-rem-minutes`
@@ -11227,10 +11310,10 @@ permitsAppUse=true
 - `u17-s-age` OBJECTIVE `obj-u17-age`
 - `u17-st-teach-age-1` EXAMPLE `ex-u17-age-0`
 - `u17-st-teach-age-1` EXAMPLE `ex-u17-age-1`
-- `u17-st-teach-age-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-age-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-age-1` REMEDIATION `u17-st-rem-age`
 - `u17-st-guided-age-1` ITEM `u17-g-age-0`
-- `u17-st-teach-age-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-age-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-age` EXAMPLE `ex-u17-age-0`
 - `u17-st-rem-age` EXAMPLE `ex-u17-age-1`
 - `u17-st-check-age` REMEDIATION `u17-st-rem-age`
@@ -11239,13 +11322,13 @@ permitsAppUse=true
 - `u17-s-weekdays` OBJECTIVE `obj-u17-weekdays`
 - `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-0`
 - `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-1`
-- `u17-st-teach-weekdays-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-weekdays-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-weekdays-1` REMEDIATION `u17-st-rem-weekdays`
 - `u17-st-guided-weekdays-1` ITEM `u17-g-weekdays-0`
-- `u17-st-teach-weekdays-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-weekdays-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-2`
 - `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-3`
-- `u17-st-teach-weekdays-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-weekdays-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-0`
 - `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-1`
 - `u17-st-check-weekdays` REMEDIATION `u17-st-rem-weekdays`
@@ -11254,13 +11337,13 @@ permitsAppUse=true
 - `u17-s-months` OBJECTIVE `obj-u17-months`
 - `u17-st-teach-months-1` EXAMPLE `ex-u17-months-0`
 - `u17-st-teach-months-1` EXAMPLE `ex-u17-months-1`
-- `u17-st-teach-months-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-months-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-months-1` REMEDIATION `u17-st-rem-months`
 - `u17-st-guided-months-1` ITEM `u17-g-months-0`
-- `u17-st-teach-months-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-months-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-months-3` EXAMPLE `ex-u17-months-2`
 - `u17-st-teach-months-3` EXAMPLE `ex-u17-months-3`
-- `u17-st-teach-months-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-months-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-months` EXAMPLE `ex-u17-months-0`
 - `u17-st-rem-months` EXAMPLE `ex-u17-months-1`
 - `u17-st-check-months` REMEDIATION `u17-st-rem-months`
@@ -11269,10 +11352,10 @@ permitsAppUse=true
 - `u17-s-clock` OBJECTIVE `obj-u17-clock`
 - `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-0`
 - `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-1`
-- `u17-st-teach-clock-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-clock-1` REMEDIATION `u17-st-rem-clock`
 - `u17-st-guided-clock-1` ITEM `u17-g-clock-0`
-- `u17-st-teach-clock-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-clock` EXAMPLE `ex-u17-clock-0`
 - `u17-st-rem-clock` EXAMPLE `ex-u17-clock-1`
 - `u17-st-check-clock` REMEDIATION `u17-st-rem-clock`
@@ -11281,12 +11364,12 @@ permitsAppUse=true
 - `u17-s-clock-answers` OBJECTIVE `obj-u17-clock-answers`
 - `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-0`
 - `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-1`
-- `u17-st-teach-clock-answers-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-answers-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-clock-answers-1` REMEDIATION `u17-st-rem-clock-answers`
 - `u17-st-guided-clock-answers-1` ITEM `u17-g-clock-answers-0`
-- `u17-st-teach-clock-answers-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-answers-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-clock-answers-3` EXAMPLE `ex-u17-clock-answers-2`
-- `u17-st-teach-clock-answers-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-answers-3` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-0`
 - `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-1`
 - `u17-st-check-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
@@ -11295,17 +11378,19 @@ permitsAppUse=true
 - `u17-s-calendar-date` OBJECTIVE `obj-u17-calendar-date`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-1`
-- `u17-st-teach-calendar-date-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-calendar-date-1` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-calendar-date-1` REMEDIATION `u17-st-rem-calendar-date`
 - `u17-st-guided-calendar-date-1` ITEM `u17-g-calendar-date-0`
-- `u17-st-teach-calendar-date-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-calendar-date-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-1`
 - `u17-st-check-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
 - `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-1`
 - `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-2`
 - `u17-s-book` OBJECTIVE `obj-u17-book`
-- `u17-st-book-work` REFERENCE `ref-u1620-attribution`
+- `u17-st-book-work` REFERENCE `ref-u17-attribution`
+- `u17-s-gap-clock-productive` OBJECTIVE `obj-u17-clock-productive`
+- `u17-st-gap-clock-productive` REFERENCE `ref-u17-attribution`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`
@@ -11442,8 +11527,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-None.
-
+- `u17-st-gap-clock-productive`
 
 ## Unresolved relationships
 

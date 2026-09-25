@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
-- Unit content-review SHA-256: 970648af12075c706a4c85818e31aa32e8597072c7fe34678d3fce489b836a87
+- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
+- Unit content-review SHA-256: 405c2ea8e232528baf6d2b4a078c7df0f93c19383433fa9409f5b6244789041a
 - Mapping-package SHA-256: bbc970db2dfb4a17b8433024c289db9045424d73e3e64a61f699f992704ffbda
-- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
-- Review-package SHA-256: 72cbf9ebe15dc47ad4687ec393ae3226e6273d323c46accfbac6bf3bc191d815
-- Repository source SHA-256: 1f1b41e5bd9cea14aa246fb47b1d1077228658b80566da7c2b8d4343bda9ae10
+- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
+- Review-package SHA-256: 9d02bbdfebeef07418b69eeb17cf60c36ebaa3884698759e9f9ae54a8b6ec507
+- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -906,11 +906,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: e7099fc64fab62efeab04b507f7a4126bc288d530d7f32b47a0b74bc25f112ff
+- Content hash: d99a02f998fa43a6e2467fdad3a1743b968852b6b4c29e20bc064e684cef27d7
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
@@ -2363,58 +2363,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u18-108`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e0081ea897e0609d6f889868dedf101685b96fa05c088ad4e6f33116681b935
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
-
-### AUTHORED_ENGLISH `en-u18-109`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6c20ea6f64ae7f3672308316cb520a36b4987100679edd3698f630e8962d6bce
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
-
-### AUTHORED_ENGLISH `en-u18-110`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ee06ef9da0cbf7c9a4f9f3b8121101f8f44622716141f1d7c53fbb79b602e24f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u18-111`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea3697ce0ad77b2c013495ab576234e41af0793c8393b70093150e9332dece47
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written beside the shown form?
-
 ### AUTHORED_ENGLISH `en-u18-112`
 
 - Objectives: none
@@ -2423,10 +2371,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e18fc3da698e8ee38bd251d6105452fc82ae3c9fefa2e403fa3227800ef82d54
+- Content hash: 0126f00f319fb4e19386a738b8673d2ff95241691d56fd3503ad9370fd8956aa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u18-113`
 
@@ -2436,10 +2384,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5ff07964924b68d4c4c84b3ec75672c6974bcc5402836484281d7cdbd826d55
+- Content hash: 32405175dc4eaeba4ee5fa46067e1d8585b9f824a96fbc30c15fba09a0545a26
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted comparison and relative lines
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u18-114`
 
@@ -2449,10 +2397,10 @@ text=Admitted comparison and relative lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8019babb9a63de5f49165951aa02db571fe2e60c47244b1ef840fabc4b5f3c8
+- Content hash: 63ed01b7539af2a70d574bcb64254f0a5e47bdf931ebd593d06ac52bbe6bb290
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u18-115`
 
@@ -2462,10 +2410,10 @@ text=Proposed Unit 18 uses admitted comparison lines and admitted relative lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b18d86aaaf89c12438c403154bdcd392ba7429f944dcd63afa782d7c85e84a37
+- Content hash: 125d662cfae5137056fe73e50aa555b74bf7ce94478c25a4a035a48947f5936e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 18 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English gloss is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u18-116`
 
@@ -2475,10 +2423,10 @@ text=Open Lesson 18 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 972962131854593160c761560e6f19a5771c6302b0755c0f23ae4dd36625c020
+- Content hash: 5d290f0edb99cea111d0c65e9b35d58c0423163ddc98c51b2ed1049bf53e684a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u18-117`
 
@@ -2488,10 +2436,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ece2627f29a852a88e93e0d8d1e03b74cf1b7a571ae477bc6089034858bcf552
+- Content hash: 145c9b92d6359c27d3d078237cd19c7e4d6c8c32f17417bdead9f51a1e0b3f36
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted comparison and relative lines
 
 ### AUTHORED_ENGLISH `en-u18-118`
 
@@ -2501,10 +2449,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 416b509f2ca7ee8021ff3f09e10c52cb05315125aabd61ad604536ec44911365
+- Content hash: 2807061fc256322decfac54ff9f8b86683dcc08d6cf0ea1c531dd35130c60b47
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u18-119`
 
@@ -2514,10 +2462,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32ee202b5ca8316b812a67f23584b9f9c2eed33c7f3c4e2b77e1688bfd00d85e
+- Content hash: fa925fe2bbab26da0f312ec335afb3c258c2450d50bd5ff65275c0e40137e667
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 18 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u18-120`
 
@@ -2527,10 +2475,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3ba023f654588ebff80653dc29b4741195c3a9d13ad5005b48843c19e829a96f
+- Content hash: b32701f0c8ef31b39abc9f878c8fc368b3457bd1114850264ce9f1638c38a61a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u18-121`
 
@@ -2540,10 +2488,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7a8e61457e7b8c6b0d15601ff75607d44aa69e00d1498abe457fb52da104e8fb
+- Content hash: e5976a5a9eecf00bf6ec04090fe6214987c511275bdc88a8f92ed3cc74bab92c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 18 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u18-122`
 
@@ -2553,10 +2501,10 @@ text=Work Lesson 18 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42419a74abd722fb8e7243fc2d0036829a761468b08b3e55b4c53e5a7eebfa05
+- Content hash: fefc7765ee8f3bb175282b0508c25e546d6b96f3cf35e0e849a2283d0a665674
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u18-123`
 
@@ -2566,10 +2514,10 @@ text=Do Lesson 18 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 898f389528562fb578fa0b9d455eface850d7fedc318ca44919bb3930b9b7770
+- Content hash: 07b5a198f7a5421b097b4e94a665ff9a3b08ed503be50f02c0670da3df4d595e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 18 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u18-124`
 
@@ -2579,10 +2527,10 @@ text=Open Lesson 18 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f17751a13db7bb24cba6e035d4e9ecd966eaf1a3f61cfbf152fb0e96c40af25
+- Content hash: 526cf6732454a5fc30aae2e8a33ff1cc8bc3b1059bce5a17d091bc60d4d5e06a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 18 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u18-125`
 
@@ -2592,10 +2540,10 @@ text=Record Lesson 18 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 471b9cd0eb50321175b566a95406488915d6d40eb18a3a47152185688d7fe83d
+- Content hash: c00477e9acf9aacaccb38d4f808e5dc150535fa08a7e40ea3d1d7ff52c7f10f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 18 in your copy
 
 ### AUTHORED_ENGLISH `en-u18-126`
 
@@ -2605,7 +2553,59 @@ text=When you have done Lesson 18 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 56f5f4f6c0252a85e499f599c413983272c5886d2829946d11cfb371f70215e6
+- Content hash: f1bdca75343171d3fcff783607291429f3d394ecfe528b4687f5ab4658bb5d9d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u18-127`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c252a2f761061a352b6849b26c5fc7dacd0e7c594b1f2f9be9fa62e73301071
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 18 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u18-128`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8def71d0202ffce133af842c4f2c364f30388a8fdbc055e2582215d73b2f524b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 18 book work
+
+### AUTHORED_ENGLISH `en-u18-129`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 21a0c75314cdd4ed6256663839a1fd24665fb1bd5af9b614c47bd23981d4b152
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u18-130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3719a6c99e3eb30904916686fc9607e30f1e9d1ad9719974ef00403eff897313
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 18 work in your copy.
