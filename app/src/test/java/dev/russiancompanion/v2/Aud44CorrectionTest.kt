@@ -1,9 +1,11 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.release.readAcceptanceCandidate
+import dev.russiancompanion.v2.curriculum.ExplicitSourcePairs
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
@@ -98,6 +100,51 @@ class Aud44CorrectionTest {
         val stillBlocked = advancementDecision(pack, flipped, learner(pack, 17))
         assertFalse(stillBlocked.allowed)
         assertTrue(stillBlocked.remaining.any { it.contains("productive clock-time") })
+        assertFalse(stillBlocked.remaining.joinToString("\n"), stillBlocked.remaining.any { it.contains("calendar-date") })
+    }
+
+    @Test
+    fun unit17AdvancementNamesOnlyUnresolvedSourceCapabilities() {
+        val pack = pack()
+        val live = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
+        assertFalse(live.allowed)
+        assertEquals(
+            listOf(
+                "This unit is not prepared",
+                "Unit 17 is missing a productive clock-time source capability",
+            ),
+            live.remaining,
+        )
+        assertFalse(unresolved(pack, 17).contains("calendar-date"))
+        assertNoResolvedClaimCalledMissing(pack, live.remaining)
+
+        val bothMissing = withoutClaim(pack, "calendar-date")
+        val both = advancementDecision(bothMissing, bothMissing.unit(17)!!, learner(bothMissing, 17))
+        assertTrue(unresolved(bothMissing, 17).containsAll(listOf("productive-clock-time", "calendar-date")))
+        assertFalse(both.allowed)
+        assertTrue(
+            both.remaining.joinToString("\n"),
+            both.remaining.contains("Unit 17 is missing productive clock-time and calendar-date source capabilities"),
+        )
+        assertNoResolvedClaimCalledMissing(bothMissing, both.remaining)
+
+        val productive = withResolvedProductiveClock(pack)
+        assertTrue(V2Validator.validate(productive).errors.joinToString("\n"), V2Validator.validate(productive).ok)
+        assertFalse(unresolved(productive, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(productive, 17).contains("calendar-date"))
+        val neither = advancementDecision(productive, productive.unit(17)!!, learner(productive, 17))
+        assertFalse(neither.remaining.joinToString("\n"), neither.remaining.any { it.contains("source capability") })
+        assertNoResolvedClaimCalledMissing(productive, neither.remaining)
+
+        val dateOnly = withoutClaim(productive, "calendar-date")
+        assertTrue(V2Validator.validate(dateOnly).errors.joinToString("\n"), V2Validator.validate(dateOnly).ok)
+        assertEquals(setOf("calendar-date"), unresolved(dateOnly, 17))
+        val date = advancementDecision(dateOnly, dateOnly.unit(17)!!, learner(dateOnly, 17))
+        assertFalse(date.allowed)
+        assertTrue(date.remaining.contains("Unit 17 is missing a calendar-date source capability"))
+        assertFalse(date.remaining.joinToString("\n"), date.remaining.any { it.contains("clock-time") })
+        assertNoResolvedClaimCalledMissing(dateOnly, date.remaining)
     }
 
     @Test
@@ -230,6 +277,81 @@ class Aud44CorrectionTest {
 
     private fun unresolved(pack: V2CurriculumPack, number: Int): Set<String> =
         V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { it.claim }.toSet()
+
+    private fun withoutClaim(pack: V2CurriculumPack, claim: String): V2CurriculumPack =
+        pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != claim })
+
+    /**
+     * A defect-free productive-clock-time capability on an admitted age span.
+     * The frozen clock span stays bound to recognition and cannot clear the claim.
+     */
+    private fun withResolvedProductiveClock(pack: V2CurriculumPack): V2CurriculumPack {
+        val template = pack.items.first { it.id == "u17-i-age-1" }
+        val assessment = template.assessment!!
+        val idMap = assessment.relationParticipantIds.associateWith { "prov-u17-productive-clock-$it" }
+        val cloned = assessment.relationParticipantIds.map { oldId ->
+            val record = pack.provenanceRecords.first { it.itemId == oldId }
+            record.copy(
+                itemId = idMap.getValue(oldId),
+                objectiveId = "obj-u17-clock-answers",
+                sourceRecordId = record.sourceRecordId + "|productive-clock-fixture",
+            )
+        }
+        val host = cloned.first()
+        assertNotEquals(ExplicitSourcePairs.clockSpan, host.originalSourceText)
+        val itemId = "u17-i-productive-clock-1"
+        val item = template.copy(
+            id = itemId,
+            objectiveId = "obj-u17-clock-answers",
+            assessment = assessment.copy(
+                relationParticipantIds = assessment.relationParticipantIds.map { idMap.getValue(it) },
+                answerSourceIds = assessment.answerSourceIds.map { idMap[it] ?: it },
+                distractorSourceIds = assessment.distractorSourceIds.map { idMap[it] ?: it },
+            ),
+        )
+        val capability = V2SourceCapability(
+            id = "cap-u17-productive-clock-fixture",
+            sourceId = host.sourceId,
+            sourceRevision = host.sourceRevision,
+            sourceRecordId = host.sourceRecordId,
+            sourceHash = host.sourceHash,
+            exactSpan = host.originalSourceText,
+            unitNumber = 17,
+            objectiveId = "obj-u17-clock-answers",
+            supportedClaim = "productive-clock-time",
+        )
+        return pack.copy(
+            provenanceRecords = pack.provenanceRecords + cloned,
+            items = pack.items + item,
+            sourceCapabilities = pack.sourceCapabilities + capability,
+            units = pack.units.map { unit ->
+                if (unit.number != 17) {
+                    unit
+                } else {
+                    unit.copy(
+                        objectives = unit.objectives.map { objective ->
+                            if (objective.id != "obj-u17-clock-answers") {
+                                objective
+                            } else {
+                                objective.copy(checkItemIds = objective.checkItemIds + itemId)
+                            }
+                        },
+                    )
+                }
+            },
+        )
+    }
+
+    private fun assertNoResolvedClaimCalledMissing(pack: V2CurriculumPack, remaining: List<String>) {
+        val text = remaining.joinToString("\n")
+        val unresolved = unresolved(pack, 17)
+        if ("calendar-date" !in unresolved) {
+            assertFalse(text, text.contains("calendar-date"))
+        }
+        if ("productive-clock-time" !in unresolved) {
+            assertFalse(text, text.contains("clock-time"))
+        }
+    }
 
     private fun reachable(pack: V2CurriculumPack, number: Int): Pair<Set<String>, Set<String>> {
         val unit = pack.unit(number)!!

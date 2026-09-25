@@ -868,17 +868,30 @@ internal object V2Validator {
             } else {
                 emptyList()
             }
-            17 -> if ("productive-clock-time" in unresolved || "calendar-date" in unresolved) {
-                listOf("Unit 17 is missing productive clock-time and calendar-date source capabilities")
-            } else {
-                emptyList()
-            }
+            17 -> unit17SourceBlockers(unresolved)
             19 -> if ("probability-dolzhen" in unresolved) {
                 listOf("Unit 19 is missing a probability source capability")
             } else {
                 emptyList()
             }
             else -> emptyList()
+        }
+    }
+
+    /**
+     * Name only the Unit 17 source capabilities that are still unresolved.
+     * A resolved calendar-date claim must not be reported as missing, and a
+     * resolved productive clock-time claim must not be reported as missing.
+     */
+    private fun unit17SourceBlockers(unresolved: Set<String>): List<String> {
+        val missing = listOf("productive-clock-time", "calendar-date").filter { it in unresolved }
+        val named = missing.map { claim ->
+            if (claim == "productive-clock-time") "productive clock-time" else "calendar-date"
+        }
+        return when (named.size) {
+            0 -> emptyList()
+            1 -> listOf("Unit 17 is missing a ${named.single()} source capability")
+            else -> listOf("Unit 17 is missing ${named.joinToString(" and ")} source capabilities")
         }
     }
 
