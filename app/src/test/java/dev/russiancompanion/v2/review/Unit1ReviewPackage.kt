@@ -28,11 +28,11 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  */
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
-internal const val UNITS_6_10_CURRICULUM_COMMIT = "43affc3ddfe3ad73f3557579d44f408a3d6aaf75"
+internal const val UNITS_6_10_CURRICULUM_COMMIT = "287fd84ce286f151b90abbee4e714e42211eee10"
 
 internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
 
-internal const val UNITS_16_20_CURRICULUM_COMMIT = "43affc3ddfe3ad73f3557579d44f408a3d6aaf75"
+internal const val UNITS_16_20_CURRICULUM_COMMIT = "287fd84ce286f151b90abbee4e714e42211eee10"
 
 internal const val UNITS_21_25_CURRICULUM_COMMIT = "fd1f6497b235208786d0f720d71a248a22f8d69e"
 

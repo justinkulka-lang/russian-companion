@@ -186,6 +186,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "43affc3ddfe3ad73f3557579d44f408a3d6aaf75"
+        const val BASELINE_COMMIT = "287fd84ce286f151b90abbee4e714e42211eee10"
     }
 }
