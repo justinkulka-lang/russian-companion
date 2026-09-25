@@ -7,9 +7,9 @@
   "curriculumSourceCommit": "fd1f6497b235208786d0f720d71a248a22f8d69e",
   "contentReviewDigest": "9b019832345deb4495570153288fb0886500833b02bf362fce6a70d082bdccf6",
   "mappingPackageDigest": "997ae9e19ac8c160b37e5eee4e8c358254993aa481ffb14459e1d27c8a378284",
-  "packContentReviewDigest": "c1ed0048e4e62070939fcf5ea0dd02a3b90a4dbfcaf56403d8352f97b4231b92",
+  "packContentReviewDigest": "ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9",
   "reviewPackageDigest": "2cfafac487273ca1e39f1d81d6d3fdd6ee79e6b983d33e3cec01c22128117c55",
-  "repositorySourceDigest": "78268a4ad0e2bd82accd154c30e7a3ca4252d484b6cb9afc79f3ebf22bd2b2cd",
+  "repositorySourceDigest": "6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888",
   "unitReviewStatus": "PENDING_QUALIFIED_REVIEW",
   "unit": {
     "id": "unit-22",

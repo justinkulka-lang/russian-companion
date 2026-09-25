@@ -11,12 +11,12 @@ Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d702a534acde240738febd38c5676c809f83b1d0
-- Unit content-review SHA-256: 058d40840dd71d057fa3330254f07fd2cba0c2ec0405968726eeb88c93bba1a0
+- Curriculum source commit: 1e469c124966401a54f9a3da0d52606c1afd6ea2
+- Unit content-review SHA-256: 9db2b449a150d96b668230738731655cf01a163a552fbacd4152579be638989f
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: c1ed0048e4e62070939fcf5ea0dd02a3b90a4dbfcaf56403d8352f97b4231b92
-- Review-package SHA-256: 6d2da8d8d441733646bff91b762838b1980c901456aec8842108b2ce20c944b4
-- Repository source SHA-256: 78268a4ad0e2bd82accd154c30e7a3ca4252d484b6cb9afc79f3ebf22bd2b2cd
+- Pack content-review SHA-256: ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9
+- Review-package SHA-256: 1886acce49873b53078a8c4cfe0cda01f901c3de87163db5d793f3e313f8b963
+- Repository source SHA-256: 6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3428,19 +3428,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-narechie-152437423
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce11e21b339b74369106d56f8da5bca2fdc9592b0f6e63ada991014239ed534c
+- Content hash: 7a85ee75a59b3ccfcc6bca9fbfb3692c8fdb0d827287c841cbcf0a3464cde206
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted wording is written beside the shown form?
+prompt=Which admitted wording is written immediately after the dash and before the colon?
 promptLetter=Наречия
 options=неизменяемые слова | не склоняются
 answer=неизменяемые слова
-feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 objectiveId=obj-u7-adverb-invariance
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The admitted line also contains не склоняются.
+distractorRationales= | This wording is written after the colon, so it is not immediately after the dash and before the colon. : они не склоняются
 testedFeature=ADVERB_INVARIANCE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u7-adverb-invariance-0
@@ -3448,8 +3448,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u7-adverb-invariance-0-en
 distractorSourceIds= | prov-u7-adverb-invariance-x-0
-distractorDifference= | The admitted line also contains не склоняются.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+distractorDifference= | This wording is written after the colon, so it is not immediately after the dash and before the colon. : они не склоняются
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 contrastMembers=неизменяемые слова | не склоняются
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-x-0
@@ -4350,19 +4350,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-narechie-152437423
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d81f79e538d168b4dec84700b376d8b25989d7bcdd6ad4280a258fa8a010266
+- Content hash: 75a3257fc1f8e0f7792d2aba832b0b6434c9285070bb0e9eab75ebc6b08e4cd7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted wording is written beside the shown form?
+prompt=Which admitted wording is written immediately after the dash and before the colon?
 promptLetter=Наречия
 options=неизменяемые слова | не спрягаются
 answer=неизменяемые слова
-feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 objectiveId=obj-u7-adverb-invariance
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The admitted line also contains не спрягаются.
+distractorRationales= | This wording is written after the colon, so it is not immediately after the dash and before the colon. и не спрягаются
 testedFeature=ADVERB_INVARIANCE_AGAIN
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u7-adverb-invariance-1
@@ -4370,8 +4370,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u7-adverb-invariance-0-en
 distractorSourceIds= | prov-u7-adverb-invariance-x-1
-distractorDifference= | The admitted line also contains не спрягаются.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+distractorDifference= | This wording is written after the colon, so it is not immediately after the dash and before the colon. и не спрягаются
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 contrastMembers=неизменяемые слова | не спрягаются
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-x-1
@@ -4385,19 +4385,19 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-narechie-152437423
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c22c30f9dc3ac4ef39eab54cd4489227b9353a6af212aeec29c60c84dccd1c95
+- Content hash: cf86715ce36e57b01ea60e7993351921f9452ac56b4148649bb79ba612189329
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted wording is written beside the shown form?
+prompt=Which admitted wording is written immediately after the dash and before the colon?
 promptLetter=Наречия
 options=неизменяемые слова | не имеют окончаний
 answer=неизменяемые слова
-feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 objectiveId=obj-u7-adverb-invariance
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The admitted line also contains не имеют окончаний.
+distractorRationales= | This wording is written after the colon, so it is not immediately after the dash and before the colon. , не имеют окончаний
 testedFeature=ADVERB_INVARIANCE_ENDINGS
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u7-adverb-invariance-2
@@ -4405,8 +4405,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u7-adverb-invariance-0-en
 distractorSourceIds= | prov-u7-adverb-invariance-rem-r3
-distractorDifference= | The admitted line also contains не имеют окончаний.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+distractorDifference= | This wording is written after the colon, so it is not immediately after the dash and before the colon. , не имеют окончаний
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова" ("Наречия — неизменяемые слова:").
 contrastMembers=неизменяемые слова | не имеют окончаний
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-rem-r3
@@ -8085,6 +8085,151 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u7-adverb-invariance-x-3`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 326ace6526be22987c001753f1e44132765bf8a69df510e533a162572df35450
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=: они не склоняются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=c094d203fb6f50b23203e66ca65c5b0fda32ea14f096a6ac579c82dffd5917ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-3-r0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 457378479e301b65c1fa04b8b6f4a3e4ac901b17f746d2f3f91899873c42a969
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=они не склоняются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=05181c11a6f2971119dc49085e03430fe4d593d41d86da2cce910ff2f309c827
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-4`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8a37a8ddf5ad9e9d2a82a28359a3a675969d89c161d602609f30de832e757fb5
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=и не спрягаются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=7d3497364956e154aa9bbd3897a4398745c42f0162bac3d8d5cb47a9d783ca80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-5`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c760ee7c9a2d4e49cc381eb6db1cb369ece810ad06d25f5e111a7b62a40f2753
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=, не имеют окончаний
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=337063082c51f03428c646a6e57e05d12f950511f43b12e9abb4173c77103dcc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-5-r0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2645357f8132a3aba26d9af13540429b25f41d233dcfeebc58e9d6882ef3d72f
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не имеют окончаний
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=14941d44c0fa2aba8ba651f8a4b9f13e260ff48a34e3c695d6276ec034bea07b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u7-adverb-pairs-rem`
 
 - Objectives: obj-u7-adverb-pairs
@@ -9665,10 +9810,10 @@ text=Which admitted wording is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2ed9cd1a0b7976d94cd2d0713221a0337bf6499b56c69f5d7c0ba4a9899ab8d1
+- Content hash: 9a395553bc52f4a108550b9a7e063542886f5286347135dc5e5eb6f166021e10
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Adjective-to-adverb paradigm stays in the copy you own
+text=Which admitted wording is written immediately after the dash and before the colon?
 
 ### AUTHORED_ENGLISH `en-u7-201`
 
@@ -9678,7 +9823,33 @@ text=Adjective-to-adverb paradigm stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 165b7d25bbb8e8bc38f02d443dbc930b657286d4a5da21722ae7ee6fad31f6a5
+- Content hash: a71851d4327c1df931ba99a2dda49ca112661e0a6f64299f82d3196c628de039
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This wording is written after the colon, so it is not immediately after the dash and before the colon
+
+### AUTHORED_ENGLISH `en-u7-202`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 42b3b718e5406182164f323c2cec01ed8a3e1acb79093767cac7fbc02bb09af6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Adjective-to-adverb paradigm stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u7-203`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 783b7f74d0cd8890e758cc8f15b6b10fe86c7b36117e7d2cbd837169dc1e277c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.
@@ -10314,6 +10485,11 @@ permitsAppUse=true
 - `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-0`
 - `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-1`
 - `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-2`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-3`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-3-r0`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-4`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-5`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-5-r0`
 - `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem`
 - `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r0`
 - `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r1`
