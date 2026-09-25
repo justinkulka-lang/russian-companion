@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 17 remains in development. Its readiness is content-complete and review-pending. The Lesson 17 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 761e466becdc714f12f6a4205d767cc703635348
-- Unit content-review SHA-256: 4dcda07bb955c29c892a1c710cead78842493706a6ef980bce5203661382dad3
+- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
+- Unit content-review SHA-256: 4e1e3508bdbcc984fc982810bcf5829c40f64f938658ad68c954c89e1e845cf4
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
-- Review-package SHA-256: db2ba7ae6fc9f32d7774e65f37c71ad6e5e645c7040c5a9e0117a5bb708edf6e
-- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
+- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
+- Review-package SHA-256: 103d721a59130a348ea3a98d24a0da1ab73d586516272bd20ca8cc4de6a421dc
+- Repository source SHA-256: 358bbc6543d0babfe6234def6b9cc6ea1b7c796a0b730e395b03b3e768f631f8
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=122
+estimatedMinutes=138
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 17.
 
 ### UNIT `unit-17`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book, obj-u17-clock-answers, obj-u17-calendar-date
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-book, u17-s-gap-clock-answers, u17-s-gap-calendar-date
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 941464ef55fc6abcce5a53817030b1fea9c6fb5570ff46cb8ff2f00a20285e04
+- Content hash: 8dc1641d11130e1b2a609212d2239470df30a5b15f94f8ba0c14d83b84ebe34c
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=122
+estimatedMinutes=138
 
 ### ADVANCEMENT `unit-17-advancement`
 
@@ -257,6 +257,44 @@ practice=u17-st-guided-clock-1
 checks=u17-i-clock-1,u17-i-clock-2
 remediation=u17-st-rem-clock
 
+### OBJECTIVE `obj-u17-clock-answers`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5d858aa31221e10e279950be5b1292c76ec3f8786212445dc24c0389e7b6e64f
+
+title=Choose the admitted time beside the shown form
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-clock-answers-1,u17-st-teach-clock-answers-2,u17-st-teach-clock-answers-3
+examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1,ex-u17-clock-answers-2
+practice=u17-st-guided-clock-answers-1
+checks=u17-i-clock-answers-1,u17-i-clock-answers-2
+remediation=u17-st-rem-clock-answers
+
+### OBJECTIVE `obj-u17-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 48846583b59bb8cd6261ada29dbf63831d4e8e56b88ab3ce500aedbc6d2bd9bd
+
+title=Choose the admitted date relation beside the shown form
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-calendar-date-1,u17-st-teach-calendar-date-2
+examples=ex-u17-calendar-date-0,ex-u17-calendar-date-1
+practice=u17-st-guided-calendar-date-1
+checks=u17-i-calendar-date-1,u17-i-calendar-date-2
+remediation=u17-st-rem-calendar-date
+
 ### OBJECTIVE `obj-u17-book`
 
 - Objectives: obj-u17-book
@@ -276,72 +314,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u17-clock-answers`
-
-- Objectives: obj-u17-clock-answers
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a8a999f222a55c60ededf2fa4f518c8c7f5701d8e962042cdc967b1b36939e8
-
-title=Productive clock-time answers stay in the copy you own
-kind=GUIDANCE
-unitNumber=17
-instruction=u17-st-gap-clock-answers
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u17-calendar-date`
-
-- Objectives: obj-u17-calendar-date
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 93df012879783fd6f7b300c04fa77eea75f228e59f5cb7b489314f30582c7228
-
-title=Calendar-date syntax stays in the copy you own
-kind=GUIDANCE
-unitNumber=17
-instruction=u17-st-gap-calendar-date
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u17-s-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 62731961b881f1638d42bf1408ea49c4564c715039c6a5cecc8c68668ace51fc
+- Content hash: 2eab689fc6c3cb536f85a7844a318907ced702483dae46df0e785b8f1d9f0633
 
 title=Admitted number and quantity rows
 estimatedMinutes=8
-objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-book
+objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-clock-answers,obj-u17-calendar-date,obj-u17-book
 steps=u17-st-orient
 
 ### STEP `u17-st-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7c3e6be84e0d540884a480be0fb121c467b052005ca5eda4b36ef95fc99b4a21
+- Content hash: f2a6a116d1c57658840820f132ac2b47870fb963a0a5fdb3f0ce10b2931e23a4
 
 kind=ORIENT
 title=Admitted number and quantity rows
-body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
+body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1483,6 +1483,282 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-clock
 
+### SESSION `u17-s-clock-answers`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ad346d5c25e5d745598c132ea9aba1ae80035fa8fa48ceb279963e2502663070
+
+title=Choose the admitted time beside the shown form
+estimatedMinutes=12
+objectives=obj-u17-clock-answers
+steps=u17-st-teach-clock-answers-1,u17-st-guided-clock-answers-1,u17-st-teach-clock-answers-2,u17-st-teach-clock-answers-3,u17-st-rem-clock-answers,u17-st-check-clock-answers
+
+### STEP `u17-st-teach-clock-answers-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 94067b53ea1a0defdcd86218366ec4bb949f60650f7601d016bd8218fe8f6d73
+
+kind=TEACH
+title=Admitted lines
+body=четверть восьмого — 7:15. полвосьмого — 7:30. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-clock-answers-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 61df185c152accaba8249a6b5018d84de9f0133917dd4d61a9d05d8975021342
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-clock-answers-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-answers
+
+### STEP `u17-st-teach-clock-answers-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 643c02b1eba71ccf9516cfc1acd97a394c43829ce755ab7eead56409d2bc1454
+
+kind=TEACH
+title=Admitted instruction
+body=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-clock-answers-3`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8c24d20277ca01a2fdefecbc08c0edf6944b49807d404c3e0d0a21d2611a288b
+
+kind=TEACH
+title=Admitted lines
+body=без четверти восемь — 7:45. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-clock-answers-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-clock-answers`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 19640e95955f929ab115facb2e6ee81528587b552dcc1cab201f062c08710b62
+
+kind=REMEDIATE
+title=Remediation
+body=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-clock-answers`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e5715c6c8ac420b2df7b08224ebc0ade12f598c95c2406944dfffb68405e2f89
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-clock-answers-1,u17-i-clock-answers-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-answers
+
+### SESSION `u17-s-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 88df9662af8fa3b30d1bb30ec0debd9d963fb195d6e3d59c9c137155619af170
+
+title=Choose the admitted date relation beside the shown form
+estimatedMinutes=12
+objectives=obj-u17-calendar-date
+steps=u17-st-teach-calendar-date-1,u17-st-guided-calendar-date-1,u17-st-teach-calendar-date-2,u17-st-rem-calendar-date,u17-st-check-calendar-date
+
+### STEP `u17-st-teach-calendar-date-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f3b37080d6b58b10095a17d946c957b07948e5abbd0cb358599ec0dd7bb2873e
+
+kind=TEACH
+title=Admitted lines
+body=Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. 
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u17-calendar-date-0,ex-u17-calendar-date-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-calendar-date-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 87473b220889417afb25ebfc938e8eb49fe2d580e1dccf325309f3b0f1277cab
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-calendar-date-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-calendar-date
+
+### STEP `u17-st-teach-calendar-date-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a00df45475e57ca12eebf75ee09393213ea74d282ddd5b68ede1e5ef0d5f4895
+
+kind=TEACH
+title=Admitted instruction
+body=In Russia, dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "28.08.17") and the expanded form (for example "28 августа 2017 г."); the trailing "г" is short for "года" (goda, "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "28.08.2017") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f79f14bcd37d928f52220d8ffc971fcfa28dde4eebc31d7f610ecebbd4928f4f
+
+kind=REMEDIATE
+title=Remediation
+body=In Russia, dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "28.08.17") and the expanded form (for example "28 августа 2017 г."); the trailing "г" is short for "года" (goda, "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "28.08.2017") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-calendar-date-0,ex-u17-calendar-date-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-calendar-date`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20e390a98ca9ab413e20da7745be21b5ab456607ee9c66582cec7ce4ceee1663
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-calendar-date-1,u17-i-calendar-date-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-calendar-date
+
 ### SESSION `u17-s-book`
 
 - Objectives: obj-u17-book
@@ -1539,80 +1815,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 17 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u17-s-gap-clock-answers`
-
-- Objectives: obj-u17-clock-answers
-- Sessions: u17-s-gap-clock-answers
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ee5231df8fc8f2ee7f36bf251417083d5cbe009271977adbf7b357fa94e41828
-
-title=Productive clock-time answers stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u17-clock-answers
-steps=u17-st-gap-clock-answers
-
-### STEP `u17-st-gap-clock-answers`
-
-- Objectives: obj-u17-clock-answers
-- Sessions: u17-s-gap-clock-answers
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6d25100176a8ccd29872a7c8b840a96b98c02b7952e2c6be2e0eab83f87a546c
-
-kind=UNAVAILABLE
-title=Productive clock-time answers stay in the copy you own
-body=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
-dominantAction=Continue
-references=ref-u1620-attribution
-items=
-examples=
-unavailableReason=Productive clock-time answers have no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u17-s-gap-calendar-date`
-
-- Objectives: obj-u17-calendar-date
-- Sessions: u17-s-gap-calendar-date
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b31d31c5807cc372df0cc223b573440f367a4dce9613967d862d883b343319cc
-
-title=Calendar-date syntax stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u17-calendar-date
-steps=u17-st-gap-calendar-date
-
-### STEP `u17-st-gap-calendar-date`
-
-- Objectives: obj-u17-calendar-date
-- Sessions: u17-s-gap-calendar-date
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3b1dc384185be38f33d0603d12358320b26b45653166aff27fba7fe8a634da9b
-
-kind=UNAVAILABLE
-title=Calendar-date syntax stays in the copy you own
-body=Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.
-dominantAction=Continue
-references=ref-u1620-attribution
-items=
-examples=
-unavailableReason=Calendar-date syntax has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -2058,6 +2260,91 @@ note=time
 objectiveId=obj-u17-clock
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u17-clock-answers-0`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 994325ba919334f723b56a2f3624af1b359f7345ec438d9c3464822503a32e9e
+
+kind=LEXICAL
+letterId=
+display=четверть восьмого
+note=7:15
+objectiveId=obj-u17-clock-answers
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-answers-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f94b4574f98f3a88367e600f2ebc4f933427e91c4406a110c27f1897f8fdfa57
+
+kind=LEXICAL
+letterId=
+display=полвосьмого
+note=7:30
+objectiveId=obj-u17-clock-answers
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-clock-answers-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 01579f09a1035f3ff9164ee437a5b5d17d8b47ee7a5212a3e35033ae45a6080c
+
+kind=LEXICAL
+letterId=
+display=без четверти восемь
+note=7:45
+objectiveId=obj-u17-clock-answers
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-calendar-date-0`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d37f0b5db5323da420940acd2585fa08723535153d3eae8dcb4185ee367634bb
+
+kind=LEXICAL
+letterId=
+display=Двадцать восьмое августа
+note=the month in genitive case
+objectiveId=obj-u17-calendar-date
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-calendar-date-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6b300a8ee5786f9bdb8c54641f1fda3570b95af4611e9b01340765ca14d287ae
+
+kind=LEXICAL
+letterId=
+display=28 августа 2017 г.
+note=day month year
+objectiveId=obj-u17-calendar-date
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u17-g-ordinals-0`
 
 - Objectives: obj-u17-ordinals
@@ -2336,6 +2623,76 @@ whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Кото�
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-clock-answers-0`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1f0ca199c80dc062f3bfc03c44f4f556bead5b423ec4f2ae3fbd1183393a2577
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=четверть восьмого
+options=7:15 | 7:30 | 7:45
+answer=7:15
+feedback=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+objectiveId=obj-u17-clock-answers
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+testedFeature=CLOCK_QUARTER
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-clock-answers-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-clock-answers-0-en
+distractorSourceIds= | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-2-en
+distractorDifference= | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+contrastMembers=7:15 | 7:30 | 7:45
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-clock-answers-0-ru | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-calendar-date-0`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 62c06d52ada5cc27aa81b505fdc74127bace3d00c1e2972246a6b6d9e90a8953
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Двадцать восьмое августа
+options=the month in genitive case | day month year | 28.08.17
+answer=the month in genitive case
+feedback=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
+objectiveId=obj-u17-calendar-date
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+testedFeature=DATE_SPOKEN
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-calendar-date-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-calendar-date-0-en
+distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
+distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first").
+contrastMembers=the month in genitive case | day month year | 28.08.17
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-calendar-date-0-ru | prov-ex-u17-calendar-date-0-en | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u17-i-ordinals-1`
@@ -2898,19 +3255,159 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u17-i-clock-answers-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d74b0a6f411b5a576b67932aad1ab6b04d1bdba4d4b22c192b86ce113852ef5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=полвосьмого
+options=7:30 | 7:15 | 7:45
+answer=7:30
+feedback=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+objectiveId=obj-u17-clock-answers
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+testedFeature=CLOCK_HALF
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-clock-answers-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-clock-answers-1-en
+distractorSourceIds= | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-2-en
+distractorDifference= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+contrastMembers=7:30 | 7:15 | 7:45
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-clock-answers-1-ru | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-clock-answers-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 55c0203fffba88554e42d24a28bd4fd79981eb19e5d97d2ecede56014cf47edf
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=без четверти восемь
+options=7:45 | 7:15 | 7:30
+answer=7:45
+feedback=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+objectiveId=obj-u17-clock-answers
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+testedFeature=CLOCK_WITHOUT
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-clock-answers-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-clock-answers-2-en
+distractorSourceIds= | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en
+distractorDifference= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+contrastMembers=7:45 | 7:15 | 7:30
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-clock-answers-2-ru | prov-ex-u17-clock-answers-2-en | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-calendar-date-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 87be18a083d1183bcfc5b5e01bff9f35067f6dc20d70958323ddc1138a63dc62
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=28 августа 2017 г.
+options=day month year | the month in genitive case | 28.08.17
+answer=day month year
+feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+objectiveId=obj-u17-calendar-date
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+testedFeature=DATE_ORDER
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-calendar-date-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-calendar-date-1-en
+distractorSourceIds= | prov-ex-u17-calendar-date-0-en | prov-u17-calendar-date-x-1
+distractorDifference= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+contrastMembers=day month year | the month in genitive case | 28.08.17
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-calendar-date-1-ru | prov-ex-u17-calendar-date-1-en | prov-ex-u17-calendar-date-0-en | prov-u17-calendar-date-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-calendar-date-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81d5bab72543b9d486677fb50756a64fdb4453e45c518d313eeb4c859c892501
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=28 августа 2017 г.
+options=of the year | day month year | 28.08.17
+answer=of the year
+feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
+objectiveId=obj-u17-calendar-date
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+testedFeature=DATE_YEAR
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-calendar-date-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-u17-calendar-date-x-0
+distractorSourceIds= | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
+distractorDifference= | The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "28.08.17" ("the all-numeric date").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "of the year" ("is short for").
+contrastMembers=of the year | day month year | 28.08.17
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-calendar-date-1-ru | prov-u17-calendar-date-x-0 | prov-ex-u17-calendar-date-1-en | prov-u17-calendar-date-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u1620-attribution`
 
 - Objectives: none
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-book, u17-s-gap-clock-answers, u17-s-gap-calendar-date
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 412bb14bcd4b1871c52aa80fc02eee436b4b4ce7897156c421af126ef299053b
+- Content hash: 4136866982202bbc8b80331b5fcc6ec6966b04a7d6f82e92fc88167052a39f2f
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
@@ -3026,6 +3523,192 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
 contentHash=58a0ce1a860ec3c2300e5c2b9bfb6bb4bd2874424b30f64eb453eb585907e3c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-0-en`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fef3136845cda5eb900d1d4023b8720a9d3fd6ec496fcd59b04feb0716f60386
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=the month in genitive case
+transformation=wiki label selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=d13ee4d49a363ae1938812b3edcfc713798270810b59d03207046ee74e0a4a8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-0-ru`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 86d1480464d56ef507617d29eee040e41f92f9246687f1d724ba52bd0958b034
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=Двадцать восьмое августа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=c9d057cb16a10014a37c04bed6d2c3911163588ff8282be59e749b220f051c02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-1-en`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2d27f03e8b95c1d08fb3562a496bb525844012c199d304e7af9daf8d003661b5
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=day month year
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=48bbc0035f80f6ee607a29eb5d4b2e9c45b4b3ef1d43cba6d00405aafd02669c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-1-ru`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc4aa1689ccd4371c0b7164dcb991822df53701d5bb17f867dab25b975140f19
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=28 августа 2017 г.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=1928eac97df0e60fa34a8634ce97b4360a25f8ef483ee5dd5c31515c90e12455
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-1-ru-r0`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7acd0fb023685d26c0af9ba8119013d8627e728e9898593539967e6ace791f31
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=августа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=4ae69d9dc752dc16fac375bc7fb1f75ddb9d4dc75c66d09aa5c95793788adeb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-calendar-date-1-ru-r1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 97b94ca38c6744532f406d1a21f2823adcaf5456f217be2dcdf46973aceb598c
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=г
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3150,6 +3833,180 @@ attribution=Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd
 contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-0-en`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f0d7f5d8faa8bcb83afa537cdf08844bdcc549666752635d05e362ac4fbd6f0e
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=7:15
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=d628b0aac4e55a0c56ef4335434894ef39b47298bd28266f63daac1eea1d2b30
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-0-ru`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: be6ddd829fff853af1afc2096f99431b87c8945b3e56edb7a6eaaa4dd4cf5941
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=четверть восьмого
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=d85db7f9d2e862b9122ef30d500fa3e0b27472f7b4076586967875282a6b56d5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-1-en`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1c7bcab4663a60f97a1d89967a7361af6e3c8b16a3d3fb735983890a07cf7c4
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=7:30
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=3a07a1a91ceb8ba5e18ed9281c69dc97dc767df531e084e327dbd8d3f7fe6996
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-1-ru`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b7189faa4ec8653ae73be080d1ed943d8d3c6f32ba5d0936115659f19d6e9193
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=полвосьмого
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=72c55aa4fa5adff398ee6d5931908a169eb9997da036f46f94bad27e840c2dd0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-2-en`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d4e859505c7e86bfb1a8248fb26ac1feb5ab6f8c1877620ed444bf83f691dddd
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=7:45
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=115a0c656d48d45818ed2350625e4ff97a706fbcb724dd91a876ffdb12445853
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-clock-answers-2-ru`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d434a3c24dd91093016fec6e6b5694053bcac18e487f1a245a0a0a6ead5ef2a5
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=без четверти восемь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5719,6 +6576,583 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa
 contentHash=0e65f9ce32b2da5506d985a46adb76ee71cc4b0206ecb01c08146fb561f5b110
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 44cad7b42893cf7df6bfdd06cd3564496266eafa5b3fe1c7e9a7ee122ef9a558
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=In Russia, dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "28.08.17") and the expanded form (for example "28 августа 2017 г."); the trailing "г" is short for "года" (goda, "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "28.08.2017") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
+transformation=wiki label selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=2be0ea57c76e3e896dc8bf3a0884b1eb22a5d31fdd28ef86ecc61a022ab6a50f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem-r0`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9fcc039961add9512d9b27710542c76e2c0515aa14b1c64399abbebb828234bc
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=августа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=4ae69d9dc752dc16fac375bc7fb1f75ddb9d4dc75c66d09aa5c95793788adeb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem-r1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4bd108d16280fee5191cb0a674c8fd47e05998c80a9bf44572c32e01a311b9bd
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=г
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem-r2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a30d5a6162f9577e26a30b0cff24379397ee5dcf3f3a3ee76142412c3bcc4d6a
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=г
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem-r3`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 80958a9b796b9c48cd0778145fabf8cb4408df5e5543a024ab3876414ff9d8c2
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=года
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=fe5b99bb9cee650de40a9ad6e1214730a50ff95134f71c1bfcd86ddf55735b23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-rem-r4`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 33336ebabf81f800645bcb2a2e85b32f5cbbaebe0ae1cc31b7a9159d5243545f
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=Двадцать восьмое августа
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=c9d057cb16a10014a37c04bed6d2c3911163588ff8282be59e749b220f051c02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-0`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c4f0568058f54f329c6cda8ec10b1b087ca182186d05014bddad96caa4400373
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=of the year
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=4584c549c99fa4c243bbc8545a5e42fc3dedfae36efba389f1ca2d5af6ac6803
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9f4eca125f72f4820f1f0b0736f8bf488c5cab237a890fde75aff5778d9af1e8
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=28.08.17
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=3ac04b73250f4609ffadac5d27407fd252b2c5aae78babde67d5ae8b9e3a565a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 55a81db6f3d45700e23dd285a5a7c666eafcdbfd0ff932bbe4d14fba1fb060db
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=the ordinal number of the day first
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=2141adba97deb362c2be2f196c750b35b02bbf0d9df2960f649efd0d67ee95ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-3`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fab05e31491f56ca6d4e36db4fe05d842245230825f9414a921358c8fdab719c
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=dates are usually written
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=f2bdf55363b4229b98286b212255ba0ba3fd619cc8c41485196ea024e6d6a6da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-4`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e367108a4c12cfcdff1cf73ac6b0b75ce0045532786cd8c0b276b4cc5724b10c
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=is short for
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=b35ffd973ab71962466e3e97d896a3db17bb02a970a7a3c7e93c381e0cf6df46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-calendar-date-x-5`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c56146ac98b396ff32d18159c7582e3a482791a75e4d8bb5422f3477063cd842
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172
+sourceRevision=1357134172
+sourceRecordId=date-russia:In [[Russia]], dates are usually written in "day month year" (DMY) order. This o
+originalSourceText=In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}").
+shippedText=the all-numeric date
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c
+contentHash=f2f66c3d856eec708570a7e1024c2e3442d74e18e7c3363c1f96dd8f430d7123
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-rem`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1205c9a59938bfbebb20e09fc436a883025767937e5a76b1ba76d112bc4f0fbc
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+transformation=wikibooks emphasis formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=980a23647b31c300165390e265eeb97581da673d79fd23b54e4773937c5eb977
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-rem-r0`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fb06f4dea2ba1869ba89a8c0b7d60f631c9593e204f2aee9724f53d32d561ef3
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=четверть восьмого
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=d85db7f9d2e862b9122ef30d500fa3e0b27472f7b4076586967875282a6b56d5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-rem-r1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 49c23d8d6cdc7829520a7ed858040b02a4e85270ec7b73c61f0b74211add8d5c
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=полвосьмого
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=72c55aa4fa5adff398ee6d5931908a169eb9997da036f46f94bad27e840c2dd0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-rem-r2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e7a0f12e26e97f1d4fa8d524662dc956349aa56566343a84b85f65db57eaba23
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=без четверти восемь
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-x-0`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ba104ff7badc8d6514b7239a00db73b122f2c8c20f65dae87febfcb9a9951d33
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=quarter of the eighth hour
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=0e54a003dbc6e42776dc97fee91af8b7f12eb42c9529693da8a42798339c2d6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-x-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 946bce225c109573a04b57c39608419a20ee93f91943ff660b9483656c903fd8
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=half of eight
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=046d1a7bab35050801a3c790b65d480a506cd1a7218a94b2790d03d5950f4125
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u17-clock-answers-x-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aaa401291044b7d1fce12842a027c38fb3cf3314a380840875c9bf334fd54a0c
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592
+sourceRevision=1366690592
+sourceRecordId=clock-country:uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), 
+originalSourceText=uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+shippedText=eight without a quarter
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e
+contentHash=358f4f61b0503f95ed2dcf2d39d033d4cbd77ecf0fe2fe3d2a8dce9d3c62b83c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9302,10 +10736,10 @@ text=Admitted number and quantity rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2bd14f73799c5d768bbeb696a5fe4cc52982866557e2c40609a516be24e20a74
+- Content hash: cb6e35f3da4499a89292ce885ad1e14ba2df9ffa06ad45eaa48c25278010d6bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u17-096`
 
@@ -9463,58 +10897,6 @@ text=When you have done Lesson 17 in your copy, self-attest here. Attestation re
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 17 work in your copy.
 
-### AUTHORED_ENGLISH `en-u17-108`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09ea17c0b9d73f5b83a5f55c624275d8bd551d95f728d530c3c9082e2fa00abf
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Productive clock-time answers stay in the copy you own
-
-### AUTHORED_ENGLISH `en-u17-109`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f67102fbfc3f63851ff4385dc054707abb17ddda25a0e7bba050d3ab79825500
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.
-
-### AUTHORED_ENGLISH `en-u17-110`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69afcd7f9697c7212cd7ed21f496612cbaf5e09a51150e5351c2e736b317e32a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Calendar-date syntax stays in the copy you own
-
-### AUTHORED_ENGLISH `en-u17-111`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eaca056791ee7fcadb68d59e66b1d5c3b88e42b00c9bb09422259c4559a3df2a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.
-
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
 - Objectives: none
@@ -9543,6 +10925,36 @@ Selected excerpts. Russian quotations are unchanged. English claims are quoted, 
 Russian grammar
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-date-time-country-1366690592`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8fd3d615f08b8938b48e1eb04a5478ae83f77c761739ba6c6d03ddfaefbdbbde
+
+Date and time representation by country
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-date-notation-russia-1357134172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 381842fc6001d263cc030773981ba53343dec1b302d003ea83bfab03d34ab4f9
+
+Date and time notation in Russia
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -9585,6 +10997,34 @@ permitsAppUse=true
 - Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
 
 src-wikipedia-russian-grammar-1369617627
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-date-time-country-1366690592`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-date-time-country-1366690592
+- Rights: rights-wikipedia-date-time-country-1366690592
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5d099370fbed07829efcff42dcae6fadc4efde875d89afce17a1a84c1de803d9
+
+src-wikipedia-date-time-country-1366690592
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-date-notation-russia-1357134172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-date-notation-russia-1357134172
+- Rights: rights-wikipedia-date-notation-russia-1357134172
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c07e25448efd49f931c537d160a39bc77f39ee43a6c2d3194ab21029dd1ebc16
+
+src-wikipedia-date-notation-russia-1357134172
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -9692,10 +11132,28 @@ permitsAppUse=true
 - `obj-u17-clock` CHECK `u17-i-clock-1`
 - `obj-u17-clock` CHECK `u17-i-clock-2`
 - `obj-u17-clock` REMEDIATION `u17-st-rem-clock`
+- `obj-u17-clock-answers` INSTRUCTION `u17-st-orient`
+- `obj-u17-clock-answers` INSTRUCTION `u17-st-teach-clock-answers-1`
+- `obj-u17-clock-answers` INSTRUCTION `u17-st-teach-clock-answers-2`
+- `obj-u17-clock-answers` INSTRUCTION `u17-st-teach-clock-answers-3`
+- `obj-u17-clock-answers` EXAMPLE `ex-u17-clock-answers-0`
+- `obj-u17-clock-answers` EXAMPLE `ex-u17-clock-answers-1`
+- `obj-u17-clock-answers` EXAMPLE `ex-u17-clock-answers-2`
+- `obj-u17-clock-answers` PRACTICE `u17-st-guided-clock-answers-1`
+- `obj-u17-clock-answers` CHECK `u17-i-clock-answers-1`
+- `obj-u17-clock-answers` CHECK `u17-i-clock-answers-2`
+- `obj-u17-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
+- `obj-u17-calendar-date` INSTRUCTION `u17-st-orient`
+- `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-1`
+- `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-2`
+- `obj-u17-calendar-date` EXAMPLE `ex-u17-calendar-date-0`
+- `obj-u17-calendar-date` EXAMPLE `ex-u17-calendar-date-1`
+- `obj-u17-calendar-date` PRACTICE `u17-st-guided-calendar-date-1`
+- `obj-u17-calendar-date` CHECK `u17-i-calendar-date-1`
+- `obj-u17-calendar-date` CHECK `u17-i-calendar-date-2`
+- `obj-u17-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
 - `obj-u17-book` INSTRUCTION `u17-st-book-work`
 - `obj-u17-book` INSTRUCTION `u17-st-book`
-- `obj-u17-clock-answers` INSTRUCTION `u17-st-gap-clock-answers`
-- `obj-u17-calendar-date` INSTRUCTION `u17-st-gap-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-ordinals`
 - `u17-s-orient` OBJECTIVE `obj-u17-hours`
 - `u17-s-orient` OBJECTIVE `obj-u17-years`
@@ -9704,6 +11162,8 @@ permitsAppUse=true
 - `u17-s-orient` OBJECTIVE `obj-u17-weekdays`
 - `u17-s-orient` OBJECTIVE `obj-u17-months`
 - `u17-s-orient` OBJECTIVE `obj-u17-clock`
+- `u17-s-orient` OBJECTIVE `obj-u17-clock-answers`
+- `u17-s-orient` OBJECTIVE `obj-u17-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-book`
 - `u17-st-orient` REFERENCE `ref-u1620-attribution`
 - `u17-s-ordinals` OBJECTIVE `obj-u17-ordinals`
@@ -9818,20 +11278,54 @@ permitsAppUse=true
 - `u17-st-check-clock` REMEDIATION `u17-st-rem-clock`
 - `u17-st-check-clock` ITEM `u17-i-clock-1`
 - `u17-st-check-clock` ITEM `u17-i-clock-2`
+- `u17-s-clock-answers` OBJECTIVE `obj-u17-clock-answers`
+- `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-0`
+- `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-1`
+- `u17-st-teach-clock-answers-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-clock-answers-1` REMEDIATION `u17-st-rem-clock-answers`
+- `u17-st-guided-clock-answers-1` ITEM `u17-g-clock-answers-0`
+- `u17-st-teach-clock-answers-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-teach-clock-answers-3` EXAMPLE `ex-u17-clock-answers-2`
+- `u17-st-teach-clock-answers-3` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-0`
+- `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-1`
+- `u17-st-check-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
+- `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-1`
+- `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-2`
+- `u17-s-calendar-date` OBJECTIVE `obj-u17-calendar-date`
+- `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-0`
+- `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-1`
+- `u17-st-teach-calendar-date-1` REFERENCE `ref-u1620-attribution`
+- `u17-st-guided-calendar-date-1` REMEDIATION `u17-st-rem-calendar-date`
+- `u17-st-guided-calendar-date-1` ITEM `u17-g-calendar-date-0`
+- `u17-st-teach-calendar-date-2` REFERENCE `ref-u1620-attribution`
+- `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-0`
+- `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-1`
+- `u17-st-check-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
+- `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-1`
+- `u17-st-check-calendar-date` ITEM `u17-i-calendar-date-2`
 - `u17-s-book` OBJECTIVE `obj-u17-book`
 - `u17-st-book-work` REFERENCE `ref-u1620-attribution`
-- `u17-s-gap-clock-answers` OBJECTIVE `obj-u17-clock-answers`
-- `u17-st-gap-clock-answers` REFERENCE `ref-u1620-attribution`
-- `u17-s-gap-calendar-date` OBJECTIVE `obj-u17-calendar-date`
-- `u17-st-gap-calendar-date` REFERENCE `ref-u1620-attribution`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-ru`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-0-en`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-0-ru`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-1-en`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-1-ru`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-1-ru-r0`
+- `obj-u17-calendar-date` PROVENANCE `prov-ex-u17-calendar-date-1-ru-r1`
 - `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-0-en`
 - `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-0-ru`
 - `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-1-en`
 - `obj-u17-clock` PROVENANCE `prov-ex-u17-clock-1-ru`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-0-en`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-0-ru`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-1-en`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-1-ru`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-2-en`
+- `obj-u17-clock-answers` PROVENANCE `prov-ex-u17-clock-answers-2-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-en`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-0-ru`
 - `obj-u17-hours` PROVENANCE `prov-ex-u17-hours-1-en`
@@ -9879,6 +11373,25 @@ permitsAppUse=true
 - `obj-u17-age` PROVENANCE `prov-u17-age-rem`
 - `obj-u17-age` PROVENANCE `prov-u17-age-x-0`
 - `obj-u17-age` PROVENANCE `prov-u17-age-x-1`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem-r0`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem-r1`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem-r2`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem-r3`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-rem-r4`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-0`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-1`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-2`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-3`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-4`
+- `obj-u17-calendar-date` PROVENANCE `prov-u17-calendar-date-x-5`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-rem`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-rem-r0`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-rem-r1`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-rem-r2`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-0`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-1`
+- `obj-u17-clock-answers` PROVENANCE `prov-u17-clock-answers-x-2`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-rem`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-x-0`
 - `obj-u17-clock` PROVENANCE `prov-u17-clock-x-1`
@@ -9929,8 +11442,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u17-st-gap-clock-answers`
-- `u17-st-gap-calendar-date`
+None.
+
 
 ## Unresolved relationships
 

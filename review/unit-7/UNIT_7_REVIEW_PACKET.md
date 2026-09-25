@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 7 remains in development. Its readiness is content-complete and review-pending. The Lesson 7 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9a508efc9d8d4e1ae7e2ad39cdfa0c869fc7066d
-- Unit content-review SHA-256: 56f1f67b9bda3e58eedd8f7bbb390c23fce2cff39b36a5d964a028cc2eeb33d1
+- Curriculum source commit: 43affc3ddfe3ad73f3557579d44f408a3d6aaf75
+- Unit content-review SHA-256: 44011d6575723876949a04f67a7615c38643e98abb7320188a8129022de5eedc
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: 1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5
-- Review-package SHA-256: 41041d9b5bcacbbff95417067cf2f6bf6222274460e47e03faa48f5d2548023e
-- Repository source SHA-256: d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14
+- Pack content-review SHA-256: 73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07
+- Review-package SHA-256: 9f81d55b58ddd050c89401aa2437303b2b216838e6c0c2afec95ef8776bace8f
+- Repository source SHA-256: 358bbc6543d0babfe6234def6b9cc6ea1b7c796a0b730e395b03b3e768f631f8
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
+mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=106
+estimatedMinutes=114
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 7.
 
 ### UNIT `unit-7`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-book, obj-u7-adverb
-- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book, u7-s-adverb
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book
+- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-adverb, u7-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab024fede66ced06107fe2a3061dce1e3837938909abef941d20e0dfd8c6ac66
+- Content hash: 4730000d4016adc19b926ee4ab5190befac5af82893e30f81da225792a502300
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
-mappingNote=The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
+mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=106
+estimatedMinutes=114
 
 ### ADVANCEMENT `unit-7-advancement`
 
@@ -238,6 +238,25 @@ practice=u7-st-guided-objectadj-1
 checks=u7-i-objectadj-1,u7-i-objectadj-2,u7-i-objectadj-3
 remediation=u7-st-rem-objectadj
 
+### OBJECTIVE `obj-u7-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 095265861cda0a94b4cd9b334473469596503961fca78a5ea005ff8ca0c52340
+
+title=Choose the admitted gloss beside the shown form
+kind=RECOGNITION
+unitNumber=7
+instruction=u7-st-orient,u7-st-teach-adverb-1,u7-st-teach-adverb-2,u7-st-teach-adverb-3
+examples=ex-u7-adverb-0,ex-u7-adverb-1,ex-u7-adverb-2
+practice=u7-st-guided-adverb-1
+checks=u7-i-adverb-1,u7-i-adverb-2
+remediation=u7-st-rem-adverb
+
 ### OBJECTIVE `obj-u7-book`
 
 - Objectives: obj-u7-book
@@ -257,53 +276,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u7-adverb`
-
-- Objectives: obj-u7-adverb
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8d2526bce2788d4afe278fcd145f9c35562b3fb7ef473fdaec500f73f04f6ad3
-
-title=Admitted orientation
-kind=GUIDANCE
-unitNumber=7
-instruction=u7-st-adverb-orient
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u7-s-orient`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-book
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book
 - Sessions: u7-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 974709096259f7fdabc436eee66c480ec1575aa713dc205bb051d32e5582b459
+- Content hash: 253a8e4f1a3d167d64fe9b23992e7e32663f978362fd08e4e678a844fd7f66e8
 
 title=Admitted agreement rows
 estimatedMinutes=8
-objectives=obj-u7-default,obj-u7-endings,obj-u7-spelling,obj-u7-question,obj-u7-demonstrative,obj-u7-place,obj-u7-objectadj,obj-u7-book
+objectives=obj-u7-default,obj-u7-endings,obj-u7-spelling,obj-u7-question,obj-u7-demonstrative,obj-u7-place,obj-u7-objectadj,obj-u7-adverb,obj-u7-book
 steps=u7-st-orient
 
 ### STEP `u7-st-orient`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-book
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book
 - Sessions: u7-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5f1aad0f96d1044de308ffe82d9098e1b9f05c8c800d83f7d6d8a59233fbc645
+- Content hash: c22cdc6eb1b0bc3517f78d7c3ae440746997d5216604c6ca7101b0865a23ffa1
 
 kind=ORIENT
 title=Admitted agreement rows
-body=Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.
+body=Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1628,6 +1628,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u7-st-rem-objectadj
 
+### SESSION `u7-s-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b0e4d4e55deee412d6c5ff05c1f7d6d618d58cc6ae2e73bc3ae4ed32de7e956a
+
+title=Choose the admitted gloss beside the shown form
+estimatedMinutes=12
+objectives=obj-u7-adverb
+steps=u7-st-teach-adverb-1,u7-st-guided-adverb-1,u7-st-teach-adverb-2,u7-st-teach-adverb-3,u7-st-rem-adverb,u7-st-check-adverb
+
+### STEP `u7-st-teach-adverb-1`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6b438a45e7205cb546de901dfd9bbc7de75ee043dc7193be8191dc34d22d1b17
+
+kind=TEACH
+title=Admitted lines
+body=быстро — quickly. хорошо — well. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u7-adverb-0,ex-u7-adverb-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-guided-adverb-1`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a5c1aad2ff3cef8695782535957f915118dde0344bacdac2ff28e798668bc092
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u7-g-adverb-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb
+
+### STEP `u7-st-teach-adverb-2`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dbec0ff8f02203c268c9ad4120154d771706fd87dc9e031ae8009256021b0fe3
+
+kind=TEACH
+title=Admitted instruction
+body=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-teach-adverb-3`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3f082d8ce51b522faa4e0c2ec43ca247d2e5e315dca14030942b628e660cc2b0
+
+kind=TEACH
+title=Admitted lines
+body=прекрасно — wonderfully. 
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u7-adverb-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-rem-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 78166387f790f2f2d47fb2ed6ab21f4d57c48c927340ff036c739c4cb8c53957
+
+kind=REMEDIATE
+title=Remediation
+body=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+dominantAction=Continue
+references=
+items=
+examples=ex-u7-adverb-0,ex-u7-adverb-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-check-adverb`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 51b60e8fd224c1f21eee9e4201ad823abb3dd7b43eeb7f6f61d9a9e99838df3a
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u7-i-adverb-1,u7-i-adverb-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb
+
 ### SESSION `u7-s-book`
 
 - Objectives: obj-u7-book
@@ -1651,11 +1798,11 @@ steps=u7-st-book-work,u7-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7bf5e4131563fe55ce7eac88728d123e7bfee33d58e0d455d625fdbe3e82f425
+- Content hash: 9ed2b72e8905dc8423f254395e467b7d5852a9cd3fe2630401c5d5c01d7acd35
 
 kind=BOOK
 title=Work Lesson 7 in your copy
-body=Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.
+body=Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1684,65 +1831,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 7 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u7-s-adverb`
-
-- Objectives: obj-u7-adverb
-- Sessions: u7-s-adverb
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e6a2b44f6b94a8be8dcd0568f0bb1d91702ebd352630ea806b28ad6c52b820a
-
-title=Admitted orientation
-estimatedMinutes=4
-objectives=obj-u7-adverb
-steps=u7-st-adverb-orient,u7-st-adverb-gap
-
-### STEP `u7-st-adverb-orient`
-
-- Objectives: obj-u7-adverb
-- Sessions: u7-s-adverb
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e894de7dab04c391b71a923030466934ffd908f7a71c7a95f4b8ddcff995291a
-
-kind=TEACH
-title=Admitted orientation
-body=Adverbs describe a verb much like adjectives describe nouns.
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u7-st-adverb-gap`
-
-- Objectives: obj-u7-adverb
-- Sessions: u7-s-adverb
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9a0506f6d521d310d72e0f55ed6b292f53f85f7c534226df08b99b0bf56224e0
-
-kind=UNAVAILABLE
-title=Adverb forms stay in the copy you own
-body=The introductory adverb objective is not prepared.
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=
-unavailableReason=The introductory Russian adverb paradigm has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -2596,6 +2684,57 @@ note=new
 objectiveId=obj-u7-objectadj
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u7-adverb-0`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4bf6148d8c7438b50613b3be276513bbdb7b4634090c3de28e4b7339cbad0dcd
+
+kind=LEXICAL
+letterId=
+display=быстро
+note=quickly
+objectiveId=obj-u7-adverb
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u7-adverb-1`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6e5697c6a6f2e5fd8737e812d309096bb5d503ba044d65c41251135706b14b27
+
+kind=LEXICAL
+letterId=
+display=хорошо
+note=well
+objectiveId=obj-u7-adverb
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u7-adverb-2`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bb1a9a6d3df77d86614c739c68ca40fda10cb02a1f15587f5f96e442c4712b83
+
+kind=LEXICAL
+letterId=
+display=прекрасно
+note=wonderfully
+objectiveId=obj-u7-adverb
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u7-g-default-0`
 
 - Objectives: obj-u7-default
@@ -2833,6 +2972,41 @@ whyAnswerDemonstratesObjective=Does the admitted record show the governed contra
 contrastMembers=но́вого | но́вую
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-5 | prov-ex-or-u7-objectadj-6
+
+### GUIDED_PRACTICE `u7-g-adverb-0`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9712bcaef5359d8cba00d7df9b65f25d74d3fae21cfb14e4dc4bc4d12e3e0fa8
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=быстро
+options=quickly | well | wonderfully
+answer=quickly
+feedback=The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed").
+objectiveId=obj-u7-adverb
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed"). | The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+testedFeature=ADVERB_QUICKLY
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u7-adverb-0-en
+distractorSourceIds= | prov-ex-u7-adverb-1-en | prov-ex-u7-adverb-2-en
+distractorDifference= | The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed"). | The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed").
+contrastMembers=quickly | well | wonderfully
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-0-ru | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-1-en | prov-ex-u7-adverb-2-en
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u7-i-default-1`
 
@@ -3616,15 +3790,85 @@ contrastMembers=но́вую | но́вый
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u7-objectadj-4 | prov-ex-or-u7-objectadj-6 | prov-ex-or-u7-objectadj-4
 
+### INDEPENDENT_CHECK `u7-i-adverb-1`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5352037f8fb73b8c73851ecb6c4ba4f53b4ee3c3400a97a18e9963d0eec27083
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=хорошо
+options=well | quickly | wonderfully
+answer=well
+feedback=The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed").
+objectiveId=obj-u7-adverb
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed"). | The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+testedFeature=ADVERB_WELL
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-1-en
+distractorSourceIds= | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-2-en
+distractorDifference= | The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed"). | The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed").
+contrastMembers=well | quickly | wonderfully
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-1-ru | prov-ex-u7-adverb-1-en | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u7-i-adverb-2`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 159dcae8c6aae2ee1c4ac64db128b86eba28fdc9986673cb8e67a14d0800dbdd
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=прекрасно
+options=wonderfully | quickly | well
+answer=wonderfully
+feedback=The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+objectiveId=obj-u7-adverb
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed"). | The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed").
+testedFeature=ADVERB_WONDERFULLY
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-2-en
+distractorSourceIds= | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-1-en
+distractorDifference= | The frozen source pairs the shown form "быстро" with the admitted gloss "quickly" ("most adverbs are formed"). | The frozen source pairs the shown form "хорошо" with the admitted gloss "well" ("most adverbs are formed").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "прекрасно" with the admitted gloss "wonderfully" ("most adverbs are formed").
+contrastMembers=wonderfully | quickly | well
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-2-ru | prov-ex-u7-adverb-2-en | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u610-attribution`
 
 - Objectives: none
-- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-book, u7-s-adverb
+- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-adverb, u7-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 236a6221bcabddfa80468f04b620cb2259a0be2ccd34d3dec7281fc74f9b644f
+- Content hash: aa46752e465d83032cb14360dc461bb532a3d3a314fef732c96d048f6686828d
 
 title=Units 6–10 source notice
 summary=Proposed Units 6–10 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts.
@@ -5606,6 +5850,180 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u7-adverb-0-en`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b935b9ddc1ffad15efd19937e41c05618d0b339d8498b847ae66c1402fbe3f8b
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=quickly
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=a093d3f5ecffec653f683e9abf3879067ff9ddd28a14f24949c975864ca83322
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-0-ru`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 573f7d18eeb7150f9fcefddc407f0fe89e67c6bea399958561a27e507c635efe
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=быстро
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-1-en`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cedc889c87a5a69eb179613f9b09ca5644fa21cabc5e73928362c396ada6627d
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=well
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=a7722b765d15608d5d24a319140e6665cb361a0758285125722a2d5aece38808
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-1-ru`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fd5f4565196d95c4c84260fe440c54158d2b90e7f99606a8dda9be53fafb00ea
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=хорошо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=a5f34365dc313fc483f7326ceae266d139496bcb16b7c36b292f004cbf30b043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-2-en`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ddea042c1ee9bdb2f98e91a0aa838706032dab8707d69916d4bef1c4cca418cd
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=wonderfully
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=c96c726c988a8747ac1d98f886e409bdf6df109c096a8fb36d3b95718db71fe9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-2-ru`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 91c9c11763bb58a716ff71a935d055c2a425dff384d831ea87e41e64647207c0
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=прекрасно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=1e1cf15b46eef345a1747e85b648b807889f6ee0617a89222f08d50c34a648b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u7-demonstrative-0-en`
 
 - Objectives: obj-u7-demonstrative
@@ -6534,29 +6952,522 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u7-adverb-orient`
+### PROVENANCE `prov-u7-adverb-rem`
 
 - Objectives: obj-u7-adverb
-- Sessions: u7-s-adverb
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 511b31208e7fb1b809e4955656f745245f84f349553ed79e2ee948d84b60198f
+- Content hash: b8ca01edf581b8b4ec3b87965bc5d1321beea0573cf82fa7a09e969608a02734
 
 recordType=instruction
-sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adverbs?oldid=3197995
-sourceRevision=3197995
-sourceRecordId=adverbs:Adverbs describe a verb much like adjectives describe nouns.
-originalSourceText=Adverbs describe a verb much like adjectives describe nouns.
-shippedText=Adverbs describe a verb much like adjectives describe nouns.
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed
-contentHash=bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r0`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f5f79be33d2671bbb4631a0ac4e76adfd31cbb31cf375007818f666d65686a0a
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=ий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=61760b129eb12c5b31ae92afdf4065b386eb47193a202092f5078e9d5cd15737
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r1`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5aa3cf47785e451d8b2f381d17dfc0f1632410228ca55264e9ee779d437276f
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=а
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r10`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 54386130ea96c4cbfc9e1a46f57ae6165d0f29f65a9d6e34dd8c512c026972e7
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=быстрый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r11`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0d49bef82b6303b86106589ca1d0b78d85d6fdadc17b854f903010bbb50357ae
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=хороший
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=b68edd19855f5a46c7dace68101a8c55771f5e43148bd33bbe96196898a52751
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r12`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0be2084c64ca4da8b0adaaf1f2f835bcf588e79c5821b0d47c1459f6c9df34c7
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=прекрасный
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=8c9d9085a4ce7c3f45485f30b23f84d60a98b77b8d1d8855c7a693131f2101be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r13`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fd851e3e76dd5467132f886f32432607a228e770e2527e31d19220515e287323
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=быстро
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r14`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 69ce51bec0b03b88d49c9ef0f433ea898a41c2935129d2922b10e9305b57d000
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=хорошо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=a5f34365dc313fc483f7326ceae266d139496bcb16b7c36b292f004cbf30b043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r15`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9c7e3b0bdd78cc55e06995ea5c35247faadcce2895ab1f3b74f4ea29b8e19b26
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=прекрасно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=1e1cf15b46eef345a1747e85b648b807889f6ee0617a89222f08d50c34a648b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r2`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a777b47ee74d3e117691d2b0916efd53a9307d4786fb38e931217cf693a3b044
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=е
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=259f56cb715ba3a3f1ca41a4ff1972cca698cb49eef1ae018dff325507da8b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r3`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f98c5bbebbf351485dbcfc21b0b41fc78d39fb8aa2ab9874994bfa2f5a55df88
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=о
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=50338c005c41fb4e6e6b74c9f7f8d0f56ae08517102498639f8a610b06cd9859
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r4`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b5dc5850a2c71f72b514f6930544549cac1c79305c557e38156bf8ce0727c905
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=швидкий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=6b0edad7d325032e3c0ff027fc128c51ebba3beb59f41a2a8b25e2e23b5d510b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r5`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2df88de368388648322fda97f856b04918bf8e2868e6677a1600c376ce3f3c0d
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=гарна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=2b50e4d5b934db6fc65246fb0eaf032e3963fb52750670f8a216b8ddf079041a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r6`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cd8f3dbc89ed8b7538ec93a5c1eea37dfc8e701b3a0208608ff4bc8cfffc3480
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=смачне
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=2ff27d7f7cb59c1a84bc34109e17f46921be30006967623bd621d945ac533339
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r7`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3e8dce0838b5f3df9495efac1f0918b20df4d4bb3dc6d5322393ee57a99239b9
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=швидко
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=5d8a51523fa4a460fbd9e248257cd6ec30369aa218c2947603f39d06beaeb8c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r8`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4a601a3f6a21f31dc4b5ed6f5a7188141df666f33d052d31e3af2e9f6ec98b8d
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=гарно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=ef8dc25a0951814122d8af6bdf0fd10d279880d61901e9b899adabd4fea89815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-rem-r9`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d0197940f4ada9e07cd4d75cfee2fb79f70ab31d6d211dd8ff98513cd4113ef
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=смачно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=0bcb1b0f453c0fcdfe48727570b6667f5a893617259b04f6010e56f04704812f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-x-0`
+
+- Objectives: obj-u7-adverb
+- Sessions: u7-s-orient, u7-s-adverb
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bd4f23299aa9de84380073a370b782ec4d4f30f7b7596c5a9b4cd77396bd525
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415
+sourceRevision=1374548415
+sourceRecordId=adverb-formation:most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" f
+originalSourceText=most adverbs are formed by removing the adjectival suffixes "-ий" "-а" or "-е" from an adjective, and replacing them with the adverbial "-о". For example, in Ukrainian, "швидкий", "гарна", and "смачне" (fast, nice, tasty) become "швидко", "гарно", and "смачно" (quickly, nicely, tastily), while in Russian, "быстрый", "хороший" and "прекрасный" (quick, good, wonderful) become "быстро", "хорошо", "прекрасно" (quickly, well, wonderfully).
+shippedText=most adverbs are formed
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148
+contentHash=e5282edae5420a93e8fc970e18410de85bd63963a3d188f651a94b1130291d24
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7577,10 +8488,10 @@ text=Admitted agreement rows
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d8653001801204cb7728380a6fbe15db6c4365f8a4e143ebf60f80feadcedcc2
+- Content hash: b29d53e5b827c6bf5b7e9b3dc73bfbbf2a6d7a0a4ddad6e550935b0dffebd033
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.
+text=Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u7-073`
 
@@ -7694,10 +8605,10 @@ text=Do Lesson 7 in the copy you own. Use that book's explanations and practice.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87a49ee984465cc674324aac61187b55b63904361772f4cbf60d8d163991566b
+- Content hash: f1de7becba70fd347c74bb888f35c57e34ae68c8da7bfd161d7c85e299b97495
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.
+text=The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u7-082`
 
@@ -7759,10 +8670,10 @@ text=Self-attest only after the Lesson 7 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bef095f19703b2041b941f249019e4537b8d8f3f9708f2f7bc37884bb4238b76
+- Content hash: 1d645040c1e5d0d2f8b02a80daa9a555c9b3e2aa6681a079ac39a8ccbfdb1a7b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted orientation
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u7-196`
 
@@ -7772,10 +8683,10 @@ text=Admitted orientation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bbb0888d2b1f360b3bc17b55e921d7228bccb9314114c5bab5acd3efa7d022e6
+- Content hash: 49369c740dd8da6927bbd984f5cb9b68a7649b9a5d1d06f4662b046ef5583add
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Adverb forms stay in the copy you own
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u7-197`
 
@@ -7785,10 +8696,10 @@ text=Adverb forms stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f13d32b01013b6615e3fae6e6a621ffc18e11ed80ebe0c7ffce4ac2e2d81af11
+- Content hash: b202f513697088eb39771b1070c33164c0435bb61cea134a76c0956eda89fc64
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The introductory adverb objective is not prepared.
+text=Which admitted English gloss is written beside the shown form?
 
 ### SOURCE `src-openrussian-50e210c4`
 
@@ -7819,6 +8730,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-adverb-1374548415`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6919dfb27affbf98a803734c546ab39e68048772d53ff394e2e7ce834a922089
+
+Adverb
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -7860,6 +8786,20 @@ permitsAppUse=true
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-adverb-1374548415`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-adverb-1374548415
+- Rights: rights-wikipedia-adverb-1374548415
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 40b9979ebd3aabef53f35841ccd212d92d2d594289cadaabb3fdd08292858540
+
+src-wikipedia-adverb-1374548415
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -8007,9 +8947,19 @@ permitsAppUse=true
 - `obj-u7-objectadj` CHECK `u7-i-objectadj-2`
 - `obj-u7-objectadj` CHECK `u7-i-objectadj-3`
 - `obj-u7-objectadj` REMEDIATION `u7-st-rem-objectadj`
+- `obj-u7-adverb` INSTRUCTION `u7-st-orient`
+- `obj-u7-adverb` INSTRUCTION `u7-st-teach-adverb-1`
+- `obj-u7-adverb` INSTRUCTION `u7-st-teach-adverb-2`
+- `obj-u7-adverb` INSTRUCTION `u7-st-teach-adverb-3`
+- `obj-u7-adverb` EXAMPLE `ex-u7-adverb-0`
+- `obj-u7-adverb` EXAMPLE `ex-u7-adverb-1`
+- `obj-u7-adverb` EXAMPLE `ex-u7-adverb-2`
+- `obj-u7-adverb` PRACTICE `u7-st-guided-adverb-1`
+- `obj-u7-adverb` CHECK `u7-i-adverb-1`
+- `obj-u7-adverb` CHECK `u7-i-adverb-2`
+- `obj-u7-adverb` REMEDIATION `u7-st-rem-adverb`
 - `obj-u7-book` INSTRUCTION `u7-st-book-work`
 - `obj-u7-book` INSTRUCTION `u7-st-book`
-- `obj-u7-adverb` INSTRUCTION `u7-st-adverb-orient`
 - `u7-s-orient` OBJECTIVE `obj-u7-default`
 - `u7-s-orient` OBJECTIVE `obj-u7-endings`
 - `u7-s-orient` OBJECTIVE `obj-u7-spelling`
@@ -8017,6 +8967,7 @@ permitsAppUse=true
 - `u7-s-orient` OBJECTIVE `obj-u7-demonstrative`
 - `u7-s-orient` OBJECTIVE `obj-u7-place`
 - `u7-s-orient` OBJECTIVE `obj-u7-objectadj`
+- `u7-s-orient` OBJECTIVE `obj-u7-adverb`
 - `u7-s-orient` OBJECTIVE `obj-u7-book`
 - `u7-st-orient` REFERENCE `ref-u610-attribution`
 - `u7-s-default` OBJECTIVE `obj-u7-default`
@@ -8168,11 +9119,22 @@ permitsAppUse=true
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-1`
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-2`
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-3`
+- `u7-s-adverb` OBJECTIVE `obj-u7-adverb`
+- `u7-st-teach-adverb-1` EXAMPLE `ex-u7-adverb-0`
+- `u7-st-teach-adverb-1` EXAMPLE `ex-u7-adverb-1`
+- `u7-st-teach-adverb-1` REFERENCE `ref-u610-attribution`
+- `u7-st-guided-adverb-1` REMEDIATION `u7-st-rem-adverb`
+- `u7-st-guided-adverb-1` ITEM `u7-g-adverb-0`
+- `u7-st-teach-adverb-2` REFERENCE `ref-u610-attribution`
+- `u7-st-teach-adverb-3` EXAMPLE `ex-u7-adverb-2`
+- `u7-st-teach-adverb-3` REFERENCE `ref-u610-attribution`
+- `u7-st-rem-adverb` EXAMPLE `ex-u7-adverb-0`
+- `u7-st-rem-adverb` EXAMPLE `ex-u7-adverb-1`
+- `u7-st-check-adverb` REMEDIATION `u7-st-rem-adverb`
+- `u7-st-check-adverb` ITEM `u7-i-adverb-1`
+- `u7-st-check-adverb` ITEM `u7-i-adverb-2`
 - `u7-s-book` OBJECTIVE `obj-u7-book`
 - `u7-st-book-work` REFERENCE `ref-u610-attribution`
-- `u7-s-adverb` OBJECTIVE `obj-u7-adverb`
-- `u7-st-adverb-orient` REFERENCE `ref-u610-attribution`
-- `u7-st-adverb-gap` REFERENCE `ref-u610-attribution`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0-gloss`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-1`
@@ -8241,6 +9203,12 @@ permitsAppUse=true
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-3-gloss`
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-4`
 - `obj-u7-spelling` PROVENANCE `prov-ex-or-u7-spelling-4-gloss`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-0-en`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-0-ru`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-1-en`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-1-ru`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-2-en`
+- `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-2-ru`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-en`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-ru`
 - `obj-u7-endings` PROVENANCE `prov-ex-u7-endings-0-en`
@@ -8273,7 +9241,24 @@ permitsAppUse=true
 - `obj-u7-place` PROVENANCE `prov-ex-u7-place-2-ru`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-en`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-ru`
-- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-orient`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r0`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r1`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r10`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r11`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r12`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r13`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r14`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r15`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r2`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r3`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r4`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r5`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r6`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r7`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r8`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r9`
+- `obj-u7-adverb` PROVENANCE `prov-u7-adverb-x-0`
 - `obj-u7-default` PROVENANCE `prov-u7-default-rem`
 - `obj-u7-demonstrative` PROVENANCE `prov-u7-demonstrative-rem`
 - `obj-u7-demonstrative` PROVENANCE `prov-u7-demonstrative-rem-r0`
@@ -8302,7 +9287,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u7-st-adverb-gap`
+None.
+
 
 ## Unresolved relationships
 

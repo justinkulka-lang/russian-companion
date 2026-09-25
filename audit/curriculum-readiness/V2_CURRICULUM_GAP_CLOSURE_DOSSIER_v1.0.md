@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `761e466becdc714f12f6a4205d767cc703635348`  
-**Pack content-review digest:** `1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5`  
-**Repository source digest:** `d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14`  
+**Canonical commit:** `43affc3ddfe3ad73f3557579d44f408a3d6aaf75`  
+**Pack content-review digest:** `73ba033cabba6aac04e39aa82c1ae6d4345b1793c87d0ee9fe39f7596e1d5d07`  
+**Repository source digest:** `358bbc6543d0babfe6234def6b9cc6ea1b7c796a0b730e395b03b3e768f631f8`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **13 units** — Unit 7, Units 17 and 19, and Units 21–30.
-- Units 16, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending.
+- Content blockers: **11 units** — Unit 19 and Units 21–30.
+- Units 7, 16, 17, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Unit 19 stays `NOT_PREPARED` because probability remains unresolved.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -49,7 +49,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 4 | Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 5 | Questions, prepositional case, and indeclinable nouns | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 6 | Possession, going places, accusative case, and personal names | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 8 | Plurals, first spelling rules, existence questions, and buying things | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 9 | Numbers, genitive singular and plural, quantities, and money | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
@@ -59,7 +59,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 15 | Requests, the imperative, and consolidation of aspect use | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
@@ -78,57 +78,27 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 
 ### Unit 7 — Adjectives, agreement, demonstratives, adjective case forms, and adverbs
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-#### `adverb-paradigm` — `obj-u7-adverb`
-
-- **Required claim/skill:** The productive adverb pattern required by the Unit 7 scope. The admitted orientation sentence does not supply that paradigm.
-- **Why the current record is insufficient:** The frozen adjectives page supports admitted agreement rows and one orientation sentence. It does not supply a bounded adverb paradigm outside an excluded short-form section.
-- **Required source:** A frozen, app-compatible licensed grammar source that explicitly explains the selected beginner adverb pattern and supplies source-verifiable examples sufficient for instruction, guided practice, independent checks, feedback, and remediation.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may frame the task and navigation; it may not supply the Russian rule or examples.
-- **Book-directed disposition:** The owned book may remain the fallback until a lawful source is admitted.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-Units 16, 18, and 20 no longer have open Batch A research requests. Their admitted complement, comparison, relative, and motion spans are packaged. Readiness is `CONTENT_COMPLETE_REVIEW_PENDING`. Reviewer and mapping signature fields stay blank.
+`adverb-paradigm` is admitted and is no longer an open research request. The bounded pattern is the Wikipedia Adverb sentence at oldid 1374548415, from `most adverbs are formed` through `(quickly, well, wonderfully).` The checks use only the three Russian pairs stated there: быстро/quickly, хорошо/well, and прекрасно/wonderfully. Ukrainian examples in that sentence are source text, not Russian checks. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Reviewer and mapping signature fields stay blank.
 
 ### Unit 17 — Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-Age, weekday, month, and clock-question spans are admitted. These two capabilities remain unresolved.
+Age, weekday, month, and clock-question spans remain admitted. `productive-clock-time` and `calendar-date` are now admitted and are no longer open research requests.
 
-#### `productive-clock-time` — `obj-u17-clock-answers`
+Clock answers are only the three forms in Wikipedia “Date and time representation by country” oldid 1366690592, from `uses the same convention:` through `7:45 respectively`: четверть восьмого/7:15, полвосьмого/7:30, and без четверти восемь/7:45. “Который час?” stays a question. Other hours are not derived.
 
-- **Required claim/skill:** Productive clock-time answers, limited to constructions the admitted source explicitly states.
-- **Why the current record is insufficient:** The admitted clock question does not supply answer forms for telling the time.
-- **Required source:** A frozen licensed instructional span that states the clock-time answer pattern and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English can name the task. It cannot derive the answer pattern.
-- **Book-directed disposition:** Current guidance may remain book-directed until the answer pattern is sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Calendar dates are only the written and spoken examples in Wikipedia “Date and time notation in Russia” oldid 1357134172, from `In [[Russia]], dates are usually written` through `Двадцать восьмое августа}}").` The spoken example supports the genitive-month relation. The written example `28 августа 2017 г.` supports day-month-year order, and the year gloss only on that written form. Numeric dates and the following colloquial sentence stay out. Reviewer and mapping signature fields stay blank.
 
-#### `calendar-date` — `obj-u17-calendar-date`
-
-- **Required claim/skill:** Calendar-date syntax, limited to constructions the admitted source explicitly states.
-- **Why the current record is insufficient:** Admitted month and weekday rows do not state how a calendar date is formed.
-- **Required source:** A frozen licensed instructional span that states the date construction and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English can name the task. It cannot derive the date construction.
-- **Book-directed disposition:** Current guidance may remain book-directed until the date construction is sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Units 16, 18, and 20 have no open Batch A research requests. Their content-review digests changed because the shared Units 16–20 source notice no longer says clock answers and calendar dates are unprepared, and Units 18–20 also renumbered authored-English ids after Unit 17’s unavailable gap records were removed. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING`.
 
 ### Unit 19 — Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Conditional and obligation spans are admitted. Probability remains unresolved.
+Conditional and obligation spans are admitted. Probability remains unresolved. No frozen Wikimedia span found in this pass states a probability reading of должен that is distinct from obligation. Obligation translations were not treated as probability evidence. Sources inspected and excluded for that claim include Wikibooks lesson 3 oldid 4460699, the Refugee Phrasebook, and the English or German modal articles Epistemic modality, Modality (semantics), and Modal verb. Wiktionary appendix pages were not used. The claim stays open and the unit stays `NOT_PREPARED`.
 
 #### `probability-dolzhen` — `obj-u19-probability`
 
@@ -556,7 +526,7 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
-3. **Remaining Batch A research:** Unit 7 adverb-paradigm, Unit 17 productive-clock-time and calendar-date, and Unit 19 probability-dolzhen. Units 16, 18, and 20 research requests are closed.
+3. **Remaining Batch A research:** Unit 19 probability-dolzhen only. Unit 7 adverb-paradigm and Unit 17 productive-clock-time and calendar-date are admitted from the frozen spans above. Units 16, 18, and 20 research requests stay closed.
 4. **Curriculum research batch B:** Units 21–25.
 5. **Curriculum research batch C:** Units 26–30.
 6. Generate the Unit 23 packet only after its instructional chain exists.
