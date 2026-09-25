@@ -27,8 +27,11 @@ class Units35SourceIntakeTest {
             "src-wikipedia-russian-grammar-1369617627",
             "src-wikipedia-russian-alphabet-1371795481",
             "src-wikipedia-adverb-1374548415",
+            "src-ruwiki-narechie-152437423",
             "src-wikipedia-date-time-country-1366690592",
             "src-wikipedia-date-notation-russia-1357134172",
+            "src-enwiktionary-dolzhen-84965088",
+            "src-pressbooks-diverse-russian-traditions-grammar",
             "src-wikibooks-russian-various-stuff-3353858",
         )
         pack.provenanceRecords.forEach { record ->

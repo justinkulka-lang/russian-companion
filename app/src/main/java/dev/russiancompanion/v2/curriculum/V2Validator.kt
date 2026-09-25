@@ -760,6 +760,10 @@ internal object V2Validator {
         "obj-u17-clock-answers",
         "obj-u17-calendar-date",
         "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u17-quarter-hour",
+        "obj-u19-probability",
         "obj-u18-comparison",
         "obj-u18-relative",
         "obj-u19-conditional",
@@ -771,6 +775,8 @@ internal object V2Validator {
         7 to listOf(
             RequiredSourceCapability("obj-u7-adverb", "adverb-form-gloss"),
             RequiredSourceCapability("obj-u7-adverb", "adverb-paradigm"),
+            RequiredSourceCapability("obj-u7-adverb-invariance", "adverb-invariance"),
+            RequiredSourceCapability("obj-u7-adverb-pairs", "adverb-bounded-pairs"),
         ),
         16 to listOf(
             RequiredSourceCapability("obj-u16-complements", "instrumental-complements"),
@@ -782,6 +788,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u17-clock", "clock-question"),
             RequiredSourceCapability("obj-u17-clock-answers", "clock-expression-recognition"),
             RequiredSourceCapability("obj-u17-clock-answers", "productive-clock-time"),
+            RequiredSourceCapability("obj-u17-quarter-hour", "productive-quarter-hour-time"),
             RequiredSourceCapability("obj-u17-calendar-date", "calendar-date"),
         ),
         18 to listOf(
@@ -963,6 +970,21 @@ internal object V2Validator {
         if (capability.supportedClaim == "productive-clock-time" && !admittedProductiveClockTime(capability)) {
             errors += "Source capability ${capability.id} has no independent productive-clock-time admission"
         }
+        if (capability.supportedClaim == "adverb-paradigm" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_PARADIGM, "adverb-paradigm")) {
+            errors += "Source capability ${capability.id} has no independent adverb-paradigm admission"
+        }
+        if (capability.supportedClaim == "adverb-invariance" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_INVARIANCE, "adverb-invariance")) {
+            errors += "Source capability ${capability.id} has no independent adverb-invariance admission"
+        }
+        if (capability.supportedClaim == "adverb-bounded-pairs" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_BOUNDED_PAIRS, "adverb-bounded-pairs")) {
+            errors += "Source capability ${capability.id} has no independent adverb-bounded-pairs admission"
+        }
+        if (capability.supportedClaim == "productive-quarter-hour-time" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_QUARTER_HOUR, "productive-quarter-hour-time")) {
+            errors += "Source capability ${capability.id} has no independent productive-quarter-hour-time admission"
+        }
+        if (capability.supportedClaim == "probability-dolzhen" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_PROBABILITY_DOLZHEN, "probability-dolzhen")) {
+            errors += "Source capability ${capability.id} has no independent probability-dolzhen admission"
+        }
         if (
             capability.sourceId.isBlank() ||
             capability.sourceRevision.isBlank() ||
@@ -997,8 +1019,22 @@ internal object V2Validator {
         if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == ExplicitSourcePairs.adverbSpan) {
             errors += "Source capability ${capability.id} bounded form/gloss recognition does not clear adverb-paradigm"
         }
+        if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == BatchARemainingSources.INVARIANCE_SPAN) {
+            errors += "Source capability ${capability.id} bounded invariance evidence does not clear adverb-paradigm"
+        }
+        if (capability.supportedClaim == "adverb-paradigm" &&
+            (capability.exactSpan == BatchARemainingSources.INVARIANCE_SPAN || capability.exactSpan == BatchARemainingSources.SUFFIXAL_SPAN)
+        ) {
+            errors += "Source capability ${capability.id} bounded adverb pairs do not clear adverb-paradigm"
+        }
         if (capability.supportedClaim == "productive-clock-time" && capability.exactSpan == ExplicitSourcePairs.clockSpan) {
             errors += "Source capability ${capability.id} bounded clock phrases do not clear productive-clock-time"
+        }
+        if (capability.supportedClaim == "productive-clock-time" && capability.exactSpan == BatchARemainingSources.QUARTER_SPAN) {
+            errors += "Source capability ${capability.id} quarter-hour patterns do not clear productive-clock-time"
+        }
+        if (capability.supportedClaim == "probability-dolzhen" && capability.exactSpan == BatchARemainingSources.OBLIGATION_EXAMPLE_SPAN) {
+            errors += "Source capability ${capability.id} obligation evidence does not clear probability-dolzhen"
         }
         if (capability.unitNumber in 26..30) {
             if (STRUCTURAL_PAGE_RANGE.matches(capability.exactSpan.trim())) {
@@ -1315,6 +1351,7 @@ internal object V2Validator {
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
         "EXPLICIT_PARENTHETICAL_GLOSS",
         "EXPLICIT_SOURCE_PAIR",
+        "GOVERNED_SENSE_CONTRAST",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1424,6 +1461,12 @@ internal object V2Validator {
     private fun displayedInFrozen(record: V2ProvenanceRecord): Boolean {
         val original = record.originalSourceText
         val shipped = record.shippedText
+        if (record.transformation == "wiktionary template selection") {
+            return shipped.isNotEmpty() && shipped in BatchARemainingSources.unfoldWiktionary(original)
+        }
+        if (record.transformation == "pressbooks markup selection") {
+            return shipped.isNotEmpty() && shipped in BatchARemainingSources.htmlVisible(original)
+        }
         if (shipped.isNotEmpty() && (shipped in original || foldGoverned(shipped) in foldGoverned(original))) return true
         val folded = foldGoverned(shipped)
         if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
@@ -1621,11 +1664,76 @@ internal object V2Validator {
         return ""
     }
 
+    /**
+     * Null means the records are not on an admitted Batch A remaining span.
+     * An empty string means that span forbids the proposed relationship.
+     * Co-occurrence on the span is not a relationship.
+     */
+    private fun governedRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val group = listOf(cue, answer) + distractors
+        if (
+            distractors.size == 1 &&
+            cue.shippedText == BatchARemainingSources.LIKELIHOOD_SENSE &&
+            answer.shippedText == BatchARemainingSources.LIKELIHOOD_RUSSIAN &&
+            distractors[0].shippedText == BatchARemainingSources.OBLIGATION_RUSSIAN &&
+            cue.originalSourceText == BatchARemainingSources.LIKELIHOOD_SPAN &&
+            answer.originalSourceText == BatchARemainingSources.LIKELIHOOD_SPAN &&
+            distractors[0].originalSourceText == BatchARemainingSources.OBLIGATION_EXAMPLE_SPAN &&
+            cue.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE &&
+            answer.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE &&
+            distractors[0].sourceId == BatchARemainingSources.WIKTIONARY_SOURCE &&
+            cue.sourceRevision == BatchARemainingSources.WIKTIONARY_REVISION &&
+            answer.sourceRevision == BatchARemainingSources.WIKTIONARY_REVISION &&
+            distractors[0].sourceRevision == BatchARemainingSources.WIKTIONARY_REVISION &&
+            sameFrozenSpan(cue, answer) &&
+            !sameFrozenSpan(cue, distractors[0]) &&
+            group.all { displayedInFrozen(it) }
+        ) {
+            return "GOVERNED_SENSE_CONTRAST"
+        }
+        if (cue.originalSourceText == BatchARemainingSources.INVARIANCE_SPAN) {
+            val wording = BatchARemainingSources.dashColonWording(cue.originalSourceText)
+            val shown = cue.originalSourceText.substringBefore('\u2014').trim()
+            if (
+                wording != null &&
+                cue.shippedText == shown &&
+                answer.shippedText == wording &&
+                cue.shippedText != answer.shippedText &&
+                group.all { sameFrozenSpan(cue, it) } &&
+                group.all { displayedInFrozen(it) } &&
+                distractors.all { it.shippedText != wording }
+            ) {
+                return "EXPLICIT_SOURCE_PAIR"
+            }
+            return ""
+        }
+        val table = BatchARemainingSources.GOVERNED_GLOSSES[cue.originalSourceText] ?: return null
+        val allowed = table[cue.shippedText]
+        if (
+            allowed != null &&
+            answer.shippedText in allowed &&
+            cue.shippedText != answer.shippedText &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_SOURCE_PAIR"
+        }
+        return ""
+    }
+
     internal fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val governed = governedRelation(cue, answer, distractors)
+        if (governed == "") return null
+        if (governed != null) return governed
         val parenthetical = parentheticalDecision(cue, answer, distractors)
         if (parenthetical == "") return null
         if (parenthetical != null) return parenthetical
@@ -2038,9 +2146,55 @@ internal object V2Validator {
         }
     }
 
+    /**
+     * The invariance prompt names one position in the frozen sentence.
+     * The gloss table does not make a co-occurring clause the answer.
+     */
+    private fun invarianceRelationshipErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        if (item.objectiveId != "obj-u7-adverb-invariance") return emptyList()
+        val errors = mutableListOf<String>()
+        val assessment = item.assessment
+        val why = assessment?.whyAnswerDemonstratesObjective.orEmpty()
+        if (
+            !item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION) ||
+            !why.contains(BatchARemainingSources.INVARIANCE_DASH_LINE) ||
+            !item.feedback.contains(BatchARemainingSources.INVARIANCE_DASH_LINE)
+        ) {
+            errors += "Item ${item.id} precise dash-colon relationship wording is missing"
+        }
+        val cueId = assessment?.relationParticipantIds?.firstOrNull()
+        val cue = cueId?.let { id -> pack.provenanceRecords.firstOrNull { it.itemId == id } }
+        val span = cue?.originalSourceText ?: BatchARemainingSources.INVARIANCE_SPAN
+        val wording = BatchARemainingSources.dashColonWording(span)
+        if (wording == null || item.answer != wording || item.options.count { it == wording } != 1) {
+            errors += "Item ${item.id} answer is not the wording immediately after the dash and before the colon"
+        }
+        val colon = span.indexOf(':')
+        if (wording != null && item.answer != wording && colon >= 0 && span.indexOf(item.answer, colon) >= 0) {
+            errors += "Item ${item.id} answer co-occurs after the colon and does not satisfy the dash-colon relationship"
+        }
+        if (assessment != null) {
+            item.options.forEachIndexed { index, option ->
+                if (option == item.answer) return@forEachIndexed
+                val continuation = BatchARemainingSources.INVARIANCE_POST_COLON[option] ?: return@forEachIndexed
+                val rationale = item.distractorRationales.getOrElse(index) { "" }
+                val difference = assessment.distractorDifference.getOrElse(index) { "" }
+                if (
+                    !rationale.contains(continuation) ||
+                    !difference.contains(continuation) ||
+                    !rationale.contains("after the colon")
+                ) {
+                    errors += "Item ${item.id} distractor rationale does not explain the post-colon position"
+                }
+            }
+        }
+        return errors
+    }
+
     private fun explicitTargetErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
-        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
+        errors += invarianceRelationshipErrors(pack, item)
+        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target") + errors
         val feature = assessment.testedFeature
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
         if (unitNumber in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
@@ -2604,6 +2758,37 @@ internal object V2Validator {
                     errors += "Provenance ${record.itemId} Wikibooks license route is missing"
                 }
             }
+            if (record.sourceId.startsWith("src-ruwiki-")) {
+                val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
+                if (record.sourceRevision != BatchARemainingSources.RU_REVISION ||
+                    !record.sourceUrl.contains("oldid=${BatchARemainingSources.RU_REVISION}") ||
+                    !record.attribution.contains(copyright) ||
+                    !record.attribution.contains("CC BY-SA 4.0") ||
+                    record.attribution.contains("Wikipedia:Copyrights") ||
+                    record.attribution.contains("Wiktionary:Copyrights") ||
+                    record.attribution.contains("Wikibooks:Copyrights") ||
+                    record.audioAssetId != null
+                ) {
+                    errors += "Provenance ${record.itemId} Russian Wikipedia license route is missing"
+                }
+            }
+            if (record.sourceId.startsWith("src-enwiktionary-") && !admittedWiktionaryProvenance(record)) {
+                errors += "Provenance ${record.itemId} Wiktionary license route is missing"
+            }
+            if (record.sourceId.startsWith("src-pressbooks-")) {
+                if (record.sourceRevision != BatchARemainingSources.PRESSBOOKS_REVISION ||
+                    !record.attribution.contains(BatchARemainingSources.PRESSBOOKS_REVISION) ||
+                    !record.attribution.contains("Anna Tumarkin") ||
+                    !record.attribution.contains("Shannon Donnally Quinn") ||
+                    !record.attribution.contains("CC BY-SA 4.0") ||
+                    record.attribution.contains("Wikipedia:Copyrights") ||
+                    record.attribution.contains("Wiktionary:Copyrights") ||
+                    record.attribution.contains("Wikibooks:Copyrights") ||
+                    record.audioAssetId != null
+                ) {
+                    errors += "Provenance ${record.itemId} Pressbooks license route is missing"
+                }
+            }
             if (isExcludedProvenance(record)) {
                 errors += "Provenance ${record.itemId} excluded source cannot enter the seed"
             }
@@ -2803,11 +2988,30 @@ internal object V2Validator {
         return license == "CC BY-SA 4.0"
     }
 
+    private fun admittedWiktionaryProvenance(record: V2ProvenanceRecord): Boolean {
+        if (record.sourceId != BatchARemainingSources.WIKTIONARY_SOURCE) return false
+        if (record.sourceRevision != BatchARemainingSources.WIKTIONARY_REVISION) return false
+        val url = record.sourceUrl
+        if (!url.contains("en.wiktionary.org") || !url.contains("oldid=${BatchARemainingSources.WIKTIONARY_REVISION}")) return false
+        if (!record.attribution.contains("Wiktionary:Copyrights oldid ${BatchARemainingSources.WIKTIONARY_COPYRIGHT_OLDID}")) return false
+        if (record.attribution.contains("Wikipedia:Copyrights") || record.attribution.contains("Wikibooks:Copyrights")) return false
+        if (record.audioAssetId != null) return false
+        if (!isShareAlikeLicense(record.licenseId)) return false
+        if (record.originalSourceText.contains(".ogg") || record.shippedText.contains(".ogg") || url.contains(".ogg")) return false
+        return true
+    }
+
     private fun isExcludedSource(vararg parts: String): Boolean {
-        return parts.any { part -> excludedSourceToken(part) }
+        return parts.any { part ->
+            if (part == BatchARemainingSources.WIKTIONARY_SOURCE) false
+            else excludedSourceToken(part)
+        }
     }
 
     private fun isExcludedProvenance(record: V2ProvenanceRecord): Boolean {
+        if (record.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE) {
+            return !admittedWiktionaryProvenance(record)
+        }
         val haystack = "${record.sourceId} ${record.sourceUrl} ${record.licenseId}"
         if (!excludedSourceToken(haystack)) return false
         val value = haystack.lowercase()

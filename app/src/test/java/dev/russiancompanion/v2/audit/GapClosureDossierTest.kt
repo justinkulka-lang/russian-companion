@@ -59,8 +59,8 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(7, 17, 19) + (21..30).toList(), contentUnits)
-        assertEquals(13, contentUnits.size)
+        assertEquals(listOf(7, 17) + (21..30).toList(), contentUnits)
+        assertEquals(12, contentUnits.size)
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -124,7 +124,7 @@ class GapClosureDossierTest {
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
         assertEquals(
-            listOf("probability-dolzhen"),
+            emptyList<String>(),
             headings.filter { it.unitNumber == 19 }.map { it.claim },
         )
         assertTrue(text.contains("0f0744dfeb76433fddb5604a065c92427c54848a"))
@@ -186,6 +186,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "453b0114248b7fcfce55087ab9a63c54675212ba"
+        const val BASELINE_COMMIT = "1e469c124966401a54f9a3da0d52606c1afd6ea2"
     }
 }

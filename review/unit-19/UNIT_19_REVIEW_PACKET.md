@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 19 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 19 remains in development. Its readiness is content-complete and review-pending. The Lesson 19 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 453b0114248b7fcfce55087ab9a63c54675212ba
-- Unit content-review SHA-256: 7daabf2fa0295a3f54d1b38603d57d1b888555c2ca2b5d04af25af5b09654d73
+- Curriculum source commit: 1e469c124966401a54f9a3da0d52606c1afd6ea2
+- Unit content-review SHA-256: 75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
-- Review-package SHA-256: 9e5cf8438e90950d1b26809f5b9e794c7ad36e4477ca10f48a7c732c0c6ccb9d
-- Repository source SHA-256: 38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145
+- Pack content-review SHA-256: ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9
+- Review-package SHA-256: 33520ee92b729bbb19bdcd40526a8b8572bb57aa3983d99c7e6a5bfb523e378f
+- Repository source SHA-256: 6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=19
 title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
-topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 19 is in development. Admitted prefix cautions, conditional lines, obligation lines, and the admitted likelihood example await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 19, printed pages 230-239. Independently stated topic scope: Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=19
 prerequisites=18
-estimatedMinutes=58
+estimatedMinutes=66
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 19.
 
 ### UNIT `unit-19`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book, obj-u19-probability
-- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-book, u19-s-gap-probability
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-probability, obj-u19-book
+- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-probability, u19-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3f8a47b3c9e8e9f4295b173e46928446ed0a739b679d50691dc607d3ca94ae4b
+- Content hash: 6c3e9080ce4ded8764414511e64eac9b446abc3cf5ee21b4ac2fb9a16c3fc67f
 
 number=19
 title=Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
-topicSummary=Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 19 is in development. Admitted prefix cautions, conditional lines, obligation lines, and the admitted likelihood example await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 19, printed pages 230-239. Independently stated topic scope: Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=19
 prerequisites=18
-estimatedMinutes=58
+estimatedMinutes=66
 
 ### ADVANCEMENT `unit-19-advancement`
 
@@ -162,6 +162,25 @@ practice=u19-st-guided-obligation-1
 checks=u19-i-obligation-1,u19-i-obligation-2
 remediation=u19-st-rem-obligation
 
+### OBJECTIVE `obj-u19-probability`
+
+- Objectives: obj-u19-probability
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3a69b9c8eba335e9caf204b3d6bbef94f0c9d37dbd44b6d90e739d5971ce3c5d
+
+title=Admitted likelihood example
+kind=RECOGNITION
+unitNumber=19
+instruction=u19-st-orient,u19-st-teach-probability-1,u19-st-teach-probability-2
+examples=ex-u19-probability-0,ex-u19-probability-1
+practice=u19-st-guided-probability-1
+checks=u19-i-probability-1,u19-i-probability-2
+remediation=u19-st-rem-probability
+
 ### OBJECTIVE `obj-u19-book`
 
 - Objectives: obj-u19-book
@@ -181,53 +200,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u19-probability`
-
-- Objectives: obj-u19-probability
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 08319a08f819323ae3089b9fcafc24794937848a9375dd68b9c4c3ec820e0927
-
-title=Probability stays in the copy you own
-kind=GUIDANCE
-unitNumber=19
-instruction=u19-st-gap-probability
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u19-s-orient`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-probability, obj-u19-book
 - Sessions: u19-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b09ebd559bbbe1403e7a98109aa5559aa4b05c2e58ec0e0c0e28bbc05037fb01
+- Content hash: 603d53bc8b0c67fb81d853be69d9de78ceec8d56bcd7f21b03f499ebb29fd73c
 
 title=Admitted prefix cautions
 estimatedMinutes=8
-objectives=obj-u19-prefix-caution,obj-u19-conditional,obj-u19-obligation,obj-u19-book
+objectives=obj-u19-prefix-caution,obj-u19-conditional,obj-u19-obligation,obj-u19-probability,obj-u19-book
 steps=u19-st-orient
 
 ### STEP `u19-st-orient`
 
-- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-book
+- Objectives: obj-u19-prefix-caution, obj-u19-conditional, obj-u19-obligation, obj-u19-probability, obj-u19-book
 - Sessions: u19-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b283e4488de3eed3624ffcebe6e1440b546ef8a3aa6570f36ebd8c09c0eafb46
+- Content hash: 03fe568a87976ab91a1600e035bafd1f0e08b5c3bc380f917684d2292388914e
 
 kind=ORIENT
 title=Admitted prefix cautions
-body=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
+body=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -678,6 +678,131 @@ bookDirection=
 companionDirection=
 remediationStepId=u19-st-rem-obligation
 
+### SESSION `u19-s-probability`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e5045523013ecc5b39ecaec785ce060d5901fcf0802ccbd55f2ea6f018b8ec1a
+
+title=Admitted likelihood example
+estimatedMinutes=12
+objectives=obj-u19-probability
+steps=u19-st-teach-probability-1,u19-st-guided-probability-1,u19-st-teach-probability-2,u19-st-rem-probability,u19-st-check-probability
+
+### STEP `u19-st-teach-probability-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d4a54b73cce20031645c37865508bfb18eda3642c95a2521bcaaabdc01cc6b20
+
+kind=TEACH
+title=Admitted lines
+body=Затме́ние должно́ наступи́ть в три часа́. — The eclipse should occur at three o'clock. Слу́жащие должны́ во́время явля́ться на рабо́ту. — Employees must report to work on time. 
+dominantAction=Continue
+references=ref-u19-wiktionary-attribution
+items=
+examples=ex-u19-probability-0,ex-u19-probability-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-guided-probability-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2331846008e830f7132b3c0e9f02277a582e5665f6452e086ba675643426f036
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u19-g-probability-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-probability
+
+### STEP `u19-st-teach-probability-2`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f728523da41d1997950d697c535454d243c1d8cdc6163cfc56ac2b90f32461ce
+
+kind=TEACH
+title=Admitted instruction
+body=(with a verb) Used to express likelihood. Usually translated as "should".
+dominantAction=Continue
+references=ref-u19-wiktionary-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-rem-probability`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d33bc356849c58f69218b8e80ed17ba1ab3e35241f91f99c91db14276cea142a
+
+kind=REMEDIATE
+title=Remediation
+body=(with a verb) Used to express likelihood. Usually translated as "should".
+dominantAction=Continue
+references=
+items=
+examples=ex-u19-probability-0,ex-u19-probability-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u19-st-check-probability`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1d95402c664c132a13f5a06d68df535f8d38a69dc76a1f0ce9728e2f3d493393
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u19-i-probability-1,u19-i-probability-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u19-st-rem-probability
+
 ### SESSION `u19-s-book`
 
 - Objectives: obj-u19-book
@@ -734,43 +859,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 19 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u19-s-gap-probability`
-
-- Objectives: obj-u19-probability
-- Sessions: u19-s-gap-probability
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: af6ff33cc46f52ca4c256c40f012b9f0cbbd851233be2e51b7fd677a1880e2b5
-
-title=Probability stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u19-probability
-steps=u19-st-gap-probability
-
-### STEP `u19-st-gap-probability`
-
-- Objectives: obj-u19-probability
-- Sessions: u19-s-gap-probability
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c235a17ce399da2cb8e9131db04670854d19379675978261e65618b3adba7fb2
-
-kind=UNAVAILABLE
-title=Probability stays in the copy you own
-body=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.
-dominantAction=Continue
-references=ref-u1620-attribution
-items=
-examples=
-unavailableReason=Probability use has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -978,6 +1066,40 @@ note=If the subject is plural
 objectiveId=obj-u19-obligation
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u19-probability-0`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3567d424b88cfeffcadeb9ac87312e06407a4dbec285c97ab0678114d09d9d41
+
+kind=LEXICAL
+letterId=
+display=Затме́ние должно́ наступи́ть в три часа́.
+note=The eclipse should occur at three o'clock.
+objectiveId=obj-u19-probability
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u19-probability-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 514ac0d00e89e8213851c055e6cf3d23e41c1c73f5294d4bc948aeabb4bf74b3
+
+kind=LEXICAL
+letterId=
+display=Слу́жащие должны́ во́время явля́ться на рабо́ту.
+note=Employees must report to work on time.
+objectiveId=obj-u19-probability
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u19-g-prefix-caution-0`
 
 - Objectives: obj-u19-prefix-caution
@@ -1082,6 +1204,41 @@ contrastMembers=I have to | If the subject is feminine | If the subject is plura
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-obligation-0-ru | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en | prov-ex-u19-obligation-3-en
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u19-g-probability-0`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f5cf6b59b60d4add7369bc2f5b01085a14f21194504dcff80ce9c599a58b2634
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which displayed example expresses likelihood?
+promptLetter=(with a verb) Used to express likelihood. Usually translated as "should".
+options=Затме́ние должно́ наступи́ть в три часа́. | Слу́жащие должны́ во́время явля́ться на рабо́ту.
+answer=Затме́ние должно́ наступи́ть в три часа́.
+feedback=(with a verb) Used to express likelihood. Usually translated as "should". Затме́ние должно́ наступи́ть в три часа́.
+objectiveId=obj-u19-probability
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Слу́жащие должны́ во́время явля́ться на рабо́ту." with the admitted gloss "Employees must report to work on time.".
+testedFeature=LIKELIHOOD_EXAMPLE
+evidenceMode=GOVERNED_SENSE_CONTRAST
+contrastSetId=u19-probability-0
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-ex-u19-probability-0-ru
+distractorSourceIds= | prov-ex-u19-probability-1-ru
+distractorDifference= | The frozen source pairs the shown form "Слу́жащие должны́ во́время явля́ться на рабо́ту." with the admitted gloss "Employees must report to work on time.".
+whyAnswerDemonstratesObjective=(with a verb) Used to express likelihood. Usually translated as "should". Затме́ние должно́ наступи́ть в три часа́.
+contrastMembers=Затме́ние должно́ наступи́ть в три часа́. | Слу́жащие должны́ во́время явля́ться на рабо́ту.
+relationKind=GOVERNED_SENSE_CONTRAST
+relationParticipantIds=prov-u19-probability-rem | prov-ex-u19-probability-0-ru | prov-ex-u19-probability-1-ru
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u19-i-prefix-caution-1`
 
@@ -1293,15 +1450,85 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u19-obligation-3-ru | prov-ex-u19-obligation-3-en | prov-ex-u19-obligation-0-en | prov-ex-u19-obligation-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u19-i-probability-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 73134692fad7b5420a2a0e6f70ea066c62ccf66640260fd595813a365d47ca37
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Затме́ние должно́ наступи́ть в три часа́.
+options=The eclipse should occur at three o'clock. | (with a verb) Used to express likelihood. Usually translated as "should".
+answer=The eclipse should occur at three o'clock.
+feedback=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
+objectiveId=obj-u19-probability
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | (with a verb) Used to express likelihood. Usually translated as "should".
+testedFeature=LIKELIHOOD_GLOSS
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u19-probability-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-probability-0-en
+distractorSourceIds= | prov-u19-probability-rem
+distractorDifference= | (with a verb) Used to express likelihood. Usually translated as "should".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
+contrastMembers=The eclipse should occur at three o'clock. | (with a verb) Used to express likelihood. Usually translated as "should".
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u19-probability-0-ru | prov-ex-u19-probability-0-en | prov-u19-probability-rem
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u19-i-probability-2`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5dc7cf517df033c31cb20cfd4600fd51d56e008d461af763ec532761e696a912
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Затме́ние должно́ наступи́ть в три часа́.
+options=The eclipse should occur at three o'clock. | (with a verb)
+answer=The eclipse should occur at three o'clock.
+feedback=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
+objectiveId=obj-u19-probability
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | (with a verb)
+testedFeature=LIKELIHOOD_GLOSS_LABEL
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u19-probability-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u19-probability-0-en
+distractorSourceIds= | prov-u19-probability-x-1
+distractorDifference= | (with a verb)
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Затме́ние должно́ наступи́ть в три часа́." with the admitted gloss "The eclipse should occur at three o'clock.".
+contrastMembers=The eclipse should occur at three o'clock. | (with a verb)
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u19-probability-0-ru | prov-ex-u19-probability-0-en | prov-u19-probability-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u1620-attribution`
 
 - Objectives: none
-- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-book, u19-s-gap-probability
+- Sessions: u19-s-orient, u19-s-prefix-caution, u19-s-conditional, u19-s-obligation, u19-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: ed10d08ea275d7d862e82e904c8d9a13b28aa682d62519068c9115957653a63e
+- Content hash: 23d8e5b2129b32efb5548451cd2e25e12c9823995826197ac237b8d7aba8a9e6
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
@@ -1309,6 +1536,24 @@ detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
+reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-u19-wiktionary-attribution`
+
+- Objectives: none
+- Sessions: u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: LICENSE_OR_ATTRIBUTION
+- Current review status: NOT_REQUIRED
+- Content hash: a68a39bfe13557b40dad3212eb8db1a9c505ef0b111cb3892f5c5ed0f2f15355
+
+title=Unit 19 Wiktionary notice
+summary=The likelihood example adapts one frozen English Wiktionary revision.
+detail=The likelihood sense and example are frozen at English Wiktionary oldid 84965088 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. That license route is not a Wikipedia, Wikibooks, Pressbooks, or OpenRussian route. Audio from the entry is not admitted. Review is pending.
+classification=LICENSE_OR_ATTRIBUTION
+introducedInUnit=19
+searchTerms=unit 19 wiktionary notice
 reviewStatus=NOT_REQUIRED
 
 ### PROVENANCE `prov-ex-u19-conditional-0-en`
@@ -2055,6 +2300,126 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u19-probability-0-en`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bcf09de1242a44ba2c8ae162016ec0c3fc1c7dfae876688ecfbdc7e99560ed3d
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra
+originalSourceText=# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as "[[should]]".}}
+#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}
+#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}
+shippedText=The eclipse should occur at three o'clock.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28
+contentHash=7eb301625974b7cc744cb2786b42981024b2daa4c2fa92a5957364f8dacc343a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-probability-0-ru`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 853b416e531f2c7fbd386158bd20daedddc3852b677638ed845e052f5c88e9a0
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra
+originalSourceText=# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as "[[should]]".}}
+#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}
+#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}
+shippedText=Затме́ние должно́ наступи́ть в три часа́.
+transformation=wiktionary template selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28
+contentHash=37b6811b750257227ec392249893ba83267426f9eda15e25ba0e66b7d7ea5c8c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-probability-1-en`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 06fc027a0a7d46c278d80b59cf7d1f84867fc20411b59214eccfe74332b5701a
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на
+originalSourceText=#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must report to work on time.}}
+shippedText=Employees must report to work on time.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c85fa5b76eb396c933badc1667ed82b7150428a3203acabd224fa81f8eb2ce04
+contentHash=61aef756a74fc75be2a61532578e8782ba90548125c34e29b93a34e9b5534767
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u19-probability-1-ru`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3dcba441505f0e386c978b4899c17719c3496b3b706274efa86aa9eb8940c0a7
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на
+originalSourceText=#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must report to work on time.}}
+shippedText=Слу́жащие должны́ во́время явля́ться на рабо́ту.
+transformation=wiktionary template selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c85fa5b76eb396c933badc1667ed82b7150428a3203acabd224fa81f8eb2ce04
+contentHash=5658954536672669d3a241990de0315262de6b1b8ecdac50e66c350e1409fd4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u19-conditional-rem`
 
 - Objectives: obj-u19-conditional
@@ -2531,6 +2896,99 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u19-probability-rem`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5b76a3de9a9e533e1c2d9165f607b848fe455812cf09b2af1429f65686635379
+
+recordType=instruction
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra
+originalSourceText=# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as "[[should]]".}}
+#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}
+#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}
+shippedText=(with a verb) Used to express likelihood. Usually translated as "should".
+transformation=wiktionary template selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28
+contentHash=8a8e8401cacd4be2ae27af5daa6c39658e28b9b81d44310d12e46aaa616f5e5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-probability-x-0`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e7026f1e43695ff5473c493fb75b5c749599d030e5ccac2b70454f63cefa30df
+
+recordType=label
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra
+originalSourceText=# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as "[[should]]".}}
+#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}
+#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}
+shippedText=(with a verb) Used to express likelihood. Usually translated as "should".
+transformation=wiktionary template selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28
+contentHash=8a8e8401cacd4be2ae27af5daa6c39658e28b9b81d44310d12e46aaa616f5e5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u19-probability-x-1`
+
+- Objectives: obj-u19-probability
+- Sessions: u19-s-orient, u19-s-probability
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2cecf8a465b85a5bc33117dedc638cfca2a8011606944ef61b1a1259a6cdb0d5
+
+recordType=label
+sourceUrl=https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088
+sourceRevision=84965088
+sourceRecordId=wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra
+originalSourceText=# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as "[[should]]".}}
+#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}
+#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}
+shippedText=(with a verb)
+transformation=wiktionary template selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28
+contentHash=cea83dd5a43031311ed3cd9e159da6ba3b98096f6394fc4aa981941a07f803d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### AUTHORED_ENGLISH `en-u19-131`
 
 - Objectives: none
@@ -2726,19 +3184,6 @@ text=Which admitted English gloss is written beside the shown form?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted prefix cautions
 
-### AUTHORED_ENGLISH `en-u19-146`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2c9701e5c8fe1e7cf3bc5564cec813f9a1ff0feb8698b47fc1405e4f914e30b7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.
-
 ### AUTHORED_ENGLISH `en-u19-147`
 
 - Objectives: none
@@ -2895,7 +3340,7 @@ text=When you have done Lesson 19 in your copy, self-attest here. Attestation re
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 19 work in your copy.
 
-### AUTHORED_ENGLISH `en-u19-159`
+### AUTHORED_ENGLISH `en-u19-181`
 
 - Objectives: none
 - Sessions: none
@@ -2903,12 +3348,12 @@ text=Self-attest only after the Lesson 19 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdaf5b58fc9ba0f4c1ce491052d866c3725184b12de5b3aa74ff27fdd7864997
+- Content hash: 02bbd665df7487b97968b4ec475c5f316265702514c8e2941092f0b276b2119b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Probability stays in the copy you own
+text=Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.
 
-### AUTHORED_ENGLISH `en-u19-160`
+### AUTHORED_ENGLISH `en-u19-182`
 
 - Objectives: none
 - Sessions: none
@@ -2916,10 +3361,10 @@ text=Probability stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 13bf301b7b654e266dea7b7b47a2bd2a50ad7e14f3edf078096787d7c100251a
+- Content hash: 8f88044f98a2afad3322be43d700f1b2c3a5913c31f5a26b0d0c2a7df6cb5b4e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.
+text=Which displayed example expresses likelihood?
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -2949,6 +3394,21 @@ Selected excerpts. Russian quotations are unchanged. English claims are quoted, 
 Russian grammar
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-enwiktionary-dolzhen-84965088`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ddee2c49a9f58a2641b66660c67ff7fde012c0f35e4f3bfe860ec637d2add92a
+
+должен
+CC BY-SA 4.0
+Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -2991,6 +3451,20 @@ permitsAppUse=true
 - Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
 
 src-wikipedia-russian-grammar-1369617627
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-enwiktionary-dolzhen-84965088`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-dolzhen-84965088
+- Rights: rights-enwiktionary-dolzhen-84965088
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d618d764c6b3f3187804b62d756a919ecc9f6b351a70524e233f288c166cc74e
+
+src-enwiktionary-dolzhen-84965088
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -3046,12 +3520,21 @@ permitsAppUse=true
 - `obj-u19-obligation` CHECK `u19-i-obligation-1`
 - `obj-u19-obligation` CHECK `u19-i-obligation-2`
 - `obj-u19-obligation` REMEDIATION `u19-st-rem-obligation`
+- `obj-u19-probability` INSTRUCTION `u19-st-orient`
+- `obj-u19-probability` INSTRUCTION `u19-st-teach-probability-1`
+- `obj-u19-probability` INSTRUCTION `u19-st-teach-probability-2`
+- `obj-u19-probability` EXAMPLE `ex-u19-probability-0`
+- `obj-u19-probability` EXAMPLE `ex-u19-probability-1`
+- `obj-u19-probability` PRACTICE `u19-st-guided-probability-1`
+- `obj-u19-probability` CHECK `u19-i-probability-1`
+- `obj-u19-probability` CHECK `u19-i-probability-2`
+- `obj-u19-probability` REMEDIATION `u19-st-rem-probability`
 - `obj-u19-book` INSTRUCTION `u19-st-book-work`
 - `obj-u19-book` INSTRUCTION `u19-st-book`
-- `obj-u19-probability` INSTRUCTION `u19-st-gap-probability`
 - `u19-s-orient` OBJECTIVE `obj-u19-prefix-caution`
 - `u19-s-orient` OBJECTIVE `obj-u19-conditional`
 - `u19-s-orient` OBJECTIVE `obj-u19-obligation`
+- `u19-s-orient` OBJECTIVE `obj-u19-probability`
 - `u19-s-orient` OBJECTIVE `obj-u19-book`
 - `u19-st-orient` REFERENCE `ref-u1620-attribution`
 - `u19-s-prefix-caution` OBJECTIVE `obj-u19-prefix-caution`
@@ -3099,10 +3582,20 @@ permitsAppUse=true
 - `u19-st-check-obligation` REMEDIATION `u19-st-rem-obligation`
 - `u19-st-check-obligation` ITEM `u19-i-obligation-1`
 - `u19-st-check-obligation` ITEM `u19-i-obligation-2`
+- `u19-s-probability` OBJECTIVE `obj-u19-probability`
+- `u19-st-teach-probability-1` EXAMPLE `ex-u19-probability-0`
+- `u19-st-teach-probability-1` EXAMPLE `ex-u19-probability-1`
+- `u19-st-teach-probability-1` REFERENCE `ref-u19-wiktionary-attribution`
+- `u19-st-guided-probability-1` REMEDIATION `u19-st-rem-probability`
+- `u19-st-guided-probability-1` ITEM `u19-g-probability-0`
+- `u19-st-teach-probability-2` REFERENCE `ref-u19-wiktionary-attribution`
+- `u19-st-rem-probability` EXAMPLE `ex-u19-probability-0`
+- `u19-st-rem-probability` EXAMPLE `ex-u19-probability-1`
+- `u19-st-check-probability` REMEDIATION `u19-st-rem-probability`
+- `u19-st-check-probability` ITEM `u19-i-probability-1`
+- `u19-st-check-probability` ITEM `u19-i-probability-2`
 - `u19-s-book` OBJECTIVE `obj-u19-book`
 - `u19-st-book-work` REFERENCE `ref-u1620-attribution`
-- `u19-s-gap-probability` OBJECTIVE `obj-u19-probability`
-- `u19-st-gap-probability` REFERENCE `ref-u1620-attribution`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-en`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-0-ru`
 - `obj-u19-conditional` PROVENANCE `prov-ex-u19-conditional-1-en`
@@ -3127,6 +3620,10 @@ permitsAppUse=true
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-2-ru`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-3-en`
 - `obj-u19-prefix-caution` PROVENANCE `prov-ex-u19-prefix-caution-3-ru`
+- `obj-u19-probability` PROVENANCE `prov-ex-u19-probability-0-en`
+- `obj-u19-probability` PROVENANCE `prov-ex-u19-probability-0-ru`
+- `obj-u19-probability` PROVENANCE `prov-ex-u19-probability-1-en`
+- `obj-u19-probability` PROVENANCE `prov-ex-u19-probability-1-ru`
 - `obj-u19-conditional` PROVENANCE `prov-u19-conditional-rem`
 - `obj-u19-obligation` PROVENANCE `prov-u19-obligation-rem`
 - `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-0`
@@ -3143,6 +3640,9 @@ permitsAppUse=true
 - `obj-u19-obligation` PROVENANCE `prov-u19-obligation-x-5`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-rem`
 - `obj-u19-prefix-caution` PROVENANCE `prov-u19-prefix-caution-x-0`
+- `obj-u19-probability` PROVENANCE `prov-u19-probability-rem`
+- `obj-u19-probability` PROVENANCE `prov-u19-probability-x-0`
+- `obj-u19-probability` PROVENANCE `prov-u19-probability-x-1`
 
 ## Book-directed experiences
 
@@ -3152,7 +3652,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u19-st-gap-probability`
+None.
+
 
 ## Unresolved relationships
 

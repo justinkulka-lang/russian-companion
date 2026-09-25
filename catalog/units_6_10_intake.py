@@ -132,6 +132,9 @@ class FrozenSources:
         if "Creative Commons Attribution-ShareAlike 4.0" not in self.pages["copyrights"]:
             raise SystemExit("Frozen Wikibooks copyrights page does not state CC BY-SA 4.0")
         self.page_meta = {page["key"]: page for page in self.freeze["wikibooks"]["pages"]}
+        from source_transforms import load_supplemental_pages
+
+        load_supplemental_pages(self, SOURCE_ROOT)
 
     def row(self, record_id: str) -> dict:
         return self.rows[record_id]
@@ -225,10 +228,15 @@ class Builder:
         })
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
+        from source_transforms import special_transformation
+
         original = self.frozen.require(page, needle)
-        if not text_in_frozen(original, shipped):
-            raise SystemExit(f"Shipped text {shipped!r} is not in {page}")
         meta = self.frozen.page_meta[page]
+        transformation = special_transformation(meta, original, shipped)
+        if transformation is None:
+            if not text_in_frozen(original, shipped):
+                raise SystemExit(f"Shipped text {shipped!r} is not in {page}")
+            transformation = "selection"
         source_id = meta.get("sourceId", WIKIBOOKS_ID)
         source_url = meta.get("url") or (
             f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}"
@@ -237,7 +245,7 @@ class Builder:
         self.add_provenance(
             item_id, unit, objective, record_type, source_id,
             source_url,
-            self.frozen.oldid(page), page + ":" + needle[:80], original, shipped, "selection", attribution,
+            str(meta.get("oldid") or self.frozen.oldid(page)), page + ":" + needle[:80], original, shipped, transformation, attribution,
         )
         return shipped
 
@@ -661,6 +669,60 @@ class Lesson:
         return item_id
 
 
+def _append_spec(builder: Builder, unit: dict, spec: dict, reference_id: str) -> None:
+    """Add one recognition session without renumbering earlier authored ids."""
+    number = unit["number"]
+    slug = spec["slug"]
+    remediation = f"u{number}-st-rem-{slug}"
+    steps = []
+    teach_ids = []
+    guided_ids = []
+    for index, card in enumerate(spec["cards"], start=1):
+        teach = f"u{number}-st-teach-{slug}-{index}"
+        teach_ids.append(teach)
+        steps.append(_step(
+            teach, "TEACH", card["title"], card["body"],
+            example_ids=card["examples"], reference_ids=[reference_id],
+        ))
+        if card["guided"]:
+            guided_id = f"u{number}-st-guided-{slug}-{index}"
+            guided_ids.append(guided_id)
+            steps.append(_step(
+                guided_id, "GUIDED", builder.say(number, "Guided practice"),
+                builder.say(number, "Choose the admitted record. The feedback states the frozen field."),
+                item_ids=card["guided"], remediation=remediation,
+            ))
+    steps.append(_step(
+        remediation, "REMEDIATE", builder.say(number, "Remediation"),
+        spec["remediation"],
+        example_ids=spec["examples"][:2],
+    ))
+    check_id = f"u{number}-st-check-{slug}"
+    steps.append(_step(
+        check_id, "CHECK", builder.say(number, "Independent checks"),
+        builder.say(number, "These checks use only admitted records. A miss returns to the explanation."),
+        item_ids=spec["checks"], remediation=remediation,
+    ))
+    unit["sessions"].append({
+        "id": f"u{number}-s-{slug}",
+        "title": spec["title"],
+        "estimatedMinutes": 12,
+        "objectiveIds": [spec["id"]],
+        "steps": steps,
+    })
+    unit["objectives"].append({
+        "id": spec["id"],
+        "unitNumber": number,
+        "title": spec["title"],
+        "kind": "RECOGNITION",
+        "instructionStepIds": [f"u{number}-st-orient", *teach_ids],
+        "exampleIds": spec["examples"],
+        "practiceStepIds": guided_ids or [teach_ids[0]],
+        "checkItemIds": spec["checks"],
+        "remediationStepIds": [remediation],
+    })
+
+
 def build_units_6_10() -> dict:
     from units_6_10_lessons import populate
 
@@ -676,30 +738,42 @@ def build_units_6_10() -> dict:
     builder.say(7, "The frozen source pairs the shown form")
     builder.say(7, "with the admitted gloss")
     builder.say(7, "Which admitted English gloss is written beside the shown form?")
-    _append_adverb_paradigm_gap(builder, next(unit for unit in units if unit["number"] == 7))
+    from batch_a_remaining_intake import add_unit7_bounded, rights_record, source_record, unit7_reference
+
+    unit7 = next(unit for unit in units if unit["number"] == 7)
+    add_unit7_bounded(builder, unit7)
+    _append_adverb_paradigm_gap(builder, unit7)
     _assert(builder, units)
     page = next(item for item in frozen.freeze["wikibooks"]["pages"] if item["key"] == "adverb-formation")
+    ruwiki = next(item for item in frozen.freeze["supplemental"] if item["key"] == "ruwiki-narechie")
+    sources = [
+        {
+            "id": page["sourceId"],
+            "title": page["title"],
+            "license": LICENSE_ID,
+            "attribution": page["attribution"],
+            "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
+        },
+        source_record(ruwiki),
+    ]
     return {
         "units": units,
         "items": builder.items,
         "examples": builder.examples,
         "provenance": builder.provenance,
         "authored": builder.authored,
-        "references": [_attribution_reference()],
+        "references": [_attribution_reference(), unit7_reference()],
         "capabilities": [item for unit in units for item in unit["capabilities"]],
-        "sources": [{
-            "id": page["sourceId"],
-            "title": page["title"],
-            "license": LICENSE_ID,
-            "attribution": page["attribution"],
-            "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
-        }],
-        "rights": [{
-            "id": "rights-" + page["sourceId"].removeprefix("src-"),
-            "sourceId": page["sourceId"],
-            "license": LICENSE_ID,
-            "permitsAppUse": True,
-        }],
+        "sources": sources,
+        "rights": [
+            {
+                "id": "rights-" + page["sourceId"].removeprefix("src-"),
+                "sourceId": page["sourceId"],
+                "license": LICENSE_ID,
+                "permitsAppUse": True,
+            },
+            rights_record(ruwiki["sourceId"]),
+        ],
     }
 
 

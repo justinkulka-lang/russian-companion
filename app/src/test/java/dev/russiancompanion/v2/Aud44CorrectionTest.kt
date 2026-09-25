@@ -250,12 +250,15 @@ class Aud44CorrectionTest {
         assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
         val blocked = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
         assertFalse(blocked.remaining.joinToString("\n"), blocked.allowed)
-        assertTrue(unresolved(pack, 19).contains("probability-dolzhen"))
-        assertTrue(
+        assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
+        assertFalse(
             pack.unit(19)!!.sessions.flatMap { it.steps }.any {
                 it.unavailableReason == "Probability use has no admitted frozen span."
             },
         )
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(19)!!.readiness)
+        assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
+        assertTrue(pack.unitReviews.first { it.unitNumber == 19 }.reviewer.isNullOrBlank())
         val recognition = pack.sourceCapabilities.first { it.supportedClaim == "clock-expression-recognition" }
         val relabeled = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.map { capability ->
@@ -428,7 +431,7 @@ class Aud44CorrectionTest {
         val PRIOR_CONTENT_DIGESTS = mapOf(
             16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
             18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-            19 to "7daabf2fa0295a3f54d1b38603d57d1b888555c2ca2b5d04af25af5b09654d73",
+            19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
             20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
         )
     }

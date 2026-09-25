@@ -108,7 +108,7 @@ class BatchAUnits71620Test {
     @Test
     fun partialUnitsStayBlockedAndClosedChainsCanBeReviewPending() {
         val pack = pack()
-        listOf(16, 18, 20).forEach { number ->
+        listOf(16, 18, 19, 20).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
@@ -120,13 +120,6 @@ class BatchAUnits71620Test {
             assertTrue(decision.remaining.any { it.contains("not prepared") })
             assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(number)!!).isNotEmpty())
         }
-        val unit19 = advancementDecision(pack, pack.unit(19)!!, learner(pack, 19))
-        assertFalse(unit19.allowed)
-        assertTrue(unit19.remaining.any { it.contains("not prepared") })
-        val flipped19 = pack.unit(19)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val probability = advancementDecision(pack, flipped19, learner(pack, 19))
-        assertFalse(probability.allowed)
-        assertTrue(probability.remaining.any { it.contains("probability source capability") })
         val flipped7 = pack.unit(7)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
         val paradigm = advancementDecision(pack, flipped7, learner(pack, 7))
         assertFalse(paradigm.allowed)

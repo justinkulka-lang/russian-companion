@@ -117,6 +117,7 @@ def _gloss_check(
     why: str,
     source: str,
     quote: bool = False,
+    prompt: str = PROMPT,
 ) -> dict:
     if answer not in why or shown not in why:
         raise SystemExit(f"Explanation does not name {shown!r} -> {answer!r}: {why!r}")
@@ -130,7 +131,7 @@ def _gloss_check(
         if answer not in text and answer in rationale:
             raise SystemExit(f"Distractor explanation names the keyed answer {answer!r}: {rationale!r}")
     payload = _check(
-        PROMPT,
+        prompt,
         shown,
         answer,
         wrongs,
@@ -377,6 +378,9 @@ def _clock_answers(lesson) -> None:
         extra=_extra("clock-country", needle, [citation for _shown, _answer, citation, _feature in forms]),
     )
     _bind(lesson, "clock-answers", "clock-expression-recognition", needle)
+    from batch_a_remaining_intake import add_unit17_quarter
+
+    add_unit17_quarter(lesson)
 
 
 def _calendar_date(lesson) -> None:
@@ -563,6 +567,9 @@ def _conditional_and_obligation(lesson) -> None:
         + _extra("grammar", conditional, [male_row, female_row, sleep_row]),
     )
     _bind(lesson, "obligation", "obligation-dolzhen", obligation)
+    from batch_a_remaining_intake import add_unit19_probability
+
+    add_unit19_probability(lesson)
 
 
 def _motion(lesson) -> None:
