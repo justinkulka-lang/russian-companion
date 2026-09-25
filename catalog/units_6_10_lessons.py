@@ -12,7 +12,8 @@ import hashlib
 import re
 from pathlib import Path
 
-from units_3_5_intake import CYRILLIC, OPENRUSSIAN_ID, WIKIBOOKS_ID, format_wikibooks_emphasis
+from explicit_spans import EXPLICIT_GLOSSES
+from units_3_5_intake import CYRILLIC, OPENRUSSIAN_ID, WIKIBOOKS_ID, format_wikibooks_emphasis, unfold_wiki_labels
 
 W = WIKIBOOKS_ID
 O = OPENRUSSIAN_ID
@@ -34,6 +35,7 @@ RELATION_KINDS = (
     "SOURCE_SUPPLIED_PAIR",
     "RULE_CLASSIFIES_SOURCE_EXAMPLE",
     "EXPLICIT_PARENTHETICAL_GLOSS",
+    "EXPLICIT_SOURCE_PAIR",
 )
 
 
@@ -142,7 +144,10 @@ def _displayed_in_frozen(record: dict) -> bool:
     if folded and folded == _fold(original.replace("'", "")):
         return True
     formatted = _fold(format_wikibooks_emphasis(original))
-    return bool(folded) and folded in formatted
+    if folded and folded in formatted:
+        return True
+    unfolded = _fold(unfold_wiki_labels(original))
+    return bool(folded) and folded in unfolded
 
 
 def _openrussian_lemma(record: dict):
@@ -214,6 +219,27 @@ def _parenthetical_relation(cue: dict, answer: dict, distractors: list[dict]) ->
     return False
 
 
+def _explicit_source_pair(cue: dict, answer: dict, distractors: list[dict]) -> str | None | bool:
+    """Return the explicit kind, False when this span forbids the pair, or None when another span applies."""
+    table = EXPLICIT_GLOSSES.get(cue.get("originalSourceText") or "")
+    if table is None:
+        return None
+    group = [cue, answer, *distractors]
+    shown = cue.get("shippedText") or ""
+    gloss = answer.get("shippedText") or ""
+    allowed = table.get(shown)
+    if (
+        allowed
+        and gloss in allowed
+        and shown != gloss
+        and all(_same_span(cue, record) for record in group)
+        and all(_displayed_in_frozen(record) for record in group)
+        and all((record.get("shippedText") or "") != gloss for record in distractors)
+    ):
+        return "EXPLICIT_SOURCE_PAIR"
+    return False
+
+
 def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str | None:
     """Return the governed relationship the records actually have, or None.
 
@@ -227,6 +253,11 @@ def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str |
         return None
     if parenthetical:
         return parenthetical
+    explicit = _explicit_source_pair(cue, answer, distractors)
+    if explicit is False:
+        return None
+    if explicit:
+        return explicit
     group = [cue, answer, *distractors]
     parsed = [_openrussian_lemma(record) for record in group]
     if all(parsed):
@@ -328,7 +359,7 @@ def _cue_language(shown: str) -> str:
     return "rule"
 
 
-def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM", mode=None, cue=None, why=None, response_kind=None):
+def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM", mode=None, cue=None, why=None, response_kind=None, frozen_quote=False):
     del mode  # Relationship kind is derived from provenance records, not from this argument.
     if _ENGLISH_CUE.search(prompt) and not CYRILLIC.search(shown):
         if _cue_language(shown) == "number":
@@ -355,6 +386,8 @@ def _check(prompt, shown, answer, distractors, source=W, feature="GOVERNED_FORM"
     }
     if response_kind:
         payload["responseKind"] = response_kind
+    if frozen_quote:
+        payload["frozenQuote"] = True
     return payload
 
 
@@ -845,6 +878,116 @@ def _unit_7(lesson) -> None:
             ], O, feature="OBJECT_ADJECTIVE"),
         ],
     )
+    _adverb_paradigm(lesson)
+
+
+def _pair_sentence(shown: str, answer: str, citation: str) -> str:
+    if '"' in shown or '"' in answer or '"' in citation:
+        raise SystemExit(f"Pair quotation would split {shown!r} / {answer!r}")
+    text = (
+        f'The frozen source pairs the shown form "{shown}" with the admitted gloss "{answer}" '
+        f'("{citation}").'
+    )
+    if shown not in text or answer not in text or citation not in text:
+        raise SystemExit(f"Pair sentence omits the keyed relationship: {text!r}")
+    return text
+
+
+def _adverb_paradigm(lesson) -> None:
+    from explicit_spans import ADVERB_SPAN
+
+    page = "adverb-formation"
+    needle = ADVERB_SPAN
+    excerpt = '"быстро", "хорошо", "прекрасно" (quickly, well, wonderfully)'
+    citation = "while in Russian"
+    if excerpt not in needle or citation not in needle:
+        raise SystemExit("Adverb excerpt is not in the frozen span")
+    pairs = (
+        ("быстро", "quickly", "ADVERB_QUICKLY"),
+        ("хорошо", "well", "ADVERB_WELL"),
+        ("прекрасно", "wonderfully", "ADVERB_WONDERFULLY"),
+    )
+    for form, gloss, _feature in pairs:
+        if form not in needle or gloss not in needle:
+            raise SystemExit(f"Adverb pair is not in the frozen span: {form} / {gloss}")
+    reasons = {
+        gloss: _pair_sentence(form, gloss, citation)
+        for form, gloss, _feature in pairs
+    }
+    source = "src-wikipedia-adverb-1374548415"
+    checks = []
+    for index, (form, gloss, feature) in enumerate(pairs):
+        wrongs = [
+            (other, reasons[other], reasons[other])
+            for other_form, other, _other_feature in pairs
+            if other != gloss
+        ]
+        checks.append(_check(
+            "Which admitted English gloss is written beside the shown form?",
+            form,
+            gloss,
+            wrongs,
+            source=source,
+            feature=feature,
+            why=reasons[gloss],
+            response_kind="ENGLISH_CLASSIFICATION",
+            frozen_quote=True,
+        ))
+    lesson.objective(
+        "adverb",
+        "Choose the admitted gloss beside the shown form",
+        "CONTRAST_SELECTION",
+        (page, needle, excerpt),
+        [
+            _wiki(page, needle, form, gloss)
+            for form, gloss, _feature in pairs
+        ],
+        checks,
+        extra=[(page, needle, citation, "label")],
+    )
+    lesson.capabilities = [{
+        "objectiveId": "obj-u7-adverb",
+        "supportedClaim": "adverb-form-gloss",
+        "exactSpan": needle,
+    }]
+    _assert_explicit_guards()
+
+
+def _assert_explicit_guards() -> None:
+    """Co-occurrence on an admitted span must not clear a different gloss."""
+    from explicit_spans import ADVERB_SPAN, CLOCK_SPAN, DATE_SPAN
+
+    def fake(span: str, shipped: str, unit: int) -> dict:
+        return {
+            "sourceId": "src-explicit",
+            "sourceRevision": "frozen",
+            "sourceRecordId": "span",
+            "originalSourceText": span,
+            "sourceHash": _sha256(span),
+            "shippedText": shipped,
+            "unitNumber": unit,
+        }
+
+    def expect(span: str, shown: str, answer: str, distractors: list[str], unit: int, kind: str | None) -> None:
+        found = classify_relation(
+            fake(span, shown, unit),
+            fake(span, answer, unit),
+            [fake(span, item, unit) for item in distractors],
+        )
+        if found != kind:
+            raise SystemExit(f"Explicit pair guard {shown!r} -> {answer!r} returned {found!r}, expected {kind!r}")
+
+    expect(ADVERB_SPAN, "быстро", "quickly", ["well", "wonderfully"], 7, "EXPLICIT_SOURCE_PAIR")
+    expect(ADVERB_SPAN, "быстро", "well", ["quickly", "wonderfully"], 7, None)
+    expect(ADVERB_SPAN, "быстрый", "quickly", ["well", "wonderfully"], 7, None)
+    expect(ADVERB_SPAN, "швидко", "quickly", ["well", "wonderfully"], 7, None)
+    expect(CLOCK_SPAN, "четверть восьмого", "7:15", ["7:30", "7:45"], 17, "EXPLICIT_SOURCE_PAIR")
+    expect(CLOCK_SPAN, "четверть восьмого", "7:30", ["7:15", "7:45"], 17, None)
+    expect(CLOCK_SPAN, "Который час?", "7:15", ["7:30", "7:45"], 17, None)
+    expect(DATE_SPAN, "Двадцать восьмое августа", "the month in genitive case", ["day month year", "28.08.17"], 17, "EXPLICIT_SOURCE_PAIR")
+    expect(DATE_SPAN, "Двадцать восьмое августа", "of the year", ["day month year", "28.08.17"], 17, None)
+    expect(DATE_SPAN, "28 августа 2017 г.", "of the year", ["day month year", "28.08.17"], 17, "EXPLICIT_SOURCE_PAIR")
+    expect(DATE_SPAN, "28 августа 2017 г.", "the month in genitive case", ["day month year", "28.08.17"], 17, None)
 
 
 def _unit_8(lesson) -> None:

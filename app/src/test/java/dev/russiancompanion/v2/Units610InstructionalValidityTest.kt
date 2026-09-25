@@ -506,7 +506,9 @@ class Units610InstructionalValidityTest {
         val unit7 = pack.unit(7)!!
         assertEquals("NOT_PREPARED", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }
-        assertTrue(lesson.contains("introductory adverb objective is not prepared"))
+        assertTrue(lesson.contains("short-form adjective section stays out"))
+        assertTrue(lesson.contains("An adjective-to-adverb paradigm has no admitted frozen span."))
+        assertFalse(lesson.contains("most adverbs are formed"))
         assertFalse(lesson.contains("хорошое"))
     }
 

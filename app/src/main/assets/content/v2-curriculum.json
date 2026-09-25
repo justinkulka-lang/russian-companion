@@ -394,6 +394,27 @@
       "license": "CC BY-SA 4.0",
       "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for oldid 3353858 identifies the contributors.",
       "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
+    },
+    {
+      "id": "src-wikipedia-adverb-1374548415",
+      "title": "Adverb",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
+    },
+    {
+      "id": "src-wikipedia-date-time-country-1366690592",
+      "title": "Date and time representation by country",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
+    },
+    {
+      "id": "src-wikipedia-date-notation-russia-1357134172",
+      "title": "Date and time notation in Russia",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased."
     }
   ],
   "rights": [
@@ -436,6 +457,24 @@
     {
       "id": "rights-wikibooks-russian-various-stuff-3353858",
       "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+      "license": "CC BY-SA 4.0",
+      "permitsAppUse": true
+    },
+    {
+      "id": "rights-wikipedia-adverb-1374548415",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "license": "CC BY-SA 4.0",
+      "permitsAppUse": true
+    },
+    {
+      "id": "rights-wikipedia-date-time-country-1366690592",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "license": "CC BY-SA 4.0",
+      "permitsAppUse": true
+    },
+    {
+      "id": "rights-wikipedia-date-notation-russia-1357134172",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
       "license": "CC BY-SA 4.0",
       "permitsAppUse": true
     }
@@ -2888,6 +2927,36 @@
       "sourceId": "src-openrussian-50e210c4",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u7-objectadj"
+    },
+    {
+      "id": "ex-u7-adverb-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "быстро",
+      "note": "quickly",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u7-adverb"
+    },
+    {
+      "id": "ex-u7-adverb-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "хорошо",
+      "note": "well",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u7-adverb"
+    },
+    {
+      "id": "ex-u7-adverb-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "прекрасно",
+      "note": "wonderfully",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u7-adverb"
     },
     {
       "id": "ex-or-u8-plural-0",
@@ -6458,6 +6527,56 @@
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u17-clock"
+    },
+    {
+      "id": "ex-u17-clock-answers-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "четверть восьмого",
+      "note": "7:15",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u17-clock-answers"
+    },
+    {
+      "id": "ex-u17-clock-answers-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "полвосьмого",
+      "note": "7:30",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u17-clock-answers"
+    },
+    {
+      "id": "ex-u17-clock-answers-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "без четверти восемь",
+      "note": "7:45",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u17-clock-answers"
+    },
+    {
+      "id": "ex-u17-calendar-date-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Двадцать восьмое августа",
+      "note": "the month in genitive case",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u17-calendar-date"
+    },
+    {
+      "id": "ex-u17-calendar-date-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "28 августа 2017 г.",
+      "note": "day month year",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u17-calendar-date"
     },
     {
       "id": "ex-u18-comparison-0",
@@ -11912,6 +12031,177 @@
           "prov-ex-or-u7-objectadj-6",
           "prov-ex-or-u7-objectadj-4"
         ]
+      }
+    },
+    {
+      "id": "u7-g-adverb-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "быстро",
+      "options": [
+        "quickly",
+        "well",
+        "wonderfully"
+      ],
+      "answer": "quickly",
+      "feedback": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+      "objectiveId": "obj-u7-adverb",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+      ],
+      "assessment": {
+        "testedFeature": "ADVERB_QUICKLY",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u7-adverb-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u7-adverb-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u7-adverb-1-en",
+          "prov-ex-u7-adverb-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "contrastMembers": [
+          "quickly",
+          "well",
+          "wonderfully"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u7-adverb-0-ru",
+          "prov-ex-u7-adverb-0-en",
+          "prov-ex-u7-adverb-1-en",
+          "prov-ex-u7-adverb-2-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u7-i-adverb-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "хорошо",
+      "options": [
+        "well",
+        "quickly",
+        "wonderfully"
+      ],
+      "answer": "well",
+      "feedback": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+      "objectiveId": "obj-u7-adverb",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+      ],
+      "assessment": {
+        "testedFeature": "ADVERB_WELL",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u7-adverb-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u7-adverb-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u7-adverb-0-en",
+          "prov-ex-u7-adverb-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+        "contrastMembers": [
+          "well",
+          "quickly",
+          "wonderfully"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u7-adverb-1-ru",
+          "prov-ex-u7-adverb-1-en",
+          "prov-ex-u7-adverb-0-en",
+          "prov-ex-u7-adverb-2-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u7-i-adverb-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "прекрасно",
+      "options": [
+        "wonderfully",
+        "quickly",
+        "well"
+      ],
+      "answer": "wonderfully",
+      "feedback": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
+      "objectiveId": "obj-u7-adverb",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
+      ],
+      "assessment": {
+        "testedFeature": "ADVERB_WONDERFULLY",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u7-adverb-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u7-adverb-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u7-adverb-0-en",
+          "prov-ex-u7-adverb-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
+        "contrastMembers": [
+          "wonderfully",
+          "quickly",
+          "well"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u7-adverb-2-ru",
+          "prov-ex-u7-adverb-2-en",
+          "prov-ex-u7-adverb-0-en",
+          "prov-ex-u7-adverb-1-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
       }
     },
     {
@@ -22077,6 +22367,348 @@
       }
     },
     {
+      "id": "u17-g-clock-answers-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "четверть восьмого",
+      "options": [
+        "7:15",
+        "7:30",
+        "7:45"
+      ],
+      "answer": "7:15",
+      "feedback": "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+      "objectiveId": "obj-u17-clock-answers",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\").",
+        "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\")."
+      ],
+      "assessment": {
+        "testedFeature": "CLOCK_QUARTER",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-clock-answers-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u17-clock-answers-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-clock-answers-1-en",
+          "prov-ex-u17-clock-answers-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\").",
+          "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+        "contrastMembers": [
+          "7:15",
+          "7:30",
+          "7:45"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-clock-answers-0-ru",
+          "prov-ex-u17-clock-answers-0-en",
+          "prov-ex-u17-clock-answers-1-en",
+          "prov-ex-u17-clock-answers-2-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u17-i-clock-answers-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "полвосьмого",
+      "options": [
+        "7:30",
+        "7:15",
+        "7:45"
+      ],
+      "answer": "7:30",
+      "feedback": "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\").",
+      "objectiveId": "obj-u17-clock-answers",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+        "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\")."
+      ],
+      "assessment": {
+        "testedFeature": "CLOCK_HALF",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-clock-answers-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u17-clock-answers-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-clock-answers-0-en",
+          "prov-ex-u17-clock-answers-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+          "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\").",
+        "contrastMembers": [
+          "7:30",
+          "7:15",
+          "7:45"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-clock-answers-1-ru",
+          "prov-ex-u17-clock-answers-1-en",
+          "prov-ex-u17-clock-answers-0-en",
+          "prov-ex-u17-clock-answers-2-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u17-i-clock-answers-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "без четверти восемь",
+      "options": [
+        "7:45",
+        "7:15",
+        "7:30"
+      ],
+      "answer": "7:45",
+      "feedback": "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\").",
+      "objectiveId": "obj-u17-clock-answers",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+        "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\")."
+      ],
+      "assessment": {
+        "testedFeature": "CLOCK_WITHOUT",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-clock-answers-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u17-clock-answers-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-clock-answers-0-en",
+          "prov-ex-u17-clock-answers-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").",
+          "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\").",
+        "contrastMembers": [
+          "7:45",
+          "7:15",
+          "7:30"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-clock-answers-2-ru",
+          "prov-ex-u17-clock-answers-2-en",
+          "prov-ex-u17-clock-answers-0-en",
+          "prov-ex-u17-clock-answers-1-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u17-g-calendar-date-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "Двадцать восьмое августа",
+      "options": [
+        "the month in genitive case",
+        "day month year",
+        "28.08.17"
+      ],
+      "answer": "the month in genitive case",
+      "feedback": "The frozen source pairs the shown form \"Двадцать восьмое августа\" with the admitted gloss \"the month in genitive case\" (\"the ordinal number of the day first\").",
+      "objectiveId": "obj-u17-calendar-date",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+        "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+      ],
+      "assessment": {
+        "testedFeature": "DATE_SPOKEN",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-calendar-date-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u17-calendar-date-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-calendar-date-1-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+          "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Двадцать восьмое августа\" with the admitted gloss \"the month in genitive case\" (\"the ordinal number of the day first\").",
+        "contrastMembers": [
+          "the month in genitive case",
+          "day month year",
+          "28.08.17"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-calendar-date-0-ru",
+          "prov-ex-u17-calendar-date-0-en",
+          "prov-ex-u17-calendar-date-1-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u17-i-calendar-date-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "28 августа 2017 г.",
+      "options": [
+        "day month year",
+        "the month in genitive case",
+        "28.08.17"
+      ],
+      "answer": "day month year",
+      "feedback": "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+      "objectiveId": "obj-u17-calendar-date",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"Двадцать восьмое августа\" with the admitted gloss \"the month in genitive case\" (\"the ordinal number of the day first\").",
+        "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+      ],
+      "assessment": {
+        "testedFeature": "DATE_ORDER",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-calendar-date-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u17-calendar-date-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-calendar-date-0-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"Двадцать восьмое августа\" with the admitted gloss \"the month in genitive case\" (\"the ordinal number of the day first\").",
+          "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+        "contrastMembers": [
+          "day month year",
+          "the month in genitive case",
+          "28.08.17"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-calendar-date-1-ru",
+          "prov-ex-u17-calendar-date-1-en",
+          "prov-ex-u17-calendar-date-0-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u17-i-calendar-date-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "promptLetter": "28 августа 2017 г.",
+      "options": [
+        "of the year",
+        "day month year",
+        "28.08.17"
+      ],
+      "answer": "of the year",
+      "feedback": "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"of the year\" (\"is short for\").",
+      "objectiveId": "obj-u17-calendar-date",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+        "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+      ],
+      "assessment": {
+        "testedFeature": "DATE_YEAR",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u17-calendar-date-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u17-calendar-date-x-0"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u17-calendar-date-1-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").",
+          "The frozen source pairs the shown form \"28.08.17\" with the admitted gloss \"28.08.17\" (\"the all-numeric date\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"of the year\" (\"is short for\").",
+        "contrastMembers": [
+          "of the year",
+          "day month year",
+          "28.08.17"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u17-calendar-date-1-ru",
+          "prov-u17-calendar-date-x-0",
+          "prov-ex-u17-calendar-date-1-en",
+          "prov-u17-calendar-date-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
       "id": "u18-g-comparison-0",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
@@ -27178,13 +27810,26 @@
       "id": "ref-u1620-attribution",
       "title": "Units 16–20 source notice",
       "summary": "Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.",
-      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.",
+      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections.",
       "introducedInUnit": 16,
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "classification": "LICENSE_OR_ATTRIBUTION",
       "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "units 16-20 source notice"
+      ]
+    },
+    {
+      "id": "ref-u17-attribution",
+      "title": "Unit 17 source notice",
+      "summary": "Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.",
+      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Productive clock-time generation remains unresolved. Review is pending.",
+      "introducedInUnit": 17,
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "reviewStatus": "NOT_REQUIRED",
+      "searchTerms": [
+        "unit 17 source notice"
       ]
     },
     {
@@ -31924,16 +32569,16 @@
       "id": "unit-7",
       "title": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
       "shortLabel": "Adjectives",
-      "topicSummary": "Proposed Unit 7 is in development and is not prepared. The introductory adverb objective is missing: the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section, and that section stays out. The other admitted agreement rows await qualified review. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 7 is in development and is not prepared. Admitted agreement rows and three adverb form/gloss pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
       "readiness": "NOT_PREPARED",
       "penguinLesson": 7,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
-      "mappingNote": "The introductory adverb objective is not prepared. The frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
+      "mappingNote": "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
       "prerequisiteUnitNumbers": [
         6
       ],
-      "estimatedMinutes": 106,
+      "estimatedMinutes": 118,
       "objectives": [
         {
           "id": "obj-u7-default",
@@ -32176,6 +32821,33 @@
           ]
         },
         {
+          "id": "obj-u7-adverb",
+          "unitNumber": 7,
+          "title": "Choose the admitted gloss beside the shown form",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u7-st-orient",
+            "u7-st-teach-adverb-1",
+            "u7-st-teach-adverb-2",
+            "u7-st-teach-adverb-3"
+          ],
+          "exampleIds": [
+            "ex-u7-adverb-0",
+            "ex-u7-adverb-1",
+            "ex-u7-adverb-2"
+          ],
+          "practiceStepIds": [
+            "u7-st-guided-adverb-1"
+          ],
+          "checkItemIds": [
+            "u7-i-adverb-1",
+            "u7-i-adverb-2"
+          ],
+          "remediationStepIds": [
+            "u7-st-rem-adverb"
+          ]
+        },
+        {
           "id": "obj-u7-book",
           "unitNumber": 7,
           "title": "Self-attest Lesson 7 book work",
@@ -32190,12 +32862,12 @@
           "remediationStepIds": []
         },
         {
-          "id": "obj-u7-adverb",
+          "id": "obj-u7-adverb-paradigm",
           "unitNumber": 7,
-          "title": "Admitted orientation",
+          "title": "Adjective-to-adverb paradigm stays in the copy you own",
           "kind": "GUIDANCE",
           "instructionStepIds": [
-            "u7-st-adverb-orient"
+            "u7-st-gap-adverb-paradigm"
           ],
           "exampleIds": [],
           "practiceStepIds": [],
@@ -32216,6 +32888,7 @@
             "obj-u7-demonstrative",
             "obj-u7-place",
             "obj-u7-objectadj",
+            "obj-u7-adverb",
             "obj-u7-book"
           ],
           "steps": [
@@ -32223,7 +32896,7 @@
               "id": "u7-st-orient",
               "kind": "ORIENT",
               "title": "Admitted agreement rows",
-              "body": "Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.",
+              "body": "Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u610-attribution"
@@ -33288,6 +33961,119 @@
           ]
         },
         {
+          "id": "u7-s-adverb",
+          "title": "Choose the admitted gloss beside the shown form",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u7-adverb"
+          ],
+          "steps": [
+            {
+              "id": "u7-st-teach-adverb-1",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "быстро — quickly. хорошо — well. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u610-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u7-adverb-0",
+                "ex-u7-adverb-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u7-st-guided-adverb-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u7-g-adverb-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u7-st-rem-adverb"
+            },
+            {
+              "id": "u7-st-teach-adverb-2",
+              "kind": "TEACH",
+              "title": "Admitted instruction",
+              "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u610-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u7-st-teach-adverb-3",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "прекрасно — wonderfully. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u610-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u7-adverb-2"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u7-st-rem-adverb",
+              "kind": "REMEDIATE",
+              "title": "Remediation",
+              "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u7-adverb-0",
+                "ex-u7-adverb-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u7-st-check-adverb",
+              "kind": "CHECK",
+              "title": "Independent checks",
+              "body": "These checks use only admitted records. A miss returns to the explanation.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u7-i-adverb-1",
+                "u7-i-adverb-2"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u7-st-rem-adverb"
+            }
+          ]
+        },
+        {
           "id": "u7-s-book",
           "title": "Self-attest Lesson 7",
           "estimatedMinutes": 10,
@@ -33299,7 +34085,7 @@
               "id": "u7-st-book-work",
               "kind": "BOOK",
               "title": "Work Lesson 7 in your copy",
-              "body": "Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.",
+              "body": "Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u610-attribution"
@@ -33328,41 +34114,25 @@
           ]
         },
         {
-          "id": "u7-s-adverb",
-          "title": "Admitted orientation",
+          "id": "u7-s-gap-adverb-paradigm",
+          "title": "Adjective-to-adverb paradigm stays in the copy you own",
           "estimatedMinutes": 4,
           "objectiveIds": [
-            "obj-u7-adverb"
+            "obj-u7-adverb-paradigm"
           ],
           "steps": [
             {
-              "id": "u7-st-adverb-orient",
-              "kind": "TEACH",
-              "title": "Admitted orientation",
-              "body": "Adverbs describe a verb much like adjectives describe nouns.",
-              "dominantAction": "Continue",
-              "referenceIds": [
-                "ref-u610-attribution"
-              ],
-              "itemIds": [],
-              "exampleIds": [],
-              "unavailableReason": null,
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": null
-            },
-            {
-              "id": "u7-st-adverb-gap",
+              "id": "u7-st-gap-adverb-paradigm",
               "kind": "UNAVAILABLE",
-              "title": "Adverb forms stay in the copy you own",
-              "body": "The introductory adverb objective is not prepared.",
+              "title": "Adjective-to-adverb paradigm stays in the copy you own",
+              "body": "The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u610-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
-              "unavailableReason": "The introductory Russian adverb paradigm has no admitted frozen span.",
+              "unavailableReason": "An adjective-to-adverb paradigm has no admitted frozen span.",
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
@@ -42699,7 +43469,7 @@
       "id": "unit-17",
       "title": "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers",
       "shortLabel": "Time and dates",
-      "topicSummary": "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, and the clock question await qualified review. Productive clock-time answers and calendar-date syntax have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
       "readiness": "NOT_PREPARED",
       "penguinLesson": 17,
@@ -42708,7 +43478,7 @@
       "prerequisiteUnitNumbers": [
         16
       ],
-      "estimatedMinutes": 122,
+      "estimatedMinutes": 142,
       "objectives": [
         {
           "id": "obj-u17-ordinals",
@@ -42927,6 +43697,58 @@
           ]
         },
         {
+          "id": "obj-u17-clock-answers",
+          "unitNumber": 17,
+          "title": "Choose the admitted time beside the shown form",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u17-st-orient",
+            "u17-st-teach-clock-answers-1",
+            "u17-st-teach-clock-answers-2",
+            "u17-st-teach-clock-answers-3"
+          ],
+          "exampleIds": [
+            "ex-u17-clock-answers-0",
+            "ex-u17-clock-answers-1",
+            "ex-u17-clock-answers-2"
+          ],
+          "practiceStepIds": [
+            "u17-st-guided-clock-answers-1"
+          ],
+          "checkItemIds": [
+            "u17-i-clock-answers-1",
+            "u17-i-clock-answers-2"
+          ],
+          "remediationStepIds": [
+            "u17-st-rem-clock-answers"
+          ]
+        },
+        {
+          "id": "obj-u17-calendar-date",
+          "unitNumber": 17,
+          "title": "Choose the admitted date relation beside the shown form",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u17-st-orient",
+            "u17-st-teach-calendar-date-1",
+            "u17-st-teach-calendar-date-2"
+          ],
+          "exampleIds": [
+            "ex-u17-calendar-date-0",
+            "ex-u17-calendar-date-1"
+          ],
+          "practiceStepIds": [
+            "u17-st-guided-calendar-date-1"
+          ],
+          "checkItemIds": [
+            "u17-i-calendar-date-1",
+            "u17-i-calendar-date-2"
+          ],
+          "remediationStepIds": [
+            "u17-st-rem-calendar-date"
+          ]
+        },
+        {
           "id": "obj-u17-book",
           "unitNumber": 17,
           "title": "Self-attest Lesson 17 book work",
@@ -42941,25 +43763,12 @@
           "remediationStepIds": []
         },
         {
-          "id": "obj-u17-clock-answers",
+          "id": "obj-u17-clock-productive",
           "unitNumber": 17,
           "title": "Productive clock-time answers stay in the copy you own",
           "kind": "GUIDANCE",
           "instructionStepIds": [
-            "u17-st-gap-clock-answers"
-          ],
-          "exampleIds": [],
-          "practiceStepIds": [],
-          "checkItemIds": [],
-          "remediationStepIds": []
-        },
-        {
-          "id": "obj-u17-calendar-date",
-          "unitNumber": 17,
-          "title": "Calendar-date syntax stays in the copy you own",
-          "kind": "GUIDANCE",
-          "instructionStepIds": [
-            "u17-st-gap-calendar-date"
+            "u17-st-gap-clock-productive"
           ],
           "exampleIds": [],
           "practiceStepIds": [],
@@ -42981,6 +43790,8 @@
             "obj-u17-weekdays",
             "obj-u17-months",
             "obj-u17-clock",
+            "obj-u17-clock-answers",
+            "obj-u17-calendar-date",
             "obj-u17-book"
           ],
           "steps": [
@@ -42988,10 +43799,10 @@
               "id": "u17-st-orient",
               "kind": "ORIENT",
               "title": "Admitted number and quantity rows",
-              "body": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.",
+              "body": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43017,7 +43828,7 @@
               "body": "пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43052,7 +43863,7 @@
               "body": "Ordinal numbers",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43068,7 +43879,7 @@
               "body": "тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43131,7 +43942,7 @@
               "body": "один час — один час. два часа — два часа. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43166,7 +43977,7 @@
               "body": "* один час",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43182,7 +43993,7 @@
               "body": "пять часов — пять часов. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43244,7 +44055,7 @@
               "body": "один год — один год. два года — два года. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43279,7 +44090,7 @@
               "body": "* один год",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43295,7 +44106,7 @@
               "body": "пять лет — пять лет. сорок один год — forty-one years. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43358,7 +44169,7 @@
               "body": "одна минута — одна минута. две минуты — две минуты. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43393,7 +44204,7 @@
               "body": "* одна минута",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43409,7 +44220,7 @@
               "body": "пять минут — пять минут. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43471,7 +44282,7 @@
               "body": "мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43506,7 +44317,7 @@
               "body": "I am 20 (years old)",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43566,7 +44377,7 @@
               "body": "понедельник — Monday. вторник — Tuesday. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43601,7 +44412,7 @@
               "body": "Russians don't capitalize days of the week.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43617,7 +44428,7 @@
               "body": "среда — Wednesday. четверг — Thursday. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43680,7 +44491,7 @@
               "body": "Январь — January. Февраль — February. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43715,7 +44526,7 @@
               "body": "Months of the year",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43731,7 +44542,7 @@
               "body": "Март — March. Апрель — April. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43794,7 +44605,7 @@
               "body": "Который час? — What time is it? час — time. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43829,7 +44640,7 @@
               "body": "What time is it?",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43875,6 +44686,214 @@
           ]
         },
         {
+          "id": "u17-s-clock-answers",
+          "title": "Choose the admitted time beside the shown form",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u17-clock-answers"
+          ],
+          "steps": [
+            {
+              "id": "u17-st-teach-clock-answers-1",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "четверть восьмого — 7:15. полвосьмого — 7:30. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u17-clock-answers-0",
+                "ex-u17-clock-answers-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-guided-clock-answers-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u17-g-clock-answers-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u17-st-rem-clock-answers"
+            },
+            {
+              "id": "u17-st-teach-clock-answers-2",
+              "kind": "TEACH",
+              "title": "Admitted instruction",
+              "body": "uses the same convention: четверть восьмого (\"quarter of the eighth hour\"), полвосьмого (\"half of eight\"), без четверти восемь (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-teach-clock-answers-3",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "без четверти восемь — 7:45. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u17-clock-answers-2"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-rem-clock-answers",
+              "kind": "REMEDIATE",
+              "title": "Remediation",
+              "body": "uses the same convention: четверть восьмого (\"quarter of the eighth hour\"), полвосьмого (\"half of eight\"), без четверти восемь (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u17-clock-answers-0",
+                "ex-u17-clock-answers-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-check-clock-answers",
+              "kind": "CHECK",
+              "title": "Independent checks",
+              "body": "These checks use only admitted records. A miss returns to the explanation.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u17-i-clock-answers-1",
+                "u17-i-clock-answers-2"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u17-st-rem-clock-answers"
+            }
+          ]
+        },
+        {
+          "id": "u17-s-calendar-date",
+          "title": "Choose the admitted date relation beside the shown form",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u17-calendar-date"
+          ],
+          "steps": [
+            {
+              "id": "u17-st-teach-calendar-date-1",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u17-calendar-date-0",
+                "ex-u17-calendar-date-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-guided-calendar-date-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u17-g-calendar-date-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u17-st-rem-calendar-date"
+            },
+            {
+              "id": "u17-st-teach-calendar-date-2",
+              "kind": "TEACH",
+              "title": "Admitted instruction",
+              "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-rem-calendar-date",
+              "kind": "REMEDIATE",
+              "title": "Remediation",
+              "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u17-calendar-date-0",
+                "ex-u17-calendar-date-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u17-st-check-calendar-date",
+              "kind": "CHECK",
+              "title": "Independent checks",
+              "body": "These checks use only admitted records. A miss returns to the explanation.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u17-i-calendar-date-1",
+                "u17-i-calendar-date-2"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u17-st-rem-calendar-date"
+            }
+          ]
+        },
+        {
           "id": "u17-s-book",
           "title": "Self-attest Lesson 17",
           "estimatedMinutes": 10,
@@ -43889,7 +44908,7 @@
               "body": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43915,51 +44934,25 @@
           ]
         },
         {
-          "id": "u17-s-gap-clock-answers",
+          "id": "u17-s-gap-clock-productive",
           "title": "Productive clock-time answers stay in the copy you own",
           "estimatedMinutes": 4,
           "objectiveIds": [
-            "obj-u17-clock-answers"
+            "obj-u17-clock-productive"
           ],
           "steps": [
             {
-              "id": "u17-st-gap-clock-answers",
+              "id": "u17-st-gap-clock-productive",
               "kind": "UNAVAILABLE",
               "title": "Productive clock-time answers stay in the copy you own",
-              "body": "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.",
+              "body": "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
               "unavailableReason": "Productive clock-time answers have no admitted frozen span.",
-              "bookDirection": null,
-              "companionDirection": null,
-              "remediationStepId": null
-            }
-          ]
-        },
-        {
-          "id": "u17-s-gap-calendar-date",
-          "title": "Calendar-date syntax stays in the copy you own",
-          "estimatedMinutes": 4,
-          "objectiveIds": [
-            "obj-u17-calendar-date"
-          ],
-          "steps": [
-            {
-              "id": "u17-st-gap-calendar-date",
-              "kind": "UNAVAILABLE",
-              "title": "Calendar-date syntax stays in the copy you own",
-              "body": "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.",
-              "dominantAction": "Continue",
-              "referenceIds": [
-                "ref-u1620-attribution"
-              ],
-              "itemIds": [],
-              "exampleIds": [],
-              "unavailableReason": "Calendar-date syntax has no admitted frozen span.",
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
@@ -63681,6 +64674,281 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-ex-u7-adverb-0-ru",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "быстро",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u7-adverb-0-en",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "quickly",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "a093d3f5ecffec653f683e9abf3879067ff9ddd28a14f24949c975864ca83322",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u7-adverb-1-ru",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "хорошо",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "a5f34365dc313fc483f7326ceae266d139496bcb16b7c36b292f004cbf30b043",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u7-adverb-1-en",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "well",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "a7722b765d15608d5d24a319140e6665cb361a0758285125722a2d5aece38808",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u7-adverb-2-ru",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "прекрасно",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "1e1cf15b46eef345a1747e85b648b807889f6ee0617a89222f08d50c34a648b6",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u7-adverb-2-en",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "wonderfully",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "c96c726c988a8747ac1d98f886e409bdf6df109c096a8fb36d3b95718db71fe9",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u7-adverb-rem",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "instruction",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "cd851485e3718002a3cdb4c61f7f440b8c2b9f0d5dc6e7ecb229679c2280e87b",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u7-adverb-rem-r0",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "быстро",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u7-adverb-rem-r1",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "хорошо",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "a5f34365dc313fc483f7326ceae266d139496bcb16b7c36b292f004cbf30b043",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u7-adverb-rem-r2",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "прекрасно",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "1e1cf15b46eef345a1747e85b648b807889f6ee0617a89222f08d50c34a648b6",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u7-adverb-x-0",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "while in Russian",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "c6f9c1eb170d4e146714a1e4261ee9e542dc34daffa07ad55f8c725c4ffd9e78",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-or-u8-plural-0",
       "unitNumber": 8,
       "objectiveId": "obj-u8-plural",
@@ -75648,31 +76916,6 @@
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "e129652d84965ed9bc01d3a97fc9cf4021be009ae589cdf3e0dba3f18167878a",
       "contentHash": "e129652d84965ed9bc01d3a97fc9cf4021be009ae589cdf3e0dba3f18167878a",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-orient",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "instruction",
-      "sourceId": "src-wikibooks-russian-cc-by-sa",
-      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Adverbs?oldid=3197995",
-      "sourceRevision": "3197995",
-      "sourceRecordId": "adverbs:Adverbs describe a verb much like adjectives describe nouns.",
-      "originalSourceText": "Adverbs describe a verb much like adjectives describe nouns.",
-      "shippedText": "Adverbs describe a verb much like adjectives describe nouns.",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed",
-      "contentHash": "bf9f4de8415c14bddcd83f12d08a5ba737f092433093943d1a01afd66ecd40ed",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -88656,6 +89899,781 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-ex-u17-clock-answers-0-ru",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "четверть восьмого",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "d85db7f9d2e862b9122ef30d500fa3e0b27472f7b4076586967875282a6b56d5",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-clock-answers-0-en",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "7:15",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "d628b0aac4e55a0c56ef4335434894ef39b47298bd28266f63daac1eea1d2b30",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-clock-answers-1-ru",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "полвосьмого",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "72c55aa4fa5adff398ee6d5931908a169eb9997da036f46f94bad27e840c2dd0",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-clock-answers-1-en",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "7:30",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "3a07a1a91ceb8ba5e18ed9281c69dc97dc767df531e084e327dbd8d3f7fe6996",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-clock-answers-2-ru",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "без четверти восемь",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-clock-answers-2-en",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "7:45",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "115a0c656d48d45818ed2350625e4ff97a706fbcb724dd91a876ffdb12445853",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-rem",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "instruction",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "uses the same convention: четверть восьмого (\"quarter of the eighth hour\"), полвосьмого (\"half of eight\"), без четверти восемь (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "transformation": "wikibooks emphasis formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "980a23647b31c300165390e265eeb97581da673d79fd23b54e4773937c5eb977",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-rem-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "четверть восьмого",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "d85db7f9d2e862b9122ef30d500fa3e0b27472f7b4076586967875282a6b56d5",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-rem-r1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "полвосьмого",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "72c55aa4fa5adff398ee6d5931908a169eb9997da036f46f94bad27e840c2dd0",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-rem-r2",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "без четверти восемь",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-x-0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "quarter of the eighth hour",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "0e54a003dbc6e42776dc97fee91af8b7f12eb42c9529693da8a42798339c2d6f",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-x-1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "half of eight",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "046d1a7bab35050801a3c790b65d480a506cd1a7218a94b2790d03d5950f4125",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-clock-answers-x-2",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "originalSourceText": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "shippedText": "eight without a quarter",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "contentHash": "358f4f61b0503f95ed2dcf2d39d033d4cbd77ecf0fe2fe3d2a8dce9d3c62b83c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-0-ru",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "Двадцать восьмое августа",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "c9d057cb16a10014a37c04bed6d2c3911163588ff8282be59e749b220f051c02",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-0-en",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "the month in genitive case",
+      "transformation": "wiki label selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "d13ee4d49a363ae1938812b3edcfc713798270810b59d03207046ee74e0a4a8a",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-1-ru",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "28 августа 2017 г.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "1928eac97df0e60fa34a8634ce97b4360a25f8ef483ee5dd5c31515c90e12455",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-1-ru-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "августа",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "4ae69d9dc752dc16fac375bc7fb1f75ddb9d4dc75c66d09aa5c95793788adeb4",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-1-ru-r1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "г",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u17-calendar-date-1-en",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "day month year",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "48bbc0035f80f6ee607a29eb5d4b2e9c45b4b3ef1d43cba6d00405aafd02669c",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "instruction",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
+      "transformation": "wiki label selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "2be0ea57c76e3e896dc8bf3a0884b1eb22a5d31fdd28ef86ecc61a022ab6a50f",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem-r0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "августа",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "4ae69d9dc752dc16fac375bc7fb1f75ddb9d4dc75c66d09aa5c95793788adeb4",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem-r1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "г",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem-r2",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "г",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem-r3",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "года",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "fe5b99bb9cee650de40a9ad6e1214730a50ff95134f71c1bfcd86ddf55735b23",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-rem-r4",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "Двадцать восьмое августа",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "c9d057cb16a10014a37c04bed6d2c3911163588ff8282be59e749b220f051c02",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-0",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "of the year",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "4584c549c99fa4c243bbc8545a5e42fc3dedfae36efba389f1ca2d5af6ac6803",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-1",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "28.08.17",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "3ac04b73250f4609ffadac5d27407fd252b2c5aae78babde67d5ae8b9e3a565a",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-2",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "the ordinal number of the day first",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "2141adba97deb362c2be2f196c750b35b02bbf0d9df2960f649efd0d67ee95ca",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-3",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "dates are usually written",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "f2bdf55363b4229b98286b212255ba0ba3fd619cc8c41485196ea024e6d6a6da",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-4",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "is short for",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "b35ffd973ab71962466e3e97d896a3db17bb02a970a7a3c7e93c381e0cf6df46",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u17-calendar-date-x-5",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "originalSourceText": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "shippedText": "the all-numeric date",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "contentHash": "f2f66c3d856eec708570a7e1024c2e3442d74e18e7c3363c1f96dd8f430d7123",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-u18-comparison-0-ru",
       "unitNumber": 18,
       "objectiveId": "obj-u18-comparison",
@@ -98599,7 +100617,7 @@
     {
       "id": "en-u7-072",
       "unitNumber": 7,
-      "text": "Proposed Unit 7 uses frozen agreement rows. The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. Qualified review is pending.",
+      "text": "Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -98653,7 +100671,7 @@
     {
       "id": "en-u7-081",
       "unitNumber": 7,
-      "text": "The introductory adverb objective is not prepared because the frozen adjectives page does not supply a bounded adverb paradigm outside the short-form section. That section stays out of this unit. Listening stays with the book. No audio is mapped here.",
+      "text": "The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -99337,19 +101355,31 @@
     {
       "id": "en-u7-195",
       "unitNumber": 7,
-      "text": "Admitted orientation",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u7-196",
       "unitNumber": 7,
-      "text": "Adverb forms stay in the copy you own",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u7-197",
       "unitNumber": 7,
-      "text": "The introductory adverb objective is not prepared.",
+      "text": "Which admitted English gloss is written beside the shown form?",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u7-198",
+      "unitNumber": 7,
+      "text": "Adjective-to-adverb paradigm stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u7-199",
+      "unitNumber": 7,
+      "text": "The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -100799,357 +102829,345 @@
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-053",
+      "id": "en-u17-u17-scaffold-scaffold-617649b89b68",
       "unitNumber": 17,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-054",
+      "id": "en-u17-u17-scaffold-scaffold-4a565ef7eee9",
       "unitNumber": 17,
       "text": "Does this row fail the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-055",
+      "id": "en-u17-u17-scaffold-scaffold-b253eceff95a",
       "unitNumber": 17,
       "text": "Does this answer show the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-056",
+      "id": "en-u17-u17-scaffold-scaffold-2fc0263e802a",
       "unitNumber": 17,
       "text": "Which admitted line is the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-057",
+      "id": "en-u17-u17-scaffold-scaffold-c2dcb6b4308a",
       "unitNumber": 17,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-058",
+      "id": "en-u17-u17-scaffold-scaffold-4a677873d253",
       "unitNumber": 17,
       "text": "Does this row fail the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-059",
+      "id": "en-u17-u17-scaffold-scaffold-38478b9c58cf",
       "unitNumber": 17,
       "text": "Does this answer show the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-060",
+      "id": "en-u17-u17-scaffold-scaffold-daea861c2e57",
       "unitNumber": 17,
       "text": "Which admitted line is the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-061",
+      "id": "en-u17-u17-scaffold-scaffold-3d4545c9821e",
       "unitNumber": 17,
       "text": "Does this row fail the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-062",
+      "id": "en-u17-u17-scaffold-scaffold-f96c7b5fc626",
       "unitNumber": 17,
       "text": "Does this answer show the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-063",
+      "id": "en-u17-u17-scaffold-scaffold-56c027a21a9d",
       "unitNumber": 17,
       "text": "Which admitted line is the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-064",
+      "id": "en-u17-u17-scaffold-scaffold-5cfee3d3134f",
       "unitNumber": 17,
       "text": "Does this row fail the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-065",
+      "id": "en-u17-u17-scaffold-scaffold-7b6d504d7e63",
       "unitNumber": 17,
       "text": "Does this answer show the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-066",
+      "id": "en-u17-u17-scaffold-scaffold-feb442607c79",
       "unitNumber": 17,
       "text": "Which admitted line is the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-067",
+      "id": "en-u17-u17-scaffold-scaffold-765305856617",
       "unitNumber": 17,
       "text": "Does this row fail the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-068",
+      "id": "en-u17-u17-scaffold-scaffold-3e0f91e58d17",
       "unitNumber": 17,
       "text": "Does this answer show the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-069",
+      "id": "en-u17-u17-scaffold-scaffold-e99f8a478520",
       "unitNumber": 17,
       "text": "Which admitted line is the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-070",
+      "id": "en-u17-u17-scaffold-scaffold-f7af114e6a9d",
       "unitNumber": 17,
       "text": "Does this row fail the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-071",
+      "id": "en-u17-u17-scaffold-scaffold-c70a0c59e89c",
       "unitNumber": 17,
       "text": "Does this answer show the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-072",
+      "id": "en-u17-u17-scaffold-scaffold-6ec2da2b5ac2",
       "unitNumber": 17,
       "text": "Which admitted line is the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-073",
+      "id": "en-u17-u17-scaffold-scaffold-2bb3b02abc19",
       "unitNumber": 17,
       "text": "Does this row fail the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-074",
+      "id": "en-u17-u17-scaffold-scaffold-02404730d4ba",
       "unitNumber": 17,
       "text": "Does this answer show the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-075",
+      "id": "en-u17-u17-scaffold-scaffold-5aec97c275c9",
       "unitNumber": 17,
       "text": "Which admitted line is the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-076",
+      "id": "en-u17-u17-scaffold-scaffold-eca82d7d14b0",
       "unitNumber": 17,
       "text": "Does this row fail the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-077",
+      "id": "en-u17-u17-scaffold-scaffold-64cd6c31fa83",
       "unitNumber": 17,
       "text": "Does this answer show the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-078",
+      "id": "en-u17-u17-scaffold-scaffold-57e46635f2bd",
       "unitNumber": 17,
       "text": "Which admitted line is the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-079",
+      "id": "en-u17-u17-scaffold-scaffold-ce17b55d3ca7",
       "unitNumber": 17,
       "text": "Does this row fail the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-080",
+      "id": "en-u17-u17-scaffold-scaffold-8cb586ba7d43",
       "unitNumber": 17,
       "text": "Does this answer show the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-081",
+      "id": "en-u17-u17-scaffold-scaffold-a2d0c3e3c8fb",
       "unitNumber": 17,
       "text": "Which admitted line is the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-082",
+      "id": "en-u17-u17-scaffold-scaffold-fe44eddb2d81",
       "unitNumber": 17,
       "text": "Does this row fail the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-083",
+      "id": "en-u17-u17-scaffold-scaffold-a06590cf9b03",
       "unitNumber": 17,
       "text": "Does this answer show the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-084",
+      "id": "en-u17-u17-scaffold-scaffold-8e33f215cdfe",
       "unitNumber": 17,
       "text": "Which admitted line is the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-085",
+      "id": "en-u17-u17-scaffold-scaffold-239fbee06b63",
       "unitNumber": 17,
       "text": "Does this row fail the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-086",
+      "id": "en-u17-u17-scaffold-scaffold-3435fbdfccf5",
       "unitNumber": 17,
       "text": "Does this answer show the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-087",
+      "id": "en-u17-u17-scaffold-scaffold-cae98cce8087",
       "unitNumber": 17,
       "text": "Which admitted line is the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-088",
+      "id": "en-u17-u17-scaffold-scaffold-35c1c837c5cd",
       "unitNumber": 17,
       "text": "Does this row fail the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-089",
+      "id": "en-u17-u17-scaffold-scaffold-e29f9a8d4bbc",
       "unitNumber": 17,
       "text": "Does this answer show the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-090",
+      "id": "en-u17-u17-scaffold-scaffold-a0443536ec80",
       "unitNumber": 17,
       "text": "Which admitted line is the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-091",
+      "id": "en-u17-u17-scaffold-scaffold-2df47f739e9c",
       "unitNumber": 17,
       "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-092",
+      "id": "en-u17-u17-scaffold-scaffold-5d461569f10d",
       "unitNumber": 17,
       "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-093",
+      "id": "en-u17-u17-scaffold-scaffold-7186068f3b65",
       "unitNumber": 17,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-094",
+      "id": "en-u17-u17-scaffold-scaffold-d05581a9fe2f",
       "unitNumber": 17,
       "text": "Admitted number and quantity rows",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-095",
+      "id": "en-u17-u17-scaffold-scaffold-d82b22bc37db",
       "unitNumber": 17,
-      "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.",
+      "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-096",
+      "id": "en-u17-u17-scaffold-scaffold-d979ddd5df23",
       "unitNumber": 17,
       "text": "Open Lesson 17 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-097",
+      "id": "en-u17-u17-scaffold-scaffold-3e781f275910",
       "unitNumber": 17,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-098",
+      "id": "en-u17-u17-scaffold-scaffold-00b9e89c0f6c",
       "unitNumber": 17,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-099",
+      "id": "en-u17-u17-scaffold-scaffold-2b7d28840646",
       "unitNumber": 17,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-100",
+      "id": "en-u17-u17-scaffold-scaffold-28776b79f5c4",
       "unitNumber": 17,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-101",
+      "id": "en-u17-u17-scaffold-scaffold-dda63ae4acfb",
       "unitNumber": 17,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-102",
+      "id": "en-u17-u17-scaffold-scaffold-aaa9986a64dc",
       "unitNumber": 17,
       "text": "Work Lesson 17 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-103",
+      "id": "en-u17-u17-scaffold-scaffold-26f3fd1f76d9",
       "unitNumber": 17,
       "text": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-104",
+      "id": "en-u17-u17-scaffold-scaffold-2114923f3bee",
       "unitNumber": 17,
       "text": "Open Lesson 17 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-105",
+      "id": "en-u17-u17-scaffold-scaffold-003ed81da751",
       "unitNumber": 17,
       "text": "Record Lesson 17 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-106",
+      "id": "en-u17-u17-scaffold-scaffold-3e8fc175c5e9",
       "unitNumber": 17,
       "text": "When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-107",
+      "id": "en-u17-u17-scaffold-scaffold-6bef09347414",
       "unitNumber": 17,
       "text": "Self-attest only after the Lesson 17 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-108",
+      "id": "en-u17-u17-scaffold-scaffold-3b45294d491a",
       "unitNumber": 17,
       "text": "Productive clock-time answers stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-109",
+      "id": "en-u17-u17-scaffold-scaffold-50133fa53a4d",
       "unitNumber": 17,
-      "text": "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-110",
-      "unitNumber": 17,
-      "text": "Calendar-date syntax stays in the copy you own",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u17-111",
-      "unitNumber": 17,
-      "text": "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.",
+      "text": "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -104899,6 +106917,17 @@
   ],
   "sourceCapabilities": [
     {
+      "id": "cap-u7-adverb-form-gloss",
+      "sourceId": "src-wikipedia-adverb-1374548415",
+      "sourceRevision": "1374548415",
+      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "exactSpan": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "unitNumber": 7,
+      "objectiveId": "obj-u7-adverb",
+      "supportedClaim": "adverb-form-gloss"
+    },
+    {
       "id": "cap-u16-instrumental-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "sourceRevision": "1369617627",
@@ -104952,6 +106981,28 @@
       "unitNumber": 17,
       "objectiveId": "obj-u17-clock",
       "supportedClaim": "clock-question"
+    },
+    {
+      "id": "cap-u17-clock-expression-recognition",
+      "sourceId": "src-wikipedia-date-time-country-1366690592",
+      "sourceRevision": "1366690592",
+      "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+      "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+      "exactSpan": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-clock-answers",
+      "supportedClaim": "clock-expression-recognition"
+    },
+    {
+      "id": "cap-u17-calendar-date",
+      "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+      "sourceRevision": "1357134172",
+      "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+      "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+      "exactSpan": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+      "unitNumber": 17,
+      "objectiveId": "obj-u17-calendar-date",
+      "supportedClaim": "calendar-date"
     },
     {
       "id": "cap-u18-comparison",

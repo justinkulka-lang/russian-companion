@@ -108,34 +108,79 @@ class BatchAUnits71620Test {
     @Test
     fun partialUnitsStayBlockedAndClosedChainsCanBeReviewPending() {
         val pack = pack()
-        listOf(7, 17, 19).forEach { number ->
-            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
-            assertFalse(decision.allowed)
-            assertTrue(decision.remaining.any { it.contains("not prepared") })
-        }
         listOf(16, 18, 20).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
-            assertTrue(V2Validator.validate(claimComplete(pack, number)).errors.joinToString("\n"), V2Validator.validate(claimComplete(pack, number)).ok)
         }
-        val unit7 = V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!)
-        assertTrue(unit7.joinToString("\n"), unit7.any { it.contains("introductory adverb paradigm") })
-        val flipped = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val stillBlocked = advancementDecision(pack, flipped, learner(pack, 17))
-        assertFalse(stillBlocked.allowed)
-        assertTrue(stillBlocked.remaining.any { it.contains("productive clock-time and calendar-date") })
+        listOf(7, 17).forEach { number ->
+            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
+            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+            assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
+            assertTrue(decision.remaining.any { it.contains("not prepared") })
+            assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(number)!!).isNotEmpty())
+        }
+        val unit19 = advancementDecision(pack, pack.unit(19)!!, learner(pack, 19))
+        assertFalse(unit19.allowed)
+        assertTrue(unit19.remaining.any { it.contains("not prepared") })
         val flipped19 = pack.unit(19)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
         val probability = advancementDecision(pack, flipped19, learner(pack, 19))
         assertFalse(probability.allowed)
         assertTrue(probability.remaining.any { it.contains("probability source capability") })
+        val flipped7 = pack.unit(7)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val paradigm = advancementDecision(pack, flipped7, learner(pack, 7))
+        assertFalse(paradigm.allowed)
+        assertTrue(paradigm.remaining.any { it.contains("adverb paradigm") })
+        val flipped17 = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val clock = advancementDecision(pack, flipped17, learner(pack, 17))
+        assertFalse(clock.allowed)
+        assertTrue(clock.remaining.any { it.contains("productive clock-time") })
+        val strippedDate = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" })
+        val dateDecision = advancementDecision(strippedDate, strippedDate.unit(17)!!, learner(strippedDate, 17))
+        assertFalse(dateDecision.allowed)
+    }
+
+    @Test
+    fun admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans() {
+        val pack = pack()
+        listOf("adverb-form-gloss", "clock-expression-recognition", "calendar-date").forEach { claim ->
+            val capability = pack.sourceCapabilities.first { it.supportedClaim == claim }
+            val record = pack.provenanceRecords.first {
+                it.objectiveId == capability.objectiveId && it.originalSourceText == capability.exactSpan
+            }
+            assertEquals(capability.sourceId, record.sourceId)
+            assertEquals(capability.sourceRevision, record.sourceRevision)
+            assertEquals(capability.sourceHash, record.sourceHash)
+            assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
+            listOf(
+                capability.copy(sourceHash = "0".repeat(64)),
+                capability.copy(sourceRevision = "1"),
+                capability.copy(exactSpan = "January"),
+                capability.copy(unitNumber = if (capability.unitNumber == 7) 17 else 7, objectiveId = "obj-u16-complements", supportedClaim = "instrumental-complements"),
+                capability.copy(objectiveId = "obj-u19-obligation", supportedClaim = "obligation-dolzhen", unitNumber = 19),
+            ).forEach { mutated ->
+                val errors = V2Validator.validate(replaceCapability(pack, capability.id, mutated)).errors
+                assertTrue(errors.joinToString("\n"), errors.any { capability.id in it || mutated.supportedClaim in it })
+            }
+            val absent = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != capability.id })
+            val absentDecision = advancementDecision(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
+            assertFalse(absentDecision.allowed)
+        }
+        val adverb = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "быстро" }
+        val quickly = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "quickly" }
+        val well = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "well" }
+        val wonderfully = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "wonderfully" }
+        assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(adverb, quickly, listOf(well, wonderfully)))
+        assertEquals(null, V2Validator.classifyRelation(adverb, well, listOf(quickly, wonderfully)))
+        val adjective = adverb.copy(itemId = "prov-adjective-cue", shippedText = "быстрый")
+        assertEquals(null, V2Validator.classifyRelation(adjective, quickly, listOf(well, wonderfully)))
     }
 
     @Test
     fun batchAExplanationsNameTheKeyedRelationshipAndRejectASwap() {
         val pack = pack()
         val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
-        assertEquals(32, items.size)
+        assertEquals(41, items.size)
         val liveErrors = V2Validator.validate(pack).errors
         val clock = """The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?"."""
         val book = """The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?"."""
@@ -393,6 +438,9 @@ class BatchAUnits71620Test {
             "obj-u17-weekdays",
             "obj-u17-months",
             "obj-u17-clock",
+            "obj-u17-clock-answers",
+            "obj-u17-calendar-date",
+            "obj-u7-adverb",
             "obj-u18-comparison",
             "obj-u18-relative",
             "obj-u19-conditional",

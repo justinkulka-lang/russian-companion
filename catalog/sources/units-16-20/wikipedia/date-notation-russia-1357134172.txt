@@ -1,0 +1,34 @@
+{{Short description|none}}
+{{refimprove|date=November 2024}}
+{{Notability|date=September 2023}}
+{{Use dmy dates|date=March 2020}}
+
+In Russia, dates are usually written in "day month year" (DMY) order. The 12-hour notation is often used in the spoken language, and the 24-hour notation is used in writing.
+
+==Date==
+===Present===
+In [[Russia]], dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "{{lang|ru|28.08.17}}") and the expanded form (for example "{{lang|ru|28 августа 2017 г.}}"); the trailing "г" is short for "года" (''goda'', "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "{{lang|ru|28.08.2017}}") is more usual.
+
+When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example "{{lang|ru|Двадцать восьмое августа}}"). In colloquial speech, it is acceptable to pronounce the date in numerical format (for example, 09/15/2024).
+
+The first day of the week in Russia is Monday.<ref name=" Manaev ">{{Cite web |last= Manaev |first= Georgy |title=Why the week in Russia once began on Sunday |url=https://www.rbth.com/history/335241-week-in-russia-began-sunday |date =20 July 2022|access-date=5 November 2024 |website=Russia Beyond}}</ref>
+
+===Historical===
+
+Russia used the [[Byzantine calendar]] up to 1700, the [[Julian calendar]] between 1700 and 1918, and the [[Gregorian calendar]] since 1918. Until the final years of [[Peter the Great]] in the early 1720s, Russia used [[Cyrillic numerals]] to denote dates on coins. Thus, for example, СИ (208) denoted 7208 [[Anno Mundi|AM]] (which began on 1 September 1699 became a short year with only four months, running from 1 September 1699 through 31 December 1699 ([[Old Style and New Style dates|O.S.]])) and ҂АѰ (1700) denoted [[Anno Domini|AD]] 1700 [[Old Style and New Style dates|OS]] (which began on 1 January).
+
+==Time==
+The [[12-hour clock|12-hour notation]] is often used in the spoken language. The [[24-hour clock|24-hour notation]] is used in writing, with a colon as the standardised and recommended separator (e.g. “{{lang|ru|9:07}}”). Sometimes full stop is used as a separator (e.g. 9.07), or (in handwritten text) the minutes may be written as superscript and underlined (e.g. 9<sup><u>07</u></sup>).
+
+==References==
+{{reflist}}
+
+{{Europe topic|Date and time notation in}}
+{{Asia topic|Date and time notation in}}
+{{Russia topics}}
+
+[[Category:Date and time representation by country|Russia]]
+[[Category:Time in Russia]]
+
+{{Russia-stub}}
+{{measurement-stub}}

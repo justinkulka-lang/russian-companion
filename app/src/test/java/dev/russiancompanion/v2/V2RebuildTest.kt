@@ -550,8 +550,8 @@ class V2RebuildTest {
         assertEquals("DEVELOPMENT", unitSeven.installState)
         assertEquals("NOT_PREPARED", unitSeven.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unitSeven.mappingStatus)
-        assertTrue(unitSeven.topicSummary.contains("introductory adverb objective"))
-        assertTrue(unitSeven.mappingNote.contains("introductory adverb objective is not prepared"))
+        assertTrue(unitSeven.topicSummary.contains("not prepared"))
+        assertFalse(unitSeven.mappingNote.contains("not prepared"))
         (11..15).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
@@ -916,7 +916,7 @@ class V2RebuildTest {
         assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5", V2Validator.contentReviewDigest(pack))
+        assertEquals("7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)

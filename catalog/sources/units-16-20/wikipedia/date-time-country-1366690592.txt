@@ -1,0 +1,98 @@
+{{Short description|none}} <!-- "none" is preferred when the title is sufficiently descriptive; see [[WP:SDNONE]] -->
+{{Use dmy dates|date=July 2020}}
+{{More citations needed|date=November 2009}}
+Different conventions exist around the world for '''date and time representation''', both written and spoken.
+
+== Differences ==
+[[File:12 24 Hours World Map.svg|thumb|World map showing the usage of 12- and 24-hour clock in different countries{{legend|#f0027f|24-hour written}}{{legend|#7fc97f|Both written by different groups}}{{legend|#386cb0|12-hour written (except in special circumstances such as [[aviation]])}}]]
+Differences can exist in:
+*The [[calendar]] that is used for [[List of date formats by country|Date format]].
+*The order in which the [[year]], [[month]], and [[day]] are represented. (Year-month-day, day-month-year, and month-day-year are the common combinations.)
+*How weeks are identified (see [[seven-day week]])
+*Whether written months are identified by name, by number (1–12), or by Roman numeral (I-XII). 
+*Whether the [[24-hour clock]], [[12-hour clock]], or [[Thai six-hour clock|6-hour clock]] is used.
+*Whether the minutes (or fraction of an hour) after the previous hour or until the following hour is used in spoken language.
+*The [[punctuation]] used to separate elements in all-numeric [[calendar date|dates]] and [[time]]s.
+*Which days are considered the [[weekend]].
+
+== ISO 8601 ==
+{{Main|ISO 8601}}
+International standard [[ISO 8601]] (''Representation of dates and times'') defines unambiguous written all-numeric [[Endianness|big-endian]] formats for dates, such as 2022-12-31 for 31 December 2022, and time, such as 23:59:58 for 23 hours, 59 minutes, and 58 seconds.
+
+These standard notations have been [[ISO 8601 usage|adopted by many countries as a national standard]], e.g., [[British Standard|BS]] [[European Standard|EN]] 28601 in the UK and similarly in other EU countries, [[ANSI]] INCITS 30-1997 (R2008), and [[Federal Information Processing Standard|FIPS]] PUB 4–2 in the United States (FIPS PUB 4-2 withdrawn in United States).<ref name="itl.nist.gov">National Institute of Standards and Technology. (2010). [https://web.archive.org/web/20100605161734/https://www.nist.gov/itl/upload/Withdrawn-FIPS-by-Numerical-Order-Index.pdf Withdrawn FIPs Listed by Number]. United States Department of Commerce.</ref> They are, in particular, increasingly widely used in computer applications, since the most to least significant digit order provides a simple method to order and sort time readings.
+
+==Local conventions==
+{{See also|Category:Date and time representation by country}}
+
+===Date===
+{{main|Date format by country}}
+
+The [[Endianness|little-endian]] format (day, month, year; 1 June 2022) is the most popular format worldwide, followed by the [[Endianness|big-endian]] format (year, month, day; 2006 June 1). Dates may be written partly in Roman numerals (i.e. the year){{Citation needed|date=September 2021}} or written out partly or completely in words in the local language.
+
+===Time===
+The [[24-hour clock]] is the most commonly used method worldwide to physically represent the time of day. Some regions utilize 24-hour time notation in casual speech as well, such as regions that speak [[German language|German]], [[French language|French]], or [[Romanian language|Romanian]], though this is less common overall; other countries that utilize the 24-hour clock for displaying time physically may use the [[12-hour clock]] more often in verbal communication.{{ref needed|date=September 2023}}
+
+In most English-speaking regions, the 12-hour clock is the predominant form of representing the time of day physically, while the 24-hour clock is generally used for contexts where unambiguity and accurate timekeeping are important, such as for public transport schedules. These are only generalizations, however, as there is no consistent rule for using one over the other: in the UK, train timetables will typically use 24-hour time, but road signs indicating time restrictions (e.g. on [[bus lane]]s) typically use 12-hour time, e.g. "Monday–Friday 6.30–8.30pm". The [[BBC website]] uses the 24-hour clock for its TV and radio programme listings, while BBC promotions for upcoming programmes give their times according to the 12-hour clock.  Punctuation and spacing styles differ, even within English-speaking countries (6''':'''30&nbsp;'''p.m.''', 6''':'''30&nbsp;'''pm''', 6''':'''30&nbsp;'''PM''', 6'''.'''30'''pm''', etc.).{{ref needed|date=September 2023}}
+
+Most people who live in countries that use one of the clocks dominantly are still able to understand both systems without much confusion; the statements "three o'clock" and "15:00", for example, are easily recognized as synonyms. While speaking, it may also be common for both systems to be used. People may often pronounce time in 12-hour notation, even when reading a 24-hour display, or use both notations simultaneously. In the latter case, the exact point in time is often registered in 24-hour notation ("The train leaves at fourteen forty-five&nbsp;..."), while the 12-hour notation is used in more ambiguous contexts ("...&nbsp;so I will be back tonight some time after five.").{{ref needed|date=September 2023}} 
+
+In certain languages such as [[Spanish language|Spanish]], [[Portuguese language|Portuguese]], [[Dutch language|Dutch]], and [[English language|English]] the hour is divided into quarters and halves, spoken of relative to the closest hour. In Arabic, thirds of an hour are also used. (xx:20, xx:40)
+
+In [[Czech language|Czech]] quarters and halves always refer to the following hour, e.g. ''čtvrt na osm'' (literally "quarter on eight") meaning 7:15, ''půl osmé'' ("half of eight") meaning 7:30 and ''tři čtvrtě na osm'' ("three-quarters on eight") meaning 7:45. This corresponds to the time between 7:00 and 8:00 being the ''eighth hour'' of the day (the ''first hour'' starting at midnight). [[Russian language|Russian]] uses the same convention: ''четверть восьмого'' ("quarter of the eighth hour"), ''полвосьмого'' ("half of eight"), ''без четверти восемь'' ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively; as does [[Hungarian language|Hungarian]]: {{lang|hu|negyed nyolc}} ("quarter eight"), {{lang|hu|fél nyolc}} ("half eight"), {{lang|hu|háromnegyed nyolc}} ("three-quarters eight").
+
+In many [[Germanic languages]], with the exception of English, the half-hour refers to the next hour (literally "half to nine" rather than "half past eight"). In colloquial language, this can cause confusion between English and German (and other Germanic languages). In conversational English as spoken in the UK, ''half past eight'' (for 8:30) is often reduced to ''half eight'' (whereas in the United States ''half past eight'' would always be used). But in German {{lang|de|halb acht}}, Dutch {{lang|nl|half acht}}, and Swedish {{lang|sv|halv åtta}}, all invariably mean 7:30. For the quarters, e.g. 7:15 and 7:45, Standard German uses the same system as other Germanic languages: {{lang|de|Viertel nach sieben}} ("quarter past seven") and {{lang|de|Viertel vor acht}} ("quarter before eight") respectively. In certain Eastern German and Eastern Austrian dialects however, the same system as in Czech, Russian, and Hungarian is used: {{lang|de|viertel acht}} ("quarter eight") and {{lang|de|dreiviertel acht}} ("three-quarters eight").<ref>{{Cite web|url=https://www.atlas-alltagssprache.de/runde-7/f11e/|title = Uhrzeit: 10.15 « atlas-alltagssprache}}</ref>
+
+In many countries it is common in spoken language to refer to times in minutes or fractions of an hour relative to the ''following'' hour rather than the previous one for times after the 30 minute mark – eg 8:55 would be said as "five to nine", and 6:45 would be "quarter to seven".
+
+In [[French language|French]] and [[Italian language|Italian]], the quarters are expressed as additions or subtractions of the full hour: {{lang|fr|sept heures et quart}} (literally "seven hours and quarter"), {{lang|fr|sept heures et demie}} ("seven hours and half"), {{lang|fr|huit heures moins le quart}} ("eight hours less the quarter"). It is also common to use this format in Portuguese, specifically in the northern part of Portugal.
+
+In [[France]] and [[Vietnam]], the common separator between hours and minutes is the letter "h" (18h45, for example).<ref>{{cite web |title=Telling the Time |url=https://www.bbc.com/bitesize/guides/zsmq7ty/revision/1 |website=BBC Bitesize |access-date=17 May 2019 |archive-date=17 May 2019 |archive-url=https://web.archive.org/web/20190517132016/https://www.bbc.com/bitesize/guides/zsmq7ty/revision/1 |url-status=dead }}</ref>
+
+In [[Finland]]<ref>{{Cite web|title=DateTime::Locale::fi_FI - Locale data examples for the Finnish Finland (fi-FI) locale - metacpan.org|url=https://metacpan.org/pod/distribution/DateTime-Locale/lib/DateTime/Locale/fi_FI.pod|access-date=2021-04-19|website=metacpan.org}}</ref> and [[Indonesia]],<ref>{{Cite web|title=DateTime::Locale::id_ID - Locale data examples for the Indonesian Indonesia (id-ID) locale - metacpan.org|url=https://metacpan.org/pod/distribution/DateTime-Locale/lib/DateTime/Locale/id_ID.pod|access-date=2021-04-19|website=metacpan.org}}</ref> the common separator between hours and minutes is a dot (18.45, for example).
+
+===Date and time notation on the continents===
+* [[Date and time notation in Africa]]
+** [[Date and time notation in Rwanda]]
+* [[Date and time notation in Asia]]
+** [[Date and time notation in India]]
+** [[Date and time notation in Iran]]
+** [[Date and time notation in Japan]]
+** Date and time notation in [[Korea]]
+*** [[Date and time notation in South Korea]]
+** [[Date and time notation in Mongolia]]
+** [[Date and time notation in Nepal]]
+** [[Date and time notation in Pakistan]]
+** [[Date and time notation in Thailand]]
+** [[Date and time notation in the Philippines]]
+** [[Date and time notation in Turkey]]
+** [[Date and time notation in Vietnam]]
+* [[Date and time notation in Europe]]
+** [[Date and time notation in France]]
+** [[Date and time notation in Italy]]
+** [[Date and time notation in Russia]]
+** [[Date and time notation in Spain]]
+** [[Date and time notation in Sweden]]
+** [[Date and time notation in the Netherlands]]
+** [[Date and time notation in the United Kingdom]]
+* Date and time notation in [[North America]]
+** [[Date and time notation in Canada]]
+** [[Date and time notation in the United States]]
+* Date and time notation in [[Oceania]]
+** [[Date and time notation in Australia]]
+* Date and time notation in [[South America]]
+**[[Date and time notation in Brazil]]
+
+==See also==
+* [[Calendar date]]
+* [[Common Locale Data Repository]], a database that covers national date and time notations
+* [[List of date formats by country]]
+
+==References==
+{{reflist}}
+
+{{World topic|Date and time notation in|title=Date and time representation by country}}
+
+{{DEFAULTSORT:Date And Time Representation By Country}}
+[[Category:Date and time representation by country| ]]
+[[Category:Date and time representation|Country]]
+[[Category:Time by country| Date and time]]

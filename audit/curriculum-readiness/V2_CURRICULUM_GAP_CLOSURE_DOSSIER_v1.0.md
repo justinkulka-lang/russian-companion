@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `761e466becdc714f12f6a4205d767cc703635348`  
-**Pack content-review digest:** `1759d74b51e8a1378ac402685f58883a0618745f85c726573fec0b24f545ddb5`  
-**Repository source digest:** `d8d9a1fccd95f7a0bf1c0919819da700006a08a0eb9d596b92d4c9a83c0e6e14`  
+**Canonical commit:** `453b0114248b7fcfce55087ab9a63c54675212ba`  
+**Pack content-review digest:** `7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693`  
+**Repository source digest:** `38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **13 units** — Unit 7, Units 17 and 19, and Units 21–30.
-- Units 16, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending.
+- Content blockers: **13 units** — Units 7, 17, 19, and Units 21–30.
+- Units 16, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, and 19 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability remains unresolved.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -80,55 +80,49 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
+The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three explicit Russian pairs — быстро/quickly, хорошо/well, and прекрасно/wonderfully — are admitted only as bounded form/gloss recognition (`adverb-form-gloss`). That sentence is not an approved productive Russian rule: its stated endings include `-ий`, `-а`, and `-е`, the Russian example `быстрый` ends in `-ый`, and the same sentence mixes Russian and Ukrainian examples. Learner instruction shows the three pairs. It does not teach the suffix sentence. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Reviewer and mapping signature fields stay blank.
+
 #### `adverb-paradigm` — `obj-u7-adverb`
 
-- **Required claim/skill:** The productive adverb pattern required by the Unit 7 scope. The admitted orientation sentence does not supply that paradigm.
-- **Why the current record is insufficient:** The frozen adjectives page supports admitted agreement rows and one orientation sentence. It does not supply a bounded adverb paradigm outside an excluded short-form section.
-- **Required source:** A frozen, app-compatible licensed grammar source that explicitly explains the selected beginner adverb pattern and supplies source-verifiable examples sufficient for instruction, guided practice, independent checks, feedback, and remediation.
+- **Required claim/skill:** An adjective-to-adverb paradigm limited to the transformation an admitted frozen Russian-grammar source explicitly states.
+- **Why the current record is insufficient:** Three gloss matches do not teach or assess an adjective-to-adverb paradigm, and the frozen Wikipedia sentence is not a reliable general Russian rule.
+- **Required source:** A frozen licensed Russian-grammar span that explicitly states the adjective-to-adverb pattern and the examples used for checks.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English may frame the task and navigation; it may not supply the Russian rule or examples.
-- **Book-directed disposition:** The owned book may remain the fallback until a lawful source is admitted.
+- **English scaffold boundary:** English cannot invent a suffix rule, stress, or a transformation.
+- **Book-directed disposition:** Current guidance remains book-directed.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-Units 16, 18, and 20 no longer have open Batch A research requests. Their admitted complement, comparison, relative, and motion spans are packaged. Readiness is `CONTENT_COMPLETE_REVIEW_PENDING`. Reviewer and mapping signature fields stay blank.
 
 ### Unit 17 — Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Age, weekday, month, and clock-question spans are admitted. These two capabilities remain unresolved.
+Age, weekday, month, and clock-question spans remain admitted. `calendar-date` remains admitted. `productive-clock-time` is not admitted.
+
+The three clock phrases in Wikipedia “Date and time representation by country” oldid 1366690592, from `uses the same convention:` through `7:45 respectively`, are bounded clock-expression recognition (`clock-expression-recognition`): четверть восьмого/7:15, полвосьмого/7:30, and без четверти восемь/7:45. They do not establish a productive clock-time answer pattern. “Который час?” stays a question. Other hours are not derived.
+
+Calendar dates remain the written and spoken examples in Wikipedia “Date and time notation in Russia” oldid 1357134172, from `In [[Russia]], dates are usually written` through `Двадцать восьмое августа}}").` The spoken example supports the genitive-month relation. The written example `28 августа 2017 г.` supports day-month-year order, and the year gloss only on that written form. Numeric dates and the following colloquial sentence stay out. Completing the calendar-date checks does not resolve productive clock-time. Reviewer and mapping signature fields stay blank.
 
 #### `productive-clock-time` — `obj-u17-clock-answers`
 
-- **Required claim/skill:** Productive clock-time answers, limited to constructions the admitted source explicitly states.
-- **Why the current record is insufficient:** The admitted clock question does not supply answer forms for telling the time.
-- **Required source:** A frozen licensed instructional span that states the clock-time answer pattern and examples sufficient for checks.
+- **Required claim/skill:** Productive clock-time answers limited to a construction an admitted frozen source explicitly states.
+- **Why the current record is insufficient:** Three fixed phrase-to-time checks are recognition. They do not teach or assess a productive answer pattern.
+- **Required source:** An immutable licensed source that explicitly states the productive construction and the examples used for checks.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English can name the task. It cannot derive the answer pattern.
-- **Book-directed disposition:** Current guidance may remain book-directed until the answer pattern is sourced.
+- **English scaffold boundary:** English cannot derive other hours or invent a clock rule.
+- **Book-directed disposition:** Current guidance remains book-directed.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-#### `calendar-date` — `obj-u17-calendar-date`
-
-- **Required claim/skill:** Calendar-date syntax, limited to constructions the admitted source explicitly states.
-- **Why the current record is insufficient:** Admitted month and weekday rows do not state how a calendar date is formed.
-- **Required source:** A frozen licensed instructional span that states the date construction and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English can name the task. It cannot derive the date construction.
-- **Book-directed disposition:** Current guidance may remain book-directed until the date construction is sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Units 16, 18, and 20 have no open Batch A research requests. Their shared license notice no longer states Unit 17 clock or date readiness or Unit 19 probability. That reachable reference change moves their content-review digests. Authored-English ids for those units stay bound to the unit and the exact text, so Unit 17 inserts do not renumber them. Unit 17 uses its own source notice, which keeps calendar-date admitted, the three clock phrases as bounded recognition, and productive clock-time unresolved. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING` for Units 16, 18, and 20.
 
 ### Unit 19 — Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Conditional and obligation spans are admitted. Probability remains unresolved.
+Conditional and obligation spans are admitted. Probability remains unresolved. No frozen Wikimedia span found in this pass states a probability reading of должен that is distinct from obligation. Obligation translations were not treated as probability evidence. Sources inspected and excluded for that claim include Wikibooks lesson 3 oldid 4460699, the Refugee Phrasebook, and the English or German modal articles Epistemic modality, Modality (semantics), and Modal verb. Wiktionary appendix pages were not used. The claim stays open and the unit stays `NOT_PREPARED`.
 
 #### `probability-dolzhen` — `obj-u19-probability`
 
@@ -556,7 +550,7 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
-3. **Remaining Batch A research:** Unit 7 adverb-paradigm, Unit 17 productive-clock-time and calendar-date, and Unit 19 probability-dolzhen. Units 16, 18, and 20 research requests are closed.
+3. **Remaining Batch A research:** Unit 7 adverb-paradigm, Unit 17 productive-clock-time, and Unit 19 probability-dolzhen. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
 4. **Curriculum research batch B:** Units 21–25.
 5. **Curriculum research batch C:** Units 26–30.
 6. Generate the Unit 23 packet only after its instructional chain exists.

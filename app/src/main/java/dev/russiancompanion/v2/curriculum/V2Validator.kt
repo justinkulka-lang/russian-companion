@@ -757,6 +757,9 @@ internal object V2Validator {
         "obj-u17-weekdays",
         "obj-u17-months",
         "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-calendar-date",
+        "obj-u7-adverb",
         "obj-u18-comparison",
         "obj-u18-relative",
         "obj-u19-conditional",
@@ -766,6 +769,7 @@ internal object V2Validator {
 
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
         7 to listOf(
+            RequiredSourceCapability("obj-u7-adverb", "adverb-form-gloss"),
             RequiredSourceCapability("obj-u7-adverb", "adverb-paradigm"),
         ),
         16 to listOf(
@@ -776,6 +780,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u17-weekdays", "weekdays"),
             RequiredSourceCapability("obj-u17-months", "months"),
             RequiredSourceCapability("obj-u17-clock", "clock-question"),
+            RequiredSourceCapability("obj-u17-clock-answers", "clock-expression-recognition"),
             RequiredSourceCapability("obj-u17-clock-answers", "productive-clock-time"),
             RequiredSourceCapability("obj-u17-calendar-date", "calendar-date"),
         ),
@@ -852,24 +857,41 @@ internal object V2Validator {
      * the authority variance is proposed and not activated.
      */
     /**
-     * Units 17 and 19 stay blocked after a readiness edit while productive
-     * clock-time, calendar-date, or probability evidence is still unresolved.
-     * Unit 7 does not use this gate.
+     * A readiness edit cannot advance a unit while one of its required source
+     * capabilities is still unresolved.
      */
     internal fun unresolvedPartialUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         val unresolved = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }.toSet()
         return when (unit.number) {
-            17 -> if ("productive-clock-time" in unresolved || "calendar-date" in unresolved) {
-                listOf("Unit 17 is missing productive clock-time and calendar-date source capabilities")
+            7 -> if ("adverb-paradigm" in unresolved) {
+                listOf("Unit 7 is missing an introductory adverb paradigm source capability")
             } else {
                 emptyList()
             }
+            17 -> unit17SourceBlockers(unresolved)
             19 -> if ("probability-dolzhen" in unresolved) {
                 listOf("Unit 19 is missing a probability source capability")
             } else {
                 emptyList()
             }
             else -> emptyList()
+        }
+    }
+
+    /**
+     * Name only the Unit 17 source capabilities that are still unresolved.
+     * A resolved calendar-date claim must not be reported as missing, and a
+     * resolved productive clock-time claim must not be reported as missing.
+     */
+    internal fun unit17SourceBlockers(unresolved: Set<String>): List<String> {
+        val missing = listOf("productive-clock-time", "calendar-date").filter { it in unresolved }
+        val named = missing.map { claim ->
+            if (claim == "productive-clock-time") "productive clock-time" else "calendar-date"
+        }
+        return when (named.size) {
+            0 -> emptyList()
+            1 -> listOf("Unit 17 is missing a ${named.single()} source capability")
+            else -> listOf("Unit 17 is missing ${named.joinToString(" and ")} source capabilities")
         }
     }
 
@@ -938,6 +960,9 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
         }
+        if (capability.supportedClaim == "productive-clock-time" && !admittedProductiveClockTime(capability)) {
+            errors += "Source capability ${capability.id} has no independent productive-clock-time admission"
+        }
         if (
             capability.sourceId.isBlank() ||
             capability.sourceRevision.isBlank() ||
@@ -968,6 +993,12 @@ internal object V2Validator {
         if (spanHost.unitNumber != capability.unitNumber || spanHost.objectiveId != capability.objectiveId) {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
+        }
+        if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == ExplicitSourcePairs.adverbSpan) {
+            errors += "Source capability ${capability.id} bounded form/gloss recognition does not clear adverb-paradigm"
+        }
+        if (capability.supportedClaim == "productive-clock-time" && capability.exactSpan == ExplicitSourcePairs.clockSpan) {
+            errors += "Source capability ${capability.id} bounded clock phrases do not clear productive-clock-time"
         }
         if (capability.unitNumber in 26..30) {
             if (STRUCTURAL_PAGE_RANGE.matches(capability.exactSpan.trim())) {
@@ -1001,6 +1032,40 @@ internal object V2Validator {
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:such as {{wikt-lang|ru|\u0431\u0435\u0436}} ('beige', non-adapted form of {{wikt-lang|ru|\u0431\u0435\u0301\u0436\u0435\u0432|0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
         "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
     )
+
+    /**
+     * Independently recorded productive-clock-time admissions.
+     * Each entry names the complete frozen identity and the governed claim.
+     * A capability's own supportedClaim is not an entry and is not proof.
+     * The set stays empty until a genuine productive clock source is frozen
+     * and admitted. No current span can clear the claim.
+     */
+    internal data class ProductiveClockTimeAdmission(
+        val sourceId: String,
+        val sourceRevision: String,
+        val sourceRecordId: String,
+        val sourceHash: String,
+        val exactSpan: String,
+        val unitNumber: Int,
+        val objectiveId: String,
+        val governedClaim: String,
+    )
+
+    internal val ADMITTED_PRODUCTIVE_CLOCK_TIME: Set<ProductiveClockTimeAdmission> = emptySet()
+
+    private fun admittedProductiveClockTime(capability: V2SourceCapability): Boolean {
+        val recorded = ProductiveClockTimeAdmission(
+            sourceId = capability.sourceId,
+            sourceRevision = capability.sourceRevision,
+            sourceRecordId = capability.sourceRecordId,
+            sourceHash = capability.sourceHash,
+            exactSpan = capability.exactSpan,
+            unitNumber = capability.unitNumber,
+            objectiveId = capability.objectiveId,
+            governedClaim = "productive-clock-time",
+        )
+        return recorded in ADMITTED_PRODUCTIVE_CLOCK_TIME
+    }
 
     private fun admittedLateSource(capability: V2SourceCapability): Boolean {
         val key = listOf(
@@ -1249,6 +1314,7 @@ internal object V2Validator {
         "SOURCE_SUPPLIED_PAIR",
         "RULE_CLASSIFIES_SOURCE_EXAMPLE",
         "EXPLICIT_PARENTHETICAL_GLOSS",
+        "EXPLICIT_SOURCE_PAIR",
     )
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
@@ -1362,7 +1428,9 @@ internal object V2Validator {
         val folded = foldGoverned(shipped)
         if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
         val formatted = foldGoverned(formatWikibooksEmphasis(original))
-        return folded.isNotEmpty() && folded in formatted
+        if (folded.isNotEmpty() && folded in formatted) return true
+        val unfolded = foldGoverned(unfoldWikiLabels(original))
+        return folded.isNotEmpty() && folded in unfolded
     }
 
     private val wikiStressMark = Regex(
@@ -1389,6 +1457,17 @@ internal object V2Validator {
     }
 
     private fun isWikiWordChar(char: Char): Boolean = char.code in 0x0400..0x04FF && char.isLetter()
+
+    /** Mechanical wiki-label unfolding. It does not paraphrase the retained span. */
+    internal fun unfoldWikiLabels(text: String): String {
+        val withoutLang = Regex("""\{\{lang\|ru\|([^{}]*)\}\}""").replace(text) { it.groupValues[1] }
+        val withoutLinks = Regex("""\[\[([^\[\]]+)\]\]""").replace(withoutLang) { match ->
+            val body = match.groupValues[1]
+            val bar = body.indexOf('|')
+            if (bar >= 0) body.substring(bar + 1) else body
+        }
+        return formatWikibooksEmphasis(withoutLinks)
+    }
 
     private val mediaWikiLearnerArtifact = Regex(
         """'''|''|\[\[|\]\]|\{\{|\}\}|<ref|</ref>|\{[|]|\|[}]""",
@@ -1517,7 +1596,32 @@ internal object V2Validator {
         return ""
     }
 
-    private fun classifyRelation(
+    /**
+     * Null means the span is not one of the admitted explicit-pair slices.
+     * An empty string means the slice forbids this cue and gloss.
+     */
+    internal fun explicitSourcePair(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val table = ExplicitSourcePairs.glosses[cue.originalSourceText] ?: return null
+        val group = listOf(cue, answer) + distractors
+        val allowed = table[cue.shippedText]
+        if (
+            allowed != null &&
+            answer.shippedText in allowed &&
+            cue.shippedText != answer.shippedText &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_SOURCE_PAIR"
+        }
+        return ""
+    }
+
+    internal fun classifyRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
@@ -1525,6 +1629,9 @@ internal object V2Validator {
         val parenthetical = parentheticalDecision(cue, answer, distractors)
         if (parenthetical == "") return null
         if (parenthetical != null) return parenthetical
+        val explicit = explicitSourcePair(cue, answer, distractors)
+        if (explicit == "") return null
+        if (explicit != null) return explicit
         val group = listOf(cue, answer) + distractors
         val parsed = group.map { openRussianLemma(it) }
         if (parsed.all { it != null }) {
@@ -1715,7 +1822,7 @@ internal object V2Validator {
             "rule" -> if (shownRussian || shown.isBlank()) errors += "Item ${item.id} rule cue is not an admitted rule label"
         }
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-        if (unitNumber in 11..30) {
+        if (unitNumber in 11..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
             errors += explicitTargetErrors(pack, item)
         }
         return errors

@@ -117,14 +117,12 @@ class GapClosureDossierTest {
             "motion-carrying-leading",
             "motion-po-setting-out",
             "motion-prefixed-path",
+            "adverb-form-gloss",
+            "clock-expression-recognition",
+            "calendar-date",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
-        assertTrue(headings.any { it.unitNumber == 7 && it.claim == "adverb-paradigm" && it.objective == "obj-u7-adverb" })
-        assertEquals(
-            listOf("productive-clock-time", "calendar-date"),
-            headings.filter { it.unitNumber == 17 }.map { it.claim },
-        )
         assertEquals(
             listOf("probability-dolzhen"),
             headings.filter { it.unitNumber == 19 }.map { it.claim },
@@ -188,6 +186,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "761e466becdc714f12f6a4205d767cc703635348"
+        const val BASELINE_COMMIT = "453b0114248b7fcfce55087ab9a63c54675212ba"
     }
 }

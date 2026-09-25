@@ -35,10 +35,7 @@ class Units610SourceIntakeTest {
         listOf(6, 7, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(
-                if (number == 7) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING",
-                unit.readiness,
-            )
+            assertEquals(if (number == 7) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals("PENDING_QUALIFIED_REVIEW", pack.unitReviews.single { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.single { it.unitNumber == number }.reviewer.isNullOrBlank())
@@ -225,6 +222,7 @@ class Units610SourceIntakeTest {
             "personal-pronouns" to "3598527",
             "copyrights" to "4622060",
             "adverbs" to "3197995",
+            "adverb-formation" to "1374548415",
         )
         freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray.forEach { element ->
             val page = element.jsonObject

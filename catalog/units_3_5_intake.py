@@ -166,6 +166,33 @@ def _wiki_word_char(char: str) -> bool:
     return bool(char) and "\u0400" <= char <= "\u04FF" and char.isalpha()
 
 
+_LANG_RU = re.compile(r"\{\{lang\|ru\|([^{}]*)\}\}")
+_WIKI_LINK = re.compile(r"\[\[([^\[\]]+)\]\]")
+
+
+def unfold_wiki_labels(text: str) -> str:
+    """Replace lang templates and wiki links with their visible labels, then emphasis.
+
+    The replacement is mechanical. It does not paraphrase the retained span.
+    """
+
+    def link(match: re.Match) -> str:
+        body = match.group(1)
+        if "|" in body:
+            return body.split("|", 1)[1]
+        return body
+
+    return format_wikibooks_emphasis(_WIKI_LINK.sub(link, _LANG_RU.sub(r"\1", text)))
+
+
+def text_in_frozen(original: str, shipped: str) -> bool:
+    if not shipped:
+        return False
+    if shipped in original or shipped in format_wikibooks_emphasis(original):
+        return True
+    return shipped in unfold_wiki_labels(original)
+
+
 def format_wikibooks_emphasis(text: str) -> str:
     """Turn admitted Wikibooks emphasis into learner-facing text.
 

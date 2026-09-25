@@ -26,8 +26,11 @@ from units_3_5_intake import (
     format_stress,
     format_wikibooks_emphasis,
     sha256_text,
+    text_in_frozen,
     unbound_letters,
+    unfold_wiki_labels,
 )
+from explicit_spans import DATE_SPAN
 from units_6_10_intake import GRAMMAR_KINDS, Lesson, _step
 from units_11_15_intake import ADJ_FIELDS, NOUN_FIELDS, git_blob_sha1
 
@@ -43,6 +46,7 @@ GLOSS = {
     "adjectives.csv:хоро'ший": ("good, beautiful, handsome", "good"),
 }
 REFERENCE = "ref-u1620-attribution"
+UNIT17_REFERENCE = "ref-u17-attribution"
 
 
 class FrozenSources:
@@ -95,6 +99,8 @@ class FrozenSources:
             "wikibooks-months-4376719",
             "wikibooks-interrogative-4220316",
             "wikibooks-lesson3-4460699",
+            "wikipedia-date-time-country-1366690592",
+            "wikipedia-date-notation-russia-1357134172",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -122,7 +128,9 @@ class Builder:
         self.examples: list[dict] = []
         self.items: list[dict] = []
         self._said: dict[tuple[int, str], str] = {}
-        self._said_count = 0
+        from authored_identity import begin_authored_ids
+
+        begin_authored_ids()
         commit = frozen.freeze["openrussian"]["commit"]
         self.openrussian_url = f"https://github.com/Badestrand/russian-dictionary/blob/{commit}"
         self.openrussian_revision = commit
@@ -144,15 +152,20 @@ class Builder:
             "lesson3": "Russian/Lesson_3",
         }
 
-    def say(self, unit: int, text: str) -> str:
+    def say(self, unit: int, text: str, role: str = "scaffold", owner: str = "") -> str:
+        from authored_identity import semantic_authored_id
         from units_3_5_intake import CLAIM, GRAMMAR_TERM
 
         if CYRILLIC.search(text) or CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
             raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
         key = (unit, text)
         if key not in self._said:
-            self._said_count += 1
-            self._said[key] = f"en-u{unit}-{self._said_count:03d}"
+            self._said[key] = semantic_authored_id(
+                unit,
+                text,
+                role,
+                owner or f"u{unit}-scaffold",
+            )
             self.authored.append({
                 "id": self._said[key],
                 "unitNumber": unit,
@@ -195,10 +208,14 @@ class Builder:
         cleaned = format_wikibooks_emphasis(shipped)
         if format_wikibooks_emphasis(cleaned) != cleaned:
             raise SystemExit(f"{item_id} emphasis transform is not stable")
-        formatted = format_wikibooks_emphasis(original)
-        if cleaned not in original and cleaned not in formatted:
+        if not text_in_frozen(original, cleaned):
             raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
-        transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
+        if cleaned in original:
+            transformation = "selection"
+        elif cleaned in format_wikibooks_emphasis(original):
+            transformation = "wikibooks emphasis formatting"
+        else:
+            transformation = "wiki label selection"
         meta = self.frozen.page_meta[page]
         source_id = meta.get("sourceId", WIKIBOOKS_ID)
         source_url = meta.get("url") or (
@@ -296,7 +313,7 @@ def _gap(builder: Builder, number: int, slug: str, title: str, body: str, reason
     step_id = f"u{number}-st-gap-{slug}"
     step = _step(
         step_id, "UNAVAILABLE", builder.say(number, title), builder.say(number, body),
-        reference_ids=[REFERENCE],
+        reference_ids=[notice_for(number)],
     )
     step["unavailableReason"] = reason
     objective = {
@@ -329,7 +346,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
         "steps": [_step(
             f"u{number}-st-orient", "ORIENT", builder.say(number, orient_title), builder.say(number, orient_body),
             book=builder.say(number, f"Open Lesson {number} in the copy you own. The app records do not replace that lesson."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         )],
     }]
     objectives = []
@@ -342,7 +359,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
         for index, card in enumerate(spec["cards"], start=1):
             teach = f"u{number}-st-teach-{slug}-{index}"
             teach_ids.append(teach)
-            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[REFERENCE]))
+            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[notice_for(number)]))
             if card["guided"]:
                 guided_id = f"u{number}-st-guided-{slug}-{index}"
                 guided_ids.append(guided_id)
@@ -385,7 +402,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
             f"u{number}-st-book-work", "BOOK", builder.say(number, f"Work Lesson {number} in your copy"),
             builder.say(number, f"Do Lesson {number} in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here."),
             book=builder.say(number, f"Open Lesson {number} in your copy and complete its lesson work."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         ),
         _step(
             f"u{number}-st-book", "BOOK", builder.say(number, f"Record Lesson {number} book work"),
@@ -423,7 +440,7 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
         "steps": [_step(
             f"u{number}-st-orient", "ORIENT", builder.say(number, title), builder.say(number, body),
             book=builder.say(number, f"Open Lesson {number} in the copy you own. This unit does not replace that lesson."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         )],
     }]
     objectives = []
@@ -442,7 +459,7 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
                 f"u{number}-st-book-work", "BOOK", builder.say(number, f"Work Lesson {number} in your copy"),
                 builder.say(number, f"Do Lesson {number} in the copy you own. This unit has no proposed lesson body for the missing topics. Listening stays with the book. No audio is mapped here."),
                 book=builder.say(number, f"Open Lesson {number} in your copy and complete its lesson work."),
-                reference_ids=[REFERENCE],
+                reference_ids=[notice_for(number)],
             ),
             _step(
                 f"u{number}-st-book", "BOOK", builder.say(number, f"Record Lesson {number} book work"),
@@ -465,16 +482,25 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
     return {"number": number, "sessions": sessions, "objectives": objectives, "minimum_checks": 0}
 
 
-def build_units_16_20() -> dict:
+def notice_for(number: int) -> str:
+    return UNIT17_REFERENCE if number == 17 else REFERENCE
+
+
+def build_units_16_20(
+    probe_says: list[tuple[str, str, str]] | None = None,
+    probe_at: str = "end",
+) -> dict:
     from units_16_20_lessons import populate
 
     frozen = FrozenSources()
     builder = Builder(frozen)
+    if probe_at == "start":
+        for text, role, owner in probe_says or []:
+            builder.say(17, text, role=role, owner=owner)
     units = [
         _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, and clock-question spans. Productive clock-time answers and calendar-date syntax stay unresolved. Qualified review is pending.", 8, populate, [
-            ("clock-answers", "Productive clock-time answers stay in the copy you own", "Productive clock-time answers stay in the copy you own. The admitted question does not state those answers.", "Productive clock-time answers have no admitted frozen span."),
-            ("calendar-date", "Calendar-date syntax stays in the copy you own", "Calendar-date syntax stays in the copy you own. Weekday and month names do not state a date.", "Calendar-date syntax has no admitted frozen span."),
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.", 8, populate, [
+            ("clock-productive", "Productive clock-time answers stay in the copy you own", "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.", "Productive clock-time answers have no admitted frozen span."),
         ]),
         _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
         _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.", 2, populate, [
@@ -482,6 +508,9 @@ def build_units_16_20() -> dict:
         ]),
         _unit(builder, 20, "Admitted motion lines", "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.", 2, populate, []),
     ]
+    if probe_at == "end":
+        for text, role, owner in probe_says or []:
+            builder.say(17, text, role=role, owner=owner)
     _assert(builder, units)
     capabilities = [item for unit in units for item in unit["capabilities"]]
     return {
@@ -490,9 +519,44 @@ def build_units_16_20() -> dict:
         "examples": builder.examples,
         "provenance": builder.provenance,
         "authored": builder.authored,
-        "references": [_attribution_reference()],
+        "references": [_attribution_reference(), _unit17_reference()],
         "capabilities": capabilities,
+        "sources": _admitted_sources(frozen),
+        "rights": _admitted_rights(frozen),
     }
+
+
+def _admitted_sources(frozen: FrozenSources) -> list[dict]:
+    wanted = {
+        "src-wikipedia-date-time-country-1366690592",
+        "src-wikipedia-date-notation-russia-1357134172",
+    }
+    sources = []
+    for page in frozen.freeze["wikibooks"]["pages"]:
+        if page.get("sourceId") not in wanted:
+            continue
+        sources.append({
+            "id": page["sourceId"],
+            "title": page["title"],
+            "license": LICENSE_ID,
+            "attribution": page["attribution"],
+            "modification": "Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.",
+        })
+    if {item["id"] for item in sources} != wanted:
+        raise SystemExit(f"Clock and date sources were not frozen: {sources}")
+    return sources
+
+
+def _admitted_rights(frozen: FrozenSources) -> list[dict]:
+    return [
+        {
+            "id": "rights-" + source["id"].removeprefix("src-"),
+            "sourceId": source["id"],
+            "license": LICENSE_ID,
+            "permitsAppUse": True,
+        }
+        for source in _admitted_sources(frozen)
+    ]
 
 
 RESOLVED_CLAIMS = {
@@ -501,6 +565,8 @@ RESOLVED_CLAIMS = {
     "weekdays",
     "months",
     "clock-question",
+    "clock-expression-recognition",
+    "calendar-date",
     "comparison",
     "relative-kotoryy",
     "conditional-by",
@@ -573,14 +639,37 @@ def _attribution_reference() -> dict:
             "Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. "
             "Those license routes are not interchangeable. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
-            "No audio is included. Learner-facing dictionary glosses are delimited sense selections. "
-            "Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending."
+            "No audio is included. Learner-facing dictionary glosses are delimited sense selections."
         ),
         "introducedInUnit": 16,
         "sourceId": WIKIBOOKS_ID,
         "classification": "LICENSE_OR_ATTRIBUTION",
         "reviewStatus": "NOT_REQUIRED",
         "searchTerms": ["units 16-20 source notice"],
+    }
+
+
+def _unit17_reference() -> dict:
+    return {
+        "id": UNIT17_REFERENCE,
+        "title": "Unit 17 source notice",
+        "summary": "Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.",
+        "detail": (
+            "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c "
+            "under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
+            "The bounded clock phrases are frozen at Wikipedia oldid 1366690592. "
+            "The calendar-date examples are frozen at Wikipedia oldid 1357134172. "
+            "Those license routes are not interchangeable. "
+            "The admitted calendar-date relationships remain admitted. "
+            "The three clock phrases are bounded recognition. "
+            "Productive clock-time generation remains unresolved. "
+            "Review is pending."
+        ),
+        "introducedInUnit": 17,
+        "sourceId": WIKIBOOKS_ID,
+        "classification": "LICENSE_OR_ATTRIBUTION",
+        "reviewStatus": "NOT_REQUIRED",
+        "searchTerms": ["unit 17 source notice"],
     }
 
 
@@ -631,6 +720,8 @@ def _assert(builder: Builder, units: list[dict]) -> None:
                     raise SystemExit(f"Unit {number} ships a dirty gloss: {dirty}")
             for banned in ("dolphin", "pronounced", "Remember that", "Wade", "Blackwell"):
                 if banned.casefold() in host.casefold():
+                    if banned == "pronounced" and host == unfold_wiki_labels(DATE_SPAN):
+                        continue
                     raise SystemExit(f"Unit {number} ships excluded commentary: {banned}")
 
 
