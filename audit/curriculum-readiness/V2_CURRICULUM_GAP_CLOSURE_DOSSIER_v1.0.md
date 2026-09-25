@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `453b0114248b7fcfce55087ab9a63c54675212ba`  
-**Pack content-review digest:** `7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693`  
-**Repository source digest:** `38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145`  
+**Canonical commit:** `d702a534acde240738febd38c5676c809f83b1d0`  
+**Pack content-review digest:** `c1ed0048e4e62070939fcf5ea0dd02a3b90a4dbfcaf56403d8352f97b4231b92`  
+**Repository source digest:** `78268a4ad0e2bd82accd154c30e7a3ca4252d484b6cb9afc79f3ebf22bd2b2cd`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **13 units** — Units 7, 17, 19, and Units 21–30.
-- Units 16, 18, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, and 19 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability remains unresolved.
+- Content blockers: **12 units** — Units 7 and 17, and Units 21–30.
+- Units 16, 18, 19, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7 and 17 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -61,7 +61,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
@@ -80,7 +80,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three explicit Russian pairs — быстро/quickly, хорошо/well, and прекрасно/wonderfully — are admitted only as bounded form/gloss recognition (`adverb-form-gloss`). That sentence is not an approved productive Russian rule: its stated endings include `-ий`, `-а`, and `-е`, the Russian example `быстрый` ends in `-ый`, and the same sentence mixes Russian and Ukrainian examples. Learner instruction shows the three pairs. It does not teach the suffix sentence. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Reviewer and mapping signature fields stay blank.
+The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three explicit Russian pairs — быстро/quickly, хорошо/well, and прекрасно/wonderfully — are admitted only as bounded form/gloss recognition (`adverb-form-gloss`). That sentence is not an approved productive Russian rule: its stated endings include `-ий`, `-а`, and `-е`, the Russian example `быстрый` ends in `-ый`, and the same sentence mixes Russian and Ukrainian examples. Learner instruction shows the three pairs. It does not teach the suffix sentence. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Russian Wikipedia “Наречие” oldid 152437423, under the separate Russian Wikipedia copyrights page oldid 154562152, admits only that adverbs are invariant and the listed pairs быстрый — быстро and творческий — творчески. Those spans support `adverb-invariance` and `adverb-bounded-pairs`. They do not state a universal productive adverb paradigm and do not clear `adverb-paradigm`. Reviewer and mapping signature fields stay blank.
 
 #### `adverb-paradigm` — `obj-u7-adverb`
 
@@ -98,7 +98,7 @@ The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three expl
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Age, weekday, month, and clock-question spans remain admitted. `calendar-date` remains admitted. `productive-clock-time` is not admitted.
+Age, weekday, month, and clock-question spans remain admitted. `calendar-date` remains admitted. `productive-clock-time` is not admitted. The retained Pressbooks chapter for Diverse Russian, “Традиции: грамматика”, sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3, admits only the 0.00, 0.15, 0.30, and 0.45 lines as `productive-quarter-hour-time`. That Pressbooks license route is separate. Those lines do not clear `productive-clock-time`.
 
 The three clock phrases in Wikipedia “Date and time representation by country” oldid 1366690592, from `uses the same convention:` through `7:45 respectively`, are bounded clock-expression recognition (`clock-expression-recognition`): четверть восьмого/7:15, полвосьмого/7:30, and без четверти восемь/7:45. They do not establish a productive clock-time answer pattern. “Который час?” stays a question. Other hours are not derived.
 
@@ -120,21 +120,9 @@ Units 16, 18, and 20 have no open Batch A research requests. Their shared licens
 
 ### Unit 19 — Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-Conditional and obligation spans are admitted. Probability remains unresolved. No frozen Wikimedia span found in this pass states a probability reading of должен that is distinct from obligation. Obligation translations were not treated as probability evidence. Sources inspected and excluded for that claim include Wikibooks lesson 3 oldid 4460699, the Refugee Phrasebook, and the English or German modal articles Epistemic modality, Modality (semantics), and Modal verb. Wiktionary appendix pages were not used. The claim stays open and the unit stays `NOT_PREPARED`.
-
-#### `probability-dolzhen` — `obj-u19-probability`
-
-- **Required claim/skill:** Probability with forms of должен, limited to the meaning the admitted source explicitly states.
-- **Why the current record is insufficient:** The admitted obligation lines do not state a probability use.
-- **Required source:** A frozen licensed grammar span that explicitly supports the probability reading and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer modal force.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Conditional and obligation spans remain admitted. Probability is now a bounded admitted claim on English Wiktionary “должен” oldid 84965088, under Wiktionary:Copyrights oldid 87545419 and CC BY-SA 4.0. The admitted span is the likelihood sense and its example. The obligation example on the same page does not clear `probability-dolzhen`. This intake does not approve the unit, sign review, or approve the owned-edition mapping. No open Batch A research claim remains for Unit 19.
 
 ### Unit 21 — Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses
 
@@ -550,7 +538,7 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
-3. **Remaining Batch A research:** Unit 7 adverb-paradigm, Unit 17 productive-clock-time, and Unit 19 probability-dolzhen. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
+3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
 4. **Curriculum research batch B:** Units 21–25.
 5. **Curriculum research batch C:** Units 26–30.
 6. Generate the Unit 23 packet only after its instructional chain exists.

@@ -11,12 +11,12 @@ Unit 7 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 7 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 453b0114248b7fcfce55087ab9a63c54675212ba
-- Unit content-review SHA-256: 1f499eefd6beb0a4710f5de6b737fd70a4492035499a7fda53e221e46d5e8c5f
+- Curriculum source commit: d702a534acde240738febd38c5676c809f83b1d0
+- Unit content-review SHA-256: 058d40840dd71d057fa3330254f07fd2cba0c2ec0405968726eeb88c93bba1a0
 - Mapping-package SHA-256: 20298ccd10fadcd359b2fa73bebf0e7309772c6c78ffbc71730225664717b28c
-- Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
-- Review-package SHA-256: 58b25d2acb8bc44ccf9eca18264ba0d7359bf8eed11135ccd9a108ad2f24b61d
-- Repository source SHA-256: 38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145
+- Pack content-review SHA-256: c1ed0048e4e62070939fcf5ea0dd02a3b90a4dbfcaf56403d8352f97b4231b92
+- Review-package SHA-256: 6d2da8d8d441733646bff91b762838b1980c901456aec8842108b2ce20c944b4
+- Repository source SHA-256: 78268a4ad0e2bd82accd154c30e7a3ca4252d484b6cb9afc79f3ebf22bd2b2cd
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows and three adverb form/gloss pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, and the two admitted suffixal pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=118
+estimatedMinutes=142
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 7.
 
 ### UNIT `unit-7`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book, obj-u7-adverb-paradigm
-- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-adverb, u7-s-book, u7-s-gap-adverb-paradigm
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book, obj-u7-adverb-invariance, obj-u7-adverb-pairs, obj-u7-adverb-paradigm
+- Sessions: u7-s-orient, u7-s-default, u7-s-endings, u7-s-spelling, u7-s-question, u7-s-demonstrative, u7-s-place, u7-s-objectadj, u7-s-adverb, u7-s-book, u7-s-adverb-invariance, u7-s-adverb-pairs, u7-s-gap-adverb-paradigm
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e36b334c5e15bdfe924f58f1b8b1077b4fec38a5d3ca3ccbae973a0dd4620ec7
+- Content hash: 4e58a5365435558b48e1975ead64b10930dd17228f3e3dd8725c01b764c98434
 
 number=7
 title=Adjectives, agreement, demonstratives, adjective case forms, and adverbs
-topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows and three adverb form/gloss pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 7 is in development and is not prepared. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, and the two admitted suffixal pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.
 penguinLessonField=7
 prerequisites=6
-estimatedMinutes=118
+estimatedMinutes=142
 
 ### ADVANCEMENT `unit-7-advancement`
 
@@ -276,6 +276,44 @@ practice=
 checks=
 remediation=
 
+### OBJECTIVE `obj-u7-adverb-invariance`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c1a1314b8035e9001a2ad8aeebccf41ec6a5df8ff80682a8d89c056006329fec
+
+title=Admitted adverb invariance line
+kind=RECOGNITION
+unitNumber=7
+instruction=u7-st-orient,u7-st-teach-adverb-invariance-1,u7-st-teach-adverb-invariance-2
+examples=ex-u7-adverb-invariance-0,ex-u7-adverb-invariance-1
+practice=u7-st-guided-adverb-invariance-1
+checks=u7-i-adverb-invariance-1,u7-i-adverb-invariance-2
+remediation=u7-st-rem-adverb-invariance
+
+### OBJECTIVE `obj-u7-adverb-pairs`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 00d12b075b6a27c61c74f4aca8d5d211e577135d46639bc3a49cf0cbcf2ef825
+
+title=Admitted suffixal adverb pairs
+kind=RECOGNITION
+unitNumber=7
+instruction=u7-st-orient,u7-st-teach-adverb-pairs-1,u7-st-teach-adverb-pairs-2
+examples=ex-u7-adverb-pairs-0,ex-u7-adverb-pairs-1
+practice=u7-st-guided-adverb-pairs-1
+checks=u7-i-adverb-pairs-1,u7-i-adverb-pairs-2
+remediation=u7-st-rem-adverb-pairs
+
 ### OBJECTIVE `obj-u7-adverb-paradigm`
 
 - Objectives: obj-u7-adverb-paradigm
@@ -312,13 +350,13 @@ steps=u7-st-orient
 
 ### STEP `u7-st-orient`
 
-- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book
+- Objectives: obj-u7-default, obj-u7-endings, obj-u7-spelling, obj-u7-question, obj-u7-demonstrative, obj-u7-place, obj-u7-objectadj, obj-u7-adverb, obj-u7-book, obj-u7-adverb-invariance, obj-u7-adverb-pairs
 - Sessions: u7-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c22cdc6eb1b0bc3517f78d7c3ae440746997d5216604c6ca7101b0865a23ffa1
+- Content hash: 23ca46459387f8c6d61d4428ac28b970137b465e74e8975941898237d7281f7b
 
 kind=ORIENT
 title=Admitted agreement rows
@@ -1853,6 +1891,256 @@ bookDirection=Self-attest only after the Lesson 7 work in your copy.
 companionDirection=
 remediationStepId=
 
+### SESSION `u7-s-adverb-invariance`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0dce6e89bd03bfecf8c59c7a8537d08e2ab8824e27c0035bd24c2c27dcce7fa6
+
+title=Admitted adverb invariance line
+estimatedMinutes=12
+objectives=obj-u7-adverb-invariance
+steps=u7-st-teach-adverb-invariance-1,u7-st-guided-adverb-invariance-1,u7-st-teach-adverb-invariance-2,u7-st-rem-adverb-invariance,u7-st-check-adverb-invariance
+
+### STEP `u7-st-teach-adverb-invariance-1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 57d104be4b1c1ee678495096b9623e504e450bd714982752028ad5dd701ecd2e
+
+kind=TEACH
+title=Admitted lines
+body=Наречия — неизменяемые слова. Наречия — неизменяемые слова. 
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=ex-u7-adverb-invariance-0,ex-u7-adverb-invariance-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-guided-adverb-invariance-1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dea2ffe5b2bf4a29158e83b94c6a0405f0d0187504a631adbdc03a1b57a05db3
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u7-g-adverb-invariance-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb-invariance
+
+### STEP `u7-st-teach-adverb-invariance-2`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8bbcb9bbee77d72a90980e1ded635b811153e9a928e2b6e5a371f3c33165a99f
+
+kind=TEACH
+title=Admitted instruction
+body=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-rem-adverb-invariance`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 88b3aeb9ffcca72f5e22ada705e0e49fc63d4cc1e35cfe487e246200d75d4011
+
+kind=REMEDIATE
+title=Remediation
+body=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+dominantAction=Continue
+references=
+items=
+examples=ex-u7-adverb-invariance-0,ex-u7-adverb-invariance-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-check-adverb-invariance`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2fc1b603e7bb3d016f5b7bda09d1cd570dab35d97a97a6ccbaef5de7100c5c03
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u7-i-adverb-invariance-1,u7-i-adverb-invariance-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb-invariance
+
+### SESSION `u7-s-adverb-pairs`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b7aca91c382d3d0957eb3b8b716c45e9a0a590c3c621a040c9aad9d825366583
+
+title=Admitted suffixal adverb pairs
+estimatedMinutes=12
+objectives=obj-u7-adverb-pairs
+steps=u7-st-teach-adverb-pairs-1,u7-st-guided-adverb-pairs-1,u7-st-teach-adverb-pairs-2,u7-st-rem-adverb-pairs,u7-st-check-adverb-pairs
+
+### STEP `u7-st-teach-adverb-pairs-1`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4e7f3b8c6a51b11f4d34a4ad1f56a9c3b6801c59bc124a92309821e4a999362d
+
+kind=TEACH
+title=Admitted lines
+body=быстрый — быстро. творческий — творчески. 
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=ex-u7-adverb-pairs-0,ex-u7-adverb-pairs-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-guided-adverb-pairs-1`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9ec9dc99056e39f175773d2eb538cee8645b7bb360a786a5fcfc5ad51fe0736c
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u7-g-adverb-pairs-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb-pairs
+
+### STEP `u7-st-teach-adverb-pairs-2`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0933aeaf9af6e0c34f9009e57a7d0631ee412c989016971b6c2989158f430085
+
+kind=TEACH
+title=Admitted instruction
+body=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-rem-adverb-pairs`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6f0d3dba45caf042a6886566458b3a33116a906af551a2f33f20314c379eb999
+
+kind=REMEDIATE
+title=Remediation
+body=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+dominantAction=Continue
+references=
+items=
+examples=ex-u7-adverb-pairs-0,ex-u7-adverb-pairs-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-check-adverb-pairs`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9d7fe94832a31916cc6472de057ca741aa13e759e34d4fd304b20d5dfd77778f
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u7-i-adverb-pairs-1,u7-i-adverb-pairs-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u7-st-rem-adverb-pairs
+
 ### SESSION `u7-s-gap-adverb-paradigm`
 
 - Objectives: obj-u7-adverb-paradigm
@@ -2791,6 +3079,74 @@ note=wonderfully
 objectiveId=obj-u7-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u7-adverb-invariance-0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1a03bea4b4be1e3a1994c4b5a43b1c1c08760577c2b3b40dc61c63226e6266a
+
+kind=LEXICAL
+letterId=
+display=Наречия
+note=неизменяемые слова
+objectiveId=obj-u7-adverb-invariance
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u7-adverb-invariance-1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 005d8d3f0b55156c65bdd1ef82836434bcc2806edd5e2eb0fc5ecf33a57b6fd8
+
+kind=LEXICAL
+letterId=
+display=Наречия
+note=неизменяемые слова
+objectiveId=obj-u7-adverb-invariance
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u7-adverb-pairs-0`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 692ee48d845c92f904f2fa134c37b21fefbe1f8cc0ecfa9fbf87ce936cc1a278
+
+kind=LEXICAL
+letterId=
+display=быстрый
+note=быстро
+objectiveId=obj-u7-adverb-pairs
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u7-adverb-pairs-1`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d13599c3c370c5282631579b40c7afb0171cb503fc642382b2837cea6067af48
+
+kind=LEXICAL
+letterId=
+display=творческий
+note=творчески
+objectiveId=obj-u7-adverb-pairs
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u7-g-default-0`
 
 - Objectives: obj-u7-default
@@ -3063,6 +3419,76 @@ contrastMembers=quickly | well | wonderfully
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-0-ru | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-1-en | prov-ex-u7-adverb-2-en
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u7-g-adverb-invariance-0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ce11e21b339b74369106d56f8da5bca2fdc9592b0f6e63ada991014239ed534c
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=Наречия
+options=неизменяемые слова | не склоняются
+answer=неизменяемые слова
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+objectiveId=obj-u7-adverb-invariance
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains не склоняются.
+testedFeature=ADVERB_INVARIANCE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-invariance-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u7-adverb-invariance-0-en
+distractorSourceIds= | prov-u7-adverb-invariance-x-0
+distractorDifference= | The admitted line also contains не склоняются.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+contrastMembers=неизменяемые слова | не склоняются
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-x-0
+responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u7-g-adverb-pairs-0`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 801b759ba7fb449c9a8b3146500e248b2c3641204dd45a52130869467614a759
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=быстрый
+options=быстро | творчески
+answer=быстро
+feedback=The frozen source pairs the shown form "быстрый" with the admitted gloss "быстро". быстрый — быстро
+objectiveId=obj-u7-adverb-pairs
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains творчески.
+testedFeature=ADVERB_PAIR_FAST
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-pairs-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u7-adverb-pairs-0-en
+distractorSourceIds= | prov-ex-u7-adverb-pairs-1-en
+distractorDifference= | The admitted line also contains творчески.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "быстрый" with the admitted gloss "быстро". быстрый — быстро
+contrastMembers=быстро | творчески
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-pairs-0-ru | prov-ex-u7-adverb-pairs-0-en | prov-ex-u7-adverb-pairs-1-en
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u7-i-default-1`
 
@@ -3916,6 +4342,146 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u7-adverb-2-ru | prov-ex-u7-adverb-2-en | prov-ex-u7-adverb-0-en | prov-ex-u7-adverb-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u7-i-adverb-invariance-1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9d81f79e538d168b4dec84700b376d8b25989d7bcdd6ad4280a258fa8a010266
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=Наречия
+options=неизменяемые слова | не спрягаются
+answer=неизменяемые слова
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+objectiveId=obj-u7-adverb-invariance
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains не спрягаются.
+testedFeature=ADVERB_INVARIANCE_AGAIN
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-invariance-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-invariance-0-en
+distractorSourceIds= | prov-u7-adverb-invariance-x-1
+distractorDifference= | The admitted line also contains не спрягаются.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+contrastMembers=неизменяемые слова | не спрягаются
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-x-1
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u7-i-adverb-invariance-2`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c22c30f9dc3ac4ef39eab54cd4489227b9353a6af212aeec29c60c84dccd1c95
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=Наречия
+options=неизменяемые слова | не имеют окончаний
+answer=неизменяемые слова
+feedback=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+objectiveId=obj-u7-adverb-invariance
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains не имеют окончаний.
+testedFeature=ADVERB_INVARIANCE_ENDINGS
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-invariance-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-invariance-0-en
+distractorSourceIds= | prov-u7-adverb-invariance-rem-r3
+distractorDifference= | The admitted line also contains не имеют окончаний.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наречия" with the admitted gloss "неизменяемые слова".
+contrastMembers=неизменяемые слова | не имеют окончаний
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-invariance-0-ru | prov-ex-u7-adverb-invariance-0-en | prov-u7-adverb-invariance-rem-r3
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u7-i-adverb-pairs-1`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 262c93be9be8ed8dd4f3972e0286b59a58d24a8436168f52aedf764b917c5a37
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=творческий
+options=творчески | быстро
+answer=творчески
+feedback=The frozen source pairs the shown form "творческий" with the admitted gloss "творчески". творческий — творчески
+objectiveId=obj-u7-adverb-pairs
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains быстро.
+testedFeature=ADVERB_PAIR_CREATIVE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-pairs-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-pairs-1-en
+distractorSourceIds= | prov-ex-u7-adverb-pairs-0-en
+distractorDifference= | The admitted line also contains быстро.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "творческий" with the admitted gloss "творчески". творческий — творчески
+contrastMembers=творчески | быстро
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-pairs-1-ru | prov-ex-u7-adverb-pairs-1-en | prov-ex-u7-adverb-pairs-0-en
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u7-i-adverb-pairs-2`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bf85ecd6dcd32d9ed8d23f65418292bdf79b813e4478bc0e05c9c99be6952199
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted wording is written beside the shown form?
+promptLetter=быстрый
+options=быстро | творческий
+answer=быстро
+feedback=The frozen source pairs the shown form "быстрый" with the admitted gloss "быстро". быстрый — быстро
+objectiveId=obj-u7-adverb-pairs
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The admitted line also contains творческий.
+testedFeature=ADVERB_PAIR_FAST_AGAIN
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u7-adverb-pairs-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u7-adverb-pairs-0-en
+distractorSourceIds= | prov-ex-u7-adverb-pairs-1-ru
+distractorDifference= | The admitted line also contains творческий.
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "быстрый" with the admitted gloss "быстро". быстрый — быстро
+contrastMembers=быстро | творческий
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u7-adverb-pairs-0-ru | prov-ex-u7-adverb-pairs-0-en | prov-ex-u7-adverb-pairs-1-ru
+responseKind=RUSSIAN_TOKEN
+
 ### REFERENCE `ref-u610-attribution`
 
 - Objectives: none
@@ -3932,6 +4498,24 @@ detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
+reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-u7-ruwiki-attribution`
+
+- Objectives: none
+- Sessions: u7-s-adverb-invariance, u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: LICENSE_OR_ATTRIBUTION
+- Current review status: NOT_REQUIRED
+- Content hash: c4e25639c052aa12eaff7e704454143bf257de50472e7b047b391c15776ccc37
+
+title=Unit 7 Russian Wikipedia notice
+summary=The bounded adverb lines adapt one frozen Russian Wikipedia revision.
+detail=The invariance sentence and the suffixal pairs are frozen at Russian Wikipedia oldid 152437423 under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. That license route is not the English Wikipedia, Wiktionary, Wikibooks, Pressbooks, or OpenRussian route. The two admitted pairs are быстрый — быстро and творческий — творчески. They do not state a universal adverb paradigm. Review is pending.
+classification=LICENSE_OR_ATTRIBUTION
+introducedInUnit=7
+searchTerms=unit 7 russian wikipedia notice
 reviewStatus=NOT_REQUIRED
 
 ### PROVENANCE `prov-ex-or-u7-default-0`
@@ -6080,6 +6664,238 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u7-adverb-invariance-0-en`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dddadacabccdc7d2b557eaf0948380c7ad2957925967b7d3e7ba5681e5da89a0
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=неизменяемые слова
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-invariance-0-ru`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f3f2345fcd08f8d2943d567652d2e3c7272161c6e628eb76b888e1475534ddc2
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=Наречия
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e1bb37ac2f9e75f3a6719ab9d021c63740299a0fabc4807fc0d3af1eb8b7836c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-invariance-1-en`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fa34f5c5e240dd5fb861b8f2e9afb836d6d895ca14d9eb9796c399422b2a3c37
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=неизменяемые слова
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-invariance-1-ru`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4791f85956e250037219bf40c09b3e561a34f19e78a2186f0ef750d3d4dd7919
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=Наречия
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e1bb37ac2f9e75f3a6719ab9d021c63740299a0fabc4807fc0d3af1eb8b7836c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-pairs-0-en`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 58fb55c5ced8f96c7e869a440ebfec94132ee4b42138786bbda15b2b7b131d3b
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=быстро
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-pairs-0-ru`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f7d6c8b23b554ba65fa60aa8fc3ea5409b16583f31802dd9f2c1c051e42ad281
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=быстрый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-pairs-1-en`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 14b55bc00435b179a6a1aebc31cf834a088c08df0b5beb5c9841873accd9d4a1
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=творчески
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=5d9e385a71524d33fc9cecedf212ef5e3644ba0319dc3d43bdc4cf9a7eddd9db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u7-adverb-pairs-1-ru`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a1d1854c38b9c62c899628294b2c49882842c2d4ad3ea9e474d156266b463c33
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=творческий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=041cb2cd5bcaa07d787db6e9d6d9517edb7f9932b9b29cfe056f3f052c5724b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u7-demonstrative-0-en`
 
 - Objectives: obj-u7-demonstrative
@@ -7002,6 +7818,441 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=02637d6b3f678ad1cd3c0cde1b277703ec7f079ef4373471dcf909b569565433
 contentHash=6a3a08ceb7a59867365baa3e9d0909c5836fb2924f6b3887bc669d130b1b4610
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b32811e2b8d566778cd8858c3c27bad2b94c7f2aa926d5a8318e276ccebf3a21
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem-r0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dd2bd0cad404ea0c2030834da241f884eb0cbd4c9d0cdfafcbb8ed060da77c8d
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=Наречия
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e1bb37ac2f9e75f3a6719ab9d021c63740299a0fabc4807fc0d3af1eb8b7836c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem-r1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5fda77eed38874bce08dab280ad447010f34b00a344aa9fc11f42a31a863cc35
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=неизменяемые слова
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem-r2`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2774567bb3dd4fb2f2a187ba5e58df0074faf618f12fd32d5771caac19fefe9a
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=они не склоняются и не спрягаются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=6c8984c2e96eadef7cbb2fc4f24d9e8c4dc796aebb57144804bd2ade8a1cde36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem-r3`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 31b44e4a6f289d343d78201dc67d67240131cfa2e4be00d1fa42acfb1a44df11
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не имеют окончаний
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=14941d44c0fa2aba8ba651f8a4b9f13e260ff48a34e3c695d6276ec034bea07b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-rem-r4`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ad463ad5c91ff2bca82fea7111d0eb0d570b287bfb364ba634d8f1e22b8fe14c
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не изменяются по родам и числам
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=6320a817d328f553d655d2eb700feb6b8ea0ef0a34f0f70da74255aee0839253
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-0`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 57fdcbe469fa7f97e18fb8d6af9bf4e9065a953742e41c319c1f456251e1d4e6
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не склоняются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=d0ed17d9f650433967ea16d052b7bfe17c0a29a9128c305b3a43fde3124b5c78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-1`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b71b7eb91c8457bdc64bc7c689706bd7842025e6ee055fb9ae77272fa11e5633
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не спрягаются
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=e0ebc1ba65b522a5b2ca763e9b3ca22a0e9ae7ae38e591418e6e033f058ec92c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-invariance-x-2`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: da950c090158b9665f48ff310020d41e2800961f6a08d52f5b05f1eea42b2b20
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча
+originalSourceText=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+shippedText=не имеют окончаний
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5
+contentHash=14941d44c0fa2aba8ba651f8a4b9f13e260ff48a34e3c695d6276ec034bea07b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c9f83aef325a3ebee0db48c983c10870ebacace0c3b8fd7c371008fd56d874a4
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem-r0`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8e937c9c51e336cc4d4326bf208c626d694ee3376c967ba689ea50a2c5f84adf
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=суффиксальный
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=0ada4bdc3828417a772a60281cb114a1dd6c9f2724d90c317adb2b5ea3c7e840
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem-r1`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 89a1777c961d66c25d193797a8049751b46eb71f007982fd39b6efa52bbe6ef7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=быстрый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem-r2`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fe6cb72f71ed96e2dc07ce705b2839e6acc5753e265ee45137d1b229b4153d2d
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=быстро
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem-r3`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 06a7fc55da618e8daf8a97d23311284030c6d407012f8793f129df5f1e86102e
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=творческий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=041cb2cd5bcaa07d787db6e9d6d9517edb7f9932b9b29cfe056f3f052c5724b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u7-adverb-pairs-rem-r4`
+
+- Objectives: obj-u7-adverb-pairs
+- Sessions: u7-s-adverb-pairs
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2cd1dc9e7eb29cfe14549969c7225c2e55112d6c0db57faad5bc4590a34355cc
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423
+sourceRevision=152437423
+sourceRecordId=ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+originalSourceText=* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';
+shippedText=творчески
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de
+contentHash=5d9e385a71524d33fc9cecedf212ef5e3644ba0319dc3d43bdc4cf9a7eddd9db
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8388,10 +9639,10 @@ text=Which admitted English gloss is written beside the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2f0872eeec91dee2acf3136882ece350efe5a000e0b8c2eb99ca4ad0783abe8c
+- Content hash: 137f2095cbb18b6ab9a13f3b951d5b5e215be12aef8133856d0ca42ca5062c87
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Adjective-to-adverb paradigm stays in the copy you own
+text=The admitted line also contains
 
 ### AUTHORED_ENGLISH `en-u7-199`
 
@@ -8401,7 +9652,33 @@ text=Adjective-to-adverb paradigm stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b03fc9d69716c89f845ce395403d45243ea44934c7c4b99bf9a01d8bd8f16511
+- Content hash: a760452c1350ce8599ee9c3bf5e735a1c07b4c7ecb52ac930b6072f9f10d1b0f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted wording is written beside the shown form?
+
+### AUTHORED_ENGLISH `en-u7-200`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2ed9cd1a0b7976d94cd2d0713221a0337bf6499b56c69f5d7c0ba4a9899ab8d1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Adjective-to-adverb paradigm stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u7-201`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 165b7d25bbb8e8bc38f02d443dbc930b657286d4a5da21722ae7ee6fad31f6a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.
@@ -8449,6 +9726,21 @@ Selected excerpts. Russian quotations are unchanged. English claims are quoted, 
 Adverb
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-ruwiki-narechie-152437423`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 29789030bca311f63885d930742269e566bb726fd98e5ec35b10b7f1cbc850ba
+
+Наречие
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -8505,6 +9797,20 @@ permitsAppUse=true
 - Content hash: 40b9979ebd3aabef53f35841ccd212d92d2d594289cadaabb3fdd08292858540
 
 src-wikipedia-adverb-1374548415
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-narechie-152437423`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-narechie-152437423
+- Rights: rights-ruwiki-narechie-152437423
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 762ad4e4d8b043aebb049483c835697bb6e84325e4099dadf0c1659bf38b7d67
+
+src-ruwiki-narechie-152437423
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -8665,6 +9971,24 @@ permitsAppUse=true
 - `obj-u7-adverb` REMEDIATION `u7-st-rem-adverb`
 - `obj-u7-book` INSTRUCTION `u7-st-book-work`
 - `obj-u7-book` INSTRUCTION `u7-st-book`
+- `obj-u7-adverb-invariance` INSTRUCTION `u7-st-orient`
+- `obj-u7-adverb-invariance` INSTRUCTION `u7-st-teach-adverb-invariance-1`
+- `obj-u7-adverb-invariance` INSTRUCTION `u7-st-teach-adverb-invariance-2`
+- `obj-u7-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-0`
+- `obj-u7-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-1`
+- `obj-u7-adverb-invariance` PRACTICE `u7-st-guided-adverb-invariance-1`
+- `obj-u7-adverb-invariance` CHECK `u7-i-adverb-invariance-1`
+- `obj-u7-adverb-invariance` CHECK `u7-i-adverb-invariance-2`
+- `obj-u7-adverb-invariance` REMEDIATION `u7-st-rem-adverb-invariance`
+- `obj-u7-adverb-pairs` INSTRUCTION `u7-st-orient`
+- `obj-u7-adverb-pairs` INSTRUCTION `u7-st-teach-adverb-pairs-1`
+- `obj-u7-adverb-pairs` INSTRUCTION `u7-st-teach-adverb-pairs-2`
+- `obj-u7-adverb-pairs` EXAMPLE `ex-u7-adverb-pairs-0`
+- `obj-u7-adverb-pairs` EXAMPLE `ex-u7-adverb-pairs-1`
+- `obj-u7-adverb-pairs` PRACTICE `u7-st-guided-adverb-pairs-1`
+- `obj-u7-adverb-pairs` CHECK `u7-i-adverb-pairs-1`
+- `obj-u7-adverb-pairs` CHECK `u7-i-adverb-pairs-2`
+- `obj-u7-adverb-pairs` REMEDIATION `u7-st-rem-adverb-pairs`
 - `obj-u7-adverb-paradigm` INSTRUCTION `u7-st-gap-adverb-paradigm`
 - `u7-s-orient` OBJECTIVE `obj-u7-default`
 - `u7-s-orient` OBJECTIVE `obj-u7-endings`
@@ -8841,6 +10165,30 @@ permitsAppUse=true
 - `u7-st-check-adverb` ITEM `u7-i-adverb-2`
 - `u7-s-book` OBJECTIVE `obj-u7-book`
 - `u7-st-book-work` REFERENCE `ref-u610-attribution`
+- `u7-s-adverb-invariance` OBJECTIVE `obj-u7-adverb-invariance`
+- `u7-st-teach-adverb-invariance-1` EXAMPLE `ex-u7-adverb-invariance-0`
+- `u7-st-teach-adverb-invariance-1` EXAMPLE `ex-u7-adverb-invariance-1`
+- `u7-st-teach-adverb-invariance-1` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-guided-adverb-invariance-1` REMEDIATION `u7-st-rem-adverb-invariance`
+- `u7-st-guided-adverb-invariance-1` ITEM `u7-g-adverb-invariance-0`
+- `u7-st-teach-adverb-invariance-2` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-rem-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-0`
+- `u7-st-rem-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-1`
+- `u7-st-check-adverb-invariance` REMEDIATION `u7-st-rem-adverb-invariance`
+- `u7-st-check-adverb-invariance` ITEM `u7-i-adverb-invariance-1`
+- `u7-st-check-adverb-invariance` ITEM `u7-i-adverb-invariance-2`
+- `u7-s-adverb-pairs` OBJECTIVE `obj-u7-adverb-pairs`
+- `u7-st-teach-adverb-pairs-1` EXAMPLE `ex-u7-adverb-pairs-0`
+- `u7-st-teach-adverb-pairs-1` EXAMPLE `ex-u7-adverb-pairs-1`
+- `u7-st-teach-adverb-pairs-1` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-guided-adverb-pairs-1` REMEDIATION `u7-st-rem-adverb-pairs`
+- `u7-st-guided-adverb-pairs-1` ITEM `u7-g-adverb-pairs-0`
+- `u7-st-teach-adverb-pairs-2` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-rem-adverb-pairs` EXAMPLE `ex-u7-adverb-pairs-0`
+- `u7-st-rem-adverb-pairs` EXAMPLE `ex-u7-adverb-pairs-1`
+- `u7-st-check-adverb-pairs` REMEDIATION `u7-st-rem-adverb-pairs`
+- `u7-st-check-adverb-pairs` ITEM `u7-i-adverb-pairs-1`
+- `u7-st-check-adverb-pairs` ITEM `u7-i-adverb-pairs-2`
 - `u7-s-gap-adverb-paradigm` OBJECTIVE `obj-u7-adverb-paradigm`
 - `u7-st-gap-adverb-paradigm` REFERENCE `ref-u610-attribution`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
@@ -8917,6 +10265,14 @@ permitsAppUse=true
 - `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-1-ru`
 - `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-2-en`
 - `obj-u7-adverb` PROVENANCE `prov-ex-u7-adverb-2-ru`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-ex-u7-adverb-invariance-0-en`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-ex-u7-adverb-invariance-0-ru`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-ex-u7-adverb-invariance-1-en`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-ex-u7-adverb-invariance-1-ru`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-ex-u7-adverb-pairs-0-en`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-ex-u7-adverb-pairs-0-ru`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-ex-u7-adverb-pairs-1-en`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-ex-u7-adverb-pairs-1-ru`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-en`
 - `obj-u7-demonstrative` PROVENANCE `prov-ex-u7-demonstrative-0-ru`
 - `obj-u7-endings` PROVENANCE `prov-ex-u7-endings-0-en`
@@ -8949,6 +10305,21 @@ permitsAppUse=true
 - `obj-u7-place` PROVENANCE `prov-ex-u7-place-2-ru`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-en`
 - `obj-u7-spelling` PROVENANCE `prov-ex-u7-spelling-0-ru`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem-r0`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem-r1`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem-r2`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem-r3`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-rem-r4`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-0`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-1`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-u7-adverb-invariance-x-2`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r0`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r1`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r2`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r3`
+- `obj-u7-adverb-pairs` PROVENANCE `prov-u7-adverb-pairs-rem-r4`
 - `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem`
 - `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r0`
 - `obj-u7-adverb` PROVENANCE `prov-u7-adverb-rem-r1`

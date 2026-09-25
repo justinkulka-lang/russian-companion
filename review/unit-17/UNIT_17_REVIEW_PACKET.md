@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 453b0114248b7fcfce55087ab9a63c54675212ba
-- Unit content-review SHA-256: 68b2507b3e75d59c639cf204d528085623d4c4a6398345233f73d5ccb0ce721b
+- Curriculum source commit: d702a534acde240738febd38c5676c809f83b1d0
+- Unit content-review SHA-256: 52377652b325bffe7f652eeac353f0ea2350a75374ffabec47417730bd878d55
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
-- Review-package SHA-256: 9e91b30c4bd6da23f18c4ba995ca1e1c5f77cdc678032190e3f75d9b4d137b64
-- Repository source SHA-256: 38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145
+- Pack content-review SHA-256: c1ed0048e4e62070939fcf5ea0dd02a3b90a4dbfcaf56403d8352f97b4231b92
+- Review-package SHA-256: f38cbfb6f0dd1f566785b26721243d088f410f7aa51062a7d25683339db096d1
+- Repository source SHA-256: 78268a4ad0e2bd82accd154c30e7a3ca4252d484b6cb9afc79f3ebf22bd2b2cd
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=142
+estimatedMinutes=154
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 17.
 
 ### UNIT `unit-17`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book, obj-u17-clock-productive
-- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book, obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-ordinals, u17-s-hours, u17-s-years, u17-s-minutes, u17-s-age, u17-s-weekdays, u17-s-months, u17-s-clock, u17-s-clock-answers, u17-s-quarter-hour, u17-s-calendar-date, u17-s-book, u17-s-gap-clock-productive
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 74bf3c7645dcb5247b5e3fa01947cfefbe4079b03bb026355ae8a8671b73f0e2
+- Content hash: 094488a170e112e5f02c4513f6fc170d18ed067fba57d9435fde0a84b46bb965
 
 number=17
 title=Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
-topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=17
 prerequisites=16
-estimatedMinutes=142
+estimatedMinutes=154
 
 ### ADVANCEMENT `unit-17-advancement`
 
@@ -276,6 +276,25 @@ practice=u17-st-guided-clock-answers-1
 checks=u17-i-clock-answers-1,u17-i-clock-answers-2
 remediation=u17-st-rem-clock-answers
 
+### OBJECTIVE `obj-u17-quarter-hour`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f7ae40e3ad6624b19a89ca7406318a780b00eb9f3ff53485cb757f3250bb4eff
+
+title=Admitted quarter-hour at-what-time lines
+kind=RECOGNITION
+unitNumber=17
+instruction=u17-st-orient,u17-st-teach-quarter-hour-1,u17-st-teach-quarter-hour-2,u17-st-teach-quarter-hour-3,u17-st-teach-quarter-hour-4,u17-st-teach-quarter-hour-5
+examples=ex-u17-quarter-hour-0,ex-u17-quarter-hour-1,ex-u17-quarter-hour-2,ex-u17-quarter-hour-3,ex-u17-quarter-hour-4,ex-u17-quarter-hour-5,ex-u17-quarter-hour-6,ex-u17-quarter-hour-7
+practice=u17-st-guided-quarter-hour-1
+checks=u17-i-quarter-hour-1,u17-i-quarter-hour-2,u17-i-quarter-hour-3
+remediation=u17-st-rem-quarter-hour
+
 ### OBJECTIVE `obj-u17-calendar-date`
 
 - Objectives: obj-u17-calendar-date
@@ -335,32 +354,32 @@ remediation=
 
 ### SESSION `u17-s-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2eab689fc6c3cb536f85a7844a318907ced702483dae46df0e785b8f1d9f0633
+- Content hash: b11e1173a8ddf9a87009455e919b6e5cc81b32e527d896d1bd5050219363bb00
 
 title=Admitted number and quantity rows
 estimatedMinutes=8
-objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-clock-answers,obj-u17-calendar-date,obj-u17-book
+objectives=obj-u17-ordinals,obj-u17-hours,obj-u17-years,obj-u17-minutes,obj-u17-age,obj-u17-weekdays,obj-u17-months,obj-u17-clock,obj-u17-clock-answers,obj-u17-quarter-hour,obj-u17-calendar-date,obj-u17-book
 steps=u17-st-orient
 
 ### STEP `u17-st-orient`
 
-- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-calendar-date, obj-u17-book
+- Objectives: obj-u17-ordinals, obj-u17-hours, obj-u17-years, obj-u17-minutes, obj-u17-age, obj-u17-weekdays, obj-u17-months, obj-u17-clock, obj-u17-clock-answers, obj-u17-quarter-hour, obj-u17-calendar-date, obj-u17-book
 - Sessions: u17-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b948c5576b3d7a53ffa1cf2e85a95b3abd4fb319066441f003dec87615fa3e47
+- Content hash: e93dd9b3d60f44de6fc8fcfbe273879558482ffcaf75de0f38fdac4a385f5117
 
 kind=ORIENT
 title=Admitted number and quantity rows
-body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.
+body=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1649,6 +1668,197 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-clock-answers
 
+### SESSION `u17-s-quarter-hour`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c7eb2766e7e7cd2499b8dd313ff7f907dd890ddc464dbdf36303cbfc907b3195
+
+title=Admitted quarter-hour at-what-time lines
+estimatedMinutes=12
+objectives=obj-u17-quarter-hour
+steps=u17-st-teach-quarter-hour-1,u17-st-guided-quarter-hour-1,u17-st-teach-quarter-hour-2,u17-st-teach-quarter-hour-3,u17-st-teach-quarter-hour-4,u17-st-teach-quarter-hour-5,u17-st-rem-quarter-hour,u17-st-check-quarter-hour
+
+### STEP `u17-st-teach-quarter-hour-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0cd591e42d1b7fc41ce037301824031fc0571ed435ac322e77c15efc4c8be97e
+
+kind=TEACH
+title=Admitted lines
+body=Концерт начинается в шесть часов. — 18.00. Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. 
+dominantAction=Continue
+references=ref-u17-pressbooks-attribution
+items=
+examples=ex-u17-quarter-hour-0,ex-u17-quarter-hour-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-guided-quarter-hour-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3ad538a6460a23bd336ff17c27f130a8357afb6b3f4f6edb3b8d553492e332b6
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u17-g-quarter-hour-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-quarter-hour
+
+### STEP `u17-st-teach-quarter-hour-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2f802d37f6d0f0f076abbfaa81ddfb059c5c590c21bb01cf113d7cb95de7ba01
+
+kind=TEACH
+title=Admitted instruction
+body=At what time on the hour (0.00)
+dominantAction=Continue
+references=ref-u17-pressbooks-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-quarter-hour-3`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 238e4dd3f0109b6a1c3862406ba175288d35fc238fffa9094453493d7d9160b8
+
+kind=TEACH
+title=Admitted lines
+body=Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Передача начинается без четверти три. — 2.45 – 3 without a quarter. 
+dominantAction=Continue
+references=ref-u17-pressbooks-attribution
+items=
+examples=ex-u17-quarter-hour-2,ex-u17-quarter-hour-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-quarter-hour-4`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8160a756a87c75ac1234cd703dd322bfdac51915780758d8189d5829e2058e5e
+
+kind=TEACH
+title=Admitted lines
+body=Она была дома в час. — 13.00. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. 
+dominantAction=Continue
+references=ref-u17-pressbooks-attribution
+items=
+examples=ex-u17-quarter-hour-4,ex-u17-quarter-hour-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-quarter-hour-5`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f52a886dc1652580f8d05ffabff5f6fb8a3e0359b2d1b3b9f023e6b8bdea489d
+
+kind=TEACH
+title=Admitted lines
+body=Мы будем свободны в полвторого. — 1.30 – half of the second hour. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. 
+dominantAction=Continue
+references=ref-u17-pressbooks-attribution
+items=
+examples=ex-u17-quarter-hour-6,ex-u17-quarter-hour-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-rem-quarter-hour`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 221cb738ed2a2c74a29e69a7f21bb8c870dc072a387d498d8a4a4d89496a2f75
+
+kind=REMEDIATE
+title=Remediation
+body=At what time on the hour (0.00)
+dominantAction=Continue
+references=
+items=
+examples=ex-u17-quarter-hour-0,ex-u17-quarter-hour-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-check-quarter-hour`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 52661dbd91afe7df837bd996667667fd08cf4c167b955b29e0c9dfa021e506b6
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u17-i-quarter-hour-1,u17-i-quarter-hour-2,u17-i-quarter-hour-3
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-quarter-hour
+
 ### SESSION `u17-s-calendar-date`
 
 - Objectives: obj-u17-calendar-date
@@ -2367,6 +2577,142 @@ note=7:45
 objectiveId=obj-u17-clock-answers
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u17-quarter-hour-0`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d944a1b3465f84cf3e528bcde6a97928d5ced51ead9cc971455686afc9d75f62
+
+kind=LEXICAL
+letterId=
+display=Концерт начинается в шесть часов.
+note=18.00
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8ba6e76fb8bbf83dd2f7c0edee67c125cd7b7413e9741c7211ba37c1ad7172b6
+
+kind=LEXICAL
+letterId=
+display=Я приду в четверть восьмого.
+note=7.15 – quarter of the eighth hour
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9ce2a6c19af5acccc9542cec3c1c38c43b9d8b9179e5fd39cff6d25d267b5f4f
+
+kind=LEXICAL
+letterId=
+display=Наш рейс уезжает в половине пятого.
+note=4.30 – half of the fifth hour
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-3`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0d1838f7f2fad4b0f81e6b0c57400a0635bb152d40815e20353d77a29848e890
+
+kind=LEXICAL
+letterId=
+display=Передача начинается без четверти три.
+note=2.45 – 3 without a quarter
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-4`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5e1fb232977b58e92f85c881ad811bc8ee6afb40a5081facf412ba19caa72965
+
+kind=LEXICAL
+letterId=
+display=Она была дома в час.
+note=13.00
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-5`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f879bca2c4c5eff2e4c8c1e6b6934e78d316c2b74364a37824da568c332a35f
+
+kind=LEXICAL
+letterId=
+display=Он нам позвонил в пятнадцать минут десятого.
+note=9.15 – 15 minutes of the tenth hour
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-6`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 33745b306ff6077c4cb1ddf0f269cc93b50e976ddf427af8dcb2135e29a82335
+
+kind=LEXICAL
+letterId=
+display=Мы будем свободны в полвторого.
+note=1.30 – half of the second hour
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u17-quarter-hour-7`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a2f274279df18989f89aca2c320813495ed4646f67074063e5288ebcb219759c
+
+kind=LEXICAL
+letterId=
+display=Она обычно приходит на работу без пятнадцати девять.
+note=8.45 – 9 without 15 minutes
+objectiveId=obj-u17-quarter-hour
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### EXAMPLE `ex-u17-calendar-date-0`
 
 - Objectives: obj-u17-calendar-date
@@ -2714,6 +3060,41 @@ whyAnswerDemonstratesObjective=The frozen source pairs the shown form "четв�
 contrastMembers=7:15 | 7:30 | 7:45
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-clock-answers-0-ru | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u17-g-quarter-hour-0`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 536f6c0eaecbab5a5bdc4ee16f6be33c574ff31ccd355392f6dcb6ec0d710413
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Концерт начинается в шесть часов.
+options=18.00 | 7.15 – quarter of the eighth hour | 4.30 – half of the fifth hour
+answer=18.00
+feedback=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+objectiveId=obj-u17-quarter-hour
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+testedFeature=QUARTER_00
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-quarter-hour-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u17-quarter-hour-0-en
+distractorSourceIds= | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-2-en
+distractorDifference= | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+contrastMembers=18.00 | 7.15 – quarter of the eighth hour | 4.30 – half of the fifth hour
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-quarter-hour-0-ru | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-2-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u17-g-calendar-date-0`
@@ -3381,6 +3762,111 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-clock-answers-2-ru | prov-ex-u17-clock-answers-2-en | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u17-i-quarter-hour-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 17c79c7f6893dbb5cb6c7efbaae554e5f74c4520e50ae33a48a730482604b663
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Я приду в четверть восьмого.
+options=7.15 – quarter of the eighth hour | 18.00 | 4.30 – half of the fifth hour
+answer=7.15 – quarter of the eighth hour
+feedback=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+objectiveId=obj-u17-quarter-hour
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+testedFeature=QUARTER_15
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-quarter-hour-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-quarter-hour-1-en
+distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-2-en
+distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+contrastMembers=7.15 – quarter of the eighth hour | 18.00 | 4.30 – half of the fifth hour
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-quarter-hour-1-ru | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-2-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-quarter-hour-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1986f1850ef97270aba6939008b4e117c8fc3edfb83be41057fe0c127d8cdf70
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Наш рейс уезжает в половине пятого.
+options=4.30 – half of the fifth hour | 18.00 | 7.15 – quarter of the eighth hour
+answer=4.30 – half of the fifth hour
+feedback=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+objectiveId=obj-u17-quarter-hour
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+testedFeature=QUARTER_30
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-quarter-hour-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-quarter-hour-2-en
+distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
+distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+contrastMembers=4.30 – half of the fifth hour | 18.00 | 7.15 – quarter of the eighth hour
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-quarter-hour-2-ru | prov-ex-u17-quarter-hour-2-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u17-i-quarter-hour-3`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 71ee395f1c2f56f521ac822f690408de37e350051d8584982527c810ab6639d4
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written beside the shown form?
+promptLetter=Передача начинается без четверти три.
+options=2.45 – 3 without a quarter | 18.00 | 7.15 – quarter of the eighth hour
+answer=2.45 – 3 without a quarter
+feedback=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+objectiveId=obj-u17-quarter-hour
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+testedFeature=QUARTER_45
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u17-quarter-hour-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u17-quarter-hour-3-en
+distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
+distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+contrastMembers=2.45 – 3 without a quarter | 18.00 | 7.15 – quarter of the eighth hour
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u17-quarter-hour-3-ru | prov-ex-u17-quarter-hour-3-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
 ### INDEPENDENT_CHECK `u17-i-calendar-date-1`
 
 - Objectives: obj-u17-calendar-date
@@ -3459,14 +3945,32 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 21ba28512d9949a3ff06b978eef599bc7a59d727246ea60cfe155e0a51403f12
+- Content hash: ac3b611855b1a031906b708a2d19c7bc570391941209b6bf56912b4e4b2dd1ea
 
 title=Unit 17 source notice
 summary=Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Productive clock-time generation remains unresolved. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. Productive clock-time generation remains unresolved. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=17
 searchTerms=unit 17 source notice
+reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-u17-pressbooks-attribution`
+
+- Objectives: none
+- Sessions: u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: LICENSE_OR_ATTRIBUTION
+- Current review status: NOT_REQUIRED
+- Content hash: 9024bc3efdd181b005f63dff5b9c49d535df1465df3006d12197f6fe4ac4d1ea
+
+title=Unit 17 Pressbooks notice
+summary=The quarter-hour lines adapt one retained Pressbooks chapter.
+detail=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. The retained chapter HTML sha256 is ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3, retrieved 2026-09-25T15:45:47Z. That Pressbooks license route is not a Wikipedia, Wiktionary, Wikibooks, or OpenRussian route. The admitted lines are only the 0.00, 0.15, 0.30, and 0.45 patterns. They do not clear productive clock-time. Review is pending.
+classification=LICENSE_OR_ATTRIBUTION
+introducedInUnit=17
+searchTerms=unit 17 pressbooks notice
 reviewStatus=NOT_REQUIRED
 
 ### PROVENANCE `prov-ex-u17-age-0-en`
@@ -5585,6 +6089,1190 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=c39d23c162f1a65c3622aeb760bc6e647fa43b9affb1ed5704e5f043f8c3097d
 contentHash=6c44330b2d8623541fdf88a75f2557d734f4594f6f3969c0fcb7dc1347d19235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-0-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6655bdf0e6c3cabd44d2c08b3eb1acb9f678395c98408a6bfd07eaea97c92e04
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=18.00
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=3dbbd4fac86f79cb1cd81395763c63c440a5ab6cef42855f1d1d861a5dd83776
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-0-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7a6e8880d5c8227164d25116b5830a255c4f45b52657f500e8117d5392177467
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Концерт начинается в шесть часов.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=ff95ec313c5bfc54d9a6673d5eba0b9d98eb9bc1601d7ce2cc1d59cf76da3d03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-1-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 926ee426d928990671e9d8e0aa87cbd142dde100992d1dca3083170daf969441
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=7.15 – quarter of the eighth hour
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=fb179b533733c0d040774e2d0fc176764265cb67b32a7c1c011ed830dd133772
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-1-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 31be7b2efe0f8a44359cdbe4d8d979b6b1d6dd581d30b258731d0d2d8e3829b5
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Я приду в четверть восьмого.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=3f2c0696472a7a58b721d02014e8d773a15fbb2e43ed6cb86020d5f27b5af505
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-2-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a41dca8b7ef214fdbb284c1d71873d1fa8a26e41d7e31cb4fff4ef30430aee5e
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=4.30 – half of the fifth hour
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=89e2233f89af1bdd9cbb354d3dced1dc7859bbdf08df33ed3eb438ba361f0302
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-2-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8e3f977769fe29c9ba8044f0827e3c2c18893214334fdf335e253601cc66a60a
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Наш рейс уезжает в половине пятого.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=88dbdef2f1804f286ff3cc07f7f9724d145ad00ccf76a71e065e16719d4fce61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-3-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 58f58f5407d16bcb91ddec8427df1bdc2ffdc3ee62e42b3c2927456fd1ad57b2
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=2.45 – 3 without a quarter
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=36f0fae5116e34ecec314c6410c8294043cf16110b1949ed6645cb9aa1afff55
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-3-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4c2e46f242410e7dbc96c01b78501d4eb2e70f92f8d89ad8d06b1b48cc6e9df8
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Передача начинается без четверти три.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=f81d66313d50c8ac78951433bce48bb7ae60f98c87ca4d3e3835bed145960280
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-4-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f0cafd13a9962d63258dd43eb124926ee1b133863961bb3ee7b593d6094f82ea
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=13.00
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=f6731adbc30bde955955a983a7cad19d6223ae4d17f2e24b3f1d36a378511f4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-4-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ae08160b8fcbb3b27714e560f02b28b2ddc3fe9b138037d84e4b13f14db3f4dc
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Она была дома в час.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=1870fa4bba0eeb49d0a5b51e8396dc2350d0c263fb5aa7243f6b0337db460fa5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-5-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e10967e0c8c2039a44d96fb95fef1f728bc387e40fca7399249d49b00dce69f3
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=9.15 – 15 minutes of the tenth hour
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=3f431305f84cbd97b8b2c39e199d6c5773ff3abba7d5802649a6e286852e649e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-5-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 151f286e81e843560e031313adc6effa3c1615cb983ba8e1e77a1043ceb08995
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Он нам позвонил в пятнадцать минут десятого.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=6138c4518ecc30215519712ba04f3ef8b78f87752b7840c3c6c8fb1732c77812
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-6-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 262cf2b1d3fdbb88e4e8301eed7fb9441af5f1d628c14abd07124c45f97ace19
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=1.30 – half of the second hour
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=32000ad11432e9fa8583767fe847f3f3d9827e2c6fcc61a2f5cd3b7a798175dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-6-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2bbfec9e959deaa619fb6ed81b658475ef83d571307eda7cf3e2960fa1e99a70
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Мы будем свободны в полвторого.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=34d16cec48200edc05169e40c3eb820b6487842185aa65639a2d254d7cfed077
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-7-en`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 59aa441425de7846dbd833257c3bbc85753d5f1a69d113170ba6022100d02c23
+
+recordType=meaning
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=8.45 – 9 without 15 minutes
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=b011449da1db44715b69ee9148d5393dcfb69f268dc09153ea11b6714eff8c47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u17-quarter-hour-7-ru`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3a7e3234c056066aabe08ee6f95caa7b94c9ab200c59e9dc1f783dc13ee83bd4
+
+recordType=example
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=Она обычно приходит на работу без пятнадцати девять.
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=da523b73baef68c3f8017ed6866aeb1be651f6e4b84021c148fe71365af54ca8
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8379,6 +10067,80 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u17-quarter-hour-rem`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9d4b5cbe5a084197863bad09378fdbc1793da71ab6e083220e31d9cc2e472d80
+
+recordType=instruction
+sourceUrl=https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/
+sourceRevision=ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3
+sourceRecordId=pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="
+originalSourceText=Грамматика: At what time on the quarter hour</strong></p>
+</header>
+<div class="textbox__content">
+<table class="grid" style="border-collapse: collapse;width: 100%">
+<thead>
+<tr>
+<td style="width: 33.3333%"><strong>Time</strong></td>
+<td style="width: 66.6667%"><strong>Explanation and examples</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the hour (0.00)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.
+<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>
+Она была дома <strong>в час</strong>. (13.00)</p></td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the quarter hour (0.15)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.
+<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>
+Он нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the half hour (0.30)</strong></td>
+<td style="width: 66.6667%">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.
+<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>
+Мы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>
+<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>
+<div id="h5p-256">
+<div class="h5p-iframe-wrapper"><iframe id="h5p-iframe-256" class="h5p-iframe" data-content-id="256" style="height:1px" src="about:blank" frameborder="0" scrolling="no" title="Ordinal numbers"></iframe></div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%"><strong>At what time on the three quarters hour (0.45)</strong></td>
+<td style="width: 66.6667%">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.
+<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>
+Она обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>
+shippedText=At what time on the hour (0.00)
+transformation=pressbooks markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913
+contentHash=7518c93a72625b6dcadec10b3792dae4e9f86224fc32141c8ba56b5cfe044bed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u17-weekdays-rem`
 
 - Objectives: obj-u17-weekdays
@@ -10667,6 +12429,19 @@ text=Which admitted English gloss is written beside the shown form?
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Does this row fail the two-hour row?
 
+### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-78b493cfd92f`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1c99069144ba00bd0690f1e53f0a72e1f6bdc61da43f4442240907beab763167
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.
+
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-7b6d504d7e63`
 
 - Objectives: none
@@ -10835,19 +12610,6 @@ text=Does this row fail the five-year row?
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Admitted number and quantity rows
-
-### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-d82b22bc37db`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5aa3b8b25c21f62a675742072701b936f0ff00f039bd62a80b5c32548e692db2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u17-u17-scaffold-scaffold-d979ddd5df23`
 
@@ -11024,6 +12786,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1366690592 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-pressbooks-diverse-russian-traditions-grammar`
+
+- Objectives: none
+- Sessions: none
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bf787378908c66fe04ddfd36aee9db6b7c64a6cef7abd459db8bf59f07d0023d
+
+Традиции: грамматика
+CC BY-SA 4.0
+Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-wikipedia-date-notation-russia-1357134172`
 
 - Objectives: none
@@ -11093,6 +12870,20 @@ permitsAppUse=true
 - Content hash: 5d099370fbed07829efcff42dcae6fadc4efde875d89afce17a1a84c1de803d9
 
 src-wikipedia-date-time-country-1366690592
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-pressbooks-diverse-russian-traditions-grammar`
+
+- Objectives: none
+- Sessions: none
+- Source: src-pressbooks-diverse-russian-traditions-grammar
+- Rights: rights-pressbooks-diverse-russian-traditions-grammar
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b7ef578d8224ab510acf5c9d9c6af80a522d28cd3c2dcb3449cee32b61f86596
+
+src-pressbooks-diverse-russian-traditions-grammar
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -11225,6 +13016,25 @@ permitsAppUse=true
 - `obj-u17-clock-answers` CHECK `u17-i-clock-answers-1`
 - `obj-u17-clock-answers` CHECK `u17-i-clock-answers-2`
 - `obj-u17-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-orient`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-teach-quarter-hour-1`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-teach-quarter-hour-2`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-teach-quarter-hour-3`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-teach-quarter-hour-4`
+- `obj-u17-quarter-hour` INSTRUCTION `u17-st-teach-quarter-hour-5`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-0`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-1`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-2`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-3`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-4`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-5`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-6`
+- `obj-u17-quarter-hour` EXAMPLE `ex-u17-quarter-hour-7`
+- `obj-u17-quarter-hour` PRACTICE `u17-st-guided-quarter-hour-1`
+- `obj-u17-quarter-hour` CHECK `u17-i-quarter-hour-1`
+- `obj-u17-quarter-hour` CHECK `u17-i-quarter-hour-2`
+- `obj-u17-quarter-hour` CHECK `u17-i-quarter-hour-3`
+- `obj-u17-quarter-hour` REMEDIATION `u17-st-rem-quarter-hour`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-orient`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-1`
 - `obj-u17-calendar-date` INSTRUCTION `u17-st-teach-calendar-date-2`
@@ -11246,6 +13056,7 @@ permitsAppUse=true
 - `u17-s-orient` OBJECTIVE `obj-u17-months`
 - `u17-s-orient` OBJECTIVE `obj-u17-clock`
 - `u17-s-orient` OBJECTIVE `obj-u17-clock-answers`
+- `u17-s-orient` OBJECTIVE `obj-u17-quarter-hour`
 - `u17-s-orient` OBJECTIVE `obj-u17-calendar-date`
 - `u17-s-orient` OBJECTIVE `obj-u17-book`
 - `u17-st-orient` REFERENCE `ref-u17-attribution`
@@ -11375,6 +13186,28 @@ permitsAppUse=true
 - `u17-st-check-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
 - `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-1`
 - `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-2`
+- `u17-s-quarter-hour` OBJECTIVE `obj-u17-quarter-hour`
+- `u17-st-teach-quarter-hour-1` EXAMPLE `ex-u17-quarter-hour-0`
+- `u17-st-teach-quarter-hour-1` EXAMPLE `ex-u17-quarter-hour-1`
+- `u17-st-teach-quarter-hour-1` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-guided-quarter-hour-1` REMEDIATION `u17-st-rem-quarter-hour`
+- `u17-st-guided-quarter-hour-1` ITEM `u17-g-quarter-hour-0`
+- `u17-st-teach-quarter-hour-2` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-teach-quarter-hour-3` EXAMPLE `ex-u17-quarter-hour-2`
+- `u17-st-teach-quarter-hour-3` EXAMPLE `ex-u17-quarter-hour-3`
+- `u17-st-teach-quarter-hour-3` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-teach-quarter-hour-4` EXAMPLE `ex-u17-quarter-hour-4`
+- `u17-st-teach-quarter-hour-4` EXAMPLE `ex-u17-quarter-hour-5`
+- `u17-st-teach-quarter-hour-4` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-teach-quarter-hour-5` EXAMPLE `ex-u17-quarter-hour-6`
+- `u17-st-teach-quarter-hour-5` EXAMPLE `ex-u17-quarter-hour-7`
+- `u17-st-teach-quarter-hour-5` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-0`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-1`
+- `u17-st-check-quarter-hour` REMEDIATION `u17-st-rem-quarter-hour`
+- `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-1`
+- `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-2`
+- `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-3`
 - `u17-s-calendar-date` OBJECTIVE `obj-u17-calendar-date`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-1`
@@ -11439,6 +13272,22 @@ permitsAppUse=true
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-2-ru`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-en`
 - `obj-u17-ordinals` PROVENANCE `prov-ex-u17-ordinals-3-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-0-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-0-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-1-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-1-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-2-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-2-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-3-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-3-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-4-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-4-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-5-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-5-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-6-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-6-ru`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-7-en`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ex-u17-quarter-hour-7-ru`
 - `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-0-en`
 - `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-0-ru`
 - `obj-u17-weekdays` PROVENANCE `prov-ex-u17-weekdays-1-en`
@@ -11495,6 +13344,7 @@ permitsAppUse=true
 - `obj-u17-months` PROVENANCE `prov-u17-months-x-7`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-rem`
 - `obj-u17-ordinals` PROVENANCE `prov-u17-ordinals-x-0`
+- `obj-u17-quarter-hour` PROVENANCE `prov-u17-quarter-hour-rem`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-rem`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-0`
 - `obj-u17-weekdays` PROVENANCE `prov-u17-weekdays-x-1`

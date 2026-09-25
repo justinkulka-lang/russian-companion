@@ -259,7 +259,7 @@ class CurriculumReadinessReconciliationTest {
     @Test
     fun notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers() {
         val pack = pack()
-        listOf(19, 30).forEach { number ->
+        listOf(17, 30).forEach { number ->
             val unit = pack.unit(number)
             val decision = advancementDecision(pack, unit, idealizedLearner(pack, unit))
             assertFalse(decision.allowed)
