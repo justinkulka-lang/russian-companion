@@ -48,7 +48,7 @@ class Units1620SourceIntakeTest {
             val unit = pack.unit(number)!!
             val facts = governedMappingFacts(number)
             assertEquals("DEVELOPMENT", unit.installState)
-            val expectedReadiness = if (number == 17 || number == 19) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
+            val expectedReadiness = if (number == 17) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
             assertEquals(expectedReadiness, unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
@@ -120,17 +120,23 @@ class Units1620SourceIntakeTest {
         val pack = pack()
         val root = repo()
         val freeze = Json.parseToJsonElement(File(root, "catalog/sources/units-16-20/FREEZE.json").readText()).jsonObject
-        val byOldid = freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray.associate { element ->
+        val wikibooksPages = freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray
+        val supplementalPages = freeze.getValue("supplemental").jsonArray
+        val byOldid = (wikibooksPages + supplementalPages).associate { element ->
             val page = element.jsonObject
             page.getValue("oldid").jsonPrimitive.content to frozenFile(root, page.getValue("file").jsonPrimitive.content).readText()
         }
         pack.provenanceRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
-            val unfolded = dev.russiancompanion.v2.curriculum.V2Validator.unfoldWikiLabels(record.originalSourceText)
+            val visible = when (record.transformation) {
+                "pressbooks markup selection" -> dev.russiancompanion.v2.curriculum.BatchARemainingSources.htmlVisible(record.originalSourceText)
+                "wiktionary template selection" -> dev.russiancompanion.v2.curriculum.BatchARemainingSources.unfoldWiktionary(record.originalSourceText)
+                else -> dev.russiancompanion.v2.curriculum.V2Validator.unfoldWikiLabels(record.originalSourceText)
+            }
             assertTrue(
                 record.itemId,
                 normalized(record.originalSourceText).contains(normalized(record.shippedText)) ||
-                    normalized(unfolded).contains(normalized(record.shippedText)),
+                    normalized(visible).contains(normalized(record.shippedText)),
             )
             val page = byOldid[record.sourceRevision]
             if (page != null) {
@@ -153,9 +159,9 @@ class Units1620SourceIntakeTest {
         assertTrue(reason(pack, 17).contains("Productive clock-time"))
         assertFalse(reason(pack, 17).contains("Calendar-date"))
         assertFalse(reason(pack, 18).contains("Comparison forms"))
-        assertTrue(reason(pack, 19).contains("Probability"))
+        assertFalse(reason(pack, 19).contains("Probability"))
         assertFalse(reason(pack, 20).contains("red link"))
-        listOf(17, 19).forEach { number ->
+        listOf(17).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -170,7 +176,7 @@ class Units1620SourceIntakeTest {
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
         }
-        listOf(16, 18, 20).forEach { number ->
+        listOf(16, 18, 19, 20).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -217,15 +223,31 @@ class Units1620SourceIntakeTest {
     @Test
     fun unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources() {
         val pack = pack()
-        val errors = V2Validator.validate(claimComplete(pack, 19)).errors
+        val complete = V2Validator.validate(claimComplete(pack, 19))
+        assertTrue(complete.errors.joinToString("\n"), complete.ok)
+        val stripped = withoutCapabilities(pack, 19)
+        val errors = V2Validator.validate(claimComplete(stripped, 19)).errors
         assertTrue(errors.joinToString("\n"), errors.any { it.contains("without conditional and obligation sources") })
-        val aspectOnly = pack.copy(
+        val aspectOnly = stripped.copy(
             provenanceRecords = pack.provenanceRecords + pack.provenanceRecords.first { it.unitNumber == 19 }.copy(
                 originalSourceText = "бы and должен are not on this aspect page",
             ),
         )
         val still = V2Validator.validate(claimComplete(aspectOnly, 19)).errors
         assertTrue(still.joinToString("\n"), still.any { it.contains("without conditional and obligation sources") })
+        val obligation = pack.sourceCapabilities.first { it.supportedClaim == "obligation-dolzhen" }
+        val relabeled = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "probability-dolzhen" } +
+                obligation.copy(
+                    id = "cap-forged-obligation-as-probability",
+                    objectiveId = "obj-u19-probability",
+                    supportedClaim = "probability-dolzhen",
+                ),
+        )
+        val substituted = V2Validator.validate(claimComplete(relabeled, 19)).errors.joinToString("\n")
+        assertTrue(substituted, substituted.contains("without conditional and obligation sources"))
+        assertTrue(substituted, substituted.contains("no independent probability-dolzhen admission"))
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(relabeled, 19).any { it.claim == "probability-dolzhen" })
     }
 
     @Test
@@ -289,7 +311,7 @@ class Units1620SourceIntakeTest {
         assertEquals("DEVELOPMENT", pack.unit(17)!!.installState)
         assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
-        assertEquals("NOT_PREPARED", pack.unit(19)!!.readiness)
+        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(19)!!.readiness)
         listOf(16, 17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             assertEquals("DEVELOPMENT", unit.installState)

@@ -138,6 +138,15 @@ def _same_source(left: dict, right: dict) -> bool:
 def _displayed_in_frozen(record: dict) -> bool:
     original = record.get("originalSourceText") or ""
     shipped = record.get("shippedText") or ""
+    transformation = record.get("transformation") or ""
+    if transformation == "wiktionary template selection":
+        from source_transforms import unfold_wiktionary
+
+        return bool(shipped) and shipped in unfold_wiktionary(original)
+    if transformation == "pressbooks markup selection":
+        from source_transforms import html_visible
+
+        return bool(shipped) and shipped in html_visible(original)
     if shipped and (shipped in original or _fold(shipped) in _fold(original)):
         return True
     folded = _fold(shipped)
@@ -248,6 +257,13 @@ def classify_relation(cue: dict, answer: dict, distractors: list[dict]) -> str |
     source hash, and original text support it. Co-occurrence in one span does
     not reassign an explicit parenthetical gloss.
     """
+    from batch_a_remaining_intake import governed_relation
+
+    governed = governed_relation(cue, answer, distractors)
+    if governed is False:
+        return None
+    if governed:
+        return governed
     parenthetical = _parenthetical_relation(cue, answer, distractors)
     if parenthetical is False:
         return None

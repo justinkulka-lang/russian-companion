@@ -90,6 +90,24 @@
       "disposition": "EXCLUDED",
       "licenseId": null,
       "scope": "The private owned PDF is an observation source only. Its prose, examples, exercises, and page images are not admitted."
+    },
+    {
+      "id": "enwiktionary-dolzhen-84965088",
+      "disposition": "ADMITTED_BOUNDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The likelihood sense of должен and its example Затмение должно наступить в три часа / The eclipse should occur at three o'clock, plus the obligation contrast on the same frozen entry. Not audio, not quotations, and not every должен sense."
+    },
+    {
+      "id": "pressbooks-diverse-russian-traditions-grammar",
+      "disposition": "ADMITTED_BOUNDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "At-what-time patterns for 0.00, 0.15, 0.30, and 0.45 only. Does not clear productive-clock-time or arbitrary minutes."
+    },
+    {
+      "id": "ruwiki-narechie-152437423",
+      "disposition": "ADMITTED_BOUNDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Adverb invariance and the two suffixal pairs. Does not clear adverb-paradigm."
     }
   ],
   "openrussian": {
@@ -366,6 +384,46 @@
         "file": "../units-3-5/wikibooks/copyrights-4622060.txt",
         "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
         "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0"
+      },
+      "wiktionary": {
+        "appliesToSourceIds": [
+          "src-enwiktionary-dolzhen-84965088"
+        ],
+        "title": "Wiktionary:Copyrights",
+        "oldid": "87545419",
+        "url": "https://en.wiktionary.org/w/index.php?title=Wiktionary:Copyrights&oldid=87545419",
+        "file": "wiktionary/copyrights-87545419.txt",
+        "revisionFile": "wiktionary/copyrights-87545419.revision.json",
+        "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
+        "requiredStatement": "The original texts of Wiktionary entries are dual-licensed to the public under both the '''[[WT:CC-BY-SA|Creative Commons Attribution-ShareAlike 4.0 International License]]''' (CC-BY-SA) and the '''[[WT:GFDL|GNU Free Documentation License]]''' (GFDL).",
+        "retrieved": "2026-09-25T15:45:47Z"
+      },
+      "pressbooks": {
+        "appliesToSourceIds": [
+          "src-pressbooks-diverse-russian-traditions-grammar"
+        ],
+        "title": "Diverse Russian: A Multicultural Exploration",
+        "authors": "Anna Tumarkin and Shannon Donnally Quinn",
+        "url": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+        "file": "pressbooks/russia-traditions-grammar.html",
+        "sha256": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+        "byteCount": 272713,
+        "retrieved": "2026-09-25T15:45:47Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.",
+        "licenseId": "CC BY-SA 4.0"
+      },
+      "ruwiki": {
+        "appliesToSourceIds": [
+          "src-ruwiki-narechie-152437423"
+        ],
+        "title": "Википедия:Авторские права",
+        "oldid": "154562152",
+        "url": "https://ru.wikipedia.org/w/index.php?title=Википедия:Авторские_права&oldid=154562152",
+        "file": "../units-6-10/ruwiki/copyrights-154562152.txt",
+        "revisionFile": "../units-6-10/ruwiki/copyrights-154562152.revision.json",
+        "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
+        "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)",
+        "retrieved": "2026-09-25T15:45:47Z"
       }
     }
   },
@@ -429,6 +487,70 @@
       "sha256": "8a5b99005097fe97858e4188250ab61056925d5229af60059a0cc86d6ae8fd57",
       "title": "Date and time notation in Russia",
       "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1357134172 identifies the contributors."
+    },
+    {
+      "key": "wiktionary-dolzhen",
+      "sourceId": "src-enwiktionary-dolzhen-84965088",
+      "licenseRoute": "wiktionary",
+      "oldid": "84965088",
+      "file": "wiktionary/dolzhen-84965088.txt",
+      "sha256": "7f2fdb955b5556b7daa3a1a94fbc38989c94099633462d6d5cfa755215855f99",
+      "title": "должен",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "pressbooks-traditions-grammar",
+      "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+      "licenseRoute": "pressbooks",
+      "file": "pressbooks/russia-traditions-grammar.html",
+      "sha256": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+      "title": "Традиции: грамматика",
+      "attribution": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license."
+    },
+    {
+      "key": "ruwiki-narechie",
+      "sourceId": "src-ruwiki-narechie-152437423",
+      "licenseRoute": "ruwiki",
+      "oldid": "152437423",
+      "file": "../units-6-10/ruwiki/narechie-152437423.txt",
+      "sha256": "e77c6da4fca91b6e4c63a5f122be87233433131c5810e02bbb32c99087deeee6",
+      "title": "Наречие",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152437423 identifies the contributors."
+    }
+  ],
+  "supplemental": [
+    {
+      "key": "wiktionary-dolzhen",
+      "title": "должен",
+      "oldid": "84965088",
+      "file": "wiktionary/dolzhen-84965088.txt",
+      "sha256": "7f2fdb955b5556b7daa3a1a94fbc38989c94099633462d6d5cfa755215855f99",
+      "revisionFile": "wiktionary/dolzhen-84965088.revision.json",
+      "mediawikiSha1": "9731ada8ae50bfd8d21db81370b343cfafe61a85",
+      "parentid": 84965082,
+      "timestamp": "2025-05-27T21:01:27Z",
+      "size": 3058,
+      "retrieved": "2026-09-25T15:45:47Z",
+      "sourceId": "src-enwiktionary-dolzhen-84965088",
+      "url": "https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088",
+      "licenseRoute": "wiktionary",
+      "transform": "wiktionary-template",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 84965088 identifies the contributors. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted."
+    },
+    {
+      "key": "pressbooks-traditions-grammar",
+      "title": "Традиции: грамматика",
+      "oldid": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+      "file": "pressbooks/russia-traditions-grammar.html",
+      "sha256": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+      "byteCount": 272713,
+      "retrieved": "2026-09-25T15:45:47Z",
+      "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+      "url": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+      "licenseRoute": "pressbooks",
+      "transform": "pressbooks-html",
+      "authors": "Anna Tumarkin and Shannon Donnally Quinn",
+      "attribution": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3 retrieved 2026-09-25T15:45:47Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license."
     }
   ]
 }

@@ -87,6 +87,9 @@ class FrozenSources:
         if "Creative Commons Attribution-ShareAlike 4.0" not in self.pages["copyrights"]:
             raise SystemExit("Frozen Wikibooks copyrights page does not state CC BY-SA 4.0")
         self.page_meta = {page["key"]: page for page in self.freeze["wikibooks"]["pages"]}
+        from source_transforms import load_supplemental_pages
+
+        load_supplemental_pages(self, SOURCE_ROOT)
         admitted = {item["id"] for item in self.freeze["decisions"] if item["disposition"] == "ADMITTED"}
         required = {
             "openrussian-50e210c4803237779cb562bc1abcea529066031c",
@@ -204,19 +207,25 @@ class Builder:
         })
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
+        from source_transforms import special_transformation
+
         original = self.frozen.require(page, needle)
-        cleaned = format_wikibooks_emphasis(shipped)
-        if format_wikibooks_emphasis(cleaned) != cleaned:
-            raise SystemExit(f"{item_id} emphasis transform is not stable")
-        if not text_in_frozen(original, cleaned):
-            raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
-        if cleaned in original:
-            transformation = "selection"
-        elif cleaned in format_wikibooks_emphasis(original):
-            transformation = "wikibooks emphasis formatting"
-        else:
-            transformation = "wiki label selection"
         meta = self.frozen.page_meta[page]
+        transformation = special_transformation(meta, original, shipped)
+        if transformation is None:
+            cleaned = format_wikibooks_emphasis(shipped)
+            if format_wikibooks_emphasis(cleaned) != cleaned:
+                raise SystemExit(f"{item_id} emphasis transform is not stable")
+            if not text_in_frozen(original, cleaned):
+                raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
+            if cleaned in original:
+                transformation = "selection"
+            elif cleaned in format_wikibooks_emphasis(original):
+                transformation = "wikibooks emphasis formatting"
+            else:
+                transformation = "wiki label selection"
+        else:
+            cleaned = shipped
         source_id = meta.get("sourceId", WIKIBOOKS_ID)
         source_url = meta.get("url") or (
             f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}"
@@ -225,7 +234,7 @@ class Builder:
         self.add_provenance(
             item_id, unit, objective, record_type, source_id,
             source_url,
-            self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, attribution,
+            str(meta.get("oldid") or self.frozen.oldid(page)), page + ":" + needle[:80], original, cleaned, transformation, attribution,
         )
         return cleaned
 
@@ -359,7 +368,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
         for index, card in enumerate(spec["cards"], start=1):
             teach = f"u{number}-st-teach-{slug}-{index}"
             teach_ids.append(teach)
-            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[notice_for(number)]))
+            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[spec.get("referenceId", notice_for(number))]))
             if card["guided"]:
                 guided_id = f"u{number}-st-guided-{slug}-{index}"
                 guided_ids.append(guided_id)
@@ -490,6 +499,8 @@ def build_units_16_20(
     probe_says: list[tuple[str, str, str]] | None = None,
     probe_at: str = "end",
 ) -> dict:
+    from batch_a_remaining_intake import unit17_pressbooks_reference as _unit17_pressbooks_reference
+    from batch_a_remaining_intake import unit19_reference as _unit19_reference
     from units_16_20_lessons import populate
 
     frozen = FrozenSources()
@@ -499,13 +510,11 @@ def build_units_16_20(
             builder.say(17, text, role=role, owner=owner)
     units = [
         _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.", 8, populate, [
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, and quarter-hour spans. Productive clock-time answers stay unresolved. Qualified review is pending.", 8, populate, [
             ("clock-productive", "Productive clock-time answers stay in the copy you own", "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.", "Productive clock-time answers have no admitted frozen span."),
         ]),
         _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
-        _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.", 2, populate, [
-            ("probability", "Probability stays in the copy you own", "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.", "Probability use has no admitted frozen span."),
-        ]),
+        _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.", 2, populate, []),
         _unit(builder, 20, "Admitted motion lines", "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.", 2, populate, []),
     ]
     if probe_at == "end":
@@ -519,7 +528,7 @@ def build_units_16_20(
         "examples": builder.examples,
         "provenance": builder.provenance,
         "authored": builder.authored,
-        "references": [_attribution_reference(), _unit17_reference()],
+        "references": [_attribution_reference(), _unit17_reference(), _unit17_pressbooks_reference(), _unit19_reference()],
         "capabilities": capabilities,
         "sources": _admitted_sources(frozen),
         "rights": _admitted_rights(frozen),
@@ -527,6 +536,8 @@ def build_units_16_20(
 
 
 def _admitted_sources(frozen: FrozenSources) -> list[dict]:
+    from batch_a_remaining_intake import source_record
+
     wanted = {
         "src-wikipedia-date-time-country-1366690592",
         "src-wikipedia-date-notation-russia-1357134172",
@@ -544,6 +555,9 @@ def _admitted_sources(frozen: FrozenSources) -> list[dict]:
         })
     if {item["id"] for item in sources} != wanted:
         raise SystemExit(f"Clock and date sources were not frozen: {sources}")
+    supplemental = {page["key"]: page for page in frozen.freeze["supplemental"]}
+    sources.append(source_record(supplemental["wiktionary-dolzhen"]))
+    sources.append(source_record(supplemental["pressbooks-traditions-grammar"]))
     return sources
 
 
@@ -571,6 +585,8 @@ RESOLVED_CLAIMS = {
     "relative-kotoryy",
     "conditional-by",
     "obligation-dolzhen",
+    "probability-dolzhen",
+    "productive-quarter-hour-time",
     "motion-directionality",
     "motion-foot-transport",
     "motion-carrying-leading",
@@ -662,6 +678,7 @@ def _unit17_reference() -> dict:
             "Those license routes are not interchangeable. "
             "The admitted calendar-date relationships remain admitted. "
             "The three clock phrases are bounded recognition. "
+            "Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. "
             "Productive clock-time generation remains unresolved. "
             "Review is pending."
         ),

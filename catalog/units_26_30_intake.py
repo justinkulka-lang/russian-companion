@@ -427,6 +427,15 @@ def license_admission_errors(
         if source_id.startswith("src-wikibooks-") and route_name != "wikibooks":
             errors.append(f"Wikibooks source {source_id} has only Wikipedia license evidence")
             continue
+        if source_id.startswith("src-ruwiki-") and route_name != "ruwiki":
+            errors.append(f"Russian Wikipedia source {source_id} has the wrong project license evidence")
+            continue
+        if source_id.startswith("src-enwiktionary-") and route_name != "wiktionary":
+            errors.append(f"Wiktionary source {source_id} has the wrong project license evidence")
+            continue
+        if source_id.startswith("src-pressbooks-") and route_name != "pressbooks":
+            errors.append(f"Pressbooks source {source_id} has the wrong project license evidence")
+            continue
         if route is None or source_id not in route.get("appliesToSourceIds", []):
             errors.append(f"Source {source_id} license route does not match its evidence")
     return errors

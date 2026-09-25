@@ -1542,7 +1542,7 @@ def build() -> dict:
             continue
         proposed_unit = later_by_number[number]
         summary = (
-            "Proposed Unit 7 is in development and is not prepared. Admitted agreement rows and three adverb form/gloss pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed."
+            "Proposed Unit 7 is in development and is not prepared. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, and the two admitted suffixal pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed."
             if number == 7
             else (
                 f"Proposed Unit {number} is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed."
@@ -1605,16 +1605,16 @@ def build() -> dict:
     }
     intake_summaries = {
         16: "Proposed Unit 16 is in development. Admitted instrumental rows and the admitted complement span await qualified review. It is not installed and the owned-edition mapping is not signed.",
-        17: "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        17: "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, the stated calendar-date constructions, and the admitted quarter-hour lines await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
         18: "Proposed Unit 18 is in development. Admitted comparison lines and admitted relative lines await qualified review. It is not installed and the owned-edition mapping is not signed.",
-        19: "Proposed Unit 19 is in development and is not prepared. Admitted prefix cautions, conditional lines, and obligation lines await qualified review. Probability use has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        19: "Proposed Unit 19 is in development. Admitted prefix cautions, conditional lines, obligation lines, and the admitted likelihood example await qualified review. It is not installed and the owned-edition mapping is not signed.",
         20: "Proposed Unit 20 is in development. Admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths await qualified review. It is not installed and the owned-edition mapping is not signed.",
     }
     intake_readiness = {
         16: "CONTENT_COMPLETE_REVIEW_PENDING",
         17: "NOT_PREPARED",
         18: "CONTENT_COMPLETE_REVIEW_PENDING",
-        19: "NOT_PREPARED",
+        19: "CONTENT_COMPLETE_REVIEW_PENDING",
         20: "CONTENT_COMPLETE_REVIEW_PENDING",
     }
     for number, short, title in UNITS_3_30:
