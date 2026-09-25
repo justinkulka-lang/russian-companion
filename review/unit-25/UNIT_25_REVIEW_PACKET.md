@@ -11,12 +11,12 @@ Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd1f6497b235208786d0f720d71a248a22f8d69e
-- Unit content-review SHA-256: 80c584f75c59e98b7b020feda3ecf1a89cef88cc4f62b93f971ef86597395a84
+- Curriculum source commit: d053dbb6245bdccd8360f595625c277da485f4e2
+- Unit content-review SHA-256: 3d4badd7a1f2a71bb6a75c92878ee76cd4218240cd60eb14de88116f3807e2d3
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9
-- Review-package SHA-256: 521df4fbe57d2b100c6f264fede596f10a31a728abd4fb829b01ae45385cb7c6
-- Repository source SHA-256: 6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888
+- Pack content-review SHA-256: 3c56dc9f54ae26c06bcd765523b700ee1ea09cecf5fbd04ba581a5c51a0ad169
+- Review-package SHA-256: 2b97c583de55fd67a6a48214bd1baf8357d65662a98d26e0a6f2fd7821e3610c
+- Repository source SHA-256: c8e6eacc58ae60743a448514c50851aa0b62df6a566dd5ae540112dc70c41a85
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, and courtesy lines await qualified review. A general nickname-formation rule and modern address guidance have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, courtesy lines, and the address-register sentences await qualified review. A general nickname-formation rule has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=74
+estimatedMinutes=82
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 25.
 
 ### UNIT `unit-25`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-book, obj-u25-nickname-rule, obj-u25-address
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-book, u25-s-gap-nickname-rule, u25-s-gap-address
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-address, obj-u25-book, obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-address, u25-s-book, u25-s-gap-nickname-rule
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab24fdc3966075c5db9a1930a51ee99df6416e4502197a2642c46b708847d9a8
+- Content hash: 95a5b508bb05494f78b605ec95a9ec25579c6f769b3e5085e615ea58208dda79
 
 number=25
 title=Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
-topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, and courtesy lines await qualified review. A general nickname-formation rule and modern address guidance have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, courtesy lines, and the address-register sentences await qualified review. A general nickname-formation rule has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 25, printed pages 307-321. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=25
 prerequisites=24
-estimatedMinutes=74
+estimatedMinutes=82
 
 ### ADVANCEMENT `unit-25-advancement`
 
@@ -181,6 +181,25 @@ practice=u25-st-guided-name-question-1
 checks=u25-i-name-question-1,u25-i-name-question-2
 remediation=u25-st-rem-name-question
 
+### OBJECTIVE `obj-u25-address`
+
+- Objectives: obj-u25-address
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5a491761c2c7f39f8b00f631139f56b0baed86918818dbad491860c640c07c71
+
+title=Choose the admitted list or setting written for the shown form
+kind=RECOGNITION
+unitNumber=25
+instruction=u25-st-orient,u25-st-teach-address-1,u25-st-teach-address-2,u25-st-teach-address-3
+examples=ex-u25-address-0,ex-u25-address-1,ex-u25-address-2,ex-u25-address-3
+practice=u25-st-guided-address-1
+checks=u25-i-address-1,u25-i-address-2,u25-i-address-3
+remediation=u25-st-rem-address
+
 ### OBJECTIVE `obj-u25-book`
 
 - Objectives: obj-u25-book
@@ -219,53 +238,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u25-address`
-
-- Objectives: obj-u25-address
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5f94c60ee7e77f3d0b14278995c44b6b0400553ba6e1bc6d4aa0a5072f25fb5f
-
-title=Modern address guidance stays in the copy you own
-kind=GUIDANCE
-unitNumber=25
-instruction=u25-st-gap-address
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u25-s-orient`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-address, obj-u25-book
 - Sessions: u25-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 34868f797dfe55861fc7d75bb4ac1598cd32881aa309e9201a41a218a86f8576
+- Content hash: 8be19fea2368156e43dcefb29db5e2d914a485a77c039f9684d23f3b507eb00d
 
 title=Admitted name and courtesy lines
 estimatedMinutes=8
-objectives=obj-u25-name-structure,obj-u25-diminutives,obj-u25-courtesy,obj-u25-name-question,obj-u25-book
+objectives=obj-u25-name-structure,obj-u25-diminutives,obj-u25-courtesy,obj-u25-name-question,obj-u25-address,obj-u25-book
 steps=u25-st-orient
 
 ### STEP `u25-st-orient`
 
-- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-book
+- Objectives: obj-u25-name-structure, obj-u25-diminutives, obj-u25-courtesy, obj-u25-name-question, obj-u25-address, obj-u25-book
 - Sessions: u25-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 142bd1f04ff7e126ffd536861159a8c28550dc79af664bbb85770e9406358cc5
+- Content hash: acd493ec0e448b2b3df14efe5ff3a4a86d9dbe655e460a1f4088ec03157be57e
 
 kind=ORIENT
 title=Admitted name and courtesy lines
-body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, and courtesy lines. A general nickname-formation rule and modern address guidance stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -863,6 +863,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u25-st-rem-name-question
 
+### SESSION `u25-s-address`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f1ae95f498995e1e89bd40a342ecf77ddaca1e6dbd3386fc6e17d3234b0f7374
+
+title=Choose the admitted list or setting written for the shown form
+estimatedMinutes=12
+objectives=obj-u25-address
+steps=u25-st-teach-address-1,u25-st-guided-address-1,u25-st-teach-address-2,u25-st-teach-address-3,u25-st-rem-address,u25-st-check-address
+
+### STEP `u25-st-teach-address-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b293dadd6a9c503c5c8efc369341d3190f317c7f1d428e28129cb8e5d3cb8aab
+
+kind=TEACH
+title=Admitted lines
+body=Ирина — полные имена. Ира — краткие имена. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u25-address-0,ex-u25-address-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-guided-address-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7e28f4f9eb33a0b4a575cff5bbebb7b2eba68c8f508fac93615736760a5c05f7
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u25-g-address-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-address
+
+### STEP `u25-st-teach-address-2`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ed1bb656b15d862fa9ff4a12bc8b62c043c69254c7a174ca89a398d55cebd3da
+
+kind=TEACH
+title=Admitted instruction
+body=отстранённо-официального регистра
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-teach-address-3`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f644c8c637a388aaebffa9f195316c1cccab75b0a66ff70a6916f0a544de30b3
+
+kind=TEACH
+title=Admitted lines
+body=Ирочка — уменьшительно-ласкательные. полному имени — отстранённо-официального регистра. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u25-address-2,ex-u25-address-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-rem-address`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 871ec90e0cc1e3fc7933455e2da301d4f2a83350f1b4831f9bcd96c53429c228
+
+kind=REMEDIATE
+title=Remediation
+body=отстранённо-официального регистра
+dominantAction=Continue
+references=
+items=
+examples=ex-u25-address-0,ex-u25-address-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u25-st-check-address`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dc8691cc50fcd1fb28507b86a250fd08486ae010598e121d069c41dd3f702bf1
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u25-i-address-1,u25-i-address-2,u25-i-address-3
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-address
+
 ### SESSION `u25-s-book`
 
 - Objectives: obj-u25-book
@@ -955,43 +1102,6 @@ references=ref-u2125-attribution
 items=
 examples=
 unavailableReason=A general nickname-formation rule has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u25-s-gap-address`
-
-- Objectives: obj-u25-address
-- Sessions: u25-s-gap-address
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bd8327218aad730df326477a3e5543b66eff4d3c68bbc74cb9457f4e88e29856
-
-title=Modern address guidance stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u25-address
-steps=u25-st-gap-address
-
-### STEP `u25-st-gap-address`
-
-- Objectives: obj-u25-address
-- Sessions: u25-s-gap-address
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8aa2be19fa0277772e737f3e24b36676560ad0b6db1cb02edd47416f7073a65c
-
-kind=UNAVAILABLE
-title=Modern address guidance stays in the copy you own
-body=Modern address guidance stays in the copy you own. The frozen lines do not supply that guidance.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=Modern address guidance has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -1234,6 +1344,74 @@ note=How are you?
 objectiveId=obj-u25-name-question
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u25-address-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a29ead7c84cbdd26df49632e92bdd65a8db35c2c2c76b1c5052717b5b8f81a31
+
+kind=LEXICAL
+letterId=
+display=Ирина
+note=полные имена
+objectiveId=obj-u25-address
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u25-address-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 78ccb0a07324c3ed18306a9ea150cf5275103c353e7a91911a03147735948e56
+
+kind=LEXICAL
+letterId=
+display=Ира
+note=краткие имена
+objectiveId=obj-u25-address
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u25-address-2`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7e6d4193ac23ddf7eeaa6347dbddb59ea98bc7646577b70d2c827298ce0df8c9
+
+kind=LEXICAL
+letterId=
+display=Ирочка
+note=уменьшительно-ласкательные
+objectiveId=obj-u25-address
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u25-address-3`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5c3adf85d21af61bea684c952d06e421c1e19f4bce25a8c589793fc4d372632c
+
+kind=LEXICAL
+letterId=
+display=полному имени
+note=отстранённо-официального регистра
+objectiveId=obj-u25-address
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u25-g-name-structure-0`
 
 - Objectives: obj-u25-name-structure
@@ -1372,6 +1550,41 @@ whyAnswerDemonstratesObjective=The frozen list pairs What is your name? with thi
 contrastMembers=Как Вас зову́т? | Меня́ зову́т | Прошу́ проще́ния
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-question-0-en | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
+responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u25-g-address-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cdee00627b29d337abc24551b72e60bba028de478053fefa97755df07f2893e1
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted list name is written for the shown form?
+promptLetter=Ирина
+options=полные имена | краткие имена | уменьшительно-ласкательные
+answer=полные имена
+feedback=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+objectiveId=obj-u25-address
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+testedFeature=REGISTER_FULL
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u25-address-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u25-address-0-en
+distractorSourceIds= | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
+distractorDifference= | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+contrastMembers=полные имена | краткие имена | уменьшительно-ласкательные
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u25-address-0-ru | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u25-i-name-structure-1`
@@ -1654,23 +1867,392 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-3-ru
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u25-i-address-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 588407ff51fcccc0de764c779a60864474e9839f0e1e8086d2dcddbbe1e4dc99
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted list name is written for the shown form?
+promptLetter=Ира
+options=краткие имена | полные имена | уменьшительно-ласкательные
+answer=краткие имена
+feedback=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+objectiveId=obj-u25-address
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+testedFeature=REGISTER_SHORT
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u25-address-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u25-address-1-en
+distractorSourceIds= | prov-ex-u25-address-0-en | prov-ex-u25-address-2-en
+distractorDifference= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+contrastMembers=краткие имена | полные имена | уменьшительно-ласкательные
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u25-address-1-ru | prov-ex-u25-address-1-en | prov-ex-u25-address-0-en | prov-ex-u25-address-2-en
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u25-i-address-2`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 06e5a9e1ba7d954ccf1094a47cdbb1b70c74f253482ad2544f15567d3d053d32
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted list name is written for the shown form?
+promptLetter=Ирочка
+options=уменьшительно-ласкательные | полные имена | краткие имена
+answer=уменьшительно-ласкательные
+feedback=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+objectiveId=obj-u25-address
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+testedFeature=REGISTER_DIMINUTIVE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u25-address-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u25-address-2-en
+distractorSourceIds= | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en
+distractorDifference= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+contrastMembers=уменьшительно-ласкательные | полные имена | краткие имена
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u25-address-2-ru | prov-ex-u25-address-2-en | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en
+responseKind=RUSSIAN_PHRASE
+
+### INDEPENDENT_CHECK `u25-i-address-3`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1d8b238ac766908c45e5b50b61a84a7a0f88e591a5033e54c560ecc481c13ea
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted setting is written for the shown address form?
+promptLetter=полному имени
+options=отстранённо-официального регистра | дружески-неофициальном общении | полуофициальной обстановке
+answer=отстранённо-официального регистра
+feedback=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+objectiveId=obj-u25-address
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+testedFeature=REGISTER_OFFICIAL
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u25-address-3
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u25-address-3-en
+distractorSourceIds= | prov-u25-address-x-4 | prov-u25-address-x-5
+distractorDifference= | The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+contrastMembers=отстранённо-официального регистра | дружески-неофициальном общении | полуофициальной обстановке
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u25-address-3-ru | prov-ex-u25-address-3-en | prov-u25-address-x-4 | prov-u25-address-x-5
+responseKind=RUSSIAN_PHRASE
+
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-book, u25-s-gap-nickname-rule, u25-s-gap-address
+- Sessions: u25-s-orient, u25-s-name-structure, u25-s-diminutives, u25-s-courtesy, u25-s-name-question, u25-s-address, u25-s-book, u25-s-gap-nickname-rule
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 4485c508272e28bc9c3097c365e09710bc445aafa5767d5ac97005768ba805ad
+- Content hash: 25c078b84ea4757033e795bc58b70d346c9873611b175492d7e5653ede2388d5
 
 title=Units 21–25 source notice
 summary=Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. Reflexive object reference, purpose clauses, general numeral declension, both-forms, one-and-a-half forms, collective quantity forms, duration, object-form choice under negation, negative stand-in forms, placement contrasts, nickname-formation rules, and modern address guidance are not prepared. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ex-u25-address-0-en`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 306e8266ae98be839c2437e511e95b4fd9710b3c5c0d5b579c56561527a5493f
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=полные имена
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-0-ru`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 45c6b2b3e5cce0c20fa425aa46f5c8162b974fde0d03062ca2d9729898eb290a
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ирина
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=c172bb8bae06688adb06bc1ff409f0940c6edb40c8ce7028ae03ddf9633cd44c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-1-en`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1b2917b59eaf4caa5f1fd90daecb0871307176645c83ed1264b1f6b999e39f7b
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=краткие имена
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9c6a04e8067756fe6b17ba81ca70d606445c294375d0ea71d83361300c220ff8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-1-ru`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 62e74d7072b1692786b1e330efefa41ab538e011be3ed74414ef80a21152a306
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ира
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=3d1b0cc0a277f3518126622df79360d6e3c914e0325bb55fd84896878aada005
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-2-en`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1eba34ed3ad7b5ab640e3f13a0fc25c555394d3ad2f082c00ce0fd03f24b869c
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=уменьшительно-ласкательные
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=15cf0473f328e6af0d2107ddeb26badc698caa9eea11649a2dec44bed25d7f95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-2-ru`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a62989e7e375761d17ec45e87919bdbd6bb9cae5429ae0efa3a2a602e607bb82
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ирочка
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=8b659084966d6d03fe3c513bbe61c01923aa56d43545d28282e8966de72a3aae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-3-en`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cd45d3b2a32cef0e35f3af6fe89c935c0108bbf0a81ef8ab2d9db6c16e97ada0
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=отстранённо-официального регистра
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9e35292f490f3e19d471229d0cddffc9a15b0a8534e88d1d0a2d5abc2e7a5203
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u25-address-3-ru`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 943546f7ad5c143c244c8370b8fa6f92f0c52567884dfc4245e4e892734d41e6
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=полному имени
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=a520461854bf338e9fb00a77bc8c8ebfeac78065929691fe46ab5dfb83bc9060
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u25-courtesy-0-en`
 
@@ -2940,6 +3522,666 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u25-address-rem`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cc2677a144d3dfe553de8132d00b6f512fe7323b2098bde66fa6688a8c291489
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=отстранённо-официального регистра
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9e35292f490f3e19d471229d0cddffc9a15b0a8534e88d1d0a2d5abc2e7a5203
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-rem-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9c6eca09fb6a2dffadc65d37e04460a9d9ba76d461087653a4f51a9fbdf1f90e
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=отстранённо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=4a19f6ffe58df3ea765eaacb622ecc3cf6eab36cb904c43d7fb814b30f8f95ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-rem-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3908742e5a388b69fdc36046eea2d0f528677b047d45bcb3ae02c492d2ac3857
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=официального регистра
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9648a6e85210680ba62470ca01d706f5c5ba74c8dda23f86e4e0b2b6329660a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b615c30c643ca4072540d992ece6c7737b0566ab2d22066df64983e73fc574d0
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=полные имена — Ирина
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=81e96704ee94b938ed6457b56888a0f50b8cde5c7b26f084d8d34f6bc573cc64
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-0-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3152499c28240f3887096181a9a05401c73a46e2aa3e53fa969b8d5c16883d4
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=полные имена
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-0-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 138dca6b2f405ddef51eb8c3957a2dc035580ee59d53e4f09f5c37a9c7a8ee74
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ирина
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=c172bb8bae06688adb06bc1ff409f0940c6edb40c8ce7028ae03ddf9633cd44c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0092278ad1bad45e1d6479326afc41117ba2afa4c96ee45b0fd3f809fc9eec66
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=краткие имена — Ира
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=6244da59e3bf0928d799328fa5ba2a724fe16cd9692eac18ce624973e41a4653
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-1-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 27925782365dd02ce25eb0e96c80f66875b8e28bfebfc4351a03b5769e3db55a
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=краткие имена
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9c6a04e8067756fe6b17ba81ca70d606445c294375d0ea71d83361300c220ff8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-1-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4300d13312525862dc694f9ab0613920744fb67832fbbc230245d449d928d975
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ира
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=3d1b0cc0a277f3518126622df79360d6e3c914e0325bb55fd84896878aada005
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-2`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: acd81064b05050478bbc10cf690a1bec4234613cf4d46380feea7e60c53b1243
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=уменьшительно-ласкательные — Ирочка
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=31cc3f187cc8a655898b04ddffbb7a46fd176f04e8508c83adb94048d8bd378c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-2-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 81adcdc7154fdb9df16152df2115b0048e85632b3500894e7ac0e2d37a825fa5
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=уменьшительно
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=4817c25d72e3e8b9c15f426d7f47fa29ebb0d947f2af0f27f78a6076787eac01
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-2-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7f62e348281a81ce29a22ad94366d6f75a69983824e0948be82c8c03efa6f34b
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=ласкательные
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=964b79235608ed306475d3c3a9c29760a40d70a1bb96363e81a7a7ba8c67f3e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-2-r2`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c0a83099935b80110450f24cad57c5d442c0e8e424ff68abffe3e4458bf2a630
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=Ирочка
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=8b659084966d6d03fe3c513bbe61c01923aa56d43545d28282e8966de72a3aae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-3`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 163a1dc4b56a2b18e4b7d0fc02c6022588ca83baad89960ce65c663ce54fb084
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=отстранённо-официального регистра
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9e35292f490f3e19d471229d0cddffc9a15b0a8534e88d1d0a2d5abc2e7a5203
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-3-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 646f4da73ca0afc185d3f201b46e49599a7ce7dd3f751d57b3948f37d9c3a444
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=отстранённо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=4a19f6ffe58df3ea765eaacb622ecc3cf6eab36cb904c43d7fb814b30f8f95ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-3-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1fa8bed63c6b85ea0396873c13ef4d1ca555814b5947a30a03f0c835b1041a41
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=официального регистра
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9648a6e85210680ba62470ca01d706f5c5ba74c8dda23f86e4e0b2b6329660a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-4`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7ba845a0e6f60c41c942f55bec0d21ae03a52ce6a434e962b47d38a640589d7c
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=дружески-неофициальном общении
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=8004a984e7ea883ade552eab04db0c2ec754d05ef0b028a72a5a421d9d8c9f02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-4-r0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fb306be62e25529ff2ba8e2fbeab90faee82708225335fb423340582fcfaf194
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=дружески
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=d2d64e42681f87e2c5d9b39ead8c95cf37982dd55e050c655bd98c8dbe24f2a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-4-r1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7f8155de63a79215dfa942e76214fde5a222e1e990f20cc42253bfa46aa0aae3
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=неофициальном общении
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=9732cab4f5885e9f685b06d5a6c1a6bfb976fc91cf7757c0f56cea132bc1a8e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u25-address-x-5`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 10a79de79276c0575a535780571123a4fe73bc027888df80d3d301e597b5e291
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874
+sourceRevision=153012874
+sourceRecordId=obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име
+originalSourceText=Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.
+
+Обращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».
+
+Краткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста
+shippedText=полуофициальной обстановке
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6
+contentHash=de0a7f5806c6a6cdb9a8769406c3e167bddff06aea9f5fbc4c600f5317db7bbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u25-courtesy-rem`
 
 - Objectives: obj-u25-courtesy
@@ -3612,6 +4854,45 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-u25-154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5bb542915b071a32561cea8b72152385ce17a40282b080a1168dfde0c8741a89
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted lines
+
+### AUTHORED_ENGLISH `en-u25-155`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cc93808ac32d0b7323ab85db68f143c21d6e8967aae74ba34a3c71feeea534c1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen sentence pairs this form with patronymic name, not with the shown words.
+
+### AUTHORED_ENGLISH `en-u25-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 417fec8d9093bd5538567ffcc5d5729bc10a01aa0fd99798e19ccc872f7a4f85
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen sentence pairs this form with family name, not with the shown words.
+
 ### AUTHORED_ENGLISH `en-u25-157`
 
 - Objectives: none
@@ -3620,10 +4901,10 @@ reviewedDigest=
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: caff908d6d3396caa3f19ea23624526bb5fc278030000a341a4a2e352e83a4ab
+- Content hash: cdb91f857e742f90537bd8c138ba201d5a23a2fc076b1e4b2a3c2bfa41cc1875
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-158`
 
@@ -3633,10 +4914,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dfec0037a22077c38de476e8496a8e30c03027c3e9570c595025f13cff3fdcdb
+- Content hash: 983bc41e02dce69f0e5afa113074571f2b4410ba7520ba20d46a4426800aa234
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with patronymic name, not with the shown words.
+text=This form is paired with patronymic name.
 
 ### AUTHORED_ENGLISH `en-u25-159`
 
@@ -3646,10 +4927,10 @@ text=The frozen sentence pairs this form with patronymic name, not with the show
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1cd0432da614169a887c6e845d2f49a7f7d809e0d630a03b07e3f0f262349ca2
+- Content hash: 35f933ea2ada457098af1a2ab7a8a21f1d956f1170aad357270a8e181e29972a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with family name, not with the shown words.
+text=This form is paired with family name.
 
 ### AUTHORED_ENGLISH `en-u25-160`
 
@@ -3659,10 +4940,10 @@ text=The frozen sentence pairs this form with family name, not with the shown wo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac364c3539730cc1d067c103cdd3abe8817dfbbd2595e73c592fd989774bcf3c
+- Content hash: 8f8984861d56843339f16899121d0d2608efc9d36b4e64a6d61aa727de81e9ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
+text=This ending means son of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-161`
 
@@ -3672,10 +4953,10 @@ text=The frozen sentence gives this ending for son of, not as the pair for the s
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 980ba58c2826ddf7c2042e384aa473f016cf7803baa7b23906703816ece525f1
+- Content hash: b51e32e0e1d1cad14b1e08c6e6d786da03bdbddd22241eefa3713d0c3fb237c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with patronymic name.
+text=The frozen sentence says Russians use three names and pairs the shown words with this form.
 
 ### AUTHORED_ENGLISH `en-u25-162`
 
@@ -3685,10 +4966,10 @@ text=This form is paired with patronymic name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce7b70553d124a051dec6d2ee68ca7666dc9e38fdcf2892c7cdc48de4f618ea7
+- Content hash: a4656991e1bc50538b15f024d3f78c23ef94b509a6a06a8d8dc11c8865f1e79c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with family name.
+text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-163`
 
@@ -3698,10 +4979,10 @@ text=This form is paired with family name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f332389bddfa33131ad1706ad8c77687ee94beaa6698a4c45c4436813a2794a4
+- Content hash: 9f9c5153b5d1836a79af83864a0bf0d34f59e62ab426523aa776bae5fc4d4f8c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means son of, rather than the paired form.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u25-164`
 
@@ -3711,10 +4992,10 @@ text=This ending means son of, rather than the paired form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 785fae48d0b82ebba54c3e2faf464c6fae9bf8c54cc7218d0ec021915b345463
+- Content hash: 247760f97113056e0e3e6c259292a3e7c9d7bca811217ec632bc055831196a5e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs the shown words with this form.
+text=The frozen sentence pairs this form with first name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-165`
 
@@ -3724,10 +5005,10 @@ text=The frozen sentence says Russians use three names and pairs the shown words
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c7b5e77a64884a5c07f69e15f549743406192d86dd79f189ff33e53ed519f44
+- Content hash: aeee95bf845bccc4e45e3d83faf4cd7b0c841d03feab511cacf82435577541c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
+text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-166`
 
@@ -3737,10 +5018,10 @@ text=The frozen sentence pairs the shown words with one form. Which admitted for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11aa2d55d5a97554eadd7c2ba2b8ab94175691c1f61bdc98c0d6240bebb0f8c8
+- Content hash: 8a7fe5408d6a7ee93c1b9e976156e683dab2626bff5f4c9b67277baa6c4dd590
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=This form is paired with first name.
 
 ### AUTHORED_ENGLISH `en-u25-167`
 
@@ -3750,10 +5031,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7cf68823adf54871a33ff0a7358577a82563dcf867b0f51679ec054738912d1
+- Content hash: 3acc8042d49230b40d6996eabceec6c61f8a4dc1f2a5eca4a839b1e1433ba4af
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with first name, not with the shown words.
+text=This ending means daughter of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-168`
 
@@ -3763,10 +5044,10 @@ text=The frozen sentence pairs this form with first name, not with the shown wor
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 944ef4411757e9a9762c3440a9f9ac2ae364d7565954fd38d65ee2983bb66b99
+- Content hash: d8af0141731cfae7293e1b346495a96120e6bc7fb941a281d5033f4a013a2e52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-169`
 
@@ -3776,10 +5057,10 @@ text=The frozen sentence gives this ending for daughter of, not as the pair for 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 42d216f0259bf515c9eba884011c87418cf45e4944a3aead487ec0c7048959ea
+- Content hash: 09ab338047f081603abc63f92bba7bcd8ee8e1abb7e206e747f5c5d18ca1b744
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with first name.
+text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-170`
 
@@ -3789,10 +5070,10 @@ text=This form is paired with first name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49d6a4adbad9206646c6d27450a8b23e5151c9bc29b2f848c3b400c77c1dad68
+- Content hash: b156803619df03d8b0af9a74e88613c34353f54d77e74aedacb45794da27ddc9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means daughter of, rather than the paired form.
+text=The frozen sentence says Russians use three names and pairs family name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-171`
 
@@ -3802,10 +5083,10 @@ text=This ending means daughter of, rather than the paired form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fb7694a8efb21e16af47d38b028f4eb609a054484367b79d7e79517602ed7f8f
+- Content hash: 43b97396d81cb3aee39ba03d1d267fb62c334c7a6e90bddd7dec73b23f7b132c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-172`
 
@@ -3815,10 +5096,10 @@ text=The frozen sentence says Russians use three names and pairs patronymic name
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38db844c89aa9d5d0ba7f0c0c8f82fbba57b3562cac0e91c40cc75721d8ab242
+- Content hash: 7d4b4ccbf96bd6c7ba87422e25688e80ab4718b91db87df94282067993c0c594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
+text=The frozen list pairs Alyosha for Alexei with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-173`
 
@@ -3828,10 +5109,10 @@ text=The frozen sentence pairs the shown patronymic words with one form. Which a
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a623fa6e2c33a3ac173591e95bd8b7925cca2595747fea78d69906ca91da348
+- Content hash: 59c18fd25f112839862b44fb8497c196cb5c12e6d2cde8a0e643ea46f0091983
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs family name with this form.
+text=The frozen list pairs Dima for Dmitri with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-174`
 
@@ -3841,10 +5122,10 @@ text=The frozen sentence says Russians use three names and pairs family name wit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3da2c3fdf4919773ecad32270ef116241c82a60695824ece8fc7e6ecc3915b5e
+- Content hash: 0e60c4a0883f39d5c85e7b0602394c836657aff6307c2bcf1f1a6eff19cfd94e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
+text=Alyosha is paired with Alexei, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-175`
 
@@ -3854,10 +5135,10 @@ text=The frozen sentence pairs the shown family words with one form. Which admit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62a152ec046fa81f7777013d930b98753290c63bb40b3a3f934b43886c20e697
+- Content hash: a5188e862c613d893fa1fa2cd41020bfad022fd19f569aa8b0de0da950429da0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Alyosha for Alexei with a different name.
+text=Dima is paired with Dmitri, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-176`
 
@@ -3867,10 +5148,10 @@ text=The frozen list pairs Alyosha for Alexei with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39413ecb8c5246ff0aae8eacb617a171ca608b8d2f25e07afc07700363095d17
+- Content hash: cd68cfc7c511909ac90c5e2656bfb0e1884b58947e9755808a4c45533d57562b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Dima for Dmitri with a different name.
+text=The frozen list includes Sasha for Alexander as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-177`
 
@@ -3880,10 +5161,10 @@ text=The frozen list pairs Dima for Dmitri with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abd28b87999458242fe7663b4167f894a4635b30021d73e97d5b3565a3714b35
+- Content hash: 4fe3b7e67f05ac371f39f76d3c7664f252fe71ed9400e220cbcb51cc5002cc49
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Alyosha is paired with Alexei, not with the shown name.
+text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-178`
 
@@ -3893,10 +5174,10 @@ text=Alyosha is paired with Alexei, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f214e9c83e721723e97cab8577831e1085a561f9765f0d59f7f9243aedfc15d
+- Content hash: d6781de0a1e43a58659cc5374f9f2395fbf51913fb999407f2ef22668b3edb52
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dima is paired with Dmitri, not with the shown name.
+text=The frozen list pairs Sasha for Alexander with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-179`
 
@@ -3906,10 +5187,10 @@ text=Dima is paired with Dmitri, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dbff0644542d74ed347b9668f4e952b79dc38c99073f376366f422f7d3693410
+- Content hash: 62bc8611c292b0228775d6e4786933ec8201bba20428375f803368dd439d7593
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Sasha for Alexander as the pair for the shown name.
+text=Sasha is paired with Alexander, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-180`
 
@@ -3919,10 +5200,10 @@ text=The frozen list includes Sasha for Alexander as the pair for the shown name
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dca6385b9f9b5f62e9d2b4eb54ee557e9d48af425a3aabb3df38f5aa22a762c6
+- Content hash: 12dfd6cf21e9520bf005fdf32e781cbfcd13cba0564f388dd50e08c1ce8adfb2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-181`
 
@@ -3932,10 +5213,10 @@ text=The frozen English list pairs one short form with the shown name. Which adm
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72d55407c4f7719530aa6c98a75ddc30b87a9e22312b6429f13bac17a49f1bdb
+- Content hash: d6d3bce4f6e3b636be026c5fc85a2002fb2d7ab3d04e7b2cb8674abf90a0b026
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Sasha for Alexander with a different name.
+text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-182`
 
@@ -3945,10 +5226,10 @@ text=The frozen list pairs Sasha for Alexander with a different name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63a02b75bc7e01a79a63884fb540643d6851df8106ffe2afb8e7ce6a4a2ea73b
+- Content hash: 9e770368ccbda6b7c772bc9e1fdc034fdb9c6df05807b9d8b5eab923154402db
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Sasha is paired with Alexander, not with the shown name.
+text=The frozen list pairs thanks with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-183`
 
@@ -3958,10 +5239,10 @@ text=Sasha is paired with Alexander, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb10ee2cdb3f2f76c002ab6b8d63891d62456b270ba7e40c27301c6c1c28f69f
+- Content hash: 0e93fd33b3839e87b64791ecd2776d3a4ac3d3ab550944044fe0643e746527f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-184`
 
@@ -3971,10 +5252,10 @@ text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d973b4b4d5a2a04f8e89011684c0caab6875a3084462e9a027da70ac6b9a391b
+- Content hash: 4bf097003053850e38b3b47f04d6e92c367466a90e1a6322c811f51ffe12582b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Dima for Dmitri as the pair for the shown name.
+text=Thanks is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-185`
 
@@ -3984,10 +5265,10 @@ text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ef07908771ea881413deee5d33e0db79d13a48c6999ae1ee07f52c4a24af064e
+- Content hash: 6793895471bbfc7887020bd882cdbd4fd3c2ed2ea2f24114f0fe343530a0dd37
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with a different form.
+text=The informal apology is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-186`
 
@@ -3997,10 +5278,10 @@ text=The frozen list pairs thanks with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66d1f62853ab05f322725fa97635d4cdaf1337b006315d6e513d705c3f5fec6f
+- Content hash: 1197507c122e3f486df17eb04c1f5d98f06f4ba18c8bebd1adde2d59424ccb9e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+text=The frozen list says please; also used for a request and pairs that word with this form.
 
 ### AUTHORED_ENGLISH `en-u25-187`
 
@@ -4010,10 +5291,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with a different for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dbf33e1f957f7e8ad4bb6fee4336cb507f88874f3a3ee4c933cfac852688ff0
+- Content hash: d9f8fca1acdb120e3ffed2f43496f91ac1397b3fc178f640c831950fa8fa77b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is a different courtesy word.
+text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-188`
 
@@ -4023,10 +5304,10 @@ text=Thanks is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ff05bf10d19c98e611b8e3d79fdf2f4ad4ceda7f808398e411a49269fcf7cf7
+- Content hash: 85df54c338ec17257efd517ac3eb10fbcace44083f0c2608191d012adacb2ac2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is a different courtesy word.
+text=The frozen list says please; also used for a request, not for thanks.
 
 ### AUTHORED_ENGLISH `en-u25-189`
 
@@ -4036,10 +5317,10 @@ text=The informal apology is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d8bc37f68fd207b00069baac7b03a9fa458942c24c76a109b3f50198e8950d4
+- Content hash: 3b57b72afd5f4c03840439109c2b4dd0559e58772306da030469900a6b0ad81a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request and pairs that word with this form.
+text=Please is the request word, not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-190`
 
@@ -4049,10 +5330,10 @@ text=The frozen list says please; also used for a request and pairs that word wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e69cea083ac820f89ccefc856ae1d15f7750032c4a9d7c2e14db4063a0b796ca
+- Content hash: f046e5d9569d6cbe592f680e584dfc0925fc427a673505e68f93b248b0d4a1c8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+text=The informal apology is not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-191`
 
@@ -4062,10 +5343,10 @@ text=The frozen list pairs the shown request word with one form. Which admitted 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 452c3338b893c88c59432f846920d072f01209cc7226af81d4132270c6e9b856
+- Content hash: c6eab3b8561ae7d657bc952d0ae83b6db58c9f7a13a16f8609696bc14ac4919b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for thanks.
+text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-192`
 
@@ -4075,10 +5356,10 @@ text=The frozen list says please; also used for a request, not for thanks.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c879c31490ef422e8ef01353d0c5d964968be148b801d096ecbf04d5c973f17d
+- Content hash: feaec0f9d21ff1d63f3bd410698c43a81a96edc7f41c4eab6c1832b4f986ac61
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the thanks word.
+text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-193`
 
@@ -4088,10 +5369,10 @@ text=Please is the request word, not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72ef20d31f21e82c8df92444317aef38890ec6b297d5f3aea0b5b2f431420a3a
+- Content hash: 0cfd5ee8bbe94b9d6b6a5721041a5c6b909b03f5653b5b9829795943efc752f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is not the thanks word.
+text=The frozen list says please; also used for a request, not for the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-194`
 
@@ -4101,10 +5382,10 @@ text=The informal apology is not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 09d694961908538f862d4cbbffdb46863faf4b8ba3d5ce18c14bd3c00bedcfab
+- Content hash: 32eb5fbbf3be4509d78f4d8ae5d844f8078bda8fcefbf23b6fc1f1ccdc71010c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+text=Please is the request word, not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-195`
 
@@ -4114,10 +5395,10 @@ text=The frozen list pairs thanks with this form and I'm sorry / excuse me (info
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5313d616ef6e5ef5cf0a4eecbb969d5b13e8dd0763f398d44a5fcaa4feb474cd
+- Content hash: 4728b46633bd1ac2fe2c9c3797bb7a4ce22e3237ac7d722aa85215c9b389fc4c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+text=Thanks is not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-196`
 
@@ -4127,10 +5408,10 @@ text=The frozen list pairs the shown thanks word with one form. Which admitted f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d16db9c3e80d8844b5edd72f9fab03ef3be51977fd62c6ff88a0ba4512819ea
+- Content hash: 4bde5c1b87af145c0ae7ae880b48af639e247942f837b5879073bea0afc6b5b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for the informal apology.
+text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 
 ### AUTHORED_ENGLISH `en-u25-197`
 
@@ -4140,10 +5421,10 @@ text=The frozen list says please; also used for a request, not for the informal 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e810986ceb8eedfd27da0778073e6f996bc4ef4291405f132c5fd9d914147e2
+- Content hash: ef2e791e868c98c522cba1341ac5f5704adf2c25af2cb0b7081ffc4de5998cbf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the informal apology.
+text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-198`
 
@@ -4153,10 +5434,10 @@ text=Please is the request word, not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddc4b1ee317aa0629ca0842a61eb2e459bc588d722f0a9bf7dee33f1f2a7d735
+- Content hash: cd72410749d0cb9021fcc96ad54ded4d4acae81bb30ce250a0700a944e901d1a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is not the informal apology.
+text=The frozen list pairs My name is... with the reply, not with the shown question.
 
 ### AUTHORED_ENGLISH `en-u25-199`
 
@@ -4166,10 +5447,10 @@ text=Thanks is not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bbce22c1e5a73f4a08112a83fc1b2b46ae0a4a6f2a645421a13111863b17781a
+- Content hash: b7886334b9b836f3b2bf01b0cacd8f9d4db8ae0a86b88440cc8f7fe5cc470a96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
+text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-200`
 
@@ -4179,10 +5460,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de66ebd141c761e6134d42de33a7891f112954768ade3a35944c9e88218cd2ba
+- Content hash: b8a33091b040aca9f11dbdd298331646d56e0fdcbc2b22c985ad9ddeaa58f238
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
+text=This form is the reply, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-201`
 
@@ -4192,10 +5473,10 @@ text=The frozen list pairs the shown informal apology with one form. Which admit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec79dff51a13811c30d86d4e727eee56535594bdec7afae6096c6a3fbcbaa038
+- Content hash: f1016df03bdf3ccb709ae11a44669d761c5030b9a064ae065a6274e001128793
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with the reply, not with the shown question.
+text=This form is the formal apology, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-202`
 
@@ -4205,10 +5486,10 @@ text=The frozen list pairs My name is... with the reply, not with the shown ques
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f5e1e82dce91deb99b9b58f87cbff1800d76fa67508c2f3930c36ddd53ec227c
+- Content hash: a445971717b93874e432a5910e5949bf17292c6a7d92c3a1cee810ec7ed219b6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+text=The frozen list pairs What is your name? with this form and My name is... with the reply.
 
 ### AUTHORED_ENGLISH `en-u25-203`
 
@@ -4218,10 +5499,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da5f6fd4a3006a4e2a913847266434e0273bdbe26ec7876c4783c94c4906b168
+- Content hash: 1bb4a618a5e53139830c8d38268199df022fc92d743286342b81aecd2e343144
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the reply, not the question.
+text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-204`
 
@@ -4231,10 +5512,10 @@ text=This form is the reply, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 876ed1511ed27cc2ee7b3ce49f0c0c03d5289e77b49c2ec1daf4c0489c1982c4
+- Content hash: 1cd0aea5c9746f52797848722afdce66b7a4d5e0a6d3b35651e5cc0fb13d7995
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the question.
+text=The frozen list pairs What is your name? with the question, not with the shown reply.
 
 ### AUTHORED_ENGLISH `en-u25-205`
 
@@ -4244,10 +5525,10 @@ text=This form is the formal apology, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: faff9d07ca198b4e7c3f635064d4cbc36cf1b28d02983462fc92eaf462462bfc
+- Content hash: 495c5b3226832087f94ee96288051ea5fb83b94d5022adb432a0a940ddd7878d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with this form and My name is... with the reply.
+text=This form is the question, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-206`
 
@@ -4257,10 +5538,10 @@ text=The frozen list pairs What is your name? with this form and My name is... w
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b77c94753d717814ba95e9530b31d332e80dc1641d426f1712e8bed6bb217a63
+- Content hash: e9d8f84bcc5bb00f15baad3e922ace099f694f79ad7a09c05bbae93b7b2223e1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+text=This form is the formal apology, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-207`
 
@@ -4270,10 +5551,10 @@ text=The frozen list pairs the shown question with one form. Which admitted form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 080397678a6fd90ed034bf402bda2a22f42dfb5882d9cb5ff5028ede953b3126
+- Content hash: 0ab7fd74e3f42117aeba0330efe482c74ad88a21e3773447181ad602c1dbc3f3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with the question, not with the shown reply.
+text=The frozen list pairs My name is... with this reply and What is your name? with the question.
 
 ### AUTHORED_ENGLISH `en-u25-208`
 
@@ -4283,10 +5564,10 @@ text=The frozen list pairs What is your name? with the question, not with the sh
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e64dffe4034c16905d4c0a4ccea3cf385908b0ac8de4c07e65c1fafd779a2c74
+- Content hash: d94154ee7ad4220f1cf7e4fe89981c7cf58f89c2b2706f2943f71e76b2e8b13a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the question, not the reply.
+text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-209`
 
@@ -4296,10 +5577,10 @@ text=This form is the question, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 68d28f0a8cd25c957866a67a7124fe976f58599af29ec0d69f72c9a4692a3e69
+- Content hash: 5fb0fb1d47feac9a717fa5671c09dbbff3aeea628d2d52f57a1a164616ac04dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the reply.
+text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-210`
 
@@ -4309,10 +5590,10 @@ text=This form is the formal apology, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b637dda6e2a2a35e78328b8af248ca8adc22cd5672e98b423361ba03a969bc2b
+- Content hash: c45168b7e0fe7279358662ef4aadc500c80437e0fd38ca9f488b137ff4539d1f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the question.
+text=The frozen list pairs How are you? with this form, not with the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-211`
 
@@ -4322,10 +5603,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b28ff776fba6ce5852396fd85eb276d254467c6b832a7b6bb7d3dd2bb3338106
+- Content hash: f95f9a586757ab62f45d40f18c9516f8b81c9c23206ac9162bba0b2edfaa8285
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+text=This form is the formal apology, not the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-212`
 
@@ -4335,10 +5616,10 @@ text=The frozen list pairs the shown reply with one form. Which admitted form is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 278301fb0421300eb87c00c9cc389b94d7775ed7f3d8542b11f41181e1e7da36
+- Content hash: 4b8ceb2838aa12afef846e3b3475f191eb6aa20d60450315cce05b618de77da2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+text=This form asks how someone is, rather than giving the name reply.
 
 ### AUTHORED_ENGLISH `en-u25-213`
 
@@ -4348,10 +5629,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1de18f4374d7910ece46d1044740ccd6905d5fb881c2455f9da0579bcb253e93
+- Content hash: d7b25810b15a0162c3b1f870bfbaf9fd5404fad5b19bb2516b28873b5c897115
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs How are you? with this form, not with the name reply.
+text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
 
 ### AUTHORED_ENGLISH `en-u25-214`
 
@@ -4361,10 +5642,10 @@ text=The frozen list pairs How are you? with this form, not with the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ebc209633d9abb70d72771bb214cd3d70c29fbce7b0c1e87c8a1f77107ad8df
+- Content hash: fd669604cd95282d7711740af6aa403041d15836d99a86302dcc628f297f4b61
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the name reply.
+text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
 
 ### AUTHORED_ENGLISH `en-u25-215`
 
@@ -4374,10 +5655,10 @@ text=This form is the formal apology, not the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6a65dccbd0657f3759e3e7d236883430e7de6fcb5bcb44d116e62af471f631a
+- Content hash: 0c89ed06985d93c536e950c2a50655718c6cefce6c17b2c9afc6d22919be85bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form asks how someone is, rather than giving the name reply.
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u25-216`
 
@@ -4387,10 +5668,10 @@ text=This form asks how someone is, rather than giving the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ed3527036a3f816a9566514a221ee6df4f3a272b46fa3d7114f4444be4b411a0
+- Content hash: ff9e2124779fa2e7fd967f9c3ecf51ec3bf91ee9043380cfa4e33880d7c80858
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u25-217`
 
@@ -4400,10 +5681,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03bd0f6ddd6b26982f6d7aacc7545cdfc3f65223d2d4e0ec8613e94815bb7a89
+- Content hash: 1c64b057414d50370bff25cb914aaf204dd0e7317d42292aca28387c8a131415
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+text=Which admitted list name is written for the shown form?
 
 ### AUTHORED_ENGLISH `en-u25-218`
 
@@ -4413,10 +5694,10 @@ text=The frozen list gives the shown question and a separate reply. Which admitt
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e65ff0060cf3efd93cbefcff4d951b227436bce35966857b462d5ce9f122259
+- Content hash: a51bf0095223fb64a3bb48666fe0a96e33c8e9fd2fb3a816a2a69c95f3eedc70
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted name and courtesy lines
+text=Which admitted setting is written for the shown address form?
 
 ### AUTHORED_ENGLISH `en-u25-219`
 
@@ -4426,10 +5707,10 @@ text=Admitted name and courtesy lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 31223a1805c4c085ea53cf1a914fe6c1362f6d84cbd8bf42e318b0718bc101a1
+- Content hash: 7213fe9d667e8b43bd9ddd74295e349df423a2d9e7c1d222e987a58f81be34b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, and courtesy lines. A general nickname-formation rule and modern address guidance stay in the copy you own. Qualified review is pending.
+text=Admitted name and courtesy lines
 
 ### AUTHORED_ENGLISH `en-u25-220`
 
@@ -4439,10 +5720,10 @@ text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 589ea5611abf7a3d748f7d5a851bd46906e3cfe48f303ca4491b4cd3790220fd
+- Content hash: 980c49e9e4250b71eea2d44c640cbbb1fb4cd29c811fa500fbec99e75127120a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u25-221`
 
@@ -4452,10 +5733,10 @@ text=Open Lesson 25 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b28c496750e1a34ad5c3346cb8b01b9427c3794d7a8531e6d2c99efb82fe69de
+- Content hash: 5f133f0fee6348f495abf00e4a8f8a57b5688518ca87620a7363c85f688523a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u25-222`
 
@@ -4465,10 +5746,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3f8c5cdbe03f6c485b7f997b0fec92fc325cd8ceeb162bc55e9ba606fcf37f4
+- Content hash: 7431f01dc226d6a5fda1c366fb02c1108918415e9b596f9835b2757685ce57a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u25-223`
 
@@ -4478,10 +5759,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 95d6cf958e0818489e4cf7e3b70781294b9400af263077a5c3aad4c5221c9e0a
+- Content hash: 63de236adc55d0ce6f381bccf03d49a2f2864d8ed07c94e9ca7f51fb369a88ec
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u25-224`
 
@@ -4491,10 +5772,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4cb7db0fd5030a8a65ab99a8f78f001cf51b36b3d9cbf4bde809a426edc0e0f0
+- Content hash: a75b80805608fe0870e4e0698c994e52017aac2496cb752915b186018372af1e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u25-225`
 
@@ -4504,10 +5785,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6123537afaedfd8ba78dfb6238af14a745289538a602097b87cb59c329d8512
+- Content hash: fdbc09b943817cfcc90ac3501e38709931924914847d7c8e0d985539f9ddc700
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u25-226`
 
@@ -4517,10 +5798,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 352b92f05c0edd2867de510648853983376657dfb74e018a040c1e3da701edc9
+- Content hash: 4fef430fe62a50a6bb5219bfb42ba9b5d336beccb73f9e515404fb5a126289a3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 25 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u25-227`
 
@@ -4530,10 +5811,10 @@ text=Work Lesson 25 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2051899e75108d56de50334abb52fb77fa7d0c4240099d39612c938f45a0ea0e
+- Content hash: 790761b5d57b02e7782b33f51f35d58e7dcd6a7f9aa5d706c3ad48cac55580c7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 25 in your copy
 
 ### AUTHORED_ENGLISH `en-u25-228`
 
@@ -4543,10 +5824,10 @@ text=Do Lesson 25 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c6d417a2f021d7076be87bd664f386c9d72d39a30e2cab50a0641fa8f13be854
+- Content hash: a1f2336c4e79cadef05bbb004ebbeddf98ce5c3cc0466e9b61d14805eaa1ad5e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in your copy and complete its lesson work.
+text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u25-229`
 
@@ -4556,10 +5837,10 @@ text=Open Lesson 25 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77b0718c4cd70a1445ba1e65f3dfad7e77e3a3e7b4676e96ef8ed86bb2f43f6d
+- Content hash: 2cee33a8e1252db2343369b038fe6220347baf3c5d5213a894b66feb78d70274
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 25 book work
+text=Open Lesson 25 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u25-230`
 
@@ -4569,10 +5850,10 @@ text=Record Lesson 25 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f06b0a12f9a52fe4f09579eb5ecc3c22bc56ed0d483dea77789259b1aa81825
+- Content hash: 70c3d829e875c1bc18cf313e3bb905cb6a14dd14b25a1e2e19052cfeea824efd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 25 book work
 
 ### AUTHORED_ENGLISH `en-u25-231`
 
@@ -4582,10 +5863,10 @@ text=When you have done Lesson 25 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 409a2c1e39f171fa15de4ffeab8c8a352778163f6ca50f060863333ba923bb0f
+- Content hash: e83b81d42ecbd6c7b43821b5e570b66380543657b4b4e1af3ff9dd0f026d3c88
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 25 work in your copy.
+text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u25-232`
 
@@ -4595,10 +5876,10 @@ text=Self-attest only after the Lesson 25 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5062c445de17cc848d9775d468e43d9ea61f7a81e2c84ffd3786e895d47330a9
+- Content hash: 96680f066e5d0255391dc78e556508f40ca6a7464412d626faaf999bff936051
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general nickname-formation rule stays in the copy you own
+text=Self-attest only after the Lesson 25 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u25-233`
 
@@ -4608,10 +5889,10 @@ text=A general nickname-formation rule stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9bef5264384905a043737686ce77f92ce7f29e1bd449d361456ae6145c5bdd8b
+- Content hash: 7dd34f2d1515aecd6e600a4f5f14cff616fe83ee89bb5739d24244681d2b5ec9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.
+text=A general nickname-formation rule stays in the copy you own
 
 ### AUTHORED_ENGLISH `en-u25-234`
 
@@ -4621,23 +5902,10 @@ text=A general nickname-formation rule stays in the copy you own. A listed pair 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5d02408219b90e9de6d2f18690b364789151d715205bc5a06c57ec268922642
+- Content hash: 85692db99853b1e5a27f324e88f16644f78d3fd4c6405f8a272194df9b2d5c9e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Modern address guidance stays in the copy you own
-
-### AUTHORED_ENGLISH `en-u25-235`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b248b402f160cfb9bd14d26cbf8eb3ef707cf7e9e8b02f903da331fcb99eea5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Modern address guidance stays in the copy you own. The frozen lines do not supply that guidance.
+text=A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -4653,6 +5921,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-ruwiki-obraschenie-153012874`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6ebb7688ecb66c5c083634ed2e4f3c0818d7d2e6fb76027f25fa7e7376f9f127
+
+Обращение в русском речевом этикете
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -4680,6 +5963,20 @@ Original
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-obraschenie-153012874`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-obraschenie-153012874
+- Rights: rights-ruwiki-obraschenie-153012874
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f0fabd7ca38b4118462fff919101769eed75b8456541694c4a09b702dea8e83d
+
+src-ruwiki-obraschenie-153012874
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -4745,14 +6042,27 @@ permitsAppUse=true
 - `obj-u25-name-question` CHECK `u25-i-name-question-1`
 - `obj-u25-name-question` CHECK `u25-i-name-question-2`
 - `obj-u25-name-question` REMEDIATION `u25-st-rem-name-question`
+- `obj-u25-address` INSTRUCTION `u25-st-orient`
+- `obj-u25-address` INSTRUCTION `u25-st-teach-address-1`
+- `obj-u25-address` INSTRUCTION `u25-st-teach-address-2`
+- `obj-u25-address` INSTRUCTION `u25-st-teach-address-3`
+- `obj-u25-address` EXAMPLE `ex-u25-address-0`
+- `obj-u25-address` EXAMPLE `ex-u25-address-1`
+- `obj-u25-address` EXAMPLE `ex-u25-address-2`
+- `obj-u25-address` EXAMPLE `ex-u25-address-3`
+- `obj-u25-address` PRACTICE `u25-st-guided-address-1`
+- `obj-u25-address` CHECK `u25-i-address-1`
+- `obj-u25-address` CHECK `u25-i-address-2`
+- `obj-u25-address` CHECK `u25-i-address-3`
+- `obj-u25-address` REMEDIATION `u25-st-rem-address`
 - `obj-u25-book` INSTRUCTION `u25-st-book-work`
 - `obj-u25-book` INSTRUCTION `u25-st-book`
 - `obj-u25-nickname-rule` INSTRUCTION `u25-st-gap-nickname-rule`
-- `obj-u25-address` INSTRUCTION `u25-st-gap-address`
 - `u25-s-orient` OBJECTIVE `obj-u25-name-structure`
 - `u25-s-orient` OBJECTIVE `obj-u25-diminutives`
 - `u25-s-orient` OBJECTIVE `obj-u25-courtesy`
 - `u25-s-orient` OBJECTIVE `obj-u25-name-question`
+- `u25-s-orient` OBJECTIVE `obj-u25-address`
 - `u25-s-orient` OBJECTIVE `obj-u25-book`
 - `u25-st-orient` REFERENCE `ref-u2125-attribution`
 - `u25-s-name-structure` OBJECTIVE `obj-u25-name-structure`
@@ -4813,12 +6123,34 @@ permitsAppUse=true
 - `u25-st-check-name-question` REMEDIATION `u25-st-rem-name-question`
 - `u25-st-check-name-question` ITEM `u25-i-name-question-1`
 - `u25-st-check-name-question` ITEM `u25-i-name-question-2`
+- `u25-s-address` OBJECTIVE `obj-u25-address`
+- `u25-st-teach-address-1` EXAMPLE `ex-u25-address-0`
+- `u25-st-teach-address-1` EXAMPLE `ex-u25-address-1`
+- `u25-st-teach-address-1` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-address-1` REMEDIATION `u25-st-rem-address`
+- `u25-st-guided-address-1` ITEM `u25-g-address-0`
+- `u25-st-teach-address-2` REFERENCE `ref-u2125-attribution`
+- `u25-st-teach-address-3` EXAMPLE `ex-u25-address-2`
+- `u25-st-teach-address-3` EXAMPLE `ex-u25-address-3`
+- `u25-st-teach-address-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-rem-address` EXAMPLE `ex-u25-address-0`
+- `u25-st-rem-address` EXAMPLE `ex-u25-address-1`
+- `u25-st-check-address` REMEDIATION `u25-st-rem-address`
+- `u25-st-check-address` ITEM `u25-i-address-1`
+- `u25-st-check-address` ITEM `u25-i-address-2`
+- `u25-st-check-address` ITEM `u25-i-address-3`
 - `u25-s-book` OBJECTIVE `obj-u25-book`
 - `u25-st-book-work` REFERENCE `ref-u2125-attribution`
 - `u25-s-gap-nickname-rule` OBJECTIVE `obj-u25-nickname-rule`
 - `u25-st-gap-nickname-rule` REFERENCE `ref-u2125-attribution`
-- `u25-s-gap-address` OBJECTIVE `obj-u25-address`
-- `u25-st-gap-address` REFERENCE `ref-u2125-attribution`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-ru`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-1-en`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-1-ru`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-2-en`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-2-ru`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-3-en`
+- `obj-u25-address` PROVENANCE `prov-ex-u25-address-3-ru`
 - `obj-u25-courtesy` PROVENANCE `prov-ex-u25-courtesy-0-en`
 - `obj-u25-courtesy` PROVENANCE `prov-ex-u25-courtesy-0-ru`
 - `obj-u25-courtesy` PROVENANCE `prov-ex-u25-courtesy-1-en`
@@ -4847,6 +6179,26 @@ permitsAppUse=true
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-2-ru`
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-3-en`
 - `obj-u25-name-structure` PROVENANCE `prov-ex-u25-name-structure-3-ru`
+- `obj-u25-address` PROVENANCE `prov-u25-address-rem`
+- `obj-u25-address` PROVENANCE `prov-u25-address-rem-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-rem-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-0-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-0-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-1-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-1-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-2`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-2-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-2-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-2-r2`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-3`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-3-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-3-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-4`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-4-r0`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-4-r1`
+- `obj-u25-address` PROVENANCE `prov-u25-address-x-5`
 - `obj-u25-courtesy` PROVENANCE `prov-u25-courtesy-rem`
 - `obj-u25-courtesy` PROVENANCE `prov-u25-courtesy-rem-r0`
 - `obj-u25-diminutives` PROVENANCE `prov-u25-diminutives-rem`
@@ -4873,7 +6225,6 @@ permitsAppUse=true
 ## Unavailable experiences
 
 - `u25-st-gap-nickname-rule`
-- `u25-st-gap-address`
 
 ## Unresolved relationships
 

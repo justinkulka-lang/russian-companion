@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `1e469c124966401a54f9a3da0d52606c1afd6ea2`  
-**Pack content-review digest:** `ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9`  
-**Repository source digest:** `6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888`  
+**Canonical commit:** `d053dbb6245bdccd8360f595625c277da485f4e2`  
+**Pack content-review digest:** `3c56dc9f54ae26c06bcd765523b700ee1ea09cecf5fbd04ba581a5c51a0ad169`  
+**Repository source digest:** `c8e6eacc58ae60743a448514c50851aa0b62df6a566dd5ae540112dc70c41a85`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **12 units** — Units 7 and 17, and Units 21–30.
-- Units 16, 18, 19, and 20: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7 and 17 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit.
+- Content blockers: **10 units** — Units 7 and 17, and Units 23–30.
+- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, and 23–25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -63,9 +63,9 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, MISSING_INSTRUCTIONAL_STRAND, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close documented source-supported curriculum gaps, then regenerate review materials; generate the missing review packet only after the instructional chain exists |
+| 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
+| 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
+| 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close the elapsed-time capability before generating a review packet |
 | 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
@@ -126,108 +126,30 @@ Conditional and obligation spans remain admitted. Probability is now a bounded a
 
 ### Unit 21 — Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-#### `reflexive-object` — `obj-u21-object-reference`
-
-- **Required claim/skill:** Reflexive object reference with себя, limited to source-stated case/reference behavior.
-- **Why the current record is insufficient:** The admitted свой material supports object-possession lines, not reflexive-object reference.
-- **Required source:** Frozen licensed grammar instruction explicitly supporting себя reference and forms used by the proposed checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may describe a source-bound reference relation.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `purpose-clause` — `obj-u21-purpose`
-
-- **Required claim/skill:** Purpose clauses with чтобы, limited to source-supported construction and contrasts.
-- **Why the current record is insufficient:** No admitted span states the purpose-clause pattern.
-- **Required source:** Frozen licensed grammar instruction with explicit construction, meaning, and examples sufficient for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot invent clause structure.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`reflexive-object` and `purpose-clause` now have review-pending instructional chains on English Wikipedia “Russian grammar” oldid 1369617627. The reflexive chain is the frozen love contrast that pairs себя with “I love myself” and the wife line with “I love my wife”. The purpose chain is the subordination list that pairs чтобы with “so that”. A sentence that merely contains чтобы, and свой evidence that does not contain себя, do not clear those claims. This intake does not approve the unit, sign review, or approve the owned-edition mapping. No open research claim remains for Unit 21.
 
 ### Unit 22 — Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-#### `ordinal-list-position` — `obj-u22-ordinals`
-
-- **Required claim/skill:** A checkable ordinal distinction beyond merely appearing in a numbered source list.
-- **Why the current record is insufficient:** The frozen ordinal list does not itself establish a pedagogically testable relationship.
-- **Required source:** Frozen licensed text explicitly stating the selected ordinal rule or relationship and examples that support an independent check.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may state directions, not derive a rule from list order.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `declined-numeral` — `obj-u22-declension`
-
-- **Required claim/skill:** General numeral declension within a deliberately bounded beginner scope.
-- **Why the current record is insufficient:** Existing number rows do not supply the required declension pattern.
-- **Required source:** Frozen licensed grammar instruction explicitly teaching the selected declined forms and their relationships.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English scaffolding may narrow scope after source admission.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `both-forms` — `obj-u22-both-forms`
-
-- **Required claim/skill:** Forms and use of оба/обе or another exactly source-stated both-form distinction.
-- **Why the current record is insufficient:** No admitted frozen span supports the distinction.
-- **Required source:** Frozen licensed instruction explicitly supplying forms, agreement/use, and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot construct the paradigm.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `one-and-a-half` — `obj-u22-half-forms`
-
-- **Required claim/skill:** Forms and use of полтора/полторы, limited to source-stated gender/case behavior.
-- **Why the current record is insufficient:** No admitted frozen span supports the distinction.
-- **Required source:** Frozen licensed instruction explicitly supplying the admitted forms, conditions, and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer the paradigm.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `collective-numeral` — `obj-u22-collective`
-
-- **Required claim/skill:** Collective-numeral forms and use within a bounded source-supported scope.
-- **Why the current record is insufficient:** No admitted frozen span supports collective quantity forms.
-- **Required source:** Frozen licensed instruction explicitly stating the admitted collective forms, applicable noun classes or contexts, and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot generalize beyond the span.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`declined-numeral` and `both-forms` use the frozen Russian Wikipedia morphology table oldid 148939075. `one-and-a-half` uses English Wiktionary “полтора” oldid 89737719, including the usage note, and does not admit linked audio. `collective-numeral` uses the collective-numbers column on English Wikipedia “Russian grammar” oldid 1369617627. A cardinal or ordinal cell without that column does not clear the collective claim. A numbered source list is not an ordinal capability. This intake does not approve the unit, sign review, or approve the owned-edition mapping. No open research claim remains for Unit 22.
 
 ### Unit 23 — Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
+Bounded ago, during, and step-out lines from English Wikipedia “Russian grammar” oldid 1369617627 are recognition only. They do not clear `elapsed-time-duration`, and the unit has no review packet.
+
 #### `elapsed-time-duration` — `obj-u23-duration`
 
 - **Required claim/skill:** Elapsed time, duration, ago, during, and completion over a period, split into independently supported contrasts.
-- **Why the current record is insufficient:** Hour, year, and minute rows are not duration instruction; the unit has no Russian instructional body or checks.
+- **Why the current record is insufficient:** The admitted ago, during, and step-out lines are bounded expressions. They do not establish the elapsed-time and duration system.
 - **Required source:** Frozen licensed grammar instruction explicitly supporting each retained duration construction and the contrasts that will be assessed.
 - **Russian examples required:** Yes
 - **English scaffold boundary:** English may sequence subtopics only after the Russian relationships are sourced.
-- **Book-directed disposition:** The unit remains book-directed and closed until sourced.
+- **Book-directed disposition:** The broader capability remains book-directed and closed until sourced.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
@@ -236,34 +158,12 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `negation-alternation` — `obj-u24-alternation`
-
-- **Required claim/skill:** Object-form choice under negation, including only source-stated accusative/genitive conditions.
-- **Why the current record is insufficient:** Admitted verbal не and нет/genitive examples do not establish the alternation.
-- **Required source:** Frozen licensed grammar instruction explicitly stating the alternation, conditions, caveats, and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer a rule from isolated examples.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `negative-pronoun` — `obj-u24-stand-ins`
-
-- **Required claim/skill:** Negative pronouns/stand-in forms and any concord relationship explicitly supported by the source.
-- **Why the current record is insufficient:** No admitted span supports these forms.
-- **Required source:** Frozen licensed grammar instruction explicitly supplying forms, stress if shipped, syntactic relationship, and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot generate paradigms.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`negation-alternation` is the frozen book compare on English Wikipedia “Russian grammar” oldid 1369617627. `negative-pronoun` is the ни-/не- table on Russian Wikipedia oldid 141256493. Neither the book compare nor the negative-concord line clears `negation-scope`.
 
 #### `negation-scope` — `obj-u24-placement`
 
 - **Required claim/skill:** Placement and scope contrasts involving не, bounded to source-explicit differences.
-- **Why the current record is insufficient:** Existing lines show negation but do not supply a placement/scope contrast.
+- **Why the current record is insufficient:** The genitive and accusative book compare, and the negative-concord line, do not supply a placement or scope contrast.
 - **Required source:** Frozen licensed instruction explicitly contrasting placements and meanings with examples adequate for non-circular checks.
 - **Russian examples required:** Yes
 - **English scaffold boundary:** English may name only the source-stated difference.
@@ -276,25 +176,15 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
+`register` is admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The diminutive and personal-name pages are retained and are not taught as a productive rule.
+
 #### `productive-diminutive` — `obj-u25-nickname-rule`
 
 - **Required claim/skill:** A bounded productive diminutive or nickname-formation rule, if a qualified reviewer agrees it is appropriate.
-- **Why the current record is insufficient:** Listed name/diminutive pairs do not establish a productive rule.
+- **Why the current record is insufficient:** Listed name and diminutive forms, including Ирочка on the address page, do not establish a productive rule.
 - **Required source:** Frozen licensed linguistic instruction explicitly stating a bounded rule, exceptions/cautions, and examples; otherwise retain only listed pairs.
 - **Russian examples required:** Yes
 - **English scaffold boundary:** English must not turn examples into a productive rule.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `register` — `obj-u25-address`
-
-- **Required claim/skill:** Modern social-address/register guidance with time/place limitations and source date visible to reviewers.
-- **Why the current record is insufficient:** The frozen Names page contains dated or excluded sociolinguistic claims; admitted courtesy lines do not support broad register guidance.
-- **Required source:** Current, frozen, license-compatible authoritative guidance explicitly stating the limited register claims; conflicting or dated claims must remain excluded.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may present datedness and limits, not invent sociolinguistic norms.
 - **Book-directed disposition:** Current guidance remains book-directed.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
