@@ -11,12 +11,12 @@ Unit 17 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
-- Unit content-review SHA-256: 6acff0060d62e86caa6937dcd238fb9f4102bdb4010c1df9aea012701cfa5010
+- Curriculum source commit: 453b0114248b7fcfce55087ab9a63c54675212ba
+- Unit content-review SHA-256: 68b2507b3e75d59c639cf204d528085623d4c4a6398345233f73d5ccb0ce721b
 - Mapping-package SHA-256: f3b65cb31a8f11abd9ebdc810be96618acb7565d78608655c169a507098e570e
-- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
-- Review-package SHA-256: 67e2bf692ac15d0d9022784a003948101f7a9acd50bdfd299ab45cc72733753e
-- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
+- Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
+- Review-package SHA-256: 9e91b30c4bd6da23f18c4ba995ca1e1c5f77cdc678032190e3f75d9b4d137b64
+- Repository source SHA-256: 22f3f7163e03770da91b1ae89e65737fc5815da801bcaa7832ee1611c490005e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3459,11 +3459,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 88fcd473b52a24e2857e442e852713a58a3be3f85327d28cbbbbbd3c2b9bc96d
+- Content hash: 21ba28512d9949a3ff06b978eef599bc7a59d727246ea60cfe155e0a51403f12
 
 title=Unit 17 source notice
 summary=Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The three clock phrases are bounded recognition. Productive clock-time answers are not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Productive clock-time generation remains unresolved. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=17
 searchTerms=unit 17 source notice

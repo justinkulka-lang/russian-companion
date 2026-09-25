@@ -11,12 +11,12 @@ Unit 19 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 1
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 287fd84ce286f151b90abbee4e714e42211eee10
-- Unit content-review SHA-256: f1d0f31a2e04e1eb880c09910bc1162e8f43707cdd8c028f2aea2dd32fc9a855
+- Curriculum source commit: 453b0114248b7fcfce55087ab9a63c54675212ba
+- Unit content-review SHA-256: 7daabf2fa0295a3f54d1b38603d57d1b888555c2ca2b5d04af25af5b09654d73
 - Mapping-package SHA-256: 907a9086e25bd1a87abef73f9271ccf32dbe4df12eedacba4eaf23603fe644b9
-- Pack content-review SHA-256: 66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2
-- Review-package SHA-256: 6dc272fe3a393024c5a2254d77845bc95d74abc6e6fc862b3b077b84877aa47c
-- Repository source SHA-256: b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974
+- Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
+- Review-package SHA-256: 9e5cf8438e90950d1b26809f5b9e794c7ad36e4477ca10f48a7c732c0c6ccb9d
+- Repository source SHA-256: 22f3f7163e03770da91b1ae89e65737fc5815da801bcaa7832ee1611c490005e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1301,11 +1301,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 4b280a7597269481a441c14bd1bc65edd90b387be7b86f381b9b6e5e768904a5
+- Content hash: ed10d08ea275d7d862e82e904c8d9a13b28aa682d62519068c9115957653a63e
 
 title=Units 16–20 source notice
 summary=Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.
-detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.
+detail=OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
