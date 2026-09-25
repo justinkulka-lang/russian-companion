@@ -16,7 +16,7 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
 - Mapping-package SHA-256: 3760c217663b5b3f037dd9f8d85a5e1a51c320861191d59a01ae6c2c9b4ee4ef
 - Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
 - Review-package SHA-256: cfcd90bce59726e877354d0161396e6708753714782dc8096a1fcd030dc4acfb
-- Repository source SHA-256: d07000df18fdbe6064ce78d5c4bed9598bdb5d4ef88fb4f58d3e867ec74c9556
+- Repository source SHA-256: 38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

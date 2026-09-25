@@ -1,7 +1,6 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.release.readAcceptanceCandidate
-import dev.russiancompanion.v2.curriculum.ExplicitSourcePairs
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -119,32 +118,42 @@ class Aud44CorrectionTest {
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertNoResolvedClaimCalledMissing(pack, live.remaining)
 
-        val bothMissing = withoutClaim(pack, "calendar-date")
-        val both = advancementDecision(bothMissing, bothMissing.unit(17)!!, learner(bothMissing, 17))
-        assertTrue(unresolved(bothMissing, 17).containsAll(listOf("productive-clock-time", "calendar-date")))
-        assertFalse(both.allowed)
-        assertTrue(
-            both.remaining.joinToString("\n"),
-            both.remaining.contains("Unit 17 is missing productive clock-time and calendar-date source capabilities"),
+        assertEquals(
+            listOf("Unit 17 is missing a productive clock-time source capability"),
+            V2Validator.unit17SourceBlockers(setOf("productive-clock-time")),
         )
-        assertNoResolvedClaimCalledMissing(bothMissing, both.remaining)
+        assertEquals(
+            listOf("Unit 17 is missing a calendar-date source capability"),
+            V2Validator.unit17SourceBlockers(setOf("calendar-date")),
+        )
+        assertEquals(
+            listOf("Unit 17 is missing productive clock-time and calendar-date source capabilities"),
+            V2Validator.unit17SourceBlockers(setOf("productive-clock-time", "calendar-date")),
+        )
+        assertEquals(emptyList<String>(), V2Validator.unit17SourceBlockers(emptySet()))
+        assertFalse(V2Validator.unit17SourceBlockers(setOf("productive-clock-time")).any { it.contains("calendar-date") })
+        assertFalse(V2Validator.unit17SourceBlockers(setOf("calendar-date")).any { it.contains("clock-time") })
+        assertTrue(V2Validator.ADMITTED_PRODUCTIVE_CLOCK_TIME.isEmpty())
+    }
 
-        val productive = withResolvedProductiveClock(pack)
-        assertTrue(V2Validator.validate(productive).errors.joinToString("\n"), V2Validator.validate(productive).ok)
-        assertFalse(unresolved(productive, 17).contains("productive-clock-time"))
-        assertFalse(unresolved(productive, 17).contains("calendar-date"))
-        val neither = advancementDecision(productive, productive.unit(17)!!, learner(productive, 17))
-        assertFalse(neither.remaining.joinToString("\n"), neither.remaining.any { it.contains("source capability") })
-        assertNoResolvedClaimCalledMissing(productive, neither.remaining)
-
-        val dateOnly = withoutClaim(productive, "calendar-date")
-        assertTrue(V2Validator.validate(dateOnly).errors.joinToString("\n"), V2Validator.validate(dateOnly).ok)
-        assertEquals(setOf("calendar-date"), unresolved(dateOnly, 17))
-        val date = advancementDecision(dateOnly, dateOnly.unit(17)!!, learner(dateOnly, 17))
-        assertFalse(date.allowed)
-        assertTrue(date.remaining.contains("Unit 17 is missing a calendar-date source capability"))
-        assertFalse(date.remaining.joinToString("\n"), date.remaining.any { it.contains("clock-time") })
-        assertNoResolvedClaimCalledMissing(dateOnly, date.remaining)
+    @Test
+    fun unrelatedEvidenceCannotImpersonateProductiveClockTime() {
+        val pack = pack()
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+        listOf("age", "clock-question", "calendar-date", "clock-expression-recognition").forEach { claim ->
+            val impersonated = impersonateProductiveClock(pack, claim, fabricateRecordId = false)
+            assertProductiveClockStaysUnresolved(impersonated, claim)
+        }
+        val fabricated = impersonateProductiveClock(pack, "weekdays", fabricateRecordId = true)
+        assertProductiveClockStaysUnresolved(fabricated, "weekdays")
+        val recognition = pack.sourceCapabilities.first { it.supportedClaim == "clock-expression-recognition" }
+        val relabeled = impersonateProductiveClock(pack, "clock-expression-recognition", fabricateRecordId = false)
+        val errors = V2Validator.validate(relabeled).errors
+        assertTrue(
+            errors.joinToString("\n"),
+            errors.any { it.contains(recognition.id) || it.contains("cap-u17-productive-clock-clock-expression-recognition") },
+        )
+        assertTrue(errors.any { it.contains("do not clear productive-clock-time") })
     }
 
     @Test
@@ -278,28 +287,37 @@ class Aud44CorrectionTest {
     private fun unresolved(pack: V2CurriculumPack, number: Int): Set<String> =
         V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { it.claim }.toSet()
 
-    private fun withoutClaim(pack: V2CurriculumPack, claim: String): V2CurriculumPack =
-        pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != claim })
-
     /**
-     * A defect-free productive-clock-time capability on an admitted age span.
-     * The frozen clock span stays bound to recognition and cannot clear the claim.
+     * Rebind an admitted Unit 17 span onto the clock-answer objective and label
+     * it productive-clock-time. The rewritten objective, record id, check chain,
+     * and supportedClaim are not an independent admission.
      */
-    private fun withResolvedProductiveClock(pack: V2CurriculumPack): V2CurriculumPack {
-        val template = pack.items.first { it.id == "u17-i-age-1" }
+    private fun impersonateProductiveClock(
+        pack: V2CurriculumPack,
+        sourceClaim: String,
+        fabricateRecordId: Boolean,
+    ): V2CurriculumPack {
+        val source = pack.sourceCapabilities.first { it.unitNumber == 17 && it.supportedClaim == sourceClaim }
+        val template = pack.items.first { item ->
+            item.objectiveId == source.objectiveId &&
+                item.assessment?.independent == true &&
+                item.assessment.relationParticipantIds.any { id ->
+                    pack.provenanceRecords.any { it.itemId == id && it.originalSourceText == source.exactSpan }
+                }
+        }
         val assessment = template.assessment!!
-        val idMap = assessment.relationParticipantIds.associateWith { "prov-u17-productive-clock-$it" }
+        val suffix = if (fabricateRecordId) "|fabricated-record" else ""
+        val idMap = assessment.relationParticipantIds.associateWith { "prov-u17-impersonate-$sourceClaim-$it" }
         val cloned = assessment.relationParticipantIds.map { oldId ->
             val record = pack.provenanceRecords.first { it.itemId == oldId }
             record.copy(
                 itemId = idMap.getValue(oldId),
                 objectiveId = "obj-u17-clock-answers",
-                sourceRecordId = record.sourceRecordId + "|productive-clock-fixture",
+                sourceRecordId = record.sourceRecordId + suffix,
             )
         }
-        val host = cloned.first()
-        assertNotEquals(ExplicitSourcePairs.clockSpan, host.originalSourceText)
-        val itemId = "u17-i-productive-clock-1"
+        val host = cloned.first { it.originalSourceText == source.exactSpan }
+        val itemId = "u17-i-impersonate-$sourceClaim"
         val item = template.copy(
             id = itemId,
             objectiveId = "obj-u17-clock-answers",
@@ -310,7 +328,7 @@ class Aud44CorrectionTest {
             ),
         )
         val capability = V2SourceCapability(
-            id = "cap-u17-productive-clock-fixture",
+            id = "cap-u17-productive-clock-$sourceClaim",
             sourceId = host.sourceId,
             sourceRevision = host.sourceRevision,
             sourceRecordId = host.sourceRecordId,
@@ -340,6 +358,22 @@ class Aud44CorrectionTest {
                 }
             },
         )
+    }
+
+    private fun assertProductiveClockStaysUnresolved(pack: V2CurriculumPack, sourceClaim: String) {
+        val errors = V2Validator.validate(pack).errors
+        assertFalse(sourceClaim + "\n" + errors.joinToString("\n"), errors.isEmpty())
+        assertTrue(
+            sourceClaim + "\n" + errors.joinToString("\n"),
+            errors.any { it.contains("cap-u17-productive-clock-$sourceClaim") && it.contains("no independent productive-clock-time admission") },
+        )
+        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
+        assertFalse(unresolved(pack, 17).contains("calendar-date"))
+        assertFalse(unresolved(pack, 17).contains(sourceClaim) && sourceClaim != "productive-clock-time")
+        val decision = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertFalse(decision.allowed)
+        assertTrue(decision.remaining.any { it.contains("productive clock-time") })
+        assertFalse(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("calendar-date") })
     }
 
     private fun assertNoResolvedClaimCalledMissing(pack: V2CurriculumPack, remaining: List<String>) {

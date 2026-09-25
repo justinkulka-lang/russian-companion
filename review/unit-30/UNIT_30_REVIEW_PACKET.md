@@ -16,7 +16,7 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
 - Pack content-review SHA-256: 7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693
 - Review-package SHA-256: 0c8a73fc7504b46e3d5c1822f1074f40c89ff69226de07829d7ef07f2baba351
-- Repository source SHA-256: d07000df18fdbe6064ce78d5c4bed9598bdb5d4ef88fb4f58d3e867ec74c9556
+- Repository source SHA-256: 38b0ca6f5c9db0a99d11e89262d88e27d359dd8c2cfa8292f791178ff7f71145
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

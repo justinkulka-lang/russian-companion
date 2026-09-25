@@ -883,7 +883,7 @@ internal object V2Validator {
      * A resolved calendar-date claim must not be reported as missing, and a
      * resolved productive clock-time claim must not be reported as missing.
      */
-    private fun unit17SourceBlockers(unresolved: Set<String>): List<String> {
+    internal fun unit17SourceBlockers(unresolved: Set<String>): List<String> {
         val missing = listOf("productive-clock-time", "calendar-date").filter { it in unresolved }
         val named = missing.map { claim ->
             if (claim == "productive-clock-time") "productive clock-time" else "calendar-date"
@@ -960,6 +960,9 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
         }
+        if (capability.supportedClaim == "productive-clock-time" && !admittedProductiveClockTime(capability)) {
+            errors += "Source capability ${capability.id} has no independent productive-clock-time admission"
+        }
         if (
             capability.sourceId.isBlank() ||
             capability.sourceRevision.isBlank() ||
@@ -1029,6 +1032,40 @@ internal object V2Validator {
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:such as {{wikt-lang|ru|\u0431\u0435\u0436}} ('beige', non-adapted form of {{wikt-lang|ru|\u0431\u0435\u0301\u0436\u0435\u0432|0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
         "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
     )
+
+    /**
+     * Independently recorded productive-clock-time admissions.
+     * Each entry names the complete frozen identity and the governed claim.
+     * A capability's own supportedClaim is not an entry and is not proof.
+     * The set stays empty until a genuine productive clock source is frozen
+     * and admitted. No current span can clear the claim.
+     */
+    internal data class ProductiveClockTimeAdmission(
+        val sourceId: String,
+        val sourceRevision: String,
+        val sourceRecordId: String,
+        val sourceHash: String,
+        val exactSpan: String,
+        val unitNumber: Int,
+        val objectiveId: String,
+        val governedClaim: String,
+    )
+
+    internal val ADMITTED_PRODUCTIVE_CLOCK_TIME: Set<ProductiveClockTimeAdmission> = emptySet()
+
+    private fun admittedProductiveClockTime(capability: V2SourceCapability): Boolean {
+        val recorded = ProductiveClockTimeAdmission(
+            sourceId = capability.sourceId,
+            sourceRevision = capability.sourceRevision,
+            sourceRecordId = capability.sourceRecordId,
+            sourceHash = capability.sourceHash,
+            exactSpan = capability.exactSpan,
+            unitNumber = capability.unitNumber,
+            objectiveId = capability.objectiveId,
+            governedClaim = "productive-clock-time",
+        )
+        return recorded in ADMITTED_PRODUCTIVE_CLOCK_TIME
+    }
 
     private fun admittedLateSource(capability: V2SourceCapability): Boolean {
         val key = listOf(
