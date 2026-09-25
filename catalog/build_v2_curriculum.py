@@ -1649,11 +1649,11 @@ def build() -> dict:
         25: ("307-321", "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions"),
     }
     next_intake_summaries = {
-        21: "Proposed Unit 21 is in development and is not prepared. Admitted object-possession lines await qualified review. Reflexive object reference and purpose clauses have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        22: "Proposed Unit 22 is in development and is not prepared. Admitted item-form lines and last-digit examples await qualified review. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        23: "Proposed Unit 23 is in development and is not prepared. Elapsed time and duration have no admitted frozen instructional source. Hour, year, and minute rows are not duration instruction. It is not installed and the owned-edition mapping is not signed.",
-        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines and the absence form await qualified review. Object-form choice under negation, negative stand-in forms, and placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
-        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, and courtesy lines await qualified review. A general nickname-formation rule and modern address guidance have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        21: "Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.",
+        22: "Proposed Unit 22 is in development. Admitted numeral lines, the case table, the half-form usage note, and the collective column await qualified review. A numbered list is not taught as an ordinal distinction. It is not installed and the owned-edition mapping is not signed.",
+        23: "Proposed Unit 23 is in development and is not prepared. Elapsed time and duration have no admitted frozen instructional source. Bounded ago, during, and step-out lines do not establish that system. Hour, year, and minute rows are not duration instruction. It is not installed and the owned-edition mapping is not signed.",
+        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, and the prefix table await qualified review. Placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, courtesy lines, and the address-register sentences await qualified review. A general nickname-formation rule has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
     }
     for number, short, title in UNITS_3_30:
         if number < 21 or number > 25:
@@ -1668,7 +1668,7 @@ def build() -> dict:
                 next_intake_summaries[number],
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="NOT_PREPARED",
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number in (21, 22) else "NOT_PREPARED",
                 mapping_note=(
                     f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
                     "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "
@@ -1726,8 +1726,8 @@ def build() -> dict:
         "publicReleaseEligible": False,
         "linguisticReview": REVIEW_PENDING,
         "unitReviews": [pending_unit_review(number) for number in range(1, 31)],
-        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"], *late_intake["sources"], *later["sources"], *intake["sources"]],
-        "rights": [*RIGHTS, *proposed["rights"], *late_intake["rights"], *later["rights"], *intake["rights"]],
+        "sources": [SOURCE_LETTERS, SOURCE_ENGLISH, *proposed["sources"], *late_intake["sources"], *later["sources"], *intake["sources"], *later_intake["sources"]],
+        "rights": [*RIGHTS, *proposed["rights"], *late_intake["rights"], *later["rights"], *intake["rights"], *later_intake["rights"]],
         "letters": letters,
         "examples": examples,
         "items": items,
@@ -1738,7 +1738,7 @@ def build() -> dict:
         "ownedEditionMappings": [],
         "provenanceRecords": [*proposed["provenance"], *later["provenance"], *following["provenance"], *intake["provenance"], *later_intake["provenance"], *late_intake["provenance"]],
         "authoredEnglishRecords": [*proposed["authored"], *later["authored"], *following["authored"], *intake["authored"], *later_intake["authored"], *late_intake["authored"]],
-        "sourceCapabilities": [*later["capabilities"], *intake["capabilities"], *late_intake["capabilities"]],
+        "sourceCapabilities": [*later["capabilities"], *intake["capabilities"], *later_intake["capabilities"], *late_intake["capabilities"]],
         "admissions": {
             "generatedRussianWords": 0,
             "penguinProseAssets": 0,

@@ -73,6 +73,10 @@ class FrozenSources:
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
+        self.page_meta = {}
+        from source_transforms import load_supplemental_pages
+
+        load_supplemental_pages(self, SOURCE_ROOT)
 
     def require(self, page: str, needle: str) -> str:
         if needle not in self.pages[page]:
@@ -154,29 +158,50 @@ class Builder:
         })
 
     def wiki(self, item_id, unit, objective, page, needle, shipped, record_type="example") -> str:
+        from source_transforms import special_transformation
+        from units_3_5_intake import text_in_frozen
+
         original = self.frozen.require(page, needle)
-        cleaned = format_wikibooks_emphasis(shipped)
-        if format_wikibooks_emphasis(cleaned) != cleaned:
-            raise SystemExit(f"{item_id} emphasis transform is not stable")
-        formatted = format_wikibooks_emphasis(original)
-        if cleaned not in original and cleaned not in formatted:
-            raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
-        transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
+        meta = self.frozen.page_meta.get(page)
+        if meta is None:
+            cleaned = format_wikibooks_emphasis(shipped)
+            if format_wikibooks_emphasis(cleaned) != cleaned:
+                raise SystemExit(f"{item_id} emphasis transform is not stable")
+            formatted = format_wikibooks_emphasis(original)
+            if cleaned not in original and cleaned not in formatted:
+                raise SystemExit(f"Shipped text {cleaned!r} is not in {page}")
+            transformation = "selection" if cleaned in original else "wikibooks emphasis formatting"
+            self.add_provenance(
+                item_id, unit, objective, record_type, WIKIBOOKS_ID,
+                f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}",
+                self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, self.wikibooks_attr,
+            )
+            return cleaned
+        transformation = special_transformation(meta, original, shipped)
+        if transformation is None:
+            if not text_in_frozen(original, shipped):
+                raise SystemExit(f"Shipped text {shipped!r} is not in {page}")
+            transformation = "selection"
         self.add_provenance(
-            item_id, unit, objective, record_type, WIKIBOOKS_ID,
-            f"https://en.wikibooks.org/wiki/{self.titles[page]}?oldid={self.frozen.oldid(page)}",
-            self.frozen.oldid(page), page + ":" + needle[:80], original, cleaned, transformation, self.wikibooks_attr,
+            item_id, unit, objective, record_type, meta["sourceId"],
+            meta["url"], str(meta["oldid"]), page + ":" + needle[:80],
+            original, shipped, transformation, meta["attribution"],
         )
-        return cleaned
+        return shipped
 
     def example(self, example_id, display, note, objective) -> None:
+        source = WIKIBOOKS_ID
+        for record in reversed(self.provenance):
+            if record["shippedText"] == display and record["objectiveId"] == objective:
+                source = record["sourceId"]
+                break
         self.examples.append({
             "id": example_id,
             "kind": "LEXICAL",
             "letterId": "",
             "display": display,
             "note": note,
-            "sourceId": WIKIBOOKS_ID,
+            "sourceId": source,
             "reviewStatus": PENDING,
             "objectiveId": objective,
         })
@@ -358,7 +383,7 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
         "steps": [
             _step(
                 f"u{number}-st-book-work", "BOOK", builder.say(number, f"Work Lesson {number} in your copy"),
-                builder.say(number, f"Do Lesson {number} in the copy you own. This unit has no proposed lesson body for the missing topics. Listening stays with the book. No audio is mapped here."),
+                builder.say(number, f"Do Lesson {number} in the copy you own. The bounded lines in this unit do not establish elapsed time and duration. Listening stays with the book. No audio is mapped here."),
                 book=builder.say(number, f"Open Lesson {number} in your copy and complete its lesson work."),
                 reference_ids=[REFERENCE],
             ),
@@ -389,38 +414,34 @@ def build_units_21_25() -> dict:
     frozen = FrozenSources()
     builder = Builder(frozen)
     prepared = [
-        _unit(builder, 21, "Admitted object-possession lines", "Proposed Unit 21 uses frozen lines where the reflexive possessive follows the object in possession. Reflexive object reference and purpose clauses stay in the copy you own. Qualified review is pending.", 2, populate, [
-            ("object-reference", "Reflexive object reference stays in the copy you own", "Reflexive object reference stays in the copy you own. No admitted frozen span states that pattern.", "Reflexive object reference has no admitted frozen span."),
-            ("purpose", "Purpose clauses stay in the copy you own", "Purpose clauses stay in the copy you own. No admitted frozen span states that pattern.", "Purpose clauses have no admitted frozen span."),
-        ]),
-        _unit(builder, 22, "Admitted numeral groups", "Proposed Unit 22 uses frozen item-form lines and last-digit examples. Ordinal list position, declined quantity forms, both-forms, one-and-a-half forms, and collective quantity forms stay in the copy you own. Qualified review is pending.", 4, populate, [
-            ("ordinals", "Ordinal list position stays in the copy you own", "Ordinal list position stays in the copy you own. A numbered list does not by itself supply a checked distinction.", "The frozen ordinal list does not by itself support a checked distinction."),
-            ("declension", "Declined quantity forms stay in the copy you own", "Declined quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.", "General numeral declension has no admitted frozen span."),
-            ("both-forms", "Both-forms stay in the copy you own", "Both-forms stay in the copy you own. The frozen number rows do not supply that pattern.", "Both-forms have no admitted frozen span."),
-            ("half-forms", "One-and-a-half forms stay in the copy you own", "One-and-a-half forms stay in the copy you own. The frozen number rows do not supply that pattern.", "One-and-a-half forms have no admitted frozen span."),
-            ("collective", "Collective quantity forms stay in the copy you own", "Collective quantity forms stay in the copy you own. The frozen number rows do not supply that pattern.", "Collective quantity forms have no admitted frozen span."),
-        ]),
-        _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses frozen verbal negation lines and the admitted absence form. Object-form choice under negation, negative stand-in forms, and placement contrasts stay in the copy you own. Qualified review is pending.", 4, populate, [
-            ("alternation", "Object-form choice under negation stays in the copy you own", "Object-form choice under negation stays in the copy you own. The frozen lines do not supply that pattern.", "Object-form choice under negation has no admitted frozen span."),
-            ("stand-ins", "Negative stand-in forms stay in the copy you own", "Negative stand-in forms stay in the copy you own. The frozen lines do not supply that pattern.", "Negative stand-in forms have no admitted frozen span."),
+        _unit(builder, 21, "Admitted object and purpose lines", "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.", 2, populate, []),
+        _unit(builder, 22, "Admitted numeral forms", "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.", 4, populate, []),
+        _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.", 4, populate, [
             ("placement", "Placement contrasts stay in the copy you own", "Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.", "Placement contrasts have no admitted frozen span."),
         ]),
-        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, and courtesy lines. A general nickname-formation rule and modern address guidance stay in the copy you own. Qualified review is pending.", 8, populate, [
+        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.", 8, populate, [
             ("nickname-rule", "A general nickname-formation rule stays in the copy you own", "A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.", "A general nickname-formation rule has no admitted frozen span."),
-            ("address", "Modern address guidance stays in the copy you own", "Modern address guidance stays in the copy you own. The frozen lines do not supply that guidance.", "Modern address guidance has no admitted frozen span."),
         ]),
     ]
-    closed = [
-        _closed_unit(
-            builder, 23, "Duration stays unprepared",
-            "Proposed Unit 23 is not prepared. Elapsed time and duration stay in the copy you own. Hour rows, year rows, and minute rows are not duration instruction. Qualified review is pending.",
-            [
-                ("duration", "Elapsed time and duration stay in the copy you own", "Elapsed time, ago, during, and completion over a period stay in the copy you own. Hour rows, year rows, and minute rows are not that instruction.", "Elapsed time, duration, ago, during, and completion over a period have no admitted frozen span."),
-            ],
-        ),
-    ]
+    closed_unit = _closed_unit(
+        builder, 23, "Duration stays unprepared",
+        "Proposed Unit 23 is not prepared. Bounded ago, during, and step-out lines do not establish elapsed time and duration. Hour rows, year rows, and minute rows are not duration instruction. Qualified review is pending.",
+        [
+            ("duration", "Elapsed time and duration stay in the copy you own", "Elapsed time and duration stay in the copy you own. Bounded ago, during, and step-out lines do not establish that system. Hour rows, year rows, and minute rows are not that instruction.", "Elapsed time and duration have no admitted frozen span. Bounded ago, during, and step-out lines do not establish that system."),
+        ],
+    )
+    from batch_b_units_21_25 import add_unit_23
+
+    add_unit_23(builder, closed_unit)
+    closed = [closed_unit]
     units = prepared + closed
     _assert(builder, units)
+    from batch_a_remaining_intake import rights_record, source_record
+
+    pages = [
+        page for page in frozen.freeze["supplemental"]
+        if page["sourceId"] != "src-wikipedia-russian-grammar-1369617627"
+    ]
     return {
         "units": units,
         "items": builder.items,
@@ -428,12 +449,18 @@ def build_units_21_25() -> dict:
         "provenance": builder.provenance,
         "authored": builder.authored,
         "references": [_attribution_reference()],
+        "sources": [source_record(page) for page in pages],
+        "rights": [rights_record(page["sourceId"]) for page in pages],
+        "capabilities": [item for unit in units for item in unit.get("capabilities", [])],
     }
 
 
 def _unit(builder, number, title, body, minimum, populate, gaps):
+    from batch_b_units_21_25 import add_batch_b
+
     lesson = Lesson(builder, number)
     populate(lesson, number)
+    add_batch_b(lesson)
     independent = sum(len(spec["checks"]) for spec in lesson.specs)
     if independent < minimum:
         raise SystemExit(f"Unit {number} has {independent} independent checks, needs {minimum}")
@@ -442,7 +469,40 @@ def _unit(builder, number, title, body, minimum, populate, gaps):
         session, objective = _gap(builder, number, slug, gap_title, gap_body, reason)
         sessions.append(session)
         objectives.append(objective)
-    return {"number": number, "sessions": sessions, "objectives": objectives, "minimum_checks": minimum}
+    resolved = []
+    seen = set()
+    for spec in getattr(lesson, "capabilities", []):
+        matches = [
+            record for record in builder.provenance
+            if record["unitNumber"] == number
+            and record["objectiveId"] == spec["objectiveId"]
+            and record["originalSourceText"] == spec["exactSpan"]
+        ]
+        if not matches:
+            raise SystemExit(f"Capability span was not retained for {spec['objectiveId']}")
+        host = matches[0]
+        key = (spec["objectiveId"], spec["supportedClaim"])
+        if key in seen:
+            raise SystemExit(f"Duplicate capability {key}")
+        seen.add(key)
+        resolved.append({
+            "id": f"cap-u{number}-{spec['supportedClaim']}",
+            "sourceId": host["sourceId"],
+            "sourceRevision": host["sourceRevision"],
+            "sourceRecordId": host["sourceRecordId"],
+            "sourceHash": host["sourceHash"],
+            "exactSpan": host["originalSourceText"],
+            "unitNumber": number,
+            "objectiveId": spec["objectiveId"],
+            "supportedClaim": spec["supportedClaim"],
+        })
+    return {
+        "number": number,
+        "sessions": sessions,
+        "objectives": objectives,
+        "minimum_checks": minimum,
+        "capabilities": resolved,
+    }
 
 
 def _attribution_reference() -> dict:
@@ -455,7 +515,10 @@ def _attribution_reference() -> dict:
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
             "No audio is included. Linked audio on the useful-words page is not admitted. "
             "Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. "
-            "Reflexive object reference, purpose clauses, general numeral declension, both-forms, one-and-a-half forms, collective quantity forms, duration, object-form choice under negation, negative stand-in forms, placement contrasts, nickname-formation rules, and modern address guidance are not prepared. Review is pending."
+            "English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. "
+            "Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. "
+            "The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. "
+            "Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending."
         ),
         "introducedInUnit": 21,
         "sourceId": WIKIBOOKS_ID,
@@ -521,8 +584,20 @@ def _assert(builder: Builder, units: list[dict]) -> None:
             for excluded in EXCLUDED_LEARNER_TEXT:
                 if excluded in host:
                     raise SystemExit(f"Unit {number} ships excluded text: {excluded}")
-    if any(record["unitNumber"] == 23 and CYRILLIC.search(record["shippedText"]) for record in builder.provenance):
-        raise SystemExit("Unit 23 shipped Russian without an admitted duration source")
+    from batch_b_units_21_25 import BOUNDED_TIME_SPANS
+    from units_3_5_intake import unfold_wiki_labels
+
+    bounded_visible = []
+    for span in BOUNDED_TIME_SPANS:
+        bounded_visible.append(span)
+        bounded_visible.append(unfold_wiki_labels(span))
+    for record in builder.provenance:
+        if record["unitNumber"] != 23 or not CYRILLIC.search(record["shippedText"]):
+            continue
+        if not any(record["shippedText"] in visible for visible in bounded_visible):
+            raise SystemExit(f"Unit 23 shipped Russian outside a bounded time span: {record['shippedText']!r}")
+        if record["originalSourceText"] not in BOUNDED_TIME_SPANS:
+            raise SystemExit("Unit 23 provenance is not one of the bounded time spans")
 
 
 if __name__ == "__main__":

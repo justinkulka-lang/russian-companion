@@ -5,7 +5,49 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "retainedTextFile": "../units-3-5/wikibooks/copyrights-4622060.txt",
     "retainedTextSha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
-    "statement": "The frozen Wikibooks:Copyrights oldid 4622060 states that Wikibooks text is available under Creative Commons Attribution-ShareAlike 4.0. Page history for each frozen oldid identifies the contributors. Linked media is not covered by that page-text license."
+    "statement": "The frozen Wikibooks:Copyrights oldid 4622060 states that Wikibooks text is available under Creative Commons Attribution-ShareAlike 4.0. Page history for each frozen oldid identifies the contributors. Linked media is not covered by that page-text license.",
+    "routes": {
+      "wikipedia": {
+        "appliesToSourceIds": [
+          "src-wikipedia-russian-grammar-1369617627"
+        ],
+        "title": "Wikipedia:Copyrights",
+        "oldid": "1369466282",
+        "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Copyrights&oldid=1369466282",
+        "file": "../units-26-30/wikipedia/copyrights-1369466282.txt",
+        "revisionFile": "../units-26-30/wikipedia/copyrights-1369466282.revision.json",
+        "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+        "requiredStatement": "Most of Wikipedia's text and many of its images are co-licensed under the [[Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License|Creative Commons Attribution-ShareAlike 4.0 International License]] (CC BY-SA) and the [[Wikipedia:Text of the GNU Free Documentation License|GNU Free Documentation License]] (GFDL)"
+      },
+      "ruwiki": {
+        "appliesToSourceIds": [
+          "src-ruwiki-morfologiya-148939075",
+          "src-ruwiki-otritsatelnye-141256493",
+          "src-ruwiki-diminutiv-149098069",
+          "src-ruwiki-lichnoe-imya-154915954",
+          "src-ruwiki-obraschenie-153012874"
+        ],
+        "title": "Википедия:Авторские права",
+        "oldid": "154562152",
+        "url": "https://ru.wikipedia.org/w/index.php?title=Википедия:Авторские_права&oldid=154562152",
+        "file": "../units-6-10/ruwiki/copyrights-154562152.txt",
+        "revisionFile": "../units-6-10/ruwiki/copyrights-154562152.revision.json",
+        "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
+        "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)"
+      },
+      "wiktionary": {
+        "appliesToSourceIds": [
+          "src-enwiktionary-poltora-89737719"
+        ],
+        "title": "Wiktionary:Copyrights",
+        "oldid": "87545419",
+        "url": "https://en.wiktionary.org/w/index.php?title=Wiktionary:Copyrights&oldid=87545419",
+        "file": "../units-16-20/wiktionary/copyrights-87545419.txt",
+        "revisionFile": "../units-16-20/wiktionary/copyrights-87545419.revision.json",
+        "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
+        "requiredStatement": "The original texts of Wiktionary entries are dual-licensed to the public under both the '''[[WT:CC-BY-SA|Creative Commons Attribution-ShareAlike 4.0 International License]]''' (CC-BY-SA)"
+      }
+    }
   },
   "decisions": [
     {
@@ -174,5 +216,106 @@
         "reusedFrom": "units-3-5"
       }
     ]
-  }
+  },
+  "supplemental": [
+    {
+      "key": "grammar",
+      "title": "Russian grammar",
+      "oldid": "1369617627",
+      "file": "../units-26-30/wikipedia/russian-grammar-1369617627.txt",
+      "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+      "revisionFile": "../units-26-30/wikipedia/russian-grammar-1369617627.revision.json",
+      "byteCount": 165374,
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "url": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "scope": "Reflexive себя contrast, чтобы glossed so that, collective numeral column, negation compare, and three bounded time examples. Not a full duration system."
+    },
+    {
+      "key": "morfologiya",
+      "title": "Морфология русского языка",
+      "oldid": "148939075",
+      "file": "supplemental/morfologiya-148939075.txt",
+      "sha256": "25c88e24ee9733f8b5803eeaa58e0d4d564033380a650a7c97f3bf35a219f809",
+      "revisionFile": "supplemental/morfologiya-148939075.revision.json",
+      "byteCount": 160656,
+      "sourceId": "src-ruwiki-morfologiya-148939075",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
+      "scope": "The два/оба/полтора case table. A heading or a neighboring row is not another row's case."
+    },
+    {
+      "key": "poltora",
+      "title": "полтора",
+      "oldid": "89737719",
+      "file": "supplemental/poltora-89737719.txt",
+      "sha256": "d087728b0726de96af4eb71d8ac8285b310de9c0a67347fc45bb18b0999299df",
+      "revisionFile": "supplemental/poltora-89737719.revision.json",
+      "byteCount": 1979,
+      "sourceId": "src-enwiktionary-poltora-89737719",
+      "url": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
+      "transform": "wiktionary-template",
+      "scope": "Gender tags, explicit half examples, and the usage note on noun government. The pronunciation audio line is outside the admitted span."
+    },
+    {
+      "key": "otritsatelnye",
+      "title": "Отрицательные местоимения",
+      "oldid": "141256493",
+      "file": "supplemental/otritsatelnye-141256493.txt",
+      "sha256": "0f1d612d297c7ff82bc0d069e7a9775d8841e4574950d330d2805034726e2f17",
+      "revisionFile": "supplemental/otritsatelnye-141256493.revision.json",
+      "byteCount": 6668,
+      "sourceId": "src-ruwiki-otritsatelnye-141256493",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.",
+      "scope": "Formation of никто and некто from кто with ни- and не-. Negative concord does not close negation scope."
+    },
+    {
+      "key": "diminutiv",
+      "title": "Диминутив",
+      "oldid": "149098069",
+      "file": "supplemental/diminutiv-149098069.txt",
+      "sha256": "dd9eeb820334b24f90abeb34843e8ee1f9a649bb1801a020e6a48ce262995467",
+      "revisionFile": "supplemental/diminutiv-149098069.revision.json",
+      "byteCount": 3565,
+      "sourceId": "src-ruwiki-diminutiv-149098069",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Диминутив&oldid=149098069",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149098069 identifies the contributors.",
+      "scope": "Retained for provenance. Missing-citation warnings. Not a productive diminutive rule and not used as a capability."
+    },
+    {
+      "key": "lichnoe-imya",
+      "title": "Русское личное имя",
+      "oldid": "154915954",
+      "file": "supplemental/lichnoe-imya-154915954.txt",
+      "sha256": "3a9f9f983ba12553ef6719cc3735cde0a61337714b09dbbf846122fa234c7768",
+      "revisionFile": "supplemental/lichnoe-imya-154915954.revision.json",
+      "byteCount": 330060,
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 154915954 identifies the contributors.",
+      "scope": "Retained. Explicit name-form statements only. A suffix list is not a productive diminutive rule. Not used to clear productive-diminutive."
+    },
+    {
+      "key": "obraschenie",
+      "title": "Обращение в русском речевом этикете",
+      "oldid": "153012874",
+      "file": "supplemental/obraschenie-153012874.txt",
+      "sha256": "76d9ab979fece11bd4243b6ba27832b146230aa90be11b65b48d7b2e5f5aa0a7",
+      "revisionFile": "supplemental/obraschenie-153012874.revision.json",
+      "byteCount": 28755,
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.",
+      "scope": "Printed full, short, and diminutive name lists and the stated register sentences. Not a universal social rule."
+    }
+  ]
 }
