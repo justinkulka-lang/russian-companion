@@ -155,7 +155,7 @@ class Units1620SourceIntakeTest {
         assertFalse(reason(pack, 18).contains("Comparison forms"))
         assertTrue(reason(pack, 19).contains("Probability"))
         assertFalse(reason(pack, 20).contains("red link"))
-        listOf(19).forEach { number ->
+        listOf(17, 19).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -170,7 +170,7 @@ class Units1620SourceIntakeTest {
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains("not prepared") })
         }
-        listOf(16, 17, 18, 20).forEach { number ->
+        listOf(16, 18, 20).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
