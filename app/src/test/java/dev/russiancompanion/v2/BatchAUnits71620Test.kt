@@ -137,13 +137,35 @@ class BatchAUnits71620Test {
         val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
         assertEquals(32, items.size)
         val liveErrors = V2Validator.validate(pack).errors
+        val clock = """The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?"."""
+        val book = """The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?"."""
+        val apple = """The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?"."""
+        items.filter { it.promptLetter == "Который час?" }.forEach { item ->
+            assertEquals(item.id, clock, item.assessment!!.whyAnswerDemonstratesObjective)
+            assertEquals(item.id, clock, item.feedback)
+            assertEquals(item.id, book, item.distractorRationales[1])
+            assertEquals(item.id, book, item.assessment.distractorDifference[1])
+        }
+        val appleItem = items.single { it.promptLetter == "Которое яблоко моё?" }
+        assertEquals(apple, appleItem.assessment!!.whyAnswerDemonstratesObjective)
+        assertEquals(apple, appleItem.feedback)
+        assertEquals(book, appleItem.distractorRationales[1])
+        pack.authoredEnglishRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+            assertFalse(record.text == "The frozen line writes" || record.text == "beside")
+        }
         items.groupBy { it.objectiveId }.forEach { (_, group) ->
             group.forEach { item ->
                 val assessment = item.assessment!!
                 val why = assessment.whyAnswerDemonstratesObjective
                 val shown = item.promptLetter!!
-                assertTrue(item.id, why.contains(item.answer) && item.feedback.contains(item.answer))
-                assertTrue(item.id, why.contains(shown))
+                assertEquals(item.id, why, item.feedback)
+                assertCompleteRelationship(item.id, why, shown, item.answer)
+                val concealed = why.replace(item.answer, item.answer + " leftover") + " " + item.answer
+                assertTrue(concealed.contains(item.answer))
+                assertFalse(
+                    "${item.id} accepted a trailing substring",
+                    relationshipNames(concealed, shown, item.answer),
+                )
                 group.map { it.answer }.filter { other ->
                     other != item.answer && !item.answer.contains(other) && !other.contains(item.answer)
                 }.forEach { other ->
@@ -153,7 +175,8 @@ class BatchAUnits71620Test {
                     if (option == item.answer) return@forEachIndexed
                     val rationale = item.distractorRationales[index]
                     val difference = assessment.distractorDifference[index]
-                    assertTrue("${item.id} rationale for $option", rationale.contains(option) && difference.contains(option))
+                    assertEquals("${item.id} rationale", rationale, difference)
+                    assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
                     if (!option.contains(item.answer)) {
                         assertFalse("${item.id} rationale names ${item.answer}", rationale.contains(item.answer) || difference.contains(item.answer))
                     }
@@ -175,6 +198,7 @@ class BatchAUnits71620Test {
                 val replacedWhy = why.replace(item.answer, distractor)
                 val replacedFeedback = item.feedback.replace(item.answer, distractor)
                 assertFalse(replacedWhy.contains(item.answer))
+                assertFalse(relationshipNames(replacedWhy, shown, item.answer))
                 val replacedErrors = V2Validator.validate(
                     replaceItem(
                         pack,
@@ -215,6 +239,64 @@ class BatchAUnits71620Test {
                 )
             }
         }
+    }
+
+    private fun assertCompleteRelationship(id: String, text: String, shown: String, answer: String) {
+        assertFalse("$id ends with a scaffold fragment: $text", text.trimEnd().endsWith("The frozen line writes"))
+        assertFalse("$id repeats a scaffold: $text", text.contains("The frozen line writes"))
+        val pairFrames = text.split("The frozen source pairs").size - 1
+        assertTrue("$id repeats the pair frame: $text", pairFrames == 0 || pairFrames == 1)
+        assertTrue("$id is not the keyed relationship: $text", relationshipNames(text, shown, answer))
+        assertFalse("$id explanation ends as a question: $text", text.trimEnd().endsWith("?"))
+    }
+
+    private fun relationshipNames(text: String, shown: String, answer: String): Boolean {
+        val pair = PAIR_SENTENCE.matchEntire(text)
+        if (pair != null) {
+            return pair.groupValues[1] == shown && pair.groupValues[2] == answer
+        }
+        if (text.contains("||")) {
+            val cells = text.split("||").map { it.trim().trim('|').trim() }.filter { it.isNotEmpty() }
+            return cells.contains(shown) && cells.contains(answer)
+        }
+        val quoted = QUOTED_GLOSS.matchEntire(text)
+        if (quoted != null) {
+            return quoted.groupValues[1] == shown && quoted.groupValues[2] == answer
+        }
+        val speaker = SPEAKER_LINE.matchEntire(text)
+        if (speaker != null) {
+            val forms = speaker.groupValues[2].removeSuffix(")").split(" (or ")
+            return speaker.groupValues[1] == answer && forms.any { it == shown }
+        }
+        val have = HAVE_LINE.matchEntire(text)
+        if (have != null) {
+            return have.groupValues[1] == answer && have.groupValues[2] == shown
+        }
+        val subject = SUBJECT_LINE.matchEntire(text)
+        if (subject != null) {
+            return subject.groupValues[1] == answer && subject.groupValues[2] == shown
+        }
+        return shown.isEmpty() && text == answer && (answer.trimEnd().endsWith(".") || answer.split(Regex("\\s+")).size >= 4)
+    }
+
+    private fun competingForm(text: String, answer: String): String {
+        val pair = PAIR_SENTENCE.matchEntire(text)
+        if (pair != null && pair.groupValues[2] == answer) return pair.groupValues[1]
+        if (text.contains("||")) {
+            val cells = text.split("||").map { it.trim().trim('|').trim() }.filter { it.isNotEmpty() }
+            if (cells.contains(answer)) return cells.first { it != answer && it != "noun" }
+        }
+        val quoted = QUOTED_GLOSS.matchEntire(text)
+        if (quoted != null && quoted.groupValues[2] == answer) return quoted.groupValues[1]
+        val speaker = SPEAKER_LINE.matchEntire(text)
+        if (speaker != null && speaker.groupValues[1] == answer) {
+            return speaker.groupValues[2].removeSuffix(")").split(" (or ").first()
+        }
+        val have = HAVE_LINE.matchEntire(text)
+        if (have != null && have.groupValues[1] == answer) return have.groupValues[2]
+        val subject = SUBJECT_LINE.matchEntire(text)
+        if (subject != null && subject.groupValues[1] == answer) return subject.groupValues[2]
+        return ""
     }
 
     @Test
@@ -298,6 +380,13 @@ class BatchAUnits71620Test {
     private fun repo(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 
     private companion object {
+        val PAIR_SENTENCE = Regex(
+            """^The frozen source pairs the shown form "(.*)" with the admitted gloss "(.*)"(?: \("([^"]*)"\))?\.$""",
+        )
+        val QUOTED_GLOSS = Regex("""^(.+) '(.+)'$""")
+        val SPEAKER_LINE = Regex("""^(?:while )?(a (?:male|female) speaker) would say (.+)$""")
+        val HAVE_LINE = Regex("""^"([^"]+)" translates to (.+)$""")
+        val SUBJECT_LINE = Regex("""^(If the subject is (?:feminine|neuter|plural)), it's (.+)\.$""")
         val BATCH_A_OBJECTIVES = setOf(
             "obj-u16-complements",
             "obj-u17-age",

@@ -59,20 +59,22 @@ def _require(needle: str, anchor: str) -> str:
     return anchor
 
 
-def _scaffolds(lesson) -> None:
-    lesson.builder.say(lesson.number, "The frozen line writes")
-    lesson.builder.say(lesson.number, "beside")
+def _frame(lesson) -> None:
+    """English frame of one complete pair sentence. The quoted source strings stay provenance."""
+    lesson.builder.say(lesson.number, "The frozen source pairs the shown form")
+    lesson.builder.say(lesson.number, "with the admitted gloss")
 
 
-def _relation(answer: str, shown: str, citation: str = "") -> str:
-    text = f"The frozen line writes {answer} beside {shown}"
+def _pair(shown: str, answer: str, citation: str = "") -> str:
+    if '"' in shown or '"' in answer or '"' in citation:
+        raise SystemExit(f"Pair quotation would split {shown!r} / {answer!r}")
+    text = f'The frozen source pairs the shown form "{shown}" with the admitted gloss "{answer}"'
     if citation:
-        text = f"{text}. {citation}"
-    if text.endswith("?"):
-        text = f"{text} The frozen line writes"
-    elif not text.endswith("."):
-        text += "."
-    if shown not in text or answer not in text or text.endswith("?"):
+        text += f' ("{citation}")'
+    text += "."
+    if text.endswith("?") or "The frozen line writes" in text or text.count("The frozen source pairs") != 1:
+        raise SystemExit(f"Pair sentence is not one complete explanation: {text!r}")
+    if shown not in text or answer not in text:
         raise SystemExit(f"Explanation omits the keyed relationship {shown!r} -> {answer!r}: {text!r}")
     return text
 
@@ -83,9 +85,9 @@ def _why(anchor: str, shown: str, answer: str) -> str:
     if shown in anchor:
         text = anchor
     else:
-        text = f"The frozen line writes {anchor} beside {shown}"
-        if not text.endswith((".", "?", "!")):
-            text += "."
+        text = _pair(shown, answer)
+    if "The frozen line writes" in text or text.endswith("?"):
+        raise SystemExit(f"Explanation is not a complete sentence: {text!r}")
     if shown not in text or answer not in text:
         raise SystemExit(f"Explanation omits the keyed relationship {shown!r} -> {answer!r}: {text!r}")
     return text
@@ -165,7 +167,7 @@ def add_batch(lesson) -> None:
 
 
 def _complements(lesson) -> None:
-    _scaffolds(lesson)
+    _frame(lesson)
     needle = _span("grammar", "associates of connective verbs:", "turn out to be")
     become = _form(needle, "стать")
     remain = _form(needle, "остаться")
@@ -179,9 +181,9 @@ def _complements(lesson) -> None:
     _require(needle, "стать}} 'became'")
     _require(needle, "остаться}} 'remain'")
     _require(needle, "оказаться}} 'turn out to be")
-    became_why = _relation(became, become, citation)
-    remain_why = _relation(remain_en, remain, citation)
-    turn_why = _relation(turn_en, turn, citation)
+    became_why = _pair(become, became, citation)
+    remain_why = _pair(remain, remain_en, citation)
+    turn_why = _pair(turn, turn_en, citation)
     lesson.objective(
         "complements",
         "Choose the admitted gloss beside the shown complement",
@@ -198,12 +200,13 @@ def _complements(lesson) -> None:
             _gloss_check(remain, remain_en, [_quoted(became_why, became), _quoted(turn_why, turn_en)], "COMPLEMENT_REMAIN", remain_why, WIKIPEDIA),
             _gloss_check(turn, turn_en, [_quoted(became_why, became), _quoted(remain_why, remain_en)], "COMPLEMENT_TURN", turn_why, WIKIPEDIA),
         ],
+        extra=_extra("grammar", needle, [citation]),
     )
     _bind(lesson, "complements", "instrumental-complements", needle)
 
 
 def _calendar_partial(lesson) -> None:
-    _scaffolds(lesson)
+    _frame(lesson)
     age = _span("grammar", "age statements:", "20 years")
     days = _span("days", "Russians don't capitalize", "воскресенье || noun || Sunday")
     months = _span("months", "==Months of the year==", "Декабрь || December")
@@ -217,8 +220,10 @@ def _calendar_partial(lesson) -> None:
     _require(age, "мне двадцать лет}} – 'I am 20 (years old)'")
     years_anchor = _require(age, "20 years")
     literal_row = _require(age, "to_me (is) 20 years")
-    age_why = _relation(age_en, age_ru)
-    years_why = _relation(years_anchor, years_ru)
+    age_why = _pair(age_ru, age_en)
+    years_why = _pair(years_ru, years_en)
+    literal_why = _pair(age_ru, literal)
+    heading_why = _pair(heading, heading)
     lesson.objective(
         "age",
         "Choose the admitted gloss beside the shown age line",
@@ -229,9 +234,9 @@ def _calendar_partial(lesson) -> None:
             _wiki("grammar", age, years_ru, years_en),
         ],
         [
-            _gloss_check(age_ru, age_en, [_other(literal_row, literal)], "AGE_STATEMENT", age_why, WIKIPEDIA),
-            _gloss_check(age_ru, age_en, [_other(heading, heading)], "AGE_HEADING", age_why, WIKIPEDIA),
-            _gloss_check(years_ru, years_en, [_other(heading, heading)], "AGE_YEARS", years_why, WIKIPEDIA),
+            _gloss_check(age_ru, age_en, [_quoted(literal_why, literal)], "AGE_STATEMENT", age_why, WIKIPEDIA),
+            _gloss_check(age_ru, age_en, [_quoted(heading_why, heading)], "AGE_HEADING", age_why, WIKIPEDIA),
+            _gloss_check(years_ru, years_en, [_quoted(heading_why, heading)], "AGE_YEARS", years_why, WIKIPEDIA),
         ],
         extra=_extra("grammar", age, [literal, heading]),
     )
@@ -305,8 +310,8 @@ def _calendar_partial(lesson) -> None:
     book_en = _form(clock, "Which book do you want?")
     _require(clock, "What time is it? - '''Который час?'''")
     book_row = _require(clock, "Which book do you want?")
-    clock_why = _relation(clock_en, clock_ru)
-    book_why = _relation(book_en, book_ru)
+    clock_why = _pair(clock_ru, clock_en)
+    book_why = _pair(book_ru, book_en)
     lesson.objective(
         "clock",
         "Choose the admitted gloss beside the shown clock question",
@@ -327,7 +332,7 @@ def _calendar_partial(lesson) -> None:
 
 
 def _comparison_and_relative(lesson) -> None:
-    _scaffolds(lesson)
+    _frame(lesson)
     comparison = _span("grammar", "forms are usual only for qualitative", "special comparative forms exist.")
     relative = _span("interrogative", "Which apple is mine?", "изменил мир")
     forms = [
@@ -383,10 +388,10 @@ def _comparison_and_relative(lesson) -> None:
     _require(relative, "Which book do you want? - '''Которую книгу вы хотите?'''")
     _require(relative, "The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''")
     _require(relative, "The man who changed the world - '''Человек, который изменил мир")
-    apple_why = _relation(apple_en, apple_ru)
-    book_rel_why = _relation(book_en, book_ru)
-    woman_why = _relation(woman_en, woman_ru)
-    man_why = _relation(man_en, man_ru)
+    apple_why = _pair(apple_ru, apple_en)
+    book_rel_why = _pair(book_ru, book_en)
+    woman_why = _pair(woman_ru, woman_en)
+    man_why = _pair(man_ru, man_en)
     lesson.objective(
         "relative",
         "Choose the admitted gloss beside the shown relative line",
@@ -408,6 +413,7 @@ def _comparison_and_relative(lesson) -> None:
 
 
 def _conditional_and_obligation(lesson) -> None:
+    _frame(lesson)
     conditional = _span("grammar", "The [[conditional mood]]", "я бы поспала́).")
     obligation = _span("lesson3", '"I have to" translates to я должен', "it's должны.")
     male_a = _form(conditional, "я спал бы")
@@ -472,7 +478,7 @@ def _conditional_and_obligation(lesson) -> None:
 
 
 def _motion(lesson) -> None:
-    _scaffolds(lesson)
+    _frame(lesson)
     table = _span("grammar", "! English !! unidirectional !! multidirectional", "тащи́ть || таска́ть")
     setting = _span("grammar", "The addition of the prefix по-", "Он шёл к другу.")
     paths = _span("grammar", "They will leave Vladivostok", "на крышу дома.")
@@ -528,10 +534,10 @@ def _motion(lesson) -> None:
             _wiki("grammar", paths, roof_ru, roof_en),
         ],
         [
-            _gloss_check(walk, uni, [_other(multi_row, multi)], "MOTION_DIRECTION", _why(uni_row, walk, uni), WIKIPEDIA),
+            _gloss_check(walk, uni, [_quoted(_pair(multi, multi), multi)], "MOTION_DIRECTION", _why(uni_row, walk, uni), WIKIPEDIA),
             _gloss_check(walk, walk_en, [_other(ride_row, ride_en), _other(carry_row, carry_en)], "MOTION_FOOT", _why(walk_row, walk, walk_en), WIKIPEDIA),
             _gloss_check(carry, carry_en, [_other(lead_row, lead_en), _other(convey_row, convey_en)], "MOTION_CARRY", _why(carry_row, carry, carry_en), WIKIPEDIA),
-            _gloss_check(went, begin, [_other(set_row, set_out), _other(friend_row, friend)], "MOTION_PO", _why(begin_row, went, begin), WIKIPEDIA),
+            _gloss_check(went, begin, [_quoted(_pair(set_out, set_out), set_out), _other(friend_row, friend)], "MOTION_PO", _why(begin_row, went, begin), WIKIPEDIA),
             _gloss_check(back_ru, back_en, [_other(leave_row, leave_en), _other(roof_row, roof_en)], "MOTION_PREFIX", _why(back_row, back_ru, back_en), WIKIPEDIA),
         ],
         extra=_extra("grammar", table, ["unidirectional", "multidirectional", "to lead", "to convey, transport", "везти́"])

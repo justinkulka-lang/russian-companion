@@ -611,11 +611,12 @@ class Lesson:
         cue_id, answer_id, distractor_pick = chosen
         distractor_ids = ["", *distractor_pick]
         feedback = why
-        if not str(answer).endswith((".", "?", "!")) and not feedback.endswith((".", "?", "!")):
-            feedback += "."
-        feedback = feedback + " " + answer
-        if not str(answer).endswith((".", "?", "!")):
-            feedback += "."
+        if not (quoted and answer in why):
+            if not str(answer).endswith((".", "?", "!")) and not feedback.endswith((".", "?", "!")):
+                feedback += "."
+            feedback = feedback + " " + answer
+            if not str(answer).endswith((".", "?", "!")):
+                feedback += "."
         self.builder.item(
             item_id,
             self.builder.say(self.number, prompt),

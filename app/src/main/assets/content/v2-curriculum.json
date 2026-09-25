@@ -20639,15 +20639,15 @@
         "turn out to be"
       ],
       "answer": "became",
-      "feedback": "The frozen line writes became beside стать. associates of connective verbs. became.",
+      "feedback": "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes remain beside остаться. associates of connective verbs.",
-        "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
+        "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\").",
+        "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\")."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_BECAME",
@@ -20665,10 +20665,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes remain beside остаться. associates of connective verbs.",
-          "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
+          "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\").",
+          "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes became beside стать. associates of connective verbs.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
         "contrastMembers": [
           "became",
           "remain",
@@ -20696,15 +20696,15 @@
         "turn out to be"
       ],
       "answer": "remain",
-      "feedback": "The frozen line writes remain beside остаться. associates of connective verbs. remain.",
+      "feedback": "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\").",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes became beside стать. associates of connective verbs.",
-        "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
+        "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
+        "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\")."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_REMAIN",
@@ -20722,10 +20722,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes became beside стать. associates of connective verbs.",
-          "The frozen line writes turn out to be beside оказаться. associates of connective verbs."
+          "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
+          "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes remain beside остаться. associates of connective verbs.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\").",
         "contrastMembers": [
           "remain",
           "became",
@@ -20753,15 +20753,15 @@
         "remain"
       ],
       "answer": "turn out to be",
-      "feedback": "The frozen line writes turn out to be beside оказаться. associates of connective verbs. turn out to be.",
+      "feedback": "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\").",
       "objectiveId": "obj-u16-complements",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes became beside стать. associates of connective verbs.",
-        "The frozen line writes remain beside остаться. associates of connective verbs."
+        "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
+        "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\")."
       ],
       "assessment": {
         "testedFeature": "COMPLEMENT_TURN",
@@ -20779,10 +20779,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes became beside стать. associates of connective verbs.",
-          "The frozen line writes remain beside остаться. associates of connective verbs."
+          "The frozen source pairs the shown form \"стать\" with the admitted gloss \"became\" (\"associates of connective verbs\").",
+          "The frozen source pairs the shown form \"остаться\" with the admitted gloss \"remain\" (\"associates of connective verbs\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes turn out to be beside оказаться. associates of connective verbs.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"оказаться\" with the admitted gloss \"turn out to be\" (\"associates of connective verbs\").",
         "contrastMembers": [
           "turn out to be",
           "became",
@@ -21439,14 +21439,14 @@
         "to_me (is) 20 years"
       ],
       "answer": "I am 20 (years old)",
-      "feedback": "The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).",
+      "feedback": "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"I am 20 (years old)\".",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "to_me (is) 20 years"
+        "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"to_me (is) 20 years\"."
       ],
       "assessment": {
         "testedFeature": "AGE_STATEMENT",
@@ -21463,9 +21463,9 @@
         ],
         "distractorDifference": [
           "",
-          "to_me (is) 20 years"
+          "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"to_me (is) 20 years\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside мне двадцать лет.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"I am 20 (years old)\".",
         "contrastMembers": [
           "I am 20 (years old)",
           "to_me (is) 20 years"
@@ -21490,14 +21490,14 @@
         "age statements"
       ],
       "answer": "I am 20 (years old)",
-      "feedback": "The frozen line writes I am 20 (years old) beside мне двадцать лет. I am 20 (years old).",
+      "feedback": "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"I am 20 (years old)\".",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "age statements"
+        "The frozen source pairs the shown form \"age statements\" with the admitted gloss \"age statements\"."
       ],
       "assessment": {
         "testedFeature": "AGE_HEADING",
@@ -21514,9 +21514,9 @@
         ],
         "distractorDifference": [
           "",
-          "age statements"
+          "The frozen source pairs the shown form \"age statements\" with the admitted gloss \"age statements\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes I am 20 (years old) beside мне двадцать лет.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"I am 20 (years old)\".",
         "contrastMembers": [
           "I am 20 (years old)",
           "age statements"
@@ -21541,14 +21541,14 @@
         "age statements"
       ],
       "answer": "20 years",
-      "feedback": "The frozen line writes 20 years beside двадцать лет. 20 years.",
+      "feedback": "The frozen source pairs the shown form \"двадцать лет\" with the admitted gloss \"20 years\".",
       "objectiveId": "obj-u17-age",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "age statements"
+        "The frozen source pairs the shown form \"age statements\" with the admitted gloss \"age statements\"."
       ],
       "assessment": {
         "testedFeature": "AGE_YEARS",
@@ -21565,9 +21565,9 @@
         ],
         "distractorDifference": [
           "",
-          "age statements"
+          "The frozen source pairs the shown form \"age statements\" with the admitted gloss \"age statements\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes 20 years beside двадцать лет.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"двадцать лет\" with the admitted gloss \"20 years\".",
         "contrastMembers": [
           "20 years",
           "age statements"
@@ -21593,7 +21593,7 @@
         "Wednesday"
       ],
       "answer": "Monday",
-      "feedback": "понедельник || noun || Monday. Monday.",
+      "feedback": "понедельник || noun || Monday",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21650,7 +21650,7 @@
         "Saturday"
       ],
       "answer": "Thursday",
-      "feedback": "четверг || noun || Thursday. Thursday.",
+      "feedback": "четверг || noun || Thursday",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21707,7 +21707,7 @@
         "Saturday"
       ],
       "answer": "Sunday",
-      "feedback": "воскресенье || noun || Sunday. Sunday.",
+      "feedback": "воскресенье || noun || Sunday",
       "objectiveId": "obj-u17-weekdays",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21764,7 +21764,7 @@
         "March"
       ],
       "answer": "January",
-      "feedback": "Январь || January. January.",
+      "feedback": "Январь || January",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21821,7 +21821,7 @@
         "August"
       ],
       "answer": "June",
-      "feedback": "Июнь || June. June.",
+      "feedback": "Июнь || June",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21878,7 +21878,7 @@
         "April"
       ],
       "answer": "December",
-      "feedback": "Декабрь || December. December.",
+      "feedback": "Декабрь || December",
       "objectiveId": "obj-u17-months",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -21934,14 +21934,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
+      "feedback": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+        "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION",
@@ -21958,9 +21958,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+          "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -21985,14 +21985,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
+      "feedback": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+        "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_AGAIN",
@@ -22009,9 +22009,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+          "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22036,14 +22036,14 @@
         "Which book do you want?"
       ],
       "answer": "What time is it?",
-      "feedback": "The frozen line writes What time is it? beside Который час? The frozen line writes What time is it?",
+      "feedback": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
       "objectiveId": "obj-u17-clock",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+        "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
       ],
       "assessment": {
         "testedFeature": "CLOCK_QUESTION_CHECK",
@@ -22060,9 +22060,9 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+          "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes What time is it? beside Который час? The frozen line writes",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Который час?\" with the admitted gloss \"What time is it?\".",
         "contrastMembers": [
           "What time is it?",
           "Which book do you want?"
@@ -22088,7 +22088,7 @@
         "redder"
       ],
       "answer": "bigger",
-      "feedback": "бо́льший 'bigger'. bigger.",
+      "feedback": "бо́льший 'bigger'",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22145,7 +22145,7 @@
         "less"
       ],
       "answer": "the biggest",
-      "feedback": "наибо́льший 'the biggest'. the biggest.",
+      "feedback": "наибо́льший 'the biggest'",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22202,7 +22202,7 @@
         "bigger"
       ],
       "answer": "kinder",
-      "feedback": "бо́лее до́брый 'kinder'. kinder.",
+      "feedback": "бо́лее до́брый 'kinder'",
       "objectiveId": "obj-u18-comparison",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22259,15 +22259,15 @@
         "The man who changed the world"
       ],
       "answer": "Which apple is mine?",
-      "feedback": "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes Which apple is mine?",
+      "feedback": "The frozen source pairs the shown form \"Которое яблоко моё?\" with the admitted gloss \"Which apple is mine?\".",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes",
-        "The frozen line writes The man who changed the world beside Человек, который изменил мир."
+        "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\".",
+        "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\"."
       ],
       "assessment": {
         "testedFeature": "RELATIVE_APPLE",
@@ -22285,10 +22285,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes",
-          "The frozen line writes The man who changed the world beside Человек, который изменил мир."
+          "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\".",
+          "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Которое яблоко моё?\" with the admitted gloss \"Which apple is mine?\".",
         "contrastMembers": [
           "Which apple is mine?",
           "Which book do you want?",
@@ -22316,15 +22316,15 @@
         "Which apple is mine?"
       ],
       "answer": "The woman (who) I'm friends with",
-      "feedback": "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́. The woman (who) I'm friends with.",
+      "feedback": "The frozen source pairs the shown form \"Же́нщина, с кото́рой я дружу́\" with the admitted gloss \"The woman (who) I'm friends with\".",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
-        "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes"
+        "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\".",
+        "The frozen source pairs the shown form \"Которое яблоко моё?\" with the admitted gloss \"Which apple is mine?\"."
       ],
       "assessment": {
         "testedFeature": "RELATIVE_WOMAN",
@@ -22342,10 +22342,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
-          "The frozen line writes Which apple is mine? beside Которое яблоко моё? The frozen line writes"
+          "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\".",
+          "The frozen source pairs the shown form \"Которое яблоко моё?\" with the admitted gloss \"Which apple is mine?\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Же́нщина, с кото́рой я дружу́\" with the admitted gloss \"The woman (who) I'm friends with\".",
         "contrastMembers": [
           "The woman (who) I'm friends with",
           "The man who changed the world",
@@ -22373,15 +22373,15 @@
         "Which book do you want?"
       ],
       "answer": "The man who changed the world",
-      "feedback": "The frozen line writes The man who changed the world beside Человек, который изменил мир. The man who changed the world.",
+      "feedback": "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\".",
       "objectiveId": "obj-u18-relative",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
-        "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+        "The frozen source pairs the shown form \"Же́нщина, с кото́рой я дружу́\" with the admitted gloss \"The woman (who) I'm friends with\".",
+        "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
       ],
       "assessment": {
         "testedFeature": "RELATIVE_MAN",
@@ -22399,10 +22399,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen line writes The woman (who) I'm friends with beside Же́нщина, с кото́рой я дружу́.",
-          "The frozen line writes Which book do you want? beside Которую книгу вы хотите? The frozen line writes"
+          "The frozen source pairs the shown form \"Же́нщина, с кото́рой я дружу́\" with the admitted gloss \"The woman (who) I'm friends with\".",
+          "The frozen source pairs the shown form \"Которую книгу вы хотите?\" with the admitted gloss \"Which book do you want?\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes The man who changed the world beside Человек, который изменил мир.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\".",
         "contrastMembers": [
           "The man who changed the world",
           "The woman (who) I'm friends with",
@@ -22601,7 +22601,7 @@
         "I would like to sleep"
       ],
       "answer": "a male speaker",
-      "feedback": "a male speaker would say я спал бы. a male speaker.",
+      "feedback": "a male speaker would say я спал бы",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22658,7 +22658,7 @@
         "I would like to sleep"
       ],
       "answer": "a female speaker",
-      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.",
+      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́)",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22715,7 +22715,7 @@
         "I would like to sleep"
       ],
       "answer": "a female speaker",
-      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́). a female speaker.",
+      "feedback": "while a female speaker would say я спала́ бы (or я бы поспала́)",
       "objectiveId": "obj-u19-conditional",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22772,7 +22772,7 @@
         "If the subject is plural"
       ],
       "answer": "I have to",
-      "feedback": "\"I have to\" translates to я должен. I have to.",
+      "feedback": "\"I have to\" translates to я должен",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22829,7 +22829,7 @@
         "If the subject is plural"
       ],
       "answer": "If the subject is feminine",
-      "feedback": "If the subject is feminine, it's должна. If the subject is feminine.",
+      "feedback": "If the subject is feminine, it's должна.",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22886,7 +22886,7 @@
         "If the subject is feminine"
       ],
       "answer": "If the subject is plural",
-      "feedback": "If the subject is plural, it's должны. If the subject is plural.",
+      "feedback": "If the subject is plural, it's должны.",
       "objectiveId": "obj-u19-obligation",
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -22942,14 +22942,14 @@
         "multidirectional"
       ],
       "answer": "unidirectional",
-      "feedback": "The frozen line writes unidirectional beside идти́. unidirectional.",
+      "feedback": "The frozen source pairs the shown form \"идти́\" with the admitted gloss \"unidirectional\".",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "multidirectional"
+        "The frozen source pairs the shown form \"multidirectional\" with the admitted gloss \"multidirectional\"."
       ],
       "assessment": {
         "testedFeature": "MOTION_DIRECTION",
@@ -22966,9 +22966,9 @@
         ],
         "distractorDifference": [
           "",
-          "multidirectional"
+          "The frozen source pairs the shown form \"multidirectional\" with the admitted gloss \"multidirectional\"."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes unidirectional beside идти́.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"идти́\" with the admitted gloss \"unidirectional\".",
         "contrastMembers": [
           "unidirectional",
           "multidirectional"
@@ -22994,7 +22994,7 @@
         "to carry"
       ],
       "answer": "to go, walk",
-      "feedback": "| to go, walk || идти́. to go, walk.",
+      "feedback": "| to go, walk || идти́",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -23051,7 +23051,7 @@
         "to convey, transport"
       ],
       "answer": "to carry",
-      "feedback": "| to carry || нести́. to carry.",
+      "feedback": "| to carry || нести́",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -23108,14 +23108,14 @@
         "He went to a friend's place"
       ],
       "answer": "beginning of a movement",
-      "feedback": "The frozen line writes beginning of a movement beside Он пошёл к другу. beginning of a movement.",
+      "feedback": "The frozen source pairs the shown form \"Он пошёл к другу.\" with the admitted gloss \"beginning of a movement\".",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "setting out",
+        "The frozen source pairs the shown form \"setting out\" with the admitted gloss \"setting out\".",
         "He went to a friend's place"
       ],
       "assessment": {
@@ -23134,10 +23134,10 @@
         ],
         "distractorDifference": [
           "",
-          "setting out",
+          "The frozen source pairs the shown form \"setting out\" with the admitted gloss \"setting out\".",
           "He went to a friend's place"
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes beginning of a movement beside Он пошёл к другу.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Он пошёл к другу.\" with the admitted gloss \"beginning of a movement\".",
         "contrastMembers": [
           "beginning of a movement",
           "setting out",
@@ -23165,7 +23165,7 @@
         "The ball flew onto the roof of the house."
       ],
       "answer": "The boy stepped back from the stranger who had offered him candy.",
-      "feedback": "The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца. The boy stepped back from the stranger who had offered him candy.",
+      "feedback": "The frozen source pairs the shown form \"Мальчик отошёл от незнакомца\" with the admitted gloss \"The boy stepped back from the stranger who had offered him candy.\".",
       "objectiveId": "obj-u20-motion",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -23194,7 +23194,7 @@
           "They will leave Vladivostok in a month.",
           "The ball flew onto the roof of the house."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line writes The boy stepped back from the stranger who had offered him candy. beside Мальчик отошёл от незнакомца.",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Мальчик отошёл от незнакомца\" with the admitted gloss \"The boy stepped back from the stranger who had offered him candy.\".",
         "contrastMembers": [
           "The boy stepped back from the stranger who had offered him candy.",
           "They will leave Vladivostok in a month.",
@@ -86231,6 +86231,31 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-u16-complements-x-0",
+      "unitNumber": 16,
+      "objectiveId": "obj-u16-complements",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became",
+      "originalSourceText": "associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{lang|ru|казаться}} 'appear to be', {{lang|ru|оказаться}} 'turn out to be",
+      "shippedText": "associates of connective verbs",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "c0b109a828aa8534ae0f36d8a79c9cef3ced441605b9ba1e377a0e835c2dc630",
+      "contentHash": "968c7fe7aade96c60fd17cd7fc8bc99d80a4e6d95f01391a475431b5fb3ad753",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-u17-ordinals-0-ru",
       "unitNumber": 17,
       "objectiveId": "obj-u17-ordinals",
@@ -100674,13 +100699,13 @@
     {
       "id": "en-u16-036",
       "unitNumber": 16,
-      "text": "The frozen line writes",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u16-037",
       "unitNumber": 16,
-      "text": "beside",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -101004,13 +101029,13 @@
     {
       "id": "en-u17-091",
       "unitNumber": 17,
-      "text": "The frozen line writes",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u17-092",
       "unitNumber": 17,
-      "text": "beside",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -101130,13 +101155,13 @@
     {
       "id": "en-u18-112",
       "unitNumber": 18,
-      "text": "The frozen line writes",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-113",
       "unitNumber": 18,
-      "text": "beside",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
@@ -101310,215 +101335,227 @@
     {
       "id": "en-u19-142",
       "unitNumber": 19,
-      "text": "Which admitted English gloss is written beside the shown form?",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-143",
       "unitNumber": 19,
-      "text": "Admitted prefix cautions",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-144",
       "unitNumber": 19,
-      "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-145",
       "unitNumber": 19,
-      "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
+      "text": "Admitted prefix cautions",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-146",
       "unitNumber": 19,
-      "text": "Guided practice",
+      "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-147",
       "unitNumber": 19,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-148",
       "unitNumber": 19,
-      "text": "Remediation",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-149",
       "unitNumber": 19,
-      "text": "Independent checks",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-150",
       "unitNumber": 19,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-151",
       "unitNumber": 19,
-      "text": "Work Lesson 19 in your copy",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-152",
       "unitNumber": 19,
-      "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-153",
       "unitNumber": 19,
-      "text": "Open Lesson 19 in your copy and complete its lesson work.",
+      "text": "Work Lesson 19 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-154",
       "unitNumber": 19,
-      "text": "Record Lesson 19 book work",
+      "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-155",
       "unitNumber": 19,
-      "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Open Lesson 19 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-156",
       "unitNumber": 19,
-      "text": "Self-attest only after the Lesson 19 work in your copy.",
+      "text": "Record Lesson 19 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-157",
       "unitNumber": 19,
-      "text": "Probability stays in the copy you own",
+      "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-158",
       "unitNumber": 19,
+      "text": "Self-attest only after the Lesson 19 work in your copy.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-159",
+      "unitNumber": 19,
+      "text": "Probability stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-160",
+      "unitNumber": 19,
       "text": "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-159",
-      "unitNumber": 20,
-      "text": "The frozen line writes",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-160",
-      "unitNumber": 20,
-      "text": "beside",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-161",
       "unitNumber": 20,
-      "text": "Admitted lines",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-162",
       "unitNumber": 20,
-      "text": "Which admitted English gloss is written beside the shown form?",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-163",
       "unitNumber": 20,
-      "text": "Admitted instruction",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-164",
       "unitNumber": 20,
-      "text": "Admitted motion lines",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-165",
       "unitNumber": 20,
-      "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-166",
       "unitNumber": 20,
-      "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
+      "text": "Admitted motion lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-167",
       "unitNumber": 20,
-      "text": "Guided practice",
+      "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-168",
       "unitNumber": 20,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-169",
       "unitNumber": 20,
-      "text": "Remediation",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-170",
       "unitNumber": 20,
-      "text": "Independent checks",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-171",
       "unitNumber": 20,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-172",
       "unitNumber": 20,
-      "text": "Work Lesson 20 in your copy",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-173",
       "unitNumber": 20,
-      "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-174",
       "unitNumber": 20,
-      "text": "Open Lesson 20 in your copy and complete its lesson work.",
+      "text": "Work Lesson 20 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-175",
       "unitNumber": 20,
-      "text": "Record Lesson 20 book work",
+      "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-176",
       "unitNumber": 20,
-      "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Open Lesson 20 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-177",
+      "unitNumber": 20,
+      "text": "Record Lesson 20 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-178",
+      "unitNumber": 20,
+      "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-179",
       "unitNumber": 20,
       "text": "Self-attest only after the Lesson 20 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
