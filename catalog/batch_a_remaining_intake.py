@@ -51,6 +51,8 @@ UNIT7_REFERENCE = "ref-u7-ruwiki-attribution"
 UNIT17_PRESSBOOKS_REFERENCE = "ref-u17-pressbooks-attribution"
 UNIT19_REFERENCE = "ref-u19-wiktionary-attribution"
 ADVERB_PROMPT = "Which admitted wording is written beside the shown form?"
+INVARIANCE_PROMPT = "Which admitted wording is written immediately after the dash and before the colon?"
+INVARIANCE_RELATION = "immediately after the dash and before the colon"
 LIKELIHOOD_PROMPT = "Which displayed example expresses likelihood?"
 
 LIKELIHOOD_SENSE = '(with a verb) Used to express likelihood. Usually translated as "should".'
@@ -68,6 +70,15 @@ FAST_LINE = "быстрый\xa0— быстро"
 CREATIVE_LINE = "творческий\xa0— творчески"
 INVARIANCE_SHOWN = "Наречия"
 INVARIANCE_ANSWER = "неизменяемые слова"
+INVARIANCE_DASH = "Наречия\xa0— неизменяемые слова:"
+INVARIANCE_POST_COLON = (
+    ("не склоняются", ": они не склоняются"),
+    ("не спрягаются", "и не спрягаются"),
+    ("не имеют окончаний", ", не имеют окончаний"),
+)
+AFTER_COLON = (
+    "This wording is written after the colon, so it is not immediately after the dash and before the colon"
+)
 
 
 def _require_visible(span: str, shipped: str, visible: str) -> None:
@@ -137,6 +148,7 @@ def _assert_quarter_pairs() -> None:
 _assert_quarter_pairs()
 
 # Explicit shown -> gloss tables. A co-occurring string on the same span is not a pair.
+# The invariance span is classified by dash-colon position before this table is read.
 GOVERNED_GLOSSES = {
     INVARIANCE_SPAN: {INVARIANCE_SHOWN: frozenset({INVARIANCE_ANSWER})},
     SUFFIXAL_SPAN: {
@@ -168,11 +180,60 @@ def _same_span(left: dict, right: dict) -> bool:
     )
 
 
+def dash_colon_wording(span: str) -> str | None:
+    """Return the unique wording between the em dash and the following colon.
+
+    Co-occurrence anywhere else in the same span is not this relationship.
+    """
+    dash = span.find("\u2014")
+    if dash < 0:
+        return None
+    colon = span.find(":", dash + 1)
+    if colon < 0:
+        return None
+    wording = span[dash + 1:colon].strip()
+    if not wording or "\u2014" in wording or span.count(wording) != 1:
+        return None
+    return wording
+
+
+def _assert_invariance_position() -> None:
+    if dash_colon_wording(INVARIANCE_SPAN) != INVARIANCE_ANSWER:
+        raise SystemExit("Dash-colon wording is not the admitted invariance answer")
+    if not INVARIANCE_SPAN.startswith(INVARIANCE_DASH):
+        raise SystemExit("Dash line is not the frozen invariance prefix")
+    if INVARIANCE_RELATION not in INVARIANCE_PROMPT:
+        raise SystemExit("Invariance prompt does not state the dash-colon relationship")
+    colon = INVARIANCE_SPAN.index(":")
+    for distractor, continuation in INVARIANCE_POST_COLON:
+        if continuation not in INVARIANCE_SPAN or distractor not in continuation:
+            raise SystemExit(f"Post-colon continuation is not frozen: {continuation!r}")
+        if INVARIANCE_SPAN.find(distractor) <= colon or INVARIANCE_ANSWER in continuation:
+            raise SystemExit(f"Distractor is not only after the colon: {distractor!r}")
+
+
+_assert_invariance_position()
+
+
 def governed_relation(cue: dict, answer: dict, distractors: list[dict]):
     """Return a governed kind, False when a governed span forbids the pair, or None."""
     from units_6_10_lessons import _displayed_in_frozen
 
     group = [cue, answer, *distractors]
+    if (cue.get("originalSourceText") or "") == INVARIANCE_SPAN:
+        wording = dash_colon_wording(INVARIANCE_SPAN)
+        shown = INVARIANCE_SPAN.split("\u2014", 1)[0].strip()
+        if (
+            wording
+            and cue.get("shippedText") == shown
+            and answer.get("shippedText") == wording
+            and cue.get("shippedText") != answer.get("shippedText")
+            and all(_same_span(cue, record) for record in group)
+            and all(_displayed_in_frozen(record) for record in group)
+            and all((record.get("shippedText") or "") != wording for record in distractors)
+        ):
+            return "EXPLICIT_SOURCE_PAIR"
+        return False
     if (
         len(distractors) == 1
         and cue.get("shippedText") == SENSE_CONTRAST["shown"]
@@ -219,6 +280,14 @@ def _wrong(builder, unit: int, text: str) -> tuple[str, str, str]:
     return (text, rationale, rationale)
 
 
+def _after_colon(builder, distractor: str, continuation: str) -> tuple[str, str, str]:
+    builder.say(7, AFTER_COLON)
+    rationale = f"{AFTER_COLON}. {continuation}"
+    if distractor not in rationale or INVARIANCE_ANSWER in rationale:
+        raise SystemExit(f"Invariance distractor rationale is not specific: {rationale!r}")
+    return (distractor, rationale, rationale)
+
+
 def add_unit7_bounded(builder, unit: dict) -> None:
     """Append bounded adverb objectives after Units 8-10 have taken their ids."""
     from units_6_10_intake import _append_spec
@@ -226,7 +295,11 @@ def add_unit7_bounded(builder, unit: dict) -> None:
     lesson = Lesson(builder, 7)
     builder.say(7, "The admitted line also contains")
     builder.say(7, ADVERB_PROMPT)
-    invariance_why = _pair(INVARIANCE_SHOWN, INVARIANCE_ANSWER)
+    builder.say(7, INVARIANCE_PROMPT)
+    invariance_why = _pair(INVARIANCE_SHOWN, INVARIANCE_ANSWER, INVARIANCE_DASH)
+    if INVARIANCE_DASH not in invariance_why or INVARIANCE_RELATION not in INVARIANCE_PROMPT:
+        raise SystemExit("Invariance check does not cite the dash-colon relationship")
+    invariance_features = ("ADVERB_INVARIANCE", "ADVERB_INVARIANCE_AGAIN", "ADVERB_INVARIANCE_ENDINGS")
     lesson.objective(
         "adverb-invariance",
         "Admitted adverb invariance line",
@@ -237,14 +310,21 @@ def add_unit7_bounded(builder, unit: dict) -> None:
             ("wiki", RU_PAGE, INVARIANCE_SPAN, INVARIANCE_SHOWN, INVARIANCE_ANSWER),
         ],
         [
-            _gloss_check(INVARIANCE_SHOWN, INVARIANCE_ANSWER, [_wrong(builder, 7, "не склоняются")], "ADVERB_INVARIANCE", invariance_why, RU_SOURCE, quote=True, prompt=ADVERB_PROMPT),
-            _gloss_check(INVARIANCE_SHOWN, INVARIANCE_ANSWER, [_wrong(builder, 7, "не спрягаются")], "ADVERB_INVARIANCE_AGAIN", invariance_why, RU_SOURCE, quote=True, prompt=ADVERB_PROMPT),
-            _gloss_check(INVARIANCE_SHOWN, INVARIANCE_ANSWER, [_wrong(builder, 7, "не имеют окончаний")], "ADVERB_INVARIANCE_ENDINGS", invariance_why, RU_SOURCE, quote=True, prompt=ADVERB_PROMPT),
+            _gloss_check(
+                INVARIANCE_SHOWN,
+                INVARIANCE_ANSWER,
+                [_after_colon(builder, distractor, continuation)],
+                feature,
+                invariance_why,
+                RU_SOURCE,
+                quote=True,
+                prompt=INVARIANCE_PROMPT,
+            )
+            for feature, (distractor, continuation) in zip(invariance_features, INVARIANCE_POST_COLON)
         ],
         extra=[
-            (RU_PAGE, INVARIANCE_SPAN, "не склоняются", "label"),
-            (RU_PAGE, INVARIANCE_SPAN, "не спрягаются", "label"),
-            (RU_PAGE, INVARIANCE_SPAN, "не имеют окончаний", "label"),
+            *[(RU_PAGE, INVARIANCE_SPAN, distractor, "label") for distractor, _continuation in INVARIANCE_POST_COLON],
+            *[(RU_PAGE, INVARIANCE_SPAN, continuation, "label") for _distractor, continuation in INVARIANCE_POST_COLON],
         ],
     )
     fast_why = _pair(FAST, FAST_ADV) + " " + FAST_LINE

@@ -1019,6 +1019,9 @@ internal object V2Validator {
         if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == ExplicitSourcePairs.adverbSpan) {
             errors += "Source capability ${capability.id} bounded form/gloss recognition does not clear adverb-paradigm"
         }
+        if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == BatchARemainingSources.INVARIANCE_SPAN) {
+            errors += "Source capability ${capability.id} bounded invariance evidence does not clear adverb-paradigm"
+        }
         if (capability.supportedClaim == "adverb-paradigm" &&
             (capability.exactSpan == BatchARemainingSources.INVARIANCE_SPAN || capability.exactSpan == BatchARemainingSources.SUFFIXAL_SPAN)
         ) {
@@ -1692,6 +1695,22 @@ internal object V2Validator {
         ) {
             return "GOVERNED_SENSE_CONTRAST"
         }
+        if (cue.originalSourceText == BatchARemainingSources.INVARIANCE_SPAN) {
+            val wording = BatchARemainingSources.dashColonWording(cue.originalSourceText)
+            val shown = cue.originalSourceText.substringBefore('\u2014').trim()
+            if (
+                wording != null &&
+                cue.shippedText == shown &&
+                answer.shippedText == wording &&
+                cue.shippedText != answer.shippedText &&
+                group.all { sameFrozenSpan(cue, it) } &&
+                group.all { displayedInFrozen(it) } &&
+                distractors.all { it.shippedText != wording }
+            ) {
+                return "EXPLICIT_SOURCE_PAIR"
+            }
+            return ""
+        }
         val table = BatchARemainingSources.GOVERNED_GLOSSES[cue.originalSourceText] ?: return null
         val allowed = table[cue.shippedText]
         if (
@@ -2127,9 +2146,55 @@ internal object V2Validator {
         }
     }
 
+    /**
+     * The invariance prompt names one position in the frozen sentence.
+     * The gloss table does not make a co-occurring clause the answer.
+     */
+    private fun invarianceRelationshipErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        if (item.objectiveId != "obj-u7-adverb-invariance") return emptyList()
+        val errors = mutableListOf<String>()
+        val assessment = item.assessment
+        val why = assessment?.whyAnswerDemonstratesObjective.orEmpty()
+        if (
+            !item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION) ||
+            !why.contains(BatchARemainingSources.INVARIANCE_DASH_LINE) ||
+            !item.feedback.contains(BatchARemainingSources.INVARIANCE_DASH_LINE)
+        ) {
+            errors += "Item ${item.id} precise dash-colon relationship wording is missing"
+        }
+        val cueId = assessment?.relationParticipantIds?.firstOrNull()
+        val cue = cueId?.let { id -> pack.provenanceRecords.firstOrNull { it.itemId == id } }
+        val span = cue?.originalSourceText ?: BatchARemainingSources.INVARIANCE_SPAN
+        val wording = BatchARemainingSources.dashColonWording(span)
+        if (wording == null || item.answer != wording || item.options.count { it == wording } != 1) {
+            errors += "Item ${item.id} answer is not the wording immediately after the dash and before the colon"
+        }
+        val colon = span.indexOf(':')
+        if (wording != null && item.answer != wording && colon >= 0 && span.indexOf(item.answer, colon) >= 0) {
+            errors += "Item ${item.id} answer co-occurs after the colon and does not satisfy the dash-colon relationship"
+        }
+        if (assessment != null) {
+            item.options.forEachIndexed { index, option ->
+                if (option == item.answer) return@forEachIndexed
+                val continuation = BatchARemainingSources.INVARIANCE_POST_COLON[option] ?: return@forEachIndexed
+                val rationale = item.distractorRationales.getOrElse(index) { "" }
+                val difference = assessment.distractorDifference.getOrElse(index) { "" }
+                if (
+                    !rationale.contains(continuation) ||
+                    !difference.contains(continuation) ||
+                    !rationale.contains("after the colon")
+                ) {
+                    errors += "Item ${item.id} distractor rationale does not explain the post-colon position"
+                }
+            }
+        }
+        return errors
+    }
+
     private fun explicitTargetErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
-        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target")
+        errors += invarianceRelationshipErrors(pack, item)
+        val assessment = item.assessment ?: return listOf("Item ${item.id} has no explicit target") + errors
         val feature = assessment.testedFeature
         val unitNumber = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
         if (unitNumber in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {

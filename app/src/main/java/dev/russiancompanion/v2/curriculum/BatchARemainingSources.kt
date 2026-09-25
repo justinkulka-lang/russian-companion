@@ -33,6 +33,13 @@ internal object BatchARemainingSources {
 
     val INVARIANCE_SHOWN = "\u041d\u0430\u0440\u0435\u0447\u0438\u044f"
     val INVARIANCE_ANSWER = "\u043d\u0435\u0438\u0437\u043c\u0435\u043d\u044f\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430"
+    val INVARIANCE_DASH_LINE = "\u041d\u0430\u0440\u0435\u0447\u0438\u044f\u00a0\u2014 \u043d\u0435\u0438\u0437\u043c\u0435\u043d\u044f\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430:"
+    const val INVARIANCE_RELATION = "immediately after the dash and before the colon"
+    val INVARIANCE_POST_COLON = mapOf(
+        "\u043d\u0435 \u0441\u043a\u043b\u043e\u043d\u044f\u044e\u0442\u0441\u044f" to ": \u043e\u043d\u0438 \u043d\u0435 \u0441\u043a\u043b\u043e\u043d\u044f\u044e\u0442\u0441\u044f",
+        "\u043d\u0435 \u0441\u043f\u0440\u044f\u0433\u0430\u044e\u0442\u0441\u044f" to "\u0438 \u043d\u0435 \u0441\u043f\u0440\u044f\u0433\u0430\u044e\u0442\u0441\u044f",
+        "\u043d\u0435 \u0438\u043c\u0435\u044e\u0442 \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u0439" to ", \u043d\u0435 \u0438\u043c\u0435\u044e\u0442 \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u0439",
+    )
     val FAST = "\u0431\u044b\u0441\u0442\u0440\u044b\u0439"
     val FAST_ADV = "\u0431\u044b\u0441\u0442\u0440\u043e"
     val CREATIVE = "\u0442\u0432\u043e\u0440\u0447\u0435\u0441\u043a\u0438\u0439"
@@ -110,6 +117,22 @@ internal object BatchARemainingSources {
             governedClaim = "probability-dolzhen",
         )
     )
+
+    /**
+     * The unique wording written immediately after the em dash and before the colon.
+     * A later clause in the same frozen sentence is not this wording.
+     */
+    fun dashColonWording(span: String): String? {
+        val dash = span.indexOf('\u2014')
+        if (dash < 0) return null
+        val colon = span.indexOf(':', dash + 1)
+        if (colon < 0) return null
+        val wording = span.substring(dash + 1, colon).trim()
+        if (wording.isEmpty() || wording.contains('\u2014') || span.indexOf(wording) != span.lastIndexOf(wording)) {
+            return null
+        }
+        return wording
+    }
 
     fun admits(capability: V2SourceCapability, admitted: Set<GovernedSourceAdmission>, claim: String): Boolean {
         val recorded = GovernedSourceAdmission(

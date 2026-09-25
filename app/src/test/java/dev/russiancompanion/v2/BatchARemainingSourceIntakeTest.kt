@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -198,6 +199,121 @@ class BatchARemainingSourceIntakeTest {
     }
 
     @Test
+    fun invarianceChecksHaveOneDashColonAnswer() {
+        val pack = pack()
+        val errors = V2Validator.validate(pack).errors
+        assertTrue(errors.joinToString("\n"), errors.isEmpty())
+        val items = invarianceItems(pack)
+        assertEquals(listOf("u7-g-adverb-invariance-0", "u7-i-adverb-invariance-1", "u7-i-adverb-invariance-2"), items.map { it.id })
+        val span = BatchARemainingSources.INVARIANCE_SPAN
+        val wording = BatchARemainingSources.dashColonWording(span)
+        assertEquals(BatchARemainingSources.INVARIANCE_ANSWER, wording)
+        items.forEach { item ->
+            assertTrue(item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION))
+            assertTrue(item.assessment!!.whyAnswerDemonstratesObjective.contains(BatchARemainingSources.INVARIANCE_DASH_LINE))
+            assertEquals(listOf(wording), item.options.filter { it == wording })
+            assertEquals(wording, item.answer)
+            val distractor = item.options.single { it != item.answer }
+            val continuation = BatchARemainingSources.INVARIANCE_POST_COLON.getValue(distractor)
+            assertTrue(span.indexOf(distractor) > span.indexOf(':'))
+            assertTrue(item.distractorRationales.any { it.contains(continuation) && it.contains("after the colon") && !it.contains(wording!!) })
+            val cue = record(pack, "obj-u7-adverb-invariance", BatchARemainingSources.INVARIANCE_SHOWN)
+            val answer = record(pack, "obj-u7-adverb-invariance", wording!!)
+            val competing = record(pack, "obj-u7-adverb-invariance", distractor)
+            assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(cue, answer, listOf(competing)))
+        }
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("DEVELOPMENT", pack.unit(7)!!.installState)
+        assertFalse(unresolved(pack, 7).contains("adverb-invariance"))
+        assertFalse(unresolved(pack, 7).contains("adverb-bounded-pairs"))
+        assertTrue(unresolved(pack, 7).contains("adverb-paradigm"))
+    }
+
+    @Test
+    fun substitutingAnInvarianceDistractorAsTheKeyFails() {
+        val pack = pack()
+        invarianceItems(pack).forEach { item ->
+            val distractor = item.options.single { it != item.answer }
+            val span = BatchARemainingSources.INVARIANCE_SPAN
+            assertTrue(span.contains(distractor))
+            assertTrue(span.contains(item.answer))
+            val substituted = replaceItem(pack, item.copy(answer = distractor))
+            val errors = V2Validator.validate(substituted).errors.joinToString("\n")
+            assertFalse(V2Validator.validate(substituted).ok)
+            assertTrue(errors, errors.contains("${item.id} answer is not the wording immediately after the dash and before the colon"))
+            assertTrue(errors, errors.contains("${item.id} answer co-occurs after the colon and does not satisfy the dash-colon relationship"))
+        }
+    }
+
+    @Test
+    fun invarianceCoOccurrenceDoesNotEstablishTheDashColonRelationship() {
+        val pack = pack()
+        val span = BatchARemainingSources.INVARIANCE_SPAN
+        val shown = record(pack, "obj-u7-adverb-invariance", BatchARemainingSources.INVARIANCE_SHOWN)
+        val answer = record(pack, "obj-u7-adverb-invariance", BatchARemainingSources.INVARIANCE_ANSWER)
+        assertEquals(span, shown.originalSourceText)
+        BatchARemainingSources.INVARIANCE_POST_COLON.keys.forEach { distractorText ->
+            assertTrue(span.contains(distractorText))
+            assertTrue(span.indexOf(distractorText) > span.indexOf(':'))
+            assertNotEquals(BatchARemainingSources.dashColonWording(span), distractorText)
+            val distractor = record(pack, "obj-u7-adverb-invariance", distractorText)
+            assertEquals(span, distractor.originalSourceText)
+            assertNull(V2Validator.classifyRelation(shown, distractor, listOf(answer)))
+        }
+    }
+
+    @Test
+    fun deletingTheDashColonRelationshipWordingFailsClosed() {
+        val pack = pack()
+        invarianceItems(pack).forEach { item ->
+            val assessment = item.assessment!!
+            val withoutPrompt = replaceItem(
+                pack,
+                item.copy(prompt = item.prompt.replace(BatchARemainingSources.INVARIANCE_RELATION, "beside the shown form")),
+            )
+            val promptErrors = V2Validator.validate(withoutPrompt).errors.joinToString("\n")
+            assertFalse(V2Validator.validate(withoutPrompt).ok)
+            assertTrue(promptErrors, promptErrors.contains("${item.id} precise dash-colon relationship wording is missing"))
+            assertEquals(BatchARemainingSources.INVARIANCE_ANSWER, item.answer)
+
+            val strippedWhy = assessment.whyAnswerDemonstratesObjective.replace(BatchARemainingSources.INVARIANCE_DASH_LINE, "")
+            val strippedFeedback = item.feedback.replace(BatchARemainingSources.INVARIANCE_DASH_LINE, "")
+            assertFalse(strippedWhy.contains(BatchARemainingSources.INVARIANCE_DASH_LINE))
+            val withoutCitation = replaceItem(
+                pack,
+                item.copy(
+                    feedback = strippedFeedback,
+                    assessment = assessment.copy(whyAnswerDemonstratesObjective = strippedWhy),
+                ),
+            )
+            val citationErrors = V2Validator.validate(withoutCitation).errors.joinToString("\n")
+            assertFalse(V2Validator.validate(withoutCitation).ok)
+            assertTrue(citationErrors, citationErrors.contains("${item.id} precise dash-colon relationship wording is missing"))
+        }
+    }
+
+    @Test
+    fun boundedInvarianceEvidenceCannotClearAdverbParadigm() {
+        val pack = pack()
+        val invariance = capability(pack, "adverb-invariance")
+        assertEquals(BatchARemainingSources.INVARIANCE_SPAN, invariance.exactSpan)
+        val paradigmPack = pack.copy(
+            provenanceRecords = retarget(pack, invariance.exactSpan, "obj-u7-adverb"),
+            sourceCapabilities = pack.sourceCapabilities + invariance.copy(
+                id = "cap-forged-invariance-paradigm",
+                objectiveId = "obj-u7-adverb",
+                supportedClaim = "adverb-paradigm",
+            ),
+        )
+        val errors = V2Validator.validate(paradigmPack).errors.joinToString("\n")
+        assertTrue(errors, errors.contains("bounded invariance evidence does not clear adverb-paradigm"))
+        assertTrue(errors, errors.contains("no independent adverb-paradigm admission"))
+        assertTrue(unresolved(paradigmPack, 7).contains("adverb-paradigm"))
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
+        assertEquals("DEVELOPMENT", pack.unit(7)!!.installState)
+    }
+
+    @Test
     fun sourceCoOccurrenceWithoutAGovernedRelationshipFailsClosed() {
         val pack = pack()
         val fast = record(pack, "obj-u7-adverb-pairs", BatchARemainingSources.FAST)
@@ -210,6 +326,13 @@ class BatchARemainingSourceIntakeTest {
         val gloss = record(pack, "obj-u19-probability", BatchARemainingSources.LIKELIHOOD_GLOSS)
         assertEquals("GOVERNED_SENSE_CONTRAST", V2Validator.classifyRelation(sense, record(pack, "obj-u19-probability", BatchARemainingSources.LIKELIHOOD_RUSSIAN), listOf(obligation)))
         assertNull(V2Validator.classifyRelation(sense, obligation, listOf(gloss)))
+    }
+
+    private fun invarianceItems(pack: V2CurriculumPack) =
+        pack.items.filter { it.objectiveId == "obj-u7-adverb-invariance" }.sortedBy { it.id }
+
+    private fun replaceItem(pack: V2CurriculumPack, mutated: dev.russiancompanion.v2.curriculum.V2CheckItem): V2CurriculumPack {
+        return pack.copy(items = pack.items.map { if (it.id == mutated.id) mutated else it })
     }
 
     private fun retarget(pack: V2CurriculumPack, span: String, objectiveId: String): List<V2ProvenanceRecord> {
