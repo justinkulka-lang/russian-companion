@@ -2,7 +2,7 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `287fd84ce286f151b90abbee4e714e42211eee10`  
+**Canonical commit:** `453b0114248b7fcfce55087ab9a63c54675212ba`  
 **Pack content-review digest:** `7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693`  
 **Repository source digest:** `22f3f7163e03770da91b1ae89e65737fc5815da801bcaa7832ee1611c490005e`  
 **Public release:** **NOT_APPROVED**
