@@ -769,6 +769,7 @@ internal object V2Validator {
 
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
         7 to listOf(
+            RequiredSourceCapability("obj-u7-adverb", "adverb-form-gloss"),
             RequiredSourceCapability("obj-u7-adverb", "adverb-paradigm"),
         ),
         16 to listOf(
@@ -779,6 +780,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u17-weekdays", "weekdays"),
             RequiredSourceCapability("obj-u17-months", "months"),
             RequiredSourceCapability("obj-u17-clock", "clock-question"),
+            RequiredSourceCapability("obj-u17-clock-answers", "clock-expression-recognition"),
             RequiredSourceCapability("obj-u17-clock-answers", "productive-clock-time"),
             RequiredSourceCapability("obj-u17-calendar-date", "calendar-date"),
         ),
@@ -975,6 +977,12 @@ internal object V2Validator {
         if (spanHost.unitNumber != capability.unitNumber || spanHost.objectiveId != capability.objectiveId) {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
+        }
+        if (capability.supportedClaim == "adverb-paradigm" && capability.exactSpan == ExplicitSourcePairs.adverbSpan) {
+            errors += "Source capability ${capability.id} bounded form/gloss recognition does not clear adverb-paradigm"
+        }
+        if (capability.supportedClaim == "productive-clock-time" && capability.exactSpan == ExplicitSourcePairs.clockSpan) {
+            errors += "Source capability ${capability.id} bounded clock phrases do not clear productive-clock-time"
         }
         if (capability.unitNumber in 26..30) {
             if (STRUCTURAL_PAGE_RANGE.matches(capability.exactSpan.trim())) {

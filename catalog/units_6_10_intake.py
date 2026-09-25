@@ -676,6 +676,7 @@ def build_units_6_10() -> dict:
     builder.say(7, "The frozen source pairs the shown form")
     builder.say(7, "with the admitted gloss")
     builder.say(7, "Which admitted English gloss is written beside the shown form?")
+    _append_adverb_paradigm_gap(builder, next(unit for unit in units if unit["number"] == 7))
     _assert(builder, units)
     page = next(item for item in frozen.freeze["wikibooks"]["pages"] if item["key"] == "adverb-formation")
     return {
@@ -702,6 +703,39 @@ def build_units_6_10() -> dict:
     }
 
 
+def _append_adverb_paradigm_gap(builder, unit: dict) -> None:
+    """Register the unresolved paradigm only after Units 8-10 have taken their ids."""
+    title = "Adjective-to-adverb paradigm stays in the copy you own"
+    body = "The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span."
+    step = _step(
+        "u7-st-gap-adverb-paradigm",
+        "UNAVAILABLE",
+        builder.say(7, title),
+        builder.say(7, body),
+        reference_ids=["ref-u610-attribution"],
+    )
+    step["unavailableReason"] = "An adjective-to-adverb paradigm has no admitted frozen span."
+    objective = {
+        "id": "obj-u7-adverb-paradigm",
+        "unitNumber": 7,
+        "title": title,
+        "kind": "GUIDANCE",
+        "instructionStepIds": [step["id"]],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": [],
+    }
+    unit["sessions"].append({
+        "id": "u7-s-gap-adverb-paradigm",
+        "title": title,
+        "estimatedMinutes": 4,
+        "objectiveIds": [objective["id"]],
+        "steps": [step],
+    })
+    unit["objectives"].append(objective)
+
+
 def _unit(builder, number, title, body, minimum, populate):
     lesson = Lesson(builder, number)
     populate(lesson, number)
@@ -712,7 +746,7 @@ def _unit(builder, number, title, body, minimum, populate):
     resolved = []
     seen = set()
     for spec in getattr(lesson, "capabilities", []):
-        if spec["supportedClaim"] != "adverb-paradigm" or number != 7:
+        if spec["supportedClaim"] != "adverb-form-gloss" or number != 7:
             raise SystemExit(f"Refusing to satisfy an unsupported claim: {spec}")
         matches = [
             record for record in builder.provenance

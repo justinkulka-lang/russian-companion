@@ -376,7 +376,7 @@ def _clock_answers(lesson) -> None:
         ],
         extra=_extra("clock-country", needle, [citation for _shown, _answer, citation, _feature in forms]),
     )
-    _bind(lesson, "clock-answers", "productive-clock-time", needle)
+    _bind(lesson, "clock-answers", "clock-expression-recognition", needle)
 
 
 def _calendar_date(lesson) -> None:

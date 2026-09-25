@@ -398,7 +398,7 @@ class Units610InstructionalValidityTest {
                     assertTrue("${objective.id} has no qualifying independent check", qualifying.isNotEmpty())
                 }
             }
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
+        assertEquals("NOT_PREPARED", pack.unit(7)!!.readiness)
     }
 
     @Test
@@ -504,10 +504,11 @@ class Units610InstructionalValidityTest {
         val pattern = independent.filter { it.objectiveId == "obj-u9-pattern" }
         assertTrue(pattern.any { it.answer.contains("must be declined") })
         val unit7 = pack.unit(7)!!
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
+        assertEquals("NOT_PREPARED", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }
         assertTrue(lesson.contains("short-form adjective section stays out"))
-        assertFalse(lesson.contains("introductory adverb objective is not prepared"))
+        assertTrue(lesson.contains("An adjective-to-adverb paradigm has no admitted frozen span."))
+        assertFalse(lesson.contains("most adverbs are formed"))
         assertFalse(lesson.contains("хорошое"))
     }
 

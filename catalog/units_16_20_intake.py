@@ -46,6 +46,7 @@ GLOSS = {
     "adjectives.csv:хоро'ший": ("good, beautiful, handsome", "good"),
 }
 REFERENCE = "ref-u1620-attribution"
+UNIT17_REFERENCE = "ref-u17-attribution"
 
 
 class FrozenSources:
@@ -127,7 +128,9 @@ class Builder:
         self.examples: list[dict] = []
         self.items: list[dict] = []
         self._said: dict[tuple[int, str], str] = {}
-        self._said_count = 0
+        from authored_identity import begin_authored_ids
+
+        begin_authored_ids()
         commit = frozen.freeze["openrussian"]["commit"]
         self.openrussian_url = f"https://github.com/Badestrand/russian-dictionary/blob/{commit}"
         self.openrussian_revision = commit
@@ -149,15 +152,20 @@ class Builder:
             "lesson3": "Russian/Lesson_3",
         }
 
-    def say(self, unit: int, text: str) -> str:
+    def say(self, unit: int, text: str, role: str = "scaffold", owner: str = "") -> str:
+        from authored_identity import semantic_authored_id
         from units_3_5_intake import CLAIM, GRAMMAR_TERM
 
         if CYRILLIC.search(text) or CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
             raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
         key = (unit, text)
         if key not in self._said:
-            self._said_count += 1
-            self._said[key] = f"en-u{unit}-{self._said_count:03d}"
+            self._said[key] = semantic_authored_id(
+                unit,
+                text,
+                role,
+                owner or f"u{unit}-scaffold",
+            )
             self.authored.append({
                 "id": self._said[key],
                 "unitNumber": unit,
@@ -305,7 +313,7 @@ def _gap(builder: Builder, number: int, slug: str, title: str, body: str, reason
     step_id = f"u{number}-st-gap-{slug}"
     step = _step(
         step_id, "UNAVAILABLE", builder.say(number, title), builder.say(number, body),
-        reference_ids=[REFERENCE],
+        reference_ids=[notice_for(number)],
     )
     step["unavailableReason"] = reason
     objective = {
@@ -338,7 +346,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
         "steps": [_step(
             f"u{number}-st-orient", "ORIENT", builder.say(number, orient_title), builder.say(number, orient_body),
             book=builder.say(number, f"Open Lesson {number} in the copy you own. The app records do not replace that lesson."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         )],
     }]
     objectives = []
@@ -351,7 +359,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
         for index, card in enumerate(spec["cards"], start=1):
             teach = f"u{number}-st-teach-{slug}-{index}"
             teach_ids.append(teach)
-            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[REFERENCE]))
+            steps.append(_step(teach, "TEACH", card["title"], card["body"], example_ids=card["examples"], reference_ids=[notice_for(number)]))
             if card["guided"]:
                 guided_id = f"u{number}-st-guided-{slug}-{index}"
                 guided_ids.append(guided_id)
@@ -394,7 +402,7 @@ def _chain(builder: Builder, number: int, specs: list[dict], orient_title: str, 
             f"u{number}-st-book-work", "BOOK", builder.say(number, f"Work Lesson {number} in your copy"),
             builder.say(number, f"Do Lesson {number} in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here."),
             book=builder.say(number, f"Open Lesson {number} in your copy and complete its lesson work."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         ),
         _step(
             f"u{number}-st-book", "BOOK", builder.say(number, f"Record Lesson {number} book work"),
@@ -432,7 +440,7 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
         "steps": [_step(
             f"u{number}-st-orient", "ORIENT", builder.say(number, title), builder.say(number, body),
             book=builder.say(number, f"Open Lesson {number} in the copy you own. This unit does not replace that lesson."),
-            reference_ids=[REFERENCE],
+            reference_ids=[notice_for(number)],
         )],
     }]
     objectives = []
@@ -451,7 +459,7 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
                 f"u{number}-st-book-work", "BOOK", builder.say(number, f"Work Lesson {number} in your copy"),
                 builder.say(number, f"Do Lesson {number} in the copy you own. This unit has no proposed lesson body for the missing topics. Listening stays with the book. No audio is mapped here."),
                 book=builder.say(number, f"Open Lesson {number} in your copy and complete its lesson work."),
-                reference_ids=[REFERENCE],
+                reference_ids=[notice_for(number)],
             ),
             _step(
                 f"u{number}-st-book", "BOOK", builder.say(number, f"Record Lesson {number} book work"),
@@ -474,20 +482,35 @@ def _closed_unit(builder: Builder, number: int, title: str, body: str, gaps: lis
     return {"number": number, "sessions": sessions, "objectives": objectives, "minimum_checks": 0}
 
 
-def build_units_16_20() -> dict:
+def notice_for(number: int) -> str:
+    return UNIT17_REFERENCE if number == 17 else REFERENCE
+
+
+def build_units_16_20(
+    probe_says: list[tuple[str, str, str]] | None = None,
+    probe_at: str = "end",
+) -> dict:
     from units_16_20_lessons import populate
 
     frozen = FrozenSources()
     builder = Builder(frozen)
+    if probe_at == "start":
+        for text, role, owner in probe_says or []:
+            builder.say(17, text, role=role, owner=owner)
     units = [
         _unit(builder, 16, "Admitted instrumental rows", "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.", 10, populate, []),
-        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.", 8, populate, []),
+        _unit(builder, 17, "Admitted number and quantity rows", "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.", 8, populate, [
+            ("clock-productive", "Productive clock-time answers stay in the copy you own", "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.", "Productive clock-time answers have no admitted frozen span."),
+        ]),
         _unit(builder, 18, "Admitted comparison and relative lines", "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.", 2, populate, []),
         _unit(builder, 19, "Admitted prefix cautions", "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.", 2, populate, [
             ("probability", "Probability stays in the copy you own", "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.", "Probability use has no admitted frozen span."),
         ]),
         _unit(builder, 20, "Admitted motion lines", "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.", 2, populate, []),
     ]
+    if probe_at == "end":
+        for text, role, owner in probe_says or []:
+            builder.say(17, text, role=role, owner=owner)
     _assert(builder, units)
     capabilities = [item for unit in units for item in unit["capabilities"]]
     return {
@@ -496,7 +519,7 @@ def build_units_16_20() -> dict:
         "examples": builder.examples,
         "provenance": builder.provenance,
         "authored": builder.authored,
-        "references": [_attribution_reference()],
+        "references": [_attribution_reference(), _unit17_reference()],
         "capabilities": capabilities,
         "sources": _admitted_sources(frozen),
         "rights": _admitted_rights(frozen),
@@ -542,7 +565,7 @@ RESOLVED_CLAIMS = {
     "weekdays",
     "months",
     "clock-question",
-    "productive-clock-time",
+    "clock-expression-recognition",
     "calendar-date",
     "comparison",
     "relative-kotoryy",
@@ -617,13 +640,35 @@ def _attribution_reference() -> dict:
             "Those license routes are not interchangeable. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
             "No audio is included. Learner-facing dictionary glosses are delimited sense selections. "
-            "Probability use is not prepared. Review is pending."
+            "Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending."
         ),
         "introducedInUnit": 16,
         "sourceId": WIKIBOOKS_ID,
         "classification": "LICENSE_OR_ATTRIBUTION",
         "reviewStatus": "NOT_REQUIRED",
         "searchTerms": ["units 16-20 source notice"],
+    }
+
+
+def _unit17_reference() -> dict:
+    return {
+        "id": UNIT17_REFERENCE,
+        "title": "Unit 17 source notice",
+        "summary": "Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.",
+        "detail": (
+            "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c "
+            "under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
+            "The bounded clock phrases are frozen at Wikipedia oldid 1366690592. "
+            "The calendar-date examples are frozen at Wikipedia oldid 1357134172. "
+            "Those license routes are not interchangeable. "
+            "The three clock phrases are bounded recognition. Productive clock-time answers are not prepared. "
+            "Review is pending."
+        ),
+        "introducedInUnit": 17,
+        "sourceId": WIKIBOOKS_ID,
+        "classification": "LICENSE_OR_ATTRIBUTION",
+        "reviewStatus": "NOT_REQUIRED",
+        "searchTerms": ["unit 17 source notice"],
     }
 
 

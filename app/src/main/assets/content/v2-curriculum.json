@@ -12045,15 +12045,15 @@
         "wonderfully"
       ],
       "answer": "quickly",
-      "feedback": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
+      "feedback": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
       "objectiveId": "obj-u7-adverb",
       "sourceId": "src-wikipedia-adverb-1374548415",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\").",
-        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\")."
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
       ],
       "assessment": {
         "testedFeature": "ADVERB_QUICKLY",
@@ -12071,10 +12071,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\").",
-          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\")."
+          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
         "contrastMembers": [
           "quickly",
           "well",
@@ -12102,15 +12102,15 @@
         "wonderfully"
       ],
       "answer": "well",
-      "feedback": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\").",
+      "feedback": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
       "objectiveId": "obj-u7-adverb",
       "sourceId": "src-wikipedia-adverb-1374548415",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
-        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\")."
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
       ],
       "assessment": {
         "testedFeature": "ADVERB_WELL",
@@ -12128,10 +12128,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
-          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\")."
+          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\").",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
         "contrastMembers": [
           "well",
           "quickly",
@@ -12159,15 +12159,15 @@
         "well"
       ],
       "answer": "wonderfully",
-      "feedback": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\").",
+      "feedback": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
       "objectiveId": "obj-u7-adverb",
       "sourceId": "src-wikipedia-adverb-1374548415",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
-        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\")."
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
       ],
       "assessment": {
         "testedFeature": "ADVERB_WONDERFULLY",
@@ -12185,10 +12185,10 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"most adverbs are formed\").",
-          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"most adverbs are formed\")."
+          "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+          "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"most adverbs are formed\").",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
         "contrastMembers": [
           "wonderfully",
           "quickly",
@@ -27810,13 +27810,26 @@
       "id": "ref-u1620-attribution",
       "title": "Units 16–20 source notice",
       "summary": "Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.",
-      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Probability use is not prepared. Review is pending.",
+      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending.",
       "introducedInUnit": 16,
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "classification": "LICENSE_OR_ATTRIBUTION",
       "reviewStatus": "NOT_REQUIRED",
       "searchTerms": [
         "units 16-20 source notice"
+      ]
+    },
+    {
+      "id": "ref-u17-attribution",
+      "title": "Unit 17 source notice",
+      "summary": "Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.",
+      "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The three clock phrases are bounded recognition. Productive clock-time answers are not prepared. Review is pending.",
+      "introducedInUnit": 17,
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "reviewStatus": "NOT_REQUIRED",
+      "searchTerms": [
+        "unit 17 source notice"
       ]
     },
     {
@@ -32556,16 +32569,16 @@
       "id": "unit-7",
       "title": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
       "shortLabel": "Adjectives",
-      "topicSummary": "Proposed Unit 7 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 7 is in development and is not prepared. Admitted agreement rows and three adverb form/gloss pairs await qualified review. An adjective-to-adverb paradigm has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 7,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
       "mappingNote": "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
       "prerequisiteUnitNumbers": [
         6
       ],
-      "estimatedMinutes": 114,
+      "estimatedMinutes": 118,
       "objectives": [
         {
           "id": "obj-u7-default",
@@ -32842,6 +32855,19 @@
           "instructionStepIds": [
             "u7-st-book-work",
             "u7-st-book"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
+        },
+        {
+          "id": "obj-u7-adverb-paradigm",
+          "unitNumber": 7,
+          "title": "Adjective-to-adverb paradigm stays in the copy you own",
+          "kind": "GUIDANCE",
+          "instructionStepIds": [
+            "u7-st-gap-adverb-paradigm"
           ],
           "exampleIds": [],
           "practiceStepIds": [],
@@ -33981,7 +34007,7 @@
               "id": "u7-st-teach-adverb-2",
               "kind": "TEACH",
               "title": "Admitted instruction",
-              "body": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+              "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u610-attribution"
@@ -34015,7 +34041,7 @@
               "id": "u7-st-rem-adverb",
               "kind": "REMEDIATE",
               "title": "Remediation",
-              "body": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+              "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
               "dominantAction": "Continue",
               "referenceIds": [],
               "itemIds": [],
@@ -34082,6 +34108,32 @@
               "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Self-attest only after the Lesson 7 work in your copy.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u7-s-gap-adverb-paradigm",
+          "title": "Adjective-to-adverb paradigm stays in the copy you own",
+          "estimatedMinutes": 4,
+          "objectiveIds": [
+            "obj-u7-adverb-paradigm"
+          ],
+          "steps": [
+            {
+              "id": "u7-st-gap-adverb-paradigm",
+              "kind": "UNAVAILABLE",
+              "title": "Adjective-to-adverb paradigm stays in the copy you own",
+              "body": "The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u610-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": "An adjective-to-adverb paradigm has no admitted frozen span.",
+              "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -43417,16 +43469,16 @@
       "id": "unit-17",
       "title": "Time, weekdays, calendar dates, years, age expressions, and ordinal numbers",
       "shortLabel": "Time and dates",
-      "topicSummary": "Proposed Unit 17 is in development. Admitted number rows, age, weekday names, month names, the clock question, the stated clock-answer constructions, and the stated calendar-date constructions await qualified review. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 17 is in development and is not prepared. Admitted number rows, age, weekday names, month names, the clock question, three bounded clock phrases, and the stated calendar-date constructions await qualified review. Productive clock-time answers have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
-      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+      "readiness": "NOT_PREPARED",
       "penguinLesson": 17,
       "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
       "mappingNote": "Proposed Lesson 17, printed pages 201-214. Independently stated topic scope: Time, weekdays, calendar dates, years, age expressions, and ordinal numbers. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
       "prerequisiteUnitNumbers": [
         16
       ],
-      "estimatedMinutes": 138,
+      "estimatedMinutes": 142,
       "objectives": [
         {
           "id": "obj-u17-ordinals",
@@ -43709,6 +43761,19 @@
           "practiceStepIds": [],
           "checkItemIds": [],
           "remediationStepIds": []
+        },
+        {
+          "id": "obj-u17-clock-productive",
+          "unitNumber": 17,
+          "title": "Productive clock-time answers stay in the copy you own",
+          "kind": "GUIDANCE",
+          "instructionStepIds": [
+            "u17-st-gap-clock-productive"
+          ],
+          "exampleIds": [],
+          "practiceStepIds": [],
+          "checkItemIds": [],
+          "remediationStepIds": []
         }
       ],
       "sessions": [
@@ -43734,10 +43799,10 @@
               "id": "u17-st-orient",
               "kind": "ORIENT",
               "title": "Admitted number and quantity rows",
-              "body": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.",
+              "body": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43763,7 +43828,7 @@
               "body": "пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43798,7 +43863,7 @@
               "body": "Ordinal numbers",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43814,7 +43879,7 @@
               "body": "тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43877,7 +43942,7 @@
               "body": "один час — один час. два часа — два часа. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43912,7 +43977,7 @@
               "body": "* один час",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -43928,7 +43993,7 @@
               "body": "пять часов — пять часов. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -43990,7 +44055,7 @@
               "body": "один год — один год. два года — два года. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44025,7 +44090,7 @@
               "body": "* один год",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44041,7 +44106,7 @@
               "body": "пять лет — пять лет. сорок один год — forty-one years. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44104,7 +44169,7 @@
               "body": "одна минута — одна минута. две минуты — две минуты. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44139,7 +44204,7 @@
               "body": "* одна минута",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44155,7 +44220,7 @@
               "body": "пять минут — пять минут. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44217,7 +44282,7 @@
               "body": "мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44252,7 +44317,7 @@
               "body": "I am 20 (years old)",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44312,7 +44377,7 @@
               "body": "понедельник — Monday. вторник — Tuesday. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44347,7 +44412,7 @@
               "body": "Russians don't capitalize days of the week.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44363,7 +44428,7 @@
               "body": "среда — Wednesday. четверг — Thursday. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44426,7 +44491,7 @@
               "body": "Январь — January. Февраль — February. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44461,7 +44526,7 @@
               "body": "Months of the year",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44477,7 +44542,7 @@
               "body": "Март — March. Апрель — April. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44540,7 +44605,7 @@
               "body": "Который час? — What time is it? час — time. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44575,7 +44640,7 @@
               "body": "What time is it?",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44635,7 +44700,7 @@
               "body": "четверть восьмого — 7:15. полвосьмого — 7:30. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44670,7 +44735,7 @@
               "body": "uses the same convention: четверть восьмого (\"quarter of the eighth hour\"), полвосьмого (\"half of eight\"), без четверти восемь (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44686,7 +44751,7 @@
               "body": "без четверти восемь — 7:45. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44748,7 +44813,7 @@
               "body": "Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. ",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [
@@ -44783,7 +44848,7 @@
               "body": "In Russia, dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"28.08.17\") and the expanded form (for example \"28 августа 2017 г.\"); the trailing \"г\" is short for \"года\" (goda, \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"28.08.2017\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example \"Двадцать восьмое августа\").",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44843,7 +44908,7 @@
               "body": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
               "dominantAction": "Continue",
               "referenceIds": [
-                "ref-u1620-attribution"
+                "ref-u17-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
@@ -44863,6 +44928,32 @@
               "exampleIds": [],
               "unavailableReason": null,
               "bookDirection": "Self-attest only after the Lesson 17 work in your copy.",
+              "companionDirection": null,
+              "remediationStepId": null
+            }
+          ]
+        },
+        {
+          "id": "u17-s-gap-clock-productive",
+          "title": "Productive clock-time answers stay in the copy you own",
+          "estimatedMinutes": 4,
+          "objectiveIds": [
+            "obj-u17-clock-productive"
+          ],
+          "steps": [
+            {
+              "id": "u17-st-gap-clock-productive",
+              "kind": "UNAVAILABLE",
+              "title": "Productive clock-time answers stay in the copy you own",
+              "body": "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u17-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": "Productive clock-time answers have no admitted frozen span.",
+              "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
             }
@@ -64742,14 +64833,14 @@
       "sourceRevision": "1374548415",
       "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
       "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+      "shippedText": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+      "contentHash": "cd851485e3718002a3cdb4c61f7f440b8c2b9f0d5dc6e7ecb229679c2280e87b",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -64759,331 +64850,6 @@
     },
     {
       "itemId": "prov-u7-adverb-rem-r0",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "ий",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "61760b129eb12c5b31ae92afdf4065b386eb47193a202092f5078e9d5cd15737",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r1",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "а",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r2",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "е",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "259f56cb715ba3a3f1ca41a4ff1972cca698cb49eef1ae018dff325507da8b26",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r3",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "о",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "50338c005c41fb4e6e6b74c9f7f8d0f56ae08517102498639f8a610b06cd9859",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r4",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "швидкий",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "6b0edad7d325032e3c0ff027fc128c51ebba3beb59f41a2a8b25e2e23b5d510b",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r5",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "гарна",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "2b50e4d5b934db6fc65246fb0eaf032e3963fb52750670f8a216b8ddf079041a",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r6",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "смачне",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "2ff27d7f7cb59c1a84bc34109e17f46921be30006967623bd621d945ac533339",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r7",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "швидко",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "5d8a51523fa4a460fbd9e248257cd6ec30369aa218c2947603f39d06beaeb8c8",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r8",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "гарно",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "ef8dc25a0951814122d8af6bdf0fd10d279880d61901e9b899adabd4fea89815",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r9",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "смачно",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "0bcb1b0f453c0fcdfe48727570b6667f5a893617259b04f6010e56f04704812f",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r10",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "быстрый",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r11",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "хороший",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "b68edd19855f5a46c7dace68101a8c55771f5e43148bd33bbe96196898a52751",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r12",
-      "unitNumber": 7,
-      "objectiveId": "obj-u7-adverb",
-      "recordType": "example",
-      "sourceId": "src-wikipedia-adverb-1374548415",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
-      "sourceRevision": "1374548415",
-      "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
-      "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "прекрасный",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "8c9d9085a4ce7c3f45485f30b23f84d60a98b77b8d1d8855c7a693131f2101be",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u7-adverb-rem-r13",
       "unitNumber": 7,
       "objectiveId": "obj-u7-adverb",
       "recordType": "example",
@@ -65108,7 +64874,7 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u7-adverb-rem-r14",
+      "itemId": "prov-u7-adverb-rem-r1",
       "unitNumber": 7,
       "objectiveId": "obj-u7-adverb",
       "recordType": "example",
@@ -65133,7 +64899,7 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u7-adverb-rem-r15",
+      "itemId": "prov-u7-adverb-rem-r2",
       "unitNumber": 7,
       "objectiveId": "obj-u7-adverb",
       "recordType": "example",
@@ -65167,14 +64933,14 @@
       "sourceRevision": "1374548415",
       "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
       "originalSourceText": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
-      "shippedText": "most adverbs are formed",
+      "shippedText": "while in Russian",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374548415 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
-      "contentHash": "e5282edae5420a93e8fc970e18410de85bd63963a3d188f651a94b1130291d24",
+      "contentHash": "c6f9c1eb170d4e146714a1e4261ee9e542dc34daffa07ad55f8c725c4ffd9e78",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -101605,6 +101371,18 @@
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
+      "id": "en-u7-198",
+      "unitNumber": 7,
+      "text": "Adjective-to-adverb paradigm stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u7-199",
+      "unitNumber": 7,
+      "text": "The three shown forms are gloss recognition only. An adjective-to-adverb paradigm has no admitted frozen span.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
       "id": "en-u11-001",
       "unitNumber": 11,
       "text": "Admitted lines",
@@ -103051,739 +102829,751 @@
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-053",
+      "id": "en-u17-u17-scaffold-scaffold-617649b89b68",
       "unitNumber": 17,
       "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-054",
+      "id": "en-u17-u17-scaffold-scaffold-4a565ef7eee9",
       "unitNumber": 17,
       "text": "Does this row fail the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-055",
+      "id": "en-u17-u17-scaffold-scaffold-b253eceff95a",
       "unitNumber": 17,
       "text": "Does this answer show the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-056",
+      "id": "en-u17-u17-scaffold-scaffold-2fc0263e802a",
       "unitNumber": 17,
       "text": "Which admitted line is the first ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-057",
+      "id": "en-u17-u17-scaffold-scaffold-c2dcb6b4308a",
       "unitNumber": 17,
       "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-058",
+      "id": "en-u17-u17-scaffold-scaffold-4a677873d253",
       "unitNumber": 17,
       "text": "Does this row fail the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-059",
+      "id": "en-u17-u17-scaffold-scaffold-38478b9c58cf",
       "unitNumber": 17,
       "text": "Does this answer show the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-060",
+      "id": "en-u17-u17-scaffold-scaffold-daea861c2e57",
       "unitNumber": 17,
       "text": "Which admitted line is the second ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-061",
+      "id": "en-u17-u17-scaffold-scaffold-3d4545c9821e",
       "unitNumber": 17,
       "text": "Does this row fail the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-062",
+      "id": "en-u17-u17-scaffold-scaffold-f96c7b5fc626",
       "unitNumber": 17,
       "text": "Does this answer show the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-063",
+      "id": "en-u17-u17-scaffold-scaffold-56c027a21a9d",
       "unitNumber": 17,
       "text": "Which admitted line is the third ordinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-064",
+      "id": "en-u17-u17-scaffold-scaffold-5cfee3d3134f",
       "unitNumber": 17,
       "text": "Does this row fail the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-065",
+      "id": "en-u17-u17-scaffold-scaffold-7b6d504d7e63",
       "unitNumber": 17,
       "text": "Does this answer show the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-066",
+      "id": "en-u17-u17-scaffold-scaffold-feb442607c79",
       "unitNumber": 17,
       "text": "Which admitted line is the one-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-067",
+      "id": "en-u17-u17-scaffold-scaffold-765305856617",
       "unitNumber": 17,
       "text": "Does this row fail the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-068",
+      "id": "en-u17-u17-scaffold-scaffold-3e0f91e58d17",
       "unitNumber": 17,
       "text": "Does this answer show the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-069",
+      "id": "en-u17-u17-scaffold-scaffold-e99f8a478520",
       "unitNumber": 17,
       "text": "Which admitted line is the two-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-070",
+      "id": "en-u17-u17-scaffold-scaffold-f7af114e6a9d",
       "unitNumber": 17,
       "text": "Does this row fail the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-071",
+      "id": "en-u17-u17-scaffold-scaffold-c70a0c59e89c",
       "unitNumber": 17,
       "text": "Does this answer show the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-072",
+      "id": "en-u17-u17-scaffold-scaffold-6ec2da2b5ac2",
       "unitNumber": 17,
       "text": "Which admitted line is the five-hour row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-073",
+      "id": "en-u17-u17-scaffold-scaffold-2bb3b02abc19",
       "unitNumber": 17,
       "text": "Does this row fail the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-074",
+      "id": "en-u17-u17-scaffold-scaffold-02404730d4ba",
       "unitNumber": 17,
       "text": "Does this answer show the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-075",
+      "id": "en-u17-u17-scaffold-scaffold-5aec97c275c9",
       "unitNumber": 17,
       "text": "Which admitted line is the one-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-076",
+      "id": "en-u17-u17-scaffold-scaffold-eca82d7d14b0",
       "unitNumber": 17,
       "text": "Does this row fail the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-077",
+      "id": "en-u17-u17-scaffold-scaffold-64cd6c31fa83",
       "unitNumber": 17,
       "text": "Does this answer show the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-078",
+      "id": "en-u17-u17-scaffold-scaffold-57e46635f2bd",
       "unitNumber": 17,
       "text": "Which admitted line is the two-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-079",
+      "id": "en-u17-u17-scaffold-scaffold-ce17b55d3ca7",
       "unitNumber": 17,
       "text": "Does this row fail the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-080",
+      "id": "en-u17-u17-scaffold-scaffold-8cb586ba7d43",
       "unitNumber": 17,
       "text": "Does this answer show the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-081",
+      "id": "en-u17-u17-scaffold-scaffold-a2d0c3e3c8fb",
       "unitNumber": 17,
       "text": "Which admitted line is the five-year row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-082",
+      "id": "en-u17-u17-scaffold-scaffold-fe44eddb2d81",
       "unitNumber": 17,
       "text": "Does this row fail the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-083",
+      "id": "en-u17-u17-scaffold-scaffold-a06590cf9b03",
       "unitNumber": 17,
       "text": "Does this answer show the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-084",
+      "id": "en-u17-u17-scaffold-scaffold-8e33f215cdfe",
       "unitNumber": 17,
       "text": "Which admitted line is the one-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-085",
+      "id": "en-u17-u17-scaffold-scaffold-239fbee06b63",
       "unitNumber": 17,
       "text": "Does this row fail the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-086",
+      "id": "en-u17-u17-scaffold-scaffold-3435fbdfccf5",
       "unitNumber": 17,
       "text": "Does this answer show the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-087",
+      "id": "en-u17-u17-scaffold-scaffold-cae98cce8087",
       "unitNumber": 17,
       "text": "Which admitted line is the two-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-088",
+      "id": "en-u17-u17-scaffold-scaffold-35c1c837c5cd",
       "unitNumber": 17,
       "text": "Does this row fail the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-089",
+      "id": "en-u17-u17-scaffold-scaffold-e29f9a8d4bbc",
       "unitNumber": 17,
       "text": "Does this answer show the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-090",
+      "id": "en-u17-u17-scaffold-scaffold-a0443536ec80",
       "unitNumber": 17,
       "text": "Which admitted line is the five-minute row?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-091",
+      "id": "en-u17-u17-scaffold-scaffold-2df47f739e9c",
       "unitNumber": 17,
       "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-092",
+      "id": "en-u17-u17-scaffold-scaffold-5d461569f10d",
       "unitNumber": 17,
       "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-093",
+      "id": "en-u17-u17-scaffold-scaffold-7186068f3b65",
       "unitNumber": 17,
       "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-094",
+      "id": "en-u17-u17-scaffold-scaffold-d05581a9fe2f",
       "unitNumber": 17,
       "text": "Admitted number and quantity rows",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-095",
+      "id": "en-u17-u17-scaffold-scaffold-d82b22bc37db",
       "unitNumber": 17,
-      "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, clock-answer, and calendar-date spans. Qualified review is pending.",
+      "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, and calendar-date spans. Productive clock-time answers stay unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-096",
+      "id": "en-u17-u17-scaffold-scaffold-d979ddd5df23",
       "unitNumber": 17,
       "text": "Open Lesson 17 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-097",
+      "id": "en-u17-u17-scaffold-scaffold-3e781f275910",
       "unitNumber": 17,
       "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-098",
+      "id": "en-u17-u17-scaffold-scaffold-00b9e89c0f6c",
       "unitNumber": 17,
       "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-099",
+      "id": "en-u17-u17-scaffold-scaffold-2b7d28840646",
       "unitNumber": 17,
       "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-100",
+      "id": "en-u17-u17-scaffold-scaffold-28776b79f5c4",
       "unitNumber": 17,
       "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-101",
+      "id": "en-u17-u17-scaffold-scaffold-dda63ae4acfb",
       "unitNumber": 17,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-102",
+      "id": "en-u17-u17-scaffold-scaffold-aaa9986a64dc",
       "unitNumber": 17,
       "text": "Work Lesson 17 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-103",
+      "id": "en-u17-u17-scaffold-scaffold-26f3fd1f76d9",
       "unitNumber": 17,
       "text": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-104",
+      "id": "en-u17-u17-scaffold-scaffold-2114923f3bee",
       "unitNumber": 17,
       "text": "Open Lesson 17 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-105",
+      "id": "en-u17-u17-scaffold-scaffold-003ed81da751",
       "unitNumber": 17,
       "text": "Record Lesson 17 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-106",
+      "id": "en-u17-u17-scaffold-scaffold-3e8fc175c5e9",
       "unitNumber": 17,
       "text": "When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u17-107",
+      "id": "en-u17-u17-scaffold-scaffold-6bef09347414",
       "unitNumber": 17,
       "text": "Self-attest only after the Lesson 17 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-108",
-      "unitNumber": 18,
-      "text": "The frozen source pairs the shown form",
+      "id": "en-u17-u17-scaffold-scaffold-3b45294d491a",
+      "unitNumber": 17,
+      "text": "Productive clock-time answers stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u18-109",
-      "unitNumber": 18,
-      "text": "with the admitted gloss",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-110",
-      "unitNumber": 18,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u18-111",
-      "unitNumber": 18,
-      "text": "Which admitted English gloss is written beside the shown form?",
+      "id": "en-u17-u17-scaffold-scaffold-50133fa53a4d",
+      "unitNumber": 17,
+      "text": "The three shown clock phrases are recognition only. Productive clock-time answers have no admitted frozen span.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-112",
       "unitNumber": 18,
-      "text": "Admitted instruction",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-113",
       "unitNumber": 18,
-      "text": "Admitted comparison and relative lines",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-114",
       "unitNumber": 18,
-      "text": "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-115",
       "unitNumber": 18,
-      "text": "Open Lesson 18 in the copy you own. The app records do not replace that lesson.",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-116",
       "unitNumber": 18,
-      "text": "Guided practice",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-117",
       "unitNumber": 18,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted comparison and relative lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-118",
       "unitNumber": 18,
-      "text": "Remediation",
+      "text": "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-119",
       "unitNumber": 18,
-      "text": "Independent checks",
+      "text": "Open Lesson 18 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-120",
       "unitNumber": 18,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-121",
       "unitNumber": 18,
-      "text": "Work Lesson 18 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-122",
       "unitNumber": 18,
-      "text": "Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-123",
       "unitNumber": 18,
-      "text": "Open Lesson 18 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-124",
       "unitNumber": 18,
-      "text": "Record Lesson 18 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-125",
       "unitNumber": 18,
-      "text": "When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 18 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u18-126",
       "unitNumber": 18,
+      "text": "Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-127",
+      "unitNumber": 18,
+      "text": "Open Lesson 18 in your copy and complete its lesson work.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-128",
+      "unitNumber": 18,
+      "text": "Record Lesson 18 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-129",
+      "unitNumber": 18,
+      "text": "When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u18-130",
+      "unitNumber": 18,
       "text": "Self-attest only after the Lesson 18 work in your copy.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-127",
-      "unitNumber": 19,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-128",
-      "unitNumber": 19,
-      "text": "Does this row fail the dissuade meaning?",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-129",
-      "unitNumber": 19,
-      "text": "Does this answer show the dissuade meaning?",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u19-130",
-      "unitNumber": 19,
-      "text": "Which admitted English label is the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-131",
       "unitNumber": 19,
-      "text": "Admitted instruction",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-132",
       "unitNumber": 19,
-      "text": "Does this row fail the agree meaning?",
+      "text": "Does this row fail the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-133",
       "unitNumber": 19,
-      "text": "Does this answer show the agree meaning?",
+      "text": "Does this answer show the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-134",
       "unitNumber": 19,
-      "text": "Which admitted English label is the agree meaning?",
+      "text": "Which admitted English label is the dissuade meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-135",
       "unitNumber": 19,
-      "text": "Does this row fail the dissuade perfective?",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-136",
       "unitNumber": 19,
-      "text": "Does this answer show the dissuade perfective?",
+      "text": "Does this row fail the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-137",
       "unitNumber": 19,
-      "text": "Which admitted line is the dissuade perfective?",
+      "text": "Does this answer show the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-138",
       "unitNumber": 19,
-      "text": "The frozen source pairs the shown form",
+      "text": "Which admitted English label is the agree meaning?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-139",
       "unitNumber": 19,
-      "text": "with the admitted gloss",
+      "text": "Does this row fail the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-140",
       "unitNumber": 19,
-      "text": "Which admitted English gloss is written beside the shown form?",
+      "text": "Does this answer show the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-141",
       "unitNumber": 19,
-      "text": "Admitted prefix cautions",
+      "text": "Which admitted line is the dissuade perfective?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-142",
       "unitNumber": 19,
-      "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-143",
       "unitNumber": 19,
-      "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-144",
       "unitNumber": 19,
-      "text": "Guided practice",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-145",
       "unitNumber": 19,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted prefix cautions",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-146",
       "unitNumber": 19,
-      "text": "Remediation",
+      "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional and obligation spans. Probability stays unresolved. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-147",
       "unitNumber": 19,
-      "text": "Independent checks",
+      "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-148",
       "unitNumber": 19,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-149",
       "unitNumber": 19,
-      "text": "Work Lesson 19 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-150",
       "unitNumber": 19,
-      "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-151",
       "unitNumber": 19,
-      "text": "Open Lesson 19 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-152",
       "unitNumber": 19,
-      "text": "Record Lesson 19 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-153",
       "unitNumber": 19,
-      "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 19 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-154",
       "unitNumber": 19,
-      "text": "Self-attest only after the Lesson 19 work in your copy.",
+      "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-155",
       "unitNumber": 19,
-      "text": "Probability stays in the copy you own",
+      "text": "Open Lesson 19 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u19-156",
       "unitNumber": 19,
+      "text": "Record Lesson 19 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-157",
+      "unitNumber": 19,
+      "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-158",
+      "unitNumber": 19,
+      "text": "Self-attest only after the Lesson 19 work in your copy.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-159",
+      "unitNumber": 19,
+      "text": "Probability stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u19-160",
+      "unitNumber": 19,
       "text": "Probability stays in the copy you own. The admitted conditional and obligation spans do not state it.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-157",
-      "unitNumber": 20,
-      "text": "The frozen source pairs the shown form",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-158",
-      "unitNumber": 20,
-      "text": "with the admitted gloss",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-159",
-      "unitNumber": 20,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u20-160",
-      "unitNumber": 20,
-      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-161",
       "unitNumber": 20,
-      "text": "Admitted instruction",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-162",
       "unitNumber": 20,
-      "text": "Admitted motion lines",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-163",
       "unitNumber": 20,
-      "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-164",
       "unitNumber": 20,
-      "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
+      "text": "Which admitted English gloss is written beside the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-165",
       "unitNumber": 20,
-      "text": "Guided practice",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-166",
       "unitNumber": 20,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted motion lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-167",
       "unitNumber": 20,
-      "text": "Remediation",
+      "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-168",
       "unitNumber": 20,
-      "text": "Independent checks",
+      "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-169",
       "unitNumber": 20,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-170",
       "unitNumber": 20,
-      "text": "Work Lesson 20 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-171",
       "unitNumber": 20,
-      "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-172",
       "unitNumber": 20,
-      "text": "Open Lesson 20 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-173",
       "unitNumber": 20,
-      "text": "Record Lesson 20 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-174",
       "unitNumber": 20,
-      "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 20 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u20-175",
+      "unitNumber": 20,
+      "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-176",
+      "unitNumber": 20,
+      "text": "Open Lesson 20 in your copy and complete its lesson work.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-177",
+      "unitNumber": 20,
+      "text": "Record Lesson 20 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-178",
+      "unitNumber": 20,
+      "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u20-179",
       "unitNumber": 20,
       "text": "Self-attest only after the Lesson 20 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
@@ -107127,7 +106917,7 @@
   ],
   "sourceCapabilities": [
     {
-      "id": "cap-u7-adverb-paradigm",
+      "id": "cap-u7-adverb-form-gloss",
       "sourceId": "src-wikipedia-adverb-1374548415",
       "sourceRevision": "1374548415",
       "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
@@ -107135,7 +106925,7 @@
       "exactSpan": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
       "unitNumber": 7,
       "objectiveId": "obj-u7-adverb",
-      "supportedClaim": "adverb-paradigm"
+      "supportedClaim": "adverb-form-gloss"
     },
     {
       "id": "cap-u16-instrumental-complements",
@@ -107193,7 +106983,7 @@
       "supportedClaim": "clock-question"
     },
     {
-      "id": "cap-u17-productive-clock-time",
+      "id": "cap-u17-clock-expression-recognition",
       "sourceId": "src-wikipedia-date-time-country-1366690592",
       "sourceRevision": "1366690592",
       "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
@@ -107201,7 +106991,7 @@
       "exactSpan": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
       "unitNumber": 17,
       "objectiveId": "obj-u17-clock-answers",
-      "supportedClaim": "productive-clock-time"
+      "supportedClaim": "clock-expression-recognition"
     },
     {
       "id": "cap-u17-calendar-date",

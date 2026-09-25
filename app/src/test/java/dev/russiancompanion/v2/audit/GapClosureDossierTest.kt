@@ -59,8 +59,8 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(19) + (21..30).toList(), contentUnits)
-        assertEquals(11, contentUnits.size)
+        assertEquals(listOf(7, 17, 19) + (21..30).toList(), contentUnits)
+        assertEquals(13, contentUnits.size)
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -117,12 +117,12 @@ class GapClosureDossierTest {
             "motion-carrying-leading",
             "motion-po-setting-out",
             "motion-prefixed-path",
-            "adverb-paradigm",
-            "productive-clock-time",
+            "adverb-form-gloss",
+            "clock-expression-recognition",
             "calendar-date",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
-        assertTrue(headings.none { it.unitNumber in listOf(7, 16, 17, 18, 20) })
+        assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
         assertEquals(
             listOf("probability-dolzhen"),
             headings.filter { it.unitNumber == 19 }.map { it.claim },

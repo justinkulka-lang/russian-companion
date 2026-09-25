@@ -48,7 +48,7 @@ class Units1620SourceIntakeTest {
             val unit = pack.unit(number)!!
             val facts = governedMappingFacts(number)
             assertEquals("DEVELOPMENT", unit.installState)
-            val expectedReadiness = if (number == 19) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
+            val expectedReadiness = if (number == 17 || number == 19) "NOT_PREPARED" else "CONTENT_COMPLETE_REVIEW_PENDING"
             assertEquals(expectedReadiness, unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
@@ -150,7 +150,7 @@ class Units1620SourceIntakeTest {
     fun unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance() {
         val pack = pack()
         assertFalse(reason(pack, 16).contains("becoming complements"))
-        assertFalse(reason(pack, 17).contains("Productive clock-time"))
+        assertTrue(reason(pack, 17).contains("Productive clock-time"))
         assertFalse(reason(pack, 17).contains("Calendar-date"))
         assertFalse(reason(pack, 18).contains("Comparison forms"))
         assertTrue(reason(pack, 19).contains("Probability"))
@@ -287,7 +287,7 @@ class Units1620SourceIntakeTest {
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number && it.shippedText.any { char -> char.code in 0x0400..0x04FF } })
         }
         assertEquals("DEVELOPMENT", pack.unit(17)!!.installState)
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
+        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
         assertEquals("DEVELOPMENT", pack.unit(19)!!.installState)
         assertEquals("NOT_PREPARED", pack.unit(19)!!.readiness)
         listOf(16, 17, 19).forEach { number ->

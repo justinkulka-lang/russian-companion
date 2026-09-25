@@ -898,9 +898,10 @@ def _adverb_paradigm(lesson) -> None:
 
     page = "adverb-formation"
     needle = ADVERB_SPAN
-    citation = "most adverbs are formed"
-    if citation not in needle:
-        raise SystemExit("Adverb citation is not in the frozen span")
+    excerpt = '"быстро", "хорошо", "прекрасно" (quickly, well, wonderfully)'
+    citation = "while in Russian"
+    if excerpt not in needle or citation not in needle:
+        raise SystemExit("Adverb excerpt is not in the frozen span")
     pairs = (
         ("быстро", "quickly", "ADVERB_QUICKLY"),
         ("хорошо", "well", "ADVERB_WELL"),
@@ -936,7 +937,7 @@ def _adverb_paradigm(lesson) -> None:
         "adverb",
         "Choose the admitted gloss beside the shown form",
         "CONTRAST_SELECTION",
-        (page, needle, needle),
+        (page, needle, excerpt),
         [
             _wiki(page, needle, form, gloss)
             for form, gloss, _feature in pairs
@@ -946,7 +947,7 @@ def _adverb_paradigm(lesson) -> None:
     )
     lesson.capabilities = [{
         "objectiveId": "obj-u7-adverb",
-        "supportedClaim": "adverb-paradigm",
+        "supportedClaim": "adverb-form-gloss",
         "exactSpan": needle,
     }]
     _assert_explicit_guards()

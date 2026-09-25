@@ -127,16 +127,16 @@ class CurriculumReadinessReconciliationTest {
             }
         }
         val unit7 = model.units.first { it.unitNumber == 7 }
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
-        assertTrue(unit7.advancementCanPresentlySucceed)
+        assertEquals("NOT_PREPARED", unit7.readiness)
+        assertFalse(unit7.advancementCanPresentlySucceed)
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
-        listOf(7, 16, 17, 18, 20).forEach { number ->
+        listOf(16, 18, 20).forEach { number ->
             assertFalse(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        ((19..30).toList() - listOf(20)).forEach { number ->
+        (listOf(7, 17) + ((19..30).toList() - listOf(20))).forEach { number ->
             assertTrue(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
@@ -272,8 +272,8 @@ class CurriculumReadinessReconciliationTest {
         assertFalse(earlyDecision.allowed)
         assertTrue(earlyDecision.remaining.any { it == "This unit is not prepared" })
 
-        val preparedSeven = pack.unit(7).copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
-        val preparedDecision = advancementDecision(pack, preparedSeven, idealizedLearner(pack, preparedSeven))
+        val preparedSixteen = pack.unit(16).copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val preparedDecision = advancementDecision(pack, preparedSixteen, idealizedLearner(pack, preparedSixteen))
         assertFalse(preparedDecision.remaining.any { it == "This unit is not prepared" })
         assertTrue(preparedDecision.remaining.joinToString("\n"), preparedDecision.allowed)
 
@@ -356,7 +356,7 @@ class CurriculumReadinessReconciliationTest {
         assertEquals("NONE", live.units.first { it.unitNumber == 16 }.localExperienceBlocker)
         assertFalse(live.units.first { it.unitNumber == 16 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertEquals("NONE", live.units.first { it.unitNumber == 17 }.assetBlocker)
-        assertFalse(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
+        assertTrue(live.units.first { it.unitNumber == 17 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertTrue(live.units.first { it.unitNumber == 19 }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"))
         assertTrue(live.units.first { it.unitNumber == 1 }.assetBlocker.contains("REQUIRED_LICENSED_AUDIO_ABSENT"))
         assertEquals("NONE", live.units.first { it.unitNumber == 1 }.localExperienceBlocker)

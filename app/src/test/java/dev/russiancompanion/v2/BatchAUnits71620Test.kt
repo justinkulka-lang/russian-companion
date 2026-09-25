@@ -108,13 +108,18 @@ class BatchAUnits71620Test {
     @Test
     fun partialUnitsStayBlockedAndClosedChainsCanBeReviewPending() {
         val pack = pack()
-        listOf(7, 16, 17, 18, 20).forEach { number ->
+        listOf(16, 18, 20).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!).isEmpty())
-        assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(17)!!).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, pack.unit(17)!!).isEmpty())
+        listOf(7, 17).forEach { number ->
+            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
+            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+            assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
+            assertTrue(decision.remaining.any { it.contains("not prepared") })
+            assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(number)!!).isNotEmpty())
+        }
         val unit19 = advancementDecision(pack, pack.unit(19)!!, learner(pack, 19))
         assertFalse(unit19.allowed)
         assertTrue(unit19.remaining.any { it.contains("not prepared") })
@@ -122,23 +127,23 @@ class BatchAUnits71620Test {
         val probability = advancementDecision(pack, flipped19, learner(pack, 19))
         assertFalse(probability.allowed)
         assertTrue(probability.remaining.any { it.contains("probability source capability") })
-        mapOf(
-            "adverb-paradigm" to 7,
-            "productive-clock-time" to 17,
-            "calendar-date" to 17,
-        ).forEach { (claim, number) ->
-            val stripped = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != claim })
-            val decision = advancementDecision(stripped, stripped.unit(number)!!, learner(stripped, number))
-            assertFalse(decision.remaining.joinToString("\n"), decision.allowed)
-            val errors = V2Validator.contentCompletenessErrors(stripped, stripped.unit(number)!!)
-            assertTrue(errors.joinToString("\n"), errors.isNotEmpty())
-        }
+        val flipped7 = pack.unit(7)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val paradigm = advancementDecision(pack, flipped7, learner(pack, 7))
+        assertFalse(paradigm.allowed)
+        assertTrue(paradigm.remaining.any { it.contains("adverb paradigm") })
+        val flipped17 = pack.unit(17)!!.copy(readiness = "CONTENT_COMPLETE_REVIEW_PENDING")
+        val clock = advancementDecision(pack, flipped17, learner(pack, 17))
+        assertFalse(clock.allowed)
+        assertTrue(clock.remaining.any { it.contains("productive clock-time") })
+        val strippedDate = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" })
+        val dateDecision = advancementDecision(strippedDate, strippedDate.unit(17)!!, learner(strippedDate, 17))
+        assertFalse(dateDecision.allowed)
     }
 
     @Test
     fun admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans() {
         val pack = pack()
-        listOf("adverb-paradigm", "productive-clock-time", "calendar-date").forEach { claim ->
+        listOf("adverb-form-gloss", "clock-expression-recognition", "calendar-date").forEach { claim ->
             val capability = pack.sourceCapabilities.first { it.supportedClaim == claim }
             val record = pack.provenanceRecords.first {
                 it.objectiveId == capability.objectiveId && it.originalSourceText == capability.exactSpan
