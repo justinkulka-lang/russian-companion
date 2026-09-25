@@ -169,6 +169,49 @@ class Aud44CorrectionTest {
     }
 
     @Test
+    fun sharedLicenseNoticeDoesNotAnnounceUnitReadiness() {
+        val pack = pack()
+        val sharedIds = pack.units.filter { it.number in 16..20 }.flatMap { unit ->
+            unit.sessions.flatMap { session -> session.steps.flatMap { it.referenceIds } }
+                .distinct()
+                .map { referenceId -> referenceId to unit.number }
+        }.groupBy({ it.first }, { it.second }).filter { (_, units) -> units.distinct().size > 1 }.keys
+        assertTrue(sharedIds.contains("ref-u1620-attribution"))
+        assertFalse(sharedIds.contains("ref-u17-attribution"))
+        pack.references.filter { it.id in sharedIds }.forEach { reference ->
+            val text = reference.title + "\n" + reference.summary + "\n" + reference.detail
+            listOf("not prepared", "unresolved", "productive", "calendar-date", "probability", "clock-time").forEach { banned ->
+                assertFalse(reference.id + " " + banned, text.contains(banned))
+            }
+        }
+        val unit17 = pack.references.first { it.id == "ref-u17-attribution" }
+        assertTrue(unit17.detail.contains("calendar-date relationships remain admitted"))
+        assertTrue(unit17.detail.contains("bounded recognition"))
+        assertTrue(unit17.detail.contains("Productive clock-time generation remains unresolved"))
+        assertTrue(pack.sourceCapabilities.any { it.unitNumber == 17 && it.supportedClaim == "calendar-date" })
+        assertFalse(unresolved(pack, 17).contains("calendar-date"))
+        assertTrue(unresolved(pack, 17).contains("productive-clock-time"))
+        assertEquals("NOT_PREPARED", pack.unit(17)!!.readiness)
+        val blocked = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        assertFalse(blocked.remaining.joinToString("\n"), blocked.allowed)
+        assertTrue(unresolved(pack, 19).contains("probability-dolzhen"))
+        assertTrue(
+            pack.unit(19)!!.sessions.flatMap { it.steps }.any {
+                it.unavailableReason == "Probability use has no admitted frozen span."
+            },
+        )
+        val recognition = pack.sourceCapabilities.first { it.supportedClaim == "clock-expression-recognition" }
+        val relabeled = pack.copy(
+            sourceCapabilities = pack.sourceCapabilities.map { capability ->
+                if (capability.id == recognition.id) capability.copy(supportedClaim = "productive-clock-time") else capability
+            },
+        )
+        val errors = V2Validator.validate(relabeled).errors
+        assertTrue(errors.joinToString("\n"), errors.any { it.contains("do not clear productive-clock-time") })
+        assertTrue(unresolved(relabeled, 17).contains("productive-clock-time"))
+    }
+
+    @Test
     fun reviewsMappingsAndReleaseStayUnsigned() {
         val pack = pack()
         assertTrue(pack.units.all { it.installState == "DEVELOPMENT" })
@@ -227,10 +270,10 @@ class Aud44CorrectionTest {
 
     private companion object {
         val PRIOR_CONTENT_DIGESTS = mapOf(
-            16 to "1b483e3b93f57c2f7b70be9e544698f6946cb9b2152f11cd02447355ad307efb",
-            18 to "405c2ea8e232528baf6d2b4a078c7df0f93c19383433fa9409f5b6244789041a",
-            19 to "f1d0f31a2e04e1eb880c09910bc1162e8f43707cdd8c028f2aea2dd32fc9a855",
-            20 to "b2f23ebd7c015fd2d8b5799bf1a620ca037ef9bdf86d5670e6346fedc4249213",
+            16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
+            18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
+            19 to "7daabf2fa0295a3f54d1b38603d57d1b888555c2ca2b5d04af25af5b09654d73",
+            20 to "7eca8b47f1286dc2b1718c03f4cefdfefe96f76979d9bf44616501e00faa71f3",
         )
     }
 }

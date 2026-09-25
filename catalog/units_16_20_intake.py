@@ -639,8 +639,7 @@ def _attribution_reference() -> dict:
             "Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. "
             "Those license routes are not interchangeable. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
-            "No audio is included. Learner-facing dictionary glosses are delimited sense selections. "
-            "Productive clock-time answers, calendar-date syntax, and probability use are not prepared. Review is pending."
+            "No audio is included. Learner-facing dictionary glosses are delimited sense selections."
         ),
         "introducedInUnit": 16,
         "sourceId": WIKIBOOKS_ID,
@@ -661,7 +660,9 @@ def _unit17_reference() -> dict:
             "The bounded clock phrases are frozen at Wikipedia oldid 1366690592. "
             "The calendar-date examples are frozen at Wikipedia oldid 1357134172. "
             "Those license routes are not interchangeable. "
-            "The three clock phrases are bounded recognition. Productive clock-time answers are not prepared. "
+            "The admitted calendar-date relationships remain admitted. "
+            "The three clock phrases are bounded recognition. "
+            "Productive clock-time generation remains unresolved. "
             "Review is pending."
         ),
         "introducedInUnit": 17,

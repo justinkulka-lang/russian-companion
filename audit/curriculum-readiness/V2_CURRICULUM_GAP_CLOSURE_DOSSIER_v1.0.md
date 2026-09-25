@@ -3,8 +3,8 @@
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
 **Canonical commit:** `287fd84ce286f151b90abbee4e714e42211eee10`  
-**Pack content-review digest:** `66bd19f24cc0c85f95c51cb46cdc48ae9f2795d54573004a0968ffa71fd8cae2`  
-**Repository source digest:** `b291216b1b276498c6012694b64bdad1df253475d2aba9a50e47a7adbfa01974`  
+**Pack content-review digest:** `7fd7bcfea9319f2b2de02e14d6d349b18b3b5850824a202e73f10e68546f6693`  
+**Repository source digest:** `22f3f7163e03770da91b1ae89e65737fc5815da801bcaa7832ee1611c490005e`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -116,7 +116,7 @@ Calendar dates remain the written and spoken examples in Wikipedia “Date and t
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-Units 16, 18, and 20 have no open Batch A research requests. Their content-review digests match the values from before the Unit 17 source notice and authored-id leakage. Authored-English ids for those units are bound to the unit and the exact text, so Unit 17 inserts do not renumber them. Unit 17 uses its own source notice. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING`.
+Units 16, 18, and 20 have no open Batch A research requests. Their shared license notice no longer states Unit 17 clock or date readiness or Unit 19 probability. That reachable reference change moves their content-review digests. Authored-English ids for those units stay bound to the unit and the exact text, so Unit 17 inserts do not renumber them. Unit 17 uses its own source notice, which keeps calendar-date admitted, the three clock phrases as bounded recognition, and productive clock-time unresolved. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING` for Units 16, 18, and 20.
 
 ### Unit 19 — Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 
