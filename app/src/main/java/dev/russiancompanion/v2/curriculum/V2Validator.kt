@@ -2299,7 +2299,7 @@ internal object V2Validator {
 
     /**
      * The self sentence is paired with its own translation.
-     * A wife-line window, or the isolated token себя́, does not validate that pair.
+     * A wife-line window, or the isolated reflexive token, does not validate that pair.
      */
     private fun reflexiveRelationshipErrors(item: V2CheckItem): List<String> {
         if (item.objectiveId != "obj-u21-object-reference") return emptyList()
