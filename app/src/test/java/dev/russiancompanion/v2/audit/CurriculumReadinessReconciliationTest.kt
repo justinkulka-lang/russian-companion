@@ -136,14 +136,14 @@ class CurriculumReadinessReconciliationTest {
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        (listOf(7, 17) + (23..30).toList()).forEach { number ->
+        (listOf(7, 17) + (24..30).toList()).forEach { number ->
             assertTrue(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
         assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
         assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
-        assertEquals(listOf(23), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
+        assertEquals(emptyList<Int>(), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
         assertTrue(model.releaseGateBlockers.contains("OWNER_RELEASE_DECISION_NOT_RETAINED"))
         assertTrue(model.releaseGateBlockers.contains("CANDIDATE_NOT_FROZEN"))
     }
