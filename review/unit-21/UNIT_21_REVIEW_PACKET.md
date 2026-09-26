@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 21 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 21 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 21 remains in development. Its readiness is content-complete and review-pending. The Lesson 21 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd1f6497b235208786d0f720d71a248a22f8d69e
-- Unit content-review SHA-256: bce0242a119e8b01a934733d7f8855d426eb151515bfb6be539e716f29035528
+- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
+- Unit content-review SHA-256: f7547d860881b57eb5287d86ac0b4995d873b0dfe7b1612db33189d56c0999da
 - Mapping-package SHA-256: b7e8887a95cac43580e879e588f7ecd3846a7b71fd1cd232d302df207d65defb
-- Pack content-review SHA-256: ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9
-- Review-package SHA-256: 383c181b1e617c0ba56da0eeac02228c9de2a14fe1120aed84acdaf8292b629b
-- Repository source SHA-256: 6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888
+- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
+- Review-package SHA-256: bbbc32fa5ac0d503994b3ab06e6d8524b77c5427d710c71c7b8283e3ed839af7
+- Repository source SHA-256: 9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=21
 title=Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses
-topicSummary=Proposed Unit 21 is in development and is not prepared. Admitted object-possession lines await qualified review. Reflexive object reference and purpose clauses have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 21, printed pages 259-270. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=21
 prerequisites=20
-estimatedMinutes=38
+estimatedMinutes=54
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 21.
 
 ### UNIT `unit-21`
 
-- Objectives: obj-u21-svoy, obj-u21-book, obj-u21-object-reference, obj-u21-purpose
-- Sessions: u21-s-orient, u21-s-svoy, u21-s-book, u21-s-gap-object-reference, u21-s-gap-purpose
+- Objectives: obj-u21-svoy, obj-u21-object-reference, obj-u21-purpose, obj-u21-book
+- Sessions: u21-s-orient, u21-s-svoy, u21-s-object-reference, u21-s-purpose, u21-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 58b24b206c320ec7fe48641a5189726f25cb023cfee5070b6a9b747a6d01d51e
+- Content hash: b267983ecf87127db807697d8f90410ef881bdca59e1901a6f52e1244a5fa9ff
 
 number=21
 title=Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses
-topicSummary=Proposed Unit 21 is in development and is not prepared. Admitted object-possession lines await qualified review. Reflexive object reference and purpose clauses have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 21, printed pages 259-270. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=21
 prerequisites=20
-estimatedMinutes=38
+estimatedMinutes=54
 
 ### ADVANCEMENT `unit-21-advancement`
 
@@ -124,6 +124,44 @@ practice=u21-st-guided-svoy-1
 checks=u21-i-svoy-1,u21-i-svoy-2
 remediation=u21-st-rem-svoy
 
+### OBJECTIVE `obj-u21-object-reference`
+
+- Objectives: obj-u21-object-reference
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ba58d4ca284744d523877e544d7b061c9683cd19d0e5ec4e932324c76e3a84e7
+
+title=Choose the English meaning of the shown sentence
+kind=RECOGNITION
+unitNumber=21
+instruction=u21-st-orient,u21-st-teach-object-reference-1,u21-st-teach-object-reference-2
+examples=ex-u21-object-reference-0,ex-u21-object-reference-1
+practice=u21-st-guided-object-reference-1
+checks=u21-i-object-reference-1,u21-i-object-reference-2
+remediation=u21-st-rem-object-reference
+
+### OBJECTIVE `obj-u21-purpose`
+
+- Objectives: obj-u21-purpose
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e608ce05b538b6a476ee9f7ba4e407eebdbd67ddf52ed23c6ba834c45556f668
+
+title=Choose the English meaning of the shown word
+kind=RECOGNITION
+unitNumber=21
+instruction=u21-st-orient,u21-st-teach-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3
+examples=ex-u21-purpose-0,ex-u21-purpose-1,ex-u21-purpose-2,ex-u21-purpose-3
+practice=u21-st-guided-purpose-1
+checks=u21-i-purpose-1,u21-i-purpose-2
+remediation=u21-st-rem-purpose
+
 ### OBJECTIVE `obj-u21-book`
 
 - Objectives: obj-u21-book
@@ -143,72 +181,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u21-object-reference`
-
-- Objectives: obj-u21-object-reference
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ad6658ae5537962ef30f34daee8b5506922416f70073f695fe8bd76e30ac2c2d
-
-title=Reflexive object reference stays in the copy you own
-kind=GUIDANCE
-unitNumber=21
-instruction=u21-st-gap-object-reference
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u21-purpose`
-
-- Objectives: obj-u21-purpose
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 003c451742e31fede7a8d63464f5b182d02ee70a90f85f16da3bcb2ed6fa7e5e
-
-title=Purpose clauses stay in the copy you own
-kind=GUIDANCE
-unitNumber=21
-instruction=u21-st-gap-purpose
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u21-s-orient`
 
-- Objectives: obj-u21-svoy, obj-u21-book
+- Objectives: obj-u21-svoy, obj-u21-object-reference, obj-u21-purpose, obj-u21-book
 - Sessions: u21-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1d2543d038b181bc536308a2e684ff90db5b09aa9c2b9379ea4eb166906f81a6
+- Content hash: 78b7eb144480f52fd535a670cb8431f7bde083442956043c02b9ff7713266514
 
-title=Admitted object-possession lines
+title=Admitted object and purpose lines
 estimatedMinutes=8
-objectives=obj-u21-svoy,obj-u21-book
+objectives=obj-u21-svoy,obj-u21-object-reference,obj-u21-purpose,obj-u21-book
 steps=u21-st-orient
 
 ### STEP `u21-st-orient`
 
-- Objectives: obj-u21-svoy, obj-u21-book
+- Objectives: obj-u21-svoy, obj-u21-object-reference, obj-u21-purpose, obj-u21-book
 - Sessions: u21-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3de3b11b122c6fbca24cf63e985b98f5a3e316d3739a4d29e7fc140b8ac0e9b2
+- Content hash: e2e344b5ea5c8c9326982cc44762b6a8189b7e76d6b1a72c6777b7c6de9d043c
 
 kind=ORIENT
-title=Admitted object-possession lines
-body=Proposed Unit 21 uses frozen lines where the reflexive possessive follows the object in possession. Reflexive object reference and purpose clauses stay in the copy you own. Qualified review is pending.
+title=Admitted object and purpose lines
+body=Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -387,6 +387,278 @@ bookDirection=
 companionDirection=
 remediationStepId=u21-st-rem-svoy
 
+### SESSION `u21-s-object-reference`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 56005b57c95fa1f23b1347672b8aa3c433893c3f8abee5a1a2496ff1391bdaed
+
+title=Choose the English meaning of the shown sentence
+estimatedMinutes=12
+objectives=obj-u21-object-reference
+steps=u21-st-teach-object-reference-1,u21-st-guided-object-reference-1,u21-st-teach-object-reference-2,u21-st-rem-object-reference,u21-st-check-object-reference
+
+### STEP `u21-st-teach-object-reference-1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f080562aa7cad360f0076abf386e9cec93392e93a7488bdb4a36e8eaa30abba8
+
+kind=TEACH
+title=Admitted lines
+body=Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u21-object-reference-0,ex-u21-object-reference-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-guided-object-reference-1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: db3c77039f10df81df0662f706437d4a1b0f7feebd7f0075d9e20c1262adfae2
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u21-g-object-reference-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u21-st-rem-object-reference
+
+### STEP `u21-st-teach-object-reference-2`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fd6178c9896ba48fba23cc5847d86d9aa6624f14bc08e82637253967f61e04ae
+
+kind=TEACH
+title=Admitted instruction
+body=жену́ = I love
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-rem-object-reference`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d0322a63db73e1c048bab88105674a6db30f706f2e2e3602ef779478ee4c9467
+
+kind=REMEDIATE
+title=Remediation
+body=жену́ = I love
+dominantAction=Continue
+references=
+items=
+examples=ex-u21-object-reference-0,ex-u21-object-reference-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-check-object-reference`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 964b3fbfded124ce0860325468ff56637771e8c965645cbf8ae8f2037b1b77d8
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u21-i-object-reference-1,u21-i-object-reference-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u21-st-rem-object-reference
+
+### SESSION `u21-s-purpose`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8bd6ec437396e5a5a2727ce099b1e64f870d38b4575e1932967defb377858b81
+
+title=Choose the English meaning of the shown word
+estimatedMinutes=12
+objectives=obj-u21-purpose
+steps=u21-st-teach-purpose-1,u21-st-guided-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3,u21-st-rem-purpose,u21-st-check-purpose
+
+### STEP `u21-st-teach-purpose-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4404e70e43e8469ab56d84df6675f31e2f7fb8b3bc9e15d55847189c7f6b4b0d
+
+kind=TEACH
+title=Admitted lines
+body=чтобы — so that. если — if. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u21-purpose-0,ex-u21-purpose-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-guided-purpose-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 656afee3a6965b7313f28719543bf038db4f4f94f9f69eddea74ea5ba91294de
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u21-g-purpose-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u21-st-rem-purpose
+
+### STEP `u21-st-teach-purpose-2`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 51fae9fbe8bd44965429efb05359cca865b6e77a40f27bbeaffda3eb6cec2e93
+
+kind=TEACH
+title=Admitted instruction
+body=(bookish, archaic) 'so that'
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-teach-purpose-3`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 024963e1bff226445d1a8deabab1928b60a4af2472870412ee5cdde8fa86e83a
+
+kind=TEACH
+title=Admitted lines
+body=потому что — because. хотя — although. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u21-purpose-2,ex-u21-purpose-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-rem-purpose`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 71fa2f388de7e59335e3c3f7fce6f6dea6ff15308d34e6b8688256064a21cdd6
+
+kind=REMEDIATE
+title=Remediation
+body=(bookish, archaic) 'so that'
+dominantAction=Continue
+references=
+items=
+examples=ex-u21-purpose-0,ex-u21-purpose-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-check-purpose`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4be88f70c5aaa46baff9d45d90508c461fa52f578fe3b92795fb6b6f7a11498d
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u21-i-purpose-1,u21-i-purpose-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u21-st-rem-purpose
+
 ### SESSION `u21-s-book`
 
 - Objectives: obj-u21-book
@@ -443,80 +715,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 21 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u21-s-gap-object-reference`
-
-- Objectives: obj-u21-object-reference
-- Sessions: u21-s-gap-object-reference
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f3574f3d78726fa0444b2ee62db6988be306cd41897523456965f7640b2de99
-
-title=Reflexive object reference stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u21-object-reference
-steps=u21-st-gap-object-reference
-
-### STEP `u21-st-gap-object-reference`
-
-- Objectives: obj-u21-object-reference
-- Sessions: u21-s-gap-object-reference
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6ed263df0242e3e95fc465f9ae0ef7080e680408ac7704f3e7c3927c3fb1779b
-
-kind=UNAVAILABLE
-title=Reflexive object reference stays in the copy you own
-body=Reflexive object reference stays in the copy you own. No admitted frozen span states that pattern.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=Reflexive object reference has no admitted frozen span.
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### SESSION `u21-s-gap-purpose`
-
-- Objectives: obj-u21-purpose
-- Sessions: u21-s-gap-purpose
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f2f77f52f4038b440bae45dfa609cce0057e3804464e6bfbf4bb87330bb29d41
-
-title=Purpose clauses stay in the copy you own
-estimatedMinutes=4
-objectives=obj-u21-purpose
-steps=u21-st-gap-purpose
-
-### STEP `u21-st-gap-purpose`
-
-- Objectives: obj-u21-purpose
-- Sessions: u21-s-gap-purpose
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 07cc15a22d3ac4b23610dcf78e481df4867997213862e83351606ae2acba50ad
-
-kind=UNAVAILABLE
-title=Purpose clauses stay in the copy you own
-body=Purpose clauses stay in the copy you own. No admitted frozen span states that pattern.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=Purpose clauses have no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -622,6 +820,108 @@ note=(Anna put on her own jeans.)
 objectiveId=obj-u21-svoy
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u21-object-reference-0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9646f129cf6e100ec6249a494cf5cbef1f1fdf972114133b07eca2e59b623aa8
+
+kind=LEXICAL
+letterId=
+display=Я люблю́ себя́
+note=I love myself
+objectiveId=obj-u21-object-reference
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u21-object-reference-1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 96f286b1d19766b126ad0e015d51dc6482dd449c4109b5fa7a81608c1f440408
+
+kind=LEXICAL
+letterId=
+display=Я люблю́ (свою́) жену́
+note=I love my wife
+objectiveId=obj-u21-object-reference
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u21-purpose-0`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0b9a95edf49059f0c66007adc0747713bb0f37db128aa2a44f8ba833bb9718ca
+
+kind=LEXICAL
+letterId=
+display=чтобы
+note=so that
+objectiveId=obj-u21-purpose
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u21-purpose-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5ca573ee3d66adec089b37819ad582b58117396520252e2262653b880b58e27e
+
+kind=LEXICAL
+letterId=
+display=если
+note=if
+objectiveId=obj-u21-purpose
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u21-purpose-2`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 290c62dfb220749531984decca303c8aa294a2db78c61bbfb6bdc639c4cae47e
+
+kind=LEXICAL
+letterId=
+display=потому что
+note=because
+objectiveId=obj-u21-purpose
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u21-purpose-3`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ad5a454408e47921679bdc09803a6d32daaac24e2a3723e656b4c47e1ccee209
+
+kind=LEXICAL
+letterId=
+display=хотя
+note=although
+objectiveId=obj-u21-purpose
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u21-g-svoy-0`
 
 - Objectives: obj-u21-svoy
@@ -656,6 +956,76 @@ contrastMembers=А́нна рассказа́ла о своём люби́мом
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u21-svoy-0-ru | prov-ex-u21-svoy-1-ru | prov-ex-u21-svoy-2-ru | prov-ex-u21-svoy-4-ru
 responseKind=RUSSIAN_PHRASE
+
+### GUIDED_PRACTICE `u21-g-object-reference-0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d217afa8eae5a711c20ed16ad6413be29c9b9cc0ecbf1244d22e56932e0c2bc6
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written after the equals sign on the shown line?
+promptLetter=Я люблю́ себя́
+options=I love myself | I love my wife
+answer=I love myself
+feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+objectiveId=obj-u21-object-reference
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+testedFeature=REFLEXIVE_MYSELF
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-object-reference-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u21-object-reference-0-en
+distractorSourceIds= | prov-ex-u21-object-reference-1-en
+distractorDifference= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+contrastMembers=I love myself | I love my wife
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-object-reference-0-ru | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u21-g-purpose-0`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4aa74640300ab0dd843635f7f79772b7aff802ceaf0c51ae2fafd337ce3d1a80
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English gloss is written for the shown conjunction?
+promptLetter=чтобы
+options=so that | if | because
+answer=so that
+feedback=The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)").
+objectiveId=obj-u21-purpose
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'"). | The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
+testedFeature=PURPOSE_SO_THAT
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-purpose-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u21-purpose-0-en
+distractorSourceIds= | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-2-en
+distractorDifference= | The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'"). | The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)").
+contrastMembers=so that | if | because
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-purpose-0-ru | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-2-en
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u21-i-svoy-1`
 
@@ -727,23 +1097,660 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u21-svoy-3-ru | prov-ex-u21-svoy-2-ru | prov-ex-u21-svoy-1-ru | prov-ex-u21-svoy-5-ru
 responseKind=RUSSIAN_PHRASE
 
+### INDEPENDENT_CHECK `u21-i-object-reference-1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 53e74b184a94e873a280eca5bcbb1c9240dad991f1e0c1995224824f5dcadd32
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Choose the English meaning of the shown sentence.
+promptLetter=Я люблю́ (свою́) жену́
+options=I love my wife | I love myself
+answer=I love my wife
+feedback=The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+objectiveId=obj-u21-object-reference
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+testedFeature=REFLEXIVE_WIFE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-object-reference-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u21-object-reference-1-en
+distractorSourceIds= | prov-ex-u21-object-reference-0-en
+distractorDifference= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+contrastMembers=I love my wife | I love myself
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-object-reference-1-ru | prov-ex-u21-object-reference-1-en | prov-ex-u21-object-reference-0-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u21-i-object-reference-2`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dbffb49845d91e7f0a9d16533a17e2f4569be75cbf8740cdd6367911c4b2050d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Choose the English meaning of the shown sentence.
+promptLetter=Я люблю́ себя́
+options=I love myself | I love my wife
+answer=I love myself
+feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+objectiveId=obj-u21-object-reference
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+testedFeature=REFLEXIVE_MYSELF_SENTENCE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-object-reference-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u21-object-reference-0-en
+distractorSourceIds= | prov-ex-u21-object-reference-1-en
+distractorDifference= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
+contrastMembers=I love myself | I love my wife
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-object-reference-0-ru | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u21-i-purpose-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f670b1389dcaf18ee5fe60ee06469777399d9e218da09248d9e81a2e67441172
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Choose the English meaning of the shown word.
+promptLetter=если
+options=if | so that | although
+answer=if
+feedback=The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'").
+objectiveId=obj-u21-purpose
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)"). | The frozen source pairs the shown form "хотя" with the admitted gloss "although" ("although").
+testedFeature=PURPOSE_IF
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-purpose-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u21-purpose-1-en
+distractorSourceIds= | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-3-en
+distractorDifference= | The frozen source pairs the shown form "чтобы" with the admitted gloss "so that" ("(bookish, archaic)"). | The frozen source pairs the shown form "хотя" with the admitted gloss "although" ("although").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "если" with the admitted gloss "if" ("meaning 'in case where'").
+contrastMembers=if | so that | although
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-purpose-1-ru | prov-ex-u21-purpose-1-en | prov-ex-u21-purpose-0-en | prov-ex-u21-purpose-3-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u21-i-purpose-2`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 16fdba77fd7b1466ebc9fd42d826de47bb566f97fbf179d0c39ae3d6eb0c2a73
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Choose the English meaning of the shown word.
+promptLetter=потому что
+options=because | since | after
+answer=because
+feedback=The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
+objectiveId=obj-u21-purpose
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "так как" with the admitted gloss "since" ("since"). | The frozen source pairs the shown form "после того, как" with the admitted gloss "after" ("after").
+testedFeature=PURPOSE_BECAUSE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u21-purpose-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u21-purpose-2-en
+distractorSourceIds= | prov-u21-purpose-x-0 | prov-u21-purpose-x-1
+distractorDifference= | The frozen source pairs the shown form "так как" with the admitted gloss "since" ("since"). | The frozen source pairs the shown form "после того, как" with the admitted gloss "after" ("after").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "потому что" with the admitted gloss "because" ("for the reason that").
+contrastMembers=because | since | after
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u21-purpose-2-ru | prov-ex-u21-purpose-2-en | prov-u21-purpose-x-0 | prov-u21-purpose-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u21-s-orient, u21-s-svoy, u21-s-book, u21-s-gap-object-reference, u21-s-gap-purpose
+- Sessions: u21-s-orient, u21-s-svoy, u21-s-object-reference, u21-s-purpose, u21-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 8555e56371c32221cb114731a68ddeb8e4bed61914ec70bf50f0e57812de7b68
+- Content hash: 96aa3c5b6f62a9e97aab88f4bbe8da4db2db1491c3a0948852e91df27fc44ee8
 
 title=Units 21–25 source notice
 summary=Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. Reflexive object reference, purpose clauses, general numeral declension, both-forms, one-and-a-half forms, collective quantity forms, duration, object-form choice under negation, negative stand-in forms, placement contrasts, nickname-formation rules, and modern address guidance are not prepared. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ex-u21-object-reference-0-en`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f85dd893afc0e3a939b1c67e816763c4b004ed2af691695194bf6d9ecf474ca3
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=I love myself
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=dddfadab5000cc67b344173cb55169b6f453a7017f6911771ae346571d7bba34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-0-ru`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6150b27bed3697e945c48c2abb0f1890d0a3e578156257b8660cd2cc5674e493
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=Я люблю́ себя́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=fdfed9fd1826f2a4543711b339858b2794ac9a36b16b07c6de1dccf7f508b145
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-1-en`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03664839495d1405aa5a3f98d21157caa6180e514860bf0bfcc1da75524657a1
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=I love my wife
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=111218d9cc4b10bb2e9077f8a5a146a20c60829dc5dda69ac557333a28b6d301
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-1-ru`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 69dc49b4dd1cc89146c691b440ab218f34b98446cc4ed76c928ae10e9159cac1
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=Я люблю́ (свою́) жену́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=6b171e8a14e8fc8f874b98e45bcd905d5ca51d8a2b678e0b4ed63e58c055868d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-1-ru-r0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 85cb9320103b540676a5384f1a2238f6c708fa9172ae3b50a051976fa1fa229b
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=Я люблю́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=33564afc91778e9e314d873164ba457ac9e7959f0e69f20a9764f2825ba319a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-1-ru-r1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 724a33def78bc5d67ac25fbc499983f441f777a05cb675984b0ad07edf59b4d4
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=свою́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=37da0d635cd3658af337d188cab8e8fdabfd920865b02ea119ec689a86615a97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-object-reference-1-ru-r2`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6990de52ffe2b0d40d3cf4dae80c337afb4421bffb4a250c16c405fc4e984b87
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=жену́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=8545e6e65f15b3fa4ed60260a3953fb3f3b0f25414e517b834d77929f268df79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-0-en`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: acb52f8a56f9cdf7ef6fe55ce4e8e6bcf317ca08f1051cf2841bfa64d2be33a5
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=so that
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-0-ru`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3ab9299167e8256e825670c4650653faa2b49e46b8c26693cc595c0e683214e5
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=чтобы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-1-en`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: eefa2a0cf76dd8676fc0e5189a4ba36a8eb8802a1f940a29299aafeca50de524
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=if
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=935f68319d4f227e02bfd54a0ddf85b8a242e42a4277aa5ef5eaab691710924e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-1-ru`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ac4f8e50cc8d3234e0ef811d803852487bbd3ca1504e1df65831326251f41576
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=если
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=53934f31f2c8d53db326106715266cd288ad74a7e77d5095138f4126ab57a6bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-2-en`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0db5a99ac27f857708b79b7088a8add490939b644769f5958336653c700fab42
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=because
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=a511aeeeb8a119931a67038a63b7974faee48712de1c79391ebe2c9b929678e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-2-ru`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e8f1c443151f2bf347b33df5590bbdcdfdf5c85702735aefae18dc0e58d72b18
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=потому что
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-3-en`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5a28730532fd47a984f9e1ad35df3503fe9f659735275d82d2c17e6825e9bd6
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=although
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=2e1d76579d44d7cfe5f3f61feef2a9a5b2f67c235ce04466ec70a548b10fd530
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u21-purpose-3-ru`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1af5d43b68bf577ac0d3610ebdb2f5bb7bd39893c847bfcb94af4e66d5981568
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=хотя
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=362977536f97c43f6d34e84a6c47021d5eb3944a9f8e608ebb2fafce8ac4687c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u21-svoy-0-en`
 
@@ -1309,6 +2316,550 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u21-object-reference-rem`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 67bf79ba1f3d03995ec5479f08634411781024bda91a09c9882ecd590d6a24d7
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=жену́ = I love
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=cdaaa912e8f8e2f14b39ecca3926a0025d320afb10c9e2497035e545194f7fe0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-reference-rem-r0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0f669ca5aa0b28db574dc0ae472c1996cefdaa3f5f649114d2b9becdf8e880a1
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=жену́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=8545e6e65f15b3fa4ed60260a3953fb3f3b0f25414e517b834d77929f268df79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-reference-x-0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2567c7c39908190dc427cc2f019c0f2181c137df5044008f63255040d4cd5054
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=жену́ = I love
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=cdaaa912e8f8e2f14b39ecca3926a0025d320afb10c9e2497035e545194f7fe0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-reference-x-0-r0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbd003b046c2cf4ee938043b5e09a0147eb9ee7ad13106cf877bf2d968f74ebf
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''с
+originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
+** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
+shippedText=жену́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
+contentHash=8545e6e65f15b3fa4ed60260a3953fb3f3b0f25414e517b834d77929f268df79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-rem`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f1ed0f56529abafde8f5299b8e186cbe3f5bcf8448fb70e896995c965147e1b5
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=(bookish, archaic) 'so that'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=e0cb140e73e96cd5a87c07d4ee58ea777d98d577926dd63e51490769f5a7365c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-0`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc7b31b746571904955887d8e75830f8694020aab6b26e9817cfc985676da2f7
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=since
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=6b5a3ded016ab78269898c6e38d09f71e71e9311d53569f668e76378de0a798a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 84dc914ca2806e65a4aa39a843555da48bef5d4a545d7f72f145748520f98884
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=after
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=f39592393ef0859cb196a52693d2cea00fb2df784b3c04ae54aa7cadb8e562f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-2`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 755aba3bec4e185a6c6effec54beabfa64d61a81616122d26c3aa7b8c970dfba
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=although
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=2e1d76579d44d7cfe5f3f61feef2a9a5b2f67c235ce04466ec70a548b10fd530
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-3`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c7c33258f84b42901a810cc889b1fd0a3a730d142b028faba97a3293cee9b10b
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=так как
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=48b6beebab8ea2c524cc44ca9b0e537e4c9df4f57d7217f9f7e7753dc2b1d970
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-4`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 171c7739285f3271b656f0687d228cb8b3e23f5ee54b63fbcb30b6759a8d4fae
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=после того, как
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=ec05419ac76b0ea9fffa5c14a527fa7db94c8a149d62ae9bf18cc8dec0d803e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-4-r0`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b496fe0e627b655a6c970dcd1cb7d3b0ac084afdb4e8a2e273670869c6c487e3
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=после того
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=2069452b101f7c78d851232889e3e8b77273488f9e86b44077926446f31df694
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-4-r1`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbea0d679b5939aa1357b980df0b73f79ba46ae16409ae9e2c4afd1e1a40e8e5
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=как
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=17eebe34f431c2184bd982f1d8fce168fd972dbf632f1c706fd755c24b44524c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-5`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 58cf57a4ee08b7a19ce98972b0429ae3462ee70b8677ddcba11c39901cd204d5
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=(bookish, archaic)
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=dfa712df68bf064d5eac3c12c7a0195382cafaaf917c1f5f3606548c22fef338
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-6`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: df2192f68fa766b189d759df10c58283084e99e3d6f231db9595c87fcae8d049
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=(bookish, archaic) 'so that'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=e0cb140e73e96cd5a87c07d4ee58ea777d98d577926dd63e51490769f5a7365c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-7`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 50b06f03a2925c8e1f77b2761a5971284c9dacbedd9f6a0a08edf067dab233a6
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=meaning 'in case where'
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=2c24a7d8409d59b4a0af55f0a392ef5cb3f71f8f53ff2fe8a861cdf82df0f0b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-purpose-x-8`
+
+- Objectives: obj-u21-purpose
+- Sessions: u21-s-orient, u21-s-purpose
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5d9139519dbe90583ec49495d0273e43788792e71346ce8afe1f9ebf1cf4549
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+
+originalSourceText=* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');
+* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'
+* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')
+* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'
+* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'
+* хотя {{IPA|[xɐˈtʲa]}} 'although'
+shippedText=for the reason that
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742
+contentHash=4c0b3475f218f9fc7f576a18b9362fb891c65b851f6d203516ab30545c8d7919
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u21-svoy-rem`
 
 - Objectives: obj-u21-svoy
@@ -1812,10 +3363,10 @@ text=Which admitted line keeps the same book object for the other speaker?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 994f348a601cedfdde0e2d0f0ec0f2f288091fce4babef4f89106a0974197adf
+- Content hash: fe1e41bf37db1e37a686d856257e20124f90c76effafc69665753a7b840b5dfb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted object-possession lines
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u21-022`
 
@@ -1825,10 +3376,10 @@ text=Admitted object-possession lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 688e3a774327771472439aa2b1ec47ee9d99ea13390c31ae2448597056a285ba
+- Content hash: d965b66329712dc14994e5718f48a04adf9303496afd426153f8928e979bfee3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 21 uses frozen lines where the reflexive possessive follows the object in possession. Reflexive object reference and purpose clauses stay in the copy you own. Qualified review is pending.
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u21-023`
 
@@ -1838,10 +3389,10 @@ text=Proposed Unit 21 uses frozen lines where the reflexive possessive follows t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6e1d1aca65ecb2da435596393979b2e7d594064c5b6475b593955435fc7fcabd
+- Content hash: b74e5a9d8d9921550590d0f1e077c6c70123ace085cef5a59107575387966143
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 21 in the copy you own. The app records do not replace that lesson.
+text=Which admitted English gloss is written after the equals sign on the shown line?
 
 ### AUTHORED_ENGLISH `en-u21-024`
 
@@ -1851,10 +3402,10 @@ text=Open Lesson 21 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35b8594b3b9a4e4e71a4240586d811dd35a5812c3c0e83ffe92f119f72e5d4ac
+- Content hash: d84e07fa688835d96020d21e7d251b510925461563ddeeb51f4d91e442fd789d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Choose the English meaning of the shown sentence.
 
 ### AUTHORED_ENGLISH `en-u21-025`
 
@@ -1864,10 +3415,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5a39d6a4a12a2664f07f205b9811fd466e204feb4f549fb6b1dae5fe32db481
+- Content hash: 40ac468b701706d73e9af8e0f6a8476e2995276ab15d6d7063779333b7778507
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Which admitted English gloss is written for the shown conjunction?
 
 ### AUTHORED_ENGLISH `en-u21-026`
 
@@ -1877,10 +3428,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cd980ee90e72e60645d9335cd708febb67428aeb971808527b68df0edb2e4a69
+- Content hash: 6f8cda02eae2cbf6adc0b013c97bc7c7d3310f2d19277fe96d0438eb4a01ae91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the English meaning of the shown word.
 
 ### AUTHORED_ENGLISH `en-u21-027`
 
@@ -1890,10 +3441,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa2118629fb89689c1e3b5cd2805112ed728f4f844715075de9874935f131e80
+- Content hash: c11c52a03628c4d5b62d731ea98cc7bcfa7c43d85ef543206350de79c276c94f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Admitted object and purpose lines
 
 ### AUTHORED_ENGLISH `en-u21-028`
 
@@ -1903,10 +3454,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5f0b198dc6318b18313c68aaae22c9149c3c4a6098c17968f0df98141a2061c5
+- Content hash: ffde071e9f8da10a95770cd5cbd720e076f61f9c39f516e34e5558229f0c830f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u21-029`
 
@@ -1916,10 +3467,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a926fa136cdf9fc8e10693bddc67f6a595bdc3d77c1988e1a57a8f79741d2be5
+- Content hash: 6a35d51b1a308645b4dbd3d1961d1efe960893607445a8363502392eff514e40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 21 in your copy
+text=Open Lesson 21 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u21-030`
 
@@ -1929,10 +3480,10 @@ text=Work Lesson 21 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4af7bf8e257e2cea345a86ed9e35c06e1c7a23ef3fdd79a511dd3eb86eaf29fb
+- Content hash: 12cc088585667ae5e69b6eae31f402e4301471f845b9a183fd9e8f24bec658ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u21-031`
 
@@ -1942,10 +3493,10 @@ text=Do Lesson 21 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2610f6dd4172522c22126cc9224fe89e8089d69725dec12b1ac99f6fad0da694
+- Content hash: 517008909878ea2ac09269c30f4b52d2e49a2a050a7c3260f1da5ed1fc3611fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 21 in your copy and complete its lesson work.
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u21-032`
 
@@ -1955,10 +3506,10 @@ text=Open Lesson 21 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb786b9e5747314b5e3d9031cc61fcd5b5539fdf1748d5e6e263eba8c8d5e2c1
+- Content hash: 862ae3f76e6e48b75feada6a9e9c58ea9cd6bfba265f83bf2632273488853e76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 21 book work
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u21-033`
 
@@ -1968,10 +3519,10 @@ text=Record Lesson 21 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8cdaf1ac4d14a3330859a80588a0d27b6074d85bac322e73a348e3347c329bcc
+- Content hash: 3bb91d42ea0f025d00f0ddabbe8642929f2f69b8bd1ab85d041d7ca56f1396c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u21-034`
 
@@ -1981,10 +3532,10 @@ text=When you have done Lesson 21 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60c3b1f1cf78ac31da30d335aaf512180d5d16dd478008636f295924fa2622f7
+- Content hash: 26d3d104470c960e8e652aab999086d06291ec3e06d19004329b78f70624f689
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 21 work in your copy.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u21-035`
 
@@ -1994,10 +3545,10 @@ text=Self-attest only after the Lesson 21 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c55350c1b311a623a37ff6313d3532935c9ec9579e1a0e2124dff304118163c9
+- Content hash: 587392b71a586a5a32d0b10a1aa2e76264ccd1f958911e15af126d8e927cd6ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Reflexive object reference stays in the copy you own
+text=Work Lesson 21 in your copy
 
 ### AUTHORED_ENGLISH `en-u21-036`
 
@@ -2007,10 +3558,10 @@ text=Reflexive object reference stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a906a5fc5555f8153d904a829864dcd38614d84e49f72037bbcc9b81a4633393
+- Content hash: 4a4a2475d06ac42523a87e8f1d070e3f40307b7ebd4d694992875036ff147130
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Reflexive object reference stays in the copy you own. No admitted frozen span states that pattern.
+text=Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u21-037`
 
@@ -2020,10 +3571,10 @@ text=Reflexive object reference stays in the copy you own. No admitted frozen sp
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07498c066fc23a22eef951f28d2e7d77dfb7d24b63636c085861fa907290d809
+- Content hash: 764f9c62064b42df4b84168253393414e6bbb03b4f2e4990c997d3ccf662ff66
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Purpose clauses stay in the copy you own
+text=Open Lesson 21 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u21-038`
 
@@ -2033,10 +3584,36 @@ text=Purpose clauses stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64d056c8241b68fd51242bad74bba7e58a4202f0ef16b2bba3af6c953b19a779
+- Content hash: b60b376adbb8d5e974c630cebc34f7d2beef010dde630c09fec39098f333ce6e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Purpose clauses stay in the copy you own. No admitted frozen span states that pattern.
+text=Record Lesson 21 book work
+
+### AUTHORED_ENGLISH `en-u21-039`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 90f0ad00fb48d80f87822f64e97640fd5a9d2bf3951397946e15bde4883d04b6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u21-040`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9e7d3ec9ae96e090fd98f4728ba3682343b961edbcdc92480d4a820968bc4527
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 21 work in your copy.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -2052,6 +3629,21 @@ Wikibooks Russian grammar
 CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d765cb98e0b48076ae7691ecefdbcd1064ad2ea28d337b2a25fff0229e30e384
+
+Russian grammar
+CC BY-SA 4.0
+Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
 
@@ -2079,6 +3671,20 @@ Original
 - Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
 
 src-wikibooks-russian-cc-by-sa
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
+
+src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -2113,11 +3719,32 @@ permitsAppUse=true
 - `obj-u21-svoy` CHECK `u21-i-svoy-1`
 - `obj-u21-svoy` CHECK `u21-i-svoy-2`
 - `obj-u21-svoy` REMEDIATION `u21-st-rem-svoy`
+- `obj-u21-object-reference` INSTRUCTION `u21-st-orient`
+- `obj-u21-object-reference` INSTRUCTION `u21-st-teach-object-reference-1`
+- `obj-u21-object-reference` INSTRUCTION `u21-st-teach-object-reference-2`
+- `obj-u21-object-reference` EXAMPLE `ex-u21-object-reference-0`
+- `obj-u21-object-reference` EXAMPLE `ex-u21-object-reference-1`
+- `obj-u21-object-reference` PRACTICE `u21-st-guided-object-reference-1`
+- `obj-u21-object-reference` CHECK `u21-i-object-reference-1`
+- `obj-u21-object-reference` CHECK `u21-i-object-reference-2`
+- `obj-u21-object-reference` REMEDIATION `u21-st-rem-object-reference`
+- `obj-u21-purpose` INSTRUCTION `u21-st-orient`
+- `obj-u21-purpose` INSTRUCTION `u21-st-teach-purpose-1`
+- `obj-u21-purpose` INSTRUCTION `u21-st-teach-purpose-2`
+- `obj-u21-purpose` INSTRUCTION `u21-st-teach-purpose-3`
+- `obj-u21-purpose` EXAMPLE `ex-u21-purpose-0`
+- `obj-u21-purpose` EXAMPLE `ex-u21-purpose-1`
+- `obj-u21-purpose` EXAMPLE `ex-u21-purpose-2`
+- `obj-u21-purpose` EXAMPLE `ex-u21-purpose-3`
+- `obj-u21-purpose` PRACTICE `u21-st-guided-purpose-1`
+- `obj-u21-purpose` CHECK `u21-i-purpose-1`
+- `obj-u21-purpose` CHECK `u21-i-purpose-2`
+- `obj-u21-purpose` REMEDIATION `u21-st-rem-purpose`
 - `obj-u21-book` INSTRUCTION `u21-st-book-work`
 - `obj-u21-book` INSTRUCTION `u21-st-book`
-- `obj-u21-object-reference` INSTRUCTION `u21-st-gap-object-reference`
-- `obj-u21-purpose` INSTRUCTION `u21-st-gap-purpose`
 - `u21-s-orient` OBJECTIVE `obj-u21-svoy`
+- `u21-s-orient` OBJECTIVE `obj-u21-object-reference`
+- `u21-s-orient` OBJECTIVE `obj-u21-purpose`
 - `u21-s-orient` OBJECTIVE `obj-u21-book`
 - `u21-st-orient` REFERENCE `ref-u2125-attribution`
 - `u21-s-svoy` OBJECTIVE `obj-u21-svoy`
@@ -2138,12 +3765,50 @@ permitsAppUse=true
 - `u21-st-check-svoy` REMEDIATION `u21-st-rem-svoy`
 - `u21-st-check-svoy` ITEM `u21-i-svoy-1`
 - `u21-st-check-svoy` ITEM `u21-i-svoy-2`
+- `u21-s-object-reference` OBJECTIVE `obj-u21-object-reference`
+- `u21-st-teach-object-reference-1` EXAMPLE `ex-u21-object-reference-0`
+- `u21-st-teach-object-reference-1` EXAMPLE `ex-u21-object-reference-1`
+- `u21-st-teach-object-reference-1` REFERENCE `ref-u2125-attribution`
+- `u21-st-guided-object-reference-1` REMEDIATION `u21-st-rem-object-reference`
+- `u21-st-guided-object-reference-1` ITEM `u21-g-object-reference-0`
+- `u21-st-teach-object-reference-2` REFERENCE `ref-u2125-attribution`
+- `u21-st-rem-object-reference` EXAMPLE `ex-u21-object-reference-0`
+- `u21-st-rem-object-reference` EXAMPLE `ex-u21-object-reference-1`
+- `u21-st-check-object-reference` REMEDIATION `u21-st-rem-object-reference`
+- `u21-st-check-object-reference` ITEM `u21-i-object-reference-1`
+- `u21-st-check-object-reference` ITEM `u21-i-object-reference-2`
+- `u21-s-purpose` OBJECTIVE `obj-u21-purpose`
+- `u21-st-teach-purpose-1` EXAMPLE `ex-u21-purpose-0`
+- `u21-st-teach-purpose-1` EXAMPLE `ex-u21-purpose-1`
+- `u21-st-teach-purpose-1` REFERENCE `ref-u2125-attribution`
+- `u21-st-guided-purpose-1` REMEDIATION `u21-st-rem-purpose`
+- `u21-st-guided-purpose-1` ITEM `u21-g-purpose-0`
+- `u21-st-teach-purpose-2` REFERENCE `ref-u2125-attribution`
+- `u21-st-teach-purpose-3` EXAMPLE `ex-u21-purpose-2`
+- `u21-st-teach-purpose-3` EXAMPLE `ex-u21-purpose-3`
+- `u21-st-teach-purpose-3` REFERENCE `ref-u2125-attribution`
+- `u21-st-rem-purpose` EXAMPLE `ex-u21-purpose-0`
+- `u21-st-rem-purpose` EXAMPLE `ex-u21-purpose-1`
+- `u21-st-check-purpose` REMEDIATION `u21-st-rem-purpose`
+- `u21-st-check-purpose` ITEM `u21-i-purpose-1`
+- `u21-st-check-purpose` ITEM `u21-i-purpose-2`
 - `u21-s-book` OBJECTIVE `obj-u21-book`
 - `u21-st-book-work` REFERENCE `ref-u2125-attribution`
-- `u21-s-gap-object-reference` OBJECTIVE `obj-u21-object-reference`
-- `u21-st-gap-object-reference` REFERENCE `ref-u2125-attribution`
-- `u21-s-gap-purpose` OBJECTIVE `obj-u21-purpose`
-- `u21-st-gap-purpose` REFERENCE `ref-u2125-attribution`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-0-en`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-0-ru`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-en`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-ru`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-ru-r0`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-ru-r1`
+- `obj-u21-object-reference` PROVENANCE `prov-ex-u21-object-reference-1-ru-r2`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-0-en`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-0-ru`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-1-en`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-1-ru`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-2-en`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-2-ru`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-3-en`
+- `obj-u21-purpose` PROVENANCE `prov-ex-u21-purpose-3-ru`
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-0-en`
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-0-ru`
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-1-en`
@@ -2156,6 +3821,22 @@ permitsAppUse=true
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-4-ru`
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-5-en`
 - `obj-u21-svoy` PROVENANCE `prov-ex-u21-svoy-5-ru`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-rem`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-rem-r0`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0-r0`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-rem`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-0`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-1`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-2`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-3`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-4`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-4-r0`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-4-r1`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-5`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-6`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-7`
+- `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-8`
 - `obj-u21-svoy` PROVENANCE `prov-u21-svoy-rem`
 - `obj-u21-svoy` PROVENANCE `prov-u21-svoy-rem-r0`
 - `obj-u21-svoy` PROVENANCE `prov-u21-svoy-rem-r1`
@@ -2170,8 +3851,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u21-st-gap-object-reference`
-- `u21-st-gap-purpose`
+None.
+
 
 ## Unresolved relationships
 

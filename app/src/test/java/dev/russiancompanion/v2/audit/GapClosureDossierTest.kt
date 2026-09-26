@@ -59,8 +59,8 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(7, 17) + (21..30).toList(), contentUnits)
-        assertEquals(12, contentUnits.size)
+        assertEquals(listOf(7, 17) + (23..30).toList(), contentUnits)
+        assertEquals(10, contentUnits.size)
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -120,6 +120,15 @@ class GapClosureDossierTest {
             "adverb-form-gloss",
             "clock-expression-recognition",
             "calendar-date",
+            "reflexive-object",
+            "purpose-clause",
+            "declined-numeral",
+            "both-forms",
+            "one-and-a-half",
+            "collective-numeral",
+            "negation-alternation",
+            "negative-pronoun",
+            "register",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
@@ -186,6 +195,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "1e469c124966401a54f9a3da0d52606c1afd6ea2"
+        const val BASELINE_COMMIT = "826b3aa089cd59ea04db5aab0573421d73985643"
     }
 }

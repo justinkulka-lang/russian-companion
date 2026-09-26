@@ -217,8 +217,12 @@ _assert_invariance_position()
 
 def governed_relation(cue: dict, answer: dict, distractors: list[dict]):
     """Return a governed kind, False when a governed span forbids the pair, or None."""
+    from batch_b_units_21_25 import batch_b_relation
     from units_6_10_lessons import _displayed_in_frozen
 
+    decided = batch_b_relation(cue, answer, distractors)
+    if decided is False or decided:
+        return decided
     group = [cue, answer, *distractors]
     if (cue.get("originalSourceText") or "") == INVARIANCE_SPAN:
         wording = dash_colon_wording(INVARIANCE_SPAN)

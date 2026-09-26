@@ -14,9 +14,9 @@ Unit 30 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 3
 - Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
 - Unit content-review SHA-256: d883e14a4d3be35ba752557466c8ade86465127a1470d9fece450eca35c5057d
 - Mapping-package SHA-256: e67db823a25bc0676dcd14af04c2af73c65ebff9bccde7afa3b68a57127ce367
-- Pack content-review SHA-256: ec79b64f5fee58a25bb21fcf708e07f9a72a151d31d84456f7eef37076bde2f9
+- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
 - Review-package SHA-256: 0c8a73fc7504b46e3d5c1822f1074f40c89ff69226de07829d7ef07f2baba351
-- Repository source SHA-256: 6571beec10469965d26a92403940e1a6f4382c2265440a8e984c1933d137e888
+- Repository source SHA-256: 9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

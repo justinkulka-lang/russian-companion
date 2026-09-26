@@ -771,6 +771,21 @@ internal object V2Validator {
         "obj-u20-motion",
     )
 
+    private val BATCH_B_OBJECTIVES = setOf(
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ago",
+        "obj-u23-during",
+        "obj-u23-step-out",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u25-address",
+    )
+
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
         7 to listOf(
             RequiredSourceCapability("obj-u7-adverb", "adverb-form-gloss"),
@@ -985,6 +1000,7 @@ internal object V2Validator {
         if (capability.supportedClaim == "probability-dolzhen" && !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_PROBABILITY_DOLZHEN, "probability-dolzhen")) {
             errors += "Source capability ${capability.id} has no independent probability-dolzhen admission"
         }
+        errors += batchBAdmissionErrors(capability)
         if (
             capability.sourceId.isBlank() ||
             capability.sourceRevision.isBlank() ||
@@ -1007,7 +1023,11 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} revision does not match the frozen record"
             return errors
         }
-        val spanHost = frozen.firstOrNull { capability.exactSpan == it.originalSourceText }
+        val spanHost = frozen.firstOrNull {
+            capability.exactSpan == it.originalSourceText &&
+                it.unitNumber == capability.unitNumber &&
+                it.objectiveId == capability.objectiveId
+        } ?: frozen.firstOrNull { capability.exactSpan == it.originalSourceText }
         if (spanHost == null) {
             errors += "Source capability ${capability.id} span is not in the frozen record"
             return errors
@@ -1036,6 +1056,7 @@ internal object V2Validator {
         if (capability.supportedClaim == "probability-dolzhen" && capability.exactSpan == BatchARemainingSources.OBLIGATION_EXAMPLE_SPAN) {
             errors += "Source capability ${capability.id} obligation evidence does not clear probability-dolzhen"
         }
+        errors += batchBOverreachErrors(capability)
         if (capability.unitNumber in 26..30) {
             if (STRUCTURAL_PAGE_RANGE.matches(capability.exactSpan.trim())) {
                 errors += "Source capability ${capability.id} structural page range is not linguistic evidence"
@@ -1669,11 +1690,105 @@ internal object V2Validator {
      * An empty string means that span forbids the proposed relationship.
      * Co-occurrence on the span is not a relationship.
      */
+    private fun batchBAdmissionErrors(capability: V2SourceCapability): List<String> {
+        val claim = capability.supportedClaim
+        val admitted = when (claim) {
+            "reflexive-object" -> BatchBSources.ADMITTED_REFLEXIVE_OBJECT
+            "purpose-clause" -> BatchBSources.ADMITTED_PURPOSE_CLAUSE
+            "declined-numeral" -> BatchBSources.ADMITTED_DECLINED_NUMERAL
+            "both-forms" -> BatchBSources.ADMITTED_BOTH_FORMS
+            "one-and-a-half" -> BatchBSources.ADMITTED_ONE_AND_A_HALF
+            "collective-numeral" -> BatchBSources.ADMITTED_COLLECTIVE_NUMERAL
+            "negation-alternation" -> BatchBSources.ADMITTED_NEGATION_ALTERNATION
+            "negative-pronoun" -> BatchBSources.ADMITTED_NEGATIVE_PRONOUN
+            "register" -> BatchBSources.ADMITTED_REGISTER
+            "elapsed-time-duration" -> BatchBSources.ADMITTED_ELAPSED_TIME
+            "negation-scope" -> BatchBSources.ADMITTED_NEGATION_SCOPE
+            "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
+            else -> return emptyList()
+        }
+        return if (BatchBSources.admits(capability, admitted, claim)) {
+            emptyList()
+        } else {
+            listOf("Source capability ${capability.id} has no independent $claim admission")
+        }
+    }
+
+    private fun batchBOverreachErrors(capability: V2SourceCapability): List<String> {
+        val span = capability.exactSpan
+        val folded = span.lowercase()
+        val errors = mutableListOf<String>()
+        if (capability.supportedClaim == "reflexive-object" && folded.contains("\u0441\u0432\u043e") && !folded.contains("\u0441\u0435\u0431\u044f")) {
+            errors += "Source capability ${capability.id} \u0441\u0432\u043e\u0439 evidence does not clear reflexive-object"
+        }
+        if (capability.supportedClaim == "purpose-clause" && folded.contains("\u0447\u0442\u043e\u0431\u044b") && !span.contains("so that")) {
+            errors += "Source capability ${capability.id} a sentence containing \u0447\u0442\u043e\u0431\u044b does not clear purpose-clause"
+        }
+        if (capability.supportedClaim == "one-and-a-half" && folded.contains("\u043f\u043e\u043b\u0442\u043e\u0440") && !span.contains("governs the")) {
+            errors += "Source capability ${capability.id} \u043f\u043e\u043b\u0442\u043e\u0440\u0430 without the usage note does not clear one-and-a-half"
+        }
+        if (capability.supportedClaim == "collective-numeral" && !span.contains("collective numbers") &&
+            (span.contains("cardinal") || folded.contains("\u0434\u0432\u0430"))
+        ) {
+            errors += "Source capability ${capability.id} a cardinal list does not clear collective-numeral"
+        }
+        if (capability.supportedClaim == "elapsed-time-duration" && span in BatchBSources.BOUNDED_TIME_SPANS) {
+            errors += "Source capability ${capability.id} bounded time expression does not clear elapsed-time-duration"
+        }
+        if (capability.supportedClaim == "negation-scope" &&
+            (folded.contains("\u043d\u0438\u043a\u043e\u043c\u0443") || span.contains("\u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435"))
+        ) {
+            errors += "Source capability ${capability.id} negative concord does not clear negation-scope"
+        }
+        if (capability.supportedClaim == "negation-scope" &&
+            (folded.contains("\u043a\u043d\u0438\u0433") || span.contains("I don't see"))
+        ) {
+            errors += "Source capability ${capability.id} the genitive and accusative compare does not clear negation-scope"
+        }
+        if (capability.supportedClaim == "productive-diminutive" &&
+            (folded.contains("\u0438\u0440\u043e\u0447\u043a\u0430") || span.contains("diminutive") || folded.contains("\u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u043e"))
+        ) {
+            errors += "Source capability ${capability.id} bounded diminutive recognition does not clear productive-diminutive"
+        }
+        return errors
+    }
+
+    /**
+     * Null means the records are not on a Batch B span.
+     * An empty string means that span forbids the proposed relationship.
+     */
+    private fun batchBRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        val table = BatchBSources.GOVERNED_GLOSSES[cue.originalSourceText] ?: return null
+        if (cue.originalSourceText == BatchBSources.REFLEXIVE_SPAN && cue.shippedText == BatchBSources.ISOLATED_REFLEXIVE) {
+            return ""
+        }
+        val group = listOf(cue, answer) + distractors
+        val allowed = table[cue.shippedText]
+        if (
+            allowed != null &&
+            answer.shippedText in allowed &&
+            cue.shippedText != answer.shippedText &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) } &&
+            distractors.all { it.shippedText != answer.shippedText }
+        ) {
+            return "EXPLICIT_SOURCE_PAIR"
+        }
+        return ""
+    }
+
     private fun governedRelation(
         cue: V2ProvenanceRecord,
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val batchB = batchBRelation(cue, answer, distractors)
+        if (batchB == "") return ""
+        if (batchB != null) return batchB
         val group = listOf(cue, answer) + distractors
         if (
             distractors.size == 1 &&
@@ -2066,6 +2181,28 @@ internal object V2Validator {
     private val LINE_LABEL_PROMPT = Regex(
         "(?i)which admitted (?:[a-z]+ ){0,4}(?:line|label) is the\\b",
     )
+    private val CONCEPT_CHECK_OBJECTIVES = setOf(
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+    )
+    /**
+     * Independent concept checks cannot be answered by retrieving a source position.
+     * Rewording "written after the equals sign" still names the layout, not the distinction.
+     */
+    private val SOURCE_LAYOUT_RECALL = Regex(
+        "(?i)(?:" +
+            "equals\\s+sign|" +
+            "frozen\\s+line|" +
+            "\\bwritten\\s+(?:after|for|on|in|beside|next\\s+to)\\b|" +
+            "\\bcolumn\\b|" +
+            "\\bbeside\\s+(?:the\\s+)?(?:shown\\s+)?tag\\b|" +
+            "\\bg\\s*=\\s*[fmn]\\b" +
+            ")",
+    )
     private val CIRCULAR_RATIONALE = Regex(
         "(?i)^does this (?:answer|row|line)\\b|^does the admitted record show the governed contrast\\??$",
     )
@@ -2078,6 +2215,14 @@ internal object V2Validator {
             errors += "Item ${item.id} prompt discloses its classification"
             errors += "Item ${item.id} tests line-label recall"
         }
+        if (assessment.independent &&
+            item.objectiveId in CONCEPT_CHECK_OBJECTIVES &&
+            SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt)
+        ) {
+            errors += "Item ${item.id} prompt discloses its classification"
+            errors += "Item ${item.id} tests line-label recall"
+        }
+        errors += reflexiveRelationshipErrors(item)
         val hosted = listOf(why) + item.distractorRationales + assessment.distractorDifference
         if (hosted.any { CIRCULAR_RATIONALE.containsMatchIn(it.trim()) } || why.trim().endsWith("?")) {
             errors += "Item ${item.id} circular feedback"
@@ -2102,7 +2247,7 @@ internal object V2Validator {
      * A swapped gloss, or a numbered "other gloss" rationale, fails here.
      */
     private fun keyedGlossErrors(item: V2CheckItem): List<String> {
-        if (item.objectiveId !in BATCH_A_OBJECTIVES) return emptyList()
+        if (item.objectiveId !in BATCH_A_OBJECTIVES && item.objectiveId !in BATCH_B_OBJECTIVES) return emptyList()
         val assessment = item.assessment ?: return listOf("Item ${item.id} explanation does not name the keyed answer")
         val why = assessment.whyAnswerDemonstratesObjective
         val errors = mutableListOf<String>()
@@ -2140,10 +2285,48 @@ internal object V2Validator {
     private fun citesFrozenEvidence(why: String, originals: List<String>): Boolean {
         if (why.length < 12) return false
         return originals.any { original ->
-            original.length >= 12 && original.windowed(12).any { window ->
-                window.any { it.isLetter() } && window in why
+            citationTexts(original).any { text ->
+                text.length >= 12 && text.windowed(12).any { window ->
+                    window.any { it.isLetter() } && window in why
+                }
             }
         }
+    }
+
+    /** Emphasis marks are mechanical wiki markup. The self line's equation is contiguous only after they are removed. */
+    private fun citationTexts(original: String): List<String> =
+        listOf(original, original.replace("'''", "").replace("''", ""))
+
+    /**
+     * The self sentence is paired with its own translation.
+     * A wife-line window, or the isolated reflexive token, does not validate that pair.
+     */
+    private fun reflexiveRelationshipErrors(item: V2CheckItem): List<String> {
+        if (item.objectiveId != "obj-u21-object-reference") return emptyList()
+        val shown = item.promptLetter.orEmpty()
+        val why = item.assessment?.whyAnswerDemonstratesObjective.orEmpty()
+        val feedback = item.feedback
+        val errors = mutableListOf<String>()
+        if (shown == BatchBSources.ISOLATED_REFLEXIVE) {
+            errors += "Item ${item.id} isolated reflexive token does not inherit the sentence translation"
+        }
+        if (shown == BatchBSources.SELF_SENTENCE) {
+            if (!why.contains(BatchBSources.SELF_LINE_CITE) || !feedback.contains(BatchBSources.SELF_LINE_CITE)) {
+                errors += "Item ${item.id} self relationship citation is not the self line"
+            }
+            if (why.contains(BatchBSources.WIFE_LINE_CITE) || feedback.contains(BatchBSources.WIFE_LINE_CITE)) {
+                errors += "Item ${item.id} wife-line citation does not validate the self relationship"
+            }
+        }
+        if (shown == BatchBSources.WIFE_SENTENCE) {
+            if (!why.contains(BatchBSources.WIFE_LINE_CITE) || !feedback.contains(BatchBSources.WIFE_LINE_CITE)) {
+                errors += "Item ${item.id} wife relationship citation is not the wife line"
+            }
+            if (why.contains(BatchBSources.SELF_LINE_CITE) || feedback.contains(BatchBSources.SELF_LINE_CITE)) {
+                errors += "Item ${item.id} self-line citation does not validate the wife relationship"
+            }
+        }
+        return errors
     }
 
     /**
@@ -2758,10 +2941,19 @@ internal object V2Validator {
                     errors += "Provenance ${record.itemId} Wikibooks license route is missing"
                 }
             }
+            if (record.sourceId == "src-wikipedia-russian-grammar-1369617627" && record.unitNumber !in 26..30) {
+                if (!record.attribution.contains("Wikipedia:Copyrights oldid 1369466282") ||
+                    !record.attribution.contains("CC BY-SA 4.0")
+                ) {
+                    errors += "Provenance ${record.itemId} Wikipedia license route is missing"
+                }
+            }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
-                if (record.sourceRevision != BatchARemainingSources.RU_REVISION ||
-                    !record.sourceUrl.contains("oldid=${BatchARemainingSources.RU_REVISION}") ||
+                val revisionAllowed = record.sourceRevision == BatchARemainingSources.RU_REVISION ||
+                    record.sourceRevision in BatchBSources.RU_REVISIONS
+                if (!revisionAllowed ||
+                    !record.sourceUrl.contains("oldid=${record.sourceRevision}") ||
                     !record.attribution.contains(copyright) ||
                     !record.attribution.contains("CC BY-SA 4.0") ||
                     record.attribution.contains("Wikipedia:Copyrights") ||
@@ -2989,10 +3181,14 @@ internal object V2Validator {
     }
 
     private fun admittedWiktionaryProvenance(record: V2ProvenanceRecord): Boolean {
-        if (record.sourceId != BatchARemainingSources.WIKTIONARY_SOURCE) return false
-        if (record.sourceRevision != BatchARemainingSources.WIKTIONARY_REVISION) return false
+        val revision = when (record.sourceId) {
+            BatchARemainingSources.WIKTIONARY_SOURCE -> BatchARemainingSources.WIKTIONARY_REVISION
+            BatchBSources.POLTORA_SOURCE -> BatchBSources.POLTORA_REVISION
+            else -> return false
+        }
+        if (record.sourceRevision != revision) return false
         val url = record.sourceUrl
-        if (!url.contains("en.wiktionary.org") || !url.contains("oldid=${BatchARemainingSources.WIKTIONARY_REVISION}")) return false
+        if (!url.contains("en.wiktionary.org") || !url.contains("oldid=$revision")) return false
         if (!record.attribution.contains("Wiktionary:Copyrights oldid ${BatchARemainingSources.WIKTIONARY_COPYRIGHT_OLDID}")) return false
         if (record.attribution.contains("Wikipedia:Copyrights") || record.attribution.contains("Wikibooks:Copyrights")) return false
         if (record.audioAssetId != null) return false
@@ -3003,13 +3199,13 @@ internal object V2Validator {
 
     private fun isExcludedSource(vararg parts: String): Boolean {
         return parts.any { part ->
-            if (part == BatchARemainingSources.WIKTIONARY_SOURCE) false
+            if (part == BatchARemainingSources.WIKTIONARY_SOURCE || part == BatchBSources.POLTORA_SOURCE) false
             else excludedSourceToken(part)
         }
     }
 
     private fun isExcludedProvenance(record: V2ProvenanceRecord): Boolean {
-        if (record.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE) {
+        if (record.sourceId == BatchARemainingSources.WIKTIONARY_SOURCE || record.sourceId == BatchBSources.POLTORA_SOURCE) {
             return !admittedWiktionaryProvenance(record)
         }
         val haystack = "${record.sourceId} ${record.sourceUrl} ${record.licenseId}"

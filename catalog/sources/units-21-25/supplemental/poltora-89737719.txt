@@ -1,0 +1,46 @@
+==Russian==
+
+===Etymology===
+{{inh+|ru|sla-pro|*роlъ vъtora|gloss=half of the second}}. {{surf|ru|пол<t:half>|второй<t:second>}}. Cognate to {{cog|pl|półtora}}, {{cog|uk|півтора́}}.
+
+===Pronunciation===
+* {{ru-IPA|полтора́}}
+* {{audio|ru|Ru-полтора.ogg}}
+
+===Numeral===
+{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
+
+# [[one and a half]] (1½), [[sesqui-]]
+#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
+#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
+#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
+#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
+#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
+#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
+#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
+
+====Usage notes====
+In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
+
+====Declension====
+{{ru-decl-adj|-|manual|nom_mp=полтора́|nom_fp=полторы́|gen_p=полу́тора|dat_p=полу́тора|ins_p=полу́тора|pre_p=полу́тора|special=cdva}}
+
+====Derived terms====
+* {{l|ru|полтора́шка|g=f}}
+* {{l|ru|полу́торка|g=f}}
+* {{l|ru|полу́торный}}
+''Compound words:''
+* {{l|ru|полтора́ста}}
+''Compounds:''
+* {{l|ru|ни два ни полтора́}}
+* {{l|ru|полтора́ землеко́па}}
+* {{l|ru|полтора́ инвали́да}}
+
+====Related terms====
+* {{l|ru|второ́й}}
+
+===References===
+* {{R:ru:Vasmer}}
+
+===Further reading===
+* {{R:ru:Dal|пола}}
