@@ -1,0 +1,6 @@
+{
+  "name": "russian-companion Android",
+  "user": "ubuntu",
+  "install": "bash .cursor/install.sh",
+  "start": "echo \"sdk.dir=${ANDROID_HOME:-$HOME/android-sdk}\" > local.properties"
+}
