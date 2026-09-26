@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
-**Canonical commit:** `826b3aa089cd59ea04db5aab0573421d73985643`  
-**Pack content-review digest:** `4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba`  
-**Repository source digest:** `9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3`  
+**Canonical commit:** `94b6647abd51848ec8208a52d08ce57c5ff4790a`  
+**Pack content-review digest:** `02fcae8d023970ce7abfaa6cbc94feaa358bbfa0fef2ac2f645fb5b454ce8a46`  
+**Repository source digest:** `e5a04c23be99fb1434f457ad7241d0e7835cf71b98f06f385e74ce188a2ded1f`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,12 +15,12 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **10 units** — Units 7 and 17, and Units 23–30.
-- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, and 23–25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved.
+- Content blockers: **9 units** — Units 7 and 17, and Units 24–30.
+- Units 16, 18, 19, 20, 21, 22, and 23: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, and 24–25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21, 22, and 23 are review-pending development curriculum and are not approved. Units 26–30 stay `NOT_PREPARED`.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
-- Missing review packets: **Unit 23 only**.
+- Missing review packets: **none**. Unit 23 now has an unsigned packet. Reviewer fields stay blank.
 - Unactivated authority variances: **Units 27, 29, and 30**.
 - Disclosed catalog orphans: **2 Unit 4 examples**.
 - Required local-experience blockers unrelated to sources/assets: **0**.
@@ -65,7 +65,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
-| 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | NO | Close the elapsed-time capability before generating a review packet |
+| 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
@@ -138,27 +138,15 @@ Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `
 
 ### Unit 23 — Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-Bounded ago, during, and step-out lines from English Wikipedia “Russian grammar” oldid 1369617627 are recognition only. They do not clear `elapsed-time-duration`, and the unit has no review packet.
-
-#### `elapsed-time-duration` — `obj-u23-duration`
-
-- **Required claim/skill:** Elapsed time, duration, ago, during, and completion over a period, split into independently supported contrasts.
-- **Why the current record is insufficient:** The admitted ago, during, and step-out lines are bounded expressions. They do not establish the elapsed-time and duration system.
-- **Required source:** Frozen licensed grammar instruction explicitly supporting each retained duration construction and the contrasts that will be assessed.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may sequence subtopics only after the Russian relationships are sourced.
-- **Book-directed disposition:** The broader capability remains book-directed and closed until sourced.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`elapsed-time-duration` is the frozen Diverse Russian Pressbooks chapter “Семейная история и иммиграция: Грамматика”, retained HTML sha256 `87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171`, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. Authors are Anna Tumarkin and Shannon Donnally Quinn. That route is not a Wikipedia, Wiktionary, or Wikibooks license. The admitted span is the sentence that emphasizes duration over which something occurs, with the two “в течение” examples. Decade ranges, beginning and middle expressions, during an event, and before/after/in/ago stay on their own recognition cards. They do not each clear `elapsed-time-duration`. English Wikipedia ago, during, and step-out lines from oldid 1369617627 remain frozen and do not clear the claim. A line that lacks “emphasizes the duration” does not clear it. Book self-attestation does not replace the app checks. The unsigned Unit 23 packet leaves reviewer identity, qualification, date, disposition, and signature blank. This intake does not approve the unit, sign review, or approve the owned-edition mapping. No open research claim remains for Unit 23.
 
 ### Unit 24 — Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-`negation-alternation` is the frozen book compare on English Wikipedia “Russian grammar” oldid 1369617627. `negative-pronoun` is the ни-/не- table on Russian Wikipedia oldid 141256493. Neither the book compare nor the negative-concord line clears `negation-scope`.
+`negation-alternation` is the frozen book compare on English Wikipedia “Russian grammar” oldid 1369617627. `negative-pronoun` is the formation statement and ни-/не- table on Russian Wikipedia oldid 141256493. Negative concord is recognition of that page's rule. Neither the book compare, nor concord, nor a sentence that merely contains не or ни, clears `negation-scope`.
 
 #### `negation-scope` — `obj-u24-placement`
 
@@ -273,6 +261,8 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 ### Unit 28 — Verbal adverbs
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+
+The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that imperfective adverbial participles are usually present, while perfective ones can only be past. That sentence supports the two bounded recognition claims. It does not state a productive paradigm, participle stress, punctuation, or bookish register. The reading experience stays unresolved.
 
 #### `verbal-adverb-reading` — `obj-u28-readings`
 
@@ -390,7 +380,7 @@ No admissions counter, unrelated catalog audio, filename-only record, or generat
 
 ## Missing review packets
 
-- **Unit 23:** No review package or mapping worksheet exists because the unit lacks a source-supported instructional body and advancement checks. Minimum state: Required source gaps resolved or explicitly governed as book-directed without falsely claiming app completeness; Instruction, examples, guided practice, independent checks, feedback, and remediation present for every app-taught objective; Deterministic unit content-review digest generated; Structural mapping worksheet generated with reviewer fields blank; Packet validator passes. **Do not create an empty packet merely to remove the missing-packet blocker.**
+No unit is missing a review packet. Unit 23 received an unsigned packet only after its elapsed-time instructional chain existed. Reviewer fields on every packet stay blank. **Do not create an empty packet merely to remove the missing-packet blocker.**
 
 ## Authority variances
 
@@ -429,9 +419,9 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
 3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
-4. **Curriculum research batch B:** Units 21–25.
-5. **Curriculum research batch C:** Units 26–30.
-6. Generate the Unit 23 packet only after its instructional chain exists.
+4. **Curriculum research batch B:** Units 21–25. Units 21–23 are review-pending. Units 24 and 25 stay `NOT_PREPARED`.
+5. **Curriculum research batch C:** Unit 23 elapsed time is review-pending on the Pressbooks duration span. Unit 24 negation-scope and Unit 25 productive diminutives stay open. Units 26–30 stay `NOT_PREPARED`. Unit 28 admits only the stated present-versus-past verbal-adverb relationship.
+6. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier.
 7. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 8. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.
 9. Run the final curriculum-wide independent audit, including the reserved Claude audit package.

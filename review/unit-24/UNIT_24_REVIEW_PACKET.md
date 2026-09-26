@@ -11,12 +11,12 @@ Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
-- Unit content-review SHA-256: d9fb79af7fb509d0863606d2f3cc0589870ea5b4c7643302584356ef504430a8
+- Curriculum source commit: 94b6647abd51848ec8208a52d08ce57c5ff4790a
+- Unit content-review SHA-256: 134112a1d435e1625c5da20dc3a9cfaba167618342d76249ce4fc637062417ba
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
-- Review-package SHA-256: 94c08cf10dab7001b2e14ea4aa23421df7b41f65bac87508a3485019c702a72e
-- Repository source SHA-256: 9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3
+- Pack content-review SHA-256: 02fcae8d023970ce7abfaa6cbc94feaa358bbfa0fef2ac2f645fb5b454ce8a46
+- Review-package SHA-256: 51a10c08e99778760d1cd0b3f3118d6fb65d0f58aee14fbdfcd6e286c93012b2
+- Repository source SHA-256: e5a04c23be99fb1434f457ad7241d0e7835cf71b98f06f385e74ce188a2ded1f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=70
+estimatedMinutes=82
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 24.
 
 ### UNIT `unit-24`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-book, obj-u24-placement
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-book, u24-s-gap-placement
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book, obj-u24-placement
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-book, u24-s-gap-placement
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4f12e49de06413854405d67905ca491f9a9a7d8208bc52f3fb40da066b0b26cf
+- Content hash: 2d81f4a3bfb79d07e46b4e35a41d0d7b588e6997c1c3df0df00751dd78b09558
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=70
+estimatedMinutes=82
 
 ### ADVANCEMENT `unit-24-advancement`
 
@@ -170,9 +170,9 @@ remediation=u24-st-rem-alternation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cb036d90b7e9e9f816696fc16991d8dcfc1203dedef2bef6b00cf21099090d6f
+- Content hash: 52b020cf13cab421e624b274549c758b76536554b567e0b044c7b5bc2c57891e
 
-title=Choose the admitted prefix form written for the shown word
+title=Choose the negative-pronoun form built from the shown word
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3
@@ -180,6 +180,25 @@ examples=ex-u24-stand-ins-0,ex-u24-stand-ins-1,ex-u24-stand-ins-2
 practice=u24-st-guided-stand-ins-1
 checks=u24-i-stand-ins-1,u24-i-stand-ins-2
 remediation=u24-st-rem-stand-ins
+
+### OBJECTIVE `obj-u24-concord`
+
+- Objectives: obj-u24-concord
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7e1dbdab7d912f5e2c73d295c89a1ea2b19743791300615271de00f16a3c171b
+
+title=Choose the predicate particle required by negative concord
+kind=RECOGNITION
+unitNumber=24
+instruction=u24-st-orient,u24-st-teach-concord-1,u24-st-teach-concord-2
+examples=ex-u24-concord-0,ex-u24-concord-1
+practice=u24-st-guided-concord-1
+checks=u24-i-concord-1,u24-i-concord-2
+remediation=u24-st-rem-concord
 
 ### OBJECTIVE `obj-u24-book`
 
@@ -221,32 +240,32 @@ remediation=
 
 ### SESSION `u24-s-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 26753e026f97250283e375654bd489fd8bc19beb7633753a9a5e728636dff1e0
+- Content hash: 612b31dfebb7e7889067c2f66d84c542cfd500f1be0e98f249e868ff9e97e365
 
 title=Admitted negation lines
 estimatedMinutes=8
-objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-book
+objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-concord,obj-u24-book
 steps=u24-st-orient
 
 ### STEP `u24-st-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f52f6aad3b675e66c3d1746a5f5aa14a07b8ca7ad6c85ebec9fe8b78c08a2188
+- Content hash: 06c333c980b50d18a82a7605da38fcbfe9e6f0a6af8868ba737821f2c133c163
 
 kind=ORIENT
 title=Admitted negation lines
-body=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -705,9 +724,9 @@ remediationStepId=u24-st-rem-alternation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d087456b2d8e428636127a5844f37101959cb31f5d5136f8ba91e6ea4893493
+- Content hash: bbd3f33778809c74b0b345d088f5da487f0b807953f0e9bd5aec03aa17d171fa
 
-title=Choose the admitted prefix form written for the shown word
+title=Choose the negative-pronoun form built from the shown word
 estimatedMinutes=12
 objectives=obj-u24-stand-ins
 steps=u24-st-teach-stand-ins-1,u24-st-guided-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3,u24-st-rem-stand-ins,u24-st-check-stand-ins
@@ -764,12 +783,11 @@ remediationStepId=u24-st-rem-stand-ins
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c66e534446b0e1f17f0d4373e307c5818a510ee279a8ce4be5fa062c1062f84f
+- Content hash: cca06d5b61f1decab8a6d408bb2066b58a94af487e0420829f779a4846befa06
 
 kind=TEACH
 title=Admitted instruction
-body=|кто
-|никто́
+body=называются предикативными
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -809,12 +827,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d72338367a4ea244527801d73a0d578f852db003482c41c2573d2fb91a18a9e3
+- Content hash: 6d44a9ee6201f3b487d50479e6d08ba1a6224d4ba8e5a316a5b5ca1bbe2c237c
 
 kind=REMEDIATE
 title=Remediation
-body=|кто
-|никто́
+body=называются предикативными
 dominantAction=Continue
 references=
 items=
@@ -845,6 +862,131 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-stand-ins
+
+### SESSION `u24-s-concord`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 50c5efd2bad101d7ca4ad70a2668fd5b5af82645207bf5ce0e7ab5d3022b06cd
+
+title=Choose the predicate particle required by negative concord
+estimatedMinutes=12
+objectives=obj-u24-concord
+steps=u24-st-teach-concord-1,u24-st-guided-concord-1,u24-st-teach-concord-2,u24-st-rem-concord,u24-st-check-concord
+
+### STEP `u24-st-teach-concord-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1040ef26591b95e6facf1ea5f3f67f7125b74de2fdf9bebaccd08b990f7f65d7
+
+kind=TEACH
+title=Admitted lines
+body=никто́ — не. ничто́ — не. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u24-concord-0,ex-u24-concord-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-guided-concord-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: de0bdd825c839d02f1bd8bdbe104b2a48da54f7cc287658c0f50b2869617ee3d
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u24-g-concord-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-concord
+
+### STEP `u24-st-teach-concord-2`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d1a5f23b05c778ae4f4489bf5823329110fdac99a16a07f07cb4485bbd9925d4
+
+kind=TEACH
+title=Admitted instruction
+body=отрицательной частицы не
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-rem-concord`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fb190595ee5cea620a67f551ed923a0c927fe162aaf25016a8c4edcbbe95c559
+
+kind=REMEDIATE
+title=Remediation
+body=отрицательной частицы не
+dominantAction=Continue
+references=
+items=
+examples=ex-u24-concord-0,ex-u24-concord-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-check-concord`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 003ff65b5516925ffc291f862f6df80401dfb05e115c5cca15ba3581ebd28fcd
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u24-i-concord-1,u24-i-concord-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-concord
 
 ### SESSION `u24-s-book`
 
@@ -928,11 +1070,11 @@ steps=u24-st-gap-placement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5740d8f235f7472b9add842e305ba11316b5154ee7530be9a318b0f4ed9e645b
+- Content hash: 4eee50fc7c9c3c7c1d1b82f27472eef6a7053fc712fdd47b6ac70615044ecadf
 
 kind=UNAVAILABLE
 title=Placement contrasts stay in the copy you own
-body=Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.
+body=Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1163,6 +1305,40 @@ note=не́кто
 objectiveId=obj-u24-stand-ins
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u24-concord-0`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bec040ea1eaafced5da6dc8cef272e99498c10883b6dd0d452b70e890f5b8006
+
+kind=LEXICAL
+letterId=
+display=никто́
+note=не
+objectiveId=obj-u24-concord
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u24-concord-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 212b868992c4495e97f082186de7c7be65eb2f45588f53394d3ba01e75c31223
+
+kind=LEXICAL
+letterId=
+display=ничто́
+note=не
+objectiveId=obj-u24-concord
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u24-g-verbal-ne-0`
 
 - Objectives: obj-u24-verbal-ne
@@ -1241,11 +1417,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8118887da1396365d9cfb0ececf12cbd38fd96cca42bed4598bb074f0b035c7a
+- Content hash: aed02d95c7839d9d5819bb9171761b9c4698befbd96d66da239b2c9a3adeef4c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown negated line?
+prompt=Which English meaning matches the shown negated sentence?
 promptLetter=Я не ви́жу кни́ги
 options=I don't see any books | I don't see the book
 answer=I don't see any books
@@ -1276,35 +1452,66 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ed097fe009d221e77757fb1daef1972e2c61f2ecb4854d594bff39579501d18
+- Content hash: 8e8eaa20d17fe9f349488b6cbd993ae4ed7a831793891d1e365fb3ffb35c9f26
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is on the frozen line directly after the shown word?
+prompt=Which negative-pronoun form built from the shown word is not called predicative?
 promptLetter=кто
-options=никто́ | ничто́ | не́что
+options=никто́ | ничто́ | не́кто
 answer=никто́
-feedback=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("|кто
-|никто́").
+feedback=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́"). | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что").
+distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 testedFeature=PRONOUN_NIKTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-stand-ins-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-stand-ins-0-en
-distractorSourceIds= | prov-ex-u24-stand-ins-1-en | prov-u24-stand-ins-x-1
-distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́"). | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("|кто
-|никто́").
-contrastMembers=никто́ | ничто́ | не́что
+distractorSourceIds= | prov-ex-u24-stand-ins-1-en | prov-ex-u24-stand-ins-2-en
+distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+contrastMembers=никто́ | ничто́ | не́кто
 relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u24-stand-ins-0-ru | prov-ex-u24-stand-ins-0-en | prov-ex-u24-stand-ins-1-en | prov-u24-stand-ins-x-1
+relationParticipantIds=prov-ex-u24-stand-ins-0-ru | prov-ex-u24-stand-ins-0-en | prov-ex-u24-stand-ins-1-en | prov-ex-u24-stand-ins-2-en
+responseKind=RUSSIAN_TOKEN
+
+### GUIDED_PRACTICE `u24-g-concord-0`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: abfd9327291db26882aecff956f9dd95020c025067add030509d2d01e150d484
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which particle does the stated concord rule require in the predicate?
+promptLetter=никто́
+options=не | ни- | никому
+answer=не
+feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+objectiveId=obj-u24-concord
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+testedFeature=CONCORD_PARTICLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-concord-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u24-concord-0-en
+distractorSourceIds= | prov-u24-concord-x-0 | prov-u24-concord-x-1
+distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+contrastMembers=не | ни- | никому
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
 responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u24-i-verbal-ne-1`
@@ -1455,11 +1662,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c80000f400431589bffd8d8607d957af27563adf24ff7bfdce0b33df28fa253e
+- Content hash: 781bf9f12d91edbef7912682be4f84aa5b4143542cc4c4d29f7f727567ce7e7b
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown negated line?
+prompt=Which English meaning matches the shown negated sentence?
 promptLetter=Я не ви́жу кни́гу
 options=I don't see the book | I don't see any books
 answer=I don't see the book
@@ -1490,11 +1697,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 35481e6c5223cb120404d4c17fa256651a9fe66dcca64781556b543ebe871499
+- Content hash: 5ec204054a00ff373877fd6146987158662e4788e90abac7e550a7a50f3d493f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown negated line?
+prompt=Which English meaning matches the shown negated sentence?
 promptLetter=Я не ви́жу кни́ги
 options=I don't see any books | I don't see the book
 answer=I don't see any books
@@ -1525,21 +1732,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cfbbd908003ed34e64a2a1f2084de576214bb0d47bb06c68f17950422e2a164f
+- Content hash: bd1ae1685e0c6ada8defad63c4f0dce43880f2734c18f25e399489e9cadf6326
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is on the frozen line directly after the shown word?
+prompt=Which negative-pronoun form built from the shown word is not called predicative?
 promptLetter=что
 options=ничто́ | не́что | никто́
 answer=ничто́
-feedback=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́").
+feedback=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("|кто
-|никто́").
+distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 testedFeature=PRONOUN_NICHTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-stand-ins-1
@@ -1547,10 +1752,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-stand-ins-1-en
 distractorSourceIds= | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-0-en
-distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("|кто
-|никто́").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́").
+distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
 contrastMembers=ничто́ | не́что | никто́
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-stand-ins-1-ru | prov-ex-u24-stand-ins-1-en | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-0-en
@@ -1564,52 +1767,116 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76224972923aae4e047110047f3af07dec832e69e3de515b4c6ebfba067cf61b
+- Content hash: b6f1ed770ff215d4fe3e63298d90e15fbeac439c57dbc4ca1a86531f22d75450
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is in the second prefix column for the shown word?
+prompt=Which predicative negative-pronoun form is built from the shown word?
 promptLetter=кто
-options=не́кто | не́что | ничто́
+options=не́кто | никто́ | не́что
 answer=не́кто
-feedback=The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("|кто
-|никто́
-|не́кто").
+feedback=The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что"). | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́").
+distractorRationales= | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными").
 testedFeature=PRONOUN_NEKTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-stand-ins-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-stand-ins-2-en
-distractorSourceIds= | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-1-en
-distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("|не́что"). | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("|что
-|ничто́").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("|кто
-|никто́
-|не́кто").
-contrastMembers=не́кто | не́что | ничто́
+distractorSourceIds= | prov-ex-u24-stand-ins-0-en | prov-u24-stand-ins-x-1
+distractorDifference= | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+contrastMembers=не́кто | никто́ | не́что
 relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u24-stand-ins-0-ru | prov-ex-u24-stand-ins-2-en | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-1-en
+relationParticipantIds=prov-ex-u24-stand-ins-0-ru | prov-ex-u24-stand-ins-2-en | prov-ex-u24-stand-ins-0-en | prov-u24-stand-ins-x-1
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u24-i-concord-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 37654d7c8abeb7957aec4032a7300bf89623bf8196475db25cf0010006157766
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which particle does the stated concord rule require in the predicate?
+promptLetter=ничто́
+options=не | ни- | никому
+answer=не
+feedback=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+objectiveId=obj-u24-concord
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+testedFeature=CONCORD_NICHTO
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-concord-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-concord-0-en
+distractorSourceIds= | prov-u24-concord-x-0 | prov-u24-concord-x-1
+distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+contrastMembers=не | ни- | никому
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-concord-1-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u24-i-concord-2`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: de4835839ab57693f8ba14182046fd84132f8b9429fccc783ccddf4737619c87
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which predicate particle does negative concord require?
+promptLetter=никто́
+options=не | никому | ни-
+answer=не
+feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+objectiveId=obj-u24-concord
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+testedFeature=CONCORD_AGAIN
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-concord-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-concord-0-en
+distractorSourceIds= | prov-u24-concord-x-1 | prov-u24-concord-x-0
+distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+contrastMembers=не | никому | ни-
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-1 | prov-u24-concord-x-0
 responseKind=RUSSIAN_TOKEN
 
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-book, u24-s-gap-placement
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-book, u24-s-gap-placement
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 3274b0a0eb6ea0dfe846aae3ea131305311e6c7fae965b65ffa784e75b0bb430
+- Content hash: b178a6d19aa9f71d338be555a98e804ea6ee82313bcdb2a25ee395e45cf7cf4f
 
 title=Units 21–25 source notice
-summary=Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Placement contrasts and a general nickname-formation rule are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -1953,6 +2220,134 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u24-concord-0-en`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2a05274f0504548de8a562edb91e4dfc822cc672576746c9c08d470fa93b71af
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=не
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-concord-0-ru`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 720de757203cf22b3fe901540a2755bcd8706434136c222f8ca4fdf6e3aa81ce
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=никто́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-concord-1-en`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a85f00111c42bb001c841ba54044aaa61e197b2d67c247ea2cd0226f91f04afa
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=не
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-concord-1-ru`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cc665a2ba6baddb1fba9aed327ee97f64fcebadd640848faefbce2594b5db6d5
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=ничто́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u24-stand-ins-0-en`
 
 - Objectives: obj-u24-stand-ins
@@ -1961,26 +2356,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 89a858afb3b6d1974e7e64c47e2f867e9a4eb342359425dc27a2840b99158d0c
+- Content hash: 559cc571b3920d7a79df5a056bdc2a78667d4b5dc9897d3faec59272b468d2ab
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2024,7 +2417,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f
 audioAssetId=
 reviewerIdentity=
@@ -2040,26 +2433,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 399826a5b1865c294839686835f27ff3a0eb5623294c355f5d440f76e04cecf9
+- Content hash: a4f75e27f25cd38b20170e97d9fae68f243759880d3f86b5cc4f92f6b1e95a81
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2103,7 +2494,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9
 audioAssetId=
 reviewerIdentity=
@@ -2119,26 +2510,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0453b810c078ba052d0eacb830bb88268a6f6c9b8d2ef04995f35b0c5454fbe1
+- Content hash: ad4b50a39fc21f337a598193707ca0201bd58c1cb254258d87ee7a08e2a0eab3
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2182,7 +2571,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894
 audioAssetId=
 reviewerIdentity=
@@ -2198,26 +2587,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8519daef1ae94275bd8839d23c61bb29f006cda8c4f9966c43f0e1493e798db2
+- Content hash: fea269d05c79d396d6779f058b6b5b2d73488d0ef6cb5d07d25ed29424372a64
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2261,7 +2648,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=ff6ba2e6b01f8d4589516ded0257db60aab29e3336214548289244ca8f7a539a
 audioAssetId=
 reviewerIdentity=
@@ -2277,26 +2664,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8442d9b6e026605c142c239c6561ddeb452cb915b2fd58c111aa0fe6660eb5e1
+- Content hash: ab462e822c226200c3d2444d6f328e1e1d4f8beb35afa7078b85821ebacbb94d
 
 recordType=meaning
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2340,7 +2725,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=90382e828bb131a79e201fbc02b5818d0d8c9343c8d296aed04dfdbf37b9f7e0
 audioAssetId=
 reviewerIdentity=
@@ -2356,26 +2741,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a45ae5160031ab9791118eed89c00890e08e0f864fb43de3bf5bf7e4fd47631
+- Content hash: e381716dabb0dadb072f727bd470e8e097908f998f0b43cf7bfd29437d49547c
 
 recordType=example
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -2419,7 +2802,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9
 audioAssetId=
 reviewerIdentity=
@@ -3098,6 +3481,230 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u24-concord-rem`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f48a41d39a62621c80ff556e060330e49a336e3652d797f368bd79d65352629
+
+recordType=instruction
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=отрицательной частицы не
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=1c095431533ded6cce87aadfe786913c2119b5e3eab88164383ba8f1b3dbdcb7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-0`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b32ee21a211b045724c3506f319d5da9ff243557e9f5ca51ce4d85bd041b050b
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=ни-
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=7ab68979ffb2452c909d8c990d6badc1c17630d0adc8e550f5775d1f48c5ad77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-0-r0`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6bb7e77da9ca043534666e82e808ea5bfd5d480429c50d710df70c673ab60cc2
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=ни
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=3addecf4647fd6f4a9d8af8c8e774832aa2f06c2ac4cb627df2a76a01e79a95c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3fb668dd617546b150169edb8826ba01f1d37d35359b2fd4bc134e7c136edba5
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=никому
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=d773164367fa2022fb954dedf3e1737b5d6c2282a4637a5bfc1d17dd90e59423
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-2`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 82642a5ef5217e073014c7694e2a1aa9108ce65c0c04c25a45d8137da11cbdb1
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=ничто́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-3`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0e4cff4c8dedf1c233e0c686d62fa9186c01d9d80c17c258ca92f669244bc1df
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=отрицательной частицы не
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=1c095431533ded6cce87aadfe786913c2119b5e3eab88164383ba8f1b3dbdcb7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-concord-x-4`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-ruwiki-otritsatelnye-141256493
+- Rights: rights-ruwiki-otritsatelnye-141256493
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f8a7dc976682dde9dbdaa23cb79737c6bec0274f6de212f79e6d8b3010ced6e
+
+recordType=label
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
+sourceRevision=141256493
+sourceRecordId=otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н
+originalSourceText=Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена
+прилагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>
+
+* Никто никому '''''ничего не''''' сказал.
+shippedText=Основным правилом
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
+contentHash=7cac5e83444665019c4255c31643ca519c6e3b13a69a96cf8736a9a404317d9e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u24-stand-ins-rem`
 
 - Objectives: obj-u24-stand-ins
@@ -3106,106 +3713,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b77c3be4a0fc1f1507feed123174e25d63c2461b66916783a1204bcf171d7034
+- Content hash: c6d9ad6ddb7d57bb898739cb2860285d1ca18d0a9facc1c38442cf6958d6fd49
 
 recordType=instruction
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=|кто
-|никто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=0420296db3ebcf95a9c45393ec1665d243a649593d77dacdf97793eb65cb1bb1
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
 
-### PROVENANCE `prov-u24-stand-ins-rem-r0`
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
 
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 81091ea221b6625b87bd8a55c8ad6c7e8d4102ea9d07d7a8226c7b58b82cc128
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -3243,93 +3768,14 @@ originalSourceText=!ни-
 |чего
 |ничего́
 |не́чего
-shippedText=кто
+shippedText=называются предикативными
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-rem-r1`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e448af8ac1b47e36f4553300b27e60dd4ced8dec844f5ef0771706c1200db4ac
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=никто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
+contentHash=1b963c84c2ada87d6427d39e1c728b3aa59373fa74dcaa2ee8f57c81e03b4c80
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3344,26 +3790,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bda58f30b56bd491ecc3f5c69cd55ea6b3bf50a0e039d7b4335815111ad4452d
+- Content hash: 54fe10697c49014dfae3657a54d4b4fdad3e8f5b4e0881f17c6344870335213e
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -3407,7 +3851,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=90382e828bb131a79e201fbc02b5818d0d8c9343c8d296aed04dfdbf37b9f7e0
 audioAssetId=
 reviewerIdentity=
@@ -3423,26 +3867,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f989ebd7d165807c77942eaf20608833ebdc53bf966ae2ccde672c6944dabefc
+- Content hash: 18cfd92384f280aec0e810f86925dc71c5e2bae4a73877e38c80e751591e998b
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
+
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
+
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -3486,7 +3928,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
 contentHash=82c8ec7c169f6ccac651a47a0d98819ca87c93a61d9594819ec6ba5c61375c42
 audioAssetId=
 reviewerIdentity=
@@ -3502,106 +3944,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa870530015fafc626499d9f0b90ee4d5594df787eefc7b46c4cfd25e7601336
+- Content hash: 3e273aa5f51c26d9a3bebd969149ed347b75eddfa2b2108bbdaf6973d5de9a83
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=|кто
-|никто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=0420296db3ebcf95a9c45393ec1665d243a649593d77dacdf97793eb65cb1bb1
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
 
-### PROVENANCE `prov-u24-stand-ins-x-2-r0`
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
 
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb80902fd542b9a33bed273c98cd473e3ef38d3eb7ae5f823f29b448932a71de
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -3639,93 +3999,14 @@ originalSourceText=!ни-
 |чего
 |ничего́
 |не́чего
-shippedText=кто
+shippedText=называются предикативными
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-2-r1`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: be15651b5318b831e4a63fe3f4804acdef230cf5564c2d92717ab621cd8a6e07
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=никто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
+contentHash=1b963c84c2ada87d6427d39e1c728b3aa59373fa74dcaa2ee8f57c81e03b4c80
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3740,106 +4021,24 @@ reviewedDigest=
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: abfe08b042369f3313d2a3d3c56cd8910c37212cbcafb7f7bc1affe82a7c4e67
+- Content hash: ed63d45a485835a187ef567e72ff8479e94a9eb3a0425fbffbaa62d282cb1f49
 
 recordType=label
 sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
 sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=|что
-|ничто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=c33167bc3390c240c076b67bbb81733ee3c2aaadf8288d945c67f4d1f857366d
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
+sourceRecordId=otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь
+originalSourceText=Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.
 
-### PROVENANCE `prov-u24-stand-ins-x-3-r0`
+== Примеры ==
+* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=":0">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.
+* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.
+* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.
+* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>
 
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63029fb7cb20df8059c2a2a2d21f2f2047830d86a76f6717738c3d56e63f8251
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
+{| class="wikitable"
+![[Вопросительное местоимение]] \
+[[Префикс (грамматика)|префикс]]
+!ни-
 !не-
 |-
 |кто
@@ -3877,569 +4076,14 @@ originalSourceText=!ни-
 |чего
 |ничего́
 |не́чего
-shippedText=что
+shippedText=Отрицательные местоимения
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=ff6ba2e6b01f8d4589516ded0257db60aab29e3336214548289244ca8f7a539a
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-3-r1`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 225f7ab660baf118e63322e00aef77e651d113127ca515249446b2a6cf002560
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=ничто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-4`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5643a15f7fc67b2c8cb8b9faddd85e4472aa88298b7cd4c101e2d8081638e144
-
-recordType=label
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=|кто
-|никто́
-|не́кто
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=41a7fba573054f83a1bde0088b21063f0df7f4fd0a0ba05438f8167a2944da5f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-4-r0`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1a2260616d19b284ea046871daa5c245788969e75b9e36d9696f0664a5f3f3d
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=кто
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-4-r1`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3da6755f7b5acc97ca7cf0cebfb88930619bcc106316b23f5eab269d29d30d0b
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=никто́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-4-r2`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 857ee4085bf8a3c9305e525c755d5e6deb8e8e8120a3bca04ea49687032820bc
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=не́кто
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=90382e828bb131a79e201fbc02b5818d0d8c9343c8d296aed04dfdbf37b9f7e0
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-5`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7028d3664017f9d3bb21f267083687b06b43acebd10cca65cb8a4925f223b8e9
-
-recordType=label
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=|не́что
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=3bd31e14f14a67956706a3ee917c2d6c1d32cdf9d26cf919065ad627721aeceb
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u24-stand-ins-x-5-r0`
-
-- Objectives: obj-u24-stand-ins
-- Sessions: u24-s-orient, u24-s-stand-ins
-- Source: src-ruwiki-otritsatelnye-141256493
-- Rights: rights-ruwiki-otritsatelnye-141256493
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c16493aaf184dc42f9a0e6acead623d20b3c942861b5ab1337f73044113454f6
-
-recordType=example
-sourceUrl=https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493
-sourceRevision=141256493
-sourceRecordId=otritsatelnye:!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́ка
-originalSourceText=!ни-
-!не-
-|-
-|кто
-|никто́
-|не́кто
-|-
-|что
-|ничто́
-|не́что
-|-
-|как
-|ника́к
-|не́как
-|-
-|чей
-|ниче́й
-| -
-|-
-|сколько
-|ниско́лько
-|не́сколько
-|-
-|когда
-|никогда́
-|не́когда
-|-
-|где
-|нигде́
-|не́где
-|-
-|куда
-|никуда́
-|не́куда
-|-
-|чего
-|ничего́
-|не́чего
-shippedText=не́что
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=2a329d7493d42fec44655c3f04e2d92a49ca025f6142de85861fdfc5fa871b30
-contentHash=82c8ec7c169f6ccac651a47a0d98819ca87c93a61d9594819ec6ba5c61375c42
+sourceHash=0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5
+contentHash=3d2f2dcfe9e15045d007b8ff8688fdde90f3a642ec78ab935071f1edb4c79bcd
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4594,292 +4238,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u24-101`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f884fd8d97016519290f66888bddef0f3bfdf97157f263fa0857a51d6cb25152
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u24-102`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2868ca5a2da4de531ab26da277104eae73d4981e781a87baf444f6abb9c0243
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
-
-### AUTHORED_ENGLISH `en-u24-103`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41041805b37abe223fe6cae90d66e3761d09179e20ec7a3ea7ede07d4df38b13
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Are you speaking? is the question before the reply.
-
-### AUTHORED_ENGLISH `en-u24-104`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c2ca404f67a53ef9d114468065aafb76fd6dca61caf4d328586dd991e39a42d5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example omits the present form instead of adding the particle before the speaking reply.
-
-### AUTHORED_ENGLISH `en-u24-105`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 72993a9717f7f12aa988a9f9f5e3f18177111dd2fe132577392331607464955b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example is the question, not the reply with the particle added.
-
-### AUTHORED_ENGLISH `en-u24-106`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 203f87cd2960d3f3a4d2b1e90e5278d4a324b57577e3c89505752e1122438c0a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
-
-### AUTHORED_ENGLISH `en-u24-107`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 295e3725c9435842de2d70ae0342ff2b157e30a8c12f6b81aa81706475620350
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
-
-### AUTHORED_ENGLISH `en-u24-108`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9486f4e672822e5795d1cb126ad7aaba45ca0854931de3c3258508218973a35
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u24-109`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e39a15205a4e275e0f67ea00502d766fdfcafc2e60c89449b5a0ab237a801f95
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking adds the particle before the speaking word.
-
-### AUTHORED_ENGLISH `en-u24-110`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f0bbc7f74dbe19d2e0d1eb5dcf2752b27b11a792dce01ff51ee10b566e039e5e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
-
-### AUTHORED_ENGLISH `en-u24-111`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 97a847e088346de9218409817e0dc0f651ed4a900f7d3526c66b2d20ae8d688b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example adds the particle before the speaking word.
-
-### AUTHORED_ENGLISH `en-u24-112`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: aa6fbc1819ea5b5407b8f9a65e2a72c9d6093e8e906c8dcd7bf2c3afd8fb6939
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example is the agreeing reply, without the particle.
-
-### AUTHORED_ENGLISH `en-u24-113`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf8ef91865fc9b251564eb70755cbdd1f1b34a3c499669948d2cf752c3acbd49
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
-
-### AUTHORED_ENGLISH `en-u24-114`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: beb119560d2545ef1ec25fef6d3687aba298f6b437683e8a8d6a8f23ac0f1d4f
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
-
-### AUTHORED_ENGLISH `en-u24-115`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75b94c02b98dc793e04460b5a86af641ee904f72ecbff3581a6528203a7fbbef
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
-
-### AUTHORED_ENGLISH `en-u24-116`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5082251b7a6f19d94f6c8457c33c3961504f767ee18654b6456aa4ab1ab214cb
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
-
-### AUTHORED_ENGLISH `en-u24-117`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a4f5c297f6f4a2e6bd030ec59c0c61f9ca7030019ad1ef2e8dfbe1159c1702c
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This short line uses the particle on its own with the student word.
-
-### AUTHORED_ENGLISH `en-u24-118`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b54e8d34a963aea3ff041761c69223bd35d62fbc448d168d8f0ba1bff0a498b7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This short line places the particle before the speaking word.
-
-### AUTHORED_ENGLISH `en-u24-119`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6770d83429273afd99d43aa7b2ae8f12cac451fc2174f12824f4c4d68ae2d819
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Boris isn't coming places the particle before the coming word.
-
-### AUTHORED_ENGLISH `en-u24-120`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cedfb46a8699cd500204f9bb12a63e46a83b6e3653b986006ab2cb401a37ee73
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
-
-### AUTHORED_ENGLISH `en-u24-121`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 63b9c6a0e639b781dc13145a8bbc9dcc9892f0fa2b8a3dfa5cab11083018da14
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
-
-### AUTHORED_ENGLISH `en-u24-122`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cc4a709422458791a6ff30f7018381878479edef164f6f53bfe8f2e8456a92da
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
-
 ### AUTHORED_ENGLISH `en-u24-123`
 
 - Objectives: none
@@ -4888,10 +4246,10 @@ text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not a
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b3626c1f74208a2e1bbeedd408edf07e7842bc9c7613be2c7a4646c862bd1ff6
+- Content hash: 341dbefcff3bcf527c405f1a3199bfed57d0acb94fed5a0c41239f070cb75f15
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This particle is placed before a word, not used as the replacement.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u24-124`
 
@@ -4901,10 +4259,10 @@ text=This particle is placed before a word, not used as the replacement.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5411bca3e0b6d0279e4c4b855814ac35e4ed3de08d8f26b27d5afc1a75b96675
+- Content hash: a9313375630b01dd10049b62c67409392b6ffa3a6051ded49dc96d6c2e5b664b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This token is the agreeing reply, not the replacement.
+text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
 
 ### AUTHORED_ENGLISH `en-u24-125`
 
@@ -4914,10 +4272,10 @@ text=This token is the agreeing reply, not the replacement.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67a0488f012840758ba8d56b4e8307b56a41b2bf62e2c46eba59751f9d87f3b2
+- Content hash: 88f2be5b077fda53ab0c15a61e3e26b908b267e5fc4c2e077379a06c8394298d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+text=The frozen example Are you speaking? is the question before the reply.
 
 ### AUTHORED_ENGLISH `en-u24-126`
 
@@ -4927,10 +4285,10 @@ text=The frozen note says this form has a different meaning from the reply that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 22a1715934a2d1fbd758d9111738c7e269fb1a6b7af309e0a3eb1c53bdb3480a
+- Content hash: 2ac06bbf77bae46f1ecd48738ae1c8462c9fce7a0ac9f7d02b1bc71fa13e1625
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
+text=This example omits the present form instead of adding the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-127`
 
@@ -4940,10 +4298,10 @@ text=The frozen note replaces the exists word when negating the have-phrase. Whi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 70f1200601f3a7224992827dcfce0667afd5603ff471924ac97d955142f7e594
+- Content hash: c08ca92fd3ec1edcde95769360caacf26f258a0c6ba1a9386f20dfb8aec148e7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note adds this particle before a word. It is not the form that means exists.
+text=This example is the question, not the reply with the particle added.
 
 ### AUTHORED_ENGLISH `en-u24-128`
 
@@ -4953,10 +4311,10 @@ text=The frozen note adds this particle before a word. It is not the form that m
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a05abf59ea549fef5bc2620ee14ec221d62b80eece56188131ab5f59503d6649
+- Content hash: d90f6778715dc7ae58daa2edb89613718420573451d6c958f9119c0853f231c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
+text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-129`
 
@@ -4966,10 +4324,10 @@ text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ca4fd81377854cf3ec3d7647ef27ea2842f0aa8a5e12efdb4d206394ff586a1
+- Content hash: 0b1d238e39cf998419da76ff25398f2e1e549643793aae718665f633046416ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This particle is not the form that means exists.
+text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
 
 ### AUTHORED_ENGLISH `en-u24-130`
 
@@ -4979,10 +4337,10 @@ text=This particle is not the form that means exists.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 018b724d3c146199e678fdac3718ca354edca19db9d6d75f008bb91da61d0192
+- Content hash: be281a48f5b409df57343a1eaf53f2d3f83e6556daf3b0c03d0c063837eb5504
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This token is the agreeing reply, not the exists word.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u24-131`
 
@@ -4992,10 +4350,10 @@ text=This token is the agreeing reply, not the exists word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb51d2cf8f89a8906600cbf94536bf98bedf3f29055143296448881598f5610d
+- Content hash: 0c8c7bade3d4f086173ff65f94ce572a2229a4094537b5d8056a26f38e3de532
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+text=The frozen example No, I'm not speaking adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-132`
 
@@ -5005,10 +4363,10 @@ text=The frozen note uses this form to mean 'exists' in the have-phrase, before 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e358914a6d56b3c12bd38784b9a8c31546fe78dcd04d79227257a5a51b594c4
+- Content hash: 0ddb7710cb0f6397b32b56e8cc2b4e6ccff108f6663ac6d90a09b2dcf50e15bf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
+text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-133`
 
@@ -5018,10 +4376,10 @@ text=The frozen have-phrase uses one form before it is replaced. Which admitted 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4ccd0448e6a07de902fa34651c0098c93ad0fa700905d6c57feb51bdfa258b5
+- Content hash: fb3d7e9a7424490293a270d5e244097c68cde6112b52577e1b4cab9746211869
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note uses this form to mean 'exists' before replacing it.
+text=This example adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-134`
 
@@ -5031,10 +4389,10 @@ text=The frozen note uses this form to mean 'exists' before replacing it.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87b0d00afec5d12e54840061c222bd39b6ccbd304cbd4ec184b5d57f01f89e20
+- Content hash: 1e09538247774a6b5221a7af44649e9b7ecea08278e72570e99aa2d8dda7594e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form means exists, so it is the form being replaced.
+text=This example is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-135`
 
@@ -5044,10 +4402,10 @@ text=This form means exists, so it is the form being replaced.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a20eee3cff15dd652f49e5d30d5c93d76225d95fc9e6d2b4ec493072fedd2182
+- Content hash: 03e3f22aa19a6cd671829e621358ad6d964ac945d8f1c0991b928bfd454a8e46
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says this replacement has a different meaning from the reply that means no.
+text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
 
 ### AUTHORED_ENGLISH `en-u24-136`
 
@@ -5057,10 +4415,10 @@ text=The frozen note says this replacement has a different meaning from the repl
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d5d07b8fee7aaa6df3fcbd64552705601e7e98c0db65bba8ebee247c7b44976d
+- Content hash: 1697df837661a84fe67792e6313117abccc7ef85f3db8879e6fe080661f5e721
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-137`
 
@@ -5070,10 +4428,10 @@ text=The frozen note keeps the particle apart from the have-phrase replacement. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 69d652529955f0d87caf8a0ec32003552da0d14fc7f4cc24d7c701df8f290161
+- Content hash: ac5cf3d5c8533cfa132b6aacd749f133e250c0b06cb921221834f02d0ed11712
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
 
 ### AUTHORED_ENGLISH `en-u24-138`
 
@@ -5083,10 +4441,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60f66fc338f7df02bd86597b99379aa302d973d745998d9422c0d767e2c0b42b
+- Content hash: c2250da200eec2fc741e63707bf0b5cb48af1ae98df859d870ca7b040f617b9a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-139`
 
@@ -5096,10 +4454,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e031e0c12e8148d628e5e862351cd90b78d3fc3ae5a535ec6917bbf7a48a5abe
+- Content hash: 79ed30780719d0af327bdf8efd58af574b8d6791452cc5091dcfc87ca4ce8c16
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown negated line?
+text=This short line uses the particle on its own with the student word.
 
 ### AUTHORED_ENGLISH `en-u24-140`
 
@@ -5109,10 +4467,10 @@ text=Which admitted English gloss is written for the shown negated line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e96261c660b73f1e2441e790f9660eb270f42f12a40083386218a8642b4635b
+- Content hash: dbafaaacc3dd4743647e262b72e93d3e618e46a08148613d838b87d755a9a4e4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is on the frozen line directly after the shown word?
+text=This short line places the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-141`
 
@@ -5122,10 +4480,10 @@ text=Which admitted form is on the frozen line directly after the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bdf5d3e7c525713f608c516269f5fd361c64f3e507b793583adc4018b7b645d0
+- Content hash: d84aa6644706de3a7ba86be5b1f8d69e0e363a6051f65aed2a2bf5f3da3af8c0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is in the second prefix column for the shown word?
+text=The frozen example Boris isn't coming places the particle before the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-142`
 
@@ -5135,10 +4493,10 @@ text=Which admitted form is in the second prefix column for the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1d87f688b6a9760bb72967e348410650482a7d785452c1197a1619d36ccc8559
+- Content hash: 2b776cd96655aa24ba8966ed38cd77599dec5c18a063797fbad2dad22a7d9440
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-143`
 
@@ -5148,10 +4506,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c98ecf2e98d776b807fe0c2b5071400008b1e0c3fd37fb50a2c955f20ccaca4
+- Content hash: b8590148445be9817db3c83a74bd299967f8621b6ed7e754dae3624623f505d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.
+text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-144`
 
@@ -5161,10 +4519,10 @@ text=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3317938df10351444ea09aa43263d1a78d705947ec262bfe218381935a347698
+- Content hash: 5998d0b6710e04f1064b7ac8853407485681c26a39c282fc1216dcf4b0c86c41
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-145`
 
@@ -5174,10 +4532,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: afa787e96242db2f5d7829275c889a4645df46aa76322dbeb3a60416fdb2cc3f
+- Content hash: 9c84f80b192988fcb63fd93dd518406e9299d4ea72f8492bdd437bdfb570dafe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=This particle is placed before a word, not used as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-146`
 
@@ -5187,10 +4545,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 438015984616e6e59fa4ea5479a41282677d2e3a5ea75b1a4387c81ba7c8a3cf
+- Content hash: c497e6439c1b94c6b804d99abbaf37fe75f536857b964bd1c117a1accf434da4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=This token is the agreeing reply, not the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-147`
 
@@ -5200,10 +4558,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a2eadfc5ad98aefbd6b306fa06dbde8a3dabb86311713af14cad3109a503e23c
+- Content hash: e33018a7226f548d9f6d7a44b82601245927d9316404dc6fb112f815132c24b6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-148`
 
@@ -5213,10 +4571,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 257a6f7a4b4fd2eec49dc20a705f48f07fba2c343d1b1d391c8c2af67fe9bdb2
+- Content hash: 89902b27a9d238e7de72b1298d8a5c253b91f7cc968a05f6c2d572f38f9ac218
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
 
 ### AUTHORED_ENGLISH `en-u24-149`
 
@@ -5226,10 +4584,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfc61543cccb12c8761e9150c68dbf0f970607ee0498d7d902e30c363f94c319
+- Content hash: 94ae22d36da3d1c4e0155d7a0d349abd58cc99c7af1c80b307f943d4427663f6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The frozen note adds this particle before a word. It is not the form that means exists.
 
 ### AUTHORED_ENGLISH `en-u24-150`
 
@@ -5239,10 +4597,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4bfd8c52e0b6f032735e65bc39057b180fa13e39725adb2d23566b9ebec3bdf8
+- Content hash: b2a905d7f8554374afd42e9d9f6090695586f9263aaf5c83507d6556e1334786
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 
 ### AUTHORED_ENGLISH `en-u24-151`
 
@@ -5252,10 +4610,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08a59632c022a35eccff90ffaed2740056f1be8bba5c1a794acfe06a9e6979f4
+- Content hash: 823c5bfa4666f8407d9098889ca8277616f2eb24ebbf671b2fbb3f047c2f0523
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=This particle is not the form that means exists.
 
 ### AUTHORED_ENGLISH `en-u24-152`
 
@@ -5265,10 +4623,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c1b93db495adaca4d2ee02d193b4e893804f2643d4ac7f9c4bb0f7821629ece7
+- Content hash: 3e7af2932efaf6970b54ce3f3d2d66aa3b711a88fd73e136662164ceef0a8fbb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=This token is the agreeing reply, not the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-153`
 
@@ -5278,10 +4636,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7772326c253901dd200975a0b6f7157930121fdce0c88b20d0b85beac6bd56ec
+- Content hash: 328e540f74ddac495c6686ea473c5f783782108fb11f712511c6ab9b707111cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-154`
 
@@ -5291,10 +4649,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bee0c2fd719a3057ae48972c732e57f9cbd30ac20505cc8bc5911cf29504347
+- Content hash: 82deceeca09c2d16f62753143fb4f52667bc0ac07d7a8090ac4769818f132cf0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
 
 ### AUTHORED_ENGLISH `en-u24-155`
 
@@ -5304,10 +4662,10 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6880abb5157764271e5844f6dced322f0db739289e2793ad62b5d231740fad8
+- Content hash: dc5d7d49aa588c360211de2e9524928c0baaf53f1da4ef14267ffb9842323c9c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 24 work in your copy.
+text=The frozen note uses this form to mean 'exists' before replacing it.
 
 ### AUTHORED_ENGLISH `en-u24-156`
 
@@ -5317,10 +4675,10 @@ text=Self-attest only after the Lesson 24 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1dd32f55a3271624873acadb2bd47ac22b57e1cde6e69f9361ef4b739087f4c5
+- Content hash: 280419714d3a37d0153847c7cd98b8051bcccae15983a66a3a424440e214a3ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own
+text=This form means exists, so it is the form being replaced.
 
 ### AUTHORED_ENGLISH `en-u24-157`
 
@@ -5330,10 +4688,322 @@ text=Placement contrasts stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a683e746a73e829158c1ec29cc51577a52bd1630ef1906189a9e4eeb5f64037b
+- Content hash: ee0390e789dcf43b3b53974304e2f10dd62229609e24bfd573989fde04a06b23
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.
+text=The frozen note says this replacement has a different meaning from the reply that means no.
+
+### AUTHORED_ENGLISH `en-u24-158`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e9742a4b3b3fe1f8ba756747e8a6220ad816a655cf6389b4a745e1ccd27e66a0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+
+### AUTHORED_ENGLISH `en-u24-159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cbd1411fff296c1b40bec171a5c220a9f693ce637f528690fe14a7a0e1c27709
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen source pairs the shown form
+
+### AUTHORED_ENGLISH `en-u24-160`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7466e3807f4d68a4caa0662b02b22eb5b0935e1c6cde84330b1902077af9cc73
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=with the admitted gloss
+
+### AUTHORED_ENGLISH `en-u24-161`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d1776230d64a38f0f75bc26f03558d2247f53103448bac4cd81e7bd0629ed9b3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which English meaning matches the shown negated sentence?
+
+### AUTHORED_ENGLISH `en-u24-162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4021bb3c1e4a733e2d3bd0ad5419ec1c51d6d6a5cb611b94bbd9d11450ac2fb2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which negative-pronoun form built from the shown word is not called predicative?
+
+### AUTHORED_ENGLISH `en-u24-163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7300a293d39d01d8406088a789cec3803a55ad319d4fe2d4119d2a4ad1843b6d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which predicative negative-pronoun form is built from the shown word?
+
+### AUTHORED_ENGLISH `en-u24-164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 818e0673a08591439f0188713de2ff744cb6f90eaf68234b314178caf6789d0b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which particle does the stated concord rule require in the predicate?
+
+### AUTHORED_ENGLISH `en-u24-165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0aa8857939a8b8fe6961dbddcfd46d43cf650c6ab6b15f2f1765b031a184c49e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which predicate particle does negative concord require?
+
+### AUTHORED_ENGLISH `en-u24-166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a205b8665fefd729cf08674291b5833779e20261a17ac9166e3fe1aae4ea915b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted negation lines
+
+### AUTHORED_ENGLISH `en-u24-167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f296f707bb48b83485a133e3e021c9b4823e8bf45428f4425a9570ea851ad055
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u24-168`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 762f9288e66e6a459198fe11bb307726defb1a380dddbe4b7a725f9a40183561
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u24-169`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 07af5192a5169199b91acfcfb997402d3ae4fd6709b3b87ce95aafbf8401dfde
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u24-170`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8c2467100c0fe04745920e0386211a71bccd3c72569ed1fa13824c543415518a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u24-171`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 114ab3bca0e0abbc191555f3c85b5b1435d49fa38d2bb7c5d7747f3b1c03b7cf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u24-172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 61c25d0c6971ae0d0d3cbd89782e62f7d29f8396dc263d38659a75c6036fae66
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u24-173`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d4df9604307eaff23e8415bfaff5bde8faffd45fb10302b1a0ef9c7d9d4d2dc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u24-174`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2209fd1fb3448abe610e892e515a26393365833d1820ab16899da0a91701258d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 24 in your copy
+
+### AUTHORED_ENGLISH `en-u24-175`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d9b222640312bbf3979195c2ab4a9871477599b405318b9968c36a1669d3c11f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u24-176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 26b4e385e3d60c8965652cdc1abc5d2e06c14b0742ddfbdb383087ff561c977c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 24 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u24-177`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a5f013fcc4c6aac72f77785c0d32e57f4f72846b12dc3dddd5b4290280d2da65
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 24 book work
+
+### AUTHORED_ENGLISH `en-u24-178`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 782b976af25ddbf3ff6616b1fef6e4ce2f21bdbe9dc30927f23cebc2cc477ac3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u24-179`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aa86c7ba6ab3e63f10aeff24b51e68251b05aa228705421365b4bc170c87e546
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 24 work in your copy.
+
+### AUTHORED_ENGLISH `en-u24-180`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: fd98aab331942d7f8d05cdef216261611c76448b494ea29ac985ccaee46ce6ac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Placement contrasts stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-181`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1bb9983c52db18d83e37b7d3a4b8ebcfe81b1fefb46ea5d57791594277d25877
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -5498,6 +5168,15 @@ permitsAppUse=true
 - `obj-u24-stand-ins` CHECK `u24-i-stand-ins-1`
 - `obj-u24-stand-ins` CHECK `u24-i-stand-ins-2`
 - `obj-u24-stand-ins` REMEDIATION `u24-st-rem-stand-ins`
+- `obj-u24-concord` INSTRUCTION `u24-st-orient`
+- `obj-u24-concord` INSTRUCTION `u24-st-teach-concord-1`
+- `obj-u24-concord` INSTRUCTION `u24-st-teach-concord-2`
+- `obj-u24-concord` EXAMPLE `ex-u24-concord-0`
+- `obj-u24-concord` EXAMPLE `ex-u24-concord-1`
+- `obj-u24-concord` PRACTICE `u24-st-guided-concord-1`
+- `obj-u24-concord` CHECK `u24-i-concord-1`
+- `obj-u24-concord` CHECK `u24-i-concord-2`
+- `obj-u24-concord` REMEDIATION `u24-st-rem-concord`
 - `obj-u24-book` INSTRUCTION `u24-st-book-work`
 - `obj-u24-book` INSTRUCTION `u24-st-book`
 - `obj-u24-placement` INSTRUCTION `u24-st-gap-placement`
@@ -5505,6 +5184,7 @@ permitsAppUse=true
 - `u24-s-orient` OBJECTIVE `obj-u24-absence`
 - `u24-s-orient` OBJECTIVE `obj-u24-alternation`
 - `u24-s-orient` OBJECTIVE `obj-u24-stand-ins`
+- `u24-s-orient` OBJECTIVE `obj-u24-concord`
 - `u24-s-orient` OBJECTIVE `obj-u24-book`
 - `u24-st-orient` REFERENCE `ref-u2125-attribution`
 - `u24-s-verbal-ne` OBJECTIVE `obj-u24-verbal-ne`
@@ -5564,6 +5244,18 @@ permitsAppUse=true
 - `u24-st-check-stand-ins` REMEDIATION `u24-st-rem-stand-ins`
 - `u24-st-check-stand-ins` ITEM `u24-i-stand-ins-1`
 - `u24-st-check-stand-ins` ITEM `u24-i-stand-ins-2`
+- `u24-s-concord` OBJECTIVE `obj-u24-concord`
+- `u24-st-teach-concord-1` EXAMPLE `ex-u24-concord-0`
+- `u24-st-teach-concord-1` EXAMPLE `ex-u24-concord-1`
+- `u24-st-teach-concord-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-concord-1` REMEDIATION `u24-st-rem-concord`
+- `u24-st-guided-concord-1` ITEM `u24-g-concord-0`
+- `u24-st-teach-concord-2` REFERENCE `ref-u2125-attribution`
+- `u24-st-rem-concord` EXAMPLE `ex-u24-concord-0`
+- `u24-st-rem-concord` EXAMPLE `ex-u24-concord-1`
+- `u24-st-check-concord` REMEDIATION `u24-st-rem-concord`
+- `u24-st-check-concord` ITEM `u24-i-concord-1`
+- `u24-st-check-concord` ITEM `u24-i-concord-2`
 - `u24-s-book` OBJECTIVE `obj-u24-book`
 - `u24-st-book-work` REFERENCE `ref-u2125-attribution`
 - `u24-s-gap-placement` OBJECTIVE `obj-u24-placement`
@@ -5578,6 +5270,10 @@ permitsAppUse=true
 - `obj-u24-alternation` PROVENANCE `prov-ex-u24-alternation-0-ru`
 - `obj-u24-alternation` PROVENANCE `prov-ex-u24-alternation-1-en`
 - `obj-u24-alternation` PROVENANCE `prov-ex-u24-alternation-1-ru`
+- `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-0-en`
+- `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-0-ru`
+- `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-1-en`
+- `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-1-ru`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-0-en`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-0-ru`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-1-en`
@@ -5603,23 +5299,18 @@ permitsAppUse=true
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-x-0`
 - `obj-u24-alternation` PROVENANCE `prov-u24-alternation-rem`
 - `obj-u24-alternation` PROVENANCE `prov-u24-alternation-x-0`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-rem`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-0`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-0-r0`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-1`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-2`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-3`
+- `obj-u24-concord` PROVENANCE `prov-u24-concord-x-4`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-rem`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-rem-r0`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-rem-r1`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-0`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-1`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-2`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-2-r0`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-2-r1`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-3`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-3-r0`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-3-r1`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-4`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-4-r0`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-4-r1`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-4-r2`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-5`
-- `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-5-r0`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-rem`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-rem-r0`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-x-0`
