@@ -35,6 +35,7 @@ class BatchBUnits2125Test {
             "negation-alternation" to "obj-u24-alternation",
             "negative-pronoun" to "obj-u24-stand-ins",
             "register" to "obj-u25-address",
+            "elapsed-time-duration" to "obj-u23-duration",
         )
         expected.forEach { (claim, objectiveId) ->
             val capability = pack.sourceCapabilities.single { it.supportedClaim == claim }
@@ -47,18 +48,30 @@ class BatchBUnits2125Test {
             assertEquals(capability.sourceRecordId, record.sourceRecordId)
             assertEquals(capability.sourceHash, record.sourceHash)
             assertEquals(capability.sourceHash, sha256(record.originalSourceText))
-            assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
+            if (capability.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
+                assertEquals("https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/", record.sourceUrl)
+                assertFalse(record.sourceUrl.contains("oldid="))
+                assertTrue(record.attribution.contains(capability.sourceRevision))
+                assertTrue(record.attribution.contains("Anna Tumarkin"))
+                assertTrue(record.attribution.contains("Shannon Donnally Quinn"))
+                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
+                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
+                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+                assertTrue(capability.exactSpan.contains("emphasizes the duration"))
+            } else {
+                assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
+            }
         }
         assertTrue(
             pack.sourceCapabilities.none {
-                it.supportedClaim in setOf("elapsed-time-duration", "negation-scope", "productive-diminutive")
+                it.supportedClaim in setOf("negation-scope", "productive-diminutive")
             },
         )
-        listOf(21, 22).forEach { number ->
+        listOf(21, 22, 23).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
-        listOf(23, 24, 25).forEach { number ->
+        listOf(24, 25).forEach { number ->
             assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
@@ -91,6 +104,13 @@ class BatchBUnits2125Test {
         val ordinalTwo = shipped(pack, collective, "\u0432\u0442\u043e\u0440\u043e\u0301\u0439")
         assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(two, collectiveTwo, listOf(ordinalTwo)))
         assertNull(V2Validator.classifyRelation(two, ordinalTwo, listOf(collectiveTwo)))
+
+        val ranges = "obj-u23-ranges"
+        val sixties = shipped(pack, ranges, "\u0412 \u0448\u0435\u0441\u0442\u0438\u0434\u0435\u0441\u044f\u0442\u044b\u0445 \u0433\u043e\u0434\u0430\u0445")
+        val in1960 = shipped(pack, ranges, "in the 1960s")
+        val in1990 = shipped(pack, ranges, "in the 1990s")
+        assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(sixties, in1960, listOf(in1990)))
+        assertNull(V2Validator.classifyRelation(sixties, in1990, listOf(in1960)))
 
         val item = pack.items.single { it.id == "u21-g-purpose-0" }
         val distractor = item.options.first { it != item.answer }
@@ -162,6 +182,16 @@ class BatchBUnits2125Test {
             "obj-u22-both-forms",
             "obj-u22-half-forms",
             "obj-u22-collective",
+            "obj-u23-ranges",
+            "obj-u23-beginning",
+            "obj-u23-during-event",
+            "obj-u23-duration",
+            "obj-u23-elapsed",
+            "obj-u24-alternation",
+            "obj-u24-stand-ins",
+            "obj-u24-concord",
+            "obj-u28-imperfective-adverb",
+            "obj-u28-perfective-adverb",
         )
         val rephrasings = listOf(
             "Which admitted gloss is written after the equals sign?",
@@ -279,6 +309,30 @@ class BatchBUnits2125Test {
         )
         assertTrue(ago, ago.contains("no independent elapsed-time-duration admission"))
         assertTrue(ago, ago.contains("bounded time expression does not clear elapsed-time-duration"))
+        assertTrue(ago, ago.contains("partial duration evidence does not clear elapsed-time-duration"))
+
+        val partial = overreach(
+            pack,
+            "\u0412 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0443\u0440\u043e\u043a\u0430 \u0443\u0447\u0435\u043d\u0438\u043a\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043b\u0438 \u043d\u0430\u0434 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u043c.",
+            23,
+            "obj-u23-duration",
+            "elapsed-time-duration",
+            "cap-partial-duration",
+        )
+        assertTrue(partial, partial.contains("no independent elapsed-time-duration admission"))
+        assertTrue(partial, partial.contains("partial duration evidence does not clear elapsed-time-duration"))
+        assertFalse(partial, partial.contains("bounded time expression does not clear elapsed-time-duration"))
+
+        val isolated = overreach(
+            pack,
+            "\u0434\u0443\u043c\u0430\u044f",
+            28,
+            "obj-u28-imperfective-adverb",
+            "imperfective-verbal-adverb",
+            "cap-isolated-adverb",
+        )
+        assertTrue(isolated, isolated.contains("an isolated adverbial example does not state the present-versus-past relationship"))
+        assertTrue(isolated, isolated.contains("is not an admitted frozen source"))
 
         val concord = overreach(
             pack,

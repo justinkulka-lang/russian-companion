@@ -55,8 +55,9 @@ NEGATION_SPAN = _slice(
     "The use of a direct object in the genitive",
     '("I don\'t see the book").',
 )
-PRONOUN_SPAN = _slice(_OTR, "!ни-\n!не-", "|чего\n|ничего́\n|не́чего")
+PRONOUN_SPAN = _slice(_OTR, "Образуются от", "|чего\n|ничего́\n|не́чего")
 CONCORD_SPAN = _slice(_OTR, "* Никто никому", "сказал.")
+CONCORD_RULE_SPAN = _slice(_OTR, "Основным правилом правильного использования", "сказал.")
 ADDRESS_SPAN = _slice(_OBR, "Есть полные имена", "одного возраста")
 AGO_SPAN = _slice(_GRAMMAR, "He arrived in Moscow a week ago.", "через месяц.")
 DURING_SPAN = _slice(
@@ -209,6 +210,15 @@ KTO_CITE = _require(PRONOUN_SPAN, "|кто\n|никто́")
 CHTO_CITE = _require(PRONOUN_SPAN, "|что\n|ничто́")
 NEKTO_CITE = _require(PRONOUN_SPAN, "|кто\n|никто́\n|не́кто")
 NECHTO_CITE = _require(PRONOUN_SPAN, "|не́что")
+PREDICATIVE_CITE = _require(PRONOUN_SPAN, "называются предикативными")
+NEGATIVE_CITE = _require(PRONOUN_SPAN, "Отрицательные местоимения")
+CONCORD_NIKTO = _ship(CONCORD_RULE_SPAN, "никто́")
+CONCORD_NICHTO = _ship(CONCORD_RULE_SPAN, "ничто́")
+CONCORD_NE = _ship(CONCORD_RULE_SPAN, "не")
+CONCORD_NI = _ship(CONCORD_RULE_SPAN, "ни-")
+CONCORD_NIKOMU = _ship(CONCORD_RULE_SPAN, "никому")
+CONCORD_CITE = _require(CONCORD_RULE_SPAN, "отрицательной частицы не")
+CONCORD_HEAD = _require(CONCORD_RULE_SPAN, "Основным правилом")
 
 IRINA = _ship(ADDRESS_SPAN, "Ирина")
 IRA = _ship(ADDRESS_SPAN, "Ира")
@@ -249,7 +259,7 @@ STEP_OTHER = _ship(STEP_SPAN, "Leave at a specific time frame")
 
 
 def _glosses() -> dict[str, dict[str, frozenset[str]]]:
-    return {
+    table = {
         REFLEXIVE_SPAN: {
             LOVE_SELF: frozenset({MYSELF}),
             LOVE_WIFE: frozenset({MY_WIFE}),
@@ -309,7 +319,15 @@ def _glosses() -> dict[str, dict[str, frozenset[str]]]:
             STEP_RU: frozenset({STEP_EN}),
             STEP_BIT: frozenset({STEP_BIT_EN}),
         },
+        CONCORD_RULE_SPAN: {
+            "никто́": frozenset({"не"}),
+            "ничто́": frozenset({"не"}),
+        },
     }
+    from batch_c_unit_23 import pressbooks_glosses
+
+    table.update(pressbooks_glosses())
+    return table
 
 
 GOVERNED_GLOSSES = _glosses()
@@ -532,7 +550,7 @@ def _alternation(lesson) -> None:
     _frame(lesson)
     why_gen = _pair(KNIGI, ANY_BOOKS, ANY_BOOKS)
     why_acc = _pair(KNIGU, THE_BOOK, THE_BOOK)
-    prompt = "Which admitted English gloss is written for the shown negated line?"
+    prompt = "Which English meaning matches the shown negated sentence?"
     lesson.objective(
         "alternation",
         "Choose the admitted gloss written for the shown negated line",
@@ -554,29 +572,52 @@ def _alternation(lesson) -> None:
 
 def _pronouns(lesson) -> None:
     _frame(lesson)
-    why_nikto = _pair(KTO, NIKTO, KTO_CITE)
-    why_nichto = _pair(CHTO, NICHTO, CHTO_CITE)
-    why_nekto = _pair(KTO, NEKTO, NEKTO_CITE)
-    ni_prompt = "Which admitted form is on the frozen line directly after the shown word?"
-    ne_prompt = "Which admitted form is in the second prefix column for the shown word?"
+    why_nikto = _pair(KTO, NIKTO, NEGATIVE_CITE)
+    why_nichto = _pair(CHTO, NICHTO, NEGATIVE_CITE)
+    why_nekto = _pair(KTO, NEKTO, PREDICATIVE_CITE)
+    ni_prompt = "Which negative-pronoun form built from the shown word is not called predicative?"
+    ne_prompt = "Which predicative negative-pronoun form is built from the shown word?"
     lesson.objective(
         "stand-ins",
-        "Choose the admitted prefix form written for the shown word",
+        "Choose the negative-pronoun form built from the shown word",
         "CONTRAST_SELECTION",
-        ("otritsatelnye", PRONOUN_SPAN, KTO_CITE),
+        ("otritsatelnye", PRONOUN_SPAN, PREDICATIVE_CITE),
         [
             _wiki("otritsatelnye", PRONOUN_SPAN, KTO, NIKTO),
             _wiki("otritsatelnye", PRONOUN_SPAN, CHTO, NICHTO),
             _wiki("otritsatelnye", PRONOUN_SPAN, KTO, NEKTO),
         ],
         [
-            _check(KTO, NIKTO, [_quoted(CHTO, NICHTO, CHTO_CITE), _quoted(CHTO, NECHTO, NECHTO_CITE)], "PRONOUN_NIKTO", why_nikto, OTR_SOURCE, ni_prompt),
-            _check(CHTO, NICHTO, [_quoted(CHTO, NECHTO, NECHTO_CITE), _quoted(KTO, NIKTO, KTO_CITE)], "PRONOUN_NICHTO", why_nichto, OTR_SOURCE, ni_prompt),
-            _check(KTO, NEKTO, [_quoted(CHTO, NECHTO, NECHTO_CITE), _quoted(CHTO, NICHTO, CHTO_CITE)], "PRONOUN_NEKTO", why_nekto, OTR_SOURCE, ne_prompt),
+            _check(KTO, NIKTO, [_quoted(CHTO, NICHTO, NEGATIVE_CITE), _quoted(KTO, NEKTO, PREDICATIVE_CITE)], "PRONOUN_NIKTO", why_nikto, OTR_SOURCE, ni_prompt),
+            _check(CHTO, NICHTO, [_quoted(CHTO, NECHTO, PREDICATIVE_CITE), _quoted(KTO, NIKTO, NEGATIVE_CITE)], "PRONOUN_NICHTO", why_nichto, OTR_SOURCE, ni_prompt),
+            _check(KTO, NEKTO, [_quoted(KTO, NIKTO, NEGATIVE_CITE), _quoted(CHTO, NECHTO, PREDICATIVE_CITE)], "PRONOUN_NEKTO", why_nekto, OTR_SOURCE, ne_prompt),
         ],
-        extra=_extra("otritsatelnye", PRONOUN_SPAN, [NEKTO, NECHTO, KTO_CITE, CHTO_CITE, NEKTO_CITE, NECHTO_CITE]),
+        extra=_extra("otritsatelnye", PRONOUN_SPAN, [NEKTO, NECHTO, PREDICATIVE_CITE, NEGATIVE_CITE]),
     )
     _bind(lesson, "stand-ins", "negative-pronoun", PRONOUN_SPAN)
+
+
+def _concord(lesson) -> None:
+    """Obligatory negative concord. This objective is not negation-scope."""
+    _frame(lesson)
+    why = _pair(CONCORD_NIKTO, CONCORD_NE, CONCORD_CITE)
+    prompt = "Which particle does the stated concord rule require in the predicate?"
+    lesson.objective(
+        "concord",
+        "Choose the predicate particle required by negative concord",
+        "CONTRAST_SELECTION",
+        ("otritsatelnye", CONCORD_RULE_SPAN, CONCORD_CITE),
+        [
+            _wiki("otritsatelnye", CONCORD_RULE_SPAN, CONCORD_NIKTO, CONCORD_NE),
+            _wiki("otritsatelnye", CONCORD_RULE_SPAN, CONCORD_NICHTO, CONCORD_NE),
+        ],
+        [
+            _check(CONCORD_NIKTO, CONCORD_NE, [_quoted(CONCORD_NIKTO, CONCORD_NI, CONCORD_HEAD), _quoted(CONCORD_NIKTO, CONCORD_NIKOMU, CONCORD_HEAD)], "CONCORD_PARTICLE", why, OTR_SOURCE, prompt),
+            _check(CONCORD_NICHTO, CONCORD_NE, [_quoted(CONCORD_NIKTO, CONCORD_NI, CONCORD_HEAD), _quoted(CONCORD_NIKTO, CONCORD_NIKOMU, CONCORD_HEAD)], "CONCORD_NICHTO", why.replace(CONCORD_NIKTO, CONCORD_NICHTO), OTR_SOURCE, prompt),
+            _check(CONCORD_NIKTO, CONCORD_NE, [_quoted(CONCORD_NIKTO, CONCORD_NIKOMU, CONCORD_HEAD), _quoted(CONCORD_NIKTO, CONCORD_NI, CONCORD_HEAD)], "CONCORD_AGAIN", why, OTR_SOURCE, "Which predicate particle does negative concord require?"),
+        ],
+        extra=_extra("otritsatelnye", CONCORD_RULE_SPAN, [CONCORD_NI, CONCORD_NIKOMU, CONCORD_NICHTO, CONCORD_CITE, CONCORD_HEAD]),
+    )
 
 
 def _address(lesson) -> None:
@@ -613,79 +654,15 @@ def add_batch_b(lesson) -> None:
     {
         21: lambda item: (_reflexive(item), _purpose(item)),
         22: lambda item: (_declension(item), _both(item), _half(item), _collective(item)),
-        24: lambda item: (_alternation(item), _pronouns(item)),
+        24: lambda item: (_alternation(item), _pronouns(item), _concord(item)),
         25: lambda item: (_address(item),),
     }[lesson.number](lesson)
 
 
 def add_unit_23(builder, unit: dict) -> None:
-    """Bounded time lines. They do not admit elapsed-time-duration."""
-    from units_6_10_intake import Lesson, _append_spec
-
-    lesson = Lesson(builder, 23)
-    _frame(lesson)
-    ago_prompt = "Which admitted English gloss is written for the shown ago line?"
-    during_prompt = "Which admitted English gloss is written for the shown during line?"
-    step_prompt = "Which admitted English gloss is written for the shown step-out line?"
-    why_ago = _pair(AGO_RU, AGO_EN, AGO_EN)
-    why_month = _pair(MONTH_RU, MONTH_EN, MONTH_EN)
-    why_bit = _pair(AGO_BIT, AGO_EN, AGO_EN)
-    why_hour = _pair(DURING_HOUR_RU, DURING_HOUR_EN, DURING_HOUR_EN)
-    why_te = _pair(DURING_TE, DURING_WHILE, DURING_WHILE)
-    why_pro = _pair(DURING_PRO, DURING_WHILE, DURING_WHILE)
-    why_step = _pair(STEP_RU, STEP_EN, STEP_HEADING)
-    why_step_bit = _pair(STEP_BIT, STEP_BIT_EN, STEP_HEADING)
-    lesson.objective(
-        "ago",
-        "Choose the admitted gloss written for the shown ago line",
-        "CONTRAST_SELECTION",
-        ("grammar", AGO_SPAN, AGO_EN),
-        [
-            _wiki("grammar", AGO_SPAN, AGO_RU, AGO_EN),
-            _wiki("grammar", AGO_SPAN, MONTH_RU, MONTH_EN),
-        ],
-        [
-            _check(AGO_RU, AGO_EN, [_quoted(MONTH_RU, MONTH_EN, MONTH_EN)], "AGO_WEEK", why_ago, GRAMMAR_SOURCE, ago_prompt),
-            _check(MONTH_RU, MONTH_EN, [_quoted(AGO_RU, AGO_EN, AGO_EN)], "AGO_MONTH", why_month, GRAMMAR_SOURCE, ago_prompt),
-            _check(AGO_BIT, AGO_EN, [_quoted(MONTH_RU, MONTH_EN, MONTH_EN)], "AGO_WEEK_BIT", why_bit, GRAMMAR_SOURCE, ago_prompt),
-        ],
-        extra=_extra("grammar", AGO_SPAN, [AGO_BIT]),
-    )
-    lesson.objective(
-        "during",
-        "Choose the admitted gloss written for the shown during line",
-        "CONTRAST_SELECTION",
-        ("grammar", DURING_SPAN, DURING_WHILE),
-        [
-            _wiki("grammar", DURING_SPAN, DURING_HOUR_RU, DURING_HOUR_EN),
-            _wiki("grammar", DURING_SPAN, DURING_TE, DURING_WHILE),
-            _wiki("grammar", DURING_SPAN, DURING_PRO, DURING_WHILE),
-        ],
-        [
-            _check(DURING_HOUR_RU, DURING_HOUR_EN, [_quoted(DURING_TE, DURING_WHILE, DURING_WHILE)], "DURING_HOUR", why_hour, GRAMMAR_SOURCE, during_prompt),
-            _check(DURING_TE, DURING_WHILE, [_quoted(DURING_HOUR_RU, DURING_HOUR_EN, DURING_HOUR_EN)], "DURING_TE", why_te, GRAMMAR_SOURCE, during_prompt),
-            _check(DURING_PRO, DURING_WHILE, [_quoted(DURING_HOUR_RU, DURING_HOUR_EN, DURING_HOUR_EN)], "DURING_PRO", why_pro, GRAMMAR_SOURCE, during_prompt),
-        ],
-    )
-    lesson.objective(
-        "step-out",
-        "Choose the admitted gloss written for the shown step-out line",
-        "CONTRAST_SELECTION",
-        ("grammar", STEP_SPAN, STEP_HEADING),
-        [
-            _wiki("grammar", STEP_SPAN, STEP_RU, STEP_EN),
-            _wiki("grammar", STEP_SPAN, STEP_BIT, STEP_BIT_EN),
-        ],
-        [
-            _check(STEP_RU, STEP_EN, [_quoted(TRAIN_RU, TRAIN_EN, TRAIN_EN), (STEP_OTHER, STEP_OTHER, STEP_OTHER)], "STEP_SECRETARY", why_step, GRAMMAR_SOURCE, step_prompt),
-            _check(STEP_BIT, STEP_BIT_EN, [_quoted(TRAIN_RU, TRAIN_BIT, TRAIN_BIT), (STEP_OTHER, STEP_OTHER, STEP_OTHER)], "STEP_MINUTES", why_step_bit, GRAMMAR_SOURCE, step_prompt),
-            _check(STEP_RU, STEP_EN, [_quoted(TRAIN_RU, TRAIN_BIT, TRAIN_BIT)], "STEP_SECRETARY_AGAIN", why_step, GRAMMAR_SOURCE, step_prompt),
-        ],
-        extra=_extra("grammar", STEP_SPAN, [TRAIN_RU, TRAIN_EN, TRAIN_BIT, STEP_OTHER, STEP_HEADING, STEP_BIT]),
-    )
-    for spec in lesson.specs:
-        _append_spec(builder, unit, spec, "ref-u2125-attribution")
-    unit["minimum_checks"] = sum(len(spec["checks"]) for spec in lesson.specs)
+    """Wikipedia ago, during, and step-out lines do not build Unit 23."""
+    del builder, unit
+    raise SystemExit("Unit 23 uses the frozen Pressbooks time spans, not the bounded Wikipedia lines")
 
 
 def _assert_closed() -> None:

@@ -444,117 +444,146 @@ def _unit_27(lesson) -> None:
 
 
 def _unit_28(lesson) -> None:
+    contrast = "imperfective ones are usually present, while perfective ones can only be past"
+    perfect_contrast = "usually present, while perfective ones can only be past"
     imperfect = _span(
         "grammar",
-        "Present adverbial participles are formed by adding the suffix -а/-я",
+        contrast,
         "| учась",
     )
     perfect = _span(
         "grammar",
-        "most are formed with the suffix -в",
+        perfect_contrast,
         "войдя (вошед",
     )
-    for text in ("думая", "учась", "to think", "to be learning", "to say"):
+    if "usually present" not in imperfect or "can only be past" not in perfect:
+        raise SystemExit("Verbal-adverb span lost the present-versus-past statement")
+    if "bookish speech" not in imperfect:
+        raise SystemExit("Imperfective span lost the neighboring bookish paragraph it must not bind")
+    present = "usually present"
+    past = "can only be past"
+    rare = "very rarely past"
+    imperfective = "imperfective ones"
+    perfective = "perfective ones"
+    for text in ("думая", "учась", present, past, rare, imperfective):
         _clean("grammar", imperfect, text)
-    for text in ("сказав", "научившись", "войдя", "to say", "to learn", "to enter"):
+    for text in ("сказав", "научившись", "войдя", present, past, rare, perfective):
         _clean("grammar", perfect, text)
+    from explicit_spans import EXPLICIT_GLOSSES
+
+    EXPLICIT_GLOSSES[imperfect] = {imperfective: frozenset({present})}
+    EXPLICIT_GLOSSES[perfect] = {perfective: frozenset({past})}
+    present_why = "The source says imperfective ones are usually present."
+    past_why = "The source says perfective ones can only be past."
+    rare_why = "The source uses very rarely past for a different construction."
+    past_only = "The source assigns can only be past to perfective ones."
+    present_only = "The source assigns usually present to imperfective ones."
     lesson.objective(
         "imperfective-adverb",
-        "Choose the admitted gloss for the shown imperfective adverbial form",
+        "Choose the time relationship the source states for imperfective adverbial forms",
         "CONTRAST_SELECTION",
-        ("grammar", imperfect, "Present adverbial participles are formed by adding the suffix -а/-я"),
+        ("grammar", imperfect, contrast),
         [
-            _wiki("grammar", imperfect, "думая", "to think"),
-            _wiki("grammar", imperfect, "учась", "to be learning"),
+            _wiki("grammar", imperfect, "думая", present),
+            _wiki("grammar", imperfect, "учась", present),
         ],
         [
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside the shown form?",
-                "думая",
-                "to think",
+                "Which English time relationship does the source state for imperfective forms?",
+                imperfective,
+                present,
                 [
-                    ("to be learning", "The frozen table writes this label beside a different form for to be learning.", "This label is paired with the learning form (to be learning)."),
-                    ("to say", "The frozen table writes this label beside a completed form for to say.", "This label is paired with a different row (to say)."),
+                    (past, past_only, "This relationship is the one stated for perfective ones (can only be past)."),
+                    (rare, rare_why, "This phrase is a different construction in the same span (very rarely past)."),
                 ],
                 feature="IMPERFECTIVE_ADVERB",
-                why="The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.",
+                why=present_why,
             ),
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside this shown form?",
-                "учась",
-                "to be learning",
+                "Which English time relationship belongs to imperfective forms?",
+                imperfective,
+                present,
                 [
-                    ("to think", "The frozen table writes this label beside a different form for to think.", "This label is paired with the thinking form (to think)."),
-                    ("to say", "The frozen table writes this label beside a completed form for to say.", "This label is paired with a different row (to say)."),
+                    (rare, rare_why, "This phrase is a different construction in the same span (very rarely past)."),
+                    (past, past_only, "This relationship is the one stated for perfective ones (can only be past)."),
                 ],
                 feature="IMPERFECTIVE_ADVERB",
-                why="The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.",
+                why=present_why,
             ),
             _distinction(
                 "grammar",
-                "Which admitted English gloss is written for the other table form, not the shown form?",
-                "думая",
-                "to be learning",
+                "Which English time relationship does the source state for these imperfective forms?",
+                imperfective,
+                present,
                 [
-                    ("to think", "The frozen table writes this label beside the shown form for to think.", "This label is the gloss of the shown form (to think)."),
-                    ("to say", "The frozen table writes this label beside a completed form for to say.", "This label is paired with a different row (to say)."),
+                    (past, past_only, "This relationship is the one stated for perfective ones (can only be past)."),
+                    (rare, rare_why, "This phrase names a different construction (very rarely past)."),
                 ],
                 feature="IMPERFECTIVE_ADVERB",
-                why="The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table.",
+                why=present_why,
             ),
         ],
-        extra=[_extra("grammar", imperfect, "to say")],
+        extra=[
+            _extra("grammar", imperfect, imperfective),
+            _extra("grammar", imperfect, past),
+            _extra("grammar", imperfect, rare),
+        ],
     )
     _bind(lesson, "obj-u28-imperfective-adverb", "imperfective-verbal-adverb", "grammar", imperfect)
     lesson.objective(
         "perfective-adverb",
-        "Choose the admitted gloss for the shown perfective adverbial form",
+        "Choose the time relationship the source states for perfective adverbial forms",
         "CONTRAST_SELECTION",
-        ("grammar", perfect, "most are formed with the suffix -в"),
+        ("grammar", perfect, perfect_contrast),
         [
-            _wiki("grammar", perfect, "сказав", "to say"),
-            _wiki("grammar", perfect, "научившись", "to learn"),
-            _wiki("grammar", perfect, "войдя", "to enter"),
+            _wiki("grammar", perfect, "сказав", past),
+            _wiki("grammar", perfect, "научившись", past),
+            _wiki("grammar", perfect, "войдя", past),
         ],
         [
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside the shown form?",
-                "сказав",
-                "to say",
+                "Which English time relationship does the source state for perfective forms?",
+                perfective,
+                past,
                 [
-                    ("to learn", "The frozen table writes this label beside a different form for to learn.", "This label is paired with the learning form (to learn)."),
-                    ("to enter", "The frozen table writes this label beside a different form for to enter.", "This label is paired with the entering form (to enter)."),
+                    (present, present_only, "This relationship is the one stated for imperfective ones (usually present)."),
+                    (rare, rare_why, "This phrase is a different construction in the same span (very rarely past)."),
                 ],
                 feature="PERFECTIVE_ADVERB",
-                why="The frozen line says most are formed with the listed suffix. This label is written beside the shown form.",
+                why=past_why,
             ),
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside this shown form?",
-                "научившись",
-                "to learn",
+                "Which English time relationship belongs to perfective forms?",
+                perfective,
+                past,
                 [
-                    ("to say", "The frozen table writes this label beside a different form for to say.", "This label is paired with the saying form (to say)."),
-                    ("to enter", "The frozen table writes this label beside a different form for to enter.", "This label is paired with the entering form (to enter)."),
+                    (rare, rare_why, "This phrase is a different construction in the same span (very rarely past)."),
+                    (present, present_only, "This relationship is the one stated for imperfective ones (usually present)."),
                 ],
                 feature="PERFECTIVE_ADVERB",
-                why="The frozen line says most are formed with the listed suffix. This label is written beside the shown form.",
+                why=past_why,
             ),
             _distinction(
                 "grammar",
-                "Which admitted English label is written beside the remaining shown form?",
-                "войдя",
-                "to enter",
+                "Which English time relationship does the source state for these perfective forms?",
+                perfective,
+                past,
                 [
-                    ("to say", "The frozen table writes this label beside a different form for to say.", "This label is paired with the saying form (to say)."),
-                    ("to learn", "The frozen table writes this label beside a different form for to learn.", "This label is paired with the learning form (to learn)."),
+                    (present, present_only, "This relationship is the one stated for imperfective ones (usually present)."),
+                    (rare, rare_why, "This phrase names a different construction (very rarely past)."),
                 ],
                 feature="PERFECTIVE_ADVERB",
-                why="The frozen line says most are formed with the listed suffix. This label is written beside the shown form.",
+                why=past_why,
             ),
+        ],
+        extra=[
+            _extra("grammar", perfect, perfective),
+            _extra("grammar", perfect, present),
+            _extra("grammar", perfect, rare),
         ],
     )
     _bind(lesson, "obj-u28-perfective-adverb", "perfective-verbal-adverb", "grammar", perfect)

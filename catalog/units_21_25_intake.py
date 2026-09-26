@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build proposed Units 21–25 from frozen admitted sources only.
 
-Russian strings are exact Wikibooks substrings. This module does not decline,
-conjugate, or compose new Russian. Unit 23 stays unprepared.
+Russian strings are exact retained substrings. This module does not decline,
+conjugate, or compose new Russian. Unit 24 stays unprepared without negation-scope.
 """
 
 from __future__ import annotations
@@ -70,6 +70,7 @@ class FrozenSources:
             "wikibooks-cases-4195114",
             "wikibooks-names-4660786",
             "wikibooks-useful-words-3353859",
+            "pressbooks-usa-grammar-87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -416,25 +417,15 @@ def build_units_21_25() -> dict:
     prepared = [
         _unit(builder, 21, "Admitted object and purpose lines", "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.", 2, populate, []),
         _unit(builder, 22, "Admitted numeral forms", "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.", 4, populate, []),
-        _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.", 4, populate, [
-            ("placement", "Placement contrasts stay in the copy you own", "Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.", "Placement contrasts have no admitted frozen span."),
+        _unit(builder, 23, "Admitted time expressions", "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Qualified review is pending.", 10, populate, []),
+        _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.", 4, populate, [
+            ("placement", "Placement contrasts stay in the copy you own", "Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.", "Placement contrasts have no admitted frozen span."),
         ]),
         _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.", 8, populate, [
             ("nickname-rule", "A general nickname-formation rule stays in the copy you own", "A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.", "A general nickname-formation rule has no admitted frozen span."),
         ]),
     ]
-    closed_unit = _closed_unit(
-        builder, 23, "Duration stays unprepared",
-        "Proposed Unit 23 is not prepared. Bounded ago, during, and step-out lines do not establish elapsed time and duration. Hour rows, year rows, and minute rows are not duration instruction. Qualified review is pending.",
-        [
-            ("duration", "Elapsed time and duration stay in the copy you own", "Elapsed time and duration stay in the copy you own. Bounded ago, during, and step-out lines do not establish that system. Hour rows, year rows, and minute rows are not that instruction.", "Elapsed time and duration have no admitted frozen span. Bounded ago, during, and step-out lines do not establish that system."),
-        ],
-    )
-    from batch_b_units_21_25 import add_unit_23
-
-    add_unit_23(builder, closed_unit)
-    closed = [closed_unit]
-    units = prepared + closed
+    units = prepared
     _assert(builder, units)
     from batch_a_remaining_intake import rights_record, source_record
 
@@ -459,8 +450,13 @@ def _unit(builder, number, title, body, minimum, populate, gaps):
     from batch_b_units_21_25 import add_batch_b
 
     lesson = Lesson(builder, number)
-    populate(lesson, number)
-    add_batch_b(lesson)
+    if number == 23:
+        from batch_c_unit_23 import add_unit_23
+
+        add_unit_23(lesson)
+    else:
+        populate(lesson, number)
+        add_batch_b(lesson)
     independent = sum(len(spec["checks"]) for spec in lesson.specs)
     if independent < minimum:
         raise SystemExit(f"Unit {number} has {independent} independent checks, needs {minimum}")
@@ -509,7 +505,7 @@ def _attribution_reference() -> dict:
     return {
         "id": REFERENCE,
         "title": "Units 21–25 source notice",
-        "summary": "Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.",
+        "summary": "Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.",
         "detail": (
             "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. "
             "The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. "
@@ -518,7 +514,8 @@ def _attribution_reference() -> dict:
             "English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. "
             "Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. "
             "The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. "
-            "Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending."
+            "Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. "
+            "Placement contrasts and a general nickname-formation rule are not prepared. Review is pending."
         ),
         "introducedInUnit": 21,
         "sourceId": WIKIBOOKS_ID,
@@ -585,19 +582,16 @@ def _assert(builder: Builder, units: list[dict]) -> None:
                 if excluded in host:
                     raise SystemExit(f"Unit {number} ships excluded text: {excluded}")
     from batch_b_units_21_25 import BOUNDED_TIME_SPANS
-    from units_3_5_intake import unfold_wiki_labels
+    from batch_c_unit_23 import BEGIN_SPAN, DURATION_SPAN, DURING_EVENT_SPAN, ELAPSED_SPAN, RANGE_SPAN
 
-    bounded_visible = []
-    for span in BOUNDED_TIME_SPANS:
-        bounded_visible.append(span)
-        bounded_visible.append(unfold_wiki_labels(span))
+    admitted_time = {RANGE_SPAN, BEGIN_SPAN, DURING_EVENT_SPAN, DURATION_SPAN, ELAPSED_SPAN}
     for record in builder.provenance:
-        if record["unitNumber"] != 23 or not CYRILLIC.search(record["shippedText"]):
+        if record["unitNumber"] != 23:
             continue
-        if not any(record["shippedText"] in visible for visible in bounded_visible):
-            raise SystemExit(f"Unit 23 shipped Russian outside a bounded time span: {record['shippedText']!r}")
-        if record["originalSourceText"] not in BOUNDED_TIME_SPANS:
-            raise SystemExit("Unit 23 provenance is not one of the bounded time spans")
+        if record["originalSourceText"] in BOUNDED_TIME_SPANS:
+            raise SystemExit("Unit 23 provenance uses a bounded Wikipedia time span")
+        if record["originalSourceText"] not in admitted_time:
+            raise SystemExit("Unit 23 provenance is not an admitted Pressbooks time span")
 
 
 if __name__ == "__main__":
