@@ -1763,6 +1763,9 @@ internal object V2Validator {
         distractors: List<V2ProvenanceRecord>,
     ): String? {
         val table = BatchBSources.GOVERNED_GLOSSES[cue.originalSourceText] ?: return null
+        if (cue.originalSourceText == BatchBSources.REFLEXIVE_SPAN && cue.shippedText == BatchBSources.ISOLATED_REFLEXIVE) {
+            return ""
+        }
         val group = listOf(cue, answer) + distractors
         val allowed = table[cue.shippedText]
         if (
@@ -2178,6 +2181,28 @@ internal object V2Validator {
     private val LINE_LABEL_PROMPT = Regex(
         "(?i)which admitted (?:[a-z]+ ){0,4}(?:line|label) is the\\b",
     )
+    private val CONCEPT_CHECK_OBJECTIVES = setOf(
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+    )
+    /**
+     * Independent concept checks cannot be answered by retrieving a source position.
+     * Rewording "written after the equals sign" still names the layout, not the distinction.
+     */
+    private val SOURCE_LAYOUT_RECALL = Regex(
+        "(?i)(?:" +
+            "equals\\s+sign|" +
+            "frozen\\s+line|" +
+            "\\bwritten\\s+(?:after|for|on|in|beside|next\\s+to)\\b|" +
+            "\\bcolumn\\b|" +
+            "\\bbeside\\s+(?:the\\s+)?(?:shown\\s+)?tag\\b|" +
+            "\\bg\\s*=\\s*[fmn]\\b" +
+            ")",
+    )
     private val CIRCULAR_RATIONALE = Regex(
         "(?i)^does this (?:answer|row|line)\\b|^does the admitted record show the governed contrast\\??$",
     )
@@ -2190,6 +2215,14 @@ internal object V2Validator {
             errors += "Item ${item.id} prompt discloses its classification"
             errors += "Item ${item.id} tests line-label recall"
         }
+        if (assessment.independent &&
+            item.objectiveId in CONCEPT_CHECK_OBJECTIVES &&
+            SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt)
+        ) {
+            errors += "Item ${item.id} prompt discloses its classification"
+            errors += "Item ${item.id} tests line-label recall"
+        }
+        errors += reflexiveRelationshipErrors(item)
         val hosted = listOf(why) + item.distractorRationales + assessment.distractorDifference
         if (hosted.any { CIRCULAR_RATIONALE.containsMatchIn(it.trim()) } || why.trim().endsWith("?")) {
             errors += "Item ${item.id} circular feedback"
@@ -2252,10 +2285,48 @@ internal object V2Validator {
     private fun citesFrozenEvidence(why: String, originals: List<String>): Boolean {
         if (why.length < 12) return false
         return originals.any { original ->
-            original.length >= 12 && original.windowed(12).any { window ->
-                window.any { it.isLetter() } && window in why
+            citationTexts(original).any { text ->
+                text.length >= 12 && text.windowed(12).any { window ->
+                    window.any { it.isLetter() } && window in why
+                }
             }
         }
+    }
+
+    /** Emphasis marks are mechanical wiki markup. The self line's equation is contiguous only after they are removed. */
+    private fun citationTexts(original: String): List<String> =
+        listOf(original, original.replace("'''", "").replace("''", ""))
+
+    /**
+     * The self sentence is paired with its own translation.
+     * A wife-line window, or the isolated token себя́, does not validate that pair.
+     */
+    private fun reflexiveRelationshipErrors(item: V2CheckItem): List<String> {
+        if (item.objectiveId != "obj-u21-object-reference") return emptyList()
+        val shown = item.promptLetter.orEmpty()
+        val why = item.assessment?.whyAnswerDemonstratesObjective.orEmpty()
+        val feedback = item.feedback
+        val errors = mutableListOf<String>()
+        if (shown == BatchBSources.ISOLATED_REFLEXIVE) {
+            errors += "Item ${item.id} isolated reflexive token does not inherit the sentence translation"
+        }
+        if (shown == BatchBSources.SELF_SENTENCE) {
+            if (!why.contains(BatchBSources.SELF_LINE_CITE) || !feedback.contains(BatchBSources.SELF_LINE_CITE)) {
+                errors += "Item ${item.id} self relationship citation is not the self line"
+            }
+            if (why.contains(BatchBSources.WIFE_LINE_CITE) || feedback.contains(BatchBSources.WIFE_LINE_CITE)) {
+                errors += "Item ${item.id} wife-line citation does not validate the self relationship"
+            }
+        }
+        if (shown == BatchBSources.WIFE_SENTENCE) {
+            if (!why.contains(BatchBSources.WIFE_LINE_CITE) || !feedback.contains(BatchBSources.WIFE_LINE_CITE)) {
+                errors += "Item ${item.id} wife relationship citation is not the wife line"
+            }
+            if (why.contains(BatchBSources.SELF_LINE_CITE) || feedback.contains(BatchBSources.SELF_LINE_CITE)) {
+                errors += "Item ${item.id} self-line citation does not validate the wife relationship"
+            }
+        }
+        return errors
     }
 
     /**

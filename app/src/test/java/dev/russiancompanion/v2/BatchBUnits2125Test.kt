@@ -114,6 +114,97 @@ class BatchBUnits2125Test {
     }
 
     @Test
+    fun reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation() {
+        val pack = pack()
+        val self = shipped(pack, "obj-u21-object-reference", BatchBSources.SELF_SENTENCE)
+        val myself = shipped(pack, "obj-u21-object-reference", "I love myself")
+        val wife = shipped(pack, "obj-u21-object-reference", BatchBSources.WIFE_SENTENCE)
+        val wifeGloss = shipped(pack, "obj-u21-object-reference", "I love my wife")
+        assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(self, myself, listOf(wifeGloss)))
+        assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(wife, wifeGloss, listOf(myself)))
+        assertNull(V2Validator.classifyRelation(self, wifeGloss, listOf(myself)))
+        assertNull(V2Validator.classifyRelation(wife, myself, listOf(wifeGloss)))
+        val isolated = self.copy(itemId = "probe-isolated-reflexive", shippedText = BatchBSources.ISOLATED_REFLEXIVE)
+        assertNull(V2Validator.classifyRelation(isolated, myself, listOf(wifeGloss)))
+        assertTrue(pack.items.none { it.promptLetter == BatchBSources.ISOLATED_REFLEXIVE })
+
+        val selfItem = pack.items.single {
+            it.objectiveId == "obj-u21-object-reference" &&
+                it.promptLetter == BatchBSources.SELF_SENTENCE &&
+                it.assessment?.independent == true
+        }
+        val assessment = checkNotNull(selfItem.assessment)
+        val why = assessment.whyAnswerDemonstratesObjective
+        assertTrue(why, why.contains(BatchBSources.SELF_LINE_CITE))
+        assertFalse(why, why.contains(BatchBSources.WIFE_LINE_CITE))
+        val wifeCited = why.replace(BatchBSources.SELF_LINE_CITE, BatchBSources.WIFE_LINE_CITE)
+        val feedback = selfItem.feedback.replace(BatchBSources.SELF_LINE_CITE, BatchBSources.WIFE_LINE_CITE)
+        val swapped = V2Validator.validate(
+            replaceItem(
+                pack,
+                selfItem.copy(
+                    feedback = feedback,
+                    assessment = assessment.copy(whyAnswerDemonstratesObjective = wifeCited),
+                ),
+            ),
+        ).errors.joinToString("\n")
+        assertTrue(swapped, swapped.contains("wife-line citation does not validate the self relationship"))
+        assertTrue(swapped, swapped.contains("self relationship citation is not the self line"))
+    }
+
+    @Test
+    fun independentChecksRejectSourceLayoutRecall() {
+        val pack = pack()
+        val objectives = listOf(
+            "obj-u21-object-reference",
+            "obj-u21-purpose",
+            "obj-u22-declension",
+            "obj-u22-both-forms",
+            "obj-u22-half-forms",
+            "obj-u22-collective",
+        )
+        val rephrasings = listOf(
+            "Which admitted gloss is written after the equals sign?",
+            "Which admitted gloss is written for the shown form?",
+            "Which admitted gloss is written on the frozen line?",
+            "Which admitted form is written in the column?",
+            "Which admitted form is written beside the tag?",
+        )
+        objectives.forEach { objectiveId ->
+            val independent = pack.items.filter {
+                it.objectiveId == objectiveId && it.assessment?.independent == true
+            }
+            assertTrue(objectiveId, independent.size >= 2)
+            independent.forEach { item ->
+                assertFalse(item.id + " " + item.prompt, sourceLayout(item.prompt))
+                assertFalse(item.id, item.prompt.contains("g=f") || item.prompt.contains("g=m"))
+            }
+            val donor = independent.first()
+            rephrasings.forEach { prompt ->
+                val errors = V2Validator.validate(replaceItem(pack, donor.copy(prompt = prompt))).errors.joinToString("\n")
+                assertTrue("$objectiveId $prompt\n$errors", errors.contains("${donor.id} tests line-label recall"))
+            }
+        }
+        val layout = "Which admitted gloss is written after the equals sign?"
+        val blocked = pack.copy(
+            items = pack.items.map { item ->
+                if (item.objectiveId == "obj-u21-object-reference" && item.assessment?.independent == true) {
+                    item.copy(prompt = layout)
+                } else {
+                    item
+                }
+            },
+        )
+        val blockedErrors = V2Validator.validate(blocked).errors.joinToString("\n")
+        assertTrue(blockedErrors, blockedErrors.contains("tests line-label recall"))
+        assertTrue(blockedErrors, blockedErrors.contains("cap-u21-reflexive-object has no reviewable instruction and check chain"))
+        val learner = pack.items.filter { it.objectiveId == "obj-u22-half-forms" }.flatMap { item ->
+            listOf(item.prompt, item.promptLetter.orEmpty(), item.answer, item.feedback) + item.options
+        }
+        assertTrue(learner.none { it.contains("g=f") || it.contains("g=m") })
+    }
+
+    @Test
     fun wrongSourceRevisionUnitAndObjectiveFail() {
         val pack = pack()
         val capability = pack.sourceCapabilities.single { it.supportedClaim == "one-and-a-half" }
@@ -281,6 +372,17 @@ class BatchBUnits2125Test {
 
     private fun replaceCapability(pack: V2CurriculumPack, id: String, mutated: V2SourceCapability) =
         pack.copy(sourceCapabilities = pack.sourceCapabilities.map { if (it.id == id) mutated else it })
+
+    private fun sourceLayout(prompt: String): Boolean = Regex(
+        "(?i)(?:" +
+            "equals\\s+sign|" +
+            "frozen\\s+line|" +
+            "\\bwritten\\s+(?:after|for|on|in|beside|next\\s+to)\\b|" +
+            "\\bcolumn\\b|" +
+            "\\bbeside\\s+(?:the\\s+)?(?:shown\\s+)?tag\\b|" +
+            "\\bg\\s*=\\s*[fmn]\\b" +
+            ")",
+    ).containsMatchIn(prompt)
 
     private fun sha256(text: String): String {
         val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))

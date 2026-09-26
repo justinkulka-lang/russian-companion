@@ -25328,7 +25328,7 @@
         "I love my wife"
       ],
       "answer": "I love myself",
-      "feedback": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\").",
+      "feedback": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").",
       "objectiveId": "obj-u21-object-reference",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -25354,7 +25354,7 @@
           "",
           "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"жену́ = I love\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\").",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").",
         "contrastMembers": [
           "I love myself",
           "I love my wife"
@@ -25372,7 +25372,7 @@
       "id": "u21-i-object-reference-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written after the equals sign on the shown line?",
+      "prompt": "Choose the English meaning of the shown sentence.",
       "promptLetter": "Я люблю́ (свою́) жену́",
       "options": [
         "I love my wife",
@@ -25386,7 +25386,7 @@
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\")."
+        "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\")."
       ],
       "assessment": {
         "testedFeature": "REFLEXIVE_WIFE",
@@ -25403,7 +25403,7 @@
         ],
         "distractorDifference": [
           "",
-          "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\")."
+          "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\")."
         ],
         "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"жену́ = I love\").",
         "contrastMembers": [
@@ -25423,14 +25423,14 @@
       "id": "u21-i-object-reference-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written after the equals sign on the shown line?",
-      "promptLetter": "себя́",
+      "prompt": "Choose the English meaning of the shown sentence.",
+      "promptLetter": "Я люблю́ себя́",
       "options": [
         "I love myself",
         "I love my wife"
       ],
       "answer": "I love myself",
-      "feedback": "The frozen source pairs the shown form \"себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\").",
+      "feedback": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").",
       "objectiveId": "obj-u21-object-reference",
       "sourceId": "src-wikipedia-russian-grammar-1369617627",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
@@ -25440,7 +25440,7 @@
         "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"жену́ = I love\")."
       ],
       "assessment": {
-        "testedFeature": "REFLEXIVE_OBJECT",
+        "testedFeature": "REFLEXIVE_MYSELF_SENTENCE",
         "evidenceMode": "EXPLICIT_SOURCE_PAIR",
         "contrastSetId": "u21-object-reference-2",
         "cueLanguage": "ru",
@@ -25456,14 +25456,14 @@
           "",
           "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"жену́ = I love\")."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"себя́\" with the admitted gloss \"I love myself\" (\"жену́ = I love\").",
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").",
         "contrastMembers": [
           "I love myself",
           "I love my wife"
         ],
         "relationKind": "EXPLICIT_SOURCE_PAIR",
         "relationParticipantIds": [
-          "prov-u21-object-reference-x-0",
+          "prov-ex-u21-object-reference-0-ru",
           "prov-ex-u21-object-reference-0-en",
           "prov-ex-u21-object-reference-1-en"
         ],
@@ -25531,7 +25531,7 @@
       "id": "u21-i-purpose-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written for the shown conjunction?",
+      "prompt": "Choose the English meaning of the shown word.",
       "promptLetter": "если",
       "options": [
         "if",
@@ -25588,7 +25588,7 @@
       "id": "u21-i-purpose-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written for the shown conjunction?",
+      "prompt": "Choose the English meaning of the shown word.",
       "promptLetter": "потому что",
       "options": [
         "because",
@@ -26044,7 +26044,7 @@
       "id": "u22-i-declension-1",
       "kind": "CASE_RECOGNITION",
       "language": "en",
-      "prompt": "Which admitted case name is written on the frozen line with the shown form?",
+      "prompt": "Which case is the shown form?",
       "promptLetter": "двумя",
       "options": [
         "Творительный",
@@ -26101,7 +26101,7 @@
       "id": "u22-i-declension-2",
       "kind": "CASE_RECOGNITION",
       "language": "en",
-      "prompt": "Which admitted case name is written on the frozen line with the shown form?",
+      "prompt": "Which case is the shown form?",
       "promptLetter": "(о) двух / (об) обоих / (о) полутора",
       "options": [
         "Предложный",
@@ -26215,7 +26215,7 @@
       "id": "u22-i-both-forms-1",
       "kind": "CASE_RECOGNITION",
       "language": "en",
-      "prompt": "Which admitted case name is written on the frozen line with the shown form?",
+      "prompt": "Which case is the shown form?",
       "promptLetter": "обоим",
       "options": [
         "Дательный",
@@ -26272,7 +26272,7 @@
       "id": "u22-i-both-forms-2",
       "kind": "CASE_RECOGNITION",
       "language": "en",
-      "prompt": "Which admitted case name is written on the frozen line with the shown form?",
+      "prompt": "Which case is the shown form?",
       "promptLetter": "обеими",
       "options": [
         "Творительный",
@@ -26329,7 +26329,7 @@
       "id": "u22-i-both-forms-3",
       "kind": "CASE_RECOGNITION",
       "language": "en",
-      "prompt": "Which admitted case name is written on the frozen line with the shown form?",
+      "prompt": "Which case is the shown form?",
       "promptLetter": "обоими",
       "options": [
         "Творительный",
@@ -26443,7 +26443,64 @@
       "id": "u22-i-half-forms-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written for the shown form?",
+      "prompt": "Choose the English meaning of the shown phrase.",
+      "promptLetter": "полторы́ мину́ты",
+      "options": [
+        "1.5 minutes",
+        "1.5 roubles",
+        "one and a half hours / an hour and a half"
+      ],
+      "answer": "1.5 minutes",
+      "feedback": "The frozen source pairs the shown form \"полторы́ мину́ты\" with the admitted gloss \"1.5 minutes\" (\"In the nominative and accusative\").",
+      "objectiveId": "obj-u22-half-forms",
+      "sourceId": "src-enwiktionary-poltora-89737719",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"полтора́ рубля́\" with the admitted gloss \"1.5 roubles\" (\"1.5 roubles\").",
+        "The frozen source pairs the shown form \"полтора́ часа́\" with the admitted gloss \"one and a half hours / an hour and a half\" (\"one and a half hours / an hour and a half\")."
+      ],
+      "assessment": {
+        "testedFeature": "HALF_MINUTES",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u22-half-forms-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u22-half-forms-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u22-half-forms-0-en",
+          "prov-u22-half-forms-x-2"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"полтора́ рубля́\" with the admitted gloss \"1.5 roubles\" (\"1.5 roubles\").",
+          "The frozen source pairs the shown form \"полтора́ часа́\" with the admitted gloss \"one and a half hours / an hour and a half\" (\"one and a half hours / an hour and a half\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"полторы́ мину́ты\" with the admitted gloss \"1.5 minutes\" (\"In the nominative and accusative\").",
+        "contrastMembers": [
+          "1.5 minutes",
+          "1.5 roubles",
+          "one and a half hours / an hour and a half"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u22-half-forms-1-ru",
+          "prov-ex-u22-half-forms-1-en",
+          "prov-ex-u22-half-forms-0-en",
+          "prov-u22-half-forms-x-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u22-i-half-forms-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Choose the English meaning of the shown phrase.",
       "promptLetter": "из полу́тора рубле́й",
       "options": [
         "from 1.5 roubles",
@@ -26464,7 +26521,7 @@
       "assessment": {
         "testedFeature": "HALF_FROM",
         "evidenceMode": "EXPLICIT_SOURCE_PAIR",
-        "contrastSetId": "u22-half-forms-1",
+        "contrastSetId": "u22-half-forms-2",
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
@@ -26497,10 +26554,10 @@
       }
     },
     {
-      "id": "u22-i-half-forms-2",
+      "id": "u22-i-half-forms-3",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted English gloss is written for the shown form?",
+      "prompt": "Choose the English meaning of the shown phrase.",
       "promptLetter": "к полу́тора рубля́м",
       "options": [
         "to 1.5 roubles",
@@ -26521,7 +26578,7 @@
       "assessment": {
         "testedFeature": "HALF_TO",
         "evidenceMode": "EXPLICIT_SOURCE_PAIR",
-        "contrastSetId": "u22-half-forms-2",
+        "contrastSetId": "u22-half-forms-3",
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
@@ -26551,63 +26608,6 @@
           "prov-u22-half-forms-x-1"
         ],
         "responseKind": "ENGLISH_CLASSIFICATION"
-      }
-    },
-    {
-      "id": "u22-i-half-forms-3",
-      "kind": "CONTRAST_SELECTION",
-      "language": "en",
-      "prompt": "Which admitted form is written beside the shown gender tag?",
-      "promptLetter": "g=f",
-      "options": [
-        "полторы́",
-        "полтора́",
-        "полу́тора"
-      ],
-      "answer": "полторы́",
-      "feedback": "The frozen source pairs the shown form \"g=f\" with the admitted gloss \"полторы́\" (\"полторы́|g=f\").",
-      "objectiveId": "obj-u22-half-forms",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "containsGeneratedRussian": false,
-      "distractorRationales": [
-        "",
-        "The frozen source pairs the shown form \"g=m\" with the admitted gloss \"полтора́\" (\"g=m\").",
-        "из полу́тора рубле́й"
-      ],
-      "assessment": {
-        "testedFeature": "HALF_GENDER",
-        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
-        "contrastSetId": "u22-half-forms-3",
-        "cueLanguage": "rule",
-        "independent": true,
-        "answerSourceIds": [
-          "prov-u22-half-forms-x-5"
-        ],
-        "distractorSourceIds": [
-          "",
-          "prov-u22-half-forms-x-6",
-          "prov-u22-half-forms-x-7"
-        ],
-        "distractorDifference": [
-          "",
-          "The frozen source pairs the shown form \"g=m\" with the admitted gloss \"полтора́\" (\"g=m\").",
-          "из полу́тора рубле́й"
-        ],
-        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"g=f\" with the admitted gloss \"полторы́\" (\"полторы́|g=f\").",
-        "contrastMembers": [
-          "полторы́",
-          "полтора́",
-          "полу́тора"
-        ],
-        "relationKind": "EXPLICIT_SOURCE_PAIR",
-        "relationParticipantIds": [
-          "prov-u22-half-forms-x-4",
-          "prov-u22-half-forms-x-5",
-          "prov-u22-half-forms-x-6",
-          "prov-u22-half-forms-x-7"
-        ],
-        "responseKind": "RUSSIAN_TOKEN"
       }
     },
     {
@@ -26671,7 +26671,7 @@
       "id": "u22-i-collective-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted form is written in the collective numbers column for the shown cardinal?",
+      "prompt": "Choose the collective number for the shown cardinal.",
       "promptLetter": "три",
       "options": [
         "тро́е",
@@ -26728,7 +26728,7 @@
       "id": "u22-i-collective-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted form is written in the collective numbers column for the shown cardinal?",
+      "prompt": "Choose the collective number for the shown cardinal.",
       "promptLetter": "четы́ре",
       "options": [
         "че́тверо",
@@ -50287,7 +50287,7 @@
         {
           "id": "obj-u21-object-reference",
           "unitNumber": 21,
-          "title": "Choose the admitted gloss written after the equals sign",
+          "title": "Choose the English meaning of the shown sentence",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u21-st-orient",
@@ -50312,7 +50312,7 @@
         {
           "id": "obj-u21-purpose",
           "unitNumber": 21,
-          "title": "Choose the admitted gloss written for the shown conjunction",
+          "title": "Choose the English meaning of the shown word",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u21-st-orient",
@@ -50517,7 +50517,7 @@
         },
         {
           "id": "u21-s-object-reference",
-          "title": "Choose the admitted gloss written after the equals sign",
+          "title": "Choose the English meaning of the shown sentence",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u21-object-reference"
@@ -50612,7 +50612,7 @@
         },
         {
           "id": "u21-s-purpose",
-          "title": "Choose the admitted gloss written for the shown conjunction",
+          "title": "Choose the English meaning of the shown word",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u21-purpose"
@@ -50851,7 +50851,7 @@
         {
           "id": "obj-u22-declension",
           "unitNumber": 22,
-          "title": "Choose the admitted case name written with the shown form",
+          "title": "Choose the case of the shown form",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u22-st-orient",
@@ -50878,7 +50878,7 @@
         {
           "id": "obj-u22-both-forms",
           "unitNumber": 22,
-          "title": "Choose the admitted case name written with the shown both-form",
+          "title": "Choose the case of the shown form",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u22-st-orient",
@@ -50907,7 +50907,7 @@
         {
           "id": "obj-u22-half-forms",
           "unitNumber": 22,
-          "title": "Choose the admitted half-form gloss or gender tag",
+          "title": "Choose the English meaning of the shown phrase",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u22-st-orient",
@@ -50936,7 +50936,7 @@
         {
           "id": "obj-u22-collective",
           "unitNumber": 22,
-          "title": "Choose the admitted collective-column form",
+          "title": "Choose the collective number for the shown cardinal",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u22-st-orient",
@@ -51256,7 +51256,7 @@
         },
         {
           "id": "u22-s-declension",
-          "title": "Choose the admitted case name written with the shown form",
+          "title": "Choose the case of the shown form",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u22-declension"
@@ -51369,7 +51369,7 @@
         },
         {
           "id": "u22-s-both-forms",
-          "title": "Choose the admitted case name written with the shown both-form",
+          "title": "Choose the case of the shown form",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u22-both-forms"
@@ -51484,7 +51484,7 @@
         },
         {
           "id": "u22-s-half-forms",
-          "title": "Choose the admitted half-form gloss or gender tag",
+          "title": "Choose the English meaning of the shown phrase",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u22-half-forms"
@@ -51599,7 +51599,7 @@
         },
         {
           "id": "u22-s-collective",
-          "title": "Choose the admitted collective-column form",
+          "title": "Choose the collective number for the shown cardinal",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u22-collective"
@@ -100665,31 +100665,6 @@
       "sourceRevision": "1369617627",
       "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
       "originalSourceText": "** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''себя́''' = I love '''myself'''\"''",
-      "shippedText": "себя́",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
-      "contentHash": "bbde0852804783aa204fff51745ab7f2a49921e8bfa64981878532c2a4088964",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u21-object-reference-x-1",
-      "unitNumber": 21,
-      "objectiveId": "obj-u21-object-reference",
-      "recordType": "label",
-      "sourceId": "src-wikipedia-russian-grammar-1369617627",
-      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
-      "sourceRevision": "1369617627",
-      "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
-      "originalSourceText": "** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''себя́''' = I love '''myself'''\"''",
       "shippedText": "жену́ = I love",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
@@ -100706,7 +100681,7 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u21-object-reference-x-1-r0",
+      "itemId": "prov-u21-object-reference-x-0-r0",
       "unitNumber": 21,
       "objectiveId": "obj-u21-object-reference",
       "recordType": "example",
@@ -103232,181 +103207,6 @@
     },
     {
       "itemId": "prov-u22-half-forms-x-4",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "g=f",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "f8c66c35f425bfe7b7a6ae8ad390ac2b998fc0d4772509e11ce8b2ebcb6623da",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-5",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "полторы́",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "54eaa4d9a6ba348bba68f9665a202667b72c788531d7e5299ad13ec5e6631418",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-6",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "полтора́",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "341039e361c5b623b6295047483bdf6048acd237dd336ec8cfb71ecdeed5a0d0",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-7",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "полу́тора",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "9448eea86f628af36ad6964f561672fc233b3023270e64972c36712d9d0e32b6",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-8",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "g=m",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "6f5114c43aa533275d9a6cedef6d1822ba47f2d36200fb5e94c921dfa9b2c3f4",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-9",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "label",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "полторы́|g=f",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "bc45d8758768536e450f744b843d1bab098d36b36fc56b9b31bfb24d0b3cdf31",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-9-r0",
-      "unitNumber": 22,
-      "objectiveId": "obj-u22-half-forms",
-      "recordType": "example",
-      "sourceId": "src-enwiktionary-poltora-89737719",
-      "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
-      "sourceRevision": "89737719",
-      "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
-      "originalSourceText": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
-      "shippedText": "полторы́",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
-      "contentHash": "54eaa4d9a6ba348bba68f9665a202667b72c788531d7e5299ad13ec5e6631418",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u22-half-forms-x-10",
       "unitNumber": 22,
       "objectiveId": "obj-u22-half-forms",
       "recordType": "label",
@@ -115144,1403 +114944,1427 @@
     {
       "id": "en-u21-024",
       "unitNumber": 21,
-      "text": "Which admitted English gloss is written for the shown conjunction?",
+      "text": "Choose the English meaning of the shown sentence.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-025",
       "unitNumber": 21,
-      "text": "Admitted object and purpose lines",
+      "text": "Which admitted English gloss is written for the shown conjunction?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-026",
       "unitNumber": 21,
-      "text": "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.",
+      "text": "Choose the English meaning of the shown word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-027",
       "unitNumber": 21,
-      "text": "Open Lesson 21 in the copy you own. The app records do not replace that lesson.",
+      "text": "Admitted object and purpose lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-028",
       "unitNumber": 21,
-      "text": "Guided practice",
+      "text": "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-029",
       "unitNumber": 21,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Open Lesson 21 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-030",
       "unitNumber": 21,
-      "text": "Remediation",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-031",
       "unitNumber": 21,
-      "text": "Independent checks",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-032",
       "unitNumber": 21,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-033",
       "unitNumber": 21,
-      "text": "Work Lesson 21 in your copy",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-034",
       "unitNumber": 21,
-      "text": "Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-035",
       "unitNumber": 21,
-      "text": "Open Lesson 21 in your copy and complete its lesson work.",
+      "text": "Work Lesson 21 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-036",
       "unitNumber": 21,
-      "text": "Record Lesson 21 book work",
+      "text": "Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-037",
       "unitNumber": 21,
-      "text": "When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Open Lesson 21 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u21-038",
       "unitNumber": 21,
+      "text": "Record Lesson 21 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u21-039",
+      "unitNumber": 21,
+      "text": "When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u21-040",
+      "unitNumber": 21,
       "text": "Self-attest only after the Lesson 21 work in your copy.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u22-039",
-      "unitNumber": 22,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u22-040",
-      "unitNumber": 22,
-      "text": "The frozen examples place two girls with two, not with one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-041",
       "unitNumber": 22,
-      "text": "The frozen examples place five girls with five, not with one.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-042",
       "unitNumber": 22,
-      "text": "Two girls follows two, not a form of one.",
+      "text": "The frozen examples place two girls with two, not with one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-043",
       "unitNumber": 22,
-      "text": "Five girls follows five, not a form of one.",
+      "text": "The frozen examples place five girls with five, not with one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-044",
       "unitNumber": 22,
-      "text": "The frozen note says a form of one should be used in the proper form. This line is the other example with one.",
+      "text": "Two girls follows two, not a form of one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-045",
       "unitNumber": 22,
-      "text": "The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?",
+      "text": "Five girls follows five, not a form of one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-046",
       "unitNumber": 22,
-      "text": "Admitted instruction",
+      "text": "The frozen note says a form of one should be used in the proper form. This line is the other example with one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-047",
       "unitNumber": 22,
-      "text": "The frozen examples place one boy with a form of one, not with two, three, or four.",
+      "text": "The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-048",
       "unitNumber": 22,
-      "text": "The frozen examples place five girls with the five group, not with two, three, or four.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-049",
       "unitNumber": 22,
-      "text": "One boy follows a form of one, not two, three, or four.",
+      "text": "The frozen examples place one boy with a form of one, not with two, three, or four.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-050",
       "unitNumber": 22,
-      "text": "Five girls follows the five group, not two, three, or four.",
+      "text": "The frozen examples place five girls with the five group, not with two, three, or four.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-051",
       "unitNumber": 22,
-      "text": "The frozen note says two, three, and four require the following item to be presented together. This line is the three example.",
+      "text": "One boy follows a form of one, not two, three, or four.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-052",
       "unitNumber": 22,
-      "text": "The frozen note groups two, three, and four together. Which admitted line is another example from that group?",
+      "text": "Five girls follows the five group, not two, three, or four.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-053",
       "unitNumber": 22,
-      "text": "The frozen examples place one boy with a form of one, not with the five group.",
+      "text": "The frozen note says two, three, and four require the following item to be presented together. This line is the three example.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-054",
       "unitNumber": 22,
-      "text": "The frozen examples place two girls with two, not with the five group.",
+      "text": "The frozen note groups two, three, and four together. Which admitted line is another example from that group?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-055",
       "unitNumber": 22,
-      "text": "One boy follows a form of one, not the five group.",
+      "text": "The frozen examples place one boy with a form of one, not with the five group.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-056",
       "unitNumber": 22,
-      "text": "Two girls follows two, not the five group.",
+      "text": "The frozen examples place two girls with two, not with the five group.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-057",
       "unitNumber": 22,
-      "text": "The frozen note says these numerals require their attached items in the later group. This line is another example from that group.",
+      "text": "One boy follows a form of one, not the five group.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-058",
       "unitNumber": 22,
-      "text": "The frozen note groups five through twenty together. Which admitted line is another example from that group?",
+      "text": "Two girls follows two, not the five group.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-059",
       "unitNumber": 22,
-      "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in one.",
+      "text": "The frozen note says these numerals require their attached items in the later group. This line is another example from that group.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-060",
       "unitNumber": 22,
-      "text": "Sixty-nine words ends in nine, so it is not the example that ends in one.",
+      "text": "The frozen note groups five through twenty together. Which admitted line is another example from that group?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-061",
       "unitNumber": 22,
-      "text": "This example ends in three, not in one.",
+      "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-062",
       "unitNumber": 22,
-      "text": "This example ends in nine, not in one.",
+      "text": "Sixty-nine words ends in nine, so it is not the example that ends in one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-063",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.",
+      "text": "This example ends in three, not in one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-064",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?",
+      "text": "This example ends in nine, not in one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-065",
       "unitNumber": 22,
-      "text": "Forty-one years ends in one, so it is not the example that ends in nine.",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-066",
       "unitNumber": 22,
-      "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in nine.",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-067",
       "unitNumber": 22,
-      "text": "This example ends in one, not in nine.",
+      "text": "Forty-one years ends in one, so it is not the example that ends in nine.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-068",
       "unitNumber": 22,
-      "text": "This example ends in three, not in nine.",
+      "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in nine.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-069",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.",
+      "text": "This example ends in one, not in nine.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-070",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?",
+      "text": "This example ends in three, not in nine.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-071",
       "unitNumber": 22,
-      "text": "Sixty-nine words ends in nine, so it is not the example that ends in three.",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-072",
       "unitNumber": 22,
-      "text": "Forty-one years ends in one, so it is not the example that ends in three.",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-073",
       "unitNumber": 22,
-      "text": "This example ends in nine, not in three.",
+      "text": "Sixty-nine words ends in nine, so it is not the example that ends in three.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-074",
       "unitNumber": 22,
-      "text": "This example ends in one, not in three.",
+      "text": "Forty-one years ends in one, so it is not the example that ends in three.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-075",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.",
+      "text": "This example ends in nine, not in three.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-076",
       "unitNumber": 22,
-      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?",
+      "text": "This example ends in one, not in three.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-077",
       "unitNumber": 22,
-      "text": "The frozen source pairs the shown form",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-078",
       "unitNumber": 22,
-      "text": "with the admitted gloss",
+      "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-079",
       "unitNumber": 22,
-      "text": "Which admitted case name is written on the frozen line with the shown form?",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-080",
       "unitNumber": 22,
-      "text": "Which admitted English gloss is written for the shown form?",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-081",
       "unitNumber": 22,
-      "text": "Which admitted form is written beside the shown gender tag?",
+      "text": "Which admitted case name is written on the frozen line with the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-082",
       "unitNumber": 22,
-      "text": "Which admitted form is written in the collective numbers column for the shown cardinal?",
+      "text": "Which case is the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-083",
       "unitNumber": 22,
-      "text": "Admitted numeral forms",
+      "text": "Which admitted English gloss is written for the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-084",
       "unitNumber": 22,
-      "text": "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.",
+      "text": "Choose the English meaning of the shown phrase.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-085",
       "unitNumber": 22,
-      "text": "Open Lesson 22 in the copy you own. The app records do not replace that lesson.",
+      "text": "Which admitted form is written in the collective numbers column for the shown cardinal?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-086",
       "unitNumber": 22,
-      "text": "Guided practice",
+      "text": "Choose the collective number for the shown cardinal.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-087",
       "unitNumber": 22,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted numeral forms",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-088",
       "unitNumber": 22,
-      "text": "Remediation",
+      "text": "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-089",
       "unitNumber": 22,
-      "text": "Independent checks",
+      "text": "Open Lesson 22 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-090",
       "unitNumber": 22,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-091",
       "unitNumber": 22,
-      "text": "Work Lesson 22 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-092",
       "unitNumber": 22,
-      "text": "Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-093",
       "unitNumber": 22,
-      "text": "Open Lesson 22 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-094",
       "unitNumber": 22,
-      "text": "Record Lesson 22 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-095",
       "unitNumber": 22,
-      "text": "When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 22 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u22-096",
       "unitNumber": 22,
+      "text": "Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u22-097",
+      "unitNumber": 22,
+      "text": "Open Lesson 22 in your copy and complete its lesson work.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u22-098",
+      "unitNumber": 22,
+      "text": "Record Lesson 22 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u22-099",
+      "unitNumber": 22,
+      "text": "When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u22-100",
+      "unitNumber": 22,
       "text": "Self-attest only after the Lesson 22 work in your copy.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u24-097",
-      "unitNumber": 24,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u24-098",
-      "unitNumber": 24,
-      "text": "The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u24-099",
-      "unitNumber": 24,
-      "text": "The frozen example Are you speaking? is the question before the reply.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u24-100",
-      "unitNumber": 24,
-      "text": "This example omits the present form instead of adding the particle before the speaking reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-101",
       "unitNumber": 24,
-      "text": "This example is the question, not the reply with the particle added.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-102",
       "unitNumber": 24,
-      "text": "The frozen example No, I'm not speaking adds the particle before the speaking reply.",
+      "text": "The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-103",
       "unitNumber": 24,
-      "text": "The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?",
+      "text": "The frozen example Are you speaking? is the question before the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-104",
       "unitNumber": 24,
-      "text": "Admitted instruction",
+      "text": "This example omits the present form instead of adding the particle before the speaking reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-105",
       "unitNumber": 24,
-      "text": "The frozen example No, I'm not speaking adds the particle before the speaking word.",
+      "text": "This example is the question, not the reply with the particle added.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-106",
       "unitNumber": 24,
-      "text": "The frozen example Yes, I'm speaking is the agreeing reply, without the particle.",
+      "text": "The frozen example No, I'm not speaking adds the particle before the speaking reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-107",
       "unitNumber": 24,
-      "text": "This example adds the particle before the speaking word.",
+      "text": "The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-108",
       "unitNumber": 24,
-      "text": "This example is the agreeing reply, without the particle.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-109",
       "unitNumber": 24,
-      "text": "The frozen example He's not a student is the one omitted in the present form, with the particle on its own.",
+      "text": "The frozen example No, I'm not speaking adds the particle before the speaking word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-110",
       "unitNumber": 24,
-      "text": "The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?",
+      "text": "The frozen example Yes, I'm speaking is the agreeing reply, without the particle.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-111",
       "unitNumber": 24,
-      "text": "The frozen example He's not a student uses the particle on its own because the present form is omitted.",
+      "text": "This example adds the particle before the speaking word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-112",
       "unitNumber": 24,
-      "text": "The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.",
+      "text": "This example is the agreeing reply, without the particle.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-113",
       "unitNumber": 24,
-      "text": "This short line uses the particle on its own with the student word.",
+      "text": "The frozen example He's not a student is the one omitted in the present form, with the particle on its own.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-114",
       "unitNumber": 24,
-      "text": "This short line places the particle before the speaking word.",
+      "text": "The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-115",
       "unitNumber": 24,
-      "text": "The frozen example Boris isn't coming places the particle before the coming word.",
+      "text": "The frozen example He's not a student uses the particle on its own because the present form is omitted.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-116",
       "unitNumber": 24,
-      "text": "The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?",
+      "text": "The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-117",
       "unitNumber": 24,
-      "text": "The frozen note adds this particle before a word. It is not the replacement for the exists word.",
+      "text": "This short line uses the particle on its own with the student word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-118",
       "unitNumber": 24,
-      "text": "The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.",
+      "text": "This short line places the particle before the speaking word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-119",
       "unitNumber": 24,
-      "text": "This particle is placed before a word, not used as the replacement.",
+      "text": "The frozen example Boris isn't coming places the particle before the coming word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-120",
       "unitNumber": 24,
-      "text": "This token is the agreeing reply, not the replacement.",
+      "text": "The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-121",
       "unitNumber": 24,
-      "text": "The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.",
+      "text": "The frozen note adds this particle before a word. It is not the replacement for the exists word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-122",
       "unitNumber": 24,
-      "text": "The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?",
+      "text": "The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-123",
       "unitNumber": 24,
-      "text": "The frozen note adds this particle before a word. It is not the form that means exists.",
+      "text": "This particle is placed before a word, not used as the replacement.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-124",
       "unitNumber": 24,
-      "text": "The frozen example Yes, I'm speaking uses this as the agreeing reply.",
+      "text": "This token is the agreeing reply, not the replacement.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-125",
       "unitNumber": 24,
-      "text": "This particle is not the form that means exists.",
+      "text": "The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-126",
       "unitNumber": 24,
-      "text": "This token is the agreeing reply, not the exists word.",
+      "text": "The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-127",
       "unitNumber": 24,
-      "text": "The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.",
+      "text": "The frozen note adds this particle before a word. It is not the form that means exists.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-128",
       "unitNumber": 24,
-      "text": "The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?",
+      "text": "The frozen example Yes, I'm speaking uses this as the agreeing reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-129",
       "unitNumber": 24,
-      "text": "The frozen note uses this form to mean 'exists' before replacing it.",
+      "text": "This particle is not the form that means exists.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-130",
       "unitNumber": 24,
-      "text": "This form means exists, so it is the form being replaced.",
+      "text": "This token is the agreeing reply, not the exists word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-131",
       "unitNumber": 24,
-      "text": "The frozen note says this replacement has a different meaning from the reply that means no.",
+      "text": "The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-132",
       "unitNumber": 24,
-      "text": "The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?",
+      "text": "The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-133",
       "unitNumber": 24,
-      "text": "The frozen source pairs the shown form",
+      "text": "The frozen note uses this form to mean 'exists' before replacing it.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-134",
       "unitNumber": 24,
-      "text": "with the admitted gloss",
+      "text": "This form means exists, so it is the form being replaced.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-135",
       "unitNumber": 24,
-      "text": "Which admitted English gloss is written for the shown negated line?",
+      "text": "The frozen note says this replacement has a different meaning from the reply that means no.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-136",
       "unitNumber": 24,
-      "text": "Which admitted form is on the frozen line directly after the shown word?",
+      "text": "The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-137",
       "unitNumber": 24,
-      "text": "Which admitted form is in the second prefix column for the shown word?",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-138",
       "unitNumber": 24,
-      "text": "Admitted negation lines",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-139",
       "unitNumber": 24,
-      "text": "Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.",
+      "text": "Which admitted English gloss is written for the shown negated line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-140",
       "unitNumber": 24,
-      "text": "Open Lesson 24 in the copy you own. The app records do not replace that lesson.",
+      "text": "Which admitted form is on the frozen line directly after the shown word?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-141",
       "unitNumber": 24,
-      "text": "Guided practice",
+      "text": "Which admitted form is in the second prefix column for the shown word?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-142",
       "unitNumber": 24,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted negation lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-143",
       "unitNumber": 24,
-      "text": "Remediation",
+      "text": "Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-144",
       "unitNumber": 24,
-      "text": "Independent checks",
+      "text": "Open Lesson 24 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-145",
       "unitNumber": 24,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-146",
       "unitNumber": 24,
-      "text": "Work Lesson 24 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-147",
       "unitNumber": 24,
-      "text": "Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-148",
       "unitNumber": 24,
-      "text": "Open Lesson 24 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-149",
       "unitNumber": 24,
-      "text": "Record Lesson 24 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-150",
       "unitNumber": 24,
-      "text": "When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 24 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-151",
       "unitNumber": 24,
-      "text": "Self-attest only after the Lesson 24 work in your copy.",
+      "text": "Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-152",
       "unitNumber": 24,
-      "text": "Placement contrasts stay in the copy you own",
+      "text": "Open Lesson 24 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-153",
       "unitNumber": 24,
+      "text": "Record Lesson 24 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u24-154",
+      "unitNumber": 24,
+      "text": "When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u24-155",
+      "unitNumber": 24,
+      "text": "Self-attest only after the Lesson 24 work in your copy.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u24-156",
+      "unitNumber": 24,
+      "text": "Placement contrasts stay in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u24-157",
+      "unitNumber": 24,
       "text": "Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u25-154",
-      "unitNumber": 25,
-      "text": "Admitted lines",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u25-155",
-      "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with patronymic name, not with the shown words.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u25-156",
-      "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with family name, not with the shown words.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u25-157",
-      "unitNumber": 25,
-      "text": "The frozen sentence gives this ending for son of, not as the pair for the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-158",
       "unitNumber": 25,
-      "text": "This form is paired with patronymic name.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-159",
       "unitNumber": 25,
-      "text": "This form is paired with family name.",
+      "text": "The frozen sentence pairs this form with patronymic name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-160",
       "unitNumber": 25,
-      "text": "This ending means son of, rather than the paired form.",
+      "text": "The frozen sentence pairs this form with family name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-161",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs the shown words with this form.",
+      "text": "The frozen sentence gives this ending for son of, not as the pair for the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-162",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown words with one form. Which admitted form is that pair?",
+      "text": "This form is paired with patronymic name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-163",
       "unitNumber": 25,
-      "text": "Admitted instruction",
+      "text": "This form is paired with family name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-164",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with first name, not with the shown words.",
+      "text": "This ending means son of, rather than the paired form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-165",
       "unitNumber": 25,
-      "text": "The frozen sentence gives this ending for daughter of, not as the pair for the shown words.",
+      "text": "The frozen sentence says Russians use three names and pairs the shown words with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-166",
       "unitNumber": 25,
-      "text": "This form is paired with first name.",
+      "text": "The frozen sentence pairs the shown words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-167",
       "unitNumber": 25,
-      "text": "This ending means daughter of, rather than the paired form.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-168",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs patronymic name with this form.",
+      "text": "The frozen sentence pairs this form with first name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-169",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?",
+      "text": "The frozen sentence gives this ending for daughter of, not as the pair for the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-170",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs family name with this form.",
+      "text": "This form is paired with first name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-171",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?",
+      "text": "This ending means daughter of, rather than the paired form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-172",
       "unitNumber": 25,
-      "text": "The frozen list pairs Alyosha for Alexei with a different name.",
+      "text": "The frozen sentence says Russians use three names and pairs patronymic name with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-173",
       "unitNumber": 25,
-      "text": "The frozen list pairs Dima for Dmitri with a different name.",
+      "text": "The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-174",
       "unitNumber": 25,
-      "text": "Alyosha is paired with Alexei, not with the shown name.",
+      "text": "The frozen sentence says Russians use three names and pairs family name with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-175",
       "unitNumber": 25,
-      "text": "Dima is paired with Dmitri, not with the shown name.",
+      "text": "The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-176",
       "unitNumber": 25,
-      "text": "The frozen list includes Sasha for Alexander as the pair for the shown name.",
+      "text": "The frozen list pairs Alyosha for Alexei with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-177",
       "unitNumber": 25,
-      "text": "The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?",
+      "text": "The frozen list pairs Dima for Dmitri with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-178",
       "unitNumber": 25,
-      "text": "The frozen list pairs Sasha for Alexander with a different name.",
+      "text": "Alyosha is paired with Alexei, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-179",
       "unitNumber": 25,
-      "text": "Sasha is paired with Alexander, not with the shown name.",
+      "text": "Dima is paired with Dmitri, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-180",
       "unitNumber": 25,
-      "text": "The frozen list includes Alyosha for Alexei as the pair for the shown name.",
+      "text": "The frozen list includes Sasha for Alexander as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-181",
       "unitNumber": 25,
-      "text": "The frozen list includes Dima for Dmitri as the pair for the shown name.",
+      "text": "The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-182",
       "unitNumber": 25,
-      "text": "The frozen list pairs thanks with a different form.",
+      "text": "The frozen list pairs Sasha for Alexander with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-183",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (informal) with a different form.",
+      "text": "Sasha is paired with Alexander, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-184",
       "unitNumber": 25,
-      "text": "Thanks is a different courtesy word.",
+      "text": "The frozen list includes Alyosha for Alexei as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-185",
       "unitNumber": 25,
-      "text": "The informal apology is a different courtesy word.",
+      "text": "The frozen list includes Dima for Dmitri as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-186",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request and pairs that word with this form.",
+      "text": "The frozen list pairs thanks with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-187",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown request word with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs I'm sorry / excuse me (informal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-188",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request, not for thanks.",
+      "text": "Thanks is a different courtesy word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-189",
       "unitNumber": 25,
-      "text": "Please is the request word, not the thanks word.",
+      "text": "The informal apology is a different courtesy word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-190",
       "unitNumber": 25,
-      "text": "The informal apology is not the thanks word.",
+      "text": "The frozen list says please; also used for a request and pairs that word with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-191",
       "unitNumber": 25,
-      "text": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.",
+      "text": "The frozen list pairs the shown request word with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-192",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?",
+      "text": "The frozen list says please; also used for a request, not for thanks.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-193",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request, not for the informal apology.",
+      "text": "Please is the request word, not the thanks word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-194",
       "unitNumber": 25,
-      "text": "Please is the request word, not the informal apology.",
+      "text": "The informal apology is not the thanks word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-195",
       "unitNumber": 25,
-      "text": "Thanks is not the informal apology.",
+      "text": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-196",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (informal) with this form.",
+      "text": "The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-197",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?",
+      "text": "The frozen list says please; also used for a request, not for the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-198",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with the reply, not with the shown question.",
+      "text": "Please is the request word, not the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-199",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (formal) with a different form.",
+      "text": "Thanks is not the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-200",
       "unitNumber": 25,
-      "text": "This form is the reply, not the question.",
+      "text": "The frozen list pairs I'm sorry / excuse me (informal) with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-201",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the question.",
+      "text": "The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-202",
       "unitNumber": 25,
-      "text": "The frozen list pairs What is your name? with this form and My name is... with the reply.",
+      "text": "The frozen list pairs My name is... with the reply, not with the shown question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-203",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown question with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs I'm sorry / excuse me (formal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-204",
       "unitNumber": 25,
-      "text": "The frozen list pairs What is your name? with the question, not with the shown reply.",
+      "text": "This form is the reply, not the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-205",
       "unitNumber": 25,
-      "text": "This form is the question, not the reply.",
+      "text": "This form is the formal apology, not the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-206",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the reply.",
+      "text": "The frozen list pairs What is your name? with this form and My name is... with the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-207",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with this reply and What is your name? with the question.",
+      "text": "The frozen list pairs the shown question with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-208",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown reply with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs What is your name? with the question, not with the shown reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-209",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+      "text": "This form is the question, not the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-210",
       "unitNumber": 25,
-      "text": "The frozen list pairs How are you? with this form, not with the name reply.",
+      "text": "This form is the formal apology, not the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-211",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the name reply.",
+      "text": "The frozen list pairs My name is... with this reply and What is your name? with the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-212",
       "unitNumber": 25,
-      "text": "This form asks how someone is, rather than giving the name reply.",
+      "text": "The frozen list pairs the shown reply with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-213",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.",
+      "text": "The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-214",
       "unitNumber": 25,
-      "text": "The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?",
+      "text": "The frozen list pairs How are you? with this form, not with the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-215",
       "unitNumber": 25,
-      "text": "The frozen source pairs the shown form",
+      "text": "This form is the formal apology, not the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-216",
       "unitNumber": 25,
-      "text": "with the admitted gloss",
+      "text": "This form asks how someone is, rather than giving the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-217",
       "unitNumber": 25,
-      "text": "Which admitted list name is written for the shown form?",
+      "text": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-218",
       "unitNumber": 25,
-      "text": "Which admitted setting is written for the shown address form?",
+      "text": "The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-219",
       "unitNumber": 25,
-      "text": "Admitted name and courtesy lines",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-220",
       "unitNumber": 25,
-      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-221",
       "unitNumber": 25,
-      "text": "Open Lesson 25 in the copy you own. The app records do not replace that lesson.",
+      "text": "Which admitted list name is written for the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-222",
       "unitNumber": 25,
-      "text": "Guided practice",
+      "text": "Which admitted setting is written for the shown address form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-223",
       "unitNumber": 25,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted name and courtesy lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-224",
       "unitNumber": 25,
-      "text": "Remediation",
+      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-225",
       "unitNumber": 25,
-      "text": "Independent checks",
+      "text": "Open Lesson 25 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-226",
       "unitNumber": 25,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-227",
       "unitNumber": 25,
-      "text": "Work Lesson 25 in your copy",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-228",
       "unitNumber": 25,
-      "text": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-229",
       "unitNumber": 25,
-      "text": "Open Lesson 25 in your copy and complete its lesson work.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-230",
       "unitNumber": 25,
-      "text": "Record Lesson 25 book work",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-231",
       "unitNumber": 25,
-      "text": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Work Lesson 25 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-232",
       "unitNumber": 25,
-      "text": "Self-attest only after the Lesson 25 work in your copy.",
+      "text": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-233",
       "unitNumber": 25,
-      "text": "A general nickname-formation rule stays in the copy you own",
+      "text": "Open Lesson 25 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-234",
       "unitNumber": 25,
+      "text": "Record Lesson 25 book work",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-235",
+      "unitNumber": 25,
+      "text": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-236",
+      "unitNumber": 25,
+      "text": "Self-attest only after the Lesson 25 work in your copy.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-237",
+      "unitNumber": 25,
+      "text": "A general nickname-formation rule stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-238",
+      "unitNumber": 25,
       "text": "A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u23-235",
-      "unitNumber": 23,
-      "text": "Duration stays unprepared",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u23-236",
-      "unitNumber": 23,
-      "text": "Proposed Unit 23 is not prepared. Bounded ago, during, and step-out lines do not establish elapsed time and duration. Hour rows, year rows, and minute rows are not duration instruction. Qualified review is pending.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u23-237",
-      "unitNumber": 23,
-      "text": "Open Lesson 23 in the copy you own. This unit does not replace that lesson.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u23-238",
-      "unitNumber": 23,
-      "text": "Elapsed time and duration stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-239",
       "unitNumber": 23,
-      "text": "Elapsed time and duration stay in the copy you own. Bounded ago, during, and step-out lines do not establish that system. Hour rows, year rows, and minute rows are not that instruction.",
+      "text": "Duration stays unprepared",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-240",
       "unitNumber": 23,
-      "text": "Work Lesson 23 in your copy",
+      "text": "Proposed Unit 23 is not prepared. Bounded ago, during, and step-out lines do not establish elapsed time and duration. Hour rows, year rows, and minute rows are not duration instruction. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-241",
       "unitNumber": 23,
-      "text": "Do Lesson 23 in the copy you own. The bounded lines in this unit do not establish elapsed time and duration. Listening stays with the book. No audio is mapped here.",
+      "text": "Open Lesson 23 in the copy you own. This unit does not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-242",
       "unitNumber": 23,
-      "text": "Open Lesson 23 in your copy and complete its lesson work.",
+      "text": "Elapsed time and duration stay in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-243",
       "unitNumber": 23,
-      "text": "Record Lesson 23 book work",
+      "text": "Elapsed time and duration stay in the copy you own. Bounded ago, during, and step-out lines do not establish that system. Hour rows, year rows, and minute rows are not that instruction.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-244",
       "unitNumber": 23,
-      "text": "When you have done Lesson 23 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve proposed records.",
+      "text": "Work Lesson 23 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-245",
       "unitNumber": 23,
-      "text": "Self-attest only after the Lesson 23 work in your copy.",
+      "text": "Do Lesson 23 in the copy you own. The bounded lines in this unit do not establish elapsed time and duration. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-246",
       "unitNumber": 23,
-      "text": "The frozen source pairs the shown form",
+      "text": "Open Lesson 23 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-247",
       "unitNumber": 23,
-      "text": "with the admitted gloss",
+      "text": "Record Lesson 23 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-248",
       "unitNumber": 23,
-      "text": "Admitted lines",
+      "text": "When you have done Lesson 23 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-249",
       "unitNumber": 23,
-      "text": "Which admitted English gloss is written for the shown ago line?",
+      "text": "Self-attest only after the Lesson 23 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-250",
       "unitNumber": 23,
-      "text": "Admitted instruction",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-251",
       "unitNumber": 23,
-      "text": "Which admitted English gloss is written for the shown during line?",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-252",
       "unitNumber": 23,
-      "text": "Which admitted English gloss is written for the shown step-out line?",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-253",
       "unitNumber": 23,
-      "text": "Guided practice",
+      "text": "Which admitted English gloss is written for the shown ago line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-254",
       "unitNumber": 23,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-255",
       "unitNumber": 23,
-      "text": "Remediation",
+      "text": "Which admitted English gloss is written for the shown during line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-256",
       "unitNumber": 23,
-      "text": "Independent checks",
+      "text": "Which admitted English gloss is written for the shown step-out line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u23-257",
+      "unitNumber": 23,
+      "text": "Guided practice",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u23-258",
+      "unitNumber": 23,
+      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u23-259",
+      "unitNumber": 23,
+      "text": "Remediation",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u23-260",
+      "unitNumber": 23,
+      "text": "Independent checks",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u23-261",
       "unitNumber": 23,
       "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"

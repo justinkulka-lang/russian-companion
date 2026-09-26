@@ -118,10 +118,16 @@ def _extra(page: str, needle: str, texts: list[str]) -> list[tuple]:
 
 LOVE_SELF = _ship(REFLEXIVE_SPAN, "Я люблю́ себя́")
 LOVE_WIFE = _ship(REFLEXIVE_SPAN, "Я люблю́ (свою́) жену́")
-LOVE_SELF_BIT = _ship(REFLEXIVE_SPAN, "себя́")
 MYSELF = _ship(REFLEXIVE_SPAN, "I love myself")
 MY_WIFE = _ship(REFLEXIVE_SPAN, "I love my wife")
-REFLEXIVE_CITE = _require(REFLEXIVE_SPAN, "жену́ = I love")
+WIFE_CITE = _require(REFLEXIVE_SPAN, "жену́ = I love")
+_SELF_LINE = REFLEXIVE_SPAN.split("\n")[1].replace("'''", "").replace("''", "")
+_WIFE_LINE = REFLEXIVE_SPAN.split("\n")[0].replace("'''", "").replace("''", "")
+SELF_CITE = "Я люблю́ себя́ = I love myself"
+if SELF_CITE not in _SELF_LINE or SELF_CITE in _WIFE_LINE:
+    raise SystemExit("Self citation is not unique to the self line")
+if WIFE_CITE not in _WIFE_LINE or WIFE_CITE in _SELF_LINE:
+    raise SystemExit("Wife citation is not unique to the wife line")
 
 CHTOBY = _ship(PURPOSE_SPAN, "чтобы")
 ESLI = _ship(PURPOSE_SPAN, "если")
@@ -160,10 +166,6 @@ POL_MIN = _ship(POLTORA_SPAN, "полторы́ мину́ты", wiktionary=True
 POL_FROM = _ship(POLTORA_SPAN, "из полу́тора рубле́й", wiktionary=True)
 POL_TO = _ship(POLTORA_SPAN, "к полу́тора рубля́м", wiktionary=True)
 POL_WITH = _ship(POLTORA_SPAN, "с полу́тора рубля́ми", wiktionary=True)
-GENDER_TAG = _ship(POLTORA_SPAN, "g=f", wiktionary=True)
-POLTORY = _ship(POLTORA_SPAN, "полторы́", wiktionary=True)
-POLTORA_FORM = _ship(POLTORA_SPAN, "полтора́", wiktionary=True)
-POLUTORA = _ship(POLTORA_SPAN, "полу́тора", wiktionary=True)
 ROUBLES = _ship(POLTORA_SPAN, "1.5 roubles", wiktionary=True)
 MINUTES = _ship(POLTORA_SPAN, "1.5 minutes", wiktionary=True)
 FROM_ROUBLES = _ship(POLTORA_SPAN, "from 1.5 roubles", wiktionary=True)
@@ -171,9 +173,7 @@ TO_ROUBLES = _ship(POLTORA_SPAN, "to 1.5 roubles", wiktionary=True)
 WITH_ROUBLES = _ship(POLTORA_SPAN, "with 1.5 roubles", wiktionary=True)
 HOURS = _ship(POLTORA_SPAN, "one and a half hours / an hour and a half", wiktionary=True)
 POL_HOUR = _ship(POLTORA_SPAN, "полтора́ часа́", wiktionary=True)
-GM = _ship(POLTORA_SPAN, "g=m", wiktionary=True)
 POL_CITE = _require(POLTORA_SPAN, "In the nominative and accusative")
-GENDER_CITE = _require(POLTORA_SPAN, "полторы́|g=f")
 USAGE_NOTE = _ship(
     POLTORA_SPAN,
     "In the nominative and accusative, this number governs the genitive singular of the noun. "
@@ -253,7 +253,6 @@ def _glosses() -> dict[str, dict[str, frozenset[str]]]:
         REFLEXIVE_SPAN: {
             LOVE_SELF: frozenset({MYSELF}),
             LOVE_WIFE: frozenset({MY_WIFE}),
-            LOVE_SELF_BIT: frozenset({MYSELF}),
         },
         PURPOSE_SPAN: {
             CHTOBY: frozenset({SO_THAT}),
@@ -276,7 +275,6 @@ def _glosses() -> dict[str, dict[str, frozenset[str]]]:
             POL_FROM: frozenset({FROM_ROUBLES}),
             POL_TO: frozenset({TO_ROUBLES}),
             POL_WITH: frozenset({WITH_ROUBLES}),
-            GENDER_TAG: frozenset({POLTORY}),
         },
         COLLECTIVE_SPAN: {
             DVA: frozenset({DVOE}),
@@ -325,6 +323,9 @@ def batch_b_relation(cue: dict, answer: dict, distractors: list[dict]):
     table = GOVERNED_GLOSSES.get(cue.get("originalSourceText") or "")
     if table is None:
         return None
+    # The self line pairs the whole sentence. The token себя́ does not inherit it.
+    if cue.get("originalSourceText") == REFLEXIVE_SPAN and cue.get("shippedText") == "себя́":
+        return False
     group = [cue, answer, *distractors]
     allowed = table.get(cue.get("shippedText") or "")
     if (
@@ -353,25 +354,25 @@ def _check(shown, answer, wrongs, feature, why, source, prompt):
 
 def _reflexive(lesson) -> None:
     _frame(lesson)
-    why_self = _pair(LOVE_SELF, MYSELF, REFLEXIVE_CITE)
-    why_wife = _pair(LOVE_WIFE, MY_WIFE, REFLEXIVE_CITE)
-    why_bit = _pair(LOVE_SELF_BIT, MYSELF, REFLEXIVE_CITE)
-    prompt = "Which admitted English gloss is written after the equals sign on the shown line?"
+    why_self = _pair(LOVE_SELF, MYSELF, SELF_CITE)
+    why_wife = _pair(LOVE_WIFE, MY_WIFE, WIFE_CITE)
+    explore = "Which admitted English gloss is written after the equals sign on the shown line?"
+    concept = "Choose the English meaning of the shown sentence."
     lesson.objective(
         "object-reference",
-        "Choose the admitted gloss written after the equals sign",
+        "Choose the English meaning of the shown sentence",
         "CONTRAST_SELECTION",
-        ("grammar", REFLEXIVE_SPAN, REFLEXIVE_CITE),
+        ("grammar", REFLEXIVE_SPAN, WIFE_CITE),
         [
             _wiki("grammar", REFLEXIVE_SPAN, LOVE_SELF, MYSELF),
             _wiki("grammar", REFLEXIVE_SPAN, LOVE_WIFE, MY_WIFE),
         ],
         [
-            _check(LOVE_SELF, MYSELF, [_quoted(LOVE_WIFE, MY_WIFE, REFLEXIVE_CITE)], "REFLEXIVE_MYSELF", why_self, GRAMMAR_SOURCE, prompt),
-            _check(LOVE_WIFE, MY_WIFE, [_quoted(LOVE_SELF, MYSELF, REFLEXIVE_CITE)], "REFLEXIVE_WIFE", why_wife, GRAMMAR_SOURCE, prompt),
-            _check(LOVE_SELF_BIT, MYSELF, [_quoted(LOVE_WIFE, MY_WIFE, REFLEXIVE_CITE)], "REFLEXIVE_OBJECT", why_bit, GRAMMAR_SOURCE, prompt),
+            _check(LOVE_SELF, MYSELF, [_quoted(LOVE_WIFE, MY_WIFE, WIFE_CITE)], "REFLEXIVE_MYSELF", why_self, GRAMMAR_SOURCE, explore),
+            _check(LOVE_WIFE, MY_WIFE, [_quoted(LOVE_SELF, MYSELF, SELF_CITE)], "REFLEXIVE_WIFE", why_wife, GRAMMAR_SOURCE, concept),
+            _check(LOVE_SELF, MYSELF, [_quoted(LOVE_WIFE, MY_WIFE, WIFE_CITE)], "REFLEXIVE_MYSELF_SENTENCE", why_self, GRAMMAR_SOURCE, concept),
         ],
-        extra=_extra("grammar", REFLEXIVE_SPAN, [LOVE_SELF_BIT, REFLEXIVE_CITE]),
+        extra=_extra("grammar", REFLEXIVE_SPAN, [WIFE_CITE]),
     )
     _bind(lesson, "object-reference", "reflexive-object", REFLEXIVE_SPAN)
 
@@ -382,10 +383,11 @@ def _purpose(lesson) -> None:
     why_if = _pair(ESLI, IF_GLOSS, IF_CITE)
     why_because = _pair(POTOMU, BECAUSE, BECAUSE_CITE)
     why_although = _pair(KHOTYA, ALTHOUGH, ALTHOUGH)
-    prompt = "Which admitted English gloss is written for the shown conjunction?"
+    explore = "Which admitted English gloss is written for the shown conjunction?"
+    concept = "Choose the English meaning of the shown word."
     lesson.objective(
         "purpose",
-        "Choose the admitted gloss written for the shown conjunction",
+        "Choose the English meaning of the shown word",
         "CONTRAST_SELECTION",
         ("grammar", PURPOSE_SPAN, PURPOSE_REMEDY),
         [
@@ -395,9 +397,9 @@ def _purpose(lesson) -> None:
             _wiki("grammar", PURPOSE_SPAN, KHOTYA, ALTHOUGH),
         ],
         [
-            _check(CHTOBY, SO_THAT, [_quoted(ESLI, IF_GLOSS, IF_CITE), _quoted(POTOMU, BECAUSE, BECAUSE_CITE)], "PURPOSE_SO_THAT", why_so, GRAMMAR_SOURCE, prompt),
-            _check(ESLI, IF_GLOSS, [_quoted(CHTOBY, SO_THAT, PURPOSE_CITE), _quoted(KHOTYA, ALTHOUGH, ALTHOUGH)], "PURPOSE_IF", why_if, GRAMMAR_SOURCE, prompt),
-            _check(POTOMU, BECAUSE, [_quoted(TAK_KAK, SINCE, SINCE), _quoted(POSLE, AFTER, AFTER)], "PURPOSE_BECAUSE", why_because, GRAMMAR_SOURCE, prompt),
+            _check(CHTOBY, SO_THAT, [_quoted(ESLI, IF_GLOSS, IF_CITE), _quoted(POTOMU, BECAUSE, BECAUSE_CITE)], "PURPOSE_SO_THAT", why_so, GRAMMAR_SOURCE, explore),
+            _check(ESLI, IF_GLOSS, [_quoted(CHTOBY, SO_THAT, PURPOSE_CITE), _quoted(KHOTYA, ALTHOUGH, ALTHOUGH)], "PURPOSE_IF", why_if, GRAMMAR_SOURCE, concept),
+            _check(POTOMU, BECAUSE, [_quoted(TAK_KAK, SINCE, SINCE), _quoted(POSLE, AFTER, AFTER)], "PURPOSE_BECAUSE", why_because, GRAMMAR_SOURCE, concept),
         ],
         extra=_extra("grammar", PURPOSE_SPAN, [SINCE, AFTER, ALTHOUGH, TAK_KAK, POSLE, PURPOSE_CITE, PURPOSE_REMEDY, IF_CITE, BECAUSE_CITE]),
     )
@@ -413,10 +415,11 @@ def _declension(lesson) -> None:
     why_dat = _pair(DVUM, DATIVE, DATIVE_CITE)
     why_ins = _pair(DVUMYA, INSTRUMENTAL, INSTRUMENTAL_CITE)
     why_prep = _pair(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)
-    prompt = "Which admitted case name is written on the frozen line with the shown form?"
+    explore = "Which admitted case name is written on the frozen line with the shown form?"
+    concept = "Which case is the shown form?"
     lesson.objective(
         "declension",
-        "Choose the admitted case name written with the shown form",
+        "Choose the case of the shown form",
         "CASE_RECOGNITION",
         ("morfologiya", MORF_SPAN, DATIVE_CITE),
         [
@@ -425,9 +428,9 @@ def _declension(lesson) -> None:
             _wiki("morfologiya", MORF_SPAN, PREP_CELL, PREPOSITIONAL),
         ],
         [
-            _check(DVUM, DATIVE, [_quoted(DVUMYA, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "NUMERAL_DATIVE", why_dat, MORF_SOURCE, prompt),
-            _check(DVUMYA, INSTRUMENTAL, [_quoted(DVUM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "NUMERAL_INSTRUMENTAL", why_ins, MORF_SOURCE, prompt),
-            _check(PREP_CELL, PREPOSITIONAL, [_quoted(DVUM, DATIVE, DATIVE_CITE), _quoted(DVUMYA, INSTRUMENTAL, INSTRUMENTAL_CITE)], "NUMERAL_PREPOSITIONAL", why_prep, MORF_SOURCE, prompt),
+            _check(DVUM, DATIVE, [_quoted(DVUMYA, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "NUMERAL_DATIVE", why_dat, MORF_SOURCE, explore),
+            _check(DVUMYA, INSTRUMENTAL, [_quoted(DVUM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "NUMERAL_INSTRUMENTAL", why_ins, MORF_SOURCE, concept),
+            _check(PREP_CELL, PREPOSITIONAL, [_quoted(DVUM, DATIVE, DATIVE_CITE), _quoted(DVUMYA, INSTRUMENTAL, INSTRUMENTAL_CITE)], "NUMERAL_PREPOSITIONAL", why_prep, MORF_SOURCE, concept),
         ],
         extra=_extra("morfologiya", MORF_SPAN, [DATIVE_CITE, INSTRUMENTAL_CITE, PREPOSITIONAL_CITE]),
     )
@@ -440,10 +443,11 @@ def _both(lesson) -> None:
     why_oboim = _pair(OBOIM, DATIVE, DATIVE_CITE)
     why_obeimi = _pair(OBEIMI, INSTRUMENTAL, INSTRUMENTAL_CITE)
     why_oboimi = _pair(OBOIMI, INSTRUMENTAL, INSTRUMENTAL_CITE)
-    prompt = "Which admitted case name is written on the frozen line with the shown form?"
+    explore = "Which admitted case name is written on the frozen line with the shown form?"
+    concept = "Which case is the shown form?"
     lesson.objective(
         "both-forms",
-        "Choose the admitted case name written with the shown both-form",
+        "Choose the case of the shown form",
         "CASE_RECOGNITION",
         ("morfologiya", MORF_SPAN, BOTH_CELL),
         [
@@ -453,10 +457,10 @@ def _both(lesson) -> None:
             _wiki("morfologiya", MORF_SPAN, OBOIMI, INSTRUMENTAL),
         ],
         [
-            _check(OBEIM, DATIVE, [_quoted(OBEIMI, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBEIM", why_obeim, MORF_SOURCE, prompt),
-            _check(OBOIM, DATIVE, [_quoted(OBOIMI, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBOIM", why_oboim, MORF_SOURCE, prompt),
-            _check(OBEIMI, INSTRUMENTAL, [_quoted(OBEIM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBEIMI", why_obeimi, MORF_SOURCE, prompt),
-            _check(OBOIMI, INSTRUMENTAL, [_quoted(OBOIM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBOIMI", why_oboimi, MORF_SOURCE, prompt),
+            _check(OBEIM, DATIVE, [_quoted(OBEIMI, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBEIM", why_obeim, MORF_SOURCE, explore),
+            _check(OBOIM, DATIVE, [_quoted(OBOIMI, INSTRUMENTAL, INSTRUMENTAL_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBOIM", why_oboim, MORF_SOURCE, concept),
+            _check(OBEIMI, INSTRUMENTAL, [_quoted(OBEIM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBEIMI", why_obeimi, MORF_SOURCE, concept),
+            _check(OBOIMI, INSTRUMENTAL, [_quoted(OBOIM, DATIVE, DATIVE_CITE), _quoted(PREP_CELL, PREPOSITIONAL, PREPOSITIONAL_CITE)], "BOTH_OBOIMI", why_oboimi, MORF_SOURCE, concept),
         ],
         extra=_extra("morfologiya", MORF_SPAN, [PREP_CELL, PREPOSITIONAL, DATIVE_CITE, INSTRUMENTAL_CITE, PREPOSITIONAL_CITE]),
     )
@@ -466,14 +470,14 @@ def _both(lesson) -> None:
 def _half(lesson) -> None:
     _frame(lesson)
     why_rub = _pair(POL_RUB, ROUBLES, POL_CITE)
+    why_min = _pair(POL_MIN, MINUTES, POL_CITE)
     why_from = _pair(POL_FROM, FROM_ROUBLES, FROM_ROUBLES)
     why_to = _pair(POL_TO, TO_ROUBLES, TO_ROUBLES)
-    why_gender = _pair(GENDER_TAG, POLTORY, GENDER_CITE)
-    prompt = "Which admitted English gloss is written for the shown form?"
-    gender_prompt = "Which admitted form is written beside the shown gender tag?"
+    explore = "Which admitted English gloss is written for the shown form?"
+    concept = "Choose the English meaning of the shown phrase."
     lesson.objective(
         "half-forms",
-        "Choose the admitted half-form gloss or gender tag",
+        "Choose the English meaning of the shown phrase",
         "CONTRAST_SELECTION",
         ("poltora", POLTORA_SPAN, USAGE_NOTE),
         [
@@ -483,12 +487,12 @@ def _half(lesson) -> None:
             _wiki("poltora", POLTORA_SPAN, POL_TO, TO_ROUBLES),
         ],
         [
-            _check(POL_RUB, ROUBLES, [_quoted(POL_MIN, MINUTES, MINUTES), _quoted(POL_HOUR, HOURS, HOURS)], "HALF_ROUBLES", why_rub, POLTORA_SOURCE, prompt),
-            _check(POL_FROM, FROM_ROUBLES, [_quoted(POL_TO, TO_ROUBLES, TO_ROUBLES), _quoted(POL_WITH, WITH_ROUBLES, WITH_ROUBLES)], "HALF_FROM", why_from, POLTORA_SOURCE, prompt),
-            _check(POL_TO, TO_ROUBLES, [_quoted(POL_FROM, FROM_ROUBLES, FROM_ROUBLES), _quoted(POL_WITH, WITH_ROUBLES, WITH_ROUBLES)], "HALF_TO", why_to, POLTORA_SOURCE, prompt),
-            _check(GENDER_TAG, POLTORY, [_quoted(GM, POLTORA_FORM, GM), (POLUTORA, POL_FROM, POL_FROM)], "HALF_GENDER", why_gender, POLTORA_SOURCE, gender_prompt),
+            _check(POL_RUB, ROUBLES, [_quoted(POL_MIN, MINUTES, MINUTES), _quoted(POL_HOUR, HOURS, HOURS)], "HALF_ROUBLES", why_rub, POLTORA_SOURCE, explore),
+            _check(POL_MIN, MINUTES, [_quoted(POL_RUB, ROUBLES, ROUBLES), _quoted(POL_HOUR, HOURS, HOURS)], "HALF_MINUTES", why_min, POLTORA_SOURCE, concept),
+            _check(POL_FROM, FROM_ROUBLES, [_quoted(POL_TO, TO_ROUBLES, TO_ROUBLES), _quoted(POL_WITH, WITH_ROUBLES, WITH_ROUBLES)], "HALF_FROM", why_from, POLTORA_SOURCE, concept),
+            _check(POL_TO, TO_ROUBLES, [_quoted(POL_FROM, FROM_ROUBLES, FROM_ROUBLES), _quoted(POL_WITH, WITH_ROUBLES, WITH_ROUBLES)], "HALF_TO", why_to, POLTORA_SOURCE, concept),
         ],
-        extra=_extra("poltora", POLTORA_SPAN, [POL_WITH, WITH_ROUBLES, HOURS, POL_HOUR, GENDER_TAG, POLTORY, POLTORA_FORM, POLUTORA, GM, GENDER_CITE, POL_CITE]),
+        extra=_extra("poltora", POLTORA_SPAN, [POL_WITH, WITH_ROUBLES, HOURS, POL_HOUR, POL_CITE]),
     )
     _bind(lesson, "half-forms", "one-and-a-half", POLTORA_SPAN)
     if "governs the" not in POLTORA_SPAN:
@@ -500,10 +504,11 @@ def _collective(lesson) -> None:
     why_dva = _pair(DVA, DVOE, COLLECTIVE_CITE)
     why_tri = _pair(TRI, TROE, COLLECTIVE_CITE)
     why_four = _pair(CHETYRE, CHETVERO, COLLECTIVE_CITE)
-    prompt = "Which admitted form is written in the collective numbers column for the shown cardinal?"
+    explore = "Which admitted form is written in the collective numbers column for the shown cardinal?"
+    concept = "Choose the collective number for the shown cardinal."
     lesson.objective(
         "collective",
-        "Choose the admitted collective-column form",
+        "Choose the collective number for the shown cardinal",
         "CONTRAST_SELECTION",
         ("grammar", COLLECTIVE_SPAN, COLLECTIVE_CITE),
         [
@@ -512,9 +517,9 @@ def _collective(lesson) -> None:
             _wiki("grammar", COLLECTIVE_SPAN, CHETYRE, CHETVERO),
         ],
         [
-            _check(DVA, DVOE, [_quoted(DVA, VTOROY, ORDINAL_CITE), _quoted(TRI, TROE, COLLECTIVE_CITE)], "COLLECTIVE_TWO", why_dva, GRAMMAR_SOURCE, prompt),
-            _check(TRI, TROE, [_quoted(TRI, TRETIY, ORDINAL_CITE), _quoted(CHETYRE, CHETVERO, COLLECTIVE_CITE)], "COLLECTIVE_THREE", why_tri, GRAMMAR_SOURCE, prompt),
-            _check(CHETYRE, CHETVERO, [_quoted(CHETYRE, CHETVERTYY, ORDINAL_CITE), _quoted(DVA, DVOE, COLLECTIVE_CITE)], "COLLECTIVE_FOUR", why_four, GRAMMAR_SOURCE, prompt),
+            _check(DVA, DVOE, [_quoted(DVA, VTOROY, ORDINAL_CITE), _quoted(TRI, TROE, COLLECTIVE_CITE)], "COLLECTIVE_TWO", why_dva, GRAMMAR_SOURCE, explore),
+            _check(TRI, TROE, [_quoted(TRI, TRETIY, ORDINAL_CITE), _quoted(CHETYRE, CHETVERO, COLLECTIVE_CITE)], "COLLECTIVE_THREE", why_tri, GRAMMAR_SOURCE, concept),
+            _check(CHETYRE, CHETVERO, [_quoted(CHETYRE, CHETVERTYY, ORDINAL_CITE), _quoted(DVA, DVOE, COLLECTIVE_CITE)], "COLLECTIVE_FOUR", why_four, GRAMMAR_SOURCE, concept),
         ],
         extra=_extra("grammar", COLLECTIVE_SPAN, [VTOROY, TRETIY, CHETVERTYY, COLLECTIVE_CITE, ORDINAL_CITE]),
     )
