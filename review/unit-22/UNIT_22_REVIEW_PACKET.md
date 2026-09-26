@@ -11,12 +11,12 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d053dbb6245bdccd8360f595625c277da485f4e2
-- Unit content-review SHA-256: 4c512214a6b4bce93b1f849fd87c3b49dadff050745090104a073113bd2a0adb
+- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
+- Unit content-review SHA-256: de183769f93df8382560322a8acfe9e999c7059d3c34cbac66abb25d8dbaf20c
 - Mapping-package SHA-256: 997ae9e19ac8c160b37e5eee4e8c358254993aa481ffb14459e1d27c8a378284
-- Pack content-review SHA-256: 3c56dc9f54ae26c06bcd765523b700ee1ea09cecf5fbd04ba581a5c51a0ad169
-- Review-package SHA-256: b68456f90f002f9b98c9da038e23fb136b71be0175fac7a34af01d2fc216847b
-- Repository source SHA-256: c8e6eacc58ae60743a448514c50851aa0b62df6a566dd5ae540112dc70c41a85
+- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
+- Review-package SHA-256: 5929f4b288e4db28b3cabb1e5db114758487625dc4b1eb3e976d04571321cdc4
+- Repository source SHA-256: 82e455c4b56af5352b95e2fdc607e5cab9d5388beb216ddf925fa7611ff94eef
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,9 +151,9 @@ remediation=u22-st-rem-compounds
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d6a35b353241f3c7505488245853bd3f36e029414123bff7d71a8c3546963d9b
+- Content hash: 716918dd561f0374b5e90af75daa371d7fe8781331eb84f748a398766de8247a
 
-title=Choose the admitted case name written with the shown form
+title=Choose the case of the shown form
 kind=RECOGNITION
 unitNumber=22
 instruction=u22-st-orient,u22-st-teach-declension-1,u22-st-teach-declension-2,u22-st-teach-declension-3
@@ -170,9 +170,9 @@ remediation=u22-st-rem-declension
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 26eb5c5a668579f09c1d664ee9e2b957cde152244ff159a74854d6d44366245c
+- Content hash: 49907c56202281c9e3ef64eea08ee08762feccbbc8bc0f7f30622071d2f7cd4c
 
-title=Choose the admitted case name written with the shown both-form
+title=Choose the case of the shown form
 kind=RECOGNITION
 unitNumber=22
 instruction=u22-st-orient,u22-st-teach-both-forms-1,u22-st-teach-both-forms-2,u22-st-teach-both-forms-3
@@ -189,9 +189,9 @@ remediation=u22-st-rem-both-forms
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3f026951ef8461d729468094f1e5084cb74fc77af1dfd14dfddc4aa65080c386
+- Content hash: 3bfe20537bdf2d869acfa811462b20231d71f4f6ed5ae89995ffd89b89c71c5e
 
-title=Choose the admitted half-form gloss or gender tag
+title=Choose the English meaning of the shown phrase
 kind=RECOGNITION
 unitNumber=22
 instruction=u22-st-orient,u22-st-teach-half-forms-1,u22-st-teach-half-forms-2,u22-st-teach-half-forms-3
@@ -208,9 +208,9 @@ remediation=u22-st-rem-half-forms
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3d92adb231175e5592ab16a821859fbe604c546e4a53d79a0498005c06027ad
+- Content hash: cdcf2f8e871b9c87ebff01d3e3f490dcf40087f4359757cb707ff8f3b0048598
 
-title=Choose the admitted collective-column form
+title=Choose the collective number for the shown cardinal
 kind=RECOGNITION
 unitNumber=22
 instruction=u22-st-orient,u22-st-teach-collective-1,u22-st-teach-collective-2,u22-st-teach-collective-3
@@ -599,9 +599,9 @@ remediationStepId=u22-st-rem-compounds
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 67362bf0c39244e32f61db6a0ae0c211c0a2632249889958f027580f152cb17f
+- Content hash: 2cefdce379d747fa5440b1d9e2c06d791460a5117137214015aa46d5ee7342ab
 
-title=Choose the admitted case name written with the shown form
+title=Choose the case of the shown form
 estimatedMinutes=12
 objectives=obj-u22-declension
 steps=u22-st-teach-declension-1,u22-st-guided-declension-1,u22-st-teach-declension-2,u22-st-teach-declension-3,u22-st-rem-declension,u22-st-check-declension
@@ -746,9 +746,9 @@ remediationStepId=u22-st-rem-declension
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d9fba2b66a7232c455d2320b6be92b44adfaae5a8b410a31fcb72a9e425b5896
+- Content hash: f248aa27a5ac5abcd198289e380328368a3ed4ad4d7d01e2eaf60eb6479133a1
 
-title=Choose the admitted case name written with the shown both-form
+title=Choose the case of the shown form
 estimatedMinutes=12
 objectives=obj-u22-both-forms
 steps=u22-st-teach-both-forms-1,u22-st-guided-both-forms-1,u22-st-teach-both-forms-2,u22-st-teach-both-forms-3,u22-st-rem-both-forms,u22-st-check-both-forms
@@ -893,9 +893,9 @@ remediationStepId=u22-st-rem-both-forms
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c33c8c76396c461dbbe0b1960aa1166554bb7621e0dfa87119547b757af429d7
+- Content hash: 73c456b22407e114b43de7798819b34f6f352eba76e0d1b0a25cf4abe9d73c9c
 
-title=Choose the admitted half-form gloss or gender tag
+title=Choose the English meaning of the shown phrase
 estimatedMinutes=12
 objectives=obj-u22-half-forms
 steps=u22-st-teach-half-forms-1,u22-st-guided-half-forms-1,u22-st-teach-half-forms-2,u22-st-teach-half-forms-3,u22-st-rem-half-forms,u22-st-check-half-forms
@@ -1040,9 +1040,9 @@ remediationStepId=u22-st-rem-half-forms
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0b20c7280f87072408826373e6a1949199e86a5f31d1c49de977e95d9237ae5b
+- Content hash: 2ccf2041fa35af8ae82be7432525a747cf2bdd5ab1d63b81c2a0df1aedfe1fe2
 
-title=Choose the admitted collective-column form
+title=Choose the collective number for the shown cardinal
 estimatedMinutes=12
 objectives=obj-u22-collective
 steps=u22-st-teach-collective-1,u22-st-guided-collective-1,u22-st-teach-collective-2,u22-st-teach-collective-3,u22-st-rem-collective,u22-st-check-collective
@@ -1987,11 +1987,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f061dcee3e764c4a73584edb724be972f932b1d15080ac11d9f49cf6835678da
+- Content hash: 48925bbfd4666049951f9a39c64b2925af9adbfe852bbb6ab9918d5d8353498d
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted case name is written on the frozen line with the shown form?
+prompt=Which case is the shown form?
 promptLetter=двумя
 options=Творительный | Дательный | Предложный
 answer=Творительный
@@ -2022,11 +2022,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0e7978c5ba93c50749ca57355c006c9bd5322f48604e95293c7bc612a0a74550
+- Content hash: a1ff6388c86a9386ae21c6ead75f3b97f89d66bfb512c2a368add1d962116bcd
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted case name is written on the frozen line with the shown form?
+prompt=Which case is the shown form?
 promptLetter=(о) двух / (об) обоих / (о) полутора
 options=Предложный | Дательный | Творительный
 answer=Предложный
@@ -2057,11 +2057,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c15e1b67f8d51944bb821e1865b7e827f9e6dbf5545bb99cc57c81a3d837d771
+- Content hash: e860a07d8ce606ead29066353c5baa9914c00b30f7eec68f9e6d4348774d593d
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted case name is written on the frozen line with the shown form?
+prompt=Which case is the shown form?
 promptLetter=обоим
 options=Дательный | Творительный | Предложный
 answer=Дательный
@@ -2092,11 +2092,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 26c707c4b8c629c3fd125391657fbc531bfed2b712bf544f6a03f05fb8dbf755
+- Content hash: 91339c4b69e7c4260c51e4f4c7c3f974105b71ddb5e3c294ed65169f343df78a
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted case name is written on the frozen line with the shown form?
+prompt=Which case is the shown form?
 promptLetter=обеими
 options=Творительный | Дательный | Предложный
 answer=Творительный
@@ -2127,11 +2127,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-morfologiya-148939075
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3995305338ba56601f7a1991338aa499096faa217c9f1f404a3493907c9c6e52
+- Content hash: 6f82734e53810a4bc1c805e7e48890fcf762a1ed13a7cadf998c18cbf5d31ce8
 
 kind=CASE_RECOGNITION
 language=en
-prompt=Which admitted case name is written on the frozen line with the shown form?
+prompt=Which case is the shown form?
 promptLetter=обоими
 options=Творительный | Дательный | Предложный
 answer=Творительный
@@ -2162,11 +2162,46 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd21737eb4f449307737d39f6d8ddcf96b6785e4078ca82b45c3b9ff1c031c04
+- Content hash: a97b72236feeb9d5f465be112b314255e1af925d696044f37547f71ae9ec9351
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown form?
+prompt=Choose the English meaning of the shown phrase.
+promptLetter=полторы́ мину́ты
+options=1.5 minutes | 1.5 roubles | one and a half hours / an hour and a half
+answer=1.5 minutes
+feedback=The frozen source pairs the shown form "полторы́ мину́ты" with the admitted gloss "1.5 minutes" ("In the nominative and accusative").
+objectiveId=obj-u22-half-forms
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "полтора́ рубля́" with the admitted gloss "1.5 roubles" ("1.5 roubles"). | The frozen source pairs the shown form "полтора́ часа́" with the admitted gloss "one and a half hours / an hour and a half" ("one and a half hours / an hour and a half").
+testedFeature=HALF_MINUTES
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u22-half-forms-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u22-half-forms-1-en
+distractorSourceIds= | prov-ex-u22-half-forms-0-en | prov-u22-half-forms-x-2
+distractorDifference= | The frozen source pairs the shown form "полтора́ рубля́" with the admitted gloss "1.5 roubles" ("1.5 roubles"). | The frozen source pairs the shown form "полтора́ часа́" with the admitted gloss "one and a half hours / an hour and a half" ("one and a half hours / an hour and a half").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "полторы́ мину́ты" with the admitted gloss "1.5 minutes" ("In the nominative and accusative").
+contrastMembers=1.5 minutes | 1.5 roubles | one and a half hours / an hour and a half
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u22-half-forms-1-ru | prov-ex-u22-half-forms-1-en | prov-ex-u22-half-forms-0-en | prov-u22-half-forms-x-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u22-i-half-forms-2`
+
+- Objectives: obj-u22-half-forms
+- Sessions: u22-s-half-forms
+- Source: src-enwiktionary-poltora-89737719
+- Rights: rights-enwiktionary-poltora-89737719
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3c219b173a857eecab6bd3e0eaeb91086096451f3437addeec9c2a79f46b4c87
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Choose the English meaning of the shown phrase.
 promptLetter=из полу́тора рубле́й
 options=from 1.5 roubles | to 1.5 roubles | with 1.5 roubles
 answer=from 1.5 roubles
@@ -2177,7 +2212,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The frozen source pairs the shown form "к полу́тора рубля́м" with the admitted gloss "to 1.5 roubles" ("to 1.5 roubles"). | The frozen source pairs the shown form "с полу́тора рубля́ми" with the admitted gloss "with 1.5 roubles" ("with 1.5 roubles").
 testedFeature=HALF_FROM
 evidenceMode=EXPLICIT_SOURCE_PAIR
-contrastSetId=u22-half-forms-1
+contrastSetId=u22-half-forms-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u22-half-forms-2-en
@@ -2189,7 +2224,7 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u22-half-forms-2-ru | prov-ex-u22-half-forms-2-en | prov-ex-u22-half-forms-3-en | prov-u22-half-forms-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
-### INDEPENDENT_CHECK `u22-i-half-forms-2`
+### INDEPENDENT_CHECK `u22-i-half-forms-3`
 
 - Objectives: obj-u22-half-forms
 - Sessions: u22-s-half-forms
@@ -2197,11 +2232,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fea1d175b7b2c1f2773f3bee9b4b940b0f3790457df33819fe229efbe5c84a42
+- Content hash: 0d1deb3188067da84610f90ed0b9a759194b389e2b20e4f59869dce0b1bcbf66
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown form?
+prompt=Choose the English meaning of the shown phrase.
 promptLetter=к полу́тора рубля́м
 options=to 1.5 roubles | from 1.5 roubles | with 1.5 roubles
 answer=to 1.5 roubles
@@ -2212,7 +2247,7 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The frozen source pairs the shown form "из полу́тора рубле́й" with the admitted gloss "from 1.5 roubles" ("from 1.5 roubles"). | The frozen source pairs the shown form "с полу́тора рубля́ми" with the admitted gloss "with 1.5 roubles" ("with 1.5 roubles").
 testedFeature=HALF_TO
 evidenceMode=EXPLICIT_SOURCE_PAIR
-contrastSetId=u22-half-forms-2
+contrastSetId=u22-half-forms-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u22-half-forms-3-en
@@ -2224,41 +2259,6 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u22-half-forms-3-ru | prov-ex-u22-half-forms-3-en | prov-ex-u22-half-forms-2-en | prov-u22-half-forms-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
-### INDEPENDENT_CHECK `u22-i-half-forms-3`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6882f8f8edff0161d64dccdf537c397c474aa63b154a68838e2bb63f546bf2ca
-
-kind=CONTRAST_SELECTION
-language=en
-prompt=Which admitted form is written beside the shown gender tag?
-promptLetter=g=f
-options=полторы́ | полтора́ | полу́тора
-answer=полторы́
-feedback=The frozen source pairs the shown form "g=f" with the admitted gloss "полторы́" ("полторы́|g=f").
-objectiveId=obj-u22-half-forms
-containsGeneratedRussian=false
-reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "g=m" with the admitted gloss "полтора́" ("g=m"). | из полу́тора рубле́й
-testedFeature=HALF_GENDER
-evidenceMode=EXPLICIT_SOURCE_PAIR
-contrastSetId=u22-half-forms-3
-cueLanguage=rule
-independent=true
-answerSourceIds=prov-u22-half-forms-x-5
-distractorSourceIds= | prov-u22-half-forms-x-6 | prov-u22-half-forms-x-7
-distractorDifference= | The frozen source pairs the shown form "g=m" with the admitted gloss "полтора́" ("g=m"). | из полу́тора рубле́й
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "g=f" with the admitted gloss "полторы́" ("полторы́|g=f").
-contrastMembers=полторы́ | полтора́ | полу́тора
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-u22-half-forms-x-4 | prov-u22-half-forms-x-5 | prov-u22-half-forms-x-6 | prov-u22-half-forms-x-7
-responseKind=RUSSIAN_TOKEN
-
 ### INDEPENDENT_CHECK `u22-i-collective-1`
 
 - Objectives: obj-u22-collective
@@ -2267,11 +2267,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 06806f97f052f721b88a664819ccd17bfbf69272f9b201ace7134c09a7a157e1
+- Content hash: 4e963dfe6841b4048a2946b7f06082c1f6065aac911b8a1ee986fcb7e42e9946
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is written in the collective numbers column for the shown cardinal?
+prompt=Choose the collective number for the shown cardinal.
 promptLetter=три
 options=тро́е | тре́тий | че́тверо
 answer=тро́е
@@ -2302,11 +2302,11 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb989f93850c7251e63f8a636867a46b865d6b922c57e727d3420f1e5659f4e2
+- Content hash: efa2466b52185f2da015b3964691c2a587d7f65bb0414c92088e4167cac8d0d0
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is written in the collective numbers column for the shown cardinal?
+prompt=Choose the collective number for the shown cardinal.
 promptLetter=четы́ре
 options=че́тверо | четвёртый | дво́е
 answer=че́тверо
@@ -7145,49 +7145,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u22-half-forms-x-10`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3bcaa4f1d8b23d36c37ba385a15276bbc878378b99b346f867fb8373f1915f9e
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=In the nominative and accusative
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=297fecccf1197e7aa10d3bb32ff853e31f069305ae9642f8dab447af036cc32f
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
 ### PROVENANCE `prov-u22-half-forms-x-2`
 
 - Objectives: obj-u22-half-forms
@@ -7282,7 +7239,7 @@ reviewedDigest=
 - Rights: rights-enwiktionary-poltora-89737719
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c79ff13805a099e87227a1d190954fd304b37fb18db5332239dedf3e920e723
+- Content hash: b8f79ab6b156587c8e1ab071816a5e924d8792f04dba0d81e4ef2a3396a6b5ad
 
 recordType=label
 sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
@@ -7303,272 +7260,14 @@ originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|п
 
 ====Usage notes====
 In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=g=f
+shippedText=In the nominative and accusative
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=f8c66c35f425bfe7b7a6ae8ad390ac2b998fc0d4772509e11ce8b2ebcb6623da
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-5`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66ee6af032a385bda36102810ab60eb53bdfe267a9b28a66e0158b66103dc277
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=полторы́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=54eaa4d9a6ba348bba68f9665a202667b72c788531d7e5299ad13ec5e6631418
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-6`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: db498b8426bdc57d014f241bb9ddf64ca82711b6054dcedabfb640c0295e6793
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=полтора́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=341039e361c5b623b6295047483bdf6048acd237dd336ec8cfb71ecdeed5a0d0
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-7`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e61999df67c759fb7b97cb7100a10d0282b0c21c212372741bbd5191d2679cbb
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=полу́тора
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=9448eea86f628af36ad6964f561672fc233b3023270e64972c36712d9d0e32b6
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-8`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 000a807366f3ebea4d9c4ea51c24554d32ba3259eb3593fec2c6c93c2388046c
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=g=m
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=6f5114c43aa533275d9a6cedef6d1822ba47f2d36200fb5e94c921dfa9b2c3f4
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-9`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b69942adc6aad043bf022be101fc7f5a6987de1019f8ac54ace6a7581103d7cf
-
-recordType=label
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=полторы́|g=f
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=bc45d8758768536e450f744b843d1bab098d36b36fc56b9b31bfb24d0b3cdf31
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u22-half-forms-x-9-r0`
-
-- Objectives: obj-u22-half-forms
-- Sessions: u22-s-orient, u22-s-half-forms
-- Source: src-enwiktionary-poltora-89737719
-- Rights: rights-enwiktionary-poltora-89737719
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71a4da78ce53b4d3b210795bb9cab0ff69cad0e39174987eff5b3c4c9db6d1d4
-
-recordType=example
-sourceUrl=https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719
-sourceRevision=89737719
-sourceRecordId=poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a
-originalSourceText={{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}
-
-# [[one and a half]] (1½), [[sesqui-]]
-#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}
-#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}
-#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}
-#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}
-#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}
-#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}
-#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}
-
-====Usage notes====
-In the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.
-shippedText=полторы́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 89737719 identifies the contributors. Linked audio is not admitted.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601
-contentHash=54eaa4d9a6ba348bba68f9665a202667b72c788531d7e5299ad13ec5e6631418
+contentHash=297fecccf1197e7aa10d3bb32ff853e31f069305ae9642f8dab447af036cc32f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7641,32 +7340,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u22-039`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 27bca7dacd3e30f3616d715629e2df4d369cad5fc46e76f43054fccc0efc68b5
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u22-040`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0dacec1326f0f5db1e522d93576e6e2845e7d4c9b220f38d9a496bd256dceb3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place two girls with two, not with one.
-
 ### AUTHORED_ENGLISH `en-u22-041`
 
 - Objectives: none
@@ -7675,10 +7348,10 @@ text=The frozen examples place two girls with two, not with one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c0072fc9746618a716913bae534d9c38b4a36a77bfca0584184ac1544df5be1
+- Content hash: e77fc99fffef0165cf8e8194a3e42a744729d71c30817f7e684aea2136428ff6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place five girls with five, not with one.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u22-042`
 
@@ -7688,10 +7361,10 @@ text=The frozen examples place five girls with five, not with one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 71192e0d9687c4477572c5131d573f9c99ac86ae64a25722b265a6712e3244af
+- Content hash: d57ce5561117515b69b870bf2f0784f8b4d41c93bd0ec76cf0bcb3ee7d4aafc8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Two girls follows two, not a form of one.
+text=The frozen examples place two girls with two, not with one.
 
 ### AUTHORED_ENGLISH `en-u22-043`
 
@@ -7701,10 +7374,10 @@ text=Two girls follows two, not a form of one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 045fa3b3e52ffa5641089fc3f99f07c80080972170ea50aed5ac304fe6e5f8b4
+- Content hash: 281f750a67b1ad6d90d25d89c57731120bb7e495692d611beda4a5b572c52e59
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Five girls follows five, not a form of one.
+text=The frozen examples place five girls with five, not with one.
 
 ### AUTHORED_ENGLISH `en-u22-044`
 
@@ -7714,10 +7387,10 @@ text=Five girls follows five, not a form of one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3668e9ca6dd81687ce6b3d4dc2dffdc3ca8701414bf27cc6745bd43e5a451585
+- Content hash: 032ae7b576ae3a804167f400f3894606cd123483dd9cc65168cf6384f32cf56f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says a form of one should be used in the proper form. This line is the other example with one.
+text=Two girls follows two, not a form of one.
 
 ### AUTHORED_ENGLISH `en-u22-045`
 
@@ -7727,10 +7400,10 @@ text=The frozen note says a form of one should be used in the proper form. This 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce1786676e9cdacc59ed2f6e02218fb2f2003640935f554185b86b92fd053137
+- Content hash: 7dab6cd1aaaadcc303415cfab7671d85d9c8f2d5c287a9afdd3a6e42828517c3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?
+text=Five girls follows five, not a form of one.
 
 ### AUTHORED_ENGLISH `en-u22-046`
 
@@ -7740,10 +7413,10 @@ text=The frozen note says a form of one should be used in the proper form. Which
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0f883a7b080e0914ad86db9f1d425d74b5236804e5cd6e6c82052d72065018a
+- Content hash: 081e0484cffb03527acb1b416c0383b4bfb88f31613b25ab9365a34abf83c48f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=The frozen note says a form of one should be used in the proper form. This line is the other example with one.
 
 ### AUTHORED_ENGLISH `en-u22-047`
 
@@ -7753,10 +7426,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a829a88f3162b93f23b5c3227379c6aef75dc0a40ececc3cb346e15e16c7b144
+- Content hash: 8ff814fa1a2b323d2639264ce8e9d908c46476a7a3cdf0213352362bd654aa96
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place one boy with a form of one, not with two, three, or four.
+text=The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?
 
 ### AUTHORED_ENGLISH `en-u22-048`
 
@@ -7766,10 +7439,10 @@ text=The frozen examples place one boy with a form of one, not with two, three, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4df212eb7539dfed07396bff205a5b1e8624496f1fee5f5f64591eb6b182d2eb
+- Content hash: 9418e45f04678bdb52cbf1d6290124d3f1fac45a9ef49258114c10942066d776
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place five girls with the five group, not with two, three, or four.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u22-049`
 
@@ -7779,10 +7452,10 @@ text=The frozen examples place five girls with the five group, not with two, thr
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dcb1e0f75abaca3bfeb49e9643038e0a3982fb2340158de5df55fb58044a8964
+- Content hash: d6958e8c61149a845982e7f926f188b86e93a3b4b6bfd7cd3bc995f7809be830
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=One boy follows a form of one, not two, three, or four.
+text=The frozen examples place one boy with a form of one, not with two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-050`
 
@@ -7792,10 +7465,10 @@ text=One boy follows a form of one, not two, three, or four.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6650ba94e1fd56ab608b48c2e4d8b2dbe140cdd7dab5c2ad86130a2f3481df75
+- Content hash: 3e0328e987bc320a698cdd9d5257a14900f3f1662064623f5a677d171d8cf164
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Five girls follows the five group, not two, three, or four.
+text=The frozen examples place five girls with the five group, not with two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-051`
 
@@ -7805,10 +7478,10 @@ text=Five girls follows the five group, not two, three, or four.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 229415ff534c99882f2d7bf375aeb50fca3c56afd82731f3a4ab8270ac7beffb
+- Content hash: 1f1fe12c5cee5f201efee783628fcbfea170848636e79871180fdc7b402e7f1c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says two, three, and four require the following item to be presented together. This line is the three example.
+text=One boy follows a form of one, not two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-052`
 
@@ -7818,10 +7491,10 @@ text=The frozen note says two, three, and four require the following item to be 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8877a3c742f7853b7fcbcc73bb843936e14695a095fe4b7cb0e039c228decafe
+- Content hash: 1b4c4842561b069ec713e6dd94a3107282ddf43cf3d8792ab382fae3abaf5f07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note groups two, three, and four together. Which admitted line is another example from that group?
+text=Five girls follows the five group, not two, three, or four.
 
 ### AUTHORED_ENGLISH `en-u22-053`
 
@@ -7831,10 +7504,10 @@ text=The frozen note groups two, three, and four together. Which admitted line i
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 751ff93deef592a8e3b24488c0ccfae69c40d5992da77776102a622a6e48d173
+- Content hash: 506309e00c519dcf7d353faff8cf8621d050abca32797ce10c5d19b0415832a9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place one boy with a form of one, not with the five group.
+text=The frozen note says two, three, and four require the following item to be presented together. This line is the three example.
 
 ### AUTHORED_ENGLISH `en-u22-054`
 
@@ -7844,10 +7517,10 @@ text=The frozen examples place one boy with a form of one, not with the five gro
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b9fc30e46f65e2ddf7f14ce36a8c6eb5152aa259a046d8a475ea16da8680feb
+- Content hash: 077ea64e4329b8c4dead5425be34b2003c4625ab5c78b1b6a839b6a00126c3c9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples place two girls with two, not with the five group.
+text=The frozen note groups two, three, and four together. Which admitted line is another example from that group?
 
 ### AUTHORED_ENGLISH `en-u22-055`
 
@@ -7857,10 +7530,10 @@ text=The frozen examples place two girls with two, not with the five group.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b5b5f873394a5ad2f16614e3d3b41f6adc7f3e62e364ae7bf8fdfdf6bdadc47c
+- Content hash: 934c690544912aab593177df9ce4223bf36453b9f448a351adc24133b778c469
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=One boy follows a form of one, not the five group.
+text=The frozen examples place one boy with a form of one, not with the five group.
 
 ### AUTHORED_ENGLISH `en-u22-056`
 
@@ -7870,10 +7543,10 @@ text=One boy follows a form of one, not the five group.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73e5de08dc00efbc20743ab76f8a2d45975ea867dcfd3b7ca01aa36a0873fcfc
+- Content hash: 57250c4af2bab64517951957792f86e89df0f25308aa14add77722079fdda060
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Two girls follows two, not the five group.
+text=The frozen examples place two girls with two, not with the five group.
 
 ### AUTHORED_ENGLISH `en-u22-057`
 
@@ -7883,10 +7556,10 @@ text=Two girls follows two, not the five group.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e2f0530f093dce008df07d7bed524d6f70bca0b1aa24caad3f3502d701b82521
+- Content hash: 94edbbd7ade8da1157c2ea3144cf730b1ea942c04a6cca8d0844543bce7b3c9c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says these numerals require their attached items in the later group. This line is another example from that group.
+text=One boy follows a form of one, not the five group.
 
 ### AUTHORED_ENGLISH `en-u22-058`
 
@@ -7896,10 +7569,10 @@ text=The frozen note says these numerals require their attached items in the lat
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62e1f961a8aa8a6b293411b3b0595a6b19c2d37172d276768be0af706fe1c615
+- Content hash: 35bcc3f4bf2d322dca8aaaed602c86e697f34678ac47cbc7920e2404ae696a7f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note groups five through twenty together. Which admitted line is another example from that group?
+text=Two girls follows two, not the five group.
 
 ### AUTHORED_ENGLISH `en-u22-059`
 
@@ -7909,10 +7582,10 @@ text=The frozen note groups five through twenty together. Which admitted line is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d6b0e5ee709a1b52e6a01b1f276e1a9c832680084df249fdb2e706b7dac9cb71
+- Content hash: 1fd4a8959b8568797906fe67af2dbe4794172507c00fac200227297c95f6bcfb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thirty-three shot glasses ends in three, so it is not the example that ends in one.
+text=The frozen note says these numerals require their attached items in the later group. This line is another example from that group.
 
 ### AUTHORED_ENGLISH `en-u22-060`
 
@@ -7922,10 +7595,10 @@ text=Thirty-three shot glasses ends in three, so it is not the example that ends
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9a4631972bda9b7dde63d063d02130fd60ab82707b93cee2bcb4772bd5fc986e
+- Content hash: 222297f242dea291a3bca298a05a257cd55a9ff78062ccdb80a7df1911fcf946
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Sixty-nine words ends in nine, so it is not the example that ends in one.
+text=The frozen note groups five through twenty together. Which admitted line is another example from that group?
 
 ### AUTHORED_ENGLISH `en-u22-061`
 
@@ -7935,10 +7608,10 @@ text=Sixty-nine words ends in nine, so it is not the example that ends in one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7f6ddfbe1966a1e097aaa69239deebd8e62721e0367e2b70b08e1e951eac46e1
+- Content hash: 5f85660b4cbd0e77432a55430b2af033e32c5e9b90e8b2d752114034392ec7ff
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in three, not in one.
+text=Thirty-three shot glasses ends in three, so it is not the example that ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-062`
 
@@ -7948,10 +7621,10 @@ text=This example ends in three, not in one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 249e59b26295bbcc8773d345bb224fdb997f8cfe8a86bcdbbbebf93c89b7e033
+- Content hash: 1e6250639e90cb3b40839af76d8b3fa6bd7234e5edcc3bbf44263d7ba10ef2a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in nine, not in one.
+text=Sixty-nine words ends in nine, so it is not the example that ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-063`
 
@@ -7961,10 +7634,10 @@ text=This example ends in nine, not in one.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bc96925eaa9b4cc680ddf5aebef95da5982aead14c5b6693d7e2e23659f2d8f8
+- Content hash: 2c227b727856754c415d338d2124aa71b4bb71d7bca5b4ac06e3191f75774939
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.
+text=This example ends in three, not in one.
 
 ### AUTHORED_ENGLISH `en-u22-064`
 
@@ -7974,10 +7647,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55d3ece593930481b26dbf5ad8ac27b75ea1c0c0921f15d8dd59c4f470217776
+- Content hash: 970a9b4fab31f9aa4b45fc86aa5f28dc38028698a5687a70e9d22373112f9598
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?
+text=This example ends in nine, not in one.
 
 ### AUTHORED_ENGLISH `en-u22-065`
 
@@ -7987,10 +7660,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 36ff04d234df3fc86f1d60c1df29c9e519bb7c132e2c9bfa4044b42c16eb878b
+- Content hash: cb6d51d49133f8a002e7ab718b1009f71f68f21395b520da4f742683dc921be7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Forty-one years ends in one, so it is not the example that ends in nine.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.
 
 ### AUTHORED_ENGLISH `en-u22-066`
 
@@ -8000,10 +7673,10 @@ text=Forty-one years ends in one, so it is not the example that ends in nine.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff0fb2fed54657e522906d767bf9b504b60c7d457dc6b9d1b3a9a32dcbdf37f6
+- Content hash: efd2640d95db02fd97342dcac5f9d9a3b79421bab41a6e38f787ae236017db17
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?
 
 ### AUTHORED_ENGLISH `en-u22-067`
 
@@ -8013,10 +7686,10 @@ text=Thirty-three shot glasses ends in three, so it is not the example that ends
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 834cfd23e1463407192d6e8333b26b0c0d0b0a2d151720ce666646036cf3bb68
+- Content hash: 64beb3de7146de93b27e732e33c86fab6adaa166cc1108cb6a2b2350916a4834
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in one, not in nine.
+text=Forty-one years ends in one, so it is not the example that ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-068`
 
@@ -8026,10 +7699,10 @@ text=This example ends in one, not in nine.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec4a8e0bdd61c08f3ba1eacb54fc6ad907df2b5eac93848068b19c39a6fb3a58
+- Content hash: 1af843aec522906fdcada359e8951fec01d802f07e1ca1c6c17dd18be70c3e53
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in three, not in nine.
+text=Thirty-three shot glasses ends in three, so it is not the example that ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-069`
 
@@ -8039,10 +7712,10 @@ text=This example ends in three, not in nine.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5baf4fa6a3bc6b0fbada9086d97c0329454f942595200f5a32df30d8116e1e0a
+- Content hash: 914f7f406ff5c28b48e9ffdb1bdee04dd2c66237cd0a761d1e6405f8c7363f7a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.
+text=This example ends in one, not in nine.
 
 ### AUTHORED_ENGLISH `en-u22-070`
 
@@ -8052,10 +7725,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87510b28b4b25e7c212a79d6b162444620cc59b1a6bda9c208b7bbb6d4c6fa24
+- Content hash: aabf943b3d2000a1d13e33a62c058cf8e9a2b55c92b6c25be9e94cbf3a4d871c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?
+text=This example ends in three, not in nine.
 
 ### AUTHORED_ENGLISH `en-u22-071`
 
@@ -8065,10 +7738,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9664fb5d716faae113e3ad6555439b42b9edc989a8cb760a173c2d5f1c4e73f4
+- Content hash: 1a04c0edffe2cbce33a7af754fd779434caef108a8df74e5feffd5a6e622cf21
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Sixty-nine words ends in nine, so it is not the example that ends in three.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.
 
 ### AUTHORED_ENGLISH `en-u22-072`
 
@@ -8078,10 +7751,10 @@ text=Sixty-nine words ends in nine, so it is not the example that ends in three.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82fdb970eeca7ddc7cb965f58f0f61046f257281f0938d9336222cd716fed34d
+- Content hash: 51190cd79997f767d4106181af657b3356fc5bea6f60486187c64709e2a53fdf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Forty-one years ends in one, so it is not the example that ends in three.
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?
 
 ### AUTHORED_ENGLISH `en-u22-073`
 
@@ -8091,10 +7764,10 @@ text=Forty-one years ends in one, so it is not the example that ends in three.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8cd3e22b70e3cf34f717efb6250bc8ea7032f414026cd5ea5ea0b1d16394749
+- Content hash: de0631cdf2ae67473eca2bc211d2783c2b37f7ab0b7ccde37bccc35c4ebd451c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in nine, not in three.
+text=Sixty-nine words ends in nine, so it is not the example that ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-074`
 
@@ -8104,10 +7777,10 @@ text=This example ends in nine, not in three.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3989e5cc9fb69cb0e7d652190749a3d4c480bedea2582e8be3196b93ddbfa65e
+- Content hash: a628a2c7af0e8d049411f8c772764e5eae22da3ace5fd6851e5a645ce08cba48
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example ends in one, not in three.
+text=Forty-one years ends in one, so it is not the example that ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-075`
 
@@ -8117,10 +7790,10 @@ text=This example ends in one, not in three.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df2c751e821c8738d96ec5b07354d2abc54bda0bc9b7e9cfacfeb2a53c6f347b
+- Content hash: c694ab9aa0684239371f9ab4bb3c433d613e2793be4b29074a640a6b52395e20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.
+text=This example ends in nine, not in three.
 
 ### AUTHORED_ENGLISH `en-u22-076`
 
@@ -8130,10 +7803,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e0533b5969a2afea2a6cb05cdd82212cdc431352bf2c3a91fa85bae3e2ebf5cf
+- Content hash: a586ba41cbccb7abc69833729b6ab7c6c3d52b79ca4de6e38b35d746e9f4af77
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?
+text=This example ends in one, not in three.
 
 ### AUTHORED_ENGLISH `en-u22-077`
 
@@ -8143,10 +7816,10 @@ text=The frozen note says numerals larger than twenty follow the above rules usi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 722df4f03f99efa848217968999f7c49fe3d932c8ce4a702693ef939b3e09590
+- Content hash: 6b6d1d5a3ff45c24a357de87671e198abcbae2e34d819f5a05d43594c7323f8d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.
 
 ### AUTHORED_ENGLISH `en-u22-078`
 
@@ -8156,10 +7829,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e32a990f2de4f2b10ca403e71f5160bdaa087ad6953e1d32665aa3455e78a2d
+- Content hash: 59ef20cc85fbe033be61551e63c85c5f74ff4b3a2000d08d21c07d861d913993
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?
 
 ### AUTHORED_ENGLISH `en-u22-079`
 
@@ -8169,10 +7842,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d15207891e34ddd0f8dd94e6f272eb79ffdfa5e433839a05d34625223f4e599d
+- Content hash: cc2ee0f959bf4c70d5200d66e4ec229f0961406e2133fe731d87867044722c6a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted case name is written on the frozen line with the shown form?
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u22-080`
 
@@ -8182,10 +7855,10 @@ text=Which admitted case name is written on the frozen line with the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ce43429ead4d8867ca66a436d042fbf786f2dd79afc945e89ccab98cfa53ec31
+- Content hash: c7a4f469bbe5e4c2a792c324eaf48a6131694930e36c4442a57fca0c18c0471c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown form?
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u22-081`
 
@@ -8195,10 +7868,10 @@ text=Which admitted English gloss is written for the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4dca762c14ef2f81127dbc042573c8b10505d432db3c7bfd67385fbe4500d40f
+- Content hash: ad0a95a455ac0d5f240a4a17c7909b6c750d2b64bbc10fe09b393cc42144438f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is written beside the shown gender tag?
+text=Which admitted case name is written on the frozen line with the shown form?
 
 ### AUTHORED_ENGLISH `en-u22-082`
 
@@ -8208,10 +7881,10 @@ text=Which admitted form is written beside the shown gender tag?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e038d907995e7419b5cc2cc05995ca7a3dad0c51fa40fa2324feaf20f66dbc5
+- Content hash: 0fb4ef95fe6ec3be1f8a9aef139482c55763c4ee3e5092c5290545f24b86bbe9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is written in the collective numbers column for the shown cardinal?
+text=Which case is the shown form?
 
 ### AUTHORED_ENGLISH `en-u22-083`
 
@@ -8221,10 +7894,10 @@ text=Which admitted form is written in the collective numbers column for the sho
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 694cafbc27de17b96b813421fee9bd15476152fe59b971d589fad89b299eb021
+- Content hash: 62a37774aa28a386e94dd185a70891ca6ebf206d2fc06aea1d80db6547d44266
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted numeral forms
+text=Which admitted English gloss is written for the shown form?
 
 ### AUTHORED_ENGLISH `en-u22-084`
 
@@ -8234,10 +7907,10 @@ text=Admitted numeral forms
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c29a4458af80276719c4a5f63b698f1fd8edfafd828c22baab874dc17097a3fa
+- Content hash: 1d4d445f06de9fa3cca179f4adc04957ca6f2fa5dda8a5a9d17654402833ce18
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.
+text=Choose the English meaning of the shown phrase.
 
 ### AUTHORED_ENGLISH `en-u22-085`
 
@@ -8247,10 +7920,10 @@ text=Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3edede4ec66d87e9fbc8ad13998d3cff92e5789a1bf1370c127bf4d37c76ffe
+- Content hash: 849aba7fe9c6f0207fe64f7e5d69eaed05cc9c81c194b8266b52d81092bb9ac1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 22 in the copy you own. The app records do not replace that lesson.
+text=Which admitted form is written in the collective numbers column for the shown cardinal?
 
 ### AUTHORED_ENGLISH `en-u22-086`
 
@@ -8260,10 +7933,10 @@ text=Open Lesson 22 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0d89f8fdcfc8557d01712655dcb75bc85b5a434110109c015f7ed1e5a4e2fc1e
+- Content hash: 3ddbef3b7b6e947933493004057dd7131ac01cbdf3af4b06c041f3d6f57ff5d8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Choose the collective number for the shown cardinal.
 
 ### AUTHORED_ENGLISH `en-u22-087`
 
@@ -8273,10 +7946,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 25ed5134999d76648a9238e31ba8b859911e428d98c483b1aad0f72e42e73532
+- Content hash: 8d9d7ea6be5dc71f865e94817759a44755856889db99e10b6272bc7d580a48d4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted numeral forms
 
 ### AUTHORED_ENGLISH `en-u22-088`
 
@@ -8286,10 +7959,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8c7c30b19267104d012ca8582e7a28ec6a0b54be753c986f0d5c2bbe4077aa45
+- Content hash: fc99f38e8d5b4c11ddc50ea18347fc3646fd2022485555000641961c8035748b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u22-089`
 
@@ -8299,10 +7972,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b849cc0e9d3a250a89cf0c0b0e0df6e122d12cc725dbc0f77f1242614a6ec8e5
+- Content hash: c90e07a91b25d2ddf6fd76f0927a9919df0b5ba3e034632e610609bd0f756926
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 22 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u22-090`
 
@@ -8312,10 +7985,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a85870b789c896ea27c91040868e4020fabbab5313c29b3193526218c2028063
+- Content hash: 837c7ea16a2682a75972bb9150eb2d9688ac41a78c1e19e3172d01d1fd0e772a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u22-091`
 
@@ -8325,10 +7998,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d7ef6f032e2d4c862352a3b317f38a88b659dd9e204249a7153ec12c093426a
+- Content hash: cdb93f34b4b100d7bd4c94bf01f1253da40979f94d13bd794927b8914e448da4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 22 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u22-092`
 
@@ -8338,10 +8011,10 @@ text=Work Lesson 22 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a600a8746f65a4c206ea90ba123990a540905910604e9ba6a1c18156b202149b
+- Content hash: 47ececa9537f78d489456f8c5fad0ab8c8039783a7322a315dd1f65c0a2f357c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u22-093`
 
@@ -8351,10 +8024,10 @@ text=Do Lesson 22 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1c7e9513f2a09385b57a7eb85e630f9c00295d5c90f32ea91b8330b524905cbb
+- Content hash: 1893a14b947d93ef502753df5ce493bf274ddefe82e291a236c245b0af4e2a60
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 22 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u22-094`
 
@@ -8364,10 +8037,10 @@ text=Open Lesson 22 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 32976f1cea9d7fa27568dfd49b52d3b3fbe3f4c7c5f58384fd548308e6b484c3
+- Content hash: 708cb4980aadb456e488da02ee949ad3d8153756cc8be4a634bea37950bce6ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 22 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u22-095`
 
@@ -8377,10 +8050,10 @@ text=Record Lesson 22 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 77de96bfae9c5f6c533a3f835dbcd4beb825fff17d0f2a00c70ade3a8ae7ec3d
+- Content hash: c0640fdd10be271e1a94e638d706b8a08292185b57e25fc67ec16052ac86d747
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 22 in your copy
 
 ### AUTHORED_ENGLISH `en-u22-096`
 
@@ -8390,7 +8063,59 @@ text=When you have done Lesson 22 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0ab48a8ed793d4b3431248689a121bd0d45a9df32d905cf6676eb0b48be5355
+- Content hash: a9b80c1b79ea2430c894273a5ddac43e034b66149aacbdd2007c778376f59475
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u22-097`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c3e4c603789807a5ed2e28995817d6f9aeed895d9c7fbb6b67cad9119ceea38f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 22 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u22-098`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d8ff0de6d631942ab595bc4d10fd9e83ed7b67ade88d0fcab225a83e732b4647
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 22 book work
+
+### AUTHORED_ENGLISH `en-u22-099`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: db9ee107a0f36783c27ce9e8b3d414cb9cbece0b92a93281151ab37f580d8618
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u22-100`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d2e3412414d4ae757e2ee2c74cff4570c4007318bf6817a6dddff36450000b59
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 22 work in your copy.
@@ -8808,16 +8533,9 @@ permitsAppUse=true
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-rem`
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-0`
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-1`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-10`
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-2`
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-3`
 - `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-4`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-5`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-6`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-7`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-8`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-9`
-- `obj-u22-half-forms` PROVENANCE `prov-u22-half-forms-x-9-r0`
 - `obj-u22-noun-forms` PROVENANCE `prov-u22-noun-forms-rem`
 - `obj-u22-noun-forms` PROVENANCE `prov-u22-noun-forms-rem-r0`
 

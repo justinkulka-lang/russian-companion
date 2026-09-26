@@ -11,12 +11,12 @@ Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d053dbb6245bdccd8360f595625c277da485f4e2
-- Unit content-review SHA-256: 1b459898570c2950975a9996206d94a44d4428bed6c6d06f9c4df84795787f6e
+- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
+- Unit content-review SHA-256: d9fb79af7fb509d0863606d2f3cc0589870ea5b4c7643302584356ef504430a8
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: 3c56dc9f54ae26c06bcd765523b700ee1ea09cecf5fbd04ba581a5c51a0ad169
-- Review-package SHA-256: 151aa228ce55a15a4a234557e90a378f4929e9fcc51f171653ab0af013a1773c
-- Repository source SHA-256: c8e6eacc58ae60743a448514c50851aa0b62df6a566dd5ae540112dc70c41a85
+- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
+- Review-package SHA-256: 94c08cf10dab7001b2e14ea4aa23421df7b41f65bac87508a3485019c702a72e
+- Repository source SHA-256: 82e455c4b56af5352b95e2fdc607e5cab9d5388beb216ddf925fa7611ff94eef
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -4594,58 +4594,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u24-097`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 67143e78525a74dd9c41bf6f491a767aa47c962e4c4d0f931df4d0c3cc951958
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u24-098`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d52e05bc261e7a6af5ef716acf9a71340f8511dbb158f35d825f4fd63ef865a4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
-
-### AUTHORED_ENGLISH `en-u24-099`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb49d42ae0aeac6aa3e99bc726182b4c8a5eab7ab06a6182174324984c767627
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Are you speaking? is the question before the reply.
-
-### AUTHORED_ENGLISH `en-u24-100`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ac664186d8c0869989616bf647921c9d234d0cf67299a6bff1d20fa2e3bb4454
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example omits the present form instead of adding the particle before the speaking reply.
-
 ### AUTHORED_ENGLISH `en-u24-101`
 
 - Objectives: none
@@ -4654,10 +4602,10 @@ text=This example omits the present form instead of adding the particle before t
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4909c9baadb8a5a668be5f624d090b363c8ef9c12e1325a48c686c0ac9447ce9
+- Content hash: f884fd8d97016519290f66888bddef0f3bfdf97157f263fa0857a51d6cb25152
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example is the question, not the reply with the particle added.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u24-102`
 
@@ -4667,10 +4615,10 @@ text=This example is the question, not the reply with the particle added.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ea74e05d305cd52389ffc3af2321548c018030f099f3c3bcfba7683ee875d4f
+- Content hash: a2868ca5a2da4de531ab26da277104eae73d4981e781a87baf444f6abb9c0243
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
+text=The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
 
 ### AUTHORED_ENGLISH `en-u24-103`
 
@@ -4680,10 +4628,10 @@ text=The frozen example No, I'm not speaking adds the particle before the speaki
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e18d096ed01e2ea7b162706343ae2000797e5cea220dcc188a6c8a688f45aad
+- Content hash: 41041805b37abe223fe6cae90d66e3761d09179e20ec7a3ea7ede07d4df38b13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
+text=The frozen example Are you speaking? is the question before the reply.
 
 ### AUTHORED_ENGLISH `en-u24-104`
 
@@ -4693,10 +4641,10 @@ text=The frozen examples move from the speaking reply to the line with the parti
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9e98c87132842e42b8a7d2a109b983d652918f039c65ec5ae8678e9790cac484
+- Content hash: c2ca404f67a53ef9d114468065aafb76fd6dca61caf4d328586dd991e39a42d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+text=This example omits the present form instead of adding the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-105`
 
@@ -4706,10 +4654,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 563ce14cb168425caba1b8b338bd6fd5dbfcdd080bdfc6d2d66ee4952e01e2a5
+- Content hash: 72993a9717f7f12aa988a9f9f5e3f18177111dd2fe132577392331607464955b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking adds the particle before the speaking word.
+text=This example is the question, not the reply with the particle added.
 
 ### AUTHORED_ENGLISH `en-u24-106`
 
@@ -4719,10 +4667,10 @@ text=The frozen example No, I'm not speaking adds the particle before the speaki
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7640240476dfaf931c502e849f6e42f201b78ae8b09391381d1892e280bac2da
+- Content hash: 203f87cd2960d3f3a4d2b1e90e5278d4a324b57577e3c89505752e1122438c0a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
+text=The frozen example No, I'm not speaking adds the particle before the speaking reply.
 
 ### AUTHORED_ENGLISH `en-u24-107`
 
@@ -4732,10 +4680,10 @@ text=The frozen example Yes, I'm speaking is the agreeing reply, without the par
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 43538af79a6666337593827ef6849f52b47fd019e6024700122ac7fee1602a30
+- Content hash: 295e3725c9435842de2d70ae0342ff2b157e30a8c12f6b81aa81706475620350
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example adds the particle before the speaking word.
+text=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
 
 ### AUTHORED_ENGLISH `en-u24-108`
 
@@ -4745,10 +4693,10 @@ text=This example adds the particle before the speaking word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d0dfe64868866dcc83d1b83a92dd6b521e374926e7e80db5af8fb02473b21733
+- Content hash: c9486f4e672822e5795d1cb126ad7aaba45ca0854931de3c3258508218973a35
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This example is the agreeing reply, without the particle.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u24-109`
 
@@ -4758,10 +4706,10 @@ text=This example is the agreeing reply, without the particle.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b6d2aab66d4c0c13edc1fe82dbdec283d5cd588bcf09bdedbf0e419fae65fdd0
+- Content hash: e39a15205a4e275e0f67ea00502d766fdfcafc2e60c89449b5a0ab237a801f95
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+text=The frozen example No, I'm not speaking adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-110`
 
@@ -4771,10 +4719,10 @@ text=The frozen example He's not a student is the one omitted in the present for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4c1adfa805d66a2637fa29cd8e1d434714de02b31c114ea7d8226dcd8c8567e
+- Content hash: f0bbc7f74dbe19d2e0d1eb5dcf2752b27b11a792dce01ff51ee10b566e039e5e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
+text=The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-111`
 
@@ -4784,10 +4732,10 @@ text=The frozen note says one example is omitted in the present form and uses th
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12233935102fe13000b20c989dbdb86949e059253d40ee0172859a9f2c1c3106
+- Content hash: 97a847e088346de9218409817e0dc0f651ed4a900f7d3526c66b2d20ae8d688b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
+text=This example adds the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-112`
 
@@ -4797,10 +4745,10 @@ text=The frozen example He's not a student uses the particle on its own because 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af4c91e85073fcff28e3b5e5c74cb4697ab28b1459ff7dabb4be4e2f82f69fc6
+- Content hash: aa6fbc1819ea5b5407b8f9a65e2a72c9d6093e8e906c8dcd7bf2c3afd8fb6939
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
+text=This example is the agreeing reply, without the particle.
 
 ### AUTHORED_ENGLISH `en-u24-113`
 
@@ -4810,10 +4758,10 @@ text=The frozen example No, I'm not speaking places the particle before the spea
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d582a9ef1949f209b7debe40d31b62597316f6c1faefd4d36fbff7cbab28e9da
+- Content hash: bf8ef91865fc9b251564eb70755cbdd1f1b34a3c499669948d2cf752c3acbd49
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This short line uses the particle on its own with the student word.
+text=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
 
 ### AUTHORED_ENGLISH `en-u24-114`
 
@@ -4823,10 +4771,10 @@ text=This short line uses the particle on its own with the student word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb65e76c49d5b7f96443544b89b989aa5d953a3cee4d55765b508f184551a707
+- Content hash: beb119560d2545ef1ec25fef6d3687aba298f6b437683e8a8d6a8f23ac0f1d4f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This short line places the particle before the speaking word.
+text=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-115`
 
@@ -4836,10 +4784,10 @@ text=This short line places the particle before the speaking word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9b8807a5c0f57dd8536f9288e5bb8f3677215525f5834bd8a43ad8aec61f86b3
+- Content hash: 75b94c02b98dc793e04460b5a86af641ee904f72ecbff3581a6528203a7fbbef
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Boris isn't coming places the particle before the coming word.
+text=The frozen example He's not a student uses the particle on its own because the present form is omitted.
 
 ### AUTHORED_ENGLISH `en-u24-116`
 
@@ -4849,10 +4797,10 @@ text=The frozen example Boris isn't coming places the particle before the coming
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0bdae1186e2421a101a32a8c0a84dbe5005720b5c5fad8aa95e3a1827752fdae
+- Content hash: 5082251b7a6f19d94f6c8457c33c3961504f767ee18654b6456aa4ab1ab214cb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
+text=The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-117`
 
@@ -4862,10 +4810,10 @@ text=The frozen example Boris isn't coming places the particle before the coming
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bf53de4a882e2aac38aa73acc3eb859542e9440889d5034a1d0e8ceabe7650b5
+- Content hash: 1a4f5c297f6f4a2e6bd030ec59c0c61f9ca7030019ad1ef2e8dfbe1159c1702c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
+text=This short line uses the particle on its own with the student word.
 
 ### AUTHORED_ENGLISH `en-u24-118`
 
@@ -4875,10 +4823,10 @@ text=The frozen note adds this particle before a word. It is not the replacement
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a11ad50646f77f01fa8b0a1f31141f960ad397a57bec239155deee4372b270c0
+- Content hash: b54e8d34a963aea3ff041761c69223bd35d62fbc448d168d8f0ba1bff0a498b7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
+text=This short line places the particle before the speaking word.
 
 ### AUTHORED_ENGLISH `en-u24-119`
 
@@ -4888,10 +4836,10 @@ text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not a
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3fec7eecd5e3de7a1961dd6cef8dd7ebf43683cf862e84cf7c9f714ddaa871e
+- Content hash: 6770d83429273afd99d43aa7b2ae8f12cac451fc2174f12824f4c4d68ae2d819
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This particle is placed before a word, not used as the replacement.
+text=The frozen example Boris isn't coming places the particle before the coming word.
 
 ### AUTHORED_ENGLISH `en-u24-120`
 
@@ -4901,10 +4849,10 @@ text=This particle is placed before a word, not used as the replacement.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b4e2f5e12f708cd9fd1caae217e98ab87d99d3deb820d8b7a2e8fae2c269f9d3
+- Content hash: cedfb46a8699cd500204f9bb12a63e46a83b6e3653b986006ab2cb401a37ee73
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This token is the agreeing reply, not the replacement.
+text=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
 
 ### AUTHORED_ENGLISH `en-u24-121`
 
@@ -4914,10 +4862,10 @@ text=This token is the agreeing reply, not the replacement.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: efe0069e83f14e95ea9db8327baec5aa0bba1cf1931e13c2fdd463a95aa91ad3
+- Content hash: 63b9c6a0e639b781dc13145a8bbc9dcc9892f0fa2b8a3dfa5cab11083018da14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+text=The frozen note adds this particle before a word. It is not the replacement for the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-122`
 
@@ -4927,10 +4875,10 @@ text=The frozen note says this form has a different meaning from the reply that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a0741915cbcb25355e626225618e0eaddd91fb2aec61e2fd48e4c123d901035f
+- Content hash: cc4a709422458791a6ff30f7018381878479edef164f6f53bfe8f2e8456a92da
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
+text=The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-123`
 
@@ -4940,10 +4888,10 @@ text=The frozen note replaces the exists word when negating the have-phrase. Whi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 742cefc412c39905958e93a3c7bcccb59df2c1c427afbd9c75e06841d9214516
+- Content hash: b3626c1f74208a2e1bbeedd408edf07e7842bc9c7613be2c7a4646c862bd1ff6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note adds this particle before a word. It is not the form that means exists.
+text=This particle is placed before a word, not used as the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-124`
 
@@ -4953,10 +4901,10 @@ text=The frozen note adds this particle before a word. It is not the form that m
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 40effad196f6246667b69a6289abb29caa32ee1bff62bc61e0bf48a0b82de559
+- Content hash: 5411bca3e0b6d0279e4c4b855814ac35e4ed3de08d8f26b27d5afc1a75b96675
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
+text=This token is the agreeing reply, not the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-125`
 
@@ -4966,10 +4914,10 @@ text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dd2ef3fe2e400b17f68d3f88942e9e447dd2493a80efd9719acb66ea78ab0874
+- Content hash: 67a0488f012840758ba8d56b4e8307b56a41b2bf62e2c46eba59751f9d87f3b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This particle is not the form that means exists.
+text=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-126`
 
@@ -4979,10 +4927,10 @@ text=This particle is not the form that means exists.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 02cbb2fddb632fc53e950174e41d44b786bf5253011bf83dd56ff70dea24932a
+- Content hash: 22a1715934a2d1fbd758d9111738c7e269fb1a6b7af309e0a3eb1c53bdb3480a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This token is the agreeing reply, not the exists word.
+text=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
 
 ### AUTHORED_ENGLISH `en-u24-127`
 
@@ -4992,10 +4940,10 @@ text=This token is the agreeing reply, not the exists word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8dd2fde74d57f895212dcaf118886dd96a613d25429debdc67724cb29d9db94d
+- Content hash: 70f1200601f3a7224992827dcfce0667afd5603ff471924ac97d955142f7e594
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+text=The frozen note adds this particle before a word. It is not the form that means exists.
 
 ### AUTHORED_ENGLISH `en-u24-128`
 
@@ -5005,10 +4953,10 @@ text=The frozen note uses this form to mean 'exists' in the have-phrase, before 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc7c9a67c3e1b782545f6d0c4276c5d597ef8a0f00fbebcfe503790a4c5d2190
+- Content hash: a05abf59ea549fef5bc2620ee14ec221d62b80eece56188131ab5f59503d6649
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
+text=The frozen example Yes, I'm speaking uses this as the agreeing reply.
 
 ### AUTHORED_ENGLISH `en-u24-129`
 
@@ -5018,10 +4966,10 @@ text=The frozen have-phrase uses one form before it is replaced. Which admitted 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cea34d8ac1ea91afe2f1242cf6be6e6a36767904b663a4ba0301f96a1d6a1e7c
+- Content hash: 7ca4fd81377854cf3ec3d7647ef27ea2842f0aa8a5e12efdb4d206394ff586a1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note uses this form to mean 'exists' before replacing it.
+text=This particle is not the form that means exists.
 
 ### AUTHORED_ENGLISH `en-u24-130`
 
@@ -5031,10 +4979,10 @@ text=The frozen note uses this form to mean 'exists' before replacing it.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 20fd15eb0baa26b1ead14c00b95b36396ce798ad33c964ea81254765c6a72429
+- Content hash: 018b724d3c146199e678fdac3718ca354edca19db9d6d75f008bb91da61d0192
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form means exists, so it is the form being replaced.
+text=This token is the agreeing reply, not the exists word.
 
 ### AUTHORED_ENGLISH `en-u24-131`
 
@@ -5044,10 +4992,10 @@ text=This form means exists, so it is the form being replaced.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ff51ac804eb964fd0337f0717dfc3d1630779bedde557fe7175190747901ef9d
+- Content hash: bb51d2cf8f89a8906600cbf94536bf98bedf3f29055143296448881598f5610d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note says this replacement has a different meaning from the reply that means no.
+text=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
 
 ### AUTHORED_ENGLISH `en-u24-132`
 
@@ -5057,10 +5005,10 @@ text=The frozen note says this replacement has a different meaning from the repl
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04e286226e1b1477604f1a5eefba837cc8b66671207adfa26844631fa23abf6f
+- Content hash: 5e358914a6d56b3c12bd38784b9a8c31546fe78dcd04d79227257a5a51b594c4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+text=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
 
 ### AUTHORED_ENGLISH `en-u24-133`
 
@@ -5070,10 +5018,10 @@ text=The frozen note keeps the particle apart from the have-phrase replacement. 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 932450448f765a054fbae4c4ed063ac83d83797f18b631bfcb12bca91684aa4b
+- Content hash: e4ccd0448e6a07de902fa34651c0098c93ad0fa700905d6c57feb51bdfa258b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=The frozen note uses this form to mean 'exists' before replacing it.
 
 ### AUTHORED_ENGLISH `en-u24-134`
 
@@ -5083,10 +5031,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38475b7a8e7418679c24b276a75755e842931f72ed15fcc63e72aed39e32bbdb
+- Content hash: 87b0d00afec5d12e54840061c222bd39b6ccbd304cbd4ec184b5d57f01f89e20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=This form means exists, so it is the form being replaced.
 
 ### AUTHORED_ENGLISH `en-u24-135`
 
@@ -5096,10 +5044,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 616e0872569a1e5d87f714d9759a3abfeba9775b7ef7da6ea9c8f824a13ba8a9
+- Content hash: a20eee3cff15dd652f49e5d30d5c93d76225d95fc9e6d2b4ec493072fedd2182
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown negated line?
+text=The frozen note says this replacement has a different meaning from the reply that means no.
 
 ### AUTHORED_ENGLISH `en-u24-136`
 
@@ -5109,10 +5057,10 @@ text=Which admitted English gloss is written for the shown negated line?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0eceaba960dfb35ce79a2950b14608f7a034ebc8c891cd1d0c9e37c83edeabdc
+- Content hash: d5d07b8fee7aaa6df3fcbd64552705601e7e98c0db65bba8ebee247c7b44976d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is on the frozen line directly after the shown word?
+text=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
 
 ### AUTHORED_ENGLISH `en-u24-137`
 
@@ -5122,10 +5070,10 @@ text=Which admitted form is on the frozen line directly after the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9eae1ffdc8f4df37a734e445b984e614f692e29c878eba42c0abcba4c9744679
+- Content hash: 69d652529955f0d87caf8a0ec32003552da0d14fc7f4cc24d7c701df8f290161
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted form is in the second prefix column for the shown word?
+text=The frozen source pairs the shown form
 
 ### AUTHORED_ENGLISH `en-u24-138`
 
@@ -5135,10 +5083,10 @@ text=Which admitted form is in the second prefix column for the shown word?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 389cdfb4da38d9dd11f79e501fa3ae4c69b94802b45c00098122315d2fce3d5a
+- Content hash: 60f66fc338f7df02bd86597b99379aa302d973d745998d9422c0d767e2c0b42b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=with the admitted gloss
 
 ### AUTHORED_ENGLISH `en-u24-139`
 
@@ -5148,10 +5096,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 74b2f949171c638564c43fb3af37f1a262887e3b81df2104af43938202bad625
+- Content hash: e031e0c12e8148d628e5e862351cd90b78d3fc3ae5a535ec6917bbf7a48a5abe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.
+text=Which admitted English gloss is written for the shown negated line?
 
 ### AUTHORED_ENGLISH `en-u24-140`
 
@@ -5161,10 +5109,10 @@ text=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence fo
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4e613c9315cdedba44961a3bed3ad1967e7451961f51ce5e697de5b5af2572a
+- Content hash: 1e96261c660b73f1e2441e790f9660eb270f42f12a40083386218a8642b4635b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=Which admitted form is on the frozen line directly after the shown word?
 
 ### AUTHORED_ENGLISH `en-u24-141`
 
@@ -5174,10 +5122,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 643a42ce0dc6cec6b6b3e30a58e525b399f6e9ea4203d037bf3298165c2e6b21
+- Content hash: bdf5d3e7c525713f608c516269f5fd361c64f3e507b793583adc4018b7b645d0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Which admitted form is in the second prefix column for the shown word?
 
 ### AUTHORED_ENGLISH `en-u24-142`
 
@@ -5187,10 +5135,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b56d7b8bbb0cf6d55aa94798d2860cac923f1ea8935c55330116b99cf740edcc
+- Content hash: 1d87f688b6a9760bb72967e348410650482a7d785452c1197a1619d36ccc8559
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Admitted negation lines
 
 ### AUTHORED_ENGLISH `en-u24-143`
 
@@ -5200,10 +5148,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d27e6b70f42b5a34a782fe19aaaeb95c029c92c9299a1e854b0ce1a364c5ab5f
+- Content hash: 0c98ecf2e98d776b807fe0c2b5071400008b1e0c3fd37fb50a2c955f20ccaca4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Proposed Unit 24 uses frozen verbal negation lines, the admitted absence form, the frozen book compare, and the frozen prefix table. Placement contrasts stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u24-144`
 
@@ -5213,10 +5161,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d4807e495481e3832aeacccefd0818a19bbe5b623686b8f51550ad5ec6a82d18
+- Content hash: 3317938df10351444ea09aa43263d1a78d705947ec262bfe218381935a347698
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u24-145`
 
@@ -5226,10 +5174,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d62d27336b14ff891d71d8d549374d473ad86b9f657be990e4923feb7713a99c
+- Content hash: afa787e96242db2f5d7829275c889a4645df46aa76322dbeb3a60416fdb2cc3f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u24-146`
 
@@ -5239,10 +5187,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 792145bb90836d82cac387d3bb5b62ac93fefc21792ed3515b804e94b8107667
+- Content hash: 438015984616e6e59fa4ea5479a41282677d2e3a5ea75b1a4387c81ba7c8a3cf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u24-147`
 
@@ -5252,10 +5200,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3818fa6ca332f156d9332c8f24c8ea74c78908fd6f6a7d27ee558fcaf694e0f1
+- Content hash: a2eadfc5ad98aefbd6b306fa06dbde8a3dabb86311713af14cad3109a503e23c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u24-148`
 
@@ -5265,10 +5213,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e6e48d5d49d8a0787f255313882d6606a94a16c0234026097974e5b73fbe0530
+- Content hash: 257a6f7a4b4fd2eec49dc20a705f48f07fba2c343d1b1d391c8c2af67fe9bdb2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u24-149`
 
@@ -5278,10 +5226,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 55f790a2bf91c54ab7d05e6e09ff2abd9e3df29968daf5dc21eb671d57462b08
+- Content hash: bfc61543cccb12c8761e9150c68dbf0f970607ee0498d7d902e30c363f94c319
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u24-150`
 
@@ -5291,10 +5239,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1b97644a60ff386b82c5236d0e3bae950753dc2081f3187d501d85818cd88a02
+- Content hash: 4bfd8c52e0b6f032735e65bc39057b180fa13e39725adb2d23566b9ebec3bdf8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Work Lesson 24 in your copy
 
 ### AUTHORED_ENGLISH `en-u24-151`
 
@@ -5304,10 +5252,10 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f14cb32db421c0c79c33bc63f9dd85372ff8e9feae523abafb28a118a6d3d83
+- Content hash: 08a59632c022a35eccff90ffaed2740056f1be8bba5c1a794acfe06a9e6979f4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 24 work in your copy.
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u24-152`
 
@@ -5317,10 +5265,10 @@ text=Self-attest only after the Lesson 24 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e98bdcaee895189bf46f603fa89f7229202a2d63bad3b0ec5b09cbc05a1bbdd8
+- Content hash: c1b93db495adaca4d2ee02d193b4e893804f2643d4ac7f9c4bb0f7821629ece7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own
+text=Open Lesson 24 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u24-153`
 
@@ -5330,7 +5278,59 @@ text=Placement contrasts stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 29c0e96660455654dacfabfbbd879257f81b688fb69942e62dd60e603e8c916f
+- Content hash: 7772326c253901dd200975a0b6f7157930121fdce0c88b20d0b85beac6bd56ec
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 24 book work
+
+### AUTHORED_ENGLISH `en-u24-154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3bee0c2fd719a3057ae48972c732e57f9cbd30ac20505cc8bc5911cf29504347
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u24-155`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f6880abb5157764271e5844f6dced322f0db739289e2793ad62b5d231740fad8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 24 work in your copy.
+
+### AUTHORED_ENGLISH `en-u24-156`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1dd32f55a3271624873acadb2bd47ac22b57e1cde6e69f9361ef4b739087f4c5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Placement contrasts stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-157`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a683e746a73e829158c1ec29cc51577a52bd1630ef1906189a9e4eeb5f64037b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Placement contrasts stay in the copy you own. The frozen lines do not supply that pattern.

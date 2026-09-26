@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d053dbb6245bdccd8360f595625c277da485f4e2
-- Unit content-review SHA-256: 4f65dddbb05911d85da000b55ffeff02037d42f0b20ec25b35bf98f6075df6c8
+- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
+- Unit content-review SHA-256: f7547d860881b57eb5287d86ac0b4995d873b0dfe7b1612db33189d56c0999da
 - Mapping-package SHA-256: b7e8887a95cac43580e879e588f7ecd3846a7b71fd1cd232d302df207d65defb
-- Pack content-review SHA-256: 3c56dc9f54ae26c06bcd765523b700ee1ea09cecf5fbd04ba581a5c51a0ad169
-- Review-package SHA-256: 18b2b84dde2bfe4876d25b55a728f10d40b3479b26dd58b236c64e93ef41d2c8
-- Repository source SHA-256: c8e6eacc58ae60743a448514c50851aa0b62df6a566dd5ae540112dc70c41a85
+- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
+- Review-package SHA-256: bbbc32fa5ac0d503994b3ab06e6d8524b77c5427d710c71c7b8283e3ed839af7
+- Repository source SHA-256: 82e455c4b56af5352b95e2fdc607e5cab9d5388beb216ddf925fa7611ff94eef
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,9 +132,9 @@ remediation=u21-st-rem-svoy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2b9b6e8e4bc422ad35a364a08aa1cccb8f97eee3a41bc0105393463b6e12c0d3
+- Content hash: ba58d4ca284744d523877e544d7b061c9683cd19d0e5ec4e932324c76e3a84e7
 
-title=Choose the admitted gloss written after the equals sign
+title=Choose the English meaning of the shown sentence
 kind=RECOGNITION
 unitNumber=21
 instruction=u21-st-orient,u21-st-teach-object-reference-1,u21-st-teach-object-reference-2
@@ -151,9 +151,9 @@ remediation=u21-st-rem-object-reference
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae465902b5d4d24d4d21e8ca223638c4a27587cac04ebc330e4f4d5a169a40b7
+- Content hash: e608ce05b538b6a476ee9f7ba4e407eebdbd67ddf52ed23c6ba834c45556f668
 
-title=Choose the admitted gloss written for the shown conjunction
+title=Choose the English meaning of the shown word
 kind=RECOGNITION
 unitNumber=21
 instruction=u21-st-orient,u21-st-teach-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3
@@ -395,9 +395,9 @@ remediationStepId=u21-st-rem-svoy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3712138a16b01d7749129e93194a13d2ac78a03ebfc5eb918f7ed12aa1dea24d
+- Content hash: 56005b57c95fa1f23b1347672b8aa3c433893c3f8abee5a1a2496ff1391bdaed
 
-title=Choose the admitted gloss written after the equals sign
+title=Choose the English meaning of the shown sentence
 estimatedMinutes=12
 objectives=obj-u21-object-reference
 steps=u21-st-teach-object-reference-1,u21-st-guided-object-reference-1,u21-st-teach-object-reference-2,u21-st-rem-object-reference,u21-st-check-object-reference
@@ -520,9 +520,9 @@ remediationStepId=u21-st-rem-object-reference
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3136518077c734bdd6221d60630ccc913116697e6158ff643f3452e83e43ac55
+- Content hash: 8bd6ec437396e5a5a2727ce099b1e64f870d38b4575e1932967defb377858b81
 
-title=Choose the admitted gloss written for the shown conjunction
+title=Choose the English meaning of the shown word
 estimatedMinutes=12
 objectives=obj-u21-purpose
 steps=u21-st-teach-purpose-1,u21-st-guided-purpose-1,u21-st-teach-purpose-2,u21-st-teach-purpose-3,u21-st-rem-purpose,u21-st-check-purpose
@@ -965,7 +965,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eb408d809600f8c6b79857a61bbe5c462966da5183f40e0961d0abc799091188
+- Content hash: d217afa8eae5a711c20ed16ad6413be29c9b9cc0ecbf1244d22e56932e0c2bc6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -973,7 +973,7 @@ prompt=Which admitted English gloss is written after the equals sign on the show
 promptLetter=Я люблю́ себя́
 options=I love myself | I love my wife
 answer=I love myself
-feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 objectiveId=obj-u21-object-reference
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
@@ -986,7 +986,7 @@ independent=false
 answerSourceIds=prov-ex-u21-object-reference-0-en
 distractorSourceIds= | prov-ex-u21-object-reference-1-en
 distractorDifference= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 contrastMembers=I love myself | I love my wife
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u21-object-reference-0-ru | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
@@ -1105,11 +1105,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6166d42892c00694788f84df8fd06124ae1c4660af2517a4f46f3b98daf95360
+- Content hash: 53e74b184a94e873a280eca5bcbb1c9240dad991f1e0c1995224824f5dcadd32
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written after the equals sign on the shown line?
+prompt=Choose the English meaning of the shown sentence.
 promptLetter=Я люблю́ (свою́) жену́
 options=I love my wife | I love myself
 answer=I love my wife
@@ -1117,7 +1117,7 @@ feedback=The frozen source pairs the shown form "Я люблю́ (свою́) ж
 objectiveId=obj-u21-object-reference
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+distractorRationales= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 testedFeature=REFLEXIVE_WIFE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u21-object-reference-1
@@ -1125,7 +1125,7 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u21-object-reference-1-en
 distractorSourceIds= | prov-ex-u21-object-reference-0-en
-distractorDifference= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+distractorDifference= | The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
 contrastMembers=I love my wife | I love myself
 relationKind=EXPLICIT_SOURCE_PAIR
@@ -1140,20 +1140,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 343910c76f43758ca985a6f0d2ed5aec208d74c57936fd89f949adcabd9d0dba
+- Content hash: dbffb49845d91e7f0a9d16533a17e2f4569be75cbf8740cdd6367911c4b2050d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written after the equals sign on the shown line?
-promptLetter=себя́
+prompt=Choose the English meaning of the shown sentence.
+promptLetter=Я люблю́ себя́
 options=I love myself | I love my wife
 answer=I love myself
-feedback=The frozen source pairs the shown form "себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 objectiveId=obj-u21-object-reference
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
 distractorRationales= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
-testedFeature=REFLEXIVE_OBJECT
+testedFeature=REFLEXIVE_MYSELF_SENTENCE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u21-object-reference-2
 cueLanguage=ru
@@ -1161,10 +1161,10 @@ independent=true
 answerSourceIds=prov-ex-u21-object-reference-0-en
 distractorSourceIds= | prov-ex-u21-object-reference-1-en
 distractorDifference= | The frozen source pairs the shown form "Я люблю́ (свою́) жену́" with the admitted gloss "I love my wife" ("жену́ = I love").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "себя́" with the admitted gloss "I love myself" ("жену́ = I love").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
 contrastMembers=I love myself | I love my wife
 relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-u21-object-reference-x-0 | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
+relationParticipantIds=prov-ex-u21-object-reference-0-ru | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u21-i-purpose-1`
@@ -1175,11 +1175,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0b332ff4eeca57c292fc727d119fa3da5cd7bcc0f4da16cb33f6c86e8d1a1457
+- Content hash: f670b1389dcaf18ee5fe60ee06469777399d9e218da09248d9e81a2e67441172
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown conjunction?
+prompt=Choose the English meaning of the shown word.
 promptLetter=если
 options=if | so that | although
 answer=if
@@ -1210,11 +1210,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bbc96603072751029f4005b641810ce00809f606f3cf03a426fbd4f26167a224
+- Content hash: 16fdba77fd7b1466ebc9fd42d826de47bb566f97fbf179d0c39ae3d6eb0c2a73
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the shown conjunction?
+prompt=Choose the English meaning of the shown word.
 promptLetter=потому что
 options=because | since | after
 answer=because
@@ -2386,38 +2386,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ebdde0c116b9d900fb4cc31c61bdb732624fb04076bdaece3965bc56456644fa
-
-recordType=label
-sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
-sourceRevision=1369617627
-sourceRecordId=grammar:** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
-** ''"Я люблю́ '''с
-originalSourceText=** ''"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife"''
-** ''"Я люблю́ '''себя́''' = I love '''myself'''"''
-shippedText=себя́
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6
-contentHash=bbde0852804783aa204fff51745ab7f2a49921e8bfa64981878532c2a4088964
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u21-object-reference-x-1`
-
-- Objectives: obj-u21-object-reference
-- Sessions: u21-s-orient, u21-s-object-reference
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b90e32518e40e71869e5bc7fd9275d1b4506590240f6f3240a0e0cd432b0f711
+- Content hash: 2567c7c39908190dc427cc2f019c0f2181c137df5044008f63255040d4cd5054
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -2440,7 +2409,7 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u21-object-reference-x-1-r0`
+### PROVENANCE `prov-u21-object-reference-x-0-r0`
 
 - Objectives: obj-u21-object-reference
 - Sessions: u21-s-orient, u21-s-object-reference
@@ -2448,7 +2417,7 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3d0b2d1d230c07373daa4254bcb438cf2b1a06d669bdc66a3cd27e44bd156e7
+- Content hash: cbd003b046c2cf4ee938043b5e09a0147eb9ee7ad13106cf877bf2d968f74ebf
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
@@ -3433,10 +3402,10 @@ text=Which admitted English gloss is written after the equals sign on the shown 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd21cff9c3ed994df1c78237dd6c60e13ecdbffec38fe296d67371e9927adbe8
+- Content hash: d84e07fa688835d96020d21e7d251b510925461563ddeeb51f4d91e442fd789d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the shown conjunction?
+text=Choose the English meaning of the shown sentence.
 
 ### AUTHORED_ENGLISH `en-u21-025`
 
@@ -3446,10 +3415,10 @@ text=Which admitted English gloss is written for the shown conjunction?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 19daaa1919de547daa86c7beca37f249356b63063e239e437dfffa9431f91cf6
+- Content hash: 40ac468b701706d73e9af8e0f6a8476e2995276ab15d6d7063779333b7778507
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted object and purpose lines
+text=Which admitted English gloss is written for the shown conjunction?
 
 ### AUTHORED_ENGLISH `en-u21-026`
 
@@ -3459,10 +3428,10 @@ text=Admitted object and purpose lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a40966826447a4840b23efd59c3dd766dedbf1b35f348faf0f6b5864ec28736d
+- Content hash: 6f8cda02eae2cbf6adc0b013c97bc7c7d3310f2d19277fe96d0438eb4a01ae91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.
+text=Choose the English meaning of the shown word.
 
 ### AUTHORED_ENGLISH `en-u21-027`
 
@@ -3472,10 +3441,10 @@ text=Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c5105608cb64696fb0eab05107e1a42aa8731c57c239a7832f34b3ea4638554e
+- Content hash: c11c52a03628c4d5b62d731ea98cc7bcfa7c43d85ef543206350de79c276c94f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 21 in the copy you own. The app records do not replace that lesson.
+text=Admitted object and purpose lines
 
 ### AUTHORED_ENGLISH `en-u21-028`
 
@@ -3485,10 +3454,10 @@ text=Open Lesson 21 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 885eadef14060b2a7067e533529fd094b4cc005e412f19e48e39704b972d1594
+- Content hash: ffde071e9f8da10a95770cd5cbd720e076f61f9c39f516e34e5558229f0c830f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u21-029`
 
@@ -3498,10 +3467,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2584e4c7f991ed1bf41ef4800d1fcb76fcb7353672aebb65faf0552d0fe02538
+- Content hash: 6a35d51b1a308645b4dbd3d1961d1efe960893607445a8363502392eff514e40
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Open Lesson 21 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u21-030`
 
@@ -3511,10 +3480,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 91eda1c314f16cef78e6611d13d3609cede06494dd0d7a39fa0ce579111a857f
+- Content hash: 12cc088585667ae5e69b6eae31f402e4301471f845b9a183fd9e8f24bec658ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u21-031`
 
@@ -3524,10 +3493,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7086d8dfe3e0c9fa0989d5588d488f2b8f4288c585eeeda63ccbf7f3cd1996d1
+- Content hash: 517008909878ea2ac09269c30f4b52d2e49a2a050a7c3260f1da5ed1fc3611fe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u21-032`
 
@@ -3537,10 +3506,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c8ac1eedf6ffd15d0e665d6541f7418b57036113ab4e49929a1754ca7fcd565
+- Content hash: 862ae3f76e6e48b75feada6a9e9c58ea9cd6bfba265f83bf2632273488853e76
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u21-033`
 
@@ -3550,10 +3519,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0efdc2b78f8bd316f64fbcb2a613384d2d7665b47a2fe49356a3b6854d617cac
+- Content hash: 3bb91d42ea0f025d00f0ddabbe8642929f2f69b8bd1ab85d041d7ca56f1396c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 21 in your copy
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u21-034`
 
@@ -3563,10 +3532,10 @@ text=Work Lesson 21 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e120050a4f7f67b34344e07323419bb5266cb545ae2ab3c7ababd69e262ffc64
+- Content hash: 26d3d104470c960e8e652aab999086d06291ec3e06d19004329b78f70624f689
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u21-035`
 
@@ -3576,10 +3545,10 @@ text=Do Lesson 21 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4c78f9f22c63b6b78dc797c5b1962740f619f8e68468a504d412045922f0b082
+- Content hash: 587392b71a586a5a32d0b10a1aa2e76264ccd1f958911e15af126d8e927cd6ca
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 21 in your copy and complete its lesson work.
+text=Work Lesson 21 in your copy
 
 ### AUTHORED_ENGLISH `en-u21-036`
 
@@ -3589,10 +3558,10 @@ text=Open Lesson 21 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9087ade025824a122f475d6571097c75cda23527b2820ee3f989147388703c88
+- Content hash: 4a4a2475d06ac42523a87e8f1d070e3f40307b7ebd4d694992875036ff147130
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 21 book work
+text=Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u21-037`
 
@@ -3602,10 +3571,10 @@ text=Record Lesson 21 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4554a5cbc45bcbca1fa741e1421850408408eed242774a15393b114cfe88115f
+- Content hash: 764f9c62064b42df4b84168253393414e6bbb03b4f2e4990c997d3ccf662ff66
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Open Lesson 21 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u21-038`
 
@@ -3615,7 +3584,33 @@ text=When you have done Lesson 21 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c992cd898ff02dc7efdc0855f6437a5c211348484c99eab3ddf13ca917260474
+- Content hash: b60b376adbb8d5e974c630cebc34f7d2beef010dde630c09fec39098f333ce6e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 21 book work
+
+### AUTHORED_ENGLISH `en-u21-039`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 90f0ad00fb48d80f87822f64e97640fd5a9d2bf3951397946e15bde4883d04b6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u21-040`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9e7d3ec9ae96e090fd98f4728ba3682343b961edbcdc92480d4a820968bc4527
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 21 work in your copy.
@@ -3829,8 +3824,7 @@ permitsAppUse=true
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-rem`
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-rem-r0`
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0`
-- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-1`
-- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-1-r0`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0-r0`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-rem`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-0`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-1`
