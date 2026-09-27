@@ -11,12 +11,12 @@ Unit 29 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
-- Unit content-review SHA-256: 91957a6e1099066bec21c2de4da52744c696844a3c29383fc3db4f07bdf96504
+- Curriculum source commit: fb6be57154f70c9b3df3b6a9c57d770349af7741
+- Unit content-review SHA-256: 9646dad79ce6929e4010db1c27229bd6bb4f370d225d203d106ef9864134647d
 - Mapping-package SHA-256: 54c2f00221054ced81fe17bea8b0f156073b830e54e70c47cf769e93bd56eb36
-- Pack content-review SHA-256: 2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5
-- Review-package SHA-256: cd6cf2fbccb854057999e66c38b13206bcba218c54050cd6fbee2b42f9ab8813
-- Repository source SHA-256: 098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e
+- Pack content-review SHA-256: 8c019ec786edcb105211388bd78b266f356c0fe00ad1a3a0ea929ad77b21856e
+- Review-package SHA-256: 0076107e5ecaff5fcdad70e7204597d164352b3e4443370647de6a5ef026739e
+- Repository source SHA-256: 0d0fa56ab018e3da46bec02fe216f5570eb0a56fb6631ada0b88cebae65ab8ea
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1323,11 +1323,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: e5953d2c7c5bcbf707aeb965eb4bd3972b2d0fcc28ec525de635a891f4834929
+- Content hash: 4abf27051a485b0668bb310bb7f0ff0b63e6b2c4e6c33758c598ff6d03faf7f4
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, dictionary use, a general particle system, and the final reading are not prepared. Review is pending.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, a general bookish-register claim, dictionary use, and the final reading are not prepared. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
