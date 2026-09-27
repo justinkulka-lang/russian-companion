@@ -34,7 +34,6 @@ class BatchBUnits2125Test {
             "collective-numeral" to "obj-u22-collective",
             "negation-alternation" to "obj-u24-alternation",
             "negative-pronoun" to "obj-u24-stand-ins",
-            "negation-scope" to "obj-u24-placement",
             "register" to "obj-u25-address",
             "elapsed-time-duration" to "obj-u23-duration",
         )
@@ -65,22 +64,22 @@ class BatchBUnits2125Test {
         }
         assertTrue(
             pack.sourceCapabilities.none {
-                it.supportedClaim in setOf("completion-over-period", "productive-diminutive")
+                it.supportedClaim in setOf("completion-over-period", "negation-scope", "productive-diminutive")
             },
         )
         assertTrue(BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD.isEmpty())
+        assertTrue(BatchBSources.ADMITTED_NEGATION_SCOPE.isEmpty())
         assertTrue(BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE.isEmpty())
-        assertEquals(1, BatchBSources.ADMITTED_NEGATION_SCOPE.size)
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" && it.objectiveId == "obj-u23-completion" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 7).any { it.claim == "adverb-paradigm" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 17).any { it.claim == "productive-clock-time" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 24).any { it.claim == "negation-scope" && it.objectiveId == "obj-u24-placement" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 24).none { it.claim == "negation-scope" })
-        listOf(21, 22, 24).forEach { number ->
+        listOf(21, 22).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
-        listOf(23, 25).forEach { number ->
+        listOf(23, 24, 25).forEach { number ->
             assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
@@ -199,7 +198,7 @@ class BatchBUnits2125Test {
             "obj-u24-alternation",
             "obj-u24-stand-ins",
             "obj-u24-concord",
-            "obj-u24-placement",
+            "obj-u24-word-order-contrast",
             "obj-u28-imperfective-adverb",
             "obj-u28-perfective-adverb",
         )
@@ -494,32 +493,80 @@ class BatchBUnits2125Test {
     }
 
     @Test
-    fun batchDCapabilitiesRejectMutatedEvidence() {
+    fun wordOrderContrastDoesNotClearNegationScope() {
         val pack = pack()
-        val scope = pack.sourceCapabilities.single { it.supportedClaim == "negation-scope" }
-        val admitted = BatchBSources.ADMITTED_NEGATION_SCOPE.single()
-        assertEquals(admitted.sourceId, scope.sourceId)
-        assertEquals(admitted.sourceRevision, scope.sourceRevision)
-        assertEquals(admitted.sourceRecordId, scope.sourceRecordId)
-        assertEquals(admitted.sourceHash, scope.sourceHash)
-        assertEquals(admitted.exactSpan, scope.exactSpan)
-        assertEquals(BatchBSources.SCOPE_SPAN, scope.exactSpan)
-        assertFalse(scope.exactSpan.contains("logical stress"))
-        assertTrue(scope.exactSpan.contains("alternative word order can change the meaning entirely"))
+        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "negation-scope" })
+        assertTrue(BatchBSources.ADMITTED_NEGATION_SCOPE.isEmpty())
+        val contrast = pack.unit(24)!!.objectives.first { it.id == "obj-u24-word-order-contrast" }
+        assertEquals("RECOGNITION", contrast.kind)
+        assertTrue(contrast.checkItemIds.size >= 2)
+        assertTrue(pack.items.filter { it.objectiveId == contrast.id }.all { item ->
+            !item.prompt.contains("negation scope") && !item.prompt.contains("movement rule")
+        })
+        assertEquals("GUIDANCE", pack.unit(24)!!.objectives.first { it.id == "obj-u24-placement" }.kind)
+        assertEquals("NOT_PREPARED", pack.unit(24)!!.readiness)
+        assertEquals("DEVELOPMENT", pack.unit(24)!!.installState)
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 24).any { it.claim == "negation-scope" })
 
-        fun rejected(mutated: V2SourceCapability, needle: String) {
-            val errors = V2Validator.validate(replaceCapability(pack, scope.id, mutated)).errors.joinToString("\n")
-            assertTrue(errors, errors.contains(needle))
-            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(replaceCapability(pack, scope.id, mutated), 24).any { it.claim == "negation-scope" })
-        }
-        rejected(scope.copy(sourceId = "src-openrussian-50e210c4"), "a dictionary row does not clear negation-scope")
-        rejected(scope.copy(sourceRevision = "1"), "revision does not match the frozen record")
-        rejected(scope.copy(sourceRecordId = "grammar:other"), "revision does not match the frozen record")
-        rejected(scope.copy(sourceHash = "0".repeat(64)), "revision does not match the frozen record")
-        rejected(scope.copy(exactSpan = scope.exactSpan + " "), "span is not in the frozen record")
-        rejected(scope.copy(unitNumber = 23), "attached to the wrong unit or objective")
-        rejected(scope.copy(objectiveId = "obj-u24-alternation"), "attached to the wrong unit or objective")
-        rejected(scope.copy(supportedClaim = "negation-alternation"), "attached to the wrong unit or objective")
+        val frozen = overreach(
+            pack,
+            BatchBSources.SCOPE_SPAN,
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-frozen-order-as-scope",
+        )
+        assertTrue(frozen, frozen.contains("word-order evidence does not clear negation-scope"))
+        assertTrue(frozen, frozen.contains("no independent negation-scope admission"))
+        val frozenHost = pack.provenanceRecords.first { it.originalSourceText == BatchBSources.SCOPE_SPAN }
+        assertEquals(sha256(BatchBSources.SCOPE_SPAN), frozenHost.sourceHash)
+        val identity = dev.russiancompanion.v2.curriculum.GovernedSourceAdmission(
+            sourceId = frozenHost.sourceId,
+            sourceRevision = frozenHost.sourceRevision,
+            sourceRecordId = frozenHost.sourceRecordId,
+            sourceHash = frozenHost.sourceHash,
+            exactSpan = BatchBSources.SCOPE_SPAN,
+            unitNumber = 24,
+            objectiveId = "obj-u24-placement",
+            governedClaim = "negation-scope",
+        )
+        val identityCapability = V2SourceCapability(
+            id = "cap-identity-as-scope",
+            sourceId = identity.sourceId,
+            sourceRevision = identity.sourceRevision,
+            sourceRecordId = identity.sourceRecordId,
+            sourceHash = identity.sourceHash,
+            exactSpan = identity.exactSpan,
+            unitNumber = 24,
+            objectiveId = "obj-u24-placement",
+            supportedClaim = "negation-scope",
+        )
+        assertFalse(BatchBSources.clearsNegationScope(identityCapability, setOf(identity)))
+
+        val moved = "\u041d\u0435 \u043d\u0430\u0434\u043e \u043c\u0435\u043d\u044f \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c. \u041c\u0435\u043d\u044f \u043d\u0435 \u043d\u0430\u0434\u043e \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c."
+        val movedErrors = overreach(pack, moved, 24, "obj-u24-placement", "negation-scope", "cap-moved-object")
+        assertTrue(movedErrors, movedErrors.contains("word-order evidence does not clear negation-scope"))
+        assertTrue(BatchBSources.wordOrderMeaningContrast(moved))
+
+        val generic = overreach(
+            pack,
+            "alternative word order can change the meaning entirely",
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-generic-order",
+        )
+        assertTrue(generic, generic.contains("word-order evidence does not clear negation-scope"))
+
+        val glosses = overreach(
+            pack,
+            "\u041d\u0435 \u043d\u0430\u0434\u043e \u043c\u0435\u043d\u044f \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c. One should not persuade me. \u041c\u0435\u043d\u044f \u043d\u0435 \u043d\u0430\u0434\u043e \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c. There is no need to persuade me.",
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-gloss-recognition",
+        )
+        assertTrue(glosses, glosses.contains("word-order evidence does not clear negation-scope"))
 
         val emphasis = overreach(
             pack,
@@ -585,7 +632,7 @@ class BatchBUnits2125Test {
             assertTrue(transferred, transferred.contains("word-order evidence does not clear $claim"))
             assertTrue(transferred, transferred.contains("no independent $claim admission"))
             assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
-                pack.copy(sourceCapabilities = pack.sourceCapabilities + scope.copy(id = "cap-moved-$claim", unitNumber = unitNumber, objectiveId = objectiveId, supportedClaim = claim)),
+                pack.copy(sourceCapabilities = pack.sourceCapabilities + identityCapability.copy(id = "cap-moved-$claim", unitNumber = unitNumber, objectiveId = objectiveId, supportedClaim = claim)),
                 unitNumber,
             ).any { it.claim == claim })
         }
@@ -629,30 +676,29 @@ class BatchBUnits2125Test {
             )
             val errors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + row)).errors.joinToString("\n")
             assertTrue(errors, errors.contains("a dictionary row does not clear $claim"))
-            val attested = row.copy(id = "cap-book-$claim", sourceId = scope.sourceId, exactSpan = "Self-attest only after the Lesson work in your copy.")
+            val attested = row.copy(id = "cap-book-$claim", sourceId = frozenHost.sourceId, exactSpan = "Self-attest only after the Lesson work in your copy.")
             val bookErrors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + attested)).errors.joinToString("\n")
             assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear $claim"))
         }
 
-        val strippedUnit = pack.unit(24)!!.copy(
-            objectives = pack.unit(24)!!.objectives.map { objective ->
-                if (objective.id == "obj-u24-placement") {
-                    objective.copy(
-                        instructionStepIds = emptyList(),
-                        exampleIds = emptyList(),
-                        practiceStepIds = emptyList(),
-                        checkItemIds = emptyList(),
-                        remediationStepIds = emptyList(),
-                    )
-                } else {
-                    objective
-                }
-            },
+        val explicit = "Scope-sensitive placement of the particle distinguishes which phrase is negated."
+        val explicitCapability = identityCapability.copy(
+            id = "cap-future-scope",
+            sourceRecordId = "future:scope",
+            sourceHash = sha256(explicit),
+            exactSpan = explicit,
         )
-        val stripped = V2Validator.validate(
-            pack.copy(units = pack.units.map { if (it.number == 24) strippedUnit else it }),
-        ).errors.joinToString("\n")
-        assertTrue(stripped, stripped.contains("cap-u24-negation-scope") && stripped.contains("has no reviewable instruction and check chain"))
+        val explicitAdmission = identity.copy(
+            sourceRecordId = explicitCapability.sourceRecordId,
+            sourceHash = explicitCapability.sourceHash,
+            exactSpan = explicit,
+        )
+        assertFalse(BatchBSources.wordOrderMeaningContrast(explicit))
+        assertFalse(BatchBSources.clearsNegationScope(explicitCapability))
+        assertTrue(BatchBSources.clearsNegationScope(explicitCapability, setOf(explicitAdmission)))
+        val liveExplicit = overreach(pack, explicit, 24, "obj-u24-placement", "negation-scope", "cap-future-live")
+        assertTrue(liveExplicit, liveExplicit.contains("no independent negation-scope admission"))
+        assertFalse(liveExplicit.contains("word-order evidence does not clear negation-scope"))
 
         val stamped = pack.copy(
             provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
@@ -661,10 +707,9 @@ class BatchBUnits2125Test {
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 7).any { it.claim == "adverb-paradigm" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 17).any { it.claim == "productive-clock-time" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 23).any { it.claim == "completion-over-period" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 24).any { it.claim == "negation-scope" })
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 24).none { it.claim == "negation-scope" })
-        val stampedBroken = replaceCapability(stamped, scope.id, scope.copy(sourceHash = "f".repeat(64)))
-        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stampedBroken, 24).any { it.claim == "negation-scope" })
+        assertEquals("NOT_PREPARED", stamped.unit(24)!!.readiness)
     }
 
     private fun overreach(

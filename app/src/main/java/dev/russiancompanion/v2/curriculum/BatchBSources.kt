@@ -260,18 +260,32 @@ internal object BatchBSources {
         ),
     )
     val ADMITTED_COMPLETION_OVER_PERIOD: Set<GovernedSourceAdmission> = emptySet()
-    val ADMITTED_NEGATION_SCOPE = setOf(
-        GovernedSourceAdmission(
-            sourceId = "src-wikipedia-russian-grammar-1369617627",
-            sourceRevision = "1369617627",
-            sourceRecordId = "grammar:In some cases, alternative word order can change the meaning entirely:\n* \u041d\u0435 \u043d\u0430\u0434\u043e",
-            sourceHash = "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
-            exactSpan = SCOPE_SPAN,
-            unitNumber = 24,
-            objectiveId = "obj-u24-placement",
-            governedClaim = "negation-scope",
-        ),
-    )
+    val ADMITTED_NEGATION_SCOPE: Set<GovernedSourceAdmission> = emptySet()
+
+    /**
+     * The frozen pair moves меня and leaves не надо in place. That is a
+     * sentence/gloss contrast. It does not state scope-sensitive placement of не.
+     */
+    fun wordOrderMeaningContrast(span: String): Boolean {
+        val neverSentence = "\u041d\u0435 \u043d\u0430\u0434\u043e \u043c\u0435\u043d\u044f \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c"
+        val anywaySentence = "\u041c\u0435\u043d\u044f \u043d\u0435 \u043d\u0430\u0434\u043e \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c"
+        if (span.contains("alternative word order can change the meaning entirely")) return true
+        if (span.contains(neverSentence) && span.contains(anywaySentence)) return true
+        return span.contains("One should not persuade me") && span.contains("There is no need to persuade me")
+    }
+
+    /**
+     * Identity membership is not enough. A word-order contrast stays closed
+     * even when its hash is placed in the admitted set. A future span can clear
+     * the claim only when it is fully bound and is not this contrast.
+     */
+    fun clearsNegationScope(
+        capability: V2SourceCapability,
+        admitted: Set<GovernedSourceAdmission> = ADMITTED_NEGATION_SCOPE,
+    ): Boolean {
+        if (wordOrderMeaningContrast(capability.exactSpan)) return false
+        return admits(capability, admitted, "negation-scope")
+    }
     val ADMITTED_PRODUCTIVE_DIMINUTIVE: Set<GovernedSourceAdmission> = emptySet()
 
     fun admits(capability: V2SourceCapability, admitted: Set<GovernedSourceAdmission>, claim: String): Boolean =

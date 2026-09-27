@@ -588,14 +588,14 @@ def _alternation(lesson) -> None:
     _bind(lesson, "alternation", "negation-alternation", NEGATION_SPAN)
 
 
-def _placement(lesson) -> None:
-    """Two frozen word orders and their stated meanings. This is not a movement rule."""
+def _word_order_contrast(lesson) -> None:
+    """Bounded sentence/gloss recognition. This objective is not negation-scope."""
     _frame(lesson)
     why_never = _pair(NEVER_RU, NEVER_EN, NEVER_CITE)
     why_anyway = _pair(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)
     prompt = "Which English meaning matches the shown sentence?"
     lesson.objective(
-        "placement",
+        "word-order-contrast",
         "Choose the admitted meaning for the shown sentence",
         "CONTRAST_SELECTION",
         ("grammar", SCOPE_SPAN, SCOPE_RULE),
@@ -604,13 +604,12 @@ def _placement(lesson) -> None:
             _wiki("grammar", SCOPE_SPAN, ANYWAY_RU, ANYWAY_EN),
         ],
         [
-            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "SCOPE_NEVER", why_never, GRAMMAR_SOURCE, prompt),
-            _check(ANYWAY_RU, ANYWAY_EN, [_quoted(NEVER_RU, NEVER_EN, NEVER_CITE)], "SCOPE_ANYWAY", why_anyway, GRAMMAR_SOURCE, prompt),
-            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "SCOPE_NEVER_AGAIN", why_never, GRAMMAR_SOURCE, prompt),
+            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "WORD_ORDER_NEVER", why_never, GRAMMAR_SOURCE, prompt),
+            _check(ANYWAY_RU, ANYWAY_EN, [_quoted(NEVER_RU, NEVER_EN, NEVER_CITE)], "WORD_ORDER_ANYWAY", why_anyway, GRAMMAR_SOURCE, prompt),
+            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "WORD_ORDER_NEVER_AGAIN", why_never, GRAMMAR_SOURCE, prompt),
         ],
         extra=_extra("grammar", SCOPE_SPAN, [SCOPE_RULE, NEVER_CITE, ANYWAY_CITE]),
     )
-    _bind(lesson, "placement", "negation-scope", SCOPE_SPAN)
 
 
 def _pronouns(lesson) -> None:
@@ -697,7 +696,7 @@ def add_batch_b(lesson) -> None:
     {
         21: lambda item: (_reflexive(item), _purpose(item)),
         22: lambda item: (_declension(item), _both(item), _half(item), _collective(item)),
-        24: lambda item: (_alternation(item), _pronouns(item), _concord(item), _placement(item)),
+        24: lambda item: (_alternation(item), _pronouns(item), _concord(item), _word_order_contrast(item)),
         25: lambda item: (_address(item),),
     }[lesson.number](lesson)
 

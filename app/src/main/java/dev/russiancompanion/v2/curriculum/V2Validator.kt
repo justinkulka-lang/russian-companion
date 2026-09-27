@@ -791,6 +791,7 @@ internal object V2Validator {
         "obj-u24-stand-ins",
         "obj-u24-concord",
         "obj-u24-placement",
+        "obj-u24-word-order-contrast",
         "obj-u25-address",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
@@ -909,6 +910,11 @@ internal object V2Validator {
             }
             23 -> if ("completion-over-period" in unresolved) {
                 listOf("Unit 23 is missing a completion-over-period source capability")
+            } else {
+                emptyList()
+            }
+            24 -> if ("negation-scope" in unresolved) {
+                listOf("Unit 24 is missing a negation-scope source capability")
             } else {
                 emptyList()
             }
@@ -1755,7 +1761,12 @@ internal object V2Validator {
             "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
             else -> return emptyList()
         }
-        return if (BatchBSources.admits(capability, admitted, claim)) {
+        val admittedRecord = if (claim == "negation-scope") {
+            BatchBSources.clearsNegationScope(capability, admitted)
+        } else {
+            BatchBSources.admits(capability, admitted, claim)
+        }
+        return if (admittedRecord) {
             emptyList()
         } else {
             listOf("Source capability ${capability.id} has no independent $claim admission")
@@ -1839,6 +1850,9 @@ internal object V2Validator {
             (span.contains("How long something takes") || span.contains("\u041d\u0430 \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u0440\u0435\u043c\u0435\u043d\u0438"))
         ) {
             errors += "Source capability ${capability.id} intended-length evidence does not clear completion-over-period"
+        }
+        if (capability.supportedClaim == "negation-scope" && BatchBSources.wordOrderMeaningContrast(span)) {
+            errors += "Source capability ${capability.id} word-order evidence does not clear negation-scope"
         }
         if (span.contains("alternative word order can change the meaning entirely")) {
             if (capability.supportedClaim == "completion-over-period") {
@@ -2327,6 +2341,7 @@ internal object V2Validator {
         "obj-u24-stand-ins",
         "obj-u24-concord",
         "obj-u24-placement",
+        "obj-u24-word-order-contrast",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
     )

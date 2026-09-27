@@ -88,6 +88,7 @@ class Units2125SourceIntakeTest {
 
     private val gapObjectives = mapOf(
         23 to listOf("obj-u23-completion"),
+        24 to listOf("obj-u24-placement"),
         25 to listOf("obj-u25-nickname-rule"),
     )
 
@@ -100,7 +101,7 @@ class Units2125SourceIntakeTest {
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertEquals("DEVELOPMENT", unit.installState)
-            assertEquals(if (number in listOf(21, 22, 24)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED", unit.readiness)
+            assertEquals(if (number in listOf(21, 22)) "CONTENT_COMPLETE_REVIEW_PENDING" else "NOT_PREPARED", unit.readiness)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
@@ -315,13 +316,16 @@ class Units2125SourceIntakeTest {
         assertTrue(reason(pack, 21).isBlank())
         assertTrue(reason(pack, 22).isBlank())
         assertTrue(reason(pack, 23).contains("Completion over a period"))
-        assertTrue(reason(pack, 24).isBlank())
+        assertTrue(reason(pack, 24).contains("Scope-sensitive placement"))
         val placement = pack.unit(24)!!.objectives.first { it.id == "obj-u24-placement" }
-        assertEquals("RECOGNITION", placement.kind)
-        assertTrue(placement.checkItemIds.size >= 2)
+        assertEquals("GUIDANCE", placement.kind)
+        assertTrue(placement.checkItemIds.isEmpty())
+        val contrast = pack.unit(24)!!.objectives.first { it.id == "obj-u24-word-order-contrast" }
+        assertEquals("RECOGNITION", contrast.kind)
+        assertTrue(contrast.checkItemIds.size >= 2)
         assertTrue(reason(pack, 25).contains("nickname-formation"))
         assertFalse(reason(pack, 25).contains("Modern address"))
-        listOf(21, 22, 24).forEach { number ->
+        listOf(21, 22).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -335,7 +339,7 @@ class Units2125SourceIntakeTest {
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
         }
-        listOf(23, 25).forEach { number ->
+        listOf(23, 24, 25).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
                 pack,
@@ -520,7 +524,7 @@ class Units2125SourceIntakeTest {
         val pack = pack()
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unrelated = sample(pack, number, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob)
-            val base = if (number in listOf(21, 22, 24)) withoutCapabilities(pack, number) else pack
+            val base = if (number in listOf(21, 22)) withoutCapabilities(pack, number) else pack
             val claimed = claimComplete(base.copy(provenanceRecords = base.provenanceRecords + unrelated), number)
             val errors = V2Validator.validate(claimed).errors
             assertTrue(errors.joinToString("\n"), errors.any { it.contains("source capability") || it.contains("source capabilities") })

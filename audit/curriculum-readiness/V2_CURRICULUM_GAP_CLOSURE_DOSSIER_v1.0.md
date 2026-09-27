@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **9 units** — Units 7, 17, 23, and 25–30.
-- Units 16, 18, 19, 20, 21, 22, and 24: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21, 22, and 24 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 admits only the frozen word-order pair as `negation-scope`. Units 26–30 stay `NOT_PREPARED`.
+- Content blockers: **10 units** — Units 7, 17, and 23–30.
+- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Units 26–30 stay `NOT_PREPARED`.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -66,7 +66,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
+| 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
@@ -156,11 +156,23 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 ### Unit 24 — Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
 
-Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
+Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 `negation-alternation` is the frozen book compare on English Wikipedia “Russian grammar” oldid 1369617627. `negative-pronoun` is the formation statement and ни-/не- table on Russian Wikipedia oldid 141256493. Negative concord is recognition of that page's rule. Neither the book compare, nor concord, nor a sentence that merely contains не or ни, clears `negation-scope`.
 
-`negation-scope` is the same grammar page's word-order pair, source hash `ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668`, record `grammar:In some cases, alternative word order can change the meaning entirely:`. The frozen lines are `Не надо меня уговаривать.` with `One should not persuade me` and `Меня не надо уговаривать.` with `There is no need to persuade me`. The lesson is bounded to those two stated meanings. It does not state a general rule for moving не. The neighboring sentence “Word order can express logical stress, and degree of definiteness.” does not clear the claim. Reviewer identity, qualification, date, disposition, signature, and reviewed digest stay blank. The unit is not installed.
+The same grammar page's word-order pair remains as optional bounded recognition on `obj-u24-word-order-contrast`. The frozen lines are `Не надо меня уговаривать.` with `One should not persuade me` and `Меня не надо уговаривать.` with `There is no need to persuade me`. In both sentences `не надо` stays together and `меня` moves. That contrast does not clear `negation-scope`, does not complete Unit 24, and does not permit advancement. The neighboring sentence “Word order can express logical stress, and degree of definiteness.” does not clear the claim. Reviewer identity, qualification, date, disposition, signature, and reviewed digest stay blank. The unit is not installed.
+
+#### `negation-scope` — `obj-u24-placement`
+
+- **Required claim/skill:** Scope-sensitive placement of не, limited to a distinction an admitted frozen source explicitly states.
+- **Why the current record is insufficient:** The word-order pair states two meanings. It does not identify negation scope, move не, or state a placement rule. Sentence/gloss recognition of that pair does not assess the claim.
+- **Required source:** A frozen licensed span that explicitly states the negation-scope or не-placement distinction, with its own instruction, examples, guided practice, independent checks, feedback, and remediation.
+- **Russian examples required:** Yes
+- **English scaffold boundary:** English may name only the source-stated distinction.
+- **Book-directed disposition:** Current guidance remains book-directed.
+- **Blocks content completeness and advancement:** Yes
+- **Variance dependency:** NONE
+- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
 ### Unit 25 — Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
 
@@ -423,7 +435,7 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
 4. **Curriculum research batch B:** Units 21–25. Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 stays `NOT_PREPARED` on productive diminutives.
 5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Units 26–30 stay `NOT_PREPARED`. Unit 28 admits only the stated present-versus-past verbal-adverb relationship.
-6. **Curriculum research batch D:** Unit 24 `negation-scope` is the frozen word-order pair only. Units 7, 17, 23, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period and Unit 25 productive diminutives stay unresolved.
+6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period and Unit 25 productive diminutives stay unresolved.
 7. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier. Do not delete the completion-over-period mapping scope to clear readiness.
 8. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 9. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.
