@@ -59,8 +59,8 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(7, 17) + (23..30).toList(), contentUnits)
-        assertEquals(10, contentUnits.size)
+        assertEquals(listOf(7, 17, 23) + (25..30).toList(), contentUnits)
+        assertEquals(9, contentUnits.size)
         assertEquals(
             (1..30).toList(),
             model.units.filter { it.linguisticReviewBlocker != "NONE" }.map { it.unitNumber },
@@ -130,6 +130,7 @@ class GapClosureDossierTest {
             "negative-pronoun",
             "register",
             "elapsed-time-duration",
+            "negation-scope",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })

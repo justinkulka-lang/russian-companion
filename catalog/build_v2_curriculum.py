@@ -1652,7 +1652,7 @@ def build() -> dict:
         21: "Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.",
         22: "Proposed Unit 22 is in development. Admitted numeral lines, the case table, the half-form usage note, and the collective column await qualified review. A numbered list is not taught as an ordinal distinction. It is not installed and the owned-edition mapping is not signed.",
         23: "Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.",
-        24: "Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, and the prefix table await qualified review. Placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+        24: "Proposed Unit 24 is in development. Admitted negation lines, the book compare, the prefix table, and the frozen word-order pair await qualified review. That pair does not state a general movement rule. It is not installed and the owned-edition mapping is not signed.",
         25: "Proposed Unit 25 is in development and is not prepared. Admitted name lines, listed diminutive pairs, courtesy lines, and the address-register sentences await qualified review. A general nickname-formation rule has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
     }
     for number, short, title in UNITS_3_30:
@@ -1668,7 +1668,7 @@ def build() -> dict:
                 next_intake_summaries[number],
                 proposed_unit["sessions"],
                 [number - 1],
-                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number in (21, 22) else "NOT_PREPARED",
+                readiness="CONTENT_COMPLETE_REVIEW_PENDING" if number in (21, 22, 24) else "NOT_PREPARED",
                 mapping_note=(
                     f"Proposed Lesson {number}, printed pages {pages}. Independently stated topic scope: {topic}. "
                     "The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. "

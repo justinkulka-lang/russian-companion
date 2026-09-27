@@ -34,6 +34,7 @@ class BatchBUnits2125Test {
             "collective-numeral" to "obj-u22-collective",
             "negation-alternation" to "obj-u24-alternation",
             "negative-pronoun" to "obj-u24-stand-ins",
+            "negation-scope" to "obj-u24-placement",
             "register" to "obj-u25-address",
             "elapsed-time-duration" to "obj-u23-duration",
         )
@@ -64,16 +65,22 @@ class BatchBUnits2125Test {
         }
         assertTrue(
             pack.sourceCapabilities.none {
-                it.supportedClaim in setOf("completion-over-period", "negation-scope", "productive-diminutive")
+                it.supportedClaim in setOf("completion-over-period", "productive-diminutive")
             },
         )
         assertTrue(BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD.isEmpty())
+        assertTrue(BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE.isEmpty())
+        assertEquals(1, BatchBSources.ADMITTED_NEGATION_SCOPE.size)
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" && it.objectiveId == "obj-u23-completion" })
-        listOf(21, 22).forEach { number ->
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 7).any { it.claim == "adverb-paradigm" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 17).any { it.claim == "productive-clock-time" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 24).none { it.claim == "negation-scope" })
+        listOf(21, 22, 24).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
-        listOf(23, 24, 25).forEach { number ->
+        listOf(23, 25).forEach { number ->
             assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
         }
@@ -192,6 +199,7 @@ class BatchBUnits2125Test {
             "obj-u24-alternation",
             "obj-u24-stand-ins",
             "obj-u24-concord",
+            "obj-u24-placement",
             "obj-u28-imperfective-adverb",
             "obj-u28-perfective-adverb",
         )
@@ -483,6 +491,180 @@ class BatchBUnits2125Test {
         assertTrue(V2Validator.contentCompletenessErrors(rebound, rebound.unit(23)!!).any {
             it.contains("without an admitted completion-over-period source capability")
         })
+    }
+
+    @Test
+    fun batchDCapabilitiesRejectMutatedEvidence() {
+        val pack = pack()
+        val scope = pack.sourceCapabilities.single { it.supportedClaim == "negation-scope" }
+        val admitted = BatchBSources.ADMITTED_NEGATION_SCOPE.single()
+        assertEquals(admitted.sourceId, scope.sourceId)
+        assertEquals(admitted.sourceRevision, scope.sourceRevision)
+        assertEquals(admitted.sourceRecordId, scope.sourceRecordId)
+        assertEquals(admitted.sourceHash, scope.sourceHash)
+        assertEquals(admitted.exactSpan, scope.exactSpan)
+        assertEquals(BatchBSources.SCOPE_SPAN, scope.exactSpan)
+        assertFalse(scope.exactSpan.contains("logical stress"))
+        assertTrue(scope.exactSpan.contains("alternative word order can change the meaning entirely"))
+
+        fun rejected(mutated: V2SourceCapability, needle: String) {
+            val errors = V2Validator.validate(replaceCapability(pack, scope.id, mutated)).errors.joinToString("\n")
+            assertTrue(errors, errors.contains(needle))
+            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(replaceCapability(pack, scope.id, mutated), 24).any { it.claim == "negation-scope" })
+        }
+        rejected(scope.copy(sourceId = "src-openrussian-50e210c4"), "a dictionary row does not clear negation-scope")
+        rejected(scope.copy(sourceRevision = "1"), "revision does not match the frozen record")
+        rejected(scope.copy(sourceRecordId = "grammar:other"), "revision does not match the frozen record")
+        rejected(scope.copy(sourceHash = "0".repeat(64)), "revision does not match the frozen record")
+        rejected(scope.copy(exactSpan = scope.exactSpan + " "), "span is not in the frozen record")
+        rejected(scope.copy(unitNumber = 23), "attached to the wrong unit or objective")
+        rejected(scope.copy(objectiveId = "obj-u24-alternation"), "attached to the wrong unit or objective")
+        rejected(scope.copy(supportedClaim = "negation-alternation"), "attached to the wrong unit or objective")
+
+        val emphasis = overreach(
+            pack,
+            "Word order can express logical stress, and degree of definiteness.",
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-emphasis-as-scope",
+        )
+        assertTrue(emphasis, emphasis.contains("no independent negation-scope admission"))
+        assertTrue(emphasis, emphasis.contains("word-order emphasis does not clear negation-scope"))
+
+        val keyword = overreach(
+            pack,
+            "negation scope placement co-occurrence",
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-scope-keyword",
+        )
+        assertTrue(keyword, keyword.contains("keyword or co-occurrence evidence does not clear negation-scope"))
+        assertTrue(keyword, keyword.contains("has no reviewable instruction and check chain"))
+
+        val book = overreach(
+            pack,
+            "Self-attest only after the Lesson 24 work in your copy.",
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-book-as-scope",
+        )
+        assertTrue(book, book.contains("book self-attestation does not clear negation-scope"))
+        assertFalse(book, book.contains("book self-attestation clears negation-scope"))
+
+        val durationAsScope = overreach(
+            pack,
+            BatchBSources.ADMITTED_ELAPSED_TIME.single().exactSpan,
+            24,
+            "obj-u24-placement",
+            "negation-scope",
+            "cap-duration-as-scope",
+        )
+        assertTrue(durationAsScope, durationAsScope.contains("duration evidence does not clear negation-scope"))
+        assertTrue(durationAsScope, durationAsScope.contains("no independent negation-scope admission"))
+
+        val scopeAsCompletion = overreach(
+            pack,
+            BatchBSources.SCOPE_SPAN,
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-scope-as-completion",
+        )
+        assertTrue(scopeAsCompletion, scopeAsCompletion.contains("word-order evidence does not clear completion-over-period"))
+        assertTrue(scopeAsCompletion, scopeAsCompletion.contains("no independent completion-over-period admission"))
+
+        listOf(
+            Triple(7, "obj-u7-adverb", "adverb-paradigm"),
+            Triple(17, "obj-u17-clock-answers", "productive-clock-time"),
+            Triple(25, "obj-u25-nickname-rule", "productive-diminutive"),
+        ).forEach { (unitNumber, objectiveId, claim) ->
+            val transferred = overreach(pack, BatchBSources.SCOPE_SPAN, unitNumber, objectiveId, claim, "cap-scope-as-$claim")
+            assertTrue(transferred, transferred.contains("word-order evidence does not clear $claim"))
+            assertTrue(transferred, transferred.contains("no independent $claim admission"))
+            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
+                pack.copy(sourceCapabilities = pack.sourceCapabilities + scope.copy(id = "cap-moved-$claim", unitNumber = unitNumber, objectiveId = objectiveId, supportedClaim = claim)),
+                unitNumber,
+            ).any { it.claim == claim })
+        }
+
+        val intended = overreach(
+            pack,
+            "How long something takes vs. For how long. The intended length of a trip uses \u041d\u0430 \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u0440\u0435\u043c\u0435\u043d\u0438.",
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-intended-length",
+        )
+        assertTrue(intended, intended.contains("intended-length evidence does not clear completion-over-period"))
+        assertTrue(intended, intended.contains("no independent completion-over-period admission"))
+
+        val paradigmKeyword = overreach(pack, "adverb paradigm co-occurrence", 7, "obj-u7-adverb", "adverb-paradigm", "cap-adverb-keyword")
+        assertTrue(paradigmKeyword, paradigmKeyword.contains("keyword or co-occurrence evidence does not clear adverb-paradigm"))
+        val clockKeyword = overreach(pack, "productive clock co-occurrence", 17, "obj-u17-clock-answers", "productive-clock-time", "cap-clock-keyword")
+        assertTrue(clockKeyword, clockKeyword.contains("keyword or co-occurrence evidence does not clear productive-clock-time"))
+        val diminutiveKeyword = overreach(pack, "productive diminutive co-occurrence", 25, "obj-u25-nickname-rule", "productive-diminutive", "cap-diminutive-keyword")
+        assertTrue(diminutiveKeyword, diminutiveKeyword.contains("keyword or co-occurrence evidence does not clear productive-diminutive"))
+        assertTrue(diminutiveKeyword, diminutiveKeyword.contains("bounded diminutive recognition does not clear productive-diminutive"))
+
+        listOf(
+            Triple(7, "obj-u7-adverb", "adverb-paradigm"),
+            Triple(17, "obj-u17-clock-answers", "productive-clock-time"),
+            Triple(23, "obj-u23-completion", "completion-over-period"),
+            Triple(24, "obj-u24-placement", "negation-scope"),
+            Triple(25, "obj-u25-nickname-rule", "productive-diminutive"),
+        ).forEach { (unitNumber, objectiveId, claim) ->
+            val row = V2SourceCapability(
+                id = "cap-dict-$claim",
+                sourceId = "src-openrussian-50e210c4",
+                sourceRevision = "50e210c4803237779cb562bc1abcea529066031c",
+                sourceRecordId = "dictionary-row",
+                sourceHash = "ab".repeat(32),
+                exactSpan = "dictionary row",
+                unitNumber = unitNumber,
+                objectiveId = objectiveId,
+                supportedClaim = claim,
+            )
+            val errors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + row)).errors.joinToString("\n")
+            assertTrue(errors, errors.contains("a dictionary row does not clear $claim"))
+            val attested = row.copy(id = "cap-book-$claim", sourceId = scope.sourceId, exactSpan = "Self-attest only after the Lesson work in your copy.")
+            val bookErrors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + attested)).errors.joinToString("\n")
+            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear $claim"))
+        }
+
+        val strippedUnit = pack.unit(24)!!.copy(
+            objectives = pack.unit(24)!!.objectives.map { objective ->
+                if (objective.id == "obj-u24-placement") {
+                    objective.copy(
+                        instructionStepIds = emptyList(),
+                        exampleIds = emptyList(),
+                        practiceStepIds = emptyList(),
+                        checkItemIds = emptyList(),
+                        remediationStepIds = emptyList(),
+                    )
+                } else {
+                    objective
+                }
+            },
+        )
+        val stripped = V2Validator.validate(
+            pack.copy(units = pack.units.map { if (it.number == 24) strippedUnit else it }),
+        ).errors.joinToString("\n")
+        assertTrue(stripped, stripped.contains("cap-u24-negation-scope") && stripped.contains("has no reviewable instruction and check chain"))
+
+        val stamped = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
+            admissions = pack.admissions.copy(penguinProseAssets = 4, generatedRussianWords = 0),
+        )
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 7).any { it.claim == "adverb-paradigm" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 17).any { it.claim == "productive-clock-time" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 23).any { it.claim == "completion-over-period" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 24).none { it.claim == "negation-scope" })
+        val stampedBroken = replaceCapability(stamped, scope.id, scope.copy(sourceHash = "f".repeat(64)))
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(stampedBroken, 24).any { it.claim == "negation-scope" })
     }
 
     private fun overreach(

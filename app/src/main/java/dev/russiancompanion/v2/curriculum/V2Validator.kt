@@ -747,6 +747,14 @@ internal object V2Validator {
 
     private data class RequiredSourceCapability(val objectiveId: String, val claim: String)
 
+    private val BATCH_D_SOURCE_CLAIMS = setOf(
+        "adverb-paradigm",
+        "productive-clock-time",
+        "completion-over-period",
+        "negation-scope",
+        "productive-diminutive",
+    )
+
     private val BATCH_A_OBJECTIVES = setOf(
         "obj-u16-complements",
         "obj-u17-age",
@@ -782,6 +790,7 @@ internal object V2Validator {
         "obj-u24-alternation",
         "obj-u24-stand-ins",
         "obj-u24-concord",
+        "obj-u24-placement",
         "obj-u25-address",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
@@ -1010,6 +1019,15 @@ internal object V2Validator {
         if (binding == null || capability.supportedClaim.isBlank() || capability.objectiveId.isBlank()) {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
+        }
+        if (capability.sourceId == "src-openrussian-50e210c4" && capability.supportedClaim in BATCH_D_SOURCE_CLAIMS) {
+            errors += "Source capability ${capability.id} a dictionary row does not clear ${capability.supportedClaim}"
+        }
+        if (
+            capability.supportedClaim in BATCH_D_SOURCE_CLAIMS &&
+            (capability.exactSpan.contains("Self-attest") || capability.exactSpan.contains("self-attest"))
+        ) {
+            errors += "Source capability ${capability.id} book self-attestation does not clear ${capability.supportedClaim}"
         }
         if (capability.supportedClaim == "productive-clock-time" && !admittedProductiveClockTime(capability)) {
             errors += "Source capability ${capability.id} has no independent productive-clock-time admission"
@@ -1802,6 +1820,61 @@ internal object V2Validator {
         ) {
             errors += "Source capability ${capability.id} the genitive and accusative compare does not clear negation-scope"
         }
+        if (capability.supportedClaim == "negation-scope" &&
+            span.contains("logical stress") &&
+            !span.contains("alternative word order can change the meaning entirely")
+        ) {
+            errors += "Source capability ${capability.id} word-order emphasis does not clear negation-scope"
+        }
+        if (capability.supportedClaim == "negation-scope" && span.contains("emphasizes the duration")) {
+            errors += "Source capability ${capability.id} duration evidence does not clear negation-scope"
+        }
+        if (capability.supportedClaim == "negation-scope" &&
+            !BatchBSources.admits(capability, BatchBSources.ADMITTED_NEGATION_SCOPE, "negation-scope") &&
+            (span.contains("negation scope") || span.contains("scope placement"))
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear negation-scope"
+        }
+        if (capability.supportedClaim == "completion-over-period" &&
+            (span.contains("How long something takes") || span.contains("\u041d\u0430 \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u0440\u0435\u043c\u0435\u043d\u0438"))
+        ) {
+            errors += "Source capability ${capability.id} intended-length evidence does not clear completion-over-period"
+        }
+        if (span.contains("alternative word order can change the meaning entirely")) {
+            if (capability.supportedClaim == "completion-over-period") {
+                errors += "Source capability ${capability.id} word-order evidence does not clear completion-over-period"
+            }
+            if (capability.supportedClaim == "adverb-paradigm") {
+                errors += "Source capability ${capability.id} word-order evidence does not clear adverb-paradigm"
+            }
+            if (capability.supportedClaim == "productive-clock-time") {
+                errors += "Source capability ${capability.id} word-order evidence does not clear productive-clock-time"
+            }
+            if (capability.supportedClaim == "productive-diminutive") {
+                errors += "Source capability ${capability.id} word-order evidence does not clear productive-diminutive"
+            }
+            if (capability.supportedClaim == "elapsed-time-duration") {
+                errors += "Source capability ${capability.id} word-order evidence does not clear elapsed-time-duration"
+            }
+        }
+        if (capability.supportedClaim == "adverb-paradigm" &&
+            !BatchARemainingSources.admits(capability, BatchARemainingSources.ADMITTED_ADVERB_PARADIGM, "adverb-paradigm") &&
+            span.contains("adverb paradigm")
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear adverb-paradigm"
+        }
+        if (capability.supportedClaim == "productive-clock-time" &&
+            !admittedProductiveClockTime(capability) &&
+            span.contains("productive clock")
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear productive-clock-time"
+        }
+        if (capability.supportedClaim == "productive-diminutive" &&
+            !BatchBSources.admits(capability, BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE, "productive-diminutive") &&
+            span.contains("productive diminutive")
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear productive-diminutive"
+        }
         if (capability.supportedClaim == "productive-diminutive" &&
             (folded.contains("\u0438\u0440\u043e\u0447\u043a\u0430") || span.contains("diminutive") || folded.contains("\u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u043e"))
         ) {
@@ -2253,6 +2326,7 @@ internal object V2Validator {
         "obj-u24-alternation",
         "obj-u24-stand-ins",
         "obj-u24-concord",
+        "obj-u24-placement",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
     )

@@ -60,6 +60,20 @@
         "retrieved": "2026-09-26T22:52:41Z",
         "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.",
         "licenseId": "CC BY-SA 4.0"
+      },
+      "pressbooks-baltics-travel-grammar": {
+        "appliesToSourceIds": [
+          "src-pressbooks-diverse-russian-baltics-travel-grammar"
+        ],
+        "title": "Diverse Russian: A Multicultural Exploration",
+        "authors": "Anna Tumarkin and Shannon Donnally Quinn",
+        "url": "https://wisc.pb.unizin.org/diverserussian/chapter/baltics-travel-grammar/",
+        "file": "pressbooks/baltics-travel-grammar.html",
+        "sha256": "f5217cd052399bfe593787d1af40535805b6d795db924e8d03a2147fcb4b59aa",
+        "byteCount": 335693,
+        "retrieved": "2026-09-27T06:05:00Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.",
+        "licenseId": "CC BY-SA 4.0"
       }
     }
   },
@@ -129,6 +143,12 @@
       "disposition": "ADMITTED",
       "licenseId": "CC BY-SA 4.0",
       "scope": "Diverse Russian time ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago, only where the retained chapter states them. This Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. A partial line does not clear elapsed-time-duration. The chapter does not state a completion-over-period distinction."
+    },
+    {
+      "id": "pressbooks-baltics-travel-grammar-f5217cd052399bfe593787d1af40535805b6d795db924e8d03a2147fcb4b59aa",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The Baltics travel grammar chapter states duration in the accusative and intended trip length with на plus the accusative. That contrast is not completion over a period. Its Pressbooks license route is separate from the USA grammar route and from Wikimedia routes. The chapter is retained and is not taught."
     }
   ],
   "wikibooks": {
@@ -250,7 +270,7 @@
       "url": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
       "licenseRoute": "wikipedia",
       "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
-      "scope": "Reflexive себя contrast, чтобы glossed so that, collective numeral column, and the negation compare. Bounded ago, during, and step-out lines stay frozen and do not clear elapsed-time-duration."
+      "scope": "Reflexive себя contrast, чтобы glossed so that, collective numeral column, the negation compare, and the two word-order sentences with their stated meanings. That word-order pair is negation-scope only. The logical-stress sentence is not that claim. Bounded ago, during, and step-out lines stay frozen and do not clear elapsed-time-duration."
     },
     {
       "key": "morfologiya",

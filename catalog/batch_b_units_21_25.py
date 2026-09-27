@@ -55,6 +55,11 @@ NEGATION_SPAN = _slice(
     "The use of a direct object in the genitive",
     '("I don\'t see the book").',
 )
+SCOPE_SPAN = _slice(
+    _GRAMMAR,
+    "In some cases, alternative word order can change the meaning entirely:",
+    "as I will do it anyway''].)",
+)
 PRONOUN_SPAN = _slice(_OTR, "Образуются от", "|чего\n|ничего́\n|не́чего")
 CONCORD_SPAN = _slice(_OTR, "* Никто никому", "сказал.")
 CONCORD_RULE_SPAN = _slice(_OTR, "Основным правилом правильного использования", "сказал.")
@@ -199,6 +204,15 @@ KNIGI = _ship(NEGATION_SPAN, "Я не ви́жу кни́ги")
 KNIGU = _ship(NEGATION_SPAN, "Я не ви́жу кни́гу")
 ANY_BOOKS = _ship(NEGATION_SPAN, "I don't see any books")
 THE_BOOK = _ship(NEGATION_SPAN, "I don't see the book")
+NEVER_RU = _ship(SCOPE_SPAN, "Не надо меня уговаривать.")
+ANYWAY_RU = _ship(SCOPE_SPAN, "Меня не надо уговаривать.")
+NEVER_EN = _ship(SCOPE_SPAN, "One should not persuade me")
+ANYWAY_EN = _ship(SCOPE_SPAN, "There is no need to persuade me")
+NEVER_CITE = _require(SCOPE_SPAN, "as I would never agree to do something")
+ANYWAY_CITE = _require(SCOPE_SPAN, "as I will do it anyway")
+SCOPE_RULE = _require(SCOPE_SPAN, "alternative word order can change the meaning entirely")
+if "logical stress" in SCOPE_SPAN:
+    raise SystemExit("Scope span includes the neighboring emphasis sentence")
 
 KTO = _ship(PRONOUN_SPAN, "кто")
 CHTO = _ship(PRONOUN_SPAN, "что")
@@ -294,6 +308,10 @@ def _glosses() -> dict[str, dict[str, frozenset[str]]]:
         NEGATION_SPAN: {
             KNIGI: frozenset({ANY_BOOKS}),
             KNIGU: frozenset({THE_BOOK}),
+        },
+        SCOPE_SPAN: {
+            NEVER_RU: frozenset({NEVER_EN}),
+            ANYWAY_RU: frozenset({ANYWAY_EN}),
         },
         PRONOUN_SPAN: {
             KTO: frozenset({NIKTO, NEKTO}),
@@ -570,6 +588,31 @@ def _alternation(lesson) -> None:
     _bind(lesson, "alternation", "negation-alternation", NEGATION_SPAN)
 
 
+def _placement(lesson) -> None:
+    """Two frozen word orders and their stated meanings. This is not a movement rule."""
+    _frame(lesson)
+    why_never = _pair(NEVER_RU, NEVER_EN, NEVER_CITE)
+    why_anyway = _pair(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)
+    prompt = "Which English meaning matches the shown sentence?"
+    lesson.objective(
+        "placement",
+        "Choose the admitted meaning for the shown sentence",
+        "CONTRAST_SELECTION",
+        ("grammar", SCOPE_SPAN, SCOPE_RULE),
+        [
+            _wiki("grammar", SCOPE_SPAN, NEVER_RU, NEVER_EN),
+            _wiki("grammar", SCOPE_SPAN, ANYWAY_RU, ANYWAY_EN),
+        ],
+        [
+            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "SCOPE_NEVER", why_never, GRAMMAR_SOURCE, prompt),
+            _check(ANYWAY_RU, ANYWAY_EN, [_quoted(NEVER_RU, NEVER_EN, NEVER_CITE)], "SCOPE_ANYWAY", why_anyway, GRAMMAR_SOURCE, prompt),
+            _check(NEVER_RU, NEVER_EN, [_quoted(ANYWAY_RU, ANYWAY_EN, ANYWAY_CITE)], "SCOPE_NEVER_AGAIN", why_never, GRAMMAR_SOURCE, prompt),
+        ],
+        extra=_extra("grammar", SCOPE_SPAN, [SCOPE_RULE, NEVER_CITE, ANYWAY_CITE]),
+    )
+    _bind(lesson, "placement", "negation-scope", SCOPE_SPAN)
+
+
 def _pronouns(lesson) -> None:
     _frame(lesson)
     why_nikto = _pair(KTO, NIKTO, NEGATIVE_CITE)
@@ -654,7 +697,7 @@ def add_batch_b(lesson) -> None:
     {
         21: lambda item: (_reflexive(item), _purpose(item)),
         22: lambda item: (_declension(item), _both(item), _half(item), _collective(item)),
-        24: lambda item: (_alternation(item), _pronouns(item), _concord(item)),
+        24: lambda item: (_alternation(item), _pronouns(item), _concord(item), _placement(item)),
         25: lambda item: (_address(item),),
     }[lesson.number](lesson)
 

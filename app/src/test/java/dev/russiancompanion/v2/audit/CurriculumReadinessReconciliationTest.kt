@@ -136,7 +136,7 @@ class CurriculumReadinessReconciliationTest {
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
         }
-        (listOf(7, 17) + (23..30).toList()).forEach { number ->
+        (listOf(7, 17, 23) + (25..30).toList()).forEach { number ->
             assertTrue(
                 model.units.first { it.unitNumber == number }.contentBlocker.contains("MISSING_SOURCE_SUPPORTED_CURRICULUM"),
             )
