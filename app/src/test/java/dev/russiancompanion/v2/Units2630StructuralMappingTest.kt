@@ -56,7 +56,7 @@ class Units2630StructuralMappingTest {
         26 to "Unit 26 is not content-complete without admitted indefinite-pronoun, postal-address, and letter-writing source capabilities",
         27 to "Unit 27 is not content-complete without admitted participle-stress source capabilities",
         29 to "Unit 29 is not content-complete without admitted participle-punctuation and bookish-register source capabilities",
-        30 to "Unit 30 is not content-complete without admitted dictionary-use, abbreviation, particle, and capstone-reading source capabilities",
+        30 to "Unit 30 is not content-complete without admitted dictionary-use and capstone-reading source capabilities",
     )
 
     private val keywordBlob = (

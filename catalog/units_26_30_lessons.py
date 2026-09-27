@@ -15,6 +15,7 @@ _PAGE_FILE = {
     "grammar": ROOT / "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
     "alphabet": ROOT / "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt",
     "address": ROOT / "catalog/sources/units-26-30/wikibooks/various-stuff-3353858.txt",
+    "morfologiya": ROOT / "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
 }
 _CIRCULAR = (
     "does this answer",
@@ -26,6 +27,7 @@ SOURCE_IDS = {
     "grammar": "src-wikipedia-russian-grammar-1369617627",
     "alphabet": "src-wikipedia-russian-alphabet-1371795481",
     "address": "src-wikibooks-russian-various-stuff-3353858",
+    "morfologiya": "src-ruwiki-morfologiya-148939075",
 }
 
 
@@ -75,7 +77,7 @@ def _clean(page: str, needle: str, shipped: str) -> str:
     return shipped
 
 
-def _distinction(page, prompt, shown, answer, wrongs, feature, why):
+def _distinction(page, prompt, shown, answer, wrongs, feature, why, frozen_quote=False):
     folded = why.casefold()
     if why.endswith("?") or any(phrase in folded for phrase in _CIRCULAR):
         raise SystemExit(f"Circular feedback is not a source distinction: {why!r}")
@@ -95,6 +97,7 @@ def _distinction(page, prompt, shown, answer, wrongs, feature, why):
         feature=feature,
         why=why,
         response_kind=_shared_response_kind([answer, *labels]),
+        frozen_quote=frozen_quote,
     )
 
 
@@ -942,3 +945,148 @@ def _unit_30(lesson) -> None:
             _extra("address", address, "apartment"),
         ],
     )
+
+    abbreviation = _span(
+        "morfologiya",
+        "Ряд существительных являются несклоняемым",
+        "названия населённых пунктов",
+    )
+    particle = _span(
+        "morfologiya",
+        "Повелительное наклонение может быть выражено также при помощи частиц",
+        "предположительность или возможность действия",
+    )
+    for text in (
+        "СНГ",
+        "ЭВМ",
+        "ГАИ",
+        "гороно",
+        "в МИД",
+        "в МИДе",
+        "в МИД и в МИДе",
+        "Шевченко",
+        "пальто",
+        "Засулич",
+        "радио",
+        "названия населённых пунктов",
+        "сложносокращённые слова",
+        "буквенные аббревиатуры",
+        "звуковые аббревиатуры на гласную",
+        "звуковые аббревиатуры на согласную",
+    ):
+        _clean("morfologiya", abbreviation, text)
+    for text in ("Пусть он читает", "Да будет мир!", "читал бы", "читали бы", "предположительность или возможность действия"):
+        _clean("morfologiya", particle, text)
+    lesson.objective(
+        "abbreviation",
+        "Choose the admitted form from the same abbreviation group",
+        "CONTRAST_SELECTION",
+        ("morfologiya", abbreviation, "буквенные аббревиатуры и звуковые аббревиатуры на гласную"),
+        [
+            _wiki("morfologiya", abbreviation, "СНГ", "буквенные аббревиатуры"),
+            _wiki("morfologiya", abbreviation, "ЭВМ", "буквенные аббревиатуры"),
+            _wiki("morfologiya", abbreviation, "ГАИ", "звуковые аббревиатуры на гласную"),
+            _wiki("morfologiya", abbreviation, "гороно", "звуковые аббревиатуры на гласную"),
+            _wiki("morfologiya", abbreviation, "в МИД", "звуковые аббревиатуры на согласную"),
+            _wiki("morfologiya", abbreviation, "в МИДе", "звуковые аббревиатуры на согласную"),
+        ],
+        [
+            _distinction(
+                "morfologiya",
+                "Which admitted form does the source also allow beside the shown form?",
+                "в МИД",
+                "в МИДе",
+                [
+                    ("названия населённых пунктов", "This line names a different group in the same sentence.", "This line is the place-name group."),
+                    ("сложносокращённые слова", "This line names another group in the same sentence.", "This line is the shortened-word group."),
+                ],
+                feature="ABBREVIATION_DECLENSION",
+                why="The frozen line says the consonant-final sound form is used both ways and writes в МИД и в МИДе. The other lines are different groups in the same sentence.",
+            ),
+            _distinction(
+                "morfologiya",
+                "Which admitted form is grouped with the shown letter form?",
+                "СНГ",
+                "ЭВМ",
+                [
+                    ("Шевченко", "This line is a surname example in the same sentence.", "This line is outside the letter group (surname)."),
+                    ("пальто", "This line is a borrowed-word example in the same sentence.", "This line is outside the letter group (borrowed word)."),
+                ],
+                feature="ABBREVIATION_DECLENSION",
+                why="The frozen line groups буквенные аббревиатуры together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+            ),
+            _distinction(
+                "morfologiya",
+                "Which admitted form is grouped with the shown vowel-final sound form?",
+                "гороно",
+                "ГАИ",
+                [
+                    ("Засулич", "This line is a surname example in the same sentence.", "This line is outside the vowel-final sound group (surname)."),
+                    ("радио", "This line is a borrowed-word example in the same sentence.", "This line is outside the vowel-final sound group (borrowed word)."),
+                ],
+                feature="ABBREVIATION_DECLENSION",
+                why="The frozen line groups звуковые аббревиатуры на гласную together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+            ),
+        ],
+        extra=[
+            _extra("morfologiya", abbreviation, "Шевченко"),
+            _extra("morfologiya", abbreviation, "пальто"),
+            _extra("morfologiya", abbreviation, "Засулич"),
+            _extra("morfologiya", abbreviation, "радио"),
+            _extra("morfologiya", abbreviation, "названия населённых пунктов"),
+            _extra("morfologiya", abbreviation, "сложносокращённые слова"),
+            _extra("morfologiya", abbreviation, "в МИД и в МИДе"),
+        ],
+    )
+    _bind(lesson, "obj-u30-abbreviation", "abbreviation", "morfologiya", abbreviation)
+    lesson.objective(
+        "particle",
+        "Choose the admitted example with the same stated use",
+        "CONTRAST_SELECTION",
+        ("morfologiya", particle, "предположительность или возможность действия"),
+        [
+            _wiki("morfologiya", particle, "Пусть он читает", "Повелительное наклонение"),
+            _wiki("morfologiya", particle, "Да будет мир!", "Повелительное наклонение"),
+            _wiki("morfologiya", particle, "читал бы", "предположительность или возможность"),
+            _wiki("morfologiya", particle, "читали бы", "предположительность или возможность"),
+        ],
+        [
+            _distinction(
+                "morfologiya",
+                "Which admitted example shares the command use of the shown line?",
+                "Пусть он читает",
+                "Да будет мир!",
+                [
+                    ("читал бы", "This line is a supposition form.", "This line does not share the command use (first)."),
+                    ("читали бы", "This line is the other supposition form.", "This line does not share the command use (second)."),
+                ],
+                feature="PARTICLE_USE",
+                why="The frozen line says a command can also be expressed with these particles and gives Пусть он читает. The other lines are the supposition forms.",
+            ),
+            _distinction(
+                "morfologiya",
+                "Which admitted example shares the supposition use of the shown line?",
+                "читал бы",
+                "читали бы",
+                [
+                    ("Пусть он читает", "This line is a command example.", "This line does not share the supposition use (first)."),
+                    ("Да будет мир!", "This line is the other command example.", "This line does not share the supposition use (second)."),
+                ],
+                feature="PARTICLE_USE",
+                why="The frozen line says these forms express предположительность или возможность действия. The other lines are the command examples.",
+            ),
+            _distinction(
+                "morfologiya",
+                "Which admitted example is the other command line?",
+                "Да будет мир!",
+                "Пусть он читает",
+                [
+                    ("читал бы", "This line is a supposition form.", "This line is not the other command line (first)."),
+                    ("читали бы", "This line is the other supposition form.", "This line is not the other command line (second)."),
+                ],
+                feature="PARTICLE_USE",
+                why="The frozen line says a command can also be expressed with these particles and gives Да будет мир! The other lines are the supposition forms.",
+            ),
+        ],
+    )
+    _bind(lesson, "obj-u30-particle", "particle", "morfologiya", particle)

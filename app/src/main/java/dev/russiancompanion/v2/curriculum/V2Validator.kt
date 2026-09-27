@@ -1026,11 +1026,13 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} is attached to the wrong unit or objective"
             return errors
         }
-        if (capability.sourceId == "src-openrussian-50e210c4" && capability.supportedClaim in BATCH_D_SOURCE_CLAIMS) {
+        if (capability.sourceId == "src-openrussian-50e210c4" &&
+            (capability.supportedClaim in BATCH_D_SOURCE_CLAIMS || capability.unitNumber in 26..30)
+        ) {
             errors += "Source capability ${capability.id} a dictionary row does not clear ${capability.supportedClaim}"
         }
         if (
-            capability.supportedClaim in BATCH_D_SOURCE_CLAIMS &&
+            (capability.supportedClaim in BATCH_D_SOURCE_CLAIMS || capability.unitNumber in 26..30) &&
             (capability.exactSpan.contains("Self-attest") || capability.exactSpan.contains("self-attest"))
         ) {
             errors += "Source capability ${capability.id} book self-attestation does not clear ${capability.supportedClaim}"
@@ -1120,6 +1122,7 @@ internal object V2Validator {
             if (!admittedLateSource(capability)) {
                 errors += "Source capability ${capability.id} is not an admitted frozen source"
             }
+            errors += lateClaimContentErrors(capability)
         }
         if (!capabilityHasCheckChain(pack, capability, spanHost)) {
             errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
@@ -1141,7 +1144,62 @@ internal object V2Validator {
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:The active past participle is used in order to indicate actions that happened in|dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:such as {{wikt-lang|ru|\u0431\u0435\u0436}} ('beige', non-adapted form of {{wikt-lang|ru|\u0431\u0435\u0301\u0436\u0435\u0432|0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
         "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
+        "src-ruwiki-morfologiya-148939075|148939075|morfologiya:\u0420\u044f\u0434 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043d\u0435\u0441\u043a\u043b\u043e\u043d\u044f\u0435\u043c\u044b\u043c: \u043c\u043d\u043e\u0433\u0438\u0435 \u0441\u043b\u043e\u0432\u0430 \u0438\u043d\u043e\u044f\u0437\u044b\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0436\u0434\u0435\u043d\u0438|6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
+        "src-ruwiki-morfologiya-148939075|148939075|morfologiya:\u041f\u043e\u0432\u0435\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043d\u0430\u043a\u043b\u043e\u043d\u0435\u043d\u0438\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u043e \u0442\u0430\u043a\u0436\u0435 \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0447\u0430\u0441\u0442\u0438\u0446 ''\u043f\u0443\u0441\u0442\u044c (\u043f\u0443|d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd",
     )
+
+    /**
+     * The abbreviation span must state both groups and the consonant-final pair.
+     * Glossed examples, address marks, and a letter-only list do not.
+     */
+    private fun clearsAbbreviation(span: String): Boolean {
+        val letterGroup = "\u0431\u0443\u043a\u0432\u0435\u043d\u043d\u044b\u0435 \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u0443\u0440\u044b \u0438 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0435 \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u0443\u0440\u044b \u043d\u0430 \u0433\u043b\u0430\u0441\u043d\u0443\u044e"
+        val consonantGroup = "\u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0435 \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u0443\u0440\u044b \u043d\u0430 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u0443\u044e"
+        val pair = "\u0432 \u041c\u0418\u0414 \u0438 \u0432 \u041c\u0418\u0414\u0435"
+        return span.contains(letterGroup) && span.contains(consonantGroup) && span.contains(pair)
+    }
+
+    /**
+     * The particle span must give the command examples and the supposition statement.
+     * A class list that only names the words does not.
+     */
+    private fun clearsParticle(span: String): Boolean {
+        return span.contains("\u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0447\u0430\u0441\u0442\u0438\u0446") &&
+            span.contains("\u041f\u0443\u0441\u0442\u044c \u043e\u043d \u0447\u0438\u0442\u0430\u0435\u0442") &&
+            span.contains("\u0414\u0430 \u0431\u0443\u0434\u0435\u0442 \u043c\u0438\u0440") &&
+            span.contains("\u0447\u0438\u0442\u0430\u043b \u0431\u044b") &&
+            span.contains("\u043f\u0440\u0435\u0434\u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c")
+    }
+
+    /**
+     * Unresolved Units 26-30 claims stay closed. A neighboring span, a keyword,
+     * or a bounded example does not become the missing rule or reading.
+     */
+    private fun lateClaimContentErrors(capability: V2SourceCapability): List<String> {
+        val span = capability.exactSpan
+        val id = capability.id
+        return when (capability.supportedClaim) {
+            "abbreviation" -> if (clearsAbbreviation(span)) {
+                emptyList()
+            } else {
+                listOf("Source capability $id does not state the abbreviation contrast")
+            }
+            "particle" -> if (clearsParticle(span)) {
+                emptyList()
+            } else {
+                listOf("Source capability $id does not state the particle contrast")
+            }
+            "indefinite-pronoun" -> listOf("Source capability $id an indefinite inventory does not clear indefinite-pronoun")
+            "postal-address" -> listOf("Source capability $id address marks do not clear postal-address")
+            "letter-writing" -> listOf("Source capability $id does not state letter-writing")
+            "participle-stress" -> listOf("Source capability $id a marked example does not clear participle-stress")
+            "participle-punctuation" -> listOf("Source capability $id does not state participle-punctuation")
+            "bookish-register" -> listOf("Source capability $id the adverbial bookish note does not clear bookish-register")
+            "dictionary-use" -> listOf("Source capability $id a dictionary heading does not clear dictionary-use")
+            "capstone-reading" -> listOf("Source capability $id does not state capstone-reading")
+            else -> emptyList()
+        }
+    }
 
     /**
      * Independently recorded productive-clock-time admissions.
@@ -1217,15 +1275,24 @@ internal object V2Validator {
     private fun validateLateUnitRussian(pack: V2CurriculumPack, errors: MutableList<String>) {
         pack.units.filter { it.number in 26..30 }.forEach { unit ->
             val provenance = pack.provenanceRecords.filter { it.unitNumber == unit.number }
+            val admitted = provenance.flatMap { listOf(it.shippedText, it.originalSourceText) }.toSet()
             learnerRussian(pack, unit).forEach { text ->
-                val resolved = provenance.any { record ->
-                    record.shippedText == text || record.originalSourceText == text
-                }
-                if (!resolved) {
-                    errors += "Unit ${unit.number} Russian text has no resolved provenance record"
+                cyrillicRegions(text).forEach { region ->
+                    if (!admittedRegion(region, admitted)) {
+                        errors += "Unit ${unit.number} Russian text has no resolved provenance record"
+                    }
                 }
             }
         }
+    }
+
+    private fun cyrillicRegions(text: String): List<String> {
+        return CYRILLIC_REGION.findAll(text).map { it.value.trim() }.filter { it.isNotEmpty() }.toList()
+    }
+
+    private fun admittedRegion(region: String, admitted: Set<String>): Boolean {
+        val trimmed = region.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }
+        return region in admitted || trimmed in admitted
     }
 
     private fun learnerRussian(pack: V2CurriculumPack, unit: V2Unit): List<String> {
@@ -2344,6 +2411,8 @@ internal object V2Validator {
         "obj-u24-word-order-contrast",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
+        "obj-u30-abbreviation",
+        "obj-u30-particle",
     )
     /**
      * Independent concept checks cannot be answered by retrieving a source position.
@@ -3259,7 +3328,12 @@ internal object V2Validator {
             if (record.unitNumber !in 3..30) {
                 errors += "Authored English ${record.id} is outside the proposed Units 3-30 source intake"
             }
-            if (CYRILLIC_REGION.containsMatchIn(record.text) ||
+            val shippedForUnit = pack.provenanceRecords
+                .filter { it.unitNumber == record.unitNumber }
+                .map { it.shippedText }
+                .toSet()
+            val quoted = cyrillicRegions(record.text)
+            if (quoted.any { !admittedRegion(it, shippedForUnit) } ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
                 (GRAMMAR_TERM.containsMatchIn(record.text) && '?' !in record.text)
             ) {

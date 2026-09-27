@@ -91,10 +91,12 @@ class Units2630SourceIntakeTest {
         assertTrue(File(root, "app/src/main/assets/licenses/cc-by-sa-4.0.txt").isFile)
         assertTrue(File(root, "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt").readText().contains("Wikipedia:Copyrights oldid 1369466282"))
         assertTrue(File(root, "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt").readText().contains("Wikibooks:Copyrights oldid 4622060"))
+        assertTrue(File(root, "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt").readText().contains("oldid 154562152"))
         val expected = mapOf(
             "grammar" to "1369617627",
             "alphabet" to "1371795481",
             "address" to "3353858",
+            "morfologiya" to "148939075",
         )
         freeze.getValue("pages").jsonArray.forEach { element ->
             val page = element.jsonObject
@@ -131,6 +133,8 @@ class Units2630SourceIntakeTest {
             "cap-obj-u29-active" to Triple(29, "obj-u29-active", "active-participle"),
             "cap-obj-u29-short-adjective" to Triple(29, "obj-u29-short-adjective", "short-form-adjective"),
             "cap-obj-u30-letter-names" to Triple(30, "obj-u30-letter-names", "letter-name-review"),
+            "cap-obj-u30-abbreviation" to Triple(30, "obj-u30-abbreviation", "abbreviation"),
+            "cap-obj-u30-particle" to Triple(30, "obj-u30-particle", "particle"),
         )
         val admitted = pack.sourceCapabilities.filter { it.unitNumber in 26..30 }
         assertEquals(expected.keys, admitted.map { it.id }.toSet())
@@ -474,6 +478,159 @@ class Units2630SourceIntakeTest {
         (1..25).forEach { number ->
             assertEquals(V2Validator.unitContentReviewDigest(pack, number), V2Validator.unitContentReviewDigest(shifted, number))
         }
+    }
+
+    @Test
+    fun neighboringSpansKeywordsAndInactiveVariancesStayClosed() {
+        val pack = pack()
+        assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
+        val unresolved = setOf(
+            "indefinite-pronoun",
+            "postal-address",
+            "letter-writing",
+            "participle-stress",
+            "participle-punctuation",
+            "bookish-register",
+            "dictionary-use",
+            "capstone-reading",
+            "verbal-adverb-reading",
+            "correspondence-work",
+            "participle-comprehension",
+            "bookish-reading",
+        )
+        assertTrue(pack.sourceCapabilities.none { it.supportedClaim in unresolved })
+
+        val abbreviation = pack.sourceCapabilities.single { it.id == "cap-obj-u30-abbreviation" }
+        assertTrue(abbreviation.exactSpan.contains("\u0432 \u041c\u0418\u0414 \u0438 \u0432 \u041c\u0418\u0414\u0435"))
+        assertFalse(abbreviation.exactSpan.contains("\u0421\u0421\u0421\u0420"))
+        val gloss = pack.provenanceRecords.first { it.shippedText == "\u0421\u0421\u0421\u0420" }
+        assertTrue(
+            errorsForRebound(pack, gloss, "cap-gloss-as-abbreviation", 30, "obj-u30-abbreviation", "abbreviation")
+                .any { it.contains("does not state the abbreviation contrast") },
+        )
+        val address = pack.provenanceRecords.first { it.originalSourceText.startsWith("The lines are marked with abbreviations:") }
+        assertTrue(
+            errorsForRebound(pack, address, "cap-address-as-abbreviation", 30, "obj-u30-abbreviation", "abbreviation")
+                .any { it.contains("does not state the abbreviation contrast") },
+        )
+        assertTrue(
+            errorsForRebound(pack, address, "cap-address-as-postal", 26, "obj-u26-postal-address", "postal-address")
+                .any { it.contains("address marks do not clear postal-address") },
+        )
+        val letterOnly = "\u0431\u0443\u043a\u0432\u0435\u043d\u043d\u044b\u0435 \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u0443\u0440\u044b \u0438 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0435 \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u0443\u0440\u044b \u043d\u0430 \u0433\u043b\u0430\u0441\u043d\u0443\u044e"
+        assertTrue(
+            errorsForText(pack, letterOnly, "cap-letter-only", 30, "obj-u30-abbreviation", "abbreviation")
+                .any { it.contains("does not state the abbreviation contrast") },
+        )
+        assertTrue(
+            errorsForText(pack, "abbreviation particle dictionary postal address", "cap-keyword-abbreviation", 30, "obj-u30-abbreviation", "abbreviation")
+                .any { it.contains("does not state the abbreviation contrast") },
+        )
+        assertTrue(
+            errorsForText(pack, "\u043a\u0442\u043e-\u0442\u043e \u043a\u0442\u043e-\u043d\u0438\u0431\u0443\u0434\u044c \u043a\u043e\u0435-\u0447\u0442\u043e", "cap-inventory", 26, "obj-u26-indefinite", "indefinite-pronoun")
+                .any { it.contains("indefinite inventory does not clear") },
+        )
+        assertTrue(
+            errorsForText(pack, "\u0444\u043e\u0440\u043c\u043e\u043e\u0431\u0440\u0430\u0437\u0443\u044e\u0449\u0438\u0435 (\u0431\u044b, \u043f\u0443\u0441\u0442\u044c, \u0434\u0430)", "cap-class-list", 30, "obj-u30-particle", "particle")
+                .any { it.contains("does not state the particle contrast") },
+        )
+        val lunch = pack.provenanceRecords.first { it.shippedText.startsWith("\u041f\u043e\u043e\u0431\u0435\u0434\u0430\u0432") }
+        assertTrue(
+            errorsForRebound(pack, lunch, "cap-lunch-as-register", 29, "obj-u29-register", "bookish-register")
+                .any { it.contains("adverbial bookish note does not clear bookish-register") },
+        )
+        val reading = capability(lunch, "cap-verbal-reading", 28, "obj-u28-readings", "verbal-adverb-reading")
+        assertTrue(errorsFor(pack, reading).any { it.contains("wrong unit or objective") })
+
+        val dictionary = errorsForText(pack, "nominative heading", "cap-dictionary-row", 30, "obj-u30-abbreviation", "abbreviation", "src-openrussian-50e210c4")
+        assertTrue(dictionary.any { it.contains("a dictionary row does not clear abbreviation") })
+        val attested = errorsForText(pack, "Self-attest Lesson 30", "cap-self-attest", 30, "obj-u30-abbreviation", "abbreviation")
+        assertTrue(attested.any { it.contains("book self-attestation does not clear abbreviation") })
+
+        pack.items.filter { it.objectiveId == "obj-u30-abbreviation" || it.objectiveId == "obj-u30-particle" }.forEach { item ->
+            assertEquals(item.id, 1, item.options.count { it == item.answer })
+            val differences = item.assessment!!.distractorDifference.filter { it.isNotBlank() }
+            assertEquals(item.id, differences.toSet().size, differences.size)
+            assertTrue(item.id, differences.isNotEmpty())
+        }
+        val layout = pack.items.first { it.objectiveId == "obj-u30-abbreviation" && it.assessment!!.independent }
+        val recalled = layout.copy(prompt = "Which admitted label is written beside the shown form?")
+        val layoutErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == layout.id) recalled else it }),
+        ).errors
+        assertTrue(layoutErrors.joinToString("\n"), layoutErrors.any { it.contains("line-label recall") })
+
+        val readings = pack.unit(28)!!.objectives.single { it.id == "obj-u28-readings" }
+        assertEquals("GUIDANCE", readings.kind)
+        assertTrue(readings.checkItemIds.isEmpty())
+        assertTrue(readings.exampleIds.isEmpty())
+        assertEquals("NOT_PREPARED", pack.unit(28)!!.readiness)
+        val blocked = advancementDecision(pack, pack.unit(28)!!, learner(28, book = true))
+        assertFalse(blocked.allowed)
+        assertTrue(blocked.remaining.any { it.contains("not prepared") })
+        assertFalse(blocked.remaining.any { it.contains("imperfective-verbal-adverb") && it.contains("not content-complete") })
+
+        listOf(27, 29, 30).forEach { number ->
+            assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
+            val errors = V2Validator.validate(claimReady(pack, number)).errors
+            assertTrue(errors.joinToString("\n"), errors.any { it == "Unit $number is blocked by an unresolved authority variance" })
+        }
+        pack.provenanceRecords.filter { it.unitNumber == 30 && it.sourceId.startsWith("src-ruwiki-") }.forEach { record ->
+            assertTrue(record.attribution.contains("oldid 154562152"))
+            assertTrue(record.attribution.contains("CC BY-SA 4.0"))
+            assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
+            assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+            assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
+        }
+    }
+
+    private fun errorsForRebound(
+        pack: V2CurriculumPack,
+        record: V2ProvenanceRecord,
+        id: String,
+        number: Int,
+        objectiveId: String,
+        claim: String,
+    ): List<String> {
+        val rebound = record.copy(itemId = "prov-$id", unitNumber = number, objectiveId = objectiveId)
+        val added = capability(rebound, id, number, objectiveId, claim)
+        return V2Validator.validate(
+            pack.copy(
+                provenanceRecords = pack.provenanceRecords + rebound,
+                sourceCapabilities = pack.sourceCapabilities + added,
+            ),
+        ).errors
+    }
+
+    private fun errorsForText(
+        pack: V2CurriculumPack,
+        text: String,
+        id: String,
+        number: Int,
+        objectiveId: String,
+        claim: String,
+        sourceId: String = "src-ruwiki-morfologiya-148939075",
+    ): List<String> {
+        val record = pack.provenanceRecords.first().copy(
+            itemId = "prov-$id",
+            unitNumber = number,
+            objectiveId = objectiveId,
+            sourceId = sourceId,
+            sourceRevision = "148939075",
+            sourceRecordId = "morfologiya:$id",
+            originalSourceText = text,
+            shippedText = text,
+            sourceHash = sha256(text),
+            contentHash = sha256(text),
+            sourceUrl = "https://ru.wikipedia.org/w/index.php?title=%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0&oldid=148939075",
+        )
+        val added = capability(record, id, number, objectiveId, claim)
+        return V2Validator.validate(
+            pack.copy(
+                provenanceRecords = pack.provenanceRecords + record,
+                sourceCapabilities = pack.sourceCapabilities + added,
+            ),
+        ).errors
     }
 
     private fun V2SourceCapability.sourceUrlBound(pack: V2CurriculumPack): Boolean {

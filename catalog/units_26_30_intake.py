@@ -58,6 +58,7 @@ class FrozenSources:
             "wikipedia-russian-grammar-1369617627",
             "wikipedia-russian-alphabet-1371795481",
             "wikibooks-russian-various-stuff-3353858",
+            "ruwiki-morfologiya-abbreviation-particle-148939075",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -98,8 +99,23 @@ class Builder:
     def say(self, unit: int, text: str) -> str:
         from units_3_5_intake import CLAIM, GRAMMAR_TERM
 
-        if CYRILLIC.search(text) or CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
+        if CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
             raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
+        if CYRILLIC.search(text):
+            covered = text
+            shipped = sorted(
+                {
+                    record.get("shippedText") or ""
+                    for record in self.provenance
+                    if record.get("unitNumber") == unit and record.get("shippedText")
+                },
+                key=len,
+                reverse=True,
+            )
+            for piece in shipped:
+                covered = covered.replace(piece, "")
+            if CYRILLIC.search(covered):
+                raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
         key = (unit, text)
         if key not in self._said:
             self._said_count += 1
@@ -352,6 +368,8 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
             "active-participle",
             "short-form-adjective",
             "letter-name-review",
+            "abbreviation",
+            "particle",
         }:
             raise SystemExit(f"Refusing to satisfy a broad or unsupported claim: {spec}")
         resolved.append({
@@ -454,8 +472,10 @@ def _attribution_reference() -> dict:
             "Application code, user data, user recordings, and separately licensed audio are outside that statement. "
             "No audio is included. Linked media, Phonos, and pronunciation files are not admitted. "
             "Anecdotal postal advice is not shipped. "
+            "Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. "
             "The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, "
-            "dictionary use, a general particle system, and the final reading are not prepared. Review is pending."
+            "a general bookish-register claim, dictionary use, and the final reading are not prepared. "
+            "The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending."
         ),
         "introducedInUnit": 26,
         "sourceId": "src-wikipedia-russian-grammar-1369617627",
@@ -469,6 +489,8 @@ def _sources(frozen: FrozenSources) -> tuple[list[dict], list[dict]]:
     sources = []
     rights = []
     for page in frozen.freeze["pages"]:
+        if page["sourceId"] == "src-ruwiki-morfologiya-148939075":
+            continue
         sources.append({
             "id": page["sourceId"],
             "title": page["title"],
@@ -546,15 +568,17 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 30,
             "Review admitted table names and abbreviation examples",
-            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. Those examples are not a complete abbreviation system. Dictionary use, a general particle system, and the final reading stay in the copy you own. Qualified review is pending.",
+            "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.",
             populate,
             [
                 ("dictionary", "Dictionary use stays in the copy you own", "Dictionary use stays in the copy you own. No admitted span gives that procedure.", "Dictionary use has no admitted frozen span."),
-                ("abbreviation", "A general abbreviation system stays in the copy you own", "A general abbreviation system stays in the copy you own. Two examples and the address marks are not that system.", "A complete abbreviation system has no admitted frozen span."),
-                ("particle", "A general particle system stays in the copy you own", "A general particle system stays in the copy you own. An isolated label is not that system.", "A general particle system has no admitted frozen span."),
                 ("capstone", "The final reading stays in the copy you own", "The final reading stays in the copy you own. No admitted text supplies it.", "The final reading has no admitted frozen span."),
             ],
-            [("obj-u30-letter-names", "letter-name-review")],
+            [
+                ("obj-u30-letter-names", "letter-name-review"),
+                ("obj-u30-abbreviation", "abbreviation"),
+                ("obj-u30-particle", "particle"),
+            ],
         ),
     ]
     _assert(builder, units)
