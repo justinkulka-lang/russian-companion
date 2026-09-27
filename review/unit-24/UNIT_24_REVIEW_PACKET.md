@@ -16,7 +16,7 @@ Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
 - Pack content-review SHA-256: 2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5
 - Review-package SHA-256: ba7a2ff5e8c75c688f846de56a971440d514320028ac0058c96fe0f13fe726ec
-- Repository source SHA-256: 5c1e424dd728416cade4008c314f99cb3bd227398db5ec0e7549537b9eaab751
+- Repository source SHA-256: 098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

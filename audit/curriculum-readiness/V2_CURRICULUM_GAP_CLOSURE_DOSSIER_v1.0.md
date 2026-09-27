@@ -4,7 +4,7 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Canonical commit:** `fd69bd03298d69669d09daafe8d364b0e576d033`  
 **Pack content-review digest:** `2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5`  
-**Repository source digest:** `5c1e424dd728416cade4008c314f99cb3bd227398db5ec0e7549537b9eaab751`  
+**Repository source digest:** `098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose

@@ -16,7 +16,7 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: 145bb8c75afc12e093bcc205093f95ffe81636a0c5cd1aee64d0aa8766f6e69f
 - Pack content-review SHA-256: 2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5
 - Review-package SHA-256: 673a496222fbfbd49a64b52ffcb1b580cc54549b6657c727bf2a76529fa1a689
-- Repository source SHA-256: 5c1e424dd728416cade4008c314f99cb3bd227398db5ec0e7549537b9eaab751
+- Repository source SHA-256: 098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

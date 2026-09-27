@@ -263,8 +263,8 @@ internal object BatchBSources {
     val ADMITTED_NEGATION_SCOPE: Set<GovernedSourceAdmission> = emptySet()
 
     /**
-     * The frozen pair moves меня and leaves не надо in place. That is a
-     * sentence/gloss contrast. It does not state scope-sensitive placement of не.
+     * The frozen pair moves \u043c\u0435\u043d\u044f and leaves \u043d\u0435 \u043d\u0430\u0434\u043e in place. That is a
+     * sentence/gloss contrast. It does not state scope-sensitive placement of \u043d\u0435.
      */
     fun wordOrderMeaningContrast(span: String): Boolean {
         val neverSentence = "\u041d\u0435 \u043d\u0430\u0434\u043e \u043c\u0435\u043d\u044f \u0443\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044c"
