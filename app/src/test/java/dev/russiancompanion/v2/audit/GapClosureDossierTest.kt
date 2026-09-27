@@ -59,7 +59,7 @@ class GapClosureDossierTest {
         }
 
         val contentUnits = model.units.filter { it.contentBlocker != "NONE" }.map { it.unitNumber }
-        assertEquals(listOf(7, 17) + (23..30).toList(), contentUnits)
+        assertEquals(listOf(7, 17, 23, 24) + (25..30).toList(), contentUnits)
         assertEquals(10, contentUnits.size)
         assertEquals(
             (1..30).toList(),

@@ -7759,6 +7759,26 @@
       "objectiveId": "obj-u24-concord"
     },
     {
+      "id": "ex-u24-word-order-contrast-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Не надо меня уговаривать.",
+      "note": "One should not persuade me",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u24-word-order-contrast"
+    },
+    {
+      "id": "ex-u24-word-order-contrast-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Меня не надо уговаривать.",
+      "note": "There is no need to persuade me",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "objectiveId": "obj-u24-word-order-contrast"
+    },
+    {
       "id": "ex-u25-name-structure-0",
       "kind": "LEXICAL",
       "letterId": "",
@@ -28477,6 +28497,159 @@
       }
     },
     {
+      "id": "u24-g-word-order-contrast-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Не надо меня уговаривать.",
+      "options": [
+        "One should not persuade me",
+        "There is no need to persuade me"
+      ],
+      "answer": "One should not persuade me",
+      "feedback": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").",
+      "objectiveId": "obj-u24-word-order-contrast",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+      ],
+      "assessment": {
+        "testedFeature": "WORD_ORDER_NEVER",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u24-word-order-contrast-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u24-word-order-contrast-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u24-word-order-contrast-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").",
+        "contrastMembers": [
+          "One should not persuade me",
+          "There is no need to persuade me"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u24-word-order-contrast-0-ru",
+          "prov-ex-u24-word-order-contrast-0-en",
+          "prov-ex-u24-word-order-contrast-1-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u24-i-word-order-contrast-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Меня не надо уговаривать.",
+      "options": [
+        "There is no need to persuade me",
+        "One should not persuade me"
+      ],
+      "answer": "There is no need to persuade me",
+      "feedback": "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\").",
+      "objectiveId": "obj-u24-word-order-contrast",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\")."
+      ],
+      "assessment": {
+        "testedFeature": "WORD_ORDER_ANYWAY",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u24-word-order-contrast-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u24-word-order-contrast-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u24-word-order-contrast-0-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\").",
+        "contrastMembers": [
+          "There is no need to persuade me",
+          "One should not persuade me"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u24-word-order-contrast-1-ru",
+          "prov-ex-u24-word-order-contrast-1-en",
+          "prov-ex-u24-word-order-contrast-0-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u24-i-word-order-contrast-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Не надо меня уговаривать.",
+      "options": [
+        "One should not persuade me",
+        "There is no need to persuade me"
+      ],
+      "answer": "One should not persuade me",
+      "feedback": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").",
+      "objectiveId": "obj-u24-word-order-contrast",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+      ],
+      "assessment": {
+        "testedFeature": "WORD_ORDER_NEVER_AGAIN",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u24-word-order-contrast-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u24-word-order-contrast-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u24-word-order-contrast-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").",
+        "contrastMembers": [
+          "One should not persuade me",
+          "There is no need to persuade me"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u24-word-order-contrast-0-ru",
+          "prov-ex-u24-word-order-contrast-0-en",
+          "prov-ex-u24-word-order-contrast-1-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
       "id": "u25-g-name-structure-0",
       "kind": "FORM_SELECTION",
       "language": "en",
@@ -31882,7 +32055,7 @@
       "id": "ref-u2125-attribution",
       "title": "Units 21–25 source notice",
       "summary": "Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.",
-      "detail": "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.",
+      "detail": "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period and a general nickname-formation rule are not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.",
       "introducedInUnit": 21,
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "classification": "LICENSE_OR_ATTRIBUTION",
@@ -53117,7 +53290,7 @@
       "id": "unit-24",
       "title": "Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не",
       "shortLabel": "Negation",
-      "topicSummary": "Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, and the prefix table await qualified review. Placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
+      "topicSummary": "Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.",
       "installState": "DEVELOPMENT",
       "readiness": "NOT_PREPARED",
       "penguinLesson": 24,
@@ -53126,7 +53299,7 @@
       "prerequisiteUnitNumbers": [
         23
       ],
-      "estimatedMinutes": 82,
+      "estimatedMinutes": 94,
       "objectives": [
         {
           "id": "obj-u24-verbal-ne",
@@ -53263,6 +53436,31 @@
           ]
         },
         {
+          "id": "obj-u24-word-order-contrast",
+          "unitNumber": 24,
+          "title": "Choose the admitted meaning for the shown sentence",
+          "kind": "RECOGNITION",
+          "instructionStepIds": [
+            "u24-st-orient",
+            "u24-st-teach-word-order-contrast-1",
+            "u24-st-teach-word-order-contrast-2"
+          ],
+          "exampleIds": [
+            "ex-u24-word-order-contrast-0",
+            "ex-u24-word-order-contrast-1"
+          ],
+          "practiceStepIds": [
+            "u24-st-guided-word-order-contrast-1"
+          ],
+          "checkItemIds": [
+            "u24-i-word-order-contrast-1",
+            "u24-i-word-order-contrast-2"
+          ],
+          "remediationStepIds": [
+            "u24-st-rem-word-order-contrast"
+          ]
+        },
+        {
           "id": "obj-u24-book",
           "unitNumber": 24,
           "title": "Self-attest Lesson 24 book work",
@@ -53279,7 +53477,7 @@
         {
           "id": "obj-u24-placement",
           "unitNumber": 24,
-          "title": "Placement contrasts stay in the copy you own",
+          "title": "Scope-sensitive placement stays in the copy you own",
           "kind": "GUIDANCE",
           "instructionStepIds": [
             "u24-st-gap-placement"
@@ -53301,6 +53499,7 @@
             "obj-u24-alternation",
             "obj-u24-stand-ins",
             "obj-u24-concord",
+            "obj-u24-word-order-contrast",
             "obj-u24-book"
           ],
           "steps": [
@@ -53308,7 +53507,7 @@
               "id": "u24-st-orient",
               "kind": "ORIENT",
               "title": "Admitted negation lines",
-              "body": "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.",
+              "body": "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u2125-attribution"
@@ -53871,6 +54070,101 @@
           ]
         },
         {
+          "id": "u24-s-word-order-contrast",
+          "title": "Choose the admitted meaning for the shown sentence",
+          "estimatedMinutes": 12,
+          "objectiveIds": [
+            "obj-u24-word-order-contrast"
+          ],
+          "steps": [
+            {
+              "id": "u24-st-teach-word-order-contrast-1",
+              "kind": "TEACH",
+              "title": "Admitted lines",
+              "body": "Не надо меня уговаривать. — One should not persuade me. Меня не надо уговаривать. — There is no need to persuade me. ",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u2125-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u24-word-order-contrast-0",
+                "ex-u24-word-order-contrast-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u24-st-guided-word-order-contrast-1",
+              "kind": "GUIDED",
+              "title": "Guided practice",
+              "body": "Choose the admitted record. The feedback states the frozen field.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u24-g-word-order-contrast-0"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u24-st-rem-word-order-contrast"
+            },
+            {
+              "id": "u24-st-teach-word-order-contrast-2",
+              "kind": "TEACH",
+              "title": "Admitted instruction",
+              "body": "alternative word order can change the meaning entirely",
+              "dominantAction": "Continue",
+              "referenceIds": [
+                "ref-u2125-attribution"
+              ],
+              "itemIds": [],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u24-st-rem-word-order-contrast",
+              "kind": "REMEDIATE",
+              "title": "Remediation",
+              "body": "alternative word order can change the meaning entirely",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [],
+              "exampleIds": [
+                "ex-u24-word-order-contrast-0",
+                "ex-u24-word-order-contrast-1"
+              ],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": null
+            },
+            {
+              "id": "u24-st-check-word-order-contrast",
+              "kind": "CHECK",
+              "title": "Independent checks",
+              "body": "These checks use only admitted records. A miss returns to the explanation.",
+              "dominantAction": "Continue",
+              "referenceIds": [],
+              "itemIds": [
+                "u24-i-word-order-contrast-1",
+                "u24-i-word-order-contrast-2"
+              ],
+              "exampleIds": [],
+              "unavailableReason": null,
+              "bookDirection": null,
+              "companionDirection": null,
+              "remediationStepId": "u24-st-rem-word-order-contrast"
+            }
+          ]
+        },
+        {
           "id": "u24-s-book",
           "title": "Self-attest Lesson 24",
           "estimatedMinutes": 10,
@@ -53912,7 +54206,7 @@
         },
         {
           "id": "u24-s-gap-placement",
-          "title": "Placement contrasts stay in the copy you own",
+          "title": "Scope-sensitive placement stays in the copy you own",
           "estimatedMinutes": 4,
           "objectiveIds": [
             "obj-u24-placement"
@@ -53921,15 +54215,15 @@
             {
               "id": "u24-st-gap-placement",
               "kind": "UNAVAILABLE",
-              "title": "Placement contrasts stay in the copy you own",
-              "body": "Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.",
+              "title": "Scope-sensitive placement stays in the copy you own",
+              "body": "Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.",
               "dominantAction": "Continue",
               "referenceIds": [
                 "ref-u2125-attribution"
               ],
               "itemIds": [],
               "exampleIds": [],
-              "unavailableReason": "Placement contrasts have no admitted frozen span.",
+              "unavailableReason": "Scope-sensitive placement has no admitted frozen span.",
               "bookDirection": null,
               "companionDirection": null,
               "remediationStepId": null
@@ -53941,7 +54235,7 @@
         "requireInstruction": true,
         "requireBookSelfAttestation": true,
         "requireAppChecks": true,
-        "minimumDistinctChecks": 4,
+        "minimumDistinctChecks": 6,
         "requireDueReview": false,
         "tutorOptional": true
       }
@@ -106751,6 +107045,206 @@
       "audioAssetId": null
     },
     {
+      "itemId": "prov-ex-u24-word-order-contrast-0-ru",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "Не надо меня уговаривать.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "c8de239c5299690d8a28e03341487cae5ca0822c0d59bae6e9e47f97f1e0cf44",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u24-word-order-contrast-0-en",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "One should not persuade me",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u24-word-order-contrast-1-ru",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "Меня не надо уговаривать.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "453eb5f26733dbc64de2fc66f2b3eadfd4ea6a2f9195a280f5187f59bf90c3a8",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-ex-u24-word-order-contrast-1-en",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "There is no need to persuade me",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "1f5a9e0426f3d84525148342b005283bab8db1c80740ce9a80af4b2e2f7565fc",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u24-word-order-contrast-rem",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "instruction",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "alternative word order can change the meaning entirely",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "4123ca321d34197e90d567eb9bba84842ed9d86256aad9bfdfd442266b9e9716",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u24-word-order-contrast-x-0",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "alternative word order can change the meaning entirely",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "4123ca321d34197e90d567eb9bba84842ed9d86256aad9bfdfd442266b9e9716",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u24-word-order-contrast-x-1",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "as I would never agree to do something",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "feebc218476b03532944cc4103d32383b4eede56aa007fa2b489c7ecbd918545",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
+      "itemId": "prov-u24-word-order-contrast-x-2",
+      "unitNumber": 24,
+      "objectiveId": "obj-u24-word-order-contrast",
+      "recordType": "label",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+      "originalSourceText": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+      "shippedText": "as I will do it anyway",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+      "contentHash": "1619288ce6fa27e582f57d4c8a1bf6a68012d0aead902751ddc9702a91386294",
+      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": "",
+      "audioAssetId": null
+    },
+    {
       "itemId": "prov-ex-u25-name-structure-0-ru",
       "unitNumber": 25,
       "objectiveId": "obj-u25-name-structure",
@@ -117003,581 +117497,587 @@
     {
       "id": "en-u24-168",
       "unitNumber": 24,
-      "text": "Admitted negation lines",
+      "text": "Which English meaning matches the shown sentence?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-169",
       "unitNumber": 24,
-      "text": "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.",
+      "text": "Admitted negation lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-170",
       "unitNumber": 24,
-      "text": "Open Lesson 24 in the copy you own. The app records do not replace that lesson.",
+      "text": "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-171",
       "unitNumber": 24,
-      "text": "Guided practice",
+      "text": "Open Lesson 24 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-172",
       "unitNumber": 24,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-173",
       "unitNumber": 24,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-174",
       "unitNumber": 24,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-175",
       "unitNumber": 24,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-176",
       "unitNumber": 24,
-      "text": "Work Lesson 24 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-177",
       "unitNumber": 24,
-      "text": "Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 24 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-178",
       "unitNumber": 24,
-      "text": "Open Lesson 24 in your copy and complete its lesson work.",
+      "text": "Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-179",
       "unitNumber": 24,
-      "text": "Record Lesson 24 book work",
+      "text": "Open Lesson 24 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-180",
       "unitNumber": 24,
-      "text": "When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 24 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-181",
       "unitNumber": 24,
-      "text": "Self-attest only after the Lesson 24 work in your copy.",
+      "text": "When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-182",
       "unitNumber": 24,
-      "text": "Placement contrasts stay in the copy you own",
+      "text": "Self-attest only after the Lesson 24 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u24-183",
       "unitNumber": 24,
-      "text": "Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.",
+      "text": "Scope-sensitive placement stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u25-184",
-      "unitNumber": 25,
-      "text": "Admitted lines",
+      "id": "en-u24-184",
+      "unitNumber": 24,
+      "text": "Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-185",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with patronymic name, not with the shown words.",
+      "text": "Admitted lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-186",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with family name, not with the shown words.",
+      "text": "The frozen sentence pairs this form with patronymic name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-187",
       "unitNumber": 25,
-      "text": "The frozen sentence gives this ending for son of, not as the pair for the shown words.",
+      "text": "The frozen sentence pairs this form with family name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-188",
       "unitNumber": 25,
-      "text": "This form is paired with patronymic name.",
+      "text": "The frozen sentence gives this ending for son of, not as the pair for the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-189",
       "unitNumber": 25,
-      "text": "This form is paired with family name.",
+      "text": "This form is paired with patronymic name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-190",
       "unitNumber": 25,
-      "text": "This ending means son of, rather than the paired form.",
+      "text": "This form is paired with family name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-191",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs the shown words with this form.",
+      "text": "This ending means son of, rather than the paired form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-192",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown words with one form. Which admitted form is that pair?",
+      "text": "The frozen sentence says Russians use three names and pairs the shown words with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-193",
       "unitNumber": 25,
-      "text": "Admitted instruction",
+      "text": "The frozen sentence pairs the shown words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-194",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs this form with first name, not with the shown words.",
+      "text": "Admitted instruction",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-195",
       "unitNumber": 25,
-      "text": "The frozen sentence gives this ending for daughter of, not as the pair for the shown words.",
+      "text": "The frozen sentence pairs this form with first name, not with the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-196",
       "unitNumber": 25,
-      "text": "This form is paired with first name.",
+      "text": "The frozen sentence gives this ending for daughter of, not as the pair for the shown words.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-197",
       "unitNumber": 25,
-      "text": "This ending means daughter of, rather than the paired form.",
+      "text": "This form is paired with first name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-198",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs patronymic name with this form.",
+      "text": "This ending means daughter of, rather than the paired form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-199",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?",
+      "text": "The frozen sentence says Russians use three names and pairs patronymic name with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-200",
       "unitNumber": 25,
-      "text": "The frozen sentence says Russians use three names and pairs family name with this form.",
+      "text": "The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-201",
       "unitNumber": 25,
-      "text": "The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?",
+      "text": "The frozen sentence says Russians use three names and pairs family name with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-202",
       "unitNumber": 25,
-      "text": "The frozen list pairs Alyosha for Alexei with a different name.",
+      "text": "The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-203",
       "unitNumber": 25,
-      "text": "The frozen list pairs Dima for Dmitri with a different name.",
+      "text": "The frozen list pairs Alyosha for Alexei with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-204",
       "unitNumber": 25,
-      "text": "Alyosha is paired with Alexei, not with the shown name.",
+      "text": "The frozen list pairs Dima for Dmitri with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-205",
       "unitNumber": 25,
-      "text": "Dima is paired with Dmitri, not with the shown name.",
+      "text": "Alyosha is paired with Alexei, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-206",
       "unitNumber": 25,
-      "text": "The frozen list includes Sasha for Alexander as the pair for the shown name.",
+      "text": "Dima is paired with Dmitri, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-207",
       "unitNumber": 25,
-      "text": "The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?",
+      "text": "The frozen list includes Sasha for Alexander as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-208",
       "unitNumber": 25,
-      "text": "The frozen list pairs Sasha for Alexander with a different name.",
+      "text": "The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-209",
       "unitNumber": 25,
-      "text": "Sasha is paired with Alexander, not with the shown name.",
+      "text": "The frozen list pairs Sasha for Alexander with a different name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-210",
       "unitNumber": 25,
-      "text": "The frozen list includes Alyosha for Alexei as the pair for the shown name.",
+      "text": "Sasha is paired with Alexander, not with the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-211",
       "unitNumber": 25,
-      "text": "The frozen list includes Dima for Dmitri as the pair for the shown name.",
+      "text": "The frozen list includes Alyosha for Alexei as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-212",
       "unitNumber": 25,
-      "text": "The frozen list pairs thanks with a different form.",
+      "text": "The frozen list includes Dima for Dmitri as the pair for the shown name.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-213",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (informal) with a different form.",
+      "text": "The frozen list pairs thanks with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-214",
       "unitNumber": 25,
-      "text": "Thanks is a different courtesy word.",
+      "text": "The frozen list pairs I'm sorry / excuse me (informal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-215",
       "unitNumber": 25,
-      "text": "The informal apology is a different courtesy word.",
+      "text": "Thanks is a different courtesy word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-216",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request and pairs that word with this form.",
+      "text": "The informal apology is a different courtesy word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-217",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown request word with one form. Which admitted form is that pair?",
+      "text": "The frozen list says please; also used for a request and pairs that word with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-218",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request, not for thanks.",
+      "text": "The frozen list pairs the shown request word with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-219",
       "unitNumber": 25,
-      "text": "Please is the request word, not the thanks word.",
+      "text": "The frozen list says please; also used for a request, not for thanks.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-220",
       "unitNumber": 25,
-      "text": "The informal apology is not the thanks word.",
+      "text": "Please is the request word, not the thanks word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-221",
       "unitNumber": 25,
-      "text": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.",
+      "text": "The informal apology is not the thanks word.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-222",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-223",
       "unitNumber": 25,
-      "text": "The frozen list says please; also used for a request, not for the informal apology.",
+      "text": "The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-224",
       "unitNumber": 25,
-      "text": "Please is the request word, not the informal apology.",
+      "text": "The frozen list says please; also used for a request, not for the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-225",
       "unitNumber": 25,
-      "text": "Thanks is not the informal apology.",
+      "text": "Please is the request word, not the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-226",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (informal) with this form.",
+      "text": "Thanks is not the informal apology.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-227",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs I'm sorry / excuse me (informal) with this form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-228",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with the reply, not with the shown question.",
+      "text": "The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-229",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (formal) with a different form.",
+      "text": "The frozen list pairs My name is... with the reply, not with the shown question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-230",
       "unitNumber": 25,
-      "text": "This form is the reply, not the question.",
+      "text": "The frozen list pairs I'm sorry / excuse me (formal) with a different form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-231",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the question.",
+      "text": "This form is the reply, not the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-232",
       "unitNumber": 25,
-      "text": "The frozen list pairs What is your name? with this form and My name is... with the reply.",
+      "text": "This form is the formal apology, not the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-233",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown question with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs What is your name? with this form and My name is... with the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-234",
       "unitNumber": 25,
-      "text": "The frozen list pairs What is your name? with the question, not with the shown reply.",
+      "text": "The frozen list pairs the shown question with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-235",
       "unitNumber": 25,
-      "text": "This form is the question, not the reply.",
+      "text": "The frozen list pairs What is your name? with the question, not with the shown reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-236",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the reply.",
+      "text": "This form is the question, not the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-237",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with this reply and What is your name? with the question.",
+      "text": "This form is the formal apology, not the reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-238",
       "unitNumber": 25,
-      "text": "The frozen list pairs the shown reply with one form. Which admitted form is that pair?",
+      "text": "The frozen list pairs My name is... with this reply and What is your name? with the question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-239",
       "unitNumber": 25,
-      "text": "The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+      "text": "The frozen list pairs the shown reply with one form. Which admitted form is that pair?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-240",
       "unitNumber": 25,
-      "text": "The frozen list pairs How are you? with this form, not with the name reply.",
+      "text": "The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-241",
       "unitNumber": 25,
-      "text": "This form is the formal apology, not the name reply.",
+      "text": "The frozen list pairs How are you? with this form, not with the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-242",
       "unitNumber": 25,
-      "text": "This form asks how someone is, rather than giving the name reply.",
+      "text": "This form is the formal apology, not the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-243",
       "unitNumber": 25,
-      "text": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.",
+      "text": "This form asks how someone is, rather than giving the name reply.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-244",
       "unitNumber": 25,
-      "text": "The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?",
+      "text": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-245",
       "unitNumber": 25,
-      "text": "The frozen source pairs the shown form",
+      "text": "The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-246",
       "unitNumber": 25,
-      "text": "with the admitted gloss",
+      "text": "The frozen source pairs the shown form",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-247",
       "unitNumber": 25,
-      "text": "Which admitted list name is written for the shown form?",
+      "text": "with the admitted gloss",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-248",
       "unitNumber": 25,
-      "text": "Which admitted setting is written for the shown address form?",
+      "text": "Which admitted list name is written for the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-249",
       "unitNumber": 25,
-      "text": "Admitted name and courtesy lines",
+      "text": "Which admitted setting is written for the shown address form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-250",
       "unitNumber": 25,
-      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.",
+      "text": "Admitted name and courtesy lines",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-251",
       "unitNumber": 25,
-      "text": "Open Lesson 25 in the copy you own. The app records do not replace that lesson.",
+      "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-252",
       "unitNumber": 25,
-      "text": "Guided practice",
+      "text": "Open Lesson 25 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-253",
       "unitNumber": 25,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-254",
       "unitNumber": 25,
-      "text": "Remediation",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-255",
       "unitNumber": 25,
-      "text": "Independent checks",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-256",
       "unitNumber": 25,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-257",
       "unitNumber": 25,
-      "text": "Work Lesson 25 in your copy",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-258",
       "unitNumber": 25,
-      "text": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+      "text": "Work Lesson 25 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-259",
       "unitNumber": 25,
-      "text": "Open Lesson 25 in your copy and complete its lesson work.",
+      "text": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-260",
       "unitNumber": 25,
-      "text": "Record Lesson 25 book work",
+      "text": "Open Lesson 25 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-261",
       "unitNumber": 25,
-      "text": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+      "text": "Record Lesson 25 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-262",
       "unitNumber": 25,
-      "text": "Self-attest only after the Lesson 25 work in your copy.",
+      "text": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-263",
       "unitNumber": 25,
-      "text": "A general nickname-formation rule stays in the copy you own",
+      "text": "Self-attest only after the Lesson 25 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u25-264",
+      "unitNumber": 25,
+      "text": "A general nickname-formation rule stays in the copy you own",
+      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+    },
+    {
+      "id": "en-u25-265",
       "unitNumber": 25,
       "text": "A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"

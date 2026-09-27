@@ -11,12 +11,12 @@ Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
-- Unit content-review SHA-256: 93f8374e835e2e83771508aa454942a08a25e459bb40b2a1f9c4b303407d9ef7
+- Curriculum source commit: 9594f75ede55d579ae4c4d8d6cdc30db4d6c30db
+- Unit content-review SHA-256: 53cd0f858aa788088c3a98844351f844cc9ecd35effc866f6d5394b428845890
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: 4791d5aa7a2ce44698c144c00ff68408ae8544739b6f9145b3104cd878cc7295
-- Review-package SHA-256: 3e6c6a0fd3a311d32e9b350100188152aaa2338603d591cb483ec13299a95c2e
-- Repository source SHA-256: a7841066508d125da89357ee80ac7e3a099491ed254fd9f12e0d0252e2f72bbe
+- Pack content-review SHA-256: 2ec8673de5c4f5a0bee9208250afd2ec2b505a013ab848f30c0513a63b59acc5
+- Review-package SHA-256: ba7a2ff5e8c75c688f846de56a971440d514320028ac0058c96fe0f13fe726ec
+- Repository source SHA-256: 098eda693db0ae5113e89b6f26dda9eb65cd2cbf94c94296b2b14fec7388115e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
-topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, and the prefix table await qualified review. Placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=82
+estimatedMinutes=94
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 24.
 
 ### UNIT `unit-24`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book, obj-u24-placement
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-book, u24-s-gap-placement
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book, obj-u24-placement
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-book, u24-s-gap-placement
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d81f4a3bfb79d07e46b4e35a41d0d7b588e6997c1c3df0df00751dd78b09558
+- Content hash: e43acb53e7b05e0ea4899f1888641253e195193fc8b00bb3931f3d2a0a360809
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
-topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, and the prefix table await qualified review. Placement contrasts have no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
 readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=82
+estimatedMinutes=94
 
 ### ADVANCEMENT `unit-24-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=82
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 30f2c3af7498a0fd76be53c62654ca7f1a4f962610534d0fc1a022ea4727d1e9
+- Content hash: c15357630e26574590ec8ec27a55cc6166724cb38887cdf365b8f487cd9cd7a5
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=4
+minimumDistinctChecks=6
 requireDueReview=false
 tutorOptional=true
 
@@ -200,6 +200,25 @@ practice=u24-st-guided-concord-1
 checks=u24-i-concord-1,u24-i-concord-2
 remediation=u24-st-rem-concord
 
+### OBJECTIVE `obj-u24-word-order-contrast`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 998452d106e8b7814aa284bcd65594b77f36aed9656639760fa2941dc34f4375
+
+title=Choose the admitted meaning for the shown sentence
+kind=RECOGNITION
+unitNumber=24
+instruction=u24-st-orient,u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2
+examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
+practice=u24-st-guided-word-order-contrast-1
+checks=u24-i-word-order-contrast-1,u24-i-word-order-contrast-2
+remediation=u24-st-rem-word-order-contrast
+
 ### OBJECTIVE `obj-u24-book`
 
 - Objectives: obj-u24-book
@@ -227,9 +246,9 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a3e11c120f41b0bbf86e344cc494c3b7f2969b4cd9b9a1b6b9d9768e88fe5d0
+- Content hash: 8708f686b8614498c6edeb5231ff263d705667851e805ea126400790042475e9
 
-title=Placement contrasts stay in the copy you own
+title=Scope-sensitive placement stays in the copy you own
 kind=GUIDANCE
 unitNumber=24
 instruction=u24-st-gap-placement
@@ -240,32 +259,32 @@ remediation=
 
 ### SESSION `u24-s-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 612b31dfebb7e7889067c2f66d84c542cfd500f1be0e98f249e868ff9e97e365
+- Content hash: 3fab177291ebe9743717759fb0d7ffe0caa2a2b14bd9b0fe5864633d3b511b53
 
 title=Admitted negation lines
 estimatedMinutes=8
-objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-concord,obj-u24-book
+objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-concord,obj-u24-word-order-contrast,obj-u24-book
 steps=u24-st-orient
 
 ### STEP `u24-st-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 06c333c980b50d18a82a7605da38fcbfe9e6f0a6af8868ba737821f2c133c163
+- Content hash: 6a2a71d574c73e94b8c581699a0b6054887459fe95dac007699a83b8d0ad225a
 
 kind=ORIENT
 title=Admitted negation lines
-body=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.
+body=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -988,6 +1007,131 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-concord
 
+### SESSION `u24-s-word-order-contrast`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 981ddd90bd3dc9a25d60dbe0d5865e63159429a19156f83737d86b537d04c794
+
+title=Choose the admitted meaning for the shown sentence
+estimatedMinutes=12
+objectives=obj-u24-word-order-contrast
+steps=u24-st-teach-word-order-contrast-1,u24-st-guided-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-rem-word-order-contrast,u24-st-check-word-order-contrast
+
+### STEP `u24-st-teach-word-order-contrast-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a7aacaddc5bb5c8399277a82a54f30dcff8fafcbde4e9ce8ea62ffb21bc8ccfc
+
+kind=TEACH
+title=Admitted lines
+body=Не надо меня уговаривать. — One should not persuade me. Меня не надо уговаривать. — There is no need to persuade me. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-guided-word-order-contrast-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 82e03918ffe873c3aa4cfcdb593aa6bd40ff8b139474b14202c10d695734d59e
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u24-g-word-order-contrast-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-word-order-contrast
+
+### STEP `u24-st-teach-word-order-contrast-2`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b0cc5761f39f301df9136725f618358925fb88961f3995d6aca9a28820ece963
+
+kind=TEACH
+title=Admitted instruction
+body=alternative word order can change the meaning entirely
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-rem-word-order-contrast`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fbe14497e1fa0b2a93a0f5522def3e23904c9228e2dfb1e7308857c9c64d72a
+
+kind=REMEDIATE
+title=Remediation
+body=alternative word order can change the meaning entirely
+dominantAction=Continue
+references=
+items=
+examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-check-word-order-contrast`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ae6f0ca8c63cf624830bd65d9583e16c5752930de26144592a71ff7d9162cb0e
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u24-i-word-order-contrast-1,u24-i-word-order-contrast-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-word-order-contrast
+
 ### SESSION `u24-s-book`
 
 - Objectives: obj-u24-book
@@ -1055,9 +1199,9 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 64070bf788c4f9fd0db42c8c798e14e41d38a3dcdf443651599d8109d0d23d6e
+- Content hash: 900428d0bc666ae42c9eedc93172814c4d1fb394a83d2db9376d486ff0eaf019
 
-title=Placement contrasts stay in the copy you own
+title=Scope-sensitive placement stays in the copy you own
 estimatedMinutes=4
 objectives=obj-u24-placement
 steps=u24-st-gap-placement
@@ -1070,16 +1214,16 @@ steps=u24-st-gap-placement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4eee50fc7c9c3c7c1d1b82f27472eef6a7053fc712fdd47b6ac70615044ecadf
+- Content hash: d694661c3b045402036ad6d965d97917e0879553bbc3b5fba11a0ca6406a8f3c
 
 kind=UNAVAILABLE
-title=Placement contrasts stay in the copy you own
-body=Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.
+title=Scope-sensitive placement stays in the copy you own
+body=Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=
-unavailableReason=Placement contrasts have no admitted frozen span.
+unavailableReason=Scope-sensitive placement has no admitted frozen span.
 bookDirection=
 companionDirection=
 remediationStepId=
@@ -1339,6 +1483,40 @@ note=не
 objectiveId=obj-u24-concord
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u24-word-order-contrast-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1977c96a6f81f19e85f1424707bbf932094af386061c506763a6442b6bac99ce
+
+kind=LEXICAL
+letterId=
+display=Не надо меня уговаривать.
+note=One should not persuade me
+objectiveId=obj-u24-word-order-contrast
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u24-word-order-contrast-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f776078b7390e75856fb631e49b443b48e0624be645ee85face9ffd0397e06d6
+
+kind=LEXICAL
+letterId=
+display=Меня не надо уговаривать.
+note=There is no need to persuade me
+objectiveId=obj-u24-word-order-contrast
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u24-g-verbal-ne-0`
 
 - Objectives: obj-u24-verbal-ne
@@ -1513,6 +1691,41 @@ contrastMembers=не | ни- | никому
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
 responseKind=RUSSIAN_TOKEN
+
+### GUIDED_PRACTICE `u24-g-word-order-contrast-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 85ac651ec89de3aa41c180c09c617b898231555fd16bd21d993aa7cee01df2e2
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English meaning matches the shown sentence?
+promptLetter=Не надо меня уговаривать.
+options=One should not persuade me | There is no need to persuade me
+answer=One should not persuade me
+feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+objectiveId=obj-u24-word-order-contrast
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+testedFeature=WORD_ORDER_NEVER
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-word-order-contrast-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u24-word-order-contrast-0-en
+distractorSourceIds= | prov-ex-u24-word-order-contrast-1-en
+distractorDifference= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+contrastMembers=One should not persuade me | There is no need to persuade me
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u24-i-verbal-ne-1`
 
@@ -1864,19 +2077,89 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-1 | prov-u24-concord-x-0
 responseKind=RUSSIAN_TOKEN
 
+### INDEPENDENT_CHECK `u24-i-word-order-contrast-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 6dbc89057af1c60b00955e00341e4fcf06e08b48722a23b90eaa39e45cb49b90
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English meaning matches the shown sentence?
+promptLetter=Меня не надо уговаривать.
+options=There is no need to persuade me | One should not persuade me
+answer=There is no need to persuade me
+feedback=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+objectiveId=obj-u24-word-order-contrast
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+testedFeature=WORD_ORDER_ANYWAY
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-word-order-contrast-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-word-order-contrast-1-en
+distractorSourceIds= | prov-ex-u24-word-order-contrast-0-en
+distractorDifference= | The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+contrastMembers=There is no need to persuade me | One should not persuade me
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-word-order-contrast-1-ru | prov-ex-u24-word-order-contrast-1-en | prov-ex-u24-word-order-contrast-0-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u24-i-word-order-contrast-2`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c596b700458ee43501a8395633b40eedea3fff5d630aee2553d2021b6202f9e5
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English meaning matches the shown sentence?
+promptLetter=Не надо меня уговаривать.
+options=One should not persuade me | There is no need to persuade me
+answer=One should not persuade me
+feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+objectiveId=obj-u24-word-order-contrast
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+testedFeature=WORD_ORDER_NEVER_AGAIN
+evidenceMode=EXPLICIT_SOURCE_PAIR
+contrastSetId=u24-word-order-contrast-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-word-order-contrast-0-en
+distractorSourceIds= | prov-ex-u24-word-order-contrast-1-en
+distractorDifference= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+contrastMembers=One should not persuade me | There is no need to persuade me
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-book, u24-s-gap-placement
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-book, u24-s-gap-placement
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 60a8dc7bfd629ef6752636caa33ce77c1fcfc424ba3cc10fe5e54bde274882d1
+- Content hash: 4ced1e363877354f10835a9af03b23e4ee1cf827ea505796d22388e0042f0ac6
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period and a general nickname-formation rule are not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -3328,6 +3611,134 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u24-word-order-contrast-0-en`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c5885191d0be97f35fa8b5aa6e7fef6669530d6f56c66c70ecc8e06657b0a648
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=One should not persuade me
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-word-order-contrast-0-ru`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: bb2b65830b546839367430abc8e61616b6391cd3c34f93db1168149d2f1aeb8c
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=Не надо меня уговаривать.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=c8de239c5299690d8a28e03341487cae5ca0822c0d59bae6e9e47f97f1e0cf44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-word-order-contrast-1-en`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ff6a7d29521f29c3dea7ca9fa03fce20343da231145cab17c354513eba082a17
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=There is no need to persuade me
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=1f5a9e0426f3d84525148342b005283bab8db1c80740ce9a80af4b2e2f7565fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-word-order-contrast-1-ru`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 717b657da259bb0827bf03de6065531d1eeca846935304854a5a71c857ed027a
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=Меня не надо уговаривать.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=453eb5f26733dbc64de2fc66f2b3eadfd4ea6a2f9195a280f5187f59bf90c3a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u24-absence-rem`
 
 - Objectives: obj-u24-absence
@@ -4238,6 +4649,134 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u24-word-order-contrast-rem`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a2376e7e9072aad767a7fba212a9abea16fad0f4489f9cc02860ff5584ed89ee
+
+recordType=instruction
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=alternative word order can change the meaning entirely
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=4123ca321d34197e90d567eb9bba84842ed9d86256aad9bfdfd442266b9e9716
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-word-order-contrast-x-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 118a524edf9928613a652df225f15741ad4086b3d6444ba3e4f1c73e4f2f00fa
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=alternative word order can change the meaning entirely
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=4123ca321d34197e90d567eb9bba84842ed9d86256aad9bfdfd442266b9e9716
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-word-order-contrast-x-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d55cf4338fe2a8356c06a079bae45dd25a3e8cdbc9d87a5b0207a009a7ca3e8f
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=as I would never agree to do something
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=feebc218476b03532944cc4103d32383b4eede56aa007fa2b489c7ecbd918545
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-word-order-contrast-x-2`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f5e88460793ce7718c5d2b5d833a713d4eede45b45a127df4caa5c9328656ca
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=as I will do it anyway
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=1619288ce6fa27e582f57d4c8a1bf6a68012d0aead902751ddc9702a91386294
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### AUTHORED_ENGLISH `en-u24-125`
 
 - Objectives: none
@@ -4805,10 +5344,10 @@ text=Which predicate particle does negative concord require?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 427c678d06884f6d96b48b3b2676877e1357446623698e6f66390195ec10a83b
+- Content hash: f9f1b1d9f78ef40462ec239d150566809a3205eef0524535d1b517950d6f30b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=Which English meaning matches the shown sentence?
 
 ### AUTHORED_ENGLISH `en-u24-169`
 
@@ -4818,10 +5357,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 310e7392f5aafa8cf2426cef678f13ddb3712f1b262c1213c431015a883bbf0f
+- Content hash: 15305accf5f944eda634cb9c2db6b17632ec2143dabaee66dddb0b3e7287bae4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.
+text=Admitted negation lines
 
 ### AUTHORED_ENGLISH `en-u24-170`
 
@@ -4831,10 +5370,10 @@ text=Proposed Unit 24 uses the frozen genitive and accusative compare, the froze
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c9086d894a6c5e28a7c99d59912923f52e40a031c1d1099e3e1120e5df6b39b1
+- Content hash: 4f121bcfab855174174a3c27048a5e0936ade84c17780ffac16dfb82b9c168bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u24-171`
 
@@ -4844,10 +5383,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: af001986ca0262fc0bf8053544a1205b461e4a9e5ecb1fc3c2241680c081e660
+- Content hash: f4a70491a30ef041f6c2a4f3d2e5483ca6e04037a2c4305b5e08a3e26c5a1eed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u24-172`
 
@@ -4857,10 +5396,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c082f7bfba3bb9604935ff0d6e2220cab050ce5426c2b561a90d57d83f922e7c
+- Content hash: 5e67ef0c6ce564f6a4678364c7ea8c726a82c600b8edf62874067f4ff6d2164f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u24-173`
 
@@ -4870,10 +5409,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 90fd391031c504fc2266e85dbb7555601aaa43586d0aae4bdc8e2f91d6ade675
+- Content hash: 65179dac4fdd439f2e37a43212bcd5af196a1856147bcf0da8bfe3343e4cae65
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u24-174`
 
@@ -4883,10 +5422,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d6e602765bc5128abaa0e2218f8ddd196f131943eaa662c2eb4f2ca3173fc84
+- Content hash: 60c0121102b9f03e902f8124d1416f040eb6b99e91daabf202e72efc8373593f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u24-175`
 
@@ -4896,10 +5435,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 87105bdd1a1596501bdb959dc9d4d8c2fa1b6187fe44edea05a26de475ff86cf
+- Content hash: 4bf03bad5a2202a7fe56aa5c87ba290f00e6c6ee58dc06bb86c7318273a7f5a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u24-176`
 
@@ -4909,10 +5448,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8404d271a1c74e8e860d37af05d79fa8dca53bbc37ffc7de0ecc5f0a5c3274b0
+- Content hash: 64eb1616daa556f78290d507aa5e400f4ea59d07c5fbe1392d0621ceeeeb824b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u24-177`
 
@@ -4922,10 +5461,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2d639e1c5b73f81cc79c62bde7b6b9a4a1b2dc9c96b80eda746e9782ac9922c3
+- Content hash: 7d2a75e55de34215facbe98c1e16c8b88e44ca385aa3d924536431d8196abffd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 24 in your copy
 
 ### AUTHORED_ENGLISH `en-u24-178`
 
@@ -4935,10 +5474,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2862ee0ad0284b0f81f68f67a6f4ff1c190f6ef4e2e94f034deb29ec9450f17d
+- Content hash: b21a025198c74e7284f0bae086f6fb89ab73cff089c8dbba1ebe12db513a1702
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u24-179`
 
@@ -4948,10 +5487,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c250c9db4c152084d4ffb397563d66b3542bf60053c26cc7f12ae85ff1608bd
+- Content hash: 5b5f352f18c02023fb20cc2c7d017301138998d4d527766ef97fd6e23df2693e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=Open Lesson 24 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u24-180`
 
@@ -4961,10 +5500,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fe57d663cbc234309380e2cec619b916b63321de0abb91dea8d7bef380320d8b
+- Content hash: 3f0a64845bde6f45c987b9abc52d51918f53c7bc9c821356367617c864e30fb6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 24 book work
 
 ### AUTHORED_ENGLISH `en-u24-181`
 
@@ -4974,10 +5513,10 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a62ee7ade47e8213ee07d876c62ab16eb37c345824c76590eecdd507d133fe2
+- Content hash: 12b252136e7f7eb5bc9521133cd36f1f3a761a6efe7422dd34d8dee0f30da3dd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 24 work in your copy.
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u24-182`
 
@@ -4987,10 +5526,10 @@ text=Self-attest only after the Lesson 24 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: df1a9fc121ac1cd3df34ae57c71819f5b63c4c0d440abc6acc3774dd4ffccd3a
+- Content hash: 0a6c4e7cfa3e4bb147ab080a67415a28eed34f156a7b94f3f9b74ec2dc6ca0c2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own
+text=Self-attest only after the Lesson 24 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u24-183`
 
@@ -5000,10 +5539,23 @@ text=Placement contrasts stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 056c5a8ef3be3f905eefcaf06f75094a0eda78ba32ef9aeb246d59bdbb6d5262
+- Content hash: 3a5e2b82af484dc549d7cae7aaf2988440b5f744d47001f5ba1ea209adba4482
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.
+text=Scope-sensitive placement stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u24-184`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3fa7fce18775f35836b3690ee7821d8579c2cf228a0928e3f346e5a98573366
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -5177,6 +5729,15 @@ permitsAppUse=true
 - `obj-u24-concord` CHECK `u24-i-concord-1`
 - `obj-u24-concord` CHECK `u24-i-concord-2`
 - `obj-u24-concord` REMEDIATION `u24-st-rem-concord`
+- `obj-u24-word-order-contrast` INSTRUCTION `u24-st-orient`
+- `obj-u24-word-order-contrast` INSTRUCTION `u24-st-teach-word-order-contrast-1`
+- `obj-u24-word-order-contrast` INSTRUCTION `u24-st-teach-word-order-contrast-2`
+- `obj-u24-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-0`
+- `obj-u24-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-1`
+- `obj-u24-word-order-contrast` PRACTICE `u24-st-guided-word-order-contrast-1`
+- `obj-u24-word-order-contrast` CHECK `u24-i-word-order-contrast-1`
+- `obj-u24-word-order-contrast` CHECK `u24-i-word-order-contrast-2`
+- `obj-u24-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
 - `obj-u24-book` INSTRUCTION `u24-st-book-work`
 - `obj-u24-book` INSTRUCTION `u24-st-book`
 - `obj-u24-placement` INSTRUCTION `u24-st-gap-placement`
@@ -5185,6 +5746,7 @@ permitsAppUse=true
 - `u24-s-orient` OBJECTIVE `obj-u24-alternation`
 - `u24-s-orient` OBJECTIVE `obj-u24-stand-ins`
 - `u24-s-orient` OBJECTIVE `obj-u24-concord`
+- `u24-s-orient` OBJECTIVE `obj-u24-word-order-contrast`
 - `u24-s-orient` OBJECTIVE `obj-u24-book`
 - `u24-st-orient` REFERENCE `ref-u2125-attribution`
 - `u24-s-verbal-ne` OBJECTIVE `obj-u24-verbal-ne`
@@ -5256,6 +5818,18 @@ permitsAppUse=true
 - `u24-st-check-concord` REMEDIATION `u24-st-rem-concord`
 - `u24-st-check-concord` ITEM `u24-i-concord-1`
 - `u24-st-check-concord` ITEM `u24-i-concord-2`
+- `u24-s-word-order-contrast` OBJECTIVE `obj-u24-word-order-contrast`
+- `u24-st-teach-word-order-contrast-1` EXAMPLE `ex-u24-word-order-contrast-0`
+- `u24-st-teach-word-order-contrast-1` EXAMPLE `ex-u24-word-order-contrast-1`
+- `u24-st-teach-word-order-contrast-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-word-order-contrast-1` REMEDIATION `u24-st-rem-word-order-contrast`
+- `u24-st-guided-word-order-contrast-1` ITEM `u24-g-word-order-contrast-0`
+- `u24-st-teach-word-order-contrast-2` REFERENCE `ref-u2125-attribution`
+- `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-0`
+- `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-1`
+- `u24-st-check-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
+- `u24-st-check-word-order-contrast` ITEM `u24-i-word-order-contrast-1`
+- `u24-st-check-word-order-contrast` ITEM `u24-i-word-order-contrast-2`
 - `u24-s-book` OBJECTIVE `obj-u24-book`
 - `u24-st-book-work` REFERENCE `ref-u2125-attribution`
 - `u24-s-gap-placement` OBJECTIVE `obj-u24-placement`
@@ -5294,6 +5868,10 @@ permitsAppUse=true
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-3-ru`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-4-en`
 - `obj-u24-verbal-ne` PROVENANCE `prov-ex-u24-verbal-ne-4-ru`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ex-u24-word-order-contrast-0-en`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ex-u24-word-order-contrast-0-ru`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ex-u24-word-order-contrast-1-en`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ex-u24-word-order-contrast-1-ru`
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-rem`
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-rem-r0`
 - `obj-u24-absence` PROVENANCE `prov-u24-absence-x-0`
@@ -5315,6 +5893,10 @@ permitsAppUse=true
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-rem-r0`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-x-0`
 - `obj-u24-verbal-ne` PROVENANCE `prov-u24-verbal-ne-x-1`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-word-order-contrast-rem`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-word-order-contrast-x-0`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-word-order-contrast-x-1`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-word-order-contrast-x-2`
 
 ## Book-directed experiences
 
