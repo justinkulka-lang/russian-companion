@@ -729,11 +729,7 @@ internal object V2Validator {
                 unit,
                 "Unit 22 is not content-complete without admitted declined-numeral, both, one-and-a-half, and collective source capabilities",
             )
-            23 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 23 is not content-complete without an admitted elapsed-time and duration source capability",
-            )
+            23 -> unit23SourceGap(pack, unit)
             24 -> missingCapabilityError(
                 pack,
                 unit,
@@ -839,6 +835,7 @@ internal object V2Validator {
         ),
         23 to listOf(
             RequiredSourceCapability("obj-u23-duration", "elapsed-time-duration"),
+            RequiredSourceCapability("obj-u23-completion", "completion-over-period"),
         ),
         24 to listOf(
             RequiredSourceCapability("obj-u24-alternation", "negation-alternation"),
@@ -901,6 +898,11 @@ internal object V2Validator {
             } else {
                 emptyList()
             }
+            23 -> if ("completion-over-period" in unresolved) {
+                listOf("Unit 23 is missing a completion-over-period source capability")
+            } else {
+                emptyList()
+            }
             else -> emptyList()
         }
     }
@@ -949,6 +951,28 @@ internal object V2Validator {
             else -> missing.dropLast(1).joinToString(", ") + ", and " + missing.last()
         }
         return listOf("Unit ${unit.number} is not content-complete without admitted $listed source capabilities")
+    }
+
+    /**
+     * Duration and completion over a period are separate claims. A resolved
+     * duration span must not be reported as the missing completion distinction.
+     */
+    private fun unit23SourceGap(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val missing = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty().filter { requirement ->
+            pack.sourceCapabilities.none { capability ->
+                capability.unitNumber == unit.number &&
+                    capability.objectiveId == requirement.objectiveId &&
+                    capability.supportedClaim == requirement.claim &&
+                    capabilityDefects(pack, capability).isEmpty()
+            }
+        }.map { it.claim }
+        if (missing.isEmpty()) return emptyList()
+        val listed = when (missing.size) {
+            1 -> "an admitted ${missing[0]}"
+            else -> "admitted ${missing.joinToString(" and ")}"
+        }
+        val noun = if (missing.size == 1) "source capability" else "source capabilities"
+        return listOf("Unit 23 is not content-complete without $listed $noun")
     }
 
     private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
@@ -1708,6 +1732,7 @@ internal object V2Validator {
             "negative-pronoun" -> BatchBSources.ADMITTED_NEGATIVE_PRONOUN
             "register" -> BatchBSources.ADMITTED_REGISTER
             "elapsed-time-duration" -> BatchBSources.ADMITTED_ELAPSED_TIME
+            "completion-over-period" -> BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD
             "negation-scope" -> BatchBSources.ADMITTED_NEGATION_SCOPE
             "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
             else -> return emptyList()
@@ -1742,6 +1767,24 @@ internal object V2Validator {
         }
         if (capability.supportedClaim == "elapsed-time-duration" && !span.contains("emphasizes the duration")) {
             errors += "Source capability ${capability.id} partial duration evidence does not clear elapsed-time-duration"
+        }
+        if (capability.supportedClaim == "completion-over-period" && span.contains("emphasizes the duration")) {
+            errors += "Source capability ${capability.id} duration evidence does not clear completion-over-period"
+        }
+        if (capability.supportedClaim == "completion-over-period" && (
+                span in BatchBSources.BOUNDED_TIME_SPANS ||
+                    span.contains("in a certain decade") ||
+                    span.contains("during another event") ||
+                    span.contains("relate events in time")
+                )
+        ) {
+            errors += "Source capability ${capability.id} ago, during, or range evidence does not clear completion-over-period"
+        }
+        if (capability.supportedClaim == "completion-over-period" &&
+            !BatchBSources.admits(capability, BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD, "completion-over-period") &&
+            (span.contains("completion") || span.contains("co-occur"))
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear completion-over-period"
         }
         if (
             capability.supportedClaim == "imperfective-verbal-adverb" && !span.contains("usually present") ||

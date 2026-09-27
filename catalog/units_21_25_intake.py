@@ -417,7 +417,9 @@ def build_units_21_25() -> dict:
     prepared = [
         _unit(builder, 21, "Admitted object and purpose lines", "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.", 2, populate, []),
         _unit(builder, 22, "Admitted numeral forms", "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.", 4, populate, []),
-        _unit(builder, 23, "Admitted time expressions", "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Qualified review is pending.", 10, populate, []),
+        _unit(builder, 23, "Admitted time expressions", "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.", 10, populate, [
+            ("completion", "Completion over a period stays in the copy you own", "Completion over a period stays in the copy you own. A duration span does not state that distinction.", "Completion over a period has no admitted frozen span."),
+        ]),
         _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, and the frozen concord rule. Placement contrasts stay in the copy you own. Qualified review is pending.", 4, populate, [
             ("placement", "Placement contrasts stay in the copy you own", "Placement contrasts stay in the copy you own. Negative concord does not state a scope or placement contrast.", "Placement contrasts have no admitted frozen span."),
         ]),
@@ -515,7 +517,7 @@ def _attribution_reference() -> dict:
             "Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. "
             "The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. "
             "Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. "
-            "Placement contrasts and a general nickname-formation rule are not prepared. Review is pending."
+            "Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending."
         ),
         "introducedInUnit": 21,
         "sourceId": WIKIBOOKS_ID,

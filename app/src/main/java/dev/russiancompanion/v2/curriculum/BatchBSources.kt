@@ -254,6 +254,7 @@ internal object BatchBSources {
             governedClaim = "elapsed-time-duration",
         ),
     )
+    val ADMITTED_COMPLETION_OVER_PERIOD: Set<GovernedSourceAdmission> = emptySet()
     val ADMITTED_NEGATION_SCOPE: Set<GovernedSourceAdmission> = emptySet()
     val ADMITTED_PRODUCTIVE_DIMINUTIVE: Set<GovernedSourceAdmission> = emptySet()
 
