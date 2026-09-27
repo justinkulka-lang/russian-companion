@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 23 remains in development. Its readiness is content-complete and review-pending. The Lesson 23 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 23 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 23 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 94b6647abd51848ec8208a52d08ce57c5ff4790a
-- Unit content-review SHA-256: b88a146ac61922e3e3d58fd7a1ae5bf8c0d0e05b290dda0b6d3d167484073314
+- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
+- Unit content-review SHA-256: 58cdb9d2676bbba7dfb35eb4487f2ed7594f88c96861d1c8804c81d9b3b9f437
 - Mapping-package SHA-256: d770e8ae0d705b5570604cc71b16049fdd260e35761e7a50159dcf5a8e1fa591
-- Pack content-review SHA-256: 02fcae8d023970ce7abfaa6cbc94feaa358bbfa0fef2ac2f645fb5b454ce8a46
-- Review-package SHA-256: b434b610a0451646646e226de4e99a9973759ea555ad9ae2934ae2916fa215aa
-- Repository source SHA-256: e5a04c23be99fb1434f457ad7241d0e7835cf71b98f06f385e74ce188a2ded1f
+- Pack content-review SHA-256: 4791d5aa7a2ce44698c144c00ff68408ae8544739b6f9145b3104cd878cc7295
+- Review-package SHA-256: 0376ac38ee664edeed46cee80ca3d41b5dd2d7e34b935516f9358857c59acc5f
+- Repository source SHA-256: a7841066508d125da89357ee80ac7e3a099491ed254fd9f12e0d0252e2f72bbe
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=23
 title=Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
-topicSummary=Proposed Unit 23 is in development. Admitted Diverse Russian time-expression spans await qualified review. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
 prerequisites=22
-estimatedMinutes=78
+estimatedMinutes=82
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 23.
 
 ### UNIT `unit-23`
 
-- Objectives: obj-u23-ranges, obj-u23-beginning, obj-u23-during-event, obj-u23-duration, obj-u23-elapsed, obj-u23-book
-- Sessions: u23-s-orient, u23-s-ranges, u23-s-beginning, u23-s-during-event, u23-s-duration, u23-s-elapsed, u23-s-book
+- Objectives: obj-u23-ranges, obj-u23-beginning, obj-u23-during-event, obj-u23-duration, obj-u23-elapsed, obj-u23-book, obj-u23-completion
+- Sessions: u23-s-orient, u23-s-ranges, u23-s-beginning, u23-s-during-event, u23-s-duration, u23-s-elapsed, u23-s-book, u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2fcc64ff7787d95e1b586eaf33b87c0dfbe7d12305b1d8a6934edc6e055ee71f
+- Content hash: 0eaa963a8e4a355b705d8e26bea5840baff9e4b12e314b4e12db7f184836b9cc
 
 number=23
 title=Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period
-topicSummary=Proposed Unit 23 is in development. Admitted Diverse Russian time-expression spans await qualified review. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 23 is in development and is not prepared. Admitted time-expression spans await qualified review. Completion over a period has no admitted frozen span. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=CONTENT_COMPLETE_REVIEW_PENDING
+readiness=NOT_PREPARED
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 23, printed pages 285-295. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=23
 prerequisites=22
-estimatedMinutes=78
+estimatedMinutes=82
 
 ### ADVANCEMENT `unit-23-advancement`
 
@@ -219,6 +219,25 @@ practice=
 checks=
 remediation=
 
+### OBJECTIVE `obj-u23-completion`
+
+- Objectives: obj-u23-completion
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f3c25720502e6bd70fe3d30b664168aa0a82ba7fb2c917bc5d8c74f199eb1bb2
+
+title=Completion over a period stays in the copy you own
+kind=GUIDANCE
+unitNumber=23
+instruction=u23-st-gap-completion
+examples=
+practice=
+checks=
+remediation=
+
 ### SESSION `u23-s-orient`
 
 - Objectives: obj-u23-ranges, obj-u23-beginning, obj-u23-during-event, obj-u23-duration, obj-u23-elapsed, obj-u23-book
@@ -242,11 +261,11 @@ steps=u23-st-orient
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aafeee79b3f1faf5b7c7d9c70f4a70a65ff9cc388e6cf8ea777252ad963b25da
+- Content hash: 81882d90afb46815637dd79570db3dfd59a7a7f60af8cfe2ed72e654f565a79f
 
 kind=ORIENT
 title=Admitted time expressions
-body=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Qualified review is pending.
+body=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -981,6 +1000,43 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 23 work in your copy.
+companionDirection=
+remediationStepId=
+
+### SESSION `u23-s-gap-completion`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5bf156e94dc91cef88d910f2a9565ef7d2513f1c602724e81a804c108102c363
+
+title=Completion over a period stays in the copy you own
+estimatedMinutes=4
+objectives=obj-u23-completion
+steps=u23-st-gap-completion
+
+### STEP `u23-st-gap-completion`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5729fc2684322a8faf4e739b0c1e6da88d72c37dc9692ce03898a819bc155a0b
+
+kind=UNAVAILABLE
+title=Completion over a period stays in the copy you own
+body=Completion over a period stays in the copy you own. A duration span does not state that distinction.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=Completion over a period has no admitted frozen span.
+bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1733,16 +1789,16 @@ responseKind=ENGLISH_CLASSIFICATION
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u23-s-orient, u23-s-ranges, u23-s-beginning, u23-s-during-event, u23-s-duration, u23-s-elapsed, u23-s-book
+- Sessions: u23-s-orient, u23-s-ranges, u23-s-beginning, u23-s-during-event, u23-s-duration, u23-s-elapsed, u23-s-book, u23-s-gap-completion
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: eca3dd1fe7200a8d520924b2e945bb712c36bd3abc3b39a22c3314cf5476226d
+- Content hash: b05cb36b75ed8631fe3e0aa33726d79a5778cc9fc5baf55702a0528070d1efa4
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Placement contrasts and a general nickname-formation rule are not prepared. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -3387,10 +3443,10 @@ text=Admitted time expressions
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 597dd849c4f99852a7e56dfdb82bab6c723c6e4ed34507d8c7e6fef17dd7832e
+- Content hash: 1f68984b2e6b1bcc5e1b336da52c05b4653d683522f5f2e6a5ca68a62b9537af
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Qualified review is pending.
+text=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u23-111`
 
@@ -3548,6 +3604,32 @@ text=When you have done Lesson 23 in your copy, self-attest here. Attestation re
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Self-attest only after the Lesson 23 work in your copy.
 
+### AUTHORED_ENGLISH `en-u23-123`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8981fc15cfe0326c95103b17bd2614e526138c77c87c769667cc83d7b9f554c2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Completion over a period stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u23-124`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 940c505140b41ad78d76e4b3b2f18f4b20cfb1d42f081cdbb366445088f9f5cc
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Completion over a period stays in the copy you own. A duration span does not state that distinction.
+
 ### SOURCE `src-pressbooks-diverse-russian-usa-grammar`
 
 - Objectives: none
@@ -3689,6 +3771,7 @@ permitsAppUse=true
 - `obj-u23-elapsed` REMEDIATION `u23-st-rem-elapsed`
 - `obj-u23-book` INSTRUCTION `u23-st-book-work`
 - `obj-u23-book` INSTRUCTION `u23-st-book`
+- `obj-u23-completion` INSTRUCTION `u23-st-gap-completion`
 - `u23-s-orient` OBJECTIVE `obj-u23-ranges`
 - `u23-s-orient` OBJECTIVE `obj-u23-beginning`
 - `u23-s-orient` OBJECTIVE `obj-u23-during-event`
@@ -3763,6 +3846,8 @@ permitsAppUse=true
 - `u23-st-check-elapsed` ITEM `u23-i-elapsed-2`
 - `u23-s-book` OBJECTIVE `obj-u23-book`
 - `u23-st-book-work` REFERENCE `ref-u2125-attribution`
+- `u23-s-gap-completion` OBJECTIVE `obj-u23-completion`
+- `u23-st-gap-completion` REFERENCE `ref-u2125-attribution`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-en`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-ru`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-1-en`
@@ -3808,8 +3893,7 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-None.
-
+- `u23-st-gap-completion`
 
 ## Unresolved relationships
 
