@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
-- Unit content-review SHA-256: 373a8962e527037b0f866144956c5e0ddd4537bbc0ecde1a4d36aa78536d7353
+- Curriculum source commit: 5ef523817d11cb18d7b08809dc866d7c8e8ffaa0
+- Unit content-review SHA-256: 36aa02dfe1cffa444c9b77a7e8e0e3714c4428a4790c96c912251db9e1b8b27b
 - Mapping-package SHA-256: b7e8887a95cac43580e879e588f7ecd3846a7b71fd1cd232d302df207d65defb
-- Pack content-review SHA-256: 4791d5aa7a2ce44698c144c00ff68408ae8544739b6f9145b3104cd878cc7295
-- Review-package SHA-256: 0ba8b00c13852d6070c85384a7741e63f3f58be63dc8ae88caccd0b4f8060439
-- Repository source SHA-256: a7841066508d125da89357ee80ac7e3a099491ed254fd9f12e0d0252e2f72bbe
+- Pack content-review SHA-256: 90291d30f2c2a020099ba2b5cb332f6d5471574b197af3a0e293587c144e469d
+- Review-package SHA-256: 310680e0cbef0a30dda1b7cfa46bc835d69b6c0297b7a68e9320408123004ff3
+- Repository source SHA-256: 0fefdc4600111051319a3faa03733f423ab39d90c043b3b668c79be02aa41e01
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1245,11 +1245,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: a62a0a1df345d6f3820b514b3d2e50fdb631d658f90b4694b631fefb441417ed
+- Content hash: 3e6c011b47369e92ac0b86582e12aee70f28acfc92e7e3d7aafbbacdeea4080e
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period and a general nickname-formation rule are not prepared. The Unit 24 word-order pair is the frozen contrast on English Wikipedia Russian grammar oldid 1369617627 and does not state a general movement rule. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
