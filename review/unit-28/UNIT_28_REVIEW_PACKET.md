@@ -11,12 +11,12 @@ Unit 28 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 54cbb80fc752aa4b60ef68e612aa829c4a60b6ed
-- Unit content-review SHA-256: b85eb46d493ac6854f41a93051c16c50346d505fb0bb80194f9c63ab819a60f1
+- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
+- Unit content-review SHA-256: 60ff063bf0b707d0bda2688853a7e14560a77a43baecd55a31ed31c376254d7c
 - Mapping-package SHA-256: bdf9618b16d9a96d9d359a01e7901617c7d8b97bcd601768695131da126497aa
-- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
-- Review-package SHA-256: 2394491ee1f14f38f0c1c161b319d8dda0d6ac0e463afb64a8b1e5f62787bf44
-- Repository source SHA-256: 9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3
+- Pack content-review SHA-256: 4791d5aa7a2ce44698c144c00ff68408ae8544739b6f9145b3104cd878cc7295
+- Review-package SHA-256: 5d1b9d28de7e218c83d3f0862fecb82cfcdecaa904d79a756c0830cb136863b1
+- Repository source SHA-256: a7841066508d125da89357ee80ac7e3a099491ed254fd9f12e0d0252e2f72bbe
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6ba9a269c5512228eabd2a8fc4b436e8ff87a695057b8685194f4f33c569b85f
+- Content hash: e3ec65f50905b85d8780b28a98d28ecdca293ea098b189ef44a6a25598b2b93b
 
-title=Choose the admitted gloss for the shown imperfective adverbial form
+title=Choose the time relationship the source states for imperfective adverbial forms
 kind=RECOGNITION
 unitNumber=28
 instruction=u28-st-orient,u28-st-teach-imperfective-adverb-1,u28-st-teach-imperfective-adverb-2
@@ -132,9 +132,9 @@ remediation=u28-st-rem-imperfective-adverb
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c2814b1a5cc645dc7b00b69f4a3e29333c21cc244624f3db2052775372afe595
+- Content hash: 136c1112620851d2ae8b670135812e6c7d7a80592bedfb9b85ad6688d4d370a8
 
-title=Choose the admitted gloss for the shown perfective adverbial form
+title=Choose the time relationship the source states for perfective adverbial forms
 kind=RECOGNITION
 unitNumber=28
 instruction=u28-st-orient,u28-st-teach-perfective-adverb-1,u28-st-teach-perfective-adverb-2,u28-st-teach-perfective-adverb-3
@@ -226,9 +226,9 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7b630bdc933d5b13937bb22b18a11daea478a5f0411b3c0f7b177774547526c0
+- Content hash: f587201c25ee26d8387582dd44c47a1f9bcabd02ceb0ee95a3d52d52802e3f5c
 
-title=Choose the admitted gloss for the shown imperfective adverbial form
+title=Choose the time relationship the source states for imperfective adverbial forms
 estimatedMinutes=12
 objectives=obj-u28-imperfective-adverb
 steps=u28-st-teach-imperfective-adverb-1,u28-st-guided-imperfective-adverb-1,u28-st-teach-imperfective-adverb-2,u28-st-rem-imperfective-adverb,u28-st-check-imperfective-adverb
@@ -285,11 +285,11 @@ remediationStepId=u28-st-rem-imperfective-adverb
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 63042c0c7d57cc2320e7c5ec7b1d5b7ee56ae70f47e7f87b76e4b05a7a4a54e7
+- Content hash: 5057594f978eb00fd4d67ecfca469d4138bb032713e188263c7aedb5479f37de
 
 kind=TEACH
 title=Admitted instruction
-body=Present adverbial participles are formed by adding the suffix -а/-я
+body=imperfective ones are usually present, while perfective ones can only be past
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -307,11 +307,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f6e285b457c090d4d871809eb86c2347c797dc1b42e3158ce34aa9f491d28f61
+- Content hash: d01c5db1f8debcccb80221c7a4d1f3f57b08c50ed46836669415693ffca3ab36
 
 kind=REMEDIATE
 title=Remediation
-body=Present adverbial participles are formed by adding the suffix -а/-я
+body=imperfective ones are usually present, while perfective ones can only be past
 dominantAction=Continue
 references=
 items=
@@ -351,9 +351,9 @@ remediationStepId=u28-st-rem-imperfective-adverb
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f8e6ddcbaa23cdbfe39b6f6df1d30398f96adfb496e8481b7aa1712b851f921a
+- Content hash: dd1b9437ce9a27a13a936efc45ad5bfbf47289459946ca4ed9c77fb4afff0994
 
-title=Choose the admitted gloss for the shown perfective adverbial form
+title=Choose the time relationship the source states for perfective adverbial forms
 estimatedMinutes=12
 objectives=obj-u28-perfective-adverb
 steps=u28-st-teach-perfective-adverb-1,u28-st-guided-perfective-adverb-1,u28-st-teach-perfective-adverb-2,u28-st-teach-perfective-adverb-3,u28-st-rem-perfective-adverb,u28-st-check-perfective-adverb
@@ -410,11 +410,11 @@ remediationStepId=u28-st-rem-perfective-adverb
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 66119d246d07fd419bba1f47e48a3dfb000e9c267c900a2d8cc017173387b4de
+- Content hash: 0d7fecaa597e24725ac139f2dd5be0a9927c5a4a94404a0cdb87568e64b7266b
 
 kind=TEACH
 title=Admitted instruction
-body=most are formed with the suffix -в
+body=usually present, while perfective ones can only be past
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -454,11 +454,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bf2d52129ee729da83a75713b97019da866a3d8998ac74d9512050e4896b0a0b
+- Content hash: ddc735200dafded268dbd8873fac4473bdac175c3633dbc2016eb529193c6225
 
 kind=REMEDIATE
 title=Remediation
-body=most are formed with the suffix -в
+body=usually present, while perfective ones can only be past
 dominantAction=Continue
 references=
 items=
@@ -594,12 +594,12 @@ remediationStepId=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fa8d866cd0501c66a0ba24720349912034ed995cca9a96c676ba186d0e08ebd0
+- Content hash: 0c428fb1b6983f283aa3a16913114b46ec231f302c67b7c401f84c4a4cac1a27
 
 kind=LEXICAL
 letterId=
 display=думая
-note=to think
+note=usually present
 objectiveId=obj-u28-imperfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -611,12 +611,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3e6acca561db07e9f3e0ea19d036ca87cd1e4166ab407ddd4d77c922c4ad7591
+- Content hash: 111fad10e9b11e67df59d71a5dfe5f384df9e4fe28fac1b2c4c5cc619c3486b9
 
 kind=LEXICAL
 letterId=
 display=учась
-note=to be learning
+note=usually present
 objectiveId=obj-u28-imperfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -628,12 +628,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65e98cc9fa51f53510bcbfcd42ff73f719db3c6504a40b317a62da68ec65b0dc
+- Content hash: bb7bc91afbdd35a53bd4d2b3539c2fe9c0eccd485f2f01d887fde6f63e636d79
 
 kind=LEXICAL
 letterId=
 display=сказав
-note=to say
+note=can only be past
 objectiveId=obj-u28-perfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -645,12 +645,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb93bbaf53785536f4ab300c4a0621e0628ef67c65fcd4d19b2e796f4c02f54c
+- Content hash: 9e3e7223aa834d675dbcc83a1a700f9c269086a5f435c2fb524e2ffd1cf28e50
 
 kind=LEXICAL
 letterId=
 display=научившись
-note=to learn
+note=can only be past
 objectiveId=obj-u28-perfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -662,12 +662,12 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c84dc7870a6b9b31cc7b81fd81458f115a3eab32dbd3ac1a3e6b56f389633a99
+- Content hash: 8780f26c955e3be01d25e66fe5b14cb0e5d21b40b952ea49380151131cd0aa34
 
 kind=LEXICAL
 letterId=
 display=войдя
-note=to enter
+note=can only be past
 objectiveId=obj-u28-perfective-adverb
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
@@ -679,31 +679,31 @@ reviewStatus=PENDING_QUALIFIED_REVIEW
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7cfe55ac5f489c913b3de8b0cd773400b4b1598fad5289716d8ea0903182ef61
+- Content hash: 594bd2fc203877152ad911149d467cb57f25665891736a1d683788ffbc42a583
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown form?
-promptLetter=думая
-options=to think | to be learning | to say
-answer=to think
-feedback=The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form. to think.
+prompt=Which English time relationship does the source state for imperfective forms?
+promptLetter=imperfective ones
+options=usually present | can only be past | very rarely past
+answer=usually present
+feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside a different form for to be learning. | The frozen table writes this label beside a completed form for to say.
+distractorRationales= | The source assigns can only be past to perfective ones. | The source uses very rarely past for a different construction.
 testedFeature=IMPERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-imperfective-adverb-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u28-imperfective-adverb-0-en
-distractorSourceIds= | prov-ex-u28-imperfective-adverb-1-en | prov-u28-imperfective-adverb-x-0
-distractorDifference= | This label is paired with the learning form (to be learning). | This label is paired with a different row (to say).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.
-contrastMembers=to think | to be learning | to say
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-imperfective-adverb-0-ru | prov-ex-u28-imperfective-adverb-0-en | prov-ex-u28-imperfective-adverb-1-en | prov-u28-imperfective-adverb-x-0
+distractorSourceIds= | prov-u28-imperfective-adverb-x-1 | prov-u28-imperfective-adverb-x-2
+distractorDifference= | This relationship is the one stated for perfective ones (can only be past). | This phrase is a different construction in the same span (very rarely past).
+whyAnswerDemonstratesObjective=The source says imperfective ones are usually present.
+contrastMembers=usually present | can only be past | very rarely past
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-imperfective-adverb-x-0 | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-1 | prov-u28-imperfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u28-g-perfective-adverb-0`
@@ -714,31 +714,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5ba5a925f2842c6e572e332d61e4ed9584dcac2f3270026c1eb5e314e5a1747a
+- Content hash: 0d7c2a67a362f8d5e6f04bdfdb447aa82598c9f988b9fefa4ce6348af3ec90d1
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown form?
-promptLetter=сказав
-options=to say | to learn | to enter
-answer=to say
-feedback=The frozen line says most are formed with the listed suffix. This label is written beside the shown form. to say.
+prompt=Which English time relationship does the source state for perfective forms?
+promptLetter=perfective ones
+options=can only be past | usually present | very rarely past
+answer=can only be past
+feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside a different form for to learn. | The frozen table writes this label beside a different form for to enter.
+distractorRationales= | The source assigns usually present to imperfective ones. | The source uses very rarely past for a different construction.
 testedFeature=PERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-perfective-adverb-0
-cueLanguage=ru
+cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u28-perfective-adverb-0-en
-distractorSourceIds= | prov-ex-u28-perfective-adverb-1-en | prov-ex-u28-perfective-adverb-2-en
-distractorDifference= | This label is paired with the learning form (to learn). | This label is paired with the entering form (to enter).
-whyAnswerDemonstratesObjective=The frozen line says most are formed with the listed suffix. This label is written beside the shown form.
-contrastMembers=to say | to learn | to enter
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-perfective-adverb-0-ru | prov-ex-u28-perfective-adverb-0-en | prov-ex-u28-perfective-adverb-1-en | prov-ex-u28-perfective-adverb-2-en
+distractorSourceIds= | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
+distractorDifference= | This relationship is the one stated for imperfective ones (usually present). | This phrase is a different construction in the same span (very rarely past).
+whyAnswerDemonstratesObjective=The source says perfective ones can only be past.
+contrastMembers=can only be past | usually present | very rarely past
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-perfective-adverb-x-0 | prov-ex-u28-perfective-adverb-0-en | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u28-i-imperfective-adverb-1`
@@ -749,31 +749,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b16fd4ec08bfacb03df54073cfb468248e4c852c2ef875b4ec432d0a97edcd8c
+- Content hash: 6a8c5dd01884d444e3a646151c800d31de15aa435c66b61725219c10011a34c5
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown form?
-promptLetter=учась
-options=to be learning | to think | to say
-answer=to be learning
-feedback=The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form. to be learning.
+prompt=Which English time relationship belongs to imperfective forms?
+promptLetter=imperfective ones
+options=usually present | very rarely past | can only be past
+answer=usually present
+feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside a different form for to think. | The frozen table writes this label beside a completed form for to say.
+distractorRationales= | The source uses very rarely past for a different construction. | The source assigns can only be past to perfective ones.
 testedFeature=IMPERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-imperfective-adverb-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u28-imperfective-adverb-1-en
-distractorSourceIds= | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-0
-distractorDifference= | This label is paired with the thinking form (to think). | This label is paired with a different row (to say).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.
-contrastMembers=to be learning | to think | to say
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-imperfective-adverb-1-ru | prov-ex-u28-imperfective-adverb-1-en | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-0
+answerSourceIds=prov-ex-u28-imperfective-adverb-0-en
+distractorSourceIds= | prov-u28-imperfective-adverb-x-2 | prov-u28-imperfective-adverb-x-1
+distractorDifference= | This phrase is a different construction in the same span (very rarely past). | This relationship is the one stated for perfective ones (can only be past).
+whyAnswerDemonstratesObjective=The source says imperfective ones are usually present.
+contrastMembers=usually present | very rarely past | can only be past
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-imperfective-adverb-x-0 | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-2 | prov-u28-imperfective-adverb-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u28-i-imperfective-adverb-2`
@@ -784,31 +784,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a84680a701cc0779eeeb9ae1c121ee801540a29e2a58b2b6565bacd5aa7ae077
+- Content hash: fde05e8687a61b03b83640b9cedd1722d719757428a451ae771d9ee6daa15197
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written for the other table form, not the shown form?
-promptLetter=думая
-options=to be learning | to think | to say
-answer=to be learning
-feedback=The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table. to be learning.
+prompt=Which English time relationship does the source state for these imperfective forms?
+promptLetter=imperfective ones
+options=usually present | can only be past | very rarely past
+answer=usually present
+feedback=The source says imperfective ones are usually present. usually present.
 objectiveId=obj-u28-imperfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside the shown form for to think. | The frozen table writes this label beside a completed form for to say.
+distractorRationales= | The source assigns can only be past to perfective ones. | The source uses very rarely past for a different construction.
 testedFeature=IMPERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-imperfective-adverb-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u28-imperfective-adverb-1-en
-distractorSourceIds= | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-0
-distractorDifference= | This label is the gloss of the shown form (to think). | This label is paired with a different row (to say).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table.
-contrastMembers=to be learning | to think | to say
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-imperfective-adverb-0-ru | prov-ex-u28-imperfective-adverb-1-en | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-0
+answerSourceIds=prov-ex-u28-imperfective-adverb-0-en
+distractorSourceIds= | prov-u28-imperfective-adverb-x-1 | prov-u28-imperfective-adverb-x-2
+distractorDifference= | This relationship is the one stated for perfective ones (can only be past). | This phrase names a different construction (very rarely past).
+whyAnswerDemonstratesObjective=The source says imperfective ones are usually present.
+contrastMembers=usually present | can only be past | very rarely past
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-imperfective-adverb-x-0 | prov-ex-u28-imperfective-adverb-0-en | prov-u28-imperfective-adverb-x-1 | prov-u28-imperfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u28-i-perfective-adverb-1`
@@ -819,31 +819,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e5d17e06a0193c9feeb5b09ab5945ba53e259d5f46aedb64423ed08d86a1d216
+- Content hash: 455fbad04c7d643027d158ddb917b607334ac53eb0ccc18af0931bf6f39c6418
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown form?
-promptLetter=научившись
-options=to learn | to say | to enter
-answer=to learn
-feedback=The frozen line says most are formed with the listed suffix. This label is written beside the shown form. to learn.
+prompt=Which English time relationship belongs to perfective forms?
+promptLetter=perfective ones
+options=can only be past | very rarely past | usually present
+answer=can only be past
+feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside a different form for to say. | The frozen table writes this label beside a different form for to enter.
+distractorRationales= | The source uses very rarely past for a different construction. | The source assigns usually present to imperfective ones.
 testedFeature=PERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-perfective-adverb-1
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u28-perfective-adverb-1-en
-distractorSourceIds= | prov-ex-u28-perfective-adverb-0-en | prov-ex-u28-perfective-adverb-2-en
-distractorDifference= | This label is paired with the saying form (to say). | This label is paired with the entering form (to enter).
-whyAnswerDemonstratesObjective=The frozen line says most are formed with the listed suffix. This label is written beside the shown form.
-contrastMembers=to learn | to say | to enter
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-perfective-adverb-1-ru | prov-ex-u28-perfective-adverb-1-en | prov-ex-u28-perfective-adverb-0-en | prov-ex-u28-perfective-adverb-2-en
+answerSourceIds=prov-ex-u28-perfective-adverb-0-en
+distractorSourceIds= | prov-u28-perfective-adverb-x-2 | prov-u28-perfective-adverb-x-1
+distractorDifference= | This phrase is a different construction in the same span (very rarely past). | This relationship is the one stated for imperfective ones (usually present).
+whyAnswerDemonstratesObjective=The source says perfective ones can only be past.
+contrastMembers=can only be past | very rarely past | usually present
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-perfective-adverb-x-0 | prov-ex-u28-perfective-adverb-0-en | prov-u28-perfective-adverb-x-2 | prov-u28-perfective-adverb-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u28-i-perfective-adverb-2`
@@ -854,31 +854,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 729d9e144bfe77ed3dba1c7e13876afb731ca1d7e4d151814424afb9ecde5dcc
+- Content hash: d8a50de150885395065063aded38186283b9bd885b755449b76c3c3bd04e0e0d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the remaining shown form?
-promptLetter=войдя
-options=to enter | to say | to learn
-answer=to enter
-feedback=The frozen line says most are formed with the listed suffix. This label is written beside the shown form. to enter.
+prompt=Which English time relationship does the source state for these perfective forms?
+promptLetter=perfective ones
+options=can only be past | usually present | very rarely past
+answer=can only be past
+feedback=The source says perfective ones can only be past. can only be past.
 objectiveId=obj-u28-perfective-adverb
 containsGeneratedRussian=false
 reviewStatus=PENDING_QUALIFIED_REVIEW
-distractorRationales= | The frozen table writes this label beside a different form for to say. | The frozen table writes this label beside a different form for to learn.
+distractorRationales= | The source assigns usually present to imperfective ones. | The source uses very rarely past for a different construction.
 testedFeature=PERFECTIVE_ADVERB
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u28-perfective-adverb-2
-cueLanguage=ru
+cueLanguage=rule
 independent=true
-answerSourceIds=prov-ex-u28-perfective-adverb-2-en
-distractorSourceIds= | prov-ex-u28-perfective-adverb-0-en | prov-ex-u28-perfective-adverb-1-en
-distractorDifference= | This label is paired with the saying form (to say). | This label is paired with the learning form (to learn).
-whyAnswerDemonstratesObjective=The frozen line says most are formed with the listed suffix. This label is written beside the shown form.
-contrastMembers=to enter | to say | to learn
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u28-perfective-adverb-2-ru | prov-ex-u28-perfective-adverb-2-en | prov-ex-u28-perfective-adverb-0-en | prov-ex-u28-perfective-adverb-1-en
+answerSourceIds=prov-ex-u28-perfective-adverb-0-en
+distractorSourceIds= | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
+distractorDifference= | This relationship is the one stated for imperfective ones (usually present). | This phrase names a different construction (very rarely past).
+whyAnswerDemonstratesObjective=The source says perfective ones can only be past.
+contrastMembers=can only be past | usually present | very rarely past
+relationKind=EXPLICIT_SOURCE_PAIR
+relationParticipantIds=prov-u28-perfective-adverb-x-0 | prov-ex-u28-perfective-adverb-0-en | prov-u28-perfective-adverb-x-1 | prov-u28-perfective-adverb-x-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u2630-attribution`
@@ -907,13 +907,15 @@ reviewStatus=NOT_REQUIRED
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2977a9d6576db7fde126e6a4304d553afc626ebf8cabe71d805c49aad66e6f6a
+- Content hash: 6239c8842c813626d0501da8357153a6edef145c360e3bcf7eb7ec7d4425b3bc
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -937,14 +939,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 | [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
 | учусь
 | учась
-shippedText=to think
+shippedText=usually present
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=722e657c7f247549021b2a6894f80de044f1d70d1cc144aa812e92f74559abe2
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=e6980285719a841778885361cf5da70eb4bef7a17151d0888022a15ce952273d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -959,13 +961,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: de026a0b19f32c6dd36bcbae6b385d720f6874d8b5ed4b90eb3da572f94580a4
+- Content hash: 53b9936f8f605a8fc82bd85bf1cd5d4bfaecce815e5918a6943facbae47a9550
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -995,7 +999,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
 contentHash=3f3304c3bb58ec03eaafd94fceff12f0425f2372b4647b3df212f231ff0367e3
 audioAssetId=
 reviewerIdentity=
@@ -1011,13 +1015,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0c12383d09e0fe4f38c5d1570f4869445e33cd903a725319b96386e0611eed1f
+- Content hash: 7a1a166be6191ccf0fa044d672bbee96a0f22885795b221c7e850b1c672a8c5f
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1041,14 +1047,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 | [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
 | учусь
 | учась
-shippedText=to be learning
+shippedText=usually present
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=da68ec380dacf9e0519da4eac4242d46fa64f2f954556020fba14a3e00b83892
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=e6980285719a841778885361cf5da70eb4bef7a17151d0888022a15ce952273d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1063,13 +1069,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 002e6edbbc8b673023586fee0ea99db8d561aec707bc216a3932a404f1843d89
+- Content hash: 7d6799202b6337a73d0e9cd48b3ce9d17cdf19889666e321c8176df137465aa4
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1099,7 +1107,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
 contentHash=ac6cda03d8d50f768775a69e0c596d358285201c9c13e61a769d5de160c249ba
 audioAssetId=
 reviewerIdentity=
@@ -1115,13 +1123,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0872dcf198cc4dc6fd874cbc88abab27ef8d798fdc7a6373518204e69ab2b7aa
+- Content hash: 49301810157c3f2c065be46abf4307d1d82e87206f581b0938839dce2f852407
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1153,14 +1163,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 |-
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
-shippedText=to say
+shippedText=can only be past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
-contentHash=2a51c800506c91b890b8a62f026b96d0062267000a01f07bf39e71b2cf472626
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=c9a7be52347ce5c140f63fdd71beb1fee31f3fd7111018bcb3eaeacb68af12ff
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1175,13 +1185,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b0df8504d91f8c5c95cc52d7c9361fed4774fe795233f5ebcc3e7d126470d531
+- Content hash: f603bd979191264616c60d24a6a1c5b7df96a87e75a0efd72cacd248c121d29e
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1219,7 +1231,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
 contentHash=17455f0242469f0b62adccc939fc3787af5cc6683deef742aa2a5e905092203d
 audioAssetId=
 reviewerIdentity=
@@ -1235,13 +1247,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 436800e3cafa94c11bc5da676b4fdce9ff04db2b3986edae06cce7fc5cf7bb78
+- Content hash: 38cf0ea5259690c9510b4e82090d9fc7832dbcc32b4ddda8b0841c5508fcf0f9
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1273,14 +1287,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 |-
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
-shippedText=to learn
+shippedText=can only be past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
-contentHash=abe757d3d9908eacd3b59c364b293907854b0fcd58f2251b5374b266ec24c19e
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=c9a7be52347ce5c140f63fdd71beb1fee31f3fd7111018bcb3eaeacb68af12ff
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1295,13 +1309,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f961f8e6aaa27ae2d0ee72b5a45feb292bbe1ef86fbbda4d79d9435370b7f4a
+- Content hash: cecd579abdf3012ff22214ed1d176df000b866077622c192638a0e00851e9f87
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1339,7 +1355,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
 contentHash=8e06c8b41465671cb38047f1a80769cc30fab14ce2bf8e4925618b0bee216279
 audioAssetId=
 reviewerIdentity=
@@ -1355,13 +1371,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 96fc54e300ac021a1995ec97f0d56b6262712bd83befd53db9b0d6d3ac1b7b99
+- Content hash: f161c08454a5fbe1cf66fca008a102a6bb46ae9370cd44c08b1850eb23032fda
 
 recordType=meaning
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1393,14 +1411,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 |-
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
-shippedText=to enter
+shippedText=can only be past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
-contentHash=2b8a2901e08e41aedd9a8f41c5b224caada089534a9c47b19b4db47e2ba118ce
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=c9a7be52347ce5c140f63fdd71beb1fee31f3fd7111018bcb3eaeacb68af12ff
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1415,13 +1433,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 76b44aa54a49f43ebe903bafcea8da607a3f5ccc71afdc11febef792f96f1150
+- Content hash: acf1c0b13c9160eac6ec083fe4517ef38376665cf8b1f47054b5c61bc5d52107
 
 recordType=example
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1459,7 +1479,7 @@ licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
 contentHash=641279ab1a9364603b445398bcfe2d31001b37f3c653cb2aca0e7f833a191b0b
 audioAssetId=
 reviewerIdentity=
@@ -1475,13 +1495,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 82a73e3e83a791f7be9d2cc752ac85fb4a8a5949790819222fd9216b0b3c52c5
+- Content hash: 980fc05d7f542eec583704d15a362ee6fae5a1f1c69e532b0bbc33cafa59de35
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1505,118 +1527,14 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 | [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
 | учусь
 | учась
-shippedText=Present adverbial participles are formed by adding the suffix -а/-я
+shippedText=imperfective ones are usually present, while perfective ones can only be past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=10c92585953b70df1fa6bdfc08b1e63058063dcb668b7544afd884299f68f05a
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u28-imperfective-adverb-rem-r0`
-
-- Objectives: obj-u28-imperfective-adverb
-- Sessions: u28-s-orient, u28-s-imperfective-adverb
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0810d40f4e6a4808341ea1aaec45aee961b25344ebdb105fd2e0e757e5cf0c07
-
-recordType=example
-sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
-sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
-
-In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
-
-{| class="wikitable"
-|+ Adverbial participles
-|-
-! infinitive
-! present tense
-! present adverbial participle
-! past adverbial participle
-|-
-| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
-| думаю
-| думая
-| (думав)<ref group="tavp" name=pi />
-|-
-| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
-| colspan="2" | —
-| сказав (сказавши)
-|-
-| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
-| учусь
-| учась
-shippedText=а
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
-audioAssetId=
-reviewerIdentity=
-reviewerQualification=
-reviewDate=
-reviewedDigest=
-
-### PROVENANCE `prov-u28-imperfective-adverb-rem-r1`
-
-- Objectives: obj-u28-imperfective-adverb
-- Sessions: u28-s-orient, u28-s-imperfective-adverb
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
-- Classification: none
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e9115abea8aa9aa0af3645537c7d7edb268d1f55262b6d1ad000088b7dc84611
-
-recordType=example
-sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
-sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
-
-In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
-
-{| class="wikitable"
-|+ Adverbial participles
-|-
-! infinitive
-! present tense
-! present adverbial participle
-! past adverbial participle
-|-
-| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
-| думаю
-| думая
-| (думав)<ref group="tavp" name=pi />
-|-
-| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
-| colspan="2" | —
-| сказав (сказавши)
-|-
-| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
-| учусь
-| учась
-shippedText=я
-transformation=selection
-licenseId=CC BY-SA 4.0
-licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
-attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
-shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=48d29e5b10ec94d2b7859ae1e857d68fa141378833a60cc5ce3252eb9a3bab47
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1631,13 +1549,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ec2df08ccde7c3dc9429dfe692c830b944f7473ee6180ec3c7b8133d072d0941
+- Content hash: 6ff0452f9f4ca557a7952eb63e43da5f77252e5b699653d6e20ac78a60fc4adc
 
 recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-originalSourceText=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1661,14 +1581,122 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 | [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
 | учусь
 | учась
-shippedText=to say
+shippedText=imperfective ones
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
-contentHash=2a51c800506c91b890b8a62f026b96d0062267000a01f07bf39e71b2cf472626
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=89abb942f64cd618f395565670253a2152992d02b3a9ac06db66c7e0472531db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u28-imperfective-adverb-x-1`
+
+- Objectives: obj-u28-imperfective-adverb
+- Sessions: u28-s-orient, u28-s-imperfective-adverb
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 992f9130e15a10e75360f42c8bc29fc4b514cc81da71ec3c66c617ac569ce488
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+
+In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
+
+{| class="wikitable"
+|+ Adverbial participles
+|-
+! infinitive
+! present tense
+! present adverbial participle
+! past adverbial participle
+|-
+| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
+| думаю
+| думая
+| (думав)<ref group="tavp" name=pi />
+|-
+| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
+| colspan="2" | —
+| сказав (сказавши)
+|-
+| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
+| учусь
+| учась
+shippedText=can only be past
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=c9a7be52347ce5c140f63fdd71beb1fee31f3fd7111018bcb3eaeacb68af12ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u28-imperfective-adverb-x-2`
+
+- Objectives: obj-u28-imperfective-adverb
+- Sessions: u28-s-orient, u28-s-imperfective-adverb
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7354a6b17de179cce663fd0ec59d97c886b824a4eca7ae55832b503fa84d9e11
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+originalSourceText=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+
+In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
+
+{| class="wikitable"
+|+ Adverbial participles
+|-
+! infinitive
+! present tense
+! present adverbial participle
+! past adverbial participle
+|-
+| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
+| думаю
+| думая
+| (думав)<ref group="tavp" name=pi />
+|-
+| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
+| colspan="2" | —
+| сказав (сказавши)
+|-
+| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
+| учусь
+| учась
+shippedText=very rarely past
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
+contentHash=491b53bb1ff16470d9354a0c9aab3deb8b5ccf2c35bcebc5a15baddf917d8ab2
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1683,13 +1711,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 215cd879b508ffefabae7bd3716149c050acd51877f1eb39a30e19d5172e0dfd
+- Content hash: 5f646039a259bf8c13d91a92e8a53068014a2938e0edd31b3f0234c10615ba6f
 
 recordType=instruction
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1721,21 +1751,21 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 |-
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
-shippedText=most are formed with the suffix -в
+shippedText=usually present, while perfective ones can only be past
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
-contentHash=76f8d1528fcda9b60a1bdb389c372bd84f6f7e4e615452f7401265408e38d6ae
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=f74f23567ab6cc98b1ffc81d88dde18448bb0a3c743ecbc8ea7cd1b51a943e78
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### PROVENANCE `prov-u28-perfective-adverb-rem-r0`
+### PROVENANCE `prov-u28-perfective-adverb-x-0`
 
 - Objectives: obj-u28-perfective-adverb
 - Sessions: u28-s-orient, u28-s-perfective-adverb
@@ -1743,13 +1773,15 @@ reviewedDigest=
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15f19a65ae0c7c4e2be28b8c1a2620aa943cd089c9c7c6371e991ee6841a52c0
+- Content hash: f83078434939007334e75fafa1af96850af7dcdb3d238bb9fe5869628235483b
 
-recordType=example
+recordType=label
 sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-originalSourceText=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -1781,14 +1813,138 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 |-
 | [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
 | войдя (вошед
-shippedText=в
+shippedText=perfective ones
 transformation=selection
 licenseId=CC BY-SA 4.0
 licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
 attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
-contentHash=b8012cb642c887a0a4f6f8e52fc6d97946274076ba64b113dff1db0a0ca37caa
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=139323142f740f2310ab5f704880df4a6579480ceaead2e5ae7004b546a65540
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u28-perfective-adverb-x-1`
+
+- Objectives: obj-u28-perfective-adverb
+- Sessions: u28-s-orient, u28-s-perfective-adverb
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ecacdb34cd510c0b7ecce568f4e6e5d755dc1b7f6462d5a412ad589a7fa42413
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+
+In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
+
+{| class="wikitable"
+|+ Adverbial participles
+|-
+! infinitive
+! present tense
+! present adverbial participle
+! past adverbial participle
+|-
+| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
+| думаю
+| думая
+| (думав)<ref group="tavp" name=pi />
+|-
+| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
+| colspan="2" | —
+| сказав (сказавши)
+|-
+| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
+| учусь
+| учась
+| (учившись)<ref group="tavp" name=pi>Rare but existing forms; they appear e.g. in negative sentences: ''как Он знает Писания, не учившись?'' ([[s:ru:От Иоанна святое благовествование#7:15|John 7:15]]).</ref>
+|-
+| [[wikt:научиться|научиться]] ''(to learn, {{abbr|pf.|perfective}})''
+| colspan="2" rowspan="3" | —
+| научившись
+|-
+| [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
+| войдя (вошед
+shippedText=usually present
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=e6980285719a841778885361cf5da70eb4bef7a17151d0888022a15ce952273d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u28-perfective-adverb-x-2`
+
+- Objectives: obj-u28-perfective-adverb
+- Sessions: u28-s-orient, u28-s-perfective-adverb
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 705b6d4688bf5dba1b29c7d83a8d10b3734fee4fe586dc21eda73cddae1260c0
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+originalSourceText=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+
+In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
+
+{| class="wikitable"
+|+ Adverbial participles
+|-
+! infinitive
+! present tense
+! present adverbial participle
+! past adverbial participle
+|-
+| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''
+| думаю
+| думая
+| (думав)<ref group="tavp" name=pi />
+|-
+| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''
+| colspan="2" | —
+| сказав (сказавши)
+|-
+| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''
+| учусь
+| учась
+| (учившись)<ref group="tavp" name=pi>Rare but existing forms; they appear e.g. in negative sentences: ''как Он знает Писания, не учившись?'' ([[s:ru:От Иоанна святое благовествование#7:15|John 7:15]]).</ref>
+|-
+| [[wikt:научиться|научиться]] ''(to learn, {{abbr|pf.|perfective}})''
+| colspan="2" rowspan="3" | —
+| научившись
+|-
+| [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''
+| войдя (вошед
+shippedText=very rarely past
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
+contentHash=491b53bb1ff16470d9354a0c9aab3deb8b5ccf2c35bcebc5a15baddf917d8ab2
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -1816,10 +1972,10 @@ text=Admitted lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f17e37bdd595d59749b7b7c5eb8516b8cc827f98890cf27f8dff5d0399e54c0a
+- Content hash: 68e8d08ce43b86728c65b02097616bc69d0c235fdaf180653b9f22ac8d59d6d5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a different form for to be learning.
+text=The source assigns can only be past to perfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-123`
 
@@ -1829,10 +1985,10 @@ text=The frozen table writes this label beside a different form for to be learni
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a22e429324d925f2d0fe489cd3ae80a90dac8046dea81b50c34e0cebd8743a2
+- Content hash: 4d61deb1db2c0e5ca2b2f3285070326ccf038cc9396317ab14edd613fd46281b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a completed form for to say.
+text=The source uses very rarely past for a different construction.
 
 ### AUTHORED_ENGLISH `en-u28-124`
 
@@ -1842,10 +1998,10 @@ text=The frozen table writes this label beside a completed form for to say.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7b48b7a155300b053f3956638bdaef54092223afc709375d8e0e83ad7bb0b61c
+- Content hash: 709d2d45eb95b029b57edc2adff88b31e00146a77fa400bba0e1196422dcafb0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the learning form (to be learning).
+text=This relationship is the one stated for perfective ones (can only be past).
 
 ### AUTHORED_ENGLISH `en-u28-125`
 
@@ -1855,10 +2011,10 @@ text=This label is paired with the learning form (to be learning).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 570de421d2689ac16b629aaf6a9ad9d27011786910c0232b2aa4732c8eafe36b
+- Content hash: 6062b79311798eac69c8f64403a5b3034e92e9728003222d9992049a42e50c56
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different row (to say).
+text=This phrase is a different construction in the same span (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-126`
 
@@ -1868,10 +2024,10 @@ text=This label is paired with a different row (to say).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49e6f01ff93f8ceaeecc30d61dcb5707010901673735c185b64cf711454f7a50
+- Content hash: 77992daf7f9527e8e0243cb8237e3c0e5e8262fd383a8dc6cb2d0d848c542068
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says these forms are formed by adding the listed suffix. This label is written beside the shown form.
+text=The source says imperfective ones are usually present.
 
 ### AUTHORED_ENGLISH `en-u28-127`
 
@@ -1881,10 +2037,10 @@ text=The frozen line says these forms are formed by adding the listed suffix. Th
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c237f82f44a172b778ed6f616de04c2057f60d8ff1668d41b37f412a789becfe
+- Content hash: 36e6be95086b42239de1d32383260a024be14ff4495c8aef19d3be79edc7c5ee
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
+text=Which English time relationship does the source state for imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-128`
 
@@ -1907,10 +2063,10 @@ text=Admitted instruction
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 607bbedef926db6e1050a6ef7b8fff21b15049d4e1e4296ad44ce4118ae7fa15
+- Content hash: eef76ee0e741e5b1dc2e9928921f9b0abd69cd8a589c6ec91c2277f2ab1889b1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a different form for to think.
+text=Which English time relationship belongs to imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-130`
 
@@ -1920,10 +2076,10 @@ text=The frozen table writes this label beside a different form for to think.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5930d69ea7c2c856e82a9b406229b95259d49db6312055307176fe3f226d7f4b
+- Content hash: 0c4c02a8988456778ec30011a9d2a00e1073799a4119766d5130310063d3b554
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the thinking form (to think).
+text=This phrase names a different construction (very rarely past).
 
 ### AUTHORED_ENGLISH `en-u28-131`
 
@@ -1933,10 +2089,10 @@ text=This label is paired with the thinking form (to think).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 73d9751d03e9d72f82cfdfc281a04b57b20abdc0dc3b180cfe399002b88bed05
+- Content hash: e58356760a586e59c0ca93893004f06a74062333e3ce2dcd994a4575e8e2e387
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
+text=Which English time relationship does the source state for these imperfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-132`
 
@@ -1946,10 +2102,10 @@ text=Which admitted English label is written beside this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a223cd44b00bf19a3666b00d86746e39e8aa1bed06bf8fed6501e1e52b848b1d
+- Content hash: 83ee5234ece74ab5bfb16ca7006b269c7f7faa885b71823bee53fba46c8af55e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside the shown form for to think.
+text=The source assigns usually present to imperfective ones.
 
 ### AUTHORED_ENGLISH `en-u28-133`
 
@@ -1959,10 +2115,10 @@ text=The frozen table writes this label beside the shown form for to think.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e4eadb387344c343830689047b19476c43d17c138adb9f2745b3c0fdd0e95eff
+- Content hash: f367520e170c9ad3de523ba3718cf6aef42e0d885443d3761d95336bcf2f9fc1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the gloss of the shown form (to think).
+text=This relationship is the one stated for imperfective ones (usually present).
 
 ### AUTHORED_ENGLISH `en-u28-134`
 
@@ -1972,10 +2128,10 @@ text=This label is the gloss of the shown form (to think).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7230e280ac940fa08657a00f6a9b4686251ba4f517c90540f820186407a49c0
+- Content hash: d84ac2aabf5a1e99e58a1abedaee5e980ff335135e7cc0759ca01f1d0266f63f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says these forms are formed by adding the listed suffix. This label is the other gloss in the same table.
+text=The source says perfective ones can only be past.
 
 ### AUTHORED_ENGLISH `en-u28-135`
 
@@ -1985,10 +2141,10 @@ text=The frozen line says these forms are formed by adding the listed suffix. Th
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cdb41891994c1f7f2e9c25743678fa3f466dbc9ab1bae2a054e3b40c5fdaad62
+- Content hash: 947b13d8b9ceee85623ee3072418a14998df815f118f4d4364d0a11a5757ad1c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss is written for the other table form, not the shown form?
+text=Which English time relationship does the source state for perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-136`
 
@@ -1998,10 +2154,10 @@ text=Which admitted English gloss is written for the other table form, not the s
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c45535c46dbdd724beeef2f4edad172ba665ade90f3f0360d19764585a7d4bb
+- Content hash: ae251b959b4778744864b7e38b81911dbd756e52b1c01959f90549f3759d2d5c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a different form for to learn.
+text=Which English time relationship belongs to perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-137`
 
@@ -2011,10 +2167,10 @@ text=The frozen table writes this label beside a different form for to learn.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6ace546a599f5feb005b190e275309c887e57491789b0f16e53845be65bfe0d
+- Content hash: c784cb668d9d4647644abe880a5b9b7a8f4868d8be233c7b0ffac3b8c21a3f94
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a different form for to enter.
+text=Which English time relationship does the source state for these perfective forms?
 
 ### AUTHORED_ENGLISH `en-u28-138`
 
@@ -2024,10 +2180,10 @@ text=The frozen table writes this label beside a different form for to enter.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 11f3a0160bc721e0469d230cde406ded8c4b3f9b2ffc64312eb2e83d8b72c0d1
+- Content hash: 8a422bb5073a10ee59535e7c4c67fe132e0e6687ddf3fead8318471c6deb2010
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the learning form (to learn).
+text=Admitted adverbial lines
 
 ### AUTHORED_ENGLISH `en-u28-139`
 
@@ -2037,10 +2193,10 @@ text=This label is paired with the learning form (to learn).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: feea348f6e722f543d29d17eca991905c12009f83d3ea06f40f1ac008baa0cc0
+- Content hash: 4d88d0477e65a8a4a9a4cafcb64deaf250de92654d871fd013d573456d0473fd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the entering form (to enter).
+text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u28-140`
 
@@ -2050,10 +2206,10 @@ text=This label is paired with the entering form (to enter).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 271b4070933dce66d9a32d19296e1b0674c21d923fc2f954278c3897942aae36
+- Content hash: 46b0e62b271b790450203be2d8e52b81f3dd827a5536c844d7da6f3ce6b9387a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says most are formed with the listed suffix. This label is written beside the shown form.
+text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u28-141`
 
@@ -2063,10 +2219,10 @@ text=The frozen line says most are formed with the listed suffix. This label is 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ddfdd6002d1556f15f9ef11cbf0af6343f8015961d92a53316ea3d0093342a9a
+- Content hash: 4966befbd35064189b71bef6459f4d922b16f5719e7cc8ad609eec0888dc7a14
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen table writes this label beside a different form for to say.
+text=Read the admitted examples on this card.
 
 ### AUTHORED_ENGLISH `en-u28-142`
 
@@ -2076,10 +2232,10 @@ text=The frozen table writes this label beside a different form for to say.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62262c85ab11e9da493f175b9ea88b138a2c2a9e4db1d54d5afd66914d6aec20
+- Content hash: 4b24214dd6700f57ec84feadac12520beebc49d5b6b1a3bfd74da753970be3d9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the saying form (to say).
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u28-143`
 
@@ -2089,10 +2245,10 @@ text=This label is paired with the saying form (to say).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d9fd233793397398133935a0ebb444ea63c08ea01e99eec49ceabc87dc3eed93
+- Content hash: 0a383808efc2d140d9b04c97679b020e51f9aca9a4b12830d7b4e8bc477f9015
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the remaining shown form?
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u28-144`
 
@@ -2102,10 +2258,10 @@ text=Which admitted English label is written beside the remaining shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 04b82c9102d9adb6a7195936b13d474ef68df02f01eda6f7ae67e979cc215959
+- Content hash: 76695c4d52db7eccee4c56494291d8a87cef14061319948409ef4f8dd93c3c34
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted adverbial lines
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u28-145`
 
@@ -2115,10 +2271,10 @@ text=Admitted adverbial lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e038acfbc0d5281a9ef29068cf712565c29dcace4da1385f9d284bf40cd9b782
+- Content hash: 50485974facabbd12032a8fb6f55e2011885af85cae53a1a46b4e9c44fd5cce5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines. Readings stay in the copy you own. Qualified review is pending.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u28-146`
 
@@ -2128,10 +2284,10 @@ text=Proposed Unit 28 uses admitted imperfective and perfective adverbial lines.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 884d11b955a76c0927ed3d8462c41331e98f4b457571b499cb3bff1dd6970dac
+- Content hash: b12b2d03e7188e2a9c7292f7a3799988aa9880fbadd8a73792cc17f594928810
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in the copy you own. The app records do not replace that lesson.
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u28-147`
 
@@ -2141,10 +2297,10 @@ text=Open Lesson 28 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da7baa448ec3e584ef67af803fd4b716ece14fc7e397f14b642f5cb4aeede671
+- Content hash: b6b481678ecaed8e47147fff28006891e99bcab7a31efb6d58601870733b8648
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Work Lesson 28 in your copy
 
 ### AUTHORED_ENGLISH `en-u28-148`
 
@@ -2154,10 +2310,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 49e471be6272eea6b347f5b4de868c5b33e877725d0616d620c771dbf268db41
+- Content hash: 71321a996c2eea29f40d7770fa241a4d682454030908eed2a21a3c9dacb94a9d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u28-149`
 
@@ -2167,10 +2323,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 41b95b56f0df132bbb2785afe8d7a8a8cc2a8b5b9caab877861b179d239ddb59
+- Content hash: b5e4fac4907617f63f49bf6e4b3cc60f87f11c366b7bfcc9c86704271fa39a13
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Open Lesson 28 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u28-150`
 
@@ -2180,10 +2336,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 169952fd702126ba4b9b39940c7c51cfa7b74e75dd97443344ee8c0c0151ad76
+- Content hash: 80e4fd9990114745623d36793e646fbb12ebc219216d84028666c2f38706523c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Record Lesson 28 book work
 
 ### AUTHORED_ENGLISH `en-u28-151`
 
@@ -2193,10 +2349,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7796d146f091b1cc368e02b0c4e5209a5449eb95cf38d8165277686ba4c73bc5
+- Content hash: 9dbf5b3df2aa33c928f9203c719f738e62d4489e396115ff891e24d182500eac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u28-152`
 
@@ -2206,10 +2362,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc332d53b1724a8c530b9e0328b24885c84bcabe72fa57c4252b6d987e8a892e
+- Content hash: 12800308bf5cd72b1b9b45f3821c5cbf3d0ed82499c3e9ffc73568921b6c8824
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Self-attest only after the Lesson 28 work in your copy.
 
 ### AUTHORED_ENGLISH `en-u28-153`
 
@@ -2219,10 +2375,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 493139c14cd45ed17b3570c678e0d351293090a2f14df34fcbd776601483959a
+- Content hash: 860597fa3831d6464a740019d7f90bc8d5d289d2343933d2fd488d47732bedb3
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 28 in your copy
+text=Readings stay in the copy you own
 
 ### AUTHORED_ENGLISH `en-u28-154`
 
@@ -2232,85 +2388,7 @@ text=Work Lesson 28 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b70785246bdc1080f8684b9a81c4e13e5096b0140117a35bca407b25d28f9088
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 28 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
-
-### AUTHORED_ENGLISH `en-u28-155`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6fc29f10a42e2cf463ecc03e1ef67ad836c4c10fd271fb83ff64f4c8988ed39b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 28 in your copy and complete its lesson work.
-
-### AUTHORED_ENGLISH `en-u28-156`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1a26ea6c355d20248755f96b419aa2bba5ecb30ad5604400622071b036038934
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 28 book work
-
-### AUTHORED_ENGLISH `en-u28-157`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1535f82b277c2f6972687d4a2fd6c190368b6e5fb350c8ed804aafdf1381c831
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 28 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
-
-### AUTHORED_ENGLISH `en-u28-158`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 985fbe12b482f03866908ef650e7fb7ecc424390a31f120bb23c86c6786c4026
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 28 work in your copy.
-
-### AUTHORED_ENGLISH `en-u28-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 046c92e96550e96e6a2bd710ac89e1b84ce2f070d0b24e9b5022a03b25bdec58
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Readings stay in the copy you own
-
-### AUTHORED_ENGLISH `en-u28-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da47e67c936e16b2fee3a4044ffed9257a1dc4c2d3e741af2043e418da642d9a
+- Content hash: 79007fcbe6b093fb6474cfbb4f81f2810890d27ea2f8d7a7d2dc8e97456938c4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Readings stay in the copy you own. The admitted lines do not supply a reading passage.
@@ -2323,14 +2401,16 @@ text=Readings stay in the copy you own. The admitted lines do not supply a readi
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 21e88ff59604121af21ac8851397d088ac0271a33258bdc53198d5f35633798c
+- Content hash: 92a6a8beaef2c6970715b2a9249df895688153ee5ab8b7ae5e2a141fd8d9f3fb
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:Present adverbial participles are formed by adding the suffix -а/-я (or sometime
-sourceHash=20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511
+sourceRecordId=grammar:imperfective ones are usually present, while perfective ones can only be past (s
+sourceHash=478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad
 supportedClaim=imperfective-verbal-adverb
-exactSpan=Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+exactSpan=imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -2363,14 +2443,16 @@ In standard Russian, adverbial participles are considered a feature of bookish s
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: SOURCE_CAPABILITY
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 202859adf767f3191b445de18b7be7fde9cbec9bec797ab7ad6e33616b837c7c
+- Content hash: 529ae1c3e07646b76fe6c6a080f6ee155e6ce39ba50a20d8cf0fa1d303d81e29
 
 sourceId=src-wikipedia-russian-grammar-1369617627
 sourceRevision=1369617627
-sourceRecordId=grammar:most are formed with the suffix -в (alternative form -вши, always used before -с
-sourceHash=686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6
+sourceRecordId=grammar:usually present, while perfective ones can only be past (since they denote actio
+sourceHash=831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102
 supportedClaim=perfective-verbal-adverb
-exactSpan=most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
+exactSpan=usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' "being", very rarely past ''бывши'' "having been"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).
+
+Present adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>
 
 In standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять ("Having eaten, I went for a walk") → Я пообедал и пошёл гулять ("I ate and went for a walk"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. "I haven't eaten today" will be "Я сегодня не евши" instead of "Я сегодня не ел".
 
@@ -2531,11 +2613,13 @@ permitsAppUse=true
 - `obj-u28-perfective-adverb` PROVENANCE `prov-ex-u28-perfective-adverb-2-en`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-ex-u28-perfective-adverb-2-ru`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-rem`
-- `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-rem-r0`
-- `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-rem-r1`
 - `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-x-0`
+- `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-x-1`
+- `obj-u28-imperfective-adverb` PROVENANCE `prov-u28-imperfective-adverb-x-2`
 - `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-rem`
-- `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-rem-r0`
+- `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-0`
+- `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-1`
+- `obj-u28-perfective-adverb` PROVENANCE `prov-u28-perfective-adverb-x-2`
 - `obj-u28-imperfective-adverb` SOURCE_CAPABILITY `cap-obj-u28-imperfective-adverb`
 - `obj-u28-perfective-adverb` SOURCE_CAPABILITY `cap-obj-u28-perfective-adverb`
 

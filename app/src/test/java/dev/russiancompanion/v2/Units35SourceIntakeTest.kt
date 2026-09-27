@@ -38,6 +38,7 @@ class Units35SourceIntakeTest {
             "src-ruwiki-lichnoe-imya-154915954",
             "src-ruwiki-obraschenie-153012874",
             "src-pressbooks-diverse-russian-traditions-grammar",
+            "src-pressbooks-diverse-russian-usa-grammar",
             "src-wikibooks-russian-various-stuff-3353858",
         )
         pack.provenanceRecords.forEach { record ->

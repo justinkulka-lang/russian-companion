@@ -94,7 +94,7 @@ class UnitReviewPipelineTest {
     @Test
     fun committedUnitPackagesMatchTheGenerator() {
         val pack = pack()
-        val packetUnits = (1..15).toList() + listOf(16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30)
+        val packetUnits = (1..30).toList()
         if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
             packetUnits.forEach { number ->
                 writeReview(number, renderUnitReviewFiles(pack, number).files)
@@ -106,9 +106,6 @@ class UnitReviewPipelineTest {
             val errors = validateUnitReviewFiles(pack, number, committed)
             assertTrue(errors.joinToString("\n"), errors.isEmpty())
             assertEquals(renderUnitReviewFiles(pack, number).files, committed)
-        }
-        listOf(23).forEach { number ->
-            assertFalse(File(repo(), "review/unit-$number").exists())
         }
     }
 
@@ -365,7 +362,7 @@ class UnitReviewPipelineTest {
             )
             assertTrue(curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isNotEmpty())
         }
-        listOf(21, 22, 24, 25).forEach { number ->
+        listOf(21, 22, 23, 24, 25).forEach { number ->
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
             assertTrue(manifest.contains(UNITS_21_25_CURRICULUM_COMMIT))
             assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))

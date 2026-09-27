@@ -72,7 +72,7 @@ class GapClosureDossierTest {
         assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
         assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
         assertEquals(
-            listOf(23),
+            emptyList<Int>(),
             model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber },
         )
         assertEquals(
@@ -129,6 +129,7 @@ class GapClosureDossierTest {
             "negation-alternation",
             "negative-pronoun",
             "register",
+            "elapsed-time-duration",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })
@@ -195,6 +196,6 @@ class GapClosureDossierTest {
 
     private companion object {
         const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
-        const val BASELINE_COMMIT = "826b3aa089cd59ea04db5aab0573421d73985643"
+        const val BASELINE_COMMIT = "fd69bd03298d69669d09daafe8d364b0e576d033"
     }
 }

@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.BatchBSources
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -86,7 +87,7 @@ class Units2125SourceIntakeTest {
         )
 
     private val gapObjectives = mapOf(
-        23 to listOf("obj-u23-duration"),
+        23 to listOf("obj-u23-completion"),
         24 to listOf("obj-u24-placement"),
         25 to listOf("obj-u25-nickname-rule"),
     )
@@ -155,7 +156,7 @@ class Units2125SourceIntakeTest {
             assertEquals("mapping $number", digest, mappingPackageDigest(governedMappingFacts(number)))
         }
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.readiness == "NOT_PREPARED" && it.sessions.isNotEmpty() })
-        assertFalse(File(repo(), "review/unit-23").exists())
+        assertTrue(File(repo(), "review/unit-23/UNIT_23_REVIEW_PACKET.md").isFile)
     }
 
     @Test
@@ -213,6 +214,7 @@ class Units2125SourceIntakeTest {
                 "wikibooks-cases-4195114",
                 "wikibooks-names-4660786",
                 "wikibooks-useful-words-3353859",
+                "pressbooks-usa-grammar-87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
             ),
             admitted,
         )
@@ -231,7 +233,7 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(296, intake.size)
+        assertEquals(304, intake.size)
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -239,7 +241,17 @@ class Units2125SourceIntakeTest {
             assertEquals(sha256(record.originalSourceText), record.sourceHash)
             assertEquals(sha256(record.shippedText), record.contentHash)
             assertTrue(record.sourceRevision.isNotBlank())
-            assertTrue(record.sourceUrl.contains(record.sourceRevision))
+            if (record.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
+                assertEquals("https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/", record.sourceUrl)
+                assertFalse(record.sourceUrl.contains("oldid="))
+                assertTrue(record.attribution.contains(record.sourceRevision))
+                assertTrue(record.attribution.contains("2026-09-26T22:52:41Z"))
+                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
+                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
+                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+            } else {
+                assertTrue(record.sourceUrl.contains(record.sourceRevision))
+            }
             assertEquals("CC BY-SA 4.0", record.licenseId)
             assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
             assertTrue(record.attribution.isNotBlank())
@@ -292,6 +304,7 @@ class Units2125SourceIntakeTest {
         }
         assertTrue(reason(pack, 21).isBlank())
         assertTrue(reason(pack, 22).isBlank())
+        assertTrue(reason(pack, 23).contains("Completion over a period"))
         assertTrue(reason(pack, 24).contains("Placement contrasts"))
         assertFalse(reason(pack, 24).contains("Object-form choice"))
         assertTrue(reason(pack, 25).contains("nickname-formation"))
@@ -342,49 +355,152 @@ class Units2125SourceIntakeTest {
     }
 
     @Test
-    fun unitTwentyThreeDurationGapStaysExplicit() {
+    fun unitTwentyThreeElapsedTimeStaysReviewPendingAndPartialEvidenceStaysClosed() {
         val pack = pack()
         val unit = pack.unit(23)!!
         assertEquals("DEVELOPMENT", unit.installState)
         assertEquals("NOT_PREPARED", unit.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-        assertTrue(unit.topicSummary.contains("Hour, year, and minute rows are not duration instruction"))
+        assertTrue(unit.mappingNote.contains("completion over a period"))
+        assertTrue(unit.topicSummary.contains("is not prepared"))
+        assertTrue(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
+        assertTrue(unit.topicSummary.contains("Book self-attestation does not replace the app checks"))
+        assertTrue(unit.topicSummary.contains("not installed"))
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "TEACH" })
-        assertTrue(unit.objectives.any { it.kind == "RECOGNITION" && it.id != "obj-u23-duration" })
-        assertTrue(pack.provenanceRecords.any { it.unitNumber == 23 })
-        assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "elapsed-time-duration" })
-        assertTrue(reason(pack, 23).contains("Elapsed time"))
-        assertFalse(File(repo(), "review/unit-23").exists())
+        assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "BOOK" })
+        assertTrue(unit.objectives.single { it.id == "obj-u23-book" }.checkItemIds.isEmpty())
+        assertEquals("SELF_ATTESTATION", unit.objectives.single { it.id == "obj-u23-book" }.kind)
+        listOf("obj-u23-ranges", "obj-u23-beginning", "obj-u23-during-event", "obj-u23-duration", "obj-u23-elapsed").forEach { id ->
+            val objective = unit.objectives.single { it.id == id }
+            assertEquals("RECOGNITION", objective.kind)
+            assertTrue(objective.checkItemIds.size >= 2)
+        }
+        assertTrue(reason(pack, 23).contains("no admitted frozen span"))
+        val completion = unit.objectives.single { it.id == "obj-u23-completion" }
+        assertEquals("GUIDANCE", completion.kind)
+        assertTrue(completion.checkItemIds.isEmpty())
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
+        val blocked = advancementDecision(
+            pack,
+            unit,
+            learner(
+                23,
+                book = true,
+                correct = unit.objectives.flatMap { it.checkItemIds }.toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+        assertFalse(blocked.allowed)
+        assertTrue(blocked.remaining.any { it.contains("not prepared") })
+        assertTrue(blocked.remaining.any { it.contains("completion-over-period") })
+        val elapsed = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
+        assertEquals("obj-u23-duration", elapsed.objectiveId)
+        assertEquals(23, elapsed.unitNumber)
+        assertTrue(elapsed.exactSpan.contains("emphasizes the duration"))
+        assertEquals("src-pressbooks-diverse-russian-usa-grammar", elapsed.sourceId)
+        assertFalse(elapsed.exactSpan in BatchBSources.BOUNDED_TIME_SPANS)
+        assertTrue(pack.provenanceRecords.filter { it.unitNumber == 23 }.none {
+            it.originalSourceText in BatchBSources.BOUNDED_TIME_SPANS
+        })
+        val review = pack.unitReviews.single { it.unitNumber == 23 }
+        assertEquals("PENDING_QUALIFIED_REVIEW", review.status)
+        assertTrue(review.reviewer.isNullOrBlank())
+        val stripped = withoutCapabilities(pack, 23)
         val numbersHour = sample(pack, 23, "4371358", "src-wikibooks-russian-cc-by-sa", "one hour one year one minute elapsed during ago")
-        val stretched = V2Validator.validate(claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + numbersHour), 23)).errors
-        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without an admitted elapsed-time and duration source capability") })
+        val stretched = V2Validator.validate(claimComplete(stripped.copy(provenanceRecords = stripped.provenanceRecords + numbersHour), 23)).errors
+        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
         val dictionary = sample(pack, 23, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
-        val fromRows = V2Validator.validate(claimComplete(pack.copy(provenanceRecords = pack.provenanceRecords + dictionary), 23)).errors
-        assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without an admitted elapsed-time and duration source capability") })
-        val bare = V2Validator.validate(claimComplete(pack, 23)).errors
-        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without an admitted elapsed-time and duration source capability") })
+            .copy(objectiveId = "obj-u23-duration")
+        val dictionaryCapability = capability(dictionary, "cap-dictionary-duration", 23, "obj-u23-duration", "elapsed-time-duration")
+        val fromRows = V2Validator.validate(
+            claimComplete(
+                stripped.copy(
+                    provenanceRecords = stripped.provenanceRecords + dictionary,
+                    sourceCapabilities = stripped.sourceCapabilities + dictionaryCapability,
+                ),
+                23,
+            ),
+        ).errors.joinToString("\n")
+        assertTrue(fromRows, fromRows.contains("without admitted elapsed-time-duration and completion-over-period source capabilities"))
+        assertTrue(fromRows, fromRows.contains("no independent elapsed-time-duration admission"))
+        val bare = V2Validator.validate(claimComplete(stripped, 23)).errors
+        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
         assertTrue(bare.none { it.contains("no teach step") })
-        val bounded = pack.provenanceRecords.first { it.unitNumber == 23 && it.originalSourceText.length > 80 }
-        val retargeted = pack.copy(
-            provenanceRecords = pack.provenanceRecords.map { record ->
-                if (record.originalSourceText == bounded.originalSourceText) {
-                    record.copy(objectiveId = "obj-u23-duration")
-                } else {
-                    record
-                }
-            },
+        val ago = pack.provenanceRecords.first().copy(
+            itemId = "prov-u23-ago-span",
+            unitNumber = 23,
+            objectiveId = "obj-u23-duration",
+            sourceId = "src-wikipedia-russian-grammar-1369617627",
+            sourceRevision = "1369617627",
+            sourceRecordId = "grammar:ago-probe",
+            originalSourceText = BatchBSources.AGO_SPAN,
+            shippedText = "ago",
+            sourceHash = sha256(BatchBSources.AGO_SPAN),
+            contentHash = sha256("ago"),
         )
         val overreach = V2Validator.validate(
-            retargeted.copy(sourceCapabilities = retargeted.sourceCapabilities + capability(
-                bounded.copy(objectiveId = "obj-u23-duration"),
-                "cap-u23-bounded",
-                23,
-                "obj-u23-duration",
-                "elapsed-time-duration",
-            )),
+            pack.copy(
+                provenanceRecords = pack.provenanceRecords + ago,
+                sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "elapsed-time-duration" } + capability(
+                    ago,
+                    "cap-u23-bounded",
+                    23,
+                    "obj-u23-duration",
+                    "elapsed-time-duration",
+                ),
+            ),
         ).errors.joinToString("\n")
         assertTrue(overreach, overreach.contains("no independent elapsed-time-duration admission"))
         assertTrue(overreach, overreach.contains("bounded time expression does not clear elapsed-time-duration"))
+        assertTrue(overreach, overreach.contains("partial duration evidence does not clear elapsed-time-duration"))
+        val host = pack.provenanceRecords.first { it.originalSourceText == elapsed.exactSpan }
+        val wrongObjective = V2Validator.validate(
+            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-objective", 23, "obj-u23-duration", "completion-over-period")),
+        ).errors.joinToString("\n")
+        assertTrue(wrongObjective, wrongObjective.contains("attached to the wrong unit or objective"))
+        val wrongUnit = V2Validator.validate(
+            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-unit", 24, "obj-u23-completion", "completion-over-period")),
+        ).errors.joinToString("\n")
+        assertTrue(wrongUnit, wrongUnit.contains("attached to the wrong unit or objective"))
+        val wrongClaim = V2Validator.validate(
+            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-claim", 23, "obj-u23-completion", "elapsed-time-duration")),
+        ).errors.joinToString("\n")
+        assertTrue(wrongClaim, wrongClaim.contains("attached to the wrong unit or objective"))
+        val moved = host.copy(objectiveId = "obj-u23-completion", itemId = "prov-u23-completion-host")
+        val forged = capability(moved, "cap-forged-completion", 23, "obj-u23-completion", "completion-over-period")
+        listOf(
+            forged.copy(sourceId = "src-openrussian-50e210c4"),
+            forged.copy(sourceRevision = "999"),
+            forged.copy(sourceHash = "0".repeat(64)),
+            forged.copy(exactSpan = "not the frozen span"),
+        ).forEach { broken ->
+            val errors = V2Validator.validate(
+                pack.copy(
+                    provenanceRecords = pack.provenanceRecords + moved,
+                    sourceCapabilities = pack.sourceCapabilities + broken,
+                ),
+            ).errors.joinToString("\n")
+            assertTrue(errors, errors.contains("revision does not match the frozen record") || errors.contains("span is not in the frozen record"))
+            assertTrue(errors, errors.contains("no independent completion-over-period admission"))
+            assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
+                pack.copy(provenanceRecords = pack.provenanceRecords + moved, sourceCapabilities = pack.sourceCapabilities + broken),
+                23,
+            ).any { it.claim == "completion-over-period" })
+        }
+        val bookText = unit.sessions.flatMap { it.steps }.first { it.kind == "BOOK" }.body
+        val bookRecord = sample(pack, 23, elapsed.sourceRevision, elapsed.sourceId, bookText).copy(objectiveId = "obj-u23-completion")
+        val bookErrors = V2Validator.validate(
+            claimComplete(
+                pack.copy(
+                    provenanceRecords = pack.provenanceRecords + bookRecord,
+                    sourceCapabilities = pack.sourceCapabilities + capability(bookRecord, "cap-book-completion", 23, "obj-u23-completion", "completion-over-period"),
+                ),
+                23,
+            ),
+        ).errors.joinToString("\n")
+        assertTrue(bookErrors, bookErrors.contains("no independent completion-over-period admission"))
+        assertTrue(bookErrors, bookErrors.contains("without an admitted completion-over-period source capability"))
+        assertFalse(bookErrors, bookErrors.contains("book self-attestation clears"))
     }
 
     @Test

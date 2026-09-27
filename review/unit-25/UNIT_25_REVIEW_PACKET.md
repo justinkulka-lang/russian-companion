@@ -11,12 +11,12 @@ Unit 25 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 826b3aa089cd59ea04db5aab0573421d73985643
-- Unit content-review SHA-256: cfa22d896bd26cb9ade8c3d27b2bcc835d1fded2c7d91941c301ccb544edb603
+- Curriculum source commit: fd69bd03298d69669d09daafe8d364b0e576d033
+- Unit content-review SHA-256: e70dbbb1648af93f4677a2287ca92b50b4ccc34d624552d974a01161b7c99b50
 - Mapping-package SHA-256: 93039c677b2f820c58bf274ebe94000f3a66541e821250bd478f9ed4c12b8431
-- Pack content-review SHA-256: 4632538acbc73ced17b62b91ca725d8f065e15ed1f4091b11b89c6a537125dba
-- Review-package SHA-256: 27023d804f3ac95bb4a8b8b7871091f31fd7cf0f21f1ea82d664720aa6597101
-- Repository source SHA-256: 9cd2056a6077ad1350311849f43a9667e6a4e6d5bc12145c7f0256bded455bb3
+- Pack content-review SHA-256: 4791d5aa7a2ce44698c144c00ff68408ae8544739b6f9145b3104cd878cc7295
+- Review-package SHA-256: 2b0ab4ed6746c9440281d46d6c71cb3c94f955998ea6b875d3c2afce42620af3
+- Repository source SHA-256: a7841066508d125da89357ee80ac7e3a099491ed254fd9f12e0d0252e2f72bbe
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1980,11 +1980,11 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 25c078b84ea4757033e795bc58b70d346c9873611b175492d7e5653ede2388d5
+- Content hash: 63a8327c9efeb69040fb89e872afdb85d1bd8c9b90f8b1bee09f60e9b5a8bdd4
 
 title=Units 21–25 source notice
-summary=Proposed Units 21, 22, 24, and 25 adapt CC BY-SA 4.0 Wikibooks excerpts. Unit 23 does not.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Elapsed time and duration, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Completion over a period, placement contrasts, and a general nickname-formation rule are not prepared. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -4854,344 +4854,6 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u25-158`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 75e45fed82a47f71ee1f2501c2aca2708d170e690439f28c62e58d94b0b9dd1e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
-
-### AUTHORED_ENGLISH `en-u25-159`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fc1521ef0c492dd9989402cbe5a3a2466c575ab8cdf6f31e78ff99576d631267
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with patronymic name, not with the shown words.
-
-### AUTHORED_ENGLISH `en-u25-160`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f25a4566e8f4656665d3225afcb3a731683107d78d0e8e1e6147139dfe27c950
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with family name, not with the shown words.
-
-### AUTHORED_ENGLISH `en-u25-161`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8371ce159560a9755109fa45ef291edb9c99083e736f90bc248f0854dbf41a8e
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
-
-### AUTHORED_ENGLISH `en-u25-162`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a2c3b60222f2580d9e5e13d42b92dbe59b48712d8e69c6f2674fc58bd0cd1d4
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with patronymic name.
-
-### AUTHORED_ENGLISH `en-u25-163`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f470cabd435c518af700afc00e1bfe0a4806a7bf4ac98840968a170c7e376893
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with family name.
-
-### AUTHORED_ENGLISH `en-u25-164`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ebf53f5b3385768e58231078820a5eb95a16c729e91f20085014f3a743c3d54
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means son of, rather than the paired form.
-
-### AUTHORED_ENGLISH `en-u25-165`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b16d57799a1349d8a3424fd09f5a3453e21d9a52d607dc3993a4250b0070cb8
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs the shown words with this form.
-
-### AUTHORED_ENGLISH `en-u25-166`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79491ae83814a9d5f19b6d6f0736abcce8a85a1b7c117ba4f7c074cd9508b02b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
-
-### AUTHORED_ENGLISH `en-u25-167`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f6e056a2f02f8fecf70690198092b406ecaf0c9c3b36b2bde4a3b1c80c48ceb3
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
-
-### AUTHORED_ENGLISH `en-u25-168`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8ae4e010603b12a9039cc448eb8733ff7632febc5daf0111b1e20a1aafee7c34
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs this form with first name, not with the shown words.
-
-### AUTHORED_ENGLISH `en-u25-169`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9447b76e7e9ec93fcd19c97a3d0e4945e6ae3028e1b544d172d4d1f4fd515a10
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
-
-### AUTHORED_ENGLISH `en-u25-170`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e8d9146cd8e164f91b17d6ff6262e337d428c82a8f9c2768b5d4cc77d8d18afe
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is paired with first name.
-
-### AUTHORED_ENGLISH `en-u25-171`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f8d8729957370f3e97f8302e0ee853035e7955b496fdb1fc445ac2784fc94334
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This ending means daughter of, rather than the paired form.
-
-### AUTHORED_ENGLISH `en-u25-172`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 173a106717ce2beb10412f24499c771fbaaa25b745739e4ac6e6e00cd90fe85a
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
-
-### AUTHORED_ENGLISH `en-u25-173`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 08ea8b0db51e00d6d9a1dadc02d93970b1a103877bc4f5e4dccad9fd223299a6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
-
-### AUTHORED_ENGLISH `en-u25-174`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0482f0f18dd6fbdea7cec2a518543ad8601e6d40baae13b3382bad3c9cd81f5d
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence says Russians use three names and pairs family name with this form.
-
-### AUTHORED_ENGLISH `en-u25-175`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6087fa5b673baf4c852178366d7be5449070f97fedf3f4d97803bdfc892a8695
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
-
-### AUTHORED_ENGLISH `en-u25-176`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8a93fa7d1b2236eba45ab6fb4db6fc5f5f094386b2355ecceaa59ec7fa4a3b3b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Alyosha for Alexei with a different name.
-
-### AUTHORED_ENGLISH `en-u25-177`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 771a531389613468ab953026e03dd3ff8558c8da310a302ac13fa184ed076142
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Dima for Dmitri with a different name.
-
-### AUTHORED_ENGLISH `en-u25-178`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ffc0c54793761d2ff5b2b6d8d360e5595f6dd01dd0a2ee03552f724788dc502b
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Alyosha is paired with Alexei, not with the shown name.
-
-### AUTHORED_ENGLISH `en-u25-179`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 03e0d90140a06a1547233daec5e7e656a4acdff39ade627372327727c36744c2
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Dima is paired with Dmitri, not with the shown name.
-
-### AUTHORED_ENGLISH `en-u25-180`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: eeb4b5fe38cddb62752af2a3c73a58be512aeac9ca0e0cd21418a9d1e6bb4ec7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Sasha for Alexander as the pair for the shown name.
-
-### AUTHORED_ENGLISH `en-u25-181`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3d78431cbf033997f7ff9e76d12f0d5f7e5758c7266730bf848445be606135dc
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
-
-### AUTHORED_ENGLISH `en-u25-182`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2fc855aa3a78b146e72726bad30534f0f76bddf41eb2be8f909af1bed6dd26e7
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs Sasha for Alexander with a different name.
-
-### AUTHORED_ENGLISH `en-u25-183`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 66e56feeaea9d0dfbc54f1a470940c6122499692bd8814f669057dd95a393e09
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Sasha is paired with Alexander, not with the shown name.
-
 ### AUTHORED_ENGLISH `en-u25-184`
 
 - Objectives: none
@@ -5200,10 +4862,10 @@ text=Sasha is paired with Alexander, not with the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 14e2bae1d27649e1d13448fa61325c300ee5abe12359c16fdfc0a794d57b888c
+- Content hash: a082cebdcc3725d4cfb8e53fb8a1536d29e17d411ee44cc1314a096c090db192
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u25-185`
 
@@ -5213,10 +4875,10 @@ text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4212548d2cba2df7be1e5a2f8cac13c507df057601e3749492a448a406a455d7
+- Content hash: d151c254a06f3dd60af66f2b98eccd3d8951de3aed5644ae383251dc40685713
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list includes Dima for Dmitri as the pair for the shown name.
+text=The frozen sentence pairs this form with patronymic name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-186`
 
@@ -5226,10 +4888,10 @@ text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6043a1b10122c5522a559504336f298cc46d5f126428b3b6ebeeda28cb03dc82
+- Content hash: ee451919198877a227aa1a766d3d24e86a0379bc1c92a20b5b5742242781f834
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with a different form.
+text=The frozen sentence pairs this form with family name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-187`
 
@@ -5239,10 +4901,10 @@ text=The frozen list pairs thanks with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c8453eca5db5682891de94325fa1b72acba1ad2202333cf5b9afb7e4fa222a69
+- Content hash: 04b6179ea0046ff13228b356c6c0d94c55f71cf91db0450cd3e33816c01f58bd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+text=The frozen sentence gives this ending for son of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-188`
 
@@ -5252,10 +4914,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with a different for
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e660bffc5baaeca8415a2eab3a474827d403454899df6aa10d0927bb5494e903
+- Content hash: c04ceb209250a9e4b3c2ec81a5a7aea73116db3d6bf019ffc6e03b1b2e55b2a7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is a different courtesy word.
+text=This form is paired with patronymic name.
 
 ### AUTHORED_ENGLISH `en-u25-189`
 
@@ -5265,10 +4927,10 @@ text=Thanks is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a58733d8b8e45ec19e0b5a004ba49a6e40b640313969f9a12ea8d2c3fd6036c
+- Content hash: dfeba5108f5445654ac16164fd194574bdb8546a2527247abc78617a0461f50e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is a different courtesy word.
+text=This form is paired with family name.
 
 ### AUTHORED_ENGLISH `en-u25-190`
 
@@ -5278,10 +4940,10 @@ text=The informal apology is a different courtesy word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b71f3f08b2a28b525af770275a939695b8de9aea256e922e49864c0d85e22283
+- Content hash: 70f3bc0c5a2b2830f32e23e10a7620847d74f3f281ad8926ca2e0d459a0d00de
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request and pairs that word with this form.
+text=This ending means son of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-191`
 
@@ -5291,10 +4953,10 @@ text=The frozen list says please; also used for a request and pairs that word wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24c10dd88884609ed62a4ab9033ab5d014a8aa7e702a4b4614ff179b23915ef3
+- Content hash: 1cd414aaeadf4cd6f2619849216d5114244cb3bd82d50d0150dc5fc597bb07ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+text=The frozen sentence says Russians use three names and pairs the shown words with this form.
 
 ### AUTHORED_ENGLISH `en-u25-192`
 
@@ -5304,10 +4966,10 @@ text=The frozen list pairs the shown request word with one form. Which admitted 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9863dfb6c6f801d2ea4bd6334459c5fb754eb2c27c12e4d73370aa33cab9506e
+- Content hash: 80288495af2522eb52771f56b2ac3362be440335e3776126e9b504a6a942d49e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for thanks.
+text=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-193`
 
@@ -5317,10 +4979,10 @@ text=The frozen list says please; also used for a request, not for thanks.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cb84966067a80adf6b871094da390cb936081e3f7f0633fab22d582ab4b42449
+- Content hash: 305e177826dda92e5a178dbc61c3d860e5376d0575307945a34e31eeb464ba20
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the thanks word.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u25-194`
 
@@ -5330,10 +4992,10 @@ text=Please is the request word, not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5aef4121631bf6c5d3fdb473fccc061227522e31fbf1b5dadb552630eb2dc9d2
+- Content hash: eb24e9c7f258b78d0d26d059281d5c61bbbf87c9d03973ca5a3d07ecd1a68ff4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The informal apology is not the thanks word.
+text=The frozen sentence pairs this form with first name, not with the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-195`
 
@@ -5343,10 +5005,10 @@ text=The informal apology is not the thanks word.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 660bcb1fc212471f56871cf32daba4e193d61655fbe52c51d3c824e3a68d781e
+- Content hash: 6b5e2b2adfd4e4bfb3ec647808636e9e6d5998345b8143a2d55ade84c27a98f2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+text=The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 
 ### AUTHORED_ENGLISH `en-u25-196`
 
@@ -5356,10 +5018,10 @@ text=The frozen list pairs thanks with this form and I'm sorry / excuse me (info
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1e1ae1140ec1622ef2b568add55e9e41d991eda21a9523920da3e139e0c4a2f9
+- Content hash: a202dacc19f0d00e7d5d186586f3555fa4610a0c5fbb18c1df9a4a43064767f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+text=This form is paired with first name.
 
 ### AUTHORED_ENGLISH `en-u25-197`
 
@@ -5369,10 +5031,10 @@ text=The frozen list pairs the shown thanks word with one form. Which admitted f
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b18dc66f1fb0867805dceda50d5ea385ebfc29ab254a5db24d42558c9c4863a8
+- Content hash: 4a1fd061cf9ec6e8f5a663f466e6a53b147b469a089adc3a0709f3a2e9b4c910
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list says please; also used for a request, not for the informal apology.
+text=This ending means daughter of, rather than the paired form.
 
 ### AUTHORED_ENGLISH `en-u25-198`
 
@@ -5382,10 +5044,10 @@ text=The frozen list says please; also used for a request, not for the informal 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 38c9135d9bf81487fac8d94909206365f6e7540524bbd4b791a44274b7d9e97f
+- Content hash: f8662da8aaaf14085483e5ca66ab6a2f0567aa6d6fac6a905058d524371342a5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Please is the request word, not the informal apology.
+text=The frozen sentence says Russians use three names and pairs patronymic name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-199`
 
@@ -5395,10 +5057,10 @@ text=Please is the request word, not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fede98bd34f6d9de9685ed1b686f125d66e5bd30bedfbf3260e85edba295fdfc
+- Content hash: 7f5f9862db6c6963fc525db9bdbb4f860e58fc66ca176022189da6c80f979c69
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Thanks is not the informal apology.
+text=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-200`
 
@@ -5408,10 +5070,10 @@ text=Thanks is not the informal apology.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7c4c2a9d0d59f9a4247d57c539ac1a6b18ef1ece828b02c21b9c90e637293c6b
+- Content hash: 96bd8ee762e2dafd193bbe34d62a5664e7e65c0d1adfe08f3eba0cf7ccd770b5
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
+text=The frozen sentence says Russians use three names and pairs family name with this form.
 
 ### AUTHORED_ENGLISH `en-u25-201`
 
@@ -5421,10 +5083,10 @@ text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 252554c62af5c773351a3ca112c7fdcb9e817741c14ea7c93647c78e2ac7f4b2
+- Content hash: 44f7b35fe3fa4ecf7d569de0be043ca67c180406d813a02f8c6263f32c7b5c9e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
+text=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-202`
 
@@ -5434,10 +5096,10 @@ text=The frozen list pairs the shown informal apology with one form. Which admit
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f1f59f4eb21dac138cdf24a808b8384d9c477c1ff58427eab451994ecaf08a84
+- Content hash: 7d64f3c2e638427447693fe7f6ab43b2a85823bc0580e0bbe473e0571cdc26c8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with the reply, not with the shown question.
+text=The frozen list pairs Alyosha for Alexei with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-203`
 
@@ -5447,10 +5109,10 @@ text=The frozen list pairs My name is... with the reply, not with the shown ques
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b545094b97f63691a319471dca2e7c96c44d1d3dfb7e8de67f3930dba7aa788b
+- Content hash: 47c090b98063e1d92a0170143d4b9c7976dff8cc323a460cdbb2a79f809872fa
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+text=The frozen list pairs Dima for Dmitri with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-204`
 
@@ -5460,10 +5122,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7f93b520b9e7d41e32acd67d816243287c6bd22005e5e27e99bbad576c22f95
+- Content hash: 68efefd8903039473820091b6fa99f49c27cad83845b5c4f43920c734d7908ed
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the reply, not the question.
+text=Alyosha is paired with Alexei, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-205`
 
@@ -5473,10 +5135,10 @@ text=This form is the reply, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc6088652a0d7b286a4b08deef163d837e0b19adf7aef4095a815debbbf8ca67
+- Content hash: 1b510a23dd6fca5e5383a5a875aa32afab1041c7f386ed5c0d3a90d62f0d342a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the question.
+text=Dima is paired with Dmitri, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-206`
 
@@ -5486,10 +5148,10 @@ text=This form is the formal apology, not the question.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: da827411d95dbd46efff06447ac3a96cb2daec351ad0ca05cb54c5091f58660e
+- Content hash: 956d047de25ec22d7bf91786bb80b5b1a2f2dfb042952945210a75645d86d7ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with this form and My name is... with the reply.
+text=The frozen list includes Sasha for Alexander as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-207`
 
@@ -5499,10 +5161,10 @@ text=The frozen list pairs What is your name? with this form and My name is... w
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 332e3ce559ea982608dc3e70b760912b7bd490225ac5bec01ab0f10d2bcae127
+- Content hash: c98ed9580c8b9aaabbe1b764696dfbddd10d24f8e91c7b479897161af078cffe
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+text=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-208`
 
@@ -5512,10 +5174,10 @@ text=The frozen list pairs the shown question with one form. Which admitted form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 07b3980079c9439b3f1199909baadac1919651bfd97f953b44cbd821c91c2855
+- Content hash: a52dc04d17aac081fcf8ee452f32c08d3a400ca38592cd1884229da9db57e00c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs What is your name? with the question, not with the shown reply.
+text=The frozen list pairs Sasha for Alexander with a different name.
 
 ### AUTHORED_ENGLISH `en-u25-209`
 
@@ -5525,10 +5187,10 @@ text=The frozen list pairs What is your name? with the question, not with the sh
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4e1763a3078f8df71d70b4daa30f3a1bffa6c176a10426f95fb388dfe2f5708b
+- Content hash: 1fffb4d6517e57276a2c0506864198c95d5bab2670e80f22660b1fe76e8aff01
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the question, not the reply.
+text=Sasha is paired with Alexander, not with the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-210`
 
@@ -5538,10 +5200,10 @@ text=This form is the question, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1eeea27890cdc49de44fb7c5313ad4d05b7a352f25d7fda9fd92477d8cad3b4f
+- Content hash: 9336318e6e5b4c538e47d2b0dd7659636049fa79b65d6603ed8095d877be0ac4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the reply.
+text=The frozen list includes Alyosha for Alexei as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-211`
 
@@ -5551,10 +5213,10 @@ text=This form is the formal apology, not the reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 54e061dfb9330ba17d7a4265ae47ebc71ff2c18709096e7ac35a29c679841759
+- Content hash: 16d63e23641570b39252ccd12d41202920f69f6f4bcc342d10ddd946e654989d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the question.
+text=The frozen list includes Dima for Dmitri as the pair for the shown name.
 
 ### AUTHORED_ENGLISH `en-u25-212`
 
@@ -5564,10 +5226,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5fc6b6a1dc22a7d7f539df1ef47d4ca19c984d7ccc49ab1036ab8a5737870fe1
+- Content hash: 3eedaabf695dc2a3da91f3e2392ed3ef2c943512dbecbee756b29620ba82afdb
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+text=The frozen list pairs thanks with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-213`
 
@@ -5577,10 +5239,10 @@ text=The frozen list pairs the shown reply with one form. Which admitted form is
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1ad8e74747fcbb5bd34744ccdbd342a304b529d082a1bde94955f60443c09dac
+- Content hash: a9fa3922bc54ebbd96d957ccd2f1ba533e920f6e6aa9081f0795ab38c16c52f7
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+text=The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-214`
 
@@ -5590,10 +5252,10 @@ text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not wi
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 1712e995e6ce69ea4a4187037b4c69c63a36fdbebe920779060d724293e3dc90
+- Content hash: e3922163830aec5fa7778d8e1ba64bebe25f0f5ef763a6f9e4cad7ea2cc89d88
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs How are you? with this form, not with the name reply.
+text=Thanks is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-215`
 
@@ -5603,10 +5265,10 @@ text=The frozen list pairs How are you? with this form, not with the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ba7000de7f51be09d6e557fea064c85feecb506c9c6006edd24c1cfe0376103e
+- Content hash: dfdbd88cbc9506f6c66bd4f155e07ab96360852b42e583916d8b81a1a46f59ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form is the formal apology, not the name reply.
+text=The informal apology is a different courtesy word.
 
 ### AUTHORED_ENGLISH `en-u25-216`
 
@@ -5616,10 +5278,10 @@ text=This form is the formal apology, not the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb6a6e137c7bd0b121275f7c2fd96b6cbbefae066e179b51cba0fd358e672437
+- Content hash: 636ed4111ddab9a75ea5484774f290bbe9617fd1fbd80d6ff5eef0bd843581b2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This form asks how someone is, rather than giving the name reply.
+text=The frozen list says please; also used for a request and pairs that word with this form.
 
 ### AUTHORED_ENGLISH `en-u25-217`
 
@@ -5629,10 +5291,10 @@ text=This form asks how someone is, rather than giving the name reply.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 355fafbba20d13885cefab0f61a64cbc15ff32dfc20fc171033559c807bcc92d
+- Content hash: 2496cd7f1b7e86b73ad4017d2149a50735e0f56680958e19900c97f3c7adf63b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+text=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-218`
 
@@ -5642,10 +5304,10 @@ text=The frozen list pairs My name is... with this reply and What is your name? 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9795c6b95ed23442dfedad8c45044dcfabb0c627acf2431127de642059d17f0e
+- Content hash: 821e9bf881d3b4f4342f8031ab315d216bcf1a3de268c4f4fa480e590e5ae0a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+text=The frozen list says please; also used for a request, not for thanks.
 
 ### AUTHORED_ENGLISH `en-u25-219`
 
@@ -5655,10 +5317,10 @@ text=The frozen list gives the shown question and a separate reply. Which admitt
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 270d4c07c894cd897532098ae619e06b855d57ed7d0ff240387b693d78ffd19c
+- Content hash: 045399e46d2667ee19ea39a5f36561d8f160ba42c90c3e30939777252b348c19
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen source pairs the shown form
+text=Please is the request word, not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-220`
 
@@ -5668,10 +5330,10 @@ text=The frozen source pairs the shown form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d655eb3ef351be493ad447624dbcf4b58e9745ab95714f3ccea923cce1a979b9
+- Content hash: 4dd5eef32223906758134bc50fb0537d7b38d666c31366c502cd8cad8af4f812
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=with the admitted gloss
+text=The informal apology is not the thanks word.
 
 ### AUTHORED_ENGLISH `en-u25-221`
 
@@ -5681,10 +5343,10 @@ text=with the admitted gloss
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f420459e0ac28d0aa8a139f8761bf5f4fbe2fcf83ce228fa8be6b1419ec39d31
+- Content hash: 9b42fb9960f5d33238c96edf83f11a818e6b36b3d1ca09c742974d6a9db01e1a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted list name is written for the shown form?
+text=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-222`
 
@@ -5694,10 +5356,10 @@ text=Which admitted list name is written for the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9ee23a9c4ef9e46b6b8826bf0b68cbdb98855ea8016096b668bdc2699cfc010f
+- Content hash: 6c6a977ff7d9206dfe0f61d97fc831279082107b435c01ed989c74b8399eec28
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted setting is written for the shown address form?
+text=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-223`
 
@@ -5707,10 +5369,10 @@ text=Which admitted setting is written for the shown address form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: fafcec7a376d0d5fb1e90350a9c6afa4474ba33ac5aad1bbc52999fb5cc0ad68
+- Content hash: f39ffa989d36b5ffd1007ec0b258578ec0bc3cb5529d83ab06b879012c37be38
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted name and courtesy lines
+text=The frozen list says please; also used for a request, not for the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-224`
 
@@ -5720,10 +5382,10 @@ text=Admitted name and courtesy lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf3aa4dd614b75cb75a63d2dfe7193427f7801a1c5e116199f06d3ee053fb957
+- Content hash: b5af5a413558a0e5b480744161bda48f95f08018e1a01a5722a9a973dca65167
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.
+text=Please is the request word, not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-225`
 
@@ -5733,10 +5395,10 @@ text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ab17e8ef2c4c45d727c2921b18324cdb402c78c5b47e27ef98e8feeec762b546
+- Content hash: 71202dffbafab56bda40bd65e7065e2e45fd39d9fcb9001cd0f7f9dfa4c9003e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+text=Thanks is not the informal apology.
 
 ### AUTHORED_ENGLISH `en-u25-226`
 
@@ -5746,10 +5408,10 @@ text=Open Lesson 25 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f3412036b1f5a3b7111987af71b066c51f95bf407df84f9ce9cda4a305ffd00a
+- Content hash: 7c4344128924eac0aeead1422762d0bd0636ead87bb11223307629115d24146a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen list pairs I'm sorry / excuse me (informal) with this form.
 
 ### AUTHORED_ENGLISH `en-u25-227`
 
@@ -5759,10 +5421,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 824c6161d4b66e5674ae034f1deb6598c9320a0568bdfdc6745d140dbedca132
+- Content hash: 71ec5f9746dda50f75e8aef410b7453e68273593d04e4d1da58752dba8fce0f4
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-228`
 
@@ -5772,10 +5434,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4942d43f3ece4eee4510c8087bac8989985cee2b03b6e944ad03dcf5ef470026
+- Content hash: cbd348bbd4842a2d89f806d4288cdfbcb17923c4cfe75a37e71260b45e63e970
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=The frozen list pairs My name is... with the reply, not with the shown question.
 
 ### AUTHORED_ENGLISH `en-u25-229`
 
@@ -5785,10 +5447,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c73c5d25779a24f7a66266e3d9a7100ce4241b67973c5ae538ab6c5b3d619b44
+- Content hash: 0bd22b8f8be2a8d370ac56a3b5ccc90f2cfc5a9461c4da5edb9d6f6e8dfffccf
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 
 ### AUTHORED_ENGLISH `en-u25-230`
 
@@ -5798,10 +5460,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 379d4a56ca95731cadbe84e50f30ea04b0e486f6c5ecc6f8a7da8e917ce2c71d
+- Content hash: e447ab50eedafdb53f5d2b5c7f29607bf92b98599cdc38126a807183616a8d17
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=This form is the reply, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-231`
 
@@ -5811,10 +5473,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 2a04c4c7ea0b00232d6da67302b0720729afdf68f6b2bd487defad473f455102
+- Content hash: a831d4c075f27e90c1e2bd22e1c8ea7177a7753d65e517cf5e3f915cba5e03b9
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 25 in your copy
+text=This form is the formal apology, not the question.
 
 ### AUTHORED_ENGLISH `en-u25-232`
 
@@ -5824,10 +5486,10 @@ text=Work Lesson 25 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0ca7bf1a8933e63a8c8b234595aee52461346322fdfa3bc98db7e82395c28189
+- Content hash: 1853dd3d70792015c6cd839829d097eedf45c506d556892d49786233d911c2a8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The frozen list pairs What is your name? with this form and My name is... with the reply.
 
 ### AUTHORED_ENGLISH `en-u25-233`
 
@@ -5837,10 +5499,10 @@ text=Do Lesson 25 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6200b9ced17e7b9741be016a6363bce25f481323796375b16138e80331f11d03
+- Content hash: ee72f55443d9c5066faeaa9c61da9d192f0406b2d436bf5a48b8ec583aa69f89
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 25 in your copy and complete its lesson work.
+text=The frozen list pairs the shown question with one form. Which admitted form is that pair?
 
 ### AUTHORED_ENGLISH `en-u25-234`
 
@@ -5850,10 +5512,10 @@ text=Open Lesson 25 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e93163a1bc3631fb4f0e19b03cefdbc00fe4cc2543d4d349795cebd4d0bd9fe3
+- Content hash: 76f6146813e7db717dfff6f207385c036b4185a0ef9fa9acb6b4f5ff17ea008d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 25 book work
+text=The frozen list pairs What is your name? with the question, not with the shown reply.
 
 ### AUTHORED_ENGLISH `en-u25-235`
 
@@ -5863,10 +5525,10 @@ text=Record Lesson 25 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d3c00442a91b5740976cc5c0b246b7613f6ebcee2846c869f2dc98ad09b3698a
+- Content hash: 2c6bc0793cc249274b2ade0d3661dacddcf4a8e73070cc44d26b3d7ec7534750
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=This form is the question, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-236`
 
@@ -5876,10 +5538,10 @@ text=When you have done Lesson 25 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f12e5e6b1aecb74ce75cd9d8764a37ea27d615b52c9b340dcd7bd85db2ed9f27
+- Content hash: e310f90fea813a1131513bded1966a362b3c2ea6dc245ae04ceabb94c9bb88b8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 25 work in your copy.
+text=This form is the formal apology, not the reply.
 
 ### AUTHORED_ENGLISH `en-u25-237`
 
@@ -5889,10 +5551,10 @@ text=Self-attest only after the Lesson 25 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6132785f426e12ea0a8f1f5ad4f9886ef04ecb5a849c9e49f5e33a376cc99539
+- Content hash: 79cb49ec3302019c3826f827ea3a25b210572c5a51bac7adc50da73021c22b67
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=A general nickname-formation rule stays in the copy you own
+text=The frozen list pairs My name is... with this reply and What is your name? with the question.
 
 ### AUTHORED_ENGLISH `en-u25-238`
 
@@ -5902,7 +5564,345 @@ text=A general nickname-formation rule stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 478ff93d7dac8726a4bec823177837518dccc4bae05174aafb520532eabf5e27
+- Content hash: 0968f35290a6298c772dd78feed3c9f85ecd0213885bc85735edb1e8d8d449e6
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+
+### AUTHORED_ENGLISH `en-u25-239`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: edc24708823eab078d281c8ed946f8d795c9ee1bc7c9c3e7d20aa2c0cdb97b4f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+
+### AUTHORED_ENGLISH `en-u25-240`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 960a8ba64fb943d1442c5036111bb37d06f4e67132af5d69b27dcd6b13d83923
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs How are you? with this form, not with the name reply.
+
+### AUTHORED_ENGLISH `en-u25-241`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 19db20308a9ebafd37b51c2c6962bfc603842f794314c0e8c745e521c02c56ba
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form is the formal apology, not the name reply.
+
+### AUTHORED_ENGLISH `en-u25-242`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: db1dbbd4587119e0fc193b3cf5d1ab4a7227a39a3fb9626e07c2baea61f99bcd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=This form asks how someone is, rather than giving the name reply.
+
+### AUTHORED_ENGLISH `en-u25-243`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 80b3a201734c8577669b6ba3cf58ed2b91af9aff0a4e1c3ec2a9adf4de50da22
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+
+### AUTHORED_ENGLISH `en-u25-244`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ed0e83ebcf2947e7d9a925cc94b8e0015de94ad7f8c4dbdc7577cb74e4919c5f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+
+### AUTHORED_ENGLISH `en-u25-245`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: cc5d1b42ebe76da69c144019b2b0ee00cabca8b93f6c88e9767241d7f0f5e3b3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The frozen source pairs the shown form
+
+### AUTHORED_ENGLISH `en-u25-246`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2242016b7c0b28e7e99bedec040d52e1adc89334b4454a28bc79cdd87011797b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=with the admitted gloss
+
+### AUTHORED_ENGLISH `en-u25-247`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a2804c3c3239cbc8800ba7a307633714e689a6c860bbaefdb3d6ef723051205e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted list name is written for the shown form?
+
+### AUTHORED_ENGLISH `en-u25-248`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b8e8c4e67ec22f655afe60a2f42eb26ef8b053da0b39816bb2e7ca96aced1fed
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Which admitted setting is written for the shown address form?
+
+### AUTHORED_ENGLISH `en-u25-249`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 73e7328c4f1a86897ab977348afa895d766c4c268a2acdd1021b16dbc1fa88df
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted name and courtesy lines
+
+### AUTHORED_ENGLISH `en-u25-250`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 666ca4ac26e131bef8a6e71fa103b22e936c7189f8fa0c43bb7cd8146eb268b4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u25-251`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f556066c6f18bc9c0f7a08e94aa7e1e741bfb6361055a51516267998a228c193
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 25 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u25-252`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 85e270c3eed6aa24ea64c1625a0b189c1d25787c9d4749568a5b70dd10454731
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u25-253`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dd7351445ba029de056f9b4999b5f065e586b37949693bfaac05296eef3a5756
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u25-254`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5c4700d8b0e51ed06be3ea333e2f3e8fabb2e9d109e6f99b627002698f136ae0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u25-255`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 65257457f8ee8755700cd0ad476f1e510ebb6f7e147a374913306977b76c68ad
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u25-256`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a6f5c1557fc0b77bc5c5b1390fc71304e61b34a845bd1511660bd95c41c1c2e1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u25-257`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 38f65939c0fd276190f2fcbb88b2191702668a70500726d988649cb631581eea
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 25 in your copy
+
+### AUTHORED_ENGLISH `en-u25-258`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 83073759d844d12f85582090e9a425d35531f7c0d99517358721a334412f3a94
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u25-259`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b60aae2ea80be3fc514205651f5c6abb27ac5d429a5b8abfa3a6baee5fcb2dab
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 25 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u25-260`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 26bbfae165735e478bd1579124101f1c4d4b5d593c121442828c4114e453cbf3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 25 book work
+
+### AUTHORED_ENGLISH `en-u25-261`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ecb9e929c8805f4bcc438fc6c342212800f606888521432342c5116fe4d261bf
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u25-262`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 55bd7bf2d926f7d5d2540c79e2275da4e53929ca39d2f88146467362c077ded1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 25 work in your copy.
+
+### AUTHORED_ENGLISH `en-u25-263`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b195f49f6b22079809535647451daeb5234a8308cfc20d6e4f658c180c76b07a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A general nickname-formation rule stays in the copy you own
+
+### AUTHORED_ENGLISH `en-u25-264`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: acb9948d08b26b7c3ea05968d03c2b94b134ee082dc72c0d15b1ed5df6fb791a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.

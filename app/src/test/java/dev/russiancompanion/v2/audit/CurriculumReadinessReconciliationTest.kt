@@ -143,7 +143,7 @@ class CurriculumReadinessReconciliationTest {
         }
         assertTrue(model.units.all { it.localExperienceBlocker == "NONE" })
         assertEquals(listOf(1, 2), model.units.filter { it.assetBlocker != "NONE" }.map { it.unitNumber })
-        assertEquals(listOf(23), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
+        assertEquals(emptyList<Int>(), model.units.filter { it.reviewPackageDigest == "NONE" }.map { it.unitNumber })
         assertTrue(model.releaseGateBlockers.contains("OWNER_RELEASE_DECISION_NOT_RETAINED"))
         assertTrue(model.releaseGateBlockers.contains("CANDIDATE_NOT_FROZEN"))
     }

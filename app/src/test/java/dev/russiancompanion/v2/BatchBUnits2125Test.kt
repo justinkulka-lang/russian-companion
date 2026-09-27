@@ -35,6 +35,7 @@ class BatchBUnits2125Test {
             "negation-alternation" to "obj-u24-alternation",
             "negative-pronoun" to "obj-u24-stand-ins",
             "register" to "obj-u25-address",
+            "elapsed-time-duration" to "obj-u23-duration",
         )
         expected.forEach { (claim, objectiveId) ->
             val capability = pack.sourceCapabilities.single { it.supportedClaim == claim }
@@ -47,13 +48,27 @@ class BatchBUnits2125Test {
             assertEquals(capability.sourceRecordId, record.sourceRecordId)
             assertEquals(capability.sourceHash, record.sourceHash)
             assertEquals(capability.sourceHash, sha256(record.originalSourceText))
-            assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
+            if (capability.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
+                assertEquals("https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/", record.sourceUrl)
+                assertFalse(record.sourceUrl.contains("oldid="))
+                assertTrue(record.attribution.contains(capability.sourceRevision))
+                assertTrue(record.attribution.contains("Anna Tumarkin"))
+                assertTrue(record.attribution.contains("Shannon Donnally Quinn"))
+                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
+                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
+                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
+                assertTrue(capability.exactSpan.contains("emphasizes the duration"))
+            } else {
+                assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
+            }
         }
         assertTrue(
             pack.sourceCapabilities.none {
-                it.supportedClaim in setOf("elapsed-time-duration", "negation-scope", "productive-diminutive")
+                it.supportedClaim in setOf("completion-over-period", "negation-scope", "productive-diminutive")
             },
         )
+        assertTrue(BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD.isEmpty())
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" && it.objectiveId == "obj-u23-completion" })
         listOf(21, 22).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
             assertEquals("DEVELOPMENT", pack.unit(number)!!.installState)
@@ -91,6 +106,13 @@ class BatchBUnits2125Test {
         val ordinalTwo = shipped(pack, collective, "\u0432\u0442\u043e\u0440\u043e\u0301\u0439")
         assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(two, collectiveTwo, listOf(ordinalTwo)))
         assertNull(V2Validator.classifyRelation(two, ordinalTwo, listOf(collectiveTwo)))
+
+        val ranges = "obj-u23-ranges"
+        val sixties = shipped(pack, ranges, "\u0412 \u0448\u0435\u0441\u0442\u0438\u0434\u0435\u0441\u044f\u0442\u044b\u0445 \u0433\u043e\u0434\u0430\u0445")
+        val in1960 = shipped(pack, ranges, "in the 1960s")
+        val in1990 = shipped(pack, ranges, "in the 1990s")
+        assertEquals("EXPLICIT_SOURCE_PAIR", V2Validator.classifyRelation(sixties, in1960, listOf(in1990)))
+        assertNull(V2Validator.classifyRelation(sixties, in1990, listOf(in1960)))
 
         val item = pack.items.single { it.id == "u21-g-purpose-0" }
         val distractor = item.options.first { it != item.answer }
@@ -162,6 +184,16 @@ class BatchBUnits2125Test {
             "obj-u22-both-forms",
             "obj-u22-half-forms",
             "obj-u22-collective",
+            "obj-u23-ranges",
+            "obj-u23-beginning",
+            "obj-u23-during-event",
+            "obj-u23-duration",
+            "obj-u23-elapsed",
+            "obj-u24-alternation",
+            "obj-u24-stand-ins",
+            "obj-u24-concord",
+            "obj-u28-imperfective-adverb",
+            "obj-u28-perfective-adverb",
         )
         val rephrasings = listOf(
             "Which admitted gloss is written after the equals sign?",
@@ -279,6 +311,30 @@ class BatchBUnits2125Test {
         )
         assertTrue(ago, ago.contains("no independent elapsed-time-duration admission"))
         assertTrue(ago, ago.contains("bounded time expression does not clear elapsed-time-duration"))
+        assertTrue(ago, ago.contains("partial duration evidence does not clear elapsed-time-duration"))
+
+        val partial = overreach(
+            pack,
+            "\u0412 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0443\u0440\u043e\u043a\u0430 \u0443\u0447\u0435\u043d\u0438\u043a\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043b\u0438 \u043d\u0430\u0434 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u043c.",
+            23,
+            "obj-u23-duration",
+            "elapsed-time-duration",
+            "cap-partial-duration",
+        )
+        assertTrue(partial, partial.contains("no independent elapsed-time-duration admission"))
+        assertTrue(partial, partial.contains("partial duration evidence does not clear elapsed-time-duration"))
+        assertFalse(partial, partial.contains("bounded time expression does not clear elapsed-time-duration"))
+
+        val isolated = overreach(
+            pack,
+            "\u0434\u0443\u043c\u0430\u044f",
+            28,
+            "obj-u28-imperfective-adverb",
+            "imperfective-verbal-adverb",
+            "cap-isolated-adverb",
+        )
+        assertTrue(isolated, isolated.contains("an isolated adverbial example does not state the present-versus-past relationship"))
+        assertTrue(isolated, isolated.contains("is not an admitted frozen source"))
 
         val concord = overreach(
             pack,
@@ -312,6 +368,121 @@ class BatchBUnits2125Test {
         )
         assertTrue(diminutive, diminutive.contains("no independent productive-diminutive admission"))
         assertTrue(diminutive, diminutive.contains("bounded diminutive recognition does not clear productive-diminutive"))
+
+        val durationSpan = BatchBSources.ADMITTED_ELAPSED_TIME.single().exactSpan
+        val duration = overreach(
+            pack,
+            durationSpan,
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-duration-as-completion",
+        )
+        assertTrue(duration, duration.contains("no independent completion-over-period admission"))
+        assertTrue(duration, duration.contains("duration evidence does not clear completion-over-period"))
+        assertFalse(duration, duration.contains("ago, during, or range evidence does not clear completion-over-period"))
+
+        val agoAsCompletion = overreach(
+            pack,
+            BatchBSources.AGO_SPAN,
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-ago-as-completion",
+        )
+        assertTrue(agoAsCompletion, agoAsCompletion.contains("no independent completion-over-period admission"))
+        assertTrue(agoAsCompletion, agoAsCompletion.contains("ago, during, or range evidence does not clear completion-over-period"))
+
+        val duringSpan = pack.provenanceRecords.first { it.objectiveId == "obj-u23-during-event" }.originalSourceText
+        val during = overreach(
+            pack,
+            duringSpan,
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-during-as-completion",
+        )
+        assertTrue(during, during.contains("ago, during, or range evidence does not clear completion-over-period"))
+
+        val rangeSpan = pack.provenanceRecords.first { it.objectiveId == "obj-u23-ranges" }.originalSourceText
+        val range = overreach(
+            pack,
+            rangeSpan,
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-range-as-completion",
+        )
+        assertTrue(range, range.contains("ago, during, or range evidence does not clear completion-over-period"))
+
+        val keyword = overreach(
+            pack,
+            "completion over a period during ago",
+            23,
+            "obj-u23-completion",
+            "completion-over-period",
+            "cap-keyword-completion",
+        )
+        assertTrue(keyword, keyword.contains("no independent completion-over-period admission"))
+        assertTrue(keyword, keyword.contains("keyword or co-occurrence evidence does not clear completion-over-period"))
+        assertTrue(keyword, keyword.contains("has no reviewable instruction and check chain"))
+    }
+
+    @Test
+    fun completionOverPeriodClearsOnlyForACompleteMatchingAdmission() {
+        val pack = pack()
+        val span = "A frozen source states the completion-over-period distinction."
+        val admission = dev.russiancompanion.v2.curriculum.GovernedSourceAdmission(
+            sourceId = "src-pressbooks-diverse-russian-usa-grammar",
+            sourceRevision = "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            sourceRecordId = "usa-grammar:completion-over-period",
+            sourceHash = sha256(span),
+            exactSpan = span,
+            unitNumber = 23,
+            objectiveId = "obj-u23-completion",
+            governedClaim = "completion-over-period",
+        )
+        val matching = dev.russiancompanion.v2.curriculum.V2SourceCapability(
+            id = "cap-matching-completion",
+            sourceId = admission.sourceId,
+            sourceRevision = admission.sourceRevision,
+            sourceRecordId = admission.sourceRecordId,
+            sourceHash = admission.sourceHash,
+            exactSpan = admission.exactSpan,
+            unitNumber = admission.unitNumber,
+            objectiveId = admission.objectiveId,
+            supportedClaim = admission.governedClaim,
+        )
+        assertTrue(BatchBSources.admits(matching, setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(sourceId = "src-openrussian-50e210c4"), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(sourceRevision = "1"), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(sourceRecordId = "other"), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(sourceHash = "0".repeat(64)), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(exactSpan = BatchBSources.ADMITTED_ELAPSED_TIME.single().exactSpan), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(unitNumber = 24), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching.copy(objectiveId = "obj-u23-duration"), setOf(admission), "completion-over-period"))
+        assertFalse(BatchBSources.admits(matching, setOf(admission), "elapsed-time-duration"))
+        assertFalse(BatchBSources.admits(matching, BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD, "completion-over-period"))
+        val claimed = pack.copy(sourceCapabilities = pack.sourceCapabilities + matching)
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(claimed, 23).any { it.claim == "completion-over-period" })
+        val durationHost = pack.provenanceRecords.first { it.originalSourceText == BatchBSources.ADMITTED_ELAPSED_TIME.single().exactSpan }
+        val wrong = matching.copy(
+            sourceId = durationHost.sourceId,
+            sourceRevision = durationHost.sourceRevision,
+            sourceRecordId = durationHost.sourceRecordId,
+            sourceHash = durationHost.sourceHash,
+            exactSpan = durationHost.originalSourceText,
+        )
+        val rebound = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map { record ->
+                if (record.itemId == durationHost.itemId) record.copy(objectiveId = "obj-u23-completion") else record
+            },
+            sourceCapabilities = pack.sourceCapabilities + wrong,
+        )
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(rebound, 23).any { it.claim == "completion-over-period" })
+        assertTrue(V2Validator.contentCompletenessErrors(rebound, rebound.unit(23)!!).any {
+            it.contains("without an admitted completion-over-period source capability")
+        })
     }
 
     private fun overreach(

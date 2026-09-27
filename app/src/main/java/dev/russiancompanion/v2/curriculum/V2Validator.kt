@@ -729,11 +729,7 @@ internal object V2Validator {
                 unit,
                 "Unit 22 is not content-complete without admitted declined-numeral, both, one-and-a-half, and collective source capabilities",
             )
-            23 -> missingCapabilityError(
-                pack,
-                unit,
-                "Unit 23 is not content-complete without an admitted elapsed-time and duration source capability",
-            )
+            23 -> unit23SourceGap(pack, unit)
             24 -> missingCapabilityError(
                 pack,
                 unit,
@@ -778,12 +774,17 @@ internal object V2Validator {
         "obj-u22-both-forms",
         "obj-u22-half-forms",
         "obj-u22-collective",
-        "obj-u23-ago",
-        "obj-u23-during",
-        "obj-u23-step-out",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
         "obj-u24-alternation",
         "obj-u24-stand-ins",
+        "obj-u24-concord",
         "obj-u25-address",
+        "obj-u28-imperfective-adverb",
+        "obj-u28-perfective-adverb",
     )
 
     private val REQUIRED_SOURCE_CAPABILITIES = mapOf(
@@ -834,6 +835,7 @@ internal object V2Validator {
         ),
         23 to listOf(
             RequiredSourceCapability("obj-u23-duration", "elapsed-time-duration"),
+            RequiredSourceCapability("obj-u23-completion", "completion-over-period"),
         ),
         24 to listOf(
             RequiredSourceCapability("obj-u24-alternation", "negation-alternation"),
@@ -896,6 +898,11 @@ internal object V2Validator {
             } else {
                 emptyList()
             }
+            23 -> if ("completion-over-period" in unresolved) {
+                listOf("Unit 23 is missing a completion-over-period source capability")
+            } else {
+                emptyList()
+            }
             else -> emptyList()
         }
     }
@@ -944,6 +951,28 @@ internal object V2Validator {
             else -> missing.dropLast(1).joinToString(", ") + ", and " + missing.last()
         }
         return listOf("Unit ${unit.number} is not content-complete without admitted $listed source capabilities")
+    }
+
+    /**
+     * Duration and completion over a period are separate claims. A resolved
+     * duration span must not be reported as the missing completion distinction.
+     */
+    private fun unit23SourceGap(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+        val missing = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty().filter { requirement ->
+            pack.sourceCapabilities.none { capability ->
+                capability.unitNumber == unit.number &&
+                    capability.objectiveId == requirement.objectiveId &&
+                    capability.supportedClaim == requirement.claim &&
+                    capabilityDefects(pack, capability).isEmpty()
+            }
+        }.map { it.claim }
+        if (missing.isEmpty()) return emptyList()
+        val listed = when (missing.size) {
+            1 -> "an admitted ${missing[0]}"
+            else -> "admitted ${missing.joinToString(" and ")}"
+        }
+        val noun = if (missing.size == 1) "source capability" else "source capabilities"
+        return listOf("Unit 23 is not content-complete without $listed $noun")
     }
 
     private fun missingCapabilityError(pack: V2CurriculumPack, unit: V2Unit, message: String): List<String> {
@@ -1083,8 +1112,8 @@ internal object V2Validator {
     private val ADMITTED_UNITS_26_30_SOURCES = setOf(
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:Basic word order, both in conversation and written language, is [[subject–verb–o|30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6",
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar::\u0441\u0434\u0435\u0301\u043b\u0430\u0442\u044c \u2013 to do/to make (perfective verb)\n:\u0441\u0434\u0435\u0301\u043b\u0430'''\u043d\u043d'''\u044b\u0439 \u2013 done/made\n\nPassi|d5d52caab6dbed44f28ad3781309cb45b3437e19e891124b10dda641eadccf7c",
-        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:Present adverbial participles are formed by adding the suffix -\u0430/-\u044f (or sometime|20f7c259be895994aca929d2db990f14799def4b936f69efea557d852bb7a511",
-        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:most are formed with the suffix -\u0432 (alternative form -\u0432\u0448\u0438, always used before -\u0441|686f0cfb2d846647d6ab756b646000f47d7de4b7060ba8a3860cf4f32bb660f6",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:imperfective ones are usually present, while perfective ones can only be past (s|478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad",
+        "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:usually present, while perfective ones can only be past (since they denote actio|831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102",
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:The active past participle is used in order to indicate actions that happened in|dee66aeeccb1cff104490a5dd0378a8f9f44bf6570a07d2fa906224785b1e9b8",
         "src-wikipedia-russian-grammar-1369617627|1369617627|grammar:such as {{wikt-lang|ru|\u0431\u0435\u0436}} ('beige', non-adapted form of {{wikt-lang|ru|\u0431\u0435\u0301\u0436\u0435\u0432|0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
         "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
@@ -1703,6 +1732,7 @@ internal object V2Validator {
             "negative-pronoun" -> BatchBSources.ADMITTED_NEGATIVE_PRONOUN
             "register" -> BatchBSources.ADMITTED_REGISTER
             "elapsed-time-duration" -> BatchBSources.ADMITTED_ELAPSED_TIME
+            "completion-over-period" -> BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD
             "negation-scope" -> BatchBSources.ADMITTED_NEGATION_SCOPE
             "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
             else -> return emptyList()
@@ -1734,6 +1764,33 @@ internal object V2Validator {
         }
         if (capability.supportedClaim == "elapsed-time-duration" && span in BatchBSources.BOUNDED_TIME_SPANS) {
             errors += "Source capability ${capability.id} bounded time expression does not clear elapsed-time-duration"
+        }
+        if (capability.supportedClaim == "elapsed-time-duration" && !span.contains("emphasizes the duration")) {
+            errors += "Source capability ${capability.id} partial duration evidence does not clear elapsed-time-duration"
+        }
+        if (capability.supportedClaim == "completion-over-period" && span.contains("emphasizes the duration")) {
+            errors += "Source capability ${capability.id} duration evidence does not clear completion-over-period"
+        }
+        if (capability.supportedClaim == "completion-over-period" && (
+                span in BatchBSources.BOUNDED_TIME_SPANS ||
+                    span.contains("in a certain decade") ||
+                    span.contains("during another event") ||
+                    span.contains("relate events in time")
+                )
+        ) {
+            errors += "Source capability ${capability.id} ago, during, or range evidence does not clear completion-over-period"
+        }
+        if (capability.supportedClaim == "completion-over-period" &&
+            !BatchBSources.admits(capability, BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD, "completion-over-period") &&
+            (span.contains("completion") || span.contains("co-occur"))
+        ) {
+            errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear completion-over-period"
+        }
+        if (
+            capability.supportedClaim == "imperfective-verbal-adverb" && !span.contains("usually present") ||
+            capability.supportedClaim == "perfective-verbal-adverb" && !span.contains("can only be past")
+        ) {
+            errors += "Source capability ${capability.id} an isolated adverbial example does not state the present-versus-past relationship"
         }
         if (capability.supportedClaim == "negation-scope" &&
             (folded.contains("\u043d\u0438\u043a\u043e\u043c\u0443") || span.contains("\u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435"))
@@ -2188,6 +2245,16 @@ internal object V2Validator {
         "obj-u22-both-forms",
         "obj-u22-half-forms",
         "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u28-imperfective-adverb",
+        "obj-u28-perfective-adverb",
     )
     /**
      * Independent concept checks cannot be answered by retrieving a source position.
@@ -2968,8 +3035,15 @@ internal object V2Validator {
                 errors += "Provenance ${record.itemId} Wiktionary license route is missing"
             }
             if (record.sourceId.startsWith("src-pressbooks-")) {
-                if (record.sourceRevision != BatchARemainingSources.PRESSBOOKS_REVISION ||
-                    !record.attribution.contains(BatchARemainingSources.PRESSBOOKS_REVISION) ||
+                val expected = BatchARemainingSources.PRESSBOOKS_REVISIONS[record.sourceId]
+                val otherRevision = BatchARemainingSources.PRESSBOOKS_REVISIONS
+                    .filterKeys { it != record.sourceId }
+                    .values
+                    .any { record.attribution.contains(it) || record.sourceRevision == it }
+                if (expected == null ||
+                    record.sourceRevision != expected ||
+                    !record.attribution.contains(expected) ||
+                    otherRevision ||
                     !record.attribution.contains("Anna Tumarkin") ||
                     !record.attribution.contains("Shannon Donnally Quinn") ||
                     !record.attribution.contains("CC BY-SA 4.0") ||

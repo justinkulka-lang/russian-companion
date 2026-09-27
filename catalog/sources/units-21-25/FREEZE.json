@@ -46,6 +46,20 @@
         "revisionFile": "../units-16-20/wiktionary/copyrights-87545419.revision.json",
         "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
         "requiredStatement": "The original texts of Wiktionary entries are dual-licensed to the public under both the '''[[WT:CC-BY-SA|Creative Commons Attribution-ShareAlike 4.0 International License]]''' (CC-BY-SA)"
+      },
+      "pressbooks-usa-grammar": {
+        "appliesToSourceIds": [
+          "src-pressbooks-diverse-russian-usa-grammar"
+        ],
+        "title": "Diverse Russian: A Multicultural Exploration",
+        "authors": "Anna Tumarkin and Shannon Donnally Quinn",
+        "url": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+        "file": "pressbooks/usa-grammar.html",
+        "sha256": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+        "byteCount": 302063,
+        "retrieved": "2026-09-26T22:52:41Z",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.",
+        "licenseId": "CC BY-SA 4.0"
       }
     }
   },
@@ -109,6 +123,12 @@
       "disposition": "EXCLUDED",
       "licenseId": null,
       "scope": "The private owned PDF is an observation source only. Its prose, examples, exercises, and page images are not admitted."
+    },
+    {
+      "id": "pressbooks-usa-grammar-87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Diverse Russian time ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago, only where the retained chapter states them. This Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. A partial line does not clear elapsed-time-duration. The chapter does not state a completion-over-period distinction."
     }
   ],
   "wikibooks": {
@@ -230,7 +250,7 @@
       "url": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
       "licenseRoute": "wikipedia",
       "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
-      "scope": "Reflexive себя contrast, чтобы glossed so that, collective numeral column, negation compare, and three bounded time examples. Not a full duration system."
+      "scope": "Reflexive себя contrast, чтобы glossed so that, collective numeral column, and the negation compare. Bounded ago, during, and step-out lines stay frozen and do not clear elapsed-time-duration."
     },
     {
       "key": "morfologiya",
@@ -316,6 +336,21 @@
       "licenseRoute": "ruwiki",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153012874 identifies the contributors.",
       "scope": "Printed full, short, and diminutive name lists and the stated register sentences. Not a universal social rule."
+    },
+    {
+      "key": "usa-grammar",
+      "title": "Семейная история и иммиграция: Грамматика",
+      "oldid": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+      "file": "pressbooks/usa-grammar.html",
+      "sha256": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+      "byteCount": 302063,
+      "retrieved": "2026-09-26T22:52:41Z",
+      "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+      "url": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+      "licenseRoute": "pressbooks-usa-grammar",
+      "transform": "pressbooks-html",
+      "authors": "Anna Tumarkin and Shannon Donnally Quinn",
+      "attribution": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. Retained chapter HTML sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171 retrieved 2026-09-26T22:52:41Z. This Pressbooks license route is not a Wikipedia, Wiktionary, or Wikibooks license."
     }
   ]
 }
