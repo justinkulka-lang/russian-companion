@@ -8343,7 +8343,7 @@
       "kind": "LEXICAL",
       "letterId": "",
       "display": "СНГ",
-      "note": "буквенные аббревиатуры",
+      "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u30-abbreviation"
@@ -8353,7 +8353,7 @@
       "kind": "LEXICAL",
       "letterId": "",
       "display": "ЭВМ",
-      "note": "буквенные аббревиатуры",
+      "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u30-abbreviation"
@@ -8363,7 +8363,7 @@
       "kind": "LEXICAL",
       "letterId": "",
       "display": "ГАИ",
-      "note": "звуковые аббревиатуры на гласную",
+      "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u30-abbreviation"
@@ -8373,7 +8373,7 @@
       "kind": "LEXICAL",
       "letterId": "",
       "display": "гороно",
-      "note": "звуковые аббревиатуры на гласную",
+      "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "objectiveId": "obj-u30-abbreviation"
@@ -31906,23 +31906,23 @@
       "id": "u30-g-abbreviation-0",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted form does the source also allow beside the shown form?",
-      "promptLetter": "в МИД",
+      "prompt": "Which admitted category label classifies the shown form?",
+      "promptLetter": "СНГ",
       "options": [
-        "в МИДе",
-        "названия населённых пунктов",
-        "сложносокращённые слова"
+        "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+        "звуковые аббревиатуры на согласную",
+        "названия населённых пунктов"
       ],
-      "answer": "в МИДе",
-      "feedback": "The frozen line says the consonant-final sound form is used both ways and writes в МИД и в МИДе. The other lines are different groups in the same sentence. в МИДе.",
+      "answer": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+      "feedback": "The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
       "objectiveId": "obj-u30-abbreviation",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line names a different group in the same sentence.",
-        "This line names another group in the same sentence."
+        "The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.",
+        "The frozen line names названия населённых пунктов as a separate category."
       ],
       "assessment": {
         "testedFeature": "ABBREVIATION_DECLENSION",
@@ -31931,30 +31931,30 @@
         "cueLanguage": "ru",
         "independent": false,
         "answerSourceIds": [
-          "prov-ex-u30-abbreviation-5-ru"
+          "prov-ex-u30-abbreviation-0-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-u30-abbreviation-x-4",
-          "prov-u30-abbreviation-x-5"
+          "prov-ex-u30-abbreviation-4-en",
+          "prov-u30-abbreviation-x-0"
         ],
         "distractorDifference": [
           "",
-          "This line is the place-name group.",
-          "This line is the shortened-word group."
+          "звуковые аббревиатуры на согласную does not classify the shown form.",
+          "названия населённых пунктов does not classify the shown form."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says the consonant-final sound form is used both ways and writes в МИД и в МИДе. The other lines are different groups in the same sentence.",
+        "whyAnswerDemonstratesObjective": "The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
         "contrastMembers": [
-          "в МИДе",
-          "названия населённых пунктов",
-          "сложносокращённые слова"
+          "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+          "звуковые аббревиатуры на согласную",
+          "названия населённых пунктов"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
-          "prov-ex-u30-abbreviation-4-ru",
-          "prov-ex-u30-abbreviation-5-ru",
-          "prov-u30-abbreviation-x-4",
-          "prov-u30-abbreviation-x-5"
+          "prov-ex-u30-abbreviation-0-ru",
+          "prov-ex-u30-abbreviation-0-en",
+          "prov-ex-u30-abbreviation-4-en",
+          "prov-u30-abbreviation-x-0"
         ],
         "responseKind": "RUSSIAN_PHRASE"
       }
@@ -31963,23 +31963,23 @@
       "id": "u30-i-abbreviation-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted form is grouped with the shown letter form?",
-      "promptLetter": "СНГ",
+      "prompt": "Which admitted category label classifies the shown form?",
+      "promptLetter": "в МИД",
       "options": [
-        "ЭВМ",
-        "Шевченко",
-        "пальто"
+        "звуковые аббревиатуры на согласную",
+        "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+        "названия населённых пунктов"
       ],
-      "answer": "ЭВМ",
-      "feedback": "The frozen line groups буквенные аббревиатуры together and lists both shown forms in that group. The other lines are different groups in the same sentence. ЭВМ.",
+      "answer": "звуковые аббревиатуры на согласную",
+      "feedback": "The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную. звуковые аббревиатуры на согласную.",
       "objectiveId": "obj-u30-abbreviation",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line is a surname example in the same sentence.",
-        "This line is a borrowed-word example in the same sentence."
+        "The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.",
+        "The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную."
       ],
       "assessment": {
         "testedFeature": "ABBREVIATION_DECLENSION",
@@ -31988,55 +31988,55 @@
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-ex-u30-abbreviation-1-ru"
+          "prov-ex-u30-abbreviation-4-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-u30-abbreviation-x-0",
-          "prov-u30-abbreviation-x-1"
+          "prov-ex-u30-abbreviation-0-en",
+          "prov-u30-abbreviation-x-0"
         ],
         "distractorDifference": [
           "",
-          "This line is outside the letter group (surname).",
-          "This line is outside the letter group (borrowed word)."
+          "буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.",
+          "названия населённых пунктов does not classify the shown consonant-final form."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line groups буквенные аббревиатуры together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+        "whyAnswerDemonstratesObjective": "The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.",
         "contrastMembers": [
-          "ЭВМ",
-          "Шевченко",
-          "пальто"
+          "звуковые аббревиатуры на согласную",
+          "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+          "названия населённых пунктов"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
-          "prov-ex-u30-abbreviation-0-ru",
-          "prov-ex-u30-abbreviation-1-ru",
-          "prov-u30-abbreviation-x-0",
-          "prov-u30-abbreviation-x-1"
+          "prov-ex-u30-abbreviation-4-ru",
+          "prov-ex-u30-abbreviation-4-en",
+          "prov-ex-u30-abbreviation-0-en",
+          "prov-u30-abbreviation-x-0"
         ],
-        "responseKind": "RUSSIAN_TOKEN"
+        "responseKind": "RUSSIAN_PHRASE"
       }
     },
     {
       "id": "u30-i-abbreviation-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted form is grouped with the shown vowel-final sound form?",
+      "prompt": "Which admitted category label classifies the shown form?",
       "promptLetter": "гороно",
       "options": [
-        "ГАИ",
-        "Засулич",
-        "радио"
+        "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+        "звуковые аббревиатуры на согласную",
+        "сложносокращённые слова"
       ],
-      "answer": "ГАИ",
-      "feedback": "The frozen line groups звуковые аббревиатуры на гласную together and lists both shown forms in that group. The other lines are different groups in the same sentence. ГАИ.",
+      "answer": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+      "feedback": "The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную. буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
       "objectiveId": "obj-u30-abbreviation",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line is a surname example in the same sentence.",
-        "This line is a borrowed-word example in the same sentence."
+        "The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.",
+        "The frozen line names сложносокращённые слова as its own category."
       ],
       "assessment": {
         "testedFeature": "ABBREVIATION_DECLENSION",
@@ -32045,55 +32045,53 @@
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-ex-u30-abbreviation-2-ru"
+          "prov-ex-u30-abbreviation-0-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-u30-abbreviation-x-2",
-          "prov-u30-abbreviation-x-3"
+          "prov-ex-u30-abbreviation-4-en",
+          "prov-u30-abbreviation-x-1"
         ],
         "distractorDifference": [
           "",
-          "This line is outside the vowel-final sound group (surname).",
-          "This line is outside the vowel-final sound group (borrowed word)."
+          "звуковые аббревиатуры на согласную does not classify this shown form.",
+          "сложносокращённые слова does not classify the shown form."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line groups звуковые аббревиатуры на гласную together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+        "whyAnswerDemonstratesObjective": "The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
         "contrastMembers": [
-          "ГАИ",
-          "Засулич",
-          "радио"
+          "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+          "звуковые аббревиатуры на согласную",
+          "сложносокращённые слова"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
           "prov-ex-u30-abbreviation-3-ru",
-          "prov-ex-u30-abbreviation-2-ru",
-          "prov-u30-abbreviation-x-2",
-          "prov-u30-abbreviation-x-3"
+          "prov-ex-u30-abbreviation-0-en",
+          "prov-ex-u30-abbreviation-4-en",
+          "prov-u30-abbreviation-x-1"
         ],
-        "responseKind": "RUSSIAN_TOKEN"
+        "responseKind": "RUSSIAN_PHRASE"
       }
     },
     {
       "id": "u30-g-particle-0",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted example shares the command use of the shown line?",
+      "prompt": "Which admitted use label applies to the shown line?",
       "promptLetter": "Пусть он читает",
       "options": [
-        "Да будет мир!",
-        "читал бы",
-        "читали бы"
+        "Повелительное наклонение",
+        "предположительность или возможность"
       ],
-      "answer": "Да будет мир!",
-      "feedback": "The frozen line says a command can also be expressed with these particles and gives Пусть он читает. The other lines are the supposition forms. Да будет мир!",
+      "answer": "Повелительное наклонение",
+      "feedback": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение. Повелительное наклонение.",
       "objectiveId": "obj-u30-particle",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line is a supposition form.",
-        "This line is the other supposition form."
+        "The frozen line assigns предположительность или возможность to читал бы and читали бы."
       ],
       "assessment": {
         "testedFeature": "PARTICLE_USE",
@@ -32102,30 +32100,26 @@
         "cueLanguage": "ru",
         "independent": false,
         "answerSourceIds": [
-          "prov-ex-u30-particle-1-ru"
+          "prov-ex-u30-particle-0-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-ex-u30-particle-2-ru",
-          "prov-ex-u30-particle-3-ru"
+          "prov-ex-u30-particle-2-en"
         ],
         "distractorDifference": [
           "",
-          "This line does not share the command use (first).",
-          "This line does not share the command use (second)."
+          "предположительность или возможность does not apply to the shown line."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says a command can also be expressed with these particles and gives Пусть он читает. The other lines are the supposition forms.",
+        "whyAnswerDemonstratesObjective": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.",
         "contrastMembers": [
-          "Да будет мир!",
-          "читал бы",
-          "читали бы"
+          "Повелительное наклонение",
+          "предположительность или возможность"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
           "prov-ex-u30-particle-0-ru",
-          "prov-ex-u30-particle-1-ru",
-          "prov-ex-u30-particle-2-ru",
-          "prov-ex-u30-particle-3-ru"
+          "prov-ex-u30-particle-0-en",
+          "prov-ex-u30-particle-2-en"
         ],
         "responseKind": "RUSSIAN_PHRASE"
       }
@@ -32134,23 +32128,21 @@
       "id": "u30-i-particle-1",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted example shares the supposition use of the shown line?",
+      "prompt": "Which admitted use label applies to the shown line?",
       "promptLetter": "читал бы",
       "options": [
-        "читали бы",
-        "Пусть он читает",
-        "Да будет мир!"
+        "предположительность или возможность",
+        "Повелительное наклонение"
       ],
-      "answer": "читали бы",
-      "feedback": "The frozen line says these forms express предположительность или возможность действия. The other lines are the command examples. читали бы.",
+      "answer": "предположительность или возможность",
+      "feedback": "The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность. предположительность или возможность.",
       "objectiveId": "obj-u30-particle",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line is a command example.",
-        "This line is the other command example."
+        "The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!"
       ],
       "assessment": {
         "testedFeature": "PARTICLE_USE",
@@ -32159,30 +32151,26 @@
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-ex-u30-particle-3-ru"
+          "prov-ex-u30-particle-2-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-ex-u30-particle-0-ru",
-          "prov-ex-u30-particle-1-ru"
+          "prov-ex-u30-particle-0-en"
         ],
         "distractorDifference": [
           "",
-          "This line does not share the supposition use (first).",
-          "This line does not share the supposition use (second)."
+          "Повелительное наклонение does not apply to the shown line."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says these forms express предположительность или возможность действия. The other lines are the command examples.",
+        "whyAnswerDemonstratesObjective": "The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.",
         "contrastMembers": [
-          "читали бы",
-          "Пусть он читает",
-          "Да будет мир!"
+          "предположительность или возможность",
+          "Повелительное наклонение"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
           "prov-ex-u30-particle-2-ru",
-          "prov-ex-u30-particle-3-ru",
-          "prov-ex-u30-particle-0-ru",
-          "prov-ex-u30-particle-1-ru"
+          "prov-ex-u30-particle-2-en",
+          "prov-ex-u30-particle-0-en"
         ],
         "responseKind": "RUSSIAN_PHRASE"
       }
@@ -32191,23 +32179,21 @@
       "id": "u30-i-particle-2",
       "kind": "CONTRAST_SELECTION",
       "language": "en",
-      "prompt": "Which admitted example is the other command line?",
+      "prompt": "Which admitted use label applies to the shown line?",
       "promptLetter": "Да будет мир!",
       "options": [
-        "Пусть он читает",
-        "читал бы",
-        "читали бы"
+        "Повелительное наклонение",
+        "предположительность или возможность"
       ],
-      "answer": "Пусть он читает",
-      "feedback": "The frozen line says a command can also be expressed with these particles and gives Да будет мир! The other lines are the supposition forms. Пусть он читает.",
+      "answer": "Повелительное наклонение",
+      "feedback": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение. Повелительное наклонение.",
       "objectiveId": "obj-u30-particle",
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "containsGeneratedRussian": false,
       "distractorRationales": [
         "",
-        "This line is a supposition form.",
-        "This line is the other supposition form."
+        "The frozen line assigns предположительность или возможность to читал бы and читали бы."
       ],
       "assessment": {
         "testedFeature": "PARTICLE_USE",
@@ -32216,30 +32202,26 @@
         "cueLanguage": "ru",
         "independent": true,
         "answerSourceIds": [
-          "prov-ex-u30-particle-0-ru"
+          "prov-ex-u30-particle-0-en"
         ],
         "distractorSourceIds": [
           "",
-          "prov-ex-u30-particle-2-ru",
-          "prov-ex-u30-particle-3-ru"
+          "prov-ex-u30-particle-2-en"
         ],
         "distractorDifference": [
           "",
-          "This line is not the other command line (first).",
-          "This line is not the other command line (second)."
+          "предположительность или возможность applies to читал бы and читали бы, not to the shown line."
         ],
-        "whyAnswerDemonstratesObjective": "The frozen line says a command can also be expressed with these particles and gives Да будет мир! The other lines are the supposition forms.",
+        "whyAnswerDemonstratesObjective": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.",
         "contrastMembers": [
-          "Пусть он читает",
-          "читал бы",
-          "читали бы"
+          "Повелительное наклонение",
+          "предположительность или возможность"
         ],
         "relationKind": "SOURCE_SUPPLIED_PAIR",
         "relationParticipantIds": [
           "prov-ex-u30-particle-1-ru",
-          "prov-ex-u30-particle-0-ru",
-          "prov-ex-u30-particle-2-ru",
-          "prov-ex-u30-particle-3-ru"
+          "prov-ex-u30-particle-0-en",
+          "prov-ex-u30-particle-2-en"
         ],
         "responseKind": "RUSSIAN_PHRASE"
       }
@@ -57855,7 +57837,7 @@
         {
           "id": "obj-u30-abbreviation",
           "unitNumber": 30,
-          "title": "Choose the admitted form from the same abbreviation group",
+          "title": "Classify the shown form by its admitted category",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u30-st-orient",
@@ -57886,7 +57868,7 @@
         {
           "id": "obj-u30-particle",
           "unitNumber": 30,
-          "title": "Choose the admitted example with the same stated use",
+          "title": "Classify the shown line by its admitted use",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u30-st-orient",
@@ -58289,7 +58271,7 @@
         },
         {
           "id": "u30-s-abbreviation",
-          "title": "Choose the admitted form from the same abbreviation group",
+          "title": "Classify the shown form by its admitted category",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u30-abbreviation"
@@ -58422,7 +58404,7 @@
         },
         {
           "id": "u30-s-particle",
-          "title": "Choose the admitted example with the same stated use",
+          "title": "Classify the shown line by its admitted use",
           "estimatedMinutes": 12,
           "objectiveIds": [
             "obj-u30-particle"
@@ -112901,14 +112883,14 @@
       "sourceRevision": "148939075",
       "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
       "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "буквенные аббревиатуры",
+      "shippedText": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "303092d35156bfce5f5a011571f8bb3c842499a4315f34784b1d838984e75eff",
+      "contentHash": "d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -112951,14 +112933,14 @@
       "sourceRevision": "148939075",
       "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
       "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "буквенные аббревиатуры",
+      "shippedText": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "303092d35156bfce5f5a011571f8bb3c842499a4315f34784b1d838984e75eff",
+      "contentHash": "d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -113001,14 +112983,14 @@
       "sourceRevision": "148939075",
       "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
       "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "звуковые аббревиатуры на гласную",
+      "shippedText": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "5c993dbfe117bfd73673a3ed6d1c43dbfc5d983c6bce9cdbb3ed52ba953cfe6b",
+      "contentHash": "d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -113051,14 +113033,14 @@
       "sourceRevision": "148939075",
       "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
       "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "звуковые аббревиатуры на гласную",
+      "shippedText": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
       "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
       "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "5c993dbfe117bfd73673a3ed6d1c43dbfc5d983c6bce9cdbb3ed52ba953cfe6b",
+      "contentHash": "d5f031e3951edeb4544604eca6acb079d52e68ddf6eb8b69c7727dc782e94b7f",
       "reviewStatus": "PENDING_QUALIFIED_REVIEW",
       "reviewerIdentity": "",
       "reviewerQualification": "",
@@ -113201,106 +113183,6 @@
       "sourceRevision": "148939075",
       "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
       "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "Шевченко",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "402c2431527f9d9872e10ed2b56c2b084b8f983d81ea44a5753262a7f595826c",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u30-abbreviation-x-1",
-      "unitNumber": 30,
-      "objectiveId": "obj-u30-abbreviation",
-      "recordType": "label",
-      "sourceId": "src-ruwiki-morfologiya-148939075",
-      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
-      "sourceRevision": "148939075",
-      "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
-      "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "пальто",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "d9e4a6c4878615d621ccfef52ae25596394a4c6e666dfb4102930a4f3b5c8d42",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u30-abbreviation-x-2",
-      "unitNumber": 30,
-      "objectiveId": "obj-u30-abbreviation",
-      "recordType": "label",
-      "sourceId": "src-ruwiki-morfologiya-148939075",
-      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
-      "sourceRevision": "148939075",
-      "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
-      "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "Засулич",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "83cf9b9c32f78646ce7ce036957707f2eecda1d9b139b9a088eba5d6a4699b13",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u30-abbreviation-x-3",
-      "unitNumber": 30,
-      "objectiveId": "obj-u30-abbreviation",
-      "recordType": "label",
-      "sourceId": "src-ruwiki-morfologiya-148939075",
-      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
-      "sourceRevision": "148939075",
-      "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
-      "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
-      "shippedText": "радио",
-      "transformation": "selection",
-      "licenseId": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors.",
-      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
-      "sourceHash": "6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
-      "contentHash": "76d6d871d1993865e83eb348b58dd73b3b228f49d2e3ab05199da66fe86d18be",
-      "reviewStatus": "PENDING_QUALIFIED_REVIEW",
-      "reviewerIdentity": "",
-      "reviewerQualification": "",
-      "reviewDate": "",
-      "reviewedDigest": "",
-      "audioAssetId": null
-    },
-    {
-      "itemId": "prov-u30-abbreviation-x-4",
-      "unitNumber": 30,
-      "objectiveId": "obj-u30-abbreviation",
-      "recordType": "label",
-      "sourceId": "src-ruwiki-morfologiya-148939075",
-      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
-      "sourceRevision": "148939075",
-      "sourceRecordId": "morfologiya:Ряд существительных являются несклоняемым: многие слова иноязычного происхождени",
-      "originalSourceText": "Ряд существительных являются несклоняемым: многие слова иноязычного происхождения, оканчивающиеся на гласную (''пальто'', радио, какао, в том числе имена собственные — Гёте, Золя, Чикаго); фамилии на ''-ко'' типа Шевченко; женские фамилии на согласную (''Гринберг'', ''Засулич''); буквенные аббревиатуры и звуковые аббревиатуры на гласную (СНГ, ЭВМ, ГАИ, гороно); сложносокращённые слова типа ''завкафедрой'', ''комроты''. Как склоняемые и несклоняемые употребляются звуковые аббревиатуры на согласную (работать в МИД и в МИДе) и названия населённых пунктов",
       "shippedText": "названия населённых пунктов",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
@@ -113317,7 +113199,7 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u30-abbreviation-x-5",
+      "itemId": "prov-u30-abbreviation-x-1",
       "unitNumber": 30,
       "objectiveId": "obj-u30-abbreviation",
       "recordType": "label",
@@ -113342,7 +113224,7 @@
       "audioAssetId": null
     },
     {
-      "itemId": "prov-u30-abbreviation-x-6",
+      "itemId": "prov-u30-abbreviation-x-2",
       "unitNumber": 30,
       "objectiveId": "obj-u30-abbreviation",
       "recordType": "label",
@@ -121168,305 +121050,257 @@
     {
       "id": "en-u30-282",
       "unitNumber": 30,
-      "text": "This line names a different group in the same sentence.",
+      "text": "The frozen line assigns звуковые аббревиатуры на согласную to в МИД и в МИДе.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-283",
       "unitNumber": 30,
-      "text": "This line names another group in the same sentence.",
+      "text": "The frozen line names названия населённых пунктов as a separate category.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-284",
       "unitNumber": 30,
-      "text": "This line is the place-name group.",
+      "text": "звуковые аббревиатуры на согласную does not classify the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-285",
       "unitNumber": 30,
-      "text": "This line is the shortened-word group.",
+      "text": "названия населённых пунктов does not classify the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-286",
       "unitNumber": 30,
-      "text": "The frozen line says the consonant-final sound form is used both ways and writes в МИД и в МИДе. The other lines are different groups in the same sentence.",
+      "text": "The frozen line classifies the shown form under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-287",
       "unitNumber": 30,
-      "text": "Which admitted form does the source also allow beside the shown form?",
+      "text": "Which admitted category label classifies the shown form?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-288",
       "unitNumber": 30,
-      "text": "This line is a surname example in the same sentence.",
+      "text": "The frozen line assigns буквенные аббревиатуры и звуковые аббревиатуры на гласную to СНГ, ЭВМ, ГАИ, and гороно.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-289",
       "unitNumber": 30,
-      "text": "This line is a borrowed-word example in the same sentence.",
+      "text": "The frozen line names названия населённых пунктов apart from звуковые аббревиатуры на согласную.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-290",
       "unitNumber": 30,
-      "text": "This line is outside the letter group (surname).",
+      "text": "буквенные аббревиатуры и звуковые аббревиатуры на гласную does not classify the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-291",
       "unitNumber": 30,
-      "text": "This line is outside the letter group (borrowed word).",
+      "text": "названия населённых пунктов does not classify the shown consonant-final form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-292",
       "unitNumber": 30,
-      "text": "The frozen line groups буквенные аббревиатуры together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+      "text": "The frozen line classifies the shown form under звуковые аббревиатуры на согласную and writes в МИД и в МИДе. The keyed category is звуковые аббревиатуры на согласную.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-293",
       "unitNumber": 30,
-      "text": "Which admitted form is grouped with the shown letter form?",
+      "text": "The frozen line names сложносокращённые слова as its own category.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-294",
       "unitNumber": 30,
-      "text": "This line is outside the vowel-final sound group (surname).",
+      "text": "звуковые аббревиатуры на согласную does not classify this shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-295",
       "unitNumber": 30,
-      "text": "This line is outside the vowel-final sound group (borrowed word).",
+      "text": "сложносокращённые слова does not classify the shown form.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-296",
       "unitNumber": 30,
-      "text": "The frozen line groups звуковые аббревиатуры на гласную together and lists both shown forms in that group. The other lines are different groups in the same sentence.",
+      "text": "The frozen line classifies гороно under буквенные аббревиатуры и звуковые аббревиатуры на гласную. The keyed category is буквенные аббревиатуры и звуковые аббревиатуры на гласную.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-297",
       "unitNumber": 30,
-      "text": "Which admitted form is grouped with the shown vowel-final sound form?",
+      "text": "The frozen line assigns предположительность или возможность to читал бы and читали бы.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-298",
       "unitNumber": 30,
-      "text": "This line is a supposition form.",
+      "text": "предположительность или возможность does not apply to the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-299",
       "unitNumber": 30,
-      "text": "This line is the other supposition form.",
+      "text": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Пусть он читает. The keyed use is Повелительное наклонение.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-300",
       "unitNumber": 30,
-      "text": "This line does not share the command use (first).",
+      "text": "Which admitted use label applies to the shown line?",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-301",
       "unitNumber": 30,
-      "text": "This line does not share the command use (second).",
+      "text": "The frozen line assigns Повелительное наклонение to Пусть он читает and to Да будет мир!",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-302",
       "unitNumber": 30,
-      "text": "The frozen line says a command can also be expressed with these particles and gives Пусть он читает. The other lines are the supposition forms.",
+      "text": "Повелительное наклонение does not apply to the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-303",
       "unitNumber": 30,
-      "text": "Which admitted example shares the command use of the shown line?",
+      "text": "The frozen line says читал бы expresses предположительность или возможность действия. The keyed use is предположительность или возможность.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-304",
       "unitNumber": 30,
-      "text": "This line is a command example.",
+      "text": "предположительность или возможность applies to читал бы and читали бы, not to the shown line.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-305",
       "unitNumber": 30,
-      "text": "This line is the other command example.",
+      "text": "The frozen line says Повелительное наклонение can also be expressed with these particles and gives Да будет мир! The keyed use is Повелительное наклонение.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-306",
       "unitNumber": 30,
-      "text": "This line does not share the supposition use (first).",
+      "text": "Review admitted table names and abbreviation examples",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-307",
       "unitNumber": 30,
-      "text": "This line does not share the supposition use (second).",
+      "text": "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-308",
       "unitNumber": 30,
-      "text": "The frozen line says these forms express предположительность или возможность действия. The other lines are the command examples.",
+      "text": "Open Lesson 30 in the copy you own. The app records do not replace that lesson.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-309",
       "unitNumber": 30,
-      "text": "Which admitted example shares the supposition use of the shown line?",
+      "text": "Read the admitted examples on this card.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-310",
       "unitNumber": 30,
-      "text": "This line is not the other command line (first).",
+      "text": "Guided practice",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-311",
       "unitNumber": 30,
-      "text": "This line is not the other command line (second).",
+      "text": "Choose the admitted record. The feedback states the frozen field.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-312",
       "unitNumber": 30,
-      "text": "The frozen line says a command can also be expressed with these particles and gives Да будет мир! The other lines are the supposition forms.",
+      "text": "Remediation",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-313",
       "unitNumber": 30,
-      "text": "Which admitted example is the other command line?",
+      "text": "Independent checks",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-314",
       "unitNumber": 30,
-      "text": "Review admitted table names and abbreviation examples",
+      "text": "These checks use only admitted records. A miss returns to the explanation.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-315",
       "unitNumber": 30,
-      "text": "Unit 1 introduced the printed letter names. This unit reviews admitted table names and applies them only as review. It also shows two admitted abbreviation examples and the admitted address marks. A separate frozen line states the abbreviation declension contrast. Another frozen line separates command examples from supposition examples. Dictionary use and the final reading stay in the copy you own. Qualified review is pending.",
+      "text": "Work Lesson 30 in your copy",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-316",
       "unitNumber": 30,
-      "text": "Open Lesson 30 in the copy you own. The app records do not replace that lesson.",
+      "text": "Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-317",
       "unitNumber": 30,
-      "text": "Read the admitted examples on this card.",
+      "text": "Open Lesson 30 in your copy and complete its lesson work.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-318",
       "unitNumber": 30,
-      "text": "Guided practice",
+      "text": "Record Lesson 30 book work",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-319",
       "unitNumber": 30,
-      "text": "Choose the admitted record. The feedback states the frozen field.",
+      "text": "When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-320",
       "unitNumber": 30,
-      "text": "Remediation",
+      "text": "Self-attest only after the Lesson 30 work in your copy.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-321",
       "unitNumber": 30,
-      "text": "Independent checks",
+      "text": "Dictionary use stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-322",
       "unitNumber": 30,
-      "text": "These checks use only admitted records. A miss returns to the explanation.",
+      "text": "Dictionary use stays in the copy you own. No admitted span gives that procedure.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
       "id": "en-u30-323",
       "unitNumber": 30,
-      "text": "Work Lesson 30 in your copy",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-324",
-      "unitNumber": 30,
-      "text": "Do Lesson 30 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-325",
-      "unitNumber": 30,
-      "text": "Open Lesson 30 in your copy and complete its lesson work.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-326",
-      "unitNumber": 30,
-      "text": "Record Lesson 30 book work",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-327",
-      "unitNumber": 30,
-      "text": "When you have done Lesson 30 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-328",
-      "unitNumber": 30,
-      "text": "Self-attest only after the Lesson 30 work in your copy.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-329",
-      "unitNumber": 30,
-      "text": "Dictionary use stays in the copy you own",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-330",
-      "unitNumber": 30,
-      "text": "Dictionary use stays in the copy you own. No admitted span gives that procedure.",
-      "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
-    },
-    {
-      "id": "en-u30-331",
-      "unitNumber": 30,
       "text": "The final reading stays in the copy you own",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
     },
     {
-      "id": "en-u30-332",
+      "id": "en-u30-324",
       "unitNumber": 30,
       "text": "The final reading stays in the copy you own. No admitted text supplies it.",
       "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"

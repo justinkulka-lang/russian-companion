@@ -861,20 +861,24 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u26-word-order", "word-order"),
             RequiredSourceCapability("obj-u26-postal-address", "postal-address"),
             RequiredSourceCapability("obj-u26-letter-writing", "letter-writing"),
+            RequiredSourceCapability("obj-u26-correspondence", "correspondence-work"),
         ),
         27 to listOf(
             RequiredSourceCapability("obj-u27-passive", "passive-participle"),
             RequiredSourceCapability("obj-u27-stress", "participle-stress"),
+            RequiredSourceCapability("obj-u27-comprehension", "participle-comprehension"),
         ),
         28 to listOf(
             RequiredSourceCapability("obj-u28-imperfective-adverb", "imperfective-verbal-adverb"),
             RequiredSourceCapability("obj-u28-perfective-adverb", "perfective-verbal-adverb"),
+            RequiredSourceCapability("obj-u28-readings", "verbal-adverb-reading"),
         ),
         29 to listOf(
             RequiredSourceCapability("obj-u29-active", "active-participle"),
             RequiredSourceCapability("obj-u29-punctuation", "participle-punctuation"),
             RequiredSourceCapability("obj-u29-short-adjective", "short-form-adjective"),
             RequiredSourceCapability("obj-u29-register", "bookish-register"),
+            RequiredSourceCapability("obj-u29-reading", "bookish-reading"),
         ),
         30 to listOf(
             RequiredSourceCapability("obj-u30-dictionary", "dictionary-use"),
@@ -939,11 +943,15 @@ internal object V2Validator {
         }
     }
 
-    internal fun unresolvedLateUnitAdvancementBlockers(pack: V2CurriculumPack, unit: V2Unit): List<String> {
+    internal fun unresolvedLateUnitAdvancementBlockers(
+        pack: V2CurriculumPack,
+        unit: V2Unit,
+        unresolvedVarianceUnits: Set<Int> = UNRESOLVED_VARIANCE_UNITS,
+    ): List<String> {
         if (unit.number !in 26..30) return emptyList()
         val blockers = mutableListOf<String>()
         blockers += lateUnitSourceGap(pack, unit)
-        if (unit.number in UNRESOLVED_VARIANCE_UNITS) {
+        if (unit.number in unresolvedVarianceUnits) {
             blockers += "Unit ${unit.number} is blocked by an unresolved authority variance"
         }
         return blockers
@@ -1197,7 +1205,67 @@ internal object V2Validator {
             "bookish-register" -> listOf("Source capability $id the adverbial bookish note does not clear bookish-register")
             "dictionary-use" -> listOf("Source capability $id a dictionary heading does not clear dictionary-use")
             "capstone-reading" -> listOf("Source capability $id does not state capstone-reading")
+            "correspondence-work" -> if (admitsLateExperience(capability, ADMITTED_CORRESPONDENCE_WORK, "correspondence-work")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id has no independent correspondence-work admission")
+            }
+            "participle-comprehension" -> if (admitsLateExperience(capability, ADMITTED_PARTICIPLE_COMPREHENSION, "participle-comprehension")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id has no independent participle-comprehension admission")
+            }
+            "verbal-adverb-reading" -> if (admitsLateExperience(capability, ADMITTED_VERBAL_ADVERB_READING, "verbal-adverb-reading")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id bounded verbal-adverb examples do not clear verbal-adverb-reading")
+            }
+            "bookish-reading" -> if (admitsLateExperience(capability, ADMITTED_BOOKISH_READING, "bookish-reading")) {
+                emptyList()
+            } else {
+                listOf("Source capability $id has no independent bookish-reading admission")
+            }
             else -> emptyList()
+        }
+    }
+
+    /**
+     * Empty until a frozen passage supplies the whole instructional chain.
+     * Membership requires the immutable source identity, the governed claim,
+     * and the objective. A keyword, a bounded example, or a neighboring span does not join.
+     */
+    internal data class LateExperienceAdmission(
+        val sourceId: String,
+        val sourceRevision: String,
+        val sourceRecordId: String,
+        val sourceHash: String,
+        val exactSpan: String,
+        val unitNumber: Int,
+        val objectiveId: String,
+        val governedClaim: String,
+    )
+
+    internal val ADMITTED_CORRESPONDENCE_WORK: Set<LateExperienceAdmission> = emptySet()
+    internal val ADMITTED_PARTICIPLE_COMPREHENSION: Set<LateExperienceAdmission> = emptySet()
+    internal val ADMITTED_VERBAL_ADVERB_READING: Set<LateExperienceAdmission> = emptySet()
+    internal val ADMITTED_BOOKISH_READING: Set<LateExperienceAdmission> = emptySet()
+
+    internal fun admitsLateExperience(
+        capability: V2SourceCapability,
+        admitted: Set<LateExperienceAdmission>,
+        claim: String,
+    ): Boolean {
+        return admitted.any {
+            it.governedClaim == claim &&
+                capability.supportedClaim == claim &&
+                it.sourceId == capability.sourceId &&
+                it.sourceRevision == capability.sourceRevision &&
+                it.sourceRecordId == capability.sourceRecordId &&
+                it.sourceHash == capability.sourceHash &&
+                it.exactSpan == capability.exactSpan &&
+                it.unitNumber == capability.unitNumber &&
+                it.objectiveId == capability.objectiveId &&
+                it.sourceHash == sha256(it.exactSpan)
         }
     }
 
@@ -2428,6 +2496,30 @@ internal object V2Validator {
             "\\bg\\s*=\\s*[fmn]\\b" +
             ")",
     )
+    /**
+     * Source-location and set-recall prompts. A rewording of "written beside"
+     * or "the other source line" still asks where an item sits, not what it means.
+     */
+    private val SOURCE_SET_RECALL = Regex(
+        "(?i)(?:" +
+            "\\bwritten\\b|" +
+            "\\blisted\\b|" +
+            "\\bgrouped\\s+with\\b|" +
+            "\\bbeside\\b|" +
+            "\\bshown\\s+in\\s+the\\s+source\\b|" +
+            "\\bother\\s+source\\s+line\\b|" +
+            "\\bsource\\s+also\\s+allow\\b|" +
+            "\\bother\\s+\\w+\\s+line\\b|" +
+            "\\bappears\\s+in\\s+(?:a|the)\\s+source\\b|" +
+            "\\bsource\\s+set\\b|" +
+            "\\bwhich\\s+item\\s+appears\\b|" +
+            "\\bplaced\\s+(?:beside|with|next\\s+to)\\b" +
+            ")",
+    )
+    private val USE_CLASSIFICATION_OBJECTIVES = setOf(
+        "obj-u30-abbreviation",
+        "obj-u30-particle",
+    )
     private val CIRCULAR_RATIONALE = Regex(
         "(?i)^does this (?:answer|row|line)\\b|^does the admitted record show the governed contrast\\??$",
     )
@@ -2442,10 +2534,29 @@ internal object V2Validator {
         }
         if (assessment.independent &&
             item.objectiveId in CONCEPT_CHECK_OBJECTIVES &&
-            SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt)
+            (SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) || SOURCE_SET_RECALL.containsMatchIn(item.prompt))
         ) {
             errors += "Item ${item.id} prompt discloses its classification"
             errors += "Item ${item.id} tests line-label recall"
+        }
+        if (assessment.independent && item.objectiveId in USE_CLASSIFICATION_OBJECTIVES) {
+            if (!why.contains(item.answer)) {
+                errors += "Item ${item.id} answer rationale does not cite the keyed answer"
+            }
+            val spans = assessment.relationParticipantIds.mapNotNull { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }?.originalSourceText
+            }
+            if (spans.none { it.contains(item.answer) }) {
+                errors += "Item ${item.id} keyed answer is not in the frozen span"
+            }
+            item.options.forEachIndexed { index, option ->
+                if (option == item.answer) return@forEachIndexed
+                val rationale = item.distractorRationales.getOrElse(index) { "" }
+                val difference = assessment.distractorDifference.getOrElse(index) { "" }
+                if (!rationale.contains(option) || !difference.contains(option)) {
+                    errors += "Item ${item.id} distractor rationale does not cite the distractor"
+                }
+            }
         }
         errors += reflexiveRelationshipErrors(item)
         val hosted = listOf(why) + item.distractorRationales + assessment.distractorDifference

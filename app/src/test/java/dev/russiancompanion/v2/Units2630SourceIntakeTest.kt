@@ -539,8 +539,9 @@ class Units2630SourceIntakeTest {
             errorsForRebound(pack, lunch, "cap-lunch-as-register", 29, "obj-u29-register", "bookish-register")
                 .any { it.contains("adverbial bookish note does not clear bookish-register") },
         )
-        val reading = capability(lunch, "cap-verbal-reading", 28, "obj-u28-readings", "verbal-adverb-reading")
-        assertTrue(errorsFor(pack, reading).any { it.contains("wrong unit or objective") })
+        val reading = errorsForRebound(pack, lunch, "cap-verbal-reading", 28, "obj-u28-readings", "verbal-adverb-reading")
+        assertTrue(reading.joinToString("\n"), reading.any { it.contains("bounded verbal-adverb examples do not clear verbal-adverb-reading") })
+        assertTrue(reading.any { it.contains("has no reviewable instruction and check chain") })
 
         val dictionary = errorsForText(pack, "nominative heading", "cap-dictionary-row", 30, "obj-u30-abbreviation", "abbreviation", "src-openrussian-50e210c4")
         assertTrue(dictionary.any { it.contains("a dictionary row does not clear abbreviation") })
@@ -549,16 +550,72 @@ class Units2630SourceIntakeTest {
 
         pack.items.filter { it.objectiveId == "obj-u30-abbreviation" || it.objectiveId == "obj-u30-particle" }.forEach { item ->
             assertEquals(item.id, 1, item.options.count { it == item.answer })
-            val differences = item.assessment!!.distractorDifference.filter { it.isNotBlank() }
+            val cyrillicOptions = item.options.map { option -> option.any { it.code in 0x0400..0x04FF } }.toSet()
+            assertEquals(item.id, 1, cyrillicOptions.size)
+            assertEquals(item.id, item.options.toSet().size, item.options.size)
+            val assessment = item.assessment!!
+            assertTrue(item.id, assessment.whyAnswerDemonstratesObjective.contains(item.answer))
+            item.options.forEachIndexed { index, option ->
+                if (option != item.answer) {
+                    assertTrue(item.id, assessment.distractorDifference[index].contains(option))
+                    assertTrue(item.id, item.distractorRationales[index].contains(option))
+                }
+            }
+            val differences = assessment.distractorDifference.filter { it.isNotBlank() }
             assertEquals(item.id, differences.toSet().size, differences.size)
             assertTrue(item.id, differences.isNotEmpty())
         }
         val layout = pack.items.first { it.objectiveId == "obj-u30-abbreviation" && it.assessment!!.independent }
-        val recalled = layout.copy(prompt = "Which admitted label is written beside the shown form?")
-        val layoutErrors = V2Validator.validate(
-            pack.copy(items = pack.items.map { if (it.id == layout.id) recalled else it }),
+        listOf(
+            "Which admitted form does the source also allow beside the shown form?",
+            "Which admitted form is written beside the shown form?",
+            "Which admitted form is listed with the shown form?",
+            "Which admitted form is grouped with the shown form?",
+            "Which admitted form is shown in the source beside this one?",
+            "Which admitted form is the other source line?",
+            "Which item appears in the source set?",
+        ).forEach { prompt ->
+            val recalled = layout.copy(prompt = prompt)
+            val layoutErrors = V2Validator.validate(
+                pack.copy(items = pack.items.map { if (it.id == layout.id) recalled else it }),
+            ).errors
+            assertTrue(prompt + "\n" + layoutErrors.joinToString("\n"), layoutErrors.any { it.contains("line-label recall") })
+        }
+
+        val particle = pack.items.first { it.objectiveId == "obj-u30-particle" && it.assessment!!.independent }
+        val shownOnly = particle.copy(
+            assessment = particle.assessment!!.copy(
+                whyAnswerDemonstratesObjective = "The frozen line gives ${particle.promptLetter} and keeps the same sentence.",
+            ),
+        )
+        val shownOnlyErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == particle.id) shownOnly else it }),
         ).errors
-        assertTrue(layoutErrors.joinToString("\n"), layoutErrors.any { it.contains("line-label recall") })
+        assertTrue(shownOnlyErrors.joinToString("\n"), shownOnlyErrors.any { it.contains("does not cite the keyed answer") })
+        val otherLine = particle.copy(prompt = "Which admitted example is the other command line?")
+        val otherErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == particle.id) otherLine else it }),
+        ).errors
+        assertTrue(otherErrors.joinToString("\n"), otherErrors.any { it.contains("line-label recall") })
+        val sourceSet = particle.copy(prompt = "Which item appears in the source set?")
+        val sourceSetErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == particle.id) sourceSet else it }),
+        ).errors
+        assertTrue(sourceSetErrors.joinToString("\n"), sourceSetErrors.any { it.contains("line-label recall") })
+        val mixed = particle.copy(options = listOf(particle.answer, "command"))
+        val mixedErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == particle.id) mixed else it }),
+        ).errors
+        assertTrue(mixedErrors.joinToString("\n"), mixedErrors.any { it.contains("response type") })
+        val unsupported = particle.copy(
+            answer = "command",
+            options = listOf("command", particle.options.first { it != particle.answer }),
+            assessment = particle.assessment!!.copy(whyAnswerDemonstratesObjective = "The keyed use is command."),
+        )
+        val unsupportedErrors = V2Validator.validate(
+            pack.copy(items = pack.items.map { if (it.id == particle.id) unsupported else it }),
+        ).errors
+        assertTrue(unsupportedErrors.joinToString("\n"), unsupportedErrors.any { it.contains("keyed answer is not in the frozen span") })
 
         val readings = pack.unit(28)!!.objectives.single { it.id == "obj-u28-readings" }
         assertEquals("GUIDANCE", readings.kind)
@@ -568,7 +625,7 @@ class Units2630SourceIntakeTest {
         val blocked = advancementDecision(pack, pack.unit(28)!!, learner(28, book = true))
         assertFalse(blocked.allowed)
         assertTrue(blocked.remaining.any { it.contains("not prepared") })
-        assertFalse(blocked.remaining.any { it.contains("imperfective-verbal-adverb") && it.contains("not content-complete") })
+        assertTrue(blocked.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->
             assertEquals("NOT_PREPARED", pack.unit(number)!!.readiness)
@@ -582,6 +639,83 @@ class Units2630SourceIntakeTest {
             assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
             assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
         }
+    }
+
+    @Test
+    fun readingAndCorrespondenceExperiencesFailClosed() {
+        val pack = pack()
+        assertTrue(V2Validator.ADMITTED_CORRESPONDENCE_WORK.isEmpty())
+        assertTrue(V2Validator.ADMITTED_PARTICIPLE_COMPREHENSION.isEmpty())
+        assertTrue(V2Validator.ADMITTED_VERBAL_ADVERB_READING.isEmpty())
+        assertTrue(V2Validator.ADMITTED_BOOKISH_READING.isEmpty())
+
+        val unit28 = V2Validator.validate(claimReady(pack, 28)).errors
+        assertTrue(unit28.joinToString("\n"), unit28.any { it.contains("verbal-adverb-reading") })
+        assertFalse(unit28.any { it.contains("unresolved authority variance") })
+        val unit26 = V2Validator.validate(claimReady(pack, 26)).errors
+        assertTrue(unit26.joinToString("\n"), unit26.any { it.contains("correspondence-work") })
+        val unit26Claims = V2Validator.unresolvedRequiredSourceCapabilities(pack, 26).map { it.claim }
+        assertEquals(
+            listOf("correspondence-work"),
+            unit26Claims.filter { it !in setOf("indefinite-pronoun", "postal-address", "letter-writing", "word-order") },
+        )
+        val unit27 = V2Validator.validate(claimReady(pack, 27)).errors
+        assertTrue(unit27.any { it == "Unit 27 is blocked by an unresolved authority variance" })
+        assertTrue(unit27.any { it.contains("participle-comprehension") })
+        val unit27WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(27)!!, emptySet())
+        assertTrue(unit27WithoutVariance.any { it.contains("participle-comprehension") })
+        assertFalse(unit27WithoutVariance.any { it.contains("authority variance") })
+        val unit29 = V2Validator.validate(claimReady(pack, 29)).errors
+        assertTrue(unit29.any { it == "Unit 29 is blocked by an unresolved authority variance" })
+        assertTrue(unit29.any { it.contains("bookish-reading") })
+        val unit29WithoutVariance = V2Validator.unresolvedLateUnitAdvancementBlockers(pack, pack.unit(29)!!, emptySet())
+        assertTrue(unit29WithoutVariance.any { it.contains("bookish-reading") })
+        assertFalse(unit29WithoutVariance.any { it.contains("authority variance") })
+
+        val approved = pack.copy(
+            unitReviews = pack.unitReviews.map { review ->
+                if (review.unitNumber == 28) review.copy(status = "APPROVED") else review
+            },
+        )
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(approved, 28).any { it.claim == "verbal-adverb-reading" })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(claimReady(pack, 28), 28).any { it.claim == "verbal-adverb-reading" })
+        assertTrue(pack.unit(28)!!.objectives.any { it.checkItemIds.isNotEmpty() })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(pack, 28).any { it.claim == "verbal-adverb-reading" })
+
+        val attested = errorsForText(pack, "Self-attest Lesson 26", "cap-attest-correspondence", 26, "obj-u26-correspondence", "correspondence-work")
+        assertTrue(attested.any { it.contains("book self-attestation does not clear correspondence-work") })
+        assertTrue(attested.any { it.contains("has no independent correspondence-work admission") })
+        val keyword = errorsForText(pack, "correspondence work letter writing", "cap-keyword-correspondence", 26, "obj-u26-correspondence", "correspondence-work")
+        assertTrue(keyword.any { it.contains("has no independent correspondence-work admission") })
+        val comprehension = errorsForText(pack, "participle comprehension passage", "cap-keyword-comprehension", 27, "obj-u27-comprehension", "participle-comprehension")
+        assertTrue(comprehension.any { it.contains("has no independent participle-comprehension admission") })
+        val bookish = errorsForText(pack, "bookish reading passage", "cap-keyword-bookish", 29, "obj-u29-reading", "bookish-reading")
+        assertTrue(bookish.any { it.contains("has no independent bookish-reading admission") })
+
+        val probe = pack.provenanceRecords.first { it.unitNumber == 28 }
+        val matched = V2Validator.LateExperienceAdmission(
+            sourceId = probe.sourceId,
+            sourceRevision = probe.sourceRevision,
+            sourceRecordId = probe.sourceRecordId,
+            sourceHash = probe.sourceHash,
+            exactSpan = probe.originalSourceText,
+            unitNumber = 28,
+            objectiveId = "obj-u28-readings",
+            governedClaim = "verbal-adverb-reading",
+        )
+        val candidate = capability(probe, "cap-local-reading", 28, "obj-u28-readings", "verbal-adverb-reading").copy(
+            sourceId = matched.sourceId,
+            sourceRevision = matched.sourceRevision,
+            sourceRecordId = matched.sourceRecordId,
+            sourceHash = matched.sourceHash,
+            exactSpan = matched.exactSpan,
+        )
+        assertFalse(V2Validator.admitsLateExperience(candidate, V2Validator.ADMITTED_VERBAL_ADVERB_READING, "verbal-adverb-reading"))
+        assertTrue(V2Validator.admitsLateExperience(candidate, setOf(matched), "verbal-adverb-reading"))
+        assertFalse(V2Validator.admitsLateExperience(candidate, setOf(matched.copy(sourceHash = "0".repeat(64))), "verbal-adverb-reading"))
+        assertFalse(V2Validator.admitsLateExperience(candidate.copy(objectiveId = "obj-u28-perfective-adverb"), setOf(matched), "verbal-adverb-reading"))
+        val admittedButUnchecked = errorsForRebound(pack, probe, "cap-admitted-unchecked", 28, "obj-u28-readings", "verbal-adverb-reading")
+        assertTrue(admittedButUnchecked.any { it.contains("has no reviewable instruction and check chain") })
     }
 
     private fun errorsForRebound(
