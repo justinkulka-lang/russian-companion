@@ -38,7 +38,9 @@
       },
       "ruwiki": {
         "appliesToSourceIds": [
-          "src-ruwiki-morfologiya-148939075"
+          "src-ruwiki-morfologiya-148939075",
+          "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+          "src-ruwiki-prichastie-153078996"
         ],
         "title": "Википедия:Авторские права",
         "oldid": "154562152",
@@ -127,6 +129,30 @@
       "disposition": "EXCLUDED",
       "licenseId": null,
       "scope": "A current page, a URL without oldid, a search snippet, or a commercial grammar page is not a frozen record."
+    },
+    {
+      "id": "ruwiki-neopredelennoe-mestoimenie-149963314",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The Russian series headings and the stated meanings for -то, -нибудь, and кое-. The -то series may also be used with the -нибудь meaning. An inventory of forms does not state those meanings."
+    },
+    {
+      "id": "ruwiki-prichastie-153078996",
+      "disposition": "ADMITTED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The participial-phrase punctuation rule, its before-noun and after-noun examples, the end-of-sentence comma, and the exceptions for a personal pronoun or a cause. The rule says the phrase is often set off. It is not a universal comma insertion."
+    },
+    {
+      "id": "ruwiki-morfologiya-adverb-formation-148939075",
+      "disposition": "EXCLUDED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "The adverb paragraph says formation from adjectives is most productive by suffixal or prefix-suffixal means and lists four examples. It does not state limits of that method. It does not clear adverb-paradigm. The invariance line and the two suffixal pairs remain narrower evidence."
+    },
+    {
+      "id": "ruwiktionary-dictionary-use",
+      "disposition": "EXCLUDED",
+      "licenseId": null,
+      "scope": "Russian Wiktionary article-format rules, abbreviation guide, and lexical entries were not frozen. The project states CC BY-SA 4.0 in a site message and the Wikimedia Foundation terms, not in a freezeable project copyright page with an oldid. The English Wiktionary:Copyrights snapshot is a different project. A dictionary heading does not clear dictionary-use."
     }
   ],
   "pages": [
@@ -197,6 +223,40 @@
       "sourceId": "src-ruwiki-morfologiya-148939075",
       "licenseRoute": "ruwiki",
       "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 148939075 identifies the contributors."
+    },
+    {
+      "key": "neopredelennoe",
+      "title": "Неопределённое местоимение",
+      "oldid": "149963314",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Неопределённое_местоимение&oldid=149963314",
+      "file": "ruwiki/neopredelennoe-mestoimenie-149963314.txt",
+      "sha256": "79b8a9bde8b19283e3e44b8e7e4e6a0bcabbb2d300022becca8a582b78aae6b4",
+      "revisionFile": "ruwiki/neopredelennoe-mestoimenie-149963314.revision.json",
+      "mediawikiSha1": "01f60fe365e127e2ec602cdb55966a5216862587",
+      "parentid": 145823903,
+      "timestamp": "2025-11-15T13:46:10Z",
+      "size": 35621,
+      "retrieved": "2026-09-28",
+      "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149963314 identifies the contributors."
+    },
+    {
+      "key": "prichastie",
+      "title": "Причастие (лингвистика)",
+      "oldid": "153078996",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+      "file": "ruwiki/prichastie-153078996.txt",
+      "sha256": "86b44f7696019d3ac26ac803ca56f25d65c18f1d6fce90eb2884d35ef99c1d99",
+      "revisionFile": "ruwiki/prichastie-153078996.revision.json",
+      "mediawikiSha1": "0cec0d306f3b8803fe3ced41dc62a9b843d34320",
+      "parentid": 151620988,
+      "timestamp": "2026-05-11T14:16:51Z",
+      "size": 32597,
+      "retrieved": "2026-09-28",
+      "sourceId": "src-ruwiki-prichastie-153078996",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors."
     }
   ]
 }

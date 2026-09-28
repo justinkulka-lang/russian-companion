@@ -89,7 +89,7 @@ class Units2125SourceIntakeTest {
     private val gapObjectives = mapOf(
         23 to listOf("obj-u23-completion"),
         24 to listOf("obj-u24-placement"),
-        25 to listOf("obj-u25-nickname-rule"),
+        25 to listOf("obj-u25-productive-formation"),
     )
 
     @Test
@@ -244,7 +244,7 @@ class Units2125SourceIntakeTest {
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
         val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(312, intake.size)
+        assertEquals(330, intake.size)
         assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
         assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
         assertTrue(intake.all { it.audioAssetId == null })
@@ -323,8 +323,7 @@ class Units2125SourceIntakeTest {
         val contrast = pack.unit(24)!!.objectives.first { it.id == "obj-u24-word-order-contrast" }
         assertEquals("RECOGNITION", contrast.kind)
         assertTrue(contrast.checkItemIds.size >= 2)
-        assertTrue(reason(pack, 25).contains("nickname-formation"))
-        assertFalse(reason(pack, 25).contains("Modern address"))
+        assertTrue(reason(pack, 25).contains("no admitted frozen span"))
         listOf(21, 22).forEach { number ->
             val unit = pack.unit(number)!!
             val decision = advancementDecision(
@@ -363,8 +362,8 @@ class Units2125SourceIntakeTest {
         assertGap(withoutCapabilities(pack, 22), 22, "without admitted declined-numeral, both, one-and-a-half, and collective source capabilities", "4371358", keywordBlob)
         assertGap(withoutCapabilities(pack, 24), 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4233876", keywordBlob)
         assertGap(withoutCapabilities(pack, 24), 24, "without admitted alternation, negative-pronoun, and scope source capabilities", "4195114", keywordBlob)
-        assertGap(pack, 25, "without admitted productive-diminutive and register source capabilities", "4660786", keywordBlob)
-        assertGap(pack, 25, "without admitted productive-diminutive and register source capabilities", "3353859", keywordBlob)
+        assertGap(withoutCapabilities(pack, 25), 25, "without admitted productive-diminutive and register source capabilities", "4660786", keywordBlob)
+        assertGap(withoutCapabilities(pack, 25), 25, "without admitted productive-diminutive and register source capabilities", "3353859", keywordBlob)
         val dictionary = sample(pack, 21, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
         val fromRows = V2Validator.validate(claimComplete(withoutCapabilities(pack, 21).copy(provenanceRecords = pack.provenanceRecords + dictionary), 21)).errors
         assertTrue(fromRows.joinToString("\n"), fromRows.any { it.contains("without admitted reflexive-object and purpose source capabilities") })
@@ -524,7 +523,7 @@ class Units2125SourceIntakeTest {
         val pack = pack()
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unrelated = sample(pack, number, "9000001", "src-wikibooks-russian-cc-by-sa", keywordBlob)
-            val base = if (number in listOf(21, 22)) withoutCapabilities(pack, number) else pack
+            val base = if (number in listOf(21, 22, 25)) withoutCapabilities(pack, number) else pack
             val claimed = claimComplete(base.copy(provenanceRecords = base.provenanceRecords + unrelated), number)
             val errors = V2Validator.validate(claimed).errors
             assertTrue(errors.joinToString("\n"), errors.any { it.contains("source capability") || it.contains("source capabilities") })

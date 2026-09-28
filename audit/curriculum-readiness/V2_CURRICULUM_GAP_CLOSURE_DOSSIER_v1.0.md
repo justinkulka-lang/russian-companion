@@ -3,8 +3,8 @@
 **Status:** RESEARCH HANDOFF — NOT AN APPROVAL  
 **Repository:** `justinkulka-lang/russian-companion`  
 **Canonical commit:** `fd69bd03298d69669d09daafe8d364b0e576d033`  
-**Pack content-review digest:** `76879c3e98f1682f322651e830dd18c537a79135badad3c86c77a7e13cfa7c6f`  
-**Repository source digest:** `8819cf84360df77acebd15bb55dd4f090e1ce4f9f7962916f6927fbbc3b4496f`  
+**Pack content-review digest:** `68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4`  
+**Repository source digest:** `8f4aef42a2133c0818b32a58197097c16478c62ed49be67684780a5802f9bcdd`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -15,8 +15,8 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` is merged into this Batch
 
 ## Executive result
 
-- Content blockers: **10 units** — Units 7, 17, and 23–30.
-- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Units 26–30 stay `NOT_PREPARED`.
+- Content blockers: **10 units** — Units 7, 17, 23, 24, 25, and 26–30.
+- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. The frozen adverb paragraph states a productive method and four examples and does not state limits, so `adverb-paradigm` stays unresolved. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Unit 25 keeps bounded classification of the frozen personal-name formation span and stays `NOT_PREPARED` because that classification does not clear `productive-diminutive`. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved because Russian Wiktionary has no freezeable project copyright page.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -80,7 +80,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three explicit Russian pairs — быстро/quickly, хорошо/well, and прекрасно/wonderfully — are admitted only as bounded form/gloss recognition (`adverb-form-gloss`). That sentence is not an approved productive Russian rule: its stated endings include `-ий`, `-а`, and `-е`, the Russian example `быстрый` ends in `-ый`, and the same sentence mixes Russian and Ukrainian examples. Learner instruction shows the three pairs. It does not teach the suffix sentence. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Russian Wikipedia “Наречие” oldid 152437423, under the separate Russian Wikipedia copyrights page oldid 154562152, admits only that adverbs are invariant and the listed pairs быстрый — быстро and творческий — творчески. Those spans support `adverb-invariance` and `adverb-bounded-pairs`. The same page's comparative-degree suffixes are a neighboring concept. A live category-of-state page that forms words with `-о` was inspected and not frozen, because it does not state an adjective-to-adverb paradigm. Diverse Russian adverb vocabulary lists were inspected and not frozen. None of these records state a formation pattern, its limits, and source-supported examples. They do not clear `adverb-paradigm`. Reviewer and mapping signature fields stay blank.
+The Wikipedia Adverb snapshot at oldid 1374548415 remains frozen. Its three explicit Russian pairs — быстро/quickly, хорошо/well, and прекрасно/wonderfully — are admitted only as bounded form/gloss recognition (`adverb-form-gloss`). That sentence is not an approved productive Russian rule: its stated endings include `-ий`, `-а`, and `-е`, the Russian example `быстрый` ends in `-ый`, and the same sentence mixes Russian and Ukrainian examples. Learner instruction shows the three pairs. It does not teach the suffix sentence. The Wikibooks adverbs stub oldid 3197995 remains frozen and excluded as a paradigm. The short-form adjective section stays out. Russian Wikipedia “Наречие” oldid 152437423, under the separate Russian Wikipedia copyrights page oldid 154562152, admits only that adverbs are invariant and the listed pairs быстрый — быстро and творческий — творчески. Those spans support `adverb-invariance` and `adverb-bounded-pairs`. The same page's comparative-degree suffixes are a neighboring concept. A live category-of-state page that forms words with `-о` was inspected and not frozen, because it does not state an adjective-to-adverb paradigm. Diverse Russian adverb vocabulary lists were inspected and not frozen. Russian Wikipedia “Морфология русского языка” oldid 148939075 contains one adverb-formation paragraph that states productive suffixal or prefix-suffixal formation and four examples. That paragraph does not state limits or exceptions, so it is excluded and does not clear `adverb-paradigm`. None of these records state a formation pattern, its limits, and source-supported examples together. They do not clear `adverb-paradigm`. Reviewer and mapping signature fields stay blank.
 
 #### `adverb-paradigm` — `obj-u7-adverb`
 
@@ -178,15 +178,15 @@ The same grammar page's word-order pair remains as optional bounded recognition 
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-`register` is admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The diminutive and personal-name pages are retained and are not taught as a productive rule. Batch D inspected those lists, the colloquial-style mention of subjective-evaluation suffixes, and Diverse Russian word-root formation. None states a bounded productive diminutive rule with limits and source-supported examples. A list is not treated as a formation rule.
+`register` remains admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The frozen formation span on Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152, remains. It states the documented suffix patterns, full-form and short-form bases, the listed examples, the dismissive limitation, and the modern lowered status. The shipped checks classify three listed forms by source labels. That bounded recognition is `diminutive-form-classification`. It does not apply a base and suffix, and it does not clear `productive-diminutive`. It is not a generator for arbitrary names. A listed pair, including the address-page forms, remains narrower evidence. Qualified review is pending. The unit is not installed and the owned-edition mapping is unsigned.
 
 #### `productive-diminutive` — `obj-u25-nickname-rule`
 
-- **Required claim/skill:** A bounded productive diminutive or nickname-formation rule, if a qualified reviewer agrees it is appropriate.
-- **Why the current record is insufficient:** Listed name and diminutive forms, including Ирочка on the address page, do not establish a productive rule.
-- **Required source:** Frozen licensed linguistic instruction explicitly stating a bounded rule, exceptions/cautions, and examples; otherwise retain only listed pairs.
+- **Required claim/skill:** A productive diminutive formation rule limited to base and suffix relationships an admitted frozen source explicitly states, including how to tell a source-supported formation from one the source does not support.
+- **Why the current record is insufficient:** Three checks classify the already listed forms by source labels. They do not ask the learner to apply a base and suffix, and they do not distinguish a valid formation from an invalid one. Exact source identity does not turn that classification into the productive claim.
+- **Required source:** The frozen span may remain. A future chain must add reviewable instruction, guided practice, independent application checks, answer-specific feedback, and remediation. Every Russian form and distractor must stay inside that frozen span. Label classification is not enough.
 - **Russian examples required:** Yes
-- **English scaffold boundary:** English must not turn examples into a productive rule.
+- **English scaffold boundary:** English may name only the source-stated base, suffix, and limitation.
 - **Book-directed disposition:** Current guidance remains book-directed.
 - **Blocks content completeness and advancement:** Yes
 - **Variance dependency:** NONE
@@ -196,17 +196,7 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `indefinite-pronoun` — `obj-u26-indefinite`
-
-- **Required claim/skill:** Selection and use of the required indefinite pronouns/adverbs, limited to explicitly sourced series and distinctions.
-- **Why the current record is insufficient:** No admitted span states the required indefinite-series selection.
-- **Required source:** Frozen licensed grammar instruction explicitly supporting each admitted formation/use distinction and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may organize source-stated series.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`indefinite-pronoun` is admitted from Russian Wikipedia oldid 149963314 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states the three series meanings, one form from each series, and the overlap of the -то series with the -нибудь meaning. An inventory of forms does not clear the claim. The admitted span does not clear postal practice, letter writing, or correspondence work.
 
 #### `postal-address` — `obj-u26-postal-address`
 
@@ -294,17 +284,7 @@ The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that 
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `participle-punctuation` — `obj-u29-punctuation`
-
-- **Required claim/skill:** Participial punctuation rules within a bounded beginner scope.
-- **Why the current record is insufficient:** No admitted span states the punctuation rule.
-- **Required source:** Frozen licensed authoritative instruction with explicit punctuation conditions and examples.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot infer punctuation from examples alone.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`participle-punctuation` is admitted from Russian Wikipedia oldid 153078996 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states that a participial phrase is often set off, the after-noun commas, the before-noun default, both source examples, the end-of-sentence comma, and the personal-pronoun and cause exceptions. It does not authorize universal comma insertion. The admitted span does not clear `bookish-register` or `bookish-reading`. The inactive authority variance stays unactivated.
 
 #### `bookish-register` — `obj-u29-register`
 
@@ -333,6 +313,8 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 ### Unit 30 — Abbreviations, names of Russian letters, and particles
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+
+Russian Wiktionary layout, abbreviation, and entry pages were inspected and excluded. Russian Wiktionary has no freezeable project copyright page with an immutable revision, and the English Wiktionary copyrights route cannot be reused for another project. `dictionary-use` stays unresolved.
 
 #### `dictionary-use` — `obj-u30-dictionary`
 
@@ -411,9 +393,9 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
 3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
-4. **Curriculum research batch B:** Units 21–25. Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 stays `NOT_PREPARED` on productive diminutives.
-5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Units 26–30 stay `NOT_PREPARED`. Unit 28 admits only the stated present-versus-past verbal-adverb relationship.
-6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period and Unit 25 productive diminutives stay unresolved.
+4. **Curriculum research batch B:** Units 21–25. Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 stays `NOT_PREPARED` because bounded classification of the frozen personal-name formation span does not clear `productive-diminutive`.
+5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 28 admits only the stated present-versus-past verbal-adverb relationship. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved.
+6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period stays unresolved. Unit 25 `productive-diminutive` stays unresolved.
 7. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier. Do not delete the completion-over-period mapping scope to clear readiness.
 8. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 9. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.

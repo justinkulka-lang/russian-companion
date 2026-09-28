@@ -53,10 +53,10 @@ class Units2630StructuralMappingTest {
     )
 
     private val liveGap = mapOf(
-        26 to "Unit 26 is not content-complete without admitted indefinite-pronoun, postal-address, letter-writing, and correspondence-work source capabilities",
+        26 to "Unit 26 is not content-complete without admitted postal-address, letter-writing, and correspondence-work source capabilities",
         27 to "Unit 27 is not content-complete without admitted participle-stress and participle-comprehension source capabilities",
         28 to "Unit 28 is not content-complete without admitted verbal-adverb-reading source capabilities",
-        29 to "Unit 29 is not content-complete without admitted participle-punctuation, bookish-register, and bookish-reading source capabilities",
+        29 to "Unit 29 is not content-complete without admitted bookish-register and bookish-reading source capabilities",
         30 to "Unit 30 is not content-complete without admitted dictionary-use and capstone-reading source capabilities",
     )
 

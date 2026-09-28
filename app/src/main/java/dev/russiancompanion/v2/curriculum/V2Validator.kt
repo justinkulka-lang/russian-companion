@@ -793,6 +793,9 @@ internal object V2Validator {
         "obj-u24-placement",
         "obj-u24-word-order-contrast",
         "obj-u25-address",
+        "obj-u25-nickname-rule",
+        "obj-u26-indefinite",
+        "obj-u29-punctuation",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
     )
@@ -853,6 +856,7 @@ internal object V2Validator {
             RequiredSourceCapability("obj-u24-placement", "negation-scope"),
         ),
         25 to listOf(
+            RequiredSourceCapability("obj-u25-nickname-rule", "diminutive-form-classification"),
             RequiredSourceCapability("obj-u25-nickname-rule", "productive-diminutive"),
             RequiredSourceCapability("obj-u25-address", "register"),
         ),
@@ -919,6 +923,11 @@ internal object V2Validator {
             }
             24 -> if ("negation-scope" in unresolved) {
                 listOf("Unit 24 is missing a negation-scope source capability")
+            } else {
+                emptyList()
+            }
+            25 -> if ("productive-diminutive" in unresolved) {
+                listOf("Unit 25 is missing a productive-diminutive source capability")
             } else {
                 emptyList()
             }
@@ -1135,6 +1144,11 @@ internal object V2Validator {
         if (!capabilityHasCheckChain(pack, capability, spanHost)) {
             errors += "Source capability ${capability.id} has no reviewable instruction and check chain"
         }
+        if (capability.supportedClaim == "productive-diminutive" &&
+            !hasProductiveDiminutiveApplication(pack, capability, spanHost)
+        ) {
+            errors += "Source capability ${capability.id} has no independent application check for productive-diminutive"
+        }
         return errors
     }
 
@@ -1154,6 +1168,8 @@ internal object V2Validator {
         "src-wikipedia-russian-alphabet-1371795481|1371795481|alphabet:! Name\n! Old Church Slavonic word-name\n! [[International Phonetic Alphabet|IPA]]|0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526",
         "src-ruwiki-morfologiya-148939075|148939075|morfologiya:\u0420\u044f\u0434 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043d\u0435\u0441\u043a\u043b\u043e\u043d\u044f\u0435\u043c\u044b\u043c: \u043c\u043d\u043e\u0433\u0438\u0435 \u0441\u043b\u043e\u0432\u0430 \u0438\u043d\u043e\u044f\u0437\u044b\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0436\u0434\u0435\u043d\u0438|6e73bc5bc5e94fb4a6497a7c94f0ec204a284bb0dc34295bb4ad57998597c5ee",
         "src-ruwiki-morfologiya-148939075|148939075|morfologiya:\u041f\u043e\u0432\u0435\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043d\u0430\u043a\u043b\u043e\u043d\u0435\u043d\u0438\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u043e \u0442\u0430\u043a\u0436\u0435 \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0447\u0430\u0441\u0442\u0438\u0446 ''\u043f\u0443\u0441\u0442\u044c (\u043f\u0443|d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd",
+        "src-ruwiki-neopredelennoe-mestoimenie-149963314|149963314|neopredelennoe:==== \u0421\u0435\u0440\u0438\u044f \u043d\u0430 ''-\u0442\u043e'' ====\n\u041c\u0435\u0441\u0442\u043e\u0438\u043c\u0435\u043d\u0438\u044f \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u0438\u043f\u0430 \u0432\u044b\u0440\u0430\u0436\u0430\u044e\u0442 \u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0442\u043d\u043e\u0441\u0442\u044c \u0438 \u043d\u0435\u0438|2363c34b89dbc172efc484777d248e3b94438c836b3847203f118b1beecb273b",
+        "src-ruwiki-prichastie-153078996|153078996|prichastie:\u0412 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u044b\u0439 \u043e\u0431\u043e\u0440\u043e\u0442 \u0447\u0430\u0441\u0442\u043e \u0432\u044b\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f [[\u0417\u0430\u043f\u044f\u0442\u0430\u044f|\u0437\u0430\u043f\u044f\u0442\u044b\u043c\u0438]]. \u0415\u0441\u043b\u0438 \u043f\u0440|821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
     )
 
     /**
@@ -1171,6 +1187,38 @@ internal object V2Validator {
      * The particle span must give the command examples and the supposition statement.
      * A class list that only names the words does not.
      */
+    /**
+     * The indefinite span must state the three series meanings, a form from each,
+     * and the overlap of the to-series with the nibud-series meaning.
+     * A bare inventory of forms does not.
+     */
+    private fun clearsIndefinitePronoun(span: String): Boolean {
+        return span.contains("\u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0442\u043d\u043e\u0441\u0442\u044c \u0438 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u0433\u043e\u0432\u043e\u0440\u044f\u0449\u0435\u043c\u0443") &&
+            span.contains("\u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043d\u0435\u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0442\u043d\u044b\u043c\u0438") &&
+            span.contains("\u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0442\u043d\u044b\u0439 \u0434\u0435\u043d\u043e\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0441\u0442\u0430\u0442\u0443\u0441 \u0441\u043b\u0430\u0431\u043e\u0439 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0451\u043d\u043d\u043e\u0441\u0442\u0438") &&
+            span.contains("\u0412 \u0434\u043e\u043c\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043a\u0442\u043e-\u0442\u043e \u0431\u044b\u043b") &&
+            span.contains("\u043a\u0443\u0434\u0430-\u043d\u0438\u0431\u0443\u0434\u044c") &&
+            span.contains("\u043a\u043e\u0435-\u043a\u0430\u043a\u0438\u0435") &&
+            span.contains("\u043c\u043e\u0436\u0435\u0442 \u0443\u043f\u043e\u0442\u0440\u0435\u0431\u043b\u044f\u0442\u044c\u0441\u044f \u0442\u0430\u043a\u0436\u0435 \u0438 \u0432 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0438")
+    }
+
+    /**
+     * The punctuation span must state the after-noun commas, the before-noun
+     * default, both examples, the end-of-sentence comma, and the two exceptions.
+     * The rule says the phrase is often set off. One example does not make it universal.
+     */
+    private fun clearsParticiplePunctuation(span: String): Boolean {
+        return span.contains("\u0447\u0430\u0441\u0442\u043e \u0432\u044b\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f") &&
+            span.contains("\u0432\u044b\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f \u0437\u0430\u043f\u044f\u0442\u044b\u043c\u0438 \u0441 \u0434\u0432\u0443\u0445 \u0441\u0442\u043e\u0440\u043e\u043d") &&
+            span.contains("\u0437\u0430\u043f\u044f\u0442\u044b\u0435 \u043d\u0435 \u0441\u0442\u0430\u0432\u044f\u0442\u0441\u044f") &&
+            span.contains("\u043a\u0440\u043e\u043c\u0435 \u0442\u0435\u0445 \u0441\u043b\u0443\u0447\u0430\u0435\u0432") &&
+            span.contains("\u043b\u0438\u0447\u043d\u044b\u043c \u043c\u0435\u0441\u0442\u043e\u0438\u043c\u0435\u043d\u0438\u0435\u043c") &&
+            span.contains("\u043e\u0431\u043e\u0437\u043d\u0430\u0447\u0430\u0435\u0442 \u043f\u0440\u0438\u0447\u0438\u043d\u0443") &&
+            span.contains("\u0437\u0430\u043f\u044f\u0442\u0430\u044f \u0441\u0442\u0430\u0432\u0438\u0442\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0435\u0440\u0435\u0434 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u044b\u043c \u043e\u0431\u043e\u0440\u043e\u0442\u043e\u043c") &&
+            span.contains("\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430, \u043d\u0430\u043f\u0438\u0441\u0430\u043d\u043d\u0430\u044f \u0432 \u0441\u043f\u0435\u0448\u043a\u0435, \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u043b\u0430 \u043d\u0435\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0443\u044e \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e.") &&
+            span.contains("\u041d\u0430\u043f\u0438\u0441\u0430\u043d\u043d\u0430\u044f \u0432 \u0441\u043f\u0435\u0448\u043a\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u043b\u0430 \u043d\u0435\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0443\u044e \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e.")
+    }
+
     private fun clearsParticle(span: String): Boolean {
         return span.contains("\u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0447\u0430\u0441\u0442\u0438\u0446") &&
             span.contains("\u041f\u0443\u0441\u0442\u044c \u043e\u043d \u0447\u0438\u0442\u0430\u0435\u0442") &&
@@ -1197,11 +1245,19 @@ internal object V2Validator {
             } else {
                 listOf("Source capability $id does not state the particle contrast")
             }
-            "indefinite-pronoun" -> listOf("Source capability $id an indefinite inventory does not clear indefinite-pronoun")
+            "indefinite-pronoun" -> if (clearsIndefinitePronoun(span)) {
+                emptyList()
+            } else {
+                listOf("Source capability $id an indefinite inventory does not clear indefinite-pronoun")
+            }
             "postal-address" -> listOf("Source capability $id address marks do not clear postal-address")
             "letter-writing" -> listOf("Source capability $id does not state letter-writing")
             "participle-stress" -> listOf("Source capability $id a marked example does not clear participle-stress")
-            "participle-punctuation" -> listOf("Source capability $id does not state participle-punctuation")
+            "participle-punctuation" -> if (clearsParticiplePunctuation(span)) {
+                emptyList()
+            } else {
+                listOf("Source capability $id does not state participle-punctuation")
+            }
             "bookish-register" -> listOf("Source capability $id the adverbial bookish note does not clear bookish-register")
             "dictionary-use" -> listOf("Source capability $id a dictionary heading does not clear dictionary-use")
             "capstone-reading" -> listOf("Source capability $id does not state capstone-reading")
@@ -1422,6 +1478,56 @@ internal object V2Validator {
                     it.objectiveId == capability.objectiveId
             }
             bound && item.assessment?.independent == true && structureValid(pack, item).isEmpty()
+        }
+    }
+
+    /**
+     * Classifying a listed source label is not an application of a base and
+     * suffix. A future productive chain needs an independent check that is
+     * bound to the span, names its answer in the feedback, and is not one of
+     * the bounded classification labels.
+     */
+    private fun hasProductiveDiminutiveApplication(
+        pack: V2CurriculumPack,
+        capability: V2SourceCapability,
+        spanHost: V2ProvenanceRecord,
+    ): Boolean {
+        val unit = pack.units.firstOrNull { it.number == capability.unitNumber } ?: return false
+        val objective = unit.objectives.firstOrNull { it.id == capability.objectiveId } ?: return false
+        if (objective.kind != "RECOGNITION" ||
+            objective.instructionStepIds.isEmpty() ||
+            objective.exampleIds.size < 2 ||
+            objective.practiceStepIds.isEmpty() ||
+            objective.checkItemIds.isEmpty() ||
+            objective.remediationStepIds.isEmpty()
+        ) {
+            return false
+        }
+        return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
+            val assessment = item.assessment ?: return@any false
+            if (!assessment.independent || item.feedback.isBlank()) return@any false
+            if (!item.feedback.contains(item.answer)) return@any false
+            if (!assessment.whyAnswerDemonstratesObjective.contains(item.answer)) return@any false
+            if (item.prompt.contains("classifies", ignoreCase = true)) return@any false
+            if (assessment.testedFeature == "DIMINUTIVE_FORM_CLASSIFICATION") return@any false
+            if (BatchBSources.diminutiveClassificationLabel(item.answer)) return@any false
+            if (!capability.exactSpan.contains(item.answer)) return@any false
+            val distractorInSpan = item.options.any { option ->
+                option != item.answer && capability.exactSpan.contains(option)
+            }
+            if (!distractorInSpan) return@any false
+            val participants = assessment.relationParticipantIds.mapNotNull { id ->
+                pack.provenanceRecords.firstOrNull { it.itemId == id }
+            }
+            val bound = participants.any {
+                it.sourceId == spanHost.sourceId &&
+                    it.sourceRevision == spanHost.sourceRevision &&
+                    it.sourceRecordId == spanHost.sourceRecordId &&
+                    it.sourceHash == spanHost.sourceHash &&
+                    it.originalSourceText == capability.exactSpan &&
+                    it.objectiveId == capability.objectiveId
+            }
+            bound && structureValid(pack, item).isEmpty()
         }
     }
 
@@ -1894,6 +2000,7 @@ internal object V2Validator {
             "completion-over-period" -> BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD
             "negation-scope" -> BatchBSources.ADMITTED_NEGATION_SCOPE
             "productive-diminutive" -> BatchBSources.ADMITTED_PRODUCTIVE_DIMINUTIVE
+            "diminutive-form-classification" -> BatchBSources.ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION
             else -> return emptyList()
         }
         val admittedRecord = if (claim == "negation-scope") {
@@ -2025,7 +2132,8 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} keyword or co-occurrence evidence does not clear productive-diminutive"
         }
         if (capability.supportedClaim == "productive-diminutive" &&
-            (folded.contains("\u0438\u0440\u043e\u0447\u043a\u0430") || span.contains("diminutive") || folded.contains("\u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u043e"))
+            !BatchBSources.clearsProductiveDiminutive(span) &&
+            (folded.contains("\u0438\u0440\u043e\u0447\u043a\u0430") || span.contains("diminutive") || folded.contains("\u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d"))
         ) {
             errors += "Source capability ${capability.id} bounded diminutive recognition does not clear productive-diminutive"
         }
@@ -2477,6 +2585,9 @@ internal object V2Validator {
         "obj-u24-concord",
         "obj-u24-placement",
         "obj-u24-word-order-contrast",
+        "obj-u25-nickname-rule",
+        "obj-u26-indefinite",
+        "obj-u29-punctuation",
         "obj-u28-imperfective-adverb",
         "obj-u28-perfective-adverb",
         "obj-u30-abbreviation",
@@ -2517,6 +2628,9 @@ internal object V2Validator {
             ")",
     )
     private val USE_CLASSIFICATION_OBJECTIVES = setOf(
+        "obj-u25-nickname-rule",
+        "obj-u26-indefinite",
+        "obj-u29-punctuation",
         "obj-u30-abbreviation",
         "obj-u30-particle",
     )

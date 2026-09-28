@@ -59,6 +59,8 @@ class FrozenSources:
             "wikipedia-russian-alphabet-1371795481",
             "wikibooks-russian-various-stuff-3353858",
             "ruwiki-morfologiya-abbreviation-particle-148939075",
+            "ruwiki-neopredelennoe-mestoimenie-149963314",
+            "ruwiki-prichastie-153078996",
         }
         if admitted != required:
             raise SystemExit(f"Admitted source decisions changed: {sorted(admitted)}")
@@ -362,10 +364,12 @@ def _unit(builder, number, title, body, populate, gaps, capabilities):
         host = matches[0]
         if spec["supportedClaim"] not in {
             "word-order",
+            "indefinite-pronoun",
             "passive-participle",
             "imperfective-verbal-adverb",
             "perfective-verbal-adverb",
             "active-participle",
+            "participle-punctuation",
             "short-form-adjective",
             "letter-name-review",
             "abbreviation",
@@ -473,7 +477,9 @@ def _attribution_reference() -> dict:
             "No audio is included. Linked media, Phonos, and pronunciation files are not admitted. "
             "Anecdotal postal advice is not shipped. "
             "Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. "
-            "The indefinite series, complete postal practice, general letter conventions, participle stress, participial punctuation, "
+            "Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. "
+            "Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. "
+            "Complete postal practice, general letter conventions, participle stress, "
             "a general bookish-register claim, dictionary use, and the final reading are not prepared. "
             "The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending."
         ),
@@ -516,15 +522,14 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 26,
             "Admitted word-order and address lines",
-            "Proposed Unit 26 uses admitted arrangement lines, the written capital form, and the frozen address marks. The indefinite series, complete postal practice, and other letter conventions stay in the copy you own. Qualified review is pending.",
+            "Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, and the frozen address marks. Complete postal practice and other letter conventions stay in the copy you own. Qualified review is pending.",
             populate,
             [
-                ("indefinite", "The indefinite series stays in the copy you own", "The indefinite series stays in the copy you own. No admitted frozen span states that selection.", "The indefinite series has no admitted frozen span."),
                 ("postal-address", "Complete postal practice stays in the copy you own", "Complete postal practice stays in the copy you own. The frozen address marks are not that practice.", "Complete modern postal practice has no admitted frozen span."),
                 ("letter-writing", "Other letter conventions stay in the copy you own", "Other letter conventions stay in the copy you own. The written capital form is not a whole letter.", "General letter structure, openings, closings, and register have no admitted frozen span."),
                 ("correspondence", "Correspondence work stays in the copy you own", "Correspondence work stays in the copy you own. The admitted lines do not supply it.", "Correspondence work has no admitted frozen span."),
             ],
-            [("obj-u26-word-order", "word-order")],
+            [("obj-u26-word-order", "word-order"), ("obj-u26-indefinite", "indefinite-pronoun")],
         ),
         _unit(
             builder, 27,
@@ -553,15 +558,15 @@ def build_units_26_30() -> dict:
         _unit(
             builder, 29,
             "Admitted active and short-form lines",
-            "Proposed Unit 29 uses admitted active lines, the short-form contrast, and the bookish-speech note for adverbial forms. Punctuation stays in the copy you own. This note is not a claim about every bookish text. Qualified review is pending.",
+            "Proposed Unit 29 uses admitted active lines, the frozen participial-phrase punctuation rule, the short-form contrast, and the bookish-speech note for adverbial forms. This note is not a claim about every bookish text. Qualified review is pending.",
             populate,
             [
-                ("punctuation", "Participial punctuation stays in the copy you own", "Participial punctuation stays in the copy you own. No admitted span states that rule.", "Participial punctuation has no admitted frozen span."),
                 ("register", "A general bookish-register claim stays in the copy you own", "A general bookish-register claim stays in the copy you own. The adverbial note is only about adverbial forms.", "A claim about all bookish text has no admitted frozen span."),
                 ("reading", "The bookish reading stays in the copy you own", "The bookish reading stays in the copy you own. The admitted note is not that reading.", "The bookish reading has no admitted frozen span."),
             ],
             [
                 ("obj-u29-active", "active-participle"),
+                ("obj-u29-punctuation", "participle-punctuation"),
                 ("obj-u29-short-adjective", "short-form-adjective"),
             ],
         ),

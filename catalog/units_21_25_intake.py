@@ -117,7 +117,22 @@ class Builder:
     def say(self, unit: int, text: str) -> str:
         from units_3_5_intake import CLAIM, GRAMMAR_TERM
 
-        if CYRILLIC.search(text) or CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
+        if CLAIM.search(text) or (GRAMMAR_TERM.search(text) and "?" not in text):
+            raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
+        covered = text
+        shipped = sorted(
+            {
+                record.get("shippedText") or ""
+                for record in self.provenance
+                if record.get("unitNumber") == unit and record.get("shippedText")
+            },
+            key=len,
+            reverse=True,
+        )
+        for piece in shipped:
+            if piece:
+                covered = covered.replace(piece, "")
+        if CYRILLIC.search(covered):
             raise SystemExit(f"independently authored English makes a linguistic claim: {text!r}")
         key = (unit, text)
         if key not in self._said:
@@ -423,8 +438,8 @@ def build_units_21_25() -> dict:
         _unit(builder, 24, "Admitted negation lines", "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.", 6, populate, [
             ("placement", "Scope-sensitive placement stays in the copy you own", "Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.", "Scope-sensitive placement has no admitted frozen span."),
         ]),
-        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, courtesy lines, and the frozen address-register sentences. A general nickname-formation rule stays in the copy you own. Qualified review is pending.", 8, populate, [
-            ("nickname-rule", "A general nickname-formation rule stays in the copy you own", "A general nickname-formation rule stays in the copy you own. A listed pair is not that rule.", "A general nickname-formation rule has no admitted frozen span."),
+        _unit(builder, 25, "Admitted name and courtesy lines", "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. That classification does not clear a productive diminutive formation rule. Qualified review is pending.", 8, populate, [
+            ("productive-formation", "Productive diminutive formation stays in the copy you own", "The shown forms are classification of listed source labels. A productive diminutive formation rule has no admitted frozen span.", "A productive diminutive formation rule has no admitted frozen span."),
         ]),
     ]
     units = prepared
@@ -517,7 +532,8 @@ def _attribution_reference() -> dict:
             "Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. "
             "The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. "
             "Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. "
-            "Completion over a period and a general nickname-formation rule are not prepared. "
+            "Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. That classification does not clear a productive diminutive formation rule. A listed pair is not that rule. "
+            "Completion over a period is not prepared. "
             "The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending."
         ),
         "introducedInUnit": 21,

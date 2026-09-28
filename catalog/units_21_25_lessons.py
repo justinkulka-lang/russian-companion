@@ -18,7 +18,9 @@ _PAGE_FILE = {
     "cases": ROOT / "catalog/sources/units-3-5/wikibooks/cases-4195114.txt",
     "names": ROOT / "catalog/sources/units-21-25/wikibooks/names-4660786.txt",
     "useful": ROOT / "catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt",
+    "lichnoe-imya": ROOT / "catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt",
 }
+LICHNOE_SOURCE = "src-ruwiki-lichnoe-imya-154915954"
 _CIRCULAR = (
     "does this answer",
     "does this row",
@@ -580,3 +582,79 @@ def _unit_25(lesson) -> None:
             ),
         ],
     )
+    formation = _span(
+        "lichnoe-imya",
+        "В словообразовании уменьшительных и ласкательных форм имён участвуют",
+        "считаются стилистически приниженными",
+    )
+    full_base = "от полной формы имени"
+    short_base = "от краткой формы"
+    dismissive = "оттенок пренебрежения"
+    limitation = "Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения"
+    lowered = "считаются стилистически приниженными"
+    prompt = "Which admitted phrase classifies the shown form?"
+    lesson.objective(
+        "nickname-rule",
+        "Classify the shown name form by its admitted base or shade",
+        "CONTRAST_SELECTION",
+        ("lichnoe-imya", formation, limitation),
+        [
+            _wiki("lichnoe-imya", formation, "Марюня", full_base),
+            _wiki("lichnoe-imya", formation, "Машенька", short_base),
+            _wiki("lichnoe-imya", formation, "Сашка", dismissive),
+        ],
+        [
+            _check(
+                prompt,
+                "Марюня",
+                full_base,
+                [
+                    (short_base, f"The source assigns {short_base} to Машенька.", f"{short_base} does not classify the shown form."),
+                    (dismissive, f"The source assigns {dismissive} to Сашка.", f"{dismissive} does not classify the shown form."),
+                ],
+                source=LICHNOE_SOURCE,
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
+                why=f"The source says {full_base} and gives Марюня. The keyed phrase is {full_base}.",
+                response_kind=_shared_response_kind([full_base, short_base, dismissive]),
+            ),
+            _check(
+                prompt,
+                "Машенька",
+                short_base,
+                [
+                    (full_base, f"The source assigns {full_base} to Марюня.", f"{full_base} does not classify the shown form."),
+                    (dismissive, f"The source assigns {dismissive} to Сашка.", f"{dismissive} does not classify this shown form."),
+                ],
+                source=LICHNOE_SOURCE,
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
+                why=f"The source says {short_base} and gives Машенька. The keyed phrase is {short_base}.",
+                response_kind=_shared_response_kind([full_base, short_base, dismissive]),
+            ),
+            _check(
+                prompt,
+                "Сашка",
+                dismissive,
+                [
+                    (full_base, f"The source assigns {full_base} to Марюня.", f"{full_base} does not classify the shown form."),
+                    (short_base, f"The source assigns {short_base} to Машенька.", f"{short_base} does not classify the shown form."),
+                ],
+                source=LICHNOE_SOURCE,
+                feature="DIMINUTIVE_FORM_CLASSIFICATION",
+                why=f"The source says these forms carry {dismissive} and gives Сашка. The keyed phrase is {dismissive}.",
+                response_kind=_shared_response_kind([full_base, short_base, dismissive]),
+            ),
+        ],
+        extra=[
+            ("lichnoe-imya", formation, lowered, "label"),
+            ("lichnoe-imya", formation, "Сашка, Гришка, Светка", "example"),
+            ("lichnoe-imya", formation, "Мария", "example"),
+            ("lichnoe-imya", formation, "Маша", "example"),
+        ],
+    )
+    if not hasattr(lesson, "capabilities"):
+        lesson.capabilities = []
+    lesson.capabilities.append({
+        "objectiveId": "obj-u25-nickname-rule",
+        "supportedClaim": "diminutive-form-classification",
+        "exactSpan": formation,
+    })
