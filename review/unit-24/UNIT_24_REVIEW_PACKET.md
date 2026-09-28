@@ -4,19 +4,19 @@ This packet prepares review. It records an unsigned structural mapping proposal.
 
 The owned-edition mapping worksheet separates observed edition facts, the proposed lesson and printed page range, unresolved edition questions, and matters that still require qualified linguistic review. ISBN, owned-copy verification, variance, reviewer identity, qualification, date, and approval stay blank. The disposition remains PENDING_CURRICULUM_REVIEWER.
 
-Unit 24 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 24 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
+Unit 24 remains in development. Its readiness is content-complete and review-pending. The Lesson 24 relationship is a proposed, unsigned mapping. It is not an approved edition alignment.
 
 ## Package identity
 
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 369bff869c72b90b9180a9ec9fbb178f1e185750
-- Unit content-review SHA-256: 1676c3bf2799cdc9d022ba8b0b951a83cfa9819087cad3810248bb6fe7a4202b
+- Curriculum source commit: 3f1e8f4016b1d803cccc0840011e5a4f5a4b4529
+- Unit content-review SHA-256: 66c55c2586ea28b908ef9bb8159c008dd119c747f39a80ca9788a10266aa9b7b
 - Mapping-package SHA-256: f09634aaa924c3c31527894fb61b0aafc421ad745f9e12620235805d88ded22f
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: b27f6d0be8b9aeea54d3f332088103cd5c5fc9795455b9d0ac6e1fe0bb3442e9
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162
+- Review-package SHA-256: b00665d4003e9391bfb26f427033d801f183a29594c9a7bc00ff7ca4bcb01038
+- Repository source SHA-256: 2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -34,14 +34,14 @@ The marker scan used by this package detects only a fixed list of known prohibit
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
-topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 24 is in development. Admitted negation lines, the book compare, the prefix table, a bounded word-order contrast, and the admitted ReadyRussian placement contrast await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=94
+estimatedMinutes=102
 
 ## Not yet approved
 
@@ -69,24 +69,24 @@ notes=No qualified reviewer has signed Unit 24.
 
 ### UNIT `unit-24`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book, obj-u24-placement
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-book, u24-s-gap-placement
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-placement, obj-u24-book
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-placement, u24-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e43acb53e7b05e0ea4899f1888641253e195193fc8b00bb3931f3d2a0a360809
+- Content hash: e443ecdd2bf7908ff21ec632f7fd5f963aec64009e2e956a58c86e89ff1d15ae
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
-topicSummary=Proposed Unit 24 is in development and is not prepared. Admitted negation lines, the book compare, the prefix table, and a bounded word-order contrast await qualified review. Scope-sensitive placement has no admitted frozen span. It is not installed and the owned-edition mapping is not signed.
+topicSummary=Proposed Unit 24 is in development. Admitted negation lines, the book compare, the prefix table, a bounded word-order contrast, and the admitted ReadyRussian placement contrast await qualified review. It is not installed and the owned-edition mapping is not signed.
 installState=DEVELOPMENT
-readiness=NOT_PREPARED
+readiness=CONTENT_COMPLETE_REVIEW_PENDING
 mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 24, printed pages 296-306. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=24
 prerequisites=23
-estimatedMinutes=94
+estimatedMinutes=102
 
 ### ADVANCEMENT `unit-24-advancement`
 
@@ -219,6 +219,25 @@ practice=u24-st-guided-word-order-contrast-1
 checks=u24-i-word-order-contrast-1,u24-i-word-order-contrast-2
 remediation=u24-st-rem-word-order-contrast
 
+### OBJECTIVE `obj-u24-placement`
+
+- Objectives: obj-u24-placement
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 035c53e339b40a80eb88e86b95ac9de5f811f35cdb96960178d9dbb545b20dea
+
+title=Choose the admitted meaning for the shown placement
+kind=RECOGNITION
+unitNumber=24
+instruction=u24-st-orient,u24-st-teach-placement-1,u24-st-teach-placement-2
+examples=ex-u24-placement-0,ex-u24-placement-1
+practice=u24-st-guided-placement-1
+checks=u24-i-placement-1,u24-i-placement-2
+remediation=u24-st-rem-placement
+
 ### OBJECTIVE `obj-u24-book`
 
 - Objectives: obj-u24-book
@@ -238,53 +257,34 @@ practice=
 checks=
 remediation=
 
-### OBJECTIVE `obj-u24-placement`
-
-- Objectives: obj-u24-placement
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8708f686b8614498c6edeb5231ff263d705667851e805ea126400790042475e9
-
-title=Scope-sensitive placement stays in the copy you own
-kind=GUIDANCE
-unitNumber=24
-instruction=u24-st-gap-placement
-examples=
-practice=
-checks=
-remediation=
-
 ### SESSION `u24-s-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-placement, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3fab177291ebe9743717759fb0d7ffe0caa2a2b14bd9b0fe5864633d3b511b53
+- Content hash: 54f4dcaa1fb2a2a424d3a80820b56d58831136606c95b6450dce9a2ee43c5ca0
 
 title=Admitted negation lines
 estimatedMinutes=8
-objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-concord,obj-u24-word-order-contrast,obj-u24-book
+objectives=obj-u24-verbal-ne,obj-u24-absence,obj-u24-alternation,obj-u24-stand-ins,obj-u24-concord,obj-u24-word-order-contrast,obj-u24-placement,obj-u24-book
 steps=u24-st-orient
 
 ### STEP `u24-st-orient`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-placement, obj-u24-book
 - Sessions: u24-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6a2a71d574c73e94b8c581699a0b6054887459fe95dac007699a83b8d0ad225a
+- Content hash: e4fd507e5a1ea79c7c243679bfc14a9e819996cd95ec66832e07c50dedd683ec
 
 kind=ORIENT
 title=Admitted negation lines
-body=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.
+body=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1132,6 +1132,131 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-word-order-contrast
 
+### SESSION `u24-s-placement`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fd7128fd31d752fccd4f5833709393107f7f623d180157c7a3ce4d5dc261fd0d
+
+title=Choose the admitted meaning for the shown placement
+estimatedMinutes=12
+objectives=obj-u24-placement
+steps=u24-st-teach-placement-1,u24-st-guided-placement-1,u24-st-teach-placement-2,u24-st-rem-placement,u24-st-check-placement
+
+### STEP `u24-st-teach-placement-1`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 39c833bc098e9010d7ef066124c93402bdfd133a036a227b8174a447a4b63957
+
+kind=TEACH
+title=Admitted lines
+body=Мне не холодно. — To me it is not cold. Не мне холодно. — It is not to me that it is cold. 
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=ex-u24-placement-0,ex-u24-placement-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-guided-placement-1`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 30747dcd9f748c721313a5ad30105ab7adcff55762ac699d3534f3a72e09de1c
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u24-g-placement-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-placement
+
+### STEP `u24-st-teach-placement-2`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b31e570d59f67635c320ad9960410bccb2c12f99dd8fa01e432f620f6a909c5a
+
+kind=TEACH
+title=Admitted instruction
+body=Note that the modifier не negates the word which comes right after it.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-rem-placement`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2ecc8f072697fe565d367529f61b68717fa26671ec0c90f027dd5c9abeb0b21b
+
+kind=REMEDIATE
+title=Remediation
+body=Note that the modifier не negates the word which comes right after it.
+dominantAction=Continue
+references=
+items=
+examples=ex-u24-placement-0,ex-u24-placement-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-check-placement`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 60d9d13638155242d191f710b008306d34122837688a7bc9c7ae04a53f39634d
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u24-i-placement-1,u24-i-placement-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-placement
+
 ### SESSION `u24-s-book`
 
 - Objectives: obj-u24-book
@@ -1188,43 +1313,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 24 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u24-s-gap-placement`
-
-- Objectives: obj-u24-placement
-- Sessions: u24-s-gap-placement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 900428d0bc666ae42c9eedc93172814c4d1fb394a83d2db9376d486ff0eaf019
-
-title=Scope-sensitive placement stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u24-placement
-steps=u24-st-gap-placement
-
-### STEP `u24-st-gap-placement`
-
-- Objectives: obj-u24-placement
-- Sessions: u24-s-gap-placement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d694661c3b045402036ad6d965d97917e0879553bbc3b5fba11a0ca6406a8f3c
-
-kind=UNAVAILABLE
-title=Scope-sensitive placement stays in the copy you own
-body=Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=Scope-sensitive placement has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -1517,6 +1605,40 @@ note=There is no need to persuade me
 objectiveId=obj-u24-word-order-contrast
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u24-placement-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 51d5f3ebe18eca615a1703fc6b917aee4a446fae94e21bfef86970edaf71332d
+
+kind=LEXICAL
+letterId=
+display=Мне не холодно.
+note=To me it is not cold.
+objectiveId=obj-u24-placement
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u24-placement-1`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2f1a4b9e791f772cfe37386295b8790ed1e6618dbbe7ee47f5da7c1f55bc3d68
+
+kind=LEXICAL
+letterId=
+display=Не мне холодно.
+note=It is not to me that it is cold.
+objectiveId=obj-u24-placement
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u24-g-verbal-ne-0`
 
 - Objectives: obj-u24-verbal-ne
@@ -1725,6 +1847,41 @@ whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не на
 contrastMembers=One should not persuade me | There is no need to persuade me
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u24-g-placement-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d351d77a193b031e21ae8e4943c877aefa5b4a5749e32023c2eaa90554df9659
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English meaning matches the shown sentence?
+promptLetter=Мне не холодно.
+options=To me it is not cold. | It is not to me that it is cold.
+answer=To me it is not cold.
+feedback=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+objectiveId=obj-u24-placement
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "It is not to me that it is cold." with the admitted gloss "It is not to me that it is cold.".
+testedFeature=NEGATION_FOLLOWING_WORD
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u24-placement-0
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ex-u24-placement-0-en
+distractorSourceIds= | prov-ex-u24-placement-1-en
+distractorDifference= | The frozen source pairs the shown form "It is not to me that it is cold." with the admitted gloss "It is not to me that it is cold.".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+contrastMembers=To me it is not cold. | It is not to me that it is cold.
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u24-placement-0-ru | prov-ex-u24-placement-0-en | prov-ex-u24-placement-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u24-i-verbal-ne-1`
@@ -2147,19 +2304,89 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u24-i-placement-1`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7d3494fa1871ffe4b10008fb6af084b350a6e4ee05baf4570a629abd3258ef07
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English meaning matches the shown sentence?
+promptLetter=Не мне холодно.
+options=It is not to me that it is cold. | To me it is not cold.
+answer=It is not to me that it is cold.
+feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+objectiveId=obj-u24-placement
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "To me it is not cold." with the admitted gloss "To me it is not cold.".
+testedFeature=NEGATION_SCOPE_CONTRAST
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u24-placement-1
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-placement-1-en
+distractorSourceIds= | prov-ex-u24-placement-0-en
+distractorDifference= | The frozen source pairs the shown form "To me it is not cold." with the admitted gloss "To me it is not cold.".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+contrastMembers=It is not to me that it is cold. | To me it is not cold.
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u24-placement-1-ru | prov-ex-u24-placement-1-en | prov-ex-u24-placement-0-en
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u24-i-placement-2`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1a102765ded685451ff92877e64ac1189c3aa7036c0fe558fd472a473d57c3ff
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted English meaning matches the shown sentence?
+promptLetter=Не мне холодно.
+options=It is not to me that it is cold. | I am not cold.
+answer=It is not to me that it is cold.
+feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+objectiveId=obj-u24-placement
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The frozen source pairs the shown form "I am not cold." with the admitted gloss "I am not cold.".
+testedFeature=NEGATION_SCOPE_NOT_COLD
+evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+contrastSetId=u24-placement-2
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ex-u24-placement-1-en
+distractorSourceIds= | prov-u24-placement-x-1
+distractorDifference= | The frozen source pairs the shown form "I am not cold." with the admitted gloss "I am not cold.".
+whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+contrastMembers=It is not to me that it is cold. | I am not cold.
+relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
+relationParticipantIds=prov-ex-u24-placement-1-ru | prov-ex-u24-placement-1-en | prov-u24-placement-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
 ### REFERENCE `ref-u2125-attribution`
 
 - Objectives: none
-- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-book, u24-s-gap-placement
+- Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-placement, u24-s-book
 - Source: src-wikibooks-russian-cc-by-sa
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: f68dcd1b9417fa92432942a2437c348000af4176599e79ea5093819bd96a4b07
+- Content hash: e4e26ccda015358781d42817b823bbf66bf75e152186f9c8bfa9e72a6b229d72
 
 title=Units 21–25 source notice
 summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. That classification does not clear a productive diminutive formation rule. A listed pair is not that rule. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Review is pending.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
@@ -2625,6 +2852,166 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512
 contentHash=098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-placement-0-en`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c571f1222603040e1f05f2c56cf17ce549e8fd5f8b7db70f31a4dcb03b51d3a1
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=To me it is not cold.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=4608f2020c5e9d738e7f32b9eda71f4bb1acdb686bb7f4daa6150af2a976d45b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-placement-0-ru`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 16012ff8f429ad74cac555dacb86fdac0f35f90593718adc3243e8e5001a092e
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=Мне не холодно.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=d706fb3a2eda8e8e2722238460e13df63105c62d98c02fba07dcb9e85a6ec038
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-placement-1-en`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 815dafe694c9656525c892b813459410a93a2680bf78bef3d06f17a6ef6cc9f7
+
+recordType=meaning
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=It is not to me that it is cold.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=89bfb69c1b778136fcfc37927f55f13921626203560bca79af70aa825049a069
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u24-placement-1-ru`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8edf2ea398b5f448e65ccb74127db2aca478f6e0a7b2d0a86c5eebd5f90b1de6
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=Не мне холодно.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=ece4b3a222a837be9fa9c0e4b6d2eb485a489f2827d7bf39996c4a9e7e7f2020
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4116,6 +4503,206 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u24-placement-rem`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: dc9ca0a9739e2b3e7aafbbcddb576aa002e240f8056d5694298fcb3be16ae5fe
+
+recordType=instruction
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=Note that the modifier не negates the word which comes right after it.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=ef22ef585036de2837527d5c7c360e12712250f6c98808ede4b8b83cf561c64d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-placement-rem-r0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 473b7a1027a54aed1cf7b07062d8b2b9d930cae2340c80a68a17b1a5652c5f88
+
+recordType=example
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=не
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-placement-x-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 94e498231ec7a631afb98d990c219676b8cd8d4ef91dbe50f2d098ad3aaca34f
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=If you were to move it in front of a different word, you would produce a different meaning.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=bb4def409d826f23096d95cf76adb21e92904544a8149ec574519e8f20d1c791
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-placement-x-1`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a53d5b24b1b835a2bbfe76dd21e39fc3677819e6681b8db6c123b19fdc8c9d85
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=I am not cold.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=eebf9b9401333aaa07fa0e3fd99154b05bde5c8a258c5d572f9a521c552bfd0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-placement-x-2`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 03bc0850c0a3184cbe3379aa15949fb3b0dddd902cd600bdaa80f3a92c101fb8
+
+recordType=label
+sourceUrl=https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html
+sourceRevision=27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c
+sourceRecordId=langgen3:Note that the modifier не negates the word which comes right after it. If you we
+originalSourceText=Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>
+<div class="restrain"><table class="Examples2">
+<col class="Examples2_A">
+<col class="Examples2_B">
+<tbody>
+<tr>
+<td><p class="P13" lang="ru">Мне не холодно.</p></td>
+<td><p class="P11">To me it is not cold. (I am not cold.)</p></td>
+</tr>
+<tr>
+<td><p class="P13" lang="ru">Не мне холодно.</p></td>
+<td><p class="P11">It is not to me that it is cold. (I am not the one who thinks it is cold.)
+shippedText=I am not the one who thinks it is cold.
+transformation=readyrussian markup selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a
+contentHash=b8e520b7fbe5433b61c4c36a694f9d23a97a6f217e420a93c96ea6f35c44cda9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u24-stand-ins-rem`
 
 - Objectives: obj-u24-stand-ins
@@ -5357,10 +5944,10 @@ text=Which English meaning matches the shown sentence?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 15305accf5f944eda634cb9c2db6b17632ec2143dabaee66dddb0b3e7287bae4
+- Content hash: 34a6c006d2b6f89c0a81dc14e235bc7a3a678e656ac871ae3db004730aecce41
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted negation lines
+text=Which admitted English meaning matches the shown sentence?
 
 ### AUTHORED_ENGLISH `en-u24-170`
 
@@ -5370,10 +5957,10 @@ text=Admitted negation lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4f121bcfab855174174a3c27048a5e0936ade84c17780ffac16dfb82b9c168bd
+- Content hash: cb289457d68e87c9059672c0ebf6e3329f0d6a70dc9d2bde4ecc5cec80640941
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, and a bounded word-order contrast. That contrast states two meanings. Scope-sensitive placement stays in the copy you own. Qualified review is pending.
+text=Admitted negation lines
 
 ### AUTHORED_ENGLISH `en-u24-171`
 
@@ -5383,10 +5970,10 @@ text=Proposed Unit 24 uses the frozen genitive and accusative compare, the froze
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f4a70491a30ef041f6c2a4f3d2e5483ca6e04037a2c4305b5e08a3e26c5a1eed
+- Content hash: 446e43f572d831ecd6e23c70429d9793aa96563366b89415e11508e690bd9aba
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
+text=Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.
 
 ### AUTHORED_ENGLISH `en-u24-172`
 
@@ -5396,10 +5983,10 @@ text=Open Lesson 24 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5e67ef0c6ce564f6a4678364c7ea8c726a82c600b8edf62874067f4ff6d2164f
+- Content hash: 9f5641652709a49c2fbe3ccdfce3c2b2d9e12c5aaa48619ccb04e7a153352ba0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=Open Lesson 24 in the copy you own. The app records do not replace that lesson.
 
 ### AUTHORED_ENGLISH `en-u24-173`
 
@@ -5409,10 +5996,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 65179dac4fdd439f2e37a43212bcd5af196a1856147bcf0da8bfe3343e4cae65
+- Content hash: 97ffd0642e273a4ddeb2f5fd28496b9f7436e312fa892cc669c1e75bdd634153
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=Guided practice
 
 ### AUTHORED_ENGLISH `en-u24-174`
 
@@ -5422,10 +6009,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 60c0121102b9f03e902f8124d1416f040eb6b99e91daabf202e72efc8373593f
+- Content hash: 7143edeeaab6af3af8855f054510da1c18b627f24477a3c6b07bafdf9ac52a82
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=Choose the admitted record. The feedback states the frozen field.
 
 ### AUTHORED_ENGLISH `en-u24-175`
 
@@ -5435,10 +6022,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4bf03bad5a2202a7fe56aa5c87ba290f00e6c6ee58dc06bb86c7318273a7f5a0
+- Content hash: 4df2a74a15b2b33e4f9e24841290eb7368fd42de54b7c653b35d5a786d5fcf12
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=Remediation
 
 ### AUTHORED_ENGLISH `en-u24-176`
 
@@ -5448,10 +6035,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 64eb1616daa556f78290d507aa5e400f4ea59d07c5fbe1392d0621ceeeeb824b
+- Content hash: ff9bbd0838e576f02e7ff7e5d6b59393729a695a0e35fcf34d0d3070faadb9ec
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=Independent checks
 
 ### AUTHORED_ENGLISH `en-u24-177`
 
@@ -5461,10 +6048,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7d2a75e55de34215facbe98c1e16c8b88e44ca385aa3d924536431d8196abffd
+- Content hash: b6389ed0be97513d46c2a5ac7448195d4c79e10a692a33494c9a0aaea874ec91
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 24 in your copy
+text=These checks use only admitted records. A miss returns to the explanation.
 
 ### AUTHORED_ENGLISH `en-u24-178`
 
@@ -5474,10 +6061,10 @@ text=Work Lesson 24 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b21a025198c74e7284f0bae086f6fb89ab73cff089c8dbba1ebe12db513a1702
+- Content hash: 3b465753b3acce17f9dbd6037d04ea303492c9e619ec37cd6309deb2546aa03e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=Work Lesson 24 in your copy
 
 ### AUTHORED_ENGLISH `en-u24-179`
 
@@ -5487,10 +6074,10 @@ text=Do Lesson 24 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 5b5f352f18c02023fb20cc2c7d017301138998d4d527766ef97fd6e23df2693e
+- Content hash: 40fdc50fb1c187fb14a3724933a05fba2a8ba693a8396e65e044fb30aef6c2cc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 24 in your copy and complete its lesson work.
+text=Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
 
 ### AUTHORED_ENGLISH `en-u24-180`
 
@@ -5500,10 +6087,10 @@ text=Open Lesson 24 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3f0a64845bde6f45c987b9abc52d51918f53c7bc9c821356367617c864e30fb6
+- Content hash: 91bfbba0fbcf6e1c504ff6ff798187194daa9ba20bc4fa72b80c98c8802599a2
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 24 book work
+text=Open Lesson 24 in your copy and complete its lesson work.
 
 ### AUTHORED_ENGLISH `en-u24-181`
 
@@ -5513,10 +6100,10 @@ text=Record Lesson 24 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 12b252136e7f7eb5bc9521133cd36f1f3a761a6efe7422dd34d8dee0f30da3dd
+- Content hash: ef42c0dacbc5813ff9d3ed218e5db7dae2a023796c1f3343ed2a228cb339f422
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=Record Lesson 24 book work
 
 ### AUTHORED_ENGLISH `en-u24-182`
 
@@ -5526,10 +6113,10 @@ text=When you have done Lesson 24 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0a6c4e7cfa3e4bb147ab080a67415a28eed34f156a7b94f3f9b74ec2dc6ca0c2
+- Content hash: 5531b278fed12ec3de198ceed911fc078a8be421da26c82e0512b86e2593db4e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 24 work in your copy.
+text=When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
 
 ### AUTHORED_ENGLISH `en-u24-183`
 
@@ -5539,23 +6126,10 @@ text=Self-attest only after the Lesson 24 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3a5e2b82af484dc549d7cae7aaf2988440b5f744d47001f5ba1ea209adba4482
+- Content hash: 756fad1c2eac261b3ee95c99f4c81683c357b47208b1107f2816ad667a5eef1d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Scope-sensitive placement stays in the copy you own
-
-### AUTHORED_ENGLISH `en-u24-184`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3fa7fce18775f35836b3690ee7821d8579c2cf228a0928e3f346e5a98573366
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Scope-sensitive placement stays in the copy you own. A word-order pair does not state that distinction.
+text=Self-attest only after the Lesson 24 work in your copy.
 
 ### SOURCE `src-wikibooks-russian-cc-by-sa`
 
@@ -5600,6 +6174,21 @@ Selected spans only. Russian quotations are unchanged. English claims are quoted
 Отрицательные местоимения
 CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 141256493 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-readyrussian-langgen3`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9cfc36f57e4646cb13d29e9357e3e675c7e1c803f2f2e64eb85414df920db35d
+
+Language Generator 3
+CC BY-SA 4.0
+ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -5656,6 +6245,20 @@ permitsAppUse=true
 - Content hash: 9c75c6666cb4623ccc24b7c922a79eda48114fecbbb78280f05647eb2e517167
 
 src-ruwiki-otritsatelnye-141256493
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-readyrussian-langgen3`
+
+- Objectives: none
+- Sessions: none
+- Source: src-readyrussian-langgen3
+- Rights: rights-readyrussian-langgen3
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1ec44ce912cc683b3ec528c42caeb5b34e501f7053dff67acaf58a4f1a23e5cd
+
+src-readyrussian-langgen3
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -5738,15 +6341,24 @@ permitsAppUse=true
 - `obj-u24-word-order-contrast` CHECK `u24-i-word-order-contrast-1`
 - `obj-u24-word-order-contrast` CHECK `u24-i-word-order-contrast-2`
 - `obj-u24-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
+- `obj-u24-placement` INSTRUCTION `u24-st-orient`
+- `obj-u24-placement` INSTRUCTION `u24-st-teach-placement-1`
+- `obj-u24-placement` INSTRUCTION `u24-st-teach-placement-2`
+- `obj-u24-placement` EXAMPLE `ex-u24-placement-0`
+- `obj-u24-placement` EXAMPLE `ex-u24-placement-1`
+- `obj-u24-placement` PRACTICE `u24-st-guided-placement-1`
+- `obj-u24-placement` CHECK `u24-i-placement-1`
+- `obj-u24-placement` CHECK `u24-i-placement-2`
+- `obj-u24-placement` REMEDIATION `u24-st-rem-placement`
 - `obj-u24-book` INSTRUCTION `u24-st-book-work`
 - `obj-u24-book` INSTRUCTION `u24-st-book`
-- `obj-u24-placement` INSTRUCTION `u24-st-gap-placement`
 - `u24-s-orient` OBJECTIVE `obj-u24-verbal-ne`
 - `u24-s-orient` OBJECTIVE `obj-u24-absence`
 - `u24-s-orient` OBJECTIVE `obj-u24-alternation`
 - `u24-s-orient` OBJECTIVE `obj-u24-stand-ins`
 - `u24-s-orient` OBJECTIVE `obj-u24-concord`
 - `u24-s-orient` OBJECTIVE `obj-u24-word-order-contrast`
+- `u24-s-orient` OBJECTIVE `obj-u24-placement`
 - `u24-s-orient` OBJECTIVE `obj-u24-book`
 - `u24-st-orient` REFERENCE `ref-u2125-attribution`
 - `u24-s-verbal-ne` OBJECTIVE `obj-u24-verbal-ne`
@@ -5830,10 +6442,20 @@ permitsAppUse=true
 - `u24-st-check-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
 - `u24-st-check-word-order-contrast` ITEM `u24-i-word-order-contrast-1`
 - `u24-st-check-word-order-contrast` ITEM `u24-i-word-order-contrast-2`
+- `u24-s-placement` OBJECTIVE `obj-u24-placement`
+- `u24-st-teach-placement-1` EXAMPLE `ex-u24-placement-0`
+- `u24-st-teach-placement-1` EXAMPLE `ex-u24-placement-1`
+- `u24-st-teach-placement-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-placement-1` REMEDIATION `u24-st-rem-placement`
+- `u24-st-guided-placement-1` ITEM `u24-g-placement-0`
+- `u24-st-teach-placement-2` REFERENCE `ref-u2125-attribution`
+- `u24-st-rem-placement` EXAMPLE `ex-u24-placement-0`
+- `u24-st-rem-placement` EXAMPLE `ex-u24-placement-1`
+- `u24-st-check-placement` REMEDIATION `u24-st-rem-placement`
+- `u24-st-check-placement` ITEM `u24-i-placement-1`
+- `u24-st-check-placement` ITEM `u24-i-placement-2`
 - `u24-s-book` OBJECTIVE `obj-u24-book`
 - `u24-st-book-work` REFERENCE `ref-u2125-attribution`
-- `u24-s-gap-placement` OBJECTIVE `obj-u24-placement`
-- `u24-st-gap-placement` REFERENCE `ref-u2125-attribution`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-en`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-ru`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-1-en`
@@ -5848,6 +6470,10 @@ permitsAppUse=true
 - `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-0-ru`
 - `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-1-en`
 - `obj-u24-concord` PROVENANCE `prov-ex-u24-concord-1-ru`
+- `obj-u24-placement` PROVENANCE `prov-ex-u24-placement-0-en`
+- `obj-u24-placement` PROVENANCE `prov-ex-u24-placement-0-ru`
+- `obj-u24-placement` PROVENANCE `prov-ex-u24-placement-1-en`
+- `obj-u24-placement` PROVENANCE `prov-ex-u24-placement-1-ru`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-0-en`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-0-ru`
 - `obj-u24-stand-ins` PROVENANCE `prov-ex-u24-stand-ins-1-en`
@@ -5884,6 +6510,11 @@ permitsAppUse=true
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-2`
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-3`
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-4`
+- `obj-u24-placement` PROVENANCE `prov-u24-placement-rem`
+- `obj-u24-placement` PROVENANCE `prov-u24-placement-rem-r0`
+- `obj-u24-placement` PROVENANCE `prov-u24-placement-x-0`
+- `obj-u24-placement` PROVENANCE `prov-u24-placement-x-1`
+- `obj-u24-placement` PROVENANCE `prov-u24-placement-x-2`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-rem`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-0`
 - `obj-u24-stand-ins` PROVENANCE `prov-u24-stand-ins-x-1`
@@ -5906,7 +6537,8 @@ permitsAppUse=true
 
 ## Unavailable experiences
 
-- `u24-st-gap-placement`
+None.
+
 
 ## Unresolved relationships
 

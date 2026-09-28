@@ -4,8 +4,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4`  
-**Repository source digest:** `7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652`  
+**Pack content-review digest:** `9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162`  
+**Repository source digest:** `2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35`  
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -16,9 +16,9 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` was merged into the Batch
 
 ## Executive result
 
-- Content blockers: **10 units** — Units 7, 17, 23, 24, 25, and 26–30.
-- Batch E inspected only Units 7, 17, 23, 24, and 25. Batch E excluded only the six inspected Russian Wikipedia revisions. Those exclusions do not establish that the five capabilities are impossible to source from a different licensed project. Those five capabilities stay unresolved and those units stay `NOT_PREPARED`. Units 26–30 were not modified.
-- Units 16, 18, 19, 20, 21, and 22: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed. Linguistic review and owned-edition mapping remain pending. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adjective-to-adverb paradigm. The frozen adverb paragraph states a productive method and four examples and does not state limits, so `adverb-paradigm` stays unresolved. Unit 17 has no admitted productive clock-time construction. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 keeps a bounded word-order contrast and stays `NOT_PREPARED` because that contrast does not clear `negation-scope`. Unit 25 keeps bounded classification of the frozen personal-name formation span and stays `NOT_PREPARED` because that classification does not clear `productive-diminutive`. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved because Russian Wiktionary has no freezeable project copyright page.
+- Content blockers: **6 units** — Units 7, 23, 26, 27, 29, and 30.
+- Batch E inspected only Units 7, 17, 23, 24, and 25. Batch E excluded only the six inspected Russian Wikipedia revisions. Those exclusions do not establish that the five capabilities are impossible to source from a different licensed project. Units 26–30 were not modified.
+- Units 16, 17, 18, 19, 20, 21, 22, 24, 25, and 28: `CONTENT_COMPLETE_REVIEW_PENDING`. Advancement can presently succeed for a learner who finishes the required checks. Linguistic review and owned-edition mapping remain pending and unsigned. Unit 7 stays `NOT_PREPARED` because `adverb-paradigm` has no admitted productive span. Unit 19 probability is admitted as review-pending development curriculum and does not approve the unit. Units 21 and 22 are review-pending development curriculum and are not approved. Unit 23 keeps the admitted duration span and stays `NOT_PREPARED` because completion over a period has no admitted span. Unit 24 admits `negation-scope` only from the ReadyRussian Language Generator 3 statement that the modifier negates the following word, together with that page's minimal placement contrast. The Wikipedia word-order pair does not clear the claim. Unit 25 admits `productive-diminutive` only as an application chain inside the already frozen personal-name span. Classification checks do not clear that claim. Unit 26 admits letter structure and exact neutral correspondence fragments and stays `NOT_PREPARED` because `postal-address` is unresolved. Unit 27 admits bounded form-level stress and stays `NOT_PREPARED` because `participle-comprehension` is unresolved and the authority variance is unactivated. Unit 28 admits a short public-domain verbal-adverb reading. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 admits offline dictionary-field recognition and the ReadyRussian Reading 5 story, and stays `NOT_PREPARED` because the authority variance is unactivated.
 - Qualified linguistic review: **all 30 units**.
 - Owned-edition mapping review: **all 30 units**.
 - Licensed-asset blockers: **Units 1–2**.
@@ -61,20 +61,20 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 15 | Requests, the imperative, and consolidation of aspect use | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 18 | Comparative forms, superlative expression, and relative clauses built with the inflected relative pronoun | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 19 | Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 20 | Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying and leading pairs; selected prefixed motion verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 21 | Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 22 | Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified review and owned-edition mapping remain pending |
 | 23 | Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
-| 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 26 | Indefinite pronouns, word order, and letter writing | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
 | 27 | Participles: types and stress | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
-| 28 | Verbal adverbs | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | NOT_APPLICABLE | YES | Close documented source-supported curriculum gaps, then regenerate review materials |
+| 28 | Verbal adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 29 | Bookish style, active participles, punctuation, and short-form adjectives | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
-| 30 | Abbreviations, names of Russian letters, and particles | NOT_PREPARED | NO | RECORDED_NOT_PREPARED, UNRESOLVED_REQUIRED_SOURCE_CAPABILITY, MISSING_SOURCE_SUPPORTED_CURRICULUM | NONE | PROPOSED_NOT_ACTIVATED | YES | Close documented source-supported curriculum gaps, then regenerate review materials; separately activate or reject the proposed variance |
+| 30 | Abbreviations, names of Russian letters, and particles | NOT_PREPARED | NO | RECORDED_NOT_PREPARED | NONE | PROPOSED_NOT_ACTIVATED | YES | Keep readiness NOT_PREPARED while the authority variance stays unactivated; qualified review and mapping remain pending |
 
 ## Source-research queue
 
@@ -100,29 +100,17 @@ Batch E reconfirmed Russian Wikipedia “Наречие” at oldid 152437423 an
 
 ### Unit 17 — Time, weekdays, calendar dates, years, age expressions, and ordinal numbers
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-Age, weekday, month, and clock-question spans remain admitted. `calendar-date` remains admitted. `productive-clock-time` is not admitted. The retained Pressbooks chapter for Diverse Russian, “Традиции: грамматика”, sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3, admits only the 0.00, 0.15, 0.30, and 0.45 lines as `productive-quarter-hour-time`. That Pressbooks license route is separate. Those lines do not clear `productive-clock-time`.
+Age, weekday, month, and clock-question spans remain admitted. `calendar-date` remains admitted. `productive-clock-time` is admitted only from the frozen ReadyRussian Grammar 20 page, complete HTML sha256 `b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff`, under the ReadyRussian CC BY-SA 4.0 route. The admitted span is the source-stated dial system and its exact first-hour examples. Linked audio and the clock web application are not admitted. The retained Pressbooks chapter for Diverse Russian, “Традиции: грамматика”, sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3, admits only the 0.00, 0.15, 0.30, and 0.45 lines as `productive-quarter-hour-time`. That Pressbooks license route is separate. Those lines do not clear `productive-clock-time`.
 
 The three clock phrases in Wikipedia “Date and time representation by country” oldid 1366690592, from `uses the same convention:` through `7:45 respectively`, are bounded clock-expression recognition (`clock-expression-recognition`): четверть восьмого/7:15, полвосьмого/7:30, and без четверти восемь/7:45. They do not establish a productive clock-time answer pattern. “Который час?” stays a question. Other hours are not derived.
 
 Calendar dates remain the written and spoken examples in Wikipedia “Date and time notation in Russia” oldid 1357134172, from `In [[Russia]], dates are usually written` through `Двадцать восьмое августа}}").` The spoken example supports the genitive-month relation. The written example `28 августа 2017 г.` supports day-month-year order, and the year gloss only on that written form. Numeric dates and the following colloquial sentence stay out. Completing the calendar-date checks does not resolve productive clock-time. Batch D found no broader productive clock-time rule in the retained quarter-hour chapter, the three clock phrases, or the date-notation page. Other hours are still not derived. Reviewer and mapping signature fields stay blank.
 
-Batch E reconfirmed that date-notation oldid 1357134172 and “Date and time representation by country” oldid 1366690592 had not moved. The retained quarter-hour chapter remains bounded to the .00, .15, .30, and .45 positions, including the час/часа/часов and пятнадцать минут alternatives inside those positions. Russian Wikipedia “Время суток” oldid 145113865 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `757bb2e832d49c4eb1f013fcabb50607c3bada2a96aba230fd8b059619f83702`. The page states 24-hour and 12-hour numeric notation. It does not state a Russian clock-time construction beyond quarter-hour positions. The page is excluded. `productive-clock-time` stays unresolved.
+Batch E reconfirmed that date-notation oldid 1357134172 and “Date and time representation by country” oldid 1366690592 had not moved. The retained quarter-hour chapter remains bounded to the .00, .15, .30, and .45 positions, including the час/часа/часов and пятнадцать минут alternatives inside those positions. Russian Wikipedia “Время суток” oldid 145113865 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `757bb2e832d49c4eb1f013fcabb50607c3bada2a96aba230fd8b059619f83702`. The page states 24-hour and 12-hour numeric notation. It does not state a Russian clock-time construction beyond quarter-hour positions. The page is excluded and does not clear `productive-clock-time`.
 
-#### `productive-clock-time` — `obj-u17-clock-answers`
-
-- **Required claim/skill:** Productive clock-time answers limited to a construction an admitted frozen source explicitly states.
-- **Why the current record is insufficient:** Three fixed phrase-to-time checks are recognition. They do not teach or assess a productive answer pattern.
-- **Required source:** An immutable licensed source that explicitly states the productive construction and the examples used for checks.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English cannot derive other hours or invent a clock rule.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-Units 16, 18, and 20 have no open Batch A research requests. Their shared license notice no longer states Unit 17 clock or date readiness or Unit 19 probability. That reachable reference change moves their content-review digests. Authored-English ids for those units stay bound to the unit and the exact text, so Unit 17 inserts do not renumber them. Unit 17 uses its own source notice, which keeps calendar-date admitted, the three clock phrases as bounded recognition, and productive clock-time unresolved. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING` for Units 16, 18, and 20.
+Units 16, 18, and 20 have no open Batch A research requests. Their shared license notice no longer states Unit 17 clock or date readiness or Unit 19 probability. That reachable reference change moves their content-review digests. Authored-English ids for those units stay bound to the unit and the exact text, so Unit 17 inserts do not renumber them. Unit 17 uses its own source notice, which keeps calendar-date admitted, the three clock phrases as bounded recognition, and productive clock-time bound to the ReadyRussian Grammar 20 span. Mapping-package digests are unchanged. Readiness stays `CONTENT_COMPLETE_REVIEW_PENDING` for Units 16, 17, 18, and 20. Qualified review remains unsigned.
 
 ### Unit 19 — Conditional constructions; obligation or probability; productive meanings of selected verbal prefixes
 
@@ -164,51 +152,27 @@ Batch E retained two Russian Wikipedia revisions under the copyrights route oldi
 
 ### Unit 24 — Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
 `negation-alternation` is the frozen book compare on English Wikipedia “Russian grammar” oldid 1369617627. `negative-pronoun` is the formation statement and ни-/не- table on Russian Wikipedia oldid 141256493. Negative concord is recognition of that page's rule. Neither the book compare, nor concord, nor a sentence that merely contains не or ни, clears `negation-scope`.
 
-The same grammar page's word-order pair remains as optional bounded recognition on `obj-u24-word-order-contrast`. The frozen lines are `Не надо меня уговаривать.` with `One should not persuade me` and `Меня не надо уговаривать.` with `There is no need to persuade me`. In both sentences `не надо` stays together and `меня` moves. That contrast does not clear `negation-scope`, does not complete Unit 24, and does not permit advancement. The neighboring sentence “Word order can express logical stress, and degree of definiteness.” does not clear the claim. Reviewer identity, qualification, date, disposition, signature, and reviewed digest stay blank. The unit is not installed.
+The same grammar page's word-order pair remains as optional bounded recognition on `obj-u24-word-order-contrast`. The frozen lines are `Не надо меня уговаривать.` with `One should not persuade me` and `Меня не надо уговаривать.` with `There is no need to persuade me`. In both sentences `не надо` stays together and `меня` moves. That contrast does not clear `negation-scope`. The neighboring sentence “Word order can express logical stress, and degree of definiteness.” does not clear the claim. `negation-scope` is admitted only from ReadyRussian Language Generator 3, HTML sha256 `27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c`, under the ReadyRussian CC BY-SA 4.0 route. The admitted statement is that the modifier negates the following word, with the source's minimal placement contrast. Reviewer identity, qualification, date, disposition, signature, and reviewed digest stay blank. The unit is not installed.
 
-Batch E reconfirmed English Wikipedia “Russian grammar” at oldid 1369617627. Russian Wikipedia “Отрицание (лингвистика)” oldid 148666284 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `e5f7b01d0c4aa3389c326a0e3bb77af452914270a5f2903603841b1714fdb827`. The Russian example is negative concord, Никто не пришёл. A lexical prefix on непростой and a cross-linguistic particle-before-verb sentence with an Arabic example do not state how placement of не changes a Russian interpretation. It is excluded. `negation-scope` stays unresolved.
-
-#### `negation-scope` — `obj-u24-placement`
-
-- **Required claim/skill:** Scope-sensitive placement of не, limited to a distinction an admitted frozen source explicitly states.
-- **Why the current record is insufficient:** The word-order pair states two meanings. It does not identify negation scope, move не, or state a placement rule. Sentence/gloss recognition of that pair does not assess the claim.
-- **Required source:** A frozen licensed span that explicitly states the negation-scope or не-placement distinction, with its own instruction, examples, guided practice, independent checks, feedback, and remediation.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may name only the source-stated distinction.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Batch E reconfirmed English Wikipedia “Russian grammar” at oldid 1369617627. Russian Wikipedia “Отрицание (лингвистика)” oldid 148666284 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `e5f7b01d0c4aa3389c326a0e3bb77af452914270a5f2903603841b1714fdb827`. The Russian example is negative concord, Никто не пришёл. A lexical prefix on непростой and a cross-linguistic particle-before-verb sentence with an Arabic example do not state how placement of не changes a Russian interpretation. It is excluded and does not clear `negation-scope`.
 
 ### Unit 25 — Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-`register` remains admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The frozen formation span on Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152, remains. It states the documented suffix patterns, full-form and short-form bases, the listed examples, the dismissive limitation, and the modern lowered status. The shipped checks classify three listed forms by source labels. That bounded recognition is `diminutive-form-classification`. It does not apply a base and suffix, and it does not clear `productive-diminutive`. It is not a generator for arbitrary names. A listed pair, including the address-page forms, remains narrower evidence. Qualified review is pending. The unit is not installed and the owned-edition mapping is unsigned.
+`register` remains admitted as recognition of the frozen address-page lists and register sentences on Russian Wikipedia oldid 153012874. Those listed forms do not clear `productive-diminutive`. The frozen formation span on Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152, remains. It states the documented suffix patterns, full-form and short-form bases, the listed examples, the dismissive limitation, and the modern lowered status. Classification checks remain `diminutive-form-classification` and do not clear `productive-diminutive`. The productive chain applies only patterns and forms already inside that frozen span. It is not a generator for arbitrary names. A listed pair, including the address-page forms, remains narrower evidence. Qualified review is pending. The unit is not installed and the owned-edition mapping is unsigned.
 
-Batch E did not turn the listed personal-name forms into a productive rule. Russian Wikipedia “Уменьшительное имя” oldid 151359343 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `8f3dd286e9e692b66fbea0099a56d3babbd7522482e4693f034793ccc4c50398`. The page describes social and historical hypocoristics. It does not state a productive diminutive formation rule together with its constraints. The retained examples include Ивашка and Петрило. The page is excluded. The earlier “Диминутив” stub oldid 149098069 stays excluded. `productive-diminutive` stays unresolved.
-
-#### `productive-diminutive` — `obj-u25-nickname-rule`
-
-- **Required claim/skill:** A productive diminutive formation rule limited to base and suffix relationships an admitted frozen source explicitly states, including how to tell a source-supported formation from one the source does not support.
-- **Why the current record is insufficient:** Three checks classify the already listed forms by source labels. They do not ask the learner to apply a base and suffix, and they do not distinguish a valid formation from an invalid one. Exact source identity does not turn that classification into the productive claim.
-- **Required source:** The frozen span may remain. A future chain must add reviewable instruction, guided practice, independent application checks, answer-specific feedback, and remediation. Every Russian form and distractor must stay inside that frozen span. Label classification is not enough.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may name only the source-stated base, suffix, and limitation.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Batch E did not turn the listed personal-name forms into a productive rule. Russian Wikipedia “Уменьшительное имя” oldid 151359343 is retained under the Russian Wikipedia copyrights route oldid 154562152, sha256 `8f3dd286e9e692b66fbea0099a56d3babbd7522482e4693f034793ccc4c50398`. The page describes social and historical hypocoristics. It does not state a productive diminutive formation rule together with its constraints. The retained examples include Ивашка and Петрило. The page is excluded. The earlier “Диминутив” stub oldid 149098069 stays excluded. Neither excluded page clears `productive-diminutive`.
 
 ### Unit 26 — Indefinite pronouns, word order, and letter writing
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-`indefinite-pronoun` is admitted from Russian Wikipedia oldid 149963314 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states the three series meanings, one form from each series, and the overlap of the -то series with the -нибудь meaning. An inventory of forms does not clear the claim. The admitted span does not clear postal practice, letter writing, or correspondence work.
+`indefinite-pronoun` is admitted from Russian Wikipedia oldid 149963314 under the Russian Wikipedia copyrights page oldid 154562152. The frozen span states the three series meanings, one form from each series, and the overlap of the -то series with the -нибудь meaning. An inventory of forms does not clear the claim. The admitted span does not clear postal practice, letter writing, or correspondence work. `letter-writing` and `correspondence-work` are admitted only from ReadyRussian Phrasebook 12, HTML sha256 `aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218`, under the ReadyRussian CC BY-SA 4.0 route. The admitted material is letter structure, neutral greetings and closings, and exact neutral correspondence fragments. The malformed gloss and the religious or context-specific closings are excluded. Those spans do not clear `postal-address`. The Wikibooks address sample remains bounded recognition only.
 
 #### `postal-address` — `obj-u26-postal-address`
 
@@ -222,45 +186,11 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 - **Variance dependency:** NONE
 - **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
 
-#### `letter-writing` — `obj-u26-letter-writing`
-
-- **Required claim/skill:** General letter structure, openings, closings, and register appropriate to the bounded learner task.
-- **Why the current record is insufficient:** A capitalized form or isolated line is not a whole letter convention.
-- **Required source:** Frozen licensed instructional guidance with explicit structures, register labels, and examples. Do not copy Penguin correspondence exercises.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may provide directions but cannot invent Russian formulae or register.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-#### `correspondence-work` — `obj-u26-correspondence`
-
-- **Required claim/skill:** A bounded correspondence application using only already admitted conventions.
-- **Why the current record is insufficient:** Existing admitted lines do not supply a complete correspondence activity.
-- **Required source:** After letter-writing and postal capabilities are sourced, use source-bound components in an independently authored task; any Russian response key must remain source-supported or open-ended and unscored.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may create the activity frame; Russian model text must be sourced.
-- **Book-directed disposition:** Book-directed is acceptable if a lawful model cannot be admitted.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
 ### Unit 27 — Participles: types and stress
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-#### `participle-stress` — `obj-u27-stress`
-
-- **Required claim/skill:** A bounded participle-stress principle or explicit form-level stress records adequate for the intended checks.
-- **Why the current record is insufficient:** A marked example is not a general stress rule.
-- **Required source:** Frozen licensed linguistic evidence explicitly supporting each shipped stress relationship. Prefer form-level records if no safe general rule exists.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English must not generalize from one marked form.
-- **Book-directed disposition:** Current guidance remains book-directed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+`participle-stress` is admitted only as bounded written stress on four exact English Wiktionary revisions: оставля́емый oldid 74231596, обсужда́емый oldid 74233962, напи́санный oldid 74228228, and прочи́танный oldid 74232159, under the English Wiktionary copyrights route oldid 87545419. Those forms do not state a productive stress rule and do not clear `participle-comprehension`. The authority variance stays unactivated.
 
 #### `participle-comprehension` — `obj-u27-comprehension`
 
@@ -276,21 +206,9 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 ### Unit 28 — Verbal adverbs
 
-Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
+Current state: `DEVELOPMENT` / `CONTENT_COMPLETE_REVIEW_PENDING`; advancement: `YES`.
 
-The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that imperfective adverbial participles are usually present, while perfective ones can only be past. That sentence supports the two bounded recognition claims. It does not state a productive paradigm. A later sentence in the same article says adverbial participles are a feature of bookish speech and pairs `Пообедав, я пошёл гулять` with `Я пообедал и пошёл гулять`. That pair is a register illustration for adverbial forms. It is not a reading passage, and it does not clear a general bookish-register claim. `verbal-adverb-reading` is a required source capability with an empty admission set. Guidance prose, a readiness label, and the bounded adverb records do not clear it. Unit 28 remains `NOT_PREPARED` and advancement stays blocked.
-
-#### `verbal-adverb-reading` — `obj-u28-readings`
-
-- **Required claim/skill:** A short reading/application experience for admitted imperfective and perfective verbal-adverb forms.
-- **Why the current record is insufficient:** Form/gloss lines do not supply a reading passage.
-- **Required source:** A frozen redistributable text containing source-verified target forms, with text-bound comprehension items; or an explicit book-directed disposition if the reading is not required for app completeness.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English questions may be authored only when answers are explicit in the admitted text.
-- **Book-directed disposition:** Book-directed may be retained if governance permits content completeness without an in-app passage.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** NONE
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+The frozen English Wikipedia “Russian grammar” oldid 1369617627 states that imperfective adverbial participles are usually present, while perfective ones can only be past. That sentence supports the two bounded recognition claims. It does not state a productive paradigm. A later sentence in the same article says adverbial participles are a feature of bookish speech and pairs `Пообедав, я пошёл гулять` with `Я пообедал и пошёл гулять`. That pair is a register illustration for adverbial forms. It is not a reading passage, and it does not clear a general bookish-register claim. `verbal-adverb-reading` is admitted only from Russian Wikisource “Вечера у княгини Старобельской” oldid 5336197, a short exact span, under the work-level public-domain basis recorded with Russian Wikisource copyrights oldid 5723825. Project hosting is not the public-domain basis. Qualified review remains unsigned.
 
 ### Unit 29 — Bookish style, active participles, punctuation, and short-form adjectives
 
@@ -326,33 +244,9 @@ Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
 Current state: `DEVELOPMENT` / `NOT_PREPARED`; advancement: `NO`.
 
-Russian Wiktionary layout, abbreviation, and entry pages were inspected and excluded. Russian Wiktionary has no freezeable project copyright page with an immutable revision, and the English Wiktionary copyrights route cannot be reused for another project. `dictionary-use` stays unresolved.
+Russian Wiktionary layout, abbreviation, and entry pages were inspected and excluded. Russian Wiktionary has no freezeable project copyright page with an immutable revision, and the English Wiktionary copyrights route cannot be reused for another project. `dictionary-use` is admitted only from English Wiktionary “Wiktionary:Russian entry guidelines” oldid 92541199 under the English Wiktionary copyrights route oldid 87545419. The admitted instruction is offline recognition of the stressed headword, meaning, declension, and conjugation fields. `capstone-reading` is admitted only from the exact ReadyRussian Reading 5 story and its source-supplied vocabulary, HTML sha256 `6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d`, under the ReadyRussian CC BY-SA 4.0 route. Linked audio is not admitted. One reading does not demonstrate every earlier grammatical objective.
 
-#### `dictionary-use` — `obj-u30-dictionary`
-
-- **Required claim/skill:** Offline dictionary-use procedure aligned with the actual packaged reference tools and book-directed work.
-- **Why the current record is insufficient:** No admitted span gives the required procedure.
-- **Required source:** Frozen license-compatible dictionary guidance plus independently authored product-operational instructions; distinguish linguistic instruction from product help.
-- **Russian examples required:** No or operational English only
-- **English scaffold boundary:** English may fully describe app operations; linguistic conventions and Russian abbreviations must be sourced.
-- **Book-directed disposition:** Book-directed for the owned dictionary appendix is allowed.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
-
-Russian Wikipedia “Морфология русского языка” oldid 148939075, under the separate Russian Wikipedia copyrights page oldid 154562152, is already frozen for Units 21–25. Two spans from that same revision are now admitted for Unit 30 only. Letter abbreviations and vowel-final sound abbreviations are grouped together, with СНГ, ЭВМ, ГАИ, and гороно, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command examples Пусть он читает and Да будет мир! are separated from the supposition forms читал бы and читали бы. Those spans clear `abbreviation` and `particle` as bounded recognition. They do not state a complete abbreviation system, a particle inventory, dictionary use, or a final reading. The СССР/США glosses and the address marks do not clear `abbreviation`. The class list that only names бы, пусть, and да does not clear `particle`. Unit 30 stays `NOT_PREPARED`. The inactive authority variance stays unactivated.
-
-#### `capstone-reading` — `obj-u30-capstone`
-
-- **Required claim/skill:** A lawful final reading that applies only previously admitted capabilities and supports text-bound review.
-- **Why the current record is insufficient:** No admitted text supplies the final reading.
-- **Required source:** A frozen redistributable passage with provenance, rights, exact text, and comprehension/application items whose answers are explicit; no Penguin final reading.
-- **Russian examples required:** Yes
-- **English scaffold boundary:** English may frame reflection and text-bound questions.
-- **Book-directed disposition:** Book-directed is allowed if governance permits the app capstone to remain a coordination task.
-- **Blocks content completeness and advancement:** Yes
-- **Variance dependency:** PROPOSED_NOT_ACTIVATED
-- **After implementation:** Regenerate the unit content-review digest and review packet; Qualified reviewer reviews the full unit chain and signs the matching digest; Owned-edition mapping reviewer records coverage/variance disposition.
+Russian Wikipedia “Морфология русского языка” oldid 148939075, under the separate Russian Wikipedia copyrights page oldid 154562152, is already frozen for Units 21–25. Two spans from that same revision are now admitted for Unit 30 only. Letter abbreviations and vowel-final sound abbreviations are grouped together, with СНГ, ЭВМ, ГАИ, and гороно, while a consonant-final sound abbreviation is shown both ways as в МИД and в МИДе. The command examples Пусть он читает and Да будет мир! are separated from the supposition forms читал бы and читали бы. Those spans clear `abbreviation` and `particle` as bounded recognition. They do not state a complete abbreviation system or a particle inventory. The СССР/США glosses and the address marks do not clear `abbreviation`. The class list that only names бы, пусть, and да does not clear `particle`. Unit 30 stays `NOT_PREPARED`. The inactive authority variance stays unactivated.
 
 ## Licensed-asset queue
 
@@ -404,10 +298,10 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 1. **Mechanical cleanup decision:** resolve the two Unit 4 orphan examples without altering curriculum merely to improve a count.
 2. **Asset research:** licensed letter/pronunciation audio for Units 1–2 and verified handwriting assets for Unit 2.
-3. **Remaining Batch A research:** Unit 7 adverb-paradigm and Unit 17 productive-clock-time. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
-4. **Curriculum research batch B:** Units 21–25. Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 25 stays `NOT_PREPARED` because bounded classification of the frozen personal-name formation span does not clear `productive-diminutive`.
-5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Units 26–30 stay `NOT_PREPARED`. Unit 26 admits `indefinite-pronoun` and still lacks postal practice, letter writing, and correspondence work. Unit 28 admits only the stated present-versus-past verbal-adverb relationship. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 `dictionary-use` stays unresolved.
-6. **Curriculum research batch D:** Unit 24 `negation-scope` stays unresolved. The frozen word-order pair is bounded sentence recognition and does not clear that claim. Units 7, 17, 23, 24, and 25 stay `NOT_PREPARED`. Unit 7 has no admitted adverb paradigm. Unit 17 has no admitted productive clock-time construction. Unit 23 completion over a period stays unresolved. Unit 25 `productive-diminutive` stays unresolved.
+3. **Remaining Batch A research:** Unit 7 `adverb-paradigm` stays unresolved. Unit 17 `productive-clock-time` is admitted from ReadyRussian Grammar 20 and remains review-pending. Unit 19 probability-dolzhen is admitted as review-pending development curriculum. Calendar-date stays admitted. Units 16, 18, and 20 research requests stay closed.
+4. **Curriculum research batch B:** Units 21 and 22 are review-pending. Unit 23 stays `NOT_PREPARED` on completion over a period. Unit 24 `negation-scope` and Unit 25 `productive-diminutive` are admitted inside their frozen spans and remain review-pending. Classification checks do not clear `productive-diminutive`.
+5. **Curriculum research batch C:** Unit 23 elapsed time stays admitted on the Pressbooks duration span and does not clear completion over a period. Unit 26 admits letter writing and correspondence work and stays `NOT_PREPARED` on `postal-address`. Unit 27 admits form-level stress and stays `NOT_PREPARED` on `participle-comprehension`. Unit 28 admits the short verbal-adverb reading. Unit 29 admits `participle-punctuation` and still lacks a general bookish-register claim and a bookish reading. Unit 30 admits dictionary-field recognition and the capstone story and stays `NOT_PREPARED` because the authority variance is unactivated.
+6. **Curriculum research batch D:** The frozen word-order pair is bounded sentence recognition and does not clear `negation-scope`. Units 7 and 23 stay `NOT_PREPARED`. Unit 23 completion over a period stays unresolved.
 7. Keep Unit 23's unsigned packet bound to the instructional chain. Do not sign it in this dossier. Do not delete the completion-over-period mapping scope to clear readiness.
 8. Activate, reject, or revise the Units 27/29/30 variance through a separate owner/reviewer decision.
 9. Obtain qualified linguistic review and owned-edition mapping signatures unit by unit.

@@ -138,6 +138,15 @@ class GapClosureDossierTest {
             "diminutive-form-classification",
             "indefinite-pronoun",
             "participle-punctuation",
+            "productive-clock-time",
+            "negation-scope",
+            "productive-diminutive",
+            "letter-writing",
+            "correspondence-work",
+            "participle-stress",
+            "verbal-adverb-reading",
+            "dictionary-use",
+            "capstone-reading",
         )
         assertTrue(headings.none { it.claim in resolvedClaims })
         assertTrue(headings.none { it.unitNumber in listOf(16, 18, 20) })

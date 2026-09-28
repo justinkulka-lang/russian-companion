@@ -11,12 +11,12 @@ Unit 27 install state is DEVELOPMENT and readiness is NOT_PREPARED. The Lesson 2
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4cf6007f69beadac5278bb42e5bf060a62fe3eb9
-- Unit content-review SHA-256: 517bc0ac21360e0fd46727d38ca375b43799d14259dc74bc400ab1de98a23044
+- Curriculum source commit: 3f1e8f4016b1d803cccc0840011e5a4f5a4b4529
+- Unit content-review SHA-256: d8c535a602ab930589ca2dfc52c67abd15c0c30dbadb6d4770af0439d2f4c3ca
 - Mapping-package SHA-256: f5da4227d7bdfa500293d76f3b48ab8ac7646ac0dd6c90b4e8ac4f10cc69a385
-- Pack content-review SHA-256: 68e069a4c7eacc2ed17f4a92747708818853ab4a5e0b56ab29b25909bc6d35d4
-- Review-package SHA-256: 8d674aa5f90a29931380914014250d47c26137a06d6d8217edbd75763fc17885
-- Repository source SHA-256: 7e73e724ef3895ff8fb3401f0a84411e74a62dfe0877fcf9015554215ee7a652
+- Pack content-review SHA-256: 9084ed0a9a8037bd244f2b2fe3b18f1f9ed6e64f22637530bbdcd0dda1755162
+- Review-package SHA-256: 3373e1691b173b65814f30966836ac8d1455a6376aba427c151a64cdb7b8c8fe
+- Repository source SHA-256: 2b3608febd67cb6e43faf302a490420dd1480ee28d9991efc5ddbbc12817bc35
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -41,7 +41,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 27. Observed structural scope: Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=27
 prerequisites=26
-estimatedMinutes=50
+estimatedMinutes=58
 
 ## Not yet approved
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 27.
 
 ### UNIT `unit-27`
 
-- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-book, obj-u27-stress, obj-u27-comprehension
-- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-stress, u27-s-gap-comprehension
+- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-stress, obj-u27-book, obj-u27-comprehension
+- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-stress, u27-s-book, u27-s-gap-comprehension
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4096433ccb502c0284d338c24c96212b45383ec8aa0dced3330863c57fbd719c
+- Content hash: 42d338ca7113d95ffac50d515357e4b418a2aeb7960d96642d3569c455f8a56e
 
 number=27
 title=Participles: types and stress
@@ -86,7 +86,7 @@ mappingStatus=PENDING_CURRICULUM_REVIEWER
 mappingNote=Proposed Lesson 27. Observed structural scope: Passive participles: overview, past passive formation and use, optional present passive material, vocabulary and comprehension. Admitted frozen spans are pending qualified review and do not approve alignment. An unresolved authority variance remains unactivated. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.
 penguinLessonField=27
 prerequisites=26
-estimatedMinutes=50
+estimatedMinutes=58
 
 ### ADVANCEMENT `unit-27-advancement`
 
@@ -96,12 +96,12 @@ estimatedMinutes=50
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 918140a9ac58b3c4fae91f9aa7d132dba6521497f5695d4519a59a854d7b1f64
+- Content hash: f224a1e3a3743370b80d8da7d6717c760c2a52e5238694ecf1be9204261f086d
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
-minimumDistinctChecks=2
+minimumDistinctChecks=4
 requireDueReview=false
 tutorOptional=true
 
@@ -143,6 +143,25 @@ practice=u27-st-guided-present-passive-1
 checks=u27-i-present-passive-1,u27-i-present-passive-2
 remediation=u27-st-rem-present-passive
 
+### OBJECTIVE `obj-u27-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 07af733b35c2e0330d6fddd9b734771bcd2ec13cb93427beda1533143f62d4cc
+
+title=Recognize the admitted stressed participle form
+kind=RECOGNITION
+unitNumber=27
+instruction=u27-st-orient,u27-st-teach-stress-1,u27-st-teach-stress-2,u27-st-teach-stress-3
+examples=ex-u27-stress-0,ex-u27-stress-1,ex-u27-stress-2,ex-u27-stress-3
+practice=u27-st-guided-stress-1
+checks=u27-i-stress-1,u27-i-stress-2
+remediation=u27-st-rem-stress
+
 ### OBJECTIVE `obj-u27-book`
 
 - Objectives: obj-u27-book
@@ -157,25 +176,6 @@ title=Self-attest Lesson 27 book work
 kind=SELF_ATTESTATION
 unitNumber=27
 instruction=u27-st-book-work,u27-st-book
-examples=
-practice=
-checks=
-remediation=
-
-### OBJECTIVE `obj-u27-stress`
-
-- Objectives: obj-u27-stress
-- Sessions: none
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f2843980b72250baa33eaa943872fd9ea2318f9aa88fd07c26d58739440e40b
-
-title=Participle stress stays in the copy you own
-kind=GUIDANCE
-unitNumber=27
-instruction=u27-st-gap-stress
 examples=
 practice=
 checks=
@@ -202,32 +202,32 @@ remediation=
 
 ### SESSION `u27-s-orient`
 
-- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-book
+- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-stress, obj-u27-book
 - Sessions: u27-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0c346068b3acc55a6bc679e51a7e1d52aa268410fc5a7e30277cbe3e9aa2fdaa
+- Content hash: 954d198f375e931edc95df6387ced12b8d7eff58ddc345c7740102cd733844ab
 
 title=Admitted past passive lines
 estimatedMinutes=8
-objectives=obj-u27-passive,obj-u27-present-passive,obj-u27-book
+objectives=obj-u27-passive,obj-u27-present-passive,obj-u27-stress,obj-u27-book
 steps=u27-st-orient
 
 ### STEP `u27-st-orient`
 
-- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-book
+- Objectives: obj-u27-passive, obj-u27-present-passive, obj-u27-stress, obj-u27-book
 - Sessions: u27-s-orient
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3c3422cf66e607c5d453f24c266df6edf00c86ca44d4dcb0fefbd8053c01ae7f
+- Content hash: 38e22ee0d719afcb5fccdf575397d8a0ab907a7d45a5ff7b253012cc84edb491
 
 kind=ORIENT
 title=Admitted past passive lines
-body=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
+body=Proposed Unit 27 uses admitted past passive lines and four admitted stressed participle forms. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -531,6 +531,153 @@ bookDirection=
 companionDirection=
 remediationStepId=u27-st-rem-present-passive
 
+### SESSION `u27-s-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7f84a9cb82099d975a9666d2d33020638637d6dca152e5e282b47375d764d694
+
+title=Recognize the admitted stressed participle form
+estimatedMinutes=12
+objectives=obj-u27-stress
+steps=u27-st-teach-stress-1,u27-st-guided-stress-1,u27-st-teach-stress-2,u27-st-teach-stress-3,u27-st-rem-stress,u27-st-check-stress
+
+### STEP `u27-st-teach-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 949e3b84cee1ab486350b9a0a57588193ef7bef6efefdc9a172ce8e4496ee96f
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u27-stress-0,ex-u27-stress-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-st-guided-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 53abd8a1341615c584657c9bc427427d2bf2c041252852e77f873f1dcb1b1985
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u27-g-stress-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-st-rem-stress
+
+### STEP `u27-st-teach-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 145b3a11c0a0c4c5e261935bf56d0656a43eaea101528ace150ce65e1e461e5c
+
+kind=TEACH
+title=Admitted instruction
+body=present passive participle
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-st-teach-stress-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a83f4d4b932123638eaacb37007fb4041b424b3cfba67970f18916297b0e8dc8
+
+kind=TEACH
+title=Admitted lines
+body=Read the admitted examples on this card.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u27-stress-2,ex-u27-stress-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-st-rem-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 307fedc649fe38a4a98b633e68b7ae96c6591cbc8d3f743e8ba0a5ad2dd911c0
+
+kind=REMEDIATE
+title=Remediation
+body=present passive participle
+dominantAction=Continue
+references=
+items=
+examples=ex-u27-stress-0,ex-u27-stress-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-st-check-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 63656a493b2bfa50c9d529d92699efbc50ec87ef1dc3447b3ae07202913f4826
+
+kind=CHECK
+title=Independent checks
+body=These checks use only admitted records. A miss returns to the explanation.
+dominantAction=Continue
+references=
+items=u27-i-stress-1,u27-i-stress-2
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-st-rem-stress
+
 ### SESSION `u27-s-book`
 
 - Objectives: obj-u27-book
@@ -587,43 +734,6 @@ items=
 examples=
 unavailableReason=
 bookDirection=Self-attest only after the Lesson 27 work in your copy.
-companionDirection=
-remediationStepId=
-
-### SESSION `u27-s-gap-stress`
-
-- Objectives: obj-u27-stress
-- Sessions: u27-s-gap-stress
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cbc06f90defaa581217f240a273d59f64dde250f7e759ff379c5e9702d234012
-
-title=Participle stress stays in the copy you own
-estimatedMinutes=4
-objectives=obj-u27-stress
-steps=u27-st-gap-stress
-
-### STEP `u27-st-gap-stress`
-
-- Objectives: obj-u27-stress
-- Sessions: u27-s-gap-stress
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c6339c00224a80d0e2d4ce56da884aa26588cd4cf994b352a108d7cec1b2f50c
-
-kind=UNAVAILABLE
-title=Participle stress stays in the copy you own
-body=Participle stress stays in the copy you own. A marked example is not a stress rule.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=A general participle-stress rule has no admitted frozen span.
-bookDirection=
 companionDirection=
 remediationStepId=
 
@@ -783,6 +893,74 @@ note=we leave
 objectiveId=obj-u27-present-passive
 reviewStatus=PENDING_QUALIFIED_REVIEW
 
+### EXAMPLE `ex-u27-stress-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c675cded88808679621ab4a9672dad005f5766731f8b3c129bf027af24464eb5
+
+kind=LEXICAL
+letterId=
+display=оставля́емый
+note=present passive participle
+objectiveId=obj-u27-stress
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u27-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 16904c9bc3bec583c1710818372b65e315eaa8189322d5bc03511d2bd653165f
+
+kind=LEXICAL
+letterId=
+display=обсужда́емый
+note=present passive participle
+objectiveId=obj-u27-stress
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u27-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7f80c6663e1928e7cc2d98ed81abe8bd9d1001c8b9ce20f91064ef08fb501a36
+
+kind=LEXICAL
+letterId=
+display=напи́санный
+note=past passive participle
+objectiveId=obj-u27-stress
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
+### EXAMPLE `ex-u27-stress-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 3814c3e8a96ce27d62ebf63de2f74094df8e6c90a59ea5d4cf6287f1742e7dca
+
+kind=LEXICAL
+letterId=
+display=прочи́танный
+note=past passive participle
+objectiveId=obj-u27-stress
+reviewStatus=PENDING_QUALIFIED_REVIEW
+
 ### GUIDED_PRACTICE `u27-g-passive-0`
 
 - Objectives: obj-u27-passive
@@ -852,6 +1030,41 @@ contrastMembers=being discussed | we leave | to discuss
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u27-present-passive-0-ru | prov-ex-u27-present-passive-0-en | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
 responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u27-g-stress-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 59172fdb87a74038fcc6e27053c3da3aec54f509ebf1b06807dbf46e7c7d30ad
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted stressed form matches the shown participle label?
+promptLetter=present passive participle
+options=оставля́емый | оставля́ть
+answer=оставля́емый
+feedback=The entry head оставля́емый is the present passive participle. оставля́емый.
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The entry names оставля́ть inside the participle template.
+testedFeature=PARTICIPLE_STRESSED_HEAD
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u27-stress-0
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-ex-u27-stress-0-ru
+distractorSourceIds= | prov-u27-stress-x-0
+distractorDifference= | оставля́ть is not the head form.
+whyAnswerDemonstratesObjective=The entry head оставля́емый is the present passive participle.
+contrastMembers=оставля́емый | оставля́ть
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u27-stress-0-en | prov-ex-u27-stress-0-ru | prov-u27-stress-x-0
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u27-i-passive-1`
 
@@ -993,15 +1206,85 @@ relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-u27-present-passive-x-1 | prov-u27-present-passive-x-2 | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
 responseKind=ENGLISH_CLASSIFICATION
 
+### INDEPENDENT_CHECK `u27-i-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 107af9423ffae34a1770a09ac4dae9e9e6a77c2306fcd66ed795deefaf1478cb
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted stressed form matches the shown participle label?
+promptLetter=present passive participle
+options=оставля́емый | оставля́ть
+answer=оставля́емый
+feedback=The entry head оставля́емый is the present passive participle. оставля́емый.
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The entry names оставля́ть inside the participle template.
+testedFeature=PARTICIPLE_STRESSED_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u27-stress-1
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-ex-u27-stress-0-ru
+distractorSourceIds= | prov-u27-stress-x-0
+distractorDifference= | оставля́ть is inside the template, not the head form.
+whyAnswerDemonstratesObjective=The entry head оставля́емый is the present passive participle.
+contrastMembers=оставля́емый | оставля́ть
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u27-stress-0-en | prov-ex-u27-stress-0-ru | prov-u27-stress-x-0
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u27-i-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f5c104e67079bd0e403ff297229c7c4017cda40f9d2336159e0c65d608995ca3
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which admitted stressed form matches the shown participle label?
+promptLetter=past passive participle
+options=напи́санный | написа́ть
+answer=напи́санный
+feedback=The entry head напи́санный is the past passive participle. напи́санный.
+objectiveId=obj-u27-stress
+containsGeneratedRussian=false
+reviewStatus=PENDING_QUALIFIED_REVIEW
+distractorRationales= | The entry names написа́ть inside the participle template.
+testedFeature=PARTICIPLE_PAST_STRESSED_FORM
+evidenceMode=SOURCE_SUPPLIED_PAIR
+contrastSetId=u27-stress-2
+cueLanguage=rule
+independent=true
+answerSourceIds=prov-ex-u27-stress-2-ru
+distractorSourceIds= | prov-u27-stress-x-1
+distractorDifference= | написа́ть is not the head form.
+whyAnswerDemonstratesObjective=The entry head напи́санный is the past passive participle.
+contrastMembers=напи́санный | написа́ть
+relationKind=SOURCE_SUPPLIED_PAIR
+relationParticipantIds=prov-ex-u27-stress-2-en | prov-ex-u27-stress-2-ru | prov-u27-stress-x-1
+responseKind=RUSSIAN_TOKEN
+
 ### REFERENCE `ref-u2630-attribution`
 
 - Objectives: none
-- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-book, u27-s-gap-stress, u27-s-gap-comprehension
+- Sessions: u27-s-orient, u27-s-passive, u27-s-present-passive, u27-s-stress, u27-s-book, u27-s-gap-comprehension
 - Source: src-wikipedia-russian-grammar-1369617627
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 9e36f77bd8e0dccaafe73b96d6c1b4c1960efa839faf05ff46f6a7e252065d5d
+- Content hash: 5e455d15f2ab06f1bfb081e9982892822f7226c5ec5d82f4ebf6554ab9948964
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own.
@@ -1549,6 +1832,374 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ex-u27-stress-0-en`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 8668fe1015331f3bbf758df692c67553cf793dcf62ef9ddc890c38b01aa61535
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
+sourceRevision=74231596
+sourceRecordId=ostavlyaemyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}
+shippedText=present passive participle
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32
+contentHash=11a7ea19331555e0290ed12a65b03d7fff4be05c867a92592ab0e941683fe596
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-0-ru`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9ba0c1f718b19097c30dc0c0eaaca2df13fec6c2edb9df456a965068157b1c45
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
+sourceRevision=74231596
+sourceRecordId=ostavlyaemyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}
+shippedText=оставля́емый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32
+contentHash=ffeb9e1b3af15a4256b166b14a67e123b5fbd3653a67d641935877bed8d5d45a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-1-en`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ba93341935f7cd0045a61c942d2013e3dc56ba1c01a95af4857f06ae6aecd3f1
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
+sourceRevision=74233962
+sourceRecordId=obsuzhdaemyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=обсужда́емый}}
+
+# {{participle of|ru|обсужда́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|обсужда́емый|a}}
+shippedText=present passive participle
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd
+contentHash=11a7ea19331555e0290ed12a65b03d7fff4be05c867a92592ab0e941683fe596
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-1-ru`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: f86d8c877118396e76689b56d5fa8426590c6324c2bc798269069182664fd168
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
+sourceRevision=74233962
+sourceRecordId=obsuzhdaemyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=обсужда́емый}}
+
+# {{participle of|ru|обсужда́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|обсужда́емый|a}}
+shippedText=обсужда́емый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd
+contentHash=7286184dd42d938241428f156de82595ed8855b02b524f3b73ceefa18c8664d2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-2-en`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 7d33d686ab06cf054bfe04dcdaeea0c79315eeea9d45889a23fc78ab8d14f968
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228
+sourceRevision=74228228
+sourceRecordId=napisannyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{he
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{head|ru|past passive participle|head=напи́санный}}
+
+# {{participle of|ru|написа́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|напи́санный|a(2)}}
+shippedText=past passive participle
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74228228 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1ca7b59a1c3e355791a1a45565f75fe11b8b10f68f43fb963d895ecb5d4c776f
+contentHash=9bd706217c11f1ef3511417f816b6c942171194f61d193a086f95307d82bc5d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-2-ru`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 31192083cf680993f4d797993938cad9ad7fee9a0576d9a41d5d45d82b18905b
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228
+sourceRevision=74228228
+sourceRecordId=napisannyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{he
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{head|ru|past passive participle|head=напи́санный}}
+
+# {{participle of|ru|написа́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|напи́санный|a(2)}}
+shippedText=напи́санный
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74228228 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1ca7b59a1c3e355791a1a45565f75fe11b8b10f68f43fb963d895ecb5d4c776f
+contentHash=5fd33438bde38c7620ba2eb7af1c95c33a537236ef8571d62d8d732f63fa0d04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-3-en`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d28e500e4034632c0b8a8d11d352b36607e2c46e8a31d55d6e4bb6e6b0e3524
+
+recordType=meaning
+sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
+sourceRevision=74232159
+sourceRecordId=prochitannyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{head|ru|past passive participle|head=прочи́танный}}
+
+# {{participle of|ru|прочита́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|прочи́танный|a(2)}}
+shippedText=past passive participle
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef
+contentHash=9bd706217c11f1ef3511417f816b6c942171194f61d193a086f95307d82bc5d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ex-u27-stress-3-ru`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 5721a5418953987d4399e2ba64a409b590d440d92282c6616ebc7dc43ce6ac7c
+
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
+sourceRevision=74232159
+sourceRecordId=prochitannyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{head|ru|past passive participle|head=прочи́танный}}
+
+# {{participle of|ru|прочита́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|прочи́танный|a(2)}}
+shippedText=прочи́танный
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef
+contentHash=fa8af5079671527f241f6ed5e15c596ee11ad2cfcbc6373e3e3d3df1b7b9bdd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u27-passive-rem`
 
 - Objectives: obj-u27-passive
@@ -1735,174 +2386,327 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
-### AUTHORED_ENGLISH `en-u27-080`
+### PROVENANCE `prov-u27-stress-rem`
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b99d195f715b0857298433f2b38f8b06723f03b8b1eac02a1bae2ca36a1a2ded
+- Content hash: 0808302ea8ff61a83a09283407f5f32c345e7ebdbe52685414f40ca4e0917fe8
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted lines
+recordType=instruction
+sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
+sourceRevision=74231596
+sourceRecordId=ostavlyaemyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-081`
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}
+shippedText=present passive participle
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32
+contentHash=11a7ea19331555e0290ed12a65b03d7fff4be05c867a92592ab0e941683fe596
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 490814697fa136d4b8b2655d00c8e03c5b4d443cf27a0d85c3568e0f85397ae0
+- Content hash: e059e537a69c1fe27e31f8d347abd22c851fe2eb5da0b2c44432959a9241946d
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for written.
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596
+sourceRevision=74231596
+sourceRecordId=ostavlyaemyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-082`
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}
+shippedText=оставля́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32
+contentHash=df98b0ded0693cd99f6c22b7d5bea84f712c99e8d1d2661dd690042bd51e3434
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bca6ed84dee3fb8a0ccb12f84ce48ba63014041a550b129e0ff85ad40d914af4
+- Content hash: 5441af9f0b596a1676e7d33e7aea3e7a0cf7eb8af1f411c1dfbefabc060357bd
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for killed.
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=написанный&oldid=74228228
+sourceRevision=74228228
+sourceRecordId=napisannyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-083`
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{he
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|напи́санный}}
+
+===Participle===
+{{head|ru|past passive participle|head=напи́санный}}
+
+# {{participle of|ru|написа́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|напи́санный|a(2)}}
+shippedText=написа́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74228228 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1ca7b59a1c3e355791a1a45565f75fe11b8b10f68f43fb963d895ecb5d4c776f
+contentHash=2d2552ebf9aebc6252d9864ab239874fac22be37f18ce54fd54d46626c133258
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cf62043d51bd9218df9a92ae8912cf711febe924787a2dd50f34b9aa984b559d
+- Content hash: b557e7fa42822d17dc83d327732f2da9df2d05978e82b91e288d26afa2612cce
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the writing form (written).
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
+sourceRevision=74233962
+sourceRecordId=obsuzhdaemyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-084`
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=обсужда́емый}}
+
+# {{participle of|ru|обсужда́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|обсужда́емый|a}}
+shippedText=обсужда́емый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd
+contentHash=7286184dd42d938241428f156de82595ed8855b02b524f3b73ceefa18c8664d2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: cfbde57fea4f85d1713eb737afd074e9097af7022466f4aa3f9c38c9e6352a0f
+- Content hash: 1b2e2de2d22d9b4c84756f5713f28c80ef1b41727682caed28e8963f4b2eb41f
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the other listed form (killed).
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=обсуждаемый&oldid=74233962
+sourceRevision=74233962
+sourceRecordId=obsuzhdaemyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-085`
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|обсужда́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=обсужда́емый}}
+
+# {{participle of|ru|обсужда́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|обсужда́емый|a}}
+shippedText=обсужда́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd
+contentHash=93a3be2300b8ff81496a20220c0b5d855651734d8aa495f286eb2af37bc396bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-4`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f823a07c6c0fb704413e1d3c48716eaeaabe405daf6baf1beaaac0b8f8c0d5f9
+- Content hash: bbf054f3200d4ca3d941dfc598e16e0eca7d4b9112696e6a251577706dbb32d3
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
+sourceRevision=74232159
+sourceRecordId=prochitannyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-086`
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+===Participle===
+{{h
+originalSourceText===Russian==
+
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
+
+===Participle===
+{{head|ru|past passive participle|head=прочи́танный}}
+
+# {{participle of|ru|прочита́ть||past|pass|pfv}}
+
+====Declension====
+{{ru-decl-adj|прочи́танный|a(2)}}
+shippedText=прочи́танный
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef
+contentHash=fa8af5079671527f241f6ed5e15c596ee11ad2cfcbc6373e3e3d3df1b7b9bdd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u27-stress-x-5`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-orient, u27-s-stress
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0bfb1b2dbe5a7b926dfc9691bf334d9d264b65714c12ca6d41088e9d8032313f
+- Content hash: 9c52e06ee72236e064e07ce815744a1f37d792b792f951e1f10fd1053a472631
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the shown form?
+recordType=example
+sourceUrl=https://en.wiktionary.org/w/index.php?title=прочитанный&oldid=74232159
+sourceRevision=74232159
+sourceRecordId=prochitannyj:==Russian==
 
-### AUTHORED_ENGLISH `en-u27-087`
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 7ffb7532cef81515025b9670350400596f709bd24996d163d343b457f7374510
+===Participle===
+{{h
+originalSourceText===Russian==
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted instruction
+===Pronunciation===
+* {{ru-IPA|прочи́танный}}
 
-### AUTHORED_ENGLISH `en-u27-088`
+===Participle===
+{{head|ru|past passive participle|head=прочи́танный}}
 
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bb708942334faa8eadff457df54fa9e34e2749e0daf6ab4c3ce06dc17df6eaa3
+# {{participle of|ru|прочита́ть||past|pass|pfv}}
 
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside a different form for done/made.
-
-### AUTHORED_ENGLISH `en-u27-089`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f2a5774387438e0f99fdf3da9fbd25b26613af6406d2fc3b7a66ff1fd90b9b14
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with the making form (done/made).
-
-### AUTHORED_ENGLISH `en-u27-090`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a3da5326990b20bfbc64a52a06c6d012dbc38669460b7146829ed476547958ac
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside this shown form?
-
-### AUTHORED_ENGLISH `en-u27-091`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3c4eaaea189a432d040ec4a721d2d30dcea020065db3afa2d39ba6f74b3dc443
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the writing form for written.
-
-### AUTHORED_ENGLISH `en-u27-092`
-
-- Objectives: none
-- Sessions: none
-- Source: src-app-english-v2
-- Rights: rights-app-english-v2
-- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
-- Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ea7eab2e3cfcbec97fa9aaadf2e935c7c6ede522819119093d8a5e69699e67b6
-
-classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes this label beside the making form for done/made.
+====Declension====
+{{ru-decl-adj|прочи́танный|a(2)}}
+shippedText=прочита́ть
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef
+contentHash=281d907b1e76a9da6c7b6c6767aabcbb1022ce74b19426ca29e3a8d7b8f2776c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### AUTHORED_ENGLISH `en-u27-093`
 
@@ -1912,10 +2716,10 @@ text=The frozen line writes this label beside the making form for done/made.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 761af79544bc9792a0a087a93c02fb1b74ada1c717b3314e00471eaa7b5aa6ac
+- Content hash: 74c3b5fb593099cd5aaa2cf159fa84f049aac0a90dde13ba16b87630d8882f2f
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (written).
+text=Admitted lines
 
 ### AUTHORED_ENGLISH `en-u27-094`
 
@@ -1925,10 +2729,10 @@ text=This label is paired with a different form (written).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 9d2b073aae8248a3240f3519dde9d2c55ba692ef12362a97694848e407ab7b6d
+- Content hash: 7b025c279dfe34549f189bbf4c81802b2ca99d67c7e1254596dbf17bb06f96f1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is paired with a different form (done/made).
+text=The frozen line writes this label beside a different form for written.
 
 ### AUTHORED_ENGLISH `en-u27-095`
 
@@ -1938,10 +2742,10 @@ text=This label is paired with a different form (done/made).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ecebdf9cd8a01add0482d102890dd78b9443729f297794fae3b01e91c39c8cae
+- Content hash: 338e9f876b0e3ebaed95b2ae46e842e04457f2874c20e4cc4aa663cc18dafa44
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English label is written beside the remaining shown form?
+text=The frozen line writes this label beside a different form for killed.
 
 ### AUTHORED_ENGLISH `en-u27-096`
 
@@ -1951,10 +2755,10 @@ text=Which admitted English label is written beside the remaining shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4b75ecd2bfd63d36b6c83aa841504cbeaa98e6bb19b566cb5e363cc5243569c1
+- Content hash: 0ed54a0417e35602a6190ff467539d0df8c12b24ff0b84d545d92cdb598089c6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical we leave belongs to the plural form in the same note.
+text=This label is paired with the writing form (written).
 
 ### AUTHORED_ENGLISH `en-u27-097`
 
@@ -1964,10 +2768,10 @@ text=The frozen parenthetical we leave belongs to the plural form in the same no
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 79cf5c2aa44ced04d331ab447590f3e3396c79d64bcb9b2035258f520348270f
+- Content hash: 8b14fd7bef6e48f9f52e50eb0a6d3a39c7b9ae7af037917655dca3247cb78ce1
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes to discuss on the base, not as this gloss.
+text=This label is paired with the other listed form (killed).
 
 ### AUTHORED_ENGLISH `en-u27-098`
 
@@ -1977,10 +2781,10 @@ text=The frozen line writes to discuss on the base, not as this gloss.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: e3371be602c970bc59939e4db99172d8f4856e0647db42e4b222bb8fd635cc92
+- Content hash: 194ea1eaa804fd246aea64e6c2a2a99918fdccc3cb1fab0d24ad11c98a233fd6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This parenthetical belongs to the plural form (we leave).
+text=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
 
 ### AUTHORED_ENGLISH `en-u27-099`
 
@@ -1990,10 +2794,10 @@ text=This parenthetical belongs to the plural form (we leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3beb5cdf967b542bfe1a03f3a03ddc7af0519dbdee91e34dc9b20703d089df6e
+- Content hash: 5edd5436a05b149660b3fdc075e8a35eec704b44f2ababa1c33b09f2aec1759e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This label is the base gloss (to discuss).
+text=Which admitted English label is written beside the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-100`
 
@@ -2003,10 +2807,10 @@ text=This label is the base gloss (to discuss).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3118d539707a0bb52fffcb70bd29f8cf807de7156eb9094fb086be1cc8adbebc
+- Content hash: e57fe2417f1c3f9a9556233445b6e38e70b4555440de6512177d1776145981cd
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+text=Admitted instruction
 
 ### AUTHORED_ENGLISH `en-u27-101`
 
@@ -2016,10 +2820,10 @@ text=The frozen line says being discussed or able to be discussed after the list
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94162d11f91d53c267ee9866d50d02bf5ac7182a917b7ce7ecd5b6f2a0369436
+- Content hash: ef9d2e626ac238cb6140b1d7c220e641047643ee0f9a2b4721d9fa5844cd0e4a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English gloss follows the listed forms for the shown form?
+text=The frozen line writes this label beside a different form for done/made.
 
 ### AUTHORED_ENGLISH `en-u27-102`
 
@@ -2029,10 +2833,10 @@ text=Which admitted English gloss follows the listed forms for the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 3b1de8209fbdefe50381dfc01fc50c1fe1669fcdef15f02bdbcacee66f6339ae
+- Content hash: f34d644b37782c6a948db6c719563ad778b173a713ff8de34d058ed0b9ead5ac
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
+text=This label is paired with the making form (done/made).
 
 ### AUTHORED_ENGLISH `en-u27-103`
 
@@ -2042,10 +2846,10 @@ text=The frozen line gives being discussed to the discuss forms, not this parent
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 24838cff65b50202e361446a6397ebef4fc71cce94e7c201850637c105d830d5
+- Content hash: 994b344b83f9d8857e0b08a3482ee085cf84de6793055acff32e5be753f1e6ea
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical to leave belongs to the other form in the same row.
+text=Which admitted English label is written beside this shown form?
 
 ### AUTHORED_ENGLISH `en-u27-104`
 
@@ -2055,10 +2859,10 @@ text=The frozen parenthetical to leave belongs to the other form in the same row
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 742b88c7d294faf25910b31f774f5cfebc2115a19a119303904e763e9d0ec209
+- Content hash: 50e291d2503f9555577e20af5f62463ae748abbe17d2f190a14690b3bb6cef36
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This gloss belongs to the discuss forms (being discussed).
+text=The frozen line writes this label beside the writing form for written.
 
 ### AUTHORED_ENGLISH `en-u27-105`
 
@@ -2068,10 +2872,10 @@ text=This gloss belongs to the discuss forms (being discussed).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: f7eb506be86342a9e776801bfd330640ed0dec54b358cbeb41a49807916e740e
+- Content hash: eb3bc55a6e411cbbf38b36ee934c6c2830f2bcd0fa41ad44e61395873ad67f3a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=This parenthetical belongs to the other form (to leave).
+text=The frozen line writes this label beside the making form for done/made.
 
 ### AUTHORED_ENGLISH `en-u27-106`
 
@@ -2081,10 +2885,10 @@ text=This parenthetical belongs to the other form (to leave).
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8aa4f130e67cd0821769a3b26b2826f1bba2d9cd4b89a43352677a40a5302131
+- Content hash: cbb1221d74c3119c56604de8cb39e47a4e2b3ab6837b091ad41ede1acac3a400
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+text=This label is paired with a different form (written).
 
 ### AUTHORED_ENGLISH `en-u27-107`
 
@@ -2094,10 +2898,10 @@ text=The frozen line writes (we leave) after the shown form. This label is that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6f0f97af63e53e1e08622c19f081c51c4e65f656f8990436a077b756a5345329
+- Content hash: 2a1a4b794285f56a841ee76e2f4ca28a1ae4f29a34b53f621e0dfda2011084dc
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English parenthetical follows the shown form?
+text=This label is paired with a different form (done/made).
 
 ### AUTHORED_ENGLISH `en-u27-108`
 
@@ -2107,10 +2911,10 @@ text=Which admitted English parenthetical follows the shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 4a3f6fb85678a4cd549a2c2b9348d50fb422b728aa5a595375c461f2c4455a25
+- Content hash: 1f760114b17ef8b3ac3a38a30d8c4c92072cd76742680b9f931be401e9445984
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen parenthetical we leave belongs to the plural form, not this form.
+text=Which admitted English label is written beside the remaining shown form?
 
 ### AUTHORED_ENGLISH `en-u27-109`
 
@@ -2120,10 +2924,10 @@ text=The frozen parenthetical we leave belongs to the plural form, not this form
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 526920dc5927db7d6b373318a6204a609637d64526d384224f314bed4644f501
+- Content hash: 47e8a3a9845be0e0da8800050012ce8fbcf051153a2018f99b31dd0173626d07
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+text=The frozen parenthetical we leave belongs to the plural form in the same note.
 
 ### AUTHORED_ENGLISH `en-u27-110`
 
@@ -2133,10 +2937,10 @@ text=The frozen line writes (to leave) after the shown form. This label is that 
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 6d4987755cf98253cd49cf9bbb2e09584f4a89707a4240aa1113ffcebc5d7403
+- Content hash: e40e3d1a517b84883097db3fc53d3e7998c7d4fad948567ec0641c7334bb12ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Which admitted English parenthetical follows this shown form?
+text=The frozen line writes to discuss on the base, not as this gloss.
 
 ### AUTHORED_ENGLISH `en-u27-111`
 
@@ -2146,10 +2950,10 @@ text=Which admitted English parenthetical follows this shown form?
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: d788568c1d1353eb7b47f65adf556a95ccd6c8bdef5522de360913029c69aafa
+- Content hash: f160ea784346f294cf10d80c70db78d22756bb6e6a30b4a5d1715b53875723ad
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Admitted past passive lines
+text=This parenthetical belongs to the plural form (we leave).
 
 ### AUTHORED_ENGLISH `en-u27-112`
 
@@ -2159,10 +2963,10 @@ text=Admitted past passive lines
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 525ce5d5e64005f1f415f3886ec1d93e3d2b61aa2abff78d749049682819598c
+- Content hash: 0778e29c1d63da604d6ea36b0c5edf4be47954f1064edff4f244c3eafe535e90
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Proposed Unit 27 uses admitted past passive lines. Present passive lines are optional and do not gate this unit. Stress stays in the copy you own. Active forms are not taught here. Qualified review is pending.
+text=This label is the base gloss (to discuss).
 
 ### AUTHORED_ENGLISH `en-u27-113`
 
@@ -2172,10 +2976,10 @@ text=Proposed Unit 27 uses admitted past passive lines. Present passive lines ar
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: a7ff4676f33c02ac0a03978ba2c3f1910a09dba3e7086c7f60bbf1dbd28d47d1
+- Content hash: e77c9f62df71ccf9f1e134ac881937c9a5d326ea1c3f0a475390790e87cc0c0c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
+text=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
 
 ### AUTHORED_ENGLISH `en-u27-114`
 
@@ -2185,10 +2989,10 @@ text=Open Lesson 27 in the copy you own. The app records do not replace that les
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 17a03de8aa4024ee492eae3159952c74e9bd65be85da03387647bd7e9091b046
+- Content hash: 1f876c1fcc732d9de196eba2177bbf5f751d42761a14c6aab6900b4aaac274f0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Read the admitted examples on this card.
+text=Which admitted English gloss follows the listed forms for the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-115`
 
@@ -2198,10 +3002,10 @@ text=Read the admitted examples on this card.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bfc3c80ff0df3379d9fc9b1024a2d4d07eb8d6abf4a0babb3ec2d5f2472c5ed2
+- Content hash: 7699b312055516fb9f4b8b89eb404a8044815b402b1bdc57c625afa3c183771e
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Guided practice
+text=The frozen line gives being discussed to the discuss forms, not this parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-116`
 
@@ -2211,10 +3015,10 @@ text=Guided practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bed01d6acb70b2c4a76c65c4be04be7f039c4b92ace5b2bd662669cd3a5b5f25
+- Content hash: 483be3885f26d9b9c7972aecff9b90feaeec6dcf29af1e23a2c5e540413a2ef6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Choose the admitted record. The feedback states the frozen field.
+text=The frozen parenthetical to leave belongs to the other form in the same row.
 
 ### AUTHORED_ENGLISH `en-u27-117`
 
@@ -2224,10 +3028,10 @@ text=Choose the admitted record. The feedback states the frozen field.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: c4602bceecc8004dd2ebafe31cad1eac9fef39da9e4a80ef202592382348f77c
+- Content hash: ae5b6d2088eaf6661f8346bc50bc72171875d476da1112aba39d6a24185f4604
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Remediation
+text=This gloss belongs to the discuss forms (being discussed).
 
 ### AUTHORED_ENGLISH `en-u27-118`
 
@@ -2237,10 +3041,10 @@ text=Remediation
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 706c06bde1b0f072b83039b6b89642410a488330ad3693132d40a23ad3fdc57d
+- Content hash: eedac391e9edec0b9187b362966c9589b4476b1b6f817f64ada0e31dbc81c60a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Independent checks
+text=This parenthetical belongs to the other form (to leave).
 
 ### AUTHORED_ENGLISH `en-u27-119`
 
@@ -2250,10 +3054,10 @@ text=Independent checks
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: bd6d6febbc3da501017a7c9baff32e63863ed2fd772b8292c95d0e9062ea8994
+- Content hash: d0e4ebbe671133ac5645cbdde5aac161f991c3a2e7cf0c256db35489575c3cc6
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=These checks use only admitted records. A miss returns to the explanation.
+text=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-120`
 
@@ -2263,10 +3067,10 @@ text=These checks use only admitted records. A miss returns to the explanation.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: dc6e57a2ace1c92278b6254118638b333533e2340471a038725375aac85e8e6c
+- Content hash: c579bf5dd658fe8b8e249492d9f3104f1a83f2b9d27170c009dfdc107bb5922c
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Work Lesson 27 in your copy
+text=Which admitted English parenthetical follows the shown form?
 
 ### AUTHORED_ENGLISH `en-u27-121`
 
@@ -2276,10 +3080,10 @@ text=Work Lesson 27 in your copy
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: ae9957135fcf1281f4dd07a010e7c2ee9672831fa373a62bf9be921a5bd7fce3
+- Content hash: 56d73349ef84c2ad05c17211f10134c78aa594178a0e70e827d02b5281b7240a
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+text=The frozen parenthetical we leave belongs to the plural form, not this form.
 
 ### AUTHORED_ENGLISH `en-u27-122`
 
@@ -2289,10 +3093,10 @@ text=Do Lesson 27 in the copy you own. Use that book's explanations and practice
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 600e8608ae98ebdc9d76a78aa614d26ca213f5a8b14ebf56f6581fb593a6d51f
+- Content hash: 866d5722276feb2f7e31973cc3dcc64f90fb11e40ea555bc133b513c62c93589
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Open Lesson 27 in your copy and complete its lesson work.
+text=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
 
 ### AUTHORED_ENGLISH `en-u27-123`
 
@@ -2302,10 +3106,10 @@ text=Open Lesson 27 in your copy and complete its lesson work.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 94c3a958746323d42bd2370c1c554a6cc7e3bdca0a5a62e31da11c87062e0fdb
+- Content hash: 1caf6ffd3a4dc1b6e20e808c50007d1c6139c386b06fa10cd692c3742c677893
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Record Lesson 27 book work
+text=Which admitted English parenthetical follows this shown form?
 
 ### AUTHORED_ENGLISH `en-u27-124`
 
@@ -2315,10 +3119,10 @@ text=Record Lesson 27 book work
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 62db31903bdee0f3213207f4d0122ea3a06d20a267d401ccacff0c4cdb5f20e8
+- Content hash: 400785c89242b5263d58f13e6dabda25053979eb5e570681b55838000e918f63
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+text=The entry names оставля́ть inside the participle template.
 
 ### AUTHORED_ENGLISH `en-u27-125`
 
@@ -2328,10 +3132,10 @@ text=When you have done Lesson 27 in your copy, self-attest here. Attestation re
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 8e85262b4fdd9f31beef65d62e832bc0ddb0eea79e3a064cd5ad3e1b8b13ddb0
+- Content hash: 9d2d616769b089da7af7cbac355de37ae1b5feb5519cd9b8b87ed3fcda54e7f8
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Self-attest only after the Lesson 27 work in your copy.
+text=оставля́ть is not the head form.
 
 ### AUTHORED_ENGLISH `en-u27-126`
 
@@ -2341,10 +3145,10 @@ text=Self-attest only after the Lesson 27 work in your copy.
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: b84fa24b4c23f8725b7f860772db8cba302ef818360a82940d00a8f4331b49af
+- Content hash: e95c1d2aad036257fc8dab4a8ad8cc374f69af4c22b5b397f1199b764a2935ce
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own
+text=The entry head оставля́емый is the present passive participle.
 
 ### AUTHORED_ENGLISH `en-u27-127`
 
@@ -2354,10 +3158,10 @@ text=Participle stress stays in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 775e0c46b0af5341fac8e7273c86cfc66861e010065dbc3d7ba6495a494d1ed0
+- Content hash: 04b247dca2ce3671e9fa417b9b3a439d2fc74b39e06bb33640c80a02c64336a0
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Participle stress stays in the copy you own. A marked example is not a stress rule.
+text=Which admitted stressed form matches the shown participle label?
 
 ### AUTHORED_ENGLISH `en-u27-128`
 
@@ -2367,10 +3171,10 @@ text=Participle stress stays in the copy you own. A marked example is not a stre
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 0fdab985d5550ee951d5e8d45e0833fd72cdea696b0fbffdb467dd9f28eb1f06
+- Content hash: 08fda8d81d578875c4db7e3c1780841453742b6b3efc24c57d7db5b173c35c0b
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
-text=Comprehension passages stay in the copy you own
+text=оставля́ть is inside the template, not the head form.
 
 ### AUTHORED_ENGLISH `en-u27-129`
 
@@ -2380,7 +3184,254 @@ text=Comprehension passages stay in the copy you own
 - Rights: rights-app-english-v2
 - Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
 - Current review status: PENDING_QUALIFIED_REVIEW
-- Content hash: 39916e0125011281c0ed178b26032f8f9c1068a6c67ef522469cdaad74325fe0
+- Content hash: fed48c36dfd146fffff02c1135001dafc3553728bc0173d341ecd2e8b9deb0d4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The entry names написа́ть inside the participle template.
+
+### AUTHORED_ENGLISH `en-u27-130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 1b7fa584e64fbcefc90d0bd99dff48fbf6b7e4b7c6bb2b2dcbdd8f162551fcee
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=написа́ть is not the head form.
+
+### AUTHORED_ENGLISH `en-u27-131`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 0f76ce79be2354f17f93d7d9142d4253466dd740f01e2ffebe9273d6b4cf508b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=The entry head напи́санный is the past passive participle.
+
+### AUTHORED_ENGLISH `en-u27-132`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: df59aba252cdb2dff0c2ff58b93c6488e89ea35009ef9e68f9ca406ff5ac76ed
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Admitted past passive lines
+
+### AUTHORED_ENGLISH `en-u27-133`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 2aec4008d123c2c2d3e70e01fe874b0bc7e6170dcbe333afb73320ade291b3df
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Proposed Unit 27 uses admitted past passive lines and four admitted stressed participle forms. Present passive lines are optional and do not gate this unit. Comprehension passages stay in the copy you own. Active forms are not taught here. Qualified review is pending.
+
+### AUTHORED_ENGLISH `en-u27-134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: b03f7116cdb92c65c4d263a06b6218613c5568d14e7960a3d8c955f70a31949e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 27 in the copy you own. The app records do not replace that lesson.
+
+### AUTHORED_ENGLISH `en-u27-135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: aeebbd6d49af93af781a815c4e20691e0d25b9175423641c059d989d08a1302a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read the admitted examples on this card.
+
+### AUTHORED_ENGLISH `en-u27-136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 181d215b5994220afc1d2073ba1fff1a0fbbe0642df76d0fca1405be47eaa9ae
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Guided practice
+
+### AUTHORED_ENGLISH `en-u27-137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c1dbec8f42585d67dac00bf17f7d92525f02aa36ca9e77699ddaea3220449211
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Choose the admitted record. The feedback states the frozen field.
+
+### AUTHORED_ENGLISH `en-u27-138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: d2bbee92e493d37a790eff1328606e9a36f85ea6e35d36bb477ef40366e44612
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Remediation
+
+### AUTHORED_ENGLISH `en-u27-139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e5fe88984ac4b6a1e4d36ecf3a21c0e3b53fb8e98bffd8ae4139bbdc9a05a58c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Independent checks
+
+### AUTHORED_ENGLISH `en-u27-140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9416f742bcc044020cb487949c7ae52578b2c4815a9ee658185cbd96eb4dc2c9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=These checks use only admitted records. A miss returns to the explanation.
+
+### AUTHORED_ENGLISH `en-u27-141`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: ca40717f3d18d53ee606b01d36966b5d35dfd79eb763eb37bf5b0d5d10b09359
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Work Lesson 27 in your copy
+
+### AUTHORED_ENGLISH `en-u27-142`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: e602ae86c0286e87c98d297ff07c32db6922c293d0b516f6ee0e3a0e61f4de08
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Do Lesson 27 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.
+
+### AUTHORED_ENGLISH `en-u27-143`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 45b0e5f9f759711d322767bddbd5cb6551fed3066aecfc7ae9a5a69fc6fb11d3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Open Lesson 27 in your copy and complete its lesson work.
+
+### AUTHORED_ENGLISH `en-u27-144`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 979c98a2d7da29b22eedcd91df5f9fb248c0ad9c368815bb4cb91e1c41a0637d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Record Lesson 27 book work
+
+### AUTHORED_ENGLISH `en-u27-145`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: a3a6a30b066833963c28035f02760a1a22ad29d7157b7bc0e55e87e31cc06184
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=When you have done Lesson 27 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.
+
+### AUTHORED_ENGLISH `en-u27-146`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: da3d13e4cbd6d9e87da22fb7e247d58e55b746f037c2d9b0f2fc6b2d5a75f43f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest only after the Lesson 27 work in your copy.
+
+### AUTHORED_ENGLISH `en-u27-147`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 4d760699908e34d01f428aed4fa0d7796e442c3819796696825693d7a01a84d0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Comprehension passages stay in the copy you own
+
+### AUTHORED_ENGLISH `en-u27-148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: 9cae5a6b2575cc56e05f2adb40124e7fd5d67605f2f5c2d5e25e503e48da402d
 
 classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
 text=Comprehension passages stay in the copy you own. The admitted lines do not supply them.
@@ -2415,6 +3466,40 @@ Passive past participles are formed by means of the suffixes ''''-нн-'''' or '
 {| class="wikitable"
 | уби́ть ''(to kill)'' – уби́'''т'''ый (killed) / уби́'''т''' (short form)
 
+### SOURCE_CAPABILITY `cap-obj-u27-stress`
+
+- Objectives: obj-u27-stress
+- Sessions: none
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: SOURCE_CAPABILITY
+- Current review status: PENDING_QUALIFIED_REVIEW
+- Content hash: c17df3ac69c38e957cce10f915e599ec53957234dff4f4c2ca0a519160ddb2dd
+
+sourceId=src-enwiktionary-ostavlyaemyj-74231596
+sourceRevision=74231596
+sourceRecordId=ostavlyaemyj:==Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{h
+sourceHash=c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32
+supportedClaim=participle-stress
+exactSpan===Russian==
+
+===Pronunciation===
+* {{ru-IPA|оставля́емый}}
+
+===Participle===
+{{head|ru|present passive participle|head=оставля́емый}}
+
+# {{participle of|ru|оставля́ть||pres|pass|impfv}}
+
+====Declension====
+{{ru-decl-adj|оставля́емый|a}}
+
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 
 - Objectives: none
@@ -2428,6 +3513,66 @@ Passive past participles are formed by means of the suffixes ''''-нн-'''' or '
 Russian grammar
 CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-enwiktionary-ostavlyaemyj-74231596`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 78b50ace0720cdabd4db236f33dbc8866700077710d5a6622096ba75bc3bd9ee
+
+оставляемый
+CC BY-SA 4.0
+Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74231596 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-enwiktionary-obsuzhdaemyj-74233962`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eca5cf17052d98efb218b1f171b98e195269f20b26349f6c1486b9cd1e33c532
+
+обсуждаемый
+CC BY-SA 4.0
+Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74233962 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-enwiktionary-napisannyj-74228228`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 53658beba1d715bb2fb297dc9f44fbb5663901cb5ef4c595fbcb15b60ac16ff7
+
+написанный
+CC BY-SA 4.0
+Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74228228 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
+Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
+### SOURCE `src-enwiktionary-prochitannyj-74232159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 318c44cf16d17b3df958e0a38b0b6ee431fdb8b144b64562e363a58f99f81d72
+
+прочитанный
+CC BY-SA 4.0
+Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 74232159 identifies the contributors. Page text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. Audio is not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
 ### SOURCE `src-app-english-v2`
@@ -2456,6 +3601,62 @@ Original
 - Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
 
 src-wikipedia-russian-grammar-1369617627
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-enwiktionary-ostavlyaemyj-74231596`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-ostavlyaemyj-74231596
+- Rights: rights-enwiktionary-ostavlyaemyj-74231596
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2ac0a48c4046104f71406051ac998aa71fc3c77c3d6c0a8434d2189cbf90ab14
+
+src-enwiktionary-ostavlyaemyj-74231596
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-enwiktionary-obsuzhdaemyj-74233962`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-obsuzhdaemyj-74233962
+- Rights: rights-enwiktionary-obsuzhdaemyj-74233962
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d6afb775da6011c86e254cc5912e9d86b9cf09f6c8b504fa07acec4bb4b1a6d6
+
+src-enwiktionary-obsuzhdaemyj-74233962
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-enwiktionary-napisannyj-74228228`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-napisannyj-74228228
+- Rights: rights-enwiktionary-napisannyj-74228228
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7bae605029513b63f61ade861eeab4ea1a374f3f748a59aae4a9de06bce8bf6a
+
+src-enwiktionary-napisannyj-74228228
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-enwiktionary-prochitannyj-74232159`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiktionary-prochitannyj-74232159
+- Rights: rights-enwiktionary-prochitannyj-74232159
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3f26f83d34e8a399ca43c047141292fdb40043d965c4ede667e80f89f6c8b435
+
+src-enwiktionary-prochitannyj-74232159
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -2498,12 +3699,24 @@ permitsAppUse=true
 - `obj-u27-present-passive` CHECK `u27-i-present-passive-1`
 - `obj-u27-present-passive` CHECK `u27-i-present-passive-2`
 - `obj-u27-present-passive` REMEDIATION `u27-st-rem-present-passive`
+- `obj-u27-stress` INSTRUCTION `u27-st-orient`
+- `obj-u27-stress` INSTRUCTION `u27-st-teach-stress-1`
+- `obj-u27-stress` INSTRUCTION `u27-st-teach-stress-2`
+- `obj-u27-stress` INSTRUCTION `u27-st-teach-stress-3`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-0`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-1`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-2`
+- `obj-u27-stress` EXAMPLE `ex-u27-stress-3`
+- `obj-u27-stress` PRACTICE `u27-st-guided-stress-1`
+- `obj-u27-stress` CHECK `u27-i-stress-1`
+- `obj-u27-stress` CHECK `u27-i-stress-2`
+- `obj-u27-stress` REMEDIATION `u27-st-rem-stress`
 - `obj-u27-book` INSTRUCTION `u27-st-book-work`
 - `obj-u27-book` INSTRUCTION `u27-st-book`
-- `obj-u27-stress` INSTRUCTION `u27-st-gap-stress`
 - `obj-u27-comprehension` INSTRUCTION `u27-st-gap-comprehension`
 - `u27-s-orient` OBJECTIVE `obj-u27-passive`
 - `u27-s-orient` OBJECTIVE `obj-u27-present-passive`
+- `u27-s-orient` OBJECTIVE `obj-u27-stress`
 - `u27-s-orient` OBJECTIVE `obj-u27-book`
 - `u27-st-orient` REFERENCE `ref-u2630-attribution`
 - `u27-s-passive` OBJECTIVE `obj-u27-passive`
@@ -2535,10 +3748,23 @@ permitsAppUse=true
 - `u27-st-check-present-passive` REMEDIATION `u27-st-rem-present-passive`
 - `u27-st-check-present-passive` ITEM `u27-i-present-passive-1`
 - `u27-st-check-present-passive` ITEM `u27-i-present-passive-2`
+- `u27-s-stress` OBJECTIVE `obj-u27-stress`
+- `u27-st-teach-stress-1` EXAMPLE `ex-u27-stress-0`
+- `u27-st-teach-stress-1` EXAMPLE `ex-u27-stress-1`
+- `u27-st-teach-stress-1` REFERENCE `ref-u2630-attribution`
+- `u27-st-guided-stress-1` REMEDIATION `u27-st-rem-stress`
+- `u27-st-guided-stress-1` ITEM `u27-g-stress-0`
+- `u27-st-teach-stress-2` REFERENCE `ref-u2630-attribution`
+- `u27-st-teach-stress-3` EXAMPLE `ex-u27-stress-2`
+- `u27-st-teach-stress-3` EXAMPLE `ex-u27-stress-3`
+- `u27-st-teach-stress-3` REFERENCE `ref-u2630-attribution`
+- `u27-st-rem-stress` EXAMPLE `ex-u27-stress-0`
+- `u27-st-rem-stress` EXAMPLE `ex-u27-stress-1`
+- `u27-st-check-stress` REMEDIATION `u27-st-rem-stress`
+- `u27-st-check-stress` ITEM `u27-i-stress-1`
+- `u27-st-check-stress` ITEM `u27-i-stress-2`
 - `u27-s-book` OBJECTIVE `obj-u27-book`
 - `u27-st-book-work` REFERENCE `ref-u2630-attribution`
-- `u27-s-gap-stress` OBJECTIVE `obj-u27-stress`
-- `u27-st-gap-stress` REFERENCE `ref-u2630-attribution`
 - `u27-s-gap-comprehension` OBJECTIVE `obj-u27-comprehension`
 - `u27-st-gap-comprehension` REFERENCE `ref-u2630-attribution`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-en`
@@ -2555,12 +3781,28 @@ permitsAppUse=true
 - `obj-u27-present-passive` PROVENANCE `prov-ex-u27-present-passive-0-ru`
 - `obj-u27-present-passive` PROVENANCE `prov-ex-u27-present-passive-1-en`
 - `obj-u27-present-passive` PROVENANCE `prov-ex-u27-present-passive-1-ru`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-0-en`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-0-ru`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-1-en`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-1-ru`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-2-en`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-2-ru`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-3-en`
+- `obj-u27-stress` PROVENANCE `prov-ex-u27-stress-3-ru`
 - `obj-u27-passive` PROVENANCE `prov-u27-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-rem`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-0`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-1`
 - `obj-u27-present-passive` PROVENANCE `prov-u27-present-passive-x-2`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-rem`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-0`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-1`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-2`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-3`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-4`
+- `obj-u27-stress` PROVENANCE `prov-u27-stress-x-5`
 - `obj-u27-passive` SOURCE_CAPABILITY `cap-obj-u27-passive`
+- `obj-u27-stress` SOURCE_CAPABILITY `cap-obj-u27-stress`
 
 ## Book-directed experiences
 
@@ -2571,10 +3813,10 @@ permitsAppUse=true
 ## Unsupported-capability register
 
 - `cap-obj-u27-passive` supports `passive-participle` for `obj-u27-passive`
+- `cap-obj-u27-stress` supports `participle-stress` for `obj-u27-stress`
 
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
-- `obj-u27-stress` Participle stress stays in the copy you own
 - `obj-u27-comprehension` Comprehension passages stay in the copy you own
 
 ## Book-directed register
@@ -2582,7 +3824,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 - `u27-st-orient` Open Lesson 27 in the copy you own. The app records do not replace that lesson.
 - `u27-st-book-work` Open Lesson 27 in your copy and complete its lesson work.
 - `u27-st-book` Self-attest only after the Lesson 27 work in your copy.
-- `u27-st-gap-stress` A general participle-stress rule has no admitted frozen span.
 - `u27-st-gap-comprehension` Comprehension passages have no admitted frozen span.
 
 ## Optional non-gating register
@@ -2591,7 +3832,6 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 ## Unavailable experiences
 
-- `u27-st-gap-stress`
 - `u27-st-gap-comprehension`
 
 ## Unresolved relationships
